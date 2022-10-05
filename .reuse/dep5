@@ -1,8 +1,8 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: YOUR-REPOSITORY
+Upstream-Name: btp-identity-authentication
 Upstream-Contact: NAME SURNAME (EMAIL)
-Source: https://github.com/sap-docs/YOUR-REPOSITORY
+Source: https://github.com/sap-docs/btp-identity-authentication
 
 Files: *
-Copyright:  2022 SAP SE or an SAP affiliate company and YOUR-REPOSITORY contributors
+Copyright:  2022 SAP SE or an SAP affiliate company and https://github.com/sap-docs/btp-identity-authentication contributors
 License: CC-BY-4.0
