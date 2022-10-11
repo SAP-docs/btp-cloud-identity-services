@@ -1,0 +1,215 @@
+<!-- loio40c29d2632b744af9bc7b7d353616d52 -->
+
+# Export Existing Users of a Tenant of Identity Authentication
+
+
+
+## Prerequisites
+
+You are assigned the *Manage Users* or *Read Users* role. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
+
+
+
+## Context
+
+You can export a CSV file containing information of all tenant users in Identity Authentication including the tenant administrators. The CSV file can contain columns with all user supported SCIM attributes. You can filter the user attributes that you want to include in the exported file. The default columns are: *active*, *userName*, *userType*, *emails\[0\].display*, *emails\[0\].primary*, *emails\[0\].type*, and *emails\[0\].value*.
+
+If the values for the *validTo* and *validFrom* attributes for a specific user are not in the correct Zulu format yyyyMMddHHmmss'Z', Identity Authentication returns empty values for these attributes in the CSV file.
+
+> ### Note:  
+> If the *active* attribute of a user is `FALSE`, he or she can’t perform any operations on the tenant.
+
+> ### Example:  
+> A tenant administrator exports a CSV file with the current users in the system and only the following attributes: *active*, *userName*, *userType*, and *emails\[0\].value*. As a result, the administrator receives the following information:
+> 
+> 
+> <table>
+> <tr>
+> <th valign="top">
+> 
+> active
+> 
+> 
+> 
+> </th>
+> <th valign="top">
+> 
+> userName
+> 
+> 
+> 
+> </th>
+> <th valign="top">
+> 
+> userType
+> 
+> 
+> 
+> </th>
+> <th valign="top">
+> 
+> emails\[0\].value
+> 
+> 
+> 
+> </th>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> TRUE
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> EID00001
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> public
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> michael.adams@example.com
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> TRUE
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> EID00002
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> employee
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> julie.armstrong@example.com
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> TRUE
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> EID00003
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> partner
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> donna.moore@example.com
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> FALSE
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> EID00004
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> customer
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> john.miller@example.com
+> 
+> 
+> 
+> </td>
+> </tr>
+> </table>
+
+To export tenant users from Identity Authentication, proceed as follows:
+
+
+
+<a name="loio40c29d2632b744af9bc7b7d353616d52__steps_evb_bvz_r4"/>
+
+## Procedure
+
+1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
+
+    > ### Note:  
+    > The URL has the following pattern:
+    > 
+    > `https://<tenant ID>.accounts.ondemand.com/admin`
+    > 
+    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
+    > 
+    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+
+2.  Choose the *Export Users* tile.
+
+    This operation opens the *Export Users* page.
+
+3.  Choose the attributes that you want to include in the CSV file.
+
+    The default choice is: *active*, *userName*, *userType*, *emails\[0\].display*, *emails\[0\].primary*, *emails\[0\].type*, and *emails\[0\].value*.
+
+4.  Choose the *Export* button.
+
+
+**Related Information**  
+
+
+[Troubleshooting for Administrators](troubleshooting-for-administrators-f80beb5.md "This section is intended to help administrators deal with error messages in the administration console for Identity Authentication.")
+
+[Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md "As a tenant administrator, you can edit both your own authorizations and other administrators' authorizations in the administration console for Identity Authentication. By editing the administrator authorizations you can also delete an administrator.")
+

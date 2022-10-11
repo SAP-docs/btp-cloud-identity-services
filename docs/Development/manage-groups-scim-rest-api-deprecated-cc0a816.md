@@ -1,0 +1,14 @@
+<!-- loiocc0a8166cb3b41e4a1e78fb1f2a52ff7 -->
+
+# Manage Groups SCIM REST API \(Deprecated\)
+
+
+
+> ### Note:  
+> This API will be deprecated. Please use [Identity Directory SCIM REST API](https://api.sap.com/api/IdDS_SCIM/overview) instead.
+
+**Related Information**  
+
+
+[SCIM REST API \(Deprecated\)](scim-rest-api-deprecated-2f21568.md "This section contains information about the Identity Authentication implementation of the System for Cross-domain Identity Management (SCIM) REST API protocol.")
+

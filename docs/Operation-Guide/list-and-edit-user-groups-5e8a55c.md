@@ -1,0 +1,72 @@
+<!-- loio5e8a55cdadad40d49c83b443c68fbd62 -->
+
+# List and Edit User Groups
+
+As a tenant administrator, you can list and edit information about the user groups in a tenant in the administration console for Identity Authentication.
+
+
+
+## Prerequisites
+
+-   You are assigned the *Manage Groups* role. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
+
+-   You have created user groups in your tenant. For more details how to create user groups, see [Create a New User Group](create-a-new-user-group-b1b638d.md).
+
+
+
+
+<a name="loio5e8a55cdadad40d49c83b443c68fbd62__context_vnl_blv_knb"/>
+
+## Context
+
+The user groups are sorted in alphabetical order of the display name.
+
+
+
+## Procedure
+
+1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
+
+    > ### Note:  
+    > The URL has the following pattern:
+    > 
+    > `https://<tenant ID>.accounts.ondemand.com/admin`
+    > 
+    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
+    > 
+    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+
+2.  Choose the *User Groups* tile.
+
+    This operation opens a list of the user groups in the tenant.
+
+3.  Type the *Name* or *Display name* of a group in the search field to filter the list items.
+
+4.  Choose a group from the list on the left to view its details.
+
+5.  Press the *Edit* button at the top-right corner of the screen, edit the *Display name* or *Description* fields if necessary, and save your changes.
+
+
+**Related Information**  
+
+
+[Import User Groups via CSV File](import-user-groups-via-csv-file-daf96bd.md "As a tenant administrator, you can create new user groups or update existing ones with the assiged users, via a CSV file upload.")
+
+[Create a New User Group](create-a-new-user-group-b1b638d.md "As a tenant administrator you can create new user groups in the tenant via the administration console for Identity Authentication.")
+
+[List Users in User Groups](list-users-in-user-groups-4ac340a.md "As a tenant administrator, you can list and view information about the users in a user group in a tenant in the administration console for Identity Authentication.")
+
+[Add Users to a Group](add-users-to-a-group-d2e1a01.md "As a tenant administrator, you can add one or more users created for a specific tenant to a group via the administration console for Identity Authentication.")
+
+[Remove Users from a Group](remove-users-from-a-group-301fdb7.md "As a tenant administrator, you can remove one, more than one, or all users added to a group via the administration console for Identity Authentication.")
+
+[Assign Groups to a User](assign-groups-to-a-user-bfdeb9c.md "As a tenant administrator, you can assign one or more groups created for a specific tenant to a user via the administration console for Identity Authentication.")
+
+[Unassign Groups from a User](unassign-groups-from-a-user-4353735.md "As a tenant administrator, you can unassign one or more groups that are assigned to a user via the administration console for Identity Authentication.")
+
+[Delete User Groups](delete-user-groups-9853912.md "As a tenant administrator, you can delete one or more user groups in a tenant of Identity Authentication.")
+
+[Create a New User Group](create-a-new-user-group-b1b638d.md "As a tenant administrator you can create new user groups in the tenant via the administration console for Identity Authentication.")
+
+[Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md "As a tenant administrator, you can edit both your own authorizations and other administrators' authorizations in the administration console for Identity Authentication. By editing the administrator authorizations you can also delete an administrator.")
+

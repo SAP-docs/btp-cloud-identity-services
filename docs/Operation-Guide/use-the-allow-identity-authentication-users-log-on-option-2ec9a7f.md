@@ -1,0 +1,66 @@
+<!-- loio2ec9a7f7c80a42f1abec683fa94309bd -->
+
+# Use the **Allow Identity Authentication Users Log On** Option
+
+Users can log on with their Identity Authentication credentials, when a corporate identity provider is selected as default \(for SAML 2.0 applications\).
+
+
+
+<a name="loio2ec9a7f7c80a42f1abec683fa94309bd__prereq_ors_br4_1db"/>
+
+## Prerequisites
+
+You have chosen a corporate identity provider as default. For more information, see [Choose a Corporate Identity Provider as Default](choose-a-corporate-identity-provider-as-default-44dd636.md).
+
+
+
+<a name="loio2ec9a7f7c80a42f1abec683fa94309bd__context_xnm_tr2_dpb"/>
+
+## Context
+
+> ### Note:  
+> The **Allow Identity Authentication Users Log On** option is supported for SAML 2.0 applications only.
+
+
+
+<a name="loio2ec9a7f7c80a42f1abec683fa94309bd__steps_yhl_hp4_1db"/>
+
+## Procedure
+
+1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
+
+    > ### Note:  
+    > The URL has the following pattern:
+    > 
+    > `https://<tenant ID>.accounts.ondemand.com/admin`
+    > 
+    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
+    > 
+    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+
+2.  Under *Applications and Resources*, choose the *Applications* tile.
+
+3.  Choose the application that you want to edit.
+
+    > ### Note:  
+    > Type the name of the application in the search field to filter the list items, or choose the application from the list on the left.
+    > 
+    > If you don’t have a created application in your list, you can create one. For more information, see [Create a New Application](create-a-new-application-0d4b255.md).
+
+4.  Choose the *Trust* tab.
+
+5.  Under *Conditional Authentication*, select the *Allow users stored in Identity Authentication service to log on* check box.
+
+    > ### Note:  
+    > By default this option is disabled.
+    > 
+    > The check box is visible only if have chosen a corporate identity provider as default.
+
+6.  Save your selection.
+
+7.  Pass the parameter `idp=<idp_name>` with the SAML 2.0 authentication request in the body or url to use this Identity Authentication tenant for authentication.
+
+    > ### Note:  
+    > The `idp_name` must match the name of the identity provider, configured in the *Name* field under *Tenant Settings*. For more information, see [Tenant SAML 2.0 Configuration](tenant-saml-2-0-configuration-e81a19b.md).
+
+
