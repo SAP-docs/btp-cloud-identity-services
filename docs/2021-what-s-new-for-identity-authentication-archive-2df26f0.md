@@ -6384,7 +6384,7 @@ End-User Screens
 </td>
 <td valign="top">
 
-Tenant administrator can add links on the logon screen. See [Configure Links Section on Logon Screen](Operation-Guide/configure-links-section-on-logon-screen-060c032.md).
+Tenant administrator can add links on the logon screen. See [Configure Links Section on Sign-In Screen](Operation-Guide/configure-links-section-on-sign-in-screen-060c032.md).
 
 
 

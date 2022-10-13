@@ -71,6 +71,9 @@ A default productive or test tenant can be obtained in one of the following case
         2.  Define the parameters for your instance:
             1.  Choose a *Test* or *Productive* cloud service type.
 
+                > ### Note:  
+                > *Productive* is the default value.
+
             2.  Choose *Next*.
 
         3.  Review your configuration.
@@ -80,7 +83,9 @@ A default productive or test tenant can be obtained in one of the following case
     > ### Note:  
     > For each service plan you must have a separate subaccount.
     > 
-    > The *default* plan allows the customer to consume Identity Authentication, Identity Provisioning, and Identity Directory services. The new instances are created only if there aren't existing instances of the same type \(productive or test\) bound to your customer ID already.
+    > The *default* plan allows the customer to consume Identity Authentication, Identity Provisioning, and Identity Directory services. The new instances are created only if there aren't already existing instances of the same type \(productive or test\) bound to your customer ID, regardless of the region.
+    > 
+    > The default test and productive tenants will be created in the same region.
 
     > ### Caution:  
     > If you unsubscribe the *default* plan, the Identity Authentication tenant is deactivated, if not used by other orders/products.
@@ -184,6 +189,9 @@ A customer has an SAP BTP, Cloud Foundry subaccount.
 
     2.  Define the parameters for your instance:
         1.  Choose a *Test* or *Productive* cloud service type.
+
+            > ### Note:  
+            > *Productive* is the default value.
 
         2.  Choose *Next*.
 

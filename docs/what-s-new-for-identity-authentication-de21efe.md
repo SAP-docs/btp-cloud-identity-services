@@ -2,6 +2,8 @@
 
 # What's New for Identity Authentication 
 
+Tenant administrator can set the number of days for which the users won't get prompted for second-factor authentication, if they sign in from the same browser.
+
 
 
 This page lists the release notes of SAP Cloud Identity Services - Identity Authentication for 2022. To see the release notes for the previous year, visit [2021 What's New for Identity Authentication \(Archive\)](2021-what-s-new-for-identity-authentication-archive-2df26f0.md). 
@@ -99,6 +101,358 @@ Available as of
 
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+
+
+</td>
+<td valign="top">
+
+ Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+2022-10-12
+
+
+
+</td>
+<td valign="top">
+
+2022-10-12
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Access
+
+
+
+</td>
+<td valign="top">
+
+Tenant administrator can set the number of days for which the users won't get prompted for second-factor authentication, if they sign in from the same browser. See [Configure Trust this browser Option](Operation-Guide/configure-trust-this-browser-option-5b8377e.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+2022-10-12
+
+
+
+</td>
+<td valign="top">
+
+2022-10-12
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+OpenID Connect
+
+
+
+</td>
+<td valign="top">
+
+ Identity Authentication now supports the `token_format`. See [Configure the Client to Call Identity Authentication Token Endpoint for Authorization Code Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-token-endpoint-for-authorization-cod-3a74ef8.md), [Configure the Client to Call Identity Authentication Token Endpoint for Client Credentials Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-token-endpoint-for-client-credential-52b93b0.md), [Configure the Client to Call Identity Authentication Token Endpoint for Resource Owner Password Credentials Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-token-endpoint-for-resource-owner-pa-67f720d.md), [Configure the Client to Call Identity Authentication JWT Bearer Token](Operation-Guide/configure-the-client-to-call-identity-authentication-jwt-bearer-token-01a0440.md), and [Call Identity Authentication Refresh Token](Operation-Guide/call-identity-authentication-refresh-token-c62c09e.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+2022-10-12
+
+
+
+</td>
+<td valign="top">
+
+2022-10-12
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Availability
+
+
+
+</td>
+<td valign="top">
+
+ Identity Authentication changed the availability monitoring for the service. The current status page `statuspage.io` is decommission and you can monitor the availability of the service in the [Cloud Availability Center CAC/SAP4Me](https://launchpad.support.sap.com/#/cacv2/pg/SES_DEVEFF/0000281177). For that you can see a new T-installation for Identity Services in their support tools. The Identity Authentication tenants of a customer are assigned to this new T-installation. Based on these T-installations you can request outage notifications and see potential RCA information.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+Announcement
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+2022-10-12
+
+
+
+</td>
+<td valign="top">
+
+2022-10-12
+
+
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -474,6 +828,92 @@ User Authentication
 <td valign="top">
 
  Identity Authentication supports X.509 Certificate authentication with Subject Alternative Name \(SAN\) `rfc822 Name`. See [Configure X.509 Client Certificates for User Authentication](Operation-Guide/configure-x-509-client-certificates-for-user-authentication-52c7dcb.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+2022-09-28
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Access
+
+
+
+</td>
+<td valign="top">
+
+Tenant administrator can add text on the sign-in screen for the Horizon Standard. See [Add Instructions Section on Sign-In Screen](Operation-Guide/add-instructions-section-on-sign-in-screen-c9e717e.md).
 
 
 
@@ -1075,7 +1515,7 @@ Branding Style
 </td>
 <td valign="top">
 
-Tenant administrator can add text on the sign-in screen for the Horizon Standard. See [Configure a Branding Style for an Application](Operation-Guide/configure-a-branding-style-for-an-application-32f8d33.md).
+Tenant administrator can add text on the sign-in screen for the Horizon Standard. See [Add Instructions Section on Sign-In Screen](Operation-Guide/add-instructions-section-on-sign-in-screen-c9e717e.md).
 
 
 

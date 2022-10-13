@@ -1,47 +1,31 @@
-<!-- loio060c03245a0a4ad69fc4a87de3329671 -->
+<!-- loioc9e717e803644e328c554de26ac60521 -->
 
-# Configure Links Section on Logon Screen
+# Add Instructions Section on Sign-In Screen
 
-You can configure links to appear on the logon screen of your applications.
+You can customize the sign-in sscreen of the *Horizon* theme with instructions for the user.
 
 
 
-<a name="loio060c03245a0a4ad69fc4a87de3329671__prereq_fym_jvf_ppb"/>
+<a name="loioc9e717e803644e328c554de26ac60521__prereq_dgd_3zh_dvb"/>
 
 ## Prerequisites
 
-You are assigned the *Manage Tenant Configuration* role. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
+You have chosen the *Horizon* theme for the sign-in screen of your application. For more information, see [Configure a Branding Style for an Application](configure-a-branding-style-for-an-application-32f8d33.md).
 
 
 
 ## Context
 
-Logon links can be configured via the change tenant texts option in the administration console. Tenant administrator can add three types of links on the logon screen:
+The section with instructions on the sign-in screen can be configured via the change tenant texts option in the administration console. Tenant administrator can add the section by configuring the `logon.ui.login.instructions` key.
 
--   logon.ui.copyright.link - Default Copyright link
--   logon.ui.privacy.link - Default Privacy link
--   logon.ui.legal.disclosure.link - Default Legal Disclosure link
-
-The default values of the logon link keys are empty and no links are displayed. New values must be in the format `<a href="link_URL">Link Text</a>`, for example `<a href="https://www.example.com" >Privacy Policy</a>`.
+The default value of the `logon.ui.login.instructions` key is empty and nothing is displayed. New values can include text and links.
 
 > ### Example:  
-> ![](images/Logon_Links_27346e0.png)
-
-The configured links appear on the logon screens of all applications in the tenant.
-
-You can return to the default configuration by resetting the custom texts. The *Reset to Default* operation resets all customized tenant texts to the default values.
-
-> ### Note:  
-> If the texts are configured for English \(United States\) and not configured for another language, and user uses browser with locale that language, the user sees texts customized for English \(United States\).
-> 
-> > ### Remember:  
-> > It takes 2 minutes for the configuration changes to take place.
-
-To configure your logon links, proceed as follows:
+> ![](images/Horizon_Example_e72add1.png)
 
 
 
-<a name="loio060c03245a0a4ad69fc4a87de3329671__steps_rhr_v3f_34b"/>
+<a name="loioc9e717e803644e328c554de26ac60521__steps_rhr_v3f_34b"/>
 
 ## Procedure
 
@@ -64,80 +48,9 @@ To configure your logon links, proceed as follows:
 
 4.  Find the text that you want to change.
 
-    You can use the search field, or the filtering and sorting option, or you can expand the page for more results. The keys for the links are:
+    You can use the search field, or the filtering and sorting option, or you can expand the page for more results. The key for the instruction is: `logon.ui.login.instructions`.
 
-
-    <table>
-    <tr>
-    <th valign="top">
-
-    Category
-
-
-    
-    </th>
-    <th valign="top">
-
-    Key
-
-
-    
-    </th>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    **Logon**
-
-
-    
-    </td>
-    <td valign="top">
-
-    logon.ui.copyright.link
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    **Logon**
-
-
-    
-    </td>
-    <td valign="top">
-
-    logon.ui.privacy.link
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    **Logon**
-
-
-    
-    </td>
-    <td valign="top">
-
-    logon.ui.legal.disclosure.link
-
-
-    
-    </td>
-    </tr>
-    </table>
-    
-5.  Add the new text in the *Custom Value* field next to the text that you want to change.
-
-    > ### Note:  
-    > The value must be in the format `<a href="https:link_URL">Link Text</a>`.
+5.  Add the new text in the *Custom Value* field.
 
 6.  Save your changes.
 
@@ -155,6 +68,8 @@ To configure your logon links, proceed as follows:
 
 [Configure Master Data Texts Via Administration Console](configure-master-data-texts-via-administration-console-c068ac9.md "The master data texts option can be used to configure the predefined master data for each resource in Identity Authentication via the administration console.")
 
+[Configure Links Section on Sign-In Screen](configure-links-section-on-sign-in-screen-060c032.md "You can configure links to appear on the sign-in screen of your applications.")
+
 [Configure X.509 Client Certificates for User Authentication](configure-x-509-client-certificates-for-user-authentication-52c7dcb.md "Tenant administrators can configure X.509 client certificates for user authentication as an alternative to authenticating with a user name and a password.")
 
 [Configure a Tenant Logo and Background Image](configure-a-tenant-logo-and-background-image-8742046.md "You can configure a custom global logo and, or a background image on the forms for sign-in in, registration, upgrade, password update, and account activation for all applications in a tenant.")
@@ -164,6 +79,8 @@ To configure your logon links, proceed as follows:
 [Configure User Identifier Attributes](configure-user-identifier-attributes-8b9fa88.md "Tenant administrators can configure user identifier attributes as required and unique for the tenant.")
 
 [Allow Users to Protect Accounts with Second Factor for Authentication](allow-users-to-protect-accounts-with-second-factor-for-authentication-d9cbb6d.md "Tenant administrator can allow users to decide whether to protect their own accounts with second factor for authentication or not.")
+
+[Configure Trust this browser Option](configure-trust-this-browser-option-5b8377e.md "Tenant administrator can set the number of days for which the users won't get prompted for second-factor authentication, if they sign in from the same browser.")
 
 [Enable Back-Up Channels to Send Passcode for Deactivation of TOTP Two-Factor Authentication Devices](enable-back-up-channels-to-send-passcode-for-deactivation-of-totp-two-factor-authenticati-782935e.md "Tenant administrator can configure back-up channels to send TOTP deactivation passcodes to the user.")
 
@@ -198,6 +115,4 @@ To configure your logon links, proceed as follows:
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 
 [Reuse Identity Authentication Tenants for Different Customer IDs](reuse-identity-authentication-tenants-for-different-customer-ids-ebd0258.md "You as a tenant administrator can reuse an existing tenant for configurations and automated subscriptions.")
-
-[Change Tenant Texts Via Administration Console](change-tenant-texts-via-administration-console-c24b1d0.md "The change tenant texts option can be used to change the predefined texts and messages for end-user screens available per tenant in Identity Authentication via the administration console.")
 

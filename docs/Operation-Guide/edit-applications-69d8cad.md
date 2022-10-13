@@ -1,6 +1,6 @@
 <!-- loio69d8cad2a03643b4a73f5931cf150252 -->
 
-# Edit Aplications
+# Edit Applications
 
 After creating the application, you can change its display name, home URL, type and parent application.
 

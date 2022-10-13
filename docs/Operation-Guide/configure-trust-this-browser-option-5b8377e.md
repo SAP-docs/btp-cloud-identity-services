@@ -1,12 +1,12 @@
-<!-- loiod9cbb6d2fdf44819bc57e16f337b501b -->
+<!-- loio5b8377e3a80941bfa3b475a0c715be43 -->
 
-# Allow Users to Protect Accounts with Second Factor for Authentication
+# Configure *Trust this browser* Option
 
-Tenant administrator can allow users to decide whether to protect their own accounts with second factor for authentication or not.
+Tenant administrator can set the number of days for which the users won't get prompted for second-factor authentication, if they sign in from the same browser.
 
 
 
-<a name="loiod9cbb6d2fdf44819bc57e16f337b501b__prereq_v3j_xzf_ppb"/>
+<a name="loio5b8377e3a80941bfa3b475a0c715be43__prereq_v3j_xzf_ppb"/>
 
 ## Prerequisites
 
@@ -16,19 +16,11 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 
 ## Context
 
-If applications don't require second factor for authentication, or the applications have configured risk-based authentication rules requiring second factor, but the users don't fall into these rules that require second factor for authentication, the users can enhance their security by switching on the *Multi-Factor Authentication* option on the profile page.
+The validity of *Trust this browser* can be set between 1 and 14 days.
 
-![](images/TFA_Profile_Page_2aeca46.png)
+If the option for trust this browser is set at *Disabled*, and a user chooses to always provide second factor when authenticating, the validity of *Trust this browser* is 3 months. But if the administrator sets a validity from 1 to 14 days, the 3-month validity is overridden with the validity set by the tenant administrator.
 
-This option is visible on the profile page, only if the administrator has allowed it via the administration console.
-
-![](images/MMFA_Administration_Console_87ccd7e.png)
-
-When the *Multi-Factor Authentication* option in the administration console is switched on, the users can choose to always provide second factor when authenticating.
-
-If users chose the *Trust this browser* checkbox, the second factor is required only with the first logon. The validity of *Trust this browser* depends on the configuration in the administration console. It can be set between 1 and 14 days. If the additional option for trust this browser is set at *Disabled* the validity of **Trust this browser** is 3 months.
-
-To enable or disable the*Multi-Factor Authentication* option in the administration console, follow the procedure below:
+The *Trust this browser* checkbox appears at sign-in when a second factor is required for the users. When users chose the *Trust this browser* checkbox, the second factor is required only with the first sign-in. The validity depends on the configuration in the administration console.
 
 
 
@@ -51,18 +43,10 @@ To enable or disable the*Multi-Factor Authentication* option in the administrati
 
 3.  Choose the *Multi-Factor Authentication* list item.
 
-4.  Enable or disable the *Multi-Factor Authentication* option.
+4.  Manually configure the trust this browser option under *Additional Settings for Multi-Factor Authentication*.
 
-    If the operation is successful, the system displays the message ***Multi-Factor authentication updated***.
+    If the operation is successful, the system displays the message ***Additional Multi-Factor Authentication Settings updated***.
 
-
-
-
-<a name="loiod9cbb6d2fdf44819bc57e16f337b501b__result_mqz_lwh_h3b"/>
-
-## Results
-
-Users can choose from the *Multi-Factor Authentication* section on their profile page to protect their accounts with additional forms of authentication.
 
 **Related Information**  
 
@@ -87,7 +71,7 @@ Users can choose from the *Multi-Factor Authentication* section on their profile
 
 [Configure User Identifier Attributes](configure-user-identifier-attributes-8b9fa88.md "Tenant administrators can configure user identifier attributes as required and unique for the tenant.")
 
-[Configure Trust this browser Option](configure-trust-this-browser-option-5b8377e.md "Tenant administrator can set the number of days for which the users won't get prompted for second-factor authentication, if they sign in from the same browser.")
+[Allow Users to Protect Accounts with Second Factor for Authentication](allow-users-to-protect-accounts-with-second-factor-for-authentication-d9cbb6d.md "Tenant administrator can allow users to decide whether to protect their own accounts with second factor for authentication or not.")
 
 [Enable Back-Up Channels to Send Passcode for Deactivation of TOTP Two-Factor Authentication Devices](enable-back-up-channels-to-send-passcode-for-deactivation-of-totp-two-factor-authenticati-782935e.md "Tenant administrator can configure back-up channels to send TOTP deactivation passcodes to the user.")
 

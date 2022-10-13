@@ -13,18 +13,10 @@ You can use one of the following styles:
 -   *Horizon*:
     -   Standard - This predefined theme is an evolution of the SAP Fiori design system. It uses the the Horizon theme for the end-user screens. To learn more about the theme, see [SAP’s UI Technologies supporting the new Horizon visual theme of SAP Fiori](https://blogs.sap.com/2021/11/17/saps-ui-technologies-supporting-the-new-Horizon-visual-theme-of-SAP-Fiori/).
 
-        You can customize the *Horizon* theme with instructions that appear on the sign in screen. To do this in the administration console:
-
-        1.  Select *Application & Resources* \> *Applications* \> *<your application\>* \> *Branding and Layout* \> *Branding Style* \> *Horizon Theme* \> *Standard* \> *Save*.
-
-        2.  Select *Tenant Texts* \> *\[logon.ui.login.instructions\] Key* \> *<your text\> Value* \> *Save*. For more information about the configuration of the tenant texts, see [Change Tenant Texts Via Administration Console](change-tenant-texts-via-administration-console-c24b1d0.md).
-
-            The *Value* can include text and links.
-
+        You can customize the *Horizon* theme with instructions that appear on the sign in screen. For mmore information, see [Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md).
 
         > ### Example:  
-
-        ![](images/Horizon_Example_e72add1.png) 
+        > ![](images/Horizon_Example_e72add1.png)
 
     -   Custom Advanced - You can do advanced customization of the end-user screens, by uploading a CSS file and assign that file to an application. The CSS file overrides the default CSS file of the Horizon theme.
 

@@ -13,7 +13,9 @@ Identity Authentication has production releases \(updates\) every second Wednesd
 
 
 
-## Announcements
+<a name="loio8e44a7a2bb2241deb6d7f4131aa9494b__section_i2g_jg4_dvb"/>
 
-To receive regular information about landscape downtimes and news, you need to subscribe to the mailing list of SAP BTP. For more information, see [Platform Updates and Notifications](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/99070c7bfc0e4f41842bd7c648b7fca7.html).
+## Service Availability
+
+You can monitor the availability of Identity Authentication in [Cloud Availability Center CAC/SAP4Me](https://launchpad.support.sap.com/#/cacv2/pg/SES_DEVEFF/0000281177). For that you can see a T-installation for Identity Services in the support tools. The Identity Authentication tenants of a customer are assigned to this T-installation. Based on these T-installations you can request outage notifications and see potential Root Cause Analysis \(RCA\) information.
 

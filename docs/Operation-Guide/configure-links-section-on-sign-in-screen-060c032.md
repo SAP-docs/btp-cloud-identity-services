@@ -1,12 +1,12 @@
-<!-- loiod9cbb6d2fdf44819bc57e16f337b501b -->
+<!-- loio060c03245a0a4ad69fc4a87de3329671 -->
 
-# Allow Users to Protect Accounts with Second Factor for Authentication
+# Configure Links Section on Sign-In Screen
 
-Tenant administrator can allow users to decide whether to protect their own accounts with second factor for authentication or not.
+You can configure links to appear on the sign-in screen of your applications.
 
 
 
-<a name="loiod9cbb6d2fdf44819bc57e16f337b501b__prereq_v3j_xzf_ppb"/>
+<a name="loio060c03245a0a4ad69fc4a87de3329671__prereq_fym_jvf_ppb"/>
 
 ## Prerequisites
 
@@ -16,21 +16,32 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 
 ## Context
 
-If applications don't require second factor for authentication, or the applications have configured risk-based authentication rules requiring second factor, but the users don't fall into these rules that require second factor for authentication, the users can enhance their security by switching on the *Multi-Factor Authentication* option on the profile page.
+Logon links can be configured via the change tenant texts option in the administration console. Tenant administrator can add three types of links on the logon screen:
 
-![](images/TFA_Profile_Page_2aeca46.png)
+-   logon.ui.copyright.link - Default Copyright link
+-   logon.ui.privacy.link - Default Privacy link
+-   logon.ui.legal.disclosure.link - Default Legal Disclosure link
 
-This option is visible on the profile page, only if the administrator has allowed it via the administration console.
+The default values of the logon link keys are empty and no links are displayed. New values must be in the format `<a href="link_URL">Link Text</a>`, for example `<a href="https://www.example.com" >Privacy Policy</a>`.
 
-![](images/MMFA_Administration_Console_87ccd7e.png)
+> ### Example:  
+> ![](images/Logon_Links_27346e0.png)
 
-When the *Multi-Factor Authentication* option in the administration console is switched on, the users can choose to always provide second factor when authenticating.
+The configured links appear on the logon screens of all applications in the tenant.
 
-If users chose the *Trust this browser* checkbox, the second factor is required only with the first logon. The validity of *Trust this browser* depends on the configuration in the administration console. It can be set between 1 and 14 days. If the additional option for trust this browser is set at *Disabled* the validity of **Trust this browser** is 3 months.
+You can return to the default configuration by resetting the custom texts. The *Reset to Default* operation resets all customized tenant texts to the default values.
 
-To enable or disable the*Multi-Factor Authentication* option in the administration console, follow the procedure below:
+> ### Note:  
+> If the texts are configured for English \(United States\) and not configured for another language, and user uses browser with locale that language, the user sees texts customized for English \(United States\).
+> 
+> > ### Remember:  
+> > It takes 2 minutes for the configuration changes to take place.
+
+To configure your logon links, proceed as follows:
 
 
+
+<a name="loio060c03245a0a4ad69fc4a87de3329671__steps_rhr_v3f_34b"/>
 
 ## Procedure
 
@@ -45,24 +56,93 @@ To enable or disable the*Multi-Factor Authentication* option in the administrati
     > 
     > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
 
-2.  Under *Applications and Resources*, choose the *Tenant Settings* tile.
+2.  Under *Applications and Resources*, choose the *Tenant Texts* tile.
 
-    At the top of the page you can view the administrative and license relevant information of the tenant.
+3.  Choose the language from the drop-down list.
 
-3.  Choose the *Multi-Factor Authentication* list item.
+    The default setting is English \(United States\).
 
-4.  Enable or disable the *Multi-Factor Authentication* option.
+4.  Find the text that you want to change.
 
-    If the operation is successful, the system displays the message ***Multi-Factor authentication updated***.
-
-
+    You can use the search field, or the filtering and sorting option, or you can expand the page for more results. The keys for the links are:
 
 
-<a name="loiod9cbb6d2fdf44819bc57e16f337b501b__result_mqz_lwh_h3b"/>
+    <table>
+    <tr>
+    <th valign="top">
 
-## Results
+    Category
 
-Users can choose from the *Multi-Factor Authentication* section on their profile page to protect their accounts with additional forms of authentication.
+
+    
+    </th>
+    <th valign="top">
+
+    Key
+
+
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+
+    **Logon**
+
+
+    
+    </td>
+    <td valign="top">
+
+    logon.ui.copyright.link
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+
+    **Logon**
+
+
+    
+    </td>
+    <td valign="top">
+
+    logon.ui.privacy.link
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+
+    **Logon**
+
+
+    
+    </td>
+    <td valign="top">
+
+    logon.ui.legal.disclosure.link
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
+5.  Add the new text in the *Custom Value* field next to the text that you want to change.
+
+    > ### Note:  
+    > The value must be in the format `<a href="https:link_URL">Link Text</a>`.
+
+6.  Save your changes.
+
+    If the operation is successful, you receive the `Tenant Texts updated` message.
+
 
 **Related Information**  
 
@@ -75,8 +155,6 @@ Users can choose from the *Multi-Factor Authentication* section on their profile
 
 [Configure Master Data Texts Via Administration Console](configure-master-data-texts-via-administration-console-c068ac9.md "The master data texts option can be used to configure the predefined master data for each resource in Identity Authentication via the administration console.")
 
-[Configure Links Section on Sign-In Screen](configure-links-section-on-sign-in-screen-060c032.md "You can configure links to appear on the sign-in screen of your applications.")
-
 [Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in sscreen of the Horizon theme with instructions for the user.")
 
 [Configure X.509 Client Certificates for User Authentication](configure-x-509-client-certificates-for-user-authentication-52c7dcb.md "Tenant administrators can configure X.509 client certificates for user authentication as an alternative to authenticating with a user name and a password.")
@@ -86,6 +164,8 @@ Users can choose from the *Multi-Factor Authentication* section on their profile
 [Configure Allowed Logon Identifiers](configure-allowed-logon-identifiers-3adf1ff.md "Tenant administrators can choose the allowed logon identifiers for the users.")
 
 [Configure User Identifier Attributes](configure-user-identifier-attributes-8b9fa88.md "Tenant administrators can configure user identifier attributes as required and unique for the tenant.")
+
+[Allow Users to Protect Accounts with Second Factor for Authentication](allow-users-to-protect-accounts-with-second-factor-for-authentication-d9cbb6d.md "Tenant administrator can allow users to decide whether to protect their own accounts with second factor for authentication or not.")
 
 [Configure Trust this browser Option](configure-trust-this-browser-option-5b8377e.md "Tenant administrator can set the number of days for which the users won't get prompted for second-factor authentication, if they sign in from the same browser.")
 
@@ -123,7 +203,5 @@ Users can choose from the *Multi-Factor Authentication* section on their profile
 
 [Reuse Identity Authentication Tenants for Different Customer IDs](reuse-identity-authentication-tenants-for-different-customer-ids-ebd0258.md "You as a tenant administrator can reuse an existing tenant for configurations and automated subscriptions.")
 
-[Configure Risk-Based Authentication for an Application](configure-risk-based-authentication-for-an-application-bc52fbf.md#loiobc52fbf3d59447bbb6aa22f80d8b6056 "You can define rules for authentication according to different risk factors and apply actions like Allow, Deny, and Two-Factor Authentication.")
-
-[Configure Default Risk-Based Authentication for All Applications in the Tenant](configure-default-risk-based-authentication-for-all-applications-in-the-tenant-1aab51a.md#loio1aab51ae62b94f79b4c6dac7a00857c2 "You can define rules for authentication according to different risk factors and apply actions like Allow, Deny, and Two-Factor Authentication for all applications in a tenant.")
+[Change Tenant Texts Via Administration Console](change-tenant-texts-via-administration-console-c24b1d0.md "The change tenant texts option can be used to change the predefined texts and messages for end-user screens available per tenant in Identity Authentication via the administration console.")
 

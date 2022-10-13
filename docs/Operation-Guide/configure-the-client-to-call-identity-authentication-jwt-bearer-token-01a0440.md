@@ -150,7 +150,7 @@ Parameter Type
 <tr>
 <td valign="top">
 
-grant\_type
+`grant_type`
 
 
 
@@ -187,7 +187,7 @@ Path
 <tr>
 <td valign="top">
 
-client\_id
+`client_id`
 
 
 
@@ -224,7 +224,7 @@ Path
 <tr>
 <td valign="top">
 
-client\_secret
+`client_secret`
 
 
 
@@ -261,7 +261,7 @@ Path
 <tr>
 <td valign="top">
 
-assertion
+`assertion`
 
 
 
@@ -344,6 +344,43 @@ Reduces the expiration of a refresh token. It is useful if your application is c
 <td valign="top">
 
 Path
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`token_format`
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+<td valign="top">
+
+String
+
+
+
+</td>
+<td valign="top">
+
+The `token_format` can be set to `opaque` to retrieve an opaque access token or to `jwt` to retrieve a JWT based access token. If not set, the current defaults per grant type are used.
+
+
+
+</td>
+<td valign="top">
+
+Request body
 
 
 
