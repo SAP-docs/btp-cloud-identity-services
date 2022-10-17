@@ -1,6 +1,6 @@
 <!-- loiode21efe39e1442618388784891497067 -->
 
-# What's New for Identity Authentication
+# What's New for Identity Authentication 
 
 Tenant administrator can set the number of days for which the users won't get prompted for second-factor authentication, if they sign in from the same browser.
 
