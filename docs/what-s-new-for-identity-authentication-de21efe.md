@@ -1,6 +1,6 @@
 <!-- loiode21efe39e1442618388784891497067 -->
 
-# What's New for Identity Authentication
+# What's New for Identity Authentication 
 
 Tenant administrator can set the number of days for which the users won't get prompted for second-factor authentication, if they sign in from the same browser.
 
@@ -101,6 +101,358 @@ Available as of
 
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+End-User Screens
+
+
+
+</td>
+<td valign="top">
+
+As of the next upgrade of Identity Authentication, the *Horizon* theme end-user screens will become default for the system applications of all new tenants, and for all new applications \(service providers\) created via the administration console, SCIM REST API, or by the Identity Authentication operators.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+Announcement
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2022-10-20
+
+
+
+</td>
+<td valign="top">
+
+2022-10-20
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+
+
+</td>
+<td valign="top">
+
+ Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+2022-10-26
+
+
+
+</td>
+<td valign="top">
+
+2022-10-26
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regional Availability
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication is now available with a single data center \(DC\) for the Azure infrastructure in Switzerland \(Zürich\). See [Regional Availability](regional-availability-be600ca.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+2022-10-26
+
+
+
+</td>
+<td valign="top">
+
+2022-10-26
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Documentation
+
+
+
+</td>
+<td valign="top">
+
+You can now provide feedback on the Identity Authentication documentation using GitHub and earn credits. See the related *Тip* at [What Is Identity Authentication?](what-is-identity-authentication-2788271.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+2022-10-26
+
+
+
+</td>
+<td valign="top">
+
+2022-10-26
+
+
+
+</td>
 </tr>
 <tr>
 <td valign="top">
