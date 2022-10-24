@@ -2,7 +2,7 @@
 
 # Getting Support
 
-This document is to help users, administrators, and developers deal with issues from Identity Authentication.
+This document is to help users, administrators and developers deal with issues from Identity Authentication.
 
 
 
