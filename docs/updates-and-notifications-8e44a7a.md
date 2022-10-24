@@ -2,7 +2,7 @@
 
 # Updates and Notifications
 
-Identity Authentication has production releases \(updates\) every second Wednesday, 10:00 UTC.For more information about the features delivered every takt, see the [What's New for Identity Authentication](what-s-new-for-identity-authentication-de21efe.md) published regularly. 
+Identity Authentication service has production releases \(updates\) every second Wednesday, 10:00 UTC.For more information about the features delivered every takt, see the [What's New for Identity Authentication](what-s-new-for-identity-authentication-de21efe.md) published regularly. 
 
 
 
