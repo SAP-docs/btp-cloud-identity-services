@@ -121,6 +121,103 @@ Available as of
 </td>
 <td valign="top">
 
+Cipher Suites
+
+
+
+</td>
+<td valign="top">
+
+To further improve security, Identity Authentication is deprecating a number of obsolete and weak cipher suites used for HTTPS communication. As of the planned upgrade of Identity Authentication, scheduled for Nov 9, 2022, only the following list of cipher suites will be supported:
+
+-   ECDHE-RSA-AES256-GCM-SHA384
+
+-   ECDHE-RSA-AES128-GCM-SHA256
+
+-   DHE-RSA-AES256-GCM-SHA384
+
+-   DHE-RSA-AES128-GCM-SHA256
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+Announcement
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2022-10-24
+
+
+
+</td>
+<td valign="top">
+
+2022-10-24
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 End-User Screens
 
 
