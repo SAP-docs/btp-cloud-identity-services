@@ -2,8 +2,6 @@
 
 # What's New for Identity Authentication 
 
-Tenant administrator can set the number of days for which the users won't get prompted for second-factor authentication, if they sign in from the same browser.
-
 
 
 This page lists the release notes of SAP Cloud Identity Services - Identity Authentication for 2022. To see the release notes for the previous year, visit [2021 What's New for Identity Authentication \(Archive\)](2021-what-s-new-for-identity-authentication-archive-2df26f0.md). 
@@ -101,191 +99,6 @@ Available as of
 
 
 </th>
-</tr>
-<tr>
-<td valign="top">
-
- Identity Authentication 
-
-
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Cipher Suites
-
-
-
-</td>
-<td valign="top">
-
-To further improve security, Identity Authentication is deprecating a number of obsolete and weak cipher suites used for HTTPS communication. As of the planned upgrade of Identity Authentication, scheduled for Nov 9, 2022, only the following list of cipher suites will be supported:
-
--   ECDHE-RSA-AES256-GCM-SHA384
-
--   ECDHE-RSA-AES128-GCM-SHA256
-
--   DHE-RSA-AES256-GCM-SHA384
-
--   DHE-RSA-AES128-GCM-SHA256
-
-
-
-
-</td>
-<td valign="top">
-
-Info only
-
-
-
-</td>
-<td valign="top">
-
-General Availability
-
-
-
-</td>
-<td valign="top">
-
-Announcement
-
-
-
-</td>
-<td valign="top">
-
-Technology
-
-
-
-</td>
-<td valign="top">
-
-Not applicable
-
-
-
-</td>
-<td valign="top">
-
-Identity Authentication
-
-
-
-</td>
-<td valign="top">
-
-2022-10-24
-
-
-
-</td>
-<td valign="top">
-
-2022-10-24
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- Identity Authentication 
-
-
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-End-User Screens
-
-
-
-</td>
-<td valign="top">
-
-As of the next upgrade of Identity Authentication, the *Horizon* theme end-user screens will become default for the system applications of all new tenants, and for all new applications \(service providers\) created via the administration console, SCIM REST API, or by the Identity Authentication operators.
-
-
-
-</td>
-<td valign="top">
-
-Info only
-
-
-
-</td>
-<td valign="top">
-
-General Availability
-
-
-
-</td>
-<td valign="top">
-
-Announcement
-
-
-
-</td>
-<td valign="top">
-
-Technology
-
-
-
-</td>
-<td valign="top">
-
-Not applicable
-
-
-
-</td>
-<td valign="top">
-
-Identity Authentication
-
-
-
-</td>
-<td valign="top">
-
-2022-10-20
-
-
-
-</td>
-<td valign="top">
-
-2022-10-20
-
-
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -482,6 +295,94 @@ Not applicable
 </td>
 <td valign="top">
 
+End-User Screens
+
+
+
+</td>
+<td valign="top">
+
+The *Horizon* theme end-user screens are default for the system applications for all tenants, and for all applications \(service providers\) created via the administration console, SCIM REST API, or by the Identity Authentication operators after Oct 26, 2022. See [Configure a Branding Style for an Application](Operation-Guide/configure-a-branding-style-for-an-application-32f8d33.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2022-10-26
+
+
+
+</td>
+<td valign="top">
+
+2022-10-26
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Documentation
 
 
@@ -546,6 +447,191 @@ Not applicable
 <td valign="top">
 
 2022-10-26
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Cipher Suites
+
+
+
+</td>
+<td valign="top">
+
+To further improve security, Identity Authentication is deprecating a number of obsolete and weak cipher suites used for HTTPS communication. As of the planned upgrade of Identity Authentication, scheduled for Nov 9, 2022, only the following list of cipher suites will be supported:
+
+-   ECDHE-RSA-AES256-GCM-SHA384
+
+-   ECDHE-RSA-AES128-GCM-SHA256
+
+-   DHE-RSA-AES256-GCM-SHA384
+
+-   DHE-RSA-AES128-GCM-SHA256
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+Announcement
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2022-10-24
+
+
+
+</td>
+<td valign="top">
+
+2022-10-24
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+End-User Screens
+
+
+
+</td>
+<td valign="top">
+
+As of the next upgrade of Identity Authentication, the *Horizon* theme end-user screens will become default for the system applications of all new tenants, and for all new applications \(service providers\) created via the administration console, SCIM REST API, or by the Identity Authentication operators.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+Announcement
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2022-10-20
+
+
+
+</td>
+<td valign="top">
+
+2022-10-20
 
 
 

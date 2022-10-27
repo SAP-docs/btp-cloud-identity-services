@@ -282,6 +282,59 @@ SAP
 <tr>
 <td valign="top">
 
+Switzerland
+
+
+
+</td>
+<td valign="top">
+
+`accounts.ondemand.com`
+
+`accounts.cloud.sap`
+
+
+
+</td>
+<td valign="top">
+
+Zürich
+
+
+
+</td>
+<td valign="top">
+
+Azure
+
+
+
+</td>
+<td valign="top">
+
+***20.250.104.188, 20.250.104.193, 20.250.104.202***
+
+
+
+</td>
+<td valign="top">
+
+***20.250.104.188/32, 20.250.104.193/32, 20.250.104.202/32***
+
+
+
+</td>
+<td valign="top">
+
+***20.250.104.188-20.250.104.188, 20.250.104.193-20.250.104.193, 20.250.104.202-20.250.104.202***
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Europe
 
 

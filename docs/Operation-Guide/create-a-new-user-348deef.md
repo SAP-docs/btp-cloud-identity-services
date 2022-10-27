@@ -51,14 +51,14 @@ The tenant administrator creates the new user with a minimum set of attributes a
 
 5.  Select one of the following options:
 
-    -   Send activation e-mail - The user receives an e-mail with instructions how to activate the user account.
+    -   Send activation e-mail - The tenant administrator creates a user with status `New`. The user receives an e-mail with instructions how to activate the user account. After activating the account, the user status changes to `Active`.
 
-    -   Set initial password - The tenant administrator sets the password for the user.
+    -   Set initial password - The tenant administrator creates a user with status `Active` and sets the password for the user.
 
         > ### Restriction:  
         > The initial password can be valid between 1 and 365 days depending on the configuration made by the administrator. The default value is 14 days. The user is prompted to reset the password during the first authentication. After the validity of the initial password expires, the user can't log on to the application and must contact an administrator. For more information for more information about how to configure the initial password validity, see [Configure Initial Password and E-Mail Link Validity](configure-initial-password-and-e-mail-link-validity-f8093f4.md).
 
-    -   Set status active - The tenant administrator creates a user with status `active`. The tenant administrator does not set an initial password for the user, and the user does not receive an e-mail with instructions how to activate the user account.
+    -   Set status active - The tenant administrator creates a user with status `Active`. The tenant administrator does not set an initial password for the user, and the user does not receive an e-mail with instructions how to activate the user account.
 
         This option can be used in the following scenarios:
 

@@ -1,5 +1,7 @@
 <!-- loio27882717f44b445fa287936c6f43dc1f -->
 
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+
 # What Is Identity Authentication?
 
  Authentication and single sign-on for users in the cloud. 
@@ -33,6 +35,28 @@ The Identity Authentication service provides you with controlled cloud-based acc
 -   Unified way for user management​
 -   Security token service for protection of ​system-to-system communication
 -   Data across applications can be correlated ​\(precondition for central foundation services\)​
+
+
+
+> ### Tip:  
+> The English version of this guide is open for contributions and feedback using GitHub. This allows you to get in contact with responsible authors of SAP Help Portal pages and the development team to discuss documentation-related issues. To contribute to this guide, or to provide feedback, choose the corresponding option on SAP Help Portal:
+> 
+> -   :pencil2:: Contribute to a documentation page. This option opens a pull request on GitHub.
+> 
+> -   <span class="SAP-icons"></span> Feedback: Provide feedback about a documentation page. This option opens an issue on GitHub.
+> 
+> 
+> You need a GitHub account to use these options.
+> 
+> More information:
+> 
+> -   [Contribution Guidelines](https://help.sap.com/docs/open-documentation-initiative/contribution-guidelines/readme.html)
+> 
+> -   [Introduction Video](https://www.youtube.com/watch?v=WJ0oarMlVW4)
+> 
+> -   [Introduction Blog Post](https://blogs.sap.com/2021/11/29/sap-btp-documentation-goes-github-new-collaboration-process/)
+
+
 
 
 

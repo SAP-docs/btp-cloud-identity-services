@@ -429,7 +429,7 @@ Identity Authentication allows you to use a custom domain that is different from
     </td>
     <td valign="top">
 
-    The `DN` used for the domain certificate. The `CN` attribute is mandatory and must match the custom domain
+    The `DN` used for the domain certificate. The `CN` attribute is mandatory and must match the custom domain used for the domain certificate.
 
 
     
@@ -439,7 +439,7 @@ Identity Authentication allows you to use a custom domain that is different from
     
 5.  Save your configuration.
 
-6.  Choose the *Download CSR file* button and save the generated CSR file.
+6.  Choose the *Download CSR file* used for the domain certificate. The button and save the generated CSR file.
 
     1.  Select the size of the certificate key. The supported key sizes are 2048, 3072 and 4096. The default value is 3072.
 
@@ -451,7 +451,7 @@ Identity Authentication allows you to use a custom domain that is different from
 
 7.  Send the CSR to a trusted Certificate Authority to sign the certificate.
 
-8.  Access the tenant's administration console for Identity Authentication *Applications and Resources* \> *Tenant Settings* \> *Custom Domain* \> *Certificate* and upload or insert as text the SSL certificated signed by the trusted CA.
+8.  Access the tenant's administration console for Identity Authentication *Applications and Resources* \> *Tenant Settings* \> *Custom Domain* \> *Certificate* and upload or insert as text the SSL certificate signed by the trusted CA.
 
     > ### Note:  
     > Make sure that the subject DN in the domain certificate and the configured subject DN match exactly.

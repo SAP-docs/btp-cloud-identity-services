@@ -18,13 +18,16 @@ You can use one of the following styles:
         > ### Example:  
         > ![](images/Horizon_Example_e72add1.png)
 
+        > ### Note:  
+        > This is the default setting for all new tenants, and for all new applications \(service providers\) created after Oct 26, 2022 via the administration console, SCIM REST API, or by the Identity Authentication operators.
+
     -   Custom Advanced - You can do advanced customization of the end-user screens, by uploading a CSS file and assign that file to an application. The CSS file overrides the default CSS file of the Horizon theme.
 
 -   *Quartz*
     -   Standard - This predefined theme includes white and brand blue coloring based on SAP Fiori’s color palette.
 
         > ### Note:  
-        > This is the default setting.
+        > This is the default setting for all tenants and applications created before Oct 26, 2022.
 
         > ### Example:  
         > ![](images/Quartz_Example_5b64afe.png)

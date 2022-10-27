@@ -26,7 +26,7 @@ This option is visible on the profile page, only if the administrator has allowe
 
 When the *Multi-Factor Authentication* option in the administration console is switched on, the users can choose to always provide second factor when authenticating.
 
-If users chose the *Trust this browser* checkbox, the second factor is required only with the first logon. The validity of *Trust this browser* depends on the configuration in the administration console. It can be set between 1 and 14 days. If the additional option for trust this browser is set at *Disabled* the validity of **Trust this browser** is 3 months.
+If users chose the *Trust this browser* checkbox, the second factor is required only with the first logon. The validity of *Trust this browser* depends on the configuration in the administration console. It can be set between 1 and 14 days. If the additional option for trust this browser is set at *Disabled* the validity of *Trust this browser* is 3 months. But if the administrator sets a validity from 1 to 14 days, the 3-month validity is overridden with the validity set by the tenant administrator.
 
 To enable or disable the*Multi-Factor Authentication* option in the administration console, follow the procedure below:
 

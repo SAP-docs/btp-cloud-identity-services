@@ -22,6 +22,9 @@ If the option for trust this browser is set at *Disabled*, and a user chooses to
 
 The *Trust this browser* checkbox appears at sign-in when a second factor is required for the users. When users chose the *Trust this browser* checkbox, the second factor is required only with the first sign-in. The validity depends on the configuration in the administration console.
 
+> ### Note:  
+> If the device for time-based one-time password \(TOTP\) or Web Two-Factor Authentication is deactivated, all the related tokens for the user will be removed.
+
 
 
 ## Procedure
