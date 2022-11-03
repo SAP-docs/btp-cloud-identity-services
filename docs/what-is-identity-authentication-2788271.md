@@ -57,7 +57,7 @@ The Identity Authentication service provides you with controlled cloud-based acc
 > -   [Introduction Blog Post](https://blogs.sap.com/2021/11/29/sap-btp-documentation-goes-github-new-collaboration-process/)
 
 
-
+ 
 
 
 ## Environment
