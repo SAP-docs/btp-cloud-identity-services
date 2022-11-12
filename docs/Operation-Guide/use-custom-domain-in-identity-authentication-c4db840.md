@@ -355,7 +355,7 @@ Identity Authentication allows you to use a custom domain that is different from
 ## Context
 
 > ### Note:  
-> The content in this document is only relevant for for tenants on the SAP infrastructure.
+> The content in this document is only relevant for tenants on the SAP infrastructure.
 
 > ### Remember:  
 > It takes 2 minutes for the configuration changes to take place.
@@ -374,8 +374,6 @@ Identity Authentication allows you to use a custom domain that is different from
     > `https://<tenant ID>.accounts.ondemand.com/admin`
     > 
     > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
 
 2.  Under *Applications and Resources*, choose the *Tenant Settings* tile.
 
