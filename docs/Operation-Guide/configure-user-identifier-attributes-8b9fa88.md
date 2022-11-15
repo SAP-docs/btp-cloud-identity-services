@@ -20,7 +20,7 @@ Identity Authentication ensures the uniqueness only of the newly set values of t
 
 The default configuration for the user identifiers are:
 
-<a name="loio8b9fa88649ae4d86a4ab4baf8fb0e007__table_bft_mk4_qlb"/>User Identifier Default Configuration
+**User Identifier Default Configuration**
 
 
 <table>
@@ -149,7 +149,7 @@ The `Login Name` identifier of a user can't have values that are equal to the `U
 > ### Remember:  
 > If `E-Mail` is marked as not-required on tenant level, it becomes configurable on application level, and must also be changed there, too. For more information, see [Configure Registration and Upgrade Forms](configure-registration-and-upgrade-forms-93a9e18.md).
 
-<a name="loio8b9fa88649ae4d86a4ab4baf8fb0e007__table_jyr_lvb_smb"/>E-Mail Required/Unique Configurations
+**E-Mail Required/Unique Configurations**
 
 
 <table>
@@ -317,8 +317,6 @@ Choose the allowed logon identifiers for the users. For more information, see [C
 [Configure a Tenant Logo and Background Image](configure-a-tenant-logo-and-background-image-8742046.md "You can configure a custom global logo and, or a background image on the forms for sign-in in, registration, upgrade, password update, and account activation for all applications in a tenant.")
 
 [Configure Allowed Logon Identifiers](configure-allowed-logon-identifiers-3adf1ff.md "Tenant administrators can choose the allowed logon identifiers for the users.")
-
-[Allow Users to Protect Accounts with Second Factor for Authentication](allow-users-to-protect-accounts-with-second-factor-for-authentication-d9cbb6d.md "Tenant administrator can allow users to decide whether to protect their own accounts with second factor for authentication or not.")
 
 [Configure Trust this browser Option](configure-trust-this-browser-option-5b8377e.md "Tenant administrator can set the number of days for which the users won't get prompted for second-factor authentication, if they sign in from the same browser.")
 

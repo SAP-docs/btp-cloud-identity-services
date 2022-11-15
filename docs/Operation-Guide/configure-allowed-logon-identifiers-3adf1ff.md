@@ -24,7 +24,7 @@ Choose the allowed logon identifier for your users. Once set, the configuration 
 
 The default configuration for newly created tenants is the following:
 
-<a name="loio3adf1ff526d74486a93660cdb0b5d2dd__table_khs_lp5_plb"/>Default Configuration
+**Default Configuration**
 
 
 <table>
@@ -205,8 +205,6 @@ Users can logon to the applications in the tenant only with the selected logon i
 [Configure a Tenant Logo and Background Image](configure-a-tenant-logo-and-background-image-8742046.md "You can configure a custom global logo and, or a background image on the forms for sign-in in, registration, upgrade, password update, and account activation for all applications in a tenant.")
 
 [Configure User Identifier Attributes](configure-user-identifier-attributes-8b9fa88.md "Tenant administrators can configure user identifier attributes as required and unique for the tenant.")
-
-[Allow Users to Protect Accounts with Second Factor for Authentication](allow-users-to-protect-accounts-with-second-factor-for-authentication-d9cbb6d.md "Tenant administrator can allow users to decide whether to protect their own accounts with second factor for authentication or not.")
 
 [Configure Trust this browser Option](configure-trust-this-browser-option-5b8377e.md "Tenant administrator can set the number of days for which the users won't get prompted for second-factor authentication, if they sign in from the same browser.")
 

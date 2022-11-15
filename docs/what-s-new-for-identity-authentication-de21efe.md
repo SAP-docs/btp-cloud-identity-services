@@ -10,7 +10,7 @@ This page lists the release notes of SAP Cloud Identity Services - Identity Auth
 
 
 
-<a name="loiode21efe39e1442618388784891497067__wnv_table"/> 
+** **
 
 
 <table>
@@ -168,7 +168,357 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2022-11-15
+
+
+
+</td>
+<td valign="top">
+
+2022-11-14
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+Administrators
+
+
+
+</td>
+<td valign="top">
+
+Tenant administrator can change the name of the system as administrator. See [List Administrators](Operation-Guide/list-administrators-c79a5c6.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2022-11-15
+
+
+
+</td>
+<td valign="top">
+
+2022-11-14
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+
+
+</td>
+<td valign="top">
+
+ Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2022-11-10
+
+
+
+</td>
+<td valign="top">
+
+2022-11-09
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Two-Factor Authentication
+
+
+
+</td>
+<td valign="top">
+
+Tenant administrator can set the number of days for which the users can postpone the enabling of second factor for authentication. See [Allow Users To Skip Two-Factor Authentication Setup](Operation-Guide/allow-users-to-skip-two-factor-authentication-setup-dfb08b3.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2022-11-10
+
+
+
+</td>
+<td valign="top">
+
+2022-11-09
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+
+
+</td>
+<td valign="top">
+
+ Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
 
 
 
@@ -256,7 +606,7 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 
 
@@ -1932,7 +2282,7 @@ Not applicable
 </td>
 <td valign="top">
 
-2022-09-13
+ 
 
 
 

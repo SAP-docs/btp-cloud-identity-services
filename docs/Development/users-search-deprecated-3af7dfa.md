@@ -44,7 +44,7 @@ Depending on the specified pagination parameters, there are two approaches when 
 
 **Request Parameters**
 
-<a name="loio3af7dfae0aad4cf79ab8d822f8322e76__table_bxs_2zz_ngb"/>Filtering
+**Filtering**
 
 
 <table>
@@ -333,7 +333,7 @@ User group assignment information
 </tr>
 </table>
 
-<a name="loio3af7dfae0aad4cf79ab8d822f8322e76__table_kvr_gmk_sn"/>Pagination
+**Pagination**
 
 
 <table>
@@ -1073,7 +1073,7 @@ The response does not contain the whole **User resource object**. It returns onl
 
 **Response Status and Error Codes**
 
-<a name="loio3af7dfae0aad4cf79ab8d822f8322e76__table_qxk_mpk_sn"/>Success Codes
+**Success Codes**
 
 
 <table>

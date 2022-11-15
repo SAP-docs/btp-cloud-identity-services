@@ -10,7 +10,7 @@ This page lists the release notes of SAP Cloud Identity Services - Identity Auth
 
 
 
-<a name="loio2df26f0ba5ce42c5b2e9fb33306c9f50__wnv_table"/> 
+** **
 
 
 <table>

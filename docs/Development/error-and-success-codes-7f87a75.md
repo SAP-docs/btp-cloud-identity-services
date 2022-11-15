@@ -290,7 +290,7 @@ The service is currently unavailable.
 
 In addition to the general error codes, the REST APIs return one of the following detailed error codes as an *X-message-code* HTTP response header:
 
-<a name="loio7f87a75e546843da86d054e55f8818e2__table_fpt_kmp_3s"/>
+****
 
 
 <table>

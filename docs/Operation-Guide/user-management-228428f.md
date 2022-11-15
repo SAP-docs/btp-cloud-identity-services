@@ -14,7 +14,7 @@ The user management enables you to create, modify, and delete users and their at
 
 With user management, you can perform the following activities:
 
-<a name="loio228428f9f476449cafd841a68d75b234__table_fkg_5s1_py"/>
+****
 
 
 <table>

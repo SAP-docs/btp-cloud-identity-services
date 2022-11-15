@@ -8,6 +8,9 @@ For more information how to get Identity Authentication, see [SAP BTP Pricing an
 
 After you purchase a subscription for the Identity Authentication tenant, you receive an e-mail. The e-mail contains a link to the landing page of the administration console for Identity Authentication. You can confirm the registration of your first administrator user.
 
+> ### Note:  
+> When the Identity Authentication tenant is initially provisioned to your organization, only one user is added as a tenant administrator. After that, due to possible legal and security issues, SAP adds additional tenant administrators only in exceptional cases \(for example, the existing administrator left the company, or for some reason there is no active administrator for this tenant\). To avoid access related issues in such cases, it is always a good practice for you to assign more than one administrators. Adding additional ones is exclusively in the responsibility of the current tenant administrators. For more information, see [Add Administrators](Operation-Guide/add-administrators-bbbdbdd.md#loiobbbdbdd3899942ce874f3aae9ba9e21d).
+
 For more information about the tenant model, tenant licensing, and obtaining a new or additional tenant in Identity Authentication, see [Tenant Model and Licensing](tenant-model-and-licensing-93160eb.md).
 
 > ### Note:  

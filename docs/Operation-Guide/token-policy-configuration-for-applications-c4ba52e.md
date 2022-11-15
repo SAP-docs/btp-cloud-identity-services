@@ -10,7 +10,7 @@ Set the token policy for a specific OpenID Connect application. Configure the va
 
 The following table lists the token policy options for OIDC applications.
 
-Token Policy Configuration Parameters
+**Token Policy Configuration Parameters**
 
 
 <table>

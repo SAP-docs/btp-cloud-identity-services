@@ -30,7 +30,7 @@ To configure sign in with Apple for the tenant, first you have to register an Ap
 
 To perform the social identity provider configuration in the administration console for Identity Authentication, you have to provide the following data:
 
-<a name="loiofe6f7f0b39a74c03a807fa923a36f4e0__table_lnq_cjh_ps"/>Required Apple Settings
+**Required Apple Settings**
 
 
 <table>

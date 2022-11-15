@@ -19,7 +19,7 @@ The tables below show the pre-configured settings for your system that you have 
 > 
 > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
 
-<a name="loio2ff9a6103408458abdd727e639235cad__table_xnz_fb2_25b"/>ABAP tenants provisioned before 2022.8 release
+**ABAP tenants provisioned before 2022.8 release**
 
 
 <table>
@@ -190,7 +190,7 @@ Identity Authentication
 </tr>
 </table>
 
-<a name="loio2ff9a6103408458abdd727e639235cad__table_lt5_sb2_25b"/>ABAP tenants provisioned from 2022.8 release onwards
+**ABAP tenants provisioned from 2022.8 release onwards**
 
 
 <table>

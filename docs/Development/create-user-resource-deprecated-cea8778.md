@@ -73,7 +73,7 @@ The create user resource method of the Identity Authentication implementation of
     > ### Note:  
     > The parameter supports Boolean values *true* and *false* in String format. The default value is *false*.
 
-    <a name="loiocea87780bee94c6994b8005c6d6a4815__table_w1z_qlm_1w"/>Possible Combinations
+    **Possible Combinations**
 
 
     <table>
@@ -500,7 +500,7 @@ Administrators at Identity Authentication can store, read, create and, update cu
 
 The following scenarios are possible via the SCIM REST API:
 
-<a name="loiocea87780bee94c6994b8005c6d6a4815__table_djg_cxh_qjb"/>Create New User
+**Create New User**
 
 
 <table>
@@ -588,7 +588,7 @@ provided
 
 **Result**: A new user will be created.
 
-<a name="loiocea87780bee94c6994b8005c6d6a4815__table_p4c_5xh_qjb"/>Create Provisioned User
+**Create Provisioned User**
 
 
 <table>
@@ -676,7 +676,7 @@ provided
 
 **Result**: Create a user that is provisioned from another system. The user will be able to log on. He or she will receive e-mail, but does not have to click a verification link in the e-mail.
 
-<a name="loiocea87780bee94c6994b8005c6d6a4815__table_vcm_byh_qjb"/>Create Corporate User Store User
+**Create Corporate User Store User**
 
 
 <table>
@@ -964,7 +964,7 @@ not provided
 
 **Response Status Codes**
 
-<a name="loiocea87780bee94c6994b8005c6d6a4815__table_qxk_mpk_sn"/>Success or Error Codes
+**Success or Error Codes**
 
 
 <table>

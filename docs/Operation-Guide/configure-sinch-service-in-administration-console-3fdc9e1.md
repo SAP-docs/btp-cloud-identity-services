@@ -27,7 +27,7 @@ For the integration between Identity Authentication and Sinch service, you must 
 
 Based on your Sinch service type, provide the following:
 
-<a name="copy3fdc9e1c9d374b798b39710eaadec54b__table_jtz_whv_tsb"/>Sinch Authentication 365
+**Sinch Authentication 365**
 
 
 <table>
@@ -196,7 +196,7 @@ The text that the user will receive in the SMS. The text is followed by the veri
 > ### Remember:  
 > All fields are required.
 
-<a name="copy3fdc9e1c9d374b798b39710eaadec54b__table_hcd_rph_k5b"/>Sinch Verification
+**Sinch Verification**
 
 
 <table>
@@ -352,8 +352,6 @@ To configure the administration console, follow the procedure below:
 [Configure Allowed Logon Identifiers](configure-allowed-logon-identifiers-3adf1ff.md "Tenant administrators can choose the allowed logon identifiers for the users.")
 
 [Configure User Identifier Attributes](configure-user-identifier-attributes-8b9fa88.md "Tenant administrators can configure user identifier attributes as required and unique for the tenant.")
-
-[Allow Users to Protect Accounts with Second Factor for Authentication](allow-users-to-protect-accounts-with-second-factor-for-authentication-d9cbb6d.md "Tenant administrator can allow users to decide whether to protect their own accounts with second factor for authentication or not.")
 
 [Configure Trust this browser Option](configure-trust-this-browser-option-5b8377e.md "Tenant administrator can set the number of days for which the users won't get prompted for second-factor authentication, if they sign in from the same browser.")
 

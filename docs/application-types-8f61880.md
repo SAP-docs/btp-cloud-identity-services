@@ -32,7 +32,11 @@ Applications that have a parent application configured can't be selected as pare
 
 An application that is chosen as a parent application to another can't have a parent application assigned for it.
 
-Newly created applications with an assigned parent application will inherit all the configurations from the parent with the except of the `Client ID` and `Consumed Services`. The inherited configurations will be marked as such.
+Newly created OpenID Connect applications with an assigned parent application will inherit all the configurations from the parent with the except of the `Client ID` and `Consumed Services`.
+
+Newly created SAML 2.0 applications with an assigned parent application will inherit all the configurations from the parent.
+
+The inherited configurations will be marked as such.
 
 ![](images/ParentChildApp_2baee98.png)
 

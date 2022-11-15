@@ -41,7 +41,7 @@ The user is identified by setting an attribute with dynamic value in the followi
 
 Expand the **Supported Attributes** table below to see the technical names of the attributes that can take dynamic values:
 
-<a name="loio1d020e3a3ba34c43a71fde70bfa6419a__table_uhp_qy4_1f5"/>Supported Attributes
+**Supported Attributes**
 
 
 <table>

@@ -34,7 +34,7 @@ The CSV file can contain only columns with no spaces between them, with the foll
 > ### Note:  
 > If you enter the data in the CSV file as text, you must separate the entries with commas. Beware not to put any spaces before or after the comas. If you enter more than one value in a single entry, separate the values within the entry with commas and enclose the entry in quotation marks.
 
-<a name="loio33838e0760f8411daf758a1c11818cc4__table_jbw_k3r_1kb"/>CSV Files Attributes
+**CSV Files Attributes**
 
 
 <table>

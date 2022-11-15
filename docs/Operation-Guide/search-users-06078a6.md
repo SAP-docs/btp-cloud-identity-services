@@ -37,7 +37,7 @@ You can list all users in the tenant for Identity Authentication or filter your 
 
 3.  You can choose one of the following:
 
-    <a name="loio06078a681826495eba1f821e5d106dd4__d8e972"/>Search Options
+    **Search Options**
 
 
     <table>

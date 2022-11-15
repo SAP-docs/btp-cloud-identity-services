@@ -4,7 +4,7 @@
 
 Session cookies in Identity Authentication are protected with a Transport Layer Security \(TLS\) and with the *Secure* and *HttpOnly* attributes. You do not need to make any additional configurations for Identity Authentication.
 
-<a name="loioe60fd0483d414f728fd162c9f525513e__table_tqy_vdz_z5b"/>
+****
 
 
 <table>

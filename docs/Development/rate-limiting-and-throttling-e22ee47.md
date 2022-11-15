@@ -16,7 +16,7 @@ When the limit is exceeded, the client receives the ***HTTP 429 Too Many Request
 
 To prevent Identity Authentication from being overloaded by too many requests, we have introduced SCIM API throttling to regulate the API usage per tenant.
 
-<a name="loioe22ee47abf614565bcb29bb4ddbbf209__table_ld1_hhh_qkb"/>SCIM API Throttling
+**SCIM API Throttling**
 
 
 <table>

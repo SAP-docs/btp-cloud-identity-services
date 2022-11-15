@@ -2,7 +2,7 @@
 
 # Product Details
 
-<a name="loio4d404b1eb4f94a8eb30bb092131af166__table_lzz_lz3_pbb"/>Identity Authentication Features
+**Identity Authentication Features**
 
 
 <table>

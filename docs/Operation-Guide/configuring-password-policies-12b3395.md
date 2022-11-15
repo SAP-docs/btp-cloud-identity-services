@@ -27,7 +27,7 @@ You have the following options for a password policy:
     > This option is only possible if you’ve configured a custom password policy in the administration console for Identity Authentication. For more information, see [Configure Custom Password Policy](configure-custom-password-policy-67bece2.md).
 
 
-<a name="loio12b33953a9164b6084319f4785808a8e__table_jws_dsj_q4"/>Password Policy Requirements
+**Password Policy Requirements**
 
 
 <table>

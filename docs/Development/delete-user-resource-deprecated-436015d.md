@@ -33,7 +33,7 @@ The delete user resource method of the Identity Authentication implementation of
 
 **Response Status Code**
 
-<a name="loio436015d66dad4c129a87604eda2f7134__table_qxk_mpk_sn"/>Success Codes
+**Success Codes**
 
 
 <table>

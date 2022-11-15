@@ -153,7 +153,7 @@ The configuration of the OAuth authentication scenario is done in the SAP BTP co
 
     -   For *OAuth*
 
-        <a name="loio334964514e8b48cb88c8ed07f5ee6a14__table_qdc_sck_znb"/>
+        ****
 
 
         <table>

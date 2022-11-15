@@ -18,7 +18,7 @@ This scenario also supports authentication with more than one corporate identity
 
 For this scenario, the configurations are made by users with different roles in different systems.
 
-<a name="loiod483a52be22946d5a05951b0fa16221f__table_rmz_skl_1w"/>Configuration and Roles
+**Configuration and Roles**
 
 
 <table>

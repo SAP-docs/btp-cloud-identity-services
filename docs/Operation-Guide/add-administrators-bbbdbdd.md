@@ -76,7 +76,7 @@ To add a person as a new tenant administrator, proceed as follows:
 
     To be a tenant administrator, a user must be assigned at least one of the following roles.
 
-    <a name="loio1dc498bff0674743a1a3a0ec3f0bf298__table_otc_5lt_mnb"/>Administrator Roles
+    **Administrator Roles**
 
 
     <table>
@@ -242,7 +242,7 @@ To add a system as a new tenant administrator, proceed as follows:
 
     To be a tenant administrator, a user must be assigned at least one of the following roles.
 
-    <a name="loiocefb742a36754b18bbe5c3503ac6d87c__table_wwb_rlt_mnb"/>Administrator Roles
+    **Administrator Roles**
 
 
     <table>

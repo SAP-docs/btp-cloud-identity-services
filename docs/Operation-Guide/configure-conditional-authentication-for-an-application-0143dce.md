@@ -254,7 +254,7 @@ The user logs on to the application
 
 Donna Moore is an administrator of Company A. She wants to configure Identity Authentication so that the employees who log on with their corporate e-mails to be authenticated via the company's corporate identity provider. The clients and partners of Company A should be authenticated via Identity Authentication. For this purpose, Donna creates the following authentication rule:
 
-<a name="loio0143dce88a604533ab5ab17e639fec09__table_ahx_qp4_vcb"/>Authentication Rule
+**Authentication Rule**
 
 
 <table>

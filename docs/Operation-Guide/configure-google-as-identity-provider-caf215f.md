@@ -22,7 +22,7 @@ To configure Google as social identity provider for the tenant, you have to regi
 
 To perform the social identity provider configuration in the administration console for Identity Authentication, you have to provide the following data:
 
-<a name="loiocaf215f71fa743d3a67da11e130acd9e__table_lnq_cjh_ps"/>Required Google Settings
+**Required Google Settings**
 
 
 <table>

@@ -87,19 +87,256 @@ The generated Client ID can be seen under *Generate Client Credentials for Audit
 Use the Client ID and Client Secret generated for the current tenant in the administration console for Identity Authentication to obtain an access token. For more information about how to obtain the access token see **2. Get an OAuth Access Token** in [Using Platform APIs](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/392af9d162694d6595499f1549978aa6.html).
 
 > ### Tip:  
-> The URL for the POST request looks like this: <code>https://api.&lt;SAP BTP host&gt;/oauth2/apitoken/v1?grant_type=client_credentials</code>
+> The URL for the POST request looks like this: <code>https://api.&lt;SAP BTP Host&gt;/oauth2/apitoken/v1?grant_type=client_credentials</code>
 > 
 > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*.
 > 
-> For tenants in Australia \(Sydney\), you should use `ap1.hana.ondemand.com` for the SAP BTP host in the request.
 > 
-> For tenants in Brazil \(São Paulo\), you should use `br1.hana.ondemand.com` for the SAP BTP host in the request.
+> <table>
+> <tr>
+> <th valign="top">
 > 
-> For tenants in Europe, you should use `eu1.hana.ondemand.com` for the SAP BTP host in the request.
+> Cluster
 > 
-> For tenants in Japan \(Tokyo\), you should use `jp1.hana.ondemand.com` for the SAP BTP host in the request.
 > 
-> For tenants in United States \(US East\), you should use `us3.hana.ondemand.com` for the SAP BTP host in the request.
+> 
+> </th>
+> <th valign="top">
+> 
+> Tenant Region
+> 
+> 
+> 
+> </th>
+> <th valign="top">
+> 
+> SAP BTP Host in Request
+> 
+> 
+> 
+> </th>
+> </tr>
+> <tr>
+> <td valign="top" rowspan="2">
+> 
+> Europe
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> Amsterdam \(primary\)
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> `eu3.hana.ondemand.com`
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Rot
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> `eu1.hana.ondemand.com`
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top" rowspan="2">
+> 
+> Asia Pacific
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> Sydney \(primary\)
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> `ap1.hana.ondemand.com`
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Tokyo
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> `jp1.hana.ondemand.com`
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top" rowspan="2">
+> 
+> Japan
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> Tokyo \(primary\)
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> `jp1.hana.ondemand.com`
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Osaka
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> `jp1.hana.ondemand.com`
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top" rowspan="2">
+> 
+> US-East
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> Sterling \(primary\)
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> `us1.hana.ondemand.com`
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Toronto
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> `ca1.hana.ondemand.com`
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top" rowspan="2">
+> 
+> Saudi Arabia
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> Riyadh \(primary\)
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> `sa1.hana.ondemand.com`
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Dammam
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> `sa1.hana.ondemand.com`
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> China
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> Shanghai
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> `cn1.platform.sapcloud.cn`
+> 
+> 
+> 
+> </td>
+> </tr>
+> </table>
+> 
+> Use the primary region for your search.
 > 
 > For more information, see [Regional Availability](../regional-availability-be600ca.md) and [Regions and Hosts Available for the Neo Environment](https://help.sap.com/viewer/ea72206b834e4ace9cd834feed6c0e09/Cloud/en-US/d722f7cea9ec408b85db4c3dcba07b52.html).
 
@@ -125,7 +362,7 @@ You can filter the audit logs by time and/or categories. The categories that you
 > ### Remember:  
 > The URI for the GET request looks like this:
 > 
->  <code>https://api.&lt;SAP BTP host&gt;/auditlog/v1/accounts/&lt;Tenant ID&gt;/AuditLogRecordsIds?$filter=(Time ge '2018-05-17T13.00.00' and Time le '2018-05-18T05.00.00')and Category eq '&lt;category&gt;'</code>
+>  <code>https://api.&lt;SAP BTP Host&gt;/auditlog/v1/accounts/&lt;Tenant ID&gt;/AuditLogRecordsIds?$filter=(Time ge '2018-05-17T13.00.00' and Time le '2018-05-18T05.00.00')and Category eq '&lt;category&gt;'</code>
 > 
 > The timestamp is in Coordinated Universal Time \(UTC\).
 > 
@@ -133,15 +370,252 @@ You can filter the audit logs by time and/or categories. The categories that you
 > 
 > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*.
 > 
-> For tenants in Australia \(Sydney\), you should use `ap1.hana.ondemand.com` for the SAP BTP host in the request.
 > 
-> For tenants in Brazil \(São Paulo\), you should use `br1.hana.ondemand.com` for the SAP BTP host in the request.
+> <table>
+> <tr>
+> <th valign="top">
 > 
-> For tenants in Europe, you should use `eu1.hana.ondemand.com` for the SAP BTP host in the request.
+> Cluster
 > 
-> For tenants in Japan \(Tokyo\), you should use `jp1.hana.ondemand.com` for the SAP BTP host in the request.
 > 
-> For tenants in United States \(US East\), you should use `us3.hana.ondemand.com` for the SAP BTP host in the request.
+> 
+> </th>
+> <th valign="top">
+> 
+> Tenant Region
+> 
+> 
+> 
+> </th>
+> <th valign="top">
+> 
+> SAP BTP Host in Request
+> 
+> 
+> 
+> </th>
+> </tr>
+> <tr>
+> <td valign="top" rowspan="2">
+> 
+> Europe
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> Amsterdam \(primary\)
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> `eu3.hana.ondemand.com`
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Rot
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> `eu1.hana.ondemand.com`
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top" rowspan="2">
+> 
+> Asia Pacific
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> Sydney \(primary\)
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> `ap1.hana.ondemand.com`
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Tokyo
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> `jp1.hana.ondemand.com`
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top" rowspan="2">
+> 
+> Japan
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> Tokyo \(primary\)
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> `jp1.hana.ondemand.com`
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Osaka
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> `jp1.hana.ondemand.com`
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top" rowspan="2">
+> 
+> US-East
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> Sterling \(primary\)
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> `us1.hana.ondemand.com`
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Toronto
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> `ca1.hana.ondemand.com`
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top" rowspan="2">
+> 
+> Saudi Arabia
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> Riyadh \(primary\)
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> `sa1.hana.ondemand.com`
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Dammam
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> `sa1.hana.ondemand.com`
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> China
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> Shanghai
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> `cn1.platform.sapcloud.cn`
+> 
+> 
+> 
+> </td>
+> </tr>
+> </table>
+> 
+> Use the primary region for your search.
 > 
 > For more information, see [Regional Availability](../regional-availability-be600ca.md) and [Regions and Hosts Available for the Neo Environment](https://help.sap.com/viewer/ea72206b834e4ace9cd834feed6c0e09/Cloud/en-US/d722f7cea9ec408b85db4c3dcba07b52.html).
 

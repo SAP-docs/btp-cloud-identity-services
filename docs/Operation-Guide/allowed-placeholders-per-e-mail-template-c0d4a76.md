@@ -8,7 +8,7 @@ This document describes which placeholders can be used in each e-mail template.
 
 The allowed placeholders are marked with *Yes* in the table:
 
-<a name="loioc0d4a7676e894d048ee361ae2d2f0012__email_processes_attributes"/>Placeholders per E-Mail Template
+**Placeholders per E-Mail Template**
 
 
 <table>

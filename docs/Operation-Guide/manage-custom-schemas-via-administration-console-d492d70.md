@@ -54,7 +54,7 @@ The schemas in the administration console are read-only. To edit a custom schema
 
         The following singular and multivalued attributes are defined:
 
-        <a name="loiod492d70e84e248b6b54eeb2dafd7a9f9__table_w12_rqs_1rb"/>Singular Attributes
+        **Singular Attributes**
 
 
         <table>
@@ -133,7 +133,7 @@ The schemas in the administration console are read-only. To edit a custom schema
         </tr>
         </table>
         
-        <a name="loiod492d70e84e248b6b54eeb2dafd7a9f9__table_w5d_rqs_1rb"/>Multi-Valued Attributes
+        **Multi-Valued Attributes**
 
 
         <table>

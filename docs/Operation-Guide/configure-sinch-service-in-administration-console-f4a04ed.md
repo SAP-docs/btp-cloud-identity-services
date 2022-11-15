@@ -27,7 +27,7 @@ For the integration between Identity Authentication and Sinch service, you must 
 
 Based on your Sinch service type, provide the following:
 
-<a name="loiof4a04ed54b544ee9ac1862b5d79178de__table_jtz_whv_tsb"/>Sinch Authentication 365
+**Sinch Authentication 365**
 
 
 <table>
@@ -196,7 +196,7 @@ The text that the user will receive in the SMS. The text is followed by the veri
 > ### Remember:  
 > All fields are required.
 
-<a name="loiof4a04ed54b544ee9ac1862b5d79178de__table_hcd_rph_k5b"/>Sinch Verification
+**Sinch Verification**
 
 
 <table>

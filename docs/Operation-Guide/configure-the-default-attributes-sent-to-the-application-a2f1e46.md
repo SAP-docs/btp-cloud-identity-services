@@ -21,7 +21,7 @@ For both, the SAML 2.0 and OpenID Connect applications, you can configure attrib
 
 Expand the **Supported Attributes** table below to see the attributes that can take dynamic values:
 
-<a name="loioa2f1e4692e7d4379ab82144ab309e7b3__table_uhp_qy4_1fb"/>Supported Attributes
+**Supported Attributes**
 
 
 <table>
@@ -914,7 +914,7 @@ For example, you have defined the `mail` assertion attribute and at the same tim
 
     `<attribute_name> = <prefix> ${corporateIdP.<corporateIdP_attribute_name><:regex[filter]>} <suffix>`
 
-    <a name="loioa2f1e4692e7d4379ab82144ab309e7b3__table_ytz_x5p_fhb"/>
+    ****
 
 
     <table>
@@ -1088,7 +1088,7 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     > 
     > You want to send the groups coming from the corporate IdP to the application so you have defined the following default attribute in the administration console for Identity Authentication:
     > 
-    > <a name="loioa2f1e4692e7d4379ab82144ab309e7b3__table_zzy_dxd_ykb"/>Default Attributes Configuration in Administration Console
+    > **Default Attributes Configuration in Administration Console**
     > 
     > 
     > <table>
@@ -1161,7 +1161,7 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     > 
     > You don't want to send all the groups coming from the corporate IdP to the application so you have defined the following default attribute in the administration console for Identity Authentication:
     > 
-    > <a name="loioa2f1e4692e7d4379ab82144ab309e7b3__table_byz_qxd_ykb"/>Default Attributes Configuration in Administration Console
+    > **Default Attributes Configuration in Administration Console**
     > 
     > 
     > <table>
@@ -1233,7 +1233,7 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     > > ### Example:  
     > > For example, you want to send the `phone` attribute coming from the corporate IdP to the application. You have defined the following default attribute in the administration console forIdentity Authentication:
     > > 
-    > > <a name="loioa2f1e4692e7d4379ab82144ab309e7b3__table_hnk_vxd_ykb"/>Default Attributes Configuration in Administration Console
+    > > **Default Attributes Configuration in Administration Console**
     > > 
     > > 
     > > <table>
@@ -1303,7 +1303,7 @@ You can define complex custom schema attributes with single-value child attribut
 > 
 > The default attributes for the application are configured in the administration console as follows:
 > 
-> <a name="loioa2f1e4692e7d4379ab82144ab309e7b3__table_eyb_kbh_z4b"/>Default Attributes Configuration in Administration Console
+> **Default Attributes Configuration in Administration Console**
 > 
 > 
 > <table>

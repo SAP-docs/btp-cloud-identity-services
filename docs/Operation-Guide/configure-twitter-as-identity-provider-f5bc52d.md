@@ -22,7 +22,7 @@ To configure Twitter as social identity provider for the tenant, you have to reg
 
 To perform the social identity provider configuration in the administration console for Identity Authentication, you have to provide the following data:
 
-<a name="loiof5bc52d99708457786779bb5e7dcd787__table_xfz_5jh_ps"/>Required Twitter Settings
+**Required Twitter Settings**
 
 
 <table>

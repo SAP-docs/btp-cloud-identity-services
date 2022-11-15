@@ -18,7 +18,7 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 
 The predefined master data represents records in Identity Authentication that contain all relevant system data about a resource \(Salutations, Functions, Departments, Company Relationships, Industries, Languages, Countries\). That data can be used by the system for different classifications in the organization, for example, job titles, departments, or countries. The predefined master data texts are stored in `properties` documents, which can be accessed from the links in the table below.
 
-<a name="loioc068ac9258cc47f494dfd85025e8b6b8__table_pr1_v2b_3w"/>Predefined Master Data Texts
+**Predefined Master Data Texts**
 
 
 <table>
@@ -289,8 +289,6 @@ To change the master data texts via the administration console, proceed as follo
 [Configure Allowed Logon Identifiers](configure-allowed-logon-identifiers-3adf1ff.md "Tenant administrators can choose the allowed logon identifiers for the users.")
 
 [Configure User Identifier Attributes](configure-user-identifier-attributes-8b9fa88.md "Tenant administrators can configure user identifier attributes as required and unique for the tenant.")
-
-[Allow Users to Protect Accounts with Second Factor for Authentication](allow-users-to-protect-accounts-with-second-factor-for-authentication-d9cbb6d.md "Tenant administrator can allow users to decide whether to protect their own accounts with second factor for authentication or not.")
 
 [Configure Trust this browser Option](configure-trust-this-browser-option-5b8377e.md "Tenant administrator can set the number of days for which the users won't get prompted for second-factor authentication, if they sign in from the same browser.")
 

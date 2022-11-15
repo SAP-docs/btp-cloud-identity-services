@@ -22,7 +22,7 @@ To configure LinkedIn as social identity provider for the tenant, you have to re
 
 To perform the social identity provider configuration in the administration console for Identity Authentication, you have to provide the following data:
 
-<a name="loio9077d6c8ed2b45bda8240ba4b1adca61__table_fx1_njh_ps"/>Required LinkedIn Settings
+**Required LinkedIn Settings**
 
 
 <table>

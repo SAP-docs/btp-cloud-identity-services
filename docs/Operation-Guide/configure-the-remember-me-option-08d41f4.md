@@ -14,7 +14,7 @@ With the remember me option, a cookie is sent to the browser so the users can lo
 
 You can change the default configuration for the remember me option via the administration console for Identity Authentication. The following options are available:
 
-<a name="loio08d41f41ec0040a79c448b59987b12ac__table_zh3_zqw_prb"/>
+****
 
 
 <table>

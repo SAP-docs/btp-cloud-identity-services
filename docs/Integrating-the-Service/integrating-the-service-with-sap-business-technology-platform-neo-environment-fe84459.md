@@ -113,7 +113,7 @@ Once you purchase a customer or partner account of SAP BTP, a user account for I
 
 You have two configuration options based on the following cases:
 
-<a name="loio5c3a9ac58a0e475cbb988de7ef0fdf30__table_y5x_tmt_1s"/>
+****
 
 
 <table>

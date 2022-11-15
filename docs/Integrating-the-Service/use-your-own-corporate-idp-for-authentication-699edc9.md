@@ -330,7 +330,7 @@ When *Use Identity Authentication user store* is enabled, it is possible to conf
 
 If the ABAP and SAP Analytics Cloud tenants require the e-mail address \(in our example *dona.moore@test.com*\) for logon, but another application requires the login name, this can be achieved with the following configuration in the administration console for Identity Authentication:
 
-<a name="task_pdb_232_25b__table_vsw_dwk_25b"/>
+****
 
 
 <table>

@@ -296,7 +296,7 @@ This procedure is performed by the domain administrator. If you are not a domain
     > 
     > Root host names per tenant locations:
     > 
-    > <a name="loio0c8cc7089af9420daabd038c523e5ef5__table_ls2_5mq_qmb"/>Host Names
+    > **Host Names**
     > 
     > 
     > <table>

@@ -16,7 +16,7 @@ To call the methods of this Change Master Data Texts REST API you must have a sy
 
 The predefined master data represents records in Identity Authentication that contain all relevant system data about a resource \(Salutations, Functions, Departments, Company Relationships, Industries, Languages, Countries\). That data can be used by the system for different classifications in the organization, for example, job titles, departments, or countries. The predefined master data texts are stored in `properties` documents which can be accessed from the links in the table below.
 
-<a name="loiob10fc6a9a37c488a82ce7489b1fab64c__table_pr1_v2b_3w"/>Predefined Master Data Texts
+**Predefined Master Data Texts**
 
 
 <table>
@@ -492,7 +492,7 @@ Content-Type: application/json
 
 ### Response Status and Error Codes
 
-<a name="loiob2f411ec61104f178e665498d2550149__table_qxk_mpk_sn"/>Success Codes
+**Success Codes**
 
 
 <table>
@@ -544,7 +544,7 @@ OK
 </tr>
 </table>
 
-<a name="loiob2f411ec61104f178e665498d2550149__general_error_codes"/>Error Codes
+**Error Codes**
 
 
 <table>
@@ -798,7 +798,7 @@ Update the master data texts.
 > 
 > You should add *\\n* at the end of each line in the data property content.
 > 
-> <a name="loio26691a9f2e024f598b976f2268a5efbd__table_hbf_hbs_4v"/>Escape Sequences
+> **Escape Sequences**
 > 
 > 
 > <table>
@@ -976,7 +976,7 @@ Body:
 
 ### Response Status and Error Codes
 
-<a name="loio26691a9f2e024f598b976f2268a5efbd__table_qxk_mpk_sn"/>Success Codes
+**Success Codes**
 
 
 <table>
@@ -1028,7 +1028,7 @@ OK
 </tr>
 </table>
 
-<a name="loio26691a9f2e024f598b976f2268a5efbd__general_error_codes"/>Error Codes
+**Error Codes**
 
 
 <table>

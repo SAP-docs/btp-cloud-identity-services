@@ -37,7 +37,7 @@ The syntax of the parameters is as follows:
 }
 ```
 
-<a name="loio9379444abf3f4e2cbaade7c4001df381__table_b4n_xx4_gnb"/>Parameters for the Creation of an Instance of the Identity Service
+**Parameters for the Creation of an Instance of the Identity Service**
 
 
 <table>
@@ -339,7 +339,7 @@ Or:
 > ### Restriction:  
 > You can bind a maximum of 20 applications to a single service instance.
 
-<a name="loio9379444abf3f4e2cbaade7c4001df381__table_j4y_mjp_gnb"/>Credential Types for the Binding of an Instance of the Identity Service
+**Credential Types for the Binding of an Instance of the Identity Service**
 
 
 <table>

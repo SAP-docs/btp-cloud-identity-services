@@ -494,7 +494,7 @@ The configuration of SAP BTP depends on the type of the user store. You have two
 
 The following table shows the default mapping between the Active Directory user attributes and the SCIM attributes. It also shows the existing mapping between the SCIM attributes and the attributes in the user store of Identity Authentication.
 
-<a name="task_hlb_hrr_gv__table_qfn_h22_jw"/>Detailed Attribute Mapping Between Active Directory and SCIM, and between SCIM and the User Store of Identity Authentication
+**Detailed Attribute Mapping Between Active Directory and SCIM, and between SCIM and the User Store of Identity Authentication**
 
 
 <table>

@@ -8,7 +8,7 @@ This section aims to help end users to deal with error messages when using appli
 
 ## Error Codes
 
-<a name="loioce359da8129749d3a3a7dac1d272b55a__table_uc2_m4x_cq"/>Solutions to Error Messages
+**Solutions to Error Messages**
 
 
 <table>

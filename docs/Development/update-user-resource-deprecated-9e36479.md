@@ -508,7 +508,7 @@ Administrators at Identity Authentication can store, read, create and, update cu
 
 **Response Status Codes**
 
-<a name="loio9e36479e92ca4b0db75f085d4ab3aa23__table_qxk_mpk_sn"/>Success or Error Codes
+**Success or Error Codes**
 
 
 <table>

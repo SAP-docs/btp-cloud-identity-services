@@ -19,7 +19,7 @@ If the corporate IdP does not support the login hint parameter, it requires both
 
 There are two aspects in the configuration of the login hint parameter: the value of the parameter, and how it is sent to the corporate IdP. The *How it is sent to the corporate IdP* configuration is only relevant for SAML 2.0 corporate identity ptoviders and depends on the *Value* configuration:
 
-<a name="loioc6dd6a5f141f4df0ae93b98904014e17__table_f3z_fst_tqb"/>Configuration Options
+**Configuration Options**
 
 
 <table>

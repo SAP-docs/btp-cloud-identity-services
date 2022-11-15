@@ -10,7 +10,7 @@ This section describes how you can configure the user authentication, access to 
 
 ## Configuring Applications
 
-<a name="reference_mwk_3qf_cy__table_y5w_kqf_cy"/>Configuring Applications
+**Configuring Applications**
 
 
 <table>

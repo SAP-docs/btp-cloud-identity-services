@@ -285,7 +285,7 @@ GET /service/resource?resourceType=RESOURCE_I18N_BUNDLE&locale=en
 
 ### Response Status and Error Codes
 
-<a name="loio1354b73465204a5d98e8eddba091e932__table_qxk_mpk_sn"/>Success Codes
+**Success Codes**
 
 
 <table>
@@ -337,7 +337,7 @@ OK
 </tr>
 </table>
 
-<a name="loio1354b73465204a5d98e8eddba091e932__general_error_codes"/>Error Codes
+**Error Codes**
 
 
 <table>
@@ -609,7 +609,7 @@ Update the tenant texts.
 > 
 > You should add *\\n* at the end of each line in the data property content.
 > 
-> <a name="loio748bde4796204486a6069488e9a63ef6__table_hbf_hbs_4v"/>Escape Sequences
+> **Escape Sequences**
 > 
 > 
 > <table>
@@ -819,7 +819,7 @@ general.auth.request.error=Identity Provider could not process the authenticatio
 
 ### Response Status and Error Codes
 
-<a name="loio748bde4796204486a6069488e9a63ef6__table_qxk_mpk_sn"/>Success Codes
+**Success Codes**
 
 
 <table>
@@ -871,7 +871,7 @@ OK
 </tr>
 </table>
 
-<a name="loio748bde4796204486a6069488e9a63ef6__general_error_codes"/>Error Codes
+**Error Codes**
 
 
 <table>

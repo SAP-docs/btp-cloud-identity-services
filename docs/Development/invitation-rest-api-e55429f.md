@@ -26,7 +26,7 @@ You have to use a JSON representation of the invitation request by specifying *a
 
 ## Parameters
 
-<a name="loioe55429fdaf394acebe6ee950b80b11db__table_fkw_pk5_p4"/>Required Parameters for the POST Method
+**Required Parameters for the POST Method**
 
 
 <table>
@@ -151,7 +151,7 @@ For more information how to configure *Home URL*, see [Configure an Application'
 </tr>
 </table>
 
-<a name="loioe55429fdaf394acebe6ee950b80b11db__table_w2k_qm5_p4"/>Optional Parameters for the POST Method
+**Optional Parameters for the POST Method**
 
 
 <table>

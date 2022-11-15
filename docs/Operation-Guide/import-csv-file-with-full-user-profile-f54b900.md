@@ -140,7 +140,7 @@ test1;test2
 
 The following attributes must be a valid master data text:
 
-<a name="loiof54b9002538b4c95855fc5be35e2a23e__table_kpd_xxh_5rb"/>
+****
 
 
 <table>
@@ -298,7 +298,7 @@ Depending on your *Logon Alias* configuration in the administration console you 
 
 Expand the **Supported Attributes** table to see the attributes that are spported with a CSV file upload.
 
-<a name="loiof54b9002538b4c95855fc5be35e2a23e__table_uqx_s4v_fsb"/>Supported Attributes
+**Supported Attributes**
 
 
 <table>

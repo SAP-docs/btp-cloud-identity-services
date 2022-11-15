@@ -162,7 +162,7 @@ For more information about the scenario, [Corporate Identity Providers](Operatio
 
 ## Procedure
 
-Use the new domain in the URLs. See [API Documentation](Development/api-documentation-cce8d64.md). 
+Use the new domain in the URLs. See [API Documentation](Development/api-documentation-cce8d64.md).
 
 URL: https://<tenant ID\>.accounts.sapcloud.cn/<...\>
 

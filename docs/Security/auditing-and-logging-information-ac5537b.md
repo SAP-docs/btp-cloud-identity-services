@@ -4,7 +4,7 @@
 
 Here you can find a list of the security events that are logged by Identity Authentication.
 
-<a name="loioac5537b3bf9940459a6ec7354fcd1b69__table_dqf_pkf_p4b"/>Security events written in audit logs
+**Security events written in audit logs**
 
 
 <table>

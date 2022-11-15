@@ -22,7 +22,7 @@ Expired links can't be used. The system automatically sends a new link in an e-m
 
 Identity Authentication has predefined the following validity periods:
 
-<a name="loiof8093f4d9eae449f9fd6449c6f8d5474__table_gwf_3bh_b5"/>Default E-Mail Link Validity Periods
+**Default E-Mail Link Validity Periods**
 
 
 <table>
@@ -207,8 +207,6 @@ To change the validity period of the initial password and the links, follow the 
 [Configure Allowed Logon Identifiers](configure-allowed-logon-identifiers-3adf1ff.md "Tenant administrators can choose the allowed logon identifiers for the users.")
 
 [Configure User Identifier Attributes](configure-user-identifier-attributes-8b9fa88.md "Tenant administrators can configure user identifier attributes as required and unique for the tenant.")
-
-[Allow Users to Protect Accounts with Second Factor for Authentication](allow-users-to-protect-accounts-with-second-factor-for-authentication-d9cbb6d.md "Tenant administrator can allow users to decide whether to protect their own accounts with second factor for authentication or not.")
 
 [Configure Trust this browser Option](configure-trust-this-browser-option-5b8377e.md "Tenant administrator can set the number of days for which the users won't get prompted for second-factor authentication, if they sign in from the same browser.")
 

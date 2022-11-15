@@ -33,7 +33,7 @@ Authorization management supports the following environments:
 
 An authorization policy is basically a collection of rules, which are applied to resources and restricted by conditions. Authorization policies are defined by developers and come with the respective application.
 
-<a name="loio982ac5f91d2346fda8dd8096e861fc36__table_spn_h1d_45b"/>Setting Up Authorization Policies
+**Setting Up Authorization Policies**
 
 
 <table>
@@ -156,7 +156,7 @@ Administration console
 
 We distinguish between different types of authorization policies. They come with different packages. Customers can deploy their own authorization policies in customer-developed packages.
 
-<a name="loio982ac5f91d2346fda8dd8096e861fc36__table_wfh_zsx_l5b"/>Authorization Policy Types
+**Authorization Policy Types**
 
 
 <table>

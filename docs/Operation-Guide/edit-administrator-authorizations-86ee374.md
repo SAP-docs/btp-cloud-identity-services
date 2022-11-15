@@ -48,7 +48,7 @@ To edit an administrator's authorizations, proceed as follows:
     > ### Note:  
     > To be a tenant administrator, a user must be assigned one or more of the following roles:
     > 
-    > <a name="loio86ee37423f8945a1898faff1e6308756__table_unj_vlt_mnb"/>Administrator Roles
+    > **Administrator Roles**
     > 
     > 
     > <table>

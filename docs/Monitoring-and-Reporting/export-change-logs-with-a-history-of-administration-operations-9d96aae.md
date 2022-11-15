@@ -75,7 +75,7 @@ Each record should contain the following data:
 > 8.  The tenant administrator sets *Company A Terms of Use* for the application.
 > 9.  The tenant administrator sets *Company A Privacy Policy* for the application.
 > 
-> <a name="loio9d96aae577f845708b53ebd18dab3745__table_sxr_vsz_yl"/>Sample Change Logs Data
+> **Sample Change Logs Data**
 > 
 > 
 > <table>

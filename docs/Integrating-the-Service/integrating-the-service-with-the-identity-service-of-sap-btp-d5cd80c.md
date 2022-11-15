@@ -15,7 +15,7 @@ The following figure shows each application integrating with the Identity Authen
 
    
   
-<a name="loiod5cd80c6928e4ac98586025170efdf08__fig_wwl_lbh_3nb"/>Applications Using the Identity Service
+**Applications Using the Identity Service**
 
  ![](images/Identity_broker_scenario_021ef86.png "Applications Using the Identity Service") 
 

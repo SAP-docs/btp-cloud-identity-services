@@ -4,7 +4,7 @@
 
 There are the following types of end-users in the user store of Identity Authentication:
 
-<a name="loio70e95d1d4f514710a0de56067081fd7f__table_xjw_dxq_z5b"/>
+****
 
 
 <table>

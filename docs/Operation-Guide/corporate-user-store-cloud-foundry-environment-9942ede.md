@@ -99,7 +99,7 @@ For more details about how to configure these systems, see:
 
 The configuration of SAP BTP depends on the type of the user store. You have the option to connect to a Microsoft Active Directory user store.
 
-<a name="loiodd8240d6a4f54e938ec867c21a4e9222__table_fx3_hb1_ksb"/>Data Center Mapping
+**Data Center Mapping**
 
 
 <table>
@@ -706,7 +706,7 @@ cf-eu10 - Europe \(Frankfurt\)
 
 The following table shows the default mapping between the Active Directory user attributes and the SCIM attributes. It also shows the existing mapping between the SCIM attributes and the attributes in the user store of Identity Authentication.
 
-<a name="task_hlb_hrr_gv__table_qfn_h22_jw"/>Detailed Attribute Mapping Between Active Directory and SCIM, and between SCIM and the User Store of Identity Authentication
+**Detailed Attribute Mapping Between Active Directory and SCIM, and between SCIM and the User Store of Identity Authentication**
 
 
 <table>

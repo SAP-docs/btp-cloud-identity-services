@@ -22,7 +22,7 @@ To configure Facebook as social identity provider for the tenant, you have to re
 
 To perform the social identity provider configuration in the administration console for Identity Authentication, you have to provide the following data:
 
-<a name="loiocc16b335cb5941ddb92ecb7478251c81__table_klf_kjh_ps"/>Required Facebook Settings
+**Required Facebook Settings**
 
 
 <table>

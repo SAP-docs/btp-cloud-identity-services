@@ -48,7 +48,7 @@ To configure a source system, follow the steps below:
 
     -   *Source System*
 
-        <a name="loiob0c7ec883b384eecb833776503e53509__table_pcc_qmv_jgb"/>Source System
+        **Source System**
 
 
         <table>

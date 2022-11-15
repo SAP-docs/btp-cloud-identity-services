@@ -148,59 +148,6 @@ São Paulo
 </td>
 <td valign="top">
 
-SAP
-
-
-
-</td>
-<td valign="top">
-
-***130.214.236.91***
-
-
-
-</td>
-<td valign="top">
-
-***157.133.174.32/27, 130.214.236.32/27***
-
-
-
-</td>
-<td valign="top">
-
-***157.133.174.32-157.133.174.63, 130.214.236.32-130.214.236.63***
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Brazil
-
-
-
-</td>
-<td valign="top">
-
-`accounts.ondemand.com`
-
-`accounts.cloud.sap`
-
-
-
-</td>
-<td valign="top">
-
-São Paulo
-
-
-
-</td>
-<td valign="top">
-
 AWS
 
 
@@ -563,7 +510,7 @@ Saudi Arabia
 </td>
 <td valign="top">
 
-Saudi Arabia
+Riyadh, Dammam
 
 
 

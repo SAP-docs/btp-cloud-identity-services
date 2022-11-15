@@ -41,7 +41,7 @@ Identity Authentication supports the following scenarios for real-time provision
 > ### Remember:  
 > The users that are in the user store of Identity Authentication are provisioned to the SAP Jam target system with a certain set of attributes. The table below shows the attributes taken from Identity Authentication and their mapping to the SAP Jam target system.
 > 
-> <a name="loioaf6f78bd75f044d0afbbfb45ec8beb3e__table_t5l_5sf_4v"/>Attribute Mapping Between Identity Authentication and SAP Jam
+> **Attribute Mapping Between Identity Authentication and SAP Jam**
 > 
 > 
 > <table>
@@ -552,7 +552,7 @@ The tenant administrator can choose which of the users to be provisioned to the 
 
 3.  You can choose one of the following:
 
-    <a name="task_ejf_l4r_cv__d8e972"/>Search Options
+    **Search Options**
 
 
     <table>
