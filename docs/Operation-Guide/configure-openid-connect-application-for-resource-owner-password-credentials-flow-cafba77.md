@@ -249,7 +249,7 @@ To configure an OpenID Connect trusted application in the administration console
     <tr>
     <td valign="top">
 
-    **Client Credential**
+    **Client Credentials**
 
 
     
@@ -257,6 +257,22 @@ To configure an OpenID Connect trusted application in the administration console
     <td valign="top">
 
     selected
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+
+    **Token Exchange \(RFC 8693\)**
+
+
+    
+    </td>
+    <td valign="top">
+
+    not-selected
 
 
     
@@ -291,6 +307,8 @@ Configure HTTP basic authentication for the application. For more information ab
 [Configure OpenID Connect Application for Implicit Flow](configure-openid-connect-application-for-implicit-flow-26090fd.md "This document is intended to help you configure an OpenID Connect application in the administration console for Identity Authentication for the implicit flow.")
 
 [Configure OpenID Connect Application for JWT Bearer Flow](configure-openid-connect-application-for-jwt-bearer-flow-e42fb4d.md "This document is intended to help you configure an OpenID Connect application in the administration console for Identity Authentication for the JWT bearer flow.")
+
+[Configure OpenID Connect Application for Token Exchange](configure-openid-connect-application-for-token-exchange-351866e.md "This document is intended to help you configure an OpenID Connect application in the administration console for Identity Authentication for the Token Exchange flow.")
 
 [OpenID Connect](openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
 

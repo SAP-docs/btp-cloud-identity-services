@@ -130,7 +130,7 @@ SAP managed
 <tr>
 <td valign="top">
 
-SAP Cloud for Customer solution
+SAP Sales Cloud and SAP Service Cloud solution
 
 
 
@@ -191,6 +191,29 @@ SAP Fieldglass solution
 <td valign="top">
 
 SAP managed
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Industry Cloud Solution
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+ 
 
 
 
@@ -329,6 +352,52 @@ SAP SuccessFactors solution
 <td valign="top">
 
 SAP managed
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Customer Data solution
+
+
+
+</td>
+<td valign="top">
+
+`bundled`
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Central Business Configuration solution
+
+
+
+</td>
+<td valign="top">
+
+`bundled`
+
+
+
+</td>
+<td valign="top">
+
+ 
 
 
 

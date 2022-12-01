@@ -1,12 +1,12 @@
-<!-- loio9a4b94bbfb2146b6a8bef8b78237a39a -->
+<!-- loioe6718a3aef914b418accd3a0f1fe0178 -->
 
-# Configure OpenID Connect Application for Resource Owner Password Credentials Flow
+# Configure OpenID Connect Application for Token Exchange
 
-This document is intended to help you configure an OpenID Connect application in the administration console for Identity Authentication for the resource owner password credentials flow.
+This document is intended to help you configure an OpenID Connect application in the administration console for Identity Authentication for the Token Exchange flow.
 
 
 
-<a name="loio9a4b94bbfb2146b6a8bef8b78237a39a__prereq_grq_3jn_v2b"/>
+<a name="loioe6718a3aef914b418accd3a0f1fe0178__prereq_grq_3jn_v2b"/>
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ To configure an OpenID Connect trusted application in the administration console
 
 
 
-<a name="loio9a4b94bbfb2146b6a8bef8b78237a39a__steps_ksg_x2m_fp"/>
+<a name="loioe6718a3aef914b418accd3a0f1fe0178__steps_ksg_x2m_fp"/>
 
 ## Procedure
 
@@ -281,7 +281,7 @@ To configure an OpenID Connect trusted application in the administration console
     </table>
     
     > ### Note:  
-    > Beware that for each flow the respective grant type must be selected. The Password grant type must be selected for the password credentials flow.
+    > Beware that for each flow the respective grant type must be selected. The Token Exchange \(RFC 8693\) must be selected for the Token Exchange flow.
 
 9.  Save your selection. Once the application has been changed, the system displays the message ***Application <name of application\> updated***.
 
@@ -291,11 +291,12 @@ To configure an OpenID Connect trusted application in the administration console
 
 
 
-<a name="loio9a4b94bbfb2146b6a8bef8b78237a39a__postreq_yqs_gkf_5fb"/>
+<a name="loioe6718a3aef914b418accd3a0f1fe0178__postreq_yqs_gkf_5fb"/>
 
 ## Next Steps
 
-Configure HTTP basic authentication for the application. For more information about the configuration, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
+-   Configure HTTP basic authentication for the application. For more information about the configuration, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
+
 
 **Related Information**  
 

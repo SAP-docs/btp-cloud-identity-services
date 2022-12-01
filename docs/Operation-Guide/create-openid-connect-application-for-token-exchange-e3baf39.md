@@ -1,8 +1,8 @@
-<!-- loiob19f5e3dcdfd48149074bfa67623e84b -->
+<!-- copye3baf39196c9470aa3a32000e079363a -->
 
-# Create OpenID Connect Application for Implicit Flow
+# Create OpenID Connect Application for Token Exchange
 
-Create a new OpenID Connect application for implicit flow.
+Create a new OpenID Connect application for Token Exchange flow.
 
 
 
@@ -12,7 +12,7 @@ To create a new OpenID Connect application follow the procedure below:
 
 
 
-<a name="loiob19f5e3dcdfd48149074bfa67623e84b__steps_qqh_hfk_q4"/>
+<a name="copye3baf39196c9470aa3a32000e079363a__steps_qqh_hfk_q4"/>
 
 ## Procedure
 
@@ -172,9 +172,11 @@ To create a new OpenID Connect application follow the procedure below:
 
 [Create OpenID Connect Application for Resource Owner Password Credentials Flow](create-openid-connect-application-for-resource-owner-password-credentials-flow-e5b761a.md "You can create a new OpenID Connect application.")
 
+[Create OpenID Connect Application for Implicit Flow](create-openid-connect-application-for-implicit-flow-b19f5e3.md "Create a new OpenID Connect application for implicit flow.")
+
 [Create OpenID Connect Application for JWT Bearer Flow](create-openid-connect-application-for-jwt-bearer-flow-b099d8c.md "Create a new OpenID Connect application for JWT bearer flow.")
 
-[Create OpenID Connect Application for Token Exchange](create-openid-connect-application-for-token-exchange-e3baf39.md "Create a new OpenID Connect application for Token Exchange flow.")
-
 [OpenID Connect](openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
+
+[OAuth 2.0 Token Exchange](https://datatracker.ietf.org/doc/html/rfc8693)
 

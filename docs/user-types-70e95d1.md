@@ -114,7 +114,7 @@ Onboardee
 </td>
 <td valign="top">
 
-An employee user that need a different authentication, because, for example the user may not exists in the corporate identity provider.
+An employee user that need a different authentication, because, for example the user may not exist in the corporate identity provider.
 
 
 

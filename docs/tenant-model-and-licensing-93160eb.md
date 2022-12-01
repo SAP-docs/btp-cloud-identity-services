@@ -165,6 +165,7 @@ A customer has an SAP BTP, Cloud Foundry subaccount.
     > ### Tip:  
     > -   If you don't see the *Cloud Identity Service* tile, navigate to *Entitlements*, add the tile.
     > -   If you don't see the *additional-tenant* plan, navigate to *Entitlements* \> *Configure Entitlements* \> *Add Service Plans* \> *Cloud Identity Services*, select the checkbox for the *additional-tenant* plan, press *Add Service Plans* and save your choice.
+    > -   If you use directories entitlement management in your global account, you must assign the *additional-tenant* plan to the directory first, and after that to the subaccount. Once you assign the *additional-tenant* plan to your directory, it will appear in your subaccount entitlements too. For more information, see [Configure Entitlements and Quotas for Directories \[Feature Set B\]](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/37f8871865114f44aebee3db6ac64b72.html).
 
     > ### Note:  
     > For each service plan you must have a separate subaccount.

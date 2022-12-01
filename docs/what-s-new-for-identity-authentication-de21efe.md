@@ -175,6 +175,182 @@ Identity Authentication
 </td>
 <td valign="top">
 
+2022-11-25
+
+
+
+</td>
+<td valign="top">
+
+2022-11-24
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Audit Logs
+
+
+
+</td>
+<td valign="top">
+
+Tenant administrator can choose Cloud Foundry regions for the audit log service configuration. See [Access Audit Logs \(AWS, Azure Infrastructure\)](Monitoring-and-Reporting/access-audit-logs-aws-azure-infrastructure-a3e793c.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2022-11-25
+
+
+
+</td>
+<td valign="top">
+
+2022-11-24
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+
+
+</td>
+<td valign="top">
+
+ Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
 2022-11-15
 
 
@@ -2282,7 +2458,7 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+2022-09-13
 
 
 

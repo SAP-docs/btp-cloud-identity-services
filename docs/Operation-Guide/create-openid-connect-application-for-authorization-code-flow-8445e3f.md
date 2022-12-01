@@ -174,5 +174,7 @@ To create a new OpenID Connect application follow the procedure below:
 
 [Create OpenID Connect Application for JWT Bearer Flow](create-openid-connect-application-for-jwt-bearer-flow-b099d8c.md "Create a new OpenID Connect application for JWT bearer flow.")
 
+[Create OpenID Connect Application for Token Exchange](create-openid-connect-application-for-token-exchange-e3baf39.md "Create a new OpenID Connect application for Token Exchange flow.")
+
 [OpenID Connect](openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
 

@@ -249,7 +249,7 @@ To configure an OpenID Connect trusted application in the administration console
     <tr>
     <td valign="top">
 
-    **Client Credential**
+    **Client Credentials**
 
 
     
@@ -257,6 +257,22 @@ To configure an OpenID Connect trusted application in the administration console
     <td valign="top">
 
     selected
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+
+    **Token Exchange \(RFC 8693\)**
+
+
+    
+    </td>
+    <td valign="top">
+
+    not-selected
 
 
     

@@ -10,9 +10,11 @@ You can view and define your custom schema via the administration console for SA
 
 The administration console view for Identity Authentication shows information about all existing schemas, predefined, and custom, in the tenant.
 
-To define your own custom schema, you can import a JSON file, which must comply with the SCIM standard, or you can create it manually via the administration console for Identity Authentication.
+If you need your own custom attributes, for users or groups, you can define your own custom schema, and once the schema is defined, the custom attributes that it defines can be used.
 
-You can use one of the predefined schemas, import, or manually create your custom one. The maxim number of all custom schemas, imported and manually created, per tenant is 20. Each schema can have up to 20 attributes. Each multivalued attribute of type `complex` can have up to 20 subattributes.
+You can define a schema either by importing a JSON file, which must comply with the SCIM standard, or by creating it manually via the administration console for Identity Authentication
+
+You can check the available schemas in the tenant, and use one of the predefined schemas. You can also import, or manually create your custom schema. The maxim number of all custom schemas, imported and manually created, per tenant is 20. Each schema can have up to 20 attributes. Each multivalued attribute of type `complex` can have up to 20 subattributes.
 
 You can also download a schema template or any of the already existing schemas. You can use the template to define your own schema extensions.
 
@@ -86,7 +88,7 @@ The schemas in the administration console are read-only. To edit a custom schema
 
         Required
 
-        Example: `"id": "urn:sap:cloud:scim:schemas:extension:custom:2.0:MyCustomSchema"`
+        Example: `"id": "urn:sap:cloud:scim:schemas:extension:custom:2.0:MyCustomSchema",`
 
 
         
@@ -125,7 +127,7 @@ The schemas in the administration console are read-only. To edit a custom schema
 
         Optional
 
-        Example: "description": "User previous work experience",
+        Example: `"description": "Custom schema description",`
 
 
         
