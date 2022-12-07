@@ -42,7 +42,7 @@ For this scenario, the configurations are made in Azure classic portal and in th
 
 [Integrating the Service with SAP Identity Management 8.0](integrating-the-service-with-sap-identity-management-8-0-f44f931.md "")
 
-[Integrating the Service with an ABAP Product and SAP Analytics Cloud](integrating-the-service-with-an-abap-product-and-sap-analytics-cloud-dd61aea.md "This integration document aims to provide information about single sign-on (SSO) options for an ABAP product and SAP Analytics Cloud, that use Identity Authentication as an authenticating or proxy identity provider.")
+[Integrating the Service with SAP S/4HANA Cloud, SAP Integrated Business Planning and SAP Analytics Cloud](integrating-the-service-with-sap-s-4hana-cloud-sap-integrated-business-planning-and-sap-a-dd61aea.md "This integration document aims to provide information about single sign-on (SSO) options for SAP S/4HANA Cloud or SAP Integrated Business Planning and SAP Analytics Cloud, that use Identity Authentication as an authenticating or proxy identity provider.")
 
 [Integrating the Service with SAP Task Center](integrating-the-service-with-sap-task-center-ab5e90e.md)
 

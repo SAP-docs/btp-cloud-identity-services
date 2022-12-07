@@ -148,7 +148,7 @@ locale/language
 > ### Note:  
 > `locale` is added at the creation of the application. It takes as value the language of the user.
 > 
-> You can view the configured user language in the administration console for Identity Authentication. For more information, see[Configure the User Attributes Sent to the Application](configure-the-user-attributes-sent-to-the-application-d361407.md).
+> You can view the configured user language in the administration console for Identity Authentication. For more information, see [Configure the User Attributes Sent to the Application](configure-the-user-attributes-sent-to-the-application-d361407.md).
 
 
 

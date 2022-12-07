@@ -443,7 +443,7 @@ SAP Data Warehouse Cloud embedded
 **Related Information**  
 
 
-[Use Your Own Corporate IdP for Authentication](use-your-own-corporate-idp-for-authentication-699edc9.md "This document is intended to help you configure trust with a SAML 2.0 corporate identity provider. In this scenario Identity Authentication acts as a proxy to delegate the authentication to the SAML 2.0 corporate identity provider.")
+[Tenant Model and Licensing](../tenant-model-and-licensing-93160eb.md "This document provides information about the tenant model, tenant licensing, and obtaining a tenant of Identity Authentication.")
 
 [Identity Directory REST API](https://api.sap.com/api/IdDS_SCIM/resource)
 
@@ -454,4 +454,8 @@ SAP Data Warehouse Cloud embedded
 [Import or Update Users for a Specific Application](../Operation-Guide/import-or-update-users-for-a-specific-application-33838e0.md "As a tenant administrator, you can import new users or update existing ones for a specific application with a CSV file. You can also send activation e-mails to the users that have not received activation e-mails for that application so far.")
 
 [Configure SAML 2.0 Service Provider](../Operation-Guide/configure-saml-2-0-service-provider-51f1f75.md "This document is intended to help you configure a SAML 2.0 service provider (SP) in the administration console for Identity Authentication.")
+
+[Communication Scenarios Managed by SAP](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/c15c71affb2243ec9abc071c1a62503c.html)
+
+[Initial System Access for SAP S/4HANA Cloud in Your 3-system Landscape](https://help.sap.com/docs/SAP_S4HANA_CLOUD/b249d650b15e4b3d9fc2077ee921abd0/30415f166409468689b31571989e4b95.html?state=DRAFT&version=2202.500)
 

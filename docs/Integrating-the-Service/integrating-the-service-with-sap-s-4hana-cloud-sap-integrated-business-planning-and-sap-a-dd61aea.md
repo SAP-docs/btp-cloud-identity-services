@@ -1,12 +1,17 @@
 <!-- loiodd61aea2845441c78ef082e1059f04b7 -->
 
-# Integrating the Service with an ABAP Product and SAP Analytics Cloud
+# Integrating the Service with SAP S/4HANA Cloud, SAP Integrated Business Planning and SAP Analytics Cloud
 
-This integration document aims to provide information about single sign-on \(SSO\) options for an ABAP product and SAP Analytics Cloud, that use Identity Authentication as an authenticating or proxy identity provider.
+This integration document aims to provide information about single sign-on \(SSO\) options for SAP S/4HANA Cloud or SAP Integrated Business Planning and SAP Analytics Cloud, that use Identity Authentication as an authenticating or proxy identity provider.
 
 
 
-The ABAP products can be SAP S/4HANA Cloud or SAP Integrated Business Planning. SAP Analytics Cloud, can be embedded in SAP S/4HANA Cloud or in SAP Integrated Business Planning, or it can be part of SAP Data Warehouse Cloud embedded, that is integrated with SAP S/4HANA Cloud as of version 2022.8.
+SAP Analytics Cloud, is integreted in SAP S/4HANA Cloud or in SAP Integrated Business Planning, or it can be part of SAP Data Warehouse Cloud embedded, that is integrated with SAP S/4HANA Cloud as of version 2022.8.
+
+
+
+-   [Use Identity Authentication as Authenticating IdP](use-identity-authentication-as-authenticating-idp-2ff9a61.md)
+-   [Use Your Own Corporate IdP for Authentication](use-your-own-corporate-idp-for-authentication-699edc9.md)
 
 **Related Information**  
 

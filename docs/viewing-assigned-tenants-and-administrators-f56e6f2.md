@@ -26,11 +26,21 @@ The SAP Cloud Identity Services - Tenants application shows which are the Identi
 
     ![](images/Tenant_App_Main_c05420d.png)
 
-3.  Choose *Show* next to the tenant to view all tenant administrators for that tenant.
+3.  Choose details next to the tenant to view the bundles or tenant administrators for that tenant.
 
-    The users and e-mails are masked if the domain of the authenticated user is different from the domain of the tenant administrators.
+    ![](images/Show_View_2be1bd0.png)
 
-    ![](images/Tennant_App_Admins_d124030.png)
+    -   Bundles - shows the bundels for the tenant.
+
+        ![](images/Bundles_9641f9d.png)
+
+    -   Show - shows the administrators for the tenant.
+
+        ![](images/Tennant_App_Admins_d124030.png)
+
+        > ### Note:  
+        > The users and e-mails are masked if the domain of the authenticated user is different from the domain of the tenant administrators.
+
 
 
 **Related Information**  

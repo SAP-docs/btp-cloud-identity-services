@@ -175,6 +175,184 @@ Identity Authentication
 </td>
 <td valign="top">
 
+2022-12-07
+
+
+
+</td>
+<td valign="top">
+
+2022-12-07
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Integration of SAML and OIDC Logout Flows
+
+
+
+</td>
+<td valign="top">
+
+The service supports OpenID Connect \(OIDC\) front-channel logout, which is used to logout from OIDC applications. The logout is integrated with the Security Assertion Markup Language \(SAML\) logout endpoint so that both logout endpoints behave the same way; terminating all SAML, OIDC, Identity Authentication, and corporate identity provider sessions.
+
+For more information, see [Front-Channel Logout URI Rules](Operation-Guide/front-channel-logout-uri-rules-789c752.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2022-12-07
+
+
+
+</td>
+<td valign="top">
+
+2022-12-07
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+
+
+</td>
+<td valign="top">
+
+ Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
 2022-11-25
 
 

@@ -1,8 +1,12 @@
 <!-- loio48fdb9ab1a094859ac79c9b25e0ab58b -->
 
-# Redirect URIs, Post Logout Redirect URIs Rules
+# Redirect URIs, Post Logout Redirect URI Rules
+
+Rules for the redirect URIs or post logout redirect URIs.
 
 
+
+The redirect URI defines the redirection URIs to which the response can be sent. The post logout redirect URI defines the redirection URIs where the user can be forwarded after logout.
 
 The redirect URI or post logout redirect URI must be in the following format:
 
@@ -107,6 +111,8 @@ After the domain you can put port number. Always use a leading colon \(`:`\).
 
 **Related Information**  
 
+
+[Front-Channel Logout URI Rules](front-channel-logout-uri-rules-789c752.md "Rules for the front-channel URIs.")
 
 [Token Policy Configuration for Applications](token-policy-configuration-for-applications-c4ba52e.md "Set the token policy for a specific OpenID Connect application. Configure the validity of the refresh token, access and id_token, and the maximum sessions per user.")
 

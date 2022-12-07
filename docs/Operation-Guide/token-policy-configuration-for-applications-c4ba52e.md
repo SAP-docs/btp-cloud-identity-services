@@ -140,7 +140,9 @@ To configure the token policy, proceed as follows:
 **Related Information**  
 
 
-[Redirect URIs, Post Logout Redirect URIs Rules](redirect-uris-post-logout-redirect-uris-rules-48fdb9a.md)
+[Redirect URIs, Post Logout Redirect URI Rules](redirect-uris-post-logout-redirect-uri-rules-48fdb9a.md "Rules for the redirect URIs or post logout redirect URIs.")
+
+[Front-Channel Logout URI Rules](front-channel-logout-uri-rules-789c752.md "Rules for the front-channel URIs.")
 
 [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md "You as a tenant administrator can view and configure the tenant OpenID Connect configurations.")
 
