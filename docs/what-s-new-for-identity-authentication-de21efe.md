@@ -175,6 +175,270 @@ Identity Authentication
 </td>
 <td valign="top">
 
+2022-12-16
+
+
+
+</td>
+<td valign="top">
+
+2022-12-16
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+OpenID Connect
+
+
+
+</td>
+<td valign="top">
+
+Tenant administrator can select client authentication method when configure the OpenID Connect corporate identity provider in the administration console. See [Configure Trust with OpenID Connect Corporate Identity Provider](Operation-Guide/configure-trust-with-openid-connect-corporate-identity-provider-8ff83a1.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2022-12-16
+
+
+
+</td>
+<td valign="top">
+
+2022-12-16
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+
+
+</td>
+<td valign="top">
+
+ Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2022-12-14
+
+
+
+</td>
+<td valign="top">
+
+2022-12-14
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+
+
+</td>
+<td valign="top">
+
+ Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
 2022-12-07
 
 

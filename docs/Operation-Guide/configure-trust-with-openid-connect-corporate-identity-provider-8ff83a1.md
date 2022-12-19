@@ -243,6 +243,22 @@ Configure the corporate identity provider in the administration console for Iden
     <tr>
     <td valign="top">
 
+    Discovery URL
+
+
+    
+    </td>
+    <td valign="top">
+
+    Required. Issuer or metadata URL of the corporate identity provider.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+
     Issuer
 
 
@@ -250,7 +266,7 @@ Configure the corporate identity provider in the administration console for Iden
     </td>
     <td valign="top">
 
-    Required. Issuer URL of the corporate identity provider. Must be `https` and equal to the Issuer in the corporate identity provider OpenID Connect metadata.
+    Optional. Issuer URL of the corporate identity provider. Must be `https` and equal to the Issuer in the corporate identity provider OpenID Connect metadata.
 
 
     
@@ -275,6 +291,30 @@ Configure the corporate identity provider in the administration console for Iden
     <tr>
     <td valign="top">
 
+    Client Authentication Method
+
+
+    
+    </td>
+    <td valign="top">
+
+    Optional. Choose from:
+
+    -   Client secret in body \(default choice\)
+    -   Client secret in authorization header
+    -   Private key JWT
+
+        > ### Tip:  
+        > If possible, choose *Private key JWT*. This choice allows also automatic credential rotation.
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+
     Client Secret
 
 
@@ -282,7 +322,10 @@ Configure the corporate identity provider in the administration console for Iden
     </td>
     <td valign="top">
 
-    Required. The Client Secret of the application on the corporate identity provider side.
+    The Client Secret of the application on the corporate identity provider side.
+
+    > ### Note:  
+    > Required when *Client Authentication Method* is ***Client secret in body*** or ***Client secret in authorization header***. The Client Secret of the application on the corporate identity provider side.
 
 
     
@@ -323,4 +366,6 @@ Configure the corporate identity provider in the administration console for Iden
 
 
 [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md "As a tenant administrator, you can edit both your own authorizations and other administrators' authorizations in the administration console for Identity Authentication. By editing the administrator authorizations you can also delete an administrator.")
+
+[Microsoft identity platform application authentication certificate credentials](https://learn.microsoft.com/en-us/azure/active-directory/develop/active-directory-certificate-credentials)
 

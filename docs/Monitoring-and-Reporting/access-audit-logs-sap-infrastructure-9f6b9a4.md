@@ -124,16 +124,16 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > 
 > 
 > </td>
-> <td valign="top">
+> <td valign="top" rowspan="2">
 > 
-> Amsterdam \(primary\)
+> Rot/Amsterdam
 > 
 > 
 > 
 > </td>
 > <td valign="top">
 > 
-> `eu3.hana.ondemand.com`
+> `eu1.hana.ondemand.com` \(primary\)
 > 
 > 
 > 
@@ -142,14 +142,7 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > <tr>
 > <td valign="top">
 > 
-> Rot
-> 
-> 
-> 
-> </td>
-> <td valign="top">
-> 
-> `eu1.hana.ondemand.com`
+> `eu3.hana.ondemand.com`
 > 
 > 
 > 
@@ -163,29 +156,22 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > 
 > 
 > </td>
-> <td valign="top">
+> <td valign="top" rowspan="2">
 > 
-> Sydney \(primary\)
+> SydneyTokyo
 > 
 > 
 > 
 > </td>
 > <td valign="top">
 > 
-> `ap1.hana.ondemand.com`
+> `ap1.hana.ondemand.com` \(primary\)
 > 
 > 
 > 
 > </td>
 > </tr>
 > <tr>
-> <td valign="top">
-> 
-> Tokyo
-> 
-> 
-> 
-> </td>
 > <td valign="top">
 > 
 > `jp1.hana.ondemand.com`
@@ -195,7 +181,7 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > </td>
 > </tr>
 > <tr>
-> <td valign="top" rowspan="2">
+> <td valign="top">
 > 
 > Japan
 > 
@@ -204,23 +190,7 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > </td>
 > <td valign="top">
 > 
-> Tokyo \(primary\)
-> 
-> 
-> 
-> </td>
-> <td valign="top">
-> 
-> `jp1.hana.ondemand.com`
-> 
-> 
-> 
-> </td>
-> </tr>
-> <tr>
-> <td valign="top">
-> 
-> Osaka
+> Tokyo/Osaka
 > 
 > 
 > 
@@ -241,13 +211,22 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > 
 > 
 > </td>
-> <td valign="top">
+> <td valign="top" rowspan="2">
 > 
-> Sterling \(primary\)
+> Sterling/Toronto
 > 
 > 
 > 
 > </td>
+> <td valign="top">
+> 
+> `us3.hana.ondemand.com` \(primary\)
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
 > <td valign="top">
 > 
 > `us1.hana.ondemand.com`
@@ -259,22 +238,6 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > <tr>
 > <td valign="top">
 > 
-> Toronto
-> 
-> 
-> 
-> </td>
-> <td valign="top">
-> 
-> `ca1.hana.ondemand.com`
-> 
-> 
-> 
-> </td>
-> </tr>
-> <tr>
-> <td valign="top" rowspan="2">
-> 
 > Saudi Arabia
 > 
 > 
@@ -282,23 +245,7 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > </td>
 > <td valign="top">
 > 
-> Riyadh \(primary\)
-> 
-> 
-> 
-> </td>
-> <td valign="top">
-> 
-> `sa1.hana.ondemand.com`
-> 
-> 
-> 
-> </td>
-> </tr>
-> <tr>
-> <td valign="top">
-> 
-> Dammam
+> Riyadh/Dammam
 > 
 > 
 > 
@@ -336,7 +283,7 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > </tr>
 > </table>
 > 
-> Use the primary region for your search.
+> Use the primary host for your search. If the audit log is not found there, use the other hosts.
 > 
 > For more information, see [Regional Availability](../regional-availability-be600ca.md) and [Regions and Hosts Available for the Neo Environment](https://help.sap.com/viewer/ea72206b834e4ace9cd834feed6c0e09/Cloud/en-US/d722f7cea9ec408b85db4c3dcba07b52.html).
 
@@ -403,16 +350,16 @@ You can filter the audit logs by time and/or categories. The categories that you
 > 
 > 
 > </td>
-> <td valign="top">
+> <td valign="top" rowspan="2">
 > 
-> Amsterdam \(primary\)
+> Rot/Amsterdam
 > 
 > 
 > 
 > </td>
 > <td valign="top">
 > 
-> `eu3.hana.ondemand.com`
+> `eu1.hana.ondemand.com` \(primary\)
 > 
 > 
 > 
@@ -421,14 +368,7 @@ You can filter the audit logs by time and/or categories. The categories that you
 > <tr>
 > <td valign="top">
 > 
-> Rot
-> 
-> 
-> 
-> </td>
-> <td valign="top">
-> 
-> `eu1.hana.ondemand.com`
+> `eu3.hana.ondemand.com`
 > 
 > 
 > 
@@ -442,29 +382,22 @@ You can filter the audit logs by time and/or categories. The categories that you
 > 
 > 
 > </td>
-> <td valign="top">
+> <td valign="top" rowspan="2">
 > 
-> Sydney \(primary\)
+> SydneyTokyo
 > 
 > 
 > 
 > </td>
 > <td valign="top">
 > 
-> `ap1.hana.ondemand.com`
+> `ap1.hana.ondemand.com` \(primary\)
 > 
 > 
 > 
 > </td>
 > </tr>
 > <tr>
-> <td valign="top">
-> 
-> Tokyo
-> 
-> 
-> 
-> </td>
 > <td valign="top">
 > 
 > `jp1.hana.ondemand.com`
@@ -474,7 +407,7 @@ You can filter the audit logs by time and/or categories. The categories that you
 > </td>
 > </tr>
 > <tr>
-> <td valign="top" rowspan="2">
+> <td valign="top">
 > 
 > Japan
 > 
@@ -483,23 +416,7 @@ You can filter the audit logs by time and/or categories. The categories that you
 > </td>
 > <td valign="top">
 > 
-> Tokyo \(primary\)
-> 
-> 
-> 
-> </td>
-> <td valign="top">
-> 
-> `jp1.hana.ondemand.com`
-> 
-> 
-> 
-> </td>
-> </tr>
-> <tr>
-> <td valign="top">
-> 
-> Osaka
+> Tokyo/Osaka
 > 
 > 
 > 
@@ -520,13 +437,22 @@ You can filter the audit logs by time and/or categories. The categories that you
 > 
 > 
 > </td>
-> <td valign="top">
+> <td valign="top" rowspan="2">
 > 
-> Sterling \(primary\)
+> Sterling/Toronto
 > 
 > 
 > 
 > </td>
+> <td valign="top">
+> 
+> `us3.hana.ondemand.com` \(primary\)
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
 > <td valign="top">
 > 
 > `us1.hana.ondemand.com`
@@ -538,22 +464,6 @@ You can filter the audit logs by time and/or categories. The categories that you
 > <tr>
 > <td valign="top">
 > 
-> Toronto
-> 
-> 
-> 
-> </td>
-> <td valign="top">
-> 
-> `ca1.hana.ondemand.com`
-> 
-> 
-> 
-> </td>
-> </tr>
-> <tr>
-> <td valign="top" rowspan="2">
-> 
 > Saudi Arabia
 > 
 > 
@@ -561,23 +471,7 @@ You can filter the audit logs by time and/or categories. The categories that you
 > </td>
 > <td valign="top">
 > 
-> Riyadh \(primary\)
-> 
-> 
-> 
-> </td>
-> <td valign="top">
-> 
-> `sa1.hana.ondemand.com`
-> 
-> 
-> 
-> </td>
-> </tr>
-> <tr>
-> <td valign="top">
-> 
-> Dammam
+> Riyadh/Dammam
 > 
 > 
 > 
@@ -615,7 +509,7 @@ You can filter the audit logs by time and/or categories. The categories that you
 > </tr>
 > </table>
 > 
-> Use the primary region for your search.
+> Use the primary host for your search. If the audit log is not found there, use the other hosts.
 > 
 > For more information, see [Regional Availability](../regional-availability-be600ca.md) and [Regions and Hosts Available for the Neo Environment](https://help.sap.com/viewer/ea72206b834e4ace9cd834feed6c0e09/Cloud/en-US/d722f7cea9ec408b85db4c3dcba07b52.html).
 

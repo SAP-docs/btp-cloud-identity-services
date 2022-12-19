@@ -45,7 +45,7 @@ You have registered the domain of the application and received a Site key and Pr
 
 5.  Enter the information in the provided fields:
 
-    -   ***Site Key*** - enter the Site Key provided frpm MTCaptcha
+    -   ***Site Key*** - enter the Site Key provided from MTCaptcha
     -   ***Secret Key*** - enter the Private Key provided from MTCaptcha
 
 6.  Save your changes.

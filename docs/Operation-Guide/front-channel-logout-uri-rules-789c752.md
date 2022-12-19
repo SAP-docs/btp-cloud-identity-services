@@ -6,7 +6,7 @@ Rules for the front-channel URIs.
 
 
 
-The front-channel URI specifies where the browser of the OpenID Connect application ends up after logout is triggered. The service ensures that all other sessions of the user are ended as well, including any SAML sessions or sessions with corporate identity providers.
+Identity Authentication triggers a logout request to the front-channel URI.
 
 The front-channel logout URI must be in the following format:
 
@@ -34,24 +34,21 @@ The length is limited to 499 characters.
 
     > ### Example:  
     > https://example.com
-    > 
-    > http://localhost
 
 -   Localhost - It's allowed in the domain part.
 
     > ### Example:  
-    > http://localhost
+    > http://localhost/logout
     > 
-    > https://localhost
+    > https://localhost/logout
 
--   Wildcards - Only absolute URIs are allowed.
 -   IP Addresses - Usage of IP addresses is not allowed.
 
 
 
 ## Ports \(optional\)
 
-After the domain you can put port number. Always use a leading colon \(`:`\).
+After the domain part you can put the port numbers. Always use a leading colon \(`:`\).
 
 > ### Example:  
 > https://example.com:8080/logout?abc=123
@@ -63,7 +60,7 @@ After the domain you can put port number. Always use a leading colon \(`:`\).
 ## Fragments
 
 > ### Restriction:  
-> Fragments are not allowed. For example, if you use `https://example.com/path#index.html`, the `#index.html` is not allowed in that case.
+> Usage of fragment identifier \(`#`\) is not allowed. For example, you can't use `https://example.com/path#index.html`.
 
 **Related Information**  
 
