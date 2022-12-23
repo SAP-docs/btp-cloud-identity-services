@@ -47,7 +47,7 @@ Attributes are case-sensitive and only the exact case must be used.
     > ### Note:  
     > Only one value is supported.
     > 
-    > Vaues that are part of the respective exclude list cant' be used. For more information, see [Restrict User Attributes Values via Exclude Lists](../Operation-Guide/restrict-user-attributes-values-via-exclude-lists-cb108c2.md).
+    > Values that are part of the respective exclude list can't be used. For more information, see [Restrict User Attributes Values via Exclude Lists](../Operation-Guide/restrict-user-attributes-values-via-exclude-lists-cb108c2.md).
     > 
     > The `<username>` part of the e-mail address can have the following:
     > 

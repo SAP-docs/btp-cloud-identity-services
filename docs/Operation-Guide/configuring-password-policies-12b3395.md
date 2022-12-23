@@ -332,7 +332,13 @@ Yes, 1 hour
 </td>
 <td valign="top">
 
-Yes, minimum 1 hour, maximum 24 hours
+Yes, minimum 1 hour, maximum *unlimited*
+
+> ### Note:  
+> If *unlimited* is set, the password can be unlocked only by the tenant administrator. For more information, see [Unlock User Password](unlock-user-password-9172552.md).
+
+> ### Caution:  
+> If *unlimited* is selected, e-mail template set must also be changed. Otherwise, the user will receive an e-mail stating that password logon to the account was disabled for - 1 hour. For more information, see [Configuring E-Mail Templates](configuring-e-mail-templates-b2afbcd.md).
 
 
 

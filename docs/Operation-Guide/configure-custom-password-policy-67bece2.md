@@ -202,7 +202,10 @@ To create and configure a new custom password policy, follow the procedure:
     </td>
     <td valign="top">
 
-    The period can be between 1 and 24 hours. The default value is 24 hours.
+    The period can be between 1 hour and unlimited.
+
+    > ### Tip:  
+    > When *Unlimited* is selected, we recommend you to mark this password policy the strongest.
 
 
     

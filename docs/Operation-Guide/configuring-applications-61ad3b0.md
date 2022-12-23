@@ -155,7 +155,7 @@ How to configure branding styles and layout
 
 On a tenant level
 
--   [Configure a Tenant Logo and Background Image](configure-a-tenant-logo-and-background-image-8742046.md)
+-   [Configure Tenant Images](configure-tenant-images-8742046.md)
 
 Specific for the application
 

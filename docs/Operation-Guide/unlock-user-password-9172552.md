@@ -2,13 +2,15 @@
 
 # Unlock User Password
 
-You can unlock a user password when the user must log on to the application before the automatic unlock time of 60 minutes has passed.
+You can unlock a user password when the user must log on to the application before the automatic unlock time of 60 minutes has passed, or if the *Password Locked Period* in the password policy is set at *unlimited*.
 
 
 
 ## Context
 
-The user locks his or her password after submitting five incorrect passwords when trying to log on to the account. The user receives a notification e-mail that the password log on to the account has been disabled for 60 minutes. The user can either choose the link provided in the e-mail to set a new password, or wait for 60 minutes and then log on with his or her current password.
+The user locks the password after submitting five incorrect passwords when trying to log on to the account. The user receives a notification e-mail that the password log on to the account has been disabled for 60 minutes. The user can either choose the link provided in the e-mail to set a new password, or wait for 60 minutes and then log on with his or her current password.
+
+If the *Password Locked Period* in the password policy is set at *unlimited*, the password can be unlocked only by the tenant administrator. When a user locks the password and then tries to reset it, they get the following message : "Your password is locked. Please contact your system administrator to unlock it." In this case the e-mail template set must also be changed. Otherwise, the user will receive an e-mail stating that password logon to the account was disabled for - 1 hour. For more information, see [Configuring E-Mail Templates](configuring-e-mail-templates-b2afbcd.md).
 
 > ### Remember:  
 > Identity Authentication can send to the user up to three e-mails \(forgot password, reset password, locked password, e-mail verification\) per 24 hours.

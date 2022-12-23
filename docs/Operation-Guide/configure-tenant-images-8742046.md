@@ -1,8 +1,8 @@
 <!-- loio8742046ee4604bb6b3907beb5c6d9254 -->
 
-# Configure a Tenant Logo and Background Image
+# Configure Tenant Images
 
-You can configure a custom global logo and, or a background image on the forms for sign-in in, registration, upgrade, password update, and account activation for all applications in a tenant.
+You can configure a custom global logo and, or a background image on the forms for sign-in in, registration, upgrade, password update, and account activation for all applications in a tenant. You can also set a favicon for tenant.
 
 
 
@@ -59,7 +59,15 @@ You can use an image with a maximum size of 600 KB \(1920x1080 pixels\)
 
 Identity Authentication doesn't store old versions the image. Once you upload a new image, the previous image is deleted.
 
-To configure a custom tenant logo and, or a background image, follow procedure below. It takes up to 2 minutes for the configuration changes to take place.
+
+
+### Favicon
+
+Favicon is a shortcut icon in a browser's address bar, for browsers that support them. Browsers that provide favicon support typically display the favicon for a page in the browser's address bar and next to the page title on the tab. Browsers that support a tabbed document interface typically show a favicon for a page next to the page title on the tab. You can upload a file for a custom favicon of Identity Authentication.
+
+The image file must have one of the following extensions: `.png`, or `.jpg` with a maximum size of 100 KB \(max 100x100 pixels\).
+
+To configure a custom tenant logo a background image, and or a favicon, follow procedure below. It takes up to 2 minutes for the configuration changes to take place.
 
 
 
@@ -82,7 +90,7 @@ To configure a custom tenant logo and, or a background image, follow procedure b
 
     At the top of the page you can view the administrative and license relevant information of the tenant.
 
-3.  Choose the *Logo and Background Image* list item.
+3.  Choose the *Logo, Background Image and Favicon* list item.
 
 4.  Choose the *Logo* tab, upload an image, and save your configuration.
 
@@ -101,6 +109,10 @@ To configure a custom tenant logo and, or a background image, follow procedure b
     > To delete the background image, choose the *Delete* button.
     > 
     > If this operation is successful, you receive the following message: ***Background image deleted***.
+
+6.  Choose the *Favicon* tab, upload an image, and save your configuration.
+
+    If the operation is successful, you can see the image applied together with the following message: Tenant Favicon updated.
 
 
 **Related Information**  
@@ -157,6 +169,8 @@ To configure a custom tenant logo and, or a background image, follow procedure b
 [Send System Notifications via E-Mails](send-system-notifications-via-e-mails-aa04a8b.md "You can configure the administration console to send e-mails with information about expiring certificates, system notifications and new administrators to specific e-mail addresses or to the e-mails of all administrators.")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
+
+[Configure P-User Next Index](configure-p-user-next-index-045bb1c.md "Set the value for the P-user next index.")
 
 [Reuse Identity Authentication Tenants for Different Customer IDs](reuse-identity-authentication-tenants-for-different-customer-ids-ebd0258.md "You as a tenant administrator can reuse an existing tenant for configurations and automated subscriptions.")
 

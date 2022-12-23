@@ -8,6 +8,10 @@ Set the token policy for a specific OpenID Connect application. Configure the va
 
 ## Context
 
+
+
+### Token Policy
+
 The following table lists the token policy options for OIDC applications.
 
 **Token Policy Configuration Parameters**
@@ -97,6 +101,85 @@ The default value is 1.
 
 > ### Remember:  
 > The default configurations for the token policy per application are equal to the tenant token policy. If you configure new values for an application, the service ignores the tenant token policy for that application. For more information about the tenant token policy, see [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md)
+
+
+
+### Refresh Token Usage After Renewal
+
+When refresh token flows fail, you can enable the server to accept a refresh token that was already submitted. Normally, a refresh token can only be used once. The configuration aims to solve issues, for example network problems in refresh token calls, and allow an application to retry this call. Define the behavior of clients depending on your scenario and the risk. If you extend the rotation life time, we recommend revoking existing tokens with a separate call.
+
+**Refresh Token Usage After Renewal**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Settings
+
+
+
+</th>
+<th valign="top">
+
+Description
+
+
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Off \(Default\)
+
+
+
+</td>
+<td valign="top">
+
+The new refresh token immediately invalidates the old one.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Online scenarios
+
+
+
+</td>
+<td valign="top">
+
+The new refresh token is created and the old one is still active for 5 minutes.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Mobile scenarios
+
+
+
+</td>
+<td valign="top">
+
+The new and old refresh token are valid during the configured refresh token life time.
+
+
+
+</td>
+</tr>
+</table>
+
+> ### Note:  
+> For online and mobile scenarios, calls to refresh the old refresh token end in the new token. Calls with the new refresh token, invalidates the old refresh token.
 
 To configure the token policy, proceed as follows:
 

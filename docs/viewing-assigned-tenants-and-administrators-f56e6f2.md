@@ -30,7 +30,7 @@ The SAP Cloud Identity Services - Tenants application shows which are the Identi
 
     ![](images/Show_View_2be1bd0.png)
 
-    -   Bundles - shows the bundels for the tenant.
+    -   Bundles - shows the bundles for the tenant.
 
         ![](images/Bundles_9641f9d.png)
 

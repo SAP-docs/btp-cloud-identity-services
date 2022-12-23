@@ -139,12 +139,37 @@ No/Configurable
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Phone*
+
+
+
+</td>
+<td valign="top">
+
+No/Not Configurable
+
+
+
+</td>
+<td valign="top">
+
+No/Configurable
+
+
+
+</td>
+</tr>
 </table>
 
-The `Login Name` identifier of a user can't have values that are equal to the `User ID`, `E-Mail`, and `Login Name` identifiers of another user.
+The `Login Name` and *Phone* identifiers of a user can't have values that are equal to the `User ID`, `E-Mail`, `Login Name` and *Phone* identifiers of another user.
 
 > ### Note:  
 > The `Display Name` user identifier for the tenants created before the system upgrade on May 13, 2020 is configured as required and unique.
+> 
+> The *Phone* user attribute is configured as non-unique by default. If you configure it as unique, all users that are created or updated after this configuration won't be able to have phone numbers taken by someone else.
 
 > ### Remember:  
 > If `E-Mail` is marked as not-required on tenant level, it becomes configurable on application level, and must also be changed there, too. For more information, see [Configure Registration and Upgrade Forms](configure-registration-and-upgrade-forms-93a9e18.md).
@@ -314,7 +339,7 @@ Choose the allowed logon identifiers for the users. For more information, see [C
 
 [Configure X.509 Client Certificates for User Authentication](configure-x-509-client-certificates-for-user-authentication-52c7dcb.md "Tenant administrators can configure X.509 client certificates for user authentication as an alternative to authenticating with a user name and a password.")
 
-[Configure a Tenant Logo and Background Image](configure-a-tenant-logo-and-background-image-8742046.md "You can configure a custom global logo and, or a background image on the forms for sign-in in, registration, upgrade, password update, and account activation for all applications in a tenant.")
+[Configure Tenant Images](configure-tenant-images-8742046.md "You can configure a custom global logo and, or a background image on the forms for sign-in in, registration, upgrade, password update, and account activation for all applications in a tenant. You can also set a favicon for tenant.")
 
 [Configure Allowed Logon Identifiers](configure-allowed-logon-identifiers-3adf1ff.md "Tenant administrators can choose the allowed logon identifiers for the users.")
 
@@ -351,6 +376,8 @@ Choose the allowed logon identifiers for the users. For more information, see [C
 [Send System Notifications via E-Mails](send-system-notifications-via-e-mails-aa04a8b.md "You can configure the administration console to send e-mails with information about expiring certificates, system notifications and new administrators to specific e-mail addresses or to the e-mails of all administrators.")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
+
+[Configure P-User Next Index](configure-p-user-next-index-045bb1c.md "Set the value for the P-user next index.")
 
 [Reuse Identity Authentication Tenants for Different Customer IDs](reuse-identity-authentication-tenants-for-different-customer-ids-ebd0258.md "You as a tenant administrator can reuse an existing tenant for configurations and automated subscriptions.")
 

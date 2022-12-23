@@ -12,19 +12,22 @@ The administration console view for Identity Authentication shows information ab
 
 If you need your own custom attributes, for users or groups, you can define your own custom schema, and once the schema is defined, the custom attributes that it defines can be used.
 
-You can define a schema either by importing a JSON file, which must comply with the SCIM standard, or by creating it manually via the administration console for Identity Authentication
+> ### Note:  
+> When the attributes are assigned to a user, they can be sent to the application. For more information, see [Configure the User Attributes Sent to the Application](configure-the-user-attributes-sent-to-the-application-d361407.md).
+
+You can define a schema either by importing a JSON file, which must comply with the SCIM standard, or by creating it manually via the administration console for Identity Authentication.
 
 You can check the available schemas in the tenant, and use one of the predefined schemas. You can also import, or manually create your custom schema. The maxim number of all custom schemas, imported and manually created, per tenant is 20. Each schema can have up to 20 attributes. Each multivalued attribute of type `complex` can have up to 20 subattributes.
 
 You can also download a schema template or any of the already existing schemas. You can use the template to define your own schema extensions.
 
-The schemas in the administration console are read-only. To edit a custom schema, you must delete it and import a new one with the necessary changes. If you delete a schema this will also delete the attributes and subattributes in this schema and their values, and remove all already assigned attributes to users from this schema.
-
-> ### Remember:  
+> ### Caution:  
+> The schemas in the administration console are read-only. To edit a custom schema, you must delete it and import a new one with the necessary changes. If you delete a schema this will also delete the attributes and subattributes in this schema and their values, and remove all already assigned attributes to users from this schema.
+> 
 > You can delete only custom schemas.
 
 > ### Note:  
-> For more information about the SCIM Core Schema, see [7. Schema Definition](https://datatracker.ietf.org/doc/html/rfc7643).
+> For more information about the SCIM Core Schema, see [7. Schema Definition](https://datatracker.ietf.org/doc/html/rfc7643#section-7).
 
 
 
@@ -660,4 +663,6 @@ The newly created schemas appear in the list on the left. The schemas are listed
 
 
 [System for Cross-domain Identity Management: Core Schema](https://datatracker.ietf.org/doc/html/rfc7643)
+
+[Attribute Data Types](https://datatracker.ietf.org/doc/html/rfc7643#section-2-3)
 

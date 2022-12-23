@@ -33,7 +33,7 @@ The length is limited to 499 characters.
 -   Protocols - Use the HTTPS protocol. The HTTP protocol is only allowed for localhost.
 
     > ### Example:  
-    > https://example.com
+    > https://example.com/logout
 
 -   Localhost - It's allowed in the domain part.
 
@@ -51,7 +51,7 @@ The length is limited to 499 characters.
 After the domain part you can put the port numbers. Always use a leading colon \(`:`\).
 
 > ### Example:  
-> https://example.com:8080/logout?abc=123
+> https://example.com:8080/logout
 
 
 

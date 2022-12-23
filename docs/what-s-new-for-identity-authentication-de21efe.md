@@ -175,6 +175,622 @@ Identity Authentication
 </td>
 <td valign="top">
 
+2022-12-21
+
+
+
+</td>
+<td valign="top">
+
+2022-12-21
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Tenant Images
+
+
+
+</td>
+<td valign="top">
+
+Tenant administrator can upload a file to use a custom favicon for theIdentity Authenticationtenant. See [Configure Tenant Images](Operation-Guide/configure-tenant-images-8742046.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2022-12-21
+
+
+
+</td>
+<td valign="top">
+
+2022-12-21
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Tenant Settings
+
+
+
+</td>
+<td valign="top">
+
+Tenant Administrator can change the P-number index by setting a new number from which the P-number to start. See [Configure P-User Next Index](Operation-Guide/configure-p-user-next-index-045bb1c.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2022-12-21
+
+
+
+</td>
+<td valign="top">
+
+2022-12-21
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Notifications
+
+
+
+</td>
+<td valign="top">
+
+User can receive e-mail alerts when the telephone they use is changed. See [Send Security Alert E-Mails](Operation-Guide/send-security-alert-e-mails-c977464.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2022-12-21
+
+
+
+</td>
+<td valign="top">
+
+2022-12-21
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Authentication
+
+
+
+</td>
+<td valign="top">
+
+Users can sign in with their telephone number as user identifier. See [Configure Allowed Logon Identifiers](Operation-Guide/configure-allowed-logon-identifiers-3adf1ff.md) and [Configure User Identifier Attributes](Operation-Guide/configure-user-identifier-attributes-8b9fa88.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2022-12-21
+
+
+
+</td>
+<td valign="top">
+
+2022-12-21
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Password Policy
+
+
+
+</td>
+<td valign="top">
+
+Tenant administrator can configure a custom password policy with with an unlimited password locked period. If *unlimited* period is set, the password can be unlocked only by the tenant administrator. See [Configuring Password Policies](Operation-Guide/configuring-password-policies-12b3395.md) 
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2022-12-21
+
+
+
+</td>
+<td valign="top">
+
+2022-12-21
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+OpenID Connect
+
+
+
+</td>
+<td valign="top">
+
+Tenant administrator can configure the rotation lifetime to extend the validity of the refresh token after first successful rotation. See [Token Policy Configuration for Applications](Operation-Guide/token-policy-configuration-for-applications-c4ba52e.md) 
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2022-12-21
+
+
+
+</td>
+<td valign="top">
+
+2022-12-21
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+
+
+</td>
+<td valign="top">
+
+ Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
 2022-12-16
 
 
@@ -2502,7 +3118,7 @@ End-User Screens
 </td>
 <td valign="top">
 
-Tenant administrator can put custom image as background on the forms for sign-in in, registration, upgrade, password update, and account activation for all applications in a tenant. See [Configure a Tenant Logo and Background Image](Operation-Guide/configure-a-tenant-logo-and-background-image-8742046.md).
+Tenant administrator can put custom image as background on the forms for sign-in in, registration, upgrade, password update, and account activation for all applications in a tenant. See [Configure Tenant Images](Operation-Guide/configure-tenant-images-8742046.md).
 
 
 

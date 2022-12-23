@@ -118,7 +118,7 @@ Administrators can configure branding styles for UI elements, e-mails, and error
 </td>
 <td valign="top">
 
-[Configure a Tenant Logo and Background Image](Operation-Guide/configure-a-tenant-logo-and-background-image-8742046.md), [Configure a Logo for an Application](Operation-Guide/configure-a-logo-for-an-application-778f748.md), [Configure a Branding Style for an Application](Operation-Guide/configure-a-branding-style-for-an-application-32f8d33.md), [Define an E-Mail Template Set for an Application](Operation-Guide/define-an-e-mail-template-set-for-an-application-bb2c79b.md), [Configure Registration and Upgrade Forms](Operation-Guide/configure-registration-and-upgrade-forms-93a9e18.md)
+[Configure Tenant Images](Operation-Guide/configure-tenant-images-8742046.md), [Configure a Logo for an Application](Operation-Guide/configure-a-logo-for-an-application-778f748.md), [Configure a Branding Style for an Application](Operation-Guide/configure-a-branding-style-for-an-application-32f8d33.md), [Define an E-Mail Template Set for an Application](Operation-Guide/define-an-e-mail-template-set-for-an-application-bb2c79b.md), [Configure Registration and Upgrade Forms](Operation-Guide/configure-registration-and-upgrade-forms-93a9e18.md)
 
 
 

@@ -188,7 +188,7 @@ Yes
 
 Must be a string value of up to 64 characters.
 
-Vaues that are part of the respective exclude list cant' be used. For more information, see [Restrict User Attributes Values via Exclude Lists](restrict-user-attributes-values-via-exclude-lists-cb108c2.md).
+Values that are part of the respective exclude list can't be used. For more information, see [Restrict User Attributes Values via Exclude Lists](restrict-user-attributes-values-via-exclude-lists-cb108c2.md).
 
 
 
@@ -227,7 +227,7 @@ No
 
 Must be a string value of up to 64 characters.
 
-Vaues that are part of the respective exclude list cant' be used. For more information, see [Restrict User Attributes Values via Exclude Lists](restrict-user-attributes-values-via-exclude-lists-cb108c2.md).
+Values that are part of the respective exclude list can't be used. For more information, see [Restrict User Attributes Values via Exclude Lists](restrict-user-attributes-values-via-exclude-lists-cb108c2.md).
 
 
 
@@ -266,7 +266,7 @@ No
 
 Must be a string value of up to 64 characters.
 
-Vaues that are part of the respective exclude list cant' be used. For more information, see [Restrict User Attributes Values via Exclude Lists](restrict-user-attributes-values-via-exclude-lists-cb108c2.md).
+Values that are part of the respective exclude list can't be used. For more information, see [Restrict User Attributes Values via Exclude Lists](restrict-user-attributes-values-via-exclude-lists-cb108c2.md).
 
 
 

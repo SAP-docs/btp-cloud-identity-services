@@ -75,7 +75,7 @@ Apart from the bundled and charged applications that you can create, the tenant 
 > ### Caution:  
 > Please be careful when you make configuration changes to the system applications. Certain configuration options for the system applications are read-only.
 > 
-> For more information, how to create a new application, see [Create a New Application](Operation-Guide/create-a-new-application-0d4b255.md).
+> System applications can't be parents to other applications, and can't have child applications.
 
 The `Administration Console` application contains the configurations of the administration console for Identity Authentication, and information about expiring certificates, system notifications and new administrators. The information is visible at the top right corner of the administration console:
 

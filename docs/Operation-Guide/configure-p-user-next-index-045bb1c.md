@@ -1,151 +1,19 @@
-<!-- loiof8093f4d9eae449f9fd6449c6f8d5474 -->
+<!-- loio045bb1ce71e04d1bab6955b5f40fd1bb -->
 
-# Configure Initial Password and E-Mail Link Validity
+# Configure P-User Next Index
 
-As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.
-
-
-
-<a name="loiof8093f4d9eae449f9fd6449c6f8d5474__prereq_ucl_qcg_ppb"/>
-
-## Prerequisites
-
-You are assigned the *Manage Tenant Configuration* role. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
+Set the value for the P-user next index.
 
 
 
 ## Context
 
-The tenant administrator can specify how long the link sent to a user in the various application processes will be valid for. The link in the e-mail can be set to expire after between 1 and 23 hours, or 1 and 30 days.
-
-Expired links can't be used. The system automatically sends a new link in an e-mail when a user uses an expired link.
-
-Identity Authentication has predefined the following validity periods:
-
-**Default E-Mail Link Validity Periods**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Application Process
-
-
-
-</th>
-<th valign="top">
-
-Default Validity Period
-
-
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Self-Registration
-
-
-
-</td>
-<td valign="top">
-
-14 Days
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-On-Behalf Registration
-
-
-
-</td>
-<td valign="top">
-
-14 Days
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Invitation
-
-
-
-</td>
-<td valign="top">
-
-14 Days
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Forgot Password
-
-
-
-</td>
-<td valign="top">
-
-2 Hours
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Locked Password
-
-
-
-</td>
-<td valign="top">
-
-2 Hours
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Reset Password
-
-
-
-</td>
-<td valign="top">
-
-2 Hours
-
-
-
-</td>
-</tr>
-</table>
-
-The tenant administrator can also set a validity for the initial password. The initial password can be valid between 1 and 365 days depending on the configuration. The default value is 14 days. After the validity of the initial password expires, the user can't log on to the application and must contact the administrator.
-
-> ### Remember:  
-> It takes 2 minutes for the configuration changes to take place.
-
-To change the validity period of the initial password and the links, follow the procedure below:
+Every user in Identity Authentication has a `User ID` which is an automatically generated number preceded by the letter P. The first administrator, which is also the first user, receives the number P 000000. The`User ID` of every other user that is created in Identity Authentication is incremented by 1. Thus the second user has a `User ID` P 000001, and so on. You can change the P-number index by setting a new number from which the P-number to start. The new value must always be higher than the current one. For example, the User ID of the latest created user is P 000100, which means that the current P-user index is 100. If you want the of the next user to be P 000200,`User ID` then you should make the P-user index 200.
+
+> ### Restriction:  
+> Beware, that after the change is saved you won't be able to set the P-number index value to a number lower than the current one.
+> 
+> The P-number index can't be higher than 2147483647.
 
 
 
@@ -166,23 +34,11 @@ To change the validity period of the initial password and the links, follow the 
 
     At the top of the page you can view the administrative and license relevant information of the tenant.
 
-3.  Choose the *Initial Password and E-Mail Link Validity* list item.
+3.  Choose the *Tenant Default Values* list item.
 
-4.  \(For e-mail link validity\) Under *Configure E-Mail Link Validity*, choose an application process and set the validity period of the e-mail link for it.
+4.  Enter a number for the *P-user next index*.
 
-    1.  From the dropdown list on the right, select either *Days* or *Hours*.
-
-    2.  From the dropdown list on the left, select a number for this.
-
-
-    > ### Note:  
-    > You can choose a value between 1 and 23 for *Hours*, and 1 and 30 for *Days*.
-
-    You can repeat the step for all processes.
-
-5.  \(For initial password validity\) Under *Configure Initial Password Validity*, set a value for the validity of the initial password.
-
-6.  Save your changes.
+5.  Save your changes.
 
 
 **Related Information**  
@@ -216,6 +72,8 @@ To change the validity period of the initial password and the links, follow the 
 
 [Enable Users to Recover Password with PIN Code](enable-users-to-recover-password-with-pin-code-046a235.md "Users can choose to provide PIN code to reset their password.")
 
+[Configure Initial Password and E-Mail Link Validity](configure-initial-password-and-e-mail-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
+
 [Configure Session Timeout](configure-session-timeout-5ca23e4.md "As a tenant administrator, you can configure when the session, created at the Identity Authentication tenant, expires.")
 
 [Configure Trusted Domains](configure-trusted-domains-08fa1fe.md "Service providers that delegate authentication to Identity Authentication can protect their applications when using embedded frames, also called overlays, or when allowing user self-registration.")
@@ -239,8 +97,6 @@ To change the validity period of the initial password and the links, follow the 
 [Send System Notifications via E-Mails](send-system-notifications-via-e-mails-aa04a8b.md "You can configure the administration console to send e-mails with information about expiring certificates, system notifications and new administrators to specific e-mail addresses or to the e-mails of all administrators.")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
-
-[Configure P-User Next Index](configure-p-user-next-index-045bb1c.md "Set the value for the P-user next index.")
 
 [Reuse Identity Authentication Tenants for Different Customer IDs](reuse-identity-authentication-tenants-for-different-customer-ids-ebd0258.md "You as a tenant administrator can reuse an existing tenant for configurations and automated subscriptions.")
 
