@@ -243,7 +243,7 @@ To change the master data texts via the administration console, proceed as follo
     > 
     > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
 
-2.  Under *Applications and Resources*, choose the *Master Tenant Texts* tile.
+2.  Under *Applications and Resources*, choose the *Master Data* tile.
 
 3.  Choose the language from the drop-down list.
 

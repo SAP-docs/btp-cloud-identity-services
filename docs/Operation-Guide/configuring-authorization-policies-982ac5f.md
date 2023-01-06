@@ -14,7 +14,7 @@ For more information, see [Subscribe to Multitenant Applications Using the Cockp
 
 ## Authorization Management
 
-Authorization management in Identity Authentication allows applications to define authorization models with complex instance restrictions for data access. Developers authorization policies with functional checks, instance-based authorizations, and user attributes. They're available in the Identity Authentication administration console. If necessary, developers can update existing authorization policies.
+Authorization management in Identity Authentication allows applications to define authorization models with complex instance restrictions for data access. Developers define and deploy authorization policies with functional checks, instance-based authorizations, and user attributes. They're available in the Identity Authentication administration console. If necessary, developers can update existing authorization policies.
 
 Authorization management supports the following environments:
 
