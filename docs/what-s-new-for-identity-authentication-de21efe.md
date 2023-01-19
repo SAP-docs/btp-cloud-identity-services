@@ -4,7 +4,7 @@
 
 
 
-This page lists the release notes of SAP Cloud Identity Services - Identity Authentication for 2023. To see the release notes for the previous year, visit . 
+This page lists the release notes of SAP Cloud Identity Services - Identity Authentication for 2023. To see the release notes for the previous year, visit [2022 What's New for Identity Authentication \(Archive\)](2022-what-s-new-for-identity-authentication-archive-3322427.md). 
 
 
 
@@ -175,7 +175,7 @@ Identity Authentication
 </td>
 <td valign="top">
 
-2023-01-18
+2023-01-19
 
 
 
@@ -263,7 +263,7 @@ Identity Authentication
 </td>
 <td valign="top">
 
-2023-01-18
+2023-01-19
 
 
 
@@ -302,7 +302,7 @@ Tenant Settings
 </td>
 <td valign="top">
 
-The `Login Name` user identifier an be configured as required or non-required. See[Configure User Identifier Attributes](Operation-Guide/configure-user-identifier-attributes-8b9fa88.md).
+The `Login Name` user identifier an be configured as required or non-required. See [Configure User Identifier Attributes](Operation-Guide/configure-user-identifier-attributes-8b9fa88.md).
 
 
 
@@ -351,7 +351,7 @@ Identity Authentication
 </td>
 <td valign="top">
 
-2023-01-18
+2023-01-19
 
 
 
@@ -439,7 +439,7 @@ Identity Authentication
 </td>
 <td valign="top">
 
-2023-01-18
+2023-01-19
 
 
 
@@ -527,10 +527,14 @@ Identity Authentication
 </td>
 <td valign="top">
 
+2023-01-19
+
 
 
 </td>
 <td valign="top">
+
+2023-01-18
 
 
 
@@ -544,7 +548,7 @@ Identity Authentication
 
 ## What's New Archived
 
--   
+-   [2022](2022-what-s-new-for-identity-authentication-archive-3322427.md)
 
 -    [2021](2021-what-s-new-for-identity-authentication-archive-2df26f0.md)
 
