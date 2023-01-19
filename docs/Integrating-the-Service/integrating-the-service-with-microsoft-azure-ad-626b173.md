@@ -27,7 +27,7 @@ In this scenario Identity Authentication acts as a proxy identity provider and A
 > ### Tip:  
 > Identity Authentication supports the *Identity Federation* option. This option allows the application to check if the users authenticated by the corporate identity provider exist in the user store of Identity Authentication. In the default setting, the *Identity Federation* option is disabled. If *Identity Federation* is enabled, only the users that are imported in Identity Authentication are able to access the application. For more information about how to enable or disable *Identity Federation* with Identity Authentication, see **Enable Identity Federation with Identity Authentication** in [Configure Identity Federation](../Operation-Guide/configure-identity-federation-c029bbb.md).
 
-For this scenario, the configurations are made in Azure classic portal and in the administration console for Identity Authentication.
+For this scenario, the configurations are made in Azure classic portal and in the administration console for SAP Cloud Identity Services.
 
 **Related Information**  
 

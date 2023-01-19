@@ -2,5 +2,5 @@
 
 # Managing Administrators
 
-This section describes how, as a tenant administrator, you can list all administrators in the administration console for Identity Authentication, add new administrators, and edit the administrator authorizations. You can also remove administrators.
+This section describes how, as a tenant administrator, you can list all administrators in the administration console for SAP Cloud Identity Services, add new administrators, and edit the administrator authorizations. You can also remove administrators.
 

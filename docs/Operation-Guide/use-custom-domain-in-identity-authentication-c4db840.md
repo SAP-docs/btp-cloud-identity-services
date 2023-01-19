@@ -366,14 +366,7 @@ Identity Authentication allows you to use a custom domain that is different from
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Applications and Resources*, choose the *Tenant Settings* tile.
 
@@ -449,7 +442,7 @@ Identity Authentication allows you to use a custom domain that is different from
 
 7.  Send the CSR to a trusted Certificate Authority to sign the certificate.
 
-8.  Access the tenant's administration console for Identity Authentication *Applications and Resources* \> *Tenant Settings* \> *Custom Domain* \> *Certificate* and upload or insert as text the SSL certificate signed by the trusted CA.
+8.  Access the tenant's administration console for SAP Cloud Identity Services *Applications and Resources* \> *Tenant Settings* \> *Custom Domain* \> *Certificate* and upload or insert as text the SSL certificate signed by the trusted CA.
 
     > ### Note:  
     > Make sure that the subject DN in the domain certificate and the configured subject DN match exactly.
@@ -519,13 +512,13 @@ The custom domain configuration is enabled with the upgrade of Identity Authenti
 
 [Configure Trusted Domains](configure-trusted-domains-08fa1fe.md "Service providers that delegate authentication to Identity Authentication can protect their applications when using embedded frames, also called overlays, or when allowing user self-registration.")
 
-[Change a Tenant's Display Name](change-a-tenant-s-display-name-a513c91.md "You can configure the tenant's name from the administration console for Identity Authentication.")
+[Change a Tenant's Display Name](change-a-tenant-s-display-name-a513c91.md "You can configure the tenant's name from the administration console for SAP Cloud Identity Services.")
 
 [Configure Default Risk-Based Authentication for All Applications in the Tenant](configure-default-risk-based-authentication-for-all-applications-in-the-tenant-1aab51a.md#loio1aab51ae62b94f79b4c6dac7a00857c2 "You can define rules for authentication according to different risk factors and apply actions like Allow, Deny, and Two-Factor Authentication for all applications in a tenant.")
 
 [Configure Sinch Service in Administration Console](configure-sinch-service-in-administration-console-3fdc9e1.md "Configure Sinch Service to enable Phone Verification via SMS or SMS Two-Factor Authentication in the administration console.")
 
-[Configure RADIUS Server Settings \(Beta\)](configure-radius-server-settings-beta-03043ae.md "Configure Remote Authentication Dial-In User Service (RADIUS) server settings in the administration console for Identity Authentication.")
+[Configure RADIUS Server Settings \(Beta\)](configure-radius-server-settings-beta-03043ae.md "Configure Remote Authentication Dial-In User Service (RADIUS) server settings in the administration console for SAP Cloud Identity Services.")
 
 [Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the e-mails sent to the end users in the different application processes.")
 

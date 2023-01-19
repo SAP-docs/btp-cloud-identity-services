@@ -24,7 +24,7 @@ You have the following options for a password policy:
     \(Configurable\) Use this option to set the strongest password management features for the password policy. It's the responsibility of the tenant administrator to configure the custom password policy stronger than the standard and enterprise ones.
 
     > ### Remember:  
-    > This option is only possible if you’ve configured a custom password policy in the administration console for Identity Authentication. For more information, see [Configure Custom Password Policy](configure-custom-password-policy-67bece2.md).
+    > This option is only possible if you’ve configured a custom password policy in the administration console for SAP Cloud Identity Services. For more information, see [Configure Custom Password Policy](configure-custom-password-policy-67bece2.md).
 
 
 **Password Policy Requirements**

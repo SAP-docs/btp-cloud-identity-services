@@ -8,7 +8,7 @@ You can restrict the values that can be set on the e-mail, first and last name a
 
 ## Context
 
-The configured exclude lists for e-mail, first and last name attributes are considered in the user creation and user update via the Identity Authentication SCIM API, Identity Directory SCIM API, the administration console for Identity Authentication, and user import.
+The configured exclude lists for e-mail, first and last name attributes are considered in the user creation and user update via the Identity Authentication SCIM API, Identity Directory SCIM API, the administration console for SAP Cloud Identity Services, and user import.
 
 If the exclude lists are empty, you can create and update a user with any value for e-mail, first and last name attributes.
 
@@ -20,16 +20,7 @@ To create exclude lists for e-mail, first and last name attributes, follow the p
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Users & Authorizations*, choose the *Exclude Lists* tile.
 
@@ -51,9 +42,9 @@ To create exclude lists for e-mail, first and last name attributes, follow the p
 
 [Import or Update Users for a Specific Application](import-or-update-users-for-a-specific-application-33838e0.md "As a tenant administrator, you can import new users or update existing ones for a specific application with a CSV file. You can also send activation e-mails to the users that have not received activation e-mails for that application so far.")
 
-[Create a New User](create-a-new-user-348deef.md "As a tenant administrator, you can create a new user in the administration console for Identity Authentication.")
+[Create a New User](create-a-new-user-348deef.md "As a tenant administrator, you can create a new user in the administration console for SAP Cloud Identity Services.")
 
-[List and Edit User Details](list-and-edit-user-details-045cb01.md "As a tenant administrator, you can view detailed information about the users in the administration console for Identity Authentication. Optionally you can edit this information.")
+[List and Edit User Details](list-and-edit-user-details-045cb01.md "As a tenant administrator, you can view detailed information about the users in the administration console for SAP Cloud Identity Services. Optionally you can edit this information.")
 
 [SCIM REST API \(Deprecated\)](../Development/scim-rest-api-deprecated-2f21568.md "This section contains information about the Identity Authentication implementation of the System for Cross-domain Identity Management (SCIM) REST API protocol.")
 

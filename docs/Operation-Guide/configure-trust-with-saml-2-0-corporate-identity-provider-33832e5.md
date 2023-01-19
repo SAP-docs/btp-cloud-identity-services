@@ -70,7 +70,7 @@ You have the SAML 2.0 metadata of Identity Authentication. For more information 
 
 ## 2. Configure Trust on Identity Authentication Side
 
-Set up trust with a corporate identity provider in the administration console for Identity Authentication.
+Set up trust with a corporate identity provider in the administration console for SAP Cloud Identity Services.
 
 
 
@@ -91,16 +91,7 @@ Set up trust with a corporate identity provider in the administration console fo
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Identity Providers*, choose the *Corporate Identity Providers* tile.
 
@@ -334,7 +325,7 @@ Set up trust with a corporate identity provider in the administration console fo
 **Related Information**  
 
 
-[Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md "As a tenant administrator, you can edit both your own authorizations and other administrators' authorizations in the administration console for Identity Authentication. By editing the administrator authorizations you can also delete an administrator.")
+[Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md "As a tenant administrator, you can edit both your own authorizations and other administrators' authorizations in the administration console for SAP Cloud Identity Services. By editing the administrator authorizations you can also delete an administrator.")
 
 [Configure IdP-Initiated SSO](configure-idp-initiated-sso-5d59caa.md)
 

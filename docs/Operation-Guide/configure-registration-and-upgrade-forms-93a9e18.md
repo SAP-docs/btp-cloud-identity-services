@@ -13,7 +13,7 @@ After the user has filled in the form, the information from these attributes is 
 
 ## Context
 
-To configure the profile attributes, you need to specify which personal, company, and contact information the application prompts the user to provide when registering or upgrading. The information that the user has to provide depends on the status of the attribute \(required or optional\). You configure which attributes are displayed as required or optional in the administration console for Identity Authentication.
+To configure the profile attributes, you need to specify which personal, company, and contact information the application prompts the user to provide when registering or upgrading. The information that the user has to provide depends on the status of the attribute \(required or optional\). You configure which attributes are displayed as required or optional in the administration console for SAP Cloud Identity Services.
 
 The list of the attributes includes:
 
@@ -153,16 +153,7 @@ To configure profile attributes, proceed as follows:
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Applications and Resources*, choose the *Applications* tile.
 
@@ -206,7 +197,7 @@ Configure terms of use and privacy policy documents. For more information, see [
 
 [Configuring Terms of Use](configuring-terms-of-use-61d3a86.md "You can configure a custom terms of use document by creating a new document, adding and editing its language versions, and defining the document for an application.")
 
-[Troubleshooting for Administrators](troubleshooting-for-administrators-f80beb5.md "This section is intended to help administrators deal with error messages in the administration console for Identity Authentication.")
+[Troubleshooting for Administrators](troubleshooting-for-administrators-f80beb5.md "This section is intended to help administrators deal with error messages in the administration console for SAP Cloud Identity Services.")
 
 [Create a New Application](create-a-new-application-0d4b255.md "You can create a new application and customize it to comply with your company requirements.")
 

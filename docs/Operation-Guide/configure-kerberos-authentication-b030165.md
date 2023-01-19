@@ -667,7 +667,7 @@ This procedure is performed by the tenant administrator.
     > 2.  Enter `klist -e -f -k -K <path>\<keytab filename>.ktab` to list the derived keys corresponding to the key types.
     > 3.  Copy the key according to the number of the provided key type: *23* corresponds to *RC4*, *17* corresponds to *AES128*, and *18* corresponds to *AES256*.
 
-2.  Access the tenant's administration console for Identity Authentication by using the console's URL.
+2.  Access the tenant's administration console for SAP Cloud Identity Services by using the console's URL.
 
     > ### Note:  
     > The URL has the `https://<tenant ID>.accounts.ondemand.com/admin` pattern.

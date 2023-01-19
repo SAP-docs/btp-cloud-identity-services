@@ -31,22 +31,13 @@
 
 Applications can be configured to trust all the corporate identity providers configured in the administration console when identity provider \(IdP\) initiated single sign-on \(SSO\) is used. The user accesses the application via URL provided by the corporate identity provider.
 
-To enable IdP-initiated SSO with all corporate identity providers configured in the administration console for Identity Authentication follow the procedure below:
+To enable IdP-initiated SSO with all corporate identity providers configured in the administration console for SAP Cloud Identity Services follow the procedure below:
 
 
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Applications and Resources*, choose the *Applications* tile.
 
@@ -73,7 +64,7 @@ To enable IdP-initiated SSO with all corporate identity providers configured in 
 
 ## Results
 
-The application trusts all corporate identity providers that are configured in the administration console for Identity Authentication.
+The application trusts all corporate identity providers that are configured in the administration console for SAP Cloud Identity Services.
 
 **Related Information**  
 

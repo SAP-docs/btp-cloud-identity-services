@@ -2,16 +2,16 @@
 
 # Configure Trust
 
-This document is intended to help you configure a trusted service provider \(SP\) or client \(relying party\) in the administration console for Identity Authentication.
+This document is intended to help you configure a trusted service provider \(SP\) or client \(relying party\) in the administration console for SAP Cloud Identity Services.
 
 
 
 ## Context
 
-The trust is configured by uploading the service provider metadata \(for the SAML 2.0 applications\), or by entering the information manually \(for the SAML 2.0 or OpenID Connect applications\). Depending on the SSO type, you can configure a SAML 2.0 trusted service provider or Open ID Connect trusted client in the administration console for Identity Authentication:
+The trust is configured by uploading the service provider metadata \(for the SAML 2.0 applications\), or by entering the information manually \(for the SAML 2.0 or OpenID Connect applications\). Depending on the SSO type, you can configure a SAML 2.0 trusted service provider or Open ID Connect trusted client in the administration console for SAP Cloud Identity Services:
 
 **Related Information**  
 
 
-[Troubleshooting for Administrators](troubleshooting-for-administrators-f80beb5.md "This section is intended to help administrators deal with error messages in the administration console for Identity Authentication.")
+[Troubleshooting for Administrators](troubleshooting-for-administrators-f80beb5.md "This section is intended to help administrators deal with error messages in the administration console for SAP Cloud Identity Services.")
 

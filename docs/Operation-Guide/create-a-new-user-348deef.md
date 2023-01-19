@@ -2,7 +2,7 @@
 
 # Create a New User
 
-As a tenant administrator, you can create a new user in the administration console for Identity Authentication.
+As a tenant administrator, you can create a new user in the administration console for SAP Cloud Identity Services.
 
 
 
@@ -20,16 +20,7 @@ The tenant administrator creates the new user with a minimum set of attributes a
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Choose the *User Management* tile.
 
@@ -75,7 +66,7 @@ The tenant administrator creates the new user with a minimum set of attributes a
 
 ## Results
 
-If the operation is successful, the system displays the message: `User "<name of the user>" created`. Identity Authentication creates the new user and assigns `User ID` \(P user\) and `User UUID` \(universally unique identifier \(UUID\) format\). The `User ID` field is unique and not editable. The `User UUID`, on the other hand, is unique, but editable. You can change it via the the user management field in the administration console.
+If the operation is successful, the system displays the message: `User "<name of the user>" created`. Identity Authentication creates the new user and assigns `User ID` \(P user\) and `Global User ID` \(universally unique identifier \(UUID\) format\). The `User ID` field is unique and not editable. The `Global User ID`, on the other hand, is unique, but editable. You can change it via the the user management field in the administration console.
 
 **Related Information**  
 
@@ -84,5 +75,5 @@ If the operation is successful, the system displays the message: `User "<name of
 
 [Restrict User Attributes Values via Exclude Lists](restrict-user-attributes-values-via-exclude-lists-cb108c2.md "You can restrict the values that can be set on the e-mail, first and last name attributes of the user.")
 
-[List and Edit User Details](list-and-edit-user-details-045cb01.md "As a tenant administrator, you can view detailed information about the users in the administration console for Identity Authentication. Optionally you can edit this information.")
+[List and Edit User Details](list-and-edit-user-details-045cb01.md "As a tenant administrator, you can view detailed information about the users in the administration console for SAP Cloud Identity Services. Optionally you can edit this information.")
 

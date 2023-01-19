@@ -10,7 +10,7 @@ The end user who wants to cancel his or her registration from the service should
 
 Apart from deleting, users can be blocked. When users are blocked, they exist in Identity Authentication, but cannot be authenticated when they try to log on. For more information, see [SP User Deactivation](../Development/sp-user-deactivation-de64bd8.md).
 
-Tenant administrators can delete and block users via the administration console for Identity Authentication. For more information, see [Delete Users](../Operation-Guide/delete-users-bbfaf5f.md) and [Deactivate Users](../Operation-Guide/deactivate-users-99cf468.md).
+Tenant administrators can delete and block users via the administration console for SAP Cloud Identity Services. For more information, see [Delete Users](../Operation-Guide/delete-users-bbfaf5f.md) and [Deactivate Users](../Operation-Guide/deactivate-users-99cf468.md).
 
 Tenant administrators can also configure blocking and deletion for specific user types and after certain period of time, For more information, see [Block or Delete Users Due to Inactivity](../Operation-Guide/block-or-delete-users-due-to-inactivity-744b2d0.md).
 

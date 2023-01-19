@@ -2,7 +2,7 @@
 
 # Configure Identity Provisioning Target Systems for Real-Time User Provisioning
 
-You can configure Identity Provisioning target systems for real-time user provisioning via the administration console for Identity Authentication.
+You can configure Identity Provisioning target systems for real-time user provisioning via the administration console for SAP Cloud Identity Services.
 
 
 
@@ -15,10 +15,10 @@ In this scenario you configure Identity Provisioning as a target system in Ident
 
 ![](images/Configure_Identity_Provisioning_Target_System_d2dddcf.png)
 
-The configuration of the OAuth authentication scenario is done in the SAP BTP cockpit, the user interface of the Identity Provisioning service, and the administration console for Identity Authentication. To create OAuth Client credentials, and add a source and target system in Identity Provisioning, and configure Identity Authentication, choose your scenario, and follow the steps described in [Real-Time Provisioning: Identity Authentication](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/70afd909734842b08ff8f1be5b01bc2a.html).
+The configuration of the OAuth authentication scenario is done in the SAP BTP cockpit, the user interface of the Identity Provisioning service, and the administration console for SAP Cloud Identity Services. To create OAuth Client credentials, and add a source and target system in Identity Provisioning, and configure Identity Authentication, choose your scenario, and follow the steps described in [Real-Time Provisioning: Identity Authentication](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/70afd909734842b08ff8f1be5b01bc2a.html).
 
 > ### Note:  
-> For the OAuth authentication scenario, you should skip the procedure below, done in the administration console for Identity Authentication, if you have completed all steps \(procedure I, II, III\) described in [Real-Time Provisioning: Identity Authentication](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/70afd909734842b08ff8f1be5b01bc2a.html).
+> For the OAuth authentication scenario, you should skip the procedure below, done in the administration console for SAP Cloud Identity Services, if you have completed all steps \(procedure I, II, III\) described in [Real-Time Provisioning: Identity Authentication](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/70afd909734842b08ff8f1be5b01bc2a.html).
 
 **Prerequisites**
 
@@ -33,16 +33,7 @@ The configuration of the OAuth authentication scenario is done in the SAP BTP co
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Users & Authorizations*, choose the *Real-Time Provisioning* tile.
 
@@ -183,7 +174,7 @@ The configuration of the OAuth authentication scenario is done in the SAP BTP co
         </td>
         <td valign="top">
 
-        In the Cockpit, choose the *Security* \> *OAuth* section, and go to the *Branding* tab. Copy the *Token Endpoint* link and paste it in the *OAuth URL* field in the administration console for Identity Authentication.
+        In the Cockpit, choose the *Security* \> *OAuth* section, and go to the *Branding* tab. Copy the *Token Endpoint* link and paste it in the *OAuth URL* field in the administration console for SAP Cloud Identity Services.
 
 
         
@@ -256,7 +247,7 @@ Now go to your system, the one for which you have created a target connector in 
 **Related Information**  
 
 
-[Configure SAP Jam Target Systems for Real-Time Provisioning](configure-sap-jam-target-systems-for-real-time-provisioning-a923427.md "Tenant administrators can configure SAP Jam target systems for real-time provisioning via the administration console for Identity Authentication.")
+[Configure SAP Jam Target Systems for Real-Time Provisioning](configure-sap-jam-target-systems-for-real-time-provisioning-a923427.md "Tenant administrators can configure SAP Jam target systems for real-time provisioning via the administration console for SAP Cloud Identity Services.")
 
 [Provision Users to Target Systems](provision-users-to-target-systems-af6f78b.md "Tenant administrators can provision users of Identity Authentication to SAP Jam and Identity Provisioning target systems target system.")
 

@@ -35,16 +35,7 @@ To configure the mail server, follow the procedure below:
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Applications and Resources*, choose the *Tenant Settings* tile.
 
@@ -56,7 +47,7 @@ To configure the mail server, follow the procedure below:
 
 5.  To use the Amazon Simple Email Service with custom domain, аdd a valid domain name in the dialog box that appears.
 
-    1.  Copy the TXT and CNAME records that are created in the administration console for Identity Authentication and enter them in the DNS server.
+    1.  Copy the TXT and CNAME records that are created in the administration console for SAP Cloud Identity Services and enter them in the DNS server.
 
     2.  Choose *Verify* to check the status of the domain in the administration console.
 
@@ -108,7 +99,7 @@ To configure the mail server, follow the procedure below:
 Access the profile page at `https://<tenant ID>.accounts.ondemand.com/` from a new browser where you do not have an active session with Identity Authentication. Choose the *Forgot password?* link from the logon page to start the reset password process.
 
 > ### Remember:  
-> Only three e-mails are allowed to be sent via Identity Authentication for 24 hour. If you have already reached the limit, the system will not send an e-mail. To check the number of e-mails sent to the user, access *administration console for Identity Authentication* \> *Users & Authorizations* \> *User Management* \> *your user* \> *Authentication* \> *Password Details*. Next to *Password Reset* you can see the number of e-mails sent to the user. If necessary, choose *Reset Counter* to be able to send more e-mails.
+> Only three e-mails are allowed to be sent via Identity Authentication for 24 hour. If you have already reached the limit, the system will not send an e-mail. To check the number of e-mails sent to the user, access *administration console for SAP Clou Identity Services* \> *Users & Authorizations* \> *User Management* \> *your user* \> *Authentication* \> *Password Details*. Next to *Password Reset* you can see the number of e-mails sent to the user. If necessary, choose *Reset Counter* to be able to send more e-mails.
 
 If the reset password e-mail is sent successfully, and the configuration is correct, the e-mail that you receive should have as a sender the e-mail specified in the configuration.
 

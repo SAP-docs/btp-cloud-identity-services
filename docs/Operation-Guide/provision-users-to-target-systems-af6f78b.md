@@ -10,7 +10,7 @@ Tenant administrators can provision users of Identity Authentication to SAP Jama
 
 -   You are assigned the *Manage Users* role. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
 
--   You have configured a target system in the administration console for Identity Authentication. For more details about how to configure target systems, see [Configure SAP Jam Target Systems for Real-Time Provisioning](configure-sap-jam-target-systems-for-real-time-provisioning-a923427.md)or [Configure Identity Provisioning Target Systems for Real-Time User Provisioning](configure-identity-provisioning-target-systems-for-real-time-user-provisioning-3349645.md).
+-   You have configured a target system in the administration console for SAP Cloud Identity Services. For more details about how to configure target systems, see [Configure SAP Jam Target Systems for Real-Time Provisioning](configure-sap-jam-target-systems-for-real-time-provisioning-a923427.md)or [Configure Identity Provisioning Target Systems for Real-Time User Provisioning](configure-identity-provisioning-target-systems-for-real-time-user-provisioning-3349645.md).
 
 
 > ### Note:  
@@ -468,9 +468,9 @@ To provision users, choose one of the options below and follow the corresponding
 **Related Information**  
 
 
-[Configure SAP Jam Target Systems for Real-Time Provisioning](configure-sap-jam-target-systems-for-real-time-provisioning-a923427.md "Tenant administrators can configure SAP Jam target systems for real-time provisioning via the administration console for Identity Authentication.")
+[Configure SAP Jam Target Systems for Real-Time Provisioning](configure-sap-jam-target-systems-for-real-time-provisioning-a923427.md "Tenant administrators can configure SAP Jam target systems for real-time provisioning via the administration console for SAP Cloud Identity Services.")
 
-[Configure Identity Provisioning Target Systems for Real-Time User Provisioning](configure-identity-provisioning-target-systems-for-real-time-user-provisioning-3349645.md "You can configure Identity Provisioning target systems for real-time user provisioning via the administration console for Identity Authentication.")
+[Configure Identity Provisioning Target Systems for Real-Time User Provisioning](configure-identity-provisioning-target-systems-for-real-time-user-provisioning-3349645.md "You can configure Identity Provisioning target systems for real-time user provisioning via the administration console for SAP Cloud Identity Services.")
 
 [Delete Target System](delete-target-system-6372e9a.md "As a tenant administrator, you can delete one or more target systems in a tenant of Identity Authentication.")
 
@@ -492,16 +492,7 @@ The tenant administrator can select the target systems that all users will be pr
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Users & Authorizations*, choose the *Real-Time Provisioning* tile.
 
@@ -535,16 +526,7 @@ The tenant administrator can choose which of the users to be provisioned to the 
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Choose the *User Management* tile.
 
@@ -592,7 +574,7 @@ The tenant administrator can choose which of the users to be provisioned to the 
     </td>
     <td valign="top">
 
-    Once the search is completed, the system will list the users whose *User ID*, *User UUID*, *E-Mail*, or *Login Name* match your search criteria string. In this case the system doesn’t include the *First Name* and *Last Name* fields in the search.
+    Once the search is completed, the system will list the users whose *User ID*, *Global User ID*, *E-Mail*, or *Login Name* match your search criteria string. In this case the system doesn’t include the *First Name* and *Last Name* fields in the search.
 
     If you aren’t satisfied with the search result, edit your search criteria and repeat the step again.
 
@@ -661,16 +643,16 @@ For more information about how to configure Identity Authentication to use a cor
 
 ## Provision Users at User Create and User Update
 
-All newly created and updated users are automatically provisioned to the target systems configured in the administration console for Identity Authentication. The users that use the self-registration service will be automatically provisioned to the target systems too.
+All newly created and updated users are automatically provisioned to the target systems configured in the administration console for SAP Cloud Identity Services. The users that use the self-registration service will be automatically provisioned to the target systems too.
 
 For more information about user creation or user update, see **Related Information**
 
 **Related Information**  
 
 
-[Create a New User](create-a-new-user-348deef.md "As a tenant administrator, you can create a new user in the administration console for Identity Authentication.")
+[Create a New User](create-a-new-user-348deef.md "As a tenant administrator, you can create a new user in the administration console for SAP Cloud Identity Services.")
 
-[Add Administrators](add-administrators-bbbdbdd.md#loiobbbdbdd3899942ce874f3aae9ba9e21d "As a tenant administrator, you can add new administrators in the administration console for Identity Authentication.")
+[Add Administrators](add-administrators-bbbdbdd.md#loiobbbdbdd3899942ce874f3aae9ba9e21d "As a tenant administrator, you can add new administrators in the administration console for SAP Cloud Identity Services.")
 
 [Import or Update Users for a Specific Application](import-or-update-users-for-a-specific-application-33838e0.md "As a tenant administrator, you can import new users or update existing ones for a specific application with a CSV file. You can also send activation e-mails to the users that have not received activation e-mails for that application so far.")
 

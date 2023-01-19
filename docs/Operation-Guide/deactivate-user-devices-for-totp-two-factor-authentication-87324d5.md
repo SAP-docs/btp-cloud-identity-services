@@ -2,7 +2,7 @@
 
 # Deactivate User Devices for TOTP Two-Factor Authentication
 
-This document shows you how to deactivate the mobile devices used by a user to generate passcodes for access to applications requiring time-based one-time \(TOTP\) as two-factor authentication. You deactivate the user mobile devices from the administration console for Identity Authentication
+This document shows you how to deactivate the mobile devices used by a user to generate passcodes for access to applications requiring time-based one-time \(TOTP\) as two-factor authentication. You deactivate the user mobile devices from the administration console for SAP Cloud Identity Services.
 
 
 

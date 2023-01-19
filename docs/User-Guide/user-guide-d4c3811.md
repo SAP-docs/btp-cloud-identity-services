@@ -63,7 +63,7 @@ Users can use the following self-services:
     Users can change their profile information on the profile page. This includes Personal Information, Company Information, and Contact Preferences.
 
     > ### Note:  
-    > The `Login Name` field cannot be edited on the profile page. This field can be edited by the tenant administrator via the administration console for Identity Authentication.
+    > The `Login Name` field cannot be edited on the profile page. This field can be edited by the tenant administrator via the administration console for SAP Cloud Identity Services.
     > 
     > The `Valid From` and `Valid To` fields are empty if no validity dates are set for the user. The dates are not editable via the profile page.
 

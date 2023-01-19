@@ -12,7 +12,7 @@ With the remember me option, a cookie is sent to the browser so the users can lo
 
 ![](images/Remember_me_223f3f7.png)
 
-You can change the default configuration for the remember me option via the administration console for Identity Authentication. The following options are available:
+You can change the default configuration for the remember me option via the administration console for SAP Cloud Identity Services. The following options are available:
 
 ****
 
@@ -192,16 +192,7 @@ Users don't see the option on the logon screen, but the option is checked for th
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Choose the application that you want to edit.
 

@@ -18,16 +18,7 @@ If you delete a language version for specific application process, users receive
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Choose the *E-Mail Template Sets* tile.
 
@@ -93,7 +84,7 @@ If you delete a language version for specific application process, users receive
 
 [Create a New E-Mail Template Set](create-a-new-e-mail-template-set-a6fca8b.md "Tenant administrators can create a new set of e-mail templates so that each template in the set can have a custom language version.")
 
-[View E-Mail Template Document](view-e-mail-template-document-148568a.md "Tenant administrators can view language e-mail templates in the template set uploaded in the administration console for Identity Authentication.")
+[View E-Mail Template Document](view-e-mail-template-document-148568a.md "Tenant administrators can view language e-mail templates in the template set uploaded in the administration console for SAP Cloud Identity Services.")
 
 [Edit or Add an E-Mail Template Set](edit-or-add-an-e-mail-template-set-3c4f397.md "Tenant administrators can configure language versions of each template in the template set. They can also set a custom template for each language, and change the name of each template set.")
 

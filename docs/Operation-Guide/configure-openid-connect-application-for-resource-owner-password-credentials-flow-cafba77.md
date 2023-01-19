@@ -2,7 +2,7 @@
 
 # Configure OpenID Connect Application for Resource Owner Password Credentials Flow
 
-This document is intended to help you configure an OpenID Connect application in the administration console for Identity Authentication for the resource owner password credentials flow.
+This document is intended to help you configure an OpenID Connect application in the administration console for SAP Cloud Identity Services for the resource owner password credentials flow.
 
 
 
@@ -10,7 +10,7 @@ This document is intended to help you configure an OpenID Connect application in
 
 ## Prerequisites
 
-You have an OpenID Connect application in the administration console for Identity Authentication. For more information, see [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md).
+You have an OpenID Connect application in the administration console for SAP Cloud Identity Services. For more information, see [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md).
 
 
 
@@ -18,7 +18,7 @@ You have an OpenID Connect application in the administration console for Identit
 
 The trust is configured by entering the information manually. You can enter manually the name of the client \(relying party\), and its redirect URIs.
 
-To configure an OpenID Connect trusted application in the administration console for Identity Authentication, proceed as follows:
+To configure an OpenID Connect trusted application in the administration console for SAP Cloud Identity Services, proceed as follows:
 
 
 
@@ -26,16 +26,7 @@ To configure an OpenID Connect trusted application in the administration console
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Applications and Resources*, choose the *Applications* tile.
 
@@ -316,15 +307,15 @@ Configure HTTP basic authentication for the application. For more information ab
 **Related Information**  
 
 
-[Configure OpenID Connect Application for Authorization Code Flow](configure-openid-connect-application-for-authorization-code-flow-72c478e.md "This document is intended to help you configure an OpenID Connect application in the administration console for Identity Authentication for the authorization code flow.")
+[Configure OpenID Connect Application for Authorization Code Flow](configure-openid-connect-application-for-authorization-code-flow-72c478e.md "This document is intended to help you configure an OpenID Connect application in the administration console for SAP Cloud Identity Services for the authorization code flow.")
 
-[Configure OpenID Connect Application for Client Credentials Flow](configure-openid-connect-application-for-client-credentials-flow-3e409d8.md "This document is intended to help you configure an OpenID Connect application in the administration console for Identity Authentication for the client credentials flow.")
+[Configure OpenID Connect Application for Client Credentials Flow](configure-openid-connect-application-for-client-credentials-flow-3e409d8.md "This document is intended to help you configure an OpenID Connect application in the administration console for SAP Cloud Identity Services for the client credentials flow.")
 
-[Configure OpenID Connect Application for Implicit Flow](configure-openid-connect-application-for-implicit-flow-26090fd.md "This document is intended to help you configure an OpenID Connect application in the administration console for Identity Authentication for the implicit flow.")
+[Configure OpenID Connect Application for Implicit Flow](configure-openid-connect-application-for-implicit-flow-26090fd.md "This document is intended to help you configure an OpenID Connect application in the administration console for SAP Cloud Identity Services for the implicit flow.")
 
-[Configure OpenID Connect Application for JWT Bearer Flow](configure-openid-connect-application-for-jwt-bearer-flow-e42fb4d.md "This document is intended to help you configure an OpenID Connect application in the administration console for Identity Authentication for the JWT bearer flow.")
+[Configure OpenID Connect Application for JWT Bearer Flow](configure-openid-connect-application-for-jwt-bearer-flow-e42fb4d.md "This document is intended to help you configure an OpenID Connect application in the administration console for SAP Cloud Identity Services for the JWT bearer flow.")
 
-[Configure OpenID Connect Application for Token Exchange](configure-openid-connect-application-for-token-exchange-351866e.md "This document is intended to help you configure an OpenID Connect application in the administration console for Identity Authentication for the Token Exchange flow.")
+[Configure OpenID Connect Application for Token Exchange](configure-openid-connect-application-for-token-exchange-351866e.md "This document is intended to help you configure an OpenID Connect application in the administration console for SAP Cloud Identity Services for the Token Exchange flow.")
 
 [OpenID Connect](openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
 

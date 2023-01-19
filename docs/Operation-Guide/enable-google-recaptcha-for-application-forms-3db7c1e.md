@@ -12,7 +12,7 @@ Enable Google reCAPTCHA for the registration form and login page of the applicat
 
 -   You have registered the domain of the application and received a Site key and Secret key from Google. For more information, see [Get Site Key and Secret Key from Google for reCAPTCHA](get-site-key-and-secret-key-from-google-for-recaptcha-4cbf06c.md).
 
--   You have configured the *Google reCAPTCHA* option in the administration console for Identity Authentication. For more information, see [Configure Google reCAPTCHA in Administration Console](configure-google-recaptcha-in-administration-console-77c87ba.md).
+-   You have configured the *Google reCAPTCHA* option in the administration console for SAP Cloud Identity Services. For more information, see [Configure Google reCAPTCHA in Administration Console](configure-google-recaptcha-in-administration-console-77c87ba.md).
 
 
 
@@ -30,16 +30,7 @@ Enable Google reCAPTCHA for the registration form and login page of the applicat
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Applications and Resources*, choose the *Applications* tile.
 

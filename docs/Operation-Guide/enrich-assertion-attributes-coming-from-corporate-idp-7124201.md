@@ -27,7 +27,7 @@ You can add up to 30 attributes per corporate IdP.
 
 ### Identity Federation
 
-When the application uses corporate IdP for authentication, the assertion attributes enriched in the administration console for Identity Authentication are taken into consideration and sent to the application in the modified form, if the *Use Identity Authentication user store* option under *Identity Federation* is disabled.
+When the application uses corporate IdP for authentication, the assertion attributes enriched in the administration console for SAP Cloud Identity Services are taken into consideration and sent to the application in the modified form, if the *Use Identity Authentication user store* option under *Identity Federation* is disabled.
 
 If *Identity Federation* is configured, use the modified attributes in the *Default Attributes* section for the applications that use the corporate IdP for authentication. For more information, see [Configure the Default Attributes Sent to the Application](configure-the-default-attributes-sent-to-the-application-a2f1e46.md).
 
@@ -78,16 +78,7 @@ To modify the assertion attributes coming from the corporate IdP, proceed as fol
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Identity Providers*, choose the *Corporate Identity Providers* tile.
 

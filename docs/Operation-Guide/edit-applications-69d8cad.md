@@ -18,7 +18,7 @@ You are assigned the *Manage Applications* role. For more information about how 
 
 The *Display Name* is required. You can't leave that field empty.
 
-The *Home URL* field is optional. Users are redirected to the *Home URL* after activating their accounts, when they are created via a CSV file import or the user registration service of Identity Authentication. Initially, the *Home URL* for an application isn’t configured in the administration console for Identity Authentication. Once the *Home URL* has been set, you can change it.
+The *Home URL* field is optional. Users are redirected to the *Home URL* after activating their accounts, when they are created via a CSV file import or the user registration service of Identity Authentication. Initially, the *Home URL* for an application isn’t configured in the administration console for SAP Cloud Identity Services. Once the *Home URL* has been set, you can change it.
 
 > ### Recommendation:  
 > From a usability perspective we recommend you to use URL of a protected page.
@@ -490,16 +490,7 @@ To edit the application configurations, proceed as follows:
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Applications and Resources*, choose the *Applications* tile.
 

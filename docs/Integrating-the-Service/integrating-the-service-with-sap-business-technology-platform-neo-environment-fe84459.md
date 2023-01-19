@@ -71,7 +71,7 @@ To deploy applications on SAP BTP and to make configurations in the cockpit, you
 
 Identity Authentication does not use for authentication the users registered in the SAP Service Marketplace, but maintains an own user store for administrators and users.
 
-Once you purchase a customer or partner account of SAP BTP, a user account for Identity Authentication is created for the same contact person, specified in the Order Form. The contact person is the first administrator in the administration console for Identity Authentication. He or she receives an activation e-mail for the administration console account. The subject of the e-mail is: *Activate Your Account for Administration Console*. Following the required steps, the administrator activates the account and can continue to the administration console for Identity Authentication via the console's URL.
+Once you purchase a customer or partner account of SAP BTP, a user account for Identity Authentication is created for the same contact person, specified in the Order Form. The contact person is the first administrator in the administration console for Identity Authentication. He or she receives an activation e-mail for the administration console account. The subject of the e-mail is: *Activate Your Account for Administration Console*. Following the required steps, the administrator activates the account and can continue to the administration console for SAP Cloud Identity Services via the console's URL.
 
 > ### Note:  
 > The URL has the `https://<tenant ID>.accounts.ondemand.com/admin` pattern.
@@ -252,16 +252,7 @@ You have to specify how the assertion attributes are sent to SAP BTP in the asse
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Applications and Resources*, choose the *Applications* tile.
 
@@ -384,16 +375,7 @@ To use a custom domain for the application that uses your Identity Authenticatio
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Applications and Resources*, choose the *Applications* tile.
 

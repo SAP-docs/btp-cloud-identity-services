@@ -7,7 +7,7 @@ With the JWT bearer flow you can use an `id_token` ID from an application which 
 
 
 > ### Note:  
-> The issuer of the external corporate identity provider must be configured as a corporate identity provider and set as a default identity provider or configured via Authentication Rules \(Conditional Authentication\) in the administration console for Identity Authentication.
+> The issuer of the external corporate identity provider must be configured as a corporate identity provider and set as a default identity provider or configured via Authentication Rules \(Conditional Authentication\) in the administration console for SAP Cloud Identity Services.
 
 
 

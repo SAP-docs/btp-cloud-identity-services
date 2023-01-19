@@ -20,7 +20,7 @@ To configure Google as social identity provider for the tenant, you have to regi
 > ### Note:  
 > You need to type ***https://<tenant ID\>.accounts.ondemand.com/ui/oauth/googleCallback*** in the *Authorized redirect URIs* field when you create your client ID in Google Developers Console. For more information about the redirect URIs for your OAuth 2.0 credentials, see [Set a redirect URI](https://developers.google.com/identity/protocols/OpenIDConnect#setredirecturi).
 
-To perform the social identity provider configuration in the administration console for Identity Authentication, you have to provide the following data:
+To perform the social identity provider configuration in the administration console for SAP Cloud Identity Services, you have to provide the following data:
 
 **Required Google Settings**
 
@@ -80,16 +80,7 @@ The Google OAuth 2.0 credential after you set a project in the Google Developers
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Choose the *Social Identity Providers* tile.
 
@@ -131,7 +122,7 @@ The above configurations are valid for the whole tenant. They will take effect f
 
 [Configure Twitter as Identity Provider](configure-twitter-as-identity-provider-f5bc52d.md "By configuring Twitter as social provider, users can log on to applications with their Twitter credentials by liking their accounts in Identity Authentication to the Twitter account.")
 
-[Remove Social Identity Providers Configuration](remove-social-identity-providers-configuration-265e41e.md "You can remove the configurations of the social providers in the administration of Identity Authentication.")
+[Remove Social Identity Providers Configuration](remove-social-identity-providers-configuration-265e41e.md "You can remove the configurations of the social providers in the administration console for SAP Cloud Identity Services.")
 
 [Obtain OAuth 2.0 credentials](https://developers.google.com/accounts/docs/OAuth2Login#getcredentials)
 

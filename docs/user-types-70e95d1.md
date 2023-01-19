@@ -129,7 +129,7 @@ An employee user that need a different authentication, because, for example the 
 
 [Cookies](cookies-e60fd04.md "")
 
-[Create a New User](Operation-Guide/create-a-new-user-348deef.md "As a tenant administrator, you can create a new user in the administration console for Identity Authentication.")
+[Create a New User](Operation-Guide/create-a-new-user-348deef.md "As a tenant administrator, you can create a new user in the administration console for SAP Cloud Identity Services.")
 
-[List and Edit User Details](Operation-Guide/list-and-edit-user-details-045cb01.md "As a tenant administrator, you can view detailed information about the users in the administration console for Identity Authentication. Optionally you can edit this information.")
+[List and Edit User Details](Operation-Guide/list-and-edit-user-details-045cb01.md "As a tenant administrator, you can view detailed information about the users in the administration console for SAP Cloud Identity Services. Optionally you can edit this information.")
 

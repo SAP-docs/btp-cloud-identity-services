@@ -10,7 +10,7 @@ Tenant administrators can use the default or a custom e-mail template set for th
 
 The e-mail template set is a semantic grouping of different e-mail templates. Each e-mail template from the set is used for the respective application process, such as self-registration, for example. When a user makes a registration for an application, Identity Authentication uses the e-mail template for self-registration from the template set to communicate with that user.
 
-The administration console for Identity Authentication provides the possibility to use a default e-mail template set with English templates only. The default set is named *Default*.
+The administration console for SAP Cloud Identity Services provides the possibility to use a default e-mail template set with English templates only. The default set is named *Default*.
 
 You can also configure your own templates in a custom template set. There you can customize the texts and branding according to your needs.
 

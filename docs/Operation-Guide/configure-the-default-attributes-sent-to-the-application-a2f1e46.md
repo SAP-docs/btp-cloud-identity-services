@@ -902,13 +902,13 @@ For example, you have defined the `mail` assertion attribute and at the same tim
 
 -   *Identity Federation* not configured
 
-    When the application uses corporate IdP for authentication, and the *Use Identity Authentication user store* option under *Identity Federation* is disabled, the default attributes configurations in the administration console for Identity Authentication are not relevant. For more information about the corporate identity provider scenario, see [Corporate Identity Providers](corporate-identity-providers-19f3eca.md) and [Configure Identity Federation](configure-identity-federation-c029bbb.md).
+    When the application uses corporate IdP for authentication, and the *Use Identity Authentication user store* option under *Identity Federation* is disabled, the default attributes configurations in the administration console for SAP Cloud Identity Services are not relevant. For more information about the corporate identity provider scenario, see [Corporate Identity Providers](corporate-identity-providers-19f3eca.md) and [Configure Identity Federation](configure-identity-federation-c029bbb.md).
 
     The configuration of the default attributes for the system applications is disabled.
 
 -   *Identity Federation* configured
 
-    When the application uses a corporate IdP for authentication, and the *Use Identity Authentication user store* under *Identity Federation* option is enabled, the default attributes in the administration console for Identity Authentication can be configured to reference attributes coming from the assertion of the corporate IdP for the user and merge them with the attributes coming from Identity Authentication, and thus be sent to the application.
+    When the application uses a corporate IdP for authentication, and the *Use Identity Authentication user store* under *Identity Federation* option is enabled, the default attributes in the administration console for SAP Cloud Identity Services can be configured to reference attributes coming from the assertion of the corporate IdP for the user and merge them with the attributes coming from Identity Authentication, and thus be sent to the application.
 
     To configure Identity Authentication to reference attributes coming from the assertion of the corporate IdP, you must use the following format for the attribute:
 
@@ -958,7 +958,7 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     </td>
     <td valign="top">
 
-    The name of the attribute as defined in the administration console for Identity Authentication. Free text.
+    The name of the attribute as defined in the administration console. Free text.
 
 
     
@@ -1086,7 +1086,7 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     > 
     > The corporate IdP is configured to send the user groups with the `group` assertion attribute.
     > 
-    > You want to send the groups coming from the corporate IdP to the application so you have defined the following default attribute in the administration console for Identity Authentication:
+    > You want to send the groups coming from the corporate IdP to the application so you have defined the following default attribute in the administration console for SAP Cloud Identity Services:
     > 
     > **Default Attributes Configuration in Administration Console**
     > 
@@ -1159,7 +1159,7 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     > 
     > The corporate IdP is configured to send the user groups with the `group` assertion attribute.
     > 
-    > You don't want to send all the groups coming from the corporate IdP to the application so you have defined the following default attribute in the administration console for Identity Authentication:
+    > You don't want to send all the groups coming from the corporate IdP to the application so you have defined the following default attribute in the administration console for SAP Cloud Identity Services:
     > 
     > **Default Attributes Configuration in Administration Console**
     > 
@@ -1228,10 +1228,10 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     > 
     > If the definition of the attribute includes prefix and/or suffix, only the prefix and/or suffix is sent.
     > 
-    > However, if the corporate IdP is not configured to send the `phone` attribute, the response includes only the prefix and suffix, defined in the administration console for Identity Authentication:
+    > However, if the corporate IdP is not configured to send the `phone` attribute, the response includes only the prefix and suffix, defined in the administration console for SAP Cloud Identity Services:
     > 
     > > ### Example:  
-    > > For example, you want to send the `phone` attribute coming from the corporate IdP to the application. You have defined the following default attribute in the administration console forIdentity Authentication:
+    > > For example, you want to send the `phone` attribute coming from the corporate IdP to the application. You have defined the following default attribute in the administration console for SAP Cloud Identity Services:
     > > 
     > > **Default Attributes Configuration in Administration Console**
     > > 
@@ -1383,16 +1383,7 @@ To configure default attributes, proceed as follows:
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Applications and Resources*, choose the *Applications* tile.
 
@@ -1422,7 +1413,7 @@ To configure default attributes, proceed as follows:
 
 [Configure the User Attributes Sent to the Application](configure-the-user-attributes-sent-to-the-application-d361407.md "After configuring the user attributes to be collected by the registration and upgrade forms, you have to specify how these attributes are sent to the application.")
 
-[Troubleshooting for Administrators](troubleshooting-for-administrators-f80beb5.md "This section is intended to help administrators deal with error messages in the administration console for Identity Authentication.")
+[Troubleshooting for Administrators](troubleshooting-for-administrators-f80beb5.md "This section is intended to help administrators deal with error messages in the administration console for SAP Cloud Identity Services.")
 
 [Create a New Application](create-a-new-application-0d4b255.md "You can create a new application and customize it to comply with your company requirements.")
 

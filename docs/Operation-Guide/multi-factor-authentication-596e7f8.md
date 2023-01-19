@@ -2,5 +2,5 @@
 
 # Multi-Factor Authentication
 
-This section provides information about how to manage the multi-factor authentication user settings in the administration console for Identity Authentication.
+This section provides information about how to manage the multi-factor authentication user settings in the administration console for SAP Cloud Identity Services.
 

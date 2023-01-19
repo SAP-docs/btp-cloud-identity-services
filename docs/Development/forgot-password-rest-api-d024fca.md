@@ -348,5 +348,5 @@ When the password is disabled.
 
 [General Error Codes](general-error-codes-182352d.md "The following table lists error codes that may be returned from any method on any resource URI.")
 
-[List and Edit User Details](../Operation-Guide/list-and-edit-user-details-045cb01.md "As a tenant administrator, you can view detailed information about the users in the administration console for Identity Authentication. Optionally you can edit this information.")
+[List and Edit User Details](../Operation-Guide/list-and-edit-user-details-045cb01.md "As a tenant administrator, you can view detailed information about the users in the administration console for SAP Cloud Identity Services. Optionally you can edit this information.")
 

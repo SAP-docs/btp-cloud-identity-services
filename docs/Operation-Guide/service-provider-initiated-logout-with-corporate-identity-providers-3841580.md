@@ -22,7 +22,7 @@ When Identity Authentication acts as a proxy to delegate authentication to an ex
 4.  The user is logged out of the corporate identity providers.
 5.  The user is logged out of Identity Authentication.
 6.  A logout response is sent to the initiating application.
-7.  \(Optional\) If the Redirect URL option is configured in the administration console for Identity Authentication, the URL is sent as an extension in the SAML 2.0 Logout Response. This option can be used by the application to redirect the user to the destination from the link configured for the specific corporate identity provider.
+7.  \(Optional\) If the Redirect URL option is configured in the administration console for SAP Cloud Identity Services, the URL is sent as an extension in the SAML 2.0 Logout Response. This option can be used by the application to redirect the user to the destination from the link configured for the specific corporate identity provider.
 
     > ### Note:  
     > This step is valid only if the application supports the redirect of the user, as for example SAP SuccessFactors HCM Suite.
@@ -46,7 +46,7 @@ Identity Authentication must be configured to act as an identity provider proxy 
 
 ## Context
 
-When the user logs out of an application via a service provider initiated logout he or she can be redirected to a specific URL. This configuration can be applied to scenarios with one or more corporate identity providers. You configure a specific redirect URL in the administration console for Identity Authentication for each corporate identity provider.
+When the user logs out of an application via a service provider initiated logout he or she can be redirected to a specific URL. This configuration can be applied to scenarios with one or more corporate identity providers. You configure a specific redirect URL in the administration console for SAP Cloud Identity Services for each corporate identity provider.
 
 ![](images/SP-Initiated_Log_Out_Redirect_cd77718.png)
 
@@ -63,16 +63,7 @@ To configure the logout URL, follow the procedure:
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Identity Providers*, choose the *Corporate Identity Providers* tile.
 
@@ -92,5 +83,5 @@ To configure the logout URL, follow the procedure:
 
 ## Results
 
-Once the user has logged out of the application, Identity Authentication sends the logout URL in the SAML 2.0 Response as an extension to the application. The logout URL can be used by the application to redirect the user to the URL configured for the corporate identity provider in the administration console for Identity Authentication.
+Once the user has logged out of the application, Identity Authentication sends the logout URL in the SAML 2.0 Response as an extension to the application. The logout URL can be used by the application to redirect the user to the URL configured for the corporate identity provider in the administration console for SAP Cloud Identity Services.
 

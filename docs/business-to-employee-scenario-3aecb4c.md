@@ -15,7 +15,7 @@ The scenario includes the following features:
 -   Database restricted for employees only
 
 > ### Example:  
-> Julie Armstrong is an administrator at company B. She wants to configure a leave request application to be used by the employees of the company. For this purpose, she imports the employees by opening the *Import Users* page in the administration console for Identity Authentication and selecting a CSV file containing the employees. Once she has imported all the new users into the system, she sends them an e-mail with instructions how to activate their accounts. She also configures the trust on SAP BTP.
+> Julie Armstrong is an administrator at company B. She wants to configure a leave request application to be used by the employees of the company. For this purpose, she imports the employees by opening the *Import Users* page in the administration console for SAP Cloud Identity Services and selecting a CSV file containing the employees. Once she has imported all the new users into the system, she sends them an e-mail with instructions how to activate their accounts. She also configures the trust on SAP BTP.
 > 
 > Julie wants only the employees to access the application. She selects the *Internal* radio button after she chooses *Authentication and Access* \> *User Application Access* for the leave request application in the administration console.
 > 

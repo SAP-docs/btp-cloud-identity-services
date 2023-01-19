@@ -2,20 +2,20 @@
 
 # Manage Custom Schemas via Administration Console
 
-You can view and define your custom schema via the administration console for SAP Cloud Identity Services - Identity Authentication.
+You can view and define your custom schema via the administration console for SAP Cloud Identity Services.
 
 
 
 ## Context
 
-The administration console view for Identity Authentication shows information about all existing schemas, predefined, and custom, in the tenant.
+The administration console shows information about all existing schemas, predefined, and custom, in the tenant.
 
 If you need your own custom attributes, for users or groups, you can define your own custom schema, and once the schema is defined, the custom attributes that it defines can be used.
 
 > ### Note:  
 > When the attributes are assigned to a user, they can be sent to the application. For more information, see [Configure the User Attributes Sent to the Application](configure-the-user-attributes-sent-to-the-application-d361407.md).
 
-You can define a schema either by importing a JSON file, which must comply with the SCIM standard, or by creating it manually via the administration console for Identity Authentication.
+You can define a schema either by importing a JSON file, which must comply with the SCIM standard, or by creating it manually via the administration console.
 
 You can check the available schemas in the tenant, and use one of the predefined schemas. You can also import, or manually create your custom schema. The maxim number of all custom schemas, imported and manually created, per tenant is 20. Each schema can have up to 20 attributes. Each multivalued attribute of type `complex` can have up to 20 subattributes.
 
@@ -33,16 +33,7 @@ You can also download a schema template or any of the already existing schemas. 
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Choose the *Schemas* tile.
 

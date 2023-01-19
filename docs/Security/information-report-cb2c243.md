@@ -28,5 +28,5 @@ Data subjects can obtain information about their personal data in Identity Auth
 
 ## Information About Users' Data
 
-Tenant administrators can view detailed information about the users in the administration console for Identity Authentication. Optionally they can edit this information. For more information, see [List and Edit User Details](../Operation-Guide/list-and-edit-user-details-045cb01.md).
+Tenant administrators can view detailed information about the users in the administration console for SAP Cloud Identity Services. Optionally they can edit this information. For more information, see [List and Edit User Details](../Operation-Guide/list-and-edit-user-details-045cb01.md).
 

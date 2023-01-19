@@ -33,7 +33,7 @@ The logon page is displayed on fullscreen in the browser when at least one of th
 
 [Disaster Recovery/High Availability](disaster-recovery-high-availability-2c1a055.md "Disaster recovery (DR) and high availability (HA) are based on the capabilities of the underlying infrastructure.")
 
-[Browser Support](browser-support-0741076.md "Information on the supported browser version for the administration console, and the end user screens of Identity Authentication.")
+[Browser Support](browser-support-0741076.md "Information on the supported browser version for the administration console, and the end user screens of SAP Cloud Identity Services.")
 
 [Supported Languages](supported-languages-0ea634d.md "Information on the supported languages for the administration console, and the end user screens of Identity Authentication.")
 

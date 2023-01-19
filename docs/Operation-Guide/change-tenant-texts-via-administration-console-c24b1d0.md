@@ -16,7 +16,7 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 
 ## Context
 
-The predefined tenant texts are listed in the administration console for Identity Authentication. The texts are classified by category, key, and default value. Each key stores the name of a parameter, and the corresponding value is the text that can be changed and updated as custom value. The keys are self-explanatory and indicate the category and where the texts are used. For example, the `logon.ui.label.user=E-Mail or User Name` key value pair is for the type of information that the user must provide to log on to the application. On the *Logon* screen you see:
+The predefined tenant texts are listed in the administration console for SAP Cloud Identity Services. The texts are classified by category, key, and default value. Each key stores the name of a parameter, and the corresponding value is the text that can be changed and updated as custom value. The keys are self-explanatory and indicate the category and where the texts are used. For example, the `logon.ui.label.user=E-Mail or User Name` key value pair is for the type of information that the user must provide to log on to the application. On the *Logon* screen you see:
 
 ![](images/Before_Change_a1be13b.png)
 
@@ -39,16 +39,7 @@ To change the tenant texts via the administration console, proceed as follows:
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Applications and Resources*, choose the *Tenant Texts* tile.
 
@@ -115,13 +106,13 @@ The default tenant texts are changed with the custom ones. It may take up to 2 m
 
 [Use Custom Domain in Identity Authentication](use-custom-domain-in-identity-authentication-c4db840.md "Identity Authentication allows you to use a custom domain that is different from the default one (<tenant ID>.accounts.ondemand.com) - for example www.mytenant.com.")
 
-[Change a Tenant's Display Name](change-a-tenant-s-display-name-a513c91.md "You can configure the tenant's name from the administration console for Identity Authentication.")
+[Change a Tenant's Display Name](change-a-tenant-s-display-name-a513c91.md "You can configure the tenant's name from the administration console for SAP Cloud Identity Services.")
 
 [Configure Default Risk-Based Authentication for All Applications in the Tenant](configure-default-risk-based-authentication-for-all-applications-in-the-tenant-1aab51a.md#loio1aab51ae62b94f79b4c6dac7a00857c2 "You can define rules for authentication according to different risk factors and apply actions like Allow, Deny, and Two-Factor Authentication for all applications in a tenant.")
 
 [Configure Sinch Service in Administration Console](configure-sinch-service-in-administration-console-3fdc9e1.md "Configure Sinch Service to enable Phone Verification via SMS or SMS Two-Factor Authentication in the administration console.")
 
-[Configure RADIUS Server Settings \(Beta\)](configure-radius-server-settings-beta-03043ae.md "Configure Remote Authentication Dial-In User Service (RADIUS) server settings in the administration console for Identity Authentication.")
+[Configure RADIUS Server Settings \(Beta\)](configure-radius-server-settings-beta-03043ae.md "Configure Remote Authentication Dial-In User Service (RADIUS) server settings in the administration console for SAP Cloud Identity Services.")
 
 [Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the e-mails sent to the end users in the different application processes.")
 

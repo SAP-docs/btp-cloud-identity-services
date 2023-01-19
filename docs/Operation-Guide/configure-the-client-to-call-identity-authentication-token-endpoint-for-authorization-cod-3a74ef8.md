@@ -544,7 +544,7 @@ Tk4In0.J-aygbQ8IQlw4KD2t1hTPB2gyu3NdTbINDJ9eRs997g",
 ```
 
 > ### Note:  
-> The format of the `issuer` depends on the configuration in the administration console for Identity Authentication. For more information, see [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md).
+> The format of the `issuer` depends on the configuration in the administration console for SAP Cloud Identity Services. For more information, see [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md).
 
  
 

@@ -6,9 +6,9 @@ Identity Authentication is offered as part of some SAP BTP packages or as a stan
 
 For more information how to get Identity Authentication, see [SAP BTP Pricing and Packaging Options](http://sap.com/products/cloud-platform/pricing.html), or contact your SAP sales representative.
 
-After you purchase a subscription for the Identity Authentication tenant, you receive an e-mail. The e-mail contains a link to the landing page of the administration console for Identity Authentication. You can confirm the registration of your first administrator user.
+After you purchase a subscription for the Identity Authentication tenant, you receive an e-mail. The e-mail contains a link to the landing page of the administration console for SAP Cloud Identity Services. You can confirm the registration of your first administrator user.
 
-You can access the tenant's administration console for Identity Authentication by using the console's URL \(the link that you received in the e-mail\).
+You can access the tenant's administration console for SAP Cloud Identity Services by using the console's URL \(the link that you received in the e-mail\).
 
 > ### Note:  
 > The URL has the following pattern:

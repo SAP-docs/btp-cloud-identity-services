@@ -53,7 +53,7 @@ For the first logon with on-premise credentials, the user enters his or her *Log
 > 
 > The tenant administrator needs to monitor and prevent the coexistence of a cloud and on-premise user with one and the same e-mail address. The tenant administrator has to instruct the users to logon for the first time with their *Login Name*, not with the *E-Mail*.
 
-If a user with a user record in the cloud user store is deleted in the corporate user store, the user cannot authenticate using Identity Authentication. The user record for this user remains in the cloud user store, and the tenant administrator can delete it via the administration console for Identity Authentication. For more information, see [Delete Users](delete-users-bbfaf5f.md).
+If a user with a user record in the cloud user store is deleted in the corporate user store, the user cannot authenticate using Identity Authentication. The user record for this user remains in the cloud user store, and the tenant administrator can delete it via the administration console for SAP Cloud Identity Services. For more information, see [Delete Users](delete-users-bbfaf5f.md).
 
 For all users from the corporate user store, a second factor for authentication can be enabled for some applications, or cloud user groups can be assigned. For more details, see [Configure Risk-Based Authentication for an Application](configure-risk-based-authentication-for-an-application-bc52fbf.md#loiobc52fbf3d59447bbb6aa22f80d8b6056) and [Assign Groups to a User](assign-groups-to-a-user-bfdeb9c.md).
 
@@ -1128,16 +1128,7 @@ country
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Identity Providers*, choose the *Source Systems* tile.
 

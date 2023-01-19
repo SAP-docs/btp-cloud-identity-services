@@ -2,7 +2,7 @@
 
 # Browser Support
 
-Information on the supported browser version for the administration console, and the end user screens of Identity Authentication.
+Information on the supported browser version for the administration console, and the end user screens of SAP Cloud Identity Services.
 
 **Related Information**  
 
@@ -23,7 +23,7 @@ Information on the supported browser version for the administration console, and
 
 <!-- concept\_xst\_gty\_g5 -->
 
-## Supported Browser Versions for Administration Console for Identity Authentication
+## Supported Browser Versions for Administration Console
 
 The Administration Console uses the SAPUI5 libraries. For more information on the supported browsers, see [Browser and Platform Support](https://sapui5.hana.ondemand.com/#/topic/74b59efa0eef48988d3b716bd0ecc933).
 
@@ -31,7 +31,7 @@ The Administration Console uses the SAPUI5 libraries. For more information on th
 
 <!-- concept\_iwq\_yty\_g5 -->
 
-## Supported Browser Versions for Identity Authentication End User Screens
+## Supported Browser Versions for End User Screens
 
 
 

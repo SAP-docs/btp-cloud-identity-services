@@ -2,7 +2,7 @@
 
 # Configure Login Hint Parameter
 
-Tenant administrator can configure the login hint parameter via the administration console for Identity Authentication.
+Tenant administrator can configure the login hint parameter via the administration console for SAP Cloud Identity Services.
 
 
 
@@ -15,7 +15,7 @@ The configuration of the login hint parameter affects the following scenarios:
 
 The login hint parameter helps the user when he or she is known to the service provider \(SP\) or relying party. Thus it prevents the user from re-typing the user identifier on the logon. If the corporate IdP supports the login hint parameter, then it requests only the user credentials.
 
-If the corporate IdP does not support the login hint parameter, it requires both the user identifier and password. You can configure the login hint parameter for corporate IdP via the administration console for Identity Authentication.
+If the corporate IdP does not support the login hint parameter, it requires both the user identifier and password. You can configure the login hint parameter for corporate IdP via the administration console for SAP Cloud Identity Services.
 
 There are two aspects in the configuration of the login hint parameter: the value of the parameter, and how it is sent to the corporate IdP. The *How it is sent to the corporate IdP* configuration is only relevant for SAML 2.0 corporate identity ptoviders and depends on the *Value* configuration:
 
@@ -105,16 +105,7 @@ User Attributes
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Identity Providers*, choose the *Corporate Identity Providers* tile.
 

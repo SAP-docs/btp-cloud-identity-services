@@ -1072,7 +1072,7 @@ No
 </td>
 <td valign="top">
 
-Yes
+Yes/Mandatory
 
 
 
@@ -1454,6 +1454,332 @@ No
 </tr>
 </table>
 
+****
+
+
+<table>
+<tr>
+<th valign="top">
+
+Placeholder
+
+
+
+</th>
+<th valign="top">
+
+Notes
+
+
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`${user.sp_name}`
+
+
+
+</td>
+<td valign="top">
+
+The name of the application for which the e-mail is sent.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`${user.activate_account_link}`
+
+
+
+</td>
+<td valign="top">
+
+The account activation link sent to the user in the e-mail.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`${user.firstName}`
+
+
+
+</td>
+<td valign="top">
+
+The first name of the user.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`${user.lastName}`
+
+
+
+</td>
+<td valign="top">
+
+The last name of the user.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`${user.mail}`
+
+
+
+</td>
+<td valign="top">
+
+The e-mail of the user.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`${user.uid}`
+
+
+
+</td>
+<td valign="top">
+
+The user universal unique identifier \(Global User ID\) number.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`${user.ids_home_link}`
+
+
+
+</td>
+<td valign="top">
+
+???
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`${user.loginName}`
+
+
+
+</td>
+<td valign="top">
+
+The login name of the user.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`${user.company_logo}`
+
+
+
+</td>
+<td valign="top">
+
+The application logo shown on the logon page and in the e-mails sent to users.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`${user.sap_mailing_logo}`
+
+
+
+</td>
+<td valign="top">
+
+???
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`${user.target_url}`
+
+
+
+</td>
+<td valign="top">
+
+The URL that the user is redirected to after registration.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`${user.reset_password_link}`
+
+
+
+</td>
+<td valign="top">
+
+The link provided in the e-mail to reset the password.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`${user.set_locked_password_link}`
+
+
+
+</td>
+<td valign="top">
+
+The link provided in the e-mail to set a new password,
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`${other.securityAlertText}`
+
+
+
+</td>
+<td valign="top">
+
+The text for the specific security alert.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`${other.totpResetPasscode}`
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+$\{other.emailOtpCode\}
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`${user.inviter_name}`
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`${user.footer}`
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`${user.header}`
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+</table>
+
 > ### Remember:  
 > The *$\{other.securityAlertText\}* is mandatory for the *Send Security Alert* template. The *$\{other.securityAlertText\}* is customizable. For more information, see [Change Tenant Texts REST API](../Development/change-tenant-texts-rest-api-66ad80a.md#loio66ad80a6bbaf4fc3911232f7cc9a7de6). The key-value pairs that should be changed are `security.alert.<name of the flow>`.
 > 
@@ -1466,7 +1792,7 @@ No
 
 [Create a New E-Mail Template Set](create-a-new-e-mail-template-set-a6fca8b.md "Tenant administrators can create a new set of e-mail templates so that each template in the set can have a custom language version.")
 
-[View E-Mail Template Document](view-e-mail-template-document-148568a.md "Tenant administrators can view language e-mail templates in the template set uploaded in the administration console for Identity Authentication.")
+[View E-Mail Template Document](view-e-mail-template-document-148568a.md "Tenant administrators can view language e-mail templates in the template set uploaded in the administration console for SAP Cloud Identity Services.")
 
 [Edit or Add an E-Mail Template Set](edit-or-add-an-e-mail-template-set-3c4f397.md "Tenant administrators can configure language versions of each template in the template set. They can also set a custom template for each language, and change the name of each template set.")
 

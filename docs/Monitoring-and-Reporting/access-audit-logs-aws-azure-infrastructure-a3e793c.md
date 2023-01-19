@@ -21,7 +21,7 @@ You have a subaccount in your global account on SAP BTP, Cloud Foundry. For more
 > 
 > For tenants on the SAP infrastructure, see [Access Audit Logs \(SAP Infrastructure\)](access-audit-logs-sap-infrastructure-9f6b9a4.md).
 
-To view the audit logs for tenants on the AWS and Azure infrastructure you must add configurations in the SAP BTP cockpit and the administration console for Identity Authentication first.
+To view the audit logs for tenants on the AWS and Azure infrastructure you must add configurations in the SAP BTP cockpit and the administration console for SAP Cloud Identity Services first.
 
 To view the audit logs, follow the procedures below:
 
@@ -114,16 +114,7 @@ To view the audit logs, follow the procedures below:
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Choose the *Audit and Change Logs* tile.
 
@@ -259,7 +250,7 @@ To view the audit logs, follow the procedures below:
     <tr>
     <td valign="top">
 
-    North America \(Canada Central\) / Toronto \(Canada\)
+    North America \(Canada Central\) / Canada \(Toronto\)
 
 
     
@@ -489,7 +480,7 @@ To view the audit logs, follow the procedures below:
     <tr>
     <td valign="top">
 
-    South Korea / Seoul \(South Korea\)
+    South Korea / South Korea \(Seoul\)
 
 
     
@@ -535,7 +526,7 @@ To view the audit logs, follow the procedures below:
     <tr>
     <td valign="top" rowspan="4">
 
-    Europe / Frankfurt \(Germany\)
+    Europe / Germany Frankfurt\(\)
 
 
     

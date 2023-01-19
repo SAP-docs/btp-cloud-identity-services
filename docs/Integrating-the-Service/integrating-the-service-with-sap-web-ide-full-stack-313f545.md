@@ -17,9 +17,9 @@ You can use Identity Authentication as identity provider for SAP Web IDE Full-St
 -   You have registered the Identity Authentication as a trusted identity provider for your SAP BTP account. See [Identity Authentication Tenant as an Application Identity Provider](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/d3df5b457d0c43fca117da0dc14e2f0d.html).
 
 -   You have set the trust with SAP BTP. For more details, see [Configure Trust](../Operation-Guide/configure-trust-f96e4c5.md).
--   You have switched off the *Reload Parent Page* option for SAP Web IDE Full-Stack in the administration console for Identity Authentication. For more information, see [Enable or Disable Reload Parent Page Option](../Operation-Guide/enable-or-disable-reload-parent-page-option-0c0e9d2.md).
+-   You have switched off the *Reload Parent Page* option for SAP Web IDE Full-Stack in the administration console for SAP Cloud Identity Services. For more information, see [Enable or Disable Reload Parent Page Option](../Operation-Guide/enable-or-disable-reload-parent-page-option-0c0e9d2.md).
 
--   You have added your SAP Web IDE Full-Stack host to the list of the trusted domains in the administration console for Identity Authentication. For more information, see [Configure Trusted Domains](../Operation-Guide/configure-trusted-domains-08fa1fe.md).
+-   You have added your SAP Web IDE Full-Stack host to the list of the trusted domains in the administration console for SAP Cloud Identity Services. For more information, see [Configure Trusted Domains](../Operation-Guide/configure-trusted-domains-08fa1fe.md).
 
 -   You have checked the **User ID** of the users that will be able to access SAP Web IDE Full-Stack. The **User ID** is a six-digit number preceded by the letter **P**. For more information about how to check the **User ID**, see [List and Edit User Details](../Operation-Guide/list-and-edit-user-details-045cb01.md).
 
@@ -134,16 +134,7 @@ For this scenario, you have to configure the user attribute `First Name` in Iden
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Applications and Resources*, choose the *Applications* tile.
 

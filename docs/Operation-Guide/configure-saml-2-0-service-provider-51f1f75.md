@@ -2,7 +2,7 @@
 
 # Configure SAML 2.0 Service Provider
 
-This document is intended to help you configure a SAML 2.0 service provider \(SP\) in the administration console for Identity Authentication.
+This document is intended to help you configure a SAML 2.0 service provider \(SP\) in the administration console for SAP Cloud Identity Services.
 
 
 
@@ -38,7 +38,7 @@ You can choose the identity provider certificate to be used for signing for each
 
 The idea behind the ability to choose the idp certificate is that when you want to change the default idp certificate all applications will have downtime since the applications have trust with the current default application on the application side. So when adding new idp certificate you can change the applications one by one to trust the new certificate.
 
-To configure a SAML 2.0 trusted service provider in the administration console for Identity Authentication, proceed as follows:
+To configure a SAML 2.0 trusted service provider in the administration console for SAP Cloud Identity Services, proceed as follows:
 
 
 
@@ -46,16 +46,7 @@ To configure a SAML 2.0 trusted service provider in the administration console f
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Applications and Resources*, choose the *Applications* tile.
 
@@ -367,9 +358,9 @@ Configure trust on the service provider side.
 **Related Information**  
 
 
-[Configure OpenID Connect Application](configure-openid-connect-application-8a0aa2e.md "This document is intended to help you configure an OpenID Connect application in the administration console for Identity Authentication.")
+[Configure OpenID Connect Application](configure-openid-connect-application-8a0aa2e.md "This document is intended to help you configure an OpenID Connect application in the administration console for SAP Cloud Identity Services.")
 
-[Troubleshooting for Administrators](troubleshooting-for-administrators-f80beb5.md "This section is intended to help administrators deal with error messages in the administration console for Identity Authentication.")
+[Troubleshooting for Administrators](troubleshooting-for-administrators-f80beb5.md "This section is intended to help administrators deal with error messages in the administration console for SAP Cloud Identity Services.")
 
 [Integrating the Service with SAP Business Technology Platform, Neo Environment](../Integrating-the-Service/integrating-the-service-with-sap-business-technology-platform-neo-environment-fe84459.md#loiofe84459e688c43698591d3b9e1aac828 "SAP BTP acts as a service provider, and Identity Authentication acts as an identity provider in this setup.")
 

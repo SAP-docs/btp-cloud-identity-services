@@ -22,7 +22,7 @@ Each rule contains the following information:
 
     Define the identity provider that will be used for authentication.
 
-    The dropdown list includes the local identity provider and all corporate identity providers that are created in the administration console for Identity Authentication. The corporate identity providers must be configured in the administration. For more information, see [Corporate Identity Providers](corporate-identity-providers-19f3eca.md).
+    The dropdown list includes the local identity provider and all corporate identity providers that are created in the administration console for SAP Cloud Identity Services. The corporate identity providers must be configured in the administration. For more information, see [Corporate Identity Providers](corporate-identity-providers-19f3eca.md).
 
     > ### Remember:  
     > This field is required.
@@ -35,7 +35,7 @@ Each rule contains the following information:
 
     Specify the user group, which the authenticating user must be part of. If no user group is selected, the rule is valid for any of the groups.
 
-    The user groups must be configured in the administration console for Identity Authentication. For more information, see [User Groups](user-groups-ddd067c.md).
+    The user groups must be configured in the administration console for SAP Cloud Identity Services. For more information, see [User Groups](user-groups-ddd067c.md).
 
     > ### Note:  
     > The authenticating user must exist in the user store of Identity Authentication for the *User Group* criteria to be checked properly.
@@ -69,16 +69,7 @@ Each rule contains the following information:
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Applications and Resources*, choose the *Applications* tile.
 

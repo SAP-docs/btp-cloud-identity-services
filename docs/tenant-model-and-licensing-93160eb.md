@@ -40,15 +40,15 @@ For logons for applications not sold under the General Terms and Conditions for 
 
 A default productive or test tenant can be obtained in one of the following cases:
 
--   ForSAP BTP, Cloud Foundry environment:
+-   For SAP BTP, Cloud Foundry environment:
 
     **Prerequisites**
 
-    A customer has an SAP BTP, Cloud Foundry subaccount.
+    A customer has a subaccount in SAP BTP cockpit with a Cloud Foundry subaccount.
 
     **Procedure**
 
-    1.  In the SAP BTP, Cloud Foundry cockpit, choose your subaccount.
+    1.  In the SAP BTP cockpit, choose your subaccount.
     2.  Navigate to *Entitlements* \> *Configure Entitlements* \> *Add Service Plans*
     3.  Locate and select *Cloud Identity Services* in the pop-up dialog.
     4.  Select the checkbox for *default* plan and add it as service plan.
@@ -229,7 +229,7 @@ Identity Authentication additional productive tenant will be created and the acc
 
 [Disaster Recovery/High Availability](disaster-recovery-high-availability-2c1a055.md "Disaster recovery (DR) and high availability (HA) are based on the capabilities of the underlying infrastructure.")
 
-[Browser Support](browser-support-0741076.md "Information on the supported browser version for the administration console, and the end user screens of Identity Authentication.")
+[Browser Support](browser-support-0741076.md "Information on the supported browser version for the administration console, and the end user screens of SAP Cloud Identity Services.")
 
 [Supported Languages](supported-languages-0ea634d.md "Information on the supported languages for the administration console, and the end user screens of Identity Authentication.")
 

@@ -25,7 +25,7 @@
 
 By default, *Use Identity Authentication user store* is disabled.
 
-In scenarios when the application is using for authentication a corporate identity provider, and the *Use Identity Authentication user store* option is disabled, the user attributes, the name ID attribute, and the default attributes configurations in the administration console for Identity Authentication are not relevant. In such scenarios, Identity Authentication sends to the application the same attributes it has received from the corporate identity provider \(no change in the Subject Name Identifier or its format - Unspecified or E-Mail\). As a consequence, the same format is used not only for the ABAP and SAP Analytics Cloud tenants but also for all other SAP applications connected to the same Identity Authentication tenant, which may lead to contradictions if some applications require a different format.
+In scenarios when the application is using for authentication a corporate identity provider, and the *Use Identity Authentication user store* option is disabled, the user attributes, the name ID attribute, and the default attributes configurations in the administration console for SAP Cloud Identity Services are not relevant. In such scenarios, Identity Authentication sends to the application the same attributes it has received from the corporate identity provider \(no change in the Subject Name Identifier or its format - Unspecified or E-Mail\). As a consequence, the same format is used not only for the ABAP and SAP Analytics Cloud tenants but also for all other SAP applications connected to the same Identity Authentication tenant, which may lead to contradictions if some applications require a different format.
 
 When *Use Identity Authentication user store* option is enabled, the application checks if the users authenticated by the corporate identity provider exist in the Identity Authentication user store. For users that exist in Identity Authentication, data from Identity Authentication user store is taken and the subject name identifier, assertion and default attributes according to the application configuration are sent. For users with no profile in Identity Authentication, the application receives the nameID attribute from the corporate IdP assertion, and the attributes according to the application configuration.
 
@@ -71,7 +71,7 @@ When *Use Identity Authentication user store* is enabled, it is possible to conf
 > >  ...}
 > > ```
 
-If the ABAP and SAP Analytics Cloud tenants require the e-mail address \(in our example *dona.moore@test.com*\) for logon, but another application requires the login name, this can be achieved with the following configuration in the administration console for Identity Authentication:
+If the ABAP and SAP Analytics Cloud tenants require the e-mail address \(in our example *dona.moore@test.com*\) for logon, but another application requires the login name, this can be achieved with the following configuration in the administration console for SAP Cloud Identity Services:
 
 **SAML 2.0 Scenario**
 
@@ -412,16 +412,7 @@ Advanced Configuration: `${corporateIdP.mail}`
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Identity Providers*, choose the *Corporate Identity Providers* tile.
 

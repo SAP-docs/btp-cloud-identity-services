@@ -44,9 +44,9 @@ When you set the trust between Identity Authentication, acting as identity provi
 
 ## Procedure
 
-1.  Access the Identity Authentication tenant via the new URL `https://<tenant Id>.accounts.sapcloud.cn/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services via the new URL `https://<tenant Id>.accounts.sapcloud.cn/admin`.
 
-2.  In the administration console for Identity Authentication, access *Applications and Resources* \> *Tenant Settings* \> *SAML 2.0 Configuration*.
+2.  Access *Applications and Resources* \> *Tenant Settings* \> *SAML 2.0 Configuration*.
 
 3.  Download the new SAML metadata of Identity Authentication.
 
@@ -70,7 +70,7 @@ When you set the trust between Identity Authentication, acting as identity provi
 
 ## Context
 
-If your application an OpenID Connect one, update the configurations in the administration console of Identity Authentication to match the new host.
+If your application an OpenID Connect one, update the configurations in the administration console for SAP Cloud Identity Services to match the new host.
 
 
 
@@ -78,7 +78,7 @@ If your application an OpenID Connect one, update the configurations in the admi
 
 ## Procedure
 
-1.  In the administration console for Identity Authentication, access *Applications and Resources* \> *Tenant Settings* \> *OpenID Connect Configuration*.
+1.  In the administration console for SAP Cloud Identity Services, access *Applications and Resources* \> *Tenant Settings* \> *OpenID Connect Configuration*.
 
 2.  Update the name of the identity provider to match the new host name \(https:// <tenant ID\>.accounts.sapcloud.cn\).
 
@@ -97,7 +97,7 @@ If your application an OpenID Connect one, update the configurations in the admi
 
 ## Context
 
-When you want to perform real-time provisioning through the Identity Authentication administration console, make sure you use the correct domain when you construct your OAuth URL and SCIM URL.
+When you want to perform real-time provisioning through the administration console for SAP Cloud Identity Services, make sure you use the correct domain when you construct your OAuth URL and SCIM URL.
 
 
 
@@ -107,7 +107,7 @@ When you want to perform real-time provisioning through the Identity Authenticat
 
 1.  Access theIdentity Authentication tenant via the new domain `<tenant Id>.accounts.sapcloud.cn`.
 
-2.  In the administration console for Identity Authentication, access *User Provisioning*.
+2.  In the administration console, access *User Provisioning*.
 
 3.  Update the *host* part in the *SCIM URL* and *OAuth URL* of the Identity Provisioning target system with the new domain `dispatcher.cn1.platform.sapcloud.cn`. See [Real-Time Provisioning: Identity Authentication](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/70afd909734842b08ff8f1be5b01bc2a.html)
 
@@ -140,7 +140,7 @@ For more information about the scenario, [Corporate Identity Providers](Operatio
 
 1.  Access theIdentity Authentication tenant via the new domain `<tenant Id>.accounts.sapcloud.cn/admin`.
 
-2.  In the administration console for Identity Authentication, access *Applications and Resources* \> *Tenant Settings* \> *SAML 2.0 Configuration*.
+2.  In the administration console, access *Applications and Resources* \> *Tenant Settings* \> *SAML 2.0 Configuration*.
 
 3.  Download the new SAML metadata of the identity provider \(IdP\).
 

@@ -26,7 +26,7 @@ In this scenario you choose which is the default identity provider. It can be ei
 
 Initially Identity Authentication is set as the default local identity provider.
 
-This choice gives you access to all application settings in the administration console for Identity Authentication.
+This choice gives you access to all application settings in the administration console for SAP Cloud Identity Services.
 
 If the choice is a corporate identity provider, Identity Authentication acts as a proxy to delegate authentication to the external corporate identity provider. For more information, see [Corporate Identity Providers](corporate-identity-providers-19f3eca.md)
 
@@ -40,16 +40,7 @@ To choose a default identity provider for an application, proceed as follows:
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Applications and Resources*, choose the *Applications* tile.
 

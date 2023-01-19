@@ -10,7 +10,7 @@ Identity Authentication takes care the documents to be accepted by the users. Wh
 
 The end users can view the signed **Terms of Use** and **Privacy Policy** documents by them at the profile page. For more information, see [Information Report](information-report-cb2c243.md).
 
-The tenant administrators can view a history of the signed **Terms of Use** and **Privacy Policy** documents of the users in the administration console for Identity Authentication. The information is in the format *<document name\><document version\><time stamp\>*.
+The tenant administrators can view a history of the signed **Terms of Use** and **Privacy Policy** documents of the users in the administration console for SAP Cloud Identity Services. The information is in the format *<document name\><document version\><time stamp\>*.
 
 > ### Note:  
 > The information about when the user has accepted a particular document is available for documents accepted after May 16, 2018.

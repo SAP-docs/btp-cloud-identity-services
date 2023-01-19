@@ -6,7 +6,7 @@ Clickjacking is an attempt to trick users into clicking hidden user interface el
 
 You have two options to protect your applications against clickjacking when using embedded frames, also called overlays, for the logon pages of the applications:
 
--   If the applications are SAP UI5 or Web Dynpro, or they use the overlays of Identity Authentication, add the domains of these applications as trusted in the administration console for Identity Authentication. For more information, see [Configure Trusted Domains](../Operation-Guide/configure-trusted-domains-08fa1fe.md).
+-   If the applications are SAP UI5 or Web Dynpro, or they use the overlays of Identity Authentication, add the domains of these applications as trusted in the administration console for SAP Cloud Identity Services. For more information, see [Configure Trusted Domains](../Operation-Guide/configure-trusted-domains-08fa1fe.md).
 
 -   If the applications are not SAP UI5 or Web Dynpro, or they do not use the overlays of Identity Authentication, add the following code to your message handler:
 

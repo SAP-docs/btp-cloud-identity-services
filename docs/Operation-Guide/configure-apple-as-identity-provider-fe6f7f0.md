@@ -28,7 +28,7 @@ To configure sign in with Apple for the tenant, first you have to register an Ap
 > ### Note:  
 > You must type ***https://<tenant ID\>.accounts.ondemand.com*** in the *Domains and Subdomains* box, and ***https://<tenant ID\>.accounts.ondemand.com/ui/oauth/oauthCallback*** in the *Return URLs* box when you enable and configure the *Sign in with Apple* option at the Apple Developer site.
 
-To perform the social identity provider configuration in the administration console for Identity Authentication, you have to provide the following data:
+To perform the social identity provider configuration in the administration console for SAP Cloud Identity Services, you have to provide the following data:
 
 **Required Apple Settings**
 
@@ -111,7 +111,7 @@ Client Certificate
 </td>
 <td valign="top">
 
-The private key provided by Apple in a `.p8` file. To use the key for the configuration in the administration console of Identity Authentication, copy and paste the text from the `.p8` file.
+The private key provided by Apple in a `.p8` file. To use the key for the configuration in the administration console for SAP Cloud Identity Services, copy and paste the text from the `.p8` file.
 
 
 
@@ -123,16 +123,7 @@ The private key provided by Apple in a `.p8` file. To use the key for the config
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Choose the *Social Identity Providers* tile.
 
@@ -174,13 +165,13 @@ The above configurations are valid for the whole tenant. They will take effect f
 
 [Configure Twitter as Identity Provider](configure-twitter-as-identity-provider-f5bc52d.md "By configuring Twitter as social provider, users can log on to applications with their Twitter credentials by liking their accounts in Identity Authentication to the Twitter account.")
 
-[Remove Social Identity Providers Configuration](remove-social-identity-providers-configuration-265e41e.md "You can remove the configurations of the social providers in the administration of Identity Authentication.")
+[Remove Social Identity Providers Configuration](remove-social-identity-providers-configuration-265e41e.md "You can remove the configurations of the social providers in the administration console for SAP Cloud Identity Services.")
 
 [Configure Sign in with Apple for the web](https://help.apple.com/developer-account/?lang=en#/dev1c0e25352)
 
 [Enable or Disable Social Sign-On for an Application](enable-or-disable-social-sign-on-for-an-application-ff12d3d.md "Social sign-on allows users to link their Identity Authentication accounts with social network accounts.")
 
-[Remove Social Identity Providers Configuration](remove-social-identity-providers-configuration-265e41e.md "You can remove the configurations of the social providers in the administration of Identity Authentication.")
+[Remove Social Identity Providers Configuration](remove-social-identity-providers-configuration-265e41e.md "You can remove the configurations of the social providers in the administration console for SAP Cloud Identity Services.")
 
 [Social Authentication](../User-Guide/social-authentication-108607a.md "")
 

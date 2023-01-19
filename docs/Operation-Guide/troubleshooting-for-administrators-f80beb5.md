@@ -2,7 +2,7 @@
 
 # Troubleshooting for Administrators
 
-This section is intended to help administrators deal with error messages in the administration console for Identity Authentication.
+This section is intended to help administrators deal with error messages in the administration console for SAP Cloud Identity Services.
 
 Check the troubleshooting scenarios available in the Guided Answers tool.
 

@@ -19,7 +19,7 @@ You can start a discussion in the [Security Community](https://www.sap.com/commu
 **Related Information**  
 
 
-[Troubleshooting for Administrators](Operation-Guide/troubleshooting-for-administrators-f80beb5.md "This section is intended to help administrators deal with error messages in the administration console for Identity Authentication.")
+[Troubleshooting for Administrators](Operation-Guide/troubleshooting-for-administrators-f80beb5.md "This section is intended to help administrators deal with error messages in the administration console for SAP Cloud Identity Services.")
 
 [Error and Success Codes](Development/error-and-success-codes-7f87a75.md "This section is to help developers with solutions to the REST API response codes.")
 

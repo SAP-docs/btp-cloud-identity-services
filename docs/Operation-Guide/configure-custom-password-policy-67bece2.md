@@ -10,7 +10,7 @@ Tenant administrators can create and configure a custom password policy for scen
 
 Identity Authentication provides you with two predefined password policies, in addition to which you can create and configure up to three custom ones.
 
-The custom password policy by default must be stronger than the enterprise policy, which in turn is stronger than the standard policy. It's the responsibility of the tenant administrator to configure the custom password policy stronger than the standard and enterprise ones. Each password policy has a strength assigned to it, which is visualized by stars in the administration console for Identity Authentication. The strength specifies the priority of the password policy. It will define which policy will be enforced for password checks.
+The custom password policy by default must be stronger than the enterprise policy, which in turn is stronger than the standard policy. It's the responsibility of the tenant administrator to configure the custom password policy stronger than the standard and enterprise ones. Each password policy has a strength assigned to it, which is visualized by stars in the administration console for SAP Cloud Identity Services. The strength specifies the priority of the password policy. It will define which policy will be enforced for password checks.
 
 It is not possible to have password policies with one and the same strength. Once created and saved, the tenant administrator can reorder the custom password policies in the administration console, thus changing the strength assigned to the custom password policies.
 
@@ -32,16 +32,7 @@ To create and configure a new custom password policy, follow the procedure:
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Choose the *Password Policies* tile.
 
@@ -252,7 +243,7 @@ To use the custom password policy for your application or applications, you shou
 
 [Set a Password Policy for an Application](set-a-password-policy-for-an-application-04a6e45.md "As a tenant administrator, you can set a password policy that matches your application logon requirements.")
 
-[Delete Custom Password Policy](delete-custom-password-policy-697fd2b.md "As a tenant administrator, you can delete the custom password policy that you have created in the administration console for Identity Authentication.")
+[Delete Custom Password Policy](delete-custom-password-policy-697fd2b.md "As a tenant administrator, you can delete the custom password policy that you have created.")
 
 [Configure Password Exclude List](configure-password-exclude-list-159c09d.md "As a tenant administrator, you can create a password exclude list to restrict their usage.")
 

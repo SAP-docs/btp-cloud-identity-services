@@ -2,5 +2,5 @@
 
 # External Source Systems
 
-Configure source system in the administration console for Identity Authentication to manage users from external systems.
+Configure source system in the administration console for SAP Cloud Identity Services to manage users from external systems.
 

@@ -2,13 +2,13 @@
 
 # \(Optional\) View and Edit a Privacy Policy Document
 
-Tenant administrators can view privacy policy documents uploaded in the administration console for Identity Authentication and optionally edit the draft versions of those documents.
+Tenant administrators can view privacy policy documents uploaded in the administration console for SAP Cloud Identity Services and optionally edit the draft versions of those documents.
 
 
 
 ## Context
 
-The content of the privacy policy documents are visualised in the administration console
+The content of the privacy policy documents are visualised in the administration console.
 
  <a name="task_ilq_3rl_rpb"/>
 
@@ -22,16 +22,7 @@ The content of the privacy policy documents are visualised in the administration
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Choose the *Privacy Policy Documents* tile.
 
@@ -61,16 +52,7 @@ The content of the privacy policy documents are visualised in the administration
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Choose the *Privacy Policy Documents* tile.
 

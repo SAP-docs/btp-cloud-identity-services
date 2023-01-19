@@ -88,7 +88,7 @@ Australia/Japan
 </td>
 <td valign="top">
 
-Sydney \(Australia\) / Tokyo \(Japan\)
+Australia \(Sydney\) / Japan \(Tokyo\)
 
 
 
@@ -141,7 +141,7 @@ Brazil
 </td>
 <td valign="top">
 
-São Paulo
+Brazil \(São Paulo\)
 
 
 
@@ -192,7 +192,9 @@ China
 </td>
 <td valign="top">
 
-Shanghai \(China\)
+China
+
+\(Shanghai\)
 
 
 
@@ -245,7 +247,7 @@ Switzerland
 </td>
 <td valign="top">
 
-Zürich
+Switzerland \(Zürich\)
 
 
 
@@ -298,7 +300,7 @@ Europe
 </td>
 <td valign="top">
 
-Frankfurt \(Germany\)
+Germany \(Frankfurt\)
 
 
 
@@ -351,7 +353,7 @@ Europe
 </td>
 <td valign="top">
 
-Rot \(Germany\) / Amsterdam \(Netherlands\)/ Frankfurt \(Germany\) 
+Germany \(Rot\) / Netherlands \(Amsterdam\) / Germany \(Frankfurt\)
 
 
 
@@ -388,6 +390,59 @@ SAP
 <tr>
 <td valign="top">
 
+India
+
+
+
+</td>
+<td valign="top">
+
+`accounts.ondemand.com`
+
+`accounts.cloud.sap`
+
+
+
+</td>
+<td valign="top">
+
+India \(Mumbai\)
+
+
+
+</td>
+<td valign="top">
+
+AWS
+
+
+
+</td>
+<td valign="top">
+
+***3.109.7.59, 52.66.148.12, 43.205.45.235***
+
+
+
+</td>
+<td valign="top">
+
+\****43.205.77.24/32, 13.234.53.169/32, 65.0.145.55/32***
+
+
+
+</td>
+<td valign="top">
+
+***43.205.77.24-43.205.77.24, 13.234.53.169-13.234.53.169, 65.0.145.55-65.0.145.55***
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Japan
 
 
@@ -404,7 +459,7 @@ Japan
 </td>
 <td valign="top">
 
-Tokyo \(Japan\) / Osaka \(Japan\)
+Japan \(Tokyo\) / Japan \(Osaka\)
 
 
 
@@ -457,7 +512,7 @@ North America \(Canada Central\)
 </td>
 <td valign="top">
 
-Toronto \(Canada\)
+Canada \(Toronto\)
 
 
 
@@ -510,7 +565,7 @@ Saudi Arabia
 </td>
 <td valign="top">
 
-Riyadh, Dammam
+Saudi Arabia \(Riyadh, Dammam\)
 
 
 
@@ -630,7 +685,7 @@ AWS
 </td>
 <td valign="top">
 
-***3.34.214.12, 52.78.91.176, 5.164.154.86***
+***3.34.214.12, 52.78.91.176, 15.164.154.86***
 
 
 
@@ -722,7 +777,7 @@ US/Canada
 </td>
 <td valign="top">
 
-Sterling \(United States\) / Toronto \(Canada\)
+United States \(Sterling\) / Canada \(Toronto\)
 
 
 
@@ -830,7 +885,7 @@ Azure
 
 [Disaster Recovery/High Availability](disaster-recovery-high-availability-2c1a055.md "Disaster recovery (DR) and high availability (HA) are based on the capabilities of the underlying infrastructure.")
 
-[Browser Support](browser-support-0741076.md "Information on the supported browser version for the administration console, and the end user screens of Identity Authentication.")
+[Browser Support](browser-support-0741076.md "Information on the supported browser version for the administration console, and the end user screens of SAP Cloud Identity Services.")
 
 [Supported Languages](supported-languages-0ea634d.md "Information on the supported languages for the administration console, and the end user screens of Identity Authentication.")
 

@@ -10,7 +10,7 @@ Delete a terms of use document or a version of a terms of use document.
 
 ## Context
 
-You can delete a specific language version or the entire set of terms of use documents. To delete the entire of terms of use documents, you must delete all language versions for this set. The terms of use document set is removed from the list of the terms of use documents in the administration console for Identity Authentication, when you delete the last language version of a terms of use set.
+You can delete a specific language version or the entire set of terms of use documents. To delete the entire of terms of use documents, you must delete all language versions for this set. The terms of use document set is removed from the list of the terms of use documents in the administration console for SAP Cloud Identity Services, when you delete the last language version of a terms of use set.
 
 The documents will be deleted no matter if they are accepted or not by any users.
 
@@ -25,16 +25,7 @@ To delete a terms of use document, follow the procedure below:
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Choose the *Terms of Use Documents* tile.
 

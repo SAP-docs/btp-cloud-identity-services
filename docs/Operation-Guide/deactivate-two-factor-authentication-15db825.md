@@ -8,7 +8,7 @@ You can deactivate the second factor \(passcode or security key\) if the user ha
 
 ## Context
 
-When you deactivate the two-factor authentication via the administration console for Identity Authentication, the user sees the option disabled on the profile page under the *Multi-Factor Authentication* section:
+When you deactivate the two-factor authentication via the administration console for SAP Cloud Identity Services, the user sees the option disabled on the profile page under the *Multi-Factor Authentication* section:
 
 ![](images/Multi-Factor_Authentication_Off_7af8c1f.png)
 
@@ -34,7 +34,7 @@ To deactivate the *Two-Factor Authentication* option, proceed as follows:
 **Related Information**  
 
 
-[Deactivate User Devices for TOTP Two-Factor Authentication](deactivate-user-devices-for-totp-two-factor-authentication-87324d5.md "This document shows you how to deactivate the mobile devices used by a user to generate passcodes for access to applications requiring time-based one-time (TOTP) as two-factor authentication. You deactivate the user mobile devices from the administration console for Identity Authentication")
+[Deactivate User Devices for TOTP Two-Factor Authentication](deactivate-user-devices-for-totp-two-factor-authentication-87324d5.md "This document shows you how to deactivate the mobile devices used by a user to generate passcodes for access to applications requiring time-based one-time (TOTP) as two-factor authentication. You deactivate the user mobile devices from the administration console for SAP Cloud Identity Services.")
 
 [Unlock User TOTP Passcode](unlock-user-totp-passcode-cb6615d.md "You can unlock a user passcode when the user must log on to the application before the automatic unlock time of 60 minutes has passed.")
 

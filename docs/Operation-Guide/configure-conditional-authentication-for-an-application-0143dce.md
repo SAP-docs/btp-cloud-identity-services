@@ -45,7 +45,7 @@ If none of the rules meets the criteria, Identity Authentication is chosen for a
 
 ### Conditional Authentication Flow
 
-The tenant administrator has configured Conditional Authentication in the administration console for Identity Authentication. In this setup, the employee should be authenticated via the corporate identity provider, while the customers via Identity Authentication.
+The tenant administrator has configured Conditional Authentication in the administration console for SAP Cloud Identity Services. In this setup, the employee should be authenticated via the corporate identity provider, while the customers via Identity Authentication.
 
  **Authentication via Corporate Identity Provider** 
 
@@ -128,16 +128,7 @@ The user logs on to the application
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Applications and Resources*, choose the *Applications* tile.
 
@@ -331,5 +322,5 @@ Julie Armstrong is a customer of Company A. She accesses the company's applicati
 
 [Enable IdP-Initiated SSO from All Corporate Identity Providers](enable-idp-initiated-sso-from-all-corporate-identity-providers-f7ec8d2.md "(For SAML 2.0 applications) Tenant administrators can enable IdP-initiated single sign-on (SSO) from all configured corporate identity providers (IdPs).")
 
-[Configure Login Hint Parameter](configure-login-hint-parameter-c6dd6a5.md "Tenant administrator can configure the login hint parameter via the administration console for Identity Authentication.")
+[Configure Login Hint Parameter](configure-login-hint-parameter-c6dd6a5.md "Tenant administrator can configure the login hint parameter via the administration console for SAP Cloud Identity Services.")
 

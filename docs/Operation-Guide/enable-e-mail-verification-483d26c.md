@@ -8,7 +8,7 @@ Tenant administrators can configure applications to require verification of the 
 
 ## Context
 
-Applications can be configured to require users to have their e-mail addresses verified before they can log on. In some cases, when you can create new users. If you want to make sure that a user has a valid e-mail address, even if the e-mail address has not been verified, you should enable the e-mail verification option in the administration console for Identity Authentication
+Applications can be configured to require users to have their e-mail addresses verified before they can log on. In some cases, when you can create new users. If you want to make sure that a user has a valid e-mail address, even if the e-mail address has not been verified, you should enable the e-mail verification option in the administration console for SAP Cloud Identity Services.
 
 > ### Note:  
 > You can check whether the user's e-mail address has been verified by choosing *User Management* \> *User Details* \> *Personal Information* in the administration console. The *E-Mail Verified* box is checked if the user's e-mail address has been verified. For more information about the user details, see [List and Edit User Details](list-and-edit-user-details-045cb01.md).
@@ -17,16 +17,7 @@ Applications can be configured to require users to have their e-mail addresses v
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Choose the application that you want to edit.
 

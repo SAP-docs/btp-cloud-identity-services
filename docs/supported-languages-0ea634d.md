@@ -17,7 +17,7 @@ Information on the supported languages for the administration console, and the e
 
 [Disaster Recovery/High Availability](disaster-recovery-high-availability-2c1a055.md "Disaster recovery (DR) and high availability (HA) are based on the capabilities of the underlying infrastructure.")
 
-[Browser Support](browser-support-0741076.md "Information on the supported browser version for the administration console, and the end user screens of Identity Authentication.")
+[Browser Support](browser-support-0741076.md "Information on the supported browser version for the administration console, and the end user screens of SAP Cloud Identity Services.")
 
  <a name="concept_zn5_vvy_g5"/>
 
@@ -25,7 +25,7 @@ Information on the supported languages for the administration console, and the e
 
 ## Supported Languages for Administration Console
 
-The administration console for Identity Authentication supports only English \(en\) language.
+The administration console for SAP Cloud Identity Services supports only English \(en\) language.
 
  <a name="concept_ihp_yvy_g5"/>
 

@@ -64,7 +64,7 @@ The Identity Authentication service provides you with controlled cloud-based acc
 
 SAP Cloud Identity Services run on several underlying Infrastructure-as-a-Service technologies and regions. Some are owned by SAP and some are owned by our partner infrastructure providers, including Amazon Web Services \(AWS\) and Microsoft Azure. For more information, see [Regional Availability](regional-availability-be600ca.md).
 
-Identity Authentication tenants run on the infrastructure of SAP Cloud Identity Services. You can find out more details about your tenant in the Administration Console of Identity Authentication.
+Identity Authentication tenants run on the infrastructure of SAP Cloud Identity Services. You can find out more details about your tenant in the administration console for SAP Cloud Identity Services.
 
 
 
@@ -92,5 +92,5 @@ To use Identity Authentication, you must obtain a tenant. The tenant represents 
 
 ## Tools
 
-For configuration of most features, administrators use the administration console for Identity Authentication, which is a Fiori-based user interface adaptive to most browsers. For more information about the administration console, see [Operation Guide](Operation-Guide/operation-guide-6a8e67c.md).
+For configuration of most features, administrators use the administration console for SAP Cloud Identity Services, which is a Fiori-based user interface adaptive to most browsers. For more information about the administration console, see [Operation Guide](Operation-Guide/operation-guide-6a8e67c.md).
 

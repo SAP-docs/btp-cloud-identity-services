@@ -24,7 +24,7 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
 ## Prerequisites
 
 -   \(For *RADIUS Server Two-Factor Authentication*\) You have requested this feature. For more information how to request and configure RADIUS server in Identity Authentication, see [Configure RADIUS Server Settings \(Beta\)](configure-radius-server-settings-beta-03043ae.md).
--   \(For *SMS Two-Factor Authentication*\) You have an account in Sinch Service. You have configured Sinch Service in the administration console for Identity Authentication. For more information, see [Configure Sinch Service in Administration Console](configure-sinch-service-in-administration-console-f4a04ed.md).
+-   \(For *SMS Two-Factor Authentication*\) You have an account in Sinch Service. You have configured Sinch Service in the administration console for SAP Cloud Identity Services. For more information, see [Configure Sinch Service in Administration Console](configure-sinch-service-in-administration-console-f4a04ed.md).
 
     > ### Note:  
     > Sinch Authentication 365 or Sinch Verification account is purchased separately. It isn’t part of the Identity Authentication contract.
@@ -40,16 +40,7 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Applications and Resources*, choose the *Applications* tile.
 
@@ -193,7 +184,7 @@ Michael Adams is an employee of company A and as such he wants to create a leave
 
 ## Example 2 \(Setting SMS Two-Factor Authentication\)
 
-Donna Moore is an administrator of company A. She wants to configure Identity Authentication to always ask the company employees for a password and a SMS code \(two-factor authentication\) to log on to the *Corporate Page*. For this purpose, Donna first configures Sinch Service in the administration console for Identity Authentication. Then in the *Risk-Based Authentication* section in the administration console, he sets only a *Default Action*:
+Donna Moore is an administrator of company A. She wants to configure Identity Authentication to always ask the company employees for a password and a SMS code \(two-factor authentication\) to log on to the *Corporate Page*. For this purpose, Donna first configures Sinch Service in the administration console for SAP Cloud Identity Services. Then in the *Risk-Based Authentication* section in the administration console, he sets only a *Default Action*:
 
 **Default Authentication Rule**
 
@@ -515,7 +506,7 @@ Each rule contains the following information:
         >     If you set SMS two-factor authentication, users are required to provide an SMS code sent to their mobile devices in addition to their primary credentials.
         > 
         >     > ### Remember:  
-        >     > To use *SMS Two-Factor Authentication*, you must have configured SAP Authentication 365 in the administration consoled for Identity Authentication. For more information, see [Configure Sinch Service in Administration Console](configure-sinch-service-in-administration-console-f4a04ed.md).
+        >     > To use *SMS Two-Factor Authentication*, you must have configured SAP Authentication 365 in the administration console for SAP Cloud Identity Services. For more information, see [Configure Sinch Service in Administration Console](configure-sinch-service-in-administration-console-f4a04ed.md).
         >     > 
         >     > Users must have their mobile phone numbers verified. The tenant administrator can verify phone numbers manually in the administration console or via the SCIM API. For more information, see [List and Edit User Details](list-and-edit-user-details-045cb01.md) and [Update User Resource \(Deprecated\)](../Development/update-user-resource-deprecated-9e36479.md).
         >     > 
@@ -573,7 +564,7 @@ Each rule contains the following information:
 
     If the rule is valid for an on-premise group, type in the name of the corporate user store group, for which this rule should be valid.
 
-    The cloud groups have to be configured in the administration console for Identity Authentication. For more information, see [User Groups](user-groups-ddd067c.md).
+    The cloud groups have to be configured in the administration console for SAP Cloud Identity Services. For more information, see [User Groups](user-groups-ddd067c.md).
 
 -   *Authentication Method*
 
@@ -601,16 +592,7 @@ The fields *IP Range*, *Group*, *Authentication Method*, and *User Type* are not
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Applications and Resources*, choose the *Applications* tile.
 

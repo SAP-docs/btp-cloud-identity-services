@@ -11,7 +11,7 @@ You can access the audit logs for changes in the personal data, successful, and 
 > ### Note:  
 > The content in this section is only relevant for tenants on the SAP infrastructure.
 
-To view the audit logs you should generate Client ID and Client Secret for audit logs in the administration console for Identity Authentication first. After that you should obtain an access token, and then call the audit log retrieval API to access the data.
+To view the audit logs you should generate Client ID and Client Secret for audit logs in the administration console for SAP Cloud Identity Services first. After that you should obtain an access token, and then call the audit log retrieval API to access the data.
 
 The audit log entries are retained for:
 
@@ -32,7 +32,7 @@ To access the audit logs, follow the procedures below:
 
 ## Context
 
-The Client ID and Client Secret for the current tenant are generated in the administration console for Identity Authentication.
+The Client ID and Client Secret for the current tenant are generated in the administration console for SAP Cloud Identity Services.
 
 
 
@@ -40,16 +40,7 @@ The Client ID and Client Secret for the current tenant are generated in the admi
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Choose the *Audit and Change Logs* tile.
 
@@ -84,7 +75,7 @@ The generated Client ID can be seen under *Generate Client Credentials for Audit
 
 ## Context
 
-Use the Client ID and Client Secret generated for the current tenant in the administration console for Identity Authentication to obtain an access token. For more information about how to obtain the access token see **2. Get an OAuth Access Token** in [Using Platform APIs](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/392af9d162694d6595499f1549978aa6.html).
+Use the Client ID and Client Secret generated for the current tenant in the administration console for SAP Cloud Identity Services to obtain an access token. For more information about how to obtain the access token see **2. Get an OAuth Access Token** in [Using Platform APIs](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/392af9d162694d6595499f1549978aa6.html).
 
 > ### Tip:  
 > The URL for the POST request looks like this: <code>https://api.&lt;SAP BTP Host&gt;/oauth2/apitoken/v1?grant_type=client_credentials</code>
@@ -158,7 +149,7 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > </td>
 > <td valign="top" rowspan="2">
 > 
-> SydneyTokyo
+> Sydney/Tokyo
 > 
 > 
 > 
@@ -299,7 +290,7 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 
 ## Context
 
-To access the audit logs you should call the audit log retrieval API. You need the Client ID and Client Secret for the current tenant, generated in the administration console for Identity Authentication, and the access token. For more information, see [Audit Log Retrieval API Usage](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/e4d818da43af43e1983df8e9e5caadb2.html).
+To access the audit logs you should call the audit log retrieval API. You need the Client ID and Client Secret for the current tenant, generated in the administration console for SAP Cloud Identity Services, and the access token. For more information, see [Audit Log Retrieval API Usage](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/e4d818da43af43e1983df8e9e5caadb2.html).
 
 You can filter the audit logs by time and/or categories. The categories that you can filter are:
 
@@ -384,7 +375,7 @@ You can filter the audit logs by time and/or categories. The categories that you
 > </td>
 > <td valign="top" rowspan="2">
 > 
-> SydneyTokyo
+> Sydney/Tokyo
 > 
 > 
 > 

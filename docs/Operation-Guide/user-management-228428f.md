@@ -2,7 +2,7 @@
 
 # User Management
 
-Tenant administrators can manage user accounts via the administration console of Identity Authentication, and via APIs.
+Tenant administrators can manage user accounts via the administration console for SAP Cloud Identity Services, and via APIs.
 
 The user management enables you to create, modify, and delete users and their attributes, and manage the user accounts in the user store of Identity Authentication.
 

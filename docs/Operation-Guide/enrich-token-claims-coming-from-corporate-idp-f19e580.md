@@ -25,7 +25,7 @@ You can add up to 30 claims per corporate IdP.
 
 ### Identity Federation
 
-If *Use Identity Authentication user store* under *Identity Federation* is disabled, modify the token claims received from the corporate identity provider \(IdP\). The claims enriched in the administration console for Identity Authentication are thus taken into consideration and sent to the application in the modified form. The application specific settings, the claims in the *Default Attributes* section, are ignored.
+If *Use Identity Authentication user store* under *Identity Federation* is disabled, modify the token claims received from the corporate identity provider \(IdP\). The claims enriched in the administration console for SAP Cloud Identity Services are thus taken into consideration and sent to the application in the modified form. The application specific settings, the claims in the *Default Attributes* section, are ignored.
 
 If *Use Identity Authentication user store* under *Identity Federation* is enabled, use the modified claims in the *Default Attributes* section for the applications that use the corporate IdP for authentication. For more information, see [Configure the Default Attributes Sent to the Application](configure-the-default-attributes-sent-to-the-application-a2f1e46.md).
 
@@ -76,16 +76,7 @@ To modify the claims coming from the corporate IdP, proceed as follows:
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Identity Providers*, choose the *Corporate Identity Providers* tile.
 

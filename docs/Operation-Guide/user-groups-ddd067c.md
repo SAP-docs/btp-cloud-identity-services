@@ -2,7 +2,7 @@
 
 # User Groups
 
-Tenant administrators can create user groups, and assign and unassign groups to users via the administration console for Identity Authentication.
+Tenant administrators can create user groups, and assign and unassign groups to users via the administration console for SAP Cloud Identity Services.
 
 
 

@@ -10,7 +10,7 @@ You can disable the automatic lock of the client ID after five failed logon atte
 
 By default the client ID locks for 60 minutes after five failed logon attempts.
 
-You can disable the automatic lock of the client ID via the administration console for Identity Authentication. Use this option to disable the automatic lock in cases when the client ID has a limited scope and the client ID secret\(s\) are automatically generated.
+You can disable the automatic lock of the client ID via the administration console for SAP Cloud Identity Services. Use this option to disable the automatic lock in cases when the client ID has a limited scope and the client ID secret\(s\) are automatically generated.
 
 > ### Note:  
 > When you disable the *Client ID Lock* option for a client ID that is already locked, this resets the failed logon attempts counter but the client ID remains unlocked. If you want to unlock the client ID before the automatic unlock time of 60 minutes has passed you must unlock it manually. For more information, see [Unlock Client ID](unlock-client-id-665b9e0.md).
@@ -23,16 +23,7 @@ To disable the *Client ID Lock* option, follow the procedure below:
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Applications and Resources*, choose the *Applications* tile.
 

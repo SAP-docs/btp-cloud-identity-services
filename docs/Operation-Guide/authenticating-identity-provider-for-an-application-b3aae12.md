@@ -8,13 +8,13 @@ This document shows you how to choose an authenticating identity provider for an
 
 ## Context
 
-You have the following options for an authenticating identity provider in the administration console for Identity Authentication for both bundled and charged applications, and for system applications \(`Administration Console`, and `User Profile`\):
+You have the following options for an authenticating identity provider in the administration console for SAP Cloud Identity Services for both bundled and charged applications, and for system applications \(`Administration Console`, and `User Profile`\):
 
 -   Local Identity Provider
 
     Identity Authentication is set as the default local identity provider for bundled, charged, and system applications.
 
-    The local identity provider gives you access to all application settings in the administration console for Identity Authentication
+    The local identity provider gives you access to all application settings in the administration console for SAP Cloud Identity Services.
 
     > ### Note:  
     > When Identity Authentication is set as the default authenticating provider, and the service provider \(SP\) is configured to send a `login_hint` parameter, the user identifier is prefilled on the login screen.
@@ -35,7 +35,7 @@ You have the following options for an authenticating identity provider in the ad
     > ### Remember:  
     > If you want to use a corporate identity provider for a system application, the `name ID` attribute sent in the assertion by that corporate identity provider must match the *E-Mail*, *Login Name* or *User ID* attribute of the user in the user store of Identity Authentication.
     > 
-    > You should also configure the following options for that corporate provider in the administration console for Identity Authentication:
+    > You should also configure the following options for that corporate provider in the administration console for SAP Cloud Identity Services:
     > 
     > 1.  Enable *Use Identity Authentication user store*.
     > 2.  \(Optional\) Enable *Apply Application Configurations*. This is needed if you want to apply the custom application configurations for authentication and access policies.
@@ -54,5 +54,5 @@ Based on your scenario you can:
 
 [Configure Trust with SAML 2.0 Corporate Identity Provider](configure-trust-with-saml-2-0-corporate-identity-provider-33832e5.md "This document is intended to help you configure trust with a SAML 2.0 corporate identity provider. In this scenario Identity Authentication acts as a proxy to delegate the authentication to the SAML 2.0 corporate identity provider.")
 
-[Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md "As a tenant administrator, you can edit both your own authorizations and other administrators' authorizations in the administration console for Identity Authentication. By editing the administrator authorizations you can also delete an administrator.")
+[Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md "As a tenant administrator, you can edit both your own authorizations and other administrators' authorizations in the administration console for SAP Cloud Identity Services. By editing the administrator authorizations you can also delete an administrator.")
 

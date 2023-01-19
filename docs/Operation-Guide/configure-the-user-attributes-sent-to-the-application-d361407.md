@@ -148,7 +148,7 @@ locale/language
 > ### Note:  
 > `locale` is added at the creation of the application. It takes as value the language of the user.
 > 
-> You can view the configured user language in the administration console for Identity Authentication. For more information, see [Configure the User Attributes Sent to the Application](configure-the-user-attributes-sent-to-the-application-d361407.md).
+> You can view the configured user language in the administration console for SAP Cloud Identity Services. For more information, see [Configure the User Attributes Sent to the Application](configure-the-user-attributes-sent-to-the-application-d361407.md).
 
 
 
@@ -205,7 +205,7 @@ uid
 <tr>
 <td valign="top">
 
-User UUID
+Global User ID
 
 
 
@@ -724,7 +724,7 @@ app\_custom\_attribute\_5
 > The configuration of the user attributes for the system applications is disabled. The default settings for these applications are `First Name`, `Company`, `Last Name`, and `E-Mail`.
 
 > ### Remember:  
-> When the application uses a corporate IdP for authentication, and *Identity Federation* is disabled, the user attributes configurations in the administration console for Identity Authentication are not relevant. In such scenarios Identity Authentication sends to the application the user attributes that come from the corporate identity provider without changing them. For more information about the corporate identity provider scenario, see [Corporate Identity Providers](corporate-identity-providers-19f3eca.md) and [Configure Identity Federation](configure-identity-federation-c029bbb.md).
+> When the application uses a corporate IdP for authentication, and *Identity Federation* is disabled, the user attributes configurations in the administration console for SAP Cloud Identity Services are not relevant. In such scenarios Identity Authentication sends to the application the user attributes that come from the corporate identity provider without changing them. For more information about the corporate identity provider scenario, see [Corporate Identity Providers](corporate-identity-providers-19f3eca.md) and [Configure Identity Federation](configure-identity-federation-c029bbb.md).
 
 To configure the assertion attributes, proceed as follows:
 
@@ -732,16 +732,7 @@ To configure the assertion attributes, proceed as follows:
 
 ## Procedure
 
-1.  Access the tenant's administration console for Identity Authentication by using the console's URL.
-
-    > ### Note:  
-    > The URL has the following pattern:
-    > 
-    > `https://<tenant ID>.accounts.ondemand.com/admin`
-    > 
-    > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
-    > 
-    > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
+1.  Sign in to the administration console for SAP Cloud Identity Services.
 
 2.  Under *Applications and Resources*, choose the *Applications* tile.
 
@@ -768,7 +759,7 @@ To configure the assertion attributes, proceed as follows:
 
 [Configure Registration and Upgrade Forms](configure-registration-and-upgrade-forms-93a9e18.md "In the administration console, you can configure which user attributes Identity Authentication sends to the service provider or client (relying party) to be displayed on application's registration and upgrade forms.")
 
-[Troubleshooting for Administrators](troubleshooting-for-administrators-f80beb5.md "This section is intended to help administrators deal with error messages in the administration console for Identity Authentication.")
+[Troubleshooting for Administrators](troubleshooting-for-administrators-f80beb5.md "This section is intended to help administrators deal with error messages in the administration console for SAP Cloud Identity Services.")
 
 [Create a New Application](create-a-new-application-0d4b255.md "You can create a new application and customize it to comply with your company requirements.")
 

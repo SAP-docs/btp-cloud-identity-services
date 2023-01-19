@@ -447,13 +447,13 @@ SAP Data Warehouse Cloud embedded
 
 [Identity Directory REST API](https://api.sap.com/api/IdDS_SCIM/resource)
 
-[Create a New User](../Operation-Guide/create-a-new-user-348deef.md "As a tenant administrator, you can create a new user in the administration console for Identity Authentication.")
+[Create a New User](../Operation-Guide/create-a-new-user-348deef.md "As a tenant administrator, you can create a new user in the administration console for SAP Cloud Identity Services.")
 
 [Import CSV File with Full User Profile](../Operation-Guide/import-csv-file-with-full-user-profile-f54b900.md "As a tenant administrator, you can create new users or update existing ones with all user data, including attributes from a custom schema, via a CSV file upload.")
 
 [Import or Update Users for a Specific Application](../Operation-Guide/import-or-update-users-for-a-specific-application-33838e0.md "As a tenant administrator, you can import new users or update existing ones for a specific application with a CSV file. You can also send activation e-mails to the users that have not received activation e-mails for that application so far.")
 
-[Configure SAML 2.0 Service Provider](../Operation-Guide/configure-saml-2-0-service-provider-51f1f75.md "This document is intended to help you configure a SAML 2.0 service provider (SP) in the administration console for Identity Authentication.")
+[Configure SAML 2.0 Service Provider](../Operation-Guide/configure-saml-2-0-service-provider-51f1f75.md "This document is intended to help you configure a SAML 2.0 service provider (SP) in the administration console for SAP Cloud Identity Services.")
 
 [Communication Scenarios Managed by SAP](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/c15c71affb2243ec9abc071c1a62503c.html)
 

@@ -278,7 +278,7 @@ Content-Type: application/json
 
 [Add Logon Overlays in Customer Applications](add-logon-overlays-in-customer-applications-5e98ecf.md "This document describes how service providers that delegate authentication to Identity Authentication can use embedded frames, also called overlays, for the logon pages of their applications.")
 
-[Configure an Application's Home URL](../Operation-Guide/configure-an-application-s-home-url-be6d6f2.md "You can configure the Home URL of an application in the administration console for Identity Authentication.")
+[Configure an Application's Home URL](../Operation-Guide/configure-an-application-s-home-url-be6d6f2.md "You can configure the Home URL of an application in the administration console for SAP Cloud Identity Services.")
 
 [Configure Certificates for API Authentication](../Operation-Guide/configure-certificates-for-api-authentication-c408083.md "This document describes how developers configure the certificates used for authentication when the API methods and OpenID Connect scenarios of Identity Authentication are used.")
 

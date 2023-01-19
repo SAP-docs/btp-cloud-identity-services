@@ -77,11 +77,11 @@ Apart from the bundled and charged applications that you can create, the tenant 
 > 
 > System applications can't be parents to other applications, and can't have child applications.
 
-The `Administration Console` application contains the configurations of the administration console for Identity Authentication, and information about expiring certificates, system notifications and new administrators. The information is visible at the top right corner of the administration console:
+The `Administration Console` application contains the configurations of the administration console for SAP Cloud Identity Services, and information about expiring certificates, system notifications and new administrators. The information is visible at the top right corner of the administration console:
 
  ![](images/System_Notifications_1a76bad.png)
 
-You can access the tenant's administration console for Identity Authentication by using the console's URL.
+You can access the tenant's administration console for SAP Cloud Identity Services by using the console's URL.
 
 > ### Note:  
 > The URL has the following pattern:
@@ -94,10 +94,10 @@ You can access the tenant's administration console for Identity Authentication b
 
 As a tenant administrator you can change the default configurations:
 
--   to configure stronger protection for the administration console for Identity Authentication via the *Risk-Based Authentication* option.
--   to configure stronger password requirements for the tenant administrators of the administration console for Identity Authentication.
+-   to configure stronger protection for the administration console for SAP Cloud Identity Services via the *Risk-Based Authentication* option.
+-   to configure stronger password requirements for the tenant administrators of the administration console for SAP Cloud Identity Services.
 -   to choose authenticating identity provider and define rules for authenticating identity provider.
--   to customize the look and feel of the sign-in page of the administration console for Identity Authentication.
+-   to customize the look and feel of the sign-in page of the administration console for SAP Cloud Identity Services.
 
 The `User Profile` application contains the configurations of the Profile Page.
 
@@ -105,7 +105,7 @@ As a tenant administrator you can change the default configurations:
 
 -   to configure stronger protection via the *Risk-Based Authentication* option.
 -   to choose authenticating identity provider and define rules for authenticating identity provider.
--   to define custom e-mail template sets for users created via the *Add User* option in the administration console for Identity Authentication, or via the SCIM REST API.
+-   to define custom e-mail template sets for users created via the *Add User* option in the administration console for SAP Cloud Identity Services, or via the SCIM REST API.
 -   to customize the look and feel of the sign-in page of the Profile Page.
 
 > ### Note:  

@@ -29,7 +29,7 @@ If you have an MTCaptcha registered account and Site Key, skip the procedure bel
 
 3.  Configure your account.
 
-4.  Save your Site key and your Secret key. You need them for the configuration steps in the administration console for Identity Authentication.
+4.  Save your Site key and your Secret key. You need them for the configuration steps in the administration console for SAP Cloud Identity Services.
 
 5.  Save your configuration.
 
