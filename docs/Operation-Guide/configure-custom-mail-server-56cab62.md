@@ -41,6 +41,9 @@ To configure the custom mail server, follow the procedure below:
 
 5.  Enter the required information in all the fields.
 
+    > ### Remember:  
+    > SAP is not responsible for the information in the fields. Contact your IT Department for the custom mail server configurations in the administration console.
+
 6.  Save your entries.
 
     If the operation is successful, you receive the message ***Configuration saved***.

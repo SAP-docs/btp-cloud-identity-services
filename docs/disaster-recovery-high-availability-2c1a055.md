@@ -57,6 +57,8 @@ If a restore is required due to an issue on application level, report an inciden
 
 [Supported Languages](supported-languages-0ea634d.md "Information on the supported languages for the administration console, and the end user screens of Identity Authentication.")
 
+[Accessibility Features in Identity Authentication](accessibility-features-in-identity-authentication-c7b544b.md "To optimize your experience of Identity Authentication, Identity Authentication tools provide features and settings that help you use the software efficiently.")
+
 [Regional Availability](regional-availability-be600ca.md "Tenants are deployed on the productive domain accounts.ondemand.com.")
 
 [Cloud Service Status](https://www.sap.com/about/trust-center/cloud-service-status.html)

@@ -31,7 +31,9 @@ By default, *Use Identity Authentication user store* is disabled.
 
 In scenarios when the application is using for authentication a corporate identity provider, and the *Use Identity Authentication user store* option is disabled, the user attributes, the name ID attribute, and the default attributes configurations in the administration console for SAP Cloud Identity Services are not relevant. In such scenarios, Identity Authentication sends to the application the same attributes it has received from the corporate identity provider. For more information about the corporate identity provider scenario, see [Corporate Identity Providers](corporate-identity-providers-19f3eca.md).
 
-When *Use Identity Authentication user store* option is enabled, the application checks if the users authenticated by the corporate identity provider exist in the Identity Authentication user store. For users that exist in Identity Authentication, data from Identity Authentication user store is taken and the subject name identifier, assertion and default attributes according to the application configuration are sent. For users with no profile in Identity Authentication, the application receives the nameID attribute from the corporate IdP assertion, and the attributes according to the application configuration.
+When *Use Identity Authentication user store* option is enabled, the application checks if the users authenticated by the corporate identity provider exist in the Identity Authentication user store. The existence check is done with the name identifier sent by the corporate identity provider for the identifying attributes `uid`, `loginName`, `emails` and `phoneNumber`.
+
+For users that exist in Identity Authentication, data from Identity Authentication user store is taken and the subject name identifier, assertion and default attributes according to the application configuration are sent. For users with no profile in Identity Authentication, the application receives the nameID attribute from the corporate IdP assertion, and the attributes according to the application configuration.
 
 
 

@@ -65,30 +65,6 @@ Authentication failed; try again
 <tr>
 <td valign="top">
 
-Account is locked; select the link in the e-mail that has been sent to unlock your account;
-
-
-
-</td>
-<td valign="top">
-
-You are not allowed to log on to your account.
-
-
-
-</td>
-<td valign="top">
-
--   Check the e-mail you received from Identity Authentication with instructions about how to unlock your account;
--   Contact your administrator.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 An error occurred; try again
 
 

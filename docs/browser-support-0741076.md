@@ -19,6 +19,8 @@ Information on the supported browser version for the administration console, and
 
 [Supported Languages](supported-languages-0ea634d.md "Information on the supported languages for the administration console, and the end user screens of Identity Authentication.")
 
+[Accessibility Features in Identity Authentication](accessibility-features-in-identity-authentication-c7b544b.md "To optimize your experience of Identity Authentication, Identity Authentication tools provide features and settings that help you use the software efficiently.")
+
  <a name="concept_xst_gty_g5"/>
 
 <!-- concept\_xst\_gty\_g5 -->

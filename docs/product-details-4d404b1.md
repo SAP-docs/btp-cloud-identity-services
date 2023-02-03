@@ -440,3 +440,5 @@ Users can use services to maintain or update their user profiles and to log on t
 
 [Supported Languages](supported-languages-0ea634d.md "Information on the supported languages for the administration console, and the end user screens of Identity Authentication.")
 
+[Accessibility Features in Identity Authentication](accessibility-features-in-identity-authentication-c7b544b.md "To optimize your experience of Identity Authentication, Identity Authentication tools provide features and settings that help you use the software efficiently.")
+

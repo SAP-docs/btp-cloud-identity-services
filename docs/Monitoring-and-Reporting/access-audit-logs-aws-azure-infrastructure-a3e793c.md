@@ -791,5 +791,5 @@ The configuration will be enabled with the next 15 minutes.
 
 ## Next Steps
 
-\(Optional\) Retrieve the audit logs via the Audit Log Retrieval API. See[Audit Log Retrieval API Usage for Subaccounts in the Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/audit-log-retrieval-api-usage-for-subaccounts-in-cloud-foundry-environment).
+\(Optional\) Retrieve the audit logs via the Audit Log Retrieval API. See [Audit Log Retrieval API Usage for Subaccounts in the Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/audit-log-retrieval-api-usage-for-subaccounts-in-cloud-foundry-environment).
 

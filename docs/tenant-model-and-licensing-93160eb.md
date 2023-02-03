@@ -133,6 +133,55 @@ If a default test tenant is not created as part of other SAP cloud products deli
 
 
 
+<a name="loio93160ebd2dcb40e98aadcbb9a970f2b9__section_cy3_lwh_fwb"/>
+
+## Assigning an Existing Tenant to SAP BTP Subaccount
+
+Customers can assign existing tenant to an SAP BTP subaccount via the `default plan`. Activating the `default plan` does not trigger the creation of new tenants if tenant with the same type already exists.
+
+**Prerequisites**
+
+-   A customer has an existing Identity Authentication tenant granted as part of a bundle with another SAP product.
+
+-   A customer has a subaccount in SAP BTP cockpit with a Cloud Foundry subaccount.
+
+
+**Procedure**
+
+1.  In the SAP BTP cockpit, choose your subaccount.
+2.  Navigate to *Services* \> *Service Marketplace*.
+3.  Select the *Cloud Identity Services* tile. Under *Application Plans* you should see the *default* plan.
+4.  Select *Create* in the top-right corner.
+
+    A wizard opens, offering you to configure your instance:
+
+    1.  Enter the following information:
+
+        1.  Choose *Cloud Identity Services* for which to assign an instance from the dropdown list.
+
+        2.  Select the *default* plan
+
+        3.  Choose *Next*.
+
+
+    2.  Define the parameters for your instance:
+        1.  Choose a *Test* or *Productive* cloud service type.
+
+            > ### Note:  
+            > *Productive* is the default value.
+
+        2.  Choose *Next*.
+
+    3.  Review your configuration.
+    4.  Choose *Create*.
+
+
+**Result**
+
+Your existing tenant is assigned to that SAP BTP subaccount.
+
+
+
 <a name="loio93160ebd2dcb40e98aadcbb9a970f2b9__section_r53_ttj_l4b"/>
 
 ## Getting an Additional Tenant
@@ -232,6 +281,8 @@ Identity Authentication additional productive tenant will be created and the acc
 [Browser Support](browser-support-0741076.md "Information on the supported browser version for the administration console, and the end user screens of SAP Cloud Identity Services.")
 
 [Supported Languages](supported-languages-0ea634d.md "Information on the supported languages for the administration console, and the end user screens of Identity Authentication.")
+
+[Accessibility Features in Identity Authentication](accessibility-features-in-identity-authentication-c7b544b.md "To optimize your experience of Identity Authentication, Identity Authentication tools provide features and settings that help you use the software efficiently.")
 
 [Identity Provisioning: Tenant Model](https://help.sap.com/docs/IDENTITY_PROVISIONING/f48e822d6d484fa5ade7dda78b64d9f5/65fa74998ef14f059806f0c5a48e5285.html?version=Cloud)
 

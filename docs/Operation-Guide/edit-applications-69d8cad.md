@@ -590,7 +590,7 @@ To edit the application configurations, proceed as follows:
     -   Default Name ID Format
     -   Assertion Attributes
     -   Client Authentication
-    -   Consumed Services
+    -   Dependencies
     -   Risk-Based Authentication
     -   E-Mail Verification
     -   Password Policy

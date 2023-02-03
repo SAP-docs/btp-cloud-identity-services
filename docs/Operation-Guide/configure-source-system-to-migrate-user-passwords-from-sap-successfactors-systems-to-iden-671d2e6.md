@@ -20,8 +20,10 @@
 
 In this scenario, you have an SAP SuccessFactors instance integrated with Identity Authentication. In the SAP SuccessFactors instance there are users that log on with username and password \(also known as password or non-sso users\). The source system opportunity gives the possibility these users to be migrated and to use Identity Authentication without the need to change the passwords that they already have. The password of each SAP SuccessFactors user is migrated once only during his or her first successful logon after the configuration of the source system scenario in Identity Authentication. After that the user passwords are managed by Identity Authentication.
 
+The first logon after the migration must be with a username and password. After this first successful logon, the user can use any other allowed logon identifier.
+
 > ### Remember:  
-> If a user has enabled the *Remember me* option, when that user changes his or her password in the external source system, the remember me cookie is not invalidated. For more information, see [Use the Remember Me Option](../User-Guide/use-the-remember-me-option-bc7c6c6.md).
+> If a user has enabled the *Remember me* option, when that user changes his or her password in the external source system, the remember me cookie isn't invalidated. For more information, see [Use the Remember Me Option](../User-Guide/use-the-remember-me-option-bc7c6c6.md).
 
 To configure a source system, follow the steps below:
 
@@ -151,6 +153,11 @@ To configure a source system, follow the steps below:
         > 
         > For more information about the mapping between theSAP SuccessFactors data centers and the password validation URL, see [SAP SuccessFactors Data Centers Mapping to Authentication URL](sap-successfactors-data-centers-mapping-to-authentication-url-f38bb6b.md).
 
+        > ### Remember:  
+        > If you choose the *x509* certificate as your *Authentication Type*, you'll need to add ".cert" after the subdomain part of the URL. For example:
+        > 
+        >  `https://exampleapi.cert.sapsf.com/odata/v2/restricted/validateUser`.
+
 
         
         </td>
@@ -187,7 +194,10 @@ To configure a source system, follow the steps below:
             Once the certificate is generated, you can view its details. The validity of the certificate is one year.
 
             > ### Note:  
-            > You can choose the option for automatic regeneration of the certificate by selecting the *Automatic Renewal* checkbox. Two weeks before the expiry of the certificate, it will be regenerated. The renewed certificate will have the same DN.
+            > You can choose the option for automatic regeneration of the certificate by selecting the *Automatic Renewal* checkbox. Two weeks before the expiry of the certificate, it is regenerated. The renewed certificate will have the same DN.
+
+            > ### Remember:  
+            > If you choose the *x509* certificate as your *Authentication Type*, you'll need to upload that certificate into SAP SuccessFactors to register Identity Authentication for incoming calls using *x509* certificate-based authentication. Refer to [Upgrade to X.509 Certificate-Based Authentication for Incoming Calls](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/568fdf1f14f14fd089a3cd15194d19cc/2b8f220f51ce455da3f349ef851d264c.html) for the steps to complete the upload.
 
 
 
@@ -204,13 +214,13 @@ To configure a source system, follow the steps below:
         </td>
         <td valign="top">
 
-        Choose if a user whose password does not meet the password policy requirements of the application must reset or change it after the first successful logon.
+        Choose if a user whose password doesn't meet the password policy requirements of the application must reset or change it after the first successful logon.
 
         -   *Change password* - The user will be presented a dialog to change their password. The new password must meet the current password policy.
 
             This is the default choice.
 
-        -   *Reset password* - The user will receive the reset password link by e-mail.
+        -   *Reset password* - The user receives the reset password link by e-mail.
 
 
         

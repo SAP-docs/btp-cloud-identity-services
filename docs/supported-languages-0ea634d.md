@@ -19,6 +19,8 @@ Information on the supported languages for the administration console, and the e
 
 [Browser Support](browser-support-0741076.md "Information on the supported browser version for the administration console, and the end user screens of SAP Cloud Identity Services.")
 
+[Accessibility Features in Identity Authentication](accessibility-features-in-identity-authentication-c7b544b.md "To optimize your experience of Identity Authentication, Identity Authentication tools provide features and settings that help you use the software efficiently.")
+
  <a name="concept_zn5_vvy_g5"/>
 
 <!-- concept\_zn5\_vvy\_g5 -->

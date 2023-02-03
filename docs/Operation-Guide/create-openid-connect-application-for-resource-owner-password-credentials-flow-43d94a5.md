@@ -105,7 +105,7 @@ To create a new OpenID Connect application, choose your scenario and follow the 
     Optional.
 
     > ### Remember:  
-    > Newly created applications with an assigned parent application will inherit all the configurations from the parent with the except of the `Client ID` and `Consumed Services`. The inherited configurations will be marked as such.
+    > Newly created applications with an assigned parent application will inherit all the configurations from the parent with the except of the `Client ID` and `Dependencies`. The inherited configurations will be marked as such.
 
 
     

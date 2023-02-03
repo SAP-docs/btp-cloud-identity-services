@@ -44,14 +44,16 @@ https://my-tenant.ondemand.com/.well-known/openid-configuration
   "introspection_endpoint":"https://my-tenant.ondemand.com/oauth2/introspect",
   "revocation_endpoint":"https://my-tenant.ondemand.com/oauth2/revoke",
   "response_types_supported" : [ "code", "id_token", "token" ],
-  "grant_types_supported" : [ "password", "authorization_code", "refresh_token", "client_credentials", "urn:ietf:params:oauth:grant-type:jwt-bearer" ],
+  "grant_types_supported" : [ "password", "authorization_code", "refresh_token", "client_credentials", "urn:ietf:params:oauth:grant-type:jwt-bearer", "urn:ietf:params:oauth:grant-type:token-exchange"],
   "subject_types_supported" : [ "public" ],
   "id_token_signing_alg_values_supported" : [ "RS256" ],
   "scopes_supported" : [ "openid", "email", "profile", "offline_access" ],
   "token_endpoint_auth_methods_supported" : [ "tls_client_auth", "client_secret_basic", "client_secret_post", "private_key_jwt" ],
-  "claims_supported" : [ "sub", "iss", "exp", "iat", "nonce", "email", "email_verified", "given_name", "family_name", "zone_uuid", "user_uuid", "preferred_username", "name" ],
+  "claims_supported" : [ "sub", "iss", "exp", "iat", "nonce", "email", "email_verified", "given_name", "family_name", "zone_uuid", "user_uuid", "preferred_username", "name", "sid"],
   "code_challenge_methods_supported" : [ "plain", "S256" ],
-  "tls_client_certificate_bound_access_tokens" : true
+  "tls_client_certificate_bound_access_tokens" : true,
+  "frontchannel_logout_supported" : true,
+  "frontchannel_logout_session_supported" : true
 }
 ```
 

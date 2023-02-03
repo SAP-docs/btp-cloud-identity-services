@@ -325,6 +325,9 @@ Each rule contains the following information:
 
     Define the range of allowed IP addresses or proxies for the original IP addresses that the user logs on from. The value has to be specified in Classless Inter-Domain Routing \(CIDR\) notation.
 
+    > ### Example:  
+    > ![](images/IP_Ranges_Examples_b6f3ce1.png)
+
     > ### Remember:  
     > To specify the *Forwarded IP Range*, the *IP Range* must be defined first.
 

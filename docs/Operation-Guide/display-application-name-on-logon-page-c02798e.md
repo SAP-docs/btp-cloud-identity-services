@@ -14,7 +14,7 @@ You are assigned the *Manage Applications* role. For more information about how 
 
 ## Context
 
-The application's display name appears on the left side of the logon and registration pages of the applications that use Identity Authentication for authentication. You set this name when you first create your application in the administration console for Identity Authentication, and you can change it later. For more information, see [Create a New Application](create-a-new-application-0d4b255.md) and [Change an Application's Display Name](change-an-application-s-display-name-83d65d0.md).
+The application's display name appears on the left side of the logon and registration pages of the applications that use Identity Authentication for authentication. You set this name when you first create your application in the administration console for SAP Cloud Identity Services, and you can change it later. For more information, see [Create a New Application](create-a-new-application-0d4b255.md) and [Change an Application's Display Name](change-an-application-s-display-name-83d65d0.md).
 
 By default, the display name of the application is set to appear on the logon page.
 

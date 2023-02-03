@@ -20,7 +20,7 @@ To configure Twitter as social identity provider for the tenant, you have to reg
 > ### Note:  
 > You need to type ***https://<tenant ID\>.accounts.ondemand.com/ui/oauth/oauthCallback*** in the *Callback URLs* field in the Create an application section of Twitter Application Management page. For more information about Twitter Callback URL, see [Callback URL](https://developer.twitter.com/en/docs/basics/callback_url).
 
-To perform the social identity provider configuration in the administration console for Identity Authentication, you have to provide the following data:
+To perform the social identity provider configuration in the administration console for SAP Cloud Identity Services, you have to provide the following data:
 
 **Required Twitter Settings**
 

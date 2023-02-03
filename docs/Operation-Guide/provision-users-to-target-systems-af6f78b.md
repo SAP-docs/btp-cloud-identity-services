@@ -574,7 +574,7 @@ The tenant administrator can choose which of the users to be provisioned to the 
     </td>
     <td valign="top">
 
-    Once the search is completed, the system will list the users whose *User ID*, *Global User ID*, *E-Mail*, or *Login Name* match your search criteria string. In this case the system doesn’t include the *First Name* and *Last Name* fields in the search.
+    Once the search is completed, the system will list the users whose *User ID*, *Global User ID*, *SCIM ID*, *E-Mail*, or *Login Name* match your search criteria string. In this case the system doesn’t include the *First Name* and *Last Name* fields in the search.
 
     If you aren’t satisfied with the search result, edit your search criteria and repeat the step again.
 

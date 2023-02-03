@@ -71,7 +71,7 @@ Identity Authentication tenants run on the infrastructure of SAP Cloud Identity 
 ## Features
 
  Authentication and SSO
- :   Choose one of the supported authentication methods to control access to your application, like Form, SPNEGO, Social, or two-factor authentication. Use SAML 2.0 protocol to provide single sign-on. Integrate your application programmatically using authentication via API.
+ :   Choose one of the supported authentication methods to control access to your application, like Form, SPNEGO, Social, or two-factor authentication. Use SAML 2.0 to provide single sign-on. Integrate your application programmatically using authentication via API.
 
   Configure Risk-Based Authentication
  :   Help enforce two-factor authentication based on IP ranges, user groups, user type, or authentication method to manage access to a business application.

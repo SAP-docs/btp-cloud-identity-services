@@ -13,7 +13,7 @@ You can use one of the following styles:
 -   *Horizon*:
     -   Standard - This predefined theme is an evolution of the SAP Fiori design system. It uses the the Horizon theme for the end-user screens. To learn more about the theme, see [SAP’s UI Technologies supporting the new Horizon visual theme of SAP Fiori](https://blogs.sap.com/2021/11/17/saps-ui-technologies-supporting-the-new-Horizon-visual-theme-of-SAP-Fiori/).
 
-        You can customize the *Horizon* theme with instructions that appear on the sign in screen. For mmore information, see [Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md).
+        You can customize the *Horizon* theme with instructions that appear on the sign in screen. For more information, see [Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md).
 
         > ### Example:  
         > ![](images/Horizon_Example_e72add1.png)
