@@ -80,8 +80,6 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > ### Tip:  
 > The URL for the POST request looks like this: <code>https://api.&lt;SAP BTP Host&gt;/oauth2/apitoken/v1?grant_type=client_credentials</code>
 > 
-> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*.
-> 
 > 
 > <table>
 > <tr>
