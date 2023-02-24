@@ -422,6 +422,7 @@
         -   [Export Change Logs with a History of Administration Operations](Monitoring-and-Reporting/export-change-logs-with-a-history-of-administration-operations-9d96aae.md)
         -   [View Troubleshooting Logs](Monitoring-and-Reporting/view-troubleshooting-logs-2732321.md)
         -   [Analyze Troubleshooting Logs with Support Log Assistant 2.0](Monitoring-and-Reporting/analyze-troubleshooting-logs-with-support-log-assistant-2-0-72ac00b.md)
+        -   [Logging OpenID Connect Tokens](Monitoring-and-Reporting/logging-openid-connect-tokens-b6c42b5.md)
     -   [Viewing Assigned Tenants and Administrators](viewing-assigned-tenants-and-administrators-f56e6f2.md)
     -   [Submitting Improvement Requests](submitting-improvement-requests-988c6de.md)
     -   [Getting Support](getting-support-06818b2.md)

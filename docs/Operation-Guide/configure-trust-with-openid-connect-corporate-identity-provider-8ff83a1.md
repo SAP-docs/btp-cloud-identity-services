@@ -2,18 +2,15 @@
 
 # Configure Trust with OpenID Connect Corporate Identity Provider
 
-This document is intended to help you configure trust with an OpenID Connect corporate identity provider. In this scenario Identity Authentication acts as a proxy to delegate the authentication to the OpenID Connect corporate identity provider.
+This document is intended to help you configure trust with an OpenID Connect \(OIDC\) corporate identity provider. In this scenario Identity Authentication acts as a proxy to delegate the authentication to OIDC-compliant corporate identity providers.
 
 
 
 ## Context
 
-> ### Note:  
-> Currently only Microsoft Azure is supported as OpenID Connect corporate identity provider.
+Identity Authentication can use OIDC-compliant identity providers as external authenticating authorities. The service acts as a proxy to delegate authentication to the external corporate identity provider. The requests for authentication sent by the relying party are forwarded to the corporate identity provider.
 
-Identity Authentication can use an OpenID Connect identity provider as an external authenticating authority. Identity Authentication thus acts as a proxy to delegate authentication to the external corporate identity provider. The requests for authentication sent by the relying party will be forwarded to the corporate identity provider.
-
-As an identity provider proxy, Identity Authentication will act as an OpenID identity provider to the relying party, and as relying party to the corporate identity provider. Once a user is authenticated at the corporate identity provider, successive authentication requests from relying parties, which use the same corporate identity provider will not be forwarded to it as long as the session at Identity Authentication is active. Identity Authentication will issue JSON Web Tokens \(JWTs\) based on the user data received during the first authentication.
+As an identity provider proxy, Identity Authentication acts as an OpenID identity provider to the relying party, and as relying party to the corporate identity provider. Once a user is authenticated at the corporate identity provider, successive authentication requests from relying parties, which use the same corporate identity provider aren't forwarded to it as long as the session at Identity Authentication is active. Identity Authentication issues JSON Web Tokens \(JWTs\) based on the user data received during the first authentication.
 
 To use Identity Authentication as a proxy to delegate authentication to an external OpenID Connect corporate identity provider you have to configure trust with that corporate identity provider.
 
@@ -357,6 +354,8 @@ Configure the corporate identity provider in the administration console for SAP 
 
 
 [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md "As a tenant administrator, you can edit both your own authorizations and other administrators' authorizations in the administration console for SAP Cloud Identity Services. By editing the administrator authorizations you can also delete an administrator.")
+
+[Logging OpenID Connect Tokens](../Monitoring-and-Reporting/logging-openid-connect-tokens-b6c42b5.md "Tenant administrator can view the JWT payload of the OpenID Connect tokens issued or received by Identity Authentication.")
 
 [Microsoft identity platform application authentication certificate credentials](https://learn.microsoft.com/en-us/azure/active-directory/develop/active-directory-certificate-credentials)
 

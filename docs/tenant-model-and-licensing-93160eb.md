@@ -108,7 +108,7 @@ A default productive or test tenant can be obtained in one of the following case
 -   Many SAP cloud products automatically trigger a tenant delivery if a default tenant isn’t yet provisioned. For example:
     -   SAP Agent Connection
     -   SAP Asset Intelligence Network
-    -   SAP Launchpad Service
+    -   SAP Build Work Zone, standard edition
     -   SAP Customer Engagement Center
     -   SAP Enable Now
     -   SAP Identity Access Governance

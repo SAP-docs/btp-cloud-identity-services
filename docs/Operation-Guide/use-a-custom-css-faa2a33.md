@@ -14,9 +14,22 @@ To use a custom CSS for the application end-user screens and profile page you mu
 
 
 
+*Horizon*
+
+The [Horizon-Example.zip](https://help.sap.com/doc/70eec5adf04f4f57a96e350c2ff5cb95/Cloud/en-US/Horizon-Example.zip) contains a CSS file which you can use to test the Custom CSS option for the Horizon theme. After you follow the procedures for uploading and assigning the example file, the resulting logon page will be:
+
+![](images/Custom_Logon_Page_Horizon_bb0cd5f.png)
+
+> ### Note:  
+> The background image, and the tenant and application logo are configured separately, and are not part of the CSS file.
+
+*Quartz*
+
 The [Example.zip](https://help.sap.com/doc/08293312afe748bc8850898c51b9ba8a/Cloud/en-US/Example.zip) contains a CSS file which you can use to test the Custom CSS option for the Quartz theme. After you follow the procedures for uploading and assigning the example file, the resulting logon page will be:
 
 ![](images/Custom_Logon_Page_c38b8f2.png)
+
+You can download the default CSS file for the Quartz theme at [Default.zip](https://help.sap.com/doc/73e3b389575a4499a837dcbf8cdbf558/Cloud/en-US/Default.zip).
 
  <a name="loio899ba3bae3fe411aaf3402bc2dc05de9"/>
 
@@ -41,7 +54,7 @@ Upload a Quartz or Horizon CSS file for custom end-user screens or the profile p
     > ### Note:  
     > Type the name of the CSS style in the search field to filter the list items, or choose the CSS style from the list on the left.
     > 
-    > If you do not have a created CSS style in your list, you can create one by choosing the *\+Add* button on the left-hand panel.
+    > If you do not have a created CSS style in your list, you can create one by choosing the *Create* button on the left-hand panel.
 
 4.  Upload your CSS file for the respective theme \(Quartz or Horizon\).
 
@@ -113,7 +126,5 @@ Once you have a CSS file uploaded for your theme you can assign it to an applica
 
     > ### Remember:  
     > The custom CSS file is combined with the default CSS file of Identity Authentication.
-    > 
-    > You can download the default CSS file for the Quartz theme at [Default.zip](https://help.sap.com/doc/73e3b389575a4499a837dcbf8cdbf558/Cloud/en-US/Default.zip).
 
 

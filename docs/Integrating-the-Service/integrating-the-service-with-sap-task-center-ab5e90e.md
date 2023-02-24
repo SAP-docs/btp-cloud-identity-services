@@ -52,6 +52,8 @@ Identity Provisioning supports provisioning users with Global User ID for the fo
 
 -   SAP S/4HANA Cloud
 
+-   SAP S/4HANA through SAP Application Server ABAP
+
 -   SAP Marketing Cloud
 
 -   SAP Integrated Business Planning for Supply Chain

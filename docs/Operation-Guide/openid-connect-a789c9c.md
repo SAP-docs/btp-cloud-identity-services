@@ -8,6 +8,13 @@ OpenID Connect is a simple identity layer on top of the OAuth 2.0 protocol. Clie
 
 The OpenID Connect implementation of Identity Authentication supports all flow from OpenID Connect Core 1.0.
 
+In addition to the core, the service also supports the following:
+
+-   [Discovery](https://openid.net/specs/openid-connect-discovery-1_0.html)
+
+-   [Front-Channel Logout](https://openid.net/specs/openid-connect-frontchannel-1_0.html)
+
+
 Based on your scenario, choose one of the flows to see how to authorize access to your application:
 
 

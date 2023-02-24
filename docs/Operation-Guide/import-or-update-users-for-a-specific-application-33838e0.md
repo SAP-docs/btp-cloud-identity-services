@@ -390,6 +390,92 @@ The information in the *validFrom* and *validTo* columns can be processed by the
 <tr>
 <td valign="top">
 
+`userType`
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+<td valign="top">
+
+-   public
+
+-   employee
+
+-   customer
+
+-   partner
+
+-   external
+
+-   onboardee
+
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`urn:ietf:params:scim:schemas:extension:sap:2.0:User:mailVerified`
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+<td valign="top">
+
+-   true
+-   false - the default value
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `spCustomAttribute1`
 
 

@@ -175,6 +175,716 @@ Identity Authentication
 </td>
 <td valign="top">
 
+2023-02-15
+
+
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Management
+
+
+
+</td>
+<td valign="top">
+
+Application user import was enhanced with new parameters : `userType` and `urn:ietf:params:scim:schemas:extension:sap:2.0:User:mailVerified`. See [Import or Update Users for a Specific Application](Operation-Guide/import-or-update-users-for-a-specific-application-33838e0.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Applications
+
+
+
+</td>
+<td valign="top">
+
+You can return an application's configuration to its inherited state with the *Inherit from Parent* option via the administration console. See [Edit Applications](Operation-Guide/edit-applications-69d8cad.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Troubleshooting
+
+
+
+</td>
+<td valign="top">
+
+You can use the troubleshooting logs to analyze OpenID Connect issues with applications and corporate identity providers. See [Logging OpenID Connect Tokens](Monitoring-and-Reporting/logging-openid-connect-tokens-b6c42b5.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+OpenID Connect
+
+
+
+</td>
+<td valign="top">
+
+ Identity Authentication now supports the `groups` value of the `scope` parameter. See [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md) and [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow with PKCE](Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-a721157.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+OpenID Connect
+
+
+
+</td>
+<td valign="top">
+
+ Identity Authentication now supports new parameter - `scope` for the service endpoint that returns the tokens issued by the corporate identity provider received during the OpenID Connect \(OIDC\) authentication process. See [Exchanging Identity Authentication Tokens for Tokens from Corporate Identity Providers](Development/exchanging-identity-authentication-tokens-for-tokens-from-corporate-identity-providers-a66753a.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Identity Service
+
+
+
+</td>
+<td valign="top">
+
+You can use the `refresh-usage-after-renewal` parameter to define the validity of the old refresh token after requesting a new one through the refresh token grant type. See [Reference Information for the Identity Service of SAP BTP](Integrating-the-Service/reference-information-for-the-identity-service-of-sap-btp-9379444.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Administration Console
+
+
+
+</td>
+<td valign="top">
+
+You can now configure and work with Identity Provisioning in the administration console for SAP Cloud Identity Services.
+
+The entire provisioning functionality, which includes adding, enabling, disabling, deleting and resetting provisioning systems, running jobs, viewing and downloading logs, is integrated there and can be accessed in the navigation area under SAP Cloud Identity Services.
+
+The latest step in tightening SAP Cloud Identity Services integration allows you to manage your configurations in one place without the need to switch between consoles. To benefit from it, your Identity Provisioning tenant must run on SAP Cloud Identity Services infrastructure.
+
+See [Configure Identity Provisioning in SAP Cloud Identity Services Administration Console](https://help.sap.com/docs/IDENTITY_PROVISIONING/f48e822d6d484fa5ade7dda78b64d9f5/03223babed91493c9305e40269e909d2.html?state=DRAFT&version=Cloud).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+
+
+</td>
+<td valign="top">
+
+ Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
 2023-02-09
 
 

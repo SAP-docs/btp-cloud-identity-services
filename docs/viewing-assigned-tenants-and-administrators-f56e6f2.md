@@ -12,6 +12,8 @@ You can view all SAP Cloud Identity Services tenants that are assigned to your c
 
 The SAP Cloud Identity Services - Tenants application shows which are the Identity Authentication and Identity Provisioning tenants that are assigned to a customer ID and who are the tenant administrators of these tenants. The information also includes the status of the administrator. Only administrators that have the *Manage Tenant Configuration* role are displayed.
 
+The default tenants, one test and productive tenant per customer, are provided regardless of the number of contracts signed in which SAP Cloud Identity Services is included or bundled. Additional productive or test tenants beyond the initial ones must be purchased separately. For more information, see [Tenant Model and Licensing](tenant-model-and-licensing-93160eb.md).
+
 
 
 <a name="loiof56e6f24e373404087d6a1a9a13515a2__steps_ztk_cn5_mqb"/>

@@ -24,6 +24,7 @@ The syntax of the parameters is as follows:
 			"token-validity": 1800,
 			"refresh-validity": 7776000,
 			"refresh-parallel" : 3
+			"refresh-usage-after-renewal" : "off",
 		}
 	},
 	"consumed-services": [{
@@ -194,6 +195,28 @@ The default value is 43200 seconds, which translates to 12 hours.
 Determines the number of tokens that can be issued for the same session in parallel. Imagine you're logged on to the application through a web interface and a command-line interface in parallel. Then you would want this parameter to be set to 2. The value can range from 1 to 5.
 
 The default value is 1.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`refresh-usage-after-renewal`
+
+
+
+</td>
+<td valign="top">
+
+Defines the validity of the old refresh token after requesting a new one through the refresh token grant type. The attribute supports the following values:
+
+-   `off` - The new refresh token immediately invalidates the old one.
+
+-   `online` - The new refresh token is created and the old one is still active for 5 minutes.
+
+-   `mobile` - The new and old refresh token are valid during the configured refresh token life time.
 
 
 

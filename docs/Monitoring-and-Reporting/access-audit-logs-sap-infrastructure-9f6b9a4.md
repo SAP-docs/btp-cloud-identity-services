@@ -298,7 +298,7 @@ You can filter the audit logs by time and/or categories. The categories that you
 > ### Remember:  
 > The URI for the GET request looks like this:
 > 
->  <code>https://api.&lt;SAP BTP Host&gt;/auditlog/v1/accounts/&lt;Tenant ID&gt;/AuditLogRecordsIds?$filter=(Time ge '2018-05-17T13.00.00' and Time le '2018-05-18T05.00.00')and Category eq '&lt;category&gt;'</code>
+>  <code>https://api.&lt;SAP BTP Host&gt;/auditlog/v1/accounts/&lt;Tenant ID&gt;/AuditLogRecordsIds?$filter=(Time ge '2018-05-17T13.00.00' and Time le '2018-05-18T05.00.00') and Category eq '&lt;category&gt;'</code>
 > 
 > The timestamp is in Coordinated Universal Time \(UTC\).
 > 

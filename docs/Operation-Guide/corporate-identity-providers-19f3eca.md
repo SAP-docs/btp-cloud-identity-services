@@ -25,6 +25,8 @@ A proxy relationship involves the following participants:
     A service provider hosts a service that users want to access. This service provider trusts the identity provider of the identity provider proxy.
 
 
+![](images/Proxy_Mode_Diagram_ae2a8aa.png)
+
 There is no direct trust relationship between the authenticating identity provider and the service provider that the user is trying to access.
 
 Identity Authentication acting as a proxy can use a SAML 2.0 or an OpenID Connect identity provider as an external authenticating authority for the application. The choice of one or the other protocol depends on your scenario and needs.

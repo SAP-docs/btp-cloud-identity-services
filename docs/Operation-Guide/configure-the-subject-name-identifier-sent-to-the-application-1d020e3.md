@@ -8,7 +8,7 @@ The `Subject Name Identifier` is a profile attribute that Identity Authenticatio
 
 ## Context
 
-You can choose an attribute form a predefined list for basic configuration, or you can set an attribute with dynamic value for advanced configuration.
+You can choose an attribute from a predefined list for basic configuration, or you can set an attribute with dynamic value for advanced configuration.
 
 For both basic and advanced configuration you can also configure a fallback subject name identifier. The fallback subject name identifier is used only when the regular identifier is not available. If the regular identifier is not available, and you haven't set a fallback attribute, the authentication of the user fails.
 

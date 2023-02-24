@@ -394,7 +394,7 @@ string
 
 The `login_hint` parameter facilitates the user when he or she is known to the service provider \(SP\). Thus it prevents the user from re-typing the user identifier on the logon or conditional screen.
 
-Supported values are the allowed logon identifiers for the users. The options are *\(For SAML 2.0User ID*, *Login Name*, and *E-Mail*. For more information, see [Configure Allowed Logon Identifiers](configure-allowed-logon-identifiers-3adf1ff.md) .
+Supported values are the allowed logon identifiers for the users. The options are *User ID*, *Login Name*, and *E-Mail* \(For SAML 2.0\). For more information, see [Configure Allowed Logon Identifiers](configure-allowed-logon-identifiers-3adf1ff.md) .
 
 
 

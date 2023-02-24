@@ -19,7 +19,7 @@ The tables below show the pre-configured settings for your system that you have 
 > 
 > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
 
-**ABAP tenants provisioned before 2022.8 release**
+**ABAP tenants provisioned before SAP S/4HANA Cloud 2208**
 
 
 <table>
@@ -190,7 +190,7 @@ Identity Authentication
 </tr>
 </table>
 
-**ABAP tenants provisioned from 2022.8 release onwards**
+**ABAP tenants provisioned from SAP S/4HANA Cloud 2208 onwards**
 
 
 <table>
@@ -433,9 +433,7 @@ SAP Data Warehouse Cloud embedded
 </table>
 
 > ### Note:  
-> The attribute that is not used for identification is optional in the ABAP user record. In other words, in tenants provisioned before 2022.8, ABAP user records don't need to have an e-mail address, or several users may share the same e-mail address. In ABAP tenants provisioned from 2022.8 onwards, ABAP user records don't need to have a login name.
-> 
-> In all cases, the same identifying attribute \(login name or e-mail address\) is used for both ABAP and SAP Analytics Cloud. User records must be created in ABAP and are then automatically replicated to SAP Analytics Cloud:
+> The same identifying attribute \(login name or e-mail address\) is used for both ABAP and SAP Analytics Cloud. User records must be created in ABAP and are then automatically replicated to SAP Analytics Cloud:
 
 -   Replication from SAP S/4HANA Cloud to SAP Analytics Cloud happens via a pre-integrated Identity Provisioning tenant \(communication scenario *SAP\_COM\_0193*\).
 -   Replication from SAP Integrated Business Planning to SAP Analytics Cloud happens via the SAP-managed communication scenario *SAP\_COM\_1187*.

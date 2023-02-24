@@ -32,15 +32,13 @@ Applications that have a parent application configured can't be selected as pare
 
 An application that is chosen as a parent application to another can't have a parent application assigned for it.
 
-Newly created OpenID Connect applications with an assigned parent application will inherit all the configurations from the parent with the except of the `Client ID` and `Dependencies`.
-
-Newly created SAML 2.0 applications with an assigned parent application will inherit all the configurations from the parent.
+Newly created applications with an assigned parent application will inherit all the configurations from the parent with the except for the `Client ID` and `Secrets`.
 
 The inherited configurations will be marked as such.
 
 ![](images/ParentChildApp_2baee98.png)
 
-Existing applications that have a parent application assigned to them will inherit only the configurations that have not been changed including the configurations that are made at the creation of the application. The configurations that are changed, and the configurations made at the creation of the application are not inherited. See the list below for the configurations made at the creation of the application:
+Existing applications that have a parent application assigned to them will inherit only the configurations that have not been changed, including the configurations that are made at the creation of the application. The configurations that are changed, and the configurations made at the creation of the application are not inherited. See the list below for the configurations made at the creation of the application:
 
 -   Protocol
 -   Subject Name Identifier
@@ -57,6 +55,9 @@ Existing applications that have a parent application assigned to them will inher
 -   User Attributes for Access
 -   Token Url Separator
 -   Reload Parent Page
+
+> ### Tip:  
+> A child application can override all the configurations inherited from the parent application. If you change a configuration in the child that is inherited from the parent, and after that you decide to return to the inherited one, go to the respective configuration and choose the *Inherit from Parent* button on the top right-hand corner of the screen.
 
 
 

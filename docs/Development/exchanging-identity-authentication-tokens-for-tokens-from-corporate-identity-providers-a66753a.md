@@ -224,6 +224,43 @@ Request body
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+`scope`
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+<td valign="top">
+
+string
+
+
+
+</td>
+<td valign="top">
+
+Overwrites the default scopes defined in the Corporate IdP configuration. This allows to receive only specific scopes from the IdP.
+
+
+
+</td>
+<td valign="top">
+
+Request body
+
+
+
+</td>
+</tr>
 </table>
 
 

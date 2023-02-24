@@ -38,6 +38,13 @@ How it is sent to the corporate IdP
 
 
 </th>
+<th valign="top">
+
+Additional Info
+
+
+
+</th>
 </tr>
 <tr>
 <td valign="top">
@@ -51,6 +58,13 @@ User Input
 
 -   Login Hint URL parameter - the login hint is sent in the URL as `login_hint parameter`
 -   Authentication Request - the login hint is sent in the SAML 2.0 authentication request as <`Subject`\> attribute \(for SAML 2.0 only\)
+
+
+
+</td>
+<td valign="top">
+
+As `login_hint` will be sent the user identifier provided at the conditional authentication sign in screen of Identity Authentication.
 
 
 
@@ -71,6 +85,13 @@ no login hint parameter is sent
 
 
 </td>
+<td valign="top">
+
+The user will need to provide user identifier and password at the corporate identity provider sign in screen.
+
+
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -87,6 +108,18 @@ User Attributes
 
 -   Login Hint URL parameter - the login hint is sent in the URL as `login_hint parameter`
 -   Authentication Request - the login hint is sent in the SAML 2.0 authentication request as <`Subject`\> attribute \(for SAML 2.0 only\)
+
+
+
+</td>
+<td valign="top">
+
+As `login_hint` will be sent one of the following:
+
+-   Login Name
+-   E-Mail
+
+.
 
 
 

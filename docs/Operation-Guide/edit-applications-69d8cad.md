@@ -583,7 +583,7 @@ To edit the application configurations, proceed as follows:
 
     Optional.
 
-    Existing applications that have a parent application assigned to them will inherit only the configurations that have not been changed including the configurations that are made at the creation of the application. The configurations that are changed, and the configurations made at the creation of the application are not inherited. See the list below for the configurations made at the creation of the application:
+    Existing applications that have a parent application assigned to them will inherit only the configurations that have not been changed, including the configurations that are made at the creation of the application. The configurations that are changed, and the configurations made at the creation of the application are not inherited. See the list below for the configurations made at the creation of the application:
 
     -   Protocol
     -   Subject Name Identifier
@@ -600,6 +600,9 @@ To edit the application configurations, proceed as follows:
     -   User Attributes for Access
     -   Token Url Separator
     -   Reload Parent Page
+
+    > ### Tip:  
+    > A child application can override all the configurations inherited from the parent application. If you change a configuration in the child that is inherited from the parent, and after that you decide to return to the inherited one, go to the respective configuration and choose the *Inherit from Parent* button on the top right-hand corner of the screen.
 
 
     
