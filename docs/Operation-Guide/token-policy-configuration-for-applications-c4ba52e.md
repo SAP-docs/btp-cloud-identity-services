@@ -206,7 +206,7 @@ To configure the token policy, proceed as follows:
 
     Use the slider or provide a number in the input field above the slider.
 
-7.  If needed, use the reset button to set to the default value.
+7.  **Optional:** If needed, use the reset button to set to the default value.
 
 8.  Save your changes.
 

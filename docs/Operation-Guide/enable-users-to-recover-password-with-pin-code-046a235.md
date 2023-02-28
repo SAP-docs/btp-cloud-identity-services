@@ -199,11 +199,11 @@ To configure PIN code option in the administration console, follow the procedure
 
 6.  Under *Settings*, choose the minimum required length of the PIN code.
 
-7.  Select the *Show "Setup later"* check box.
+7.  **Optional:** Select the *Show "Setup later"* check box.
 
     When selected, the end users see the option to set up the PIN code later.
 
-8.  Select the *Show "Don't ask again"* check box.
+8.  **Optional:** Select the *Show "Don't ask again"* check box.
 
     When selected, the end users see the option to hide the prompt to set up their PIN code.
 

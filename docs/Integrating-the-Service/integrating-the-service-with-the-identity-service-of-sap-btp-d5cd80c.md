@@ -45,5 +45,5 @@ Each Identity instance has its own OAuth client for the Identity Authentication 
 
 [Getting Started with the Identity Service of SAP BTP](getting-started-with-the-identity-service-of-sap-btp-066bda8.md "To create OpenID Connect (OIDC) applications in the Identity Authentication service using SAP Cloud Service Management service, instantiate the Identity service and bind your service instance to an application. The Identity service automates the manual creation of Identity Authentication OIDC applications.")
 
-[Reference Information for the Identity Service of SAP BTP](reference-information-for-the-identity-service-of-sap-btp-9379444.md "Parameters enable you to customize the configuration of the Identity service.")
+[Reference Information for the Identity Service of SAP BTP](reference-information-for-the-identity-service-of-sap-btp-9379444.md "Properties enable you to customize the configuration of the Identity service.")
 

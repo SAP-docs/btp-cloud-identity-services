@@ -56,7 +56,7 @@ The *Valid From* and *Valid To* fields are empty if no validity dates are set fo
 
     This operation opens the *User Details* view.
 
-3.  Choose the *User Details* tab.
+3.  **Optional:** Choose the *User Details* tab.
 
     1.  Expand the *Personal Information*, *Employee Information*, *Company Information*, *Custom Attributes* sections if collapsed in the *User Details* tab.
 
@@ -71,9 +71,9 @@ The *Valid From* and *Valid To* fields are empty if no validity dates are set fo
         If the operation is successful, the system displays the message ***User <user ID\> updated***.
 
 
-4.  Choose the *Applications* tab, to view details specific for the applications that the user has logged on, and the applications that the user was imported to via a CSV file import.
+4.  **Optional:** Choose the *Applications* tab, to view details specific for the applications that the user has logged on, and the applications that the user was imported to via a CSV file import.
 
-5.  Choose the *Legal* tab to view audit information about the user, such as the policies accepted by him or her, the last log on, and password related information.
+5.  **Optional:** Choose the *Legal* tab to view audit information about the user, such as the policies accepted by him or her, the last log on, and password related information.
 
     > ### Remember:  
     > The *Last Log On* and *Password Login Time* fields are updated once per 24 hours.
@@ -83,7 +83,7 @@ The *Valid From* and *Valid To* fields are empty if no validity dates are set fo
     > 
     > The information about when the user has accepted a particular document is available for documents accepted after May 16, 2018.
 
-6.  Choose the *Authentication* tab to manage the two-factor authentication for the user. You have the following options:
+6.  **Optional:** Choose the *Authentication* tab to manage the two-factor authentication for the user. You have the following options:
 
 
     <table>
@@ -146,7 +146,7 @@ The *Valid From* and *Valid To* fields are empty if no validity dates are set fo
     </tr>
     </table>
     
-7.  Choose the *User Groups* tab to manage the group assignments of the user.
+7.  **Optional:** Choose the *User Groups* tab to manage the group assignments of the user.
 
     You can see the user groups assigned to the user. You have two options:
 

@@ -55,7 +55,7 @@ To edit or add an e-mail template, follow the procedure below:
 
 3.  Choose the list item of the template set you want to edit.
 
-4.  To change the name of the template set, choose it.
+4.  **Optional:** To change the name of the template set, choose it.
 
 5.  Select the tab signifying the process, which you want to add or change the template for.
 

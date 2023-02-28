@@ -159,7 +159,7 @@ To change the validity period of the initial password and the links, follow the 
 
 3.  Choose the *Initial Password and E-Mail Link Validity* list item.
 
-4.  \(For e-mail link validity\) Under *Configure E-Mail Link Validity*, choose an application process and set the validity period of the e-mail link for it.
+4.  **Optional:** \(For e-mail link validity\) Under *Configure E-Mail Link Validity*, choose an application process and set the validity period of the e-mail link for it.
 
     1.  From the dropdown list on the right, select either *Days* or *Hours*.
 
@@ -171,7 +171,7 @@ To change the validity period of the initial password and the links, follow the 
 
     You can repeat the step for all processes.
 
-5.  \(For initial password validity\) Under *Configure Initial Password Validity*, set a value for the validity of the initial password.
+5.  **Optional:** \(For initial password validity\) Under *Configure Initial Password Validity*, set a value for the validity of the initial password.
 
 6.  Save your changes.
 

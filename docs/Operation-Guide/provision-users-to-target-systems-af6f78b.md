@@ -532,7 +532,7 @@ The tenant administrator can choose which of the users to be provisioned to the 
 
     The system displays the first 20 users in the tenant sorted by their user ID number.
 
-3.  You can choose one of the following:
+3.  **Optional:** You can choose one of the following:
 
     **Search Options**
 

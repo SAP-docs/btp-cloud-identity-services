@@ -28,7 +28,7 @@ To list all administrators, proceed as follows:
     > ### Tip:  
     > Type the name of the administrator in the search field to filter the list items.
 
-4.  To change the name of the system as administrator choose the `Rename` button and enter the new display name.
+4.  **Optional:** To change the name of the system as administrator choose the `Rename` button and enter the new display name.
 
     > ### Remember:  
     > You can change only the name of the system.

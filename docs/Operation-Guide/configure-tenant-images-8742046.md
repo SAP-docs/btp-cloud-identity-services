@@ -83,7 +83,7 @@ To configure a custom tenant logo a background image, and or a favicon, follow p
 
 3.  Choose the *Logo, Background Image and Favicon* list item.
 
-4.  Choose the *Logo* tab, upload an image, and save your configuration.
+4.  **Optional:** Choose the *Logo* tab, upload an image, and save your configuration.
 
     If the operation is successful, you receive the following message: ***Tenant logo updated***.
 
@@ -92,7 +92,7 @@ To configure a custom tenant logo a background image, and or a favicon, follow p
     > 
     > If this operation is successful, you receive the following message: ***Default logo restored***.
 
-5.  Choose the *Background Image* tab, upload an image, and save your configuration.
+5.  **Optional:** Choose the *Background Image* tab, upload an image, and save your configuration.
 
     If the operation is successful, you can see the image applied together with the following message: ***Tenant Background Image updated***.
 
@@ -101,7 +101,7 @@ To configure a custom tenant logo a background image, and or a favicon, follow p
     > 
     > If this operation is successful, you receive the following message: ***Background image deleted***.
 
-6.  Choose the *Favicon* tab, upload an image, and save your configuration.
+6.  **Optional:** Choose the *Favicon* tab, upload an image, and save your configuration.
 
     If the operation is successful, you can see the image applied together with the following message: Tenant Favicon updated.
 

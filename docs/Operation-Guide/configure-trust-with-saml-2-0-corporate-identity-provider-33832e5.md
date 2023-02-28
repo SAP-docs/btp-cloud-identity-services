@@ -59,7 +59,7 @@ You have the SAML 2.0 metadata of Identity Authentication. For more information 
     > 
     > To see how to download the SAML 2.0 metadata of Identity Authentication read [Tenant SAML 2.0 Configuration](tenant-saml-2-0-configuration-e81a19b.md).
 
-2.  Download the corporate identity provider SAML 2.0 metadata.
+2.  **Optional:** Download the corporate identity provider SAML 2.0 metadata.
 
     You need the corporate SAML 2.0 metadata for the setup of the trust on Identity Authentication. Optionally, you can make the configurations manually.
 
@@ -236,7 +236,7 @@ Set up trust with a corporate identity provider in the administration console fo
     </tr>
     </table>
     
-6.  Choose the digest algorithm for signing outgoing messages from the dropdown list in the *Algorithm* section. You have the following options:
+6.  **Optional:** Choose the digest algorithm for signing outgoing messages from the dropdown list in the *Algorithm* section. You have the following options:
 
     -   *SHA-1* 
     -   *SHA-256* - the default option
@@ -246,7 +246,7 @@ Set up trust with a corporate identity provider in the administration console fo
 
     -   *SHA-512*
 
-7.  Sign SAML 2.0 authentication requests. You have the following options:
+7.  **Optional:** Sign SAML 2.0 authentication requests. You have the following options:
 
 
     <table>
@@ -300,7 +300,7 @@ Set up trust with a corporate identity provider in the administration console fo
     </tr>
     </table>
     
-8.  Enable or disable the *Include scoping* attribute to include or exclude the Scoping element in the SAML 2.0 request.
+8.  **Optional:** Enable or disable the *Include scoping* attribute to include or exclude the Scoping element in the SAML 2.0 request.
 
     > ### Remember:  
     > The default setting for the *Include scoping* is enabled. The Scoping element sent in the SAML 2.0 request is 1.

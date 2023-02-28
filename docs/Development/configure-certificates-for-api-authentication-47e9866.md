@@ -39,7 +39,7 @@ Identity Authentication supports SAP Passport CA as trusted certificate authorit
 
 6.  Choose the *Add* button in the *Certificates for API Authentication* section.
 
-7.  Provide description for the certificate.
+7.  **Optional:** Provide description for the certificate.
 
 8.  Choose one of the following options:
 

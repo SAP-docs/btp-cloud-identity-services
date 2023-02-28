@@ -125,14 +125,28 @@ The configuration of the OAuth authentication scenario is done in the SAP BTP co
     </td>
     <td valign="top">
 
-    The *SCIM URL* should be in the following pattern: `https://ipsproxy<provider_subaccount>-<consumer_subaccount>.<sap_cp_domain>/ipsproxy/api/v1/systems/<Identity_Authentication_source_system_id>/entities/user`
+    The *SCIM URL* should be in the following pattern:
 
-    For example: `https://ipsproxyxyz123az-abcd456qw.hana.ondemand.com/ipsproxy/api/v1/systems/12ab12345-1234-a1b2-12ab-12a34bcde678d/entities/user`
+    -   **When your Identity Provisioning bundle or standalone tenant is running on the infrastructure of SAP Cloud Identity Services**
 
-    > ### Tip:  
-    > -   You can copy the basic part of the URL from the cockpit. Under your subaccount, go to *Applications* \> *Subscriptions* \> *Subscribed Java Applications* \> *ipsproxy*. The *Application URL* is the basic part of the URL.
-    > 
-    > -   The `source_system_id` is a randomly generated string of numbers and letters. You can see this ID at the end of the URL, when the respective source system is chosen in Identity Provisioning.
+        `https://<Identity Authentication-host>/ipsproxy/service/api/v1/systems/<source_system_id>/entities/user`
+
+        For example: `https://mytenantaccounts.ondemand.com/ipsproxy/api/v1/systems/12ab12345-6789-e1b2-12ib-12a34iade678d/entities/user`
+
+        > ### Tip:  
+        > The `source_system_id` is a randomly generated string of numbers and letters. You can see this ID at the end of the URL, when the respective source system is chosen in Identity Provisioning.
+
+    -   **When Identity Provisioning bundle or standalone tenant is running on the SAP BTP, Neo environment**
+
+        `https://ipsproxy<provider_subaccount>-<consumer_subaccount>.<sap_cp_domain>/ipsproxy/api/v1/systems/<Identity_Authentication_source_system_id>/entities/user`
+
+        For example: `https://ipsproxyxyz123az-abcd456qw.hana.ondemand.com/ipsproxy/api/v1/systems/12ab12345-1234-a1b2-12ab-12a34bcde678d/entities/user`
+
+        > ### Tip:  
+        > -   You can copy the basic part of the URL from the cockpit. Under your subaccount, go to *Applications* \> *Subscriptions* \> *Subscribed Java Applications* \> *ipsproxy*. The *Application URL* is the basic part of the URL.
+        > 
+        > -   The `source_system_id` is a randomly generated string of numbers and letters. You can see this ID at the end of the URL, when the respective source system is chosen in Identity Provisioning.
+
 
 
     
@@ -220,13 +234,11 @@ The configuration of the OAuth authentication scenario is done in the SAP BTP co
         Identity Authentication supports SAP Passport CA as trusted certificate authority \(CA\).
 
 
-    > ### Note:  
-
 6.  Save your changes.
 
     If the operation is successful, the system displays the message `System <name of system> configuration updated.`
 
-7.  Choose *Test Connection* before executing the provisioning.
+7.  **Optional:** Choose *Test Connection* before executing the provisioning.
 
     If the setup is correct, the following message is displayed: *"Connection to the selected target system was established successfully."*
 
@@ -252,4 +264,8 @@ Now go to your system, the one for which you have created a target connector in 
 [Provision Users to Target Systems](provision-users-to-target-systems-af6f78b.md "Tenant administrators can provision users of Identity Authentication to SAP Jam and Identity Provisioning target systems target system.")
 
 [Delete Target System](delete-target-system-6372e9a.md "As a tenant administrator, you can delete one or more target systems in a tenant of Identity Authentication.")
+
+[Real-Time Provisioning in SAP Cloud Identity Infrastructure](https://help.sap.com/docs/IDENTITY_PROVISIONING/f48e822d6d484fa5ade7dda78b64d9f5/076758707f72491dbc8020b746845fac.html?version=Cloud)
+
+[Real-Time Provisioning in Neo Environment](https://help.sap.com/docs/IDENTITY_PROVISIONING/f48e822d6d484fa5ade7dda78b64d9f5/45754b33edea45f9bb8bf713b1d10ef8.html?version=Cloud)
 

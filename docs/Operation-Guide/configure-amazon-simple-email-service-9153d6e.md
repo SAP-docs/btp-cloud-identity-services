@@ -45,7 +45,7 @@ To configure the mail server, follow the procedure below:
 
 4.  Choose the *Amazon Simple Email Service* radio-button
 
-5.  To use the Amazon Simple Email Service with custom domain, аdd a valid domain name in the dialog box that appears.
+5.  **Optional:** To use the Amazon Simple Email Service with custom domain, аdd a valid domain name in the dialog box that appears.
 
     1.  Copy the TXT and CNAME records that are created in the administration console for SAP Cloud Identity Services and enter them in the DNS server.
 

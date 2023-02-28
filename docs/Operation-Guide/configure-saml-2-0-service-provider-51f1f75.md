@@ -198,13 +198,13 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     > ### Restriction:  
     > The *Metadata File*, *Name*, *Assertion Consumer Service Endpoint*, and *Single Logout Endpoint* fields are not editable for the system applications.
 
-7.  Choose the digest algorithm for signing outgoing messages from the dropdown list in the *Algorithm* section. You have the following options:
+7.  **Optional:** Choose the digest algorithm for signing outgoing messages from the dropdown list in the *Algorithm* section. You have the following options:
 
     -   *SHA-1*
     -   *SHA-256* - the default option \(for applications created after Jun 28, 2021\)
     -   *SHA-512*
 
-8.  Configure the signing options for the application. You have the following possibilities:
+8.  **Optional:** Configure the signing options for the application. You have the following possibilities:
 
 
     <table>
@@ -306,7 +306,7 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     </tr>
     </table>
     
-9.  Configure the encryption of the SAML 2.0 response
+9.  **Optional:** Configure the encryption of the SAML 2.0 response
 
     1.  Under *Encryption Certificate* add a certificate, if there is no encryption certificates added or you want to add a new certificate.
 
@@ -321,7 +321,7 @@ To configure a SAML 2.0 trusted service provider in the administration console f
         The method for encryption is `aes-128-cbc`.
 
 
-10. \(If you added second signing certificate in tenant settings\) Under *Identity Provider Certificate*, choose the certificate to be used.
+10. **Optional:** \(If you added second signing certificate in tenant settings\) Under *Identity Provider Certificate*, choose the certificate to be used.
 
     > ### Tip:  
     > When the default identity provider certificate is changed with a new one, and the old one is not used anymore, we recommend you to delete the old certificate.

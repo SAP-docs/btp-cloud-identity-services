@@ -28,7 +28,7 @@ As a tenant administrator, you can list and view information about the users in 
 
     This operation opens a list of the user groups in the tenant.
 
-3.  Type a *Name* or *Display name* of a group in the search field in order to filter the list items.
+3.  **Optional:** Type a *Name* or *Display name* of a group in the search field in order to filter the list items.
 
 4.  Choose a group from the list on the left.
 

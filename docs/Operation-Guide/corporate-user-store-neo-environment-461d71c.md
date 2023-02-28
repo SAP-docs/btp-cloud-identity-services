@@ -204,7 +204,7 @@ The configuration of SAP BTP depends on the type of the user store. You have two
     > </tr>
     > </table>
 
-7.  Include additional attributes.
+7.  **Optional:** Include additional attributes.
 
     > ### Note:  
     > You can add the `employeeNumber`, `division`, `department`, and `organization` attributes that are defined in the SCIM Enterprise User Schema Extension.

@@ -43,9 +43,9 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
 
     The *SAML 2.0 Configuration* page that opens displays the name of the identity provider, its endpoints, and its signing certificate.
 
-4.  To download the identity provider's metadata, press the *Download Metadata File* button.
+4.  **Optional:** To download the identity provider's metadata, press the *Download Metadata File* button.
 
-5.  To change the name of the identity provider, choose the *Name* field, select the name from the dropdown list, and save your changes.
+5.  **Optional:** To change the name of the identity provider, choose the *Name* field, select the name from the dropdown list, and save your changes.
 
     The drop-down list offers the following options:
 
@@ -157,7 +157,7 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
 
     If the change of the name is successful, the system displays the message ***Tenant <name of tenant\> updated***.
 
-6.  Update your signing certificate. You can choose from the following options:
+6.  **Optional:** Update your signing certificate. You can choose from the following options:
 
     -   To regenerate the existing certificate with new validity, reusing the same private key, choose *Add* \> *Regenerate* \> *Next Step* \> *choose validity from the drop down* \> *Next Step* \> *Finish* \> *Save*.
 

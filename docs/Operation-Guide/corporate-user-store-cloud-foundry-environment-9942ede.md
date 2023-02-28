@@ -416,7 +416,7 @@ cf-eu10 - Europe \(Frankfurt\)
     > </tr>
     > </table>
 
-7.  Include additional attributes.
+7.  **Optional:** Include additional attributes.
 
     > ### Note:  
     > You can add the `employeeNumber`, `division`, `department`, and `organization` attributes that are defined in the SCIM Enterprise User Schema Extension.

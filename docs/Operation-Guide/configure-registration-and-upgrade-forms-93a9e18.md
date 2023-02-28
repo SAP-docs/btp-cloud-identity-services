@@ -172,7 +172,7 @@ To configure profile attributes, proceed as follows:
 
     If the operation is successful, you receive the message ***Registration form updated***.
 
-7.  To change the phone country selection, choose *Tenant Settings**Tenant Default Values*, select the desired country from the drop-down and save your changes.
+7.  **Optional:** To change the phone country selection, choose *Tenant Settings**Tenant Default Values*, select the desired country from the drop-down and save your changes.
 
     > ### Note:  
     > The phone country selection appears on the registration and upgrade forms, the verify phone screen, two-factor authentication with SMS screen, and also on the profile page.

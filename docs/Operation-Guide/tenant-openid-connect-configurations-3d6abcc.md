@@ -134,9 +134,9 @@ To view or change the tenant OpenID Connect configurations, proceed as follows:
 
     The *OpenID Connect Configuration* page that opens displays the name of the identity provider, its endpoints, signing certificate and token policy.
 
-4.  To define the token policy, use the slider or provide a number in the input field above the slider. If needed, use the reset button to set to the default value.
+4.  **Optional:** To define the token policy, use the slider or provide a number in the input field above the slider. If needed, use the reset button to set to the default value.
 
-5.  To change the name of the identity provider, choose the *Name* field, select the name from the dropdown list, and save your changes.
+5.  **Optional:** To change the name of the identity provider, choose the *Name* field, select the name from the dropdown list, and save your changes.
 
     Choose from the following options:
 
@@ -248,7 +248,7 @@ To view or change the tenant OpenID Connect configurations, proceed as follows:
 
     If the change of the name is successful, the system displays the message ***Tenant <name of tenant\> updated***.
 
-6.  Update your signing certificate. You can choose from the following options:
+6.  **Optional:** Update your signing certificate. You can choose from the following options:
 
     -   To regenerate the existing certificate with new validity, reusing the same private key, choose *Add* \> *Regenerate* \> *Next Step* \> *choose validity from the drop down* \> *Next Step* \> *Finish* \> *Save*.
 

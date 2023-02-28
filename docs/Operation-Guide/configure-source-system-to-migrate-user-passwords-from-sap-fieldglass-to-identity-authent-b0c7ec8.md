@@ -222,7 +222,7 @@ To configure a source system, follow the steps below:
 
     The system displays the message ***Source system <id of the system\> created***.
 
-6.  Choose *Test Connection* to test the source system configuration.
+6.  **Optional:** Choose *Test Connection* to test the source system configuration.
 
 
 **Related Information**  

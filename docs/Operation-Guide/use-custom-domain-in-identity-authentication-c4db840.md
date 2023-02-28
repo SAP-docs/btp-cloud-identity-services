@@ -434,7 +434,7 @@ Identity Authentication allows you to use a custom domain that is different from
 
     1.  Select the size of the certificate key. The supported key sizes are 2048, 3072 and 4096. The default value is 3072.
 
-    2.  Add an additional subject alternative name to the CSR.
+    2.  **Optional:** Add an additional subject alternative name to the CSR.
 
 
     > ### Note:  

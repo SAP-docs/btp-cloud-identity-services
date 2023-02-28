@@ -21,16 +21,16 @@ If you don't know your current password, follow the *Forgot Password* link in th
 
 2.  Follow the *Forgot Password* link.
 
-3.  Provide your e-mail address and press the *Send* button.
+3.  **Optional:** Provide your e-mail address and press the *Send* button.
 
     An e-mail with a link to a page where you can reset your password will be sent to you. The e-mail might take a few minutes to reach your inbox.
 
-4.  Follow the link to reset your password using Security Questions and provide the required information and answers.
+4.  **Optional:** Follow the link to reset your password using Security Questions and provide the required information and answers.
 
     > ### Remember:  
     > To use this option, you must have configured the security questions section in your profile page.
 
-5.  Follow the link to reset your password using Pin code and provide the required information.
+5.  **Optional:** Follow the link to reset your password using Pin code and provide the required information.
 
     > ### Remember:  
     > To use this option, you must have configured the PIN code section in your profile page.

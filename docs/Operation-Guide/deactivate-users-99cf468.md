@@ -26,7 +26,7 @@ As a tenant administrator, you can deactivate users in the administration consol
 
     ![](images/User_Details_in_Administration_Console_45ebcd1.png)
 
-5.  Choose the *User Details* tab.
+5.  **Optional:** Choose the *User Details* tab.
 
     1.  Expand the *Personal Information*
 

@@ -65,7 +65,7 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
 
     At the top of the page you can view the administrative and license relevant information of the tenant.
 
-3.  Configure the authentication rules. Choose one of the following \(optional\):
+3.  **Optional:** Configure the authentication rules. Choose one of the following \(optional\):
 
 
     <table>
@@ -154,7 +154,7 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
     > ### Note:  
     > By default any user can log on from any IP.
 
-4.  Configure the *Default Action*:
+4.  **Optional:** Configure the *Default Action*:
 
     -   *Allow* - Any user can log on from any IP. This is te default choice.
     -   *Deny* - Nobody can log on.

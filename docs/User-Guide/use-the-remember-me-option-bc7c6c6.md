@@ -23,7 +23,7 @@ If you enable the *Remember me* functionality, the application saves a cookie in
 
 2.  Provide your credentials and select the *Remember me* checkbox.
 
-3.  Provide a passcode if required.
+3.  **Optional:** Provide a passcode if required.
 
 
 

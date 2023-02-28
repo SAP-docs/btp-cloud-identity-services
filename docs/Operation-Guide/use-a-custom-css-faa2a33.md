@@ -71,7 +71,7 @@ Upload a Quartz or Horizon CSS file for custom end-user screens or the profile p
 
     You can download the CSS file for further reference by choosing the *Download* button.
 
-6.  To preview the implementation of the CSS on the Logon page, right click the preview link with title *CSS\_Test\_View* and open it in a new private or incognito tab.
+6.  **Optional:** To preview the implementation of the CSS on the Logon page, right click the preview link with title *CSS\_Test\_View* and open it in a new private or incognito tab.
 
 
  <a name="loioe9d7d8a6196b4e82af3365b7092bee27"/>

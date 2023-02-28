@@ -25,7 +25,7 @@ You can enter up to 1000 passwords in the list. Each password can be up to 256 c
 
 3.  Choose the *Password* tab.
 
-4.  Enable the switch next to the options that you want to restrict:
+4.  **Optional:** Enable the switch next to the options that you want to restrict:
 
 
     <table>
@@ -95,7 +95,7 @@ You can enter up to 1000 passwords in the list. Each password can be up to 256 c
     </tr>
     </table>
     
-5.  Choose *Create* and enter the password exclude terms as free text in the field.
+5.  **Optional:** Choose *Create* and enter the password exclude terms as free text in the field.
 
     For multiple values, use comma between them.
 

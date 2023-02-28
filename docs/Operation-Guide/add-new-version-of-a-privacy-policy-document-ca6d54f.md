@@ -47,6 +47,6 @@ To update an existing privacy policy document you must add a new version for eac
 
 5.  Repeat the procedure for all languages that have active versions.
 
-6.  To make the draft version active, choose *Activate* in the details view on the top right-hand corner.
+6.  **Optional:** To make the draft version active, choose *Activate* in the details view on the top right-hand corner.
 
 

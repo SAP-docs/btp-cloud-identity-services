@@ -2,17 +2,17 @@
 
 # Reference Information for the Identity Service of SAP BTP
 
-Parameters enable you to customize the configuration of the Identity service.
+Properties enable you to customize the configuration of the Identity service.
 
 
 
 <a name="loio9379444abf3f4e2cbaade7c4001df381__section_sy4_ffh_wnb"/>
 
-## Service Parameters
+## Service Properties
 
-Provide parameters in JSON format.
+Provide properties in JSON format.
 
-The syntax of the parameters is as follows:
+The syntax of the properties is as follows:
 
 ```
 {
@@ -34,18 +34,22 @@ The syntax of the parameters is as follows:
 	"subject-name-identifier": {
 		"attribute": "userUuid",
 		"fallback-attribute": "uid"
-	}
+	},
+	"provided-apis": [{
+		"name": "write-access",
+		"description": "grants access to write APIs"
+	}]
 }
 ```
 
-**Parameters for the Creation of an Instance of the Identity Service**
+**Properties for the Creation of an Instance of the Identity Service**
 
 
 <table>
 <tr>
 <th valign="top">
 
-Parameter
+Property
 
 
 
@@ -73,7 +77,7 @@ Is an array of redirect URIs that are explicitly allowed for the authorization c
 > ### Restriction:  
 > Redirect URIs are required for the authorization code flow to redirect back to your application.
 
-This parameter is empty by default.
+This property is empty by default.
 
 For more information, see [OpenID Connect Application Configurations](../Operation-Guide/openid-connect-application-configurations-1ae324e.md).
 
@@ -93,7 +97,7 @@ For more information, see [OpenID Connect Application Configurations](../Operati
 
 Is an array of redirect URIs, where users are forwarded after logout.
 
-This parameter is empty by default.
+This property is empty by default.
 
 For more information, see [Call Identity Authentication End Session Endpoint](../Operation-Guide/call-identity-authentication-end-session-endpoint-ec674f4.md) and [OpenID Connect Application Configurations](../Operation-Guide/openid-connect-application-configurations-1ae324e.md).
 
@@ -113,7 +117,7 @@ For more information, see [Call Identity Authentication End Session Endpoint](..
 
 Set to `true` to enable OAuth flows with public clients. Use public clients in environments where it’s difficult to protect the client credential, such as mobile and desktop applications or client-side parts of web applications.
 
-This parameter is `false` by default.
+This property is `false` by default.
 
 For more information, see:
 
@@ -136,7 +140,7 @@ For more information, see:
 </td>
 <td valign="top">
 
-Defines the token policy for the application as determined by the optional parameters `token-validity`, `refresh-validity`, and `refresh-parallel`.
+Defines the token policy for the application as determined by the optional properties `token-validity`, `refresh-validity`, and `refresh-parallel`.
 
 The admin console also supports the configuration of token policies.
 
@@ -192,7 +196,7 @@ The default value is 43200 seconds, which translates to 12 hours.
 </td>
 <td valign="top">
 
-Determines the number of tokens that can be issued for the same session in parallel. Imagine you're logged on to the application through a web interface and a command-line interface in parallel. Then you would want this parameter to be set to 2. The value can range from 1 to 5.
+Determines the number of tokens that can be issued for the same session in parallel. Imagine you're logged on to the application through a web interface and a command-line interface in parallel. Then you would want this property to be set to 2. The value can range from 1 to 5.
 
 The default value is 1.
 
@@ -232,12 +236,12 @@ Defines the validity of the old refresh token after requesting a new one through
 </td>
 <td valign="top">
 
-Use this array to enable the application to consume the APIs of reuse services. Name the reuse services consumed by the application you’re protecting. The system adds the client IDs of the reuse services to the audience field of the identity token.
+Use this array to enable the application to consume the APIs of reuse services. Name the reuse services consumed by the application you’re protecting. The system adds the client IDs of the reuse services to the audience claim of the identity token.
 
 > ### Note:  
-> If the token is retrieved based on a public flow \(`public-client` is true\) without client authentication, Identity Authentication doesn't add the client IDs of the dependent services to the audience field.
+> If the token is retrieved based on a public flow \(`public-client` is true\) without client authentication, Identity Authentication doesn't add the client IDs of the dependent services to the audience claim.
 
-This parameter is empty by default.
+This property is empty by default.
 
 
 
@@ -253,10 +257,10 @@ This parameter is empty by default.
 </td>
 <td valign="top">
 
-Set to `true` to add the client ID of the Identity Authentication application created by the SAP Authorization and Trust Management service \(XSUAA\) to the audience parameter. Setting `xsuaa-cross-consumption` enables cross consumption of SAP Authorization and Trust Management service.
+Set to `true` to add the client ID of the Identity Authentication application created by the SAP Authorization and Trust Management service \(XSUAA\) to the audience claim. Setting `xsuaa-cross-consumption` enables cross consumption of SAP Authorization and Trust Management service.
 
 > ### Note:  
-> If the token is retrieved based on a public flow \(`public-client` is true\) without client authentication, Identity Authentication doesn't add the client IDs of the dependent services to the audience field.
+> If the token is retrieved based on a public flow \(`public-client` is true\) without client authentication, Identity Authentication doesn't add the client IDs of the dependent services to the audience claim.
 
 Default value is `false`.
 
@@ -318,15 +322,33 @@ For more information about attributes for the subject name identifier, see [Conf
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+`provided-apis`
+
+
+
+</td>
+<td valign="top">
+
+An array of API names \(`name`\) and descriptions \(`description`\) which this application makes available for other applications to consume. The name can be any unique string of 32 characters. You can define a maximum of 20 APIs.
+
+For more information, see .
+
+
+
+</td>
+</tr>
 </table>
 
 
 
 <a name="loio9379444abf3f4e2cbaade7c4001df381__section_sv2_4d2_ynb"/>
 
-## Binding Parameters
+## Binding Properties
 
-Provide binding parameters in JSON format. If you provide no parameters, the binding uses the `SECRET` credential type. The syntax of the parameters is as follows:
+Provide binding properties in JSON format. If you provide no properties, the binding uses the `SECRET` credential type. The syntax of the properties is as follows:
 
 ```
 {"credential-type": "SECRET"}
@@ -376,7 +398,7 @@ Credential Type
 </th>
 <th valign="top">
 
-Credential Parameters
+Credential Properties
 
 
 
@@ -399,7 +421,7 @@ Description
 </td>
 <td valign="top">
 
-Generates a client secret. If no parameters are provided, `SECRET` is the default type.
+Generates a client secret. If no properties are provided, `SECRET` is the default type.
 
 
 

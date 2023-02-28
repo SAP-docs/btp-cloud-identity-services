@@ -24,7 +24,7 @@ Customers that have subsidiaries can reuse existing Identity Authentication tena
 
 3.  Choose the *Tenant Settings and Information* list item.
 
-4.  From the drop-down under the *Additional Settings* choose the tenant or tenants that will reuse the configurations of the tenant yoa are in now.
+4.  **Optional:** From the drop-down under the *Additional Settings* choose the tenant or tenants that will reuse the configurations of the tenant yoa are in now.
 
     The *Customer records* drop-down contains only the tenants that are assigned to the global ultimate.
 

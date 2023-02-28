@@ -219,7 +219,7 @@ To configure a source system, follow the steps below:
 
     If you have chosen *Authentication Type - x509*, the certificate is generated after saving the configuration.
 
-6.  Choose *Test Connection* to test the source system configuration.
+6.  **Optional:** Choose *Test Connection* to test the source system configuration.
 
 
 **Related Information**  

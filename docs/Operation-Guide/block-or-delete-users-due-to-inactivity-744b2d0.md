@@ -47,7 +47,7 @@ You can also configure when the deletion script starts.
     > ### Remember:  
     > If you configure both *Block after* and *Delete after* periods, the *Delete after* period must longer than the *Block after* period.
 
-6.  Configure the date after which the deletion script starts.
+6.  **Optional:** Configure the date after which the deletion script starts.
 
     The automatic configuration is based on the current date plus the days specified in the *Delete after* period. The deletion process starts from the chosen date and is executed nightly at 04:00 UTC.
 

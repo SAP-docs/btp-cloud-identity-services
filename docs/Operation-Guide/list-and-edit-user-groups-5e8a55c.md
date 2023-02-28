@@ -31,11 +31,11 @@ The user groups are sorted in alphabetical order of the display name.
 
     This operation opens a list of the user groups in the tenant.
 
-3.  Type the *Name* or *Display name* of a group in the search field to filter the list items.
+3.  **Optional:** Type the *Name* or *Display name* of a group in the search field to filter the list items.
 
-4.  Choose a group from the list on the left to view its details.
+4.  **Optional:** Choose a group from the list on the left to view its details.
 
-5.  Press the *Edit* button at the top-right corner of the screen, edit the *Display name* or *Description* fields if necessary, and save your changes.
+5.  **Optional:** Press the *Edit* button at the top-right corner of the screen, edit the *Display name* or *Description* fields if necessary, and save your changes.
 
 
 **Related Information**  

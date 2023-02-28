@@ -53,7 +53,7 @@ Once the phone number has been verified, the user cannot change it any more on t
     > ### Note:  
     > If you do not want to use phone verification via SMS for an application, you can drag the slider next to it to *OFF*.
 
-6.  Configure rules to skip phone verification for user types and save your changes. To configure the authentication rules, choose one of the following:
+6.  **Optional:** Configure rules to skip phone verification for user types and save your changes. To configure the authentication rules, choose one of the following:
 
 
     <table>

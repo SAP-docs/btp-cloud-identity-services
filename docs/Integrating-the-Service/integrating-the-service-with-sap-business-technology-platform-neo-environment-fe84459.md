@@ -206,7 +206,7 @@ If you have added a tenant of Identity Authentication registered for your compan
 
 1.  Set the trust with SAP BTP. For more details, see [Configure Trust](../Operation-Guide/configure-trust-f96e4c5.md)
 
-2.  Customize the settings for the application. For more information, see [Configuring Applications](../Operation-Guide/configuring-applications-61ad3b0.md).
+2.  **Optional:** Customize the settings for the application. For more information, see [Configuring Applications](../Operation-Guide/configuring-applications-61ad3b0.md).
 
 
  <a name="loioada5781b82a0407890b3a35e7538be76"/>

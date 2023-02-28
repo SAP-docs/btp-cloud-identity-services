@@ -75,11 +75,11 @@ To configure security questions in the administration console, follow the proced
 
     Under *Security Questions* you can see the 10 predefined questions the user can choose from.
 
-7.  Select the *Show "Setup later"* check box.
+7.  **Optional:** Select the *Show "Setup later"* check box.
 
     When selected, the end users see the option to setup the security questions later.
 
-8.  Select the *Show "Don't ask again"* check box.
+8.  **Optional:** Select the *Show "Don't ask again"* check box.
 
     When selected, the end users see the option to hide the prompt to setup their security questions later.
 

@@ -321,11 +321,11 @@ Configure the corporate identity provider in the administration console for SAP 
     </tr>
     </table>
     
-5.  Add additional scopes if needed.
+5.  **Optional:** Add additional scopes if needed.
 
     You can have up to 20 scopes. The `openid` scope is added by default. Each scope can have a length of up to 99 characters.
 
-6.  Choose the *Validate* button to check the configuration.
+6.  **Optional:** Choose the *Validate* button to check the configuration.
 
     A client credentials token request is sent to the corporate identity provider to receive a token to validate the client credentials.
 
@@ -333,7 +333,7 @@ Configure the corporate identity provider in the administration console for SAP 
 
     Once the identity provider has been updated, the system displays the message ***Identity provider <name of identity provider\> updated***.
 
-8.  Refresh the OpenID Connect metadata of the corporate identity provider.
+8.  **Optional:** Refresh the OpenID Connect metadata of the corporate identity provider.
 
     The metadata is refreshed automatically if it is older than 24 hours and there are logons which forward the request to the corporate identity provider.
 

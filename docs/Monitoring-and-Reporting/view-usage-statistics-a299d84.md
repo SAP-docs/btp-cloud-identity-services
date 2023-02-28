@@ -27,8 +27,8 @@ Identity Authentication keeps the usage statistics for three years.
 
 2.  Choose the *Reporting* tile.
 
-3.  Specify the applications that you want to view from the *Logon counters* drop-down.
+3.  **Optional:** Specify the applications that you want to view from the *Logon counters* drop-down.
 
-4.  Modify the statistics period.
+4.  **Optional:** Modify the statistics period.
 
 
