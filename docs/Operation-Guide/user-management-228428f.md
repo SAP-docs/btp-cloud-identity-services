@@ -51,7 +51,7 @@ Create user
 </td>
 <td valign="top">
 
-Create users via the *Add User* option in the administration console
+Create users via the *Add* option in the administration console
 
 
 

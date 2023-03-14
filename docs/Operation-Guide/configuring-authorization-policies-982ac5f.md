@@ -2,11 +2,27 @@
 
 # Configuring Authorization Policies
 
-Authorization management enables Identity Authentication administrators to use authorization policies in multiple environments and assign them to users.
+Authorization management enables Identity Authentication administrators to use authorization policies in multiple environments, configure them, and assign them to users.
 
 When you subscribe to an application that supports authorization policies, the system sets up an application in Identity Authentication for you and from there you can assign authorizations. An authorization management tenant is automatically created as a new tenant. Service instances and bindings are added automatically.
 
 For more information, see [Subscribe to Multitenant Applications Using the Cockpit](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/7a3e39622be14413b2a4df7c02ca1170.html).
+
+
+
+<a name="loio982ac5f91d2346fda8dd8096e861fc36__section_axh_vvq_swb"/>
+
+## Prerequisites
+
+-   Your application supports authorization policies. Refer to the documentation of your application.
+
+-   Your user has administrative permissions in Identity Authentication with the *Manage Groups* authorization. For more information, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
+
+-   You have a subscription to SAP Cloud Identity Services - Identity Authentication. For more information, see [SAP Cloud Identity Services](https://help.sap.com/docs/SAP_CLOUD_IDENTITY).
+
+
+> ### Note:  
+> If your application doesn't have an *Authorization Policies* tab, it doesn't support authorization management.
 
 
 
@@ -218,7 +234,7 @@ Authorization policy created by administrators. You can change and delete this a
 
 Authorization policy administrators can configure the following in custom authorization policies:
 
--   Combine policies \(either basic or custom authorization policies\)
+-   Combine authorization policies \(either basic or custom authorization policies\)
 -   Replace an unrestricted attribute value with a restriction
 -   Change an attribute value
 

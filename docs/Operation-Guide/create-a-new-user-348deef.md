@@ -26,7 +26,7 @@ The tenant administrator creates the new user with a minimum set of attributes a
 
     The system displays the first 20 users in the tenant sorted by their user ID number.
 
-3.  Press *Add User*.
+3.  Press *Add*.
 
 4.  Fill in the required fields in the dialog box.
 

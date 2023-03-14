@@ -2,9 +2,29 @@
 
 # Call Identity Authentication End Session Endpoint
 
-This document explains how to call the end session endpoint and what are the parameters supported by Identity Authentication.
+To propagate a user's logout to other applications and any corporate identity providers used, an OIDC application can call the end session endpoint of Identity Authentication.
 
 
+
+<a name="loioec674f477fec47928e55888a97ca01da__section_m3q_bhz_rfb"/>
+
+## Context
+
+The service support front-channel logout. You trigger a logout from your application by sending a logout request to the end session endpoint. The service also logs the user out of any other applications with which the user shares a session. In addition, the service also notifies any configured corporate identity providers.
+
+After the entire single logout \(SLO\) operation has completed, by default, Identity Authentication redirects the user agent to the Identity Authentication profile page of the user. To redirect the user to a different page, include a post logout URI in your request. The URI must be among the allowed post logout redirect URIs that the Identity Authentication administrator configured for the application.
+
+For more information, see [OpenID Connect Application Configurations](openid-connect-application-configurations-1ae324e.md).
+
+If you include a post logout redirect URI in your request, include the client ID. Instead of including the client ID, you can include the ID token and the service reads the client ID from the token.
+
+The following figure illustrates a logout scenario with multiple applications and a coprorate identity provider.
+
+   
+  
+**Front-Channel Logout Flow**
+
+ ![](images/single_logout_oidc_434165c.png "Front-Channel Logout Flow") 
 
 
 
@@ -69,9 +89,6 @@ Parameter Type
 
 No
 
-> ### Remember:  
-> The parameter is optional, but either `id_token_hint` or `client_id` must be present.
-
 
 
 </td>
@@ -121,7 +138,10 @@ String
 </td>
 <td valign="top">
 
-The redirection URIs where the user will be forwarded after logout.
+The redirection URI where the user will be forwarded after logout.
+
+> ### Remember:  
+> The parameter is optional, but either `id_token_hint` or `client_id` must be present if you included a post logout redirect URI.
 
 
 
@@ -158,7 +178,7 @@ String
 </td>
 <td valign="top">
 
-Used by the application to maintain state between the logout request and the callback to the endpoint specified by the `post_logout_redirect_uri` query parameter. If included in the logout request, the identity provider passes this value back to the application using the state query parameter when redirecting the browser back to the application.
+Used by the application to maintain state between the logout request and the callback to the endpoint specified by the `post_logout_redirect_uri` query parameter. If included in the logout request, the identity provider passes this value back to the application using the `state` query parameter when redirecting the browser back to the application.
 
 
 
@@ -182,9 +202,6 @@ Query
 <td valign="top">
 
 No
-
-> ### Remember:  
-> The parameter is optional, but either `id_token_hint` or `client_id` must be present.
 
 
 
@@ -214,7 +231,7 @@ Query
 </table>
 
 > ### Note:  
-> All request parameters can be combined in any order. Either the `id_token_hint` or `client_id` parameter must be present.
+> All request parameters can be combined in any order.
 
 
 
@@ -233,7 +250,8 @@ https://my-tenant.ondemand.com/oauth2/logout?id_token_hint=eyJ0eXAiOiJKV1QiLCJhb
 ```
 
 ```
-https://my-tenant.ondemand.com/oauth2/logout?post_logout_redirect_uri=https://example.com
+https://my-tenant.ondemand.com/oauth2/logout?post_logout_redirect_uri=https://example.com&client_id=a0b22cd0-f2d5-45d8-9937-3a4bebd6598c
+
 ```
 
 ```
@@ -292,7 +310,7 @@ Successful operation.
 
 User session is terminated.
 
-If `post_logout_redirect_uri` is not provided, then the user will be redirected to the profile page.
+If `post_logout_redirect_uri` isn't provided, then the user is redirected to the profile page.
 
 
 
@@ -334,5 +352,7 @@ Missing or wrong parameter.
 
 [Configure Trusted Domains](configure-trusted-domains-08fa1fe.md "Service providers that delegate authentication to Identity Authentication can protect their applications when using embedded frames, also called overlays, or when allowing user self-registration.")
 
-[RP-Initiated Logout](https://openid.net/specs/openid-connect-session-1_0.html#RPLogout)
+[RP-Initiated Logout](https://openid.net/specs/openid-connect-rpinitiated-1_0.html "Specification from OpenID Foundation")
+
+[Single Logout Flows](../Development/single-logout-flows-0584b5f.md "It's good practice to encourage users of your applications to log out at the end of their session. If malicious users can access user sessions, either by gaining access to artifacts such as cookies or by finding unattended clients, malicious users can impersonate the rightful owners of the sessions.")
 

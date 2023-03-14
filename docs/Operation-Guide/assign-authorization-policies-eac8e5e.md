@@ -57,5 +57,5 @@ As an administrator, you can assign authorizations to Identity Authentication ap
 **Related Information**  
 
 
-[Configuring Authorization Policies](configuring-authorization-policies-982ac5f.md "Authorization management enables Identity Authentication administrators to use authorization policies in multiple environments and assign them to users.")
+[Configuring Authorization Policies](configuring-authorization-policies-982ac5f.md "Authorization management enables Identity Authentication administrators to use authorization policies in multiple environments, configure them, and assign them to users.")
 

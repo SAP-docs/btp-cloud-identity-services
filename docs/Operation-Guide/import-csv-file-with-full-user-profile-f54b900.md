@@ -317,7 +317,7 @@ To import users for an application into Identity Authentication, proceed as foll
 
     The system displays the first 20 users in the tenant sorted by their user ID number.
 
-3.  Press the *Import Users*
+3.  Press the *Import*
 
 4.  Choose the *Browse...* button and specify the location of the CSV file.
 

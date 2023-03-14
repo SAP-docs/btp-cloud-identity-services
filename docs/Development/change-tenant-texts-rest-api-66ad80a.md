@@ -1116,6 +1116,10 @@ logon.ui.label.continue=Continue
 
 logon.ui.label.user=E-Mail or User Name
 
+logon.ui.label.userPhone=E-Mail or User Name or Phone
+
+logon.ui.label.emailPhone=E-Mail or Phone
+
 logon.ui.label.fioritheme.user=E-Mail or User Name
 
 logon.ui.label.email=E-Mail
@@ -1144,6 +1148,8 @@ logon.ui.label.rememberme=Remember me
 
 logon.ui.label.keepMeSignedIn=Keep me signed in
 
+logon.ui.label.remembermeConsent=Your credentials will be stored on this device for a long period of time
+
 logon.ui.label.trustbrowser=Trust this browser
 
 logon.ui.label.notRegisteredYet=Not registered yet?
@@ -1162,9 +1168,9 @@ logon.ui.label.rsaTwoFactorAuthenticationDescription=To proceed, please enter th
 
 logon.ui.label.emailTwoFactorAuthenticationDescription=We have sent you a code by e-mail. Please enter this code and choose Continue.
 
-logon.ui.label.smsTwoFactorAuthenticationDescription=The {0} application requires telephone verification. We have sent a code to your telephone number. Please enter the code you have received and choose Continue.
+logon.ui.label.smsTwoFactorAuthenticationDescription=The {0} application requires telephone verification. We will send a code to your telephone number. Please enter the code you have received and choose Continue.
 
-logon.ui.label.smsTwoFactorAuthenticationVerifyPhoneDescription=The {0} application requires telephone verification. Please enter your phone number and request a code.
+logon.ui.label.smsTwoFactorAuthenticationVerifyPhoneDescription=The {0} application requires telephone verification. Please enter your telephone number and request a code.
 
 logon.ui.label.twoFactorChoiceDescription=Please choose one of the enabled two-factor authentication methods or press the button to enable a new method.
 
@@ -1185,6 +1191,12 @@ logon.ui.label.twoFactorChoiceSMS=SMS Two-Factor Authentication
 logon.ui.label.twoFactorChoiceEMAIL=E-Mail Two-Factor Authentication
 
 logon.ui.tfa.choice.button.activate.device=Enable Method
+
+logon.ui.tfa.choice.skip.button=Skip
+
+logon.ui.tfa.choice.skip.warningMessage=You can skip enabling the second factor for %{param0} days.
+
+logon.ui.tfa.choice.skip.warningMessageSingular=You can skip enabling the second factor for 1 day.
 
 logon.ui.tfa.back.button=Back
 
@@ -1214,7 +1226,7 @@ logon.ui.label.newUserRegisterWithSocialSignOn=Register Now
 
 logon.ui.label.verifyTelephoneTitle=Verify Your Telephone Number
 
-logon.ui.label.verifyTelephoneDescription=The {0} application requires telephone verification. We have sent a code to your telephone number. Please enter the code you have received and choose Continue.
+logon.ui.label.verifyTelephoneDescription=The {0} application requires telephone verification. We will send a code to your telephone number. Please enter the code you have received and choose Continue.
 
 logon.ui.label.changeTelephoneMessage=You can change your telephone number. Please type: +(country code) followed by the area code without the leading zero, followed by the subscriber number. Example: +(XXX) XXX XXXXXXX
 
@@ -1322,6 +1334,8 @@ logon.ui.errormessage.MAX_SENT_REACHED_SMS_CODE=We did not send you a code becau
 
 logon.ui.errormessage.SMS_CODE_NOT_SENT_DUPLICATE=Your telephone number has already been verified by another user. Please change your telephone number or contact your system administrator.
 
+logon.ui.errormessage.SMS_CODE_NOT_SENT_NOT_UNIQUE_PHONE=We could no\u0080\u0099t send you a code because this telephone number is already used as a user identifier by someone else. Please use another telephone number, or contact your administrator.
+
 logon.ui.errormessage.INVALID_PHONE_NUMBER=Your telephone number is invalid. Please change and try again.
 
 logon.ui.errormessage.FAILED_SEND_SMS_CODE=We couldn't send you a code. Please check your telephone number and try again.
@@ -1362,7 +1376,6 @@ logon.ui.errormessage.CONFLICTING_USER_MAIL=You cannot log on. Your e-mail addre
 
 logon.ui.securityQuestion.title=Security Questions
 
-
 logon.ui.securityQuestion.hint=Follow the link to
 
 logon.ui.securityQuestion.link=Reset your password using security questions
@@ -1375,7 +1388,6 @@ logon.ui.securityQuestion.question=Question %{param0}
 
 logon.ui.securityQuestion.error=You have provided a wrong combination of user, questions, and answers. Please try again.
 
-
 logon.ui.passwordResetPin.title=PIN Code for Password Reset
 
 logon.ui.passwordResetPin.link=PIN Code
@@ -1386,23 +1398,21 @@ logon.ui.passwordResetPin.error=You have provided a wrong combination of user an
 
 logon.ui.passwordResetPin.description=To reset your password provide the required information.
 
-
 logon.ui.copyright.link=Default Copyright Link
 
 logon.ui.privacy.link=Default Privacy Link
 
 logon.ui.legal.disclosure.link=Default Legal Disclosure Link
 
+logon.ui.legal.cookie.link=Default Cookie Notice link
+
 logon.ui.login.instructions=Default Login Instructions
 
-
 salutation.ui.welcome=Welcome
-
 
 accountActivation.accountSuccessfullyActivated=Account Successfully Activated
 
 accountActivation.accountSuccessfullyLinked=Account Successfully Linked
-
 
 accountActivation.accountSuccessfullyLinkedWith=Account Linked to {0}
 
@@ -1419,7 +1429,6 @@ accountActivation.ui.label.continue=Continue
 accountActivation.mail.subject=Identity Authentication Account Activation
 
 invitation.mail.subject=You are invited to {0}
-
 
 tou.termsAndConditions=Terms and Conditions
 
@@ -1475,7 +1484,6 @@ changepassword.changePassword=Change Your Password
 
 changepassword.typeRetypePassword=Enter and re-enter your new password.
 
-
 changepassword.ui.infomessage.insufficientPasswordComplexity=Your password is not strong enough.
 
 changepassword.ui.infomessage.passwordLocked=Your password has been locked.
@@ -1501,7 +1509,6 @@ forgottenpassword.ui.errormessage.forbidden=Passwords can only be changed once e
 forgottenpassword.ui.errormessage.couldNotBeValidated=Could not validate password.
 
 forgottenpassword.ui.errormessage.passwordInHistory=This password is already in your password history. Choose a different password.
-
 
 forgottenPasswordMailConfirm.forgotPasswordConfirm=Confirm Forgotten Password
 
@@ -1537,7 +1544,6 @@ passwordForm.required=Required
 
 passwordForm.save=Save
 
-
 policyaccept.acceptPolicy=Accept Policy
 
 policyaccept.ui.label.headline=Privacy policy for {0}
@@ -1552,11 +1558,9 @@ policyaccept.ui.label.accept=Accept
 
 policyaccept.ui.label.decline=Decline
 
-
 policyaccept.ui.errormessage.accepttoproceed=To proceed, accept the privacy policy.
 
 policyaccept.ui.errormessage.markcheckbox=To accept the privacy policy, click the checkbox.
-
 
 document.ui.label.headline=Legal Disclaimers for {0}
 
@@ -1565,7 +1569,6 @@ document.ui.label.accessUse=We have updated our legal documents. To access and u
 privacy.link.text=Our privacy statement is available <a target\="_blank" href\="{0}">here</a>.
 
 privacy.link.updatedText=Note: There is a new version of our privacy statement available <a target\="_blank" href\="{0}">here</a>.
-
 
 upgraderegistration.upgradeAccount=Upgrade Your Account
 
@@ -1583,20 +1586,17 @@ upgradeRegistrationConfirmation.accountUpgraded.text=This account can also be us
 
 upgradeRegistrationConfirmation.continue=Continue
 
-
 upgradeRegistrationInformMailStatus.mailNotVerifiedStatus=Verify Your E-Mail
 
 upgradeRegistrationInformMailStatus.mailSentTo=A link to verify your e-mail has been sent to {0}.
 
 upgradeRegistrationInformMailStatus.mailSentTo.text=To verify your e-mail, click the link sent to you. Note that it might take a few minutes for the e-mail with the link to reach your inbox.
 
-
 salutation.mr=Mr.
 
 salutation.mrs=Mrs.
 
 salutation.ms=Ms.
-
 
 relationshipToSAP.Customer=Customer
 
@@ -1615,7 +1615,6 @@ relationshipToSAP.investorStakeholder=Investor/Stakeholder
 relationshipToSAP.student=Student
 
 relationshipToSAP.employee=SAP Employee
-
 
 select.number_employees.UP_TO_50=1 - 49
 
@@ -1640,6 +1639,8 @@ registerForm.validation.required=Required field
 registerForm.validation.invalidMail=Enter a valid e-mail address.
 
 registerForm.validation.invalidTelephone=Enter a valid telephone number, using only brackets and hyphens to separate digits.
+
+registerForm.validation.notUniqueTelephone=This telephone number is already used as a user identifier by someone else. Please use another one.
 
 registerForm.validation.duplicateDisplayName=The display name you have chosen is already in use. Choose a different display name.
 
@@ -1815,7 +1816,6 @@ errorPage.errorId=Error ID: {0}
 
 errorPage.errorMessage=An error occurred. If you need support, send an e-mail to <span class\="safermailto" data-safermailto-recipient\="sso" data-safermailto-subject\="Identity Authentication Error"></span>
 
-
 oauth.network=The selected social sign-on service is currently unavailable. Use a different social sign-on or your credentials to log on.
 
 error.oauth.social.sign-on.failed.error=Social sign-on failed. Please try again.
@@ -1825,7 +1825,6 @@ error.oauth.signing.process.failed.unapproved.callback.url.error=Social sign-on 
 error.oauth.signing.process.failed.wrong.client.secret.error=Social sign-on failed due to wrong client secret. Please contact your system administrator.
 
 error.oauth.access.denied.errorMessage=Access denied from social provider.
-
 
 token.invalid=Your e-mail activation link is invalid or already used.
 
@@ -1841,7 +1840,6 @@ idp.proxy.response.error=Identity provider cannot process the response due to wr
 
 idp.initiated.sso.disabled.error=IdP-initiated SSO has been disabled by your system administrator
 
-
 provisioningInfo.accountProvisioning=Account Activation
 
 provisioningInfo.enableAccount=Activating Your Account
@@ -1850,7 +1848,6 @@ provisioningInfo.enablingAccount=Activating your account for {0}...
 
 provisioningInfo.enablingAccount.text=Your account is currently being enabled for {0}. This may take a few seconds, please wait.
 
-
 provisioningTimeout.errorPage=Error Page
 
 provisioningTimeout.errorOccurred=Account Activation Failure
@@ -1858,7 +1855,6 @@ provisioningTimeout.errorOccurred=Account Activation Failure
 provisioningTimeout.accountNotActivated=Your account could not be activated.
 
 provisioningTimeout.loginIn15minutes=To activate your account, contact {0}.
-
 
 profileManagement.title=Profile Management
 
@@ -2029,6 +2025,8 @@ profileManagement.errormessage.changePasswordFailed=Could not change your passwo
 profileManagement.errormessage.changePasswordFailed.notAuthenticated=Could not be verified.
 
 profileManagement.errormessage.changePasswordFailed.retypeDoesNotMatch=Does not match the new password.
+
+profileManagement.errormessage.changePasswordFailed.passwordUnlimitedlyLocked=Your password is locked. Please contact your system administrator to unlock it.
 
 profileManagement.errormessage.changePasswordFailed.insufficientPasswordComplexity=Insufficient password complexity.
 
@@ -2376,7 +2374,6 @@ ui.unique.checks.duplicate.username=An account already exists with that user nam
 
 ui.unique.checks.duplicate.displayname=An account already exists with that display name; enter a different display name
 
-
 mmc.titleTextKey=MMC Form
 
 mmc.headlineTextKey=We Are Updating Our Records
@@ -2385,18 +2382,15 @@ mmc.mainMessageTextKey=So that we can continue to provide you with the most rele
 
 mmc.buttonMessageKey=Save
 
-
 resendMailConfirm.emailSent=Your activation token has expired. A new e-mail has been sent to you.
 
 resendMailConfirm.headline=Activate Your Account
-
 
 multiaccount.alert.title=Multiple Accounts
 
 multiaccount.alert.message=To log onto the SAP Store, click Continue. If you encounter a problem, it could be because there are multiple accounts registered to your e-mail address. Set or change your default SAP Store account from your <a href\="/" target\="_blank">Identity Authentication Profile</a>. <strong>If you change your default SAP Store account, you will need to log off and log on again.</strong>
 
 multiaccount.alert.checkbox=Do not show this message again.
-
 
 samlRedirect.authnRequest.title=SAML Authentication Request from Identity Authentication
 
@@ -2414,6 +2408,7 @@ samlRedirect.logoutResponse.title=SAML Logout Response from Identity Authenticat
 
 samlRedirect.logoutResponse.message.default=You have now been logged out. Your request has been forwarded to the target system for processing.
 
+oidcLogout.frontchannel.title=OIDC Frontchannel Logout Request from Identity Authentication
 
 userDataViewer.title=User Data Viewer
 
@@ -2515,7 +2510,7 @@ userData.main.headline=Your Profile Information
 
 userData.label.uid=User ID
 
-userData.label.userUuid=User UUID
+userData.label.userUuid=Global User ID
 
 userData.label.mid=MID
 
@@ -2741,7 +2736,6 @@ userData.label.validFrom=Valid From
 
 userData.label.validTo=Valid to
 
-
 error.ui.errormessage.idpSsesionExpired=Your session has expired. Please log on again.
 
 error.ui.errormessage.idpSessionExpiredUserActivation=Your session has expired. Open the e-mail for your account activation and follow the link in it to re-activate your account.
@@ -2756,11 +2750,9 @@ error.ui.unknown.application.error=An error has occurred. Please visit the appli
 
 error.ui.unexistent.text.resource.error=The requested document does not exist. Please contact your system administrator.
 
-
 sci_eu_data_protection.headline=European Union (EU) Access Mode
 
 sci_eu_data_protection.message=This Identity Authentication landscape is operated and supported in European Union (EU) Access mode. Please confirm that you are either physically located in the EU or that you have positively verified that EU access restrictions do not apply in your situation. Your confirmation will be logged.
-
 
 sci_eu_data_protection.confirm=Confirm
 
@@ -2790,8 +2782,19 @@ error.ui.errormessage.missingOpenIDTokenHintAndClientID=OpenID provider cannot p
 
 flashes.error_validating_captcha=We are unable to validate your Captcha protection at the moment. Please try again later.
 
-
 security.alert.email.changed=Your e-mail address in Identity Authentication tenant {0} has been changed. The new e-mail address is {1}.
+
+security.alert.telephone.number.changed=Your telephone number in Identity Authentication tenant {0} has been changed. The new number is {1}.
+
+security.alert.mobile.number.changed=Your mobile number in Identity Authentication tenant {0} has been changed. The new number is {1}.
+
+security.alert.fax.number.changed=Your fax number in Identity Authentication tenant {0} has been changed. The new number is {1}.
+
+security.alert.telephone.number.deleted=Your telephone number in Identity Authentication tenant {0} has been deleted.
+
+security.alert.mobile.number.deleted=Your mobile number in Identity Authentication tenant {0} has been deleted.
+
+security.alert.fax.number.deleted=Your fax number in Identity Authentication tenant {0} has been deleted.
 
 security.alert.login.name.changed=Your login name attribute in Identity Authentication tenant {0} has been changed. The new login name attribute is {1}.
 
@@ -2810,6 +2813,8 @@ security.alert.password.reset=Your password has been reset in Identity Authentic
 security.alert.register.same.email=Someone has tried to register a new user with your e-mail address in Identity Authentication tenant {0}.
 
 security.alert.remove.authorizations=Your authorizations {1} in Identity Authentication tenant {0} have been removed.
+
+security.alert.secondFactor.skipped=The setup of Two-Factor Authentication for your user in Identity Authentication tenant {0} has been skipped. You can postpone the setup of Two-Factor Authentication for {1} more days.
 
 security.alert.totpDevice.activated=A TOTP Two-Factor Authentication device has been activated for your user in Identity Authentication tenant {0}.
 
@@ -2858,7 +2863,6 @@ profileManagement.passwordlessAuthn.configure.activate=Activate
 profileManagement.passwordlessAuthn.activate.popup=Name your device:
 
 profileManagement.passwordlessAuthn.activate.noName=No device name provided.
-
 
 security.question.1=What was the name of the city your parent was born in?
 

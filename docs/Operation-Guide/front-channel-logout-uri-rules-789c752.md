@@ -69,5 +69,7 @@ After the domain part you can put the port numbers. Always use a leading colon \
 
 [Token Policy Configuration for Applications](token-policy-configuration-for-applications-c4ba52e.md "Set the token policy for a specific OpenID Connect application. Configure the validity of the refresh token, access and id_token, and the maximum sessions per user.")
 
+[Configure Grant Types](configure-grant-types-c342a7b.md "Configure the allowed grant type for your OpenID Connect application.")
+
 [OpenID Connect Front-Channel Logout 1.0](https://openid.net/specs/openid-connect-frontchannel-1_0.html)
 

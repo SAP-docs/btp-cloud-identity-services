@@ -334,7 +334,7 @@ For more information about attributes for the subject name identifier, see [Conf
 
 An array of API names \(`name`\) and descriptions \(`description`\) which this application makes available for other applications to consume. The name can be any unique string of 32 characters. You can define a maximum of 20 APIs.
 
-For more information, see .
+For more information, see [Communicate Between Applications](../Operation-Guide/communicate-between-applications-9ad7e80.md).
 
 
 

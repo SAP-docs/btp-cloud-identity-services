@@ -14,8 +14,6 @@ Identity Authentication provides one productive and one test tenant per customer
 
 A tenant granted as part of a bundle isn’t limited in scope, but it allows you to use the full functionality that Identity Authentication offers. For licensing questions, see also the [Licensing and Usage](tenant-model-and-licensing-93160eb.md#loio93160ebd2dcb40e98aadcbb9a970f2b9__licensing_section) section.
 
-Additional productive or test tenants beyond the initial ones must be purchased separately. To purchase additional tenants, go to [SAP Store](https://www.sapstore.com/solutions/80226/SAP-Cloud-Identity-Services) and place your order. If you can't place your order, submit a [Request Support ticket](https://store.sap.com/en/contact-us).
-
 > ### Remember:  
 > Beware that it will take time until the tenant becomes accessible. If you try to access the tenant right after its creation you will receive Error 404 Not Found.
 
@@ -29,8 +27,6 @@ Additional productive or test tenants beyond the initial ones must be purchased 
 ## Licensing and Usage
 
 Usage of Identity Authentication is commercially included for all SAP branded cloud solutions sold under the General Terms and Conditions for SAP Cloud Services, and all applications running on SAP BTP.
-
-For logons for applications not sold under the General Terms and Conditions for SAP Cloud Services \(third party\), go to [SAP Store](https://www.sapstore.com/solutions/40132/SAP-Cloud-Platform-Identity-Authentication) and place an order.
 
 
 

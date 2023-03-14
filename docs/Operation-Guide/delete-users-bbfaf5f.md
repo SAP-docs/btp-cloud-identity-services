@@ -22,7 +22,7 @@ As a tenant administrator, you can delete users in the administration console.
 
     You are not allowed to delete your own user profile.
 
-5.  Press *Delete Users*.
+5.  Press *Delete*.
 
 6.  Confirm the operation.
 

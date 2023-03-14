@@ -116,3 +116,5 @@ After the domain you can put port number. Always use a leading colon \(`:`\).
 
 [Token Policy Configuration for Applications](token-policy-configuration-for-applications-c4ba52e.md "Set the token policy for a specific OpenID Connect application. Configure the validity of the refresh token, access and id_token, and the maximum sessions per user.")
 
+[Configure Grant Types](configure-grant-types-c342a7b.md "Configure the allowed grant type for your OpenID Connect application.")
+

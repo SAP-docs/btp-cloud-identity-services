@@ -13,6 +13,8 @@ This guide is for administrators. It explains how administrators can configure I
 
 [Configuring Privacy Policies](configuring-privacy-policies-ed48466.md "You can configure a custom privacy policy document by creating a new document, adding and editing its language versions, and defining the document for an application.")
 
+[Configuring Authorization Policies](configuring-authorization-policies-982ac5f.md "Authorization management enables Identity Authentication administrators to use authorization policies in multiple environments, configure them, and assign them to users.")
+
 [Configuring Terms of Use](configuring-terms-of-use-61d3a86.md "You can configure a custom terms of use document by creating a new document, adding and editing its language versions, and defining the document for an application.")
 
 [User Management](user-management-228428f.md "Tenant administrators can manage user accounts via the administration console for SAP Cloud Identity Services, and via APIs.")

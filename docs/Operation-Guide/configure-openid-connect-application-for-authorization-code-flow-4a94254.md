@@ -137,7 +137,7 @@ To configure an OpenID Connect trusted application in the administration console
     > ### Tip:  
     > When the default identity provider certificate is changed with a new one, and the old one is not used anymore, we recommend you to delete the old certificate.
 
-8.  Configure the allowed grant types for the application.
+8.  Select the following grant types:
 
 
     <table>
@@ -151,7 +151,7 @@ To configure an OpenID Connect trusted application in the administration console
     </th>
     <th valign="top">
 
-    Default Behavior
+    Notes
 
 
     
@@ -160,30 +160,14 @@ To configure an OpenID Connect trusted application in the administration console
     <tr>
     <td valign="top">
 
-    **Authorization Code**
+    *Authorization Code*
 
 
     
     </td>
     <td valign="top">
 
-    selected
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    **Authorization Code / Enforce PKCE \(S256\)**
-
-
-    
-    </td>
-    <td valign="top">
-
-    not-selected
+    For the authorization code flow.
 
 
     
@@ -192,94 +176,14 @@ To configure an OpenID Connect trusted application in the administration console
     <tr>
     <td valign="top">
 
-    **Password**
+    *Authorization Code* \> *Authorization Code / Enforce PKCE \(S256\)*
 
 
     
     </td>
     <td valign="top">
 
-    selected
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    **JWT Bearer**
-
-
-    
-    </td>
-    <td valign="top">
-
-    selected
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    **Implicit**
-
-
-    
-    </td>
-    <td valign="top">
-
-    selected
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    **Refresh**
-
-
-    
-    </td>
-    <td valign="top">
-
-    selected
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    **Client Credentials**
-
-
-    
-    </td>
-    <td valign="top">
-
-    selected
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-    **Token Exchange \(RFC 8693\)**
-
-
-    
-    </td>
-    <td valign="top">
-
-    not-selected
+    For the authorization code flow with PKCE.
 
 
     
@@ -288,12 +192,12 @@ To configure an OpenID Connect trusted application in the administration console
     </table>
     
     > ### Note:  
-    > Beware that for each flow the respective grant type must be selected. The Authorization Code grant type must be selected for the authorization code flow, and the Authorization Code / Enforce PKCE \(S256\) for the authorization code flow with PKCE.
+    > Beware that for each flow the respective grant type must be selected. All other grant types can be deselected if they are not required by the application.
 
 9.  Save your selection. Once the application has been changed, the system displays the message ***Application <name of application\> updated***.
 
     > ### Remember:  
-    > Configure trust on the client side. See the client documentation for more information about how to configure the trust. For more information how to view the OpenID Connect settings of \(For SAML 2.0 Applications\) To log out the user from all active session, when a new password is set, configure the SOAP endpoint. For more information, see Identity Authentication, see [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md).
+    > Configure trust on the client side. See the client documentation for more information about how to configure the trust.
 
 
 

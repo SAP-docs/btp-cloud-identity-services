@@ -50,11 +50,9 @@ To add a person as a new tenant administrator, proceed as follows:
     > ### Note:  
     > The list also includes the SAP BTP system, which by default has authorizations to set up the trust with Identity Authentication.
 
-3.  Press the *\+Add* button on the left-hand panel to add a new administrator to the list.
+3.  On the left-hand panel press *Add* \> *System*.
 
-4.  Choose *Add User*.
-
-5.  Make the appropriate entries in the *Email*, *First Name*, and *Last Name* fields for the user you want to add as an administrator.
+4.  Make the appropriate entries in the *Email*, *First Name*, and *Last Name* fields for the user you want to add as an administrator.
 
     The *E-Mail* must be unique for the tenant.
 
@@ -63,7 +61,7 @@ To add a person as a new tenant administrator, proceed as follows:
     > ### Remember:  
     > Once the administrator is created, the *First Name*, *Last Name*, and *Email* fields are not editable from the administrator section. If you want to change the information you must go to the *User Management* section. For more information about how to edit the user information, see [List and Edit User Details](list-and-edit-user-details-045cb01.md).
 
-6.  Assign the required administrator roles for the user.
+5.  Assign the required administrator roles for the user.
 
     To be a tenant administrator, a user must be assigned at least one of the following roles.
 
@@ -185,7 +183,7 @@ To add a person as a new tenant administrator, proceed as follows:
     </tr>
     </table>
     
-7.  Save your changes.
+6.  Save your changes.
 
 
  <a name="loiocefb742a36754b18bbe5c3503ac6d87c"/>
@@ -213,7 +211,7 @@ To add a system as a new tenant administrator, proceed as follows:
     > ### Note:  
     > The list also includes the SAP BTP system, which by default has authorizations to set up the trust with Identity Authentication.
 
-3.  On the left-hand panel press *\+Add* \> *System*.
+3.  On the left-hand panel press *Add* \> *System*.
 
 4.  Enter the name of the system in the provided field.
 

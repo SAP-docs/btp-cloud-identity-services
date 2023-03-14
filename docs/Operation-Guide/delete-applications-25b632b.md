@@ -20,7 +20,7 @@ As a tenant administrator, you can delete one or more charged or bundled applica
 A *Delete Applications* operation removes the application and all of its configurations from the tenant of Identity Authentication.
 
 > ### Note:  
-> You can only delete charged or non-SAP managed bundled applications. The system applications and the SAP managed bundled applications in your tenant are hidden when you enter *Delete Applications* mode in the administration console. For more information, see [Configure an Application's Type](configure-an-application-s-type-6fee9c3.md).
+> You can only delete charged or non-SAP managed bundled applications. The system applications and the bundled applications that are managed and configured by SAP cannot be deleted. For more information, see [Application Types](../application-types-8f61880.md) and [Configure an Application's Type](configure-an-application-s-type-6fee9c3.md).
 
 Follow the procedure below for each application that you want to delete:
 

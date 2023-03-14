@@ -147,6 +147,9 @@ To create and configure a new custom password policy, follow the procedure:
 
     The maximum duration of user inactivity can be between 1 and 6 months. The default value is 6 months.
 
+    > ### Note:  
+    > If a user didn’t use the password during the set user inactivity period, the system will force either a password reset or change at the first logon. The reset or change depends on the setting for *Password Behavior*.
+
 
     
     </td>
@@ -197,6 +200,23 @@ To create and configure a new custom password policy, follow the procedure:
 
     > ### Tip:  
     > When *Unlimited* is selected, we recommend you to mark this password policy the strongest.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+
+    *Password Behavior*
+
+
+    
+    </td>
+    <td valign="top">
+
+    -   *Reset password* - At logon, the user is forced to reset password, if the current password is not compliant with the new password policy. This is the default choice.
+    -   *Change password* - At logon, the user is redirected to the change password page if the current password is not compliant with the new password policy.
 
 
     

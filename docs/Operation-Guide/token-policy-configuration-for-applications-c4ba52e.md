@@ -218,5 +218,7 @@ To configure the token policy, proceed as follows:
 
 [Front-Channel Logout URI Rules](front-channel-logout-uri-rules-789c752.md "Rules for the front-channel URIs.")
 
+[Configure Grant Types](configure-grant-types-c342a7b.md "Configure the allowed grant type for your OpenID Connect application.")
+
 [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md "You as a tenant administrator can view and configure the tenant OpenID Connect configurations.")
 

@@ -56,11 +56,11 @@ You can list all users in the tenant for Identity Authentication or filter your 
     <tr>
     <td valign="top">
 
-    **Simple Search**
+    **Unfiltered Search**
 
     -   \(default mode\) Type your search criteria string in the search field and press the *Enter* key
 
-    -   \(when in *Advanced Search* mode\) Press *Simple Search*, type your search criteria string in the search field, and press the *Enter* key
+    -   \(when in *Filtered Search* mode\) Press *Hide Filters*, type your search criteria string in the search field, and press the *Enter* key
 
 
 
@@ -84,9 +84,9 @@ You can list all users in the tenant for Identity Authentication or filter your 
     <tr>
     <td valign="top">
 
-    **Advanced Search**
+    **Filtered Search**
 
-    Press *Advanced Search* and type your search criteria strings in at least one of the search fields
+    Press *Show Filters*, type your search criteria strings in at least one of the search fields, and press the *Enter* key
 
 
     
