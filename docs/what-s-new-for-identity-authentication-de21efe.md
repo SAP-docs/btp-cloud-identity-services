@@ -175,6 +175,358 @@ Identity Authentication
 </td>
 <td valign="top">
 
+2023-03-16
+
+
+
+</td>
+<td valign="top">
+
+2023-03-15
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Administration Console
+
+
+
+</td>
+<td valign="top">
+
+The Horizon theme is now available for the administration console of SAP Cloud Identity Services, both the web and mobile version. See [How Far is the Horizon for SAP Cloud Identity Services?](https://blogs.sap.com/2023/03/15/how-far-is-the-horizon-for-sap-cloud-identity-services/).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+2023-03-16
+
+
+
+</td>
+<td valign="top">
+
+2023-03-15
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Troubleshooting
+
+
+
+</td>
+<td valign="top">
+
+You can filter and view troubleshooting logs directly in the administration console for SAP Cloud Identity Services. See [View Troubleshooting Logs](Monitoring-and-Reporting/view-troubleshooting-logs-6e7543f.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+2023-03-16
+
+
+
+</td>
+<td valign="top">
+
+2023-03-15
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+OpenID Connect
+
+
+
+</td>
+<td valign="top">
+
+You can configure the access token format. See [Token Policy Configuration for Applications](Operation-Guide/token-policy-configuration-for-applications-c4ba52e.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+ 
+
+
+
+</td>
+<td valign="top">
+
+2023-03-16
+
+
+
+</td>
+<td valign="top">
+
+2023-03-15
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+
+
+</td>
+<td valign="top">
+
+ Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
 2023-03-01
 
 
@@ -1716,7 +2068,7 @@ Tenant Settings
 </td>
 <td valign="top">
 
-The `Login Name` user identifier an be configured as required or non-required. See [Configure User Identifier Attributes](Operation-Guide/configure-user-identifier-attributes-8b9fa88.md).
+The `Login Name` user identifier can be configured as required or non-required. See [Configure User Identifier Attributes](Operation-Guide/configure-user-identifier-attributes-8b9fa88.md).
 
 
 

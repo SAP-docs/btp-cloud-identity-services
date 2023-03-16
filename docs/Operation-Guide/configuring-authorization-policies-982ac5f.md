@@ -168,6 +168,29 @@ Administration console
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+Delete authorization policies
+
+
+
+</td>
+<td valign="top">
+
+Administrator
+
+
+
+</td>
+<td valign="top">
+
+Administration console
+
+
+
+</td>
+</tr>
 </table>
 
 We distinguish between different types of authorization policies. They come with different packages. Customers can deploy their own authorization policies in customer-developed packages.

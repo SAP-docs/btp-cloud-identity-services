@@ -104,7 +104,9 @@ The default value is 1.
 
 
 
-### Refresh Token Usage After Renewal
+### Advanced Settings
+
+ **Refresh Token Usage After Renewal** 
 
 When refresh token flows fail, you can enable the server to accept a refresh token that was already submitted. Normally, a refresh token can only be used once. The configuration aims to solve issues, for example network problems in refresh token calls, and allow an application to retry this call. Define the behavior of clients depending on your scenario and the risk. If you extend the rotation life time, we recommend revoking existing tokens with a separate call.
 
@@ -181,6 +183,83 @@ The new and old refresh token are valid during the configured refresh token life
 > ### Note:  
 > For online and mobile scenarios, calls to refresh the old refresh token end in the new token. Calls with the new refresh token, invalidates the old refresh token.
 
+ **Access Token Format** 
+
+
+<table>
+<tr>
+<th valign="top">
+
+Settings
+
+
+
+</th>
+<th valign="top">
+
+Description
+
+
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Grant-Type Dependent \(Default\)
+
+
+
+</td>
+<td valign="top">
+
+The format of the token depends on the grant type. It is as folows:
+
+-   Authorization Code Flow - `JWT`
+-   Client Credentials Flow - `JWT`
+-   Resource Owner Password Credentials Flow - `opaque`
+-   Token Exchange - `opaque`
+-   JWT Bearer Flow - `opaque`
+-   Refresh Token Endpoint - `opaque`
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+JSON Web Token
+
+
+
+</td>
+<td valign="top">
+
+All tokens are generated in the JWT format.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Opaque
+
+
+
+</td>
+<td valign="top">
+
+All tokens are generated in the opaque format.
+
+
+
+</td>
+</tr>
+</table>
+
 To configure the token policy, proceed as follows:
 
 
@@ -202,11 +281,11 @@ To configure the token policy, proceed as follows:
 
 5.  Under *SINGLE SIGN-ON*, choose *OpenID Connect Configuration*.
 
-6.  Manually configure the token policy for the application.
+6.  Manually configure the token policy for the application. Use the slider or provide a number in the input field above the slider.
 
-    Use the slider or provide a number in the input field above the slider.
+    If needed, use the reset button to set to the default value.
 
-7.  **Optional:** If needed, use the reset button to set to the default value.
+7.  **Optional:** Choose values for the *Advanced Settings* configuration from the drop-downs.
 
 8.  Save your changes.
 

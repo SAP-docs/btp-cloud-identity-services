@@ -155,6 +155,22 @@ To edit an administrator's authorizations, proceed as follows:
     > 
     > </td>
     > </tr>
+    > <tr>
+    > <td valign="top">
+    > 
+    > Manage Identity Provisioning
+    > 
+    > 
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > This role gives the tenant administrator permission to configure identity provisioning. The tenant administrator is granted the main IPS\_ADMIN role.
+    > 
+    > 
+    > 
+    > </td>
+    > </tr>
     > </table>
     > 
     > If you remove all authorizations, the user or system will no longer be an administrator, and the name will be removed from the list on the left.

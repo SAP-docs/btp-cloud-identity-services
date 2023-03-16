@@ -4522,8 +4522,6 @@ Beta
 </td>
 <td valign="top">
 
-Tenant administrators have the option to sign or not the
-
 New
 
 

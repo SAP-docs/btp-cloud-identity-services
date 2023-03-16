@@ -10,7 +10,7 @@ Tenant administrator can view the JWT payload of the OpenID Connect tokens issue
 
 ## Prerequisites
 
-You have downloaded Identity Authentication troubleshooting logs with severity ***INFO***. For more information, see [View Troubleshooting Logs](view-troubleshooting-logs-2732321.md).
+You have downloaded Identity Authentication troubleshooting logs with severity ***INFO***. For more information, see [Download Troubleshooting Logs](download-troubleshooting-logs-2732321.md).
 
 
 

@@ -24,7 +24,7 @@ When you edit an existing custom authorization policy, you can add or delete res
 
     The details page of your application has an *Authorization Policies* tab.
 
-4.  Choose a custom authorization policy. You can recognize custom authorization policies at the :pencil2: \(Editable\) icon in the *Editable* column of the list of authorization policies. If the policy contains editable restrictions, it has the <span class="SAP-icons"></span> \(Editable Restrictions\) icon.
+4.  Choose a custom authorization policy. You can recognize custom authorization policies at the :pencil2: \(Editable\) icon in the *Editable* column of the list of authorization policies. If the policy contains editable restrictions, it has an <span class="SAP-icons"></span> \(Editable Restrictions\) icon.
 
 5.  Choose the *Edit* button.
 
@@ -33,18 +33,18 @@ When you edit an existing custom authorization policy, you can add or delete res
     -   You see the rule that came with the custom authorization policy in the *Rules* tab.
 
 
-6.  \(Optional\) To can enter a label and a description of the authorization policy or change them.
+6.  \(Optional\) You can enter a label and a description of the authorization policy or change them. The description is an optional comment.
 
 7.  To edit the rules of the authorization policy, choose the *Rules* tab.
 
 8.  Choose :heavy_plus_sign: to see the possible `RESTRICT` options. This button is either directly below `RESTRICT` or on the left side at the bottom of the page.
 
-9.  Choose one the available attributes, an operation, and enter a value. You can choose a value from the value help or type it in.
+9.  Choose one of the available attributes, an operation, and enter a value. You can choose a value from the value help or type it in.
 
     > ### Note:  
     > All rows that appear in a list directly below `RESTRICT` have an `AND` conjunction.
     > 
-    > All rows starting their own `RESTRICT` condition have an `OR` conjunction with the other `RESTRICT` rows.
+    > All rows starting with their own `RESTRICT` condition have an `OR` conjunction with the other `RESTRICT` rows.
 
 10. Choose the conditions that come with the application in the dropdown list. Next, choose an operator and choose or enter a value.
 

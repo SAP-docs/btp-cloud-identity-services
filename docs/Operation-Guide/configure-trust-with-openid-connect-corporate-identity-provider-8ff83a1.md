@@ -247,14 +247,14 @@ Configure the corporate identity provider in the administration console for SAP 
     <tr>
     <td valign="top">
 
-    Issuer
+    Name
 
 
     
     </td>
     <td valign="top">
 
-    Optional. Issuer URL of the corporate identity provider. Must be `https` and equal to the Issuer in the corporate identity provider OpenID Connect metadata.
+    Required. Unique URI based *Name* of the corporate identity provider. The issuer is used by default.
 
 
     
@@ -321,19 +321,23 @@ Configure the corporate identity provider in the administration console for SAP 
     </tr>
     </table>
     
-5.  **Optional:** Add additional scopes if needed.
+5.  **Optional:** Populate the OpenID Connect issuer and endpoints under the *Endpoints* section.
+
+    The *Endpoints* section is readonly.
+
+6.  **Optional:** Add additional scopes if needed.
 
     You can have up to 20 scopes. The `openid` scope is added by default. Each scope can have a length of up to 99 characters.
 
-6.  **Optional:** Choose the *Validate* button to check the configuration.
+7.  **Optional:** Choose the *Validate* button to check the configuration.
 
     A client credentials token request is sent to the corporate identity provider to receive a token to validate the client credentials.
 
-7.  Save your configuration.
+8.  Save your configuration.
 
     Once the identity provider has been updated, the system displays the message ***Identity provider <name of identity provider\> updated***.
 
-8.  **Optional:** Refresh the OpenID Connect metadata of the corporate identity provider.
+9.  **Optional:** Refresh the OpenID Connect metadata of the corporate identity provider.
 
     The metadata is refreshed automatically if it is older than 24 hours and there are logons which forward the request to the corporate identity provider.
 

@@ -1,6 +1,6 @@
 <!-- loio27323219a02a44198973091169b5a5c7 -->
 
-# View Troubleshooting Logs
+# Download Troubleshooting Logs
 
 Tenant administrator can view Identity Authentication troubleshooting logs to monitor the system, and diagnose and solve problems.
 
@@ -91,7 +91,7 @@ File format
 
 1.  Sign in to the administration console for SAP Cloud Identity Services.
 
-2.  Choose the *Troubleshooting Logs* tile.
+2.  Choose *Monitoring & Reporting* \> *Troubleshooting Logs* \> *Download*.
 
 3.  Define your criteria and download the log entries.
 

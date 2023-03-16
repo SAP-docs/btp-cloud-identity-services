@@ -8,6 +8,15 @@ Identity Authentication administrators can delete an existing custom authorizati
 
 
 
+<a name="loio3b78cc4f0b1545f4b6124a5987af5754__context_cmq_xpr_5wb"/>
+
+## Context
+
+> ### Caution:  
+> When you delete an authorization policy, remember that you also remove the assignments to users. This means that the users assigned to a deleted authorization policy can't access the application anymore.
+
+
+
 <a name="loio3b78cc4f0b1545f4b6124a5987af5754__steps_ltq_2vg_twb"/>
 
 ## Procedure

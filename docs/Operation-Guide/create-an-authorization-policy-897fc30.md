@@ -2,9 +2,9 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Create a New Authorization Policy
+# Create an Authorization Policy
 
-Identity Authentication administrators can create a new authorization policy, configure rules, and assign them to users.
+Identity Authentication administrators can create an authorization policy, configure rules, and assign them to users.
 
 
 
@@ -12,11 +12,11 @@ Identity Authentication administrators can create a new authorization policy, co
 
 ## Context
 
-You have the following options:
+You've the following options:
 
--   Create a new authorization policy based on the rules of a custom authorization policy, add restrictions, or change the attribute.
+-   Create an authorization policy based on the rules of a custom authorization policy, add restrictions, or change the attribute.
 
--   Combine authorization polices \(either base or custom authorization policies\).
+-   Create an authorization policy by combining authorization polices \(either base or custom authorization policies\).
 
 
 

@@ -181,6 +181,22 @@ To add a person as a new tenant administrator, proceed as follows:
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+
+    Manage Identity Provisioning
+
+
+    
+    </td>
+    <td valign="top">
+
+    This role gives the tenant administrator permission to configure identity provisioning. The tenant administrator is granted the main IPS\_ADMIN role.
+
+
+    
+    </td>
+    </tr>
     </table>
     
 6.  Save your changes.
@@ -333,6 +349,66 @@ To add a system as a new tenant administrator, proceed as follows:
     <td valign="top">
 
     This role gives the tenant administrator permission to manage tenant configuration and authorization assignment to users. Tenant administrators with that role can add additional roles to themselves or to other administrators.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+
+    Access Proxy System API
+
+
+    
+    </td>
+    <td valign="top">
+
+    This role gives the tenant administrator permission to access API for provisioning identities via proxy systems.
+
+    This role is needed for provisioning scenarios where proxy systems in the Identity Provisioning admin console are configured for synchronizing user data to and from central identity management solutions \(such as, the on-premise SAP Identity Management\).
+
+    In this case, you use the credentials of the admin user with *Access Proxy System API* role assigned for setting up the technical user in the identity management solution for communicating with Identity Provisioning.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+
+    Access Real-Time Provisioning API
+
+
+    
+    </td>
+    <td valign="top">
+
+    This role gives the tenant administrator permission to access API for real-time provisioning of identities.
+
+    This role is needed for provisioning scenarios where user data is provisioned real-time without running jobs \(manual or scheduled ones\) in Identity Provisioning.
+
+    In this case, you use the credentials of the admin user with *Access Real-Time Provisioning API* role assigned for setting up the authentication mechanism of the provisioning system defined on the *User Provisioning* screen in the Identity Provisioning admin console.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+
+    Access Identity Provisioning Tenant Admin API
+
+
+    
+    </td>
+    <td valign="top">
+
+    This role gives the tenant administrator permission to access tenant API for running provisioning jobs.
+
+    This role is needed for running provisioning jobs from an API client.
+
+    The API is available on the SAP API Business Hub: [SAP Cloud Identity Services](https://api.sap.com/package/SCPIdentityServices/rest) *Identity Provisioning Service* \> *API Reference* \> *Jobs*. The URL for accessing the Tenant Admin API follows the pattern: `https://<IPS tenant host>/ips/publicapi/v1/startJob/{SourceSystemId}/jobs/{JobType}`.
 
 
     
