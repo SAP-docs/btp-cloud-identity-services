@@ -4,7 +4,7 @@
 
 # Create an Authorization Policy
 
-Identity Authentication administrators can create an authorization policy, configure rules, and assign them to users.
+Identity Authentication administrators can create an authorization policy, configure rules, and assign the authorization policies to users.
 
 
 
@@ -12,11 +12,11 @@ Identity Authentication administrators can create an authorization policy, confi
 
 ## Context
 
-You've the following options:
+You have the following options:
 
 -   Create an authorization policy based on the rules of a custom authorization policy, add restrictions, or change the attribute.
 
--   Create an authorization policy by combining authorization polices \(either base or custom authorization policies\).
+-   Create an authorization policy by combining authorization policies \(either base or custom authorization policies\).
 
 
 
@@ -29,7 +29,7 @@ You've the following options:
 
 2.  Under *Applications & Resources*, choose *Applications*.
 
-3.  Choose your application that supports authorization management. For information, see the documentation of the application.
+3.  Choose an application that supports authorization management. For information, see the documentation of the application.
 
     The details page of your application has an *Authorization Policies* tab.
 
@@ -41,9 +41,7 @@ You've the following options:
 
     -   *Restrict* Add restrictions and attributes or only change attributes. See [Edit an Authorization Policy](edit-an-authorization-policy-c76aca6.md).
 
-    -   *Combine* Create one authorization policy with an OR combination of rules of two authorization policies. See .
-
-        .
+    -   *Combine* Create one authorization policy with an OR combination of the rules of two authorization policies. See [Combine Authorization Policies](combine-authorization-policies-1a69414.md).
 
 
     You can now continue by assigning the authorization policy to a user or changing its rule.

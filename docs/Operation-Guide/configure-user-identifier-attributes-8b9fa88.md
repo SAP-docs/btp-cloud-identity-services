@@ -164,7 +164,7 @@ No/Configurable
 </tr>
 </table>
 
-The `Login Name` and *Phone* identifiers of a user can't have values that are equal to the `User ID`, `E-Mail`, `Login Name` and *Phone* identifiers of another user.
+The `Login Name` and *Phone* identifiers of a user can't have values that are equal to the `User ID`, `E-Mail`, `Login Name`, and *Phone* identifiers of another user.
 
 > ### Note:  
 > The `Display Name` user identifier for the tenants created before the system upgrade on May 13, 2020 is configured as required and unique.
@@ -293,7 +293,7 @@ If you want to change the configuration for the user identifier for your tenant,
 
 2.  Under *Applications and Resources*, choose the *Tenant Settings* tile.
 
-    At the top of the page you can view the administrative and license relevant information of the tenant.
+    At the top of the page, you can view the administrative and license relevant information of the tenant.
 
 3.  Choose the *Logon Alias* list item.
 

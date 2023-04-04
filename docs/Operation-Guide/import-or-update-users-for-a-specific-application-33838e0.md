@@ -303,7 +303,7 @@ No
 </td>
 <td valign="top">
 
-Must be a string value specified by a two or four-letter code in one of the following formats: XX. Otherwise the activation e-mail is in English.
+Must be a string value specified by a two or four-letter code in one of the following formats: XX. Otherwise, the activation e-mail is in English.
 
 
 

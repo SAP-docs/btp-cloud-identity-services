@@ -2,7 +2,7 @@
 
 # Access Audit Logs \(AWS, Azure Infrastructure\)
 
-You can access the audit logs for changes in the personal data, successful, and failed authentications for your Identity Authentication tenant.
+Access the audit logs for changes in the personal data, successful, and failed authentications for Identity Authentication tenants on the AWS and Azure infrastructure.
 
 
 
@@ -22,6 +22,8 @@ You have a subaccount in your global account on SAP BTP, Cloud Foundry. For more
 > For tenants on the SAP infrastructure, see [Access Audit Logs \(SAP Infrastructure\)](access-audit-logs-sap-infrastructure-9f6b9a4.md).
 
 To view the audit logs for tenants on the AWS and Azure infrastructure you must add configurations in the SAP BTP cockpit and the administration console for SAP Cloud Identity Services first.
+
+The audit log entries for tenants on the AWS and Azure infrastructure are retained for 90 days.
 
 To view the audit logs, follow the procedures below:
 

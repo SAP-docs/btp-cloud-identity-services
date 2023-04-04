@@ -362,7 +362,7 @@ SAP Analytics Cloud, embedded edition
 <tr>
 <td valign="top" rowspan="4">
 
-SAP Data Warehouse Cloud embedded
+SAP Datasphere
 
 
 

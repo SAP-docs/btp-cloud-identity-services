@@ -194,7 +194,7 @@ supported attributes:
 -   email
 
     > ### Tip:  
-    > If e-mail is mandatory, for users without valid e-mail addresses or for testing purposes use the `sap-test.de` domain, for example `<username>@sap-test.de`. Do not use any other existing or non-existing domains.
+    > If e-mail is mandatory, for users without valid e-mail addresses or for testing purposes use the `sap-test.de` domain, for example `<username>@sap-test.de`. Do not use any other existing or nonexisting domains.
 
 -   loginName
 -   uid

@@ -20,11 +20,11 @@ When you edit an existing custom authorization policy, you can add or delete res
 
 2.  Under *Applications & Resources*, choose *Applications*.
 
-3.  Choose your application that supports authorization management. For information, see the documentation of the application.
+3.  Choose the application that supports authorization management. For more information, see the documentation of the application.
 
     The details page of your application has an *Authorization Policies* tab.
 
-4.  Choose a custom authorization policy. You can recognize custom authorization policies at the :pencil2: \(Editable\) icon in the *Editable* column of the list of authorization policies. If the policy contains editable restrictions, it has an <span class="SAP-icons"></span> \(Editable Restrictions\) icon.
+4.  Choose a custom authorization policy. Custom authorization policies appear with an:pencil2: \(Editable\) icon in the *Editable* column of the list of authorization policies. If the policy contains editable restrictions, it has an <span class="SAP-icons"></span> \(Editable Restrictions\) icon.
 
 5.  Choose the *Edit* button.
 

@@ -16,7 +16,7 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 
 ## Context
 
-You can change the name format, the certificate used by the identity provider to digitally sign the messages for the applications, and set the token policy by configuring the validity of the refresh token, access and id\_token, and the maximum sessions per user.
+You can change the name format, the certificate used by the identity provider to digitally sign the messages for the applications, set the token policy by configuring the validity of the refresh token, access and id\_token, and the maximum sessions per user, and extend the standard metadata with custom values.
 
 > ### Note:  
 > The signing certificate is one and the same for SAML 2.0 and OpenId Connect. A change in one of the configurations affects the other one.
@@ -115,6 +115,8 @@ The default value is 1.
 </tr>
 </table>
 
+The values for the extension of the standard metadata are included in the discovery endpoint with the `urn:microsoft.azure.ad.verificationtoken` key. The accepted values are characters a-z, A-Z, 0-9 and '-'. The maximum length of the value is 99 characters.
+
 > ### Remember:  
 > It takes 2 minutes for the configuration changes to take place.
 
@@ -128,7 +130,7 @@ To view or change the tenant OpenID Connect configurations, proceed as follows:
 
 2.  Under *Applications and Resources*, choose the *Tenant Settings* tile.
 
-    At the top of the page you can view the administrative and license relevant information of the tenant.
+    At the top of the page, you can view the administrative and license relevant information of the tenant.
 
 3.  Choose the *OpenID Connect Configuration* list item.
 
@@ -257,6 +259,8 @@ To view or change the tenant OpenID Connect configurations, proceed as follows:
 
         When you get your certificate, copy and paste it as text in the View Certificate Details dialog.
 
+
+7.  **Optional:** To extend the standard metadata, enter custom values in the *Microsoft Azure AD Verification Token* field.
 
 
 

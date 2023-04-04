@@ -136,10 +136,10 @@ The configuration of SAP BTP depends on the type of the user store. You have two
     The procedure is described in the documentation of SAP BTP in the link below.
 
     > ### Note:  
-    > Beware that for each flow the respective grant type must be selected. All other grant types can be deselected if they are not required by the application.
+    > Beware that for each flow the respective grant type must be selected. All other grant types can be deselected if they aren't required by the application.
 
     > ### Note:  
-    > Since Identity Authentication will create the subscription to the *proxy* application, the *Prerequisites* section in the respective document is not relevant for the current scenario.
+    > Since Identity Authentication will create the subscription to the *proxy* application, the *Prerequisites* section in the respective document isn't relevant for the current scenario.
     > 
     > For the *Authorization Grant* field in the SAP BTP cockpit, choose *Client Credentials* from the dropdown, and for the *Subscription* field, choose *sci/proxy*.
     > 
@@ -1060,10 +1060,10 @@ country
     The procedure is described in the documentation of SAP BTP in the link below.
 
     > ### Note:  
-    > Beware that for each flow the respective grant type must be selected. All other grant types can be deselected if they are not required by the application.
+    > Beware that for each flow the respective grant type must be selected. All other grant types can be deselected if they aren't required by the application.
 
     > ### Note:  
-    > Since Identity Authentication will create the subscription to the *proxy* application, the *Prerequisites* section in the respective document is not relevant for the current scenario.
+    > Since Identity Authentication will create the subscription to the *proxy* application, the *Prerequisites* section in the respective document isn't relevant for the current scenario.
     > 
     > For the *Authorization Grant* field in the SAP BTP cockpit, choose *Client Credentials* from the dropdown, and for the *Subscription* field, choose *sci/proxy*.
     > 

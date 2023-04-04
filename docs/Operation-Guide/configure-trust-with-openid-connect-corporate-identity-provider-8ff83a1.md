@@ -2,7 +2,7 @@
 
 # Configure Trust with OpenID Connect Corporate Identity Provider
 
-This document is intended to help you configure trust with an OpenID Connect \(OIDC\) corporate identity provider. In this scenario Identity Authentication acts as a proxy to delegate the authentication to OIDC-compliant corporate identity providers.
+This document is intended to help you configure trust with an OpenID Connect \(OIDC\) corporate identity provider. In this scenario Identity Authentication acts as a proxy to delegate the authentication to an OIDC-compliant corporate identity provider.
 
 
 
@@ -13,6 +13,9 @@ Identity Authentication can use OIDC-compliant identity providers as external au
 As an identity provider proxy, Identity Authentication acts as an OpenID identity provider to the relying party, and as relying party to the corporate identity provider. Once a user is authenticated at the corporate identity provider, successive authentication requests from relying parties, which use the same corporate identity provider aren't forwarded to it as long as the session at Identity Authentication is active. Identity Authentication issues JSON Web Tokens \(JWTs\) based on the user data received during the first authentication.
 
 To use Identity Authentication as a proxy to delegate authentication to an external OpenID Connect corporate identity provider you have to configure trust with that corporate identity provider.
+
+> ### Tip:  
+> If you want to change one corporate identity provider with another, for example move from a SAML identity provider to an OpenID Connect one, it's helpful to know the applications that the corporate identity provider uses. To see the applications that have established trust with a specific corporate identity provider, sign in to the administration console and go to *Identity Providers* \> *Corporate Identity Providers* \> *identity provider from the list* \> *Trusting Applications*.
 
 To configure trust with the corporate identity provider, follow the procedures below:
 
@@ -53,7 +56,7 @@ Configure Identity Authentication as an application at the corporate identity pr
 
 ## Context
 
-The information retrieved from `.well-known/openid-configuration` endpoint must contain:
+The information retrieved from `.well-known/openid-configuration` endpoint can contain:
 
 
 <table>

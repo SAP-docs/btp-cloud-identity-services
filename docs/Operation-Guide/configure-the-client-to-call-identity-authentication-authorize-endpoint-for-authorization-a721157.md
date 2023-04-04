@@ -415,7 +415,7 @@ string
 </td>
 <td valign="top">
 
-The `login_hint` parameter facilitates the user when he or she is known to the service provider \(SP\). Thus it prevents the user from re-typing the user identifier on the logon or conditional screen.
+The `login_hint` parameter helps the user when he or she is known to the service provider \(SP\). Thus it prevents the user from re-typing the user identifier on the logon or conditional screen.
 
 Supported values are the allowed logon identifiers for the users. The options are *User ID*, *Login Name*, and *E-Mail* \(For SAML 2.0\). For more information, see [Configure Allowed Logon Identifiers](configure-allowed-logon-identifiers-3adf1ff.md) .
 
@@ -531,7 +531,7 @@ string
 </td>
 <td valign="top">
 
-Reduces the expiration of a refresh token. It is useful if your application is called from mobile and web applications, and both have different session requirements. If you set the token lifetime to 0, you won't receive a `refresh_token` in response.
+Reduces the expiration of a refresh token. It's useful if your application is called from mobile and web applications, and both have different session requirements. If you set the token lifetime to 0, you won't receive a `refresh_token` in response.
 
 
 

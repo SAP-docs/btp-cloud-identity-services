@@ -70,7 +70,7 @@ The tenant administrator has configured Conditional Authentication in the admini
 5.  According to the rules, the user should be authenticated via the corporate identity provider. Identity Authentication sends the user identifier as `login_hint` parameter to the corporate identity provider in the authentication request, according to the *Login Hint Configuration* configuration in the administration console.
 
     > ### Note:  
-    > The `login_hint` parameter facilitates the user when he or she is known to the service provider \(SP\). Thus it prevents the user from re-typing the user identifier on the logon or conditional screen.
+    > The `login_hint` parameter helps the user when he or she is known to the service provider \(SP\). Thus it prevents the user from re-typing the user identifier on the logon or conditional screen.
 
     > ### Remember:  
     > The user identifier from step 3 is required at the first logon. After that, based on the persistent cookie, the user is redirected directly to the logon screen of the corporate identity provider.

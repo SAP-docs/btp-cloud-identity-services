@@ -13,7 +13,7 @@ Identity Authentication administrators can delete an existing custom authorizati
 ## Context
 
 > ### Caution:  
-> When you delete an authorization policy, remember that you also remove the assignments to users. This means that the users assigned to a deleted authorization policy can't access the application anymore.
+> When you delete an authorization policy, remember that you are also removing the user assignments. This means that the users assigned to a deleted authorization policy can't access the application anymore.
 
 
 
@@ -25,7 +25,7 @@ Identity Authentication administrators can delete an existing custom authorizati
 
 2.  Under *Applications & Resources*, choose *Applications*.
 
-3.  Choose your application that supports authorization management. For information, see the documentation of the application.
+3.  Choose an application that supports authorization management. For information, see the documentation of the application.
 
     The details page of your application has an *Authorization Policies* tab.
 
@@ -33,8 +33,6 @@ Identity Authentication administrators can delete an existing custom authorizati
 
 5.  Choose the custom authorization policy you want to delete.
 
-6.  To delete the authorization policy, choose :wastebasket:.
-
-7.  Confirm that you want to delete the authorization policy.
+6.  To delete the authorization policy, choose :wastebasket: and confirm that you want to delete the authorization policy.
 
 

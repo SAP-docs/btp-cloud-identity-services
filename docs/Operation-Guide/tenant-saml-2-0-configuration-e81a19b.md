@@ -37,7 +37,7 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
 
 2.  Under *Applications and Resources*, choose the *Tenant Settings* tile.
 
-    At the top of the page you can view the administrative and license relevant information of the tenant.
+    At the top of the page, you can view the administrative and license relevant information of the tenant.
 
 3.  Choose the *SAML 2.0 Configuration* list item.
 

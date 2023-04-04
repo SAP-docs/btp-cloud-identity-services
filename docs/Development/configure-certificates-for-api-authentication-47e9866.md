@@ -74,7 +74,7 @@ Identity Authentication supports SAP Passport CA as trusted certificate authorit
     Fill in the fields under *Generate Certificate* and choose the *Generate* button.
 
     > ### Note:  
-    > You must provide a Common Name \(CN\) and password to generate the certificate. The maximum length of the CN is 64 characters. Once the certificate is generated it is saved as a *.p12* file. The system populates the *Insert as Text* field with it, and provides the certificate attributes in the Subject DN. The common name \(CN\) in the generated certificate is in the format `<common name>` \(`<admin user ID>`\), where common name is the CN provided by the administrator, and admin user ID is the administrator's user id.
+    > You must provide a Common Name \(CN\) and password to generate the certificate. The maximum length of the CN is 64 characters. Once the certificate is generated, it is saved as a *.p12* file. The system populates the *Insert as Text* field with it, and provides the certificate attributes in the Subject DN. The common name \(CN\) in the generated certificate is in the format `<common name>` \(`<admin user ID>`\), where common name is the CN provided by the administrator, and admin user ID is the administrator's user id.
 
     > ### Remember:  
     > You can generate up to 500 certificates per year. If you reach the limit, you can still upload your certificate, or insert it as a text.

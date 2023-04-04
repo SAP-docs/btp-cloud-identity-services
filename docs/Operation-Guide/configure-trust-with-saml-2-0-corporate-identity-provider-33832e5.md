@@ -17,6 +17,9 @@ As an identity provider proxy, Identity Authentication will act as an SAML 2.0 i
 
 To use Identity Authentication as a proxy to delegate authentication to an external corporate identity provider you have to configure trust with that corporate identity provider.
 
+> ### Tip:  
+> If you want to change one corporate identity provider with another, for example move from a SAML identity provider to an OpenID Connect one, it's helpful to know the applications that the corporate identity provider uses. To see the applications that have established trust with a specific corporate identity provider, sign in to the administration console and go to *Identity Providers* \> *Corporate Identity Providers* \> *identity provider from the list* \> *Trusting Applications*.
+
 To configure trust with the corporate identity provider, follow the procedures below:
 
  <a name="task_jlj_2rm_qgb"/>

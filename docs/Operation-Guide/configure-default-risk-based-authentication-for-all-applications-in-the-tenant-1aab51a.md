@@ -33,7 +33,7 @@ Be careful when you set rules for authentication for the tenant. The rules apply
 
 On the other hand, if a specific application has risk-based authentication different from the default one \(no rules created; default action - Allow\), and you apply default risk-based authentication for the tenant, the rules for the tenant won't apply to that specific application.
 
-For more information, how to apply risk-based authentication for a specific application, see .[Configure Risk-Based Authentication for an Application](configure-risk-based-authentication-for-an-application-bc52fbf.md#loiobc52fbf3d59447bbb6aa22f80d8b6056)
+For more information, how to apply risk-based authentication for a specific application, see [Configure Risk-Based Authentication for an Application](configure-risk-based-authentication-for-an-application-bc52fbf.md#loiobc52fbf3d59447bbb6aa22f80d8b6056).
 
 The configured rules manage authentication according to IP range \(specified in CIDR notation\), group membership, authentication method, and type of the authenticating user.
 
@@ -63,7 +63,7 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
 
 2.  Under *Applications and Resources*, choose the *Tenant Settings* tile.
 
-    At the top of the page you can view the administrative and license relevant information of the tenant.
+    At the top of the page, you can view the administrative and license relevant information of the tenant.
 
 3.  **Optional:** Configure the authentication rules. Choose one of the following \(optional\):
 
@@ -369,7 +369,7 @@ The fields *IP Range*, *Group*, *Authentication Method*, and *User Type* are not
 
 2.  Under *Applications and Resources*, choose the *Tenant Settings* tile.
 
-    At the top of the page you can view the administrative and license relevant information of the tenant.
+    At the top of the page, you can view the administrative and license relevant information of the tenant.
 
 3.  Choose *Risk-Based Authentication*.
 

@@ -88,7 +88,7 @@ If you want to use the ***DiDeveloper*** or ***DiAdministrator*** role together 
 2.  In the navigation area, choose *Services* \> *SAP Web IDE Full-Stack tile*.
 
     > ### Note:  
-    > If not enabled, choose *Enable*
+    > If not enabled, choose *Enable*.
 
 3.  Choose *Configure Service* under *Take Action*.
 

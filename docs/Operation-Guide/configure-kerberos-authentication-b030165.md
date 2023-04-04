@@ -674,7 +674,7 @@ This procedure is performed by the tenant administrator.
 
 3.  Under *Applications and Resources*, choose the *Tenant Settings* tile.
 
-    At the top of the page you can view the administrative and license relevant information of the tenant.
+    At the top of the page, you can view the administrative and license relevant information of the tenant.
 
 4.  Choose the *SPNEGO* list item.
 

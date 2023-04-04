@@ -39,7 +39,7 @@ The security alert e-mails are disabled by default. To start sending security al
 
 2.  Under *Applications and Resources*, choose the *Tenant Settings* tile.
 
-    At the top of the page you can view the administrative and license relevant information of the tenant.
+    At the top of the page, you can view the administrative and license relevant information of the tenant.
 
 3.  Choose the *Security Alerting* list item.
 

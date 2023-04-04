@@ -32,7 +32,7 @@ The plain text document can include the following tags: `<a>`, `<strong>`, and `
 > -   `<strong>Additional requirements</strong>`
 > -   `<em>Important:</em>`
 
-To open the link from the document in the preview in the admin console, right click the link and open it in a new tab.
+To open the link from the document in the preview in the admin console, right-click the link and open it in a new tab.
 
 
 

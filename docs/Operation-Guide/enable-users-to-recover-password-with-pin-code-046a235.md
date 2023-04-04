@@ -176,7 +176,7 @@ To configure PIN code option in the administration console, follow the procedure
 
 2.  Under *Applications and Resources*, choose the *Tenant Settings* tile.
 
-    At the top of the page you can view the administrative and license relevant information of the tenant.
+    At the top of the page, you can view the administrative and license relevant information of the tenant.
 
 3.  Choose the *Password Recovery* list item.
 

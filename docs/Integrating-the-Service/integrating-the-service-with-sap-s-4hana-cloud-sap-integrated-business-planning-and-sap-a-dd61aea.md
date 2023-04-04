@@ -6,7 +6,7 @@ This integration document aims to provide information about single sign-on \(SSO
 
 
 
-SAP Analytics Cloud, is integreted in SAP S/4HANA Cloud or in SAP Integrated Business Planning, or it can be part of SAP Data Warehouse Cloud embedded, that is integrated with SAP S/4HANA Cloud as of SAP S/4HANA Cloud 2208.
+SAP Analytics Cloud, is integreted in SAP S/4HANA Cloud or in SAP Integrated Business Planning, or it can be part of SAP Datasphere, that is integrated with SAP S/4HANA Cloud as of SAP S/4HANA Cloud 2208.
 
 
 

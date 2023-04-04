@@ -23,6 +23,8 @@ You can add both a person and a system in the administration console to act as a
 
 [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md "As a tenant administrator, you can edit both your own authorizations and other administrators' authorizations in the administration console for SAP Cloud Identity Services. By editing the administrator authorizations you can also delete an administrator.")
 
+[Configure Authorization Policies for Administration Console](configure-authorization-policies-for-administration-console-08fea39.md "Configure a granular access control policies for the administrators of SAP Cloud Identity Services.")
+
  <a name="loio1dc498bff0674743a1a3a0ec3f0bf298"/>
 
 <!-- loio1dc498bff0674743a1a3a0ec3f0bf298 -->
@@ -50,7 +52,7 @@ To add a person as a new tenant administrator, proceed as follows:
     > ### Note:  
     > The list also includes the SAP BTP system, which by default has authorizations to set up the trust with Identity Authentication.
 
-3.  On the left-hand panel press *Add* \> *System*.
+3.  On the left-hand panel press *Add* \> *User*.
 
 4.  Make the appropriate entries in the *Email*, *First Name*, and *Last Name* fields for the user you want to add as an administrator.
 
@@ -423,7 +425,7 @@ To add a system as a new tenant administrator, proceed as follows:
         > ### Note:  
         > You can upload a certificate, generate a new one, or insert it as a text.
         > 
-        > You must provide a Common Name \(CN\) and password to generate the certificate. The maximum length of the CN is 64 characters. Once the certificate is generated it is saved as a *.p12* file. The system populates the *Insert as Text* field with it, and provides the certificate attributes in the Subject DN. The common name \(CN\) in the generated certificate is in the format `<common name>` \(`<admin user ID>`\), where common name is the CN provided by the administrator, and admin user ID is the administrator's user id.
+        > You must provide a Common Name \(CN\) and password to generate the certificate. The maximum length of the CN is 64 characters. Once the certificate is generated, it is saved as a *.p12* file. The system populates the *Insert as Text* field with it, and provides the certificate attributes in the Subject DN. The common name \(CN\) in the generated certificate is in the format `<common name>` \(`<admin user ID>`\), where common name is the CN provided by the administrator, and admin user ID is the administrator's user id.
         > 
         > Identity Authentication supports SAP Passport CA as trusted certificate authority \(CA\).
 

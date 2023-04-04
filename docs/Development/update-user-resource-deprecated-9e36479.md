@@ -62,7 +62,7 @@ Attributes are case-sensitive and only the exact case must be used.
     > -   space and the "\(\),:;<\>@\[\\\] characters can be used only if surrounded by quotation marks. The \\ or " must be preceded by \\
 
     > ### Tip:  
-    > If e-mail is mandatory, for users without valid e-mail addresses or for testing purposes use the `sap-test.de` domain, for example `<username>@sap-test.de`. Do not use any other existing or non-existing domains.
+    > If e-mail is mandatory, for users without valid e-mail addresses or for testing purposes use the `sap-test.de` domain, for example `<username>@sap-test.de`. Do not use any other existing or nonexisting domains.
 
 -   `name.honorificPrefix`
 
@@ -116,7 +116,7 @@ Attributes are case-sensitive and only the exact case must be used.
 -   `locale`
 
     > ### Note:  
-    > Must be a string value specified by a two or four-letter code in one of the following formats: XX. Otherwise the activation e-mail is in English.
+    > Must be a string value specified by a two or four-letter code in one of the following formats: XX. Otherwise, the activation e-mail is in English.
 
 -   `phoneNumbers[work].value`
 

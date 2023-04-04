@@ -23,7 +23,7 @@ Every user in Identity Authentication has a `User ID` which is an automatically 
 
 2.  Under *Applications and Resources*, choose the *Tenant Settings* tile.
 
-    At the top of the page you can view the administrative and license relevant information of the tenant.
+    At the top of the page, you can view the administrative and license relevant information of the tenant.
 
 3.  Choose the *Tenant Default Values* list item.
 

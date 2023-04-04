@@ -109,7 +109,7 @@ Content of password
     -   Non-alphabetic characters \(!@\#$%...\);
 
     > ### Note:  
-    > The default is at least three of the the groups.
+    > The default is at least three of the groups.
 
 
 
@@ -256,7 +256,7 @@ Shows the minimum lifetime of a password before it can be changed.
 </td>
 <td valign="top">
 
-No
+Unlimited
 
 
 
@@ -390,7 +390,7 @@ Indicates whether a password history is retained, and how many passwords from th
 </td>
 <td valign="top">
 
-No
+Unlimited
 
 
 
@@ -422,7 +422,7 @@ Indicates how long the system retains unused passwords for.
 </td>
 <td valign="top">
 
-No
+Unlimited
 
 
 
@@ -454,14 +454,17 @@ Indicates possibility to force the user to reset or change password if the appli
 </td>
 <td valign="top">
 
-No
+Not Applicable
 
 
 
 </td>
 <td valign="top">
 
-No
+Scenario Based
+
+-   *Reset password* - If a user has't used the password during the set user inactivity period, the system will force a password reset at the first logon after the inactivity period expires.
+-   *Change password* - If a user hasn't changed the password within he password lifetime, the system will force a password change at the first logon after the aximum password age period expires.
 
 
 

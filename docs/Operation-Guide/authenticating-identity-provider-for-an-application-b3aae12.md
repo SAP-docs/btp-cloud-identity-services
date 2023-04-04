@@ -21,7 +21,7 @@ You have the following options for an authenticating identity provider in the ad
     > 
     > The `login_hint` is sent according to the configuration done on tenant level. For more information, see [Configure Login Hint Parameter](configure-login-hint-parameter-c6dd6a5.md).
     > 
-    > The `login_hint` parameter facilitates the user when he or she is known to the service provider \(SP\). Thus it prevents the user from re-typing the user identifier on the logon or conditional screen.
+    > The `login_hint` parameter helps the user when he or she is known to the service provider \(SP\). Thus it prevents the user from re-typing the user identifier on the logon or conditional screen.
 
 -   Corporate Identity Provider
 
@@ -30,7 +30,7 @@ You have the following options for an authenticating identity provider in the ad
     > ### Note:  
     > When Identity Authentication is set as proxy, and the service provider \(SP\) is configured to send a `login_hint` parameter, the `login_hint` coming from the SP will be sent to the corporate IdP in the authentication request.
     > 
-    > The `login_hint` parameter facilitates the user when he or she is known to the service provider \(SP\). Thus it prevents the user from re-typing the user identifier on the logon or conditional screen.
+    > The `login_hint` parameter helps the user when he or she is known to the service provider \(SP\). Thus it prevents the user from re-typing the user identifier on the logon or conditional screen.
 
     > ### Remember:  
     > If you want to use a corporate identity provider for a system application, the `name ID` attribute sent in the assertion by that corporate identity provider must match the *E-Mail*, *Login Name* or *User ID* attribute of the user in the user store of Identity Authentication.

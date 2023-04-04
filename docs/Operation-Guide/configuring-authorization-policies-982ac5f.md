@@ -32,15 +32,6 @@ For more information, see [Subscribe to Multitenant Applications Using the Cockp
 
 Authorization management in Identity Authentication allows applications to define authorization models with complex instance restrictions for data access. Developers define and deploy authorization policies with functional checks, instance-based authorizations, and user attributes. They're available in the Identity Authentication administration console. If necessary, developers can update existing authorization policies.
 
-Authorization management supports the following environments:
-
--   Cloud Foundry
-
--   Kubernetes
-
--   Kyma
-
-
 
 
 <a name="loio982ac5f91d2346fda8dd8096e861fc36__section_r2m_vlx_l5b"/>
@@ -193,7 +184,12 @@ Administration console
 </tr>
 </table>
 
-We distinguish between different types of authorization policies. They come with different packages. Customers can deploy their own authorization policies in customer-developed packages.
+We distinguish between different types of authorization policies. You recognize the diffent types in the *Package* column.
+
+-   The package name of the basic policies is defined by the application.
+
+-   Customers can deploy their own authorization policies in customer-developed packages, which have the package name *Customer Package* in the list of authorization policies.
+
 
 **Authorization Policy Types**
 
@@ -257,7 +253,6 @@ Authorization policy created by administrators. You can change and delete this a
 
 Authorization policy administrators can configure the following in custom authorization policies:
 
--   Combine authorization policies \(either basic or custom authorization policies\)
--   Replace an unrestricted attribute value with a restriction
--   Change an attribute value
+-   Combine authorization policies \(either basic or custom authorization policies\). See [Combine Authorization Policies](combine-authorization-policies-1a69414.md).
+-   Add or delete restrictions and their attribute values. See [Edit an Authorization Policy](edit-an-authorization-policy-c76aca6.md).
 

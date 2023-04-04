@@ -1,5 +1,7 @@
 <!-- loio06078a681826495eba1f821e5d106dd4 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Search Users
 
 As a tenant administrator, you can search for a specific user or users in the administration console for SAP Cloud Identity Services.
@@ -106,6 +108,8 @@ You can list all users in the tenant for Identity Authentication or filter your 
     </tr>
     </table>
     
+4.  **Optional:** To configure the user details columns, choose the *Settings* icon :gear: and select the columns that you want to see.
+
 
 **Related Information**  
 

@@ -93,7 +93,7 @@ Identity Authentication supports three levels of password security. You should u
 
 ## Session Security
 
-Session cookies in Identity Authentication are protected with a Transport Layer Security \(TLS\) and with the *Secure* and *HttpOnly* attributes. You do not need to make any additional configurations for Identity Authentication.
+Session cookies in Identity Authentication are protected with a Transport Layer Security \(TLS\) and with the *Secure* and *HttpOnly* attributes. You don't need to make any additional configurations for Identity Authentication.
 
 
 

@@ -39,7 +39,7 @@ You can configure more than one RADIUS server in the administration console for 
 
 2.  Under *Applications and Resources*, choose the *Tenant Settings* tile.
 
-    At the top of the page you can view the administrative and license relevant information of the tenant.
+    At the top of the page, you can view the administrative and license relevant information of the tenant.
 
 3.  Choose the *RADIUS Server Configuration* list item.
 

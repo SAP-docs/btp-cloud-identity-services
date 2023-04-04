@@ -175,6 +175,534 @@ Identity Authentication
 </td>
 <td valign="top">
 
+2023-03-31
+
+
+
+</td>
+<td valign="top">
+
+2023-03-31
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Management
+
+
+
+</td>
+<td valign="top">
+
+You can configure which user ID attribute can be visible on the *User Management* section in the administration console. See [Search Users](Operation-Guide/search-users-06078a6.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-03-31
+
+
+
+</td>
+<td valign="top">
+
+2023-03-31
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Global User ID
+
+
+
+</td>
+<td valign="top">
+
+You can reuse previous versions of the *Global User ID* for one and the same user. See [Search Users](Operation-Guide/search-users-06078a6.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-03-31
+
+
+
+</td>
+<td valign="top">
+
+2023-03-31
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+OpenID Connect Configurations
+
+
+
+</td>
+<td valign="top">
+
+You can extend the standard OpenID Connect metadata. See [Tenant OpenID Connect Configurations](Operation-Guide/tenant-openid-connect-configurations-3d6abcc.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-03-31
+
+
+
+</td>
+<td valign="top">
+
+2023-03-31
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Corporate IdPs
+
+
+
+</td>
+<td valign="top">
+
+You can check which applications have established trust with a specific corporate identity provider in the administration console. See [Configure Trust with OpenID Connect Corporate Identity Provider](Operation-Guide/configure-trust-with-openid-connect-corporate-identity-provider-8ff83a1.md) and [Configure Trust with SAML 2.0 Corporate Identity Provider](Operation-Guide/configure-trust-with-saml-2-0-corporate-identity-provider-33832e5.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-03-31
+
+
+
+</td>
+<td valign="top">
+
+2023-03-31
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Configuration of Authorization Policies
+
+
+
+</td>
+<td valign="top">
+
+Authorization management enables administrators to configure authorization policies throughout multiple environments and assign them to users. In the administration console, administrators can create custom authorization policies. They can edit an existing one by adding or deleting restrictions, changing user attribute values, or by combining rules of multiple authorization policies in a new one. See [Configuring Authorization Policies](https://help.sap.com/docs/IDENTITY_AUTHENTICATION/6d6d63354d1242d185ab4830fc04feb1/982ac5f91d2346fda8dd8096e861fc36.html?version=Cloud).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-03-31
+
+
+
+</td>
+<td valign="top">
+
+2023-03-31
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+
+
+</td>
+<td valign="top">
+
+ Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
 2023-03-16
 
 
@@ -1184,7 +1712,7 @@ Administration Console
 
 You can now configure and work with Identity Provisioning in the administration console for SAP Cloud Identity Services.
 
-The entire provisioning functionality, which includes adding, enabling, disabling, deleting and resetting provisioning systems, running jobs, viewing and downloading logs, is integrated there and can be accessed in the navigation area under SAP Cloud Identity Services.
+The entire provisioning functionality, which includes adding, enabling, disabling, deleting, and resetting provisioning systems, running jobs, viewing and downloading logs, is integrated there and can be accessed in the navigation area under SAP Cloud Identity Services.
 
 The latest step in tightening SAP Cloud Identity Services integration allows you to manage your configurations in one place without the need to switch between consoles. To benefit from it, your Identity Provisioning tenant must run on SAP Cloud Identity Services infrastructure.
 
@@ -2068,7 +2596,7 @@ Tenant Settings
 </td>
 <td valign="top">
 
-The `Login Name` user identifier can be configured as required or non-required. See [Configure User Identifier Attributes](Operation-Guide/configure-user-identifier-attributes-8b9fa88.md).
+The `Login Name` user identifier can be configured as required or nonrequired. See [Configure User Identifier Attributes](Operation-Guide/configure-user-identifier-attributes-8b9fa88.md).
 
 
 

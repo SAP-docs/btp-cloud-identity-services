@@ -70,7 +70,7 @@ Yes
 Username and password are provided by the user.
 
 > ### Note:  
-> The username can be either the user e-mail or the user logon name of the user profile ID according to the HTTP Basic authentication scheme.
+> Depending on the allowed logon identifiers for the user, the username can be the `User ID`, `Login Name`, or `E-Mai`. For more information, see [Configure Allowed Logon Identifiers](../Operation-Guide/configure-allowed-logon-identifiers-3adf1ff.md).
 
 > ### Caution:  
 > If the user provides wrong password, then each verification counts as a failed logon attempt. The password locks when the number of the allowed failed logon attempts is reached. The number depends on the password policy applied for the application. For more information, see [Configuring Password Policies](../Operation-Guide/configuring-password-policies-12b3395.md).
@@ -170,7 +170,7 @@ When the username and password combination or thing ID and password combination 
 </td>
 </tr>
 <tr>
-<td valign="top" rowspan="6">
+<td valign="top" rowspan="8">
 
 401 Unauthorized
 
@@ -267,6 +267,38 @@ INITIAL\_PASSWORD\_EXPIRED
 <td valign="top">
 
 When the initial password of the user has expired. After the validity of the initial password expires, the user can't log on to the application and must contact the administrator.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+INVALID\_AUTHORIZATION\_HEADER\_LENGTH
+
+
+
+</td>
+<td valign="top">
+
+The time-based one-time password \(TOTP\) code is not provided, but Two-Factor Authentication \(TFA\) with TOTP is enabled.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+INVALID\_OTP\_CODE
+
+
+
+</td>
+<td valign="top">
+
+Wrong TOTP code was provided.
 
 
 

@@ -61,7 +61,7 @@ The create user resource method of the Identity Authentication implementation of
     > If e-mail is set to not unique, you can create multiple users with the same e-mail.
 
     > ### Tip:  
-    > If e-mail is mandatory, for users without valid e-mail addresses or for testing purposes use the `sap-test.de` domain, for example `<username>@sap-test.de`. Do not use any other existing or non-existing domains.
+    > If e-mail is mandatory, for users without valid e-mail addresses or for testing purposes use the `sap-test.de` domain, for example `<username>@sap-test.de`. Do not use any other existing or nonexisting domains.
 
 -   `sendMail`
 
@@ -296,7 +296,7 @@ The create user resource method of the Identity Authentication implementation of
 -   `locale`
 
     > ### Note:  
-    > Must be a string value specified by a two or four-letter code in one of the following formats: XX. Otherwise the activation e-mail is in English.
+    > Must be a string value specified by a two or four-letter code in one of the following formats: XX. Otherwise, the activation e-mail is in English.
 
 -   `password`
 

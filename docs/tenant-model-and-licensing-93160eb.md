@@ -36,11 +36,11 @@ Usage of Identity Authentication is commercially included for all SAP branded cl
 
 A default productive or test tenant can be obtained in one of the following cases:
 
--   For SAP BTP, Cloud Foundry environment:
+-   For SAP BTP:
 
     **Prerequisites**
 
-    A customer has a subaccount in SAP BTP cockpit with a Cloud Foundry subaccount.
+    A customer has a subaccount in SAP BTP cockpit with a multi-environment subaccount.
 
     **Procedure**
 

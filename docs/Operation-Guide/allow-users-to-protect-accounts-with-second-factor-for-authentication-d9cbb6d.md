@@ -38,7 +38,7 @@ To enable or disable the*Multi-Factor Authentication* option in the administrati
 
 2.  Under *Applications and Resources*, choose the *Tenant Settings* tile.
 
-    At the top of the page you can view the administrative and license relevant information of the tenant.
+    At the top of the page, you can view the administrative and license relevant information of the tenant.
 
 3.  Choose the *Multi-Factor Authentication* list item.
 

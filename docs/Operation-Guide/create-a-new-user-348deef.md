@@ -38,7 +38,7 @@ The tenant administrator creates the new user with a minimum set of attributes a
     Vaues for *E-Mail*, *First Name* and *Last Name* that are part of the respective exclude list cant' be used. For mor einformation, see [Restrict User Attributes Values via Exclude Lists](restrict-user-attributes-values-via-exclude-lists-cb108c2.md).
 
     > ### Tip:  
-    > If e-mail is mandatory, for users without valid e-mail addresses or for testing purposes use the `sap-test.de` domain, for example `<username>@sap-test.de`. Do not use any other existing or non-existing domains.
+    > If e-mail is mandatory, for users without valid e-mail addresses or for testing purposes use the `sap-test.de` domain, for example `<username>@sap-test.de`. Do not use any other existing or nonexisting domains.
 
 5.  Select one of the following options:
 

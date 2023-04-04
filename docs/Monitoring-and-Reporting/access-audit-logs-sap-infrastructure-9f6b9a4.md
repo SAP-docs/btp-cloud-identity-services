@@ -2,7 +2,7 @@
 
 # Access Audit Logs \(SAP Infrastructure\)
 
-You can access the audit logs for changes in the personal data, successful, and failed authentications, in Identity Authentication
+Access the audit logs for changes in the personal data, successful, and failed authentications for Identity Authentication tenants on the SAP infrastructure.
 
 
 
@@ -10,13 +10,12 @@ You can access the audit logs for changes in the personal data, successful, and 
 
 > ### Note:  
 > The content in this section is only relevant for tenants on the SAP infrastructure.
+> 
+> For tenants on the AWS and Azure infrastructure, see [Access Audit Logs \(AWS, Azure Infrastructure\)](access-audit-logs-aws-azure-infrastructure-a3e793c.md).
 
 To view the audit logs you should generate Client ID and Client Secret for audit logs in the administration console for SAP Cloud Identity Services first. After that you should obtain an access token, and then call the audit log retrieval API to access the data.
 
-The audit log entries are retained for:
-
--   SAP BTP, Cloud Foundry environment \(for tenants on the AWS and Azure infrastructure.\) - 90 days
--   SAP BTP, Neo environment \(for tenants on the SAP infrastructure\)- 201 days
+The audit log entries for tenants on the SAP infrastructure are retained for 201 days.
 
 To access the audit logs, follow the procedures below:
 

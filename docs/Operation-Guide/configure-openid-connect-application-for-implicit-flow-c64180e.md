@@ -140,7 +140,7 @@ To configure an OpenID Connect trusted application in the administration console
 8.  Selct the *Implicit* grant type.
 
     > ### Note:  
-    > Beware that for each flow the respective grant type must be selected. All other grant types can be deselected if they are not required by the application.
+    > Beware that for each flow the respective grant type must be selected. All other grant types can be deselected if they aren't required by the application.
 
 9.  Save your selection. Once the application has been changed, the system displays the message ***Application <name of application\> updated***.
 
