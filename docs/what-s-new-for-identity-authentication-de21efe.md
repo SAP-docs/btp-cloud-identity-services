@@ -119,6 +119,266 @@ Available as of
 </td>
 <td valign="top">
 
+Authorizations Based on Policies
+
+
+
+</td>
+<td valign="top">
+
+\(Beta\) You can configure and assign a granular access control based on policies for the administrators of SAP Cloud Identity Services. See [\(Beta\) Configure Authorizations Based on Policies](Operation-Guide/beta-configure-authorizations-based-on-policies-08fea39.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+Beta
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-04-04
+
+
+
+</td>
+<td valign="top">
+
+2023-04-04
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Rewording of Security Recommendations
+
+
+
+</td>
+<td valign="top">
+
+We improved security recommendation BTP-IAS-0017 to list the specific authorizations that we feel are critical not just to the service, but to your landscape as well.
+
+In addition, we reviewed an improved the readability of the other recommendations for the service to make clear when the recommendations apply.
+
+For more information, see Security Recommendations of Identity Authentication.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+Changed
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Deprecation of Security Recommendation BTP-IAS-0016
+
+
+
+</td>
+<td valign="top">
+
+Security recommendation BTP-IAS-0016 was too broadly formulated to provide clear guidance to our customers. We removed the recommendation from the list.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+Deprecated
+
+
+
+</td>
+<td valign="top">
+
+Changed
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 System Upgrade
 
 

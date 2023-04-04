@@ -1,27 +1,19 @@
 <!-- loio08fea393a4b54fa4867c47520f088ab8 -->
 
-# Configure Authorization Policies for Administration Console
+# \(Beta\) Configure Authorizations Based on Policies
 
-Configure a granular access control policies for the administrators of SAP Cloud Identity Services.
-
-
-
-<a name="loio08fea393a4b54fa4867c47520f088ab8__prereq_evg_yvg_ywb"/>
-
-## Prerequisites
-
-You have activated the authorization policies option for the administration console for SAP Cloud Identity Services. To do this, you must report an incident with a subject "Activate Authorization Policies for Admin Console" on [SAP Support Portal Home](https://support.sap.com/en/index.html) under the component `BC-IAM-IDS`.
+Configure a granular access control based on policies for the administrators of SAP Cloud Identity Services.
 
 
 
 ## Context
 
-Sometimes the administrator authorizations that are predefined in the tenant of SAP Cloud Identity Services are not enough. The administrator authorizations give unlimited data access. However, you may need to define authorization models with more complex instance restrictions for data access, as is the so-called attribute-based access control \(ABAC\), also known as policy-based access control \(PBAC\). Administrators define authorization policies with user attributes and assign these policies to other administrators. Thus, one administrator can have access to a subset of the users in the tenant or to a subset of the attributes of the user.
+> ### Note:  
+> This is a beta feature available on Identity Authentication. You as a tenant administrator can request this feature by reporting an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with component `BC-IAM-IDS`.
 
-The option to configure authorization policies for the administration console is available only upon request via [SAP Support Portal Home](https://support.sap.com/en/index.html) under the component `BC-IAM-IDS`. Once it is granted, it may take up to 60 seconds before the administrator can see the *Authorization Policies* tab when accessing the administration console application. Initially, only the base policies are visible:
+Sometimes the administrator authorizations that are predefined in the tenant of SAP Cloud Identity Services aren't enough. The predefined administrator authorizations give unlimited data access. However, you may need to define authorization models with more complex instance restrictions for data access, as is the so-called attribute-based access control \(ABAC\). Administrators define authorization policies with user attributes and assign these policies to other administrators. Thus, one administrator can have access to a subset of the users in the tenant or to a subset of the attributes of the user.
 
--   
-`CREATE_USERS` , `DELETE_USERS`, `MANAGE_GROUPS`, `MANAGE_USERS`, `READ_USERS`, and `UPDATE_USERS`. You can create new authorization policies on the base of these policies and assign them to administrators.
+The option to configure authorization policies for the administration console is available only upon request via [SAP Support Portal Home](https://support.sap.com/en/index.html) under the component `BC-IAM-IDS`. Once it's granted, it may take up to 60 seconds before the administrator can see the *Authorization Policies* tab when accessing the administration console application. Initially, only the base policies are visible: `CREATE_USERS` , `DELETE_USERS`, `MANAGE_GROUPS`, `MANAGE_USERS`, `READ_USERS`, and `UPDATE_USERS`. You can create new authorization policies on the base of these policies and assign them to administrators.
 
 When you create a new policy, you can restrict the users on the basis of the following attributes: `loginName`, `country`, `costCenter`, `division`, `department`, and `organization`. The subsets of the user attributes are configured via `user.attributes`, and `user.excludedAttributes`. You can use the `=` and `<>` operators.
 
@@ -73,6 +65,9 @@ The *Login Name* of the user as defined in the administration console.
 
 The value must match the predefined master data one. See [Countries.properties](../Development/change-master-data-texts-rest-api-b10fc6a.md#loioe4e7e4c52cf04295bf94465eba7ceaaa).
 
+> ### Tip:  
+> Use the key from the key-value pair for the value of the `user.country` attribute. For example, you must use `DE` from the key-value pair `DE=Germany`.
+
 
 
 </td>
@@ -87,7 +82,7 @@ The value must match the predefined master data one. See [Countries.properties](
 </td>
 <td valign="top">
 
-The *Cost Center* of the user as defined in the administration console..
+The *Cost Center* of the user as defined in the administration console.
 
 
 
@@ -151,7 +146,10 @@ The *Company* of the user as defined in the administration console.
 </td>
 <td valign="top">
 
-The policy allows you to see only the attributes that are defined in the value field. The attributes' value format must be according to the SCIM notation.
+The policy allows you to see only the attributes that are defined in the value field. The attributes' value format must be according to SCIM notation.
+
+> ### Note:  
+> If you use the attribute `password`, you must also add the following two attributes: `active` and `urn:ietf:params:scim:schemas:extension:sap:2.0:User:status`. The attributes must be separated with comma, with no space between them.
 
 
 
@@ -199,7 +197,7 @@ The policy allows you to exclude the attributes that are defined in the value fi
 
 3.  Under *System Applications*, choose the list item for the administration console.
 
-4.  Under the Authorization Policies tab,** select a custom authorization policy.
+4.  Under the tab *Authorization Policies*, select a custom authorization policy.
 
     > ### Note:  
     > Type the name or package in the search field, filter the names or packages, or choose the policy from the list.
@@ -225,14 +223,5 @@ The policy allows you to exclude the attributes that are defined in the value fi
 Remove the *Read Users* and *Manage Users* authorizations for the administrator or administrators that are assigned to the policy. For more information, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
 
 > ### Remember:  
-> If you don't remove the *Read Users* and *Manage Users* authorizations, the configured and assigned authorization policies for the administration console won't be applied.
-
-**Related Information**  
-
-
-[List Administrators](list-administrators-c79a5c6.md "As a tenant administrator, you can list the administrators and their authorizations in the administration console for SAP Cloud Identity Services.")
-
-[Add Administrators](add-administrators-bbbdbdd.md#loiobbbdbdd3899942ce874f3aae9ba9e21d "As a tenant administrator, you can add new administrators in the administration console for SAP Cloud Identity Services.")
-
-[Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md "As a tenant administrator, you can edit both your own authorizations and other administrators' authorizations in the administration console for SAP Cloud Identity Services. By editing the administrator authorizations you can also delete an administrator.")
+> If you don't remove the *Read Users* and *Manage Users* authorizations, the configured and assigned authorization policies for the administration console won't be applied. *Read Users* overrides the `READ_USERS` authorization policy while *Manage Users* overrides all user authorization policies."
 
