@@ -223,5 +223,5 @@ The policy allows you to exclude the attributes that are defined in the value fi
 Remove the *Read Users* and *Manage Users* authorizations for the administrator or administrators that are assigned to the policy. For more information, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
 
 > ### Remember:  
-> If you don't remove the *Read Users* and *Manage Users* authorizations, the configured and assigned authorization policies for the administration console won't be applied. *Read Users* overrides the `READ_USERS` authorization policy while *Manage Users* overrides all user authorization policies."
+> If you don't remove the *Read Users* and *Manage Users* authorizations, the configured and assigned authorization policies for the administration console won't be applied. *Read Users* overrides the `READ_USERS` authorization policy while *Manage Users* overrides all user authorization policies.
 
