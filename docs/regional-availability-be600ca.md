@@ -16,6 +16,8 @@ Country/regions with two data centers operate in high availability \(HA\) mode a
 
 The country/region, domain, data center, and IP address are listed below:
 
+**Productive Environment**
+
 
 <table>
 <tr>
@@ -859,6 +861,114 @@ Azure
 <td valign="top">
 
 ***20.51.113.99-20.51.113.99, 20.57.161.219-20.57.161.219, 20.57.185.171-20.57.185.171***
+
+
+
+</td>
+</tr>
+</table>
+
+**Trial Environment**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Country/Region
+
+
+
+</th>
+<th valign="top">
+
+Domain
+
+
+
+</th>
+<th valign="top">
+
+Data Center
+
+
+
+</th>
+<th valign="top">
+
+Infrastructure
+
+
+
+</th>
+<th valign="top">
+
+LB IPs
+
+
+
+</th>
+<th valign="top">
+
+NAT IPs
+
+
+
+</th>
+<th valign="top">
+
+First IP - Last IP
+
+
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+US East
+
+
+
+</td>
+<td valign="top">
+
+ `trial-accounts.ondemand.com` 
+
+
+
+</td>
+<td valign="top">
+
+East US
+
+
+
+</td>
+<td valign="top">
+
+Azure
+
+
+
+</td>
+<td valign="top">
+
+***20.62.179.159, 20.62.181.214, 20.62.180.136***
+
+
+
+</td>
+<td valign="top">
+
+***20.62.179.159/32, 20.62.181.214/32, 20.62.180.136/32***
+
+
+
+</td>
+<td valign="top">
+
+***20.62.179.159-20.62.179.159, 20.62.181.214-20.62.181.214, 20.62.180.136-20.62.180.136***
 
 
 

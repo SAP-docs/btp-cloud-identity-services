@@ -27,7 +27,7 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
 -   \(For *SMS Two-Factor Authentication*\) You have an account in Sinch Service. You have configured Sinch Service in the administration console for SAP Cloud Identity Services. For more information, see [Configure Sinch Service in Administration Console](configure-sinch-service-in-administration-console-f4a04ed.md).
 
     > ### Note:  
-    > Sinch Authentication 365 or Sinch Verification account is purchased separately. It isn’t part of the Identity Authentication contract.
+    > Sinch Verification account is purchased separately. It isn’t part of the Identity Authentication contract.
 
 -   \(For *E-Mail OTP Code*\) An E-Mail OTP Code template for the respective languages must exist in the tenant to apply the e-mail OTP code method. If the template does not exist, the user will see the option but when choosing it, the following message will appear: "Sorry, but you are currently not authorized for access".
 
@@ -506,7 +506,7 @@ Each rule contains the following information:
         >     If you set SMS two-factor authentication, users are required to provide an SMS code sent to their mobile devices in addition to their primary credentials.
         > 
         >     > ### Remember:  
-        >     > To use *SMS Two-Factor Authentication*, you must have configured SAP Authentication 365 in the administration console for SAP Cloud Identity Services. For more information, see [Configure Sinch Service in Administration Console](configure-sinch-service-in-administration-console-f4a04ed.md).
+        >     > To use *SMS Two-Factor Authentication*, you must have configured Sinch Verification in the administration console for SAP Cloud Identity Services. For more information, see [Configure Sinch Service in Administration Console](configure-sinch-service-in-administration-console-f4a04ed.md).
         >     > 
         >     > Users must have their mobile phone numbers verified. The tenant administrator can verify phone numbers manually in the administration console or via the SCIM API. For more information, see [List and Edit User Details](list-and-edit-user-details-045cb01.md) and [Update User Resource \(Deprecated\)](../Development/update-user-resource-deprecated-9e36479.md).
         >     > 

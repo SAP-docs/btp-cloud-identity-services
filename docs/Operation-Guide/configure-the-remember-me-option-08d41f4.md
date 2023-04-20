@@ -186,7 +186,10 @@ Users don't see the option on the logon screen, but the option is checked for th
 </table>
 
 > ### Note:  
-> Remember me tokens generated for an application is valid for all applications in the tenant. If the option is enabled, the cookie validity of the first application that is accessed by the user is taken into consideration and all other applications have the same cookie validity despite their configuration in the administration console.
+> Remember me tokens generated for an application are valid for all applications in the tenant. If the option is enabled, the cookie validity of the first application that is accessed by the user is taken into consideration and all other applications have the same cookie validity despite their configuration in the administration console.
+
+> ### Restriction:  
+> The remember me option is supported only when Identity Authentication is set as the default local identity provider for the application. When the authentication is done via a corporate identity provider no cookie is sent to the user's browser.
 
 
 

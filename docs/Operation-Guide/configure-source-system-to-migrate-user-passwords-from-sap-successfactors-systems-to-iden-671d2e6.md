@@ -154,7 +154,7 @@ To configure a source system, follow the steps below:
         > For more information about the mapping between theSAP SuccessFactors data centers and the password validation URL, see [SAP SuccessFactors Data Centers Mapping to Authentication URL](sap-successfactors-data-centers-mapping-to-authentication-url-f38bb6b.md).
 
         > ### Remember:  
-        > If you choose the *x509* certificate as your *Authentication Type*, you'll need to add ".cert" after the subdomain part of the URL. For example:
+        > If you choose the *X.509* certificate as your *Authentication Type*, you'll need to add ".cert" after the subdomain part of the URL. For example:
         > 
         >  `https://exampleapi.cert.sapsf.com/odata/v2/restricted/validateUser`.
 
@@ -187,7 +187,7 @@ To configure a source system, follow the steps below:
             > ### Tip:  
             > For productive systems, we recommend that you use passwords that are difficult to be guessed.
 
-        -   *x509*
+        -   *X.509*
 
             Enter CN for the certificate in the provided field.
 
@@ -197,7 +197,7 @@ To configure a source system, follow the steps below:
             > You can choose the option for automatic regeneration of the certificate by selecting the *Automatic Renewal* checkbox. Two weeks before the expiry of the certificate, it is regenerated. The renewed certificate will have the same DN.
 
             > ### Remember:  
-            > If you choose the *x509* certificate as your *Authentication Type*, you'll need to upload that certificate into SAP SuccessFactors to register Identity Authentication for incoming calls using *x509* certificate-based authentication. Refer to [Upgrade to X.509 Certificate-Based Authentication for Incoming Calls](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/568fdf1f14f14fd089a3cd15194d19cc/2b8f220f51ce455da3f349ef851d264c.html) for the steps to complete the upload.
+            > If you choose the *X.509* certificate as your *Authentication Type*, you'll need to upload that certificate into SAP SuccessFactors to register Identity Authentication for incoming calls using *X.509* certificate-based authentication. Refer to [Upgrade to X.509 Certificate-Based Authentication for Incoming Calls](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/568fdf1f14f14fd089a3cd15194d19cc/2b8f220f51ce455da3f349ef851d264c.html) for the steps to complete the upload.
 
 
 
@@ -233,7 +233,7 @@ To configure a source system, follow the steps below:
 
     The system displays the message ***Source system <id of the system\> created***.
 
-    If you have chosen *Authentication Type - x509*, the certificate is generated after saving the configuration.
+    If you have chosen *Authentication Type - X.509*, the certificate is generated after saving the configuration.
 
 6.  **Optional:** Choose *Test Connection* to test the source system configuration.
 

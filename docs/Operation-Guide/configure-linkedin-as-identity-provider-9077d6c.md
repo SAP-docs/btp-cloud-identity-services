@@ -124,7 +124,7 @@ The above configurations are valid for the whole tenant. They will take effect f
 
 [Remove Social Identity Providers Configuration](remove-social-identity-providers-configuration-265e41e.md "You can remove the configurations of the social providers in the administration console for SAP Cloud Identity Services.")
 
-[Authentication with OAuth 2.0](http://developer.linkedin.com/documents/authentication)
+[Authentication \(Linkedin\)](https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication?context=linkedin%2Fcontext)
 
 [Enable or Disable Social Sign-On for an Application](enable-or-disable-social-sign-on-for-an-application-ff12d3d.md "Social sign-on allows users to link their Identity Authentication accounts with social network accounts.")
 

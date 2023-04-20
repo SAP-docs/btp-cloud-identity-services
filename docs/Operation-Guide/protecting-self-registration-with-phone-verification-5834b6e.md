@@ -30,8 +30,3 @@ Configuration of phone verification in the administration console for SAP Cloud 
 
 ![](images/Image_Map_Phone_Verification_via_SMS_cebb851.png)
 
-**Related Information**  
-
-
-[Sinch Authentication 365](https://authentication.sapdigitalinterconnect.com/)
-

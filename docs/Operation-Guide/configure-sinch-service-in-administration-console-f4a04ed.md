@@ -10,7 +10,7 @@ Configure Sinch Service to enable *Phone Verification via SMS* or *SMS Two-Facto
 
 ## Prerequisites
 
--   You have either an account in Sinch Authentication 365 or in Sinch Verification Service. Once you create a Sinch service account, you receive an e-mail with your account information.
+-   You have an account in Sinch Verification Service. Once you create a Sinch service account, you receive an e-mail with your account information.
 
 -   You are assigned the *Manage Tenant Configuration* role. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
 
@@ -23,178 +23,9 @@ Configure Sinch Service to enable *Phone Verification via SMS* or *SMS Two-Facto
 
 Sinch service enables multichannel two-factor authentication \(2FA\), adding another layer of security to customers' online accounts, beyond their login and password. The service enables you to configure tokens – such as one-time passwords \(OTPs\), personal identification numbers \(PINs\), and verification codes – that are tailored to businesses and particular use cases.
 
-For the integration between Identity Authentication and Sinch service, you must provide information in the administration console for SAP Cloud Identity Services. You can have eithet a Sinch Authentication 365 or Sinch Verification configuration. You can clear the fields by choosing the *Remove Configuration* button at the top of the screen.
+For the integration between Identity Authentication and Sinch service, you must provide information in the administration console for SAP Cloud Identity Services. You can have a Sinch Verification configuration. You can clear the fields by choosing the *Remove Configuration* button at the top of the screen.
 
-Based on your Sinch service type, provide the following:
-
-**Sinch Authentication 365**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Configuration
-
-
-
-</th>
-<th valign="top">
-
-Notes
-
-
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-*Account ID*
-
-
-
-</td>
-<td valign="top">
-
-This is your Authentication 365 Account ID. The information is available in the accounts menu of Authentication 365 web-based administrative user interface. For more information, see [Sinch Authentication 365/Account Information](https://authentication.sapdigitalinterconnect.com/documentation/ui/account_information/).
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*OAuth Token URL*
-
-
-
-</td>
-<td valign="top">
-
-The OAuth token URL. Example: `https://<domain>/oauth/token`
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Client ID*
-
-
-
-</td>
-<td valign="top">
-
-Your API Secret Key for Sinch Authentication 365. For more information, see, [Sinch Authentication 365/API Key Management.](https://authentication.sapdigitalinterconnect.com/documentation/ui/api_keys/)
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Client Secret*
-
-
-
-</td>
-<td valign="top">
-
-Your API Key Code for Sinch Authentication 365. For more information, see [Sinch Authentication 365/API Key Management.](https://authentication.sapdigitalinterconnect.com/documentation/ui/api_keys/).
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Code Timeout*
-
-
-
-</td>
-<td valign="top">
-
-The timeout in seconds. Provide a number between 30 and 900.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Code Length*
-
-
-
-</td>
-<td valign="top">
-
-The length of the generated code. Code length must be between 4 and 8 digits.
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Send Code URL*
-
-
-
-</td>
-<td valign="top">
-
-The Sinch Authentication 365 URL that is used to generate the tokens \(codes\). Example: `https://authentication.<domain>/tokens/generate`
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*Validate Code URL*
-
-
-
-</td>
-<td valign="top">
-
-The Sinch Authentication 365 URL that is used to validate the tokens \(codes\). Example: `https://authentication.<domain>/tokens/validate` 
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-*SMS text*
-
-
-
-</td>
-<td valign="top">
-
-The text that the user will receive in the SMS. The text is followed by the verification code. For example: "Your verification code is: \[the generated token\]".
-
-
-
-</td>
-</tr>
-</table>
-
-> ### Remember:  
-> All fields are required.
+Provide the following:
 
 **Sinch Verification**
 
@@ -313,18 +144,13 @@ To configure the administration console, follow the procedure below:
 
 4.  Choose the *Edit* button.
 
-5.  Select your Sinch service type and enter the information that is required for the chosen type.
-
-    -   Sinch Verification
-    -   Sinch Authentication 365
+5.  Select *Sinch Verification* and enter the information that is required.
 
 6.  Save your entries.
 
 
 **Related Information**  
 
-
-[Sinch Authentication 365](https://authentication.sapdigitalinterconnect.com/)
 
 [Sinch Verification API](https://www.sinch.com/products/apis/verification/)
 

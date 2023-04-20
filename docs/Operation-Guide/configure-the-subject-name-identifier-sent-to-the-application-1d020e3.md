@@ -505,13 +505,14 @@ To set the `Subject Name Identifier` attribute, proceed as follows:
         -   \(optional\) Select a fallback attribute from the drop down: `None` \(this is the default setting\), `Global User ID`, `User ID`, `E-Mail`, `Display Name`, `Login Name`, `Employee Number`.
 
 
-    When Identity Authentication acts as proxy IdP, and the users have no profile in Identity Authentication, choose the advanced configuration option.
+    > ### Tip:  
+    > When Identity Authentication acts as proxy IdP, and the users have no profiles in Identity Authentication, choose the advanced configuration option.
 
     -   Advanced Configuration:
         -   set an attribute with dynamic value in the following pattern `<prefix> ${attribute_technical_name} <suffix>`. For example: `Phone ${telephone}`
 
             > ### Note:  
-            > When Identity Authentication acts as proxy IdP, and the users have no profile in Identity Authentication, set an attribute with the following dynamic value: <prefix\> $\{corporateIdP.<corporateIDP attribute\>\} <suffix\>
+            > If Identity Authentication acts as proxy IdP, and the users have no profiles in Identity Authentication, set an attribute with the following dynamic value: <prefix\> $\{corporateId.<corporateIDP attribute\>\} <suffix\>
 
         -   \(optional\) Select a fallback attribute from the drop down: `None` \(this is the default setting\), `Global User ID`, `User ID`, `E-Mail`, `Display Name`, `Login Name`, `Employee Number`.
 

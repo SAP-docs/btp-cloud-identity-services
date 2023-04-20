@@ -40,7 +40,7 @@ A default productive or test tenant can be obtained in one of the following case
 
     **Prerequisites**
 
-    A customer has a subaccount in SAP BTP cockpit with a multi-environment subaccount.
+    A customer has a global account in SAP BTP cockpit with a multi-environment subaccount.
 
     **Procedure**
 
@@ -193,7 +193,7 @@ SAP customers and partners can use Identity Authentication additional tenants vi
 Customers and partners can request one additional tenant per SAP BTP subaccount.
 
 > ### Note:  
-> The Identity Authentication additional tenant doesn’t add additional logon requests. Licensed logon requests are distributed across all tenants.
+> The Identity Authentication additional tenant doesn’t add additional logon requests. Licensed logon requests are distributed across all tenants. trial tenant from an SAP BTP trial account.
 
 For SAP BTP, Cloud Foundry environment:
 
@@ -208,7 +208,7 @@ A customer has an SAP BTP, Cloud Foundry subaccount.
 3.  Select the *Cloud Identity Services* tile.
 
     > ### Tip:  
-    > -   If you don't see the *Cloud Identity Service* tile, navigate to *Entitlements*, add the tile.
+    > -   If you don't see the *Cloud Identity Service* tile, navigate to *Entitlements* trial, add the tile.
     > -   If you don't see the *additional-tenant* plan, navigate to *Entitlements* \> *Configure Entitlements* \> *Add Service Plans* \> *Cloud Identity Services*, select the checkbox for the *additional-tenant* plan, press *Add Service Plans* and save your choice.
     > -   If you use directories entitlement management in your global account, you must assign the *additional-tenant* plan to the directory first, and after that to the subaccount. Once you assign the *additional-tenant* plan to your directory, it will appear in your subaccount entitlements too. For more information, see [Configure Entitlements and Quotas for Directories \[Feature Set B\]](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/37f8871865114f44aebee3db6ac64b72.html).
 
@@ -263,6 +263,72 @@ Identity Authentication additional productive tenant will be created and the acc
 > ### Note:  
 > You can remove that additional tenant for the subaccount by choosing the *Delete* button. Please note that the tenant is deleted immediately.
 
+
+
+<a name="loio93160ebd2dcb40e98aadcbb9a970f2b9__section_pjq_3qt_cxb"/>
+
+## Trial Tenant
+
+You can create an SAP Cloud Identity Services trial tenant from an SAP BTP trial account.
+
+**Prerequisites**
+
+You have a free account on SAP BTP Trial, as described in [Get a Free Account on SAP BTP Trial](https://developers.sap.com/tutorials/hcp-create-trial-account.html).
+
+A trial tenant is intended for testing purposes. It allows you to try out and explore SAP Cloud Identity Services – Identity Authentication and Identity Provisioning. It is free of charge and limited to a trial period in accordance with the SAP BTP trial terms and conditions.
+
+A trial tenant differs from a test tenant. Trial tenants can be used for a limited period, while test tenants are provided to customers in addition to their productive tenants where they can test new features before implementing them productively.
+
+> ### Restriction:  
+> -   You can have only one SAP Cloud Identity Services trial tenant per SAP BTP global account regardless of how many subaccounts you create. If you have multiple subaccounts, and you have got trial tenants for them they will use one and the same trial tenant.
+> -   You can have up to 50 users in a trial tenant.
+> -   You can't connect to on-premise systems using the cloud connector. It's not possible to subscribe to the Cloud Identity Services connectivity plan in your trial subaccount.
+
+
+
+### Getting a Trial Tenant
+
+1.  Go to the [SAP BTP Trial](https://account.hanatrial.ondemand.com/) page and click Log On.
+2.  Choose *Go to Your Trial Account* and open your subaccount.
+3.  In the navigation area, choose *Entitlements* and then *Configure Entitlements* \> *Add Service Plans*.
+4.  Select *Cloud Identity Services* from the list of entitlements available for this subaccount.
+5.  Mark the *default \(Application\)* plan. The 0 number in the *Add 0 Service Plan* button increments to 1.
+6.  Choose the *Add 1 Service Plan* button.
+7.  Choose *Save*.
+8.  In the navigation area, choose *Services* \> *Instances and Subscriptions*.
+9.  Select *Create* in the top-right corner.
+
+    A wizard opens, offering you to configure your instance. Provide the following information:
+
+    1.  Choose *Cloud Identity Services*.
+
+    2.  Select the *default* plan.
+
+    3.  Choose *Create*.
+
+
+
+ **Result** 
+
+You will receive an email with subject *Activate Your Account for Identity Authentication Service*. Follow the instructions in the email to activate your account for administration console of SAP Cloud Identity Services \(formerly known as administration console of Identity Authentication\).
+
+After a successful login, you open the SAP Cloud Identity Services administration console. You are the initial administrator user, listed under *Users & Authorizations* \> *Administrators*.
+
+**Next Steps**
+
+You can now start testing Identity Authentication and Identity Provisioning features. For more information, refer to:
+
+-   [Identity Authentication Operations](Operation-Guide/operation-guide-6a8e67c.md)
+
+-   [Identity Provisioning Operations](https://help.sap.com/docs/IDENTITY_PROVISIONING/f48e822d6d484fa5ade7dda78b64d9f5/cd8976707615482ebef10ac177f02f44.html)
+
+
+> ### Note:  
+> You can delete your trial tenant by deleting the subaccount or by deleting the Cloud Identity Services application under the Subscriptions section. For more information, see [Delete a Subaccount](https://help.sap.com/docs/btp/sap-business-technology-platform/delete-subaccount?version=Cloud).
+
+> ### Note:  
+> If you encounter any issues and you need support, send an email to ***SAPCPTrialSupport@sap.com*** or start a discussion in [SAP Community](https://community.sap.com/).
+
 **Related Information**  
 
 
@@ -279,6 +345,8 @@ Identity Authentication additional productive tenant will be created and the acc
 [Supported Languages](supported-languages-0ea634d.md "Information on the supported languages for the administration console, and the end user screens of Identity Authentication.")
 
 [Accessibility Features in Identity Authentication](accessibility-features-in-identity-authentication-c7b544b.md "To optimize your experience of Identity Authentication, Identity Authentication tools provide features and settings that help you use the software efficiently.")
+
+[rial Accounts and Free Tier](https://help.sap.com/docs/IDENTITY_PROVISIONING/f48e822d6d484fa5ade7dda78b64d9f5/cd8976707615482ebef10ac177f02f44.html)
 
 [Identity Provisioning: Tenant Model](https://help.sap.com/docs/IDENTITY_PROVISIONING/f48e822d6d484fa5ade7dda78b64d9f5/65fa74998ef14f059806f0c5a48e5285.html?version=Cloud)
 

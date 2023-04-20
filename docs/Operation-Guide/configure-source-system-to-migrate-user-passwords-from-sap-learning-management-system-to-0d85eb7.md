@@ -175,7 +175,7 @@ To configure a source system, follow the steps below:
             > ### Tip:  
             > For productive systems, we recommend that you use passwords that are difficult to be guessed.
 
-        -   *x509*
+        -   *X.509*
 
             Enter CN for the certificate in the provided field.
 
@@ -217,7 +217,7 @@ To configure a source system, follow the steps below:
 
     The system displays the message ***Source system <id of the system\> created***.
 
-    If you have chosen *Authentication Type - x509*, the certificate is generated after saving the configuration.
+    If you have chosen *Authentication Type - X.509*, the certificate is generated after saving the configuration.
 
 6.  **Optional:** Choose *Test Connection* to test the source system configuration.
 

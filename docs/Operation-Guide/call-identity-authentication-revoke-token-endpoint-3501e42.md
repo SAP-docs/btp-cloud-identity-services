@@ -6,7 +6,7 @@ The revoke token endpoint invalidates any access and refresh tokens issued to th
 
 
 
-The token recation endpoint is implemented according to [RFC 7009 OAuth 2.0 Token Revocation](https://www.rfc-editor.org/rfc/rfc7009.html).
+The token revocation endpoint is implemented according to [RFC 7009 OAuth 2.0 Token Revocation](https://www.rfc-editor.org/rfc/rfc7009.html).
 
 
 

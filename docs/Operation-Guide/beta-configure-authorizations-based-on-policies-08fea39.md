@@ -15,7 +15,10 @@ Sometimes the administrator authorizations that are predefined in the tenant of 
 
 The option to configure authorization policies for the administration console is available only upon request via [SAP Support Portal Home](https://support.sap.com/en/index.html) under the component `BC-IAM-IDS`. Once it's granted, it may take up to 60 seconds before the administrator can see the *Authorization Policies* tab when accessing the administration console application. Initially, only the base policies are visible: `CREATE_USERS` , `DELETE_USERS`, `MANAGE_GROUPS`, `MANAGE_USERS`, `READ_USERS`, and `UPDATE_USERS`. You can create new authorization policies on the base of these policies and assign them to administrators.
 
-When you create a new policy, you can restrict the users on the basis of the following attributes: `loginName`, `country`, `costCenter`, `division`, `department`, and `organization`. The subsets of the user attributes are configured via `user.attributes`, and `user.excludedAttributes`. You can use the `=` and `<>` operators.
+When you create a new policy, you can restrict the users on the basis of the following attributes: `loginName`, `country`, `costCenter`, `division`, `department`, and `organization`. The subsets of the user attributes are configured via `user.attributes`, and `user.excludedAttributes`.
+
+> ### Remember:  
+> You can use only the `=` and `<>` operators . If you use other operators, this could result in not having access to the administration console.
 
 **User Attributes**
 

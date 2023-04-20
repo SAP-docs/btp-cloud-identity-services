@@ -8,15 +8,21 @@
 
 ## Bundled, Charged Applications
 
-Bundled applications are recognized by Identity Authentication as SAP applications, while charged applications are third party application.
+Bundled applications are recognized by Identity Authentication as SAP applications, while charged applications are third-party application.
 
 Identity Authentication identifies the type of the application by the URI or SAML 2.0 endpoints. If no URI or SAML 2.0 endpoints are specified in the configuration of the application, Identity Authentication recognizes the application as a charged one.
 
 > ### Note:  
-> Applications using custom domains cannot be marked correctly, so if you have such applications, report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`.
+> Applications using custom domains can't be marked correctly, so if you have such applications, report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`.
 
 > ### Remember:  
-> Bundled applications that are managed and configured by SAP cannot be deleted. Part of their SAML 2.0 configurations are read-only. For more information, see [Configure an Application's Type](Operation-Guide/configure-an-application-s-type-6fee9c3.md).
+> Bundled applications that are managed and configured by SAP can't be deleted. Part of their SAML 2.0 configurations are read-only. For more information, see [Configure an Application's Type](Operation-Guide/configure-an-application-s-type-6fee9c3.md).
+
+
+
+### Subscriptions
+
+A special kind of applications are the so-called subscribed applications. For these applications, you can only see and configure a certain subset of their setting. You can't create or delete a subscribed application. When you subscribe to an application, the system automatically sets up an application in Identity Authentication for you. This application appears in the list of the applications in the administration console for SAP Cloud Identity Services. For more information, see [Subscribe to Multitenant Applications Using the Cockpit](https://help.sap.com/docs/btp/sap-business-technology-platform/subscribe-to-multitenant-applications-using-cockpit?version=Cloud) and [What Is the Subscription-Based Commercial Model?](https://help.sap.com/docs/btp/sap-business-technology-platform/subscribe-to-multitenant-applications-using-cockpit?version=Cloud).
 
 
 
@@ -24,7 +30,7 @@ Identity Authentication identifies the type of the application by the URI or SAM
 
 Bundled and charged applications can also be parent or child. An application can be defined as parent or child at its creation, or later when editing the application.
 
-When you create or edit an application, you can select a parent for that application. Thus the application that is created or edited becomes child, and the selected application becomes parent. When creating a new application, the parent application option in the administration console is optional.
+When you create or edit an application, you can select a parent for that application. Thus, the application that is created or edited becomes child, and the selected application becomes parent. When creating a new application, the parent application option in the administration console is optional.
 
 Changing child application's configuration doesn't affect the configuration of the parent.
 
@@ -78,7 +84,7 @@ Apart from the bundled and charged applications that you can create, the tenant 
 > 
 > System applications can't be parents to other applications, and can't have child applications.
 
-The `Administration Console` application contains the configurations of the administration console for SAP Cloud Identity Services, and information about expiring certificates, system notifications and new administrators. The information is visible at the top right corner of the administration console:
+The `Administration Console` application contains the configurations of the administration console for SAP Cloud Identity Services, and information about expiring certificates, system notifications and new administrators. The information is visible at the top-right corner of the administration console:
 
  ![](images/System_Notifications_1a76bad.png)
 

@@ -354,9 +354,6 @@ Identity Authentication allows you to use a custom domain that is different from
 
 ## Context
 
-> ### Note:  
-> The content in this document is only relevant for tenants on the SAP infrastructure.
-
 > ### Remember:  
 > It takes 2 minutes for the configuration changes to take place.
 

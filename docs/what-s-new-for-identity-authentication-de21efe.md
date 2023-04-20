@@ -119,6 +119,454 @@ Available as of
 </td>
 <td valign="top">
 
+System Upgrade
+
+
+
+</td>
+<td valign="top">
+
+ Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-04-20
+
+
+
+</td>
+<td valign="top">
+
+2023-04-20
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Rewording of Security Recommendations
+
+
+
+</td>
+<td valign="top">
+
+We improved security recommendation [BTP-IAS-0017](https://help.sap.com/docs/btp/sap-btp-security-recommendations-c8a9bb59fe624f0981efa0eff2497d7d/sap-btp-security-recommendations?seclist-index=BTP-IAS-0017) to list the specific authorizations that we feel are critical not just to the service, but to your landscape as well.
+
+In addition, we reviewed and improved the readability of the other recommendations for the service to make clear when the recommendations apply.
+
+See [SAP BTP Security Recommendations for Identity Authentication](https://help.sap.com/docs/btp/sap-btp-security-recommendations-c8a9bb59fe624f0981efa0eff2497d7d/sap-btp-security-recommendations?seclist-service=Identity%20Authentication).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+Changed
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-04-20
+
+
+
+</td>
+<td valign="top">
+
+2023-04-20
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Deprecation of Security Recommendation BTP-IAS-0016
+
+
+
+</td>
+<td valign="top">
+
+Security recommendation BTP-IAS-0016 was too broadly formulated to provide clear guidance to our customers. We removed the recommendation from the list.
+
+For other recommendations for the service, see [SAP BTP Security Recommendations for Identity Authentication](https://help.sap.com/docs/btp/sap-btp-security-recommendations-c8a9bb59fe624f0981efa0eff2497d7d/sap-btp-security-recommendations?seclist-service=Identity%20Authentication).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+Deprecated
+
+
+
+</td>
+<td valign="top">
+
+Changed
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-04-20
+
+
+
+</td>
+<td valign="top">
+
+2023-04-20
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SMS Verification
+
+
+
+</td>
+<td valign="top">
+
+Sinch Authentication 365 is deprecated.
+
+Action: We recommend you to configure Sinch Verification in the administration console and start using it. See [Configure Sinch Service in Administration Console](Operation-Guide/configure-sinch-service-in-administration-console-f4a04ed.md).
+
+
+
+</td>
+<td valign="top">
+
+Recommended
+
+
+
+</td>
+<td valign="top">
+
+Deprecated
+
+
+
+</td>
+<td valign="top">
+
+Announcement
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-04-13
+
+
+
+</td>
+<td valign="top">
+
+2023-04-13
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Tenant Offering
+
+
+
+</td>
+<td valign="top">
+
+You can now create an SAP Cloud Identity Services trial tenant from an SAP BTP trial account. A trial tenant is intended for testing purposes of SAP Cloud Identity Services – Identity Authentication and Identity Provisioning. See [Tenant Model and Licensing](tenant-model-and-licensing-93160eb.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-04-13
+
+
+
+</td>
+<td valign="top">
+
+2023-04-13
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+ Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Authorizations Based on Policies
 
 
@@ -183,178 +631,6 @@ Identity Authentication
 <td valign="top">
 
 2023-04-04
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- Identity Authentication 
-
-
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Rewording of Security Recommendations
-
-
-
-</td>
-<td valign="top">
-
-We improved security recommendation BTP-IAS-0017 to list the specific authorizations that we feel are critical not just to the service, but to your landscape as well.
-
-In addition, we reviewed an improved the readability of the other recommendations for the service to make clear when the recommendations apply.
-
-For more information, see Security Recommendations of Identity Authentication.
-
-
-
-</td>
-<td valign="top">
-
-Info only
-
-
-
-</td>
-<td valign="top">
-
-General Availability
-
-
-
-</td>
-<td valign="top">
-
-Changed
-
-
-
-</td>
-<td valign="top">
-
-Technology
-
-
-
-</td>
-<td valign="top">
-
-Not applicable
-
-
-
-</td>
-<td valign="top">
-
-Identity Authentication
-
-
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
- Identity Authentication 
-
-
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Deprecation of Security Recommendation BTP-IAS-0016
-
-
-
-</td>
-<td valign="top">
-
-Security recommendation BTP-IAS-0016 was too broadly formulated to provide clear guidance to our customers. We removed the recommendation from the list.
-
-
-
-</td>
-<td valign="top">
-
-Info only
-
-
-
-</td>
-<td valign="top">
-
-Deprecated
-
-
-
-</td>
-<td valign="top">
-
-Changed
-
-
-
-</td>
-<td valign="top">
-
-Technology
-
-
-
-</td>
-<td valign="top">
-
-Not applicable
-
-
-
-</td>
-<td valign="top">
-
-Identity Authentication
-
-
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
 
 
 
