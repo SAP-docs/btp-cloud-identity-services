@@ -193,7 +193,7 @@ SAP customers and partners can use Identity Authentication additional tenants vi
 Customers and partners can request one additional tenant per SAP BTP subaccount.
 
 > ### Note:  
-> The Identity Authentication additional tenant doesn’t add additional logon requests. Licensed logon requests are distributed across all tenants. trial tenant from an SAP BTP trial account.
+> The Identity Authentication additional tenant doesn’t add additional logon requests. Licensed logon requests are distributed across all tenants.
 
 For SAP BTP, Cloud Foundry environment:
 
@@ -346,7 +346,7 @@ You can now start testing Identity Authentication and Identity Provisioning feat
 
 [Accessibility Features in Identity Authentication](accessibility-features-in-identity-authentication-c7b544b.md "To optimize your experience of Identity Authentication, Identity Authentication tools provide features and settings that help you use the software efficiently.")
 
-[rial Accounts and Free Tier](https://help.sap.com/docs/IDENTITY_PROVISIONING/f48e822d6d484fa5ade7dda78b64d9f5/cd8976707615482ebef10ac177f02f44.html)
+[Тrial Accounts and Free Tier](https://help.sap.com/docs/IDENTITY_PROVISIONING/f48e822d6d484fa5ade7dda78b64d9f5/cd8976707615482ebef10ac177f02f44.html)
 
 [Identity Provisioning: Tenant Model](https://help.sap.com/docs/IDENTITY_PROVISIONING/f48e822d6d484fa5ade7dda78b64d9f5/65fa74998ef14f059806f0c5a48e5285.html?version=Cloud)
 
