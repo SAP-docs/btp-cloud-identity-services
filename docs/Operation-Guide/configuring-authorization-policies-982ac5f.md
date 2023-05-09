@@ -4,7 +4,7 @@
 
 Authorization management enables Identity Authentication administrators to use authorization policies in multiple environments, configure them, and assign them to users.
 
-When you subscribe to an application that supports authorization policies, the system sets up an application in Identity Authentication for you and from there you can assign authorizations. An authorization management tenant is automatically created as a new tenant. Service instances and bindings are added automatically.
+When you subscribe to an application that supports authorization policies, the system sets up a bundled application in Identity Authentication for you and from there you can assign authorizations. An authorization management tenant is automatically created as a new tenant. Service instances and bindings are added automatically.
 
 For more information, see [Subscribe to Multitenant Applications Using the Cockpit](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/7a3e39622be14413b2a4df7c02ca1170.html).
 
@@ -14,15 +14,15 @@ For more information, see [Subscribe to Multitenant Applications Using the Cockp
 
 ## Prerequisites
 
--   Your application supports authorization policies. Refer to the documentation of your application.
+-   Your bundled application supports authorization policies. Refer to the documentation of your application.
 
 -   Your user has administrative permissions in Identity Authentication with the *Manage Groups* authorization. For more information, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
 
--   You have a subscription to SAP Cloud Identity Services - Identity Authentication. For more information, see [SAP Cloud Identity Services](https://help.sap.com/docs/SAP_CLOUD_IDENTITY).
+-   You are using SAP Cloud Identity Services - Identity Authentication. For more information, see [Tenant Model and Licensing](../tenant-model-and-licensing-93160eb.md).
 
 
 > ### Note:  
-> If your application doesn't have an *Authorization Policies* tab, it doesn't support authorization management.
+> If your bundled application doesn't have an *Authorization Policies* tab, it doesn't support authorization management.
 
 
 
@@ -38,7 +38,7 @@ Authorization management in Identity Authentication allows applications to defin
 
 ## Authorization Policy Types
 
-An authorization policy is basically a collection of rules, which are applied to resources and restricted by conditions. Authorization policies are defined by developers and come with the respective application.
+An authorization policy is basically a collection of rules, which are applied to resources and restricted by conditions. Authorization policies are defined by developers and come with the respective bundled application.
 
 **Setting Up Authorization Policies**
 
@@ -93,7 +93,7 @@ Development environment
 <tr>
 <td valign="top">
 
-Deploy authorization policies with the application
+Deploy authorization policies with the bundled application
 
 
 
@@ -186,7 +186,7 @@ Administration console
 
 We distinguish between different types of authorization policies. You recognize the diffent types in the *Package* column.
 
--   The package name of the basic policies is defined by the application.
+-   The package name of the basic policies is defined by the bundled application.
 
 -   Customers can deploy their own authorization policies in customer-developed packages, which have the package name *Customer Package* in the list of authorization policies.
 
@@ -221,7 +221,7 @@ Basic authorization policy
 </td>
 <td valign="top">
 
-Authorization policy delivered by the application. Administrators can copy the authorization policy and modify the copy. The copy, modified or not, is a custom authorization policy. You can't change or delete it in the administration console.
+Authorization policy delivered by the bundled application. Administrators can copy the authorization policy and modify the copy. The copy, modified or not, is a custom authorization policy. You can't change or delete it in the administration console.
 
 
 

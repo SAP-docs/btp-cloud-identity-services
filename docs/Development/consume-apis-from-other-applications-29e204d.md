@@ -1,21 +1,16 @@
-<!-- loio9ad7e8052d054e83adf10aff1bdae1bf -->
+<!-- loio29e204da5b794c4683289ee0384ec781 -->
 
-# Communicate Between Applications
+# Consume APIs From Other Applications
 
-Applications sometimes need to propagate principals or have technical communication arrangements between OpenID Connect \(OIDC\) applications. To enable one application to consume the APIs of another application, configure an application to include the audience of the other application in tokens issued by Identity Authentication.
+Applications sometimes need to propagate principals or have technical communication arrangements between applications. To enable one application to consume the APIs of another application, configure an application to include the audience of the other application in tokens issued by Identity Authentication.
 
 
 
-<a name="loio9ad7e8052d054e83adf10aff1bdae1bf__prereq_ygs_hc3_pwb"/>
+<a name="loio29e204da5b794c4683289ee0384ec781__prereq_ygs_hc3_pwb"/>
 
 ## Prerequisites
 
--   The provider and consumer applications are configured as OIDC applications.
-
-    > ### Note:  
-    > Type the name of the application in the search field to filter the list items, or choose the application from the list on the left.
-    > 
-    > If you don’t have a created application in your list, you can create one. For more information, see [Create a New Application](create-a-new-application-0d4b255.md).
+-   The provider and consumer applications are configured as OpenID Connect \(OIDC\) applications.
 
 -   You know the name of the API needed by the consumer application.
 
@@ -23,6 +18,8 @@ Applications sometimes need to propagate principals or have technical communicat
 
 
 
+
+<a name="loio29e204da5b794c4683289ee0384ec781__context_hxg_cvn_rwb"/>
 
 ## Context
 
@@ -37,6 +34,8 @@ In this scenario, you've one application that provides an API and another applic
 The administrator must ensure that the two applications can share the APIs between each other, if the applications weren't deployed with this configuration.
 
 
+
+<a name="loio29e204da5b794c4683289ee0384ec781__steps_pmp_dvn_rwb"/>
 
 ## Procedure
 
@@ -74,7 +73,7 @@ The administrator must ensure that the two applications can share the APIs betwe
 
 
 
-<a name="loio9ad7e8052d054e83adf10aff1bdae1bf__result_g5m_ms3_pwb"/>
+<a name="loio29e204da5b794c4683289ee0384ec781__result_g5m_ms3_pwb"/>
 
 ## Results
 
@@ -111,7 +110,7 @@ Expires at: Tue Feb 21 2023 15:27:06 GMT+0100 (Central European Standard Time)
 
 
 
-<a name="loio9ad7e8052d054e83adf10aff1bdae1bf__postreq_i2q_bsj_pwb"/>
+<a name="loio29e204da5b794c4683289ee0384ec781__postreq_i2q_bsj_pwb"/>
 
 ## Next Steps
 

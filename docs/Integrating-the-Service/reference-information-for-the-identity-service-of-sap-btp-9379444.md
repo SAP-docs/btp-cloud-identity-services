@@ -334,7 +334,7 @@ For more information about attributes for the subject name identifier, see [Conf
 
 An array of API names \(`name`\) and descriptions \(`description`\) which this application makes available for other applications to consume. The name can be any unique string of 32 characters. You can define a maximum of 20 APIs.
 
-For more information, see [Communicate Between Applications](../Operation-Guide/communicate-between-applications-9ad7e80.md).
+For more information, see [Configure Integration Between Applications](../Operation-Guide/configure-integration-between-applications-9ad7e80.md).
 
 
 
@@ -634,7 +634,12 @@ For information about how the Identity Authentication service supports code flow
 
 ## Token Validation
 
-To validate tokens, we provide a client library for Java the supports authentication of tokens from version 2.8.0. For more information, see [ SAP BTP Java Security Client Library](https://github.com/SAP/cloud-security-xsuaa-integration/tree/master/java-security) on *GitHub*.
+To validate tokens, we provide a client libraries to support the authentication of tokens.
+
+-   For Java, see [ SAP BTP Java Security Client Library](https://github.com/SAP/cloud-security-xsuaa-integration/tree/master/java-security) on *GitHub*. The Java library supports authentication of tokens from version 2.8.0.
+
+-   For node.js, see [@sap/xssec: XS Advanced Container Security API for node.js](https://www.npmjs.com/package/@sap/xssec) on *npm*.
+
 
 
 

@@ -1,8 +1,18 @@
 <!-- loioebd0258ed416417683dcdc21d74c240b -->
 
-# Reuse Identity Authentication Tenants for Different Customer IDs
+# Reuse SAP Cloud Identity Services Tenants for Different Customer IDs
 
 You as a tenant administrator can reuse an existing tenant for configurations and automated subscriptions.
+
+
+
+<a name="loioebd0258ed416417683dcdc21d74c240b__prereq_dw1_qgx_3xb"/>
+
+## Prerequisites
+
+-   You are assigned the *Manage Tenant Configuration* role. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
+
+-   You have a customer ID for the tenant.
 
 
 
@@ -24,7 +34,7 @@ Customers that have subsidiaries can reuse existing Identity Authentication tena
 
 3.  Choose the *Tenant Settings and Information* list item.
 
-4.  **Optional:** From the drop-down under the *Additional Settings* choose the tenant or tenants that will reuse the configurations of the tenant yoa are in now.
+4.  From the drop-down under the *Additional Settings*, choose the tenant or tenants that will reuse the configurations of the tenant you are in now.
 
     The *Customer records* drop-down contains only the tenants that are assigned to the global ultimate.
 

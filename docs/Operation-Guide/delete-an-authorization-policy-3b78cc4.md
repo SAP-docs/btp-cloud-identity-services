@@ -25,9 +25,9 @@ Identity Authentication administrators can delete an existing custom authorizati
 
 2.  Under *Applications & Resources*, choose *Applications*.
 
-3.  Choose an application that supports authorization management. For information, see the documentation of the application.
+3.  Choose a bundled application that supports authorization management. For information, see the documentation of the application.
 
-    The details page of your application has an *Authorization Policies* tab.
+    The details page of your bundled application has an *Authorization Policies* tab.
 
 4.  Choose the *Authorization Policies* tab.
 

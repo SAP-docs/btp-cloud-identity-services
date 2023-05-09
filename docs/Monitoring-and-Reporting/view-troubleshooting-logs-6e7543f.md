@@ -90,6 +90,8 @@ Once you have the results you can filter them by *Time*, *Severity*, *IP Address
 
 4.  Filter the search results by *Time*, *Severity*, *IP Address*, *CorrelationID*, or *Message.*.
 
+5.  **Optional:** Export the troubleshooting logs in an Excel file.
+
 
 
 

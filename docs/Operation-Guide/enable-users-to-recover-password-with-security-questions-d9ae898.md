@@ -35,7 +35,7 @@ Tenant administrator can offer up to 10 predefined questions, and can choose whi
 If *Home URL* is configured, users are redirected to the URL defined in the *Home URL* after resetting their passwords via Sequrity Questions. If *Home URL* is not configured users are redirected to the profile page.
 
 > ### Caution:  
-> The account of the user locks after five wrong answers to the security questions. To unlock the account, set an initial password for the user. For more information, see [Set Initial Password](set-initial-password-16149d5.md).
+> The security questions option locks after five wrong answers to the security questions. To unlock it, set an initial password for the user. For more information, see [Set Initial Password](set-initial-password-16149d5.md).
 
 > ### Remember:  
 > It takes 2 minutes for the configuration changes to take place.
@@ -143,5 +143,5 @@ To configure security questions in the administration console, follow the proced
 
 [Configure P-User Next Index](configure-p-user-next-index-045bb1c.md "Set the value for the P-user next index.")
 
-[Reuse Identity Authentication Tenants for Different Customer IDs](reuse-identity-authentication-tenants-for-different-customer-ids-ebd0258.md "You as a tenant administrator can reuse an existing tenant for configurations and automated subscriptions.")
+[Reuse SAP Cloud Identity Services Tenants for Different Customer IDs](reuse-sap-cloud-identity-services-tenants-for-different-customer-ids-ebd0258.md "You as a tenant administrator can reuse an existing tenant for configurations and automated subscriptions.")
 

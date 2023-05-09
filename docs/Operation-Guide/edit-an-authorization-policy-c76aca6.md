@@ -4,7 +4,7 @@
 
 # Edit an Authorization Policy
 
-Identity Authentication administrators can edit an existing custom authorization policy by adding or deleting restrictions and their attribute values.
+If Identity Authentication administrators want to change restrictions and their attributes, they can edit an existing custom authorization policy.
 
 
 
@@ -20,7 +20,7 @@ When you edit an existing custom authorization policy, you can add or delete res
 
 2.  Under *Applications & Resources*, choose *Applications*.
 
-3.  Choose the application that supports authorization management. For more information, see the documentation of the application.
+3.  Choose the bundled application that supports authorization management. For more information, see the documentation of the application.
 
     The details page of your application has an *Authorization Policies* tab.
 
@@ -30,7 +30,7 @@ When you edit an existing custom authorization policy, you can add or delete res
 
     -   \(Optional\) To assign users, choose the *Assignment* tab. See [Assign Authorization Policies](assign-authorization-policies-eac8e5e.md).
 
-    -   You see the rule that came with the custom authorization policy in the *Rules* tab.
+    -   You display the rule that came with the custom authorization policy in the *Rules* tab.
 
 
 6.  \(Optional\) You can enter a label and a description of the authorization policy or change them. The description is an optional comment.
@@ -46,7 +46,7 @@ When you edit an existing custom authorization policy, you can add or delete res
     > 
     > All rows starting with their own `RESTRICT` condition have an `OR` conjunction with the other `RESTRICT` rows.
 
-10. Choose the conditions that come with the application in the dropdown list. Next, choose an operator and choose or enter a value.
+10. Choose the conditions that come with the bundled application in the dropdown list. Next, choose an operator and choose or enter a value.
 
 11. Save your changes.
 

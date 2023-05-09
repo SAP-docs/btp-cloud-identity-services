@@ -201,6 +201,9 @@ For SAP BTP, Cloud Foundry environment:
 
 A customer has an SAP BTP, Cloud Foundry subaccount.
 
+> ### Note:  
+> The content in this section is only relevant for cloud management tools feature set B. For more information, see [Cloud Management Tools - Feature Set Overview](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/caf4e4e23aef4666ad8f125af393dfb2.html).
+
 **Procedure**
 
 1.  In the SAP BTP cockpit, choose your subaccount.

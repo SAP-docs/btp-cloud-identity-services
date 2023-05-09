@@ -427,11 +427,13 @@ Identity Authentication allows you to use a custom domain that is different from
     
 5.  Save your configuration.
 
-6.  Choose the *Download CSR file* used for the domain certificate. The button and save the generated CSR file.
+6.  Choose the *Download CSR file* used for the domain certificate.
 
     1.  Select the size of the certificate key. The supported key sizes are 2048, 3072 and 4096. The default value is 3072.
 
     2.  **Optional:** Add an additional subject alternative name to the CSR.
+
+    3.  Choose the *Download* button and save the generated CSR file.
 
 
     > ### Note:  
@@ -529,5 +531,5 @@ The custom domain configuration is enabled with the upgrade of Identity Authenti
 
 [Configure P-User Next Index](configure-p-user-next-index-045bb1c.md "Set the value for the P-user next index.")
 
-[Reuse Identity Authentication Tenants for Different Customer IDs](reuse-identity-authentication-tenants-for-different-customer-ids-ebd0258.md "You as a tenant administrator can reuse an existing tenant for configurations and automated subscriptions.")
+[Reuse SAP Cloud Identity Services Tenants for Different Customer IDs](reuse-sap-cloud-identity-services-tenants-for-different-customer-ids-ebd0258.md "You as a tenant administrator can reuse an existing tenant for configurations and automated subscriptions.")
 
