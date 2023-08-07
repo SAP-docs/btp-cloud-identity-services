@@ -73,7 +73,7 @@ Yes/Not Configurable
 <tr>
 <td valign="top">
 
-*E-Mail*
+*Email*
 
 
 
@@ -164,7 +164,7 @@ No/Configurable
 </tr>
 </table>
 
-The `Login Name` and *Phone* identifiers of a user can't have values that are equal to the `User ID`, `E-Mail`, `Login Name`, and *Phone* identifiers of another user.
+The `Login Name` and *Phone* identifiers of a user can't have values that are equal to the `User ID`, `Email`, `Login Name`, and *Phone* identifiers of another user.
 
 > ### Note:  
 > The `Display Name` user identifier for the tenants created before the system upgrade on May 13, 2020 is configured as required and unique.
@@ -172,9 +172,9 @@ The `Login Name` and *Phone* identifiers of a user can't have values that are eq
 > The *Phone* user attribute is configured as non-unique by default. If you configure it as unique, all users that are created or updated after this configuration won't be able to have phone numbers taken by someone else.
 
 > ### Remember:  
-> If `E-Mail` is marked as not-required on tenant level, it becomes configurable on application level, and must also be changed there, too. For more information, see [Configure Registration and Upgrade Forms](configure-registration-and-upgrade-forms-93a9e18.md).
+> If `Email` is marked as not-required on tenant level, it becomes configurable on application level, and must also be changed there, too. For more information, see [Configure Registration and Upgrade Forms](configure-registration-and-upgrade-forms-93a9e18.md).
 
-**E-Mail Required/Unique Configurations**
+**Email Required/Unique Configurations**
 
 
 <table>
@@ -211,27 +211,27 @@ Required
 </td>
 <td valign="top">
 
--   admin must provide e-mail when creating or editing user in the admin console
+-   admin must provide email when creating or editing user in the admin console
 -   `emails.value` attribute is mandatory when creating a user via the SCIM REST API
--   e-mail appears as required in the registration form of an application
--   user must provide e-mail, if missing, when an update of the account is triggered
--   admin can't delete user's e-mail in admin console
--   user can't delete his/her e-mail in profile page
+-   email appears as required in the registration form of an application
+-   user must provide email, if missing, when an update of the account is triggered
+-   admin can't delete user's email in admin console
+-   user can't delete his/her email in profile page
 
 
 
 </td>
 <td valign="top">
 
--   admin must provide e-mail when creating user in the admin console only when account activation is *Send activation e-mail*
+-   admin must provide email when creating user in the admin console only when account activation is *Send activation email*
 -   `emails.value` attribute must be provided when creating a user via the SCIM REST API only when `sendMail` attribute is *true*
--   e-mail is required in the registration form of the application; the configuration is taken into account for the upgrade process
--   reset password process will be replaced by change password process for users with no e-mail
--   user is not prompted to provide e-mail, if missing, when an update of the account is triggered
--   admin can delete user's e-mail in admin console
--   user can delete his/her e-mail in profile page
+-   email is required in the registration form of the application; the configuration is taken into account for the upgrade process
+-   reset password process will be replaced by change password process for users with no email
+-   user is not prompted to provide email, if missing, when an update of the account is triggered
+-   admin can delete user's email in admin console
+-   user can delete his/her email in profile page
 -   end-user screen texts differ from the actual tenant configuration; admin can change the tenant texts to match the configuration
--   e-mail verification setting for an application could be skipped for users with no e-mail.
+-   email verification setting for an application could be skipped for users with no email.
 
 
 
@@ -247,26 +247,26 @@ Unique
 </td>
 <td valign="top">
 
--   e-mail can be used for logon
--   e-mail must be unique, if provided, when a user is created or edited via the admin console
+-   email can be used for logon
+-   email must be unique, if provided, when a user is created or edited via the admin console
 -   `emails.value` attribute must be unique, if provided, when a user is created via SCIM REST API
--   user must provide unique e-mail, if required, when an update of the account is triggered
--   user import is supported; e-mail must be provided
+-   user must provide unique email, if required, when an update of the account is triggered
+-   user import is supported; email must be provided
 -   `email` attribute must be unique, if provided, when a user is registered via User Management REST API
 
 > ### Note:  
-> The e-mail user identifier must be selected unique if you use it for logon. For more information about how to configure the allowed logon identifiers, see Next Steps.
+> The email user identifier must be selected unique if you use it for logon. For more information about how to configure the allowed logon identifiers, see Next Steps.
 
 
 
 </td>
 <td valign="top">
 
--   e-mail can't be used for logon
--   admin can create more than one user with one and the same e-mail in the admin console
+-   email can't be used for logon
+-   admin can create more than one user with one and the same email in the admin console
 -   `emails.value` attribute may not be unique if provided when a user is created via SCIM REST API
--   e-mail, if required, may not be unique when an update of the account is triggered
--   users with nonunique e-mails can't change their password via the *Forgot Password* process using the e-mail as identifier
+-   email, if required, may not be unique when an update of the account is triggered
+-   users with nonunique emails can't change their password via the *Forgot Password* process using the email as identifier
 -   end-user screen texts differ from the actual tenant configuration; admin can change the tenant texts to match the configuration
 -   user import is not supported
 
@@ -278,7 +278,7 @@ Unique
 
 The texts on the end screen are predefined. If you change the required/unique preference in the tenant, this won’t automatically change the texts in the end-user page. To change the text, you must update the predefined texts and messages for end-user screens available per tenant in the Identity Authentication. For more information, see [Change Tenant Texts REST API](../Development/change-tenant-texts-rest-api-66ad80a.md#loio66ad80a6bbaf4fc3911232f7cc9a7de6).
 
-Although the choice for the `required` attribute is applied for all applications in the tenant, you can still make the *E-Mail* required on the registration and upgrade form for specific applications via a custom configuration. For more information, see [Configure Registration and Upgrade Forms](configure-registration-and-upgrade-forms-93a9e18.md)
+Although the choice for the `required` attribute is applied for all applications in the tenant, you can still make the *Email* required on the registration and upgrade form for specific applications via a custom configuration. For more information, see [Configure Registration and Upgrade Forms](configure-registration-and-upgrade-forms-93a9e18.md)
 
 > ### Remember:  
 > It takes 2 minutes for the configuration changes to take place.
@@ -295,7 +295,7 @@ If you want to change the configuration for the user identifier for your tenant,
 
     At the top of the page, you can view the administrative and license relevant information of the tenant.
 
-3.  Choose the *Logon Alias* list item.
+3.  Under *Authentication*, choose the *Logon Alias* list item.
 
 4.  Select the options for the user identifier according to your needs.
 
@@ -326,7 +326,7 @@ Choose the allowed logon identifiers for the users. For more information, see [C
 
 [Configure Links Section on Sign-In Screen](configure-links-section-on-sign-in-screen-060c032.md "You can configure links to appear on the sign-in screen of your applications.")
 
-[Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in sscreen of the Horizon theme with instructions for the user.")
+[Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in screen of the Horizon theme with instructions for the user.")
 
 [Configure X.509 Client Certificates for User Authentication](configure-x-509-client-certificates-for-user-authentication-52c7dcb.md "Tenant administrators can configure X.509 client certificates for user authentication as an alternative to authenticating with a user name and a password.")
 
@@ -342,7 +342,7 @@ Choose the allowed logon identifiers for the users. For more information, see [C
 
 [Enable Users to Recover Password with PIN Code](enable-users-to-recover-password-with-pin-code-046a235.md "Users can choose to provide PIN code to reset their password.")
 
-[Configure Initial Password and E-Mail Link Validity](configure-initial-password-and-e-mail-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
+[Configure Initial Password and Email Link Validity](configure-initial-password-and-email-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
 
 [Configure Session Timeout](configure-session-timeout-5ca23e4.md "As a tenant administrator, you can configure when the session, created at the Identity Authentication tenant, expires.")
 
@@ -358,13 +358,13 @@ Choose the allowed logon identifiers for the users. For more information, see [C
 
 [Configure RADIUS Server Settings \(Beta\)](configure-radius-server-settings-beta-03043ae.md "Configure Remote Authentication Dial-In User Service (RADIUS) server settings in the administration console for SAP Cloud Identity Services.")
 
-[Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the e-mails sent to the end users in the different application processes.")
+[Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the emails sent to the end users in the different application processes.")
 
 [Configure IdP-Initiated SSO](configure-idp-initiated-sso-5d59caa.md)
 
-[Send Security Alert E-Mails](send-security-alert-e-mails-c977464.md "Send security alert e-mails to end-users or administrators when changes in their accounts are made.")
+[Send Security Alert Emails](send-security-alert-emails-c977464.md "Send security alert emails to end-users or administrators when changes in their accounts are made.")
 
-[Send System Notifications via E-Mails](send-system-notifications-via-e-mails-aa04a8b.md "You can configure the administration console to send e-mails with information about expiring certificates, system notifications and new administrators to specific e-mail addresses or to the e-mails of all administrators.")
+[Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 

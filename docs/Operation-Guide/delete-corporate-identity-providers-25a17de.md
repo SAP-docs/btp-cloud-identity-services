@@ -26,7 +26,7 @@ A *Delete Identity Providers* operation removes the identity providers and all o
 
 To delete one or more identity providers, not used not used by applications in the tenant, choose one of the following options:
 
- <a name="task_bsb_lbv_dv"/>
+<a name="task_bsb_lbv_dv"/>
 
 <!-- task\_bsb\_lbv\_dv -->
 
@@ -57,7 +57,7 @@ To delete one or more identity providers, not used not used by applications in t
     Once the identity provider or identity providers have been deleted, the system displays the message ***<number\> identity providers deleted***.
 
 
- <a name="task_pjj_lbv_dv"/>
+<a name="task_pjj_lbv_dv"/>
 
 <!-- task\_pjj\_lbv\_dv -->
 

@@ -7,7 +7,7 @@ The update user method of the implementation of the SCIM REST API protocol provi
 
 
 > ### Note:  
-> This API will be deprecated. Please use [Identity Directory SCIM REST API](https://api.sap.com/api/IdDS_SCIM/overview) instead. For more information, see [Migrating Identity Authentication SCIM REST API to Identity Directory Service API](migrating-identity-authentication-scim-rest-api-to-identity-directory-service-api-106dbe0.md).
+> This API is deprecated. Please use [Identity Directory SCIM REST API](https://api.sap.com/api/IdDS_SCIM/overview) instead. For more information, see [Migrating Identity Authentication SCIM REST API to Identity Directory Service API](migrating-identity-authentication-scim-rest-api-to-identity-directory-service-api-106dbe0.md).
 
 
 
@@ -49,7 +49,7 @@ Attributes are case-sensitive and only the exact case must be used.
     > 
     > Values that are part of the respective exclude list can't be used. For more information, see [Restrict User Attributes Values via Exclude Lists](../Operation-Guide/restrict-user-attributes-values-via-exclude-lists-cb108c2.md).
     > 
-    > The `<username>` part of the e-mail address can have the following:
+    > The `<username>` part of the email address can have the following:
     > 
     > -   uppercase and lowercase Latin letters
     > 
@@ -62,7 +62,7 @@ Attributes are case-sensitive and only the exact case must be used.
     > -   space and the "\(\),:;<\>@\[\\\] characters can be used only if surrounded by quotation marks. The \\ or " must be preceded by \\
 
     > ### Tip:  
-    > If e-mail is mandatory, for users without valid e-mail addresses or for testing purposes use the `sap-test.de` domain, for example `<username>@sap-test.de`. Do not use any other existing or nonexisting domains.
+    > If email is mandatory, for users without valid email addresses or for testing purposes use the `sap-test.de` domain, for example `<username>@sap-test.de`. Do not use any other existing or nonexisting domains.
 
 -   `name.honorificPrefix`
 
@@ -116,7 +116,7 @@ Attributes are case-sensitive and only the exact case must be used.
 -   `locale`
 
     > ### Note:  
-    > Must be a string value specified by a two or four-letter code in one of the following formats: XX. Otherwise, the activation e-mail is in English.
+    > Must be a string value specified by a two or four-letter code in one of the following formats: XX. Otherwise, the activation email is in English.
 
 -   `phoneNumbers[work].value`
 
@@ -312,6 +312,8 @@ Administrators at Identity Authentication can store, read, create and, update cu
 ## Request Example
 
 
+
+## Example
 
 ```json
 
@@ -583,13 +585,15 @@ If user with `id` provided in the `value` attribute of the `manager` attribute f
 </tr>
 </table>
 
-For more information about the general error codes that may be returned, see [General Error Codes](general-error-codes-182352d.md).
+For more information about the general error codes that may be returned, see [Error and Success Codes](error-and-success-codes-7f87a75.md).
 
 
 
 ## Response Example
 
 
+
+## Example
 
 ```json
 

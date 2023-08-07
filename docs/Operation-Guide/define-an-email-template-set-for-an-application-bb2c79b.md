@@ -1,17 +1,17 @@
 <!-- loiobb2c79b71f8d47ec877882d78e0ceb39 -->
 
-# Define an E-Mail Template Set for an Application
+# Define an Email Template Set for an Application
 
-Tenant administrators can define the e-mail template set that the application uses.
+Tenant administrators can define the email template set that the application uses.
 
 
 
 ## Context
 
-Initially, the application uses a default template set with an English language version for all the templates in the set. This template set is named *Default*. If you want to use another e-mail template set, assign it to the respective application.
+Initially, the application uses a default template set with an English language version for all the templates in the set. This template set is named *Default*. If you want to use another email template set, assign it to the respective application.
 
 > ### Note:  
-> Both the HTML and TXT formats are included in the e-mails sent to a user. What the user sees, depends on the settings of his or her e-mail client.
+> Both the HTML and TXT formats are included in the emails sent to a user. What the user sees, depends on the settings of his or her email client.
 
 
 
@@ -30,9 +30,9 @@ Initially, the application uses a default template set with an English language 
 
 4.  Choose the *Branding and Layout* tab.
 
-5.  Under *E-MAIL CONFIGURATIONS*, choose *E-Mail Template Set*.
+5.  Under *EMAIL CONFIGURATIONS*, choose *Email Template Set*.
 
-6.  Select the radio button of the e-mail template set the application will use.
+6.  Select the radio button of the email template set the application will use.
 
 7.  Save your selection.
 
@@ -45,7 +45,7 @@ Initially, the application uses a default template set with an English language 
 
 ## Next Steps
 
-\(Optional\) Configure custom mail server. To use own mail server for the e-mails sent for the different application processes, you should configure your mail server in the administration console for SAP Cloud Identity Services.
+\(Optional\) Configure custom mail server. To use own mail server for the emails sent for the different application processes, you should configure your mail server in the administration console for SAP Cloud Identity Services.
 
 For more information, see [Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md).
 

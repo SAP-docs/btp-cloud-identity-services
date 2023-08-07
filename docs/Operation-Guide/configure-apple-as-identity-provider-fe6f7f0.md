@@ -26,7 +26,7 @@ Once a user has allowed Identity Authentication to link his or her account with 
 To configure sign in with Apple for the tenant, first you have to register an Application ID \(App ID\) and Services ID. For more details, see Related Information.
 
 > ### Note:  
-> You must type ***https://<tenant ID\>.accounts.ondemand.com*** in the *Domains and Subdomains* box, and ***https://<tenant ID\>.accounts.ondemand.com/ui/oauth/oauthCallback*** in the *Return URLs* box when you enable and configure the *Sign in with Apple* option at the Apple Developer site.
+> You must type `https://<tenant ID>.accounts.ondemand.com` in the *Domains and Subdomains* box, and `https://<tenant ID>.accounts.ondemand.com/ui/oauth/oauthCallback` in the *Return URLs* box when you enable and configure the *Sign in with Apple* option at the Apple Developer site.
 
 To perform the social identity provider configuration in the administration console for SAP Cloud Identity Services, you have to provide the following data:
 

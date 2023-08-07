@@ -7,7 +7,7 @@ The user search method of the Identity Authentication implementation of the SCIM
 
 
 > ### Note:  
-> This API will be deprecated. Please use [Identity Directory SCIM REST API](https://api.sap.com/api/IdDS_SCIM/overview) instead. For more information, see [Migrating Identity Authentication SCIM REST API to Identity Directory Service API](migrating-identity-authentication-scim-rest-api-to-identity-directory-service-api-106dbe0.md).
+> This API is deprecated. Please use [Identity Directory SCIM REST API](https://api.sap.com/api/IdDS_SCIM/overview) instead. For more information, see [Migrating Identity Authentication SCIM REST API to Identity Directory Service API](migrating-identity-authentication-scim-rest-api-to-identity-directory-service-api-106dbe0.md).
 
 
 
@@ -261,7 +261,7 @@ emails
 </td>
 <td valign="top">
 
-E-mail address of the user
+Email address of the user
 
 
 
@@ -586,6 +586,8 @@ Path
 
 
 
+## Example
+
 ```
 GET /service/scim/Users?filter=emails eq "john.smith@sap.com" and addresses.country eq "US"
 ```
@@ -745,7 +747,7 @@ Specifies the number of query results returned in a query response page, for exa
 </td>
 <td valign="top">
 
-Specifies the first entry of the query result, for example: ***initial*** or ***<user id\>***.
+Specifies the first entry of the query result, for example: `initial` or `<user id>`.
 
 
 
@@ -761,7 +763,7 @@ Specifies the first entry of the query result, for example: ***initial*** or ***
 </td>
 <td valign="top">
 
-Specifies the next user id \(that is, the id of the first user on the next page\). For example: ***<user id\>*** or ***<end\>***. The ***<end\>*** value indicates that the last user of the total number of users matching the query is returned.
+Specifies the next user id \(that is, the id of the first user on the next page\). For example: `<user id>` or `<end>`. The `<end>` value indicates that the last user of the total number of users matching the query is returned.
 
 
 
@@ -943,11 +945,6 @@ Specifies the next user id \(that is, the id of the first user on the next page\
     > This attribute is applicable for the corporate user store scenarios and contains the groups the user in the corporate user store is assigned to.
 
 -   `mailVerified`
--   `passwordStatus`
-
-    > ### Note:  
-    > Supported values: `initial`, `enabled`, and `disabled`.
-
 -   `userType`
 
     > ### Note:  
@@ -1125,7 +1122,7 @@ Operation Successful
 </tr>
 </table>
 
-For more information about the general error codes that may be returned, see [General Error Codes](general-error-codes-182352d.md).
+For more information about the general error codes that may be returned, see [Error and Success Codes](error-and-success-codes-7f87a75.md).
 
 **Related Information**  
 

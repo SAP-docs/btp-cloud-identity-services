@@ -25,7 +25,7 @@ This document explains how to call the authorize endpoint and what are the autho
 
 **URI:**`https://<tenant ID>.accounts.ondemand.com/oauth2/authorize`
 
-` `
+``
 
 **HTTP Method:***GET*
 
@@ -417,7 +417,7 @@ string
 
 The `login_hint` parameter helps the user when he or she is known to the service provider \(SP\). Thus it prevents the user from re-typing the user identifier on the logon or conditional screen.
 
-Supported values are the allowed logon identifiers for the users. The options are *User ID*, *Login Name*, and *E-Mail* \(For SAML 2.0\). For more information, see [Configure Allowed Logon Identifiers](configure-allowed-logon-identifiers-3adf1ff.md) .
+Supported values are the allowed logon identifiers for the users. The options are *User ID*, *Login Name*, and *Email* \(For SAML 2.0\). For more information, see [Configure Allowed Logon Identifiers](configure-allowed-logon-identifiers-3adf1ff.md) .
 
 
 
@@ -544,6 +544,92 @@ Path
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+`logout_uri`
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+<td valign="top">
+
+string
+
+
+
+</td>
+<td valign="top">
+
+-   [Configure OpenID Connect Application for Authorization Code Flow](configure-openid-connect-application-for-authorization-code-flow-4a94254.md)
+-   [Front-Channel Logout URI Rules](front-channel-logout-uri-rules-789c752.md)
+
+
+
+</td>
+<td valign="top">
+
+Path
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`prompt`
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+<td valign="top">
+
+string
+
+
+
+</td>
+<td valign="top">
+
+This parameter enables the client to determine if the user is still present in the current session.
+
+Supported values are:
+
+-   *login*
+
+    Force reauthentication of the user.
+
+-   *none*
+
+    Without user interaction, check if there is an exisiting user session. If there is a session, continue as normal. If there is no session or if the user is forced to authenticate for other reasons, return the error code ***login\_required***.
+
+
+
+
+</td>
+<td valign="top">
+
+Path
+
+
+
+</td>
+</tr>
 </table>
 
 
@@ -552,7 +638,7 @@ Path
 
 
 
-### Request Example \(`code_challange` and `code_challange_method` are required\)
+### Request Example \(`code_challenge` and `code_challenge_method` are required\)
 
 ```
 https://my-tenant.ondemand.com/oauth2/authorize?response_type=code&scope=openid&client_id=94ff0b4b0baa45a893c7cd24254b72b7&state=state&redirect_uri=https://example.com&code_challenge=MCVg2_O79Qpr6E7HDA0ik5R-ylwjT-_H3oUgdDQ9W50&code_challenge_method=S256
@@ -694,7 +780,7 @@ Location:
  https://www.example.com/?code=4454554df477w01s34540672dc462e6f0&state=state
 ```
 
- 
+
 
 **Related Information**  
 

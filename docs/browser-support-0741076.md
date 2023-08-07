@@ -21,7 +21,7 @@ Information on the supported browser version for the administration console, and
 
 [Accessibility Features in Identity Authentication](accessibility-features-in-identity-authentication-c7b544b.md "To optimize your experience of Identity Authentication, Identity Authentication tools provide features and settings that help you use the software efficiently.")
 
- <a name="concept_xst_gty_g5"/>
+<a name="concept_xst_gty_g5"/>
 
 <!-- concept\_xst\_gty\_g5 -->
 
@@ -29,7 +29,7 @@ Information on the supported browser version for the administration console, and
 
 The Administration Console uses the SAPUI5 libraries. For more information on the supported browsers, see [Browser and Platform Support](https://sapui5.hana.ondemand.com/#/topic/74b59efa0eef48988d3b716bd0ecc933).
 
- <a name="concept_iwq_yty_g5"/>
+<a name="concept_iwq_yty_g5"/>
 
 <!-- concept\_iwq\_yty\_g5 -->
 

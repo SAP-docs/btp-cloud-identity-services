@@ -296,9 +296,9 @@ string
 
 **External ID token:**
 
--   user identifier: according to the Subject Name Identifier configuration of the used corporate identity provider, the value of "email" or "sub" claim will be used to search the user by e-mail
+-   user identifier: according to the Subject Name Identifier configuration of the used corporate identity provider, the value of "email" or "sub" claim will be used to search the user by email
 
--   audience: must contain requested Identity Authentication issuer in "`aud`" claim
+-   audience: must contain either the requested Identity Authentication issuer or the client ID of the corporate identity provider in "`aud`" claim
 
 
 
@@ -428,7 +428,7 @@ Content-Type: application/json
 }
 ```
 
- 
+
 
 **Related Information**  
 

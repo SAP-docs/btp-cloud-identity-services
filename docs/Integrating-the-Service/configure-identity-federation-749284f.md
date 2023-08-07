@@ -25,7 +25,7 @@
 
 By default, *Use Identity Authentication user store* is disabled.
 
-In scenarios when the application is using for authentication a corporate identity provider, and the *Use Identity Authentication user store* option is disabled, the user attributes, the name ID attribute, and the default attributes configurations in the administration console for SAP Cloud Identity Services are not relevant. In such scenarios, Identity Authentication sends to the application the same attributes it has received from the corporate identity provider \(no change in the Subject Name Identifier or its format - Unspecified or E-Mail\). As a consequence, the same format is used not only for the ABAP and SAP Analytics Cloud tenants but also for all other SAP applications connected to the same Identity Authentication tenant, which may lead to contradictions if some applications require a different format.
+In scenarios when the application is using for authentication a corporate identity provider, and the *Use Identity Authentication user store* option is disabled, the user attributes, the name ID attribute, and the default attributes configurations in the administration console for SAP Cloud Identity Services are not relevant. In such scenarios, Identity Authentication sends to the application the same attributes it has received from the corporate identity provider \(no change in the Subject Name Identifier or its format - Unspecified or Email\). As a consequence, the same format is used not only for the ABAP and SAP Analytics Cloud tenants but also for all other SAP applications connected to the same Identity Authentication tenant, which may lead to contradictions if some applications require a different format.
 
 When *Use Identity Authentication user store* option is enabled, the application checks if the users authenticated by the corporate identity provider exist in the Identity Authentication user store. For users that exist in Identity Authentication, data from Identity Authentication user store is taken and the subject name identifier, assertion and default attributes according to the application configuration are sent. For users with no profile in Identity Authentication, the application receives the nameID attribute from the corporate IdP assertion, and the attributes according to the application configuration.
 
@@ -38,7 +38,7 @@ When *Use Identity Authentication user store* is enabled, it is possible to conf
 > ### Example:  
 > SAML 2.0 Scenario
 > 
-> If the corporate identity provider issues an assertion containing the login name as Subject Name Identifier and an Attribute Statement containing an e-mail address, the SAML assertion XML document would contain:
+> If the corporate identity provider issues an assertion containing the login name as Subject Name Identifier and an Attribute Statement containing an email address, the SAML assertion XML document would contain:
 > 
 > > ### Sample Code:  
 > > ```
@@ -71,7 +71,7 @@ When *Use Identity Authentication user store* is enabled, it is possible to conf
 > >  ...}
 > > ```
 
-If the ABAP and SAP Analytics Cloud tenants require the e-mail address \(in our example *dona.moore@test.com*\) for logon, but another application requires the login name, this can be achieved with the following configuration in the administration console for SAP Cloud Identity Services:
+If the ABAP and SAP Analytics Cloud tenants require the email address \(in our example *dona.moore@test.com*\) for logon, but another application requires the login name, this can be achieved with the following configuration in the administration console for SAP Cloud Identity Services:
 
 **SAML 2.0 Scenario**
 
@@ -147,14 +147,14 @@ Advanced Configuration: `${corporateIdP.mail}`
 </td>
 <td valign="top">
 
-***E-Mail***
+`Email`
 
 
 
 </td>
 <td valign="top">
 
-***E-Mail***
+`Email`
 
 
 
@@ -170,14 +170,14 @@ Advanced Configuration: `${corporateIdP.mail}`
 </td>
 <td valign="top">
 
-***None***
+`None`
 
 
 
 </td>
 <td valign="top">
 
-***None***
+`None`
 
 
 
@@ -193,14 +193,14 @@ Advanced Configuration: `${corporateIdP.mail}`
 </td>
 <td valign="top">
 
-***<your corporate identity provider\>***
+`<your corporate identity provider>`
 
 
 
 </td>
 <td valign="top">
 
-***<your corporate identity provider\>***
+`<your corporate identity provider>`
 
 
 
@@ -246,14 +246,14 @@ Advanced Configuration: `${corporateIdP.mail}`
 </td>
 <td valign="top">
 
-***E-Mail***
+`Email`
 
 
 
 </td>
 <td valign="top">
 
-***E-Mail***
+`Email`
 
 
 
@@ -269,14 +269,14 @@ Advanced Configuration: `${corporateIdP.mail}`
 </td>
 <td valign="top">
 
-***None***
+`None`
 
 
 
 </td>
 <td valign="top">
 
-***None***
+`None`
 
 
 
@@ -292,14 +292,14 @@ Advanced Configuration: `${corporateIdP.mail}`
 </td>
 <td valign="top">
 
-***<your corporate identity provider\>***
+`<your corporate identity provider>`
 
 
 
 </td>
 <td valign="top">
 
-***<your corporate identity provider\>***
+`<your corporate identity provider>`
 
 
 
@@ -322,7 +322,7 @@ Other Application
 </td>
 <td valign="top">
 
-***Login Name***
+`Login Name`
 
 
 
@@ -345,14 +345,14 @@ Advanced Configuration: `${corporateIdP.mail}`
 </td>
 <td valign="top">
 
-***Unspecified***
+`Unspecified`
 
 
 
 </td>
 <td valign="top">
 
-***Unspecified***
+`Unspecified`
 
 
 
@@ -368,14 +368,14 @@ Advanced Configuration: `${corporateIdP.mail}`
 </td>
 <td valign="top">
 
-***None***
+`None`
 
 
 
 </td>
 <td valign="top">
 
-***None***
+`None`
 
 
 
@@ -391,14 +391,14 @@ Advanced Configuration: `${corporateIdP.mail}`
 </td>
 <td valign="top">
 
-***<your corporate identity provider\>***
+`<your corporate identity provider>`
 
 
 
 </td>
 <td valign="top">
 
-***<your corporate identity provider\>***
+`<your corporate identity provider>`
 
 
 

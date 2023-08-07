@@ -108,7 +108,7 @@ lastName
 <tr>
 <td valign="top">
 
-E-mail
+Email
 
 
 
@@ -581,7 +581,7 @@ corporateGroups
 <tr>
 <td valign="top">
 
-Contact by E-mail
+Contact by Email
 
 
 
@@ -912,7 +912,7 @@ For example, you have defined the `mail` assertion attribute and at the same tim
 
     To configure Identity Authentication to reference attributes coming from the assertion of the corporate IdP, you must use the following format for the attribute:
 
-    `<attribute_name> = <prefix> ${corporateIdP.<corporateIdP_attribute_name><:regex[filter]>} <suffix>`
+    `<attribute_name> = <prefix> ${corporateIdP.<corporateIdP_attribute_name><:regex[filter]><:function[<method>]>} <suffix>`
 
     ****
 
@@ -943,21 +943,21 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     </tr>
     <tr>
     <td valign="top">
-
+    
     `attribute_name`
 
 
     
     </td>
     <td valign="top">
-
+    
     Yes
 
 
     
     </td>
     <td valign="top">
-
+    
     The name of the attribute as defined in the administration console. Free text.
 
 
@@ -966,21 +966,21 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     </tr>
     <tr>
     <td valign="top">
-
+    
     `prefix`
 
 
     
     </td>
     <td valign="top">
-
+    
     No
 
 
     
     </td>
     <td valign="top">
-
+    
     Free text.
 
 
@@ -989,21 +989,21 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     </tr>
     <tr>
     <td valign="top">
-
+    
     `corporateIdP`
 
 
     
     </td>
     <td valign="top">
-
+    
     Yes
 
 
     
     </td>
     <td valign="top">
-
+    
     Fixed string, indicating that the value is taken from the assertion coming from the corporate IdP.
 
 
@@ -1012,21 +1012,21 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     </tr>
     <tr>
     <td valign="top">
-
+    
     `corporateIdP_attribute_name`
 
 
     
     </td>
     <td valign="top">
-
+    
     Yes
 
 
     
     </td>
     <td valign="top">
-
+    
     The specific attribute from the corporate IdP, whose value is taken.
 
 
@@ -1035,21 +1035,21 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     </tr>
     <tr>
     <td valign="top">
-
+    
     `:regex[<filter>]`
 
 
     
     </td>
     <td valign="top">
-
+    
     No
 
 
     
     </td>
     <td valign="top">
-
+    
     Filter the attributes from the corporate IdP.
 
 
@@ -1058,21 +1058,49 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     </tr>
     <tr>
     <td valign="top">
-
-    `suffix`
+    
+    `:function[<method>]`
 
 
     
     </td>
     <td valign="top">
-
+    
     No
 
 
     
     </td>
     <td valign="top">
+    
+    Methods to convert the attributes. Currently the supported methods are:
 
+    -   uppercase - the attribute is converted to uppercase letters.
+
+    -   lowercase - the attribute is converted to lowercase letters.
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `suffix`
+
+
+    
+    </td>
+    <td valign="top">
+    
+    No
+
+
+    
+    </td>
+    <td valign="top">
+    
     Free text.
 
 
@@ -1155,7 +1183,7 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     The example can be expanded with the filtering option.
 
     > ### Example:  
-    > Again you have a scenario where Identity Authentication is a proxy. The default authenticating identity provider is the corporate IdP, and the *Identity Federation* option is configured for that corporate IdP.
+    > Again, you have a scenario where Identity Authentication is a proxy. The default authenticating identity provider is the corporate IdP, and the *Identity Federation* option is configured for that corporate IdP.
     > 
     > The corporate IdP is configured to send the user groups with the `group` assertion attribute.
     > 
@@ -1222,6 +1250,49 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     >   ]
     > 
     > ```
+
+    > ### Example:  
+    > Another scenario is where Identity Authentication is again a proxy. The default authenticating identity provider is the corporate IdP, and the *Identity Federation* option is configured for that corporate IdP.
+    > 
+    > The corporate IdP is configured to send the email with the `mail` assertion attribute. The incoming mail attribute from corporate IdP is in mixed case and it is converted to lower case. For example, Michael Adams' email in the corporate IdP is in mixed case Michael.Adams@example.com, and it is converted into lower case michael.adams@example.com.
+    > 
+    > **Default Attributes Configuration in Administration Console**
+    > 
+    > 
+    > <table>
+    > <tr>
+    > <th valign="top">
+    > 
+    > Attribute
+    > 
+    > 
+    > 
+    > </th>
+    > <th valign="top">
+    > 
+    > Value
+    > 
+    > 
+    > 
+    > </th>
+    > </tr>
+    > <tr>
+    > <td valign="top">
+    > 
+    > mail
+    > 
+    > 
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > $\{corporateIdP.mail:function\[lowercase\]\}
+    > 
+    > 
+    > 
+    > </td>
+    > </tr>
+    > </table>
 
     > ### Remember:  
     > When Identity Authentication is configured to reference an attribute from the corporate IdP, but this attribute isn't sent in the corporate IdP assertion, the attribute isn't sent to the application either.

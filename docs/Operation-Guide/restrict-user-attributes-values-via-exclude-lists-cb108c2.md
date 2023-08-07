@@ -2,17 +2,17 @@
 
 # Restrict User Attributes Values via Exclude Lists
 
-You can restrict the values that can be set on the e-mail, first and last name attributes of the user.
+You can restrict the values that can be set on the email, first and last name attributes of the user.
 
 
 
 ## Context
 
-The configured exclude lists for e-mail, first and last name attributes are considered in the user creation and user update via the Identity Authentication SCIM API, Identity Directory SCIM API, the administration console for SAP Cloud Identity Services, and user import.
+The configured exclude lists for email, first and last name attributes are considered in the user creation and user update via the Identity Authentication SCIM API, Identity Directory SCIM API, the administration console for SAP Cloud Identity Services, and user import.
 
-If the exclude lists are empty, you can create and update a user with any value for e-mail, first and last name attributes.
+If the exclude lists are empty, you can create and update a user with any value for email, first and last name attributes.
 
-To create exclude lists for e-mail, first and last name attributes, follow the procedure below:
+To create exclude lists for email, first and last name attributes, follow the procedure below:
 
 
 
@@ -28,7 +28,7 @@ To create exclude lists for e-mail, first and last name attributes, follow the p
 
     -   First Name
     -   Last Name
-    -   E-Mail
+    -   Email
 
 4.  Choose *Create* and enter the exclude terms as free text in the field.
 
@@ -40,7 +40,7 @@ To create exclude lists for e-mail, first and last name attributes, follow the p
 **Related Information**  
 
 
-[Import or Update Users for a Specific Application](import-or-update-users-for-a-specific-application-33838e0.md "As a tenant administrator, you can import new users or update existing ones for a specific application with a CSV file. You can also send activation e-mails to the users that have not received activation e-mails for that application so far.")
+[Import or Update Users for a Specific Application](import-or-update-users-for-a-specific-application-33838e0.md "As a tenant administrator, you can import new users or update existing ones for a specific application with a CSV file. You can also send activation emails to the users that have not received activation emails for that application so far.")
 
 [Create a New User](create-a-new-user-348deef.md "As a tenant administrator, you can create a new user in the administration console for SAP Cloud Identity Services.")
 

@@ -239,7 +239,7 @@ The ID of the created SP user is in the location header of the HTTP Response.
 Location: https://<tenant ID>.accounts.ondemand.com/service/users/<SP user ID>
 ```
 
- 
+
 
 **Related Information**  
 

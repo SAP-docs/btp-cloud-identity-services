@@ -7,7 +7,7 @@ The delete group resource method of the Identity Authentication implementation o
 
 
 > ### Note:  
-> This API will be deprecated. Please use [Identity Directory SCIM REST API](https://api.sap.com/api/IdDS_SCIM/overview) instead. For more information, see [Migrating Identity Authentication SCIM REST API to Identity Directory Service API](migrating-identity-authentication-scim-rest-api-to-identity-directory-service-api-106dbe0.md).
+> This API is deprecated. Please use [Identity Directory SCIM REST API](https://api.sap.com/api/IdDS_SCIM/overview) instead. For more information, see [Migrating Identity Authentication SCIM REST API to Identity Directory Service API](migrating-identity-authentication-scim-rest-api-to-identity-directory-service-api-106dbe0.md).
 
 
 
@@ -27,7 +27,7 @@ You have the `id` of the group whose resource you want to delete.
 
 ## Request
 
-**URI:**`https://<tenant ID>.accounts.ondemand.com/service/scim/Groups/<id of the group>`` `
+**URI:**`https://<tenant ID>.accounts.ondemand.com/service/scim/Groups/<id of the group>```
 
 **HTTP Method:***DELETE*
 
@@ -197,9 +197,9 @@ The group does not exist
 </tr>
 </table>
 
-For more information about the general error codes that may be returned, see [General Error Codes](general-error-codes-182352d.md).
+For more information about the general error codes that may be returned, see [Error and Success Codes](error-and-success-codes-7f87a75.md).
 
- 
+
 
 **Related Information**  
 

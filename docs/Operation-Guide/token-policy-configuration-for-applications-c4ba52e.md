@@ -37,7 +37,7 @@ Description
 <tr>
 <td valign="top">
 
- *Refresh Token* 
+*Refresh Token* 
 
 
 
@@ -64,7 +64,7 @@ The default value is 12 hours.
 <tr>
 <td valign="top">
 
- *Access / ID Token* 
+*Access / ID Token* 
 
 
 
@@ -82,7 +82,7 @@ The default value is 60 minutes.
 <tr>
 <td valign="top">
 
- *Max sessions per user* 
+*Max sessions per user* 
 
 
 
@@ -106,7 +106,7 @@ The default value is 1.
 
 ### Advanced Settings
 
- **Refresh Token Usage After Renewal** 
+**Refresh Token Usage After Renewal** 
 
 When refresh token flows fail, you can enable the server to accept a refresh token that was already submitted. Normally, a refresh token can only be used once. The configuration aims to solve issues, for example network problems in refresh token calls, and allow an application to retry this call. Define the behavior of clients depending on your scenario and the risk. If you extend the rotation life time, we recommend revoking existing tokens with a separate call.
 
@@ -183,7 +183,7 @@ The new and old refresh token are valid during the configured refresh token life
 > ### Note:  
 > For online and mobile scenarios, calls to refresh the old refresh token end in the new token. Calls with the new refresh token, invalidates the old refresh token.
 
- **Access Token Format** 
+**Access Token Format** 
 
 
 <table>

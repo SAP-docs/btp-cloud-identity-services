@@ -29,7 +29,7 @@ Each rule contains the following information:
 
 -   *Domain*
 
-    Specify the domain of the e-mail address that comes after the @ symbol. If no is domain entered, the rule is valid for any domain.
+    Specify the domain of the email address that comes after the @ symbol. If no is domain entered, the rule is valid for any domain.
 
 -   *User Group*
 

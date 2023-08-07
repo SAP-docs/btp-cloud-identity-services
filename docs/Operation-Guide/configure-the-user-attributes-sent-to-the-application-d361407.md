@@ -104,7 +104,7 @@ last\_name
 <tr>
 <td valign="top">
 
-E-mail
+Email
 
 
 
@@ -598,7 +598,7 @@ corporate\_groups
 <tr>
 <td valign="top">
 
-Contact by E-mail
+Contact by Email
 
 
 
@@ -721,7 +721,7 @@ app\_custom\_attribute\_5
 > 
 > The configured custom attributes can be seen at the user profile page after choosing *View My Data*.
 > 
-> The configuration of the user attributes for the system applications is disabled. The default settings for these applications are `First Name`, `Company`, `Last Name`, and `E-Mail`.
+> The configuration of the user attributes for the system applications is disabled. The default settings for these applications are `First Name`, `Company`, `Last Name`, and `Email`.
 
 > ### Remember:  
 > When the application uses a corporate IdP for authentication, and *Identity Federation* is disabled, the user attributes configurations in the administration console for SAP Cloud Identity Services are not relevant. In such scenarios Identity Authentication sends to the application the user attributes that come from the corporate identity provider without changing them. For more information about the corporate identity provider scenario, see [Corporate Identity Providers](corporate-identity-providers-19f3eca.md) and [Configure Identity Federation](configure-identity-federation-c029bbb.md).

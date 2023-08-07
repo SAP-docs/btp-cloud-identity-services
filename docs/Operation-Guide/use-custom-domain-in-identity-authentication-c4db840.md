@@ -48,21 +48,21 @@ Identity Authentication allows you to use a custom domain that is different from
     </tr>
     <tr>
     <td valign="top">
-
+    
     Australia
 
 
     
     </td>
     <td valign="top">
-
+    
     SAP
 
 
     
     </td>
     <td valign="top">
-
+    
     `ap.accounts.ondemand.com.cloud.sap.akadns.net`
 
 
@@ -71,21 +71,21 @@ Identity Authentication allows you to use a custom domain that is different from
     </tr>
     <tr>
     <td valign="top">
-
+    
     Brazil
 
 
     
     </td>
     <td valign="top">
-
+    
     SAP
 
 
     
     </td>
     <td valign="top">
-
+    
     `br.accounts.ondemand.com.cloud.sap.akadns.net`
 
 
@@ -94,21 +94,21 @@ Identity Authentication allows you to use a custom domain that is different from
     </tr>
     <tr>
     <td valign="top">
-
+    
     China
 
 
     
     </td>
     <td valign="top">
-
+    
     SAP
 
 
     
     </td>
     <td valign="top">
-
+    
     `cn.accounts.ondemand.com.cloud.sap.akadns.net`
 
 
@@ -117,21 +117,21 @@ Identity Authentication allows you to use a custom domain that is different from
     </tr>
     <tr>
     <td valign="top">
-
+    
     Canada
 
 
     
     </td>
     <td valign="top">
-
+    
     Azure
 
 
     
     </td>
     <td valign="top">
-
+    
     `azr-na-ca.accounts.ondemand.com.cloud.sap.akadns.net`
 
 
@@ -140,21 +140,21 @@ Identity Authentication allows you to use a custom domain that is different from
     </tr>
     <tr>
     <td valign="top">
-
+    
     China
 
 
     
     </td>
     <td valign="top">
-
+    
     SAP
 
 
     
     </td>
     <td valign="top">
-
+    
     `accounts.sapcloud.cn.cloud.sap.akadns.net`
 
 
@@ -163,21 +163,21 @@ Identity Authentication allows you to use a custom domain that is different from
     </tr>
     <tr>
     <td valign="top">
-
+    
     EU
 
 
     
     </td>
     <td valign="top">
-
+    
     SAP
 
 
     
     </td>
     <td valign="top">
-
+    
     `accounts.ondemand.com.cloud.sap.akadns.net`
 
 
@@ -186,21 +186,21 @@ Identity Authentication allows you to use a custom domain that is different from
     </tr>
     <tr>
     <td valign="top">
-
+    
     Frankfurt
 
 
     
     </td>
     <td valign="top">
-
+    
     AWS
 
 
     
     </td>
     <td valign="top">
-
+    
     `aws-eu-de.accounts.ondemand.com.cloud.sap.akadns.net`
 
 
@@ -209,21 +209,21 @@ Identity Authentication allows you to use a custom domain that is different from
     </tr>
     <tr>
     <td valign="top">
-
+    
     Japan
 
 
     
     </td>
     <td valign="top">
-
+    
     SAP
 
 
     
     </td>
     <td valign="top">
-
+    
     `jp.accounts.ondemand.com.cloud.sap.akadns.net`
 
 
@@ -232,21 +232,21 @@ Identity Authentication allows you to use a custom domain that is different from
     </tr>
     <tr>
     <td valign="top">
-
+    
     Singapore
 
 
     
     </td>
     <td valign="top">
-
+    
     AWS
 
 
     
     </td>
     <td valign="top">
-
+    
     `aws-ap-se-1.accounts.ondemand.com.cloud.sap.akadns.net`
 
 
@@ -255,21 +255,21 @@ Identity Authentication allows you to use a custom domain that is different from
     </tr>
     <tr>
     <td valign="top">
-
+    
     South Korea
 
 
     
     </td>
     <td valign="top">
-
+    
     AWS
 
 
     
     </td>
     <td valign="top">
-
+    
     `aws-ap-kr.accounts.ondemand.com.cloud.sap.akadns.net`
 
 
@@ -278,21 +278,21 @@ Identity Authentication allows you to use a custom domain that is different from
     </tr>
     <tr>
     <td valign="top">
-
+    
     UAE
 
 
     
     </td>
     <td valign="top">
-
+    
     Azure
 
 
     
     </td>
     <td valign="top">
-
+    
     `azr-ap-ae.accounts.ondemand.com.cloud.sap.akadns.net`
 
 
@@ -301,21 +301,21 @@ Identity Authentication allows you to use a custom domain that is different from
     </tr>
     <tr>
     <td valign="top">
-
+    
     US East
 
 
     
     </td>
     <td valign="top">
-
+    
     SAP
 
 
     
     </td>
     <td valign="top">
-
+    
     `us-east.accounts.ondemand.com.cloud.sap.akadns.net`
 
 
@@ -324,21 +324,21 @@ Identity Authentication allows you to use a custom domain that is different from
     </tr>
     <tr>
     <td valign="top">
-
+    
     US West
 
 
     
     </td>
     <td valign="top">
-
+    
     Azure
 
 
     
     </td>
     <td valign="top">
-
+    
     `azr-us-we.accounts.ondemand.com.cloud.sap.akadns.net`
 
 
@@ -369,7 +369,7 @@ Identity Authentication allows you to use a custom domain that is different from
 
     At the top of the page, you can view the administrative and license relevant information of the tenant.
 
-3.  Choose the *Custom Domain* list item.
+3.  Under *Customization*, choose the *Custom Domain* list item.
 
 4.  Provide the required information in the provided fields:
 
@@ -393,14 +393,14 @@ Identity Authentication allows you to use a custom domain that is different from
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Domain*
 
 
     
     </td>
     <td valign="top">
-
+    
     The host of your custom domain
 
 
@@ -409,14 +409,14 @@ Identity Authentication allows you to use a custom domain that is different from
     </tr>
     <tr>
     <td valign="top">
-
+    
     *DN*
 
 
     
     </td>
     <td valign="top">
-
+    
     The `DN` used for the domain certificate. The `CN` attribute is mandatory and must match the custom domain used for the domain certificate.
 
 
@@ -446,9 +446,7 @@ Identity Authentication allows you to use a custom domain that is different from
     > ### Note:  
     > Make sure that the subject DN in the domain certificate and the configured subject DN match exactly.
     > 
-    > You can upload the domain certificate or the complete certificate chain.
-    > 
-    > The certificate chain must contain the domain certificate, the intermediate certificate or certificates, and the trusted CA root certificate in the same order.
+    > You can upload the domain certificate or the complete certificate chain. The certificate chain must contain the domain certificate, the intermediate certificate or certificates, and the trusted CA root certificate in the same order.
 
 9.  Save your configuration.
 
@@ -459,7 +457,7 @@ Identity Authentication allows you to use a custom domain that is different from
 
 ## Results
 
-The custom domain configuration is enabled with the upgrade of Identity Authentication. Identity Authentication has production releases \(bi-weekly updates\) planned every second Wednesday, 10:00 UTC. There are also immediate updates in case of fixes required for bugs that affect productive application operations, or due to urgent security fixes. For more information on the upgrade calendar of the service, see [What's New for Identity Authentication](../what-s-new-for-identity-authentication-de21efe.md).
+The custom domain configuration is enabled with the upgrade of Identity Authentication. We recommend you to renew your certificate as early as possible, preferably 30 days before expiration, and no later than the Sunday before productive system upgrade. Identity Authentication has production releases \(bi-weekly updates\) planned every second Wednesday, 10:00 UTC. There are also immediate updates in case of fixes required for bugs that affect productive application operations, or due to urgent security fixes. For more information on the upgrade calendar of the service, see [What's New for Identity Authentication](../what-s-new-for-identity-authentication-de21efe.md).
 
 
 
@@ -487,7 +485,7 @@ The custom domain configuration is enabled with the upgrade of Identity Authenti
 
 [Configure Links Section on Sign-In Screen](configure-links-section-on-sign-in-screen-060c032.md "You can configure links to appear on the sign-in screen of your applications.")
 
-[Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in sscreen of the Horizon theme with instructions for the user.")
+[Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in screen of the Horizon theme with instructions for the user.")
 
 [Configure X.509 Client Certificates for User Authentication](configure-x-509-client-certificates-for-user-authentication-52c7dcb.md "Tenant administrators can configure X.509 client certificates for user authentication as an alternative to authenticating with a user name and a password.")
 
@@ -505,7 +503,7 @@ The custom domain configuration is enabled with the upgrade of Identity Authenti
 
 [Enable Users to Recover Password with PIN Code](enable-users-to-recover-password-with-pin-code-046a235.md "Users can choose to provide PIN code to reset their password.")
 
-[Configure Initial Password and E-Mail Link Validity](configure-initial-password-and-e-mail-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
+[Configure Initial Password and Email Link Validity](configure-initial-password-and-email-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
 
 [Configure Session Timeout](configure-session-timeout-5ca23e4.md "As a tenant administrator, you can configure when the session, created at the Identity Authentication tenant, expires.")
 
@@ -519,13 +517,13 @@ The custom domain configuration is enabled with the upgrade of Identity Authenti
 
 [Configure RADIUS Server Settings \(Beta\)](configure-radius-server-settings-beta-03043ae.md "Configure Remote Authentication Dial-In User Service (RADIUS) server settings in the administration console for SAP Cloud Identity Services.")
 
-[Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the e-mails sent to the end users in the different application processes.")
+[Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the emails sent to the end users in the different application processes.")
 
 [Configure IdP-Initiated SSO](configure-idp-initiated-sso-5d59caa.md)
 
-[Send Security Alert E-Mails](send-security-alert-e-mails-c977464.md "Send security alert e-mails to end-users or administrators when changes in their accounts are made.")
+[Send Security Alert Emails](send-security-alert-emails-c977464.md "Send security alert emails to end-users or administrators when changes in their accounts are made.")
 
-[Send System Notifications via E-Mails](send-system-notifications-via-e-mails-aa04a8b.md "You can configure the administration console to send e-mails with information about expiring certificates, system notifications and new administrators to specific e-mail addresses or to the e-mails of all administrators.")
+[Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 

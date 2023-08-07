@@ -35,7 +35,7 @@ In the following procedure, we provide the syntax using the Cloud Foundry comman
 
     The following examples
 
-    -   cf cli: ***cf create-service identity application *<instance\_name\>****
+    -   cf cli: <code>cf create-service identity application <i class="varname">&lt;instance_name&gt;</i></code>
     -   kubectl:
 
         ```
@@ -54,7 +54,7 @@ In the following procedure, we provide the syntax using the Cloud Foundry comman
 
 2.  Bind your service instance to your application.
 
-    -   cf cli: ***cf bind-service *<my\_app\_name\>* *<instance\_name\>****
+    -   cf cli: <code>cf bind-service <i class="varname">&lt;my_app_name&gt;</i> <i class="varname">&lt;instance_name&gt;</i></code>
     -   kubectl:
 
         ```
@@ -99,14 +99,14 @@ In the following procedure, we provide the syntax using the Cloud Foundry comman
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Web application**
 
 
     
     </td>
     <td valign="top">
-
+    
     Use the approuter to authenticate the user. Otherwise, authenticate the user in the application code, according to the OIDC specification using information from service binding \(URL, client credentials\). For more information, see:
 
     -   [@sap/approuter](https://www.npmjs.com/package/@sap/approuter) at *npm*.
@@ -123,14 +123,14 @@ In the following procedure, we provide the syntax using the Cloud Foundry comman
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Service consumed by application \(principal propagation\)**
 
 
     
     </td>
     <td valign="top">
-
+    
     Validate the token validation and evaluate the binding data using client libraries.
 
     For more information, see [Reference Information for the Identity Service of SAP BTP](reference-information-for-the-identity-service-of-sap-btp-9379444.md).

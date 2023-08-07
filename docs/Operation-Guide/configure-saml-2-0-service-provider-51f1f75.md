@@ -36,7 +36,7 @@ You can add up to two signing certificates. Both signing certificates are accept
 
 You can choose the identity provider certificate to be used for signing for each application. For more information about the identity provider certificates, see [Tenant SAML 2.0 Configuration](tenant-saml-2-0-configuration-e81a19b.md).
 
-The idea behind the ability to choose the idp certificate is that when you want to change the default idp certificate all applications will have downtime since the applications have trust with the current default application on the application side. So when adding new idp certificate you can change the applications one by one to trust the new certificate.
+The idea behind the ability to choose the IdP certificate is that when you want to change the default IdP certificate all applications will have downtime since the applications have trust with the current default application on the application side. So, when adding new IdP certificate you can change the applications one by one to trust the new certificate.
 
 To configure a SAML 2.0 trusted service provider in the administration console for SAP Cloud Identity Services, proceed as follows:
 
@@ -93,7 +93,7 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     </tr>
     <tr>
     <td valign="top">
-
+    
     Choose:
 
     -   Metadata File
@@ -103,7 +103,7 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     
     </td>
     <td valign="top">
-
+    
     -   The metadata XML file of the service provider.
     -   The URL with service provider metadata.
 
@@ -113,14 +113,14 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     The entity ID of the service provider.
 
 
@@ -129,18 +129,20 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     </tr>
     <tr>
     <td valign="top">
-
+    
     Assertion Consumer Service Endpoint
 
 
     
     </td>
     <td valign="top">
-
+    
     The SP's endpoint URL that receives the response with the SAML assertion from Identity Authentication.
 
-    > ### Note:  
-    > You can see the index number of the endpoint of the assertion consumer service of the service provider as the target of the SAML response.
+    The following options are possible:
+
+    -   *URLs for Browser Flow* - the allowed domain for browser flows.
+    -   *URL for Principal Propagation* - URL is required for principal propagation scenarios to ABAP applications according to RFC 7522. For the proper URL consult the documentation of the providing application.
 
 
     
@@ -148,14 +150,14 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     </tr>
     <tr>
     <td valign="top">
-
+    
     Single Logout Endpoint
 
 
     
     </td>
     <td valign="top">
-
+    
     The SP's endpoint URL that receives the logout response or request \(for a multiple SPs scenario\) from Identity Authentication for the termination of all current sessions.
 
     This field has the following attributes:
@@ -174,20 +176,22 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     </tr>
     <tr>
     <td valign="top">
-
+    
     Signing Certificate
 
 
     
     </td>
     <td valign="top">
-
-    A base64-encoded certificate used by the service provider to sign digitally SAML protocol messages sent to Identity Authentication.
+    
+    A base64-encoded certificate used by the identity provider to verify the signatures of the SAML protocol messages created by the service provider.
 
     Use the *Add* button to add a second signing certificate.
 
     > ### Note:  
     > If you have two certificates, you can choose a default one, to mark your primary certificate.
+    > 
+    > The primary certificate is always validated first. If its validation isn't successful, then the secondary certificate is used. The certificate marked as primary is your main certificate. When it's time to rotate the certificates we recommend you to add a second certificate. When the first certificate expires, and you have a second one, you can safely remove the first one.
 
 
     
@@ -226,14 +230,14 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Sign assertions*
 
 
     
     </td>
     <td valign="top">
-
+    
     *On*
 
 
@@ -242,14 +246,14 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Sign authentication responses*
 
 
     
     </td>
     <td valign="top">
-
+    
     *Off*
 
 
@@ -258,14 +262,14 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Sign single logout messages*
 
 
     
     </td>
     <td valign="top">
-
+    
     *On*
 
 
@@ -274,14 +278,14 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Require signed authentication requests*
 
 
     
     </td>
     <td valign="top">
-
+    
     *Off*
 
 
@@ -290,14 +294,14 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Require signed single logout messages*
 
 
     
     </td>
     <td valign="top">
-
+    
     *On*
 
 

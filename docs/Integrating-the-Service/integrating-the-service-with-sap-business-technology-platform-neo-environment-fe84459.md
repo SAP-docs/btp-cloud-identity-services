@@ -48,13 +48,13 @@ For more information about the access to SAP BTP and Identity Authentication, se
 
 [Blogs](blogs-a89ca3e.md "Links to blogs and documents about integration scenarios with Identity Authentication.")
 
- <a name="concept_icm_hfz_gx"/>
+<a name="concept_icm_hfz_gx"/>
 
 <!-- concept\_icm\_hfz\_gx -->
 
 ## Access to SAP BTP Cockpit
 
-Once you purchase a customer or partner account of SAP BTP, an e-mail is sent to the contact person from your company with a link to your SAP BTP cockpit. The contact person is specified in the Order Form for SAP Cloud Services. He or she is the first subaccount member of the SAP BTP cockpit.
+Once you purchase a customer or partner account of SAP BTP, an email is sent to the contact person from your company with a link to your SAP BTP cockpit. The contact person is specified in the Order Form for SAP Cloud Services. He or she is the first subaccount member of the SAP BTP cockpit.
 
 > ### Note:  
 > For more information how to add other users for the subaccount, see [Managing Members in the Neo Environment](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/937c3cef72bb101490cf767db0e91070.html)
@@ -63,7 +63,7 @@ The cockpit is the central point for managing all activities associated with you
 
 To deploy applications on SAP BTP and to make configurations in the cockpit, you need a subaccount that corresponds to your role. For more information, see [Getting a Global Account](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/975c8fc61a384668a82e91c8448deb0b.html).
 
- <a name="concept_mth_3fz_gx"/>
+<a name="concept_mth_3fz_gx"/>
 
 <!-- concept\_mth\_3fz\_gx -->
 
@@ -71,17 +71,17 @@ To deploy applications on SAP BTP and to make configurations in the cockpit, you
 
 Identity Authentication does not use for authentication the users registered in the SAP Service Marketplace, but maintains an own user store for administrators and users.
 
-Once you purchase a customer or partner account of SAP BTP, a user account for Identity Authentication is created for the same contact person, specified in the Order Form. The contact person is the first administrator in the administration console for Identity Authentication. He or she receives an activation e-mail for the administration console account. The subject of the e-mail is: *Activate Your Account for Administration Console*. Following the required steps, the administrator activates the account and can continue to the administration console for SAP Cloud Identity Services via the console's URL.
+Once you purchase a customer or partner account of SAP BTP, a user account for Identity Authentication is created for the same contact person, specified in the Order Form. The contact person is the first administrator in the administration console for Identity Authentication. He or she receives an activation email for the administration console account. The subject of the email is: *Activate Your Account for Administration Console*. Following the required steps, the administrator activates the account and can continue to the administration console for SAP Cloud Identity Services via the console's URL.
 
 > ### Note:  
 > The URL has the `https://<tenant ID>.accounts.ondemand.com/admin` pattern.
 > 
-> *Tenant ID* is an automatically generated ID by the system. The URL is in the activation e-mail received by the first administration contains the *tenant ID*.
+> *Tenant ID* is an automatically generated ID by the system. The URL is in the activation email received by the first administration contains the *tenant ID*.
 
 > ### Caution:  
 > If new SAP BTP members are added into the Members page of the SAP BTP cockpit these members are not added as administrators of Identity Authentication. This is done only for the first account member. For more information about how to add new administrators in Identity Authentication, see [Add User as Administrator](../Operation-Guide/add-administrators-bbbdbdd.md#loio1dc498bff0674743a1a3a0ec3f0bf298).
 
- <a name="loio5c3a9ac58a0e475cbb988de7ef0fdf30"/>
+<a name="loio5c3a9ac58a0e475cbb988de7ef0fdf30"/>
 
 <!-- loio5c3a9ac58a0e475cbb988de7ef0fdf30 -->
 
@@ -176,7 +176,7 @@ Configure manual trust
 > ### Tip:  
 > Once setting Identity Authentication as a trusted identity provider for SAP BTP all SAP BTP applications and services use the trust and configuration settings. If you need different settings for the different SAP BTP applications or services, open a new subaccount. For more information, see [Create Subaccounts](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/d60337b3631540c6aea5908f6248bbcd.html). Once you have created the new subaccount, add the tenant of Identity Authentication in the new subaccount. Repeat the procedure from the table above to set the trust for each subaccount.
 
- <a name="loiob48a814ed58c4299acfd4e8fd7fb5556"/>
+<a name="loiob48a814ed58c4299acfd4e8fd7fb5556"/>
 
 <!-- loiob48a814ed58c4299acfd4e8fd7fb5556 -->
 
@@ -209,7 +209,7 @@ If you have added a tenant of Identity Authentication registered for your compan
 2.  **Optional:** Customize the settings for the application. For more information, see [Configuring Applications](../Operation-Guide/configuring-applications-61ad3b0.md).
 
 
- <a name="loioada5781b82a0407890b3a35e7538be76"/>
+<a name="loioada5781b82a0407890b3a35e7538be76"/>
 
 <!-- loioada5781b82a0407890b3a35e7538be76 -->
 
@@ -232,7 +232,7 @@ To configure IdP-initiated SSO with SAP BTP, follow the steps below:
 2.  Configure IdP-initiated SSO. For more information, see [Configure IdP-Initiated SSO](../Operation-Guide/configure-idp-initiated-sso-5d59caa.md).
 
 
- <a name="loio4310ad0c4d824ebd98b0698440719d4a"/>
+<a name="loio4310ad0c4d824ebd98b0698440719d4a"/>
 
 <!-- loio4310ad0c4d824ebd98b0698440719d4a -->
 
@@ -240,7 +240,7 @@ To configure IdP-initiated SSO with SAP BTP, follow the steps below:
 
 You have to specify how the assertion attributes are sent to SAP BTP in the assertion, and define their mapping.
 
- <a name="task_kmc_rhg_cy"/>
+<a name="task_kmc_rhg_cy"/>
 
 <!-- task\_kmc\_rhg\_cy -->
 
@@ -276,7 +276,7 @@ You have to specify how the assertion attributes are sent to SAP BTP in the asse
 
 [Configure the User Attributes Sent to the Application](../Operation-Guide/configure-the-user-attributes-sent-to-the-application-d361407.md "After configuring the user attributes to be collected by the registration and upgrade forms, you have to specify how these attributes are sent to the application.")
 
- <a name="task_ckj_rhg_cy"/>
+<a name="task_ckj_rhg_cy"/>
 
 <!-- task\_ckj\_rhg\_cy -->
 
@@ -318,14 +318,14 @@ You have to specify how the assertion attributes are sent to SAP BTP in the asse
     </tr>
     <tr>
     <td valign="top">
-
+    
     \*
 
 
     
     </td>
     <td valign="top">
-
+    
     \*
 
 
@@ -349,7 +349,7 @@ You have to specify how the assertion attributes are sent to SAP BTP in the asse
 
 [Application Identity Provider](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/dc618538d97610148155d97dcd123c24.html)
 
- <a name="loioa58cf311103d4c3ba8c6068d7fcdfec6"/>
+<a name="loioa58cf311103d4c3ba8c6068d7fcdfec6"/>
 
 <!-- loioa58cf311103d4c3ba8c6068d7fcdfec6 -->
 

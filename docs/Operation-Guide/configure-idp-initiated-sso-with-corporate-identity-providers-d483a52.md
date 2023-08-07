@@ -190,7 +190,7 @@ The IDP-Initiated SSO option in the tenant of Identity Authentication must be en
 > ### Note:  
 > IDP-Initiated SSO is enabled by default in Identity Authentication. For more information about how the tenant administrator can enable or disable this option, see [Configure IdP-Initiated SSO](configure-idp-initiated-sso-5d59caa.md).
 
- <a name="loio2a26d22d959046f3bd148e2b15839d62"/>
+<a name="loio2a26d22d959046f3bd148e2b15839d62"/>
 
 <!-- loio2a26d22d959046f3bd148e2b15839d62 -->
 
@@ -213,7 +213,7 @@ As an administrator of the application, you have to configure Identity Authentic
 
 Send the metadata of the service provider to the administrator of Identity Authentication. This is required for setting up the trust on the Identity Authentication provider side. For more information about how to set up th etrust, see [Configure SAML 2.0 Service Provider](configure-saml-2-0-service-provider-51f1f75.md).
 
- <a name="loioe845c2fb9bb04bedbec06fa76d1058cd"/>
+<a name="loioe845c2fb9bb04bedbec06fa76d1058cd"/>
 
 <!-- loioe845c2fb9bb04bedbec06fa76d1058cd -->
 
@@ -272,7 +272,7 @@ The following configuration is made by the tenant administrator of Identity Auth
 
 2.  Send the metadata of the tenant of Identity Authentication to the administrator of the service provider and the administrator of the corporate identity provider. They need the metadata for the trust configurations of the systems. For more information about how to download the tenant metadata, see [Tenant SAML 2.0 Configuration](tenant-saml-2-0-configuration-e81a19b.md).
 
- <a name="copy3d24839b33e04153b91139bb9113b58d"/>
+<a name="copy3d24839b33e04153b91139bb9113b58d"/>
 
 <!-- copy3d24839b33e04153b91139bb9113b58d -->
 
@@ -347,7 +347,7 @@ The application trusts all corporate identity providers that are configured in t
 
 [Configure IdP-Initiated SSO with Corporate Identity Providers](configure-idp-initiated-sso-with-corporate-identity-providers-d483a52.md#loiod483a52be22946d5a05951b0fa16221f "This document shows you how to configure identity provider (IdP) initiated single sign-on (SSO) with corporate identity providers.")
 
- <a name="loioddf22c3599e8464591747e23cc208318"/>
+<a name="loioddf22c3599e8464591747e23cc208318"/>
 
 <!-- loioddf22c3599e8464591747e23cc208318 -->
 
@@ -369,7 +369,7 @@ Follow the procedures in this document if you want to:
 
 -   **Apply Application Configurations**
 
- <a name="task_wzl_dlf_nhb"/>
+<a name="task_wzl_dlf_nhb"/>
 
 <!-- task\_wzl\_dlf\_nhb -->
 
@@ -415,7 +415,7 @@ If you want the application to receive assertions and name ID attributes that ar
 
 The application will receive in the assertion the attributes and name ID attribute that you have configured in Identity Authentication. They will be different from those that the corporate identity provider sent to Identity Authentication.
 
- <a name="task_knr_zhv_yv"/>
+<a name="task_knr_zhv_yv"/>
 
 <!-- task\_knr\_zhv\_yv -->
 
@@ -448,7 +448,7 @@ Only users that are in the user store of Identity Authentication will be able to
 
 The settings in the application configuration for assertion attributes and name ID attribute will be used for issuing the assertion. For more information, see [Configure the User Attributes Sent to the Application](configure-the-user-attributes-sent-to-the-application-d361407.md)and [Configure the Subject Name Identifier Sent to the Application](configure-the-subject-name-identifier-sent-to-the-application-1d020e3.md).
 
- <a name="task_dbb_13v_yv"/>
+<a name="task_dbb_13v_yv"/>
 
 <!-- task\_dbb\_13v\_yv -->
 
@@ -486,7 +486,7 @@ This configuration allows you to restrict the access to the application only to 
 
 Only the members of these groups will be authorized to access applications after successful authentication. If a user is not part of the groups, this user receives the following message: ***Sorry, but you are currently not authorized for access.***
 
- <a name="task_k1c_pnl_nhb"/>
+<a name="task_k1c_pnl_nhb"/>
 
 <!-- task\_k1c\_pnl\_nhb -->
 
@@ -529,7 +529,7 @@ This configuration allows you to apply the following application configurations,
 
 The application configuration will be taken into consideration, when the users are authenticated by the corporate IdP.
 
- <a name="loiobc7870de693c4f06a2f6e6b33adbf330"/>
+<a name="loiobc7870de693c4f06a2f6e6b33adbf330"/>
 
 <!-- loiobc7870de693c4f06a2f6e6b33adbf330 -->
 

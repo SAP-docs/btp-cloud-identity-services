@@ -229,13 +229,15 @@ Lists all the groups in a tenant.
 </tr>
 </table>
 
-For more information about the general error codes that may be returned, see [General Error Codes](general-error-codes-182352d.md).
+For more information about the general error codes that may be returned, see [Error and Success Codes](error-and-success-codes-7f87a75.md).
 
 
 
 ### Response Example
 
 
+
+## Example
 
 ```
 {

@@ -278,6 +278,9 @@ API - GET `https://<tenant ID>.accounts.ondemand.com/service/resource?resourceTy
 > 
 > If the names of the coumns are not from the core schema, the must be written with the `urn:attribute name`.
 
+> ### Tip:  
+> To update the `emails` or `userName` attribute you must provide the `SCIM ID` for the users that you want to update.
+
 > ### Note:  
 > The user import doesn’t assign any special rights or roles to the created or updated users for the specific application.
 
@@ -289,7 +292,7 @@ Values should not contain semicolons. If there is a semicolon, in the import the
 
 Depending on your *Logon Alias* configuration in the administration console you must consider the following:
 
--   If *E-Mail* is required and unique, in the csv file at least one `emails[0].value` must be present and unique.
+-   If *Email* is required and unique, in the csv file at least one `emails[0].value` must be present and unique.
 -   If *Login Name* is required and unique, in the csv file at least one `userName` must be present and unique.
 -   If *Display Name* is required and unique, in the csv file at least one `displayName` must be present unique.
 
@@ -317,7 +320,7 @@ To import users for an application into Identity Authentication, proceed as foll
 
     The system displays the first 20 users in the tenant sorted by their user ID number.
 
-3.  Press the *Import*
+3.  Press the *Import* button.
 
 4.  Choose the *Browse...* button and specify the location of the CSV file.
 

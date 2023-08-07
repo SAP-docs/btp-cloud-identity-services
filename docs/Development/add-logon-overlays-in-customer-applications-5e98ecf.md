@@ -82,14 +82,14 @@ To add a logon overlay into your application proceed as follows:
     </tr>
     <tr>
     <td valign="top">
-
+    
     rel
 
 
     
     </td>
     <td valign="top">
-
+    
     IDS\_login
 
 
@@ -98,14 +98,14 @@ To add a logon overlay into your application proceed as follows:
     </tr>
     <tr>
     <td valign="top">
-
+    
     href
 
 
     
     </td>
     <td valign="top">
-
+    
     -   points to an actual resource in your application that generates SAML 2.0 authentication request to Identity Authentication
     -   the name of the resource isn’t important
 
@@ -143,7 +143,7 @@ When the user chooses the logon link, the following happens:
 
 Protect applications against clickjacking when using overlays. For more information, see [Configure Clickjacking Protection](configure-clickjacking-protection-af3712b.md).
 
- <a name="concept_zws_kch_5r"/>
+<a name="concept_zws_kch_5r"/>
 
 <!-- concept\_zws\_kch\_5r -->
 
@@ -194,7 +194,7 @@ You can choose from:
     > If you don’t have a created application in your list, you can create one. For more information, see [Create a New Application](../Operation-Guide/create-a-new-application-0d4b255.md).
 
 4.  Choose the *Branding and Layout* tab.
-5.  Under *E-Mail Configurations*, choose the *Token Url Separator* list item.
+5.  Under *Email Configurations*, choose the *Token Url Separator* list item.
 6.  Choose a deliminator from the list:
     -   `;` - parameter, the default configuration
     -   `#` - fragment

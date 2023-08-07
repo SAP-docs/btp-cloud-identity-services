@@ -11,7 +11,7 @@
 > ### Note:  
 > The content in this section is not relevant for China \(Shanghai\) region.
 
- <a name="xxx"/>
+<a name="xxx"/>
 
 <!-- xxx -->
 
@@ -182,7 +182,7 @@ To link your Identity Authentication account with a social network account, proc
 
 Once you allow Identity Authentication to link your account with the social providers' accounts, you can log on to the applications via the social providers.
 
- <a name="yyy"/>
+<a name="yyy"/>
 
 <!-- yyy -->
 

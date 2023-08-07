@@ -14,7 +14,7 @@ This document explains how to call the authorize endpoint and what are the reque
 
 **URI:**`https://<tenant ID>.accounts.ondemand.com/oauth2/authorize`
 
-` `
+``
 
 **HTTP Method:***GET*
 
@@ -394,7 +394,93 @@ string
 
 The `login_hint` parameter helps the user when he or she is known to the service provider \(SP\). Thus it prevents the user from re-typing the user identifier on the logon or conditional screen.
 
-Supported values are the allowed logon identifiers for the users. The options are *User ID*, *Login Name*, and *E-Mail* \(For SAML 2.0\). For more information, see [Configure Allowed Logon Identifiers](configure-allowed-logon-identifiers-3adf1ff.md) .
+Supported values are the allowed logon identifiers for the users. The options are *User ID*, *Login Name*, and *Email* \(For SAML 2.0\). For more information, see [Configure Allowed Logon Identifiers](configure-allowed-logon-identifiers-3adf1ff.md) .
+
+
+
+</td>
+<td valign="top">
+
+Path
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`logout_uri`
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+<td valign="top">
+
+string
+
+
+
+</td>
+<td valign="top">
+
+-   [Create OpenID Connect Application for Implicit Flow](create-openid-connect-application-for-implicit-flow-b19f5e3.md)
+-   [Front-Channel Logout URI Rules](front-channel-logout-uri-rules-789c752.md)
+
+
+
+</td>
+<td valign="top">
+
+Path
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`prompt`
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+<td valign="top">
+
+string
+
+
+
+</td>
+<td valign="top">
+
+This parameter enables the client to determine if the user is still present in the current session.
+
+Supported values are:
+
+-   *login*
+
+    Force reauthentication of the user.
+
+-   *none*
+
+    Without user interaction, check if there is an exisiting user session. If there is a session, continue as normal. If there is no session or if the user is forced to authenticate for other reasons, return the error code ***login\_required***.
+
 
 
 
@@ -517,7 +603,7 @@ EzNzYwLCJmaXJzdF9uYW1lIjoiRG9uYSIsImp0aSI6IjM4ZTQyMzMwLWRlN2EtNDEzMC1hM2ExLWI1OD
 iNTI4ZGE5OCJ9.-LSwBN2WSqnnqSkzSbg9iRmtAMR4moU5TpE40mX0Umw&state=state&token_type=Bearer
 ```
 
- 
+
 
 **Related Information**  
 

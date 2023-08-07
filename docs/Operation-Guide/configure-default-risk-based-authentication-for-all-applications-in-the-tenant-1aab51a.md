@@ -18,9 +18,9 @@ You can define rules for authentication according to different risk factors and 
     > ### Note:  
     > Sinch Verification account is purchased separately. It is not part of the Identity Authentication contract.
 
--   \(For *E-Mail OTP Code*\) An E-Mail OTP Code template for the respective languages must exist in the tenant to apply the e-mail OTP code method. If the template does not exist, the user will see the option but when choosing it, the following message will appear: "Sorry, but you are currently not authorized for access".
+-   \(For *Email OTP Code*\) An Email OTP Code template for the respective languages must exist in the tenant to apply the email OTP code method. If the template does not exist, the user will see the option but when choosing it, the following message will appear: "Sorry, but you are currently not authorized for access".
 
-    For more information how to add e-mail templates, see [Edit or Add an E-Mail Template Set](edit-or-add-an-e-mail-template-set-3c4f397.md).
+    For more information how to add email templates, see [Edit or Add an Email Template Set](edit-or-add-an-email-template-set-3c4f397.md).
 
 
 
@@ -65,7 +65,9 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
 
     At the top of the page, you can view the administrative and license relevant information of the tenant.
 
-3.  **Optional:** Configure the authentication rules. Choose one of the following \(optional\):
+3.  Under *Authentication*, choose *Risk-Based Authentication*.
+
+4.  **Optional:** Configure the authentication rules. Choose one of the following \(optional\):
 
 
     <table>
@@ -87,14 +89,14 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
     </tr>
     <tr>
     <td valign="top">
-
+    
     Create a new rule
 
 
     
     </td>
     <td valign="top">
-
+    
     See [Create a New Rule for Risk-Based Authentication on Tenant Level](configure-default-risk-based-authentication-for-all-applications-in-the-tenant-1aab51a.md#loio2ef53523c5fc47049f6ae0056252be4a).
 
 
@@ -103,14 +105,14 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
     </tr>
     <tr>
     <td valign="top">
-
+    
     Edit an existing rule
 
 
     
     </td>
     <td valign="top">
-
+    
     Choose the ![](images/edit_icon_d077ded.png) icon next to the rule you want to edit.
 
 
@@ -119,14 +121,14 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
     </tr>
     <tr>
     <td valign="top">
-
+    
     Delete an existing rule
 
 
     
     </td>
     <td valign="top">
-
+    
     Choose the delete ![](images/delete_icon_4801c38.png) icon next to the rule you want to delete.
 
 
@@ -135,14 +137,14 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
     </tr>
     <tr>
     <td valign="top">
-
+    
     Reprioritize rules
 
 
     
     </td>
     <td valign="top">
-
+    
     Use the arrows to reprioritize the rules.
 
 
@@ -154,13 +156,13 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
     > ### Note:  
     > By default any user can log on from any IP.
 
-4.  **Optional:** Configure the *Default Action*:
+5.  **Optional:** Configure the *Default Action*:
 
     -   *Allow* - Any user can log on from any IP. This is te default choice.
     -   *Deny* - Nobody can log on.
     -   *Two-Factor Authentication* - A drop-down appears when this choice is selected. You must specify the two-factor authentication method or methods for the end user.
 
-5.  Save your changes.
+6.  Save your changes.
 
     Once the tenant has been updated, the system displays the message ***Authentication rules updated***.
 
@@ -178,7 +180,7 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
 
 [Configure Links Section on Sign-In Screen](configure-links-section-on-sign-in-screen-060c032.md "You can configure links to appear on the sign-in screen of your applications.")
 
-[Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in sscreen of the Horizon theme with instructions for the user.")
+[Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in screen of the Horizon theme with instructions for the user.")
 
 [Configure X.509 Client Certificates for User Authentication](configure-x-509-client-certificates-for-user-authentication-52c7dcb.md "Tenant administrators can configure X.509 client certificates for user authentication as an alternative to authenticating with a user name and a password.")
 
@@ -196,7 +198,7 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
 
 [Enable Users to Recover Password with PIN Code](enable-users-to-recover-password-with-pin-code-046a235.md "Users can choose to provide PIN code to reset their password.")
 
-[Configure Initial Password and E-Mail Link Validity](configure-initial-password-and-e-mail-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
+[Configure Initial Password and Email Link Validity](configure-initial-password-and-email-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
 
 [Configure Session Timeout](configure-session-timeout-5ca23e4.md "As a tenant administrator, you can configure when the session, created at the Identity Authentication tenant, expires.")
 
@@ -210,13 +212,13 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
 
 [Configure RADIUS Server Settings \(Beta\)](configure-radius-server-settings-beta-03043ae.md "Configure Remote Authentication Dial-In User Service (RADIUS) server settings in the administration console for SAP Cloud Identity Services.")
 
-[Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the e-mails sent to the end users in the different application processes.")
+[Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the emails sent to the end users in the different application processes.")
 
 [Configure IdP-Initiated SSO](configure-idp-initiated-sso-5d59caa.md)
 
-[Send Security Alert E-Mails](send-security-alert-e-mails-c977464.md "Send security alert e-mails to end-users or administrators when changes in their accounts are made.")
+[Send Security Alert Emails](send-security-alert-emails-c977464.md "Send security alert emails to end-users or administrators when changes in their accounts are made.")
 
-[Send System Notifications via E-Mails](send-system-notifications-via-e-mails-aa04a8b.md "You can configure the administration console to send e-mails with information about expiring certificates, system notifications and new administrators to specific e-mail addresses or to the e-mails of all administrators.")
+[Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 
@@ -224,7 +226,7 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
 
 [Reuse SAP Cloud Identity Services Tenants for Different Customer IDs](reuse-sap-cloud-identity-services-tenants-for-different-customer-ids-ebd0258.md "You as a tenant administrator can reuse an existing tenant for configurations and automated subscriptions.")
 
- <a name="loio2ef53523c5fc47049f6ae0056252be4a"/>
+<a name="loio2ef53523c5fc47049f6ae0056252be4a"/>
 
 <!-- loio2ef53523c5fc47049f6ae0056252be4a -->
 
@@ -289,18 +291,18 @@ Each rule contains the following information:
         > 
         >     If you set web two-factor authentication, users are required to authenticate with a device such as the built in biometric scanners or USB, Bluetooth or Near-Field Communication \(NFC\) devices in addition to their primary credentials.
         > 
-        > -   *E-Mail OTP Code*
+        > -   *Email OTP Code*
         > 
-        >     For security reasons, the E-mail OTP code is not a recommended two-factor authentication method. You may consider using some of the other methods instead.
+        >     For security reasons, the Email OTP code is not a recommended two-factor authentication method. You may consider using some of the other methods instead.
         > 
         >     Identity Authentication asks two factors to authenticate the user.
         > 
-        >     If you set *E-Mail OTP Code*, users are required to provide the code sent to their e-mail in addition to their primary credentials.
+        >     If you set *Email OTP Code*, users are required to provide the code sent to their email in addition to their primary credentials.
         > 
         >     > ### Remember:  
-        >     > An E-Mail OTP Code template for the respective languages must exist in the tenant to apply the e-mail OTP code method. If the template does not exist, the user will see the option but when choosing it, the following message will appear: "Sorry, but you are currently not authorized for access".
+        >     > An Email OTP Code template for the respective languages must exist in the tenant to apply the email OTP code method. If the template does not exist, the user will see the option but when choosing it, the following message will appear: "Sorry, but you are currently not authorized for access".
         >     > 
-        >     > For more information how to add e-mail templates, see [Edit or Add an E-Mail Template Set](edit-or-add-an-e-mail-template-set-3c4f397.md).
+        >     > For more information how to add email templates, see [Edit or Add an Email Template Set](edit-or-add-an-email-template-set-3c4f397.md).
         > 
         > -   *RADIUS Server Two Factor Authentication*
         > 
@@ -371,7 +373,7 @@ The fields *IP Range*, *Group*, *Authentication Method*, and *User Type* are not
 
     At the top of the page, you can view the administrative and license relevant information of the tenant.
 
-3.  Choose *Risk-Based Authentication*.
+3.  Under *Customization*, choose *Risk-Based Authentication*.
 
 4.  Choose *Create Rule*.
 

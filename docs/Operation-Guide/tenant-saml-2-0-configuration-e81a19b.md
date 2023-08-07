@@ -39,7 +39,7 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
 
     At the top of the page, you can view the administrative and license relevant information of the tenant.
 
-3.  Choose the *SAML 2.0 Configuration* list item.
+3.  Under *Single Sign-On*, choose the *SAML 2.0 Configuration* list item.
 
     The *SAML 2.0 Configuration* page that opens displays the name of the identity provider, its endpoints, and its signing certificate.
 
@@ -69,14 +69,14 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
     </tr>
     <tr>
     <td valign="top">
-
+    
     Default Type name format
 
 
     
     </td>
     <td valign="top">
-
+    
     <tenant ID\>.accounts.ondemand.com
 
 
@@ -85,14 +85,14 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
     </tr>
     <tr>
     <td valign="top">
-
+    
     URL Type name format
 
 
     
     </td>
     <td valign="top">
-
+    
     https://<tenant ID\>.accounts.ondemand.com
 
 
@@ -101,14 +101,14 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
     </tr>
     <tr>
     <td valign="top">
-
+    
     Common domain
 
 
     
     </td>
     <td valign="top">
-
+    
     https://<tenant ID\>.accounts.cloud.sap
 
 
@@ -117,14 +117,14 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
     </tr>
     <tr>
     <td valign="top">
-
+    
     Custom Domain \(if configured\)
 
 
     
     </td>
     <td valign="top">
-
+    
     <custom domain host\>
 
 
@@ -133,14 +133,14 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
     </tr>
     <tr>
     <td valign="top">
-
+    
     Tenants in China region
 
 
     
     </td>
     <td valign="top">
-
+    
     https:// <tenant ID\>.accounts.sapcloud.cn
 
 
@@ -150,7 +150,7 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
     </table>
     
     > ### Note:  
-    > Tenant ID is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the tenant ID.
+    > Tenant ID is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the tenant ID.
 
     > ### Remember:  
     > Change the name of the identity provider on the service provider side every time you change the name format of the identity provider in the administration console. If you have set trusts with more than one service provider, change the name in every service provider. For more information about how to edit the name, see the documentation of the respective service providers.
@@ -177,7 +177,7 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
 To change the default certificate for the tenant, choose the new one from the list, and save your configuration.
 
 > ### Caution:  
-> When you change the default certificate for the tenant, you must also update the trust with the service provider.
+> When you change the default certificate for the tenant, you must also update the trust with the service provider. For more information see [Configure OpenID Connect Application](configure-openid-connect-application-8a0aa2e.md) or [Configure OpenID Connect Application](configure-openid-connect-application-8a0aa2e.md).
 
 **Related Information**  
 
@@ -190,7 +190,7 @@ To change the default certificate for the tenant, choose the new one from the li
 
 [Configure Links Section on Sign-In Screen](configure-links-section-on-sign-in-screen-060c032.md "You can configure links to appear on the sign-in screen of your applications.")
 
-[Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in sscreen of the Horizon theme with instructions for the user.")
+[Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in screen of the Horizon theme with instructions for the user.")
 
 [Configure X.509 Client Certificates for User Authentication](configure-x-509-client-certificates-for-user-authentication-52c7dcb.md "Tenant administrators can configure X.509 client certificates for user authentication as an alternative to authenticating with a user name and a password.")
 
@@ -208,7 +208,7 @@ To change the default certificate for the tenant, choose the new one from the li
 
 [Enable Users to Recover Password with PIN Code](enable-users-to-recover-password-with-pin-code-046a235.md "Users can choose to provide PIN code to reset their password.")
 
-[Configure Initial Password and E-Mail Link Validity](configure-initial-password-and-e-mail-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
+[Configure Initial Password and Email Link Validity](configure-initial-password-and-email-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
 
 [Configure Session Timeout](configure-session-timeout-5ca23e4.md "As a tenant administrator, you can configure when the session, created at the Identity Authentication tenant, expires.")
 
@@ -224,13 +224,13 @@ To change the default certificate for the tenant, choose the new one from the li
 
 [Configure RADIUS Server Settings \(Beta\)](configure-radius-server-settings-beta-03043ae.md "Configure Remote Authentication Dial-In User Service (RADIUS) server settings in the administration console for SAP Cloud Identity Services.")
 
-[Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the e-mails sent to the end users in the different application processes.")
+[Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the emails sent to the end users in the different application processes.")
 
 [Configure IdP-Initiated SSO](configure-idp-initiated-sso-5d59caa.md)
 
-[Send Security Alert E-Mails](send-security-alert-e-mails-c977464.md "Send security alert e-mails to end-users or administrators when changes in their accounts are made.")
+[Send Security Alert Emails](send-security-alert-emails-c977464.md "Send security alert emails to end-users or administrators when changes in their accounts are made.")
 
-[Send System Notifications via E-Mails](send-system-notifications-via-e-mails-aa04a8b.md "You can configure the administration console to send e-mails with information about expiring certificates, system notifications and new administrators to specific e-mail addresses or to the e-mails of all administrators.")
+[Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 

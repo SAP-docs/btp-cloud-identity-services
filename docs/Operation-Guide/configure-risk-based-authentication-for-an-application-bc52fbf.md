@@ -29,9 +29,9 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
     > ### Note:  
     > Sinch Verification account is purchased separately. It isn’t part of the Identity Authentication contract.
 
--   \(For *E-Mail OTP Code*\) An E-Mail OTP Code template for the respective languages must exist in the tenant to apply the e-mail OTP code method. If the template does not exist, the user will see the option but when choosing it, the following message will appear: "Sorry, but you are currently not authorized for access".
+-   \(For *Email OTP Code*\) An Email OTP Code template for the respective languages must exist in the tenant to apply the email OTP code method. If the template does not exist, the user will see the option but when choosing it, the following message will appear: "Sorry, but you are currently not authorized for access".
 
-    For more information how to add e-mail templates, see [Edit or Add an E-Mail Template Set](edit-or-add-an-e-mail-template-set-3c4f397.md).
+    For more information how to add email templates, see [Edit or Add an Email Template Set](edit-or-add-an-email-template-set-3c4f397.md).
 
 
 
@@ -80,14 +80,14 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
     </tr>
     <tr>
     <td valign="top">
-
+    
     Create a new rule
 
 
     
     </td>
     <td valign="top">
-
+    
     See [Create a New Rule](configure-risk-based-authentication-for-an-application-bc52fbf.md#loio18d02ab9cc7d4caf83d8654c8c51a175)
 
 
@@ -96,14 +96,14 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
     </tr>
     <tr>
     <td valign="top">
-
+    
     Edit an existing rule
 
 
     
     </td>
     <td valign="top">
-
+    
     Choose the ![](images/edit_icon_d077ded.png) icon next to the rule you want to edit.
 
 
@@ -112,14 +112,14 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
     </tr>
     <tr>
     <td valign="top">
-
+    
     Delete an existing rule
 
 
     
     </td>
     <td valign="top">
-
+    
     Choose the delete ![](images/delete_icon_4801c38.png) icon next to the rule you want to delete.
 
 
@@ -128,14 +128,14 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
     </tr>
     <tr>
     <td valign="top">
-
+    
     Reprioritize rules
 
 
     
     </td>
     <td valign="top">
-
+    
     Use the arrows to reprioritize the rules.
 
 
@@ -158,7 +158,7 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
     Once the application has been updated, the system displays the message ***Authentication rules updated***.
 
 
- <a name="concept_vdp_q51_r5"/>
+<a name="concept_vdp_q51_r5"/>
 
 <!-- concept\_vdp\_q51\_r5 -->
 
@@ -456,7 +456,7 @@ Donna Moore is an administrator of company A. She wants to configure Identity Au
 
 [Multi-Factor Authentication](../User-Guide/multi-factor-authentication-0d41cd4.md "This document provides information about the second factor for authentication or how to log on if you are asked to provide a second factor to your primary credentials.")
 
- <a name="loio18d02ab9cc7d4caf83d8654c8c51a175"/>
+<a name="loio18d02ab9cc7d4caf83d8654c8c51a175"/>
 
 <!-- loio18d02ab9cc7d4caf83d8654c8c51a175 -->
 
@@ -518,19 +518,19 @@ Each rule contains the following information:
         > 
         >     If you set web two-factor authentication, users are required to authenticate with a device such as the built in biometric scanners or USB, Bluetooth or Near-Field Communication \(NFC\) devices in addition to their primary credentials.
         > 
-        > -   *E-Mail OTP Code*
+        > -   *Email OTP Code*
         > 
         >     > ### Caution:  
-        >     > For security reasons, the E-mail OTP code is not a recommended two-factor authentication method. You may consider using some of the other methods instead.
+        >     > For security reasons, the Email OTP code is not a recommended two-factor authentication method. You may consider using some of the other methods instead.
         > 
         >     Identity Authentication asks two factors to authenticate the user.
         > 
-        >     If you set *E-Mail OTP Code*, users are required to provide the code sent to their e-mail in addition to their primary credentials.
+        >     If you set *Email OTP Code*, users are required to provide the code sent to their email in addition to their primary credentials.
         > 
         >     > ### Remember:  
-        >     > An E-Mail OTP Code template for the respective languages must exist in the tenant to apply the e-mail OTP code method. If the template does not exist, the user will see the option but when choosing it, the following message will appear: "Sorry, but you are currently not authorized for access".
+        >     > An Email OTP Code template for the respective languages must exist in the tenant to apply the email OTP code method. If the template does not exist, the user will see the option but when choosing it, the following message will appear: "Sorry, but you are currently not authorized for access".
         >     > 
-        >     > For more information how to add e-mail templates, see [Edit or Add an E-Mail Template Set](edit-or-add-an-e-mail-template-set-3c4f397.md).
+        >     > For more information how to add email templates, see [Edit or Add an Email Template Set](edit-or-add-an-email-template-set-3c4f397.md).
         > 
         > -   *RADIUS Server Two Factor Authentication*
         > 

@@ -63,14 +63,14 @@ To configure an OpenID Connect trusted application in the administration console
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Name \(mandatory\)*
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide a name of your choice.
 
 
@@ -79,14 +79,14 @@ To configure an OpenID Connect trusted application in the administration console
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Redirect URIs \(optional\)*
 
 
     
     </td>
     <td valign="top">
-
+    
     The redirection URIs to which the response can be sent. You can add up to 20 redirect URIs.
 
 
@@ -95,14 +95,14 @@ To configure an OpenID Connect trusted application in the administration console
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Post Logout Redirect URIs \(optional\)*
 
 
     
     </td>
     <td valign="top">
-
+    
     The redirection URIs where the user can be forwarded after logout. You can add up to 20 redirect URIs.
 
 
@@ -111,14 +111,14 @@ To configure an OpenID Connect trusted application in the administration console
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Front-Channel Logout URIs \(optional\)*
 
 
     
     </td>
     <td valign="top">
-
+    
     URIs which will be requested for logout. You can add up to 20 URIs.
 
 

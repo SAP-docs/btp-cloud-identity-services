@@ -13,11 +13,11 @@ This integration supports principle propagation to services consumed by your app
 
 The following figure shows each application integrating with the Identity Authentication tenant linked to your subaccount. The Identity service instance is represented by an application in the Identity Authentication tenant.
 
-   
+  
   
 **Applications Using the Identity Service**
 
- ![](images/Identity_broker_scenario_021ef86.png "Applications Using the Identity Service") 
+![](images/Identity_broker_scenario_021ef86.png "Applications Using the Identity Service")
 
 Each Identity instance has its own OAuth client for the Identity Authentication application serving as the OAuth and OIDC server. The OAuth client has its own credentials; either client ID and client secret or X.509 certificate. To use an existing X.509 client certificate from a trusted certification authority, provide the certificate when binding the instance to your application. Alternatively, you can request a new certificate as part of the binding. Access these credentials from the service binding. No matter which type of credentials you use, the Identity service supports code flows for users and technical users.
 

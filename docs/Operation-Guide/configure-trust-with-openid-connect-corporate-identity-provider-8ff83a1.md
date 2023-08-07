@@ -19,7 +19,7 @@ To use Identity Authentication as a proxy to delegate authentication to an exter
 
 To configure trust with the corporate identity provider, follow the procedures below:
 
- <a name="task_jlj_2rm_qgb"/>
+<a name="task_jlj_2rm_qgb"/>
 
 <!-- task\_jlj\_2rm\_qgb -->
 
@@ -49,6 +49,9 @@ Configure Identity Authentication as an application at the corporate identity pr
     https://<tenant_id>.accounts.ondemand.com/oauth2/callback
     ```
 
+
+> ### Note:  
+> Use the *OIDC Callback URL* button to copy the callback URL of the Identity Authentication tenant.
 
 
 
@@ -180,7 +183,7 @@ Optional.
 </tr>
 </table>
 
- <a name="task_rkw_frm_qgb"/>
+<a name="task_rkw_frm_qgb"/>
 
 <!-- task\_rkw\_frm\_qgb -->
 
@@ -211,14 +214,14 @@ Configure the corporate identity provider in the administration console for SAP 
 
 3.  Select the corporate identity provider that you want to configure.
 
-4.  Under *OpenID Connect Configuration* enter the following information for the corporate identity provider:
+4.  Under *Provider Configuration* enter the following information for the corporate identity provider:
 
 
     <table>
     <tr>
     <th valign="top">
 
-    Configuration
+    Provider Configuration
 
 
     
@@ -233,14 +236,14 @@ Configure the corporate identity provider in the administration console for SAP 
     </tr>
     <tr>
     <td valign="top">
-
+    
     Discovery URL
 
 
     
     </td>
     <td valign="top">
-
+    
     Required. Issuer or metadata URL of the corporate identity provider.
 
 
@@ -249,15 +252,15 @@ Configure the corporate identity provider in the administration console for SAP 
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
-    Required. Unique URI based *Name* of the corporate identity provider. The issuer is used by default.
+    
+    Required. Unique URI-based *Name* of the corporate identity provider. The issuer is used by default.
 
 
     
@@ -265,30 +268,41 @@ Configure the corporate identity provider in the administration console for SAP 
     </tr>
     <tr>
     <td valign="top">
-
-    Client ID
+    
+    Metadata Refresh Interval
 
 
     
     </td>
     <td valign="top">
+    
+    Refreshes the OpenID Connect metadata of the corporate identity provider automatically if it is older than the selected interval and there are logons which forward the request to the corporate identity provider.
 
-    Required. The Client ID of the application on the corporate identity provider side.
+    Optional. Choose from:
+
+    -   24 hours \(default choice\)
+    -   12 hours
 
 
     
     </td>
     </tr>
+    </table>
+    
+5.  Under *Client Authentication* enter the following information for the corporate identity provider:
+
+
+    <table>
     <tr>
     <td valign="top">
-
+    
     Client Authentication Method
 
 
     
     </td>
     <td valign="top">
-
+    
     Optional. Choose from:
 
     -   Client secret in body \(default choice\)
@@ -305,18 +319,53 @@ Configure the corporate identity provider in the administration console for SAP 
     </tr>
     <tr>
     <td valign="top">
+    
+    Client ID
 
+
+    
+    </td>
+    <td valign="top">
+    
+    Required. The Client ID of the application on the corporate identity provider side.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Client Secret
 
 
     
     </td>
     <td valign="top">
-
+    
     The Client Secret of the application on the corporate identity provider side.
 
     > ### Note:  
-    > Required when *Client Authentication Method* is ***Client secret in body*** or ***Client secret in authorization header***. The Client Secret of the application on the corporate identity provider side.
+    > Required when *Client Authentication Method* is `Client secret in body` or `Client secret in authorization header`. The Client Secret of the application on the corporate identity provider side.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Enable PKCE \(S256\)
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Optional. Disabled by default. If enabled, Identity Authentication will execute the authorization code flow enhanced with PKCE against the corporate identity provider.
+
+    > ### Note:  
+    > The authorization code flow with PKCE is recommended. Only code challenge method S256 is supported.
 
 
     
@@ -324,27 +373,21 @@ Configure the corporate identity provider in the administration console for SAP 
     </tr>
     </table>
     
-5.  **Optional:** Populate the OpenID Connect issuer and endpoints under the *Endpoints* section.
+6.  **Optional:** Populate the OpenID Connect issuer and endpoints under the *Endpoints* section.
 
-    The *Endpoints* section is readonly.
+    The *Endpoints* section is read-only.
 
-6.  **Optional:** Add additional scopes if needed.
+7.  **Optional:** Add additional scopes if needed.
 
     You can have up to 20 scopes. The `openid` scope is added by default. Each scope can have a length of up to 99 characters.
 
-7.  **Optional:** Choose the *Validate* button to check the configuration.
+8.  **Optional:** Choose the *Validate* button to check the configuration.
 
-    A client credentials token request is sent to the corporate identity provider to receive a token to validate the client credentials.
+    An authorization code flow will be executed against the corporate identity provider. The configuration is validated in a new tab where additional information about the authorization code, the token with all the claims and scopes, and the token verification is provided.
 
-8.  Save your configuration.
+9.  Save your configuration.
 
     Once the identity provider has been updated, the system displays the message ***Identity provider <name of identity provider\> updated***.
-
-9.  **Optional:** Refresh the OpenID Connect metadata of the corporate identity provider.
-
-    The metadata is refreshed automatically if it is older than 24 hours and there are logons which forward the request to the corporate identity provider.
-
-    By choosing the *Refresh Metadata* button you manually refresh the OpenID Connect metadata of the coroprate identity provider. Do this if there is a need for that.
 
 
 

@@ -40,9 +40,6 @@ You are assigned the *Manage Corporate Identity Providers* role. For more inform
 
     -   OpenID Connect Compliant
 
-        > ### Note:  
-        > Choose this option if you are using Microsoft Azure Active Directory \(Azure AD\) as OpenID Connect corporate identity provider.
-
 
 6.  Save your selection.
 

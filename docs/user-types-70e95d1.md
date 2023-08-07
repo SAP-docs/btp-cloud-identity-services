@@ -125,7 +125,9 @@ An employee user that need a different authentication, because, for example the 
 **Related Information**  
 
 
-[Application Types](application-types-8f61880.md "")
+[Tenant Types](tenant-types-069b25d.md "Identity Authentication provides three types of tenants - productive, test, and trial")
+
+[Application Types](application-types-8f61880.md "Application types in the administration console for SAP Cloud Identity Services.")
 
 [Cookies](cookies-e60fd04.md "")
 

@@ -148,7 +148,7 @@ The user can manage the biometric authentication settings at the profile page.
 
 ## Next Steps
 
-Enable the *Credential change* security alert e-mailing to inform the user when a biometric authentication device is activated or deactivated. For more information, see [Send Security Alert E-Mails](send-security-alert-e-mails-c977464.md).
+Enable the *Credential change* security alert emailing to inform the user when a biometric authentication device is activated or deactivated. For more information, see [Send Security Alert Emails](send-security-alert-emails-c977464.md).
 
 **Related Information**  
 

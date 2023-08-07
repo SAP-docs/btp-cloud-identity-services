@@ -37,7 +37,7 @@ You have registered the domain of the application and received a Site key and Se
 
 4.  Choose the*Google reCAPTCHA* service.
 
-5.  Enter the ***Site Key*** and ***Secret Key*** you received from Google for reCAPTCHA.
+5.  Enter the `Site Key` and `Secret Key` you received from Google for reCAPTCHA.
 
 6.  Save your changes.
 

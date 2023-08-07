@@ -19,7 +19,7 @@ You are assigned the *Manage Tenant Configuration* and *Manage Users* roles. For
 Tenant administrator can set an initial password for a user that has already activated the account. When the user logs on with the new password, he or she is prompted to change the password with a new one.
 
 > ### Restriction:  
-> The initial password can be valid between 1 and 365 days depending on the configuration made by the administrator. The default value is 14 days. The user is prompted to reset the password during the first authentication. After the validity of the initial password expires, the user can't log on to the application and must contact an administrator. For more information for more information about how to configure the initial password validity, see [Configure Initial Password and E-Mail Link Validity](configure-initial-password-and-e-mail-link-validity-f8093f4.md).
+> The initial password can be valid between 1 and 365 days depending on the configuration made by the administrator. The default value is 14 days. The user is prompted to reset the password during the first authentication. After the validity of the initial password expires, the user can't log on to the application and must contact an administrator. For more information for more information about how to configure the initial password validity, see [Configure Initial Password and Email Link Validity](configure-initial-password-and-email-link-validity-f8093f4.md).
 
 > ### Tip:  
 > [Configure SAML 2.0 Service Provider](configure-saml-2-0-service-provider-51f1f75.md).

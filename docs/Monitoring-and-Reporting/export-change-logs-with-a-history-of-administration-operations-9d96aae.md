@@ -69,7 +69,7 @@ Each record should contain the following data:
 > 2.  The tenant administrator uploads service provider metadata for the SAML 2.0 trust.
 > 3.  The tenant administrator creates custom Company A terms of use by uploading a plain text file.
 > 4.  The tenant administrator creates a custom Company A privacy policy by uploading a plain text file.
-> 5.  The tenant administrator allows user self-registration for an application of the configured service provider as she uses the default e-mail template for the self-registration process.
+> 5.  The tenant administrator allows user self-registration for an application of the configured service provider as she uses the default email template for the self-registration process.
 > 6.  The tenant administrator configures a branding style for the application.
 > 7.  The tenant administrator sets *SAP Community Password Policy v.1.1* for the application .
 > 8.  The tenant administrator sets *Company A Terms of Use* for the application.

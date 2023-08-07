@@ -15,7 +15,7 @@
 
 [Configure Links Section on Sign-In Screen](configure-links-section-on-sign-in-screen-060c032.md "You can configure links to appear on the sign-in screen of your applications.")
 
-[Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in sscreen of the Horizon theme with instructions for the user.")
+[Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in screen of the Horizon theme with instructions for the user.")
 
 [Configure X.509 Client Certificates for User Authentication](configure-x-509-client-certificates-for-user-authentication-52c7dcb.md "Tenant administrators can configure X.509 client certificates for user authentication as an alternative to authenticating with a user name and a password.")
 
@@ -33,7 +33,7 @@
 
 [Enable Users to Recover Password with PIN Code](enable-users-to-recover-password-with-pin-code-046a235.md "Users can choose to provide PIN code to reset their password.")
 
-[Configure Initial Password and E-Mail Link Validity](configure-initial-password-and-e-mail-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
+[Configure Initial Password and Email Link Validity](configure-initial-password-and-email-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
 
 [Configure Session Timeout](configure-session-timeout-5ca23e4.md "As a tenant administrator, you can configure when the session, created at the Identity Authentication tenant, expires.")
 
@@ -49,11 +49,11 @@
 
 [Configure RADIUS Server Settings \(Beta\)](configure-radius-server-settings-beta-03043ae.md "Configure Remote Authentication Dial-In User Service (RADIUS) server settings in the administration console for SAP Cloud Identity Services.")
 
-[Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the e-mails sent to the end users in the different application processes.")
+[Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the emails sent to the end users in the different application processes.")
 
-[Send Security Alert E-Mails](send-security-alert-e-mails-c977464.md "Send security alert e-mails to end-users or administrators when changes in their accounts are made.")
+[Send Security Alert Emails](send-security-alert-emails-c977464.md "Send security alert emails to end-users or administrators when changes in their accounts are made.")
 
-[Send System Notifications via E-Mails](send-system-notifications-via-e-mails-aa04a8b.md "You can configure the administration console to send e-mails with information about expiring certificates, system notifications and new administrators to specific e-mail addresses or to the e-mails of all administrators.")
+[Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 
@@ -63,7 +63,7 @@
 
 [Configure IdP-Initiated SSO with Corporate Identity Providers](configure-idp-initiated-sso-with-corporate-identity-providers-d483a52.md#loiod483a52be22946d5a05951b0fa16221f "This document shows you how to configure identity provider (IdP) initiated single sign-on (SSO) with corporate identity providers.")
 
- <a name="idp_initiated_overview"/>
+<a name="idp_initiated_overview"/>
 
 <!-- idp\_initiated\_overview -->
 
@@ -71,7 +71,7 @@
 
 In the IdP-Initiated single sign-on \(SSO\), the authentication starts at the identity provider \(IdP\). The user is first authenticated at the identity provider, and after that he or she is allowed to access the protected resource at the application \(\(service provider \(SP\)\).
 
- ![](images/IdP-Initiated_SSO_c85c0aa.png) 
+![](images/IdP-Initiated_SSO_c85c0aa.png)
 
 1.  The user access the identity provider via a link.
 2.  The identity provider requires credentials.
@@ -212,7 +212,7 @@ The link for IdP-Initiated SSO follows the pattern: `https://<tenant_ID>.account
 > 
 > The `login_hint` parameter helps the user when he or she is known to the service provider \(SP\). Thus it prevents the user from re-typing the user identifier on the logon or conditional screen.
 > 
-> Supported values are the allowed logon identifiers for the users. The options are *User ID*, *Login Name*, and *E-Mail* \(For SAML 2.0\). For more information, see [Configure Allowed Logon Identifiers](configure-allowed-logon-identifiers-3adf1ff.md) .
+> Supported values are the allowed logon identifiers for the users. The options are *User ID*, *Login Name*, and *Email* \(For SAML 2.0\). For more information, see [Configure Allowed Logon Identifiers](configure-allowed-logon-identifiers-3adf1ff.md) .
 > 
 > 
 > 
@@ -222,16 +222,18 @@ The link for IdP-Initiated SSO follows the pattern: `https://<tenant_ID>.account
 
 
 
+### Example
+
 Richard Wilson, tenant administrator at Company A, would like to set up an IdP-initiated SSO process and has configured the default assertion consumer service \(ACS\) endpoint correctly at the cloud identity provider. Dona Moore, who is an employee at Company A, tries to access the identity provider, but because she does not have a valid session she is prompted to provide credentials. Once Dona has logged in at the IdP, a session is created for her. She is automatically redirected to her application \(the default ACS URL as specified in the service provider \(SP\) metadata\)\).
 
- ![](images/IdP-Initiated_SSO_b493bf7.png) 
+![](images/IdP-Initiated_SSO_b493bf7.png)
 
 1.  User provides credentials; logs on.
 2.  Identity Authentication sends assertions.
 3.  Service provider validates assertions; gives access rights.
 4.  User accesses content.
 
- <a name="disable_idp_initiated_sso"/>
+<a name="disable_idp_initiated_sso"/>
 
 <!-- disable\_idp\_initiated\_sso -->
 
@@ -266,7 +268,7 @@ Use this procedure to disable or enable the IdP-Initiated SSO process.
 
 1.  Sign in to the administration console for SAP Cloud Identity Services.
 
-2.  Choose the *Tenant Settings* tile.
+2.  Under *Single Sign-On*, choose the *Tenant Settings* tile.
 
 3.  Use the slider next to *IdP-Initiated SSO* to disable or enable it.
 

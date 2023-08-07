@@ -62,7 +62,7 @@ When enabled, the custom application configurations for authentication and acces
 
 When this option is enabled, the user is authenticated by the corporate IdP, then Identity Authentication checks for the configurations for authentication and access policies on application level, and applies them. They include Risk-Based-Authentication, Terms of Use, Privacy Policy, Upgrade and Registration Forms.
 
- <a name="task_td1_3v4_y5"/>
+<a name="task_td1_3v4_y5"/>
 
 <!-- task\_td1\_3v4\_y5 -->
 
@@ -90,7 +90,7 @@ When this option is enabled, the user is authenticated by the corporate IdP, the
     If the operation is successful, the system displays the message ***Identity provider <name of identity provider\> updated***.
 
 
- <a name="task_zlr_mnw_mhb"/>
+<a name="task_zlr_mnw_mhb"/>
 
 <!-- task\_zlr\_mnw\_mhb -->
 
@@ -126,7 +126,7 @@ You have enabled *Use Identity Authentication user store* option. For more infor
     If the operation is successful, the system displays the message ***Identity provider <name of identity provider\> updated***.
 
 
- <a name="task_cp4_kx2_nhb"/>
+<a name="task_cp4_kx2_nhb"/>
 
 <!-- task\_cp4\_kx2\_nhb -->
 
@@ -162,7 +162,7 @@ You have enabled *Allow Identity Authentication users only* option. For more inf
     If the operation is successful, the system displays the message ***Identity provider <name of identity provider\> updated***.
 
 
- <a name="task_nvs_4v4_y5"/>
+<a name="task_nvs_4v4_y5"/>
 
 <!-- task\_nvs\_4v4\_y5 -->
 

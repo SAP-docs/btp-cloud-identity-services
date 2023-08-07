@@ -18,7 +18,7 @@ The application's display name appears on the left side of the logon and registr
 
 By default, the display name of the application is set to appear on the logon page.
 
- ![](images/DisplayName_Logon_a70dfbf.png)
+![](images/DisplayName_Logon_a70dfbf.png)
 
 > ### Caution:  
 > Be careful when you switch off the display of the application name. The users might not be sure which application they are providing their credentials for.

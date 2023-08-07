@@ -42,7 +42,7 @@ The communication flow is as follows:
 
 [Kerberos: The Network Authentication Protocol](http://web.mit.edu/kerberos/)
 
- <a name="loio398f5f6289364798807ad38762b8877b"/>
+<a name="loio398f5f6289364798807ad38762b8877b"/>
 
 <!-- loio398f5f6289364798807ad38762b8877b -->
 
@@ -68,9 +68,9 @@ The communication flow is as follows:
 **Related Information**  
 
 
-[Import or Update Users for a Specific Application](import-or-update-users-for-a-specific-application-33838e0.md "As a tenant administrator, you can import new users or update existing ones for a specific application with a CSV file. You can also send activation e-mails to the users that have not received activation e-mails for that application so far.")
+[Import or Update Users for a Specific Application](import-or-update-users-for-a-specific-application-33838e0.md "As a tenant administrator, you can import new users or update existing ones for a specific application with a CSV file. You can also send activation emails to the users that have not received activation emails for that application so far.")
 
- <a name="loio0c8cc7089af9420daabd038c523e5ef5"/>
+<a name="loio0c8cc7089af9420daabd038c523e5ef5"/>
 
 <!-- loio0c8cc7089af9420daabd038c523e5ef5 -->
 
@@ -119,14 +119,14 @@ This procedure is performed by the domain administrator. If you are not a domain
     </tr>
     <tr>
     <td valign="top">
-
+    
     RC4\_HMAC
 
 
     
     </td>
     <td valign="top">
-
+    
     Yes
 
 
@@ -135,14 +135,14 @@ This procedure is performed by the domain administrator. If you are not a domain
     </tr>
     <tr>
     <td valign="top">
-
+    
     AES128\_CTS\_HMAC\_SHA1\_96
 
 
     
     </td>
     <td valign="top">
-
+    
     Yes
 
 
@@ -151,14 +151,14 @@ This procedure is performed by the domain administrator. If you are not a domain
     </tr>
     <tr>
     <td valign="top">
-
+    
     AES256\_CTS\_HMAC\_SHA1\_96
 
 
     
     </td>
     <td valign="top">
-
+    
     Yes
 
 
@@ -167,14 +167,14 @@ This procedure is performed by the domain administrator. If you are not a domain
     </tr>
     <tr>
     <td valign="top">
-
+    
     NTLMSSP
 
 
     
     </td>
     <td valign="top">
-
+    
     No
 
 
@@ -183,14 +183,14 @@ This procedure is performed by the domain administrator. If you are not a domain
     </tr>
     <tr>
     <td valign="top">
-
+    
     NEGOEXT
 
 
     
     </td>
     <td valign="top">
-
+    
     No
 
 
@@ -628,7 +628,7 @@ This procedure is performed by the domain administrator. If you are not a domain
     > > The command line `setspn -A HTTP/accounts.ondemand.com.cloud.sap.akadns.net <service user>` registers an SPN for the root host *accounts.ondemand.com.cloud.sap.akadns.net* associated with the service user.
 
 
- <a name="loio125390fe02114354b6263154636e1c13"/>
+<a name="loio125390fe02114354b6263154636e1c13"/>
 
 <!-- loio125390fe02114354b6263154636e1c13 -->
 
@@ -711,14 +711,14 @@ This procedure is performed by the tenant administrator.
         </tr>
         <tr>
         <td valign="top">
-
+        
         RC4\_HMAC
 
 
         
         </td>
         <td valign="top">
-
+        
         Yes
 
 
@@ -727,14 +727,14 @@ This procedure is performed by the tenant administrator.
         </tr>
         <tr>
         <td valign="top">
-
+        
         AES128\_CTS\_HMAC\_SHA1\_96
 
 
         
         </td>
         <td valign="top">
-
+        
         Yes
 
 
@@ -743,14 +743,14 @@ This procedure is performed by the tenant administrator.
         </tr>
         <tr>
         <td valign="top">
-
+        
         AES256\_CTS\_HMAC\_SHA1\_96
 
 
         
         </td>
         <td valign="top">
-
+        
         Yes
 
 
@@ -759,14 +759,14 @@ This procedure is performed by the tenant administrator.
         </tr>
         <tr>
         <td valign="top">
-
+        
         NTLMSSP
 
 
         
         </td>
         <td valign="top">
-
+        
         No
 
 
@@ -775,14 +775,14 @@ This procedure is performed by the tenant administrator.
         </tr>
         <tr>
         <td valign="top">
-
+        
         NEGOEXT
 
 
         
         </td>
         <td valign="top">
-
+        
         No
 
 

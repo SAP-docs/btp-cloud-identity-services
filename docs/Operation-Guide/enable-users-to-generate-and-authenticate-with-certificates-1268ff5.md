@@ -52,5 +52,5 @@ To allow certificate generation and authentication, proceed as follows:
 
 ## Next Steps
 
-Enable the *Credential change* security alert e-mailing to inform the user when a certificate generated or removed. For more information, see [Send Security Alert E-Mails](send-security-alert-e-mails-c977464.md).
+Enable the *Credential change* security alert emailing to inform the user when a certificate generated or removed. For more information, see [Send Security Alert Emails](send-security-alert-emails-c977464.md).
 

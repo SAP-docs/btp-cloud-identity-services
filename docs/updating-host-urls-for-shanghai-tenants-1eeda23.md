@@ -26,7 +26,7 @@ The migration procedure for Identity Authentication tenants affects the followin
 
 For more information about the migration procedure for SAP Cloud Identity Services - Identity Provisioning, see [Updating Host URLs for Shanghai Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/80563ee65d96451db3c063a083b199e6.html).
 
- <a name="task_j5h_15t_3nb"/>
+<a name="task_j5h_15t_3nb"/>
 
 <!-- task\_j5h\_15t\_3nb -->
 
@@ -58,7 +58,7 @@ When you set the trust between Identity Authentication, acting as identity provi
     If you have set trusts with more than one service provider, configure the metadata in every service provider. For more information about how to configure the metadata, see the documentation of the respective service providers.
 
 
- <a name="task_xny_kvt_3nb"/>
+<a name="task_xny_kvt_3nb"/>
 
 <!-- task\_xny\_kvt\_3nb -->
 
@@ -85,7 +85,7 @@ If your application an OpenID Connect one, update the configurations in the admi
 3.  Update the endpoints on the relying party \(RP\) side to match the new host.
 
 
- <a name="task_ang_1zt_3nb"/>
+<a name="task_ang_1zt_3nb"/>
 
 <!-- task\_ang\_1zt\_3nb -->
 
@@ -116,7 +116,7 @@ When you want to perform real-time provisioning through the administration conso
     OAuth URL Pattern: `https://oauthasservices-<consumer_subaccount>.<host>/oauth2/api/v1/token`
 
 
- <a name="task_gml_yhv_3nb"/>
+<a name="task_gml_yhv_3nb"/>
 
 <!-- task\_gml\_yhv\_3nb -->
 
@@ -150,7 +150,7 @@ For more information about the scenario, [Corporate Identity Providers](Operatio
 4.  Update the trust configuration on the corporate identity provider side.
 
 
- <a name="task_b1d_llv_3nb"/>
+<a name="task_b1d_llv_3nb"/>
 
 <!-- task\_b1d\_llv\_3nb -->
 
@@ -166,7 +166,7 @@ Use the new domain in the URLs. See [API Documentation](Development/api-document
 
 URL: https://<tenant ID\>.accounts.sapcloud.cn/<...\>
 
- <a name="task_t4d_d4v_3nb"/>
+<a name="task_t4d_d4v_3nb"/>
 
 <!-- task\_t4d\_d4v\_3nb -->
 

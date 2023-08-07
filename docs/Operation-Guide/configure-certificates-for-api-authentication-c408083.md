@@ -63,14 +63,14 @@ Identity Authentication supports SAP Passport CA as trusted certificate authorit
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Generate Certificate**
 
 
     
     </td>
     <td valign="top">
-
+    
     Fill in the fields under *Generate Certificate* and choose the *Generate* button.
 
     > ### Note:  
@@ -85,14 +85,14 @@ Identity Authentication supports SAP Passport CA as trusted certificate authorit
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Upload Certificate**
 
 
     
     </td>
     <td valign="top">
-
+    
     You must use `.cer` or `.crt` files.
 
     > ### Note:  
@@ -104,14 +104,14 @@ Identity Authentication supports SAP Passport CA as trusted certificate authorit
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Insert Certificate**
 
 
     
     </td>
     <td valign="top">
-
+    
     Insert the certificate in the text field.
 
 

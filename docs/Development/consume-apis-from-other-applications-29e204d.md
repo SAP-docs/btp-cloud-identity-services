@@ -1,6 +1,6 @@
 <!-- loio29e204da5b794c4683289ee0384ec781 -->
 
-# Consume APIs From Other Applications
+# Consume APIs from Other Applications
 
 Applications sometimes need to propagate principals or have technical communication arrangements between applications. To enable one application to consume the APIs of another application, configure an application to include the audience of the other application in tokens issued by Identity Authentication.
 
@@ -23,13 +23,94 @@ Applications sometimes need to propagate principals or have technical communicat
 
 ## Context
 
-In this scenario, you've one application that provides an API and another application that consumes the API. At runtime, the consuming application gets a token according to the appropriate flow. The service returns a token, which includes the audience \(`aud`\) claim of the provider application and a string used by the consumer application for access control under the `ias_api` claim. The consumer application uses this token with to call the API endpoint of the provider application. The following figure illustrates this scenario for a technical communication between systems.
+In this scenario, you've one application that provides an API and another application that consumes the API. At runtime, the consuming application gets a token according to the appropriate flow.
 
-   
+-   Use the client credential flow for technical communication.
+
+-   Use JWT-bearer flow for principal propagation.
+
+
+In either case, use the `resource` parameter to identify the provider. The `resource` parameter is a uniform resource name \(URN\).
+
+**Options to Identify the Provider Application**
+
+
+<table>
+<tr>
+<th valign="top">
+
+URN
+
+
+
+</th>
+<th valign="top">
+
+Provider Determined by
+
+
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+<code>urn:sap:identity:application:provider:name:<i class="varname">&lt;logical_name&gt;</i></code>
+
+
+
+</td>
+<td valign="top">
+
+Logical name: Document the name in a scenario guide similar to how you do for destinations.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+<code>urn:sap:identity:application:provider:clientid:<i class="varname">&lt;client_id&gt;</i></code>
+
+
+
+</td>
+<td valign="top">
+
+Client ID: Identity Authentication can resolve the provider application with the `client_id` parameter.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+<code>urn:sap:identity:application:provider:clientid:<i class="varname">&lt;client_id&gt;</i>:apptid:<i class="varname">&lt;app_tid&gt;</i></code>
+
+
+
+</td>
+<td valign="top">
+
+Client ID and application tenant ID: Identity Authentication can resolve the provider application with the `client_id` and `app_tid` parameters.
+
+Use this resource URN when there are multiple subscriptions of the same application with the same Identity Authentication tenant.
+
+
+
+</td>
+</tr>
+</table>
+
+The service returns a token, which includes the audience \(`aud`\) claim of the provider application and a string used by the consumer application for access control under the `ias_api` claim. The consumer application uses this token with to call the API endpoint of the provider application. The following figure illustrates this scenario for a technical communication between systems.
+
+  
   
 **Technical Communication Sequence Between Applications**
 
- ![](images/app2apptechnical_pptx_8db2315.png "Technical Communication Sequence Between Applications") 
+![](images/app2apptechnical_pptx_8db2315.png "Technical Communication Sequence Between Applications")
 
 The administrator must ensure that the two applications can share the APIs between each other, if the applications weren't deployed with this configuration.
 
@@ -52,9 +133,11 @@ The administrator must ensure that the two applications can share the APIs betwe
     For more information, see [Reference Information for the Identity Service of SAP BTP](../Integrating-the-Service/reference-information-for-the-identity-service-of-sap-btp-9379444.md).
 
     > ### Caution:  
-    > The API name must match exactly what is expected by any consumer applications. These applications use this name to determine if their application has the rights to access the provider application.
+    > The API name must match exactly what is expected by any consumer applications. The name must be unique within all APIs provided by the same provider application. Consumer applications use this name to determine if their application has the rights to access the provider application.
     > 
-    > The name can be any unique string of 32 characters. You can define a maximum of 20 APIs.
+    > The name can be any URN-compliant string of 32 characters. You can define a maximum of 20 APIs.
+    > 
+    > For more information about URNs, see [RFC 8141](https://datatracker.ietf.org/doc/rfc8141/).
 
     The provider application can also specify the APIs with the Identity service of SAP BTP.
 
@@ -77,17 +160,9 @@ The administrator must ensure that the two applications can share the APIs betwe
 
 ## Results
 
-The consumer application can consume the specified API from the provider application,. The following is an example of a token with the relevant claims.
+The consumer application can consume the specified API from the provider application. The following is an example of a token with the relevant claims.
 
 ```
-Header
---------
-{
-    "kid": "Aa1aAAaDyqK5xzowUHkvCAKw7nA",
-    "alg": "RS256"
-}
-Payload
---------
 {
     "ias_apis": [
         "myApi"
@@ -105,14 +180,5 @@ Payload
     "first_name": "Donna",
     "jti": "123a45b6-a99e-47e0-b03d-b8c1304e8b42"
 }
-Expires at: Tue Feb 21 2023 15:27:06 GMT+0100 (Central European Standard Time)
 ```
-
-
-
-<a name="loio29e204da5b794c4683289ee0384ec781__postreq_i2q_bsj_pwb"/>
-
-## Next Steps
-
-If the consumer application isn't already designed to check the `ias_api` claim, the developer of the consumer application must update their application.
 

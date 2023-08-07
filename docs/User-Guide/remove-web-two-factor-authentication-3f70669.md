@@ -20,10 +20,10 @@ Based on the configuration of the account made by the administrator, you can cho
     -   *WEB Two-Factor Authentication* - provide security key
 
 -   *Passcode via SMS* - \(if configured\) use a passcode sent to you on your verified phone
--   *Passcode via E-Mail* - \(if configured\) use a passcode sent to you on your verified e-mail
+-   *Passcode via Email* - \(if configured\) use a passcode sent to you on your verified email
 
     > ### Caution:  
-    > The system can send you up to three e-mails within 24 hours. After that you won't be able to request a passcode for TOTP deactivation via e-mail during these 24 hours.
+    > The system can send you up to three emails within 24 hours. After that you won't be able to request a passcode for TOTP deactivation via email during these 24 hours.
 
 
 To remove your mobile device that generates passcodes, proceed as follows:
@@ -61,14 +61,14 @@ To remove your mobile device that generates passcodes, proceed as follows:
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Existing Multi-Factor Authentication**
 
 
     
     </td>
     <td valign="top">
-
+    
     Choose one of the verification methods:
 
     -   *TOTP Two-Factor Authentication* - Provide the passcode and choose *Send* after selecting that option.
@@ -80,14 +80,14 @@ To remove your mobile device that generates passcodes, proceed as follows:
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Passcode via SMS**
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide the passcode and choose *Send* after selecting that option.
 
 
@@ -96,14 +96,14 @@ To remove your mobile device that generates passcodes, proceed as follows:
     </tr>
     <tr>
     <td valign="top">
-
-    **Passcode via E-Mail**
+    
+    **Passcode via Email**
 
 
     
     </td>
     <td valign="top">
-
+    
     Provide a passcode and choose *Send* after selecting that option.
 
 

@@ -67,7 +67,7 @@ SAP Web IDE Full-Stack access is protected by permissions. To grant a user the p
 
 [Blogs](blogs-a89ca3e.md "Links to blogs and documents about integration scenarios with Identity Authentication.")
 
- <a name="loioa0b0ae9fea034ff5823bc0a5b0520cd4"/>
+<a name="loioa0b0ae9fea034ff5823bc0a5b0520cd4"/>
 
 <!-- loioa0b0ae9fea034ff5823bc0a5b0520cd4 -->
 
@@ -106,9 +106,9 @@ If you want to use the ***DiDeveloper*** or ***DiAdministrator*** role together 
 
 ## Results
 
-The assigned users can log on to SAP Web IDE Full-Stack with their credentials for Identity Authentication \(e-mail and password\).
+The assigned users can log on to SAP Web IDE Full-Stack with their credentials for Identity Authentication \(email and password\).
 
- <a name="loio45ef99026e2f48779e9510be0e47f37d"/>
+<a name="loio45ef99026e2f48779e9510be0e47f37d"/>
 
 <!-- loio45ef99026e2f48779e9510be0e47f37d -->
 
@@ -122,7 +122,7 @@ When you use Identity Authentication as a trusted identity provider for SAP Web 
 
 For this scenario, you have to configure the user attribute `First Name` in Identity Authentication to be sent to SAP Web IDE Full-Stack in the assertion attribute. You also have to configure the First Name user attribute mapping for Identity Authentication in the SAP BTP cockpit.
 
- <a name="task_wml_bfv_tv"/>
+<a name="task_wml_bfv_tv"/>
 
 <!-- task\_wml\_bfv\_tv -->
 
@@ -153,7 +153,7 @@ For this scenario, you have to configure the user attribute `First Name` in Iden
     If the operation is successful, you receive the message ***Assertion attributes updated***.
 
 
- <a name="task_ky3_dfv_tv"/>
+<a name="task_ky3_dfv_tv"/>
 
 <!-- task\_ky3\_dfv\_tv -->
 
@@ -200,14 +200,14 @@ For this scenario, you have to configure the user attribute `First Name` in Iden
     </tr>
     <tr>
     <td valign="top">
-
+    
     first\_name
 
 
     
     </td>
     <td valign="top">
-
+    
     firstname
 
 

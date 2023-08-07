@@ -27,7 +27,7 @@ The configuration is done both in Identity Authentication and Azure AD.
 > 
 > After that, the same user tries to authenticate to app2 from the same browser session. App2 issues an authentication request to Identity Authentication. Then Identity Authentication again sends authentication request to Azure AD, but this time with `issuer=https://tenant.accounts.ondemand.com/app2`. Thus, Azure AD can apply the specific authentication mechanisms, configured for `issuer=https://tenant.accounts.ondemand.com/app2`. After the authentication,Azure AD issues an authentication response with `audience=https://tenant.accounts.ondemand.com/app2`. Then Identity Authentication sends authentication response to app2.
 
- <a name="task_h2w_b5r_f4b"/>
+<a name="task_h2w_b5r_f4b"/>
 
 <!-- task\_h2w\_b5r\_f4b -->
 
@@ -57,7 +57,7 @@ The configuration is done both in Identity Authentication and Azure AD.
 6.  Save your changes.
 
 
- <a name="task_vbd_b5r_f4b"/>
+<a name="task_vbd_b5r_f4b"/>
 
 <!-- task\_vbd\_b5r\_f4b -->
 

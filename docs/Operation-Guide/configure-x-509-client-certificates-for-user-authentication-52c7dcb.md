@@ -18,10 +18,12 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 
 User authentication with a trusted X.509 certificate takes place using the underlying Secure Sockets Layer \(SSL\) protocol and users don’t need to enter a password for their logon.
 
-> ### Remember:  
-> Certificates for API Authentication cannot be used for user authentication.
+Certificates for API Authentication cannot be used for user authentication.
 
 Remember that it may take between two and four weeks to enable the certificate.
+
+> ### Note:  
+> If you want to configure a certificate, using your own trusted CA, for example for scenarios like authentication of technical users or OAuth clients, skip the procedure in this document and report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`. Attach to the incident the root and intermediate certificates and provide the Identity Authentication tenant host.
 
 To configure a trusted X.509 certificate, proceed as follows:
 
@@ -35,7 +37,7 @@ To configure a trusted X.509 certificate, proceed as follows:
 
     At the top of the page, you can view the administrative and license relevant information of the tenant.
 
-3.  Choose the *Trusted Certificate Configuration* list item.
+3.  Under *Authentication*, choose the *Trusted Certificate Configuration* list item.
 
 4.  Choose the *\+Add* button.
 
@@ -66,14 +68,14 @@ To configure a trusted X.509 certificate, proceed as follows:
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Upload Certificate**
 
 
     
     </td>
     <td valign="top">
-
+    
     The uploaded certificates must be in `PEM` format. Use `.cer` or `.crt` files.
 
 
@@ -82,14 +84,14 @@ To configure a trusted X.509 certificate, proceed as follows:
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Root Certificate**
 
 
     
     </td>
     <td valign="top">
-
+    
     Insert the public key in the text field.
 
 
@@ -105,7 +107,7 @@ To configure a trusted X.509 certificate, proceed as follows:
         For example: CN=$\{loginName\},O=Management,C=US.
 
     -   *Subject Alternative Name - Other Name* - If selected *Subject Alternative Name - Other Name*, the pattern must match the `subjectAltName` extension entry of type `otherName` \(Microsoft User Principal Name form\) of the user certificate. The pattern for SAN value must be in format `${<logonIdentifier>}` and must completely map to one of the supported logon identifiers, `loginName`, `uid`, and `mail`.
-    -   *Subject Alternative Name - E-Mail \(RFC822 Name\)* - If selected *Subject Alternative Name - E-Mail \(RFC822 Name\)*, the pattern must match the `subjectAltName` extension entry of type `rfc822Name` of the user certificate. The pattern for SAN value must be in format `${mail}`.
+    -   *Subject Alternative Name - Email \(RFC822 Name\)* - If selected *Subject Alternative Name - Email \(RFC822 Name\)*, the pattern must match the `subjectAltName` extension entry of type `rfc822Name` of the user certificate. The pattern for SAN value must be in format `${mail}`.
 
     Two configurations with different source options in one Identity Authentication tenant are not supported.
 
@@ -114,7 +116,7 @@ To configure a trusted X.509 certificate, proceed as follows:
     > ### Note:  
     > If you want to log on with a certificate where the common name contains the user ID \(for example: `Subject DN: CN=P000000,O=MyOrg,C=US`\) then the pattern value must be: `CN=${uid},O=MyOrg,C=US`.
     > 
-    > If you want to log on with a certificate where the common name contains the e-mail of the user \(for example: `Subject DN: CN=my_email@example.com,O=MyORG,C=US`\), then the pattern value must be: `CN=${mail},O=M,C=US`.
+    > If you want to log on with a certificate where the common name contains the email of the user \(for example: `Subject DN: CN=my_email@example.com,O=MyORG,C=US`\), then the pattern value must be: `CN=${mail},O=M,C=US`.
 
 9.  Save your configuration.
 
@@ -142,7 +144,7 @@ To configure a trusted X.509 certificate, proceed as follows:
 
 [Configure Links Section on Sign-In Screen](configure-links-section-on-sign-in-screen-060c032.md "You can configure links to appear on the sign-in screen of your applications.")
 
-[Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in sscreen of the Horizon theme with instructions for the user.")
+[Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in screen of the Horizon theme with instructions for the user.")
 
 [Configure Tenant Images](configure-tenant-images-8742046.md "You can configure a custom global logo and, or a background image on the forms for sign-in in, registration, upgrade, password update, and account activation for all applications in a tenant. You can also set a favicon for tenant.")
 
@@ -158,7 +160,7 @@ To configure a trusted X.509 certificate, proceed as follows:
 
 [Enable Users to Recover Password with PIN Code](enable-users-to-recover-password-with-pin-code-046a235.md "Users can choose to provide PIN code to reset their password.")
 
-[Configure Initial Password and E-Mail Link Validity](configure-initial-password-and-e-mail-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
+[Configure Initial Password and Email Link Validity](configure-initial-password-and-email-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
 
 [Configure Session Timeout](configure-session-timeout-5ca23e4.md "As a tenant administrator, you can configure when the session, created at the Identity Authentication tenant, expires.")
 
@@ -174,13 +176,13 @@ To configure a trusted X.509 certificate, proceed as follows:
 
 [Configure RADIUS Server Settings \(Beta\)](configure-radius-server-settings-beta-03043ae.md "Configure Remote Authentication Dial-In User Service (RADIUS) server settings in the administration console for SAP Cloud Identity Services.")
 
-[Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the e-mails sent to the end users in the different application processes.")
+[Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the emails sent to the end users in the different application processes.")
 
 [Configure IdP-Initiated SSO](configure-idp-initiated-sso-5d59caa.md)
 
-[Send Security Alert E-Mails](send-security-alert-e-mails-c977464.md "Send security alert e-mails to end-users or administrators when changes in their accounts are made.")
+[Send Security Alert Emails](send-security-alert-emails-c977464.md "Send security alert emails to end-users or administrators when changes in their accounts are made.")
 
-[Send System Notifications via E-Mails](send-system-notifications-via-e-mails-aa04a8b.md "You can configure the administration console to send e-mails with information about expiring certificates, system notifications and new administrators to specific e-mail addresses or to the e-mails of all administrators.")
+[Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 

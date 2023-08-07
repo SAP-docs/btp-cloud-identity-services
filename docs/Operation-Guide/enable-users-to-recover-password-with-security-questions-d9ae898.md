@@ -16,7 +16,7 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 
 ## Context
 
-You can configure the applications in the tenant to allow users to answer security questions to reset their password instead of receiving an e-mail with a reset password link.
+You can configure the applications in the tenant to allow users to answer security questions to reset their password instead of receiving an email with a reset password link.
 
 For this setup, you as a tenant administrator, configure the security questions option in the *Tenant Settings* section in the administration console, and the users configure their answers in the profile page. Once the security questions and answers are configured, the user can use this option to reset the password. The user must have configured their answers in the profile page to be able to reset password via security questions.
 
@@ -28,7 +28,7 @@ If the security questions option is configured in the admin console, end users t
 Tenant administrator can offer up to 10 predefined questions, and can choose which target users to be able to reset their password via security questions. There are three options:
 
 -   *None* - the security questions option isn’t offered to the users and all security questions configurations in the administration console are disabled
--   *Users without e-mail* - only users that don't have e-mails can reset password via security questions.
+-   *Users without email* - only users that don't have emails can reset password via security questions.
 -   *All users* - everyone can choose this option to reset the password
 -   *Specific groups* - only users that belong to the selected groups can reset password via security questions.
 
@@ -52,9 +52,9 @@ To configure security questions in the administration console, follow the proced
 
     At the top of the page, you can view the administrative and license relevant information of the tenant.
 
-3.  Choose the *Password Recovery* list item.
+3.  Under *Authentication*, choose the *Password Recovery* list item.
 
-4.  Select the *Security Questions* tab.
+4.  Choose the *Security Questions* tab.
 
 5.  Under *Target Users*, choose users that can reset passwords with security questions:
 
@@ -63,7 +63,7 @@ To configure security questions in the administration console, follow the proced
         > ### Note:  
         > If selected, the security questions configurations in the administration console are disabled
 
-    -   *Users without e-mail*
+    -   *Users without email*
     -   *All users*
     -   *Specific groups*
 
@@ -99,7 +99,7 @@ To configure security questions in the administration console, follow the proced
 
 [Configure Links Section on Sign-In Screen](configure-links-section-on-sign-in-screen-060c032.md "You can configure links to appear on the sign-in screen of your applications.")
 
-[Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in sscreen of the Horizon theme with instructions for the user.")
+[Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in screen of the Horizon theme with instructions for the user.")
 
 [Configure X.509 Client Certificates for User Authentication](configure-x-509-client-certificates-for-user-authentication-52c7dcb.md "Tenant administrators can configure X.509 client certificates for user authentication as an alternative to authenticating with a user name and a password.")
 
@@ -115,7 +115,7 @@ To configure security questions in the administration console, follow the proced
 
 [Enable Users to Recover Password with PIN Code](enable-users-to-recover-password-with-pin-code-046a235.md "Users can choose to provide PIN code to reset their password.")
 
-[Configure Initial Password and E-Mail Link Validity](configure-initial-password-and-e-mail-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
+[Configure Initial Password and Email Link Validity](configure-initial-password-and-email-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
 
 [Configure Session Timeout](configure-session-timeout-5ca23e4.md "As a tenant administrator, you can configure when the session, created at the Identity Authentication tenant, expires.")
 
@@ -131,13 +131,13 @@ To configure security questions in the administration console, follow the proced
 
 [Configure RADIUS Server Settings \(Beta\)](configure-radius-server-settings-beta-03043ae.md "Configure Remote Authentication Dial-In User Service (RADIUS) server settings in the administration console for SAP Cloud Identity Services.")
 
-[Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the e-mails sent to the end users in the different application processes.")
+[Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the emails sent to the end users in the different application processes.")
 
 [Configure IdP-Initiated SSO](configure-idp-initiated-sso-5d59caa.md)
 
-[Send Security Alert E-Mails](send-security-alert-e-mails-c977464.md "Send security alert e-mails to end-users or administrators when changes in their accounts are made.")
+[Send Security Alert Emails](send-security-alert-emails-c977464.md "Send security alert emails to end-users or administrators when changes in their accounts are made.")
 
-[Send System Notifications via E-Mails](send-system-notifications-via-e-mails-aa04a8b.md "You can configure the administration console to send e-mails with information about expiring certificates, system notifications and new administrators to specific e-mail addresses or to the e-mails of all administrators.")
+[Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 

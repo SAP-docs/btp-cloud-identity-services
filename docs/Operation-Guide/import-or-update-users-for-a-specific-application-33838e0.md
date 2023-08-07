@@ -2,7 +2,7 @@
 
 # Import or Update Users for a Specific Application
 
-As a tenant administrator, you can import new users or update existing ones for a specific application with a CSV file. You can also send activation e-mails to the users that have not received activation e-mails for that application so far.
+As a tenant administrator, you can import new users or update existing ones for a specific application with a CSV file. You can also send activation emails to the users that have not received activation emails for that application so far.
 
 
 
@@ -20,7 +20,7 @@ As a tenant administrator, you can import new users or update existing ones for 
 
 ## Context
 
-By importing new users with a CSV file, you create user profiles without passwords in Identity Authentication. As a result, the users receive e-mails with instructions how to activate their accounts. After the users set their passwords, they can log on to the application for which they were imported. Based on the user access configuration of the application, the users can log on to other applications connected with the tenant in Identity Authentication.
+By importing new users with a CSV file, you create user profiles without passwords in Identity Authentication. As a result, the users receive emails with instructions how to activate their accounts. After the users set their passwords, they can log on to the application for which they were imported. Based on the user access configuration of the application, the users can log on to other applications connected with the tenant in Identity Authentication.
 
 In addition to the new user import, you can specify existing users in the imported CSV file. You thus define the users to be updated in Identity Authentication.
 
@@ -146,7 +146,7 @@ Yes
 
 Must be a string value of up to 64 characters.
 
-You cannot change the e-mail of an existing user.
+You cannot change the email of an existing user.
 
 
 
@@ -184,7 +184,7 @@ Yes
 <td valign="top">
 
 > ### Tip:  
-> For users without valid e-mail addresses or for testing purposes use the `sap-test.de` domain, for example `<username>@sap-test.de`. Do not use any other existing or non-existing domains.
+> For users without valid email addresses or for testing purposes use the `sap-test.de` domain, for example `<username>@sap-test.de`. Do not use any other existing or non-existing domains.
 
 Must be a string value of up to 64 characters.
 
@@ -303,7 +303,7 @@ No
 </td>
 <td valign="top">
 
-Must be a string value specified by a two or four-letter code in one of the following formats: XX. Otherwise, the activation e-mail is in English.
+Must be a string value specified by a two or four-letter code in one of the following formats: XX. Otherwise, the activation email is in English.
 
 
 
@@ -721,7 +721,7 @@ The maximum number of groups assigned to a user is 500.
 > 
 > The administrator receives the following message: ***3 users will be created. 3 users will be updated because they already exist. Do you want to continue?***
 > 
-> The users that have not received activation e-mails will receive such e-mails, and then can activate their accounts and log on.
+> The users that have not received activation emails will receive such emails, and then can activate their accounts and log on.
 
 > ### Example:  
 > A sales company has employed two new people \(Michael Adams and Julie Armstrong\) in the HR department. The tenant administrator has to import these two new employees that will use the company's applications. Michael and Julie are members of the groups **Employees** and **HR**. To do this, the administrator uploads a CSV file with the following information:
@@ -751,7 +751,7 @@ The maximum number of groups assigned to a user is 500.
 > > 
 > > In this example, the administrator imports Michael with the **Employees** group, and Julie with the **Employees** and **HR** groups in the new table.
 
-To import users for an application into Identity Authentication, and to send activation e-mails, proceed as follows:
+To import users for an application into Identity Authentication, and to send activation emails, proceed as follows:
 
 
 
@@ -801,15 +801,15 @@ To import users for an application into Identity Authentication, and to send act
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Do nothing**
 
 
     
     </td>
     <td valign="top">
-
-    The users are imported or updated for the selected application, but they will not receive activation e-mails. The activation e-mails will be sent when you choose *Send E-Mails* \> *Send*.
+    
+    The users are imported or updated for the selected application, but they will not receive activation emails. The activation emails will be sent when you choose *Send Emails* \> *Send*.
 
 
     
@@ -817,15 +817,15 @@ To import users for an application into Identity Authentication, and to send act
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Repeat steps 1 to 5**
 
 
     
     </td>
     <td valign="top">
-
-    The users are imported or updated for the selected application, but they will not receive activation e-mails. The activation e-mails will be sent when you choose *Send E-Mails* \> *Send*.
+    
+    The users are imported or updated for the selected application, but they will not receive activation emails. The activation emails will be sent when you choose *Send Emails* \> *Send*.
 
 
     
@@ -833,22 +833,22 @@ To import users for an application into Identity Authentication, and to send act
     </tr>
     <tr>
     <td valign="top">
-
-    Choose *Send E-Mails* \> *Send*
+    
+    Choose *Send Emails* \> *Send*
 
 
     
     </td>
     <td valign="top">
-
-    This will send activation e-mails to all users that are imported for the selected application, but have not received activation e-mails so far.
+    
+    This will send activation emails to all users that are imported for the selected application, but have not received activation emails so far.
 
     > ### Note:  
     > The *Send* button is inactive if *Home URL* or SAML 2.0 configuration of the application is missing. You can only import users, but you cannot send activation emails.
     > 
-    > You need the *Home URL* configured for the specific application to be able to send the activation e-mails to the imported new users. For more information, see [Configure an Application's Home URL](configure-an-application-s-home-url-be6d6f2.md).
+    > You need the *Home URL* configured for the specific application to be able to send the activation emails to the imported new users. For more information, see [Configure an Application's Home URL](configure-an-application-s-home-url-be6d6f2.md).
     > 
-    > To access the application, the users have to activate their accounts by following the link they receive in the e-mails.
+    > To access the application, the users have to activate their accounts by following the link they receive in the emails.
 
 
     

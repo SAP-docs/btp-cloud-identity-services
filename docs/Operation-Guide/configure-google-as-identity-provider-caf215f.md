@@ -18,7 +18,7 @@ Once a user has allowed Identity Authentication to link his or her account with 
 To configure Google as social identity provider for the tenant, you have to register new applications on the Google site. For more details, see Related Information.
 
 > ### Note:  
-> You need to type ***https://<tenant ID\>.accounts.ondemand.com/ui/oauth/googleCallback*** in the *Authorized redirect URIs* field when you create your client ID in Google Developers Console. For more information about the redirect URIs for your OAuth 2.0 credentials, see [Set a redirect URI](https://developers.google.com/identity/protocols/OpenIDConnect#setredirecturi).
+> You need to type `https://<tenant ID>.accounts.ondemand.com/ui/oauth/googleCallback` in the *Authorized redirect URIs* field when you create your client ID in Google Developers Console. For more information about the redirect URIs for your OAuth 2.0 credentials, see [Set a redirect URI](https://developers.google.com/identity/protocols/OpenIDConnect#setredirecturi).
 
 To perform the social identity provider configuration in the administration console for SAP Cloud Identity Services, you have to provide the following data:
 

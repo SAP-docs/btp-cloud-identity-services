@@ -113,7 +113,7 @@ All property/properties of an entity that presents kind of configuration changes
 </td>
 <td valign="top">
 
- `audit.configuration` 
+`audit.configuration` 
 
 
 
@@ -136,7 +136,7 @@ All attribute/attributes of an entity changes.
 </td>
 <td valign="top">
 
- `audit.data-change` 
+`audit.data-change` 
 
 
 

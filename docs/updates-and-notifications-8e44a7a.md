@@ -6,6 +6,14 @@ Identity Authentication service has production releases \(updates\) every second
 
 
 
+<a name="loio8e44a7a2bb2241deb6d7f4131aa9494b__section_fy5_dkm_1yb"/>
+
+## Subscription for Notifications
+
+To get notifications, subscribe for the Identity Authentication selection in the [What's New Viewer for SAP Business Technology Platform](https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=Identity%2520Authentication&locale=en-US&version=Cloud). For more information, see [Subscribing to What's New Notifications](https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=Identity%20Authentication&locale=en-US&version=Cloud).
+
+
+
 ## Reasons for Updates
 
 -   **Bi-weekly updates** \(standard\) - planned each second Wednesday at 10:00 UTC.

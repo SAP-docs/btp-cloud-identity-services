@@ -1,6 +1,6 @@
 <!-- loio4ac340a1c5754b199cc681b66300630e -->
 
-# List Users in User Groups
+# List and Search Users in User Groups
 
 As a tenant administrator, you can list and view information about the users in a user group in a tenant in the administration console for SAP Cloud Identity Services.
 
@@ -28,11 +28,13 @@ As a tenant administrator, you can list and view information about the users in 
 
     This operation opens a list of the user groups in the tenant.
 
-3.  **Optional:** Type a *Name* or *Display name* of a group in the search field in order to filter the list items.
+3.  Type a *Name* or *Display name* of a group in the search field in order to filter the list items.
 
-4.  Choose a group from the list on the left.
+4.  Choose a group from the list.
 
     This will open the user groups details \(*Group ID*, *Name*, *Display name*, *Description*\) on the right. The users that are part of the group are listed below the user group details.
+
+5.  To search for a specific user, type the SCIM ID of the user in the search field and press the *Enter* key.
 
 
 **Related Information**  

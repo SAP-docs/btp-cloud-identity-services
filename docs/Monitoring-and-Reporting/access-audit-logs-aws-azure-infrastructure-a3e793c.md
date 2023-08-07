@@ -27,7 +27,7 @@ The audit log entries for tenants on the AWS and Azure infrastructure are retain
 
 To view the audit logs, follow the procedures below:
 
- <a name="task_obm_ytf_mqb"/>
+<a name="task_obm_ytf_mqb"/>
 
 <!-- task\_obm\_ytf\_mqb -->
 
@@ -48,7 +48,7 @@ To view the audit logs, follow the procedures below:
 4.  Save your changes.
 
 
- <a name="task_wmz_hgg_mqb"/>
+<a name="task_wmz_hgg_mqb"/>
 
 <!-- task\_wmz\_hgg\_mqb -->
 
@@ -66,12 +66,12 @@ To view the audit logs, follow the procedures below:
 
 3.  Choose *Create*.
 
-    In the *New Instance or Subscription* dialog box, ***Audit Log Viewer*** for *Service*, and ***free*** for *Plan* are already preselected.
+    In the *New Instance or Subscription* dialog box, `Audit Log Viewer` for *Service*, and `free` for *Plan* are already preselected.
 
 4.  Choose *Create* and close the information message.
 
 
- <a name="task_jbz_qck_mqb"/>
+<a name="task_jbz_qck_mqb"/>
 
 <!-- task\_jbz\_qck\_mqb -->
 
@@ -104,7 +104,7 @@ To view the audit logs, follow the procedures below:
 8.  Navigate back to the subaccount and choose *Security* \> *Users* and assign the role collection to the user.
 
 
- <a name="task_yvb_pk1_rdb"/>
+<a name="task_yvb_pk1_rdb"/>
 
 <!-- task\_yvb\_pk1\_rdb -->
 
@@ -144,14 +144,14 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Tenant ID**
 
 
     
     </td>
     <td valign="top">
-
+    
     Required. The tenant ID of your Cloud Foundry account.
 
 
@@ -160,14 +160,14 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Region**
 
 
     
     </td>
     <td valign="top">
-
+    
     SAP BTP, Cloud Foundry region. You can choose a region from the options in the dropdown. For more information, see the mapping table.
 
 
@@ -176,14 +176,14 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Subdomain**
 
 
     
     </td>
     <td valign="top">
-
+    
     Optional. If you provide it, a link to the *Audit Log Viewer* is added in the *Audit Service Configuration*, and you can access the audit logs directly from the administration console.
 
 
@@ -251,35 +251,35 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top">
-
+    
     North America \(Canada Central\) / Canada \(Toronto\)
 
 
     
     </td>
     <td valign="top">
-
+    
     azure-canadacentral
 
 
     
     </td>
     <td valign="top">
-
+    
     cf-ca10
 
 
     
     </td>
     <td valign="top">
-
+    
     Canada \(Montreal\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Yes
 
 
@@ -288,7 +288,7 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top" colspan="5">
-
+    
      
 
 
@@ -297,35 +297,35 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top" rowspan="4">
-
+    
     US West / West US 2
 
 
     
     </td>
     <td valign="top" rowspan="4">
-
+    
     azure-westus2
 
 
     
     </td>
     <td valign="top">
-
+    
     cf-us20
 
 
     
     </td>
     <td valign="top">
-
+    
     US West \(WA\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Yes
 
 
@@ -334,21 +334,21 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top">
-
+    
     cf-us21
 
 
     
     </td>
     <td valign="top">
-
+    
     US East \(VA\)
 
 
     
     </td>
     <td valign="top">
-
+    
     No
 
 
@@ -357,21 +357,21 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top">
-
+    
     cf-us10
 
 
     
     </td>
     <td valign="top">
-
+    
     US East \(VA\)
 
 
     
     </td>
     <td valign="top">
-
+    
     No
 
 
@@ -380,21 +380,21 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top">
-
+    
     cf-us30
 
 
     
     </td>
     <td valign="top">
-
+    
     US Central \(IA\)
 
 
     
     </td>
     <td valign="top">
-
+    
     No
 
 
@@ -403,7 +403,7 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top" colspan="5">
-
+    
      
 
 
@@ -412,35 +412,35 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top" rowspan="2">
-
+    
     Singapore
 
 
     
     </td>
     <td valign="top" rowspan="2">
-
+    
     aws-ap-southeast-1
 
 
     
     </td>
     <td valign="top">
-
+    
     cf-ap11
 
 
     
     </td>
     <td valign="top">
-
+    
     Singapore
 
 
     
     </td>
     <td valign="top">
-
+    
     Yes
 
 
@@ -449,21 +449,21 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top">
-
+    
     cf-ap21
 
 
     
     </td>
     <td valign="top">
-
+    
     Singapore
 
 
     
     </td>
     <td valign="top">
-
+    
     No
 
 
@@ -472,7 +472,7 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top" colspan="5">
-
+    
      
 
 
@@ -481,35 +481,35 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top">
-
+    
     South Korea / South Korea \(Seoul\)
 
 
     
     </td>
     <td valign="top">
-
+    
     aws-ap-northeast-2
 
 
     
     </td>
     <td valign="top">
-
+    
     cf-ap12
 
 
     
     </td>
     <td valign="top">
-
+    
     South Korea \(Seoul\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Yes
 
 
@@ -518,7 +518,7 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top" colspan="5">
-
+    
      
 
 
@@ -527,35 +527,35 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top" rowspan="4">
-
+    
     Europe / Germany Frankfurt\(\)
 
 
     
     </td>
     <td valign="top" rowspan="4">
-
+    
     aws-eu-central-1
 
 
     
     </td>
     <td valign="top">
-
+    
     cf-eu11
 
 
     
     </td>
     <td valign="top">
-
+    
     Europe \(Frankfurt\) EU Access
 
 
     
     </td>
     <td valign="top">
-
+    
     Yes
 
 
@@ -564,21 +564,21 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top">
-
+    
     cf-eu10
 
 
     
     </td>
     <td valign="top">
-
+    
     Europe \(Frankfurt\)
 
 
     
     </td>
     <td valign="top">
-
+    
     No
 
 
@@ -587,21 +587,21 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top">
-
+    
     cf-eu20
 
 
     
     </td>
     <td valign="top">
-
+    
     Europe \(Netherlands\)
 
 
     
     </td>
     <td valign="top">
-
+    
     No
 
 
@@ -610,21 +610,21 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top">
-
+    
     cf-eu30
 
 
     
     </td>
     <td valign="top">
-
+    
     Europe \(Frankfurt\) GCP
 
 
     
     </td>
     <td valign="top">
-
+    
     No
 
 
@@ -633,7 +633,7 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top" colspan="5">
-
+    
      
 
 
@@ -642,35 +642,35 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Europe / Switzerland
 
 
     
     </td>
     <td valign="top">
-
+    
     azure-switzerlandnorth
 
 
     
     </td>
     <td valign="top">
-
+    
     cf-ch20
 
 
     
     </td>
     <td valign="top">
-
+    
     Switzerland \(Zurich\) Azure EU Access
 
 
     
     </td>
     <td valign="top">
-
+    
     Yes
 
 
@@ -679,7 +679,7 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top" colspan="5">
-
+    
      
 
 
@@ -688,35 +688,35 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Asia Pacific
 
 
     
     </td>
     <td valign="top">
-
+    
     aws-ap-south-1
 
 
     
     </td>
     <td valign="top">
-
+    
     cf-in30
 
 
     
     </td>
     <td valign="top">
-
+    
     India \(Mumbai\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Yes
 
 
@@ -725,7 +725,7 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top" colspan="5">
-
+    
      
 
 
@@ -734,35 +734,35 @@ To view the audit logs, follow the procedures below:
     </tr>
     <tr>
     <td valign="top">
-
+    
     Brazil
 
 
     
     </td>
     <td valign="top">
-
+    
     aws-sa-east-1
 
 
     
     </td>
     <td valign="top">
-
+    
     cf-br10
 
 
     
     </td>
     <td valign="top">
-
+    
     Brazil \(São Paulo\)
 
 
     
     </td>
     <td valign="top">
-
+    
     Yes
 
 

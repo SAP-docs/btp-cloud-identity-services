@@ -17,8 +17,8 @@ As an additional option, the tenant administrator of Identity Authentication can
 When Identity Authentication acts as a proxy to delegate authentication to an external corporate identity provider, and the user who is logged on to one or more applications chooses the *Log Out* link in one of the applications, the following flow is in force:
 
 1.  The user triggers a logout from the application.
-2.   Identity Authentication checks if the user is logged on to other applications. If yes, Identity Authentication sends logout requests to the applications, and terminates the sessions.
-3.   Identity Authentication sends logout requests to the corporate identity provider or corporate identity providers, if there are more than one.
+2.  Identity Authentication checks if the user is logged on to other applications. If yes, Identity Authentication sends logout requests to the applications, and terminates the sessions.
+3.  Identity Authentication sends logout requests to the corporate identity provider or corporate identity providers, if there are more than one.
 4.  The user is logged out of the corporate identity providers.
 5.  The user is logged out of Identity Authentication.
 6.  A logout response is sent to the initiating application.
@@ -28,7 +28,7 @@ When Identity Authentication acts as a proxy to delegate authentication to an ex
     > This step is valid only if the application supports the redirect of the user, as for example SAP SuccessFactors HCM Suite.
 
 
- <a name="loio50d8f6b818fc40dba3f693c3f609986f"/>
+<a name="loio50d8f6b818fc40dba3f693c3f609986f"/>
 
 <!-- loio50d8f6b818fc40dba3f693c3f609986f -->
 

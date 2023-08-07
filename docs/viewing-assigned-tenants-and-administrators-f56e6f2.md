@@ -41,7 +41,7 @@ The default tenants, one test and productive tenant per customer, are provided r
         ![](images/Tennant_App_Admins_d124030.png)
 
         > ### Note:  
-        > The users and e-mails are masked if the domain of the authenticated user is different from the domain of the tenant administrators.
+        > The users and emails are masked if the domain of the authenticated user is different from the domain of the tenant administrators.
 
 
 

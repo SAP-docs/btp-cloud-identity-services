@@ -2,7 +2,7 @@
 
 # Configure Conditional Authentication for an Application
 
-Tenant administrator can define rules for authenticating identity provider according to e-mail domain, user type, user group, and IP range \(specified in CIDR notation\).
+Tenant administrator can define rules for authenticating identity provider according to email domain, user type, user group, and IP range \(specified in CIDR notation\).
 
 
 
@@ -47,7 +47,7 @@ If none of the rules meets the criteria, Identity Authentication is chosen for a
 
 The tenant administrator has configured Conditional Authentication in the administration console for SAP Cloud Identity Services. In this setup, the employee should be authenticated via the corporate identity provider, while the customers via Identity Authentication.
 
- **Authentication via Corporate Identity Provider** 
+**Authentication via Corporate Identity Provider** 
 
 ![](images/Conditional_Authentication_Corporate_IdP_e81d365.png)
 
@@ -91,7 +91,7 @@ The tenant administrator has configured Conditional Authentication in the admini
 
 The user logs on to the application.
 
- **Authentication via Identity Authentication** 
+**Authentication via Identity Authentication** 
 
 ![](images/Conditional_Authentication_Local_IdP_b957837.png)
 
@@ -165,14 +165,14 @@ The user logs on to the application
     </tr>
     <tr>
     <td valign="top">
-
+    
     Add a new rule
 
 
     
     </td>
     <td valign="top">
-
+    
     See [Add a New Authentication Rule](add-a-new-authentication-rule-ad7f993.md).
 
 
@@ -181,14 +181,14 @@ The user logs on to the application
     </tr>
     <tr>
     <td valign="top">
-
+    
     Edit an existing rule
 
 
     
     </td>
     <td valign="top">
-
+    
     Choose the ![](images/edit_icon_d077ded.png) icon next to the rule you want to edit.
 
 
@@ -197,14 +197,14 @@ The user logs on to the application
     </tr>
     <tr>
     <td valign="top">
-
+    
     Delete an existing rule
 
 
     
     </td>
     <td valign="top">
-
+    
     Choose the delete![](images/delete_icon_4801c38.png) icon next to the rule you want to delete.
 
 
@@ -213,14 +213,14 @@ The user logs on to the application
     </tr>
     <tr>
     <td valign="top">
-
+    
     Reprioritize rules
 
 
     
     </td>
     <td valign="top">
-
+    
     Use the arrows to reprioritize the rules.
 
 
@@ -243,7 +243,7 @@ The user logs on to the application
 
 ## Setting Conditional Authentication
 
-Donna Moore is an administrator of Company A. She wants to configure Identity Authentication so that the employees who log on with their corporate e-mails to be authenticated via the company's corporate identity provider. The clients and partners of Company A should be authenticated via Identity Authentication. For this purpose, Donna creates the following authentication rule:
+Donna Moore is an administrator of Company A. She wants to configure Identity Authentication so that the employees who log on with their corporate emails to be authenticated via the company's corporate identity provider. The clients and partners of Company A should be authenticated via Identity Authentication. For this purpose, Donna creates the following authentication rule:
 
 **Authentication Rule**
 
@@ -259,7 +259,7 @@ Identity Provider
 </th>
 <th valign="top">
 
-E-Mail Domain
+Email Domain
 
 
 
@@ -309,9 +309,9 @@ companya.com
 
 **Default Identity Provider**: Identity Authentication
 
-Michael Adams is an employee of Company A and as such he wants to create a leave request. He chooses the logon link on the application and is prompted to provide his e-mail. After that he chooses *Continue* and is redirected to the logon screen of Company A. There he has to provide his user identifier and password. After providing the correct credentials he logs on to the application.
+Michael Adams is an employee of Company A and as such he wants to create a leave request. He chooses the logon link on the application and is prompted to provide his email. After that he chooses *Continue* and is redirected to the logon screen of Company A. There he has to provide his user identifier and password. After providing the correct credentials he logs on to the application.
 
-Julie Armstrong is a customer of Company A. She accesses the company's application and chooses the logon link on the application and is prompted to provide her e-mail. After that she chooses *Continue* and is redirected to the log on screen of Identity Authentication where she is prompted to provide her password. Her e-mail is prefilled by the system. After providing the correct password she logs on to the application.
+Julie Armstrong is a customer of Company A. She accesses the company's application and chooses the logon link on the application and is prompted to provide her email. After that she chooses *Continue* and is redirected to the log on screen of Identity Authentication where she is prompted to provide her password. Her email is prefilled by the system. After providing the correct password she logs on to the application.
 
 **Related Information**  
 

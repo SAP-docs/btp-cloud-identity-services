@@ -27,7 +27,7 @@ The connection between SAP BTP and the corporate user store is carried out with 
 
 The *Corporate User Store* option is configured properly. A user tries to access a trusted application for the first time with the on-premise credentials, *Login Name* and *Password* entered correctly. This user is authenticated successfully against the corporate user store. With this initial successful authentication of the user, a partial user record is created in the user store for Identity Authentication. It is created with user details taken from the corporate user store. The cloud user store doesn’t copy the user's credentials. For more details about what data is copied from the corporate user store, see [User Records](corporate-user-store-neo-environment-461d71c.md#loio2243cbca63e5480fb4a6e2bba8049678). With subsequent logins, the user is always authenticated against the corporate user store, and the user record is updated.
 
-For the first logon with on-premise credentials, the user enters his or her *Login Name* and a *Password*. For subsequent logins the user can use either his or her *Login Name*, *E-Mail*, or *User ID*, and the *Password*.
+For the first logon with on-premise credentials, the user enters his or her *Login Name* and a *Password*. For subsequent logins the user can use either his or her *Login Name*, *Email*, or *User ID*, and the *Password*.
 
 > ### Remember:  
 > If the user has enabled the *Remember me* option, the following limitations are observed:
@@ -40,7 +40,7 @@ For the first logon with on-premise credentials, the user enters his or her *Log
 > ### Note:  
 > The user in the corporate user store must have the `mail` attribute.
 > 
-> The tenant administrator needs to monitor and prevent the coexistence of a cloud and on-premise user with one and the same e-mail address. The tenant administrator has to instruct the users to logon for the first time with their *Login Name*, not with the *E-Mail*.
+> The tenant administrator needs to monitor and prevent the coexistence of a cloud and on-premise user with one and the same email address. The tenant administrator has to instruct the users to logon for the first time with their *Login Name*, not with the *Email*.
 
 If a user with a user record in the cloud user store is deleted in the corporate user store, the user can’t authenticate using Identity Authentication. The user record for this user remains in the cloud user store, and the tenant administrator can delete it via the administration console for SAP Cloud Identity Services. For more information, see [Delete Users](delete-users-bbfaf5f.md).
 
@@ -59,7 +59,7 @@ The corporate user groups are sent to an application in the SAML 2.0 assertion. 
 
 You can also restrict access to applications based on membership in a corporate user group by setting different rules via risk-based authentication. For more information, see [Configure Risk-Based Authentication for an Application](configure-risk-based-authentication-for-an-application-bc52fbf.md#loiobc52fbf3d59447bbb6aa22f80d8b6056).
 
- <a name="loio500ac5e7d6574fdb8177ff4b637f1da2"/>
+<a name="loio500ac5e7d6574fdb8177ff4b637f1da2"/>
 
 <!-- loio500ac5e7d6574fdb8177ff4b637f1da2 -->
 
@@ -74,7 +74,7 @@ For more information about the attributes taken from the Active Directory and th
 
 [Security Information](../Security/security-information-6e88d82.md "This document is an overview of security-relevant information that applies to Identity Authentication, and contains recommendations about how administrators should secure it.")
 
- <a name="loio141af10d3c204f399b388898b4ef81af"/>
+<a name="loio141af10d3c204f399b388898b4ef81af"/>
 
 <!-- loio141af10d3c204f399b388898b4ef81af -->
 
@@ -87,7 +87,7 @@ For more details about how to configure these systems, see:
 -   [Configure SAP BTP](corporate-user-store-cloud-foundry-environment-9942ede.md#loiodd8240d6a4f54e938ec867c21a4e9222)
 -   [Configure Identity Authentication](corporate-user-store-cloud-foundry-environment-9942ede.md#loiode5cff7e1ec14bd08d01e429390fe193)
 
- <a name="loiodd8240d6a4f54e938ec867c21a4e9222"/>
+<a name="loiodd8240d6a4f54e938ec867c21a4e9222"/>
 
 <!-- loiodd8240d6a4f54e938ec867c21a4e9222 -->
 
@@ -329,7 +329,7 @@ cf-eu10 - Europe \(Frankfurt\)
 </tr>
 </table>
 
- <a name="task_hlb_hrr_gv"/>
+<a name="task_hlb_hrr_gv"/>
 
 <!-- task\_hlb\_hrr\_gv -->
 
@@ -347,8 +347,8 @@ cf-eu10 - Europe \(Frankfurt\)
 
 3.  Choose *Create* and select the following info from the dropdowns:
 
-    -   *Service* - ***Cloud Identity Services***
-    -   *Plan* - ***Connectivity***
+    -   *Service* - `Cloud Identity Services`
+    -   *Plan* - `Connectivity`
 
         > ### Note:  
         > If the *Connectivity* plan is not available check the entitlements configurations of your subaccount. For more information, see [Managing Entitlements and Quotas Using the Cockpit](https://help.sap.com/products/BTP/65de2977205c403bbc107264b8eccf4b/c8248745dde24afb91479361de336111.html).
@@ -372,7 +372,7 @@ cf-eu10 - Europe \(Frankfurt\)
     > ### Note:  
     > You have to specify the SAP BTP settings. For more information, see [Configure the On-Premise User Store](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/933034aeb00d489eaf21d50bbb12fed5.html), without the *Prerequisites* section.
     > 
-    > The *User Name* field must be in the ***<service\_user\_name\>@<domain\>*** format.
+    > The *User Name* field must be in the `<service_user_name>@<domain>` format.
     > 
     > For the *User Path* and *Group Path* fields, specify the Microsoft Active Directory tree that contains the users and groups, respectively. For example, if the tree has the following structure:
     > 
@@ -421,7 +421,7 @@ cf-eu10 - Europe \(Frankfurt\)
     > ### Note:  
     > You can add the `employeeNumber`, `division`, `department`, and `organization` attributes that are defined in the SCIM Enterprise User Schema Extension.
     > 
-    >  Cloud Connector uses the SCIM protocol to transfer the data, so the Active Directory attributes are mapped first to the SCIM attributes. When the data is provisioned, the SCIM attributes are mapped to the user store attributes of Identity Authentication.
+    > Cloud Connector uses the SCIM protocol to transfer the data, so the Active Directory attributes are mapped first to the SCIM attributes. When the data is provisioned, the SCIM attributes are mapped to the user store attributes of Identity Authentication.
 
     1.  In your system go to `/sapcc-<version>/config_master/com.sap.core.connectivity.protocol.scim/`
 
@@ -727,7 +727,7 @@ SCIM Attributes
 </th>
 <th valign="top">
 
- Identity Authentication User Store Attribute
+Identity Authentication User Store Attribute
 
 
 
@@ -1232,7 +1232,7 @@ country
 
 [Configure Identity Authentication](corporate-user-store-neo-environment-461d71c.md#loio2c3ede1d7c454b8a8f820248ee3b705c)
 
- <a name="loiode5cff7e1ec14bd08d01e429390fe193"/>
+<a name="loiode5cff7e1ec14bd08d01e429390fe193"/>
 
 <!-- loiode5cff7e1ec14bd08d01e429390fe193 -->
 
@@ -1280,14 +1280,14 @@ country
         </tr>
         <tr>
         <td valign="top">
-
+        
         *Display Name*
 
 
         
         </td>
         <td valign="top">
-
+        
         \(optional\) The name of the configuration.
 
 
@@ -1296,14 +1296,14 @@ country
         </tr>
         <tr>
         <td valign="top">
-
+        
         *Type*
 
 
         
         </td>
         <td valign="top">
-
+        
         Select the *Microsoft Active Directory* type.
 
 
@@ -1335,14 +1335,14 @@ country
         </tr>
         <tr>
         <td valign="top">
-
+        
         *Environment*
 
 
         
         </td>
         <td valign="top">
-
+        
         Cloud Foundry
 
 
@@ -1351,14 +1351,14 @@ country
         </tr>
         <tr>
         <td valign="top">
-
+        
         *System ID*
 
 
         
         </td>
         <td valign="top">
-
+        
         This is the name of the system. Provide a name of your choice as *System ID*.
 
 
@@ -1367,14 +1367,14 @@ country
         </tr>
         <tr>
         <td valign="top">
-
+        
         *Subaccount domains*
 
 
         
         </td>
         <td valign="top">
-
+        
         Select your SAP BTP subaccount's domain from the drop-down.
 
 

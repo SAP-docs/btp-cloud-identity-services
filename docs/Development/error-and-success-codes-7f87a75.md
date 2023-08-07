@@ -8,6 +8,8 @@ This section is to help developers with solutions to the REST API response codes
 
 ## Error Codes
 
+**General Error Codes**
+
 
 <table>
 <tr>
@@ -50,7 +52,7 @@ Permanent Location
 </td>
 <td valign="top">
 
-The requested resource resides on a URI other than the requested one.
+The requested resource resides on a URI other than the requested one.You need to set up the authentication type to access the API.
 
 
 
@@ -188,7 +190,7 @@ Not Acceptable
 </td>
 <td valign="top">
 
-The requested method does not produce any of the media types requested in the HTTP request.
+You need to set up the authentication type to access the API.The requested method does not produce any of the media types requested in the HTTP request.
 
 
 
@@ -273,7 +275,7 @@ The operation cannot be completed due to a service error.
 </td>
 <td valign="top">
 
-Service Unavailable
+ 
 
 
 
@@ -290,7 +292,7 @@ The service is currently unavailable.
 
 In addition to the general error codes, the REST APIs return one of the following detailed error codes as an *X-message-code* HTTP response header:
 
-****
+**Detailed Error Codes**
 
 
 <table>
@@ -350,7 +352,7 @@ INVITATION\_API\_EMAIL\_INCORRECT
 </td>
 <td valign="top">
 
-You have specified an incorrect e-mail address or the email address does not exist.
+You have specified an incorrect address or the email address does not exist.
 
 
 

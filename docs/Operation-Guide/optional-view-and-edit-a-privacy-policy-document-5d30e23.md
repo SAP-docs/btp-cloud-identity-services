@@ -10,7 +10,7 @@ Tenant administrators can view privacy policy documents uploaded in the administ
 
 The content of the privacy policy documents are visualised in the administration console.
 
- <a name="task_ilq_3rl_rpb"/>
+<a name="task_ilq_3rl_rpb"/>
 
 <!-- task\_ilq\_3rl\_rpb -->
 
@@ -40,7 +40,7 @@ The content of the privacy policy documents are visualised in the administration
     To view another privacy policy document, repeat the procedure.
 
 
- <a name="task_tl6_3rl_rpb"/>
+<a name="task_tl6_3rl_rpb"/>
 
 <!-- task\_tl6\_3rl\_rpb -->
 

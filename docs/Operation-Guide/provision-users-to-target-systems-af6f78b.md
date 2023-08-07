@@ -48,7 +48,7 @@ Identity Authentication supports the following scenarios for real-time provision
 > <tr>
 > <th valign="top">
 > 
->  Identity Authentication Attribute
+> Identity Authentication Attribute
 > 
 > 
 > 
@@ -365,7 +365,7 @@ Identity Authentication supports the following scenarios for real-time provision
 > <tr>
 > <td valign="top">
 > 
->  **Enterprise User Schema Extension** 
+> **Enterprise User Schema Extension** 
 > 
 > 
 > 
@@ -474,7 +474,7 @@ To provision users, choose one of the options below and follow the corresponding
 
 [Delete Target System](delete-target-system-6372e9a.md "As a tenant administrator, you can delete one or more target systems in a tenant of Identity Authentication.")
 
- <a name="task_avw_k4r_cv"/>
+<a name="task_avw_k4r_cv"/>
 
 <!-- task\_avw\_k4r\_cv -->
 
@@ -508,7 +508,7 @@ The tenant administrator can select the target systems that all users will be pr
     If the operation is successful, the system displays the message ***<number of users\> provisioned***.
 
 
- <a name="task_ejf_l4r_cv"/>
+<a name="task_ejf_l4r_cv"/>
 
 <!-- task\_ejf\_l4r\_cv -->
 
@@ -540,7 +540,7 @@ The tenant administrator can choose which of the users to be provisioned to the 
     <table>
     <tr>
     <td valign="top">
-
+    
     **List All Users**
 
     Press *More*
@@ -549,7 +549,7 @@ The tenant administrator can choose which of the users to be provisioned to the 
     
     </td>
     <td valign="top">
-
+    
     This will expand the list by 20 users.
 
     > ### Note:  
@@ -561,7 +561,7 @@ The tenant administrator can choose which of the users to be provisioned to the 
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Unfiltered Search**
 
     -   \(default mode\) Type your search criteria string in the search field and press the *Enter* key
@@ -573,8 +573,8 @@ The tenant administrator can choose which of the users to be provisioned to the 
     
     </td>
     <td valign="top">
-
-    Once the search is completed, the system will list the users whose *User ID*, *Global User ID*, *SCIM ID*, *E-Mail*, or *Login Name* match your search criteria string. In this case the system doesn’t include the *First Name* and *Last Name* fields in the search.
+    
+    Once the search is completed, the system will list the users whose *User ID*, *Global User ID*, *SCIM ID*, *Email*, or *Login Name* match your search criteria string. In this case the system doesn’t include the *First Name* and *Last Name* fields in the search.
 
     If you aren’t satisfied with the search result, edit your search criteria and repeat the step again.
 
@@ -589,7 +589,7 @@ The tenant administrator can choose which of the users to be provisioned to the 
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Filtered Search**
 
     Press *Show Filters*, type your search criteria strings in at least one of the search fields, and press the *Enter* key
@@ -598,7 +598,7 @@ The tenant administrator can choose which of the users to be provisioned to the 
     
     </td>
     <td valign="top">
-
+    
     The system checks the search fields simultaneously. Once the search is completed, it will list the users that match the search criteria from all the fields.
 
     > ### Note:  
@@ -621,7 +621,7 @@ The tenant administrator can choose which of the users to be provisioned to the 
     If the operation is successful, the system displays the message ***<number of users\> provisioned***.
 
 
- <a name="concept_iyh_s4y_cv"/>
+<a name="concept_iyh_s4y_cv"/>
 
 <!-- concept\_iyh\_s4y\_cv -->
 
@@ -637,7 +637,7 @@ A user is automatically provisioned after he or she has been authenticated.
 
 For more information about how to configure Identity Authentication to use a corporate user store in addition to its own user store, see [Configure Connection to a Corporate User Store](corporate-user-store-neo-environment-461d71c.md#loioe5e9662146f948b49c11d01284231d75).
 
- <a name="concept_hch_gyr_cv"/>
+<a name="concept_hch_gyr_cv"/>
 
 <!-- concept\_hch\_gyr\_cv -->
 
@@ -654,7 +654,7 @@ For more information about user creation or user update, see **Related Informati
 
 [Add Administrators](add-administrators-bbbdbdd.md#loiobbbdbdd3899942ce874f3aae9ba9e21d "As a tenant administrator, you can add new administrators in the administration console for SAP Cloud Identity Services.")
 
-[Import or Update Users for a Specific Application](import-or-update-users-for-a-specific-application-33838e0.md "As a tenant administrator, you can import new users or update existing ones for a specific application with a CSV file. You can also send activation e-mails to the users that have not received activation e-mails for that application so far.")
+[Import or Update Users for a Specific Application](import-or-update-users-for-a-specific-application-33838e0.md "As a tenant administrator, you can import new users or update existing ones for a specific application with a CSV file. You can also send activation emails to the users that have not received activation emails for that application so far.")
 
 [Create User Resource \(Deprecated\)](../Development/create-user-resource-deprecated-cea8778.md "The create user resource method of the Identity Authentication implementation of the SCIM REST API protocol provides information on the creation of a user.")
 

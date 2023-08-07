@@ -14,7 +14,7 @@ Users are redirected to the *Home URL* after activating their accounts, when the
 > From a usability perspective we recommend you to use URL of a protected page.
 
 > ### Remember:  
-> *Home URL* is necessary when you import new users in Identity Authentication. Identity Authentication needs to send activation e-mails to the new users and the home URL has to be mentioned in the e-mails. To access the application, the users have to activate their accounts. For more information see [Import or Update Users for a Specific Application](import-or-update-users-for-a-specific-application-33838e0.md).
+> *Home URL* is necessary when you import new users in Identity Authentication. Identity Authentication needs to send activation emails to the new users and the home URL has to be mentioned in the e-mails. To access the application, the users have to activate their accounts. For more information see [Import or Update Users for a Specific Application](import-or-update-users-for-a-specific-application-33838e0.md).
 
 To configure the *Home URL*, proceed as follows:
 

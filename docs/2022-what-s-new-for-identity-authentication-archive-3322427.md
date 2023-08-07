@@ -10,7 +10,7 @@ This page lists the release notes of SAP Cloud Identity Services - Identity Auth
 
 
 
-** **
+****
 
 
 <table>
@@ -103,7 +103,7 @@ Available as of
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -126,7 +126,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -191,7 +191,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -279,7 +279,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -367,7 +367,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -390,7 +390,7 @@ User Notifications
 </td>
 <td valign="top">
 
-User can receive e-mail alerts when the telephone they use is changed. See [Send Security Alert E-Mails](Operation-Guide/send-security-alert-e-mails-c977464.md).
+User can receive email alerts when the telephone they use is changed. See [Send Security Alert Emails](Operation-Guide/send-security-alert-emails-c977464.md).
 
 
 
@@ -455,7 +455,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -543,7 +543,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -631,7 +631,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -719,7 +719,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -742,7 +742,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -807,7 +807,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -895,7 +895,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -918,7 +918,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -983,7 +983,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -1006,7 +1006,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -1071,7 +1071,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -1161,7 +1161,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -1184,7 +1184,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -1249,7 +1249,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -1337,7 +1337,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -1360,7 +1360,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -1425,7 +1425,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -1513,7 +1513,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -1536,7 +1536,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -1601,7 +1601,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -1689,7 +1689,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -1712,7 +1712,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -1777,7 +1777,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -1865,7 +1865,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -1953,7 +1953,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2041,7 +2041,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2138,7 +2138,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2226,7 +2226,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2249,7 +2249,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -2314,7 +2314,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2402,7 +2402,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2425,7 +2425,7 @@ OpenID Connect
 </td>
 <td valign="top">
 
- Identity Authentication now supports the `token_format`. See [Configure the Client to Call Identity Authentication Token Endpoint for Authorization Code Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-token-endpoint-for-authorization-cod-3a74ef8.md), [Configure the Client to Call Identity Authentication Token Endpoint for Client Credentials Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-token-endpoint-for-client-credential-52b93b0.md), [Configure the Client to Call Identity Authentication Token Endpoint for Resource Owner Password Credentials Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-token-endpoint-for-resource-owner-pa-67f720d.md), [Configure the Client to Call Identity Authentication JWT Bearer Token](Operation-Guide/configure-the-client-to-call-identity-authentication-jwt-bearer-token-01a0440.md), and [Call Identity Authentication Refresh Token](Operation-Guide/call-identity-authentication-refresh-token-c62c09e.md).
+Identity Authentication now supports the `token_format`. See [Configure the Client to Call Identity Authentication Token Endpoint for Authorization Code Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-token-endpoint-for-authorization-cod-3a74ef8.md), [Configure the Client to Call Identity Authentication Token Endpoint for Client Credentials Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-token-endpoint-for-client-credential-52b93b0.md), [Configure the Client to Call Identity Authentication Token Endpoint for Resource Owner Password Credentials Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-token-endpoint-for-resource-owner-pa-67f720d.md), [Configure the Client to Call Identity Authentication JWT Bearer Token](Operation-Guide/configure-the-client-to-call-identity-authentication-jwt-bearer-token-01a0440.md), and [Call Identity Authentication Refresh Token](Operation-Guide/call-identity-authentication-refresh-token-c62c09e.md).
 
 
 
@@ -2490,7 +2490,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2513,7 +2513,7 @@ Availability
 </td>
 <td valign="top">
 
- Identity Authentication changed the availability monitoring for the service. The current status page `statuspage.io` is decommission and you can monitor the availability of the service in the [Cloud Availability Center CAC/SAP4Me](https://launchpad.support.sap.com/#/cacv2/pg/SES_DEVEFF/0000281177). For that you can see a new T-installation for Identity Services in their support tools. The Identity Authentication tenants of a customer are assigned to this new T-installation. Based on these T-installations you can request outage notifications and see potential RCA information.
+Identity Authentication changed the availability monitoring for the service. The current status page `statuspage.io` is decommission and you can monitor the availability of the service in the [Cloud Availability Center CAC/SAP4Me](https://launchpad.support.sap.com/#/cacv2/pg/SES_DEVEFF/0000281177). For that you can see a new T-installation for Identity Services in their support tools. The Identity Authentication tenants of a customer are assigned to this new T-installation. Based on these T-installations you can request outage notifications and see potential RCA information.
 
 
 
@@ -2578,7 +2578,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2667,7 +2667,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2690,7 +2690,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -2753,7 +2753,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2776,7 +2776,7 @@ User Management
 </td>
 <td valign="top">
 
- `User UUID` is mutable now. Tenant administrator can change the `User UUID` attribute, initially generated by Identity Authentication, via the administration console. See [Create a New User](Operation-Guide/create-a-new-user-348deef.md) and [List and Edit User Details](Operation-Guide/list-and-edit-user-details-045cb01.md).
+`User UUID` is mutable now. Tenant administrator can change the `User UUID` attribute, initially generated by Identity Authentication, via the administration console. See [Create a New User](Operation-Guide/create-a-new-user-348deef.md) and [List and Edit User Details](Operation-Guide/list-and-edit-user-details-045cb01.md).
 
 
 
@@ -2839,7 +2839,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2862,7 +2862,7 @@ User Management
 </td>
 <td valign="top">
 
- Identity Authentication now supports two new user types: `External` and `Onboardee`. See [User Types](user-types-70e95d1.md).
+Identity Authentication now supports two new user types: `External` and `Onboardee`. See [User Types](user-types-70e95d1.md).
 
 
 
@@ -2925,7 +2925,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2948,7 +2948,7 @@ User Authentication
 </td>
 <td valign="top">
 
- Identity Authentication supports X.509 Certificate authentication with Subject Alternative Name \(SAN\) `rfc822 Name`. See [Configure X.509 Client Certificates for User Authentication](Operation-Guide/configure-x-509-client-certificates-for-user-authentication-52c7dcb.md).
+Identity Authentication supports X.509 Certificate authentication with Subject Alternative Name \(SAN\) `rfc822 Name`. See [Configure X.509 Client Certificates for User Authentication](Operation-Guide/configure-x-509-client-certificates-for-user-authentication-52c7dcb.md).
 
 
 
@@ -3011,7 +3011,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -3097,7 +3097,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -3183,7 +3183,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -3206,7 +3206,7 @@ Availability
 </td>
 <td valign="top">
 
- Identity Authentication will change the availability monitoring for the service. The current status page `statuspage.io` will be decommission and you will able to monitor the availability of the service in the Cloud Availability Center CAC/SAP4Me. For that customers will see a new T-installation for Identity Services in their support tools. The Identity Authentication tenants of a customer will be assigned to this new T-installation. Based on these T-installations they can request outage notifications and see potential RCA information.
+Identity Authentication will change the availability monitoring for the service. The current status page `statuspage.io` will be decommission and you will able to monitor the availability of the service in the Cloud Availability Center CAC/SAP4Me. For that customers will see a new T-installation for Identity Services in their support tools. The Identity Authentication tenants of a customer will be assigned to this new T-installation. Based on these T-installations they can request outage notifications and see potential RCA information.
 
 
 
@@ -3269,7 +3269,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -3292,7 +3292,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -3355,7 +3355,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -3378,7 +3378,7 @@ Corporate IdPs
 </td>
 <td valign="top">
 
- Identity Authentication supports *SHA-512* as option for signing algorithm when configuring trust with a SAML 2.0 corporate identity provider. See [Configure Trust with SAML 2.0 Corporate Identity Provider](Operation-Guide/configure-trust-with-saml-2-0-corporate-identity-provider-33832e5.md).
+Identity Authentication supports *SHA-512* as option for signing algorithm when configuring trust with a SAML 2.0 corporate identity provider. See [Configure Trust with SAML 2.0 Corporate Identity Provider](Operation-Guide/configure-trust-with-saml-2-0-corporate-identity-provider-33832e5.md).
 
 
 
@@ -3441,7 +3441,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -3527,7 +3527,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -3550,7 +3550,7 @@ Real-Time Provisioning
 </td>
 <td valign="top">
 
- Identity Authentication supports X.509 Certificate authentication when Identity Provisioning is configured as target system for real-time provisioning. See [Configure Identity Provisioning Target Systems for Real-Time User Provisioning](Operation-Guide/configure-identity-provisioning-target-systems-for-real-time-user-provisioning-3349645.md).
+Identity Authentication supports X.509 Certificate authentication when Identity Provisioning is configured as target system for real-time provisioning. See [Configure Identity Provisioning Target Systems for Real-Time User Provisioning](Operation-Guide/configure-identity-provisioning-target-systems-for-real-time-user-provisioning-3349645.md).
 
 
 
@@ -3613,7 +3613,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -3699,7 +3699,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -3785,7 +3785,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -3808,7 +3808,7 @@ OpenID Connect
 </td>
 <td valign="top">
 
- Identity Authentication supports Revoke and Introspect Endpoints with OpenID Connect. See [Call Identity Authentication Revoke Token Endpoint](Operation-Guide/call-identity-authentication-revoke-token-endpoint-3501e42.md). and [Call Identity Authentication Introspect Token Endpoint](Operation-Guide/call-identity-authentication-introspect-token-endpoint-a05f14c.md).
+Identity Authentication supports Revoke and Introspect Endpoints with OpenID Connect. See [Call Identity Authentication Revoke Token Endpoint](Operation-Guide/call-identity-authentication-revoke-token-endpoint-3501e42.md). and [Call Identity Authentication Introspect Token Endpoint](Operation-Guide/call-identity-authentication-introspect-token-endpoint-a05f14c.md).
 
 
 
@@ -3871,7 +3871,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -3894,12 +3894,12 @@ Regional Availability
 </td>
 <td valign="top">
 
- Identity Authentication will be available with a new data center for the AWS infrastructure in Brazil. The data center will be located in São Paulo.
+Identity Authentication will be available with a new data center for the AWS infrastructure in Brazil. The data center will be located in São Paulo.
 
 Action: We recommend you to add the following IPs to your allowed IP list:
 
--   LB IP - ***54.232.33.83 / 54.207.203.50 / 54.207.116.12*** 
--   NAT IP - ***18.228.75.28 / 18.229.85.43 / 54.232.93.209*** 
+-   LB IP - `54.232.33.83 / 54.207.203.50 / 54.207.116.12` 
+-   NAT IP - `18.228.75.28 / 18.229.85.43 / 54.232.93.209` 
 
 
 
@@ -3962,7 +3962,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -3985,7 +3985,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -4048,7 +4048,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -4071,7 +4071,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -4134,7 +4134,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -4220,7 +4220,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -4306,7 +4306,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -4329,7 +4329,7 @@ SAML 2.0 Trust
 </td>
 <td valign="top">
 
- Identity Authentication supports *SHA-512* as option for signing algorithm. See [Configure SAML 2.0 Service Provider](Operation-Guide/configure-saml-2-0-service-provider-51f1f75.md).
+Identity Authentication supports *SHA-512* as option for signing algorithm. See [Configure SAML 2.0 Service Provider](Operation-Guide/configure-saml-2-0-service-provider-51f1f75.md).
 
 
 
@@ -4392,7 +4392,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -4415,7 +4415,7 @@ Corporate IdPs
 </td>
 <td valign="top">
 
- [Configure Trust with SAML 2.0 Corporate Identity Provider](Operation-Guide/configure-trust-with-saml-2-0-corporate-identity-provider-33832e5.md).
+[Configure Trust with SAML 2.0 Corporate Identity Provider](Operation-Guide/configure-trust-with-saml-2-0-corporate-identity-provider-33832e5.md).
 
 
 
@@ -4478,7 +4478,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -4501,7 +4501,7 @@ Branding Style
 </td>
 <td valign="top">
 
- Identity Authentication introduced a new branding style theme - Horizon Theme \(Beta\). See Tenant administrators have the option to sign or not the authentication requests and the single log out messages. See [Configure a Branding Style for an Application](Operation-Guide/configure-a-branding-style-for-an-application-32f8d33.md).
+Identity Authentication introduced a new branding style theme - Horizon Theme \(Beta\). See Tenant administrators have the option to sign or not the authentication requests and the single log out messages. See [Configure a Branding Style for an Application](Operation-Guide/configure-a-branding-style-for-an-application-32f8d33.md).
 
 
 
@@ -4564,7 +4564,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -4587,7 +4587,7 @@ Branding Style
 </td>
 <td valign="top">
 
- Identity Authentication renamed the Default theme to Quartz. See [Configure a Branding Style for an Application](Operation-Guide/configure-a-branding-style-for-an-application-32f8d33.md).
+Identity Authentication renamed the Default theme to Quartz. See [Configure a Branding Style for an Application](Operation-Guide/configure-a-branding-style-for-an-application-32f8d33.md).
 
 
 
@@ -4650,7 +4650,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -4677,8 +4677,8 @@ The China region will operate with an additional data center in Shanghai.
 
 Action: We recommend you to add the following IPs to your allowed IP list:
 
--   LB IP - ***121.91.104.198*** 
--   NAT IP - ***121.91.104.32 / 27*** 
+-   LB IP - `121.91.104.198` 
+-   NAT IP - `121.91.104.32 / 27` 
 
 
 
@@ -4741,7 +4741,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -4764,7 +4764,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -4827,7 +4827,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -4913,7 +4913,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -4936,7 +4936,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -4999,7 +4999,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -5022,7 +5022,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -5085,7 +5085,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -5108,7 +5108,7 @@ OpenID Connect
 </td>
 <td valign="top">
 
- Identity Authentication now supports the `refresh_expiry` parameter to reduce the expiration of a refresh token. See [Configure the Client to Call Identity Authentication Token Endpoint for Authorization Code Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-token-endpoint-for-authorization-cod-3a74ef8.md), [Configure the Client to Call Identity Authentication Token Endpoint for Resource Owner Password Credentials Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-token-endpoint-for-resource-owner-pa-67f720d.md), [Configure the Client to Call Identity Authentication JWT Bearer Token](Operation-Guide/configure-the-client-to-call-identity-authentication-jwt-bearer-token-01a0440.md), [Call Identity Authentication Refresh Token](Operation-Guide/call-identity-authentication-refresh-token-c62c09e.md), and [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow with PKCE](Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-a721157.md).
+Identity Authentication now supports the `refresh_expiry` parameter to reduce the expiration of a refresh token. See [Configure the Client to Call Identity Authentication Token Endpoint for Authorization Code Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-token-endpoint-for-authorization-cod-3a74ef8.md), [Configure the Client to Call Identity Authentication Token Endpoint for Resource Owner Password Credentials Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-token-endpoint-for-resource-owner-pa-67f720d.md), [Configure the Client to Call Identity Authentication JWT Bearer Token](Operation-Guide/configure-the-client-to-call-identity-authentication-jwt-bearer-token-01a0440.md), [Call Identity Authentication Refresh Token](Operation-Guide/call-identity-authentication-refresh-token-c62c09e.md), and [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow with PKCE](Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-a721157.md).
 
 
 
@@ -5165,7 +5165,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -5253,7 +5253,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -5339,7 +5339,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -5362,7 +5362,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -5425,7 +5425,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -5511,7 +5511,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -5597,7 +5597,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -5683,7 +5683,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -5769,7 +5769,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -5792,7 +5792,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -5855,7 +5855,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -5878,7 +5878,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -5941,7 +5941,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -5964,7 +5964,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -6027,7 +6027,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -6113,7 +6113,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -6136,7 +6136,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -6199,7 +6199,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -6285,7 +6285,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -6308,7 +6308,7 @@ Two-Factor Authentication
 </td>
 <td valign="top">
 
-You can protect applications with two-factor authentication via a code sent to the user's e-mail. See [Configure Risk-Based Authentication for an Application](Operation-Guide/configure-risk-based-authentication-for-an-application-bc52fbf.md#loiobc52fbf3d59447bbb6aa22f80d8b6056) and [Configure Default Risk-Based Authentication for All Applications in the Tenant](Operation-Guide/configure-default-risk-based-authentication-for-all-applications-in-the-tenant-1aab51a.md#loio1aab51ae62b94f79b4c6dac7a00857c2).
+You can protect applications with two-factor authentication via a code sent to the user's email. See [Configure Risk-Based Authentication for an Application](Operation-Guide/configure-risk-based-authentication-for-an-application-bc52fbf.md#loiobc52fbf3d59447bbb6aa22f80d8b6056) and [Configure Default Risk-Based Authentication for All Applications in the Tenant](Operation-Guide/configure-default-risk-based-authentication-for-all-applications-in-the-tenant-1aab51a.md#loio1aab51ae62b94f79b4c6dac7a00857c2).
 
 
 
@@ -6371,7 +6371,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -6457,7 +6457,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -6480,7 +6480,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -6543,7 +6543,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -6570,8 +6570,8 @@ The Saudi Arabia region will operate with an additional data center in Dammam.
 
 Action: We recommend you to add the following IPs to your allowed IP list:
 
--   LB IP - ***130.214.248.94*** 
--   NAT IP - ***130.214.248.32 / 27*** 
+-   LB IP - `130.214.248.94` 
+-   NAT IP - `130.214.248.32 / 27` 
 
 
 
@@ -6634,7 +6634,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -6657,7 +6657,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -6720,7 +6720,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -6743,7 +6743,7 @@ Corporate IdPs
 </td>
 <td valign="top">
 
- Identity Authentication supports corporate identity providers using OpenID Connect. Applications that use OpenID Connect can direct users to your corporate identity provider for authentication. See [Configure Trust with OpenID Connect Corporate Identity Provider](Operation-Guide/configure-trust-with-openid-connect-corporate-identity-provider-8ff83a1.md).
+Identity Authentication supports corporate identity providers using OpenID Connect. Applications that use OpenID Connect can direct users to your corporate identity provider for authentication. See [Configure Trust with OpenID Connect Corporate Identity Provider](Operation-Guide/configure-trust-with-openid-connect-corporate-identity-provider-8ff83a1.md).
 
 
 
@@ -6804,7 +6804,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -6827,7 +6827,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -6890,7 +6890,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -6917,8 +6917,8 @@ The Europe region will operate in high availability \(HA\) mode with an addition
 
 Action: We recommend you to add the following IPs to your allowed IP list:
 
--   LB IP - ***130.214.144.214*** 
--   NAT IP - ***130.214.228.32 / 27*** 
+-   LB IP - `130.214.144.214` 
+-   NAT IP - `130.214.228.32 / 27` 
 
 See [Regional Availability](regional-availability-be600ca.md).
 
@@ -6983,7 +6983,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -7006,7 +7006,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -7069,7 +7069,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -7155,7 +7155,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -7178,7 +7178,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -7241,7 +7241,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -7264,7 +7264,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -7327,7 +7327,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -7350,7 +7350,7 @@ Corporate IdPs
 </td>
 <td valign="top">
 
-Tenant administrator can configure how the `AllowCreate` attribute is sent to the corporate identity provider. See [\(Optional\) Configure the Name ID Format and AllowCreate Attribute Sent to the SAML 2.0 Corporate IdP](Operation-Guide/optional-configure-the-name-id-format-and-allowcreate-attribute-sent-to-the-saml-2-0-corp-4fcc090.md).
+Tenant administrator can configure how the `AllowCreate` attribute is sent to the corporate identity provider. See [\(Optional\) Configure the Name ID Format Attribute Sent to the SAML 2.0 Corporate IdP](Operation-Guide/optional-configure-the-name-id-format-attribute-sent-to-the-saml-2-0-corporate-idp-4fcc090.md).
 
 
 
@@ -7413,7 +7413,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -7436,7 +7436,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -7499,7 +7499,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -7585,7 +7585,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -7608,7 +7608,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -7671,7 +7671,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -7694,7 +7694,7 @@ Source Systems
 </td>
 <td valign="top">
 
- Identity Authentication supports certificate authentication for API calls to external source systems - SAP SuccessFactors, SAP Learning Management. See [Configure Source System To Migrate User Passwords from SAP SuccessFactors Systems to Identity Authentication](Operation-Guide/configure-source-system-to-migrate-user-passwords-from-sap-successfactors-systems-to-iden-671d2e6.md) and [Configure Source System To Migrate User Passwords from SAP Learning Management System to Identity Authentication](Operation-Guide/configure-source-system-to-migrate-user-passwords-from-sap-learning-management-system-to-0d85eb7.md).
+Identity Authentication supports certificate authentication for API calls to external source systems - SAP SuccessFactors, SAP Learning Management. See [Configure Source System To Migrate User Passwords from SAP SuccessFactors Systems to Identity Authentication](Operation-Guide/configure-source-system-to-migrate-user-passwords-from-sap-successfactors-systems-to-iden-671d2e6.md) and [Configure Source System To Migrate User Passwords from SAP Learning Management System to Identity Authentication](Operation-Guide/configure-source-system-to-migrate-user-passwords-from-sap-learning-management-system-to-0d85eb7.md).
 
 
 
@@ -7757,7 +7757,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -7843,7 +7843,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -7929,7 +7929,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -7951,7 +7951,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -8014,7 +8014,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -8099,7 +8099,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -8184,7 +8184,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -8206,7 +8206,7 @@ Assertion Attributes
 </td>
 <td valign="top">
 
- Identity Authentication added `locale` as assertion attribute. See [Configure the User Attributes Sent to the Application](Operation-Guide/configure-the-user-attributes-sent-to-the-application-d361407.md).
+Identity Authentication added `locale` as assertion attribute. See [Configure the User Attributes Sent to the Application](Operation-Guide/configure-the-user-attributes-sent-to-the-application-d361407.md).
 
 
 
@@ -8269,7 +8269,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -8354,7 +8354,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -8376,7 +8376,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -8439,7 +8439,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -8461,7 +8461,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -8524,7 +8524,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -8546,7 +8546,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -8609,7 +8609,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -8694,7 +8694,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -8779,7 +8779,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -8864,7 +8864,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -8949,7 +8949,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -8971,7 +8971,7 @@ Password Policies
 </td>
 <td valign="top">
 
- Identity Authentication added new options for maximum password lifetime: 1 year, 2 years, 3 years, and unlimited. See [Configuring Password Policies](Operation-Guide/configuring-password-policies-12b3395.md).
+Identity Authentication added new options for maximum password lifetime: 1 year, 2 years, 3 years, and unlimited. See [Configuring Password Policies](Operation-Guide/configuring-password-policies-12b3395.md).
 
 
 
@@ -9034,7 +9034,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -9119,7 +9119,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -9141,7 +9141,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -9204,7 +9204,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -9219,14 +9219,14 @@ Not applicable
 </td>
 <td valign="top">
 
-E-Mail Notifications
+Email Notifications
 
 
 
 </td>
 <td valign="top">
 
- Identity Authentication can send e-mails with information about expiring certificates, system notifications, and new administrators to the tenant administrators. The notifications are also visible at the top-right corner of the administration console. See [Send System Notifications via E-Mails](Operation-Guide/send-system-notifications-via-e-mails-aa04a8b.md).
+Identity Authentication can send emails with information about expiring certificates, system notifications, and new administrators to the tenant administrators. The notifications are also visible at the top-right corner of the administration console. See [Send System Notifications via Emails](Operation-Guide/send-system-notifications-via-emails-aa04a8b.md).
 
 
 

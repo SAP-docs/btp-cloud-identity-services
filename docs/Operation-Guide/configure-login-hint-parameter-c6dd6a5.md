@@ -99,7 +99,7 @@ The user will need to provide user identifier and password at the corporate iden
 User Attributes
 
 -   Login Name
--   E-Mail
+-   Email
 
 
 
@@ -117,7 +117,7 @@ User Attributes
 As `login_hint` will be sent one of the following:
 
 -   Login Name
--   E-Mail
+-   Email
 
 .
 

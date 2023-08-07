@@ -58,7 +58,7 @@ Create users via the *Add* option in the administration console
 </td>
 <td valign="top">
 
- [Create a New User](create-a-new-user-348deef.md) 
+[Create a New User](create-a-new-user-348deef.md) 
 
 
 
@@ -74,7 +74,7 @@ Create users via a CSV file import in the administration console
 </td>
 <td valign="top">
 
- [Import or Update Users for a Specific Application](import-or-update-users-for-a-specific-application-33838e0.md) 
+[Import or Update Users for a Specific Application](import-or-update-users-for-a-specific-application-33838e0.md) 
 
 
 
@@ -90,7 +90,7 @@ Create users programmatically via API
 </td>
 <td valign="top">
 
- [Create User Resource \(Deprecated\)](../Development/create-user-resource-deprecated-cea8778.md) 
+[Create User Resource \(Deprecated\)](../Development/create-user-resource-deprecated-cea8778.md) 
 
 
 
@@ -113,7 +113,7 @@ Search users in the administration console
 </td>
 <td valign="top">
 
- [Search Users](search-users-06078a6.md) 
+[Search Users](search-users-06078a6.md) 
 
 
 
@@ -129,7 +129,7 @@ Search users via API
 </td>
 <td valign="top">
 
- [Users Search \(Deprecated\)](../Development/users-search-deprecated-3af7dfa.md) 
+[Users Search \(Deprecated\)](../Development/users-search-deprecated-3af7dfa.md) 
 
 
 
@@ -152,7 +152,7 @@ List a specific user and edit the information about that user via the administra
 </td>
 <td valign="top">
 
- [List and Edit User Details](list-and-edit-user-details-045cb01.md) 
+[List and Edit User Details](list-and-edit-user-details-045cb01.md) 
 
 
 
@@ -185,7 +185,7 @@ Update user details via a CSV file import
 </td>
 <td valign="top">
 
- [Import or Update Users for a Specific Application](import-or-update-users-for-a-specific-application-33838e0.md) 
+[Import or Update Users for a Specific Application](import-or-update-users-for-a-specific-application-33838e0.md) 
 
 
 
@@ -203,9 +203,9 @@ Manage user password via the administration console
 
 -   [Unlock User Password](unlock-user-password-9172552.md)
 
--   [Send Reset Password E-Mail](send-reset-password-e-mail-da55abf.md)
+-   [Send Reset Password Email](send-reset-password-email-da55abf.md)
 
--   [Reset Counter for E-Mail Sending](reset-counter-for-e-mail-sending-08f634b.md)
+-   [Reset Counter for Email Sending](reset-counter-for-email-sending-08f634b.md)
 
 -   [Set Initial Password](set-initial-password-16149d5.md)
 
@@ -231,7 +231,7 @@ Delete users via the administration console
 </td>
 <td valign="top">
 
- [Delete Users](delete-users-bbfaf5f.md) 
+[Delete Users](delete-users-bbfaf5f.md) 
 
 
 
@@ -247,7 +247,7 @@ Delete users programmatically via API
 </td>
 <td valign="top">
 
- [Delete User Resource \(Deprecated\)](../Development/delete-user-resource-deprecated-436015d.md) 
+[Delete User Resource \(Deprecated\)](../Development/delete-user-resource-deprecated-436015d.md) 
 
 
 

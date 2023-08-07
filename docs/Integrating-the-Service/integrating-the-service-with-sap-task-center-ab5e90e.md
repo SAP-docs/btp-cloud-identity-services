@@ -99,7 +99,7 @@ For more information on how to provision the Global User ID from your SAP Identi
 
 [System Integration Guide for SAP Cloud Identity Services and SAP Task Center](https://help.sap.com/viewer/b95c3d5bab324a3a8409eee5267a5b75/Cloud/en-US/27947dfb325047018603446439050a6b.html)
 
-[API Business Hub: SAP Cloud Identity Services](https://cloudintegration.int.sap.eu2.hana.ondemand.com/package/SCPIdentityServices/rest)
+[SAP Business Accelerator Hub](https://cloudintegration.int.sap.eu2.hana.ondemand.com/package/SCPIdentityServices/rest)
 
 [Global User ID](https://help.sap.com/viewer/b4c9306d80a3471aa0ae48511e725b43/8.0/en-US/dffae27f5d744a12a216d2b6e09fc55d.html)
 

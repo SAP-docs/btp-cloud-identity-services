@@ -65,14 +65,14 @@ The configuration of the OAuth authentication scenario is done in the SAP BTP co
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Display Name* 
 
 
     
     </td>
     <td valign="top">
-
+    
     Put a name for the target system you are creating.
 
 
@@ -81,14 +81,14 @@ The configuration of the OAuth authentication scenario is done in the SAP BTP co
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Type*
 
 
     
     </td>
     <td valign="top">
-
+    
     Choose *Identity Provisioning* from the dropdown.
 
 
@@ -97,14 +97,14 @@ The configuration of the OAuth authentication scenario is done in the SAP BTP co
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Version*
 
 
     
     </td>
     <td valign="top">
-
+    
     -   Version 1 - real-time provisioning works when the Identity Authentication source system uses the Identity Authentication SCIM API \(in short, SCIM API version 1\). This means, you need to set the `ias.api.version` property to 1, and use transformations which are relevant to SCIM API version 1.
 
     -   Version 2 - real-time provisioning works when the Identity Authentication source system uses the Identity Directory SCIM API \(in short, SCIM API version 2\). This means, you need to set the `ias.api.version` property to 2, and use transformations which are relevant to SCIM API version 2.
@@ -117,14 +117,14 @@ The configuration of the OAuth authentication scenario is done in the SAP BTP co
     </tr>
     <tr>
     <td valign="top">
-
+    
     *SCIM URL*
 
 
     
     </td>
     <td valign="top">
-
+    
     The *SCIM URL* should be in the following pattern:
 
     -   **When your Identity Provisioning bundle or standalone tenant is running on the infrastructure of SAP Cloud Identity Services**
@@ -180,14 +180,14 @@ The configuration of the OAuth authentication scenario is done in the SAP BTP co
         </tr>
         <tr>
         <td valign="top">
-
+        
         *OAuth URL*
 
 
         
         </td>
         <td valign="top">
-
+        
         In the Cockpit, choose the *Security* \> *OAuth* section, and go to the *Branding* tab. Copy the *Token Endpoint* link and paste it in the *OAuth URL* field in the administration console for SAP Cloud Identity Services.
 
 
@@ -196,14 +196,14 @@ The configuration of the OAuth authentication scenario is done in the SAP BTP co
         </tr>
         <tr>
         <td valign="top">
-
+        
         *Client ID*
 
 
         
         </td>
         <td valign="top">
-
+        
         Use the *ID* of your registered OAuth client.
 
 
@@ -212,14 +212,14 @@ The configuration of the OAuth authentication scenario is done in the SAP BTP co
         </tr>
         <tr>
         <td valign="top">
-
+        
         *Client Secret*
 
 
         
         </td>
         <td valign="top">
-
+        
         Use the *Secret* of your registered OAuth client.
 
 

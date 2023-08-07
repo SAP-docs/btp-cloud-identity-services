@@ -2,5 +2,5 @@
 
 # Integrating the Service
 
- You can integrate Identity Authentication with SAP and non-SAP systems as service providers. 
+You can integrate Identity Authentication with SAP and non-SAP systems as service providers. 
 

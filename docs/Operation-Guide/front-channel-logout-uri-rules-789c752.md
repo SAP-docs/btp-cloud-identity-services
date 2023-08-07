@@ -42,6 +42,13 @@ The length is limited to 499 characters.
     > 
     > https://localhost/logout
 
+-   Wildcard - It's allowed in the domain part. The wildcard support is mainly for multitenant applications.
+
+    > ### Example:  
+    > https://\*.example.com/logout
+    > 
+    > Allow during authorize call to register a URI with parameter `logout_uri`, for example: `https://app1.example.com/logout`.
+
 -   IP Addresses - Usage of IP addresses is not allowed.
 
 

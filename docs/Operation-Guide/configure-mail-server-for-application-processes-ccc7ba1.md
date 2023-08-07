@@ -2,7 +2,7 @@
 
 # Configure Mail Server for Application Processes
 
-Configure mail server for the e-mails sent to the end users in the different application processes.
+Configure mail server for the emails sent to the end users in the different application processes.
 
 
 
@@ -16,18 +16,18 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 
 ## Context
 
-Identity Authentication uses own mail server for the e-mails sent to users for the different application processes. For example, when a user makes a registration for an application, he or she receives an activation e-mail from *ias@notifications.sap.com*.
+Identity Authentication uses own mail server for the emails sent to users for the different application processes. For example, when a user makes a registration for an application, he or she receives an activation email from *ias@notifications.sap.com*.
 
-Identity Authentication provides also the possibility to configure custom mail server for the application processes e-mails.
+Identity Authentication provides also the possibility to configure custom mail server for the application processes emails.
 
-Apart from the Identity Authentication own mail server and the custom mail server, you can also use the Amazon Simple Email Service for the e-mails sent to users for the different application processes. Thus, you can modify the sender and receiver the e-mail without having custom mail server.
+Apart from the Identity Authentication own mail server and the custom mail server, you can also use the Amazon Simple Email Service for the emails sent to users for the different application processes. Thus, you can modify the sender and receiver the email without having custom mail server.
 
 To use the Amazon Simple Email Service with custom domain, you must own the domain. Otherwise, you can use the `accounts.ondemand.com` domain and just modify the *From* and *Reply to* fields.
 
-For more information, about the e-mails sent for the different application processes, see [Configuring E-Mail Templates](configuring-e-mail-templates-b2afbcd.md).
+For more information, about the emails sent for the different application processes, see [Configuring Email Templates](configuring-email-templates-b2afbcd.md).
 
 > ### Remember:  
-> Once the tenant administrator configures the mail server, all e-mails go through this configuration.
+> Once the tenant administrator configures the mail server, all emails go through this configuration.
 > 
 > If you have created a custom mail configuration, and after that you create an Amazon Simple Email Service configuration, the custom mail configuration will be deleted. And also, if you have created an Amazon Simple Email Service, and after that you create a custom mail configuration configuration, the Amazon Simple Email Service configuration will be deleted.
 > 
@@ -51,7 +51,7 @@ To configure the mail server, choose one of the procedures below:
 
 [Configure Links Section on Sign-In Screen](configure-links-section-on-sign-in-screen-060c032.md "You can configure links to appear on the sign-in screen of your applications.")
 
-[Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in sscreen of the Horizon theme with instructions for the user.")
+[Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in screen of the Horizon theme with instructions for the user.")
 
 [Configure X.509 Client Certificates for User Authentication](configure-x-509-client-certificates-for-user-authentication-52c7dcb.md "Tenant administrators can configure X.509 client certificates for user authentication as an alternative to authenticating with a user name and a password.")
 
@@ -69,7 +69,7 @@ To configure the mail server, choose one of the procedures below:
 
 [Enable Users to Recover Password with PIN Code](enable-users-to-recover-password-with-pin-code-046a235.md "Users can choose to provide PIN code to reset their password.")
 
-[Configure Initial Password and E-Mail Link Validity](configure-initial-password-and-e-mail-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
+[Configure Initial Password and Email Link Validity](configure-initial-password-and-email-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
 
 [Configure Session Timeout](configure-session-timeout-5ca23e4.md "As a tenant administrator, you can configure when the session, created at the Identity Authentication tenant, expires.")
 
@@ -87,9 +87,9 @@ To configure the mail server, choose one of the procedures below:
 
 [Configure IdP-Initiated SSO](configure-idp-initiated-sso-5d59caa.md)
 
-[Send Security Alert E-Mails](send-security-alert-e-mails-c977464.md "Send security alert e-mails to end-users or administrators when changes in their accounts are made.")
+[Send Security Alert Emails](send-security-alert-emails-c977464.md "Send security alert emails to end-users or administrators when changes in their accounts are made.")
 
-[Send System Notifications via E-Mails](send-system-notifications-via-e-mails-aa04a8b.md "You can configure the administration console to send e-mails with information about expiring certificates, system notifications and new administrators to specific e-mail addresses or to the e-mails of all administrators.")
+[Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 
@@ -97,5 +97,5 @@ To configure the mail server, choose one of the procedures below:
 
 [Reuse SAP Cloud Identity Services Tenants for Different Customer IDs](reuse-sap-cloud-identity-services-tenants-for-different-customer-ids-ebd0258.md "You as a tenant administrator can reuse an existing tenant for configurations and automated subscriptions.")
 
-[Configuring E-Mail Templates](configuring-e-mail-templates-b2afbcd.md "Tenant administrators can use the default or a custom e-mail template set for the application processes.")
+[Configuring Email Templates](configuring-email-templates-b2afbcd.md "Tenant administrators can use the default or a custom email template set for the application processes.")
 

@@ -10,12 +10,9 @@ To enable one application to consume the APIs of another application, applicatio
 
 ## Prerequisites
 
--   The provider and consumer applications are configured as OpenID Connect \(OIDC\) applications.
+You know the name of the API needed by the consumer application.
 
--   You know the name of the API needed by the consumer application.
-
-    Either the API name is listed in the documentation of the provider application or you must look it up in the provider application.
-
+Either the API name is listed in the documentation of the provider application or you must look it up in the provider application.
 
 
 

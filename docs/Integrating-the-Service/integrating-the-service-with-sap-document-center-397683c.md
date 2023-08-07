@@ -56,7 +56,7 @@ The configuration steps are done in the administration console for SAP Cloud Ide
 
 [Blogs](blogs-a89ca3e.md "Links to blogs and documents about integration scenarios with Identity Authentication.")
 
- <a name="loiocdd3c3974741472d990cd76404903556"/>
+<a name="loiocdd3c3974741472d990cd76404903556"/>
 
 <!-- loiocdd3c3974741472d990cd76404903556 -->
 
@@ -74,7 +74,7 @@ You have three options to define access:
 -   Assign Groups to Roles
 -   Assign Default Groups
 
- <a name="task_ddy_zyw_ww"/>
+<a name="task_ddy_zyw_ww"/>
 
 <!-- task\_ddy\_zyw\_ww -->
 
@@ -117,7 +117,7 @@ Assign the respective roles for SAP Document Center to individual users of Ident
 
 The assigned user can log on to SAP Document Center with their credentials for Identity Authentication.
 
- <a name="task_frb_h1x_ww"/>
+<a name="task_frb_h1x_ww"/>
 
 <!-- task\_frb\_h1x\_ww -->
 
@@ -154,7 +154,7 @@ Assertion-based groups are groups determined by values of attributes in the SAML
 
 All users that are members of the group can access SAP Document Center.
 
- <a name="copy3b728dee0f054637a5afc71870a20aff"/>
+<a name="copy3b728dee0f054637a5afc71870a20aff"/>
 
 <!-- copy3b728dee0f054637a5afc71870a20aff -->
 
@@ -162,7 +162,7 @@ All users that are members of the group can access SAP Document Center.
 
 You have to specify how the assertion attributes are sent to SAP BTP in the assertion, and define their mapping.
 
- <a name="task_kmc_rhg_cy"/>
+<a name="task_kmc_rhg_cy"/>
 
 <!-- task\_kmc\_rhg\_cy -->
 
@@ -198,7 +198,7 @@ You have to specify how the assertion attributes are sent to SAP BTP in the asse
 
 [Configure the User Attributes Sent to the Application](../Operation-Guide/configure-the-user-attributes-sent-to-the-application-d361407.md "After configuring the user attributes to be collected by the registration and upgrade forms, you have to specify how these attributes are sent to the application.")
 
- <a name="task_ckj_rhg_cy"/>
+<a name="task_ckj_rhg_cy"/>
 
 <!-- task\_ckj\_rhg\_cy -->
 
@@ -240,14 +240,14 @@ You have to specify how the assertion attributes are sent to SAP BTP in the asse
     </tr>
     <tr>
     <td valign="top">
-
+    
     \*
 
 
     
     </td>
     <td valign="top">
-
+    
     \*
 
 

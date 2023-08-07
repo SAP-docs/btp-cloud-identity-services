@@ -6,6 +6,12 @@ With the Token Exchange flow you can exchange one token for another. For more in
 
 
 
+> ### Note:  
+> The exchange of an OpenID Connect token with a SAML 2.0 is possible in two scenarios:
+> 
+> -   [SAP Note 2043039 - SAML 2.0 Authentication via HTTP Request Header](https://launchpad.support.sap.com/#/notes/SAP Note 2043039 - SAML 2.0 Authentication via HTTP Request Header)
+> -   [SAML 2.0 Bearer Assertion Flow for OAuth 2.0 Client](https://help.sap.com/docs/SAP_NETWEAVER_750/e815bb97839a4d83be6c4fca48ee5777/01043cc6765b48cfbc1564a9839a29ee.html)
+
 
 
 ## **Request**
@@ -316,10 +322,97 @@ String
 </td>
 <td valign="top">
 
-The type of the security token in the `subject_token`. Supported types:
+The type of the security token in the `subject_token`.
 
--   `SAML2 Session Index`
--   `OAuth2 Access Token`
+Allowed values:
+
+-   `urn:sap:identity:oauth:token-type:saml2-session`
+-   `urn:ietf:params:oauth:token-type:access_token`
+-   `urn:ietf:params:oauth:token-type:id_token`
+-   `urn:ietf:params:oauth:token-type:jwt`
+
+
+
+</td>
+<td valign="top">
+
+Request body
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`requested_token_type`
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+<td valign="top">
+
+String
+
+
+
+</td>
+<td valign="top">
+
+The type of the requested security token.
+
+Allowed values for `requested_token_type` parameter:
+
+-   `urn:ietf:params:oauth:token-type:access_token`
+-   `urn:ietf:params:oauth:token-type:id_token`
+-   `urn:ietf:params:oauth:token-type:saml2`
+
+> ### Note:  
+> If you request `urn:ietf:params:oauth:token-type:saml2`, allow all APIs for principal propagation in the *Provided APIs* section in the administration console. For more information, see [Consume APIs from Other Applications](../Development/consume-apis-from-other-applications-29e204d.md).
+
+
+
+</td>
+<td valign="top">
+
+Request body
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`resource`
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+<td valign="top">
+
+String
+
+
+
+</td>
+<td valign="top">
+
+Use provided API names. For more information, see [Consume APIs from Other Applications](../Development/consume-apis-from-other-applications-29e204d.md).
 
 
 
@@ -336,48 +429,73 @@ Request body
 
 
 
-### Request Example
-
-```
-
-https://my-tenant.ondemand.com/oauth2/token?grant_type=urn:ietf:params:oauth:grant-type:token-exchange&
-client_id=a90ca226sbc34-soc5-dcf6-6k8a6b9f2469&
-client_secret=OWSu0/0sSUeUCG1LAYmSQ10Ut0yrfPz&
-subject_token=Zjk1YTI3YERzNGZlZmTlNzZjNzk4YTY2ZjdlZjYwMacw
-subject_token_type=urn:ietf:params:oauth:token-type:access_token
-```
+## **Examples**
 
 
 
-## **Response**
+> ### Example:  
+> *Request*
+> 
+> ```
+> 
+> https://my-tenant.ondemand.com/oauth2/token?grant_type=urn:ietf:params:oauth:grant-type:token-exchange&
+> client_id=a90ca226sbc34-soc5-dcf6-6k8a6b9f2469&
+> client_secret=OWSu0/0sSUeUCG1LAYmSQ10Ut0yrfPz&
+> subject_token=Zjk1YTI3YERzNGZlZmTlNzZjNzk4YTY2ZjdlZjYwMacw
+> subject_token_type=urn:ietf:params:oauth:token-type:access_token
+> ```
+> 
+> *Response*
+> 
+> ```
+> 
+> Content-Type: application/json
+>  
+> {
+>     "access_token": "dzEyYTM0YmM2OWZhZnU3NmE3OThzNjZmN3NmNjg3MQ",
+>     "refresh_token": "s95s27af4fefae76c798a66f7ef9034",
+> 	"issued_token_type": "urn:ietf:params:oauth:token-type:access_token",
+>     "id_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.ey
+> JzdWIiOiJQMTIzNDU2IiwiYXVkIjoiMjAzZjYyMDktMjRmZi00MmY1LW
+> E0MTMtNmRlNWE5M2ZjMjYxIiwidXNlcl91dWlkIjoiMDEyM2E0NS1mMW
+> FmLTFmMWMtYTMxMy03NDZkMTIwYWJjZDkiLCJtYWlsIjoiZG9uYS5tb2
+> 9yZUBleGFtcGxlLmNvbSIsImlzcyI6Imh0dHBzOi8vdGVzdHRlbmFudC
+> 50ZXN0LmNvbSIsImxhc3RfbmFtZSI6Ik1vb3JlIiwiZXhwIjoxNjM5MT
+> Q0MDEwLCJpYXQiOjE2MzkxNDA0MTAsImZpcnN0X25hbWUiOiJEb25hIi
+> wianRpIjoiMzFlMzJjNWYtNjljcC00NmE2LWE5MDctOTExZDExMjA1cz
+> BzIn0.QYftNy7WgISWoKpRXh4_RX5UDNXsXDTndYuIA85L2II",
+>     "token_type": "Bearer",
+>     "expires_in": 3600
+> }
+> ```
 
-
-
-### Response Example
-
-```
-
-Content-Type: application/json
- 
-{
-    "access_token": "dzEyYTM0YmM2OWZhZnU3NmE3OThzNjZmN3NmNjg3MQ",
-    "refresh_token": "s95s27af4fefae76c798a66f7ef9034",
-	"issued_token_type": "urn:ietf:params:oauth:token-type:access_token",
-    "id_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.ey
-JzdWIiOiJQMTIzNDU2IiwiYXVkIjoiMjAzZjYyMDktMjRmZi00MmY1LW
-E0MTMtNmRlNWE5M2ZjMjYxIiwidXNlcl91dWlkIjoiMDEyM2E0NS1mMW
-FmLTFmMWMtYTMxMy03NDZkMTIwYWJjZDkiLCJtYWlsIjoiZG9uYS5tb2
-9yZUBleGFtcGxlLmNvbSIsImlzcyI6Imh0dHBzOi8vdGVzdHRlbmFudC
-50ZXN0LmNvbSIsImxhc3RfbmFtZSI6Ik1vb3JlIiwiZXhwIjoxNjM5MT
-Q0MDEwLCJpYXQiOjE2MzkxNDA0MTAsImZpcnN0X25hbWUiOiJEb25hIi
-wianRpIjoiMzFlMzJjNWYtNjljcC00NmE2LWE5MDctOTExZDExMjA1cz
-BzIn0.QYftNy7WgISWoKpRXh4_RX5UDNXsXDTndYuIA85L2II",
-    "token_type": "Bearer",
-    "expires_in": 3600
-}
-```
-
- 
+> ### Example:  
+> *Request*
+> 
+> ```
+> 
+> https://my-tenant.ondemand.com/oauth2/token?grant_type=urn:ietf:params:oauth:grant-type:token-exchange&
+> client_id=a90ca226sbc34-soc5-dcf6-6k8a6b9f2469&
+> client_secret=OWSu0/0sSUeUCG1LAYmSQ10Ut0yrfPz&
+> subject_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJQMTIzNDU2IiwiYXVkIjoiMjAzZjYyMDktMjRmZi00MmY1LWE0MTMtNmRlNWE5M2ZjMjYxIiwidXNlcl91dWlkIjoiMDEyM2E0NS1mMWFmLTFmMWMtYTMxMy03NDZkMTIwYWJjZDkiLCJtYWlsIjoiZG9uYS5tb29yZUBleGFtcGxlLmNvbSIsImlzcyI6Imh0dHBzOi8vdGVzdHRlbmFudC50ZXN0LmNvbSIsImxhc3RfbmFtZSI6Ik1vb3JlIiwiZXhwIjoxNjM5MTQ0MDEwLCJpYXQiOjE2MzkxNDA0MTAsImZpcnN0X25hbWUiOiJEb25hIiwianRpIjoiMzFlMzJjNWYtNjljcC00NmE2LWE5MDctOTExZDExMjA1czBzIn0.QYftNy7WgISWoKpRXh4_RX5UDNXsXDTndYuIA85L2II&
+> subject_token_type=urn:ietf:params:oauth:token-type:id_token&
+> requested_token_type=urn:ietf:params:oauth:token-type:saml2&
+> resource=urn:sap:identity:application:provider:name:SAML2SSO
+> ```
+> 
+> *Response*
+> 
+> ```
+> 
+> Content-Type: application/json
+> 
+> {
+> "access_token": "<base64-encoded-SAML2-bearer-assertion>",
+> "issued_token_type": "urn:ietf:params:oauth:token-type:saml2",
+> "token_type": "Bearer",
+> "expires_in": 900
+> }
+> ```
 
 **Related Information**  
 

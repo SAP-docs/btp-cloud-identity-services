@@ -10,7 +10,7 @@ Tenant administrator can view the JWT payload of the OpenID Connect tokens issue
 
 ## Prerequisites
 
-You have the Identity Authentication troubleshooting logs with severity ***INFO***. For more information, see [View Troubleshooting Logs](view-troubleshooting-logs-6e7543f.md) or [Download Troubleshooting Logs](download-troubleshooting-logs-2732321.md).
+You have the Identity Authentication troubleshooting logs with severity `INFO`. For more information, see [View Troubleshooting Logs](view-troubleshooting-logs-6e7543f.md) or [Download Troubleshooting Logs](download-troubleshooting-logs-2732321.md).
 
 
 
@@ -180,11 +180,7 @@ audit.authentication
 A JSON string, which contains the token claims of issued or received OpenID Connect tokens.
 
 > ### Note:  
-> Claims that aren't relevant for troubleshooting are removed for the sake of brevity:
-> 
-> -   For issued tokens: `iat`, `exp`, `jti`, `issuer` - are removed from the log.
-> 
-> -   For received tokens: `iat`, `exp`, and `jti` - are removed from the log.
+> Claims that aren't relevant for troubleshooting are removed from the log for the sake of brevity: `iat`, `exp` and `jti`.
 
 
 

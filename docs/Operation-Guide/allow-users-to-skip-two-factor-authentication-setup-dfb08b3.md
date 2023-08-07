@@ -23,7 +23,7 @@ The number of days for which users can postpone the enabling of second factor ca
 
 If the tenant or application requires two-factor authentication, and the users don't have an enabled two-factor authentication method, or the method that is enabled is not among the ones required by the application, at sign-in users can choose to skip the enabling of two-factor authentication for the period defined by the tenant administrator. The users can sign in without providing a second factor until the grace period expires.
 
-Users can be notified for their choice, if the security alert notification is switched on. They receive a security alert e-mail after they first skip the enabling of two-factor. For more information about how to configure the e-mail alerts, see [Send Security Alert E-Mails](send-security-alert-e-mails-c977464.md).
+Users can be notified for their choice, if the security alert notification is switched on. They receive a security alert email after they first skip the enabling of two-factor. For more information about how to configure the e-mail alerts, see [Send Security Alert Emails](send-security-alert-emails-c977464.md).
 
 
 

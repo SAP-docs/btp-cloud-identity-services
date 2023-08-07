@@ -23,7 +23,7 @@ To list all administrators, proceed as follows:
     > ### Note:  
     > The list also includes the SAP BTP system, which by default has authorizations to set up the trust with Identity Authentication.
 
-3.  Choose the name from the list item to view the profile details, such as user ID and e-mail, and the authorizations assigned to the administrator.
+3.  Choose the name from the list item to view the profile details, such as user ID and email, and the authorizations assigned to the administrator.
 
     > ### Tip:  
     > Type the name of the administrator in the search field to filter the list items.
@@ -40,6 +40,8 @@ To list all administrators, proceed as follows:
 [Add Administrators](add-administrators-bbbdbdd.md#loiobbbdbdd3899942ce874f3aae9ba9e21d "As a tenant administrator, you can add new administrators in the administration console for SAP Cloud Identity Services.")
 
 [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md "As a tenant administrator, you can edit both your own authorizations and other administrators' authorizations in the administration console for SAP Cloud Identity Services. By editing the administrator authorizations you can also delete an administrator.")
+
+[\(Beta\) Configure Authorizations Based on Policies](beta-configure-authorizations-based-on-policies-08fea39.md "Configure a granular access control based on policies for the administrators of SAP Cloud Identity Services.")
 
 [Identity Authentication Tenant as an Application Identity Provider](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/d3df5b457d0c43fca117da0dc14e2f0d.html)
 

@@ -7,7 +7,7 @@ The create user resource method of the Identity Authentication implementation of
 
 
 > ### Note:  
-> This API will be deprecated. Please use [Identity Directory SCIM REST API](https://api.sap.com/api/IdDS_SCIM/overview) instead. For more information, see [Migrating Identity Authentication SCIM REST API to Identity Directory Service API](migrating-identity-authentication-scim-rest-api-to-identity-directory-service-api-106dbe0.md).
+> This API is deprecated. Please use [Identity Directory SCIM REST API](https://api.sap.com/api/IdDS_SCIM/overview) instead. For more information, see [Migrating Identity Authentication SCIM REST API to Identity Directory Service API](migrating-identity-authentication-scim-rest-api-to-identity-directory-service-api-106dbe0.md).
 
 
 
@@ -43,7 +43,7 @@ The create user resource method of the Identity Authentication implementation of
     > 
     > Values that are part of the respective exclude list can't be used. For more information, see [Restrict User Attributes Values via Exclude Lists](../Operation-Guide/restrict-user-attributes-values-via-exclude-lists-cb108c2.md).
     > 
-    > The `<username>` part of the e-mail address can have the following:
+    > The `<username>` part of the email address can have the following:
     > 
     > -   uppercase and lowercase Latin letters
     > 
@@ -56,12 +56,12 @@ The create user resource method of the Identity Authentication implementation of
     > -   space and the "\(\),:;<\>@\[\\\] characters can be used only if surrounded by quotation marks. The \\ or " must be preceded by \\
     > 
     > 
-    > If e-mail is set to not required, `emails.value` can be left empty.
+    > If email is set to not required, `emails.value` can be left empty.
     > 
-    > If e-mail is set to not unique, you can create multiple users with the same e-mail.
+    > If email is set to not unique, you can create multiple users with the same email.
 
     > ### Tip:  
-    > If e-mail is mandatory, for users without valid e-mail addresses or for testing purposes use the `sap-test.de` domain, for example `<username>@sap-test.de`. Do not use any other existing or nonexisting domains.
+    > If email is mandatory, for users without valid email addresses or for testing purposes use the `sap-test.de` domain, for example `<username>@sap-test.de`. Do not use any other existing or nonexisting domains.
 
 -   `sendMail`
 
@@ -116,72 +116,35 @@ The create user resource method of the Identity Authentication implementation of
     </tr>
     <tr>
     <td valign="top">
-
-     `sendMail` 
+    
+    `sendMail` 
 
 
     
     </td>
     <td valign="top">
-
+    
     *true*
 
 
     
     </td>
     <td valign="top">
-
+    
     *true*
 
 
     
     </td>
     <td valign="top">
-
+    
     *false*
 
 
     
     </td>
     <td valign="top">
-
-    *false*
-
-
     
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-
-     `mailVerified` 
-
-
-    
-    </td>
-    <td valign="top">
-
-    *true*
-
-
-    
-    </td>
-    <td valign="top">
-
-    *false*
-
-
-    
-    </td>
-    <td valign="top">
-
-    *true*
-
-
-    
-    </td>
-    <td valign="top">
-
     *false*
 
 
@@ -190,35 +153,72 @@ The create user resource method of the Identity Authentication implementation of
     </tr>
     <tr>
     <td valign="top">
-
-     **Result** 
+    
+    `mailVerified` 
 
 
     
     </td>
     <td valign="top">
+    
+    *true*
 
+
+    
+    </td>
+    <td valign="top">
+    
+    *false*
+
+
+    
+    </td>
+    <td valign="top">
+    
+    *true*
+
+
+    
+    </td>
+    <td valign="top">
+    
+    *false*
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Result** 
+
+
+    
+    </td>
+    <td valign="top">
+    
     The user will receive e-mail. He or she will be able to log on.
 
 
     
     </td>
     <td valign="top">
-
+    
     The user will receive e-mail. He or she has to click the verification link in the e-mail.
 
 
     
     </td>
     <td valign="top">
-
+    
     The user will be able to log on to the application directly.
 
 
     
     </td>
     <td valign="top">
-
+    
     The user will not be able to log on.
 
 
@@ -296,7 +296,7 @@ The create user resource method of the Identity Authentication implementation of
 -   `locale`
 
     > ### Note:  
-    > Must be a string value specified by a two or four-letter code in one of the following formats: XX. Otherwise, the activation e-mail is in English.
+    > Must be a string value specified by a two or four-letter code in one of the following formats: XX. Otherwise, the activation email is in English.
 
 -   `password`
 
@@ -770,6 +770,8 @@ not provided
 
 
 
+## Example
+
 ```json
 
 
@@ -1050,6 +1052,8 @@ The URI of the newly created user is in the location header of the HTTP Response
 ## Response Example
 
 
+
+## Example
 
 ```json
 

@@ -46,14 +46,14 @@ To create a new OpenID Connect application, choose your scenario and follow the 
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Display Name*
 
 
     
     </td>
     <td valign="top">
-
+    
     Required. The display name of the application appears on the logon and registration pages.
 
 
@@ -62,14 +62,14 @@ To create a new OpenID Connect application, choose your scenario and follow the 
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Home URL*
 
 
     
     </td>
     <td valign="top">
-
+    
     Optional. Users are redirected to the *Home URL* after activating their accounts, when they are created via a CSV file import or the user registration service of Identity Authentication.
 
 
@@ -78,14 +78,14 @@ To create a new OpenID Connect application, choose your scenario and follow the 
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Type*
 
 
     
     </td>
     <td valign="top">
-
+    
     Optional.
 
 
@@ -94,14 +94,14 @@ To create a new OpenID Connect application, choose your scenario and follow the 
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Parent Application*
 
 
     
     </td>
     <td valign="top">
-
+    
     Optional.
 
     > ### Remember:  

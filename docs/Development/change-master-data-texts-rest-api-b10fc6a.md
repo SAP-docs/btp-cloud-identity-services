@@ -53,7 +53,7 @@ Salutations
 </td>
 <td valign="top">
 
- [Salutations.properties](change-master-data-texts-rest-api-b10fc6a.md#loiod4512bcbe9c8439896e06425f247c7af) 
+[Salutations.properties](change-master-data-texts-rest-api-b10fc6a.md#loiod4512bcbe9c8439896e06425f247c7af) 
 
 
 
@@ -76,7 +76,7 @@ Functions
 </td>
 <td valign="top">
 
- [Functions.properties](change-master-data-texts-rest-api-b10fc6a.md#loio78cb6d43814c4b179eda8282c28e8d2f) 
+[Functions.properties](change-master-data-texts-rest-api-b10fc6a.md#loio78cb6d43814c4b179eda8282c28e8d2f) 
 
 
 
@@ -99,7 +99,7 @@ Departments
 </td>
 <td valign="top">
 
- [Departments.properties](change-master-data-texts-rest-api-b10fc6a.md#loiod13c638f0d5d4a8889debf278fcb0275) 
+[Departments.properties](change-master-data-texts-rest-api-b10fc6a.md#loiod13c638f0d5d4a8889debf278fcb0275) 
 
 
 
@@ -122,7 +122,7 @@ Company Relationships
 </td>
 <td valign="top">
 
- [Relationships.properties](change-master-data-texts-rest-api-b10fc6a.md#loiof7eb5b72aed440fdb75657379bd368d1) 
+[Relationships.properties](change-master-data-texts-rest-api-b10fc6a.md#loiof7eb5b72aed440fdb75657379bd368d1) 
 
 
 
@@ -145,7 +145,7 @@ Industries
 </td>
 <td valign="top">
 
- [Industries.properties](change-master-data-texts-rest-api-b10fc6a.md#loioe62f9b8fde264f3ab644bdaa5a7876e2) 
+[Industries.properties](change-master-data-texts-rest-api-b10fc6a.md#loioe62f9b8fde264f3ab644bdaa5a7876e2) 
 
 
 
@@ -168,7 +168,7 @@ Languages
 </td>
 <td valign="top">
 
- [Languages.properties](change-master-data-texts-rest-api-b10fc6a.md#loio3be819bd3a3a498fa287542346a7add0) 
+[Languages.properties](change-master-data-texts-rest-api-b10fc6a.md#loio3be819bd3a3a498fa287542346a7add0) 
 
 
 
@@ -191,7 +191,7 @@ Countries
 </td>
 <td valign="top">
 
- [Countries.properties](change-master-data-texts-rest-api-b10fc6a.md#loioe4e7e4c52cf04295bf94465eba7ceaaa) 
+[Countries.properties](change-master-data-texts-rest-api-b10fc6a.md#loioe4e7e4c52cf04295bf94465eba7ceaaa) 
 
 
 
@@ -302,10 +302,12 @@ URI
 </table>
 
 > ### Note:  
-> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*.
+> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the *tenant ID*.
 
 **Related Information**  
 
+
+[SAP Cloud Identity Services Application Directory REST API](sap-cloud-identity-services-application-directory-rest-api-a8fc935.md "Manage application configurations.")
 
 [Identity Directory SCIM REST API](identity-directory-scim-rest-api-5be5692.md "Manage users, groups and custom schemas in the cloud.")
 
@@ -317,15 +319,13 @@ URI
 
 [Password Service REST API](password-service-rest-api-8d1016b.md "The password service is used for operations related to user passwords, such as verification of the user name and the password combination.")
 
-[Forgot Password REST API](forgot-password-rest-api-d024fca.md "The forgot password REST API sends a reset password e-mail.")
+[Forgot Password REST API](forgot-password-rest-api-d024fca.md "The forgot password REST API sends a reset password email.")
 
 [TOTP Validation Service](totp-validation-service-3e4c3cf.md "Validation of time-based one-time password (TOTP).")
 
 [Change Tenant Texts REST API](change-tenant-texts-rest-api-66ad80a.md#loio66ad80a6bbaf4fc3911232f7cc9a7de6 "The Change Tenant Texts REST API of Identity Authentication can be used to change the predefined texts and messages for end-user screens available per tenant in the Identity Authentication.")
 
-[General Error Codes](general-error-codes-182352d.md "The following table lists error codes that may be returned from any method on any resource URI.")
-
- <a name="loiob2f411ec61104f178e665498d2550149"/>
+<a name="loiob2f411ec61104f178e665498d2550149"/>
 
 <!-- loiob2f411ec61104f178e665498d2550149 -->
 
@@ -804,7 +804,7 @@ Example of response that returns overwritten keys of the *Salutations* file. The
 
 ```
 
- <a name="loio26691a9f2e024f598b976f2268a5efbd"/>
+<a name="loio26691a9f2e024f598b976f2268a5efbd"/>
 
 <!-- loio26691a9f2e024f598b976f2268a5efbd -->
 
@@ -1262,7 +1262,7 @@ The service is currently unavailable.
 </tr>
 </table>
 
- <a name="loiod4512bcbe9c8439896e06425f247c7af"/>
+<a name="loiod4512bcbe9c8439896e06425f247c7af"/>
 
 <!-- loiod4512bcbe9c8439896e06425f247c7af -->
 
@@ -1279,7 +1279,7 @@ The service is currently unavailable.
 0002=Mr.
 ```
 
- <a name="loio78cb6d43814c4b179eda8282c28e8d2f"/>
+<a name="loio78cb6d43814c4b179eda8282c28e8d2f"/>
 
 <!-- loio78cb6d43814c4b179eda8282c28e8d2f -->
 
@@ -1323,7 +1323,7 @@ The service is currently unavailable.
 CO=Chief Compliance Officer
 ```
 
- <a name="loiod13c638f0d5d4a8889debf278fcb0275"/>
+<a name="loiod13c638f0d5d4a8889debf278fcb0275"/>
 
 <!-- loiod13c638f0d5d4a8889debf278fcb0275 -->
 
@@ -1382,7 +1382,7 @@ CO=Chief Compliance Officer
 4010=Audit
 ```
 
- <a name="loiof7eb5b72aed440fdb75657379bd368d1"/>
+<a name="loiof7eb5b72aed440fdb75657379bd368d1"/>
 
 <!-- loiof7eb5b72aed440fdb75657379bd368d1 -->
 
@@ -1406,7 +1406,7 @@ CO=Chief Compliance Officer
 09=Employee
 ```
 
- <a name="loioe62f9b8fde264f3ab644bdaa5a7876e2"/>
+<a name="loioe62f9b8fde264f3ab644bdaa5a7876e2"/>
 
 <!-- loioe62f9b8fde264f3ab644bdaa5a7876e2 -->
 
@@ -1451,7 +1451,7 @@ CO=Chief Compliance Officer
 38=Postal
 ```
 
- <a name="loio3be819bd3a3a498fa287542346a7add0"/>
+<a name="loio3be819bd3a3a498fa287542346a7add0"/>
 
 <!-- loio3be819bd3a3a498fa287542346a7add0 -->
 
@@ -1610,7 +1610,7 @@ ZA=Zhuang
 ZU=Zulu
 ```
 
- <a name="loioe4e7e4c52cf04295bf94465eba7ceaaa"/>
+<a name="loioe4e7e4c52cf04295bf94465eba7ceaaa"/>
 
 <!-- loioe4e7e4c52cf04295bf94465eba7ceaaa -->
 

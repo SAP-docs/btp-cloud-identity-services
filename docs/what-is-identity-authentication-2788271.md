@@ -4,7 +4,7 @@
 
 # What Is Identity Authentication?
 
- Authentication and single sign-on for users in the cloud. 
+Authentication and single sign-on for users in the cloud. 
 
 The Identity Authentication service provides you with controlled cloud-based access to business processes, applications, and data. It simplifies your user experience through authentication mechanisms, single sign-on, on-premise integration, and convenient self-service options.
 
@@ -70,19 +70,56 @@ Identity Authentication tenants run on the infrastructure of SAP Cloud Identity 
 
 ## Features
 
- Authentication and SSO
- :   Choose one of the supported authentication methods to control access to your application, like Form, SPNEGO, Social, or two-factor authentication. Use SAML 2.0 to provide single sign-on. Integrate your application programmatically using authentication via API.
 
-  Configure Risk-Based Authentication
- :   Help enforce two-factor authentication based on IP ranges, user groups, user type, or authentication method to manage access to a business application.
+<dl>
+<dt><b>
 
-  Delegate Authentication
- :   Delegate authentication to a 3rd party or on-premise IdP, as default or based on a condition like IdP, e-mail domain, user type or user group, and thus enable SSO across on-premise and the cloud.
+Authentication and SSO
 
-  Use API
- :   Use SCIM REST API to manage users and groups, invite users, customize end-user UI texts in any language.
+</b></dt>
+<dd>
 
- 
+Choose one of the supported authentication methods to control access to your application, like Form, SPNEGO, Social, or two-factor authentication. Use SAML 2.0 to provide single sign-on. Integrate your application programmatically using authentication via API.
+
+
+
+</dd><dt><b>
+
+Configure Risk-Based Authentication
+
+</b></dt>
+<dd>
+
+Help enforce two-factor authentication based on IP ranges, user groups, user type, or authentication method to manage access to a business application.
+
+
+
+</dd><dt><b>
+
+Delegate Authentication
+
+</b></dt>
+<dd>
+
+Delegate authentication to a 3rd party or on-premise IdP, as default or based on a condition like IdP, email domain, user type or user group, and thus enable SSO across on-premise and the cloud.
+
+
+
+</dd><dt><b>
+
+Use API
+
+</b></dt>
+<dd>
+
+Use SCIM REST API to manage users and groups, invite users, customize end-user UI texts in any language.
+
+
+
+</dd>
+</dl>
+
+
 
 ## Prerequisites
 

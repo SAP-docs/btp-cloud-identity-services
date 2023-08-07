@@ -219,6 +219,46 @@ Path
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+`client_id`
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+<td valign="top">
+
+string
+
+
+
+</td>
+<td valign="top">
+
+Used to identify the corresponding Identity Authentication application.
+
+> ### Note:  
+> The `client_id` parameter is mandatory if the request is provided without authentication.
+
+
+
+</td>
+<td valign="top">
+
+Request body
+
+
+
+</td>
+</tr>
 </table>
 
 
@@ -326,5 +366,5 @@ The client is not authenticated.
 </tr>
 </table>
 
- 
+
 

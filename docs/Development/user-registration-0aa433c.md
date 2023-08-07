@@ -166,10 +166,10 @@ String
 </td>
 <td valign="top">
 
-The e-mail of the user you register. The e-mail must be unique.
+The email of the user you register. The email must be unique.
 
 > ### Tip:  
-> If e-mail is mandatory, for users without valid e-mail addresses or for testing purposes use the `sap-test.de` domain, for example `<username>@sap-test.de`. Do not use any other existing or nonexisting domains.
+> If email is mandatory, for users without valid email addresses or for testing purposes use the `sap-test.de` domain, for example `<username>@sap-test.de`. Do not use any other existing or nonexisting domains.
 
 
 
@@ -244,6 +244,43 @@ String
 <td valign="top">
 
 The logon name of the user
+
+
+
+</td>
+<td valign="top">
+
+Request body
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`applicationId`
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+<td valign="top">
+
+String
+
+
+
+</td>
+<td valign="top">
+
+The ID of the subscribed application. The user is created for the application with the provided ID.
 
 
 
@@ -354,9 +391,9 @@ String
 </td>
 <td valign="top">
 
-The preferred language for the activation e-mail of the user you register. The usage of this parameter does not affect the end-user screens.
+The preferred language for the activation email of the user you register. The usage of this parameter does not affect the end-user screens.
 
-Must be a string value specified by a two or four-letter code in one of the following formats: XX, xx, xx-XX or xx\_XX. Otherwise the activation e-mail is in English.
+Must be a string value specified by a two or four-letter code in one of the following formats: XX, xx, xx-XX or xx\_XX. Otherwise the activation email is in English.
 
 
 
@@ -583,9 +620,9 @@ Boolean
 
 Values: true \(default value\), false
 
--   If **true** - activation e-mail is sent to the user.
+-   If **true** - activation email is sent to the user.
 
--   If **false** - activation e-mail is not sent to the user.
+-   If **false** - activation email is not sent to the user.
 
     > ### Note:  
     > If the user is new, the link for account activation is returned with the **201** response.
@@ -795,6 +832,8 @@ Request body
 
 
 
+## Example
+
 > ### Caution:  
 > All parameters for the POST method must be written on one line.
 
@@ -913,13 +952,15 @@ The SP user already exists.
 </tr>
 </table>
 
-For more information about the general error codes that may be returned, see [General Error Codes](general-error-codes-182352d.md).
+For more information about the general error codes that may be returned, see [Error and Success Codes](error-and-success-codes-7f87a75.md).
 
 
 
 ### Response Example
 
 
+
+## Example
 
 The URI of the created user is returned in the location header of the HTTP Response.
 
@@ -929,6 +970,8 @@ Location: https://<tenant ID>.accounts.ondemand.com/service/users/0800200c9a66
 
 
 
+## Example
+
 In case of conflict, the URI of the conflicting user is returned in the location header of the HTTP Response.
 
 ```
@@ -936,6 +979,8 @@ Location: https://<tenant ID>.accounts.ondemand.com/service/users/467345637aa
 ```
 
 
+
+## Example
 
 In case of creating a new user with "send\_email=false", the activation link is returned in the HTTP Response body.
 
@@ -953,7 +998,7 @@ Content-Type: application/json
 
 
 
- 
+
 
 **Related Information**  
 

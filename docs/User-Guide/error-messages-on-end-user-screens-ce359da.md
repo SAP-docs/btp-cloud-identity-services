@@ -54,7 +54,7 @@ Authentication failed; try again
 <td valign="top">
 
 -   Try again;
--   Open your e-mail and activate your account;
+-   Open your email and activate your account;
 -   Register on the logon page;
 -   Contact your administrator.
 
@@ -159,14 +159,14 @@ According to the application’s policy, you are not allowed to change the passw
 <tr>
 <td valign="top">
 
-Your e-mail activation link is invalid.
+Your email activation link is invalid.
 
 
 
 </td>
 <td valign="top">
 
-The e-mail activation link that you have received is expired or already used by you.
+The email activation link that you have received is expired or already used by you.
 
 
 

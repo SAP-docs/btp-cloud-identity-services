@@ -98,7 +98,7 @@ For a list of the relevant endpoints, use the following URL:
 
 <code>https://<i class="varname">&lt;tenant ID&gt;</i>.accounts.ondemand.com/.well-known/openid-configuration</code>
 
-*Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
+*Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
 
 If you've a custom domain configured, the URL has the following pattern:
 

@@ -20,13 +20,13 @@ The user is identified in one of the following ways:
 
 -   Global User ID
 -   User ID
--   E-Mail
+-   Email
 -   Display Name
 -   Login Name
 -   Employee Number.
 
 > ### Note:  
-> `Global User ID`, `User ID`, `Login Name` and `E-Mail` can be unique for the tenant. This depends on the tenant configurations.
+> `Global User ID`, `User ID`, `Login Name` and `Email` can be unique for the tenant. This depends on the tenant configurations.
 > 
 > The configuration of the `Subject Name Identifier` attribute for the system applications is disabled. The default setting for these applications is `User ID`.
 
@@ -64,7 +64,7 @@ Attribute Technical Name
 <tr>
 <td valign="top">
 
-E-mail
+Email
 
 
 
@@ -497,12 +497,12 @@ To set the `Subject Name Identifier` attribute, proceed as follows:
 6.  Select one of the following:
 
     -   Basic Configuration:
-        -   Select a basic attribute from the drop down: `Global User ID`, `User ID` \(this is the default setting\), `E-Mail`, `Display Name`, `Login Name`, `Employee Number`.
+        -   Select a basic attribute from the drop down: `Global User ID`, `User ID` \(this is the default setting\), `Email`, `Display Name`, `Login Name`, `Employee Number`.
 
             > ### Note:  
             > If you select *Login Name*, or *Employee Number*, and the selected attribute has no value set for the user, the user is not able to log on the application. The message "**HTTP Status 401 – Unauthorized**" is displayed when the user provides credentials and logs on. In this case, configure also the fallback attribute.
 
-        -   \(optional\) Select a fallback attribute from the drop down: `None` \(this is the default setting\), `Global User ID`, `User ID`, `E-Mail`, `Display Name`, `Login Name`, `Employee Number`.
+        -   \(optional\) Select a fallback attribute from the drop down: `None` \(this is the default setting\), `Global User ID`, `User ID`, `Email`, `Display Name`, `Login Name`, `Employee Number`.
 
 
     > ### Tip:  
@@ -514,7 +514,7 @@ To set the `Subject Name Identifier` attribute, proceed as follows:
             > ### Note:  
             > If Identity Authentication acts as proxy IdP, and the users have no profiles in Identity Authentication, set an attribute with the following dynamic value: <prefix\> $\{corporateIdP<corporateIDP attribute\>\} <suffix\>
 
-        -   \(optional\) Select a fallback attribute from the drop down: `None` \(this is the default setting\), `Global User ID`, `User ID`, `E-Mail`, `Display Name`, `Login Name`, `Employee Number`.
+        -   \(optional\) Select a fallback attribute from the drop down: `None` \(this is the default setting\), `Global User ID`, `User ID`, `Email`, `Display Name`, `Login Name`, `Employee Number`.
 
 
 7.  Save your selection.
@@ -522,7 +522,7 @@ To set the `Subject Name Identifier` attribute, proceed as follows:
     Once the application has been changed, the system displays the message ***Application <name of application\> updated***.
 
 
- <a name="task_oyx_34m_x1b"/>
+<a name="task_oyx_34m_x1b"/>
 
 <!-- task\_oyx\_34m\_x1b -->
 
@@ -536,7 +536,7 @@ The tenant administrator can set a default name ID format via the administration
 
 The name ID format is used in the `Format` attribute of the `NameID` element that Identity Authentication sends to the application with the SAML assertion. This is the default name ID format. It is used only in case the application or the service provider does not request another name ID format with the SAML authentication request.
 
- Identity Authentication supports the following name ID formats:
+Identity Authentication supports the following name ID formats:
 
 
 <table>
@@ -591,7 +591,7 @@ By default this is the default Name ID format.
 <tr>
 <td valign="top">
 
-E-mail address
+Email address
 
 
 
@@ -605,10 +605,10 @@ urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress
 </td>
 <td valign="top">
 
-The format of the name ID is an e-mail address. You can configure this setting when you have chosen as name ID attribute a user attribute that contains e-mail.
+The format of the name ID is an email address. You can configure this setting when you have chosen as name ID attribute a user attribute that contains email.
 
 > ### Note:  
-> Identity Authentication does not check if the content of the name ID attribute is e-mail address. You can decide which name ID attribute to configure for the application. Make sure that it contains e-mail address in case you want to conform to the SAML2 specification.
+> Identity Authentication does not check if the content of the name ID attribute is email address. You can decide which name ID attribute to configure for the application. Make sure that it contains email address in case you want to conform to the SAML2 specification.
 
 
 
@@ -646,7 +646,7 @@ To set the default name ID format, proceed as follows:
 6.  Select the default name ID format from the following:
 
     -   Unspecified
-    -   E-Mail
+    -   Email
 
 7.  Save your selection.
 

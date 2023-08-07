@@ -4,7 +4,7 @@
 
 This document provides information about the second factor for authentication or how to log on if you are asked to provide a second factor to your primary credentials.
 
-Based on the configurations for the application, you can be asked to provide a time-based, one time \(TOTP\) passcode, generated on a mobile device, a one-time \(OTP\) passcode sent to your e-mail, a passcode sent via SMS, or a PIN security key. You can choose one of the enabled second factor authentication methods or press the button to enable a new method.
+Based on the configurations for the application, you can be asked to provide a time-based, one time \(TOTP\) passcode, generated on a mobile device, a one-time \(OTP\) passcode sent to your email, a passcode sent via SMS, or a PIN security key. You can choose one of the enabled second factor authentication methods or press the button to enable a new method.
 
 You can also choose to enhance your security with a second factor, although the application may not explicitly require it. This choice is available only if the system administrator has allowed it for your profile. If enabled, you see the following option on the profile page:
 
@@ -48,13 +48,13 @@ If you don't have a device activated for web authentication, see [Add a Device f
 
 <a name="loio0d41cd49f6504f3eaf29b58d616b040f__section_bqm_2tn_mtb"/>
 
-## Authenticate with E-Mail Two-Factor Authentication
+## Authenticate with Email Two-Factor Authentication
 
-To log on when the application requires e-mail-twofactor authentication, first you provide your primary credentials, choose the method, or enable it, then you provide the 8-digit code sent to your e-mail. The code is valid for 10 minutes.
+To log on when the application requires email-twofactor authentication, first you provide your primary credentials, choose the method, or enable it, then you provide the 8-digit code sent to your email. The code is valid for 10 minutes.
 
 If the code has expired you can require a new one. You must wait for 3 minutes from the last request before you request a new code.
 
-If you provide five wrong codes in row, the e-mail two-factor authentication will be temporarily locked because of too many failed logon attempts. It will be automatically unlocked in 60 minutes. If the application allows other two-favtor authentication methods, you can use them.
+If you provide five wrong codes in row, the email two-factor authentication will be temporarily locked because of too many failed logon attempts. It will be automatically unlocked in 60 minutes. If the application allows other two-favtor authentication methods, you can use them.
 
-If your e-mail is not verified, the system won't send you a code, and you must contact the application's adminsitrator for assistance.
+If your email is not verified, the system won't send you a code, and you must contact the application's adminsitrator for assistance.
 

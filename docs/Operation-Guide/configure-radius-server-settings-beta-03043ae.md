@@ -41,7 +41,7 @@ You can configure more than one RADIUS server in the administration console for 
 
     At the top of the page, you can view the administrative and license relevant information of the tenant.
 
-3.  Choose the *RADIUS Server Configuration* list item.
+3.  Under *External Services*, choose the *RADIUS Server Configuration* list item.
 
 4.  Add a server.
 
@@ -67,14 +67,14 @@ You can configure more than one RADIUS server in the administration console for 
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Host*\*
 
 
     
     </td>
     <td valign="top">
-
+    
     Host address of the RADIUS server \(used for user authentication\).
 
 
@@ -83,14 +83,14 @@ You can configure more than one RADIUS server in the administration console for 
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Port*\*
 
 
     
     </td>
     <td valign="top">
-
+    
     The port number used by the RADIUS server for authentication requests.
 
 
@@ -99,14 +99,14 @@ You can configure more than one RADIUS server in the administration console for 
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Secret*\*
 
 
     
     </td>
     <td valign="top">
-
+    
     A shared secret is used to encrypt the user password. This shared secret also must be defined in the RADIUS server. Paste the secret defined in the RADIUS server into this field.
 
 
@@ -139,19 +139,19 @@ You can configure more than one RADIUS server in the administration console for 
     </tr>
     <tr>
     <td valign="top">
-
+    
     *User Attribute*\*
 
 
     
     </td>
     <td valign="top">
-
+    
     Unique attribute for the user. Configure the supported attribute which the RADIUS server is configured to use for authentication. Possible values are:
 
-    -   ***User ID***
-    -   ***E-Mail***
-    -   ***Login Name***
+    -   `User ID`
+    -   `Email`
+    -   `Login Name`
 
 
     
@@ -159,20 +159,20 @@ You can configure more than one RADIUS server in the administration console for 
     </tr>
     <tr>
     <td valign="top">
-
+    
     *PAP / CHAP*\*
 
 
     
     </td>
     <td valign="top">
-
+    
     Authentication method for the RADIUS server. Possible values are:
 
-    -   ***PAP***
-    -   ***CHAP***
+    -   `PAP`
+    -   `CHAP`
 
-    The default value is ***PAP***.
+    The default value is `PAP`.
 
 
     
@@ -211,7 +211,7 @@ Configure an application to require RADIUS PIN code as a second factor apart fro
 
 [Configure Links Section on Sign-In Screen](configure-links-section-on-sign-in-screen-060c032.md "You can configure links to appear on the sign-in screen of your applications.")
 
-[Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in sscreen of the Horizon theme with instructions for the user.")
+[Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in screen of the Horizon theme with instructions for the user.")
 
 [Configure X.509 Client Certificates for User Authentication](configure-x-509-client-certificates-for-user-authentication-52c7dcb.md "Tenant administrators can configure X.509 client certificates for user authentication as an alternative to authenticating with a user name and a password.")
 
@@ -229,7 +229,7 @@ Configure an application to require RADIUS PIN code as a second factor apart fro
 
 [Enable Users to Recover Password with PIN Code](enable-users-to-recover-password-with-pin-code-046a235.md "Users can choose to provide PIN code to reset their password.")
 
-[Configure Initial Password and E-Mail Link Validity](configure-initial-password-and-e-mail-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
+[Configure Initial Password and Email Link Validity](configure-initial-password-and-email-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
 
 [Configure Session Timeout](configure-session-timeout-5ca23e4.md "As a tenant administrator, you can configure when the session, created at the Identity Authentication tenant, expires.")
 
@@ -243,13 +243,13 @@ Configure an application to require RADIUS PIN code as a second factor apart fro
 
 [Configure Sinch Service in Administration Console](configure-sinch-service-in-administration-console-3fdc9e1.md "Configure Sinch Service to enable Phone Verification via SMS or SMS Two-Factor Authentication in the administration console.")
 
-[Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the e-mails sent to the end users in the different application processes.")
+[Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the emails sent to the end users in the different application processes.")
 
 [Configure IdP-Initiated SSO](configure-idp-initiated-sso-5d59caa.md)
 
-[Send Security Alert E-Mails](send-security-alert-e-mails-c977464.md "Send security alert e-mails to end-users or administrators when changes in their accounts are made.")
+[Send Security Alert Emails](send-security-alert-emails-c977464.md "Send security alert emails to end-users or administrators when changes in their accounts are made.")
 
-[Send System Notifications via E-Mails](send-system-notifications-via-e-mails-aa04a8b.md "You can configure the administration console to send e-mails with information about expiring certificates, system notifications and new administrators to specific e-mail addresses or to the e-mails of all administrators.")
+[Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 

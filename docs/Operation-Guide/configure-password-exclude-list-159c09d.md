@@ -47,14 +47,14 @@ You can enter up to 1000 passwords in the list. Each password can be up to 256 c
     </tr>
     <tr>
     <td valign="top">
-
+    
     *First Name*
 
 
     
     </td>
     <td valign="top">
-
+    
     The password must not include the user's first name.
 
 
@@ -63,14 +63,14 @@ You can enter up to 1000 passwords in the list. Each password can be up to 256 c
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Last Name*
 
 
     
     </td>
     <td valign="top">
-
+    
     The password must not include the user's last name.
 
 
@@ -79,14 +79,14 @@ You can enter up to 1000 passwords in the list. Each password can be up to 256 c
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Login Name*
 
 
     
     </td>
     <td valign="top">
-
+    
     The password must not include the user's login name.
 
 

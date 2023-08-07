@@ -61,14 +61,14 @@ To configure a source system, follow the steps below:
         </tr>
         <tr>
         <td valign="top">
-
+        
         *Display Name*
 
 
         
         </td>
         <td valign="top">
-
+        
         \(optional\) The name of the configuration.
 
 
@@ -77,14 +77,14 @@ To configure a source system, follow the steps below:
         </tr>
         <tr>
         <td valign="top">
-
+        
         *Type*
 
 
         
         </td>
         <td valign="top">
-
+        
         Select the *Learning Management System* type.
 
 
@@ -116,14 +116,14 @@ To configure a source system, follow the steps below:
         </tr>
         <tr>
         <td valign="top">
-
+        
         *System ID*
 
 
         
         </td>
         <td valign="top">
-
+        
         The ID of the source system.
 
 
@@ -132,14 +132,14 @@ To configure a source system, follow the steps below:
         </tr>
         <tr>
         <td valign="top">
-
+        
         *Password Validation URL*
 
 
         
         </td>
         <td valign="top">
-
+        
         The URL endpoint for validation of the users name and password. It is automatically generated and has the following pattern: `https://<lms-system-id>.plateau.com/learning/rest/integrated/admin/Learner.svc/ias/v1/~validateCredentials`
 
         The *Password Validation URL* can be provided also by the source system administrator. It must have the following pattern: `https://<lms-system-id>.plateau.com/learning/rest/integrated/admin/Learner.svc/ias/v1/~validateCredentials`
@@ -152,14 +152,14 @@ To configure a source system, follow the steps below:
         </tr>
         <tr>
         <td valign="top">
-
+        
         *Authentication Type*
 
 
         
         </td>
         <td valign="top">
-
+        
         Choose:
 
         -   *Basic* - provide *Technical User* and *Technical User Secret*:
@@ -191,14 +191,14 @@ To configure a source system, follow the steps below:
         </tr>
         <tr>
         <td valign="top">
-
+        
         *First Logon Behavior*
 
 
         
         </td>
         <td valign="top">
-
+        
         Choose:
 
         -   if a user whose password does not meet the password policy requirements of the application must reset or change it after the first successful logon.

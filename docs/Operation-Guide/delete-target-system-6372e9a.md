@@ -19,7 +19,7 @@ You are assigned the *Manage Users* role. For more information about how to assi
 
 [Provision Users to Target Systems](provision-users-to-target-systems-af6f78b.md "Tenant administrators can provision users of Identity Authentication to SAP Jam and Identity Provisioning target systems target system.")
 
- <a name="task_zcl_xlq_3v"/>
+<a name="task_zcl_xlq_3v"/>
 
 <!-- task\_zcl\_xlq\_3v -->
 
@@ -50,7 +50,7 @@ You are assigned the *Manage Users* role. For more information about how to assi
     Once the target system or systems have been deleted, the system displays the message ***<number\> target systems deleted***.
 
 
- <a name="task_atv_xlq_3v"/>
+<a name="task_atv_xlq_3v"/>
 
 <!-- task\_atv\_xlq\_3v -->
 

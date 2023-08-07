@@ -1131,6 +1131,22 @@ Identity Directory Service API \(Successor\)
 <tr>
 <td valign="top">
 
+`targetUrl`
+
+
+
+</td>
+<td valign="top">
+
+`urn:ietf:params:scim:schemas:extension:sap:2.0:User.targetUrl`
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `emailTemplateSetId`
 
 
@@ -1544,7 +1560,7 @@ Identity Directory Service API \(Successor\)
 </td>
 <td valign="top">
 
-` `
+``
 
 
 
@@ -1553,7 +1569,7 @@ Identity Directory Service API \(Successor\)
 <tr>
 <td valign="top">
 
-` `
+``
 
 
 

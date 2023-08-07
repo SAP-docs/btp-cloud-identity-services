@@ -27,23 +27,23 @@ You can only add users to the groups via the import groups option, you don't rem
 > The CSV file must contain the `groups` column and a column with at least one of the following identifiers:
 > 
 > -   *Global User ID*
-> -   *E-Mail* - `emails[0].value`
+> -   *Email* - `emails[0].value`
 > 
 >     > ### Note:  
->     > -   If the `emails[0].value` is not unique, and there are more than one users with one and the same e-mail, all the users with that e-mail in the CSV will be assigned to the group.
->     > -   If the `emails[0].value` is not unique, and there are more than one users with one and the same e-mail, you can distinguish the users by the `userName` or `userUuid` attribute. If you use the `userUuid` attribute, make sure that the user that you want to assign the group has it.
+>     > -   If the `emails[0].value` is not unique, and there are more than one users with one and the same email, all the users with that email in the CSV will be assigned to the group.
+>     > -   If the `emails[0].value` is not unique, and there are more than one users with one and the same email, you can distinguish the users by the `userName` or `userUuid` attribute. If you use the `userUuid` attribute, make sure that the user that you want to assign the group has it.
 > 
 > -   *User Name*
 > 
 > If the file contains more than one identifier then the priority will be:
 > 
 > 1.  Global User ID
-> 2.  E-Mail
+> 2.  Email
 > 3.  User Name
 > 
-> If the file contains e-mail and user uame, a combination of both will be used as identifier. Thus the user will be matched with the e-mail and user name at the same time.
+> If the file contains email and user uame, a combination of both will be used as identifier. Thus the user will be matched with the email and user name at the same time.
 > 
-> If the CSV file contains one and the same e-mail identifier, then the group will be assigned to all users that has this e-mail.
+> If the CSV file contains one and the same email identifier, then the group will be assigned to all users that has this email.
 
 > ### Note:  
 > The user import doesn't assign any special rights or roles to the users for the specific application.
@@ -93,7 +93,7 @@ To import groups via CSV file into Identity Authentication, proceed as follows:
 
 [List and Edit User Groups](list-and-edit-user-groups-5e8a55c.md "As a tenant administrator, you can list and edit information about the user groups in a tenant in the administration console for SAP Cloud Identity Services.")
 
-[List Users in User Groups](list-users-in-user-groups-4ac340a.md "As a tenant administrator, you can list and view information about the users in a user group in a tenant in the administration console for SAP Cloud Identity Services.")
+[List and Search Users in User Groups](list-and-search-users-in-user-groups-4ac340a.md "As a tenant administrator, you can list and view information about the users in a user group in a tenant in the administration console for SAP Cloud Identity Services.")
 
 [Add Users to a Group](add-users-to-a-group-d2e1a01.md "As a tenant administrator, you can add one or more users created for a specific tenant to a group via the administration console for SAP Cloud Identity Services.")
 

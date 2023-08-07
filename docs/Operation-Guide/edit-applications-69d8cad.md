@@ -24,7 +24,7 @@ The *Home URL* field is optional. Users are redirected to the *Home URL* after a
 > From a usability perspective we recommend you to use URL of a protected page.
 
 > ### Remember:  
-> *Home URL* is necessary when you import new users in Identity Authentication. Identity Authentication needs to send activation e-mails to the new users and the home URL has to be mentioned in the e-mails. To access the application, the users have to activate their accounts. For more information see [Import or Update Users for a Specific Application](import-or-update-users-for-a-specific-application-33838e0.md).
+> *Home URL* is necessary when you import new users in Identity Authentication. Identity Authentication needs to send activation emails to the new users and the home URL has to be mentioned in the emails. To access the application, the users have to activate their accounts. For more information see [Import or Update Users for a Specific Application](import-or-update-users-for-a-specific-application-33838e0.md).
 
 The *Application Type* is optional. You can update the *Application Type* with one of the following:
 
@@ -525,14 +525,14 @@ To edit the application configurations, proceed as follows:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Display Name*
 
 
     
     </td>
     <td valign="top">
-
+    
     Required
 
 
@@ -541,14 +541,14 @@ To edit the application configurations, proceed as follows:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Home URL*
 
 
     
     </td>
     <td valign="top">
-
+    
     Optional
 
 
@@ -557,14 +557,14 @@ To edit the application configurations, proceed as follows:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Type*
 
 
     
     </td>
     <td valign="top">
-
+    
     Optional
 
 
@@ -573,14 +573,14 @@ To edit the application configurations, proceed as follows:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Parent Application*
 
 
     
     </td>
     <td valign="top">
-
+    
     Optional.
 
     Existing applications that have a parent application assigned to them will inherit only the configurations that have not been changed, including the configurations that are made at the creation of the application. The configurations that are changed, and the configurations made at the creation of the application are not inherited. See the list below for the configurations made at the creation of the application:
@@ -592,7 +592,7 @@ To edit the application configurations, proceed as follows:
     -   Client Authentication
     -   Dependencies
     -   Risk-Based Authentication
-    -   E-Mail Verification
+    -   Email Verification
     -   Password Policy
     -   Terms Of Use
     -   Privacy Policy

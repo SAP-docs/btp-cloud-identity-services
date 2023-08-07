@@ -6,11 +6,13 @@
 
 This page lists the release notes of SAP Cloud Identity Services - Identity Authentication for 2023. To see the release notes for the previous year, visit [2022 What's New for Identity Authentication \(Archive\)](2022-what-s-new-for-identity-authentication-archive-3322427.md). 
 
+To get notifications, subscribe for the Identity Authentication selection in the [What's New Viewer for SAP Business Technology Platform](https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=Identity%2520Authentication&locale=en-US&version=Cloud). For more information, see [Subscribing to What's New Notifications](https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=Identity%20Authentication&locale=en-US&version=Cloud).
 
 
 
 
-** **
+
+****
 
 
 <table>
@@ -103,7 +105,2297 @@ Available as of
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-08-03
+
+
+
+</td>
+<td valign="top">
+
+2023-08-02
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Simplified Configuration of Default Attributes and Assertion Attributes
+
+
+
+</td>
+<td valign="top">
+
+In the configuration of applications, we have combined the *Default Attributes* and *Assertion Attributes* into a single screen named *Application Attributes*. This change gives administrators a complete overview of the user attributes configured for an application.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+Changed
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-08-03
+
+
+
+</td>
+<td valign="top">
+
+2023-08-17
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Terms of Use Documents
+
+
+
+</td>
+<td valign="top">
+
+Tenant administrator can delete na entire terms of use documents set. See [\(Optional\) Delete a Terms of Use Document](Operation-Guide/optional-delete-a-terms-of-use-document-6ad5df5.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-08-03
+
+
+
+</td>
+<td valign="top">
+
+2023-08-02
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Privacy Policy Documents
+
+
+
+</td>
+<td valign="top">
+
+Tenant administrator can delete an entire privacy policy documents set. See [\(Optional\) Delete a Privacy Policy Document](Operation-Guide/optional-delete-a-privacy-policy-document-4b66ac1.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-08-03
+
+
+
+</td>
+<td valign="top">
+
+2023-08-02
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Support for Prompt Parameter
+
+
+
+</td>
+<td valign="top">
+
+The `prompt` parameter is an optional parameter of an OAuth 2.0 Authorization Request in the OpenID Connect Core 1.0 specification. The service supports the *none* and *login* values for this parameter.
+
+See [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow](https://help.sap.com/docs/IDENTITY_AUTHENTICATION/6d6d63354d1242d185ab4830fc04feb1/94ff0b4b0baa45a893c7cd24254b72b7.html).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-08-03
+
+
+
+</td>
+<td valign="top">
+
+2023-08-02
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Off-Cycle Upgrade
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-07-28
+
+
+
+</td>
+<td valign="top">
+
+2023-07-28
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-07-19
+
+
+
+</td>
+<td valign="top">
+
+2023-07-19
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Removal of Applications of Type Reuse
+
+
+
+</td>
+<td valign="top">
+
+Applications of type reuse instance aren't visible in the administration console anymore. Changes to these applications didn't have any effect.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+Deleted
+
+
+
+</td>
+<td valign="top">
+
+Changed
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-07-19
+
+
+
+</td>
+<td valign="top">
+
+2023-07-19
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+OpenID Connect
+
+
+
+</td>
+<td valign="top">
+
+Tenant administratorcan configure Identity Authentication to execute the authorization code flow enhanced with PKCE against the corporate identity provider. See [Configure Trust with OpenID Connect Corporate Identity Provider](Operation-Guide/configure-trust-with-openid-connect-corporate-identity-provider-8ff83a1.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-07-19
+
+
+
+</td>
+<td valign="top">
+
+2023-07-19
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+OpenID Connect
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication аdded the `apt_id` to the list of the supported parameters. It is required for multitenant scenarios to identify corresponding Identity Authentication application. See [Call Identity Authentication End Session Endpoint](Operation-Guide/call-identity-authentication-end-session-endpoint-ec674f4.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-07-19
+
+
+
+</td>
+<td valign="top">
+
+2023-07-19
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Management
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication added the `SCIM ID` to the list of the supported attributes for the export users option. See [Export Existing Users of a Tenant of Identity Authentication](Operation-Guide/export-existing-users-of-a-tenant-of-identity-authentication-40c29d2.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-07-19
+
+
+
+</td>
+<td valign="top">
+
+2023-07-19
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-07-12
+
+
+
+</td>
+<td valign="top">
+
+2023-07-05
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Nofifications
+
+
+
+</td>
+<td valign="top">
+
+As of the Jul 5, 2023 upgrade, the first administrator in every new tenant, created after that date, and all newly created administrators are automatically subscribed for system notifications. See [Send System Notifications via Emails](Operation-Guide/send-system-notifications-via-emails-aa04a8b.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-07-12
+
+
+
+</td>
+<td valign="top">
+
+2023-07-05
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+REST API
+
+
+
+</td>
+<td valign="top">
+
+User Management REST API now supports the `applicationId` parameter. The user is created for the application with the specified ID. See [User Registration](Development/user-registration-0aa433c.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-07-12
+
+
+
+</td>
+<td valign="top">
+
+2023-07-05
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Groups
+
+
+
+</td>
+<td valign="top">
+
+Tenant administrator can search for specific member in a group via SCIM ID. See [List and Search Users in User Groups](Operation-Guide/list-and-search-users-in-user-groups-4ac340a.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-07-12
+
+
+
+</td>
+<td valign="top">
+
+2023-07-05
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Authentication
+
+
+
+</td>
+<td valign="top">
+
+Support unauthenticated requests with public tokens. See [Call Identity Authentication Introspect Token Endpoint](Operation-Guide/call-identity-authentication-introspect-token-endpoint-a05f14c.md), [Call Identity Authentication Revoke Token Endpoint](Operation-Guide/call-identity-authentication-revoke-token-endpoint-3501e42.md), and [Call Identity Authentication List Sessions Endpoint](Operation-Guide/call-identity-authentication-list-sessions-endpoint-daf7e44.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-07-12
+
+
+
+</td>
+<td valign="top">
+
+2023-07-05
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Off-Cycle Upgrade
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-06-29
+
+
+
+</td>
+<td valign="top">
+
+2023-06-28
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Corporate IdPs
+
+
+
+</td>
+<td valign="top">
+
+Tenant administrator can copy the settings from a corporate IdP that is already existing in the tenant to a new corporate IdP. See [Create Corporate IdP in Administration Console](Operation-Guide/create-corporate-idp-in-administration-console-ae99ba9.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-06-29
+
+
+
+</td>
+<td valign="top">
+
+2023-06-28
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-06-09
+
+
+
+</td>
+<td valign="top">
+
+2023-06-08
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Corporate IdP
+
+
+
+</td>
+<td valign="top">
+
+Tenant administrator can set the interval for the automatic refresh of the OpenID Connect metadata of the corporate identity provider. See [Configure Trust with OpenID Connect Corporate Identity Provider](Operation-Guide/configure-trust-with-openid-connect-corporate-identity-provider-8ff83a1.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-06-09
+
+
+
+</td>
+<td valign="top">
+
+2023-06-08
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+OpenID Connect Configurations
+
+
+
+</td>
+<td valign="top">
+
+Tenant administrator can set the maximum wait time for front-channel logout. See [Tenant OpenID Connect Configurations](Operation-Guide/tenant-openid-connect-configurations-3d6abcc.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-06-09
+
+
+
+</td>
+<td valign="top">
+
+2023-06-08
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-05-25
+
+
+
+</td>
+<td valign="top">
+
+2023-05-25
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Corporate IdPs
+
+
+
+</td>
+<td valign="top">
+
+You can change the default attributes sent to the application to uppercase or lowercase letters depending on your needs. See [Configure the Default Attributes Sent to the Application](Operation-Guide/configure-the-default-attributes-sent-to-the-application-a2f1e46.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-05-25
+
+
+
+</td>
+<td valign="top">
+
+2023-05-25
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-05-17
+
+
+
+</td>
+<td valign="top">
+
+2023-05-17
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-05-11
+
+
+
+</td>
+<td valign="top">
+
+2023-05-11
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+OpenID Connect
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication now supports new optional parameter `logout_uri` in the `/oauth2/authorize` endpoint. See [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md), [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow with PKCE](Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-a721157.md), and [Configure the Client to Call Identity Authentication Authorize Endpoint for Implicit Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-implicit-flow-1ca3dc0.md).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-05-11
+
+
+
+</td>
+<td valign="top">
+
+2023-05-11
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
 
 
 
@@ -191,7 +2483,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -214,7 +2506,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -279,7 +2571,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -302,7 +2594,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -367,7 +2659,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -394,7 +2686,7 @@ We improved security recommendation [BTP-IAS-0017](https://help.sap.com/docs/btp
 
 In addition, we reviewed and improved the readability of the other recommendations for the service to make clear when the recommendations apply.
 
-See [SAP BTP Security Recommendations for Identity Authentication](https://help.sap.com/docs/btp/sap-btp-security-recommendations-c8a9bb59fe624f0981efa0eff2497d7d/sap-btp-security-recommendations?seclist-service=Identity%20Authentication).
+See [SAP Security Recommendations for Identity Authentication](https://help.sap.com/docs/btp/sap-btp-security-recommendations-c8a9bb59fe624f0981efa0eff2497d7d/sap-btp-security-recommendations).
 
 
 
@@ -459,7 +2751,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -549,7 +2841,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -639,7 +2931,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -727,7 +3019,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -815,7 +3107,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -838,7 +3130,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -903,7 +3195,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -991,7 +3283,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -1079,7 +3371,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -1167,7 +3459,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -1255,7 +3547,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -1343,7 +3635,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -1366,7 +3658,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -1431,7 +3723,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -1519,7 +3811,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -1607,7 +3899,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -1695,7 +3987,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -1718,7 +4010,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -1783,7 +4075,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -1806,7 +4098,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -1871,7 +4163,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -1959,7 +4251,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2047,7 +4339,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2135,7 +4427,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2158,7 +4450,7 @@ OpenID Connect
 </td>
 <td valign="top">
 
- Identity Authentication now supports the `groups` value of the `scope` parameter. See [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md) and [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow with PKCE](Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-a721157.md).
+Identity Authentication now supports the `groups` value of the `scope` parameter. See [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md) and [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow with PKCE](Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-a721157.md).
 
 
 
@@ -2223,7 +4515,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2246,7 +4538,7 @@ OpenID Connect
 </td>
 <td valign="top">
 
- Identity Authentication now supports new parameter - `scope` for the service endpoint that returns the tokens issued by the corporate identity provider received during the OpenID Connect \(OIDC\) authentication process. See [Exchanging Identity Authentication Tokens for Tokens from Corporate Identity Providers](Development/exchanging-identity-authentication-tokens-for-tokens-from-corporate-identity-providers-a66753a.md).
+Identity Authentication now supports new parameter - `scope` for the service endpoint that returns the tokens issued by the corporate identity provider received during the OpenID Connect \(OIDC\) authentication process. See [Exchanging Identity Authentication Tokens for Tokens from Corporate Identity Providers](Development/exchanging-identity-authentication-tokens-for-tokens-from-corporate-identity-providers-a66753a.md).
 
 
 
@@ -2311,7 +4603,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2399,7 +4691,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2493,7 +4785,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2516,7 +4808,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -2581,7 +4873,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2604,7 +4896,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -2669,7 +4961,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2692,7 +4984,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -2757,7 +5049,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2780,7 +5072,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -2845,7 +5137,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2933,7 +5225,7 @@ Not applicable
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -2956,7 +5248,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -3021,7 +5313,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -3109,7 +5401,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -3132,7 +5424,7 @@ System Upgrade
 </td>
 <td valign="top">
 
- Identity Authentication has been upgraded.
+Identity Authentication has been upgraded.
 
 
 
@@ -3197,7 +5489,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -3220,7 +5512,7 @@ Regional Availability
 </td>
 <td valign="top">
 
- Identity Authentication is now available with a single data center \(DC\) for the AWS infrastructure in India. See [Regional Availability](regional-availability-be600ca.md).
+Identity Authentication is now available with a single data center \(DC\) for the AWS infrastructure in India. See [Regional Availability](regional-availability-be600ca.md).
 
 
 
@@ -3285,7 +5577,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -3373,7 +5665,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -3461,7 +5753,7 @@ Identity Authentication
 <tr>
 <td valign="top">
 
- Identity Authentication 
+Identity Authentication 
 
 
 
@@ -3484,7 +5776,7 @@ User Management
 </td>
 <td valign="top">
 
- Identity Authentication renamed user identifier `User UUID` to `Global User ID` in the administration console. The technical name of the attribute remains unchanged `userUuid`.
+Identity Authentication renamed user identifier `User UUID` to `Global User ID` in the administration console. The technical name of the attribute remains unchanged `userUuid`.
 
 
 
@@ -3556,6 +5848,6 @@ Identity Authentication
 
 -   [2022](2022-what-s-new-for-identity-authentication-archive-3322427.md)
 
--    [2021](2021-what-s-new-for-identity-authentication-archive-2df26f0.md)
+-   [2021](2021-what-s-new-for-identity-authentication-archive-2df26f0.md)
 
 

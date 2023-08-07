@@ -23,14 +23,14 @@ The list of the attributes includes:
 -   `First Name`
 -   `Middle Name`
 -   `Last Name`
--   `E-mail`
--   `Password`
 
     > ### Note:  
-    > The `Last Name` and `Password` attributes are always required for user registration or upgrade, so they are not configurable.
+    > The `Last Name` attribute is always required for user registration or upgrade, so it is not configurable.
+
+-   `Email`
 
     > ### Remember:  
-    > The `E-mail` attribute is required for user registration or upgrade, and as so not configurable, if marked as required on tenant level. If `E-mail` is marked as not-required on tenant level, it becomes configurable, and must also be changed here.
+    > The `Email` attribute is required for user registration or upgrade, and as so not configurable, if marked as required on tenant level. If `Email` is marked as not-required on tenant level, it becomes configurable, and must also be changed here.
 
 -   `Phone`
 
@@ -77,21 +77,21 @@ The list of the attributes includes:
 
 *CONTACT PREFERENCES*
 
--   `By E-mail`
+-   `By Email`
 -   `By Telephone`
 
 > ### Note:  
-> The *CONTACT PREFERENCES* attributes define if the self-registration form contains a section *Contact Preferences*. This section asks the user if he or she would like to be contacted by e-mail or phone, or both.
+> The *CONTACT PREFERENCES* attributes define if the self-registration form contains a section *Contact Preferences*. This section asks the user if he or she would like to be contacted by email or phone, or both.
 > 
-> The presence of this section depends also on the `Country` attribute. The legislation in some countries requires the user to explicitly agree that he or she would like to be contacted by e-mail or phone, or both.
+> The presence of this section depends also on the `Country` attribute. The legislation in some countries requires the user to explicitly agree that he or she would like to be contacted by email or phone, or both.
 > 
 > Based on the specific configuration, the following options are possible:
 > 
 > -   If one or both *CONTACT PREFERENCES* parameters are enabled, and both `Country` parameters are disabled the *Contact Preferences* section will appear in the registration form.
-> -   If one or both `Country` parameters and one or both *CONTACT PREFERENCES* parameters are enabled, the *Contact Preferences* section will appear in the registration form if the user types at least one country which requires the user to explicitly agree that he or she would like to be contacted by e-mail or phone, or both.
+> -   If one or both `Country` parameters and one or both *CONTACT PREFERENCES* parameters are enabled, the *Contact Preferences* section will appear in the registration form if the user types at least one country which requires the user to explicitly agree that he or she would like to be contacted by email or phone, or both.
 > -   If both *CONTACT PREFERENCES* parameters are disabled, the "Contact Preferences" section will not appear in the registration form.
 > 
-> For the full set of the countries that do not require the user to explicitly agree that he or she would like to be contacted by e-mail or phone copy the respective URL listed below, replace `<tenant ID>` with your *Tenant ID*, and open the edited URL in a Web browser.
+> For the full set of the countries that do not require the user to explicitly agree that he or she would like to be contacted by email or phone copy the respective URL listed below, replace `<tenant ID>` with your *Tenant ID*, and open the edited URL in a Web browser.
 > 
 > 
 > <table>
@@ -114,14 +114,14 @@ The list of the attributes includes:
 > <tr>
 > <td valign="top">
 > 
-> By E-Mail
+> By Email
 > 
 > 
 > 
 > </td>
 > <td valign="top">
 > 
->  **`https://<tenant ID>.accounts.ondemand.com/md/implicitOptInEmailCountryKeys`** 
+> **`https://<tenant ID>.accounts.ondemand.com/md/implicitOptInEmailCountryKeys`** 
 > 
 > 
 > 
@@ -137,7 +137,7 @@ The list of the attributes includes:
 > </td>
 > <td valign="top">
 > 
->  **`https://<tenant ID>.accounts.ondemand.com/md/implicitOptInTelefonCountryKeys`** 
+> **`https://<tenant ID>.accounts.ondemand.com/md/implicitOptInTelefonCountryKeys`** 
 > 
 > 
 > 

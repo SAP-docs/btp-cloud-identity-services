@@ -164,7 +164,7 @@ String
 </td>
 <td valign="top">
 
-When the user activates his or her e-mail, the `status` is set to **active**. To deactivate the SP user, update the `status` parameter by setting it to **inactive**. To activate the SP user, set it to **active**.
+When the user activates his or her email, the `status` is set to **active**. To deactivate the SP user, update the `status` parameter by setting it to **inactive**. To activate the SP user, set it to **active**.
 
 
 
@@ -252,7 +252,7 @@ SP user is successfully deactivated
 </tr>
 </table>
 
-For more information about the general error codes that may be returned, see [General Error Codes](general-error-codes-182352d.md).
+For more information about the general error codes that may be returned, see [Error and Success Codes](error-and-success-codes-7f87a75.md).
 
 > ### Note:  
 > If a user logs into an application he or she is deactivated for, the identity provider will block the logon and notify the application.
@@ -280,7 +280,7 @@ For more information about the general error codes that may be returned, see [Ge
 </Response>
 ```
 
- 
+
 
 **Related Information**  
 

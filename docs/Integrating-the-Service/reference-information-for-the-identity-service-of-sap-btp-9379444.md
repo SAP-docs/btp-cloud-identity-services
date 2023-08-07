@@ -636,7 +636,7 @@ For information about how the Identity Authentication service supports code flow
 
 To validate tokens, we provide a client libraries to support the authentication of tokens.
 
--   For Java, see [ SAP BTP Java Security Client Library](https://github.com/SAP/cloud-security-xsuaa-integration/tree/master/java-security) on *GitHub*. The Java library supports authentication of tokens from version 2.8.0.
+-   For Java, see [SAP BTP Java Security Client Library](https://github.com/SAP/cloud-security-xsuaa-integration/tree/master/java-security) on *GitHub*. The Java library supports authentication of tokens from version 2.8.0.
 
 -   For node.js, see [@sap/xssec: XS Advanced Container Security API for node.js](https://www.npmjs.com/package/@sap/xssec) on *npm*.
 

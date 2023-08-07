@@ -27,7 +27,7 @@ Definition
 <tr>
 <td valign="top">
 
- **Blocking** 
+**Blocking** 
 
 
 
@@ -43,7 +43,7 @@ A method of restricting access to data for which the primary business purpose ha
 <tr>
 <td valign="top">
 
- **Business purpose** 
+**Business purpose** 
 
 
 
@@ -59,7 +59,7 @@ A legal, contractual, or in other form justified reason for the processing of pe
 <tr>
 <td valign="top">
 
- **Consent** 
+**Consent** 
 
 
 
@@ -75,7 +75,7 @@ The action of the data subject confirming that the usage of his or her personal 
 <tr>
 <td valign="top">
 
- **Deletion** 
+**Deletion** 
 
 
 
@@ -91,7 +91,7 @@ Deletion of **personal data** so that the data is no longer available.
 <tr>
 <td valign="top">
 
- **End of business** 
+**End of business** 
 
 
 
@@ -107,7 +107,7 @@ Date where the business with a data subject ends, for example the order is compl
 <tr>
 <td valign="top">
 
- **End of purpose \(EoP\)** 
+**End of purpose \(EoP\)** 
 
 
 
@@ -123,7 +123,7 @@ End of purpose and start of blocking period. The point in time, when the primary
 <tr>
 <td valign="top">
 
- **End of purpose \(EoP\) check** 
+**End of purpose \(EoP\) check** 
 
 
 
@@ -139,7 +139,7 @@ A method of identifying the point in time for a data set when the processing of 
 <tr>
 <td valign="top">
 
- **Personal data** 
+**Personal data** 
 
 
 
@@ -171,7 +171,7 @@ The information that specifies the reason and the goal for the processing of a s
 <tr>
 <td valign="top">
 
- **Residence period** 
+**Residence period** 
 
 
 
@@ -187,7 +187,7 @@ The period of time between the end of business and the end of purpose \(EoP\) fo
 <tr>
 <td valign="top">
 
- **Retention period** 
+**Retention period** 
 
 
 
@@ -203,7 +203,7 @@ The period of time between the end of the last business activity involving a spe
 <tr>
 <td valign="top">
 
- **Sensitive personal data** 
+**Sensitive personal data** 
 
 
 
@@ -224,7 +224,7 @@ A category of personal data that usually includes the following type of informat
 <tr>
 <td valign="top">
 
- **Where-used check \(WUC\)** 
+**Where-used check \(WUC\)** 
 
 
 

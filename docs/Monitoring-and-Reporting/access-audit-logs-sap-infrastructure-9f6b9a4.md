@@ -19,7 +19,7 @@ The audit log entries for tenants on the SAP infrastructure are retained for 201
 
 To access the audit logs, follow the procedures below:
 
- <a name="task_yvb_pk1_rdb"/>
+<a name="task_yvb_pk1_rdb"/>
 
 <!-- task\_yvb\_pk1\_rdb -->
 
@@ -62,7 +62,7 @@ The generated Client ID can be seen under *Generate Client Credentials for Audit
 > ### Tip:  
 > To delete the client credentials, choose the ![](../Operation-Guide/images/delete_icon_4801c38.png) icon next to the generated Client ID. This deletes the Client ID and Client Secret from the system.
 
- <a name="task_h2l_qk1_rdb"/>
+<a name="task_h2l_qk1_rdb"/>
 
 <!-- task\_h2l\_qk1\_rdb -->
 
@@ -275,7 +275,7 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > 
 > For more information, see [Regional Availability](../regional-availability-be600ca.md) and [Regions and Hosts Available for the Neo Environment](https://help.sap.com/viewer/ea72206b834e4ace9cd834feed6c0e09/Cloud/en-US/d722f7cea9ec408b85db4c3dcba07b52.html).
 
- <a name="task_pxw_5k1_rdb"/>
+<a name="task_pxw_5k1_rdb"/>
 
 <!-- task\_pxw\_5k1\_rdb -->
 
@@ -297,13 +297,13 @@ You can filter the audit logs by time and/or categories. The categories that you
 > ### Remember:  
 > The URI for the GET request looks like this:
 > 
->  <code>https://api.&lt;SAP BTP Host&gt;/auditlog/v1/accounts/&lt;Tenant ID&gt;/AuditLogRecordsIds?$filter=(Time ge '2018-05-17T13.00.00' and Time le '2018-05-18T05.00.00') and Category eq '&lt;category&gt;'</code>
+> <code>https://api.&lt;SAP BTP Host&gt;/auditlog/v1/accounts/&lt;Tenant ID&gt;/AuditLogRecordsIds?$filter=(Time ge '2018-05-17T13.00.00' and Time le '2018-05-18T05.00.00') and Category eq '&lt;category&gt;'</code>
 > 
 > The timestamp is in Coordinated Universal Time \(UTC\).
 > 
 > Use that URI in the examples in [Audit Log Retrieval API Usage](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/e4d818da43af43e1983df8e9e5caadb2.html).
 > 
-> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*.
+> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the *tenant ID*.
 > 
 > 
 > <table>

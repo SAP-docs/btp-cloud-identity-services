@@ -16,7 +16,7 @@ You have enabled the *Use Identity Authentication user store* option. For more i
 
 ## Context
 
-In this scenario, the tenant administrator can define the claim from the token of the corporate identity provider which Identity Authentication should use as subject name identifier. The Subject Name Identifier configuration defines with which value the identity provider user will be searched in the Identity Authentication user store. The attribute used for the user search is `E-Mail`.
+In this scenario, the tenant administrator can define the claim from the token of the corporate identity provider which Identity Authentication should use as subject name identifier. The Subject Name Identifier configuration defines with which value the identity provider user will be searched in the Identity Authentication user store. The attribute used for the user search is `Email`.
 
 To define the claim which is used as subject name identifier, proceed as follows:
 
@@ -35,7 +35,7 @@ To define the claim which is used as subject name identifier, proceed as follows
 5.  Select the Subject Name Identifier from the following:
 
     -   *None* - Subject claim \(`sub`\) is used as subject name identifier. Corporate IdP decides which attribute to use.
-    -   *E-Mail* - E-Mail claim \(`email`\) is used as subject name identifier.
+    -   *Email* - Email claim \(`email`\) is used as subject name identifier.
 
 6.  Save your selection.
 

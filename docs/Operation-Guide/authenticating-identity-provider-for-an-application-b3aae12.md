@@ -25,7 +25,7 @@ You have the following options for an authenticating identity provider in the ad
 
 -   Corporate Identity Provider
 
-     Identity Authentication can act as a proxy to delegate authentication to the external corporate identity provider for both bundled and charged applications, and for system applications.
+    Identity Authentication can act as a proxy to delegate authentication to the external corporate identity provider for both bundled and charged applications, and for system applications.
 
     > ### Note:  
     > When Identity Authentication is set as proxy, and the service provider \(SP\) is configured to send a `login_hint` parameter, the `login_hint` coming from the SP will be sent to the corporate IdP in the authentication request.
@@ -33,7 +33,7 @@ You have the following options for an authenticating identity provider in the ad
     > The `login_hint` parameter helps the user when he or she is known to the service provider \(SP\). Thus it prevents the user from re-typing the user identifier on the logon or conditional screen.
 
     > ### Remember:  
-    > If you want to use a corporate identity provider for a system application, the `name ID` attribute sent in the assertion by that corporate identity provider must match the *E-Mail*, *Login Name* or *User ID* attribute of the user in the user store of Identity Authentication.
+    > If you want to use a corporate identity provider for a system application, the `name ID` attribute sent in the assertion by that corporate identity provider must match the *Email*, *Login Name* or *User ID* attribute of the user in the user store of Identity Authentication.
     > 
     > You should also configure the following options for that corporate provider in the administration console for SAP Cloud Identity Services:
     > 

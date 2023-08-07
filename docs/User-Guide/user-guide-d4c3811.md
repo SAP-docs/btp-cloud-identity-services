@@ -34,13 +34,13 @@ Users can use the following self-services:
 
     By clicking the *Register* button, the users acknowledges that he or she has read the organization’s privacy policy document.
 
-    Once the user has submitted the form, he or she receives an e-mail explaining how to activate the account. Successful activation of the user account completes the registration, thus allowing the user to log on to the application.
+    Once the user has submitted the form, he or she receives an email explaining how to activate the account. Successful activation of the user account completes the registration, thus allowing the user to log on to the application.
 
     > ### Note:  
-    > If the user hasn’t received the activation e-mail, he or she can do the following:
+    > If the user hasn’t received the activation email, he or she can do the following:
     > 
     > -   Check the *Deleted*, *Junk*, or other folders in his or her mail box.
-    > -   Follow the *Forgot Password* link in the logon page of the application. If the registration was successful, this will trigger the *Forgot Password* process, and the user will receive an e-mail with instructions how to reset the password.
+    > -   Follow the *Forgot Password* link in the logon page of the application. If the registration was successful, this will trigger the *Forgot Password* process, and the user will receive an email with instructions how to reset the password.
     > -   Choose the *Register Now* link, and fill in the registration form again.
     > -   Contact the system administrator of the application.
 

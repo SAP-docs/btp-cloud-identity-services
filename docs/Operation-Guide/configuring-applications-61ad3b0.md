@@ -4,7 +4,7 @@
 
 This section describes how you can configure the user authentication, access to an application, and use a branding style in accordance with your company requirements. It also explains the trust configuration between Identity Authentication and a service provider or client \(relying party\).
 
- <a name="reference_mwk_3qf_cy"/>
+<a name="reference_mwk_3qf_cy"/>
 
 <!-- reference\_mwk\_3qf\_cy -->
 
@@ -162,7 +162,7 @@ Specific for the application
 -   [Display Application Name on Logon Page](display-application-name-on-logon-page-c02798e.md)
 -   [Configure a Logo for an Application](configure-a-logo-for-an-application-778f748.md)
 -   [Configure a Branding Style for an Application](configure-a-branding-style-for-an-application-32f8d33.md)
--   [Define an E-Mail Template Set for an Application](define-an-e-mail-template-set-for-an-application-bb2c79b.md)
+-   [Define an Email Template Set for an Application](define-an-email-template-set-for-an-application-bb2c79b.md)
 -   [Configure Registration and Upgrade Forms](configure-registration-and-upgrade-forms-93a9e18.md)
 
 

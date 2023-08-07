@@ -60,14 +60,14 @@ The client ID is in the universally unique identifier \(UUID\) format. For examp
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Description**
 
 
     
     </td>
     <td valign="top">
-
+    
     This field is optional.
 
 
@@ -76,14 +76,14 @@ The client ID is in the universally unique identifier \(UUID\) format. For examp
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Expire in**
 
 
     
     </td>
     <td valign="top">
-
+    
     You can choose from three options:
 
     -   1 year
@@ -96,14 +96,14 @@ The client ID is in the universally unique identifier \(UUID\) format. For examp
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Scope**
 
 
     
     </td>
     <td valign="top">
-
+    
     -   Application - Secrets with *Application* scope are used to update the Application configurations.
     -   Application Users - select this option to generate a secret to authenticate when REST API calls \(Invitation REST API, User management REST API, Password Service Rest API, and Forgot Service REST API\) are used.
     -   OpenID - select this option to generate a secret to authenticate in the OpenID Connect scenario.

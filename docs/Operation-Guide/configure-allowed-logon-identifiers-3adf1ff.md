@@ -16,7 +16,7 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 
 ## Context
 
-Choose the allowed logon identifier for your users. Once set, the configuration is valid for all applications in the tenant. The options are *User ID*, *Login Name*, *E-Mail*, and *Phone*. *Display Name* is not configurable.
+Choose the allowed logon identifier for your users. Once set, the configuration is valid for all applications in the tenant. The options are *User ID*, *Login Name*, *Email*, and *Phone*. *Display Name* is not configurable.
 
 
 
@@ -79,7 +79,7 @@ Configuration
 <tr>
 <td valign="top">
 
-*E-Mail*
+*Email*
 
 
 
@@ -89,7 +89,7 @@ Configuration
 *On/Configurable*
 
 > ### Note:  
-> The e-mail user identifier must be selected unique if you use it for logon. For more information, see Next Steps.
+> The email user identifier must be selected unique if you use it for logon. For more information, see Next Steps.
 
 
 
@@ -147,7 +147,7 @@ Users can log on only with the enabled logon identifiers.
 > -   Kerberos Authentication
 
 > ### Tip:  
-> The texts on the logon screen are predefined. If you change the logon identifiers preference in the tenant, this will not automatically change the text in the logon page. For example if you enable only *E-Mail* as logon identifier, but your previous configuration included *User ID*, *Login Name*, and *E-Mail* the text on the logon screen will remain unchanged.
+> The texts on the logon screen are predefined. If you change the logon identifiers preference in the tenant, this will not automatically change the text in the logon page. For example if you enable only *Email* as logon identifier, but your previous configuration included *User ID*, *Login Name*, and *Email* the text on the logon screen will remain unchanged.
 > 
 > To change the text, you must update the predefined texts and messages for end-user screens available per tenant in the Identity Authentication. For more information, see [Change Tenant Texts REST API](../Development/change-tenant-texts-rest-api-66ad80a.md#loio66ad80a6bbaf4fc3911232f7cc9a7de6).
 > 
@@ -166,7 +166,7 @@ If you want to change the allowed logon identifiers for your tenant, follow the 
 
     At the top of the page, you can view the administrative and license relevant information of the tenant.
 
-3.  Choose the *Logon Alias* list item.
+3.  Under *Authentication*, choose the *Logon Alias* list item.
 
 4.  Enable or disable the options according to your needs.
 
@@ -208,7 +208,7 @@ Users can logon to the applications in the tenant only with the selected logon i
 
 [Configure Links Section on Sign-In Screen](configure-links-section-on-sign-in-screen-060c032.md "You can configure links to appear on the sign-in screen of your applications.")
 
-[Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in sscreen of the Horizon theme with instructions for the user.")
+[Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in screen of the Horizon theme with instructions for the user.")
 
 [Configure X.509 Client Certificates for User Authentication](configure-x-509-client-certificates-for-user-authentication-52c7dcb.md "Tenant administrators can configure X.509 client certificates for user authentication as an alternative to authenticating with a user name and a password.")
 
@@ -224,7 +224,7 @@ Users can logon to the applications in the tenant only with the selected logon i
 
 [Enable Users to Recover Password with PIN Code](enable-users-to-recover-password-with-pin-code-046a235.md "Users can choose to provide PIN code to reset their password.")
 
-[Configure Initial Password and E-Mail Link Validity](configure-initial-password-and-e-mail-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
+[Configure Initial Password and Email Link Validity](configure-initial-password-and-email-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
 
 [Configure Session Timeout](configure-session-timeout-5ca23e4.md "As a tenant administrator, you can configure when the session, created at the Identity Authentication tenant, expires.")
 
@@ -240,13 +240,13 @@ Users can logon to the applications in the tenant only with the selected logon i
 
 [Configure RADIUS Server Settings \(Beta\)](configure-radius-server-settings-beta-03043ae.md "Configure Remote Authentication Dial-In User Service (RADIUS) server settings in the administration console for SAP Cloud Identity Services.")
 
-[Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the e-mails sent to the end users in the different application processes.")
+[Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the emails sent to the end users in the different application processes.")
 
 [Configure IdP-Initiated SSO](configure-idp-initiated-sso-5d59caa.md)
 
-[Send Security Alert E-Mails](send-security-alert-e-mails-c977464.md "Send security alert e-mails to end-users or administrators when changes in their accounts are made.")
+[Send Security Alert Emails](send-security-alert-emails-c977464.md "Send security alert emails to end-users or administrators when changes in their accounts are made.")
 
-[Send System Notifications via E-Mails](send-system-notifications-via-e-mails-aa04a8b.md "You can configure the administration console to send e-mails with information about expiring certificates, system notifications and new administrators to specific e-mail addresses or to the e-mails of all administrators.")
+[Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 

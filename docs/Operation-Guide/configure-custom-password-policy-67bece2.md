@@ -63,14 +63,14 @@ To create and configure a new custom password policy, follow the procedure:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Policy Strength*
 
 
     
     </td>
     <td valign="top">
-
+    
     This strength specifies the priority of the password policy. It will define which policy will be enforced for password checks. It's the responsibility of the tenant administrator to configure the custom password policy stronger than the standard and enterprise ones.
 
 
@@ -79,14 +79,14 @@ To create and configure a new custom password policy, follow the procedure:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Password Policy Name*
 
 
     
     </td>
     <td valign="top">
-
+    
     The name of the password policy that appears in the administration console.
 
 
@@ -95,14 +95,14 @@ To create and configure a new custom password policy, follow the procedure:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Password Length*
 
 
     
     </td>
     <td valign="top">
-
+    
     The length can be between 8 and 255 characters. The default value is 8 characters.
 
 
@@ -111,14 +111,14 @@ To create and configure a new custom password policy, follow the procedure:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Password Lifetime*
 
 
     
     </td>
     <td valign="top">
-
+    
     The minimum password lifetime can be between 1 hour and 48 hours. The default value is 24 hours. Possible values are 1 hour, 2 hours, …, 48 hours.
 
     The maximum password lifetime can be between 1 month and unlimited. The default value is 6 months. Possible values are: 1 month, 2 months, … 6 months; 1 year, 2 years, 3 years; unlimited.
@@ -137,14 +137,14 @@ To create and configure a new custom password policy, follow the procedure:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Maximum Duration of User Inactivity*
 
 
     
     </td>
     <td valign="top">
-
+    
     The maximum duration of user inactivity can be between 1 and 6 months. The default value is 6 months.
 
     > ### Note:  
@@ -156,14 +156,14 @@ To create and configure a new custom password policy, follow the procedure:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Number of Last Used Passwords that Cannot Be Reused*
 
 
     
     </td>
     <td valign="top">
-
+    
     The minimum requirement is the last 5 passwords to be retained. The value can’t be more than 20.
 
 
@@ -172,14 +172,14 @@ To create and configure a new custom password policy, follow the procedure:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Number of Allowed Failed Logon Attempts*
 
 
     
     </td>
     <td valign="top">
-
+    
     The number of allowed failed logon attempts can be between 1 and 6. The default value is 5.
 
 
@@ -188,14 +188,14 @@ To create and configure a new custom password policy, follow the procedure:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Password Locked Period*
 
 
     
     </td>
     <td valign="top">
-
+    
     The period can be between 1 hour and unlimited.
 
     > ### Tip:  
@@ -207,14 +207,14 @@ To create and configure a new custom password policy, follow the procedure:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Password Behavior*
 
 
     
     </td>
     <td valign="top">
-
+    
     -   *Reset password* - At logon, the user is forced to reset password, if the current password is not compliant with the new password policy. This is the default choice.
     -   *Change password* - At logon, the user is redirected to the change password page if the current password is not compliant with the new password policy.
 
@@ -224,14 +224,14 @@ To create and configure a new custom password policy, follow the procedure:
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Required character groups count*
 
 
     
     </td>
     <td valign="top">
-
+    
     Specifies the number of required character groups for the password. The value can be between 1 and 4. Based on the value, the users are required to include 1, 2, 3 or 4 of the following in their passwords:
 
     -   Uppercase letters

@@ -2,29 +2,29 @@
 
 # Forgot Password REST API
 
-The forgot password REST API sends a reset password e-mail.
+The forgot password REST API sends a reset password email.
 
 
 
-The language of the reset password e-mail is defined in the following order of importance:
+The language of the reset password email is defined in the following order of importance:
 
 **Custom Template Sets Configured for Application**
 
 1.  If the user is set with a specific language:
-    1.  if the language exists in the custom template, the system sends the reset password e-mail in that language
-    2.  if the language does not exist in the custom template, the system sends the reset password e-mail in English, if English exists in the custom template set
-    3.  if the language of the user, and the English language do not exist in the custom template, the system sends the reset password e-mail in English from the *Default* template set
+    1.  if the language exists in the custom template, the system sends the reset password email in that language
+    2.  if the language does not exist in the custom template, the system sends the reset password email in English, if English exists in the custom template set
+    3.  if the language of the user, and the English language do not exist in the custom template, the system sends the reset password email in English from the *Default* template set
 
 2.  If the user is not set with a specific language:
-    1.  if English exists in the custom template set, the system sends the reset password e-mail in English from the custom template set
-    2.  if English does not exist in the custom template set, the system sends the reset password e-mail in English from the *Default* template set
+    1.  if English exists in the custom template set, the system sends the reset password email in English from the custom template set
+    2.  if English does not exist in the custom template set, the system sends the reset password email in English from the *Default* template set
 
 
 **Default Template Set Configured for Application**
 
-If the user is set with a specific language, the system sends the reset password e-mail in that language, if it exists in the *Default* set. Otherwise, it sends the reset password e-mail in English from the *Default* template set.
+If the user is set with a specific language, the system sends the reset password email in that language, if it exists in the *Default* set. Otherwise, it sends the reset password email in English from the *Default* template set.
 
-For more information about the e-mail template sets, see [Configuring E-Mail Templates](../Operation-Guide/configuring-e-mail-templates-b2afbcd.md).
+For more information about the email template sets, see [Configuring Email Templates](../Operation-Guide/configuring-email-templates-b2afbcd.md).
 
 > ### Tip:  
 > [Configure SAML 2.0 Service Provider](../Operation-Guide/configure-saml-2-0-service-provider-51f1f75.md).
@@ -36,7 +36,7 @@ For more information about the e-mail template sets, see [Configuring E-Mail Tem
 **URI:**`https://<tenant ID>.accounts.ondemand.com/service/users/forgotPassword`
 
 > ### Note:  
-> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
+> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
 
 **HTTP Method:***POST*
 
@@ -194,7 +194,7 @@ supported attributes:
 -   email
 
     > ### Tip:  
-    > If e-mail is mandatory, for users without valid e-mail addresses or for testing purposes use the `sap-test.de` domain, for example `<username>@sap-test.de`. Do not use any other existing or nonexisting domains.
+    > If email is mandatory, for users without valid email addresses or for testing purposes use the `sap-test.de` domain, for example `<username>@sap-test.de`. Do not use any other existing or nonexisting domains.
 
 -   loginName
 -   uid
@@ -272,10 +272,10 @@ The user exists and password reset is allowed for the user profile.
 </td>
 <td valign="top">
 
-Forgot password e-mail is sent to the provided user.
+Forgot password email is sent to the provided user.
 
 > ### Note:  
-> Forgot password e-mail is not sent when the response is **200 OK** in following cases:
+> Forgot password email is not sent when the response is **200 OK** in following cases:
 > 
 > -   the user does not exist
 > -   the limit of three forgot password e-mails sent for the last 24 hours has been reached
@@ -341,10 +341,12 @@ When the password is disabled.
 </tr>
 </table>
 
- 
+
 
 **Related Information**  
 
+
+[SAP Cloud Identity Services Application Directory REST API](sap-cloud-identity-services-application-directory-rest-api-a8fc935.md "Manage application configurations.")
 
 [Identity Directory SCIM REST API](identity-directory-scim-rest-api-5be5692.md "Manage users, groups and custom schemas in the cloud.")
 
@@ -362,9 +364,7 @@ When the password is disabled.
 
 [Change Master Data Texts REST API](change-master-data-texts-rest-api-b10fc6a.md#loiob10fc6a9a37c488a82ce7489b1fab64c "The Change Master Data Texts REST API can be used to change the predefined master data for each resource in Identity Authentication.")
 
-[General Error Codes](general-error-codes-182352d.md "The following table lists error codes that may be returned from any method on any resource URI.")
-
-[General Error Codes](general-error-codes-182352d.md "The following table lists error codes that may be returned from any method on any resource URI.")
-
 [List and Edit User Details](../Operation-Guide/list-and-edit-user-details-045cb01.md "As a tenant administrator, you can view detailed information about the users in the administration console for SAP Cloud Identity Services. Optionally you can edit this information.")
+
+[Error and Success Codes](error-and-success-codes-7f87a75.md "This section is to help developers with solutions to the REST API response codes.")
 

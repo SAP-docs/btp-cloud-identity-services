@@ -2,7 +2,7 @@
 
 # Invitation REST API
 
-The invitation service allows you to implement a request for user invitations. The invitees then receive an e-mail containing information about how to register.
+The invitation service allows you to implement a request for user invitations. The invitees then receive an email containing information about how to register.
 
 
 
@@ -56,7 +56,7 @@ Description
 </td>
 <td valign="top">
 
-The e-mail of the invitee
+The email of the invitee
 
 > ### Note:  
 > Only `inviteeEmail` or `inviteeUserId` should be used, not both.
@@ -136,7 +136,7 @@ For more information how to configure *Home URL*, see [Configure an Application'
 </td>
 <td valign="top">
 
-The URL for the invitation link in the e-mail sent to the invitee. The URL must be a public page.
+The URL for the invitation link in the email sent to the invitee. The URL must be a public page.
 
 > ### Note:  
 > The `sourceUrl` parameter is optional if a *`Home URL`* is set for the application, and the application does not use overlay.
@@ -213,7 +213,7 @@ The last name of the invitee
 </td>
 <td valign="top">
 
-The footer text of the invitation e-mail
+The footer text of the invitation email
 
 
 
@@ -229,7 +229,7 @@ The footer text of the invitation e-mail
 </td>
 <td valign="top">
 
-The header text of the invitation e-mail
+The header text of the invitation email
 
 
 
@@ -245,9 +245,9 @@ The header text of the invitation e-mail
 </td>
 <td valign="top">
 
-The preferred language for the invitation e-mail. The usage of this parameter does not affect the end-user screens.
+The preferred language for the invitation email. The usage of this parameter does not affect the end-user screens.
 
-Must be a string value specified by a two or four-letter code in one of the following formats: XX, xx, xx-XX or xx\_XX. Otherwise the invitation e-mail is in English.
+Must be a string value specified by a two or four-letter code in one of the following formats: XX, xx, xx-XX or xx\_XX. Otherwise the invitation email is in English.
 
 
 
@@ -256,6 +256,8 @@ Must be a string value specified by a two or four-letter code in one of the foll
 </table>
 
 
+
+## Example
 
 ```
 POST /cps/invite/
@@ -276,6 +278,8 @@ Content-Type: application/json
 **Related Information**  
 
 
+[SAP Cloud Identity Services Application Directory REST API](sap-cloud-identity-services-application-directory-rest-api-a8fc935.md "Manage application configurations.")
+
 [Identity Directory SCIM REST API](identity-directory-scim-rest-api-5be5692.md "Manage users, groups and custom schemas in the cloud.")
 
 [SCIM REST API \(Deprecated\)](scim-rest-api-deprecated-2f21568.md "This section contains information about the Identity Authentication implementation of the System for Cross-domain Identity Management (SCIM) REST API protocol.")
@@ -284,15 +288,13 @@ Content-Type: application/json
 
 [Password Service REST API](password-service-rest-api-8d1016b.md "The password service is used for operations related to user passwords, such as verification of the user name and the password combination.")
 
-[Forgot Password REST API](forgot-password-rest-api-d024fca.md "The forgot password REST API sends a reset password e-mail.")
+[Forgot Password REST API](forgot-password-rest-api-d024fca.md "The forgot password REST API sends a reset password email.")
 
 [TOTP Validation Service](totp-validation-service-3e4c3cf.md "Validation of time-based one-time password (TOTP).")
 
 [Change Tenant Texts REST API](change-tenant-texts-rest-api-66ad80a.md#loio66ad80a6bbaf4fc3911232f7cc9a7de6 "The Change Tenant Texts REST API of Identity Authentication can be used to change the predefined texts and messages for end-user screens available per tenant in the Identity Authentication.")
 
 [Change Master Data Texts REST API](change-master-data-texts-rest-api-b10fc6a.md#loiob10fc6a9a37c488a82ce7489b1fab64c "The Change Master Data Texts REST API can be used to change the predefined master data for each resource in Identity Authentication.")
-
-[General Error Codes](general-error-codes-182352d.md "The following table lists error codes that may be returned from any method on any resource URI.")
 
 [Add Logon Overlays in Customer Applications](add-logon-overlays-in-customer-applications-5e98ecf.md "This document describes how service providers that delegate authentication to Identity Authentication can use embedded frames, also called overlays, for the logon pages of their applications.")
 

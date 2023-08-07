@@ -8,14 +8,14 @@ You can unlock a user password when the user must log on to the application befo
 
 ## Context
 
-The user locks the password after submitting five incorrect passwords when trying to log on to the account. The user receives a notification e-mail that the password log on to the account has been disabled for 60 minutes. The user can either choose the link provided in the e-mail to set a new password, or wait for 60 minutes and then log on with his or her current password.
+The user locks the password after submitting five incorrect passwords when trying to log on to the account. The user receives a notification email that the password log on to the account has been disabled for 60 minutes. The user can either choose the link provided in the email to set a new password, or wait for 60 minutes and then log on with his or her current password.
 
-If the *Password Locked Period* in the password policy is set at *unlimited*, the password can be unlocked only by the tenant administrator. When a user locks the password and then tries to reset it, they get the following message : "Your password is locked. Please contact your system administrator to unlock it." In this case the e-mail template set must also be changed. Otherwise, the user will receive an e-mail stating that password logon to the account was disabled for - 1 hour. For more information, see [Configuring E-Mail Templates](configuring-e-mail-templates-b2afbcd.md).
+If the *Password Locked Period* in the password policy is set at *unlimited*, the password can be unlocked only by the tenant administrator. When a user locks the password and then tries to reset it, they get the following message : "Your password is locked. Please contact your system administrator to unlock it." In this case the email template set must also be changed. Otherwise, the user will receive an email stating that password logon to the account was disabled for - 1 hour. For more information, see [Configuring Email Templates](configuring-email-templates-b2afbcd.md).
 
 > ### Remember:  
-> Identity Authentication can send to the user up to three e-mails \(forgot password, reset password, locked password, e-mail verification\) per 24 hours.
+> Identity Authentication can send to the user up to three emails \(forgot password, reset password, locked password, email verification\) per 24 hours.
 > 
-> If the user must receive more than three e-mails, the administrator must reset the counter for e-mail sending first. For more information, see [Reset Counter for E-Mail Sending](reset-counter-for-e-mail-sending-08f634b.md).
+> If the user must receive more than three emails, the administrator must reset the counter for email sending first. For more information, see [Reset Counter for Email Sending](reset-counter-for-email-sending-08f634b.md).
 
 The tenant administrator can unlock the logon to the user account via the administration console.
 
@@ -57,5 +57,5 @@ The password is unlocked. The user can now access his or her account after provi
 **Related Information**  
 
 
-[Send Reset Password E-Mail](send-reset-password-e-mail-da55abf.md "You can trigger the sending of an e-mail to the user with reset password information.")
+[Send Reset Password Email](send-reset-password-email-da55abf.md "You can trigger the sending of an email to the user with reset password information.")
 

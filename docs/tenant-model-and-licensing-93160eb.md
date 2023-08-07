@@ -92,7 +92,7 @@ A default productive or test tenant can be obtained in one of the following case
 
     A customer has an SAP BTP, Neo subaccount.
 
-     **Procedure**
+    **Procedure**
 
     The customer can provision an Identity Authentication productive tenant and use it for free under the General Terms and Conditions for SAP Cloud Services.
 
@@ -186,7 +186,7 @@ Your existing tenant is assigned to that SAP BTP subaccount.
 
 <a name="loio93160ebd2dcb40e98aadcbb9a970f2b9__section_aqm_5zs_blb"/>
 
-## CPEA
+## Cloud Platform Enterprise Agreement \(CPEA\)
 
 SAP customers and partners can use Identity Authentication additional tenants via CPEA as a self-service.
 
@@ -261,7 +261,7 @@ A customer has an SAP BTP, Neo subaccount.
 3.  Choose *Identity Authentication - Additional Tenant* tile.
 4.  Choose *Enable*.
 
-Identity Authentication additional productive tenant will be created and the account member who triggered the creation will get an activation e-mail.
+Identity Authentication additional productive tenant will be created and the account member who triggered the creation will get an activation email.
 
 > ### Note:  
 > You can remove that additional tenant for the subaccount by choosing the *Delete* button. Please note that the tenant is deleted immediately.
@@ -311,7 +311,7 @@ A trial tenant differs from a test tenant. Trial tenants can be used for a limit
 
 
 
- **Result** 
+**Result** 
 
 You will receive an email with subject *Activate Your Account for Identity Authentication Service*. Follow the instructions in the email to activate your account for administration console of SAP Cloud Identity Services \(formerly known as administration console of Identity Authentication\).
 
@@ -330,7 +330,7 @@ You can now start testing Identity Authentication and Identity Provisioning feat
 > You can delete your trial tenant by deleting the subaccount or by deleting the Cloud Identity Services application under the Subscriptions section. For more information, see [Delete a Subaccount](https://help.sap.com/docs/btp/sap-business-technology-platform/delete-subaccount?version=Cloud).
 
 > ### Note:  
-> If you encounter any issues and you need support, send an email to ***SAPCPTrialSupport@sap.com*** or start a discussion in [SAP Community](https://community.sap.com/).
+> If you encounter any issues and you need support, send an email to `SAPCPTrialSupport@sap.com` or start a discussion in [SAP Community](https://community.sap.com/).
 
 **Related Information**  
 

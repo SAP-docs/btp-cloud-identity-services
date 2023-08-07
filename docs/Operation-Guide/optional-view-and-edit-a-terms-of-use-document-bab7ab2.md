@@ -10,7 +10,7 @@ Tenant administrators can view terms of use documents uploaded in the administra
 
 The content of the terms of use documents are visualised in the administration console
 
- <a name="task_ilp_3rl_rpb"/>
+<a name="task_ilp_3rl_rpb"/>
 
 <!-- task\_ilp\_3rl\_rpb -->
 
@@ -40,7 +40,7 @@ The content of the terms of use documents are visualised in the administration c
     To view another terms of use document, repeat the procedure.
 
 
- <a name="task_tl5_3rl_rpb"/>
+<a name="task_tl5_3rl_rpb"/>
 
 <!-- task\_tl5\_3rl\_rpb -->
 

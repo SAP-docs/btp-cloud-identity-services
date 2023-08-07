@@ -7,7 +7,7 @@ The user resource method of the Identity Authentication implementation of the SC
 
 
 > ### Note:  
-> This API will be deprecated. Please use [Identity Directory SCIM REST API](https://api.sap.com/api/IdDS_SCIM/overview) instead. For more information, see [Migrating Identity Authentication SCIM REST API to Identity Directory Service API](migrating-identity-authentication-scim-rest-api-to-identity-directory-service-api-106dbe0.md).
+> This API is deprecated. Please use [Identity Directory SCIM REST API](https://api.sap.com/api/IdDS_SCIM/overview) instead. For more information, see [Migrating Identity Authentication SCIM REST API to Identity Directory Service API](migrating-identity-authentication-scim-rest-api-to-identity-directory-service-api-106dbe0.md).
 
 
 
@@ -91,6 +91,8 @@ The current path parameter is id.
 ## Request Example
 
 
+
+## Example
 
 ```
 GET /service/scim/Users/P000000

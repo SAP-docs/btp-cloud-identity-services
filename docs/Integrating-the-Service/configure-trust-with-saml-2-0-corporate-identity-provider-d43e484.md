@@ -13,7 +13,7 @@ This document is intended to help you configure trust with a SAML 2.0 corporate 
 
 To configure trust with the SAML 2.0 corporate identity provider, follow the procedures below:
 
- <a name="task_jlj_2rm_qgb"/>
+<a name="task_jlj_2rm_qgb"/>
 
 <!-- task\_jlj\_2rm\_qgb -->
 
@@ -52,7 +52,7 @@ You have the SAML 2.0 metadata of Identity Authentication. For more information 
     You need the corporate SAML 2.0 metadata for the setup of the trust on Identity Authentication. Optionally, you can make the configurations manually.
 
 
- <a name="task_rkw_frm_qgb"/>
+<a name="task_rkw_frm_qgb"/>
 
 <!-- task\_rkw\_frm\_qgb -->
 
@@ -119,14 +119,14 @@ Set up trust with your corporate identity provider in the administration console
     </tr>
     <tr>
     <td valign="top">
-
+    
     Metadata File
 
 
     
     </td>
     <td valign="top">
-
+    
     The metadata XML file of the identity provider.
 
 
@@ -135,14 +135,14 @@ Set up trust with your corporate identity provider in the administration console
     </tr>
     <tr>
     <td valign="top">
-
+    
     Name
 
 
     
     </td>
     <td valign="top">
-
+    
     The entity ID of the identity provider.
 
 
@@ -151,14 +151,14 @@ Set up trust with your corporate identity provider in the administration console
     </tr>
     <tr>
     <td valign="top">
-
+    
     Single Sign-On Endpoint URL
 
 
     
     </td>
     <td valign="top">
-
+    
     The URL of the identity provider single sign-on endpoint that receives authentication requests.
 
 
@@ -167,14 +167,14 @@ Set up trust with your corporate identity provider in the administration console
     </tr>
     <tr>
     <td valign="top">
-
+    
     Single Logout Endpoint URL
 
 
     
     </td>
     <td valign="top">
-
+    
     The URL of the identity provider's single logout endpoint that receives logout messages.
 
 
@@ -183,14 +183,14 @@ Set up trust with your corporate identity provider in the administration console
     </tr>
     <tr>
     <td valign="top">
-
+    
     Binding
 
 
     
     </td>
     <td valign="top">
-
+    
     The SAML-specified HTTP binding used by the identity provider showing how the various SAML protocol messages can be carried over underlying transport protocols.
 
 
@@ -199,14 +199,14 @@ Set up trust with your corporate identity provider in the administration console
     </tr>
     <tr>
     <td valign="top">
-
+    
     Signing Certificate
 
 
     
     </td>
     <td valign="top">
-
+    
     A base64-encoded certificate used by the service provider to sign digitally SAML protocol messages sent to Identity Authentication.
 
     Use the *Add* button to add a second signing certificate.
@@ -250,6 +250,6 @@ Set up trust with your corporate identity provider in the administration console
 
 -   Select the configured identity provider as the authenticating identity provider for the application. For more information, see [Choose Default Identity Provider for an Application](../Operation-Guide/choose-default-identity-provider-for-an-application-e9d8274.md).
 
--   [\(Optional\) Configure the Name ID Format and AllowCreate Attribute Sent to the SAML 2.0 Corporate IdP](../Operation-Guide/optional-configure-the-name-id-format-and-allowcreate-attribute-sent-to-the-saml-2-0-corp-4fcc090.md)
+-   [\(Optional\) Configure the Name ID Format Attribute Sent to the SAML 2.0 Corporate IdP](../Operation-Guide/optional-configure-the-name-id-format-attribute-sent-to-the-saml-2-0-corporate-idp-4fcc090.md)
 -   [Configure Identity Federation](configure-identity-federation-749284f.md) 
 

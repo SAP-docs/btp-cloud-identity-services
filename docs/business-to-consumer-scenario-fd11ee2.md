@@ -25,7 +25,7 @@ This scenario includes the following features:
 > 
 > Michael also decides to use a custom branding style for the buttons on his logon and registration forms. To do this, he opens the *Branding Style* page under the *Branding and Layout* tab in the *Application* view and selects the branding styles.
 > 
-> Donna Moore is a customer who wants to purchase goods from company A for the first time. When she accesses company A’s application, she is redirected to the company’s logon page. Because she is not registered yet, she has to choose the *Register Now* link to start the registration process. A registration form then appears, prompting Donna to enter her names, e-mail, and address and to accept the organization's terms of use and privacy policy. When she submits the form, she receives an e-mail with instructions on how to activate her registration. Once she activates her registration, she is able to log on to the retailing application with her user credentials.
+> Donna Moore is a customer who wants to purchase goods from company A for the first time. When she accesses company A’s application, she is redirected to the company’s logon page. Because she is not registered yet, she has to choose the *Register Now* link to start the registration process. A registration form then appears, prompting Donna to enter her names, email, and address and to accept the organization's terms of use and privacy policy. When she submits the form, she receives an email with instructions on how to activate her registration. Once she activates her registration, she is able to log on to the retailing application with her user credentials.
 > 
 > ![](images/Business-to-Consumer_Scenario_220f3a1.png)
 > 

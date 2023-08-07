@@ -111,14 +111,14 @@ Customized branding
 </td>
 <td valign="top">
 
-Administrators can configure branding styles for UI elements, e-mails, and error pages so that they comply with the company's branding requirements.
+Administrators can configure branding styles for UI elements, emails, and error pages so that they comply with the company's branding requirements.
 
 
 
 </td>
 <td valign="top">
 
-[Configure Tenant Images](Operation-Guide/configure-tenant-images-8742046.md), [Configure a Logo for an Application](Operation-Guide/configure-a-logo-for-an-application-778f748.md), [Configure a Branding Style for an Application](Operation-Guide/configure-a-branding-style-for-an-application-32f8d33.md), [Define an E-Mail Template Set for an Application](Operation-Guide/define-an-e-mail-template-set-for-an-application-bb2c79b.md), [Configure Registration and Upgrade Forms](Operation-Guide/configure-registration-and-upgrade-forms-93a9e18.md)
+[Configure Tenant Images](Operation-Guide/configure-tenant-images-8742046.md), [Configure a Logo for an Application](Operation-Guide/configure-a-logo-for-an-application-778f748.md), [Configure a Branding Style for an Application](Operation-Guide/configure-a-branding-style-for-an-application-32f8d33.md), [Define an Email Template Set for an Application](Operation-Guide/define-an-email-template-set-for-an-application-bb2c79b.md), [Configure Registration and Upgrade Forms](Operation-Guide/configure-registration-and-upgrade-forms-93a9e18.md)
 
 
 

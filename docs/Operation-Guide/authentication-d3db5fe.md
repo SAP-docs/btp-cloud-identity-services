@@ -30,7 +30,7 @@ How to define rules for authentication in accordance with the risk
 </td>
 <td valign="top">
 
- [Configure Risk-Based Authentication for an Application](configure-risk-based-authentication-for-an-application-bc52fbf.md#loiobc52fbf3d59447bbb6aa22f80d8b6056) 
+[Configure Risk-Based Authentication for an Application](configure-risk-based-authentication-for-an-application-bc52fbf.md#loiobc52fbf3d59447bbb6aa22f80d8b6056) 
 
 
 
@@ -65,7 +65,7 @@ How to allow users to log on to an application from the corporate network withou
 </td>
 <td valign="top">
 
- [Enable or Disable Kerberos Authentication for an Application](enable-or-disable-kerberos-authentication-for-an-application-11121c9.md) 
+[Enable or Disable Kerberos Authentication for an Application](enable-or-disable-kerberos-authentication-for-an-application-11121c9.md) 
 
 
 
@@ -81,7 +81,7 @@ How to configure the type of authentication when API methods of Identity Authent
 </td>
 <td valign="top">
 
- [API Authentication](api-authentication-9d200d5.md) 
+[API Authentication](api-authentication-9d200d5.md) 
 
 
 

@@ -17,7 +17,7 @@ Verify the username and password combination, or verify the thing ID and passwor
 **URI:**`https://<tenant ID>.accounts.ondemand.com/service/users/password`
 
 > ### Note:  
-> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
+> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
 
 **HTTP Method:***POST*
 
@@ -170,7 +170,7 @@ When the username and password combination or thing ID and password combination 
 </td>
 </tr>
 <tr>
-<td valign="top" rowspan="8">
+<td valign="top" rowspan="9">
 
 401 Unauthorized
 
@@ -304,6 +304,22 @@ Wrong TOTP code was provided.
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+RBA\_RULE\_ACTION\_DENY
+
+
+
+</td>
+<td valign="top">
+
+Denied because of a risk-based authentication rule
+
+
+
+</td>
+</tr>
 </table>
 
 
@@ -322,10 +338,12 @@ On success, the HTTP Response Body contains:
     }
 ```
 
- 
+
 
 **Related Information**  
 
+
+[SAP Cloud Identity Services Application Directory REST API](sap-cloud-identity-services-application-directory-rest-api-a8fc935.md "Manage application configurations.")
 
 [Identity Directory SCIM REST API](identity-directory-scim-rest-api-5be5692.md "Manage users, groups and custom schemas in the cloud.")
 
@@ -335,7 +353,7 @@ On success, the HTTP Response Body contains:
 
 [User Management REST API](user-management-rest-api-e6bb70d.md "This REST API allows you to implement a request for user management, such as user registration, as well as SP user retrieval, deactivation and deletion.")
 
-[Forgot Password REST API](forgot-password-rest-api-d024fca.md "The forgot password REST API sends a reset password e-mail.")
+[Forgot Password REST API](forgot-password-rest-api-d024fca.md "The forgot password REST API sends a reset password email.")
 
 [TOTP Validation Service](totp-validation-service-3e4c3cf.md "Validation of time-based one-time password (TOTP).")
 
@@ -343,11 +361,9 @@ On success, the HTTP Response Body contains:
 
 [Change Master Data Texts REST API](change-master-data-texts-rest-api-b10fc6a.md#loiob10fc6a9a37c488a82ce7489b1fab64c "The Change Master Data Texts REST API can be used to change the predefined master data for each resource in Identity Authentication.")
 
-[General Error Codes](general-error-codes-182352d.md "The following table lists error codes that may be returned from any method on any resource URI.")
-
-[General Error Codes](general-error-codes-182352d.md "The following table lists error codes that may be returned from any method on any resource URI.")
-
 [Configure Risk-Based Authentication for an Application](../Operation-Guide/configure-risk-based-authentication-for-an-application-bc52fbf.md#loiobc52fbf3d59447bbb6aa22f80d8b6056 "You can define rules for authentication according to different risk factors and apply actions like Allow, Deny, and Two-Factor Authentication.")
 
 [Configure User Access to the Application](../Operation-Guide/configure-user-access-to-the-application-8b147c4.md "You can configure public access to the application allowing self-registration, or you can restrict the access to existing users or users registered by an application.")
+
+[Error and Success Codes](error-and-success-codes-7f87a75.md "This section is to help developers with solutions to the REST API response codes.")
 

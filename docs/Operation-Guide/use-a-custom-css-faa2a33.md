@@ -14,6 +14,8 @@ To use a custom CSS for the application end-user screens and profile page you mu
 
 
 
+## Example
+
 *Horizon*
 
 The [Horizon-Example.zip](https://help.sap.com/doc/70eec5adf04f4f57a96e350c2ff5cb95/Cloud/en-US/Horizon-Example.zip) contains a CSS file which you can use to test the Custom CSS option for the Horizon theme. After you follow the procedures for uploading and assigning the example file, the resulting logon page will be:
@@ -31,7 +33,7 @@ The [Example.zip](https://help.sap.com/doc/08293312afe748bc8850898c51b9ba8a/Clou
 
 You can download the default CSS file for the Quartz theme at [Default.zip](https://help.sap.com/doc/73e3b389575a4499a837dcbf8cdbf558/Cloud/en-US/Default.zip).
 
- <a name="loio899ba3bae3fe411aaf3402bc2dc05de9"/>
+<a name="loio899ba3bae3fe411aaf3402bc2dc05de9"/>
 
 <!-- loio899ba3bae3fe411aaf3402bc2dc05de9 -->
 
@@ -74,7 +76,7 @@ Upload a Quartz or Horizon CSS file for custom end-user screens or the profile p
 6.  **Optional:** To preview the implementation of the CSS on the Logon page, right click the preview link with title *CSS\_Test\_View* and open it in a new private or incognito tab.
 
 
- <a name="loioe9d7d8a6196b4e82af3365b7092bee27"/>
+<a name="loioe9d7d8a6196b4e82af3365b7092bee27"/>
 
 <!-- loioe9d7d8a6196b4e82af3365b7092bee27 -->
 

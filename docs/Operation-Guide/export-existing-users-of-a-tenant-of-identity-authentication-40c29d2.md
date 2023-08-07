@@ -16,6 +16,11 @@ You can export a CSV file containing information of all tenant users in Identity
 
 If the values for the *validTo* and *validFrom* attributes for a specific user are not in the correct Zulu format yyyyMMddHHmmss'Z', Identity Authentication returns empty values for these attributes in the CSV file.
 
+> ### Remember:  
+> The `SCIM ID` serves as the primary identifier if it is found in the CSV file. The users will only be updated, but not created if there are users with a new `SCIM ID`. This process works within the same tenant because the `SCIM ID`s differ across tenants.
+> 
+> If the `SCIM ID` doesn't exist in the CSV file, the create and update functionality will function as expected, but the administrator won't be able to modify the username or email.
+
 > ### Note:  
 > If the *active* attribute of a user is `FALSE`, he or she can’t perform any operations on the tenant.
 

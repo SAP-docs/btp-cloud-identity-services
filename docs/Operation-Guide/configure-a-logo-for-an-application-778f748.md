@@ -4,7 +4,7 @@
 
 You can configure a custom logo for a specific application by uploading an image. Furthermore, you can remove a configured logo and leave the display name only as a title for the application.
 
-The logo is displayed on the application's logon page and can be included into the e-mails sent to users.
+The logo is displayed on the application's logon page and can be included into the Emails sent to users.
 
 
 

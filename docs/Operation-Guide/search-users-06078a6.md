@@ -16,7 +16,7 @@ You are assigned the *Manage Users* role. For more information about how to assi
 
 ## Context
 
-You can list all users in the tenant for Identity Authentication or filter your search by *User ID*, *Global User ID*, *Scim ID*, *First Name*, *Last Name*, *E-Mail*, or *Login Name*.
+You can list all users in the tenant for Identity Authentication or filter your search by *User ID*, *Global User ID*, *Scim ID*, *First Name*, *Last Name*, *Email*, or *Login Name*.
 
 
 
@@ -36,7 +36,7 @@ You can list all users in the tenant for Identity Authentication or filter your 
     <table>
     <tr>
     <td valign="top">
-
+    
     **List All Users**
 
     Press *More*
@@ -45,7 +45,7 @@ You can list all users in the tenant for Identity Authentication or filter your 
     
     </td>
     <td valign="top">
-
+    
     This will expand the list by 20 users.
 
     > ### Note:  
@@ -57,7 +57,7 @@ You can list all users in the tenant for Identity Authentication or filter your 
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Unfiltered Search**
 
     -   \(default mode\) Type your search criteria string in the search field and press the *Enter* key
@@ -69,8 +69,8 @@ You can list all users in the tenant for Identity Authentication or filter your 
     
     </td>
     <td valign="top">
-
-    Once the search is completed, the system will list the users whose *User ID*, *Global User ID*, *SCIM ID*, *E-Mail*, or *Login Name* match your search criteria string. In this case the system doesn’t include the *First Name* and *Last Name* fields in the search.
+    
+    Once the search is completed, the system will list the users whose *User ID*, *Global User ID*, *SCIM ID*, *Email*, or *Login Name* match your search criteria string. In this case the system doesn’t include the *First Name* and *Last Name* fields in the search.
 
     If you aren’t satisfied with the search result, edit your search criteria and repeat the step again.
 
@@ -85,7 +85,7 @@ You can list all users in the tenant for Identity Authentication or filter your 
     </tr>
     <tr>
     <td valign="top">
-
+    
     **Filtered Search**
 
     Press *Show Filters*, type your search criteria strings in at least one of the search fields, and press the *Enter* key
@@ -94,7 +94,7 @@ You can list all users in the tenant for Identity Authentication or filter your 
     
     </td>
     <td valign="top">
-
+    
     The system checks the search fields simultaneously. Once the search is completed, it will list the users that match the search criteria from all the fields.
 
     > ### Note:  

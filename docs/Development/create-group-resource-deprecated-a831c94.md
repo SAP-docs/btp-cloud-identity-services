@@ -7,7 +7,7 @@ The create group resource method of the Identity Authentication implementation o
 
 
 > ### Note:  
-> This API will be deprecated. Please use [Identity Directory SCIM REST API](https://api.sap.com/api/IdDS_SCIM/overview) instead. For more information, see [Migrating Identity Authentication SCIM REST API to Identity Directory Service API](migrating-identity-authentication-scim-rest-api-to-identity-directory-service-api-106dbe0.md).
+> This API is deprecated. Please use [Identity Directory SCIM REST API](https://api.sap.com/api/IdDS_SCIM/overview) instead. For more information, see [Migrating Identity Authentication SCIM REST API to Identity Directory Service API](migrating-identity-authentication-scim-rest-api-to-identity-directory-service-api-106dbe0.md).
 
 
 
@@ -16,6 +16,8 @@ The create group resource method of the Identity Authentication implementation o
 
 > ### Remember:  
 > The maximum number of groups assigned to a user is 500.
+> 
+> The maximum number of users assigned to a group at the creation of the group is 20000.
 
 
 
@@ -424,15 +426,17 @@ The group cannot be created, because a group with the same name already exists.
 </tr>
 </table>
 
-For more information about the general error codes that may be returned, see [General Error Codes](general-error-codes-182352d.md).
+For more information about the general error codes that may be returned, see [Error and Success Codes](error-and-success-codes-7f87a75.md).
 
 
 
 ### Response Example
 
- 
 
 
+
+
+## Example
 
 ```
 {

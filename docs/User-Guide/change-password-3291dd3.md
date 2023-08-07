@@ -13,7 +13,7 @@ You can change your current password via your profile page.
 Your password grants you access to any platform connected to Identity Authentication. You can change your password by triggering the change password process. To change your current password, you need to provide the current and the new passwords to the system. You also must comply with the password requirements.
 
 > ### Tip:  
-> If you don't know your current password, follow the *Forgot Password* link in the logon page of the application. This will trigger the **Forgot Password** process, and you will receive an e-mail with instructions how to reset your password.
+> If you don't know your current password, follow the *Forgot Password* link in the logon page of the application. This will trigger the **Forgot Password** process, and you will receive an email with instructions how to reset your password.
 
 To change your current password, follow the procedure below:
 

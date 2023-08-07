@@ -129,7 +129,7 @@ To create an allow list of the security keys, proceed as follows:
 
     At the top of the page, you can view the administrative and license relevant information of the tenant.
 
-3.  Choose *Multi-Factor Authentication* \> *WebAuthn Security Keys*.
+3.  Under *Authentication*, choose *Multi-Factor Authentication* \> *WebAuthn Security Keys*.
 
 4.  Choose the *Add* button.
 

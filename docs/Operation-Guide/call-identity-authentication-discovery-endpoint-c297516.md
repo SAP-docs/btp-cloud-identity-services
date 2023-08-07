@@ -57,7 +57,7 @@ https://my-tenant.ondemand.com/.well-known/openid-configuration
 }
 ```
 
- 
+
 
 > ### Note:  
 > The format of the `issuer` depends on the configuration in the administration console for SAP Cloud Identity Services. For more information, see [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md).

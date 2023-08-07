@@ -1,12 +1,12 @@
-<!-- loioaa04a8b6c60a440f866bfe30000e1e89 -->
+<!-- loioc97746478abe4a96b7a294ccc4633daa -->
 
-# Send System Notifications via E-Mails
+# Send Security Alert Emails
 
-You can configure the administration console to send e-mails with information about expiring certificates, system notifications and new administrators to specific e-mail addresses or to the e-mails of all administrators.
+Send security alert emails to end-users or administrators when changes in their accounts are made.
 
 
 
-<a name="loioaa04a8b6c60a440f866bfe30000e1e89__prereq_k4x_cmg_ppb"/>
+<a name="loioc97746478abe4a96b7a294ccc4633daa__prereq_k4x_cmg_ppb"/>
 
 ## Prerequisites
 
@@ -16,16 +16,20 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 
 ## Context
 
-The tenant administrator can configure the system to send e-mails to administrators for the following events:
+The tenant administrator can configure the system to send security alert emails when some of the following actions are carried out:
 
--   *Expiring Certificates* - an e-mail is sent 30 days, 14 days and 3 days before the certificate expires
--   *System Notifications* - an e-mail is sent the day after the notification is created
--   *New Administrators* - an e-mail is sent right after the administrator is created
+-   *Email change*
+-   *Login Name change*
+-   *Phone change*
+-   *Credential change*
+-   *Administrator authorization removal*
+-   *TFA device activation or deactivation; postpone enabling of Two-Factor Authentication*
+-   *Registration with nonunique email*
 
 > ### Remember:  
 > It takes 2 minutes for the configuration changes to take place.
 
-To start sending security alert e-mails, proceed as follows:
+The security alert e-mails are disabled by default. To start sending security alert e-mails, proceed as follows:
 
 
 
@@ -37,21 +41,9 @@ To start sending security alert e-mails, proceed as follows:
 
     At the top of the page, you can view the administrative and license relevant information of the tenant.
 
-3.  Choose the *System Notifications and Alerts* list item.
+3.  Under *General*, choose the *Security Alerting* list item.
 
-4.  Choose the *Add* button and select one of the options in the popup that appear:
-
-    -   *New e-mail* - enter the e-mail that you want to receive notifications.
-    -   *All administrators* all tenant administrators will receive the notifications.
-
-5.  Confirm your choice by choosing the *Add* button in the popup.
-
-6.  Configure the notifications by selecting the desired checkboxes for each e-mail.
-
-    > ### Note:  
-    > By default all checkboxes are selected.
-
-7.  Save your configuration.
+4.  Use the slider next to an action to enable the sending of security alert emails for it.
 
     If the operation is successful, you receive a confirmation message.
 
@@ -69,7 +61,7 @@ To start sending security alert e-mails, proceed as follows:
 
 [Configure Links Section on Sign-In Screen](configure-links-section-on-sign-in-screen-060c032.md "You can configure links to appear on the sign-in screen of your applications.")
 
-[Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in sscreen of the Horizon theme with instructions for the user.")
+[Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in screen of the Horizon theme with instructions for the user.")
 
 [Configure X.509 Client Certificates for User Authentication](configure-x-509-client-certificates-for-user-authentication-52c7dcb.md "Tenant administrators can configure X.509 client certificates for user authentication as an alternative to authenticating with a user name and a password.")
 
@@ -87,7 +79,7 @@ To start sending security alert e-mails, proceed as follows:
 
 [Enable Users to Recover Password with PIN Code](enable-users-to-recover-password-with-pin-code-046a235.md "Users can choose to provide PIN code to reset their password.")
 
-[Configure Initial Password and E-Mail Link Validity](configure-initial-password-and-e-mail-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
+[Configure Initial Password and Email Link Validity](configure-initial-password-and-email-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
 
 [Configure Session Timeout](configure-session-timeout-5ca23e4.md "As a tenant administrator, you can configure when the session, created at the Identity Authentication tenant, expires.")
 
@@ -103,11 +95,11 @@ To start sending security alert e-mails, proceed as follows:
 
 [Configure RADIUS Server Settings \(Beta\)](configure-radius-server-settings-beta-03043ae.md "Configure Remote Authentication Dial-In User Service (RADIUS) server settings in the administration console for SAP Cloud Identity Services.")
 
-[Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the e-mails sent to the end users in the different application processes.")
+[Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the emails sent to the end users in the different application processes.")
 
 [Configure IdP-Initiated SSO](configure-idp-initiated-sso-5d59caa.md)
 
-[Send Security Alert E-Mails](send-security-alert-e-mails-c977464.md "Send security alert e-mails to end-users or administrators when changes in their accounts are made.")
+[Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 

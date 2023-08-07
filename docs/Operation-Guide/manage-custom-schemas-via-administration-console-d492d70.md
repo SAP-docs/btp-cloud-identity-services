@@ -72,14 +72,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         `id`
 
 
         
         </td>
         <td valign="top">
-
+        
         Required
 
         Example: `"id": "urn:sap:cloud:scim:schemas:extension:custom:2.0:MyCustomSchema",`
@@ -90,14 +90,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         `name`
 
 
         
         </td>
         <td valign="top">
-
+        
         Optional
 
         > ### Note:  
@@ -111,14 +111,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         `description`
 
 
         
         </td>
         <td valign="top">
-
+        
         Optional
 
         Example: `"description": "Custom schema description",`
@@ -158,21 +158,21 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top" rowspan="13">
-
+        
         `attributes`
 
 
         
         </td>
         <td valign="top">
-
+        
          
 
 
         
         </td>
         <td valign="top">
-
+        
         Required.
 
         A set of schema attribute objects which contains the attribute qualifications.
@@ -183,14 +183,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         `name`
 
 
         
         </td>
         <td valign="top">
-
+        
         Required
 
 
@@ -199,14 +199,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         `type`
 
 
         
         </td>
         <td valign="top">
-
+        
         Required
 
         Values: "string", "boolean", "decimal", "integer", "dateTime", "reference", and "complex".
@@ -222,14 +222,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         `subAttributes`
 
 
         
         </td>
         <td valign="top">
-
+        
         Optional.
 
         > ### Remember:  
@@ -243,14 +243,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         `multiValued`
 
 
         
         </td>
         <td valign="top">
-
+        
         Required
 
         Boolean
@@ -266,14 +266,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         `description`
 
 
         
         </td>
         <td valign="top">
-
+        
         Optional
 
 
@@ -282,14 +282,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         `required`
 
 
         
         </td>
         <td valign="top">
-
+        
         Required
 
         Boolean
@@ -300,14 +300,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         `canonicalValues`
 
 
         
         </td>
         <td valign="top">
-
+        
         Optional
 
         A set of supported values for the attribute.
@@ -318,14 +318,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         `caseExact`
 
 
         
         </td>
         <td valign="top">
-
+        
         Required
 
         Boolean
@@ -336,14 +336,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         `mutability`
 
 
         
         </td>
         <td valign="top">
-
+        
         Required
 
         Values: "readOnly", "readWrite", "immutable", and "writeOnly".
@@ -354,14 +354,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         `returned`
 
 
         
         </td>
         <td valign="top">
-
+        
         Required
 
         Valid key words: "always", "default", "never", and "request".
@@ -372,14 +372,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         `uniqueness`
 
 
         
         </td>
         <td valign="top">
-
+        
         Required
 
         Valid key words: "none", "server", and "global".
@@ -390,14 +390,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         `referenceTypes`
 
 
         
         </td>
         <td valign="top">
-
+        
         Optional
 
         Valid values:
@@ -436,14 +436,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         Attribute Name
 
 
         
         </td>
         <td valign="top">
-
+        
         Provide a name for the attribute. Each attribute must be unique within the schema.
 
 
@@ -452,14 +452,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         Parent Attribute
 
 
         
         </td>
         <td valign="top">
-
+        
         Choose a parent for the attribute from the existing attributes of type complex.
 
         > ### Note:  
@@ -471,14 +471,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         Type
 
 
         
         </td>
         <td valign="top">
-
+        
         Select a value from the drop-down:
 
         -   "string" \(default value\)
@@ -498,14 +498,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         Mutable
 
 
         
         </td>
         <td valign="top">
-
+        
         Select a value from the drop-down:
 
         -   "readOnly" \(default value\)
@@ -519,14 +519,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         Returned
 
 
         
         </td>
         <td valign="top">
-
+        
         Select a value from the drop-down:
 
         -   "always" \(default value\)
@@ -540,14 +540,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         Unique
 
 
         
         </td>
         <td valign="top">
-
+        
         Select a value from the drop-down:
 
         -   "none" \(default value\)
@@ -560,14 +560,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         Description
 
 
         
         </td>
         <td valign="top">
-
+        
         Optional.
 
 
@@ -576,14 +576,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         Canonical
 
 
         
         </td>
         <td valign="top">
-
+        
         Optional.
 
 
@@ -592,14 +592,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         Required
 
 
         
         </td>
         <td valign="top">
-
+        
         Boolean. When checkbox is selected, the value is "true". Default value is "false".
 
 
@@ -608,14 +608,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         Case Exact
 
 
         
         </td>
         <td valign="top">
-
+        
         Boolean. When checkbox is selected, the value is "true". Default value is "false".
 
 
@@ -624,14 +624,14 @@ You can also download a schema template or any of the already existing schemas. 
         </tr>
         <tr>
         <td valign="top">
-
+        
         Multi-Valued
 
 
         
         </td>
         <td valign="top">
-
+        
         Boolean. When checkbox is selected, the value is "true". Default value is "false".
 
 

@@ -4,7 +4,7 @@
 
 In this scenario, to log on to an application, users provide their credentials to Identity Authentication, and Identity Authentication asserts their identity to the application.
 
-Every SAP S/4HANA system or SAP Analytics Cloud embedded come with an Identity Authentication as a trusted identity provider. You’ve received a provisioning e-mail with initial access information for the Identity Authentication tenant.
+Every SAP S/4HANA system or SAP Analytics Cloud embedded come with an Identity Authentication as a trusted identity provider. You’ve received a provisioning email with initial access information for the Identity Authentication tenant.
 
 For the authentication of the users, you must have them in your Identity Authentication tenant. You can import your users in Identity Authentication, or create them via the administration console or the Identity Directory API.
 
@@ -15,7 +15,7 @@ The tables below show the pre-configured settings for your system that you have 
 > 
 > `https://<tenant ID>.accounts.ondemand.com/admin`
 > 
-> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
+> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
 > 
 > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
 
@@ -63,7 +63,7 @@ S/4HANA Cloud or Integrated Business Planning
 </td>
 <td valign="top">
 
-***Login Name***
+`Login Name`
 
 
 
@@ -79,7 +79,7 @@ S/4HANA Cloud or Integrated Business Planning
 </td>
 <td valign="top">
 
-***Unspecified***
+`Unspecified`
 
 
 
@@ -95,7 +95,7 @@ S/4HANA Cloud or Integrated Business Planning
 </td>
 <td valign="top">
 
-***None*** \(ABAP does implicit uppercase conversion\)
+`None` \(ABAP does implicit uppercase conversion\)
 
 
 
@@ -134,7 +134,7 @@ SAP Analytics Cloud, embedded edition
 </td>
 <td valign="top">
 
-***Login Name***
+`Login Name`
 
 
 
@@ -150,7 +150,7 @@ SAP Analytics Cloud, embedded edition
 </td>
 <td valign="top">
 
-***Unspecified***
+`Unspecified`
 
 
 
@@ -166,7 +166,7 @@ SAP Analytics Cloud, embedded edition
 </td>
 <td valign="top">
 
-***Uppercase***
+`Uppercase`
 
 
 
@@ -234,7 +234,7 @@ S/4HANA Cloud or SAP Integrated Business Planning
 </td>
 <td valign="top">
 
-***E-Mail***
+`Email`
 
 
 
@@ -250,7 +250,7 @@ S/4HANA Cloud or SAP Integrated Business Planning
 </td>
 <td valign="top">
 
-***E-Mail***
+`Email`
 
 
 
@@ -266,7 +266,7 @@ S/4HANA Cloud or SAP Integrated Business Planning
 </td>
 <td valign="top">
 
-***None*** \(e-mail addresses are compared case-insensitively\)
+`None` \(email addresses are compared case-insensitively\)
 
 
 
@@ -282,7 +282,7 @@ S/4HANA Cloud or SAP Integrated Business Planning
 </td>
 <td valign="top">
 
-***Identity Authentication***
+`Identity Authentication`
 
 
 
@@ -305,7 +305,7 @@ SAP Analytics Cloud, embedded edition
 </td>
 <td valign="top">
 
-***E-Mail***
+`Email`
 
 
 
@@ -321,7 +321,7 @@ SAP Analytics Cloud, embedded edition
 </td>
 <td valign="top">
 
-***Unspecified***
+`Unspecified`
 
 
 
@@ -337,7 +337,7 @@ SAP Analytics Cloud, embedded edition
 </td>
 <td valign="top">
 
-***Lowercase***
+`Lowercase`
 
 
 
@@ -353,7 +353,7 @@ SAP Analytics Cloud, embedded edition
 </td>
 <td valign="top">
 
-***Identity Authentication***
+`Identity Authentication`
 
 
 
@@ -376,7 +376,7 @@ SAP Datasphere
 </td>
 <td valign="top">
 
-***E-Mail***
+`Email`
 
 
 
@@ -392,7 +392,7 @@ SAP Datasphere
 </td>
 <td valign="top">
 
-***E-Mail***
+`Email`
 
 
 
@@ -408,7 +408,7 @@ SAP Datasphere
 </td>
 <td valign="top">
 
-***None*** \(e-mail addresses are compared case-insensitively\)
+`None` \(email addresses are compared case-insensitively\)
 
 
 
@@ -424,7 +424,7 @@ SAP Datasphere
 </td>
 <td valign="top">
 
-***Identity Authentication***
+`Identity Authentication`
 
 
 
@@ -433,7 +433,7 @@ SAP Datasphere
 </table>
 
 > ### Note:  
-> The same identifying attribute \(login name or e-mail address\) is used for both ABAP and SAP Analytics Cloud. User records must be created in ABAP and are then automatically replicated to SAP Analytics Cloud:
+> The same identifying attribute \(login name or email address\) is used for both ABAP and SAP Analytics Cloud. User records must be created in ABAP and are then automatically replicated to SAP Analytics Cloud:
 
 -   Replication from SAP S/4HANA Cloud to SAP Analytics Cloud happens via a pre-integrated Identity Provisioning tenant \(communication scenario *SAP\_COM\_0193*\).
 -   Replication from SAP Integrated Business Planning to SAP Analytics Cloud happens via the SAP-managed communication scenario *SAP\_COM\_1187*.
@@ -449,7 +449,7 @@ SAP Datasphere
 
 [Import CSV File with Full User Profile](../Operation-Guide/import-csv-file-with-full-user-profile-f54b900.md "As a tenant administrator, you can create new users or update existing ones with all user data, including attributes from a custom schema, via a CSV file upload.")
 
-[Import or Update Users for a Specific Application](../Operation-Guide/import-or-update-users-for-a-specific-application-33838e0.md "As a tenant administrator, you can import new users or update existing ones for a specific application with a CSV file. You can also send activation e-mails to the users that have not received activation e-mails for that application so far.")
+[Import or Update Users for a Specific Application](../Operation-Guide/import-or-update-users-for-a-specific-application-33838e0.md "As a tenant administrator, you can import new users or update existing ones for a specific application with a CSV file. You can also send activation emails to the users that have not received activation emails for that application so far.")
 
 [Configure SAML 2.0 Service Provider](../Operation-Guide/configure-saml-2-0-service-provider-51f1f75.md "This document is intended to help you configure a SAML 2.0 service provider (SP) in the administration console for SAP Cloud Identity Services.")
 

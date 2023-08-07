@@ -10,7 +10,7 @@ Configure Sinch Service to enable *Phone Verification via SMS* or *SMS Two-Facto
 
 ## Prerequisites
 
--   You have an account in Sinch Verification Service. Once you create a Sinch service account, you receive an e-mail with your account information.
+-   You have an account in Sinch Verification Service. Once you create a Sinch service account, you receive an email with your account information.
 
 -   You are assigned the *Manage Tenant Configuration* role. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
 

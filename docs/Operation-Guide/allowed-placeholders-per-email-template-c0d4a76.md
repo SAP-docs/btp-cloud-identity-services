@@ -1,21 +1,21 @@
 <!-- loioc0d4a7676e894d048ee361ae2d2f0012 -->
 
-# Allowed Placeholders per E-Mail Template
+# Allowed Placeholders per Email Template
 
-This document describes which placeholders can be used in each e-mail template.
+This document describes which placeholders can be used in each email template.
 
 
 
 The allowed placeholders are marked with *Yes* in the table:
 
-**Placeholders per E-Mail Template**
+**Placeholders per Email Template**
 
 
 <table>
 <tr>
 <th valign="top">
 
-Placeholder/E-Mail Template
+Placeholder/Email Template
 
 
 
@@ -78,7 +78,7 @@ Deactivate TOTP Device
 </th>
 <th valign="top">
 
-E-Mail OTP Code
+Email OTP Code
 
 
 
@@ -1484,7 +1484,7 @@ Notes
 </td>
 <td valign="top">
 
-The name of the application for which the e-mail is sent.
+The name of the application for which the email is sent.
 
 
 
@@ -1500,7 +1500,7 @@ The name of the application for which the e-mail is sent.
 </td>
 <td valign="top">
 
-The account activation link sent to the user in the e-mail.
+The account activation link sent to the user in the email.
 
 
 
@@ -1548,7 +1548,7 @@ The last name of the user.
 </td>
 <td valign="top">
 
-The e-mail of the user.
+The email of the user.
 
 
 
@@ -1612,7 +1612,7 @@ The login name of the user.
 </td>
 <td valign="top">
 
-The application logo shown on the logon page and in the e-mails sent to users.
+The application logo shown on the logon page and in the emails sent to users.
 
 
 
@@ -1660,7 +1660,7 @@ The URL that the user is redirected to after registration.
 </td>
 <td valign="top">
 
-The link provided in the e-mail to reset the password.
+The link provided in the email to reset the password.
 
 
 
@@ -1676,7 +1676,7 @@ The link provided in the e-mail to reset the password.
 </td>
 <td valign="top">
 
-The link provided in the e-mail to set a new password,
+The link provided in the email to set a new password,
 
 
 
@@ -1790,13 +1790,13 @@ $\{other.emailOtpCode\}
 **Related Information**  
 
 
-[Create a New E-Mail Template Set](create-a-new-e-mail-template-set-a6fca8b.md "Tenant administrators can create a new set of e-mail templates so that each template in the set can have a custom language version.")
+[Create a New Email Template Set](create-a-new-email-template-set-a6fca8b.md "Tenant administrators can create a new set of email templates so that each template in the set can have a custom language version.")
 
-[View E-Mail Template Document](view-e-mail-template-document-148568a.md "Tenant administrators can view language e-mail templates in the template set uploaded in the administration console for SAP Cloud Identity Services.")
+[View Email Template Document](view-email-template-document-148568a.md "Tenant administrators can view language email templates in the template set uploaded in the administration console for SAP Cloud Identity Services.")
 
-[Edit or Add an E-Mail Template Set](edit-or-add-an-e-mail-template-set-3c4f397.md "Tenant administrators can configure language versions of each template in the template set. They can also set a custom template for each language, and change the name of each template set.")
+[Edit or Add an Email Template Set](edit-or-add-an-email-template-set-3c4f397.md "Tenant administrators can configure language versions of each template in the template set. They can also set a custom template for each language, and change the name of each template set.")
 
-[Define an E-Mail Template Set for an Application](define-an-e-mail-template-set-for-an-application-fc6b54a.md "Tenant administrators can define the e-mail template set that the application uses.")
+[Define an Email Template Set for an Application](define-an-email-template-set-for-an-application-fc6b54a.md "Tenant administrators can define the email template set that the application uses.")
 
-[Delete an E-Mail Template Set](delete-an-e-mail-template-set-6fce69d.md "Tenant administrators can delete an e-mail template set or a language version for a specific application process.")
+[Delete an Email Template Set](delete-an-email-template-set-6fce69d.md "Tenant administrators can delete an email template set or a language version for a specific application process.")
 

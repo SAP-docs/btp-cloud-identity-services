@@ -235,7 +235,9 @@ If the locale is set, the e-mails use the language set there, if there is a temp
 **Related Information**  
 
 
-[Application Types](application-types-8f61880.md "")
+[Tenant Types](tenant-types-069b25d.md "Identity Authentication provides three types of tenants - productive, test, and trial")
+
+[Application Types](application-types-8f61880.md "Application types in the administration console for SAP Cloud Identity Services.")
 
 [User Types](user-types-70e95d1.md "")
 
@@ -243,7 +245,7 @@ If the locale is set, the e-mails use the language set there, if there is a temp
 
 [Use the Remember Me Option](User-Guide/use-the-remember-me-option-bc7c6c6.md "With the Remember me functionality enabled, you can log on to an application without the need to provide your credentials every time you access it.")
 
-[Configure Conditional Authentication for an Application](Operation-Guide/configure-conditional-authentication-for-an-application-0143dce.md "Tenant administrator can define rules for authenticating identity provider according to e-mail domain, user type, user group, and IP range (specified in CIDR notation).")
+[Configure Conditional Authentication for an Application](Operation-Guide/configure-conditional-authentication-for-an-application-0143dce.md "Tenant administrator can define rules for authenticating identity provider according to email domain, user type, user group, and IP range (specified in CIDR notation).")
 
 [Add Logon Overlays in Customer Applications](Development/add-logon-overlays-in-customer-applications-5e98ecf.md "This document describes how service providers that delegate authentication to Identity Authentication can use embedded frames, also called overlays, for the logon pages of their applications.")
 
@@ -251,7 +253,7 @@ If the locale is set, the e-mails use the language set there, if there is a temp
 
 [Access Applications with Single Sign-On on Mobile Devices](User-Guide/access-applications-with-single-sign-on-on-mobile-devices-89bbb0b.md "You can access trusted applications that require two-factor authentication via your mobile devices using single sign-on (SSO).")
 
-[Configuring E-Mail Templates](Operation-Guide/configuring-e-mail-templates-b2afbcd.md "Tenant administrators can use the default or a custom e-mail template set for the application processes.")
+[Configuring Email Templates](Operation-Guide/configuring-email-templates-b2afbcd.md "Tenant administrators can use the default or a custom email template set for the application processes.")
 
 [Configure Source System To Migrate User Passwords from SAP Fieldglass to Identity Authentication](Operation-Guide/configure-source-system-to-migrate-user-passwords-from-sap-fieldglass-to-identity-authent-b0c7ec8.md)
 

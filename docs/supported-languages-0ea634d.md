@@ -21,7 +21,7 @@ Information on the supported languages for the administration console, and the e
 
 [Accessibility Features in Identity Authentication](accessibility-features-in-identity-authentication-c7b544b.md "To optimize your experience of Identity Authentication, Identity Authentication tools provide features and settings that help you use the software efficiently.")
 
- <a name="concept_zn5_vvy_g5"/>
+<a name="concept_zn5_vvy_g5"/>
 
 <!-- concept\_zn5\_vvy\_g5 -->
 
@@ -29,7 +29,7 @@ Information on the supported languages for the administration console, and the e
 
 The administration console for SAP Cloud Identity Services supports only English \(en\) language.
 
- <a name="concept_ihp_yvy_g5"/>
+<a name="concept_ihp_yvy_g5"/>
 
 <!-- concept\_ihp\_yvy\_g5 -->
 

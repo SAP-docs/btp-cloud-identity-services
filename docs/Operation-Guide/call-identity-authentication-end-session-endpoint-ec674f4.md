@@ -6,12 +6,6 @@ To propagate a user's logout to other applications and any corporate identity pr
 
 
 
-<a name="loioec674f477fec47928e55888a97ca01da__section_m3q_bhz_rfb"/>
-
-## Context
-
-The service support front-channel logout. You trigger a logout from your application by sending a logout request to the end session endpoint. The service also logs the user out of any other applications with which the user shares a session. In addition, the service also notifies any configured corporate identity providers.
-
 After the entire single logout \(SLO\) operation has completed, by default, Identity Authentication redirects the user agent to the Identity Authentication profile page of the user. To redirect the user to a different page, include a post logout URI in your request. The URI must be among the allowed post logout redirect URIs that the Identity Authentication administrator configured for the application.
 
 For more information, see [OpenID Connect Application Configurations](openid-connect-application-configurations-1ae324e.md).
@@ -19,12 +13,6 @@ For more information, see [OpenID Connect Application Configurations](openid-con
 If you include a post logout redirect URI in your request, include the client ID. Instead of including the client ID, you can include the ID token and the service reads the client ID from the token.
 
 The following figure illustrates a logout scenario with multiple applications and a coprorate identity provider.
-
-   
-  
-**Front-Channel Logout Flow**
-
- ![](images/single_logout_oidc_434165c.png "Front-Channel Logout Flow") 
 
 
 
@@ -228,6 +216,43 @@ Query
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+`app_tid`
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+<td valign="top">
+
+String
+
+
+
+</td>
+<td valign="top">
+
+Required for multitenant scenarios to identify corresponding Identity Authentication application.
+
+
+
+</td>
+<td valign="top">
+
+Query
+
+
+
+</td>
+</tr>
 </table>
 
 > ### Note:  
@@ -341,7 +366,7 @@ Missing or wrong parameter.
 </tr>
 </table>
 
- 
+
 
 **Related Information**  
 

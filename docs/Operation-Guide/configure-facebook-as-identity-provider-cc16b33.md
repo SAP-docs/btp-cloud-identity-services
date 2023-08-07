@@ -18,7 +18,7 @@ Once a user has allowed Identity Authentication to link his or her account with 
 To configure Facebook as social identity provider for the tenant, you have to register new applications on the Facebook site. For more details, see Related Information.
 
 > ### Note:  
-> You need to type ***https://<tenant ID\>.accounts.ondemand.com/ui/oauth/oauthCallback*** in the *Valid OAuth redirect URIs* field in the Settings section of Facebook Login in the App Dashboard. For more information about Facebook Valid OAuth redirect URIs, see [Enable Strict Mode](https://developers.facebook.com/docs/facebook-login/security/#strict_mode).
+> You need to type `https://<tenant ID>.accounts.ondemand.com/ui/oauth/oauthCallback` in the *Valid OAuth redirect URIs* field in the Settings section of Facebook Login in the App Dashboard. For more information about Facebook Valid OAuth redirect URIs, see [Enable Strict Mode](https://developers.facebook.com/docs/facebook-login/security/#strict_mode).
 
 To perform the social identity provider configuration in the administration console for SAP Cloud Identity Services, you have to provide the following data:
 

@@ -63,14 +63,14 @@ To configure a source system, follow the steps below:
         </tr>
         <tr>
         <td valign="top">
-
+        
         *Display Name*
 
 
         
         </td>
         <td valign="top">
-
+        
         \(optional\) The name of the configuration.
 
 
@@ -79,14 +79,14 @@ To configure a source system, follow the steps below:
         </tr>
         <tr>
         <td valign="top">
-
+        
         *Type*
 
 
         
         </td>
         <td valign="top">
-
+        
         Select the *SuccessFactors* type.
 
 
@@ -118,14 +118,14 @@ To configure a source system, follow the steps below:
         </tr>
         <tr>
         <td valign="top">
-
+        
         *Company ID*
 
 
         
         </td>
         <td valign="top">
-
+        
         The company of the source system.
 
 
@@ -134,14 +134,14 @@ To configure a source system, follow the steps below:
         </tr>
         <tr>
         <td valign="top">
-
+        
         *Password Validation URL*
 
 
         
         </td>
         <td valign="top">
-
+        
         The URL endpoint for validation of the users name and password. It can be provided by the source system administrator.
 
         > ### Note:  
@@ -156,7 +156,7 @@ To configure a source system, follow the steps below:
         > ### Remember:  
         > If you choose the *X.509* certificate as your *Authentication Type*, you'll need to add ".cert" after the subdomain part of the URL. For example:
         > 
-        >  `https://exampleapi.cert.sapsf.com/odata/v2/restricted/validateUser`.
+        > `https://exampleapi.cert.sapsf.com/odata/v2/restricted/validateUser`.
 
 
         
@@ -164,14 +164,14 @@ To configure a source system, follow the steps below:
         </tr>
         <tr>
         <td valign="top">
-
+        
         -   *Authentication Type*
 
 
         
         </td>
         <td valign="top">
-
+        
         Choose:
 
         -   *Technical User*
@@ -206,21 +206,21 @@ To configure a source system, follow the steps below:
         </tr>
         <tr>
         <td valign="top">
-
+        
         *First Logon Behavior*
 
 
         
         </td>
         <td valign="top">
-
+        
         Choose if a user whose password doesn't meet the password policy requirements of the application must reset or change it after the first successful logon.
 
         -   *Change password* - The user will be presented a dialog to change their password. The new password must meet the current password policy.
 
             This is the default choice.
 
-        -   *Reset password* - The user receives the reset password link by e-mail.
+        -   *Reset password* - The user receives the reset password link by email.
 
 
         

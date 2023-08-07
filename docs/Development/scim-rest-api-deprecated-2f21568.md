@@ -7,7 +7,7 @@ This section contains information about the Identity Authentication implementati
 
 
 > ### Note:  
-> This API will be deprecated. Please use [Identity Directory SCIM REST API](https://api.sap.com/api/IdDS_SCIM/overview) instead. For more information, see [Migrating Identity Authentication SCIM REST API to Identity Directory Service API](migrating-identity-authentication-scim-rest-api-to-identity-directory-service-api-106dbe0.md).
+> This API is deprecated. Please use [Identity Directory SCIM REST API](https://api.sap.com/api/IdDS_SCIM/overview) instead. For more information, see [Migrating Identity Authentication SCIM REST API to Identity Directory Service API](migrating-identity-authentication-scim-rest-api-to-identity-directory-service-api-106dbe0.md).
 
 
 
@@ -28,7 +28,7 @@ Some of the attributes have predefined supported values. They are returned as a 
 > 
 > `https://<tenant ID>.accounts.ondemand.com/admin`
 > 
-> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
+> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
 > 
 > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
 
@@ -60,7 +60,7 @@ Full Sets
 <tr>
 <td valign="top">
 
- `name.honorificPrefix` 
+`name.honorificPrefix` 
 
 
 
@@ -85,7 +85,7 @@ Full Sets
 <tr>
 <td valign="top">
 
- `addresses.country` 
+`addresses.country` 
 
 
 
@@ -110,7 +110,7 @@ Full Sets
 <tr>
 <td valign="top">
 
- `addresses.region` 
+`addresses.region` 
 
 
 
@@ -139,7 +139,7 @@ Full Sets
 <tr>
 <td valign="top">
 
- `industryCrm` 
+`industryCrm` 
 
 
 
@@ -164,7 +164,7 @@ Full Sets
 <tr>
 <td valign="top">
 
- `timeZone` 
+`timeZone` 
 
 
 
@@ -189,7 +189,7 @@ Full Sets
 <tr>
 <td valign="top">
 
- `department` 
+`department` 
 
 
 
@@ -214,7 +214,7 @@ Full Sets
 <tr>
 <td valign="top">
 
- `companyRelationship` 
+`companyRelationship` 
 
 
 
@@ -239,7 +239,7 @@ Full Sets
 <tr>
 <td valign="top">
 
- `locale` 
+`locale` 
 
 
 
@@ -277,7 +277,7 @@ The characters `<`, `>`, `:` are not allowed for the attributes `displayName`, `
 
 ## Methods
 
- 
+
 
 **Manage Users**
 
@@ -570,6 +570,8 @@ URI
 **Related Information**  
 
 
+[SAP Cloud Identity Services Application Directory REST API](sap-cloud-identity-services-application-directory-rest-api-a8fc935.md "Manage application configurations.")
+
 [Identity Directory SCIM REST API](identity-directory-scim-rest-api-5be5692.md "Manage users, groups and custom schemas in the cloud.")
 
 [Invitation REST API](invitation-rest-api-e55429f.md "The invitation service allows you to implement a request for user invitations.")
@@ -578,15 +580,13 @@ URI
 
 [Password Service REST API](password-service-rest-api-8d1016b.md "The password service is used for operations related to user passwords, such as verification of the user name and the password combination.")
 
-[Forgot Password REST API](forgot-password-rest-api-d024fca.md "The forgot password REST API sends a reset password e-mail.")
+[Forgot Password REST API](forgot-password-rest-api-d024fca.md "The forgot password REST API sends a reset password email.")
 
 [TOTP Validation Service](totp-validation-service-3e4c3cf.md "Validation of time-based one-time password (TOTP).")
 
 [Change Tenant Texts REST API](change-tenant-texts-rest-api-66ad80a.md#loio66ad80a6bbaf4fc3911232f7cc9a7de6 "The Change Tenant Texts REST API of Identity Authentication can be used to change the predefined texts and messages for end-user screens available per tenant in the Identity Authentication.")
 
 [Change Master Data Texts REST API](change-master-data-texts-rest-api-b10fc6a.md#loiob10fc6a9a37c488a82ce7489b1fab64c "The Change Master Data Texts REST API can be used to change the predefined master data for each resource in Identity Authentication.")
-
-[General Error Codes](general-error-codes-182352d.md "The following table lists error codes that may be returned from any method on any resource URI.")
 
 [System for Cross-Domain Identity Management](https://tools.ietf.org/html/draft-ietf-scim-api-19)
 

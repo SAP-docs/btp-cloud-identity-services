@@ -1,6 +1,6 @@
 <!-- loio4fcc0905ea3e442fb33f4cc759399646 -->
 
-# \(Optional\) Configure the Name ID Format and AllowCreate Attribute Sent to the SAML 2.0 Corporate IdP
+# \(Optional\) Configure the Name ID Format Attribute Sent to the SAML 2.0 Corporate IdP
 
 
 
@@ -37,7 +37,7 @@ To set the name ID format to be sent to the corporate identity provider, proceed
     -   *None* - Name ID format is not sent. Corporate identity provider decides which attribute to use.
     -   *Default* - The name ID format received from the application is sent.
     -   *Unspecified* - The name ID format `urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified` is always sent.
-    -   *E-Mail* - The name ID format `urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress` is always sent.
+    -   *Email* - The name ID format `urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress` is always sent.
 
 6.  Select the AllowCreate configuration from the following:
 

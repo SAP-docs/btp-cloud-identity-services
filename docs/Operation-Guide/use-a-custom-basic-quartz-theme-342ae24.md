@@ -53,14 +53,14 @@ Configure a branding style for the buttons and information messages for the Quar
     </tr>
     <tr>
     <td valign="top">
-
+    
     Background Top Color
 
 
     
     </td>
     <td valign="top">
-
+    
     -   button's background top color in all screens
 
     -   information's message background color in the *Forget Password* screen
@@ -71,14 +71,14 @@ Configure a branding style for the buttons and information messages for the Quar
     </tr>
     <tr>
     <td valign="top">
-
+    
     Background Bottom Color
 
 
     
     </td>
     <td valign="top">
-
+    
     -   button's background bottom color in all screens
 
     -   the button's background color when the mouse is hovered on it in all screens
@@ -90,14 +90,14 @@ Configure a branding style for the buttons and information messages for the Quar
     </tr>
     <tr>
     <td valign="top">
-
+    
     Border Color
 
 
     
     </td>
     <td valign="top">
-
+    
     the button's border color in all screens
 
 
@@ -106,14 +106,14 @@ Configure a branding style for the buttons and information messages for the Quar
     </tr>
     <tr>
     <td valign="top">
-
+    
     Text Color
 
 
     
     </td>
     <td valign="top">
-
+    
     the text in the buttons in all screens
 
 

@@ -46,14 +46,14 @@ To create a new OpenID Connect application, choose your scenario and follow the 
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Display Name*
 
 
     
     </td>
     <td valign="top">
-
+    
     Required. The display name of the application appears on the logon and registration pages.
 
 
@@ -62,14 +62,14 @@ To create a new OpenID Connect application, choose your scenario and follow the 
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Home URL*
 
 
     
     </td>
     <td valign="top">
-
+    
     Optional. Users are redirected to the *Home URL* after activating their accounts, when they are created via a CSV file import or the user registration service of Identity Authentication.
 
 
@@ -78,14 +78,14 @@ To create a new OpenID Connect application, choose your scenario and follow the 
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Type*
 
 
     
     </td>
     <td valign="top">
-
+    
     Optional.
 
 
@@ -94,14 +94,14 @@ To create a new OpenID Connect application, choose your scenario and follow the 
     </tr>
     <tr>
     <td valign="top">
-
+    
     *Parent Application*
 
 
     
     </td>
     <td valign="top">
-
+    
     Optional.
 
     > ### Remember:  
@@ -137,7 +137,7 @@ To create a new OpenID Connect application, choose your scenario and follow the 
     > -   [Configure Certificates for API Authentication](configure-certificates-for-api-authentication-c408083.md)
     > -   [Configure Risk-Based Authentication for an Application](configure-risk-based-authentication-for-an-application-bc52fbf.md#loiobc52fbf3d59447bbb6aa22f80d8b6056)
     > -   [Configure User Access to the Application](configure-user-access-to-the-application-8b147c4.md)
-    > -   [Enable E-Mail Verification](enable-e-mail-verification-483d26c.md)
+    > -   [Enable Email Verification](enable-email-verification-483d26c.md)
     > -   [Configuring Password Policies](configuring-password-policies-12b3395.md)
 
 
