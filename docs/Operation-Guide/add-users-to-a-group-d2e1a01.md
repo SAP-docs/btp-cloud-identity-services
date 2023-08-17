@@ -32,7 +32,7 @@ As a tenant administrator, you can add one or more users created for a specific 
 5.  Search for the users or select those from the list that you want to add to the group.
 
     > ### Note:  
-    > You can filter your search by *First Name*, *Last Name*, *Scim ID*, *E-Mail*, or *Login Name*.
+    > You can filter your search by *First Name*, *Last Name*, *Scim ID*, *Email*, or *Login Name*.
 
 6.  Save your changes.
 

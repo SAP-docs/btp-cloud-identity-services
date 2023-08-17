@@ -36,18 +36,25 @@ When Identity Authentication verifies the SAML2.0 message coming from the corpor
 
 2.  Under *Applications and Resources*, choose the *Applications* tile.
 
-3.  Choose the *Trust* tab.
+3.  Choose the application that you want to edit.
 
-4.  Under *Conditional Authentication*, choose *Configure SAML 2.0 Requests to Corporate Identity Providers*.
+    > ### Note:  
+    > Type the name of the application in the search field to filter the list items, or choose the application from the list on the left.
+    > 
+    > If you don’t have a created application in your list, you can create one. For more information, see [Create a New Application](create-a-new-application-0d4b255.md).
 
-5.  Under *Configure Issuer Name*, type the issuer suffix, which you want to add to the Identity Authentication default issuer name.
+4.  Choose the *Trust* tab.
+
+5.  Under *Conditional Authentication*, choose *Configure SAML 2.0 Requests to Corporate Identity Providers*.
+
+6.  Under *Configure Issuer Name*, type the issuer suffix, which you want to add to the Identity Authentication default issuer name.
 
     > ### Note:  
     > The suffix can contain only Latin letters \(A-Z and a-z\) and numbers. It must be up to 32 characters.
 
     The issuer name, which will be used when sending SAML2.0 requests to the corporate identity provider appears under the input field. It is in the format `<Identity_Authentication_default_issuer_name>/<issuer_name_suffix_typed_in_the_input_field>`. For example, `https://my-tenant.accounts.ondemand.com/suffix/>`.
 
-6.  Save your changes.
+7.  Save your changes.
 
 
 **Related Information**  

@@ -24,9 +24,9 @@ When you edit an existing custom authorization policy, you can add or delete res
 
     The details page of your application has an *Authorization Policies* tab.
 
-4.  Choose a custom authorization policy. Custom authorization policies appear with an:pencil2: \(Editable\) icon in the *Editable* column of the list of authorization policies. If the policy contains editable restrictions, it has an <span class="SAP-icons"></span> \(Editable Restrictions\) icon.
+4.  Choose the *Authorization Policies* tab and select a custom authorization policy. Custom authorization policies appear with an :pencil2: \(Editable\) icon in the *Editable* column of the list of authorization policies. If the policy contains editable restrictions, it has an <span class="SAP-icons"></span> \(Editable Restrictions\) icon.
 
-5.  Choose the *Edit* button.
+5.  Choose the :pencil2: *Edit* button.
 
     -   \(Optional\) To assign users, choose the *Assignment* tab. See [Assign Authorization Policies](assign-authorization-policies-eac8e5e.md).
 
@@ -37,12 +37,18 @@ When you edit an existing custom authorization policy, you can add or delete res
 
 7.  To edit the rules of the authorization policy, choose the *Rules* tab.
 
-8.  Choose :heavy_plus_sign: to see the possible `RESTRICT` options. This button is either directly below `RESTRICT` or on the left side at the bottom of the page.
+8.  Continue to edit the rules. Multiple options are available.
 
-9.  Choose one of the available attributes, an operation, and enter a value. You can choose a value from the value help or type it in.
+    -   Choose :heavy_plus_sign: to see the possible `RESTRICT` options. This button is either directly below `RESTRICT` or in an indented row below `RESTRICT`.
+
+    -   Choose *Add USE* to add a `USE` rule to the selected authorization policy. Select a `USE` rule from the available base policies.
+
+
+
+9.  For a `RESTRICT` rule, choose one of the available attributes, an operation, and enter a value. You can choose a value from the value help or type it in.
 
     > ### Note:  
-    > All rows that appear in a list directly below `RESTRICT` have an `AND` conjunction.
+    > All indented rows that appear in a list directly below `RESTRICT` or `USE` have an `AND` conjunction.
     > 
     > All rows starting with their own `RESTRICT` condition have an `OR` conjunction with the other `RESTRICT` rows.
 

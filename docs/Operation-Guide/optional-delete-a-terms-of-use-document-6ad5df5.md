@@ -15,7 +15,7 @@ You can delete a specific language version or the entire set of terms of use doc
 The documents will be deleted no matter if they are accepted or not by any users.
 
 > ### Note:  
-> You can delete only documents that are not defined for applications. To delete a document version or entire document sett that is defined for an application, you first you must set another terms of use for the applications. For more information, see [Define a Privacy Policy Document for an Application](define-a-privacy-policy-document-for-an-application-9611118.md).
+> You can delete only documents that are not defined for applications. To delete a document version or entire document sett that is defined for an application, you first you must set another terms of use for the applications. For more information, see [Define a Terms of Use Document for an Application](define-a-terms-of-use-document-for-an-application-8a28c70.md).
 
 <a name="task_stz_25j_3yb"/>
 

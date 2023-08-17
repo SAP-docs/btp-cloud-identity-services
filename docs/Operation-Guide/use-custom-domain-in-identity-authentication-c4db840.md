@@ -63,7 +63,7 @@ Identity Authentication allows you to use a custom domain that is different from
     </td>
     <td valign="top">
     
-    `ap.accounts.ondemand.com.cloud.sap.akadns.net`
+    `au.accounts.ondemand.com.cloud.sap.akadns.net`
 
 
     
@@ -79,7 +79,7 @@ Identity Authentication allows you to use a custom domain that is different from
     </td>
     <td valign="top">
     
-    SAP
+    AWS
 
 
     
@@ -87,29 +87,6 @@ Identity Authentication allows you to use a custom domain that is different from
     <td valign="top">
     
     `br.accounts.ondemand.com.cloud.sap.akadns.net`
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    China
-
-
-    
-    </td>
-    <td valign="top">
-    
-    SAP
-
-
-    
-    </td>
-    <td valign="top">
-    
-    `cn.accounts.ondemand.com.cloud.sap.akadns.net`
 
 
     
@@ -210,6 +187,29 @@ Identity Authentication allows you to use a custom domain that is different from
     <tr>
     <td valign="top">
     
+    India
+
+
+    
+    </td>
+    <td valign="top">
+    
+    AWS
+
+
+    
+    </td>
+    <td valign="top">
+    
+    `aws-ap-in.accounts.ondemand.com.cloud.sap.akadns.net`
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Japan
 
 
@@ -225,6 +225,29 @@ Identity Authentication allows you to use a custom domain that is different from
     <td valign="top">
     
     `jp.accounts.ondemand.com.cloud.sap.akadns.net`
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Saudi Arabia
+
+
+    
+    </td>
+    <td valign="top">
+    
+    SAP
+
+
+    
+    </td>
+    <td valign="top">
+    
+    `sa.accounts.ondemand.com.cloud.sap.akadns.net`
 
 
     
@@ -279,6 +302,29 @@ Identity Authentication allows you to use a custom domain that is different from
     <tr>
     <td valign="top">
     
+    Switzerland
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Azure
+
+
+    
+    </td>
+    <td valign="top">
+    
+    `azr-eu-ch.accounts.ondemand.com.cloud.sap.akadns.net`
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     UAE
 
 
@@ -317,6 +363,29 @@ Identity Authentication allows you to use a custom domain that is different from
     <td valign="top">
     
     `us-east.accounts.ondemand.com.cloud.sap.akadns.net`
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    US East Trial
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Azure
+
+
+    
+    </td>
+    <td valign="top">
+    
+    `trial-accounts.ondemand.com.cloud.sap.akadns.net`
 
 
     

@@ -177,6 +177,383 @@ Identity Authentication
 </td>
 <td valign="top">
 
+2023-08-16
+
+
+
+</td>
+<td valign="top">
+
+2023-08-16
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Risk-Based Authentication
+
+
+
+</td>
+<td valign="top">
+
+New authentication method *Trusted IdP SAML Assertion* is available when you create a new rule for risk-based auhentication. See [Create a New Rule](Operation-Guide/configure-risk-based-authentication-for-an-application-bc52fbf.md#loio18d02ab9cc7d4caf83d8654c8c51a175) .
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-08-16
+
+
+
+</td>
+<td valign="top">
+
+2023-08-16
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Implicit Grant Type Not Enabled by Default
+
+
+
+</td>
+<td valign="top">
+
+Today, when you create a new OpenID Connect \(OIDC\) application in Identity Authentication, the `Implicit` grant type is enabled by default.
+
+With the planned change, new applications have the `Implicit` grant type **disabled** by default.
+
+Action: Check if you require the `Implicit` grant type for new applications:
+
+-   Yes: Ensure your processes for creating new applications include explicitly enabling the `Implicit` grant type.
+
+    -   For the administration console, see [Configure OpenID Connect Application for Implicit Flow](https://help.sap.com/docs/IDENTITY_AUTHENTICATION/6d6d63354d1242d185ab4830fc04feb1/c64180e84cae4303ba80b2d4b59788b7.html).
+
+    -   For the Identity service, see [Reference Information for the Identity Service of SAP BTP](https://help.sap.com/docs/IDENTITY_AUTHENTICATION/6d6d63354d1242d185ab4830fc04feb1/9379444abf3f4e2cbaade7c4001df381.html).
+
+
+-   No: Nothing to do.
+
+
+
+
+</td>
+<td valign="top">
+
+Required
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+Announcement
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-08-16
+
+
+
+</td>
+<td valign="top">
+
+2023-11-22
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Refresh Token Flow of OIDC Protocol Restricted to Validity of Web Session
+
+
+
+</td>
+<td valign="top">
+
+Today, you can set the validity of refresh tokens with the token policy configuration for OpenID Connect \(OIDC\). We already recommend that you add the `offline_access` scope to authorization code requests if you want the validity of refresh tokens to exceed the session timeout. Barring no other changes, the refresh token remains valid for its configured validity.
+
+With the planned change, the service couples the validity of refresh tokens to the session timeout. Refresh tokens expire with the user session, unless you add the `offline_access scope`.
+
+Action: Check if you define a refresh token validity for your applications longer than 12h:
+
+-   Yes: Ensure that you decouple the refresh token from the user session with the `offline_access` scope.
+
+    For more information, see [Token Policy Configuration for Applications](https://help.sap.com/docs/IDENTITY_AUTHENTICATION/6d6d63354d1242d185ab4830fc04feb1/c4ba52e748554863917b046bf1b7b355.html).
+
+-   No: Nothing to do.
+
+
+
+
+</td>
+<td valign="top">
+
+Required
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+Announcement
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-08-16
+
+
+
+</td>
+<td valign="top">
+
+2023-11-22
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
 2023-08-03
 
 
@@ -265,14 +642,14 @@ Identity Authentication
 </td>
 <td valign="top">
 
-2023-08-03
+2023-08-09
 
 
 
 </td>
 <td valign="top">
 
-2023-08-17
+2023-08-30
 
 
 
@@ -304,7 +681,7 @@ Terms of Use Documents
 </td>
 <td valign="top">
 
-Tenant administrator can delete na entire terms of use documents set. See [\(Optional\) Delete a Terms of Use Document](Operation-Guide/optional-delete-a-terms-of-use-document-6ad5df5.md).
+Tenant administrator can delete an entire terms of use documents set. See [\(Optional\) Delete a Terms of Use Document](Operation-Guide/optional-delete-a-terms-of-use-document-6ad5df5.md).
 
 
 

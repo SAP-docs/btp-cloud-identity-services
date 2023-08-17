@@ -340,7 +340,7 @@ This procedure is performed by the domain administrator. If you are not a domain
     > </td>
     > <td valign="top">
     > 
-    > `ap.accounts.ondemand.com.cloud.sap.akadns.net`
+    > `au.accounts.ondemand.com.cloud.sap.akadns.net`
     > 
     > 
     > 
@@ -356,7 +356,7 @@ This procedure is performed by the domain administrator. If you are not a domain
     > </td>
     > <td valign="top">
     > 
-    > SAP
+    > AWS
     > 
     > 
     > 
@@ -364,29 +364,6 @@ This procedure is performed by the domain administrator. If you are not a domain
     > <td valign="top">
     > 
     > `br.accounts.ondemand.com.cloud.sap.akadns.net`
-    > 
-    > 
-    > 
-    > </td>
-    > </tr>
-    > <tr>
-    > <td valign="top">
-    > 
-    > China
-    > 
-    > 
-    > 
-    > </td>
-    > <td valign="top">
-    > 
-    > SAP
-    > 
-    > 
-    > 
-    > </td>
-    > <td valign="top">
-    > 
-    > `cn.accounts.ondemand.com.cloud.sap.akadns.net`
     > 
     > 
     > 
@@ -487,6 +464,29 @@ This procedure is performed by the domain administrator. If you are not a domain
     > <tr>
     > <td valign="top">
     > 
+    > India
+    > 
+    > 
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > AWS
+    > 
+    > 
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > `aws-ap-in.accounts.ondemand.com.cloud.sap.akadns.net`
+    > 
+    > 
+    > 
+    > </td>
+    > </tr>
+    > <tr>
+    > <td valign="top">
+    > 
     > Japan
     > 
     > 
@@ -502,6 +502,29 @@ This procedure is performed by the domain administrator. If you are not a domain
     > <td valign="top">
     > 
     > `jp.accounts.ondemand.com.cloud.sap.akadns.net`
+    > 
+    > 
+    > 
+    > </td>
+    > </tr>
+    > <tr>
+    > <td valign="top">
+    > 
+    > Saudi Arabia
+    > 
+    > 
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > SAP
+    > 
+    > 
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > `sa.accounts.ondemand.com.cloud.sap.akadns.net`
     > 
     > 
     > 
@@ -556,6 +579,29 @@ This procedure is performed by the domain administrator. If you are not a domain
     > <tr>
     > <td valign="top">
     > 
+    > Switzerland
+    > 
+    > 
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > Azure
+    > 
+    > 
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > `azr-eu-ch.accounts.ondemand.com.cloud.sap.akadns.net`
+    > 
+    > 
+    > 
+    > </td>
+    > </tr>
+    > <tr>
+    > <td valign="top">
+    > 
     > UAE
     > 
     > 
@@ -594,6 +640,29 @@ This procedure is performed by the domain administrator. If you are not a domain
     > <td valign="top">
     > 
     > `us-east.accounts.ondemand.com.cloud.sap.akadns.net`
+    > 
+    > 
+    > 
+    > </td>
+    > </tr>
+    > <tr>
+    > <td valign="top">
+    > 
+    > US East Trial
+    > 
+    > 
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > Azure
+    > 
+    > 
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > `trial-accounts.ondemand.com.cloud.sap.akadns.net`
     > 
     > 
     > 

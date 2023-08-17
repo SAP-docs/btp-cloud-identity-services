@@ -6,14 +6,6 @@ With the Token Exchange flow you can exchange one token for another. For more in
 
 
 
-> ### Note:  
-> The exchange of an OpenID Connect token with a SAML 2.0 is possible in two scenarios:
-> 
-> -   [SAP Note 2043039 - SAML 2.0 Authentication via HTTP Request Header](https://launchpad.support.sap.com/#/notes/SAP Note 2043039 - SAML 2.0 Authentication via HTTP Request Header)
-> -   [SAML 2.0 Bearer Assertion Flow for OAuth 2.0 Client](https://help.sap.com/docs/SAP_NETWEAVER_750/e815bb97839a4d83be6c4fca48ee5777/01043cc6765b48cfbc1564a9839a29ee.html)
-
-
-
 ## **Request**
 
 **URI:**`https://<tenant ID>.accounts.ondemand.com/oauth2/token`
@@ -373,9 +365,13 @@ Allowed values for `requested_token_type` parameter:
 -   `urn:ietf:params:oauth:token-type:access_token`
 -   `urn:ietf:params:oauth:token-type:id_token`
 -   `urn:ietf:params:oauth:token-type:saml2`
+-   `urn:sap:identity:oauth:token-type:saml2-header`
 
 > ### Note:  
-> If you request `urn:ietf:params:oauth:token-type:saml2`, allow all APIs for principal propagation in the *Provided APIs* section in the administration console. For more information, see [Consume APIs from Other Applications](../Development/consume-apis-from-other-applications-29e204d.md).
+> The exchange of an OpenID Connect token with SAML 2.0 is possible in two scenarios, depending on the requested token type string:
+> 
+> -   `urn:sap:identity:oauth:token-type:saml2-header` - [SAP Note 2043039 - SAML 2.0 Authentication via HTTP Request Header](https://launchpad.support.sap.com/#/notes/SAP Note 2043039 - SAML 2.0 Authentication via HTTP Request Header)
+> -   `urn:ietf:params:oauth:token-type:saml2` - [SAML 2.0 Bearer Assertion Flow for OAuth 2.0 Client](https://help.sap.com/docs/SAP_NETWEAVER_750/e815bb97839a4d83be6c4fca48ee5777/01043cc6765b48cfbc1564a9839a29ee.html)
 
 
 
@@ -490,7 +486,7 @@ Request body
 > Content-Type: application/json
 > 
 > {
-> "access_token": "<base64-encoded-SAML2-bearer-assertion>",
+> "access_token": "<Base64Url-Encoded-SAML2-Bearer-Assertion>",
 > "issued_token_type": "urn:ietf:params:oauth:token-type:saml2",
 > "token_type": "Bearer",
 > "expires_in": 900

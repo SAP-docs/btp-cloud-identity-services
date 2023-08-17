@@ -17,6 +17,11 @@ As a tenant administrator, you can create new users or update existing ones with
 
 With the CSV file, you can import up to 25000 users to create new users or to update existing users.
 
+> ### Remember:  
+> The `SCIM ID` serves as the primary identifier if it is found in the CSV file. The users will only be updated, but not created if there are users with a new `SCIM ID`. This process works within the same tenant because the SCIM IDs differ across tenants.
+> 
+> If the`SCIM ID` doesn't exist in the CSV file, the create and update functionality will function as expected, but the administrator won't be able to modify the `username` or `email`.
+
 The attributes can take one of the following types:
 
 
@@ -276,7 +281,7 @@ API - GET `https://<tenant ID>.accounts.ondemand.com/service/resource?resourceTy
 > 
 > If there is no column with the name of a certain attribute, the value of the attribute remains unchanged.
 > 
-> If the names of the coumns are not from the core schema, the must be written with the `urn:attribute name`.
+> If the names of the columns are not from the core schema, they must be written with the `urn:attribute name`.
 
 > ### Tip:  
 > To update the `emails` or `userName` attribute you must provide the `SCIM ID` for the users that you want to update.
@@ -288,9 +293,9 @@ The CSV file can contain only columns with no spaces between them, with all the 
 
 If you enter the data in the CSV file as text, you must separate the entries with commas. Beware not to put any spaces before or after the comas. If you enter more than one value in a single entry, separate the values within the entry with semicolons.
 
-Values should not contain semicolons. If there is a semicolon, in the import the value will be split by that semicolon and more than one attribute value will be added.
+Values shouldn't contain semicolons. If there is a semicolon, in the import the value will be split by that semicolon and more than one attribute value will be added.
 
-Depending on your *Logon Alias* configuration in the administration console you must consider the following:
+Depending on your *Logon Alias* configuration in the administration console, you must consider the following:
 
 -   If *Email* is required and unique, in the csv file at least one `emails[0].value` must be present and unique.
 -   If *Login Name* is required and unique, in the csv file at least one `userName` must be present and unique.

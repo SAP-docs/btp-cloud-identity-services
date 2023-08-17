@@ -573,6 +573,18 @@ Each rule contains the following information:
 
     Specify the authenticating method, which the authenticating user has to use. If no method is selected, the rule is valid for any of the methods.
 
+    You can choose from the following:
+
+    -   *Client Certificate*
+    -   *SPNEGO*
+    -   *User Name and Password*
+    -   *Token*
+    -   *Social Identity Provider*
+    -   *Trusted IdP SAML Assertion*
+
+    > ### Note:  
+    > If the user has an active session with any of the methods, and that method is included in the rule, they can access the application without the need for additional authentication.
+
 -   *User Type*
 
     Specify the type, which the authenticating user must have. If no user type is selected, the rule is valid for any of the types.

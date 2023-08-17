@@ -44,6 +44,6 @@ You have the following options:
     -   *Combine* Create one authorization policy with an OR combination of the rules of two authorization policies. See [Combine Authorization Policies](combine-authorization-policies-1a69414.md).
 
 
-    You can now continue by assigning the authorization policy to a user or changing its rule.
+    You can now continue by giving the authorization policy a name, choosing the base policies, assigning it to a user or changing its rule.
 
 

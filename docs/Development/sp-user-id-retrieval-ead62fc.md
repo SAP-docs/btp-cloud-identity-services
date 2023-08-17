@@ -177,6 +177,43 @@ Query string
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+`applicationId`
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+<td valign="top">
+
+String
+
+
+
+</td>
+<td valign="top">
+
+The ID of the subscribed application. The user is retrieved for the application with the provided ID.
+
+
+
+</td>
+<td valign="top">
+
+Query string
+
+
+
+</td>
+</tr>
 </table>
 
 

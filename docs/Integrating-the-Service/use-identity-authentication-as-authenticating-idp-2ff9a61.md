@@ -65,6 +65,9 @@ S/4HANA Cloud or Integrated Business Planning
 
 `Login Name`
 
+> ### Note:  
+> For successful authentication, the user name of the usiness user in S/4HANA Cloud or Integrated Business Planning must be identical to the login name in Identity Authentication.
+
 
 
 </td>
@@ -235,6 +238,9 @@ S/4HANA Cloud or SAP Integrated Business Planning
 <td valign="top">
 
 `Email`
+
+> ### Note:  
+> For successful authentication, the user name of the usiness user in S/4HANA Cloud or Integrated Business Planning must be identical to the login name in Identity Authentication.
 
 
 

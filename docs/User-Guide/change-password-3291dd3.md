@@ -14,6 +14,8 @@ Your password grants you access to any platform connected to Identity Authentica
 
 > ### Tip:  
 > If you don't know your current password, follow the *Forgot Password* link in the logon page of the application. This will trigger the **Forgot Password** process, and you will receive an email with instructions how to reset your password.
+> 
+> If you don’t see the *Forgot Password* link, contact the system administrator of your application.
 
 To change your current password, follow the procedure below:
 

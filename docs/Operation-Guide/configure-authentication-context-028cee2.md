@@ -14,17 +14,24 @@ Tenant administrator can configure the authentication context in the request sen
 
 2.  Under *Applications and Resources*, choose the *Applications* tile.
 
-3.  Choose the *Trust* tab.
+3.  Choose the application that you want to edit.
 
-4.  Under *Conditional Authentication*, choose *Configure SAML 2.0 Requests to Corporate Identity Providers*.
+    > ### Note:  
+    > Type the name of the application in the search field to filter the list items, or choose the application from the list on the left.
+    > 
+    > If you don’t have a created application in your list, you can create one. For more information, see [Create a New Application](create-a-new-application-0d4b255.md).
 
-5.  Under *Configure Authentication Context*, choose one of the following options:
+4.  Choose the *Trust* tab.
+
+5.  Under *Conditional Authentication*, choose *Configure SAML 2.0 Requests to Corporate Identity Providers*.
+
+6.  Under *Configure Authentication Context*, choose one of the following options:
 
     -   *None* - Authentication context is not sent. The requested authentication context from the service provider is ignored.
     -   *Service Provider Authentication Context* - The received authentication context from the service provider is sent.
     -   *Password Protected Transport* - Authentication context class `urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport` is sent. The requested authentication context from the service provider is ignored.
 
-6.  Save your changes.
+7.  Save your changes.
 
 
 **Related Information**  

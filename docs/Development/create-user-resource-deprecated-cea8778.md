@@ -66,7 +66,7 @@ The create user resource method of the Identity Authentication implementation of
 -   `sendMail`
 
     > ### Note:  
-    > The parameter supports Boolean values *true* and *false* in String format. The default value is *true*. If you don’t want to send an e-mail, the value should be passed with value *false*.
+    > The parameter supports Boolean values *true* and *false* in String format. The default value is *true*. If you don’t want to send an email, the value should be passed with value *false*.
 
 -   `mailVerified`
 
@@ -198,14 +198,14 @@ The create user resource method of the Identity Authentication implementation of
     </td>
     <td valign="top">
     
-    The user will receive e-mail. He or she will be able to log on.
+    The user will receive email. He or she will be able to log on.
 
 
     
     </td>
     <td valign="top">
     
-    The user will receive e-mail. He or she has to click the verification link in the e-mail.
+    The user will receive email. He or she has to click the verification link in the email.
 
 
     
@@ -421,16 +421,16 @@ The create user resource method of the Identity Authentication implementation of
 -   emailTemplateSetId
 
     > ### Note:  
-    > The ID of the e-mail template set. It can be copied from the URL when the e-mail template set is selected in the administration console.
+    > The ID of the email template set. It can be copied from the URL when the email template set is selected in the administration console.
     > 
-    > When provided, the newly created user receives on-behalf registration e-mail from the template set whose id is provided.
+    > When provided, the newly created user receives on-behalf registration email from the template set whose id is provided.
 
 -   applicationId
 
     > ### Note:  
     > The ID of the application. It can be copied from the URL when the application is selected in the administration console.
     > 
-    > When provided, the newly created user is registered for the application whose ID is provided. The user receives an on-behalf registration e-mail. The account activation page is custom branded for the application. If `home URL` is configured, the user is redirected to it after the account activation. If `targetURL` is provided, the user is redirected to it after the account activation, no matter if the home URL is configured or not.
+    > When provided, the newly created user is registered for the application whose ID is provided. The user receives an on-behalf registration email. The account activation page is custom branded for the application. If `home URL` is configured, the user is redirected to it after the account activation. If `targetURL` is provided, the user is redirected to it after the account activation, no matter if the home URL is configured or not.
 
 
 **Enterprise User Schema Extension**
@@ -674,7 +674,7 @@ provided
 </tr>
 </table>
 
-**Result**: Create a user that is provisioned from another system. The user will be able to log on. He or she will receive e-mail, but does not have to click a verification link in the e-mail.
+**Result**: Create a user that is provisioned from another system. The user will be able to log on. He or she will receive email, but does not have to click a verification link in the email.
 
 **Create Corporate User Store User**
 
@@ -1037,7 +1037,7 @@ Bad Request
 
 -   If `applicationId` is not valid.
 
--   If the template set for the `emailTemplateSetId` doesn't contain on-behalf registration e-mail.
+-   If the template set for the `emailTemplateSetId` doesn't contain on-behalf registration email.
 
 
 
