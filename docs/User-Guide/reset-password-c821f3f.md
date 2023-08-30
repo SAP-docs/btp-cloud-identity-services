@@ -23,7 +23,7 @@ If you don't know your current password, follow the *Forgot Password* link in th
 
 2.  Follow the *Forgot Password* link.
 
-3.  **Optional:** Provide your email address and press the *Send* button.
+3.  Provide your email address and press the *Send* button.
 
     An email with a link to a page where you can reset your password will be sent to you. The email might take a few minutes to reach your inbox.
 

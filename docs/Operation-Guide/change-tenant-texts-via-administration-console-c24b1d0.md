@@ -16,11 +16,11 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 
 ## Context
 
-The predefined tenant texts are listed in the administration console for SAP Cloud Identity Services. The texts are classified by category, key, and default value. Each key stores the name of a parameter, and the corresponding value is the text that can be changed and updated as custom value. The keys are self-explanatory and indicate the category and where the texts are used. For example, the `logon.ui.label.user=E-Mail or User Name` key value pair is for the type of information that the user must provide to log on to the application. On the *Logon* screen you see:
+The predefined tenant texts are listed in the administration console for SAP Cloud Identity Services. The texts are classified by category, key, and default value. Each key stores the name of a parameter, and the corresponding value is the text that can be changed and updated as custom value. The keys are self-explanatory and indicate the category and where the texts are used. For example, the `logon.ui.label.user=Email or User Name` key value pair is for the type of information that the user must provide to sign in to the application. On the *Sign In* screen you see:
 
 ![](images/Before_Change_a1be13b.png)
 
-If you want to change the user identifier text, you have to update the key value pair `logon.ui.label.user=E-Mail or User Name` to `logon.ui.label.user=E-mail` to receive:
+If you want to change the user identifier text, you have to update the key value pair `logon.ui.label.user=Email or User Name` to `logon.ui.label.user=Email` to receive:
 
 ![](images/After_Change_8232f7d.png)
 

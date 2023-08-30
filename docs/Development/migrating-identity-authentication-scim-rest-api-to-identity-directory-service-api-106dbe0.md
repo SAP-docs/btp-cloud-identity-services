@@ -352,6 +352,9 @@ Identity Directory Service API \(Successor\)
 > 
 > \*\*The <id of the group\*\*\> is in the universally unique identifier \(UUID\) format. For example, `7369fa2b-16as-4sd7-87c7-26a01of0bk78`.
 
+> ### Remember:  
+> To assign group to a user, use the groups endpoint.
+
 
 
 ## Attributes Mapping

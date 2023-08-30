@@ -21,7 +21,7 @@ The option to configure authorization policies for the administration console is
 When you create a new policy, you can restrict the users on the basis of the following attributes: `user.name`, `country`, `costCenter`, `division`, `department`, and `organization`. The subsets of the user attributes are configured via `user.attributes`, and `user.excludedAttributes`.
 
 > ### Remember:  
-> You can use only the equal \(`=` \) and not equal \(`<>`\) operators . If you use other operators, this could result in not having access to the administration console.
+> You can use only the equal \(`=` \) operator . If you use other operators, this could result in not having access to the administration console.
 
 **User Attributes**
 

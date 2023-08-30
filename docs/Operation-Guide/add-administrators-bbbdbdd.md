@@ -54,14 +54,16 @@ To add a person as a new tenant administrator, proceed as follows:
 
 3.  On the left-hand panel press *Add* \> *User*.
 
-4.  Make the appropriate entries in the *Email*, *First Name*, and *Last Name* fields for the user you want to add as an administrator.
+4.  Make the appropriate entries in the *Identifier*, *First Name*, and *Last Name* fields for the user you want to add as an administrator.
 
-    The *Email* must be unique for the tenant.
+    The *Identifier* field can take user `email` or `login name`:
 
-    The *First Name*, and *Last Name* fields will be prefilled automatically for users that already exist in system.
+    -   If `email` is used, it must be unique for the tenant.
+
+    -   If `login name` is used, an existing user with that login name must exist.
 
     > ### Remember:  
-    > Once the administrator is created, the *First Name*, *Last Name*, and *Email* fields are not editable from the administrator section. If you want to change the information you must go to the *User Management* section. For more information about how to edit the user information, see [List and Edit User Details](list-and-edit-user-details-045cb01.md).
+    > Once the administrator is created, the *First Name*, *Last Name*, and *Identifier* fields are not editable from the administrator section. If you want to change the information you must go to the *User Management* section. For more information about how to edit the user information, see [List and Edit User Details](list-and-edit-user-details-045cb01.md).
 
 5.  Assign the required administrator roles for the user.
 
@@ -161,7 +163,7 @@ To add a person as a new tenant administrator, proceed as follows:
     </td>
     <td valign="top">
     
-    This role gives the tenant administrator permission to create, edit, and delete user groups via the administration console.The tenant administrator can also assign authorization policies.
+    This role gives the tenant administrator permission to create, edit, and delete groups via the administration console.The tenant administrator can also assign authorization policies.
 
 
     

@@ -21,11 +21,11 @@ To call the methods of this Change Tenant Texts REST API you must have a system 
 
 ## Usage
 
-The predefined tenant texts are stored in the [Tenant Texts](change-tenant-texts-rest-api-66ad80a.md#loio2e8cc1d45b844282a8eb19450b1e68ec) document. The document contains configurable parameters stored as key value pairs of strings. Each key stores the name of a parameter, and the corresponding value is the text that can be changed and updated. The keys are self-explanatory and show where the texts are used. For example, the `logon.ui.label.user=E-Mail or User Name` key value pair is for the type of information that the user must provide to log on to the application. On the *Logon* screen you see:
+The predefined tenant texts are stored in the [Tenant Texts](change-tenant-texts-rest-api-66ad80a.md#loio2e8cc1d45b844282a8eb19450b1e68ec) document. The document contains configurable parameters stored as key value pairs of strings. Each key stores the name of a parameter, and the corresponding value is the text that can be changed and updated. The keys are self-explanatory and show where the texts are used. For example, the `logon.ui.label.user=Email or User Name` key value pair is for the type of information that the user must provide to sign in to the application. On the *Sign In* screen you see:
 
 ![](../Operation-Guide/images/Before_Change_a1be13b.png)
 
-If you want to change the user identifier text you have to update the key value pair `logon.ui.label.user=E-Mail or User Name` to `logon.ui.label.user=E-mail` to receive:
+If you want to change the user identifier text you have to update the key value pair `logon.ui.label.user=Email or User Name` to `logon.ui.label.user=Email` to receive:
 
 ![](../Operation-Guide/images/After_Change_8232f7d.png)
 
@@ -118,7 +118,7 @@ URI
 </table>
 
 > ### Note:  
-> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation e-mail with an URL in it. This URL contains the *tenant ID*.
+> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with an URL in it. This URL contains the *tenant ID*.
 
 **Related Information**  
 

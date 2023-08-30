@@ -31,14 +31,14 @@ Each rule contains the following information:
 
     Specify the domain of the email address that comes after the @ symbol. If no is domain entered, the rule is valid for any domain.
 
--   *User Group*
+-   *Group*
 
-    Specify the user group, which the authenticating user must be part of. If no user group is selected, the rule is valid for any of the groups.
+    Specify the group, which the authenticating user must be part of. If no group is selected, the rule is valid for any of the groups.
 
-    The user groups must be configured in the administration console for SAP Cloud Identity Services. For more information, see [User Groups](user-groups-ddd067c.md).
+    The user groups must be configured in the administration console for SAP Cloud Identity Services. For more information, see [Groups](groups-ddd067c.md).
 
     > ### Note:  
-    > The authenticating user must exist in the user store of Identity Authentication for the *User Group* criteria to be checked properly.
+    > The authenticating user must exist in the user store of Identity Authentication for the *Group* criteria to be checked properly.
 
 -   *User Type*
 
@@ -61,7 +61,7 @@ Each rule contains the following information:
 
 
 > ### Remember:  
-> The fields *Domain*, *User Group*, *User Type*, and *IP Range* are not mandatory, but at least one of them has to be specified.
+> The fields *Domain*, *Group*, *User Type*, and *IP Range* are not mandatory, but at least one of them has to be specified.
 
 
 

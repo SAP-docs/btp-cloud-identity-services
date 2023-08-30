@@ -50,7 +50,7 @@ By default, *Allow Identity Authentication users only* is disabled, and all user
 As a next step, you can assign a group or groups to the corporate identity provider. Only users from the Identity Authentication that are members of the assigned group can access the application.
 
 > ### Remember:  
-> You can assign user groups, only when *Allow Identity Authentication users only* option is enabled. If disabled, the assigned user groups option is not taken into consideration.
+> You can assign groups, only when *Allow Identity Authentication users only* option is enabled. If disabled, the assigned groups option is not taken into consideration.
 
 
 
@@ -193,7 +193,7 @@ You have enabled *Allow Identity Authentication users only* option. For more inf
 
 4.  Choose *Identity Federation*.
 
-    You will see a list of the user groups assigned to this corporate identity provider. If no groups are assigned, the list will be empty.
+    You will see a list of the groups assigned to this corporate identity provider. If no groups are assigned, the list will be empty.
 
 5.  Choose the *Assign Groups* button.
 
@@ -201,14 +201,14 @@ You have enabled *Allow Identity Authentication users only* option. For more inf
 
     The list does not include the groups that are already assigned to the corporate identity provider.
 
-    If you do not have any user groups in your list, you can create one. For more details about how to create user groups and assign the group to a user, see Related Information.
+    If you do not have any groups in your list, you can create one. For more details about how to create groups and assign the group to a user, see Related Information.
 
 7.  Save your changes.
 
     If the operation is successful, the system displays the message ***Identity provider <name of identity provider\> updated***.
 
     > ### Note:  
-    > To unassign user groups, select the groups you want to unassign, choose the *Unassign Groups* button, and confirm the operation in the dialog.
+    > To unassign groups, select the groups you want to unassign, choose the *Unassign Groups* button, and confirm the operation in the dialog.
     > 
     > Users that belong only to the unassigned groups will not be able to access the application any more.
 
@@ -216,7 +216,7 @@ You have enabled *Allow Identity Authentication users only* option. For more inf
 **Related Information**  
 
 
-[Create a New User Group](create-a-new-user-group-b1b638d.md "As a tenant administrator you can create new user groups in the tenant via the administration console for SAP Cloud Identity Services.")
+[Create a New Group](create-a-new-group-b1b638d.md "As a tenant administrator you can create new user groups in the tenant via the administration console for SAP Cloud Identity Services.")
 
 [Assign Groups to a User](assign-groups-to-a-user-bfdeb9c.md "As a tenant administrator, you can assign one or more groups created for a specific tenant to a user via the administration console for SAP Cloud Identity Services.")
 

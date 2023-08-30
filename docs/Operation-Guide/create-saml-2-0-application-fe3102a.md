@@ -8,7 +8,7 @@ You can create a new SAML 2.0 application and customize it to comply with your c
 
 ## Context
 
-When you create a new application. It is set as SAML 2.0 by default.
+To create a new SAML 2.0 application you have to add a new application to the list of applications in Identity Authentication, and make sure that the protocol of the application is set to SAML 2.0.
 
 To create a new SAML 2.0 application, proceed as follows:
 
@@ -106,6 +106,25 @@ To create a new SAML 2.0 application, proceed as follows:
 
     > ### Remember:  
     > Newly created applications with an assigned parent application will inherit all the configurations from the parent except for the `Client ID` and `Secrets`. The inherited configurations will be marked as such.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Protocol Authentication*
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Select the *SAML 2.0* radio-button.
+
+    > ### Remember:  
+    > Newly created applications with an assigned parent application will inherit the protocol from the parent. To change the protocol, first create the new application and then edit it.
 
 
     

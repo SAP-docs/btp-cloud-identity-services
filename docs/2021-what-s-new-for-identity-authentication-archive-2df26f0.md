@@ -3361,7 +3361,7 @@ User Groups
 </td>
 <td valign="top">
 
-The restriction to use certain symbols in the name of a user group was removed. See [Create a New User Group](Operation-Guide/create-a-new-user-group-b1b638d.md) and [Create User Resource \(Deprecated\)](Development/create-user-resource-deprecated-cea8778.md).
+The restriction to use certain symbols in the name of a user group was removed. See [Create a New Group](Operation-Guide/create-a-new-group-b1b638d.md) and [Create User Resource \(Deprecated\)](Development/create-user-resource-deprecated-cea8778.md).
 
 
 
@@ -3418,7 +3418,7 @@ Multiple Delete Option
 </td>
 <td valign="top">
 
-The multiple delete option for applications and user groups via the administration console isn’t available anymore. You can delete applications and user groups one by one. See [Delete Applications](Operation-Guide/delete-applications-25b632b.md) and [Delete User Groups](Operation-Guide/delete-user-groups-9853912.md).
+The multiple delete option for applications and user groups via the administration console isn’t available anymore. You can delete applications and user groups one by one. See [Delete Applications](Operation-Guide/delete-applications-25b632b.md) and [Delete Groups](Operation-Guide/delete-groups-9853912.md).
 
 
 

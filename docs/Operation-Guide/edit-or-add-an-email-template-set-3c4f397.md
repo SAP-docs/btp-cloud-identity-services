@@ -59,7 +59,7 @@ To edit or add an email template, follow the procedure below:
 
 5.  Select the tab signifying the process, which you want to add or change the template for.
 
-6.  Add another language version by choosing the *\+Add* button or edit an existing language version by selecting the respective list item.
+6.  Add another language version by choosing the *\+Add Language* button or edit an existing language version by selecting the respective list item.
 
     1.  Choose language from the dropdown.
 

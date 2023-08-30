@@ -177,6 +177,270 @@ Identity Authentication
 </td>
 <td valign="top">
 
+2023-08-30
+
+
+
+</td>
+<td valign="top">
+
+2023-08-30
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Manage Administrators
+
+
+
+</td>
+<td valign="top">
+
+Tenant administrator can add another administrator with login name as identifier. See [Add User as Administrator](Operation-Guide/add-administrators-bbbdbdd.md#loio1dc498bff0674743a1a3a0ec3f0bf298).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-08-30
+
+
+
+</td>
+<td valign="top">
+
+2023-08-30
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Off-Cycle Upgrade
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-08-18
+
+
+
+</td>
+<td valign="top">
+
+2023-08-17
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
 2023-08-16
 
 
@@ -1739,7 +2003,7 @@ User Groups
 </td>
 <td valign="top">
 
-Tenant administrator can search for specific member in a group via SCIM ID. See [List and Search Users in User Groups](Operation-Guide/list-and-search-users-in-user-groups-4ac340a.md).
+Tenant administrator can search for specific member in a group via SCIM ID. See [List and Search Users in Groups](Operation-Guide/list-and-search-users-in-groups-4ac340a.md).
 
 
 

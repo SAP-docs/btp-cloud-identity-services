@@ -22,7 +22,7 @@ To create a new OpenID Connect application follow the procedure below:
 
 3.  Choose the *Create* button on the left-hand panel and fill in the information in the dialog box.
 
-4.  Provide the following information and save your configuration:
+4.  Provide the following information:
 
 
     <table>
@@ -109,50 +109,65 @@ To create a new OpenID Connect application follow the procedure below:
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    *Protocol Authentication*
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Select the *OpenID Connect* radio-button.
+
+    > ### Remember:  
+    > Newly created applications with an assigned parent application will inherit the protocol from the parent. To change the protocol, first create the new application and then edit it.
+
+
+    
+    </td>
+    </tr>
     </table>
     
+5.  Choose *\+Create*.
+
     Once the application has been created, the system displays the message ***Application <name of application\> created***.
 
     The newly created application appears on the list with the applications on the left. It is selected and you can set its protocol to OpenID Connect.
 
-5.  Choose *Trust* \> *SINGLE SIGN-ON* \> *Protocol* 
 
-    > ### Caution:  
-    > Make sure that the application you want to configure as OpenID connect is selected on the left.
 
-6.  Select the *OpenID Connect* radio-button.
 
-7.  Save your selection.
+<a name="copye3baf39196c9470aa3a32000e079363a__postreq_xsy_mpp_pyb"/>
 
-    The system displays the message ***Application <name of application\> updated***.
+## Next Steps
 
-    > ### Note:  
-    > \(Optional\) If necessary, configure additional settings for the application. For more information about the supported configurations for the OpenID Connect applications, see the following links:
-    > 
-    > -   [Change an Application's Display Name](change-an-application-s-display-name-83d65d0.md)
-    > -   [Configure an Application's Home URL](configure-an-application-s-home-url-be6d6f2.md)
-    > -   [Visit an Application's Web Page](visit-an-application-s-web-page-2b67225.md)
-    > -   [Configure the User Attributes Sent to the Application](configure-the-user-attributes-sent-to-the-application-d361407.md)
-    > -   [Configure the Default Attributes Sent to the Application](configure-the-default-attributes-sent-to-the-application-a2f1e46.md)
-    > -   [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md)
-    > -   [Configure Certificates for API Authentication](configure-certificates-for-api-authentication-c408083.md)
-    > -   [Enable or Disable Kerberos Authentication for an Application](enable-or-disable-kerberos-authentication-for-an-application-11121c9.md)
-    > -   [Configure Risk-Based Authentication for an Application](configure-risk-based-authentication-for-an-application-bc52fbf.md#loiobc52fbf3d59447bbb6aa22f80d8b6056)
-    > -   [Configure User Access to the Application](configure-user-access-to-the-application-8b147c4.md)
-    > -   [Authenticating Identity Provider for an Application](authenticating-identity-provider-for-an-application-b3aae12.md)
-    > -   [Enable Email Verification](enable-email-verification-483d26c.md)
-    > -   [Configuring Password Policies](configuring-password-policies-12b3395.md)
-    > -   [Configuring Privacy Policies](configuring-privacy-policies-ed48466.md)
-    > -   [Configuring Terms of Use](configuring-terms-of-use-61d3a86.md)
-    > -   [Display Application Name on Logon Page](display-application-name-on-logon-page-c02798e.md)
-    > -   [Configure a Logo for an Application](configure-a-logo-for-an-application-778f748.md)
-    > -   [Configure a Branding Style for an Application](configure-a-branding-style-for-an-application-32f8d33.md)
-    > -   [Configure Registration and Upgrade Forms](configure-registration-and-upgrade-forms-93a9e18.md)
-    > -   [Protecting Self-Registration with Phone Verification](protecting-self-registration-with-phone-verification-5834b6e.md)
-    > -   [Protecting Application Forms with Google reCAPTCHA](protecting-application-forms-with-google-recaptcha-b84ce17.md)
-    > -   [Configure Identity Federation](configure-identity-federation-c029bbb.md)
-    > -   [Configure SAML 2.0 Authentication Request to Corporate IdPs](configure-saml-2-0-authentication-request-to-corporate-idps-7eac7e8.md)
+\(Optional\) If necessary, configure additional settings for the application. For more information about the supported configurations for the OpenID Connect applications, see the following links:
 
+-   [Change an Application's Display Name](change-an-application-s-display-name-83d65d0.md)
+-   [Configure an Application's Home URL](configure-an-application-s-home-url-be6d6f2.md)
+-   [Visit an Application's Web Page](visit-an-application-s-web-page-2b67225.md)
+-   [Configure the User Attributes Sent to the Application](configure-the-user-attributes-sent-to-the-application-d361407.md)
+-   [Configure the Default Attributes Sent to the Application](configure-the-default-attributes-sent-to-the-application-a2f1e46.md)
+-   [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md)
+-   [Configure Certificates for API Authentication](configure-certificates-for-api-authentication-c408083.md)
+-   [Enable or Disable Kerberos Authentication for an Application](enable-or-disable-kerberos-authentication-for-an-application-11121c9.md)
+-   [Configure Risk-Based Authentication for an Application](configure-risk-based-authentication-for-an-application-bc52fbf.md#loiobc52fbf3d59447bbb6aa22f80d8b6056)
+-   [Configure User Access to the Application](configure-user-access-to-the-application-8b147c4.md)
+-   [Authenticating Identity Provider for an Application](authenticating-identity-provider-for-an-application-b3aae12.md)
+-   [Enable Email Verification](enable-email-verification-483d26c.md)
+-   [Configuring Password Policies](configuring-password-policies-12b3395.md)
+-   [Configuring Privacy Policies](configuring-privacy-policies-ed48466.md)
+-   [Configuring Terms of Use](configuring-terms-of-use-61d3a86.md)
+-   [Display Application Name on Logon Page](display-application-name-on-logon-page-c02798e.md)
+-   [Configure a Logo for an Application](configure-a-logo-for-an-application-778f748.md)
+-   [Configure a Branding Style for an Application](configure-a-branding-style-for-an-application-32f8d33.md)
+-   [Configure Registration and Upgrade Forms](configure-registration-and-upgrade-forms-93a9e18.md)
+-   [Protecting Self-Registration with Phone Verification](protecting-self-registration-with-phone-verification-5834b6e.md)
+-   [Protecting Application Forms with Google reCAPTCHA](protecting-application-forms-with-google-recaptcha-b84ce17.md)
+-   [Configure Identity Federation](configure-identity-federation-c029bbb.md)
+-   [Configure SAML 2.0 Authentication Request to Corporate IdPs](configure-saml-2-0-authentication-request-to-corporate-idps-7eac7e8.md)
 
 **Related Information**  
 
@@ -166,8 +181,6 @@ To create a new OpenID Connect application follow the procedure below:
 [Create OpenID Connect Application for Implicit Flow](create-openid-connect-application-for-implicit-flow-b19f5e3.md "Create a new OpenID Connect application for implicit flow.")
 
 [Create OpenID Connect Application for JWT Bearer Flow](create-openid-connect-application-for-jwt-bearer-flow-b099d8c.md "Create a new OpenID Connect application for JWT bearer flow.")
-
-[OpenID Connect](openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
 
 [OAuth 2.0 Token Exchange](https://datatracker.ietf.org/doc/html/rfc8693)
 

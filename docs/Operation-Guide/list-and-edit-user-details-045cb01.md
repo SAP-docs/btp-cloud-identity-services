@@ -58,7 +58,7 @@ The *Valid From* and *Valid To* fields are empty if no validity dates are set fo
 
 3.  **Optional:** Choose the *User Details* tab.
 
-    1.  Press the ![](images/Edit_User_Details_e96801b.png) icon next to the *Personal Information*, *Employee Information*, *Company Information*, or *Custom Attributes* sections.
+    1.  Press the *Edit* button at the top of the page.
 
     2.  Edit the information in the relevant fields and save your changes.
 
@@ -66,7 +66,7 @@ The *Valid From* and *Valid To* fields are empty if no validity dates are set fo
 
 
     > ### Note:  
-    > To exit edit mode, press the ![](images/Read_Mode_Icon_f173d35.png) icon.
+    > To exit edit mode, press the *Cancel* button.
 
 4.  **Optional:** Choose the *Applications* tab, to view details specific for the applications that the user has logged on, and the applications that the user was imported to via a CSV file import.
 

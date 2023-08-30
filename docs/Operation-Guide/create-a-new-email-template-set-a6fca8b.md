@@ -30,7 +30,7 @@ To create an email template, follow the procedure below:
 
     This operation opens a list of the template sets.
 
-3.  Press the *\+Add* button on the left-hand panel to add a new template set to the list.
+3.  Press the *Add* button on the left-hand panel to add a new template set to the list.
 
 4.  Specify a name for the set.
 

@@ -131,7 +131,7 @@ The private key provided by Apple in a `.p8` file. To use the key for the config
 
 3.  Choose the *Apple* list item.
 
-4.  Choose *Apple Sign-On*.
+4.  Under *Configuration*, choose *Edit*.
 
 5.  Enter the generated authentication attributes from Apple.
 
@@ -140,7 +140,7 @@ The private key provided by Apple in a `.p8` file. To use the key for the config
 
 6.  Save your configuration.
 
-    If the operation is successful, you receive the following message: ***Apple Sign-on updated***. The slider next to the social provider is switched to *ON*.
+    If the operation is successful, you receive the following message: ***Apple authentication configured***. The slider next to the social provider is switched to *ON*.
 
     > ### Note:  
     > With the slider *ON* the social identity provider is shown as authentication option on the logon screen. If you do not want to show any of the social providers on the logon screen, you can drag the slider next to the social provider to *OFF*. The configuration for this social provider will be preserved, but the social provider will not appear on the logon pages of the applications in the tenant.

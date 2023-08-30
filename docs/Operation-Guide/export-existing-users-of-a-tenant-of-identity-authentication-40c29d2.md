@@ -6,7 +6,10 @@
 
 ## Prerequisites
 
-You are assigned the *Manage Users* or *Read Users* role. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
+-   You are assigned the *Manage Users* or *Read Users* role. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
+
+-   \(For administrators assigned to a custom authorization policy\) You are assigned to `READ_USERS` and `READ_SCIM_SCHEMAS` authorization policies. Otherwise, you won't be able to see and access the *Export Users* tile.
+
 
 
 
@@ -14,7 +17,7 @@ You are assigned the *Manage Users* or *Read Users* role. For more information a
 
 You can export a CSV file containing information of all tenant users in Identity Authentication including the tenant administrators. The CSV file can contain columns with all user supported SCIM attributes. You can filter the user attributes that you want to include in the exported file. The default columns are: *active*, *userName*, *userType*, *emails\[0\].display*, *emails\[0\].primary*, *emails\[0\].type*, and *emails\[0\].value*.
 
-If the values for the *validTo* and *validFrom* attributes for a specific user are not in the correct Zulu format yyyyMMddHHmmss'Z', Identity Authentication returns empty values for these attributes in the CSV file.
+If the values for the *validTo* and *validFrom* attributes for a specific user aren't in the correct Zulu format yyyyMMddHHmmss'Z', Identity Authentication returns empty values for these attributes in the CSV file.
 
 > ### Remember:  
 > The `SCIM ID` serves as the primary identifier if it is found in the CSV file. The users will only be updated, but not created if there are users with a new `SCIM ID`. This process works within the same tenant because the `SCIM ID`s differ across tenants.

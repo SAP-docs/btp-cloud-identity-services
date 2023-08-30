@@ -1,5 +1,7 @@
 <!-- loio29e204da5b794c4683289ee0384ec781 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Consume APIs from Other Applications
 
 Applications sometimes need to propagate principals or have technical communication arrangements between applications. To enable one application to consume the APIs of another application, configure an application to include the audience of the other application in tokens issued by Identity Authentication.
@@ -27,7 +29,7 @@ In this scenario, you've one application that provides an API and another applic
 
 -   Use the client credential flow for technical communication.
 
--   Use JWT-bearer flow for principal propagation.
+-   Use token-exchange flow for principal propagation and exchanges of token type, such as ID token to SAML 2 bearer token.
 
 
 In either case, use the `resource` parameter to identify the provider. The `resource` parameter is a uniform resource name \(URN\).
@@ -142,6 +144,9 @@ The administrator must ensure that the two applications can share the APIs betwe
     The provider application can also specify the APIs with the Identity service of SAP BTP.
 
     For more information, see [Reference Information for the Identity Service of SAP BTP](../Integrating-the-Service/reference-information-for-the-identity-service-of-sap-btp-9379444.md).
+
+    > ### Note:  
+    > You can also use the glasses icon :eyeglasses: to determine the dependent applications that use the individual API permission groups, or click *Show all* to view all the dependencies.
 
 6.  Choose the consumer application.
 

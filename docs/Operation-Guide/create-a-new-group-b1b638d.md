@@ -1,6 +1,6 @@
 <!-- loiob1b638d6724e4dc48ee3e116263f567c -->
 
-# Create a New User Group
+# Create a New Group
 
 As a tenant administrator you can create new user groups in the tenant via the administration console for SAP Cloud Identity Services.
 
@@ -25,9 +25,9 @@ To create a new user group, proceed as follows:
 
 1.  Sign in to the administration console for SAP Cloud Identity Services.
 
-2.  Choose the *User Groups* tile.
+2.  Choose the *Groups* tile.
 
-    This operation opens a list of the user groups in the tenant.
+    This operation opens a list of the groups in the tenant.
 
 3.  Press the *Create* button at the top of the page.
 
@@ -47,11 +47,11 @@ If the operation is successful, the system displays the message: `Group "<name o
 **Related Information**  
 
 
-[Import User Groups via CSV File](import-user-groups-via-csv-file-daf96bd.md "As a tenant administrator, you can create new user groups or update existing ones with the assiged users, via a CSV file upload.")
+[Import Groups via CSV File](import-groups-via-csv-file-daf96bd.md "As a tenant administrator, you can create new groups or update existing ones with the assiged users, via a CSV file upload.")
 
-[List and Edit User Groups](list-and-edit-user-groups-5e8a55c.md "As a tenant administrator, you can list and edit information about the user groups in a tenant in the administration console for SAP Cloud Identity Services.")
+[List and Edit Groups](list-and-edit-groups-5e8a55c.md "As a tenant administrator, you can list and edit information about the groups in a tenant in the administration console for SAP Cloud Identity Services.")
 
-[List and Search Users in User Groups](list-and-search-users-in-user-groups-4ac340a.md "As a tenant administrator, you can list and view information about the users in a user group in a tenant in the administration console for SAP Cloud Identity Services.")
+[List and Search Users in Groups](list-and-search-users-in-groups-4ac340a.md "As a tenant administrator, you can list and view information about the users in a group in a tenant in the administration console for SAP Cloud Identity Services.")
 
 [Add Users to a Group](add-users-to-a-group-d2e1a01.md "As a tenant administrator, you can add one or more users created for a specific tenant to a group via the administration console for SAP Cloud Identity Services.")
 
@@ -61,5 +61,5 @@ If the operation is successful, the system displays the message: `Group "<name o
 
 [Unassign Groups from a User](unassign-groups-from-a-user-4353735.md "As a tenant administrator, you can unassign one or more groups that are assigned to a user via the administration console for SAP Cloud Identity Services.")
 
-[Delete User Groups](delete-user-groups-9853912.md "As a tenant administrator, you can delete one or more user groups in administration console for SAP Cloud Identity Services.")
+[Delete Groups](delete-groups-9853912.md "As a tenant administrator, you can delete one or more groups in administration console for SAP Cloud Identity Services.")
 

@@ -88,7 +88,7 @@ The Google OAuth 2.0 credential after you set a project in the Google Developers
 
 3.  Choose the Google list item.
 
-4.  Choose *Google Sign-On*.
+4.  Under *Configuration*, choose *Edit*.
 
 5.  Enter the generated authentication attributes from the social provider.
 
@@ -97,7 +97,7 @@ The Google OAuth 2.0 credential after you set a project in the Google Developers
 
 6.  Save your configuration.
 
-    If the operation is successful, you will receive the following message: ***Google Sign-on updated***. The slider next to the social provider is switched to *ON*.
+    If the operation is successful, you will receive the following message: ***Google authentication configured***. The slider next to the social provider is switched to *ON*.
 
     > ### Note:  
     > With the slider *ON* the social identity provider is shown as authentication option on the logon screen. If you do not want to show any of the social providers on the logon screen, you can drag the slider next to the social provider to *OFF*. The configuration for this social provider will be preserved, but the social provider will not appear on the logon pages of the applications in the tenant.

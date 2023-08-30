@@ -311,21 +311,21 @@ Administrators can add new administrators and edit administrator authorizations.
 <tr>
 <td valign="top">
 
-User Groups
+Groups
 
 
 
 </td>
 <td valign="top">
 
-Administrators can create and delete user groups, and assign and unassign users.
+Administrators can create and delete groups, and assign and unassign users.
 
 
 
 </td>
 <td valign="top">
 
-[User Groups](Operation-Guide/user-groups-ddd067c.md)
+[Groups](Operation-Guide/groups-ddd067c.md)
 
 
 

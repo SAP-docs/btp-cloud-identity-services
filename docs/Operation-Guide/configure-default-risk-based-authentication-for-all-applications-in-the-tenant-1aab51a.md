@@ -339,7 +339,7 @@ Each rule contains the following information:
 
     If the rule is valid for an on-premise group, type in the name of the corporate user store group, for which this rule should be valid.
 
-    The cloud groups have to be configured in the administration console for Identity Authentication. For more information, see [User Groups](user-groups-ddd067c.md).
+    The cloud groups have to be configured in the administration console for Identity Authentication. For more information, see [Groups](groups-ddd067c.md).
 
 -   *Authentication Method*
 

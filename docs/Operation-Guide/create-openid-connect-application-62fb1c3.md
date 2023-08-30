@@ -8,7 +8,7 @@ You can create a new OpenID Connect application.
 
 ## Context
 
-To create a new OpenID Connect application you have to add a new application to the list of applications in Identity Authentication, and then set the protocol of the application to OpenID Connect.
+To create a new OpenID Connect application you have to add a new application to the list of applications in Identity Authentication, and set the protocol of the application to OpenID Connect.
 
 To create a new OpenID Connect application, choose your scenario and follow the procedure below.
 

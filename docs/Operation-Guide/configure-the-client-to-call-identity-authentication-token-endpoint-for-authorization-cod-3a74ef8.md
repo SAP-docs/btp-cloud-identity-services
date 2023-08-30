@@ -386,7 +386,7 @@ No
 </td>
 <td valign="top">
 
-String
+string
 
 
 
@@ -401,6 +401,43 @@ The `token_format` can be set to `opaque` to retrieve an opaque access token or 
 <td valign="top">
 
 Request body
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`app_tid`
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+<td valign="top">
+
+string
+
+
+
+</td>
+<td valign="top">
+
+Reserved.
+
+
+
+</td>
+<td valign="top">
+
+Path
 
 
 

@@ -2,7 +2,7 @@
 
 # Assign Authorization Policies
 
-As an administrator, you can assign authorizations to Identity Authentication applications.
+As an administrator, you can assign authorizations to users.
 
 
 
@@ -12,7 +12,14 @@ As an administrator, you can assign authorizations to Identity Authentication ap
 
 -   Your application supports authorization policies. Refer to the documentation of your application.
 
--   Your user has administrative permissions in Identity Authentication with the *Manage Groups* authorization. For more information, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
+-   Your user has administrative permissions in Identity Authentication with the the following authorizations:
+
+    -   *Manage Applications*
+
+    -   *Manage Groups*
+
+
+    For more information, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
 
 -   You have a subscription to SAP Cloud Identity Services. For more information, see [SAP Cloud Identity Services](https://help.sap.com/docs/SAP_CLOUD_IDENTITY).
 
@@ -25,9 +32,6 @@ As an administrator, you can assign authorizations to Identity Authentication ap
 <a name="loioeac8e5e5db394e9ba409e68c66eedb77__context_qkt_gml_45b"/>
 
 ## Context
-
-> ### Note:  
-> To see details of the authorization policy, choose `Go to Policy Management`.
 
 
 
@@ -49,9 +53,9 @@ As an administrator, you can assign authorizations to Identity Authentication ap
 
 6.  Choose *Add*.
 
-7.  Select the users that you want to add to the authorization policy.
+7.  Select the users that you want to add to the authorization policy and choose *Add*.
 
-    You have added the selected users to an authorization policy. These users are authorized to access and use the resources with the restrictions defined in the authorization policy.
+    You have added the selected users to an authorization policy. These users are authorized to access and use the resources with the rules and restrictions defined in the authorization policy.
 
 
 **Related Information**  

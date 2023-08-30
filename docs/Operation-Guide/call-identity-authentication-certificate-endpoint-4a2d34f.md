@@ -14,7 +14,7 @@ The public keys are encoded as JSON Web Key \(JWK\).
 
 ## **Request**
 
-**URI:**`https://<tenant ID>.accounts.ondemand.com/oauth2/certs`
+**URI:**<code>https://<i class="varname">&lt;tenant ID&gt;</i>.accounts.ondemand.com/oauth2/certs</code>
 
 **HTTP Method:***GET*
 
@@ -65,6 +65,52 @@ Yes
 <td valign="top">
 
 application/json
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`x-app_tid`
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+<td valign="top">
+
+Reserved.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`x-client_id`
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+<td valign="top">
+
+Reserved.
 
 
 

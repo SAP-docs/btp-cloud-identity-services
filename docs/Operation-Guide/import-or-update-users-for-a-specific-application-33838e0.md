@@ -866,9 +866,9 @@ To import users for an application into Identity Authentication, and to send act
 
 [Configure User Access to the Application](configure-user-access-to-the-application-8b147c4.md "You can configure public access to the application allowing self-registration, or you can restrict the access to existing users or users registered by an application.")
 
-[List and Edit User Groups](list-and-edit-user-groups-5e8a55c.md "As a tenant administrator, you can list and edit information about the user groups in a tenant in the administration console for SAP Cloud Identity Services.")
+[List and Edit Groups](list-and-edit-groups-5e8a55c.md "As a tenant administrator, you can list and edit information about the groups in a tenant in the administration console for SAP Cloud Identity Services.")
 
-[Create a New User Group](create-a-new-user-group-b1b638d.md "As a tenant administrator you can create new user groups in the tenant via the administration console for SAP Cloud Identity Services.")
+[Create a New Group](create-a-new-group-b1b638d.md "As a tenant administrator you can create new user groups in the tenant via the administration console for SAP Cloud Identity Services.")
 
 [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md "As a tenant administrator, you can edit both your own authorizations and other administrators' authorizations in the administration console for SAP Cloud Identity Services. By editing the administrator authorizations you can also delete an administrator.")
 

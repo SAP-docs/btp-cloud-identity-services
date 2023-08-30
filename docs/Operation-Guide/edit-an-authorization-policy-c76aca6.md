@@ -20,7 +20,7 @@ When you edit an existing custom authorization policy, you can add or delete res
 
 2.  Under *Applications & Resources*, choose *Applications*.
 
-3.  Choose the bundled application that supports authorization management. For more information, see the documentation of the application.
+3.  Choose the application that supports authorization management. For more information, see the documentation of the application.
 
     The details page of your application has an *Authorization Policies* tab.
 
@@ -52,7 +52,7 @@ When you edit an existing custom authorization policy, you can add or delete res
     > 
     > All rows starting with their own `RESTRICT` condition have an `OR` conjunction with the other `RESTRICT` rows.
 
-10. Choose the conditions that come with the bundled application in the dropdown list. Next, choose an operator and choose or enter a value.
+10. Choose the conditions that come with the application in the dropdown list. Next, choose an operator and choose or enter a value.
 
 11. Save your changes.
 

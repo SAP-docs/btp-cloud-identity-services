@@ -363,7 +363,7 @@ Follow the procedures in this document if you want to:
 
 -   **Restrict Access to Users in Identity Authentication User Store**
 
--   **Restrict Access to Users in Certain User Groups**
+-   **Restrict Access to Users in Certain Groups**
 
 -   **Send Specific Assertion and Name ID Attributes to the Application**
 
@@ -452,13 +452,13 @@ The settings in the application configuration for assertion attributes and name 
 
 <!-- task\_dbb\_13v\_yv -->
 
-### Restrict Access to Users in Certain User Groups
+### Restrict Access to Users in Certain Groups
 
 
 
 ## Context
 
-This configuration allows you to restrict the access to the application only to users who belong to certain user groups. This option is suitable for scenarios with more than one corporate identity providers. The tenant administrator assigns different groups to different identity providers and users, and can thus specify that certain users come from specific identity providers by assigning the same groups to them. Identity Authentication can thus check if the users are authenticated by the identity provider that they belong to.
+This configuration allows you to restrict the access to the application only to users who belong to certain groups. This option is suitable for scenarios with more than one corporate identity providers. The tenant administrator assigns different groups to different identity providers and users, and can thus specify that certain users come from specific identity providers by assigning the same groups to them. Identity Authentication can thus check if the users are authenticated by the identity provider that they belong to.
 
 
 
@@ -466,7 +466,7 @@ This configuration allows you to restrict the access to the application only to 
 
 ## Procedure
 
-1.  Make sure that the required user groups are created in the administration console of Identity Authentication. For more information, see [Create a New User Group](create-a-new-user-group-b1b638d.md).
+1.  Make sure that the required groups are created in the administration console of Identity Authentication. For more information, see [Create a New Group](create-a-new-group-b1b638d.md).
 
 2.  Provision, or import the users that you will grant access to the application via a CSV file import.
 
@@ -477,7 +477,7 @@ This configuration allows you to restrict the access to the application only to 
 
 3.  Switch on the *Use Identity Authentication user store* and *Allow Identity Authentication users only* options under *Identity Federation* in the administration console. For more information, see [Configure Identity Federation](configure-identity-federation-c029bbb.md).
 
-4.  Assign user groups to the corporate identity provider. For more information, see [Configure Identity Federation](configure-identity-federation-c029bbb.md).
+4.  Assign groups to the corporate identity provider. For more information, see [Configure Identity Federation](configure-identity-federation-c029bbb.md).
 
 
 

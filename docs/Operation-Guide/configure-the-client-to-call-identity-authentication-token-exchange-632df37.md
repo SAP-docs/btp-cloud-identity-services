@@ -270,7 +270,7 @@ Yes
 </td>
 <td valign="top">
 
-String
+string
 
 
 
@@ -307,7 +307,7 @@ Yes
 </td>
 <td valign="top">
 
-String
+string
 
 
 
@@ -351,7 +351,7 @@ No
 </td>
 <td valign="top">
 
-String
+string
 
 
 
@@ -401,7 +401,7 @@ No
 </td>
 <td valign="top">
 
-String
+string
 
 
 
@@ -416,6 +416,43 @@ Use provided API names. For more information, see [Consume APIs from Other Appli
 <td valign="top">
 
 Request body
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`app_tid`
+
+
+
+</td>
+<td valign="top">
+
+No
+
+
+
+</td>
+<td valign="top">
+
+string
+
+
+
+</td>
+<td valign="top">
+
+Reserved.
+
+
+
+</td>
+<td valign="top">
+
+Path
 
 
 

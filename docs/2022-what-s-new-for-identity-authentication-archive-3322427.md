@@ -3464,7 +3464,7 @@ User Groups
 </td>
 <td valign="top">
 
-Tenant administrator can create new user groups or update existing ones via a CSV file upload. See [Import User Groups via CSV File](Operation-Guide/import-user-groups-via-csv-file-daf96bd.md).
+Tenant administrator can create new user groups or update existing ones via a CSV file upload. See [Import Groups via CSV File](Operation-Guide/import-groups-via-csv-file-daf96bd.md).
 
 
 
@@ -5620,7 +5620,7 @@ OpenID Connect
 </td>
 <td valign="top">
 
-Tenant administrator can define the allowed grant types in the applications via the administration for Identity Authentication. See [Configure OpenID Connect Application for Authorization Code Flow](Operation-Guide/configure-openid-connect-application-for-authorization-code-flow-4a94254.md), [Configure OpenID Connect Application for Client Credentials Flow](Operation-Guide/configure-openid-connect-application-for-client-credentials-flow-3e409d8.md), [Configure OpenID Connect Application for Resource Owner Password Credentials Flow](Operation-Guide/configure-openid-connect-application-for-resource-owner-password-credentials-flow-9a4b94b.md), [Using JWT Bearer Flow](Operation-Guide/using-jwt-bearer-flow-2862baf.md), and [Create OpenID Connect Application for Implicit Flow](Operation-Guide/create-openid-connect-application-for-implicit-flow-b19f5e3.md).
+Tenant administrator can define the allowed grant types in the applications via the administration for Identity Authentication. See [Configure OpenID Connect Application for Authorization Code Flow](Operation-Guide/configure-openid-connect-application-for-authorization-code-flow-4a94254.md), [Configure OpenID Connect Application for Client Credentials Flow](Operation-Guide/configure-openid-connect-application-for-client-credentials-flow-3e409d8.md), [Configure OpenID Connect Application for Resource Owner Password Credentials Flow](Operation-Guide/configure-openid-connect-application-for-resource-owner-password-credentials-flow-9a4b94b.md), [Using JWT Bearer Flow](Operation-Guide/using-jwt-bearer-flow-2862baf.md), and [Create OpenID Connect Application](Operation-Guide/create-openid-connect-application-62fb1c3.md).
 
 
 

@@ -541,7 +541,7 @@ Each rule contains the following information:
 
 -   *IP Range*
 
-    Define the range of allowed IP addresses or proxies that the user logs on from. The value has to be specified in Classless Inter-Domain Routing \(CIDR\) notation.
+    Define a range of allowed IP addresses or proxies that the user logs on from. The value has to be specified in Classless Inter-Domain Routing \(CIDR\) notation.
 
     > ### Note:  
     > By default the field is empty, meaning that any IP is allowed.
@@ -553,7 +553,7 @@ Each rule contains the following information:
 
 -   *Forwarded IP Range*
 
-    Define the range of allowed IP addresses or proxies for the original IP addresses that the user logs on from. The value has to be specified in Classless Inter-Domain Routing \(CIDR\) notation.
+    Define a range of allowed IP addresses or proxies for the original IP addresses that the user logs on from. The value has to be specified in Classless Inter-Domain Routing \(CIDR\) notation.
 
     > ### Example:  
     > ![](images/IP_Ranges_Examples_b6f3ce1.png)
@@ -567,7 +567,7 @@ Each rule contains the following information:
 
     If the rule is valid for an on-premise group, type in the name of the corporate user store group, for which this rule should be valid.
 
-    The cloud groups have to be configured in the administration console for SAP Cloud Identity Services. For more information, see [User Groups](user-groups-ddd067c.md).
+    The cloud groups have to be configured in the administration console for SAP Cloud Identity Services. For more information, see [Groups](groups-ddd067c.md).
 
 -   *Authentication Method*
 

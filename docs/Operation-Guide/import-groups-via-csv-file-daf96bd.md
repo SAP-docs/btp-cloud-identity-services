@@ -1,8 +1,8 @@
 <!-- loiodaf96bd4bdcf4f1b99b33f4d57db6ca8 -->
 
-# Import User Groups via CSV File
+# Import Groups via CSV File
 
-As a tenant administrator, you can create new user groups or update existing ones with the assiged users, via a CSV file upload.
+As a tenant administrator, you can create new groups or update existing ones with the assiged users, via a CSV file upload.
 
 
 
@@ -15,7 +15,7 @@ As a tenant administrator, you can create new user groups or update existing one
 
 ## Context
 
-With the CSV file, you can import up to 25000 user groups to create new groups or to update existing ones with their user assignemnts.
+With the CSV file, you can import up to 25000 groups to create new groups or to update existing ones with their user assignemnts.
 
 If the group does not exist in the tenat, and you provide that group in the CSV file, the group will be created.
 
@@ -69,14 +69,14 @@ To import groups via CSV file into Identity Authentication, proceed as follows:
 
 1.  Sign in to the administration console for SAP Cloud Identity Services.
 
-2.  Choose the *User Groups* tile.
+2.  Choose the *Groups* tile.
 
 3.  Press the *Import* button.
 
 4.  Choose the *Browse...* button and specify the location of the CSV file.
 
     > ### Note:  
-    > Use a UTF-8 encoded file with up to 25000 user groups and an extension `.csv`. If your file contains more than 25000 user groups, you have to import the groups information in iterations within the group number limit.
+    > Use a UTF-8 encoded file with up to 25000 groups and an extension `.csv`. If your file contains more than 25000 groups, you have to import the groups information in iterations within the group number limit.
 
     > ### Tip:  
     > If you import groups from one tenant to another, you can first export the users from the first tenant via the export users option, and then use the exported CSV file for the import to the other tenat or tenants. For more information, see [Export Existing Users of a Tenant of Identity Authentication](export-existing-users-of-a-tenant-of-identity-authentication-40c29d2.md).
@@ -89,11 +89,11 @@ To import groups via CSV file into Identity Authentication, proceed as follows:
 **Related Information**  
 
 
-[Create a New User Group](create-a-new-user-group-b1b638d.md "As a tenant administrator you can create new user groups in the tenant via the administration console for SAP Cloud Identity Services.")
+[Create a New Group](create-a-new-group-b1b638d.md "As a tenant administrator you can create new user groups in the tenant via the administration console for SAP Cloud Identity Services.")
 
-[List and Edit User Groups](list-and-edit-user-groups-5e8a55c.md "As a tenant administrator, you can list and edit information about the user groups in a tenant in the administration console for SAP Cloud Identity Services.")
+[List and Edit Groups](list-and-edit-groups-5e8a55c.md "As a tenant administrator, you can list and edit information about the groups in a tenant in the administration console for SAP Cloud Identity Services.")
 
-[List and Search Users in User Groups](list-and-search-users-in-user-groups-4ac340a.md "As a tenant administrator, you can list and view information about the users in a user group in a tenant in the administration console for SAP Cloud Identity Services.")
+[List and Search Users in Groups](list-and-search-users-in-groups-4ac340a.md "As a tenant administrator, you can list and view information about the users in a group in a tenant in the administration console for SAP Cloud Identity Services.")
 
 [Add Users to a Group](add-users-to-a-group-d2e1a01.md "As a tenant administrator, you can add one or more users created for a specific tenant to a group via the administration console for SAP Cloud Identity Services.")
 
@@ -103,5 +103,5 @@ To import groups via CSV file into Identity Authentication, proceed as follows:
 
 [Unassign Groups from a User](unassign-groups-from-a-user-4353735.md "As a tenant administrator, you can unassign one or more groups that are assigned to a user via the administration console for SAP Cloud Identity Services.")
 
-[Delete User Groups](delete-user-groups-9853912.md "As a tenant administrator, you can delete one or more user groups in administration console for SAP Cloud Identity Services.")
+[Delete Groups](delete-groups-9853912.md "As a tenant administrator, you can delete one or more groups in administration console for SAP Cloud Identity Services.")
 

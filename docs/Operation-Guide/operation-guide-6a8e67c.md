@@ -19,7 +19,7 @@ This guide is for administrators. It explains how administrators can configure I
 
 [User Management](user-management-228428f.md "Tenant administrators can manage user accounts via the administration console for SAP Cloud Identity Services, and via APIs.")
 
-[User Groups](user-groups-ddd067c.md "Tenant administrators can create user groups, and assign and unassign groups to users via the administration console for SAP Cloud Identity Services.")
+[Groups](groups-ddd067c.md "Tenant administrators can create groups, and assign and unassign these groups to users via the administration console for SAP Cloud Identity Services.")
 
 [Real-Time Provisioning](real-time-provisioning-617dd4b.md "As a tenant administrator, you can configure target systems for real-time provisioning and provision users to these target systems.")
 
