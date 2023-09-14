@@ -84,7 +84,7 @@ To edit or add an email template, follow the procedure below:
 
         See examples for the *Deactivate TOTP Device* and *Email OTP Code* templates below:
 
-        *Send Security Alert Template*
+        *Deactivate TOTP Device*
 
         > ### Example:  
         > Dear $\{user.firstName\} $\{user.lastName\},

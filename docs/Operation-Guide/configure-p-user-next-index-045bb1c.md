@@ -87,6 +87,8 @@ Every user in Identity Authentication has a `User ID` which is an automatically 
 
 [Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.")
 
+[Configure Customer-Controlled Encryption Keys in Administration Console](configure-customer-controlled-encryption-keys-in-administration-console-fe6e30c.md "")
+
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 
 [Reuse SAP Cloud Identity Services Tenants for Different Customer IDs](reuse-sap-cloud-identity-services-tenants-for-different-customer-ids-ebd0258.md "You as a tenant administrator can reuse an existing tenant for configurations and automated subscriptions.")

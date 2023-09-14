@@ -19,12 +19,13 @@ The syntax of the properties is as follows:
 	"oauth2-configuration": {
 		"redirect-uris": ["https://*.myapp_namespace.cfapps.eu10.hana.ondemand.com/**"],
 		"post-logout-redirect-uris": ["https://*.myapp_namespace.cfapps.eu10.hana.ondemand.com/logout/**"],
-		"public-client": false
+		"front-channel-logout-uris": ["https://myapp.mydomain.com/fc-logout"],
+		"public-client": false,
 		"token-policy": {
 			"token-validity": 1800,
 			"refresh-validity": 7776000,
 			"refresh-parallel" : 3
-			"refresh-usage-after-renewal" : "off",
+			"refresh-usage-after-renewal" : "off"
 		}
 	},
 	"consumed-services": [{
@@ -95,11 +96,31 @@ For more information, see [OpenID Connect Application Configurations](../Operati
 </td>
 <td valign="top">
 
-Is an array of redirect URIs, where users are forwarded after logout.
+Is an array of redirect URIs, where users are allowed to be forwarded after logout.
 
 This property is empty by default.
 
 For more information, see [Call Identity Authentication End Session Endpoint](../Operation-Guide/call-identity-authentication-end-session-endpoint-ec674f4.md) and [OpenID Connect Application Configurations](../Operation-Guide/openid-connect-application-configurations-1ae324e.md).
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`front-channel-logout-uris`
+
+
+
+</td>
+<td valign="top">
+
+Is an array of logout URIs, which are called in a logout flow.
+
+This property is empty by default.
+
+For more information, see [OpenID Connect Application Configurations](../Operation-Guide/openid-connect-application-configurations-1ae324e.md).
 
 
 
