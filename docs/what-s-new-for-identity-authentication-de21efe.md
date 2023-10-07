@@ -121,6 +121,276 @@ Identity Authentication
 </td>
 <td valign="top">
 
+Application Development in Authorization Management
+
+
+
+</td>
+<td valign="top">
+
+Developers can use the developer tools of administration management. They build their own applications with authorization policies. Administrators assign authorization policies to users, change the rules and attribute values of existing policies, and create new authorization policies. See [Configuring Authorization Policies](https://help.sap.com/docs/IDENTITY_AUTHENTICATION/6d6d63354d1242d185ab4830fc04feb1/982ac5f91d2346fda8dd8096e861fc36.html?version=Cloud).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-11-02
+
+
+
+</td>
+<td valign="top">
+
+2023-11-02
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-09-28
+
+
+
+</td>
+<td valign="top">
+
+2023-09-27
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Authorizations Based on Policies
+
+
+
+</td>
+<td valign="top">
+
+The `user.excludedAttributes` attribute is deprecated. See [\(Beta\) Configure Authorizations Based on Policies](Operation-Guide/beta-configure-authorizations-based-on-policies-08fea39.md).
+
+Action:
+
+If you have a policy configured with the `user.excludedAttributes` attribute exchange the `user.excludedAttributes` with the `user.attributes` attribute in combination with the "NOT IN" operator.
+
+If the policy is configured with the `user.аttributes` attribute used with the "=" operator, it supports only one attribute. For more attributes, use the "IN" operator adding each attribute separately.
+
+
+
+</td>
+<td valign="top">
+
+Required
+
+
+
+</td>
+<td valign="top">
+
+Deprecated
+
+
+
+</td>
+<td valign="top">
+
+Changed
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-09-28
+
+
+
+</td>
+<td valign="top">
+
+2023-09-27
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Off-Cycle Upgrade
 
 
@@ -185,6 +455,94 @@ Identity Authentication
 <td valign="top">
 
 2023-09-07
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+
+
+</td>
+<td valign="top">
+
+General Availability
+
+
+
+</td>
+<td valign="top">
+
+New
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+
+
+</td>
+<td valign="top">
+
+Not applicable
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+
+
+</td>
+<td valign="top">
+
+2023-08-30
+
+
+
+</td>
+<td valign="top">
+
+2023-08-30
 
 
 
@@ -480,7 +838,7 @@ Risk-Based Authentication
 </td>
 <td valign="top">
 
-New authentication method *Trusted IdP SAML Assertion* is available when you create a new rule for risk-based auhentication. See [Create a New Rule](Operation-Guide/configure-risk-based-authentication-for-an-application-bc52fbf.md#loio18d02ab9cc7d4caf83d8654c8c51a175) .
+New authentication method *Trusted IdP SAML Assertion* is available when you create a new rule for risk-based authentication. See [Create a New Rule](Operation-Guide/configure-risk-based-authentication-for-an-application-bc52fbf.md#loio18d02ab9cc7d4caf83d8654c8c51a175) .
 
 
 
@@ -674,7 +1032,7 @@ Today, you can set the validity of refresh tokens with the token policy configur
 
 With the planned change, the service couples the validity of refresh tokens to the session timeout. Refresh tokens expire with the user session, unless you add the `offline_access scope`.
 
-Action: Check if you define a refresh token validity for your applications longer than 12h:
+Action: Check if you define a refresh token validity for your applications longer than 12 h:
 
 -   Yes: Ensure that you decouple the refresh token from the user session with the `offline_access` scope.
 
@@ -850,14 +1208,14 @@ Identity Authentication
 </td>
 <td valign="top">
 
-Simplified Configuration of Default Attributes and Assertion Attributes
+Subscribed Applications
 
 
 
 </td>
 <td valign="top">
 
-In the configuration of applications, we have combined the *Default Attributes* and *Assertion Attributes* into a single screen named *Application Attributes*. This change gives administrators a complete overview of the user attributes configured for an application.
+In the configuration of applications, we have combined the *Default Attributes* and *Assertion Attributes* into a single screen named *Application Attributes*. This change gives administrators a complete overview of the user attributes defined by the multitenant application. See [Configure Default Attributes for Subscribed Applications](Operation-Guide/configure-default-attributes-for-subscribed-applications-621017f.md).
 
 
 
@@ -1475,7 +1833,7 @@ OpenID Connect
 </td>
 <td valign="top">
 
-Tenant administratorcan configure Identity Authentication to execute the authorization code flow enhanced with PKCE against the corporate identity provider. See [Configure Trust with OpenID Connect Corporate Identity Provider](Operation-Guide/configure-trust-with-openid-connect-corporate-identity-provider-8ff83a1.md).
+Tenant administrator can configure Identity Authentication to execute the authorization code flow enhanced with PKCE against the corporate identity provider. See [Configure Trust with OpenID Connect Corporate Identity Provider](Operation-Guide/configure-trust-with-openid-connect-corporate-identity-provider-8ff83a1.md).
 
 
 
@@ -1820,7 +2178,7 @@ Identity Authentication
 </td>
 <td valign="top">
 
-System Nofifications
+System Notifications
 
 
 

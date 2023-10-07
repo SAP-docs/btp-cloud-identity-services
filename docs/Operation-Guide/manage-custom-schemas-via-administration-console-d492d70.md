@@ -12,6 +12,8 @@ The administration console shows information about all existing schemas, predefi
 
 If you need your own custom attributes, for users or groups, you can define your own custom schema, and once the schema is defined, the custom attributes that it defines can be used.
 
+To be used, the custom attributes must be assigned to the user first. For more information, see [Configure the Default Attributes Sent to the Application](configure-the-default-attributes-sent-to-the-application-a2f1e46.md).
+
 > ### Note:  
 > When the attributes are assigned to a user, they can be sent to the application. For more information, see [Configure the User Attributes Sent to the Application](configure-the-user-attributes-sent-to-the-application-d361407.md).
 

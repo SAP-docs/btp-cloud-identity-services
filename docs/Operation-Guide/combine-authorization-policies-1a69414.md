@@ -27,12 +27,16 @@ You can combine authorization policies to create a new one. This new authorizati
 
 5.  Choose *Combine*.
 
-6.  Choose the authorization policies you want to combine.
+6.  Choose the authorization policies you want to combine and enter a name for the new authorization policy.
 
-7.  Choose the *Assignments* tab and assign users. See [Assign Authorization Policies](assign-authorization-policies-eac8e5e.md).
+7.  Choose *Confirm*.
 
-8.  Choose the *Rules* tab and edit the label and description of the authorization policy. The description is an optional comment.
+8.  Select the newly created authorization policy.
 
-9.  Save your changes.
+9.  Choose the *Assignments* tab and assign users. See [Assign Authorization Policies](assign-authorization-policies-eac8e5e.md).
+
+10. Choose the *Rules* tab and edit the label and description of the authorization policy. The description is an optional comment.
+
+11. Save your changes.
 
 

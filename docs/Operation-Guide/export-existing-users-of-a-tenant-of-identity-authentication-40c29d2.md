@@ -24,6 +24,13 @@ If the values for the *validTo* and *validFrom* attributes for a specific user a
 > 
 > If the `SCIM ID` doesn't exist in the CSV file, the create and update functionality will function as expected, but the administrator won't be able to modify the username or email.
 
+> ### Restriction:  
+> Each multivalued attribute is limited to 3 fixed values, and each custom attribute is limited to 10 values.
+> 
+> For example, if a user in the administration console has more than 3 emails, the export functionality will export only 3 emails. On the other hand, if a user has only one email, then the csv file will show 3 emails, but two of them will be empty.
+> 
+> If you need to export multivalued attributes with more than 3 values, or custom attributes with more than 10 values, you can use the Identity Provisioning service. For more information, see [Real-Time Provisioning from Identity Authentication](https://help.sap.com/docs/identity-provisioning/identity-provisioning/real-time-provisioning-identity-authentication?version=Cloud) or [Provisioning from Source to Target Systems](https://help.sap.com/docs/identity-provisioning/identity-provisioning/system-types?version=Cloud).
+
 > ### Note:  
 > If the *active* attribute of a user is `FALSE`, he or she can’t perform any operations on the tenant.
 

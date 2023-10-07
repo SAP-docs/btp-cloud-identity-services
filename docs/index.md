@@ -1,4 +1,4 @@
-# Identity Authentication
+# Identity Authentication \(Early Adoption\)
 
 -   [Identity Authentication](identity-authentication-d17a116.md)
     -   [What Is Identity Authentication?](what-is-identity-authentication-2788271.md)
@@ -141,7 +141,7 @@
             -   [Configure IdP-Initiated SSO](Operation-Guide/configure-idp-initiated-sso-5d59caa.md)
             -   [Send Security Alert Emails](Operation-Guide/send-security-alert-emails-c977464.md)
             -   [Send System Notifications via Emails](Operation-Guide/send-system-notifications-via-emails-aa04a8b.md)
-            -   [Configure Customer-Controlled Encryption Keys in Administration Console](Operation-Guide/configure-customer-controlled-encryption-keys-in-administration-console-fe6e30c.md)
+            -   [Configure Customer-Controlled Encryption Keys in Administration Console \(Early Adoption\)](Operation-Guide/configure-customer-controlled-encryption-keys-in-administration-console-early-adoption-fe6e30c.md)
             -   [Configure Default Language for End User Screens](Operation-Guide/configure-default-language-for-end-user-screens-2cb73c3.md)
             -   [Configure P-User Next Index](Operation-Guide/configure-p-user-next-index-045bb1c.md)
             -   [Reuse SAP Cloud Identity Services Tenants for Different Customer IDs](Operation-Guide/reuse-sap-cloud-identity-services-tenants-for-different-customer-ids-ebd0258.md)
@@ -350,6 +350,7 @@
         -   [API Documentation](Development/api-documentation-cce8d64.md)
             -   [SAP Cloud Identity Services Application Directory REST API](Development/sap-cloud-identity-services-application-directory-rest-api-a8fc935.md)
             -   [Identity Directory SCIM REST API](Development/identity-directory-scim-rest-api-5be5692.md)
+                -   [Extensions](Development/extensions-fb31d4e.md)
             -   [SCIM REST API \(Deprecated\)](Development/scim-rest-api-deprecated-2f21568.md)
                 -   [Manage Users SCIM REST API \(Deprecated\)](Development/manage-users-scim-rest-api-deprecated-63d146c.md)
                     -   [Users Search \(Deprecated\)](Development/users-search-deprecated-3af7dfa.md)
@@ -407,7 +408,7 @@
             -   [Erasure](Security/erasure-5ccec0b.md)
             -   [Consent](Security/consent-8a81798.md)
             -   [Customer Data](Security/customer-data-918c93c.md)
-        -   [Customer-Controlled Encryption Keys](Security/customer-controlled-encryption-keys-177108a.md)
+        -   [Customer-Controlled Encryption Keys \(Early Adoption\)](Security/customer-controlled-encryption-keys-early-adoption-177108a.md)
         -   [Auditing and Logging Information](Security/auditing-and-logging-information-ac5537b.md)
     -   [Integrating the Service](Integrating-the-Service/integrating-the-service-1b607aa.md)
         -   [Integrating the Service with SAP Business Technology Platform, Neo Environment](Integrating-the-Service/integrating-the-service-with-sap-business-technology-platform-neo-environment-fe84459.md#loiofe84459e688c43698591d3b9e1aac828)

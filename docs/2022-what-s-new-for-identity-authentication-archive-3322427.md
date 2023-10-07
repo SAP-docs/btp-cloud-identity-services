@@ -2618,7 +2618,7 @@ Info only
 </td>
 <td valign="top">
 
-Early Adoption
+Restricted Availability
 
 
 

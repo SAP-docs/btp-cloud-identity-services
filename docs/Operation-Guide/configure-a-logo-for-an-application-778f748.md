@@ -32,9 +32,10 @@ The logo is displayed on the application's logon page and can be included into t
     > ### Note:  
     > The image must be smaller than 100 KB and with a maximum size of 300x100.
 
-7.  To remove a configured logo, choose the *Remove Logo* button.
+7.  Save your configuration.
 
-8.  Save your configuration.
+    > ### Tip:  
+    > To remove a configured logo, choose the *Delete* button and confirm your choice.
 
 
 **Related Information**  

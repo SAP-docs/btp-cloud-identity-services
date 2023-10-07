@@ -321,6 +321,7 @@ Allowed values:
 -   `urn:sap:identity:oauth:token-type:saml2-session`
 -   `urn:ietf:params:oauth:token-type:access_token`
 -   `urn:ietf:params:oauth:token-type:id_token`
+-   `urn:ietf:params:oauth:token-type:refresh_token`
 -   `urn:ietf:params:oauth:token-type:jwt`
 
 
@@ -475,7 +476,8 @@ Path
 > client_id=a90ca226sbc34-soc5-dcf6-6k8a6b9f2469&
 > client_secret=OWSu0/0sSUeUCG1LAYmSQ10Ut0yrfPz&
 > subject_token=Zjk1YTI3YERzNGZlZmTlNzZjNzk4YTY2ZjdlZjYwMacw
-> subject_token_type=urn:ietf:params:oauth:token-type:access_token
+> subject_token_type=urn:ietf:params:oauth:token-type:access_tokenShould you have any questions regarding this template, or need
+> 					individual support for your API documentation, please contact Anne Tarnoruder or Frederic Moitel, or open an 
 > ```
 > 
 > *Response*
@@ -506,7 +508,7 @@ Path
 > *Request*
 > 
 > ```
-> 
+> Should you have any questions regarding this template, or need
 > https://my-tenant.ondemand.com/oauth2/token?grant_type=urn:ietf:params:oauth:grant-type:token-exchange&
 > client_id=a90ca226sbc34-soc5-dcf6-6k8a6b9f2469&
 > client_secret=OWSu0/0sSUeUCG1LAYmSQ10Ut0yrfPz&

@@ -2,5 +2,5 @@
 
 # Customer Data
 
-Customer can request the export of its customer data by reporting an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`.
+Customer can request export of its customer data in a JSON format by reporting an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`. The request can be for full data export or selected data export according to the customer requirements.
 

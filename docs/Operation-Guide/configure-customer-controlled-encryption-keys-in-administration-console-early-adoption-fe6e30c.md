@@ -1,48 +1,134 @@
-<!-- loio2cb73c3de6894286aef5231a7c697cba -->
+<!-- loiofe6e30cf1431438a94425e934d0d9e2b -->
 
-# Configure Default Language for End User Screens
+# Configure Customer-Controlled Encryption Keys in Administration Console \(Early Adoption\)
 
-Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.
+
+
+<a name="loiofe6e30cf1431438a94425e934d0d9e2b__prereq_wmk_x5l_vyb"/>
+
+## Prerequisites
+
+-   You have an SAP Data Custodian tenant. For more information, see [SAP Data Custodian Help Guide](https://help.sap.com/docs/sap-data-custodian/help-guide/overview?version=latest) .
+-   You have read and accept all Customer-Controlled Encryption Keys \(CCEK\) limitations. For more information, see *Limitations* section in [Customer-Controlled Encryption Keys \(Early Adoption\)](../Security/customer-controlled-encryption-keys-early-adoption-177108a.md).
+-   You have tested all your scenarios on a test tenant, before activating CCEK on a productive tenant. For more information, see [Tenant Model and Licensing](../tenant-model-and-licensing-93160eb.md).
 
 
 
 ## Context
 
-The end user screens of the applications that use Identity Authentication for authentication, support the following languages: Arabic \(ar\), Bulgarian \(bg\), Catalan \(ca\), Chinese PRC \(zh-cn\), Chinese Taiwan \(zh-tw\), Croatian \(hr\), Czech \(cs\), Danish \(da\), Dutch \(nl\), English United Kingdom \(en-gb\), English United States \(en-us\), Estonian \(et\), Finnish \(fi\), French Standard \(fr\), French Canada \(fr-ca\), German Standard \(de\), Greek \(el\), Hebrew \(iw\), Hungarian \(hu\), Italian \(it\), Japanese \(ja\), Korean \(ko\), Latvian \(lv\), Lithuanian \(lt\), Norwegian \(no\), Polish \(pl\), Portuguese Portugal \(pt\), Romanian \(ro\), Russian \(ru\), Serbian \(sr\), Slovak \(sk\), Slovenian \(sl\), Spanish \(es\), Spanish Mexico \(es-mx\), Swedish \(sv\), Turkish \(tr\), Ukrainian \(uk\), Welsh \(cy\).
+> ### Tip:  
+> CCEK activation makes the tenant unavailable during the execution of the encryption procedure. Consider scheduling maintenance windows accordingly.
+> 
+> ****
+> 
+> 
+> <table>
+> <tr>
+> <th valign="top">
+> 
+> Number of Users
+> 
+> 
+> 
+> </th>
+> <th valign="top">
+> 
+> Activation Time
+> 
+> 
+> 
+> </th>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> less than 1 000
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> less than 1 min
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> between 1 000 and 10 000
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> between 1 min and 5 min
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> between 10 000 and 100 000
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> between 10 min and 20 min
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> between 100 000 and 1 000 000
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> between 100 min and 150 min
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> more than 1 000 000
+> 
+> 
+> 
+> </td>
+> <td valign="top">
+> 
+> > ### Note:  
+> > Request the activation by reporting an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`.
+> 
+> 
+> 
+> </td>
+> </tr>
+> </table>
 
-The language for the end user screens is set according to the following order of priorities:
+> ### Restriction:  
+> If Identity Provisioning is enabled, make sure that no provisioning jobs are running during the execution of the encryption procedure. Stop manually triggered jobs and pause the scheduled ones. For more information, see [Start and Stop Provisioning Jobs](https://help.sap.com/docs/identity-provisioning/identity-provisioning/start-and-stop-provisioning-jobs?version=Cloud&q=running%20jobs).
 
-1.  If the locale is set, the end user screen uses the language set there.
+> ### Note:  
+> If issues during the encryption procedure, report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`.
 
-    Setting the locale, sets an Identity Authentication cookie. This cookie is used for all the applications in this session that are configured to use Identity Authentication as identity provider.
-
-    > ### Note:  
-    > The locale can be set in either of the following ways:
-    > 
-    > -   The locale is communicated to Identity Authentication by adding a locale parameter to *SAP\_IDS.js*.
-    > 
-    >     > ### Source Code:  
-    > 
-    >     `<script src="https://<tenant ID>.accounts.ondemand.com/ui/resources/javascripts/SAP_IDS.js?locale=en_GB" />` 
-    > 
-    > -   The locale is communicated to Identity Authentication by a direct `GET` request.
-    > 
-    >     > ### Source Code:  
-    > 
-    >     `https://<tenant ID>.accounts.ondemand.com/ui/public/setLocale?locale=DE`
-
-2.  If the locale is not set, the end user screen uses the language that the user's browser is set to.
-
-    -   If the locale is in the list of supported locales, the end user screen uses this locale's configurations.
-
-    -   If the locale is not among the supported locales, Identity Authentication looks for configuration from the language part of the locale. For example if there is a request with `en_CA`, as it is not supported, Identity Authentication looks for configurations with `en`.
-
-    -   If the language is not in the list of supported languages, the end user screen uses the language set by the tenant administrator. The choice is from the list of the supported languages. If no configuration is done, the end user screen uses *English United States* language, which is the default value.
-
-
-
-> ### Remember:  
-> It takes 2 minutes for the configuration changes to take place.
+To configure the customer-controlled encryption keys via the administration console for SAP Cloud Identity Services, follow the procedure:
 
 
 
@@ -54,13 +140,102 @@ The language for the end user screens is set according to the following order of
 
     At the top of the page, you can view the administrative and license relevant information of the tenant.
 
-3.  Under *Customization*, choose the *Tenant Default Value* list item.
+3.  Under *General*, choose the *CCEK Configuration* list item.
 
-4.  Select from the drop-down the language that the end user screen to use when the language of the browser is not in the list of supported languages.
+4.  Fill in the required information:
 
-    The default language is *English \(United States\)*.
 
-5.  Save your changes.
+    <table>
+    <tr>
+    <th valign="top">
+
+    Configuration
+
+
+    
+    </th>
+    <th valign="top">
+
+    Notes
+
+
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **API URL**
+
+
+    
+    </td>
+    <td valign="top">
+    
+    The base URL of Data Custodian API \(the URL without the `/kms/v1` or `/kms/v2` suffix\). You can find it in the API Endpoints.txt document you receive when you generate a new key in the Data Custodian API.
+
+    > ### Example:  
+    > `https://kms-apiaws-<data custodian kmsname>datacustodian.cloud.sap`
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Key ID**
+
+
+    
+    </td>
+    <td valign="top">
+    
+    Data Custodian Key ID. You can find in it in`Key Management Service/General/Iaas Applications/Test_group/Keys/<tenant name>` under the *Details* tab.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Client ID**
+
+
+    
+    </td>
+    <td valign="top">
+    
+    The Access Key you receive with the API Endpoints.txt document when you generate a new key in the Data Custodian API
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Client Secret**
+
+
+    
+    </td>
+    <td valign="top">
+    
+    The Secret Key you receive with the API Endpoints.txt document when you generate a new key in the Data Custodian API
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
+5.  Save your configuration.
+
+6.  Activate the configuration.
+
+    This starts an asynchronous activation of the configuration.
 
 
 **Related Information**  
@@ -118,7 +293,7 @@ The language for the end user screens is set according to the following order of
 
 [Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.")
 
-[Configure Customer-Controlled Encryption Keys in Administration Console \(Early Adoption\)](configure-customer-controlled-encryption-keys-in-administration-console-early-adoption-fe6e30c.md "")
+[Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 
 [Configure P-User Next Index](configure-p-user-next-index-045bb1c.md "Set the value for the P-user next index.")
 

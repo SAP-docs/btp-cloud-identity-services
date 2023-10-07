@@ -115,7 +115,7 @@ To start sending security alert emails, proceed as follows:
 
 [Send Security Alert Emails](send-security-alert-emails-c977464.md "Send security alert emails to end-users or administrators when changes in their accounts are made.")
 
-[Configure Customer-Controlled Encryption Keys in Administration Console](configure-customer-controlled-encryption-keys-in-administration-console-fe6e30c.md "")
+[Configure Customer-Controlled Encryption Keys in Administration Console \(Early Adoption\)](configure-customer-controlled-encryption-keys-in-administration-console-early-adoption-fe6e30c.md "")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 

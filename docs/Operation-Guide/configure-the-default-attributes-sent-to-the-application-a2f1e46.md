@@ -1112,7 +1112,7 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     > ### Example:  
     > For example, you have set up a scenario where Identity Authentication acts as a proxy. The default authenticating identity provider is the corporate IdP, and the *Identity Federation* option is configured for that corporate IdP.
     > 
-    > The corporate IdP is configured to send the user groups with the `group` assertion attribute.
+    > The corporate IdP is configured to send the groups with the `group` assertion attribute.
     > 
     > You want to send the groups coming from the corporate IdP to the application so you have defined the following default attribute in the administration console for SAP Cloud Identity Services:
     > 
@@ -1185,7 +1185,7 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     > ### Example:  
     > Again, you have a scenario where Identity Authentication is a proxy. The default authenticating identity provider is the corporate IdP, and the *Identity Federation* option is configured for that corporate IdP.
     > 
-    > The corporate IdP is configured to send the user groups with the `group` assertion attribute.
+    > The corporate IdP is configured to send the groups with the `group` assertion attribute.
     > 
     > You don't want to send all the groups coming from the corporate IdP to the application so you have defined the following default attribute in the administration console for SAP Cloud Identity Services:
     > 
