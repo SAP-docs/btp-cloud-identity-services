@@ -33,21 +33,15 @@ The group search method of the Identity Authentication implementation of the SCI
 
 Header
 
-
-
 </th>
 <th valign="top">
 
 Required
 
-
-
 </th>
 <th valign="top">
 
 Values
-
-
 
 </th>
 </tr>
@@ -56,21 +50,15 @@ Values
 
 `Content-Type`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 application/scim+json
-
-
 
 </td>
 </tr>
@@ -85,21 +73,15 @@ application/scim+json
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -108,14 +90,10 @@ Description
 
 `count`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
@@ -124,8 +102,6 @@ Paginates the response. Represents the number of groups which will be returned p
 
 The maximum number of groups returned per page is limited to 100. If you have more than 100 groups, and you want to get the full list, you have to perform multiple requests.
 
-
-
 </td>
 </tr>
 <tr>
@@ -133,21 +109,15 @@ The maximum number of groups returned per page is limited to 100. If you have mo
 
 `startIndex`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 Paginates the response. Represents the start index from which the results are returned.
-
-
 
 </td>
 </tr>
@@ -181,21 +151,15 @@ Content-Type: application/scim+json
 
 Code
 
-
-
 </th>
 <th valign="top">
 
 Reason
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -204,14 +168,10 @@ Description
 
 200
 
-
-
 </td>
 <td valign="top">
 
 OK
-
-
 
 </td>
 <td valign="top">

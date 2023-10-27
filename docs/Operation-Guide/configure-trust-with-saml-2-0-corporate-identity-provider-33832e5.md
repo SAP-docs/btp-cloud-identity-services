@@ -120,15 +120,11 @@ Set up trust with a corporate identity provider in the administration console fo
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -156,15 +152,11 @@ Set up trust with a corporate identity provider in the administration console fo
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     The entity ID of the identity provider.
-
-
     
     </td>
     </tr>
@@ -172,15 +164,11 @@ Set up trust with a corporate identity provider in the administration console fo
     <td valign="top">
     
     Single Sign-On Endpoint URL
-
-
     
     </td>
     <td valign="top">
     
     The URL of the identity provider single sign-on endpoint that receives authentication requests.
-
-
     
     </td>
     </tr>
@@ -188,15 +176,11 @@ Set up trust with a corporate identity provider in the administration console fo
     <td valign="top">
     
     Single Logout Endpoint URL
-
-
     
     </td>
     <td valign="top">
     
     The URL of the identity provider's single logout endpoint that receives logout messages.
-
-
     
     </td>
     </tr>
@@ -204,15 +188,11 @@ Set up trust with a corporate identity provider in the administration console fo
     <td valign="top">
     
     Binding
-
-
     
     </td>
     <td valign="top">
     
     The SAML-specified HTTP binding used by the identity provider showing how the various SAML protocol messages can be carried over underlying transport protocols.
-
-
     
     </td>
     </tr>
@@ -220,8 +200,6 @@ Set up trust with a corporate identity provider in the administration console fo
     <td valign="top">
     
     Signing Certificate
-
-
     
     </td>
     <td valign="top">
@@ -257,15 +235,11 @@ Set up trust with a corporate identity provider in the administration console fo
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Notes
-
-
     
     </th>
     </tr>
@@ -273,15 +247,11 @@ Set up trust with a corporate identity provider in the administration console fo
     <td valign="top">
     
     **Sign authentication requests**
-
-
     
     </td>
     <td valign="top">
     
     Enabled - default configuration
-
-
     
     </td>
     </tr>
@@ -289,15 +259,11 @@ Set up trust with a corporate identity provider in the administration console fo
     <td valign="top">
     
     **Sign single logout messages**
-
-
     
     </td>
     <td valign="top">
     
     Enabled - default configuration
-
-
     
     </td>
     </tr>

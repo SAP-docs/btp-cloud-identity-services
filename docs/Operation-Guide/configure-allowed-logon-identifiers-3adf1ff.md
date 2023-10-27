@@ -33,14 +33,10 @@ The default configuration for newly created tenants is the following:
 
 Logon Identifier
 
-
-
 </th>
 <th valign="top">
 
 Configuration
-
-
 
 </th>
 </tr>
@@ -49,14 +45,10 @@ Configuration
 
 *User ID*
 
-
-
 </td>
 <td valign="top">
 
 *Off/Configurable*
-
-
 
 </td>
 </tr>
@@ -65,14 +57,10 @@ Configuration
 
 *Login Name*
 
-
-
 </td>
 <td valign="top">
 
 *On/Configurable*
-
-
 
 </td>
 </tr>
@@ -80,8 +68,6 @@ Configuration
 <td valign="top">
 
 *Email*
-
-
 
 </td>
 <td valign="top">
@@ -100,8 +86,6 @@ Configuration
 
 *Display Name*
 
-
-
 </td>
 <td valign="top">
 
@@ -118,8 +102,6 @@ Configuration
 <td valign="top">
 
 *Phone*
-
-
 
 </td>
 <td valign="top">

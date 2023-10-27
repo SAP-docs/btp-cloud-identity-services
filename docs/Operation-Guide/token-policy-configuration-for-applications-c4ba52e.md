@@ -23,14 +23,10 @@ The following table lists the token policy options for OIDC applications.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -38,8 +34,6 @@ Description
 <td valign="top">
 
 *Refresh Token* 
-
-
 
 </td>
 <td valign="top">
@@ -66,16 +60,12 @@ The default value is 12 hours.
 
 *Access / ID Token* 
 
-
-
 </td>
 <td valign="top">
 
 Sets the access and id\_token lifetime issued by Identity Authentication. The value can range from 1 to 60 minutes.
 
 The default value is 60 minutes.
-
-
 
 </td>
 </tr>
@@ -84,16 +74,12 @@ The default value is 60 minutes.
 
 *Max sessions per user* 
 
-
-
 </td>
 <td valign="top">
 
 Determines the maximum number of tokens that the service issues for the same session in parallel. Imagine you’re logged on to the application through a web interface and a command-line interface in parallel. Then you'd set this parameter to 2. The value can range from 1 to 10.
 
 The default value is 1.
-
-
 
 </td>
 </tr>
@@ -119,14 +105,10 @@ When refresh token flows fail, you can enable the server to accept a refresh tok
 
 Settings
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -135,14 +117,10 @@ Description
 
 Off \(Default\)
 
-
-
 </td>
 <td valign="top">
 
 The new refresh token immediately invalidates the old one.
-
-
 
 </td>
 </tr>
@@ -151,14 +129,10 @@ The new refresh token immediately invalidates the old one.
 
 Online scenarios
 
-
-
 </td>
 <td valign="top">
 
 The new refresh token is created and the old one is still active for 5 minutes.
-
-
 
 </td>
 </tr>
@@ -167,14 +141,10 @@ The new refresh token is created and the old one is still active for 5 minutes.
 
 Mobile scenarios
 
-
-
 </td>
 <td valign="top">
 
 The new and old refresh token are valid during the configured refresh token life time.
-
-
 
 </td>
 </tr>
@@ -192,14 +162,10 @@ The new and old refresh token are valid during the configured refresh token life
 
 Settings
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -207,8 +173,6 @@ Description
 <td valign="top">
 
 Grant-Type Dependent \(Default\)
-
-
 
 </td>
 <td valign="top">
@@ -231,14 +195,10 @@ The format of the token depends on the grant type. It is as folows:
 
 JSON Web Token
 
-
-
 </td>
 <td valign="top">
 
 All tokens are generated in the JWT format.
-
-
 
 </td>
 </tr>
@@ -247,14 +207,10 @@ All tokens are generated in the JWT format.
 
 Opaque
 
-
-
 </td>
 <td valign="top">
 
 All tokens are generated in the opaque format.
-
-
 
 </td>
 </tr>

@@ -28,21 +28,15 @@ There are two aspects in the configuration of the login hint parameter: the valu
 
 Value
 
-
-
 </th>
 <th valign="top">
 
 How it is sent to the corporate IdP
 
-
-
 </th>
 <th valign="top">
 
 Additional Info
-
-
 
 </th>
 </tr>
@@ -50,8 +44,6 @@ Additional Info
 <td valign="top">
 
 User Input
-
-
 
 </td>
 <td valign="top">
@@ -66,8 +58,6 @@ User Input
 
 As `login_hint` will be sent the user identifier provided at the conditional authentication sign in screen of Identity Authentication.
 
-
-
 </td>
 </tr>
 <tr>
@@ -75,21 +65,15 @@ As `login_hint` will be sent the user identifier provided at the conditional aut
 
 None
 
-
-
 </td>
 <td valign="top">
 
 no login hint parameter is sent
 
-
-
 </td>
 <td valign="top">
 
 The user will need to provide user identifier and password at the corporate identity provider sign in screen.
-
-
 
 </td>
 </tr>
@@ -120,8 +104,6 @@ As `login_hint` will be sent one of the following:
 -   Email
 
 .
-
-
 
 </td>
 </tr>

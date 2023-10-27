@@ -85,15 +85,11 @@ In the following procedure, we provide the syntax using the Cloud Foundry comman
     <th valign="top">
 
     Binding data consumed by a …
-
-
     
     </th>
     <th valign="top">
 
     Then …
-
-
     
     </th>
     </tr>
@@ -101,8 +97,6 @@ In the following procedure, we provide the syntax using the Cloud Foundry comman
     <td valign="top">
     
     **Web application**
-
-
     
     </td>
     <td valign="top">
@@ -125,8 +119,6 @@ In the following procedure, we provide the syntax using the Cloud Foundry comman
     <td valign="top">
     
     **Service consumed by application \(principal propagation\)**
-
-
     
     </td>
     <td valign="top">
@@ -134,8 +126,6 @@ In the following procedure, we provide the syntax using the Cloud Foundry comman
     Validate the token validation and evaluate the binding data using client libraries.
 
     For more information, see [Reference Information for the Identity Service of SAP BTP](reference-information-for-the-identity-service-of-sap-btp-9379444.md).
-
-
     
     </td>
     </tr>

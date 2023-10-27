@@ -53,15 +53,11 @@ You can configure more than one RADIUS server in the administration console for 
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Details
-
-
     
     </th>
     </tr>
@@ -69,15 +65,11 @@ You can configure more than one RADIUS server in the administration console for 
     <td valign="top">
     
     *Host*\*
-
-
     
     </td>
     <td valign="top">
     
     Host address of the RADIUS server \(used for user authentication\).
-
-
     
     </td>
     </tr>
@@ -85,15 +77,11 @@ You can configure more than one RADIUS server in the administration console for 
     <td valign="top">
     
     *Port*\*
-
-
     
     </td>
     <td valign="top">
     
     The port number used by the RADIUS server for authentication requests.
-
-
     
     </td>
     </tr>
@@ -101,15 +89,11 @@ You can configure more than one RADIUS server in the administration console for 
     <td valign="top">
     
     *Secret*\*
-
-
     
     </td>
     <td valign="top">
     
     A shared secret is used to encrypt the user password. This shared secret also must be defined in the RADIUS server. Paste the secret defined in the RADIUS server into this field.
-
-
     
     </td>
     </tr>
@@ -125,15 +109,11 @@ You can configure more than one RADIUS server in the administration console for 
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Details
-
-
     
     </th>
     </tr>
@@ -141,8 +121,6 @@ You can configure more than one RADIUS server in the administration console for 
     <td valign="top">
     
     *User Attribute*\*
-
-
     
     </td>
     <td valign="top">
@@ -161,8 +139,6 @@ You can configure more than one RADIUS server in the administration console for 
     <td valign="top">
     
     *PAP / CHAP*\*
-
-
     
     </td>
     <td valign="top">
@@ -173,8 +149,6 @@ You can configure more than one RADIUS server in the administration console for 
     -   `CHAP`
 
     The default value is `PAP`.
-
-
     
     </td>
     </tr>

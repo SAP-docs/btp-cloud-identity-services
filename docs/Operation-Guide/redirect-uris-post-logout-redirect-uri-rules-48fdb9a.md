@@ -80,10 +80,14 @@ Top level domains are allowed. The domain part can't end with a hyphen "-".
     > 
     > https://\*.localhost
 
--   You can use asterisk \(`*`\) in between the domain part, but there must be at least 3 subdomains left after the asterisk.
+-   You can use asterisk \(`*`\) in the domain part, or you can have a subdomain and add an asterisk at the beginning or at the end of it. There must be at least 3 subdomains left after the subdomain with the asterisk, and there can only be one subdomain with an asterisk..
 
     > ### Example:  
     > https://app.\*.test.example.com
+    > 
+    > https://app.\*foo.test.example.com
+    > 
+    > https://app.foo\*.test.example.com
 
 -   You can use asterisk \(`*`\) at the end of the path, or between paths.
 

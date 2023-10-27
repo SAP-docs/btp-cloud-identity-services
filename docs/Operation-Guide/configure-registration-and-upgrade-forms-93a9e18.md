@@ -100,14 +100,10 @@ The list of the attributes includes:
 > 
 > Contact Preference
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Countries
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -116,14 +112,10 @@ The list of the attributes includes:
 > 
 > By Email
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > **`https://<tenant ID>.accounts.ondemand.com/md/implicitOptInEmailCountryKeys`** 
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -132,14 +124,10 @@ The list of the attributes includes:
 > 
 > By Telephone
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > **`https://<tenant ID>.accounts.ondemand.com/md/implicitOptInTelefonCountryKeys`** 
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -191,7 +179,7 @@ Configure terms of use and privacy policy documents. For more information, see [
 **Related Information**  
 
 
-[Configure the User Attributes Sent to the Application](configure-the-user-attributes-sent-to-the-application-d361407.md "After configuring the user attributes to be collected by the registration and upgrade forms, you have to specify how these attributes are sent to the application.")
+[User Attributes Sent to the Application](user-attributes-sent-to-the-application-d361407.md "After configuring the user attributes to be collected by the registration and upgrade forms, you have to specify how these attributes are sent to the application.")
 
 [Configuring Privacy Policies](configuring-privacy-policies-ed48466.md "You can configure a custom privacy policy document by creating a new document, adding and editing its language versions, and defining the document for an application.")
 

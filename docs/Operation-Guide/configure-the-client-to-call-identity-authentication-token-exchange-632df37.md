@@ -25,21 +25,15 @@ With the Token Exchange flow you can exchange one token for another. For more in
 
 Header
 
-
-
 </th>
 <th valign="top">
 
 Required
 
-
-
 </th>
 <th valign="top">
 
 Values
-
-
 
 </th>
 </tr>
@@ -48,21 +42,15 @@ Values
 
 `Content-Type`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 application/x-www-form-urlencoded
-
-
 
 </td>
 </tr>
@@ -71,14 +59,10 @@ application/x-www-form-urlencoded
 
 `Authentication`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -110,35 +94,25 @@ Yes
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Additional Information
 
-
-
 </th>
 <th valign="top">
 
 Parameter Type
-
-
 
 </th>
 </tr>
@@ -147,35 +121,25 @@ Parameter Type
 
 `grant_type`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:oauth:grant-type:token-exchange`
 
-
-
 </td>
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>
@@ -184,35 +148,25 @@ Path
 
 `client_id`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 The user ID configured for basic authentication for the application. For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
 
-
-
 </td>
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>
@@ -221,35 +175,25 @@ Path
 
 `client_secret`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 The client secret configured for basic authentication for the application. For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
 
-
-
 </td>
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>
@@ -258,35 +202,25 @@ Path
 
 `subject_token`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 A security token that represents the identity of the party on behalf of whom the request is being made, as stated in the OAuth 2.0 Token Exchange specification.
 
-
-
 </td>
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>
@@ -295,21 +229,15 @@ Path
 
 `subject_token_type`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 string
-
-
 
 </td>
 <td valign="top">
@@ -331,8 +259,6 @@ Allowed values:
 
 Request body
 
-
-
 </td>
 </tr>
 <tr>
@@ -340,21 +266,15 @@ Request body
 
 `requested_token_type`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 string
-
-
 
 </td>
 <td valign="top">
@@ -381,8 +301,6 @@ Allowed values for `requested_token_type` parameter:
 
 Request body
 
-
-
 </td>
 </tr>
 <tr>
@@ -390,35 +308,25 @@ Request body
 
 `resource`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Use provided API names. For more information, see [Consume APIs from Other Applications](../Development/consume-apis-from-other-applications-29e204d.md).
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -427,35 +335,25 @@ Request body
 
 `app_tid`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Reserved.
 
-
-
 </td>
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>

@@ -46,15 +46,11 @@ To create a new corporate IdP, proceed as follows:
     <th valign="top">
 
     Fields
-
-
     
     </th>
     <th valign="top">
 
     Notes
-
-
     
     </th>
     </tr>
@@ -62,15 +58,11 @@ To create a new corporate IdP, proceed as follows:
     <td valign="top">
     
     *Display Name*
-
-
     
     </td>
     <td valign="top">
     
     Required. The display name of the identity provider.
-
-
     
     </td>
     </tr>
@@ -78,8 +70,6 @@ To create a new corporate IdP, proceed as follows:
     <td valign="top">
     
     *Identity Provider Type*
-
-
     
     </td>
     <td valign="top">
@@ -108,8 +98,6 @@ To create a new corporate IdP, proceed as follows:
     <td valign="top">
     
     *Copy Settings from Identity Provider*
-
-
     
     </td>
     <td valign="top">

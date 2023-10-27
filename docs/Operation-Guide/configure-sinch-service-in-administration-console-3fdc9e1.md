@@ -36,14 +36,10 @@ Provide the following:
 
 Configuration
 
-
-
 </th>
 <th valign="top">
 
 Notes
-
-
 
 </th>
 </tr>
@@ -52,14 +48,10 @@ Notes
 
 *Application Key*
 
-
-
 </td>
 <td valign="top">
 
 The *Application Key* obtained via Sinch customer dashboard.
-
-
 
 </td>
 </tr>
@@ -68,14 +60,10 @@ The *Application Key* obtained via Sinch customer dashboard.
 
 *Application Secret*
 
-
-
 </td>
 <td valign="top">
 
 The *Application Secret* obtained via Sinch customer dashboard.
-
-
 
 </td>
 </tr>
@@ -83,8 +71,6 @@ The *Application Secret* obtained via Sinch customer dashboard.
 <td valign="top">
 
 *Code Timeout*
-
-
 
 </td>
 <td valign="top">
@@ -104,8 +90,6 @@ Request the Sinch Support team to configure this parameter for the client's Sinc
 <td valign="top">
 
 *SMS Text Template*
-
-
 
 </td>
 <td valign="top">

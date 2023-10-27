@@ -61,15 +61,11 @@ Once the phone number has been verified, the user cannot change it any more on t
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -77,15 +73,11 @@ Once the phone number has been verified, the user cannot change it any more on t
     <td valign="top">
     
     Add a new rule
-
-
     
     </td>
     <td valign="top">
     
     See [Add a New Phone Verification Rule](add-a-new-phone-verification-rule-e920324.md).
-
-
     
     </td>
     </tr>
@@ -93,15 +85,11 @@ Once the phone number has been verified, the user cannot change it any more on t
     <td valign="top">
     
     Delete an existing rule
-
-
     
     </td>
     <td valign="top">
     
     Choose the delete ![](images/delete_icon_4801c38.png) icon next to the rule you want to delete.
-
-
     
     </td>
     </tr>

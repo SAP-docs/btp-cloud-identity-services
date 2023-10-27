@@ -23,21 +23,15 @@ With user management, you can perform the following activities:
 
 Activity
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Procedure
-
-
 
 </th>
 </tr>
@@ -46,21 +40,15 @@ Procedure
 
 Create user
 
-
-
 </td>
 <td valign="top">
 
 Create users via the *Add* option in the administration console
 
-
-
 </td>
 <td valign="top">
 
 [Create a New User](create-a-new-user-348deef.md) 
-
-
 
 </td>
 </tr>
@@ -69,14 +57,10 @@ Create users via the *Add* option in the administration console
 
 Create users via a CSV file import in the administration console
 
-
-
 </td>
 <td valign="top">
 
 [Import or Update Users for a Specific Application](import-or-update-users-for-a-specific-application-33838e0.md) 
-
-
 
 </td>
 </tr>
@@ -85,14 +69,10 @@ Create users via a CSV file import in the administration console
 
 Create users programmatically via API
 
-
-
 </td>
 <td valign="top">
 
 [Create User Resource \(Deprecated\)](../Development/create-user-resource-deprecated-cea8778.md) 
-
-
 
 </td>
 </tr>
@@ -101,21 +81,15 @@ Create users programmatically via API
 
 Search users
 
-
-
 </td>
 <td valign="top">
 
 Search users in the administration console
 
-
-
 </td>
 <td valign="top">
 
 [Search Users](search-users-06078a6.md) 
-
-
 
 </td>
 </tr>
@@ -124,14 +98,10 @@ Search users in the administration console
 
 Search users via API
 
-
-
 </td>
 <td valign="top">
 
 [Users Search \(Deprecated\)](../Development/users-search-deprecated-3af7dfa.md) 
-
-
 
 </td>
 </tr>
@@ -140,21 +110,15 @@ Search users via API
 
 List and edit user details
 
-
-
 </td>
 <td valign="top">
 
 List a specific user and edit the information about that user via the administration console
 
-
-
 </td>
 <td valign="top">
 
 [List and Edit User Details](list-and-edit-user-details-045cb01.md) 
-
-
 
 </td>
 </tr>
@@ -162,8 +126,6 @@ List a specific user and edit the information about that user via the administra
 <td valign="top">
 
 List and update user details via API
-
-
 
 </td>
 <td valign="top">
@@ -180,14 +142,10 @@ List and update user details via API
 
 Update user details via a CSV file import
 
-
-
 </td>
 <td valign="top">
 
 [Import or Update Users for a Specific Application](import-or-update-users-for-a-specific-application-33838e0.md) 
-
-
 
 </td>
 </tr>
@@ -195,8 +153,6 @@ Update user details via a CSV file import
 <td valign="top">
 
 Manage user password via the administration console
-
-
 
 </td>
 <td valign="top">
@@ -219,21 +175,15 @@ Manage user password via the administration console
 
 Delete users
 
-
-
 </td>
 <td valign="top">
 
 Delete users via the administration console
 
-
-
 </td>
 <td valign="top">
 
 [Delete Users](delete-users-bbfaf5f.md) 
-
-
 
 </td>
 </tr>
@@ -242,14 +192,10 @@ Delete users via the administration console
 
 Delete users programmatically via API
 
-
-
 </td>
 <td valign="top">
 
 [Delete User Resource \(Deprecated\)](../Development/delete-user-resource-deprecated-436015d.md) 
-
-
 
 </td>
 </tr>
@@ -258,14 +204,10 @@ Delete users programmatically via API
 
 Manage the user group assignment
 
-
-
 </td>
 <td valign="top">
 
 Assign and unassign groups via the administration console
-
-
 
 </td>
 <td valign="top">

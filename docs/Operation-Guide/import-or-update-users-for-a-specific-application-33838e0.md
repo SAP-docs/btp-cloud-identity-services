@@ -43,35 +43,25 @@ The CSV file can contain only columns with no spaces between them, with the foll
 
 Attributes
 
-
-
 </th>
 <th valign="top">
 
 Mandatory
-
-
 
 </th>
 <th valign="top">
 
 Unique
 
-
-
 </th>
 <th valign="top">
 
 Valid Values
 
-
-
 </th>
 <th valign="top">
 
 Notes
-
-
 
 </th>
 </tr>
@@ -80,21 +70,15 @@ Notes
 
 `status`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
@@ -109,8 +93,6 @@ No
 
 The *status* column defines whether the user is still active in the system and is able to work with any tenant applications. When a user is deleted, it's rendered inactive.
 
-
-
 </td>
 </tr>
 <tr>
@@ -118,28 +100,20 @@ The *status* column defines whether the user is still active in the system and i
 
 `loginName`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -148,8 +122,6 @@ Must be a string value of up to 64 characters.
 
 You cannot change the email of an existing user.
 
-
-
 </td>
 </tr>
 <tr>
@@ -157,28 +129,20 @@ You cannot change the email of an existing user.
 
 `mail`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -190,8 +154,6 @@ Must be a string value of up to 64 characters.
 
 Values that are part of the respective exclude list can't be used. For more information, see [Restrict User Attributes Values via Exclude Lists](restrict-user-attributes-values-via-exclude-lists-cb108c2.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -199,28 +161,20 @@ Values that are part of the respective exclude list can't be used. For more info
 
 `firstName`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -228,8 +182,6 @@ No
 Must be a string value of up to 64 characters.
 
 Values that are part of the respective exclude list can't be used. For more information, see [Restrict User Attributes Values via Exclude Lists](restrict-user-attributes-values-via-exclude-lists-cb108c2.md).
-
-
 
 </td>
 </tr>
@@ -238,28 +190,20 @@ Values that are part of the respective exclude list can't be used. For more info
 
 `lastName`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -268,8 +212,6 @@ Must be a string value of up to 64 characters.
 
 Values that are part of the respective exclude list can't be used. For more information, see [Restrict User Attributes Values via Exclude Lists](restrict-user-attributes-values-via-exclude-lists-cb108c2.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -277,35 +219,25 @@ Values that are part of the respective exclude list can't be used. For more info
 
 `language`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 Must be a string value specified by a two or four-letter code in one of the following formats: XX. Otherwise, the activation email is in English.
-
-
 
 </td>
 </tr>
@@ -314,28 +246,20 @@ Must be a string value specified by a two or four-letter code in one of the foll
 
 `validTo`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -343,8 +267,6 @@ No
 Must be a string value in the Zulu format yyyyMMddHHmmss'Z'.
 
 The information in the *validFrom* and *validTo* columns can be processed by the service provider to limit user access. It would affect the authentication of the user, though.
-
-
 
 </td>
 </tr>
@@ -353,28 +275,20 @@ The information in the *validFrom* and *validTo* columns can be processed by the
 
 `validFrom`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -383,8 +297,6 @@ Must be a string value in the Zulu format yyyyMMddHHmmss'Z'.
 
 The information in the *validFrom* and *validTo* columns can be processed by the service provider to limit user access. It would affect the authentication of the user, though.
 
-
-
 </td>
 </tr>
 <tr>
@@ -392,21 +304,15 @@ The information in the *validFrom* and *validTo* columns can be processed by the
 
 `userType`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
@@ -431,8 +337,6 @@ No
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -440,21 +344,15 @@ No
 
 `urn:ietf:params:scim:schemas:extension:sap:2.0:User:mailVerified`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
@@ -469,8 +367,6 @@ No
 
  
 
-
-
 </td>
 </tr>
 <tr>
@@ -478,35 +374,25 @@ No
 
 `spCustomAttribute1`
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
-
-
-</td>
-<td valign="top">
-
-No
-
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -515,35 +401,25 @@ No
 
 `spCustomAttribute2`
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
-
-
-</td>
-<td valign="top">
-
-No
-
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -552,35 +428,25 @@ No
 
 `spCustomAttribute3`
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
-
-
-</td>
-<td valign="top">
-
-No
-
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -589,35 +455,25 @@ No
 
 `spCustomAttribute4`
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
-
-
-</td>
-<td valign="top">
-
-No
-
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -626,35 +482,25 @@ No
 
 `spCustomAttribute5`
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
-
-
-</td>
-<td valign="top">
-
-No
-
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -663,28 +509,20 @@ No
 
 `groups`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -692,8 +530,6 @@ No
 The groups in the *groups* column must be existing. You can’t add a user to a user group that is not existing.
 
 The maximum number of groups assigned to a user is 500.
-
-
 
 </td>
 </tr>
@@ -787,15 +623,11 @@ To import users for an application into Identity Authentication, and to send act
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -803,15 +635,11 @@ To import users for an application into Identity Authentication, and to send act
     <td valign="top">
     
     **Do nothing**
-
-
     
     </td>
     <td valign="top">
     
     The users are imported or updated for the selected application, but they will not receive activation emails. The activation emails will be sent when you choose *Send Emails* \> *Send*.
-
-
     
     </td>
     </tr>
@@ -819,15 +647,11 @@ To import users for an application into Identity Authentication, and to send act
     <td valign="top">
     
     **Repeat steps 1 to 5**
-
-
     
     </td>
     <td valign="top">
     
     The users are imported or updated for the selected application, but they will not receive activation emails. The activation emails will be sent when you choose *Send Emails* \> *Send*.
-
-
     
     </td>
     </tr>
@@ -835,8 +659,6 @@ To import users for an application into Identity Authentication, and to send act
     <td valign="top">
     
     Choose *Send Emails* \> *Send*
-
-
     
     </td>
     <td valign="top">

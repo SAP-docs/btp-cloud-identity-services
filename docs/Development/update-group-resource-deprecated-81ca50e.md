@@ -55,21 +55,15 @@ You have the `id` of the group whose resource you want to update.
 
 Header
 
-
-
 </th>
 <th valign="top">
 
 Required
 
-
-
 </th>
 <th valign="top">
 
 Values
-
-
 
 </th>
 </tr>
@@ -78,21 +72,15 @@ Values
 
 `Content-Type`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 application/scim+json
-
-
 
 </td>
 </tr>
@@ -109,35 +97,25 @@ application/scim+json
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Parameter Type
-
-
 
 </th>
 </tr>
@@ -146,21 +124,15 @@ Parameter Type
 
 `id`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
@@ -177,8 +149,6 @@ The `id` of the group whose resource you want to update.
 
 Request body
 
-
-
 </td>
 </tr>
 <tr>
@@ -186,35 +156,25 @@ Request body
 
 `displayName`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Use it to change the human readable name for the group.
 
-
-
 </td>
 <td valign="top">
 
 Request Body
-
-
 
 </td>
 </tr>
@@ -223,21 +183,15 @@ Request Body
 
 `members`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 Complex
-
-
 
 </td>
 <td valign="top">
@@ -262,8 +216,6 @@ Sub-attribute: `value` - takes the `id` of the user.
 
 Request Body
 
-
-
 </td>
 </tr>
 <tr>
@@ -271,21 +223,15 @@ Request Body
 
 `description`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
@@ -302,16 +248,12 @@ Use it to update the description for the group.
 
 Request body
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `name`
-
-
 
 </td>
 <td valign="top">
@@ -328,21 +270,15 @@ No
 
 String
 
-
-
 </td>
 <td valign="top">
 
 The name of the group whose `description` you want to update.
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -407,21 +343,15 @@ Request body
 
 Code
 
-
-
 </th>
 <th valign="top">
 
 Reason
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -430,14 +360,10 @@ Description
 
 200
 
-
-
 </td>
 <td valign="top">
 
 OK
-
-
 
 </td>
 <td valign="top">
@@ -458,14 +384,10 @@ Operation successful.
 
 400
 
-
-
 </td>
 <td valign="top">
 
 Bad Request
-
-
 
 </td>
 <td valign="top">

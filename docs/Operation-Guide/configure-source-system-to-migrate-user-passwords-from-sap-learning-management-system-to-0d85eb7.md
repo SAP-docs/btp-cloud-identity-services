@@ -47,15 +47,11 @@ To configure a source system, follow the steps below:
         <th valign="top">
 
         Configuration
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -63,15 +59,11 @@ To configure a source system, follow the steps below:
         <td valign="top">
         
         *Display Name*
-
-
         
         </td>
         <td valign="top">
         
         \(optional\) The name of the configuration.
-
-
         
         </td>
         </tr>
@@ -79,15 +71,11 @@ To configure a source system, follow the steps below:
         <td valign="top">
         
         *Type*
-
-
         
         </td>
         <td valign="top">
         
         Select the *Learning Management System* type.
-
-
         
         </td>
         </tr>
@@ -102,15 +90,11 @@ To configure a source system, follow the steps below:
         <th valign="top">
 
         Configurations
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -118,15 +102,11 @@ To configure a source system, follow the steps below:
         <td valign="top">
         
         *System ID*
-
-
         
         </td>
         <td valign="top">
         
         The ID of the source system.
-
-
         
         </td>
         </tr>
@@ -134,8 +114,6 @@ To configure a source system, follow the steps below:
         <td valign="top">
         
         *Password Validation URL*
-
-
         
         </td>
         <td valign="top">
@@ -145,8 +123,6 @@ To configure a source system, follow the steps below:
         The *Password Validation URL* can be provided also by the source system administrator. It must have the following pattern: `https://<lms-system-id>.plateau.com/learning/rest/integrated/admin/Learner.svc/ias/v1/~validateCredentials`
 
         Plain HTTP is supported for testing purposes only. Make sure that you use the encrypted HTTPS protocol for productive systems.
-
-
         
         </td>
         </tr>
@@ -154,8 +130,6 @@ To configure a source system, follow the steps below:
         <td valign="top">
         
         *Authentication Type*
-
-
         
         </td>
         <td valign="top">
@@ -193,8 +167,6 @@ To configure a source system, follow the steps below:
         <td valign="top">
         
         *First Logon Behavior*
-
-
         
         </td>
         <td valign="top">
@@ -205,8 +177,6 @@ To configure a source system, follow the steps below:
         -   if a user whose LMS password is expired must reset or change it after the first successful logon.
 
         The default choice is *Change password*.
-
-
         
         </td>
         </tr>

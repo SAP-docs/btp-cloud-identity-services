@@ -58,21 +58,15 @@ The service endpoint returns the list of sessions associated with the OpenID Con
 
 Header
 
-
-
 </th>
 <th valign="top">
 
 Required
 
-
-
 </th>
 <th valign="top">
 
 Values
-
-
 
 </th>
 </tr>
@@ -81,21 +75,15 @@ Values
 
 `Content-Type`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 application/x-www-form-urlencoded
-
-
 
 </td>
 </tr>
@@ -112,35 +100,25 @@ application/x-www-form-urlencoded
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Parameter Type
-
-
 
 </th>
 </tr>
@@ -149,35 +127,25 @@ Parameter Type
 
 `token`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Provide the Identity Authentication token. The endpoint supports ID tokens, access tokens, and refresh tokens.
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -186,21 +154,15 @@ Request body
 
 `client_id`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 string
-
-
 
 </td>
 <td valign="top">
@@ -216,8 +178,6 @@ Used to identify the corresponding Identity Authentication application.
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>

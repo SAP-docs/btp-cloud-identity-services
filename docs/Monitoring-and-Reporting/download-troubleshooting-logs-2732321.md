@@ -17,14 +17,10 @@ The maximum number of log entries is 10000. The criteria you can choose include:
 
 Criteria
 
-
-
 </th>
 <th valign="top">
 
 Notes
-
-
 
 </th>
 </tr>
@@ -32,8 +28,6 @@ Notes
 <td valign="top">
 
 Time period
-
-
 
 </td>
 <td valign="top">
@@ -51,8 +45,6 @@ Time period
 
 Severity
 
-
-
 </td>
 <td valign="top">
 
@@ -69,8 +61,6 @@ Severity
 <td valign="top">
 
 File format
-
-
 
 </td>
 <td valign="top">

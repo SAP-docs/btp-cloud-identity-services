@@ -28,21 +28,15 @@ The tables below show the pre-configured settings for your system that you have 
 
 System
 
-
-
 </th>
 <th valign="top">
 
 Trust-Related Setting
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -51,14 +45,10 @@ Value
 
 S/4HANA Cloud or Integrated Business Planning
 
-
-
 </td>
 <td valign="top">
 
 `Subject Name Identifier`
-
-
 
 </td>
 <td valign="top">
@@ -77,14 +67,10 @@ S/4HANA Cloud or Integrated Business Planning
 
 `Default Name ID Format`
 
-
-
 </td>
 <td valign="top">
 
 `Unspecified`
-
-
 
 </td>
 </tr>
@@ -93,14 +79,10 @@ S/4HANA Cloud or Integrated Business Planning
 
 `Apply Function to Subject Name Identifier`
 
-
-
 </td>
 <td valign="top">
 
 `None` \(ABAP does implicit uppercase conversion\)
-
-
 
 </td>
 </tr>
@@ -109,14 +91,10 @@ S/4HANA Cloud or Integrated Business Planning
 
 `Conditional Authentication`
 
-
-
 </td>
 <td valign="top">
 
 Identity Authentication
-
-
 
 </td>
 </tr>
@@ -125,21 +103,15 @@ Identity Authentication
 
 SAP Analytics Cloud, embedded edition
 
-
-
 </td>
 <td valign="top">
 
 `Subject Name Identifier`
 
-
-
 </td>
 <td valign="top">
 
 `Login Name`
-
-
 
 </td>
 </tr>
@@ -148,14 +120,10 @@ SAP Analytics Cloud, embedded edition
 
 `Default Name ID Format`
 
-
-
 </td>
 <td valign="top">
 
 `Unspecified`
-
-
 
 </td>
 </tr>
@@ -164,14 +132,10 @@ SAP Analytics Cloud, embedded edition
 
 `Apply Function to Subject Name Identifier`
 
-
-
 </td>
 <td valign="top">
 
 `Uppercase`
-
-
 
 </td>
 </tr>
@@ -180,14 +144,10 @@ SAP Analytics Cloud, embedded edition
 
 `Conditional Authentication`
 
-
-
 </td>
 <td valign="top">
 
 Identity Authentication
-
-
 
 </td>
 </tr>
@@ -202,21 +162,15 @@ Identity Authentication
 
 Application
 
-
-
 </th>
 <th valign="top">
 
 Trust-related setting
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -225,14 +179,10 @@ Value
 
 S/4HANA Cloud or SAP Integrated Business Planning
 
-
-
 </td>
 <td valign="top">
 
 `Subject Name Identifier`
-
-
 
 </td>
 <td valign="top">
@@ -251,14 +201,10 @@ S/4HANA Cloud or SAP Integrated Business Planning
 
 `Default Name ID Format`
 
-
-
 </td>
 <td valign="top">
 
 `Email`
-
-
 
 </td>
 </tr>
@@ -267,14 +213,10 @@ S/4HANA Cloud or SAP Integrated Business Planning
 
 `Apply Function to Subject Name Identifier`
 
-
-
 </td>
 <td valign="top">
 
 `None` \(email addresses are compared case-insensitively\)
-
-
 
 </td>
 </tr>
@@ -283,14 +225,10 @@ S/4HANA Cloud or SAP Integrated Business Planning
 
 `Conditional Authentication`
 
-
-
 </td>
 <td valign="top">
 
 `Identity Authentication`
-
-
 
 </td>
 </tr>
@@ -299,21 +237,15 @@ S/4HANA Cloud or SAP Integrated Business Planning
 
 SAP Analytics Cloud, embedded edition
 
-
-
 </td>
 <td valign="top">
 
 `Subject Name Identifier`
 
-
-
 </td>
 <td valign="top">
 
 `Email`
-
-
 
 </td>
 </tr>
@@ -322,14 +254,10 @@ SAP Analytics Cloud, embedded edition
 
 `Default Name ID Format`
 
-
-
 </td>
 <td valign="top">
 
 `Unspecified`
-
-
 
 </td>
 </tr>
@@ -338,14 +266,10 @@ SAP Analytics Cloud, embedded edition
 
 `Apply Function to Subject Name Identifier`
 
-
-
 </td>
 <td valign="top">
 
 `Lowercase`
-
-
 
 </td>
 </tr>
@@ -354,14 +278,10 @@ SAP Analytics Cloud, embedded edition
 
 `Conditional Authentication`
 
-
-
 </td>
 <td valign="top">
 
 `Identity Authentication`
-
-
 
 </td>
 </tr>
@@ -370,21 +290,15 @@ SAP Analytics Cloud, embedded edition
 
 SAP Datasphere
 
-
-
 </td>
 <td valign="top">
 
 `Subject Name Identifier`
 
-
-
 </td>
 <td valign="top">
 
 `Email`
-
-
 
 </td>
 </tr>
@@ -393,14 +307,10 @@ SAP Datasphere
 
 `Default Name ID Format`
 
-
-
 </td>
 <td valign="top">
 
 `Email`
-
-
 
 </td>
 </tr>
@@ -409,14 +319,10 @@ SAP Datasphere
 
 `Apply Function to Subject Name Identifier`
 
-
-
 </td>
 <td valign="top">
 
 `None` \(email addresses are compared case-insensitively\)
-
-
 
 </td>
 </tr>
@@ -425,14 +331,10 @@ SAP Datasphere
 
 `Conditional Authentication`
 
-
-
 </td>
 <td valign="top">
 
 `Identity Authentication`
-
-
 
 </td>
 </tr>

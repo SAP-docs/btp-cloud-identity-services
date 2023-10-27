@@ -63,15 +63,11 @@ To configure your logon links, proceed as follows:
     <th valign="top">
 
     Category
-
-
     
     </th>
     <th valign="top">
 
     Key
-
-
     
     </th>
     </tr>
@@ -79,15 +75,11 @@ To configure your logon links, proceed as follows:
     <td valign="top">
     
     **Logon**
-
-
     
     </td>
     <td valign="top">
     
     logon.ui.copyright.link
-
-
     
     </td>
     </tr>
@@ -95,15 +87,11 @@ To configure your logon links, proceed as follows:
     <td valign="top">
     
     **Logon**
-
-
     
     </td>
     <td valign="top">
     
     logon.ui.privacy.link
-
-
     
     </td>
     </tr>
@@ -111,15 +99,11 @@ To configure your logon links, proceed as follows:
     <td valign="top">
     
     **Logon**
-
-
     
     </td>
     <td valign="top">
     
     logon.ui.legal.disclosure.link
-
-
     
     </td>
     </tr>

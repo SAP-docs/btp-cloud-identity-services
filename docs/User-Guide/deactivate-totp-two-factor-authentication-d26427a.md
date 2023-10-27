@@ -49,15 +49,11 @@ To deactivate your mobile device that generates passcodes, proceed as follows:
     <th valign="top">
 
      
-
-
     
     </th>
     <th valign="top">
 
      
-
-
     
     </th>
     </tr>
@@ -65,8 +61,6 @@ To deactivate your mobile device that generates passcodes, proceed as follows:
     <td valign="top">
     
     **Existing Multi-Factor Authentication**
-
-
     
     </td>
     <td valign="top">
@@ -84,15 +78,11 @@ To deactivate your mobile device that generates passcodes, proceed as follows:
     <td valign="top">
     
     **Passcode via SMS**
-
-
     
     </td>
     <td valign="top">
     
     Provide the passcode and choose *Send* after selecting that option.
-
-
     
     </td>
     </tr>
@@ -100,15 +90,11 @@ To deactivate your mobile device that generates passcodes, proceed as follows:
     <td valign="top">
     
     **Passcode via Email**
-
-
     
     </td>
     <td valign="top">
     
     Provide a passcode and choose *Send* after selecting that option.
-
-
     
     </td>
     </tr>

@@ -52,14 +52,10 @@ The syntax of the properties is as follows:
 
 Property
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -67,8 +63,6 @@ Description
 <td valign="top">
 
 `redirect-uris`
-
-
 
 </td>
 <td valign="top">
@@ -82,16 +76,12 @@ This property is empty by default.
 
 For more information, see [OpenID Connect Application Configurations](../Operation-Guide/openid-connect-application-configurations-1ae324e.md).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `post-logout-redirect-uris`
-
-
 
 </td>
 <td valign="top">
@@ -102,16 +92,12 @@ This property is empty by default.
 
 For more information, see [Call Identity Authentication End Session Endpoint](../Operation-Guide/call-identity-authentication-end-session-endpoint-ec674f4.md) and [OpenID Connect Application Configurations](../Operation-Guide/openid-connect-application-configurations-1ae324e.md).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `front-channel-logout-uris`
-
-
 
 </td>
 <td valign="top">
@@ -122,16 +108,12 @@ This property is empty by default.
 
 For more information, see [OpenID Connect Application Configurations](../Operation-Guide/openid-connect-application-configurations-1ae324e.md).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `public-client`
-
-
 
 </td>
 <td valign="top">
@@ -156,8 +138,6 @@ For more information, see:
 
 `token-policy`
 
-
-
 </td>
 <td valign="top">
 
@@ -167,16 +147,12 @@ The admin console also supports the configuration of token policies.
 
 For more information, see [Token Policy Configuration for Applications](../Operation-Guide/token-policy-configuration-for-applications-c4ba52e.md).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `token-validity`
-
-
 
 </td>
 <td valign="top">
@@ -185,16 +161,12 @@ Sets the lifetime in seconds of tokens issued by the service. The value can rang
 
 The default value is 3600 seconds, which translates to 1 hour.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `refresh-validity`
-
-
 
 </td>
 <td valign="top">
@@ -203,16 +175,12 @@ Sets the refresh lifetime of tokens issued by the service. During the refresh li
 
 The default value is 43200 seconds, which translates to 12 hours.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `refresh-parallel`
-
-
 
 </td>
 <td valign="top">
@@ -221,16 +189,12 @@ Determines the number of tokens that can be issued for the same session in paral
 
 The default value is 1.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `refresh-usage-after-renewal`
-
-
 
 </td>
 <td valign="top">
@@ -252,8 +216,6 @@ Defines the validity of the old refresh token after requesting a new one through
 
 `consumed-services`
 
-
-
 </td>
 <td valign="top">
 
@@ -264,16 +226,12 @@ Use this array to enable the application to consume the APIs of reuse services. 
 
 This property is empty by default.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `xsuaa-cross-consumption`
-
-
 
 </td>
 <td valign="top">
@@ -285,16 +243,12 @@ Set to `true` to add the client ID of the Identity Authentication application cr
 
 Default value is `false`.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `display-name`
-
-
 
 </td>
 <td valign="top">
@@ -306,16 +260,12 @@ Sets the name of the application you create with the Identity Authentication ser
 
 By default, the Identity Authentication service uses the name of the instance you provide in the `create-instance` command.
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `subject-name-identifier`
-
-
 
 </td>
 <td valign="top">
@@ -339,8 +289,6 @@ The `attribute` attribute identifies the user attribute used to fill the subject
 
 For more information about attributes for the subject name identifier, see [Configure the Subject Name Identifier Sent to the Application](../Operation-Guide/configure-the-subject-name-identifier-sent-to-the-application-1d020e3.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -348,16 +296,12 @@ For more information about attributes for the subject name identifier, see [Conf
 
 `provided-apis`
 
-
-
 </td>
 <td valign="top">
 
 An array of API names \(`name`\) and descriptions \(`description`\) which this application makes available for other applications to consume. The name can be any unique string of 32 characters. You can define a maximum of 20 APIs.
 
 For more information, see [Configure Integration Between Applications](../Operation-Guide/configure-integration-between-applications-9ad7e80.md).
-
-
 
 </td>
 </tr>
@@ -414,21 +358,15 @@ Or:
 
 Credential Type
 
-
-
 </th>
 <th valign="top">
 
 Credential Properties
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -437,14 +375,10 @@ Description
 
 `SECRET`
 
-
-
 </td>
 <td valign="top">
 
 Generates a client secret. If no properties are provided, `SECRET` is the default type.
-
-
 
 </td>
 </tr>
@@ -453,21 +387,15 @@ Generates a client secret. If no properties are provided, `SECRET` is the defaul
 
 `X509_GENERATED`
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 Generates an X.509 certificate and private key.
-
-
 
 </td>
 </tr>
@@ -476,14 +404,10 @@ Generates an X.509 certificate and private key.
 
 `key-length`
 
-
-
 </td>
 <td valign="top">
 
 Specifies the byte length of the generated private key. The default length is `2048` bytes. You can also choose `4096` bytes.
-
-
 
 </td>
 </tr>
@@ -492,16 +416,12 @@ Specifies the byte length of the generated private key. The default length is `2
 
 `validity`
 
-
-
 </td>
 <td valign="top">
 
 Specifies the number of time units for `validity-type`. The default value is `30`.
 
 Together with the `validity-type` the range of validity runs from 1 day to 1 year.
-
-
 
 </td>
 </tr>
@@ -510,14 +430,10 @@ Together with the `validity-type` the range of validity runs from 1 day to 1 yea
 
 `validity-type`
 
-
-
 </td>
 <td valign="top">
 
 Specifies the time unit for `validity`. Supported values are `DAYS`, `MONTHS`, and `YEARS`. The default value is `DAYS`.
-
-
 
 </td>
 </tr>
@@ -525,8 +441,6 @@ Specifies the time unit for `validity`. Supported values are `DAYS`, `MONTHS`, a
 <td valign="top" colspan="2">
 
 `X509_PROVIDED`
-
-
 
 </td>
 <td valign="top">
@@ -547,16 +461,12 @@ Creates a binding using certificate you provide from a trusted certificate autho
 
 `NONE`
 
-
-
 </td>
 <td valign="top">
 
 No credentials are added to the binding. Used for public clients.
 
 For more information, see [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow with PKCE](../Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-a721157.md).
-
-
 
 </td>
 </tr>
@@ -668,5 +578,5 @@ To validate tokens, we provide a client libraries to support the authentication 
 
 ## Token Attributes
 
-The administrator of the Identity Authentication service determines what attributes are available in tokens. For more information, see [Configure the User Attributes Sent to the Application](../Operation-Guide/configure-the-user-attributes-sent-to-the-application-d361407.md).
+The administrator of the Identity Authentication service determines what attributes are available in tokens. For more information, see [User Attributes Sent to the Application](../Operation-Guide/user-attributes-sent-to-the-application-d361407.md).
 

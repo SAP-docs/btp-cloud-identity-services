@@ -66,15 +66,11 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -82,15 +78,11 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
     <td valign="top">
     
     Create a new rule
-
-
     
     </td>
     <td valign="top">
     
     See [Create a New Rule](configure-risk-based-authentication-for-an-application-bc52fbf.md#loio18d02ab9cc7d4caf83d8654c8c51a175)
-
-
     
     </td>
     </tr>
@@ -98,15 +90,11 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
     <td valign="top">
     
     Edit an existing rule
-
-
     
     </td>
     <td valign="top">
     
     Choose the ![](images/edit_icon_d077ded.png) icon next to the rule you want to edit.
-
-
     
     </td>
     </tr>
@@ -114,15 +102,11 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
     <td valign="top">
     
     Delete an existing rule
-
-
     
     </td>
     <td valign="top">
     
     Choose the delete ![](images/delete_icon_4801c38.png) icon next to the rule you want to delete.
-
-
     
     </td>
     </tr>
@@ -130,15 +114,11 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
     <td valign="top">
     
     Reprioritize rules
-
-
     
     </td>
     <td valign="top">
     
     Use the arrows to reprioritize the rules.
-
-
     
     </td>
     </tr>
@@ -209,35 +189,25 @@ Donna Moore is an administrator of company A. She wants to configure Identity Au
 
 Action
 
-
-
 </th>
 <th valign="top" align="center">
 
 IP Range
-
-
 
 </th>
 <th valign="top" align="center">
 
 Group
 
-
-
 </th>
 <th valign="top">
 
 Authentication Method
 
-
-
 </th>
 <th valign="top">
 
 User Type
-
-
 
 </th>
 </tr>
@@ -246,35 +216,25 @@ User Type
 
 Deny
 
+</td>
+<td valign="top">
 
+Any
 
 </td>
 <td valign="top">
 
 Any
 
-
-
 </td>
 <td valign="top">
 
 Any
-
-
-
-</td>
-<td valign="top">
-
-Any
-
-
 
 </td>
 <td valign="top">
 
 Customer
-
-
 
 </td>
 </tr>
@@ -283,35 +243,25 @@ Customer
 
 Allow
 
-
-
 </td>
 <td valign="top">
 
 189.101.112.1/16
 
-
-
 </td>
 <td valign="top">
 
 Employees
-
-
 
 </td>
 <td valign="top">
 
 SPNEGO
 
-
-
 </td>
 <td valign="top">
 
 Any
-
-
 
 </td>
 </tr>
@@ -320,35 +270,25 @@ Any
 
 TOTP Two-Factor Authentication
 
-
-
 </td>
 <td valign="top">
 
 Any
-
-
 
 </td>
 <td valign="top">
 
 Employees
 
-
-
 </td>
 <td valign="top">
 
 Any
 
-
-
 </td>
 <td valign="top">
 
 Any
-
-
 
 </td>
 </tr>
@@ -357,35 +297,25 @@ Any
 
 TOTP Two-Factor Authentication
 
-
-
 </td>
 <td valign="top">
 
 Any
-
-
 
 </td>
 <td valign="top">
 
 Managers
 
-
-
 </td>
 <td valign="top">
 
 Any
 
-
-
 </td>
 <td valign="top">
 
 Any
-
-
 
 </td>
 </tr>

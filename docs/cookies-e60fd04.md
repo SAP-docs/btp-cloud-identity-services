@@ -13,35 +13,25 @@ Session cookies in Identity Authentication are protected with a Transport Layer 
 
 Cookie
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 <th valign="top">
 
 Default Validity
 
-
-
 </th>
 <th valign="top">
 
  
 
-
-
 </th>
 <th valign="top">
 
 Reference
-
-
 
 </th>
 </tr>
@@ -50,35 +40,25 @@ Reference
 
 Remember Me
 
-
-
 </td>
 <td valign="top">
 
 The cookie is sent to the browser so the users can sign in to the application without the need to provide their credentials every time they access it.
-
-
 
 </td>
 <td valign="top">
 
 3 months
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 [Configure the Remember Me Option](Operation-Guide/configure-the-remember-me-option-08d41f4.md)
-
-
 
 </td>
 </tr>
@@ -87,35 +67,25 @@ The cookie is sent to the browser so the users can sign in to the application wi
 
 Conditional Authentication
 
-
-
 </td>
 <td valign="top">
 
 Identity Authentication stores the user identifier in a persistent cookie in the browser.
-
-
 
 </td>
 <td valign="top">
 
 36 months
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 [Configure Conditional Authentication for an Application](Operation-Guide/configure-conditional-authentication-for-an-application-0143dce.md)
-
-
 
 </td>
 </tr>
@@ -124,35 +94,25 @@ Identity Authentication stores the user identifier in a persistent cookie in the
 
 Locale
 
-
-
 </td>
 <td valign="top">
 
 If the locale is set, the e-mails use the language set there, if there is a template in that language. If there is no template in that language, the e-mails use the English language template.
 
+</td>
+<td valign="top">
 
+ 
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
-
-</td>
-<td valign="top">
-
- 
-
-
 
 </td>
 </tr>
@@ -161,35 +121,25 @@ If the locale is set, the e-mails use the language set there, if there is a temp
 
  
 
+</td>
+<td valign="top">
 
+ 
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
-
-</td>
-<td valign="top">
-
- 
-
-
 
 </td>
 </tr>
@@ -198,35 +148,25 @@ If the locale is set, the e-mails use the language set there, if there is a temp
 
  
 
+</td>
+<td valign="top">
 
+ 
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
-
-</td>
-<td valign="top">
-
- 
-
-
 
 </td>
 </tr>

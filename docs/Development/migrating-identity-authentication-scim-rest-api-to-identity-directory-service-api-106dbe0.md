@@ -19,14 +19,10 @@ Migrating from the Identity Authentication SCIM REST API to Identity Directory S
 
 Identity Authentication Service API \(Deprecated\)
 
-
-
 </th>
 <th valign="top">
 
 Identity Directory Service API \(Successor\)
-
-
 
 </th>
 </tr>
@@ -35,14 +31,10 @@ Identity Directory Service API \(Successor\)
 
 [SCIM REST API \(Deprecated\)](scim-rest-api-deprecated-2f21568.md) / [Identity Authentication Service API](https://api.sap.com/api/IAS_SCIM/overview)
 
-
-
 </td>
 <td valign="top">
 
 [Identity Directory Service API](https://api.sap.com/api/IdDS_SCIM/overview)
-
-
 
 </td>
 </tr>
@@ -63,22 +55,16 @@ Identity Directory Service API \(Successor\)
 
 HTTP Method
 
-
-
 </th>
 <th valign="top">
 
 Identity Authentication Service API \(Deprecated\)
-
-
 
 </th>
 <th valign="top">
 
 Identity Directory Service API \(Successor\)
 
-
-
 </th>
 </tr>
 <tr>
@@ -86,21 +72,15 @@ Identity Directory Service API \(Successor\)
 
 *GET*
 
-
-
 </td>
 <td valign="top">
 
 **`/service/scim/Users/`**
 
-
-
 </td>
 <td valign="top">
 
 **`/scim/Users/`**
-
-
 
 </td>
 </tr>
@@ -109,21 +89,15 @@ Identity Directory Service API \(Successor\)
 
 *GET*
 
-
-
 </td>
 <td valign="top">
 
 **`/service/scim/Users/<id*>`**
 
-
-
 </td>
 <td valign="top">
 
 **`/scim/Users/<id**>`**
-
-
 
 </td>
 </tr>
@@ -132,21 +106,15 @@ Identity Directory Service API \(Successor\)
 
 *POST*
 
-
-
 </td>
 <td valign="top">
 
 **`/service/scim/Users`**
 
-
-
 </td>
 <td valign="top">
 
 **`/scim/Users`**
-
-
 
 </td>
 </tr>
@@ -155,21 +123,15 @@ Identity Directory Service API \(Successor\)
 
 *PUT*
 
-
-
 </td>
 <td valign="top">
 
 **`/service/scim/Users/<id*>`**
 
-
-
 </td>
 <td valign="top">
 
 **`/scim/Users/<id**>`**
-
-
 
 </td>
 </tr>
@@ -178,21 +140,15 @@ Identity Directory Service API \(Successor\)
 
 *DELETE*
 
-
-
 </td>
 <td valign="top">
 
 **`/service/scim/Users/<id*>`**
 
-
-
 </td>
 <td valign="top">
 
 **`/scim/Users/<id**>`**
-
-
 
 </td>
 </tr>
@@ -212,22 +168,16 @@ Identity Directory Service API \(Successor\)
 
 HTTP Method
 
-
-
 </th>
 <th valign="top">
 
 Identity Authentication Service API \(Deprecated\)
-
-
 
 </th>
 <th valign="top">
 
 Identity Directory Service API \(Successor\)
 
-
-
 </th>
 </tr>
 <tr>
@@ -235,21 +185,15 @@ Identity Directory Service API \(Successor\)
 
 *GET*
 
-
-
 </td>
 <td valign="top">
 
 **`/service/scim/Groups/`**
 
-
-
 </td>
 <td valign="top">
 
 **`/scim/Groups/`**
-
-
 
 </td>
 </tr>
@@ -258,21 +202,15 @@ Identity Directory Service API \(Successor\)
 
 *GET*
 
-
-
 </td>
 <td valign="top">
 
 **`/service/scim/Groups/<id of the group*>`**
 
-
-
 </td>
 <td valign="top">
 
 **`/scim/Groups/<id of the group**>`**
-
-
 
 </td>
 </tr>
@@ -281,21 +219,15 @@ Identity Directory Service API \(Successor\)
 
 *POST*
 
-
-
 </td>
 <td valign="top">
 
 **`/service/scim/Groups`**
 
-
-
 </td>
 <td valign="top">
 
 **`/scim/Groups`**
-
-
 
 </td>
 </tr>
@@ -304,21 +236,15 @@ Identity Directory Service API \(Successor\)
 
 *PUT*
 
-
-
 </td>
 <td valign="top">
 
 **`/service/scim/Groups/<id of the group*>`**
 
-
-
 </td>
 <td valign="top">
 
 **`/scim/Groups/<id of the group**>`**
-
-
 
 </td>
 </tr>
@@ -327,21 +253,15 @@ Identity Directory Service API \(Successor\)
 
 *DELETE*
 
-
-
 </td>
 <td valign="top">
 
 **`/service/scim/Groups/<id of the group*>`**
 
-
-
 </td>
 <td valign="top">
 
 **`/scim/Groups/<id of the group**>`**
-
-
 
 </td>
 </tr>
@@ -368,14 +288,10 @@ Identity Directory Service API \(Successor\)
 
 Identity Authentication Service API \(Deprecated\)
 
-
-
 </th>
 <th valign="top">
 
 Identity Directory Service API \(Successor\)
-
-
 
 </th>
 </tr>
@@ -384,15 +300,11 @@ Identity Directory Service API \(Successor\)
 
 `id`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:sap:2.0:User.userId`
 
-
-
 </td>
 </tr>
 <tr>
@@ -400,14 +312,10 @@ Identity Directory Service API \(Successor\)
 
 `emails.value`
 
-
-
 </td>
 <td valign="top">
 
 `emails.value`
-
-
 
 </td>
 </tr>
@@ -416,15 +324,11 @@ Identity Directory Service API \(Successor\)
 
 `name.honorificPrefix`
 
-
-
 </td>
 <td valign="top">
 
 `name.honorificPrefix`
 
-
-
 </td>
 </tr>
 <tr>
@@ -432,14 +336,10 @@ Identity Directory Service API \(Successor\)
 
 `name.givenName`
 
-
-
 </td>
 <td valign="top">
 
 `name.givenName`
-
-
 
 </td>
 </tr>
@@ -448,15 +348,11 @@ Identity Directory Service API \(Successor\)
 
 `name.familyName`
 
-
-
 </td>
 <td valign="top">
 
 `name.familyName`
 
-
-
 </td>
 </tr>
 <tr>
@@ -464,14 +360,10 @@ Identity Directory Service API \(Successor\)
 
 `name.middleName`
 
-
-
 </td>
 <td valign="top">
 
 `name.middleName`
-
-
 
 </td>
 </tr>
@@ -480,14 +372,22 @@ Identity Directory Service API \(Successor\)
 
 `userName`
 
-
-
 </td>
 <td valign="top">
 
 `userName`
 
+</td>
+</tr>
+<tr>
+<td valign="top">
 
+`addresses.streetAddress``addresses.locality``addresses.region``addresses.postalCode``addresses.country```
+
+</td>
+<td valign="top">
+
+`addresses.streetAddress``addresses.locality``addresses.region``addresses.postalCode``addresses.country``urn:ietf:params:scim:schemas:extension:sap:2.0:User.addresses.streetAddress2`
 
 </td>
 </tr>
@@ -496,30 +396,10 @@ Identity Directory Service API \(Successor\)
 
 `addresses.streetAddress``addresses.locality``addresses.region``addresses.postalCode``addresses.country```
 
-
-
 </td>
 <td valign="top">
 
 `addresses.streetAddress``addresses.locality``addresses.region``addresses.postalCode``addresses.country``urn:ietf:params:scim:schemas:extension:sap:2.0:User.addresses.streetAddress2`
-
-
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`addresses.streetAddress``addresses.locality``addresses.region``addresses.postalCode``addresses.country```
-
-
-
-</td>
-<td valign="top">
-
-`addresses.streetAddress``addresses.locality``addresses.region``addresses.postalCode``addresses.country``urn:ietf:params:scim:schemas:extension:sap:2.0:User.addresses.streetAddress2`
-
-
 
 </td>
 </tr>
@@ -528,15 +408,11 @@ Identity Directory Service API \(Successor\)
 
 `locale`
 
-
-
 </td>
 <td valign="top">
 
 `locale`
 
-
-
 </td>
 </tr>
 <tr>
@@ -544,14 +420,10 @@ Identity Directory Service API \(Successor\)
 
 `phoneNumbers[work].value`
 
-
-
 </td>
 <td valign="top">
 
 `phoneNumbers[work].value`
-
-
 
 </td>
 </tr>
@@ -560,15 +432,11 @@ Identity Directory Service API \(Successor\)
 
 `phoneNumbers[mobile].value`
 
-
-
 </td>
 <td valign="top">
 
 `phoneNumbers[mobile].value`
 
-
-
 </td>
 </tr>
 <tr>
@@ -576,14 +444,10 @@ Identity Directory Service API \(Successor\)
 
 `phoneNumbers[fax].value`
 
-
-
 </td>
 <td valign="top">
 
 `phoneNumbers[fax].value`
-
-
 
 </td>
 </tr>
@@ -592,14 +456,10 @@ Identity Directory Service API \(Successor\)
 
 `timezone`
 
-
-
 </td>
 <td valign="top">
 
 `timezone`
-
-
 
 </td>
 </tr>
@@ -608,14 +468,10 @@ Identity Directory Service API \(Successor\)
 
 `password`
 
-
-
 </td>
 <td valign="top">
 
 `password`
-
-
 
 </td>
 </tr>
@@ -624,15 +480,11 @@ Identity Directory Service API \(Successor\)
 
 `passwordStatus`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:sap:2.0:User.passwordDetails.status`
 
-
-
 </td>
 </tr>
 <tr>
@@ -640,14 +492,10 @@ Identity Directory Service API \(Successor\)
 
 `active`
 
-
-
 </td>
 <td valign="top">
 
 `active`
-
-
 
 </td>
 </tr>
@@ -656,14 +504,10 @@ Identity Directory Service API \(Successor\)
 
 `displayName`
 
-
-
 </td>
 <td valign="top">
 
 `displayName`
-
-
 
 </td>
 </tr>
@@ -672,14 +516,10 @@ Identity Directory Service API \(Successor\)
 
 `contactPreferenceEmail`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:sap:2.0:User.contactPreferences.email`
-
-
 
 </td>
 </tr>
@@ -688,14 +528,10 @@ Identity Directory Service API \(Successor\)
 
 `contactPreferenceTelephone`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:sap:2.0:User.contactPreferences.telephone`
-
-
 
 </td>
 </tr>
@@ -704,14 +540,10 @@ Identity Directory Service API \(Successor\)
 
 `industryCrm`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:sap:2.0:User.industry`
-
-
 
 </td>
 </tr>
@@ -720,14 +552,10 @@ Identity Directory Service API \(Successor\)
 
 `company`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.organization`
-
-
 
 </td>
 </tr>
@@ -736,14 +564,10 @@ Identity Directory Service API \(Successor\)
 
 `companyRelationship`
 
-
-
 </td>
 <td valign="top">
 
 ``
-
-
 
 </td>
 </tr>
@@ -752,14 +576,10 @@ Identity Directory Service API \(Successor\)
 
 `department`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.department`
-
-
 
 </td>
 </tr>
@@ -768,14 +588,10 @@ Identity Directory Service API \(Successor\)
 
 `title`
 
-
-
 </td>
 <td valign="top">
 
 ``
-
-
 
 </td>
 </tr>
@@ -784,14 +600,10 @@ Identity Directory Service API \(Successor\)
 
 `groups`
 
-
-
 </td>
 <td valign="top">
 
 `groups`
-
-
 
 </td>
 </tr>
@@ -800,14 +612,10 @@ Identity Directory Service API \(Successor\)
 
 `passwordLoginTime`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:sap:2.0:User.passwordDetails.loginTime`
-
-
 
 </td>
 </tr>
@@ -816,14 +624,10 @@ Identity Directory Service API \(Successor\)
 
 `loginTime`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:sap:2.0:User.loginTime`
-
-
 
 </td>
 </tr>
@@ -832,14 +636,10 @@ Identity Directory Service API \(Successor\)
 
 `passwordSetTime`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:sap:2.0:User.passwordDetails.setTime`
-
-
 
 </td>
 </tr>
@@ -847,16 +647,12 @@ Identity Directory Service API \(Successor\)
 <td valign="top">
 
 ``
-
-
 
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:sap:2.0:User.validFrom`
 
-
-
 </td>
 </tr>
 <tr>
@@ -864,14 +660,10 @@ Identity Directory Service API \(Successor\)
 
 ``
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:sap:2.0:User.validTo`
-
-
 
 </td>
 </tr>
@@ -880,14 +672,10 @@ Identity Directory Service API \(Successor\)
 
 `scenarios`
 
-
-
 </td>
 <td valign="top">
 
 ``
-
-
 
 </td>
 </tr>
@@ -896,14 +684,10 @@ Identity Directory Service API \(Successor\)
 
 `termsOfUse`
 
-
-
 </td>
 <td valign="top">
 
 ``
-
-
 
 </td>
 </tr>
@@ -912,14 +696,10 @@ Identity Directory Service API \(Successor\)
 
 `privacyPolicy`
 
-
-
 </td>
 <td valign="top">
 
 ``
-
-
 
 </td>
 </tr>
@@ -928,14 +708,10 @@ Identity Directory Service API \(Successor\)
 
 `newsletters`
 
-
-
 </td>
 <td valign="top">
 
 ``
-
-
 
 </td>
 </tr>
@@ -944,14 +720,10 @@ Identity Directory Service API \(Successor\)
 
 `userType`
 
-
-
 </td>
 <td valign="top">
 
 `userType`
-
-
 
 </td>
 </tr>
@@ -960,14 +732,10 @@ Identity Directory Service API \(Successor\)
 
 `sourceSystem`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:sap:2.0:User.sourceSystem`
-
-
 
 </td>
 </tr>
@@ -976,14 +744,10 @@ Identity Directory Service API \(Successor\)
 
 ``
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:sap:2.0:User.sourceSystemId`
-
-
 
 </td>
 </tr>
@@ -992,14 +756,10 @@ Identity Directory Service API \(Successor\)
 
 `socialIdentities`
 
-
-
 </td>
 <td valign="top">
 
 ``
-
-
 
 </td>
 </tr>
@@ -1008,14 +768,10 @@ Identity Directory Service API \(Successor\)
 
 `sendMail`
 
-
-
 </td>
 <td valign="top">
 
 ``
-
-
 
 </td>
 </tr>
@@ -1024,14 +780,10 @@ Identity Directory Service API \(Successor\)
 
 `mailVerified`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:sap:2.0:User.emails.verified`
-
-
 
 </td>
 </tr>
@@ -1040,14 +792,10 @@ Identity Directory Service API \(Successor\)
 
 `telephoneVerified`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:sap:2.0:User.phoneNumbers.verified`
-
-
 
 </td>
 </tr>
@@ -1056,14 +804,10 @@ Identity Directory Service API \(Successor\)
 
 `telephoneVerificationAttempts`
 
-
-
 </td>
 <td valign="top">
 
 ``
-
-
 
 </td>
 </tr>
@@ -1072,14 +816,10 @@ Identity Directory Service API \(Successor\)
 
 `passwordPolicy`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:sap:2.0:User.passwordDetails.policy`
-
-
 
 </td>
 </tr>
@@ -1088,14 +828,10 @@ Identity Directory Service API \(Successor\)
 
 `passwordStatus`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:sap:2.0:User.passwordDetails.status`
-
-
 
 </td>
 </tr>
@@ -1104,14 +840,10 @@ Identity Directory Service API \(Successor\)
 
 `passwordFailedLoginAttempts`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:sap:2.0:User.passwordDetails.failedLoginAttempts`
-
-
 
 </td>
 </tr>
@@ -1120,14 +852,10 @@ Identity Directory Service API \(Successor\)
 
 `applicationId`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:sap:2.0:User.applicationId`
-
-
 
 </td>
 </tr>
@@ -1136,14 +864,10 @@ Identity Directory Service API \(Successor\)
 
 `targetUrl`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:sap:2.0:User.targetUrl`
-
-
 
 </td>
 </tr>
@@ -1152,15 +876,11 @@ Identity Directory Service API \(Successor\)
 
 `emailTemplateSetId`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:sap:2.0:User.emailTemplateSetId`
 
-
-
 </td>
 </tr>
 <tr>
@@ -1168,14 +888,10 @@ Identity Directory Service API \(Successor\)
 
 `urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.employeeNumber`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.employeeNumber`
-
-
 
 </td>
 </tr>
@@ -1184,15 +900,11 @@ Identity Directory Service API \(Successor\)
 
 `urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.organization`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.organization`
 
-
-
 </td>
 </tr>
 <tr>
@@ -1200,14 +912,10 @@ Identity Directory Service API \(Successor\)
 
 `urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.costCenter`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.costCenter`
-
-
 
 </td>
 </tr>
@@ -1216,15 +924,11 @@ Identity Directory Service API \(Successor\)
 
 `urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.division`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.division`
 
-
-
 </td>
 </tr>
 <tr>
@@ -1232,14 +936,10 @@ Identity Directory Service API \(Successor\)
 
 `urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.manager.value`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.manager.value`
-
-
 
 </td>
 </tr>
@@ -1248,15 +948,11 @@ Identity Directory Service API \(Successor\)
 
 `urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.manager.$ref`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.manager.$ref`
 
-
-
 </td>
 </tr>
 <tr>
@@ -1264,14 +960,10 @@ Identity Directory Service API \(Successor\)
 
 `urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.manager.displayName`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.manager.displayName`
-
-
 
 </td>
 </tr>
@@ -1280,15 +972,11 @@ Identity Directory Service API \(Successor\)
 
 `urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.department`
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.department`
 
-
-
 </td>
 </tr>
 <tr>
@@ -1296,14 +984,10 @@ Identity Directory Service API \(Successor\)
 
 `urn:sap:cloud:scim:schemas:extension:custom:2.0:User.attributes.`
 
-
-
 </td>
 <td valign="top">
 
 `urn:sap:cloud:scim:schemas:extension:custom:2.0:User.attributes.`
-
-
 
 </td>
 </tr>
@@ -1312,15 +996,11 @@ Identity Directory Service API \(Successor\)
 
 `customAttribute1`
 
-
-
 </td>
 <td valign="top">
 
 `customAttribute1`
 
-
-
 </td>
 </tr>
 <tr>
@@ -1328,14 +1008,10 @@ Identity Directory Service API \(Successor\)
 
 `customAttribute2`
 
-
-
 </td>
 <td valign="top">
 
 `customAttribute2`
-
-
 
 </td>
 </tr>
@@ -1344,15 +1020,11 @@ Identity Directory Service API \(Successor\)
 
 `customAttribute3`
 
-
-
 </td>
 <td valign="top">
 
 `customAttribute3`
 
-
-
 </td>
 </tr>
 <tr>
@@ -1360,14 +1032,10 @@ Identity Directory Service API \(Successor\)
 
 `customAttribute4`
 
-
-
 </td>
 <td valign="top">
 
 `customAttribute4`
-
-
 
 </td>
 </tr>
@@ -1376,15 +1044,11 @@ Identity Directory Service API \(Successor\)
 
 `customAttribute5`
 
-
-
 </td>
 <td valign="top">
 
 `customAttribute5`
 
-
-
 </td>
 </tr>
 <tr>
@@ -1392,14 +1056,10 @@ Identity Directory Service API \(Successor\)
 
 `customAttribute6`
 
-
-
 </td>
 <td valign="top">
 
 `customAttribute6`
-
-
 
 </td>
 </tr>
@@ -1408,15 +1068,11 @@ Identity Directory Service API \(Successor\)
 
 `customAttribute7`
 
-
-
 </td>
 <td valign="top">
 
 `customAttribute7`
 
-
-
 </td>
 </tr>
 <tr>
@@ -1424,14 +1080,10 @@ Identity Directory Service API \(Successor\)
 
 `customAttribute8`
 
-
-
 </td>
 <td valign="top">
 
 `customAttribute8`
-
-
 
 </td>
 </tr>
@@ -1440,14 +1092,10 @@ Identity Directory Service API \(Successor\)
 
 `customAttribute9`
 
-
-
 </td>
 <td valign="top">
 
 `customAttribute9`
-
-
 
 </td>
 </tr>
@@ -1456,14 +1104,10 @@ Identity Directory Service API \(Successor\)
 
 `customAttribute10`
 
-
-
 </td>
 <td valign="top">
 
 `customAttribute10`
-
-
 
 </td>
 </tr>
@@ -1478,14 +1122,10 @@ Identity Directory Service API \(Successor\)
 
 Identity Authentication Service API \(Deprecated\)
 
-
-
 </th>
 <th valign="top">
 
 Identity Directory Service API \(Successor\)
-
-
 
 </th>
 </tr>
@@ -1494,15 +1134,11 @@ Identity Directory Service API \(Successor\)
 
 `id`
 
-
-
 </td>
 <td valign="top">
 
 `urn:sap:cloud:scim:schemas:extension:custom:2.0:Group.additionalId`
 
-
-
 </td>
 </tr>
 <tr>
@@ -1510,14 +1146,10 @@ Identity Directory Service API \(Successor\)
 
 `displayName`
 
-
-
 </td>
 <td valign="top">
 
 `displayName`
-
-
 
 </td>
 </tr>
@@ -1526,14 +1158,10 @@ Identity Directory Service API \(Successor\)
 
 `members.value`
 
-
-
 </td>
 <td valign="top">
 
 `members.value`
-
-
 
 </td>
 </tr>
@@ -1542,14 +1170,10 @@ Identity Directory Service API \(Successor\)
 
 `members.$ref`
 
-
-
 </td>
 <td valign="top">
 
 `members.$ref`
-
-
 
 </td>
 </tr>
@@ -1558,14 +1182,10 @@ Identity Directory Service API \(Successor\)
 
 `members.display`
 
-
-
 </td>
 <td valign="top">
 
 ``
-
-
 
 </td>
 </tr>
@@ -1573,16 +1193,12 @@ Identity Directory Service API \(Successor\)
 <td valign="top">
 
 ``
-
-
 
 </td>
 <td valign="top">
 
 `members.type`
 
-
-
 </td>
 </tr>
 <tr>
@@ -1590,14 +1206,10 @@ Identity Directory Service API \(Successor\)
 
 `urn:sap:cloud:scim:schemas:extension:custom:2.0:Group.name`
 
-
-
 </td>
 <td valign="top">
 
 `urn:sap:cloud:scim:schemas:extension:custom:2.0:Group.name`
-
-
 
 </td>
 </tr>
@@ -1606,14 +1218,10 @@ Identity Directory Service API \(Successor\)
 
 `urn:sap:cloud:scim:schemas:extension:custom:2.0:Group.description`
 
-
-
 </td>
 <td valign="top">
 
 `urn:sap:cloud:scim:schemas:extension:custom:2.0:Group.description`
-
-
 
 </td>
 </tr>
@@ -1622,14 +1230,10 @@ Identity Directory Service API \(Successor\)
 
 `urn:sap:cloud:scim:schemas:extension:custom:2.0:Group.groupId`
 
-
-
 </td>
 <td valign="top">
 
 `id`
-
-
 
 </td>
 </tr>
@@ -1638,14 +1242,10 @@ Identity Directory Service API \(Successor\)
 
 ``
 
-
-
 </td>
 <td valign="top">
 
 `externalId`
-
-
 
 </td>
 </tr>

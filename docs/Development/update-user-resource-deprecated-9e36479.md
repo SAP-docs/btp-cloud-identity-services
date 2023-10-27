@@ -519,21 +519,15 @@ Administrators at Identity Authentication can store, read, create and, update cu
 
 Response Code
 
-
-
 </th>
 <th valign="top">
 
 Meaning
 
-
-
 </th>
 <th valign="top">
 
 Response Description
-
-
 
 </th>
 </tr>
@@ -542,21 +536,15 @@ Response Description
 
 200
 
-
-
 </td>
 <td valign="top">
 
 OK
 
-
-
 </td>
 <td valign="top">
 
 Operation successful
-
-
 
 </td>
 </tr>
@@ -565,21 +553,15 @@ Operation successful
 
 400
 
-
-
 </td>
 <td valign="top">
 
 Bad Request
 
-
-
 </td>
 <td valign="top">
 
 If user with `id` provided in the `value` attribute of the `manager` attribute from the enterprise schema does not exist.
-
-
 
 </td>
 </tr>

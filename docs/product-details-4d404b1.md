@@ -11,21 +11,15 @@
 
 Feature
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 More Information
-
-
 
 </th>
 </tr>
@@ -34,21 +28,15 @@ More Information
 
 Authentication with user name and password
 
-
-
 </td>
 <td valign="top">
 
 Users can log on to applications with their user name and password.
 
-
-
 </td>
 <td valign="top">
 
 [Scenarios](scenarios-fb9898d.md)
-
-
 
 </td>
 </tr>
@@ -57,21 +45,15 @@ Users can log on to applications with their user name and password.
 
 Single sign-on to applications
 
-
-
 </td>
 <td valign="top">
 
 Users can access multiple cloud applications in the current session by authenticating just once in Identity Authentication.
 
-
-
 </td>
 <td valign="top">
 
 [Scenarios](scenarios-fb9898d.md)
-
-
 
 </td>
 </tr>
@@ -79,8 +61,6 @@ Users can access multiple cloud applications in the current session by authentic
 <td valign="top">
 
 Social sign-on to applications on SAP BTP
-
-
 
 </td>
 <td valign="top">
@@ -97,8 +77,6 @@ Users can link their Identity Authentication account with a social network accou
 
 [Scenarios](scenarios-fb9898d.md), [Social Identity Providers](Operation-Guide/social-identity-providers-17d400d.md), [Social Authentication](User-Guide/social-authentication-108607a.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -106,21 +84,15 @@ Users can link their Identity Authentication account with a social network accou
 
 Customized branding
 
-
-
 </td>
 <td valign="top">
 
 Administrators can configure branding styles for UI elements, emails, and error pages so that they comply with the company's branding requirements.
 
-
-
 </td>
 <td valign="top">
 
 [Configure Tenant Images](Operation-Guide/configure-tenant-images-8742046.md), [Configure a Logo for an Application](Operation-Guide/configure-a-logo-for-an-application-778f748.md), [Configure a Branding Style for an Application](Operation-Guide/configure-a-branding-style-for-an-application-32f8d33.md), [Define an Email Template Set for an Application](Operation-Guide/define-an-email-template-set-for-an-application-bb2c79b.md), [Configure Registration and Upgrade Forms](Operation-Guide/configure-registration-and-upgrade-forms-93a9e18.md)
-
-
 
 </td>
 </tr>
@@ -129,21 +101,15 @@ Administrators can configure branding styles for UI elements, emails, and error 
 
 Customized privacy policy and terms of use management
 
-
-
 </td>
 <td valign="top">
 
 Administrators can add customized terms of use and privacy policy, which users have to accept before registering. They are shown on the registration and upgrade forms.
 
-
-
 </td>
 <td valign="top">
 
 [Define a Terms of Use Document for an Application](Operation-Guide/define-a-terms-of-use-document-for-an-application-8a28c70.md), [Define a Privacy Policy Document for an Application](Operation-Guide/define-a-privacy-policy-document-for-an-application-9611118.md).
-
-
 
 </td>
 </tr>
@@ -152,21 +118,15 @@ Administrators can add customized terms of use and privacy policy, which users h
 
 Customer security policy
 
-
-
 </td>
 <td valign="top">
 
 Administrators can select a password policy from a list in accordance with the security requirements and the rules for resetting passwords.
 
-
-
 </td>
 <td valign="top">
 
 [Set a Password Policy for an Application](Operation-Guide/set-a-password-policy-for-an-application-04a6e45.md)
-
-
 
 </td>
 </tr>
@@ -175,21 +135,15 @@ Administrators can select a password policy from a list in accordance with the s
 
 Dedicated customer tenant
 
-
-
 </td>
 <td valign="top">
 
 Customers are provided with guaranteed availability and specific configuration of their tenants.
 
-
-
 </td>
 <td valign="top">
 
 [Configuring Tenant Settings](Operation-Guide/configuring-tenant-settings-d4d6fdc.md)
-
-
 
 </td>
 </tr>
@@ -198,21 +152,15 @@ Customers are provided with guaranteed availability and specific configuration o
 
 User import functionality
 
-
-
 </td>
 <td valign="top">
 
 Administrators can import new users into Identity Authentication or can update data for existing users.
 
-
-
 </td>
 <td valign="top">
 
 [Import or Update Users for a Specific Application](Operation-Guide/import-or-update-users-for-a-specific-application-33838e0.md)
-
-
 
 </td>
 </tr>
@@ -221,21 +169,15 @@ Administrators can import new users into Identity Authentication or can update d
 
 User export functionality
 
-
-
 </td>
 <td valign="top">
 
 Administrators can download information about existing users in the current tenant.
 
-
-
 </td>
 <td valign="top">
 
 [Export Existing Users of a Tenant of Identity Authentication](Operation-Guide/export-existing-users-of-a-tenant-of-identity-authentication-40c29d2.md)
-
-
 
 </td>
 </tr>
@@ -244,21 +186,15 @@ Administrators can download information about existing users in the current tena
 
 Detailed change logs
 
-
-
 </td>
 <td valign="top">
 
 Administrators can download a CSV file with information about the history of operations by tenant administrators.
 
-
-
 </td>
 <td valign="top">
 
 [Export Change Logs with a History of Administration Operations](Monitoring-and-Reporting/export-change-logs-with-a-history-of-administration-operations-9d96aae.md)
-
-
 
 </td>
 </tr>
@@ -267,21 +203,15 @@ Administrators can download a CSV file with information about the history of ope
 
 User Management
 
-
-
 </td>
 <td valign="top">
 
 Administrators can manage the users in the tenant.
 
-
-
 </td>
 <td valign="top">
 
 [User Management](Operation-Guide/user-management-228428f.md)
-
-
 
 </td>
 </tr>
@@ -290,21 +220,15 @@ Administrators can manage the users in the tenant.
 
 Administrator Management
 
-
-
 </td>
 <td valign="top">
 
 Administrators can add new administrators and edit administrator authorizations.
 
-
-
 </td>
 <td valign="top">
 
 [Managing Administrators](Operation-Guide/managing-administrators-786eea2.md)
-
-
 
 </td>
 </tr>
@@ -313,21 +237,15 @@ Administrators can add new administrators and edit administrator authorizations.
 
 Groups
 
-
-
 </td>
 <td valign="top">
 
 Administrators can create and delete groups, and assign and unassign users.
 
-
-
 </td>
 <td valign="top">
 
 [Groups](Operation-Guide/groups-ddd067c.md)
-
-
 
 </td>
 </tr>
@@ -336,21 +254,15 @@ Administrators can create and delete groups, and assign and unassign users.
 
 Corporate User Store
 
-
-
 </td>
 <td valign="top">
 
 Identity Authentication can be configured to use a corporate user store in addition to its own user store.
 
-
-
 </td>
 <td valign="top">
 
 [Configure Connection to a Corporate User Store](Operation-Guide/corporate-user-store-neo-environment-461d71c.md#loioe5e9662146f948b49c11d01284231d75)
-
-
 
 </td>
 </tr>
@@ -359,21 +271,15 @@ Identity Authentication can be configured to use a corporate user store in addit
 
 Kerberos Authentication
 
-
-
 </td>
 <td valign="top">
 
 Administrators configure Kerberos authentication to allow users to log on without a username and password when they are in the corporate network.
 
-
-
 </td>
 <td valign="top">
 
 [Configure Kerberos Authentication](Operation-Guide/configure-kerberos-authentication-b030165.md#loiob0301657df074ab081ab7556854aca56)
-
-
 
 </td>
 </tr>
@@ -382,21 +288,15 @@ Administrators configure Kerberos authentication to allow users to log on withou
 
 Risk-Based Authentication
 
-
-
 </td>
 <td valign="top">
 
 Administrators define rules for authentication in accordance with the risk
 
-
-
 </td>
 <td valign="top">
 
 [Configure Risk-Based Authentication for an Application](Operation-Guide/configure-risk-based-authentication-for-an-application-bc52fbf.md#loiobc52fbf3d59447bbb6aa22f80d8b6056)
-
-
 
 </td>
 </tr>
@@ -405,21 +305,15 @@ Administrators define rules for authentication in accordance with the risk
 
 Self-services
 
-
-
 </td>
 <td valign="top">
 
 Users can use services to maintain or update their user profiles and to log on to applications.
 
-
-
 </td>
 <td valign="top">
 
 [User Guide](User-Guide/user-guide-d4c3811.md)
-
-
 
 </td>
 </tr>
@@ -440,5 +334,5 @@ Users can use services to maintain or update their user profiles and to log on t
 
 [Supported Languages](supported-languages-0ea634d.md "Information on the supported languages for the administration console, and the end user screens of Identity Authentication.")
 
-[Accessibility Features in Identity Authentication](accessibility-features-in-identity-authentication-c7b544b.md "To optimize your experience of Identity Authentication, Identity Authentication tools provide features and settings that help you use the software efficiently.")
+[Accessibility Features in SAP Cloud Identity Services](accessibility-features-in-sap-cloud-identity-services-c7b544b.md "To optimize your experience of SAP Cloud Identity Services, SAP Cloud Identity Services tools provide features and settings that help you use the software efficiently.")
 

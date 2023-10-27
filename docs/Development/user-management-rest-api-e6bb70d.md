@@ -25,21 +25,15 @@ You need to set up the authentication type to access the API. For more informati
 
 HTTP Method
 
-
-
 </th>
 <th valign="top">
 
 Action
 
-
-
 </th>
 <th valign="top">
 
 URI
-
-
 
 </th>
 </tr>
@@ -48,21 +42,15 @@ URI
 
 *POST*
 
-
-
 </td>
 <td valign="top">
 
 [User Registration](user-registration-0aa433c.md)
 
-
-
 </td>
 <td valign="top">
 
 `https://<tenant ID>.accounts.ondemand.com/service/users`
-
-
 
 </td>
 </tr>
@@ -70,22 +58,16 @@ URI
 <td valign="top">
 
 *GET*
-
-
 
 </td>
 <td valign="top">
 
 [SP User ID Retrieval](sp-user-id-retrieval-ead62fc.md)
 
-
-
 </td>
 <td valign="top">
 
 `https://<tenant ID>.accounts.ondemand.com/service/users`
-
-
 
 </td>
 </tr>
@@ -94,21 +76,15 @@ URI
 
 *GET*
 
-
-
 </td>
 <td valign="top">
 
 [SP User Information](sp-user-information-dc96d56.md)
 
-
-
 </td>
 <td valign="top">
 
 `https://<tenant ID>.accounts.ondemand.com/service/users/<SP user ID>`
-
-
 
 </td>
 </tr>
@@ -117,21 +93,15 @@ URI
 
 *PUT*
 
-
-
 </td>
 <td valign="top">
 
 [SP User Deactivation](sp-user-deactivation-de64bd8.md)
 
-
-
 </td>
 <td valign="top">
 
 `https://<tenant ID>.accounts.ondemand.com/service/users/<SP user ID>`
-
-
 
 </td>
 </tr>
@@ -140,21 +110,15 @@ URI
 
 *DELETE*
 
-
-
 </td>
 <td valign="top">
 
 [SP User Deletion](sp-user-deletion-dba2028.md)
 
-
-
 </td>
 <td valign="top">
 
 `https://<tenant ID>.accounts.ondemand.com/service/users/<SP user ID>`
-
-
 
 </td>
 </tr>

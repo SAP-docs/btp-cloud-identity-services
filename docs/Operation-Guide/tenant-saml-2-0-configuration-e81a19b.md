@@ -55,15 +55,11 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
     <th valign="top">
 
     Name
-
-
     
     </th>
     <th valign="top">
 
     Notes
-
-
     
     </th>
     </tr>
@@ -71,15 +67,11 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
     <td valign="top">
     
     Default Type name format
-
-
     
     </td>
     <td valign="top">
     
     <tenant ID\>.accounts.ondemand.com
-
-
     
     </td>
     </tr>
@@ -87,15 +79,11 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
     <td valign="top">
     
     URL Type name format
-
-
     
     </td>
     <td valign="top">
     
     https://<tenant ID\>.accounts.ondemand.com
-
-
     
     </td>
     </tr>
@@ -103,15 +91,11 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
     <td valign="top">
     
     Common domain
-
-
     
     </td>
     <td valign="top">
     
     https://<tenant ID\>.accounts.cloud.sap
-
-
     
     </td>
     </tr>
@@ -119,15 +103,11 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
     <td valign="top">
     
     Custom Domain \(if configured\)
-
-
     
     </td>
     <td valign="top">
     
     <custom domain host\>
-
-
     
     </td>
     </tr>
@@ -135,15 +115,11 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
     <td valign="top">
     
     Tenants in China region
-
-
     
     </td>
     <td valign="top">
     
     https:// <tenant ID\>.accounts.sapcloud.cn
-
-
     
     </td>
     </tr>

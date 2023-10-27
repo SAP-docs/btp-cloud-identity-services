@@ -49,15 +49,11 @@ To configure a source system, follow the steps below:
         <th valign="top">
 
         Configuration
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -65,15 +61,11 @@ To configure a source system, follow the steps below:
         <td valign="top">
         
         *Display Name*
-
-
         
         </td>
         <td valign="top">
         
         \(optional\) The name of the configuration.
-
-
         
         </td>
         </tr>
@@ -81,15 +73,11 @@ To configure a source system, follow the steps below:
         <td valign="top">
         
         *Type*
-
-
         
         </td>
         <td valign="top">
         
         Select the *SuccessFactors* type.
-
-
         
         </td>
         </tr>
@@ -104,15 +92,11 @@ To configure a source system, follow the steps below:
         <th valign="top">
 
         Configurations
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -120,15 +104,11 @@ To configure a source system, follow the steps below:
         <td valign="top">
         
         *Company ID*
-
-
         
         </td>
         <td valign="top">
         
         The company of the source system.
-
-
         
         </td>
         </tr>
@@ -136,8 +116,6 @@ To configure a source system, follow the steps below:
         <td valign="top">
         
         *Password Validation URL*
-
-
         
         </td>
         <td valign="top">
@@ -208,8 +186,6 @@ To configure a source system, follow the steps below:
         <td valign="top">
         
         *First Logon Behavior*
-
-
         
         </td>
         <td valign="top">

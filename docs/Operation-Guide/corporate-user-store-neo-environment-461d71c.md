@@ -63,7 +63,7 @@ For all users from the corporate user store, a second factor for authentication 
 
 In the scope of the *Corporate User Store* scenario, you can manage access to applications and their resources based on the groups available in the corporate user store.
 
-The corporate user groups are sent to an application in the SAML 2.0 assertion. `corporate_groups` is the attribute that contains the groups that the user in the corporate user store is assigned to. For more details about how the groups are sent to the application in the SAML 2.0 assertion, see [Configure the User Attributes Sent to the Application](configure-the-user-attributes-sent-to-the-application-d361407.md).
+The corporate user groups are sent to an application in the SAML 2.0 assertion. `corporate_groups` is the attribute that contains the groups that the user in the corporate user store is assigned to. For more details about how the groups are sent to the application in the SAML 2.0 assertion, see [User Attributes Sent to the Application](user-attributes-sent-to-the-application-d361407.md).
 
 > ### Note:  
 > If your application is deployed on the SAP BTP, the corporate user store groups, relevant for the application, and contained in the `corporate_groups` attribute in the SAML 2.0 assertion, can be mapped to assertion-based groups created in SAP BTP cockpit. For more information, see the *4. \(If Using an Identity Provider\) Define the Group-to-Role Mapping* section in [Managing Roles](https://help.hana.ondemand.com/help/frameset.htm?db8175b9d976101484e6fa303b108acd.html).
@@ -178,14 +178,10 @@ The configuration of SAP BTP depends on the type of the user store. You have two
     > 
     > User Path
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > ou=People,dc=example,dc=com
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -194,14 +190,10 @@ The configuration of SAP BTP depends on the type of the user store. You have two
     > 
     > Group Path
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > ou=People,dc=example,dc=com
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -506,21 +498,15 @@ The following table shows the default mapping between the Active Directory user 
 
 Microsoft Active Directory Attributes
 
-
-
 </th>
 <th valign="top">
 
 SCIM Attributes
 
-
-
 </th>
 <th valign="top">
 
 Identity Authentication User Store Attribute
-
-
 
 </th>
 </tr>
@@ -529,21 +515,15 @@ Identity Authentication User Store Attribute
 
 sAMAccountname
 
-
-
 </td>
 <td valign="top">
 
 userName
 
-
-
 </td>
 <td valign="top">
 
 loginName
-
-
 
 </td>
 </tr>
@@ -552,21 +532,15 @@ loginName
 
 givenName
 
-
-
 </td>
 <td valign="top">
 
 givenName
 
-
-
 </td>
 <td valign="top">
 
 firstName
-
-
 
 </td>
 </tr>
@@ -575,21 +549,15 @@ firstName
 
 sn
 
-
-
 </td>
 <td valign="top">
 
 familyName
 
-
-
 </td>
 <td valign="top">
 
 lastName
-
-
 
 </td>
 </tr>
@@ -598,22 +566,16 @@ lastName
 
 personalTitle
 
-
-
 </td>
 <td valign="top">
 
 honorificPrefix
-
-
 
 </td>
 <td valign="top">
 
 title
 
-
-
 </td>
 </tr>
 <tr>
@@ -621,21 +583,15 @@ title
 
 displayName
 
-
-
 </td>
 <td valign="top">
 
 displayName
 
-
-
 </td>
 <td valign="top">
 
 displayName
-
-
 
 </td>
 </tr>
@@ -644,21 +600,15 @@ displayName
 
 locale
 
-
-
 </td>
 <td valign="top">
 
 locale
-
-
 
 </td>
 <td valign="top">
 
 language
-
-
 
 </td>
 </tr>
@@ -667,21 +617,15 @@ language
 
 timezone
 
-
-
 </td>
 <td valign="top">
 
 timeZone
 
-
-
 </td>
 <td valign="top">
 
 timeZone
-
-
 
 </td>
 </tr>
@@ -690,22 +634,16 @@ timeZone
 
 employeeNumber
 
-
-
 </td>
 <td valign="top">
 
 employeeNumber
-
-
 
 </td>
 <td valign="top">
 
 personnelNumber
 
-
-
 </td>
 </tr>
 <tr>
@@ -713,21 +651,15 @@ personnelNumber
 
 division
 
-
-
 </td>
 <td valign="top">
 
 division
 
-
-
 </td>
 <td valign="top">
 
 division
-
-
 
 </td>
 </tr>
@@ -736,21 +668,15 @@ division
 
 department
 
-
-
 </td>
 <td valign="top">
 
 department
 
-
-
 </td>
 <td valign="top">
 
 department
-
-
 
 </td>
 </tr>
@@ -759,21 +685,15 @@ department
 
 costCenter
 
-
-
 </td>
 <td valign="top">
 
 costCenter
 
-
-
 </td>
 <td valign="top">
 
 costCenter
-
-
 
 </td>
 </tr>
@@ -781,22 +701,16 @@ costCenter
 <td valign="top">
 
 company
-
-
 
 </td>
 <td valign="top">
 
 organization
 
-
-
 </td>
 <td valign="top">
 
 company
-
-
 
 </td>
 </tr>
@@ -805,21 +719,15 @@ company
 
 mail
 
-
-
 </td>
 <td valign="top">
 
 emails.value
 
-
-
 </td>
 <td valign="top">
 
 mail
-
-
 
 </td>
 </tr>
@@ -828,21 +736,15 @@ mail
 
 telephoneNumber
 
-
-
 </td>
 <td valign="top">
 
 phoneNumbers\[work\].value
 
-
-
 </td>
 <td valign="top">
 
 telephone
-
-
 
 </td>
 </tr>
@@ -851,21 +753,15 @@ telephone
 
 facsimileTelephoneNumber
 
-
-
 </td>
 <td valign="top">
 
 phoneNumbers\[fax\].value
 
-
-
 </td>
 <td valign="top">
 
 fax
-
-
 
 </td>
 </tr>
@@ -874,21 +770,15 @@ fax
 
 mobile
 
-
-
 </td>
 <td valign="top">
 
 phoneNumbers\[cell\].value
 
-
-
 </td>
 <td valign="top">
 
 mobile
-
-
 
 </td>
 </tr>
@@ -897,21 +787,15 @@ mobile
 
 streetAddress
 
-
-
 </td>
 <td valign="top">
 
 addresses. streetAddress
 
-
-
 </td>
 <td valign="top">
 
 street
-
-
 
 </td>
 </tr>
@@ -920,21 +804,15 @@ street
 
 l
 
-
-
 </td>
 <td valign="top">
 
 Addresses.locality
 
-
-
 </td>
 <td valign="top">
 
 city
-
-
 
 </td>
 </tr>
@@ -943,21 +821,15 @@ city
 
 st
 
-
-
 </td>
 <td valign="top">
 
 Addresses.region
 
-
-
 </td>
 <td valign="top">
 
 state
-
-
 
 </td>
 </tr>
@@ -966,21 +838,15 @@ state
 
 postalCode
 
-
-
 </td>
 <td valign="top">
 
 Addresses. postalCode
 
-
-
 </td>
 <td valign="top">
 
 zip
-
-
 
 </td>
 </tr>
@@ -989,21 +855,15 @@ zip
 
 co
 
-
-
 </td>
 <td valign="top">
 
 Addresses.country
 
-
-
 </td>
 <td valign="top">
 
 country
-
-
 
 </td>
 </tr>
@@ -1150,15 +1010,11 @@ country
         <th valign="top">
 
         Configuration
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -1166,15 +1022,11 @@ country
         <td valign="top">
         
         *Display Name*
-
-
         
         </td>
         <td valign="top">
         
         \(optional\) The name of the configuration.
-
-
         
         </td>
         </tr>
@@ -1182,15 +1034,11 @@ country
         <td valign="top">
         
         *Type*
-
-
         
         </td>
         <td valign="top">
         
         Select the *Microsoft Active Directory* type.
-
-
         
         </td>
         </tr>
@@ -1205,15 +1053,11 @@ country
         <th valign="top">
 
         Configurations
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -1221,15 +1065,11 @@ country
         <td valign="top">
         
         *Environment*
-
-
         
         </td>
         <td valign="top">
         
         Neo
-
-
         
         </td>
         </tr>
@@ -1237,15 +1077,11 @@ country
         <td valign="top">
         
         *Data Center*
-
-
         
         </td>
         <td valign="top">
         
         Select your SAP BTP subaccount's region.
-
-
         
         </td>
         </tr>
@@ -1253,15 +1089,11 @@ country
         <td valign="top">
         
         *Technical Name*
-
-
         
         </td>
         <td valign="top">
         
         The *Technical Name* must match your SAP BTP subaccount *Technical Name*.
-
-
         
         </td>
         </tr>
@@ -1269,15 +1101,11 @@ country
         <td valign="top">
         
         *Client ID*
-
-
         
         </td>
         <td valign="top">
         
         The *Client ID* must match the *ID* registered on SAP BTP under the *OAuth Settings* tab for your subaccount.
-
-
         
         </td>
         </tr>
@@ -1285,15 +1113,11 @@ country
         <td valign="top">
         
         *Client Secret*
-
-
         
         </td>
         <td valign="top">
         
         The *Client Secret* must match the *Secret* registered on SAP BTP under the *OAuth Settings* tab for your subaccount.
-
-
         
         </td>
         </tr>

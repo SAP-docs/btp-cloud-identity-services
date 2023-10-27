@@ -43,15 +43,11 @@ Configure the issuer and subject of tokens for JSON Web Token \(JWT\) client aut
     <th valign="top">
 
      
-
-
     
     </th>
     <th valign="top">
 
      
-
-
     
     </th>
     </tr>
@@ -59,15 +55,11 @@ Configure the issuer and subject of tokens for JSON Web Token \(JWT\) client aut
     <td valign="top">
     
     **Description**
-
-
     
     </td>
     <td valign="top">
     
     This field is optional. You can provide information about the token here.
-
-
     
     </td>
     </tr>
@@ -75,15 +67,11 @@ Configure the issuer and subject of tokens for JSON Web Token \(JWT\) client aut
     <td valign="top">
     
     **Issuer**
-
-
     
     </td>
     <td valign="top">
     
     The issuer is a corporate identity provider of type *OpenID Connect Compliant*. It must be created and configured in the administration console first.
-
-
     
     </td>
     </tr>
@@ -91,8 +79,6 @@ Configure the issuer and subject of tokens for JSON Web Token \(JWT\) client aut
     <td valign="top">
     
     **Subject**
-
-
     
     </td>
     <td valign="top">
@@ -110,8 +96,6 @@ Configure the issuer and subject of tokens for JSON Web Token \(JWT\) client aut
     <td valign="top">
     
     **Scope**
-
-
     
     </td>
     <td valign="top">

@@ -43,7 +43,9 @@ The Client ID and Client Secret for the current tenant are generated in the admi
 
 2.  Choose the *Audit and Change Logs* tile.
 
-3.  Under *Generate Client Credentials for Audit Logs* choose the *Generate* button.
+3.  Choose the *NEO* tab.
+
+4.  Under *Generate Client Credentials for Audit Logs* choose the *Generate* button.
 
     A dialog box with the generated Client ID and Client Secret appears.
 
@@ -57,7 +59,7 @@ The Client ID and Client Secret for the current tenant are generated in the admi
 
 ## Results
 
-The generated Client ID can be seen under *Generate Client Credentials for Audit Logs* in the *Audit and Change Logs* page.
+The generated Client ID can be seen in the *Generate Client Credentials for Audit Logs* section under the *NEO* tab.
 
 > ### Tip:  
 > To delete the client credentials, choose the ![](../Operation-Guide/images/delete_icon_4801c38.png) icon next to the generated Client ID. This deletes the Client ID and Client Secret from the system.
@@ -86,21 +88,15 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > 
 > Cluster
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Tenant Region
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > SAP BTP Host in Request
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -109,21 +105,15 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > 
 > Europe
 > 
-> 
-> 
 > </td>
 > <td valign="top" rowspan="2">
 > 
 > Rot/Amsterdam
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > `eu1.hana.ondemand.com` \(primary\)
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -132,8 +122,6 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > 
 > `eu3.hana.ondemand.com`
 > 
-> 
-> 
 > </td>
 > </tr>
 > <tr>
@@ -141,21 +129,15 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > 
 > Asia Pacific
 > 
-> 
-> 
 > </td>
 > <td valign="top" rowspan="2">
 > 
 > Sydney/Tokyo
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > `ap1.hana.ondemand.com` \(primary\)
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -163,8 +145,6 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > <td valign="top">
 > 
 > `jp1.hana.ondemand.com`
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -173,21 +153,15 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > 
 > Japan
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Tokyo/Osaka
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > `jp1.hana.ondemand.com`
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -196,21 +170,15 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > 
 > US-East
 > 
-> 
-> 
 > </td>
 > <td valign="top" rowspan="2">
 > 
 > Sterling/Toronto
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > `us3.hana.ondemand.com` \(primary\)
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -219,8 +187,6 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > 
 > `us1.hana.ondemand.com`
 > 
-> 
-> 
 > </td>
 > </tr>
 > <tr>
@@ -228,21 +194,15 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > 
 > Saudi Arabia
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Riyadh/Dammam
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > `sa1.hana.ondemand.com`
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -251,21 +211,15 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > 
 > China
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Shanghai
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > `cn1.platform.sapcloud.cn`
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -312,21 +266,15 @@ You can filter the audit logs by time and/or categories. The categories that you
 > 
 > Cluster
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Tenant Region
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > SAP BTP Host in Request
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -335,21 +283,15 @@ You can filter the audit logs by time and/or categories. The categories that you
 > 
 > Europe
 > 
-> 
-> 
 > </td>
 > <td valign="top" rowspan="2">
 > 
 > Rot/Amsterdam
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > `eu1.hana.ondemand.com` \(primary\)
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -358,8 +300,6 @@ You can filter the audit logs by time and/or categories. The categories that you
 > 
 > `eu3.hana.ondemand.com`
 > 
-> 
-> 
 > </td>
 > </tr>
 > <tr>
@@ -367,21 +307,15 @@ You can filter the audit logs by time and/or categories. The categories that you
 > 
 > Asia Pacific
 > 
-> 
-> 
 > </td>
 > <td valign="top" rowspan="2">
 > 
 > Sydney/Tokyo
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > `ap1.hana.ondemand.com` \(primary\)
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -389,8 +323,6 @@ You can filter the audit logs by time and/or categories. The categories that you
 > <td valign="top">
 > 
 > `jp1.hana.ondemand.com`
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -399,21 +331,15 @@ You can filter the audit logs by time and/or categories. The categories that you
 > 
 > Japan
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Tokyo/Osaka
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > `jp1.hana.ondemand.com`
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -422,21 +348,15 @@ You can filter the audit logs by time and/or categories. The categories that you
 > 
 > US-East
 > 
-> 
-> 
 > </td>
 > <td valign="top" rowspan="2">
 > 
 > Sterling/Toronto
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > `us3.hana.ondemand.com` \(primary\)
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -445,8 +365,6 @@ You can filter the audit logs by time and/or categories. The categories that you
 > 
 > `us1.hana.ondemand.com`
 > 
-> 
-> 
 > </td>
 > </tr>
 > <tr>
@@ -454,21 +372,15 @@ You can filter the audit logs by time and/or categories. The categories that you
 > 
 > Saudi Arabia
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Riyadh/Dammam
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > `sa1.hana.ondemand.com`
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -477,21 +389,15 @@ You can filter the audit logs by time and/or categories. The categories that you
 > 
 > China
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Shanghai
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > `cn1.platform.sapcloud.cn`
-> 
-> 
 > 
 > </td>
 > </tr>

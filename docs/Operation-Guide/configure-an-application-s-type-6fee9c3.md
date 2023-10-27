@@ -17,21 +17,15 @@ In some cases Identity Authentication can't determine the correct application ty
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Notes
-
-
 
 </th>
 </tr>
@@ -40,21 +34,15 @@ Notes
 
 SAP Analytics Cloud solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -63,21 +51,15 @@ SAP managed
 
 SAP Ariba solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -86,21 +68,15 @@ SAP managed
 
 SAP Business ByDesign solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -109,21 +85,15 @@ SAP managed
 
 SAP BTP solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -132,21 +102,15 @@ SAP managed
 
 SAP Sales Cloud and SAP Service Cloud solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -155,21 +119,15 @@ SAP managed
 
 SAP Concur solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -178,21 +136,15 @@ SAP managed
 
 SAP Fieldglass solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -201,21 +153,15 @@ SAP managed
 
 SAP Industry Cloud Solution
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -224,21 +170,15 @@ SAP Industry Cloud Solution
 
 SAP Integrated Business Planning solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -247,21 +187,15 @@ SAP managed
 
 SAP Jam solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -270,21 +204,15 @@ SAP managed
 
 SAP Marketing Cloud solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -293,21 +221,15 @@ SAP managed
 
 SAP Sales Cloud solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -316,21 +238,15 @@ SAP managed
 
 SAP S/4HANA Cloud solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -339,21 +255,15 @@ SAP managed
 
 SAP SuccessFactors solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -362,21 +272,15 @@ SAP managed
 
 SAP Customer Data solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -385,21 +289,15 @@ SAP Customer Data solution
 
 SAP Central Business Configuration solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -408,21 +306,15 @@ SAP Central Business Configuration solution
 
 Other SAP cloud solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -431,21 +323,15 @@ SAP managed
 
 SAP on-premise solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -454,21 +340,15 @@ SAP managed
 
 Qualtrics solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -477,21 +357,15 @@ SAP managed
 
 Non-SAP solution
 
-
-
 </td>
 <td valign="top">
 
 `charged`
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -500,21 +374,15 @@ Non-SAP solution
 
 Unknown
 
-
-
 </td>
 <td valign="top">
 
 `charged`
 
-
-
 </td>
 <td valign="top">
 
 default value
-
-
 
 </td>
 </tr>

@@ -35,14 +35,10 @@ You have to use a JSON representation of the invitation request by specifying *a
 
 Required Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -50,8 +46,6 @@ Description
 <td valign="top">
 
 `inviteeEmail`
-
-
 
 </td>
 <td valign="top">
@@ -70,8 +64,6 @@ The email of the invitee
 
 `inviteeUserId`
 
-
-
 </td>
 <td valign="top">
 
@@ -89,14 +81,10 @@ The user ID of the invitee
 
 `inviterName`
 
-
-
 </td>
 <td valign="top">
 
 The display name of the user who sends the invitation.
-
-
 
 </td>
 </tr>
@@ -104,8 +92,6 @@ The display name of the user who sends the invitation.
 <td valign="top">
 
 `targetUrl`
-
-
 
 </td>
 <td valign="top">
@@ -122,16 +108,12 @@ The URL that the user is redirected to after registration.
 
 For more information how to configure *Home URL*, see [Configure an Application's Home URL](../Operation-Guide/configure-an-application-s-home-url-be6d6f2.md).
 
-
-
 </td>
 </tr>
 <tr>
 <td valign="top">
 
 `sourceUrl`
-
-
 
 </td>
 <td valign="top">
@@ -144,8 +126,6 @@ The URL for the invitation link in the email sent to the invitee. The URL must b
 If `sourceUrl` is not specified, or the application uses overlay, the user is redirected to the application's *Home URL*, which must be set.
 
 For more information how to configure *Home URL*, see [Configure an Application's Home URL](../Operation-Guide/configure-an-application-s-home-url-be6d6f2.md).
-
-
 
 </td>
 </tr>
@@ -160,14 +140,10 @@ For more information how to configure *Home URL*, see [Configure an Application'
 
 Optional Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -176,14 +152,10 @@ Description
 
 `inviteeFirstName`
 
-
-
 </td>
 <td valign="top">
 
 The first name of the invitee
-
-
 
 </td>
 </tr>
@@ -192,14 +164,10 @@ The first name of the invitee
 
 `inviteeLastName`
 
-
-
 </td>
 <td valign="top">
 
 The last name of the invitee
-
-
 
 </td>
 </tr>
@@ -208,14 +176,10 @@ The last name of the invitee
 
 `footerText`
 
-
-
 </td>
 <td valign="top">
 
 The footer text of the invitation email
-
-
 
 </td>
 </tr>
@@ -224,14 +188,10 @@ The footer text of the invitation email
 
 `headerText`
 
-
-
 </td>
 <td valign="top">
 
 The header text of the invitation email
-
-
 
 </td>
 </tr>
@@ -240,16 +200,12 @@ The header text of the invitation email
 
 `language`
 
-
-
 </td>
 <td valign="top">
 
 The preferred language for the invitation email. The usage of this parameter does not affect the end-user screens.
 
 Must be a string value specified by a two or four-letter code in one of the following formats: XX, xx, xx-XX or xx\_XX. Otherwise the invitation email is in English.
-
-
 
 </td>
 </tr>

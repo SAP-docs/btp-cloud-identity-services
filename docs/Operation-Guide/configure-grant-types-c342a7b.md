@@ -45,15 +45,11 @@ To configure the grant type, proceed as follows:
     <th valign="top">
 
     Grant Type
-
-
     
     </th>
     <th valign="top">
 
     Default Behavior
-
-
     
     </th>
     </tr>
@@ -61,15 +57,11 @@ To configure the grant type, proceed as follows:
     <td valign="top">
     
     **Authorization Code**
-
-
     
     </td>
     <td valign="top">
     
     selected
-
-
     
     </td>
     </tr>
@@ -77,15 +69,11 @@ To configure the grant type, proceed as follows:
     <td valign="top">
     
     **Authorization Code / Enforce PKCE \(S256\)**
-
-
     
     </td>
     <td valign="top">
     
     not-selected
-
-
     
     </td>
     </tr>
@@ -93,15 +81,11 @@ To configure the grant type, proceed as follows:
     <td valign="top">
     
     **Password**
-
-
     
     </td>
     <td valign="top">
     
     selected
-
-
     
     </td>
     </tr>
@@ -109,15 +93,11 @@ To configure the grant type, proceed as follows:
     <td valign="top">
     
     **JWT Bearer**
-
-
     
     </td>
     <td valign="top">
     
     selected
-
-
     
     </td>
     </tr>
@@ -125,15 +105,11 @@ To configure the grant type, proceed as follows:
     <td valign="top">
     
     **Implicit**
-
-
     
     </td>
     <td valign="top">
     
     selected
-
-
     
     </td>
     </tr>
@@ -141,15 +117,11 @@ To configure the grant type, proceed as follows:
     <td valign="top">
     
     **Refresh**
-
-
     
     </td>
     <td valign="top">
     
     selected
-
-
     
     </td>
     </tr>
@@ -157,15 +129,11 @@ To configure the grant type, proceed as follows:
     <td valign="top">
     
     **Client Credentials**
-
-
     
     </td>
     <td valign="top">
     
     selected
-
-
     
     </td>
     </tr>
@@ -173,15 +141,11 @@ To configure the grant type, proceed as follows:
     <td valign="top">
     
     **Token Exchange \(RFC 8693\)**
-
-
     
     </td>
     <td valign="top">
     
     not-selected
-
-
     
     </td>
     </tr>

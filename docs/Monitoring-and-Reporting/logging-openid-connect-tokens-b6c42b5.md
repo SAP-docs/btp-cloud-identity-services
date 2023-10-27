@@ -27,21 +27,15 @@ Identity Authentication can issue OpenID Connect tokens to the applications, and
 
 Key
 
-
-
 </th>
 <th valign="top">
 
 Value
 
-
-
 </th>
 <th valign="top">
 
 Additional Info
-
-
 
 </th>
 </tr>
@@ -50,21 +44,15 @@ Additional Info
 
 `state`
 
-
-
 </td>
 <td valign="top">
 
 successful
 
-
-
 </td>
 <td valign="top">
 
 The token is issued or received.
-
-
 
 </td>
 </tr>
@@ -73,21 +61,15 @@ The token is issued or received.
 
 `action`
 
-
-
 </td>
 <td valign="top">
 
 issueJwtToken | receiveJwtToken
 
-
-
 </td>
 <td valign="top">
 
 For issued or received tokens.
-
-
 
 </td>
 </tr>
@@ -96,21 +78,15 @@ For issued or received tokens.
 
 `objectType`
 
-
-
 </td>
 <td valign="top">
 
 openIdClient
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -119,21 +95,15 @@ openIdClient
 
 `objectId`
 
-
-
 </td>
 <td valign="top">
 
 <the `client ID` of the application\>
 
-
-
 </td>
 <td valign="top">
 
 Unique attribute of the objectType – either id, or name, etc.
-
-
 
 </td>
 </tr>
@@ -142,21 +112,15 @@ Unique attribute of the objectType – either id, or name, etc.
 
 `category`
 
-
-
 </td>
 <td valign="top">
 
 audit.authentication
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -165,14 +129,10 @@ audit.authentication
 
 `jwtPayload`
 
-
-
 </td>
 <td valign="top">
 
 <JWT claims\>
-
-
 
 </td>
 <td valign="top">
@@ -191,21 +151,15 @@ A JSON string, which contains the token claims of issued or received OpenID Conn
 
 `workflow`
 
-
-
 </td>
 <td valign="top">
 
 openIdConnect
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -214,14 +168,10 @@ openIdConnect
 
 `userIdentifier`
 
-
-
 </td>
 <td valign="top">
 
 <the user identifier\>
-
-
 
 </td>
 <td valign="top">
@@ -243,21 +193,15 @@ openIdConnect
 
 `grant_type`
 
-
-
 </td>
 <td valign="top">
 
 <the respective grant type\>
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -266,21 +210,15 @@ openIdConnect
 
 `serviceProvider`
 
-
-
 </td>
 <td valign="top">
 
 <the name of the application\>
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>

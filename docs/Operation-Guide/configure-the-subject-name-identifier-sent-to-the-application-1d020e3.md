@@ -50,14 +50,10 @@ Expand the **Supported Attributes** table below to see the technical names of th
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Attribute Technical Name
-
-
 
 </th>
 </tr>
@@ -66,14 +62,10 @@ Attribute Technical Name
 
 Email
 
-
-
 </td>
 <td valign="top">
 
 mail
-
-
 
 </td>
 </tr>
@@ -82,14 +74,10 @@ mail
 
 Telephone Number
 
-
-
 </td>
 <td valign="top">
 
 telephone
-
-
 
 </td>
 </tr>
@@ -98,14 +86,10 @@ telephone
 
 Logon Name
 
-
-
 </td>
 <td valign="top">
 
 loginName
-
-
 
 </td>
 </tr>
@@ -114,14 +98,10 @@ loginName
 
 Display Name
 
-
-
 </td>
 <td valign="top">
 
 displayName
-
-
 
 </td>
 </tr>
@@ -130,14 +110,10 @@ displayName
 
 User ID
 
-
-
 </td>
 <td valign="top">
 
 uid
-
-
 
 </td>
 </tr>
@@ -146,14 +122,10 @@ uid
 
 Global User ID
 
-
-
 </td>
 <td valign="top">
 
 userUuid
-
-
 
 </td>
 </tr>
@@ -162,14 +134,10 @@ userUuid
 
 Employee Number
 
-
-
 </td>
 <td valign="top">
 
 personnelNumber
-
-
 
 </td>
 </tr>
@@ -178,14 +146,10 @@ personnelNumber
 
 Custom Attribute 1
 
-
-
 </td>
 <td valign="top">
 
 customAttribute1
-
-
 
 </td>
 </tr>
@@ -194,14 +158,10 @@ customAttribute1
 
 Custom Attribute 2
 
-
-
 </td>
 <td valign="top">
 
 customAttribute2
-
-
 
 </td>
 </tr>
@@ -210,14 +170,10 @@ customAttribute2
 
 Custom Attribute 3
 
-
-
 </td>
 <td valign="top">
 
 customAttribute3
-
-
 
 </td>
 </tr>
@@ -226,14 +182,10 @@ customAttribute3
 
 Custom Attribute 4
 
-
-
 </td>
 <td valign="top">
 
 customAttribute4
-
-
 
 </td>
 </tr>
@@ -242,14 +194,10 @@ customAttribute4
 
 Custom Attribute 5
 
-
-
 </td>
 <td valign="top">
 
 customAttribute5
-
-
 
 </td>
 </tr>
@@ -258,14 +206,10 @@ customAttribute5
 
 Custom Attribute 6
 
-
-
 </td>
 <td valign="top">
 
 customAttribute6
-
-
 
 </td>
 </tr>
@@ -274,14 +218,10 @@ customAttribute6
 
 Custom Attribute 7
 
-
-
 </td>
 <td valign="top">
 
 customAttribute7
-
-
 
 </td>
 </tr>
@@ -290,14 +230,10 @@ customAttribute7
 
 Custom Attribute 8
 
-
-
 </td>
 <td valign="top">
 
 customAttribute8
-
-
 
 </td>
 </tr>
@@ -306,14 +242,10 @@ customAttribute8
 
 Custom Attribute 9
 
-
-
 </td>
 <td valign="top">
 
 customAttribute9
-
-
 
 </td>
 </tr>
@@ -322,14 +254,10 @@ customAttribute9
 
 Custom Attribute 10
 
-
-
 </td>
 <td valign="top">
 
 customAttribute10
-
-
 
 </td>
 </tr>
@@ -338,14 +266,10 @@ customAttribute10
 
 SP \(service provider\) user nameID
 
-
-
 </td>
 <td valign="top">
 
 name\_id
-
-
 
 </td>
 </tr>
@@ -354,14 +278,10 @@ name\_id
 
 SP \(service provider\) user Custom Attribute 1
 
-
-
 </td>
 <td valign="top">
 
 spCustomAttribute1
-
-
 
 </td>
 </tr>
@@ -370,14 +290,10 @@ spCustomAttribute1
 
 SP \(service provider\) user Custom Attribute 2
 
-
-
 </td>
 <td valign="top">
 
 spCustomAttribute2
-
-
 
 </td>
 </tr>
@@ -386,14 +302,10 @@ spCustomAttribute2
 
 SP \(service provider\) user Custom Attribute 3
 
-
-
 </td>
 <td valign="top">
 
 spCustomAttribute3
-
-
 
 </td>
 </tr>
@@ -402,14 +314,10 @@ spCustomAttribute3
 
 SP \(service provider\) user Custom Attribute 4
 
-
-
 </td>
 <td valign="top">
 
 spCustomAttribute4
-
-
 
 </td>
 </tr>
@@ -418,14 +326,10 @@ spCustomAttribute4
 
 SP \(service provider\) user Custom Attribute 5
 
-
-
 </td>
 <td valign="top">
 
 spCustomAttribute5
-
-
 
 </td>
 </tr>
@@ -434,14 +338,10 @@ spCustomAttribute5
 
 NameID coming from the assertion of the corporate IdP
 
-
-
 </td>
 <td valign="top">
 
 corporateIdP.NameID
-
-
 
 </td>
 </tr>
@@ -450,14 +350,10 @@ corporateIdP.NameID
 
 Attribute coming from the assertion of the corporate IdP
 
-
-
 </td>
 <td valign="top">
 
 corporateIdP.<corporateIDP attribute\>
-
-
 
 </td>
 </tr>
@@ -545,21 +441,15 @@ Identity Authentication supports the following name ID formats:
 
 Name ID Format
 
-
-
 </th>
 <th valign="top">
 
 URI
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -568,14 +458,10 @@ Description
 
 Unspecified
 
-
-
 </td>
 <td valign="top">
 
 urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified
-
-
 
 </td>
 <td valign="top">
@@ -584,8 +470,6 @@ Identity Authentication does not use a specific format to express the identity o
 
 By default this is the default Name ID format.
 
-
-
 </td>
 </tr>
 <tr>
@@ -593,14 +477,10 @@ By default this is the default Name ID format.
 
 Email address
 
-
-
 </td>
 <td valign="top">
 
 urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress
-
-
 
 </td>
 <td valign="top">

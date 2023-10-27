@@ -31,14 +31,10 @@ To perform the social identity provider configuration in the administration cons
 
 Authentication Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -47,14 +43,10 @@ Description
 
 Facebook's application ID
 
-
-
 </td>
 <td valign="top">
 
 The ID generated after you add an application on Facebook.
-
-
 
 </td>
 </tr>
@@ -63,14 +55,10 @@ The ID generated after you add an application on Facebook.
 
 Facebook's application secret
 
-
-
 </td>
 <td valign="top">
 
 The secret generated after you add an application on Facebook.
-
-
 
 </td>
 </tr>

@@ -39,15 +39,11 @@ Configure a branding style for the buttons and information messages for the Quar
     <th valign="top">
 
     Color Picker
-
-
     
     </th>
     <th valign="top">
 
     Customized Area
-
-
     
     </th>
     </tr>
@@ -55,8 +51,6 @@ Configure a branding style for the buttons and information messages for the Quar
     <td valign="top">
     
     Background Top Color
-
-
     
     </td>
     <td valign="top">
@@ -73,8 +67,6 @@ Configure a branding style for the buttons and information messages for the Quar
     <td valign="top">
     
     Background Bottom Color
-
-
     
     </td>
     <td valign="top">
@@ -92,15 +84,11 @@ Configure a branding style for the buttons and information messages for the Quar
     <td valign="top">
     
     Border Color
-
-
     
     </td>
     <td valign="top">
     
     the button's border color in all screens
-
-
     
     </td>
     </tr>
@@ -108,15 +96,11 @@ Configure a branding style for the buttons and information messages for the Quar
     <td valign="top">
     
     Text Color
-
-
     
     </td>
     <td valign="top">
     
     the text in the buttons in all screens
-
-
     
     </td>
     </tr>

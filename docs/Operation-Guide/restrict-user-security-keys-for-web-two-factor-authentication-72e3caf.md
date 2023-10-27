@@ -34,35 +34,25 @@ When you add security keys in the administration console, you can choose from a 
 > 
 > Action
 > 
-> 
-> 
 > </th>
 > <th valign="top" align="center">
 > 
 > IP Range
-> 
-> 
 > 
 > </th>
 > <th valign="top" align="center">
 > 
 > Group
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Authentication Method
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > User Type
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -71,35 +61,25 @@ When you add security keys in the administration console, you can choose from a 
 > 
 > Web Two-Factor Authentication
 > 
+> </td>
+> <td valign="top">
 > 
+> Any
 > 
 > </td>
 > <td valign="top">
 > 
 > Any
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Any
-> 
-> 
-> 
-> </td>
-> <td valign="top">
-> 
-> Any
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Employee
-> 
-> 
 > 
 > </td>
 > </tr>

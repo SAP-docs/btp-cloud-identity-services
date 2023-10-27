@@ -82,28 +82,20 @@ If the ABAP and SAP Analytics Cloud tenants require the email address \(in our e
 
 Application
 
-
-
 </th>
 <th valign="top">
 
 Trust-Related Setting
-
-
 
 </th>
 <th valign="top">
 
 Value \(SAML 2.0 Scenario\)
 
-
-
 </th>
 <th valign="top">
 
 Value \(OpenID Connect Scenario\)
-
-
 
 </th>
 </tr>
@@ -112,28 +104,20 @@ Value \(OpenID Connect Scenario\)
 
 ABAP
 
-
-
 </td>
 <td valign="top">
 
 `Subject Name Identifier`
 
-
-
 </td>
 <td valign="top">
 
 Advanced Configuration: `${corporateIdP.mail}`
 
-
-
 </td>
 <td valign="top">
 
 Advanced Configuration: `${corporateIdP.mail}`
-
-
 
 </td>
 </tr>
@@ -142,21 +126,15 @@ Advanced Configuration: `${corporateIdP.mail}`
 
 `Default Name ID Format`
 
-
-
 </td>
 <td valign="top">
 
 `Email`
 
-
-
 </td>
 <td valign="top">
 
 `Email`
-
-
 
 </td>
 </tr>
@@ -165,21 +143,15 @@ Advanced Configuration: `${corporateIdP.mail}`
 
 `Apply Function to Subject Name Identifier`
 
-
-
 </td>
 <td valign="top">
 
 `None`
 
-
-
 </td>
 <td valign="top">
 
 `None`
-
-
 
 </td>
 </tr>
@@ -188,21 +160,15 @@ Advanced Configuration: `${corporateIdP.mail}`
 
 `Conditional Authentication`
 
-
-
 </td>
 <td valign="top">
 
 `<your corporate identity provider>`
 
-
-
 </td>
 <td valign="top">
 
 `<your corporate identity provider>`
-
-
 
 </td>
 </tr>
@@ -211,28 +177,20 @@ Advanced Configuration: `${corporateIdP.mail}`
 
 SAP Analytics Cloud
 
-
-
 </td>
 <td valign="top">
 
 `Subject Name Identifier`
 
-
-
 </td>
 <td valign="top">
 
 Advanced Configuration: `${corporateIdP.mail}`
 
-
-
 </td>
 <td valign="top">
 
 Advanced Configuration: `${corporateIdP.mail}`
-
-
 
 </td>
 </tr>
@@ -241,21 +199,15 @@ Advanced Configuration: `${corporateIdP.mail}`
 
 `Default Name ID Format`
 
-
-
 </td>
 <td valign="top">
 
 `Email`
 
-
-
 </td>
 <td valign="top">
 
 `Email`
-
-
 
 </td>
 </tr>
@@ -264,21 +216,15 @@ Advanced Configuration: `${corporateIdP.mail}`
 
 `Apply Function to Subject Name Identifier`
 
-
-
 </td>
 <td valign="top">
 
 `None`
 
-
-
 </td>
 <td valign="top">
 
 `None`
-
-
 
 </td>
 </tr>
@@ -287,21 +233,15 @@ Advanced Configuration: `${corporateIdP.mail}`
 
 `Conditional Authentication`
 
-
-
 </td>
 <td valign="top">
 
 `<your corporate identity provider>`
 
-
-
 </td>
 <td valign="top">
 
 `<your corporate identity provider>`
-
-
 
 </td>
 </tr>
@@ -310,28 +250,20 @@ Advanced Configuration: `${corporateIdP.mail}`
 
 Other Application
 
-
-
 </td>
 <td valign="top">
 
 `Subject Name Identifier`
-
-
 
 </td>
 <td valign="top">
 
 `Login Name`
 
-
-
 </td>
 <td valign="top">
 
 Advanced Configuration: `${corporateIdP.mail}`
-
-
 
 </td>
 </tr>
@@ -340,21 +272,15 @@ Advanced Configuration: `${corporateIdP.mail}`
 
 `Default Name ID Format`
 
-
-
 </td>
 <td valign="top">
 
 `Unspecified`
 
-
-
 </td>
 <td valign="top">
 
 `Unspecified`
-
-
 
 </td>
 </tr>
@@ -363,21 +289,15 @@ Advanced Configuration: `${corporateIdP.mail}`
 
 `Apply Function to Subject Name Identifier`
 
-
-
 </td>
 <td valign="top">
 
 `None`
 
-
-
 </td>
 <td valign="top">
 
 `None`
-
-
 
 </td>
 </tr>
@@ -386,21 +306,15 @@ Advanced Configuration: `${corporateIdP.mail}`
 
 `Conditional Authentication`
 
-
-
 </td>
 <td valign="top">
 
 `<your corporate identity provider>`
 
-
-
 </td>
 <td valign="top">
 
 `<your corporate identity provider>`
-
-
 
 </td>
 </tr>

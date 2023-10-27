@@ -43,14 +43,10 @@ In either case, use the `resource` parameter to identify the provider. The `reso
 
 URN
 
-
-
 </th>
 <th valign="top">
 
 Provider Determined by
-
-
 
 </th>
 </tr>
@@ -59,14 +55,10 @@ Provider Determined by
 
 <code>urn:sap:identity:application:provider:name:<i class="varname">&lt;logical_name&gt;</i></code>
 
-
-
 </td>
 <td valign="top">
 
 Logical name: Document the name in a scenario guide similar to how you do for destinations.
-
-
 
 </td>
 </tr>
@@ -75,14 +67,10 @@ Logical name: Document the name in a scenario guide similar to how you do for de
 
 <code>urn:sap:identity:application:provider:clientid:<i class="varname">&lt;client_id&gt;</i></code>
 
-
-
 </td>
 <td valign="top">
 
 Client ID: Identity Authentication can resolve the provider application with the `client_id` parameter.
-
-
 
 </td>
 </tr>
@@ -91,16 +79,12 @@ Client ID: Identity Authentication can resolve the provider application with the
 
 <code>urn:sap:identity:application:provider:clientid:<i class="varname">&lt;client_id&gt;</i>:apptid:<i class="varname">&lt;app_tid&gt;</i></code>
 
-
-
 </td>
 <td valign="top">
 
 Client ID and application tenant ID: Identity Authentication can resolve the provider application with the `client_id` and `app_tid` parameters.
 
 Use this resource URN when there are multiple subscriptions of the same application with the same Identity Authentication tenant.
-
-
 
 </td>
 </tr>

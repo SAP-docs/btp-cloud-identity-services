@@ -84,63 +84,45 @@ Each record should contain the following data:
 > 
 > Date
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Administrator's ID
-> 
-> 
 > 
 > </th>
 > <th valign="top">
 > 
 > Administrator's Name
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Resource Type
-> 
-> 
 > 
 > </th>
 > <th valign="top">
 > 
 > Resource ID
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Resource Name
-> 
-> 
 > 
 > </th>
 > <th valign="top">
 > 
 > Action
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Attribute
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Value
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -149,63 +131,45 @@ Each record should contain the following data:
 > 
 > 16-05-2014 10:21:21
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Service Provider
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 500964f6e4b0f3cba101f700
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > sp.example.com
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > UPDATE
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Privacy Policy
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Company A Privacy Policy
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -214,63 +178,45 @@ Each record should contain the following data:
 > 
 > 16-05-2014 10:21:15
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Service Provider
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 500964f6e4b0f3cba101f700
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > sp.example.com
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > UPDATE
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Terms of Use
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Company A Terms of Use
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -279,63 +225,45 @@ Each record should contain the following data:
 > 
 > 16-05-2014 10:21:08
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Service Provider
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 500964f6e4b0f3cba101f700
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > sp.example.com
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > UPDATE
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Password Policy
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > https://accounts.sap.com/policy/passwords/sap/web/1.1
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -344,63 +272,45 @@ Each record should contain the following data:
 > 
 > 16-05-2014 10:20:18
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Service Provider
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 500964f6e4b0f3cba101f700
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > sp.example.com
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > UPDATE
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Branding Style
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Text Color=\#ffffff, Background Top Color=\#E3E3E3, Border Color=\#7B9EB3, show\_header=false, Background Bottom Color=\#E3E3E3
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -409,63 +319,45 @@ Each record should contain the following data:
 > 
 > 16-05-2014 10:15:10
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Service Provider
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 500964f6e4b0f3cba101f700
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > sp.example.com
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > UPDATE
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Branding Type
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Custom Theme
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -474,63 +366,45 @@ Each record should contain the following data:
 > 
 > 16-05-2014 10:14:29
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Service Provider
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 500964f6e4b0f3cba101f700
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > sp.example.com
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > UPDATE
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Self-Registration
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Allowed
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -539,63 +413,45 @@ Each record should contain the following data:
 > 
 > 16-05-2014 10:06:24
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Privacy Policy Document
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 53da05f9e4b0732235f24b8e
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > English Version of Company A Privacy Policy
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > CREATE
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Plain Text Privacy Policy File
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 >  
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -604,63 +460,45 @@ Each record should contain the following data:
 > 
 > 16-05-2014 10:05:11
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Privacy Policy Document
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 53da05f9e4b0732235f24b8a
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Company A Privacy Policy
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > CREATE
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Display Name
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Company A Privacy Policy
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -669,63 +507,45 @@ Each record should contain the following data:
 > 
 > 16-05-2014 10:03:18
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Terms of Use Document
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 53da0595e4b0732235f24b04
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > English Version of Company A Terms of Use
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > CREATE
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Plain Text Terms of Use File
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 >  
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -734,63 +554,45 @@ Each record should contain the following data:
 > 
 > 16-05-2014 10:02:21
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Terms of Use Document
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > 53da0595e4b0732235f24b00
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Company A Terms of Use
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > CREATE
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Display Name
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Company A Terms of Use
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -799,63 +601,45 @@ Each record should contain the following data:
 > 
 > 15-05-2014 11:32:18
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Service Provider
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 500964f6e4b0f3cba101f700
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Company A \(company\_a\_service\_provider\)
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > UPDATE
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > SAML 2.0 Provider Name
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > company\_a\_service\_provider
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -864,63 +648,45 @@ Each record should contain the following data:
 > 
 > 15-05-2014 11:32:18
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Service Provider
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 500964f6e4b0f3cba101f700
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Company A \(company\_a\_service\_provider\)
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > UPDATE
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Authenticating Authority
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > company\_a\_tenant\_id
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -929,64 +695,46 @@ Each record should contain the following data:
 > 
 > 15-05-2014 11:32:18
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Service Provider
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 500964f6e4b0f3cba101f700
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Company A \(company\_a\_service\_provider\)
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > UPDATE
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Assertion Consumer Service Endpoint
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > service\_provider\_acs\_endpoint, HTTP-POST
 > 
-> 
-> 
 > </td>
 > </tr>
 > <tr>
@@ -994,64 +742,46 @@ Each record should contain the following data:
 > 
 > 15-05-2014 11:32:18
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Service Provider
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 500964f6e4b0f3cba101f700
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Company A \(company\_a\_service\_provider\)
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > UPDATE
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Single Logout Endpoint
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > service\_provider\_slo\_endpoint, HTTP-POST
 > 
-> 
-> 
 > </td>
 > </tr>
 > <tr>
@@ -1059,64 +789,46 @@ Each record should contain the following data:
 > 
 > 15-05-2014 11:32:18
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Service Provider
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 500964f6e4b0f3cba101f700
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Company A \(company\_a\_service\_provider\)
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > UPDATE
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Single Logout Endpoint
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > service\_provider\_slo\_endpoint, HTTP-Redirect
 > 
-> 
-> 
 > </td>
 > </tr>
 > <tr>
@@ -1124,63 +836,45 @@ Each record should contain the following data:
 > 
 > 15-05-2014 11:31:11
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Service Provider
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 500964f6e4b0f3cba101f700
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Company A \(company\_a\_service\_provider\)
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > CREATE
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Name ID Attribute
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > User ID
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -1189,63 +883,45 @@ Each record should contain the following data:
 > 
 > 15-05-2014 11:31:11
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Service Provider
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 500964f6e4b0f3cba101f700
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Company A \(company\_a\_service\_provider\)
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > CREATE
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Default Name ID Format
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -1254,63 +930,45 @@ Each record should contain the following data:
 > 
 > 15-05-2014 11:31:11
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Service Provider
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 500964f6e4b0f3cba101f700
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Company A \(company\_a\_service\_provider\)
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > CREATE
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Self-Registration
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Inherit
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -1319,63 +977,45 @@ Each record should contain the following data:
 > 
 > 15-05-2014 11:31:11
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Service Provider
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 500964f6e4b0f3cba101f700
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Company A \(company\_a\_service\_provider\)
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > CREATE
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Certificate
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > CN=sp.example.com
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -1384,63 +1024,45 @@ Each record should contain the following data:
 > 
 > 15-05-2014 11:31:11
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Service Provider
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 500964f6e4b0f3cba101f700
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Company A \(company\_a\_service\_provider\)
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > CREATE
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Assertion Consumer Service Endpoint
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 >  
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -1449,63 +1071,45 @@ Each record should contain the following data:
 > 
 > 15-05-2014 11:31:11
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Service Provider
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 500964f6e4b0f3cba101f700
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Company A \(company\_a\_service\_provider\)
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > CREATE
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Single Logout Endpoint
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 >  
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -1514,63 +1118,45 @@ Each record should contain the following data:
 > 
 > 15-05-2014 11:31:11
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Service Provider
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 500964f6e4b0f3cba101f700
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Company A \(company\_a\_service\_provider\)
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > CREATE
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > User Attribute
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 >  
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -1579,63 +1165,45 @@ Each record should contain the following data:
 > 
 > 15-05-2014 11:31:11
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > P123456
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > Donna Moore
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Service Provider
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > 500964f6e4b0f3cba101f700
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Company A \(company\_a\_service\_provider\)
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > CREATE
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Constant Attribute
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 >  
-> 
-> 
 > 
 > </td>
 > </tr>

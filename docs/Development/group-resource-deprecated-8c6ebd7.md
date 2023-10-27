@@ -57,21 +57,15 @@ You have the `id` of the group whose resource you want to get.
 
 Header
 
-
-
 </th>
 <th valign="top">
 
 Required
 
-
-
 </th>
 <th valign="top">
 
 Values
-
-
 
 </th>
 </tr>
@@ -80,21 +74,15 @@ Values
 
 `Content-Type`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 application/scim+json
-
-
 
 </td>
 </tr>
@@ -127,21 +115,15 @@ Content-Type: application/scim+json
 
 Code
 
-
-
 </th>
 <th valign="top">
 
 Reason
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -150,14 +132,10 @@ Description
 
 200
 
-
-
 </td>
 <td valign="top">
 
 OK
-
-
 
 </td>
 <td valign="top">

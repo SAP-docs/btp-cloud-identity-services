@@ -31,21 +31,15 @@ The attributes can take one of the following types:
 
 Attribute Type
 
-
-
 </th>
 <th valign="top">
 
 Column Name \(Example\)
 
-
-
 </th>
 <th valign="top">
 
 Value \(Example\)
-
-
 
 </th>
 </tr>
@@ -54,21 +48,15 @@ Value \(Example\)
 
 `multivalued complex`
 
-
-
 </td>
 <td valign="top">
 
 emails\[0\].value
 
-
-
 </td>
 <td valign="top">
 
 michael.adams@example.com
-
-
 
 </td>
 </tr>
@@ -77,21 +65,15 @@ michael.adams@example.com
 
 `complex`
 
-
-
 </td>
 <td valign="top">
 
 name.familyName
 
-
-
 </td>
 <td valign="top">
 
 Adams
-
-
 
 </td>
 </tr>
@@ -100,21 +82,15 @@ Adams
 
 `single value`
 
-
-
 </td>
 <td valign="top">
 
 displayName
 
-
-
 </td>
 <td valign="top">
 
 Michael Adams
-
-
 
 </td>
 </tr>
@@ -123,21 +99,15 @@ Michael Adams
 
 `multivalue`
 
-
-
 </td>
 <td valign="top">
 
 urn:sap:cloud:scim:schemas:extension:custom:2.0:CustomSchema:arrayOfStringsAttr
 
-
-
 </td>
 <td valign="top">
 
 test1;test2
-
-
 
 </td>
 </tr>
@@ -154,14 +124,10 @@ The following attributes must be a valid master data text:
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Where to find it
-
-
 
 </th>
 </tr>
@@ -169,8 +135,6 @@ Where to find it
 <td valign="top">
 
 `locale`
-
-
 
 </td>
 <td valign="top">
@@ -187,14 +151,10 @@ Where to find it
 
 `timeZone`
 
-
-
 </td>
 <td valign="top">
 
 API - GET `https://<tenant ID>.accounts.ondemand.com/service/resource?resourceType=RESOURCE_MD_TIMEZONES&locale=en`
-
-
 
 </td>
 </tr>
@@ -202,8 +162,6 @@ API - GET `https://<tenant ID>.accounts.ondemand.com/service/resource?resourceTy
 <td valign="top">
 
 `addresses[0].country`
-
-
 
 </td>
 <td valign="top">
@@ -220,14 +178,10 @@ API - GET `https://<tenant ID>.accounts.ondemand.com/service/resource?resourceTy
 
 `addresses[0].region`
 
-
-
 </td>
 <td valign="top">
 
 API - GET `https://<tenant ID>.accounts.ondemand.com/service/resource?resourceType=RESOURCE_MD_STATES&locale=en`
-
-
 
 </td>
 </tr>
@@ -235,8 +189,6 @@ API - GET `https://<tenant ID>.accounts.ondemand.com/service/resource?resourceTy
 <td valign="top">
 
 `urn:ietf:params:scim:schemas:extension:enterprise:2.0:User:department`
-
-
 
 </td>
 <td valign="top">
@@ -252,8 +204,6 @@ API - GET `https://<tenant ID>.accounts.ondemand.com/service/resource?resourceTy
 <td valign="top">
 
 `name.honorificPrefix`
-
-
 
 </td>
 <td valign="top">

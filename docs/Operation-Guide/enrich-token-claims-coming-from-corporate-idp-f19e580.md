@@ -27,7 +27,7 @@ You can add up to 30 claims per corporate IdP.
 
 If *Use Identity Authentication user store* under *Identity Federation* is disabled, modify the token claims received from the corporate identity provider \(IdP\). The claims enriched in the administration console for SAP Cloud Identity Services are thus taken into consideration and sent to the application in the modified form. The application specific settings, the claims in the *Default Attributes* section, are ignored.
 
-If *Use Identity Authentication user store* under *Identity Federation* is enabled, use the modified claims in the *Default Attributes* section for the applications that use the corporate IdP for authentication. For more information, see [Configure the Default Attributes Sent to the Application](configure-the-default-attributes-sent-to-the-application-a2f1e46.md).
+If *Use Identity Authentication user store* under *Identity Federation* is enabled, use the modified claims in the *Default Attributes* section for the applications that use the corporate IdP for authentication. For more information, see [Attributes with Default Values](attributes-with-default-values-a2f1e46.md).
 
 > ### Note:  
 > You can also overwrite the `Subject Name Identifier` via the Enriched Token Claims option. Identity Authentication sends the modified claim to the application as `subject` in the OpenID Connect tokens.
@@ -41,14 +41,10 @@ If *Use Identity Authentication user store* under *Identity Federation* is enabl
 > 
 > Claim
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Value
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -57,14 +53,10 @@ If *Use Identity Authentication user store* under *Identity Federation* is enabl
 > 
 > NameID
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > `<prefix> ${<NameID>} <suffix>`
-> 
-> 
 > 
 > </td>
 > </tr>

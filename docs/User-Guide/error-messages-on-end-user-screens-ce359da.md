@@ -17,21 +17,15 @@ This section aims to help end users to deal with error messages when using appli
 
 Error Message
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Solution
-
-
 
 </th>
 </tr>
@@ -39,8 +33,6 @@ Solution
 <td valign="top">
 
 Authentication failed; try again
-
-
 
 </td>
 <td valign="top">
@@ -67,14 +59,10 @@ Authentication failed; try again
 
 An error occurred; try again
 
-
-
 </td>
 <td valign="top">
 
 An unexpected error occurred.
-
-
 
 </td>
 <td valign="top">
@@ -91,21 +79,15 @@ An unexpected error occurred.
 
 Insufficient password complexity; check password requirements
 
-
-
 </td>
 <td valign="top">
 
 Your password does not comply with the application’s password policy.
 
-
-
 </td>
 <td valign="top">
 
 Familiarize yourself with the password policy for the application.
-
-
 
 </td>
 </tr>
@@ -114,21 +96,15 @@ Familiarize yourself with the password policy for the application.
 
 Cannot verify your password; try again
 
-
-
 </td>
 <td valign="top">
 
 The old password for the password update is invalid.
 
-
-
 </td>
 <td valign="top">
 
 Enter your correct current password.
-
-
 
 </td>
 </tr>
@@ -137,14 +113,10 @@ Enter your correct current password.
 
 The password has already been changed in the last 24 hours
 
-
-
 </td>
 <td valign="top">
 
 According to the application’s policy, you are not allowed to change the password right now.
-
-
 
 </td>
 <td valign="top">
@@ -161,14 +133,10 @@ According to the application’s policy, you are not allowed to change the passw
 
 Your email activation link is invalid.
 
-
-
 </td>
 <td valign="top">
 
 The email activation link that you have received is expired or already used by you.
-
-
 
 </td>
 <td valign="top">

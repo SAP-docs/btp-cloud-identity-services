@@ -19,14 +19,10 @@ This section describes how you can configure the user authentication, access to 
 
 To learn about
 
-
-
 </th>
 <th valign="top">
 
 See
-
-
 
 </th>
 </tr>
@@ -34,8 +30,6 @@ See
 <td valign="top">
 
 How to create an application and configure its display name
-
-
 
 </td>
 <td valign="top">
@@ -56,8 +50,6 @@ How to create an application and configure its display name
 
 How to delete an application
 
-
-
 </td>
 <td valign="top">
 
@@ -72,15 +64,13 @@ How to delete an application
 
 How to configure trust
 
-
-
 </td>
 <td valign="top">
 
 -   [Configure Trust](configure-trust-f96e4c5.md)
 -   [Configure the Subject Name Identifier Sent to the Application](configure-the-subject-name-identifier-sent-to-the-application-1d020e3.md)
--   [Configure the User Attributes Sent to the Application](configure-the-user-attributes-sent-to-the-application-d361407.md)
--   [Configure the Default Attributes Sent to the Application](configure-the-default-attributes-sent-to-the-application-a2f1e46.md)
+-   [User Attributes Sent to the Application](user-attributes-sent-to-the-application-d361407.md)
+-   [Attributes with Default Values](attributes-with-default-values-a2f1e46.md)
 
 
 
@@ -90,8 +80,6 @@ How to configure trust
 <td valign="top">
 
 How to manage authentications
-
-
 
 </td>
 <td valign="top">
@@ -107,8 +95,6 @@ How to manage authentications
 
 How to configure API Authentication
 
-
-
 </td>
 <td valign="top">
 
@@ -123,8 +109,6 @@ How to configure API Authentication
 <td valign="top">
 
 How to manage Terms of Use and Privacy Policies
-
-
 
 </td>
 <td valign="top">
@@ -147,8 +131,6 @@ Specific for the application
 <td valign="top">
 
 How to configure branding styles and layout
-
-
 
 </td>
 <td valign="top">
@@ -174,8 +156,6 @@ Specific for the application
 
 How to configure access
 
-
-
 </td>
 <td valign="top">
 
@@ -199,8 +179,6 @@ How to configure access
 <td valign="top">
 
 How to choose an identity provider for an application
-
-
 
 </td>
 <td valign="top">

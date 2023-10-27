@@ -32,14 +32,10 @@ When you create a new policy, you can restrict the users on the basis of the fol
 
 Attributes
 
-
-
 </th>
 <th valign="top">
 
 Value
-
-
 
 </th>
 </tr>
@@ -48,14 +44,10 @@ Value
 
 `user.name`
 
-
-
 </td>
 <td valign="top">
 
 The *Login Name* of the user as defined in the administration console.
-
-
 
 </td>
 </tr>
@@ -63,8 +55,6 @@ The *Login Name* of the user as defined in the administration console.
 <td valign="top">
 
 `user.addresses.country`
-
-
 
 </td>
 <td valign="top">
@@ -85,14 +75,10 @@ The addresses must be marked as primary via the [Identity Directory SCIM REST AP
 
 `user.costCenter`
 
-
-
 </td>
 <td valign="top">
 
 The *Cost Center* of the user as defined in the administration console.
-
-
 
 </td>
 </tr>
@@ -101,14 +87,10 @@ The *Cost Center* of the user as defined in the administration console.
 
 `user.division`
 
-
-
 </td>
 <td valign="top">
 
 The *Division* of the user as defined in the administration console.
-
-
 
 </td>
 </tr>
@@ -117,14 +99,10 @@ The *Division* of the user as defined in the administration console.
 
 `user.department`
 
-
-
 </td>
 <td valign="top">
 
 The value must match the predefined master data one. See [Departments.properties](../Development/change-master-data-texts-rest-api-b10fc6a.md#loiod13c638f0d5d4a8889debf278fcb0275)
-
-
 
 </td>
 </tr>
@@ -133,14 +111,10 @@ The value must match the predefined master data one. See [Departments.properties
 
 `user.organization`
 
-
-
 </td>
 <td valign="top">
 
 The *Company* of the user as defined in the administration console.
-
-
 
 </td>
 </tr>
@@ -148,8 +122,6 @@ The *Company* of the user as defined in the administration console.
 <td valign="top">
 
 `user.attributes`
-
-
 
 </td>
 <td valign="top">
@@ -174,8 +146,6 @@ The supported attributes that can be defined in the policy are listed in the **S
 *Deprecated*
 
 `user.excludedAttributes`
-
-
 
 </td>
 <td valign="top">

@@ -36,15 +36,11 @@ You can also browse improvement requests, comment, vote, receive updates, and br
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Notes
-
-
     
     </th>
     </tr>
@@ -52,15 +48,11 @@ You can also browse improvement requests, comment, vote, receive updates, and br
     <td valign="top">
     
     **Project**
-
-
     
     </td>
     <td valign="top">
     
     The name of the current product session. It can’t be edited.
-
-
     
     </td>
     </tr>
@@ -68,15 +60,11 @@ You can also browse improvement requests, comment, vote, receive updates, and br
     <td valign="top">
     
     **Title**
-
-
     
     </td>
     <td valign="top">
     
     Enter your title here clearly stating your request and area of improvement.
-
-
     
     </td>
     </tr>
@@ -84,15 +72,11 @@ You can also browse improvement requests, comment, vote, receive updates, and br
     <td valign="top">
     
     **IR Category**
-
-
     
     </td>
     <td valign="top">
     
     Select *Security Services* from the drop-down list.
-
-
     
     </td>
     </tr>
@@ -100,15 +84,11 @@ You can also browse improvement requests, comment, vote, receive updates, and br
     <td valign="top">
     
     **Description**
-
-
     
     </td>
     <td valign="top">
     
     Provide details about your idea.
-
-
     
     </td>
     </tr>
@@ -116,15 +96,11 @@ You can also browse improvement requests, comment, vote, receive updates, and br
     <td valign="top">
     
     **Tags**
-
-
     
     </td>
     <td valign="top">
     
     Use the *IAS* tag.
-
-
     
     </td>
     </tr>

@@ -26,21 +26,15 @@ Identity Authentication supports the following:
 
 Device
 
-
-
 </th>
 <th valign="top">
 
 OS
 
-
-
 </th>
 <th valign="top">
 
 Browser
-
-
 
 </th>
 </tr>
@@ -49,14 +43,10 @@ Browser
 
 Face ID
 
-
-
 </td>
 <td valign="top">
 
 Latest iOS
-
-
 
 </td>
 <td valign="top">
@@ -73,14 +63,10 @@ Latest iOS
 
 Touch ID
 
-
-
 </td>
 <td valign="top">
 
 Latest macOS
-
-
 
 </td>
 <td valign="top">
@@ -97,14 +83,10 @@ Latest macOS
 
 Windows Hello
 
-
-
 </td>
 <td valign="top">
 
 Windows 10
-
-
 
 </td>
 <td valign="top">

@@ -42,21 +42,15 @@ The delete user resource method of the Identity Authentication implementation of
 
 Response Code
 
-
-
 </th>
 <th valign="top">
 
 Meaning
 
-
-
 </th>
 <th valign="top">
 
 Response Description
-
-
 
 </th>
 </tr>
@@ -65,21 +59,15 @@ Response Description
 
 204
 
-
-
 </td>
 <td valign="top">
 
 No Content
 
-
-
 </td>
 <td valign="top">
 
 User is successfully deleted.
-
-
 
 </td>
 </tr>

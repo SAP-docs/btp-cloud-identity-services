@@ -29,7 +29,7 @@ You can add up to 30 attributes per corporate IdP.
 
 When the application uses corporate IdP for authentication, the assertion attributes enriched in the administration console for SAP Cloud Identity Services are taken into consideration and sent to the application in the modified form, if the *Use Identity Authentication user store* option under *Identity Federation* is disabled.
 
-If *Identity Federation* is configured, use the modified attributes in the *Default Attributes* section for the applications that use the corporate IdP for authentication. For more information, see [Configure the Default Attributes Sent to the Application](configure-the-default-attributes-sent-to-the-application-a2f1e46.md).
+If *Identity Federation* is configured, use the modified attributes in the *Default Attributes* section for the applications that use the corporate IdP for authentication. For more information, see [Attributes with Default Values](attributes-with-default-values-a2f1e46.md).
 
 > ### Note:  
 > You can also overwrite the `Subject Name Identifier` via the Enrich Assertion Attributes option. Identity Authentication sends the modified attribute to the application as `name ID` in the SAML 2.0 assertions, and as `subject` in the OpenID Connect tokens.
@@ -43,14 +43,10 @@ If *Identity Federation* is configured, use the modified attributes in the *Defa
 > 
 > Attribute
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Value
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -59,14 +55,10 @@ If *Identity Federation* is configured, use the modified attributes in the *Defa
 > 
 > NameID
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > `<prefix> ${<NameID>} <suffix>`
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -87,9 +79,11 @@ To modify the assertion attributes coming from the corporate IdP, proceed as fol
     > ### Tip:  
     > If you need to change the protocol, see [Choose Identity Provider Type](choose-identity-provider-type-0838379.md)..
 
-4.  Add the attributes as received from the corporate IdP with the new values to be sent to the application.
+4.  Under *Trust*, choose the *Enriched Assertion Attributes* list item.
 
-5.  Save your configuration.
+5.  Add the attributes as received from the corporate IdP with the new values to be sent to the application.
+
+6.  Save your configuration.
 
     If the operation is successful, you receive the message ***Identity provider "<name of identity provider\>" updated***.
 

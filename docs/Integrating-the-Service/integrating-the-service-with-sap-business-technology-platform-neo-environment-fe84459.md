@@ -122,14 +122,10 @@ You have two configuration options based on the following cases:
 
 You want to
 
-
-
 </th>
 <th valign="top">
 
 Procedure
-
-
 
 </th>
 </tr>
@@ -137,8 +133,6 @@ Procedure
 <td valign="top">
 
 Add a tenant of Identity Authentication registered for your company or organization as an identity provider.
-
-
 
 </td>
 <td valign="top">
@@ -156,8 +150,6 @@ Follow the procedure in: [Identity Authentication Tenant](https://help.sap.com/v
 <td valign="top">
 
 Configure manual trust
-
-
 
 </td>
 <td valign="top">
@@ -274,7 +266,7 @@ You have to specify how the assertion attributes are sent to SAP BTP in the asse
 **Related Information**  
 
 
-[Configure the User Attributes Sent to the Application](../Operation-Guide/configure-the-user-attributes-sent-to-the-application-d361407.md "After configuring the user attributes to be collected by the registration and upgrade forms, you have to specify how these attributes are sent to the application.")
+[User Attributes Sent to the Application](../Operation-Guide/user-attributes-sent-to-the-application-d361407.md "After configuring the user attributes to be collected by the registration and upgrade forms, you have to specify how these attributes are sent to the application.")
 
 <a name="task_ckj_rhg_cy"/>
 
@@ -304,15 +296,11 @@ You have to specify how the assertion attributes are sent to SAP BTP in the asse
     <th valign="top">
 
     Assertion Attribute
-
-
     
     </th>
     <th valign="top">
 
     Principal Attribute
-
-
     
     </th>
     </tr>
@@ -320,15 +308,11 @@ You have to specify how the assertion attributes are sent to SAP BTP in the asse
     <td valign="top">
     
     \*
-
-
     
     </td>
     <td valign="top">
     
     \*
-
-
     
     </td>
     </tr>

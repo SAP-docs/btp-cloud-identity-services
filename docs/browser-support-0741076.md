@@ -19,7 +19,7 @@ Information on the supported browser version for the administration console, and
 
 [Supported Languages](supported-languages-0ea634d.md "Information on the supported languages for the administration console, and the end user screens of Identity Authentication.")
 
-[Accessibility Features in Identity Authentication](accessibility-features-in-identity-authentication-c7b544b.md "To optimize your experience of Identity Authentication, Identity Authentication tools provide features and settings that help you use the software efficiently.")
+[Accessibility Features in SAP Cloud Identity Services](accessibility-features-in-sap-cloud-identity-services-c7b544b.md "To optimize your experience of SAP Cloud Identity Services, SAP Cloud Identity Services tools provide features and settings that help you use the software efficiently.")
 
 <a name="concept_xst_gty_g5"/>
 
@@ -50,14 +50,10 @@ The end user screens, such as logon, forgot password, and so on, of the applicat
 
 Web Browser
 
-
-
 </th>
 <th valign="top">
 
 Supported Version
-
-
 
 </th>
 </tr>
@@ -66,14 +62,10 @@ Supported Version
 
 Microsoft Edge
 
-
-
 </td>
 <td valign="top">
 
 Latest Version
-
-
 
 </td>
 </tr>
@@ -82,14 +74,10 @@ Latest Version
 
 Microsoft Internet Explorer
 
-
-
 </td>
 <td valign="top">
 
 11 \(end of support: October 1, 2021\)
-
-
 
 </td>
 </tr>
@@ -98,14 +86,10 @@ Microsoft Internet Explorer
 
 Mozilla Firefox
 
-
-
 </td>
 <td valign="top">
 
 Latest Version
-
-
 
 </td>
 </tr>
@@ -114,14 +98,10 @@ Latest Version
 
 Google Chrome
 
-
-
 </td>
 <td valign="top">
 
 Latest Version
-
-
 
 </td>
 </tr>
@@ -130,14 +110,10 @@ Latest Version
 
 Safari
 
-
-
 </td>
 <td valign="top">
 
 Latest Version
-
-
 
 </td>
 </tr>
@@ -159,14 +135,10 @@ Latest Version
 
 Web Browser
 
-
-
 </th>
 <th valign="top">
 
 Supported Version
-
-
 
 </th>
 </tr>
@@ -175,14 +147,10 @@ Supported Version
 
 Mobile or iOS Safari
 
-
-
 </td>
 <td valign="top">
 
 Latest Version
-
-
 
 </td>
 </tr>
@@ -191,14 +159,10 @@ Latest Version
 
 Android Browser
 
-
-
 </td>
 <td valign="top">
 
 Latest Version
-
-
 
 </td>
 </tr>
@@ -207,14 +171,10 @@ Latest Version
 
 Google Chrome for Android
 
-
-
 </td>
 <td valign="top">
 
 Latest Version
-
-
 
 </td>
 </tr>
@@ -223,14 +183,10 @@ Latest Version
 
 Internet Explorer Mobile
 
-
-
 </td>
 <td valign="top">
 
 11 or higher
-
-
 
 </td>
 </tr>
@@ -239,14 +195,10 @@ Internet Explorer Mobile
 
 Blackberry Browser
 
-
-
 </td>
 <td valign="top">
 
 10.0 or higher
-
-
 
 </td>
 </tr>

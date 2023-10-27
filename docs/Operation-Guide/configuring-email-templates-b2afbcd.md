@@ -23,14 +23,10 @@ You can define a set of email templates with different language versions for the
 
 Email Template
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -39,14 +35,10 @@ Description
 
 Self-Registration
 
-
-
 </td>
 <td valign="top">
 
 This email template is used when a user registers via the Registration page. The user then receives an email with instructions about how to activate his or her account. The name of the email template used for this process is *Self-Registration*.
-
-
 
 </td>
 </tr>
@@ -55,14 +47,10 @@ This email template is used when a user registers via the Registration page. The
 
 On-Behalf Registration
 
-
-
 </td>
 <td valign="top">
 
 This email template is used when somebody else registers the user on his or her behalf via the import user option for Identity Authentication. In this case, the registered user receives an email with instructions about how to activate his or her account. The name of the email template used for this process is *On-Behalf Registration.* 
-
-
 
 </td>
 </tr>
@@ -71,14 +59,10 @@ This email template is used when somebody else registers the user on his or her 
 
 Invitation
 
-
-
 </td>
 <td valign="top">
 
 This email template is used when a user invites another user for registration via the Invitation REST API. In this case, the invitee receives an email with instructions about how to register. The name of the email template used for this process is *Invitation*.
-
-
 
 </td>
 </tr>
@@ -87,14 +71,10 @@ This email template is used when a user invites another user for registration vi
 
 Forgot Password
 
-
-
 </td>
 <td valign="top">
 
 This email template is used when a user wants to change his or her password by going through the Forgot Password page. In this case, the user receives an email with instructions about how to change his or her password. The name of the email template used for this process is *Forgot Password*.
-
-
 
 </td>
 </tr>
@@ -103,14 +83,10 @@ This email template is used when a user wants to change his or her password by g
 
 Locked Password
 
-
-
 </td>
 <td valign="top">
 
 This email template is used when a user locks his or her password by exceeding the allowed number of logon attempts. In this case, the user receives an email with instructions about how to log on. The name of the email template used for this process is *Locked Password*.
-
-
 
 </td>
 </tr>
@@ -118,8 +94,6 @@ This email template is used when a user locks his or her password by exceeding t
 <td valign="top">
 
 Reset Password
-
-
 
 </td>
 <td valign="top">
@@ -130,8 +104,6 @@ The name of the email template used for this process is *Reset Password*.
 
 The email template for *Reset Password* process are used when the process is triggered from the system, based on the password policy \(for example, the user's password length is not enough according to the password policy requirements\) and the user receive reset password notification email.
 
-
-
 </td>
 </tr>
 <tr>
@@ -139,14 +111,10 @@ The email template for *Reset Password* process are used when the process is tri
 
 Deactivate TOTP Device
 
-
-
 </td>
 <td valign="top">
 
 This email-template is used when a user has requested to receive a passcode via email. The passcode is used to deactivate the devices used to generate passcodes for TOTP Two-Factor Authentication. The name of the email template used for this process is *Deactivate TOTP Device*.
-
-
 
 </td>
 </tr>
@@ -155,14 +123,10 @@ This email-template is used when a user has requested to receive a passcode via 
 
 Email OTP Code
 
-
-
 </td>
 <td valign="top">
 
 This email-template is used when a user has requested to receive an 8-digit code via email. The user needs the code for two-factor authentecation.
-
-
 
 </td>
 </tr>
@@ -170,8 +134,6 @@ This email-template is used when a user has requested to receive an 8-digit code
 <td valign="top">
 
 Send Security Alert
-
-
 
 </td>
 <td valign="top">
@@ -191,7 +153,7 @@ To activate a user registration or to reset a password, users choose links sent 
 
 You can also define which languages each email template uses, and you can set custom versions for each language. You can set the following languages:
 
-Arabic, Azerbaijani, Bulgarian, Catalan, Chinese \(PRC\), Chinese \(Taiwan\), Croatian, Czech, Danish, Dutch, English \(United Kingdom\), English \(United States\), Estonian, Finnish, French \(Standard\), French \(Canada\), German \(Standard\), Greek, Hebrew, Hungarian, Italian, Japanese, Korean, Latvian, Norwegian, Polish, Portuguese \(Portugal\), Romanian, Russian, Serbian, Slovak, Slovenian, Spanish \(Spain\), Spanish \(Mexico\), Swedish, Turkish, Ukrainian, Welsh.
+Arabic, Azerbaijani, Bulgarian, Catalan, Chinese \(PRC\), Chinese \(Taiwan\), Croatian, Czech, Danish, Dutch, English \(United Kingdom\), English \(United States\), Estonian, Finnish, French \(Standard\), French \(Canada\), German \(Standard\), Greek, Hebrew, Hungarian, Italian, Japanese, Korean, Latvian, Malay, Norwegian, Polish, Portuguese \(Portugal\), Romanian, Russian, Serbian, Slovak, Slovenian, Spanish \(Spain\), Spanish \(Mexico\), Swedish, Thai, Turkish, Ukrainian, Vietnamese, Welsh.
 
 
 

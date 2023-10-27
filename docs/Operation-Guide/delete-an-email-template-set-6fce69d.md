@@ -32,15 +32,11 @@ If you delete a language version for specific application process, users receive
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Result
-
-
     
     </th>
     </tr>
@@ -48,15 +44,11 @@ If you delete a language version for specific application process, users receive
     <td valign="top">
     
     **Select the tab signifying the process, and delete the respective language version of the template. Repeat the operation as many times as necessary.**
-
-
     
     </td>
     <td valign="top">
     
     Deletes a language version for specific application process.
-
-
     
     </td>
     </tr>
@@ -64,15 +56,11 @@ If you delete a language version for specific application process, users receive
     <td valign="top">
     
     Choose the *Delete* button at the lower right corner of the screen.
-
-
     
     </td>
     <td valign="top">
     
     Deletes the entire email template set
-
-
     
     </td>
     </tr>

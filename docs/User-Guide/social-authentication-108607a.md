@@ -40,14 +40,10 @@ Identity Authentication has access to the following data from the social provide
 
 Social Identity Provider
 
-
-
 </th>
 <th valign="top">
 
 Data Used by Identity Authentication 
-
-
 
 </th>
 </tr>
@@ -56,14 +52,10 @@ Data Used by Identity Authentication
 
 Apple
 
-
-
 </td>
 <td valign="top">
 
 ID of your user - used to link your Apple account with your Identity Authentication account
-
-
 
 </td>
 </tr>
@@ -71,8 +63,6 @@ ID of your user - used to link your Apple account with your Identity Authenticat
 <td valign="top">
 
 Facebook
-
-
 
 </td>
 <td valign="top">
@@ -91,8 +81,6 @@ Facebook
 
 Google
 
-
-
 </td>
 <td valign="top">
 
@@ -110,8 +98,6 @@ Google
 
 LinkedIn
 
-
-
 </td>
 <td valign="top">
 
@@ -128,8 +114,6 @@ LinkedIn
 <td valign="top">
 
 Twitter
-
-
 
 </td>
 <td valign="top">

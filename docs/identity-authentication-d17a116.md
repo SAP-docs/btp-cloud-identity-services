@@ -9,28 +9,20 @@
 
 ![](images/Getting_Started_5f9d97d.png)
 
-
-
 </td>
 <td valign="top">
 
 **Getting Started**
-
-
 
 </td>
 <td valign="top">
 
 ![](images/What_s_New_b9d132a.png)
 
-
-
 </td>
 <td valign="top">
 
 **What's New**
-
-
 
 </td>
 </tr>
@@ -38,8 +30,6 @@
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -48,21 +38,15 @@
 
 [Initial Setup](initial-setup-31af7da.md)
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 [What's New for Identity Authentication](what-s-new-for-identity-authentication-de21efe.md)
-
-
 
 </td>
 </tr>
@@ -71,28 +55,20 @@
 
 ![](images/Scenarios_e9e9154.png)
 
-
-
 </td>
 <td valign="top">
 
 **Scenarios**
-
-
 
 </td>
 <td valign="top">
 
 ![](images/Resources_cd1e6ea.png)
 
-
-
 </td>
 <td valign="top">
 
 **Resources**
-
-
 
 </td>
 </tr>
@@ -100,8 +76,6 @@
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -112,14 +86,10 @@
 
 [Business-to-Employee Scenario](business-to-employee-scenario-3aecb4c.md)
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 <td valign="top">
@@ -147,8 +117,6 @@
 [Legal Disclosure](http://www.sap.com/corporate-en/about/legal/impressum.html)
 
 [Disclaimer](http://help.sap.com/disclaimer-full)
-
-
 
 </td>
 </tr>

@@ -51,6 +51,9 @@ You have chosen a corporate identity provider as default. For more information, 
 
 7.  Pass the parameter `idp=<idp_name>` with the SAML 2.0 authentication request in the body or url to use this Identity Authentication tenant for authentication.
 
+    > ### Caution:  
+    > It depends on service provider whether the parameter can be passed in body or URL. Identity Authentication doesn't control how the SAML 2.0 request is sent.
+
     > ### Note:  
     > The `idp_name` must match the name of the identity provider, configured in the *Name* field under *Tenant Settings*. For more information, see [Tenant SAML 2.0 Configuration](tenant-saml-2-0-configuration-e81a19b.md).
 

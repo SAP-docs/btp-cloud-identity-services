@@ -33,35 +33,25 @@ The following figure illustrates a logout scenario with multiple applications an
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Parameter Type
-
-
 
 </th>
 </tr>
@@ -70,35 +60,25 @@ Parameter Type
 
 `id_token_hint`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Previously issued `id_token`.
 
-
-
 </td>
 <td valign="top">
 
 Query
-
-
 
 </td>
 </tr>
@@ -107,21 +87,15 @@ Query
 
 `post_logout_redirect_uri`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 string
-
-
 
 </td>
 <td valign="top">
@@ -138,8 +112,6 @@ The redirection URI where the user will be forwarded after logout.
 
 Query
 
-
-
 </td>
 </tr>
 <tr>
@@ -147,35 +119,25 @@ Query
 
 `state`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Used by the application to maintain state between the logout request and the callback to the endpoint specified by the `post_logout_redirect_uri` query parameter. If included in the logout request, the identity provider passes this value back to the application using the `state` query parameter when redirecting the browser back to the application.
 
-
-
 </td>
 <td valign="top">
 
 Query
-
-
 
 </td>
 </tr>
@@ -184,35 +146,25 @@ Query
 
 `client_id`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Used to identify the corresponding Identity Authentication application.
 
-
-
 </td>
 <td valign="top">
 
 Query
-
-
 
 </td>
 </tr>
@@ -221,35 +173,25 @@ Query
 
 `app_tid`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Required for multitenant scenarios to identify corresponding Identity Authentication application.
 
-
-
 </td>
 <td valign="top">
 
 Query
-
-
 
 </td>
 </tr>
@@ -298,21 +240,15 @@ https://my-tenant.ondemand.com/oauth2/logout?state=state
 
 Code
 
-
-
 </th>
 <th valign="top">
 
 Reason
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -321,14 +257,10 @@ Description
 
 200 OK
 
-
-
 </td>
 <td valign="top">
 
 Successful operation.
-
-
 
 </td>
 <td valign="top">
@@ -337,8 +269,6 @@ User session is terminated.
 
 If `post_logout_redirect_uri` isn't provided, then the user is redirected to the profile page.
 
-
-
 </td>
 </tr>
 <tr>
@@ -346,21 +276,15 @@ If `post_logout_redirect_uri` isn't provided, then the user is redirected to the
 
 400 Bad Request
 
-
-
 </td>
 <td valign="top">
 
 Missing or wrong parameter.
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>

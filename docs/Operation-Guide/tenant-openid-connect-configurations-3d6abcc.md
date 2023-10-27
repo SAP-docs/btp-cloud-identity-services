@@ -39,14 +39,10 @@ The following table lists the token policy options for OIDC applications.
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -54,8 +50,6 @@ Description
 <td valign="top">
 
 *Refresh Token* 
-
-
 
 </td>
 <td valign="top">
@@ -82,16 +76,12 @@ The default value is 12 hours.
 
 *Access / ID Token* 
 
-
-
 </td>
 <td valign="top">
 
 Sets the access and id\_token lifetime issued by Identity Authentication. The value can range from 1 to 60 minutes.
 
 The default value is 60 minutes.
-
-
 
 </td>
 </tr>
@@ -100,16 +90,12 @@ The default value is 60 minutes.
 
 *Max sessions per user* 
 
-
-
 </td>
 <td valign="top">
 
 Determines the maximum number of tokens that the service issues for the same session in parallel. Imagine you’re logged on to the application through a web interface and a command-line interface in parallel. Then you'd set this parameter to 2. The value can range from 1 to 10.
 
 The default value is 1.
-
-
 
 </td>
 </tr>
@@ -148,15 +134,11 @@ To view or change the tenant OpenID Connect configurations, proceed as follows:
     <th valign="top">
 
     Name
-
-
     
     </th>
     <th valign="top">
 
     Notes
-
-
     
     </th>
     </tr>
@@ -164,15 +146,11 @@ To view or change the tenant OpenID Connect configurations, proceed as follows:
     <td valign="top">
     
     Default Type name format
-
-
     
     </td>
     <td valign="top">
     
     <tenant ID\>.accounts.ondemand.com
-
-
     
     </td>
     </tr>
@@ -180,15 +158,11 @@ To view or change the tenant OpenID Connect configurations, proceed as follows:
     <td valign="top">
     
     URL Type name format
-
-
     
     </td>
     <td valign="top">
     
     https://<tenant ID\>.accounts.ondemand.com
-
-
     
     </td>
     </tr>
@@ -196,15 +170,11 @@ To view or change the tenant OpenID Connect configurations, proceed as follows:
     <td valign="top">
     
     Common domain
-
-
     
     </td>
     <td valign="top">
     
     https://<tenant ID\>.accounts.cloud.sap
-
-
     
     </td>
     </tr>
@@ -212,15 +182,11 @@ To view or change the tenant OpenID Connect configurations, proceed as follows:
     <td valign="top">
     
     Custom Domain \(if configured\)
-
-
     
     </td>
     <td valign="top">
     
     <custom domain host\>
-
-
     
     </td>
     </tr>
@@ -228,15 +194,11 @@ To view or change the tenant OpenID Connect configurations, proceed as follows:
     <td valign="top">
     
     Tenants in China region
-
-
     
     </td>
     <td valign="top">
     
     https:// <tenant ID\>.accounts.sapcloud.cn
-
-
     
     </td>
     </tr>

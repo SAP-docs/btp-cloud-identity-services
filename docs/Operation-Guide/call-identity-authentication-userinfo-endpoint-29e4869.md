@@ -29,21 +29,15 @@ The client makes a request to the UserInfo endpoint using the access token obtai
 
 Header
 
-
-
 </th>
 <th valign="top">
 
 Required
 
-
-
 </th>
 <th valign="top">
 
 Values
-
-
 
 </th>
 </tr>
@@ -52,21 +46,15 @@ Values
 
 `Authorization`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Bearer <access\_token\>
-
-
 
 </td>
 </tr>
@@ -97,21 +85,15 @@ GET /oauth2/userinfo
 
 Code
 
-
-
 </th>
 <th valign="top">
 
 Reason
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -120,21 +102,15 @@ Description
 
 200
 
-
-
 </td>
 <td valign="top">
 
 Successful operation.
 
-
-
 </td>
 <td valign="top">
 
 Returns information about the user.
-
-
 
 </td>
 </tr>
@@ -143,21 +119,15 @@ Returns information about the user.
 
 403
 
-
-
 </td>
 <td valign="top">
 
 Forbidden
 
-
-
 </td>
 <td valign="top">
 
 Returns an error with error description.
-
-
 
 </td>
 </tr>

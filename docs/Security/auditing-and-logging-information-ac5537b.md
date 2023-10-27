@@ -13,28 +13,20 @@ Here you can find a list of the security events that are logged by Identity Auth
 
 Event grouping
 
-
-
 </th>
 <th valign="top">
 
 What events are logged
-
-
 
 </th>
 <th valign="top">
 
 How to identify related log events
 
-
-
 </th>
 <th valign="top">
 
 Additional information
-
-
 
 </th>
 </tr>
@@ -43,21 +35,15 @@ Additional information
 
 Authentication
 
-
-
 </td>
 <td valign="top">
 
 All authentication and authorization checks.
 
-
-
 </td>
 <td valign="top">
 
 `audit.authentication`
-
-
 
 </td>
 <td valign="top" rowspan="4">
@@ -101,21 +87,15 @@ Each audit log entry consists of the following key-value pairs:
 
 Configuration
 
-
-
 </td>
 <td valign="top">
 
 All property/properties of an entity that presents kind of configuration changes that affect the system behavior.
 
-
-
 </td>
 <td valign="top">
 
 `audit.configuration` 
-
-
 
 </td>
 </tr>
@@ -124,21 +104,15 @@ All property/properties of an entity that presents kind of configuration changes
 
 Data Change
 
-
-
 </td>
 <td valign="top">
 
 All attribute/attributes of an entity changes.
 
-
-
 </td>
 <td valign="top">
 
 `audit.data-change` 
-
-
 
 </td>
 </tr>
@@ -147,21 +121,15 @@ All attribute/attributes of an entity changes.
 
 Change Logs
 
-
-
 </td>
 <td valign="top">
 
 All attribute/attributes of change logs.
 
-
-
 </td>
 <td valign="top">
 
 audit.config-changе
-
-
 
 </td>
 </tr>

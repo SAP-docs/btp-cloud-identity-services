@@ -54,15 +54,11 @@ To configure a trusted X.509 certificate, proceed as follows:
     <th valign="top">
 
     Certificate Options
-
-
     
     </th>
     <th valign="top">
 
     Notes
-
-
     
     </th>
     </tr>
@@ -70,15 +66,11 @@ To configure a trusted X.509 certificate, proceed as follows:
     <td valign="top">
     
     **Upload Certificate**
-
-
     
     </td>
     <td valign="top">
     
     The uploaded certificates must be in `PEM` format. Use `.cer` or `.crt` files.
-
-
     
     </td>
     </tr>
@@ -86,15 +78,11 @@ To configure a trusted X.509 certificate, proceed as follows:
     <td valign="top">
     
     **Root Certificate**
-
-
     
     </td>
     <td valign="top">
     
     Insert the public key in the text field.
-
-
     
     </td>
     </tr>

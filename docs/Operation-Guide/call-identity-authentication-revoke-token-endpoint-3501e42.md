@@ -27,21 +27,15 @@ The token revocation endpoint is implemented according to [RFC 7009 OAuth 2.0 To
 
 Header
 
-
-
 </th>
 <th valign="top">
 
 Required
 
-
-
 </th>
 <th valign="top">
 
 Values
-
-
 
 </th>
 </tr>
@@ -50,21 +44,15 @@ Values
 
 `Content-Type`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 application/x-www-form-urlencoded
-
-
 
 </td>
 </tr>
@@ -73,14 +61,10 @@ application/x-www-form-urlencoded
 
 `Authentication`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -113,35 +97,25 @@ Yes
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Parameter Type
-
-
 
 </th>
 </tr>
@@ -150,35 +124,25 @@ Parameter Type
 
 `token`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Must contain the JWT or opaque token from the issuer.
 
-
-
 </td>
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>
@@ -187,35 +151,25 @@ Path
 
 `token_type_hint`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>
@@ -224,21 +178,15 @@ Path
 
 `client_id`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 string
-
-
 
 </td>
 <td valign="top">
@@ -254,8 +202,6 @@ Used to identify the corresponding Identity Authentication application.
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -286,14 +232,10 @@ Token is successfully revoked.
 
 Code
 
-
-
 </th>
 <th valign="top">
 
 Reason
-
-
 
 </th>
 </tr>
@@ -302,14 +244,10 @@ Reason
 
 200 OK
 
-
-
 </td>
 <td valign="top">
 
 Successful operation.
-
-
 
 </td>
 </tr>
@@ -318,14 +256,10 @@ Successful operation.
 
 401 Unauthorized
 
-
-
 </td>
 <td valign="top">
 
 The client is not authenticated.
-
-
 
 </td>
 </tr>

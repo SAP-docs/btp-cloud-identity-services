@@ -79,15 +79,11 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -115,15 +111,11 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     The entity ID of the service provider.
-
-
     
     </td>
     </tr>
@@ -131,8 +123,6 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     <td valign="top">
     
     Assertion Consumer Service Endpoint
-
-
     
     </td>
     <td valign="top">
@@ -152,8 +142,6 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     <td valign="top">
     
     Single Logout Endpoint
-
-
     
     </td>
     <td valign="top">
@@ -178,8 +166,6 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     <td valign="top">
     
     Signing Certificate
-
-
     
     </td>
     <td valign="top">
@@ -216,15 +202,11 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Default Configuration
-
-
     
     </th>
     </tr>
@@ -232,15 +214,11 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     <td valign="top">
     
     *Sign assertions*
-
-
     
     </td>
     <td valign="top">
     
     *On*
-
-
     
     </td>
     </tr>
@@ -248,15 +226,11 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     <td valign="top">
     
     *Sign authentication responses*
-
-
     
     </td>
     <td valign="top">
     
     *Off*
-
-
     
     </td>
     </tr>
@@ -264,15 +238,11 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     <td valign="top">
     
     *Sign single logout messages*
-
-
     
     </td>
     <td valign="top">
     
     *On*
-
-
     
     </td>
     </tr>
@@ -280,15 +250,11 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     <td valign="top">
     
     *Require signed authentication requests*
-
-
     
     </td>
     <td valign="top">
     
     *Off*
-
-
     
     </td>
     </tr>
@@ -296,15 +262,11 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     <td valign="top">
     
     *Require signed single logout messages*
-
-
     
     </td>
     <td valign="top">
     
     *On*
-
-
     
     </td>
     </tr>

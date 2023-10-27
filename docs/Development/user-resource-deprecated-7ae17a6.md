@@ -43,21 +43,15 @@ The user resource method of the Identity Authentication implementation of the SC
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -66,21 +60,15 @@ Description
 
 `path`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 The current path parameter is id.
-
-
 
 </td>
 </tr>
@@ -188,14 +176,10 @@ The response contains user object with the following user attributes:
     > 
     > Value
     > 
-    > 
-    > 
     > </th>
     > <th valign="top">
     > 
     > Meaning
-    > 
-    > 
     > 
     > </th>
     > </tr>
@@ -204,14 +188,10 @@ The response contains user object with the following user attributes:
     > 
     > 39
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > Corporate User Store
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -220,14 +200,10 @@ The response contains user object with the following user attributes:
     > 
     > 100
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > SuccessFactors
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -236,14 +212,10 @@ The response contains user object with the following user attributes:
     > 
     > 101
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > SAP Learning Management
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -252,14 +224,10 @@ The response contains user object with the following user attributes:
     > 
     > 102
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > SAP Fieldglass
-    > 
-    > 
     > 
     > </td>
     > </tr>

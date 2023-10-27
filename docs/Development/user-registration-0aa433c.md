@@ -33,21 +33,15 @@ You need to set up the authentication type to access the API. For more informati
 
 Header
 
-
-
 </th>
 <th valign="top">
 
 Required
 
-
-
 </th>
 <th valign="top">
 
 Values
-
-
 
 </th>
 </tr>
@@ -56,21 +50,15 @@ Values
 
 `Basic Authorization`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 For more information, see [API Authentication](../Operation-Guide/api-authentication-9d200d5.md).
-
-
 
 </td>
 </tr>
@@ -79,21 +67,15 @@ For more information, see [API Authentication](../Operation-Guide/api-authentica
 
 `Content-Type`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 application/x-www-form-urlencoded
-
-
 
 </td>
 </tr>
@@ -110,35 +92,25 @@ application/x-www-form-urlencoded
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Parameter Type
-
-
 
 </th>
 </tr>
@@ -147,21 +119,15 @@ Parameter Type
 
 `email`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
@@ -178,8 +144,6 @@ The email of the user you register. The email must be unique.
 
 Request body
 
-
-
 </td>
 </tr>
 <tr>
@@ -187,35 +151,25 @@ Request body
 
 `user_profile_id`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 The user ID
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -224,35 +178,25 @@ Request body
 
 `login_name`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 The logon name of the user
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -261,35 +205,25 @@ Request body
 
 `applicationId`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 The ID of the subscribed application. The user is created for the application with the provided ID.
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -298,35 +232,25 @@ Request body
 
 `first_name`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 The first name of the user you register. The allowed maximum length for the first name is 32 characters.
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -335,35 +259,25 @@ Request body
 
 `last_name`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 The last name of the user you register. The allowed maximum length for the last name is 64 characters.
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -372,21 +286,15 @@ Request body
 
 `language`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
@@ -395,14 +303,10 @@ The preferred language for the activation email of the user you register. The us
 
 Must be a string value specified by a two or four-letter code in one of the following formats: XX, xx, xx-XX or xx\_XX. Otherwise the activation email is in English.
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -411,35 +315,25 @@ Request body
 
 `valid_from`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 The *valid from* date
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -448,35 +342,25 @@ Request body
 
 `valid_to`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 The *valid until* date
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -485,35 +369,25 @@ Request body
 
 `name_id`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 The name ID of the user you register.
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -522,21 +396,15 @@ Request body
 
 `source_url`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
@@ -553,8 +421,6 @@ The URL to the public page of the application where the Identity Authentication 
 
 Request body
 
-
-
 </td>
 </tr>
 <tr>
@@ -562,35 +428,25 @@ Request body
 
 `target_url`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 The URL to the application page that the user should be redirected to after he or she has completed account activation. If `target_url` is not provided, the user is redirected to the home URL configured for the service provider. For more information how to configure *Home URL*, see [Configure an Application's Home URL](../Operation-Guide/configure-an-application-s-home-url-be6d6f2.md).
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -599,21 +455,15 @@ Request body
 
 `send_email`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 Boolean
-
-
 
 </td>
 <td valign="top">
@@ -635,8 +485,6 @@ Values: true \(default value\), false
 
 Request body
 
-
-
 </td>
 </tr>
 <tr>
@@ -644,35 +492,25 @@ Request body
 
 `spCustomAttribute1`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Custom attributes are used to store additional information for the SP users. It is allowed to pass five customer attributes for a user
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -681,35 +519,25 @@ Request body
 
 `spCustomAttribute2`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Custom attributes are used to store additional information for the SP users. It is allowed to pass five customer attributes for a user
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -718,35 +546,25 @@ Request body
 
 `spCustomAttribute3`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Custom attributes are used to store additional information for the SP users. It is allowed to pass five customer attributes for a user
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -755,35 +573,25 @@ Request body
 
 `spCustomAttribute4`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Custom attributes are used to store additional information for the SP users. It is allowed to pass five customer attributes for a user
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -792,35 +600,25 @@ Request body
 
 spCustomAttribute5
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Custom attributes are used to store additional information for the SP users. It is allowed to pass five customer attributes for a user
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -863,21 +661,15 @@ name_id=johns&user_profile_id=p987654&email=john.smith@sap.com&first_name=John&l
 
 Code
 
-
-
 </th>
 <th valign="top">
 
 Reason
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -886,21 +678,15 @@ Description
 
 201
 
-
-
 </td>
 <td valign="top">
 
 Created
 
-
-
 </td>
 <td valign="top">
 
 The user is successfully created.
-
-
 
 </td>
 </tr>
@@ -909,21 +695,15 @@ The user is successfully created.
 
 400
 
-
-
 </td>
 <td valign="top">
 
 Bad Request
 
-
-
 </td>
 <td valign="top">
 
 The user for whom you are trying to create an SP user is `inactive`.
-
-
 
 </td>
 </tr>
@@ -932,21 +712,15 @@ The user for whom you are trying to create an SP user is `inactive`.
 
 409
 
-
-
 </td>
 <td valign="top">
 
 Conflict
 
-
-
 </td>
 <td valign="top">
 
 The SP user already exists.
-
-
 
 </td>
 </tr>

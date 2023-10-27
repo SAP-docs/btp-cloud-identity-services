@@ -40,21 +40,15 @@ This document explains how to call the authorize endpoint and what are the autho
 
 Header
 
-
-
 </th>
 <th valign="top">
 
 Required
 
-
-
 </th>
 <th valign="top">
 
 Values
-
-
 
 </th>
 </tr>
@@ -63,21 +57,15 @@ Values
 
 `Content-Type`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 application/x-www-form-urlencoded
-
-
 
 </td>
 </tr>
@@ -86,14 +74,10 @@ application/x-www-form-urlencoded
 
 `Authentication`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -125,35 +109,25 @@ Yes
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Additional Information
 
-
-
 </th>
 <th valign="top">
 
 Parameter Type
-
-
 
 </th>
 </tr>
@@ -162,35 +136,25 @@ Parameter Type
 
 `redirect_uri`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 [Configure OpenID Connect Application](configure-openid-connect-application-8a0aa2e.md).
 
-
-
 </td>
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>
@@ -199,35 +163,25 @@ Path
 
 `response_type`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 The supported value is `code`
 
-
-
 </td>
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>
@@ -236,21 +190,15 @@ Path
 
 `scope`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 string
-
-
 
 </td>
 <td valign="top">
@@ -276,8 +224,6 @@ The supported values are:
 
 Path
 
-
-
 </td>
 </tr>
 <tr>
@@ -285,35 +231,25 @@ Path
 
 `client_id`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 The user ID configured for basic authentication for the application. For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
 
-
-
 </td>
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>
@@ -322,35 +258,25 @@ Path
 
 `state`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Free text.
 
-
-
 </td>
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>
@@ -359,35 +285,25 @@ Path
 
 `nonce`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Free text.
 
-
-
 </td>
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>
@@ -396,21 +312,15 @@ Path
 
 `login_hint`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 string
-
-
 
 </td>
 <td valign="top">
@@ -419,14 +329,10 @@ The `login_hint` parameter helps the user when he or she is known to the service
 
 Supported values are the allowed logon identifiers for the users. The options are *User ID*, *Login Name*, and *Email* \(For SAML 2.0\). For more information, see [Configure Allowed Logon Identifiers](configure-allowed-logon-identifiers-3adf1ff.md) .
 
-
-
 </td>
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>
@@ -435,21 +341,15 @@ Path
 
 `code_challenge`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 string
-
-
 
 </td>
 <td valign="top">
@@ -466,8 +366,6 @@ Client created code.
 
 Path
 
-
-
 </td>
 </tr>
 <tr>
@@ -475,35 +373,25 @@ Path
 
 `code_challenge_method`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Code verifier transformation method is "S256" or "plain".
 
-
-
 </td>
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>
@@ -512,35 +400,25 @@ Path
 
 `refresh_expiry`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Reduces the expiration of a refresh token. It's useful if your application is called from mobile and web applications, and both have different session requirements. If you set the token lifetime to 0, you won't receive a `refresh_token` in response.
 
-
-
 </td>
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>
@@ -549,21 +427,15 @@ Path
 
 `logout_uri`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 string
-
-
 
 </td>
 <td valign="top">
@@ -578,8 +450,6 @@ string
 
 Path
 
-
-
 </td>
 </tr>
 <tr>
@@ -587,21 +457,15 @@ Path
 
 `prompt`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 string
-
-
 
 </td>
 <td valign="top">
@@ -626,8 +490,6 @@ Supported values are:
 
 Path
 
-
-
 </td>
 </tr>
 <tr>
@@ -635,35 +497,25 @@ Path
 
 `app_tid`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Reserved.
 
-
-
 </td>
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>
@@ -696,14 +548,10 @@ https://my-tenant.ondemand.com/oauth2/authorize?response_type=code&scope=openid&
 
 Header
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -711,8 +559,6 @@ Description
 <td valign="top">
 
 `code`
-
-
 
 </td>
 <td valign="top">
@@ -739,21 +585,15 @@ The `code` is generated by Identity Authentication and is returned in the URL as
 
 Code
 
-
-
 </th>
 <th valign="top">
 
 Reason
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -762,14 +602,10 @@ Description
 
 302 Found
 
-
-
 </td>
 <td valign="top">
 
 Successful operation.
-
-
 
 </td>
 <td valign="top">
@@ -788,21 +624,15 @@ Additionally provides a URL in the header field Location.
 
 400 Bad Request
 
-
-
 </td>
 <td valign="top">
 
 Missing or wrong parameter
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>

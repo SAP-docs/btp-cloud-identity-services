@@ -36,28 +36,20 @@ You have the following options for a password policy:
 
 Requirement
 
-
-
 </th>
 <th valign="top">
 
 Standard
-
-
 
 </th>
 <th valign="top">
 
 Enterprise
 
-
-
 </th>
 <th valign="top">
 
 Custom
-
-
 
 </th>
 </tr>
@@ -65,8 +57,6 @@ Custom
 <td valign="top">
 
 Content of password
-
-
 
 </td>
 <td valign="top">
@@ -123,28 +113,20 @@ Session time limit
 
 Indicates when the current session expires.
 
+</td>
+<td valign="top">
 
+Yes, 12 hours
 
 </td>
 <td valign="top">
 
 Yes, 12 hours
 
-
-
 </td>
 <td valign="top">
 
 Yes, 12 hours
-
-
-
-</td>
-<td valign="top">
-
-Yes, 12 hours
-
-
 
 </td>
 </tr>
@@ -155,28 +137,20 @@ Yes, 12 hours
 
 Indicates whether the browser can store a cookie with the credentials.
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
 
 </td>
 </tr>
@@ -187,28 +161,20 @@ Forgot password deactivation period
 
 Indicates the period during which users can initiate the number of forgot password emails specified by the forgot password counter.
 
+</td>
+<td valign="top">
 
+Yes, 24 hours
 
 </td>
 <td valign="top">
 
 Yes, 24 hours
 
-
-
 </td>
 <td valign="top">
 
 Yes, 24 hours
-
-
-
-</td>
-<td valign="top">
-
-Yes, 24 hours
-
-
 
 </td>
 </tr>
@@ -219,28 +185,20 @@ Forgot password counter
 
 Indicates how many times a user can initiate forgot password emails during the deactivation period. For example, a user can initiate up to 3 forgot password emails within 24 hours.
 
+</td>
+<td valign="top">
 
+Yes, 3
 
 </td>
 <td valign="top">
 
 Yes, 3
 
-
-
 </td>
 <td valign="top">
 
 Yes, 3
-
-
-
-</td>
-<td valign="top">
-
-Yes, 3
-
-
 
 </td>
 </tr>
@@ -251,28 +209,20 @@ Minimum password age
 
 Shows the minimum lifetime of a password before it can be changed.
 
-
-
 </td>
 <td valign="top">
 
 Unlimited
-
-
 
 </td>
 <td valign="top">
 
 Yes, 24 hours
 
-
-
 </td>
 <td valign="top">
 
 Yes, minimum 1 hour, maximum 48 hours
-
-
 
 </td>
 </tr>
@@ -281,28 +231,20 @@ Yes, minimum 1 hour, maximum 48 hours
 
 Maximum failed logon attempts
 
-
-
 </td>
 <td valign="top">
 
 Yes, 5
 
-
-
 </td>
 <td valign="top">
 
 Yes, 5
-
-
 
 </td>
 <td valign="top">
 
 Yes, minimum 1, maximum 6, default choice 5
-
-
 
 </td>
 </tr>
@@ -313,21 +255,15 @@ Password locked period
 
 Indicates how long a password is locked for. Indicates how many logon attempts are allowed before the user password is locked.
 
-
-
 </td>
 <td valign="top">
 
 Yes, 1 hour
 
-
-
 </td>
 <td valign="top">
 
 Yes, 1 hour
-
-
 
 </td>
 <td valign="top">
@@ -351,21 +287,15 @@ Maximum password age
 
 Shows the maximum lifetime of a password before it has to be changed.
 
-
-
 </td>
 <td valign="top">
 
 Unlimited
 
-
-
 </td>
 <td valign="top">
 
 Yes, 6 months
-
-
 
 </td>
 <td valign="top">
@@ -373,8 +303,6 @@ Yes, 6 months
 Yes, minimum 1 month, maximum *unlimited*
 
 Possible values: 1 month, 2 months, … 6 months; 1 year, 2 years, 3 years; unlimited
-
-
 
 </td>
 </tr>
@@ -385,28 +313,20 @@ Password history
 
 Indicates whether a password history is retained, and how many passwords from the history are retained.
 
-
-
 </td>
 <td valign="top">
 
 Unlimited
-
-
 
 </td>
 <td valign="top">
 
 Yes, the last 5 passwords are retained.
 
-
-
 </td>
 <td valign="top">
 
 Yes, minimum the last 5 passwords, and maximum the last 20 passwords are retained.
-
-
 
 </td>
 </tr>
@@ -417,28 +337,20 @@ Maximum unused period
 
 Indicates how long the system retains unused passwords for.
 
-
-
 </td>
 <td valign="top">
 
 Unlimited
-
-
 
 </td>
 <td valign="top">
 
 Yes, 6 months
 
-
-
 </td>
 <td valign="top">
 
 Yes, minimum 1 month, maximum 6 months
-
-
 
 </td>
 </tr>
@@ -449,14 +361,10 @@ Password behavior
 
 Indicates possibility to force the user to reset or change password if the applied password policy requires stronger password than the current one.
 
-
-
 </td>
 <td valign="top">
 
 Not Applicable
-
-
 
 </td>
 <td valign="top">

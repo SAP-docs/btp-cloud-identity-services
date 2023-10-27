@@ -17,14 +17,10 @@ The maximum number of log entries is 1000. The search criteria you can choose in
 
 Criteria
 
-
-
 </th>
 <th valign="top">
 
 Notes
-
-
 
 </th>
 </tr>
@@ -32,8 +28,6 @@ Notes
 <td valign="top">
 
 Time period
-
-
 
 </td>
 <td valign="top">
@@ -59,8 +53,6 @@ The time period is in Coordinated Universal Time \(UTC\).
 <td valign="top">
 
 Severity
-
-
 
 </td>
 <td valign="top">

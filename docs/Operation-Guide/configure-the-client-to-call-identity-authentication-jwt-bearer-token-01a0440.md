@@ -30,21 +30,15 @@ With the JWT bearer flow you can use an `id_token` ID from an application which 
 
 Header
 
-
-
 </th>
 <th valign="top">
 
 Required
 
-
-
 </th>
 <th valign="top">
 
 Values
-
-
 
 </th>
 </tr>
@@ -53,21 +47,15 @@ Values
 
 `Content-Type`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 application/x-www-form-urlencoded
-
-
 
 </td>
 </tr>
@@ -76,14 +64,10 @@ application/x-www-form-urlencoded
 
 `Authentication`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -115,35 +99,25 @@ Yes
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Additional Information
 
-
-
 </th>
 <th valign="top">
 
 Parameter Type
-
-
 
 </th>
 </tr>
@@ -152,35 +126,25 @@ Parameter Type
 
 `grant_type`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 `urn:ietf:params:oauth:grant-type:jwt-bearer`
 
-
-
 </td>
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>
@@ -189,35 +153,25 @@ Path
 
 `client_id`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 The user ID configured for basic authentication for the application. For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
 
-
-
 </td>
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>
@@ -226,35 +180,25 @@ Path
 
 `client_secret`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 The client secret configured for basic authentication for the application. For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
 
-
-
 </td>
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>
@@ -263,21 +207,15 @@ Path
 
 `assertion`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 string
-
-
 
 </td>
 <td valign="top">
@@ -308,8 +246,6 @@ string
 
 Path
 
-
-
 </td>
 </tr>
 <tr>
@@ -317,35 +253,25 @@ Path
 
 `refresh_expiry`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Reduces the expiration of a refresh token. It's useful if your application is called from mobile and web applications, and both have different session requirements. If you set the token lifetime to 0, you won't receive a `refresh_token` in response.
 
-
-
 </td>
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>
@@ -354,35 +280,25 @@ Path
 
 `token_format`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 The `token_format` can be set to `opaque` to retrieve an opaque access token or to `jwt` to retrieve a JWT based access token. If not set, the current defaults per grant type are used.
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -391,35 +307,25 @@ Request body
 
 `app_tid`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Reserved.
 
-
-
 </td>
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>

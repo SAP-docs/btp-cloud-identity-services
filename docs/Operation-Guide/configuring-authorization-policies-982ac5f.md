@@ -56,21 +56,15 @@ An authorization policy is basically a collection of rules, which are applied to
 
 Task
 
-
-
 </th>
 <th valign="top">
 
 User Role
 
-
-
 </th>
 <th valign="top">
 
 Tool
-
-
 
 </th>
 </tr>
@@ -79,21 +73,15 @@ Tool
 
 Define authorization policies
 
-
-
 </td>
 <td valign="top">
 
 Developer
 
-
-
 </td>
 <td valign="top">
 
 Development environment
-
-
 
 </td>
 </tr>
@@ -102,21 +90,15 @@ Development environment
 
 Deploy authorization policies with the application
 
-
-
 </td>
 <td valign="top">
 
 Developer
 
-
-
 </td>
 <td valign="top">
 
 Development environment
-
-
 
 </td>
 </tr>
@@ -125,21 +107,15 @@ Development environment
 
 Modify authorization policies
 
-
-
 </td>
 <td valign="top">
 
 Administrator
 
-
-
 </td>
 <td valign="top">
 
 Administration console
-
-
 
 </td>
 </tr>
@@ -148,21 +124,15 @@ Administration console
 
 Assign authorization policies to users
 
-
-
 </td>
 <td valign="top">
 
 Administrator
 
-
-
 </td>
 <td valign="top">
 
 Administration console
-
-
 
 </td>
 </tr>
@@ -171,21 +141,15 @@ Administration console
 
 Delete authorization policies
 
-
-
 </td>
 <td valign="top">
 
 Administrator
 
-
-
 </td>
 <td valign="top">
 
 Administration console
-
-
 
 </td>
 </tr>
@@ -207,14 +171,10 @@ We distinguish between different types of authorization policies. You recognize 
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -223,14 +183,10 @@ Description
 
 Base authorization policy
 
-
-
 </td>
 <td valign="top">
 
 Authorization policy delivered by the application. Administrators can copy the authorization policy and modify the copy. The copy, modified or not, is a custom authorization policy. You can't change or delete it in the administration console.
-
-
 
 </td>
 </tr>
@@ -239,18 +195,17 @@ Authorization policy delivered by the application. Administrators can copy the a
 
 Custom authorization policy
 
-
-
 </td>
 <td valign="top">
 
 Authorization policy created by administrators. You can change and delete this authorization policy in the administration console.
 
-
-
 </td>
 </tr>
 </table>
+
+> ### Restriction:  
+> To make sure that authorization management is resilient, we've introduced an upper limit of 200 custom authorization policies and 200 base authorization policies that can be defined per application.
 
 
 

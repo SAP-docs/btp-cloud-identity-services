@@ -39,21 +39,15 @@ Some of the attributes have predefined supported values. They are returned as a 
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Examples
 
-
-
 </th>
 <th valign="top">
 
 Full Sets
-
-
 
 </th>
 </tr>
@@ -61,8 +55,6 @@ Full Sets
 <td valign="top">
 
 `name.honorificPrefix` 
-
-
 
 </td>
 <td valign="top">
@@ -87,8 +79,6 @@ Full Sets
 
 `addresses.country` 
 
-
-
 </td>
 <td valign="top">
 
@@ -111,8 +101,6 @@ Full Sets
 <td valign="top">
 
 `addresses.region` 
-
-
 
 </td>
 <td valign="top">
@@ -141,8 +129,6 @@ Full Sets
 
 `industryCrm` 
 
-
-
 </td>
 <td valign="top">
 
@@ -165,8 +151,6 @@ Full Sets
 <td valign="top">
 
 `timeZone` 
-
-
 
 </td>
 <td valign="top">
@@ -191,8 +175,6 @@ Full Sets
 
 `department` 
 
-
-
 </td>
 <td valign="top">
 
@@ -216,8 +198,6 @@ Full Sets
 
 `companyRelationship` 
 
-
-
 </td>
 <td valign="top">
 
@@ -240,8 +220,6 @@ Full Sets
 <td valign="top">
 
 `locale` 
-
-
 
 </td>
 <td valign="top">
@@ -288,22 +266,16 @@ The characters `<`, `>`, `:` are not allowed for the attributes `displayName`, `
 
 HTTP Method
 
-
-
 </th>
 <th valign="top">
 
 Action
-
-
 
 </th>
 <th valign="top">
 
 URI
 
-
-
 </th>
 </tr>
 <tr>
@@ -311,21 +283,15 @@ URI
 
 *GET*
 
-
-
 </td>
 <td valign="top">
 
 [Users Search \(Deprecated\)](users-search-deprecated-3af7dfa.md)
 
-
-
 </td>
 <td valign="top">
 
 **`https://<tenant ID>.accounts.ondemand.com/service/scim/Users/`**
-
-
 
 </td>
 </tr>
@@ -334,21 +300,15 @@ URI
 
 *GET*
 
-
-
 </td>
 <td valign="top">
 
 [User Resource \(Deprecated\)](user-resource-deprecated-7ae17a6.md)
 
-
-
 </td>
 <td valign="top">
 
 **`https://<tenant ID>.accounts.ondemand.com/service/scim/Users/<id>`**
-
-
 
 </td>
 </tr>
@@ -357,21 +317,15 @@ URI
 
 *POST*
 
-
-
 </td>
 <td valign="top">
 
 [Create User Resource \(Deprecated\)](create-user-resource-deprecated-cea8778.md)
 
-
-
 </td>
 <td valign="top">
 
 **`https://<tenant ID>.accounts.ondemand.com/service/scim/Users`**
-
-
 
 </td>
 </tr>
@@ -380,21 +334,15 @@ URI
 
 *PUT*
 
-
-
 </td>
 <td valign="top">
 
 [Update User Resource \(Deprecated\)](update-user-resource-deprecated-9e36479.md)
 
-
-
 </td>
 <td valign="top">
 
 **`https://<tenant ID>.accounts.ondemand.com/service/scim/Users/<id>`**
-
-
 
 </td>
 </tr>
@@ -403,21 +351,15 @@ URI
 
 *DELETE*
 
-
-
 </td>
 <td valign="top">
 
 [Delete User Resource \(Deprecated\)](delete-user-resource-deprecated-436015d.md)
 
-
-
 </td>
 <td valign="top">
 
 **`https://<tenant ID>.accounts.ondemand.com/service/scim/Users/<id>`**
-
-
 
 </td>
 </tr>
@@ -432,22 +374,16 @@ URI
 
 HTTP Method
 
-
-
 </th>
 <th valign="top">
 
 Action
-
-
 
 </th>
 <th valign="top">
 
 URI
 
-
-
 </th>
 </tr>
 <tr>
@@ -455,21 +391,15 @@ URI
 
 *GET*
 
-
-
 </td>
 <td valign="top">
 
 [Groups Search \(Deprecated\)](groups-search-deprecated-77e6811.md)
 
-
-
 </td>
 <td valign="top">
 
 **`https://<tenant ID>.accounts.ondemand.com/service/scim/Groups/`**
-
-
 
 </td>
 </tr>
@@ -478,21 +408,15 @@ URI
 
 *GET*
 
-
-
 </td>
 <td valign="top">
 
 [Group Resource \(Deprecated\)](group-resource-deprecated-8c6ebd7.md)
 
-
-
 </td>
 <td valign="top">
 
 **`https://<tenant ID>.accounts.ondemand.com/service/scim/Groups/<id of the group>`**
-
-
 
 </td>
 </tr>
@@ -501,21 +425,15 @@ URI
 
 *POST*
 
-
-
 </td>
 <td valign="top">
 
 [Create Group Resource \(Deprecated\)](create-group-resource-deprecated-a831c94.md)
 
-
-
 </td>
 <td valign="top">
 
 **`https://<tenant ID>.accounts.ondemand.com/service/scim/Groups`**
-
-
 
 </td>
 </tr>
@@ -524,21 +442,15 @@ URI
 
 *PUT*
 
-
-
 </td>
 <td valign="top">
 
 [Update Group Resource \(Deprecated\)](update-group-resource-deprecated-81ca50e.md)
 
-
-
 </td>
 <td valign="top">
 
 **`https://<tenant ID>.accounts.ondemand.com/service/scim/Groups/<id of the group>`**
-
-
 
 </td>
 </tr>
@@ -547,21 +459,15 @@ URI
 
 *DELETE*
 
-
-
 </td>
 <td valign="top">
 
 [Delete Group Resource \(Deprecated\)](delete-group-resource-deprecated-41bb519.md)
 
-
-
 </td>
 <td valign="top">
 
 **`https://<tenant ID>.accounts.ondemand.com/service/scim/Groups/<id of the group>`**
-
-
 
 </td>
 </tr>

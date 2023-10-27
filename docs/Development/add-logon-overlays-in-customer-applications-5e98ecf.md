@@ -68,15 +68,11 @@ To add a logon overlay into your application proceed as follows:
     <th valign="top">
 
     Attribute
-
-
     
     </th>
     <th valign="top">
 
     Value
-
-
     
     </th>
     </tr>
@@ -84,15 +80,11 @@ To add a logon overlay into your application proceed as follows:
     <td valign="top">
     
     rel
-
-
     
     </td>
     <td valign="top">
     
     IDS\_login
-
-
     
     </td>
     </tr>
@@ -100,8 +92,6 @@ To add a logon overlay into your application proceed as follows:
     <td valign="top">
     
     href
-
-
     
     </td>
     <td valign="top">

@@ -68,14 +68,10 @@ The information retrieved from `.well-known/openid-configuration` endpoint can c
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Notes
-
-
 
 </th>
 </tr>
@@ -84,14 +80,10 @@ Notes
 
 `issuer`
 
-
-
 </td>
 <td valign="top">
 
 Required. Must be a valid URI.
-
-
 
 </td>
 </tr>
@@ -100,14 +92,10 @@ Required. Must be a valid URI.
 
 `token_endpoint`
 
-
-
 </td>
 <td valign="top">
 
 Required. Must be a valid URI.
-
-
 
 </td>
 </tr>
@@ -116,14 +104,10 @@ Required. Must be a valid URI.
 
 `authorization_endpoint`
 
-
-
 </td>
 <td valign="top">
 
 Required. Must be a valid URI.
-
-
 
 </td>
 </tr>
@@ -132,14 +116,10 @@ Required. Must be a valid URI.
 
 `jwks_uri`
 
-
-
 </td>
 <td valign="top">
 
 Required. Must be a valid URI.
-
-
 
 </td>
 </tr>
@@ -147,8 +127,6 @@ Required. Must be a valid URI.
 <td valign="top">
 
 `end_session_endpoint`
-
-
 
 </td>
 <td valign="top">
@@ -166,8 +144,6 @@ Optional. If present it must be a valid URI.
 <td valign="top">
 
 `grant_types_supported`
-
-
 
 </td>
 <td valign="top">
@@ -222,15 +198,11 @@ Configure the corporate identity provider in the administration console for SAP 
     <th valign="top">
 
     Provider Configuration
-
-
     
     </th>
     <th valign="top">
 
     Notes
-
-
     
     </th>
     </tr>
@@ -238,15 +210,11 @@ Configure the corporate identity provider in the administration console for SAP 
     <td valign="top">
     
     Discovery URL
-
-
     
     </td>
     <td valign="top">
     
     Required. Issuer or metadata URL of the corporate identity provider.
-
-
     
     </td>
     </tr>
@@ -254,15 +222,11 @@ Configure the corporate identity provider in the administration console for SAP 
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Required. Unique URI-based *Name* of the corporate identity provider. The issuer is used by default.
-
-
     
     </td>
     </tr>
@@ -270,8 +234,6 @@ Configure the corporate identity provider in the administration console for SAP 
     <td valign="top">
     
     Metadata Refresh Interval
-
-
     
     </td>
     <td valign="top">
@@ -297,8 +259,6 @@ Configure the corporate identity provider in the administration console for SAP 
     <td valign="top">
     
     Client Authentication Method
-
-
     
     </td>
     <td valign="top">
@@ -321,15 +281,11 @@ Configure the corporate identity provider in the administration console for SAP 
     <td valign="top">
     
     Client ID
-
-
     
     </td>
     <td valign="top">
     
     Required. The Client ID of the application on the corporate identity provider side.
-
-
     
     </td>
     </tr>
@@ -337,8 +293,6 @@ Configure the corporate identity provider in the administration console for SAP 
     <td valign="top">
     
     Client Secret
-
-
     
     </td>
     <td valign="top">
@@ -356,8 +310,6 @@ Configure the corporate identity provider in the administration console for SAP 
     <td valign="top">
     
     Enable PKCE \(S256\)
-
-
     
     </td>
     <td valign="top">
@@ -380,6 +332,13 @@ Configure the corporate identity provider in the administration console for SAP 
 7.  **Optional:** Add additional scopes if needed.
 
     You can have up to 20 scopes. The `openid` scope is added by default. Each scope can have a length of up to 99 characters.
+
+    > ### Tip:  
+    > If you are using Azure Active Directory \(Azure AD\) as corporate identity provider, the recommended claims are:
+    > 
+    > -   openid
+    > -   email
+    > -   profile
 
 8.  **Optional:** Choose the *Validate* button to check the configuration.
 

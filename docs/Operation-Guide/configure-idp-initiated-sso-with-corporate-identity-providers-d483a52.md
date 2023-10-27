@@ -27,28 +27,20 @@ For this scenario, the configurations are made by users with different roles in 
 
 Role
 
-
-
 </th>
 <th valign="top">
 
 System to be configured
-
-
 
 </th>
 <th valign="top">
 
 What has to be configured
 
-
-
 </th>
 <th valign="top">
 
 More Information
-
-
 
 </th>
 </tr>
@@ -57,28 +49,20 @@ More Information
 
 Application administrator
 
-
-
 </td>
 <td valign="top">
 
 Consumer application
-
-
 
 </td>
 <td valign="top">
 
 Trust
 
-
-
 </td>
 <td valign="top">
 
 [Configure Identity Authentication as a Trusted Identity Provider for the Application](configure-idp-initiated-sso-with-corporate-identity-providers-d483a52.md#loio2a26d22d959046f3bd148e2b15839d62)
-
-
 
 </td>
 </tr>
@@ -87,14 +71,10 @@ Trust
 
 Tenant administrator
 
-
-
 </td>
 <td valign="top">
 
 Tenant of Identity Authentication 
-
-
 
 </td>
 <td valign="top">
@@ -120,28 +100,20 @@ Tenant of Identity Authentication
 
 Tenant administrator
 
-
-
 </td>
 <td valign="top">
 
 Tenant of Identity Authentication 
-
-
 
 </td>
 <td valign="top">
 
 \(Optional\) User attributes and access for users. Enable the *Identity Federation* options in the administration console.
 
-
-
 </td>
 <td valign="top">
 
 [\(Optional\) Configure Additional Settings in Identity Authentication](configure-idp-initiated-sso-with-corporate-identity-providers-d483a52.md#loioddf22c3599e8464591747e23cc208318)
-
-
 
 </td>
 </tr>
@@ -150,14 +122,10 @@ Tenant of Identity Authentication
 
 Corporate IdP administrator
 
-
-
 </td>
 <td valign="top">
 
 Corporate IdP
-
-
 
 </td>
 <td valign="top">
@@ -172,8 +140,6 @@ Corporate IdP
 <td valign="top">
 
 [Configure the Corporate Identity Provider](configure-idp-initiated-sso-with-corporate-identity-providers-d483a52.md#loiobc7870de693c4f06a2f6e6b33adbf330)
-
-
 
 </td>
 </tr>
@@ -391,7 +357,7 @@ When the *Use Identity Authentication user store* is enabled, Identity Authentic
 
 This configuration can be used if you want the application to receive assertions and name ID attributes that are different from those sent by the corporate identity provider.
 
-If you want the application to receive assertions and name ID attributes that are different from those sent by the corporate identity provider, do the following: [Configure the User Attributes Sent to the Application](configure-the-user-attributes-sent-to-the-application-d361407.md) and [Configure the Subject Name Identifier Sent to the Application](configure-the-subject-name-identifier-sent-to-the-application-1d020e3.md).
+If you want the application to receive assertions and name ID attributes that are different from those sent by the corporate identity provider, do the following: [User Attributes Sent to the Application](user-attributes-sent-to-the-application-d361407.md) and [Configure the Subject Name Identifier Sent to the Application](configure-the-subject-name-identifier-sent-to-the-application-1d020e3.md).
 
 
 
@@ -403,7 +369,7 @@ If you want the application to receive assertions and name ID attributes that ar
 
 2.  Configure the user attributes and Name ID attribute sent to the application. For more information, see:
 
-    -   [Configure the User Attributes Sent to the Application](configure-the-user-attributes-sent-to-the-application-d361407.md)
+    -   [User Attributes Sent to the Application](user-attributes-sent-to-the-application-d361407.md)
     -   [Configure the Subject Name Identifier Sent to the Application](configure-the-subject-name-identifier-sent-to-the-application-1d020e3.md)
 
 
@@ -446,7 +412,7 @@ This configuration allows you to restrict access to the application to users who
 
 Only users that are in the user store of Identity Authentication will be able to access the application. If a user is not part of the user store of Identity Authentication, this user receives the following message: ***Sorry, but you are currently not authorized for access.***
 
-The settings in the application configuration for assertion attributes and name ID attribute will be used for issuing the assertion. For more information, see [Configure the User Attributes Sent to the Application](configure-the-user-attributes-sent-to-the-application-d361407.md)and [Configure the Subject Name Identifier Sent to the Application](configure-the-subject-name-identifier-sent-to-the-application-1d020e3.md).
+The settings in the application configuration for assertion attributes and name ID attribute will be used for issuing the assertion. For more information, see [User Attributes Sent to the Application](user-attributes-sent-to-the-application-d361407.md)and [Configure the Subject Name Identifier Sent to the Application](configure-the-subject-name-identifier-sent-to-the-application-1d020e3.md).
 
 <a name="task_dbb_13v_yv"/>
 

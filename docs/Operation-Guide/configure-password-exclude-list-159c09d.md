@@ -25,7 +25,7 @@ You can enter up to 1000 passwords in the list. Each password can be up to 256 c
 
 3.  Choose the *Password* tab.
 
-4.  **Optional:** Enable the switch next to the options that you want to restrict:
+4.  **Optional:** Under *Dynamic Passwords*, enable the switch next to the options that you want to restrict:
 
 
     <table>
@@ -33,15 +33,11 @@ You can enter up to 1000 passwords in the list. Each password can be up to 256 c
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -49,15 +45,11 @@ You can enter up to 1000 passwords in the list. Each password can be up to 256 c
     <td valign="top">
     
     *First Name*
-
-
     
     </td>
     <td valign="top">
     
     The password must not include the user's first name.
-
-
     
     </td>
     </tr>
@@ -65,15 +57,11 @@ You can enter up to 1000 passwords in the list. Each password can be up to 256 c
     <td valign="top">
     
     *Last Name*
-
-
     
     </td>
     <td valign="top">
     
     The password must not include the user's last name.
-
-
     
     </td>
     </tr>
@@ -81,21 +69,17 @@ You can enter up to 1000 passwords in the list. Each password can be up to 256 c
     <td valign="top">
     
     *Login Name*
-
-
     
     </td>
     <td valign="top">
     
     The password must not include the user's login name.
-
-
     
     </td>
     </tr>
     </table>
     
-5.  **Optional:** Choose *Create* and enter the password exclude terms as free text in the field.
+5.  **Optional:** nder *Password Exclude List*, choose *Create* and enter the password exclude terms as free text in the field.
 
     For multiple values, use comma between them.
 

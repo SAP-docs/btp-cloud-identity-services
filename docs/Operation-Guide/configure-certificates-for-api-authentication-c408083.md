@@ -49,15 +49,11 @@ Identity Authentication supports SAP Passport CA as trusted certificate authorit
     <th valign="top">
 
     Certificate Options
-
-
     
     </th>
     <th valign="top">
 
     Notes
-
-
     
     </th>
     </tr>
@@ -65,8 +61,6 @@ Identity Authentication supports SAP Passport CA as trusted certificate authorit
     <td valign="top">
     
     **Generate Certificate**
-
-
     
     </td>
     <td valign="top">
@@ -87,8 +81,6 @@ Identity Authentication supports SAP Passport CA as trusted certificate authorit
     <td valign="top">
     
     **Upload Certificate**
-
-
     
     </td>
     <td valign="top">
@@ -106,15 +98,11 @@ Identity Authentication supports SAP Passport CA as trusted certificate authorit
     <td valign="top">
     
     **Insert Certificate**
-
-
     
     </td>
     <td valign="top">
     
     Insert the certificate in the text field.
-
-
     
     </td>
     </tr>

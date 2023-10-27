@@ -13,14 +13,10 @@ There are the following types of end-users in the user store of Identity Authent
 
 User Type
 
-
-
 </th>
 <th valign="top">
 
 Notes
-
-
 
 </th>
 </tr>
@@ -29,14 +25,10 @@ Notes
 
 Customer
 
-
-
 </td>
 <td valign="top">
 
 External users that are customers for the company. They may need access to some applications.
-
-
 
 </td>
 </tr>
@@ -45,14 +37,10 @@ External users that are customers for the company. They may need access to some 
 
 Employee
 
-
-
 </td>
 <td valign="top">
 
 Internal company users, mainly users with long-term contracts.
-
-
 
 </td>
 </tr>
@@ -61,14 +49,10 @@ Internal company users, mainly users with long-term contracts.
 
 Partner
 
-
-
 </td>
 <td valign="top">
 
 External users from a partner company that will need some kind of access.
-
-
 
 </td>
 </tr>
@@ -77,14 +61,10 @@ External users from a partner company that will need some kind of access.
 
 Public
 
-
-
 </td>
 <td valign="top">
 
 External users that are not controlled by the company. For example, self-registered.
-
-
 
 </td>
 </tr>
@@ -93,14 +73,10 @@ External users that are not controlled by the company. For example, self-registe
 
 External
 
-
-
 </td>
 <td valign="top">
 
 External users that can be a temporary hired employees that need access to some applications, or external users that need access to learning materials and training managed by the company.
-
-
 
 </td>
 </tr>
@@ -109,14 +85,10 @@ External users that can be a temporary hired employees that need access to some 
 
 Onboardee
 
-
-
 </td>
 <td valign="top">
 
 An employee user that need a different authentication, because, for example the user may not exist in the corporate identity provider.
-
-
 
 </td>
 </tr>

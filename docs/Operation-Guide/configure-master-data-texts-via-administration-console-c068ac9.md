@@ -27,21 +27,15 @@ The predefined master data represents records in Identity Authentication that co
 
 Resource
 
-
-
 </th>
 <th valign="top">
 
 Link
 
-
-
 </th>
 <th valign="top">
 
 Notes
-
-
 
 </th>
 </tr>
@@ -50,21 +44,15 @@ Notes
 
 Salutations
 
-
-
 </td>
 <td valign="top">
 
 [Salutations.properties](../Development/change-master-data-texts-rest-api-b10fc6a.md#loiod4512bcbe9c8439896e06425f247c7af) 
 
-
-
 </td>
 <td valign="top">
 
 Key value pairs with a predefined set of honorifics.
-
-
 
 </td>
 </tr>
@@ -73,21 +61,15 @@ Key value pairs with a predefined set of honorifics.
 
 Functions
 
-
-
 </td>
 <td valign="top">
 
 [Functions.properties](../Development/change-master-data-texts-rest-api-b10fc6a.md#loio78cb6d43814c4b179eda8282c28e8d2f) 
 
-
-
 </td>
 <td valign="top">
 
 Key value pairs with a predefined set of job titles.
-
-
 
 </td>
 </tr>
@@ -96,21 +78,15 @@ Key value pairs with a predefined set of job titles.
 
 Departments
 
-
-
 </td>
 <td valign="top">
 
 [Departments.properties](../Development/change-master-data-texts-rest-api-b10fc6a.md#loiod13c638f0d5d4a8889debf278fcb0275) 
 
-
-
 </td>
 <td valign="top">
 
 Key value pairs with a predefined set of departments.
-
-
 
 </td>
 </tr>
@@ -119,21 +95,15 @@ Key value pairs with a predefined set of departments.
 
 Company Relationships
 
-
-
 </td>
 <td valign="top">
 
 [Relationships.properties](../Development/change-master-data-texts-rest-api-b10fc6a.md#loiof7eb5b72aed440fdb75657379bd368d1) 
 
-
-
 </td>
 <td valign="top">
 
 Key value pairs with a predefined set of business entities, such as customer, partner, employee.
-
-
 
 </td>
 </tr>
@@ -142,21 +112,15 @@ Key value pairs with a predefined set of business entities, such as customer, pa
 
 Industries
 
-
-
 </td>
 <td valign="top">
 
 [Industries.properties](../Development/change-master-data-texts-rest-api-b10fc6a.md#loioe62f9b8fde264f3ab644bdaa5a7876e2) 
 
-
-
 </td>
 <td valign="top">
 
 Key value pairs with a predefined set of industries.
-
-
 
 </td>
 </tr>
@@ -165,21 +129,15 @@ Key value pairs with a predefined set of industries.
 
 Languages
 
-
-
 </td>
 <td valign="top">
 
 [Languages.properties](../Development/change-master-data-texts-rest-api-b10fc6a.md#loio3be819bd3a3a498fa287542346a7add0) 
 
-
-
 </td>
 <td valign="top">
 
 Key value pairs with a predefined set of languages.
-
-
 
 </td>
 </tr>
@@ -188,21 +146,15 @@ Key value pairs with a predefined set of languages.
 
 Countries
 
-
-
 </td>
 <td valign="top">
 
 [Countries.properties](../Development/change-master-data-texts-rest-api-b10fc6a.md#loioe4e7e4c52cf04295bf94465eba7ceaaa) 
 
-
-
 </td>
 <td valign="top">
 
 Key value pairs with a predefined set of countries.
-
-
 
 </td>
 </tr>

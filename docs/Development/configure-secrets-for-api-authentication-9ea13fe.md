@@ -46,15 +46,11 @@ The client ID is in the universally unique identifier \(UUID\) format. For examp
     <th valign="top">
 
      
-
-
     
     </th>
     <th valign="top">
 
      
-
-
     
     </th>
     </tr>
@@ -62,15 +58,11 @@ The client ID is in the universally unique identifier \(UUID\) format. For examp
     <td valign="top">
     
     **Description**
-
-
     
     </td>
     <td valign="top">
     
     This field is optional.
-
-
     
     </td>
     </tr>
@@ -78,8 +70,6 @@ The client ID is in the universally unique identifier \(UUID\) format. For examp
     <td valign="top">
     
     **Expire in**
-
-
     
     </td>
     <td valign="top">
@@ -98,8 +88,6 @@ The client ID is in the universally unique identifier \(UUID\) format. For examp
     <td valign="top">
     
     **Scope**
-
-
     
     </td>
     <td valign="top">

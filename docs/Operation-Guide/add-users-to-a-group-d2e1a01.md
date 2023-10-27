@@ -29,7 +29,14 @@ As a tenant administrator, you can add one or more users created for a specific 
 
 4.  Press the *Add* button.
 
-5.  Search for the users or select those from the list that you want to add to the group.
+5.  Add users to the group. You have the following options:
+
+    -   Select users from the list.
+    -   Search for the users.
+        -   *starts with* - \(default/reccomended operator\) returns only users that start with the entered value.
+
+        -   *contains* - retuns all the users that contain the entered value. Using the *contains* operator may result in longer processing time.
+
 
     > ### Note:  
     > You can filter your search by *First Name*, *Last Name*, *Scim ID*, *Email*, or *Login Name*.
@@ -41,7 +48,7 @@ As a tenant administrator, you can add one or more users created for a specific 
 
 ## Next Steps
 
-Configure the attributes that are sent to the application in the assertion. For more information, see [Configure the User Attributes Sent to the Application](configure-the-user-attributes-sent-to-the-application-d361407.md)
+Configure the attributes that are sent to the application in the assertion. For more information, see [User Attributes Sent to the Application](user-attributes-sent-to-the-application-d361407.md)
 
 **Related Information**  
 

@@ -40,8 +40,6 @@ You can list all users in the tenant for Identity Authentication or filter your 
     **List All Users**
 
     Press *More*
-
-
     
     </td>
     <td valign="top">
@@ -89,8 +87,6 @@ You can list all users in the tenant for Identity Authentication or filter your 
     **Filtered Search**
 
     Press *Show Filters*, type your search criteria strings in at least one of the search fields, and press the *Enter* key
-
-
     
     </td>
     <td valign="top">

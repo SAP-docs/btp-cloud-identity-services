@@ -42,15 +42,11 @@ To use Identity Authentication as a proxy, create, and configure Azure AD as a c
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Information
-
-
     
     </th>
     </tr>
@@ -58,15 +54,11 @@ To use Identity Authentication as a proxy, create, and configure Azure AD as a c
     <td valign="top">
     
     Name
-
-
     
     </td>
     <td valign="top">
     
     Provide the `entity ID` of the corporate identity provider.
-
-
     
     </td>
     </tr>
@@ -74,15 +66,11 @@ To use Identity Authentication as a proxy, create, and configure Azure AD as a c
     <td valign="top">
     
     Single Sign-On Endpoint URL
-
-
     
     </td>
     <td valign="top">
     
     Provide the URL of the identity provider single sign-on endpoint that receives authentication requests. For *Binding*, choose the one that corresponds to respective single sign-on endpoint.
-
-
     
     </td>
     </tr>
@@ -90,15 +78,11 @@ To use Identity Authentication as a proxy, create, and configure Azure AD as a c
     <td valign="top">
     
     Single Logout Endpoint URL
-
-
     
     </td>
     <td valign="top">
     
     Provide the URL of the identity provider's single logout endpoint that receives logout messages. For *Binding*, choose the one that corresponds to respective single logout endpoint.
-
-
     
     </td>
     </tr>
@@ -106,15 +90,11 @@ To use Identity Authentication as a proxy, create, and configure Azure AD as a c
     <td valign="top">
     
     Signing Certificate
-
-
     
     </td>
     <td valign="top">
     
     Provide the base64-encoded certificate used by the identity provider to digitally sign SAML protocol messages sent to Identity Authentication.
-
-
     
     </td>
     </tr>

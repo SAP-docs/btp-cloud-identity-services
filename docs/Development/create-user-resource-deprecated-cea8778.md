@@ -81,36 +81,26 @@ The create user resource method of the Identity Authentication implementation of
     <th valign="top">
 
     Parameter/Result
-
-
     
     </th>
     <th valign="top">
 
     Status/Value
-
-
     
     </th>
     <th valign="top">
 
     Status/Value
-
-
     
     </th>
     <th valign="top">
 
     Status/Value
-
-
     
     </th>
     <th valign="top">
 
     Status/Value
-
-
     
     </th>
     </tr>
@@ -118,36 +108,26 @@ The create user resource method of the Identity Authentication implementation of
     <td valign="top">
     
     `sendMail` 
-
-
     
     </td>
     <td valign="top">
     
     *true*
-
-
     
     </td>
     <td valign="top">
     
     *true*
-
-
     
     </td>
     <td valign="top">
     
     *false*
-
-
     
     </td>
     <td valign="top">
     
     *false*
-
-
     
     </td>
     </tr>
@@ -155,36 +135,26 @@ The create user resource method of the Identity Authentication implementation of
     <td valign="top">
     
     `mailVerified` 
-
-
     
     </td>
     <td valign="top">
     
     *true*
-
-
     
     </td>
     <td valign="top">
     
     *false*
-
-
     
     </td>
     <td valign="top">
     
     *true*
-
-
     
     </td>
     <td valign="top">
     
     *false*
-
-
     
     </td>
     </tr>
@@ -192,36 +162,26 @@ The create user resource method of the Identity Authentication implementation of
     <td valign="top">
     
     **Result** 
-
-
     
     </td>
     <td valign="top">
     
     The user will receive email. He or she will be able to log on.
-
-
     
     </td>
     <td valign="top">
     
     The user will receive email. He or she has to click the verification link in the email.
-
-
     
     </td>
     <td valign="top">
     
     The user will be able to log on to the application directly.
-
-
     
     </td>
     <td valign="top">
     
     The user will not be able to log on.
-
-
     
     </td>
     </tr>
@@ -509,14 +469,10 @@ The following scenarios are possible via the SCIM REST API:
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Status/Value
-
-
 
 </th>
 </tr>
@@ -525,14 +481,10 @@ Status/Value
 
 `password`
 
-
-
 </td>
 <td valign="top">
 
 provided
-
-
 
 </td>
 </tr>
@@ -541,14 +493,10 @@ provided
 
 `passwordStatus`
 
-
-
 </td>
 <td valign="top">
 
 *enabled*
-
-
 
 </td>
 </tr>
@@ -557,14 +505,10 @@ provided
 
 `sendMail`
 
-
-
 </td>
 <td valign="top">
 
 *true*
-
-
 
 </td>
 </tr>
@@ -573,14 +517,10 @@ provided
 
 `mailVerified`
 
-
-
 </td>
 <td valign="top">
 
 *false*
-
-
 
 </td>
 </tr>
@@ -597,14 +537,10 @@ provided
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Status/Value
-
-
 
 </th>
 </tr>
@@ -613,14 +549,10 @@ Status/Value
 
 `password`
 
-
-
 </td>
 <td valign="top">
 
 provided
-
-
 
 </td>
 </tr>
@@ -629,14 +561,10 @@ provided
 
 `passwordStatus`
 
-
-
 </td>
 <td valign="top">
 
 *enabled*
-
-
 
 </td>
 </tr>
@@ -645,14 +573,10 @@ provided
 
 `sendMail`
 
-
-
 </td>
 <td valign="top">
 
 *true*
-
-
 
 </td>
 </tr>
@@ -661,14 +585,10 @@ provided
 
 `mailVerified`
 
-
-
 </td>
 <td valign="top">
 
 *true*
-
-
 
 </td>
 </tr>
@@ -685,14 +605,10 @@ provided
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Status/Value
-
-
 
 </th>
 </tr>
@@ -701,14 +617,10 @@ Status/Value
 
 `password`
 
-
-
 </td>
 <td valign="top">
 
 not provided
-
-
 
 </td>
 </tr>
@@ -717,14 +629,10 @@ not provided
 
 `passwordStatus`
 
-
-
 </td>
 <td valign="top">
 
 not provided
-
-
 
 </td>
 </tr>
@@ -733,14 +641,10 @@ not provided
 
 `sendMail`
 
-
-
 </td>
 <td valign="top">
 
 *false*
-
-
 
 </td>
 </tr>
@@ -749,14 +653,10 @@ not provided
 
 `mailVerified`
 
-
-
 </td>
 <td valign="top">
 
 *true*
-
-
 
 </td>
 </tr>
@@ -975,21 +875,15 @@ not provided
 
 Response Code
 
-
-
 </th>
 <th valign="top">
 
 Meaning
 
-
-
 </th>
 <th valign="top">
 
 Response Description
-
-
 
 </th>
 </tr>
@@ -998,21 +892,15 @@ Response Description
 
 201
 
-
-
 </td>
 <td valign="top">
 
 Created
 
-
-
 </td>
 <td valign="top">
 
 Indicates success
-
-
 
 </td>
 </tr>
@@ -1021,14 +909,10 @@ Indicates success
 
 400
 
-
-
 </td>
 <td valign="top">
 
 Bad Request
-
-
 
 </td>
 <td valign="top">

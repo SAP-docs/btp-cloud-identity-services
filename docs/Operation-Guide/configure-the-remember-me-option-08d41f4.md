@@ -23,28 +23,20 @@ You can change the default configuration for the remember me option via the admi
 
 Visible
 
-
-
 </th>
 <th valign="top">
 
 Checked
-
-
 
 </th>
 <th valign="top">
 
 Validity
 
-
-
 </th>
 <th valign="top">
 
 Notes
-
-
 
 </th>
 </tr>
@@ -53,14 +45,10 @@ Notes
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
@@ -79,8 +67,6 @@ No
 
 The default configuration. Users see the option on the logon screen as unchecked. The user is asked every time for credentials by the application. The validity of the cookie is as configured by the administrator. The default validity is 3 months.
 
-
-
 </td>
 </tr>
 <tr>
@@ -88,14 +74,10 @@ The default configuration. Users see the option on the logon screen as unchecked
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -114,8 +96,6 @@ Yes
 
 Users see the option on the logon screen as checked. A cookie is sent to the user's browser at first logon. It automatically logs the user on next time the application is accessed from the same browser on the user's local computer. The validity of the cookie is as configured by the administrator. The default validity is 3 months.
 
-
-
 </td>
 </tr>
 <tr>
@@ -123,28 +103,20 @@ Users see the option on the logon screen as checked. A cookie is sent to the use
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
  
 
-
-
 </td>
 <td valign="top">
 
 Users don't see the option on the logon screen.
-
-
 
 </td>
 </tr>
@@ -153,14 +125,10 @@ Users don't see the option on the logon screen.
 
 No
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -178,8 +146,6 @@ Yes
 <td valign="top">
 
 Users don't see the option on the logon screen, but the option is checked for them. A cookie is sent to the user's browser at first logon. It automatically logs the user on next time the application is accessed from the same browser on the user's local computer. The validity of the cookie is as configured by the administrator. The default validity is 3 months.
-
-
 
 </td>
 </tr>

@@ -109,7 +109,7 @@ The Identity Directory SCIM REST API can be manually extended by adding user att
     > > 
     > > ```
 
-3.  Send the already assigned custom attribute by configuring it in the default attributes sent to the application. See [Configure the Default Attributes Sent to the Application](../Operation-Guide/configure-the-default-attributes-sent-to-the-application-a2f1e46.md) under the *Send Identity Directory Custom Schema Attributes* section.
+3.  Send the already assigned custom attribute by configuring it in the default attributes sent to the application. See [Attributes with Default Values](../Operation-Guide/attributes-with-default-values-a2f1e46.md) under the *Send Identity Directory Custom Schema Attributes* section.
 
     > ### Example:  
     > The default attributes for the application are configured in the administration console as follows:
@@ -123,14 +123,10 @@ The Identity Directory SCIM REST API can be manually extended by adding user att
     > 
     > Attribute
     > 
-    > 
-    > 
     > </th>
     > <th valign="top">
     > 
     > Value
-    > 
-    > 
     > 
     > </th>
     > </tr>
@@ -139,14 +135,10 @@ The Identity Directory SCIM REST API can be manually extended by adding user att
     > 
     > name
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > $\{urn:sap:cloud:scim:schemas:extension:custom:2.0:Profile.name.firstName\}
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -155,14 +147,10 @@ The Identity Directory SCIM REST API can be manually extended by adding user att
     > 
     > hobby
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > $\{urn:sap:cloud:scim:schemas:extension:custom:2.0:Profile.hobby\}
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -171,14 +159,10 @@ The Identity Directory SCIM REST API can be manually extended by adding user att
     > 
     > birthday
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > $\{urn:sap:cloud:scim:schemas:extension:custom:2.0:Profile.birthday\}
-    > 
-    > 
     > 
     > </td>
     > </tr>

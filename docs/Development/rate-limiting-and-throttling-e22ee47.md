@@ -25,14 +25,10 @@ To prevent Identity Authentication from being overloaded by too many requests, w
 
 Requests per minute
 
-
-
 </th>
 <th valign="top">
 
 Notes
-
-
 
 </th>
 </tr>
@@ -41,14 +37,10 @@ Notes
 
 up to 200
 
-
-
 </td>
 <td valign="top">
 
 The requests are executed.
-
-
 
 </td>
 </tr>
@@ -57,14 +49,10 @@ The requests are executed.
 
 201 to 280
 
-
-
 </td>
 <td valign="top">
 
 The requests are delayed by 1 second.
-
-
 
 </td>
 </tr>
@@ -73,14 +61,10 @@ The requests are delayed by 1 second.
 
 281 and more
 
-
-
 </td>
 <td valign="top">
 
 The client receives the ***HTTP 429 Too Many Requests*** response status code for 60 seconds.
-
-
 
 </td>
 </tr>

@@ -53,35 +53,25 @@ Depending on the specified pagination parameters, there are two approaches when 
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Parameter Type
-
-
 
 </th>
 </tr>
@@ -90,35 +80,25 @@ Parameter Type
 
 `filter`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 Defines the search criteria. If missing, the search criteria will depend on the other parameters.
 
-
-
 </td>
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>
@@ -133,21 +113,15 @@ Path
 
 Operator
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Behavior
-
-
 
 </th>
 </tr>
@@ -156,21 +130,15 @@ Behavior
 
 eq
 
-
-
 </td>
 <td valign="top">
 
 equal
 
-
-
 </td>
 <td valign="top">
 
 The attribute and attribute values must be identical for a match.
-
-
 
 </td>
 </tr>
@@ -179,21 +147,15 @@ The attribute and attribute values must be identical for a match.
 
 and
 
-
-
 </td>
 <td valign="top">
 
 Logical And
 
-
-
 </td>
 <td valign="top">
 
 The filter is only a match if all expressions evaluate to true.
-
-
 
 </td>
 </tr>
@@ -208,14 +170,10 @@ The filter is only a match if all expressions evaluate to true.
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -224,14 +182,10 @@ Description
 
 id
 
-
-
 </td>
 <td valign="top">
 
 Public user ID of the user
-
-
 
 </td>
 </tr>
@@ -240,14 +194,10 @@ Public user ID of the user
 
 userUuid
 
-
-
 </td>
 <td valign="top">
 
 User ID in the universally unique identifier \(UUID\)
-
-
 
 </td>
 </tr>
@@ -256,14 +206,10 @@ User ID in the universally unique identifier \(UUID\)
 
 emails
 
-
-
 </td>
 <td valign="top">
 
 Email address of the user
-
-
 
 </td>
 </tr>
@@ -272,14 +218,10 @@ Email address of the user
 
 userName
 
-
-
 </td>
 <td valign="top">
 
 Custom logon name of the user
-
-
 
 </td>
 </tr>
@@ -288,14 +230,10 @@ Custom logon name of the user
 
 name.familyName
 
-
-
 </td>
 <td valign="top">
 
 Last name of the user
-
-
 
 </td>
 </tr>
@@ -304,14 +242,10 @@ Last name of the user
 
 addresses.country
 
-
-
 </td>
 <td valign="top">
 
 The \[home\]country of the user. The value is in the ISO 3166-1 alpha 2 "short" code format. \[[ISO3166](https://tools.ietf.org/html/draft-ietf-scim-core-schema-17#ref-ISO3166)\].
-
-
 
 </td>
 </tr>
@@ -320,14 +254,10 @@ The \[home\]country of the user. The value is in the ISO 3166-1 alpha 2 "short" 
 
 groups
 
-
-
 </td>
 <td valign="top">
 
 User group assignment information
-
-
 
 </td>
 </tr>
@@ -342,42 +272,30 @@ User group assignment information
 
 Approach
 
-
-
 </th>
 <th valign="top">
 
 Parameter
-
-
 
 </th>
 <th valign="top">
 
 Required
 
-
-
 </th>
 <th valign="top">
 
 Data Type
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Parameter Type
-
-
 
 </th>
 </tr>
@@ -396,21 +314,15 @@ Id-Based Pagination
 
 `startId`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 String
-
-
 
 </td>
 <td valign="top">
@@ -440,8 +352,6 @@ If <user id\> value is specified, the user with this user id is returned as the 
 
 Path
 
-
-
 </td>
 </tr>
 <tr>
@@ -449,21 +359,15 @@ Path
 
 `count`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 Integer
-
-
 
 </td>
 <td valign="top">
@@ -482,8 +386,6 @@ Default value: `100`.
 
 Path
 
-
-
 </td>
 </tr>
 <tr>
@@ -491,28 +393,20 @@ Path
 
 Index-Based Pagination
 
-
-
 </td>
 <td valign="top">
 
 `startIndex`
-
-
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 Integer
-
-
 
 </td>
 <td valign="top">
@@ -529,8 +423,6 @@ Represents the start index from which the results are returned. Default value: `
 
 Path
 
-
-
 </td>
 </tr>
 <tr>
@@ -538,21 +430,15 @@ Path
 
 `count`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 Integer
-
-
 
 </td>
 <td valign="top">
@@ -570,8 +456,6 @@ Default value: `100`.
 <td valign="top">
 
 Path
-
-
 
 </td>
 </tr>
@@ -625,21 +509,15 @@ Depending on the pagination approach you choose, the following pagination attrib
 
 Approach
 
-
-
 </th>
 <th valign="top">
 
 Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -648,21 +526,15 @@ Description
 
 Index-Based pagination
 
-
-
 </td>
 <td valign="top">
 
 `totalResults`
 
-
-
 </td>
 <td valign="top">
 
 Specifies the total number of results matching the query, for example: 100.
-
-
 
 </td>
 </tr>
@@ -671,14 +543,10 @@ Specifies the total number of results matching the query, for example: 100.
 
 `itemsPerPage`
 
-
-
 </td>
 <td valign="top">
 
 Specifies the number of query results returned in a query response page, for example: 3.
-
-
 
 </td>
 </tr>
@@ -687,14 +555,10 @@ Specifies the number of query results returned in a query response page, for exa
 
 `startIndex`
 
-
-
 </td>
 <td valign="top">
 
 The 1-based index of the first result in the current set of query results, for example: 1.
-
-
 
 </td>
 </tr>
@@ -703,21 +567,15 @@ The 1-based index of the first result in the current set of query results, for e
 
 Id-Based pagination
 
-
-
 </td>
 <td valign="top">
 
 `totalResults`
 
-
-
 </td>
 <td valign="top">
 
 Specifies the total number of results matching the query, for example: 100.
-
-
 
 </td>
 </tr>
@@ -726,14 +584,10 @@ Specifies the total number of results matching the query, for example: 100.
 
 `itemsPerPage`
 
-
-
 </td>
 <td valign="top">
 
 Specifies the number of query results returned in a query response page, for example: 3.
-
-
 
 </td>
 </tr>
@@ -742,14 +596,10 @@ Specifies the number of query results returned in a query response page, for exa
 
 `startId`
 
-
-
 </td>
 <td valign="top">
 
 Specifies the first entry of the query result, for example: `initial` or `<user id>`.
-
-
 
 </td>
 </tr>
@@ -758,14 +608,10 @@ Specifies the first entry of the query result, for example: `initial` or `<user 
 
 `nextId`
 
-
-
 </td>
 <td valign="top">
 
 Specifies the next user id \(that is, the id of the first user on the next page\). For example: `<user id>` or `<end>`. The `<end>` value indicates that the last user of the total number of users matching the query is returned.
-
-
 
 </td>
 </tr>
@@ -857,14 +703,10 @@ Specifies the next user id \(that is, the id of the first user on the next page\
     > 
     > Value
     > 
-    > 
-    > 
     > </th>
     > <th valign="top">
     > 
     > Meaning
-    > 
-    > 
     > 
     > </th>
     > </tr>
@@ -873,14 +715,10 @@ Specifies the next user id \(that is, the id of the first user on the next page\
     > 
     > 39
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > Corporate User Store
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -889,14 +727,10 @@ Specifies the next user id \(that is, the id of the first user on the next page\
     > 
     > 100
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > SuccessFactors
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -905,14 +739,10 @@ Specifies the next user id \(that is, the id of the first user on the next page\
     > 
     > 101
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > SAP Learning Management System
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -1079,21 +909,15 @@ The response does not contain the whole **User resource object**. It returns onl
 
 Response Code
 
-
-
 </th>
 <th valign="top">
 
 Meaning
 
-
-
 </th>
 <th valign="top">
 
 Response Description
-
-
 
 </th>
 </tr>
@@ -1102,21 +926,15 @@ Response Description
 
 200
 
-
-
 </td>
 <td valign="top">
 
 OK
 
-
-
 </td>
 <td valign="top">
 
 Operation Successful
-
-
 
 </td>
 </tr>

@@ -51,21 +51,15 @@ If you want to change the user identifier text you have to update the key value 
 
 HTTP Method
 
-
-
 </th>
 <th valign="top">
 
 See
 
-
-
 </th>
 <th valign="top">
 
 URI
-
-
 
 </th>
 </tr>
@@ -74,21 +68,15 @@ URI
 
 *GET*
 
-
-
 </td>
 <td valign="top">
 
 [GET Tenant Texts](change-tenant-texts-rest-api-66ad80a.md#loio1354b73465204a5d98e8eddba091e932)
 
-
-
 </td>
 <td valign="top">
 
 **`https://<tenant ID>.accounts.ondemand.com/service/resource?resourceType=RESOURCE_I18N_BUNDLE&locale=<value>`** 
-
-
 
 </td>
 </tr>
@@ -97,21 +85,15 @@ URI
 
 *POST*
 
-
-
 </td>
 <td valign="top">
 
 [POST Tenant Texts](change-tenant-texts-rest-api-66ad80a.md#loio748bde4796204486a6069488e9a63ef6)
 
-
-
 </td>
 <td valign="top">
 
 **`https://<tenant ID>.accounts.ondemand.com/service/resource/SAP_DEFAULT`** 
-
-
 
 </td>
 </tr>
@@ -172,28 +154,20 @@ For tenants that contain predefined changed texts, download the texts that overw
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Notes
-
-
 
 </th>
 </tr>
@@ -202,28 +176,20 @@ Notes
 
 `setId` 
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 The identifier of the scenario that the resource is related to.
 
-
-
 </td>
 <td valign="top">
 
 The default value is`SAP_DEFAULT` 
-
-
 
 </td>
 </tr>
@@ -232,28 +198,20 @@ The default value is`SAP_DEFAULT`
 
 `resourceType` 
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 The type of the resource.
 
-
-
 </td>
 <td valign="top">
 
 Use `RESOURCE_I18N_BUNDLE` 
-
-
 
 </td>
 </tr>
@@ -262,28 +220,20 @@ Use `RESOURCE_I18N_BUNDLE`
 
 `locale` 
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 The locale of the resource.
 
-
-
 </td>
 <td valign="top">
 
-The end user screens of the applications that use Identity Authentication for authentication, support the following languages: Arabic \(ar\), Bulgarian \(bg\), Catalan \(ca\), Chinese PRC \(zh-cn\), Chinese Taiwan \(zh-tw\), Croatian \(hr\), Czech \(cs\), Danish \(da\), Dutch \(nl\), English United Kingdom \(en-gb\), English United States \(en-us\), Estonian \(et\), Finnish \(fi\), French Standard \(fr\), French Canada \(fr-ca\), German Standard \(de\), Greek \(el\), Hebrew \(iw\), Hungarian \(hu\), Italian \(it\), Japanese \(ja\), Korean \(ko\), Latvian \(lv\), Lithuanian \(lt\), Norwegian \(no\), Polish \(pl\), Portuguese Portugal \(pt\), Romanian \(ro\), Russian \(ru\), Serbian \(sr\), Slovak \(sk\), Slovenian \(sl\), Spanish \(es\), Spanish Mexico \(es-mx\), Swedish \(sv\), Turkish \(tr\), Ukrainian \(uk\), Welsh \(cy\).
-
-
+The end user screens of the applications that use Identity Authentication for authentication, support the following languages: Arabic \(ar\), Bulgarian \(bg\), Catalan \(ca\), Chinese PRC \(zh-cn\), Chinese Taiwan \(zh-tw\), Croatian \(hr\), Czech \(cs\), Danish \(da\), Dutch \(nl\), English United Kingdom \(en-gb\), English United States \(en-us\), Estonian \(et\), Finnish \(fi\), French Standard \(fr\), French Canada \(fr-ca\), German Standard \(de\), Greek \(el\), Hebrew \(iw\), Hungarian \(hu\), Italian \(it\), Japanese \(ja\), Korean \(ko\), Latvian \(lv\), Lithuanian \(lt\), Malay \(s\), Norwegian \(no\), Polish \(pl\), Portuguese Portugal \(pt\), Romanian \(ro\), Russian \(ru\), Serbian \(sr\), Slovak \(sk\), Slovenian \(sl\), Spanish \(es\), Spanish Mexico \(es-mx\), Swedish \(sv\), Thai \(th\), Turkish \(tr\), Ukrainian \(uk\), Vietnamese \(vi\), Welsh \(cy\).
 
 </td>
 </tr>
@@ -315,21 +265,15 @@ GET /service/resource?resourceType=RESOURCE_I18N_BUNDLE&locale=en
 
 Code
 
-
-
 </th>
 <th valign="top">
 
 Meaning
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -338,21 +282,15 @@ Description
 
 200 OK
 
-
-
 </td>
 <td valign="top">
 
 The request was successful.
 
-
-
 </td>
 <td valign="top">
 
 OK
-
-
 
 </td>
 </tr>
@@ -367,21 +305,15 @@ OK
 
 Response Code
 
-
-
 </th>
 <th valign="top">
 
 Meaning
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -390,21 +322,15 @@ Description
 
 *400*
 
-
-
 </td>
 <td valign="top">
 
 Bad Request
 
-
-
 </td>
 <td valign="top">
 
 Validate JSON data. Validate that the special characters are escaped properly and new lines are added.
-
-
 
 </td>
 </tr>
@@ -413,21 +339,15 @@ Validate JSON data. Validate that the special characters are escaped properly an
 
 *401*
 
-
-
 </td>
 <td valign="top">
 
 Unauthorized
 
-
-
 </td>
 <td valign="top">
 
 The client is not authenticated.
-
-
 
 </td>
 </tr>
@@ -436,21 +356,15 @@ The client is not authenticated.
 
 *403*
 
-
-
 </td>
 <td valign="top">
 
 Forbidden
 
-
-
 </td>
 <td valign="top">
 
 Access to the resource is denied.
-
-
 
 </td>
 </tr>
@@ -459,21 +373,15 @@ Access to the resource is denied.
 
 *404*
 
-
-
 </td>
 <td valign="top">
 
 Not Found
 
-
-
 </td>
 <td valign="top">
 
 The requested resource cannot be found.
-
-
 
 </td>
 </tr>
@@ -482,21 +390,15 @@ The requested resource cannot be found.
 
 *405*
 
-
-
 </td>
 <td valign="top">
 
 Method Not Allowed
 
-
-
 </td>
 <td valign="top">
 
 The requested method is not supported for the given resource.
-
-
 
 </td>
 </tr>
@@ -505,21 +407,15 @@ The requested method is not supported for the given resource.
 
 *415*
 
-
-
 </td>
 <td valign="top">
 
 Unsupported Media Type
 
-
-
 </td>
 <td valign="top">
 
 The REST service does not support the API version requested by the REST client.
-
-
 
 </td>
 </tr>
@@ -528,21 +424,15 @@ The REST service does not support the API version requested by the REST client.
 
 *500*
 
-
-
 </td>
 <td valign="top">
 
 Internal Server Error
 
-
-
 </td>
 <td valign="top">
 
 The operation cannot be completed due to a service error.
-
-
 
 </td>
 </tr>
@@ -551,21 +441,15 @@ The operation cannot be completed due to a service error.
 
 *503*
 
-
-
 </td>
 <td valign="top">
 
 Service Unavailable
 
-
-
 </td>
 <td valign="top">
 
 The service is currently unavailable.
-
-
 
 </td>
 </tr>
@@ -639,14 +523,10 @@ Update the tenant texts.
 > 
 > Value
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Escape Sequences
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -655,14 +535,10 @@ Update the tenant texts.
 > 
 > \\b
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Backspace \(ascii code 08\)
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -671,14 +547,10 @@ Update the tenant texts.
 > 
 > \\f
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Form feed \(ascii code 0C\)
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -687,14 +559,10 @@ Update the tenant texts.
 > 
 > \\n
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > New line
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -703,14 +571,10 @@ Update the tenant texts.
 > 
 > \\r
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Carriage return
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -719,14 +583,10 @@ Update the tenant texts.
 > 
 > \\t
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Tab
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -735,14 +595,10 @@ Update the tenant texts.
 > 
 > \\"
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Double quote
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -751,14 +607,10 @@ Update the tenant texts.
 > 
 > \\\\
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Backslash character
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -849,21 +701,15 @@ general.auth.request.error=Identity Provider could not process the authenticatio
 
 Code
 
-
-
 </th>
 <th valign="top">
 
 Meaning
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -872,21 +718,15 @@ Description
 
 200 OK
 
-
-
 </td>
 <td valign="top">
 
 The request was successful.
 
-
-
 </td>
 <td valign="top">
 
 OK
-
-
 
 </td>
 </tr>
@@ -901,21 +741,15 @@ OK
 
 Response Code
 
-
-
 </th>
 <th valign="top">
 
 Meaning
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -924,21 +758,15 @@ Description
 
 *400*
 
-
-
 </td>
 <td valign="top">
 
 Bad Request
 
-
-
 </td>
 <td valign="top">
 
 Validate JSON data. Validate that the special characters are escaped properly and new lines are added.
-
-
 
 </td>
 </tr>
@@ -947,21 +775,15 @@ Validate JSON data. Validate that the special characters are escaped properly an
 
 *401*
 
-
-
 </td>
 <td valign="top">
 
 Unauthorized
 
-
-
 </td>
 <td valign="top">
 
 The client is not authenticated.
-
-
 
 </td>
 </tr>
@@ -970,21 +792,15 @@ The client is not authenticated.
 
 *403*
 
-
-
 </td>
 <td valign="top">
 
 Forbidden
 
-
-
 </td>
 <td valign="top">
 
 Access to the resource is denied.
-
-
 
 </td>
 </tr>
@@ -993,21 +809,15 @@ Access to the resource is denied.
 
 *404*
 
-
-
 </td>
 <td valign="top">
 
 Not Found
 
-
-
 </td>
 <td valign="top">
 
 The requested resource cannot be found.
-
-
 
 </td>
 </tr>
@@ -1016,21 +826,15 @@ The requested resource cannot be found.
 
 *405*
 
-
-
 </td>
 <td valign="top">
 
 Method Not Allowed
 
-
-
 </td>
 <td valign="top">
 
 The requested method is not supported for the given resource.
-
-
 
 </td>
 </tr>
@@ -1039,21 +843,15 @@ The requested method is not supported for the given resource.
 
 *415*
 
-
-
 </td>
 <td valign="top">
 
 Unsupported Media Type
 
-
-
 </td>
 <td valign="top">
 
 The REST service does not support the API version requested by the REST client.
-
-
 
 </td>
 </tr>
@@ -1062,21 +860,15 @@ The REST service does not support the API version requested by the REST client.
 
 *500*
 
-
-
 </td>
 <td valign="top">
 
 Internal Server Error
 
-
-
 </td>
 <td valign="top">
 
 The operation cannot be completed due to a service error.
-
-
 
 </td>
 </tr>
@@ -1085,21 +877,15 @@ The operation cannot be completed due to a service error.
 
 *503*
 
-
-
 </td>
 <td valign="top">
 
 Service Unavailable
 
-
-
 </td>
 <td valign="top">
 
 The service is currently unavailable.
-
-
 
 </td>
 </tr>

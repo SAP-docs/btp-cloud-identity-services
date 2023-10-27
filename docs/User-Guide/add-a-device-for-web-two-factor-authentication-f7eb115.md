@@ -43,15 +43,11 @@ Some applications require web two-factor authentication as an additional securit
     <th valign="top">
 
      
-
-
     
     </th>
     <th valign="top">
 
      
-
-
     
     </th>
     </tr>
@@ -59,15 +55,11 @@ Some applications require web two-factor authentication as an additional securit
     <td valign="top">
     
     *TOTP Two-Factor Authentication*
-
-
     
     </td>
     <td valign="top">
     
     \(if configured\) Provide the passcode and choose *Send* after selecting that option.
-
-
     
     </td>
     </tr>
@@ -75,15 +67,11 @@ Some applications require web two-factor authentication as an additional securit
     <td valign="top">
     
     *WEB Two-Factor Authentication*
-
-
     
     </td>
     <td valign="top">
     
     \(if configured\) Your security key. Follow the onscreen instructions after selecting that option.
-
-
     
     </td>
     </tr>

@@ -13,14 +13,10 @@ The table shows the available options and what are the suitable use-cases:
 
 Use Case
 
-
-
 </th>
 <th valign="top">
 
 Configuration
-
-
 
 </th>
 </tr>
@@ -28,8 +24,6 @@ Configuration
 <td valign="top">
 
 Corporate User Store
-
-
 
 </td>
 <td valign="top">
@@ -46,8 +40,6 @@ Corporate User Store
 
 Kerberos Authentication
 
-
-
 </td>
 <td valign="top">
 
@@ -63,14 +55,10 @@ Kerberos Authentication
 
 Identity Provider Proxy
 
-
-
 </td>
 <td valign="top">
 
 [Corporate Identity Providers](corporate-identity-providers-19f3eca.md)
-
-
 
 </td>
 </tr>

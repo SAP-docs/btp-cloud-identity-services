@@ -186,15 +186,11 @@ For this scenario, you have to configure the user attribute `First Name` in Iden
     <th valign="top">
 
     Assertion Attribute
-
-
     
     </th>
     <th valign="top">
 
     Principal Attribute
-
-
     
     </th>
     </tr>
@@ -202,15 +198,11 @@ For this scenario, you have to configure the user attribute `First Name` in Iden
     <td valign="top">
     
     first\_name
-
-
     
     </td>
     <td valign="top">
     
     firstname
-
-
     
     </td>
     </tr>

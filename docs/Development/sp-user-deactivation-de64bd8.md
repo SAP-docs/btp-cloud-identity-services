@@ -31,21 +31,15 @@ You need to set up the authentication type to access the API. For more informati
 
 Header
 
-
-
 </th>
 <th valign="top">
 
 Required
 
-
-
 </th>
 <th valign="top">
 
 Values
-
-
 
 </th>
 </tr>
@@ -54,21 +48,15 @@ Values
 
 `Basic Authorization`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 For more information, see [API Authentication](../Operation-Guide/api-authentication-9d200d5.md).
-
-
 
 </td>
 </tr>
@@ -77,21 +65,15 @@ For more information, see [API Authentication](../Operation-Guide/api-authentica
 
 `Content-Type`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 application/vnd.sap-id-service.sp-user-id+xml
-
-
 
 </td>
 </tr>
@@ -108,35 +90,25 @@ application/vnd.sap-id-service.sp-user-id+xml
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Parameter Type
-
-
 
 </th>
 </tr>
@@ -145,35 +117,25 @@ Parameter Type
 
 `status`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 When the user activates his or her email, the `status` is set to **active**. To deactivate the SP user, update the `status` parameter by setting it to **inactive**. To activate the SP user, set it to **active**.
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -182,35 +144,25 @@ Request body
 
 `applicationId`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 String
 
-
-
 </td>
 <td valign="top">
 
 The ID of the subscribed application. The user is deactivated for the application with the provided ID.
 
-
-
 </td>
 <td valign="top">
 
 Query string
-
-
 
 </td>
 </tr>
@@ -246,21 +198,15 @@ Content-type: application/vnd.sap-id-service.sp-user-id+xml; version=1.0
 
 Code
 
-
-
 </th>
 <th valign="top">
 
 Reason
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -269,21 +215,15 @@ Description
 
 200
 
-
-
 </td>
 <td valign="top">
 
 Deactivated
 
-
-
 </td>
 <td valign="top">
 
 SP user is successfully deactivated
-
-
 
 </td>
 </tr>

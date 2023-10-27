@@ -31,14 +31,10 @@ Identity Authentication has predefined the following validity periods:
 
 Application Process
 
-
-
 </th>
 <th valign="top">
 
 Default Validity Period
-
-
 
 </th>
 </tr>
@@ -47,14 +43,10 @@ Default Validity Period
 
 Self-Registration
 
-
-
 </td>
 <td valign="top">
 
 14 Days
-
-
 
 </td>
 </tr>
@@ -63,14 +55,10 @@ Self-Registration
 
 On-Behalf Registration
 
-
-
 </td>
 <td valign="top">
 
 14 Days
-
-
 
 </td>
 </tr>
@@ -79,14 +67,10 @@ On-Behalf Registration
 
 Invitation
 
-
-
 </td>
 <td valign="top">
 
 14 Days
-
-
 
 </td>
 </tr>
@@ -95,14 +79,10 @@ Invitation
 
 Forgot Password
 
-
-
 </td>
 <td valign="top">
 
 2 Hours
-
-
 
 </td>
 </tr>
@@ -111,14 +91,10 @@ Forgot Password
 
 Locked Password
 
-
-
 </td>
 <td valign="top">
 
 2 Hours
-
-
 
 </td>
 </tr>
@@ -127,14 +103,10 @@ Locked Password
 
 Reset Password
 
-
-
 </td>
 <td valign="top">
 
 2 Hours
-
-
 
 </td>
 </tr>

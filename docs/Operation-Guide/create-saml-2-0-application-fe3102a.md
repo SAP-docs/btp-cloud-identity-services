@@ -32,15 +32,11 @@ To create a new SAML 2.0 application, proceed as follows:
     <th valign="top">
 
     Fields
-
-
     
     </th>
     <th valign="top">
 
     Notes
-
-
     
     </th>
     </tr>
@@ -48,15 +44,11 @@ To create a new SAML 2.0 application, proceed as follows:
     <td valign="top">
     
     *Display Name*
-
-
     
     </td>
     <td valign="top">
     
     Required. The display name of the application appears on the logon and registration pages.
-
-
     
     </td>
     </tr>
@@ -64,15 +56,11 @@ To create a new SAML 2.0 application, proceed as follows:
     <td valign="top">
     
     *Home URL*
-
-
     
     </td>
     <td valign="top">
     
     Optional. Users are redirected to the *Home URL* after activating their accounts, when they are created via a CSV file import or the user registration service of Identity Authentication.
-
-
     
     </td>
     </tr>
@@ -80,15 +68,11 @@ To create a new SAML 2.0 application, proceed as follows:
     <td valign="top">
     
     *Type*
-
-
     
     </td>
     <td valign="top">
     
     Optional.
-
-
     
     </td>
     </tr>
@@ -96,8 +80,6 @@ To create a new SAML 2.0 application, proceed as follows:
     <td valign="top">
     
     *Parent Application*
-
-
     
     </td>
     <td valign="top">
@@ -115,8 +97,6 @@ To create a new SAML 2.0 application, proceed as follows:
     <td valign="top">
     
     *Protocol Authentication*
-
-
     
     </td>
     <td valign="top">

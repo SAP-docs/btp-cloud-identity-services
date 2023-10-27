@@ -102,21 +102,15 @@ The link for IdP-Initiated SSO follows the pattern: `https://<tenant_ID>.account
 > 
 > Parameter
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Mandatory
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Description
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -125,21 +119,15 @@ The link for IdP-Initiated SSO follows the pattern: `https://<tenant_ID>.account
 > 
 > `sp`
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Yes
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Name of the SAML 2 service provider for which SSO is performed. The `sp_name` value of the parameter equals to the `Entity ID` of the service provider. This parameter is needed for Identity Authentication to know which service provider to redirect the user to after successful authentication.
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -148,14 +136,10 @@ The link for IdP-Initiated SSO follows the pattern: `https://<tenant_ID>.account
 > 
 > `RelayState`
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > No
-> 
-> 
 > 
 > </td>
 > <td valign="top">
@@ -174,8 +158,6 @@ The link for IdP-Initiated SSO follows the pattern: `https://<tenant_ID>.account
 > 
 > `index`
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
@@ -191,8 +173,6 @@ The link for IdP-Initiated SSO follows the pattern: `https://<tenant_ID>.account
 > 
 > A non-digit value or a value for an index entry that is not configured returns an error message.
 > 
-> 
-> 
 > </td>
 > </tr>
 > <tr>
@@ -200,14 +180,10 @@ The link for IdP-Initiated SSO follows the pattern: `https://<tenant_ID>.account
 > 
 > `login_hint`
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > No
-> 
-> 
 > 
 > </td>
 > <td valign="top">
@@ -215,8 +191,6 @@ The link for IdP-Initiated SSO follows the pattern: `https://<tenant_ID>.account
 > The `login_hint` parameter helps the user when he or she is known to the service provider \(SP\). Thus it prevents the user from re-typing the user identifier on the logon or conditional screen.
 > 
 > Supported values are the allowed logon identifiers for the users. The options are *User ID*, *Login Name*, and *Email* \(For SAML 2.0\). For more information, see [Configure Allowed Logon Identifiers](configure-allowed-logon-identifiers-3adf1ff.md) .
-> 
-> 
 > 
 > </td>
 > </tr>

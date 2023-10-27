@@ -17,70 +17,50 @@ The allowed placeholders are marked with *Yes* in the table:
 
 Placeholder/Email Template
 
-
-
 </th>
 <th valign="top">
 
 Self-Registration
-
-
 
 </th>
 <th valign="top">
 
 On-Behalf Registration
 
-
-
 </th>
 <th valign="top">
 
 Invitation
-
-
 
 </th>
 <th valign="top">
 
 Forgot Password
 
-
-
 </th>
 <th valign="top">
 
 Locked Password
-
-
 
 </th>
 <th valign="top">
 
 Reset Password
 
-
-
 </th>
 <th valign="top">
 
 Send Security Alert
-
-
 
 </th>
 <th valign="top">
 
 Deactivate TOTP Device
 
-
-
 </th>
 <th valign="top">
 
 Email OTP Code
-
-
 
 </th>
 </tr>
@@ -89,70 +69,50 @@ Email OTP Code
 
 `${user.sp_name}`
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
 
 </td>
 </tr>
@@ -161,70 +121,50 @@ Yes
 
 `${user.activate_account_link}`
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
-Yes
-
-
+No
 
 </td>
 <td valign="top">
 
 No
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
-
-</td>
-<td valign="top">
-
-No
-
-
-
-</td>
-<td valign="top">
-
-No
-
-
 
 </td>
 </tr>
@@ -233,70 +173,50 @@ No
 
 `${user.firstName}`
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
 
 </td>
 </tr>
@@ -305,70 +225,50 @@ Yes
 
 `${user.lastName}`
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
 
 </td>
 </tr>
@@ -377,70 +277,50 @@ Yes
 
 `${user.mail}`
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
 
 </td>
 </tr>
@@ -449,70 +329,50 @@ Yes
 
 `${user.uid}`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 No
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
 
 </td>
 </tr>
@@ -521,70 +381,50 @@ Yes
 
 `${user.ids_home_link}`
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
 
 </td>
 </tr>
@@ -593,70 +433,50 @@ Yes
 
 `${user.loginName}`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 No
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
 
 </td>
 </tr>
@@ -665,70 +485,50 @@ Yes
 
 `${user.company_logo}`
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
 
 </td>
 </tr>
@@ -737,70 +537,50 @@ Yes
 
 `${user.sap_mailing_logo}`
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+Yes
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
-
-</td>
-<td valign="top">
-
-Yes
-
-
 
 </td>
 </tr>
@@ -809,70 +589,50 @@ Yes
 
 `${user.target_url}`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
-
-</td>
-<td valign="top">
-
-No
-
-
-
-</td>
-<td valign="top">
-
-No
-
-
 
 </td>
 </tr>
@@ -881,70 +641,50 @@ No
 
 `${user.reset_password_link}`
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
-
-</td>
-<td valign="top">
-
-No
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
-
-</td>
-<td valign="top">
-
-No
-
-
 
 </td>
 </tr>
@@ -953,70 +693,50 @@ No
 
 `${user.set_locked_password_link}`
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
-
-</td>
-<td valign="top">
-
-No
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
-
-</td>
-<td valign="top">
-
-No
-
-
 
 </td>
 </tr>
@@ -1025,70 +745,50 @@ No
 
 `${other.securityAlertText}`
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
-
-</td>
-<td valign="top">
-
-No
-
-
-
-</td>
-<td valign="top">
-
-No
-
-
 
 </td>
 <td valign="top">
 
 Yes/Mandatory
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -1097,70 +797,50 @@ No
 
 `${other.totpResetPasscode}`
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
-
-</td>
-<td valign="top">
-
-No
-
-
-
-</td>
-<td valign="top">
-
-No
-
-
-
-</td>
-<td valign="top">
-
-No
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 </tr>
@@ -1169,70 +849,50 @@ No
 
 $\{other.emailOtpCode\}
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
-
-</td>
-<td valign="top">
-
-No
-
-
-
-</td>
-<td valign="top">
-
-No
-
-
-
-</td>
-<td valign="top">
-
-No
-
-
 
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 </tr>
@@ -1241,70 +901,50 @@ Yes
 
 `${user.inviter_name}`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
-
-</td>
-<td valign="top">
-
-No
-
-
-
-</td>
-<td valign="top">
-
-No
-
-
 
 </td>
 </tr>
@@ -1313,70 +953,50 @@ No
 
 `${user.footer}`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
-
-</td>
-<td valign="top">
-
-No
-
-
-
-</td>
-<td valign="top">
-
-No
-
-
 
 </td>
 </tr>
@@ -1385,70 +1005,50 @@ No
 
 `${user.header}`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 Yes
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
+</td>
+<td valign="top">
 
+No
 
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
-
-</td>
-<td valign="top">
-
-No
-
-
-
-</td>
-<td valign="top">
-
-No
-
-
 
 </td>
 </tr>
@@ -1463,14 +1063,10 @@ No
 
 Placeholder
 
-
-
 </th>
 <th valign="top">
 
 Notes
-
-
 
 </th>
 </tr>
@@ -1479,14 +1075,10 @@ Notes
 
 `${user.sp_name}`
 
-
-
 </td>
 <td valign="top">
 
 The name of the application for which the email is sent.
-
-
 
 </td>
 </tr>
@@ -1495,14 +1087,10 @@ The name of the application for which the email is sent.
 
 `${user.activate_account_link}`
 
-
-
 </td>
 <td valign="top">
 
 The account activation link sent to the user in the email.
-
-
 
 </td>
 </tr>
@@ -1511,14 +1099,10 @@ The account activation link sent to the user in the email.
 
 `${user.firstName}`
 
-
-
 </td>
 <td valign="top">
 
 The first name of the user.
-
-
 
 </td>
 </tr>
@@ -1527,14 +1111,10 @@ The first name of the user.
 
 `${user.lastName}`
 
-
-
 </td>
 <td valign="top">
 
 The last name of the user.
-
-
 
 </td>
 </tr>
@@ -1543,14 +1123,10 @@ The last name of the user.
 
 `${user.mail}`
 
-
-
 </td>
 <td valign="top">
 
 The email of the user.
-
-
 
 </td>
 </tr>
@@ -1559,14 +1135,10 @@ The email of the user.
 
 `${user.uid}`
 
-
-
 </td>
 <td valign="top">
 
 The user universal unique identifier \(Global User ID\) number.
-
-
 
 </td>
 </tr>
@@ -1575,14 +1147,10 @@ The user universal unique identifier \(Global User ID\) number.
 
 `${user.ids_home_link}`
 
-
-
 </td>
 <td valign="top">
 
 ???
-
-
 
 </td>
 </tr>
@@ -1591,14 +1159,10 @@ The user universal unique identifier \(Global User ID\) number.
 
 `${user.loginName}`
 
-
-
 </td>
 <td valign="top">
 
 The login name of the user.
-
-
 
 </td>
 </tr>
@@ -1607,14 +1171,10 @@ The login name of the user.
 
 `${user.company_logo}`
 
-
-
 </td>
 <td valign="top">
 
 The application logo shown on the logon page and in the emails sent to users.
-
-
 
 </td>
 </tr>
@@ -1623,14 +1183,10 @@ The application logo shown on the logon page and in the emails sent to users.
 
 `${user.sap_mailing_logo}`
 
-
-
 </td>
 <td valign="top">
 
 ???
-
-
 
 </td>
 </tr>
@@ -1639,14 +1195,10 @@ The application logo shown on the logon page and in the emails sent to users.
 
 `${user.target_url}`
 
-
-
 </td>
 <td valign="top">
 
 The URL that the user is redirected to after registration.
-
-
 
 </td>
 </tr>
@@ -1655,14 +1207,10 @@ The URL that the user is redirected to after registration.
 
 `${user.reset_password_link}`
 
-
-
 </td>
 <td valign="top">
 
 The link provided in the email to reset the password.
-
-
 
 </td>
 </tr>
@@ -1671,14 +1219,10 @@ The link provided in the email to reset the password.
 
 `${user.set_locked_password_link}`
 
-
-
 </td>
 <td valign="top">
 
 The link provided in the email to set a new password,
-
-
 
 </td>
 </tr>
@@ -1687,14 +1231,10 @@ The link provided in the email to set a new password,
 
 `${other.securityAlertText}`
 
-
-
 </td>
 <td valign="top">
 
 The text for the specific security alert.
-
-
 
 </td>
 </tr>
@@ -1703,14 +1243,10 @@ The text for the specific security alert.
 
 `${other.totpResetPasscode}`
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1719,14 +1255,10 @@ The text for the specific security alert.
 
 $\{other.emailOtpCode\}
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1735,14 +1267,10 @@ $\{other.emailOtpCode\}
 
 `${user.inviter_name}`
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1751,14 +1279,10 @@ $\{other.emailOtpCode\}
 
 `${user.footer}`
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -1767,14 +1291,10 @@ $\{other.emailOtpCode\}
 
 `${user.header}`
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>

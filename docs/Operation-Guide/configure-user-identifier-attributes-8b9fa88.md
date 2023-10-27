@@ -29,21 +29,15 @@ The default configuration for the user identifiers are:
 
 User Identifier
 
-
-
 </th>
 <th valign="top">
 
 Required
 
-
-
 </th>
 <th valign="top">
 
 Unique
-
-
 
 </th>
 </tr>
@@ -52,21 +46,15 @@ Unique
 
 *User ID*
 
-
-
 </td>
 <td valign="top">
 
 Yes/Not Configurable
 
-
-
 </td>
 <td valign="top">
 
 Yes/Not Configurable
-
-
 
 </td>
 </tr>
@@ -75,21 +63,15 @@ Yes/Not Configurable
 
 *Email*
 
-
-
 </td>
 <td valign="top">
 
 Yes/Configurable
 
-
-
 </td>
 <td valign="top">
 
 Yes/Configurable
-
-
 
 </td>
 </tr>
@@ -98,21 +80,15 @@ Yes/Configurable
 
 *Login Name*
 
-
-
 </td>
 <td valign="top">
 
 No/Configurable
 
-
-
 </td>
 <td valign="top">
 
 Yes/Not Configurable
-
-
 
 </td>
 </tr>
@@ -121,21 +97,15 @@ Yes/Not Configurable
 
 *Display Name*
 
-
-
 </td>
 <td valign="top">
 
 No/Configurable
 
-
-
 </td>
 <td valign="top">
 
 No/Configurable
-
-
 
 </td>
 </tr>
@@ -144,21 +114,15 @@ No/Configurable
 
 *Phone*
 
-
-
 </td>
 <td valign="top">
 
 No/Not Configurable
 
-
-
 </td>
 <td valign="top">
 
 No/Configurable
-
-
 
 </td>
 </tr>
@@ -183,21 +147,15 @@ The `Login Name` and *Phone* identifiers of a user can't have values that are eq
 
 Choice
 
-
-
 </th>
 <th valign="top">
 
 Yes
 
-
-
 </th>
 <th valign="top">
 
 No
-
-
 
 </th>
 </tr>
@@ -205,8 +163,6 @@ No
 <td valign="top">
 
 Required
-
-
 
 </td>
 <td valign="top">
@@ -241,8 +197,6 @@ Required
 <td valign="top">
 
 Unique
-
-
 
 </td>
 <td valign="top">

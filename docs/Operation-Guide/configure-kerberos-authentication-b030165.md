@@ -105,15 +105,11 @@ This procedure is performed by the domain administrator. If you are not a domain
     <th valign="top">
 
     Key Type
-
-
     
     </th>
     <th valign="top">
 
     Supported by Identity Authentication
-
-
     
     </th>
     </tr>
@@ -121,15 +117,11 @@ This procedure is performed by the domain administrator. If you are not a domain
     <td valign="top">
     
     RC4\_HMAC
-
-
     
     </td>
     <td valign="top">
     
     Yes
-
-
     
     </td>
     </tr>
@@ -137,15 +129,11 @@ This procedure is performed by the domain administrator. If you are not a domain
     <td valign="top">
     
     AES128\_CTS\_HMAC\_SHA1\_96
-
-
     
     </td>
     <td valign="top">
     
     Yes
-
-
     
     </td>
     </tr>
@@ -153,15 +141,11 @@ This procedure is performed by the domain administrator. If you are not a domain
     <td valign="top">
     
     AES256\_CTS\_HMAC\_SHA1\_96
-
-
     
     </td>
     <td valign="top">
     
     Yes
-
-
     
     </td>
     </tr>
@@ -169,15 +153,11 @@ This procedure is performed by the domain administrator. If you are not a domain
     <td valign="top">
     
     NTLMSSP
-
-
     
     </td>
     <td valign="top">
     
     No
-
-
     
     </td>
     </tr>
@@ -185,15 +165,11 @@ This procedure is performed by the domain administrator. If you are not a domain
     <td valign="top">
     
     NEGOEXT
-
-
     
     </td>
     <td valign="top">
     
     No
-
-
     
     </td>
     </tr>
@@ -231,14 +207,10 @@ This procedure is performed by the domain administrator. If you are not a domain
     > 
     > Operating System
     > 
-    > 
-    > 
     > </th>
     > <th valign="top">
     > 
     > Browser
-    > 
-    > 
     > 
     > </th>
     > </tr>
@@ -247,14 +219,10 @@ This procedure is performed by the domain administrator. If you are not a domain
     > 
     > Microsoft Windows 10
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > Microsoft Internet Explorer 11
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -262,16 +230,12 @@ This procedure is performed by the domain administrator. If you are not a domain
     > <td valign="top">
     > 
     > Microsoft Windows
-    > 
-    > 
     > 
     > </td>
     > <td valign="top">
     > 
     > Google Chrome
     > 
-    > 
-    > 
     > </td>
     > </tr>
     > <tr>
@@ -279,14 +243,10 @@ This procedure is performed by the domain administrator. If you are not a domain
     > 
     > Microsoft Windows
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > Mozilla Firefox
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -305,21 +265,15 @@ This procedure is performed by the domain administrator. If you are not a domain
     > 
     > Tenant Location
     > 
-    > 
-    > 
     > </th>
     > <th valign="top">
     > 
     > Infrastructure
     > 
-    > 
-    > 
     > </th>
     > <th valign="top">
     > 
     > Host Name
-    > 
-    > 
     > 
     > </th>
     > </tr>
@@ -328,21 +282,15 @@ This procedure is performed by the domain administrator. If you are not a domain
     > 
     > Australia
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > SAP
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > `au.accounts.ondemand.com.cloud.sap.akadns.net`
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -351,21 +299,15 @@ This procedure is performed by the domain administrator. If you are not a domain
     > 
     > Brazil
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > AWS
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > `br.accounts.ondemand.com.cloud.sap.akadns.net`
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -374,21 +316,15 @@ This procedure is performed by the domain administrator. If you are not a domain
     > 
     > Canada
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > Azure
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > `azr-na-ca.accounts.ondemand.com.cloud.sap.akadns.net`
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -397,21 +333,15 @@ This procedure is performed by the domain administrator. If you are not a domain
     > 
     > China
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > SAP
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > `accounts.sapcloud.cn.cloud.sap.akadns.net`
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -420,21 +350,15 @@ This procedure is performed by the domain administrator. If you are not a domain
     > 
     > EU
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > SAP
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > `accounts.ondemand.com.cloud.sap.akadns.net`
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -443,21 +367,15 @@ This procedure is performed by the domain administrator. If you are not a domain
     > 
     > Frankfurt
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > AWS
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > `aws-eu-de.accounts.ondemand.com.cloud.sap.akadns.net`
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -466,21 +384,15 @@ This procedure is performed by the domain administrator. If you are not a domain
     > 
     > India
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > AWS
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > `aws-ap-in.accounts.ondemand.com.cloud.sap.akadns.net`
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -489,21 +401,15 @@ This procedure is performed by the domain administrator. If you are not a domain
     > 
     > Japan
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > SAP
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > `jp.accounts.ondemand.com.cloud.sap.akadns.net`
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -512,21 +418,15 @@ This procedure is performed by the domain administrator. If you are not a domain
     > 
     > Saudi Arabia
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > SAP
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > `sa.accounts.ondemand.com.cloud.sap.akadns.net`
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -535,21 +435,15 @@ This procedure is performed by the domain administrator. If you are not a domain
     > 
     > Singapore
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > AWS
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > `aws-ap-se-1.accounts.ondemand.com.cloud.sap.akadns.net`
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -558,21 +452,15 @@ This procedure is performed by the domain administrator. If you are not a domain
     > 
     > South Korea
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > AWS
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > `aws-ap-kr.accounts.ondemand.com.cloud.sap.akadns.net`
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -581,21 +469,15 @@ This procedure is performed by the domain administrator. If you are not a domain
     > 
     > Switzerland
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > Azure
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > `azr-eu-ch.accounts.ondemand.com.cloud.sap.akadns.net`
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -604,21 +486,15 @@ This procedure is performed by the domain administrator. If you are not a domain
     > 
     > UAE
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > Azure
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > `azr-ap-ae.accounts.ondemand.com.cloud.sap.akadns.net`
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -627,21 +503,15 @@ This procedure is performed by the domain administrator. If you are not a domain
     > 
     > US East
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > SAP
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > `us-east.accounts.ondemand.com.cloud.sap.akadns.net`
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -650,21 +520,15 @@ This procedure is performed by the domain administrator. If you are not a domain
     > 
     > US East Trial
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > Azure
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > `trial-accounts.ondemand.com.cloud.sap.akadns.net`
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -673,21 +537,15 @@ This procedure is performed by the domain administrator. If you are not a domain
     > 
     > US West
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > Azure
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > `azr-us-we.accounts.ondemand.com.cloud.sap.akadns.net`
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -766,15 +624,11 @@ This procedure is performed by the tenant administrator.
         <th valign="top">
 
         Key Type
-
-
         
         </th>
         <th valign="top">
 
         Supported by Identity Authentication
-
-
         
         </th>
         </tr>
@@ -782,15 +636,11 @@ This procedure is performed by the tenant administrator.
         <td valign="top">
         
         RC4\_HMAC
-
-
         
         </td>
         <td valign="top">
         
         Yes
-
-
         
         </td>
         </tr>
@@ -798,15 +648,11 @@ This procedure is performed by the tenant administrator.
         <td valign="top">
         
         AES128\_CTS\_HMAC\_SHA1\_96
-
-
         
         </td>
         <td valign="top">
         
         Yes
-
-
         
         </td>
         </tr>
@@ -814,15 +660,11 @@ This procedure is performed by the tenant administrator.
         <td valign="top">
         
         AES256\_CTS\_HMAC\_SHA1\_96
-
-
         
         </td>
         <td valign="top">
         
         Yes
-
-
         
         </td>
         </tr>
@@ -830,15 +672,11 @@ This procedure is performed by the tenant administrator.
         <td valign="top">
         
         NTLMSSP
-
-
         
         </td>
         <td valign="top">
         
         No
-
-
         
         </td>
         </tr>
@@ -846,15 +684,11 @@ This procedure is performed by the tenant administrator.
         <td valign="top">
         
         NEGOEXT
-
-
         
         </td>
         <td valign="top">
         
         No
-
-
         
         </td>
         </tr>

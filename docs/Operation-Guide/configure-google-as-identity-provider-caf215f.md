@@ -31,14 +31,10 @@ To perform the social identity provider configuration in the administration cons
 
 Authentication Attribute
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -47,14 +43,10 @@ Description
 
 Google's client ID
 
-
-
 </td>
 <td valign="top">
 
 The Google OAuth 2.0 credential after you set a project in the Google Developers Console.
-
-
 
 </td>
 </tr>
@@ -63,14 +55,10 @@ The Google OAuth 2.0 credential after you set a project in the Google Developers
 
 Google's client secret
 
-
-
 </td>
 <td valign="top">
 
 The Google OAuth 2.0 credential after you set a project in the Google Developers Console.
-
-
 
 </td>
 </tr>

@@ -48,14 +48,10 @@ To edit an administrator's authorizations, proceed as follows:
     > 
     > Authorization
     > 
-    > 
-    > 
     > </th>
     > <th valign="top">
     > 
     > Description
-    > 
-    > 
     > 
     > </th>
     > </tr>
@@ -64,14 +60,10 @@ To edit an administrator's authorizations, proceed as follows:
     > 
     > Manage Applications
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > This role gives the tenant administrator permission to configure the applications via the administration console.
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -80,14 +72,10 @@ To edit an administrator's authorizations, proceed as follows:
     > 
     > Manage Corporate Identity Providers
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > This role gives the tenant administrator permission to configure the identity providers via the administration console.
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -96,14 +84,10 @@ To edit an administrator's authorizations, proceed as follows:
     > 
     > Manage Users
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > This role gives the tenant administrator permission to manage, import, and export users via the administration console.
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -112,14 +96,10 @@ To edit an administrator's authorizations, proceed as follows:
     > 
     > Read Users
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > This role gives the tenant administrator permission to retrieve user data and import users via the administration console and the SCIM REST API of Identity Authentication.
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -128,14 +108,10 @@ To edit an administrator's authorizations, proceed as follows:
     > 
     > Manage Groups
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > This role gives the tenant administrator permission to create, edit, and delete groups via the administration console.The tenant administrator can also assign authorization policies.
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -144,14 +120,10 @@ To edit an administrator's authorizations, proceed as follows:
     > 
     > Manage Tenant Configuration
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > This role gives the tenant administrator permission to manage tenant configuration and authorization assignment to users. Tenant administrators with that role can add additional roles to themselves or to other administrators.
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -160,14 +132,10 @@ To edit an administrator's authorizations, proceed as follows:
     > 
     > Manage Identity Provisioning
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > This role gives the tenant administrator permission to configure identity provisioning. The tenant administrator is granted the main IPS\_ADMIN role.
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -192,7 +160,7 @@ To edit an administrator's authorizations, proceed as follows:
 
 [Add Administrators](add-administrators-bbbdbdd.md#loiobbbdbdd3899942ce874f3aae9ba9e21d "As a tenant administrator, you can add new administrators in the administration console for SAP Cloud Identity Services.")
 
-[\(Beta\) Configure Authorizations Based on Policies](beta-configure-authorizations-based-on-policies-08fea39.md "Configure a granular access control based on policies for the administrators of SAP Cloud Identity Services.")
+[Configure Authorizations Based on Policies](configure-authorizations-based-on-policies-08fea39.md "Configure a granular access control based on policies for the administrators of SAP Cloud Identity Services.")
 
 [Identity Authentication Tenant as an Application Identity Provider](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/d3df5b457d0c43fca117da0dc14e2f0d.html)
 

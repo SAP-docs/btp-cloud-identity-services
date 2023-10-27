@@ -23,7 +23,7 @@ You can add both a person and a system in the administration console to act as a
 
 [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md "As a tenant administrator, you can edit both your own authorizations and other administrators' authorizations in the administration console for SAP Cloud Identity Services. By editing the administrator authorizations you can also delete an administrator.")
 
-[\(Beta\) Configure Authorizations Based on Policies](beta-configure-authorizations-based-on-policies-08fea39.md "Configure a granular access control based on policies for the administrators of SAP Cloud Identity Services.")
+[Configure Authorizations Based on Policies](configure-authorizations-based-on-policies-08fea39.md "Configure a granular access control based on policies for the administrators of SAP Cloud Identity Services.")
 
 <a name="loio1dc498bff0674743a1a3a0ec3f0bf298"/>
 
@@ -77,15 +77,11 @@ To add a person as a new tenant administrator, proceed as follows:
     <th valign="top">
 
     Authorization
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -93,15 +89,11 @@ To add a person as a new tenant administrator, proceed as follows:
     <td valign="top">
     
     Manage Applications
-
-
     
     </td>
     <td valign="top">
     
     This role gives the tenant administrator permission to configure the applications via the administration console.
-
-
     
     </td>
     </tr>
@@ -109,15 +101,11 @@ To add a person as a new tenant administrator, proceed as follows:
     <td valign="top">
     
     Manage Corporate Identity Providers
-
-
     
     </td>
     <td valign="top">
     
     This role gives the tenant administrator permission to configure the identity providers via the administration console.
-
-
     
     </td>
     </tr>
@@ -125,15 +113,11 @@ To add a person as a new tenant administrator, proceed as follows:
     <td valign="top">
     
     Manage Users
-
-
     
     </td>
     <td valign="top">
     
     This role gives the tenant administrator permission to manage, import, and export users via the administration console.
-
-
     
     </td>
     </tr>
@@ -141,15 +125,11 @@ To add a person as a new tenant administrator, proceed as follows:
     <td valign="top">
     
     Read Users
-
-
     
     </td>
     <td valign="top">
     
     This role gives the tenant administrator permission to retrieve user data and import users via the administration console and the SCIM REST API of Identity Authentication.
-
-
     
     </td>
     </tr>
@@ -157,15 +137,11 @@ To add a person as a new tenant administrator, proceed as follows:
     <td valign="top">
     
     Manage Groups
-
-
     
     </td>
     <td valign="top">
     
     This role gives the tenant administrator permission to create, edit, and delete groups via the administration console.The tenant administrator can also assign authorization policies.
-
-
     
     </td>
     </tr>
@@ -173,15 +149,11 @@ To add a person as a new tenant administrator, proceed as follows:
     <td valign="top">
     
     Manage Tenant Configuration
-
-
     
     </td>
     <td valign="top">
     
     This role gives the tenant administrator permission to manage tenant configuration and authorization assignment to users. Tenant administrators with that role can add additional roles to themselves or to other administrators.
-
-
     
     </td>
     </tr>
@@ -189,15 +161,11 @@ To add a person as a new tenant administrator, proceed as follows:
     <td valign="top">
     
     Manage Identity Provisioning
-
-
     
     </td>
     <td valign="top">
     
     This role gives the tenant administrator permission to configure identity provisioning. The tenant administrator is granted the main IPS\_ADMIN role.
-
-
     
     </td>
     </tr>
@@ -250,15 +218,11 @@ To add a system as a new tenant administrator, proceed as follows:
     <th valign="top">
 
     Authorization
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -266,15 +230,11 @@ To add a system as a new tenant administrator, proceed as follows:
     <td valign="top">
     
     Manage Applications
-
-
     
     </td>
     <td valign="top">
     
     This role gives the tenant administrator permission to configure the applications via the administration console.
-
-
     
     </td>
     </tr>
@@ -282,15 +242,11 @@ To add a system as a new tenant administrator, proceed as follows:
     <td valign="top">
     
     Manage Corporate Identity Providers
-
-
     
     </td>
     <td valign="top">
     
     This role gives the tenant administrator permission to configure the identity providers via the administration console.
-
-
     
     </td>
     </tr>
@@ -298,15 +254,11 @@ To add a system as a new tenant administrator, proceed as follows:
     <td valign="top">
     
     Manage Users
-
-
     
     </td>
     <td valign="top">
     
     This role gives the tenant administrator permission to manage, import, and export users via the administration console.
-
-
     
     </td>
     </tr>
@@ -314,15 +266,11 @@ To add a system as a new tenant administrator, proceed as follows:
     <td valign="top">
     
     Read Users
-
-
     
     </td>
     <td valign="top">
     
     This role gives the tenant administrator permission to retrieve user data and import users via the administration console and the SCIM REST API of Identity Authentication.
-
-
     
     </td>
     </tr>
@@ -330,15 +278,11 @@ To add a system as a new tenant administrator, proceed as follows:
     <td valign="top">
     
     Manage Groups
-
-
     
     </td>
     <td valign="top">
     
     This role gives the tenant administrator permission to create, edit, and delete user groups via the administration console.The tenant administrator can also assign authorization policies.
-
-
     
     </td>
     </tr>
@@ -346,15 +290,11 @@ To add a system as a new tenant administrator, proceed as follows:
     <td valign="top">
     
     Manage Tenant Configuration
-
-
     
     </td>
     <td valign="top">
     
     This role gives the tenant administrator permission to manage tenant configuration and authorization assignment to users. Tenant administrators with that role can add additional roles to themselves or to other administrators.
-
-
     
     </td>
     </tr>
@@ -362,8 +302,6 @@ To add a system as a new tenant administrator, proceed as follows:
     <td valign="top">
     
     Access Proxy System API
-
-
     
     </td>
     <td valign="top">
@@ -373,8 +311,6 @@ To add a system as a new tenant administrator, proceed as follows:
     This role is needed for provisioning scenarios where proxy systems in the Identity Provisioning admin console are configured for synchronizing user data to and from central identity management solutions \(such as, the on-premise SAP Identity Management\).
 
     In this case, you use the credentials of the admin user with *Access Proxy System API* role assigned for setting up the technical user in the identity management solution for communicating with Identity Provisioning.
-
-
     
     </td>
     </tr>
@@ -382,8 +318,6 @@ To add a system as a new tenant administrator, proceed as follows:
     <td valign="top">
     
     Access Real-Time Provisioning API
-
-
     
     </td>
     <td valign="top">
@@ -393,8 +327,6 @@ To add a system as a new tenant administrator, proceed as follows:
     This role is needed for provisioning scenarios where user data is provisioned real-time without running jobs \(manual or scheduled ones\) in Identity Provisioning.
 
     In this case, you use the credentials of the admin user with *Access Real-Time Provisioning API* role assigned for setting up the authentication mechanism of the provisioning system defined on the *User Provisioning* screen in the Identity Provisioning admin console.
-
-
     
     </td>
     </tr>
@@ -402,8 +334,6 @@ To add a system as a new tenant administrator, proceed as follows:
     <td valign="top">
     
     Access Identity Provisioning Tenant Admin API
-
-
     
     </td>
     <td valign="top">
@@ -413,8 +343,6 @@ To add a system as a new tenant administrator, proceed as follows:
     This role is needed for running provisioning jobs from an API client.
 
     The API is available on the SAP Business Accelerator Hub: [SAP Cloud Identity Services](https://api.sap.com/package/SCPIdentityServices/rest) *Identity Provisioning Service* \> *API Reference* \> *Jobs*. The URL for accessing the Tenant Admin API follows the pattern: `https://<IPS tenant host>/ips/publicapi/v1/startJob/{SourceSystemId}/jobs/{JobType}`.
-
-
     
     </td>
     </tr>
@@ -444,15 +372,11 @@ To add a system as a new tenant administrator, proceed as follows:
         <th valign="top">
 
         Field
-
-
         
         </th>
         <th valign="top">
 
         Info
-
-
         
         </th>
         </tr>
@@ -460,15 +384,11 @@ To add a system as a new tenant administrator, proceed as follows:
         <td valign="top">
         
         *Description*
-
-
         
         </td>
         <td valign="top">
         
         This field is optional.
-
-
         
         </td>
         </tr>
@@ -476,8 +396,6 @@ To add a system as a new tenant administrator, proceed as follows:
         <td valign="top">
         
         Expire in
-
-
         
         </td>
         <td valign="top">

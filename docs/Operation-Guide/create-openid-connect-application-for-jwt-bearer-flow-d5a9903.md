@@ -30,15 +30,11 @@ To create a new OpenID Connect application follow the procedure below:
     <th valign="top">
 
     Fields
-
-
     
     </th>
     <th valign="top">
 
     Notes
-
-
     
     </th>
     </tr>
@@ -46,15 +42,11 @@ To create a new OpenID Connect application follow the procedure below:
     <td valign="top">
     
     *Display Name*
-
-
     
     </td>
     <td valign="top">
     
     Required. The display name of the application appears on the logon and registration pages.
-
-
     
     </td>
     </tr>
@@ -62,15 +54,11 @@ To create a new OpenID Connect application follow the procedure below:
     <td valign="top">
     
     *Home URL*
-
-
     
     </td>
     <td valign="top">
     
     Optional. Users are redirected to the *Home URL* after activating their accounts, when they are created via a CSV file import or the user registration service of Identity Authentication.
-
-
     
     </td>
     </tr>
@@ -78,15 +66,11 @@ To create a new OpenID Connect application follow the procedure below:
     <td valign="top">
     
     *Type*
-
-
     
     </td>
     <td valign="top">
     
     Optional.
-
-
     
     </td>
     </tr>
@@ -94,8 +78,6 @@ To create a new OpenID Connect application follow the procedure below:
     <td valign="top">
     
     *Parent Application*
-
-
     
     </td>
     <td valign="top">
@@ -113,8 +95,6 @@ To create a new OpenID Connect application follow the procedure below:
     <td valign="top">
     
     *Protocol Authentication*
-
-
     
     </td>
     <td valign="top">
@@ -148,8 +128,8 @@ To create a new OpenID Connect application follow the procedure below:
 -   [Change an Application's Display Name](change-an-application-s-display-name-83d65d0.md)
 -   [Configure an Application's Home URL](configure-an-application-s-home-url-be6d6f2.md)
 -   [Visit an Application's Web Page](visit-an-application-s-web-page-2b67225.md)
--   [Configure the User Attributes Sent to the Application](configure-the-user-attributes-sent-to-the-application-d361407.md)
--   [Configure the Default Attributes Sent to the Application](configure-the-default-attributes-sent-to-the-application-a2f1e46.md)
+-   [User Attributes Sent to the Application](user-attributes-sent-to-the-application-d361407.md)
+-   [Attributes with Default Values](attributes-with-default-values-a2f1e46.md)
 -   [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md)
 -   [Configure Certificates for API Authentication](configure-certificates-for-api-authentication-c408083.md)
 -   [Enable or Disable Kerberos Authentication for an Application](enable-or-disable-kerberos-authentication-for-an-application-11121c9.md)

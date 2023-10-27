@@ -35,14 +35,10 @@ If end users choose the *Don't ask me again* check box, the prompt won't be show
 
 Characteristics
 
-
-
 </th>
 <th valign="top">
 
 Notes
-
-
 
 </th>
 </tr>
@@ -51,14 +47,10 @@ Notes
 
 Allowed Characters
 
-
-
 </td>
 <td valign="top">
 
 Base 10 digits \(0-9\)
-
-
 
 </td>
 </tr>
@@ -67,14 +59,10 @@ Base 10 digits \(0-9\)
 
 Min Length
 
-
-
 </td>
 <td valign="top">
 
 Between 4 and 32 characters; configurable on tenant level
-
-
 
 </td>
 </tr>
@@ -83,14 +71,10 @@ Between 4 and 32 characters; configurable on tenant level
 
 Max Length
 
-
-
 </td>
 <td valign="top">
 
 32 characters
-
-
 
 </td>
 </tr>
@@ -99,14 +83,10 @@ Max Length
 
 Required
 
-
-
 </td>
 <td valign="top">
 
 *Setup later* and *Don't ask me again* are configurable
-
-
 
 </td>
 </tr>
@@ -114,8 +94,6 @@ Required
 <td valign="top">
 
 Target Users
-
-
 
 </td>
 <td valign="top">
@@ -134,14 +112,10 @@ Target Users
 
 Lock
 
-
-
 </td>
 <td valign="top">
 
 The reset password action with PIN code locks after 5 failed attempts. The logon with correct username and password is not interrupted.
-
-
 
 </td>
 </tr>
@@ -150,14 +124,10 @@ The reset password action with PIN code locks after 5 failed attempts. The logon
 
 Unlock
 
-
-
 </td>
 <td valign="top">
 
 To unlock the PIN code, set an initial password for the user.
-
-
 
 </td>
 </tr>

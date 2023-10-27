@@ -35,21 +35,15 @@ The *Application Type* is optional. You can update the *Application Type* with o
 
 Name
 
-
-
 </th>
 <th valign="top">
 
 Type
 
-
-
 </th>
 <th valign="top">
 
 Notes
-
-
 
 </th>
 </tr>
@@ -58,21 +52,15 @@ Notes
 
 SAP Analytics Cloud solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -81,21 +69,15 @@ SAP managed
 
 SAP Ariba solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -104,21 +86,15 @@ SAP managed
 
 SAP Business ByDesign solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -127,21 +103,15 @@ SAP managed
 
 SAP BTP solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -150,21 +120,15 @@ SAP managed
 
 SAP Cloud for Customer solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -173,21 +137,15 @@ SAP managed
 
 SAP Concur solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -196,21 +154,15 @@ SAP managed
 
 SAP Fieldglass solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -219,21 +171,15 @@ SAP managed
 
 SAP Integrated Business Planning solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -242,21 +188,15 @@ SAP managed
 
 SAP Jam solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -265,21 +205,15 @@ SAP managed
 
 SAP Marketing Cloud solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -288,21 +222,15 @@ SAP managed
 
 SAP Sales Cloud solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -311,21 +239,15 @@ SAP managed
 
 SAP S/4HANA Cloud solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -334,21 +256,15 @@ SAP managed
 
 SAP SuccessFactors solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -357,21 +273,15 @@ SAP managed
 
 Other SAP cloud solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -380,21 +290,15 @@ SAP managed
 
 SAP on-premise solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -403,21 +307,15 @@ SAP managed
 
 Qualtrics solution
 
-
-
 </td>
 <td valign="top">
 
 `bundled`
 
-
-
 </td>
 <td valign="top">
 
 SAP managed
-
-
 
 </td>
 </tr>
@@ -426,21 +324,15 @@ SAP managed
 
 Non-SAP solution
 
-
-
 </td>
 <td valign="top">
 
 `charged`
 
-
-
 </td>
 <td valign="top">
 
  
-
-
 
 </td>
 </tr>
@@ -449,21 +341,15 @@ Non-SAP solution
 
 Unknown
 
-
-
 </td>
 <td valign="top">
 
 `charged`
 
-
-
 </td>
 <td valign="top">
 
 default value
-
-
 
 </td>
 </tr>
@@ -511,15 +397,11 @@ To edit the application configurations, proceed as follows:
     <th valign="top">
 
     Field
-
-
     
     </th>
     <th valign="top">
 
     Notes
-
-
     
     </th>
     </tr>
@@ -527,15 +409,11 @@ To edit the application configurations, proceed as follows:
     <td valign="top">
     
     *Display Name*
-
-
     
     </td>
     <td valign="top">
     
     Required
-
-
     
     </td>
     </tr>
@@ -543,15 +421,11 @@ To edit the application configurations, proceed as follows:
     <td valign="top">
     
     *Home URL*
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     </tr>
@@ -559,15 +433,11 @@ To edit the application configurations, proceed as follows:
     <td valign="top">
     
     *Type*
-
-
     
     </td>
     <td valign="top">
     
     Optional
-
-
     
     </td>
     </tr>
@@ -575,8 +445,6 @@ To edit the application configurations, proceed as follows:
     <td valign="top">
     
     *Parent Application*
-
-
     
     </td>
     <td valign="top">
@@ -612,8 +480,6 @@ To edit the application configurations, proceed as follows:
     <td valign="top">
     
     *Protocol authentication*
-
-
     
     </td>
     <td valign="top">

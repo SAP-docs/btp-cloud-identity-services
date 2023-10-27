@@ -49,15 +49,11 @@ To configure an OpenID Connect trusted application in the administration console
     <th valign="top">
 
     Setting
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -65,15 +61,11 @@ To configure an OpenID Connect trusted application in the administration console
     <td valign="top">
     
     *Name \(mandatory\)*
-
-
     
     </td>
     <td valign="top">
     
     Provide a name of your choice.
-
-
     
     </td>
     </tr>
@@ -81,15 +73,11 @@ To configure an OpenID Connect trusted application in the administration console
     <td valign="top">
     
     *Redirect URIs \(optional\)*
-
-
     
     </td>
     <td valign="top">
     
     The redirection URIs to which the response can be sent. You can add up to 20 redirect URIs.
-
-
     
     </td>
     </tr>
@@ -97,15 +85,11 @@ To configure an OpenID Connect trusted application in the administration console
     <td valign="top">
     
     *Post Logout Redirect URIs \(optional\)*
-
-
     
     </td>
     <td valign="top">
     
     The redirection URIs where the user can be forwarded after logout. You can add up to 20 redirect URIs.
-
-
     
     </td>
     </tr>
@@ -113,15 +97,11 @@ To configure an OpenID Connect trusted application in the administration console
     <td valign="top">
     
     *Front-Channel Logout URIs \(optional\)*
-
-
     
     </td>
     <td valign="top">
     
     URIs which will be requested for logout. You can add up to 20 URIs.
-
-
     
     </td>
     </tr>
@@ -145,15 +125,11 @@ To configure an OpenID Connect trusted application in the administration console
     <th valign="top">
 
     Grant Type
-
-
     
     </th>
     <th valign="top">
 
     Notes
-
-
     
     </th>
     </tr>
@@ -161,15 +137,11 @@ To configure an OpenID Connect trusted application in the administration console
     <td valign="top">
     
     *Authorization Code*
-
-
     
     </td>
     <td valign="top">
     
     For the authorization code flow.
-
-
     
     </td>
     </tr>
@@ -177,15 +149,11 @@ To configure an OpenID Connect trusted application in the administration console
     <td valign="top">
     
     *Authorization Code* \> *Authorization Code / Enforce PKCE \(S256\)*
-
-
     
     </td>
     <td valign="top">
     
     For the authorization code flow with PKCE.
-
-
     
     </td>
     </tr>

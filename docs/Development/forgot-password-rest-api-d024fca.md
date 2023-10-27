@@ -51,21 +51,15 @@ For more information about the email template sets, see [Configuring Email Templ
 
 Header
 
-
-
 </th>
 <th valign="top">
 
 Required
 
-
-
 </th>
 <th valign="top">
 
 Values
-
-
 
 </th>
 </tr>
@@ -74,14 +68,10 @@ Values
 
 `Basic Authorization`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -93,8 +83,6 @@ Yes
 
 For more information, see [API Authentication](../Operation-Guide/api-authentication-9d200d5.md).
 
-
-
 </td>
 </tr>
 <tr>
@@ -102,21 +90,15 @@ For more information, see [API Authentication](../Operation-Guide/api-authentica
 
 `Content-Type`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 application/json
-
-
 
 </td>
 </tr>
@@ -133,35 +115,25 @@ application/json
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Parameter Type
-
-
 
 </th>
 </tr>
@@ -170,21 +142,15 @@ Parameter Type
 
 `identifier`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 string
-
-
 
 </td>
 <td valign="top">
@@ -205,8 +171,6 @@ supported attributes:
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -237,21 +201,15 @@ Request body
 
 Code
 
-
-
 </th>
 <th valign="top">
 
 Reason
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -260,14 +218,10 @@ Description
 
 200 OK
 
-
-
 </td>
 <td valign="top">
 
 The user exists and password reset is allowed for the user profile.
-
-
 
 </td>
 <td valign="top">
@@ -289,21 +243,15 @@ Forgot password email is sent to the provided user.
 
 400 Bad Request
 
-
-
 </td>
 <td valign="top">
 
 PASSWORD\_TOO\_NEW
 
-
-
 </td>
 <td valign="top">
 
 When the password has already been changed for the last 24 hours..
-
-
 
 </td>
 </tr>
@@ -312,14 +260,10 @@ When the password has already been changed for the last 24 hours..
 
 USER\_INACTIVE
 
-
-
 </td>
 <td valign="top">
 
 When the user status is `inactive`.
-
-
 
 </td>
 </tr>
@@ -328,14 +272,10 @@ When the user status is `inactive`.
 
 PASSWORD\_DISABLED
 
-
-
 </td>
 <td valign="top">
 
 When the password is disabled.
-
-
 
 </td>
 </tr>

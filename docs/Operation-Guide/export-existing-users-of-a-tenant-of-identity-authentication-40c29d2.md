@@ -44,28 +44,20 @@ If the values for the *validTo* and *validFrom* attributes for a specific user a
 > 
 > active
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > userName
-> 
-> 
 > 
 > </th>
 > <th valign="top">
 > 
 > userType
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > emails\[0\].value
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -73,59 +65,43 @@ If the values for the *validTo* and *validFrom* attributes for a specific user a
 > <td valign="top">
 > 
 > TRUE
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > EID00001
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > public
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > michael.adams@example.com
 > 
-> 
-> 
 > </td>
 > </tr>
 > <tr>
 > <td valign="top">
 > 
 > TRUE
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > EID00002
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > employee
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > julie.armstrong@example.com
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -134,28 +110,20 @@ If the values for the *validTo* and *validFrom* attributes for a specific user a
 > 
 > TRUE
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > EID00003
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > partner
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > donna.moore@example.com
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -164,28 +132,20 @@ If the values for the *validTo* and *validFrom* attributes for a specific user a
 > 
 > FALSE
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > EID00004
-> 
-> 
 > 
 > </td>
 > <td valign="top">
 > 
 > customer
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > john.miller@example.com
-> 
-> 
 > 
 > </td>
 > </tr>

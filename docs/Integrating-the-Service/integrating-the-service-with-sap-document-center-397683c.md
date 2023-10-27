@@ -141,7 +141,7 @@ Assertion-based groups are groups determined by values of attributes in the SAML
 
     For example, you can have a group *EVERYONE* for all the users of Identity Authentication, and a group *DocCenter\_Admins* just for the administrators. In this case, you should assign the group EVERYONE to all the users of Identity Authentication, and just the administrators to the *DocCenter\_Admins* group.
 
-2.  Configure the `groups` attribute that is sent to SAP Document Center in the SAML 2.0 assertion. For more information, see [Configure the User Attributes Sent to the Application](../Operation-Guide/configure-the-user-attributes-sent-to-the-application-d361407.md)
+2.  Configure the `groups` attribute that is sent to SAP Document Center in the SAML 2.0 assertion. For more information, see [User Attributes Sent to the Application](../Operation-Guide/user-attributes-sent-to-the-application-d361407.md)
 
 3.  In the cockpit of SAP BTP define the assertion based groups for the group-to-role mapping in the cockpit. For more information, see 4. \(If Using an Identity Provider\) Define the Group-to-Role Mapping.
 
@@ -196,7 +196,7 @@ You have to specify how the assertion attributes are sent to SAP BTP in the asse
 **Related Information**  
 
 
-[Configure the User Attributes Sent to the Application](../Operation-Guide/configure-the-user-attributes-sent-to-the-application-d361407.md "After configuring the user attributes to be collected by the registration and upgrade forms, you have to specify how these attributes are sent to the application.")
+[User Attributes Sent to the Application](../Operation-Guide/user-attributes-sent-to-the-application-d361407.md "After configuring the user attributes to be collected by the registration and upgrade forms, you have to specify how these attributes are sent to the application.")
 
 <a name="task_ckj_rhg_cy"/>
 
@@ -226,15 +226,11 @@ You have to specify how the assertion attributes are sent to SAP BTP in the asse
     <th valign="top">
 
     Assertion Attribute
-
-
     
     </th>
     <th valign="top">
 
     Principal Attribute
-
-
     
     </th>
     </tr>
@@ -242,15 +238,11 @@ You have to specify how the assertion attributes are sent to SAP BTP in the asse
     <td valign="top">
     
     \*
-
-
     
     </td>
     <td valign="top">
     
     \*
-
-
     
     </td>
     </tr>

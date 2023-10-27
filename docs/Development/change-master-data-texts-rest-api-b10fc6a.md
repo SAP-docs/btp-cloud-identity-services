@@ -25,21 +25,15 @@ The predefined master data represents records in Identity Authentication that co
 
 Resource
 
-
-
 </th>
 <th valign="top">
 
 Link
 
-
-
 </th>
 <th valign="top">
 
 Notes
-
-
 
 </th>
 </tr>
@@ -48,21 +42,15 @@ Notes
 
 Salutations
 
-
-
 </td>
 <td valign="top">
 
 [Salutations.properties](change-master-data-texts-rest-api-b10fc6a.md#loiod4512bcbe9c8439896e06425f247c7af) 
 
-
-
 </td>
 <td valign="top">
 
 Key value pairs with a predefined set of honorifics.
-
-
 
 </td>
 </tr>
@@ -71,21 +59,15 @@ Key value pairs with a predefined set of honorifics.
 
 Functions
 
-
-
 </td>
 <td valign="top">
 
 [Functions.properties](change-master-data-texts-rest-api-b10fc6a.md#loio78cb6d43814c4b179eda8282c28e8d2f) 
 
-
-
 </td>
 <td valign="top">
 
 Key value pairs with a predefined set of job titles.
-
-
 
 </td>
 </tr>
@@ -94,21 +76,15 @@ Key value pairs with a predefined set of job titles.
 
 Departments
 
-
-
 </td>
 <td valign="top">
 
 [Departments.properties](change-master-data-texts-rest-api-b10fc6a.md#loiod13c638f0d5d4a8889debf278fcb0275) 
 
-
-
 </td>
 <td valign="top">
 
 Key value pairs with a predefined set of departments.
-
-
 
 </td>
 </tr>
@@ -117,21 +93,15 @@ Key value pairs with a predefined set of departments.
 
 Company Relationships
 
-
-
 </td>
 <td valign="top">
 
 [Relationships.properties](change-master-data-texts-rest-api-b10fc6a.md#loiof7eb5b72aed440fdb75657379bd368d1) 
 
-
-
 </td>
 <td valign="top">
 
 Key value pairs with a predefined set of business entities, such as customer, partner, employee.
-
-
 
 </td>
 </tr>
@@ -140,21 +110,15 @@ Key value pairs with a predefined set of business entities, such as customer, pa
 
 Industries
 
-
-
 </td>
 <td valign="top">
 
 [Industries.properties](change-master-data-texts-rest-api-b10fc6a.md#loioe62f9b8fde264f3ab644bdaa5a7876e2) 
 
-
-
 </td>
 <td valign="top">
 
 Key value pairs with a predefined set of industries.
-
-
 
 </td>
 </tr>
@@ -163,21 +127,15 @@ Key value pairs with a predefined set of industries.
 
 Languages
 
-
-
 </td>
 <td valign="top">
 
 [Languages.properties](change-master-data-texts-rest-api-b10fc6a.md#loio3be819bd3a3a498fa287542346a7add0) 
 
-
-
 </td>
 <td valign="top">
 
 Key value pairs with a predefined set of languages.
-
-
 
 </td>
 </tr>
@@ -186,21 +144,15 @@ Key value pairs with a predefined set of languages.
 
 Countries
 
-
-
 </td>
 <td valign="top">
 
 [Countries.properties](change-master-data-texts-rest-api-b10fc6a.md#loioe4e7e4c52cf04295bf94465eba7ceaaa) 
 
-
-
 </td>
 <td valign="top">
 
 Key value pairs with a predefined set of countries.
-
-
 
 </td>
 </tr>
@@ -235,21 +187,15 @@ Depending on your requirements, you can:
 
 HTTP Method
 
-
-
 </th>
 <th valign="top">
 
 See
 
-
-
 </th>
 <th valign="top">
 
 URI
-
-
 
 </th>
 </tr>
@@ -258,21 +204,15 @@ URI
 
 *GET*
 
-
-
 </td>
 <td valign="top">
 
 [GET Master Data Texts](change-master-data-texts-rest-api-b10fc6a.md#loiob2f411ec61104f178e665498d2550149)
 
-
-
 </td>
 <td valign="top">
 
 **`https://<tenant ID>.accounts.ondemand.com/service/resource?resourceType=RESOURCE_MD_<VALUE>&locale=<value>`** 
-
-
 
 </td>
 </tr>
@@ -281,21 +221,15 @@ URI
 
 *POST*
 
-
-
 </td>
 <td valign="top">
 
 [POST Master Data Texts](change-master-data-texts-rest-api-b10fc6a.md#loio26691a9f2e024f598b976f2268a5efbd)
 
-
-
 </td>
 <td valign="top">
 
 **`https://<tenant ID>.accounts.ondemand.com/service/resource/SAP_DEFAULT`** 
-
-
 
 </td>
 </tr>
@@ -354,28 +288,20 @@ Download the texts that you have already overwritten in the predefined master da
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Notes
-
-
 
 </th>
 </tr>
@@ -384,28 +310,20 @@ Notes
 
 `setId`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 The identifier of the scenario that the resource is related to.
 
-
-
 </td>
 <td valign="top">
 
 The default value is`SAP_DEFAULT`
-
-
 
 </td>
 </tr>
@@ -414,21 +332,15 @@ The default value is`SAP_DEFAULT`
 
 `resourceType`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 The type of the resource.
-
-
 
 </td>
 <td valign="top">
@@ -452,21 +364,15 @@ Use:
 
 `locale`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 The locale of the resource.
-
-
 
 </td>
 <td valign="top">
@@ -522,21 +428,15 @@ Content-Type: application/json
 
 Code
 
-
-
 </th>
 <th valign="top">
 
 Meaning
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -545,21 +445,15 @@ Description
 
 200 OK
 
-
-
 </td>
 <td valign="top">
 
 The request was successful.
 
-
-
 </td>
 <td valign="top">
 
 OK
-
-
 
 </td>
 </tr>
@@ -574,21 +468,15 @@ OK
 
 Response Code
 
-
-
 </th>
 <th valign="top">
 
 Meaning
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -597,21 +485,15 @@ Description
 
 *400*
 
-
-
 </td>
 <td valign="top">
 
 Bad Request
 
-
-
 </td>
 <td valign="top">
 
 Validate JSON data. Validate that the special characters are escaped properly and new lines are added.
-
-
 
 </td>
 </tr>
@@ -620,21 +502,15 @@ Validate JSON data. Validate that the special characters are escaped properly an
 
 *401*
 
-
-
 </td>
 <td valign="top">
 
 Unauthorized
 
-
-
 </td>
 <td valign="top">
 
 The client is not authenticated.
-
-
 
 </td>
 </tr>
@@ -643,21 +519,15 @@ The client is not authenticated.
 
 *403*
 
-
-
 </td>
 <td valign="top">
 
 Forbidden
 
-
-
 </td>
 <td valign="top">
 
 Access to the resource is denied.
-
-
 
 </td>
 </tr>
@@ -666,21 +536,15 @@ Access to the resource is denied.
 
 *404*
 
-
-
 </td>
 <td valign="top">
 
 Not Found
 
-
-
 </td>
 <td valign="top">
 
 The requested resource cannot be found.
-
-
 
 </td>
 </tr>
@@ -689,21 +553,15 @@ The requested resource cannot be found.
 
 *405*
 
-
-
 </td>
 <td valign="top">
 
 Method Not Allowed
 
-
-
 </td>
 <td valign="top">
 
 The requested method is not supported for the given resource.
-
-
 
 </td>
 </tr>
@@ -712,21 +570,15 @@ The requested method is not supported for the given resource.
 
 *415*
 
-
-
 </td>
 <td valign="top">
 
 Unsupported Media Type
 
-
-
 </td>
 <td valign="top">
 
 The REST service does not support the API version requested by the REST client.
-
-
 
 </td>
 </tr>
@@ -735,21 +587,15 @@ The REST service does not support the API version requested by the REST client.
 
 *500*
 
-
-
 </td>
 <td valign="top">
 
 Internal Server Error
 
-
-
 </td>
 <td valign="top">
 
 The operation cannot be completed due to a server error.
-
-
 
 </td>
 </tr>
@@ -758,21 +604,15 @@ The operation cannot be completed due to a server error.
 
 *503*
 
-
-
 </td>
 <td valign="top">
 
 Service Unavailable
 
-
-
 </td>
 <td valign="top">
 
 The service is currently unavailable.
-
-
 
 </td>
 </tr>
@@ -828,14 +668,10 @@ Update the master data texts.
 > 
 > Value
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Escape Sequences
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -844,14 +680,10 @@ Update the master data texts.
 > 
 > \\b
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Backspace \(ascii code 08\)
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -860,14 +692,10 @@ Update the master data texts.
 > 
 > \\f
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Form feed \(ascii code 0C\)
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -876,14 +704,10 @@ Update the master data texts.
 > 
 > \\n
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > New line
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -892,14 +716,10 @@ Update the master data texts.
 > 
 > \\r
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Carriage return
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -908,14 +728,10 @@ Update the master data texts.
 > 
 > \\t
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Tab
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -924,14 +740,10 @@ Update the master data texts.
 > 
 > \\"
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Double quote
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -940,14 +752,10 @@ Update the master data texts.
 > 
 > \\\\
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > Backslash character
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -1006,21 +814,15 @@ Body:
 
 Code
 
-
-
 </th>
 <th valign="top">
 
 Meaning
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -1029,21 +831,15 @@ Description
 
 200 OK
 
-
-
 </td>
 <td valign="top">
 
 The request was successful.
 
-
-
 </td>
 <td valign="top">
 
 OK
-
-
 
 </td>
 </tr>
@@ -1058,21 +854,15 @@ OK
 
 Response Code
 
-
-
 </th>
 <th valign="top">
 
 Meaning
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -1081,21 +871,15 @@ Description
 
 *400*
 
-
-
 </td>
 <td valign="top">
 
 Bad Request
 
-
-
 </td>
 <td valign="top">
 
 Validate JSON data. Validate that the special characters are escaped properly and new lines are added.
-
-
 
 </td>
 </tr>
@@ -1104,21 +888,15 @@ Validate JSON data. Validate that the special characters are escaped properly an
 
 *401*
 
-
-
 </td>
 <td valign="top">
 
 Unauthorized
 
-
-
 </td>
 <td valign="top">
 
 The client is not authenticated.
-
-
 
 </td>
 </tr>
@@ -1127,21 +905,15 @@ The client is not authenticated.
 
 *403*
 
-
-
 </td>
 <td valign="top">
 
 Forbidden
 
-
-
 </td>
 <td valign="top">
 
 Access to the resource is denied.
-
-
 
 </td>
 </tr>
@@ -1150,21 +922,15 @@ Access to the resource is denied.
 
 *404*
 
-
-
 </td>
 <td valign="top">
 
 Not Found
 
-
-
 </td>
 <td valign="top">
 
 The requested resource cannot be found.
-
-
 
 </td>
 </tr>
@@ -1173,21 +939,15 @@ The requested resource cannot be found.
 
 *405*
 
-
-
 </td>
 <td valign="top">
 
 Method Not Allowed
 
-
-
 </td>
 <td valign="top">
 
 The requested method is not supported for the given resource.
-
-
 
 </td>
 </tr>
@@ -1196,21 +956,15 @@ The requested method is not supported for the given resource.
 
 *415*
 
-
-
 </td>
 <td valign="top">
 
 Unsupported Media Type
 
-
-
 </td>
 <td valign="top">
 
 The REST service does not support the API version requested by the REST client.
-
-
 
 </td>
 </tr>
@@ -1219,21 +973,15 @@ The REST service does not support the API version requested by the REST client.
 
 *500*
 
-
-
 </td>
 <td valign="top">
 
 Internal Server Error
 
-
-
 </td>
 <td valign="top">
 
 The operation cannot be completed due to a server error.
-
-
 
 </td>
 </tr>
@@ -1242,21 +990,15 @@ The operation cannot be completed due to a server error.
 
 *503*
 
-
-
 </td>
 <td valign="top">
 
 Service Unavailable
 
-
-
 </td>
 <td valign="top">
 
 The service is currently unavailable.
-
-
 
 </td>
 </tr>
@@ -1587,7 +1329,7 @@ TG=Tajik
 TA=Tamil
 TT=Tatar
 TE=Telugu
-GH=Thai
+TH=Thai
 BO=Tibetan
 TI=Tigrinya
 TO=Tonga

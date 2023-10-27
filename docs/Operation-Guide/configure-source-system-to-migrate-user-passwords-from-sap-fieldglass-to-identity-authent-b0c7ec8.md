@@ -47,15 +47,11 @@ To configure a source system, follow the steps below:
         <th valign="top">
 
         Configuration
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -63,15 +59,11 @@ To configure a source system, follow the steps below:
         <td valign="top">
         
         *Display Name*
-
-
         
         </td>
         <td valign="top">
         
         \(optional\) The name of the configuration.
-
-
         
         </td>
         </tr>
@@ -79,15 +71,11 @@ To configure a source system, follow the steps below:
         <td valign="top">
         
         *Type*
-
-
         
         </td>
         <td valign="top">
         
         Select the `Fieldglass` type.
-
-
         
         </td>
         </tr>
@@ -102,15 +90,11 @@ To configure a source system, follow the steps below:
         <th valign="top">
 
         Configurations
-
-
         
         </th>
         <th valign="top">
 
         Description
-
-
         
         </th>
         </tr>
@@ -118,15 +102,11 @@ To configure a source system, follow the steps below:
         <td valign="top">
         
         *Company Code*
-
-
         
         </td>
         <td valign="top">
         
         The company code of the source system.
-
-
         
         </td>
         </tr>
@@ -134,8 +114,6 @@ To configure a source system, follow the steps below:
         <td valign="top">
         
         *Password Validation URL*
-
-
         
         </td>
         <td valign="top">
@@ -143,8 +121,6 @@ To configure a source system, follow the steps below:
         The URL endpoint for validation of the users name and password. It must have the following pattern: `https://<fieldglass_host>/api/v1/ias/passwordsync`
 
         Plain HTTP is supported for testing purposes only. Make sure that you use the encrypted HTTPS protocol for productive systems.
-
-
         
         </td>
         </tr>
@@ -152,15 +128,11 @@ To configure a source system, follow the steps below:
         <td valign="top">
         
         *Technical User*
-
-
         
         </td>
         <td valign="top">
         
         Technical user added in the source system that has administrator permissions to access the OData API. It can be provided by the external source system administrator.
-
-
         
         </td>
         </tr>
@@ -168,8 +140,6 @@ To configure a source system, follow the steps below:
         <td valign="top">
         
         *Technical User Secret*
-
-
         
         </td>
         <td valign="top">
@@ -187,15 +157,11 @@ To configure a source system, follow the steps below:
         <td valign="top">
         
         *Token URL*
-
-
         
         </td>
         <td valign="top">
         
         Token endpoint to which the technical user is authenticated.
-
-
         
         </td>
         </tr>
@@ -203,15 +169,11 @@ To configure a source system, follow the steps below:
         <td valign="top">
         
         *First Logon Behavior*
-
-
         
         </td>
         <td valign="top">
         
         Choose if a user whose password does not meet the password policy requirements of the application must reset or change it after the first successful logon. The default choice is *Change password*.
-
-
         
         </td>
         </tr>

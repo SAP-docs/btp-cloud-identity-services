@@ -9,14 +9,10 @@
 
 SAP SuccessFactors Data Centers
 
-
-
 </th>
 <th valign="top">
 
 Authentication URL
-
-
 
 </th>
 </tr>
@@ -25,14 +21,10 @@ Authentication URL
 
 DC2 - Production
 
-
-
 </td>
 <td valign="top">
 
 https://api2.successfactors.eu/odata/v2/restricted/validateUser
-
-
 
 </td>
 </tr>
@@ -41,14 +33,10 @@ https://api2.successfactors.eu/odata/v2/restricted/validateUser
 
 DC2 - SalesDemo
 
-
-
 </td>
 <td valign="top">
 
 https://apisalesdemo2.successfactors.eu/
-
-
 
 </td>
 </tr>
@@ -57,14 +45,10 @@ https://apisalesdemo2.successfactors.eu/
 
 DC2 - Preview
 
-
-
 </td>
 <td valign="top">
 
 https://api2preview.sapsf.eu/odata/v2/restricted/validateUser
-
-
 
 </td>
 </tr>
@@ -73,14 +57,10 @@ https://api2preview.sapsf.eu/odata/v2/restricted/validateUser
 
 DC4 - Production
 
-
-
 </td>
 <td valign="top">
 
 https://api4.successfactors.com/odata/v2/restricted/validateUser
-
-
 
 </td>
 </tr>
@@ -89,14 +69,10 @@ https://api4.successfactors.com/odata/v2/restricted/validateUser
 
 DC4 - SalesDemo
 
-
-
 </td>
 <td valign="top">
 
 https://apisalesdemo4.successfactors.com/
-
-
 
 </td>
 </tr>
@@ -105,14 +81,10 @@ https://apisalesdemo4.successfactors.com/
 
 DC4 - Preview
 
-
-
 </td>
 <td valign="top">
 
 https://api4preview.sapsf.com/odata/v2/restricted/validateUser
-
-
 
 </td>
 </tr>
@@ -121,14 +93,10 @@ https://api4preview.sapsf.com/odata/v2/restricted/validateUser
 
 DC5 - Production
 
-
-
 </td>
 <td valign="top">
 
 https://api5.successfactors.eu/odata/v2/restricted/validateUser
-
-
 
 </td>
 </tr>
@@ -137,14 +105,10 @@ https://api5.successfactors.eu/odata/v2/restricted/validateUser
 
 DC8 - Production
 
-
-
 </td>
 <td valign="top">
 
 https://api8.successfactors.com/odata/v2/restricted/validateUser
-
-
 
 </td>
 </tr>
@@ -153,14 +117,10 @@ https://api8.successfactors.com/odata/v2/restricted/validateUser
 
 DC8 - SalesDemo
 
-
-
 </td>
 <td valign="top">
 
 https://apisalesdemo8.successfactors.com/
-
-
 
 </td>
 </tr>
@@ -169,14 +129,10 @@ https://apisalesdemo8.successfactors.com/
 
 DC8 - Preview
 
-
-
 </td>
 <td valign="top">
 
 https://api8preview.sapsf.com/odata/v2/restricted/validateUser
-
-
 
 </td>
 </tr>
@@ -185,14 +141,10 @@ https://api8preview.sapsf.com/odata/v2/restricted/validateUser
 
 DC10 - Production
 
-
-
 </td>
 <td valign="top">
 
 https://api10.successfactors.com/odata/v2/restricted/validateUser
-
-
 
 </td>
 </tr>
@@ -201,14 +153,10 @@ https://api10.successfactors.com/odata/v2/restricted/validateUser
 
 DC10 - Preview
 
-
-
 </td>
 <td valign="top">
 
 https://api10preview.sapsf.com/odata/v2/restricted/validateUser
-
-
 
 </td>
 </tr>
@@ -217,14 +165,10 @@ https://api10preview.sapsf.com/odata/v2/restricted/validateUser
 
 DC12 - Production
 
-
-
 </td>
 <td valign="top">
 
 https://api012.successfactors.eu/odata/v2/restricted/validateUser
-
-
 
 </td>
 </tr>
@@ -233,14 +177,10 @@ https://api012.successfactors.eu/odata/v2/restricted/validateUser
 
 DC12 - Rot
 
-
-
 </td>
 <td valign="top">
 
 https://apirot.successfactors.eu/odata/v2/restricted/validateUser
-
-
 
 </td>
 </tr>
@@ -249,14 +189,10 @@ https://apirot.successfactors.eu/odata/v2/restricted/validateUser
 
 DC12 - Preview
 
-
-
 </td>
 <td valign="top">
 
 https://api12preview.sapsf.eu/odata/v2/restricted/validateUser
-
-
 
 </td>
 </tr>
@@ -265,14 +201,10 @@ https://api12preview.sapsf.eu/odata/v2/restricted/validateUser
 
 DC15 - Production
 
-
-
 </td>
 <td valign="top">
 
 https://api15.sapsf.cn/odata/v2/restricted/validateUser
-
-
 
 </td>
 </tr>
@@ -281,14 +213,10 @@ https://api15.sapsf.cn/odata/v2/restricted/validateUser
 
 DC16 - Production
 
-
-
 </td>
 <td valign="top">
 
 https://api16.sapsf.eu/odata/v2/restricted/validateUser
-
-
 
 </td>
 </tr>
@@ -297,14 +225,10 @@ https://api16.sapsf.eu/odata/v2/restricted/validateUser
 
 DC17 - Preview
 
-
-
 </td>
 <td valign="top">
 
 https://api17preview.sapsf.com/odata/v2/restricted/validateUser
-
-
 
 </td>
 </tr>
@@ -313,14 +237,10 @@ https://api17preview.sapsf.com/odata/v2/restricted/validateUser
 
 DC17 - Production
 
-
-
 </td>
 <td valign="top">
 
 https://api17.sapsf.com/odata/v2/restricted/validateUser
-
-
 
 </td>
 </tr>
@@ -329,14 +249,10 @@ https://api17.sapsf.com/odata/v2/restricted/validateUser
 
 DC18 - Preview
 
-
-
 </td>
 <td valign="top">
 
 https://api18preview.sapsf.com/odata/v2/restricted/validateUser
-
-
 
 </td>
 </tr>
@@ -345,14 +261,10 @@ https://api18preview.sapsf.com/odata/v2/restricted/validateUser
 
 DC18 - Production
 
-
-
 </td>
 <td valign="top">
 
 https://api18.sapsf.com/odata/v2/restricted/validateUser
-
-
 
 </td>
 </tr>
@@ -361,14 +273,10 @@ https://api18.sapsf.com/odata/v2/restricted/validateUser
 
 DC19 - Preview
 
-
-
 </td>
 <td valign="top">
 
 https://api19preview.sapsf.com/
-
-
 
 </td>
 </tr>
@@ -377,14 +285,10 @@ https://api19preview.sapsf.com/
 
 DC19 - Production
 
-
-
 </td>
 <td valign="top">
 
 https://api19.sapsf.com/
-
-
 
 </td>
 </tr>
@@ -393,14 +297,10 @@ https://api19.sapsf.com/
 
 DC22 Preview
 
-
-
 </td>
 <td valign="top">
 
 https://api22preview.sapsf.com/
-
-
 
 </td>
 </tr>
@@ -409,14 +309,10 @@ https://api22preview.sapsf.com/
 
 DC22 - Production
 
-
-
 </td>
 <td valign="top">
 
 htps://api22.sapsf.com/
-
-
 
 </td>
 </tr>
@@ -425,14 +321,10 @@ htps://api22.sapsf.com/
 
 DC23 - Preview
 
-
-
 </td>
 <td valign="top">
 
 https://api23preview.sapsf.com/
-
-
 
 </td>
 </tr>
@@ -441,14 +333,10 @@ https://api23preview.sapsf.com/
 
 DC23 - Production
 
-
-
 </td>
 <td valign="top">
 
 https://api23.sapsf.com/
-
-
 
 </td>
 </tr>
@@ -457,14 +345,10 @@ https://api23.sapsf.com/
 
 DC41 - Preview
 
-
-
 </td>
 <td valign="top">
 
 https://api41preview.sapsf.com
-
-
 
 </td>
 </tr>
@@ -473,14 +357,10 @@ https://api41preview.sapsf.com
 
 DC41 - Production
 
-
-
 </td>
 <td valign="top">
 
 https://api41.sapsf.com
-
-
 
 </td>
 </tr>
@@ -489,14 +369,10 @@ https://api41.sapsf.com
 
 DC42 - Preview
 
-
-
 </td>
 <td valign="top">
 
 https://api42preview.sapsf.com/
-
-
 
 </td>
 </tr>
@@ -505,14 +381,10 @@ https://api42preview.sapsf.com/
 
 DC42 - Production
 
-
-
 </td>
 <td valign="top">
 
 https://api42.sapsf.com/
-
-
 
 </td>
 </tr>
@@ -521,14 +393,10 @@ https://api42.sapsf.com/
 
 DC44 - Preview
 
-
-
 </td>
 <td valign="top">
 
 https://api44preview.sapsf.com/
-
-
 
 </td>
 </tr>
@@ -537,14 +405,10 @@ https://api44preview.sapsf.com/
 
 DC44 - Production
 
-
-
 </td>
 <td valign="top">
 
 https://api44.sapsf.com/
-
-
 
 </td>
 </tr>
@@ -553,14 +417,10 @@ https://api44.sapsf.com/
 
 DC47 - Preview
 
-
-
 </td>
 <td valign="top">
 
 https://api47preview.sapsf.com/
-
-
 
 </td>
 </tr>
@@ -569,14 +429,10 @@ https://api47preview.sapsf.com/
 
 DC47 - Production
 
-
-
 </td>
 <td valign="top">
 
 https://api47.sapsf.com/
-
-
 
 </td>
 </tr>
@@ -585,14 +441,10 @@ https://api47.sapsf.com/
 
 DC55 - Preview
 
-
-
 </td>
 <td valign="top">
 
 https://api55preview.sapsf.eu/
-
-
 
 </td>
 </tr>
@@ -601,14 +453,10 @@ https://api55preview.sapsf.eu/
 
 DC55 - Production
 
-
-
 </td>
 <td valign="top">
 
 https://api55.sapsf.eu/
-
-
 
 </td>
 </tr>

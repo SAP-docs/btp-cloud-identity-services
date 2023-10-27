@@ -29,21 +29,15 @@ The public keys are encoded as JSON Web Key \(JWK\).
 
 Header
 
-
-
 </th>
 <th valign="top">
 
 Required
 
-
-
 </th>
 <th valign="top">
 
 Values
-
-
 
 </th>
 </tr>
@@ -52,21 +46,15 @@ Values
 
 `Content-Type`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 application/json
-
-
 
 </td>
 </tr>
@@ -75,21 +63,15 @@ application/json
 
 `x-app_tid`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 Reserved.
-
-
 
 </td>
 </tr>
@@ -98,21 +80,15 @@ Reserved.
 
 `x-client_id`
 
-
-
 </td>
 <td valign="top">
 
 No
 
-
-
 </td>
 <td valign="top">
 
 Reserved.
-
-
 
 </td>
 </tr>
@@ -143,14 +119,10 @@ https://my-tenant.ondemand.com/oauth2/certs
 
 Code
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -159,14 +131,10 @@ Description
 
 200
 
-
-
 </td>
 <td valign="top">
 
 Success
-
-
 
 </td>
 </tr>

@@ -32,21 +32,15 @@ Verify the username and password combination, or verify the thing ID and passwor
 
 Header
 
-
-
 </th>
 <th valign="top">
 
 Required
 
-
-
 </th>
 <th valign="top">
 
 Values
-
-
 
 </th>
 </tr>
@@ -55,14 +49,10 @@ Values
 
 `Basic Authorization`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -84,21 +74,15 @@ Username and password are provided by the user.
 
 `Content-Type`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 application/json
-
-
 
 </td>
 </tr>
@@ -128,21 +112,15 @@ Basic Authentication: Username/Password
 
 Code
 
-
-
 </th>
 <th valign="top">
 
 Result or X-Message Code
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -151,21 +129,15 @@ Description
 
 200 OK
 
-
-
 </td>
 <td valign="top">
 
 Success
 
-
-
 </td>
 <td valign="top">
 
 When the username and password combination or thing ID and password combination is verified.
-
-
 
 </td>
 </tr>
@@ -174,21 +146,15 @@ When the username and password combination or thing ID and password combination 
 
 401 Unauthorized
 
-
-
 </td>
 <td valign="top">
 
 PASSWORD\_LOCKED
 
-
-
 </td>
 <td valign="top">
 
 When the password is locked for 60 minutes.
-
-
 
 </td>
 </tr>
@@ -197,14 +163,10 @@ When the password is locked for 60 minutes.
 
 PASSWORD\_DISABLED
 
-
-
 </td>
 <td valign="top">
 
 When the password is disabled.
-
-
 
 </td>
 </tr>
@@ -213,14 +175,10 @@ When the password is disabled.
 
 USER\_INACTIVE
 
-
-
 </td>
 <td valign="top">
 
 When the user is not in status active.
-
-
 
 </td>
 </tr>
@@ -229,14 +187,10 @@ When the user is not in status active.
 
 PASSWORD\_RESET\_REQUIRED
 
-
-
 </td>
 <td valign="top">
 
 When the user must reset his or her password before logon.
-
-
 
 </td>
 </tr>
@@ -245,14 +199,10 @@ When the user must reset his or her password before logon.
 
 PASSWORD\_CHANGE\_REQUIRED
 
-
-
 </td>
 <td valign="top">
 
 When the user must change his or her password before logon.
-
-
 
 </td>
 </tr>
@@ -261,14 +211,10 @@ When the user must change his or her password before logon.
 
 INITIAL\_PASSWORD\_EXPIRED
 
-
-
 </td>
 <td valign="top">
 
 When the initial password of the user has expired. After the validity of the initial password expires, the user can't log on to the application and must contact the administrator.
-
-
 
 </td>
 </tr>
@@ -277,14 +223,10 @@ When the initial password of the user has expired. After the validity of the ini
 
 INVALID\_AUTHORIZATION\_HEADER\_LENGTH
 
-
-
 </td>
 <td valign="top">
 
 The time-based one-time password \(TOTP\) code is not provided, but Two-Factor Authentication \(TFA\) with TOTP is enabled.
-
-
 
 </td>
 </tr>
@@ -293,14 +235,10 @@ The time-based one-time password \(TOTP\) code is not provided, but Two-Factor A
 
 INVALID\_OTP\_CODE
 
-
-
 </td>
 <td valign="top">
 
 Wrong TOTP code was provided.
-
-
 
 </td>
 </tr>
@@ -309,14 +247,10 @@ Wrong TOTP code was provided.
 
 RBA\_RULE\_ACTION\_DENY
 
-
-
 </td>
 <td valign="top">
 
 Denied because of a risk-based authentication rule
-
-
 
 </td>
 </tr>

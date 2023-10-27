@@ -91,15 +91,11 @@ The *Valid From* and *Valid To* fields are empty if no validity dates are set fo
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Additional Information
-
-
     
     </th>
     </tr>
@@ -107,15 +103,11 @@ The *Valid From* and *Valid To* fields are empty if no validity dates are set fo
     <td valign="top">
     
     **User Status**
-
-
     
     </td>
     <td valign="top">
     
     [Unblock a User](unblock-a-user-d50eec9.md)
-
-
     
     </td>
     </tr>
@@ -123,8 +115,6 @@ The *Valid From* and *Valid To* fields are empty if no validity dates are set fo
     <td valign="top">
     
     *Authentication* \> *Password Details*
-
-
     
     </td>
     <td valign="top">
@@ -145,8 +135,6 @@ The *Valid From* and *Valid To* fields are empty if no validity dates are set fo
     <td valign="top">
     
     *Authentication* \> *Multi-Factor Authentication*
-
-
     
     </td>
     <td valign="top">

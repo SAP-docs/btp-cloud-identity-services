@@ -50,14 +50,10 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > Identity Authentication Attribute
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > SAP Jam Attribute
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -66,14 +62,10 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > **Core Schema**
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 >  
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -82,14 +74,10 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > firstName
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > name.givenName
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -98,14 +86,10 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > lastName
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > name.familyName
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -114,14 +98,10 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > uid
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > userName
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -130,14 +110,10 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > title
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > jobFunction
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -146,14 +122,10 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > userType
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > type
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -162,14 +134,10 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > mail
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > emails.value
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -177,8 +145,6 @@ Identity Authentication supports the following scenarios for real-time provision
 > <td valign="top">
 > 
 > status
-> 
-> 
 > 
 > </td>
 > <td valign="top">
@@ -197,14 +163,10 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > telephone
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > phoneNumbers\[work\].value
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -213,14 +175,10 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > street
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > addresses\[home\].streetAddress
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -229,14 +187,10 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > city
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > addresses\[home\].locality
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -245,14 +199,10 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > zip
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > addresses\[home\].postalCode
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -261,14 +211,10 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > country
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > addresses\[home\].country
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -277,14 +223,10 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > companyStreet
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > addresses\[work\].streetAddress
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -293,14 +235,10 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > companyCity
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > addresses\[work\].locality
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -309,14 +247,10 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > companyZip
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > addresses\[work\].postalCode
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -325,14 +259,10 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > companyCountry
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > addresses\[work\].country
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -340,8 +270,6 @@ Identity Authentication supports the following scenarios for real-time provision
 > <td valign="top">
 > 
 > locale
-> 
-> 
 > 
 > </td>
 > <td valign="top">
@@ -367,8 +295,6 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > **Enterprise User Schema Extension** 
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
@@ -381,14 +307,10 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > employeeNumber
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > personnelNumber
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -397,14 +319,10 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > costCenter
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > costCenter
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -413,15 +331,11 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > organization
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > company
 > 
-> 
-> 
 > </td>
 > </tr>
 > <tr>
@@ -429,14 +343,10 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > division
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > division
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -445,14 +355,10 @@ Identity Authentication supports the following scenarios for real-time provision
 > 
 > department
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > department
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -544,8 +450,6 @@ The tenant administrator can choose which of the users to be provisioned to the 
     **List All Users**
 
     Press *More*
-
-
     
     </td>
     <td valign="top">
@@ -593,8 +497,6 @@ The tenant administrator can choose which of the users to be provisioned to the 
     **Filtered Search**
 
     Press *Show Filters*, type your search criteria strings in at least one of the search fields, and press the *Enter* key
-
-
     
     </td>
     <td valign="top">

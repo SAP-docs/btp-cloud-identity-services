@@ -68,21 +68,7 @@ For more information, see [Identity Directory SCIM REST API](../Development/iden
 
 ## Unencrypted Data
 
-
-
-<a name="concept_u2z_gg5_tyb__section_av1_jh5_tyb"/>
-
-## Identity Authentication
-
-
-
-<a name="concept_u2z_gg5_tyb__section_bv1_jh5_tyb"/>
-
-## Identity Provisioning
-
-`Zip` files containing error logs and logs for skipped entities can't be encrypted.
-
-For more information, see [Monitor Provisioning Job Logs](https://help.sap.com/docs/identity-provisioning/identity-provisioning/search-and-view-provisioning-job-logs?version=Cloud).
+Meta information used in general processing, for example data model Version, tenant IdentifierTemporary Data with limited lifetime.
 
 <a name="concept_vwf_hg5_tyb"/>
 

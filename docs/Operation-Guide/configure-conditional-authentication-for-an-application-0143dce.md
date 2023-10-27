@@ -151,15 +151,11 @@ The user logs on to the application
     <th valign="top">
 
     Option
-
-
     
     </th>
     <th valign="top">
 
     Description
-
-
     
     </th>
     </tr>
@@ -167,15 +163,11 @@ The user logs on to the application
     <td valign="top">
     
     Add a new rule
-
-
     
     </td>
     <td valign="top">
     
     See [Add a New Authentication Rule](add-a-new-authentication-rule-ad7f993.md).
-
-
     
     </td>
     </tr>
@@ -183,15 +175,11 @@ The user logs on to the application
     <td valign="top">
     
     Edit an existing rule
-
-
     
     </td>
     <td valign="top">
     
     Choose the ![](images/edit_icon_d077ded.png) icon next to the rule you want to edit.
-
-
     
     </td>
     </tr>
@@ -199,15 +187,11 @@ The user logs on to the application
     <td valign="top">
     
     Delete an existing rule
-
-
     
     </td>
     <td valign="top">
     
     Choose the delete![](images/delete_icon_4801c38.png) icon next to the rule you want to delete.
-
-
     
     </td>
     </tr>
@@ -215,15 +199,11 @@ The user logs on to the application
     <td valign="top">
     
     Reprioritize rules
-
-
     
     </td>
     <td valign="top">
     
     Use the arrows to reprioritize the rules.
-
-
     
     </td>
     </tr>
@@ -254,28 +234,20 @@ Donna Moore is an administrator of Company A. She wants to configure Identity Au
 
 Identity Provider
 
-
-
 </th>
 <th valign="top">
 
 Email Domain
-
-
 
 </th>
 <th valign="top">
 
 User Type
 
-
-
 </th>
 <th valign="top">
 
 User Groups
-
-
 
 </th>
 </tr>
@@ -284,14 +256,10 @@ User Groups
 
 Company A Corporate IdP
 
-
-
 </td>
 <td valign="top">
 
 companya.com
-
-
 
 </td>
 <td valign="top">

@@ -49,15 +49,11 @@ To create and configure a new custom password policy, follow the procedure:
     <th valign="top">
 
     Configuration Options
-
-
     
     </th>
     <th valign="top">
 
     Information
-
-
     
     </th>
     </tr>
@@ -65,15 +61,11 @@ To create and configure a new custom password policy, follow the procedure:
     <td valign="top">
     
     *Policy Strength*
-
-
     
     </td>
     <td valign="top">
     
     This strength specifies the priority of the password policy. It will define which policy will be enforced for password checks. It's the responsibility of the tenant administrator to configure the custom password policy stronger than the standard and enterprise ones.
-
-
     
     </td>
     </tr>
@@ -81,15 +73,11 @@ To create and configure a new custom password policy, follow the procedure:
     <td valign="top">
     
     *Password Policy Name*
-
-
     
     </td>
     <td valign="top">
     
     The name of the password policy that appears in the administration console.
-
-
     
     </td>
     </tr>
@@ -97,15 +85,11 @@ To create and configure a new custom password policy, follow the procedure:
     <td valign="top">
     
     *Password Length*
-
-
     
     </td>
     <td valign="top">
     
     The length can be between 8 and 255 characters. The default value is 8 characters.
-
-
     
     </td>
     </tr>
@@ -113,8 +97,6 @@ To create and configure a new custom password policy, follow the procedure:
     <td valign="top">
     
     *Password Lifetime*
-
-
     
     </td>
     <td valign="top">
@@ -139,8 +121,6 @@ To create and configure a new custom password policy, follow the procedure:
     <td valign="top">
     
     *Maximum Duration of User Inactivity*
-
-
     
     </td>
     <td valign="top">
@@ -158,15 +138,11 @@ To create and configure a new custom password policy, follow the procedure:
     <td valign="top">
     
     *Number of Last Used Passwords that Cannot Be Reused*
-
-
     
     </td>
     <td valign="top">
     
     The minimum requirement is the last 5 passwords to be retained. The value can’t be more than 20.
-
-
     
     </td>
     </tr>
@@ -174,15 +150,11 @@ To create and configure a new custom password policy, follow the procedure:
     <td valign="top">
     
     *Number of Allowed Failed Logon Attempts*
-
-
     
     </td>
     <td valign="top">
     
     The number of allowed failed logon attempts can be between 1 and 6. The default value is 5.
-
-
     
     </td>
     </tr>
@@ -190,8 +162,6 @@ To create and configure a new custom password policy, follow the procedure:
     <td valign="top">
     
     *Password Locked Period*
-
-
     
     </td>
     <td valign="top">
@@ -209,8 +179,6 @@ To create and configure a new custom password policy, follow the procedure:
     <td valign="top">
     
     *Password Behavior*
-
-
     
     </td>
     <td valign="top">
@@ -226,8 +194,6 @@ To create and configure a new custom password policy, follow the procedure:
     <td valign="top">
     
     *Required character groups count*
-
-
     
     </td>
     <td valign="top">

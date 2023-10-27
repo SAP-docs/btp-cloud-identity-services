@@ -28,14 +28,10 @@
 > 
 > Number of Users
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Activation Time
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -44,14 +40,10 @@
 > 
 > less than 1 000
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > less than 1 min
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -60,14 +52,10 @@
 > 
 > between 1 000 and 10 000
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > between 1 min and 5 min
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -76,14 +64,10 @@
 > 
 > between 10 000 and 100 000
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > between 10 min and 20 min
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -92,14 +76,10 @@
 > 
 > between 100 000 and 1 000 000
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > between 100 min and 150 min
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -107,8 +87,6 @@
 > <td valign="top">
 > 
 > more than 1 000 000
-> 
-> 
 > 
 > </td>
 > <td valign="top">
@@ -150,15 +128,11 @@ To configure the customer-controlled encryption keys via the administration cons
     <th valign="top">
 
     Configuration
-
-
     
     </th>
     <th valign="top">
 
     Notes
-
-
     
     </th>
     </tr>
@@ -166,8 +140,6 @@ To configure the customer-controlled encryption keys via the administration cons
     <td valign="top">
     
     **API URL**
-
-
     
     </td>
     <td valign="top">
@@ -185,15 +157,11 @@ To configure the customer-controlled encryption keys via the administration cons
     <td valign="top">
     
     **Key ID**
-
-
     
     </td>
     <td valign="top">
     
     Data Custodian Key ID. You can find in it in`Key Management Service/General/Iaas Applications/Test_group/Keys/<tenant name>` under the *Details* tab.
-
-
     
     </td>
     </tr>
@@ -201,15 +169,11 @@ To configure the customer-controlled encryption keys via the administration cons
     <td valign="top">
     
     **Client ID**
-
-
     
     </td>
     <td valign="top">
     
     The Access Key you receive with the API Endpoints.txt document when you generate a new key in the Data Custodian API
-
-
     
     </td>
     </tr>
@@ -217,15 +181,11 @@ To configure the customer-controlled encryption keys via the administration cons
     <td valign="top">
     
     **Client Secret**
-
-
     
     </td>
     <td valign="top">
     
     The Secret Key you receive with the API Endpoints.txt document when you generate a new key in the Data Custodian API
-
-
     
     </td>
     </tr>

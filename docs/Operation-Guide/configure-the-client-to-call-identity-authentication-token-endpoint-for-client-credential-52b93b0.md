@@ -27,21 +27,15 @@ This document explains how to call the token endpoint and what are the parameter
 
 Header
 
-
-
 </th>
 <th valign="top">
 
 Required
 
-
-
 </th>
 <th valign="top">
 
 Values
-
-
 
 </th>
 </tr>
@@ -50,21 +44,15 @@ Values
 
 `Content-Type`
 
-
-
 </td>
 <td valign="top">
 
 Yes
 
-
-
 </td>
 <td valign="top">
 
 application/x-www-form-urlencoded
-
-
 
 </td>
 </tr>
@@ -73,14 +61,10 @@ application/x-www-form-urlencoded
 
 `Authentication`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
@@ -112,35 +96,25 @@ Yes
 
 Parameter
 
-
-
 </th>
 <th valign="top">
 
 Required
-
-
 
 </th>
 <th valign="top">
 
 Data Type
 
-
-
 </th>
 <th valign="top">
 
 Description
 
-
-
 </th>
 <th valign="top">
 
 Parameter Type
-
-
 
 </th>
 </tr>
@@ -149,35 +123,25 @@ Parameter Type
 
 `grant_type`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 client\_credentials
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -186,35 +150,25 @@ Request body
 
 `client_id`
 
-
-
 </td>
 <td valign="top">
 
 Yes
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 The user ID configured for basic authentication for the application. For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -223,35 +177,25 @@ Request body
 
 `token_format`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 The `token_format` can be set to `opaque` to retrieve an opaque access token or to `jwt` to retrieve a JWT based access token. If not set, the current defaults per grant type are used.
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -260,35 +204,25 @@ Request body
 
 `app_tid`
 
-
-
 </td>
 <td valign="top">
 
 No
-
-
 
 </td>
 <td valign="top">
 
 string
 
-
-
 </td>
 <td valign="top">
 
 Reserved
 
-
-
 </td>
 <td valign="top">
 
 Request body
-
-
 
 </td>
 </tr>
@@ -317,21 +251,15 @@ grant_type=client_credentials&client_id=12b52d2c-1q34-5r5t-a576-75e85asdf523
 
 Code
 
-
-
 </th>
 <th valign="top">
 
 Reason
 
-
-
 </th>
 <th valign="top">
 
 Description
-
-
 
 </th>
 </tr>
@@ -340,21 +268,15 @@ Description
 
 200 OK
 
-
-
 </td>
 <td valign="top">
 
 Successful operation.
 
-
-
 </td>
 <td valign="top">
 
 Returns `access_token`.
-
-
 
 </td>
 </tr>
@@ -363,21 +285,15 @@ Returns `access_token`.
 
 400 Bad Request
 
-
-
 </td>
 <td valign="top">
 
 Missing or wrong parameter.
 
-
-
 </td>
 <td valign="top">
 
 Returns an information about the error.
-
-
 
 </td>
 </tr>
