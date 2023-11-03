@@ -97,12 +97,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-Application Development in Authorization Management
+Off-Cycle Upgrade
 
 </td>
 <td valign="top">
 
-Developers can use the developer tools of administration management. They build their own applications with authorization policies. Administrators assign authorization policies to users, change the rules and attribute values of existing policies, and create new authorization policies. See [Configuring Authorization Policies](https://help.sap.com/docs/IDENTITY_AUTHENTICATION/6d6d63354d1242d185ab4830fc04feb1/982ac5f91d2346fda8dd8096e861fc36.html?version=Cloud).
+Identity Authentication has been upgraded.
 
 </td>
 <td valign="top">
@@ -163,12 +163,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-Regular Upgrade
+Application Development in Authorization Management
 
 </td>
 <td valign="top">
 
-Identity Authentication has been upgraded.
+Developers can use the developer tools of administration management. They build their own applications with authorization policies. Administrators assign authorization policies to users, change the rules and attribute values of existing policies, and create new authorization policies. See [Configuring Authorization Policies](https://help.sap.com/docs/IDENTITY_AUTHENTICATION/6d6d63354d1242d185ab4830fc04feb1/982ac5f91d2346fda8dd8096e861fc36.html?version=Cloud).
 
 </td>
 <td valign="top">
@@ -203,12 +203,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-2023-10-26
+2023-11-02
 
 </td>
 <td valign="top">
 
-2023-10-26
+2023-11-02
 
 </td>
 </tr>
@@ -279,12 +279,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-2023-10-26
+2023-11-02
 
 </td>
 <td valign="top">
 
-2023-10-26
+2023-11-02
 
 </td>
 </tr>
@@ -345,12 +345,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-2023-10-26
+2023-11-02
 
 </td>
 <td valign="top">
 
-2023-10-26
+2023-11-02
 
 </td>
 </tr>
@@ -411,12 +411,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-2023-10-26
+2023-11-02
 
 </td>
 <td valign="top">
 
-2023-10-26
+2023-11-02
 
 </td>
 </tr>
@@ -477,12 +477,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-2023-10-26
+2023-11-02
 
 </td>
 <td valign="top">
 
-2023-10-26
+2023-11-02
 
 </td>
 </tr>
@@ -779,6 +779,72 @@ Regular Upgrade
 <td valign="top">
 
 Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-09-28
+
+</td>
+<td valign="top">
+
+2023-09-27
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Corporate IdP
+
+</td>
+<td valign="top">
+
+Identity Authentication added new parameter `idp` which allows sign in to specific application with specific corporate identity provider. See [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md)and [Configure IdP-Initiated SSO](Operation-Guide/configure-idp-initiated-sso-5d59caa.md).
 
 </td>
 <td valign="top">

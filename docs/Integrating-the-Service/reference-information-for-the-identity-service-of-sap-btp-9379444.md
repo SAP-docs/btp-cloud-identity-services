@@ -16,7 +16,12 @@ The syntax of the properties is as follows:
 
 ```
 {
-	"oauth2-configuration": {
+	"authorization": {
+		"enabled": true,
+		"value_help_url": "https://myapp_namespace.cert.cfapps.eu10.hana.ondemand.com/odata/v4/ValueHelpService/"
+	},
+
+		"oauth2-configuration": {
 		"redirect-uris": ["https://*.myapp_namespace.cfapps.eu10.hana.ondemand.com/**"],
 		"post-logout-redirect-uris": ["https://*.myapp_namespace.cfapps.eu10.hana.ondemand.com/logout/**"],
 		"front-channel-logout-uris": ["https://myapp.mydomain.com/fc-logout"],
@@ -58,6 +63,35 @@ Property
 Description
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+`authorization`
+
+</td>
+<td valign="top">
+
+Integrates the SAP Cloud Identity Services - Authorization Management service, enabling instance-based authorizations for your application.
+
+For more information about developing applications with Authorization Management, see LINK.
+
+The `enabled` property is false by default. Set this value to true to create an instance of the service for your SAP Cloud Identity services tenant.
+
+The `value_help_url` property is an absolute URL that points to an OData service of your application. The OData service serves values for attributes defined in the DCL schema of your application.
+
+Limitations:
+
+-   The format must be `https://host/path`
+
+    No fragments \(`#`\) allowed
+
+    HTTPS only
+
+
+
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -565,7 +599,7 @@ For information about how the Identity Authentication service supports code flow
 
 ## Token Validation
 
-To validate tokens, we provide a client libraries to support the authentication of tokens.
+To validate tokens, we provide client libraries to support the authentication of tokens.
 
 -   For Java, see [SAP BTP Java Security Client Library](https://github.com/SAP/cloud-security-xsuaa-integration/tree/master/java-security) on *GitHub*. The Java library supports authentication of tokens from version 2.8.0.
 

@@ -39,6 +39,8 @@ For more information, see [Subscribe to Multitenant Applications Using the Cockp
 
 Authorization management in Identity Authentication allows applications to define authorization models with complex instance restrictions for data access. Developers define and deploy authorization policies with functional checks, instance-based authorizations, and user attributes. They're available in the Identity Authentication administration console. If necessary, developers can update existing authorization policies.
 
+For more information, see [Developing Authorizations](../Development/developing-authorizations-22928a2.md).
+
 
 
 <a name="loio982ac5f91d2346fda8dd8096e861fc36__section_r2m_vlx_l5b"/>

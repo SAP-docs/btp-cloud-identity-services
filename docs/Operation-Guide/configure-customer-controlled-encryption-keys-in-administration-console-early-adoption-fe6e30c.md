@@ -101,7 +101,7 @@
 > </table>
 
 > ### Restriction:  
-> If Identity Provisioning is enabled, make sure that no provisioning jobs are running during the execution of the encryption procedure. Stop manually triggered jobs and pause the scheduled ones. For more information, see [Start and Stop Provisioning Jobs](https://help.sap.com/docs/identity-provisioning/identity-provisioning/start-and-stop-provisioning-jobs?version=Cloud&q=running%20jobs).
+> If Identity Provisioning is enabled, make sure that no provisioning jobs are running during the execution of the encryption procedure. Stop manually triggered jobs and pause the scheduled ones. For more information, see [Start and Stop Provisioning Jobs](https://help.sap.com/docs/identity-provisioning/identity-provisioning/start-and-stop-provisioning-jobs?version=Cloud).
 
 > ### Note:  
 > If issues during the encryption procedure, report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`.
@@ -161,7 +161,7 @@ To configure the customer-controlled encryption keys via the administration cons
     </td>
     <td valign="top">
     
-    Data Custodian Key ID. You can find in it in`Key Management Service/General/Iaas Applications/Test_group/Keys/<tenant name>` under the *Details* tab.
+    Data Custodian Key ID. You can find in it in `Key Management Service/General/Iaas Applications/Test_group/Keys/<tenant name>` under the *Details* tab.
     
     </td>
     </tr>
@@ -173,7 +173,7 @@ To configure the customer-controlled encryption keys via the administration cons
     </td>
     <td valign="top">
     
-    The Access Key you receive with the API Endpoints.txt document when you generate a new key in the Data Custodian API
+    The Access Key you receive with the API Endpoints.txt document when you generate a new key in the Data Custodian API.
     
     </td>
     </tr>
@@ -185,7 +185,7 @@ To configure the customer-controlled encryption keys via the administration cons
     </td>
     <td valign="top">
     
-    The Secret Key you receive with the API Endpoints.txt document when you generate a new key in the Data Custodian API
+    The Secret Key you receive with the API Endpoints.txt document when you generate a new key in the Data Custodian API.
     
     </td>
     </tr>
