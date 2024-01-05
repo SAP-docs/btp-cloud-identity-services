@@ -76,7 +76,7 @@ Once you have the results you can filter them by *Time*, *Severity*, *IP Address
 
 1.  Sign in to the administration console for SAP Cloud Identity Services.
 
-2.  Choose *Monitoring & Reporting* \> *Troubleshooting Logs* \> *View*.
+2.  Choose *Monitoring & Reporting* \> *Troubleshooting Logs*.
 
 3.  Define the criteria and start your search.
 

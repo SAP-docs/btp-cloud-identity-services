@@ -334,7 +334,7 @@ Path
 </td>
 <td valign="top">
 
-No
+Yes
 
 </td>
 <td valign="top">
@@ -409,12 +409,41 @@ No
 </td>
 <td valign="top">
 
-String
+string
 
 </td>
 <td valign="top">
 
 Reserved.
+
+</td>
+<td valign="top">
+
+Path
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`idp`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+The name of the corporate identity provider as configured in the administration console for SAP Cloud Identity Services.
+
+When multiple identity providers are allowed for an application via conditional authentication, this parameter enables the client to determine which corporate identity provider to be used. Identity Authentication uses the `idp` to detect the correct corporate identity provider and redirect the request to it. The user authenticates against the corporate identity provider.
 
 </td>
 <td valign="top">

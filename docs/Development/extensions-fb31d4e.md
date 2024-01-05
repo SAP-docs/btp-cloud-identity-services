@@ -109,7 +109,7 @@ The Identity Directory SCIM REST API can be manually extended by adding user att
     > > 
     > > ```
 
-3.  Send the already assigned custom attribute by configuring it in the default attributes sent to the application. See [Attributes with Default Values](../Operation-Guide/attributes-with-default-values-a2f1e46.md) under the *Send Identity Directory Custom Schema Attributes* section.
+3.  Send the already assigned custom attribute by configuring it in the default attributes sent to the application. See [Configuring Attributes Based on Flexible Expressions](../Operation-Guide/configuring-attributes-based-on-flexible-expressions-a2f1e46.md) under the *Send Identity Directory Custom Schema Attributes* section.
 
     > ### Example:  
     > The default attributes for the application are configured in the administration console as follows:

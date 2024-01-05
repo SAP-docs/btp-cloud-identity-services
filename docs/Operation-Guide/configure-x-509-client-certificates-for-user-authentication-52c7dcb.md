@@ -108,7 +108,7 @@ To configure a trusted X.509 certificate, proceed as follows:
 
 9.  Save your configuration.
 
-10. To add the certificate to your tenant, report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`. The SAP Root CA certificates are trusted by default.
+10. To add the certificate to your tenant, report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`. The SAP Cloud Root CA certificates are trusted by default.
 
     1.  Attach to the incident the root and intermediate certificates.
 
@@ -116,7 +116,7 @@ To configure a trusted X.509 certificate, proceed as follows:
 
 
     > ### Remember:  
-    > The SAP Root CA, SAP Passport CA G2, DigiCert Global Root CA, and DigiCert TLS RSA SHA256 2020 CA1 certificates are trusted by default.
+    > The SAP Cloud Root CA, DigiCert Global Root CA, DigiCert Global Root G2, DigiCert TLS RSA SHA256 2020 CA1, and Baltimore CyberTrust Root certificates are trusted by default.
 
 
 **Related Information**  
@@ -172,7 +172,7 @@ To configure a trusted X.509 certificate, proceed as follows:
 
 [Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.")
 
-[Configure Customer-Controlled Encryption Keys in Administration Console \(Early Adoption\)](configure-customer-controlled-encryption-keys-in-administration-console-early-adoption-fe6e30c.md "")
+[Configure Customer-Controlled Encryption Keys in Administration Console \(Restricted Availability\)](configure-customer-controlled-encryption-keys-in-administration-console-restricted-availa-fe6e30c.md "")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 

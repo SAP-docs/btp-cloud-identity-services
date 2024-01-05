@@ -10,7 +10,8 @@ This document describes how service providers that delegate authentication to Id
 
 ## Prerequisites
 
-You have added the domains of the applications for which you want to use overlays as trusted in the administration console for SAP Cloud Identity Services. For more information, see [Configure Trusted Domains](../Operation-Guide/configure-trusted-domains-08fa1fe.md).
+-   You have a customer application. For more information, see [Application Types](../application-types-8f61880.md).
+-   You have added the domains of the applications for which you want to use overlays as trusted in the administration console for SAP Cloud Identity Services. For more information, see [Configure Trusted Domains](../Operation-Guide/configure-trusted-domains-08fa1fe.md).
 
 
 

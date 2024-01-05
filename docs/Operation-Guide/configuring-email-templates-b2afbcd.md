@@ -74,7 +74,13 @@ Forgot Password
 </td>
 <td valign="top">
 
-This email template is used when a user wants to change his or her password by going through the Forgot Password page. In this case, the user receives an email with instructions about how to change his or her password. The name of the email template used for this process is *Forgot Password*.
+This email template is used when:
+
+-   a user wants to change his or her password by going through the Forgot Password page. In this case, the user receives an email with instructions about how to change his or her password. The name of the email template used for this process is *Forgot Password*.
+
+-   an administrator sends a reset password email via the administration console. For more information, see [Send Reset Password Email](send-reset-password-email-da55abf.md).
+
+
 
 </td>
 </tr>
@@ -98,7 +104,7 @@ Reset Password
 </td>
 <td valign="top">
 
-This email template is used when a user has to reset his or her password. In this case, the user receives an email with instructions about how to reset his or her password.
+This email template is used when: a user has to reset his or her password. In this case, the user receives an email with instructions about how to reset his or her password.
 
 The name of the email template used for this process is *Reset Password*.
 
@@ -126,7 +132,7 @@ Email OTP Code
 </td>
 <td valign="top">
 
-This email-template is used when a user has requested to receive an 8-digit code via email. The user needs the code for two-factor authentecation.
+This email-template is used when a user has requested to receive an 8-digit code via email. The user needs the code for two-factor authentication.
 
 </td>
 </tr>
@@ -151,6 +157,9 @@ This email-template is used when the user's password is set, changed, or reset, 
 
 To activate a user registration or to reset a password, users choose links sent to them in the emails. For these cases, you can use placeholders. For more information about which placeholders can be used, see [Edit or Add an Email Template Set](edit-or-add-an-email-template-set-3c4f397.md).
 
+> ### Restriction:  
+> If you select a corporate identity provider, the option to configure email templates is not possible. In this case you can access only some of the custom configurations for the applications. The configurations under the *Authentication and Access* and *Branding and Layout* tabs are partially visible. For more information, see [Choose Default Identity Provider for an Application](choose-default-identity-provider-for-an-application-e9d8274.md).
+
 You can also define which languages each email template uses, and you can set custom versions for each language. You can set the following languages:
 
 Arabic, Azerbaijani, Bulgarian, Catalan, Chinese \(PRC\), Chinese \(Taiwan\), Croatian, Czech, Danish, Dutch, English \(United Kingdom\), English \(United States\), Estonian, Finnish, French \(Standard\), French \(Canada\), German \(Standard\), Greek, Hebrew, Hungarian, Italian, Japanese, Korean, Latvian, Malay, Norwegian, Polish, Portuguese \(Portugal\), Romanian, Russian, Serbian, Slovak, Slovenian, Spanish \(Spain\), Spanish \(Mexico\), Swedish, Thai, Turkish, Ukrainian, Vietnamese, Welsh.
@@ -159,38 +168,20 @@ Arabic, Azerbaijani, Bulgarian, Catalan, Chinese \(PRC\), Chinese \(Taiwan\), Cr
 
 The language for the email template sets is set according to the following order of priorities:
 
-1.  If the locale is set, the emails use the language set there, if there is a template in that language. If there is no template in that language, the emails use the English language template.
+**User request flow** - when the user requests a process, for example Forgot Password, the emails use the language that the user's browser is set to.
+
+-   If the language isn't in the list of supported languages, the emails use *English*.
+
+-   If the language is in the list of supported languages, but there isn't a template for that language, the emails use English.
+
+-   If the language is in the list of supported languages, and there is a template for that language, the emails use this language.
+
+
+**System request flow** - for example when the administrator chooses the Reset Password option in the administration console, the emails use the language set in the profile of the user. If there isn't a template for that language, the emails use *English* instead.
 
 
 
-    Setting the locale, sets an Identity Authentication cookie. This cookie is used for all the applications in this session that are configured to use Identity Authentication as identity provider.
-
-    > ### Note:  
-    > The locale can be set in either of the following ways:
-    > 
-    > -   The locale is communicated to Identity Authentication by adding a locale parameter to *SAP\_IDS.js*.
-    > 
-    >     > ### Source Code:  
-    > 
-    >     `<script src="https://<tenant ID>.accounts.ondemand.com/ui/resources/javascripts/SAP_IDS.js?locale=en_GB" />` 
-    > 
-    > -   The locale is communicated to Identity Authentication by a direct `GET` request.
-    > 
-    >     > ### Source Code:  
-    > 
-    >     `https://<tenant ID>.accounts.ondemand.com/ui/public/setLocale?locale=DE`
-
-2.  If the locale is not set, the emails use the language that the user's browser is set to.
-
-    -   If the language is not in the list of supported languages, the emails use *English* instead.
-
-    -   If the language is in the list of supported languages, the emails use this language.
-
-
-
-
-
-If you want to use a custom email template you should create one if it does not exist. Add or edit the email template set, if necessary, and then define that email template set for the application. To add or edit the email template, first you must open the uploaded email templates, and then save a copy. Optionally you can delete an email template set or a language version for a specific application process.
+If you want to use a custom email template you should create one if it doesn't exist. Add or edit the email template set, if necessary, and then define that email template set for the application. To add or edit the email template, first you must open the uploaded email templates, and then save a copy. Optionally you can delete an email template set or a language version for a specific application process.
 
 
 

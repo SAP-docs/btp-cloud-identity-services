@@ -179,7 +179,7 @@ Configure terms of use and privacy policy documents. For more information, see [
 **Related Information**  
 
 
-[User Attributes Sent to the Application](user-attributes-sent-to-the-application-d361407.md "After configuring the user attributes to be collected by the registration and upgrade forms, you have to specify how these attributes are sent to the application.")
+[Configuring User Attributes from the Identity Directory](configuring-user-attributes-from-the-identity-directory-d361407.md "Specify how the local user attributes, configured to be collected by the registration and upgrade forms, are sent to the application.")
 
 [Configuring Privacy Policies](configuring-privacy-policies-ed48466.md "You can configure a custom privacy policy document by creating a new document, adding and editing its language versions, and defining the document for an application.")
 

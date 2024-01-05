@@ -1,6 +1,6 @@
 <!-- loio177108a1e129486983e7c4bc125db3bb -->
 
-# Customer-Controlled Encryption Keys \(Early Adoption\)
+# Customer-Controlled Encryption Keys \(Restricted Availability\)
 
 Your organization can control the encryption keys for data stored in SAP Cloud Identity Services using [SAP Data Custodian Key Management Service](https://help.sap.com/docs/sap-data-custodian/help-guide/overview?version=latest).
 
@@ -76,5 +76,5 @@ Meta information used in general processing, for example data model Version, ten
 
 ## Configuration
 
-To configure the customer-controlled encryption keys in the administration console for SAP Cloud Identity Services, follow the procedure described in [Configure Customer-Controlled Encryption Keys in Administration Console \(Early Adoption\)](../Operation-Guide/configure-customer-controlled-encryption-keys-in-administration-console-early-adoption-fe6e30c.md).
+To configure the customer-controlled encryption keys in the administration console for SAP Cloud Identity Services, follow the procedure described in [Configure Customer-Controlled Encryption Keys in Administration Console \(Restricted Availability\)](../Operation-Guide/configure-customer-controlled-encryption-keys-in-administration-console-restricted-availa-fe6e30c.md).
 

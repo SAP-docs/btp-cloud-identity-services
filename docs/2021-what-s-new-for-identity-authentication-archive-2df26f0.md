@@ -2840,7 +2840,7 @@ User Attributes
 </td>
 <td valign="top">
 
-Tenant administrator can configure complex custom schema attributes with single-value child attributes. See [Attributes with Default Values](Operation-Guide/attributes-with-default-values-a2f1e46.md).
+Tenant administrator can configure complex custom schema attributes with single-value child attributes. See [Configuring Attributes Based on Flexible Expressions](Operation-Guide/configuring-attributes-based-on-flexible-expressions-a2f1e46.md).
 
 </td>
 <td valign="top">
@@ -4102,7 +4102,7 @@ Proxy Scenarios
 </td>
 <td valign="top">
 
-Identity Authentication supports sending of Identity Directory custom schemas attributes as default attributes. See [Attributes with Default Values](Operation-Guide/attributes-with-default-values-a2f1e46.md).
+Identity Authentication supports sending of Identity Directory custom schemas attributes as default attributes. See [Configuring Attributes Based on Flexible Expressions](Operation-Guide/configuring-attributes-based-on-flexible-expressions-a2f1e46.md).
 
 </td>
 <td valign="top">

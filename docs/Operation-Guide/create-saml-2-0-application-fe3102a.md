@@ -96,7 +96,7 @@ To create a new SAML 2.0 application, proceed as follows:
     <tr>
     <td valign="top">
     
-    *Protocol Authentication*
+    *Protocol Type*
     
     </td>
     <td valign="top">

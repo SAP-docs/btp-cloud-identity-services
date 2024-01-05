@@ -129,7 +129,7 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
 
 7.  **Optional:** Configure the *Default Action*:
 
-    -   *Allow* - Any user can log on from any IP. This is te default choice.
+    -   *Allow* - Any user can log on from any IP. This is the default choice.
     -   *Deny* - Nobody can log on.
     -   *Two-Factor Authentication* - A drop-down appears when this choice is selected. You must specify the two-factor authentication method or methods for the end user.
 
@@ -178,7 +178,7 @@ John Miller is an employee of company A and as such he wants to access the corpo
 
 ## Example 3 \(SPNEGO\)
 
-Donna Moore is an administrator of company A. She wants to configure Identity Authentication to allow employees to access the *Leave Request* application from the corporate network with SPNEGO, and from any other network with passcode. All IPs in the company start with 189.101. She would also like to create a rule for the managers to access the application with two authentication factors. In addition she wants to restrict the access to all the users with type *Customer*. For this purpose, Donna creates the following rules:
+Donna Moore is an administrator of company A. She wants to configure Identity Authentication to allow employees to access the *Leave Request* application from the corporate network with SPNEGO, and from any other network with passcode. All IPs in the company start with 189.101. She would also like to create a rule for the managers to access the application with two authentication factors. In addition, she wants to restrict the access to all the users with type *Customer*. For this purpose, Donna creates the following rules:
 
 **Authentication Rules**
 
@@ -373,7 +373,7 @@ Two factors are required regardless of whether Julie and John are in the corpora
 
 ## Example 6 \(Setting Fowarded IP Range\)
 
-Donna Moore is an administrator of company A. She wants to configure Identity Authentication to apply an additional IP range in risk-based authentication rules for system-to-system calls from SAP BTP. SAP BTP makes a system-to-system calls to Identity Authentication on customer's behalf and provides their original IP address with the request. Donna can configure the IP range for customer IPs, but it's mandatory that she configures the IP range for SAP BTP IP addresses, first.
+SAP BTP is configured to perform system-to-system calls to Identity Authentication on customer's behalf for authentication and provides the original IP address of the customer with the request. Donna Moore as an administrator of Company A wants to restrict certain customer IP addresses from logging in. To achieve this, Donna configures a risk-based authentication rule with an IP range for the customer IPs that should be restricted. To ensure that authentication requests are performed by SAP BTP on customer's behalf, it is mandatory that she configures the IP range for SAP BTP addresses, first.
 
 **Related Information**  
 
@@ -471,7 +471,7 @@ Each rule contains the following information:
 
 -   *IP Range*
 
-    Define a range of allowed IP addresses or proxies that the user logs on from. The value has to be specified in Classless Inter-Domain Routing \(CIDR\) notation.
+    Define a range of IP addresses that authentication requests to Identity Authentication can be sent from. The value has to be specified in Classless Inter-Domain Routing \(CIDR\) notation.
 
     > ### Note:  
     > By default the field is empty, meaning that any IP is allowed.
@@ -483,7 +483,7 @@ Each rule contains the following information:
 
 -   *Forwarded IP Range*
 
-    Define a range of allowed IP addresses or proxies for the original IP addresses that the user logs on from. The value has to be specified in Classless Inter-Domain Routing \(CIDR\) notation.
+    Define a range of IP addresses for the original IP addresses that authentication requests to Identity Authentication can be sent from. This range is used in conjunction with IP Range in scenarios where authentication requests to Identity Authentication are made by a proxy on-behalf of the user/client. The value has to be specified in Classless Inter-Domain Routing \(CIDR\) notation.
 
     > ### Example:  
     > ![](images/IP_Ranges_Examples_b6f3ce1.png)

@@ -66,7 +66,7 @@ The tenant administrator creates the new user with a minimum set of attributes a
 
 ## Results
 
-If the operation is successful, the system displays the message: `User "<name of the user>" created`. Identity Authentication creates the new user and assigns `User ID` \(P user\) and `Global User ID` \(universally unique identifier \(UUID\) format\). The `User ID` field is unique and not editable. The `Global User ID`, on the other hand, is unique, but editable. You can change it via the the user management field in the administration console.
+If the operation is successful, the system displays the message: `User added`. Identity Authentication creates the new user and assigns `User ID` \(P user\) and `Global User ID` \(universally unique identifier \(UUID\) format\). The `User ID` field is unique and not editable. The `Global User ID`, on the other hand, is unique, but editable. You can change it via the the user management field in the administration console.
 
 **Related Information**  
 

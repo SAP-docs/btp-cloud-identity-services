@@ -69,8 +69,8 @@ How to configure trust
 
 -   [Configure Trust](configure-trust-f96e4c5.md)
 -   [Configure the Subject Name Identifier Sent to the Application](configure-the-subject-name-identifier-sent-to-the-application-1d020e3.md)
--   [User Attributes Sent to the Application](user-attributes-sent-to-the-application-d361407.md)
--   [Attributes with Default Values](attributes-with-default-values-a2f1e46.md)
+-   [Configuring User Attributes from the Identity Directory](configuring-user-attributes-from-the-identity-directory-d361407.md)
+-   [Configuring Attributes Based on Flexible Expressions](configuring-attributes-based-on-flexible-expressions-a2f1e46.md)
 
 
 

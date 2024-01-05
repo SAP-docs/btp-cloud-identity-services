@@ -357,7 +357,7 @@ When the *Use Identity Authentication user store* is enabled, Identity Authentic
 
 This configuration can be used if you want the application to receive assertions and name ID attributes that are different from those sent by the corporate identity provider.
 
-If you want the application to receive assertions and name ID attributes that are different from those sent by the corporate identity provider, do the following: [User Attributes Sent to the Application](user-attributes-sent-to-the-application-d361407.md) and [Configure the Subject Name Identifier Sent to the Application](configure-the-subject-name-identifier-sent-to-the-application-1d020e3.md).
+If you want the application to receive assertions and name ID attributes that are different from those sent by the corporate identity provider, do the following: [Configuring User Attributes from the Identity Directory](configuring-user-attributes-from-the-identity-directory-d361407.md) and [Configure the Subject Name Identifier Sent to the Application](configure-the-subject-name-identifier-sent-to-the-application-1d020e3.md).
 
 
 
@@ -369,7 +369,7 @@ If you want the application to receive assertions and name ID attributes that ar
 
 2.  Configure the user attributes and Name ID attribute sent to the application. For more information, see:
 
-    -   [User Attributes Sent to the Application](user-attributes-sent-to-the-application-d361407.md)
+    -   [Configuring User Attributes from the Identity Directory](configuring-user-attributes-from-the-identity-directory-d361407.md)
     -   [Configure the Subject Name Identifier Sent to the Application](configure-the-subject-name-identifier-sent-to-the-application-1d020e3.md)
 
 
@@ -412,7 +412,7 @@ This configuration allows you to restrict access to the application to users who
 
 Only users that are in the user store of Identity Authentication will be able to access the application. If a user is not part of the user store of Identity Authentication, this user receives the following message: ***Sorry, but you are currently not authorized for access.***
 
-The settings in the application configuration for assertion attributes and name ID attribute will be used for issuing the assertion. For more information, see [User Attributes Sent to the Application](user-attributes-sent-to-the-application-d361407.md)and [Configure the Subject Name Identifier Sent to the Application](configure-the-subject-name-identifier-sent-to-the-application-1d020e3.md).
+The settings in the application configuration for assertion attributes and name ID attribute will be used for issuing the assertion. For more information, see [Configuring User Attributes from the Identity Directory](configuring-user-attributes-from-the-identity-directory-d361407.md)and [Configure the Subject Name Identifier Sent to the Application](configure-the-subject-name-identifier-sent-to-the-application-1d020e3.md).
 
 <a name="task_dbb_13v_yv"/>
 

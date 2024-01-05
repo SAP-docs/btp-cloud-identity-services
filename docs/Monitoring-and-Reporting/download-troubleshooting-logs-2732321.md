@@ -81,9 +81,11 @@ File format
 
 1.  Sign in to the administration console for SAP Cloud Identity Services.
 
-2.  Choose *Monitoring & Reporting* \> *Troubleshooting Logs* \> *Download*.
+2.  Choose *Monitoring & Reporting* \> *Troubleshooting Logs*.
 
-3.  Define your criteria and download the log entries.
+3.  Choose the *Download* button.
+
+4.  Define your criteria and download the log entries.
 
 
 

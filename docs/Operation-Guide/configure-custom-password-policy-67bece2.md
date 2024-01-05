@@ -60,24 +60,24 @@ To create and configure a new custom password policy, follow the procedure:
     <tr>
     <td valign="top">
     
-    *Policy Strength*
+    *Policy Name*
     
     </td>
     <td valign="top">
     
-    This strength specifies the priority of the password policy. It will define which policy will be enforced for password checks. It's the responsibility of the tenant administrator to configure the custom password policy stronger than the standard and enterprise ones.
+    The name of the password policy that appears in the administration console.
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    *Password Policy Name*
+    *Policy Strength*
     
     </td>
     <td valign="top">
     
-    The name of the password policy that appears in the administration console.
+    This strength specifies the priority of the password policy. It will define which policy will be enforced for password checks. It's the responsibility of the tenant administrator to configure the custom password policy stronger than the standard and enterprise ones.
     
     </td>
     </tr>
@@ -120,7 +120,7 @@ To create and configure a new custom password policy, follow the procedure:
     <tr>
     <td valign="top">
     
-    *Maximum Duration of User Inactivity*
+    *User Inactivity*
     
     </td>
     <td valign="top">
@@ -137,7 +137,7 @@ To create and configure a new custom password policy, follow the procedure:
     <tr>
     <td valign="top">
     
-    *Number of Last Used Passwords that Cannot Be Reused*
+    *Password History*
     
     </td>
     <td valign="top">
@@ -149,12 +149,12 @@ To create and configure a new custom password policy, follow the procedure:
     <tr>
     <td valign="top">
     
-    *Number of Allowed Failed Logon Attempts*
+    *Failed Sign In Attempts*
     
     </td>
     <td valign="top">
     
-    The number of allowed failed logon attempts can be between 1 and 6. The default value is 5.
+    The number of allowed failed sign in attempts can be between 1 and 6. The default value is 5.
     
     </td>
     </tr>
@@ -178,22 +178,7 @@ To create and configure a new custom password policy, follow the procedure:
     <tr>
     <td valign="top">
     
-    *Password Behavior*
-    
-    </td>
-    <td valign="top">
-    
-    -   *Reset password* - At logon, the user is forced to reset password, if the current password is not compliant with the new password policy. This is the default choice.
-    -   *Change password* - At logon, the user is redirected to the change password page if the current password is not compliant with the new password policy.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    *Required character groups count*
+    *Required Character Groups*
     
     </td>
     <td valign="top">
@@ -204,6 +189,21 @@ To create and configure a new custom password policy, follow the procedure:
     -   Lowercase letters
     -   Numbers
     -   Symbols
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Password Behavior*
+    
+    </td>
+    <td valign="top">
+    
+    -   *Reset password* - At logon, the user is forced to reset password, if the current password is not compliant with the new password policy. This is the default choice.
+    -   *Change password* - At logon, the user is redirected to the change password page if the current password is not compliant with the new password policy.
 
 
     

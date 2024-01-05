@@ -606,7 +606,7 @@ To import users for an application into Identity Authentication, and to send act
     > 
     > If you don’t have a created application in your list, you can create one. For more information, see [Create a New Application](create-a-new-application-0d4b255.md).
 
-4.  Choose the *Browse...* button and specify the location of the CSV file.
+4.  Under *Upload CSV File*, choose the *Browse...* button and specify the location of the CSV file.
 
     > ### Note:  
     > Use a file smaller than 100 KB and with an extension `.csv`. If your file is 100 KB or larger, you have to import the user information in iterations with smaller size files.
@@ -651,14 +651,14 @@ To import users for an application into Identity Authentication, and to send act
     </td>
     <td valign="top">
     
-    The users are imported or updated for the selected application, but they will not receive activation emails. The activation emails will be sent when you choose *Send Emails* \> *Send*.
+    The users are imported or updated for the selected application, but they will not receive activation emails. The activation emails will be sent when you choose the *Send* button.
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    Choose *Send Emails* \> *Send*
+    Under *Send Emails* choose the *Send* button
     
     </td>
     <td valign="top">

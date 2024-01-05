@@ -1,10 +1,12 @@
-<!-- loio3322427923224faba6ae3ef43c9c1ba7 -->
+<!-- loio1c651dbfd2a84ba6a78e911a1e07e0f6 -->
 
-# 2022 What's New for Identity Authentication \(Archive\)
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+
+# 2023 What's New for Identity Authentication \(Archive\)
 
 
 
-This page lists the release notes of SAP Cloud Identity Services - Identity Authentication for 2022.
+This page lists the release notes of SAP Cloud Identity Services - Identity Authentication for 2023.
 
 
 
@@ -93,7 +95,7 @@ Identity Authentication
 </td>
 <td valign="top">
 
-System Upgrade
+Regular Upgrade
 
 </td>
 <td valign="top">
@@ -133,78 +135,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-2022-12-21
+2023-12-19
 
 </td>
 <td valign="top">
 
-2022-12-21
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Tenant Images
-
-</td>
-<td valign="top">
-
-Tenant administrator can upload a file to use a custom favicon for theIdentity Authenticationtenant. See [Configure Tenant Images](Operation-Guide/configure-tenant-images-8742046.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-2022-12-21
-
-</td>
-<td valign="top">
-
-2022-12-21
+2023-12-19
 
 </td>
 </tr>
@@ -225,337 +161,7 @@ Identity Authentication
 </td>
 <td valign="top">
 
-Tenant Settings
-
-</td>
-<td valign="top">
-
-Tenant Administrator can change the P-number index by setting a new number from which the P-number to start. See [Configure P-User Next Index](Operation-Guide/configure-p-user-next-index-045bb1c.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-2022-12-21
-
-</td>
-<td valign="top">
-
-2022-12-21
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-User Notifications
-
-</td>
-<td valign="top">
-
-User can receive email alerts when the telephone they use is changed. See [Send Security Alert Emails](Operation-Guide/send-security-alert-emails-c977464.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-2022-12-21
-
-</td>
-<td valign="top">
-
-2022-12-21
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-User Authentication
-
-</td>
-<td valign="top">
-
-Users can sign in with their telephone number as user identifier. See [Configure Allowed Logon Identifiers](Operation-Guide/configure-allowed-logon-identifiers-3adf1ff.md) and [Configure User Identifier Attributes](Operation-Guide/configure-user-identifier-attributes-8b9fa88.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-2022-12-21
-
-</td>
-<td valign="top">
-
-2022-12-21
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Password Policy
-
-</td>
-<td valign="top">
-
-Tenant administrator can configure a custom password policy with with an unlimited password locked period. If *unlimited* period is set, the password can be unlocked only by the tenant administrator. See [Configuring Password Policies](Operation-Guide/configuring-password-policies-12b3395.md) 
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-2022-12-21
-
-</td>
-<td valign="top">
-
-2022-12-21
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-OpenID Connect
-
-</td>
-<td valign="top">
-
-Tenant administrator can configure the rotation lifetime to extend the validity of the refresh token after first successful rotation. See [Token Policy Configuration for Applications](Operation-Guide/token-policy-configuration-for-applications-c4ba52e.md) 
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-2022-12-21
-
-</td>
-<td valign="top">
-
-2022-12-21
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-System Upgrade
+Regular Upgrade
 
 </td>
 <td valign="top">
@@ -595,12 +201,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-2022-12-16
+2023-12-19
 
 </td>
 <td valign="top">
 
-2022-12-16
+2023-12-19
 
 </td>
 </tr>
@@ -621,12 +227,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-OpenID Connect
+User Attributes for Subscribed Applications
 
 </td>
 <td valign="top">
 
-Tenant administrator can select client authentication method when configure the OpenID Connect corporate identity provider in the administration console. See [Configure Trust with OpenID Connect Corporate Identity Provider](Operation-Guide/configure-trust-with-openid-connect-corporate-identity-provider-8ff83a1.md).
+Tenant administrator can enable or disable the attribute mappings inherited from the subscribed multitenant applications. See [Configuring User Attributes from a Corporate Identity Provider](Operation-Guide/configuring-user-attributes-from-a-corporate-identity-provider-621017f.md).
 
 </td>
 <td valign="top">
@@ -661,12 +267,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-2022-12-16
+2023-12-19
 
 </td>
 <td valign="top">
 
-2022-12-16
+2023-12-19
 
 </td>
 </tr>
@@ -687,7 +293,73 @@ Identity Authentication
 </td>
 <td valign="top">
 
-System Upgrade
+Custom Mail Server
+
+</td>
+<td valign="top">
+
+Tenant administrator can configure rate limits per minute for the emails. See [Configure Custom Mail Server](Operation-Guide/configure-custom-mail-server-56cab62.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-12-19
+
+</td>
+<td valign="top">
+
+2023-12-19
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Off-Cycle Upgrade
 
 </td>
 <td valign="top">
@@ -727,12 +399,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-2022-12-14
+2023-12-12
 
 </td>
 <td valign="top">
 
-2022-12-14
+2023-12-12
 
 </td>
 </tr>
@@ -753,7 +425,7 @@ Identity Authentication
 </td>
 <td valign="top">
 
-System Upgrade
+Regular Upgrade
 
 </td>
 <td valign="top">
@@ -793,80 +465,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-2022-12-07
+2023-12-06
 
 </td>
 <td valign="top">
 
-2022-12-07
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Integration of SAML and OIDC Logout Flows
-
-</td>
-<td valign="top">
-
-The service supports OpenID Connect \(OIDC\) front-channel logout, which is used to logout from OIDC applications. The logout is integrated with the Security Assertion Markup Language \(SAML\) logout endpoint so that both logout endpoints behave the same way; terminating all SAML, OIDC, Identity Authentication, and corporate identity provider sessions.
-
-For more information, see [Front-Channel Logout URI Rules](Operation-Guide/front-channel-logout-uri-rules-789c752.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-2022-12-07
-
-</td>
-<td valign="top">
-
-2022-12-07
+2023-12-06
 
 </td>
 </tr>
@@ -887,7 +491,7 @@ Identity Authentication
 </td>
 <td valign="top">
 
-System Upgrade
+Regular Upgrade
 
 </td>
 <td valign="top">
@@ -927,78 +531,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-2022-11-25
+2023-11-28
 
 </td>
 <td valign="top">
 
-2022-11-24
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Audit Logs
-
-</td>
-<td valign="top">
-
-Tenant administrator can choose Cloud Foundry regions for the audit log service configuration. See [Access Audit Logs \(AWS, Azure Infrastructure\)](Monitoring-and-Reporting/access-audit-logs-aws-azure-infrastructure-a3e793c.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-2022-11-25
-
-</td>
-<td valign="top">
-
-2022-11-24
+2023-11-27
 
 </td>
 </tr>
@@ -1019,12 +557,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-System Upgrade
+Tenant Texts
 
 </td>
 <td valign="top">
 
-Identity Authentication has been upgraded.
+Tenant administrators change the configuration of tenant texts in the administration console for SAP Cloud Identity Services via *Edit* mode. See[Change Tenant Texts Via Administration Console](Operation-Guide/change-tenant-texts-via-administration-console-c24b1d0.md) .
 
 </td>
 <td valign="top">
@@ -1039,7 +577,7 @@ General Availability
 </td>
 <td valign="top">
 
-New
+Changed
 
 </td>
 <td valign="top">
@@ -1059,276 +597,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-2022-11-15
+2023-11-28
 
 </td>
 <td valign="top">
 
-2022-11-14
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Administrators
-
-</td>
-<td valign="top">
-
-Tenant administrator can change the name of the system as administrator. See [List Administrators](Operation-Guide/list-administrators-c79a5c6.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-2022-11-15
-
-</td>
-<td valign="top">
-
-2022-11-14
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-System Upgrade
-
-</td>
-<td valign="top">
-
-Identity Authentication has been upgraded.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-2022-11-10
-
-</td>
-<td valign="top">
-
-2022-11-09
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Two-Factor Authentication
-
-</td>
-<td valign="top">
-
-Tenant administrator can set the number of days for which the users can postpone the enabling of second factor for authentication. See [Allow Users To Skip Two-Factor Authentication Setup](Operation-Guide/allow-users-to-skip-two-factor-authentication-setup-dfb08b3.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-2022-11-10
-
-</td>
-<td valign="top">
-
-2022-11-09
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-System Upgrade
-
-</td>
-<td valign="top">
-
-Identity Authentication has been upgraded.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-2022-10-26
-
-</td>
-<td valign="top">
-
-2022-10-26
+2023-11-27
 
 </td>
 </tr>
@@ -1354,1614 +628,13 @@ Regional Availability
 </td>
 <td valign="top">
 
-Identity Authentication is now available with a single data center \(DC\) for the Azure infrastructure in Switzerland \(Zürich\). See [Regional Availability](regional-availability-be600ca.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-2022-10-26
-
-</td>
-<td valign="top">
-
-2022-10-26
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-End-User Screens
-
-</td>
-<td valign="top">
-
-The *Horizon* theme end-user screens are default for the system applications for all tenants, and for all applications \(service providers\) created via the administration console, SCIM REST API, or by the Identity Authentication operators after Oct 26, 2022. See [Configure a Branding Style for an Application](Operation-Guide/configure-a-branding-style-for-an-application-32f8d33.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-2022-10-26
-
-</td>
-<td valign="top">
-
-2022-10-26
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Documentation
-
-</td>
-<td valign="top">
-
-You can now provide feedback on the Identity Authentication documentation using GitHub and earn credits. See the related *Тip* at [What Is Identity Authentication?](what-is-identity-authentication-2788271.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2022-10-26
-
-</td>
-<td valign="top">
-
-2022-10-26
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Cipher Suites
-
-</td>
-<td valign="top">
-
-To further improve security, Identity Authentication is deprecating a number of obsolete and weak cipher suites used for HTTPS communication. As of the planned upgrade of Identity Authentication, scheduled for Nov 9, 2022, only the following list of cipher suites will be supported:
-
--   ECDHE-RSA-AES256-GCM-SHA384
-
--   ECDHE-RSA-AES128-GCM-SHA256
-
--   DHE-RSA-AES256-GCM-SHA384
-
--   DHE-RSA-AES128-GCM-SHA256
-
-
-
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-Announcement
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-2022-10-24
-
-</td>
-<td valign="top">
-
-2022-10-24
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-End-User Screens
-
-</td>
-<td valign="top">
-
-As of the next upgrade of Identity Authentication, the *Horizon* theme end-user screens will become default for the system applications of all new tenants, and for all new applications \(service providers\) created via the administration console, SCIM REST API, or by the Identity Authentication operators.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-Announcement
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-2022-10-20
-
-</td>
-<td valign="top">
-
-2022-10-20
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-System Upgrade
-
-</td>
-<td valign="top">
-
-Identity Authentication has been upgraded.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2022-10-12
-
-</td>
-<td valign="top">
-
-2022-10-12
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-User Access
-
-</td>
-<td valign="top">
-
-Tenant administrator can set the number of days for which the users won't get prompted for second-factor authentication, if they sign in from the same browser. See [Configure Trust this browser Option](Operation-Guide/configure-trust-this-browser-option-5b8377e.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2022-10-12
-
-</td>
-<td valign="top">
-
-2022-10-12
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-OpenID Connect
-
-</td>
-<td valign="top">
-
-Identity Authentication now supports the `token_format`. See [Configure the Client to Call Identity Authentication Token Endpoint for Authorization Code Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-token-endpoint-for-authorization-cod-3a74ef8.md), [Configure the Client to Call Identity Authentication Token Endpoint for Client Credentials Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-token-endpoint-for-client-credential-52b93b0.md), [Configure the Client to Call Identity Authentication Token Endpoint for Resource Owner Password Credentials Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-token-endpoint-for-resource-owner-pa-67f720d.md), [Configure the Client to Call Identity Authentication JWT Bearer Token](Operation-Guide/configure-the-client-to-call-identity-authentication-jwt-bearer-token-01a0440.md), and [Call Identity Authentication Refresh Token](Operation-Guide/call-identity-authentication-refresh-token-c62c09e.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2022-10-12
-
-</td>
-<td valign="top">
-
-2022-10-12
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Availability
-
-</td>
-<td valign="top">
-
-Identity Authentication changed the availability monitoring for the service. The current status page `statuspage.io` is decommission and you can monitor the availability of the service in the [Cloud Availability Center CAC/SAP4Me](https://launchpad.support.sap.com/#/cacv2/pg/SES_DEVEFF/0000281177). For that you can see a new T-installation for Identity Services in their support tools. The Identity Authentication tenants of a customer are assigned to this new T-installation. Based on these T-installations you can request outage notifications and see potential RCA information.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-Announcement
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-2022-10-12
-
-</td>
-<td valign="top">
-
-2022-10-12
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Cloud Foundry
--   Kubernetes
--   Kyma
-
-
-
-</td>
-<td valign="top">
-
-Authorization Policies
-
-</td>
-<td valign="top">
-
-Authorization management enables administrators to use authorization policies throughout multiple environments and assign them to users. Developers have provided applications with authorization policies. They include functional checks, instance-based authorizations, and user attributes. Administrators manage authorization policies in the administration console. See [Configuring Authorization Policies](Operation-Guide/configuring-authorization-policies-982ac5f.md).
-
-> ### Note:  
-> This function is only available to applications that integrate SAP Cloud Identity Services – Authorization Management.
-
-
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-Restricted Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-09-30
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-System Upgrade
-
-</td>
-<td valign="top">
-
-Identity Authentication has been upgraded.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-09-28
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-User Management
-
-</td>
-<td valign="top">
-
-`User UUID` is mutable now. Tenant administrator can change the `User UUID` attribute, initially generated by Identity Authentication, via the administration console. See [Create a New User](Operation-Guide/create-a-new-user-348deef.md) and [List and Edit User Details](Operation-Guide/list-and-edit-user-details-045cb01.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-09-28
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-User Management
-
-</td>
-<td valign="top">
-
-Identity Authentication now supports two new user types: `External` and `Onboardee`. See [User Types](user-types-70e95d1.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-09-28
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-User Authentication
-
-</td>
-<td valign="top">
-
-Identity Authentication supports X.509 Certificate authentication with Subject Alternative Name \(SAN\) `rfc822 Name`. See [Configure X.509 Client Certificates for User Authentication](Operation-Guide/configure-x-509-client-certificates-for-user-authentication-52c7dcb.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-09-28
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-User Access
-
-</td>
-<td valign="top">
-
-Tenant administrator can add text on the sign-in screen for the Horizon Standard. See [Add Instructions Section on Sign-In Screen](Operation-Guide/add-instructions-section-on-sign-in-screen-c9e717e.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-09-28
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-End-User Screens
-
-</td>
-<td valign="top">
-
-Tenant administrator can put custom image as background on the forms for sign-in in, registration, upgrade, password update, and account activation for all applications in a tenant. See [Configure Tenant Images](Operation-Guide/configure-tenant-images-8742046.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-09-28
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Availability
-
-</td>
-<td valign="top">
-
-Identity Authentication will change the availability monitoring for the service. The current status page `statuspage.io` will be decommission and you will able to monitor the availability of the service in the Cloud Availability Center CAC/SAP4Me. For that customers will see a new T-installation for Identity Services in their support tools. The Identity Authentication tenants of a customer will be assigned to this new T-installation. Based on these T-installations they can request outage notifications and see potential RCA information.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-Announcement
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-09-28
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-System Upgrade
-
-</td>
-<td valign="top">
-
-Identity Authentication has been upgraded.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-09-13
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Corporate IdPs
-
-</td>
-<td valign="top">
-
-Identity Authentication supports *SHA-512* as option for signing algorithm when configuring trust with a SAML 2.0 corporate identity provider. See [Configure Trust with SAML 2.0 Corporate Identity Provider](Operation-Guide/configure-trust-with-saml-2-0-corporate-identity-provider-33832e5.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-09-13
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-User Groups
-
-</td>
-<td valign="top">
-
-Tenant administrator can create new user groups or update existing ones via a CSV file upload. See [Import Groups via CSV File](Operation-Guide/import-groups-via-csv-file-daf96bd.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-09-13
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Real-Time Provisioning
-
-</td>
-<td valign="top">
-
-Identity Authentication supports X.509 Certificate authentication when Identity Provisioning is configured as target system for real-time provisioning. See [Configure Identity Provisioning Target Systems for Real-Time User Provisioning](Operation-Guide/configure-identity-provisioning-target-systems-for-real-time-user-provisioning-3349645.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-09-13
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Branding Style
-
-</td>
-<td valign="top">
-
-Tenant administrator can add text on the sign-in screen for the Horizon Standard. See [Add Instructions Section on Sign-In Screen](Operation-Guide/add-instructions-section-on-sign-in-screen-c9e717e.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-09-13
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-SAML 2.0 Trust
-
-</td>
-<td valign="top">
-
-Tenant administrator can get metadata from the service provider or identity provider via URL. See [Configure SAML 2.0 Service Provider](Operation-Guide/configure-saml-2-0-service-provider-51f1f75.md). and [Configure Trust with SAML 2.0 Corporate Identity Provider](Operation-Guide/configure-trust-with-saml-2-0-corporate-identity-provider-33832e5.md) 
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-09-13
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-OpenID Connect
-
-</td>
-<td valign="top">
-
-Identity Authentication supports Revoke and Introspect Endpoints with OpenID Connect. See [Call Identity Authentication Revoke Token Endpoint](Operation-Guide/call-identity-authentication-revoke-token-endpoint-3501e42.md). and [Call Identity Authentication Introspect Token Endpoint](Operation-Guide/call-identity-authentication-introspect-token-endpoint-a05f14c.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-09-13
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Regional Availability
-
-</td>
-<td valign="top">
-
-Identity Authentication will be available with a new data center for the AWS infrastructure in Brazil. The data center will be located in São Paulo.
+Identity Authentication is now available with a new data center for the SAP infrastructure in North America East. The data center is located in Colorado \(United States\).
 
 Action: We recommend you to add the following IPs to your allowed IP list:
 
--   LB IP - `54.232.33.83 / 54.207.203.50 / 54.207.116.12` 
--   NAT IP - `18.228.75.28 / 18.229.85.43 / 54.232.93.209` 
+LB IP - 130.214.207.198
 
-
+NAT IP - 130.214.242.32/27
 
 </td>
 <td valign="top">
@@ -2976,7 +649,7 @@ General Availability
 </td>
 <td valign="top">
 
-Announcement
+New
 
 </td>
 <td valign="top">
@@ -2991,17 +664,17 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
-
+2023-11-28
 
 </td>
 <td valign="top">
 
-2022-09-13
+2023-11-27
 
 </td>
 </tr>
@@ -3022,7 +695,7 @@ Identity Authentication
 </td>
 <td valign="top">
 
-System Upgrade
+Regular Upgrade
 
 </td>
 <td valign="top">
@@ -3057,17 +730,17 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
-
+2023-11-08
 
 </td>
 <td valign="top">
 
-2022-08-24
+2023-11-08
 
 </td>
 </tr>
@@ -3088,7 +761,73 @@ Identity Authentication
 </td>
 <td valign="top">
 
-System Upgrade
+Source System, Master Data Texts Configuration
+
+</td>
+<td valign="top">
+
+Tenant administrators change the configuration of source systems and master data texts in the administration console for SAP Cloud Identity Services via *Edit* mode. See [External Source Systems](Operation-Guide/external-source-systems-4f02f94.md) and [Configure Master Data Texts Via Administration Console](Operation-Guide/configure-master-data-texts-via-administration-console-c068ac9.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-11-08
+
+</td>
+<td valign="top">
+
+2023-11-08
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Off-Cycle Upgrade
 
 </td>
 <td valign="top">
@@ -3123,17 +862,17 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
-
+2023-11-02
 
 </td>
 <td valign="top">
 
-2022-08-17
+2023-11-02
 
 </td>
 </tr>
@@ -3154,12 +893,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-Password Configuration
+Application Development in Authorization Management
 
 </td>
 <td valign="top">
 
-Tenant administrator can specify the number of required character groups for the custom password. See [Configure Custom Password Policy](Operation-Guide/configure-custom-password-policy-67bece2.md).
+Developers can use the developer tools of administration management. They build their own applications with authorization policies. Administrators assign authorization policies to users, change the rules and attribute values of existing policies, and create new authorization policies. See [Configuring Authorization Policies](https://help.sap.com/docs/IDENTITY_AUTHENTICATION/6d6d63354d1242d185ab4830fc04feb1/982ac5f91d2346fda8dd8096e861fc36.html?version=Cloud).
 
 </td>
 <td valign="top">
@@ -3189,83 +928,17 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
-
-
-</td>
-<td valign="top">
-
-2022-08-17
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
+2023-11-02
 
 </td>
 <td valign="top">
 
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Password Configuration
-
-</td>
-<td valign="top">
-
-The option for maximum failed logon attempts for the custom password is increased to 6 from 5. See [Configure Custom Password Policy](Operation-Guide/configure-custom-password-policy-67bece2.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-Changed
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-08-17
+2023-11-02
 
 </td>
 </tr>
@@ -3277,302 +950,41 @@ Identity Authentication
 </td>
 <td valign="top">
 
--   Neo
--   Kyma
--   Cloud Foundry
-
+-   
 
 
 </td>
 <td valign="top">
 
-SAML 2.0 Trust
+Root Certificate Replacement
 
 </td>
 <td valign="top">
 
-Identity Authentication supports *SHA-512* as option for signing algorithm. See [Configure SAML 2.0 Service Provider](Operation-Guide/configure-saml-2-0-service-provider-51f1f75.md).
+DigiCert has deprecated their DigiCert Global Root CA and will stop issuing certificates for SAP under any of its Intermediate CAs \(ICA\) at the end of 2023. For more information, see DigiCert root and intermediate CA certificate updates 2023.
+
+SAP Cloud Identity Services switches to the G2 ICA and will deploy certificates signed by the new CA for the domains listed below starting in mid-November 2023. This means that the DigiCert Root CA domain certificate will be signed by DigiCert Global Root G2 instead of DigiCert Global Root CA. The following domains are affected:
+
+-   \*.accounts.ondemand.com
+
+-   \*.accounts.cloud.sap
+
+-   \*.accounts.sapcloud.cn
+
+-   \*.trial-accounts.ondemand.com
+
+
+Action: If your SAP Cloud Identity Services tenants are running on any of the affected domains, ensure that you trust the new root CA: DigiCert Global Root G2.
 
 </td>
 <td valign="top">
 
-Info only
+Required
 
 </td>
 <td valign="top">
 
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-08-17
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Corporate IdPs
-
-</td>
-<td valign="top">
-
-[Configure Trust with SAML 2.0 Corporate Identity Provider](Operation-Guide/configure-trust-with-saml-2-0-corporate-identity-provider-33832e5.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-08-17
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Branding Style
-
-</td>
-<td valign="top">
-
-Identity Authentication introduced a new branding style theme - Horizon Theme \(Beta\). See Tenant administrators have the option to sign or not the authentication requests and the single log out messages. See [Configure a Branding Style for an Application](Operation-Guide/configure-a-branding-style-for-an-application-32f8d33.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-Beta
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-08-17
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Branding Style
-
-</td>
-<td valign="top">
-
-Identity Authentication renamed the Default theme to Quartz. See [Configure a Branding Style for an Application](Operation-Guide/configure-a-branding-style-for-an-application-32f8d33.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-Changed
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-08-17
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Regional Availability
-
-</td>
-<td valign="top">
-
-The China region will operate with an additional data center in Shanghai.
-
-Action: We recommend you to add the following IPs to your allowed IP list:
-
--   LB IP - `121.91.104.198` 
--   NAT IP - `121.91.104.32 / 27` 
-
-
-
-</td>
-<td valign="top">
-
-Recommended
-
-</td>
-<td valign="top">
-
-General Availability
+Deprecated
 
 </td>
 <td valign="top">
@@ -3592,17 +1004,17 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
-
+2023-11-02
 
 </td>
 <td valign="top">
 
-2022-08-17
+2023-11-02
 
 </td>
 </tr>
@@ -3623,12 +1035,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-System Upgrade
+End User Screens
 
 </td>
 <td valign="top">
 
-Identity Authentication has been upgraded.
+Added Thai, Malay and Vietnamese to the supported languages for end user screens. See [Supported Languages](supported-languages-0ea634d.md).
 
 </td>
 <td valign="top">
@@ -3658,17 +1070,17 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
-
+2023-11-02
 
 </td>
 <td valign="top">
 
-2022-08-09
+2023-11-02
 
 </td>
 </tr>
@@ -3689,12 +1101,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-SMS Verification
+Customer Documents
 
 </td>
 <td valign="top">
 
-You can use Sinch Verification to enable *Phone Verification via SMS* or *SMS Two-Factor Authentication* in the administration console. See [Configure Sinch Service in Administration Console](Operation-Guide/configure-sinch-service-in-administration-console-f4a04ed.md).
+Tenant administrator can upload terms of use and privacy policy documents, and e-mail templates in Thai, Malay and Vietnamese. See [Configuring Terms of Use](Operation-Guide/configuring-terms-of-use-61d3a86.md), [Configuring Privacy Policies](Operation-Guide/configuring-privacy-policies-ed48466.md), and [Configuring Email Templates](Operation-Guide/configuring-email-templates-b2afbcd.md).
 
 </td>
 <td valign="top">
@@ -3724,83 +1136,17 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
-
-
-</td>
-<td valign="top">
-
-2022-08-09
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
+2023-11-02
 
 </td>
 <td valign="top">
 
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-System Upgrade
-
-</td>
-<td valign="top">
-
-Identity Authentication has been upgraded.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-07-26
+2023-11-02
 
 </td>
 </tr>
@@ -3821,146 +1167,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-System Upgrade
+Integration of *Default Attributes* and *Assertion Attributes* in Applications
 
 </td>
 <td valign="top">
 
-Identity Authentication has been upgraded.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-07-21
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-OpenID Connect
-
-</td>
-<td valign="top">
-
-Identity Authentication now supports the `refresh_expiry` parameter to reduce the expiration of a refresh token. See [Configure the Client to Call Identity Authentication Token Endpoint for Authorization Code Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-token-endpoint-for-authorization-cod-3a74ef8.md), [Configure the Client to Call Identity Authentication Token Endpoint for Resource Owner Password Credentials Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-token-endpoint-for-resource-owner-pa-67f720d.md), [Configure the Client to Call Identity Authentication JWT Bearer Token](Operation-Guide/configure-the-client-to-call-identity-authentication-jwt-bearer-token-01a0440.md), [Call Identity Authentication Refresh Token](Operation-Guide/call-identity-authentication-refresh-token-c62c09e.md), and [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow with PKCE](Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-a721157.md).
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-07-21
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Rate Limiting for OIDC Endpoints
-
-</td>
-<td valign="top">
-
-To ensure the safe and stable operation of the service, we have introduced rate limiting on the OpenID Connect \(OIDC\) endpoints of the service.
-
-For more information, see [Rate Limiting and Throttling](Development/rate-limiting-and-throttling-e22ee47.md).
+In the configuration of applications, we have combined the *Default Attributes* and *Assertion Attributes* into a single screen named *Attributes.* This change gives administrators a complete overview of the user attributes configured for an application. See [User Attributes](Operation-Guide/user-attributes-ed2797d.md).
 
 </td>
 <td valign="top">
@@ -3990,17 +1202,17 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
-
+2023-11-02
 
 </td>
 <td valign="top">
 
-2022-07-21
+2023-11-02
 
 </td>
 </tr>
@@ -4021,12 +1233,1431 @@ Identity Authentication
 </td>
 <td valign="top">
 
-Russia \(Moscow\) Region
+Regular Upgrade
 
 </td>
 <td valign="top">
 
-Russia \(Moscow\) \(neo-ru1\) region is decommissioned as of July 13th. See [Regions and Hosts Available for the Neo Environment](https://help.sap.com/docs/BTP/ea72206b834e4ace9cd834feed6c0e09/d722f7cea9ec408b85db4c3dcba07b52.html?version=Cloud).
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-10-11
+
+</td>
+<td valign="top">
+
+2023-10-11
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Groups
+
+</td>
+<td valign="top">
+
+Tenant administrator can add users to a group by filtering them with the `starts with` or `contains` operator. See [Add Users to a Group](Operation-Guide/add-users-to-a-group-d2e1a01.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-10-11
+
+</td>
+<td valign="top">
+
+2023-10-11
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Authorizations Based on Policies
+
+</td>
+<td valign="top">
+
+The `user.excludedAttributes` attribute is deprecated. See [Configure Authorizations Based on Policies](Operation-Guide/configure-authorizations-based-on-policies-08fea39.md).
+
+Action:
+
+If you have a policy configured with the `user.excludedAttributes` attribute exchange the `user.excludedAttributes` with the `user.attributes` attribute in combination with the "NOT IN" operator.
+
+If the policy is configured with the `user.аttributes` attribute used with the "=" operator, it supports only one attribute. For more attributes, use the "IN" operator adding each attribute separately.
+
+</td>
+<td valign="top">
+
+Required
+
+</td>
+<td valign="top">
+
+Deprecated
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-10-11
+
+</td>
+<td valign="top">
+
+2023-10-11
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+In-App Help
+
+</td>
+<td valign="top">
+
+SAP Companion context-sensitive in-app help has been implemented in the administration console for SAP Cloud Identity Services. You can start the in-app help by selecting the <span class="SAP-icons"></span> *Help* control. The administration console provides *Help Topics*, *Guided Tours*, and *What's New* content. See [SAP Companion User Guide](https://help.sap.com/docs/SAP_ENABLE_NOW/46fcbeb139c4487ba713638cd75d1a19/6208110e6cac1014b670eace620bbd24.html?version=latest).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-10-11
+
+</td>
+<td valign="top">
+
+2023-10-11
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-09-28
+
+</td>
+<td valign="top">
+
+2023-09-27
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Corporate IdP
+
+</td>
+<td valign="top">
+
+Identity Authentication added new parameter `idp` which allows sign in to specific application with specific corporate identity provider. See [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md)and [Configure IdP-Initiated SSO](Operation-Guide/configure-idp-initiated-sso-5d59caa.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-09-28
+
+</td>
+<td valign="top">
+
+2023-09-27
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Off-Cycle Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-09-07
+
+</td>
+<td valign="top">
+
+2023-09-07
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-08-30
+
+</td>
+<td valign="top">
+
+2023-08-30
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Manage Administrators
+
+</td>
+<td valign="top">
+
+Tenant administrator can add another administrator with login name as identifier. See [Add User as Administrator](Operation-Guide/add-administrators-bbbdbdd.md#loio1dc498bff0674743a1a3a0ec3f0bf298).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-08-30
+
+</td>
+<td valign="top">
+
+2023-08-30
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Off-Cycle Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-08-18
+
+</td>
+<td valign="top">
+
+2023-08-17
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-08-16
+
+</td>
+<td valign="top">
+
+2023-08-16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Risk-Based Authentication
+
+</td>
+<td valign="top">
+
+New authentication method *Trusted IdP SAML Assertion* is available when you create a new rule for risk-based authentication. See [Create a New Rule](Operation-Guide/configure-risk-based-authentication-for-an-application-bc52fbf.md#loio18d02ab9cc7d4caf83d8654c8c51a175) .
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-08-16
+
+</td>
+<td valign="top">
+
+2023-08-16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Implicit Grant Type Not Enabled by Default
+
+</td>
+<td valign="top">
+
+As announced 2023-08-16, with this change, new applications have the `Implicit` grant type **disabled** by default.
+
+Action: Check if you require the `Implicit` grant type for new applications:
+
+-   Yes: Ensure your processes for creating new applications include explicitly enabling the `Implicit` grant type.
+
+    -   For the administration console, see [Configure OpenID Connect Application for Implicit Flow](https://help.sap.com/docs/IDENTITY_AUTHENTICATION/6d6d63354d1242d185ab4830fc04feb1/c64180e84cae4303ba80b2d4b59788b7.html).
+
+    -   For the Identity service, see [Reference Information for the Identity Service of SAP BTP](https://help.sap.com/docs/IDENTITY_AUTHENTICATION/6d6d63354d1242d185ab4830fc04feb1/9379444abf3f4e2cbaade7c4001df381.html).
+
+
+-   No: Nothing to do.
+
+
+
+
+</td>
+<td valign="top">
+
+Required
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-11-22
+
+</td>
+<td valign="top">
+
+2023-11-22
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Refresh Token Flow of OIDC Protocol Restricted to Validity of Web Session
+
+</td>
+<td valign="top">
+
+As announced 2023-08-16, with this change, the service couples the validity of refresh tokens to the session timeout. Refresh tokens expire with the user session, unless you add the `offline_access scope`.
+
+Action: Check if you define a refresh token validity for your applications longer than 12 h:
+
+-   Yes: Ensure that you decouple the refresh token from the user session with the `offline_access` scope.
+
+    For more information, see [Token Policy Configuration for Applications](https://help.sap.com/docs/IDENTITY_AUTHENTICATION/6d6d63354d1242d185ab4830fc04feb1/c4ba52e748554863917b046bf1b7b355.html).
+
+-   No: Nothing to do.
+
+
+
+
+</td>
+<td valign="top">
+
+Required
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-11-22
+
+</td>
+<td valign="top">
+
+2023-11-22
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-08-03
+
+</td>
+<td valign="top">
+
+2023-08-02
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Subscribed Applications
+
+</td>
+<td valign="top">
+
+In the configuration of applications, we have combined the *Default Attributes* and *Assertion Attributes* into a single screen named *Application Attributes*. This change gives administrators a complete overview of the user attributes defined by the multitenant application. See [Configuring User Attributes from a Corporate Identity Provider](Operation-Guide/configuring-user-attributes-from-a-corporate-identity-provider-621017f.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-08-09
+
+</td>
+<td valign="top">
+
+2023-08-30
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Terms of Use Documents
+
+</td>
+<td valign="top">
+
+Tenant administrator can delete an entire terms of use documents set. See [\(Optional\) Delete a Terms of Use Document](Operation-Guide/optional-delete-a-terms-of-use-document-6ad5df5.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-08-03
+
+</td>
+<td valign="top">
+
+2023-08-02
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Privacy Policy Documents
+
+</td>
+<td valign="top">
+
+Tenant administrator can delete an entire privacy policy documents set. See [\(Optional\) Delete a Privacy Policy Document](Operation-Guide/optional-delete-a-privacy-policy-document-4b66ac1.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-08-03
+
+</td>
+<td valign="top">
+
+2023-08-02
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Support for Prompt Parameter
+
+</td>
+<td valign="top">
+
+The `prompt` parameter is an optional parameter of an OAuth 2.0 Authorization Request in the OpenID Connect Core 1.0 specification. The service supports the *none* and *login* values for this parameter.
+
+See [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow](https://help.sap.com/docs/IDENTITY_AUTHENTICATION/6d6d63354d1242d185ab4830fc04feb1/94ff0b4b0baa45a893c7cd24254b72b7.html).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-08-03
+
+</td>
+<td valign="top">
+
+2023-08-02
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Off-Cycle Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-07-28
+
+</td>
+<td valign="top">
+
+2023-07-28
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-07-19
+
+</td>
+<td valign="top">
+
+2023-07-19
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Removal of Applications of Type Reuse
+
+</td>
+<td valign="top">
+
+Applications of type reuse instance aren't visible in the administration console anymore. Changes to these applications didn't have any effect.
 
 </td>
 <td valign="top">
@@ -4056,17 +2687,677 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
+2023-07-19
+
+</td>
+<td valign="top">
+
+2023-07-19
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
 
 
 </td>
 <td valign="top">
 
-2022-07-14
+OpenID Connect
+
+</td>
+<td valign="top">
+
+Tenant administrator can configure Identity Authentication to execute the authorization code flow enhanced with PKCE against the corporate identity provider. See [Configure Trust with OpenID Connect Corporate Identity Provider](Operation-Guide/configure-trust-with-openid-connect-corporate-identity-provider-8ff83a1.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-07-19
+
+</td>
+<td valign="top">
+
+2023-07-19
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+OpenID Connect
+
+</td>
+<td valign="top">
+
+Identity Authentication аdded the `apt_id` to the list of the supported parameters. It is required for multitenant scenarios to identify corresponding Identity Authentication application. See [Call Identity Authentication End Session Endpoint](Operation-Guide/call-identity-authentication-end-session-endpoint-ec674f4.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-07-19
+
+</td>
+<td valign="top">
+
+2023-07-19
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Management
+
+</td>
+<td valign="top">
+
+Identity Authentication added the `SCIM ID` to the list of the supported attributes for the export users option. See [Export Existing Users of a Tenant of Identity Authentication](Operation-Guide/export-existing-users-of-a-tenant-of-identity-authentication-40c29d2.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-07-19
+
+</td>
+<td valign="top">
+
+2023-07-19
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-07-12
+
+</td>
+<td valign="top">
+
+2023-07-05
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Notifications
+
+</td>
+<td valign="top">
+
+As of the Jul 5, 2023 upgrade, the first administrator in every new tenant, created after that date, and all newly created administrators are automatically subscribed for system notifications. See [Send System Notifications via Emails](Operation-Guide/send-system-notifications-via-emails-aa04a8b.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-07-12
+
+</td>
+<td valign="top">
+
+2023-07-05
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+REST API
+
+</td>
+<td valign="top">
+
+User Management REST API now supports the `applicationId` parameter. The user is created for the application with the specified ID. See [User Registration](Development/user-registration-0aa433c.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-07-12
+
+</td>
+<td valign="top">
+
+2023-07-05
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Groups
+
+</td>
+<td valign="top">
+
+Tenant administrator can search for specific member in a group via SCIM ID. See [List and Search Users in Groups](Operation-Guide/list-and-search-users-in-groups-4ac340a.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-07-12
+
+</td>
+<td valign="top">
+
+2023-07-05
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Authentication
+
+</td>
+<td valign="top">
+
+Support unauthenticated requests with public tokens. See [Call Identity Authentication Introspect Token Endpoint](Operation-Guide/call-identity-authentication-introspect-token-endpoint-a05f14c.md), [Call Identity Authentication Revoke Token Endpoint](Operation-Guide/call-identity-authentication-revoke-token-endpoint-3501e42.md), and [Call Identity Authentication List Sessions Endpoint](Operation-Guide/call-identity-authentication-list-sessions-endpoint-daf7e44.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-07-12
+
+</td>
+<td valign="top">
+
+2023-07-05
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Off-Cycle Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-06-29
+
+</td>
+<td valign="top">
+
+2023-06-28
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Corporate IdPs
+
+</td>
+<td valign="top">
+
+Tenant administrator can copy the settings from a corporate IdP that is already existing in the tenant to a new corporate IdP. See [Create Corporate IdP in Administration Console](Operation-Guide/create-corporate-idp-in-administration-console-ae99ba9.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-06-29
+
+</td>
+<td valign="top">
+
+2023-06-28
 
 </td>
 </tr>
@@ -4122,17 +3413,17 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
-
+2023-06-09
 
 </td>
 <td valign="top">
 
-2022-07-11
+2023-06-08
 
 </td>
 </tr>
@@ -4153,12 +3444,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-OpenID Connect
+Corporate IdP
 
 </td>
 <td valign="top">
 
-The Discovery Endpoint support is extended with `private_key_jwt` value for the `token_endpoint_auth_methods_supported`. See [Call Identity Authentication Discovery Endpoint](Operation-Guide/call-identity-authentication-discovery-endpoint-c297516.md).
+Tenant administrator can set the interval for the automatic refresh of the OpenID Connect metadata of the corporate identity provider. See [Configure Trust with OpenID Connect Corporate Identity Provider](Operation-Guide/configure-trust-with-openid-connect-corporate-identity-provider-8ff83a1.md).
 
 </td>
 <td valign="top">
@@ -4188,17 +3479,17 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
-
+2023-06-09
 
 </td>
 <td valign="top">
 
-2022-07-11
+2023-06-08
 
 </td>
 </tr>
@@ -4219,12 +3510,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-OpenID Connect
+OpenID Connect Configurations
 
 </td>
 <td valign="top">
 
-The list of the claims that can't be set via the default attribute configuration is extended with `ias_iss`. See [Configuring Attributes Based on Flexible Expressions](Operation-Guide/configuring-attributes-based-on-flexible-expressions-a2f1e46.md).
+Tenant administrator can set the maximum wait time for front-channel logout. See [Tenant OpenID Connect Configurations](Operation-Guide/tenant-openid-connect-configurations-3d6abcc.md).
 
 </td>
 <td valign="top">
@@ -4254,17 +3545,17 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
-
+2023-06-09
 
 </td>
 <td valign="top">
 
-2022-07-11
+2023-06-08
 
 </td>
 </tr>
@@ -4285,12 +3576,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-OpenID Connect
+System Upgrade
 
 </td>
 <td valign="top">
 
-Tenant administrator can define the allowed grant types in the applications via the administration for Identity Authentication. See [Configure OpenID Connect Application for Authorization Code Flow](Operation-Guide/configure-openid-connect-application-for-authorization-code-flow-4a94254.md), [Configure OpenID Connect Application for Client Credentials Flow](Operation-Guide/configure-openid-connect-application-for-client-credentials-flow-3e409d8.md), [Configure OpenID Connect Application for Resource Owner Password Credentials Flow](Operation-Guide/configure-openid-connect-application-for-resource-owner-password-credentials-flow-9a4b94b.md), [Using JWT Bearer Flow](Operation-Guide/using-jwt-bearer-flow-2862baf.md), and [Create OpenID Connect Application](Operation-Guide/create-openid-connect-application-62fb1c3.md).
+Identity Authentication has been upgraded.
 
 </td>
 <td valign="top">
@@ -4320,17 +3611,215 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
+2023-05-25
+
+</td>
+<td valign="top">
+
+2023-05-25
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
 
 
 </td>
 <td valign="top">
 
-2022-07-11
+Corporate IdPs
+
+</td>
+<td valign="top">
+
+You can change the default attributes sent to the application to uppercase or lowercase letters depending on your needs. See [Configuring Attributes Based on Flexible Expressions](Operation-Guide/configuring-attributes-based-on-flexible-expressions-a2f1e46.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-05-25
+
+</td>
+<td valign="top">
+
+2023-05-25
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-05-17
+
+</td>
+<td valign="top">
+
+2023-05-17
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-05-11
+
+</td>
+<td valign="top">
+
+2023-05-11
 
 </td>
 </tr>
@@ -4356,7 +3845,275 @@ OpenID Connect
 </td>
 <td valign="top">
 
-To improve security, Identity Authentication has stopped adding the client IDs of dependent services to tokens that have been requested using PKCE without client authentication. An application that receives a token based on a public client flow can't forward the token to a reuse service or exchange the token with the Authorization and Trust Management service of SAP BTP. Dependencies are declared in the identity service of SAP BTP. For more information, see [Reference Information for the Identity Service of SAP BTP](https://help.sap.com/docs/IDENTITY_AUTHENTICATION/6d6d63354d1242d185ab4830fc04feb1/9379444abf3f4e2cbaade7c4001df381.html).
+Identity Authentication now supports new optional parameter `logout_uri` in the `/oauth2/authorize` endpoint. See [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md), [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow with PKCE](Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-a721157.md), and [Configure the Client to Call Identity Authentication Authorize Endpoint for Implicit Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-implicit-flow-1ca3dc0.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-05-11
+
+</td>
+<td valign="top">
+
+2023-05-11
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Tenant Settings
+
+</td>
+<td valign="top">
+
+You can now reuse your existing tenant for configurations and automated subscriptions. See [Reuse SAP Cloud Identity Services Tenants for Different Customer IDs](Operation-Guide/reuse-sap-cloud-identity-services-tenants-for-different-customer-ids-ebd0258.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-05-04
+
+</td>
+<td valign="top">
+
+2023-05-04
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-04-27
+
+</td>
+<td valign="top">
+
+2023-04-27
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-04-20
+
+</td>
+<td valign="top">
+
+2023-04-20
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Rewording of Security Recommendations
+
+</td>
+<td valign="top">
+
+We improved security recommendation [BTP-IAS-0017](https://help.sap.com/docs/btp/sap-btp-security-recommendations-c8a9bb59fe624f0981efa0eff2497d7d/sap-btp-security-recommendations?seclist-index=BTP-IAS-0017) to list the specific authorizations that we feel are critical not just to the service, but to your landscape as well.
+
+In addition, we reviewed and improved the readability of the other recommendations for the service to make clear when the recommendations apply.
+
+See [SAP Security Recommendations for Identity Authentication](https://help.sap.com/docs/btp/sap-btp-security-recommendations-c8a9bb59fe624f0981efa0eff2497d7d/sap-btp-security-recommendations).
 
 </td>
 <td valign="top">
@@ -4386,17 +4143,17 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
-
+2023-04-20
 
 </td>
 <td valign="top">
 
-2022-07-11
+2023-04-20
 
 </td>
 </tr>
@@ -4417,12 +4174,14 @@ Identity Authentication
 </td>
 <td valign="top">
 
-System Upgrade
+Deprecation of Security Recommendation BTP-IAS-0016
 
 </td>
 <td valign="top">
 
-Identity Authentication has been upgraded.
+Security recommendation BTP-IAS-0016 was too broadly formulated to provide clear guidance to our customers. We removed the recommendation from the list.
+
+For other recommendations for the service, see [SAP BTP Security Recommendations for Identity Authentication](https://help.sap.com/docs/btp/sap-btp-security-recommendations-c8a9bb59fe624f0981efa0eff2497d7d/sap-btp-security-recommendations?seclist-service=Identity%20Authentication).
 
 </td>
 <td valign="top">
@@ -4432,78 +4191,12 @@ Info only
 </td>
 <td valign="top">
 
-General Availability
+Deprecated
 
 </td>
 <td valign="top">
 
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-06-22
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-System Upgrade
-
-</td>
-<td valign="top">
-
-Identity Authentication has been upgraded.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
+Changed
 
 </td>
 <td valign="top">
@@ -4518,1219 +4211,17 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
+2023-04-20
 
-
-</td>
-<td valign="top">
-
-2022-06-15
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-System Upgrade
-
-</td>
-<td valign="top">
-
-Identity Authentication has been upgraded.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-05-25
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-OpenID Connect
-
-</td>
-<td valign="top">
-
-The number of tokens that can be issued for the same session in parallel were increased to 10 from 5. See [Tenant OpenID Connect Configurations](Operation-Guide/tenant-openid-connect-configurations-3d6abcc.md) and [Token Policy Configuration for Applications](Operation-Guide/token-policy-configuration-for-applications-c4ba52e.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-05-25
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-System Upgrade
-
-</td>
-<td valign="top">
-
-Identity Authentication has been upgraded.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-05-11
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Real-Time Provisioning
-
-</td>
-<td valign="top">
-
-Identity Authentication source system can use the Identity Directory SCIM API \(in short, SCIM API version 2\). See [Configure Identity Provisioning Target Systems for Real-Time User Provisioning](Operation-Guide/configure-identity-provisioning-target-systems-for-real-time-user-provisioning-3349645.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-05-11
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Two-Factor Authentication
-
-</td>
-<td valign="top">
-
-You can protect applications with two-factor authentication via a code sent to the user's email. See [Configure Risk-Based Authentication for an Application](Operation-Guide/configure-risk-based-authentication-for-an-application-bc52fbf.md#loiobc52fbf3d59447bbb6aa22f80d8b6056) and [Configure Default Risk-Based Authentication for All Applications in the Tenant](Operation-Guide/configure-default-risk-based-authentication-for-all-applications-in-the-tenant-1aab51a.md#loio1aab51ae62b94f79b4c6dac7a00857c2).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-05-11
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-OpenID Connect
-
-</td>
-<td valign="top">
-
-Tenant administrator can manually refresh the OpenID Connect metadata of the corporate identity provider. See [Configure Trust with OpenID Connect Corporate Identity Provider](Operation-Guide/configure-trust-with-openid-connect-corporate-identity-provider-8ff83a1.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-05-11
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-System Upgrade
-
-</td>
-<td valign="top">
-
-Identity Authentication has been upgraded.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-04-27
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Regional Availability
-
-</td>
-<td valign="top">
-
-The Saudi Arabia region will operate with an additional data center in Dammam.
-
-Action: We recommend you to add the following IPs to your allowed IP list:
-
--   LB IP - `130.214.248.94` 
--   NAT IP - `130.214.248.32 / 27` 
-
-
-
-</td>
-<td valign="top">
-
-Recommended
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-Announcement
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-04-27
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-System Upgrade
-
-</td>
-<td valign="top">
-
-Identity Authentication has been upgraded.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-04-13
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Corporate IdPs
-
-</td>
-<td valign="top">
-
-Identity Authentication supports corporate identity providers using OpenID Connect. Applications that use OpenID Connect can direct users to your corporate identity provider for authentication. See [Configure Trust with OpenID Connect Corporate Identity Provider](Operation-Guide/configure-trust-with-openid-connect-corporate-identity-provider-8ff83a1.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-04-13
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-System Upgrade
-
-</td>
-<td valign="top">
-
-Identity Authentication has been upgraded.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-04-08
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Regional Availability
-
-</td>
-<td valign="top">
-
-The Europe region will operate in high availability \(HA\) mode with an additional data center in Frankfurt.
-
-Action: We recommend you to add the following IPs to your allowed IP list:
-
--   LB IP - `130.214.144.214` 
--   NAT IP - `130.214.228.32 / 27` 
-
-See [Regional Availability](regional-availability-be600ca.md).
-
-</td>
-<td valign="top">
-
-Recommended
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-Announcement
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-04-08
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-System Upgrade
-
-</td>
-<td valign="top">
-
-Identity Authentication has been upgraded.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-03-31
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Configure Applications
-
-</td>
-<td valign="top">
-
-Tenant administrator can configure an application as a parent or child one. See [Create SAML 2.0 Application](Operation-Guide/create-saml-2-0-application-fe3102a.md) and [Create OpenID Connect Application](Operation-Guide/create-openid-connect-application-62fb1c3.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-03-31
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-System Upgrade
-
-</td>
-<td valign="top">
-
-Identity Authentication has been upgraded.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-03-22
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-System Upgrade
-
-</td>
-<td valign="top">
-
-Identity Authentication has been upgraded.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-03-16
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Corporate IdPs
-
-</td>
-<td valign="top">
-
-Tenant administrator can configure how the `AllowCreate` attribute is sent to the corporate identity provider. See [\(Optional\) Configure the Name ID Format Attribute Sent to the SAML 2.0 Corporate IdP](Operation-Guide/optional-configure-the-name-id-format-attribute-sent-to-the-saml-2-0-corporate-idp-4fcc090.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-03-16
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-System Upgrade
-
-</td>
-<td valign="top">
-
-Identity Authentication has been upgraded.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
 </td>
 <td valign="top">
 
-2022-03-08
+2023-04-20
 
 </td>
 </tr>
@@ -5756,7 +4247,75 @@ SMS Verification
 </td>
 <td valign="top">
 
-Tenant administrator can clear the Sinch Authentication 365 configuration in the administration console for Identity Authentication. See [Configure Sinch Service in Administration Console](Operation-Guide/configure-sinch-service-in-administration-console-f4a04ed.md).
+Sinch Authentication 365 is deprecated.
+
+Action: We recommend you to configure Sinch Verification in the administration console and start using it. See [Configure Sinch Service in Administration Console](Operation-Guide/configure-sinch-service-in-administration-console-f4a04ed.md).
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+Deprecated
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-04-13
+
+</td>
+<td valign="top">
+
+2023-04-13
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Tenant Offering
+
+</td>
+<td valign="top">
+
+You can now create an SAP Cloud Identity Services trial tenant from an SAP BTP trial account. A trial tenant is intended for testing purposes of SAP Cloud Identity Services – Identity Authentication and Identity Provisioning. See [Tenant Model and Licensing](tenant-model-and-licensing-93160eb.md).
 
 </td>
 <td valign="top">
@@ -5786,17 +4345,83 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
+2023-04-13
+
+</td>
+<td valign="top">
+
+2023-04-13
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
 
 
 </td>
 <td valign="top">
 
-2022-03-08
+Authorizations Based on Policies
+
+</td>
+<td valign="top">
+
+\(Beta\) You can configure and assign a granular access control based on policies for the administrators of SAP Cloud Identity Services. See [Configure Authorizations Based on Policies](Operation-Guide/configure-authorizations-based-on-policies-08fea39.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+Beta
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-04-04
+
+</td>
+<td valign="top">
+
+2023-04-04
 
 </td>
 </tr>
@@ -5852,17 +4477,17 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
-
+2023-03-31
 
 </td>
 <td valign="top">
 
-2022-03-01
+2023-03-31
 
 </td>
 </tr>
@@ -5883,12 +4508,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-Source Systems
+User Management
 
 </td>
 <td valign="top">
 
-Identity Authentication supports certificate authentication for API calls to external source systems - SAP SuccessFactors, SAP Learning Management. See [Configure Source System To Migrate User Passwords from SAP SuccessFactors Systems to Identity Authentication](Operation-Guide/configure-source-system-to-migrate-user-passwords-from-sap-successfactors-systems-to-iden-671d2e6.md) and [Configure Source System To Migrate User Passwords from SAP Learning Management System to Identity Authentication](Operation-Guide/configure-source-system-to-migrate-user-passwords-from-sap-learning-management-system-to-0d85eb7.md).
+You can configure which user ID attribute can be visible on the *User Management* section in the administration console. See [Search Users](Operation-Guide/search-users-06078a6.md).
 
 </td>
 <td valign="top">
@@ -5918,17 +4543,17 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
-
+2023-03-31
 
 </td>
 <td valign="top">
 
-2022-03-01
+2023-03-31
 
 </td>
 </tr>
@@ -5949,12 +4574,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-Password Policies
+Global User ID
 
 </td>
 <td valign="top">
 
-Tenant administrator can create more than one custom password policy in the administration console. See [Configure Custom Password Policy](Operation-Guide/configure-custom-password-policy-67bece2.md).
+You can reuse previous versions of the *Global User ID* for one and the same user. See [Search Users](Operation-Guide/search-users-06078a6.md).
 
 </td>
 <td valign="top">
@@ -5984,17 +4609,83 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
+2023-03-31
+
+</td>
+<td valign="top">
+
+2023-03-31
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
 
 
 </td>
 <td valign="top">
 
-2022-03-01
+OpenID Connect Configurations
+
+</td>
+<td valign="top">
+
+You can extend the standard OpenID Connect metadata. See [Tenant OpenID Connect Configurations](Operation-Guide/tenant-openid-connect-configurations-3d6abcc.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-03-31
+
+</td>
+<td valign="top">
+
+2023-03-31
 
 </td>
 </tr>
@@ -6020,7 +4711,7 @@ Corporate IdPs
 </td>
 <td valign="top">
 
-Tenant administrator can include or exclude Scoping element in the SAML 2.0 request. See [Configure Trust with SAML 2.0 Corporate Identity Provider](Operation-Guide/configure-trust-with-saml-2-0-corporate-identity-provider-33832e5.md).
+You can check which applications have established trust with a specific corporate identity provider in the administration console. See [Configure Trust with OpenID Connect Corporate Identity Provider](Operation-Guide/configure-trust-with-openid-connect-corporate-identity-provider-8ff83a1.md) and [Configure Trust with SAML 2.0 Corporate Identity Provider](Operation-Guide/configure-trust-with-saml-2-0-corporate-identity-provider-33832e5.md).
 
 </td>
 <td valign="top">
@@ -6050,17 +4741,17 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
-
+2023-03-31
 
 </td>
 <td valign="top">
 
-2022-03-01
+2023-03-31
 
 </td>
 </tr>
@@ -6073,6 +4764,73 @@ Identity Authentication
 <td valign="top">
 
 -   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Configuration of Authorization Policies
+
+</td>
+<td valign="top">
+
+Authorization management enables administrators to configure authorization policies throughout multiple environments and assign them to users. In the administration console, administrators can create custom authorization policies. They can edit an existing one by adding or deleting restrictions, changing user attribute values, or by combining rules of multiple authorization policies in a new one. See [Configuring Authorization Policies](https://help.sap.com/docs/IDENTITY_AUTHENTICATION/6d6d63354d1242d185ab4830fc04feb1/982ac5f91d2346fda8dd8096e861fc36.html?version=Cloud).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-03-31
+
+</td>
+<td valign="top">
+
+2023-03-31
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
 -   Cloud Foundry
 
 
@@ -6115,17 +4873,17 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
-
+2023-03-16
 
 </td>
 <td valign="top">
 
-2022-02-17
+2023-03-15
 
 </td>
 </tr>
@@ -6138,6 +4896,7 @@ Identity Authentication
 <td valign="top">
 
 -   Neo
+-   Kyma
 -   Cloud Foundry
 
 
@@ -6145,12 +4904,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-Risk-Based Authentication
+Administration Console
 
 </td>
 <td valign="top">
 
-Tenant administrator can use `Corporate Attribute` to create rules for risk-based authentication for all applications in the tenant. See [Create a New Rule for Risk-Based Authentication on Tenant Level](Operation-Guide/configure-default-risk-based-authentication-for-all-applications-in-the-tenant-1aab51a.md#loio2ef53523c5fc47049f6ae0056252be4a).
+The Horizon theme is now available for the administration console of SAP Cloud Identity Services, both the web and mobile version. See [How Far is the Horizon for SAP Cloud Identity Services?](https://blogs.sap.com/2023/03/15/how-far-is-the-horizon-for-sap-cloud-identity-services/).
 
 </td>
 <td valign="top">
@@ -6185,12 +4944,12 @@ Not applicable
 </td>
 <td valign="top">
 
-
+2023-03-16
 
 </td>
 <td valign="top">
 
-2022-02-17
+2023-03-15
 
 </td>
 </tr>
@@ -6203,6 +4962,7 @@ Identity Authentication
 <td valign="top">
 
 -   Neo
+-   Kyma
 -   Cloud Foundry
 
 
@@ -6210,12 +4970,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-Risk-Based Authentication
+Troubleshooting
 
 </td>
 <td valign="top">
 
-Tenant administrator can use `Corporate Attribute` to create rules for risk-based authentication for a specific application in the tenant. See [Create a New Rule](Operation-Guide/configure-risk-based-authentication-for-an-application-bc52fbf.md#loio18d02ab9cc7d4caf83d8654c8c51a175).
+You can filter and view troubleshooting logs directly in the administration console for SAP Cloud Identity Services. See [View Troubleshooting Logs](Monitoring-and-Reporting/view-troubleshooting-logs-6e7543f.md).
 
 </td>
 <td valign="top">
@@ -6250,12 +5010,12 @@ Not applicable
 </td>
 <td valign="top">
 
-
+2023-03-16
 
 </td>
 <td valign="top">
 
-2022-02-17
+2023-03-15
 
 </td>
 </tr>
@@ -6268,6 +5028,7 @@ Identity Authentication
 <td valign="top">
 
 -   Neo
+-   Kyma
 -   Cloud Foundry
 
 
@@ -6275,12 +5036,12 @@ Identity Authentication
 </td>
 <td valign="top">
 
-Assertion Attributes
+OpenID Connect
 
 </td>
 <td valign="top">
 
-Identity Authentication added `locale` as assertion attribute. See [Configuring User Attributes from the Identity Directory](Operation-Guide/configuring-user-attributes-from-the-identity-directory-d361407.md).
+You can configure the access token format. See [Token Policy Configuration for Applications](Operation-Guide/token-policy-configuration-for-applications-c4ba52e.md).
 
 </td>
 <td valign="top">
@@ -6315,77 +5076,12 @@ Not applicable
 </td>
 <td valign="top">
 
-
-
-</td>
-<td valign="top">
-
-2022-02-17
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
+2023-03-16
 
 </td>
 <td valign="top">
 
--   Neo
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-User Profile
-
-</td>
-<td valign="top">
-
-The profile page has a new design.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-02-17
+2023-03-15
 
 </td>
 </tr>
@@ -6398,6 +5094,7 @@ Identity Authentication
 <td valign="top">
 
 -   Neo
+-   Kyma
 -   Cloud Foundry
 
 
@@ -6440,17 +5137,17 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
-
+2023-03-01
 
 </td>
 <td valign="top">
 
-2022-02-02
+2023-03-01
 
 </td>
 </tr>
@@ -6463,6 +5160,7 @@ Identity Authentication
 <td valign="top">
 
 -   Neo
+-   Kyma
 -   Cloud Foundry
 
 
@@ -6505,17 +5203,17 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
-
+2023-02-15
 
 </td>
 <td valign="top">
 
-2022-01-26
+2023-02-15
 
 </td>
 </tr>
@@ -6528,6 +5226,475 @@ Identity Authentication
 <td valign="top">
 
 -   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Management
+
+</td>
+<td valign="top">
+
+Application user import was enhanced with new parameters : `userType` and `urn:ietf:params:scim:schemas:extension:sap:2.0:User:mailVerified`. See [Import or Update Users for a Specific Application](Operation-Guide/import-or-update-users-for-a-specific-application-33838e0.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Applications
+
+</td>
+<td valign="top">
+
+You can return an application's configuration to its inherited state with the *Inherit from Parent* option via the administration console. See [Edit Applications](Operation-Guide/edit-applications-69d8cad.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Troubleshooting
+
+</td>
+<td valign="top">
+
+You can use the troubleshooting logs to analyze OpenID Connect issues with applications and corporate identity providers. See [Logging OpenID Connect Tokens](Monitoring-and-Reporting/logging-openid-connect-tokens-b6c42b5.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+OpenID Connect
+
+</td>
+<td valign="top">
+
+Identity Authentication now supports the `groups` value of the `scope` parameter. See [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md) and [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow with PKCE](Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-a721157.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+OpenID Connect
+
+</td>
+<td valign="top">
+
+Identity Authentication now supports new parameter - `scope` for the service endpoint that returns the tokens issued by the corporate identity provider received during the OpenID Connect \(OIDC\) authentication process. See [Exchanging Identity Authentication Tokens for Tokens from Corporate Identity Providers](Development/exchanging-identity-authentication-tokens-for-tokens-from-corporate-identity-providers-a66753a.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Identity Service
+
+</td>
+<td valign="top">
+
+You can use the `refresh-usage-after-renewal` parameter to define the validity of the old refresh token after requesting a new one through the refresh token grant type. See [Reference Information for the Identity Service of SAP BTP](Integrating-the-Service/reference-information-for-the-identity-service-of-sap-btp-9379444.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Administration Console
+
+</td>
+<td valign="top">
+
+You can now configure and work with Identity Provisioning in the administration console for SAP Cloud Identity Services.
+
+The entire provisioning functionality, which includes adding, enabling, disabling, deleting, and resetting provisioning systems, running jobs, viewing and downloading logs, is integrated there and can be accessed in the navigation area under SAP Cloud Identity Services.
+
+The latest step in tightening SAP Cloud Identity Services integration allows you to manage your configurations in one place without the need to switch between consoles. To benefit from it, your Identity Provisioning tenant must run on SAP Cloud Identity Services infrastructure.
+
+See [Configure Identity Provisioning in SAP Cloud Identity Services Administration Console](https://help.sap.com/docs/IDENTITY_PROVISIONING/f48e822d6d484fa5ade7dda78b64d9f5/03223babed91493c9305e40269e909d2.html?state=DRAFT&version=Cloud).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+</td>
+<td valign="top">
+
+2023-02-15
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
 -   Cloud Foundry
 
 
@@ -6570,82 +5737,17 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
-
-
-</td>
-<td valign="top">
-
-2022-01-19
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
+2023-02-09
 
 </td>
 <td valign="top">
 
--   Neo
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Multi-Factor Authentication
-
-</td>
-<td valign="top">
-
-Tenant administrator can deactivate the second factor \(passcode or security key\) if the user has activated it via the profile page. See [Deactivate Two-Factor Authentication](Operation-Guide/deactivate-two-factor-authentication-15db825.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-01-19
+2023-02-07
 
 </td>
 </tr>
@@ -6658,331 +5760,7 @@ Identity Authentication
 <td valign="top">
 
 -   Neo
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-End-User Screens
-
-</td>
-<td valign="top">
-
-Tenant administrator can enable CAPTCHA protection for the login page of the application. See [Enable Google reCAPTCHA for Application Forms](Operation-Guide/enable-google-recaptcha-for-application-forms-3db7c1e.md) and [Enable MTCaptcha for Application Forms](Operation-Guide/enable-mtcaptcha-for-application-forms-6e2f44a.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-01-19
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Privacy Policy Documents
-
-</td>
-<td valign="top">
-
-Tenant administrator can delete privacy policy documents. See [\(Optional\) Delete a Privacy Policy Document](Operation-Guide/optional-delete-a-privacy-policy-document-4b66ac1.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-01-19
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Terms of Use Documents
-
-</td>
-<td valign="top">
-
-Tenant administrator can delete terms of use documents. See [\(Optional\) Delete a Terms of Use Document](Operation-Guide/optional-delete-a-terms-of-use-document-6ad5df5.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-01-19
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Password Policies
-
-</td>
-<td valign="top">
-
-Identity Authentication added new options for maximum password lifetime: 1 year, 2 years, 3 years, and unlimited. See [Configuring Password Policies](Operation-Guide/configuring-password-policies-12b3395.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-01-19
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-User Export
-
-</td>
-<td valign="top">
-
-Tenant administrator can download a CSV file containing information of all tenant users in Identity Authentication by filtering the user attributes that will be included in the downloaded file. See [Export Existing Users of a Tenant of Identity Authentication](Operation-Guide/export-existing-users-of-a-tenant-of-identity-authentication-40c29d2.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-2022-01-19
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication 
-
-</td>
-<td valign="top">
-
--   Neo
+-   Kyma
 -   Cloud Foundry
 
 
@@ -7025,17 +5803,17 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Identity Authentication
 
 </td>
 <td valign="top">
 
-
+2023-02-03
 
 </td>
 <td valign="top">
 
-2022-01-06
+2023-02-03
 
 </td>
 </tr>
@@ -7048,6 +5826,7 @@ Identity Authentication
 <td valign="top">
 
 -   Neo
+-   Kyma
 -   Cloud Foundry
 
 
@@ -7055,12 +5834,144 @@ Identity Authentication
 </td>
 <td valign="top">
 
-Email Notifications
+System Upgrade
 
 </td>
 <td valign="top">
 
-Identity Authentication can send emails with information about expiring certificates, system notifications, and new administrators to the tenant administrators. The notifications are also visible at the top-right corner of the administration console. See [Send System Notifications via Emails](Operation-Guide/send-system-notifications-via-emails-aa04a8b.md).
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-02-02
+
+</td>
+<td valign="top">
+
+2023-02-01
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-01-24
+
+</td>
+<td valign="top">
+
+2023-01-24
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Manage Applications
+
+</td>
+<td valign="top">
+
+Tenant administrator can manage applications in Identity Authentication via API. It offers endpoints for CRUD operations \(GET, PUT, POST, PATCH, DELETE\) over the applications. See [SAP Cloud Identity Services Application Directory](https://api.sap.com/api/SCI_Application_Directory/overview).
 
 </td>
 <td valign="top">
@@ -7095,12 +6006,474 @@ Not applicable
 </td>
 <td valign="top">
 
+2023-01-23
+
+</td>
+<td valign="top">
+
+2023-01-23
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
 
 
 </td>
 <td valign="top">
 
-2022-01-06
+System Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-01-22
+
+</td>
+<td valign="top">
+
+2023-01-20
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Management
+
+</td>
+<td valign="top">
+
+Tenant administrator can search users by `SCIM ID` in the administration console. See [Search Users](Operation-Guide/search-users-06078a6.md) and [Add Users to a Group](Operation-Guide/add-users-to-a-group-d2e1a01.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-01-22
+
+</td>
+<td valign="top">
+
+2023-01-20
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-01-19
+
+</td>
+<td valign="top">
+
+2023-01-18
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regional Availability
+
+</td>
+<td valign="top">
+
+Identity Authentication is now available with a single data center \(DC\) for the AWS infrastructure in India. See [Regional Availability](regional-availability-be600ca.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-01-19
+
+</td>
+<td valign="top">
+
+2023-01-18
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Tenant Settings
+
+</td>
+<td valign="top">
+
+The `Login Name` user identifier can be configured as required or nonrequired. See [Configure User Identifier Attributes](Operation-Guide/configure-user-identifier-attributes-8b9fa88.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-01-19
+
+</td>
+<td valign="top">
+
+2023-01-18
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Administration Console
+
+</td>
+<td valign="top">
+
+The administration console was renamed from `Identity Authentication` to `SAP Cloud Identity Services`.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-01-19
+
+</td>
+<td valign="top">
+
+2023-01-18
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Management
+
+</td>
+<td valign="top">
+
+Identity Authentication renamed user identifier `User UUID` to `Global User ID` in the administration console. The technical name of the attribute remains unchanged `userUuid`.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2023-01-19
+
+</td>
+<td valign="top">
+
+2023-01-18
 
 </td>
 </tr>

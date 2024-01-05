@@ -291,7 +291,7 @@ Allowed values for `requested_token_type` parameter:
 > ### Note:  
 > The exchange of an OpenID Connect token with SAML 2.0 is possible in two scenarios, depending on the requested token type string:
 > 
-> -   `urn:sap:identity:oauth:token-type:saml2-header` - [SAP Note 2043039 - SAML 2.0 Authentication via HTTP Request Header](https://me.sap.com/notes/SAP Note 2043039 - SAML 2.0 Authentication via HTTP Request Header)
+> -   `urn:sap:identity:oauth:token-type:saml2-header` - [2043039](https://me.sap.com/notes/2043039) 
 > -   `urn:ietf:params:oauth:token-type:saml2` - [SAML 2.0 Bearer Assertion Flow for OAuth 2.0 Client](https://help.sap.com/docs/SAP_NETWEAVER_750/e815bb97839a4d83be6c4fca48ee5777/01043cc6765b48cfbc1564a9839a29ee.html)
 
 

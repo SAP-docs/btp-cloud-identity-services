@@ -24,11 +24,11 @@ When you edit an existing custom authorization policy, you can add or delete res
 
     The details page of your application has an *Authorization Policies* tab.
 
-4.  Choose the *Authorization Policies* tab and select a custom authorization policy. Custom authorization policies appear with an :pencil2: \(Editable\) icon in the *Editable* column of the list of authorization policies. If the policy contains editable restrictions, it has an <span class="SAP-icons"></span> \(Editable Restrictions\) icon.
+4.  Choose the *Authorization Policies* tab and select a custom authorization policy. Custom authorization policies appear as *Editable* in the *Editable* column of the list of authorization policies. If the policy contains editable restrictions, it is also marked as *Restricted Editing*.
 
 5.  Choose the :pencil2: *Edit* button.
 
-    -   \(Optional\) To assign users, choose the *Assignment* tab. See [Assign Authorization Policies](assign-authorization-policies-eac8e5e.md).
+    -   \(Optional\) To assign users, choose the *Assignments* tab. See [Assign Authorization Policies](assign-authorization-policies-eac8e5e.md).
 
     -   You display the rule that came with the custom authorization policy in the *Rules* tab.
 
@@ -41,11 +41,11 @@ When you edit an existing custom authorization policy, you can add or delete res
 
     -   Choose :heavy_plus_sign: to see the possible `RESTRICT` options. This button is either directly below `RESTRICT` or in an indented row below `RESTRICT`.
 
-    -   Choose *Add USE* to add a `USE` rule to the selected authorization policy. Select a `USE` rule from the available base policies.
+    -   Choose *Add USE* to add a `USE` statement to the selected authorization policy. Select a `USE` statement from the available authorization policies.
 
 
 
-9.  For a `RESTRICT` rule, choose one of the available attributes, an operation, and enter a value. You can choose a value from the value help or type it in.
+9.  For a `RESTRICT` condition, choose one of the available attributes, an operation, and enter a value. You can choose a value from the value help or type it in.
 
     > ### Note:  
     > All indented rows that appear in a list directly below `RESTRICT` or `USE` have an `AND` conjunction.

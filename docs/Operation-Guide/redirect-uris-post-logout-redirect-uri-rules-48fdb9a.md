@@ -68,11 +68,6 @@ Top level domains are allowed. The domain part can't end with a hyphen "-".
 
 ## Wildcards
 
--   You can use asterisk \(`*`\) in the beginning, only for the first subdomain.
-
-    > ### Example:  
-    > https://\*.test.example.com
-
 -   You can use asterisk \(\*\) as first subdomain for localhost addresses. No other subdomains allowed.
 
     > ### Example:  
@@ -80,10 +75,10 @@ Top level domains are allowed. The domain part can't end with a hyphen "-".
     > 
     > https://\*.localhost
 
--   You can use asterisk \(`*`\) in the domain part, or you can have a subdomain and add an asterisk at the beginning or at the end of it. There must be at least 3 subdomains left after the subdomain with the asterisk, and there can only be one subdomain with an asterisk..
+-   You can use asterisk \(`*`\) in the domain part, or you can have a subdomain and add an asterisk at the beginning or at the end of it. There must be at least 3 subdomains left after the subdomain with the asterisk, and there can only be one subdomain with an asterisk.
 
     > ### Example:  
-    > https://app.\*.test.example.com
+    > https://\*.test.example.com
     > 
     > https://app.\*foo.test.example.com
     > 

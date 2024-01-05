@@ -1,7 +1,5 @@
 <!-- loio1a69414b93ed44f8917fae5d6d6a430d -->
 
-<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
-
 # Combine Authorization Policies
 
 You can combine authorization policies to create a new one. This new authorization policy gets the rules of the authorization policies that you combined.
@@ -23,9 +21,9 @@ You can combine authorization policies to create a new one. This new authorizati
 
 3.  Choose the *Authorization Policies* tab.
 
-4.  Choose :heavy_plus_sign: \(Create new policy\).
+4.  Choose *Create*.
 
-5.  Choose *Combine*.
+5.  Choose *Add Combination*.
 
 6.  Choose the authorization policies you want to combine and enter a name for the new authorization policy.
 
@@ -37,6 +35,8 @@ You can combine authorization policies to create a new one. This new authorizati
 
 10. Choose the *Rules* tab and edit the label and description of the authorization policy. The description is an optional comment.
 
-11. Save your changes.
+11. To change the rules, choose *Edit*. For more information, see [Edit an Authorization Policy](edit-an-authorization-policy-c76aca6.md).
+
+12. Save your changes.
 
 

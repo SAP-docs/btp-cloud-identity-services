@@ -54,7 +54,7 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
     <tr>
     <th valign="top">
 
-    Name
+    Issuer
     
     </th>
     <th valign="top">
@@ -66,24 +66,24 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
     <tr>
     <td valign="top">
     
-    Default Type name format
+    Default Issuer format
     
     </td>
     <td valign="top">
     
-    <tenant ID\>.accounts.ondemand.com
+    https://<tenant ID\>.accounts.ondemand.com
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    URL Type name format
+    Legacy Issuer format
     
     </td>
     <td valign="top">
     
-    https://<tenant ID\>.accounts.ondemand.com
+    <tenant ID\>.accounts.ondemand.com
     
     </td>
     </tr>
@@ -208,7 +208,7 @@ To change the default certificate for the tenant, choose the new one from the li
 
 [Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.")
 
-[Configure Customer-Controlled Encryption Keys in Administration Console \(Early Adoption\)](configure-customer-controlled-encryption-keys-in-administration-console-early-adoption-fe6e30c.md "")
+[Configure Customer-Controlled Encryption Keys in Administration Console \(Restricted Availability\)](configure-customer-controlled-encryption-keys-in-administration-console-restricted-availa-fe6e30c.md "")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 

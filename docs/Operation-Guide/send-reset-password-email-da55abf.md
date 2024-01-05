@@ -10,6 +10,9 @@ You can trigger the sending of an email to the user with reset password informat
 
 Tenant administrator can trigger the sending of an email to the user with reset password information. When the user follows the link provided in the email, the reset password screen appears and the user is prompted to set a new password.
 
+> ### Note:  
+> In this scenario, the email that is sent uses the Forgot Password template set that is defined for the User Prfile application. For more information, see [View Email Template Document](view-email-template-document-148568a.md).
+
 Identity Authentication can send to the user up to three emails \(forgot password, reset password, email verification\) per 24 hours. This counter includes also the emails sent with passcode for TOTP deactivation. If you send three emails within 24 hours, the user will not be able to request a passcode for TOTP deactivation via the profile page during these 24 hours.
 
 If the user must receive more than three emails, the administrator must reset the counter for email sending first. For more information, see [Reset Counter for Email Sending](reset-counter-for-email-sending-08f634b.md).

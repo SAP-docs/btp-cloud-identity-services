@@ -1,5 +1,7 @@
 <!-- loio0d85eb7175ee43d8af51d2edc29ca415 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Configure Source System To Migrate User Passwords from SAP Learning Management System to Identity Authentication
 
 
@@ -191,6 +193,15 @@ To configure a source system, follow the steps below:
 
 6.  **Optional:** Choose *Test Connection* to test the source system configuration.
 
+
+
+
+<a name="loio0d85eb7175ee43d8af51d2edc29ca415__postreq_scd_wwy_3zb"/>
+
+## Next Steps
+
+-   \(Optional\) To edit an existing source system configuration, select *system you want to edit* \> *Edit button* \> *make the necessary changes* \> *Save*.
+-   \(Optional\) To change the display name of an existing source system, select the source system whose name you want to change, choose the :pencil2:, provide the new name, and save your changes.
 
 **Related Information**  
 

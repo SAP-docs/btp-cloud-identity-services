@@ -51,12 +51,14 @@ To change the tenant texts via the administration console, proceed as follows:
 
     You can use the search field, or the filtering and sorting option, or you can expand the page for more results.
 
-5.  Add the new text in the *Custom Value* field next to the text that you want to change.
+5.  Choose the *Edit* button.
+
+6.  Add the new text in the *Custom Value* field next to the text that you want to change.
 
     > ### Note:  
     > Repeat the step for all the texts that you want to change.
 
-6.  Save your changes.
+7.  Save your changes.
 
     If the operation is successful, you receive the `Tenant Texts updated` message.
 
@@ -122,7 +124,7 @@ The default tenant texts are changed with the custom ones. It may take up to 2 m
 
 [Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.")
 
-[Configure Customer-Controlled Encryption Keys in Administration Console \(Early Adoption\)](configure-customer-controlled-encryption-keys-in-administration-console-early-adoption-fe6e30c.md "")
+[Configure Customer-Controlled Encryption Keys in Administration Console \(Restricted Availability\)](configure-customer-controlled-encryption-keys-in-administration-console-restricted-availa-fe6e30c.md "")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 
