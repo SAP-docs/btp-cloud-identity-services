@@ -142,7 +142,7 @@ On a tenant level
 Specific for the application
 
 -   [Display Application Name on Logon Page](display-application-name-on-logon-page-c02798e.md)
--   [Configure a Logo for an Application](configure-a-logo-for-an-application-778f748.md)
+-   [Configure Logo](configure-logo-778f748.md)
 -   [Configure a Branding Style for an Application](configure-a-branding-style-for-an-application-32f8d33.md)
 -   [Define an Email Template Set for an Application](define-an-email-template-set-for-an-application-bb2c79b.md)
 -   [Configure Registration and Upgrade Forms](configure-registration-and-upgrade-forms-93a9e18.md)

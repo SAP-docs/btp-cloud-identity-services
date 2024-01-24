@@ -141,7 +141,7 @@ To create a new OpenID Connect application follow the procedure below:
 -   [Configuring Privacy Policies](configuring-privacy-policies-ed48466.md)
 -   [Configuring Terms of Use](configuring-terms-of-use-61d3a86.md)
 -   [Display Application Name on Logon Page](display-application-name-on-logon-page-c02798e.md)
--   [Configure a Logo for an Application](configure-a-logo-for-an-application-778f748.md)
+-   [Configure Logo](configure-logo-778f748.md)
 -   [Configure a Branding Style for an Application](configure-a-branding-style-for-an-application-32f8d33.md)
 -   [Configure Registration and Upgrade Forms](configure-registration-and-upgrade-forms-93a9e18.md)
 -   [Protecting Self-Registration with Phone Verification](protecting-self-registration-with-phone-verification-5834b6e.md)

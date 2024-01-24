@@ -34,7 +34,7 @@ Time period
 
 The time period is in Coordinated Universal Time \(UTC\).
 
--   You have one hour time period for searching logs. The *Start Period*
+-   You have one hour time period for searching logs.
 -   The date is limited back to 14 days from the current date
 
 > ### Note:  

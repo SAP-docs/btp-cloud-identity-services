@@ -14,6 +14,9 @@ By enabling the *Force Authentication* option users must always provide a passwo
 
 Force authentication can be enabled for both OpenID Connect and SAML 2.0 applications.
 
+> ### Note:  
+> In the context of a corporate identity provider scenario, if an application requires force authentication, users have to authenticate themselves against the corporate identity provider each time they access the application even if single sign-on \(SSO\) is enabled.
+
 To enable force authentication for an application, proceed as follows:
 
 

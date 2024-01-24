@@ -195,6 +195,9 @@ To configure a source system, follow the steps below:
 
 ## Next Steps
 
+> ### Note:  
+> If an application requires force authentication \(ForceAuthn="true"\), users have to authenticate themselves against the corporate identity provider each time they access the application even if single sign-on \(SSO\) is enabled.
+
 -   \(Optional\) To edit an existing source system configuration, select *system you want to edit* \> *Edit button* \> *make the necessary changes* \> *Save*.
 -   \(Optional\) To change the display name of an existing source system, select the source system whose name you want to change, choose the :pencil2:, provide the new name, and save your changes.
 

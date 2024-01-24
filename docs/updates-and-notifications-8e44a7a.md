@@ -2,7 +2,7 @@
 
 # Updates and Notifications
 
-Identity Authentication service has production releases \(updates\) every second Wednesday, 10:00 UTC.For more information about the features delivered every takt, see the [What's New for Identity Authentication](what-s-new-for-identity-authentication-de21efe.md) published regularly. 
+SAP Cloud Identity Services have production releases \(updates\) every second Tuesday, 14:00 UTC.For more information about the features delivered every takt, see the [What's New for Identity Authentication](what-s-new-for-identity-authentication-de21efe.md) published regularly. 
 
 
 
@@ -10,14 +10,16 @@ Identity Authentication service has production releases \(updates\) every second
 
 ## Subscription for Notifications
 
-To get notifications, subscribe for the Identity Authentication selection in the [What's New Viewer for SAP Business Technology Platform](https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=Identity%2520Authentication&locale=en-US&version=Cloud). For more information, see [Subscribing to What's New Notifications](https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=Identity%20Authentication&locale=en-US&version=Cloud).
+To get notifications, subscribe for the What's New sections of [Identity Authentication](https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=Identity%2520Authentication&locale=en-US&version=Cloud) and [Identity Provisioning](https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?version=Cloud&Component=Identity%2520Provisioning&locale=en-US). For more information, see [Subscribing to What's New Notifications](https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=Identity%20Authentication&locale=en-US&version=Cloud).
 
 
 
 ## Reasons for Updates
 
--   **Bi-weekly updates** \(standard\) - planned each second Wednesday at 10:00 UTC.
+-   **Bi-weekly updates** \(standard\) - planned each second Tuesday at 14:00 UTC.
 -   **Immediate updates** - in case of fixes required for bugs that affect productive application operations, or due to urgent security fixes.
+
+You can find the planned schedule for upcoming releases at [3409744](https://me.sap.com/notes/3409744).
 
 
 

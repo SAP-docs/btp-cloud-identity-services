@@ -1970,7 +1970,7 @@ Risk-Based Authentication
 </td>
 <td valign="top">
 
-New authentication method *Trusted IdP SAML Assertion* is available when you create a new rule for risk-based authentication. See [Create a New Rule](Operation-Guide/configure-risk-based-authentication-for-an-application-bc52fbf.md#loio18d02ab9cc7d4caf83d8654c8c51a175) .
+New authentication method *Trusted IdP SAML Assertion* is available when you create a new rule for risk-based authentication. See [Create a New Rule](Operation-Guide/create-a-new-rule-18d02ab.md) .
 
 </td>
 <td valign="top">

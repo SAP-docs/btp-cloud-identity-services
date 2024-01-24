@@ -109,12 +109,14 @@ To configure your logon links, proceed as follows:
     </tr>
     </table>
     
-5.  Add the new text in the *Custom Value* field next to the text that you want to change.
+5.  Choose *Edit*.
+
+6.  Add the new text in the *Custom Value* field next to the text that you want to change.
 
     > ### Note:  
     > The value must be in the format `<a href="https:link_URL">Link Text</a>`.
 
-6.  Save your changes.
+7.  Save your changes.
 
     If the operation is successful, you receive the `Tenant Texts updated` message.
 
