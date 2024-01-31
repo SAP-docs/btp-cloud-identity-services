@@ -95,6 +95,204 @@ Identity Authentication
 </td>
 <td valign="top">
 
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2024-01-30
+
+</td>
+<td valign="top">
+
+2024-01-30
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Manage Administrators
+
+</td>
+<td valign="top">
+
+You can add dministrators in SAP Cloud Identity Services via the [SAP for Me](https://me.sap.com/home) portal. See [Cloud Identity Services Administrators Card](https://support.sap.com/content/s4m/help/systems/systems/details/ias.html).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2024-01-30
+
+</td>
+<td valign="top">
+
+2024-01-30
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Application Authorizations Based on Policies
+
+</td>
+<td valign="top">
+
+Tenant administrator can configure access to applications in the administration console of SAP Cloud Identity Services via authorizations based on policies. See [Configure Authorizations Based on Policies](Operation-Guide/configure-authorizations-based-on-policies-08fea39.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2024-01-30
+
+</td>
+<td valign="top">
+
+2024-01-30
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Off-Cycle Upgrade
 
 </td>

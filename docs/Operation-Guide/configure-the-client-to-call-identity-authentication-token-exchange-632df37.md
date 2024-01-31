@@ -323,6 +323,65 @@ string
 
 Use provided API names. For more information, see [Consume APIs from Other Applications](../Development/consume-apis-from-other-applications-29e204d.md).
 
+> ### Note:  
+> If `resource` parameter is used to consume APIs from other applications, then the returned token is always of type `urn:ietf:params:oauth:token-type:access_token` even if `requested_token_type` is requested for type `id_token`.
+
+
+
+</td>
+<td valign="top">
+
+Request body
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`refresh_expiry`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Reduces the expiry of a refresh token. It is useful if your application is called from mobile and web applications, and both have different session requirements. If you set the token lifetime to 0 or less, you won't receive a `refresh_token` in response.
+
+</td>
+<td valign="top">
+
+Request body
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`token_format`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+The `token_format` can be set to `opaque` to retrieve an opaque access token or to `jwt` to retrieve a JWT based access token. If not set, the current defaults per grant type are used.
+
 </td>
 <td valign="top">
 

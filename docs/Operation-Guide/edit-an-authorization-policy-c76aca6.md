@@ -30,7 +30,7 @@ When you edit an existing custom authorization policy, you can add or delete res
 
     -   \(Optional\) To assign users, choose the *Assignments* tab. See [Assign Authorization Policies](assign-authorization-policies-eac8e5e.md).
 
-    -   You display the rule that came with the custom authorization policy in the *Rules* tab.
+    -   The rule that came with the custom authorization policy appears in the *Rules* tab.
 
 
 6.  \(Optional\) You can enter a label and a description of the authorization policy or change them. The description is an optional comment.

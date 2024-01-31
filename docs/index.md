@@ -231,6 +231,8 @@
                 -   [Add System as Administrator](Operation-Guide/add-administrators-bbbdbdd.md#loiocefb742a36754b18bbe5c3503ac6d87c)
             -   [Edit Administrator Authorizations](Operation-Guide/edit-administrator-authorizations-86ee374.md)
             -   [Configure Authorizations Based on Policies](Operation-Guide/configure-authorizations-based-on-policies-08fea39.md)
+                -   [Configure User Authorizations](Operation-Guide/configure-user-authorizations-424b64c.md)
+                -   [Configure Application Authorizations](Operation-Guide/configure-application-authorizations-01cff18.md)
         -   [Social Identity Providers](Operation-Guide/social-identity-providers-17d400d.md)
             -   [Configure Apple as Identity Provider](Operation-Guide/configure-apple-as-identity-provider-fe6f7f0.md)
             -   [Configure Facebook as Identity Provider](Operation-Guide/configure-facebook-as-identity-provider-cc16b33.md)

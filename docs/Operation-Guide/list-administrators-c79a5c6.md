@@ -41,7 +41,7 @@ To list all administrators, proceed as follows:
 
 [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md "As a tenant administrator, you can edit both your own authorizations and other administrators' authorizations in the administration console for SAP Cloud Identity Services. By editing the administrator authorizations you can also delete an administrator.")
 
-[Configure Authorizations Based on Policies](configure-authorizations-based-on-policies-08fea39.md "Configure a granular access control based on policies for the administrators of SAP Cloud Identity Services.")
+[Configure Authorizations Based on Policies](configure-authorizations-based-on-policies-08fea39.md "Enable admin authorizations based on policies to configure a granular access control for the administrators of SAP Cloud Identity Services.")
 
 [Identity Authentication Tenant as an Application Identity Provider](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/d3df5b457d0c43fca117da0dc14e2f0d.html)
 

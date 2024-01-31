@@ -23,7 +23,7 @@ You can add both a person and a system in the administration console to act as a
 
 [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md "As a tenant administrator, you can edit both your own authorizations and other administrators' authorizations in the administration console for SAP Cloud Identity Services. By editing the administrator authorizations you can also delete an administrator.")
 
-[Configure Authorizations Based on Policies](configure-authorizations-based-on-policies-08fea39.md "Configure a granular access control based on policies for the administrators of SAP Cloud Identity Services.")
+[Configure Authorizations Based on Policies](configure-authorizations-based-on-policies-08fea39.md "Enable admin authorizations based on policies to configure a granular access control for the administrators of SAP Cloud Identity Services.")
 
 <a name="loio1dc498bff0674743a1a3a0ec3f0bf298"/>
 
