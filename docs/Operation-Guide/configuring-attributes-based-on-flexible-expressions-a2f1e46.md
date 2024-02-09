@@ -1,8 +1,8 @@
 <!-- loioa2f1e4692e7d4379ab82144ab309e7b3 -->
 
-# Configure the Default Attributes Sent to the Application
+# Configuring Attributes Based on Flexible Expressions
 
-In addition to the user attributes, you can also configure attributes with default values for the application.
+You can configure attributes based on flexible expressions for the application.
 
 
 
@@ -10,14 +10,14 @@ In addition to the user attributes, you can also configure attributes with defau
 
 ## Context
 
-The attributes are sent from Identity Authentication to the application in the assertion. You can set default attributes `location` and `company` with values *Europe* and *Company A* for example, so that the application displays Europe and Company A on its main page.
+The attributes are sent from Identity Authentication to the application in the assertion. You can set attributes like `location` and `company` with values *Europe* and *Company A* for example, so that the application displays Europe and Company A on its main page.
 
 The attributes are also put in the `id_token` if the application is OpenID connect. For more information, see [OpenID Connect](openid-connect-a789c9c.md).
 
 For both, the SAML 2.0 and OpenID Connect applications, you can configure attributes with dynamic values to be added into the assertions in the following pattern: `<prefix> ${attribute_technical_name>} <suffix>`
 
 > ### Restriction:  
-> \(For OpenID Connect applications\) The following claims can't be set via the default attribute configuration: `iss`, `sub`, `zone_uuid`, `exp`, `nbf`, `iat`, `auth_time`, `nonce`, `acr`, `amr`, `cnf`, `azp`, `at_hash`, `c_hash`, `sub_jwk`, and `ias_iss`.
+> \(For OpenID Connect applications\) The following claims can't be set via the configuration of attributes with default values: `iss`, `sub`, `zone_uuid`, `exp`, `nbf`, `iat`, `auth_time`, `nonce`, `acr`, `amr`, `cnf`, `azp`, `at_hash`, `c_hash`, `sub_jwk`, and `ias_iss`.
 
 Expand the **Supported Attributes** table below to see the attributes that can take dynamic values:
 
@@ -30,14 +30,10 @@ Expand the **Supported Attributes** table below to see the attributes that can t
 
 Attribute Display Name
 
-
-
 </th>
 <th valign="top">
 
 Attribute Technical Name
-
-
 
 </th>
 </tr>
@@ -46,14 +42,10 @@ Attribute Technical Name
 
 Salutation
 
-
-
 </td>
 <td valign="top">
 
 title
-
-
 
 </td>
 </tr>
@@ -62,14 +54,10 @@ title
 
 First Name
 
-
-
 </td>
 <td valign="top">
 
 firstName
-
-
 
 </td>
 </tr>
@@ -78,14 +66,10 @@ firstName
 
 Middle Name
 
-
-
 </td>
 <td valign="top">
 
 middleName
-
-
 
 </td>
 </tr>
@@ -94,14 +78,10 @@ middleName
 
 Last Name
 
-
-
 </td>
 <td valign="top">
 
 lastName
-
-
 
 </td>
 </tr>
@@ -110,14 +90,10 @@ lastName
 
 Email
 
-
-
 </td>
 <td valign="top">
 
 mail
-
-
 
 </td>
 </tr>
@@ -126,14 +102,10 @@ mail
 
 Telephone Number
 
-
-
 </td>
 <td valign="top">
 
 telephone
-
-
 
 </td>
 </tr>
@@ -142,14 +114,10 @@ telephone
 
 Language
 
-
-
 </td>
 <td valign="top">
 
 language
-
-
 
 </td>
 </tr>
@@ -158,14 +126,10 @@ language
 
 Logon Name
 
-
-
 </td>
 <td valign="top">
 
 loginName
-
-
 
 </td>
 </tr>
@@ -174,14 +138,10 @@ loginName
 
 Display Name
 
-
-
 </td>
 <td valign="top">
 
 displayName
-
-
 
 </td>
 </tr>
@@ -190,14 +150,10 @@ displayName
 
 User ID
 
-
-
 </td>
 <td valign="top">
 
 uid
-
-
 
 </td>
 </tr>
@@ -206,14 +162,10 @@ uid
 
 User UUID
 
-
-
 </td>
 <td valign="top">
 
 userUuid
-
-
 
 </td>
 </tr>
@@ -222,14 +174,10 @@ userUuid
 
 User Type
 
-
-
 </td>
 <td valign="top">
 
 type
-
-
 
 </td>
 </tr>
@@ -238,14 +186,10 @@ type
 
 Street Address
 
-
-
 </td>
 <td valign="top">
 
 street
-
-
 
 </td>
 </tr>
@@ -254,14 +198,10 @@ street
 
 Street Address 2
 
-
-
 </td>
 <td valign="top">
 
 street2
-
-
 
 </td>
 </tr>
@@ -270,14 +210,10 @@ street2
 
 City
 
-
-
 </td>
 <td valign="top">
 
 city
-
-
 
 </td>
 </tr>
@@ -286,14 +222,10 @@ city
 
 ZIP/Postal Code
 
-
-
 </td>
 <td valign="top">
 
 zip
-
-
 
 </td>
 </tr>
@@ -302,14 +234,10 @@ zip
 
 Country
 
-
-
 </td>
 <td valign="top">
 
 country
-
-
 
 </td>
 </tr>
@@ -318,14 +246,10 @@ country
 
 State/Province
 
-
-
 </td>
 <td valign="top">
 
 state
-
-
 
 </td>
 </tr>
@@ -334,14 +258,10 @@ state
 
 Cost Center
 
-
-
 </td>
 <td valign="top">
 
 costCenter
-
-
 
 </td>
 </tr>
@@ -350,14 +270,10 @@ costCenter
 
 Department
 
-
-
 </td>
 <td valign="top">
 
 department
-
-
 
 </td>
 </tr>
@@ -366,14 +282,10 @@ department
 
 Division
 
-
-
 </td>
 <td valign="top">
 
 division
-
-
 
 </td>
 </tr>
@@ -382,14 +294,10 @@ division
 
 Employee Number
 
-
-
 </td>
 <td valign="top">
 
 personnelNumber
-
-
 
 </td>
 </tr>
@@ -398,14 +306,10 @@ personnelNumber
 
 Company
 
-
-
 </td>
 <td valign="top">
 
 company
-
-
 
 </td>
 </tr>
@@ -414,14 +318,10 @@ company
 
 Company Street Address
 
-
-
 </td>
 <td valign="top">
 
 companyStreet
-
-
 
 </td>
 </tr>
@@ -430,14 +330,10 @@ companyStreet
 
 Company Street Address 2
 
-
-
 </td>
 <td valign="top">
 
 companyStreet2
-
-
 
 </td>
 </tr>
@@ -446,14 +342,10 @@ companyStreet2
 
 Company City
 
-
-
 </td>
 <td valign="top">
 
 companyCity
-
-
 
 </td>
 </tr>
@@ -462,14 +354,10 @@ companyCity
 
 Company ZIP/Postal Code
 
-
-
 </td>
 <td valign="top">
 
 companyZip
-
-
 
 </td>
 </tr>
@@ -478,14 +366,10 @@ companyZip
 
 Company Country
 
-
-
 </td>
 <td valign="top">
 
 companyCountry
-
-
 
 </td>
 </tr>
@@ -494,14 +378,10 @@ companyCountry
 
 Company State/Province
 
-
-
 </td>
 <td valign="top">
 
 companyRegion
-
-
 
 </td>
 </tr>
@@ -510,14 +390,10 @@ companyRegion
 
 Company Industry
 
-
-
 </td>
 <td valign="top">
 
 industry
-
-
 
 </td>
 </tr>
@@ -526,14 +402,10 @@ industry
 
 Job Function
 
-
-
 </td>
 <td valign="top">
 
 jobFunction
-
-
 
 </td>
 </tr>
@@ -541,8 +413,6 @@ jobFunction
 <td valign="top">
 
 Groups
-
-
 
 </td>
 <td valign="top">
@@ -583,14 +453,10 @@ corporateGroups
 
 Contact by Email
 
-
-
 </td>
 <td valign="top">
 
 contactPreferenceEmail
-
-
 
 </td>
 </tr>
@@ -599,14 +465,10 @@ contactPreferenceEmail
 
 Contact by Telephone
 
-
-
 </td>
 <td valign="top">
 
 contactPreferenceTelephone
-
-
 
 </td>
 </tr>
@@ -615,14 +477,10 @@ contactPreferenceTelephone
 
 Application Activation Time
 
-
-
 </td>
 <td valign="top">
 
 activation\_time
-
-
 
 </td>
 </tr>
@@ -631,14 +489,10 @@ activation\_time
 
 Custom Attribute 1
 
-
-
 </td>
 <td valign="top">
 
 customAttribute1
-
-
 
 </td>
 </tr>
@@ -647,14 +501,10 @@ customAttribute1
 
 Custom Attribute 2
 
-
-
 </td>
 <td valign="top">
 
 customAttribute2
-
-
 
 </td>
 </tr>
@@ -663,14 +513,10 @@ customAttribute2
 
 Custom Attribute 3
 
-
-
 </td>
 <td valign="top">
 
 customAttribute3
-
-
 
 </td>
 </tr>
@@ -679,14 +525,10 @@ customAttribute3
 
 Custom Attribute 4
 
-
-
 </td>
 <td valign="top">
 
 customAttribute4
-
-
 
 </td>
 </tr>
@@ -695,14 +537,10 @@ customAttribute4
 
 Custom Attribute 5
 
-
-
 </td>
 <td valign="top">
 
 customAttribute5
-
-
 
 </td>
 </tr>
@@ -711,14 +549,10 @@ customAttribute5
 
 Custom Attribute 6
 
-
-
 </td>
 <td valign="top">
 
 customAttribute6
-
-
 
 </td>
 </tr>
@@ -727,14 +561,10 @@ customAttribute6
 
 Custom Attribute 7
 
-
-
 </td>
 <td valign="top">
 
 customAttribute7
-
-
 
 </td>
 </tr>
@@ -743,14 +573,10 @@ customAttribute7
 
 Custom Attribute 8
 
-
-
 </td>
 <td valign="top">
 
 customAttribute8
-
-
 
 </td>
 </tr>
@@ -759,14 +585,10 @@ customAttribute8
 
 Custom Attribute 9
 
-
-
 </td>
 <td valign="top">
 
 customAttribute9
-
-
 
 </td>
 </tr>
@@ -775,14 +597,10 @@ customAttribute9
 
 Custom Attribute 10
 
-
-
 </td>
 <td valign="top">
 
 customAttribute10
-
-
 
 </td>
 </tr>
@@ -861,13 +679,13 @@ If you set `${companyGroups:regex[Admin]}` as a value, the response returns the 
 
 
 
-### Merge Assertion Attributes
+### Merge User Attributes
 
-For both, the SAML 2.0 and OpenID Connect applications, you can define default attributes with the same name, but with different values, or you can define an assertion attribute and a default attribute with the same name. In the response, the attributes are merged into multivalue attributes. Thus, depending on the configuration, several values may appear for a single value attribute.
+For both, the SAML 2.0 and OpenID Connect applications, you can define attributes with the same name, but with different values, or you can define a user attribute and an attribute with default value with the same name. In the response, the attributes are merged into multivalue attributes. Thus, depending on the configuration, several values may appear for a single value attribute.
 
 The order of the attribute's values in the assertion is arbitrary.
 
-For example, you have defined the `mail` assertion attribute and at the same time the `mail` default attribute with `example@example.com`.
+For example, you have defined the `mail` user attribute and at the same time the `mail` attribute with default value `example@example.com`.
 
 > ### Example:  
 > When the user Dona Moore logs on, the response returns `mail` as a multivalue attribute with the two values.
@@ -902,13 +720,13 @@ For example, you have defined the `mail` assertion attribute and at the same tim
 
 -   *Identity Federation* not configured
 
-    When the application uses corporate IdP for authentication, and the *Use Identity Authentication user store* option under *Identity Federation* is disabled, the default attributes configurations in the administration console for SAP Cloud Identity Services are not relevant. For more information about the corporate identity provider scenario, see [Corporate Identity Providers](corporate-identity-providers-19f3eca.md) and [Configure Identity Federation](configure-identity-federation-c029bbb.md).
+    When the application uses corporate IdP for authentication, and the *Use Identity Authentication user store* option under *Identity Federation* is disabled, the attributes configurations with default values in the administration console for SAP Cloud Identity Services are not relevant. For more information about the corporate identity provider scenario, see [Corporate Identity Providers](corporate-identity-providers-19f3eca.md) and [Configure Identity Federation](configure-identity-federation-c029bbb.md).
 
-    The configuration of the default attributes for the system applications is disabled.
+    The configuration of the attributes with default values for the system applications is disabled.
 
 -   *Identity Federation* configured
 
-    When the application uses a corporate IdP for authentication, and the *Use Identity Authentication user store* under *Identity Federation* option is enabled, the default attributes in the administration console for SAP Cloud Identity Services can be configured to reference attributes coming from the assertion of the corporate IdP for the user and merge them with the attributes coming from Identity Authentication, and thus be sent to the application.
+    When the application uses a corporate IdP for authentication, and the *Use Identity Authentication user store* under *Identity Federation* option is enabled, the attributes with default values in the administration console for SAP Cloud Identity Services can be configured to reference attributes coming from the assertion of the corporate IdP for the user and merge them with the attributes coming from Identity Authentication, and thus be sent to the application.
 
     To configure Identity Authentication to reference attributes coming from the assertion of the corporate IdP, you must use the following format for the attribute:
 
@@ -922,22 +740,16 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     <th valign="top">
 
     Parameter
-
-
     
     </th>
     <th valign="top">
 
     Required
-
-
     
     </th>
     <th valign="top">
 
     Notes
-
-
     
     </th>
     </tr>
@@ -945,22 +757,16 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     <td valign="top">
     
     `attribute_name`
-
-
     
     </td>
     <td valign="top">
     
     Yes
-
-
     
     </td>
     <td valign="top">
     
     The name of the attribute as defined in the administration console. Free text.
-
-
     
     </td>
     </tr>
@@ -968,22 +774,16 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     <td valign="top">
     
     `prefix`
-
-
     
     </td>
     <td valign="top">
     
     No
-
-
     
     </td>
     <td valign="top">
     
     Free text.
-
-
     
     </td>
     </tr>
@@ -991,22 +791,16 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     <td valign="top">
     
     `corporateIdP`
-
-
     
     </td>
     <td valign="top">
     
     Yes
-
-
     
     </td>
     <td valign="top">
     
     Fixed string, indicating that the value is taken from the assertion coming from the corporate IdP.
-
-
     
     </td>
     </tr>
@@ -1014,22 +808,16 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     <td valign="top">
     
     `corporateIdP_attribute_name`
-
-
     
     </td>
     <td valign="top">
     
     Yes
-
-
     
     </td>
     <td valign="top">
     
     The specific attribute from the corporate IdP, whose value is taken.
-
-
     
     </td>
     </tr>
@@ -1037,22 +825,16 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     <td valign="top">
     
     `:regex[<filter>]`
-
-
     
     </td>
     <td valign="top">
     
     No
-
-
     
     </td>
     <td valign="top">
     
     Filter the attributes from the corporate IdP.
-
-
     
     </td>
     </tr>
@@ -1060,15 +842,11 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     <td valign="top">
     
     `:function[<method>]`
-
-
     
     </td>
     <td valign="top">
     
     No
-
-
     
     </td>
     <td valign="top">
@@ -1088,22 +866,16 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     <td valign="top">
     
     `suffix`
-
-
     
     </td>
     <td valign="top">
     
     No
-
-
     
     </td>
     <td valign="top">
     
     Free text.
-
-
     
     </td>
     </tr>
@@ -1112,11 +884,11 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     > ### Example:  
     > For example, you have set up a scenario where Identity Authentication acts as a proxy. The default authenticating identity provider is the corporate IdP, and the *Identity Federation* option is configured for that corporate IdP.
     > 
-    > The corporate IdP is configured to send the groups with the `group` assertion attribute.
+    > The corporate IdP is configured to send the groups with the `group` user attribute.
     > 
-    > You want to send the groups coming from the corporate IdP to the application so you have defined the following default attribute in the administration console for SAP Cloud Identity Services:
+    > You want to send the groups coming from the corporate IdP to the application so you have defined the following attribute in the administration console for SAP Cloud Identity Services:
     > 
-    > **Default Attributes Configuration in Administration Console**
+    > **Configuration of Attributes with Default Values in Administration Console**
     > 
     > 
     > <table>
@@ -1125,14 +897,10 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     > 
     > Attribute
     > 
-    > 
-    > 
     > </th>
     > <th valign="top">
     > 
     > Value
-    > 
-    > 
     > 
     > </th>
     > </tr>
@@ -1141,14 +909,10 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     > 
     > groups
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > Group $\{corporateIdP.groups\} Member
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -1185,11 +949,11 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     > ### Example:  
     > Again, you have a scenario where Identity Authentication is a proxy. The default authenticating identity provider is the corporate IdP, and the *Identity Federation* option is configured for that corporate IdP.
     > 
-    > The corporate IdP is configured to send the groups with the `group` assertion attribute.
+    > The corporate IdP is configured to send the groups with the `group` user attribute.
     > 
-    > You don't want to send all the groups coming from the corporate IdP to the application so you have defined the following default attribute in the administration console for SAP Cloud Identity Services:
+    > You don't want to send all the groups coming from the corporate IdP to the application so you have defined the following attribute in the administration console for SAP Cloud Identity Services:
     > 
-    > **Default Attributes Configuration in Administration Console**
+    > **Configuration of Attributes with Default Values in Administration Console**
     > 
     > 
     > <table>
@@ -1198,14 +962,10 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     > 
     > Attribute
     > 
-    > 
-    > 
     > </th>
     > <th valign="top">
     > 
     > Value
-    > 
-    > 
     > 
     > </th>
     > </tr>
@@ -1214,14 +974,10 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     > 
     > groups
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > $\{corporateIdP.groups:regex\[ABC-\]\}
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -1254,9 +1010,9 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     > ### Example:  
     > Another scenario is where Identity Authentication is again a proxy. The default authenticating identity provider is the corporate IdP, and the *Identity Federation* option is configured for that corporate IdP.
     > 
-    > The corporate IdP is configured to send the email with the `mail` assertion attribute. The incoming mail attribute from corporate IdP is in mixed case and it is converted to lower case. For example, Michael Adams' email in the corporate IdP is in mixed case Michael.Adams@example.com, and it is converted into lower case michael.adams@example.com.
+    > The corporate IdP is configured to send the email with the `mail` user attribute. The incoming mail attribute from corporate IdP is in mixed case and it is converted to lower case. For example, Michael Adams' email in the corporate IdP is in mixed case Michael.Adams@example.com, and it is converted into lower case michael.adams@example.com.
     > 
-    > **Default Attributes Configuration in Administration Console**
+    > **Configuration of Attributes with Default Values in Administration Console**
     > 
     > 
     > <table>
@@ -1265,14 +1021,10 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     > 
     > Attribute
     > 
-    > 
-    > 
     > </th>
     > <th valign="top">
     > 
     > Value
-    > 
-    > 
     > 
     > </th>
     > </tr>
@@ -1281,14 +1033,10 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     > 
     > mail
     > 
-    > 
-    > 
     > </td>
     > <td valign="top">
     > 
     > $\{corporateIdP.mail:function\[lowercase\]\}
-    > 
-    > 
     > 
     > </td>
     > </tr>
@@ -1302,9 +1050,9 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     > However, if the corporate IdP is not configured to send the `phone` attribute, the response includes only the prefix and suffix, defined in the administration console for SAP Cloud Identity Services:
     > 
     > > ### Example:  
-    > > For example, you want to send the `phone` attribute coming from the corporate IdP to the application. You have defined the following default attribute in the administration console for SAP Cloud Identity Services:
+    > > For example, you want to send the `phone` attribute coming from the corporate IdP to the application. You have defined the following attribute in the administration console for SAP Cloud Identity Services:
     > > 
-    > > **Default Attributes Configuration in Administration Console**
+    > > **Configuration of Attributes with Default Values in Administration Console**
     > > 
     > > 
     > > <table>
@@ -1313,14 +1061,10 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     > > 
     > > Attribute
     > > 
-    > > 
-    > > 
     > > </th>
     > > <th valign="top">
     > > 
     > > Value
-    > > 
-    > > 
     > > 
     > > </th>
     > > </tr>
@@ -1329,14 +1073,10 @@ For example, you have defined the `mail` assertion attribute and at the same tim
     > > 
     > > Phone
     > > 
-    > > 
-    > > 
     > > </td>
     > > <td valign="top">
     > > 
     > > \+49 $\{corporateIdP.phone\} Corporate Phone
-    > > 
-    > > 
     > > 
     > > </td>
     > > </tr>
@@ -1363,7 +1103,7 @@ For example, you have defined the `mail` assertion attribute and at the same tim
 
 ### Send Identity Directory Custom Schema Attributes
 
-You can configure Identity Authentication to send the Identity Directory custom schema attributes as default attributes into authentication tokens to applications.
+You can configure Identity Authentication to send the Identity Directory custom schema attributes as attributes into authentication tokens to applications.
 
 You can define complex custom schema attributes with single-value child attributes.
 
@@ -1374,7 +1114,7 @@ You can define complex custom schema attributes with single-value child attribut
 > 
 > The default attributes for the application are configured in the administration console as follows:
 > 
-> **Default Attributes Configuration in Administration Console**
+> **Configuration of Attributes with Default Values in Administration Console**
 > 
 > 
 > <table>
@@ -1383,14 +1123,10 @@ You can define complex custom schema attributes with single-value child attribut
 > 
 > Attribute
 > 
-> 
-> 
 > </th>
 > <th valign="top">
 > 
 > Value
-> 
-> 
 > 
 > </th>
 > </tr>
@@ -1399,14 +1135,10 @@ You can define complex custom schema attributes with single-value child attribut
 > 
 > name
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > $\{urn:sap:cloud:scim:schemas:extension:custom:2.0:Profile.name.firstName\}
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -1415,14 +1147,10 @@ You can define complex custom schema attributes with single-value child attribut
 > 
 > hobby
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > $\{urn:sap:cloud:scim:schemas:extension:custom:2.0:Profile.hobby\}
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -1431,14 +1159,10 @@ You can define complex custom schema attributes with single-value child attribut
 > 
 > birthday
 > 
-> 
-> 
 > </td>
 > <td valign="top">
 > 
 > $\{urn:sap:cloud:scim:schemas:extension:custom:2.0:Profile.birthday\}
-> 
-> 
 > 
 > </td>
 > </tr>
@@ -1448,9 +1172,9 @@ You can define complex custom schema attributes with single-value child attribut
 > 
 > The attributes are added both to SAML 2.0 and OIDC tokens.
 
-To configure default attributes, proceed as follows:
 
 
+<a name="loioa2f1e4692e7d4379ab82144ab309e7b3__steps_dtr_4xc_fzb"/>
 
 ## Procedure
 
@@ -1467,32 +1191,22 @@ To configure default attributes, proceed as follows:
 
 4.  Choose the *Trust* tab.
 
-5.  Under *SINGLE SIGN-ON*, choose *Default Attributes*.
+5.  Under *SINGLE SIGN-ON*, choose *Attributes*.
 
-6.  Add the default attributes with their values to be sent to the application.
+6.  Depending on the type of your application go to:
 
-    > ### Remember:  
-    > Always use the *Attribute Technical Name* to configure attributes with dynamic values.
+    -   *Application Attributes* - for subscribed multitenant applications.
+        1.  Choose the plus button next to an attribute to set multiple values for the attribute.
+        2.  Choose *Corporate Identity Provider* source.
+        3.  Provide the new value.
+
+    -   *Self-defined Attributes* - self-created applications or automatically created single-tenant applications.
+        1.  Choose *Add button to add new attribute for the application* \> *provide the name* \> *Expression* \> *provide the value*.
+
+        2.  Choose *plus button next to an attribute to set multiple values for the attribute* \> *Expression* \> *provide the new value*.
+
+
 
 7.  Save your configuration.
 
-    If the operation is successful, you receive the message ***Default attributes updated***.
-
-
-**Related Information**  
-
-
-[Configure the User Attributes Sent to the Application](configure-the-user-attributes-sent-to-the-application-d361407.md "After configuring the user attributes to be collected by the registration and upgrade forms, you have to specify how these attributes are sent to the application.")
-
-[Troubleshooting for Administrators](troubleshooting-for-administrators-f80beb5.md "This section is intended to help administrators deal with error messages in the administration console for SAP Cloud Identity Services.")
-
-[Create a New Application](create-a-new-application-0d4b255.md "You can create a new application and customize it to comply with your company requirements.")
-
-[SAML 2.0](saml-2-0-0708833.md "")
-
-[Configure Identity Federation](configure-identity-federation-c029bbb.md "Tenant administrators can configure whether the attributes are taken from the assertion of the corporate identity provider or from the user store of Identity Authentication, and can restrict access based on the user profile.")
-
-[OpenID Connect](openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
-
-[Identity Directory Service SCIM API](https://api.sap.com/api/IdDS_SCIM/resource)
 

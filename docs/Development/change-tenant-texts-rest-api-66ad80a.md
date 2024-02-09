@@ -1119,7 +1119,7 @@ logon.ui.errormessage.INVALID_EMAIL_OTP_CODE=You have entered the wrong code or 
 
 logon.ui.errormessage.NO_EMAIL_OTP_CODE_TEMPLATE=Sorry, but sending a code via email is not possible right now. Please contact your administrator before continuing.
 
-logon.ui.errormessage.UNVERIFIED_EMAIL_FOR_OTP_CODE=We did not send you a code because your email is not verified. Please contact your administrator for assistance.
+logon.ui.errormessage.UNVERIFIED_EMAIL_FOR_OTP_CODE=We did not send you a code because your email has not been verified. Please contact your administrator for assistance.
 
 logon.ui.errormessage.PASSCODE_LOCKED=Your account has been temporarily locked because of too many failed attempts. Your account will be automatically unlocked in 10 minutes.
 
@@ -1323,9 +1323,9 @@ forgottenPasswordMailConfirm.forgotYourPassword=Forgot My Password
 
 forgottenPasswordMailConfirm.emailSent=If an account exists, an email with a link to reset your password has been sent.
 
-forgottenPasswordMailConfirm.clickTheLink.days=Click the link contained in the email. You will be forwarded to a page where you can reset your password. The link in the email will expire in {0} days from now.
+forgottenPasswordMailConfirm.clickTheLink.days=Click the link in the email. You will be forwarded to a page where you can reset your password. The link in the email will expire in {0} days.
 
-forgottenPasswordMailConfirm.clickTheLink.hours=Click the link contained in the email. You will be forwarded to a page where you can reset your password. The link in the email will expire in {0} hours from now.
+forgottenPasswordMailConfirm.clickTheLink.hours=Click the link in the email. You will be forwarded to a page where you can reset your password. The link in the email will expire in {0} hours.
 
 forgottenPasswordMailConfirm.closeButton=Close
 
@@ -1335,15 +1335,15 @@ informAboutPasswordStatus.passwordNeedsReset=Your Password Needs to Be Reset
 
 informAboutPasswordStatus.emailSent=An email with a link to reset your password has been sent to {0}.
 
-informAboutPasswordStatus.text=Your password has not been used for more than {0} months. To help maintain your security, your password needs to be reset. We have sent an email to your email address containing a link to a page where you can reset your password. The link in the email will expire {0}.
+informAboutPasswordStatus.text=Your password has not been used for more than {0} months. To help maintain your security, your password needs to be reset. We have sent you an email with a link to a page where you can reset your password. The link in the email expires on {0}.
 
 informAboutPasswordStatus.reason.passwordNotUsed=Your password has not been used for more than {0} months.
 
 informAboutPasswordStatus.reason.insufficientComplexity=Your password does not meet the password complexity requirements.
 
-informAboutPasswordStatus.maintainSecurity.days=To help maintain your security, your password needs to be reset. We have sent an email to your email address containing a link to a page where you can reset your password. The link in the email will expire in {0} days from now.
+informAboutPasswordStatus.maintainSecurity.days=To help maintain your security, your password needs to be reset. We have sent an email to your email address containing a link to a page where you can reset your password. The link will expire in {0} days.
 
-informAboutPasswordStatus.maintainSecurity.hours=To help maintain your security, your password needs to be reset. We have sent an email to your email address containing a link to a page where you can reset your password. The link in the email will expire in {0} hours from now.
+informAboutPasswordStatus.maintainSecurity.hours=To help maintain your security, your password needs to be reset. We have sent an email to your email address containing a link to a page where you can reset your password. The link will expire in {0} hours.
 
 passwordForm.invalidInput=Invalid input
 
@@ -1368,6 +1368,7 @@ policyaccept.ui.label.decline=Decline
 policyaccept.ui.errormessage.accepttoproceed=To proceed, accept the privacy policy.
 
 policyaccept.ui.errormessage.markcheckbox=To accept the privacy policy, click the checkbox.
+
 
 document.ui.label.headline=Legal Disclaimers
 
@@ -1537,13 +1538,23 @@ registerForm.company=Company
 
 registerForm.streetAddress=Street Address
 
+registerForm.companyStreetAddress=Street Address
+
 registerForm.streetAddress2=Street Address 2
+
+registerForm.companyStreetAddress2=Street Address 2
 
 registerForm.city=City
 
+registerForm.companyCity=City
+
 registerForm.postalcode=ZIP/Postal Code
 
+registerForm.companyPostalcode=ZIP/Postal Code
+
 registerForm.country=Country/Region
+
+registerForm.companyCountry=Country/Region
 
 registerForm.state=State/Province
 
@@ -1585,7 +1596,7 @@ validation.firstNameInExcludeList=You have chosen a first name that is not allow
 
 validation.lastNameInExcludeList=You have chosen a last name that is not allowed. Please choose a different last name and try again.
 
-validation.emailInExcludeList=You have chosen an email address that is not allowed. Please choose a different email address and try again.
+validation.emailInExcludeList=You have chosen an email address that is not allowed. Please choose a different one and try again.
 
 general.ui.help.title=Help for
 
@@ -1599,7 +1610,7 @@ ResourceType.RESOURCE_PRIVACYPOLICY.for=Privacy Policy for {0}
 
 createForgottenPasswordMail.forgotPassword=Forgot My Password
 
-createForgottenPasswordMail.forgotPassword.text=Enter your credentials below and click Send. An email with a link to a page where you can reset your password will be sent. Note that the email might take a few minutes to reach your inbox.
+createForgottenPasswordMail.forgotPassword.text=Enter your credentials below and click Send. An email will be sent containing a link to a page where you can reset your password. Note that the email might take a few minutes to reach your inbox.
 
 createForgottenPasswordMail.forgotPassword.fioritheme.text=To reset your password, enter your email address and choose Continue.
 
@@ -1633,11 +1644,11 @@ error.oauth.signing.process.failed.wrong.client.secret.error=Social sign-on fail
 
 error.oauth.access.denied.errorMessage=Access denied from social provider.
 
-token.invalid=Your email activation link is invalid or already used.
+token.invalid=Your email activation link is invalid or has already been used.
 
-token.expired=Your email activation link has expired. A new email has automatically been sent. To activate your account, click the link in the new email.
+token.expired=Your email activation link has expired. A new email has been sent automatically. To activate your account, click the link in the new email.
 
-token.expired.resetPassword=Your reset password link has expired. A new email has automatically been sent. To reset your password, click the link in the new email.
+token.expired.resetPassword=Your reset password link has expired. A new email has been sent automatically. To reset your password, click the link in the new email.
 
 general.auth.request.error=Identity Provider could not process the authentication request received. Delete your browser cache and stored cookies, and restart your browser. If you still experience issues after doing this, please contact your administrator.
 
@@ -2545,7 +2556,7 @@ userData.label.validTo=Valid to
 
 error.ui.errormessage.idpSsesionExpired=Your session has expired. Please log on again.
 
-error.ui.errormessage.idpSessionExpiredUserActivation=Your session has expired. Open the email for your account activation and follow the link in it to re-activate your account.
+error.ui.errormessage.idpSessionExpiredUserActivation=Your session has expired. Open the email for your account activation and follow the link it contains to reactivate your account.
 
 error.ui.errormessage.idpSessionExpiredPasswordReset=Your session has expired. Open the email for your password reset and follow the link in it to reset your password.
 
@@ -2556,6 +2567,7 @@ error.ui.clickjacking.error=Your domain is not trusted. Please contact your syst
 error.ui.unknown.application.error=An error has occurred. Please visit the application and log on again.
 
 error.ui.unexistent.text.resource.error=The requested document does not exist. Please contact your system administrator.
+
 
 sci_eu_data_protection.headline=European Union (EU) Access Mode
 
@@ -2584,6 +2596,8 @@ error.ui.errormessage.unknownOpenIDPostLogoutRedirectUri=OpenID provider cannot 
 error.ui.errormessage.invalidOpenIDTokenHint=OpenID provider cannot process the logout request because the id_token_hint is invalid. Please contact your system administrator.
 
 error.ui.errormessage.unknownClientId=OpenID provider cannot process the logout request because the client_id is unknown. Please contact your system administrator.
+
+error.ui.errormessage.clientIdNotUnique=OpenID provider cannot process the logout request because the client_id of the application is not unique. Please also provide [app_tid].
 
 error.ui.errormessage.missingOpenIDTokenHintAndClientID=OpenID provider cannot process the logout request because neither client_id nor id_token_hint parameter has been provided with the post_logout_redirect_uri. Please contact your system administrator.
 

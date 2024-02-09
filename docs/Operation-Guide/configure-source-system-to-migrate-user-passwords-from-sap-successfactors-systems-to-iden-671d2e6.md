@@ -1,5 +1,7 @@
 <!-- loio671d2e6de90e44caaa6dede4ab315b48 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Configure Source System To Migrate User Passwords from SAP SuccessFactors Systems to Identity Authentication
 
 
@@ -18,7 +20,7 @@
 
 ## Context
 
-In this scenario, you have an SAP SuccessFactors instance integrated with Identity Authentication. In the SAP SuccessFactors instance there are users that log on with username and password \(also known as password or non-sso users\). The source system opportunity gives the possibility these users to be migrated and to use Identity Authentication without the need to change the passwords that they already have. The password of each SAP SuccessFactors user is migrated once only during his or her first successful logon after the configuration of the source system scenario in Identity Authentication. After that the user passwords are managed by Identity Authentication.
+In this scenario, you have an SAP SuccessFactors instance integrated with Identity Authentication. In the SAP SuccessFactors instance, there are users that log on with username and password \(also known as password or non-sso users\). The source system opportunity gives the possibility these users to be migrated and to use Identity Authentication without the need to change the passwords that they already have. The password of each SAP SuccessFactors user is migrated once only during his or her first successful logon after the configuration of the source system scenario in Identity Authentication. After that the user passwords are managed by Identity Authentication.
 
 The first logon after the migration must be with a username and password. After this first successful logon, the user can use any other allowed logon identifier.
 
@@ -169,7 +171,7 @@ To configure a source system, follow the steps below:
 
             Enter CN for the certificate in the provided field.
 
-            Once the certificate is generated, you can view its details. The validity of the certificate is one year.
+            Once the certificate is generated, you can view its details. The validity of the certificate is 1 year.
 
             > ### Note:  
             > You can choose the option for automatic regeneration of the certificate by selecting the *Automatic Renewal* checkbox. Two weeks before the expiry of the certificate, it is regenerated. The renewed certificate will have the same DN.
@@ -213,6 +215,18 @@ To configure a source system, follow the steps below:
 
 6.  **Optional:** Choose *Test Connection* to test the source system configuration.
 
+
+
+
+<a name="loio671d2e6de90e44caaa6dede4ab315b48__postreq_pks_twy_3zb"/>
+
+## Next Steps
+
+> ### Note:  
+> If an application requires force authentication \(ForceAuthn="true"\), users have to authenticate themselves against the corporate identity provider each time they access the application even if single sign-on \(SSO\) is enabled.
+
+-   \(Optional\) To edit an existing source system configuration, select *system you want to edit* \> *Edit button* \> *make the necessary changes* \> *Save*.
+-   \(Optional\) To change the display name of an existing source system, select the source system whose name you want to change, choose the :pencil2:, provide the new name, and save your changes.
 
 **Related Information**  
 

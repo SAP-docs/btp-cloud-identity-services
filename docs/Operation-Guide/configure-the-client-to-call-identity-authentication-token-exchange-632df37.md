@@ -291,7 +291,7 @@ Allowed values for `requested_token_type` parameter:
 > ### Note:  
 > The exchange of an OpenID Connect token with SAML 2.0 is possible in two scenarios, depending on the requested token type string:
 > 
-> -   `urn:sap:identity:oauth:token-type:saml2-header` - [SAP Note 2043039 - SAML 2.0 Authentication via HTTP Request Header](https://me.sap.com/notes/SAP Note 2043039 - SAML 2.0 Authentication via HTTP Request Header)
+> -   `urn:sap:identity:oauth:token-type:saml2-header` - [2043039](https://me.sap.com/notes/2043039) 
 > -   `urn:ietf:params:oauth:token-type:saml2` - [SAML 2.0 Bearer Assertion Flow for OAuth 2.0 Client](https://help.sap.com/docs/SAP_NETWEAVER_750/e815bb97839a4d83be6c4fca48ee5777/01043cc6765b48cfbc1564a9839a29ee.html)
 
 
@@ -322,6 +322,65 @@ string
 <td valign="top">
 
 Use provided API names. For more information, see [Consume APIs from Other Applications](../Development/consume-apis-from-other-applications-29e204d.md).
+
+> ### Note:  
+> If `resource` parameter is used to consume APIs from other applications, then the returned token is always of type `urn:ietf:params:oauth:token-type:access_token` even if `requested_token_type` is requested for type `id_token`.
+
+
+
+</td>
+<td valign="top">
+
+Request body
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`refresh_expiry`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Reduces the expiry of a refresh token. It is useful if your application is called from mobile and web applications, and both have different session requirements. If you set the token lifetime to 0 or less, you won't receive a `refresh_token` in response.
+
+</td>
+<td valign="top">
+
+Request body
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`token_format`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+The `token_format` can be set to `opaque` to retrieve an opaque access token or to `jwt` to retrieve a JWT based access token. If not set, the current defaults per grant type are used.
 
 </td>
 <td valign="top">
@@ -374,8 +433,7 @@ Path
 > client_id=a90ca226sbc34-soc5-dcf6-6k8a6b9f2469&
 > client_secret=OWSu0/0sSUeUCG1LAYmSQ10Ut0yrfPz&
 > subject_token=Zjk1YTI3YERzNGZlZmTlNzZjNzk4YTY2ZjdlZjYwMacw
-> subject_token_type=urn:ietf:params:oauth:token-type:access_tokenShould you have any questions regarding this template, or need
-> 					individual support for your API documentation, please contact Anne Tarnoruder or Frederic Moitel, or open an 
+> subject_token_type=urn:ietf:params:oauth:token-type:access_token
 > ```
 > 
 > *Response*
@@ -406,7 +464,7 @@ Path
 > *Request*
 > 
 > ```
-> Should you have any questions regarding this template, or need
+> 
 > https://my-tenant.ondemand.com/oauth2/token?grant_type=urn:ietf:params:oauth:grant-type:token-exchange&
 > client_id=a90ca226sbc34-soc5-dcf6-6k8a6b9f2469&
 > client_secret=OWSu0/0sSUeUCG1LAYmSQ10Ut0yrfPz&

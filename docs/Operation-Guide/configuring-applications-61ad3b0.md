@@ -69,8 +69,8 @@ How to configure trust
 
 -   [Configure Trust](configure-trust-f96e4c5.md)
 -   [Configure the Subject Name Identifier Sent to the Application](configure-the-subject-name-identifier-sent-to-the-application-1d020e3.md)
--   [User Attributes Sent to the Application](user-attributes-sent-to-the-application-d361407.md)
--   [Attributes with Default Values](attributes-with-default-values-a2f1e46.md)
+-   [Configuring User Attributes from the Identity Directory](configuring-user-attributes-from-the-identity-directory-d361407.md)
+-   [Configuring Attributes Based on Flexible Expressions](configuring-attributes-based-on-flexible-expressions-a2f1e46.md)
 
 
 
@@ -142,7 +142,7 @@ On a tenant level
 Specific for the application
 
 -   [Display Application Name on Logon Page](display-application-name-on-logon-page-c02798e.md)
--   [Configure a Logo for an Application](configure-a-logo-for-an-application-778f748.md)
+-   [Configure Logo](configure-logo-778f748.md)
 -   [Configure a Branding Style for an Application](configure-a-branding-style-for-an-application-32f8d33.md)
 -   [Define an Email Template Set for an Application](define-an-email-template-set-for-an-application-bb2c79b.md)
 -   [Configure Registration and Upgrade Forms](configure-registration-and-upgrade-forms-93a9e18.md)

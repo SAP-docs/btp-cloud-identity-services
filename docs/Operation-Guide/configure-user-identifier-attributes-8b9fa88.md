@@ -128,12 +128,15 @@ No/Configurable
 </tr>
 </table>
 
-The `User ID` and `Login Name` identifiers of a user can't have values that are equal to the `User ID`, `Email`, `Login Name`, and `Phone` identifiers of another user.
+> ### Caution:  
+> The `User ID` and `Login Name` identifiers of a user can't have values that are equal to the `User ID`, `Email`, `Login Name`, `Display Name`, and `Phone` identifiers of another user.
+> 
+> When `Email`, `Display Name`, or `Phone` identifiers of a user are set as unique they can't have values that are equal to the `User ID`, `Email`, `Login Name`, `Display Name`, and `Phone` identifiers of another user.
 
 > ### Note:  
 > The `Display Name` user identifier for the tenants created before the system upgrade on May 13, 2020 is configured as required and unique.
 > 
-> The *Phone* user attribute is configured as non-unique by default. If you configure it as unique, all users that are created or updated after this configuration won't be able to have phone numbers taken by someone else.
+> The `Phone` user attribute is configured as non-unique by default. If you configure it as unique, all users that are created or updated after this configuration won't be able to have phone numbers taken by someone else.
 
 > ### Remember:  
 > If `Email` is marked as not-required on tenant level, it becomes configurable on application level, and must also be changed there, too. For more information, see [Configure Registration and Upgrade Forms](configure-registration-and-upgrade-forms-93a9e18.md).
@@ -320,7 +323,7 @@ Choose the allowed logon identifiers for the users. For more information, see [C
 
 [Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.")
 
-[Configure Customer-Controlled Encryption Keys in Administration Console \(Early Adoption\)](configure-customer-controlled-encryption-keys-in-administration-console-early-adoption-fe6e30c.md "")
+[Configure Customer-Controlled Encryption Keys in Administration Console \(Restricted Availability\)](configure-customer-controlled-encryption-keys-in-administration-console-restricted-availa-fe6e30c.md "")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 

@@ -4224,7 +4224,7 @@ OpenID Connect
 </td>
 <td valign="top">
 
-The list of the claims that can't be set via the default attribute configuration is extended with `ias_iss`. See [Attributes with Default Values](Operation-Guide/attributes-with-default-values-a2f1e46.md).
+The list of the claims that can't be set via the default attribute configuration is extended with `ias_iss`. See [Configuring Attributes Based on Flexible Expressions](Operation-Guide/configuring-attributes-based-on-flexible-expressions-a2f1e46.md).
 
 </td>
 <td valign="top">
@@ -6215,7 +6215,7 @@ Risk-Based Authentication
 </td>
 <td valign="top">
 
-Tenant administrator can use `Corporate Attribute` to create rules for risk-based authentication for a specific application in the tenant. See [Create a New Rule](Operation-Guide/configure-risk-based-authentication-for-an-application-bc52fbf.md#loio18d02ab9cc7d4caf83d8654c8c51a175).
+Tenant administrator can use `Corporate Attribute` to create rules for risk-based authentication for a specific application in the tenant. See [Create a New Rule](Operation-Guide/create-a-new-rule-18d02ab.md).
 
 </td>
 <td valign="top">
@@ -6280,7 +6280,7 @@ Assertion Attributes
 </td>
 <td valign="top">
 
-Identity Authentication added `locale` as assertion attribute. See [User Attributes Sent to the Application](Operation-Guide/user-attributes-sent-to-the-application-d361407.md).
+Identity Authentication added `locale` as assertion attribute. See [Configuring User Attributes from the Identity Directory](Operation-Guide/configuring-user-attributes-from-the-identity-directory-d361407.md).
 
 </td>
 <td valign="top">

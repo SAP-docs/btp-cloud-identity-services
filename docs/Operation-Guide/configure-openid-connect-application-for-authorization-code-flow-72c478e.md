@@ -72,7 +72,7 @@ To configure an OpenID Connect trusted application in the administration console
     <tr>
     <td valign="top">
     
-    *Redirect URIs \(optional\)*
+    *Redirect URIs \(mandatory\)*
     
     </td>
     <td valign="top">
@@ -84,7 +84,7 @@ To configure an OpenID Connect trusted application in the administration console
     <tr>
     <td valign="top">
     
-    *Post Logout Redirect URIs \(optional\)*
+    *Post Logout Redirect URIs \(mandatory\)*
     
     </td>
     <td valign="top">
@@ -108,8 +108,6 @@ To configure an OpenID Connect trusted application in the administration console
     </table>
     
     > ### Tip:  
-    > The *Redirect URI* and *Post Logout Redirect URI* configuration can be skipped for the Client Credentials Flow, Resource Owner Password Credentials Flow, and JWT Bearer Flow.
-    > 
     > For more information about the format of the redirect URIs and post logout redirect URIs, see [OpenID Connect Application Configurations](openid-connect-application-configurations-1ae324e.md).
 
 7.  **Optional:** \(If you added second signing certificate in tenant settings\) Under *Identity Provider Certificate*, choose the certificate to be used.

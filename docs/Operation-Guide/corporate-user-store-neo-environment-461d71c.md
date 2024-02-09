@@ -63,7 +63,7 @@ For all users from the corporate user store, a second factor for authentication 
 
 In the scope of the *Corporate User Store* scenario, you can manage access to applications and their resources based on the groups available in the corporate user store.
 
-The corporate user groups are sent to an application in the SAML 2.0 assertion. `corporate_groups` is the attribute that contains the groups that the user in the corporate user store is assigned to. For more details about how the groups are sent to the application in the SAML 2.0 assertion, see [User Attributes Sent to the Application](user-attributes-sent-to-the-application-d361407.md).
+The corporate user groups are sent to an application in the SAML 2.0 assertion. `corporate_groups` is the attribute that contains the groups that the user in the corporate user store is assigned to. For more details about how the groups are sent to the application in the SAML 2.0 assertion, see [Configuring User Attributes from the Identity Directory](configuring-user-attributes-from-the-identity-directory-d361407.md).
 
 > ### Note:  
 > If your application is deployed on the SAP BTP, the corporate user store groups, relevant for the application, and contained in the `corporate_groups` attribute in the SAML 2.0 assertion, can be mapped to assertion-based groups created in SAP BTP cockpit. For more information, see the *4. \(If Using an Identity Provider\) Define the Group-to-Role Mapping* section in [Managing Roles](https://help.hana.ondemand.com/help/frameset.htm?db8175b9d976101484e6fa303b108acd.html).

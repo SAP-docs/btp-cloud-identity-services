@@ -60,7 +60,7 @@ Yes
 Username and password are provided by the user.
 
 > ### Note:  
-> Depending on the allowed logon identifiers for the user, the username can be the `User ID`, `Login Name`, or `E-Mai`. For more information, see [Configure Allowed Logon Identifiers](../Operation-Guide/configure-allowed-logon-identifiers-3adf1ff.md).
+> Depending on the allowed logon identifiers for the user, the username can be the `User ID`, `Login Name`, or `Email`. For more information, see [Configure Allowed Logon Identifiers](../Operation-Guide/configure-allowed-logon-identifiers-3adf1ff.md).
 
 > ### Caution:  
 > If the user provides wrong password, then each verification counts as a failed logon attempt. The password locks when the number of the allowed failed logon attempts is reached. The number depends on the password policy applied for the application. For more information, see [Configuring Password Policies](../Operation-Guide/configuring-password-policies-12b3395.md).

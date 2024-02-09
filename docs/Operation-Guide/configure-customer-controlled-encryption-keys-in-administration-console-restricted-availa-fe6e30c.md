@@ -1,15 +1,112 @@
 <!-- loiofe6e30cf1431438a94425e934d0d9e2b -->
 
-# Configure Customer-Controlled Encryption Keys in Administration Console
+# Configure Customer-Controlled Encryption Keys in Administration Console \(Restricted Availability\)
+
+
+
+<a name="loiofe6e30cf1431438a94425e934d0d9e2b__prereq_wmk_x5l_vyb"/>
+
+## Prerequisites
+
+-   You have an SAP Data Custodian tenant. For more information, see [SAP Data Custodian Help Guide](https://help.sap.com/docs/sap-data-custodian/help-guide/overview?version=latest) .
+-   You have read and accept all Customer-Controlled Encryption Keys \(CCEK\) limitations. For more information, see *Limitations* section in [Customer-Controlled Encryption Keys \(Restricted Availability\)](../Security/customer-controlled-encryption-keys-restricted-availability-177108a.md).
+-   You have tested all your scenarios on a test tenant, before activating CCEK on a productive tenant. For more information, see [Tenant Model and Licensing](../tenant-model-and-licensing-93160eb.md).
 
 
 
 ## Context
 
-> ### Note:  
-> You can clear the fields by choosing the *Remove Configuration* button at the top of the screen.
+> ### Tip:  
+> CCEK activation makes the tenant unavailable during the execution of the encryption procedure. Consider scheduling maintenance windows accordingly.
+> 
+> ****
+> 
+> 
+> <table>
+> <tr>
+> <th valign="top">
+> 
+> Number of Users
+> 
+> </th>
+> <th valign="top">
+> 
+> Activation Time
+> 
+> </th>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> less than 1 000
+> 
+> </td>
+> <td valign="top">
+> 
+> less than 1 min
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> between 1 000 and 10 000
+> 
+> </td>
+> <td valign="top">
+> 
+> between 1 min and 5 min
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> between 10 000 and 100 000
+> 
+> </td>
+> <td valign="top">
+> 
+> between 10 min and 20 min
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> between 100 000 and 1 000 000
+> 
+> </td>
+> <td valign="top">
+> 
+> between 100 min and 150 min
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> more than 1 000 000
+> 
+> </td>
+> <td valign="top">
+> 
+> > ### Note:  
+> > Request the activation by reporting an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`.
+> 
+> 
+> 
+> </td>
+> </tr>
+> </table>
 
-To configure the customer controlled encryption keys via the administration console for SAP Cloud Identity Services, follow the procedure:
+> ### Restriction:  
+> If Identity Provisioning is enabled, make sure that no provisioning jobs are running during the execution of the encryption procedure. Stop manually triggered jobs and pause the scheduled ones. For more information, see [Start and Stop Provisioning Jobs](https://help.sap.com/docs/identity-provisioning/identity-provisioning/start-and-stop-provisioning-jobs?version=Cloud).
+
+> ### Note:  
+> If issues during the encryption procedure, report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`.
+
+To configure the customer-controlled encryption keys via the administration console for SAP Cloud Identity Services, follow the procedure:
 
 
 
@@ -23,7 +120,7 @@ To configure the customer controlled encryption keys via the administration cons
 
 3.  Under *General*, choose the *CCEK Configuration* list item.
 
-4.  Fill in the equired information:
+4.  Fill in the required information:
 
 
     <table>
@@ -31,15 +128,11 @@ To configure the customer controlled encryption keys via the administration cons
     <th valign="top">
 
     Configuration
-
-
     
     </th>
     <th valign="top">
 
     Notes
-
-
     
     </th>
     </tr>
@@ -47,13 +140,11 @@ To configure the customer controlled encryption keys via the administration cons
     <td valign="top">
     
     **API URL**
-
-
     
     </td>
     <td valign="top">
     
-    The base URL of Data Custodian API. You can find it in the API Endpoints.txt document you receive when you generate a new key in the Data Custodian API.
+    The base URL of Data Custodian API \(the URL without the `/kms/v1` or `/kms/v2` suffix\). You can find it in the API Endpoints.txt document you receive when you generate a new key in the Data Custodian API.
 
     > ### Example:  
     > `https://kms-apiaws-<data custodian kmsname>datacustodian.cloud.sap`
@@ -66,15 +157,11 @@ To configure the customer controlled encryption keys via the administration cons
     <td valign="top">
     
     **Key ID**
-
-
     
     </td>
     <td valign="top">
     
-    Data Custodian Key ID. You can find in it in the *Details* section of the Data Custodian Key Management Service
-
-
+    Data Custodian Key ID. You can find in it in `Key Management Service/General/Iaas Applications/Test_group/Keys/<tenant name>` under the *Details* tab.
     
     </td>
     </tr>
@@ -82,15 +169,11 @@ To configure the customer controlled encryption keys via the administration cons
     <td valign="top">
     
     **Client ID**
-
-
     
     </td>
     <td valign="top">
     
-    The Access Key you receive with the API Endpoints.txt document when you generate a new key in the Data Custodian API
-
-
+    The Access Key you receive with the API Endpoints.txt document when you generate a new key in the Data Custodian API.
     
     </td>
     </tr>
@@ -98,15 +181,11 @@ To configure the customer controlled encryption keys via the administration cons
     <td valign="top">
     
     **Client Secret**
-
-
     
     </td>
     <td valign="top">
     
-    The Secret Key you receive with the API Endpoints.txt document when you generate a new key in the Data Custodian API
-
-
+    The Secret Key you receive with the API Endpoints.txt document when you generate a new key in the Data Custodian API.
     
     </td>
     </tr>
@@ -115,6 +194,8 @@ To configure the customer controlled encryption keys via the administration cons
 5.  Save your configuration.
 
 6.  Activate the configuration.
+
+    This starts an asynchronous activation of the configuration.
 
 
 **Related Information**  

@@ -94,7 +94,7 @@ To create a new OpenID Connect application follow the procedure below:
     <tr>
     <td valign="top">
     
-    *Protocol Authentication*
+    *Protocol Type*
     
     </td>
     <td valign="top">
@@ -128,8 +128,8 @@ To create a new OpenID Connect application follow the procedure below:
 -   [Change an Application's Display Name](change-an-application-s-display-name-83d65d0.md)
 -   [Configure an Application's Home URL](configure-an-application-s-home-url-be6d6f2.md)
 -   [Visit an Application's Web Page](visit-an-application-s-web-page-2b67225.md)
--   [User Attributes Sent to the Application](user-attributes-sent-to-the-application-d361407.md)
--   [Attributes with Default Values](attributes-with-default-values-a2f1e46.md)
+-   [Configuring User Attributes from the Identity Directory](configuring-user-attributes-from-the-identity-directory-d361407.md)
+-   [Configuring Attributes Based on Flexible Expressions](configuring-attributes-based-on-flexible-expressions-a2f1e46.md)
 -   [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md)
 -   [Configure Certificates for API Authentication](configure-certificates-for-api-authentication-c408083.md)
 -   [Enable or Disable Kerberos Authentication for an Application](enable-or-disable-kerberos-authentication-for-an-application-11121c9.md)
@@ -141,7 +141,7 @@ To create a new OpenID Connect application follow the procedure below:
 -   [Configuring Privacy Policies](configuring-privacy-policies-ed48466.md)
 -   [Configuring Terms of Use](configuring-terms-of-use-61d3a86.md)
 -   [Display Application Name on Logon Page](display-application-name-on-logon-page-c02798e.md)
--   [Configure a Logo for an Application](configure-a-logo-for-an-application-778f748.md)
+-   [Configure Logo](configure-logo-778f748.md)
 -   [Configure a Branding Style for an Application](configure-a-branding-style-for-an-application-32f8d33.md)
 -   [Configure Registration and Upgrade Forms](configure-registration-and-upgrade-forms-93a9e18.md)
 -   [Protecting Self-Registration with Phone Verification](protecting-self-registration-with-phone-verification-5834b6e.md)

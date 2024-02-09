@@ -266,7 +266,7 @@ You have to specify how the assertion attributes are sent to SAP BTP in the asse
 **Related Information**  
 
 
-[User Attributes Sent to the Application](../Operation-Guide/user-attributes-sent-to-the-application-d361407.md "After configuring the user attributes to be collected by the registration and upgrade forms, you have to specify how these attributes are sent to the application.")
+[Configuring User Attributes from the Identity Directory](../Operation-Guide/configuring-user-attributes-from-the-identity-directory-d361407.md "Specify how the local user attributes, configured to be collected by the registration and upgrade forms, are sent to the application.")
 
 <a name="task_ckj_rhg_cy"/>
 

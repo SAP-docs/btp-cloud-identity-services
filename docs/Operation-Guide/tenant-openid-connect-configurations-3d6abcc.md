@@ -21,7 +21,7 @@ You can change the name format, the certificate used by the identity provider to
 > ### Note:  
 > The signing certificate is one and the same for SAML 2.0 and OpenId Connect. A change in one of the configurations affects the other one.
 
-The *OpenID Connect Configuration* view in the administration console shows also information about the URLs of the *Authorization endpoint*, *Token endpoint*, *UserInfo endpoint*, and *Logout endpoint*.
+The *OpenID Connect Configuration* view in the administration console shows also information about the URLs of the *Domain for Browser Flows*, *Authorization Endpoint*, *Token Endpoint*, *UserInfo Endpoint*, and *Logout Endpoint*.
 
 The token policy for the tenant is defined by configuring the validity of the refresh token, access and id\_token, and the maximum sessions per user. It’s valid for all the applications in the tenant.
 
@@ -120,7 +120,10 @@ To view or change the tenant OpenID Connect configurations, proceed as follows:
 
 3.  Under *Single Sign-On*, choose the *OpenID Connect Configuration* list item.
 
-    The *OpenID Connect Configuration* page that opens displays the name of the identity provider, its endpoints, signing certificate and token policy.
+    The *OpenID Connect Configuration* page that opens displays the name of the identity provider, its endpoints derived from issuer and domain configurations, signing certificate and token policy.
+
+    > ### Note:  
+    > By default, applications use the domain from their trust configuration to access all the endpoints. For browser-based logons and logouts, you can choose another domain. Applications use the chosen domain after reloading the OpenID Connect metadata.
 
 4.  **Optional:** To define the token policy, use the slider or provide a number in the input field above the slider. If needed, use the reset button to set to the default value.
 
@@ -133,7 +136,7 @@ To view or change the tenant OpenID Connect configurations, proceed as follows:
     <tr>
     <th valign="top">
 
-    Name
+    Issuer
     
     </th>
     <th valign="top">
@@ -145,24 +148,24 @@ To view or change the tenant OpenID Connect configurations, proceed as follows:
     <tr>
     <td valign="top">
     
-    Default Type name format
+    Default Issuer format
     
     </td>
     <td valign="top">
     
-    <tenant ID\>.accounts.ondemand.com
+    https://<tenant ID\>.accounts.ondemand.com
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    URL Type name format
+    Legacy Issuer format
     
     </td>
     <td valign="top">
     
-    https://<tenant ID\>.accounts.ondemand.com
+    <tenant ID\>.accounts.ondemand.com
     
     </td>
     </tr>
@@ -289,7 +292,7 @@ To change the default certificate for the tenant, choose the new one from the li
 
 [Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.")
 
-[Configure Customer-Controlled Encryption Keys in Administration Console \(Early Adoption\)](configure-customer-controlled-encryption-keys-in-administration-console-early-adoption-fe6e30c.md "")
+[Configure Customer-Controlled Encryption Keys in Administration Console \(Restricted Availability\)](configure-customer-controlled-encryption-keys-in-administration-console-restricted-availa-fe6e30c.md "")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 

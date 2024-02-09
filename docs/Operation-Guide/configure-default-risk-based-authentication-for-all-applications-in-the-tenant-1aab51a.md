@@ -29,7 +29,8 @@ You can define rules for authentication according to different risk factors and 
 
 ## Context
 
-Be careful when you set rules for authentication for the tenant. The rules apply to all applications in the tenant, including the `Administration Console`, if those applications have default risk-based authentication \(no rules created; default action - Allow\). The changes apply immediately when saved, and you may not be able to log in the `Administration Console` again if you don't meet the rules.
+> ### Caution:  
+> Be careful when you set rules for authentication for the tenant. The rules apply to all applications in the tenant, including the `Administration Console`, if those applications have default risk-based authentication \(no rules created; default action - Allow\). The changes apply immediately when saved, and you may not be able to log in the `Administration Console` again if you don't meet the rules.
 
 On the other hand, if a specific application has risk-based authentication different from the default one \(no rules created; default action - Allow\), and you apply default risk-based authentication for the tenant, the rules for the tenant won't apply to that specific application.
 
@@ -200,7 +201,7 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
 
 [Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.")
 
-[Configure Customer-Controlled Encryption Keys in Administration Console \(Early Adoption\)](configure-customer-controlled-encryption-keys-in-administration-console-early-adoption-fe6e30c.md "")
+[Configure Customer-Controlled Encryption Keys in Administration Console \(Restricted Availability\)](configure-customer-controlled-encryption-keys-in-administration-console-restricted-availa-fe6e30c.md "")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 
@@ -295,7 +296,7 @@ Each rule contains the following information:
 
 -   *IP Range*
 
-    Define the range of allowed IP addresses or proxies that the user logs on from. The value has to be specified in Classless Inter-Domain Routing \(CIDR\) notation.
+    Define a range of IP addresses that authentication requests to Identity Authentication can be sent from. The value has to be specified in Classless Inter-Domain Routing \(CIDR\) notation.
 
     > ### Note:  
     > By default the field is empty, meaning that any IP is allowed.
@@ -307,7 +308,7 @@ Each rule contains the following information:
 
 -   *Forwarded IP Range*
 
-    Define the range of allowed IP addresses or proxies for the original IP addresses that the user logs on from. The value has to be specified in Classless Inter-Domain Routing \(CIDR\) notation.
+    Define a range of IP addresses for the original IP addresses that authentication requests to Identity Authentication can be sent from. This range is used in conjunction with IP Range in scenarios where authentication requests to Identity Authentication are made by a proxy on-behalf of the user/client. The value has to be specified in Classless Inter-Domain Routing \(CIDR\) notation.
 
     > ### Example:  
     > ![](images/IP_Ranges_Examples_b6f3ce1.png)

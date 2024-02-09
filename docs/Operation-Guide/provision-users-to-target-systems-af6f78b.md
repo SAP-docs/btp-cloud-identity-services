@@ -485,7 +485,7 @@ The tenant administrator can choose which of the users to be provisioned to the 
     > ### Note:  
     > The search is case insensitive. The system searches for entries that begin with the typed string.
     > 
-    > If you place asterix \(\*\) in the beginning or in the middle of your search string the system will treat it as a regular character and will include it in the search. For example, if you type ***\*on*** in the *search* field, the system will look for users whose first three letters in any of the three fields are ***\*on***. If you type ***on*** or ***on\**** in the search field, the system will look for users whose first two letters in any of the three fields are ***on***.
+    > If you place asterisk \(\*\) in the beginning or in the middle of your search string the system will treat it as a regular character and will include it in the search. For example, if you type ***\*on*** in the *search* field, the system will look for users whose first three letters in any of the three fields are ***\*on***. If you type ***on*** or ***on\**** in the search field, the system will look for users whose first two letters in any of the three fields are ***on***.
 
 
     
@@ -506,7 +506,7 @@ The tenant administrator can choose which of the users to be provisioned to the 
     > ### Note:  
     > The search is case insensitive. The system searches for entries that begin with the typed string.
     > 
-    > If you place asterix \(\*\) in the beginning or in the middle of your search string the system will treat it as a regular character and will include it in the search. For example, if you type ***\*on*** in the *First Name* field, the system will look for users whose first three letters of the first name are ***\*on***. If you type ***on*** or ***on\**** in the *First Name* field, the system will look for users whose first two letters of the first name are ***on***.
+    > If you place asterisk \(\*\) in the beginning or in the middle of your search string the system will treat it as a regular character and will include it in the search. For example, if you type ***\*on*** in the *First Name* field, the system will look for users whose first three letters of the first name are ***\*on***. If you type ***on*** or ***on\**** in the *First Name* field, the system will look for users whose first two letters of the first name are ***on***.
 
 
     

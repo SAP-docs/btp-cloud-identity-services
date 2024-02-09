@@ -59,7 +59,5 @@ If a restore is required due to an issue on application level, report an inciden
 
 [Accessibility Features in SAP Cloud Identity Services](accessibility-features-in-sap-cloud-identity-services-c7b544b.md "To optimize your experience of SAP Cloud Identity Services, SAP Cloud Identity Services tools provide features and settings that help you use the software efficiently.")
 
-[Regional Availability](regional-availability-be600ca.md "Tenants are deployed on the productive domain accounts.ondemand.com.")
-
 [Cloud Service Status](https://www.sap.com/about/trust-center/cloud-service-status.html)
 

@@ -120,7 +120,7 @@ To view the audit logs, follow the procedures below:
 
 2.  Choose the *Audit and Change Logs* tile.
 
-3.  Choose the *Cloud Foundry* tab.
+3.  Choose the *Audit Logs* tab.
 
 4.  Choose *Add*.
 

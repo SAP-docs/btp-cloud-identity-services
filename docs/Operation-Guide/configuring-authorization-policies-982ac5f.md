@@ -37,7 +37,7 @@ For more information, see [Subscribe to Multitenant Applications Using the Cockp
 
 ## Authorization Management
 
-Authorization management in Identity Authentication allows applications to define authorization models with complex instance restrictions for data access. Developers define and deploy authorization policies with functional checks, instance-based authorizations, and user attributes. They're available in the Identity Authentication administration console. If necessary, developers can update existing authorization policies.
+Authorization management allows SAP Cloud Identity Services - Identity Authentication administrators to refine authorization policies based on application policy templates with complex instance restrictions for data access. Developers define and deploy authorization policies with functional checks, instance-based authorizations, and user attributes. They're available in the Identity Authentication administration console. If necessary, developers can update existing authorization policies.
 
 For more information, see [Developing Authorizations](../Development/developing-authorizations-22928a2.md).
 
@@ -157,7 +157,7 @@ Administration console
 </tr>
 </table>
 
-We distinguish between different types of authorization policies. You recognize the diffent types in the *Package* column.
+We distinguish between different types of authorization policies. You recognize the different types in the *Package* column.
 
 -   The package name of the base policies is defined by the application.
 
@@ -217,6 +217,8 @@ Authorization policy created by administrators. You can change and delete this a
 
 Authorization policy administrators can configure the following in custom authorization policies:
 
--   Combine authorization policies \(either base or custom authorization policies\). See [Combine Authorization Policies](combine-authorization-policies-1a69414.md).
+-   Combine authorization policies. See [Combine Authorization Policies](combine-authorization-policies-1a69414.md).
+
 -   Add or delete rules and restrictions and their attribute values. See [Edit an Authorization Policy](edit-an-authorization-policy-c76aca6.md).
+
 

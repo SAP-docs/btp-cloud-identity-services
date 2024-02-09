@@ -48,7 +48,7 @@ As a tenant administrator, you can add one or more users created for a specific 
 
 ## Next Steps
 
-Configure the attributes that are sent to the application in the assertion. For more information, see [User Attributes Sent to the Application](user-attributes-sent-to-the-application-d361407.md)
+Configure the attributes that are sent to the application in the assertion. For more information, see [Configuring User Attributes from the Identity Directory](configuring-user-attributes-from-the-identity-directory-d361407.md)
 
 **Related Information**  
 

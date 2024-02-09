@@ -24,7 +24,7 @@ By default, the display name of the application is set to appear on the logon pa
 > Be careful when you switch off the display of the application name. The users might not be sure which application they are providing their credentials for.
 
 > ### Tip:  
-> Instead of leaving the left side of the logon page blank you can add an application's logo. For more information, see [Configure a Logo for an Application](configure-a-logo-for-an-application-778f748.md).
+> Instead of leaving the left side of the logon page blank you can add an application's logo. For more information, see [Configure Logo](configure-logo-778f748.md).
 
 To configure the appearance of the application's name on the logon page, proceed as follows:
 

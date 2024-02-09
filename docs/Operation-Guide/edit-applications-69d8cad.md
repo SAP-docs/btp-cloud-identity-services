@@ -479,7 +479,7 @@ To edit the application configurations, proceed as follows:
     <tr>
     <td valign="top">
     
-    *Protocol authentication*
+    *Protocol Type*
     
     </td>
     <td valign="top">

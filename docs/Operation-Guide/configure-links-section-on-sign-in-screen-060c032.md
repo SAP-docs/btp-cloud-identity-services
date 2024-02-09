@@ -109,12 +109,14 @@ To configure your logon links, proceed as follows:
     </tr>
     </table>
     
-5.  Add the new text in the *Custom Value* field next to the text that you want to change.
+5.  Choose *Edit*.
+
+6.  Add the new text in the *Custom Value* field next to the text that you want to change.
 
     > ### Note:  
     > The value must be in the format `<a href="https:link_URL">Link Text</a>`.
 
-6.  Save your changes.
+7.  Save your changes.
 
     If the operation is successful, you receive the `Tenant Texts updated` message.
 
@@ -172,7 +174,7 @@ To configure your logon links, proceed as follows:
 
 [Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.")
 
-[Configure Customer-Controlled Encryption Keys in Administration Console \(Early Adoption\)](configure-customer-controlled-encryption-keys-in-administration-console-early-adoption-fe6e30c.md "")
+[Configure Customer-Controlled Encryption Keys in Administration Console \(Restricted Availability\)](configure-customer-controlled-encryption-keys-in-administration-console-restricted-availa-fe6e30c.md "")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 

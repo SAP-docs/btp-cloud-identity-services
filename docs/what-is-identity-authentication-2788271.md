@@ -64,6 +64,12 @@ SAP Cloud Identity Services run on several underlying Infrastructure-as-a-Servic
 
 Identity Authentication tenants run on the infrastructure of SAP Cloud Identity Services. You can find out more details about your tenant in the administration console for SAP Cloud Identity Services.
 
+SAP Cloud Identity Services are available for consumption with the following SAP BTP environments:
+
+-   Cloud Foundry
+-   Kyma
+-   Neo
+
 
 
 ## Features

@@ -10,7 +10,7 @@ To add a language version of a privacy policy document, you must upload a UTF-8 
 
 ## Prerequisites
 
-You have created a privacy policy document in the administration console. For more information, see[Create a New Privacy Policy Document](create-a-new-privacy-policy-document-e73cf2d.md) .
+You have created a privacy policy document in the administration console. For more information, see [Create a New Privacy Policy Document](create-a-new-privacy-policy-document-e73cf2d.md) .
 
 
 

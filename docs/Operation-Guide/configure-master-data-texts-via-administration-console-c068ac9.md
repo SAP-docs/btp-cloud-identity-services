@@ -200,7 +200,7 @@ To change the master data texts via the administration console, proceed as follo
 
 6.  You have the following options:
 
-    -   Change existing texts - Find the text that you want to change and replace it in the *Value* field with the new text. You can use the search field, or the sorting option, or you can expand the page for more results.
+    -   Change existing texts - Choose the *Edit* button, find the text that you want to change, and replace it in the *Value* field with the new text. You can use the search field, or the sorting option, or you can expand the page for more results.
     -   Reset to default values- Choose the *Reset to Default* button. This action resets all master data texts from the chosen resource to their key value pairs.
     -   Add a new key value pair - Choose the *Add* button and provide key and value.
 
@@ -265,7 +265,7 @@ To change the master data texts via the administration console, proceed as follo
 
 [Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.")
 
-[Configure Customer-Controlled Encryption Keys in Administration Console \(Early Adoption\)](configure-customer-controlled-encryption-keys-in-administration-console-early-adoption-fe6e30c.md "")
+[Configure Customer-Controlled Encryption Keys in Administration Console \(Restricted Availability\)](configure-customer-controlled-encryption-keys-in-administration-console-restricted-availa-fe6e30c.md "")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 

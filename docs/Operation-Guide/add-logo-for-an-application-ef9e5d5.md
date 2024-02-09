@@ -1,10 +1,24 @@
-<!-- loio778f7482432e42a794963ffa8554e04f -->
+<!-- loioef9e5d56a20f47518c41034968fe172a -->
 
-# Configure a Logo for an Application
+# Add Logo for an Application
 
-You can configure a custom logo for a specific application by uploading an image. Furthermore, you can remove a configured logo and leave the display name only as a title for the application.
+Configure a custom logo for a specific application by choosing it from the list of your uploaded images in the administration console.
 
-The logo is displayed on the application's logon page and can be included into the Emails sent to users.
+
+
+<a name="loioef9e5d56a20f47518c41034968fe172a__prereq_z15_hl1_d1c"/>
+
+## Prerequisites
+
+You have uploaded an image in the administration console. See [Upload Logo in Administration Console](upload-logo-in-administration-console-41e7627.md).
+
+
+
+<a name="loioef9e5d56a20f47518c41034968fe172a__context_qpv_2l1_d1c"/>
+
+## Context
+
+The logo is displayed on the application's logon page and can be included into thee mails sent to users. You can also remove a configured logo and leave the display name only as a title for the application.
 
 
 
@@ -25,17 +39,14 @@ The logo is displayed on the application's logon page and can be included into t
 
 5.  Under *BRANDING*, choose *Logo*.
 
-6.  To set a custom logo, upload an image with the required format.
+6.  To set a custom logo for the application, choose *Edit*.
 
-    You can use one of the following formats for the image: <name\>.png, <name\>.gif, and <name\>.jpeg.
+7.  Choose the *Image* field and select an image from the list that appears.
 
-    > ### Note:  
-    > The image must be smaller than 100 KB and with a maximum size of 300x100.
-
-7.  Save your configuration.
+8.  Save your configuration.
 
     > ### Tip:  
-    > To remove a configured logo, choose the *Delete* button and confirm your choice.
+    > To remove a configured logo, choose the *Remove* button and confirm your choice.
 
 
 **Related Information**  

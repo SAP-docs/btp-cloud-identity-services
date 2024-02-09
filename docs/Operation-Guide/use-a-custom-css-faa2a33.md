@@ -56,9 +56,9 @@ Upload a Quartz or Horizon CSS file for custom end-user screens or the profile p
     > ### Note:  
     > Type the name of the CSS style in the search field to filter the list items, or choose the CSS style from the list on the left.
     > 
-    > If you do not have a created CSS style in your list, you can create one by choosing the *Create* button on the left-hand panel.
+    > If you do not have a CSS style in your list, you can create one by choosing the *Add* button on the left-hand panel.
 
-4.  Upload your CSS file for the respective theme \(Quartz or Horizon\).
+4.  Browse for a CSS file and upload it for the respective theme.
 
 5.  Save your changes.
 
@@ -66,14 +66,14 @@ Upload a Quartz or Horizon CSS file for custom end-user screens or the profile p
 
     You can update your custom CSS style as many times as you need. Only the last updated version is used.
 
-    You can delete a CSS style. Select the CSS styke and choose the *Delete* button to delete it.
+    You can delete a CSS style. Select the CSS style and choose the *Delete* button to delete it.
 
     > ### Caution:  
     > You can delete a CSS style, only if it is not assigned to an application. If it is assigned, you must assign a new style, and then delete it.
 
     You can download the CSS file for further reference by choosing the *Download* button.
 
-6.  **Optional:** To preview the implementation of the CSS on the Logon page, right click the preview link with title *CSS\_Test\_View* and open it in a new private or incognito tab.
+6.  **Optional:** To preview the implementation of the CSS on the Sign-In page, copy the preview link and open it in a new private or incognito tab.
 
 
 <a name="loioe9d7d8a6196b4e82af3365b7092bee27"/>

@@ -205,6 +205,7 @@ The response returns the following attributes. Only the attributes that exist fo
 -   country
 -   city
 -   company\_city
+-   spCustomAttributeX
 
 
 

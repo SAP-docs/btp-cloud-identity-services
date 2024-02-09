@@ -27,8 +27,6 @@ After that the user can either contact the system adminstrator or request a code
 
 When this feature is enabled, the `Phone` attribute becomes required and is not configurable for user registration or upgrade. For more information, see [Configure Registration and Upgrade Forms](configure-registration-and-upgrade-forms-93a9e18.md).
 
-Once the phone number has been verified, the user cannot change it any more on the profile page. This can be done by the administrator via the administration console. For more information, see [List and Edit User Details](list-and-edit-user-details-045cb01.md).
-
 
 
 ## Procedure

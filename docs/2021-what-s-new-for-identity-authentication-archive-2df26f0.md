@@ -2840,7 +2840,7 @@ User Attributes
 </td>
 <td valign="top">
 
-Tenant administrator can configure complex custom schema attributes with single-value child attributes. See [Attributes with Default Values](Operation-Guide/attributes-with-default-values-a2f1e46.md).
+Tenant administrator can configure complex custom schema attributes with single-value child attributes. See [Configuring Attributes Based on Flexible Expressions](Operation-Guide/configuring-attributes-based-on-flexible-expressions-a2f1e46.md).
 
 </td>
 <td valign="top">
@@ -4102,7 +4102,7 @@ Proxy Scenarios
 </td>
 <td valign="top">
 
-Identity Authentication supports sending of Identity Directory custom schemas attributes as default attributes. See [Attributes with Default Values](Operation-Guide/attributes-with-default-values-a2f1e46.md).
+Identity Authentication supports sending of Identity Directory custom schemas attributes as default attributes. See [Configuring Attributes Based on Flexible Expressions](Operation-Guide/configuring-attributes-based-on-flexible-expressions-a2f1e46.md).
 
 </td>
 <td valign="top">
@@ -5455,7 +5455,7 @@ Two-Factor Authentication
 </td>
 <td valign="top">
 
-Tenant administrator can configure applications to require more than one two-factor authentication method. See [Configure Risk-Based Authentication for an Application](Operation-Guide/configure-risk-based-authentication-for-an-application-bc52fbf.md#loiobc52fbf3d59447bbb6aa22f80d8b6056), and [Create a New Rule](Operation-Guide/configure-risk-based-authentication-for-an-application-bc52fbf.md#loio18d02ab9cc7d4caf83d8654c8c51a175).
+Tenant administrator can configure applications to require more than one two-factor authentication method. See [Configure Risk-Based Authentication for an Application](Operation-Guide/configure-risk-based-authentication-for-an-application-bc52fbf.md#loiobc52fbf3d59447bbb6aa22f80d8b6056), and [Create a New Rule](Operation-Guide/create-a-new-rule-18d02ab.md).
 
 </td>
 <td valign="top">

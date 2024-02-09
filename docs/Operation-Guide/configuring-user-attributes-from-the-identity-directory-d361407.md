@@ -1,14 +1,14 @@
 <!-- loiod361407d36c5443298a909acbbd96ec4 -->
 
-# User Attributes Sent to the Application
+# Configuring User Attributes from the Identity Directory
 
-After configuring the user attributes to be collected by the registration and upgrade forms, you have to specify how these attributes are sent to the application.
+Specify how the local user attributes, configured to be collected by the registration and upgrade forms, are sent to the application.
 
 
 
 ## Context
 
-Identity Authentication defines default names for these user attributes, but you can change them in accordance with your requirements.
+Identity Authentication defines default names for the user attributes, but you can change them in accordance with your requirements.
 
 You configure the attributes by defining which user attribute corresponds to the user attribute that you set for the registration and upgrade forms. You can also specify multiple user attributes for each user attribute. You perform this mapping to help the application use the same user attribute for different scenarios that require several user attributes.
 
@@ -118,7 +118,7 @@ locale/language
 > ### Note:  
 > `locale` is added at the creation of the application. It takes as value the language of the user.
 > 
-> You can view the configured user language in the administration console for SAP Cloud Identity Services. For more information, see [User Attributes Sent to the Application](user-attributes-sent-to-the-application-d361407.md).
+> You can view the configured user language in the administration console for SAP Cloud Identity Services. For more information, see [Configuring User Attributes from the Identity Directory](configuring-user-attributes-from-the-identity-directory-d361407.md).
 
 
 
@@ -555,18 +555,53 @@ app\_custom\_attribute\_5
 > Custom attributes must not be used to store sensitive personal data.
 
 > ### Note:  
-> The **User Attribute** column lists the attributes that can be shown on the registration and upgrade forms. The **User Attribute Name** lists the attributes that are sent in the assertion.
+> The **Value** column lists the attributes that can be shown on the registration and upgrade forms. The **Name** lists the attributes that are sent in the assertion.
 > 
 > The configured custom attributes are also put in the `id_token` if the application is OpenID connect. For more information, see [OpenID Connect](openid-connect-a789c9c.md).
 > 
 > The configured custom attributes can be seen at the user profile page after choosing *View My Data*.
 > 
-> The configuration of the user attributes for the system applications is disabled. The default settings for these applications are `First Name`, `Company`, `Last Name`, and `Email`.
+> The configuration of the user attributes for the system applications is disabled. The default values for these applications are `First Name`, `Company`, `Last Name`, and `Email`.
 
 > ### Remember:  
 > When the application uses a corporate IdP for authentication, and *Identity Federation* is disabled, the user attributes configurations in the administration console for SAP Cloud Identity Services aren't relevant. In such scenarios Identity Authentication sends to the application the user attributes that come from the corporate identity provider without changing them. For more information about the corporate identity provider scenario, see [Corporate Identity Providers](corporate-identity-providers-19f3eca.md) and [Configure Identity Federation](configure-identity-federation-c029bbb.md).
 
-To configure the user attributes, follow the procedure in [Configuring User Attributes](configuring-user-attributes-ed2797d.md):
+
+
+<a name="loiod361407d36c5443298a909acbbd96ec4__steps_nls_rnc_fzb"/>
+
+## Procedure
+
+1.  Sign in to the administration console for SAP Cloud Identity Services.
+
+2.  Under *Applications and Resources*, choose the *Applications* tile.
+
+3.  Choose the application that you want to edit.
+
+    > ### Note:  
+    > Type the name of the application in the search field to filter the list items, or choose the application from the list on the left.
+    > 
+    > If you don’t have a created application in your list, you can create one. For more information, see [Create a New Application](create-a-new-application-0d4b255.md).
+
+4.  Choose the *Trust* tab.
+
+5.  Under *SINGLE SIGN-ON*, choose *Attributes*.
+
+6.  Under the *Self-defined Attributes* section, choose *Expand All* to view all the information about the user attributes.
+
+7.  **Optional:** Choose the *Add* button:
+
+    1.  Provide a name for the attribute.
+
+    2.  Choose *Identity Directory* source.
+
+    3.  Choose a value from the drop-down list.
+
+
+8.  **Optional:** Choose the plus button next to the attribute to set a new value for the attribute.
+
+9.  Save your configuration.
+
 
 **Related Information**  
 

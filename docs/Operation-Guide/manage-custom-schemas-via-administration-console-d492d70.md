@@ -12,10 +12,10 @@ The administration console shows information about all existing schemas, predefi
 
 If you need your own custom attributes, for users or groups, you can define your own custom schema, and once the schema is defined, the custom attributes that it defines can be used.
 
-To be used, the custom attributes must be assigned to the user first. For more information, see [Attributes with Default Values](attributes-with-default-values-a2f1e46.md).
+To be used, the custom attributes must be assigned to the user first. For more information, see [Configuring Attributes Based on Flexible Expressions](configuring-attributes-based-on-flexible-expressions-a2f1e46.md).
 
 > ### Note:  
-> When the attributes are assigned to a user, they can be sent to the application. For more information, see [User Attributes Sent to the Application](user-attributes-sent-to-the-application-d361407.md).
+> When the attributes are assigned to a user, they can be sent to the application. For more information, see [Configuring User Attributes from the Identity Directory](configuring-user-attributes-from-the-identity-directory-d361407.md).
 
 You can define a schema either by importing a JSON file, which must comply with the SCIM standard, or by creating it manually via the administration console.
 

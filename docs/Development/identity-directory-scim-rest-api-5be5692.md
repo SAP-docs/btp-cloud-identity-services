@@ -6,8 +6,16 @@ Manage users, groups and custom schemas in the cloud.
 
 
 
-> ### Note:  
+> ### Remember:  
 > The API is available on the SAP Business Accelerator Hub: [Identity Directory Service](https://api.sap.com/api/IdDS_SCIM/overview)
+
+
+
+<a name="loio5be569254a3246b18348e35ffc6b11a7__section_lp4_rwx_kzb"/>
+
+## Prerequisites
+
+To call the methods of this SCIM REST API you must have a system as administrator with an assigned *Manage Users* role. For more details about how to add a system as administrator and assign administrator roles, see [Add System as Administrator](../Operation-Guide/add-administrators-bbbdbdd.md#loiocefb742a36754b18bbe5c3503ac6d87c), and [Edit Administrator Authorizations](../Operation-Guide/edit-administrator-authorizations-86ee374.md).
 
 **Related Information**  
 

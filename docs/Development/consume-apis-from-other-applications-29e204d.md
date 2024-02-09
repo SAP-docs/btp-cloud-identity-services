@@ -116,8 +116,6 @@ The administrator must ensure that the two applications can share the APIs betwe
 
 5.  Check that the API is listed or enter the required data.
 
-    For more information, see [Reference Information for the Identity Service of SAP BTP](../Integrating-the-Service/reference-information-for-the-identity-service-of-sap-btp-9379444.md).
-
     > ### Caution:  
     > The API name must match exactly what is expected by any consumer applications. The name must be unique within all APIs provided by the same provider application. Consumer applications use this name to determine if their application has the rights to access the provider application.
     > 

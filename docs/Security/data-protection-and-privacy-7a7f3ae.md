@@ -10,5 +10,5 @@ Governments place legal requirements on industry to protect data and privacy. We
 Handle personal data with care. You as the data controller are legally responsible when processing personal data. It is not permitted to deal with sensitive personal data in Identity Authentication.
 
 > ### Remember:  
-> Custom attributes must not be used to store sensitive personal data. For more information, see [User Attributes Sent to the Application](../Operation-Guide/user-attributes-sent-to-the-application-d361407.md).
+> Custom attributes must not be used to store sensitive personal data. For more information, see [Configuring User Attributes from the Identity Directory](../Operation-Guide/configuring-user-attributes-from-the-identity-directory-d361407.md).
 
