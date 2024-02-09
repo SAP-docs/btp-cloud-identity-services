@@ -25,6 +25,8 @@ You can add both a person and a system in the administration console to act as a
 
 [Configure Authorizations Based on Policies](configure-authorizations-based-on-policies-08fea39.md "Enable admin authorizations based on policies to configure a granular access control for the administrators of SAP Cloud Identity Services.")
 
+[Add Administrators via SAP for Me](https://support.sap.com/content/s4m/help/systems/systems/details/ias.html)
+
 <a name="loio1dc498bff0674743a1a3a0ec3f0bf298"/>
 
 <!-- loio1dc498bff0674743a1a3a0ec3f0bf298 -->
