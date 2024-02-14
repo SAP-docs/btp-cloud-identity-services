@@ -39,174 +39,169 @@ To configure a source system, follow the steps below:
 
 3.  Press the *Create* button on the left-hand panel to add a new source system to the list.
 
-4.  Make the corresponding entries in the configuration for the target system you want to create:
-
-    -   *Source System*
-
-        **Source System**
+4.  Under *Configuration*, make the corresponding entries in the configuration for the target system you want to create:
 
 
-        <table>
-        <tr>
-        <th valign="top">
+    <table>
+    <tr>
+    <th valign="top">
 
-        Configuration
-        
-        </th>
-        <th valign="top">
+    Configurations
+    
+    </th>
+    <th valign="top">
 
-        Description
-        
-        </th>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-        *Display Name*
-        
-        </td>
-        <td valign="top">
-        
-        \(optional\) The name of the configuration.
-        
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-        *Type*
-        
-        </td>
-        <td valign="top">
-        
-        Select the *SuccessFactors* type.
-        
-        </td>
-        </tr>
-        </table>
-        
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Display Name*
+    
+    </td>
+    <td valign="top">
+    
+    The name of the configuration.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Type*
+    
+    </td>
+    <td valign="top">
+    
+    Select the *SuccessFactors* type.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Company ID*
+    
+    </td>
+    <td valign="top">
+    
+    The company of the source system.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Password Validation URL*
+    
+    </td>
+    <td valign="top">
+    
+    The URL endpoint for validation of the users name and password. It can be provided by the source system administrator.
 
-    -   *Configuration*
+    > ### Note:  
+    > The URl must have the following pattern: `https://<SuccessFactors_API_Host>/odata/v2/restricted/validateUser`.
+    > 
+    > Replace the host `<SuccessFactors_API_host>` with the Authentication URL host from the [SAP SuccessFactors Data Centers Mapping to Authentication URL](sap-successfactors-data-centers-mapping-to-authentication-url-f38bb6b.md) document.
+    > 
+    > Plain HTTP is supported for testing purposes only. Make sure that you use the encrypted HTTPS protocol for productive systems.
+    > 
+    > For more information about the mapping between theSAP SuccessFactors data centers and the password validation URL, see [SAP SuccessFactors Data Centers Mapping to Authentication URL](sap-successfactors-data-centers-mapping-to-authentication-url-f38bb6b.md).
+
+    > ### Remember:  
+    > If you choose the *X.509* certificate as your *Authentication Type*, you'll need to add ".cert" after the subdomain part of the URL. For example:
+    > 
+    > `https://exampleapi.cert.sapsf.com/odata/v2/restricted/validateUser`.
 
 
-        <table>
-        <tr>
-        <th valign="top">
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    -   *Authentication Type*
 
-        Configurations
-        
-        </th>
-        <th valign="top">
 
-        Description
-        
-        </th>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-        *Company ID*
-        
-        </td>
-        <td valign="top">
-        
-        The company of the source system.
-        
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-        *Password Validation URL*
-        
-        </td>
-        <td valign="top">
-        
-        The URL endpoint for validation of the users name and password. It can be provided by the source system administrator.
+    
+    </td>
+    <td valign="top">
+    
+    Choose:
+
+    -   *Basic* - provide *Technical User* and *Technical User Secret*:
+
+        *Technical User*
+
+        Technical user added in the source system that has administrator permissions to access the OData API. It can be provided by the external source system administrator.
+
+        For more information of the permission settings of the user, see [Granting Permissions to API User](https://help.sap.com/viewer/0377d826832f445e82d09fdac7228f34/latest/en-US/650350ce2e274ee5b1f19c8cb3b1531d.html).
+
+        *Technical User Secret*
+
+        Password set on the technical user. It can be provided by the source system administrator.
+
+        > ### Tip:  
+        > For productive systems, we recommend that you use passwords that are difficult to be guessed.
+
+    -   *X.509*
+
+        Enter CN for the certificate in the provided field.
+
+        Once the certificate is generated, you can view its details. The validity of the certificate is 1 year.
 
         > ### Note:  
-        > The URl must have the following pattern: `https://<SuccessFactors_API_Host>/odata/v2/restricted/validateUser`.
-        > 
-        > Replace the host `<SuccessFactors_API_host>` with the Authentication URL host from the [SAP SuccessFactors Data Centers Mapping to Authentication URL](sap-successfactors-data-centers-mapping-to-authentication-url-f38bb6b.md) document.
-        > 
-        > Plain HTTP is supported for testing purposes only. Make sure that you use the encrypted HTTPS protocol for productive systems.
-        > 
-        > For more information about the mapping between theSAP SuccessFactors data centers and the password validation URL, see [SAP SuccessFactors Data Centers Mapping to Authentication URL](sap-successfactors-data-centers-mapping-to-authentication-url-f38bb6b.md).
+        > You can choose the option for automatic regeneration of the certificate by selecting the *Automatic Renewal* checkbox. Two weeks before the expiry of the certificate, it is regenerated. The renewed certificate will have the same DN.
 
         > ### Remember:  
-        > If you choose the *X.509* certificate as your *Authentication Type*, you'll need to add ".cert" after the subdomain part of the URL. For example:
+        > If you choose the *X.509* certificate as your *Authentication Type*, you'll need to upload that certificate into SAP SuccessFactors to register Identity Authentication for incoming calls using *X.509* certificate-based authentication. Refer to [Upgrade to X.509 Certificate-Based Authentication for Incoming Calls](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/568fdf1f14f14fd089a3cd15194d19cc/2b8f220f51ce455da3f349ef851d264c.html) for the steps to complete the upload.
+
+        > ### Tip:  
+        > To create a *X.509* certificate to use it as *Authentication Type* for the source system:
         > 
-        > `https://exampleapi.cert.sapsf.com/odata/v2/restricted/validateUser`.
-
-
-        
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-        -   *Authentication Type*
-
-
-        
-        </td>
-        <td valign="top">
-        
-        Choose:
-
-        -   *Technical User*
-
-            Technical user added in the source system that has administrator permissions to access the OData API. It can be provided by the external source system administrator.
-
-            For more information of the permission settings of the user, see [Granting Permissions to API User](https://help.sap.com/viewer/0377d826832f445e82d09fdac7228f34/latest/en-US/650350ce2e274ee5b1f19c8cb3b1531d.html).
-
-            *Technical User Secret*
-
-            Password set on the technical user. It can be provided by the source system administrator.
-
-            > ### Tip:  
-            > For productive systems, we recommend that you use passwords that are difficult to be guessed.
-
-        -   *X.509*
-
-            Enter CN for the certificate in the provided field.
-
-            Once the certificate is generated, you can view its details. The validity of the certificate is 1 year.
-
-            > ### Note:  
-            > You can choose the option for automatic regeneration of the certificate by selecting the *Automatic Renewal* checkbox. Two weeks before the expiry of the certificate, it is regenerated. The renewed certificate will have the same DN.
-
-            > ### Remember:  
-            > If you choose the *X.509* certificate as your *Authentication Type*, you'll need to upload that certificate into SAP SuccessFactors to register Identity Authentication for incoming calls using *X.509* certificate-based authentication. Refer to [Upgrade to X.509 Certificate-Based Authentication for Incoming Calls](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/568fdf1f14f14fd089a3cd15194d19cc/2b8f220f51ce455da3f349ef851d264c.html) for the steps to complete the upload.
+        > 1.  Open the source system in the administration console.
+        > 
+        > 2.  Choose the :eyeglasses: under the *Actions* column.
+        > 3.  Copy content of the *X.509* certificate from the popup window.
+        > 4.  Create a `cer.` file in the following way:
+        > 
+        >     > ### Sample Code:  
+        >     > ```
+        >     > 
+        >     > -----BEGIN CERTIFICATE-----
+        >     > <Copied content of the X.509 certificate>
+        >     > -----END CERTIFICATE-----
+        >     > ```
 
 
 
-        
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-        *First Logon Behavior*
-        
-        </td>
-        <td valign="top">
-        
-        Choose if a user whose password doesn't meet the password policy requirements of the application must reset or change it after the first successful logon.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *First Logon Behavior*
+    
+    </td>
+    <td valign="top">
+    
+    Choose if a user whose password doesn't meet the password policy requirements of the application must reset or change it after the first successful logon.
 
-        -   *Change password* - The user will be presented a dialog to change their password. The new password must meet the current password policy.
+    -   *Change password* - The user will be presented a dialog to change their password. The new password must meet the current password policy.
 
-            This is the default choice.
+        This is the default choice.
 
-        -   *Reset password* - The user receives the reset password link by email.
+    -   *Reset password* - The user receives the reset password link by email.
 
 
-        
-        </td>
-        </tr>
-        </table>
-        
-
+    
+    </td>
+    </tr>
+    </table>
+    
 5.  Save your configuration.
 
     The system displays the message ***Source system <id of the system\> created***.

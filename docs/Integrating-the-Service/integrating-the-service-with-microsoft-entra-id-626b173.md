@@ -1,33 +1,33 @@
 <!-- loio626b17331b4d4014b8790d3aea70b240 -->
 
-# Integrating the Service with Microsoft Azure AD
+# Integrating the Service with Microsoft Entra ID
 
-Identity Authentication is part of the application gallery of Microsoft Azure Active Directory \(Azure AD\) under the name Identity Authentication.
+Identity Authentication is part of the application gallery of Microsoft Entra ID \(formerly known as Microsoft Azure Active Directory or Azure AD\) under the name Identity Authentication.
 
-This integration aims to provide single sign-on \(SSO\) between applications using Azure AD as authenticating identity provider and applications using Identity Authentication as proxy identity provider.
+This integration aims to provide single sign-on \(SSO\) between applications using Microsoft Entra ID as authenticating identity provider and applications using Identity Authentication as proxy identity provider.
 
 
 
 ## Prerequisites
 
--   You have a valid Azure AD subscription.
+-   You have a valid Microsoft Entra ID subscription.
 -   You have a subscription for Identity Authentication. For more information how to get Identity Authentication, see [Initial Setup](../initial-setup-31af7da.md).
 
 
 
 ## Overview
 
-In this scenario Identity Authentication acts as a proxy identity provider and Azure AD as the main authentication authority for the applications. The authentication requests sent to Identity Authentication are redirected to Azure AD. User management and authentication is done on Azure AD side.
+In this scenario Identity Authentication acts as a proxy identity provider and Microsoft Entra ID as the main authentication authority for the applications. The authentication requests sent to Identity Authentication are redirected to Microsoft Entra ID. User management and authentication is done on Microsoft Entra ID side.
 
 > ### Note:  
-> Users who are in the Azure AD user store can use the single sign-on \(SSO\) functionality.
+> Users who are in the Microsoft Entra ID user store can use the single sign-on \(SSO\) functionality.
 > 
-> Users who are provisioned to Identity Authentication, but not to Azure AD, are not able to log on.
+> Users who are provisioned to Identity Authentication, but not to Microsoft Entra ID, are not able to log on.
 
 > ### Tip:  
 > Identity Authentication supports the *Identity Federation* option. This option allows the application to check if the users authenticated by the corporate identity provider exist in the user store of Identity Authentication. In the default setting, the *Identity Federation* option is disabled. If *Identity Federation* is enabled, only the users that are imported in Identity Authentication are able to access the application. For more information about how to enable or disable *Identity Federation* with Identity Authentication, see **Enable Identity Federation with Identity Authentication** in [Configure Identity Federation](../Operation-Guide/configure-identity-federation-c029bbb.md).
 
-For this scenario, the configurations are made in Azure classic portal and in the administration console for SAP Cloud Identity Services.
+For this scenario, the configurations are made in Microsoft Entra ID classic portal and in the administration console for SAP Cloud Identity Services.
 
 **Related Information**  
 

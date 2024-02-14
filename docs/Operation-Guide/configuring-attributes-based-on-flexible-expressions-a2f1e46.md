@@ -1090,12 +1090,12 @@ For example, you have defined the `mail` user attribute and at the same time the
     > > 				<Attribute Name="Phone"> <AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
     > >                                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     > >                                 xsi:type="xs:string"
-    > >                                 >+49 Corporate Phone</AttributeValue>
+    > >                                 >+49 123 456789 Corporate Phone</AttributeValue>
     > > </Attribute>
     > > 
     > > OpenID Connect
     > > 
-    > > "Phone": "+49 Corporate Phone"
+    > > "Phone": "+49 123 456789 Corporate Phone"
     > > ```
 
 

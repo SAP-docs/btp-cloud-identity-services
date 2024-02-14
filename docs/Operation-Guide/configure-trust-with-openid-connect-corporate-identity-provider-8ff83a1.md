@@ -334,7 +334,7 @@ Configure the corporate identity provider in the administration console for SAP 
     You can have up to 20 scopes. The `openid` scope is added by default. Each scope can have a length of up to 99 characters.
 
     > ### Tip:  
-    > If you are using Azure Active Directory \(Azure AD\) as corporate identity provider, the recommended claims are:
+    > If you are using Microsoft Entra ID as corporate identity provider, the recommended claims are:
     > 
     > -   openid
     > -   email

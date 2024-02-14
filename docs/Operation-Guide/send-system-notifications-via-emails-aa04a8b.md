@@ -2,7 +2,7 @@
 
 # Send System Notifications via Emails
 
-You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.
+You can configure the administration console to send emails with information about expiring certificates, system notifications, new administrators, and new applications to specific email addresses or to the emails of all administrators.
 
 
 
@@ -21,6 +21,7 @@ The tenant administrator can configure the system to send emails to administrato
 -   *Expiring Certificates* - an email is sent 30 days, 14 days, and 3 days before the certificate expires
 -   *System Notifications* - an email is sent the day after the notification is created
 -   *New Administrators* - an email is sent right after the administrator is created
+-   *New Applications* - an email is sent right after the application is created
 
 > ### Remember:  
 > It takes 2 minutes for the configuration changes to take place.

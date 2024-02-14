@@ -41,9 +41,9 @@ To view the audit logs, follow the procedures below:
 
 1.  In the SAP BTP cockpit, navigate to the corresponding subaccount. For more information, see [Navigate in the Cockpit.](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/0874895f1f78459f9517da55a11ffebd.html)
 
-2.  In the navigation area on the left, choose *Entitlements*. Then choose *Configure Entitlements* \> *Add Service Plans*.
+2.  In the navigation area on the left, choose *Entitlements*, then choose *Edit* \> *Add Service Plans*.
 
-3.  From the dialog, search for and select *Audit Log Viewer*, select the *free* checkbox, and then choose *Add 1 service plan*.
+3.  From the dialog, search for and select *Audit Log Viewer Service*, select the *free \(Application\)* checkbox, and then choose *Add 1 service plan*.
 
 4.  Save your changes.
 
@@ -62,11 +62,11 @@ To view the audit logs, follow the procedures below:
 
 1.  In the SAP BTP cockpit, navigate to the corresponding subaccount. For more information, see [Navigate in the Cockpit.](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/0874895f1f78459f9517da55a11ffebd.html)
 
-2.  Navigate to *Services* \> *Service Marketplace*, and select *Audit Log Viewer*.
+2.  Navigate to *Services* \> *Service Marketplace*, and select *Audit Log Viewer Service*.
 
 3.  Choose *Create*.
 
-    In the *New Instance or Subscription* dialog box, `Audit Log Viewer` for *Service*, and `free` for *Plan* are already preselected.
+    In the *New Instance or Subscription* dialog box, `Audit Log Viewer Service` for *Service*, and `free` for *Plan* are already preselected.
 
 4.  Choose *Create* and close the information message.
 
@@ -120,7 +120,7 @@ To view the audit logs, follow the procedures below:
 
 2.  Choose the *Audit and Change Logs* tile.
 
-3.  Choose the *Audit Logs* tab.
+3.  Choose the *Cloud Foundry* tab.
 
 4.  Choose *Add*.
 

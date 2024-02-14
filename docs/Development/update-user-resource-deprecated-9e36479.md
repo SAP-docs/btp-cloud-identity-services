@@ -146,9 +146,6 @@ Attributes are case-sensitive and only the exact case must be used.
 
 -   `companyRelationship`
 
-    > ### Note:  
-    > If the `userType` attribute is provided and has one of the values `Customer`, `Employee`, or `Partner`, the `companyRelationship` attribute value is overwritten and takes the same value as the `userType` attribute.
-
 -   `department`
 
 -   `corporateGroups`

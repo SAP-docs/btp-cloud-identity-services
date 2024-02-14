@@ -37,154 +37,130 @@ To configure a source system, follow the steps below:
 
 3.  Press the *Create* button on the left-hand panel to add a new source system to the list.
 
-4.  Make the corresponding entries in the configuration for the target system you want to add:
-
-    -   *Source System*
-
-        **Source System**
+4.  Under *Configuration*, make the corresponding entries in the configuration for the target system you want to add:
 
 
-        <table>
-        <tr>
-        <th valign="top">
+    <table>
+    <tr>
+    <th valign="top">
 
-        Configuration
-        
-        </th>
-        <th valign="top">
+    Configurations
+    
+    </th>
+    <th valign="top">
 
-        Description
-        
-        </th>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-        *Display Name*
-        
-        </td>
-        <td valign="top">
-        
-        \(optional\) The name of the configuration.
-        
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-        *Type*
-        
-        </td>
-        <td valign="top">
-        
-        Select the *Learning Management System* type.
-        
-        </td>
-        </tr>
-        </table>
-        
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Display Name*
+    
+    </td>
+    <td valign="top">
+    
+    The name of the configuration.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Type*
+    
+    </td>
+    <td valign="top">
+    
+    Select the *Learning Management System* type.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *System ID*
+    
+    </td>
+    <td valign="top">
+    
+    The ID of the source system.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Password Validation URL*
+    
+    </td>
+    <td valign="top">
+    
+    The URL endpoint for validation of the users name and password. It is automatically generated and has the following pattern: `https://<lms-system-id>.plateau.com/learning/rest/integrated/admin/Learner.svc/ias/v1/~validateCredentials`
 
-    -   *Configuration*
+    The *Password Validation URL* can be provided also by the source system administrator. It must have the following pattern: `https://<lms-system-id>.plateau.com/learning/rest/integrated/admin/Learner.svc/ias/v1/~validateCredentials`
 
+    Plain HTTP is supported for testing purposes only. Make sure that you use the encrypted HTTPS protocol for productive systems.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Authentication Type*
+    
+    </td>
+    <td valign="top">
+    
+    Choose:
 
-        <table>
-        <tr>
-        <th valign="top">
+    -   *Basic* - provide *Technical User* and *Technical User Secret*:
 
-        Configurations
-        
-        </th>
-        <th valign="top">
+        *Technical User*
 
-        Description
-        
-        </th>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-        *System ID*
-        
-        </td>
-        <td valign="top">
-        
-        The ID of the source system.
-        
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-        *Password Validation URL*
-        
-        </td>
-        <td valign="top">
-        
-        The URL endpoint for validation of the users name and password. It is automatically generated and has the following pattern: `https://<lms-system-id>.plateau.com/learning/rest/integrated/admin/Learner.svc/ias/v1/~validateCredentials`
+        Technical user added in the source system that has administrator permissions to access the OData API. It can be provided by the external source system administrator.
 
-        The *Password Validation URL* can be provided also by the source system administrator. It must have the following pattern: `https://<lms-system-id>.plateau.com/learning/rest/integrated/admin/Learner.svc/ias/v1/~validateCredentials`
+        *Technical User Secret*
 
-        Plain HTTP is supported for testing purposes only. Make sure that you use the encrypted HTTPS protocol for productive systems.
-        
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-        *Authentication Type*
-        
-        </td>
-        <td valign="top">
-        
-        Choose:
+        Secret set on the technical user. It can be provided by the source system administrator.
 
-        -   *Basic* - provide *Technical User* and *Technical User Secret*:
+        > ### Tip:  
+        > For productive systems, we recommend that you use passwords that are difficult to be guessed.
 
-            *Technical User*
+    -   *X.509*
 
-            Technical user added in the source system that has administrator permissions to access the OData API. It can be provided by the external source system administrator.
+        Enter CN for the certificate in the provided field.
 
-            *Technical User Secret*
+        Once the certificate is generated, you can view its details. The validity of the certificate is one year.
 
-            Secret set on the technical user. It can be provided by the source system administrator.
-
-            > ### Tip:  
-            > For productive systems, we recommend that you use passwords that are difficult to be guessed.
-
-        -   *X.509*
-
-            Enter CN for the certificate in the provided field.
-
-            Once the certificate is generated, you can view its details. The validity of the certificate is one year.
-
-            > ### Note:  
-            > You can choose the option for automatic regeneration of the certificate by selecting the *Automatic Renewal* checkbox. Two weeks before the expiry of the certificate, it will be regenerated. The renewed certificate will have the same DN.
+        > ### Note:  
+        > You can choose the option for automatic regeneration of the certificate by selecting the *Automatic Renewal* checkbox. Two weeks before the expiry of the certificate, it will be regenerated. The renewed certificate will have the same DN.
 
 
 
-        
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-        *First Logon Behavior*
-        
-        </td>
-        <td valign="top">
-        
-        Choose:
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *First Logon Behavior*
+    
+    </td>
+    <td valign="top">
+    
+    Choose:
 
-        -   if a user whose password does not meet the password policy requirements of the application must reset or change it after the first successful logon.
-        -   if a user whose LMS password is expired must reset or change it after the first successful logon.
+    -   if a user whose password does not meet the password policy requirements of the application must reset or change it after the first successful logon.
+    -   if a user whose LMS password is expired must reset or change it after the first successful logon.
 
-        The default choice is *Change password*.
-        
-        </td>
-        </tr>
-        </table>
-        
-
+    The default choice is *Change password*.
+    
+    </td>
+    </tr>
+    </table>
+    
 5.  Save your configuration.
 
     The system displays the message ***Source system <id of the system\> created***.

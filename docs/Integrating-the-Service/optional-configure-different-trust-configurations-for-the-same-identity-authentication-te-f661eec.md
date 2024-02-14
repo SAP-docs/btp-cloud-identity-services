@@ -1,8 +1,8 @@
 <!-- loiof661eecaad7147afa43a48b23fb4defe -->
 
-# \(Optional\) Configure Different Trust Configurations for the Same Identity Authentication Tenant \(Azure AD Apps\)
+# \(Optional\) Configure Different Trust Configurations for the Same Identity Authentication Tenant \(Microsoft Entra ID Apps\)
 
-Configure issuer name on Identity Authentication and update the name and certificate on Azure AD side.
+Configure issuer name on Identity Authentication and update the name and certificate on Microsoft Entra ID side.
 
 
 
@@ -10,22 +10,22 @@ Configure issuer name on Identity Authentication and update the name and certifi
 
 ## Context
 
-When Identity Authentication acts as a proxy identity provider you can have different trust configurations for the different applications at Azure AD side, acting as a corporate identity provider. To do this you should configure Identity Authentication to use a different issuer name when communicating with Azure AD, depending on the application for which the authentication is done.
+When Identity Authentication acts as a proxy identity provider you can have different trust configurations for the different applications at Microsoft Entra ID side, acting as a corporate identity provider. To do this you should configure Identity Authentication to use a different issuer name when communicating with Microsoft Entra ID, depending on the application for which the authentication is done.
 
-When Identity Authentication issues a SAML2.0 authentication request, logout request or response to Azure AD, then it uses the configured issuer name for the corresponding application.
+When Identity Authentication issues a SAML2.0 authentication request, logout request or response to Microsoft Entra ID, then it uses the configured issuer name for the corresponding application.
 
-When Identity Authentication verifies the SAML2.0 message coming from Azure AD, then the verification is done against the configured issuer for the corresponding application.
+When Identity Authentication verifies the SAML2.0 message coming from Microsoft Entra ID, then the verification is done against the configured issuer for the corresponding application.
 
-The configuration is done both in Identity Authentication and Azure AD.
+The configuration is done both in Identity Authentication and Microsoft Entra ID.
 
 > ### Example:  
 > ![](images/Azure_Issuer_Name_2a496c1.png)
 > 
 > Identity Authentication acts as identity provider proxy and there are two configured applications app1 and app2. App1 is configured with `issuer=https://tenant.accounts.ondemand.com/app1`. App2 is configured with `issuer=https://tenant.accounts.ondemand.com/app2`. Both applications use one and the same corporate identity provider for authentication.
 > 
-> When App1 issues an authentication request to Identity Authentication, then Identity Authentication sends authentication request to Azure AD, using `issuer=https://tenant.accounts.ondemand.com/app1`. Azure AD authenticates the user and sends authentication response with `audience=https://tenant.accounts.ondemand.com/app1`. Then Identity Authentication sends authentication response to app1.
+> When App1 issues an authentication request to Identity Authentication, then Identity Authentication sends authentication request to Microsoft Entra ID, using `issuer=https://tenant.accounts.ondemand.com/app1`. Microsoft Entra ID authenticates the user and sends authentication response with `audience=https://tenant.accounts.ondemand.com/app1`. Then Identity Authentication sends authentication response to app1.
 > 
-> After that, the same user tries to authenticate to app2 from the same browser session. App2 issues an authentication request to Identity Authentication. Then Identity Authentication again sends authentication request to Azure AD, but this time with `issuer=https://tenant.accounts.ondemand.com/app2`. Thus, Azure AD can apply the specific authentication mechanisms, configured for `issuer=https://tenant.accounts.ondemand.com/app2`. After the authentication,Azure AD issues an authentication response with `audience=https://tenant.accounts.ondemand.com/app2`. Then Identity Authentication sends authentication response to app2.
+> After that, the same user tries to authenticate to app2 from the same browser session. App2 issues an authentication request to Identity Authentication. Then Identity Authentication again sends authentication request to Microsoft Entra ID, but this time with `issuer=https://tenant.accounts.ondemand.com/app2`. Thus, Microsoft Entra ID can apply the specific authentication mechanisms, configured for `issuer=https://tenant.accounts.ondemand.com/app2`. After the authentication,Microsoft Entra ID issues an authentication response with `audience=https://tenant.accounts.ondemand.com/app2`. Then Identity Authentication sends authentication response to app2.
 
 <a name="task_h2w_b5r_f4b"/>
 
@@ -61,7 +61,7 @@ The configuration is done both in Identity Authentication and Azure AD.
 
 <!-- task\_vbd\_b5r\_f4b -->
 
-## 2. Configure Azure AD
+## 2. Configure Microsoft Entra ID
 
 
 
@@ -70,9 +70,9 @@ The configuration is done both in Identity Authentication and Azure AD.
 ## Context
 
 > ### Note:  
-> If you want to register Identity Authentication tenant more than once in Azure AD, you must configure issuer name per Identity Authentication application and change the name and certificate on Azure AD side.
+> If you want to register Identity Authentication tenant more than once in Microsoft Entra ID, you must configure issuer name per Identity Authentication application and change the name and certificate on Microsoft Entra ID side.
 > 
-> You have to change the certificates, because by default Azure AD generates application specific certificates. On Identity Authentication side there is one corporate identity provider with one certificate which means that all applications on Azure AD side for the same Identity Authentication tenant should use the same certificate for SAML 2.0.
+> You have to change the certificates, because by default Microsoft Entra ID generates application specific certificates. On Identity Authentication side there is one corporate identity provider with one certificate which means that all applications on Microsoft Entra ID side for the same Identity Authentication tenant should use the same certificate for SAML 2.0.
 
 
 
@@ -80,11 +80,11 @@ The configuration is done both in Identity Authentication and Azure AD.
 
 ## Procedure
 
-1.  Create Azure AD applications.
+1.  Create Microsoft Entra ID applications.
 
 2.  Update the issuer names.
 
-3.  Generate a certificate with a private key for the Azure applications.
+3.  Generate a certificate with a private key for the Microsoft Entra ID applications.
 
     You can generate a certificate with a private key using OpenSSL with the following command:
 
@@ -100,7 +100,7 @@ The configuration is done both in Identity Authentication and Azure AD.
 
     The commands are executed in the MS Windows or Mac OS Terminal.
 
-5.  Import the generated certificate to your Azure AD applications.
+5.  Import the generated certificate to your Microsoft Entra ID applications.
 
 
 

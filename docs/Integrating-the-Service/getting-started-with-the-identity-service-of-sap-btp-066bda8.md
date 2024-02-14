@@ -14,7 +14,7 @@ To create OpenID Connect \(OIDC\) applications in the Identity Authentication se
 
     For more information, see [Establish Trust and Federation Between UAA and Identity Authentication Service](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/161f8f0cfac64c4fa2d973bc5f08a894.html).
 
--   You've prepared your application to consume services of SAP BTP
+-   You've prepared your application to consume the services of SAP BTP
 
     For more information, see [Consuming Services in Other Environments Using the Service Management Instances](https://help.sap.com/viewer/09cc82baadc542a688176dce601398de/Cloud/en-US/0714ac254e83492281d95e25548b388c.html).
 
@@ -104,9 +104,6 @@ In the following procedure, we provide the syntax using the Cloud Foundry comman
     Use the approuter to authenticate the user. Otherwise, authenticate the user in the application code, according to the OIDC specification using information from service binding \(URL, client credentials\). For more information, see:
 
     -   [@sap/approuter](https://www.npmjs.com/package/@sap/approuter) at *npm*.
-
-        > ### Note:  
-        > Application router support for the Identity service is currently in beta.
 
     -   [Basic Client Implementer's Guide](https://openid.net/specs/openid-connect-basic-1_0.html) at *OpenID*.
 

@@ -9,7 +9,7 @@ Tenant administrator can configure the issuer name in the request sent to the co
 ## Context
 
 > ### Note:  
-> To configure Identity Authentication to use a different issuer name when communicating with Microsoft Azure Active Directory \(Azure AD\), see [\(Optional\) Configure Different Trust Configurations for the Same Identity Authentication Tenant \(Azure AD Apps\)](../Integrating-the-Service/optional-configure-different-trust-configurations-for-the-same-identity-authentication-te-f661eec.md).
+> To configure Identity Authentication to use a different issuer name when communicating with Microsoft Entra ID \(formerly known as Microsoft Azure Active Directory or Azure AD\), see [\(Optional\) Configure Different Trust Configurations for the Same Identity Authentication Tenant \(Microsoft Entra ID Apps\)](../Integrating-the-Service/optional-configure-different-trust-configurations-for-the-same-identity-authentication-te-f661eec.md).
 
 When Identity Authentication acts as a proxy identity provider you can have different trust configurations for the different applications at the corporate identity provider side. To do this you should configure Identity Authentication to use a different issuer name when communicating with the corporate identity provider, depending on the application for which the authentication is done.
 
@@ -62,5 +62,5 @@ When Identity Authentication verifies the SAML2.0 message coming from the corpor
 
 [Configure Authentication Context](configure-authentication-context-028cee2.md "Tenant administrator can configure the authentication context in the request sent to the corporate identity providers when Identity Authentication acts as a proxy identity provider.")
 
-[\(Optional\) Configure Different Trust Configurations for the Same Identity Authentication Tenant \(Azure AD Apps\)](../Integrating-the-Service/optional-configure-different-trust-configurations-for-the-same-identity-authentication-te-f661eec.md "Configure issuer name on Identity Authentication and update the name and certificate on Azure AD side.")
+[\(Optional\) Configure Different Trust Configurations for the Same Identity Authentication Tenant \(Microsoft Entra ID Apps\)](../Integrating-the-Service/optional-configure-different-trust-configurations-for-the-same-identity-authentication-te-f661eec.md "Configure issuer name on Identity Authentication and update the name and certificate on Microsoft Entra ID side.")
 

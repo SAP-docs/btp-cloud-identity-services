@@ -303,9 +303,6 @@ The create user resource method of the Identity Authentication implementation of
 
 -   `companyRelationship`
 
-    > ### Note:  
-    > If the `userType` attribute is provided and has one of the values *Customer*, *Employee*, or *Partner*, the `companyRelationship` attribute value is overwritten and takes the same value as the `userType` attribute.
-
 -   `department`
 
 -   `corporateGroups`

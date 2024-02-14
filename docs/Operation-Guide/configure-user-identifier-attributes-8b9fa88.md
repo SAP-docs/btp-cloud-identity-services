@@ -131,7 +131,14 @@ No/Configurable
 > ### Caution:  
 > The `User ID` and `Login Name` identifiers of a user can't have values that are equal to the `User ID`, `Email`, `Login Name`, `Display Name`, and `Phone` identifiers of another user.
 > 
-> When `Email`, `Display Name`, or `Phone` identifiers of a user are set as unique they can't have values that are equal to the `User ID`, `Email`, `Login Name`, `Display Name`, and `Phone` identifiers of another user.
+> When `Email` or `Phone` identifiers of a user are set as unique they can't have values that are equal to the `User ID`, `Email`, `Login Name`, `Display Name`, and `Phone` identifiers of another user.
+
+> ### Remember:  
+> If the `DisplayName` is edited via the profile page, consider the following:
+> 
+> -   When the `Display Name` identifier of a user is set as unique it can't have values that are equal to the `User ID`, `Global User ID`, `Email`, `Display Name`, `Login Name`, and `Employee Number` identifiers of another user.
+> 
+> -   When the `Display Name` identifier of a user is set as non-unique it can't have values equal to the `User ID`, `Global User ID`, `Email`, `Login Name`, and `Employee Number` identifiers of another user.
 
 > ### Note:  
 > The `Display Name` user identifier for the tenants created before the system upgrade on May 13, 2020 is configured as required and unique.
@@ -223,7 +230,7 @@ Unique
 -   admin can create more than one user with one and the same email in the admin console
 -   `emails.value` attribute may not be unique if provided when a user is created via SCIM REST API
 -   email, if required, may not be unique when an update of the account is triggered
--   users with nonunique emails can't change their password via the *Forgot Password* process using the email as identifier
+-   users with non-unique emails can't change their password via the *Forgot Password* process using the email as identifier
 -   end-user screen texts differ from the actual tenant configuration; admin can change the tenant texts to match the configuration
 -   user import is not supported
 
@@ -321,7 +328,7 @@ Choose the allowed logon identifiers for the users. For more information, see [C
 
 [Send Security Alert Emails](send-security-alert-emails-c977464.md "Send security alert emails to end-users or administrators when changes in their accounts are made.")
 
-[Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications and new administrators to specific email addresses or to the emails of all administrators.")
+[Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications, new administrators, and new applications to specific email addresses or to the emails of all administrators.")
 
 [Configure Customer-Controlled Encryption Keys in Administration Console \(Restricted Availability\)](configure-customer-controlled-encryption-keys-in-administration-console-restricted-availa-fe6e30c.md "")
 

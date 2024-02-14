@@ -1,21 +1,21 @@
 <!-- loio434a207df6ff4a12923b8f9c5dcff041 -->
 
-# Configure Microsoft Azure AD as Corporate Identity Provider at Identity Authentication
+# Configure Microsoft Entra ID as Corporate Identity Provider at Identity Authentication
 
-Create and configure Azure AD as a corporate identity provider in the administration console for SAP Cloud Identity Services.
+Create and configure Microsoft Entra ID as a corporate identity provider in the administration console for SAP Cloud Identity Services.
 
 
 
 ## Prerequisites
 
 -   You have a subscription for Identity Authentication. For more information how to get Identity Authentication, see [Initial Setup](../initial-setup-31af7da.md).
--   You have configured Microsoft Azure AD.
+-   You have configured Microsoft Entra ID.
 
 
 
 ## Context
 
-To use Identity Authentication as a proxy, create, and configure Azure AD as a corporate identity provider in the administration console for SAP Cloud Identity Services. This corporate identity provider is used as an authenticating authority for the applications.
+To use Identity Authentication as a proxy, create, and configure Microsoft Entra ID as a corporate identity provider in the administration console for SAP Cloud Identity Services. This corporate identity provider is used as an authenticating authority for the applications.
 
 
 
@@ -27,14 +27,14 @@ To use Identity Authentication as a proxy, create, and configure Azure AD as a c
 
 2.  Under *Identity Providers*, choose the *Corporate Identity Providers* tile.
 
-3.  Choose the *Add* button to create an Azure AD corporate identity provider.
+3.  Choose the *Add* button to create an Microsoft Entra ID corporate identity provider.
 
     > ### Note:  
-    > If you have an Azure AD corporate identity provider in your list, choose it, and proceed with its configuration. Type the name of the identity provider in the search field to filter the list items.
+    > If you have an Microsoft Entra ID corporate identity provider in your list, choose it, and proceed with its configuration. Type the name of the identity provider in the search field to filter the list items.
 
 4.  Under *SAML 2.0*, choose *SAML 2.0 Configuration*.
 
-5.  Upload Azure AD metadata XML file or configure manually the following fields:
+5.  Upload Microsoft Entra ID metadata XML file or configure manually the following fields:
 
 
     <table>
@@ -101,7 +101,7 @@ To use Identity Authentication as a proxy, create, and configure Azure AD as a c
     </table>
     
     > ### Tip:  
-    > The information for the manual configuration is in the metadata XML file of Azure AD.
+    > The information for the manual configuration is in the metadata XML file of Microsoft Entra ID.
 
 
 

@@ -10,5 +10,5 @@ The JWT Bearer flow is used for token exchanges from a server application, where
 -   To authenticate with a token coming from a different identity provider \(IdP\) to an Identity Authentication token
 
 > ### Remember:  
-> If the `id_token` is issued by another OpenID Connect provider, like Azure for example, you must configure that provider as a corporate identity provider in the administration console of Identity Authentication. For more information, see [Configure Trust with OpenID Connect Corporate Identity Provider](configure-trust-with-openid-connect-corporate-identity-provider-8ff83a1.md).
+> If the `id_token` is issued by another OpenID Connect provider, like Microsoft Entra ID for example, you must configure that provider as a corporate identity provider in the administration console of Identity Authentication. For more information, see [Configure Trust with OpenID Connect Corporate Identity Provider](configure-trust-with-openid-connect-corporate-identity-provider-8ff83a1.md).
 

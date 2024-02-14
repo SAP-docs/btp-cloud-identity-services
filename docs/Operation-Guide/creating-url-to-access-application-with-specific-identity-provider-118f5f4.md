@@ -28,7 +28,7 @@ The link for IdP-Initiated SSO follows the pattern: `https://<tenant_ID>.account
 
 > ### Note:  
 > -   `sp` - Name of the SAML 2 service provider for which SSO is performed. The `sp_name` value of the parameter equals to the `Entity ID` of the service provider. This parameter is needed for Identity Authentication to know which service provider to redirect the user to after successful authentication.
-> -   The name of the corporate identity provider as configured in the administration console for SAP Cloud Identity Services.
+> -   `idp` - The name of the corporate identity provider as configured in the administration console for SAP Cloud Identity Services.
 > 
 >     When multiple identity providers are allowed for an application via conditional authentication, this parameter enables the client to determine which corporate identity provider to be used. Identity Authentication uses the `idp` to detect the correct corporate identity provider and redirect the request to it. The user authenticates against the corporate identity provider.
 

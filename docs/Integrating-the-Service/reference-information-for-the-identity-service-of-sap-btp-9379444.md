@@ -92,7 +92,7 @@ By default, the Identity Authentication service uses the instance ID generated b
 
 Integrates the SAP Cloud Identity Services - Authorization Management service, enabling instance-based authorizations for your application.
 
-For more information about developing applications with Authorization Management, see LINK.
+For more information about developing applications with Authorization Management, see [Developing Authorizations](../Development/developing-authorizations-22928a2.md).
 
 The `enabled` property is false by default. Set this value to true to create an instance of the service for your SAP Cloud Identity Services tenant.
 

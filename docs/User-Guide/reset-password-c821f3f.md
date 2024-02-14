@@ -8,11 +8,12 @@ If you don't know your current password, you can reset your password.
 
 ## Context
 
+> ### Remember:  
+> The information in this document is valid only for applications whose configuration include the **Forgot Password** process via the logon page. If you don’t see the *Forgot Password* link on the logon page, contact the system administrator of your application.
+
 If you don't know your current password, follow the *Forgot Password* link in the logon page of the application. You can choose to trigger the **Forgot Password** process, and to receive an email with instructions how to reset your password, or to answer security questions to reset your password.
 
 > ### Note:  
-> If you don’t see the *Forgot Password* link, contact the system administrator of your application.
-> 
 > The security questions possibility is optional and must be offered by the application.
 
 
@@ -32,9 +33,18 @@ If you don't know your current password, follow the *Forgot Password* link in th
     > ### Remember:  
     > To use this option, you must have configured the security questions section in your profile page.
 
-5.  **Optional:** Follow the link to reset your password using Pin code and provide the required information.
+5.  **Optional:** Follow the link to reset your password using PIN code and provide the required information.
 
     > ### Remember:  
     > To use this option, you must have configured the PIN code section in your profile page.
 
+
+
+
+## Example
+
+> ### Note:  
+> The example is just for illustration and may differ from your profile page.
+> 
+> ![](images/Forgot_Password_86bde48.png)
 

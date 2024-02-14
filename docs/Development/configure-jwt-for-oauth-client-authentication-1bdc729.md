@@ -86,7 +86,7 @@ Configure the issuer and subject of tokens for JSON Web Token \(JWT\) client aut
     The sub \(subject\) that is expected in the token.
 
     > ### Tip:  
-    > If you want to use an OAuth 2.0 token from Microsoft Azure AD as client credentials for an OpenID Connect application in Identity Authentication, and your OAuth client in Azure AD belongs to an Enterprise Application, the subject in the token is the Object ID of the Enterprise Application.
+    > If you want to use an OAuth 2.0 token from Microsoft Entra ID as client credentials for an OpenID Connect application in Identity Authentication, and your OAuth client in Microsoft Entra ID belongs to an Enterprise Application, the subject in the token is the Object ID of the Enterprise Application.
 
 
     

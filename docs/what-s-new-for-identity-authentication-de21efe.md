@@ -95,6 +95,138 @@ Identity Authentication
 </td>
 <td valign="top">
 
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2024-02-13
+
+</td>
+<td valign="top">
+
+2024-02-13
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Email Notifications
+
+</td>
+<td valign="top">
+
+SAP Cloud Identity Services can send emails with information about new applications to the tenant administrators. The notifications are also visible at the top-right corner of the administration console. See [Send System Notifications via Emails](Operation-Guide/send-system-notifications-via-emails-aa04a8b.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2024-02-13
+
+</td>
+<td valign="top">
+
+2024-02-13
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Off-Cycle Upgrade
 
 </td>

@@ -61,7 +61,7 @@ SAP Web IDE Full-Stack access is protected by permissions. To grant a user the p
 
 [Integrating the Service with SAP S/4HANA Cloud, SAP Integrated Business Planning and SAP Analytics Cloud](integrating-the-service-with-sap-s-4hana-cloud-sap-integrated-business-planning-and-sap-a-dd61aea.md "This integration document aims to provide information about single sign-on (SSO) options for SAP S/4HANA Cloud or SAP Integrated Business Planning and SAP Analytics Cloud, that use Identity Authentication as an authenticating or proxy identity provider.")
 
-[Integrating the Service with Microsoft Azure AD](integrating-the-service-with-microsoft-azure-ad-626b173.md "")
+[Integrating the Service with Microsoft Entra ID](integrating-the-service-with-microsoft-entra-id-626b173.md "")
 
 [Integrating the Service with SAP Task Center](integrating-the-service-with-sap-task-center-ab5e90e.md)
 

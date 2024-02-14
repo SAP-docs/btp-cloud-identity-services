@@ -26,7 +26,7 @@ SAP Analytics Cloud, is integreted in SAP S/4HANA Cloud or in SAP Integrated Bus
 
 [Integrating the Service with SAP Identity Management 8.0](integrating-the-service-with-sap-identity-management-8-0-f44f931.md "")
 
-[Integrating the Service with Microsoft Azure AD](integrating-the-service-with-microsoft-azure-ad-626b173.md "")
+[Integrating the Service with Microsoft Entra ID](integrating-the-service-with-microsoft-entra-id-626b173.md "")
 
 [Integrating the Service with SAP Task Center](integrating-the-service-with-sap-task-center-ab5e90e.md)
 

@@ -10,9 +10,9 @@ Propagate a user's logout to other applications and any corporate identity provi
 
 ## Context
 
-The service supports front-channel logout. You trigger a logout from your application by sending a logout request to the end session endpoint.
+The service supports front-channel logout. In a web session, the custom application triggers a logout from your application by sending a logout request to the end session endpoint of SAP Cloud Identity Services. The service also logs the user out of any other applications with which the user shares a session in the same web session.
 
-The service also logs the user out of any other applications with which the user shares a session. In addition, the service also notifies any configured corporate identity providers.
+In addition, the service also notifies any corporate identity providers that are involved in the related user sessions.
 
   
   

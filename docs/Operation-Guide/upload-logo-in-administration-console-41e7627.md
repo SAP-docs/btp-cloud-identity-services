@@ -14,7 +14,7 @@ You can upload a custom logo in the administration console by uploading an image
 
 3.  Choose *Add*.
 
-4.  Provide a name for the logo in the dialog and choose *\+Create*.
+4.  Provide a name for the logo in the dialog and choose *\+Add*.
 
 5.  To upload a logo, choose *Browse* and select an image with the required format.
 
