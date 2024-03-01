@@ -237,7 +237,7 @@ The default value is 43200 seconds, which translates to 12 hours.
 </td>
 <td valign="top">
 
-Determines the number of tokens that can be issued for the same session in parallel. Imagine you're logged on to the application through a web interface and a command-line interface in parallel. Then you would want this property to be set to 2. The value can range from 1 to 5.
+Determines the number of tokens that can be issued for the same session in parallel. Imagine you're logged on to the application through a web interface and a command-line interface in parallel. Then you would want this property to be set to 2. The value can range from 1 to 10.
 
 The default value is 1.
 
@@ -353,7 +353,7 @@ For more information about attributes for the subject name identifier, see [Conf
 
 An array of API names \(`name`\) and descriptions \(`description`\) which this application makes available for other applications to consume. The name can be any unique string of 32 characters. You can define a maximum of 20 APIs.
 
-For more information, see [Consume APIs from Other Applications](../Development/consume-apis-from-other-applications-29e204d.md).
+For more information, see [Consuming APIs from Other Applications](../Development/consuming-apis-from-other-applications-29e204d.md).
 
 </td>
 </tr>

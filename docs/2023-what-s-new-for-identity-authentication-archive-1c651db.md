@@ -1442,7 +1442,7 @@ In-App Help
 </td>
 <td valign="top">
 
-SAP Companion context-sensitive in-app help has been implemented in the administration console for SAP Cloud Identity Services. You can start the in-app help by selecting the <span class="SAP-icons"></span> *Help* control. The administration console provides *Help Topics*, *Guided Tours*, and *What's New* content. See [SAP Companion User Guide](https://help.sap.com/docs/SAP_ENABLE_NOW/46fcbeb139c4487ba713638cd75d1a19/6208110e6cac1014b670eace620bbd24.html?version=latest).
+SAP Companion context-sensitive in-app help has been implemented in the administration console for SAP Cloud Identity Services. You can start the in-app help by selecting the <span class="SAP-icons-V5"></span> *Help* control. The administration console provides *Help Topics*, *Guided Tours*, and *What's New* content. See [SAP Companion User Guide](https://help.sap.com/docs/SAP_ENABLE_NOW/46fcbeb139c4487ba713638cd75d1a19/6208110e6cac1014b670eace620bbd24.html?version=latest).
 
 </td>
 <td valign="top">

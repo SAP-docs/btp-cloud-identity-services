@@ -39,7 +39,7 @@ To configure a trusted X.509 certificate, proceed as follows:
 
 3.  Under *Authentication*, choose the *Trusted Certificate Configuration* list item.
 
-4.  Choose the *\+Add* button.
+4.  Choose the *Create* button.
 
 5.  Enter the name of the certificate.
 

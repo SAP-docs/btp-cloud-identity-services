@@ -71,7 +71,7 @@
 
 ## Overview
 
-In the IdP-Initiated single sign-on \(SSO\), the authentication starts at the identity provider \(IdP\). The user is first authenticated at the identity provider, and after that he or she is allowed to access the protected resource at the application \(\(service provider \(SP\)\).
+In the IdP-Initiated Single Sign-On \(SSO\), the authentication starts at the identity provider \(IdP\). The user is first authenticated at the identity provider, and after that he or she is allowed to access the protected resource at the application \(\(service provider \(SP\)\).
 
 ![](images/IdP-Initiated_SSO_c85c0aa.png)
 
@@ -162,14 +162,14 @@ The link for IdP-Initiated SSO follows the pattern: `https://<tenant_ID>.account
 > <td valign="top">
 > 
 > > ### Note:  
-> > You can choose by the index the correct ACS endpoint for unsolicited SAML response processing. Provide the `index` parameter when the default ACS endpoint which has been configured via the administration console cannot process unsolicited SAML responses.
+> > You can choose by the index the correct ACS endpoint for unsolicited SAML response processing. Provide the `index` parameter when the default ACS endpoint, which has been configured via the administration console can't process unsolicited SAML responses.
 > 
 > 
 > 
 > </td>
 > <td valign="top">
 > 
-> Enter the index number of the endpoint of the assertion consumer service of the service provider as the target of the SAML response. Otherwise the identity provider uses the default endpoint configured for the trusted service provider.
+> Enter the index number of the endpoint of the assertion consumer service of the service provider as the target of the SAML response. Otherwise, the identity provider uses the default endpoint configured for the trusted service provider.
 > 
 > A non-digit value or a value for an index entry that is not configured returns an error message.
 > 

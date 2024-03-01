@@ -66,7 +66,7 @@ Values
 <tr>
 <td valign="top">
 
-`Basic Authorization`
+`Authorization`
 
 </td>
 <td valign="top">
@@ -75,6 +75,8 @@ Yes
 
 </td>
 <td valign="top">
+
+`Basic`
 
 -   via application \(\(service provider \(SP\)\) Authentication certificate
 

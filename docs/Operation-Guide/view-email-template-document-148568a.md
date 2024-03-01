@@ -48,8 +48,8 @@ To view an email template, follow the procedure below:
 
 5.  View the file:
 
-    -   To view the plain text file, choose the plain text file icon <span class="SAP-icons"></span> next to the respective language version.
-    -   To view the HTML file, choose the HTML file icon <span class="SAP-icons"></span> next to the respective language version.
+    -   To view the plain text file, choose the plain text file icon <span class="SAP-icons-V5"></span> next to the respective language version.
+    -   To view the HTML file, choose the HTML file icon <span class="SAP-icons-V5"></span> next to the respective language version.
 
     The file opens in a new tab.
 

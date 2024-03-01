@@ -135,6 +135,196 @@ Identity Authentication
 </td>
 <td valign="top">
 
+2024-02-28
+
+</td>
+<td valign="top">
+
+2024-02-28
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+OpenID Connect
+
+</td>
+<td valign="top">
+
+Identity Authentication supports public clients for resource owner password credentials flow, JWT bearer flow, and token exchange flow. See [Configure OpenID Connect Application for Resource Owner Password Credentials Flow](Operation-Guide/configure-openid-connect-application-for-resource-owner-password-credentials-flow-9a4b94b.md), [Configure OpenID Connect Application for JWT Bearer Flow](Operation-Guide/configure-openid-connect-application-for-jwt-bearer-flow-e42fb4d.md), and [Configure OpenID Connect Application for Token Exchange](Operation-Guide/configure-openid-connect-application-for-token-exchange-e6718a3.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2024-02-28
+
+</td>
+<td valign="top">
+
+2024-02-28
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+Subject Name Identifier
+
+</td>
+<td valign="top">
+
+The configuration of the Subject Name Identifier in the administration console for SAP Cloud Identity Services has been changed. Now, you can choose the primary attribute value from three sources: *Identity Directory*, *Corporate Identity Provider*, and *Expression*. They replace the *Basic* and *Advanced* configurations. See [Configure the Subject Name Identifier Sent to the Application](Operation-Guide/configure-the-subject-name-identifier-sent-to-the-application-1d020e3.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2024-02-28
+
+</td>
+<td valign="top">
+
+2024-02-28
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
 2024-02-13
 
 </td>

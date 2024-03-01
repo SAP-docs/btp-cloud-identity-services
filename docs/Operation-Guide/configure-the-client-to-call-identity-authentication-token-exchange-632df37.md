@@ -321,7 +321,7 @@ string
 </td>
 <td valign="top">
 
-Use provided API names. For more information, see [Consume APIs from Other Applications](../Development/consume-apis-from-other-applications-29e204d.md).
+Use provided API names. For more information, see [Consuming APIs from Other Applications](../Development/consuming-apis-from-other-applications-29e204d.md).
 
 > ### Note:  
 > If `resource` parameter is used to consume APIs from other applications, then the returned token is always of type `urn:ietf:params:oauth:token-type:access_token` even if `requested_token_type` is requested for type `id_token`.

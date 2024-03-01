@@ -14,9 +14,6 @@ Newly created users are required to provide their phone numbers during the self-
 
 Existing users are required to provide their phone numbers in the upgrade form.
 
-> ### Remember:  
-> Once the phone is verified, the user cannot change it any more on the profile page. This can be done by the administrator via the administration console. For more information, see [List and Edit User Details](list-and-edit-user-details-045cb01.md).
-
 > ### Example:  
 > Michael Adams is an administrator at retail company A. He has configured his system in such a way that users can register on their own and then purchase from the company’s site. He allows users to access his *Company A Purchasing* application by self-registration.
 > 

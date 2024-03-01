@@ -32,7 +32,7 @@ Users can use the following self-services:
 
     If this option is activated by an administrator, a user can register when he or she accesses the application’s logon page. When the user clicks on the *Register* button, a registration form appears, where he or she needs to provide some personal data. The user also has to accept the organization’s terms of use and privacy policy.
 
-    By clicking the *Register* button, the users acknowledges that he or she has read the organization’s privacy policy document.
+    By clicking the *Register* button, the users acknowledge that he or she has read the organization’s privacy policy document.
 
     Once the user has submitted the form, he or she receives an email explaining how to activate the account. Successful activation of the user account completes the registration, thus allowing the user to log on to the application.
 
@@ -40,7 +40,7 @@ Users can use the following self-services:
     > If the user hasn’t received the activation email, he or she can do the following:
     > 
     > -   Check the *Deleted*, *Junk*, or other folders in his or her mail box.
-    > -   Follow the *Forgot Password* link in the logon page of the application. If the registration was successful, this will trigger the *Forgot Password* process, and the user will receive an email with instructions how to reset the password.
+    > -   Follow the *Forgot Password* link in the logon page of the application. If the registration is successful, this will trigger the *Forgot Password* process, and the user will receive an email with instructions how to reset the password.
     > -   Choose the *Register Now* link, and fill in the registration form again.
     > -   Contact the system administrator of the application.
 
@@ -63,12 +63,12 @@ Users can use the following self-services:
     Users can change their profile information on the profile page. This includes Personal Information, Company Information, and Contact Preferences.
 
     > ### Note:  
-    > The `Login Name` field cannot be edited on the profile page. This field can be edited by the tenant administrator via the administration console for SAP Cloud Identity Services.
+    > The `Login Name` field can't be edited on the profile page. This field can be edited by the tenant administrator via the administration console for SAP Cloud Identity Services.
     > 
     > The `Valid From` and `Valid To` fields are empty if no validity dates are set for the user. The dates are not editable via the profile page.
 
 -   Viewing profile data
-    -   Users can open a printable overview of all the data on file for them by visiting their account information in upper right corner of thw screen and chosing the *User Data* section from the menu.
+    -   Users can open a printable overview of all the data on file for them by visiting their account information in the upper right corner of the screen and choosing the *User Data* section from the menu.
 
         ![](images/User_Data_3dbaf04.png)
 
@@ -78,11 +78,21 @@ Users can use the following self-services:
     -   Users can download an overview of all the data for them on a JSON file by clicking the download button in the *User Data* section.
 
 
+-   Verifying user phone
+
+    > ### Remember:  
+    > The phone verification possibility on the Profile Page is optional and must be enabled by a system administrator.
+
+    If the phone verification is enabled by a system administrator, and the phone number is verified users can change it on the profile by choosing *Edit* in the *Personal Information* section. They will receive a verification code on the phone which must be provided so that the change is completed. If the code fails to arrive, users have up to five attempts to request a new code via SMS. They can also trigger one phone call per session. If the phone number is not verified, users can change it without a verification code.
+
+    > ### Restriction:  
+    > A phone number can be verified by only one user. If another user has already verified the phone number that is provided, the user is prompted to choose a different one or contact an administrator.
+
 -   Changing user passwords
 
     Users can change their passwords on the profile page.
 
-    By clicking the change password button in the *Password* section, users trigger the change password process. That way, they are asked to provide the current and the new passwords. Users also must comply with the password requirements.
+    By clicking the change password button in the *Password* section, users trigger the change password process. That way, they are asked to provide the current and the new passwords. Users must also comply with the password requirements.
 
     > ### Note:  
     > Users must familiarize themselves with the password policy for logging on to the respective application. If no password policy is set for the application, users are able to modify their passwords with any characters of their choosing.

@@ -951,7 +951,7 @@ For example, you have defined the `mail` user attribute and at the same time the
     > 
     > The corporate IdP is configured to send the groups with the `group` user attribute.
     > 
-    > You don't want to send all the groups coming from the corporate IdP to the application so you have defined the following attribute in the administration console for SAP Cloud Identity Services:
+    > You don't want to send all the groups coming from the corporate IdP to the application. One reason for not sending all groups is the 16k size limit on OIDC access tokens. So, you have defined the following attribute in the administration console for SAP Cloud Identity Services:
     > 
     > **Configuration of Attributes with Default Values in Administration Console**
     > 
@@ -1196,9 +1196,17 @@ You can define complex custom schema attributes with single-value child attribut
 6.  Depending on the type of your application go to:
 
     -   *Application Attributes* - for subscribed multitenant applications.
+
         1.  Choose the plus button next to an attribute to set multiple values for the attribute.
         2.  Choose *Corporate Identity Provider* source.
         3.  Provide the new value.
+
+        > ### Tip:  
+        > To restrict the value of an application attribute:
+        > 
+        > 1.  Deactivate the existing attribute.
+        > 
+        > 2.  Add a new new value with a flexible expression.
 
     -   *Self-defined Attributes* - self-created applications or automatically created single-tenant applications.
         1.  Choose *Add button to add new attribute for the application* \> *provide the name* \> *Expression* \> *provide the value*.

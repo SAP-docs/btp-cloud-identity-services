@@ -174,12 +174,7 @@ To configure an OpenID Connect trusted application in the administration console
 
 -   Configure HTTP basic authentication for the application. For more information about the configuration, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
 
--   Enable the *Public* client type, for this application. In the administration console, choose *the OpenID connect application* \> *Client Authentication under the Trust tab* \> *enable Public under Client Type*.
-
-    > ### Note:  
-    > The *Public* client type is used for environments where it is difficult to protect the client credential, such as mobile and desktop applications, and client-side parts of web applications. See also [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow with PKCE](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-a721157.md).
-
-
+-   
 **Related Information**  
 
 

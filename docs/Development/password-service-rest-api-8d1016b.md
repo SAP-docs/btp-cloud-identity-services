@@ -47,7 +47,7 @@ Values
 <tr>
 <td valign="top">
 
-`Basic Authorization`
+`Authorization`
 
 </td>
 <td valign="top">
@@ -57,7 +57,7 @@ Yes
 </td>
 <td valign="top">
 
-Username and password are provided by the user.
+`Basic` - Username and password are provided by the user.
 
 > ### Note:  
 > Depending on the allowed logon identifiers for the user, the username can be the `User ID`, `Login Name`, or `Email`. For more information, see [Configure Allowed Logon Identifiers](../Operation-Guide/configure-allowed-logon-identifiers-3adf1ff.md).
@@ -94,7 +94,7 @@ application/json
 
 ```
 POST /service/users/password
-Basic Authentication: Username/Password
+Authorization: Basic <Username/Password>
 ```
 
 

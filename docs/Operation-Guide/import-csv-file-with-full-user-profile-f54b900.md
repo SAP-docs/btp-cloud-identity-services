@@ -254,7 +254,7 @@ Depending on your *Logon Alias* configuration in the administration console, you
 > ### Restriction:  
 > The user import doesn’t support the `groups` and `spCustomAttribute1`
 
-You can view all of the supported schemas attributes and their definitions in the administration console of Identity Authentication under schemas. For more information, see[Manage Custom Schemas via Administration Console](manage-custom-schemas-via-administration-console-d492d70.md).
+You can view all of the supported schemas attributes and their definitions in the administration console of Identity Authentication under schemas. For more information, see [Manage Custom Schemas via Administration Console](manage-custom-schemas-via-administration-console-d492d70.md).
 
 > ### Example:  
 > > ### Sample Code:  

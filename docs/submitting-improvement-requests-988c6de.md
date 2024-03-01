@@ -16,7 +16,7 @@ You can also browse improvement requests, comment, vote, receive updates, and br
 > Before you submit your improvement, check if a similar improvement hasn’t already been submitted requested. If yes, please vote for it, instead of submitting a new one.
 
 > ### Note:  
-> You can also access the Submitting Improvement Requests documentation by choosing the <span class="SAP-icons"></span> icon on the top right corner in the administration console for SAP Cloud Identity Services.
+> You can also access the Submitting Improvement Requests documentation by choosing the <span class="SAP-icons-V5"></span> icon on the top right corner in the administration console for SAP Cloud Identity Services.
 
 
 

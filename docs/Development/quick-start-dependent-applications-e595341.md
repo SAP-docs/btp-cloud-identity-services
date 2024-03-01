@@ -1,44 +1,43 @@
-<!-- loio9675b64bc8014f4282e49d0cd8ce60fa -->
+<!-- loioe5953413932f4eedac25ad902cc2a09e -->
 
-# Consume an API from Another Application
+# Quick Start Dependent Applications
 
-Define a dependency to the API of another application. Your consumer application can request an access token from Identity Authentication to consume that API.
-
-
-
-<a name="loio9675b64bc8014f4282e49d0cd8ce60fa__prereq_dj5_ws3_m1c"/>
-
-## Prerequisites
-
-You know the name of the API from the provider application.
-
-The provider applications must define this name automatically during deployment, in the documentation of the applications, or from the developers directly for custom developments.
-
-For more information, see [Provide APIs for Consumption by Other Applications](provide-apis-for-consumption-by-other-applications-9d2fe83.md).
+When working on an application, you want to test your APIs, but don't have a consumer application to integrate with. From your *Provided APIs*, create a dependent application or create a dependency with an existing application.
 
 
 
 ## Procedure
 
-1.  Choose the consumer application.
+1.  In the administration console for SAP Cloud Identity Services, choose *Applications and Resources* \> *Applications*
 
-2.  Choose the *Trust* tab.
+2.  Choose the provider application.
 
-3.  Under *Application APIs*, choose *Dependencies*.
+3.  Choose the *Trust* tab.
 
-4.  Enter the required data.
+4.  Under *Application APIs*, choose *Provided APIs*.
+
+5.  Choose *Create*.
+
+6.  Enter the required data.
 
     1.  Enter a unique name for the dependency.
 
-    2.  Choose the provider application and the API the consumer application consumes.
+    2.  Select the API the consumer application consumes.
+
+    3.  Decide whether you want to create a new application or use an existing one.
+
+        -   Create a new application, to create a consumer you can use to test your provided API with. You can even generate a client ID and secret.
+
+        -   Use an existing application, to integrate an existing consumer with your provider.
 
 
-5.  Save your entries.
+
+7.  Save your entries.
 
 
 
 
-<a name="loio9675b64bc8014f4282e49d0cd8ce60fa__postreq_v1w_rw3_m1c"/>
+<a name="loioe5953413932f4eedac25ad902cc2a09e__postreq_v1w_rw3_m1c"/>
 
 ## Next Steps
 

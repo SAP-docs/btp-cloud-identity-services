@@ -33,7 +33,7 @@ You are assigned the *Manage Corporate Identity Providers* role. For more inform
 
     -   SAP Single Sign-On \(SAML 2.0\)
 
-    -   Microsoft ADFS / Azure AD \(SAML 2.0\)
+    -   Microsoft ADFS / Entra ID \(SAML 2.0\)
 
         > ### Caution:  
         > For this type the digest algorithm of the corporate identity provider must be *SHA-256*. For more information, see 2. Configure Trust on Identity Authentication Side in [Configure Trust with Corporate Identity Provider](configure-trust-with-saml-2-0-corporate-identity-provider-33832e5.md).

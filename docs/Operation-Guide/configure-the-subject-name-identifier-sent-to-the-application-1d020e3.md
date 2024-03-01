@@ -8,359 +8,359 @@ The `Subject Name Identifier` is a profile attribute that Identity Authenticatio
 
 ## Context
 
-You can choose an attribute from a predefined list for basic configuration, or you can set an attribute with dynamic value for advanced configuration.
-
-For both basic and advanced configuration you can also configure a fallback subject name identifier. The fallback subject name identifier is used only when the regular identifier is not available. If the regular identifier is not available, and you haven't set a fallback attribute, the authentication of the user fails.
-
-
-
-### Basic Configuration
-
-The user is identified in one of the following ways:
-
--   Global User ID
--   User ID
--   Email
--   Display Name
--   Login Name
--   Employee Number.
-
-> ### Note:  
-> `Global User ID`, `User ID`, `Login Name` and `Email` can be unique for the tenant. This depends on the tenant configurations.
-> 
-> The configuration of the `Subject Name Identifier` attribute for the system applications is disabled. The default setting for these applications is `User ID`.
-
-> ### Caution:  
-> Identity Authentication does not check the `Employee Number` attribute for uniqueness. Be sure that the users receive unique employee numbers.
-
-
-
-### Advanced Configuration
-
-The user is identified by setting an attribute with dynamic value in the following pattern: `<prefix> ${attribute_technical_name} <suffix>`.
-
-Expand the **Supported Attributes** table below to see the technical names of the attributes that can take dynamic values:
-
-**Supported Attributes**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Attribute
-
-</th>
-<th valign="top">
-
-Attribute Technical Name
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Email
-
-</td>
-<td valign="top">
-
-mail
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Telephone Number
-
-</td>
-<td valign="top">
-
-telephone
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Logon Name
-
-</td>
-<td valign="top">
-
-loginName
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Display Name
-
-</td>
-<td valign="top">
-
-displayName
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-User ID
-
-</td>
-<td valign="top">
-
-uid
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Global User ID
-
-</td>
-<td valign="top">
-
-userUuid
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Employee Number
-
-</td>
-<td valign="top">
-
-personnelNumber
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Custom Attribute 1
-
-</td>
-<td valign="top">
-
-customAttribute1
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Custom Attribute 2
-
-</td>
-<td valign="top">
-
-customAttribute2
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Custom Attribute 3
-
-</td>
-<td valign="top">
-
-customAttribute3
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Custom Attribute 4
-
-</td>
-<td valign="top">
-
-customAttribute4
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Custom Attribute 5
-
-</td>
-<td valign="top">
-
-customAttribute5
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Custom Attribute 6
-
-</td>
-<td valign="top">
-
-customAttribute6
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Custom Attribute 7
-
-</td>
-<td valign="top">
-
-customAttribute7
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Custom Attribute 8
-
-</td>
-<td valign="top">
-
-customAttribute8
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Custom Attribute 9
-
-</td>
-<td valign="top">
-
-customAttribute9
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Custom Attribute 10
-
-</td>
-<td valign="top">
-
-customAttribute10
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SP \(service provider\) user nameID
-
-</td>
-<td valign="top">
-
-name\_id
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SP \(service provider\) user Custom Attribute 1
-
-</td>
-<td valign="top">
-
-spCustomAttribute1
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SP \(service provider\) user Custom Attribute 2
-
-</td>
-<td valign="top">
-
-spCustomAttribute2
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SP \(service provider\) user Custom Attribute 3
-
-</td>
-<td valign="top">
-
-spCustomAttribute3
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SP \(service provider\) user Custom Attribute 4
-
-</td>
-<td valign="top">
-
-spCustomAttribute4
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SP \(service provider\) user Custom Attribute 5
-
-</td>
-<td valign="top">
-
-spCustomAttribute5
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-NameID coming from the assertion of the corporate IdP
-
-</td>
-<td valign="top">
-
-corporateIdP.NameID
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Attribute coming from the assertion of the corporate IdP
-
-</td>
-<td valign="top">
-
-corporateIdP.<corporateIDP attribute\>
-
-</td>
-</tr>
-</table>
+You can choose primary and fallback attributes to uniquely identify the user during logon.
+
+The *Primary Attribute* value can be chosen from three sources:
+
+-   *Identity Directory* - This is the local user attribute. You choose the value from a drop-down.
+
+    The user is identified in one of the following ways:
+
+    -   Global User ID
+    -   User ID
+    -   Email
+    -   Display Name
+    -   Login Name
+    -   Employee Number.
+
+    > ### Note:  
+    > `Global User ID`, `User ID`, `Login Name` and `Email` can be unique for the tenant. This depends on the tenant configurations.
+    > 
+    > The configuration of the `Subject Name Identifier` attribute for the system applications is disabled. The default setting for these applications is `User ID`.
+
+    > ### Caution:  
+    > Identity Authentication does not check the `Employee Number` attribute for uniqueness. Be sure that the users receive unique employee numbers.
+
+-   *Corporate Identity Provider* - The user attribute provided by the corporate identity provider \(IdP\). You just enter the attribute name provided by the corporate IdP.
+-   *Expression* - A static or dynamic value. It can be a user attribute coming from Identity Directory, or Corporate Identity Provider, or even a combination of all sources.
+
+    The user is identified by setting an attribute with dynamic value in the following pattern: `<prefix> ${attribute_technical_name} <suffix>`.
+
+    Expand the **Supported Attributes** table below to see the technical names of the attributes that can take dynamic values:
+
+    **Supported Attributes**
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Attribute
+    
+    </th>
+    <th valign="top">
+
+    Attribute Technical Name
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Email
+    
+    </td>
+    <td valign="top">
+    
+    mail
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Telephone Number
+    
+    </td>
+    <td valign="top">
+    
+    telephone
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Logon Name
+    
+    </td>
+    <td valign="top">
+    
+    loginName
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Display Name
+    
+    </td>
+    <td valign="top">
+    
+    displayName
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    User ID
+    
+    </td>
+    <td valign="top">
+    
+    uid
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Global User ID
+    
+    </td>
+    <td valign="top">
+    
+    userUuid
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Employee Number
+    
+    </td>
+    <td valign="top">
+    
+    personnelNumber
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Custom Attribute 1
+    
+    </td>
+    <td valign="top">
+    
+    customAttribute1
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Custom Attribute 2
+    
+    </td>
+    <td valign="top">
+    
+    customAttribute2
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Custom Attribute 3
+    
+    </td>
+    <td valign="top">
+    
+    customAttribute3
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Custom Attribute 4
+    
+    </td>
+    <td valign="top">
+    
+    customAttribute4
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Custom Attribute 5
+    
+    </td>
+    <td valign="top">
+    
+    customAttribute5
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Custom Attribute 6
+    
+    </td>
+    <td valign="top">
+    
+    customAttribute6
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Custom Attribute 7
+    
+    </td>
+    <td valign="top">
+    
+    customAttribute7
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Custom Attribute 8
+    
+    </td>
+    <td valign="top">
+    
+    customAttribute8
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Custom Attribute 9
+    
+    </td>
+    <td valign="top">
+    
+    customAttribute9
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Custom Attribute 10
+    
+    </td>
+    <td valign="top">
+    
+    customAttribute10
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    SP \(service provider\) user nameID
+    
+    </td>
+    <td valign="top">
+    
+    name\_id
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    SP \(service provider\) user Custom Attribute 1
+    
+    </td>
+    <td valign="top">
+    
+    spCustomAttribute1
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    SP \(service provider\) user Custom Attribute 2
+    
+    </td>
+    <td valign="top">
+    
+    spCustomAttribute2
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    SP \(service provider\) user Custom Attribute 3
+    
+    </td>
+    <td valign="top">
+    
+    spCustomAttribute3
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    SP \(service provider\) user Custom Attribute 4
+    
+    </td>
+    <td valign="top">
+    
+    spCustomAttribute4
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    SP \(service provider\) user Custom Attribute 5
+    
+    </td>
+    <td valign="top">
+    
+    spCustomAttribute5
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    NameID coming from the assertion of the corporate IdP
+    
+    </td>
+    <td valign="top">
+    
+    corporateIdP.NameID
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Attribute coming from the assertion of the corporate IdP
+    
+    </td>
+    <td valign="top">
+    
+    corporateIdP.<corporateIDP attribute\>
+    
+    </td>
+    </tr>
+    </table>
+    
 
 > ### Remember:  
-> If the advanced configuration option is used, *Use Identity Authentication user store* must be enabled. When the application uses corporate IdP for authentication, and *Use Identity Authentication user store* is disabled, the `Subject Name Identifier` attribute configurations in the administration console for SAP Cloud Identity Services are not relevant. In such scenarios Identity Authentication sends to the application the `Subject Name Identifier` attribute that comes from the corporate identity provider without changing it. For more information about the corporate identity provider scenario, see [Corporate Identity Providers](corporate-identity-providers-19f3eca.md) and [Configure Identity Federation](configure-identity-federation-c029bbb.md).
+> If the *Corporate Identity Provider* or *Expression* configuration options are used, *Use Identity Authentication user store* must be enabled. When the application uses corporate IdP for authentication, and *Use Identity Authentication user store* is disabled, the `Subject Name Identifier` attribute configurations in the administration console for SAP Cloud Identity Services are not relevant. In such scenarios Identity Authentication sends to the application the `Subject Name Identifier` attribute that comes from the corporate identity provider without changing it. For more information about the corporate identity provider scenario, see [Corporate Identity Providers](corporate-identity-providers-19f3eca.md) and [Configure Identity Federation](configure-identity-federation-c029bbb.md).
+
+Apart from the primary attribute configuration you can also configure a fallback subject name identifier. The fallback subject name identifier is used only when the primary identifier is not available. If the primary identifier is not available, and you haven't set a fallback attribute, the authentication of the user fails.
 
 Optionally, you can configure the default name identifier format of the name ID attribute for SAML 2.0 applications.
 
@@ -392,8 +392,8 @@ To set the `Subject Name Identifier` attribute, proceed as follows:
 
 6.  Select one of the following:
 
-    -   Basic Configuration:
-        -   Select a basic attribute from the drop down: `Global User ID`, `User ID` \(this is the default setting\), `Email`, `Display Name`, `Login Name`, `Employee Number`.
+    -   Identity Directory:
+        -   Select an attribute from the drop down: `Global User ID`, `User ID` \(this is the default setting\), `Email`, `Display Name`, `Login Name`, `Employee Number`.
 
             > ### Note:  
             > If you select *Login Name*, or *Employee Number*, and the selected attribute has no value set for the user, the user is not able to log on the application. The message "**HTTP Status 401 – Unauthorized**" is displayed when the user provides credentials and logs on. In this case, configure also the fallback attribute.
@@ -401,14 +401,20 @@ To set the `Subject Name Identifier` attribute, proceed as follows:
         -   \(optional\) Select a fallback attribute from the drop down: `None` \(this is the default setting\), `Global User ID`, `User ID`, `Email`, `Display Name`, `Login Name`, `Employee Number`.
 
 
-    > ### Tip:  
-    > When Identity Authentication acts as proxy IdP, and the users have no profiles in Identity Authentication, choose the advanced configuration option.
+    -   Corporate Identity Provider
+        -   Enter the attribute name provided by the corporate IdP.
 
-    -   Advanced Configuration:
-        -   set an attribute with dynamic value in the following pattern `<prefix> ${attribute_technical_name} <suffix>`. For example: `Phone ${telephone}`
+            > ### Tip:  
+            > When Identity Authentication acts as proxy IdP, and the users have no profiles in Identity Authentication, you can set an attribute with the value coming from the corporate IdP, or use the *Expression* configuration option.
+
+        -   \(optional\) Select a fallback attribute from the drop down: `None` \(this is the default setting\), `Global User ID`, `User ID`, `Email`, `Display Name`, `Login Name`, `Employee Number`.
+
+
+    -   Expression:
+        -   Enter a static or dynamic value. It can be a user attribute coming from Identity Directory, or Corporate Identity Provider, or even a combination of all sources. To set an attribute with dynamic value use the following pattern `<prefix> ${attribute_technical_name} <suffix>`. For example: `Phone ${telephone}`
 
             > ### Note:  
-            > If Identity Authentication acts as proxy IdP, and the users have no profiles in Identity Authentication, set an attribute with the following dynamic value: <prefix\> $\{corporateIdP<corporateIDP attribute\>\} <suffix\>
+            > If Identity Authentication acts as proxy IdP, and the users have no profiles in Identity Authentication, set an attribute with the following dynamic value: <prefix\> $\{corporateIdP.<corporateIDP attribute\>\} <suffix\>
 
         -   \(optional\) Select a fallback attribute from the drop down: `None` \(this is the default setting\), `Global User ID`, `User ID`, `Email`, `Display Name`, `Login Name`, `Employee Number`.
 

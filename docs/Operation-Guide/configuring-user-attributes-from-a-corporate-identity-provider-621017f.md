@@ -46,7 +46,7 @@ Configure the user attributes as they come from the corporate identity provider 
         > ### Tip:  
         > You can enable or disable the attribute mappings inherited from the subscribed multitenant applications:
         > 
-        > -   To disable the attribute mappings, choose the <span class="SAP-icons"></span> disable button on the right of the inherited attribute.
+        > -   To disable the attribute mappings, choose the <span class="SAP-icons-V5"></span> disable button on the right of the inherited attribute.
         > 
         > -   To enable the attribute, choose :heavy_check_mark: button on the right of the inherited attribute.
 

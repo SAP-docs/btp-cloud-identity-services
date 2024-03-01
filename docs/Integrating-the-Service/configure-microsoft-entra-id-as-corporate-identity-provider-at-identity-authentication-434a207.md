@@ -108,6 +108,6 @@ To use Identity Authentication as a proxy, create, and configure Microsoft Entra
 
 ## Next Steps
 
-1.  Choose **Microsoft ADFS / Azure AD** as the type for the configured corporate identity provider. For more information, see [Choose Identity Provider Type](../Operation-Guide/choose-identity-provider-type-0838379.md).
+1.  Choose **Microsoft ADFS / Entra ID** as the type for the configured corporate identity provider. For more information, see [Choose Identity Provider Type](../Operation-Guide/choose-identity-provider-type-0838379.md).
 2.  Select the configured identity provider as the authenticating identity provider for the desired application. For more information, see [Choose Default Identity Provider for an Application](../Operation-Guide/choose-default-identity-provider-for-an-application-e9d8274.md).
 

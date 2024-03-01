@@ -223,7 +223,7 @@ Set up trust with a corporate identity provider in the administration console fo
     -   *SHA-256* - the default option
 
         > ### Remember:  
-        > The algorithm must be *SHA-256* if the Identity provider type is set at *Microsoft ADFS / Azure AD*.
+        > The algorithm must be *SHA-256* if the Identity provider type is set at *Microsoft ADFS / Entra ID*.
 
     -   *SHA-512*
 
@@ -274,7 +274,7 @@ Set up trust with a corporate identity provider in the administration console fo
     > ### Remember:  
     > The default setting for the *Include scoping* is enabled. The Scoping element sent in the SAML 2.0 request is 1.
     > 
-    > If the identity provider type is set at *Microsoft ADFS / Azure AD* the default setting for the *Include scoping* is disabled and the Scoping element is not sent in the SAML 2.0 request.
+    > If the identity provider type is set at *Microsoft ADFS / Entra ID* the default setting for the *Include scoping* is disabled and the Scoping element is not sent in the SAML 2.0 request.
 
 9.  Save your selection.
 

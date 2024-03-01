@@ -17,7 +17,7 @@ Create a new corporate identity provider \(IdP\) and customize it or copy the co
 
 ## Context
 
-When you create a new corporate IdP in the administration console for SAP Cloud Identity Services you can also change the default SAML 2.0 Compliant type choice offered to you to Single Sign-On \(SAML 2.0\), Microsoft ADFS / Azure AD \(SAML 2.0\) or OpenID Connect Compliant types.
+When you create a new corporate IdP in the administration console for SAP Cloud Identity Services you can also change the default SAML 2.0 Compliant type choice offered to you to Single Sign-On \(SAML 2.0\), Microsoft ADFS / Entra ID \(SAML 2.0\) or OpenID Connect Compliant types.
 
 You can also copy the settings from an IdP that is already existing in your tenant to the new corporate IdP. For example, you can have separate SAML 2.0 and OpenID Connect IdP trust configurations for one and the same corporate IdP. Thus, you can migrate your applications from one protocol to another by switching application by application to the new trust.
 
@@ -82,7 +82,7 @@ To create a new corporate IdP, proceed as follows:
 
     -   SAP Single Sign-On \(SAML 2.0\)
 
-    -   Microsoft ADFS / Azure AD \(SAML 2.0\)
+    -   Microsoft ADFS / Entra ID \(SAML 2.0\)
 
         > ### Caution:  
         > For this type, the digest algorithm of the corporate identity provider must be *SHA-256*. For more information, see 2. Configure Trust on Identity Authentication Side in [Configure Trust with Corporate Identity Provider](configure-trust-with-saml-2-0-corporate-identity-provider-33832e5.md).

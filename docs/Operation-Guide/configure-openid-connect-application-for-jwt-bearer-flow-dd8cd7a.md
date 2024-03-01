@@ -134,7 +134,7 @@ To configure an OpenID Connect trusted application in the administration console
 
 -   Configure HTTP basic authentication for the application. For more information about the configuration, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
 
-
+-   
 **Related Information**  
 
 

@@ -47,6 +47,8 @@ The logo is displayed on the application's logon page and can be included into t
 
     > ### Tip:  
     > To remove a configured logo, choose the *Remove* button and confirm your choice.
+    > 
+    > When you are in *Edit* mode, the *Remove* button is hidden.
 
 
 **Related Information**  

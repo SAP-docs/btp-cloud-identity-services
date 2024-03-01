@@ -86,7 +86,7 @@ You can access the tenant's administration console for SAP Cloud Identity Servic
 > ### Note:  
 > The URL has the following pattern:
 > 
-> `https://<tenant ID>.accounts.ondemand.com/admin`
+> `https://<tenant ID>.accounts.ondemand.com/admin` or `https://<tenant ID>.accounts.cloud.sap/admin`
 > 
 > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](viewing-assigned-tenants-and-administrators-f56e6f2.md).
 > 

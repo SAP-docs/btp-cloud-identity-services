@@ -112,12 +112,12 @@ ABAP
 </td>
 <td valign="top">
 
-Advanced Configuration: `${corporateIdP.mail}`
+*Source*: `Corporate Identity` *Value*: `mail`
 
 </td>
 <td valign="top">
 
-Advanced Configuration: `${corporateIdP.mail}`
+*Source*: `Corporate Identity` *Value*: `mail`
 
 </td>
 </tr>
@@ -185,12 +185,12 @@ SAP Analytics Cloud
 </td>
 <td valign="top">
 
-Advanced Configuration: `${corporateIdP.mail}`
+*Source*: `Corporate Identity` *Value*: `mail`
 
 </td>
 <td valign="top">
 
-Advanced Configuration: `${corporateIdP.mail}`
+*Source*: `Corporate Identity` *Value*: `mail`
 
 </td>
 </tr>
@@ -263,7 +263,7 @@ Other Application
 </td>
 <td valign="top">
 
-Advanced Configuration: `${corporateIdP.mail}`
+*Source*: `Corporate Identity` *Value*: `mail`
 
 </td>
 </tr>
