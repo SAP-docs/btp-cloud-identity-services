@@ -118,7 +118,7 @@ Cloud Foundry Data Center
 <tr>
 <td valign="top">
 
-eu-nl/eu-de - Rot/Amsterdam
+eu-nl - Amsterdam
 
 </td>
 <td valign="top">
@@ -202,7 +202,7 @@ cf-ap11 - Singapore
 <tr>
 <td valign="top">
 
-azr-us-we / US West
+azr-us-we - US West
 
 </td>
 <td valign="top">
@@ -214,7 +214,7 @@ cf-us20 - US West \(WA\)
 <tr>
 <td valign="top">
 
-azr-na-ca / Toronto
+azr-na-ca - Toronto
 
 </td>
 <td valign="top">
@@ -238,7 +238,7 @@ cf-eu10 - Europe \(Frankfurt\)
 <tr>
 <td valign="top">
 
-aws/ap-northeast-2 / Seoul
+aws-ap-northeast-2 - Seoul
 
 </td>
 <td valign="top">
@@ -250,7 +250,7 @@ cf-ap12 - South Korea \(Seoul\)
 <tr>
 <td valign="top">
 
-ap-sa / Riyadh
+ap-sa - Riyadh
 
 </td>
 <td valign="top">
@@ -262,7 +262,7 @@ cf-eu10 - Europe \(Frankfurt\)
 <tr>
 <td valign="top">
 
-ap-ae / Dubai
+ap-ae - Dubai
 
 </td>
 <td valign="top">

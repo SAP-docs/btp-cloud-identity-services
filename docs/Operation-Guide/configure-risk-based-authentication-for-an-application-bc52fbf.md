@@ -36,6 +36,15 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
 
 
 
+<a name="loiobc52fbf3d59447bbb6aa22f80d8b6056__context_gvf_fds_s1c"/>
+
+## Context
+
+> ### Tip:  
+> We recommend you to enable the back-up channels. Thus, the users can use the option as an alternative when they don't have access to the TOTP device or application.. For more information, see [Enable Back-Up Channels to Send Passcode for Deactivation of TOTP Two-Factor Authentication Devices](enable-back-up-channels-to-send-passcode-for-deactivation-of-totp-two-factor-authenticati-782935e.md).
+
+
+
 <a name="loiobc52fbf3d59447bbb6aa22f80d8b6056__steps_yk5_2hs_25"/>
 
 ## Procedure

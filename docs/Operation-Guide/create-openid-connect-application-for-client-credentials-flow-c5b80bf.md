@@ -149,5 +149,5 @@ To create a new OpenID Connect application, choose your scenario and follow the 
 -   [Protecting Self-Registration with Phone Verification](protecting-self-registration-with-phone-verification-5834b6e.md)
 -   [Protecting Application Forms with Google reCAPTCHA](protecting-application-forms-with-google-recaptcha-b84ce17.md)
 -   [Configure Identity Federation](configure-identity-federation-c029bbb.md)
--   [Configure SAML 2.0 Authentication Request to Corporate IdPs](configure-saml-2-0-authentication-request-to-corporate-idps-7eac7e8.md)
+-   [Configure Authentication Request to Corporate IdPs](configure-authentication-request-to-corporate-idps-7eac7e8.md)
 

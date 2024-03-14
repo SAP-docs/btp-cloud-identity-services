@@ -10,9 +10,12 @@ The productive domain represents the productive environment. It can be used by c
 
 The productive domain is available on a country/regional basis, where each country/region represents the locations of data centers.
 
-A customer or partner account is associated with a particular data center and this is independent of your own location. For example, you could be located in North America, but operate your account in Europe. Thus you use a data center that is situated in Europe.
+A customer or partner account is associated with a particular data center and this is independent of your own location. For example, you could be located in North America, but operate your account in Europe. Thus, you use a data center that is situated in Europe.
 
-Country/regions with two data centers operate in high availability \(HA\) mode among the respective data centers. Tenants located in these country/regions are distributed among the data centers there.
+> ### Note:  
+> In cases of significant performance issues or latency, you can request a tenant migration to a new region by reporting an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`.
+
+Country/regions with more than one data centers operate in high availability \(HA\) mode among the respective data centers. Tenants located in these country/regions are distributed among the data centers there.
 
 The country/region, domain, data center, and IP address are listed below:
 
@@ -267,7 +270,7 @@ Europe
 </td>
 <td valign="top">
 
-Germany \(Rot\) / Netherlands \(Amsterdam\) / Germany \(Frankfurt\)
+Netherlands \(Amsterdam\) / Germany \(Frankfurt\)
 
 </td>
 <td valign="top">

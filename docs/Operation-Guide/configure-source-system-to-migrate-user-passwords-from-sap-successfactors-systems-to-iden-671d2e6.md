@@ -137,7 +137,7 @@ To configure a source system, follow the steps below:
 
         Technical user added in the source system that has administrator permissions to access the OData API. It can be provided by the external source system administrator.
 
-        For more information of the permission settings of the user, see [Granting Permissions to API User](https://help.sap.com/viewer/0377d826832f445e82d09fdac7228f34/latest/en-US/650350ce2e274ee5b1f19c8cb3b1531d.html).
+        For more information of the permission settings of the user, see [Setting Up an API User for Sync Jobs in SAP SuccessFactors](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/568fdf1f14f14fd089a3cd15194d19cc/0a6e6705d89e42649e3aa8732f2b0724.html?version=2311).
 
         *Technical User Secret*
 

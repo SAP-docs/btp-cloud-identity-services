@@ -2,11 +2,14 @@
 
 # View Troubleshooting Logs
 
-Tenant administrator can filter and view troubleshooting logs directly in the administration console for SAP Cloud Identity Services.
+Tenant administrator can filter and view troubleshooting logs directly in the administration console for SAP Cloud Identity Services to diagnose problems with authentication.
 
 
 
 ## Context
+
+> ### Tip:  
+> Use the audit logs option to track changes in the personal data.
 
 The maximum number of log entries is 1000. The search criteria you can choose include:
 
@@ -93,4 +96,9 @@ Once you have the results you can filter them by *Time*, *Severity*, *IP Address
 
 -   View information about the JWT payload of the OpenID Connect tokens issued or received by Identity Authentication. For more information, see [Logging OpenID Connect Tokens](logging-openid-connect-tokens-b6c42b5.md) 
 
+
+**Related Information**  
+
+
+[Audit Logs](audit-logs-ad47e37.md "Tenant administrators can access the audit logs for changes in the personal data, and successful, and failed authentications in Identity Authentication.")
 

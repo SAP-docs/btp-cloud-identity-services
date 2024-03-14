@@ -23,16 +23,61 @@ Tenant administrator can configure the authentication context in the request sen
 
 4.  Choose the *Trust* tab.
 
-5.  Under *Conditional Authentication*, choose *Configure SAML 2.0 Requests to Corporate Identity Providers*.
+5.  Under *Conditional Authentication*, choose *Configure Requests to Corporate Identity Providers*.
 
-6.  Under *Configure Authentication Context*, choose one of the following options:
+6.  You have the following options:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Protocol
+    
+    </th>
+    <th valign="top">
+
+    Configuration
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **SAML 2.0**
+    
+    </td>
+    <td valign="top">
+    
+    Choose one of the following and save your changes.
 
     -   *None* - Authentication context is not sent. The requested authentication context from the service provider is ignored.
-    -   *Service Provider Authentication Context* - The received authentication context from the service provider is sent.
+    -   \(Available only for SAML 2.0 applications\) *Service Provider Authentication Context* - The received authentication context from the service provider is sent.
     -   *Password Protected Transport* - Authentication context class `urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport` is sent. The requested authentication context from the service provider is ignored.
 
-7.  Save your changes.
 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **OpenID Connect**
+    
+    </td>
+    <td valign="top">
+    
+    Add the authentication context class references and save your changes.
+
+    > ### Note:  
+    > You can add up to 20 authentication context class references with a length of up to 99 characters each.
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
 
 **Related Information**  
 

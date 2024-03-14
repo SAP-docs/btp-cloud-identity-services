@@ -1,6 +1,6 @@
 <!-- loio228428f9f476449cafd841a68d75b234 -->
 
-# User Management
+# Managing Users
 
 Tenant administrators can manage user accounts via the administration console for SAP Cloud Identity Services, and via APIs.
 

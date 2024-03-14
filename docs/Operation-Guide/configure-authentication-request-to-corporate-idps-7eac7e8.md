@@ -1,6 +1,6 @@
 <!-- loio7eac7e8030e3490096d707dac1bf5c4e -->
 
-# Configure SAML 2.0 Authentication Request to Corporate IdPs
+# Configure Authentication Request to Corporate IdPs
 
 **Related Information**  
 

@@ -113,7 +113,7 @@ The configuration of the OAuth authentication scenario is done in the SAP BTP co
 
         `https://<Identity Authentication-host>/ipsproxy/service/api/v1/systems/<source_system_id>/entities/user`
 
-        For example: `https://mytenantaccounts.ondemand.com/ipsproxy/api/v1/systems/12ab12345-6789-e1b2-12ib-12a34iade678d/entities/user`
+        For example: `https://mytenant.accounts.ondemand.com/ipsproxy/api/v1/systems/12ab12345-6789-e1b2-12ib-12a34iade678d/entities/user`
 
         > ### Tip:  
         > The `source_system_id` is a randomly generated string of numbers and letters. You can see this ID at the end of the URL, when the respective source system is chosen in Identity Provisioning.

@@ -14,6 +14,9 @@ The SAP Cloud Identity Services - Tenants application shows which are the Identi
 
 The default tenants, one test and productive tenant per customer, are provided regardless of the number of contracts signed in which SAP Cloud Identity Services is included or bundled. Additional productive or test tenants beyond the initial ones must be purchased separately. For more information, see [Tenant Model and Licensing](tenant-model-and-licensing-93160eb.md).
 
+> ### Tip:  
+> As an alternative, you can view the tenant administrators of the tenants that are assigned to you and add new administrators in SAP Cloud Identity Services via the [SAP for Me](https://me.sap.com/home) portal. For more information see [Cloud Identity Services Administrators Card](https://support.sap.com/content/s4m/help/systems/systems/details/ias.html).
+
 
 
 <a name="loiof56e6f24e373404087d6a1a9a13515a2__steps_ztk_cn5_mqb"/>

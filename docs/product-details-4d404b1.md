@@ -211,7 +211,7 @@ Administrators can manage the users in the tenant.
 </td>
 <td valign="top">
 
-[User Management](Operation-Guide/user-management-228428f.md)
+[Managing Users](Operation-Guide/managing-users-228428f.md)
 
 </td>
 </tr>

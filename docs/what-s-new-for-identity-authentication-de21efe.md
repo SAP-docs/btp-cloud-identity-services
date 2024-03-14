@@ -135,6 +135,270 @@ Identity Authentication
 </td>
 <td valign="top">
 
+2024-03-12
+
+</td>
+<td valign="top">
+
+2024-03-12
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Custom Schemas
+
+</td>
+<td valign="top">
+
+You can view via the administration console the assigned attributes from custom schemas. See [List and Edit User Details](Operation-Guide/list-and-edit-user-details-045cb01.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2024-03-12
+
+</td>
+<td valign="top">
+
+2024-03-12
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+OpenID Connect
+
+</td>
+<td valign="top">
+
+You can configure URI for JSON web key retrieval for client authentication. See [Configure JWT for OAuth Client Authentication](Operation-Guide/configure-jwt-for-oauth-client-authentication-db97a69.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2024-03-12
+
+</td>
+<td valign="top">
+
+2024-03-12
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+OpenID Connect
+
+</td>
+<td valign="top">
+
+You can add authentication context class references for OpenID Connect corporate IdPs. See [Configure Authentication Context](Operation-Guide/configure-authentication-context-028cee2.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+2024-03-12
+
+</td>
+<td valign="top">
+
+2024-03-12
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
 2024-02-28
 
 </td>
@@ -152,7 +416,11 @@ Identity Authentication
 </td>
 <td valign="top">
 
-Identity Authentication
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
 
 </td>
 <td valign="top">
@@ -214,7 +482,11 @@ Identity Authentication
 </td>
 <td valign="top">
 
-Identity Authentication
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
 
 </td>
 <td valign="top">

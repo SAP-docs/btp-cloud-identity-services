@@ -2,11 +2,11 @@
 
 # Audit Logs
 
-Tenant administrators can access the audit logs for changes in the personal data, successful, and failed authentications in Identity Authentication.
+Tenant administrators can access the audit logs for changes in the personal data, and successful, and failed authentications in Identity Authentication.
 
 Identity Authentication runs on several underlying *Infrastructure-as-a-Service* technologies and regions. Some are owned by SAP and some are owned by our partner infrastructure providers, including Amazon Web Services and Microsoft Azure. For more information, see [Regional Availability](../regional-availability-be600ca.md).
 
-Based on the infrastructure the tenant is running on there are two different procedure for accessing the audit logs.
+Based on the infrastructure the tenant is running on there are two different procedures for accessing the audit logs.
 
 > ### Note:  
 > The audit log entries are retained for:

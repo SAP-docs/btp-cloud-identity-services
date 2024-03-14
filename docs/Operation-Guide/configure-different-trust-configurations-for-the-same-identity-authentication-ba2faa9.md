@@ -45,7 +45,7 @@ When Identity Authentication verifies the SAML2.0 message coming from the corpor
 
 4.  Choose the *Trust* tab.
 
-5.  Under *Conditional Authentication*, choose *Configure SAML 2.0 Requests to Corporate Identity Providers*.
+5.  Choose *Conditional Authentication* \> *Configure Requests to Corporate Identity Providers* \> *SAML 2.0*.
 
 6.  Under *Configure Issuer Name*, type the issuer suffix, which you want to add to the Identity Authentication default issuer name.
 

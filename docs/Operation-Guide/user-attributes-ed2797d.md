@@ -15,6 +15,9 @@ Tenant administrator has an overview of all the attributes provided to the appli
 > 
 > When the application uses a corporate IdP for authentication, and *Identity Federation* is disabled, Identity Authentication sends to the application the attributes that come from the corporate identity provider without changing them, and if configured, some of the same values with additional attribute names, namely configured on the trust to the corporate IdP, enriched assertion attributes or enriched token claims.
 
+> ### Tip:  
+> For OpenID Connect, the supported scopes are `email`, `profile`, `openid`, and `groups`. The usage of these claims ensure uniqueness, especially in proxy mode, they are recommended over the configuration of attributes in the administration console for SAP Cloud Identity Services.
+
 The application can get different values for a certain attribute name. The following options for sources are possible:
 
 -   *Identity Directory* - The local user attribute. You choose the value from a drop-down. See [Configuring User Attributes from the Identity Directory](configuring-user-attributes-from-the-identity-directory-d361407.md).
@@ -22,12 +25,16 @@ The application can get different values for a certain attribute name. The follo
 -   *Expression* - A static or dynamic value. It can be a user attribute coming from *Identity Directory* or *Corporate Identity Provider*, or even a combination of all sources. See [Configuring Attributes Based on Flexible Expressions](configuring-attributes-based-on-flexible-expressions-a2f1e46.md).
 
 > ### Tip:  
-> The *Identity Directory* source maps to the the *Assertion Attributes* term used before in this documentation.
+> The *Identity Directory* source maps to the *Assertion Attributes* term used before in this documentation.
 > 
 > Depending on the scenario, the *Corporate Identity Provider* and *Expression* map to the *Default Attributes* term used before in this documentation.
 
 > ### Note:  
 > You can specify multiple user attribute values for each user attribute. Up to 300 attribute values are allowed for self-created customer applications and automatically created single-tenant applications, and up to 50 attribute values for automatically created single-tenant applications.
+> 
+> -   for OpenID Connect - the attributes are included in the token as string if there is one value, and array if multiple.
+> 
+> -   for SAML 2.0 - the attributes are included in the assertion as one attribute statement with multiple values in it.
 
 
 

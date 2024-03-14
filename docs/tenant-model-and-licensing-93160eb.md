@@ -332,6 +332,438 @@ You can now start testing Identity Authentication and Identity Provisioning feat
 > ### Note:  
 > If you encounter any issues and you need support, send an email to `SAPCPTrialSupport@sap.com` or start a discussion in [SAP Community](https://community.sap.com/).
 
+
+
+<a name="loio93160ebd2dcb40e98aadcbb9a970f2b9__section_ct1_qnw_41c"/>
+
+## Data Center Mapping
+
+Below is the mapping between the multi-environment subaccount in the Cloud Foundry region and the region of the Identity Authentication tenant:
+
+**Region Mapping: Cloud Foundry - Identity Authentication**
+
+
+<table>
+<tr>
+<th valign="top">
+
+IaaS Provider
+
+</th>
+<th valign="top">
+
+Cloud Foundry - Region Name
+
+</th>
+<th valign="top">
+
+Cloud Foundry - Region Key
+
+</th>
+<th valign="top">
+
+Identity Authentication - Data Center
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Amazon Web Services
+
+</td>
+<td valign="top">
+
+Australia \(Sydney\)
+
+</td>
+<td valign="top">
+
+ap10
+
+</td>
+<td valign="top">
+
+Australia \(Sydney\) / Japan \(Tokyo\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Amazon Web Services
+
+</td>
+<td valign="top">
+
+Asia Pacific \(Singapore\)
+
+</td>
+<td valign="top">
+
+ap11
+
+</td>
+<td valign="top">
+
+Singapore
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Amazon Web Services
+
+</td>
+<td valign="top">
+
+Asia Pacific \(Seoul\)
+
+</td>
+<td valign="top">
+
+ap12
+
+</td>
+<td valign="top">
+
+Seoul \(South Korea\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Microsoft Azure
+
+</td>
+<td valign="top">
+
+Australia \(Sydney\)
+
+</td>
+<td valign="top">
+
+ap20
+
+</td>
+<td valign="top">
+
+Australia \(Sydney\) / Japan \(Tokyo\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Microsoft Azure
+
+</td>
+<td valign="top">
+
+Singapore
+
+</td>
+<td valign="top">
+
+ap21
+
+</td>
+<td valign="top">
+
+Singapore
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Amazon Web Services
+
+</td>
+<td valign="top">
+
+Brazil \(São Paulo\)
+
+</td>
+<td valign="top">
+
+br10
+
+</td>
+<td valign="top">
+
+Brazil \(São Paulo\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Amazon Web Services
+
+</td>
+<td valign="top">
+
+Canada \(Montreal\)
+
+</td>
+<td valign="top">
+
+ca10
+
+</td>
+<td valign="top">
+
+Canada \(Toronto\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Microsoft Azure
+
+</td>
+<td valign="top">
+
+Switzerland \(Zurich\)
+
+</td>
+<td valign="top">
+
+ch20
+
+</td>
+<td valign="top">
+
+Switzerland \(Zürich\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Amazon Web Services
+
+</td>
+<td valign="top">
+
+Europe \(Frankfurt\)
+
+</td>
+<td valign="top">
+
+eu10
+
+</td>
+<td valign="top">
+
+Germany \(Frankfurt\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Amazon Web Services
+
+</td>
+<td valign="top">
+
+Europe \(Frankfurt\)
+
+</td>
+<td valign="top">
+
+eu11
+
+</td>
+<td valign="top">
+
+Germany \(Frankfurt\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Microsoft Azure
+
+</td>
+<td valign="top">
+
+Europe \(Netherlands\)
+
+</td>
+<td valign="top">
+
+eu20
+
+</td>
+<td valign="top">
+
+Netherlands \(Amsterdam\) / Germany \(Frankfurt\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Google Cloud
+
+</td>
+<td valign="top">
+
+India \(Mumbai\) GCP
+
+</td>
+<td valign="top">
+
+in30
+
+</td>
+<td valign="top">
+
+India \(Mumbai\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Amazon Web Services
+
+</td>
+<td valign="top">
+
+Japan \(Tokyo\)
+
+</td>
+<td valign="top">
+
+jp10
+
+</td>
+<td valign="top">
+
+Japan \(Tokyo\) / Japan \(Osaka\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Microsoft Azure
+
+</td>
+<td valign="top">
+
+Japan \(Tokyo\)
+
+</td>
+<td valign="top">
+
+jp20
+
+</td>
+<td valign="top">
+
+Japan \(Tokyo\) / Japan \(Osaka\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Amazon Web Services
+
+</td>
+<td valign="top">
+
+US East \(VA\)
+
+</td>
+<td valign="top">
+
+us10
+
+</td>
+<td valign="top">
+
+United States \(Sterling\) / United States \(Colorado\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Microsoft Azure
+
+</td>
+<td valign="top">
+
+US West \(WA\)
+
+</td>
+<td valign="top">
+
+us20
+
+</td>
+<td valign="top">
+
+West US 2
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Microsoft Azure
+
+</td>
+<td valign="top">
+
+US East \(VA\)
+
+</td>
+<td valign="top">
+
+us21
+
+</td>
+<td valign="top">
+
+United States \(Sterling\) / United States \(Colorado\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Google Cloud
+
+</td>
+<td valign="top">
+
+US Central \(IA\)
+
+</td>
+<td valign="top">
+
+us30
+
+</td>
+<td valign="top">
+
+West US 2
+
+</td>
+</tr>
+</table>
+
 **Related Information**  
 
 

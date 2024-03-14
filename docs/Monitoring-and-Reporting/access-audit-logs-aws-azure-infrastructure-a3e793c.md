@@ -21,7 +21,7 @@ You have a subaccount in your global account on SAP BTP, Cloud Foundry. For more
 > 
 > For tenants on the SAP infrastructure, see [Access Audit Logs \(SAP Infrastructure\)](access-audit-logs-sap-infrastructure-9f6b9a4.md).
 
-To view the audit logs for tenants on the AWS and Azure infrastructure you must add configurations in the SAP BTP cockpit and the administration console for SAP Cloud Identity Services first.
+To view the audit logs for tenants on the AWS and Azure infrastructure, you must add configurations in the SAP BTP cockpit and the administration console for SAP Cloud Identity Services first.
 
 The audit log entries for tenants on the AWS and Azure infrastructure are retained for 90 days.
 
@@ -120,9 +120,9 @@ To view the audit logs, follow the procedures below:
 
 2.  Choose the *Audit and Change Logs* tile.
 
-3.  Choose the *Cloud Foundry* tab.
+3.  Choose the *Audit Logs* tab.
 
-4.  Choose *Add*.
+4.  Choose *\+Add*.
 
 5.  Fill in the required information in the pop up and save your changes.
 
@@ -341,6 +341,60 @@ To view the audit logs, follow the procedures below:
     </td>
     </tr>
     <tr>
+    <td valign="top">
+    
+    US West / East US
+    
+    </td>
+    <td valign="top">
+    
+    azure-eastus
+    
+    </td>
+    <td valign="top">
+    
+    cf-us20
+    
+    </td>
+    <td valign="top">
+    
+    US West \(WA\)
+    
+    </td>
+    <td valign="top">
+    
+    Yes
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+     
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    <td valign="top">
+    
+     
+    
+    </td>
+    </tr>
+    <tr>
     <td valign="top" rowspan="2">
     
     Singapore
@@ -428,7 +482,7 @@ To view the audit logs, follow the procedures below:
     <tr>
     <td valign="top" rowspan="4">
     
-    Europe / Germany Frankfurt\(\)
+    Europe / Germany \(Frankfurt\)
     
     </td>
     <td valign="top" rowspan="4">
@@ -605,13 +659,390 @@ To view the audit logs, follow the procedures below:
     
     </td>
     </tr>
+    <tr>
+    <td valign="top" colspan="5">
+    
+     
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" rowspan="4">
+    
+    Europe / Germany \(Frankfurt\)
+    
+    </td>
+    <td valign="top" rowspan="4">
+    
+    eu-de-2
+    
+    </td>
+    <td valign="top">
+    
+    cf-eu10
+    
+    </td>
+    <td valign="top">
+    
+    Europe \(Frankfurt\)
+    
+    </td>
+    <td valign="top">
+    
+    Yes
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    cf-eu11
+    
+    </td>
+    <td valign="top">
+    
+    Europe \(Frankfurt\) EU Access
+    
+    </td>
+    <td valign="top">
+    
+    No
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    cf-eu20
+    
+    </td>
+    <td valign="top">
+    
+    Europe \(Netherlands\)
+    
+    </td>
+    <td valign="top">
+    
+    No
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    cf-eu30
+    
+    </td>
+    <td valign="top">
+    
+    Europe \(Frankfurt\) GCP
+    
+    </td>
+    <td valign="top">
+    
+    No
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" colspan="5">
+    
+     
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" rowspan="2">
+    
+    Australia \(Sydney\)
+    
+    </td>
+    <td valign="top" rowspan="2">
+    
+    ap-au-1
+    
+    </td>
+    <td valign="top">
+    
+    cf-ap10
+    
+    </td>
+    <td valign="top">
+    
+    Australia \(Sydney\)
+    
+    </td>
+    <td valign="top">
+    
+    Yes
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    cf-ap20
+    
+    </td>
+    <td valign="top">
+    
+    Australia \(Sydney\)
+    
+    </td>
+    <td valign="top">
+    
+    No
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" colspan="5">
+    
+     
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" rowspan="2">
+    
+    Japan \(Tokyo\)
+    
+    </td>
+    <td valign="top" rowspan="2">
+    
+    ap-jp-1
+    
+    </td>
+    <td valign="top">
+    
+    cf-jp10
+    
+    </td>
+    <td valign="top">
+    
+    Japan \(Tokyo\)
+    
+    </td>
+    <td valign="top">
+    
+    Yes
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    cf-jp20
+    
+    </td>
+    <td valign="top">
+    
+    Japan \(Tokyo\)
+    
+    </td>
+    <td valign="top">
+    
+    No
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" colspan="5">
+    
+     
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" rowspan="2">
+    
+    US East / East US
+    
+    </td>
+    <td valign="top" rowspan="2">
+    
+    na-us-2
+    
+    </td>
+    <td valign="top">
+    
+    cf-us10
+    
+    </td>
+    <td valign="top">
+    
+    US East \(VA\)
+    
+    </td>
+    <td valign="top">
+    
+    Yes
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    cf-us21
+    
+    </td>
+    <td valign="top">
+    
+    US East \(VA\)
+    
+    </td>
+    <td valign="top">
+    
+    No
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" colspan="5">
+    
+     
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" rowspan="4">
+    
+    Europe / Netherlands \(Amsterdam\)
+    
+    </td>
+    <td valign="top" rowspan="4">
+    
+    eu-nl-1
+    
+    </td>
+    <td valign="top">
+    
+    cf-eu10
+    
+    </td>
+    <td valign="top">
+    
+    Europe \(Frankfurt\)
+    
+    </td>
+    <td valign="top">
+    
+    Yes
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    cf-eu11
+    
+    </td>
+    <td valign="top">
+    
+    Europe \(Frankfurt\) EU Access
+    
+    </td>
+    <td valign="top">
+    
+    No
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    cf-eu20
+    
+    </td>
+    <td valign="top">
+    
+    Europe \(Netherlands\)
+    
+    </td>
+    <td valign="top">
+    
+    No
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    cf-eu30
+    
+    </td>
+    <td valign="top">
+    
+    Europe \(Frankfurt\) GCP
+    
+    </td>
+    <td valign="top">
+    
+    No
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" colspan="5">
+    
+     
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top" rowspan="2">
+    
+    US East / East US
+    
+    </td>
+    <td valign="top" rowspan="2">
+    
+    na-us-1
+    
+    </td>
+    <td valign="top">
+    
+    cf-us10
+    
+    </td>
+    <td valign="top">
+    
+    US East \(VA\)
+    
+    </td>
+    <td valign="top">
+    
+    Yes
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    cf-us21
+    
+    </td>
+    <td valign="top">
+    
+    US East \(VA\)
+    
+    </td>
+    <td valign="top">
+    
+    No
+    
+    </td>
+    </tr>
     </table>
     
 6.  Save your changes.
 
+    > ### Caution:  
+    > If your SAP Cloud Identity Services tenant is migrated to a new region, you must remove the current configuration and repeat procedure with the new region.
+
 7.  View the audit logs. You have two options to do that:
 
-    -   \(if subdomain is configured\) choose the link to the *Audit Log Viewer* in the *Audit Service Configuration* in the administration console
+    -   \(if subdomain is configured\) choose the link to the *Audit Log Viewer* in the *Audit Service Configuration* in the administration console.
     -   in the cockpit, navigate to *Services* \> *Instances and Subscriptions* \> *Audit Log Viewer*.
 
 
