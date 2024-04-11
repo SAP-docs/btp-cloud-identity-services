@@ -10,7 +10,7 @@ SAP Cloud Identity Services have production releases \(updates\) every second Tu
 
 ## Subscription for Notifications
 
-To get notifications, subscribe for the What's New sections of [Identity Authentication](https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=Identity%2520Authentication&locale=en-US&version=Cloud) and [Identity Provisioning](https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?version=Cloud&Component=Identity%2520Provisioning&locale=en-US). For more information, see [Subscribing to What's New Notifications](https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=Identity%20Authentication&locale=en-US&version=Cloud).
+To get notifications, subscribe for the What's New section of [Cloud Identity Services](https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=Cloud%20Identity%20Services&locale=en-US&version=Cloud).
 
 
 

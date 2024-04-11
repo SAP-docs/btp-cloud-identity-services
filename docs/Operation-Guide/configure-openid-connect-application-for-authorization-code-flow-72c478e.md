@@ -84,18 +84,6 @@ To configure an OpenID Connect trusted application in the administration console
     <tr>
     <td valign="top">
     
-    *Post Logout Redirect URIs \(mandatory\)*
-    
-    </td>
-    <td valign="top">
-    
-    The redirection URIs where the user can be forwarded after logout. You can add up to 20 redirect URIs.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     *Front-Channel Logout URIs \(optional\)*
     
     </td>
