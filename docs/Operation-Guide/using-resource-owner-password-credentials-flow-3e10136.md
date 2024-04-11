@@ -14,5 +14,5 @@ Tasks 1 and 2 are configurations on Identity Authentication. Task 3 is a configu
 **Related Information**  
 
 
-[OpenID Connect](openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
+[Configuring OpenID Connect](configuring-openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
 

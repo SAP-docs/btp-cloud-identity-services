@@ -10,7 +10,7 @@ Tenant administrator can modify the assertion attributes received from the corpo
 
 The attributes received from the corporate IdP by Identity Authentication are modified and thus sent to the application in the assertion.
 
-The attributes are also put in the `id_token` if the application is OpenID connect. For more information, see [OpenID Connect](openid-connect-a789c9c.md).
+The attributes are also put in the `id_token` if the application is OpenID connect. For more information, see [Configuring OpenID Connect](configuring-openid-connect-a789c9c.md).
 
 For both, the SAML 2.0 and OpenID Connect applications, you can configure attributes with:
 

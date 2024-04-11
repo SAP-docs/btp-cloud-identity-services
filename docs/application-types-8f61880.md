@@ -88,7 +88,7 @@ You can access the tenant's administration console for SAP Cloud Identity Servic
 > 
 > `https://<tenant ID>.accounts.ondemand.com/admin` or `https://<tenant ID>.accounts.cloud.sap/admin`
 > 
-> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](viewing-assigned-tenants-and-administrators-f56e6f2.md).
+> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [View Assigned Tenants and Admins](view-assigned-tenants-and-admins-f56e6f2.md).
 > 
 > If you have a configured custom domain, the URL has the `<your custom domain>/admin` pattern.
 
@@ -169,13 +169,4 @@ Existing applications that have a parent application assigned to them will inher
 
 > ### Tip:  
 > A child application can override all the configurations inherited from the parent application. If you change a configuration in the child that is inherited from the parent, and after that you decide to return to the inherited one, go to the respective configuration and choose the *Inherit from Parent* button on the top right-hand corner of the screen.
-
-**Related Information**  
-
-
-[Tenant Types](tenant-types-069b25d.md "Identity Authentication provides three types of tenants - productive, test, and trial")
-
-[User Types](user-types-70e95d1.md "")
-
-[Cookies](cookies-e60fd04.md "")
 

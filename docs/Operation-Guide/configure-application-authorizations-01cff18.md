@@ -2,7 +2,7 @@
 
 # Configure Application Authorizations
 
-Configure access to the applications in the administration console of SAP Cloud Identity Services.
+Configure granular access and control over the applications in the administration console of SAP Cloud Identity Services.
 
 
 
@@ -10,7 +10,7 @@ Configure access to the applications in the administration console of SAP Cloud 
 
 ## Prerequisites
 
-You have enabled the authorizations based op policies option in the admin console for SAP Cloud Identity Services. See [Configure Authorizations Based on Policies](configure-authorizations-based-on-policies-08fea39.md).
+You have enabled the authorizations based on policies option in the admin console for SAP Cloud Identity Services. See [Configure Authorizations Based on Policies](configure-authorizations-based-on-policies-08fea39.md).
 
 
 
@@ -24,8 +24,7 @@ Once it's enabled, it may take up to 60 seconds before the administrator can see
 > ### Note:  
 > The Manage Applications authorization overrides all "applications" package policies, while the Manage Users authorization overrides the `READ_APPLICATIONS` policy only. If you want to configure access to the applications based on policies, you must remove the Manage Applications and Manage Users authorizations. For more information, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
 
-> ### Example:  
-> Michael Adams is an administrator at retail company A. He has all the authorizations in the administration console for SAP Cloud Identity Services. Dona Moore the financial manager at company A. She is not an administrator, but she needs to have access to the list of all applications in the tenant. Michael Adams adds her to the `READ_APPLICATIONS` policy. As a result, now, when Dona accesses the administration console she sees only the *Applications* tile, and all the operations in it are read-only.
+You can restrict access on the basis of the base policies or you can use a custom policy, restricting the applications on the basis of the `application.organization` attribute.
 
 
 
@@ -37,17 +36,83 @@ Once it's enabled, it may take up to 60 seconds before the administrator can see
 
 3.  Under *System Applications*, choose the list item for the administration console.
 
-4.  Under the tab *Authorization Policies*, filter the policies by the "applications" package.
+4.  Under the tab *Authorization Policies*, you can choose the following options:
 
-    > ### Note:  
-    > This limits the policies to the following: `CREATE_APPLICATIONS` , `DELETE_APPLICATIONS`, `MANAGE_APPLICATIONS`, `READ_APPLICATIONS`, and `UPDATE_APPLICATIONS`.
 
-5.  Select a policy from the list
+    <table>
+    <tr>
+    <th valign="top">
 
-6.  Choose *Add* button.
+     
+    
+    </th>
+    <th valign="top">
 
-7.  Select the user or users and choose *Add*.
+     
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Use base policy**
+    
+    </td>
+    <td valign="top">
+    
+    1.  Filter the policies by the "applications" package.
 
+        > ### Note:  
+        > This limits the policies to the following: *CREATE\_APPLICATIONS* , *DELETE\_APPLICATIONS*,*MANAGE\_APPLICATIONS*, *READ\_APPLICATIONS*, and *UPDATE\_APPLICATIONS*.
+
+    2.  Select a policy from the list.
+    3.  Choose the *Add* button.
+    4.  Select the user or users and choose Add.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Use custom policy**
+    
+    </td>
+    <td valign="top">
+    
+    1.  Select a custom authorization policy.
+
+        > ### Note:  
+        > If you don’t have an authorization policy in your list, you can create a restiction policy using the `applications.DELETE_APPLICATIONS`, `applications.READ_APPLICATIONS`, `applications.UPDATE_APPLICATIONS` parameters. For more information about how to create a custom authorization policy, see [Create an Authorization Policy](create-an-authorization-policy-897fc30.md).
+
+    2.  Choose the *Edit* button.
+    3.  To customize the rules of the authorization policy, choose *Rules*.
+    4.  To assign user to this policy, choose the *Assignments* tab and add users from the list.
+
+        > ### Restriction:  
+        > If the user is a tenant administrator you must remove the *Manage Applications* and *Manage Users* roles from that user, otherwise they won't be able to see and have control \(read, update or delete\) over the application for this policy.
+
+    5.  Save your changes.
+
+        > ### Note:  
+        > Now the assigned users can see and have control over applications with *Organization ID* specified in the custom policy.
+
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
+
+
+
+<a name="loio01cff18e443142b195545a97115fc3fe__postreq_aqc_bjd_w1c"/>
+
+## Next Steps
+
+View or edit the *Organization ID* of the application. By default, all applications are in the *global* organization. For more information, see [Edit Applications](edit-applications-69d8cad.md)
 
 **Related Information**  
 

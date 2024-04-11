@@ -2,5 +2,5 @@
 
 # Concepts
 
-This section describes basic concepts that will help you familiarize yourself with the Identity Authentication.
+This section describes basic concepts that will help you familiarize yourself with the SAP Cloud Identity Services.
 

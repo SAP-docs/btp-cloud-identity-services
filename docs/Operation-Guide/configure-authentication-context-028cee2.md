@@ -67,9 +67,12 @@ Tenant administrator can configure the authentication context in the request sen
     </td>
     <td valign="top">
     
-    Add the authentication context class references and save your changes.
+    Choose *Add* \> *enter the authentication context class references* \> *save your changes*.
 
-    > ### Note:  
+    > ### Tip:  
+    > If the authentication context exist the metadata of the identity provider it can be seen in the administration console at *Identity Providers* \> *Corporate Identity Providers* \> *from the list - the corporate IdP that provides user authentication to the application* \> *OpenID Connect Configuration* \> *Supported Authentication Contexts section*.
+
+    > ### Restriction:  
     > You can add up to 20 authentication context class references with a length of up to 99 characters each.
 
 

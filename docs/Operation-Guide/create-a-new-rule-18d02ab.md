@@ -103,7 +103,7 @@ Each rule contains the following information:
     > Identity Authentication expects the client IP to be sent by the proxy server in the **X-Forwarded-For** header of the authentication request.
 
     > ### Remember:  
-    > Identity Authentication does not have control over the involved proxies and their number, participating in the request between the client/user and Identity Authentication and wether these proxies behave according to the scenario. Therefore it is not guaranteed that the client IP address is sent in the abovementioned header alongside the IP addresses of the proxies \(if any\) to Identity Authentication.
+    > Identity Authentication does not have control over the involved proxies and their number, participating in the request between the client/user and Identity Authentication and wether these proxies behave according to the scenario. Therefore it is not guaranteed that the client IP address is sent in the above mentioned header alongside the IP addresses of the proxies \(if any\) to Identity Authentication.
 
 -   *Group*
 
@@ -111,7 +111,7 @@ Each rule contains the following information:
 
     If the rule is valid for an on-premise group, type in the name of the corporate user store group, for which this rule should be valid.
 
-    The cloud groups have to be configured in the administration console for SAP Cloud Identity Services. For more information, see [Groups](groups-ddd067c.md).
+    The cloud groups have to be configured in the administration console for SAP Cloud Identity Services. For more information, see [Managing Groups](managing-groups-ddd067c.md).
 
 -   *Authentication Method*
 

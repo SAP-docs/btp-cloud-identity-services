@@ -75,7 +75,7 @@ Users can link their Identity Authentication account with a social network accou
 </td>
 <td valign="top">
 
-[Scenarios](scenarios-fb9898d.md), [Social Identity Providers](Operation-Guide/social-identity-providers-17d400d.md), [Social Authentication](User-Guide/social-authentication-108607a.md).
+[Scenarios](scenarios-fb9898d.md), [Configuring Social Identity Providers](Operation-Guide/configuring-social-identity-providers-17d400d.md), [Social Authentication](User-Guide/social-authentication-108607a.md).
 
 </td>
 </tr>
@@ -245,7 +245,7 @@ Administrators can create and delete groups, and assign and unassign users.
 </td>
 <td valign="top">
 
-[Groups](Operation-Guide/groups-ddd067c.md)
+[Managing Groups](Operation-Guide/managing-groups-ddd067c.md)
 
 </td>
 </tr>
@@ -322,13 +322,11 @@ Users can use services to maintain or update their user profiles and to log on t
 **Related Information**  
 
 
-[Tenant Model and Licensing](tenant-model-and-licensing-93160eb.md "This document provides information about the tenant model, tenant licensing, and obtaining a tenant of Identity Authentication.")
-
-[Web-Based Logon Interface](web-based-logon-interface-8e40afc.md "Service providers that delegate authentication to Identity Authentication can use two types of visualization of the web-based user interfaces for the logon pages of their applications.")
-
 [Regional Availability](regional-availability-be600ca.md "Tenants are deployed on the productive domain accounts.ondemand.com.")
 
 [Disaster Recovery/High Availability](disaster-recovery-high-availability-2c1a055.md "Disaster recovery (DR) and high availability (HA) are based on the capabilities of the underlying infrastructure.")
+
+[Web-Based Logon Interface](web-based-logon-interface-8e40afc.md "Service providers that delegate authentication to Identity Authentication can use two types of visualization of the web-based user interfaces for the logon pages of their applications.")
 
 [Browser Support](browser-support-0741076.md "Information on the supported browser version for the administration console, and the end user screens of SAP Cloud Identity Services.")
 

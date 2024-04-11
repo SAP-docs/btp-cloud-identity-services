@@ -30,3 +30,8 @@ Data subjects can obtain information about their personal data in Identity Auth
 
 Tenant administrators can view detailed information about the users in the administration console for SAP Cloud Identity Services. Optionally they can edit this information. For more information, see [List and Edit User Details](../Operation-Guide/list-and-edit-user-details-045cb01.md).
 
+> ### Note:  
+> Currently, the Information Report is not applicable for Identity Provisioning.
+
+The Identity Provisioning only transfers entities from a source system to a target one. The applications representing these source and target systems may provide data about the provisioned entities but this data is only stored in the systems, not in the Identity Provisioning itself.
+

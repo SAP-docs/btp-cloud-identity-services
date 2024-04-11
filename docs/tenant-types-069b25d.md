@@ -5,7 +5,7 @@
 Identity Authentication provides three types of tenants - productive, test, and trial
 
 > ### Note:  
-> For more information about obtaining a tenant of Identity Authentication, see [Tenant Model and Licensing](tenant-model-and-licensing-93160eb.md).
+> For more information about obtaining a tenant of Identity Authentication, see [Tenants](tenants-93160eb.md).
 
 
 
@@ -33,13 +33,4 @@ The trial tenant is intended for testing purposes only. It allows you to try out
 > -   You can have only one SAP Cloud Identity Services trial tenant per SAP BTP global account regardless of how many subaccounts you create. If you have multiple subaccounts, and you have trial tenants for them, they use one and the same trial tenant.
 > -   You can have up to 50 users in a trial tenant.
 > -   You can't connect to on-premise systems using the cloud connector. It's not possible to subscribe to the Cloud Identity Services connectivity plan in your trial subaccount.
-
-**Related Information**  
-
-
-[Application Types](application-types-8f61880.md "Application types in the administration console for SAP Cloud Identity Services.")
-
-[User Types](user-types-70e95d1.md "")
-
-[Cookies](cookies-e60fd04.md "")
 

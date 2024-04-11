@@ -4,6 +4,322 @@
 
 Session cookies in Identity Authentication are protected with a Transport Layer Security \(TLS\) and with the *Secure* and *HttpOnly* attributes. You don't need to make any additional configurations for Identity Authentication.
 
+**Authentication Session Trackin**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Cookie
+
+</th>
+<th valign="top">
+
+Path
+
+</th>
+<th valign="top">
+
+Expiration
+
+</th>
+<th valign="top">
+
+Protection
+
+</th>
+<th valign="top">
+
+Value
+
+</th>
+<th valign="top">
+
+Info
+
+</th>
+<th valign="top">
+
+Reference
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`IDP_J_COOKIE`
+
+</td>
+<td valign="top">
+
+/
+
+</td>
+<td valign="top">
+
+Session
+
+</td>
+<td valign="top">
+
+-   Secure
+-   HttpOnly
+
+
+
+</td>
+<td valign="top">
+
+secure random token
+
+</td>
+<td valign="top">
+
+Track the authentication session of the user at the identity provider.
+
+The cookie is sent to the browser so the users can sign in to the application without the need to provide their credentials every time they access it.
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`REMEMBERME_COOKIE`
+
+</td>
+<td valign="top">
+
+/
+
+</td>
+<td valign="top">
+
+3 months
+
+</td>
+<td valign="top">
+
+-   Secure
+-   HttpOnly
+
+
+
+</td>
+<td valign="top">
+
+secure random token
+
+</td>
+<td valign="top">
+
+Allow user to keep their session for an extended period of time even after closing the Web browser
+
+</td>
+<td valign="top">
+
+[Configure the Remember Me Option](Operation-Guide/configure-the-remember-me-option-08d41f4.md)
+
+</td>
+</tr>
+</table>
+
+**Authentication & Single Sign-On Screens**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Cookie
+
+</th>
+<th valign="top">
+
+Path
+
+</th>
+<th valign="top">
+
+Expiration
+
+</th>
+<th valign="top">
+
+Protection
+
+</th>
+<th valign="top">
+
+Value
+
+</th>
+<th valign="top">
+
+Info
+
+</th>
+<th valign="top">
+
+Purpose
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`XSRF_COOKIE`
+
+</td>
+<td valign="top">
+
+/
+
+</td>
+<td valign="top">
+
+Session
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`locale`
+
+</td>
+<td valign="top">
+
+/
+
+</td>
+<td valign="top">
+
+Session
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+``
+
+</td>
+<td valign="top">
+
+/
+
+</td>
+<td valign="top">
+
+Session
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+``
+
+</td>
+<td valign="top">
+
+/
+
+</td>
+<td valign="top">
+
+Session
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+</table>
+
 ****
 
 
@@ -97,7 +413,7 @@ Locale
 </td>
 <td valign="top">
 
-If the locale is set, the e-mails use the language set there, if there is a template in that language. If there is no template in that language, the e-mails use the English language template.
+If the locale is set, the emails use the language set there, if there is a template in that language. If there is no template in that language, the emails use the English language template.
 
 </td>
 <td valign="top">
@@ -175,11 +491,19 @@ If the locale is set, the e-mails use the language set there, if there is a temp
 **Related Information**  
 
 
-[Tenant Types](tenant-types-069b25d.md "Identity Authentication provides three types of tenants - productive, test, and trial")
+[Tenants](tenants-93160eb.md "A tenant refers to your (customer-specific) instance of SAP Cloud Identity Services. It's delivered to you as part of a bundle with an SAP cloud solution or as part of a self-service request in SAP BTP cockpit.")
 
-[Application Types](application-types-8f61880.md "Application types in the administration console for SAP Cloud Identity Services.")
+[Bundles](bundles-25b65a4.md "A bundle is a group of preconfigured products and services which are sold together.")
 
-[User Types](user-types-70e95d1.md "")
+[Applications](applications-404a11c.md "An application is associated with a consumer of Identity Authentication as an identity provider. This consumer could be for example an SAP cloud solution, a third-party application, SAP BTP subaccount, or the SAP Cloud Identity Services administration console.")
+
+[Provisioning Systems](provisioning-systems-15da6af.md "Identity Provisioning provides connectors to various business applications for provisioning and deprovisioning of users and groups. These business applications are set up as provisioning systems in the administration console of SAP Cloud Identity Services.")
+
+[Properties](properties-e92c1aa.md "Properties hold the configuration of a provisioning system.")
+
+[Transformations](transformations-81f5204.md "Transformations help you transform user and group attributes from the data model of the source system to the data model of the target system.")
+
+[Users](users-70e95d1.md "Users in SAP Cloud Identity Services fall into two categories: administrators and end users.")
 
 [Configure the Remember Me Option](Operation-Guide/configure-the-remember-me-option-08d41f4.md "Tenant administrators can configure the Remember me option as visible or hidden, and checked or unchecked.")
 
@@ -191,11 +515,9 @@ If the locale is set, the e-mails use the language set there, if there is a temp
 
 [Configure Default Language for End User Screens](Operation-Guide/configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 
-[Access Applications with Single Sign-On on Mobile Devices](User-Guide/access-applications-with-single-sign-on-on-mobile-devices-89bbb0b.md "You can access trusted applications that require two-factor authentication via your mobile devices using single sign-on (SSO).")
-
 [Configuring Email Templates](Operation-Guide/configuring-email-templates-b2afbcd.md "Tenant administrators can use the default or a custom email template set for the application processes.")
 
-[Configure Source System To Migrate User Passwords from SAP Fieldglass to Identity Authentication](Operation-Guide/configure-source-system-to-migrate-user-passwords-from-sap-fieldglass-to-identity-authent-b0c7ec8.md)
+[Configure Authentication Provider To Migrate User Passwords from SAP Fieldglass to Identity Authentication](Operation-Guide/configure-authentication-provider-to-migrate-user-passwords-from-sap-fieldglass-to-identi-b0c7ec8.md)
 
 [Configuring Password Policies](Operation-Guide/configuring-password-policies-12b3395.md "Passwords for the authentication of users are subject to certain rules. These rules are defined in the password policy. Identity Authentication provides you with two predefined password policies, in addition to which you can create and configure up to three custom password policies.")
 

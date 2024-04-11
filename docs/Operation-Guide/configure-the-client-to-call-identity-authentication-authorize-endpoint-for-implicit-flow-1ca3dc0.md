@@ -480,5 +480,5 @@ iNTI4ZGE5OCJ9.-LSwBN2WSqnnqSkzSbg9iRmtAMR4moU5TpE40mX0Umw&state=state&token_type
 **Related Information**  
 
 
-[OpenID Connect](openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
+[Configuring OpenID Connect](configuring-openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
 

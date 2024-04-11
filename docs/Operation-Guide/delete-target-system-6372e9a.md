@@ -13,9 +13,9 @@ You are assigned the *Manage Users* role. For more information about how to assi
 **Related Information**  
 
 
-[Configure SAP Jam Target Systems for Real-Time Provisioning](configure-sap-jam-target-systems-for-real-time-provisioning-a923427.md "Tenant administrators can configure SAP Jam target systems for real-time provisioning via the administration console for SAP Cloud Identity Services.")
+[Configure SAP Jam for Real-Time Provisioning](configure-sap-jam-for-real-time-provisioning-a923427.md "Tenant administrators can configure SAP Jam target systems for real-time provisioning via the administration console for SAP Cloud Identity Services.")
 
-[Configure Identity Provisioning Target Systems for Real-Time User Provisioning](configure-identity-provisioning-target-systems-for-real-time-user-provisioning-3349645.md "You can configure Identity Provisioning target systems for real-time user provisioning via the administration console for SAP Cloud Identity Services.")
+[Configure Identity Provisioning for Real-Time Provisioning](configure-identity-provisioning-for-real-time-provisioning-3349645.md "You can configure Identity Provisioning target systems for real-time user provisioning via the administration console for SAP Cloud Identity Services.")
 
 [Provision Users to Target Systems](provision-users-to-target-systems-af6f78b.md "Tenant administrators can provision users of Identity Authentication to SAP Jam and Identity Provisioning target systems target system.")
 
@@ -80,5 +80,5 @@ You are assigned the *Manage Users* role. For more information about how to assi
 **Related Information**  
 
 
-[Real-Time Provisioning](real-time-provisioning-617dd4b.md "As a tenant administrator, you can configure target systems for real-time provisioning and provision users to these target systems.")
+[Configuring Real-Time Provisioning](configuring-real-time-provisioning-617dd4b.md "As a tenant administrator, you can configure target systems for real-time provisioning and provision users to these target systems.")
 

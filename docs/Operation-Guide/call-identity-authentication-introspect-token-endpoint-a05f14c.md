@@ -59,7 +59,7 @@ application/x-www-form-urlencoded
 <tr>
 <td valign="top">
 
-`Authentication`
+`Authorization`
 
 </td>
 <td valign="top">
@@ -69,16 +69,16 @@ Yes
 </td>
 <td valign="top">
 
--   Basic Authentication -
+-   Basic -
 
     Client ID and a Secret to authenticate the client \(relying party\). For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
 
     > ### Note:  
     > The client ID and secret must be encoded using the "application/x-www-form-urlencoded" encoding algorithm.
 
+-   Bearer <client\_credential\_token\>\)
 -   POST
 -   X.509 Certificate
--   Bearer <client\_credential\_token\>\)
 
 
 
@@ -142,7 +142,7 @@ Must contain the JWT or opaque token from the issuer.
 </td>
 <td valign="top">
 
-Path
+Request body
 
 </td>
 </tr>
@@ -169,7 +169,7 @@ string
 </td>
 <td valign="top">
 
-Path
+Request body
 
 </td>
 </tr>

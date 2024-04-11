@@ -8,7 +8,14 @@ Upload a CSS file and assign that file to an application for advanced customizat
 
 ## Context
 
-To use a custom CSS for the application end-user screens and profile page you must upload your custom CSS file in the administration console for SAP Cloud Identity Services and then assign that file to the application.
+To use a custom CSS for the application end-user screens and profile page, you must upload your custom CSS file in the administration console for SAP Cloud Identity Services and then assign that file to the application.
+
+> ### Caution:  
+> When working with custom CSS documents or importing CSS documents from external sources, always consider the following safety guidelines:
+> 
+> -   *Validate Sources* - Before importing a CSS file from an external source, be sure that you trust the provider.
+> -   *Review Content* - Inspect the content of the external CSS file to ensure it doesn't contain any security vulnerabilities.
+> -   *Monitor Regularly* - Periodically review and update the imported CSS documents to prevent any potential security vulnerabilities.
 
 ![](images/Custom_CSS_Flow_14dcfe9.png)
 
@@ -18,12 +25,12 @@ To use a custom CSS for the application end-user screens and profile page you mu
 
 *Horizon*
 
-The [Horizon-Example.zip](https://help.sap.com/doc/70eec5adf04f4f57a96e350c2ff5cb95/Cloud/en-US/Horizon-Example.zip) contains a CSS file which you can use to test the Custom CSS option for the Horizon theme. After you follow the procedures for uploading and assigning the example file, the resulting logon page will be:
+The [Horizon-Example.zip](https://help.sap.com/doc/70eec5adf04f4f57a96e350c2ff5cb95/Cloud/en-US/Horizon-Example.zip) contains a CSS file, which you can use to test the Custom CSS option for the Horizon theme. After you follow the procedures for uploading and assigning the example file, the resulting logon page will be:
 
 ![](images/Custom_Logon_Page_Horizon_bb0cd5f.png)
 
 > ### Note:  
-> The background image, and the tenant and application logo are configured separately, and are not part of the CSS file.
+> The background image, and the tenant and application logo are configured separately, and aren't part of the CSS file.
 
 *Quartz*
 

@@ -25,7 +25,7 @@ For more information, see [Subscribe to Multitenant Applications Using the Cockp
 
     For more information, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
 
--   You are using SAP Cloud Identity Services - Identity Authentication. For more information, see [Tenant Model and Licensing](../tenant-model-and-licensing-93160eb.md).
+-   You are using SAP Cloud Identity Services - Identity Authentication. For more information, see [Tenants](../tenants-93160eb.md).
 
 
 > ### Note:  

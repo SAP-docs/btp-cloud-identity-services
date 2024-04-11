@@ -11,7 +11,5 @@ The logo is displayed on the application's logon page and can be included into t
 
 [Create a New Application](create-a-new-application-0d4b255.md "You can create a new application and customize it to comply with your company requirements.")
 
-[Troubleshooting for Administrators](troubleshooting-for-administrators-f80beb5.md "This section is intended to help administrators deal with error messages in the administration console for SAP Cloud Identity Services.")
-
 [Configuring Email Templates](configuring-email-templates-b2afbcd.md "Tenant administrators can use the default or a custom email template set for the application processes.")
 

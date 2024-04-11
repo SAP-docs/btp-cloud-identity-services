@@ -621,7 +621,7 @@ Binding with no credentials:
 
 ## Code Flows
 
-For information about how the Identity Authentication service supports code flows, see [OpenID Connect](../Operation-Guide/openid-connect-a789c9c.md).
+For information about how the Identity Authentication service supports code flows, see [Configuring OpenID Connect](../Operation-Guide/configuring-openid-connect-a789c9c.md).
 
 
 

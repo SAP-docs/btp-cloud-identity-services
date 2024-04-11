@@ -2,7 +2,7 @@
 
 # Creating URL To Access Application with Specific Identity Provider
 
-Create a URL to access specific application in scenarios where Identity Authentication acts as a proxy to delegate authentication to multiple external corporate identity providers.
+Create a URL to access specific application in scenarios where Identity Authentication acts as a proxy to multiple external corporate identity providers.
 
 <a name="task_sp4_k4c_nzb"/>
 
@@ -30,7 +30,7 @@ The link for IdP-Initiated SSO follows the pattern: `https://<tenant_ID>.account
 > -   `sp` - Name of the SAML 2 service provider for which SSO is performed. The `sp_name` value of the parameter equals to the `Entity ID` of the service provider. This parameter is needed for Identity Authentication to know which service provider to redirect the user to after successful authentication.
 > -   `idp` - The name of the corporate identity provider as configured in the administration console for SAP Cloud Identity Services.
 > 
->     When multiple identity providers are allowed for an application via conditional authentication, this parameter enables the client to determine which corporate identity provider to be used. Identity Authentication uses the `idp` to detect the correct corporate identity provider and redirect the request to it. The user authenticates against the corporate identity provider.
+>     When multiple identity providers are allowed for an application via conditional authentication, this parameter enables the client to determine which corporate identity provider to be used. Identity Authentication uses the `idp` parameter to detect the correct corporate identity provider and redirect the request to it.
 
 <a name="task_ppl_l4c_nzb"/>
 

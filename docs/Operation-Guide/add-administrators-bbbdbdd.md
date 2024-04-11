@@ -37,6 +37,9 @@ You can add both a person and a system in the administration console to act as a
 
 ## Context
 
+> ### Tip:  
+> If you are not a tenant administrator, or you don't have the Manage Tenant Configuration role, as an alternative, you can view the tenant administrators of the tenants that are assigned to you and add new administrators in SAP Cloud Identity Services via the [SAP for Me](https://me.sap.com/home) portal. For more information see [Cloud Identity Services Administrators Card](https://support.sap.com/content/s4m/help/systems/systems/details/ias.html).
+
 To add a person as a new tenant administrator, proceed as follows:
 
 

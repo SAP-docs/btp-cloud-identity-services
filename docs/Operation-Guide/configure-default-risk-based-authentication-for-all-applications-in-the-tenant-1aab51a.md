@@ -51,6 +51,9 @@ If none of the authentication rules meets the criteria, the default authenticati
 
 The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentication Method*, or *User Type*.
 
+> ### Note:  
+> We recommend you to enable the back-up channels. Thus, the users can use the option as an alternative when they don't have access to the TOTP device or application. For more information, see [Enable Back-Up Channels to Send Passcode for Deactivation of TOTP Two-Factor Authentication Devices](enable-back-up-channels-to-send-passcode-for-deactivation-of-totp-two-factor-authenticati-782935e.md).
+
 > ### Remember:  
 > It takes 2 minutes for the configuration changes to take place.
 
@@ -322,7 +325,7 @@ Each rule contains the following information:
 
     If the rule is valid for an on-premise group, type in the name of the corporate user store group, for which this rule should be valid.
 
-    The cloud groups have to be configured in the administration console for Identity Authentication. For more information, see [Groups](groups-ddd067c.md).
+    The cloud groups have to be configured in the administration console for Identity Authentication. For more information, see [Managing Groups](managing-groups-ddd067c.md).
 
 -   *Authentication Method*
 

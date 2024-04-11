@@ -13,7 +13,7 @@ To link the accounts, users have to choose the social provider button on the log
 
 ## Prerequisites
 
-You have set the social providers on tenant level. For more information, see [Social Identity Providers](social-identity-providers-17d400d.md).
+You have set the social providers on tenant level. For more information, see [Configuring Social Identity Providers](configuring-social-identity-providers-17d400d.md).
 
 
 
@@ -53,7 +53,7 @@ Identity Authentication allows account linking with the following social provide
 
 ## Results
 
-With *Social Sign-On* users can log on to the application via one of the social providers. They can see this option on the logon page. Which social identity providers logos appear on the logon page of the application depends on the configurations you have made. For more information, see [Social Identity Providers](social-identity-providers-17d400d.md).
+With *Social Sign-On* users can log on to the application via one of the social providers. They can see this option on the logon page. Which social identity providers logos appear on the logon page of the application depends on the configurations you have made. For more information, see [Configuring Social Identity Providers](configuring-social-identity-providers-17d400d.md).
 
 **Related Information**  
 

@@ -15,7 +15,7 @@ You configure the attributes by defining which user attribute corresponds to the
 > ### Note:  
 > The user attribute name must match the name that the application is expecting.
 
-The attributes are also put in the `id_token` if the application is OpenID connect. For more information, see [OpenID Connect](openid-connect-a789c9c.md).
+The attributes are also put in the `id_token` if the application is OpenID connect. For more information, see [Configuring OpenID Connect](configuring-openid-connect-a789c9c.md).
 
 By default, Identity Authentication sets the following user attribute names:
 
@@ -557,7 +557,7 @@ app\_custom\_attribute\_5
 > ### Note:  
 > The **Value** column lists the attributes that can be shown on the registration and upgrade forms. The **Name** lists the attributes that are sent in the assertion.
 > 
-> The configured custom attributes are also put in the `id_token` if the application is OpenID connect. For more information, see [OpenID Connect](openid-connect-a789c9c.md).
+> The configured custom attributes are also put in the `id_token` if the application is OpenID connect. For more information, see [Configuring OpenID Connect](configuring-openid-connect-a789c9c.md).
 > 
 > The configured custom attributes can be seen at the user profile page after choosing *View My Data*.
 > 
@@ -608,9 +608,5 @@ app\_custom\_attribute\_5
 
 [Configure Registration and Upgrade Forms](configure-registration-and-upgrade-forms-93a9e18.md "In the administration console, you can configure which user attributes Identity Authentication sends to the service provider or client (relying party) to be displayed on application's registration and upgrade forms.")
 
-[Troubleshooting for Administrators](troubleshooting-for-administrators-f80beb5.md "This section is intended to help administrators deal with error messages in the administration console for SAP Cloud Identity Services.")
-
 [Create a New Application](create-a-new-application-0d4b255.md "You can create a new application and customize it to comply with your company requirements.")
-
-[SAML 2.0](saml-2-0-0708833.md "")
 

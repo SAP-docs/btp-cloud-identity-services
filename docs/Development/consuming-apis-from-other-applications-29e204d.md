@@ -84,5 +84,5 @@ The administrator must ensure that the two applications can share the APIs betwe
 
 [Provide APIs for Consumption by Other Applications](provide-apis-for-consumption-by-other-applications-9d2fe83.md "SAP Cloud Identity Services can help you expose your application to other applications. You can expose APIs with an access control list or tie the access to the authorizations of the current user (principle propagation).")
 
-[Consume an API from Another Application](consume-an-api-from-another-application-9675b64.md "Define a dependency to the API of another application. Your consumer application can request an access token from Identity Authentication to consume that API.")
+[Consume an API from Another Application](consume-an-api-from-another-application-9675b64.md "Your consumer application can request an access token from Identity Authentication to consume the API of a provider application.")
 

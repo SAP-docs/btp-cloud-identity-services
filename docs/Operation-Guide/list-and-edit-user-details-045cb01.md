@@ -46,6 +46,12 @@ The *Valid From* and *Valid To* fields are empty if no validity dates are set fo
 
 
 
+### Attributes from Custom Schema
+
+The attributes assigned from custom schema are visible at the bottom of the *User Details* tab under a section with the name of the custom schema. This information is read-only. If you want to update an attribute, you must call the PATCH method of [Resource Management API](https://api.sap.com/api/IdDS_SCIM/path/patchUser) of SAP Cloud Identity Services.
+
+
+
 ## Procedure
 
 1.  Find the user whose details you want to view or edit.

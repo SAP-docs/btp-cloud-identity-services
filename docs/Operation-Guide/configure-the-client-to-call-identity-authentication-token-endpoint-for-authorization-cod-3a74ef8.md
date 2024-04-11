@@ -468,7 +468,7 @@ Tk4In0.J-aygbQ8IQlw4KD2t1hTPB2gyu3NdTbINDJ9eRs997g",
 **Related Information**  
 
 
-[OpenID Connect](openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
+[Configuring OpenID Connect](configuring-openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
 
 [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow with PKCE](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-a721157.md "The authorization code flow with PKCE is recommended for public clients that aren’t capable of keeping the client secrets.")
 

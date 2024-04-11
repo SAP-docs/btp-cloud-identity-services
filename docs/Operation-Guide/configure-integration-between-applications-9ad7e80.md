@@ -2,7 +2,7 @@
 
 # Configure Integration Between Applications
 
-To enable one application to consume the APIs of another application, applications can request tokens with access privileges for APIs of another application. With this configuration, you authorize one application to consume the API of another application.
+Define a dependency to the API of another application. With this configuration, you authorize one application to consume the API of another application.
 
 
 
@@ -10,9 +10,18 @@ To enable one application to consume the APIs of another application, applicatio
 
 ## Prerequisites
 
-You know the name of the API needed by the consumer application.
+-   You know the name of the API needed by the consumer application.
 
-Either the API name is listed in the documentation of the provider application or you must look it up in the provider application.
+    The provider application must define this name automatically during deployment, in the documentation of the application, or from the developers directly for custom developments.
+
+    For more information, see [Provide APIs for Consumption by Other Applications](../Development/provide-apis-for-consumption-by-other-applications-9d2fe83.md).
+
+-   You know the name of the dependency to enter for the consumer application.
+
+    The consumer application must define this name automatically during deployment, in the documentation of the application, or from the developers directly for custom developments.
+
+    For more information, see [Integrating Applications](integrating-applications-9ea0024.md).
+
 
 
 
@@ -28,10 +37,12 @@ Either the API name is listed in the documentation of the provider application o
 
 5.  Enter the required data.
 
-    1.  Enter the dependency name specified by or negotiated with the consuming application.
+    1.  Enter a unique name for the dependency.
 
     2.  Choose the provider application and the API the consumer application consumes.
 
+
+6.  Save your entries.
 
 
 
@@ -41,4 +52,6 @@ Either the API name is listed in the documentation of the provider application o
 ## Results
 
 The consumer application can consume the specified API of the provider application.
+
+For more information about how application developers uses this dependency, see [Consume an API from Another Application](../Development/consume-an-api-from-another-application-9675b64.md).
 

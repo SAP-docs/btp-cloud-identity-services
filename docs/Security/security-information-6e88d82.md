@@ -40,6 +40,17 @@ For more information, see [Security Recommendations](https://help.sap.com/docs/B
 
 Identity Authentication is fully web browser based application, with all access over HTTPS. Every page of the Identity Authentication application is currently delivered via Transport Layer Security \(TLS\). Access to Identity Authentication is encrypted-in-transit over HTTPS using 256-bit TLS encryption.
 
+By default, the Identity Provisioning uses secure communication channels. Still, when connecting to customer systems, you decide \(define\) what the communication channel to be.
+
+
+
+### Recommendations
+
+-   Always use secure protocols when specifying your connection details \(in the cockpit → *Destinations* section, in the Identity Provisioning UI → *Properties* tab\).
+-   Always re-enter the values of the configured credential properties when you update the `URL` or host name of an existing provisoning system in the *Properties* tab of the Identity Provisioning UI. The only exception to this are the credential properties of systems that are created with a connectivity destination.
+
+-   Avoid using property `TrustAll` in productive scenarios. When it's set to **true**, the SSL server certificate is not verified, and thus the server is not authenticated.
+
 
 
 ## User Administration
@@ -91,6 +102,14 @@ Identity Authentication supports three levels of password security. You should u
 
 
 
+<a name="loio6e88d8218f0d4f7693048881c9e07c79__section_dnc_qsx_dcb"/>
+
+## Encryption
+
+When using Identity Provisioning to configure a provisioning system, always set credentials \(such as passwords, private keys and OAuth secrets\) as *Credential* properties. When you add a credential property, its value is displayed as an encrypted string. For better security, the encrypted string is always displayed as 40 characters, no matter how long your real password is.
+
+
+
 ## Session Security
 
 Session cookies in Identity Authentication are protected with a Transport Layer Security \(TLS\) and with the *Secure* and *HttpOnly* attributes. You don't need to make any additional configurations for Identity Authentication.
@@ -110,6 +129,24 @@ All communication channels are protected with TLS, and you should configure the 
 ## Data Storage Security
 
 Data storage security is about how Identity Authentication protects its own database. Data storage security is ensured by the isolated tenant that each customer receives. Only tenant-specific requests can access the tenant's database. These requests are performed by a tenant service, which works with a dependency injection framework and makes sure that all the services, for example the persistence service and the mail service, are injected with the instances dedicated to the given tenant.
+
+In Identity Provisioning, no personal or sensitive information about the provisioned entities is saved. To check whether any changes have been made to an entity after the initial provisioning, Identity Provisioning uses strong hashed algorithm for the provisioned entities.
+
+If a provisioning job repeatedly fails and you need problem investigation, you can enable detailed entity tracing. That means, the Identity Provisioning service will log the complete information \(general, personal and sensitive data\) of your provisioned entities. For example, if *"groups": XXX* are not an array but have a string value instead; or an attribute that must have a string value, has an integer value instead. Tracing such data could help you identify potential incorrect attribute values for a certain entity, which you can correct in the source system or via the transformation functions.
+
+To activate entity tracing, proceed as follows:
+
+1.  In your source system, set property **ips.trace.failed.entity.content** to *true*.
+
+2.  Run again the provisioning job.
+
+3.  Open the *Job Logs* section, select your job, and under *Failed Entities*, choose an entity and find the log information about it.
+
+4.  If you cannot resolve the problem, contact the Identity Provisioning support.
+
+    > ### Note:  
+    > The operators may need the full trace content, so they can ask you to set the property in your target system as well, and once again run the provisioning job.
+
 
 
 

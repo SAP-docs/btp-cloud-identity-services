@@ -6,11 +6,11 @@ The token endpoint is used to get the user's access token.
 
 
 
-This document explains how to call the token endpoint and what are the parameters supported by Identity Authentication.
+This document explains how to call the token endpoint and what are the parameters supported by Identity Authentication - for a relying party client and system as administrator.
 
 
 
-## **Request**
+## **Request - Relying Party**
 
 **URI:**`https://<tenant ID>.accounts.ondemand.com/oauth2/token`
 
@@ -238,6 +238,167 @@ grant_type=client_credentials&client_id=12b52d2c-1q34-5r5t-a576-75e85asdf523
 
 
 
+<a name="loio52b93b08f4654e659a9abf93ca86d902__section_o4t_hxp_w1c"/>
+
+## **Request - System as Administrator**
+
+> ### Note:  
+> Use the received `access_token` to authenticate when accessing the [Application Configurations API](https://api.sap.com/api/SCI_Application_Directory/overview) and [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/overview) with a system as administrator.
+
+**URI:**`https://<tenant ID>.accounts.ondemand.com/oauth2/token`
+
+**HTTP Method:***POST*
+
+
+
+### Request Headers
+
+
+<table>
+<tr>
+<th valign="top">
+
+Header
+
+</th>
+<th valign="top">
+
+Required
+
+</th>
+<th valign="top">
+
+Values
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`Content-Type`
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+<td valign="top">
+
+application/x-www-form-urlencoded
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`Authentication`
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+<td valign="top">
+
+Basic Authentication - Client ID and a Secret to authenticate the system as administrator. For more information, see [Add System as Administrator](add-administrators-bbbdbdd.md#loiocefb742a36754b18bbe5c3503ac6d87c).
+
+> ### Note:  
+> The client ID and secret must be encoded using the "application/x-www-form-urlencoded" encoding algorithm.
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+### Request Parameters
+
+
+<table>
+<tr>
+<th valign="top">
+
+Parameter
+
+</th>
+<th valign="top">
+
+Required
+
+</th>
+<th valign="top">
+
+Data Type
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+<th valign="top">
+
+Parameter Type
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`grant_type`
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+client\_credentials
+
+</td>
+<td valign="top">
+
+Request body
+
+</td>
+</tr>
+</table>
+
+
+
+### Request Example
+
+```
+
+Client - Relying Party
+
+Request:
+
+grant_type=client_credentials&client_id=12b52d2c-1q34-5r5t-a576-75e85asdf523
+```
+
+```
+
+Client - System as Administrator
+
+Request:
+
+grant_type=client_credentials
+```
+
+
+
 ## **Response**
 
 
@@ -327,5 +488,5 @@ g4MDI0MTEyLCJqdGkiOiIzMDhiYTg5NC0zMGE0LTQ4MDUtYWUzOS1vc2EyYXNkMjU
 **Related Information**  
 
 
-[OpenID Connect](openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
+[Configuring OpenID Connect](configuring-openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
 

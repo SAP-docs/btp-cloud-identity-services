@@ -652,7 +652,7 @@ Location:
 **Related Information**  
 
 
-[OpenID Connect](openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
+[Configuring OpenID Connect](configuring-openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
 
 [Proof Key for Code Exchange by OAuth Public Clients \(IETF\)](https://tools.ietf.org/html/rfc7636)
 

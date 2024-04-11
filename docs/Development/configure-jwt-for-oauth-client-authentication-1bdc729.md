@@ -34,7 +34,7 @@ Configure the JSON Web Token \(JWT\) - the issuer and subject of tokens for JWT 
 
 5.  Under *Application APIs*, choose *Client Authentication*.
 
-6.  Under *JSON Web Tokens*, configure one of the following options:
+6.  Under *JSON Web Tokens*, configure one of the following options and save your changes:
 
     -   \(For RFC 7523-based JWT client tokens\) Choose the *Add* button for *Configure Trust by Issuer* and provide the required info in the popup:
 
@@ -118,7 +118,7 @@ Configure the JSON Web Token \(JWT\) - the issuer and subject of tokens for JWT 
         </td>
         <td valign="top">
         
-        \(Optional\) `API Permission Groups` field is enabled only when the *Provided APIs* ption is configured. For more information, see [Provide APIs for Consumption by Other Applications](provide-apis-for-consumption-by-other-applications-9d2fe83.md).
+        \(Optional\) `API Permission Groups` field is enabled only when the *Provided APIs* option is configured. For more information, see [Provide APIs for Consumption by Other Applications](provide-apis-for-consumption-by-other-applications-9d2fe83.md).
         
         </td>
         </tr>

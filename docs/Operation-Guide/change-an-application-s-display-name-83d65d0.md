@@ -34,10 +34,3 @@ You are assigned the *Manage Applications* role. For more information about how 
     Once the application has been updated, the system displays the message ***Application <name of application\> updated***.
 
 
-**Related Information**  
-
-
-[Troubleshooting for Administrators](troubleshooting-for-administrators-f80beb5.md "This section is intended to help administrators deal with error messages in the administration console for SAP Cloud Identity Services.")
-
-[Create a New Application](create-a-new-application-0d4b255.md "You can create a new application and customize it to comply with your company requirements.")
-

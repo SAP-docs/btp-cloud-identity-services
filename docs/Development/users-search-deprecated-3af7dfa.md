@@ -748,7 +748,7 @@ Specifies the next user id \(that is, the id of the first user on the next page\
     > </tr>
     > </table>
     > 
-    > You can find information about the user's source system type and source system ID under the legal tab in the user details section. For more information, see [List and Edit User Details](../Operation-Guide/list-and-edit-user-details-045cb01.md).
+    > You can find information about the user's authentication provider type and system ID under the legal tab in the user details section. For more information, see [List and Edit User Details](../Operation-Guide/list-and-edit-user-details-045cb01.md).
 
 -   `sourceSystemId`
 

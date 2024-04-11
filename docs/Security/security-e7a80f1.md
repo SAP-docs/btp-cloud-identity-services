@@ -2,7 +2,7 @@
 
 # Security
 
-This section describes the security features at Identity Authentication.
+This section describes the security features of SAP Cloud Identity Services.
 
 
 

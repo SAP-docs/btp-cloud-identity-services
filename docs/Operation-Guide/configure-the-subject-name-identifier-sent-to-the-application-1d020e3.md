@@ -542,8 +542,6 @@ To set the default name ID format, proceed as follows:
 **Related Information**  
 
 
-[Troubleshooting for Administrators](troubleshooting-for-administrators-f80beb5.md "This section is intended to help administrators deal with error messages in the administration console for SAP Cloud Identity Services.")
-
 [Create a New Application](create-a-new-application-0d4b255.md "You can create a new application and customize it to comply with your company requirements.")
 
 [Configure Trust](configure-trust-f96e4c5.md "This document is intended to help you configure a trusted service provider (SP) or client (relying party) in the administration console for SAP Cloud Identity Services.")

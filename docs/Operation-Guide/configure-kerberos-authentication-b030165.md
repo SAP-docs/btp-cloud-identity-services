@@ -290,7 +290,7 @@ This procedure is performed by the domain administrator. If you are not a domain
     > </td>
     > <td valign="top">
     > 
-    > `au.accounts.ondemand.com.cloud.sap.akadns.net`
+    > `ap.accounts.ondemand.com.cloud.sap.akadns.net`
     > 
     > </td>
     > </tr>

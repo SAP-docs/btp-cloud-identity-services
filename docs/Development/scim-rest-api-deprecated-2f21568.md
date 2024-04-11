@@ -28,7 +28,7 @@ Some of the attributes have predefined supported values. They are returned as a 
 > 
 > `https://<tenant ID>.accounts.ondemand.com/admin`
 > 
-> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
+> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [View Assigned Tenants and Admins](../view-assigned-tenants-and-admins-f56e6f2.md).
 > 
 > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
 

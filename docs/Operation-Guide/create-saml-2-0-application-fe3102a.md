@@ -137,5 +137,3 @@ The newly created application appears on the list with the applications on the l
 
 [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md "You can create a new OpenID Connect application.")
 
-[Troubleshooting for Administrators](troubleshooting-for-administrators-f80beb5.md "This section is intended to help administrators deal with error messages in the administration console for SAP Cloud Identity Services.")
-

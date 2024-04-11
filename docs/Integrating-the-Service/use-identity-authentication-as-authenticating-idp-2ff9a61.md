@@ -15,7 +15,7 @@ The tables below show the pre-configured settings for your system that you have 
 > 
 > `https://<tenant ID>.accounts.ondemand.com/admin`
 > 
-> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [Viewing Assigned Tenants and Administrators](../viewing-assigned-tenants-and-administrators-f56e6f2.md).
+> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [View Assigned Tenants and Admins](../view-assigned-tenants-and-admins-f56e6f2.md).
 > 
 > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
 
@@ -349,7 +349,7 @@ SAP Datasphere
 **Related Information**  
 
 
-[Tenant Model and Licensing](../tenant-model-and-licensing-93160eb.md "This document provides information about the tenant model, tenant licensing, and obtaining a tenant of Identity Authentication.")
+[Tenants](../tenants-93160eb.md "A tenant refers to your (customer-specific) instance of SAP Cloud Identity Services. It's delivered to you as part of a bundle with an SAP cloud solution or as part of a self-service request in SAP BTP cockpit.")
 
 [Identity Directory REST API](https://api.sap.com/api/IdDS_SCIM/resource)
 

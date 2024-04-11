@@ -53,7 +53,7 @@ Identity Authentication allows you to use a custom domain that is different from
     </td>
     <td valign="top">
     
-    `au.accounts.ondemand.com.cloud.sap.akadns.net`
+    `ap.accounts.ondemand.com.cloud.sap.akadns.net`
     
     </td>
     </tr>
@@ -321,6 +321,9 @@ Identity Authentication allows you to use a custom domain that is different from
 
 ## Context
 
+> ### Note:  
+> If you have configured a custom domain and you want to add a deprecation trial token for third party cookies deprecation go to **Step 10**.
+
 > ### Remember:  
 > It takes 2 minutes for the configuration changes to take place.
 
@@ -405,6 +408,11 @@ Identity Authentication allows you to use a custom domain that is different from
 
 9.  Save your configuration.
 
+10. **Optional:** Add the third-party cookies deprecation trial token in the input field and save the configuration.
+
+    > ### Tip:  
+    > For more information about how to get the third-party cookies deprecation trial token, see [Deprecation trials](https://developers.google.com/privacy-sandbox/blog/third-party-cookie-deprecation-trial#deprecation_trials).
+
 
 
 
@@ -412,7 +420,7 @@ Identity Authentication allows you to use a custom domain that is different from
 
 ## Results
 
-The custom domain configuration is enabled with the upgrade of Identity Authentication. We recommend you to renew your certificate as early as possible, preferably 30 days before expiration, and no later than the Sunday before productive system upgrade. Identity Authentication has production releases \(bi-weekly updates\) planned every second Wednesday, 10:00 UTC. There are also immediate updates in case of fixes required for bugs that affect productive application operations, or due to urgent security fixes. For more information on the upgrade calendar of the service, see [What's New for Identity Authentication](../what-s-new-for-identity-authentication-de21efe.md).
+The custom domain configuration is enabled with the upgrade of Identity Authentication. We recommend you to renew your certificate as early as possible, preferably 30 days before expiration, and no later than the Sunday before productive system upgrade. Identity Authentication has production releases \(bi-weekly updates\) planned every second Wednesday, 10:00 UTC. There are also immediate updates in case of fixes required for bugs that affect productive application operations, or due to urgent security fixes. For more information on the upgrade calendar of the service, see [What's New for Cloud Identity Services](../what-s-new-for-cloud-identity-services-de21efe.md).
 
 
 

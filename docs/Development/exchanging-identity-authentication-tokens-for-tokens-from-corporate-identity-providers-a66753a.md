@@ -252,5 +252,5 @@ Q1ZDZlIn0.3ormYv_nxnimm6xB972qSGOk_YTc_gpE4wVhgaA7q0I",
 **Related Information**  
 
 
-[OpenID Connect](../Operation-Guide/openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
+[Configuring OpenID Connect](../Operation-Guide/configuring-openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
 

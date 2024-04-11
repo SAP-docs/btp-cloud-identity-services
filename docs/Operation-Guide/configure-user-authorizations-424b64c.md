@@ -255,5 +255,5 @@ Groups of type `Authorization Policy` with names containing the names of the aut
 **Related Information**  
 
 
-[Configure Application Authorizations](configure-application-authorizations-01cff18.md "Configure access to the applications in the administration console of SAP Cloud Identity Services.")
+[Configure Application Authorizations](configure-application-authorizations-01cff18.md "Configure granular access and control over the applications in the administration console of SAP Cloud Identity Services.")
 

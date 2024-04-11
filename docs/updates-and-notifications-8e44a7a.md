@@ -2,7 +2,7 @@
 
 # Updates and Notifications
 
-SAP Cloud Identity Services have production releases \(updates\) every second Tuesday, 14:00 UTC.For more information about the features delivered every takt, see the [What's New for Identity Authentication](what-s-new-for-identity-authentication-de21efe.md) published regularly. 
+SAP Cloud Identity Services have production releases \(updates\) every second Tuesday, 14:00 UTC.For more information about the features delivered every takt, see the [What's New for Cloud Identity Services](what-s-new-for-cloud-identity-services-de21efe.md) published regularly. 
 
 
 

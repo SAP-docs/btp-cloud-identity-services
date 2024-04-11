@@ -126,5 +126,3 @@ Users can use the following self-services:
 
 [Use the Remember Me Option](use-the-remember-me-option-bc7c6c6.md "With the Remember me functionality enabled, you can log on to an application without the need to provide your credentials every time you access it.")
 
-[Access Applications with Single Sign-On on Mobile Devices](access-applications-with-single-sign-on-on-mobile-devices-89bbb0b.md "You can access trusted applications that require two-factor authentication via your mobile devices using single sign-on (SSO).")
-

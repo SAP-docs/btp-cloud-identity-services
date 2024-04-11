@@ -10,7 +10,7 @@
 
 -   You have an SAP Data Custodian tenant. For more information, see [SAP Data Custodian Help Guide](https://help.sap.com/docs/sap-data-custodian/help-guide/overview?version=latest) .
 -   You have read and accept all Customer-Controlled Encryption Keys \(CCEK\) limitations. For more information, see *Limitations* section in [Customer-Controlled Encryption Keys \(Restricted Availability\)](../Security/customer-controlled-encryption-keys-restricted-availability-177108a.md).
--   You have tested all your scenarios on a test tenant, before activating CCEK on a productive tenant. For more information, see [Tenant Model and Licensing](../tenant-model-and-licensing-93160eb.md).
+-   You have tested all your scenarios on a test tenant, before activating CCEK on a productive tenant. For more information, see [Tenants](../tenants-93160eb.md).
 
 
 

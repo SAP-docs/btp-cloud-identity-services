@@ -12,7 +12,7 @@ To create a new OpenID Connect application you have to add a new application to 
 
 To create a new OpenID Connect application, choose your scenario and follow the procedure below.
 
-For more information about what Identity Authentication supports for OpenID Connect, and how to configure the different flows, see [OpenID Connect](openid-connect-a789c9c.md).
+For more information about what Identity Authentication supports for OpenID Connect, and how to configure the different flows, see [Configuring OpenID Connect](configuring-openid-connect-a789c9c.md).
 
 **Related Information**  
 

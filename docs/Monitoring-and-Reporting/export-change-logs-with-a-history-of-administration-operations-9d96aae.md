@@ -1230,8 +1230,3 @@ To download a CSV file with change logs information, proceed as follows:
 
 You have downloaded a CSV file containing history of operations for the tenant administration, and for the configurations of identity providers and service providers.
 
-**Related Information**  
-
-
-[Troubleshooting for Administrators](../Operation-Guide/troubleshooting-for-administrators-f80beb5.md "This section is intended to help administrators deal with error messages in the administration console for SAP Cloud Identity Services.")
-

@@ -89,7 +89,7 @@ Tenant of Identity Authentication
 
 -   [Configure Identity Authentication To Trust the Corporate Identity Provider](configure-idp-initiated-sso-with-corporate-identity-providers-d483a52.md#loioe845c2fb9bb04bedbec06fa76d1058cd)
 
--   [Enable IdP-Initiated SSO from All Corporate Identity Providers](enable-idp-initiated-sso-from-all-corporate-identity-providers-f7ec8d2.md)
+-   [Enable SSO with All Corporate Identity Providers](enable-sso-with-all-corporate-identity-providers-f7ec8d2.md)
 
 
 
@@ -220,7 +220,7 @@ The following configuration is made by the tenant administrator of Identity Auth
 
 3.  Select identity provider. You have the following options:
 
-    -   If your scenario includes more than one corporate identity provider, enable the *Trust All Corporate Identity Providers* feature in the administration console. For more information, see [Enable IdP-Initiated SSO from All Corporate Identity Providers](enable-idp-initiated-sso-from-all-corporate-identity-providers-f7ec8d2.md).
+    -   If your scenario includes more than one corporate identity provider, enable the *Trust All Corporate Identity Providers* feature in the administration console. For more information, see [Enable SSO with All Corporate Identity Providers](enable-sso-with-all-corporate-identity-providers-f7ec8d2.md).
     -   If your scenario includes only one corporate identity provider, set the configured identity provider as the authenticating identity provider for the application. For more information, see [Choose Default Identity Provider for an Application](choose-default-identity-provider-for-an-application-e9d8274.md).
 
 
@@ -242,9 +242,9 @@ The following configuration is made by the tenant administrator of Identity Auth
 
 <!-- copy3d24839b33e04153b91139bb9113b58d -->
 
-## Enable IdP-Initiated SSO from All Corporate Identity Providers
+## Enable SSO with All Corporate Identity Providers
 
-\(For SAML 2.0 applications\) Tenant administrators can enable IdP-initiated single sign-on \(SSO\) from all configured corporate identity providers \(IdPs\).
+Tenant administrators can enable IdP-initiated Single Sign-On \(SSO\) from all configured corporate identity providers \(IdPs\).
 
 
 
@@ -254,7 +254,7 @@ The following configuration is made by the tenant administrator of Identity Auth
 
 -   You are assigned the *Manage Applications* role. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
 
--   You have more than one corporate identity provider, which is configured in the administration console. For more information how to configure a corporate identity provider, see [Configure Trust with SAML 2.0 Corporate Identity Provider](configure-trust-with-saml-2-0-corporate-identity-provider-33832e5.md).
+-   You have more than one corporate identity provider, which is configured in the administration console. For more information on how to configure a corporate identity provider, see [Configure Trust with SAML 2.0 Corporate Identity Provider](configure-trust-with-saml-2-0-corporate-identity-provider-33832e5.md) or [Configure Trust with OpenID Connect Corporate Identity Provider](configure-trust-with-openid-connect-corporate-identity-provider-8ff83a1.md).
 
 -   \(For SAML 2.0 applications\) You have added the assertion consumer \(ACS\) endpoint with the URL of the application's protected page, and the index, in the metadata of that application. The ACS endpoint that you added should look like the following example:
 
@@ -271,7 +271,7 @@ The following configuration is made by the tenant administrator of Identity Auth
 
 ## Context
 
-Applications can be configured to trust all the corporate identity providers configured in the administration console when identity provider \(IdP\) initiated single sign-on \(SSO\) is used. The user accesses the application via URL provided by the corporate identity provider.
+Applications can be configured to trust all the corporate identity providers configured in the administration console when identity provider \(IdP\) initiated Single Sign-On \(SSO\) is used. The user accesses the application via URL provided by the corporate identity provider.
 
 To enable IdP-initiated SSO with all corporate identity providers configured in the administration console for SAP Cloud Identity Services follow the procedure below:
 

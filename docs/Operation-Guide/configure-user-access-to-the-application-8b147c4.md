@@ -71,8 +71,6 @@ You can configure the application to restrict access to specific users only. The
 **Related Information**  
 
 
-[Troubleshooting for Administrators](troubleshooting-for-administrators-f80beb5.md "This section is intended to help administrators deal with error messages in the administration console for SAP Cloud Identity Services.")
-
 [Create a New Application](create-a-new-application-0d4b255.md "You can create a new application and customize it to comply with your company requirements.")
 
 [Risk-Based Authentication as an Alternative to Restrict User Access Option in Identity Authentication Service](https://scn.sap.com/community/developer-center/cloud-platform/blog/2016/07/13/risk-based-authentication-as-an-alternative-to-the-restrict-user-access-option-in-sap-cloud-identity-service)

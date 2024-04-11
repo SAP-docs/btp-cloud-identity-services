@@ -263,9 +263,11 @@ Use this procedure to disable or enable the IdP-Initiated SSO process.
 
 1.  Sign in to the administration console for SAP Cloud Identity Services.
 
-2.  Under *Single Sign-On*, choose the *Tenant Settings* tile.
+2.  Choose *Application Resources* \> *Tenant Settings*.
 
-3.  Use the slider next to *IdP-Initiated SSO* to disable or enable it.
+3.  Under *Single-Sign-On*, choose *IdP-Initiated SSO*.
+
+4.  Use the slider under the *Settings* section to disable or enable it.
 
     If the operation is successful, you receive a confirmation message.
 

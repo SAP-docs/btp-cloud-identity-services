@@ -33,7 +33,8 @@ If apart from *IP Range* the rule contains other conditions, or it is not the fi
 > 
 > If you have already defined rules, they won't be considered if you change the default identity provider from Identity Authentication to a corporate identity provider.
 
-If the user is already existing in Identity Authentication, authentication requests via SPNEGO, existing session, remember me, and token will be processed by Identity Authentication in case of successful authentication no matter of the conditional authentication rules.
+> ### Note:  
+> If the user is already existing in Identity Authentication, authentication requests via SPNEGO, existing session, remember me, and token will be processed by Identity Authentication in case of successful authentication no matter of the conditional authentication rules. However, when the tenant has trusted certificate configuration, the application is SAML 2.0 type, and a conditional rule is configured, authentication is done by the local identity provider \(IdP\) with the certificate, except for the scenario when the conditional rule has an IP Range defined. In this case, if the rule matches, the user will be sent for authentication to the IdP from the rule.
 
 **Default Identity Provider**
 
@@ -288,7 +289,7 @@ Julie Armstrong is a customer of Company A. She accesses the company's applicati
 
 [Configure Logon via Identity Authentication when a Corporate IdP is Chosen as Default](configure-logon-via-identity-authentication-when-a-corporate-idp-is-chosen-as-default-3a3bf9b.md "You can allow users to log on via Identity Authentication when a corporate identity provider (IdP) is chosen as default.")
 
-[Enable IdP-Initiated SSO from All Corporate Identity Providers](enable-idp-initiated-sso-from-all-corporate-identity-providers-f7ec8d2.md "(For SAML 2.0 applications) Tenant administrators can enable IdP-initiated single sign-on (SSO) from all configured corporate identity providers (IdPs).")
+[Enable SSO with All Corporate Identity Providers](enable-sso-with-all-corporate-identity-providers-f7ec8d2.md "Tenant administrators can enable IdP-initiated Single Sign-On (SSO) from all configured corporate identity providers (IdPs).")
 
 [Configure Login Hint Parameter](configure-login-hint-parameter-c6dd6a5.md "Tenant administrator can configure the login hint parameter via the administration console for SAP Cloud Identity Services.")
 
