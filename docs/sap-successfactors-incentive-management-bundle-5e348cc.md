@@ -1,8 +1,8 @@
 <!-- loio5e348cc330bd49c8a2f3e5195b58b477 -->
 
-# SAP Commissions Bundle
+# SAP SuccessFactors Incentive Management Bundle
 
-SAP Commissions bundles with SAP Cloud Identity Services – Identity Authentication and Identity Provisioning.
+SAP SuccessFactors Incentive Management, formerly known as SAP Commissions, bundles with SAP Cloud Identity Services – Identity Authentication and Identity Provisioning.
 
 
 
@@ -21,12 +21,12 @@ SAP Commissions bundles with SAP Cloud Identity Services – Identity Authentica
 
 ## How to Obtain
 
-After purchasing SAP Commissions, you'll receive two e-mails from SAP. According to your contract with SAP, a technical contact person has been chosen as the first user of the Identity Provisioning service, who is granted with *Administrator* permissions. In these e-mails from SAP, you'll find the ID of this administrator \(their P- or S-user\) and their e-mail address. They can access the Identity Provisioning UI with their user credentials.
+After purchasing SAP SuccessFactors Incentive Management, you'll receive two e-mails from SAP. According to your contract with SAP, a technical contact person has been chosen as the first user of the Identity Provisioning service, who is granted with *Administrator* permissions. In these e-mails from SAP, you'll find the ID of this administrator \(their P- or S-user\) and their e-mail address. They can access the Identity Provisioning UI with their user credentials.
 
 Each e-mail from SAP contains also a URL link that you, as an administrator, can use to directly access the Identity Provisioning UI. These two URLs are related to two different Identity Provisioning tenants – the first one you can use for *testing* purposes, and the second one – for *productive* provisioning configurations and jobs.
 
 **Related Information**  
 
 
-[SAP Commissions](https://help.sap.com/viewer/product/SAP_Commissions/2108/en-US?expandAll=true)
+[SAP SuccessFactors Incentive Management](https://help.sap.com/viewer/product/SAP_Commissions/2108/en-US?expandAll=true)
 

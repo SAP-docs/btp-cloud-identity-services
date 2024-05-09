@@ -86,11 +86,11 @@ Get your productive and test tenant as part of a self-service request in SAP BTP
 
 ### Procedure
 
-1.  In the SAP BTP cockpit, choose your subaccount and navigate to *Entitlements* \> *Configure Entitlements* \> *Add Service Plans*.
+1.  In the SAP BTP cockpit, choose your subaccount and navigate to *Entitlements* \> *Edit* \> *Add Service Plans*.
 
 2.  In the pop-up dialog, select *Cloud Identity Services*.
 
-3.  Select the *default* service plan, and then choose *Add Service Plan*.
+3.  Select the *default \(Application\)* service plan, and then choose *Add Service Plan*.
 
 4.  Save your changes on the *Entitlements* page.
 
@@ -135,7 +135,7 @@ Get your productive and test tenant as part of a self-service request in SAP BTP
 
 ## Get Additional Tenant
 
-Get an additional tenant as part of a self-service request in SAP BTP cockpit. SAP customers and partners can use Identity Authentication additional tenants via CPEA \(Cloud Platform Enterprise Agreement\) as a self-service. They can request one additional tenant per SAP BTP subaccount.
+Get an additional tenant as part of a self-service request in SAP BTP cockpit. SAP customers and partners can use Identity Authentication additional tenants via CPEA \(Cloud Platform Enterprise Agreement\) and Pay-As-You-Go consumption-based commercial models. They can request one additional tenant per SAP BTP subaccount.
 
 > ### Note:  
 > The additional tenant doesn’t add additional logon requests. Licensed logon requests are distributed across all tenants.
@@ -162,7 +162,7 @@ To get additional tenant using SAP BTP multi-environment subaccount, proceed as 
 
     > ### Tip:  
     > -   If you don't see the *Cloud Identity Service* tile, navigate to *Entitlements* trial, add the tile.
-    > -   If you don't see the *additional-tenant* plan, navigate to *Entitlements* \> *Configure Entitlements* \> *Add Service Plans* \> *Cloud Identity Services*, select the checkbox for the *additional-tenant* plan, press *Add Service Plans* and save your choice.
+    > -   If you don't see the *additional-tenant* plan, navigate to *Entitlements* \> *Edit* \> *Add Service Plans* \> *Cloud Identity Services*, select the checkbox for the *additional-tenant* plan, press *Add Service Plans* and save your choice.
     > -   If you use directories entitlement management in your global account, you must assign the *additional-tenant* plan to the directory first, and after that to the subaccount. Once you assign the *additional-tenant* plan to your directory, it will appear in your subaccount entitlements too. For more information, see [Configure Entitlements and Quotas for Directories \[Feature Set B\]](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/37f8871865114f44aebee3db6ac64b72.html).
 
     > ### Note:  
@@ -225,7 +225,7 @@ A trial tenant is intended for testing purposes. It allows you to try out and ex
 
 2.  Choose *Go to Your Trial Account* and open your subaccount.
 
-3.  In the navigation area, choose *Entitlements* and then *Configure Entitlements* \> *Add Service Plans*.
+3.  In the navigation area, choose *Entitlements* and then *Edit* \> *Add Service Plans*.
 
 4.  Select *Cloud Identity Services* from the list of entitlements available for this subaccount.
 

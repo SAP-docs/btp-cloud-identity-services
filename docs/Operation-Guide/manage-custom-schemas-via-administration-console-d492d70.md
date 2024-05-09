@@ -10,7 +10,7 @@ You can view and define your custom schema via the administration console for SA
 
 The administration console shows information about all existing schemas, predefined, and custom, in the tenant.
 
-If you need your own custom attributes, for users or groups, you can define your own custom schema, and once the schema is defined, the custom attributes that it defines can be used.
+If you need your own custom attributes for users you can define your own custom schema, and once the schema is defined, the custom attributes that it defines can be used.
 
 To be used, the custom attributes must be assigned to the user first. For more information, see [Configuring Attributes Based on Flexible Expressions](configuring-attributes-based-on-flexible-expressions-a2f1e46.md).
 

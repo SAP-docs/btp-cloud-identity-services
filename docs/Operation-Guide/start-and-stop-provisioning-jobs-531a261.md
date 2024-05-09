@@ -16,7 +16,7 @@ You can start and stop a provisioning job from the Identity Provisioning user in
 
 
 > ### Note:  
-> This documentation refers to Identity Provisioning service in the Neo environment. If you are looking for information about Identity Provisioning service in the SAP Cloud Identity infrastructure, please refer to the [SAP Cloud Identity Services](https://help.sap.com/docs/identity-authentication/identity-authentication/what-is-identity-authentication?version=Cloud) documentation.
+> This documentation refers to Identity Provisioning in the Neo environment. To access the service documentation in the SAP Cloud Identity Services infrastructure, go to [SAP Cloud Identity Services](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/landing-page?version=Cloud).
 
 
 

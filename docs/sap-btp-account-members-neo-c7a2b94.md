@@ -168,7 +168,9 @@ This provisioning scenario is based on the Platform Authorization Management API
     </td>
     <td valign="top">
     
-    This property specifies the host to the identity provider to be used with this proxy system. All provisioned users can be authenticated only by this identity provider. Default value: *account.sap.com*
+    This property specifies the host to the identity provider to be used with this proxy system. All provisioned users can be authenticated only by this identity provider.
+
+    Default value: *accounts.sap.com*
 
     If you use another IdP, enter its value as configured in the SAP BTP cockpit. For example: `<account_ID>.accounts.ondemand.com`
     

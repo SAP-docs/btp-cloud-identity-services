@@ -351,7 +351,14 @@ For more information about attributes for the subject name identifier, see [Conf
 </td>
 <td valign="top">
 
-An array of API names \(`name`\) and descriptions \(`description`\) which this application makes available for other applications to consume. The name can be any unique string of 32 characters. You can define a maximum of 20 APIs.
+An array of API names \(`name`\) and descriptions \(`description`\) which this application makes available for other applications to consume.
+
+> ### Caution:  
+> The API name must match exactly what is expected by any consumer applications. The name must be unique within all APIs provided by the same provider application. Consumer applications use this name to determine if their application has the rights to access the provider application.
+> 
+> The name can be any URN-compliant string of up to 32 characters. You can define a maximum of 20 APIs.
+> 
+> For more information about URNs, see [RFC 8141](https://datatracker.ietf.org/doc/rfc8141/).
 
 For more information, see [Consuming APIs from Other Applications](../Development/consuming-apis-from-other-applications-29e204d.md).
 

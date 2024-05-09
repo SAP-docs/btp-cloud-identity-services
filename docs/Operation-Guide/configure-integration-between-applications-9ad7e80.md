@@ -39,7 +39,7 @@ Define a dependency to the API of another application. With this configuration, 
 
     1.  Enter a unique name for the dependency.
 
-    2.  Choose the provider application and the API the consumer application consumes.
+    2.  Choose the provider application and the API that the consumer application consumes.
 
 
 6.  Save your entries.
@@ -53,5 +53,5 @@ Define a dependency to the API of another application. With this configuration, 
 
 The consumer application can consume the specified API of the provider application.
 
-For more information about how application developers uses this dependency, see [Consume an API from Another Application](../Development/consume-an-api-from-another-application-9675b64.md).
+For more information about how application developers use this dependency, see [Consume an API from Another Application](../Development/consume-an-api-from-another-application-9675b64.md).
 

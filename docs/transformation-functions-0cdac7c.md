@@ -2220,7 +2220,7 @@ This function returns a string if `endIndex` is not provided. It begins at the s
 > 			{
 > 			  "function": "substring",
 > 			  "beginIndex": 3,
-> 			  "endIndex": "5"
+> 			  "endIndex": 5
 > 			}
 > 		   ]
 > 		}

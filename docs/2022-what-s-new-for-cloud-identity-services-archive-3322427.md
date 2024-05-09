@@ -2690,7 +2690,7 @@ Real-Time Provisioning
 </td>
 <td valign="top">
 
-Identity Authentication supports X.509 Certificate authentication when Identity Provisioning is configured as target system for real-time provisioning. See [Configure Identity Provisioning for Real-Time Provisioning](Operation-Guide/configure-identity-provisioning-for-real-time-provisioning-3349645.md).
+Identity Authentication supports X.509 Certificate authentication when Identity Provisioning is configured as target system for real-time provisioning. See [Configure Identity Authentication for Real-Time Provisioning](Operation-Guide/configure-identity-authentication-for-real-time-provisioning-3349645.md).
 
 </td>
 <td valign="top">
@@ -4752,7 +4752,7 @@ Real-Time Provisioning
 </td>
 <td valign="top">
 
-Identity Authentication source system can use the Identity Directory SCIM API \(in short, SCIM API version 2\). See [Configure Identity Provisioning for Real-Time Provisioning](Operation-Guide/configure-identity-provisioning-for-real-time-provisioning-3349645.md).
+Identity Authentication source system can use the Identity Directory SCIM API \(in short, SCIM API version 2\). See [Configure Identity Authentication for Real-Time Provisioning](Operation-Guide/configure-identity-authentication-for-real-time-provisioning-3349645.md).
 
 </td>
 <td valign="top">

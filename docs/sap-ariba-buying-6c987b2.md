@@ -157,6 +157,19 @@ These source systems consume SCIM 2.0 API provided by SAP Ariba Buying.
     
     When specified, only those SAP Ariba Buying users matching the filter expression will be read. You can set a single attribute or multiple ones as search criteria.
 
+    Supported filtering by the following attributes:
+
+    -   *id*
+
+    -   *userName*
+
+    -   *emails.value*
+
+    -   *urn:ietf:params:scim:schemas:extension:sap:2.0:User:userUuid*
+
+    -   *active*
+
+
     For more information, see [List of Properties](list-of-properties-d6f3577.md).
     
     </td>
@@ -165,31 +178,6 @@ These source systems consume SCIM 2.0 API provided by SAP Ariba Buying.
     
     To learn what additional properties are relevant to this system, see [List of Properties](list-of-properties-d6f3577.md). You can use the main search, or filter properties by the *Name* or *System Type* columns.
 
-    Exemplary destination \(property configuration\):
-
-
-    <table>
-    <tr>
-    <td valign="top">
-    
-    `Type`=*HTTP*
-
-    `Authentication`=*BasicAuthentication*
-
-    `ProxyType`=*Internet*
-
-    `URL`=*https://openapi.ariba.com*
-
-    `User`=*aaaa12345-1111-3333-cccc-1234567890*
-
-    `Password`=\*\*\*\*\*\*\*\*\*\*\*\*
-
-    `OAuth2TokenServiceURL`=*https://api.ariba.com/v2/oauth/token*
-    
-    </td>
-    </tr>
-    </table>
-    
 5.  Configure the transformations.
 
     Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Ariba Buying* source system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.

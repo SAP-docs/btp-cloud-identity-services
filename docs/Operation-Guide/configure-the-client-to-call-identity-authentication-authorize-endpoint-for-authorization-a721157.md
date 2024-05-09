@@ -134,6 +134,92 @@ Parameter Type
 <tr>
 <td valign="top">
 
+`client_id`
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+The user ID configured for basic authentication for the application. For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
+
+</td>
+<td valign="top">
+
+Path
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`code_challenge`
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Client created code.
+
+> ### Tip:  
+> You can use online PKCE generator tools to generate the `code_challenge` values.
+
+
+
+</td>
+<td valign="top">
+
+Path
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`code_challenge_method`
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Code verifier transformation method is "S256" or "plain".
+
+</td>
+<td valign="top">
+
+Path
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `redirect_uri`
 
 </td>
@@ -229,33 +315,6 @@ Path
 <tr>
 <td valign="top">
 
-`client_id`
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-<td valign="top">
-
-string
-
-</td>
-<td valign="top">
-
-The user ID configured for basic authentication for the application. For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
-
-</td>
-<td valign="top">
-
-Path
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 `state`
 
 </td>
@@ -283,7 +342,7 @@ Path
 <tr>
 <td valign="top">
 
-`nonce`
+`app_tid`
 
 </td>
 <td valign="top">
@@ -298,7 +357,7 @@ string
 </td>
 <td valign="top">
 
-Free text.
+Reserved.
 
 </td>
 <td valign="top">
@@ -339,92 +398,6 @@ Path
 <tr>
 <td valign="top">
 
-`code_challenge`
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-<td valign="top">
-
-string
-
-</td>
-<td valign="top">
-
-Client created code.
-
-> ### Tip:  
-> You can use online PKCE generator tools to generate the `code_challenge` values.
-
-
-
-</td>
-<td valign="top">
-
-Path
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`code_challenge_method`
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-<td valign="top">
-
-string
-
-</td>
-<td valign="top">
-
-Code verifier transformation method is "S256" or "plain".
-
-</td>
-<td valign="top">
-
-Path
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`refresh_expiry`
-
-</td>
-<td valign="top">
-
-No
-
-</td>
-<td valign="top">
-
-string
-
-</td>
-<td valign="top">
-
-Reduces the expiration of a refresh token. It's useful if your application is called from mobile and web applications, and both have different session requirements. If you set the token lifetime to 0, you won't receive a `refresh_token` in response.
-
-</td>
-<td valign="top">
-
-Path
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 `logout_uri`
 
 </td>
@@ -444,6 +417,60 @@ string
 -   [Front-Channel Logout URI Rules](front-channel-logout-uri-rules-789c752.md)
 
 
+
+</td>
+<td valign="top">
+
+Path
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`max_age`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+integer
+
+</td>
+<td valign="top">
+
+Maximum time in seconds since the user was last authenticated. When `max_age` has been reached, the user must re-authenticate.
+
+</td>
+<td valign="top">
+
+Path
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`nonce`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Free text.
 
 </td>
 <td valign="top">
@@ -495,7 +522,7 @@ Path
 <tr>
 <td valign="top">
 
-`app_tid`
+`refresh_expiry`
 
 </td>
 <td valign="top">
@@ -510,7 +537,7 @@ string
 </td>
 <td valign="top">
 
-Reserved.
+Reduces the expiration of a refresh token. It's useful if your application is called from mobile and web applications, and both have different session requirements. If you set the token lifetime to 0, you won't receive a `refresh_token` in response.
 
 </td>
 <td valign="top">

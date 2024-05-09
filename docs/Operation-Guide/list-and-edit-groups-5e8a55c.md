@@ -8,7 +8,7 @@ As a tenant administrator, you can list and edit information about the groups in
 
 ## Prerequisites
 
--   You are assigned the *Manage Groups* role. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
+-   You are assigned the *Manage Groups* and *Manage Users* roles. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
 
 -   You have created groups in your tenant. For more details how to create groups, see [Create a New Group](create-a-new-group-b1b638d.md).
 

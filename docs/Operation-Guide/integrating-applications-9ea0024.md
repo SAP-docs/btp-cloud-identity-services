@@ -2,18 +2,16 @@
 
 # Integrating Applications
 
-OpenID Connect \(OIDC\) applications sometimes need to propagate principals or have technical communication arrangements between them. To enable one application to consume the APIs of another application, the application developer defines one or more groups of APIs, which the consuming application can consume.
+Applications sometimes need to propagate principals or have technical communication arrangements between them. To enable one application to consume the APIs of another application, the developer of the application providing APIs defines one or more API groups, which the consuming application can consume.
 
-Under this model, applications that can be called by other applications, define API permission groups. API permission groups are the granularity at which administrators can grant access to the APIs of a provider application. Such groups cover a set of related APIs. An application can expose a single group when there's no need to restrict consuming applications.
+Under this model, applications that can be called by other applications define API permission groups. For technical communication, API permission groups are the granularity at which administrators can grant access to the APIs of a provider application. If principal propagation is used, then the user authorizations are checked as well. Such groups cover a set of related APIs. An application can expose a single group when there's no need to restrict consuming applications.
 
-In the application configuration of the consumer application, the dependencies are defined. Consumer applications use the dependency name to identify to SAP Cloud Identity Services, which API permission group the consumer wants to access. Consumer applications need:
+In the application configuration of the consumer application, the tenant admin defines the dependencies. Consumer applications use the dependency name to identify to SAP Cloud Identity Services which application the consumer wants to access including the API permission group to grant. The actual dependency name depends on the consuming application:
 
--   Specific dependency names for integration with a specific application.
+-   Typically, an application needs a specific name for integration with a specific provider application. Find the supported dependency names in the provider application or its documentation.
 
--   Arbitrary dependency names and a way for you as tenant administrator to configure which dependency name is meant for which purpose. Such a solution is for a generic integration with various applications that support this kind of integration.
+-   When an application generically integrates with many arbitrary applications, the application rather enables you to define custom dependency names and maintain them both in SAP Cloud Identity Services as well as in the consuming application itself. The integration informs the application which dependency to use for which integration scenario.
 
-
-As the tenant administrator, you configure the dependency of a consumer application to the provider application or manage a dependency that has been created for you by a solution.
 
 The following figure shows the relationship between two applications in SAP Cloud Identity Services. The provider application offers two API permission groups. The dependency of the consumer application references one of these groups.
 
@@ -24,6 +22,8 @@ The following figure shows the relationship between two applications in SAP Clou
 ![](images/App2App_Logical_Model_951e1a7.png "App-to-App Integration")
 
 To configure dependencies, see [Configure Integration Between Applications](configure-integration-between-applications-9ad7e80.md).
+
+To configure a dependency with an external application, see [Generate Credentials to Access the APIs of an Application](generate-credentials-to-access-the-apis-of-an-application-e595341.md).
 
 For more information about developing such applications, see [Consuming APIs from Other Applications](../Development/consuming-apis-from-other-applications-29e204d.md).
 

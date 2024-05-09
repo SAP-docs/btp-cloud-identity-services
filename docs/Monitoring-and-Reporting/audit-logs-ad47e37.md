@@ -6,6 +6,9 @@ Tenant administrators can access the audit logs for changes in the personal data
 
 Identity Authentication runs on several underlying *Infrastructure-as-a-Service* technologies and regions. Some are owned by SAP and some are owned by our partner infrastructure providers, including Amazon Web Services and Microsoft Azure. For more information, see [Regional Availability](../regional-availability-be600ca.md).
 
+> ### Tip:  
+> You can find a list of the security events that are logged by Identity Authentication on [Auditing and Logging Information](../Security/auditing-and-logging-information-ac5537b.md).
+
 Based on the infrastructure the tenant is running on there are two different procedures for accessing the audit logs.
 
 > ### Note:  

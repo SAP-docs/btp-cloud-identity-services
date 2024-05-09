@@ -8,7 +8,7 @@ As a tenant administrator, you can delete one or more groups in administration c
 
 ## Prerequisites
 
-You are assigned the *Manage Groups* role. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
+You are assigned the *Manage Groups* and *Manage Users* roles. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
 
 
 

@@ -13,10 +13,10 @@ The bundling process results in provisioning an SAP Cloud Identity Services tena
 
 For Identity Provisioning, this means that communication and authentication with the provisioning systems relevant for the SAP cloud solution are set up. The transformations of those systems might be different from the default ones and adapted for specific scenarios. You are ready to schedule and run jobs to synchronize your users and groups.
 
-Bear in mind that all provisioning systems \(connectors\) are enabled for the SAP Cloud Identity Access Governance bundle tenant, and all source and proxy connectors are enabled for the SAP Jam Collaboration bundle tenant.
+Note that all provisioning systems \(connectors\) are enabled for the SAP Cloud Identity Access Governance bundle tenant, and all source and proxy connectors are enabled for the SAP Jam Collaboration bundle tenant.
 
 > ### Note:  
-> Note the following specifics regarding the connectors availability in the bundle tenants:
+> Note the availability of the following connectors within the bundle tenants running in the infrastructure of SAP Cloud Identity Services:
 > 
 > -   SCIM, LDAP Server, Microsoft AD, Microsoft Entra ID and Google G suite are not supported as target connectors in bundle tenants.
 > 
@@ -61,8 +61,6 @@ SAP \(G-Z\)
 
 -   SAP Commerce Cloud
 
--   SAP Commissions
-
 -   SAP Concur
 
 -   SAP Fieldglass
@@ -86,6 +84,8 @@ SAP \(G-Z\)
 -   SAP SuccessFactors
 
 -   SAP SuccessFactors Learning
+
+-   SAP SuccessFactors Incentive Management
 
 -   Sales Cloud – Analytics & AI
 

@@ -66,5 +66,5 @@ You can review the provisioning system configurations, adjust them if needed and
 **Related Information**  
 
 
-[SAP SuccessFactors Platform](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM?version=2305&locale=en-US&task=discover_task)
+[SAP SuccessFactors Platform](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM?locale=en-US&version=latest)
 

@@ -8,7 +8,7 @@ Set the value for the P-user next index.
 
 ## Context
 
-Every user in Identity Authentication has a `User ID` which is an automatically generated number preceded by the letter P. The first administrator, which is also the first user, receives the number P 000000. The`User ID` of every other user that is created in Identity Authentication is incremented by 1. Thus the second user has a `User ID` P 000001, and so on. You can change the P-number index by setting a new number from which the P-number to start. The new value must always be higher than the current one. For example, the User ID of the latest created user is P 000100, which means that the current P-user index is 100. If you want the of the next user to be P 000200,`User ID` then you should make the P-user index 200.
+Every user in Identity Authentication has a `User ID` which is an automatically generated number preceded by the letter P. The first administrator, which is also the first user, receives the number P 000000. The`User ID` of every other user that is created in Identity Authentication is incremented by 1. Thus the second user has a `User ID` P 000001, and so on. When the number reaches P 999999 it is automatically extended and the next number is P 1000000. You can change the P-number index by setting a new number from which the P-number to start. The new value must always be higher than the current one. For example, the User ID of the latest created user is P 000100, which means that the current P-user index is 100. If you want the of the next user to be P 000200,`User ID` then you should make the P-user index 200.
 
 > ### Restriction:  
 > Beware, that after the change is saved you won't be able to set the P-number index value to a number lower than the current one.

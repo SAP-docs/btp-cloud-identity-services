@@ -231,6 +231,8 @@ Yes, minimum 1 hour, maximum 48 hours
 
 Maximum failed logon attempts
 
+Indicates how many logon attempts are allowed before the user password is locked.
+
 </td>
 <td valign="top">
 
@@ -253,7 +255,7 @@ Yes, minimum 1, maximum 6, default choice 5
 
 Password locked period
 
-Indicates how long a password is locked for. Indicates how many logon attempts are allowed before the user password is locked.
+Indicates how long a password is locked for.
 
 </td>
 <td valign="top">

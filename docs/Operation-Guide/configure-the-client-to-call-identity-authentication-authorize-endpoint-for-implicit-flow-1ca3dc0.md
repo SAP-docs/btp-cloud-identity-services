@@ -123,6 +123,60 @@ Parameter Type
 <tr>
 <td valign="top">
 
+client\_id
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+The user ID configured for basic authentication for the application. For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
+
+</td>
+<td valign="top">
+
+Path
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+nonce
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Free text.
+
+</td>
+<td valign="top">
+
+Path
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 redirect\_uri
 
 </td>
@@ -204,87 +258,6 @@ Path
 <tr>
 <td valign="top">
 
-client\_id
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-<td valign="top">
-
-string
-
-</td>
-<td valign="top">
-
-The user ID configured for basic authentication for the application. For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
-
-</td>
-<td valign="top">
-
-Path
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-state
-
-</td>
-<td valign="top">
-
-No
-
-</td>
-<td valign="top">
-
-string
-
-</td>
-<td valign="top">
-
-Free text.
-
-</td>
-<td valign="top">
-
-Path
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-nonce
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-<td valign="top">
-
-string
-
-</td>
-<td valign="top">
-
-Free text.
-
-</td>
-<td valign="top">
-
-Path
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 login\_hint
 
 </td>
@@ -344,6 +317,33 @@ Path
 <tr>
 <td valign="top">
 
+`max_age`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+integer
+
+</td>
+<td valign="top">
+
+Maximum time in seconds since the user was last authenticated. When `max_age` has been reached, the user must re-authenticate.
+
+</td>
+<td valign="top">
+
+Path
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `prompt`
 
 </td>
@@ -373,6 +373,33 @@ Supported values are:
 
 
 
+
+</td>
+<td valign="top">
+
+Path
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+state
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Free text.
 
 </td>
 <td valign="top">

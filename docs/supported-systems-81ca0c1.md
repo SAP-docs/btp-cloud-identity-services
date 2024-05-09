@@ -6,6 +6,12 @@ Identity Provisioning synchronizes users and groups between multiple supported c
 
 For more inforomation about the provisioning systems \(connectors\) available for use as *source*, *target*, and *proxy* system types, refer to the related topics within this section.
 
+> ### Note:  
+> This documentation refers to Identity Provisioning in the Neo environment. To access the service documentation in the SAP Cloud Identity Services infrastructure, go to [SAP Cloud Identity Services](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/landing-page?version=Cloud).
+
+> ### Note:  
+> This documentation refers to Identity Provisioning in the SAP Cloud Identity Services infrastructure. To access the service documentation in the Neo environment, go to [Identity Provisioning Service in the Neo Environment](https://help.sap.com/docs/identity-provisioning/identity-provisioning/sap-cloud-identity-services-identity-provisioning?version=Cloud).
+
 **Related Information**  
 
 

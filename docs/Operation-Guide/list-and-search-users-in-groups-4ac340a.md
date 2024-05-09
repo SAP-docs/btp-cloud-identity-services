@@ -8,7 +8,7 @@ As a tenant administrator, you can list and view information about the users in 
 
 ## Prerequisites
 
--   You are assigned the *Manage Groups* role. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
+-   You are assigned the *Manage Groups* and *Manage Users* roles. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
 
 -   You have created at least one user group in the tenant. For more details about how to create groups, see Related Information.
 
@@ -34,7 +34,7 @@ As a tenant administrator, you can list and view information about the users in 
 
     This will open the groups details \(*Group ID*, *Name*, *Display name*, *Description*\) on the right. The users that are part of the group are listed below the user group details.
 
-5.  To search for a specific user, type the SCIM ID of the user in the search field and press the *Enter* key.
+5.  To search for a specific user, type the *SCIM ID*, *Email*, *Login Name*of the user in the search field and press the *Enter* key.
 
 
 **Related Information**  

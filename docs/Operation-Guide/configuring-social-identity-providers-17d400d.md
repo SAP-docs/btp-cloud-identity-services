@@ -13,7 +13,7 @@ Identity Authentication uses the OAuth protocol for social sign-on via one of th
 -   Google
 -   Facebook
 -   LinkedIn
--   Twitter
+-   X
 
 Once a user has allowed Identity Authentication to link his or her account with the social provider accounts, the user can log on to applications via these social providers.
 

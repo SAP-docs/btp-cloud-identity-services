@@ -1,8 +1,8 @@
 <!-- loio20ec3a2955624ae1aff488ff9018cd35 -->
 
-# SAP Commissions
+# SAP SuccessFactors Incentive Management
 
-Follow this procedure to set up SAP Commissions as a proxy system.
+Follow this procedure to set up SAP SuccessFactors Incentive Management as a proxy system, formerly known as SAP Commissions.
 
 
 
@@ -10,7 +10,7 @@ Follow this procedure to set up SAP Commissions as a proxy system.
 
 ## Prerequisites
 
--   You have technical user credentials for an SAP Commissions system with read and write access permissions.
+-   You have technical user credentials for an SAP SuccessFactors Incentive Management system with read and write access permissions.
 
 > ### Note:  
 > Administrators of bundle tenants on Neo environment should enable the *Manage OAuth Clients* permission, as described in *Neo Environment* section in [Manage Authorizations](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/544de9b504214372b4479dc1f6b08cca.html "Manage the authorizations of Identity Provisioning administrators, when your bundle or standalone tenant is running on SAP BTP, Neo environment.") :arrow_upper_right:.
@@ -19,7 +19,7 @@ Follow this procedure to set up SAP Commissions as a proxy system.
 
 ## Context
 
-Create a SCIM 2.0 proxy connector for SAP Commissions to execute hybrid scenarios. That means, it can provision its entities to another \(external\) back-end system by request, and then can continue executing CRUD operations back to the SAP Commissions system, whenever the external back-end requests such. This scenario supports provisioning **users** and **user assignments to groups**.
+Create a SCIM 2.0 proxy connector for SAP SuccessFactors Incentive Management to execute hybrid scenarios. That means, it can provision its entities to another \(external\) back-end system by request, and then can continue executing CRUD operations back to the SAP SuccessFactors Incentive Management system, whenever the external back-end requests such. This scenario supports provisioning **users** and **user assignments to groups**.
 
 > ### Note:  
 > The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users and groups. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
@@ -81,7 +81,7 @@ Create a SCIM 2.0 proxy connector for SAP Commissions to execute hybrid scenario
     -   [Access Identity Provisioning UI of Bundle Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/7ab5884ffbc44461a57622d2f633e57c.html "Access the Identity Provisioning UI when the service is bundled as part of an SAP cloud solution's license.") :arrow_upper_right:
     -   [Access Identity Provisioning UI of Standalone Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/61fd82ed48ab42b2bc74626926c1722c.html "Access the Identity Provisioning user interface as a standalone product.") :arrow_upper_right:
 
-5.  Add *SAP Commissions* as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
+5.  Add *SAP SuccessFactors Incentive Management* as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
 6.  Choose the *Properties* tab to configure the connection settings for your system.
 
@@ -128,7 +128,7 @@ Create a SCIM 2.0 proxy connector for SAP Commissions to execute hybrid scenario
     </td>
     <td valign="top">
     
-    Specify the URL to the SAP Commissions SCIM API portal.
+    Specify the URL to the SAP SuccessFactors Incentive Management SCIM API portal.
     
     </td>
     </tr>
@@ -164,7 +164,7 @@ Create a SCIM 2.0 proxy connector for SAP Commissions to execute hybrid scenario
     </td>
     <td valign="top">
     
-    Enter the user for your SAP Commissions system.
+    Enter the user for your SAP SuccessFactors Incentive Management system.
     
     </td>
     </tr>
@@ -176,7 +176,7 @@ Create a SCIM 2.0 proxy connector for SAP Commissions to execute hybrid scenario
     </td>
     <td valign="top">
     
-    \(Credential\) Enter the password for your SAP Commissions user.
+    \(Credential\) Enter the password for your SAP SuccessFactors Incentive Management user.
     
     </td>
     </tr>
@@ -209,13 +209,13 @@ Create a SCIM 2.0 proxy connector for SAP Commissions to execute hybrid scenario
     
 7.  Configure the transformations.
 
-    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Commissions* proxy system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
+    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP SuccessFactors Incentive Management* proxy system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
-    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP Commissions. For more information, see:
+    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP SuccessFactors Incentive Management. For more information, see:
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    [SAP Commissions REST API](https://blogs.sap.com/2020/05/06/sap-commissions-rest-api-part-3-api-documentation/)
+    [SAP SuccessFactors Incentive Management REST API](https://blogs.sap.com/2020/05/06/sap-commissions-rest-api-part-3-api-documentation/)
 
     Default read and write transformations:
 
@@ -582,5 +582,5 @@ To see an example with SAP Identity Management, see [Hybrid Scenario: SAP Identi
 **Related Information**  
 
 
-[SAP Commissions: Integration with SAP IdP](https://help.sap.com/docs/SAP_Commissions/85ce2a3717a644afa2bbd21f70387549/724c476e7c231014a804993ce4041860.html?version=Latest)
+[SAP SuccessFactors Incentive Management: Integration with SAP IdP](https://help.sap.com/docs/SAP_Commissions/85ce2a3717a644afa2bbd21f70387549/724c476e7c231014a804993ce4041860.html?version=Latest)
 

@@ -1,8 +1,8 @@
 <!-- loio3064fe238e6b45c88aa46bf020767999 -->
 
-# SAP Commissions
+# SAP SuccessFactors Incentive Management
 
-Follow this procedure to set up a source connector for SAP Commissions.
+Follow this procedure to set up a source connector for SAP SuccessFactors Incentive Management, formerly known as SAP Commissions.
 
 
 
@@ -10,13 +10,13 @@ Follow this procedure to set up a source connector for SAP Commissions.
 
 ## Prerequisites
 
-You have technical user credentials for an SAP Commissions system with read and write access permissions.
+You have technical user credentials for an SAP SuccessFactors Incentive Management system with read and write access permissions.
 
 
 
 ## Context
 
-After fulfilling the prerequisites, follow the procedure below to add a source system for SAP Commissions to read users and user assignments to groups. This source system consumes SCIM 2.0 API provided by SAP Commissions.
+After fulfilling the prerequisites, follow the procedure below to add a source system for SAP SuccessFactors Incentive Management to read users and user assignments to groups. This source system consumes SCIM 2.0 API provided by SAP SuccessFactors Incentive Management.
 
 
 
@@ -29,7 +29,7 @@ After fulfilling the prerequisites, follow the procedure below to add a source s
 
 2.  Sign in to the administration console of SAP Cloud Identity Services and navigate to *Identity Provisioning* \> *Source Systems*.
 
-3.  Add *SAP Commissions* as a source system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
+3.  Add *SAP SuccessFactors Incentive Management* as a source system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
 4.  Choose the *Properties* tab to configure the connection settings for your system.
 
@@ -76,7 +76,7 @@ After fulfilling the prerequisites, follow the procedure below to add a source s
     </td>
     <td valign="top">
     
-    Specify the URL to the SAP Commissions SCIM API portal.
+    Specify the URL to the SAP SuccessFactors Incentive Management SCIM API portal.
     
     </td>
     </tr>
@@ -112,7 +112,7 @@ After fulfilling the prerequisites, follow the procedure below to add a source s
     </td>
     <td valign="top">
     
-    Enter the user for your SAP Commissions system.
+    Enter the user for your SAP SuccessFactors Incentive Management system.
     
     </td>
     </tr>
@@ -124,7 +124,7 @@ After fulfilling the prerequisites, follow the procedure below to add a source s
     </td>
     <td valign="top">
     
-    \(Credential\) Enter the password for your SAP Commissions user.
+    \(Credential\) Enter the password for your SAP SuccessFactors Incentive Management user.
     
     </td>
     </tr>
@@ -157,15 +157,15 @@ After fulfilling the prerequisites, follow the procedure below to add a source s
     
 5.  \(Optional\) Configure the transformations.
 
-    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Commissions* source system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
+    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP SuccessFactors Incentive Management* source system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
     You can change the default transformation mapping rules to reflect your current setup of entities in your SCIM system. For more information, see:
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    [SAP Commissions REST API](https://blogs.sap.com/2020/05/06/sap-commissions-rest-api-part-3-api-documentation/)
+    [SAP SuccessFactors Incentive Management REST API](https://blogs.sap.com/2020/05/06/sap-commissions-rest-api-part-3-api-documentation/)
 
-    The behavior of the default transformation logic is to read all user attributes from the source SAP Commissions system, and then map them to the internal SCIM representation. It uses `entityIdSourceSystem` to store the unique ID of the identity.
+    The behavior of the default transformation logic is to read all user attributes from the source SAP SuccessFactors Incentive Management system, and then map them to the internal SCIM representation. It uses `entityIdSourceSystem` to store the unique ID of the identity.
 
     **Default transformation:**
 
@@ -272,5 +272,5 @@ After fulfilling the prerequisites, follow the procedure below to add a source s
 **Related Information**  
 
 
-[SAP Commissions: Integration with SAP IdP](https://help.sap.com/docs/SAP_Commissions/85ce2a3717a644afa2bbd21f70387549/724c476e7c231014a804993ce4041860.html?version=Latest)
+[SAP SuccessFactors Incentive Management: Integration with SAP IdP](https://help.sap.com/docs/SAP_Commissions/85ce2a3717a644afa2bbd21f70387549/724c476e7c231014a804993ce4041860.html?version=Latest)
 

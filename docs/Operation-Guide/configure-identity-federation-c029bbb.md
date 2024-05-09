@@ -62,6 +62,9 @@ When enabled, the custom application configurations for authentication and acces
 
 When this option is enabled, the user is authenticated by the corporate IdP, then Identity Authentication checks for the configurations for authentication and access policies on application level, and applies them. They include Risk-Based-Authentication, Terms of Use, Privacy Policy, Upgrade and Registration Forms.
 
+> ### Remember:  
+> The concurrent user access configuration is always applied for the application regardless of the *Apply Application Configurations* state.
+
 <a name="task_td1_3v4_y5"/>
 
 <!-- task\_td1\_3v4\_y5 -->
@@ -219,4 +222,6 @@ You have enabled *Allow Identity Authentication users only* option. For more inf
 [Create a New Group](create-a-new-group-b1b638d.md "As a tenant administrator you can create new user groups in the tenant via the administration console for SAP Cloud Identity Services.")
 
 [Assign Groups to a User](assign-groups-to-a-user-bfdeb9c.md "As a tenant administrator, you can assign one or more groups created for a specific tenant to a user via the administration console for SAP Cloud Identity Services.")
+
+[Configure Concurrent User Access to the Application](configure-concurrent-user-access-to-the-application-80ead1a.md "Tenant administrator can allow or restrict user access to an application from one or more browsers or devices.")
 

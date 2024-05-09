@@ -291,12 +291,12 @@ Groups in source systems are mapped to roles in AS ABAP target systems.
     <tr>
     <td valign="top">
     
-    `ips.delete.threshold.roles`
+    \(Optional\) `ips.delete.threshold.groups`
     
     </td>
     <td valign="top">
     
-    Use this property to control the number of roles to be deleted in a target system by defining a threshold. This will prevent you from accidentally deleting a huge number of roles, for example by adding a filter or condition.
+    Use this property to control the number of group assignments to be deleted in a target system by defining a threshold. This will prevent you from accidentally deleting a huge number of group assignments, for example by adding a filter or condition.
 
     For more information, see: [List of Properties](list-of-properties-d6f3577.md)
     

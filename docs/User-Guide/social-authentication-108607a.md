@@ -17,7 +17,7 @@
 
 ## Log on with a Social Provider Account
 
-You can log on to applications that use Identity Authentication via your accounts in Twitter, Facebook, LinkedIn, or Google.
+You can log on to applications that use Identity Authentication via your accounts in X, Facebook, LinkedIn, or Google.
 
 
 
@@ -113,12 +113,12 @@ LinkedIn
 <tr>
 <td valign="top">
 
-Twitter
+X
 
 </td>
 <td valign="top">
 
--   ID of your user - used to link your Twitter account with your Identity Authentication account
+-   ID of your user - used to link your X account with your Identity Authentication account
 
 -   your display name - used to prefill the registration form in case of non-existing user
 

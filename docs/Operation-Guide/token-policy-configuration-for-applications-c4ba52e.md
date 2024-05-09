@@ -216,6 +216,64 @@ All tokens are generated in the opaque format.
 </tr>
 </table>
 
+**Maximum Exchange Period** 
+
+With the *Maximum Exchange Period* you can set limits on how long the application can exchange user tokens without reauthenticating after having acquired the initial token.
+
+**Maximum Exchange Period**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Settings
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Unlimited \(Default\)
+
+</td>
+<td valign="top">
+
+The application can exchange user tokens without reauthenticating after having acquired the initial token without any limits.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Maximum Session Validity
+
+</td>
+<td valign="top">
+
+The period equals to the maximum value for the session validity which is 12 hours.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Initial Refresh Token Validity
+
+</td>
+<td valign="top">
+
+The period is valid until the initial refresh expires no matter how many times a refresh token is exchanged to a newer refresh token.
+
+</td>
+</tr>
+</table>
+
 To configure the token policy, proceed as follows:
 
 

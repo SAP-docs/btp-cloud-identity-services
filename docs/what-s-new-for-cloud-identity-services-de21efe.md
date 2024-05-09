@@ -135,6 +135,942 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+2024-05-08
+
+</td>
+<td valign="top">
+
+2024-05-08
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Groups
+
+</td>
+<td valign="top">
+
+You can search for specific member in a group via SCIM ID. See [List and Search Users in Groups](Operation-Guide/list-and-search-users-in-groups-4ac340a.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-05-08
+
+</td>
+<td valign="top">
+
+2024-05-08
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Conditional Authentication
+
+</td>
+<td valign="top">
+
+You can use asterisk \(\*\) in the top level domain part when you add rules for authentication against different identity providers. See [Add a New Authentication Rule](Operation-Guide/add-a-new-authentication-rule-ad7f993.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-05-08
+
+</td>
+<td valign="top">
+
+2024-05-08
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-04-25
+
+</td>
+<td valign="top">
+
+2024-04-25
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Custom Schemas
+
+</td>
+<td valign="top">
+
+You can assign and edit via the administration console the attributes from custom schemas. See [Extensions](Development/extensions-fb31d4e.md) and [List and Edit User Details](Operation-Guide/list-and-edit-user-details-045cb01.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-04-25
+
+</td>
+<td valign="top">
+
+2024-04-25
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Tokens
+
+</td>
+<td valign="top">
+
+You can use the *Maximum Exchange Period* configuration in the admin console or the `max_exchange_period` parameter for the Token Endpoint for Resource Owner Password Credentials Flow to set а limit on how long the application can exchange user tokens without reauthenticating after having acquired the initial token. See [Token Policy Configuration for Applications](Operation-Guide/token-policy-configuration-for-applications-c4ba52e.md) and [Configure the Client to Call Identity Authentication Token Endpoint for Resource Owner Password Credentials Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-token-endpoint-for-resource-owner-pa-67f720d.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-04-25
+
+</td>
+<td valign="top">
+
+2024-04-25
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Risk-Based Authentication
+
+</td>
+<td valign="top">
+
+You can use `Email Domain` to create rules for risk-based authentication for all applications in the tenant. See [Create a New Rule for Risk-Based Authentication on Tenant Level](Operation-Guide/configure-default-risk-based-authentication-for-all-applications-in-the-tenant-1aab51a.md#loio2ef53523c5fc47049f6ae0056252be4a).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-04-25
+
+</td>
+<td valign="top">
+
+2024-04-25
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Risk-Based Authentication
+
+</td>
+<td valign="top">
+
+You can use `Email Domain` to create rules for risk-based authentication for a specific application in the tenant. See [Create a New Rule](Operation-Guide/create-a-new-rule-18d02ab.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-04-25
+
+</td>
+<td valign="top">
+
+2024-04-25
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Notifications
+
+</td>
+<td valign="top">
+
+You can sort the notifications that are visible at the top-right corner of the administration console by type, priority and date.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-04-25
+
+</td>
+<td valign="top">
+
+2024-04-25
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Social Identity Providers
+
+</td>
+<td valign="top">
+
+Twitter social identity provider was renamed to X in the administration console and the documentation of Cloud Identity Services.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-04-25
+
+</td>
+<td valign="top">
+
+2024-04-25
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Feedback Survey
+
+</td>
+<td valign="top">
+
+The feedback survey that is available via the administration console is extended and now together with your experiences with Cloud Identity Services you can also let us know what you think about its documentation. The documentation feedback link is also available through the [SAP Cloud Identity Services Product Page](https://help.sap.com/docs/identity-authentication?state=DRAFT).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-04-25
+
+</td>
+<td valign="top">
+
+2024-04-25
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Data type introduced for expressions in Identity Provisioning graphical editor
+
+</td>
+<td valign="top">
+
+The data type of all transformation expressions is now displayed in the Identity Provisioning graphical editor under the Mapping Configurations screen of Add Mapping and Edit Mapping dialogs.
+
+Some expressions have predefined read-only values, like optional is always set to Boolean. Others, like constant, are configurable and can be set as String, Integer, Boolean, Object, StringArray, IntegerArray, BooleanArray and ObjectArray.
+
+For more information, see [Working with Graphical Editor](Operation-Guide/working-with-graphical-editor-a985398.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-04-25
+
+</td>
+<td valign="top">
+
+2024-04-25
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Changing `totalResults` attribute calculation mechanism
+
+</td>
+<td valign="top">
+
+Identity Provisioning changed the mechanism for calculating the total count of users or groups returned by proxy systems when executing a SCIM Proxy endpoint request to read entities from a backend system.
+
+As of now, if the backend system provides the actual value of the `totalResults` attribute and there is no condition defined in the read mapping transformation of the proxy system, this value will be returned in the response from the Identity Provisioning implementation of the Proxy System SCIM API.
+
+Previously, the value of `totalResults` attribute was the sum of the request parameters `startIndex` and `count`. This calculation mechanism remains unchanged for backend systems which do not provide value for the `totalResults` attribute.
+
+For more information, see: SAP Business Accelerator Hub: [SAP Cloud Identity Services](https://api.sap.com/package/SCPIdentityServices/rest) *Identity Provisioning Service* \> *API Reference* \> *Users/Groups*
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-04-25
+
+</td>
+<td valign="top">
+
+2024-04-25
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Renamed System
+
+</td>
+<td valign="top">
+
+The SAP Commissions connector has been renamed to SAP SuccessFactors Incentive Management.
+
+For more information, see: [SAP SuccessFactors Incentive Management](sap-successfactors-incentive-management-3064fe2.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-04-25
+
+</td>
+<td valign="top">
+
+2024-04-25
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
 2024-04-10
 
 </td>
@@ -1178,7 +2114,7 @@ OpenID Connect
 </td>
 <td valign="top">
 
-You can add authentication context class references for OpenID Connect corporate IdPs. See [Configure Authentication Context](Operation-Guide/configure-authentication-context-028cee2.md).
+You can add authentication context class references for OpenID Connect corporate IdPs. See [Configure Authentication Context \(SAML 2.0\)](Operation-Guide/configure-authentication-context-saml-2-0-028cee2.md).
 
 </td>
 <td valign="top">

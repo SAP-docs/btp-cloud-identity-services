@@ -126,6 +126,33 @@ Parameter Type
 <tr>
 <td valign="top">
 
+`client_id`
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+The user ID configured for basic authentication for the application. For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
+
+</td>
+<td valign="top">
+
+Path
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `redirect_uri`
 
 </td>
@@ -219,33 +246,6 @@ Path
 <tr>
 <td valign="top">
 
-`client_id`
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-<td valign="top">
-
-string
-
-</td>
-<td valign="top">
-
-The user ID configured for basic authentication for the application. For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
-
-</td>
-<td valign="top">
-
-Path
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 `state`
 
 </td>
@@ -273,7 +273,7 @@ Path
 <tr>
 <td valign="top">
 
-`nonce`
+`app_tid`
 
 </td>
 <td valign="top">
@@ -288,7 +288,36 @@ string
 </td>
 <td valign="top">
 
-Free text.
+Reserved.
+
+</td>
+<td valign="top">
+
+Path
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`idp`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+The name of the corporate identity provider as configured in the administration console for SAP Cloud Identity Services.
+
+When multiple identity providers are allowed for an application via conditional authentication, this parameter enables the client to determine which corporate identity provider to be used. Identity Authentication uses the `idp` to detect the correct corporate identity provider and redirect the request to it. The user authenticates against the corporate identity provider.
 
 </td>
 <td valign="top">
@@ -359,6 +388,60 @@ Path
 <tr>
 <td valign="top">
 
+`max_age`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+integer
+
+</td>
+<td valign="top">
+
+Maximum time in seconds since the user was last authenticated. When `max_age` has been reached, the user must re-authenticate.
+
+</td>
+<td valign="top">
+
+Path
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`nonce`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Free text.
+
+</td>
+<td valign="top">
+
+Path
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `prompt`
 
 </td>
@@ -388,62 +471,6 @@ Supported values are:
 
 
 
-
-</td>
-<td valign="top">
-
-Path
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`app_tid`
-
-</td>
-<td valign="top">
-
-No
-
-</td>
-<td valign="top">
-
-string
-
-</td>
-<td valign="top">
-
-Reserved.
-
-</td>
-<td valign="top">
-
-Path
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`idp`
-
-</td>
-<td valign="top">
-
-No
-
-</td>
-<td valign="top">
-
-string
-
-</td>
-<td valign="top">
-
-The name of the corporate identity provider as configured in the administration console for SAP Cloud Identity Services.
-
-When multiple identity providers are allowed for an application via conditional authentication, this parameter enables the client to determine which corporate identity provider to be used. Identity Authentication uses the `idp` to detect the correct corporate identity provider and redirect the request to it. The user authenticates against the corporate identity provider.
 
 </td>
 <td valign="top">

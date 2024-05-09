@@ -121,7 +121,7 @@ The retry is not supported.
 
 -   SAP Commerce Cloud
 
--   SAP Commissions
+-   SAP SuccessFactors Incentive Management
 
 -   SAP Concur version 2
 
@@ -184,7 +184,7 @@ The retry is not supported.
 
 -   SAP Commerce Cloud
 
--   SAP Commissions
+-   SAP SuccessFactors Incentive Management
 
 -   SAP Concur version 2
 

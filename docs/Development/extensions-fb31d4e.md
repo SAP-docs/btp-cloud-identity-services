@@ -80,34 +80,53 @@ The Identity Directory SCIM REST API can be manually extended by adding user att
     > > }
     > > ```
 
-2.  Call the Identity Directory SCIM REST API to assign an attribute form custom schema to the user. See [Identity Directory Service](https://api.sap.com/api/IdDS_SCIM/path/patchUser).
+2.  Assign an attribute form the custom schema to the user via one of the following options:
+    -   Assign an attribute from the schema via the administration console:
+        1.  *Access the administration console for Cloud Identity services* \> *Users & Authorizations* \> *User Management*.
+        2.  Select a user and choose *User Details* tab.
 
-    > ### Example:  
-    > You have updated the Michael's `hobby` attribute, by calling the *PATCH* method of [Identity Directory Service](https://api.sap.com/api/IdDS_SCIM/path/patchUser).
-    > 
-    > > ### Sample Code:  
-    > > ```
-    > > content-type: application/scim+json
-    > > 
-    > > 
-    > > Body:
-    > > 
-    > > {
-    > >     "schemas": [
-    > >         "urn:ietf:params:scim:api:messages:2.0:PatchOp",
-    > >         "urn:sap:cloud:scim:schemas:extension:custom:2.0:Profile"
-    > >     ],
-    > >     "Operations": [
-    > >         {
-    > >             "op": "add",
-    > >             "path": "urn:sap:cloud:scim:schemas:extension:custom:2.0:Profile:hobby",
-    > >             "value": "Chess playing."
-    > > 
-    > >         }
-    > >     ]
-    > > }
-    > > 
-    > > ```
+            > ### Note:  
+            > The attributes assigned from custom schema are visible at the bottom of the User Details tab under a section with the name of the custom schema.
+
+        3.  Press the *Edit* button at the top of the page and add values to the custom schema.
+        4.  Save your configuration.
+
+            > ### Note:  
+            > When the schema is assigned to the user it's in expanded mode.
+
+            > ### Tip:  
+            > To unassign the schema, remove the values of the attributes from the schema and save your changes. The schema is in collapsed mode when not assigned to a user.
+
+
+    -   Assign an attribute form custom schema to the user by calling the Identity Directory SCIM REST API. See [Identity Directory Service](https://api.sap.com/api/IdDS_SCIM/path/patchUser).
+
+        > ### Example:  
+        > You have updated the Michael's `hobby` attribute, by calling the *PATCH* method of [Identity Directory Service](https://api.sap.com/api/IdDS_SCIM/path/patchUser).
+        > 
+        > > ### Sample Code:  
+        > > ```
+        > > content-type: application/scim+json
+        > > 
+        > > 
+        > > Body:
+        > > 
+        > > {
+        > >     "schemas": [
+        > >         "urn:ietf:params:scim:api:messages:2.0:PatchOp",
+        > >         "urn:sap:cloud:scim:schemas:extension:custom:2.0:Profile"
+        > >     ],
+        > >     "Operations": [
+        > >         {
+        > >             "op": "add",
+        > >             "path": "urn:sap:cloud:scim:schemas:extension:custom:2.0:Profile:hobby",
+        > >             "value": "Chess playing."
+        > > 
+        > >         }
+        > >     ]
+        > > }
+        > > 
+        > > ```
+
 
 3.  Send the already assigned custom attribute by configuring it in the default attributes sent to the application. See [Configuring Attributes Based on Flexible Expressions](../Operation-Guide/configuring-attributes-based-on-flexible-expressions-a2f1e46.md) under the *Send Identity Directory Custom Schema Attributes* section.
 

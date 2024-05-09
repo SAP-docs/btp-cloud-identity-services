@@ -390,11 +390,11 @@ You can also use schemas to organize and combine multiple constants.
 -   String
 -   Integer
 -   Boolean
--   Object
+-   JSONObject
 -   StringArray
 -   IntegerArray
 -   BooleanArray
--   ObjectArray
+-   JSONObjectArray
 
 
 
@@ -570,11 +570,11 @@ You can add `"defaultValue"` for any attribute, in the transformation of any pro
 -   String
 -   Integer
 -   Boolean
--   Object
+-   JSONObject
 -   StringArray
 -   IntegerArray
 -   BooleanArray
--   ObjectArray
+-   JSONObjectArray
 
 
 
@@ -779,7 +779,38 @@ You can set a scope for an entity attribute, based on its lifecycle. A scope can
 
     -   For the affected entity, all transformation mappings that do not contain this scope will be ignored.
     -   If a condition exists on entity type level, it will be ignored as well.
-    -   Use this scope for *SCIM* systems, as well as *Concur*, *Microsoft Entra ID*, *Identity Authentication*, and *SAP Jam*.
+
+    Use this scope for the following systems:
+
+    -   Cloud Foundry UAA server
+    -   Identity Authentication
+    -   Local Identity Directory
+    -   Microsoft Entra ID
+    -   Sales Cloud – Analytics & AI
+    -   SAP Advanced Financial Closing
+    -   SAP Analytics Cloud
+    -   SAP Ariba Applications
+    -   SAP BTP Account Members \(Neo\)
+    -   SAP BTP XS Advanced UAA \(Cloud Foundry\)
+    -   SAP Business Network
+    -   SAP Build Work Zone, advanced edition
+    -   SAP Build Work Zone, standard edition
+    -   SAP Central Business Configuration
+    -   SAP Commerce Cloud
+    -   SAP SuccessFactors Incentive Management
+    -   SAP Concur version 2
+    -   SAP CPQ
+    -   SAP Data Custodian
+    -   SAP Enterprise Portal
+    -   SAP Fieldglass
+    -   SAP Field Service Management
+    -   SAP Intelligent Agriculture
+    -   SAP Jam Collaboration
+    -   SAP Sales Cloud and SAP Service Cloud
+    -   SAP SuccessFactors Learning
+    -   SAP SuccessFactors version 2
+    -   SAP S/4HANA for procurement planning
+    -   SCIM System
 
     > ### Example:  
     > **Concur**: The following mapping disables the user account:
@@ -990,7 +1021,7 @@ You can use `skipOperations` only in target system transformations.
     -   SAP Build Work Zone, standard edition
     -   SAP Central Business Configuration
     -   SAP Commerce Cloud
-    -   SAP Commissions
+    -   SAP SuccessFactors Incentive Management
     -   SAP Concur version 2
     -   SAP CPQ
     -   SAP Data Custodian
@@ -1297,7 +1328,7 @@ The example below provides the list of world locations and their relevant timezo
 >      
 > ```
 
-**Data type**: ObjectArray
+**Data type**: JSONObjectArray
 
 </td>
 </tr>

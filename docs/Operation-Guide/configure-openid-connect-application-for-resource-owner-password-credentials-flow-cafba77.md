@@ -16,7 +16,7 @@ You have an OpenID Connect application in the administration console for SAP Clo
 
 ## Context
 
-The trust is configured by entering the information manually. You can enter manually the name of the client \(relying party\), and its redirect URIs.
+The trust is configured by entering the information manually. You can enter manually the name of the client \(relying party\).
 
 To configure an OpenID Connect trusted application in the administration console for SAP Cloud Identity Services, proceed as follows:
 

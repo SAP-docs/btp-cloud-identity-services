@@ -1,8 +1,8 @@
 <!-- loio7865cccf1f3d454eadba9c527b1c7185 -->
 
-# SAP Commissions
+# SAP SuccessFactors Incentive Management
 
-Follow this procedure to set up a target connector for SAP Commissions.
+Follow this procedure to set up a target connector for SAP SuccessFactors Incentive Management, formerly known as SAP Commissions.
 
 
 
@@ -10,13 +10,13 @@ Follow this procedure to set up a target connector for SAP Commissions.
 
 ## Prerequisites
 
-You have created a technical user with administrator permissions that will be used to call the API of SAP Commissions for creating or updating users and user assignments.
+You have created a technical user with administrator permissions that will be used to call the API of SAP SuccessFactors Incentive Management for creating or updating users and user assignments.
 
 
 
 ## Context
 
-After fulfilling the prerequisites, follow the procedure below to add a target system for SAP Commissions to write users to it. This target system consumes SCIM 2.0 API provided by SAP Commissions.
+After fulfilling the prerequisites, follow the procedure below to add a target system for SAP SuccessFactors Incentive Management to write users to it. This target system consumes SCIM 2.0 API provided by SAP SuccessFactors Incentive Management.
 
 
 
@@ -29,7 +29,7 @@ After fulfilling the prerequisites, follow the procedure below to add a target s
 
 2.  Sign in to the administration console of SAP Cloud Identity Services and navigate to *Identity Provisioning* \> *Target Systems*.
 
-3.  Add *SAP Commissions* as a target system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
+3.  Add *SAP SuccessFactors Incentive Management* as a target system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
 4.  Choose the *Properties* tab to configure the connection settings for your system.
 
@@ -76,7 +76,7 @@ After fulfilling the prerequisites, follow the procedure below to add a target s
     </td>
     <td valign="top">
     
-    Specify the URL to the SAP Commissions SCIM API portal.
+    Specify the URL to the SAP SuccessFactors Incentive Management SCIM API portal.
     
     </td>
     </tr>
@@ -112,7 +112,7 @@ After fulfilling the prerequisites, follow the procedure below to add a target s
     </td>
     <td valign="top">
     
-    Enter the user for your SAP Commissions system.
+    Enter the user for your SAP SuccessFactors Incentive Management system.
     
     </td>
     </tr>
@@ -124,7 +124,7 @@ After fulfilling the prerequisites, follow the procedure below to add a target s
     </td>
     <td valign="top">
     
-    \(Credential\) Enter the password for your SAP Commissions user.
+    \(Credential\) Enter the password for your SAP SuccessFactors Incentive Management user.
     
     </td>
     </tr>
@@ -185,13 +185,13 @@ After fulfilling the prerequisites, follow the procedure below to add a target s
     
 5.  \(Optional\) Configure the transformations.
 
-    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Commissions* target system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
+    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP SuccessFactors Incentive Management* target system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
-    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP Commissions. For more information, see:
+    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP SuccessFactors Incentive Management. For more information, see:
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    [SAP Commissions REST API](https://blogs.sap.com/2020/05/06/sap-commissions-rest-api-part-3-api-documentation/)
+    [SAP SuccessFactors Incentive Management REST API](https://blogs.sap.com/2020/05/06/sap-commissions-rest-api-part-3-api-documentation/)
 
     **Mapping logic** – The behavior of the default transformation logic is to map all attributes from the internal SCIM representation to the target entity. If the entity has more than one e-mail addresses, only one of them is used. It is either the e-mail set as primary in the source system, or if no primary e-mail is set, the one that comes first is used.
 
@@ -236,7 +236,7 @@ After fulfilling the prerequisites, follow the procedure below to add a target s
     >                 "optional": true
     >             },
     > 
-    > // For each user in SAP Commissions, only one email is written. It can be either the primary email, or the first email from the "emails[]" list.
+    > // For each user in SAP SuccessFactors Incentive Management, only one email is written. It can be either the primary email, or the first email from the "emails[]" list.
     >             {
     >                 "sourcePath": "$.emails[0].value",
     >                 "targetPath": "$.emails[0].value",
@@ -305,5 +305,5 @@ After fulfilling the prerequisites, follow the procedure below to add a target s
 **Related Information**  
 
 
-[SAP Commissions: Integration with SAP IdP](https://help.sap.com/docs/SAP_Commissions/85ce2a3717a644afa2bbd21f70387549/724c476e7c231014a804993ce4041860.html?version=Latest)
+[SAP SuccessFactors Incentive Management: Integration with SAP IdP](https://help.sap.com/docs/SAP_Commissions/85ce2a3717a644afa2bbd21f70387549/724c476e7c231014a804993ce4041860.html?version=Latest)
 

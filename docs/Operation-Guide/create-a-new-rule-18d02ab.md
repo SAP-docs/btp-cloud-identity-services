@@ -10,11 +10,11 @@ You can create rules for authentication according to different risk factors.
 
 Each rule contains the following information:
 
--   **Action**
+-   **Authentication Action**
 
     This action is performed if the rule conditions meet the defined criteria.
 
-    You can choose one of the following actions:
+    You can choose one of the following authentication actions:
 
     -   *Allow*
 
@@ -77,7 +77,8 @@ Each rule contains the following information:
         >     If you set *RADIUS Server Two Factor Authentication*, users are required to provide a RADIUS passcode in addition to their primary credentials. Users must have a RADIUS token \(hard or soft\) configured for them to generate passcodes. For more information about how to configure RADIUS server in Identity Authentication, see [Configure RADIUS Server Settings \(Beta\)](configure-radius-server-settings-beta-03043ae.md).
 
 
-    The *Action* filed is mandatory.
+    > ### Remember:  
+    > The *Authentication Action* filed is mandatory.
 
 -   *IP Range*
 
@@ -103,15 +104,7 @@ Each rule contains the following information:
     > Identity Authentication expects the client IP to be sent by the proxy server in the **X-Forwarded-For** header of the authentication request.
 
     > ### Remember:  
-    > Identity Authentication does not have control over the involved proxies and their number, participating in the request between the client/user and Identity Authentication and wether these proxies behave according to the scenario. Therefore it is not guaranteed that the client IP address is sent in the above mentioned header alongside the IP addresses of the proxies \(if any\) to Identity Authentication.
-
--   *Group*
-
-    Specify a cloud or on-premise group, which the authenticating user has to be a member of. If no group is selected, the rule is valid for all users.
-
-    If the rule is valid for an on-premise group, type in the name of the corporate user store group, for which this rule should be valid.
-
-    The cloud groups have to be configured in the administration console for SAP Cloud Identity Services. For more information, see [Managing Groups](managing-groups-ddd067c.md).
+    > Identity Authentication does not have control over the involved proxies and their number, participating in the request between the client/user and Identity Authentication and whether these proxies behave according to the scenario. Therefore it is not guaranteed that the client IP address is sent in the above mentioned header alongside the IP addresses of the proxies \(if any\) to Identity Authentication.
 
 -   *Authentication Method*
 
@@ -133,6 +126,18 @@ Each rule contains the following information:
 
     Specify the type, which the authenticating user must have. If no user type is selected, the rule is valid for any of the types.
 
+-   *Group Type*
+    -   Cloud Group - default choice
+    -   On-Premise Group
+
+-   *Group*
+
+    Specify a cloud or on-premise group, which the authenticating user has to be a member of. If no group is selected, the rule is valid for all users.
+
+    If the rule is valid for an on-premise group, type in the name of the corporate user store group, for which this rule should be valid.
+
+    The cloud groups have to be configured in the administration console for SAP Cloud Identity Services. For more information, see [Managing Groups](managing-groups-ddd067c.md).
+
 -   *Corporate Attribute*
 
     Specify an attribute from the corporate identity provider \(IdP\) assertion, based on which the rule action will be applied.
@@ -142,8 +147,12 @@ Each rule contains the following information:
     > ### Note:  
     > For this rule, the *Apply Application Configurations* option of *Identity Federation* must be enabled. For more information, see [Configure Identity Federation](configure-identity-federation-c029bbb.md).
 
+-   *Email Domain*
 
-The fields *IP Range*, *Group*, *Authentication Method*, and *User Type* are not mandatory, but at least one of them has to be specified.
+    Specify a domain for the email of the authenticating user.
+
+
+The fields *IP Range*, *Forwarded IP Range*, *Group*, *Authentication Method*, and *User Type* are not mandatory, but at least one of them has to be specified.
 
 
 

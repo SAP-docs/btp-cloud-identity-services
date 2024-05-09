@@ -212,30 +212,25 @@ These proxy systems consume SCIM 2.0 API provided by SAP Ariba Buying.
     <tr>
     <td valign="top">
     
-    `ariba.buying.content.type`
-    
-    </td>
-    <td valign="top">
-    
-    Makes the connector send a specified value for the *Content-Type* HTTP header. This is needed because a SCIM system could potentially not implement the protocol in the specification, which states that a system must accept *application/scim+json* as a value of the *Content-Type* header.
-
-    **Possible values:**
-
-    For example: *application/scim+json*
-
-    If the property is not specified, the default value is taken: *application/scim+json*
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     \(Optional\) `ariba.buying.user.filter`
     
     </td>
     <td valign="top">
     
     When specified, only those SAP Ariba Buying users matching the filter expression will be read. You can set a single attribute or multiple ones as search criteria.
+
+    Supported filtering by the following attributes:
+
+    -   *id*
+
+    -   *userName*
+
+    -   *emails.value*
+
+    -   *urn:ietf:params:scim:schemas:extension:sap:2.0:User:userUuid*
+
+    -   *active*
+
 
     For more information, see [List of Properties](list-of-properties-d6f3577.md).
     
@@ -249,11 +244,11 @@ These proxy systems consume SCIM 2.0 API provided by SAP Ariba Buying.
     </td>
     <td valign="top">
     
-    WhenIdentity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists on the target system. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\).
+    When Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists on the target system. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\).
 
     This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\). If the service finds such a user on the target system via this filter, then the conflicting user will overwrite the existing one. If the service does not find such a user, the creation will fail.
 
-    The property is automatically added during system creation. If the service finds an existing user by at least one of the uniqueness criteria, which are *email*, *userName*, or *userUuid*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the update of the conflicting user fails. If more than one users with these unique attributes are found, the update fails.
+    The property is automatically added during system creation. If the service finds an existing user by at least one of the uniqueness criteria, which are *email*, *userName*, or *urn:ietf:params:scim:schemas:extension:sap:2.0:User:userUuid*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the update of the conflicting user fails. If more than one users with these unique attributes are found, the update fails.
 
     For more information, see [List of Properties](list-of-properties-d6f3577.md).
     
@@ -293,33 +288,6 @@ These proxy systems consume SCIM 2.0 API provided by SAP Ariba Buying.
     -   *false*
 
     Default value: *false*
-    
-    </td>
-    </tr>
-    </table>
-    
-    Exemplary destination \(property configuration\):
-
-
-    <table>
-    <tr>
-    <td valign="top">
-    
-    `Type`=*HTTP*
-
-    `Authentication`=*BasicAuthentication*
-
-    `ProxyType`=*Internet*
-
-    `URL`=*https://openapi.ariba.com*
-
-    `User`=*aaaa12345-1111-3333-cccc-1234567890*
-
-    `Password`=\*\*\*\*\*\*\*\*\*\*\*\*
-
-    `OAuth2TokenServiceURL`=*https://api.ariba.com/v2/oauth/token*
-
-    `ariba.applications.support.patch.operation`=*true*
     
     </td>
     </tr>

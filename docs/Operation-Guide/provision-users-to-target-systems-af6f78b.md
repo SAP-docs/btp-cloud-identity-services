@@ -2,7 +2,7 @@
 
 # Provision Users to Target Systems
 
-Tenant administrators can provision users of Identity Authentication to SAP Jamand Identity Provisioning target systems target system.
+Tenant administrators can provision users of Identity Authentication to SAP Jamand Identity Provisioning target systemstarget system.
 
 
 
@@ -10,11 +10,11 @@ Tenant administrators can provision users of Identity Authentication to SAP Jama
 
 -   You are assigned the *Manage Users* role. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
 
--   You have configured a target system in the administration console for SAP Cloud Identity Services. For more details about how to configure target systems, see [Configure SAP Jam for Real-Time Provisioning](configure-sap-jam-for-real-time-provisioning-a923427.md)or [Configure Identity Provisioning for Real-Time Provisioning](configure-identity-provisioning-for-real-time-provisioning-3349645.md).
+-   You have configured a target system in the administration console for SAP Cloud Identity Services. For more details about how to configure target systems, see [Configure SAP Jam for Real-Time Provisioning](configure-sap-jam-for-real-time-provisioning-a923427.md)or [Configure Identity Authentication for Real-Time Provisioning](configure-identity-authentication-for-real-time-provisioning-3349645.md).
 
 
 > ### Note:  
-> Currently, Identity Provisioning supports real-time provisioning to instances of:
+> Currently, Identity Authentication supports real-time provisioning to instances of:
 > 
 > -   SAP Jam
 > 
@@ -374,9 +374,11 @@ To provision users, choose one of the options below and follow the corresponding
 **Related Information**  
 
 
+[Enable Real-Time Provisioning in Source Applications](enable-real-time-provisioning-in-source-applications-0767587.md "Enable the real-time provisioning configuration in the source applications that trigger immediate sync when changes occur.")
+
 [Configure SAP Jam for Real-Time Provisioning](configure-sap-jam-for-real-time-provisioning-a923427.md "Tenant administrators can configure SAP Jam target systems for real-time provisioning via the administration console for SAP Cloud Identity Services.")
 
-[Configure Identity Provisioning for Real-Time Provisioning](configure-identity-provisioning-for-real-time-provisioning-3349645.md "You can configure Identity Provisioning target systems for real-time user provisioning via the administration console for SAP Cloud Identity Services.")
+[Configure Identity Authentication for Real-Time Provisioning](configure-identity-authentication-for-real-time-provisioning-3349645.md "Enable real-time provisioning in Identity Authentication to trigger immediate synchronization of user changes to target systems configured in Identity Provisioning.")
 
 [Delete Target System](delete-target-system-6372e9a.md "As a tenant administrator, you can delete one or more target systems in a tenant of Identity Authentication.")
 

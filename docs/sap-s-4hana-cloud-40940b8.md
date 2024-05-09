@@ -346,7 +346,7 @@ In SAP S/4HANA Cloud, business partners are the central master data objects that
     </td>
     <td valign="top">
     
-    Use this property to control the number of roles to be deleted in a target system by defining a threshold. This will prevent you from accidentally deleting a huge number of roles, for example by adding a filter or condition.
+    Use this property to control the number of user assignments of a role to be deleted in a target system by defining a threshold. This will prevent you from accidentally deleting a huge number of user assignments of a role, for example by adding a filter or condition.
 
     For more information, see: [List of Properties](list-of-properties-d6f3577.md)
     

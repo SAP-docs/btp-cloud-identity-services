@@ -843,10 +843,11 @@ Supported filtering by the following attributes:
 
 **Possible values:**
 
--   *userName eq "Julie Armstrong"*
--   *emails.value eq julie.armstrong@example.com*
--   *userName eq "Julie Armstrong" and emails.value eq julie.armstrong@example.com*
--   *userName eq "Julie Armstrong" or active eq false*
+For example:
+
+-   Single attribute: *userName eq "Julie Armstrong"*
+-   Multiple attributes \(with `AND`\): *userName eq "Julie Armstrong" and emails.value eq julie.armstrong@example.com*
+-   Multiple attributes \(with `OR`\): *userName eq "Julie Armstrong" or active eq false*
 
 **System Role:** Source, Proxy
 
@@ -909,11 +910,11 @@ SAP Ariba Buying
 </td>
 <td valign="top">
 
-WhenIdentity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists on the target system. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\).
+When Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists on the target system. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\).
 
 This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\). If the service finds such a user on the target system via this filter, then the conflicting user will overwrite the existing one. If the service does not find such a user, the creation will fail.
 
-The property is automatically added during system creation. If the service finds an existing user by at least one of the uniqueness criteria, which are *email*, *userName*, or *userUuid*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the update of the conflicting user fails. If more than one users with these unique attributes are found, the update fails.
+The property is automatically added during system creation. If the service finds an existing user by at least one of the uniqueness criteria, which are *email*, *userName*, or *urn:ietf:params:scim:schemas:extension:sap:2.0:User:userUuid*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the update of the conflicting user fails. If more than one users with these unique attributes are found, the update fails.
 
 According to your use case, choose how to set up this property:
 
@@ -926,37 +927,10 @@ According to your use case, choose how to set up this property:
 -   *userName*
 -   *emails.value*
 -   *urn:ietf:params:scim:schemas:extension:sap:2.0:User:userUuid*
+-   a conjunction of the above-mentioned attributes
 
-Default value:
 
--   *userName*
--   *emails.value*
--   *urn:ietf:params:scim:schemas:extension:sap:2.0:User:userUuid*
-
-**System Role:** Target, Proxy
-
-</td>
-<td valign="top">
-
-SAP Ariba Buying
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`ariba.buying.content.type`
-
-</td>
-<td valign="top">
-
-Makes the connector send a specified value for the *Content-Type* HTTP header. This is needed because a SCIM system could potentially not implement the protocol in the specification, which states that a system must accept *application/scim+json* as a value of the *Content-Type* header.
-
-**Possible values:**
-
-For example: *application/scim+json*
-
-If the property is not specified, the default value is taken: *application/scim+json*
+Default value: *userName*
 
 **System Role:** Target, Proxy
 
@@ -2323,7 +2297,7 @@ In case the property is not set, only delta read jobs will be executed. For more
 
 -   SAP Commerce Cloud
 
--   SAP Commissions
+-   SAP SuccessFactors Incentive Management
 
 -   SAP Concur
 
@@ -5455,7 +5429,7 @@ For example:
 
 -   SAP Analytics Cloud
 
--   SAP Commissions
+-   SAP SuccessFactors Incentive Management
 
 -   SAP Jam Collaboration
 
@@ -5503,7 +5477,7 @@ For example:
 
 -   SAP Analytics Cloud
 
--   SAP Commissions
+-   SAP SuccessFactors Incentive Management
 
 -   SAP Jam Collaboration
 
@@ -5549,7 +5523,7 @@ If the property is not specified, the default value is taken: *application/scim+
 
 -   SAP Analytics Cloud
 
--   SAP Commissions
+-   SAP SuccessFactors Incentive Management
 
 -   SAP Jam Collaboration
 
@@ -5620,7 +5594,7 @@ Default value: *userName*
 
 -   *SAP Analytics Cloud*
 
--   SAP Commissions
+-   SAP SuccessFactors Incentive Management
 
 -   SAP Jam Collaboration
 
@@ -5668,7 +5642,7 @@ If the property is not specified, the search is done by the default attribute: *
 
 -   SAP Analytics Cloud
 
--   SAP Commissions
+-   SAP SuccessFactors Incentive Management
 
 -   SAP Jam Collaboration
 
@@ -5747,7 +5721,7 @@ Default value: *false*
 
 -   SAP Analytics Cloud
 
--   SAP Commissions
+-   SAP SuccessFactors Incentive Management
 
 -   SAP Jam Collaboration
 
@@ -5871,7 +5845,7 @@ If you use another IdP, enter its value as configured in the SAP BTP cockpit. Fo
 
 **Possible values:**
 
-Default value: *account.sap.com*
+Default value: *accounts.sap.com*
 
 **System Role:** Target, Proxy
 
@@ -5906,7 +5880,7 @@ Default value: *Basic*
 
 -   SCIM System
 -   SAP Analytics Cloud
--   SAP Commissions
+-   SAP SuccessFactors Incentive Management
 -   SAP Jam Collaboration
 -   Identity Authentication
 -   Local Identity Directory
@@ -10069,7 +10043,7 @@ SAP Market Communication for Utilities
 </td>
 <td valign="top">
 
-In the event of archived \(disabled\) entities in a source For example, if you set the property's value = In the event of archived \(disabled\) entities in a source nullnullnullSAP Market Communication for Utilities
+In the event of archived \(disabled\) entities in a source SAP Market Communication for Utilities system, you can choose whether the provisioning jobs to continue reading such entities or to skip them.
 
 In the source systems, this property is activated by default. If you want to always read disabled entities, set the property to *false*, or delete it.
 
@@ -12047,7 +12021,7 @@ All systems
 </td>
 <td valign="top">
 
-Use this property to control the number of groups to be deleted in a target system by defining a threshold. This will prevent you from accidentally deleting a huge number of groups, for example by adding a filter or condition. For more information, see [Thresholds Prevent Unintended Deletion of Users when Provisioning with SAP Cloud Identity Services](https://community.sap.com/t5/technology-blogs-by-sap/thresholds-prevent-unintended-deletion-of-users-when-provisioning-with-sap/ba-p/13584176).
+Use this property to control the number of groups or group assignments to be deleted in a target system by defining a threshold. This will prevent you from accidentally deleting a huge number of groups or group assignments, for example by adding a filter or condition. For more information, see [Thresholds Prevent Unintended Deletion of Users when Provisioning with SAP Cloud Identity Services](https://community.sap.com/t5/technology-blogs-by-sap/thresholds-prevent-unintended-deletion-of-users-when-provisioning-with-sap/ba-p/13584176).
 
 The property is optional and is defined on the target systems only. It is not added at system creation. Its value must be greater than "0".
 
@@ -12098,7 +12072,7 @@ As a result, expect the following behavior:
 
 -   SAP Commerce Cloud
 
--   SAP Commissions
+-   SAP SuccessFactors Incentive Management
 
 -   SAP Concur
 
@@ -12153,7 +12127,7 @@ As a result, expect the following behavior:
 </td>
 <td valign="top">
 
-Use this property to control the number of roles to be deleted in a target system by defining a threshold. This will prevent you from accidentally deleting a huge number of roles, for example by adding a filter or condition. For more information, see [Thresholds Prevent Unintended Deletion of Users when Provisioning with SAP Cloud Identity Services](https://community.sap.com/t5/technology-blogs-by-sap/thresholds-prevent-unintended-deletion-of-users-when-provisioning-with-sap/ba-p/13584176).
+Use this property to control the number of roles or user assignments of a role to be deleted in a target system by defining a threshold. This will prevent you from accidentally deleting a huge number of roles or user assignments of a role, for example by adding a filter or condition. For more information, see [Thresholds Prevent Unintended Deletion of Users when Provisioning with SAP Cloud Identity Services](https://community.sap.com/t5/technology-blogs-by-sap/thresholds-prevent-unintended-deletion-of-users-when-provisioning-with-sap/ba-p/13584176).
 
 The property is optional and is defined on the target systems only. It is not added at system creation. Its value must be greater than "0".
 
@@ -12729,7 +12703,7 @@ SAP Employee Central Payroll
 </td>
 <td valign="top">
 
-Makes the SAP Employee Central Payroll connector send the *If-Match* HTTP header with a value of “\*” for every request to the target system. This header could be used by an SAP Central Invoice Management system for entity versioning.
+Makes the SAP Employee Central Payroll connector send the *If-Match* HTTP header with a value of “\*” for every request to the target system. This header could be used by an SAP Employee Central Payroll system for entity versioning.
 
 **Possible values:**
 
@@ -12803,6 +12777,253 @@ You can use the example value or provide your own.
 <td valign="top">
 
 SAP Employee Central Payroll
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`cm.user.filter`
+
+</td>
+<td valign="top">
+
+When specified, only those SAP Ariba Category Management users matching the filter expression will be read.
+
+Supported operators: eq \(equal\) and sw \(starts with\).
+
+For example:
+
+-   Value = *userName eq "JohnSmith"*
+
+-   Value = *userName sw "J"*
+
+-   Value = *emails.value eq "john.smith@example.com"*
+
+-   Value = *userUuid eq "1ab6c132-5de5-4530-8g14-1234h26373ab"*
+
+
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP Ariba Category Management
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`cm.group.filter`
+
+</td>
+<td valign="top">
+
+When specified, only those groups matching the filter expression will be read.
+
+Supported operators: eq \(equal\) and sw \(starts with\).
+
+For example:
+
+-   Value = *displayName eq "ProjectTeam1"*
+
+-   Value = *displayName sw "P"*
+
+
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP Ariba Category Management
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`cm.user.unique.attribute`
+
+</td>
+<td valign="top">
+
+When the Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists in SAP Ariba Category Management. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\). This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\).
+
+According to your use case, choose how to set up this property:
+
+-   Default behavior: This property is missing during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such а *userName* is not found, the creation of the conflicting user fails.
+-   Value = *userUuid*. If the service finds an existing user with such *userUuid*, it updates this user with the data of the conflicting one. If a user with such *userUuid* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+
+**Possible values:**
+
+-   *userName*
+-   *userUuid*
+
+Default value: *userName*
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Ariba Category Management
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`cm.group.unique.attribute`
+
+</td>
+<td valign="top">
+
+If the Identity Provisioning tries to create a group that already exists on the SAP Ariba Category Management target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
+
+**Possible values:**
+
+Default value \(when not specified\): *displayName*
+
+If the property is not specified, the search is done by the default attribute: *displayName*
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Ariba Category Management
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`cm.support.patch.operation`
+
+</td>
+<td valign="top">
+
+This property controls how modified users in the source system are updated in the target system.
+
+-   If set to *true*, Identity Provisioning sends a `PATCH` request to the user or group resource in the target system. Only attributes without `"scope": "createEntity"` in the attribute mappings in the write transformation will be updated.
+
+    For example, if the last name of a user is changed in the source system, the patch operation will update it in the target system and will leave unchanged other attributes with explicitly set "scope": "createEntity".
+
+-   If set to *false*, `PUT` operations are used to update users in the target system. This means, for example, that if a user attribute is modified, all user attributes are replaced in the target system, instead of updating only the modified ones.
+
+
+Users can be updated in the target system in various cases, such as:
+
+-   In the source system, some user attributes are modified, or new attributes are added.
+
+-   In the source system, a condition or a filter is set for users not to be read anymore.
+
+-   A user is deleted from the source system.
+
+
+In the last two cases, it's possible to keep the entity in the target system – it will not be deleted but only disabled. To do this, use the `deleteEntity` scope in the transformation of your target or proxy system. See: [Transformation Expressions](transformation-expressions-bb8537b.md) → **deleteEntity**.
+
+**Possible values:**
+
+-   *true*
+
+-   *false*
+
+
+Default value: *false*
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Ariba Category Management
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`cm.include.if.match.wildcard.header`
+
+</td>
+<td valign="top">
+
+Makes the SAP Ariba Category Management connector send the *If-Match* HTTP header with a value of “\*” for every request to the target system. This header could be used by an SAP Ariba Category Management system for entity versioning.
+
+**Possible values:**
+
+-   *true*
+
+-   *false*
+
+
+Default value: *false* 
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Ariba Category Management
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`cm.content.type`
+
+</td>
+<td valign="top">
+
+This property makes a SAP Ariba Category Management connector to send a specified value for the *Content-Type* HTTP header. This is needed because SAP Ariba Category Management could potentially not implement the protocol in the specification, which states that a system must accept *application/scim+json* as a value of the*Content-Type* header.
+
+**Possible values:**
+
+For example: *application/json*
+
+Default value: *application/scim+json*
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Ariba Category Management
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`cm.group.prefix`
+
+</td>
+<td valign="top">
+
+This property distinguishes SAP Ariba Category Management groups by specific prefix. It is an optional property which does not appear by default at system creation.
+
+Example value: `CM_`
+
+You can use the example value or provide your own.
+
+-   When set in the source system, the prefix will be prepended to the name of the groups that are read from the SAP Ariba Category Management source system and will be provisioned to the target system with the following name pattern: ECP\_GroupDisplayName. This way SAP Ariba Category Management groups in the target system will be distinguished from groups provisioned from other applications.
+
+    If the property is not set, the SAP Ariba Category Management groups will be read and provisioned to the target system with their actual display names.
+
+-   When set in the target system, only groups containing the CM\_ prefix in their display name will be provisioned to SAP Ariba Category Management. Groups without this prefix in the display name won't be provisioned.
+
+    If the property is not set, all groups will be be provisioned to SAP Ariba Category Management.
+
+
+**System Role:** Source and Target
+
+</td>
+<td valign="top">
+
+SAP Ariba Category Management
 
 </td>
 </tr>

@@ -170,7 +170,9 @@ When you select *Add mapping* for an entity or choose the *Plus* icon next to an
 
 -   Add *Mapping Configurations* - A mapping configuration is a name-value pair \(that is, a transformation expression and its value\).
 
-    In the *Name* field, you can choose one of the predefined expressions: *condition*, *scope*, *constant*, *ignore*, *correlationAttribute* and others and provide a value. Some expressions have predefined values. For example, ignore, optional, scope, skipOperations.
+    In the *Name* field, you can choose one of the predefined expressions: *condition*, *scope*, *constant*, *ignore*, *correlationAttribute* and others, define the data type by selecting *Type* and provide a value.
+
+    Some expressions have predefined types and values. For example, ignore and optional are always set with Boolean data type and have true or false as predefined values. The skipOperations are always set with String data type and have: create, update and delete as predefined values.
 
 -   View your configuration in the *Mapping Representation in JSON* view.
 

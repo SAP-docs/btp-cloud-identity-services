@@ -25,7 +25,7 @@ Identity Authentication allows account linking with the following social provide
 -   Facebook
 -   Google
 -   LinkedIn
--   Twitter
+-   X
 
 
 

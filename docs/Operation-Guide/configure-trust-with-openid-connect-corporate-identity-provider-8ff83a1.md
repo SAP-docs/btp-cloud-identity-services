@@ -2,7 +2,7 @@
 
 # Configure Trust with OpenID Connect Corporate Identity Provider
 
-This document is intended to help you configure trust with an OpenID Connect \(OIDC\) corporate identity provider. In this scenario Identity Authentication acts as a proxy to delegate the authentication to an OIDC-compliant corporate identity provider.
+This document is intended to help you configure trust with an OpenID Connect \(OIDC\) corporate identity provider. In this scenario, Identity Authentication acts as a proxy to delegate the authentication to an OIDC-compliant corporate identity provider.
 
 
 
@@ -10,9 +10,9 @@ This document is intended to help you configure trust with an OpenID Connect \(O
 
 Identity Authentication can use OIDC-compliant identity providers as external authenticating authorities. The service acts as a proxy to delegate authentication to the external corporate identity provider. The requests for authentication sent by the relying party are forwarded to the corporate identity provider.
 
-As an identity provider proxy, Identity Authentication acts as an OpenID identity provider to the relying party, and as relying party to the corporate identity provider. Once a user is authenticated at the corporate identity provider, successive authentication requests from relying parties, which use the same corporate identity provider aren't forwarded to it as long as the session at Identity Authentication is active. Identity Authentication issues JSON Web Tokens \(JWTs\) based on the user data received during the first authentication.
+As an identity provider proxy, Identity Authentication acts as an OpenID identity provider to the relying party, and as a relying party to the corporate identity provider. Once a user is authenticated at the corporate identity provider, successive authentication requests from relying parties, which use the same corporate identity provider aren't forwarded to it as long as the session at Identity Authentication is active. Identity Authentication issues JSON Web Tokens \(JWTs\) based on the user data received during the first authentication.
 
-To use Identity Authentication as a proxy to delegate authentication to an external OpenID Connect corporate identity provider you have to configure trust with that corporate identity provider.
+To use Identity Authentication as a proxy to delegate authentication to an external OpenID Connect corporate identity provider, configure trust with that corporate identity provider.
 
 > ### Tip:  
 > If you want to change one corporate identity provider with another, for example move from a SAML identity provider to an OpenID Connect one, it's helpful to know the applications that the corporate identity provider uses. To see the applications that have established trust with a specific corporate identity provider, sign in to the administration console and go to *Identity Providers* \> *Corporate Identity Providers* \> *identity provider from the list* \> *Trusting Applications*.
@@ -134,7 +134,7 @@ Required. Must be a valid URI.
 Optional. If present it must be a valid URI.
 
 > ### Remember:  
-> If the `end_session_endpoint` is not supported by the OpenID Connect corporate identity provider, the corporate identity provider can't participate in single logout flows.
+> If the `end_session_endpoint` isn't supported by the OpenID Connect corporate identity provider, the corporate identity provider can't participate in single logout flows.
 
 
 
@@ -151,7 +151,7 @@ Optional. If present it must be a valid URI.
 Optional.
 
 > ### Remember:  
-> If `grant_types_supported` is provided in the metadata, it must contain `authorization_code`, which means that the OpenID Connect provider must support the Authorization Code Flow.
+> If `grant_types_supported` is provided in the metadata, it must contain `authorization_code`, which means that the OpenID Connect provider must support the authorization code flow.
 
 
 
@@ -238,7 +238,7 @@ Configure the corporate identity provider in the administration console for SAP 
     </td>
     <td valign="top">
     
-    Refreshes the OpenID Connect metadata of the corporate identity provider automatically if it is older than the selected interval and there are logons which forward the request to the corporate identity provider.
+    Refreshes the OpenID Connect metadata of the corporate identity provider automatically if it's older than the selected interval and there are logons which forward the request to the corporate identity provider.
 
     Optional. Choose from:
 
@@ -270,7 +270,7 @@ Configure the corporate identity provider in the administration console for SAP 
     -   Private key JWT
 
         > ### Tip:  
-        > If possible, choose *Private key JWT*. This choice allows also automatic credential rotation.
+        > If possible, choose *Private key JWT*. This choice also allows automatic credential rotation.
 
 
 
@@ -314,10 +314,10 @@ Configure the corporate identity provider in the administration console for SAP 
     </td>
     <td valign="top">
     
-    Optional. Disabled by default. If enabled, Identity Authentication will execute the authorization code flow enhanced with PKCE against the corporate identity provider.
+    Optional. Disabled by default. If enabled, Identity Authentication runs the authorization code flow enhanced with PKCE against the corporate identity provider.
 
     > ### Note:  
-    > The authorization code flow with PKCE is recommended. Only code challenge method S256 is supported.
+    > The authorization code flow with PKCE is recommended. Only the code challenge method S256 is supported.
 
 
     
@@ -334,7 +334,7 @@ Configure the corporate identity provider in the administration console for SAP 
     You can have up to 20 scopes. The `openid` scope is added by default. Each scope can have a length of up to 99 characters.
 
     > ### Tip:  
-    > If you are using Microsoft Entra ID as corporate identity provider, the recommended claims are:
+    > If you're using Microsoft Entra ID as corporate identity provider, the recommended claims are:
     > 
     > -   openid
     > -   email
@@ -342,7 +342,12 @@ Configure the corporate identity provider in the administration console for SAP 
 
 8.  **Optional:** Choose the *Validate* button to check the configuration.
 
-    An authorization code flow will be executed against the corporate identity provider. The configuration is validated in a new tab where additional information about the authorization code, the token with all the claims and scopes, and the token verification is provided.
+    An authorization code flow is run against the corporate identity provider. The configuration is validated in a new tab where additional information about the authorization code, the token with all the claims and scopes, and the token verification is provided.
+
+    > ### Tip:  
+    > When SAP Cloud Identity Services works with an OIDC corporate identity provider, we expect a response time within 10 seconds. The response time can be a problem for on-premise identity providers, which don't have defined service level agreements like cloud-based identity providers. To use this configuration, you must ensure that the corporate identity provider can respond within this timeframe. When the corporate identity provider doesn't respond quickly enough, SAP Cloud Identity Services presents the following error message:
+    > 
+    > ***OpenID provider cannot process the request because the configuration is incorrect. Please contact your system administrator.***
 
 9.  Save your configuration.
 

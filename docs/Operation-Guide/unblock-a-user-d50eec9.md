@@ -8,6 +8,8 @@ Unblock a user that has been blocked due to inactivity.
 
 ## Context
 
+The inactivity period is configurable and can etween 14 days and 2000 days. For more information, see [Block or Delete Users Due to Inactivity](block-or-delete-users-due-to-inactivity-744b2d0.md).
+
 
 
 ## Procedure

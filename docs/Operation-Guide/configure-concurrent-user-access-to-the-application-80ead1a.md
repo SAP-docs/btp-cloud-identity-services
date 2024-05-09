@@ -18,6 +18,10 @@ The concurrent access offers three options:
 
 -   **Warning**
 -   The user can sign in from only one device or browser at a time. If other sessions exist, the user receives a message and will have the option to terminate the other session and sign out.
+
+    > ### Caution:  
+    > If you have configured a *Warning* concurrent user access option, you must also have a Single Logout Endpoints \(SLO\) URL with a SOAP binding added for the SAML 2.0 application. Otherwise if a user chooses to sign out and continue to new session, an SLO request for the old session won't be sent to the application.. For more information, see [Configure SAML 2.0 Service Provider](configure-saml-2-0-service-provider-51f1f75.md).
+
 -   **Error**
 
     The user can sign in from only one device or browser at a time. When the user try to sign in from another device or browser, they see an error message.

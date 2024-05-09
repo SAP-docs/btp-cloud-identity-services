@@ -36,17 +36,17 @@ Next time you access the application, you will be logged on automatically. If th
 > If you want to disable *Remember me* for an application log out from the application, and do not select the checkbox next time you log on.
 
 > ### Remember:  
-> If you are authenticating with credentials from an external system \(source system or corporate user store\), the following limitations are observed:
+> If you are authenticating with credentials from an external system \(authentication provider or corporate user store\), the following limitations are observed:
 > 
 > -   \(in the case of corporate user store\) when you are authenticating with remember me cookie, your cloud user record in Identity Authentication is not updated.
-> -   \(in the case of source system or corporate user store\) if you change your password in the external system, the remember me cookie is not invalidated.
+> -   \(in the case of authentication provider or corporate user store\) if you change your password in the external system, the remember me cookie is not invalidated.
 > 
 > For more information about the type of your system, contact your system administrator.
 
 > ### Remember:  
-> If you are authenticating with credentials from an external system source system, if you change your password in the external system, the remember me cookie is not invalidated.
+> If you are authenticating with credentials from an external authentication provider, if you change your password in the external provider, the remember me cookie is not invalidated.
 > 
-> For more information about the type of your system, contact your system administrator.
+> For more information about the type of your provider, contact your system administrator.
 
 **Related Information**  
 

@@ -10,7 +10,7 @@ Follow this procedure to set up SAP Advanced Workflow as a proxy system.
 
 ## Prerequisites
 
--   You have technical credentials for SAP Advanced Workflow. Note that SAP Advanced Workflow is available to SAP Commissions customers as an optional add-on. You create an Admin user in SAP Commissions, which is synchronized with SAP Advanced Workflow. For more information, see: [Adding an Admin User](https://help.sap.com/docs/SAP_Commissions/4ec7f498159b4d04892ecb0a4726f89d/7273e2517c231014a804993ce4041860.html?version=2306&locale=en-US) and [Commissions User Synchronization](https://help.sap.com/docs/Advanced_Workflow/b7cb13f8b6a04157a722ad9ddfde4a28/72a134767c231014a804993ce4041860.html?locale=en-US&version=2306).
+-   You have technical credentials for SAP Advanced Workflow. Note that SAP Advanced Workflow is available to SAP SuccessFactors Incentive Management customers as an optional add-on. You create an Admin user in SAP SuccessFactors Incentive Management, which is synchronized with SAP Advanced Workflow. For more information, see: [Adding an Admin User](https://help.sap.com/docs/SAP_Commissions/4ec7f498159b4d04892ecb0a4726f89d/7273e2517c231014a804993ce4041860.html?version=2306&locale=en-US) and [Commissions User Synchronization](https://help.sap.com/docs/Advanced_Workflow/b7cb13f8b6a04157a722ad9ddfde4a28/72a134767c231014a804993ce4041860.html?locale=en-US&version=2306).
 
 -   You have set up SSO between Identity Authentication and SAP Advanced Workflow. For more information, see [Integration with SAP IdP](https://help.sap.com/docs/Advanced_Workflow/b7cb13f8b6a04157a722ad9ddfde4a28/677264fa7fd3492f8d7ac5e8fcc62f79.html?version=2306&locale=en-US).
 

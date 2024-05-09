@@ -165,7 +165,7 @@ Create an SAP CPQ target system to provision users and groups to it.
     </td>
     <td valign="top">
     
-    Use this property to control the number of groups to be deleted in a target system by defining a threshold. This will prevent you from accidentally deleting a huge number of groups, for example by adding a filter or condition.
+    Use this property to control the number of group assignments to be deleted in a target system by defining a threshold. This will prevent you from accidentally deleting a huge number of group assignments, for example by adding a filter or condition.
 
     For more information, see: [List of Properties](list-of-properties-d6f3577.md)
     

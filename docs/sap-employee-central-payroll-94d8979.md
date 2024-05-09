@@ -180,8 +180,6 @@ You can use Identity Provisioning to configure SAP Employee Central Payroll as a
 
     -   Value = *emails.value eq "john.smith@example.com"*
 
-    -   Value = *userUuid eq "1ab6c132-5de5-4530-8g14-1234h26373ab"*
-
 
 
     

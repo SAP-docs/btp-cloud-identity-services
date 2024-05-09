@@ -229,11 +229,11 @@ You can create rules for authentication according to different risk factors.
 
 Each rule contains the following information:
 
--   **Action**
+-   **Authentication Action**
 
     This action is performed if the rule conditions meet the defined criteria.
 
-    You can choose one of the following actions:
+    You can choose one of the following authenticating actions:
 
     -   *Allow*
 
@@ -313,19 +313,8 @@ Each rule contains the following information:
 
     Define a range of IP addresses for the original IP addresses that authentication requests to Identity Authentication can be sent from. This range is used in conjunction with IP Range in scenarios where authentication requests to Identity Authentication are made by a proxy on-behalf of the user/client. The value has to be specified in Classless Inter-Domain Routing \(CIDR\) notation.
 
-    > ### Example:  
-    > ![](images/IP_Ranges_Examples_b6f3ce1.png)
-
     > ### Remember:  
     > To specify the *Forwarded IP Range*, the *IP Range* must be defined first.
-
--   *Group*
-
-    Specify a cloud or on-premise group, which the authenticating user has to be a member of. If no group is selected, the rule is valid for all users.
-
-    If the rule is valid for an on-premise group, type in the name of the corporate user store group, for which this rule should be valid.
-
-    The cloud groups have to be configured in the administration console for Identity Authentication. For more information, see [Managing Groups](managing-groups-ddd067c.md).
 
 -   *Authentication Method*
 
@@ -334,6 +323,18 @@ Each rule contains the following information:
 -   *User Type*
 
     Specify the type, which the authenticating user must have. If no user type is selected, the rule is valid for any of the types.
+
+-   *Group Type*
+    -   Cloud Group - default choice
+    -   On-Premise Group
+
+-   *Group*
+
+    Specify a cloud or on-premise group, which the authenticating user has to be a member of. If no group is selected, the rule is valid for all users.
+
+    If the rule is valid for an on-premise group, type in the name of the corporate user store group, for which this rule should be valid.
+
+    The cloud groups have to be configured in the administration console for Identity Authentication. For more information, see [Managing Groups](managing-groups-ddd067c.md).
 
 -   *Corporate Attribute*
 
@@ -344,8 +345,12 @@ Each rule contains the following information:
     > ### Note:  
     > For this rule, the *Apply Application Configurations* option of *Identity Federation* must be enabled. For more information, see [Configure Identity Federation](configure-identity-federation-c029bbb.md).
 
+-   *Email Domain*
 
-The fields *IP Range*, *Group*, *Authentication Method*, and *User Type* are not mandatory, but at least one of them has to be specified.
+    Specify a domain for the email of the authenticating user.
+
+
+The fields *IP Range*, *Forwarded IP Range*, *Group*, *Authentication Method*, and *User Type* are not mandatory, but at least one of them has to be specified.
 
 
 

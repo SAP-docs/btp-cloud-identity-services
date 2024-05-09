@@ -155,6 +155,10 @@ To configure a SAML 2.0 trusted service provider in the administration console f
         -   HTTP-REDIRECT
         -   SOAP - The SOAP Endpoint is called only when the user password is changed.
 
+            > ### Note:  
+            > If you have configured a *Warning* concurrent user access option, you must also have a Single Logout Endpoints \(SLO\) URL with a SOAP binding added for the SAML 2.0 application. Otherwise if a user chooses to sign out and continue to new session, an SLO request for the old session won't be sent to the application. For more information, see [Configure Concurrent User Access to the Application](configure-concurrent-user-access-to-the-application-80ead1a.md).
+
+
     -   *URL* - specifies the location of the logout endpoint.
     -   *Response URL* - \(optional\) specifies a different location to which logout response messages should be sent.
 

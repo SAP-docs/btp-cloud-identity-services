@@ -231,8 +231,6 @@ This scenario supports provisioning users and groups.
 
     -   Value = *emails.value eq "john.smith@example.com"*
 
-    -   Value = *userUuid eq "1ab6c132-5de5-4530-8g14-1234h26373ab"*
-
 
 
     

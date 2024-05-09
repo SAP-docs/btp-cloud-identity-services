@@ -193,7 +193,7 @@ For more information on how to update to version 2, see [Update Connector Versio
 
     You can change the default transformation mapping rules to reflect your current setup of entities in your SAP Analytic Cloud system. For more information, see: [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    [SAP Analytics Cloud: User and Team Provisioning API](https://help.sap.com/viewer/298f82da4b184d1fb825b7ffe365e94a/release/en-US/36c9929c050e428ba6b391bf16b018fc.html)
+    [SAP Analytics Cloud REST API: Managing Users and Teams](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/14cac91febef464dbb1efce20e3f1613/ee11077e8a344ce99dfb77033eace581.html)
 
     [Managing Users and Teams → api/v1/scim](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/14cac91febef464dbb1efce20e3f1613/42d90beb6337476984fcc7c54ec146dd.html)
 

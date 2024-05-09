@@ -364,6 +364,9 @@ To add a system as a new tenant administrator, proceed as follows:
         > 
         > Identity Authentication supports SAP Passport CA as trusted certificate authority \(CA\).
 
+        > ### Note:  
+        > For real-time provisioning scenarios, you need to upload the certificate generated from the source application that initiated the immediate sync. If Identity Authentication acts as the source application, simply upload the certificate generated in the *Authentication Mechanism* screen under *Users & Authorizations* \> *Real-Time Provisioning* \> *Add Target System*.
+
     -   *Secrets*
 
         > ### Note:  
