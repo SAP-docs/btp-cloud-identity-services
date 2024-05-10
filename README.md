@@ -11,7 +11,7 @@ For contributions, it's required that you have a GitHub account. For more inform
 
 ## Contributing
 
-We recommend using the SAP Cloud Identity Services - Identity Authentication documentation on SAP Help Portal as a starting point for contributions:
+We recommend using the SAP Cloud Identity Services documentation on SAP Help Portal as a starting point for contributions:
 
 1. Open the [SAP Cloud Identity Services](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/) documentation.
 1. You can either:
