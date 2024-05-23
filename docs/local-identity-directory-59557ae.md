@@ -133,7 +133,7 @@ To create Local Identity Directory as a target system, proceed as follows:
     > ```
     > {
     >   "user": {
-    >     "condition": "($.emails EMPTY false) && ($.userName EMPTY false)",
+    >     "condition": "($.emails EMPTY false) && ($.userName EMPTY false) && isValidEmail($.emails[0].value)",
     >     "mappings": [
     >       {
     >         "sourceVariable": "entityIdTargetSystem",
@@ -347,7 +347,7 @@ To create Local Identity Directory as a target system, proceed as follows:
     >         "targetPath": "$.id"
     >       },
     >       {
-    >         "constant": ["urn:ietf:params:scim:schemas:core:2.0:Group","urn:sap:cloud:scim:schemas:extension:custom:2.0:Group"],
+    >         "constant": ["urn:ietf:params:scim:schemas:core:2.0:Group","urn:sap:cloud:scim:schemas:extension:custom:2.0:Group", "urn:ietf:params:scim:schemas:extension:sap:2.0:Group"],
     >         "targetPath": "$.schemas"
     >       },
     >       {
@@ -393,6 +393,20 @@ To create Local Identity Directory as a target system, proceed as follows:
     >         "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['description']",
     >         "optional": true,
     >         "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['description']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
     >       }
     >     ]
     >   }

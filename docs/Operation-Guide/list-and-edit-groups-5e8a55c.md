@@ -10,7 +10,7 @@ As a tenant administrator, you can list and edit information about the groups in
 
 -   You are assigned the *Manage Groups* and *Manage Users* roles. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
 
--   You have created groups in your tenant. For more details how to create groups, see [Create a New Group](create-a-new-group-b1b638d.md).
+-   You have created groups in your tenant. For more details on how to create groups, see [Create a New Group](create-a-new-group-b1b638d.md).
 
 
 
@@ -31,7 +31,10 @@ The groups are sorted in alphabetical order of the display name.
 
     This operation opens a list of the groups in the tenant.
 
-3.  **Optional:** Type the *Name* or *Display name* of a group in the search field to filter the list items.
+3.  **Optional:** Type a `Group ID`, `Display Name`, or `Name` of a group in the search field to filter the list items.
+
+    > ### Tip:  
+    > Choose *Show Filter Bars* for advanced search. You must be assigned to a policy that allows reading applications to view the information for *Application Name*.
 
 4.  **Optional:** Choose a group from the list on the left to view its details.
 

@@ -99,6 +99,8 @@ The retry is not supported.
 
 -   Local Identity Directory
 
+-   Microsoft Entra ID
+
 -   Sales Cloud – Analytics & AI
 
 -   SAP Advanced Financial Closing
@@ -161,6 +163,8 @@ The retry is not supported.
 -   Identity Authentication
 
 -   Local Identity Directory
+
+-   Microsoft Entra ID
 
 -   Sales Cloud – Analytics & AI
 

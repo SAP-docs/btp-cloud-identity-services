@@ -19,6 +19,9 @@ The concurrent access offers three options:
 -   **Warning**
 -   The user can sign in from only one device or browser at a time. If other sessions exist, the user receives a message and will have the option to terminate the other session and sign out.
 
+    > ### Remember:  
+    > If the user choose the option *Sign Out and Continue*, they can still choose to continue with the new session without terminating the previous one. The system will not terminate the session automatically. If you want to restrict concurrent access, then you should use the *Error* option terminate the other session and sign out.
+
     > ### Caution:  
     > If you have configured a *Warning* concurrent user access option, you must also have a Single Logout Endpoints \(SLO\) URL with a SOAP binding added for the SAML 2.0 application. Otherwise if a user chooses to sign out and continue to new session, an SLO request for the old session won't be sent to the application.. For more information, see [Configure SAML 2.0 Service Provider](configure-saml-2-0-service-provider-51f1f75.md).
 

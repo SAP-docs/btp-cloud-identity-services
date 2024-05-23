@@ -1,8 +1,8 @@
 <!-- loio2c7dbe8aa81b4cea998d927e6e547935 -->
 
-# SAP Employee Central Payroll
+# SAP SuccessFactors Employee Central Payroll
 
-Follow this procedure to set up SAP Employee Central Payroll as a proxy system.
+Follow this procedure to set up SAP SuccessFactors Employee Central Payroll as a proxy system.
 
 
 
@@ -20,9 +20,9 @@ Follow this procedure to set up SAP Employee Central Payroll as a proxy system.
 
 ## Context
 
-SAP Employee Central Payroll is a cloud product for payroll processing. It's a service offering where SAP SuccessFactors Employee Central is used for maintenance of core HR master data and an SAP HCM Payroll system hosted in an SAP or Hyperscaler data center is used for payroll.
+SAP SuccessFactors Employee Central Payroll is a cloud product for payroll processing. It's a service offering where SAP SuccessFactors Employee Central is used for maintenance of core HR master data and an SAP HCM Payroll system hosted in an SAP or Hyperscaler data center is used for payroll.
 
-You can use Identity Provisioning to configure SAP Employee Central Payroll as a proxy system in hybrid scenarios. For example, when SAP Employee Central Payroll is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision users to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users back to the SAP Employee Central Payroll.
+You can use Identity Provisioning to configure SAP SuccessFactors Employee Central Payroll as a proxy system in hybrid scenarios. For example, when SAP SuccessFactors Employee Central Payroll is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision users to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users back to the SAP SuccessFactors Employee Central Payroll.
 
 This scenario supports provisioning users and groups.
 
@@ -83,9 +83,27 @@ This scenario supports provisioning users and groups.
     -   [Access Identity Provisioning UI of Bundle Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/7ab5884ffbc44461a57622d2f633e57c.html "Access the Identity Provisioning UI when the service is bundled as part of an SAP cloud solution's license.") :arrow_upper_right:
     -   [Access Identity Provisioning UI of Standalone Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/61fd82ed48ab42b2bc74626926c1722c.html "Access the Identity Provisioning user interface as a standalone product.") :arrow_upper_right:
 
-5.  Add *SAP Employee Central Payroll* as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
+5.  Add *SAP SuccessFactors Employee Central Payroll* as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
-6.  Choose the *Properties* tab to configure the connection settings for your system.
+6.  Set up the communication between Identity Provisioning and SAP SuccessFactors Employee Central Payroll and configure your authentication method \(basic or certificate-based\).
+
+    > ### Note:  
+    > We recommend that you use certificate-based authentication.
+
+    1.  In your newly added SAP SuccessFactors Employee Central Payroll proxy system, select the *Certificate* tab and choose *Generate* \> *Download*, as described in [Generate and Manage Certificates for Outbound Connection](https://help.sap.com/docs/IDENTITY_PROVISIONING/f48e822d6d484fa5ade7dda78b64d9f5/76867db8ce534becbfc08b050695df8e.html?version=Cloud).
+
+        Skip step **a.** if you want to use basic authentication.
+
+        The next step is performed in SAP SuccessFactors Employee Central Payroll backend system and is relevant for both basic and certificate-based authentication.
+
+    2.  For certificate-based authentication, import the certificate generated in the Identity Provisioning UI in your SAP SuccessFactors Employee Central Payroll system, as described in [Prerequisite: Finding the Access URL](https://help.sap.com/docs/SAP_SUCCESSFACTORS_EMPLOYEE_CENTRAL_PAYROLL/185f14fbe60d4bbb8d7d5e4f8d89b24b/354c96a533104bb283f13133fae39c5d.html?q=url&version=latest) → step 5.
+
+        For basic authentication, provide *User* and *Password*, as described in [Prerequisite: Finding the Access URL](https://help.sap.com/docs/SAP_SUCCESSFACTORS_EMPLOYEE_CENTRAL_PAYROLL/185f14fbe60d4bbb8d7d5e4f8d89b24b/354c96a533104bb283f13133fae39c5d.html?q=url&version=latest) → step 5.
+
+    3.  Save your changes.
+
+
+7.  Choose the *Properties* tab to configure the connection settings for your system.
 
     > ### Note:  
     > If your tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
@@ -130,7 +148,7 @@ This scenario supports provisioning users and groups.
     </td>
     <td valign="top">
     
-    Enter the URL to your SAP Employee Central Payroll system.
+    Enter the URL to your SAP SuccessFactors Employee Central Payroll system.
 
     For more information, see [Prerequisite: Finding the Access URL](https://help.sap.com/docs/SAP_SUCCESSFACTORS_EMPLOYEE_CENTRAL_PAYROLL/185f14fbe60d4bbb8d7d5e4f8d89b24b/354c96a533104bb283f13133fae39c5d.html?q=url&version=latest) → step 8.
     
@@ -162,7 +180,7 @@ This scenario supports provisioning users and groups.
 
     -   *ClientCertificateAuthentication*
 
-        For more information, see [Prerequisite: Finding the Access URL](https://help.sap.com/docs/SAP_SUCCESSFACTORS_EMPLOYEE_CENTRAL_PAYROLL/185f14fbe60d4bbb8d7d5e4f8d89b24b/354c96a533104bb283f13133fae39c5d.html?q=url&version=latest) → step 5 → **X.509 Client Certificate**.
+        For more information, see [Prerequisite: Finding the Access URL](https://help.sap.com/docs/SAP_SUCCESSFACTORS_EMPLOYEE_CENTRAL_PAYROLL/185f14fbe60d4bbb8d7d5e4f8d89b24b/354c96a533104bb283f13133fae39c5d.html?q=url&version=latest) → step 5.
 
 
 
@@ -205,9 +223,9 @@ This scenario supports provisioning users and groups.
     </td>
     <td valign="top">
     
-    URL parameter
+    Enter the SAP client number \(a three-digit number\) of your SAP SuccessFactors Employee Central Payroll system.
 
-    Enter three character abbreviation for client.
+    For example: `102`
     
     </td>
     </tr>
@@ -219,7 +237,7 @@ This scenario supports provisioning users and groups.
     </td>
     <td valign="top">
     
-    When specified, only those SAP Employee Central Payroll users matching the filter expression will be read.
+    When specified, only those SAP SuccessFactors Employee Central Payroll users matching the filter expression will be read.
 
     Supported operators: eq \(equal\) and sw \(starts with\).
 
@@ -244,7 +262,7 @@ This scenario supports provisioning users and groups.
     </td>
     <td valign="top">
     
-    When specified, only those SAP Employee Central Payroll groups matching the filter expression will be read.
+    When specified, only those SAP SuccessFactors Employee Central Payroll groups matching the filter expression will be read.
 
     Supported operators: eq \(equal\) and sw \(starts with\).
 
@@ -269,16 +287,7 @@ This scenario supports provisioning users and groups.
     
     If Identity Provisioning tries to provision a user that already exists in the target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved.
 
-    Possible values:
-
-    -   *userName* \(default value\)
-
-    -   *userUuid*
-
-    -   *emails\[0\].value*
-
-
-
+    Possible values: *userName* \(default value\)
     
     </td>
     </tr>
@@ -292,7 +301,7 @@ This scenario supports provisioning users and groups.
     
     If the Identity Provisioning tries to create a group that already exists in the target system \(a conflicting group\), this property defines the unique attributes by which the existing group will be searched and resolved.
 
-    **Possible values:** *displayName* \(default value if not specified\)
+    Possible values: *displayName* \(default value\)
     
     </td>
     </tr>
@@ -303,11 +312,11 @@ This scenario supports provisioning users and groups.
     > ### Note:  
     > The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users and groups. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
 
-7.  Configure the transformations.
+8.  Configure the transformations.
 
-    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Employee Central Payroll**Transformations* tab after saving its initial configuration.
+    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP SuccessFactors Employee Central Payroll**Transformations* tab after saving its initial configuration.
 
-    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP Employee Central Payroll system. For more information, see:
+    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP SuccessFactors Employee Central Payroll system. For more information, see:
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md).
 
@@ -389,21 +398,6 @@ This scenario supports provisioning users and groups.
     >                 "optional": true
     >             },
     >             {
-    >                 "sourcePath": "$.title",
-    >                 "targetPath": "$.title",
-    >                 "optional": true
-    >             },
-    >             {
-    >                 "sourcePath": "$.externalId",
-    >                 "targetPath": "$.externalId",
-    >                 "optional": true
-    >             },
-    >             {
-    >                 "sourcePath": "$.userUuid",
-    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
-    >                 "optional": true
-    >             },
-    >             {
     >                 "sourcePath": "$.phoneNumbers",
     >                 "targetPath": "$.phoneNumbers",
     >                 "optional": true,
@@ -414,11 +408,6 @@ This scenario supports provisioning users and groups.
     >                 "targetPath": "$.emails",
     >                 "optional": true,
     >                 "preserveArrayWithSingleElement": true
-    >             },
-    >             {
-    >                 "sourcePath": "$.emails[?(@.primary== true)].value",
-    >                 "optional": true,
-    >                 "correlationAttribute": true
     >             },
     >             {
     >                 "sourcePath": "$.active",
@@ -515,39 +504,40 @@ This scenario supports provisioning users and groups.
     >                 "targetPath": "$.userName"
     >             },
     >             {
-    >                 "sourcePath": "$.name",
-    >                 "optional": true,
-    >                 "targetPath": "$.name"
+    >                 "sourcePath": "$.name.givenName",
+    >                 "targetPath": "$.name.givenName",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$.name.familyName",
+    >                 "targetPath": "$.name.familyName",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$.name.middleName",
+    >                 "targetPath": "$.name.middleName",
+    >                 "optional": true
     >             },
     >             {
     >                 "sourcePath": "$.nickName",
-    >                 "optional": true,
-    >                 "targetPath": "$.nickName"
+    >                 "targetPath": "$.nickName",
+    >                 "optional": true
     >             },
     >             {
     >                 "sourcePath": "$.displayName",
-    >                 "optional": true,
-    >                 "targetPath": "$.displayName"
-    >             },
-    >             {
-    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
-    >                 "optional": true,
-    >                 "targetPath": "$.userUuid"
+    >                 "targetPath": "$.displayName",
+    >                 "optional": true
     >             },
     >             {
     >                 "sourcePath": "$.phoneNumbers",
     >                 "preserveArrayWithSingleElement": true,
-    >                 "optional": true,
-    >                 "targetPath": "$.phoneNumbers"
+    >                 "targetPath": "$.phoneNumbers",
+    >                 "optional": true
     >             },
     >             {
     >                 "sourcePath": "$.emails",
     >                 "preserveArrayWithSingleElement": true,
-    >                 "optional": true,
-    >                 "targetPath": "$.emails"
-    >             },
-    >             {
-    >                 "sourcePath": "$.emails[?(@.primary== true)].value",
+    >                 "targetPath": "$.emails",
     >                 "optional": true
     >             },
     >             {
@@ -624,13 +614,8 @@ This scenario supports provisioning users and groups.
     >             {
     >                 "sourcePath": "$.members[*].value",
     >                 "preserveArrayWithSingleElement": true,
-    >                 "optional": true,
     >                 "targetPath": "$.members[?(@.value)]",
-    >                 "functions": [
-    >                     {
-    >                         "function": "resolveEntityIds"
-    >                     }
-    >                 ]
+    >                 "optional": true
     >             },
     >             {
     >                 "constant": "User",
@@ -651,7 +636,7 @@ This scenario supports provisioning users and groups.
     </tr>
     </table>
     
-8.  Connect the external consumer to Identity Provisioning with the technical user you have created in step 2.
+9.  Connect the external consumer to Identity Provisioning with the technical user you have created in step 2.
 
     If the external consumer system is **SAP Identity Management**, you can export the newly created proxy system as a SCIM repository from Identity Provisioning and import it in SAP Identity Management. This will create a SCIM repository in SAP Identity Management where most of the repository constants will be automatically filled in. You need to provide the technical user credentials that you have set up in step 2 and the SCIM assignment method as described below:
 
@@ -691,5 +676,5 @@ To see an example with SAP Identity Management, see [Hybrid Scenario: SAP Identi
 **Related Information**  
 
 
-[SAP SuccessFactors Employee Central Payroll](https://help.sap.com/docs/CENTRAL_INVOICE_MANAGEMENT)
+[Identity Provisioning for Employee Central Payroll](https://help.sap.com/docs/SAP_SUCCESSFACTORS_EMPLOYEE_CENTRAL_PAYROLL/185f14fbe60d4bbb8d7d5e4f8d89b24b/1ae57884eb4a43e5a7fd3bbeb229c5c1.html?version=Latest)
 

@@ -79,7 +79,7 @@ SAP Ariba Central Invoice Management is an SAP BTP SaaS application running on S
     </td>
     <td valign="top">
     
-    Enter the URL provided by the service key under the *scim-v2* field without adding the path information.
+    Enter the URL provided by the service key under the *ips-connector* field without adding the path information.
 
     For example: `https://eu10.cim.cloud.sap`
     

@@ -1,6 +1,6 @@
 <!-- loio34386afa55344a0693840b048c5501fe -->
 
-# Procurement data warehouse
+# Procurement Data Warehouse
 
 Follow this procedure to set up procurement data warehouse as a proxy system.
 
@@ -10,25 +10,18 @@ Follow this procedure to set up procurement data warehouse as a proxy system.
 
 ## Prerequisites
 
--   You created an SAP Ariba Developer Portal application and sent an enablement request for Procurement Data Warehouse to SAP Ariba. For more information, see [Sending an Enablement Request for Procurement Data Warehouse](https://help.sap.com/docs/strategic-sourcing/setting-up-procurement-data-warehouse/sending-enablement-request-for-procurement-data-warehouse?state=DRAFT).
-
-    > ### Note:  
-    > If you don’t have an account on SAP Ariba Developer Portal, then ask your **Designated Support Contact** \(DSC\) to submit a [request for an account](https://help.sap.com/viewer/ea72206b834e4ace9cd834feed6c0e09/Cloud/en-US/f7dbeb26531140e7bab57170a24e3701.html). To find your DSC person, see: [How can I see my company's Basic users and Designated Support Contacts \(DSC\)](https://support.ariba.com/item/view/184249)
-
--   You completed the procurement user role assignment and user provisioning in SAP Analytics Cloud.
-
 -   You obtain credentials to access the Procurement Data Warehouse API. For more information, see [Procurement Data Warehouse Enrollment URL and Credentials](https://help.sap.com/docs/strategic-sourcing/setting-up-procurement-data-warehouse/procurement-data-warehouse-enrollment-api?state=DRAFT#procurement-data-warehouse-enrollment-url-and-credentials).
 
 -   You established trust between your SAP BTP subaccount and the SAP Cloud Identity Services - Identity Authentication service. For more information, see [Establishing Trust Automatically](https://help.sap.com/docs/btp/sap-business-technology-platform/establishing-trust-automatically?version=Cloud).
 
--   To configure your *Procurement data warehouse* provisioning system \(see the procedure below\), you will need to map your SAP Ariba application parameters to the relevant Identity Provisioning properties. The property mapping between the two systems is as follows:
+-   To configure your *Procurement Data Warehouse* provisioning system \(see the procedure below\), you will need to map your SAP Ariba application parameters to the relevant Identity Provisioning properties. The property mapping between the two systems is as follows:
 
 
     <table>
     <tr>
     <th valign="top">
 
-    Procurement data warehouse application
+    Procurement Data Warehouse Application
     
     </th>
     <th valign="top">
@@ -67,7 +60,7 @@ Follow this procedure to set up procurement data warehouse as a proxy system.
     <tr>
     <td valign="top">
     
-    Procurement data warehouseOAuth Token URL
+    procurement data warehouseOAuth Token URL
     
     </td>
     <td valign="top">
@@ -184,7 +177,7 @@ You can use Identity Provisioning to configure procurement data warehouse as a p
     -   [Access Identity Provisioning UI of Bundle Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/7ab5884ffbc44461a57622d2f633e57c.html "Access the Identity Provisioning UI when the service is bundled as part of an SAP cloud solution's license.") :arrow_upper_right:
     -   [Access Identity Provisioning UI of Standalone Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/61fd82ed48ab42b2bc74626926c1722c.html "Access the Identity Provisioning user interface as a standalone product.") :arrow_upper_right:
 
-5.  Add *Procurement data warehouse* as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
+5.  Add *Procurement Data Warehouse* as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
 6.  Choose the *Properties* tab to configure the connection settings for your system.
 
@@ -340,7 +333,7 @@ You can use Identity Provisioning to configure procurement data warehouse as a p
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    [Managing Users and Teams → api/v1/scim2](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/14cac91febef464dbb1efce20e3f1613/e34d2555509548028b76a7862cc5b84a.html)
+    Procurement Data Warehouse Enrollment API PUBLIC LINK
 
     Default read and write transformations:
 

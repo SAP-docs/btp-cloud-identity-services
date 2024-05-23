@@ -21,16 +21,14 @@ To call the methods of this SCIM REST API you must have a system as administrato
 
 ## Additional Attributes Supported Values
 
-Some of the attributes have predefined supported values. They are returned as a map of key value pairs. See some examples in the table below. For the full set of attributes, copy the URL from the table, replace `<tenant ID>` with your *Tenant ID*, and open the edited URL in a web browser.
+Some of the attributes have predefined supported values. They are returned as a map of key value pairs. See some examples in the table below. For the full set of attributes, copy the URL from the table, replace <Cloud Identity Services domain\> with the correct one, and open the edited URL in a web browser.
 
 > ### Note:  
-> The URL has the following pattern:
+> The domain part has the following pattern:
 > 
-> `https://<tenant ID>.accounts.ondemand.com/admin`
+> `<tenant ID>.accounts.ondemand.com` or `<tenant ID>.accounts.cloud.sap`. If you have a configured custom domain, the domain has the following pattern: <your custom domain\>.
 > 
 > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [View Assigned Tenants and Admins](../view-assigned-tenants-and-admins-f56e6f2.md).
-> 
-> If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
 
 
 <table>
@@ -67,7 +65,7 @@ Full Sets
 </td>
 <td valign="top">
 
--   **`https://<tenant ID>.accounts.ondemand.com/md/salutations`**
+-   **<code>https://&lt;Cloud Identity Services domain&gt;/md/salutations</code>**
 
 
 
@@ -90,7 +88,7 @@ Full Sets
 </td>
 <td valign="top">
 
--   **`https://<tenant ID>.accounts.ondemand.com/md/countries`**
+-   **<code>https://&lt;Cloud Identity Services domain&gt;/md/countries</code>**
 
 
 
@@ -115,9 +113,9 @@ Full Sets
 </td>
 <td valign="top">
 
--   **`https://<tenant ID>.accounts.ondemand.com/md/states/us`**
+-   **<code>https://&lt;Cloud Identity Services domain&gt;/md/states/us</code>**
 
--   **`https://<tenant ID>.accounts.ondemand.com/md/states/ca`**
+-   **<code>https://&lt;Cloud Identity Services domain&gt;/md/states/ca</code>**
 
 
 
@@ -140,7 +138,7 @@ Full Sets
 </td>
 <td valign="top">
 
--   **`https://<tenant ID>.accounts.ondemand.com/md/industries`**
+-   **<code>https://&lt;Cloud Identity Services domain&gt;/md/industries</code>**
 
 
 
@@ -163,7 +161,7 @@ Full Sets
 </td>
 <td valign="top">
 
--   **`https://<tenant ID>.accounts.ondemand.com/md/timezones`**
+-   **<code>https://&lt;Cloud Identity Services domain&gt;/md/timezones</code>**
 
 
 
@@ -186,7 +184,7 @@ Full Sets
 </td>
 <td valign="top">
 
--   **`https://<tenant ID>.accounts.ondemand.com/md/departments`**
+-   **<code>https://&lt;Cloud Identity Services domain&gt;/md/departments</code>**
 
 
 
@@ -209,7 +207,7 @@ Full Sets
 </td>
 <td valign="top">
 
--   **`https://<tenant ID>.accounts.ondemand.com/md/relationships`**
+-   **<code>https://&lt;Cloud Identity Services domain&gt;/md/relationships</code>**
 
 
 
@@ -232,7 +230,7 @@ Full Sets
 </td>
 <td valign="top">
 
--   **`https://<tenant ID>.accounts.ondemand.com/md/languages`**
+-   **<code>https://&lt;Cloud Identity Services domain&gt;/md/languages</code>**
 
 
 
@@ -291,7 +289,7 @@ URI
 </td>
 <td valign="top">
 
-**`https://<tenant ID>.accounts.ondemand.com/service/scim/Users/`**
+**<code>https://&lt;Cloud Identity Services domain&gt;/service/scim/Users/</code>**
 
 </td>
 </tr>
@@ -308,7 +306,7 @@ URI
 </td>
 <td valign="top">
 
-**`https://<tenant ID>.accounts.ondemand.com/service/scim/Users/<id>`**
+**<code>https://&lt;Cloud Identity Services domain&gt;/service/scim/Users/&lt;id&gt;</code>**
 
 </td>
 </tr>
@@ -325,7 +323,7 @@ URI
 </td>
 <td valign="top">
 
-**`https://<tenant ID>.accounts.ondemand.com/service/scim/Users`**
+**<code>https://&lt;Cloud Identity Services domain&gt;/service/scim/Users</code>**
 
 </td>
 </tr>
@@ -342,7 +340,7 @@ URI
 </td>
 <td valign="top">
 
-**`https://<tenant ID>.accounts.ondemand.com/service/scim/Users/<id>`**
+**<code>https://&lt;Cloud Identity Services domain&gt;/service/scim/Users/&lt;id&gt;</code>**
 
 </td>
 </tr>
@@ -359,7 +357,7 @@ URI
 </td>
 <td valign="top">
 
-**`https://<tenant ID>.accounts.ondemand.com/service/scim/Users/<id>`**
+**<code>https://&lt;Cloud Identity Services domain&gt;/service/scim/Users/&lt;id&gt;</code>**
 
 </td>
 </tr>
@@ -399,7 +397,7 @@ URI
 </td>
 <td valign="top">
 
-**`https://<tenant ID>.accounts.ondemand.com/service/scim/Groups/`**
+**<code>https://&lt;Cloud Identity Services domain&gt;/service/scim/Groups/</code>**
 
 </td>
 </tr>
@@ -416,7 +414,7 @@ URI
 </td>
 <td valign="top">
 
-**`https://<tenant ID>.accounts.ondemand.com/service/scim/Groups/<id of the group>`**
+**<code>https://&lt;Cloud Identity Services domain&gt;/service/scim/Groups/&lt;id of the group&gt;</code>**
 
 </td>
 </tr>
@@ -433,7 +431,7 @@ URI
 </td>
 <td valign="top">
 
-**`https://<tenant ID>.accounts.ondemand.com/service/scim/Groups`**
+**<code>https://&lt;Cloud Identity Services domain&gt;/service/scim/Groups</code>**
 
 </td>
 </tr>
@@ -450,7 +448,7 @@ URI
 </td>
 <td valign="top">
 
-**`https://<tenant ID>.accounts.ondemand.com/service/scim/Groups/<id of the group>`**
+**<code>https://&lt;Cloud Identity Services domain&gt;/service/scim/Groups/&lt;id of the group&gt;</code>**
 
 </td>
 </tr>
@@ -467,7 +465,7 @@ URI
 </td>
 <td valign="top">
 
-**`https://<tenant ID>.accounts.ondemand.com/service/scim/Groups/<id of the group>`**
+**<code>https://&lt;Cloud Identity Services domain&gt;/service/scim/Groups/&lt;id of the group&gt;</code>**
 
 </td>
 </tr>

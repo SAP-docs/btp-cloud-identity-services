@@ -1,8 +1,8 @@
 <!-- loio94d89796b08448f7af07fb850e67773d -->
 
-# SAP Employee Central Payroll
+# SAP SuccessFactors Employee Central Payroll
 
-Follow this procedure to set up SAP Employee Central Payroll as а source system.
+Follow this procedure to set up SAP SuccessFactors Employee Central Payroll as а source system.
 
 
 
@@ -17,9 +17,9 @@ Follow this procedure to set up SAP Employee Central Payroll as а source system
 
 ## Context
 
-SAP Employee Central Payroll is a cloud product for payroll processing. It's a service offering where SAP SuccessFactors Employee Central is used for maintenance of core HR master data and SAP HCM Payroll system hosted in an SAP or Hyperscaler data center is used for payroll.
+SAP SuccessFactors Employee Central Payroll is a cloud product for payroll processing. It's a service offering where SAP SuccessFactors Employee Central is used for maintenance of core HR master data and SAP HCM Payroll system hosted in an SAP or Hyperscaler data center is used for payroll.
 
-You can use Identity Provisioning to configure SAP Employee Central Payroll as a source system where you read users and groups from and then provision them to a target system.
+You can use Identity Provisioning to configure SAP SuccessFactors Employee Central Payroll as a source system where you read users and groups from and then provision them to a target system.
 
 
 
@@ -32,9 +32,27 @@ You can use Identity Provisioning to configure SAP Employee Central Payroll as a
 
 2.  Sign in to the administration console of SAP Cloud Identity Services and navigate to *Identity Provisioning* \> *Source Systems*.
 
-3.  Add *SAP Employee Central Payroll* as a source system. See: [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
+3.  Add *SAP SuccessFactors Employee Central Payroll* as a source system. See: [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
-4.  Choose the *Properties* tab to configure the connection settings for your system.
+4.  Set up the communication between Identity Provisioning and SAP SuccessFactors Employee Central Payroll and configure your authentication method \(basic or certificate-based\).
+
+    > ### Note:  
+    > We recommend that you use certificate-based authentication.
+
+    1.  In your newly added SAP SuccessFactors Employee Central Payroll source system, select the *Certificate* tab and choose *Generate* \> *Download*, as described in [Generate and Manage Certificates for Outbound Connection](https://help.sap.com/docs/IDENTITY_PROVISIONING/f48e822d6d484fa5ade7dda78b64d9f5/76867db8ce534becbfc08b050695df8e.html?version=Cloud).
+
+        Skip step **a.** if you want to use basic authentication.
+
+        The next step is performed in SAP SuccessFactors Employee Central Payroll backend system and is relevant for both basic and certificate-based authentication.
+
+    2.  For certificate-based authentication, import the certificate generated in the Identity Provisioning UI in your SAP SuccessFactors Employee Central Payroll system, as described in [Prerequisite: Finding the Access URL](https://help.sap.com/docs/SAP_SUCCESSFACTORS_EMPLOYEE_CENTRAL_PAYROLL/185f14fbe60d4bbb8d7d5e4f8d89b24b/354c96a533104bb283f13133fae39c5d.html?q=url&version=latest) → step 5.
+
+        For basic authentication, provide *User* and *Password*, as described in [Prerequisite: Finding the Access URL](https://help.sap.com/docs/SAP_SUCCESSFACTORS_EMPLOYEE_CENTRAL_PAYROLL/185f14fbe60d4bbb8d7d5e4f8d89b24b/354c96a533104bb283f13133fae39c5d.html?q=url&version=latest) → step 5.
+
+    3.  Save your changes.
+
+
+5.  Choose the *Properties* tab to configure the connection settings for your system.
 
     > ### Note:  
     > If your tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
@@ -79,7 +97,7 @@ You can use Identity Provisioning to configure SAP Employee Central Payroll as a
     </td>
     <td valign="top">
     
-    Enter the URL to your SAP Employee Central Payroll system.
+    Enter the URL to your SAP SuccessFactors Employee Central Payroll system.
 
     For more information, see [Prerequisite: Finding the Access URL](https://help.sap.com/docs/SAP_SUCCESSFACTORS_EMPLOYEE_CENTRAL_PAYROLL/185f14fbe60d4bbb8d7d5e4f8d89b24b/354c96a533104bb283f13133fae39c5d.html?q=url&version=latest) → step 8.
     
@@ -111,7 +129,7 @@ You can use Identity Provisioning to configure SAP Employee Central Payroll as a
 
     -   *ClientCertificateAuthentication*
 
-        For more information, see [Prerequisite: Finding the Access URL](https://help.sap.com/docs/SAP_SUCCESSFACTORS_EMPLOYEE_CENTRAL_PAYROLL/185f14fbe60d4bbb8d7d5e4f8d89b24b/354c96a533104bb283f13133fae39c5d.html?q=url&version=latest) → step 5 → **X.509 Client Certificate**.
+        For more information, see [Prerequisite: Finding the Access URL](https://help.sap.com/docs/SAP_SUCCESSFACTORS_EMPLOYEE_CENTRAL_PAYROLL/185f14fbe60d4bbb8d7d5e4f8d89b24b/354c96a533104bb283f13133fae39c5d.html?q=url&version=latest) → step 5.
 
 
 
@@ -154,9 +172,9 @@ You can use Identity Provisioning to configure SAP Employee Central Payroll as a
     </td>
     <td valign="top">
     
-    URL parameter
+    Enter the SAP client number \(a three-digit number\) of your SAP SuccessFactors Employee Central Payroll system.
 
-    Enter three character abbreviation for client.
+    For example: `102`
     
     </td>
     </tr>
@@ -168,7 +186,7 @@ You can use Identity Provisioning to configure SAP Employee Central Payroll as a
     </td>
     <td valign="top">
     
-    When specified, only those SAP Employee Central Payroll users matching the filter expression will be read.
+    When specified, only those SAP SuccessFactors Employee Central Payroll users matching the filter expression will be read.
 
     Supported operators: eq \(equal\) and sw \(starts with\).
 
@@ -193,7 +211,7 @@ You can use Identity Provisioning to configure SAP Employee Central Payroll as a
     </td>
     <td valign="top">
     
-    When specified, only those SAP Employee Central Payroll groups matching the filter expression will be read.
+    When specified, only those SAP SuccessFactors Employee Central Payroll groups matching the filter expression will be read.
 
     Supported operators: eq \(equal\) and sw \(starts with\).
 
@@ -216,15 +234,15 @@ You can use Identity Provisioning to configure SAP Employee Central Payroll as a
     </td>
     <td valign="top">
     
-    This property distinguishes SAP Employee Central Payroll groups by specific prefix. It is an optional property which does not appear by default at system creation.
+    This property distinguishes SAP SuccessFactors Employee Central Payroll groups by specific prefix. It is an optional property which does not appear by default at system creation.
 
     Example value: `ECP_`
 
     You can use the example value or provide your own.
 
-    When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP Employee Central Payroll source system and will be provisioned to the target system with the following name pattern: <code>ECP_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP Employee Central Payroll groups in the target system will be distinguished from groups provisioned from other applications.
+    When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP SuccessFactors Employee Central Payroll source system and will be provisioned to the target system with the following name pattern: <code>ECP_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP SuccessFactors Employee Central Payroll groups in the target system will be distinguished from groups provisioned from other applications.
 
-    If the property is not set, the SAP Employee Central Payroll groups will be read and provisioned to the target system with their actual display names.
+    If the property is not set, the SAP SuccessFactors Employee Central Payroll groups will be read and provisioned to the target system with their actual display names.
     
     </td>
     </tr>
@@ -232,15 +250,18 @@ You can use Identity Provisioning to configure SAP Employee Central Payroll as a
     
     To learn what additional properties are relevant to this system, see [List of Properties](list-of-properties-d6f3577.md). You can use the main search, or filter properties by the *Name* or *System Type* columns.
 
-5.  \(Optional\) Configure the transformations.
+6.  \(Optional\) Configure the transformations.
 
-    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Employee Central Payroll* source system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
+    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP SuccessFactors Employee Central Payroll* source system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
     You can change the default transformation mapping rules to reflect your current setup of entities in your system. For more information, see:
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    **Mapping logic** – the behavior of the default transformation logic is to read all user attributes from the source SAP Employee Central Payroll system, and then map them to the internal SCIM representation. It uses `entityIdSourceSystem` to store the unique ID of the identity.
+    **Mapping logic** – the behavior of the default transformation logic is to read all user attributes from the source SAP SuccessFactors Employee Central Payroll system, and then map them to the internal SCIM representation. It uses `entityIdSourceSystem` to store the unique ID of the identity.
+
+    > ### Note:  
+    > When configuring SAP SuccessFactors Employee Central Payroll as a source system, there may be a mismatch between optional user attributes in the source system and required user attributes in the target system. For example, the email is an optional attribute in SAP SuccessFactors Employee Central Payroll but a required one in Identity Authentication. In such cases, you need to review and adapt your source and/or target system transformations and configurations to reflect your needs.
 
     **Default transformation:**
 
@@ -279,21 +300,6 @@ You can use Identity Provisioning to configure SAP Employee Central Payroll as a
     >                 "optional": true
     >             },
     >             {
-    >                 "sourcePath": "$.title",
-    >                 "targetPath": "$.title",
-    >                 "optional": true
-    >             },
-    >             {
-    >                 "sourcePath": "$.externalId",
-    >                 "targetPath": "$.externalId",
-    >                 "optional": true
-    >             },
-    >             {
-    >                 "sourcePath": "$.userUuid",
-    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
-    >                 "optional": true
-    >             },
-    >             {
     >                 "sourcePath": "$.phoneNumbers",
     >                 "targetPath": "$.phoneNumbers",
     >                 "optional": true,
@@ -304,11 +310,6 @@ You can use Identity Provisioning to configure SAP Employee Central Payroll as a
     >                 "targetPath": "$.emails",
     >                 "optional": true,
     >                 "preserveArrayWithSingleElement": true
-    >             },
-    >             {
-    >                 "sourcePath": "$.emails[?(@.primary== true)].value",
-    >                 "optional": true,
-    >                 "correlationAttribute": true
     >             },
     >             {
     >                 "sourcePath": "$.active",
@@ -376,7 +377,7 @@ You can use Identity Provisioning to configure SAP Employee Central Payroll as a
     > }
     > ```
 
-6.  Add a target system to provision users to it. Choose from: [Target Systems](target-systems-ab3f641.md)
+7.  Add a target system to provision users to it. Choose from: [Target Systems](target-systems-ab3f641.md)
 
 
 
@@ -391,5 +392,5 @@ You can use Identity Provisioning to configure SAP Employee Central Payroll as a
 **Related Information**  
 
 
-[SAP SuccessFactors Employee Central Payroll](https://help.sap.com/docs/SAP_SUCCESSFACTORS_EMPLOYEE_CENTRAL_PAYROLL?version=latest)
+[Identity Provisioning for Employee Central Payroll](https://help.sap.com/docs/SAP_SUCCESSFACTORS_EMPLOYEE_CENTRAL_PAYROLL/185f14fbe60d4bbb8d7d5e4f8d89b24b/1ae57884eb4a43e5a7fd3bbeb229c5c1.html?version=Latest)
 

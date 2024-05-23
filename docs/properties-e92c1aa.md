@@ -19,12 +19,30 @@ There are various types of properties depending on their usability, whether they
 -   Internal
 
 
-Property names have prefixes which indicate the provisioning system the property is applicable for. Properties starting with *<ips\>* are applicable for all provisioning systems, for example `ips.failed.request.retry.attempts`. Those starting with the abbreviation of a provisioning system name, such as *<s4hana.cloud\>* or *<sf\>* are applicable for the given system. For example, `s4hana.cloud.support.bulk.operation` and `sf.user.filter`.
-
 For your system provisioning goals, you can set properties in SAP BTP cockpit: *Destinations* andthe administration console of SAP Cloud Identity Services on the *Properties* tab of the provisioning system.
 
 > ### Note:  
 > If the same properties exist in both the *Destinations* editor \(in the cockpit\) and in the *Properties* tab of the system \(in the Identity Provisioning UI\), the values set in the *Properties* tab are taken with higher priority.
+
+
+
+<a name="loioe92c1aa0bb634ec1a35f353f0a4588ec__section_wbr_gnt_lbc"/>
+
+## Prefixes
+
+
+
+Property names have specific prefixes, which indicate the provisioning system the property is applicable for. This helps you distinguish between properties meant for different systems.
+
+-   Properties starting with *<ips\>* are applicable for all provisioning systems, for example `ips.failed.request.retry.attempts`.
+
+-   Properties starting with the abbreviation of a provisioning system name, such as *<s4hana.cloud\>* or *<sf\>*, are applicable for the given system - in this case, SAP S/4HANA Cloud and SAP SuccessFactors, respectively. For example, `s4hana.cloud.support.bulk.operation` and `sf.user.filter`.
+
+-   Properties starting with *<scim\>* are applicable for the provisioning systems that were in use before the implementation of the system-specific prefixes. These *<scim\>* properties often apply to the first version of specific connector, although there can be exceptions. For example: `scim.user.filter` is used for filtering users in Identity Authentication version and SAP Analytics Cloud version 1. With the release of version 2 for both Identity Authentication and SAP Analytics Cloud, newer, system-specific properties were introduced: `ias.user.filter` and `sac.user.filter`.
+
+
+> ### Note:  
+> The scim-prefixed properties and the system-specific properties can be used interchangeably. If both are configured, Identity Provisioning will prioritize and consider the system-specific properties.
 
 **Related Information**  
 

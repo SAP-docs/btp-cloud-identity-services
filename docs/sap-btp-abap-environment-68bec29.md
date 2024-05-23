@@ -394,7 +394,7 @@ You can use SAP BTP ABAP environment as a proxy connector to execute *hybrid* sc
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    [SAP S/4HANA Cloud API: Business User](https://help.sap.com/viewer/f1531d40f450474dbf95f0404cb62007/latest/en-US/640fb5fa26664a7486de073b1882405c.html)
+    [Inbound Service: Business User](https://help.sap.com/docs/sap-btp-abap-environment/abap-environment/inbound-service-business-user?locale=en-US&version=Cloud)
 
     Default read and write transformations:
 

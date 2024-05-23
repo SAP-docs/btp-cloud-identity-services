@@ -28,13 +28,19 @@ As a tenant administrator, you can list and view information about the users in 
 
     This operation opens a list of the groups in the tenant.
 
-3.  Type a *Name* or *Display name* of a group in the search field in order to filter the list items.
+3.  Type a `Group ID`, `Display Name`, or `Name` of a group in the search field in order to filter the list items.
+
+    > ### Tip:  
+    > Choose *Show Filter Bars* for advanced search. You must be assigned to a policy that allows reading applications to view the information for *Application Name*.
 
 4.  Choose a group from the list.
 
-    This will open the groups details \(*Group ID*, *Name*, *Display name*, *Description*\) on the right. The users that are part of the group are listed below the user group details.
+    This will open the groups details \(*Group ID*, *Name*, *Display Name*, *Description*, *Type*, and *Application Name*\) on the right. The users that are part of the group are listed below the user group details.
 
-5.  To search for a specific user, type the *SCIM ID*, *Email*, *Login Name*of the user in the search field and press the *Enter* key.
+    > ### Restriction:  
+    > The group must be application specific and you must be assigned to a policy that allows reading applications to view the *Application Name*. For more information, see  <?sap-ot O2O class="- topic/xref " href="d93be69816ac4d0c9b972895f2b6a46f.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/wbz1500991557538/loio629f7cb06f6947988dcaf8bedbe45873_en-US/src/content/localization/en-us/4ac340a1c5754b199cc681b66300630e.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+
+5.  To search for a specific user, type the *SCIM ID*, *Email*, *Login Name* of the user in the search field and press the *Enter* key.
 
 
 **Related Information**  

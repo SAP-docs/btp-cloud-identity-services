@@ -63,7 +63,7 @@ To edit an administrator's authorizations, proceed as follows:
     > </td>
     > <td valign="top">
     > 
-    > This role gives the tenant administrator permission to configure the applications via the administration console.
+    > This role gives the tenant administrator permission to configure applications and their authorization policies via the administration console.
     > 
     > </td>
     > </tr>
@@ -111,7 +111,7 @@ To edit an administrator's authorizations, proceed as follows:
     > </td>
     > <td valign="top">
     > 
-    > This role gives the tenant administrator permission to create, edit, and delete groups via the administration console.The tenant administrator can also assign authorization policies.
+    > This role gives the tenant administrator permission to create, edit, and delete groups via the administration console.The tenant administrator can also assign authorization policies to users.
     > 
     > </td>
     > </tr>

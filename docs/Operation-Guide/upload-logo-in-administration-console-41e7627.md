@@ -18,10 +18,13 @@ You can upload a custom logo in the administration console by uploading an image
 
 5.  To upload a logo, choose *Browse* and select an image with the required format.
 
-    You can use one of the following formats for the image: <name\>.png, <name\>.gif, and <name\>.jpeg.
+    You can use one of the following formats for the image: <name\>.png, <name\>.gif, <name\>.jpeg, or <svg\>.
 
     > ### Note:  
     > The image must be smaller than 100 KB and with a maximum size of 300x100.
+
+    > ### Caution:  
+    > If the image is of format <svg\>, please make sure that the attribute `viewBox = "min-x min-y width height"` is present. For proper rendering the width and height values must be 100. For example, `viewBox="0 0 100 100"`
 
 6.  Save your configuration.
 

@@ -4,19 +4,11 @@
 
 Tenant administrators can access the audit logs for changes in the personal data, and successful, and failed authentications in Identity Authentication.
 
-Identity Authentication runs on several underlying *Infrastructure-as-a-Service* technologies and regions. Some are owned by SAP and some are owned by our partner infrastructure providers, including Amazon Web Services and Microsoft Azure. For more information, see [Regional Availability](../regional-availability-be600ca.md).
-
 > ### Tip:  
 > You can find a list of the security events that are logged by Identity Authentication on [Auditing and Logging Information](../Security/auditing-and-logging-information-ac5537b.md).
 
-Based on the infrastructure the tenant is running on there are two different procedures for accessing the audit logs.
+There are two different procedures for accessing the audit logs:
 
-> ### Note:  
-> The audit log entries are retained for:
-> 
-> -   SAP BTP, Cloud Foundry environment \(for tenants on the AWS and Azure infrastructure.\) - 90 days
-> -   SAP BTP, Neo environment \(for tenants on the SAP infrastructure\)- 201 days
-
--   [Access Audit Logs \(SAP Infrastructure\)](access-audit-logs-sap-infrastructure-9f6b9a4.md)
--   [Access Audit Logs \(AWS, Azure Infrastructure\)](access-audit-logs-aws-azure-infrastructure-a3e793c.md)
+-   [Access Audit Logs \(Audit Log Service in SAP BTP, Cloud Foundry\)](access-audit-logs-audit-log-service-in-sap-btp-cloud-foundry-a3e793c.md)
+-   [Access Audit Logs \(Audit Log Service in SAP BTP, Neo\)](access-audit-logs-audit-log-service-in-sap-btp-neo-9f6b9a4.md)
 

@@ -2381,6 +2381,8 @@ If you need to make OAuth authentication to the system, enter the URL to the acc
 
 -   SAP Ariba Applications
 
+-   SAP Ariba Category Management
+
 -   SAP BTP Account Members \(Neo\)
 
 -   SAP BTP Java/HTML5 apps \(Neo\)
@@ -11296,7 +11298,7 @@ Possible values:
 </td>
 <td valign="top">
 
-Procurement data warehouse
+Procurement Data Warehouse
 
 </td>
 </tr>
@@ -11326,7 +11328,7 @@ If the property is not set, the procurement data warehouse groups will be read a
 </td>
 <td valign="top">
 
-Procurement data warehouse
+Procurement Data Warehouse
 
 </td>
 </tr>
@@ -11350,7 +11352,7 @@ If not specified, the default value is *false*.
 </td>
 <td valign="top">
 
-Procurement data warehouse
+Procurement Data Warehouse
 
 </td>
 </tr>
@@ -11374,7 +11376,7 @@ Default value: `20`
 </td>
 <td valign="top">
 
-Procurement data warehouse
+Procurement Data Warehouse
 
 </td>
 </tr>
@@ -11400,7 +11402,7 @@ When specified, only those procurement data warehouse users matching the filter 
 </td>
 <td valign="top">
 
-Procurement data warehouse
+Procurement Data Warehouse
 
 </td>
 </tr>
@@ -11425,7 +11427,7 @@ If the property is not specified, the default value is taken: *application/scim+
 </td>
 <td valign="top">
 
-Procurement data warehouse
+Procurement Data Warehouse
 
 </td>
 </tr>
@@ -12541,7 +12543,7 @@ SAP Central Invoice Management
 </td>
 <td valign="top">
 
-When specified, only those SAP Employee Central Payroll users matching the filter expression will be read.
+When specified, only those SAP SuccessFactors Employee Central Payroll users matching the filter expression will be read.
 
 Supported operators: eq \(equal\) and sw \(starts with\).
 
@@ -12553,15 +12555,13 @@ For example:
 
 -   Value = *emails.value eq "john.smith@example.com"*
 
--   Value = *userUuid eq "1ab6c132-5de5-4530-8g14-1234h26373ab"*
-
 
 **System Role:** Source, Proxy
 
 </td>
 <td valign="top">
 
-SAP Employee Central Payroll
+SAP SuccessFactors Employee Central Payroll
 
 </td>
 </tr>
@@ -12589,7 +12589,7 @@ For example:
 </td>
 <td valign="top">
 
-SAP Employee Central Payroll
+SAP SuccessFactors Employee Central Payroll
 
 </td>
 </tr>
@@ -12601,26 +12601,18 @@ SAP Employee Central Payroll
 </td>
 <td valign="top">
 
-When the Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists in SAP Employee Central Payroll. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\). This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\).
+When the Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists in SAP SuccessFactors Employee Central Payroll. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\). This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\).
 
-According to your use case, choose how to set up this property:
+Default behavior: This property is missing during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such а *userName* is not found, the creation of the conflicting user fails.
 
--   Default behavior: This property is missing during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such а *userName* is not found, the creation of the conflicting user fails.
--   Value = *userUuid*. If the service finds an existing user with such *userUuid*, it updates this user with the data of the conflicting one. If a user with such *userUuid* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
-
-**Possible values:**
-
--   *userName*
--   *userUuid*
-
-Default value: *userName*
+Possible values: *userName*
 
 **System Role:** Target, Proxy
 
 </td>
 <td valign="top">
 
-SAP Employee Central Payroll
+SAP SuccessFactors Employee Central Payroll
 
 </td>
 </tr>
@@ -12632,7 +12624,7 @@ SAP Employee Central Payroll
 </td>
 <td valign="top">
 
-If the Identity Provisioning tries to create a group that already exists on the SAP Employee Central Payroll target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
+If the Identity Provisioning tries to create a group that already exists on the SAP SuccessFactors Employee Central Payroll target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
 
 **Possible values:**
 
@@ -12645,7 +12637,7 @@ If the property is not specified, the search is done by the default attribute: *
 </td>
 <td valign="top">
 
-SAP Employee Central Payroll
+SAP SuccessFactors Employee Central Payroll
 
 </td>
 </tr>
@@ -12691,7 +12683,7 @@ Default value: *false*
 </td>
 <td valign="top">
 
-SAP Employee Central Payroll
+SAP SuccessFactors Employee Central Payroll
 
 </td>
 </tr>
@@ -12703,7 +12695,7 @@ SAP Employee Central Payroll
 </td>
 <td valign="top">
 
-Makes the SAP Employee Central Payroll connector send the *If-Match* HTTP header with a value of “\*” for every request to the target system. This header could be used by an SAP Employee Central Payroll system for entity versioning.
+Makes the SAP SuccessFactors Employee Central Payroll connector send the *If-Match* HTTP header with a value of “\*” for every request to the target system. This header could be used by an SAP SuccessFactors Employee Central Payroll system for entity versioning.
 
 **Possible values:**
 
@@ -12719,7 +12711,7 @@ Default value: *false*
 </td>
 <td valign="top">
 
-SAP Employee Central Payroll
+SAP SuccessFactors Employee Central Payroll
 
 </td>
 </tr>
@@ -12731,7 +12723,7 @@ SAP Employee Central Payroll
 </td>
 <td valign="top">
 
-This property makes a SAP Employee Central Payroll connector to send a specified value for the *Content-Type* HTTP header. This is needed because SAP Employee Central Payroll could potentially not implement the protocol in the specification, which states that a system must accept *application/scim+json* as a value of the*Content-Type* header.
+This property makes a SAP SuccessFactors Employee Central Payroll connector to send a specified value for the *Content-Type* HTTP header. This is needed because SAP SuccessFactors Employee Central Payroll could potentially not implement the protocol in the specification, which states that a system must accept *application/scim+json* as a value of the*Content-Type* header.
 
 **Possible values:**
 
@@ -12744,7 +12736,7 @@ Default value: *application/scim+json*
 </td>
 <td valign="top">
 
-SAP Employee Central Payroll
+SAP SuccessFactors Employee Central Payroll
 
 </td>
 </tr>
@@ -12756,19 +12748,19 @@ SAP Employee Central Payroll
 </td>
 <td valign="top">
 
-This property distinguishes SAP Employee Central Payroll groups by specific prefix. It is an optional property which does not appear by default at system creation.
+This property distinguishes SAP SuccessFactors Employee Central Payroll groups by specific prefix. It is an optional property which does not appear by default at system creation.
 
 Example value: `ECP_`
 
 You can use the example value or provide your own.
 
--   When set in the source system, the prefix will be prepended to the name of the groups that are read from the SAP Employee Central Payroll source system and will be provisioned to the target system with the following name pattern: ECP\_GroupDisplayName. This way SAP Employee Central Payroll groups in the target system will be distinguished from groups provisioned from other applications.
+-   When set in the source system, the prefix will be prepended to the name of the groups that are read from the SAP SuccessFactors Employee Central Payroll source system and will be provisioned to the target system with the following name pattern: ECP\_GroupDisplayName. This way SAP SuccessFactors Employee Central Payroll groups in the target system will be distinguished from groups provisioned from other applications.
 
-    If the property is not set, the SAP Employee Central Payroll groups will be read and provisioned to the target system with their actual display names.
+    If the property is not set, the SAP SuccessFactors Employee Central Payroll groups will be read and provisioned to the target system with their actual display names.
 
--   When set in the target system, only groups containing the ECP\_ prefix in their display name will be provisioned to SAP Employee Central Payroll. Groups without this prefix in the display name won't be provisioned.
+-   When set in the target system, only groups containing the ECP\_ prefix in their display name will be provisioned to SAP SuccessFactors Employee Central Payroll. Groups without this prefix in the display name won't be provisioned.
 
-    If the property is not set, all groups will be be provisioned to SAP Employee Central Payroll.
+    If the property is not set, all groups will be be provisioned to SAP SuccessFactors Employee Central Payroll.
 
 
 **System Role:** Source and Target
@@ -12776,7 +12768,26 @@ You can use the example value or provide your own.
 </td>
 <td valign="top">
 
-SAP Employee Central Payroll
+SAP SuccessFactors Employee Central Payroll
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ecp.sap-client`
+
+</td>
+<td valign="top">
+
+Use this property to specify the SAP client number \(a three-digit number\) of your SAP SuccessFactors Employee Central Payroll system.
+
+For example: `102`
+
+</td>
+<td valign="top">
+
+SAP SuccessFactors Employee Central Payroll
 
 </td>
 </tr>
@@ -12794,41 +12805,11 @@ Supported operators: eq \(equal\) and sw \(starts with\).
 
 For example:
 
--   Value = *userName eq "JohnSmith"*
+-   *userName eq "SmithJ"*
 
--   Value = *userName sw "J"*
+-   *emails.value eq "john.doe@example.com"*
 
--   Value = *emails.value eq "john.smith@example.com"*
-
--   Value = *userUuid eq "1ab6c132-5de5-4530-8g14-1234h26373ab"*
-
-
-**System Role:** Source, Proxy
-
-</td>
-<td valign="top">
-
-SAP Ariba Category Management
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`cm.group.filter`
-
-</td>
-<td valign="top">
-
-When specified, only those groups matching the filter expression will be read.
-
-Supported operators: eq \(equal\) and sw \(starts with\).
-
-For example:
-
--   Value = *displayName eq "ProjectTeam1"*
-
--   Value = *displayName sw "P"*
+-   *emails.value eq "john.doe@example.com" or emails.value eq "john.d@example.com" or emails.value eq "j.doe@example.com"*
 
 
 **System Role:** Source, Proxy
@@ -12853,39 +12834,16 @@ When the Identity Provisioning attempts to provision a user for the first time, 
 According to your use case, choose how to set up this property:
 
 -   Default behavior: This property is missing during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such а *userName* is not found, the creation of the conflicting user fails.
--   Value = *userUuid*. If the service finds an existing user with such *userUuid*, it updates this user with the data of the conflicting one. If a user with such *userUuid* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+-   Value = *emails.value*. If the service finds an existing user with such *emails.value*, it updates this user with the data of the conflicting one. If a user with such *emails.value* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+-   Value = *userName, emails.value*. If the service finds an existing user with both userName and email, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
 
 **Possible values:**
 
 -   *userName*
--   *userUuid*
+-   *emails.value*
+-   *userName, emails.value*
 
 Default value: *userName*
-
-**System Role:** Target, Proxy
-
-</td>
-<td valign="top">
-
-SAP Ariba Category Management
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`cm.group.unique.attribute`
-
-</td>
-<td valign="top">
-
-If the Identity Provisioning tries to create a group that already exists on the SAP Ariba Category Management target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
-
-**Possible values:**
-
-Default value \(when not specified\): *displayName*
-
-If the property is not specified, the search is done by the default attribute: *displayName*
 
 **System Role:** Target, Proxy
 
@@ -12906,7 +12864,7 @@ SAP Ariba Category Management
 
 This property controls how modified users in the source system are updated in the target system.
 
--   If set to *true*, Identity Provisioning sends a `PATCH` request to the user or group resource in the target system. Only attributes without `"scope": "createEntity"` in the attribute mappings in the write transformation will be updated.
+-   If set to *true*, Identity Provisioning sends a `PATCH` request to the user resource in the target system. Only attributes without `"scope": "createEntity"` in the attribute mappings in the write transformation will be updated.
 
     For example, if the last name of a user is changed in the source system, the patch operation will update it in the target system and will leave unchanged other attributes with explicitly set "scope": "createEntity".
 
@@ -12987,38 +12945,6 @@ For example: *application/json*
 Default value: *application/scim+json*
 
 **System Role:** Target, Proxy
-
-</td>
-<td valign="top">
-
-SAP Ariba Category Management
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`cm.group.prefix`
-
-</td>
-<td valign="top">
-
-This property distinguishes SAP Ariba Category Management groups by specific prefix. It is an optional property which does not appear by default at system creation.
-
-Example value: `CM_`
-
-You can use the example value or provide your own.
-
--   When set in the source system, the prefix will be prepended to the name of the groups that are read from the SAP Ariba Category Management source system and will be provisioned to the target system with the following name pattern: ECP\_GroupDisplayName. This way SAP Ariba Category Management groups in the target system will be distinguished from groups provisioned from other applications.
-
-    If the property is not set, the SAP Ariba Category Management groups will be read and provisioned to the target system with their actual display names.
-
--   When set in the target system, only groups containing the CM\_ prefix in their display name will be provisioned to SAP Ariba Category Management. Groups without this prefix in the display name won't be provisioned.
-
-    If the property is not set, all groups will be be provisioned to SAP Ariba Category Management.
-
-
-**System Role:** Source and Target
 
 </td>
 <td valign="top">

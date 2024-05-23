@@ -117,7 +117,7 @@ Customer
 
 For example:
 
-*MS Azure AD*
+*Microsoft Entra ID*
 
 </td>
 <td valign="top">

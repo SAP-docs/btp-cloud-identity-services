@@ -14,6 +14,8 @@ The service supports front-channel logout. In a web session, the custom applicat
 
 In addition, the service also notifies any corporate identity providers that are involved in the related user sessions.
 
+The following figure illustrates a logout scenario with multiple applications and a corporate identity provider.
+
   
   
 **Front-Channel Logout Flow**
@@ -21,5 +23,5 @@ In addition, the service also notifies any corporate identity providers that are
 ![](images/single_logout_oidc_434165c.png "Front-Channel Logout Flow")
 
 -   [Call Identity Authentication End Session Endpoint](call-identity-authentication-end-session-endpoint-ec674f4.md)
--   [Configure Your Application for Single Logout](configure-your-application-for-single-logout-2ae38a5.md)
+-   [Handle Single Logout Request from Identity Authentication](handle-single-logout-request-from-identity-authentication-2ae38a5.md)
 

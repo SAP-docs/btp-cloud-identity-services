@@ -14,7 +14,7 @@ For the configuration, you have to provide the base64-encoded certificate as a f
 
 By default all scope options are selected and the *Scope* field is disabled. Your certificates are used for all scopes.
 
-Identity Authentication supports SAP Passport CA as trusted certificate authority \(CA\).
+Identity Authentication supports SAP Passport CA G2 as trusted certificate authority \(CA\). You can download your Root CA Certificate certificate from [SAP Trust Center Services](https://support.sap.com/en/offerings-programs/support-services/trust-center-services.html?anchorId=section_1559602068).
 
 
 

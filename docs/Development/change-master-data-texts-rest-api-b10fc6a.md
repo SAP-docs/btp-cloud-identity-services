@@ -271,7 +271,14 @@ Download the texts that you have already overwritten in the predefined master da
 
 ## Request
 
-**URI:**`https://<tenant ID>.accounts.ondemand.com/service/resource?resourceType=<value>&locale=<value>`
+**URI:**<code>https://&lt;Cloud Identity Services domain&gt;/service/resource?resourceType=&lt;value&gt;&amp;locale=&lt;value&gt;</code>
+
+> ### Note:  
+> The domain part has the following pattern:
+> 
+> `<tenant ID>.accounts.ondemand.com` or `<tenant ID>.accounts.cloud.sap`. If you have a configured custom domain, the domain has the following pattern: <your custom domain\>.
+> 
+> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [View Assigned Tenants and Admins](../view-assigned-tenants-and-admins-f56e6f2.md).
 
 **HTTP Method:***GET*
 
@@ -768,7 +775,14 @@ Update the master data texts.
 
 ## Request
 
-**URI:**`https://<tenant ID>.accounts.ondemand.com/service/resource/SAP_DEFAULT`
+**URI:**<code>https://&lt;Cloud Identity Services domain&gt;/service/resource/SAP_DEFAULT</code>
+
+> ### Note:  
+> The domain part has the following pattern:
+> 
+> `<tenant ID>.accounts.ondemand.com` or `<tenant ID>.accounts.cloud.sap`. If you have a configured custom domain, the domain has the following pattern: <your custom domain\>.
+> 
+> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [View Assigned Tenants and Admins](../view-assigned-tenants-and-admins-f56e6f2.md).
 
 **HTTP Method:****POST**
 

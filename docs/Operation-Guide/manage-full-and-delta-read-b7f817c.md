@@ -157,7 +157,7 @@ For delta read of resources \(users and groups\), bear in mind the following API
 <tr>
 <td valign="top">
 
-*SAP Employee Central Payroll* 
+*SAP SuccessFactors Employee Central Payroll* 
 
 </td>
 </tr>

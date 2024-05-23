@@ -1,6 +1,6 @@
 <!-- loio13f60ee7604b489eb87d15cd728e8b59 -->
 
-# Procurement data warehouse
+# Procurement Data Warehouse
 
 Follow this procedure to set up procurement data warehouse as a source system.
 
@@ -10,25 +10,18 @@ Follow this procedure to set up procurement data warehouse as a source system.
 
 ## Prerequisites
 
--   You created an SAP Ariba Developer Portal application and sent an enablement request for Procurement Data Warehouse to SAP Ariba. For more information, see [Sending an Enablement Request for Procurement Data Warehouse](https://help.sap.com/docs/strategic-sourcing/setting-up-procurement-data-warehouse/sending-enablement-request-for-procurement-data-warehouse?state=DRAFT).
-
-    > ### Note:  
-    > If you don’t have an account on SAP Ariba Developer Portal, then ask your **Designated Support Contact** \(DSC\) to submit a [request for an account](https://help.sap.com/viewer/ea72206b834e4ace9cd834feed6c0e09/Cloud/en-US/f7dbeb26531140e7bab57170a24e3701.html). To find your DSC person, see: [How can I see my company's Basic users and Designated Support Contacts \(DSC\)](https://support.ariba.com/item/view/184249)
-
--   You completed the procurement user role assignment and user provisioning in SAP Analytics Cloud.
-
 -   You obtain credentials to access the Procurement Data Warehouse API. For more information, see [Procurement Data Warehouse Enrollment URL and Credentials](https://help.sap.com/docs/strategic-sourcing/setting-up-procurement-data-warehouse/procurement-data-warehouse-enrollment-api?state=DRAFT#procurement-data-warehouse-enrollment-url-and-credentials).
 
 -   You established trust between your SAP BTP subaccount and the SAP Cloud Identity Services - Identity Authentication service. For more information, see [Establishing Trust Automatically](https://help.sap.com/docs/btp/sap-business-technology-platform/establishing-trust-automatically?version=Cloud).
 
--   To configure your *Procurement data warehouse* provisioning system \(see the procedure below\), you will need to map your SAP Ariba application parameters to the relevant Identity Provisioning properties. The property mapping between the two systems is as follows:
+-   To configure your *Procurement Data Warehouse* provisioning system \(see the procedure below\), you will need to map your SAP Ariba application parameters to the relevant Identity Provisioning properties. The property mapping between the two systems is as follows:
 
 
     <table>
     <tr>
     <th valign="top">
 
-    Procurement data warehouse application
+    Procurement Data Warehouse Application
     
     </th>
     <th valign="top">
@@ -67,7 +60,7 @@ Follow this procedure to set up procurement data warehouse as a source system.
     <tr>
     <td valign="top">
     
-    Procurement data warehouseOAuth Token URL
+    procurement data warehouseOAuth Token URL
     
     </td>
     <td valign="top">
@@ -120,7 +113,7 @@ Follow this procedure to set up procurement data warehouse as a source system.
 
 The procurement data warehouse is a capability that feeds analytics information from SAP Ariba applications, including guided sourcing capability for SAP Ariba Sourcing, SAP Ariba Buying and Invoicing, and SAP Spend Control Tower, to the embedded SAP Analytics Cloud. It provides data transfer, storage, loading, and reporting, and it drives visualization through advanced analytics dashboards.
 
-You can use Identity Provisioning to configure procurement data warehouse as a source system where you can read users and groups and provision them to target systems of your choice for custom reporting. The source system consumes SCIM 2.0 API provided by SAP Analytics Cloud.
+You can use Identity Provisioning to configure procurement data warehouse as a source system where you can read users and groups and provision them to target systems of your choice for custom reporting. The source system consumes SCIM 2.0 API provided by procurement data warehouse.
 
 
 
@@ -135,7 +128,7 @@ You can use Identity Provisioning to configure procurement data warehouse as a s
 
 2.  Sign in to the administration console of SAP Cloud Identity Services and navigate to *Identity Provisioning* \> *Source Systems*.
 
-3.  Add *Procurement data warehouse* as a source system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
+3.  Add *Procurement Data Warehouse* as a source system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
 4.  Choose the *Properties* tab to configure the connection settings for your system.
 
@@ -287,7 +280,7 @@ You can use Identity Provisioning to configure procurement data warehouse as a s
 
     You can change the default transformation mapping rules to reflect your current setup of entities in your procurement data warehouse system. For more information, see: [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    [Managing Users and Teams → api/v1/scim2](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/14cac91febef464dbb1efce20e3f1613/e34d2555509548028b76a7862cc5b84a.html)
+    Procurement Data Warehouse Enrollment API PUBLIC LINK
 
     **Default transformation:**
 

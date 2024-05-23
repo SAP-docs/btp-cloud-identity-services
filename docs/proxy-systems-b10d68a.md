@@ -865,7 +865,7 @@ The Identity Provisioning implementation of the Proxy System SCIM API \(based on
     `GET .../Users?filter=meta.lastModified gt "2024-02-14T04:42:34Z"`
 
 
-If your system supports native read filtering, the Identity Provisioning proxy application will translate the SCIM filter to the native system filter, and will try to combine it with the relevant read filter property \(`<system_prefix>.user.filter` or `<system_prefix>.group.filter`\).
+If your system supports native read filtering, the Identity Provisioning proxy application will translate the SCIM filter to the native system filter, and will try to combine it with the relevant read filter property \(for example, `<system_prefix>.user.filter`, `<system_prefix>.group.filter` or `<system_prefix>.origin`\). For more information about all read filter properties, see [List of Properties](list-of-properties-d6f3577.md).
 
 > ### Example:  
 > Combining filters from the properties and the SCIM request

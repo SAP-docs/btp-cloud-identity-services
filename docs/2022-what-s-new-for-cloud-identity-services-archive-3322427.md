@@ -958,7 +958,7 @@ Audit Logs
 </td>
 <td valign="top">
 
-Tenant administrator can choose Cloud Foundry regions for the audit log service configuration. See [Access Audit Logs \(AWS, Azure Infrastructure\)](Monitoring-and-Reporting/access-audit-logs-aws-azure-infrastructure-a3e793c.md).
+Tenant administrator can choose Cloud Foundry regions for the audit log service configuration. See [Access Audit Logs \(Audit Log Service in SAP BTP, Cloud Foundry\)](Monitoring-and-Reporting/access-audit-logs-audit-log-service-in-sap-btp-cloud-foundry-a3e793c.md).
 
 </td>
 <td valign="top">

@@ -183,3 +183,5 @@ To configure an OpenID Connect trusted application in the administration console
 
 [Configuring OpenID Connect](configuring-openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
 
+[Handle Single Logout Request from Identity Authentication](handle-single-logout-request-from-identity-authentication-2ae38a5.md)
+

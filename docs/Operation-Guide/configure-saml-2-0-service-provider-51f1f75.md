@@ -134,6 +134,11 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     -   *URLs for Browser Flow* - the allowed domain for browser flows.
     -   *URL for Principal Propagation* - URL is required for principal propagation scenarios to ABAP applications according to RFC 7522. For the proper URL consult the documentation of the providing application.
 
+    > ### Note:  
+    > During authentication the ACS endpoint is provided with the request. Through the flow, Identity Authentication is removing the query attributes, and during the response it compares the ACS endpoint with what is configured in the SAML 2.0 configuration of the application.
+    > 
+    > Identity Authentication is looking for an exact match and If there is no such match the authentication will fail.
+
 
     
     </td>

@@ -7,7 +7,7 @@ To get access using the resource owner password credentials flow, follow the pro
 Tasks 1 and 2 are configurations on Identity Authentication. Task 3 is a configuration on the client \(relying party\).
 
 > ### Restriction:  
-> Only corporate identity providers configured with OpenID Connect \(OIDC\) support this flow and not configurations with SAML 2.
+> Only corporate identity providers configured with OpenID Connect \(OIDC\) support this flow.
 > 
 > If you've configured a corporate identity provider for your application, multifactor authentication isn't supported with this flow. For human users we recommend that you use a web-based flow like the authorization code flow.
 

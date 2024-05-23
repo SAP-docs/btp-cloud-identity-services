@@ -1,19 +1,19 @@
-<!-- loio64a167d0ad204562a40b7f828ee2fece -->
+<!-- loiofb972445c96d44c28aafc5bcac4d8b85 -->
 
-# SAP Ariba Central Invoice Management
+# SAP Ariba Category Management
 
-Follow this procedure to set up SAP Ariba Central Invoice Management as a proxy system.
+Follow this procedure to set up SAP Ariba Category Management as a proxy system.
 
 
 
-<a name="loio64a167d0ad204562a40b7f828ee2fece__prereq_gvh_45y_rdb"/>
+<a name="loiofb972445c96d44c28aafc5bcac4d8b85__prereq_gvh_45y_rdb"/>
 
 ## Prerequisites
 
 > ### Restriction:  
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.
 
-You have created an instance and generated a service key for the scim service plan of SAP Ariba Central Invoice Management. For more information, see [Setting Up Invoice Processing with SAP Ariba Central Invoice Management \(4N6\)](https://support.sap.com/content/dam/SAAP/Sol_Pack/S4C/Library/Setup/4N6_Set-Up_EN_XX.pdf) –\> *7.4 Configure User Replication*.
+You have created an instance and generated a service key for the scim service plan of SAP Ariba Category Management. For more information, see [Creating a SAP Ariba Category Management SCIM Service Instance in Your Subaccount](https://help.sap.com/docs/categories/sap-ariba-category-management-configuration-guide/setting-up-user-replication?version=Latest).
 
 > ### Note:  
 > Administrators of bundle tenants on Neo environment should enable the *Manage OAuth Clients* permission, as described in *Neo Environment* section in [Manage Authorizations](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/544de9b504214372b4479dc1f6b08cca.html "Manage the authorizations of Identity Provisioning administrators, when your bundle or standalone tenant is running on SAP BTP, Neo environment.") :arrow_upper_right:.
@@ -22,11 +22,12 @@ You have created an instance and generated a service key for the scim service pl
 
 ## Context
 
-SAP Ariba Central Invoice Management is an SAP BTP SaaS application running on SAP BTP, Cloud Foundry environment. This application enables central management of supplier invoices from multiple connected systems, such as SAP S/4HANA Cloud systems.
+SAP Ariba Category Management is a cloud-based solution that enables organizations to define and manage purchasing categories and provides actionable market intelligence, category insights, and various tools and templates for developing and operationalizing category strategies that drive business value and performance. This business solution is built on SAP Business Technology Platform \(BTP\).
 
-You can use Identity Provisioning to configure SAP Ariba Central Invoice Management as a proxy system in hybrid scenarios. For example, when SAP Ariba Central Invoice Management is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision users to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users back to the SAP Ariba Central Invoice Management.
+You can use Identity Provisioning to configure SAP Ariba Category Management as a proxy system in hybrid scenarios. For example, when SAP Ariba Category Management is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision users to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users back to the SAP Ariba Category Management.
 
-This scenario supports provisioning users and groups.
+> ### Note:  
+> SAP Ariba Category Management does not support groups.
 
 
 
@@ -85,7 +86,7 @@ This scenario supports provisioning users and groups.
     -   [Access Identity Provisioning UI of Bundle Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/7ab5884ffbc44461a57622d2f633e57c.html "Access the Identity Provisioning UI when the service is bundled as part of an SAP cloud solution's license.") :arrow_upper_right:
     -   [Access Identity Provisioning UI of Standalone Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/61fd82ed48ab42b2bc74626926c1722c.html "Access the Identity Provisioning user interface as a standalone product.") :arrow_upper_right:
 
-5.  Add *SAP Ariba Central Invoice Management* as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
+5.  Add *SAP Ariba Category Management* as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
 6.  Choose the *Properties* tab to configure the connection settings for your system.
 
@@ -132,9 +133,7 @@ This scenario supports provisioning users and groups.
     </td>
     <td valign="top">
     
-    Enter the URL provided by the service key under the *ips-connector* field without adding the path information.
-
-    For example: `https://eu10.cim.cloud.sap`
+    Enter the URL provided by the service key under the *scim-v1* field without adding the path information.
     
     </td>
     </tr>
@@ -194,9 +193,7 @@ This scenario supports provisioning users and groups.
     </td>
     <td valign="top">
     
-    Enter the OAuth 2.0 Token Service URL. This is the value from the *url* field of the service key plus `/oauth/token`
-
-    For example: <code>https://<i class="varname">&lt;my tenant&gt;</i>.authentication.eu10.hana.ondemand.com/oauth/token</code>
+    Enter the OAuth 2.0 Token Service URL. This is the value from the *url* field of the service key plus `/oauth/token` 
     
     </td>
     </tr>
@@ -208,23 +205,16 @@ This scenario supports provisioning users and groups.
     </td>
     <td valign="top">
     
-    When specified, only those SAP Ariba Central Invoice Management users matching the filter expression will be read.
+    When specified, only those SAP Ariba Category Management users matching the filter expression will be read. For example:
 
-    Example: *name.familyName eq "Smith"* and *addresses.country eq "US"*
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    \(Optional\) `cim.group.filter`
-    
-    </td>
-    <td valign="top">
-    
-    When specified, only those SAP Ariba Central Invoice Management groups matching the filter expression will be read.
+    -   *userName eq "SmithJ"*
 
-    Example: *displayName eq "ProjectTeam1" or "Students2018"*
+    -   *emails.value eq "john.doe@example.com"*
+
+    -   *emails.value eq "john.doe@example.com" or emails.value eq "john.d@example.com" or emails.value eq "j.doe@example.com"*
+
+
+
     
     </td>
     </tr>
@@ -249,15 +239,17 @@ This scenario supports provisioning users and groups.
     To learn what additional properties are relevant to this system, see [List of Properties](list-of-properties-d6f3577.md). You can use the main search, or filter properties by the *Name* or *System Type* columns.
 
     > ### Note:  
-    > The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users and groups. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
+    > The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
 
 7.  Configure the transformations.
 
-    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Ariba Central Invoice Management* proxy system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
+    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Ariba Category Management* proxy system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
-    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP Ariba Central Invoice Management system. For more information, see:
+    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP Ariba Category Management system. For more information, see:
 
-    [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md).
+    [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
+
+    [SCIM APIs for SAP Ariba Category Management](https://help.sap.com/docs/ariba/ariba-applications-wip/scim-apis-for-sap-ariba-category-management?state=DRAFT)
 
     Default read and write transformations:
 
@@ -333,28 +325,8 @@ This scenario supports provisioning users and groups.
     >         "optional": true
     >       },
     >       {
-    >         "sourcePath": "$.name.middleName",
-    >         "targetPath": "$.name.middleName",
-    >         "optional": true
-    >       },
-    >       {
     >         "sourcePath": "$.name.familyName",
     >         "targetPath": "$.name.familyName",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.name.formatted",
-    >         "targetPath": "$.name.formatted",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.name.honorificPrefix",
-    >         "targetPath": "$.name.honorificPrefix",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.name.honorificSuffix",
-    >         "targetPath": "$.name.honorificSuffix",
     >         "optional": true
     >       },
     >       {
@@ -373,70 +345,9 @@ This scenario supports provisioning users and groups.
     >         "targetPath": "$.active"
     >       },
     >       {
-    >         "sourcePath": "$.userType",
-    >         "targetPath": "$.userType",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.locale",
-    >         "targetPath": "$.locale",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.timezone",
-    >         "targetPath": "$.timezone",
-    >         "optional": true
-    >       },
-    >       {
     >         "sourcePath": "$.displayName",
     >         "targetPath": "$.displayName",
     >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.groups",
-    >         "targetPath": "$.groups",
-    >         "optional": true,
-    >         "preserveArrayWithSingleElement": true
-    >       }
-    >     ]
-    >   },
-    >   "group": {
-    >     "scimEntityEndpoint": "Groups",
-    >     "mappings": [
-    >       {
-    >         "sourcePath": "$.id",
-    >         "targetPath": "$.id",
-    >         "targetVariable": "entityIdSourceSystem"
-    >       },
-    >       {
-    >         "sourceVariable": "entityBaseLocation",
-    >         "targetPath": "$.meta.location",
-    >         "targetVariable": "entityLocationSourceSystem",
-    >         "functions": [
-    >           {
-    >             "type": "concatString",
-    >             "suffix": "${entityIdSourceSystem}"
-    >           }
-    >         ]
-    >       },
-    >       {
-    >         "sourcePath": "$.externalId",
-    >         "targetPath": "$.externalId"
-    >       },
-    >       {
-    >         "sourcePath": "$.schemas",
-    >         "targetPath": "$.schemas",
-    >         "preserveArrayWithSingleElement": true
-    >       },
-    >       {
-    >         "sourcePath": "$.displayName",
-    >         "targetPath": "$.displayName"
-    >       },
-    >       {
-    >         "sourcePath": "$.members",
-    >         "targetPath": "$.members",
-    >         "optional": true,
-    >         "preserveArrayWithSingleElement": true
     >       }
     >     ]
     >   }
@@ -451,164 +362,61 @@ This scenario supports provisioning users and groups.
     > ### Code Syntax:  
     > ```
     > {
-    > 	"user": {
-    > 		"scimEntityEndpoint": "Users",
-    > 		"mappings": [
-    > 			{
-    > 				"sourceVariable": "entityIdTargetSystem",
-    > 				"targetPath": "$.id"
-    > 			},
-    > 			{
-    > 				"constant": [
-    > 					"urn:ietf:params:scim:schemas:core:2.0:User"
-    > 				],
-    > 				"targetPath": "$.schemas"
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.userName",
-    > 				"targetPath": "$.userName"
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.externalId",
-    > 				"targetPath": "$.externalId",
-    > 				"optional": true
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.name.givenName",
-    > 				"targetPath": "$.name.givenName",
-    > 				"optional": true
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.name.middleName",
-    > 				"targetPath": "$.name.middleName",
-    > 				"optional": true
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.name.familyName",
-    > 				"targetPath": "$.name.familyName",
-    > 				"optional": true
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.name.formatted",
-    > 				"targetPath": "$.name.formatted",
-    > 				"optional": true
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.name.honorificPrefix",
-    > 				"targetPath": "$.name.honorificPrefix",
-    > 				"optional": true
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.name.honorificSuffix",
-    > 				"targetPath": "$.name.honorificSuffix",
-    > 				"optional": true
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.emails",
-    > 				"preserveArrayWithSingleElement": true,
-    > 				"optional": true,
-    > 				"targetPath": "$.emails"
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.active",
-    > 				"targetPath": "$.active",
-    > 				"optional": true
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.displayName",
-    > 				"targetPath": "$.displayName",
-    > 				"optional": true
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.nickName",
-    > 				"targetPath": "$.nickName",
-    > 				"optional": true
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.profileUrl",
-    > 				"targetPath": "$.profileUrl",
-    > 				"optional": true
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.title",
-    > 				"targetPath": "$.title",
-    > 				"optional": true
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.userType",
-    > 				"targetPath": "$.userType",
-    > 				"optional": true
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.preferedLanguage",
-    > 				"targetPath": "$.preferredLanguage",
-    > 				"optional": true
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.locale",
-    > 				"targetPath": "$.locale",
-    > 				"optional": true
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.timezone",
-    > 				"targetPath": "$.timezone",
-    > 				"optional": true
-    > 			},
-    > 			{
-    > 				"constant": "urn:ietf:params:scim:api:messages:2.0:PatchOp",
-    > 				"targetPath": "$.schemas[0]",
-    > 				"scope": "patchEntity"
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.Operations",
-    > 				"preserveArrayWithSingleElement": true,
-    > 				"targetPath": "$.Operations",
-    > 				"scope": "patchEntity"
-    > 			}
-    > 		]
-    > 	},
-    > 	"group": {
-    > 		"scimEntityEndpoint": "Groups",
-    > 		"mappings": [
-    > 			{
-    > 				"sourceVariable": "entityIdTargetSystem",
-    > 				"targetPath": "$.id"
-    > 			},
-    > 			{
-    > 				"constant": [
-    > 					"urn:ietf:params:scim:schemas:core:2.0:Group"
-    > 				],
-    > 				"targetPath": "$.schemas"
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.externalId",
-    > 				"targetPath": "$.externalId",
-    > 				"optional": true
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.displayName",
-    > 				"targetPath": "$.displayName"
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.members[*].value",
-    > 				"preserveArrayWithSingleElement": true,
-    > 				"optional": true,
-    > 				"targetPath": "$.members[?(@.value)]"
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.Operations",
-    > 				"targetPath": "$.Operations",
-    > 				"preserveArrayWithSingleElement": true,
-    > 				"scope": "patchEntity"
-    > 			},
-    > 			{
-    > 				"sourcePath": "$.schemas",
-    > 				"targetPath": "$.schemas",
-    > 				"preserveArrayWithSingleElement": true,
-    > 				"scope": "patchEntity"
-    > 			}
-    > 		]
-    > 	}
+    >     "user": {
+    >         "scimEntityEndpoint": "Users",
+    >         "mappings": [
+    >             {
+    >                 "constant": [
+    >                     "urn:ietf:params:scim:schemas:core:2.0:User"
+    >                 ],
+    >                 "targetPath": "$.schemas"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourceVariable": "entityIdTargetSystem",
+    >                 "targetPath": "$.id"
+    >             },
+    >             {
+    >                 "sourcePath": "$.userName",
+    >                 "targetPath": "$.userName"
+    >             },
+    >             {
+    >                 "sourcePath": "$.name.familyName",
+    >                 "targetPath": "$.name.familyName",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$.name.givenName",
+    >                 "targetPath": "$.name.givenName",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$.displayName",
+    >                 "targetPath": "$.displayName",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$.active",
+    >                 "targetPath": "$.active",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "condition": "$.emails[0].length() > 0",
+    >                 "targetPath": "$.emails[0].primary",
+    >                 "constant": true
+    >             },
+    >             {
+    >                 "sourcePath": "$.emails",
+    >                 "preserveArrayWithSingleElement": true,
+    >                 "optional": true,
+    >                 "targetPath": "$.emails"
+    >             }
+    >         ]
+    >     }
     > }
     > ```
 
@@ -638,7 +446,7 @@ This scenario supports provisioning users and groups.
 
 
 
-<a name="loio64a167d0ad204562a40b7f828ee2fece__postreq_cf4_lgj_kfb"/>
+<a name="loiofb972445c96d44c28aafc5bcac4d8b85__postreq_cf4_lgj_kfb"/>
 
 ## Next Steps
 
@@ -658,5 +466,5 @@ To see an example with SAP Identity Management, see [Hybrid Scenario: SAP Identi
 **Related Information**  
 
 
-[SAP Ariba Central Invoice Management](https://help.sap.com/docs/CENTRAL_INVOICE_MANAGEMENT)
+[User Replication Setup](https://help.sap.com/docs/categories/sap-ariba-category-management-configuration-guide/sap-cloud-identity-services-setup?version=latest)
 

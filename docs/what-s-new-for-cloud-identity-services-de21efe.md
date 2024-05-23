@@ -135,6 +135,683 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+2024-05-22
+
+</td>
+<td valign="top">
+
+2024-05-22
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Application Specific Groups
+
+</td>
+<td valign="top">
+
+A new type of group, Application Specific, is available in the administration console for SAP Cloud Identity Services. See  <?sap-ot O2O class="- topic/xref " href="d93be69816ac4d0c9b972895f2b6a46f.xml" text="" desc="" xtrc="xref:5" xtrf="file:/home/builder/src/dita-all/wbz1500991557538/loio629f7cb06f6947988dcaf8bedbe45873_en-US/src/content/localization/en-us/de21efe39e1442618388784891497067.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-05-22
+
+</td>
+<td valign="top">
+
+2024-05-22
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Managing Groups
+
+</td>
+<td valign="top">
+
+You can use the *Application Name* field in the filter bar for advanced search. See [List and Edit Groups](Operation-Guide/list-and-edit-groups-5e8a55c.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-05-22
+
+</td>
+<td valign="top">
+
+2024-05-22
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Logos
+
+</td>
+<td valign="top">
+
+You can use <svg\> files for your images in the administration console. See [Upload Logo in Administration Console](Operation-Guide/upload-logo-in-administration-console-41e7627.md) and [Configure Tenant Images](Operation-Guide/configure-tenant-images-8742046.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-05-22
+
+</td>
+<td valign="top">
+
+2024-05-22
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Manage Applications
+
+</td>
+<td valign="top">
+
+Administrators with Manage Applicatios role and users with assigned authorization policies for read applications can see all applications in the tenant regardless of their Organization ID. See [Edit Applications](Operation-Guide/edit-applications-69d8cad.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-05-22
+
+</td>
+<td valign="top">
+
+2024-05-22
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Details
+
+</td>
+<td valign="top">
+
+Attributes from the customs schema that are complex multivalued can now be edited via the administration console. See [List and Edit User Details](Operation-Guide/list-and-edit-user-details-045cb01.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-05-22
+
+</td>
+<td valign="top">
+
+2024-05-22
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Handling Third Party Cookies
+
+</td>
+<td valign="top">
+
+Storage Access API is now available for all SAP Cloud Identity Services tenants.
+
+Action: We recoomend you to test your application. For more information on Third Party Cookies Deprecation see [Handling Third Party Cookies Deprecation in Identity Authentication](https://community.sap.com/t5/technology-blogs-by-sap/handling-third-party-cookies-deprecation-in-identity-authentication/ba-p/13659277) and [Testing Your Solution For Breakage](https://community.sap.com/t5/technology-blogs-by-sap/handling-third-party-cookies-deprecation-in-identity-authentication/ba-p/13659277).
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-05-22
+
+</td>
+<td valign="top">
+
+2024-05-22
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Handling rate limits for Microsoft Entra ID read operations
+
+</td>
+<td valign="top">
+
+Microsoft Entra ID source and proxy provisioning systems are now enhanced to support retry for a failed operation due to occurred exception 'Too many requests \(429\)'.
+
+Previously, this option was possible only for the Microsoft Entra ID target system.
+
+For more information, see [Handle Failed Operations](Operation-Guide/handle-failed-operations-0382a0c.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-05-22
+
+</td>
+<td valign="top">
+
+2024-05-22
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP SuccessFactors Employee Central Payroll connector
+
+</td>
+<td valign="top">
+
+Identity Provisioning supports the SAP SuccessFactors Employee Central Payroll connector. You can configure it as source, target and proxy system for your provisioning scenarios. For more information, see:
+
+-   [SAP SuccessFactors Employee Central Payroll \(Source\)](sap-successfactors-employee-central-payroll-94d8979.md)
+
+-   [SAP SuccessFactors Employee Central Payroll \(Target\)](sap-successfactors-employee-central-payroll-03b4097.md)
+
+-   [SAP SuccessFactors Employee Central Payroll \(Proxy\)](sap-successfactors-employee-central-payroll-2c7dbe8.md)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-05-22
+
+</td>
+<td valign="top">
+
+2024-05-22
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Data type name changed
+
+</td>
+<td valign="top">
+
+In the Identity Provisioning graphical editor, the Object and ObjectArray data types for transformation expressions, such as constant and defaultValue, have been renamed to JSONObject and JSONObjectArray, respectively.
+
+For more information, see [Transformation Expressions](transformation-expressions-bb8537b.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-05-08
+
+</td>
+<td valign="top">
+
+2024-05-08
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
 2024-05-08
 
 </td>

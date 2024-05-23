@@ -47,7 +47,7 @@ Value
 <tr>
 <td valign="top">
 
-`user.name`
+`user.userName`
 
 </td>
 <td valign="top">

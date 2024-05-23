@@ -221,7 +221,7 @@ These source systems consume SCIM 2.0 API provided by SAP Build Work Zone, advan
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    [SAP Build Work Zone OData API](https://jam2.sapjam.com/work_zone/ODataDocs/ui)
+    [SAP Build Work Zone SCIM API](https://help.sap.com/docs/build-work-zone-advanced-edition/sap-build-work-zone-advanced-edition/user-and-user-list-provisioning-using-scim-api)
 
     **Default transformation:**
 

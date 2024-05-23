@@ -1,8 +1,8 @@
 <!-- loioa3e793c9096c4fee9c98ecdcb8791cfc -->
 
-# Access Audit Logs \(AWS, Azure Infrastructure\)
+# Access Audit Logs \(Audit Log Service in SAP BTP, Cloud Foundry\)
 
-Access the audit logs for changes in the personal data, successful, and failed authentications for Identity Authentication tenants on the AWS and Azure infrastructure.
+Access the audit logs for changes in the personal data, successful, and failed authentications for Identity Authentication tenants on both the SAP, and the AWS and Azure infrastructures in the Audit Log Service in SAP BTP, Cloud Foundry.
 
 
 
@@ -10,20 +10,19 @@ Access the audit logs for changes in the personal data, successful, and failed a
 
 ## Prerequisites
 
-You have a subaccount in your global account on SAP BTP, Cloud Foundry. For more information, see [Create a Subaccount](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/05280a123d3044ae97457a25b3013918.html).
+You have a subaccount in your global account in SAP BTP, Cloud Foundry. For more information, see [Create a Subaccount](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/05280a123d3044ae97457a25b3013918.html).
 
 
 
 ## Context
 
 > ### Note:  
-> The content in this document is only for tenants on the AWS and Azure infrastructure.
-> 
-> For tenants on the SAP infrastructure, see [Access Audit Logs \(SAP Infrastructure\)](access-audit-logs-sap-infrastructure-9f6b9a4.md).
+> The content in this document is both for tenants on the SAP, and AWS and Azure infrastructures.
 
-To view the audit logs for tenants on the AWS and Azure infrastructure, you must add configurations in the SAP BTP cockpit and the administration console for SAP Cloud Identity Services first.
+> ### Tip:  
+> If your tenant is on the SAP infrastructure, when you access the administration console for SAP Cloud Identity Services, the *Audit and Change Logs* tile, you see the *Cloud Foundry*, *NEO*, and *Change Logs* options for configurations. If your tenant is on the AWS, Azure infrastructure, you see the *Audit Logs* and *Change Logs* options for configurations.
 
-The audit log entries for tenants on the AWS and Azure infrastructure are retained for 90 days.
+The audit log entries in the Audit Log Service in SAP BTP, Cloud Foundry are retained for 90 days.
 
 To view the audit logs, follow the procedures below:
 
@@ -87,21 +86,23 @@ To view the audit logs, follow the procedures below:
 
 2.  Choose *Security* \> *Roles Collections* in the navigation area.
 
-3.  Choose the plus button to create a role collection.
+3.  Choose *Create*.
 
-    The new role collection in the *Role Collections* list.
+4.  Enter name for the new role in the *Create Role Collection* popup and choose *Create*.
 
-4.  Select the newly created role collection from the list.
+    The new role appears in the *Role Collections* list.
 
-5.  Choose the *Edit* button.
+5.  Select the newly created role collection from the list.
 
-6.  Under the *Roles* tab, expand the *Role Name* list and select the auditlog viewer and auditlog-management roles.
+6.  Choose the *Edit* button.
+
+7.  Under the *Roles* tab, expand the *Role Name* list and select the auditlog viewer and auditlog-management roles.
 
     If the roles don't exist, create them. For more information, see [Configure Application Roles and Assign Roles to Users](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/56a71531fc154717bf221f9e293ba215.html).
 
-7.  Choose *Add*.
+8.  Choose *Add*.
 
-8.  Navigate back to the subaccount and choose *Security* \> *Users* and assign the role collection to the user.
+9.  Navigate back to the subaccount and choose *Security* \> *Users* and assign the role collection to the user.
 
 
 <a name="task_yvb_pk1_rdb"/>
@@ -122,9 +123,14 @@ To view the audit logs, follow the procedures below:
 
 3.  Choose the *Audit Logs* tab.
 
-4.  Choose *\+Add*.
+4.  You have the following options:
 
-5.  Fill in the required information in the pop up and save your changes.
+    -   If your tenant is on the SAP infrastructure, choose the *Cloud Foundry* tab.
+    -   If your tenant is on the AWS, Azure infrastructure, choose the *Audit Logs* tab.
+
+5.  Choose *\+Add*.
+
+6.  Fill in the required information in the pop up and save your changes.
 
 
     <table>
@@ -1035,12 +1041,12 @@ To view the audit logs, follow the procedures below:
     </tr>
     </table>
     
-6.  Save your changes.
+7.  Save your changes.
 
     > ### Caution:  
     > If your SAP Cloud Identity Services tenant is migrated to a new region, you must remove the current configuration and repeat procedure with the new region.
 
-7.  View the audit logs. You have two options to do that:
+8.  View the audit logs. You have two optiont:
 
     -   \(if subdomain is configured\) choose the link to the *Audit Log Viewer* in the *Audit Service Configuration* in the administration console.
     -   in the cockpit, navigate to *Services* \> *Instances and Subscriptions* \> *Audit Log Viewer*.
@@ -1052,7 +1058,20 @@ To view the audit logs, follow the procedures below:
 
 ## Results
 
-The configuration will be enabled with the next 15 minutes.
+The configuration will be enabled with the next 15 minutes. Upon accessing the Audit Log Viewer, you have the option to filter the logs based on date and keyword filters.
+
+The audit logs provide information about the event category and timestamp, the event and object type, who performed the action and others. For example:
+
+-   *Category*: audit.security-events \(logged as security event message\), audit.configuration \(logged as configuration modification message\), audit.data-access \(logged as data access message\).
+
+-   *Event Type*: JOB\_TRIGGERED, SYSTEM\_UPDATED, SYSTEM\_CREATED, SYSTEM\_DELETED
+
+-   *Object Type*: Job, System
+
+-   *ObjectAttribute.performed-by-user*: P123456
+
+
+For more information about the security events that are logged by Identity Authentication, see [Auditing and Logging Information](../Security/auditing-and-logging-information-ac5537b.md).
 
 
 

@@ -50,9 +50,6 @@ The *Valid From* and *Valid To* fields are empty if no validity dates are set fo
 
 The attributes assigned from custom schema are visible at the bottom of the *User Details* tab under a section with the name of the custom schema.
 
-> ### Restriction:  
-> Attributes from the customs schema that are complex multivalued cannot be edited via the administration console.
-
 You can also update an attribute by calling the PATCH method of [Resource Management API](https://api.sap.com/api/IdDS_SCIM/path/patchUser) of SAP Cloud Identity Services.
 
 

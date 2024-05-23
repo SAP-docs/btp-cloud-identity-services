@@ -8,7 +8,7 @@ Use this procedure to start the single logout \(SLO\) process at the identity pr
 
 ## Context
 
-Single Logout \(SLO\) enables users to cleanly close all their sessions in a SAML landscape, even across domains. In the identity provider \(IdP\) initiated SLO, the user initiates a logout request at the identity provider.
+Single Logout \(SLO\) enables users to cleanly close all their sessions in an SSO landscape, even across domains. In the identity provider \(IdP\) initiated SLO, the user initiates a logout request at the identity provider.
 
 
 
