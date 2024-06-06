@@ -1,8 +1,8 @@
 <!-- loioc599c893403940a686007a49bf2c5edd -->
 
-# SCIM REST API Authentication Mechanisms
+# SCIM REST API \(Deprecated\) Authentication Mechanisms
 
-See how to configure the authentication mechanisms for the SCIM REST API methods of Identity Authentication.
+See how to configure the authentication mechanisms for the [SCIM REST API \(Deprecated\)](../Development/scim-rest-api-deprecated-2f21568.md) methods of Identity Authentication.
 
 To call the methods of this SCIM REST API you must have a system as administrator with an assigned *Manage Users* role. For more details about how to add a system as administrator and assign administrator roles, see [Add System as Administrator](add-administrators-bbbdbdd.md#loiocefb742a36754b18bbe5c3503ac6d87c), and [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
 

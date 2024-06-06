@@ -38,7 +38,7 @@ You can use an image with a maximum height of 36 pixels.
 The image file must have one of the following extensions: `.png`, `.gif`, `.jpeg`, or `svg`.
 
 > ### Caution:  
-> If the image is of format <svg\>, please make sure that the attribute `viewBox = "min-x min-y width height"` is present. For proper rendering the width and height values must be 100. For example, `viewBox="0 0 100 100"`
+> If the image is of format <svg\>, please make sure that the attribute `viewBox = "min-x min-y width height"` is present. For proper rendering the width and height values must not exceed 100. For example, `viewBox="0 0 100 100"`
 
 
 

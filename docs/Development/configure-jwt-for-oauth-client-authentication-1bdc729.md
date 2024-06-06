@@ -227,8 +227,6 @@ Configure the JSON Web Token \(JWT\) - the issuer and subject of tokens for JWT 
 
 [Configure Certificates for API Authentication](configure-certificates-for-api-authentication-47e9866.md "This document describes how developers configure the certificates used for authentication when the API methods and OpenID Connect scenarios of Identity Authentication are used.")
 
-[SCIM REST API Authentication Mechanisms](scim-rest-api-authentication-mechanisms-e3f31bd.md "See how to configure the authentication mechanisms for the SCIM REST API methods of Identity Authentication.")
-
 [JSON Web Token \(JWT\) Profile for OAuth 2.0 Client Authentication and Authorization Grants](https://www.rfc-editor.org/rfc/rfc7523)
 
 [Proof-of-Possession Key Semantics for JSON Web Tokens \(JWTs\)](https://www.rfc-editor.org/rfc/rfc7800.html)

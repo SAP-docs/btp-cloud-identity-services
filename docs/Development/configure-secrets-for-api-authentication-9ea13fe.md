@@ -129,5 +129,3 @@ Once your secret is generated you can see a table with your secrets and informat
 
 [Configure JWT for OAuth Client Authentication](configure-jwt-for-oauth-client-authentication-1bdc729.md "Configure the JSON Web Token (JWT) - the issuer and subject of tokens for JWT client authentication in token requests, or the URI for JSON web key retrieval for client authentication.")
 
-[SCIM REST API Authentication Mechanisms](scim-rest-api-authentication-mechanisms-e3f31bd.md "See how to configure the authentication mechanisms for the SCIM REST API methods of Identity Authentication.")
-

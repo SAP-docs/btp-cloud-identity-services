@@ -8,7 +8,10 @@ You can unlock a user SMS code when the user must log on to the application befo
 
 ## Context
 
-The user locks his or her SMS code after submitting five incorrect codes when trying to log on to an application that requires SMS two-factor authentication. The code is unlocked automatically after 60 minutes.
+The user locks his or her SMS code after requesting five codes when trying to log on to an application that requires SMS two-factor authentication. The code is unlocked automatically after 60 minutes.
+
+> ### Caution:  
+> If the user phone is not verified, the code will not be unlocked after 60 minutes. In this case you should unlock the code via the procedure below.
 
 > ### Note:  
 > When the user locks his or her SMS code, he or she will not be able to log on only to applications that require SMS codes. The applications that do not require SMS two-factor authentication will be accessible only with the user password.

@@ -14,7 +14,7 @@ For the configuration, you have to provide the base64-encoded certificate as a f
 
 By default all scope options are selected and the *Scope* field is disabled. Your certificates are used for all scopes.
 
-Identity Authentication supports SAP Passport CA G2 as trusted certificate authority \(CA\). You can download your Root CA Certificate certificate from [SAP Trust Center Services](https://support.sap.com/en/offerings-programs/support-services/trust-center-services.html?anchorId=section_1559602068).
+Identity Authentication supports the following as trusted certificate authorities \(CA\): SAP Passport CA G2, SAP SSO CA G2, SAP Cloud Root CA, SAP Global Root CA, DigiCert TLS RSA SHA256 2020 CA1, DigiCert Global Root CA, SAP Cloud Platform Client CA, SAP Cloud Platform Client CA, SAP Cloud Platform Client CA, SAP Cloud Platform Client CA, ConnectivityCA.
 
 
 
@@ -134,8 +134,6 @@ Once your certificate is added you can see a table with all your certificates an
 [Disable Client ID Locking](disable-client-id-locking-aa38152.md "You can disable the automatic lock of the client ID after five failed logon attempts.")
 
 [Configure JWT for OAuth Client Authentication](configure-jwt-for-oauth-client-authentication-1bdc729.md "Configure the JSON Web Token (JWT) - the issuer and subject of tokens for JWT client authentication in token requests, or the URI for JSON web key retrieval for client authentication.")
-
-[SCIM REST API Authentication Mechanisms](scim-rest-api-authentication-mechanisms-e3f31bd.md "See how to configure the authentication mechanisms for the SCIM REST API methods of Identity Authentication.")
 
 [Create a New Application](../Operation-Guide/create-a-new-application-0d4b255.md "You can create a new application and customize it to comply with your company requirements.")
 

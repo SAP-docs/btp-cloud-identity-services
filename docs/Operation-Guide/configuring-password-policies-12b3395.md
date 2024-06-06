@@ -64,10 +64,10 @@ Content of password
 -   Minimum length of 8 characters;
 -   Maximum length of 255 characters;
 -   Characters from at least three of the following groups:
-    -   Lower-case Latin characters \(a-z\);
-    -   Upper-case Latin characters \(A-Z\);
-    -   Base 10 digits \(0-9\);
-    -   Non-alphabetic characters \(!@\#$%...\);
+    -   Lower-case Latin characters \(a-z\)
+    -   Upper-case Latin characters \(A-Z\)
+    -   Base 10 digits \(0-9\)
+    -   Non-alphabetic characters
 
 
 
@@ -78,10 +78,10 @@ Content of password
 -   Minimum length of 8 characters;
 -   Maximum length of 255 characters;
 -   Characters from at least three of the following groups:
-    -   Lower-case Latin characters \(a-z\);
+    -   Lower-case Latin characters \(a-z\)
     -   Upper-case Latin characters \(A-Z\);
-    -   Base 10 digits \(0-9\);
-    -   Non-alphabetic characters \(!@\#$%...\);
+    -   Base 10 digits \(0-9\)
+    -   Non-alphabetic characters
 
 
 
@@ -96,7 +96,7 @@ Content of password
     -   Lower-case Latin characters \(a-z\);
     -   Upper-case Latin characters \(A-Z\);
     -   Base 10 digits \(0-9\);
-    -   Non-alphabetic characters \(!@\#$%...\);
+    -   Non-alphabetic characters
 
     > ### Note:  
     > The default is at least three of the groups.
@@ -373,7 +373,7 @@ Not Applicable
 
 Scenario Based
 
--   *Reset password* - If a user has't used the password during the set user inactivity period, the system will force a password reset at the first logon after the inactivity period expires.
+-   *Reset password* - If a user hasn’t used the password during the set user inactivity period, the system will force a password reset at the first logon after the inactivity period expires.
 -   *Change password* - If a user hasn't changed the password within the password lifetime, the system will force a password change at the first logon after the maximum password age period expires.
 
 
@@ -391,6 +391,9 @@ Yes, administrator can choose from:
 </td>
 </tr>
 </table>
+
+> ### Note:  
+> The non-alphabetic characters are all characters that are not lower-case Latin characters \(a-z\), upper-case Latin characters \(A-Z\), or base 10 digits \(0-9\).
 
 As a tenant administrator, you can do the following:
 

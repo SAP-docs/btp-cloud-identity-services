@@ -219,6 +219,8 @@ You can search, view, refresh and configure a retention period of real-time prov
     <td valign="top">
     
     Additional information about the failed entity.
+
+    If the target system is SAP BTP XS Advanced UAA \(Cloud Foundry\), the *Additional Information* column shows the origin of the users that have been created, updated or deleted.
     
     </td>
     </tr>

@@ -179,6 +179,11 @@ To view the audit logs, follow the procedures below:
     <td valign="top">
     
     Optional. If you provide it, a link to the *Audit Log Viewer* is added in the *Audit Service Configuration*, and you can access the audit logs directly from the administration console.
+
+    > ### Note:  
+    > The subaccount region must map your Identity Authentication region. Otherwise you'll get an error when you try to access the audit logs directly from the administration console.
+
+
     
     </td>
     </tr>

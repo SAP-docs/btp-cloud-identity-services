@@ -152,5 +152,7 @@ Identity Provisioning provides graphical andJSON text editor for managing provis
 
 [Users](users-70e95d1.md "Users in SAP Cloud Identity Services fall into two categories: administrators and end users.")
 
+[Groups](groups-d93be69.md "SAP Cloud Identity Services offers groups to organize users based on common characteristics, authorization, or application. Use them to efficiently manage user access and permissions within your organization's SAP Cloud Identity Services environment.")
+
 [Cookies](cookies-e60fd04.md "")
 

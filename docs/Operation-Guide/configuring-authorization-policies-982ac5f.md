@@ -16,11 +16,13 @@ For more information, see [Subscribe to Multitenant Applications Using the Cockp
 
 -   Your application supports authorization policies. Refer to the documentation of your application.
 
--   Your user has administrative permissions in Identity Authentication with the the following authorizations:
+-   Your user has administrative permissions in Identity Authentication with the following authorizations:
 
     -   *Manage Applications*
 
     -   *Manage Groups*
+
+    -   *Read Users*
 
 
     For more information, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).

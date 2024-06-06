@@ -485,7 +485,7 @@ To edit the application configurations, proceed as follows:
     <td valign="top">
     
     > ### Remember:  
-    > The field is visible only to users assigned to application authorization policies, and with removed Manage Applications and Manage Users roles. For more information about the application authorization policies, see [Configure Application Authorizations](configure-application-authorizations-01cff18.md).
+    > The field is visible to users assigned to application authorization policies, or with Manage Applications role. For more information about the application authorization policies, see [Configure Application Authorizations](configure-application-authorizations-01cff18.md).
 
     This field allows you to group the applications under a specific organization and on the basis of the *Organization ID* to restrict the access to these applications.
 

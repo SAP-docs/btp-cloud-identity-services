@@ -151,7 +151,7 @@ string
 </td>
 <td valign="top">
 
-Path
+Request body
 
 </td>
 </tr>
@@ -178,7 +178,7 @@ The user ID configured for basic authentication for the application. For more in
 </td>
 <td valign="top">
 
-Path
+Request body
 
 </td>
 </tr>
@@ -205,7 +205,7 @@ The client secret configured for basic authentication for the application. For m
 </td>
 <td valign="top">
 
-Path
+Request body
 
 </td>
 </tr>
@@ -251,7 +251,7 @@ string
 </td>
 <td valign="top">
 
-Path
+Request body
 
 </td>
 </tr>
@@ -278,7 +278,7 @@ Reduces the expiration of a refresh token. It's useful if your application is ca
 </td>
 <td valign="top">
 
-Path
+Request body
 
 </td>
 </tr>
@@ -332,7 +332,48 @@ Reserved.
 </td>
 <td valign="top">
 
-Path
+Request body
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`scope`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Value must be space deliminated parameter, for example: `scope=openid email`.
+
+The supported values are:
+
+-   `openid`
+-   `email`
+-   `profile`
+-   `groups`
+-   `offline_access`
+
+    > ### Note:  
+    > The new tokens are independently created from the Identity Authentication Web session. This means that even if a user logs out from Identity Authentication the `refresh_token` will exist in the database until it expires, and can be used to perform the refresh token flow if the user is not present in Identity Authentication with a Web session.
+
+
+
+
+</td>
+<td valign="top">
+
+Request body
 
 </td>
 </tr>

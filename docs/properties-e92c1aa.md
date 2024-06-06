@@ -59,6 +59,8 @@ Property names have specific prefixes, which indicate the provisioning system th
 
 [Users](users-70e95d1.md "Users in SAP Cloud Identity Services fall into two categories: administrators and end users.")
 
+[Groups](groups-d93be69.md "SAP Cloud Identity Services offers groups to organize users based on common characteristics, authorization, or application. Use them to efficiently manage user access and permissions within your organization's SAP Cloud Identity Services environment.")
+
 [Cookies](cookies-e60fd04.md "")
 
 [List of Properties](list-of-properties-d6f3577.md "On this page you can find all the available properties to use in the Identity Provisioning service. You can filter them by system type name, &quot;All Systems&quot;, by a word or only part of it.")

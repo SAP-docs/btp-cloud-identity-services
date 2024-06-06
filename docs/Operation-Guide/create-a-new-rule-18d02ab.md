@@ -60,12 +60,15 @@ Each rule contains the following information:
         > 
         > -   *Email OTP Code*
         > 
-        >     > ### Caution:  
-        >     > For security reasons, the Email OTP code is not a recommended two-factor authentication method. You may consider using some of the other methods instead.
-        > 
         >     Identity Authentication asks two factors to authenticate the user.
         > 
         >     If you set *Email OTP Code*, users are required to provide the code sent to their email in addition to their primary credentials.
+        > 
+        >     > ### Caution:  
+        >     > For security reasons, the Email OTP code is not a recommended two-factor authentication method. You may consider using some of the other methods instead.
+        > 
+        >     > ### Note:  
+        >     > In the scenario, when self-registration is enabled and email verification is disabled for the application, if you set only *Email OTP Code* in the rule, users that have registered themselves in the application are required to provide an email OTP code when they activate their account. They provide the received code in the respective field and choose *Continue*. If the submitted code is correct, the user is allowed access, and the email is verified.
         > 
         >     > ### Remember:  
         >     > An Email OTP Code template for the respective languages must exist in the tenant to apply the email OTP code method. If the template does not exist, the user will see the option but when choosing it, the following message will appear: "Sorry, but you are currently not authorized for access".

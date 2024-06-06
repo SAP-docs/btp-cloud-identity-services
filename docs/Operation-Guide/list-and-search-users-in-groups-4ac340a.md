@@ -38,7 +38,7 @@ As a tenant administrator, you can list and view information about the users in 
     This will open the groups details \(*Group ID*, *Name*, *Display Name*, *Description*, *Type*, and *Application Name*\) on the right. The users that are part of the group are listed below the user group details.
 
     > ### Restriction:  
-    > The group must be application specific and you must be assigned to a policy that allows reading applications to view the *Application Name*. For more information, see  <?sap-ot O2O class="- topic/xref " href="d93be69816ac4d0c9b972895f2b6a46f.xml" text="" desc="" xtrc="xref:1" xtrf="file:/home/builder/src/dita-all/wbz1500991557538/loio629f7cb06f6947988dcaf8bedbe45873_en-US/src/content/localization/en-us/4ac340a1c5754b199cc681b66300630e.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+    > The group must be application specific and you must be assigned to a policy that allows reading applications to view the *Application Name*. For more information, see [Groups](../groups-d93be69.md).
 
 5.  To search for a specific user, type the *SCIM ID*, *Email*, *Login Name* of the user in the search field and press the *Enter* key.
 

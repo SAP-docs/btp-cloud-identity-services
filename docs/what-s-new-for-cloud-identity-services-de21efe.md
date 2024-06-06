@@ -135,12 +135,223 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2024-05-22
+2024-06-05
 
 </td>
 <td valign="top">
 
-2024-05-22
+2024-06-05
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User update capability for SAP Build Work Zone, standard edition 
+
+</td>
+<td valign="top">
+
+Identity Provisioning now supports update operation for existing users in SAP Build Work Zone, standard edition target and proxy systems. Up to now users could only be created and deleted in the SAP Build Work Zone, standard edition systems.
+
+For more information, see:
+
+-   [SAP Build Work Zone, standard edition \(Target\)](sap-build-work-zone-standard-edition-8d6586f.md)
+
+-   [SAP Build Work Zone, standard edition \(Proxy\)](sap-build-work-zone-standard-edition-aec0350.md)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-06-05
+
+</td>
+<td valign="top">
+
+2024-06-05
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Market Communication for Utilities - bundle option documentation
+
+</td>
+<td valign="top">
+
+Documentation for SAP Market Communication for Utilities bundle option is now available.
+
+For more information, see: [SAP Market Communication for Utilities Bundle](sap-market-communication-for-utilities-bundle-79b84ff.md)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-06-05
+
+</td>
+<td valign="top">
+
+2024-06-05
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Real-time logs show the origin of the users
+
+</td>
+<td valign="top">
+
+Real-time logs have been improved. They now show the origin of the users that have been created, updated or deleted in the SAP BTP XS Advanced UAA \(Cloud Foundry\) target system.
+
+For more information, see: [Monitor Real-Time Logs](Monitoring-and-Reporting/monitor-real-time-logs-a8deb0d.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-06-05
+
+</td>
+<td valign="top">
+
+2024-06-05
 
 </td>
 </tr>
@@ -166,7 +377,7 @@ Application Specific Groups
 </td>
 <td valign="top">
 
-A new type of group, Application Specific, is available in the administration console for SAP Cloud Identity Services. See  <?sap-ot O2O class="- topic/xref " href="d93be69816ac4d0c9b972895f2b6a46f.xml" text="" desc="" xtrc="xref:5" xtrf="file:/home/builder/src/dita-all/wbz1500991557538/loio629f7cb06f6947988dcaf8bedbe45873_en-US/src/content/localization/en-us/de21efe39e1442618388784891497067.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+A new type of group, `Application Specific`, is available in the administration console for SAP Cloud Identity Services. See [Groups](groups-d93be69.md).
 
 </td>
 <td valign="top">
@@ -201,12 +412,12 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2024-05-22
+2024-06-05
 
 </td>
 <td valign="top">
 
-2024-05-22
+2024-06-05
 
 </td>
 </tr>
@@ -233,6 +444,140 @@ Managing Groups
 <td valign="top">
 
 You can use the *Application Name* field in the filter bar for advanced search. See [List and Edit Groups](Operation-Guide/list-and-edit-groups-5e8a55c.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-06-05
+
+</td>
+<td valign="top">
+
+2024-06-05
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Integration of SAML and OIDC Logout Flows
+
+</td>
+<td valign="top">
+
+The service adds support for OpenID Connect \(OIDC\) back-channel logout. OIDC back-channel logout is integrated with the existing support for OIDC front-channel logout and Security Assertion Markup Language \(SAML\) logout.
+
+For more information, see [Front-Channel Logout URI Rules](Operation-Guide/front-channel-logout-uri-rules-789c752.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-06-05
+
+</td>
+<td valign="top">
+
+2024-06-05
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
 
 </td>
 <td valign="top">
@@ -364,7 +709,7 @@ Manage Applications
 </td>
 <td valign="top">
 
-Administrators with Manage Applicatios role and users with assigned authorization policies for read applications can see all applications in the tenant regardless of their Organization ID. See [Edit Applications](Operation-Guide/edit-applications-69d8cad.md).
+Administrators with Manage Applications role and users with assigned authorization policies for read applications can see all applications in the tenant regardless of their Organization ID. See [Edit Applications](Operation-Guide/edit-applications-69d8cad.md).
 
 </td>
 <td valign="top">
@@ -498,7 +843,7 @@ Handling Third Party Cookies
 
 Storage Access API is now available for all SAP Cloud Identity Services tenants.
 
-Action: We recoomend you to test your application. For more information on Third Party Cookies Deprecation see [Handling Third Party Cookies Deprecation in Identity Authentication](https://community.sap.com/t5/technology-blogs-by-sap/handling-third-party-cookies-deprecation-in-identity-authentication/ba-p/13659277) and [Testing Your Solution For Breakage](https://community.sap.com/t5/technology-blogs-by-sap/handling-third-party-cookies-deprecation-in-identity-authentication/ba-p/13659277).
+Action: We recommend you to test your application. For more information on Third Party Cookies Deprecation. See [Handling Third Party Cookies Deprecation in Identity Authentication](https://community.sap.com/t5/technology-blogs-by-sap/handling-third-party-cookies-deprecation-in-identity-authentication/ba-p/13659277) and [Testing Your Solution For Breakage](https://community.sap.com/t5/technology-blogs-by-sap/handling-third-party-cookies-deprecation-in-identity-authentication/ba-p/13659277).
 
 </td>
 <td valign="top">

@@ -362,7 +362,7 @@ To add a system as a new tenant administrator, proceed as follows:
         > 
         > You must provide a Common Name \(CN\) and password to generate the certificate. The maximum length of the CN is 64 characters. Once the certificate is generated, it is saved as a *.p12* file. The system populates the *Insert as Text* field with it, and provides the certificate attributes in the Subject DN. The common name \(CN\) in the generated certificate is in the format `<common name>` \(`<admin user ID>`\), where common name is the CN provided by the administrator, and admin user ID is the administrator's user id.
         > 
-        > Identity Authentication supports SAP Passport CA G2 as trusted certificate authority \(CA\). You can download your Root CA Certificate certificate from [SAP Trust Center Services](https://support.sap.com/en/offerings-programs/support-services/trust-center-services.html?anchorId=section_1559602068).
+        > Identity Authentication supports the following as trusted certificate authorities \(CA\): SAP Passport CA G2, SAP SSO CA G2, SAP Cloud Root CA, SAP Global Root CA, DigiCert TLS RSA SHA256 2020 CA1, DigiCert Global Root CA, SAP Cloud Platform Client CA, SAP Cloud Platform Client CA, SAP Cloud Platform Client CA, SAP Cloud Platform Client CA, ConnectivityCA.
 
         > ### Note:  
         > For real-time provisioning scenarios, you need to upload the certificate generated from the source application that initiated the immediate sync. If Identity Authentication acts as the source application, simply upload the certificate generated in the *Authentication Mechanism* screen under *Users & Authorizations* \> *Real-Time Provisioning* \> *Add Target System*.

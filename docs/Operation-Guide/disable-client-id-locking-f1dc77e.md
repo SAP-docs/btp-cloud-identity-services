@@ -50,5 +50,5 @@ To disable the *Client ID Lock* option, follow the procedure below:
 
 [Configure JWT for OAuth Client Authentication](configure-jwt-for-oauth-client-authentication-db97a69.md "Configure the JSON Web Token (JWT) - the issuer and subject of tokens for JWT client authentication in token requests, or the URI for JSON web key retrieval for client authentication.")
 
-[SCIM REST API Authentication Mechanisms](scim-rest-api-authentication-mechanisms-c599c89.md "See how to configure the authentication mechanisms for the SCIM REST API methods of Identity Authentication.")
+[SCIM REST API \(Deprecated\) Authentication Mechanisms](scim-rest-api-deprecated-authentication-mechanisms-c599c89.md "See how to configure the authentication mechanisms for the SCIM REST API (Deprecated) methods of Identity Authentication.")
 

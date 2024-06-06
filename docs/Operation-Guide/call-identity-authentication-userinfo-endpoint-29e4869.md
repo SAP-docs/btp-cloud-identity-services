@@ -124,6 +124,23 @@ Returns information about the user.
 <tr>
 <td valign="top">
 
+400
+
+</td>
+<td valign="top">
+
+Bad request
+
+</td>
+<td valign="top">
+
+Returns an error with error description. For example, expired token.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 403
 
 </td>

@@ -94,5 +94,5 @@ For more information, see [Configure Integration Between Applications](../Operat
 **Related Information**  
 
 
-[Consuming APIs from Other Applications](consuming-apis-from-other-applications-29e204d.md "Applications sometimes need to propagate principals or have technical communication arrangements between them. To enable OpenID Connect (OIDC) applications to consume the APIs of other OIDC applications, the developer defines API permission groups for a provider application, which a consumer application can consume through a defined dependency.")
+[Consuming APIs from Other Applications](consuming-apis-from-other-applications-29e204d.md "Applications sometimes need to propagate principals or have technical communication arrangements between them. To enable OpenID Connect (OIDC) applications to consume the APIs of other applications, the developer defines API permission groups for a provider application, which a consumer application can consume through a defined dependency.")
 

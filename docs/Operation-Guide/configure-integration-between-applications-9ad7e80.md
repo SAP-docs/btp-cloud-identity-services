@@ -10,9 +10,11 @@ Define a dependency to the API of another application. With this configuration, 
 
 ## Prerequisites
 
--   You know the name of the API needed by the consumer application.
+-   You know the name of the provider application and API permission group needed by the consumer application.
 
-    The provider application must define this name automatically during deployment, in the documentation of the application, or from the developers directly for custom developments.
+    The provider application defines the name of the API permission group during deployment, in the documentation of the application, or from the developers directly for custom developments.
+
+    If the provider application offers all APIs, then you don't need to know the name of a specific API permission group.
 
     For more information, see [Provide APIs for Consumption by Other Applications](../Development/provide-apis-for-consumption-by-other-applications-9d2fe83.md).
 

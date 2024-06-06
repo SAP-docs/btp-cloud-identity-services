@@ -16,6 +16,9 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 
 ## Context
 
+> ### Caution:  
+> For security reasons, the PIN Code is not a recommended password recovery method. The users can follow the *Forgot Password* link on the sign in page to reset their password via email.
+
 You can configure the applications in the tenant to allow users to provide PIN code to reset their password instead of receiving an email with a reset password link.
 
 For this setup, you as a tenant administrator, configure the PIN code option in the *Tenant Settings* section in the administration console, and the users set their PIN code in the profile page.

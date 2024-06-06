@@ -324,6 +324,42 @@ Request body
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+`scope`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Value must be space deliminated parameter, for example: `scope=openid email`.
+
+The supported values are:
+
+-   `openid`
+-   `email`
+-   `profile`
+-   `groups`
+
+
+
+</td>
+<td valign="top">
+
+Request body
+
+</td>
+</tr>
 </table>
 
 

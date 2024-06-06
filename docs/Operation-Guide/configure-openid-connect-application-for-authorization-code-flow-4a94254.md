@@ -84,12 +84,24 @@ To configure an OpenID Connect trusted application in the administration console
     <tr>
     <td valign="top">
     
-    *Front-Channel Logout URIs \(optional\)*
+    *Front-Channel Logout URIs*
     
     </td>
     <td valign="top">
     
-    URIs which will be requested for logout. You can add up to 20 URIs.
+    \(Optional\) URIs which will be requested for logout. You can add up to 20 URIs.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Back-Channel Logout URI*
+    
+    </td>
+    <td valign="top">
+    
+    \(Optional\) URIs which will be requested for logout. You can add up to 20 URIs.
     
     </td>
     </tr>

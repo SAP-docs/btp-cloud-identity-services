@@ -505,6 +505,8 @@ If the locale is set, the emails use the language set there, if there is a templ
 
 [Users](users-70e95d1.md "Users in SAP Cloud Identity Services fall into two categories: administrators and end users.")
 
+[Groups](groups-d93be69.md "SAP Cloud Identity Services offers groups to organize users based on common characteristics, authorization, or application. Use them to efficiently manage user access and permissions within your organization's SAP Cloud Identity Services environment.")
+
 [Configure the Remember Me Option](Operation-Guide/configure-the-remember-me-option-08d41f4.md "Tenant administrators can configure the Remember me option as visible or hidden, and checked or unchecked.")
 
 [Use the Remember Me Option](User-Guide/use-the-remember-me-option-bc7c6c6.md "With the Remember me functionality enabled, you can log on to an application without the need to provide your credentials every time you access it.")
