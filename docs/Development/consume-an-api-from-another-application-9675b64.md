@@ -35,8 +35,8 @@ For more information, see [Configure Integration Between Applications](../Operat
        -H 'Accept: application/json' \
        -d "client_id=3ab1ba0e-c573-4ad5-20a4-28aa4e587a19" \
        -d "client_secret=$secret" \
-       -data-urlencode 'grant_type=client_credentials' \
-       -data-urlencode 'resource=urn:sap:identity:application:provider:name:techDependency'
+       --data-urlencode 'grant_type=client_credentials' \
+       --data-urlencode 'resource=urn:sap:identity:application:provider:name:techDependency'
     
     ```
 
