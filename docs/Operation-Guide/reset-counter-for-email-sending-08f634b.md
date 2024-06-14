@@ -45,6 +45,12 @@ The counter for the number of emails that can be sent to the user is reset to ze
 **Related Information**  
 
 
+[Unlock User Password](unlock-user-password-9172552.md "You can unlock a user password when the user must log on to the application before the automatic unlock time of 60 minutes has passed, or if the Password Locked Period in the password policy is set at unlimited.")
+
+[Send Reset Password Email](send-reset-password-email-da55abf.md "You can trigger the sending of an email to the user with reset password information.")
+
+[Set Initial Password](set-initial-password-16149d5.md "You can set initial password for a user that has already activated his or her account.")
+
 [Send Reset Password Email](send-reset-password-email-da55abf.md "You can trigger the sending of an email to the user with reset password information.")
 
 [Enable Email Verification](enable-email-verification-483d26c.md "Tenant administrators can configure applications to require verification of the user's email address.")

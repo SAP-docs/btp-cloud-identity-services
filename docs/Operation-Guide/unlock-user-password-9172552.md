@@ -59,3 +59,9 @@ The password is unlocked. The user can now access his or her account after provi
 
 [Send Reset Password Email](send-reset-password-email-da55abf.md "You can trigger the sending of an email to the user with reset password information.")
 
+[Reset Counter for Email Sending](reset-counter-for-email-sending-08f634b.md "You can reset the counter for the number of emails that can be sent to the user.")
+
+[Set Initial Password](set-initial-password-16149d5.md "You can set initial password for a user that has already activated his or her account.")
+
+[Send Reset Password Email](send-reset-password-email-da55abf.md "You can trigger the sending of an email to the user with reset password information.")
+

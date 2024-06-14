@@ -9330,7 +9330,9 @@ SAP Build Work Zone, standard edition supports the following unique attributes w
 -   If the user doesn't have an `externalId`, the conflict is resolved by `email` and `providerId`.
 
 
-For the conflict to be resolved, an existing user matching both unique attributes should be found. If an existing user doesn't match both unique attributes or matches only one of them, the user creation fails.
+For the conflict to be resolved, an existing user matching both unique attributes should be found.
+
+Whether the existing user will be updated or a new one will be created by Identity Provisioning depends on the following conditions - was the user created by the Identity Provisioning service, what combination of unique attributes exist for the user, and has any of the provisioning systems \(source or target\) been reset. For more information, see Step 4 of the relevant SAP Build Work Zone, standard edition documentation.
 
 > ### Recommendation:  
 > We recommend that you do not modify the value of the `cflp.user.unique.attribute` property. Otherwise, user creation fails.

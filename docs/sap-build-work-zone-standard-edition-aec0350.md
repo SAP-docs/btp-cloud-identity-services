@@ -22,11 +22,9 @@ Follow this procedure to set up SAP Build Work Zone, standard edition as a proxy
 
 ## Context
 
-The SAP Build Work Zone, standard edition simplifies access to SAP, custom-built, and third party applications and extensions \(both on the cloud and on premise\) by establishing a central launchpad.
+The SAP Build Work Zone, standard edition
 
-You can use the Identity Provisioning UI to configure SAP Build Work Zone, standard edition as a proxy system and configure it in hybrid scenarios. For example, when SAP Build Work Zone, standard edition is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management and SAP Cloud Identity Access Governance, without making a direct connection between both systems. You can provision users, groups and users’ group assignments to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users, groups and users’ group assignments back to the SAP Build Work Zone, standard edition.
-
-This scenario supports provisioning of users and groups. In SAP Build Work Zone, standard edition, users can only be created and deleted. They cannot be updated as the update operation is skipped in the default proxy write transformation.
+You can use the Identity Provisioning UI to configure SAP Build Work Zone, standard edition simplifies access to SAP, custom-built, and third party applications and extensions \(both on the cloud and on premise\) by establishing a central launchpad. as a proxy system and configure it in hybrid scenarios. For example, when SAP Build Work Zone, standard edition is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management and SAP Cloud Identity Access Governance, without making a direct connection between both systems. You can provision users, groups and users’ group assignments to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users, groups and users’ group assignments back to the SAP Build Work Zone, standard edition.
 
 
 
@@ -85,7 +83,7 @@ This scenario supports provisioning of users and groups. In SAP Build Work Zone,
     -   [Access Identity Provisioning UI of Bundle Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/7ab5884ffbc44461a57622d2f633e57c.html "Access the Identity Provisioning UI when the service is bundled as part of an SAP cloud solution's license.") :arrow_upper_right:
     -   [Access Identity Provisioning UI of Standalone Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/61fd82ed48ab42b2bc74626926c1722c.html "Access the Identity Provisioning user interface as a standalone product.") :arrow_upper_right:
 
-5.  Add *SAP Build Work Zone, standard edition* as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
+5.  Add *SAP Build Work Zone, standard edition* simplifies access to SAP, as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
 6.  Choose the *Properties* tab to configure the connection settings for your system.
 
@@ -289,7 +287,9 @@ This scenario supports provisioning of users and groups. In SAP Build Work Zone,
     -   If the user doesn't have an `externalId`, the conflict is resolved by `email` and `providerId`.
 
 
-    For the conflict to be resolved, an existing user matching both unique attributes should be found. If an existing user doesn't match both unique attributes or matches only one of them, the user creation fails.
+    For the conflict to be resolved, an existing user matching both unique attributes should be found.
+
+    Whether the existing user will be updated or a new one will be created by Identity Provisioning depends on the following conditions - was the user created by the Identity Provisioning service, what combination of unique attributes exist for the user, and has any of the provisioning systems \(source or target\) been reset. For more information, see Step 4.
 
     > ### Recommendation:  
     > We recommend that you do not modify the value of the `cflp.user.unique.attribute` property. Otherwise, user creation fails.
@@ -333,6 +333,37 @@ This scenario supports provisioning of users and groups. In SAP Build Work Zone,
     Transformations are used to map user and group attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Build Work Zone, standard edition* proxy system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
     You can change the default transformation mapping rules to reflect your current setup of entities in your SAP Build Work Zone, standard edition system. For more information, see: [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md).
+
+    **User Update and Uniqueness**
+
+    The proxy write transformation of SAP Build Work Zone, standard edition supports three user unique attributes: *externalId*, *email* and *providerId*. Only the latter is mandatory. Based on the combinations of these attributes, there can be distinguished three types of users:
+
+    -   User 1 - with *email* and *providerId*, but no *externalId*
+
+    -   User 2 - with *externalId* and *providerId*, but no *email*
+
+    -   User 3 - with all three attributes: *externalId*, *email* and *providerId*
+
+
+    The uniqueness of the user is ensured by the combination of two unique attributes: the *providerId* and *externalId* or the *providerId* and the *email*.
+
+    Updating an existing user in the proxy system depends on how the user is identified there \(its combination of unique attributes\) and whether Identity Provisioning is aware of this user:
+
+    -   The existing user was created by a provisioning job \(that is, the service is aware of this user\).
+
+        If the following attributes are changed in the source system: the *email* of user 1, the *externalId* of user 2, or the *email* or *externalId* of user 3, after running a new job, Identity Provisioning will update the existing user.
+
+    -   The existing user was not created by a provisioning job or was created by one but afterwards the source and the proxy systems have been reset \(that is, the service is not aware of this user\).
+
+        If the following attributes are changed in the source system, expect the subsequent results after running a new job:
+
+        -   Changing the *email* of user 1 will result in creating a new user in the proxy system, because the user won’t match the combination of two unique attributes: *email* and *providerId*.
+
+        -   Changing the *externalId* of user 2 will result in creating a new user in the proxy system, because the user won’t match the combination of two unique attributes: *externalId* and *providerId*.
+
+        -   Changing the *email* or the *externalId* of user 3 will result in updating the user in the proxy system, because the user will still match a combination of two unique attributes. However, changing both, the *email* and the *externalId*, of user 3 will result in creating a new user in the proxy system, because the user will match only one unique attribute - the *providerId*.
+
+
 
     Default read and write transformations:
 
@@ -467,9 +498,6 @@ This scenario supports provisioning of users and groups. In SAP Build Work Zone,
     > ```
     > {
     >     "user": {
-    >         "skipOperations": [
-    >             "update"
-    >         ],
     >         "mappings": [
     >             {
     >                 "sourceVariable": "entityIdTargetSystem",

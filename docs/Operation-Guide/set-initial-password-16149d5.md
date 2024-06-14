@@ -56,3 +56,12 @@ To set an initial password, proceed as follows:
 
 The user logs on to the application with the new password set by the tenant administrator. He or she is prompted to change the password with a new one. After changing the password, the user is able to log on to the application.
 
+**Related Information**  
+
+
+[Unlock User Password](unlock-user-password-9172552.md "You can unlock a user password when the user must log on to the application before the automatic unlock time of 60 minutes has passed, or if the Password Locked Period in the password policy is set at unlimited.")
+
+[Send Reset Password Email](send-reset-password-email-da55abf.md "You can trigger the sending of an email to the user with reset password information.")
+
+[Reset Counter for Email Sending](reset-counter-for-email-sending-08f634b.md "You can reset the counter for the number of emails that can be sent to the user.")
+
