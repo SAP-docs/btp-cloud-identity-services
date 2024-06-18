@@ -10,6 +10,8 @@ Follow this procedure to set up SAP S/4HANA Cloud as a source system.
 
 ## Prerequisites
 
+To configure Identity Provisioning in the administration console of SAP Cloud Identity Services, your administrator user needs to be authorized to "Manage Identity Provisioning". For more information, see [Edit Administrator Authorizations](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/edit-administrator-authorizations?version=Cloud).
+
 To establish the connection between Identity Provisioning and SAP S/4HANA Cloud, you need to set up the communication \(user, system and arrangement\) on SAP S/4HANA Cloud. You have the option to do it either now, as a prerequisite, or while configuring SAP S/4HANA Cloud as a source system, as described in step 3.
 
 
