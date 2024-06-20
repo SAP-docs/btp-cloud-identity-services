@@ -95,6 +95,294 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-06-20
+
+</td>
+<td valign="top">
+
+2024-06-20
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Audit Log Service in SAP BTP, Neo 
+
+</td>
+<td valign="top">
+
+The access of the audit logs for Identity Authentication tenants on the SAP infrastructure in the Audit Log Service in SAP BTP, Neo will be deprecated according to the following timeline:
+
+-   China - Jul 24, 2024
+-   Saudi Arabia - Jul 31, 2024
+-   Japan - Sep 11, 2024
+-   Australia - Oct 2, 2024
+-   US-East - Oct 9, 2024
+-   Europe - Oct 23, 2024
+
+See [Access Audit Logs \(Audit Log Service in SAP BTP, Neo\)](Monitoring-and-Reporting/access-audit-logs-audit-log-service-in-sap-btp-neo-9f6b9a4.md).
+
+Action:
+
+We recommend you to use the Audit Log Service in SAP BTP, Cloud Foundry to access the Identity Authentication tenants on both the SAP, and the AWS and Azure infrastructures. See [Access Audit Logs \(Audit Log Service in SAP BTP, Cloud Foundry\)](Monitoring-and-Reporting/access-audit-logs-audit-log-service-in-sap-btp-cloud-foundry-a3e793c.md).
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+Deprecated
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-06-20
+
+</td>
+<td valign="top">
+
+2024-06-20
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Custom Schemas
+
+</td>
+<td valign="top">
+
+The value of custom schemas attributes of type `decimal` is limited to 16 digits, between -9007199254740991 and 9007199254740991 when the Identity Directory API POST/PUT/PATCH request is sent for users.
+
+See [Identity |Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-06-20
+
+</td>
+<td valign="top">
+
+2024-06-20
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Ariba Category Management connector
+
+</td>
+<td valign="top">
+
+Identity Provisioning supports the SAP Ariba Category Management connector. You can configure it as source, target, and proxy system for your provisioning scenarios. For more information, see:
+
+-   [SAP Ariba Category Management \(Source\)](sap-ariba-category-management-e6a0606.md)
+
+-   [SAP Ariba Category Management \(Target\)](sap-ariba-category-management-e4c55e4.md)
+
+-   [SAP Ariba Category Management \(Proxy\)](sap-ariba-category-management-fb97244.md)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-06-20
+
+</td>
+<td valign="top">
+
+2024-06-20
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Off-Cycle Upgrade
 
 </td>
@@ -166,7 +454,7 @@ User Management
 </td>
 <td valign="top">
 
-In `urn:ietf:params:scim:schemas:extension:sap:2.0:User` schema, the `mailVerfied` attribute is not configurable anymore.
+In `urn:ietf:params:scim:schemas:extension:sap:2.0:User` schema, the `mailVerfied` attribute isn't configurable anymore.
 
 Action: We recommend you to use the `emails.verfied` parameter. See [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users).
 
@@ -443,7 +731,7 @@ Real-time logs show the origin of the users
 </td>
 <td valign="top">
 
-Real-time logs have been improved. They now show the origin of the users that have been created, updated or deleted in the SAP BTP XS Advanced UAA \(Cloud Foundry\) target system.
+Real-time logs have been improved. They now show the origin of the users that have been created, updated, or deleted in the SAP BTP XS Advanced UAA \(Cloud Foundry\) target system.
 
 For more information, see: [Monitor Real-Time Logs](Monitoring-and-Reporting/monitor-real-time-logs-a8deb0d.md).
 
@@ -506,7 +794,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-Application Specific Groups
+Application-Specific Groups
 
 </td>
 <td valign="top">
@@ -645,7 +933,7 @@ Integration of SAML and OIDC Logout Flows
 
 The service adds support for OpenID Connect \(OIDC\) back-channel logout. OIDC back-channel logout is integrated with the existing support for OIDC front-channel logout and Security Assertion Markup Language \(SAML\) logout.
 
-For more information, see [Front-Channel Logout URI Rules](Operation-Guide/front-channel-logout-uri-rules-789c752.md).
+For more information, see [Logout URI Rules](Operation-Guide/logout-uri-rules-789c752.md).
 
 </td>
 <td valign="top">
@@ -970,14 +1258,14 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-Handling Third Party Cookies
+Handling Third-Party Cookies
 
 </td>
 <td valign="top">
 
 Storage Access API is now available for all SAP Cloud Identity Services tenants.
 
-Action: We recommend you to test your application. For more information on Third Party Cookies Deprecation. See [Handling Third Party Cookies Deprecation in Identity Authentication](https://community.sap.com/t5/technology-blogs-by-sap/handling-third-party-cookies-deprecation-in-identity-authentication/ba-p/13659277) and [Testing Your Solution For Breakage](https://community.sap.com/t5/technology-blogs-by-sap/handling-third-party-cookies-deprecation-in-identity-authentication/ba-p/13659277).
+Action: We recommend you to test your application. For more information on Third-Party Cookies Deprecation. See [Handling Third Party Cookies Deprecation in Identity Authentication](https://community.sap.com/t5/technology-blogs-by-sap/handling-third-party-cookies-deprecation-in-identity-authentication/ba-p/13659277) and [Testing Your Solution For Breakage](https://community.sap.com/t5/technology-blogs-by-sap/handling-third-party-cookies-deprecation-in-identity-authentication/ba-p/13659277).
 
 </td>
 <td valign="top">
@@ -1113,7 +1401,7 @@ SAP SuccessFactors Employee Central Payroll connector
 </td>
 <td valign="top">
 
-Identity Provisioning supports the SAP SuccessFactors Employee Central Payroll connector. You can configure it as source, target and proxy system for your provisioning scenarios. For more information, see:
+Identity Provisioning supports the SAP SuccessFactors Employee Central Payroll connector. You can configure it as source, target, and proxy system for your provisioning scenarios. For more information, see:
 
 -   [SAP SuccessFactors Employee Central Payroll \(Source\)](sap-successfactors-employee-central-payroll-94d8979.md)
 
@@ -1388,7 +1676,7 @@ Conditional Authentication
 </td>
 <td valign="top">
 
-You can use asterisk \(\*\) in the top level domain part when you add rules for authentication against different identity providers. See [Add a New Authentication Rule](Operation-Guide/add-a-new-authentication-rule-ad7f993.md).
+You can use asterisk \(\*\) in the top-level domain part when you add rules for authentication against different identity providers. See [Add a New Authentication Rule](Operation-Guide/add-a-new-authentication-rule-ad7f993.md).
 
 </td>
 <td valign="top">
@@ -1784,7 +2072,7 @@ Notifications
 </td>
 <td valign="top">
 
-You can sort the notifications that are visible at the top-right corner of the administration console by type, priority and date.
+You can sort the notifications that are visible at the top-right corner of the administration console by type, priority, and date.
 
 </td>
 <td valign="top">

@@ -320,7 +320,7 @@ You can use the Identity Provisioning UI to configure SAP Build Work Zone, stand
 
     **User Update and Uniqueness**
 
-    The write transformation of SAP Build Work Zone, standard edition supports three user unique attributes: *externalId*, *email* and *providerId*. Only the latter is mandatory. Based on the combinations of these attributes, there can be distinguished three types of users:
+    The write transformation of SAP Build Work Zone, standard edition supports three user unique attributes: *externalId*, *email* and *providerId*. Only providerId is mandatory in combination with at least one of the other attributes. Based on the combinations of these attributes, there can be distinguished three types of users:
 
     -   User 1 - with *email* and *providerId*, but no *externalId*
 

@@ -111,7 +111,7 @@ After the domain you can put port number. Always use a leading colon \(`:`\).
 **Related Information**  
 
 
-[Front-Channel Logout URI Rules](front-channel-logout-uri-rules-789c752.md "Rules for the front-channel URIs.")
+[Logout URI Rules](logout-uri-rules-789c752.md "Rules for the front and back-channel URIs.")
 
 [Token Policy Configuration for Applications](token-policy-configuration-for-applications-c4ba52e.md "Set the token policy for a specific OpenID Connect application. Configure the validity of the refresh token, access and id_token, and the maximum sessions per user.")
 

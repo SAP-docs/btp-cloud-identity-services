@@ -826,7 +826,7 @@ Integration of SAML and OIDC Logout Flows
 
 The service supports OpenID Connect \(OIDC\) front-channel logout, which is used to logout from OIDC applications. The logout is integrated with the Security Assertion Markup Language \(SAML\) logout endpoint so that both logout endpoints behave the same way; terminating all SAML, OIDC, Identity Authentication, and corporate identity provider sessions.
 
-For more information, see [Front-Channel Logout URI Rules](Operation-Guide/front-channel-logout-uri-rules-789c752.md).
+For more information, see [Logout URI Rules](Operation-Guide/logout-uri-rules-789c752.md).
 
 </td>
 <td valign="top">

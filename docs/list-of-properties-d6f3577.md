@@ -12831,19 +12831,24 @@ SAP Ariba Category Management
 </td>
 <td valign="top">
 
-When the Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists in SAP Ariba Category Management. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\). This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\).
+When the Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists in SAP Ariba Category Management. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attributes. This property defines by which unique attributes the existing user to be searched and resolved.
+
+SAP Ariba Category Management supports two user unique attributes for managing conflict resolution: *username* and *email*. The username is a mandatory attribute, while the email is an optional, multivalue attribute, indicating that a user may have multiple unique emails.
 
 According to your use case, choose how to set up this property:
 
 -   Default behavior: This property is missing during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such а *userName* is not found, the creation of the conflicting user fails.
--   Value = *emails.value*. If the service finds an existing user with such *emails.value*, it updates this user with the data of the conflicting one. If a user with such *emails.value* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
--   Value = *userName, emails.value*. If the service finds an existing user with both userName and email, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+-   Value = *emails\[\*\].value*. If the service finds an existing user with such emails \(at least one identical email is needed\), it updates this user with the data of the conflicting one. If a user with such emails is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+-   Value = *userName, emails\[\*\].value*. If the service finds an existing user with both userName and email, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+
+> ### Note:  
+> The uniqueness of a user in the target system is determined not only by the individual attributes or the combination of both, but also by considering whether one or multiple existing users in the target system share the same values for these unique attributes. For more information, see **User Update and Uniqueness** in [SAP Ariba Category Management](sap-ariba-category-management-e4c55e4.md).
 
 **Possible values:**
 
 -   *userName*
--   *emails.value*
--   *userName, emails.value*
+-   *emails\[\*\].value*
+-   *userName, emails\[\*\].value*
 
 Default value: *userName*
 

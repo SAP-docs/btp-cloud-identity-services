@@ -8,6 +8,9 @@ Follow this procedure to set up SAP Ariba Category Management as a target system
 
 ## Prerequisites
 
+> ### Note:  
+> Currently, SAP Ariba Category Management connector is only available for selected customers who are approached by SAP.
+
 > ### Restriction:  
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Identity Access Governance** bundle option.
 
@@ -156,9 +159,9 @@ SAP Ariba Category Management is a cloud-based solution that enables organizatio
     
     If Identity Provisioning tries to provision a user that already exists in the target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved. The property is not added automatically at system creation.
 
-    Default value: *userName*
+    Possible values: *userName* and *emails\[\*\].value*
 
-    If the service finds an existing user by userName, it updates this user with the data of the conflicting one. If the service does not find an existing user by userName, the creation of the conflicting user fails.
+    For more information, see: **User Update and Uniqueness** section below and [List of Properties](list-of-properties-d6f3577.md).
     
     </td>
     </tr>
@@ -192,6 +195,28 @@ SAP Ariba Category Management is a cloud-based solution that enables organizatio
 
     **Mapping logic** – The behavior of the default transformation logic is to map all attributes from the internal SCIM representation to the target SAP Ariba Category Management entity.
 
+    **User Update and Uniqueness**
+
+    The write transformation of SAP Ariba Category Management supports two user unique attributes for managing conflict resolution: *username* and *email*. The username is a mandatory attribute, while the email is an optional, multivalue attribute, indicating that a user may have multiple unique emails.
+
+    The uniqueness of a user in the target system is determined not only by the individual attributes or the combination of both, but also by considering whether one or multiple existing users in the target system share the same values for these unique attributes. Have in mind the following specifics when updating an existing user in the target system, in accordance with the configuration of the `cm.user.unique.attribute` property:
+
+    -   When `cm.user.unique.attribute`= *userName*
+
+        If a user in the source system, with a specific username and an email, matches an existing user in the target system by the same email, but a different userName, the user provisioning will fail. In this case, Identity Provisioning will try to create a new user but will fail, since a user with the same email already exists.
+
+    -   When `cm.user.unique.attribute`= *emails\[\*\].value*
+
+        If a user in the source system, with a specific username and an email, matches an existing user in the target system by the same username, but a different email, the user provisioning will fail. In this case, Identity Provisioning will try to create a new user but will fail, since a user with the same username already exists.
+
+    -   When `cm.user.unique.attribute`= *userName, emails\[\*\].value*
+
+        -   If a user in the source system, with a specific username and multiple emails, matches an existing user in the target system by the same username and at least one identical email, the user in the target system will be updated.
+
+        -   If a user in the source system, with a specific username and multiple emails, matches multiple existing users in the target system \(each sharing one of the multiple emails but having different usernames\), the user provisioning will fail. In this case, the user will neither be created nor updated.
+
+
+
     **Default transformation:** 
 
     > ### Code Syntax:  
@@ -218,13 +243,8 @@ SAP Ariba Category Management is a cloud-based solution that enables organizatio
     >                 "optional":true
     >             },
     >             {
-    >                 "sourcePath":"$.userUuid",
-    >                 "targetPath": "$.userUuid",
-    >                 "optional":true
-    >             },
-    >             {
     >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
-    >                 "targetPath": "$.userUuid",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
     >                 "optional": true
     >             },
     >             {
@@ -257,6 +277,7 @@ SAP Ariba Category Management is a cloud-based solution that enables organizatio
     >         ]
     >     }
     > }
+    > 
     > ```
 
 6.  Add a source system from which to read users. Choose from: [Source Systems](source-systems-58033be.md)

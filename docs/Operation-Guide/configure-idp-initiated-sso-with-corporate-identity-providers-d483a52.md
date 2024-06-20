@@ -203,9 +203,11 @@ The following configuration is made by the tenant administrator of Identity Auth
 
     For this procedure, you will need the metadata from the service provider. If you do not have this, contact the administrator of the application.
 
-    The service provider metadata that is used to configure the trust must contain the default assertion consumer service \(ACS\) endpoint that can process unsolicited SAML responses. With SAP BTP, the endpoint is the URL of the application's protected page.
+    The service provider metadata that is used to configure the trust must contain the default assertion consumer service \(ACS\) endpoint that can process unsolicited SAML responses.
 
     > ### Remember:  
+    > With SAP BTP, the endpoint is the URL of the application's protected page.
+    > 
     > If your scenario includes the enabling of the *Trust All Corporate Identity Providers* option in the administration console, the service provider metadata that is used to configure the trust must contain also the assertion consumer \(ACS\) endpoint with the URL of the application's protected page and the index.
     > 
     > > ### Sample Code:  

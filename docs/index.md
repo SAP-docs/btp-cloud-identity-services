@@ -546,7 +546,7 @@
             -   [Call Identity Authentication Introspect Token Endpoint](Operation-Guide/call-identity-authentication-introspect-token-endpoint-a05f14c.md)
             -   [OpenID Connect Application Configurations](Operation-Guide/openid-connect-application-configurations-1ae324e.md)
                 -   [Redirect URIs, Post Logout Redirect URI Rules](Operation-Guide/redirect-uris-post-logout-redirect-uri-rules-48fdb9a.md)
-                -   [Front-Channel Logout URI Rules](Operation-Guide/front-channel-logout-uri-rules-789c752.md)
+                -   [Logout URI Rules](Operation-Guide/logout-uri-rules-789c752.md)
                 -   [Token Policy Configuration for Applications](Operation-Guide/token-policy-configuration-for-applications-c4ba52e.md)
                 -   [Configure Grant Types](Operation-Guide/configure-grant-types-c342a7b.md)
         -   [Troubleshooting for Administrators](Operation-Guide/troubleshooting-for-administrators-f80beb5.md)
