@@ -19,16 +19,18 @@ Applications can be configured to require users to have their email addresses ve
 
 1.  Sign in to the administration console for SAP Cloud Identity Services.
 
-2.  Choose the application that you want to edit.
+2.  Under *Applications and Resources*, choose the *Applications* tile.
+
+3.  Choose the application that you want to edit.
 
     > ### Note:  
     > Type the name of the application in the search field to filter the list items, or choose the application from the list on the left.
     > 
     > If you don’t have a created application in your list, you can create one. For more information, see [Create a New Application](create-a-new-application-0d4b255.md).
 
-3.  Choose the *Authentication and Access* tab.
+4.  Choose the *Authentication and Access* tab.
 
-4.  Under *AUTHENTICATION*, enable *Email Verification*.
+5.  Under *AUTHENTICATION*, enable *Email Verification*.
 
     Once the application has been updated, the system displays the message ***Application <name of application\> updated***.
 

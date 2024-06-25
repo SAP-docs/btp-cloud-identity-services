@@ -1,6 +1,6 @@
 <!-- loiofe6e30cf1431438a94425e934d0d9e2b -->
 
-# Configure Customer-Controlled Encryption Keys in Administration Console \(Restricted Availability\)
+# Configure Customer Managed Keys in Administration Console \(Restricted Availability\)
 
 
 
@@ -9,15 +9,15 @@
 ## Prerequisites
 
 -   You have an SAP Data Custodian tenant. For more information, see [SAP Data Custodian Help Guide](https://help.sap.com/docs/sap-data-custodian/help-guide/overview?version=latest) .
--   You have read and accept all Customer-Controlled Encryption Keys \(CCEK\) limitations. For more information, see *Limitations* section in [Customer-Controlled Encryption Keys \(Restricted Availability\)](../Security/customer-controlled-encryption-keys-restricted-availability-177108a.md).
--   You have tested all your scenarios on a test tenant, before activating CCEK on a productive tenant. For more information, see [Tenants](../tenants-93160eb.md).
+-   You have read and accept all Customer Managed Keys \(CMK\) limitations. For more information, see *Limitations* section in [Customer Managed Keys \(Restricted Availability\)](../Security/customer-managed-keys-restricted-availability-177108a.md).
+-   You have tested all your scenarios on a test tenant, before activating CMK on a productive tenant. For more information, see [Tenants](../tenants-93160eb.md).
 
 
 
 ## Context
 
 > ### Tip:  
-> CCEK activation makes the tenant unavailable during the execution of the encryption procedure. Consider scheduling maintenance windows accordingly.
+> CMK activation makes the tenant unavailable during the execution of the encryption procedure. Consider scheduling maintenance windows accordingly.
 > 
 > ****
 > 
@@ -106,7 +106,7 @@
 > ### Note:  
 > If issues during the encryption procedure, report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`.
 
-To configure the customer-controlled encryption keys via the administration console for SAP Cloud Identity Services, follow the procedure:
+To configure the customer managed keys via the administration console for SAP Cloud Identity Services, follow the procedure:
 
 
 
@@ -118,7 +118,7 @@ To configure the customer-controlled encryption keys via the administration cons
 
     At the top of the page, you can view the administrative and license relevant information of the tenant.
 
-3.  Under *General*, choose the *CCEK Configuration* list item.
+3.  Under *General*, choose the *CMK Configuration* list item.
 
 4.  Fill in the required information:
 

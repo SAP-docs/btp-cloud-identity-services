@@ -17,7 +17,7 @@ The login hint parameter helps the user when he or she is known to the service p
 
 If the corporate IdP does not support the login hint parameter, it requires both the user identifier and password. You can configure the login hint parameter for corporate IdP via the administration console for SAP Cloud Identity Services.
 
-There are two aspects in the configuration of the login hint parameter: the value of the parameter, and how it is sent to the corporate IdP. The *How it is sent to the corporate IdP* configuration is only relevant for SAML 2.0 corporate identity ptoviders and depends on the *Value* configuration:
+There are two aspects in the configuration of the login hint parameter: the value of the parameter, and how it is sent to the corporate IdP. The *How it is sent to the corporate IdP* configuration is only relevant for SAML 2.0 corporate identity providers and depends on the *Value* configuration:
 
 **Configuration Options**
 

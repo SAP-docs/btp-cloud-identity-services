@@ -168,6 +168,9 @@ The supported attributes that can be defined in the policy are listed in the **S
 </tr>
 </table>
 
+> ### Restriction:  
+> The "NOT IN" operator can be used only with the `user.attributes` attribute. Do not use "NOT IN" in combination with other attributes.
+
 Expand the **Supported Attributes** section below to see the user attributes that can be configured in the authorization policy:
 
 
