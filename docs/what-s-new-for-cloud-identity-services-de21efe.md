@@ -95,6 +95,353 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-06-20
+
+</td>
+<td valign="top">
+
+2024-07-02
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Technology
+
+Not applicable
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regiomnal Availability
+
+</td>
+<td valign="top">
+
+Cloud Identity Services now operates with additional IPs in the data center in India. See [Regional Availability](regional-availability-be600ca.md).
+
+Action:
+
+We recommend you to add the following IPs to your allowed IP list::
+
+-   LB IP - 13.234.128.163, 43.204.242.5, 13.202.113.251
+-   NAT IP -
+
+
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-02
+
+</td>
+<td valign="top">
+
+2024-07-02
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Security recommendations for SAP Cloud Identity Services - Identity Provisioning 
+
+</td>
+<td valign="top">
+
+Security recommendations for SAP Cloud Identity Services - Identity Provisioning are now available to help you secure its configuration and operation in your landscape.
+
+For more information, see [Security Information](Security/security-information-6e88d82.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-02
+
+</td>
+<td valign="top">
+
+2024-07-02
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+`skipOperations create` is enhanced in SAP Analytics Cloud version 1 target systems
+
+</td>
+<td valign="top">
+
+The `skipOperations create` is enhanced and works properly for SAP Analytics Cloud version 1 target systems. When Identity Provisioning tries to provision a user that already exists in the target system, the service resolves the ID of the user and can now add it to the request body of the PUT update request.
+
+For more information, see [SAP Analytics Cloud](sap-analytics-cloud-ea6a89d.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-02
+
+</td>
+<td valign="top">
+
+2024-07-02
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Central Business Configuration bundle extended with SAP BTP XS Advanced UAA target system
+
+</td>
+<td valign="top">
+
+The scope of SAP Central Business Configuration bundle option is now extended and includes the SAP BTP XS Advanced UAA as a target system.
+
+For more information, see  <?sap-ot O2O class="- topic/xref " href="44e86733d23c4368aea9b1c3b7ca0570.xml" text="" desc="" xtrc="xref:8" xtrf="file:/home/builder/src/dita-all/wbz1500991557538/loio629f7cb06f6947988dcaf8bedbe45873_en-US/src/content/localization/en-us/de21efe39e1442618388784891497067.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-02
+
+</td>
+<td valign="top">
+
+2024-07-02
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Off-Cycle Upgrade
 
 </td>
@@ -1331,7 +1678,7 @@ Handling Third-Party Cookies
 
 Storage Access API is now available for all SAP Cloud Identity Services tenants.
 
-Action: We recommend you to test your application. For more information on Third-Party Cookies Deprecation. See [Handling Third Party Cookies Deprecation in Identity Authentication](https://community.sap.com/t5/technology-blogs-by-sap/handling-third-party-cookies-deprecation-in-identity-authentication/ba-p/13659277) and [Testing Your Solution For Breakage](https://community.sap.com/t5/technology-blogs-by-sap/handling-third-party-cookies-deprecation-in-identity-authentication/ba-p/13659277).
+Action: We recommend you to test your application. For more information on Third-Party Cookies Deprecation. See [Handling Third Party Cookies Deprecation in Identity Authentication](https://community.sap.com/t5/technology-blogs-by-sap/handling-third-party-cookies-deprecation-in-identity-authentication/ba-p/13659277) and [Testing Your Solution For Breakage](https://help.sap.com/docs/BTP/25b384c4cc9c472f9e056ebca95fa6ff/34f5fc4fde37438389354196eac7a79c.html?locale=en-US&state=PRODUCTION&version=Cloud).
 
 </td>
 <td valign="top">

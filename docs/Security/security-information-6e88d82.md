@@ -30,7 +30,7 @@ Before you secure Identity Authentication, protect the cloud application that tr
 
 SAP BTP Security Recommendations collects information which helps you to secure the configuration and operation of SAP BTP services in your landscape.
 
-For more information, see [Security Recommendations](https://help.sap.com/docs/BTP/c8a9bb59fe624f0981efa0eff2497d7d/531f33def8074ccdb6f1f784a34dafcb.html?seclist-index=BTP-IAS).
+For more information, see [Security Recommendations - Identity Authentication](https://help.sap.com/docs/BTP/c8a9bb59fe624f0981efa0eff2497d7d/531f33def8074ccdb6f1f784a34dafcb.html?seclist-index=BTP-IAS) and [Security Recommendations - Identity Provisioning](https://help.sap.com/docs/btp/sap-btp-security-recommendations-c8a9bb59fe624f0981efa0eff2497d7d/sap-btp-security-recommendations?seclist-index=BTP-IPS&version=Cloud).
 
 
 
