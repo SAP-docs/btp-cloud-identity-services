@@ -605,7 +605,7 @@ This procedure is performed by the tenant administrator.
 
 4.  Choose the *SPNEGO* list item.
 
-5.  Enter the following information:
+5.  Choose *\+Add* and enter the following information:
 
     -   Realm
 
@@ -711,9 +711,12 @@ This procedure is performed by the tenant administrator.
         > Enter *123.45.67.1/24, 189.101.112.1/16* to allow the web client to use any client IP starting with 123.45.67 or with 189.101.
 
 
-6.  Save your entries.
+6.  Choose *\+Add*.
 
     If the operation is successful, you receive the message ***SPNEGO settings saved***.
+
+    > ### Tip:  
+    > To update the saved settings, choose *Edit* and save your changes.
 
 
 

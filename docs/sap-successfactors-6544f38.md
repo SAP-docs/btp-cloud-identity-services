@@ -11,7 +11,7 @@ Follow this procedure to set up SAP SuccessFactors as a target system.
 > ### Restriction:  
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Identity Access Governance** bundle option.
 
--   You have created a technical user with permissions to **call** the SAP SuccessFactors HCM Suite OData API to **import** employee data into an SAP SuccessFactors system. For more information, see [Permissions](https://help.sap.com/viewer/28bc3c8e3f214ab487ec51b1b8709adc/latest/en-US/3d71f690709243db99102127557a3d73.html) and [URI Conventions \(OData Version 2.0\)](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
+-   You have created a technical user with permissions to **call** the SAP SuccessFactors HCM Suite OData API to **import** employee data into an SAP SuccessFactors system. For more information, see [Permissions](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/3d71f690709243db99102127557a3d73.html?version=Latest) and [URI Conventions \(OData Version 2.0\)](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
 -   You have the *Admin Center* \> *Manage Permission Roles* \> *Access to X.509 Certificates* permission \(needed for configuring X.509 certificate-based authentication\)
 

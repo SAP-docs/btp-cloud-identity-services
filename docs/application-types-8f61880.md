@@ -99,6 +99,9 @@ As a tenant administrator you can change the default configurations:
 -   to choose authenticating identity provider and define rules for authenticating identity provider.
 -   to customize the look and feel of the sign-in page of the administration console for SAP Cloud Identity Services.
 
+> ### Tip:  
+> To change the appearance of the administration console, at the top-right corner choose the *circle with your initials* \> *Settings* \> *Appearance* and select the theme you want. You can chose from *SAP Morning Horizon* and *SAP Quartz Light*.
+
 The `User Profile` application contains the configurations of the Profile Page.
 
 As a tenant administrator you can change the default configurations:
@@ -116,6 +119,9 @@ As a tenant administrator you can change the default configurations:
 > *Tenant ID* is an automatically generated ID by the system.
 > 
 > If you have a configured custom domain, the URL is `<your custom domain`.
+
+> ### Tip:  
+> For a quick access to your own profile page, at the top-right corner of the administration console, choose the *circle with your initials* \> *Settings* \> *User Account* \> *Manage Profile*. Your profile page opens in a new tab.
 
 
 
@@ -169,4 +175,7 @@ Existing applications that have a parent application assigned to them will inher
 
 > ### Tip:  
 > A child application can override all the configurations inherited from the parent application. If you change a configuration in the child that is inherited from the parent, and after that you decide to return to the inherited one, go to the respective configuration and choose the *Inherit from Parent* button on the top right-hand corner of the screen.
+
+> ### Remember:  
+> If you change a configuration in the child that is inherited from the parent, also change the name of the child, so that it differs from the name of the parent. Saving the configuration without changing the child application's name may result in failing authentication requests.
 

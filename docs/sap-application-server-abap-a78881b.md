@@ -51,6 +51,10 @@ SAP Application Server ABAP \(AS ABAP\) offers a user store and user administrat
     -   `BAPI_USER_DELETE`
     -   `PRGN_ACTIVITY_GROUPS_LOAD_RFC`
 
+    These are Business Application Programming Interface \(BAPI\) functional modules designed to perform certain tasks in the SAP AS ABAP system, such as retrieving, creating, updating or deleting user data.
+
+    For more information about each function module and its parameters, refer to the documentation provided in the SAP system. Logon to your SAP system and run transaction code `SE37`. In the *Function Builder: Initial Screen*, enter the function name, choose *Display* and then *Functional Module Documentation*.
+
 2.  Open SAP BTP cockpit, and in your Identity Provisioning subaccount create a destination for the AS ABAP system. To learn how, see: [Create RFC Destinations](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/848f2abb59664a719f7bac83b0021c1e.html)
 
     The destination configuration is required by the Identity Provisioning service to find the back-end system to be used for reading data. It also provides the credentials of the technical user, needed for the connection to the ABAP public API.

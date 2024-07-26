@@ -2,12 +2,12 @@
 
 # Customer Managed Keys \(Restricted Availability\)
 
-Your organization can control the encryption keys for data stored in SAP Cloud Identity Services using [SAP Data Custodian Key Management Service](https://help.sap.com/docs/sap-data-custodian/help-guide/overview?version=latest).
+Your organization can control the encryption keys for data stored in SAP Cloud Identity Services using [SAP Data Custodian Key Management Service](https://help.sap.com/docs/sap-data-custodian/key-management-service/what-is-key-management-service-page).
 
 > ### Caution:  
 > Operations with keys at SAP Data Custodian side must be executed with caution. For example, disabling a key could block the SAP Cloud Identity Services tenant and you won't able to enable the key again.
 > 
-> You can set up workflow approvals to safeguard against unwanted operations changes. For more information, see [Workflow Approval Operations](https://help.sap.com/docs/identity-authentication/identity-authentication/extensions?version=Cloud).
+> You can set up workflow approvals to safeguard against unwanted operations changes. For more information, see [Workflow Approval Operations](https://help.sap.com/docs/sap-data-custodian/help-guide/workflow-approval-operations?version=2305).
 
 Before using the customer managed keys, be aware of the following specifics:
 

@@ -23,7 +23,7 @@ You have created a technical user with permissions to **call** the SAP SuccessFa
 -   *Admin Center* \> *Manage Permission Roles* \> *Access to X.509 Certificates* permission \(needed for configuring X.509 certificate-based authentication\)
 
 
-For more information, see [Permissions](https://help.sap.com/viewer/28bc3c8e3f214ab487ec51b1b8709adc/latest/en-US/3d71f690709243db99102127557a3d73.html) and [Setting Up an API User for Sync Jobs](https://help.sap.com/viewer/568fdf1f14f14fd089a3cd15194d19cc/latest/en-US/0a6e6705d89e42649e3aa8732f2b0724.html).
+For more information, see [Setting Up Permissions for Security Center](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/57afafe9a8f148ac872b7197fa6027b2/991d6bad94354694a5b4baa490e5ad6a.html?locale=en-US&version=2405) and [Setting Up an API User for Sync Jobs](https://help.sap.com/viewer/568fdf1f14f14fd089a3cd15194d19cc/latest/en-US/0a6e6705d89e42649e3aa8732f2b0724.html).
 
 **When Using SAP SuccessFactors Workforce SCIM API**
 

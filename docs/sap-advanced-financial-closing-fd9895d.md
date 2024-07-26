@@ -350,6 +350,156 @@ You can use Identity Provisioning to configure SAP Advanced Financial Closing as
     > }
     > ```
 
+    > ### Code Syntax:  
+    > ```
+    > {
+    >   "user": {
+    >     "mappings": [
+    >       {
+    >         "sourcePath": "$.schemas",
+    >         "targetPath": "$.schemas",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.id",
+    >         "targetVariable": "entityIdSourceSystem"
+    >       },
+    >       {
+    >         "sourcePath": "$.userName",
+    >         "targetPath": "$.userName",
+    >         "correlationAttribute": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.formatted",
+    >         "targetPath": "$.name.formatted",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.familyName",
+    >         "targetPath": "$.name.familyName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.givenName",
+    >         "targetPath": "$.name.givenName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$.displayName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.externalId",
+    >         "targetPath": "$.externalId",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.locale",
+    >         "targetPath": "$.locale",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.active",
+    >         "targetPath": "$.active",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.emails",
+    >         "targetPath": "$.emails",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.groups",
+    >         "targetPath": "$.groups",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true,
+    >         "functions": [
+    >           {
+    >             "condition": "'%s4hana.afc.group.prefix%' !== 'null'",
+    >             "function": "concatString",
+    >             "applyOnElements": true,
+    >             "applyOnAttribute": "display",
+    >             "prefix": "%s4hana.afc.group.prefix%"
+    >           }
+    >         ]
+    >       },
+    >       {
+    >         "sourcePath": "$.roles",
+    >         "targetPath": "$.roles",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.phoneNumbers",
+    >         "targetPath": "$.phoneNumbers",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       }
+    >     ]
+    >   },
+    >   "group": {
+    >     "mappings": [
+    >       {
+    >         "sourcePath": "$.id",
+    >         "targetVariable": "entityIdSourceSystem"
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$.displayName",
+    >         "functions": [
+    >           {
+    >             "condition": "'%s4hana.afc.group.prefix%' !== 'null'",
+    >             "function": "concatString",
+    >             "prefix": "%s4hana.afc.group.prefix%"
+    >           }
+    >         ]
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
+    >         "functions": [
+    >           {
+    >             "condition": "'%s4hana.afc.group.prefix%' !== 'null'",
+    >             "function": "concatString",
+    >             "prefix": "%s4hana.afc.group.prefix%"
+    >           }
+    >         ]
+    >       },
+    >       {
+    >         "sourcePath": "$.members",
+    >         "targetPath": "$.members",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       },
+    >       {
+    >         "condition": "'%ips.application.id%' !== 'null'",
+    >         "constant": "%ips.application.id%",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
+    >       }
+    >     ]
+    >   }
+    > }
+    > ```
+
 6.  [Target Systems](target-systems-ab3f641.md)
 
 

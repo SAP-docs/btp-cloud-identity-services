@@ -2,7 +2,7 @@
 
 # Updates and Notifications
 
-SAP Cloud Identity Services have production releases \(updates\) every second Tuesday, 14:00 UTC.For more information about the features delivered every takt, see the [What's New for Cloud Identity Services](what-s-new-for-cloud-identity-services-de21efe.md) published regularly. 
+SAP Cloud Identity Services have production releases \(updates\) every second Tuesday, 14:00 UTC.For more information about the delivered features, see the [What's New for Cloud Identity Services](what-s-new-for-cloud-identity-services-de21efe.md) page. 
 
 
 
@@ -27,5 +27,5 @@ You can find the planned schedule for upcoming releases at SAP Note [3409744](ht
 
 ## Service Availability
 
-You can monitor the availability of Identity Authentication in [Cloud Availability Center CAC/SAP4Me](https://launchpad.support.sap.com/#/cacv2/pg/SES_DEVEFF/0000281177). For that you can see a T-installation for Identity Services in the support tools. The Identity Authentication tenants of a customer are assigned to this T-installation. Based on these T-installations you can request outage notifications and see potential Root Cause Analysis \(RCA\) information.
+You can monitor the availability of Identity Authentication in [Cloud Availability Center CAC/SAP4Me](https://launchpad.support.sap.com/#/cacv2/pg/SES_DEVEFF/0000281177). For that you can see a T-installation for Identity Services in the support tools. The Identity Authentication tenants of a customer are assigned to this T-installation. Based on these T-installations you can request outage notifications, and see potential Root Cause Analysis \(RCA\) information.
 

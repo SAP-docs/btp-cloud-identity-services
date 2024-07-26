@@ -884,7 +884,7 @@ Users can be updated in the target system in various cases, such as:
 -   A user is deleted from the source system.
 
 
-In the last two cases, it's possible to keep the entity in the target system – it will not be deleted but only disabled. To do this, use the `deleteEntity` scope in the transformation of your target or proxy system. See: [Transformation Expressions](transformation-expressions-bb8537b.md) → **deleteEntity**.
+In the last two cases, it's possible to keep the entity in the target system – it will not be deleted but only disabled. To do this, use the `deleteEntity` scope in the transformation of your target or proxy system. See: [Transformation Expressions](transformation-expressions-bb8537b.md)**deleteEntity**.
 
 **Possible values:**
 
@@ -2349,6 +2349,32 @@ In case the property is not set, only delta read jobs will be executed. For more
 
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ips.application.id` 
+
+</td>
+<td valign="top">
+
+This property holds the value of the *applicationId* group attribute. Its main purpose is to show that a group is associated with a particular application. This is an optional property set by the customer, which is relevant only for tenants running on SAP Cloud Identity Services infrastructure.
+
+The *application ID* is the identifier of an application configured in SAP Cloud Identity Services - Identity Authentication that corresponds to a particular source system configured in SAP Cloud Identity Services - Identity Provisioning. It is used to distinguish groups provisioned from various source systems to the Identity Directory of SAP Cloud Identity Services.
+
+When the property is set, the groups are provisioned with their *applicationId* attribute which is internally mapped to the name of the corresponding application. As a result, the name of the associated application with the group is displayed in the *Application Name* field under *Users&Authorizations* \> *Groups*.
+
+> ### Note:  
+> Currently the property is supported for SAP Advanced Financial Closing only.
+
+**System Role:** Source
+
+</td>
+<td valign="top">
+
+SAP Advanced Financial Closing
 
 </td>
 </tr>
@@ -6987,18 +7013,16 @@ This property takes values as described in the [OData version 2](http://www.odat
 
 **Possible values:**
 
-For example: *division eq 'Manufacturing \(MANU\)'*
+-   If your system consumes SAP SuccessFactors Workforce SCIM API, you can use the supported filter attributes described in [SAP SuccessFactors Workforce SCIM API](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/534356acc0ab4b0e8977ebfb2eb432f7/895a0d10d4984152b9f6d0cd9f9f850c.html)
 
-> ### Note:  
-> You can only use attributes supported as filterable by the SAP SuccessFactors HCM Suite OData API.
-> 
-> Some of these filterable attributes are: `firstName`, `lastName`, `department`, `division`, `jobCode`, `location`, `status`, `userId`, `username`.
+    For example: *userName eq "Sebastian"*
 
-If your system consumes SAP SuccessFactors Workforce SCIM API, you can filter users by `userName`.
+-   If your system consumes SAP SuccessFactors HCM Suite OData API, you can only use attributes supported as filterable by this API. See [SAP SuccessFactors HCM Suite OData API](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/03e1fc3791684367a6a76a614a2916de.html?locale=en-US&version=latest).
 
-For example: *userName eq "Sebastian"*
+    Some of these filterable attributes are: `firstName`, `lastName`, `department`, `division`, `jobCode`, `location`, `status`, `userId`, `username`.
 
-See : [SAP SuccessFactors Workforce SCIM API](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/534356acc0ab4b0e8977ebfb2eb432f7/895a0d10d4984152b9f6d0cd9f9f850c.html)
+    For example: *division eq 'Manufacturing \(MANU\)'*
+
 
 **System Role:** Source, Proxy
 

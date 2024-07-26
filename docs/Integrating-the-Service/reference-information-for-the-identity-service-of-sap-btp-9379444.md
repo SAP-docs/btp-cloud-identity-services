@@ -30,7 +30,7 @@ The syntax of the properties is as follows:
 		"token-policy": {
 			"token-validity": 1800,
 			"refresh-validity": 7776000,
-			"refresh-parallel" : 3,
+			"refresh-parallel" : 3
 			"refresh-usage-after-renewal" : "off"
 		}
 	},

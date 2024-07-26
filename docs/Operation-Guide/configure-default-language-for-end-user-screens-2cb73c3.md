@@ -54,7 +54,7 @@ The language for the end user screens is set according to the following order of
 
     At the top of the page, you can view the administrative and license relevant information of the tenant.
 
-3.  Under *Customization*, choose the *Tenant Default Value* list item.
+3.  Under *Customization*, choose the *Tenant Default Values* list item.
 
 4.  Select from the drop-down the language that the end user screen to use when the language of the browser is not in the list of supported languages.
 

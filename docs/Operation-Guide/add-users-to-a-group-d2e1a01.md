@@ -10,7 +10,7 @@ As a tenant administrator, you can add one or more users created for a specific 
 
 -   You are assigned the *Manage Groups* and *Manage Users* roles. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
 
--   You have created groups in your tenant. For more details how to create groups, see Related Information.
+-   You have groups created in your tenant.
 
 
 
