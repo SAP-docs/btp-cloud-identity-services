@@ -168,6 +168,9 @@ The supported attributes that can be defined in the policy are listed in the **S
 </tr>
 </table>
 
+> ### Restriction:  
+> The "NOT IN" operator can be used only with the `user.attributes` attribute. Do not use "NOT IN" in combination with other attributes.
+
 Expand the **Supported Attributes** section below to see the user attributes that can be configured in the authorization policy:
 
 
@@ -221,6 +224,9 @@ Groups of type `Authorization Policy` with names containing the names of the aut
 
 > ### Restriction:  
 > You need both read and update access rights to be able to update a field in the administration console. If you can't see a field because of a policy restriction, this field remains also disabled for editing even if update rights are granted to you.
+
+> ### Remember:  
+> To edit a custom schema custom attribute via the administration console, `users.MANAGE_USERS` without restriction is needed. If the policy has a restriction on the `users.MANAGE_USERS` base policy, you won't be able to edit the custom schema custom attribute.
 
 > ### Example:  
 > Michael Adams is an administrator at retail company A. He is located at the company's head office in Germany and as chief administrator of the company he has all the authorizations in the administration console for SAP Cloud Identity Services. Dona Moore is also an administrator at company A. She is responsible for the branch office in the USA. As such she needs to have access only to the users in the USA. Michael Adams creates an authorization policy for read-users access and assigns Dona Moore to that policy. He also removes the *Read Users* and *Manage Users* authorizations that Dona has as an administrator. As a result, now, when Dona accesses the *User Management* section of the administration console, she sees only the users that are located in the USA. All the other users are hidden.

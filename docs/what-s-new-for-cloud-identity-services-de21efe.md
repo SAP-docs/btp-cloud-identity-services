@@ -135,6 +135,1976 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+2024-07-26
+
+</td>
+<td valign="top">
+
+2024-07-26
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Administration Console Look and Feel
+
+</td>
+<td valign="top">
+
+You can change the appearance of the administration console by selecting the *SAP Morning Horizon* or *SAP Quartz Light* theme. See [Application Types](application-types-8f61880.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-26
+
+</td>
+<td valign="top">
+
+2024-07-26
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Profile Page
+
+</td>
+<td valign="top">
+
+You can access your own profile page directly from the administration console. See [Application Types](application-types-8f61880.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-26
+
+</td>
+<td valign="top">
+
+2024-07-26
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regional Availability
+
+</td>
+<td valign="top">
+
+Cloud Identity Services now operates with two IPs in the data center in China: 121.91.104.198 and 121.91.104.204
+
+The following IPs are no longer in use: 157.133.186.67 and 157.133.186.78. See [Regional Availability](regional-availability-be600ca.md).
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-25
+
+</td>
+<td valign="top">
+
+2024-07-25
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Cloud Identity Services - Identity Provisioning integration with SAP Cloud ALM 
+
+</td>
+<td valign="top">
+
+SAP Cloud Identity Services - Identity Provisioning is now integrated with SAP Cloud ALM and you can use the *Configuration & Security Analysis* and the *Job & Automation Monitoring* apps.
+
+See [Monitor with SAP Cloud ALM](Monitoring-and-Reporting/monitor-with-sap-cloud-alm-bc835e5.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-23
+
+</td>
+<td valign="top">
+
+2024-07-23
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Central Business Configuration bundle extended with SAP BTP XS Advanced UAA target system
+
+</td>
+<td valign="top">
+
+The scope of SAP Central Business Configuration bundle option is now extended and includes the SAP BTP XS Advanced UAA as a target system.
+
+For more information, see [SAP Central Business Configuration Bundle](sap-central-business-configuration-bundle-44e8673.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-23
+
+</td>
+<td valign="top">
+
+2024-07-23
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-17
+
+</td>
+<td valign="top">
+
+2024-07-17
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regional Availability
+
+</td>
+<td valign="top">
+
+Cloud Identity Services now operates with 3 additional IPs in the data centers in Brazil. See [Regional Availability](regional-availability-be600ca.md).
+
+Action:
+
+We recommend you to add the following IPs to your allowed IP list:
+
+-   LB IP - 52.67.178.118, 54.207.2.140, 54.94.82.121
+-   NAT IP - 18.228.21.223/32, 54.94.238.246/32, 54.94.95.71/32, 18.231.202.16/32, 18.230.68.1/32, 54.232.108.119/32
+
+
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-17
+
+</td>
+<td valign="top">
+
+2024-07-17
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regional Availability
+
+</td>
+<td valign="top">
+
+Cloud Identity Services will operate with additional IPs in the data centers in Singapore, South Korea, and Europe \(Frankfurt\).
+
+Action:
+
+We recommend you to add the following IPs to your allowed IP list:
+
+Singapore
+
+LB IP - 13.215.237.53, 13.251.19.109, 3.0.227.4
+
+South Korea
+
+LB IP - 3.35.109.127, 3.37.25.236, 15.164.195.144
+
+Europe \(Frankfurt\)
+
+LB IP - 3.78.87.109, 18.192.230.105, 3.126.8.63
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-17
+
+</td>
+<td valign="top">
+
+2024-07-17
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Management
+
+</td>
+<td valign="top">
+
+As of August 13, 2024, the `meta.lastModified` attribute will no longer be modified after you sign in. See [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-17
+
+</td>
+<td valign="top">
+
+2024-07-17
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Support for OAuth certificate authentication
+
+</td>
+<td valign="top">
+
+Identity Provisioning supports OAuth certificate authentication for communication with Procurement Data Warehouse and SAP Business Network provisioning systems.
+
+For more information, see [Configure OAuth Certificate Authentication](Operation-Guide/configure-oauth-certificate-authentication-a40a3f3.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-17
+
+</td>
+<td valign="top">
+
+2024-07-17
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Procurement Data Warehouse connector
+
+</td>
+<td valign="top">
+
+Identity Provisioning supports the Procurement Data Warehouse connector. You can configure it as source, target, and proxy system for your provisioning scenarios. For more information, see:
+
+-   [Procurement Data Warehouse \(Source\)](procurement-data-warehouse-13f60ee.md)
+
+-   [Procurement Data Warehouse \(Target\)](procurement-data-warehouse-eea31e8.md)
+
+-   [Procurement Data Warehouse \(Proxy\)](procurement-data-warehouse-34386af.md)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-17
+
+</td>
+<td valign="top">
+
+2024-07-17
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Local Identity Directory - group mapping
+
+</td>
+<td valign="top">
+
+The default transformations of Local Identity Directory provisioning systems are extended to support the *urn:ietf:params:scim:schemas:extension:sap:2.0:Group* schema, which contains the *applicationId*, *type* and *supportedOperations*group attributes.
+
+The applicationId allows Identity Provisioning to replicate application-specific groups to the Identity Directory.
+
+For more information, see:
+
+-   [Groups](groups-d93be69.md)
+-   [Local Identity Directory \(Source\)](local-identity-directory-8c7d05e.md)
+-   [Local Identity Directory \(Target\)](local-identity-directory-59557ae.md)
+-   [Local Identity Directory \(Proxy\)](local-identity-directory-0624f7d.md)
+-   [List of Properties](list-of-properties-d6f3577.md) →`ips.application.id`
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-17
+
+</td>
+<td valign="top">
+
+2024-07-17
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Business Ecology Management bundle is deprecated
+
+</td>
+<td valign="top">
+
+SAP Cloud Identity Services are no longer bundled with SAP Business Ecology Management. SAP has discontinued offering the cloud solution that previously helped customers analyze their environmental impact.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+Deprecated
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services
+
+</td>
+<td valign="top">
+
+2024-07-17
+
+</td>
+<td valign="top">
+
+2024-07-17
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+`ips.application.id` property introduced
+
+</td>
+<td valign="top">
+
+Identity Provisioning introduces the `ips.application.id` property, which holds the value of the *applicationId* group attribute. The value, set by the customers, is used to distinguish groups provisioned from various source systems to the Identity Directory of SAP Cloud Identity Services.
+
+Currently, it is supported forSAP Advanced Financial Closing only.
+
+For more information, see [List of Properties](list-of-properties-d6f3577.md) →`ips.application.id`.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-16
+
+</td>
+<td valign="top">
+
+2024-07-16
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Advanced Financial Closing - group mapping
+
+</td>
+<td valign="top">
+
+The default read and proxy read transformations of SAP Advanced Financial Closing provisioning systems are extended to support the provisioning of application-specific groups.
+
+These transformations include *type* and *supportedOperations* group attributes.
+
+The read transformation is also extended with a condition. It checks that the `ips.application.id` property contains a value and is not null.
+
+For more information, see:
+
+-   [SAP Advanced Financial Closing](sap-advanced-financial-closing-fd9895d.md)
+
+-   [SAP Advanced Financial Closing](sap-advanced-financial-closing-60dcd53.md)
+
+-   [List of Properties](list-of-properties-d6f3577.md) →`ips.application.id`
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-17
+
+</td>
+<td valign="top">
+
+2024-07-17
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-02
+
+</td>
+<td valign="top">
+
+2024-07-02
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regional Availability
+
+</td>
+<td valign="top">
+
+Cloud Identity Services now operates with additional IPs in the data center in India. See [Regional Availability](regional-availability-be600ca.md).
+
+Action:
+
+We recommend you to add the following IPs to your allowed IP list:
+
+-   LB IP - 43.204.242.5, 13.234.128.163, 13.202.113.251
+-   NAT IP - 3.108.210.169/32, 13.127.105.96/32, 13.232.175.70/32, 3.7.5.154/32, 43.205.169.10/32, 65.2.62.24/32
+
+
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-02
+
+</td>
+<td valign="top">
+
+2024-07-02
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regional Availability
+
+</td>
+<td valign="top">
+
+Cloud Identity Services now operates with only two IPs in the data center in Switzerland. See [Regional Availability](regional-availability-be600ca.md).
+
+Action:
+
+We recommend you to add the following IPs to your allowed IP list:
+
+-   LB IP - 20.250.104.188, 20.250.104.193
+-   NAT IP - 4.226.38.130/32, 4.226.41.61/32
+
+
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-02
+
+</td>
+<td valign="top">
+
+2024-07-02
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Security recommendations for SAP Cloud Identity Services - Identity Provisioning 
+
+</td>
+<td valign="top">
+
+Security recommendations for SAP Cloud Identity Services - Identity Provisioning are now available to help you secure its configuration and operation in your landscape.
+
+For more information, see [Security Information](Security/security-information-6e88d82.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-02
+
+</td>
+<td valign="top">
+
+2024-07-02
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+`skipOperations create` is enhanced in SAP Analytics Cloud version 1 target systems
+
+</td>
+<td valign="top">
+
+The `skipOperations create` is enhanced and works properly for SAP Analytics Cloud version 1 target systems. When Identity Provisioning tries to provision a user that already exists in the target system, the service resolves the ID of the user and can now add it to the request body of the PUT update request.
+
+For more information, see [SAP Analytics Cloud](sap-analytics-cloud-ea6a89d.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-07-02
+
+</td>
+<td valign="top">
+
+2024-07-02
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Off-Cycle Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-06-25
+
+</td>
+<td valign="top">
+
+2024-06-25
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-06-20
+
+</td>
+<td valign="top">
+
+2024-06-20
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Audit Log Service in SAP BTP, Neo 
+
+</td>
+<td valign="top">
+
+The access of the audit logs for Identity Authentication tenants on the SAP infrastructure in the Audit Log Service in SAP BTP, Neo will be deprecated according to the following timeline:
+
+-   China - Jul 24, 2024
+-   Saudi Arabia - Jul 31, 2024
+-   Japan - Sep 11, 2024
+-   Australia - Oct 2, 2024
+-   US-East - Oct 9, 2024
+-   Europe - Oct 23, 2024
+
+See [Access Audit Logs \(Audit Log Service in SAP BTP, Neo\)](Monitoring-and-Reporting/access-audit-logs-audit-log-service-in-sap-btp-neo-9f6b9a4.md).
+
+Action:
+
+We recommend you to use the Audit Log Service in SAP BTP, Cloud Foundry to access the Identity Authentication tenants on both the SAP, and the AWS and Azure infrastructures. See [Access Audit Logs \(Audit Log Service in SAP BTP, Cloud Foundry\)](Monitoring-and-Reporting/access-audit-logs-audit-log-service-in-sap-btp-cloud-foundry-a3e793c.md).
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+Deprecated
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-06-20
+
+</td>
+<td valign="top">
+
+2024-06-20
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Custom Schemas
+
+</td>
+<td valign="top">
+
+The value of custom schemas attributes of type `decimal` is limited to 16 digits, between -9007199254740991 and 9007199254740991 when the Identity Directory API POST/PUT/PATCH request is sent for users.
+
+See [Identity |Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-06-20
+
+</td>
+<td valign="top">
+
+2024-06-20
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Ariba Category Management connector
+
+</td>
+<td valign="top">
+
+Identity Provisioning supports the SAP Ariba Category Management connector. You can configure it as source, target, and proxy system for your provisioning scenarios. For more information, see:
+
+-   [SAP Ariba Category Management \(Source\)](sap-ariba-category-management-e6a0606.md)
+
+-   [SAP Ariba Category Management \(Target\)](sap-ariba-category-management-e4c55e4.md)
+
+-   [SAP Ariba Category Management \(Proxy\)](sap-ariba-category-management-fb97244.md)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-06-20
+
+</td>
+<td valign="top">
+
+2024-06-20
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Off-Cycle Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-06-14
+
+</td>
+<td valign="top">
+
+2024-06-14
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Management
+
+</td>
+<td valign="top">
+
+In `urn:ietf:params:scim:schemas:extension:sap:2.0:User` schema, the `mailVerfied` attribute isn't configurable anymore.
+
+Action: We recommend you to use the `emails.verfied` parameter. See [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users).
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-06-14
+
+</td>
+<td valign="top">
+
+2024-06-14
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
 2024-06-05
 
 </td>
@@ -309,7 +2279,7 @@ Real-time logs show the origin of the users
 </td>
 <td valign="top">
 
-Real-time logs have been improved. They now show the origin of the users that have been created, updated or deleted in the SAP BTP XS Advanced UAA \(Cloud Foundry\) target system.
+Real-time logs have been improved. They now show the origin of the users that have been created, updated, or deleted in the SAP BTP XS Advanced UAA \(Cloud Foundry\) target system.
 
 For more information, see: [Monitor Real-Time Logs](Monitoring-and-Reporting/monitor-real-time-logs-a8deb0d.md).
 
@@ -372,7 +2342,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-Application Specific Groups
+Application-Specific Groups
 
 </td>
 <td valign="top">
@@ -511,7 +2481,7 @@ Integration of SAML and OIDC Logout Flows
 
 The service adds support for OpenID Connect \(OIDC\) back-channel logout. OIDC back-channel logout is integrated with the existing support for OIDC front-channel logout and Security Assertion Markup Language \(SAML\) logout.
 
-For more information, see [Front-Channel Logout URI Rules](Operation-Guide/front-channel-logout-uri-rules-789c752.md).
+For more information, see [Logout URI Rules](Operation-Guide/logout-uri-rules-789c752.md).
 
 </td>
 <td valign="top">
@@ -836,14 +2806,14 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-Handling Third Party Cookies
+Handling Third-Party Cookies
 
 </td>
 <td valign="top">
 
 Storage Access API is now available for all SAP Cloud Identity Services tenants.
 
-Action: We recommend you to test your application. For more information on Third Party Cookies Deprecation. See [Handling Third Party Cookies Deprecation in Identity Authentication](https://community.sap.com/t5/technology-blogs-by-sap/handling-third-party-cookies-deprecation-in-identity-authentication/ba-p/13659277) and [Testing Your Solution For Breakage](https://community.sap.com/t5/technology-blogs-by-sap/handling-third-party-cookies-deprecation-in-identity-authentication/ba-p/13659277).
+Action: We recommend you to test your application. For more information on Third-Party Cookies Deprecation. See [Handling Third Party Cookies Deprecation in Identity Authentication](https://community.sap.com/t5/technology-blogs-by-sap/handling-third-party-cookies-deprecation-in-identity-authentication/ba-p/13659277) and [Testing Your Solution For Breakage](https://help.sap.com/docs/BTP/25b384c4cc9c472f9e056ebca95fa6ff/34f5fc4fde37438389354196eac7a79c.html?locale=en-US&state=PRODUCTION&version=Cloud).
 
 </td>
 <td valign="top">
@@ -979,7 +2949,7 @@ SAP SuccessFactors Employee Central Payroll connector
 </td>
 <td valign="top">
 
-Identity Provisioning supports the SAP SuccessFactors Employee Central Payroll connector. You can configure it as source, target and proxy system for your provisioning scenarios. For more information, see:
+Identity Provisioning supports the SAP SuccessFactors Employee Central Payroll connector. You can configure it as source, target, and proxy system for your provisioning scenarios. For more information, see:
 
 -   [SAP SuccessFactors Employee Central Payroll \(Source\)](sap-successfactors-employee-central-payroll-94d8979.md)
 
@@ -1254,7 +3224,7 @@ Conditional Authentication
 </td>
 <td valign="top">
 
-You can use asterisk \(\*\) in the top level domain part when you add rules for authentication against different identity providers. See [Add a New Authentication Rule](Operation-Guide/add-a-new-authentication-rule-ad7f993.md).
+You can use asterisk \(\*\) in the top-level domain part when you add rules for authentication against different identity providers. See [Add a New Authentication Rule](Operation-Guide/add-a-new-authentication-rule-ad7f993.md).
 
 </td>
 <td valign="top">
@@ -1650,7 +3620,7 @@ Notifications
 </td>
 <td valign="top">
 
-You can sort the notifications that are visible at the top-right corner of the administration console by type, priority and date.
+You can sort the notifications that are visible at the top-right corner of the administration console by type, priority, and date.
 
 </td>
 <td valign="top">

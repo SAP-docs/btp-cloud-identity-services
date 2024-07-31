@@ -6,6 +6,14 @@ This document describes how developers configure the certificates used for authe
 
 
 
+<a name="loioc408083913f3487bb923e70575ac0793__prereq_gwy_nng_2cc"/>
+
+## Prerequisites
+
+\(For trusted CA Scenario\) - If you want to configure a certificate, using your own trusted CA report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`. Attach to the incident the root and intermediate certificates and provide the Identity Authentication tenant host.
+
+
+
 ## Context
 
 You can use a certificate to authenticate when REST API calls \(Invitation REST API, User management REST API, Password Service Rest API, and Forgot Service REST API\) to the tenant of Identity Authentication are used. The certificate can also be used in the OpenID Connect scenarios of Identity Authentication.
@@ -14,7 +22,7 @@ For the configuration, you have to provide the base64-encoded certificate as a f
 
 By default all scope options are selected and the *Scope* field is disabled. Your certificates are used for all scopes.
 
-Identity Authentication supports the following as trusted certificate authorities \(CA\): SAP Passport CA G2, SAP SSO CA G2, SAP Cloud Root CA, SAP Global Root CA, DigiCert TLS RSA SHA256 2020 CA1, DigiCert Global Root CA, SAP Cloud Platform Client CA, SAP Cloud Platform Client CA, SAP Cloud Platform Client CA, SAP Cloud Platform Client CA, ConnectivityCA.
+Identity Authentication supports the following as trusted certificate authorities \(CA\): SAP Passport CA G2, SAP SSO CA G2, SAP Cloud Root CA, SAP Global Root CA, DigiCert TLS RSA SHA256 2020 CA1, DigiCert Global Root CA, SAP Cloud Platform Client CA, ConnectivityCA.
 
 
 

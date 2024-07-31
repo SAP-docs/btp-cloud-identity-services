@@ -135,7 +135,7 @@ Get your productive and test tenant as part of a self-service request in SAP BTP
 
 ## Get Additional Tenant
 
-Get an additional tenant as part of a self-service request in SAP BTP cockpit. SAP customers and partners can use Identity Authentication additional tenants via CPEA \(Cloud Platform Enterprise Agreement\) and Pay-As-You-Go consumption-based commercial models. They can request one additional tenant per SAP BTP subaccount.
+Get an additional tenant as part of a self-service request in SAP BTP cockpit. SAP customers and partners can use SAP Cloud Identity Services additional tenants via CPEA \(Cloud Platform Enterprise Agreement\) and Pay-As-You-Go consumption-based commercial models. They can request one additional tenant per SAP BTP subaccount.
 
 > ### Note:  
 > The additional tenant doesn’t add additional logon requests. Licensed logon requests are distributed across all tenants.
@@ -168,7 +168,7 @@ To get additional tenant using SAP BTP multi-environment subaccount, proceed as 
     > ### Note:  
     > For each service plan you must have a separate subaccount.
     > 
-    > The *additional-tenant* plan allows the customer to create a new Identity Authentication additional tenant. The type of the created tenant may be test or productive depending on the customer selection. The new instance is created only if there is an existing default instance bound to your customer ID.
+    > The *additional-tenant* plan allows the customer to create a new SAP Cloud Identity Services additional tenant. The type of the created tenant may be test or productive depending on the customer selection. The new instance is created only if there is an existing default instance bound to your customer ID.
     > 
     > You can remove that additional tenant for the subaccount by choosing the *Delete* button. Please note that the tenant is deleted immediately.
 

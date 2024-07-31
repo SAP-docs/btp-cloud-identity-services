@@ -257,7 +257,9 @@ These target systems consume SCIM 1.1 API provided by SAP HANA XS Advanced UAA.
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    [User Management \(System for Cross-domain Identity Management \(SCIM\)\)](https://api.sap.com/api/PlatformAPI/resource/SCIM_groups_role_collections)
+    [User Management \(System for Cross-domain Identity Management \(SCIM\)\)](https://api.sap.com/api/PlatformAPI/resource/SCIM_groups_role_collections)- SCIM groups - role collections
+
+    [User Management \(System for Cross-domain Identity Management \(SCIM\)\)](https://api.sap.com/api/PlatformAPI/resource/SCIM_users_shadow_users) - SCIM users - shadow users
 
     To make group assignments via the user resource, you need to change the default transformation of the target system as described in [Enabling Group Assignment](Operation-Guide/enabling-group-assignment-0d80033.md).
 
@@ -396,8 +398,4 @@ These target systems consume SCIM 1.1 API provided by SAP HANA XS Advanced UAA.
 
 
 [XS CLI: User Administration](https://help.sap.com/viewer/4505d0bdaf4948449b7f7379d24d0f0d/latest/en-US/4b38012ac63141bfa15bc1cb6418cc6a.html)
-
-[Cloud Foundry UAA: Users](https://docs.cloudfoundry.org/api/uaa/version/4.20.0/index.html#users)
-
-[Cloud Foundry UAA: Groups](https://docs.cloudfoundry.org/api/uaa/version/4.20.0/index.html#groups)
 

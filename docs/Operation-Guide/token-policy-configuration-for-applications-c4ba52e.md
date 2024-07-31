@@ -309,7 +309,7 @@ To configure the token policy, proceed as follows:
 
 [Redirect URIs, Post Logout Redirect URI Rules](redirect-uris-post-logout-redirect-uri-rules-48fdb9a.md "Rules for the redirect URIs or post logout redirect URIs.")
 
-[Front-Channel Logout URI Rules](front-channel-logout-uri-rules-789c752.md "Rules for the front-channel URIs.")
+[Logout URI Rules](logout-uri-rules-789c752.md "Rules for the front and back-channel URIs.")
 
 [Configure Grant Types](configure-grant-types-c342a7b.md "Configure the allowed grant type for your OpenID Connect application.")
 

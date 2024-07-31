@@ -341,7 +341,9 @@ You can use SAP BTP XS Advanced UAA as a proxy connector to execute *hybrid* sce
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    [User Management \(System for Cross-domain Identity Management \(SCIM\)\)](https://api.sap.com/api/PlatformAPI/resource/SCIM_groups_role_collections)
+    [User Management \(System for Cross-domain Identity Management \(SCIM\)\)](https://api.sap.com/api/PlatformAPI/resource/SCIM_groups_role_collections)- SCIM groups - role collections
+
+    [User Management \(System for Cross-domain Identity Management \(SCIM\)\)](https://api.sap.com/api/PlatformAPI/resource/SCIM_users_shadow_users) - SCIM users - shadow users
 
     Default read and write transformations:
 
@@ -676,8 +678,4 @@ To see an example with SAP Identity Management, see [Hybrid Scenario: SAP Identi
 
 
 [XS CLI: User Administration](https://help.sap.com/viewer/4505d0bdaf4948449b7f7379d24d0f0d/latest/en-US/4b38012ac63141bfa15bc1cb6418cc6a.html)
-
-[Cloud Foundry UAA: Users](https://docs.cloudfoundry.org/api/uaa/version/4.20.0/index.html#users)
-
-[Cloud Foundry UAA: Groups](https://docs.cloudfoundry.org/api/uaa/version/4.20.0/index.html#groups)
 

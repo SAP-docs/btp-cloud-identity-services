@@ -4,16 +4,16 @@
 
 Applications sometimes need to propagate principals or have technical communication arrangements between them. To enable one application to consume the APIs of another application, the developer of the application providing APIs defines one or more API groups, which the consuming application can consume.
 
-Under this model, applications that can be called by other applications define API permission groups. For technical communication, API permission groups are the granularity at which administrators can grant access to the APIs of a provider application. If principal propagation is used, then the user authorizations are checked as well. Such groups cover a set of related APIs. An application can expose all its APIs when there's no need to restrict consuming applications.
+Under this model, applications that can be called by other applications define API permission groups. Administrators grant access to these groups to consuming applications. Technical communication and principal propagation are possible. With principal propagation, user authorizations apply in the decision whether an API call is allowed or not. These permission groups cover a set of related APIs. An application can expose all its APIs without an API permission group when there's no need to restrict consuming applications.
 
 In the configuration of the consumer application, the tenant administrator defines the dependencies. Consumer applications use the dependency name to identify to SAP Cloud Identity Services which application the consumer wants to access including the API permission group to grant. The actual dependency name depends on the consuming application:
 
 -   Typically, an application needs a specific name for integration with a specific provider application. Find the supported dependency names in the provider application or its documentation.
 
--   When an application generically integrates with many arbitrary applications, the application rather enables you to define custom dependency names and maintain them both in SAP Cloud Identity Services as well as in the consuming application itself. The integration informs the application which dependency to use for which integration scenario.
+-   When an application generically integrates with many arbitrary applications, the application rather enables you to define custom dependency names and maintain them both in SAP Cloud Identity Services as well as in the consuming application itself. The configuration informs the application which dependency to use for which integration scenario.
 
 
-The following figure shows the relationship between two applications in SAP Cloud Identity Services. The provider application offers two API permission groups. The dependency of the consumer application references one of these groups.
+The following figure shows the relationship between two applications in SAP Cloud Identity Services. The provider application offers two API permission groups. The consumer app is allowed to consume one of these groups. The applications can use technical communication or principal propagation.
 
   
   

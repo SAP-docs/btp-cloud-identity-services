@@ -884,7 +884,7 @@ Users can be updated in the target system in various cases, such as:
 -   A user is deleted from the source system.
 
 
-In the last two cases, it's possible to keep the entity in the target system – it will not be deleted but only disabled. To do this, use the `deleteEntity` scope in the transformation of your target or proxy system. See: [Transformation Expressions](transformation-expressions-bb8537b.md) → **deleteEntity**.
+In the last two cases, it's possible to keep the entity in the target system – it will not be deleted but only disabled. To do this, use the `deleteEntity` scope in the transformation of your target or proxy system. See: [Transformation Expressions](transformation-expressions-bb8537b.md)**deleteEntity**.
 
 **Possible values:**
 
@@ -2349,6 +2349,32 @@ In case the property is not set, only delta read jobs will be executed. For more
 
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ips.application.id` 
+
+</td>
+<td valign="top">
+
+This property holds the value of the *applicationId* group attribute. Its main purpose is to show that a group is associated with a particular application. This is an optional property set by the customer, which is relevant only for tenants running on SAP Cloud Identity Services infrastructure.
+
+The *application ID* is the identifier of an application configured in SAP Cloud Identity Services - Identity Authentication that corresponds to a particular source system configured in SAP Cloud Identity Services - Identity Provisioning. It is used to distinguish groups provisioned from various source systems to the Identity Directory of SAP Cloud Identity Services.
+
+When the property is set, the groups are provisioned with their *applicationId* attribute which is internally mapped to the name of the corresponding application. As a result, the name of the associated application with the group is displayed in the *Application Name* field under *Users&Authorizations* \> *Groups*.
+
+> ### Note:  
+> Currently the property is supported for SAP Advanced Financial Closing only.
+
+**System Role:** Source
+
+</td>
+<td valign="top">
+
+SAP Advanced Financial Closing
 
 </td>
 </tr>
@@ -6987,18 +7013,16 @@ This property takes values as described in the [OData version 2](http://www.odat
 
 **Possible values:**
 
-For example: *division eq 'Manufacturing \(MANU\)'*
+-   If your system consumes SAP SuccessFactors Workforce SCIM API, you can use the supported filter attributes described in [SAP SuccessFactors Workforce SCIM API](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/534356acc0ab4b0e8977ebfb2eb432f7/895a0d10d4984152b9f6d0cd9f9f850c.html)
 
-> ### Note:  
-> You can only use attributes supported as filterable by the SAP SuccessFactors HCM Suite OData API.
-> 
-> Some of these filterable attributes are: `firstName`, `lastName`, `department`, `division`, `jobCode`, `location`, `status`, `userId`, `username`.
+    For example: *userName eq "Sebastian"*
 
-If your system consumes SAP SuccessFactors Workforce SCIM API, you can filter users by `userName`.
+-   If your system consumes SAP SuccessFactors HCM Suite OData API, you can only use attributes supported as filterable by this API. See [SAP SuccessFactors HCM Suite OData API](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/03e1fc3791684367a6a76a614a2916de.html?locale=en-US&version=latest).
 
-For example: *userName eq "Sebastian"*
+    Some of these filterable attributes are: `firstName`, `lastName`, `department`, `division`, `jobCode`, `location`, `status`, `userId`, `username`.
 
-See : [SAP SuccessFactors Workforce SCIM API](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/534356acc0ab4b0e8977ebfb2eb432f7/895a0d10d4984152b9f6d0cd9f9f850c.html)
+    For example: *division eq 'Manufacturing \(MANU\)'*
+
 
 **System Role:** Source, Proxy
 
@@ -9330,7 +9354,9 @@ SAP Build Work Zone, standard edition supports the following unique attributes w
 -   If the user doesn't have an `externalId`, the conflict is resolved by `email` and `providerId`.
 
 
-For the conflict to be resolved, an existing user matching both unique attributes should be found. If an existing user doesn't match both unique attributes or matches only one of them, the user creation fails.
+For the conflict to be resolved, an existing user matching both unique attributes should be found.
+
+Whether the existing user will be updated or a new one will be created by Identity Provisioning depends on the following conditions - was the user created by the Identity Provisioning service, what combination of unique attributes exist for the user, and has any of the provisioning systems \(source or target\) been reset. For more information, see Step 4 of the relevant SAP Build Work Zone, standard edition documentation.
 
 > ### Recommendation:  
 > We recommend that you do not modify the value of the `cflp.user.unique.attribute` property. Otherwise, user creation fails.
@@ -12829,19 +12855,24 @@ SAP Ariba Category Management
 </td>
 <td valign="top">
 
-When the Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists in SAP Ariba Category Management. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\). This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\).
+When the Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists in SAP Ariba Category Management. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attributes. This property defines by which unique attributes the existing user to be searched and resolved.
+
+SAP Ariba Category Management supports two user unique attributes for managing conflict resolution: *username* and *email*. The username is a mandatory attribute, while the email is an optional, multivalue attribute, indicating that a user may have multiple unique emails.
 
 According to your use case, choose how to set up this property:
 
 -   Default behavior: This property is missing during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such а *userName* is not found, the creation of the conflicting user fails.
--   Value = *emails.value*. If the service finds an existing user with such *emails.value*, it updates this user with the data of the conflicting one. If a user with such *emails.value* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
--   Value = *userName, emails.value*. If the service finds an existing user with both userName and email, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+-   Value = *emails\[\*\].value*. If the service finds an existing user with such emails \(at least one identical email is needed\), it updates this user with the data of the conflicting one. If a user with such emails is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+-   Value = *userName, emails\[\*\].value*. If the service finds an existing user with both userName and email, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+
+> ### Note:  
+> The uniqueness of a user in the target system is determined not only by the individual attributes or the combination of both, but also by considering whether one or multiple existing users in the target system share the same values for these unique attributes. For more information, see **User Update and Uniqueness** in [SAP Ariba Category Management](sap-ariba-category-management-e4c55e4.md).
 
 **Possible values:**
 
 -   *userName*
--   *emails.value*
--   *userName, emails.value*
+-   *emails\[\*\].value*
+-   *userName, emails\[\*\].value*
 
 Default value: *userName*
 

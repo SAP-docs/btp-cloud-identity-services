@@ -472,6 +472,9 @@ To edit the application configurations, proceed as follows:
     > ### Tip:  
     > A child application can override all the configurations inherited from the parent application. If you change a configuration in the child that is inherited from the parent, and after that you decide to return to the inherited one, go to the respective configuration and choose the *Inherit from Parent* button on the top right-hand corner of the screen.
 
+    > ### Remember:  
+    > If you change a configuration in the child that is inherited from the parent, also change the name of the child, so that it differs from the name of the parent. Saving the configuration without changing the child application's name may result in failing authentication requests.
+
 
     
     </td>

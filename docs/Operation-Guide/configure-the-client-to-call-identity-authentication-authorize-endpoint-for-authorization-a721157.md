@@ -419,7 +419,7 @@ string
 <td valign="top">
 
 -   [Configure OpenID Connect Application for Authorization Code Flow](configure-openid-connect-application-for-authorization-code-flow-4a94254.md)
--   [Front-Channel Logout URI Rules](front-channel-logout-uri-rules-789c752.md)
+-   [Logout URI Rules](logout-uri-rules-789c752.md)
 
 
 

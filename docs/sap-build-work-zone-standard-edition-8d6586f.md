@@ -20,7 +20,7 @@ The service key contains the API URL and the OAuth credentials \(`clientid` and 
 
 The SAP Build Work Zone, standard edition simplifies access to SAP, custom-built, and third party applications and extensions \(both on the cloud and on premise\) by establishing a central launchpad.
 
-You can use the Identity Provisioning UI to configure SAP Build Work Zone, standard edition as a target system for provisioning users, groups and users’ group assignments from various source systems. In SAP Build Work Zone, standard edition, users can only be created and deleted. The update operation is skipped in the default write transformation.
+You can use the Identity Provisioning UI to configure SAP Build Work Zone, standard edition as a target system for provisioning users, groups and users’ group assignments from various source systems.
 
 
 
@@ -186,7 +186,9 @@ You can use the Identity Provisioning UI to configure SAP Build Work Zone, stand
     -   If the user doesn't have an `externalId`, the conflict is resolved by `email` and `providerId`.
 
 
-    For the conflict to be resolved, an existing user matching both unique attributes should be found. If an existing user doesn't match both unique attributes or matches only one of them, the user creation fails.
+    The general rule is that to resolve the conflict, there should be an existing user who matches both unique attributes.
+
+    However, when resolving conflicts, Identity Provisioning decides whether to update an existing user or create a new one based on several criteria: whether the user was created by the Identity Provisioning service, if any of the provisioning systems \(source or target\) have been reset, and last but not least, the unique combination of user attributes. For more information, see **Step 4**.
 
     > ### Recommendation:  
     > We recommend that you do not modify the value of the `cflp.user.unique.attribute` property. Otherwise, user creation fails.
@@ -310,11 +312,42 @@ You can use the Identity Provisioning UI to configure SAP Build Work Zone, stand
 
     Transformations are used to map user and group attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Build Work Zone, standard edition* target system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
+    **Mapping logic** – The behavior of the default transformation logic is to map all attributes from the internal SCIM representation to the target SAP Build Work Zone, standard edition entity.
+
     You can change the default transformation mapping rules to reflect your current setup of entities in your SAP Build Work Zone, standard edition system. For more information, see: [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md).
 
     To make group assignments via the user resource, you need to change the default transformation of the target system as described in [Enabling Group Assignment](Operation-Guide/enabling-group-assignment-0d80033.md).
 
-    **Mapping logic** – The behavior of the default transformation logic is to map all attributes from the internal SCIM representation to the target SAP Build Work Zone, standard edition entity.
+    **User Update and Uniqueness**
+
+    The write transformation of SAP Build Work Zone, standard edition supports three user unique attributes: *externalId*, *email* and *providerId*. Only providerId is mandatory in combination with at least one of the other attributes. Based on the combinations of these attributes, there can be distinguished three types of users:
+
+    -   User 1 - with *email* and *providerId*, but no *externalId*
+
+    -   User 2 - with *externalId* and *providerId*, but no *email*
+
+    -   User 3 - with all three attributes: *externalId*, *email* and *providerId*
+
+
+    The uniqueness of the user is ensured by the combination of two unique attributes: the *providerId* and *externalId* or the *providerId* and the *email*.
+
+    Updating an existing user in the target system depends on how the user is identified there \(its combination of unique attributes\) and whether Identity Provisioning is aware of this user:
+
+    -   The existing user was created by a provisioning job \(that is, the service is aware of this user\).
+
+        If the following attributes are changed in the source system: the *email* of user 1, the *externalId* of user 2, or the *email* or *externalId* of user 3, after running a new job, Identity Provisioning will update the existing user.
+
+    -   The existing user was not created by a provisioning job or was created by one but afterwards the source and the target systems have been reset \(that is, the service is not aware of this user\).
+
+        If the following attributes are changed in the source system, expect the subsequent results after running a new job:
+
+        -   Changing the *email* of user 1 will result in creating a new user in the target system, because the user won’t match the combination of two unique attributes: *email* and *providerId*.
+
+        -   Changing the *externalId* of user 2 will result in creating a new user in the target, because the user won’t match the combination of two unique attributes: *externalId* and *providerId*.
+
+        -   Changing the *email* or the *externalId* of user 3 will result in updating the user in the target system, because the user will still match a combination of two unique attributes. However, changing both, the *email* and the *externalId*, of user 3 will result in creating a new user in the target system, because the user will match only one unique attribute - the *providerId*.
+
+
 
     **Default transformation:** 
 
@@ -323,9 +356,6 @@ You can use the Identity Provisioning UI to configure SAP Build Work Zone, stand
     > 
     > {
     >     "user": {
-    >         "skipOperations": [
-    >             "update"
-    >         ],
     >         "mappings": [
     >             {
     >                 "sourceVariable": "entityIdTargetSystem",

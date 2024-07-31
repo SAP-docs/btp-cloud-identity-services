@@ -14,7 +14,7 @@ Follow this procedure to set up SAP Advanced Financial Closing as a proxy system
 
     The service key contains the API URL and the OAuth credentials \(`clientid` and `clientsecret`\) under the `uaa` property.
 
--   > ### Note:  
+    > ### Note:  
     > Administrators of bundle tenants on Neo environment should enable the *Manage OAuth Clients* permission, as described in *Neo Environment* section in [Manage Authorizations](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/544de9b504214372b4479dc1f6b08cca.html "Manage the authorizations of Identity Provisioning administrators, when your bundle or standalone tenant is running on SAP BTP, Neo environment.") :arrow_upper_right:.
 
 
@@ -467,6 +467,170 @@ You can use Identity Provisioning to configure SAP Advanced Financial Closing as
     >         ]
     >     }
     > }
+    > ```
+
+    > ### Code Syntax:  
+    > ```
+    > {
+    >   "user": {
+    >     "scimEntityEndpoint": "Users",
+    >     "mappings": [
+    >       {
+    >         "sourcePath": "$.schemas",
+    >         "targetPath": "$.schemas",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.id",
+    >         "targetPath": "$.id",
+    >         "targetVariable": "entityIdSourceSystem"
+    >       },
+    >       {
+    >         "sourcePath": "$.userName",
+    >         "targetPath": "$.userName",
+    >         "correlationAttribute": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.formatted",
+    >         "targetPath": "$.name.formatted",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.familyName",
+    >         "targetPath": "$.name.familyName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.givenName",
+    >         "targetPath": "$.name.givenName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$.displayName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.externalId",
+    >         "targetPath": "$.externalId",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.locale",
+    >         "targetPath": "$.locale",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.active",
+    >         "targetPath": "$.active",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.emails",
+    >         "targetPath": "$.emails",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.groups",
+    >         "targetPath": "$.groups",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.roles",
+    >         "targetPath": "$.roles",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.phoneNumbers",
+    >         "targetPath": "$.phoneNumbers",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.meta",
+    >         "targetPath": "$.meta",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourceVariable": "entityBaseLocation",
+    >         "targetPath": "$.meta.location",
+    >         "targetVariable": "entityLocationSourceSystem",
+    >         "functions": [
+    >           {
+    >             "type": "concatString",
+    >             "suffix": "${entityIdSourceSystem}"
+    >           }
+    >         ]
+    >       }
+    >     ]
+    >   },
+    >   "group": {
+    >     "scimEntityEndpoint": "Groups",
+    >     "mappings": [
+    >       {
+    >         "sourcePath": "$.id",
+    >         "targetPath": "$.id",
+    >         "targetVariable": "entityIdSourceSystem"
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$.displayName"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']"
+    >       },
+    >       {
+    >         "sourcePath": "$.members",
+    >         "targetPath": "$.members",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.schemas",
+    >         "targetPath": "$.schemas",
+    >         "preserveArrayWithSingleElement": true
+    >       },
+    >       {
+    >         "sourcePath": "$.meta",
+    >         "targetPath": "$.meta",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourceVariable": "entityBaseLocation",
+    >         "targetPath": "$.meta.location",
+    >         "targetVariable": "entityLocationSourceSystem",
+    >         "functions": [
+    >           {
+    >             "type": "concatString",
+    >             "suffix": "${entityIdSourceSystem}"
+    >           }
+    >         ]
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
+    >       }
+    >     ]
+    >   }
+    > }
+    > 
     > ```
 
 

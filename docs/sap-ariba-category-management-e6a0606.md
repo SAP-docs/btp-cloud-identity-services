@@ -10,6 +10,9 @@ Follow this procedure to set up SAP Ariba Category Management as а source syste
 
 ## Prerequisites
 
+> ### Note:  
+> Currently, SAP Ariba Category Management connector is only available for selected customers who are approached by SAP.
+
 > ### Restriction:  
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.
 
@@ -208,6 +211,11 @@ SAP Ariba Category Management is a cloud-based solution that enables organizatio
     >             "sourcePath":"$.externalId",
     >             "targetPath":"$.externalId",
     >             "optional":true
+    >          },
+    >          {
+    >             "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >             "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >             "optional": true
     >          },
     >          {
     >             "sourcePath":"$.name.givenName",

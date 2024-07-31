@@ -38,6 +38,9 @@ The client ID is in the universally unique identifier \(UUID\) format. For examp
 
 6.  Choose the *Add* button in the *Secrets* section.
 
+    > ### Restriction:  
+    > You can generate up to 20 client secrets per application.
+
 7.  Provide the required info in the pop up.
 
 
@@ -116,7 +119,7 @@ The client ID is in the universally unique identifier \(UUID\) format. For examp
 
 ## Results
 
-Once your secret is generated you can see a table with your secrets and information about them. You can generate up to 20 client secrets per application.
+Once your secret is generated you can see a table with your secrets and information about them.
 
 **Related Information**  
 

@@ -746,6 +746,52 @@ The *decode* function reads the **id** and converts it into a byte array. Afterw
 <tr>
 <td valign="top">
 
+elementAt
+
+</td>
+<td valign="top">
+
+-   **`index`**
+
+    Required: Yes
+
+    Type: Integer
+
+
+
+
+</td>
+<td valign="top">
+
+This function is used to retrieve a specific element from an array based on its index. The index indicates the element you want to access.
+
+Using the **elementAt** function with index 0 in this example results in requesting the first email within an array of primary emails. After evaluating the sourcePath, it returns all primary emails. Applying the **elementAt** function with index 0 then retrieves the first primary email from this array.
+
+> ### Code Syntax:  
+> ```
+> {
+>    "condition":"$.emails[?(@.primary == true)].value != []",
+>    "sourcePath":"$.emails[?(@.primary == true)].value",
+>    "preserveArrayWithSingleElement":true,
+>    "optional":true,
+>    "targetPath":"$.email",
+>    "functions":[
+>       {
+>          "function":"elementAt",
+>          "index":0
+>       }
+>    ]
+> },
+> 
+> ```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 encode
 
 </td>

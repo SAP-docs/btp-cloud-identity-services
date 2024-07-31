@@ -1,15 +1,15 @@
 <!-- loio177108a1e129486983e7c4bc125db3bb -->
 
-# Customer-Controlled Encryption Keys \(Restricted Availability\)
+# Customer Managed Keys \(Restricted Availability\)
 
-Your organization can control the encryption keys for data stored in SAP Cloud Identity Services using [SAP Data Custodian Key Management Service](https://help.sap.com/docs/sap-data-custodian/help-guide/overview?version=latest).
+Your organization can control the encryption keys for data stored in SAP Cloud Identity Services using [SAP Data Custodian Key Management Service](https://help.sap.com/docs/sap-data-custodian/key-management-service/what-is-key-management-service-page).
 
 > ### Caution:  
 > Operations with keys at SAP Data Custodian side must be executed with caution. For example, disabling a key could block the SAP Cloud Identity Services tenant and you won't able to enable the key again.
 > 
-> You can set up workflow approvals to safeguard against unwanted operations changes. For more information, see [Workflow Approval Operations](https://help.sap.com/docs/identity-authentication/identity-authentication/extensions?version=Cloud).
+> You can set up workflow approvals to safeguard against unwanted operations changes. For more information, see [Workflow Approval Operations](https://help.sap.com/docs/sap-data-custodian/help-guide/workflow-approval-operations?version=2305).
 
-Before using the customer-controlled encryption keys, be aware of the following specifics:
+Before using the customer managed keys, be aware of the following specifics:
 
 <a name="concept_ch4_gg5_tyb"/>
 
@@ -76,5 +76,5 @@ Meta information used in general processing, for example data model Version, ten
 
 ## Configuration
 
-To configure the customer-controlled encryption keys in the administration console for SAP Cloud Identity Services, follow the procedure described in [Configure Customer-Controlled Encryption Keys in Administration Console \(Restricted Availability\)](../Operation-Guide/configure-customer-controlled-encryption-keys-in-administration-console-restricted-availa-fe6e30c.md).
+To configure the customer managed keys in the administration console for SAP Cloud Identity Services, follow the procedure described in [Configure Customer Managed Keys in Administration Console \(Restricted Availability\)](../Operation-Guide/configure-customer-managed-keys-in-administration-console-restricted-availability-fe6e30c.md).
 

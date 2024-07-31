@@ -317,7 +317,7 @@ string
 <td valign="top">
 
 -   [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md)
--   [Front-Channel Logout URI Rules](front-channel-logout-uri-rules-789c752.md)
+-   [Logout URI Rules](logout-uri-rules-789c752.md)
 
 
 

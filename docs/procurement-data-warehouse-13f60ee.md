@@ -10,7 +10,12 @@ Follow this procedure to set up procurement data warehouse as a source system.
 
 ## Prerequisites
 
--   You obtain credentials to access the Procurement Data Warehouse API. For more information, see [Procurement Data Warehouse Enrollment URL and Credentials](https://help.sap.com/docs/strategic-sourcing/setting-up-procurement-data-warehouse/procurement-data-warehouse-enrollment-api?state=DRAFT#procurement-data-warehouse-enrollment-url-and-credentials).
+-   You obtain credentials to access the Procurement Data Warehouse API.
+
+    > ### Note:  
+    > To obtain credentials to access the Procurement Data Warehouse API, create a [case](https://support.sap.com/en/index.html) to the component *BNS-ARI-PRI*.
+    > 
+    > In response to the case, SAP provides the certificate needed to access the API as well as the URL for the procurement data warehouse enrollment service, which is landscape-specific and starts with `*.cloud.sap`.
 
 -   You established trust between your SAP BTP subaccount and the SAP Cloud Identity Services - Identity Authentication service. For more information, see [Establishing Trust Automatically](https://help.sap.com/docs/btp/sap-business-technology-platform/establishing-trust-automatically?version=Cloud).
 
@@ -280,7 +285,8 @@ You can use Identity Provisioning to configure procurement data warehouse as a s
 
     You can change the default transformation mapping rules to reflect your current setup of entities in your procurement data warehouse system. For more information, see: [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    Procurement Data Warehouse Enrollment API PUBLIC LINK
+    > ### Note:  
+    > To access the Procurement Data Warehouse API documentation, contact theProcurement Data Warehouse technical support.
 
     **Default transformation:**
 
@@ -325,6 +331,11 @@ You can use Identity Provisioning to configure procurement data warehouse as a s
     >                 "sourcePath": "$.emails",
     >                 "targetPath": "$.emails",
     >                 "preserveArrayWithSingleElement": true
+    >             },
+    >             {
+    >                 "sourcePath": "$.emails[?(@.primary == true)].value",
+    >                 "optional": true,
+    >                 "correlationAttribute": true
     >             },
     >             {
     >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']",
@@ -407,7 +418,6 @@ You can use Identity Provisioning to configure procurement data warehouse as a s
     >         ]
     >     }
     > }
-    > 
     > ```
 
 6.  Now, add a target system to provision users and groups into it. Choose from: [Target Systems](target-systems-ab3f641.md)

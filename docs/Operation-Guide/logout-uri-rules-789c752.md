@@ -1,20 +1,20 @@
 <!-- loio789c752d70e64e6c90839284b511e7d7 -->
 
-# Front-Channel Logout URI Rules
+# Logout URI Rules
 
-Rules for the front-channel URIs.
+Rules for the front and back-channel URIs.
 
 
 
-Identity Authentication triggers a logout request to the front-channel URI.
+Identity Authentication triggers a logout request to the front or back-channel URI.
 
-The front-channel logout URI must be in the following format:
+The front and back-channel logout URI must be in the following format:
 
 `protocol://domain<:port>/<path><?query parameters>`
 
 For example: `https://example.com:70/logout?abc=123`.
 
-When you construct the front-channel URIs have the following in mind:
+When you construct the front and back-channel URIs have the following in mind:
 
 
 
@@ -78,5 +78,7 @@ After the domain part you can put the port numbers. Always use a leading colon \
 
 [Configure Grant Types](configure-grant-types-c342a7b.md "Configure the allowed grant type for your OpenID Connect application.")
 
-[OpenID Connect Front-Channel Logout 1.0](https://openid.net/specs/openid-connect-frontchannel-1_0.html)
+[OpenID Connect Front-Channel Logout 1.0 Specification](https://openid.net/specs/openid-connect-frontchannel-1_0.html)
+
+[OpenID Connect Back-Channel Logout 1.0 Specification](https://openid.net/specs/openid-connect-backchannel-1_0.html#Backchannel)
 

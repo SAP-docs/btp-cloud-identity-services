@@ -29,7 +29,7 @@ The tenant administrator can configure the system to send emails to administrato
 > ### Note:  
 > With the Jul 5, 2023 upgrade, the first administrator in every new tenant, created after that date, and all newly created administrators are automatically subscribed for system notifications.
 
-To start sending security alert emails, proceed as follows:
+To start sending system notifications via emails, proceed as follows:
 
 > ### Caution:  
 > When you delete administrators, their emails remain part of the system notifications configuration and they'll continue to receive notifications. To stop sending notifications, remove the emails from the list.
@@ -51,12 +51,12 @@ To start sending security alert emails, proceed as follows:
     -   *New email* - enter the email that you want to receive notifications.
     -   *All administrators* all tenant administrators will receive the notifications.
 
-5.  Confirm your choice by choosing the *Add* button in the popup.
+5.  Confirm your choice by choosing the *Add* button in the pop up.
 
-6.  Configure the notifications by selecting the desired checkboxes for each email.
+6.  Configure the notifications by selecting the desired check-boxes for each email.
 
     > ### Note:  
-    > By default all checkboxes are selected.
+    > By default all check-boxes are selected.
 
 7.  Save your configuration.
 
@@ -116,7 +116,7 @@ To start sending security alert emails, proceed as follows:
 
 [Send Security Alert Emails](send-security-alert-emails-c977464.md "Send security alert emails to end-users or administrators when changes in their accounts are made.")
 
-[Configure Customer-Controlled Encryption Keys in Administration Console \(Restricted Availability\)](configure-customer-controlled-encryption-keys-in-administration-console-restricted-availa-fe6e30c.md "")
+[Configure Customer Managed Keys in Administration Console \(Restricted Availability\)](configure-customer-managed-keys-in-administration-console-restricted-availability-fe6e30c.md "")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 

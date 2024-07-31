@@ -1,8 +1,8 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: btp-identity-authentication
-Upstream-Contact: NAME SURNAME (EMAIL)
-Source: https://github.com/sap-docs/btp-identity-authentication
+Upstream-Name: btp-cloud-identity-services
+Upstream-Contact: Valentin Atanassov (valentin.atanassov@sap.com)
+Source: https://github.com/sap-docs/btp-cloud-identity-services
 
 Files: *
-Copyright:  2022-2023 SAP SE or an SAP affiliate company and https://github.com/sap-docs/btp-identity-authentication contributors
+Copyright:  2022-2024 SAP SE or an SAP affiliate company and sap-docs/btp-cloud-identity-services contributors
 License: CC-BY-4.0

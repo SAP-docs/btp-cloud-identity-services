@@ -37,12 +37,12 @@ The following SAP cloud solutions bundle with SAP Cloud Identity Services which 
 <tr>
 <th valign="top">
 
-SAP \(A-F\)
+SAP \(A-I\)
 
 </th>
 <th valign="top">
 
-SAP \(G-Z\)
+SAP \(J-Z\)
 
 </th>
 </tr>
@@ -50,8 +50,6 @@ SAP \(G-Z\)
 <td valign="top">
 
 -   SAP Build Work Zone, advanced edition
-
--   SAP Business Ecology Management
 
 -   SAP Business Technology Platform
 
@@ -65,13 +63,13 @@ SAP \(G-Z\)
 
 -   SAP Fieldglass
 
+-   SAP Integrated Business Planning for Supply Chain
+
 
 
 
 </td>
 <td valign="top">
-
--   SAP Integrated Business Planning for Supply Chain
 
 -   SAP Jam Collaboration
 

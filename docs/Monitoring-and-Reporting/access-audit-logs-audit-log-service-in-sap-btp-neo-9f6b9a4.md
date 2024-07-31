@@ -8,8 +8,19 @@ View the audit logs for changes in the personal data, successful, and failed aut
 
 ## Context
 
-> ### Note:  
+> ### Remember:  
 > The content in this section is only relevant for tenants on the SAP infrastructure.
+> 
+> The access of the audit logs for Identity Authentication tenants on the SAP infrastructure in the Audit Log Service in SAP BTP, Neo will be deprecated according to the following timeline:
+> 
+> -   China - Jul 24, 2024
+> -   Saudi Arabia - Jul 31, 2024
+> -   Japan - Sep 11, 2024
+> -   Australia - Oct 2, 2024
+> -   US-East - Oct 9, 2024
+> -   Europe - Oct 23, 2024
+> 
+> We recommend you to use the Audit Log Service in SAP BTP, Cloud Foundry to access the Identity Authentication tenants on both the SAP, and the AWS and Azure infrastructures. For more information, see [Access Audit Logs \(Audit Log Service in SAP BTP, Cloud Foundry\)](access-audit-logs-audit-log-service-in-sap-btp-cloud-foundry-a3e793c.md).
 
 > ### Tip:  
 > If your tenant is on the SAP infrastructure, when you access the administration console for SAP Cloud Identity Services, the *Audit and Change Logs* tile, you see the *Cloud Foundry*, *NEO*, and *Change Logs* options for configurations. If your tenant is on the AWS, Azure infrastructure, you see the *Audit Logs* and *Change Logs* options for configurations.
@@ -94,6 +105,11 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > SAP BTP Host in Request
 > 
 > </th>
+> <th valign="top">
+> 
+> Deprecated
+> 
+> </th>
 > </tr>
 > <tr>
 > <td valign="top" rowspan="2">
@@ -109,6 +125,11 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > <td valign="top">
 > 
 > `eu1.hana.ondemand.com` \(primary\)
+> 
+> </td>
+> <td valign="top" rowspan="2">
+> 
+> Oct 23, 2024
 > 
 > </td>
 > </tr>
@@ -135,11 +156,21 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > `ap1.hana.ondemand.com` \(primary\)
 > 
 > </td>
+> <td valign="top">
+> 
+> Oct 2, 2024
+> 
+> </td>
 > </tr>
 > <tr>
 > <td valign="top">
 > 
 > `jp1.hana.ondemand.com`
+> 
+> </td>
+> <td valign="top">
+> 
+> Sep 11, 2024
 > 
 > </td>
 > </tr>
@@ -159,6 +190,11 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > `jp1.hana.ondemand.com`
 > 
 > </td>
+> <td valign="top">
+> 
+> Sep 11, 2024
+> 
+> </td>
 > </tr>
 > <tr>
 > <td valign="top" rowspan="2">
@@ -174,6 +210,11 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > <td valign="top">
 > 
 > `us3.hana.ondemand.com` \(primary\)
+> 
+> </td>
+> <td valign="top" rowspan="2">
+> 
+> Oct 9, 2024
 > 
 > </td>
 > </tr>
@@ -200,6 +241,11 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > `sa1.hana.ondemand.com`
 > 
 > </td>
+> <td valign="top">
+> 
+> Jul 31, 2024
+> 
+> </td>
 > </tr>
 > <tr>
 > <td valign="top">
@@ -215,6 +261,11 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > <td valign="top">
 > 
 > `cn1.platform.sapcloud.cn`
+> 
+> </td>
+> <td valign="top">
+> 
+> Jul 24, 2024
 > 
 > </td>
 > </tr>
@@ -272,6 +323,11 @@ You can filter the audit logs by time and/or categories. The categories that you
 > SAP BTP Host in Request
 > 
 > </th>
+> <th valign="top">
+> 
+> Deprecated
+> 
+> </th>
 > </tr>
 > <tr>
 > <td valign="top" rowspan="2">
@@ -287,6 +343,11 @@ You can filter the audit logs by time and/or categories. The categories that you
 > <td valign="top">
 > 
 > `eu1.hana.ondemand.com` \(primary\)
+> 
+> </td>
+> <td valign="top" rowspan="2">
+> 
+> Oct 23, 2024
 > 
 > </td>
 > </tr>
@@ -313,11 +374,21 @@ You can filter the audit logs by time and/or categories. The categories that you
 > `ap1.hana.ondemand.com` \(primary\)
 > 
 > </td>
+> <td valign="top">
+> 
+> Oct 2, 2024
+> 
+> </td>
 > </tr>
 > <tr>
 > <td valign="top">
 > 
 > `jp1.hana.ondemand.com`
+> 
+> </td>
+> <td valign="top">
+> 
+> Sep 11, 2024
 > 
 > </td>
 > </tr>
@@ -337,6 +408,11 @@ You can filter the audit logs by time and/or categories. The categories that you
 > `jp1.hana.ondemand.com`
 > 
 > </td>
+> <td valign="top">
+> 
+> Sep 11, 2024
+> 
+> </td>
 > </tr>
 > <tr>
 > <td valign="top" rowspan="2">
@@ -352,6 +428,11 @@ You can filter the audit logs by time and/or categories. The categories that you
 > <td valign="top">
 > 
 > `us3.hana.ondemand.com` \(primary\)
+> 
+> </td>
+> <td valign="top" rowspan="2">
+> 
+> Oct 9, 2024
 > 
 > </td>
 > </tr>
@@ -378,6 +459,11 @@ You can filter the audit logs by time and/or categories. The categories that you
 > `sa1.hana.ondemand.com`
 > 
 > </td>
+> <td valign="top">
+> 
+> Jul 31, 2024
+> 
+> </td>
 > </tr>
 > <tr>
 > <td valign="top">
@@ -393,6 +479,11 @@ You can filter the audit logs by time and/or categories. The categories that you
 > <td valign="top">
 > 
 > `cn1.platform.sapcloud.cn`
+> 
+> </td>
+> <td valign="top">
+> 
+> Jul 24, 2024
 > 
 > </td>
 > </tr>

@@ -17,7 +17,7 @@ The attributes are also put in the `id_token` if the application is OpenID conne
 For both, the SAML 2.0 and OpenID Connect applications, you can configure attributes with dynamic values to be added into the assertions in the following pattern: `<prefix> ${attribute_technical_name>} <suffix>`
 
 > ### Restriction:  
-> \(For OpenID Connect applications\) The following claims can't be set via the configuration of attributes with default values: `iss`, `sub`, `zone_uuid`, `exp`, `nbf`, `iat`, `auth_time`, `nonce`, `acr`, `amr`, `cnf`, `azp`, `at_hash`, `c_hash`, `sub_jwk`, and `ias_iss`.
+> \(For OpenID Connect applications\) The following claims can't be set via the configuration of attributes with default values: `iss`, `sub`, `zone_uuid`, `exp`, `nbf`, `iat`, `auth_time`, `nonce`, `acr`, `amr`, `azpacr``cnf`, `azp`, `at_hash`, `c_hash`, `sub_jwk`, and `ias_iss`.
 
 Expand the **Supported Attributes** table below to see the attributes that can take dynamic values:
 
