@@ -84,7 +84,6 @@ Yes
     > The client ID and secret must be encoded using the "application/x-www-form-urlencoded" encoding algorithm.
 
 -   Bearer <client\_credential\_token\>\)
--   POST
 -   X.509 Certificate
 
 

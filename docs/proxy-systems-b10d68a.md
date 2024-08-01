@@ -474,7 +474,7 @@ Read groups
 <tr>
 <td valign="top">
 
-Delete a user
+Read groups
 
 </td>
 <td valign="top">

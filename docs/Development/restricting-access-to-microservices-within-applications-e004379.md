@@ -2,7 +2,7 @@
 
 # Restricting Access to Microservices Within Applications
 
-To restrict individual OAuth tokens so that they can only be used for internal communication to microservices, you can define API permission groups. This option enables you to limit how a token can be used within and application as well as to reduce the impact if the token being stolen or leaked.
+To restrict individual OAuth tokens so that they can only be used for internal communication to microservices, you can define API permission groups. This option enables you to limit how a token can be used within an application as well as reduce the impact if the token is stolen or leaked.
 
 In this scenario, you have one application that includes a number of microservices. When developing your own applications, we recommend an architecture of tightly integrated microservices under one SAP Cloud Identity Services application over integrating separate SAP Cloud Identity Services where you can. One of these microservices provides APIs and other microservices consume these APIs. You can provide multiple permissions groups and consumer microservices fetch specific tokens for the different API permission groups. You have a choice between client credential and token exchange flows.
 

@@ -4,7 +4,7 @@
 
 Applications sometimes need to propagate principals or have technical communication arrangements between them. To enable OpenID Connect \(OIDC\) applications to consume the APIs of other applications, the developer defines API permission groups for a provider application, which a consumer application can consume through a defined dependency.
 
-In this scenario, you have one application that provides an API and another application that consumes the API. Tenant administrators configure an application to include the audience of the other application in tokens issued by Identity Authentication. You can provide multiple permissions groups and consumer applications fetch specific tokens for the different API permission groups. You have a choice between client credential and token exchange flows.
+In this scenario, you have one application that provides a group of APIs and another application that consumes them. Tenant administrators grant access to the consumer applications for this group. You can develop a technical communication that retrieves a new token with a client credential flow or a principal propagation with a token exchange flow. In either case, the audience of the token matches the provider application. In addition, the `ias_apis` claim lists the granted API permission groups or a fixed value for when all APIs are consumed.
 
 The following figure shows the relationship between two applications in SAP Cloud Identity Services. The provider application offers two API permission groups. The dependency of the consumer application references one of these groups.
 
@@ -14,9 +14,7 @@ The following figure shows the relationship between two applications in SAP Clou
 
 ![](../Operation-Guide/images/App2App_Logical_Model_951e1a7.png "App-to-App Integration")
 
-Alternatively, if your provider application doesn't need to distinguish different API permission groups, make all APIs available. The provider application must check the principal propagated by the consumer application for the authorizations required by the APIs. This scenario is limited to principal propagation.
-
-In the following figure, the provider application doesn't offer any API permission groups. The consumer application references all the available APIs. The provider application depends on the authorizations of the current user when these APIs are accessed.
+Alternatively, if your provider application doesn't need to distinguish different API permission groups and is consumed with principal propagation, make all APIs available. The provider application must check the principal propagated by the consumer application for the authorizations required by the APIs. In the following figure, the provider application doesn't offer any API permission groups. The consumer application references all the available APIs. The provider application depends on the authorizations of the current user when these APIs are accessed.
 
   
   
@@ -39,7 +37,7 @@ In either case, use the `resource` parameter to identify the dependency consumed
 
 For example: <code>urn:sap:identity:application:provider:name:<i class="varname">&lt;Dependency_name&gt;</i></code>
 
-The dependency name is the name that the tenant administrator configures for the dependency between the consumer application and the provider application. Document the name in a scenario guide so that administrators know which name to use when creating dependencies. You might be used to this approach when working with destinations.
+The dependency name is the name that the tenant administrator configures for the dependency between the consumer application and the provider application. Document the name in a scenario guide so that administrators know which name to use when creating dependencies. If you've worked with destinations, you're used to this approach.
 
 In the unusual case that you need a token that reflects multiple dependencies to the same provider application, you can replace <code>name:<i class="varname">&lt;Dependency_name&gt;</i></code> with <code>clientid:<i class="varname">&lt;client_id&gt;</i></code>. Use the client ID of the provider application in Identity Authentication.
 

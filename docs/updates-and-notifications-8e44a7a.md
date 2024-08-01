@@ -19,6 +19,9 @@ To get notifications, subscribe for the What's New section of [Cloud Identity Se
 -   **Bi-weekly updates** \(standard\) - planned each second Tuesday at 14:00 UTC.
 -   **Immediate updates** - in case of fixes required for bugs that affect productive application operations, or due to urgent security fixes.
 
+> ### Note:  
+> No service interruption is expected as a result of the updates.
+
 You can find the planned schedule for upcoming releases at SAP Note [3409744](https://me.sap.com/notes/3409744).
 
 

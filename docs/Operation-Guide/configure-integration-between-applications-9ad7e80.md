@@ -53,7 +53,7 @@ Define a dependency to the API of another application. With this configuration, 
 
 ## Results
 
-The consumer application can consume the specified API of the provider application.
+The consumer application can consume the specified API of the provider application. If the applications were developed with a generic implementation, you must configure the consumer application with the dependency name you provided. See the documentation of the consumer application.
 
 For more information about how application developers use this dependency, see [Consume an API from Another Application](../Development/consume-an-api-from-another-application-9675b64.md).
 

@@ -14,14 +14,14 @@ You can request SAP Cloud ALM on [SAP for Me](https://me.sap.com/) for yourself 
 
 After you've requested SAP Cloud ALM, there are additional configuration steps that are required to set it up for productive use. For more information, see [Required Setup for SAP Cloud ALM](https://help.sap.com/docs/cloud-alm/setup-administration/required-setup).
 
-To be able to use the apps, you must activate the data collection for the corresponding Managed Component:
+To use the apps, you must activate the data collection for the corresponding Managed Component:
 
 -   in the *Configuration & Security Analysis* app. For more information, see [Configuration](https://help.sap.com/docs/cloud-alm/applicationhelp/csa-configuration).
 
 -   in the *Job & Automation Monitoring* app. For more information, see [Job & Automation Monitoring Setup & Configuration](https://support.sap.com/en/alm/sap-cloud-alm/operations/expert-portal/job-monitoring/job-automation-monitoring-details.html).
 
     > ### Note:  
-    > In order to send job data to SAP Cloud ALM you need a service of type *Identity Provisioning*.
+    > To send job data to SAP Cloud ALM, you need a service of type *Identity Provisioning*.
 
 
 
@@ -30,7 +30,10 @@ To be able to use the apps, you must activate the data collection for the corres
 
 ## Configuration & Security Analysis
 
-Via the *Configuration & Security Analysis* app of SAP Cloud ALM, you can ckeck if your Identity ProvisioningSAP Cloud Identity Services - Identity Provisioning tenant and provisioning systems are configured in alignment with the [Security recommendations for SAP Cloud Identity Services - Identity Provisioning](https://help.sap.com/docs/btp/sap-btp-security-recommendations-c8a9bb59fe624f0981efa0eff2497d7d/sap-btp-security-recommendations?version=Cloud).
+Via the *Configuration & Security Analysis* app of SAP Cloud ALM, you can check if your Identity ProvisioningSAP Cloud Identity Services - Identity Provisioning tenant and provisioning systems are configured in alignment with the [Security recommendations for SAP Cloud Identity Services - Identity Provisioning](https://help.sap.com/docs/btp/sap-btp-security-recommendations-c8a9bb59fe624f0981efa0eff2497d7d/sap-btp-security-recommendations?version=Cloud).
+
+> ### Note:  
+> Identity Provisioning reports data to SAP Cloud ALM on a daily basis.
 
 In the *Configuration & Security Analysis* app, the compliance of your configured tenant or systems to the applicable security recommendations is displayed with the following details:
 
@@ -181,10 +184,12 @@ inbound\_authentication\_method
 </td>
 <td valign="top">
 
-*Basic Authentication* or*Certificate Authentication*
+-   *Basic Authentication*
+-   *Certificate Authentication*
+-   empty - if it's a default source system \(not applicable for real time provisioning\)
 
 > ### Note:  
-> The compliance check is relevant for source systems, configured for real-time provisioning, and proxy systems.
+> The compliance check is relevant on a tenant level.
 
 > ### Note:  
 > You must have an existing destination *IPS\_MANAGE\_AUTHORIZATIONS* to be able to preview reliable data and status for the recommendation.
@@ -198,12 +203,13 @@ inbound\_authentication\_method
 
     -   The authentication type configured is Certificate Authentication.
 
-    -   displayed by default for source systems that are not used for real-time provisioning.
+    -   Displayed by default for source systems that are not used for real-time provisioning.
 
+    -   If there is as a System user with configured certificate that possesses at least one of the roles: *Access Real-Time Provisioning API* or *Access Proxy System API*.
 
 -   *NONCOMPLIANT*:
 
-    -   If the authentication type configured is Basic Authentication.
+    -   If no such user exists
 
     -   If there is no configured destination *IPS\_MANAGE\_AUTHORIZATIONS* or its configuration is not correct.
 
@@ -263,6 +269,17 @@ credential\_properties
 <td valign="top">
 
 -   `sensitive property` = *<value\>*
+
+    Possible values:
+
+    -   `true` - if the property is created as `Credential`
+
+        For example, if you have configured `Password` as `Credential`, the result is `Password = true`
+
+    -   `false` - if the property is not created as `Credential`
+
+        For example, if you have configured `ssh.password` as `Standard`, the result is `ssh.password = false`
+
 
 -   empty if there are no sensitive properties configured
 

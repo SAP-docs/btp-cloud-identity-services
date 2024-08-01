@@ -2,9 +2,11 @@
 
 # Call Identity Authentication Revoke Token Endpoint
 
-The revoke token endpoint invalidates any access and refresh tokens issued to the client for the same end-user.
+The revoke token endpoint invalidates any access and refresh tokens issued to the client for the same end-user and session.
 
 
+
+To revoke tokens from other sessions belonging to the same end-user, find the other session and revoke tokens for those sessions separately. For more information about finding user sessions, see [Call Identity Authentication List Sessions Endpoint](call-identity-authentication-list-sessions-endpoint-daf7e44.md).
 
 The token revocation endpoint is implemented according to [RFC 7009 OAuth 2.0 Token Revocation](https://www.rfc-editor.org/rfc/rfc7009.html).
 
@@ -83,9 +85,8 @@ Yes
     > ### Note:  
     > The client ID and secret must be encoded using the "application/x-www-form-urlencoded" encoding algorithm.
 
--   POST
 -   X.509 Certificate
--   Bearer <client\_credential\_token\>\)
+-   Bearer *<client\_credential\_token\>*\)
 
 
 

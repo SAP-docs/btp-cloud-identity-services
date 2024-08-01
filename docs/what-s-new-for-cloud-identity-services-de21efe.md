@@ -77,6 +77,11 @@ Latest Revision
 Available as of
 
 </th>
+<th valign="top">
+
+Version
+
+</th>
 </tr>
 <tr>
 <td valign="top">
@@ -135,12 +140,88 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+2024-07-30
+
+</td>
+<td valign="top">
+
+2024-07-30
+
+</td>
+<td valign="top">
+
+2407b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Off-Cycle Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
 2024-07-26
 
 </td>
 <td valign="top">
 
 2024-07-26
+
+</td>
+<td valign="top">
+
+Off-Cycle
 
 </td>
 </tr>
@@ -209,6 +290,11 @@ Cloud Identity Services
 2024-07-26
 
 </td>
+<td valign="top">
+
+Off-Cycle
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -273,6 +359,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-07-26
+
+</td>
+<td valign="top">
+
+Off-Cycle
 
 </td>
 </tr>
@@ -343,6 +434,11 @@ Cloud Identity Services
 2024-07-25
 
 </td>
+<td valign="top">
+
+2407a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -411,6 +507,11 @@ Cloud Identity Services
 2024-07-23
 
 </td>
+<td valign="top">
+
+2407a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -436,7 +537,7 @@ SAP Central Business Configuration bundle extended with SAP BTP XS Advanced UAA 
 
 The scope of SAP Central Business Configuration bundle option is now extended and includes the SAP BTP XS Advanced UAA as a target system.
 
-For more information, see [SAP Central Business Configuration Bundle](sap-central-business-configuration-bundle-44e8673.md).
+See [SAP Central Business Configuration Bundle](sap-central-business-configuration-bundle-44e8673.md).
 
 </td>
 <td valign="top">
@@ -477,6 +578,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-07-23
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -543,6 +649,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-07-17
+
+</td>
+<td valign="top">
+
+2407a
 
 </td>
 </tr>
@@ -618,6 +729,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-07-17
+
+</td>
+<td valign="top">
+
+2407a
 
 </td>
 </tr>
@@ -702,6 +818,11 @@ Cloud Identity Services
 2024-07-17
 
 </td>
+<td valign="top">
+
+2407a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -725,7 +846,7 @@ User Management
 </td>
 <td valign="top">
 
-As of August 13, 2024, the `meta.lastModified` attribute will no longer be modified after you sign in. See [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users).
+As of September 10, 2024, the `meta.lastModified` attribute will no longer be modified after you sign in. See [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users).
 
 </td>
 <td valign="top">
@@ -768,6 +889,11 @@ Cloud Identity Services
 2024-07-17
 
 </td>
+<td valign="top">
+
+2407a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -793,7 +919,7 @@ Support for OAuth certificate authentication
 
 Identity Provisioning supports OAuth certificate authentication for communication with Procurement Data Warehouse and SAP Business Network provisioning systems.
 
-For more information, see [Configure OAuth Certificate Authentication](Operation-Guide/configure-oauth-certificate-authentication-a40a3f3.md).
+See [Configure OAuth Certificate Authentication](Operation-Guide/configure-oauth-certificate-authentication-a40a3f3.md).
 
 </td>
 <td valign="top">
@@ -836,6 +962,11 @@ Cloud Identity Services
 2024-07-17
 
 </td>
+<td valign="top">
+
+2407a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -859,7 +990,7 @@ Procurement Data Warehouse connector
 </td>
 <td valign="top">
 
-Identity Provisioning supports the Procurement Data Warehouse connector. You can configure it as source, target, and proxy system for your provisioning scenarios. For more information, see:
+Identity Provisioning supports the Procurement Data Warehouse connector. You can configure it as source, target, and proxy system for your provisioning scenarios. See:
 
 -   [Procurement Data Warehouse \(Source\)](procurement-data-warehouse-13f60ee.md)
 
@@ -911,6 +1042,11 @@ Cloud Identity Services
 2024-07-17
 
 </td>
+<td valign="top">
+
+2407a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -938,7 +1074,7 @@ The default transformations of Local Identity Directory provisioning systems are
 
 The applicationId allows Identity Provisioning to replicate application-specific groups to the Identity Directory.
 
-For more information, see:
+See:
 
 -   [Groups](groups-d93be69.md)
 -   [Local Identity Directory \(Source\)](local-identity-directory-8c7d05e.md)
@@ -988,6 +1124,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-07-17
+
+</td>
+<td valign="top">
+
+2407a
 
 </td>
 </tr>
@@ -1056,6 +1197,11 @@ Cloud Identity Services
 2024-07-17
 
 </td>
+<td valign="top">
+
+2407a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -1083,7 +1229,7 @@ Identity Provisioning introduces the `ips.application.id` property, which holds 
 
 Currently, it is supported forSAP Advanced Financial Closing only.
 
-For more information, see [List of Properties](list-of-properties-d6f3577.md) →`ips.application.id`.
+See [List of Properties](list-of-properties-d6f3577.md) →`ips.application.id`.
 
 </td>
 <td valign="top">
@@ -1118,12 +1264,17 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2024-07-16
+2024-07-17
 
 </td>
 <td valign="top">
 
-2024-07-16
+2024-07-17
+
+</td>
+<td valign="top">
+
+2407a
 
 </td>
 </tr>
@@ -1155,7 +1306,7 @@ These transformations include *type* and *supportedOperations* group attributes.
 
 The read transformation is also extended with a condition. It checks that the `ips.application.id` property contains a value and is not null.
 
-For more information, see:
+See:
 
 -   [SAP Advanced Financial Closing](sap-advanced-financial-closing-fd9895d.md)
 
@@ -1205,6 +1356,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-07-17
+
+</td>
+<td valign="top">
+
+2407a
 
 </td>
 </tr>
@@ -1271,6 +1427,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-07-02
+
+</td>
+<td valign="top">
+
+2406b
 
 </td>
 </tr>
@@ -1348,6 +1509,11 @@ Cloud Identity Services
 2024-07-02
 
 </td>
+<td valign="top">
+
+2406b
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -1423,6 +1589,11 @@ Cloud Identity Services
 2024-07-02
 
 </td>
+<td valign="top">
+
+2406b
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -1448,7 +1619,7 @@ Security recommendations for SAP Cloud Identity Services - Identity Provisioning
 
 Security recommendations for SAP Cloud Identity Services - Identity Provisioning are now available to help you secure its configuration and operation in your landscape.
 
-For more information, see [Security Information](Security/security-information-6e88d82.md).
+See [Security Information](Security/security-information-6e88d82.md).
 
 </td>
 <td valign="top">
@@ -1491,6 +1662,11 @@ Cloud Identity Services
 2024-07-02
 
 </td>
+<td valign="top">
+
+2406b
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -1516,7 +1692,7 @@ Cloud Identity Services
 
 The `skipOperations create` is enhanced and works properly for SAP Analytics Cloud version 1 target systems. When Identity Provisioning tries to provision a user that already exists in the target system, the service resolves the ID of the user and can now add it to the request body of the PUT update request.
 
-For more information, see [SAP Analytics Cloud](sap-analytics-cloud-ea6a89d.md).
+See [SAP Analytics Cloud](sap-analytics-cloud-ea6a89d.md).
 
 </td>
 <td valign="top">
@@ -1557,6 +1733,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-07-02
+
+</td>
+<td valign="top">
+
+2406b
 
 </td>
 </tr>
@@ -1625,6 +1806,11 @@ Cloud Identity Services
 2024-06-25
 
 </td>
+<td valign="top">
+
+Off-Cycle
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -1689,6 +1875,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-06-20
+
+</td>
+<td valign="top">
+
+2406a
 
 </td>
 </tr>
@@ -1770,6 +1961,11 @@ Cloud Identity Services
 2024-06-20
 
 </td>
+<td valign="top">
+
+2406a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -1838,6 +2034,11 @@ Cloud Identity Services
 2024-06-20
 
 </td>
+<td valign="top">
+
+2406a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -1861,7 +2062,7 @@ SAP Ariba Category Management connector
 </td>
 <td valign="top">
 
-Identity Provisioning supports the SAP Ariba Category Management connector. You can configure it as source, target, and proxy system for your provisioning scenarios. For more information, see:
+Identity Provisioning supports the SAP Ariba Category Management connector. You can configure it as source, target, and proxy system for your provisioning scenarios. See:
 
 -   [SAP Ariba Category Management \(Source\)](sap-ariba-category-management-e6a0606.md)
 
@@ -1911,6 +2112,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-06-20
+
+</td>
+<td valign="top">
+
+2406a
 
 </td>
 </tr>
@@ -1977,6 +2183,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-06-14
+
+</td>
+<td valign="top">
+
+Off-Cycle
 
 </td>
 </tr>
@@ -2047,6 +2258,11 @@ Cloud Identity Services
 2024-06-14
 
 </td>
+<td valign="top">
+
+Off-Cycle
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2113,6 +2329,11 @@ Cloud Identity Services
 2024-06-05
 
 </td>
+<td valign="top">
+
+2405b
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2138,7 +2359,7 @@ User update capability for SAP Build Work Zone, standard edition
 
 Identity Provisioning now supports update operation for existing users in SAP Build Work Zone, standard edition target and proxy systems. Up to now users could only be created and deleted in the SAP Build Work Zone, standard edition systems.
 
-For more information, see:
+See:
 
 -   [SAP Build Work Zone, standard edition \(Target\)](sap-build-work-zone-standard-edition-8d6586f.md)
 
@@ -2188,6 +2409,11 @@ Not applicable
 2024-06-05
 
 </td>
+<td valign="top">
+
+2405b
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2213,7 +2439,7 @@ SAP Market Communication for Utilities - bundle option documentation
 
 Documentation for SAP Market Communication for Utilities bundle option is now available.
 
-For more information, see: [SAP Market Communication for Utilities Bundle](sap-market-communication-for-utilities-bundle-79b84ff.md)
+See: [SAP Market Communication for Utilities Bundle](sap-market-communication-for-utilities-bundle-79b84ff.md)
 
 </td>
 <td valign="top">
@@ -2256,6 +2482,11 @@ Not applicable
 2024-06-05
 
 </td>
+<td valign="top">
+
+2405b
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2281,7 +2512,7 @@ Real-time logs show the origin of the users
 
 Real-time logs have been improved. They now show the origin of the users that have been created, updated, or deleted in the SAP BTP XS Advanced UAA \(Cloud Foundry\) target system.
 
-For more information, see: [Monitor Real-Time Logs](Monitoring-and-Reporting/monitor-real-time-logs-a8deb0d.md).
+See: [Monitor Real-Time Logs](Monitoring-and-Reporting/monitor-real-time-logs-a8deb0d.md).
 
 </td>
 <td valign="top">
@@ -2322,6 +2553,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-06-05
+
+</td>
+<td valign="top">
+
+2405b
 
 </td>
 </tr>
@@ -2390,6 +2626,11 @@ Cloud Identity Services
 2024-06-05
 
 </td>
+<td valign="top">
+
+2405b
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2456,6 +2697,11 @@ Cloud Identity Services
 2024-06-05
 
 </td>
+<td valign="top">
+
+2405b
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2481,7 +2727,7 @@ Integration of SAML and OIDC Logout Flows
 
 The service adds support for OpenID Connect \(OIDC\) back-channel logout. OIDC back-channel logout is integrated with the existing support for OIDC front-channel logout and Security Assertion Markup Language \(SAML\) logout.
 
-For more information, see [Logout URI Rules](Operation-Guide/logout-uri-rules-789c752.md).
+See [Logout URI Rules](Operation-Guide/logout-uri-rules-789c752.md).
 
 </td>
 <td valign="top">
@@ -2522,6 +2768,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-06-05
+
+</td>
+<td valign="top">
+
+2405b
 
 </td>
 </tr>
@@ -2590,6 +2841,11 @@ Cloud Identity Services
 2024-05-22
 
 </td>
+<td valign="top">
+
+2405a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2654,6 +2910,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-05-22
+
+</td>
+<td valign="top">
+
+2405a
 
 </td>
 </tr>
@@ -2722,6 +2983,11 @@ Cloud Identity Services
 2024-05-22
 
 </td>
+<td valign="top">
+
+2405a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2786,6 +3052,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-05-22
+
+</td>
+<td valign="top">
+
+2405a
 
 </td>
 </tr>
@@ -2856,6 +3127,11 @@ Cloud Identity Services
 2024-05-22
 
 </td>
+<td valign="top">
+
+2405a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2883,7 +3159,7 @@ Microsoft Entra ID source and proxy provisioning systems are now enhanced to sup
 
 Previously, this option was possible only for the Microsoft Entra ID target system.
 
-For more information, see [Handle Failed Operations](Operation-Guide/handle-failed-operations-0382a0c.md).
+See [Handle Failed Operations](Operation-Guide/handle-failed-operations-0382a0c.md).
 
 </td>
 <td valign="top">
@@ -2926,6 +3202,11 @@ Cloud Identity Services
 2024-05-22
 
 </td>
+<td valign="top">
+
+2405a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2949,7 +3230,7 @@ SAP SuccessFactors Employee Central Payroll connector
 </td>
 <td valign="top">
 
-Identity Provisioning supports the SAP SuccessFactors Employee Central Payroll connector. You can configure it as source, target, and proxy system for your provisioning scenarios. For more information, see:
+Identity Provisioning supports the SAP SuccessFactors Employee Central Payroll connector. You can configure it as source, target, and proxy system for your provisioning scenarios. See:
 
 -   [SAP SuccessFactors Employee Central Payroll \(Source\)](sap-successfactors-employee-central-payroll-94d8979.md)
 
@@ -3001,6 +3282,11 @@ Cloud Identity Services
 2024-05-22
 
 </td>
+<td valign="top">
+
+2405a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -3026,7 +3312,7 @@ Data type name changed
 
 In the Identity Provisioning graphical editor, the Object and ObjectArray data types for transformation expressions, such as constant and defaultValue, have been renamed to JSONObject and JSONObjectArray, respectively.
 
-For more information, see [Transformation Expressions](transformation-expressions-bb8537b.md).
+See [Transformation Expressions](transformation-expressions-bb8537b.md).
 
 </td>
 <td valign="top">
@@ -3067,6 +3353,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-05-08
+
+</td>
+<td valign="top">
+
+2404b
 
 </td>
 </tr>
@@ -3133,6 +3424,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-05-08
+
+</td>
+<td valign="top">
+
+2404b
 
 </td>
 </tr>
@@ -3201,6 +3497,11 @@ Cloud Identity Services
 2024-05-08
 
 </td>
+<td valign="top">
+
+2404b
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -3267,6 +3568,11 @@ Cloud Identity Services
 2024-05-08
 
 </td>
+<td valign="top">
+
+2404b
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -3331,6 +3637,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-04-25
+
+</td>
+<td valign="top">
+
+2404a
 
 </td>
 </tr>
@@ -3399,6 +3710,11 @@ Cloud Identity Services
 2024-04-25
 
 </td>
+<td valign="top">
+
+2404a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -3463,6 +3779,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-04-25
+
+</td>
+<td valign="top">
+
+2404a
 
 </td>
 </tr>
@@ -3531,6 +3852,11 @@ Cloud Identity Services
 2024-04-25
 
 </td>
+<td valign="top">
+
+2404a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -3595,6 +3921,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-04-25
+
+</td>
+<td valign="top">
+
+2404a
 
 </td>
 </tr>
@@ -3663,6 +3994,11 @@ Cloud Identity Services
 2024-04-25
 
 </td>
+<td valign="top">
+
+2404a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -3727,6 +4063,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-04-25
+
+</td>
+<td valign="top">
+
+2404a
 
 </td>
 </tr>
@@ -3795,6 +4136,11 @@ Cloud Identity Services
 2024-04-25
 
 </td>
+<td valign="top">
+
+2404a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -3822,7 +4168,7 @@ The data type of all transformation expressions is now displayed in the Identity
 
 Some expressions have predefined read-only values, like optional is always set to Boolean. Others, like constant, are configurable and can be set as String, Integer, Boolean, Object, StringArray, IntegerArray, BooleanArray and ObjectArray.
 
-For more information, see [Working with Graphical Editor](Operation-Guide/working-with-graphical-editor-a985398.md).
+See [Working with Graphical Editor](Operation-Guide/working-with-graphical-editor-a985398.md).
 
 </td>
 <td valign="top">
@@ -3865,6 +4211,11 @@ Cloud Identity Services
 2024-04-25
 
 </td>
+<td valign="top">
+
+2404a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -3894,7 +4245,7 @@ As of now, if the backend system provides the actual value of the `totalResults`
 
 Previously, the value of `totalResults` attribute was the sum of the request parameters `startIndex` and `count`. This calculation mechanism remains unchanged for backend systems which do not provide value for the `totalResults` attribute.
 
-For more information, see: SAP Business Accelerator Hub: [SAP Cloud Identity Services](https://api.sap.com/package/SCPIdentityServices/rest) *Identity Provisioning Service* \> *API Reference* \> *Users/Groups*
+See: SAP Business Accelerator Hub: [SAP Cloud Identity Services](https://api.sap.com/package/SCPIdentityServices/rest) *Identity Provisioning Service* \> *API Reference* \> *Users/Groups*
 
 </td>
 <td valign="top">
@@ -3935,6 +4286,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-04-25
+
+</td>
+<td valign="top">
+
+2404a
 
 </td>
 </tr>
@@ -3962,7 +4318,7 @@ Renamed System
 
 The SAP Commissions connector has been renamed to SAP SuccessFactors Incentive Management.
 
-For more information, see: [SAP SuccessFactors Incentive Management](sap-successfactors-incentive-management-3064fe2.md).
+See: [SAP SuccessFactors Incentive Management](sap-successfactors-incentive-management-3064fe2.md).
 
 </td>
 <td valign="top">
@@ -4003,6 +4359,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-04-25
+
+</td>
+<td valign="top">
+
+2404a
 
 </td>
 </tr>
@@ -4071,6 +4432,11 @@ Cloud Identity Services
 2024-04-10
 
 </td>
+<td valign="top">
+
+2403b
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -4137,6 +4503,11 @@ Cloud Identity Services
 2024-04-10
 
 </td>
+<td valign="top">
+
+2403b
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -4162,7 +4533,7 @@ SAP Intelligent Agriculture connector
 
 Identity Provisioning supports SAP Intelligent Agriculture connector.
 
-You can configure it as source, target and proxy system for your provisioning scenarios. For more information, see:
+You can configure it as source, target and proxy system for your provisioning scenarios. See:
 
 -   [SAP Intelligent Agriculture \(Source\)](sap-intelligent-agriculture-9e47e03.md)
 
@@ -4212,6 +4583,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-04-10
+
+</td>
+<td valign="top">
+
+2403b
 
 </td>
 </tr>
@@ -4289,6 +4665,11 @@ Cloud Identity Services
 2024-04-10
 
 </td>
+<td valign="top">
+
+2403b
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -4353,6 +4734,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-03-27
+
+</td>
+<td valign="top">
+
+2403a
 
 </td>
 </tr>
@@ -4421,6 +4807,11 @@ Cloud Identity Services
 2024-03-27
 
 </td>
+<td valign="top">
+
+2403a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -4485,6 +4876,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-03-27
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4553,6 +4949,11 @@ Cloud Identity Services
 2024-03-27
 
 </td>
+<td valign="top">
+
+2403a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -4617,6 +5018,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-03-27
+
+</td>
+<td valign="top">
+
+2403a
 
 </td>
 </tr>
@@ -4687,6 +5093,11 @@ Cloud Identity Services
 2024-03-20
 
 </td>
+<td valign="top">
+
+Off-Cycle
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -4753,70 +5164,9 @@ Cloud Identity Services
 2024-03-20
 
 </td>
-</tr>
-<tr>
 <td valign="top">
 
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Off-Cycle Upgrade
-
-</td>
-<td valign="top">
-
-Identity Authentication has been upgraded.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
-2024-03-15
-
-</td>
-<td valign="top">
-
-2024-03-15
+Off-Cycle
 
 </td>
 </tr>
@@ -4883,6 +5233,82 @@ Cloud Identity Services
 <td valign="top">
 
 2024-03-15
+
+</td>
+<td valign="top">
+
+Off-Cycle
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Off-Cycle Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services
+
+</td>
+<td valign="top">
+
+2024-03-15
+
+</td>
+<td valign="top">
+
+2024-03-15
+
+</td>
+<td valign="top">
+
+Off-Cycle
 
 </td>
 </tr>
@@ -4949,6 +5375,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-03-12
+
+</td>
+<td valign="top">
+
+2402b
 
 </td>
 </tr>
@@ -5017,6 +5448,11 @@ Cloud Identity Services
 2024-03-12
 
 </td>
+<td valign="top">
+
+2402b
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -5081,6 +5517,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-03-12
+
+</td>
+<td valign="top">
+
+2402b
 
 </td>
 </tr>
@@ -5149,6 +5590,11 @@ Cloud Identity Services
 2024-03-12
 
 </td>
+<td valign="top">
+
+2402b
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -5213,6 +5659,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-02-28
+
+</td>
+<td valign="top">
+
+2402a
 
 </td>
 </tr>
@@ -5281,6 +5732,11 @@ Cloud Identity Services
 2024-02-28
 
 </td>
+<td valign="top">
+
+2402a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -5347,6 +5803,11 @@ Cloud Identity Services
 2024-02-28
 
 </td>
+<td valign="top">
+
+2402a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -5411,6 +5872,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-02-13
+
+</td>
+<td valign="top">
+
+2401b
 
 </td>
 </tr>
@@ -5479,6 +5945,11 @@ Cloud Identity Services
 2024-02-13
 
 </td>
+<td valign="top">
+
+2401b
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -5545,6 +6016,11 @@ Cloud Identity Services
 2024-02-06
 
 </td>
+<td valign="top">
+
+Off-Cycle
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -5609,6 +6085,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-01-30
+
+</td>
+<td valign="top">
+
+2401a
 
 </td>
 </tr>
@@ -5677,6 +6158,11 @@ Cloud Identity Services
 2024-01-30
 
 </td>
+<td valign="top">
+
+2401a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -5741,6 +6227,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-01-30
+
+</td>
+<td valign="top">
+
+2401a
 
 </td>
 </tr>
@@ -5809,6 +6300,11 @@ Cloud Identity Services
 2024-01-24
 
 </td>
+<td valign="top">
+
+Off-Cycle
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -5873,6 +6369,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-01-16
+
+</td>
+<td valign="top">
+
+2313b
 
 </td>
 </tr>
@@ -5941,6 +6442,11 @@ Cloud Identity Services
 2024-01-16
 
 </td>
+<td valign="top">
+
+2313b
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -6005,6 +6511,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-01-16
+
+</td>
+<td valign="top">
+
+2313b
 
 </td>
 </tr>
@@ -6079,6 +6590,11 @@ Cloud Identity Services
 2024-01-11
 
 </td>
+<td valign="top">
+
+ 
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -6143,6 +6659,11 @@ Cloud Identity Services
 <td valign="top">
 
 2024-01-04
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
