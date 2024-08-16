@@ -100,6 +100,611 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Off-Cycle Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-08-13
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+2408a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Management
+
+</td>
+<td valign="top">
+
+Cloud Identity Services now supports filtering by `loginTime`. Supported operators are :`eq`, `ne`, `sw`, `gt`, `lt`. See [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-08-13
+
+</td>
+<td valign="top">
+
+2024-08-13
+
+</td>
+<td valign="top">
+
+2408a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Condition and skip update - changed behavior
+
+</td>
+<td valign="top">
+
+As of September 10, 2024, Identity Provisioning will change the behavior of target transformations that contain a combination of condition and skip operations for updates. For example:
+
+> ### Code Syntax:  
+> ```
+> "condition": "$.groups empty false",
+> "skipOperations": ["update"], 
+> ```
+
+Currently, the skip operation is evaluated before the condition. If any users or groups have been updated in the source system, they are marked as skipped in the logs, and Identity Provisioning does not proceed to evaluate the condition. As a result, users or groups that do not meet the condition are not deleted as they should be.
+
+Following the change, the condition will be evaluated first. Users and groups who do not match the condition will be deleted. After the condition is evaluated, the skip operation will determine whether the remaining users will be skipped or provisioned.
+
+For more information, see [Transformation Expressions](transformation-expressions-bb8537b.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-08-13
+
+</td>
+<td valign="top">
+
+2024-08-13
+
+</td>
+<td valign="top">
+
+2408a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+isValidEmail function supports new value
+
+</td>
+<td valign="top">
+
+The conditional function `isValidEmail` can now accept the following value `$.emails[*].value`. In cases where users have multiple emails, this function will validate each email in the emails array.
+
+For more information, see [Transformation Functions](transformation-functions-0cdac7c.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-08-13
+
+</td>
+<td valign="top">
+
+2024-08-13
+
+</td>
+<td valign="top">
+
+2408a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Read and proxy read transformation changes
+
+</td>
+<td valign="top">
+
+The mapping which omits the display of groups under the user entity is removed from the default read and proxy read transformations of the Identity Authentication and Local Identity Directory connectors.
+
+This makes possible filtering users by groups display name when using condition in the target system.
+
+For more information, see [Identity Authentication](identity-authentication-e4e25f1.md) and [Local Identity Directory](local-identity-directory-8c7d05e.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-08-13
+
+</td>
+<td valign="top">
+
+2024-08-13
+
+</td>
+<td valign="top">
+
+2408a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Write and proxy write transformation changes
+
+</td>
+<td valign="top">
+
+A userName mapping that was previously used to ensure that patch operations worked correctly for Local Identity Directory on the Neo environment, is now removed. Currently, you only need to set `scim.support.patch.operation = true` on the target system.
+
+For more information, see [Local Identity Directory](local-identity-directory-59557ae.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-08-13
+
+</td>
+<td valign="top">
+
+2024-08-13
+
+</td>
+<td valign="top">
+
+2408a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regional Availability
+
+</td>
+<td valign="top">
+
+Cloud Identity Services now operates with three additional IPs in the data center in South Korea:
+
+Action:
+
+We recommend you to add the following IPs to your allowed IP list:
+
+-   LB IP - 3.35.109.127, 3.37.25.236, 15.164.195.144
+-   NAT IP 3.39.112.56/32, 54.180.170.146/32, 3.38.127.188/32, 43.202.135.25/32, 3.36.27.20/32, 52.79.160.50/32
+
+The following NAT IPs are no longer in use: 13.125.196.137/32, 3.34.68.186/32, 52.79.155.87/32. See [Regional Availability](regional-availability-be600ca.md).
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-08-14
+
+</td>
+<td valign="top">
+
+2024-08-14
+
+</td>
+<td valign="top">
+
+2408a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regional Availability
+
+</td>
+<td valign="top">
+
+Cloud Identity Services now operates with three new IPs in the data center in India:
+
+Action:
+
+We recommend you to add the following IPs to your allowed IP list: LB IP - 3.6.178.171, 43.205.3.38, 3.6.141.120
+
+The following IPs are no longer in use: LB IP - 43.204.242.5, 13.234.128.163, 13.202.113.251
+
+See [Regional Availability](regional-availability-be600ca.md).
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-08-14
+
+</td>
+<td valign="top">
+
+2024-08-14
+
+</td>
+<td valign="top">
+
+2408a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Regular Upgrade
 
 </td>
@@ -252,7 +857,7 @@ You can change the appearance of the administration console by selecting the *SA
 </td>
 <td valign="top">
 
-Info only
+
 
 </td>
 <td valign="top">

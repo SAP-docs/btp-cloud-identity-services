@@ -13,7 +13,6 @@ View the audit logs for changes in the personal data, successful, and failed aut
 > 
 > The access of the audit logs for Identity Authentication tenants on the SAP infrastructure in the Audit Log Service in SAP BTP, Neo will be deprecated according to the following timeline:
 > 
-> -   China - Jul 24, 2024
 > -   Saudi Arabia - Jul 31, 2024
 > -   Japan - Sep 11, 2024
 > -   Australia - Oct 2, 2024
@@ -247,28 +246,6 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > 
 > </td>
 > </tr>
-> <tr>
-> <td valign="top">
-> 
-> China
-> 
-> </td>
-> <td valign="top">
-> 
-> Shanghai
-> 
-> </td>
-> <td valign="top">
-> 
-> `cn1.platform.sapcloud.cn`
-> 
-> </td>
-> <td valign="top">
-> 
-> Jul 24, 2024
-> 
-> </td>
-> </tr>
 > </table>
 > 
 > Use the primary host for your search. If the audit log is not found there, use the other hosts.
@@ -462,28 +439,6 @@ You can filter the audit logs by time and/or categories. The categories that you
 > <td valign="top">
 > 
 > Jul 31, 2024
-> 
-> </td>
-> </tr>
-> <tr>
-> <td valign="top">
-> 
-> China
-> 
-> </td>
-> <td valign="top">
-> 
-> Shanghai
-> 
-> </td>
-> <td valign="top">
-> 
-> `cn1.platform.sapcloud.cn`
-> 
-> </td>
-> <td valign="top">
-> 
-> Jul 24, 2024
 > 
 > </td>
 > </tr>

@@ -30,8 +30,9 @@ The syntax of the properties is as follows:
 		"token-policy": {
 			"token-validity": 1800,
 			"refresh-validity": 7776000,
-			"refresh-parallel" : 3
-			"refresh-usage-after-renewal" : "off"
+			"refresh-parallel" : 3,
+			"refresh-usage-after-renewal" : "off",
+			"grant-types": ["client_credentials", "authorization_code"]
 		}
 	},
 	"consumed-services": [{
@@ -119,7 +120,7 @@ Limits:
 </td>
 <td valign="top">
 
-Is an array of redirect URIs that are explicitly allowed for the authorization code flow.
+An array of redirect URIs that are explicitly allowed for the authorization code flow.
 
 > ### Restriction:  
 > Redirect URIs are required for the authorization code flow to redirect back to your application.
@@ -138,7 +139,7 @@ For more information, see [OpenID Connect Application Configurations](../Operati
 </td>
 <td valign="top">
 
-Is an array of redirect URIs, where users can be forwarded after logout.
+An array of redirect URIs, where users can be forwarded after logout.
 
 This property is empty by default.
 
@@ -154,7 +155,7 @@ For more information, see [Call Identity Authentication End Session Endpoint](..
 </td>
 <td valign="top">
 
-Is an array of logout URIs, which are called in a logout flow.
+An array of logout URIs, which are called in a logout flow.
 
 This property is empty by default.
 
@@ -266,6 +267,20 @@ Defines the validity of the old refresh token after requesting a new one through
 <tr>
 <td valign="top">
 
+`grant-types`
+
+</td>
+<td valign="top">
+
+An array of allowed grant types. By default, the following grant types are allowed: `client_credentials`, `password`, `authorization_code`, `refresh_token`, and `urn:ietf:params:oauth:grant-type:token-exchange`.
+
+The following grant types can be added: `implicit`, `urn:ietf:params:oauth:grant-type:jwt-bearer` and `authorization_code_pkce_s256`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `consumed-services`
 
 </td>
@@ -288,7 +303,7 @@ This property is empty by default.
 </td>
 <td valign="top">
 
-Set to `true` to add the client ID of the Identity Authentication application created by the SAP Authorization and Trust Management service \(XSUAA\) to the audience claim. Setting `xsuaa-cross-consumption` enables cross consumption of SAP Authorization and Trust Management service.
+Set to `true` to add the client ID of the Identity Authentication application created by the SAP Authorization and Trust Management service \(XSUAA\) to the audience claim. Setting `xsuaa-cross-consumption` enables cross-consumption of SAP Authorization and Trust Management service.
 
 > ### Note:  
 > If the token is retrieved based on a public flow \(`public-client` is true\) without client authentication, Identity Authentication doesn't add the client IDs of the dependent services to the audience claim.
@@ -322,7 +337,7 @@ By default, the Identity Authentication service uses the name of the instance yo
 </td>
 <td valign="top">
 
-Sets the value to use to fill the subject claim in tokens issues by the service.
+Sets the value to use to fill the subject claim in tokens issued by the service.
 
 The `attribute` attribute identifies the user attribute used to fill the subject claim. The attribute supports the following values:
 
