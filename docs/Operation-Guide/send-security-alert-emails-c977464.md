@@ -29,6 +29,8 @@ The tenant administrator can configure the system to send security alert emails 
 > ### Remember:  
 > It takes 2 minutes for the configuration changes to take place.
 
+Only the affected user \(end-user or administrator\) receives the security alert email.
+
 The security alert e-mails are disabled by default. To start sending security alert e-mails, proceed as follows:
 
 
@@ -51,7 +53,7 @@ The security alert e-mails are disabled by default. To start sending security al
 **Related Information**  
 
 
-[Tenant SAML 2.0 Configuration](tenant-saml-2-0-configuration-e81a19b.md "You as a tenant administrator can view and download the tenant SAML 2.0 metadata. You can also change the name format and update your certificate used by the identity provider to digitally sign the messages for the applications.")
+[Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md "You as a tenant administrator can view and download the tenant SAML 2.0 metadata. You can also change the name format and update your certificate used by the identity provider to digitally sign the messages for the applications.")
 
 [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md "You as a tenant administrator can view and configure the tenant OpenID Connect configurations.")
 

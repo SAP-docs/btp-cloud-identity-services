@@ -300,18 +300,25 @@ cf-eu10 - Europe \(Frankfurt\)
 
     The Cloud Identity Services appears under the *Subscriptions* tab.
 
-4.  Install an Cloud Connector in your corporate network.
+4.  From the *Cloud Service Type* dropdown, choose for what type of tenant \(test or productive\) you want to use the subaccount.
+
+    -   *Test*
+
+    -   *Productive* - default value
+
+
+5.  Install an Cloud Connector in your corporate network.
 
     For more information, see [Installation](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/57ae3d62f63440f7952e57bfcef948d3.html).
 
-5.  Connect the Cloud Connector between your corporate user store and SAP BTP account.
+6.  Connect the Cloud Connector between your corporate user store and SAP BTP account.
 
     -   If you haven't used your Cloud Connector before, see [Initial Configuration](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/db9170a7d97610148537d5a84bf79ba2.html).
 
     -   If you have used your Cloud Connector before, you can start the configuration from [Set up Connection Parameters and HTTPS proxy](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/db9170a7d97610148537d5a84bf79ba2.html#loiodb9170a7d97610148537d5a84bf79ba2__configure_proxy).
 
 
-6.  Connect SAP BTP with your corporate user store.
+7.  Connect SAP BTP with your corporate user store.
 
     > ### Note:  
     > You have to specify the SAP BTP settings. For more information, see [Configure the On-Premise User Store](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/933034aeb00d489eaf21d50bbb12fed5.html), without the *Prerequisites* section.
@@ -352,7 +359,7 @@ cf-eu10 - Europe \(Frankfurt\)
     > </tr>
     > </table>
 
-7.  **Optional:** Include additional attributes.
+8.  **Optional:** Include additional attributes.
 
     > ### Note:  
     > You can add the `employeeNumber`, `division`, `department`, and `organization` attributes that are defined in the SCIM Enterprise User Schema Extension.

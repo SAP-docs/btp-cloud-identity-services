@@ -54,7 +54,7 @@ isValidEmail
 -   Possible values:
 
     -   `$.emails[0].value`
-    -   `emails.value`
+    -   `$.emails[*].value`
 
 
 
@@ -72,7 +72,7 @@ After the check, the function returns a Boolean result.
 
 This function can be used only as part of a conditional statement.
 
-EXAMPLE:
+EXAMPLE 1:
 
 In this example, the source JSON code contains the following e-mail address of a user:
 
@@ -105,6 +105,18 @@ The condition with function *isValidEmail* is the following:
       }
    ]
 }
+```
+
+EXAMPLE 2:
+
+In cases where users have multiple emails, the following condition will validate each email in the emails array:
+
+```
+{
+  "condition": "isValidEmail($.emails[*].value)",
+  "mappings": [
+      {
+......          
 ```
 
 

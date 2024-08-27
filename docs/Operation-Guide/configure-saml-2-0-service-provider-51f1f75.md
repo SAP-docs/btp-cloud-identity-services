@@ -34,7 +34,7 @@ You can enter manually the name of the service provider, its endpoints, and its 
 
 You can add up to two signing certificates. Both signing certificates are accepted according to the certificate validity.
 
-You can choose the identity provider certificate to be used for signing for each application. For more information about the identity provider certificates, see [Tenant SAML 2.0 Configuration](tenant-saml-2-0-configuration-e81a19b.md).
+You can choose the identity provider certificate to be used for signing for each application. For more information about the identity provider certificates, see [Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md).
 
 The idea behind the ability to choose the IdP certificate is that when you want to change the default IdP certificate all applications will have downtime since the applications have trust with the current default application on the application side. So, when adding new IdP certificate you can change the applications one by one to trust the new certificate.
 
@@ -315,7 +315,7 @@ Configure trust on the service provider side.
 1.  Download the SAML 2.0 metadata of Identity Authentication.
 
     > ### Note:  
-    > For more information about how to download the SAML 2.0 metadata describing Identity Authentication as identity provider see [Tenant SAML 2.0 Configuration](tenant-saml-2-0-configuration-e81a19b.md).
+    > For more information about how to download the SAML 2.0 metadata describing Identity Authentication as identity provider see [Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md).
 
 2.  Configure the service provider to trust Identity Authentication.
 

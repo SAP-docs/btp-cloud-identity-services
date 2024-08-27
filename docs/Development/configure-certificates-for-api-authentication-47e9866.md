@@ -10,7 +10,7 @@ This document describes how developers configure the certificates used for authe
 
 ## Prerequisites
 
-\(For trusted CA Scenario\) - If you want to configure a certificate, using your own trusted CA report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`. Attach to the incident the root and intermediate certificates and provide the Identity Authentication tenant host.
+[SAP Support Portal Home](https://support.sap.com/en/index.html)\(For trusted CA Scenario\) - If you want to configure a certificate, using your own with a component `BC-IAM-IDS`. Attach to the incident the root and intermediate certificates and provide the Identity Authentication tenant host.
 
 
 
@@ -116,6 +116,9 @@ Identity Authentication supports the following as trusted certificate authoritie
     </tr>
     </table>
     
+    > ### Restriction:  
+    > You can't use one and the same certificate for application and system as administrator authentication.
+
 9.  Choose the *Add* button at the bottom of the page.
 
     Once the certificate has been configured, the system displays the message ***Certificate for API authentication updated***.

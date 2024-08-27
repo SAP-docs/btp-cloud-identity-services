@@ -322,7 +322,7 @@ Users can use services to maintain or update their user profiles and to log on t
 **Related Information**  
 
 
-[Regional Availability](regional-availability-be600ca.md "Tenants are deployed on the productive domain accounts.ondemand.com.")
+[Regional Availability](regional-availability-be600ca.md "Tenants are deployed on the productive domains accounts.ondemand.com and accounts.cloud.sap.")
 
 [Disaster Recovery/High Availability](disaster-recovery-high-availability-2c1a055.md "Disaster recovery (DR) and high availability (HA) are based on the capabilities of the underlying infrastructure.")
 

@@ -216,7 +216,7 @@ To create SAP SuccessFactors as a source system, proceed as follows:
     </td>
     <td valign="top">
     
-    \(Credential\) Valid if *BasicAuthentication*sf.user.attributes.e is configured as authentication method.
+    \(Credential\) Valid if *BasicAuthentication* is configured as authentication method.
 
     Enter the password for your SAP SuccessFactors technical user.
     

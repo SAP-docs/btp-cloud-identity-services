@@ -53,7 +53,7 @@ When you set the trust between Identity Authentication, acting as identity provi
     > ### Note:  
     > If you do not have access to the trust configuration on the application side report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`.
 
-4.  Configure the new metadata of the Identity Provider \(IdP\) on the application \(service provider\) side. See [Tenant SAML 2.0 Configuration](Operation-Guide/tenant-saml-2-0-configuration-e81a19b.md).
+4.  Configure the new metadata of the Identity Provider \(IdP\) on the application \(service provider\) side. See [Tenant SAML 2.0 Configurations](Operation-Guide/tenant-saml-2-0-configurations-e81a19b.md).
 
     If you have set trusts with more than one service provider, configure the metadata in every service provider. For more information about how to configure the metadata, see the documentation of the respective service providers.
 

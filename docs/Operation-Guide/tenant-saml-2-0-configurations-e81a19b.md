@@ -1,6 +1,6 @@
 <!-- loioe81a19b0067f4646982d7200a8dab3ca -->
 
-# Tenant SAML 2.0 Configuration
+# Tenant SAML 2.0 Configurations
 
 You as a tenant administrator can view and download the tenant SAML 2.0 metadata. You can also change the name format and update your certificate used by the identity provider to digitally sign the messages for the applications.
 

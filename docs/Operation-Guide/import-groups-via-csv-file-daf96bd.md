@@ -2,7 +2,7 @@
 
 # Import Groups via CSV File
 
-As a tenant administrator, you can create new groups or update existing ones with the assiged users, via a CSV file upload.
+As a tenant administrator, you can create new groups or update existing ones with the assigned users, via a CSV file upload.
 
 
 
@@ -15,14 +15,14 @@ As a tenant administrator, you can create new groups or update existing ones wit
 
 ## Context
 
-With the CSV file, you can import up to 25000 groups to create new groups or to update existing ones with their user assignemnts.
+With the CSV file, you can import up to 25000 groups to create new groups or to update existing ones with their user assignments.
 
-If the group does not exist in the tenat, and you provide that group in the CSV file, the group will be created.
+If the group does not exist in the tenant, and you provide that group in the CSV file, the group will be created. The CSV file must contain the `groups` column. The value of the `groups` column is recorded as `name` and `displayName` in the newly created group. You cant set `description`, or separately provide `name` or `displayName` in the CSV file. No user assignment is required when creating a new group.
 
 You can only add users to the groups via the import groups option, you don't remove users from the groups.
 
 > ### Remember:  
-> Make sure that the CSV file contains unique users with unique identifiers.
+> When you create new groups with user assignments, or update existing ones with their user assignments, make sure that the CSV file contains unique users with unique identifiers.
 > 
 > The CSV file must contain the `groups` column and a column with at least one of the following identifiers:
 > 
@@ -41,7 +41,7 @@ You can only add users to the groups via the import groups option, you don't rem
 > 2.  Email
 > 3.  User Name
 > 
-> If the file contains email and user uame, a combination of both will be used as identifier. Thus the user will be matched with the email and user name at the same time.
+> If the file contains email and user name, a combination of both will be used as identifier. Thus the user will be matched with the email and user name at the same time.
 > 
 > If the CSV file contains one and the same email identifier, then the group will be assigned to all users that has this email.
 
@@ -50,7 +50,7 @@ You can only add users to the groups via the import groups option, you don't rem
 > 
 > The CSV file can contain only columns with no spaces between the values.
 > 
-> If you enter the data in the CSV file as text, you must separate the entries with commas. Beware not to put any spaces before or after the comas. If you enter more than one value in a single entry, separate the values within the entry with semicolons.
+> If you enter the data in the CSV file as text, you must separate the entries with commas. Beware not to put any spaces before or after the commas. If you enter more than one value in a single entry, separate the values within the entry with semicolons.
 
 > ### Example:  
 > > ### Sample Code:  
@@ -79,7 +79,7 @@ To import groups via CSV file into Identity Authentication, proceed as follows:
     > Use a UTF-8 encoded file with up to 25000 groups and an extension `.csv`. If your file contains more than 25000 groups, you have to import the groups information in iterations within the group number limit.
 
     > ### Tip:  
-    > If you import groups from one tenant to another, you can first export the users from the first tenant via the export users option, and then use the exported CSV file for the import to the other tenat or tenants. For more information, see [Export Existing Users of a Tenant of Identity Authentication](export-existing-users-of-a-tenant-of-identity-authentication-40c29d2.md).
+    > If you import groups from one tenant to another, you can first export the users from the first tenant via the export users option, and then use the exported CSV file for the import to the other tenant or tenants. For more information, see [Export Existing Users of a Tenant of Identity Authentication](export-existing-users-of-a-tenant-of-identity-authentication-40c29d2.md).
 
 5.  Choose the *Save* button.
 

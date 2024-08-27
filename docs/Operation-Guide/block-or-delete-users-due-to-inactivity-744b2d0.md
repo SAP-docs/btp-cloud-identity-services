@@ -21,6 +21,8 @@ You can enable the chosen user type or types to be only blocked, or only deleted
 
 To enable blocking and or deletion, you must choose at least one user type and set at least one period.
 
+After a user has exceeded the set period of inactivity, they will be blocked and their status will be updated on the next sign in attempt.
+
 You can also configure when the deletion script starts.
 
 > ### Note:  
@@ -40,18 +42,20 @@ You can also configure when the deletion script starts.
 
 3.  Choose the *Blocking and Deletion* list item.
 
-4.  Choose a user type and enable it.
+4.  Choose *Edit*.
 
-5.  Configure at least one of the periods: *Delete after* or *Block after*.
+5.  Select a user type.
+
+6.  Under *Inactivity Periods*, choose *Enabled* and configure at least one of the status fields: *Block after* or *Delete after*.
 
     > ### Remember:  
     > If you configure both *Block after* and *Delete after* periods, the *Delete after* period must longer than the *Block after* period.
 
-6.  **Optional:** Configure the date after which the deletion script starts.
+7.  **Optional:** Configure the date after which the deletion script starts.
 
     The automatic configuration is based on the current date plus the days specified in the *Delete after* period. The deletion process starts from the chosen date and is executed nightly at 04:00 UTC.
 
-7.  Save your changes.
+8.  Save your changes.
 
 
 

@@ -588,7 +588,10 @@ ignore
 </td>
 <td valign="top">
 
-Use the *ignore* expression if you prefer parts of the transformation to not be taken into consideration \(during provisioning\). Similar to *condition*, you can set *ignore* on various levels – for a whole entity type \(user, role\) or for a particular mapping entity. This is applicable for both source and target systems.
+Use the *ignore* expression if you would like to exclude certain parts of the transformation from being considered during the provisioning. Similar to *condition*, you can set *ignore* on various levels, including on entire entity types such as users or roles, or specific mapping entities. This is applicable for both source and target systems.
+
+> ### Note:  
+> Note that if an entity type is set to be ignored in the transformations, you won't get any data in the job log statistics for this entity type.
 
 > ### Example:  
 > ```

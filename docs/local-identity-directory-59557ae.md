@@ -148,14 +148,6 @@ To create Local Identity Directory as a target system, proceed as follows:
     >         "targetPath": "$.userName"
     >       },
     >       {
-    >         "constant": "userName",
-    >         "targetVariable": "entityCorrelationAttributeName"
-    >       },
-    >       {
-    >         "sourcePath": "$.userName",
-    >         "targetVariable": "entityCorrelationAttributeValue"
-    >       },
-    >       {
     >         "sourcePath": "$.emails",
     >         "preserveArrayWithSingleElement": true,
     >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['emails']",
@@ -324,7 +316,7 @@ To create Local Identity Directory as a target system, proceed as follows:
     >         "constant": "<your-initial-password>",
     >         "targetPath": "$.password",
     >         "scope": "createEntity",
-    >         "ignore": "true"
+    >         "ignore": true
     >       },
     >       {
     >         "constant": "<your-source-system-type-code>",

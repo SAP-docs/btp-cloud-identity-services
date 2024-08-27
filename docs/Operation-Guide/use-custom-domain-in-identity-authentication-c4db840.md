@@ -428,7 +428,7 @@ The custom domain configuration is enabled with the upgrade of Identity Authenti
 
 ## Next Steps
 
-1.  Configure tenant's name to be the custom host. Select custom host for the name from the dropdown list in the SAML 2.0 or Open ID Connect Configuration settings. For more information, see [Tenant SAML 2.0 Configuration](tenant-saml-2-0-configuration-e81a19b.md) [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md)
+1.  Configure tenant's name to be the custom host. Select custom host for the name from the dropdown list in the SAML 2.0 or Open ID Connect Configuration settings. For more information, see [Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md) [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md)
 
 2.  Download the new SAML metadata of the identity provider \(IdP\). Configure the new metadata of the IdP in every application \(service provider\) you have set trusts with. For more information about how to configure the metadata, see the documentation of the respective service providers.
 
@@ -438,7 +438,7 @@ The custom domain configuration is enabled with the upgrade of Identity Authenti
 **Related Information**  
 
 
-[Tenant SAML 2.0 Configuration](tenant-saml-2-0-configuration-e81a19b.md "You as a tenant administrator can view and download the tenant SAML 2.0 metadata. You can also change the name format and update your certificate used by the identity provider to digitally sign the messages for the applications.")
+[Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md "You as a tenant administrator can view and download the tenant SAML 2.0 metadata. You can also change the name format and update your certificate used by the identity provider to digitally sign the messages for the applications.")
 
 [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md "You as a tenant administrator can view and configure the tenant OpenID Connect configurations.")
 

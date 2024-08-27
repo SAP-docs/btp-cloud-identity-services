@@ -154,7 +154,7 @@ Configure manual trust
 </td>
 <td valign="top">
 
-1.  Download the metadata file of Identity Authentication. For more details, see: [Tenant SAML 2.0 Configuration](../Operation-Guide/tenant-saml-2-0-configuration-e81a19b.md).
+1.  Download the metadata file of Identity Authentication. For more details, see: [Tenant SAML 2.0 Configurations](../Operation-Guide/tenant-saml-2-0-configurations-e81a19b.md).
 
 2.  Use this metadata to configure the trust on SAP BTP. For more details about this configuration, see [Application Identity Provider](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/dc618538d97610148155d97dcd123c24.html).
 

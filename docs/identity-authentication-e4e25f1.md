@@ -416,12 +416,6 @@ To create Identity Authentication as a source system, proceed as follows:
     >                 "optional" : true
     >             },
     >             {
-    >                 "type": "remove",
-    >                 "targetPath": "$.groups[*].display"
-    >             },
-    > 
-    > // The display name of the corporate groups is removed because it's not necessary for the target system API.
-    >             {
     >                 "condition": "$.displayName EMPTY true",
     >                 "type": "remove",
     >                 "targetPath": "$.displayName"
@@ -620,10 +614,6 @@ To create Identity Authentication as a source system, proceed as follows:
     >                 "targetPath": "$.groups",
     >                 "preserveArrayWithSingleElement": true,
     >                 "optional": true
-    >             },
-    >             {
-    >                 "type": "remove",
-    >                 "targetPath": "$.groups[*].display"
     >             },
     >             {
     >                 "condition": "$.displayName EMPTY true",

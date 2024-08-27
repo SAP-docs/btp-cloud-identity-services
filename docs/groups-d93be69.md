@@ -43,6 +43,15 @@ For more information, see [Configure Authorizations Based on Policies](Operation
 
 The application specific groups are a special kind of groups which can only be created in the Identity Directory of SAP Cloud Identity Services by running provisioning jobs. For more information, see [Start and Stop Provisioning Jobs](Operation-Guide/start-and-stop-provisioning-jobs-531a261.md).
 
+The extension schema of the Identity Directory API *urn:ietf:params:scim:schemas:extension:sap:2.0:Group* defines the following three atrributes:
+
+-   *applicationId* - supported only for the Local Identity Directory default write and proxy write transformations as mandatory attribute. The value of this attribute is provided from the source system by setting the property ips.application.id. For more information, see [List of Properties](list-of-properties-d6f3577.md) →`ips.application.id`.
+
+-   *type* - supported by theLocal Identity Directory source, target and proxy provisioning systems as optional attribute. If no value is specified in the write or proxy write default transformations, the default value*'userGroup'* is set.
+
+-   *supportedOperations* - supported byLocal Identity Directory source, target and proxy provisioning systems as optional attribute. If no value is specified in the write or proxy write default transformations, the default value *'readWrite'* is set. The attribute defines the supported update options for the application specific group.
+
+
 The application-specific groups can be of the type *User Group* or *Authorization Policy*. They appear with their name in the *Application Name* column in the administration console for SAP Cloud Identity Services under the *Groups* tile. The *Application Name* column for the groups that are not application specific is empty.
 
 > ### Restriction:  

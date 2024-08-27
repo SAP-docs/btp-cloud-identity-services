@@ -27,7 +27,7 @@ Set up trust with Identity Authentication as a service provider.
 
 ## Prerequisites
 
-You have the SAML 2.0 metadata of Identity Authentication. For more information how to download the metadata, see [Tenant SAML 2.0 Configuration](../Operation-Guide/tenant-saml-2-0-configuration-e81a19b.md).
+You have the SAML 2.0 metadata of Identity Authentication. For more information how to download the metadata, see [Tenant SAML 2.0 Configurations](../Operation-Guide/tenant-saml-2-0-configurations-e81a19b.md).
 
 
 
@@ -45,7 +45,7 @@ You have the SAML 2.0 metadata of Identity Authentication. For more information 
     > > 
     > > `sp` is the name of the SAML 2 service provider for which SSO is performed.
     > 
-    > To see how to download the SAML 2.0 metadata of Identity Authentication read [Tenant SAML 2.0 Configuration](../Operation-Guide/tenant-saml-2-0-configuration-e81a19b.md).
+    > To see how to download the SAML 2.0 metadata of Identity Authentication read [Tenant SAML 2.0 Configurations](../Operation-Guide/tenant-saml-2-0-configurations-e81a19b.md).
 
 2.  **Optional:** Download the corporate identity provider SAML 2.0 metadata.
 

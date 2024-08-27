@@ -479,10 +479,6 @@ To create Identity Authentication as a proxy system, proceed as follows:
     >         "optional": true
     >       },
     >       {
-    >         "type": "remove",
-    >         "targetPath": "$.groups[*].display"
-    >       },
-    >       {
     >         "condition": "$.displayName EMPTY true",
     >         "type": "remove",
     >         "targetPath": "$.displayName"
@@ -963,10 +959,6 @@ To create Identity Authentication as a proxy system, proceed as follows:
     >         "targetPath": "$.groups",
     >         "preserveArrayWithSingleElement": true,
     >         "optional": true
-    >       },
-    >       {
-    >         "type": "remove",
-    >         "targetPath": "$.groups[*].display"
     >       },
     >       {
     >         "condition": "$.displayName EMPTY true",

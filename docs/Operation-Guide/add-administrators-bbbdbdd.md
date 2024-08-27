@@ -239,7 +239,7 @@ To add a system as a new tenant administrator, proceed as follows:
     </td>
     <td valign="top">
     
-    This role gives the tenant administrator permission to configure the applications via the administration console.
+     
     
     </td>
     </tr>
@@ -251,7 +251,7 @@ To add a system as a new tenant administrator, proceed as follows:
     </td>
     <td valign="top">
     
-    This role gives the tenant administrator permission to configure the identity providers via the administration console.
+    This role gives the tenant administrator permission to configure the identity providers via the administration console.This role gives the tenant administrator permission to configure the applications via the administration console.
     
     </td>
     </tr>
@@ -275,7 +275,7 @@ To add a system as a new tenant administrator, proceed as follows:
     </td>
     <td valign="top">
     
-    This role gives the tenant administrator permission to retrieve user data and import users via the administration console and the SCIM REST API of Identity Authentication.
+    This role gives the tenant administrator permission toThis role gives the tenant administrator permission to retrieve user data and import users via the administration console and the SCIM REST API of Identity Authentication.
     
     </td>
     </tr>
@@ -364,13 +364,16 @@ To add a system as a new tenant administrator, proceed as follows:
         > 
         > Identity Authentication supports the following as trusted certificate authorities \(CA\): SAP Passport CA G2, SAP SSO CA G2, SAP Cloud Root CA, SAP Global Root CA, DigiCert TLS RSA SHA256 2020 CA1, DigiCert Global Root CA, SAP Cloud Platform Client CA, ConnectivityCA.
 
+        > ### Restriction:  
+        > You can't use one and the same certificate for application and system as administrator authentication.
+
         > ### Note:  
         > For real-time provisioning scenarios, you need to upload the certificate generated from the source application that initiated the immediate sync. If Identity Authentication acts as the source application, simply upload the certificate generated in the *Authentication Mechanism* screen under *Users & Authorizations* \> *Real-Time Provisioning* \> *Add Target System*.
 
     -   *Secrets*
 
         > ### Note:  
-        > You need a *Client ID* and *Secret* for system authentication. You can see the *Client ID* generated automatically for the chosen system. The client ID is in the universally unique identifier \(UUID\) format. For example, `1ab7c243-5de5-4530-8g14-1234h26373ab`.
+        > You need a *Client ID* and *Secret* for system authentication. It is generated automatically with the creation of the system. The client ID is in the universally unique identifier \(UUID\) format. For example, `1ab7c243-5de5-4530-8g14-1234h26373ab`.
 
         Choose the *\+Add* button in the *Secrets* section, provide the required info in the pop-up, and save your entries.
 

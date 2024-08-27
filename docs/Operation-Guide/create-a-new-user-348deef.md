@@ -35,7 +35,7 @@ The tenant administrator creates the new user with a minimum set of attributes a
 
     *Email* field can be skipped when *Set initial password* or *Set status active* is selected, and *Email* is configured as not required in the *Logon Alias* view.
 
-    Vaues for *Email*, *First Name* and *Last Name* that are part of the respective exclude list cant' be used. For mor einformation, see [Restrict User Attributes Values via Exclude Lists](restrict-user-attributes-values-via-exclude-lists-cb108c2.md).
+    Values for *Email*, *First Name* and *Last Name* that are part of the respective exclude list cant' be used. For more information, see [Restrict User Attributes Values via Exclude Lists](restrict-user-attributes-values-via-exclude-lists-cb108c2.md).
 
     > ### Tip:  
     > If email is mandatory, for users without valid email addresses or for testing purposes use the `sap-test.de` domain, for example `<username>@sap-test.de`. Do not use any other existing or nonexisting domains.

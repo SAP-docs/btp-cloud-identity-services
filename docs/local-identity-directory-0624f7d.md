@@ -298,10 +298,6 @@ To create Local Identity Directory as a proxy system, proceed as follows:
     >         "optional": true
     >       },
     >       {
-    >         "type": "remove",
-    >         "targetPath": "$.groups[*].display"
-    >       },
-    >       {
     >         "condition": "$.displayName EMPTY true",
     >         "type": "remove",
     >         "targetPath": "$.displayName"
@@ -587,14 +583,6 @@ To create Local Identity Directory as a proxy system, proceed as follows:
     >         "sourcePath": "$.timezone",
     >         "targetPath": "$.timezone",
     >         "optional": true
-    >       },
-    >       {
-    >         "constant": "userName",
-    >         "targetVariable": "entityCorrelationAttributeName"
-    >       },
-    >       {
-    >         "sourcePath": "$.userName",
-    >         "targetVariable": "entityCorrelationAttributeValue"
     >       },
     >       {
     >         "sourcePath": "$.Operations",

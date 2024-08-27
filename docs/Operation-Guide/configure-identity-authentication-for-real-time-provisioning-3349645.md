@@ -27,9 +27,6 @@ Enable real-time provisioning in Identity Authentication to trigger immediate sy
 
 In this scenario you configure Identity Provisioning as a target system in Identity Authentication real-time configuration, and Identity Authentication as a source system in Identity Provisioning. As a result, when users are created, updated or deleted in Identity Authentication, the changes will be immediately provisioned to the target systems configured in Identity Provisioning.
 
-> ### Note:  
-> To provision groups real time, you need to use a REST client for initiating POST and DELETE requests to the Real-time provisioning API: <code>https://<i class="varname">&lt;tenantId&gt;</i>.<i class="varname">&lt;host&gt;</i>/ipsproxy/service/api/v1/systems/<i class="varname">&lt;system-id&gt;</i>/entities/group</code>.
-
 ![](images/Configure_Identity_Provisioning_Target_System_d2dddcf.png)
 
 Real-time provisioning is applicable for users that have been manually created or updated in Identity Authentication, using SCIM API \(version 1 or 2\), or via CSV file upload. It is not applicable for users updated by a provisioning job.
@@ -45,6 +42,11 @@ Real-time provisioning is applicable for users that have been manually created o
 > 2.  You configure Microsoft Active Directory as a source system that points to Identity Authentication target system and run a provisioning job.
 > 
 >     As a result, Microsoft Active Directory users are provisioned to Identity Authentication. Even though new users are created in Identity Authentication, they are not provisioned further to SAP Marketing Cloud by real-time provisioning.
+
+> ### Tip:  
+> If you want to provision groups in real time, you need to use a REST client for initiating POST and DELETE requests to the Real-time provisioning API: <code>https://<i class="varname">&lt;tenantId&gt;</i>.<i class="varname">&lt;host&gt;</i>/ipsproxy/service/api/v1/systems/<i class="varname">&lt;system-id&gt;</i>/entities/group</code>.
+
+To configure real-time provisioning in Identity Authentication to trigger immediate synchronization of user changes to target systems configured in Identity Provisioning follow the procedure below:
 
 
 

@@ -2,13 +2,11 @@
 
 # Regional Availability
 
-Tenants are deployed on the productive domain `accounts.ondemand.com`.
+Tenants are deployed on the productive domains `accounts.ondemand.com` and `accounts.cloud.sap`.
 
 
 
-The productive domain represents the productive environment. It can be used by customer and partner accounts only.
-
-The productive domain is available on a country/regional basis, where each country/region represents the locations of data centers.
+The productive domain is available on a country/regional basis, where each country/region represents the locations of data centers.The productive domain represents the productive environment. It can be used by customer and partner accounts only.
 
 A customer or partner account is associated with a particular data center and this is independent of your own location. For example, you could be located in North America, but operate your account in Europe. Thus, you use a data center that is situated in Europe.
 
@@ -56,7 +54,7 @@ NAT IPs
 </th>
 <th valign="top">
 
-First IP - Last IP
+The productive domain represents the productive environment. It can be used byFirst IP - Last IP
 
 </th>
 </tr>
@@ -553,17 +551,17 @@ Azure
 </td>
 <td valign="top">
 
-`20.196.2.107, 40.123.196.103, 40.123.215.159`
+`130.214.250.103, 130.214.250.118`
 
 </td>
 <td valign="top">
 
-\* `20.196.2.107/32, 40.123.196.103/32, 40.123.215.159/32`
+\* `130.214.80.0/26, 130.214.250.32/27`
 
 </td>
 <td valign="top">
 
-`20.196.2.107-20.196.2.107, 40.123.196.103-40.123.196.103, 40.123.215.159-40.123.215.159`
+`130.214.80.0-130.214.80.63, 130.214.250.32-130.214.250.63`
 
 </td>
 </tr>

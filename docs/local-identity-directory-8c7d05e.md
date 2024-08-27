@@ -236,10 +236,6 @@ To create Local Identity Directory as a source system, proceed as follows:
     >                 "optional": true
     >             },
     >             {
-    >                 "type": "remove",
-    >                 "targetPath": "$.groups[*].display"
-    >             },
-    >             {
     >                 "condition": "$.displayName EMPTY true",
     >                 "type": "remove",
     >                 "targetPath": "$.displayName"

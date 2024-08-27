@@ -100,7 +100,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-Off-Cycle Upgrade
+Regular Upgrade
 
 </td>
 <td valign="top">
@@ -140,12 +140,97 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2024-08-13
+2024-08-27
 
 </td>
 <td valign="top">
 
+2024-08-27
 
+</td>
+<td valign="top">
+
+2408b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regional Availability
+
+</td>
+<td valign="top">
+
+Cloud Identity Services now operates with two new IPs in the data center in the United Arab Emirates:
+
+Action:
+
+We recommend you to add the following IPs to your allowed IP list:
+
+-   LB IP - 130.214.250.103, 130.214.250.118
+-   NAT IP - 130.214.80.0/26, 130.214.250.32/27
+
+The following IPs are no longer in use:
+
+-   LB IP - 20.196.2.107, 40.123.196.103, 40.123.215.159
+-   NAT IP - 20.196.2.107/32, 40.123.196.103/32, 40.123.215.159/32
+
+See [Regional Availability](regional-availability-be600ca.md).
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-08-21
+
+</td>
+<td valign="top">
+
+2024-08-21
 
 </td>
 <td valign="top">
@@ -171,12 +256,12 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-User Management
+Regular Upgrade
 
 </td>
 <td valign="top">
 
-Cloud Identity Services now supports filtering by `loginTime`. Supported operators are :`eq`, `ne`, `sw`, `gt`, `lt`. See [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users).
+Cloud Identity Services have been upgraded.
 
 </td>
 <td valign="top">
@@ -211,12 +296,225 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2024-08-13
+2024-08-20
 
 </td>
 <td valign="top">
 
-2024-08-13
+2024-08-20
+
+</td>
+<td valign="top">
+
+2408a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Administrators
+
+</td>
+<td valign="top">
+
+The Client ID is now generated automatically with the creation of a system as administrator. See [Add System as Administrator](Operation-Guide/add-administrators-bbbdbdd.md#loiocefb742a36754b18bbe5c3503ac6d87c).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-08-20
+
+</td>
+<td valign="top">
+
+2024-08-20
+
+</td>
+<td valign="top">
+
+2408a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+OpenID Connect
+
+</td>
+<td valign="top">
+
+You can use certificate to authenticate the system as administrator when you call Identity Authentication Token Endpoint for Client Credentials Flow. See[Configure the Client to Call Identity Authentication Token Endpoint for Client Credentials Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-token-endpoint-for-client-credential-52b93b0.md) .
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-08-20
+
+</td>
+<td valign="top">
+
+2024-08-20
+
+</td>
+<td valign="top">
+
+2408a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Management
+
+</td>
+<td valign="top">
+
+Cloud Identity Services now supports filtering by `loginTime`. Supported operators are: `eq`, `ne`, `sw`, `gt`, `lt`. See [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-08-20
+
+</td>
+<td valign="top">
+
+2024-08-20
 
 </td>
 <td valign="top">
@@ -247,7 +545,7 @@ Condition and skip update - changed behavior
 </td>
 <td valign="top">
 
-As of September 10, 2024, Identity Provisioning will change the behavior of target transformations that contain a combination of condition and skip operations for updates. For example:
+As of September 24, 2024, Identity Provisioning will change the behavior of target transformations that contain a combination of condition and skip operations for updates. For example:
 
 > ### Code Syntax:  
 > ```
@@ -259,7 +557,7 @@ Currently, the skip operation is evaluated before the condition. If any users or
 
 Following the change, the condition will be evaluated first. Users and groups who do not match the condition will be deleted. After the condition is evaluated, the skip operation will determine whether the remaining users will be skipped or provisioned.
 
-For more information, see [Transformation Expressions](transformation-expressions-bb8537b.md).
+See [Transformation Expressions](transformation-expressions-bb8537b.md).
 
 </td>
 <td valign="top">
@@ -294,12 +592,12 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2024-08-13
+2024-08-20
 
 </td>
 <td valign="top">
 
-2024-08-13
+2024-08-20
 
 </td>
 <td valign="top">
@@ -332,7 +630,7 @@ isValidEmail function supports new value
 
 The conditional function `isValidEmail` can now accept the following value `$.emails[*].value`. In cases where users have multiple emails, this function will validate each email in the emails array.
 
-For more information, see [Transformation Functions](transformation-functions-0cdac7c.md).
+See [Transformation Functions](transformation-functions-0cdac7c.md).
 
 </td>
 <td valign="top">
@@ -367,12 +665,12 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2024-08-13
+2024-08-20
 
 </td>
 <td valign="top">
 
-2024-08-13
+2024-08-20
 
 </td>
 <td valign="top">
@@ -403,11 +701,9 @@ Read and proxy read transformation changes
 </td>
 <td valign="top">
 
-The mapping which omits the display of groups under the user entity is removed from the default read and proxy read transformations of the Identity Authentication and Local Identity Directory connectors.
+The mapping which omits the display of groups under the user entity is removed from the default read and proxy read transformations of the Identity Authentication and Local Identity Directory connectors. This makes possible filtering users by groups display name when using condition in the target system.
 
-This makes possible filtering users by groups display name when using condition in the target system.
-
-For more information, see [Identity Authentication](identity-authentication-e4e25f1.md) and [Local Identity Directory](local-identity-directory-8c7d05e.md).
+See [Identity Authentication](identity-authentication-e4e25f1.md) and [Local Identity Directory](local-identity-directory-8c7d05e.md).
 
 </td>
 <td valign="top">
@@ -442,12 +738,12 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2024-08-13
+2024-08-20
 
 </td>
 <td valign="top">
 
-2024-08-13
+2024-08-20
 
 </td>
 <td valign="top">
@@ -480,7 +776,7 @@ Write and proxy write transformation changes
 
 A userName mapping that was previously used to ensure that patch operations worked correctly for Local Identity Directory on the Neo environment, is now removed. Currently, you only need to set `scim.support.patch.operation = true` on the target system.
 
-For more information, see [Local Identity Directory](local-identity-directory-59557ae.md).
+See [Local Identity Directory](local-identity-directory-59557ae.md).
 
 </td>
 <td valign="top">
@@ -515,12 +811,12 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2024-08-13
+2024-08-20
 
 </td>
 <td valign="top">
 
-2024-08-13
+2024-08-20
 
 </td>
 <td valign="top">

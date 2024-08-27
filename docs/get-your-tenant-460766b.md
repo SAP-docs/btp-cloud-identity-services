@@ -96,7 +96,7 @@ Get your productive and test tenant as part of a self-service request in SAP BTP
 
 5.  Navigate to *Services* \> *Service Marketplace* and select the *Cloud Identity Services* tile. Under *Application Plans* you should see the *default* plan.
 
-6.  In the top-right corner, choose *Create* and follow the steps in the wizard to configure your new instance:
+6.  In the top-right corner, choose *Create* and follow the steps in the wizard to configure your new Cloud Identity Services tenant:
 
     1.  From the dropdown list, choose *Cloud Identity Services*.
 
@@ -237,7 +237,7 @@ A trial tenant is intended for testing purposes. It allows you to try out and ex
 
 8.  In the navigation area, choose *Services* \> *Instances and Subscriptions*.
 
-9.  In the top-right corner, choose *Create* and follow the steps in the wizard to configure your new instance:
+9.  In the top-right corner, choose *Create* and follow the steps in the wizard to configure your new Cloud Identity Services tenant:
 
     1.  Choose *Cloud Identity Services*.
 

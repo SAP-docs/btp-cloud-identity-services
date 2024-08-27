@@ -305,7 +305,7 @@
                 -   [Configure Integration Between Applications](Operation-Guide/configure-integration-between-applications-9ad7e80.md)
                 -   [Generate Credentials to Access the APIs of an Application](Operation-Guide/generate-credentials-to-access-the-apis-of-an-application-e595341.md)
         -   [Configuring Tenant Settings](Operation-Guide/configuring-tenant-settings-d4d6fdc.md)
-            -   [Tenant SAML 2.0 Configuration](Operation-Guide/tenant-saml-2-0-configuration-e81a19b.md)
+            -   [Tenant SAML 2.0 Configurations](Operation-Guide/tenant-saml-2-0-configurations-e81a19b.md)
             -   [Tenant OpenID Connect Configurations](Operation-Guide/tenant-openid-connect-configurations-3d6abcc.md)
             -   [Change Tenant Texts Via Administration Console](Operation-Guide/change-tenant-texts-via-administration-console-c24b1d0.md)
             -   [Configure Master Data Texts Via Administration Console](Operation-Guide/configure-master-data-texts-via-administration-console-c068ac9.md)

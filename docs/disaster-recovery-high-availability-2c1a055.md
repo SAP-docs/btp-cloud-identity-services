@@ -47,7 +47,7 @@ If a restore is required due to an issue on application level, report an inciden
 
 [Product Details](product-details-4d404b1.md)
 
-[Regional Availability](regional-availability-be600ca.md "Tenants are deployed on the productive domain accounts.ondemand.com.")
+[Regional Availability](regional-availability-be600ca.md "Tenants are deployed on the productive domains accounts.ondemand.com and accounts.cloud.sap.")
 
 [Web-Based Logon Interface](web-based-logon-interface-8e40afc.md "Service providers that delegate authentication to Identity Authentication can use two types of visualization of the web-based user interfaces for the logon pages of their applications.")
 

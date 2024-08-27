@@ -85,6 +85,11 @@ string
 
 Previously issued `id_token`.
 
+> ### Note:  
+> The token must be from the current session.
+
+
+
 </td>
 <td valign="top">
 

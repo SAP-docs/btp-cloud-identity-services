@@ -316,10 +316,12 @@ Yes
 </td>
 <td valign="top">
 
-Basic Authentication - Client ID and a Secret to authenticate the system as administrator. For more information, see [Add System as Administrator](add-administrators-bbbdbdd.md#loiocefb742a36754b18bbe5c3503ac6d87c).
+-   Basic Authentication - Client ID and a Secret to authenticate the system as administrator. For more information, see [Add System as Administrator](add-administrators-bbbdbdd.md#loiocefb742a36754b18bbe5c3503ac6d87c).
 
-> ### Note:  
-> The client ID and secret must be encoded using the "application/x-www-form-urlencoded" encoding algorithm.
+    > ### Note:  
+    > The client ID and secret must be encoded using the "application/x-www-form-urlencoded" encoding algorithm.
+
+-   X.509 Certificate
 
 
 
@@ -379,6 +381,38 @@ string
 <td valign="top">
 
 client\_credentials
+
+</td>
+<td valign="top">
+
+Request body
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`client_id`
+
+</td>
+<td valign="top">
+
+No
+
+> ### Note:  
+> Required if `Certificate` is used for authentication.
+
+
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+The user ID configured for basic authentication for the system as administrator. For more information, see [Add Administrators](add-administrators-bbbdbdd.md#loiobbbdbdd3899942ce874f3aae9ba9e21d).
 
 </td>
 <td valign="top">

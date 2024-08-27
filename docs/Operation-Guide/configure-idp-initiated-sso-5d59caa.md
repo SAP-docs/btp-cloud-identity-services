@@ -5,7 +5,7 @@
 **Related Information**  
 
 
-[Tenant SAML 2.0 Configuration](tenant-saml-2-0-configuration-e81a19b.md "You as a tenant administrator can view and download the tenant SAML 2.0 metadata. You can also change the name format and update your certificate used by the identity provider to digitally sign the messages for the applications.")
+[Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md "You as a tenant administrator can view and download the tenant SAML 2.0 metadata. You can also change the name format and update your certificate used by the identity provider to digitally sign the messages for the applications.")
 
 [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md "You as a tenant administrator can view and configure the tenant OpenID Connect configurations.")
 
@@ -207,7 +207,7 @@ The link for IdP-Initiated SSO follows the pattern: `https://<tenant_ID>.account
 > </td>
 > <td valign="top">
 > 
-> The name of the corporate identity provider as configured in the administration console for SAP Cloud Identity Services.
+> The technical name of the corporate identity provider as configured in the administration console for SAP Cloud Identity Services.
 > 
 > When multiple identity providers are allowed for an application via conditional authentication, this parameter enables the client to determine which corporate identity provider to be used. Identity Authentication uses the `idp` to detect the correct corporate identity provider and redirect the request to it. The user authenticates against the corporate identity provider.
 > 

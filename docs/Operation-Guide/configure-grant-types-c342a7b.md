@@ -109,7 +109,7 @@ To configure the grant type, proceed as follows:
     </td>
     <td valign="top">
     
-    selected
+    not-selected
     
     </td>
     </tr>

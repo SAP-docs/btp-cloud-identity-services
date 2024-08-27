@@ -238,7 +238,7 @@ The following configuration is made by the tenant administrator of Identity Auth
     > ### Remember:  
     > If your scenario includes the enabling of the *Trust All Corporate Identity Providers* option in the administration console, send also the index of the ACS endpoint of the application's protected page. The administrator needs this information for the consumer assertion endpoint configuration.
 
-2.  Send the metadata of the tenant of Identity Authentication to the administrator of the service provider and the administrator of the corporate identity provider. They need the metadata for the trust configurations of the systems. For more information about how to download the tenant metadata, see [Tenant SAML 2.0 Configuration](tenant-saml-2-0-configuration-e81a19b.md).
+2.  Send the metadata of the tenant of Identity Authentication to the administrator of the service provider and the administrator of the corporate identity provider. They need the metadata for the trust configurations of the systems. For more information about how to download the tenant metadata, see [Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md).
 
 <a name="copy3d24839b33e04153b91139bb9113b58d"/>
 
@@ -507,7 +507,7 @@ The application configuration will be taken into consideration, when the users a
 
 ## Context
 
-The following configuration is made by the administrator in the corporate identity provider.
+The following configuration is made by the administrator of the corporate identity provider.
 
 
 
@@ -528,7 +528,7 @@ The following configuration is made by the administrator in the corporate identi
     > ### Tip:  
     > The ACS endpoint URL should have the following format: <code>https://&lt;the current ACS endpoint URL&gt;?<code>sp=&lt;sp_name&gt;&amp;index=&lt;index_number&gt;</code></code>. Request the `Entity ID` of the service provider, and the index of the application's protected page from the tenant administrator of Identity Authentication.
     > 
-    > The index is required.
+    > The index is required when the application has multiple ACS endpoint URLs and the default one is not the one that should be used.
 
 
 

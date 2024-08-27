@@ -288,7 +288,7 @@ SAP Application Server ABAP \(AS ABAP\) offers a user store and user administrat
     
     Filters user roles by a regular expression. The regex can define any kind of search pattern.
 
-    For example, `abap.role.name.filter` = **^inter.\*** reads all users who have roles which start with *inter*, such as **internal**, **internship**, and so on.
+    For example, `abap.role.name.filter` = **^inter.\*** reads all roles which start with *inter*, such as **internal**, **internship**, and so on.
 
     > ### Note:  
     > This property has a higher priority over `abap.role.filter`. That means, if you set both properties in a system, the value of **abap.role.name.filter** will be used. However, if the value of `abap.role.name.filter` is empty, then **abap.role.filter**’s value will be used instead.
