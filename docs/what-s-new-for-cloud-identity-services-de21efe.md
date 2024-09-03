@@ -100,6 +100,77 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Off-Cycle Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-09-03
+
+</td>
+<td valign="top">
+
+2024-09-03
+
+</td>
+<td valign="top">
+
+Off-Cycle
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Regular Upgrade
 
 </td>
@@ -1747,7 +1818,7 @@ User Management
 </td>
 <td valign="top">
 
-As of September 10, 2024, the `meta.lastModified` attribute will no longer be modified after you sign in. See [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users).
+As of September 24, 2024, the `meta.lastModified` attribute will no longer be modified after you sign in. See [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users).
 
 </td>
 <td valign="top">

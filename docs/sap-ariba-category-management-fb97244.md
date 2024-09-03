@@ -252,7 +252,7 @@ You can use Identity Provisioning to configure SAP Ariba Category Management as 
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    [SCIM APIs for SAP Ariba Category Management](https://help.sap.com/docs/ariba/ariba-applications-wip/scim-apis-for-sap-ariba-category-management?state=DRAFT)
+    [SCIM APIs for SAP Ariba Category Management](https://help.sap.com/docs/categories/sap-ariba-category-management-configuration-guide/scim-apis-for-sap-ariba-category-management?version=Latest)
 
     **User Update and Uniqueness**
 

@@ -191,7 +191,7 @@ SAP Ariba Category Management is a cloud-based solution that enables organizatio
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    [SCIM APIs for SAP Ariba Category Management](https://help.sap.com/docs/ariba/ariba-applications-wip/scim-apis-for-sap-ariba-category-management?state=DRAFT)
+    [SCIM APIs for SAP Ariba Category Management](https://help.sap.com/docs/categories/sap-ariba-category-management-configuration-guide/scim-apis-for-sap-ariba-category-management?version=Latest)
 
     **Mapping logic** – The behavior of the default transformation logic is to map all attributes from the internal SCIM representation to the target SAP Ariba Category Management entity.
 

@@ -38,7 +38,7 @@ When *Use Identity Authentication user store* is enabled, it is possible to conf
 > ### Example:  
 > SAML 2.0 Scenario
 > 
-> If the corporate identity provider issues an assertion containing the login name as Subject Name Identifier and an Attribute Statement containing an email address, the SAML assertion XML document would contain:
+> The ABAP and SAP Analytics Cloud tenants require email address \(in our example *dona.moore@test.com*\) for logon, and another application requires the login name. If the corporate identity provider issues an assertion containing the login name as Subject Name Identifier and an Attribute Statement containing an email address, the SAML assertion XML document would contain:
 > 
 > > ### Sample Code:  
 > > ```
