@@ -1818,7 +1818,7 @@ User Management
 </td>
 <td valign="top">
 
-As of September 24, 2024, the `meta.lastModified` attribute will no longer be modified after you sign in. See [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users).
+As of September 10, 2024, the `meta.lastModified` attribute will no longer be modified after you sign in. See [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users).
 
 </td>
 <td valign="top">
