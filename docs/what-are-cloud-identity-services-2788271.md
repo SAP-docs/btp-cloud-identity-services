@@ -28,7 +28,7 @@ SAP Cloud Identity Services are available for consumption with the following SAP
 <dl>
 <dt><b>
 
-Authentication and SSO 
+Authentication and SSO
 
 </b></dt>
 <dd>
@@ -39,7 +39,7 @@ Choose one of the supported authentication methods to control access to your app
 
 </dd><dt><b>
 
-Risk-Based Authentication 
+Risk-Based Authentication
 
 </b></dt>
 <dd>
@@ -50,7 +50,7 @@ Help enforce two-factor authentication based on IP ranges, user groups, user typ
 
 </dd><dt><b>
 
-Delegate Authentication 
+Delegate Authentication
 
 </b></dt>
 <dd>
@@ -61,7 +61,7 @@ Delegate authentication to a 3rd party or on-premise IdP, as default or based on
 
 </dd><dt><b>
 
-Policy-Based Authorizations 
+Policy-Based Authorizations
 
 </b></dt>
 <dd>

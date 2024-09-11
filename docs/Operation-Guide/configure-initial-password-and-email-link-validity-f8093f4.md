@@ -131,9 +131,11 @@ To change the validity period of the initial password and the links, follow the 
 
 3.  Under *Authentication*, choose the *Initial Password and Email Link Validity* list item.
 
-4.  **Optional:** \(For email link validity\) Under *Configure Email Link Validity*, choose an application process and set the validity period of the email link for it.
+4.  Choose *Edit*.
 
-    1.  From the dropdown list on the right, select either *Days* or *Hours*.
+5.  **Optional:** \(For email link validity\) Under *Configure Email Link Validity*, choose an application process and set the validity period of the email link for it.
+
+    1.  From the radio buttons on the right, select either *Days* or *Hours*.
 
     2.  From the dropdown list on the left, select a number for this.
 
@@ -143,9 +145,9 @@ To change the validity period of the initial password and the links, follow the 
 
     You can repeat the step for all processes.
 
-5.  **Optional:** \(For initial password validity\) Under *Configure Initial Password Validity*, set a value for the validity of the initial password.
+6.  **Optional:** \(For initial password validity\) Under *Configure Initial Password Validity*, set a value for the validity of the initial password.
 
-6.  Save your changes.
+7.  Save your changes.
 
 
 **Related Information**  
@@ -183,7 +185,7 @@ To change the validity period of the initial password and the links, follow the 
 
 [Configure Trusted Domains](configure-trusted-domains-08fa1fe.md "Service providers that delegate authentication to Identity Authentication can protect their applications when using embedded frames, also called overlays, or when allowing user self-registration.")
 
-[Use Custom Domain in Identity Authentication](use-custom-domain-in-identity-authentication-c4db840.md "Identity Authentication allows you to use a custom domain that is different from the default one (<tenant ID>.accounts.ondemand.com) - for example www.mytenant.com.")
+[Use Custom Domain in Identity Authentication](use-custom-domain-in-identity-authentication-c4db840.md "Identity Authentication allows you to use a custom domain that is different from the default ones (<tenant ID>.accounts.ondemand.com or <tenant ID>.accounts.cloud.sap) - for example www.mytenant.com.")
 
 [Change a Tenant's Display Name](change-a-tenant-s-display-name-a513c91.md "You can configure the tenant's name from the administration console for SAP Cloud Identity Services.")
 

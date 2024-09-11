@@ -100,6 +100,374 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-09-10
+
+</td>
+<td valign="top">
+
+2024-09-10
+
+</td>
+<td valign="top">
+
+2409a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Mail Server Configuration
+
+</td>
+<td valign="top">
+
+You can configure Basic and OAuth authentication for custom mails server in the administration console for Cloud Identity Services. See [Configure Custom Mail Server](Operation-Guide/configure-custom-mail-server-56cab62.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-09-10
+
+</td>
+<td valign="top">
+
+2024-09-10
+
+</td>
+<td valign="top">
+
+2409a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Deprecation of SAP Concur User v1 API
+
+</td>
+<td valign="top">
+
+The SAP Concur User v1 API is deprecated and will be decommissioned. This change impacts the SAP Concur connector version 1, which uses the User v1 API. To update to SAP Concur connector version 2, which integrates with the Identity v4 API, see [Update Connector Version](Operation-Guide/update-connector-version-8558733.md).
+
+Additionally, as of September 15, 2024, SAP Concur will support the APJ1 data center. For more information, see [SAP Concur](sap-concur-032fd80.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-09-10
+
+</td>
+<td valign="top">
+
+2024-09-10
+
+</td>
+<td valign="top">
+
+2409a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Separation of Signing Key for SAML and OIDC Tokens
+
+</td>
+<td valign="top">
+
+Before this release, our SAML and OpenID Connect \(OIDC\) implementations shared the same signing key at the tenant level. With this release, the keys for SAML and OIDC are separated which enables you to rotate signing keys for one protocol without impacting the other protocol.
+
+For more information about tenant configuration, see:
+
+-   [Tenant SAML 2.0 Configurations](Operation-Guide/tenant-saml-2-0-configurations-e81a19b.md)
+
+-   [Tenant OpenID Connect Configurations](Operation-Guide/tenant-openid-connect-configurations-3d6abcc.md)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-09-10
+
+</td>
+<td valign="top">
+
+2024-09-10
+
+</td>
+<td valign="top">
+
+2409a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Central Business Configuration - bundle option documentation
+
+</td>
+<td valign="top">
+
+Documentation for SAP Central Business Configuration bundle option is now available.
+
+See: [SAP Central Business Configuration Bundle](sap-central-business-configuration-bundle-44e8673.md)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2024-09-10
+
+</td>
+<td valign="top">
+
+2024-09-10
+
+</td>
+<td valign="top">
+
+2409a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Off-Cycle Upgrade
 
 </td>
@@ -1482,79 +1850,6 @@ Cloud Identity Services
 <td valign="top">
 
 2407a
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-SAP Central Business Configuration bundle extended with SAP BTP XS Advanced UAA target system
-
-</td>
-<td valign="top">
-
-The scope of SAP Central Business Configuration bundle option is now extended and includes the SAP BTP XS Advanced UAA as a target system.
-
-See [SAP Central Business Configuration Bundle](sap-central-business-configuration-bundle-44e8673.md).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-Changed
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
-2024-07-23
-
-</td>
-<td valign="top">
-
-2024-07-23
-
-</td>
-<td valign="top">
-
- 
 
 </td>
 </tr>

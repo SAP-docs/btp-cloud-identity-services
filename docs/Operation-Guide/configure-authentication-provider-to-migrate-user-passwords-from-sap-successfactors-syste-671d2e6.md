@@ -102,7 +102,7 @@ To configure a authentication provider, follow the steps below:
     The URL endpoint for validation of the users name and password. It can be provided by the authentication provider administrator.
 
     > ### Note:  
-    > The URl must have the following pattern: `https://<SuccessFactors_API_Host>/odata/v2/restricted/validateUser`.
+    > The URl must have the following pattern: `https://<SuccessFactors_API_Host>/odata/v2/restricted/validateUser`
     > 
     > Replace the host `<SuccessFactors_API_host>` with the Authentication URL host from the [SAP SuccessFactors Data Centers Mapping to Authentication URL](sap-successfactors-data-centers-mapping-to-authentication-url-f38bb6b.md) document.
     > 
@@ -113,7 +113,7 @@ To configure a authentication provider, follow the steps below:
     > ### Remember:  
     > If you choose the *X.509* certificate as your *Authentication Type*, you'll need to add ".cert" after the subdomain part of the URL. For example:
     > 
-    > `https://exampleapi.cert.sapsf.com/odata/v2/restricted/validateUser`.
+    > `https://exampleapi.cert.sapsf.com/odata/v2/restricted/validateUser`
 
 
     

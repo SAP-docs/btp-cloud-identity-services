@@ -1351,6 +1351,203 @@ SAP Data Custodian
 <tr>
 <td valign="top">
 
+`ds.user.filter` 
+
+</td>
+<td valign="top">
+
+When specified, only those SAP Datasphere users matching the filter expression will be read.
+
+**Possible values:**
+
+For example: *userName eq "SmithJ"*
+
+**System Role:** Source
+
+</td>
+<td valign="top">
+
+SAP Datasphere
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ds.user.unique.attribute` 
+
+</td>
+<td valign="top">
+
+When the Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists in SAP Datasphere. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\). This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\).
+
+According to your use case, choose how to set up this property:
+
+-   Default behavior: This property is missing during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such а *userName* is not found, the creation of the conflicting user fails.
+-   Value = *emails\[0\].value*. If the service finds an existing user with such *email*, it updates this user with the data of the conflicting one. If a user with such *email* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+-   Value = *userName,emails\[0\].value*. If the service finds an existing user with both these *userName* and *email*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+
+**Possible values:**
+
+-   *userName*
+-   *emails\[0\].value*
+-   *userName,emails\[0\].value*
+
+Default value: *userName*
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Datasphere
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ds.include.if.match.wildcard.header` 
+
+</td>
+<td valign="top">
+
+This property makes the SAP Datasphere connector send the *If-Match* HTTP header with a value of “\*” for every request to the target system. The header could be used by an SAP Datasphere system for entity versioning.
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false*
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Datasphere
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ds.support.patch.operation` 
+
+</td>
+<td valign="top">
+
+This property controls how modified entities \(users and groups\) in the source system are updated in the target system.
+
+-   If set to *true*, `PATCH` operations are used to update users and groups in the target system. This means, for example, that if a user attribute is modified or a group member is removed from a group, only these changes will be provisioned and applied in the target system.
+
+-   If set to *false*, `PUT` operations are used to update users and groups in the target system. This means, for example, that if a user attribute is modified or a group member is removed from a group, all user attributes and all group attributes are replaced in the target system, instead of updating only the modified ones.
+
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false* 
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Datasphere
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ds.support.bulk.operation` 
+
+</td>
+<td valign="top">
+
+This property enables bulk operations for users.
+
+When bulk operations are enabled \(set to *true*\), Identity Provisioning service creates, updates, and deletes multiple users in one request.
+
+When bulk operations are not enabled \(set to *false*\), Identity Provisioning service creates, updates, and deletes one user at a time.
+
+For more information, see: [SCIM Protocol: Bulk Operations](https://datatracker.ietf.org/doc/html/rfc7644#section-3.7)
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false* 
+
+**System Role:** Target
+
+</td>
+<td valign="top">
+
+SAP Datasphere
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ds.bulk.operations.max.count` 
+
+</td>
+<td valign="top">
+
+If you have enabled the SCIM bulk operations, you can use this property to set the number of users to be provisioned per request.
+
+**Possible values:**
+
+Default value: **
+
+> ### Note:  
+> The value must not exceed the number of entities defined by the SAP Datasphere system as a SCIM service provider. Otherwise, the provisioning job will fail with HTTP response code 413 \(*Payload Too Large*\).
+
+**System Role:** Target
+
+</td>
+<td valign="top">
+
+SAP Datasphere
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ds.api.csrf.protection` 
+
+</td>
+<td valign="top">
+
+Specifies whether to fetch a CSRF token when sending requests to the system. The property is automatically added in the system, with default value: *enabled*.
+
+**Possible values:**
+
+-   *enabled*
+-   *disabled*
+
+Default value: *enabled*
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Datasphere
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `hcp.application.names` 
 
 </td>
@@ -1801,6 +1998,324 @@ The maximum number of user’s groups returned per request is 1000. To read more
 Default value: *false*
 
 **System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+Local Identity Directory
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`idds.content.type` 
+
+</td>
+<td valign="top">
+
+Makes the connector send a specified value for the *Content-Type* HTTP header. This is needed because a SCIM system could potentially not implement the protocol in the specification, which states that a system must accept *application/scim+json* as a value of the *Content-Type* header.
+
+**Possible values:**
+
+For example: *application/json*
+
+If the property is not specified, the default value is taken: *application/scim+json*
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+Local Identity Directory
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`idds.group.unique.attribute` 
+
+</td>
+<td valign="top">
+
+If you try to provision a group that already exists in a target system, the group creation will fail. In this case, the existing group only needs to be updated.
+
+This property defines by which unique attribute\(s\) the existing group will be searched and resolved. The default value is *displayName*. Currently, it is the only unique attribute that is supported. When set, you can expect the following behavior:
+
+-   If a group with the given *displayName* is found in the target system, the group that you try to provision will overwrite the existing one.
+
+-   If a group with the given *displayName* is not found in the target system, the group that you try to provision will not be created in the target system.
+
+
+**Possible values:**
+
+If the property is not specified, the search is done by the default attribute: `displayName`
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+Local Identity Directory
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`idds.include.if.match.wildcard.header` 
+
+</td>
+<td valign="top">
+
+Makes the connector send the *If-Match* HTTP header with a value of “\*” for every request to the target system. This header could be used by a SCIM system for entity versioning.
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false*
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+Local Identity Directory
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`idds.support.patch.operation` 
+
+</td>
+<td valign="top">
+
+This property controls how modified entities \(users and groups\) in the source system are updated in the target system.
+
+-   If set to *true*, Identity Provisioning sends a `PATCH` request to the user or group resource in the target system. Only attributes without `"scope"` in the attribute mappings in the write transformation will be updated.
+
+    For example, if the last name of a user is changed in the source system, the patch operation will update it in the target system and will leave unchanged other attributes with "scope": "createEntity", such as:
+
+    ```
+    {
+       "constant":true,
+       "targetPath":"$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['mailVerified']",
+       "scope":"createEntity"
+    }
+    ```
+
+-   If set to *false*, Identity Provisioning sends a `PUT` request to the user or group resource in the target system. This means, for example, that if a user attribute is modified or a group member is removed from a group, all user attributes and all group attributes are replaced in the target system, instead of updating only the modified ones.
+
+
+Users and groups can be updated in the target system in various cases, such as:
+
+-   In the source system, some user or group attributes are modified, or new attributes are added.
+
+-   In the source system, a condition or a filter is set for users or groups not to be read anymore.
+
+-   A user or a group is deleted from the source system.
+
+
+In the last two cases, it's possible to keep the entity in the target system – it will not be deleted but only disabled. To do this, use the `deleteEntity` scope in the transformation of your target or proxy system. See: [Transformation Expressions](transformation-expressions-bb8537b.md) → **deleteEntity**.
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false*
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+Local Identity Directory
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`idds.user.automatic.conflict.resolution` 
+
+</td>
+<td valign="top">
+
+Controls whether automatic conflict resolution is switched on or off in Local Identity Directory \(target system\) when provisioning is triggered from source systems containing different users with the same user identifiers \(IDs\).
+
+For example, when SAP SuccessFactors and SAP SuccessFactors Learning are configured as source systems for provisioning users to Local Identity Directory, it could happen that different SAP SuccessFactors and SAP SuccessFactors Learning users have the same user IDs. In this case, when the first user is created in Local Identity Directory, after triggering a provisioning job, the second \(conflicting\) user will either overwrite the already existing one \(automatic conflict resolution is switched on\) or will fail and won't be created \(automatic conflict resolution is switched off\).
+
+To control this behavior, you can use the `idds.user.automatic.conflict.resolution` property in the target Local Identity Directory system. This property is not added by default.
+
+**Possible values:**
+
+-   *true* - If the property is set to true, or is not set at all, the automatic conflict resolution is switched on. This means that Identity Provisioning takes into account the unique attribute\(s\) defined on the `idds.user.unique.attribute` property and tries to find an already existing user in Local Identity Directory matching these attributes.
+
+    -   If a user is found, the provisioning of a new \(conflicting\) user is resolved as follows: the conflicting user overwrites the existing one.
+
+    -   If a user is not found, the provisioning of a conflicting user fails, and it is not created in Local Identity Directory.
+
+
+-   *false* - If the property is set to false, the automatic conflict resolution is switched off. This means that Identity Provisioning does not take into account the unique attribute\(s\) defined on the `idds.user.unique.attribute` property and fails the provisioning of a conflicting user. This user is not created in Local Identity Directory and does not overwrite the existing one.
+
+    In the Job Log, an error code ***409, uniqueness*** will be displayed.
+
+
+Default value: *true*
+
+**System Role:** Target
+
+</td>
+<td valign="top">
+
+Local Identity Directory
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`idds.user.unique.attribute` 
+
+</td>
+<td valign="top">
+
+When Identity Provisioning attempts to provision a user for the first time, it may detect that this user already exists on the target system. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\).
+
+This property defines by which unique attribute\(s\) the existing user will be searched and resolved. **If the service finds a user on the target system via this filter, then the conflicting user will overwrite the existing one.** If the service does not find a user on the target system via this filter, the creation will fail.
+
+According to your use case and system type, choose how to set up this property:
+
+-   Default behavior: This property is set during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such *userName* is not found, the creation of the conflicting user fails.
+-   Value = *emails\[0\].value*. If the service finds an existing user with such *email*, it updates this user with the data of the conflicting one. If a user with such *email* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+-   Value = *userName,emails\[0\].value*. If the service finds an existing user with both these *userName* and *email*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+-   Value = *phoneNumbers\[0\].value*. If the service finds an existing user with such *phoneNumber*, it updates this user with the data of the conflicting one. If a user with such *phoneNumber* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+-   Value = *userName, phoneNumbers\[0\].value*. If the service finds an existing user with both these *userName* and *phoneNumber*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+
+-   Value = *userName, emails\[0\].value, phoneNumbers\[0\].value*. If the service finds an existing user with these *userName*, *email* and *phoneNumber*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+
+
+**Possible values:**
+
+-   *userName*
+
+-   *emails\[0\].value*
+
+-   *userName,emails\[0\].value*
+
+-   *phoneNumbers\[0\].value*
+
+-   *userName, phoneNumbers\[0\].value*
+
+-   *userName, emails\[0\].value, phoneNumbers\[0\].value*
+
+-   *externalId*, or another SCIM attribute, or a conjunction of SCIM attributes
+
+
+Default value: *userName* 
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+Local Identity Directory
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`idds.user.update.instead.delete` 
+
+</td>
+<td valign="top">
+
+This property allows you to update user attributes with `PATCH` request in Local Identity Directory target system and to preserve the user record instead of deleting it. This behavior is supported only when the scope of the attribute is set to **deleteEntity**.
+
+In addition to configuring this property, you also need to adapt the write transformation. For example, if you want to disable a user account in Local Identity Directory, you need to do the following:
+
+1.  Set `idds.user.update.instead.delete`=*true*
+
+2.  Adapt the write transformation as follows:
+
+    ```
+    {
+       "user":{
+          "mappings":[
+             {
+                "constant":"urn:ietf:params:scim:api:messages:2.0:PatchOp",
+                "targetPath":"$.schemas[0]",
+                "scope":"deleteEntity"
+             },
+             {
+                "constant":"replace",
+                "targetPath":"$.Operations[0].op",
+                "scope":"deleteEntity"
+             },
+             {
+                "constant":"active",
+                "targetPath":"$.Operations[0].path",
+                "scope":"deleteEntity"
+             },
+             {
+                "constant":false,
+                "targetPath":"$.Operations[0].value",
+                "scope":"deleteEntity"
+             },
+    ...
+    
+    ```
+
+
+In this case, the `PATCH` operation will replace *true* with *false* as the value of the `active` user attribute. As a result, when the `PATCH` operation is executed, the user record in the target system will no longer be managed by Identity Provisioning as it is considered deleted.
+
+For more information, see: [Transformation Expressions](transformation-expressions-bb8537b.md) → *Scope* → *deleteEntity*
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false* 
+
+When the property is set to *true*, adapt the write transformation with the attribute name and the attribute value you want to update:
+
+```
+{
+   "user":{
+      "mappings":[
+         {
+            "constant":"urn:ietf:params:scim:api:messages:2.0:PatchOp",
+            "targetPath":"$.schemas[0]",
+            "scope":"deleteEntity"
+         },
+         {
+            "constant":"replace",
+            "targetPath":"$.Operations[0].op",
+            "scope":"deleteEntity"
+         },
+         {
+            "constant":"<attribute_name>",
+            "targetPath":"$.Operations[0].path",
+            "scope":"deleteEntity"
+         },
+         {
+            "constant":<attribute_value>,
+            "targetPath":"$.Operations[0].value",
+            "scope":"deleteEntity"
+         },
+...
+
+```
+
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -2429,11 +2944,17 @@ If you need to make OAuth authentication to the system, enter the URL to the acc
 
 -   SAP Fieldglass
 
+-   SAP Field Service Management
+
+-   SAP Intelligent Agriculture
+
 -   SAP Jam Collaboration
 
 -   SAP Master Data Integration
 
 -   SAP Advanced Financial Closing
+
+-   Procurement Data Warehouse
 
 -   SAP S/4HANA for procurement planning
 
@@ -12363,7 +12884,7 @@ For example:
 </td>
 <td valign="top">
 
-SAP Central Invoice Management
+SAP Ariba Central Invoice Management
 
 </td>
 </tr>
@@ -12388,7 +12909,7 @@ For example:
 </td>
 <td valign="top">
 
-SAP Central Invoice Management
+SAP Ariba Central Invoice Management
 
 </td>
 </tr>
@@ -12400,12 +12921,26 @@ SAP Central Invoice Management
 </td>
 <td valign="top">
 
+When the Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists in SAP Ariba Central Invoice Management. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\). This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\).
 
+According to your use case, choose how to set up this property:
+
+-   Default behavior: This property is missing during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such а *userName* is not found, the creation of the conflicting user fails.
+-   Value = *emails\[0\].value*. If the service finds an existing user with such *email*, it updates this user with the data of the conflicting one. If a user with such *email* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+
+**Possible values:**
+
+-   *userName*
+-   *emails\[0\].value*
+
+Default value: *userName* 
+
+**System Role:** Target, Proxy
 
 </td>
 <td valign="top">
 
-SAP Central Invoice Management
+SAP Ariba Central Invoice Management
 
 </td>
 </tr>
@@ -12430,7 +12965,7 @@ If the property is not specified, the search is done by the default attribute: *
 </td>
 <td valign="top">
 
-SAP Central Invoice Management
+SAP Ariba Central Invoice Management
 
 </td>
 </tr>
@@ -12474,7 +13009,7 @@ Default value: *false*
 </td>
 <td valign="top">
 
-SAP Central Invoice Management
+SAP Ariba Central Invoice Management
 
 </td>
 </tr>
@@ -12500,7 +13035,7 @@ Default value: *false*
 </td>
 <td valign="top">
 
-SAP Central Invoice Management
+SAP Ariba Central Invoice Management
 
 </td>
 </tr>
@@ -12525,7 +13060,7 @@ Default value: *application/scim+json*
 </td>
 <td valign="top">
 
-SAP Central Invoice Management
+SAP Ariba Central Invoice Management
 
 </td>
 </tr>
@@ -12557,7 +13092,62 @@ You can use the example value or provide your own.
 </td>
 <td valign="top">
 
-SAP Central Invoice Management
+SAP Ariba Central Invoice Management
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`cim.bulk.operations.max.count`
+
+</td>
+<td valign="top">
+
+This property sets the number of operations to be performed in one bulk request.
+
+**Possible values:**
+
+Default value: *20*
+
+Maximum value: *100* 
+
+If you enter a number larger than 100, Identity Provisioning will replace it with the default value \(20\).
+
+**System Role:** Target
+
+</td>
+<td valign="top">
+
+SAP Ariba Central Invoice Management
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`cim.support.bulk.operation`
+
+</td>
+<td valign="top">
+
+Set this property to *true* if you want to enable bulk operations for provisioning entities. That means, the Identity Provisioning service can write, update, and delete multiple users or groups in a single request.
+
+For more information, see: [User Management \(SCIM\) for SAP Ariba Central Invoice Management](https://api.sap.com/api/UserServiceV1/resource/Bulk)
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false*
+
+**System Role:** Target
+
+</td>
+<td valign="top">
+
+SAP Ariba Central Invoice Management
 
 </td>
 </tr>
@@ -12981,6 +13571,280 @@ Default value: *application/scim+json*
 <td valign="top">
 
 SAP Ariba Category Management
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`hana.cloud.db.group.filter`
+
+</td>
+<td valign="top">
+
+When specified, only those SAP HANA Database Service groups matching the filter expression will be read.
+
+For example: *displayName eq "ProjectTeam1"*
+
+**System Role:** Source
+
+</td>
+<td valign="top">
+
+SAP HANA Database Service
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`hana.cloud.db.user.filter`
+
+</td>
+<td valign="top">
+
+When specified, only those SAP HANA Database Service users matching the filter expression will be read.
+
+For example: *userName eq "SmithJ"* 
+
+**System Role:** Source
+
+</td>
+<td valign="top">
+
+SAP HANA Database Service
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`hana.cloud.db.content.type`
+
+</td>
+<td valign="top">
+
+This property makes a SAP HANA Database Service connector to send a specified value for the *Content-Type* HTTP header. This is needed because SAP HANA Database Service could potentially not implement the protocol in the specification, which states that a system must accept *application/scim+json* as a value of the*Content-Type* header.
+
+**Possible values:**
+
+For example: *application/json*
+
+Default value: *application/scim+json*
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP HANA Database Service
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`hana.cloud.db.group.unique.attribute`
+
+</td>
+<td valign="top">
+
+If the Identity Provisioning tries to create a group that already exists on the SAP HANA Database Service target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
+
+**Possible values:**
+
+Default value \(when not specified\): *displayName*
+
+If the property is not specified, the search is done by the default attribute: *displayName*
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP HANA Database Service
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`hana.cloud.db.include.if.match.wildcard.header`
+
+</td>
+<td valign="top">
+
+Makes the SAP HANA Database Service connector send the *If-Match* HTTP header with a value of “\*” for every request to the target system. This header could be used by an SAP HANA Database Service system for entity versioning.
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false* 
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP HANA Database Service
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`hana.cloud.db.support.patch.operation`
+
+</td>
+<td valign="top">
+
+This property controls how modified users in the source system are updated in the target system.
+
+-   If set to *true*, Identity Provisioning sends a `PATCH` request to the user or group resource in the target system. Only attributes without `"scope": "createEntity"` in the attribute mappings in the write transformation will be updated.
+
+    For example, if the last name of a user is changed in the source system, the patch operation will update it in the target system and will leave unchanged other attributes with explicitly set "scope": "createEntity".
+
+-   If set to *false*, `PUT` operations are used to update users in the target system. This means, for example, that if a user attribute is modified, all user attributes are replaced in the target system, instead of updating only the modified ones.
+
+
+Users can be updated in the target system in various cases, such as:
+
+-   In the source system, some user attributes are modified, or new attributes are added.
+
+-   In the source system, a condition or a filter is set for users not to be read anymore.
+
+-   A user is deleted from the source system.
+
+
+In the last two cases, it's possible to keep the entity in the target system – it will not be deleted but only disabled. To do this, use the `deleteEntity` scope in the transformation of your target or proxy system. See: [Transformation Expressions](transformation-expressions-bb8537b.md) → **deleteEntity**.
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false*
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP HANA Database Service
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`hana.cloud.db.user.unique.attribute`
+
+</td>
+<td valign="top">
+
+When the Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists in SAP HANA Database Service. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\). This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\).
+
+According to your use case, choose how to set up this property:
+
+-   Default behavior: This property is missing during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such а *userName* is not found, the creation of the conflicting user fails.
+
+-   Value = *urn:ietf:params:scim:schemas:extension:sap:2.0:U ser:userId*. If the service finds an existing user with such *urn:ietf:params:scim:schemas:extension:sap:2.0:U ser:userId*, it updates this user with the data of the conflicting one. If a user with such attribute value is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+-   Value = *userName,urn:ietf:params:scim:schemas:extension:sap:2.0:Us er:userId*. If the service finds an existing user with such *userName* or *urn:ietf:params:scim:schemas:extension:sap:2.0:Us er:userId*, it updates this user with the data of the conflicting one. If a user with such *userName* or *urn:ietf:params:scim:schemas:extension:sap:2.0:Us er:userId* is not found, the creation of the conflicting user fails.
+
+**Possible values:**
+
+-   *userName*
+-   *urn:ietf:params:scim:schemas:extension:sap:2.0:Us er:userId*
+-   *userName,urn:ietf:params:scim:schemas:extension:sap:2.0:Us er:userId*
+
+Default value: *userName*
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP HANA Database Service
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`hana.cloud.db.authenticationType`
+
+</td>
+<td valign="top">
+
+Specifies the method by which users authenticate when connecting to the database.
+
+**Possible values:** JWT \( Users authenticate via JWT tokens issued by an identity provider.\)
+
+**System Role:** Target
+
+</td>
+<td valign="top">
+
+SAP HANA Database Service
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`hana.cloud.db.instance.id`
+
+</td>
+<td valign="top">
+
+Refers to a unique identifier associated with a specific database instance within the SAP HANA Cloud.
+
+**System Role:** Source, Target
+
+</td>
+<td valign="top">
+
+SAP HANA Database Service
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`hana.cloud.db.instance.type`
+
+</td>
+<td valign="top">
+
+Refers to the type of instance being configured or used within the SAP HANA Cloud.
+
+**System Role:** Source, Target
+
+</td>
+<td valign="top">
+
+SAP HANA Database Service
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`hana.cloud.db.providerName`
+
+</td>
+<td valign="top">
+
+Specifies the identity provider \(IdP\) that is responsible for handling authentication requests.
+
+**System Role:** Target
+
+</td>
+<td valign="top">
+
+SAP HANA Database Service
 
 </td>
 </tr>

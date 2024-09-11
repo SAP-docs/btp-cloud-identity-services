@@ -8,7 +8,7 @@ Select the language that the end user screen uses if the language of the browser
 
 ## Context
 
-The end user screens of the applications that use Identity Authentication for authentication, support the following languages: Arabic \(ar\), Bulgarian \(bg\), Catalan \(ca\), Chinese PRC \(zh-cn\), Chinese Taiwan \(zh-tw\), Croatian \(hr\), Czech \(cs\), Danish \(da\), Dutch \(nl\), English United Kingdom \(en-gb\), English United States \(en-us\), Estonian \(et\), Finnish \(fi\), French Standard \(fr\), French Canada \(fr-ca\), German Standard \(de\), Greek \(el\), Hebrew \(iw\), Hungarian \(hu\), Italian \(it\), Japanese \(ja\), Korean \(ko\), Latvian \(lv\), Lithuanian \(lt\), Malay \(s\), Norwegian \(no\), Polish \(pl\), Portuguese Portugal \(pt\), Romanian \(ro\), Russian \(ru\), Serbian \(sr\), Slovak \(sk\), Slovenian \(sl\), Spanish \(es\), Spanish Mexico \(es-mx\), Swedish \(sv\), Thai \(th\), Turkish \(tr\), Ukrainian \(uk\), Vietnamese \(vi\), Welsh \(cy\).
+The end user screens of the applications that use Cloud Identity Services for authentication, support the following languages: Arabic \(ar\), Bulgarian \(bg\), Catalan \(ca\), Chinese PRC \(zh-cn\), Chinese Taiwan \(zh-tw\), Croatian \(hr\), Czech \(cs\), Danish \(da\), Dutch \(nl\), English United Kingdom \(en-gb\), English United States \(en-us\), Estonian \(et\), Finnish \(fi\), French Standard \(fr\), French Canada \(fr-ca\), German Standard \(de\), Greek \(el\), Hebrew \(iw\), Hungarian \(hu\), Italian \(it\), Japanese \(ja\), Korean \(ko\), Latvian \(lv\), Lithuanian \(lt\), Malay \(s\), Norwegian \(no\), Polish \(pl\), Portuguese Portugal \(pt\), Romanian \(ro\), Russian \(ru\), Serbian \(sr\), Slovak \(sk\), Slovenian \(sl\), Spanish \(es\), Spanish Mexico \(es-mx\), Swedish \(sv\), Thai \(th\), Turkish \(tr\), Ukrainian \(uk\), Vietnamese \(vi\), Welsh \(cy\).
 
 The language for the end user screens is set according to the following order of priorities:
 
@@ -100,7 +100,7 @@ The language for the end user screens is set according to the following order of
 
 [Configure Trusted Domains](configure-trusted-domains-08fa1fe.md "Service providers that delegate authentication to Identity Authentication can protect their applications when using embedded frames, also called overlays, or when allowing user self-registration.")
 
-[Use Custom Domain in Identity Authentication](use-custom-domain-in-identity-authentication-c4db840.md "Identity Authentication allows you to use a custom domain that is different from the default one (<tenant ID>.accounts.ondemand.com) - for example www.mytenant.com.")
+[Use Custom Domain in Identity Authentication](use-custom-domain-in-identity-authentication-c4db840.md "Identity Authentication allows you to use a custom domain that is different from the default ones (<tenant ID>.accounts.ondemand.com or <tenant ID>.accounts.cloud.sap) - for example www.mytenant.com.")
 
 [Change a Tenant's Display Name](change-a-tenant-s-display-name-a513c91.md "You can configure the tenant's name from the administration console for SAP Cloud Identity Services.")
 

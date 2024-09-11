@@ -22,7 +22,7 @@ Identity Authentication provides also the possibility to configure custom mail s
 
 Apart from the Identity Authentication own mail server and the custom mail server, you can also use the Amazon Simple Email Service for the emails sent to users for the different application processes. Thus, you can modify the sender and receiver the email without having custom mail server.
 
-To use the Amazon Simple Email Service with custom domain, you must own the domain. Otherwise, you can use the `accounts.ondemand.com` domain and just modify the *From* and *Reply to* fields.
+To use the Amazon Simple Email Service with custom domain, you must own the domain. Otherwise, you can use the `accounts.ondemand.com` or `accounts.cloud.sap` domain and just modify the *From* and *Reply to* fields.
 
 For more information, about the emails sent for the different application processes, see [Configuring Email Templates](configuring-email-templates-b2afbcd.md).
 
@@ -75,7 +75,7 @@ To configure the mail server, choose one of the procedures below:
 
 [Configure Trusted Domains](configure-trusted-domains-08fa1fe.md "Service providers that delegate authentication to Identity Authentication can protect their applications when using embedded frames, also called overlays, or when allowing user self-registration.")
 
-[Use Custom Domain in Identity Authentication](use-custom-domain-in-identity-authentication-c4db840.md "Identity Authentication allows you to use a custom domain that is different from the default one (<tenant ID>.accounts.ondemand.com) - for example www.mytenant.com.")
+[Use Custom Domain in Identity Authentication](use-custom-domain-in-identity-authentication-c4db840.md "Identity Authentication allows you to use a custom domain that is different from the default ones (<tenant ID>.accounts.ondemand.com or <tenant ID>.accounts.cloud.sap) - for example www.mytenant.com.")
 
 [Change a Tenant's Display Name](change-a-tenant-s-display-name-a513c91.md "You can configure the tenant's name from the administration console for SAP Cloud Identity Services.")
 

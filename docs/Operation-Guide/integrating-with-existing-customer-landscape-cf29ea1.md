@@ -75,7 +75,7 @@ Identity Provider Proxy
 
 [Configuring Privacy Policies](configuring-privacy-policies-ed48466.md "You can configure a custom privacy policy document by creating a new document, adding and editing its language versions, and defining the document for an application.")
 
-[Configuring Authorization Policies](configuring-authorization-policies-982ac5f.md "Authorization management enables Identity Authentication administrators to use authorization policies in multiple environments, configure them, and assign them to users.")
+[Configuring Authorization Policies](configuring-authorization-policies-982ac5f.md "Authorization management enables SAP Cloud Identity Services administrators to use authorization policies, customize them, and assign them to users.")
 
 [Configuring Terms of Use](configuring-terms-of-use-61d3a86.md "You can configure a custom terms of use document by creating a new document, adding and editing its language versions, and defining the document for an application.")
 

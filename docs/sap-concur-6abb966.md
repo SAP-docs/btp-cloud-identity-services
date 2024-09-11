@@ -13,19 +13,17 @@ Follow this procedure to set up SAP Concur as a proxy system.
 > ### Restriction:  
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.
 
-**User Provisioning Service \(UPS\) v4 API with *Pre-2017 Authorization***
-
--   You have created a technical user with administrator permissions that will be used to call the UPS v4 API for creating or updating user account information. For more information, see [SAP Concur API: User Account Information](https://developer.concur.com/api-reference/user/#createUser).
--   You have registered a partner application in your SAP Concur system. You need the administrator permissions to register the application. For more information, see [Registering a Partner Application](https://developer.concur.com/manage-apps/partner-applications.html).
-
-**User Provisioning Service \(UPS\) v4 API or SAP Concur Identity v4 API with *OAuth 2.0* authentication**
+You are using **User v1 API** or **Identity v4 API**
 
 -   You have an SAP Concur admin user with *Web Services Administrator* role assigned.
 
 -   Your SAP Concur admin user has obtained a *Company Request Token* and a *Company UUID* from the SAP Concur Company Request Token self-service tool.
 
-    For more information, see [Configure an SAP Concur Entity as an IdP Target](https://www.concurtraining.com/customers/tech_pubs/Docs/_Current/SG_Shr/Shr_SG_Concur_IdP_Target.pdf) → *Section 2: SAP Concur Company Request Token*.
+    For more information, see [Configure an SAP Concur Entity as an Identity Provider \(IdP\) Target](https://help.sap.com/docs/SAP_CONCUR?version=Latest&task=integrate_task) → *Section 2: SAP Concur Company Request Token*.
 
+
+> ### Note:  
+> The **User v1 API** is deprecated and will be decommissioned. For more information, see [Concur User API Decommission](https://assets.concur.com/concurtraining/cte/en-us/FAQ_Concur_USER_EXTERNAL.pdf).
 
 > ### Note:  
 > Administrators of bundle tenants on Neo environment should enable the *Manage OAuth Clients* permission, as described in *Neo Environment* section in [Manage Authorizations](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/544de9b504214372b4479dc1f6b08cca.html "Manage the authorizations of Identity Provisioning administrators, when your bundle or standalone tenant is running on SAP BTP, Neo environment.") :arrow_upper_right:.
@@ -36,13 +34,13 @@ Follow this procedure to set up SAP Concur as a proxy system.
 
 ## Context
 
-Companies that use SAP Concur for managing and controlling travel expenses, invoices and other can use Identity Provisioning service to automate the identity and access management for the SAP Concur solution. You can use SAP Concur as a proxy connector to execute *hybrid* scenarios. That means, it can provision its entities to another \(external\) back-end system by request, and then can continue executing CRUD operations back to SAP Concur, whenever the external back-end requests such. This scenario supports reading and writing of **users**.
+Companies that use SAP ConcurIdentity Provisioning service to automate the identity and access management for the SAP Concur solution. You can use SAP Concur as a proxy connector to execute *hybrid* scenarios. That means, it can provision its entities to another \(external\) back-end system by request, and then can continue executing CRUD operations back to SAP Concur, whenever the external back-end requests such. This scenario supports reading and writing of **users**.
 
-SAP Concur offers three types of edition sites: **Standard**, **Professional** and **Standard-to-Professional Upgrade**. Its integration with Identity Provisioning service is supported with **Professional** edition only.
+The SAP Concur integration with Identity Provisioning is supported with Standard and Professional editions.
 
-SAP Concur provides two APIs for its integration with Identity Provisioning: UPS v4 API and Identity v4 API \(SCIM API\). The value of the `concur.api.version` property controls which API you use.
+SAP Concur provides User v1 API and Identity v4 API. The value of the `concur.api.version` property controls which API you use.
 
--   When the value is set to `1`, or the property is not defined \(typical for systems created before versioning was introduced on December 8, 2021\), UPS v4 API is used. The UPS v4 API currently supports two authentication methods: *Pre-2017 Authorization* and *OAuth 2.0*. For more information on how to update to version 2, see: [Update Connector Version](Operation-Guide/update-connector-version-8558733.md)
+-   When the value is set to `1`, or the property is not defined \(typical for systems created before versioning was introduced on December 8, 2021\), User v1 API is used. Version 1 is deprecated. For more information on how to update to version 2, see: [Update Connector Version](Operation-Guide/update-connector-version-8558733.md)
 
 -   When the value is set to `2`, Identity v4 API is used. This is the value that Identity Provisioning automatically sets for newly created systems after versioning was introduced on December 8, 2021. Identity v4 API supports provisioning of users with userUUID attribute which is generated by Identity Authentication at user creation.
 
@@ -141,7 +139,7 @@ To create SAP Concur as a proxy system, proceed as follows:
     </td>
     <td valign="top">
     
-    Enter: *HTTP*
+    Enter: *HTTP* 
     
     </td>
     </tr>
@@ -153,7 +151,9 @@ To create SAP Concur as a proxy system, proceed as follows:
     </td>
     <td valign="top">
     
-    Enter: `https://www.concursolutions.com`
+    For EU2 data center, enter: `eu2.concursolutions.com`
+
+    For US2 data center, enter: `www.concursolutions.com`
     
     </td>
     </tr>
@@ -179,7 +179,7 @@ To create SAP Concur as a proxy system, proceed as follows:
     
     Defines the version of SAP Concur API.
 
-    Set the value to *1* to use UPS v4 API.
+    Set the value to *1* to use User v4 API.
     
     </td>
     </tr>
@@ -192,17 +192,6 @@ To create SAP Concur as a proxy system, proceed as follows:
     <td valign="top">
     
     Enter: *BasicAuthentication*
-
-    When using UPS v4 API \(Version 1\), two types of *BasicAuthentication* are supported:
-
-    -   *Pre-2017 Authorization* - Аuthentication based on Base-64 encoded Concur credentials \(LoginID:Password\) of the user. For more information, see [Pre-2017 Authorization \(Deprecated\)](https://developer.concur.com/api-reference/authentication/authorization-pre-2017.html).
-
-        .
-
-    -   *OAuth 2.0* - For more information, see [Getting Started](https://developer.concur.com/api-reference/authentication/getting-started.html).
-
-
-
     
     </td>
     </tr>
@@ -214,9 +203,7 @@ To create SAP Concur as a proxy system, proceed as follows:
     </td>
     <td valign="top">
     
-    Valid when *Pre-2017 Authorization* is used.
-
-    Enter the user ID of the SAP Concur technical user.
+    Deprecated property. Do not use.
     
     </td>
     </tr>
@@ -228,23 +215,19 @@ To create SAP Concur as a proxy system, proceed as follows:
     </td>
     <td valign="top">
     
-    Valid when *Pre-2017 Authorization* is used.
-
-    \(Credential\) Enter the password of the SAP Concur technical user.
+    Deprecated property. Do not use.
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    `X-ConsumerKey` 
+    `X-ConsumerKey`
     
     </td>
     <td valign="top">
     
-    Valid when *Pre-2017 Authorization* is used.
-
-    \(Credential\) Enter the key of the registered partner application \(see the **Prerequisites** section\).
+    Deprecated property. Do not use.
     
     </td>
     </tr>
@@ -256,20 +239,18 @@ To create SAP Concur as a proxy system, proceed as follows:
     </td>
     <td valign="top">
     
-    Valid when the authentication type used is *OAuth 2.0*.
-
     Specify the SAP Concur data center your Identity Provisioning tenant belongs to. The following SAP Concur data centers are available:
 
-    -   us1
-    -   us2
-    -   eu1
-    -   eu2
-    -   emea
-    -   cn1
-    -   usg
-    -   int
+    -   EU2
 
-    Based on the provided data center, Identity Provisioning configures the URL of the User Provisioning Service \(UPS\) v4 API or the SAP Concur Identity v4 API. For example, if you provide `us1`, the service will configure the URL in the following pattern: `us.api.concursolutions.com`.
+    -   US2
+
+
+    Based on the provided data center, Identity Provisioning configures the URL of the User v1 API or Identity v4 API as follows:
+
+    -   If you provide `us2`, the URL is: `us.api.concursolutions.com`
+
+
     
     </td>
     </tr>
@@ -281,8 +262,6 @@ To create SAP Concur as a proxy system, proceed as follows:
     </td>
     <td valign="top">
     
-    Valid when the authentication type used is *OAuth 2.0*.
-
     \(Credential\) Enter the *Company Request Token* and run a provisioning job within 24 hours from generating the token in the SAP Concur Company Request Token self-service tool. Otherwise, the token will expire, and you’ll need a new one.
 
     After the first run of the job, Identity Provisioning fills in automatically a refresh token as the value of the concur.refresh.token property. If a provisioning job has not been run for six months, you’ll again need to generate a new token.
@@ -304,8 +283,6 @@ To create SAP Concur as a proxy system, proceed as follows:
     </td>
     <td valign="top">
     
-    Valid when the authentication type used is *OAuth 2.0*.
-
     Enter the *Company UUID* as described in the *Prerequisites* section.
     
     </td>
@@ -318,8 +295,6 @@ To create SAP Concur as a proxy system, proceed as follows:
     </td>
     <td valign="top">
     
-    Valid when the authentication type used is *OAuth 2.0*.
-
     Enter your company domain.
 
     The username and the company domain are concatenated in the default transformation in the following format: user@domain
@@ -392,16 +367,18 @@ To create SAP Concur as a proxy system, proceed as follows:
     
     Specify the SAP Concur data center your Identity Provisioning tenant belongs to. The following SAP Concur data centers are available:
 
-    -   us1
-    -   us2
-    -   eu1
-    -   eu2
-    -   emea
-    -   cn1
-    -   usg
-    -   int
+    -   APJ1
 
-    Based on the provided data center, Identity Provisioning configures the URL of the User Provisioning Service \(UPS\) v4 API or the SAP Concur Identity v4 API. For example, if you provide `us1`, the service will configure the URL in the following pattern: `us.api.concursolutions.com`.
+    -   EU2
+
+    -   US2
+
+
+    Based on the provided data center, Identity Provisioning configures the URL of the User v1 API or Identity v4 API as follows:
+
+    -   If you provide `us2`, the URL is: `us.api.concursolutions.com`
+
+
     
     </td>
     </tr>
@@ -510,19 +487,19 @@ To create SAP Concur as a proxy system, proceed as follows:
 
     [SAP Business Accelerator Hub: Concur \(Users\)](https://api.sap.com/api/ConcurExpenseUsers/resource)
 
-    **UPS v4 API**: [User Provisioning Service v4 API](https://developer.concur.com/api-reference/user-provisioning/v4.user-provisioning.html)
+    **UPS v1 API**: [User v1](https://developer.concur.com/api-reference/user/index.html)
 
     **Identity v4 API**: [Identity v4](https://developer.concur.com/api-reference/profile/v4.identity.html)
 
     > ### Caution:  
-    > The UPS v4 API requires an initial password setup for all newly provisioned user accounts. The default transformation offers a statement with an empty string as a value for the password configuration. However, it is ignored in order to prevent from a default setup of a wrong initial password for your systems. While the password statement is ignored, the provisioning will not be working. To enable the provisioning to SAP Concur, you need to perform the following operations:
+    > The User v1 API requires an initial password setup for all newly provisioned user accounts. The default transformation offers a statement with an empty string as a value for the password configuration. However, it is ignored in order to prevent from a default setup of a wrong initial password for your systems. While the password statement is ignored, the provisioning will not be working. To enable the provisioning to SAP Concur, you need to perform the following operations:
     > 
     > 1.  Enable the password statement. To do this, either delete **"ignore": true,** or set it as **"ignore": false**.
     > 2.  Set a proper statement for the password attribute value \(**"targetPath": "$.Password"**\).
     > 
     > \(Optional\) You can leave the default empty string, or you can use the **randomPassword** function to calculate a random value for the initial password of the newly created SAP Concur accounts. If you choose one of these two options and if you are not using single sign-on solution for SAP Concur, you have to also arrange a password reset support process in your company. This will securely offer an initial password to your corporate users for their newly created SAP Concur accounts. For more information, see [Transformation Expressions](transformation-expressions-bb8537b.md) → **Transformation Functions**.
 
-    **Default read and write transformation when using UPS v4 API \(Version 1\):**
+    **Default read and write transformation when using User v1 API \(Version 1\):**
 
     > ### Tip:  
     > The proxy *Read Transformation* is used when the external client application \(for example, SAP Identity Management\) makes initial load. That is, executing GET requests to the resource endpoints \(**/Users** or **/Groups**\) to retrieve the corresponding entities of the particular type. The external client application can also execute GET requests to a single resource endpoint \(querying a single resource is supported\). In this case, the proxy system acts as a *source* one.

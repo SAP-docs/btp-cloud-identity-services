@@ -40,9 +40,9 @@ To configure the custom mail server, follow the procedure below:
 
 3.  Under *External Services*, choose the *Mail Server Configuration* list item.
 
-4.  Choose the *Custom Mail Server* radio-button.
+4.  Choose the *Custom Mail Server* tab.
 
-5.  Enter the required information in all the fields.
+5.  Choose the authentication mechanism, and enter the required information in all the fields.
 
     > ### Remember:  
     > SAP is not responsible for the information in the fields. Contact your IT Department for the custom mail server configurations in the administration console.

@@ -2,7 +2,7 @@
 
 # Getting Started with the Identity Service of SAP BTP
 
-To create OpenID Connect \(OIDC\) applications in the Identity Authentication service using SAP Cloud Service Management service, instantiate the Identity service and bind your service instance to an application. The Identity service automates the manual creation of Identity Authentication OIDC applications.
+To create OpenID Connect \(OIDC\) applications in the Cloud Identity Services service using SAP Cloud Service Management service, instantiate the Identity service and bind your service instance to an application. The Identity service automates the manual creation of Cloud Identity Services OIDC applications.
 
 
 
@@ -10,7 +10,7 @@ To create OpenID Connect \(OIDC\) applications in the Identity Authentication se
 
 ## Prerequisites
 
--   You've established trust between your subaccount and your tenant of the Identity Authentication service using OpenID Connect.
+-   You've established trust between your subaccount and your tenant of the Cloud Identity Services service using OpenID Connect.
 
     For more information, see [Establish Trust and Federation Between UAA and Identity Authentication Service](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/161f8f0cfac64c4fa2d973bc5f08a894.html).
 

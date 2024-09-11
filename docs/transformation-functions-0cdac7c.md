@@ -988,8 +988,6 @@ For example, when the value of groupIndex is:
 -   *0* – the function returns the entire string
 -   Positive number – the function returns a specific group from the string. For instance, `groupIndex` = *3* will return the third group.
 
-To learn more about the relevant Java method, see: [Java API: Class Matcher – group \(int\)](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Matcher.html#group(int))
-
 > ### Example:  
 > Initial user data:
 > 

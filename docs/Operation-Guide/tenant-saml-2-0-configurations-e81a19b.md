@@ -129,7 +129,7 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
     > Tenant ID is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the tenant ID.
 
     > ### Remember:  
-    > Change the name of the identity provider on the service provider side every time you change the name format of the identity provider in the administration console. If you have set trusts with more than one service provider, change the name in every service provider. For more information about how to edit the name, see the documentation of the respective service providers.
+    > Change the name of the identity provider on the service provider side, or the name of the identity provider on the corporate identity provider side, every time you change the name format of the identity provider in the administration console. If you have set trusts with more than one service provider, or corporate identity provider, change the name in every provider. For more information about how to edit the name, see the documentation of the respective service or corporate identity providers.
 
     If the change of the name is successful, the system displays the message ***Tenant <name of tenant\> updated***.
 
@@ -190,7 +190,7 @@ To change the default certificate for the tenant, choose the new one from the li
 
 [Configure Trusted Domains](configure-trusted-domains-08fa1fe.md "Service providers that delegate authentication to Identity Authentication can protect their applications when using embedded frames, also called overlays, or when allowing user self-registration.")
 
-[Use Custom Domain in Identity Authentication](use-custom-domain-in-identity-authentication-c4db840.md "Identity Authentication allows you to use a custom domain that is different from the default one (<tenant ID>.accounts.ondemand.com) - for example www.mytenant.com.")
+[Use Custom Domain in Identity Authentication](use-custom-domain-in-identity-authentication-c4db840.md "Identity Authentication allows you to use a custom domain that is different from the default ones (<tenant ID>.accounts.ondemand.com or <tenant ID>.accounts.cloud.sap) - for example www.mytenant.com.")
 
 [Change a Tenant's Display Name](change-a-tenant-s-display-name-a513c91.md "You can configure the tenant's name from the administration console for SAP Cloud Identity Services.")
 

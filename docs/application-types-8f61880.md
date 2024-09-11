@@ -114,7 +114,7 @@ As a tenant administrator you can change the default configurations:
 > ### Note:  
 > The URL of the profile page has the following pattern:
 > 
-> `https://<tenant ID>.accounts.ondemand.com`
+> `https://<tenant ID>.accounts.ondemand.com` or `https://<tenant ID>.accounts.cloud.sap`
 > 
 > *Tenant ID* is an automatically generated ID by the system.
 > 

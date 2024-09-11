@@ -101,6 +101,11 @@ Cloud Foundry - Region Key
 Identity Authentication - Data Center
 
 </th>
+<th valign="top">
+
+Infrastructure
+
+</th>
 </tr>
 <tr>
 <td valign="top">
@@ -121,6 +126,11 @@ ap10
 <td valign="top">
 
 Australia \(Sydney\) / Japan \(Tokyo\)
+
+</td>
+<td valign="top">
+
+SAP
 
 </td>
 </tr>
@@ -145,6 +155,11 @@ ap11
 Singapore
 
 </td>
+<td valign="top">
+
+AWS
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -165,6 +180,11 @@ ap12
 <td valign="top">
 
 Seoul \(South Korea\)
+
+</td>
+<td valign="top">
+
+AWS
 
 </td>
 </tr>
@@ -189,6 +209,11 @@ ap20
 Australia \(Sydney\) / Japan \(Tokyo\)
 
 </td>
+<td valign="top">
+
+SAP
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -209,6 +234,11 @@ ap21
 <td valign="top">
 
 Singapore
+
+</td>
+<td valign="top">
+
+AWS
 
 </td>
 </tr>
@@ -233,6 +263,11 @@ br10
 Brazil \(São Paulo\)
 
 </td>
+<td valign="top">
+
+AWS
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -253,6 +288,11 @@ ca10
 <td valign="top">
 
 Canada \(Toronto\)
+
+</td>
+<td valign="top">
+
+Azure
 
 </td>
 </tr>
@@ -277,6 +317,11 @@ ch20
 Switzerland \(Zürich\)
 
 </td>
+<td valign="top">
+
+Azure
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -297,6 +342,11 @@ eu10
 <td valign="top">
 
 Germany \(Frankfurt\)
+
+</td>
+<td valign="top">
+
+AWS
 
 </td>
 </tr>
@@ -321,6 +371,11 @@ eu11
 Germany \(Frankfurt\)
 
 </td>
+<td valign="top">
+
+AWS
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -341,6 +396,11 @@ eu20
 <td valign="top">
 
 Netherlands \(Amsterdam\) / Germany \(Frankfurt\)
+
+</td>
+<td valign="top">
+
+SAP
 
 </td>
 </tr>
@@ -365,6 +425,11 @@ in30
 India \(Mumbai\)
 
 </td>
+<td valign="top">
+
+AWS
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -385,6 +450,11 @@ jp10
 <td valign="top">
 
 Japan \(Tokyo\) / Japan \(Osaka\)
+
+</td>
+<td valign="top">
+
+SAP
 
 </td>
 </tr>
@@ -409,6 +479,11 @@ jp20
 Japan \(Tokyo\) / Japan \(Osaka\)
 
 </td>
+<td valign="top">
+
+SAP
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -429,6 +504,11 @@ us10
 <td valign="top">
 
 United States \(Sterling\) / United States \(Colorado\)
+
+</td>
+<td valign="top">
+
+SAP
 
 </td>
 </tr>
@@ -453,6 +533,11 @@ us20
 West US 2
 
 </td>
+<td valign="top">
+
+Azure
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -475,6 +560,11 @@ us21
 United States \(Sterling\) / United States \(Colorado\)
 
 </td>
+<td valign="top">
+
+SAP
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -495,6 +585,11 @@ us30
 <td valign="top">
 
 West US 2
+
+</td>
+<td valign="top">
+
+Azure
 
 </td>
 </tr>

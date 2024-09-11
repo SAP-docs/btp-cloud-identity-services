@@ -322,7 +322,7 @@ string
 
 The technical name of the corporate identity provider as configured in the administration console for SAP Cloud Identity Services.
 
-When multiple identity providers are allowed for an application via conditional authentication, this parameter enables the client to determine which corporate identity provider to be used. Identity Authentication uses the `idp` to detect the correct corporate identity provider and redirect the request to it. The user authenticates against the corporate identity provider.
+Identity Authentication uses the When multiple identity providers are allowed for an application via conditional authentication, this parameter enables the client to determine which corporate identity provider to be used. `idp` to detect the correct corporate identity provider and redirect the request to it. The user authenticates against the corporate identity provider.
 
 </td>
 <td valign="top">

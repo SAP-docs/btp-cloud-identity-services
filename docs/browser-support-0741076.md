@@ -39,7 +39,7 @@ The Administration Console uses the SAPUI5 libraries. For more information on th
 
 ## Supported Desktop Browsers
 
-The end user screens, such as logon, forgot password, and so on, of the applications that use Identity Authentication for authentication, support the following browsers:
+The end user screens, such as logon, forgot password, and so on, of the applications that use Cloud Identity Services for authentication, support the following browsers:
 
 
 <table>

@@ -2,7 +2,7 @@
 
 # Use Custom Domain in Identity Authentication
 
-Identity Authentication allows you to use a custom domain that is different from the default one \(`<tenant ID>.accounts.ondemand.com`\) - for example `www.mytenant.com`.
+Identity Authentication allows you to use a custom domain that is different from the default ones \(`<tenant ID>.accounts.ondemand.com` or `<tenant ID>.accounts.cloud.sap`\) - for example `www.mytenant.com`.
 
 
 

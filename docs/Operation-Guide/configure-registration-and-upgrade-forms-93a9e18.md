@@ -115,7 +115,11 @@ The list of the attributes includes:
 > </td>
 > <td valign="top">
 > 
-> **`https://<tenant ID>.accounts.ondemand.com/md/implicitOptInEmailCountryKeys`** 
+> **`https://<tenant ID>.accounts.ondemand.com/md/implicitOptInEmailCountryKeys`**
+> 
+> or
+> 
+> **`https://<tenant ID>.accounts.cloud.sap/md/implicitOptInEmailCountryKeys`**
 > 
 > </td>
 > </tr>
@@ -127,7 +131,11 @@ The list of the attributes includes:
 > </td>
 > <td valign="top">
 > 
-> **`https://<tenant ID>.accounts.ondemand.com/md/implicitOptInTelefonCountryKeys`** 
+> **`https://<tenant ID>.accounts.ondemand.com/md/implicitOptInTelefonCountryKeys`**
+> 
+> or
+> 
+> **`https://<tenant ID>.accounts.cloud.sap/md/implicitOptInTelefonCountryKeys`**
 > 
 > </td>
 > </tr>
