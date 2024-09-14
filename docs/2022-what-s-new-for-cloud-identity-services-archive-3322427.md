@@ -72,7 +72,7 @@ Latest Revision
 </th>
 <th valign="top">
 
-Available as of
+Valid as Of
 
 </th>
 </tr>

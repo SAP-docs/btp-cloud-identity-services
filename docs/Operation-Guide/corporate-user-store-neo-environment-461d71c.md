@@ -996,7 +996,7 @@ country
 
 1.  Sign in to the administration console for SAP Cloud Identity Services.
 
-2.  Under *Identity Providers*, choose the *Source Systems* tile.
+2.  Under *Identity Providers*, choose the *Authentication Providers* tile.
 
 3.  Press the *Create* button on the left-hand panel to add a new source system to the list.
 

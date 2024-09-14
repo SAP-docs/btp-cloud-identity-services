@@ -74,7 +74,7 @@ Latest Revision
 </th>
 <th valign="top">
 
-Available as of
+Valid as Of
 
 </th>
 <th valign="top">
@@ -3188,90 +3188,6 @@ General Availability
 <td valign="top">
 
 New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
-2024-06-20
-
-</td>
-<td valign="top">
-
-2024-06-20
-
-</td>
-<td valign="top">
-
-2406a
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Audit Log Service in SAP BTP, Neo 
-
-</td>
-<td valign="top">
-
-The access of the audit logs for Identity Authentication tenants on the SAP infrastructure in the Audit Log Service in SAP BTP, Neo will be deprecated according to the following timeline:
-
--   China - Jul 24, 2024
--   Saudi Arabia - Jul 31, 2024
--   Japan - Sep 11, 2024
--   Australia - Oct 2, 2024
--   US-East - Oct 9, 2024
--   Europe - Oct 23, 2024
-
-See [Access Audit Logs \(Audit Log Service in SAP BTP, Neo\)](Monitoring-and-Reporting/access-audit-logs-audit-log-service-in-sap-btp-neo-9f6b9a4.md).
-
-Action:
-
-We recommend you to use the Audit Log Service in SAP BTP, Cloud Foundry to access the Identity Authentication tenants on both the SAP, and the AWS and Azure infrastructures. See [Access Audit Logs \(Audit Log Service in SAP BTP, Cloud Foundry\)](Monitoring-and-Reporting/access-audit-logs-audit-log-service-in-sap-btp-cloud-foundry-a3e793c.md).
-
-</td>
-<td valign="top">
-
-Recommended
-
-</td>
-<td valign="top">
-
-Deprecated
-
-</td>
-<td valign="top">
-
-Announcement
 
 </td>
 <td valign="top">

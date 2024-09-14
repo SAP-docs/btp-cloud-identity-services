@@ -8,18 +8,13 @@ View the audit logs for changes in the personal data, successful, and failed aut
 
 ## Context
 
-> ### Remember:  
+> ### Note:  
 > The content in this section is only relevant for tenants on the SAP infrastructure.
+
+> ### Caution:  
+> The deprecation of the access of the audit logs for Identity Authentication tenants on the SAP infrastructure in the Audit Log Service in SAP BTP, Neo has been postponed and will not be carried out according to the previously announced timeline. A new timeline will be announced accordingly.
 > 
-> The access of the audit logs for Identity Authentication tenants on the SAP infrastructure in the Audit Log Service in SAP BTP, Neo will be deprecated according to the following timeline:
-> 
-> -   Saudi Arabia - Jul 31, 2024
-> -   Japan - Sep 11, 2024
-> -   Australia - Oct 2, 2024
-> -   US-East - Oct 9, 2024
-> -   Europe - Oct 23, 2024
-> 
-> We recommend you to use the Audit Log Service in SAP BTP, Cloud Foundry to access the Identity Authentication tenants on both the SAP, and the AWS and Azure infrastructures. For more information, see [Access Audit Logs \(Audit Log Service in SAP BTP, Cloud Foundry\)](access-audit-logs-audit-log-service-in-sap-btp-cloud-foundry-a3e793c.md).
+> You can continue using the Audit Log Service in SAP BTP, Neo to access the Identity Authentication tenants on the SAP infrastructures.
 
 > ### Tip:  
 > If your tenant is on the SAP infrastructure, when you access the administration console for SAP Cloud Identity Services, the *Audit and Change Logs* tile, you see the *Cloud Foundry*, *NEO*, and *Change Logs* options for configurations. If your tenant is on the AWS, Azure infrastructure, you see the *Audit Logs* and *Change Logs* options for configurations.
