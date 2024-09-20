@@ -100,6 +100,91 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Regional Availability
+
+</td>
+<td valign="top">
+
+Cloud Identity Services now operates with additional IPs in the data centers in Singapore, and Europe \(Frankfurt\).
+
+See [Regional Availability](regional-availability-be600ca.md).
+
+Action:
+
+We recommend you to add the following IPs to your allowed IP list:
+
+Singapore
+
+LB IP - 13.215.237.53, 13.251.19.109, 3.0.227.4
+
+Europe \(Frankfurt\)
+
+LB IP - 3.78.87.109, 18.192.230.105, 3.126.8.63
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-09-19
+
+</td>
+<td valign="top">
+
+2024-09-19
+
+</td>
+<td valign="top">
+
+2409a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Off-Cycle Upgrade
 
 </td>

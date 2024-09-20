@@ -33,7 +33,7 @@ When you purchase an SAP cloud solution that bundles SAP Cloud Identity Services
 
 If you already have a bundle tenant and you purchase more SAP cloud solutions, you won't get additional tenants. Your existing one will be reused. The only exception to this rule is if your current tenant cannot be used due to some restrictions and legal requirements, like data residency regulations. For example, it is required that the user data should not leave a particular region or country. In that case, a new tenant is created in the new region.
 
-Tenants delivered as part of the bundling process are created automatically. You get their tenant URLs in a welcome e-mail from SAP. If a default test tenant is not created as part of the bundled delivery and the customer does not have a Cloud Foundry subaccount, then the customer can request a test tenant by reporting an incident on [SAP Support Portal](https://support.sap.com/en/index.html) under component BC-IAM-IDS. It will be provided for no additional cost.
+Tenants delivered as part of the bundling process are created automatically. You get their tenant URLs in a welcome e-mail from SAP.
 
 > ### Note:  
 > In the case of SAP SuccessFactors, getting a bundle tenant requires you to initiate an upgrade to SAP Cloud Identity Services in SAP SuccessFactors Upgrade Center. For more information see: [Initiating the Upgrade to SAP Cloud Identity Services - Identity Authentication Service](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/568fdf1f14f14fd089a3cd15194d19cc/0271d9c4176e45ca9307e49230073240.html?version=2305).
@@ -147,9 +147,6 @@ Get an additional tenant as part of a self-service request in SAP BTP cockpit. S
 -   You have a global account in SAP BTP cockpit with a multi-environment subaccount.
 
 
-> ### Note:  
-> The content in this section is only relevant for cloud management tools feature set B. For more information, see [Cloud Management Tools — Feature Set Overview](https://help.sap.com/docs/btp/sap-business-technology-platform/cloud-management-tools-feature-set-overview?version=Cloud).
-
 
 
 ### Procedure
@@ -163,7 +160,7 @@ To get additional tenant using SAP BTP multi-environment subaccount, proceed as 
     > ### Tip:  
     > -   If you don't see the *Cloud Identity Service* tile, navigate to *Entitlements* trial, add the tile.
     > -   If you don't see the *additional-tenant* plan, navigate to *Entitlements* \> *Edit* \> *Add Service Plans* \> *Cloud Identity Services*, select the checkbox for the *additional-tenant* plan, press *Add Service Plans* and save your choice.
-    > -   If you use directories entitlement management in your global account, you must assign the *additional-tenant* plan to the directory first, and after that to the subaccount. Once you assign the *additional-tenant* plan to your directory, it will appear in your subaccount entitlements too. For more information, see [Configure Entitlements and Quotas for Directories \[Feature Set B\]](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/37f8871865114f44aebee3db6ac64b72.html).
+    > -   If you use directories entitlement management in your global account, you must assign the *additional-tenant* plan to the directory first, and after that to the subaccount. Once you assign the *additional-tenant* plan to your directory, it will appear in your subaccount entitlements too. For more information, see [Configure Entitlements and Quotas for Directories](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/37f8871865114f44aebee3db6ac64b72.html).
 
     > ### Note:  
     > For each service plan you must have a separate subaccount.
