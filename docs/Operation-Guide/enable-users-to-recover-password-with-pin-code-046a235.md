@@ -101,7 +101,6 @@ Target Users
 </td>
 <td valign="top">
 
--   *None* - the PIN code option isn't offered to the users and all PIN code configurations in the administration console are disabled
 -   *Users without email* - only users that don't have emails are able to reset password via PIN code
 -   *All users* - everyone can choose this option to reset the password
 -   *Specific groups* - only users that belong to the selected groups can reset password via PIN code.
@@ -155,38 +154,41 @@ To configure PIN code option in the administration console, follow the procedure
 
 4.  Select the *PIN Code* tab.
 
-5.  Under *Target Users*, choose users that can reset passwords with PIN code:
+5.  Choose *Edit* \> *Enabled*.
 
-    -   *None* - default choice
-
-        > ### Note:  
-        > If selected, the PIN code configurations in the administration console are disabled.
+6.  Under *Target Users*, choose users that can reset passwords with PIN code:
 
     -   *Users without email*
-    -   *All users*
+    -   *All users* - default choice
     -   *Specific groups*
 
         > ### Note:  
         > When you select this option, you must specify the specific group or groups for which you enable password recovery via PIN code.
 
 
-6.  Under *Settings*, choose the minimum required length of the PIN code.
+7.  Under *PIN Length*, choose the minimum required length of the PIN code.
 
-7.  **Optional:** Select the *Show "Setup later"* check box.
+8.  **Optional:** Under *User Options*, select the *Show "Setup later"* check box.
 
     When selected, the end users see the option to set up the PIN code later.
 
-8.  **Optional:** Select the *Show "Don't ask again"* check box.
+9.  **Optional:** Under *User Options*, select the *Show "Don't ask again"* check box.
 
     When selected, the end users see the option to hide the prompt to set up their PIN code.
 
-9.  Save your configuration.
+10. Save your configuration.
+
+    You can see information about your settings.
 
 
 **Related Information**  
 
 
 [Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md "You as a tenant administrator can view and download the tenant SAML 2.0 metadata. You can also change the name format and update your certificate used by the identity provider to digitally sign the messages for the applications.")
+
+[Get SAML 2.0 IdP Metadata via Parameter](get-saml-2-0-idp-metadata-via-parameter-2c76690.md "Tenant administrator can get the SAML 2.0 metadata via specific parameters.")
+
+[Rotate Signing Certificates](rotate-signing-certificates-6621ad5.md "Tenant administrators must replace existing signing certificates with new ones before they expire. This ensures uninterrupted and secure communication between SAML 2.0 applications (referred to as service providers) and Identity Authentication as the identity provider.")
 
 [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md "You as a tenant administrator can view and configure the tenant OpenID Connect configurations.")
 
@@ -199,6 +201,8 @@ To configure PIN code option in the administration console, follow the procedure
 [Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in screen of the Horizon theme with instructions for the user.")
 
 [Configure X.509 Client Certificates for User Authentication](configure-x-509-client-certificates-for-user-authentication-52c7dcb.md "Tenant administrators can configure X.509 client certificates for user authentication as an alternative to authenticating with a user name and a password.")
+
+[Enable Users to Generate and Authenticate with Certificates](enable-users-to-generate-and-authenticate-with-certificates-4cf818a.md "Allow users to generate and authenticate with certificates.")
 
 [Configure Tenant Images](configure-tenant-images-8742046.md "You can configure a custom global logo and, or a background image on the forms for sign-in in, registration, upgrade, password update, and account activation for all applications in a tenant. You can also set a favicon for tenant.")
 

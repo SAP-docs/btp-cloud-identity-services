@@ -37,8 +37,6 @@ This section describes how you can configure the user authentication, access to 
 
 [Configuring OpenID Connect](configuring-openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
 
-[Troubleshooting for Administrators](troubleshooting-for-administrators-f80beb5.md "This section is intended to help administrators deal with error messages in the administration console for SAP Cloud Identity Services.")
-
 <a name="reference_mwk_3qf_cy"/>
 
 <!-- reference\_mwk\_3qf\_cy -->

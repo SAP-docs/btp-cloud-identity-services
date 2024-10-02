@@ -43,7 +43,11 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
 
     The *SAML 2.0 Configuration* page that opens displays the name of the identity provider, its endpoints, and its signing certificate.
 
-4.  **Optional:** To download the identity provider's metadata, press the *Download Metadata File* button.
+4.  **Optional:** To download the identity provider's metadata, press the *Download Metadata File* button and choose one of the options.
+
+    -   *Default-certificate*
+    -   *Non-default certificate*
+    -   *All certificates*
 
 5.  **Optional:** To change the name of the identity provider, choose the *Name* field, select the name from the dropdown list, and save your changes.
 
@@ -158,6 +162,10 @@ To change the default certificate for the tenant, choose the new one from the li
 **Related Information**  
 
 
+[Get SAML 2.0 IdP Metadata via Parameter](get-saml-2-0-idp-metadata-via-parameter-2c76690.md "Tenant administrator can get the SAML 2.0 metadata via specific parameters.")
+
+[Rotate Signing Certificates](rotate-signing-certificates-6621ad5.md "Tenant administrators must replace existing signing certificates with new ones before they expire. This ensures uninterrupted and secure communication between SAML 2.0 applications (referred to as service providers) and Identity Authentication as the identity provider.")
+
 [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md "You as a tenant administrator can view and configure the tenant OpenID Connect configurations.")
 
 [Change Tenant Texts Via Administration Console](change-tenant-texts-via-administration-console-c24b1d0.md "The change tenant texts option can be used to change the predefined texts and messages for end-user screens available per tenant in Identity Authentication via the administration console.")
@@ -169,6 +177,8 @@ To change the default certificate for the tenant, choose the new one from the li
 [Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in screen of the Horizon theme with instructions for the user.")
 
 [Configure X.509 Client Certificates for User Authentication](configure-x-509-client-certificates-for-user-authentication-52c7dcb.md "Tenant administrators can configure X.509 client certificates for user authentication as an alternative to authenticating with a user name and a password.")
+
+[Enable Users to Generate and Authenticate with Certificates](enable-users-to-generate-and-authenticate-with-certificates-4cf818a.md "Allow users to generate and authenticate with certificates.")
 
 [Configure Tenant Images](configure-tenant-images-8742046.md "You can configure a custom global logo and, or a background image on the forms for sign-in in, registration, upgrade, password update, and account activation for all applications in a tenant. You can also set a favicon for tenant.")
 

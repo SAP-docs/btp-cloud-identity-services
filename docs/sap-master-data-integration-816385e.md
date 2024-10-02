@@ -36,7 +36,9 @@ As part of SAP’s data model and integration unification strategy, SAP BTP Inte
 
 To learn more, see: [Integrating SAP SuccessFactors Employee Central with SAP Master Data Integration](https://help.sap.com/viewer/634eabb3d94044d2b319aaf7a8f18fb9/latest/en-US/00315e512acc4d07ad965de5c9d40547.html)
 
-You can read users from MDI and provision it to a target system of your choice.
+You can use Identity Provisioning to configure SAP Master Data Integration as a source system for provisioning of users and HR events to a target system of your choice. The HR events reflect the various stages of an employee’s lifecycle from hire to retire. For example: hire, termination, job change, position change. For more information, see [Events in Employee Central](https://help.sap.com/docs/SAP_SUCCESSFACTORS_EMPLOYEE_CENTRAL/b14dd15ca58f43e0856184a740a4b212/77bc104be8a64138aee4349f2241b286.html?version=latest).
+
+HR events are read with delta load marker so that the target system is aware of the previous and current instance of the event. The delta load marker is deleted during system reset.
 
 
 
@@ -260,6 +262,28 @@ You can read users from MDI and provision it to a target system of your choice.
     >           "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
     >         ],
     >         "targetPath": "$.schemas"
+    >       }
+    >     ]
+    >   },
+    >   "event": {
+    >     "ignore": true,
+    >     "condition": "($.instance.id EMPTY false) || ($.instanceId EMPTY false)",
+    >     "mappings": [
+    >       {
+    >         "sourcePath": "$.instance.id",
+    >         "optional": true,
+    >         "targetPath": "$.id",
+    >         "targetVariable": "entityIdSourceSystem"
+    >       },
+    >       {
+    >         "sourcePath": "$.instanceId",
+    >         "optional": true,
+    >         "targetPath": "$.id",
+    >         "targetVariable": "entityIdSourceSystem"
+    >       },
+    >       {
+    >         "sourcePath": "$",
+    >         "targetPath": "$"
     >       }
     >     ]
     >   }

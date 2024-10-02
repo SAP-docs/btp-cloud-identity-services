@@ -257,6 +257,16 @@ Create a CBC target system to provision users and group members to it.
     >                 "targetPath": "$.name.familyName"
     >             },
     >             {
+    >                 "sourcePath": "$.emails",
+    >                 "preserveArrayWithSingleElement": true,
+    >                 "targetPath": "$.emails"
+    >             },
+    >             {
+    >                 "targetPath": "$.emails[0].primary",
+    >                 "condition": "$.emails[?(@.primary == true)].value == []",
+    >                 "constant": true
+    >             },
+    >             {
     >                 "sourcePath": "$.active",
     >                 "targetPath": "$.active"
     >             },

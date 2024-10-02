@@ -1,10 +1,10 @@
 <!-- loio27882717f44b445fa287936c6f43dc1f -->
 
-# What Are Cloud Identity Services?
+# What Are Identity Authentication?
 
-Мanage identities, authorizations and single sign-on across cloud and on-premise solutions. 
+Authentication and single sign-on for users in the cloud. 
 
-SAP Cloud Identity Services are a group of services of SAP Business Technology Platform \(SAP BTP\), which enable you to integrate identity and access management between systems. The goal is to provide a seamless single sign-on experience across systems while ensuring that system and data access are secure. SAP Cloud Identity Services include Identity Authentication, Identity Provisioning, Identity Directory and Authorization Management.
+The Identity Authentication service provides you with controlled cloud-based access to business processes, applications, and data. It simplifies your user experience through authentication mechanisms, single sign-on, on-premise integration, and convenient self-service options.
 
 
 
@@ -33,13 +33,13 @@ Authentication and SSO
 </b></dt>
 <dd>
 
-Choose one of the supported authentication methods to control access to your application, like Form, SPNEGO, Social, or two-factor authentication. Use OpenID Connect or SAML 2.0 to provide single sign-on. Integrate your application programmatically using authentication via API.
+Choose one of the supported authentication methods to control access to your application, like Form, SPNEGO, Social, or two-factor authentication. Use SAML 2.0 to provide single sign-on. Integrate your application programmatically using authentication via API.
 
 
 
 </dd><dt><b>
 
-Risk-Based Authentication
+Configure Risk-Based Authentication
 
 </b></dt>
 <dd>
@@ -61,51 +61,7 @@ Delegate authentication to a 3rd party or on-premise IdP, as default or based on
 
 </dd><dt><b>
 
-Policy-Based Authorizations
-
-</b></dt>
-<dd>
-
-Develop SAP BTP applications with instance-based authorizations. Configure those instance-based authorizations centrally as policies within SAP Cloud Identity Services.
-
-
-
-</dd><dt><b>
-
-Data Persistence 
-
-</b></dt>
-<dd>
-
-Store and manage users and groups in identity directory - the user store of SAP Cloud Identity Services.
-
-
-
-</dd><dt><b>
-
-User and Group Provisioning 
-
-</b></dt>
-<dd>
-
-Synchronize users and groups between multiple supported cloud and on-premise systems, both SAP and non-SAP. Filter data. Run jobs in full and delta read mode.
-
-
-
-</dd><dt><b>
-
-Job Logging and Notifications 
-
-</b></dt>
-<dd>
-
-View and manage job logs and real-time provisioning logs. Subscribe to source systems and receive notifications for the status of provisioning jobs.
-
-
-
-</dd><dt><b>
-
-User and Group Management via API 
+Use API
 
 </b></dt>
 <dd>

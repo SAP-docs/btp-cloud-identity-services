@@ -32,6 +32,8 @@ These target systems consume SCIM 1.1 API provided by SAP HANA XS Advanced UAA.
 > ### Remember:  
 > You can write users and groups to SAP BTP XS Advanced UAA on an **application** level only. You cannot provision and manage them on a *subaccount* level.
 
+Creating, updating, and deleting groups follow the standard processes. If groups exist in the source but do not exist in the target, Identity Provisioning will create them. If groups have been changed or deleted in the source, Identity Provisioning will update or delete them accordingly. Deleting involves deassigning the group members and deleting the group itself.
+
 
 
 ## Procedure
@@ -329,10 +331,6 @@ These target systems consume SCIM 1.1 API provided by SAP HANA XS Advanced UAA.
     >   },
     >   "group": {
     >     "condition": "('%xsuaa.group.prefix%' === 'null') || ($.displayName =~ /%xsuaa.group.prefix%.*/)",
-    >     "skipOperations": [
-    >       "create",
-    >       "delete"
-    >     ],
     >     "mappings": [
     >       {
     >         "sourcePath": "$.displayName",

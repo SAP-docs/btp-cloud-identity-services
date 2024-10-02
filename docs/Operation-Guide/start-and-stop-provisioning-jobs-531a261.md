@@ -2,7 +2,7 @@
 
 # Start and Stop Provisioning Jobs
 
-You can start and stop a provisioning job from the Identity Provisioning user interface \(UI\) or from an API client by using the Identity Provisioning tenant admin API.
+You can start and stop a provisioning job from the Identity Provisioning user interface \(UI\)or from an API client by using the Identity Provisioning tenant admin API.
 
 
 

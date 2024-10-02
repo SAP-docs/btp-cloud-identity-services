@@ -13,7 +13,7 @@ Follow this procedure to set up SAP Ariba Central Invoice Management as а sourc
 > ### Restriction:  
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.
 
-You have created an instance and generated a service key for the scim service plan of SAP Ariba Central Invoice Management. For more information, see [Setting Up Invoice Processing with SAP Ariba Central Invoice Management \(4N6\)](https://support.sap.com/content/dam/SAAP/Sol_Pack/S4C/Library/Setup/4N6_Set-Up_EN_XX.pdf) –\> *7.4 Configure User Replication*.
+You have created an instance and generated a service key for the scim service plan of SAP Ariba Central Invoice Management. This step is automated by the booster *Set Up SAP Ariba Central Invoice Management*. For more information, see [Setting Up Invoice Processing with SAP Ariba Central Invoice Management \(4N6\)](https://support.sap.com/content/dam/SAAP/Sol_Pack/S4C/Library/Setup/4N6_Set-Up_EN_XX.pdf) –\> *Set up Configuration Using Booster in SAP BTP Cockpit*.
 
 
 
@@ -171,7 +171,7 @@ SAP Ariba Central Invoice Management is an SAP BTP SaaS application running on S
     
     When specified, only those SAP Ariba Central Invoice Management groups matching the filter expression will be read.
 
-    Example: *displayName eq "ProjectTeam1" or "Students2018"*
+    Example: *displayName eq "ProjectTeam1"*
     
     </td>
     </tr>
@@ -206,6 +206,8 @@ SAP Ariba Central Invoice Management is an SAP BTP SaaS application running on S
     You can change the default transformation mapping rules to reflect your current setup of entities in your system. For more information, see:
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
+
+    [User Management \(SCIM\) for SAP Ariba Central Invoice Management](https://api.sap.com/api/UserServiceV1/resource/)
 
     **Mapping logic** – the behavior of the default transformation logic is to read all user attributes from the source SAP Ariba Central Invoice Management system, and then map them to the internal SCIM representation. It uses `entityIdSourceSystem` to store the unique ID of the identity.
 

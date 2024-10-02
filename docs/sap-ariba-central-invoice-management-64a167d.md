@@ -13,7 +13,7 @@ Follow this procedure to set up SAP Ariba Central Invoice Management as a proxy 
 > ### Restriction:  
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.
 
-You have created an instance and generated a service key for the scim service plan of SAP Ariba Central Invoice Management. For more information, see [Setting Up Invoice Processing with SAP Ariba Central Invoice Management \(4N6\)](https://support.sap.com/content/dam/SAAP/Sol_Pack/S4C/Library/Setup/4N6_Set-Up_EN_XX.pdf) –\> *7.4 Configure User Replication*.
+You have created an instance and generated a service key for the scim service plan of SAP Ariba Central Invoice Management. This step is automated by the booster *Set Up SAP Ariba Central Invoice Management*. For more information, see [Setting Up Invoice Processing with SAP Ariba Central Invoice Management \(4N6\)](https://support.sap.com/content/dam/SAAP/Sol_Pack/S4C/Library/Setup/4N6_Set-Up_EN_XX.pdf) –\> *Set up Configuration Using Booster in SAP BTP Cockpit*.
 
 > ### Note:  
 > Administrators of bundle tenants on Neo environment should enable the *Manage OAuth Clients* permission, as described in *Neo Environment* section in [Manage Authorizations](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/544de9b504214372b4479dc1f6b08cca.html "Manage the authorizations of Identity Provisioning administrators, when your bundle or standalone tenant is running on SAP BTP, Neo environment.") :arrow_upper_right:.
@@ -224,7 +224,7 @@ This scenario supports provisioning users and groups.
     
     When specified, only those SAP Ariba Central Invoice Management groups matching the filter expression will be read.
 
-    Example: *displayName eq "ProjectTeam1" or "Students2018"*
+    Example: *displayName eq "ProjectTeam1"*
     
     </td>
     </tr>
@@ -238,9 +238,13 @@ This scenario supports provisioning users and groups.
     
     If Identity Provisioning tries to provision a user that already exists in the target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved. The property is not added automatically at system creation.
 
-    Default value: *userName*
+    **Possible values:**
 
-    If the service finds an existing user by userName, it updates this user with the data of the conflicting one. If the service does not find an existing user by userName, the creation of the conflicting user fails.
+    -   *userName* - default value
+    -   *emails\[\*\].value*
+    -   *userName,emails\[\*\].value*
+
+    For more information, see: [List of Properties](list-of-properties-d6f3577.md)
     
     </td>
     </tr>
@@ -257,7 +261,9 @@ This scenario supports provisioning users and groups.
 
     You can change the default transformation mapping rules to reflect your current setup of entities in your SAP Ariba Central Invoice Management system. For more information, see:
 
-    [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md).
+    [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
+
+    [User Management \(SCIM\) for SAP Ariba Central Invoice Management](https://api.sap.com/api/UserServiceV1/resource/)
 
     Default read and write transformations:
 

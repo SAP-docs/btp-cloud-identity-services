@@ -46,7 +46,7 @@ If you have self-created applications or automatically created single-tenant app
 
 ### Application Attributes
 
-If you have subscribed multi-tenant applications in your SAP Cloud Identity Services tenant, the attributes supported by these applications are predefined and listed under the *Application Attributes* section, with default mappings for source *Identity Directory*. You can see which attributes are supported, and add or remove mappings for the other sources - *Corporate Identity Provider* and *Expression*.
+If you have subscribed multi-tenant applications in your SAP Cloud Identity Services tenant, the attributes supported by these applications are predefined and listed under the *Primary Attribute* section, with default mappings for source *Identity Directory*. You can see which attributes are supported, and add or remove mappings for the other sources - *Corporate Identity Provider* and *Expression*.
 
 > ### Tip:  
 > For some subscribed applications, you might need to add custom attribute mappings \(under the *Self-Defined Attributes* section\). For example, an SAP BTP application connects to another application using a destination that is customer-managed. As *User ID* for principal propagation, the customer decides to use an attribute that is not in the list of predefined application attributes. So, this customer need to add the attribute configured in the destination as a self-defined attribute in the application in the SAP Cloud Identity Services tenant.

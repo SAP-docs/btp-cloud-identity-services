@@ -100,6 +100,972 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Off-Cycle Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2024-10-02
+
+</td>
+<td valign="top">
+
+2409b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2409b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAML 2.0 Metadata
+
+</td>
+<td valign="top">
+
+You can get tenant metadata via URL parameters. See [Get SAML 2.0 IdP Metadata via Parameter](Operation-Guide/get-saml-2-0-idp-metadata-via-parameter-2c76690.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2409b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAML 2.0 Metadata
+
+</td>
+<td valign="top">
+
+You can choose which certificate to be included in the downloaded tenant SAML 2.0 metadata file. See [Tenant SAML 2.0 Configurations](Operation-Guide/tenant-saml-2-0-configurations-e81a19b.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2409b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Password Recovery Options
+
+</td>
+<td valign="top">
+
+The configuration of security questions and PIN code for password recovery now requires entering *Edit* mode. See [Enable Users to Recover Password with Security Questions](Operation-Guide/enable-users-to-recover-password-with-security-questions-d9ae898.md), and [Enable Users to Recover Password with PIN Code](Operation-Guide/enable-users-to-recover-password-with-pin-code-046a235.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2409b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP HANA Cloud, SAP HANA Database connector
+
+</td>
+<td valign="top">
+
+Identity Provisioning supports the SAP HANA Cloud, SAP HANA Database connector. You can configure it as source, target, and proxy system for your provisioning scenarios. See:
+
+-   [SAP HANA Cloud, SAP HANA Database \(Source\)](sap-hana-cloud-sap-hana-database-7c6fbdb.md)
+
+-   [SAP HANA Cloud, SAP HANA Database \(Target\)](sap-hana-cloud-sap-hana-database-7e2b54e.md)
+
+-   [SAP HANA Cloud, SAP HANA Database \(Proxy\)](sap-hana-cloud-sap-hana-database-37fd144.md)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2409b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Ariba Central Invoice Management connector
+
+</td>
+<td valign="top">
+
+Identity Provisioning supports the SAP Ariba Central Invoice Management connector. You can configure it as source, target, and proxy system for your provisioning scenarios. See:
+
+-   [SAP Ariba Central Invoice Management \(Source\)](sap-ariba-central-invoice-management-f540d52.md)
+
+-   [SAP Ariba Central Invoice Management \(Target\)](sap-ariba-central-invoice-management-ea2147d.md)
+
+-   [SAP Ariba Central Invoice Management \(Proxy\)](sap-ariba-central-invoice-management-64a167d.md)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2409b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Datasphere connector
+
+</td>
+<td valign="top">
+
+Identity Provisioning supports the SAP Datasphere connector. You can configure it as source, target, and proxy system for your provisioning scenarios. See:
+
+-   [SAP Datasphere \(Source\)](sap-datasphere-d3e16f0.md)
+
+-   [SAP Datasphere \(Target\)](sap-datasphere-eb95de0.md)
+
+-   [SAP Datasphere \(Proxy\)](sap-datasphere-ab2e279.md)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2409b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Support for OAuth certificate authentication
+
+</td>
+<td valign="top">
+
+SAP CPQ support OAuth certificate authentication.
+
+See: [SAP CPQ](sap-cpq-e74f131.md)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2409b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Condition and skip update - changed behavior
+
+</td>
+<td valign="top">
+
+The behavior of target transformations that contain a combination of condition and skip operations for updates has been changed.
+
+Previously, the skip operation was evaluated before the condition. If users or groups have been updated in the source system, they are marked as skipped in the logs, and Identity Provisioning does not proceed to evaluate the condition. As a result, users or groups that do not meet the condition are not deleted as they should be. After the change, the condition is evaluated first.
+
+See: [Transformation Expressions](transformation-expressions-bb8537b.md)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2409b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Skip create and delete operations of groups - removed
+
+</td>
+<td valign="top">
+
+Skipping the create and delete operations for groups has been removed from the write transformations of the SAP BTP XS Advanced UAA \(Cloud Foundry\) target system.
+
+Previously, it was not possible to create or delete groups; it was expected that groups already exist in the target system, allowing Identity Provisioning to only update their members. Now, creating, updating, and deleting groups follow the standard processes.
+
+See: [SAP BTP XS Advanced UAA \(Cloud Foundry\)](sap-btp-xs-advanced-uaa-cloud-foundry-ecddce6.md)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2409b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Reset of SAP Master Data Integration - changed behavior
+
+</td>
+<td valign="top">
+
+Resetting the SAP Master Data Integration source system also resets the delta load marker.
+
+Previously, the reset cleared the operational data without resetting the delta marker. This approach prevented the provisioning of old events in subsequent job runs. Now, the reset procedure for this system is consistent with that of the other supported source systems.
+
+See: [SAP Master Data Integration](sap-master-data-integration-816385e.md) 
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2409b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Data Custodian - filter users by group display name
+
+</td>
+<td valign="top">
+
+The default write transformation is changed to support provisioning of users that are members of groups matching the set dc.group.prefix. This is possible by including a condition for filtering the users by group display name of their assigned groups. If the dc.group.prefix is set, only users assigned to groups that contain in their display name the set specific prefix will be provisioned. In case the property is not set, all users are provisioned to SAP Data Custodian, regardless of the group display name of their assigned groups.
+
+See: [SAP Data Custodian](sap-data-custodian-cf23000.md)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2024-09-25
+
+</td>
+<td valign="top">
+
+2409b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Regional Availability
 
 </td>
@@ -1150,7 +2116,7 @@ As of September 24, 2024, Identity Provisioning will change the behavior of targ
 
 Currently, the skip operation is evaluated before the condition. If any users or groups have been updated in the source system, they are marked as skipped in the logs, and Identity Provisioning does not proceed to evaluate the condition. As a result, users or groups that do not meet the condition are not deleted as they should be.
 
-Following the change, the condition will be evaluated first. Users and groups who do not match the condition will be deleted. After the condition is evaluated, the skip operation will determine whether the remaining users will be skipped or provisioned.
+Following the change, the condition will be evaluated first. Users and groups who do not match the condition will be skipped. After the condition is evaluated, the skip operation will determine whether the remaining users will be skipped or provisioned.
 
 See [Transformation Expressions](transformation-expressions-bb8537b.md).
 
@@ -1960,7 +2926,7 @@ SAP Cloud Identity Services - Identity Provisioning integration with SAP Cloud A
 
 SAP Cloud Identity Services - Identity Provisioning is now integrated with SAP Cloud ALM and you can use the *Configuration & Security Analysis* and the *Job & Automation Monitoring* apps.
 
-See [Monitor with SAP Cloud ALM](Monitoring-and-Reporting/monitor-with-sap-cloud-alm-bc835e5.md).
+See [Monitoring with SAP Cloud ALM](Monitoring-and-Reporting/monitoring-with-sap-cloud-alm-bc835e5.md).
 
 </td>
 <td valign="top">

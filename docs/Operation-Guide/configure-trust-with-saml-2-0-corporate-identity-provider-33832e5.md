@@ -144,6 +144,10 @@ Set up trust with a corporate identity provider in the administration console fo
     -   The metadata XML file of the identity provider.
     -   The URL with identity provider metadata.
 
+        > ### Restriction:  
+        > The metadata URL must not contain query parameter.
+
+
 
     
     </td>

@@ -397,7 +397,7 @@ See: [How to find your application's application key and OAuth client ID](https:
 
 **Possible values:** Text/numeric string
 
-For example: *123abc123XYZ000abc123ABC012345*
+For example: This property corresponds to the SAP Ariba realm that your application has access to. To learn how to get it, see: *123abc123XYZ000abc123ABC012345*
 
 **System Role:** Source, Target, Proxy
 
@@ -416,7 +416,7 @@ SAP Ariba Applications
 </td>
 <td valign="top">
 
-This property corresponds to the SAP Ariba realm that your application has access to. To learn how to get it, see: [How to find your SAP Ariba realm name?](https://blogs.sap.com/2021/01/12/how-to-find-your-sap-ariba-realm-name/)
+[This property corresponds to the SAP Ariba realm that yourHow to find your SAP Ariba realm name?](https://blogs.sap.com/2021/01/12/how-to-find-your-sap-ariba-realm-name/)
 
 **Possible values:** Text/numeric string
 
@@ -1362,7 +1362,7 @@ When specified, only those SAP Datasphere users matching the filter expression w
 
 For example: *userName eq "SmithJ"*
 
-**System Role:** Source
+**System Role:**Source, Proxy
 
 </td>
 <td valign="top">
@@ -1505,7 +1505,7 @@ If you have enabled the SCIM bulk operations, you can use this property to set t
 
 **Possible values:**
 
-Default value: **
+Default value: *30* 
 
 > ### Note:  
 > The value must not exceed the number of entities defined by the SAP Datasphere system as a SCIM service provider. Otherwise, the provisioning job will fail with HTTP response code 413 \(*Payload Too Large*\).
@@ -2924,6 +2924,8 @@ If you need to make OAuth authentication to the system, enter the URL to the acc
 
 -   SAP Ariba Category Management
 
+-   SAP Ariba Central Invoice Management
+
 -   SAP BTP Account Members \(Neo\)
 
 -   SAP BTP Java/HTML5 apps \(Neo\)
@@ -2940,11 +2942,17 @@ If you need to make OAuth authentication to the system, enter the URL to the acc
 
 -   SAP Commerce Cloud
 
+-   SAP CPQ
+
 -   SAP Data Custodian
+
+-   SAP Datasphere
 
 -   SAP Fieldglass
 
 -   SAP Field Service Management
+
+-   SAP HANA Cloud, SAP HANA Database
 
 -   SAP Intelligent Agriculture
 
@@ -12902,7 +12910,7 @@ When specified, only those groups matching the filter expression will be read.
 
 For example:
 
-*displayName eq "ProjectTeam1" or "Students2018"*
+*displayName eq "ProjectTeam1"*
 
 **System Role:** Source, Proxy
 
@@ -12926,12 +12934,14 @@ When the Identity Provisioning attempts to provision a user for the first time, 
 According to your use case, choose how to set up this property:
 
 -   Default behavior: This property is missing during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such а *userName* is not found, the creation of the conflicting user fails.
--   Value = *emails\[0\].value*. If the service finds an existing user with such *email*, it updates this user with the data of the conflicting one. If a user with such *email* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
-
+-   Value = *emails\[\*\].value*. If the service finds an existing user with at least one of the emails of the user in the source system, it updates this existing user with the data of the conflicting one. If a user with such an email is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+-   Value = *userName,emails\[\*\].value*. If the service finds an existing user by *userName* and at least one of the emails of the user in the source system, it updates this user with the data of the conflicting one. If a user with such *userName* and *email* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+-   
 **Possible values:**
 
 -   *userName*
--   *emails\[0\].value*
+-   *emails\[\*\].value*
+-   *userName,emails\[\*\].value*
 
 Default value: *userName* 
 
@@ -13582,16 +13592,16 @@ SAP Ariba Category Management
 </td>
 <td valign="top">
 
-When specified, only those SAP HANA Database Service groups matching the filter expression will be read.
+When specified, only those SAP HANA Cloud, SAP HANA Database groups matching the filter expression will be read.
 
 For example: *displayName eq "ProjectTeam1"*
 
-**System Role:** Source
+**System Role:** Source, Proxy
 
 </td>
 <td valign="top">
 
-SAP HANA Database Service
+SAP HANA Cloud, SAP HANA Database
 
 </td>
 </tr>
@@ -13603,16 +13613,16 @@ SAP HANA Database Service
 </td>
 <td valign="top">
 
-When specified, only those SAP HANA Database Service users matching the filter expression will be read.
+When specified, only those SAP HANA Cloud, SAP HANA Database users matching the filter expression will be read.
 
 For example: *userName eq "SmithJ"* 
 
-**System Role:** Source
+**System Role:** Source, Proxy
 
 </td>
 <td valign="top">
 
-SAP HANA Database Service
+SAP HANA Cloud, SAP HANA Database
 
 </td>
 </tr>
@@ -13624,7 +13634,7 @@ SAP HANA Database Service
 </td>
 <td valign="top">
 
-This property makes a SAP HANA Database Service connector to send a specified value for the *Content-Type* HTTP header. This is needed because SAP HANA Database Service could potentially not implement the protocol in the specification, which states that a system must accept *application/scim+json* as a value of the*Content-Type* header.
+This property makes a SAP HANA Cloud, SAP HANA Database connector to send a specified value for the *Content-Type* HTTP header. This is needed because SAP HANA Cloud, SAP HANA Database could potentially not implement the protocol in the specification, which states that a system must accept *application/scim+json* as a value of the*Content-Type* header.
 
 **Possible values:**
 
@@ -13637,7 +13647,7 @@ Default value: *application/scim+json*
 </td>
 <td valign="top">
 
-SAP HANA Database Service
+SAP HANA Cloud, SAP HANA Database
 
 </td>
 </tr>
@@ -13649,7 +13659,7 @@ SAP HANA Database Service
 </td>
 <td valign="top">
 
-If the Identity Provisioning tries to create a group that already exists on the SAP HANA Database Service target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
+If the Identity Provisioning tries to create a group that already exists on the SAP HANA Cloud, SAP HANA Database target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
 
 **Possible values:**
 
@@ -13662,7 +13672,7 @@ If the property is not specified, the search is done by the default attribute: *
 </td>
 <td valign="top">
 
-SAP HANA Database Service
+SAP HANA Cloud, SAP HANA Database
 
 </td>
 </tr>
@@ -13674,7 +13684,7 @@ SAP HANA Database Service
 </td>
 <td valign="top">
 
-Makes the SAP HANA Database Service connector send the *If-Match* HTTP header with a value of “\*” for every request to the target system. This header could be used by an SAP HANA Database Service system for entity versioning.
+Makes the SAP HANA Cloud, SAP HANA Database connector send the *If-Match* HTTP header with a value of “\*” for every request to the target system. This header could be used by an SAP HANA Cloud, SAP HANA Database system for entity versioning.
 
 **Possible values:**
 
@@ -13688,7 +13698,7 @@ Default value: *false*
 </td>
 <td valign="top">
 
-SAP HANA Database Service
+SAP HANA Cloud, SAP HANA Database
 
 </td>
 </tr>
@@ -13732,7 +13742,7 @@ Default value: *false*
 </td>
 <td valign="top">
 
-SAP HANA Database Service
+SAP HANA Cloud, SAP HANA Database
 
 </td>
 </tr>
@@ -13744,20 +13754,20 @@ SAP HANA Database Service
 </td>
 <td valign="top">
 
-When the Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists in SAP HANA Database Service. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\). This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\).
+When the Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists in SAP HANA Cloud, SAP HANA Database. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\). This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\).
 
 According to your use case, choose how to set up this property:
 
 -   Default behavior: This property is missing during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such а *userName* is not found, the creation of the conflicting user fails.
 
 -   Value = *urn:ietf:params:scim:schemas:extension:sap:2.0:U ser:userId*. If the service finds an existing user with such *urn:ietf:params:scim:schemas:extension:sap:2.0:U ser:userId*, it updates this user with the data of the conflicting one. If a user with such attribute value is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
--   Value = *userName,urn:ietf:params:scim:schemas:extension:sap:2.0:Us er:userId*. If the service finds an existing user with such *userName* or *urn:ietf:params:scim:schemas:extension:sap:2.0:Us er:userId*, it updates this user with the data of the conflicting one. If a user with such *userName* or *urn:ietf:params:scim:schemas:extension:sap:2.0:Us er:userId* is not found, the creation of the conflicting user fails.
+-   Value = *userName,urn:ietf:params:scim:schemas:extension:sap:2.0:User:userId*. If the service finds an existing user with such *userName* or *urn:ietf:params:scim:schemas:extension:sap:2.0:User:userId*, it updates this user with the data of the conflicting one. If a user with such *userName* or *urn:ietf:params:scim:schemas:extension:sap:2.0:User:userId* is not found, the creation of the conflicting user fails.
 
 **Possible values:**
 
 -   *userName*
--   *urn:ietf:params:scim:schemas:extension:sap:2.0:Us er:userId*
--   *userName,urn:ietf:params:scim:schemas:extension:sap:2.0:Us er:userId*
+-   *urn:ietf:params:scim:schemas:extension:sap:2.0:User:userId*
+-   *userName,urn:ietf:params:scim:schemas:extension:sap:2.0:User:userId*
 
 Default value: *userName*
 
@@ -13766,7 +13776,7 @@ Default value: *userName*
 </td>
 <td valign="top">
 
-SAP HANA Database Service
+SAP HANA Cloud, SAP HANA Database
 
 </td>
 </tr>
@@ -13787,7 +13797,7 @@ Specifies the method by which users authenticate when connecting to the database
 </td>
 <td valign="top">
 
-SAP HANA Database Service
+SAP HANA Cloud, SAP HANA Database
 
 </td>
 </tr>
@@ -13806,7 +13816,7 @@ Refers to a unique identifier associated with a specific database instance withi
 </td>
 <td valign="top">
 
-SAP HANA Database Service
+SAP HANA Cloud, SAP HANA Database
 
 </td>
 </tr>
@@ -13825,7 +13835,7 @@ Refers to the type of instance being configured or used within the SAP HANA Clou
 </td>
 <td valign="top">
 
-SAP HANA Database Service
+SAP HANA Cloud, SAP HANA Database
 
 </td>
 </tr>
@@ -13844,7 +13854,39 @@ Specifies the identity provider \(IdP\) that is responsible for handling authent
 </td>
 <td valign="top">
 
-SAP HANA Database Service
+SAP HANA Cloud, SAP HANA Database
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`hana.cloud.db.group.prefix`
+
+</td>
+<td valign="top">
+
+\(Optional\) This property distinguishes SAP HANA Cloud, SAP HANA Database groups by specific prefix. It is an optional property which does not appear by default at system creation.
+
+Example value: `HANA_Cloud_DB_`
+
+You can use the example value or provide your own.
+
+-   When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP HANA Cloud, SAP HANA Database source system and will be provisioned to the target system with the following name pattern: <code>HANA_Cloud_DB_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP HANA Cloud, SAP HANA Database groups in the target system will be distinguished from groups provisioned from other applications.
+
+    If the property is not set, the SAP HANA Cloud, SAP HANA Database groups will be read and provisioned to the target system with their actual display names.
+
+-   When **set in the target system**, only groups containing the `HANA_Cloud_DB_` prefix in their display name will be provisioned to SAP HANA Cloud, SAP HANA Database. Groups without this prefix in the display name won't be provisioned.
+
+    If the property is not set, all groups will be be provisioned to SAP HANA Cloud, SAP HANA Database.
+
+
+**System Role:** Source, Target
+
+</td>
+<td valign="top">
+
+SAP HANA Cloud, SAP HANA Database
 
 </td>
 </tr>

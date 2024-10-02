@@ -1486,7 +1486,7 @@ Documentation
 </td>
 <td valign="top">
 
-You can now provide feedback on the Identity Authentication documentation using GitHub and earn credits. See the related *Тip* at [What Are Cloud Identity Services?](what-are-cloud-identity-services-2788271.md).
+You can now provide feedback on the Identity Authentication documentation using GitHub and earn credits. See the related *Тip* at [What Are Identity Authentication?](what-are-identity-authentication-2788271.md).
 
 </td>
 <td valign="top">

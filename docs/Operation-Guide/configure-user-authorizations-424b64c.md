@@ -179,9 +179,9 @@ Expand the **Supported Attributes** section below to see the user attributes tha
 
 **Core Schema** 
 
--   `firstName`
--   `lastName`
--   `loginName`
+-   `name.givenName`
+-   `name.familyName`
+-   `userName`
 -   `displayName`
 -   `addresses.country`
 -   `addresses.streetAddress`
@@ -209,7 +209,7 @@ Expand the **Supported Attributes** section below to see the user attributes tha
 
 **SAP extension schema**
 
--   `globalUserId`
+-   `userUuid`
 -   `validFrom`
 -   `validTo`
 

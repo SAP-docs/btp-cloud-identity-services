@@ -54,7 +54,7 @@ NAT IPs
 </th>
 <th valign="top">
 
-The productive domain represents the productive environment. It can be used byFirst IP - Last IP
+First IP - Last IP
 
 </th>
 </tr>
@@ -244,7 +244,9 @@ AWS
 </td>
 <td valign="top">
 
-\* `52.57.77.94/32, 3.64.73.63/32, 18.192.191.4/32`
+These IPs are subject to change.
+
+`52.57.77.94/32, 3.64.73.63/32, 18.192.191.4/32`
 
 </td>
 <td valign="top">
@@ -322,7 +324,9 @@ AWS
 </td>
 <td valign="top">
 
-\*`3.108.210.169/32, 13.127.105.96/32, 13.232.175.70/32, 3.7.5.154/32, 43.205.169.10/32, 65.2.62.24/32`
+These IPs are subject to change.
+
+`3.108.210.169/32, 13.127.105.96/32, 13.232.175.70/32, 3.7.5.154/32, 43.205.169.10/32, 65.2.62.24/32`
 
 </td>
 <td valign="top">
@@ -400,7 +404,9 @@ Azure
 </td>
 <td valign="top">
 
-\* `20.151.9.145/32, 20.43.19.31/32, 52.139.41.10/32`
+These IPs are subject to change.
+
+`20.151.9.145/32, 20.43.19.31/32, 52.139.41.10/32`
 
 </td>
 <td valign="top">
@@ -478,7 +484,9 @@ AWS
 </td>
 <td valign="top">
 
-\* `54.254.59.23/32, 52.76.191.74/32, 47.129.67.102/32, 18.140.41.153/32, 47.129.16.236/32, 13.213.203.26/32`
+These IPs are subject to change.
+
+`54.254.59.23/32, 52.76.191.74/32, 47.129.67.102/32, 18.140.41.153/32, 47.129.16.236/32, 13.213.203.26/32`
 
 </td>
 <td valign="top">
@@ -517,7 +525,9 @@ AWS
 </td>
 <td valign="top">
 
-\*`3.39.112.56/32, 54.180.170.146/32, 3.38.127.188/32, 43.202.135.25/32, 3.36.27.20/32, 52.79.160.50/32`
+These IPs are subject to change.
+
+`3.39.112.56/32, 54.180.170.146/32, 3.38.127.188/32, 43.202.135.25/32, 3.36.27.20/32, 52.79.160.50/32`
 
 </td>
 <td valign="top">
@@ -556,7 +566,9 @@ Azure
 </td>
 <td valign="top">
 
-\* `130.214.80.0/26, 130.214.250.32/27`
+These IPs are subject to change.
+
+`130.214.80.0/26, 130.214.250.32/27`
 
 </td>
 <td valign="top">
@@ -634,7 +646,9 @@ Azure
 </td>
 <td valign="top">
 
-\* `20.51.113.99/32, 20.57.161.219/32, 20.57.185.171/32`
+These IPs are subject to change.
+
+`20.51.113.99/32, 20.57.161.219/32, 20.57.185.171/32`
 
 </td>
 <td valign="top">
@@ -731,7 +745,6 @@ Azure
 > ### Note:  
 > -   LB \(load balancer\) IPs - ingress, for incoming requests
 > -   NAT \(network address translation\) IPs - egress, IPs for requests from Identity Authentication app.
-> -   \* These IPs are subject to change.
 
 **Related Information**  
 

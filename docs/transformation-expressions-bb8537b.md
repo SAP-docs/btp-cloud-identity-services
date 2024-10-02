@@ -360,6 +360,19 @@ A condition specifies a JSON filter expression. It can be applied on a single ma
     > }
     > ```
 
+-   Conditions and **skipOperations**
+
+    > ### Example:  
+    > > ### Code Syntax:  
+    > > ```
+    > > "condition":"$.groups empty false",
+    > > "skipOperations":[
+    > >    "update"
+    > > ],
+    > > ```
+
+    First, the condition is evaluated. Users and groups who do not match the condition are skipped. After the condition is evaluated, the skip operation determines whether the remaining users will be skipped or provisioned.
+
 
 **Data type**: String
 
@@ -531,37 +544,25 @@ defaultValue
 </td>
 <td valign="top">
 
-It returns the default value of an attribute when no specific functions or conditions are set for this attribute. The **defaultValue** expression comes in handy in the following cases:
+This JSON expression returns the default value of an attribute when it is set as optional and there is no specific value provided in the `sourcePath`. The **defaultValue** expression comes in handy in the following cases:
 
 -   When an attribute of a previously provisioned entity is later deleted from the source system. After a new provisioning job, the target system will try to get some value for this missing attribute, and thus it will write its default one.
 -   When the system transformation contains a *valueMapping* operation. If the value of the mapped attribute is not found as a key in the `"valueMappings"` definitions, or some of the source paths does not return a value, the JSON transformation will use the default one.
 
 The default value of an attribute can be a *string*, *integer*, *Boolean*, *array*, or empty \(null\).
 
-You can add `"defaultValue"` for any attribute, in the transformation of any provisioning system. For example, you can find it in the default transformation of the **Microsoft Active Directory** target system:
+You can add `"defaultValue"` for any attribute, in the transformation of any provisioning system. For example, you can find it in the default transformation of the **Identity Authentication** target system:
 
 > ### Example:  
 > ```
 > 
 > ...
-> 	{
-> 		"sourcePath": "$.displayName",
-> 		"optional": true,
-> 		"targetPath": "$.displayName[0]",
-> 		"defaultValue": []
-> 	},
-> 	{
-> 		"sourcePath": "$.emails[0].value",
-> 		"optional": true,
-> 		"targetPath": "$.mail[0]",
-> 		"defaultValue": []
-> 	},
-> 	{
-> 		"sourcePath": "$.name.givenName",
-> 		"optional": true,
-> 		"targetPath": "$.givenName[0]",
-> 		"defaultValue": []
-> 	},
+> 	 {
+>         "sourcePath": "$.userType",
+>         "targetPath": "$.userType",
+>         "defaultValue": "employee",
+>         "optional": true
+>       },
 > ...
 > ```
 

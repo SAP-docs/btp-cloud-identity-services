@@ -375,6 +375,7 @@ To create Identity Authentication as a target system, proceed as follows:
     >       {
     >         "sourcePath": "$.userType",
     >         "targetPath": "$.userType",
+    >         "defaultValue": "employee",
     >         "optional": true
     >       },
     >       {
@@ -498,10 +499,6 @@ To create Identity Authentication as a target system, proceed as follows:
     >         "constant": "39",
     >         "targetPath": "$.sourceSystem",
     >         "scope": "createEntity"
-    >       },
-    >       {
-    >         "constant": "employee",
-    >         "targetPath": "$.userType"
     >       },
     >       {
     >         "sourcePath": "$.timezone",
@@ -656,6 +653,7 @@ To create Identity Authentication as a target system, proceed as follows:
     >       {
     >         "sourcePath": "$.userType",
     >         "targetPath": "$.userType",
+    >         "defaultValue": "employee",
     >         "optional": true
     >       },
     >       {

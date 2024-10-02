@@ -23,7 +23,7 @@ For this setup, you as a tenant administrator, configure the security questions 
 If the security questions option is configured in the admin console, end users that haven't set up their security questions are triggered to do it as a post logon step. Optionally, they can choose to set up the security questions later. If end users choose the *Don't ask me again* check box, the prompt won't be shown anymore. End users still can set up the security questions in their profile page.
 
 > ### Note:  
-> You can choose whether the *Setup later"* and *Don't ask me again* options are visible for the end users.
+> You can choose whether the *Setup later* and *Don't ask me again* options are visible for the end users.
 
 Tenant administrator can offer up to 10 predefined questions, and can choose which target users to be able to reset their password via security questions. There are three options:
 
@@ -32,7 +32,7 @@ Tenant administrator can offer up to 10 predefined questions, and can choose whi
 -   *All users* - everyone can choose this option to reset the password
 -   *Specific groups* - only users that belong to the selected groups can reset password via security questions.
 
-If *Home URL* is configured, users are redirected to the URL defined in the *Home URL* after resetting their passwords via Sequrity Questions. If *Home URL* is not configured users are redirected to the profile page.
+If *Home URL* is configured, users are redirected to the URL defined in the *Home URL* after resetting their passwords via Security Questions. If *Home URL* is not configured users are redirected to the profile page.
 
 > ### Caution:  
 > The security questions option locks after five wrong answers to the security questions. To unlock it, set an initial password for the user. For more information, see [Set Initial Password](set-initial-password-16149d5.md).
@@ -56,7 +56,9 @@ To configure security questions in the administration console, follow the proced
 
 4.  Choose the *Security Questions* tab.
 
-5.  Under *Target Users*, choose users that can reset passwords with security questions:
+5.  Choose *Edit* \> *Enabled*.
+
+6.  Under *Target Users*, choose users that can reset passwords with security questions:
 
     -   *None* - default choice
 
@@ -71,25 +73,29 @@ To configure security questions in the administration console, follow the proced
         > When you select this option, you must specify the specific group or groups for which you enable password recovery via security questions.
 
 
-6.  Under *Settings*, choose how many questions the user must answer.
+7.  Under *Number of Security Questions*, choose how many questions the user must answer.
 
-    Under *Security Questions* you can see the 10 predefined questions the user can choose from.
-
-7.  **Optional:** Select the *Show "Setup later"* check box.
+8.  **Optional:** Under *User Options*, select the *Show "Setup later"* check box.
 
     When selected, the end users see the option to setup the security questions later.
 
-8.  **Optional:** Select the *Show "Don't ask again"* check box.
+9.  **Optional:** Under *User Options*, select the *Show "Don't ask again"* check box.
 
     When selected, the end users see the option to hide the prompt to setup their security questions later.
 
-9.  Save your configuration.
+10. Save your configuration.
+
+    You can see information about your settings and the 10 predefined questions the user can choose from..
 
 
 **Related Information**  
 
 
 [Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md "You as a tenant administrator can view and download the tenant SAML 2.0 metadata. You can also change the name format and update your certificate used by the identity provider to digitally sign the messages for the applications.")
+
+[Get SAML 2.0 IdP Metadata via Parameter](get-saml-2-0-idp-metadata-via-parameter-2c76690.md "Tenant administrator can get the SAML 2.0 metadata via specific parameters.")
+
+[Rotate Signing Certificates](rotate-signing-certificates-6621ad5.md "Tenant administrators must replace existing signing certificates with new ones before they expire. This ensures uninterrupted and secure communication between SAML 2.0 applications (referred to as service providers) and Identity Authentication as the identity provider.")
 
 [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md "You as a tenant administrator can view and configure the tenant OpenID Connect configurations.")
 
@@ -102,6 +108,8 @@ To configure security questions in the administration console, follow the proced
 [Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in screen of the Horizon theme with instructions for the user.")
 
 [Configure X.509 Client Certificates for User Authentication](configure-x-509-client-certificates-for-user-authentication-52c7dcb.md "Tenant administrators can configure X.509 client certificates for user authentication as an alternative to authenticating with a user name and a password.")
+
+[Enable Users to Generate and Authenticate with Certificates](enable-users-to-generate-and-authenticate-with-certificates-4cf818a.md "Allow users to generate and authenticate with certificates.")
 
 [Configure Tenant Images](configure-tenant-images-8742046.md "You can configure a custom global logo and, or a background image on the forms for sign-in in, registration, upgrade, password update, and account activation for all applications in a tenant. You can also set a favicon for tenant.")
 

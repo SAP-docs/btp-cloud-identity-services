@@ -2,7 +2,7 @@
 
 # SAP CPQ
 
-Follow this procedure to set up SAP CPQ as a proxy system.
+Follow this procedure to set up SAP CPQ \(Configure, Price, and Quote\) as a proxy system.
 
 
 
@@ -23,6 +23,8 @@ Follow this procedure to set up SAP CPQ as a proxy system.
 
 
 ## Context
+
+SAP CPQ is a highly configurable system designated to help sales representatives to configure products, apply pricing and generate quotes. SAP CPQ is part of the SAP Sales Cloud portfolio.
 
 Create an SAP CPQ proxy connector to execute hybrid scenarios. That means, it can provision its entities to another \(external\) back-end system by request, and then can continue executing CRUD operations back to the SAP CPQ system, whenever the external back-end requests such. This scenario supports provisioning **users** and **groups**.
 
@@ -94,7 +96,23 @@ Create an SAP CPQ proxy connector to execute hybrid scenarios. That means, it ca
 
 5.  Add *SAP CPQ* as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
-6.  Choose the *Properties* tab to configure the connection settings for your system.
+6.  Set up the communication between Identity Provisioning and SAP CPQ and configure the authentication method \(basic or OAuth certificate-based\).
+
+    > ### Note:  
+    > We recommend that you use OAuth certificate-based authentication.
+
+    1.  In your newly added SAP CPQ proxy system, select the *Certificate* tab and choose *Generate* \> *Download*, as described in [Generate and Manage Certificates for Outbound Connection](Operation-Guide/generate-and-manage-certificates-for-outbound-connection-76867db.md).
+
+        Skip this step if you use basic authentication. The next steps are relevant for OAuth certificate-based authentication only. For more information, see [Configure OAuth Certificate Authentication](Operation-Guide/configure-oauth-certificate-authentication-a40a3f3.md).
+
+    2.  Convert your certificate file from `.crt` to `.cer`.
+
+    3.  Login to SAP CPQ and navigate to *Security* \> *Certificate Management* \> *User Certificates* \> *New Certificate* and upload the certificate to the technical user of SAP CPQ.
+
+        Make sure the *Enable User Certificates* option is turned on. Additionally, the technical user must be set to *Active*.
+
+
+7.  Choose the *Properties* tab to configure the connection settings for your system.
 
     > ### Note:  
     > If your tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
@@ -122,26 +140,63 @@ Create an SAP CPQ proxy connector to execute hybrid scenarios. That means, it ca
     <tr>
     <td valign="top">
     
-    `Type`
+    `Authentication`
     
     </td>
     <td valign="top">
     
-    Enter: *HTTP*
+    Enter your authentication method:
+
+    -   *BasicAuthentication*
+
+    -   *ClientCertificateAuthentication*
+
+
+
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    `URL`
+    `cpq.user.filter`
     
     </td>
     <td valign="top">
     
-    Specify the URL to the API of your SAP CPQ system. It is the same as your SAP CPQ tenant URL. It must contain the domain name.
+    \(Optional\) When specified, only those SAP CPQ users matching the filter expression will be read.
 
-    For example: **https://sample1234.mycpqdomain.com**
+    Example: **name.familyName eq "Smith" and addresses.country eq "US"**
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `OAuth2TokenServiceURL`
+    
+    </td>
+    <td valign="top">
+    
+    Valid if *ClientCertificateAuthentication* is configured as authentication method.
+
+    Enter the OAuth 2.0 Token Service URL.
+
+    For example: `https://<cpq_url>/oauth2/token`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `Password`
+    
+    </td>
+    <td valign="top">
+    
+    Valid if *BasicAuthentication* is configured as authentication method.
+
+    \(Credential\) Specify the password for your technical user.
     
     </td>
     </tr>
@@ -160,12 +215,26 @@ Create an SAP CPQ proxy connector to execute hybrid scenarios. That means, it ca
     <tr>
     <td valign="top">
     
-    `Authentication`
+    `Type`
     
     </td>
     <td valign="top">
     
-    Enter: *BasicAuthentication*
+    Enter: *HTTP*
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `URL`
+    
+    </td>
+    <td valign="top">
+    
+    Enter the URL to the API of your SAP CPQ system. It is the same as your SAP CPQ tenant URL. It must contain the domain name.
+
+    For example: **https://sample1234.mycpqdomain.com**
     
     </td>
     </tr>
@@ -177,35 +246,9 @@ Create an SAP CPQ proxy connector to execute hybrid scenarios. That means, it ca
     </td>
     <td valign="top">
     
-    Specify the technical user for your SAP CPQ system. It must also contain the domain name, in format: `<user_name>#<domain_name>`
+    Valid if *BasicAuthentication* is configured as authentication method.
 
-    For example: **JohnSmith\#MYCPQDOMAIN** 
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `Password`
-    
-    </td>
-    <td valign="top">
-    
-    \(Credential\) Specify the password for your technical user.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    \(Optional\) `cpq.user.filter`
-    
-    </td>
-    <td valign="top">
-    
-    When specified, only those SAP CPQ users matching the filter expression will be read.
-
-    Example: **name.familyName eq "Smith" and addresses.country eq "US"**
+    Enter the Username of your SAP CPQ technical user.
     
     </td>
     </tr>
@@ -213,7 +256,7 @@ Create an SAP CPQ proxy connector to execute hybrid scenarios. That means, it ca
     
     To learn what additional properties are relevant to this system, see [List of Properties](list-of-properties-d6f3577.md). You can use the main search, or filter properties by the *Name* or *System Type* columns.
 
-7.  Configure the transformations.
+8.  Configure the transformations.
 
     Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP CPQ* proxy system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
@@ -490,7 +533,7 @@ Create an SAP CPQ proxy connector to execute hybrid scenarios. That means, it ca
     </tr>
     </table>
     
-8.  Connect the external consumer to Identity Provisioning with the technical user you have created in step 2.
+9.  Connect the external consumer to Identity Provisioning with the technical user you have created in step 2.
 
     If the external consumer system is **SAP Identity Management**, you can export the newly created proxy system as a SCIM repository from Identity Provisioning and import it in SAP Identity Management. This will create a SCIM repository in SAP Identity Management where most of the repository constants will be automatically filled in. You need to provide the technical user credentials that you have set up in step 2 and the SCIM assignment method as described below:
 

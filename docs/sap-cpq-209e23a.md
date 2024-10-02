@@ -2,7 +2,7 @@
 
 # SAP CPQ
 
-Follow this procedure to set up SAP CPQ as а source system.
+Follow this procedure to set up SAP CPQ \(Configure, Price, and Quote\) as a source system.
 
 
 
@@ -19,6 +19,8 @@ You have created a technical user with administrator permissions that will be us
 
 ## Context
 
+SAP CPQ is a highly configurable system designated to help sales representatives to configure products, apply pricing and generate quotes. SAP CPQ is part of the SAP Sales Cloud portfolio.
+
 Create an SAP CPQ source system to read users and groups from it.
 
 
@@ -34,7 +36,23 @@ Create an SAP CPQ source system to read users and groups from it.
 
 3.  Add *SAP CPQ* as a source system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
-4.  Choose the *Properties* tab to configure the connection settings for your system.
+4.  Set up the communication between Identity Provisioning and SAP CPQ and configure the authentication method \(basic or OAuth certificate-based\).
+
+    > ### Note:  
+    > We recommend that you use OAuth certificate-based authentication.
+
+    1.  In your newly added SAP CPQ source system, select the *Certificate* tab and choose *Generate* \> *Download*, as described in [Generate and Manage Certificates for Outbound Connection](Operation-Guide/generate-and-manage-certificates-for-outbound-connection-76867db.md).
+
+        Skip this step if you use basic authentication. The next steps are relevant for OAuth certificate-based authentication only. For more information, see [Configure OAuth Certificate Authentication](Operation-Guide/configure-oauth-certificate-authentication-a40a3f3.md).
+
+    2.  Convert your certificate file from `.crt` to `.cer`.
+
+    3.  Login to SAP CPQ and navigate to *Security* \> *Certificate Management* \> *User Certificates* \> *New Certificate* and upload the certificate to the technical user of SAP CPQ.
+
+        Make sure the *Enable User Certificates* option is turned on. Additionally, the technical user must be set to *Active*.
+
+
+5.  Choose the *Properties* tab to configure the connection settings for your system.
 
     > ### Note:  
     > If your tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
@@ -62,26 +80,63 @@ Create an SAP CPQ source system to read users and groups from it.
     <tr>
     <td valign="top">
     
-    `Type`
+    `Authentication`
     
     </td>
     <td valign="top">
     
-    Enter: *HTTP*
+    Enter your authentication method:
+
+    -   *BasicAuthentication*
+
+    -   *ClientCertificateAuthentication*
+
+
+
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    `URL`
+    `cpq.user.filter`
     
     </td>
     <td valign="top">
     
-    Specify the URL to the API of your SAP CPQ system. It is the same as your SAP CPQ tenant URL. It must contain the domain name.
+    \(Optional\) When specified, only those SAP CPQ users matching the filter expression will be read.
 
-    For example: **https://sample1234.mycpqdomain.com**
+    Example: **name.familyName eq "Smith" and addresses.country eq "US"**
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `OAuth2TokenServiceURL`
+    
+    </td>
+    <td valign="top">
+    
+    Valid if *ClientCertificateAuthentication* is configured as authentication method.
+
+    Enter the OAuth 2.0 Token Service URL.
+
+    For example: `https://<cpq_url>/oauth2/token`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `Password`
+    
+    </td>
+    <td valign="top">
+    
+    Valid if *BasicAuthentication* is configured as authentication method.
+
+    \(Credential\) Specify the password for your technical user.
     
     </td>
     </tr>
@@ -100,12 +155,26 @@ Create an SAP CPQ source system to read users and groups from it.
     <tr>
     <td valign="top">
     
-    `Authentication`
+    `Type`
     
     </td>
     <td valign="top">
     
-    Enter: *BasicAuthentication*
+    Enter: *HTTP*
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `URL`
+    
+    </td>
+    <td valign="top">
+    
+    Enter the URL to the API of your SAP CPQ system. It is the same as your SAP CPQ tenant URL. It must contain the domain name.
+
+    For example: **https://sample1234.mycpqdomain.com**
     
     </td>
     </tr>
@@ -117,35 +186,9 @@ Create an SAP CPQ source system to read users and groups from it.
     </td>
     <td valign="top">
     
-    Specify the technical user for your SAP CPQ system. It must also contain the domain name, in format: `<user_name>#<domain_name>`
+    Valid if *BasicAuthentication* is configured as authentication method.
 
-    For example: **JohnSmith\#MYCPQDOMAIN** 
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `Password`
-    
-    </td>
-    <td valign="top">
-    
-    \(Credential\) Specify the password for your technical user.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    \(Optional\) `cpq.user.filter`
-    
-    </td>
-    <td valign="top">
-    
-    When specified, only those SAP CPQ users matching the filter expression will be read.
-
-    Example: **name.familyName eq "Smith" and addresses.country eq "US"**
+    Enter the Username of your SAP CPQ technical user.
     
     </td>
     </tr>
@@ -153,7 +196,7 @@ Create an SAP CPQ source system to read users and groups from it.
     
     To learn what additional properties are relevant to this system, see [List of Properties](list-of-properties-d6f3577.md). You can use the main search, or filter properties by the *Name* or *System Type* columns.
 
-5.  \(Optional\) Configure the transformations.
+6.  \(Optional\) Configure the transformations.
 
     Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP CPQ* source system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
@@ -277,7 +320,7 @@ Create an SAP CPQ source system to read users and groups from it.
     > }
     > ```
 
-6.  Now, add a target system to provision users and groups into it. Choose from: [Target Systems](target-systems-ab3f641.md)
+7.  Now, add a target system to provision users and groups into it. Choose from: [Target Systems](target-systems-ab3f641.md)
 
 
 

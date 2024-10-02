@@ -65,14 +65,6 @@ The following configuration example uses a number of systems, including: Microso
     >         "targetPath": "$.userName"
     >       },
     >       {
-    >         "constant": "userName",
-    >         "targetVariable": "entityCorrelationAttributeName"
-    >       },
-    >       {
-    >         "sourcePath": "$.userName",
-    >         "targetVariable": "entityCorrelationAttributeValue"
-    >       },
-    >       {
     >         "sourcePath": "$.emails",
     >         "preserveArrayWithSingleElement": true,
     >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['emails']",
@@ -148,6 +140,7 @@ The following configuration example uses a number of systems, including: Microso
     >       {
     >         "sourcePath": "$.userType",
     >         "targetPath": "$.userType",
+    >         "defaultValue": "employee",
     >         "optional": true
     >       },
     >       {
@@ -241,7 +234,7 @@ The following configuration example uses a number of systems, including: Microso
     >         "constant": "<your-initial-password>",
     >         "targetPath": "$.password",
     >         "scope": "createEntity",
-    >         "ignore": "true"
+    >         "ignore": true
     >       },
     >       {
     >         "constant": "<your-source-system-type-code>",
@@ -356,6 +349,10 @@ The following configuration example uses a number of systems, including: Microso
     >                 "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:User']['userId']"
     >             },
     >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userId']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userId']"
+    >             },
+    >             {
     >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
     >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
     >             },
@@ -440,10 +437,6 @@ The following configuration example uses a number of systems, including: Microso
     >                 "targetPath": "$.groups",
     >                 "preserveArrayWithSingleElement": true,
     >                 "optional": true
-    >             },
-    >             {
-    >                 "type": "remove",
-    >                 "targetPath": "$.groups[*].display"
     >             },
     >             {
     >                 "condition": "$.displayName EMPTY true",
@@ -571,7 +564,7 @@ The Microsoft Entra ID users and groups are provisioned to the identity director
 
 The personal and technical information of the user varies across different systems. To manage a unified and up-to-date user data, you can provision the identities from multiple sources and merge them into one target identity directory.
 
-You have the flexibility to choose your own approach when merging data from various sources. This could include defining the unique attribute or a combination of them when resolving conflicts, deciding on how to add and update user and group attributes. All of these require changes in the default write transformations of the identity directory.
+You have the flexibility to choose your own approach when merging data from various sources. This could include defining the unique attribute or a combination of them when resolving conflicts, deciding on how to add and update user and group attributes. All of these require changes in the identity directory configuration.
 
 > ### Caution:  
 > When reading user data from multiple sources, we strongly recommend that you perform **consecutive** provisioning jobs. Simultaneous jobs may lead to inconsistent or overwritten user data in the target system.
@@ -581,67 +574,234 @@ You have the flexibility to choose your own approach when merging data from vari
 
 
 
-### Merge User Data by Email
+### Merge Users by Email
 
 By default, Identity Provisioning determines the user uniqueness based on the `userName` attribute. This means that if a user with a particular `userName` already exists in the identity directory, the service will match any new user, provisioned from other source systems with the same `userName`, to this existing user and update it accordingly.
 
-To merge the user data by email instead of userName, you need to set the `scim.user.unique.attribute` to `emails[0].value` and replace the default mapping for `userName` with the one for `emails` as shown below.
+To merge the user data by email instead of userName, you only need to set the `scim.user.unique.attribute` to `emails[0].value`. For more information about the identity directory unique attributes supported for conflict resolution, see [List of Properties](list-of-properties-d6f3577.md) → `scim.user.unique.attribute`.
 
 
-<table>
-<tr>
-<td valign="top">
+
+### Merge User Attributes
+
+Following the provisioning of your identities from the leading source system, you may want to replicate additional user attributes from the second source system which were not initially provisioned from the first one.
+
+To achieve this, we suggest that you configure two pairs of source-target systems. Each target system should point to the same identity directory, although both will have different configurations. For example, if Microsoft Entra ID \(your leading source system\) and Local Identity Directory 1 \(target\) make up your first pair, then the second pair could consist of SAP SuccessFactors \(source\) and Local Identity Directory 2 \(target\). This setup allows you to control which user attribute comes from which source system. The overall process is the following:
+
+1.  Create the first pair of source-target systems: *Microsoft Entra ID* \> *Local Identity Directory 1*.
+
+2.  On the *Properties* tab of the target system set the `scim.support.patch.operation` = *true* and the `scim.user.unique.attribute` to a unique attribute of your choice.
+
+    > ### Note:  
+    > The unique attribute you set for the `scim.user.unique.attribute` property can either be the same or different in each of your target systems. However, it must be unique in each case. For example, if userName and email are unique attributes, you can set `userName` in the *Local Identity Directory 1* and `emails[0].value` in the *Local Identity Directory 2*.
+
+3.  Modify the write transformation of the target system to provision particular user attributes. For example, keep the required `id`, `userName` and `emails`, as well as the `firstName`, `familyName`, `displayName` and `address`.
+
+    > ### Code Syntax:  
+    > ```
+    >   {
+    >    "user":{
+    >       "condition":"($.emails EMPTY false) && ($.userName EMPTY false) && isValidEmail($.emails[0].value)",
+    >       "mappings":[
+    >          {
+    >             "sourceVariable":"entityIdTargetSystem",
+    >             "targetPath":"$.id"
+    >          },
+    >          {
+    >             "constant":[
+    >                "urn:ietf:params:scim:schemas:core:2.0:User",
+    >                "urn:ietf:params:scim:schemas:extension:sap:2.0:User",
+    >                "urn:sap:cloud:scim:schemas:extension:custom:2.0:User"
+    >             ],
+    >             "targetPath":"$.schemas"
+    >          },
+    >          {
+    >             "sourcePath":"$.userName",
+    >             "targetPath":"$.userName"
+    >          },
+    >          {
+    >             "sourcePath":"$.emails",
+    >             "preserveArrayWithSingleElement":true,
+    >             "targetPath":"$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['emails']",
+    >             "scope":"createEntity",
+    >             "functions":[
+    >                {
+    >                   "function":"putIfAbsent",
+    >                   "key":"verified",
+    >                   "defaultValue":true
+    >                }
+    >             ]
+    >          },
+    >          {
+    >             "targetPath":"$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['emails'][*]['type']",
+    >             "type":"remove"
+    >          },
+    >          {
+    >             "sourcePath":"$.emails[*].value",
+    >             "preserveArrayWithSingleElement":true,
+    >             "targetPath":"$.emails[?(@.value)]"
+    >          },
+    >          {
+    >             "sourcePath":"$.name.givenName",
+    >             "targetPath":"$.name.givenName",
+    >             "optional":true
+    >          },
+    >          {
+    >             "sourcePath":"$.name.familyName",
+    >             "targetPath":"$.name.familyName",
+    >             "optional":true
+    >          },
+    >          {
+    >             "sourcePath":"$.addresses",
+    >             "targetPath":"$.addresses",
+    >             "preserveArrayWithSingleElement":true,
+    >             "defaultValue":[
+    >                
+    >             ],
+    >             "optional":true,
+    >             "functions":[
+    >                {
+    >                   "function":"putIfAbsent",
+    >                   "key":"type",
+    >                   "defaultValue":"work"
+    >                },
+    >                {
+    >                   "condition":"(@.type NIN ['work', 'home'])",
+    >                   "function":"putIfPresent",
+    >                   "key":"type",
+    >                   "defaultValue":"work"
+    >                }
+    >             ]
+    >          },
+    >          {
+    >             "sourcePath":"$.displayName",
+    >             "targetPath":"$.displayName",
+    >             "optional":true
+    >          },
+    >          {
+    >             "constant":true,
+    >             "targetPath":"$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['mailVerified']",
+    >             "scope":"createEntity"
+    >          }
+    >       ]
+    >    },
+    >    "group":{
+    >       "mappings":[
+    >  
+    >  .....
+    > ```
+
+4.  Run the provisioning job from Microsfot Entra ID and replicate the identities to the identity directory.
+
+5.  Create the second pair of source-target systems: *SAP SuccessFactors* \> *Local Identity Directory 2*.
+
+6.  Set the `scim.support.patch.operation` = *true* and the `scim.user.unique.attribute` to a unique attribute of your choice.
+
+7.  Modify the write transformation of the target system to provision another set of user attributes. For example, keep the required `id`, `userName` and `emails`, as well as the `userType`, `department` and `division` and map attributes from the SAP SuccessFactors extension schema `perPersonUuid` and `personIdExternal` to custom attributes.
+
+    > ### Code Syntax:  
+    > ```
+    > {
+    >    "user":{
+    >       "condition":"($.emails EMPTY false) && ($.userName EMPTY false) && isValidEmail($.emails[0].value)",
+    >       "mappings":[
+    >          {
+    >             "sourceVariable":"entityIdTargetSystem",
+    >             "targetPath":"$.id"
+    >          },
+    >          {
+    >             "constant":[
+    >                "urn:ietf:params:scim:schemas:core:2.0:User",
+    >                "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User",
+    >                "urn:ietf:params:scim:schemas:extension:sap:2.0:User",
+    >                "urn:sap:cloud:scim:schemas:extension:custom:2.0:User"
+    >             ],
+    >             "targetPath":"$.schemas"
+    >          },
+    >          {
+    >             "sourcePath":"$.userName",
+    >             "targetPath":"$.userName"
+    >          },
+    >          {
+    >             "sourcePath":"$.emails",
+    >             "preserveArrayWithSingleElement":true,
+    >             "targetPath":"$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['emails']",
+    >             "scope":"createEntity",
+    >             "functions":[
+    >                {
+    >                   "function":"putIfAbsent",
+    >                   "key":"verified",
+    >                   "defaultValue":true
+    >                }
+    >             ]
+    >          },
+    >          {
+    >             "targetPath":"$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['emails'][*]['type']",
+    >             "type":"remove"
+    >          },
+    >          {
+    >             "sourcePath":"$.emails[*].value",
+    >             "preserveArrayWithSingleElement":true,
+    >             "targetPath":"$.emails[?(@.value)]"
+    >          },
+    >          {
+    >             "sourcePath":"$.userType",
+    >             "targetPath":"$.userType",
+    >             "defaultValue": "employee",
+    >             "optional":true
+    >          },
+    >          {
+    >             "sourcePath":"$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['division']",
+    >             "targetPath":"$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['division']",
+    >             "optional":true
+    >          },
+    >          {
+    >             "sourcePath":"$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['department']",
+    >             "targetPath":"$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['department']",
+    >             "optional":true
+    >          },
+    >          {
+    >             "sourcePath":"$['urn:ietf:params:scim:schemas:extension:successfactors:2.0:User']['perPersonUuid']",
+    >             "targetPath":"$['urn:sap:cloud:scim:schemas:extension:custom:2.0:User']['attributes'][0]['value']",
+    >             "optional":true
+    >          },
+    >          {
+    >             "targetPath":"$['urn:sap:cloud:scim:schemas:extension:custom:2.0:User']['attributes'][0]['name']",
+    >             "condition":"$['urn:ietf:params:scim:schemas:extension:successfactors:2.0:User']['perPersonUuid'] EMPTY false",
+    >             "constant":"customAttribute1"
+    >          },
+    >             "sourcePath":"$['urn:ietf:params:scim:schemas:extension:successfactors:2.0:User']['personIdExternal']",
+    >             "targetPath":"$['urn:sap:cloud:scim:schemas:extension:custom:2.0:User']['attributes'][1]['value']",
+    >             "optional":true
+    >          },
+    >          {
+    >             "targetPath":"$['urn:sap:cloud:scim:schemas:extension:custom:2.0:User']['attributes'][1]['name']",
+    >             "condition":"$['urn:ietf:params:scim:schemas:extension:successfactors:2.0:User']['personIdExternal'] EMPTY false",
+    >             "constant":"customAttribute2"
+    >          }
+    >    ]
+    > },
+    > "group":{
+    >       "mappings":[
+    >  
+    >  .....
+    > ```
+
+8.  Run a second provisioning job, this time from SAP SuccessFactors, to replicate the identities to the same identity directory.
+
+    This second provisioning job is not intended to create new identities. Its purpose is to enrich the existing users with additional attributes.
+
+
+As a result, the identities from the two source systems are provisioned to a single target identity directory. Continuous provisioning jobs form both source systems run without overwriting attributes. Any updates are executed as patch requests.
+
+
+
+### Using Scope to Patch Entities
+
+An alternative way to merge user attributes from multiple source systems to one target identity directory is to use the `"scope":"patchEntity"` expression in the attribute mappings of the write transformations. Instead of creating two paris of source-target systems, you configure as many source systems as you need, and link them to one target identity directory. The following example shows how to patch the `userType` attribute when executing updates from a given source system:
 
 > ### Code Syntax:  
 > ```
-> {
->    "constant":"userName",
->    "targetVariable":"entityCorrelationAttributeName"
-> },
-> {
->    "sourcePath":"$.userName",
->    "targetVariable":"entityCorrelationAttributeValue"
-> }
-> ```
-
-
-
-</td>
-<td valign="top">
-
-> ### Code Syntax:  
-> ```
-> {
->    "constant":"emails.value",
->    "targetVariable":"entityCorrelationAttributeName"
-> },
-> {
->    "sourcePath":"$.emails[0].value",
->    "targetVariable":"entityCorrelationAttributeValue"
-> }
-> ```
-
-
-
-</td>
-</tr>
-</table>
-
-
-
-### Add and Update Attributes with Patch
-
-Following the provisioning of your identities from the leading source system \(Microsfot Entra ID\), you may want to replicate additional user attributes from the second source system \(SAP SuccessFactors\) which were not initially provisioned from the first one.
-
-One way to achieve this is to use `"scope":"patchEntity"` expression in the attribute mappings and define add or replace operation there. For example, suppose that users from Microsoft Entra ID are provisioned with their displayName attribute value but lack a value for the userType attribute. In order to both add userType and update displayName, you must provide the following mappings under the user entity in the target transformation:
-
-> ### Code Syntax:  
-> ```
-> {
->    "targetPath":"$.schemas[0]",
->    "constant":"urn:ietf:params:scim:api:messages:2.0:PatchOp",
->    "scope":"patchEntity"
-> },
 > {
 >    "targetPath":"$.Operations[0].op",
 >    "condition":"$.userType EMPTY false",
@@ -660,63 +820,14 @@ One way to achieve this is to use `"scope":"patchEntity"` expression in the attr
 >    "condition":"$.userType EMPTY false",
 >    "scope":"patchEntity"
 > },
-> {
->    "targetPath":"$.Operations[1].op",
->    "condition":"$.displayName EMPTY false",
->    "constant":"add",
->    "scope":"patchEntity"
-> },
-> {
->    "targetPath":"$.Operations[1].path",
->    "condition":"$.displayName EMPTY false",
->    "constant":"displayName",
->    "scope":"patchEntity"
-> },
-> {
->    "sourcePath":"$.displayName",
->    "targetPath":"$.Operations[1].value",
->    "condition":"$.displayName EMPTY false",
->    "scope":"patchEntity"
-> }
+> ​
 > ```
 
 > ### Note:  
+> The `"scope":"patchEntity"` expression indicates which attributes should be provisioned during update. However, it works only for attributes provisioned from one of the source systems.
+
+> ### Note:  
 > The add operation is used to add a new attribute value to an existing resource. When add is performed on a single-value attribute that already has a value, like the displayName, the existing value is replaced with the new one. In this case, add is equivalent to replace. For more information about add and replace operations when modifying resources with PATCH, see the SCIM specification RFC [7644](https://datatracker.ietf.org/doc/html/rfc7644#section-3.5.2.1).
-
-Another way to control which attributes are updated and when is using the `"scope":"createEntity"`. This transformation expression is defined on an attribute mapping in the target system. When this is in place, the attribute is only processed during user creation. Any other attributes could potentially be changed if a new value is subsequently provisioned.
-
-For example, consider a scenario where you want the user's email to be provisioned from the leading source system when the user is created in the identity directory. Further provisioning from systems like SAP SuccessFactors, SAP SuccessFactors Learning, among others, will not change the email value if the scope is defined as follows:
-
-> ### Code Syntax:  
-> ```
-> {
->    "sourcePath":"$.emails[*].value",
->    "preserveArrayWithSingleElement":true,
->    "targetPath":"$.emails[?(@.value)]",
->    "scope":"createEntity"
-> },
-> 
-> ```
-
-
-
-### Add Custom Attributes
-
-You can provision attributes specific to a given source system as custom attributes in the target identity directory. For example, if you want to provision the `perPersonUuid` user attribute from SAP SuccessFactors to the identity directory, you need to provide the following mappings:
-
-> ### Code Syntax:  
-> ```
-> {
->    "sourcePath":"$['urn:ietf:params:scim:schemas:extension:successfactors:2.0:User']['perPersonUuid']",
->    "targetPath":"$['urn:sap:cloud:scim:schemas:extension:custom:2.0:User']['attributes'][0]['value']",
->    "optional":true
-> },
-> {
->    "targetPath":"$['urn:sap:cloud:scim:schemas:extension:custom:2.0:User']['attributes'][0]['name']",
->    "condition":"$['urn:ietf:params:scim:schemas:extension:successfactors:2.0:User']['perPersonUuid'] EMPTY false",
->    "constant":"customAttribute1"
-> }
-> ```
 
 
 
@@ -1023,6 +1134,7 @@ You can use the identity directory as a SCIM 2.0 based proxy connector. Before e
     >       {
     >         "sourcePath": "$.userType",
     >         "targetPath": "$.userType",
+    >         "defaultValue": "employee",
     >         "optional": true
     >       },
     >       {
@@ -1165,21 +1277,9 @@ You can use the identity directory as a SCIM 2.0 based proxy connector. Before e
     >         "scope": "createEntity"
     >       },
     >       {
-    >         "constant": "employee",
-    >         "targetPath": "$.userType"
-    >       },
-    >       {
     >         "sourcePath": "$.timezone",
     >         "targetPath": "$.timezone",
     >         "optional": true
-    >       },
-    >       {
-    >         "constant": "userName",
-    >         "targetVariable": "entityCorrelationAttributeName"
-    >       },
-    >       {
-    >         "sourcePath": "$.userName",
-    >         "targetVariable": "entityCorrelationAttributeValue"
     >       },
     >       {
     >         "sourcePath": "$.Operations",

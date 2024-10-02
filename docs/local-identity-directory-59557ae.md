@@ -223,6 +223,7 @@ To create Local Identity Directory as a target system, proceed as follows:
     >       {
     >         "sourcePath": "$.userType",
     >         "targetPath": "$.userType",
+    >         "defaultValue": "employee",
     >         "optional": true
     >       },
     >       {

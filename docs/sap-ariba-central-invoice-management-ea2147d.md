@@ -11,7 +11,7 @@ Follow this procedure to set up SAP Ariba Central Invoice Management as a target
 > ### Restriction:  
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Identity Access Governance** bundle option.
 
-You have created an instance and generated a service key for the scim service plan of SAP Ariba Central Invoice Management. For more information, see [Setting Up Invoice Processing with SAP Ariba Central Invoice Management \(4N6\)](https://support.sap.com/content/dam/SAAP/Sol_Pack/S4C/Library/Setup/4N6_Set-Up_EN_XX.pdf) –\> *7.4 Configure User Replication*.
+You have created an instance and generated a service key for the scim service plan of SAP Ariba Central Invoice Management. This step is automated by the booster *Set Up SAP Ariba Central Invoice Management*. For more information, see [Setting Up Invoice Processing with SAP Ariba Central Invoice Management \(4N6\)](https://support.sap.com/content/dam/SAAP/Sol_Pack/S4C/Library/Setup/4N6_Set-Up_EN_XX.pdf) –\> *Set up Configuration Using Booster in SAP BTP Cockpit*.
 
 
 
@@ -157,9 +157,13 @@ SAP Ariba Central Invoice Management is an SAP BTP SaaS application running on S
     
     If Identity Provisioning tries to provision a user that already exists in the target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved. The property is not added automatically at system creation.
 
-    Default value: *userName*
+    **Possible values:**
 
-    If the service finds an existing user by userName, it updates this user with the data of the conflicting one. If the service does not find an existing user by userName, the creation of the conflicting user fails.
+    -   *userName* - default value
+    -   *emails\[\*\].value*
+    -   *userName,emails\[\*\].value*
+
+    For more information, see: [List of Properties](list-of-properties-d6f3577.md)
     
     </td>
     </tr>
@@ -224,6 +228,8 @@ SAP Ariba Central Invoice Management is an SAP BTP SaaS application running on S
     You can change the default transformation mapping rules to reflect your current setup of entities in your SAP Ariba Central Invoice Management system. For more information, see:
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
+
+    [User Management \(SCIM\) for SAP Ariba Central Invoice Management](https://api.sap.com/api/UserServiceV1/resource/)
 
     **Mapping logic** – The behavior of the default transformation logic is to map all attributes from the internal SCIM representation to the target SAP Ariba Central Invoice Management entity.
 

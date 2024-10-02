@@ -103,6 +103,10 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     -   The metadata XML file of the service provider.
     -   The URL with service provider metadata.
 
+        > ### Restriction:  
+        > The metadata URL must not contain query parameter.
+
+
 
     
     </td>

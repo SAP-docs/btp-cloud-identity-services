@@ -8,7 +8,14 @@ This document is to help users, administrators, and developers deal with issues 
 
 ## SAP Support Portal
 
-You can report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`.
+You can report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with the following components:
+
+-   `BC-IAM-IDS` - for issues related to authentication and user and group management
+
+-   `BC-IAM-IPS` - for issues related to user and group provisioning
+
+-   `BC-IAM-OID` - for issues related to OpenID Connect tokens
+
 
 
 

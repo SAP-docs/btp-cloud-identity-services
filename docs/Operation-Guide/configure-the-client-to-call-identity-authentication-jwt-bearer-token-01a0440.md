@@ -385,7 +385,10 @@ Request body
 
 ```
 
-https://my-tenant.ondemand.com/oauth2/token?grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&
+POST /oauth2/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&
 client_id=c95ad226-fg34-abc6-abc6-6e8a6b9f2442&
 client_secret=PASu9/0sTUeUCG1LAYmSQ18Ut0zrfMz&
 assertion=eyJraWQiOiJva3JFVVNsbHRIbGlL...hoXvzy2TgmdPS0LlAXA

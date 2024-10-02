@@ -434,6 +434,7 @@ To create Local Identity Directory as a proxy system, proceed as follows:
     >       {
     >         "sourcePath": "$.userType",
     >         "targetPath": "$.userType",
+    >         "defaultValue": "employee",
     >         "optional": true
     >       },
     >       {
@@ -574,10 +575,6 @@ To create Local Identity Directory as a proxy system, proceed as follows:
     >         "constant": 39,
     >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['sourceSystem']",
     >         "scope": "createEntity"
-    >       },
-    >       {
-    >         "constant": "employee",
-    >         "targetPath": "$.userType"
     >       },
     >       {
     >         "sourcePath": "$.timezone",

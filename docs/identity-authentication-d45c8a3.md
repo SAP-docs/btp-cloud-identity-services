@@ -625,8 +625,11 @@ To create Identity Authentication as a proxy system, proceed as follows:
     >       {
     >         "sourcePath": "$.userType",
     >         "targetPath": "$.userType",
+    >         "defaultValue": "employee",
     >         "optional": true
     >       },
+    > // The userType attribute accepts different values. The default one is employee. 
+    > // If you set it to public, that means Identity Authentication is the default password store. See the Remember box below.  
     >       {
     >         "sourcePath": "$.name.givenName",
     >         "targetPath": "$.name.givenName",
@@ -756,15 +759,6 @@ To create Identity Authentication as a proxy system, proceed as follows:
     >         "constant": "39",
     >         "targetPath": "$.sourceSystem",
     >         "scope": "createEntity"
-    >       },
-    > 
-    > 
-    > // The userType attribute accepts different values. The default one is employee. 
-    > // If you set it to public, that means Identity Authentication is the default password store. See the Remember box below.  
-    > 
-    >       {
-    >         "constant": "employee",
-    >         "targetPath": "$.userType"
     >       },
     >       {
     >         "sourcePath": "$.timezone",
@@ -1087,6 +1081,7 @@ To create Identity Authentication as a proxy system, proceed as follows:
     >       {
     >         "sourcePath": "$.userType",
     >         "targetPath": "$.userType",
+    >         "defaultValue": "employee",
     >         "optional": true
     >       },
     >       {
@@ -1227,10 +1222,6 @@ To create Identity Authentication as a proxy system, proceed as follows:
     >         "constant": 39,
     >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['sourceSystem']",
     >         "scope": "createEntity"
-    >       },
-    >       {
-    >         "constant": "employee",
-    >         "targetPath": "$.userType"
     >       },
     >       {
     >         "sourcePath": "$.timezone",
