@@ -2,7 +2,7 @@
 
 # Monitoring with SAP Cloud ALM
 
-Identity ProvisioningSAP Cloud Identity Services - Identity Provisioning is integrated with [SAP Cloud ALM](https://help.sap.com/docs/CloudALM?locale=en-US&state=PRODUCTION&version=latest), which is a cloud-based application lifecycle management offering that enables you to implement, operate, and monitor your cloud solutions.
+Identity ProvisioningSAP Cloud Identity Services - Identity Provisioning is integrated with SAP Cloud ALM, which is a cloud-based application lifecycle management offering that enables you to implement, operate, and monitor your cloud solutions.
 
 
 
