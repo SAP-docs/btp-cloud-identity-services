@@ -6,7 +6,7 @@
 
 This page lists the release notes of Cloud Identity Services for 2024. To see the release notes for the previous year, visit [2023 What's New for Cloud Identity Services \(Archive\)](2023-what-s-new-for-cloud-identity-services-archive-1c651db.md). 
 
-To get notifications, subscribe for the Cloud Identity Services selection in the [What's New Viewer for SAP Business Technology Platform](https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=Cloud%20Identity%20Services&locale=en-US&version=Cloud).
+To get notifications, subscribe for the Cloud Identity Services selection in the What's New Viewer for SAP Business Technology Platform.
 
 
 
@@ -82,6 +82,91 @@ Valid as Of
 Version
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regional Availability
+
+</td>
+<td valign="top">
+
+Cloud Identity Services now operates with two IPs in the data center in the US West region.
+
+Action:
+
+We recommend you to add the following IPs to your allowed IP list:
+
+-   LB IP - 52.143.72.52, 40.91.81.47
+-   NAT IP - 52.137.107.38/32, 52.137.108.207/32, 4.155.183.41/32, 4.155.183.68/32
+
+The following IPs are no longer in use:
+
+-   LB IP - 52.143.74.249
+-   NAT IP - 20.51.113.99/32, 20.57.161.219/32, 20.57.185.171/32
+
+See [Regional Availability](regional-availability-be600ca.md).
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-10-09
+
+</td>
+<td valign="top">
+
+2024-10-09
+
+</td>
+<td valign="top">
+
+2410a
+
+</td>
 </tr>
 <tr>
 <td valign="top">

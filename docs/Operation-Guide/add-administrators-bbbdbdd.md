@@ -239,7 +239,7 @@ To add a system as a new tenant administrator, proceed as follows:
     </td>
     <td valign="top">
     
-     
+    This role gives the tenant administrator permission to configure the applications via the administration console.
     
     </td>
     </tr>
@@ -331,7 +331,7 @@ To add a system as a new tenant administrator, proceed as follows:
 
     This role is needed for provisioning scenarios where user data is provisioned real-time without running jobs \(manual or scheduled ones\) in Identity Provisioning.
 
-    In this case, you use the credentials of the admin user with *Access Real-Time Provisioning API* role assigned for setting up the authentication mechanism of the provisioning system defined on the *User Provisioning* screen in the Identity Provisioning admin console.
+    In this case, you use the credentials of the admin user with *Access Real-Time Provisioning API* role assigned for setting up the authentication mechanism of the provisioning system defined on the *Real-Time Provisioning* tile of the administration console for SAP Cloud Identity Services.
     
     </td>
     </tr>

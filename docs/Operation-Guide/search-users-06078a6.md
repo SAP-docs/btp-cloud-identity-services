@@ -71,13 +71,6 @@ You can list all users in the tenant for Identity Authentication or filter your 
     Once the search is completed, the system will list the users whose *User ID*, *Global User ID*, *SCIM ID*, *Email*, or *Login Name* match your search criteria string. In this case the system doesn’t include the *First Name* and *Last Name* fields in the search.
 
     If you aren’t satisfied with the search result, edit your search criteria and repeat the step again.
-
-    > ### Note:  
-    > The search is case insensitive. The system searches for entries that begin with the typed string.
-    > 
-    > If you place asterisk \(\*\) in the beginning or in the middle of your search string the system will treat it as a regular character and will include it in the search. For example, if you type ***\*on*** in the *search* field, the system will look for users whose first three letters in any of the three fields are ***\*on***. If you type ***on*** or ***on\**** in the search field, the system will look for users whose first two letters in any of the three fields are ***on***.
-
-
     
     </td>
     </tr>
@@ -92,13 +85,6 @@ You can list all users in the tenant for Identity Authentication or filter your 
     <td valign="top">
     
     The system checks the search fields simultaneously. Once the search is completed, it will list the users that match the search criteria from all the fields.
-
-    > ### Note:  
-    > The search is case insensitive. The system searches for entries that begin with the typed string.
-    > 
-    > If you place asterisk \(\*\) in the beginning or in the middle of your search string the system will treat it as a regular character and will include it in the search. For example, if you type ***\*on*** in the *First Name* field, the system will look for users whose first three letters of the first name are ***\*on***. If you type ***on*** or ***on\**** in the *First Name* field, the system will look for users whose first two letters of the first name are ***on***.
-
-
     
     </td>
     </tr>
