@@ -306,7 +306,6 @@ Create an SAP CPQ proxy connector to execute hybrid scenarios. That means, it ca
     >             {
     >                 "sourcePath": "$.id",
     >                 "targetVariable": "entityIdSourceSystem",
-    >                 "correlationAttribute": true,
     >                 "targetPath": "$.id"
     >             },
     >             {
@@ -347,6 +346,11 @@ Create an SAP CPQ proxy connector to execute hybrid scenarios. That means, it ca
     >                 "targetPath": "$.emails"
     >             },
     >             {
+    >                 "sourcePath": "$.emails[?(@.primary == true)].value",
+    >                 "optional": true,
+    >                 "correlationAttribute": true
+    >             },
+    >             {
     >                 "sourcePath": "$.addresses",
     >                 "preserveArrayWithSingleElement": true,
     >                 "targetPath": "$.addresses"
@@ -379,7 +383,6 @@ Create an SAP CPQ proxy connector to execute hybrid scenarios. That means, it ca
     >             {
     >                 "sourcePath": "$.id",
     >                 "targetVariable": "entityIdSourceSystem",
-    >                 "correlationAttribute": true,
     >                 "targetPath": "$.id"
     >             },
     >             {

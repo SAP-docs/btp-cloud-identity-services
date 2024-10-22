@@ -73,7 +73,7 @@ When *Use Identity Authentication user store* is enabled, it is possible to conf
 
 If the ABAP and SAP Analytics Cloud tenants require the email address \(in our example *dona.moore@test.com*\) for logon, but another application requires the login name, this can be achieved with the following configuration in the administration console for SAP Cloud Identity Services:
 
-**SAML 2.0 Scenario**
+**Scenario Settings**
 
 
 <table>
@@ -263,7 +263,7 @@ Other Application
 </td>
 <td valign="top">
 
-*Source*: `Corporate Identity` *Value*: `mail`
+*Source*: `Corporate Identity` *Value*: `sub`
 
 </td>
 </tr>

@@ -377,6 +377,11 @@ In this scenario Identity Provisioning acts as a proxy between SAP Sales Cloud a
     >         "optional": true
     >       },
     >       {
+    >         "sourcePath": "$.emails[?(@.primary == true)].value",
+    >         "optional": true,
+    >         "correlationAttribute": true
+    >       },
+    >       {
     >         "sourcePath": "$.schemas",
     >         "targetPath": "$.schemas",
     >         "preserveArrayWithSingleElement": true

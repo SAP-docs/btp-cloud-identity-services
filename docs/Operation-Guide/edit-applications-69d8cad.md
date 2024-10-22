@@ -456,7 +456,7 @@ To edit the application configurations, proceed as follows:
     -   Protocol
     -   Subject Name Identifier
     -   Default Name ID Format
-    -   Assertion Attributes
+    -   Attributes
     -   Client Authentication
     -   Dependencies
     -   Risk-Based Authentication

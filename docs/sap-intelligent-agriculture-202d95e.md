@@ -265,7 +265,7 @@ You can use Identity Provisioning to configure SAP Intelligent Agriculture as a 
 
     This property defines by which unique attribute\(s\) the existing user will be searched and resolved. If the service finds a user on the target system via this filter, then the conflicting user will overwrite the existing one. If the service does not find a user on the target system via this filter, the creation will fail.
 
-    **Default behavior**: The property is automatically added during system creation. Its default value is *userName*. This means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such *userName* is not found, the creation of the conflicting user fails.
+    **Default behavior**: The property is missing during system creation. Its default value is *userName*. This means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such *userName* is not found, the creation of the conflicting user fails.
 
     **Possible values:**
 
@@ -430,13 +430,24 @@ You can use Identity Provisioning to configure SAP Intelligent Agriculture as a 
     >                 "targetPath": "$.schemas"
     >             },
     >             {
+    >                 "sourcePath": "$.id",
+    >                 "targetPath": "$.id",
+    >                 "targetVariable": "entityIdSourceSystem"
+    >             },
+    >             {
     >                 "sourcePath": "$.meta",
     >                 "targetPath": "$.meta"
     >             },
     >             {
-    >                 "sourcePath": "$.id",
-    >                 "targetPath": "$.id",
-    >                 "targetVariable": "entityIdSourceSystem"
+    >                 "sourceVariable": "entityBaseLocation",
+    >                 "targetPath": "$.meta.location",
+    >                 "targetVariable": "entityLocationSourceSystem",
+    >                 "functions": [
+    >                     {
+    >                         "type": "concatString",
+    >                         "suffix": "${entityIdSourceSystem}"
+    >                     }
+    >                 ]
     >             },
     >             {
     >                 "sourcePath": "$.userName",
@@ -470,6 +481,11 @@ You can use Identity Provisioning to configure SAP Intelligent Agriculture as a 
     >                 "targetPath": "$.emails"
     >             },
     >             {
+    >                 "sourcePath": "$.emails[0].value",
+    >                 "optional": true,
+    >                 "correlationAttribute": true
+    >             },
+    >             {
     >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']",
     >                 "optional": true,
     >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']"
@@ -491,13 +507,24 @@ You can use Identity Provisioning to configure SAP Intelligent Agriculture as a 
     >                 "targetPath": "$.schemas"
     >             },
     >             {
+    >                 "sourcePath": "$.id",
+    >                 "targetPath": "$.id",
+    >                 "targetVariable": "entityIdSourceSystem"
+    >             },
+    >             {
     >                 "sourcePath": "$.meta",
     >                 "targetPath": "$.meta"
     >             },
     >             {
-    >                 "sourcePath": "$.id",
-    >                 "targetPath": "$.id",
-    >                 "targetVariable": "entityIdSourceSystem"
+    >                 "sourceVariable": "entityBaseLocation",
+    >                 "targetPath": "$.meta.location",
+    >                 "targetVariable": "entityLocationSourceSystem",
+    >                 "functions": [
+    >                     {
+    >                         "type": "concatString",
+    >                         "suffix": "${entityIdSourceSystem}"
+    >                     }
+    >                 ]
     >             },
     >             {
     >                 "sourcePath": "$.displayName",
@@ -558,10 +585,6 @@ You can use Identity Provisioning to configure SAP Intelligent Agriculture as a 
     >                 "sourcePath": "$.emails",
     >                 "preserveArrayWithSingleElement": true,
     >                 "targetPath": "$.emails"
-    >             },
-    >             {
-    >                 "sourcePath": "$.emails[0].value",
-    >                 "correlationAttribute": true
     >             },
     >             {
     >                 "sourcePath": "$.Operations",

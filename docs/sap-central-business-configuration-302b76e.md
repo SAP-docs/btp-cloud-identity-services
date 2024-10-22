@@ -204,7 +204,6 @@ Create a CBC source system to read users, groups, and group members from it.
     >             },
     >             {
     >                 "sourcePath": "$.id",
-    >                 "targetPath": "$.id",
     >                 "targetVariable": "entityIdSourceSystem"
     >             },
     >             {

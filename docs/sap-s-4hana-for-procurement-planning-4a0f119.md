@@ -262,7 +262,6 @@ This scenario supports provisioning **users**.
     
     > ### Code Syntax:  
     > ```
-    > 
     > {
     >     "user": {
     >         "scimEntityEndpoint": "Users",
@@ -271,6 +270,17 @@ This scenario supports provisioning **users**.
     >                 "sourcePath": "$.id",
     >                 "targetPath": "$.id",
     >                 "targetVariable": "entityIdSourceSystem"
+    >             },
+    >             {
+    >                 "sourceVariable": "entityBaseLocation",
+    >                 "targetPath": "$.meta.location",
+    >                 "targetVariable": "entityLocationSourceSystem",
+    >                 "functions": [
+    >                     {
+    >                         "type": "concatString",
+    >                         "suffix": "${entityIdSourceSystem}"
+    >                     }
+    >                 ]
     >             },
     >             {
     >                 "sourcePath": "$.userName",

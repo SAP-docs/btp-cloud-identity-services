@@ -119,3 +119,5 @@ View or edit the *Organization ID* of the application. By default, all applicati
 
 [Configure User Authorizations](configure-user-authorizations-424b64c.md "Configure a granular access control based on policies for the administrators of SAP Cloud Identity Services.")
 
+[Configure Provisioning Authorizations](configure-provisioning-authorizations-a8f8e31.md "Configure granular access control over the Identity Provisioning systems and logs in the SAP Cloud Identity Services administration console.")
+

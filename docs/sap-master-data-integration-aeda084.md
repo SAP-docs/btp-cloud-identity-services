@@ -265,7 +265,6 @@ You can use MDI as a proxy connector to execute *hybrid* scenarios. That means, 
     
     > ### Code Syntax:  
     > ```
-    > 
     > {
     >   "user": {
     >     "scimEntityEndpoint": "Users",
@@ -275,6 +274,17 @@ You can use MDI as a proxy connector to execute *hybrid* scenarios. That means, 
     >         "targetPath": "$.id",
     >         "targetVariable": "entityIdSourceSystem",
     >         "correlationAttribute": true
+    >       },
+    >       {
+    >         "sourceVariable": "entityBaseLocation",
+    >         "targetPath": "$.meta.location",
+    >         "targetVariable": "entityLocationSourceSystem",
+    >         "functions": [
+    >             {
+    >                 "type": "concatString",
+    >                 "suffix": "${entityIdSourceSystem}"
+    >             }
+    >         ]
     >       },
     >       {
     >         "sourcePath": "$.externalId",

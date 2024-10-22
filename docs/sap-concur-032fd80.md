@@ -17,7 +17,7 @@ You are using **User v1 API** or **Identity v4 API**
 
 -   Your SAP Concur admin user has obtained a *Company Request Token* and a *Company UUID* from the SAP Concur Company Request Token self-service tool.
 
-    For more information, see [Configure an SAP Concur Entity as an Identity Provider \(IdP\) Target](https://help.sap.com/docs/SAP_CONCUR?version=Latest&task=integrate_task) → *Section 2: SAP Concur Company Request Token*.
+    For more information, see [SAP Concur Company Request Token](https://help.sap.com/docs/SAP_CONCUR/83c94f03f949423a8f76158375832747/1b9040cf6caf1014a483f58a84015038.html).
 
 
 > ### Note:  

@@ -187,7 +187,6 @@ This provisioning scenario is based on the Platform Authorization Management API
     >     "mappings": [
     >       {
     >         "sourcePath": "$.id",
-    >         "targetPath": "$.id",
     >         "targetVariable": "entityIdSourceSystem"
     >       },
     >       {
@@ -240,7 +239,6 @@ This provisioning scenario is based on the Platform Authorization Management API
     >     "mappings": [
     >       {
     >         "sourcePath": "$.id",
-    >         "targetPath": "$.id",
     >         "targetVariable": "entityIdSourceSystem"
     >       },
     >       {

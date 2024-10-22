@@ -85,7 +85,7 @@ The retry is not supported.
 
 -   SCIM System
 
--   SAP Build Work Zone, advanced edition \([Rate and Burst Limits](https://help.sap.com/docs/build-work-zone-advanced-edition/sap-build-work-zone-advanced-edition/user-and-user-list-provisioning-using-scim-api?q=SCIM%20API#rate-and-burst-limits)\)
+-   SAP Build Work Zone, advanced edition
 
 
 
@@ -93,61 +93,9 @@ The retry is not supported.
 </td>
 <td valign="top">
 
--   Cloud Foundry UAA server
-
--   Identity Authentication
-
--   Local Identity Directory
+-   SCIM-based systems \(listed in [System Types](../system-types-e59ae54.md)\)
 
 -   Microsoft Entra ID
-
--   Sales Cloud – Analytics & AI
-
--   SAP Advanced Financial Closing
-
--   SAP Analytics Cloud
-
--   SAP Ariba Applications
-
--   SAP BTP Account Members \(Neo\)
-
--   SAP BTP XS Advanced UAA \(Cloud Foundry\)
-
--   SAP Business Network
-
--   SAP Build Work Zone, advanced edition \([Rate and Burst Limits](https://help.sap.com/docs/build-work-zone-advanced-edition/sap-build-work-zone-advanced-edition/user-and-user-list-provisioning-using-scim-api?q=SCIM%20API#rate-and-burst-limits)\)
-
--   SAP Build Work Zone, standard edition
-
--   SAP Central Business Configuration
-
--   SAP Commerce Cloud
-
--   SAP SuccessFactors Incentive Management
-
--   SAP Concur version 2
-
--   SAP CPQ
-
--   SAP Data Custodian
-
--   SAP Enterprise Portal
-
--   SAP Fieldglass
-
--   SAP Field Service Management
-
--   SAP Jam Collaboration
-
--   SAP Sales Cloud and SAP Service Cloud
-
--   SAP SuccessFactors Learning
-
--   SAP SuccessFactors version 2
-
--   SAP S/4HANA for procurement planning
-
--   SCIM System
 
 
 > ### Note:  
@@ -158,61 +106,9 @@ The retry is not supported.
 </td>
 <td valign="top">
 
--   Cloud Foundry UAA server
-
--   Identity Authentication
-
--   Local Identity Directory
+-   SCIM-based systems \(listed in [System Types](../system-types-e59ae54.md)\)
 
 -   Microsoft Entra ID
-
--   Sales Cloud – Analytics & AI
-
--   SAP Advanced Financial Closing
-
--   SAP Analytics Cloud
-
--   SAP Ariba Applications
-
--   SAP BTP Account Members \(Neo\)
-
--   SAP BTP XS Advanced UAA \(Cloud Foundry\)
-
--   SAP Business Network
-
--   SAP Build Work Zone, advanced edition \([Rate and Burst Limits](https://help.sap.com/docs/build-work-zone-advanced-edition/sap-build-work-zone-advanced-edition/user-and-user-list-provisioning-using-scim-api?q=SCIM%20API#rate-and-burst-limits)\)
-
--   SAP Build Work Zone, standard edition
-
--   SAP Central Business Configuration
-
--   SAP Commerce Cloud
-
--   SAP SuccessFactors Incentive Management
-
--   SAP Concur version 2
-
--   SAP CPQ
-
--   SAP Data Custodian
-
--   SAP Enterprise Portal
-
--   SAP Fieldglass
-
--   SAP Field Service Management
-
--   SAP Jam Collaboration
-
--   SAP Sales Cloud and SAP Service Cloud
-
--   SAP SuccessFactors Learning
-
--   SAP SuccessFactors version 2
-
--   SAP S/4HANA for procurement planning
-
--   SCIM System
 
 
 > ### Note:  
@@ -312,4 +208,6 @@ The retry is not supported.
 [Reset Identity Provisioning System](reset-identity-provisioning-system-0bc1e53.md "Resetting an Identity Provisioning system (source or target) deletes all Identity Provisioning operational data.")
 
 [List of Properties](../list-of-properties-d6f3577.md "On this page you can find all the available properties to use in the Identity Provisioning service. You can filter them by system type name, &quot;All Systems&quot;, by a word or only part of it.")
+
+[Rate and Burst Limits for SAP Build Work Zone, advanced edition](https://help.sap.com/docs/build-work-zone-advanced-edition/sap-build-work-zone-advanced-edition/user-and-user-list-provisioning-using-scim-api?q=SCIM%20API#rate-and-burst-limits)
 

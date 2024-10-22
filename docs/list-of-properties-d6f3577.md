@@ -914,7 +914,7 @@ When Identity Provisioning attempts to provision a user for the first time, it m
 
 This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\). If the service finds such a user on the target system via this filter, then the conflicting user will overwrite the existing one. If the service does not find such a user, the creation will fail.
 
-The property is automatically added during system creation. If the service finds an existing user by at least one of the uniqueness criteria, which are *email*, *userName*, or *urn:ietf:params:scim:schemas:extension:sap:2.0:User:userUuid*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the update of the conflicting user fails. If more than one users with these unique attributes are found, the update fails.
+If the service finds an existing user by at least one of the uniqueness criteria, which are *email*, *userName*, or *urn:ietf:params:scim:schemas:extension:sap:2.0:User:userUuid*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the update of the conflicting user fails. If more than one users with these unique attributes are found, the update fails.
 
 According to your use case, choose how to set up this property:
 
@@ -993,6 +993,84 @@ By default, Identity Provisioning uses version *3*, which means - SCIM 2.0 based
 <td valign="top">
 
 SAP Sales Cloud and SAP Service Cloud
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`btp.cf.pm.origin` 
+
+</td>
+<td valign="top">
+
+It denotes the `origin` attribute in the system transformation.
+
+The value of this property is the location of your Cloud Foundry identity provider. If not sure about the value, ask your Cloud Foundry system administrator.
+
+**Possible values:** Text/numeric string
+
+**System Role:** Source, Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP BTP Platform Members \(Cloud Foundry\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`btp.cf.pm.landscape` 
+
+</td>
+<td valign="top">
+
+Enter the technical key of the region in which your SAP BTP subaccount is located. For more information, see [Regions and API Endpoints Available for the Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/regions-and-api-endpoints-available-for-cloud-foundry-environment?version=Cloud).
+
+If you are using a subaccount in SAP BTP, partner-managed edition, enter the landscape domain of your central region.
+
+**Possible values:** Text/numeric string
+
+**System Role:** Source, Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP BTP Platform Members \(Cloud Foundry\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`btp.cf.pm.group.prefix` 
+
+</td>
+<td valign="top">
+
+This property distinguishes SAP BTP Platform Members \(Cloud Foundry\) groups by specific prefix. It is an optional property which does not appear by default at system creation.
+
+Example value: `BTP_CF_PM_`
+
+You can use the example value or provide your own.
+
+-   When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP BTP Platform Members \(Cloud Foundry\) source system and will be provisioned to the target system with the following name pattern: <code>BTP_CF_PM_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP BTP Platform Members \(Cloud Foundry\) groups in the target system will be distinguished from groups provisioned from other applications.
+
+    If the property is not set, the SAP BTP Platform Members \(Cloud Foundry\) groups will be read and provisioned to the target system with their actual display names.
+
+-   When **set in the target system**, only groups containing the `BTP_CF_PM_` prefix in their display name will be provisioned to SAP BTP Platform Members \(Cloud Foundry\). Groups without this prefix in the display name won't be provisioned.
+
+    If the property is not set, all groups will be be provisioned to SAP BTP Platform Members \(Cloud Foundry\).
+
+
+**System Role:** Source and Target
+
+</td>
+<td valign="top">
+
+SAP BTP Platform Members \(Cloud Foundry\)
 
 </td>
 </tr>
@@ -1183,7 +1261,7 @@ When specified, only those SAP Data Custodian users matching the filter expressi
 
 **Possible values:**
 
-For example: *****userName eq "Smith.J"*
+For example: *userName eq "Smith.J"*
 
 **System Role:** Source, Proxy
 
@@ -1206,7 +1284,7 @@ When Identity Provisioning attempts to provision a user for the first time, it m
 
 This property defines by which unique attribute\(s\) the existing user will be searched and resolved. If the service finds a user on the target system via this filter, then the conflicting user will overwrite the existing one. If the service does not find a user on the target system via this filter, the creation will fail.
 
-**Default behavior**: The property is automatically added during system creation. Its default value is *userName*. This means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such *userName* is not found, the creation of the conflicting user fails.
+**Default behavior**: This property is missing during system creation. Its default value is *userName*. This means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such *userName* is not found, the creation of the conflicting user fails.
 
 **Possible values:**
 
@@ -1778,7 +1856,7 @@ When Identity Provisioning attempts to provision a user for the first time, it m
 
 This property defines by which unique attribute\(s\) the existing user will be searched and resolved. If the service finds a user on the target system via this filter, then the conflicting user will overwrite the existing one. If the service does not find a user on the target system via this filter, the creation will fail.
 
-**Default behavior**: The property is automatically added during system creation. Its default value is *userName*. This means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such *userName* is not found, the creation of the conflicting user fails.
+**Default behavior**: This property is missing during system creation. Its default value is *userName*. This means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such *userName* is not found, the creation of the conflicting user fails.
 
 **Possible values:**
 
@@ -2192,11 +2270,11 @@ This property defines by which unique attribute\(s\) the existing user will be s
 
 According to your use case and system type, choose how to set up this property:
 
--   Default behavior: This property is set during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such *userName* is not found, the creation of the conflicting user fails.
+-   Default behavior: This property is missing during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such *userName* is not found, the creation of the conflicting user fails.
 -   Value = *emails\[0\].value*. If the service finds an existing user with such *email*, it updates this user with the data of the conflicting one. If a user with such *email* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
 -   Value = *userName,emails\[0\].value*. If the service finds an existing user with both these *userName* and *email*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
 -   Value = *phoneNumbers\[0\].value*. If the service finds an existing user with such *phoneNumber*, it updates this user with the data of the conflicting one. If a user with such *phoneNumber* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
--   Value = *userName, phoneNumbers\[0\].value*. If the service finds an existing user with both these *userName* and *phoneNumber*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+-   Value = *This property allows you to update user attributes withuserName, phoneNumbers\[0\].value*. If the service finds an existing user with both these *userName* and *phoneNumber*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
 
 -   Value = *userName, emails\[0\].value, phoneNumbers\[0\].value*. If the service finds an existing user with these *userName*, *email* and *phoneNumber*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
 
@@ -2237,7 +2315,7 @@ Local Identity Directory
 </td>
 <td valign="top">
 
-This property allows you to update user attributes with `PATCH` request in Local Identity Directory target system and to preserve the user record instead of deleting it. This behavior is supported only when the scope of the attribute is set to **deleteEntity**.
+`PATCH` request in Local Identity Directory target system and to preserve the user record instead of deleting it. This behavior is supported only when the scope of the attribute is set to **deleteEntity**.
 
 In addition to configuring this property, you also need to adapt the write transformation. For example, if you want to disable a user account in Local Identity Directory, you need to do the following:
 
@@ -5982,30 +6060,7 @@ For example:
 </td>
 <td valign="top">
 
--   SCIM System
-
--   SAP Analytics Cloud
-
--   SAP SuccessFactors Incentive Management
-
--   SAP Jam Collaboration
-
--   Identity Authentication \(SCIM API version 1\)
-
--   Local Identity Directory
-
--   Cloud Foundry UAA Server
-
--   SAP BTP XS Advanced UAA \(Cloud Foundry\)
-
--   Sales Cloud – Analytics & AI
-
--   SAP BTP Account Members \(Neo\)
-
--   SAP Fieldglass
-
-
-
+All SCIM-based systems
 
 </td>
 </tr>
@@ -6030,25 +6085,69 @@ For example:
 </td>
 <td valign="top">
 
--   SCIM System
-
--   SAP Analytics Cloud
-
--   SAP SuccessFactors Incentive Management
-
--   SAP Jam Collaboration
+-   Identity Authentication
 
 -   Local Identity Directory
 
--   Cloud Foundry UAA Server
+-   SAP Advanced Financial Closing
 
--   SAP BTP XS Advanced UAA \(Cloud Foundry\)
+-   SAP Analytics Cloud
 
--   Sales Cloud – Analytics & AI
+-   SAP Ariba Applications
+
+-   SAP Ariba Central Invoice Management
 
 -   SAP BTP Account Members \(Neo\)
 
+-   SAP BTP Java/HTML5 apps \(Neo\)
+
+-   SAP BTP XS Advanced UAA \(Cloud Foundry\)
+
+-   SAP Build Work Zone, advanced edition
+
+-   SAP Build Work Zone, standard edition
+
+-   SAP Business Network
+
+-   SAP Central Business Configuration
+
+-   SAP Commerce Cloud
+
+-   SAP CPQ
+
+-   SAP Data Custodian
+
+-   SAP Enable Now
+
+-   SAP Enterprise Portal
+
 -   SAP Fieldglass
+
+-   SAP Field Service Management
+
+-   SAP HANA Cloud, SAP HANA Database
+
+-   SAP Intelligent Agriculture
+
+-   SAP Jam Collaboration
+
+-   SAP Sales Cloud and SAP Service Cloud
+
+-   SAP SuccessFactors version 2
+
+-   SAP SuccessFactors Employee Central Payroll
+
+-   SAP SuccessFactors Incentive Management
+
+-   Sales Cloud – Analytics & AI
+
+-   Cloud Foundry UAA Server
+
+-   Procurement Data Warehouse
+
+-   SCIM System
+
+-   SSH Server \(Beta\)
 
 
 
@@ -6076,30 +6175,7 @@ If the property is not specified, the default value is taken: *application/scim+
 </td>
 <td valign="top">
 
--   SCIM System
-
--   SAP Analytics Cloud
-
--   SAP SuccessFactors Incentive Management
-
--   SAP Jam Collaboration
-
--   Identity Authentication \(SCIM API version 1\)
-
--   Local Identity Directory
-
--   Cloud Foundry UAA Server
-
--   SAP BTP XS Advanced UAA \(Cloud Foundry\)
-
--   Sales Cloud – Analytics & AI
-
--   SAP BTP Account Members \(Neo\)
-
--   SAP Fieldglass
-
-
-
+All SCIM-based systems
 
 </td>
 </tr>
@@ -6147,32 +6223,7 @@ Default value: *userName*
 </td>
 <td valign="top">
 
--   SCIM System
-
--   *SAP Analytics Cloud*
-
--   SAP SuccessFactors Incentive Management
-
--   SAP Jam Collaboration
-
--   *Identity Authentication* \(SCIM API version 1\)
-
--   Local Identity Directory
-
--   Local Identity Directory \(when Identity Provisioning is running on SAP Cloud Identity Infrastructure\)
-
--   Cloud Foundry UAA Server
-
--   SAP BTP XS Advanced UAA \(Cloud Foundry\)
-
--   Sales Cloud – Analytics & AI
-
--   SAP BTP Account Members \(Neo\)
-
--   SAP Fieldglass
-
-
-
+All SCIM-based systems
 
 </td>
 </tr>
@@ -6195,27 +6246,69 @@ If the property is not specified, the search is done by the default attribute: *
 </td>
 <td valign="top">
 
--   SCIM System
-
--   SAP Analytics Cloud
-
--   SAP SuccessFactors Incentive Management
-
--   SAP Jam Collaboration
-
--   Identity Authentication \(SCIM API version 1\)
+-   Identity Authentication
 
 -   Local Identity Directory
 
--   Cloud Foundry UAA Server
+-   SAP Advanced Financial Closing
 
--   SAP BTP XS Advanced UAA \(Cloud Foundry\)
+-   SAP Analytics Cloud
 
--   Sales Cloud – Analytics & AI
+-   SAP Ariba Applications
+
+-   SAP Ariba Central Invoice Management
 
 -   SAP BTP Account Members \(Neo\)
 
+-   SAP BTP Java/HTML5 apps \(Neo\)
+
+-   SAP BTP XS Advanced UAA \(Cloud Foundry\)
+
+-   SAP Build Work Zone, advanced edition
+
+-   SAP Build Work Zone, standard edition
+
+-   SAP Business Network
+
+-   SAP Central Business Configuration
+
+-   SAP Commerce Cloud
+
+-   SAP CPQ
+
+-   SAP Data Custodian
+
+-   SAP Enable Now
+
+-   SAP Enterprise Portal
+
 -   SAP Fieldglass
+
+-   SAP Field Service Management
+
+-   SAP HANA Cloud, SAP HANA Database
+
+-   SAP Intelligent Agriculture
+
+-   SAP Jam Collaboration
+
+-   SAP Sales Cloud and SAP Service Cloud
+
+-   SAP SuccessFactors version 2
+
+-   SAP SuccessFactors Employee Central Payroll
+
+-   SAP SuccessFactors Incentive Management
+
+-   Sales Cloud – Analytics & AI
+
+-   Cloud Foundry UAA Server
+
+-   Procurement Data Warehouse
+
+-   SCIM System
+
+-   SSH Server \(Beta\)
 
 
 
@@ -6274,30 +6367,7 @@ Default value: *false*
 </td>
 <td valign="top">
 
--   SCIM System
-
--   SAP Analytics Cloud
-
--   SAP SuccessFactors Incentive Management
-
--   SAP Jam Collaboration
-
--   Identity Authentication \(SCIM API version 1\)
-
--   Local Identity Directory
-
--   Cloud Foundry UAA Server
-
--   SAP BTP XS Advanced UAA \(Cloud Foundry\)
-
--   Sales Cloud – Analytics & AI
-
--   SAP BTP Account Members \(Neo\)
-
--   SAP Fieldglass
-
-
-
+All SCIM-based systems
 
 </td>
 </tr>
@@ -6346,11 +6416,54 @@ Default value: *false*
 </td>
 <td valign="top">
 
--   SAP Jam Collaboration
+-   Identity Authentication \(SCIM API version 2\)
+
 -   Local Identity Directory
+
 -   Cloud Foundry UAA Server
+
 -   SAP BTP XS Advanced UAA \(Cloud Foundry\)
+
 -   SCIM System
+
+-   SAP Ariba Applications
+
+-   SAP Ariba Category Management
+
+-   SAP Advanced Workflow
+
+-   SAP Business Network
+
+-   SAP Commerce Cloud
+
+-   SAP Build Work Zone, standard edition
+
+-   SAP Ariba Central Invoice Management
+
+-   SAP Data Custodian
+
+-   SAP Datasphere
+
+-   SAP Jam Collaboration
+
+-   SAP SuccessFactors Employee Central Payroll
+
+-   SAP Field Service Management
+
+-   SAP HANA Cloud, SAP HANA Database
+
+-   SAP Intelligent Agriculture
+
+-   SAP SuccessFactors \(SCIM API version 2\)
+
+-   SAP SuccessFactors Learning
+
+-   SAP Advanced Financial Closing
+
+-   SAP Analytics Cloud
+
+-   SAP Build Work Zone, advanced edition
+
 
 
 
@@ -9423,7 +9536,7 @@ Default value: *false*
 </td>
 <td valign="top">
 
-Local Identity Directory \(when Identity Provisioning is running on SAP Cloud Identity Infrastructure\)
+Local Identity Directory
 
 </td>
 </tr>
@@ -9450,7 +9563,7 @@ If you enter a number larger than 100, Identity Provisioning will replace it wit
 </td>
 <td valign="top">
 
-Local Identity Directory \(when Identity Provisioning is running on SAP Cloud Identity Infrastructure\)
+Local Identity Directory
 
 </td>
 </tr>
@@ -9993,9 +10106,6 @@ When the property is disabled \(set to *false*\), the following operations can b
 
 -   Create, update, or delete a group
 
-
-> ### Note:  
-> Update operation is skipped for users in the default write transformation.
 
 **Possible values:**
 
@@ -11378,9 +11488,6 @@ According to your use case, choose how to set up this property:
 -   Value = *emails\[0\].value*. If the service finds an existing user with such *email*, it updates this user with the data of the conflicting one. If a user with such *email* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
 -   Value = *userName,emails\[0\].value*. If the service finds an existing user with both these *userName* and *email*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
 
-> ### Note:  
-> You can use this property when SAP Analytics Cloud is based on SCIM API version 2.
-
 **Possible values:**
 
 -   *userName*
@@ -11836,7 +11943,13 @@ SAP Application Server ABAP
 </td>
 <td valign="top">
 
-It defines by which unique attribute\(s\) an existing user to be resolved in the event of conflicting users.
+When the Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists in Procurement Data Warehouse. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\). This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\).
+
+According to your use case, choose how to set up this property:
+
+-   Default behavior: This property is missing during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such а *userName* is not found, the creation of the conflicting user fails.
+-   Value = *emails\[0\].value*. If the service finds an existing user with such *email*, it updates this user with the data of the conflicting one. If a user with such *email* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+-   Value = *userName,emails\[0\].value*. If the service finds an existing user with both these *userName* and *email*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
 
 Default value: **userName**
 
@@ -13830,6 +13943,8 @@ SAP HANA Cloud, SAP HANA Database
 
 Refers to the type of instance being configured or used within the SAP HANA Cloud.
 
+The value is set to *hdb* at system creation.
+
 **System Role:** Source, Target
 
 </td>
@@ -13887,6 +14002,227 @@ You can use the example value or provide your own.
 <td valign="top">
 
 SAP HANA Cloud, SAP HANA Database
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`en.user.filter`
+
+</td>
+<td valign="top">
+
+When specified, only those SAP Enable Now users matching the filter expression will be read.
+
+**Possible values:**
+
+For example: *userName eq "SmithJ"*
+
+**System Role:**Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP Enable Now
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`en.group.filter`
+
+</td>
+<td valign="top">
+
+When specified, only those SAP Enable Now groups matching the filter expression will be read.
+
+**Possible values:**
+
+For example: *displayName eq "ProjectTeam1"*
+
+**System Role:** Source
+
+</td>
+<td valign="top">
+
+SAP Enable Now
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`en.content.type`
+
+</td>
+<td valign="top">
+
+This property makes a SAP Enable Now connector to send a specified value for the *Content-Type* HTTP header. This is needed because SAP Enable Now could potentially not implement the protocol in the specification, which states that a system must accept *application/scim+json* as a value of the*Content-Type* header.
+
+**Possible values:**
+
+For example: *application/json*
+
+Default value: *application/scim+json*
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Enable Now
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`en.user.unique.attribute`
+
+</td>
+<td valign="top">
+
+If Identity Provisioning tries to provision a user that already exists in the target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved. The property is not added automatically at system creation.
+
+Default value: *userName*
+
+If the service finds an existing user by userName, it updates this user with the data of the conflicting one. If the service does not find an existing user by userName, the creation of the conflicting user fails.
+
+**System Role**: Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Enable Now
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`en.group.unique.attribute`
+
+</td>
+<td valign="top">
+
+If the Identity Provisioning tries to create a group that already exists on the SAP Enable Now target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
+
+**Possible values:**
+
+Default value \(when not specified\): *displayName*
+
+If the property is not specified, the search is done by the default attribute: *displayName*
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Enable Now
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`en.include.if.match.wildcard.header`
+
+</td>
+<td valign="top">
+
+Makes the SAP Enable Now connector send the *If-Match* HTTP header with a value of “\*” for every request to the target system. This header could be used by an SAP Enable Now system for entity versioning.
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false* 
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Enable Now
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`en.support.patch.operation`
+
+</td>
+<td valign="top">
+
+This property controls how modified users in the source system are updated in the target system.
+
+-   If set to *true*, Identity Provisioning sends a `PATCH` request to the user or group resource in the target system. Only attributes without `"scope": "createEntity"` in the attribute mappings in the write transformation will be updated.
+
+    For example, if the last name of a user is changed in the source system, the patch operation will update it in the target system and will leave unchanged other attributes with explicitly set "scope": "createEntity".
+
+-   If set to *false*, `PUT` operations are used to update users in the target system. This means, for example, that if a user attribute is modified, all user attributes are replaced in the target system, instead of updating only the modified ones.
+
+
+Users can be updated in the target system in various cases, such as:
+
+-   In the source system, some user attributes are modified, or new attributes are added.
+
+-   In the source system, a condition or a filter is set for users not to be read anymore.
+
+-   A user is deleted from the source system.
+
+
+In the last two cases, it's possible to keep the entity in the target system – it will not be deleted but only disabled. To do this, use the `deleteEntity` scope in the transformation of your target or proxy system. See: [Transformation Expressions](transformation-expressions-bb8537b.md) → **deleteEntity**.
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false*
+
+**System Role:** Target
+
+</td>
+<td valign="top">
+
+SAP Enable Now
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`en.group.prefix`
+
+</td>
+<td valign="top">
+
+\(Optional\) This property distinguishes SAP Enable Now groups by specific prefix. It is an optional property which does not appear by default at system creation.
+
+Example value: `EN_`
+
+You can use the example value or provide your own.
+
+-   When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP Enable Now source system and will be provisioned to the target system with the following name pattern: <code>EN_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP Enable Now groups in the target system will be distinguished from groups provisioned from other applications.
+
+    If the property is not set, the SAP Enable Now groups will be read and provisioned to the target system with their actual display names.
+
+-   When **set in the target system**, only groups containing the `EN_` prefix in their display name will be provisioned to SAP Enable Now. Groups without this prefix in the display name won't be provisioned.
+
+    If the property is not set, all groups will be be provisioned to SAP Enable Now.
+
+
+**System Role:** Source, Target
+
+</td>
+<td valign="top">
+
+SAP Enable Now
 
 </td>
 </tr>

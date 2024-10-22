@@ -219,10 +219,6 @@ Create an SAP CPQ source system to read users and groups from it.
     >                 "targetPath": "$.schemas"
     >             },
     >             {
-    >                 "sourcePath": "$.meta",
-    >                 "targetPath": "$.meta"
-    >             },
-    >             {
     >                 "sourcePath": "$.id",
     >                 "targetVariable": "entityIdSourceSystem"
     >             },
@@ -251,6 +247,11 @@ Create an SAP CPQ source system to read users and groups from it.
     >                 "sourcePath": "$.emails",
     >                 "preserveArrayWithSingleElement": true,
     >                 "targetPath": "$.emails"
+    >             },
+    >             {
+    >                 "sourcePath": "$.emails[?(@.primary == true)].value",
+    >                 "optional": true,
+    >                 "correlationAttribute": true
     >             },
     >             {
     >                 "sourcePath": "$.addresses",
@@ -291,12 +292,7 @@ Create an SAP CPQ source system to read users and groups from it.
     >                 "targetPath": "$.schemas"
     >             },
     >             {
-    >                 "sourcePath": "$.meta",
-    >                 "targetPath": "$.meta"
-    >             },
-    >             {
     >                 "sourcePath": "$.id",
-    >                 "targetPath": "$.id",
     >                 "targetVariable": "entityIdSourceSystem"
     >             },
     >             {

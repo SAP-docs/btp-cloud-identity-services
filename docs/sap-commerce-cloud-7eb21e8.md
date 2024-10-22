@@ -321,7 +321,6 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a source sy
     >         "mappings": [
     >             {
     >                 "sourcePath": "$.id",
-    >                 "targetPath": "$.id",
     >                 "targetVariable": "entityIdSourceSystem"
     >             },
     >             {

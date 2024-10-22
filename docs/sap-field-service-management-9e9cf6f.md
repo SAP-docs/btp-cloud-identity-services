@@ -297,8 +297,7 @@ This scenario supports provisioning **users** and **group members**. When integr
     >             {
     >                 "sourcePath": "$.id",
     >                 "targetPath": "$.id",
-    >                 "targetVariable": "entityIdSourceSystem",
-    >                 "correlationAttribute": true
+    >                 "targetVariable": "entityIdSourceSystem"
     >             },
     >             {
     >                 "sourceVariable": "entityBaseLocation",
@@ -360,8 +359,7 @@ This scenario supports provisioning **users** and **group members**. When integr
     >             {
     >                 "sourcePath": "$.id",
     >                 "targetPath": "$.id",
-    >                 "targetVariable": "entityIdSourceSystem",
-    >                 "correlationAttribute": true
+    >                 "targetVariable": "entityIdSourceSystem"
     >             },
     >             {
     >                 "sourceVariable": "entityBaseLocation",

@@ -254,7 +254,6 @@ After fulfilling the prerequisites, follow the procedure below to create a proxy
     
     > ### Code Syntax:  
     > ```
-    > 
     > {
     >     "user": {
     >         "scimEntityEndpoint": "Users",
@@ -265,6 +264,7 @@ After fulfilling the prerequisites, follow the procedure below to create a proxy
     >             },
     >             {
     >                 "sourcePath": "$.id",
+    >                 "targetPath": "$.id",
     >                 "targetVariable": "entityIdSourceSystem"
     >             },
     >             {
@@ -304,6 +304,7 @@ After fulfilling the prerequisites, follow the procedure below to create a proxy
     >             },
     >             {
     >                 "sourcePath": "$.id",
+    >                 "targetPath": "$.id",
     >                 "targetVariable": "entityIdSourceSystem"
     >             },
     >             {

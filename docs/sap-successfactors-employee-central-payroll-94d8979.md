@@ -337,7 +337,6 @@ You can use Identity Provisioning to configure SAP SuccessFactors Employee Centr
     >         "mappings": [
     >             {
     >                 "sourcePath": "$.id",
-    >                 "targetPath": "$.id",
     >                 "targetVariable": "entityIdSourceSystem"
     >             },
     >             {

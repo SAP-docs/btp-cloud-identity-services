@@ -564,7 +564,7 @@ The Microsoft Entra ID users and groups are provisioned to the identity director
 
 The personal and technical information of the user varies across different systems. To manage a unified and up-to-date user data, you can provision the identities from multiple sources and merge them into one target identity directory.
 
-You have the flexibility to choose your own approach when merging data from various sources. This could include defining the unique attribute or a combination of them when resolving conflicts, deciding on how to add and update user and group attributes. All of these require changes in the identity directory configuration.
+You have wide flexibility to choose your own approach when merging data from various sources. This could include defining the unique attribute or a combination of them when resolving conflicts, deciding on how to add and update user and group attributes. All of these require changes in the identity directory configuration.
 
 > ### Caution:  
 > When reading user data from multiple sources, we strongly recommend that you perform **consecutive** provisioning jobs. Simultaneous jobs may lead to inconsistent or overwritten user data in the target system.
@@ -574,28 +574,28 @@ You have the flexibility to choose your own approach when merging data from vari
 
 
 
-### Merge Users by Email
+### Merge Users by Email as Correlation Attribute
 
 By default, Identity Provisioning determines the user uniqueness based on the `userName` attribute. This means that if a user with a particular `userName` already exists in the identity directory, the service will match any new user, provisioned from other source systems with the same `userName`, to this existing user and update it accordingly.
 
-To merge the user data by email instead of userName, you only need to set the `scim.user.unique.attribute` to `emails[0].value`. For more information about the identity directory unique attributes supported for conflict resolution, see [List of Properties](list-of-properties-d6f3577.md) → `scim.user.unique.attribute`.
+To merge the user data by email instead of userName, you only need to set the `idds.user.unique.attribute` to `emails[0].value`. For more information about the identity directory unique attributes supported for conflict resolution, see [List of Properties](list-of-properties-d6f3577.md) → `idds.user.unique.attribute`.
 
 
 
 ### Merge User Attributes
 
-Following the provisioning of your identities from the leading source system, you may want to replicate additional user attributes from the second source system which were not initially provisioned from the first one.
+Following the provisioning of your identities from the leading source system, you may want to replicate additional user attributes from the second source system which were not available in the first one.
 
-To achieve this, we suggest that you configure two pairs of source-target systems. Each target system should point to the same identity directory, although both will have different configurations. For example, if Microsoft Entra ID \(your leading source system\) and Local Identity Directory 1 \(target\) make up your first pair, then the second pair could consist of SAP SuccessFactors \(source\) and Local Identity Directory 2 \(target\). This setup allows you to control which user attribute comes from which source system. The overall process is the following:
+To achieve this, we suggest that you configure two pairs of source-target systems. Each target system should point to the same identity directory instance, although both will have different configurations. For example, if Microsoft Entra ID \(your leading source system\) and Local Identity Directory 1 \(target\) make up your first pair, then the second pair could consist of SAP SuccessFactors \(source\) and Local Identity Directory 2 \(target\). This setup allows you to control which user attribute comes from which source system. The overall process is the following:
 
 1.  Create the first pair of source-target systems: *Microsoft Entra ID* \> *Local Identity Directory 1*.
 
-2.  On the *Properties* tab of the target system set the `scim.support.patch.operation` = *true* and the `scim.user.unique.attribute` to a unique attribute of your choice.
+2.  On the *Properties* tab of the target system set the `idds.support.patch.operation` = *true* and the `idds.user.unique.attribute` to a unique attribute of your choice.
 
     > ### Note:  
-    > The unique attribute you set for the `scim.user.unique.attribute` property can either be the same or different in each of your target systems. However, it must be unique in each case. For example, if userName and email are unique attributes, you can set `userName` in the *Local Identity Directory 1* and `emails[0].value` in the *Local Identity Directory 2*.
+    > The unique attribute you set for the `idds.user.unique.attribute` property can either be the same or different in each of your target systems. However, it must be unique in each case. For example, if userName and email are unique attributes, you can set `userName` in the *Local Identity Directory 1* and `emails[0].value` in the *Local Identity Directory 2*.
 
-3.  Modify the write transformation of the target system to provision particular user attributes. For example, keep the required `id`, `userName` and `emails`, as well as the `firstName`, `familyName`, `displayName` and `address`.
+3.  Modify the write transformation of the target system to provision particular user attributes. For example, keep the required `id`, `userName` and `emails`, as well as the `givenName`, `familyName`, `displayName` and `addresses`.
 
     > ### Code Syntax:  
     > ```
@@ -691,11 +691,11 @@ To achieve this, we suggest that you configure two pairs of source-target system
     >  .....
     > ```
 
-4.  Run the provisioning job from Microsfot Entra ID and replicate the identities to the identity directory.
+4.  Run the provisioning job from Microsfot Entra ID and replicate the identities to the identity directory instance.
 
 5.  Create the second pair of source-target systems: *SAP SuccessFactors* \> *Local Identity Directory 2*.
 
-6.  Set the `scim.support.patch.operation` = *true* and the `scim.user.unique.attribute` to a unique attribute of your choice.
+6.  Set the `idds.support.patch.operation` = *true* and the `idds.user.unique.attribute` to a unique attribute of your choice.
 
 7.  Modify the write transformation of the target system to provision another set of user attributes. For example, keep the required `id`, `userName` and `emails`, as well as the `userType`, `department` and `division` and map attributes from the SAP SuccessFactors extension schema `perPersonUuid` and `personIdExternal` to custom attributes.
 
@@ -787,47 +787,12 @@ To achieve this, we suggest that you configure two pairs of source-target system
     >  .....
     > ```
 
-8.  Run a second provisioning job, this time from SAP SuccessFactors, to replicate the identities to the same identity directory.
+8.  Run a second provisioning job, this time from SAP SuccessFactors, to replicate the identities to the same identity directory instance.
 
     This second provisioning job is not intended to create new identities. Its purpose is to enrich the existing users with additional attributes.
 
 
-As a result, the identities from the two source systems are provisioned to a single target identity directory. Continuous provisioning jobs form both source systems run without overwriting attributes. Any updates are executed as patch requests.
-
-
-
-### Using Scope to Patch Entities
-
-An alternative way to merge user attributes from multiple source systems to one target identity directory is to use the `"scope":"patchEntity"` expression in the attribute mappings of the write transformations. Instead of creating two paris of source-target systems, you configure as many source systems as you need, and link them to one target identity directory. The following example shows how to patch the `userType` attribute when executing updates from a given source system:
-
-> ### Code Syntax:  
-> ```
-> {
->    "targetPath":"$.Operations[0].op",
->    "condition":"$.userType EMPTY false",
->    "constant":"add",
->    "scope":"patchEntity"
-> },
-> {
->    "targetPath":"$.Operations[0].path",
->    "condition":"$.userType EMPTY false",
->    "constant":"userType",
->    "scope":"patchEntity"
-> },
-> {
->    "sourcePath":"$.userType",
->    "targetPath":"$.Operations[0].value",
->    "condition":"$.userType EMPTY false",
->    "scope":"patchEntity"
-> },
-> ​
-> ```
-
-> ### Note:  
-> The `"scope":"patchEntity"` expression indicates which attributes should be provisioned during update. However, it works only for attributes provisioned from one of the source systems.
-
-> ### Note:  
-> The add operation is used to add a new attribute value to an existing resource. When add is performed on a single-value attribute that already has a value, like the displayName, the existing value is replaced with the new one. In this case, add is equivalent to replace. For more information about add and replace operations when modifying resources with PATCH, see the SCIM specification RFC [7644](https://datatracker.ietf.org/doc/html/rfc7644#section-3.5.2.1).
+As a result, the identities from the two source systems are provisioned to a single target identity directory. Continuous provisioning jobs from both source systems run without overwriting attributes. Any updates are executed as patch requests.
 
 
 

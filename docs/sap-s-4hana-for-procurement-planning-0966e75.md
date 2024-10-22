@@ -192,7 +192,6 @@ You can use Identity Provisioning to configure SAP S/4HANA for procurement plann
     >         "mappings": [
     >             {
     >                 "sourcePath": "$.id",
-    >                 "targetPath": "$.id",
     >                 "targetVariable": "entityIdSourceSystem"
     >             },
     >             {
@@ -217,10 +216,6 @@ You can use Identity Provisioning to configure SAP S/4HANA for procurement plann
     >                 "sourcePath": "$.emails[?(@.primary== true)].value",
     >                 "optional": true,
     >                 "correlationAttribute": true
-    >             },
-    >             {
-    >                 "type": "remove",
-    >                 "targetPath": "$.id"
     >             },
     >             {
     >                 "type": "remove",

@@ -32,13 +32,13 @@ For your system provisioning goals, you can set properties in SAP BTP cockpit: *
 
 
 
-Property names have specific prefixes, which indicate the provisioning system the property is applicable for. This helps you distinguish between properties meant for different systems.
+Property names have specific prefixes that indicate the provisioning system they are applicable to. This helps you differentiate between properties designated for different systems.
 
--   Properties starting with *<ips\>* are applicable for all provisioning systems, for example `ips.failed.request.retry.attempts`.
+-   Properties starting with *<ips\>* are applicable to all provisioning systems, for example `ips.failed.request.retry.attempts`.
 
--   Properties starting with the abbreviation of a provisioning system name, such as *<s4hana.cloud\>* or *<sf\>*, are applicable for the given system - in this case, SAP S/4HANA Cloud and SAP SuccessFactors, respectively. For example, `s4hana.cloud.support.bulk.operation` and `sf.user.filter`.
+-   Properties starting with the abbreviation of a provisioning system name, such as *<s4hana.cloud\>* or *<sf\>*, are applicable to the respective systems—in this case, SAP S/4HANA Cloud and SAP SuccessFactors, respectively. For example, `s4hana.cloud.support.bulk.operation` and `sf.user.filter`.
 
--   Properties starting with *<scim\>* are applicable for the provisioning systems that were in use before the implementation of the system-specific prefixes. These *<scim\>* properties often apply to the first version of specific connector, although there can be exceptions. For example: `scim.user.filter` is used for filtering users in Identity Authentication version and SAP Analytics Cloud version 1. With the release of version 2 for both Identity Authentication and SAP Analytics Cloud, newer, system-specific properties were introduced: `ias.user.filter` and `sac.user.filter`.
+-   Properties starting with *<scim\>* are applicable to SCIM-based provisioning systems. To view the list of these systems, refer to [System Types](system-types-e59ae54.md). The scim-prefixed properties were used before the implementation of system-specific prefixes. Following the introduction of these prefixes, both scim and system-specific prefixes are valid.
 
 
 > ### Note:  

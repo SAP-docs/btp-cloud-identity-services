@@ -11,7 +11,7 @@ Tenant administrators can configure applications to require verification of the 
 Applications can be configured to require users to have their email addresses verified before they can log on. If you want to make sure that a user has a valid email address, even if the email address has not been verified, you should enable the email verification option in the administration console for SAP Cloud Identity Services.
 
 > ### Note:  
-> You can check whether the user's email address has been verified by choosing *User Management* \> *User Details* \> *Personal Information* in the administration console. The *Email Verified* box is checked if the user's email address has been verified. For more information about the user details, see [List and Edit User Details](list-and-edit-user-details-045cb01.md).
+> You can check whether the user's email address has been verified by choosing *User Management* \> *Details* \> *Personal Information* in the administration console. The *Email Verified* box is checked if the user's email address has been verified. For more information about the user details, see [List and Edit User Details](list-and-edit-user-details-045cb01.md).
 
 
 

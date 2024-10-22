@@ -203,7 +203,6 @@ After fulfilling the prerequisites, follow the procedure below to add a source s
     >     "mappings": [
     >       {
     >         "sourcePath": "$.id",
-    >         "targetPath": "$.id",
     >         "targetVariable": "entityIdSourceSystem"
     >       },
     >       {
@@ -325,9 +324,8 @@ After fulfilling the prerequisites, follow the procedure below to add a source s
     >     "ignore": true,
     >     "mappings": [
     >       {
-    >         "sourcePath": "$.id",
-    >         "targetPath": "$.id",
-    >         "targetVariable": "entityIdSourceSystem"
+    >        "sourcePath": "$.id",
+    >        "targetVariable": "entityIdSourceSystem"
     >       },
     >       {
     >         "sourcePath": "$.displayName",

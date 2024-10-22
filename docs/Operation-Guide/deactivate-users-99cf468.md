@@ -22,15 +22,13 @@ As a tenant administrator, you can deactivate users in the administration consol
 
 4.  Select the user that you want to deactivate.
 
-    This operation opens the *User Details* view.
+    This operation opens the *Details* view.
 
-    ![](images/User_Details_in_Administration_Console_45ebcd1.png)
-
-5.  **Optional:** Choose the *User Details* tab.
+5.  **Optional:** Choose the *Details* tab.
 
     1.  Expand the *Personal Information*
 
-    2.  Press the edit icon ![](images/Edit_User_Details_e96801b.png) next to the *Personal Information* section.
+    2.  Press the *Edit* button at the top of the screen.
 
     3.  Select *Inactive* from the dropdown next to the *Status* field.
 

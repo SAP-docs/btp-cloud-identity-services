@@ -1,29 +1,32 @@
-<!-- loio19e91d648f1f4f58b0b2913f45699d08 -->
+<!-- loiocee1e14c80e44c0eab41a23f67cf940f -->
 
-# SAP Field Service Management
+# SAP Enable Now
 
-Follow this procedure to set up SAP Field Service Management as а source system.
+Follow this procedure to set up SAP Enable Now as a source system.
 
 
 
-<a name="loio19e91d648f1f4f58b0b2913f45699d08__prereq_gfl_gvx_rdb"/>
+<a name="loiocee1e14c80e44c0eab41a23f67cf940f__prereq_kqy_lfd_pcc"/>
 
 ## Prerequisites
 
 > ### Restriction:  
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.
 
-You have OAuth credentials for SAP Field Service Management. For more information, see: [Generating Client ID & Secret](https://help.sap.com/viewer/fsm_admin/Cloud/en-US/generating-client-id.html)
+-   You have created a technical user in SAP Enable Now with the necessary permissions for establishing a connection with Identity Provisioning.
+
 
 
 
 ## Context
 
-SAP Field Service Management is a cloud-based solution that is used to resolve customers issues with end-to-end field service management. For example, it helps customers overcome resource limitations, such as having enough skilled technicians in all locations.
+The SAP Enable Now solution is SAP’s digital adoption platform. It can help you improve the adoption, productivity, and efficiency of your software by providing in-application help and e-learning content to users.
 
-You can use the Identity Provisioning user interface \(UI\) to configure SAP Field Service Management as a source system where you can read users, groups, and group members.
+You can use Identity Provisioning to configure SAP Enable Now as a source system where you can read users and provision them to target systems of your choice. The source system consumes SCIM 2.0 API provided by SAP Enable Now.
 
 
+
+<a name="loiocee1e14c80e44c0eab41a23f67cf940f__steps_pl4_rlx_rdb"/>
 
 ## Procedure
 
@@ -34,7 +37,7 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP Fie
 
 2.  Sign in to the administration console of SAP Cloud Identity Services and navigate to *Identity Provisioning* \> *Source Systems*.
 
-3.  Add *SAP Field Service Management* as a source system. See: [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
+3.  Add *SAP Enable Now* as a source system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
 4.  Choose the *Properties* tab to configure the connection settings for your system.
 
@@ -57,7 +60,7 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP Fie
     </th>
     <th valign="top">
 
-    Value
+    Description & Value
     
     </th>
     </tr>
@@ -69,7 +72,7 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP Fie
     </td>
     <td valign="top">
     
-    Enter: *HTTP*
+    Enter: *HTTP* 
     
     </td>
     </tr>
@@ -81,9 +84,14 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP Fie
     </td>
     <td valign="top">
     
-    Specify the URL to the API of your SAP Field Service Management system. It follows the pattern:
+    Enter the URL to your SAP Enable Now system. It follows the pattern:
 
-    <code>https://<i class="varname">&lt;cluster&gt;</i>.coresystems.net</code>
+    -   <code>https://<i class="varname">&lt;company-name&gt;</i>.enable-now.cloud.sap/scim/v2</code>
+
+    -   <code>https://<i class="varname">&lt;company-name&gt;</i>.sap-enable-now.cn/scim/v2</code> \(relevant for China\)
+
+
+
     
     </td>
     </tr>
@@ -119,7 +127,7 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP Fie
     </td>
     <td valign="top">
     
-    Enter the OAuth Client Id, created for your SAP Field Service Management system.
+    Enter the username of the SAP Enable Now technical user.
     
     </td>
     </tr>
@@ -131,81 +139,41 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP Fie
     </td>
     <td valign="top">
     
-    \(Credential\) Enter the OAuth Client Secret, created for your SAP Field Service Management system.
+    \(Credential\) Enter the password of the SAP Enable Now technical user.
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    `OAuth2TokenServiceURL`
+    \(Optional\) `en.user.filter`
     
     </td>
     <td valign="top">
     
-    Enter the OAuth 2.0 Token Service URL.
+    When specified, only those SAP Enable Now users matching the filter expression will be read
 
-    For example: `https://<cluster>.coresuite.com/api/oauth2/v1/token`
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    \(Optional\) `fsm.user.filter`
-    
-    </td>
-    <td valign="top">
-    
-    When specified, only those SAP Field Service Management users matching the filter expression will be read.
-
-    Example: **name.familyName eq "Smith" and addresses.country eq "US"**
-
-    > ### Note:  
-    > Using this property makes sense only if you have set the *"ignore": true* statement to **false**.
-
-
+    For example: *userName eq "SmithJ"*
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    \(Optional\) `fsm.group.prefix`
+    \(Optional\)`en.group.prefix`
     
     </td>
     <td valign="top">
     
-    This property distinguishes SAP Field Service Management groups by specific prefix. It is an optional property which does not appear by default at system creation.
+    This property distinguishes SAP Enable Now groups by specific prefix. It is an optional property which does not appear by default at system creation.
 
-    Example value: `FSM_`
+    Example value: `EN_`
 
     You can use the example value or provide your own.
 
-    -   When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP Field Service Management source system and will be provisioned to the target system with the following name pattern: <code>FSM_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP Field Service Management groups in the target system will be distinguished from groups provisioned from other applications.
+    When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP Enable Now source system and will be provisioned to the target system with the following name pattern: <code>EN_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP Enable Now groups in the target system will be distinguished from groups provisioned from other applications.
 
-        If the property is not set, the SAP Field Service Management groups will be read and provisioned to the target system with their actual display names.
-
-    -   When **set in the target system**, only groups containing the `FSM_` prefix in their display name will be provisioned to SAP Field Service Management. Groups without this prefix in the display name won't be provisioned.
-
-        If the property is not set, all groups will be be provisioned to SAP Field Service Management.
-
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    \(Optional\) `fsm.group.filter`
-    
-    </td>
-    <td valign="top">
-    
-    When specified, only those SAP Field Service Management groups matching the filter expression will be read.
-
-    Example: **displayName eq "ProjectTeam1" or "Employees2020"**
+    If the property is not set, the SAP Enable Now groups will be read and provisioned to the target system with their actual display names.
     
     </td>
     </tr>
@@ -213,17 +181,11 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP Fie
     
     To learn what additional properties are relevant to this system, see [List of Properties](list-of-properties-d6f3577.md). You can use the main search, or filter properties by the *Name* or *System Type* columns.
 
-5.  \(Optional\) Configure the transformations.
+5.  Configure the transformations.
 
-    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Field Service Management* source system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
+    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Enable Now* source system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
-    You can change the default transformation mapping rules to reflect your current setup of entities in your system. For more information, see:
-
-    [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
-
-    [SAP Field Service Management - SCIM API](https://help.sap.com/viewer/fsm_scim_api/Cloud/en-US/scim-api.html)
-
-    **Mapping logic** – the behavior of the default transformation logic is to read all user attributes from the source SAP Field Service Management system, and then map them to the internal SCIM representation. It uses `entityIdSourceSystem` to store the unique ID of the identity.
+    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP Enable Now system. For more information, see: [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
     **Default transformation:**
 
@@ -233,13 +195,13 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP Fie
     >     "user": {
     >         "mappings": [
     >             {
-    >                 "sourcePath": "$.id",
-    >                 "targetVariable": "entityIdSourceSystem"
-    >             },
-    >             {
     >                 "sourcePath": "$.schemas",
     >                 "preserveArrayWithSingleElement": true,
     >                 "targetPath": "$.schemas"
+    >             },
+    >             {
+    >                 "sourcePath": "$.id",
+    >                 "targetVariable": "entityIdSourceSystem"
     >             },
     >             {
     >                 "sourcePath": "$.userName",
@@ -252,13 +214,19 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP Fie
     >                 "targetPath": "$.name.givenName"
     >             },
     >             {
+    >                 "sourcePath": "$.name.middleName",
+    >                 "optional": true,
+    >                 "targetPath": "$.name.middleName"
+    >             },
+    >             {
     >                 "sourcePath": "$.name.familyName",
     >                 "optional": true,
     >                 "targetPath": "$.name.familyName"
     >             },
     >             {
-    >                 "sourcePath": "$.active",
-    >                 "targetPath": "$.active"
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >                 "optional": true,
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
     >             },
     >             {
     >                 "sourcePath": "$.emails",
@@ -267,24 +235,24 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP Fie
     >                 "targetPath": "$.emails"
     >             },
     >             {
-    >                 "sourcePath": "$.groups",
-    >                 "preserveArrayWithSingleElement": true,
+    >                 "sourcePath": "$.active",
     >                 "optional": true,
+    >                 "targetPath": "$.active"
+    >             },
+    >             {
+    >                 "sourcePath": "$.groups",
     >                 "targetPath": "$.groups",
+    >                 "optional": true,
+    >                 "preserveArrayWithSingleElement": true,
     >                 "functions": [
     >                     {
-    >                         "condition": "'%fsm.group.prefix%' !== 'null'",
+    >                         "condition": "'%en.group.prefix%' !== 'null'",
     >                         "function": "concatString",
     >                         "applyOnElements": true,
     >                         "applyOnAttribute": "display",
-    >                         "prefix": "%fsm.group.prefix%"
+    >                         "prefix": "%en.group.prefix%"
     >                     }
     >                 ]
-    >             },
-    >             {
-    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
-    >                 "optional": true,
-    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
     >             }
     >         ]
     >     },
@@ -304,29 +272,34 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP Fie
     >                 "targetPath": "$.displayName",
     >                 "functions": [
     >                     {
-    >                         "condition": "'%fsm.group.prefix%' !== 'null'",
+    >                         "condition": "'%en.group.prefix%' !== 'null'",
     >                         "function": "concatString",
-    >                         "prefix": "%fsm.group.prefix%"
+    >                         "prefix": "%en.group.prefix%"
     >                     }
     >                 ]
     >             },
     >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "optional": true
+    >             },
+    >             {
     >                 "sourcePath": "$.members",
+    >                 "targetPath": "$.members",
     >                 "preserveArrayWithSingleElement": true,
-    >                 "optional": true,
-    >                 "targetPath": "$.members"
+    >                 "optional": true
     >             }
     >         ]
     >     }
     > }
     > ```
 
-6.  Add a target system to provision users and groups to it. Choose from: [Target Systems](target-systems-ab3f641.md)
+6.  Now, add a target system to provision users into it. Choose from: [Target Systems](target-systems-ab3f641.md)
 
 
 
 
-<a name="loio19e91d648f1f4f58b0b2913f45699d08__postreq_gpc_lrj_p1b"/>
+<a name="loiocee1e14c80e44c0eab41a23f67cf940f__postreq_vrz_scv_v1b"/>
 
 ## Next Steps
 
@@ -336,5 +309,5 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP Fie
 **Related Information**  
 
 
-[SAP Field Service Management – Collection](https://blogs.sap.com/2020/11/06/sap-central-business-configuration-collection/)
+[SAP Enable Now](https://help.sap.com/docs/SAP_ENABLE_NOW?version=Latest)
 

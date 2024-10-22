@@ -6,7 +6,7 @@
 
 This page lists the release notes of Cloud Identity Services for 2024. To see the release notes for the previous year, visit [2023 What's New for Cloud Identity Services \(Archive\)](2023-what-s-new-for-cloud-identity-services-archive-1c651db.md). 
 
-To get notifications, subscribe for the Cloud Identity Services selection in the What's New Viewer for SAP Business Technology Platform.
+To get notifications, subscribe for the Cloud Identity Services selection in the [What's New Viewer for SAP Business Technology Platform](https://help.sap.com/whats-new/cf0cb2cb149647329b5d02aa96303f56?Component=Cloud%20Identity%20Services&locale=en-US&version=Cloud).
 
 
 
@@ -82,6 +82,601 @@ Valid as Of
 Version
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-10-22
+
+</td>
+<td valign="top">
+
+2024-10-22
+
+</td>
+<td valign="top">
+
+2410b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Password Recovery
+
+</td>
+<td valign="top">
+
+You can enable or disable he option to reset the user password via an email link. See [Enable Users to Recover Password via Email](Operation-Guide/enable-users-to-recover-password-via-email-5b9f909.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-10-22
+
+</td>
+<td valign="top">
+
+2024-10-22
+
+</td>
+<td valign="top">
+
+2410b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Custom Schemas
+
+</td>
+<td valign="top">
+
+You can view, assign, unassign and edit via the administration console the attributes from custom schemas in a new tab called *Extensions*. See [Extensions](Development/extensions-fb31d4e.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-10-22
+
+</td>
+<td valign="top">
+
+2024-10-22
+
+</td>
+<td valign="top">
+
+2410b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Management
+
+</td>
+<td valign="top">
+
+The *User Details* tab in the administration console is now called *Details*. See [List and Edit User Details](Operation-Guide/list-and-edit-user-details-045cb01.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-10-22
+
+</td>
+<td valign="top">
+
+2024-10-22
+
+</td>
+<td valign="top">
+
+2410b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Support for OAuth authentication
+
+</td>
+<td valign="top">
+
+You can now call the Real-Time Provisioning API, Proxy System API, and Tenant Admin API using OAuth authentication when your tenant is running on SAP Cloud Identity Services infrastructure.
+
+See: [Proxy Systems](proxy-systems-b10d68a.md)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-10-22
+
+</td>
+<td valign="top">
+
+2024-10-22
+
+</td>
+<td valign="top">
+
+2410b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Enable Now connector
+
+</td>
+<td valign="top">
+
+Identity Provisioning supports the SAP Enable Now connector. You can configure it as source, target, and proxy system for your provisioning scenarios. See:
+
+-   [SAP Enable Now \(Source\)](sap-enable-now-cee1e14.md)
+
+-   [SAP Enable Now \(Target\)](sap-enable-now-e77702a.md)
+
+-   [SAP Enable Now \(Proxy\)](sap-enable-now-df0412e.md)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-10-22
+
+</td>
+<td valign="top">
+
+2024-10-22
+
+</td>
+<td valign="top">
+
+2410b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Ariba Applications extended schemas and attributes
+
+</td>
+<td valign="top">
+
+The default transformations of SAP Ariba Applications are extended to support the `urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User` and `urn:ietf:params:scim:schemas:extension:sap:odm:2.0:User` schemas. These schemas include specific attributes, such as: `purchasingOrganization`, `plant`, `currency`, and others.
+
+See: [SAP Ariba Applications](sap-ariba-applications-47c8903.md)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-10-22
+
+</td>
+<td valign="top">
+
+2024-10-22
+
+</td>
+<td valign="top">
+
+2410b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regional Availability
+
+</td>
+<td valign="top">
+
+Cloud Identity Services now operates with one deployment and two IPs in the data center in the Australia/Japan region which now is only for Australia.
+
+Action:
+
+We recommend you to add the following IPs to your allowed IP list:
+
+-   LB IP - 157.133.168.73, 4.200.99.225
+-   157.133.168.32/27, 130.214.240.32/27, 20.227.66.135/32, 20.227.66.154/32
+
+The following IPs are no longer in use:
+
+-   LB IP - 20.227.66.154/32
+-   NAT IP - 157.133.182.32/27, 130.214.244.32/27
+
+See [Regional Availability](regional-availability-be600ca.md).
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-10-10
+
+</td>
+<td valign="top">
+
+2024-10-10
+
+</td>
+<td valign="top">
+
+2410a
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -1739,8 +2334,7 @@ Cloud Identity Services
 
 -   Neo
 -   Kyma
--   Cloud Foundry
-
+-   
 
 
 </td>
@@ -6996,7 +7590,7 @@ Identity Provisioning supports SAP Intelligent Agriculture connector.
 
 You can configure it as source, target and proxy system for your provisioning scenarios. See:
 
--   [SAP Intelligent Agriculture \(Source\)](sap-intelligent-agriculture-9e47e03.md)
+-   [SAP Intelligent Agriculture](sap-intelligent-agriculture-9e47e03.md)
 
 -   [SAP Intelligent Agriculture \(Target\)](sap-intelligent-agriculture-f29ee52.md)
 

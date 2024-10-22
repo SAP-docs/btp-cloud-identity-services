@@ -540,7 +540,6 @@ For more information on how to update to version 2, see [Update Connector Versio
     
     > ### Code Syntax:  
     > ```
-    > 
     > {
     >   "user": {
     >     "scimEntityEndpoint": "Users",
@@ -564,7 +563,13 @@ For more information on how to update to version 2, see [Update Connector Versio
     >       {
     >         "sourcePath": "$.username",
     >         "targetPath": "$.userName",
-    >         "optional": true
+    >         "optional": true,
+    >         "correlationAttribute": true
+    >       },
+    >       {
+    >         "sourcePath": "$.personKeyNav.userAccountNav.username",
+    >         "optional": true,
+    >         "correlationAttribute": true
     >       },
     >       {
     >         "sourcePath": "$.firstName",
@@ -579,7 +584,8 @@ For more information on how to update to version 2, see [Update Connector Versio
     >       {
     >         "sourcePath": "$.email",
     >         "targetPath": "$.emails[0].value",
-    >         "optional": true
+    >         "optional": true,
+    >         "correlationAttribute": true
     >       },
     >       {
     >         "constant": "urn:ietf:params:scim:schemas:core:2.0:User",
@@ -588,7 +594,8 @@ For more information on how to update to version 2, see [Update Connector Versio
     >       {
     >         "sourcePath": "$.personKeyNav.personIdExternal",
     >         "targetPath": "$.externalId",
-    >         "optional": true
+    >         "optional": true,
+    >         "correlationAttribute": true
     >       }
     >     ]
     >   },
@@ -599,6 +606,17 @@ For more information on how to update to version 2, see [Update Connector Versio
     >         "sourcePath": "$.groupID",
     >         "targetVariable": "entityIdSourceSystem",
     >         "targetPath": "$.id"
+    >       },
+    >       {
+    >         "sourceVariable": "entityBaseLocation",
+    >         "targetPath": "$.meta.location",
+    >         "targetVariable": "entityLocationSourceSystem",
+    >         "functions": [
+    >             {
+    >                 "type": "concatString",
+    >                 "suffix": "${entityIdSourceSystem}"
+    >             }
+    >         ]
     >       },
     >       {
     >         "sourcePath": "$.groupName",
@@ -1075,7 +1093,7 @@ For more information on how to update to version 2, see [Update Connector Versio
     >                 "targetPath": "$.emails"
     >             },
     >             {
-    >                 "sourcePath": "$.emails[?(@.primary== true)].value",
+    >                 "sourcePath": "$.emails[?(@.primary == true)].value",
     >                 "optional": true,
     >                 "correlationAttribute": true
     >             },
@@ -1097,8 +1115,7 @@ For more information on how to update to version 2, see [Update Connector Versio
     >             {
     >                 "sourcePath": "$.id",
     >                 "targetPath": "$.id",
-    >                 "targetVariable": "entityIdSourceSystem",
-    >                 "correlationAttribute": true
+    >                 "targetVariable": "entityIdSourceSystem"
     >             },
     >             {
     >                 "sourceVariable": "entityBaseLocation",

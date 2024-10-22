@@ -216,6 +216,7 @@ In this example, the source system JSON data contains the **sn\[0\]** attribute.
 		{
 			"value": "group21"
 		},
+		{
 			"value": "group22"
 		}
 	],

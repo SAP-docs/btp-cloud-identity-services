@@ -440,8 +440,7 @@ You can use the Identity Provisioning UI to configure SAP Build Work Zone, stand
     >             {
     >                 "sourcePath": "$.id",
     >                 "targetPath": "$.id",
-    >                 "targetVariable": "entityIdSourceSystem",
-    >                 "correlationAttribute": true
+    >                 "targetVariable": "entityIdSourceSystem"
     >             },
     >             {
     >                 "sourceVariable": "entityBaseLocation",

@@ -10,11 +10,11 @@ Enable real-time provisioning in Identity Authentication to trigger immediate sy
 
 ## Prerequisites
 
--   You have created a technical user for accessing the real-time provisioning API and assigned it the *Access Real-Time Provisioning API* permission. This user must be an administrator of type *System*.
+-   You have created a technical user for accessing the real-time provisioning API and assigned it the *Access Real-Time Provisioning API* permission. This user must be an administrator of type *System*. You have also configured *Secret* for the technical user.
 
     For more information, see [Add System as Administrator](add-administrators-bbbdbdd.md#loiocefb742a36754b18bbe5c3503ac6d87c).
 
-    For the OAuth authentication scenario, you've made the required configurations in the SAP BTP cockpit. For more information, see [Create OAuth Client Credentials in SAP BTP Cockpit](https://help.sap.com/docs/identity-provisioning/identity-provisioning/real-time-provisioning-in-neo-environment?version=Cloud#i.-create-oauth-client-credentials-in-sap-btp-cockpit).
+    For OAuth authentication scenario for tenants running on Neo environmen, you've made the required configurations in the SAP BTP cockpit. For more information, see [Create OAuth Client Credentials in SAP BTP Cockpit](https://help.sap.com/docs/identity-provisioning/identity-provisioning/real-time-provisioning-in-neo-environment?version=Cloud#i.-create-oauth-client-credentials-in-sap-btp-cockpit).
 
 -   You have created Identity Authentication source system in Identity Provisioning and connected it to target systems of your choice.
 
@@ -167,9 +167,12 @@ To configure real-time provisioning in Identity Authentication to trigger immedi
     </td>
     <td valign="top">
     
-    Applicable only for customers with tenants running on Neo environment.
+    For tenants running on SAP Cloud Identity infrastructure, use the **user ID** and **password** of the Identity Authentication technical user. Provide an OAuth token URL following the pattern: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/oauth2/token</code> 
 
-    For more information, see [Create OAuth Client Credentials in SAP BTP Cockpit](https://help.sap.com/docs/identity-provisioning/identity-provisioning/real-time-provisioning-in-neo-environment?version=Cloud#i.-create-oauth-client-credentials-in-sap-btp-cockpit).
+    > ### Note:  
+    > OAuth authentication is only supported when calling the Real-Time Provisioning API. It cannot be configured in the administration console of SAP Cloud Identity Services.
+
+    For more information for tenants running on Neo environment, see [Create OAuth Client Credentials in SAP BTP Cockpit](https://help.sap.com/docs/identity-provisioning/identity-provisioning/real-time-provisioning-in-neo-environment?version=Cloud#i.-create-oauth-client-credentials-in-sap-btp-cockpit).
     
     </td>
     </tr>

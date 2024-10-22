@@ -244,9 +244,6 @@ You can use the Identity Provisioning UI to configure SAP Build Work Zone, stand
     -   Create, update, or delete a group
 
 
-    > ### Note:  
-    > Update operation is skipped for users in the default write transformation.
-
     **Possible values:**
 
     -   *true*

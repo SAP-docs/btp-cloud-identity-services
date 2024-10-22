@@ -158,9 +158,9 @@ All users that are members of the group can access SAP Document Center.
 
 <!-- copy3b728dee0f054637a5afc71870a20aff -->
 
-## Configure Assertion Attributes Mapping
+## Configure User Attributes Mapping
 
-You have to specify how the assertion attributes are sent to SAP BTP in the assertion, and define their mapping.
+You have to specify how the user attributes are sent to SAP BTP in the assertion, and define their mapping.
 
 <a name="task_kmc_rhg_cy"/>
 
@@ -182,15 +182,13 @@ You have to specify how the assertion attributes are sent to SAP BTP in the asse
 
 4.  Choose the *Trust* tab.
 
-5.  Under *SINGLE SIGN-ON*, choose *Assertion Attributes*.
+5.  Under *SINGLE SIGN-ON*, choose *Attributes*.
 
-6.  Add the assertion attributes.
+6.  Configure the attributes.
 
 7.  Save your configuration.
 
-    ![](images/AssertAttributeMobileDocsSCI_62dd632.png)
-
-    If the operation is successful, you receive the message ***Assertion attributes updated***.
+    If the operation is successful, you receive the message ***Attributes updated***.
 
 
 **Related Information**  

@@ -411,6 +411,9 @@ The tenant administrator can select the target systems that all users will be pr
     > ### Note:  
     > If you do not have a configured target system in your list, you can add one. For more details, see [Configure SAP Jam for Real-Time Provisioning](configure-sap-jam-for-real-time-provisioning-a923427.md).
 
+    > ### Note:  
+    > The configuration of OAuth authentication mechanism via the administration console of SAP Cloud Identity Services is not supported.
+
 4.  Press *Provision*.
 
     If the operation is successful, the system displays the message ***<number of users\> provisioned***.

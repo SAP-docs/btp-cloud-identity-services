@@ -18,9 +18,7 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 
 Information about the tenant is visible in the header of the administration console. The information includes:
 
-![]()
-
--   The region, representing the location of data center in which the tenant is. For example, ***Identity Authentication Service \[Europe\]***. This information is provided by the system, and cannot be edited by the tenant administrator. For more information about the regions, see [Regional Availability](../regional-availability-be600ca.md).
+-   The region, representing the location of data center in which the tenant is. For example, ***Cloud Identity Services \[Europe\]***. This information is provided by the system, and cannot be edited by the tenant administrator. For more information about the regions, see [Regional Availability](../regional-availability-be600ca.md).
 -   The tenant display name. This information can be edited. If you have not specified a specific tenant name, you will see the tenant ID instead. You can change the name to make it more understandable for you.
 -   > ### Remember:  
     > It takes 2 minutes for the configuration changes to take place.
@@ -78,9 +76,7 @@ To edit the tenant's display name, proceed as follows:
 
 [Enable Back-Up Channels to Send Passcode for Deactivation of TOTP Two-Factor Authentication Devices](enable-back-up-channels-to-send-passcode-for-deactivation-of-totp-two-factor-authenticati-782935e.md "Tenant administrator can configure back-up channels to send TOTP deactivation passcodes to the user.")
 
-[Enable Users to Recover Password with Security Questions](enable-users-to-recover-password-with-security-questions-d9ae898.md "Users can choose to answer security questions to reset their password.")
-
-[Enable Users to Recover Password with PIN Code](enable-users-to-recover-password-with-pin-code-046a235.md "Users can choose to provide PIN code to reset their password.")
+[Password Recovery Options](password-recovery-options-777cee1.md "Enable users to reset their password via security questions, PIN code, or email link.")
 
 [Configure Initial Password and Email Link Validity](configure-initial-password-and-email-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
 

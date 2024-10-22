@@ -18,16 +18,23 @@ You have created a technical user for Identity Provisioning in the SAP HANA data
 
 SAP HANA Cloud allows you to consume the SAP HANA database from cloud applications running on SAP Business Technology Platform, as well as from applications running elsewhere using the standard SAP HANA clients. Every instance of SAP HANA Cloud has its own single SAP HANA database.
 
-You can use the Identity Provisioning user interface \(UI\) to configure SAP HANA Cloud, SAP HANA Database as a target system where you can provision users and group members.
+You can use the Identity Provisioning user interface \(UI\) to configure SAP HANA Cloud, SAP HANA Database as a target system where you can provision users and group members, that is, user assignments for a role.
+
+> ### Note:  
+> In SAP HANA Cloud, SAP HANA Database, groups correspond to roles.
 
 > ### Caution:  
-> You cannot create or delete groups in SAP HANA Cloud, SAP HANA Database. In this case, you can expect the following behavior:
-> 
-> -   If a new group is created in the source system \(for example, Identity Authentication\) and you run the provisioning job to SAP HANA Cloud, SAP HANA Database, the job will fail and no group will be created in the target system.
-> 
-> -   If a group exists both in the source system \(for example, Identity Authentication\) and the target system - SAP HANA Cloud, SAP HANA Database, running a provisioning job will only add new members or update existing ones. In this case, groups in the source and target systems must have the same display name \(case sensitive\). Otherwise, the job will fail, and no group members will be updated.
-> 
-> -   If a group exists in the target SAP HANA Cloud, SAP HANA Database system and you try to delete it, Identity Provisioning will only remove its group members. In this case, the relevant group members must exist in the target system.
+> Identity Provisioning cannot create or delete roles in SAP HANA Cloud, SAP HANA Database. It can only create, update, and delete user assignments for a role. Therefore, roles must be created in the SAP HANA Cloud, SAP HANA Database system before running a provisioning job. Additionally, groups in the source system and roles in the target system must have identical names.
+
+Review the expected behavior in the following scenarios:
+
+-   If a new group is created in the source system \(for example, Identity Authentication\) and you run the provisioning job to SAP HANA Cloud, SAP HANA Database, the job will fail and no role will be created in the target system.
+
+-   If a group in the source system \(Identity Authentication\) and a role in the target system \(SAP HANA Cloud, SAP HANA Database\) exist, when running a provisioning job, the user group assignments from the source will be mapped to the user role assignments in the target, provided that the group and role names are identical.
+
+    If the names do not match, the job will fail, and no role assignments will be updated. You have the following options to handle these discrepancies: use the `valueMappings` expression to change the group names, as described in [Transformation Expressions](transformation-expressions-bb8537b.md), or dynamically assign users to groups in SAP HANA Cloud, SAP HANA Database, as described in [Enabling Group Assignment](Operation-Guide/enabling-group-assignment-0d80033.md).
+
+-   If a role exists in the target SAP HANA Cloud, SAP HANA Database system and you try to delete it, Identity Provisioning will only remove the existing user assignments for that role.
 
 
 
@@ -102,6 +109,8 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP HAN
     <td valign="top">
     
     Specifies the method by which users authenticate when connecting to the database.
+
+    The value is set to *hdb* at system creation.
     
     </td>
     </tr>
@@ -149,19 +158,19 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP HAN
     </td>
     <td valign="top">
     
-    \(Optional\) This property distinguishes SAP HANA Cloud, SAP HANA Database groups by specific prefix. It is an optional property which does not appear by default at system creation.
+    \(Optional\) This property distinguishes SAP HANA Cloud, SAP HANA Database roles by specific prefix. It is an optional property which does not appear by default at system creation.
 
     Example value: `HANA_Cloud_DB_`
 
     You can use the example value or provide your own.
 
-    -   When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP HANA Cloud, SAP HANA Database source system and will be provisioned to the target system with the following name pattern: <code>HANA_Cloud_DB_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP HANA Cloud, SAP HANA Database groups in the target system will be distinguished from groups provisioned from other applications.
+    -   When **set in the source system**, the prefix will be prepended to the name of the roles that are read from the SAP HANA Cloud, SAP HANA Database source system and will be provisioned to the target system with the following name pattern: <code>HANA_Cloud_DB_<i class="varname">&lt;role_name&gt;</i></code>. This way SAP HANA Cloud, SAP HANA Database roles in the target system will be distinguished from roles provisioned from other applications.
 
-        If the property is not set, the SAP HANA Cloud, SAP HANA Database groups will be read and provisioned to the target system with their actual display names.
+        If the property is not set, the SAP HANA Cloud, SAP HANA Database roles will be read and provisioned to the target system with their actual names.
 
-    -   When **set in the target system**, only groups containing the `HANA_Cloud_DB_` prefix in their display name will be provisioned to SAP HANA Cloud, SAP HANA Database. Groups without this prefix in the display name won't be provisioned.
+    -   When **set in the target system**, only roles containing the `HANA_Cloud_DB_` prefix in their role name will be provisioned to SAP HANA Cloud, SAP HANA Database. Roles without this prefix in the role name won't be provisioned.
 
-        If the property is not set, all groups will be be provisioned to SAP HANA Cloud, SAP HANA Database.
+        If the property is not set, all roles will be be provisioned to SAP HANA Cloud, SAP HANA Database.
 
 
 
@@ -185,12 +194,12 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP HAN
     <tr>
     <td valign="top">
     
-    `ips.delete.threshold.groups`
+    `ips.delete.threshold.roles`
     
     </td>
     <td valign="top">
     
-    \(Optional\) Use this property to control the number of group assignments to be deleted in a target system by defining a threshold. This will prevent you from accidentally deleting a huge number of group assignments, for example by adding a filter or condition.
+    \(Optional\) Use this property to control the number of role assignments to be deleted in a target system by defining a threshold. This will prevent you from accidentally deleting a huge number of role assignments, for example by adding a filter or condition.
 
     For more information, see: [List of Properties](list-of-properties-d6f3577.md)
     
@@ -376,7 +385,7 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP HAN
     > }
     > ```
 
-6.  Add a source system from which to read users and groups. Choose from: [Source Systems](source-systems-58033be.md)
+6.  Add a source system from which to read users and user assignments for a role. Choose from: [Source Systems](source-systems-58033be.md)
 
 
 

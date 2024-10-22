@@ -1,35 +1,38 @@
-<!-- loio993a791f04274537b86dfa694e52bdf8 -->
+<!-- loiodf0412ef67b54b58a6f68161b4670624 -->
 
-# SAP Commerce Cloud
+# SAP Enable Now
 
-Follow this procedure to set up SAP Commerce Cloud as a proxy system.
+Follow this procedure to set up SAP Enable Now as a proxy system.
 
 
 
-<a name="loio993a791f04274537b86dfa694e52bdf8__prereq_qcc_vk2_2cb"/>
+<a name="loiodf0412ef67b54b58a6f68161b4670624__prereq_kqy_lfd_pcc"/>
 
 ## Prerequisites
 
 > ### Restriction:  
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.
 
--   In SAP Commerce Cloud, you have added an OAuth client with authorization grant **Client Credentials**. To learn how, see: [Configuring OAuth Client](https://help.sap.com/docs/SAP_COMMERCE_INTEGRATIONS/b6a1e8b75222421a8faf0269e8fbd0dc/e16a6e289ec84a68b8ea2e21fcb79ed5.html?locale=en-US&version=2108).
+-   You have created a technical user in SAP Enable Now with the necessary permissions for establishing a connection with Identity Provisioning.
 
 
+> ### Note:  
+> Administrators of bundle tenants on Neo environment should enable the *Manage OAuth Clients* permission, as described in *Neo Environment* section in [Manage Authorizations](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/544de9b504214372b4479dc1f6b08cca.html "Manage the authorizations of Identity Provisioning administrators, when your bundle or standalone tenant is running on SAP BTP, Neo environment.") :arrow_upper_right:.
 
 
-<a name="loio993a791f04274537b86dfa694e52bdf8__context_wrv_lyn_vdb"/>
 
 ## Context
 
-SAP Commerce Cloud is a highly flexible and modular platform for delivering modern customer experiences. It provides a standardized, automated, end-to-end solution that allows your projects to release code from repository to cloud.
+The SAP Enable Now solution is SAP’s digital adoption platform. It can help you improve the adoption, productivity, and efficiency of your software by providing in-application help and e-learning content to users.
 
-You can use Identity Provisioning to configure SAP Commerce Cloud as a proxy system in hybrid scenarios. For example, when SAP Commerce Cloud is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision users and groups to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users and group back to the SAP Commerce Cloud.
+You can use Identity Provisioning to configure SAP Enable Now as a proxy system in hybrid scenarios. For example, when SAP Enable Now is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision users to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users back to the SAP Enable Now.
 
 > ### Note:  
 > The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users and groups. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
 
 
+
+<a name="loiodf0412ef67b54b58a6f68161b4670624__steps_wy2_fq3_pcc"/>
 
 ## Procedure
 
@@ -86,7 +89,7 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a proxy sys
     -   [Access Identity Provisioning UI of Bundle Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/7ab5884ffbc44461a57622d2f633e57c.html "Access the Identity Provisioning UI when the service is bundled as part of an SAP cloud solution's license.") :arrow_upper_right:
     -   [Access Identity Provisioning UI of Standalone Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/61fd82ed48ab42b2bc74626926c1722c.html "Access the Identity Provisioning user interface as a standalone product.") :arrow_upper_right:
 
-5.  Add *SAP Commerce Cloud* as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
+5.  Add *SAP Enable Now* as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
 6.  Choose the *Properties* tab to configure the connection settings for your system.
 
@@ -133,11 +136,14 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a proxy sys
     </td>
     <td valign="top">
     
-    Enter the URL to your SAP Commerce Cloud system.
+    Enter the URL to your SAP Enable Now system. It follows the pattern:
 
-    The URL follows the pattern: `https://backoffice.<tenant>. model-t.cc.commerce.ondemand.com`
+    -   <code>https://<i class="varname">&lt;company-name&gt;</i>.enable-now.cloud.sap/scim/v2</code>
 
-    You can find the correct URL in the *Environments* section of SAP Cloud Portal.
+    -   <code>https://<i class="varname">&lt;company-name&gt;</i>.sap-enable-now.cn/scim/v2</code> \(relevant for China\)
+
+
+
     
     </td>
     </tr>
@@ -173,7 +179,7 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a proxy sys
     </td>
     <td valign="top">
     
-    Enter the client ID to retrieve the OAuth access token for SAP Commerce Cloud.
+    Enter the username of the SAP Enable Now technical user.
     
     </td>
     </tr>
@@ -185,112 +191,54 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a proxy sys
     </td>
     <td valign="top">
     
-    \(Credential\) Enter the client secret to retrieve the OAuth access token for SAP Commerce Cloud.
+    \(Credential\) Enter the password of the SAP Enable Now technical user.
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    `OAuth2TokenServiceURL`
+    `en.user.unique.attribute`
     
     </td>
     <td valign="top">
     
-    Enter the URL of the access token provider service for your SAP Commerce Cloud instance.
+    If Identity Provisioning tries to provision a user that already exists in the target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved.
 
-    This token URL is listed in the *OAuth Clients* section of the *App Integration* page.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    \(Optional\) `cc.user.filter`
-    
-    </td>
-    <td valign="top">
-    
-    When specified, only those users matching the filter expression will be read. You can filter users by `userName`, `emails.value`, and `externalId`, according to the API syntax of SAP Commerce Cloud.
-
-    For example:
-
-    -   *userName eq "johnbrown" and externalId eq "P000252"*
-    -   *userName eq "johnbrown" and emails.value eq "johnbrown@email.com"*
-    -   *userName eq "johnbrown" and emails.value eq "johnbrown@email.com" and externalId eq "P000252"*
-
-        > ### Note:  
-        > These combinations are valid for both 'or' and 'and' operators.
-
-
-
+    Default value: *userName*
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    \(Optional\) `cc.group.filter`
+    \(Optional\) `en.user.filter`
     
     </td>
     <td valign="top">
     
-    When specified, only those groups matching the filter expression will be read.
+    When specified, only those SAP Enable Now users matching the filter expression will be read
 
-    For example:
-
-    *displayName eq "ProjectTeam1" or "Students2018"*
+    For example: *userName eq "SmithJ"*
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    \(Optional\) `cc.user.unique.attribute`
-    
-    </td>
-    <td valign="top">
-    
-    This property defines by which unique attribute\(s\) an existing user in the target system will be searched and resolved in case Identity Provisioning tries to provision a conflicting user.
-
-    SAP Commerce Cloud supports the following unique attributes which are automatically filled in during system creation: `emails[0].value, userName, externalId`.
-
-    If the service finds an existing user by at least one of the unique attributes, it updates this user with the data of the conflicting one. If such a user is not found, the update of the conflicting user fails. If more than one users with these unique attributes are found, the update fails.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    \(Optional\) `cc.group.unique.attribute`
-    
-    </td>
-    <td valign="top">
-    
-    If you try to provision a group that already exists in a target system, the group creation will fail. In this case, the existing group only needs to be updated.
-
-    This property defines by which unique attribute\(s\) the existing group will be searched and resolved. The default value is `displayName`.
-
-    If the service finds an existing group by this unique attribute, the group that you try to provision will overwrite the existing one. If such a group is not found, the group that you try to provision will not be created in the target system.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    \(Optional\) `cc.support.patch.operation`
+    `en.support.patch.operation`
     
     </td>
     <td valign="top">
     
     This property controls how modified entities \(users and groups\) in the source system are updated in the target system.
 
-    -   If set to *true*, `PATCH` operations are used to update users and groups in the target system.
+    -   If set to *true*, `PATCH` operations are used to update users and groups in the target system. This means, for example, that if a user attribute is modified or a group member is removed from a group, only these changes will be provisioned and applied in the target system.
 
-    -   If set to *false*, `PUT` operations are used to update users and groups in the target system.
+    -   If set to *false*, `PUT` operations are used to update users and groups in the target system. This means, for example, that if a user attribute is modified or a group member is removed from a group, all user attributes and all group attributes are replaced in the target system, instead of updating only the modified ones.
 
 
-    Default value for proxy systems: *true*
+    Default value: *false* 
     
     </td>
     </tr>
@@ -300,13 +248,11 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a proxy sys
 
 7.  Configure the transformations.
 
-    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Commerce Cloud* proxy system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
+    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Enable Now* proxy system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
-    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP Commerce Cloud. For more information, see:
+    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP Enable Now. For more information, see:
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
-
-    [Commerce Cloud SCIM Web Services API Documentation](https://help.sap.com/docs/SAP_COMMERCE_CLOUD_PUBLIC_CLOUD/452dcbb0e00f47e88a69cdaeb87a925d/baaa605b6a6f4907a2fc1cc917d8c6c7.html)
 
     Default read and write transformations:
 
@@ -316,6 +262,8 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a proxy sys
     > The proxy *Write Transformation* is used when the external application manages the entities in the proxy system – creates new entities, updates existing ones, or deletes existing ones. In this case, the proxy system acts as a *target* one.
     > 
     > However, after a *Create* or *Update* operation is performed on the proxy system, the *Read Transformation* is applied to the result, so that the created or updated entity is sent back to the external application. This behavior demonstrates that the proxy *Read Transformation* is used for *write* cases, as well.
+
+    **Default read and write transformations:**
 
 
     <table>
@@ -338,11 +286,22 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a proxy sys
     > ```
     > {
     >     "user": {
+    >         "scimEntityEndpoint": "Users",
     >         "mappings": [
+    >             {
+    >                 "sourcePath": "$.schemas",
+    >                 "preserveArrayWithSingleElement": true,
+    >                 "targetPath": "$.schemas"
+    >             },
     >             {
     >                 "sourcePath": "$.id",
     >                 "targetPath": "$.id",
     >                 "targetVariable": "entityIdSourceSystem"
+    >             },
+    >             {
+    >                 "sourcePath": "$.meta",
+    >                 "optional": true,
+    >                 "targetPath": "$.meta"
     >             },
     >             {
     >                 "sourceVariable": "entityBaseLocation",
@@ -356,44 +315,9 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a proxy sys
     >                 ]
     >             },
     >             {
-    >                 "sourcePath": "$.schemas",
-    >                 "preserveArrayWithSingleElement": true,
-    >                 "targetPath": "$.schemas"
-    >             },
-    >             {
     >                 "sourcePath": "$.userName",
     >                 "targetPath": "$.userName",
     >                 "correlationAttribute": true
-    >             },
-    >             {
-    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
-    >                 "optional": true,
-    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
-    >             },
-    >             {
-    >                 "sourcePath": "$.externalId",
-    >                 "optional": true,
-    >                 "targetPath": "$.externalId"
-    >             },
-    >             {
-    >                 "sourcePath": "$.displayName",
-    >                 "optional": true,
-    >                 "targetPath": "$.displayName"
-    >              },
-    >              {
-    >                 "sourcePath": "$.nickName",
-    >                 "optional": true,
-    >                 "targetPath": "$.nickName"
-    >             },
-    >             {
-    >                 "sourcePath": "$.name.familyName",
-    >                 "optional": true,
-    >                 "targetPath": "$.name.familyName"
-    >             },
-    >             {
-    >                 "sourcePath": "$.name.middleName",
-    >                 "optional": true,
-    >                 "targetPath": "$.name.middleName"
     >             },
     >             {
     >                 "sourcePath": "$.name.givenName",
@@ -401,25 +325,19 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a proxy sys
     >                 "targetPath": "$.name.givenName"
     >             },
     >             {
-    >                 "sourcePath": "$.name.honorificSuffix",
+    >                 "sourcePath": "$.name.middleName",
     >                 "optional": true,
-    >                 "targetPath": "$.name.honorificSuffix"
+    >                 "targetPath": "$.name.middleName"
     >             },
     >             {
-    >                 "sourcePath": "$.addresses",
-    >                 "preserveArrayWithSingleElement": true,
+    >                 "sourcePath": "$.name.familyName",
     >                 "optional": true,
-    >                 "targetPath": "$.addresses"
+    >                 "targetPath": "$.name.familyName"
     >             },
     >             {
-    >                 "sourcePath": "$.userType",
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
     >                 "optional": true,
-    >                 "targetPath": "$.userType"
-    >             },
-    >             {
-    >                 "sourcePath": "$.active",
-    >                 "optional": true,
-    >                 "targetPath": "$.active"
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
     >             },
     >             {
     >                 "sourcePath": "$.emails",
@@ -428,20 +346,30 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a proxy sys
     >                 "targetPath": "$.emails"
     >             },
     >             {
-    >                 "sourcePath": "$.groups",
-    >                 "preserveArrayWithSingleElement": true,
+    >                 "sourcePath": "$.active",
     >                 "optional": true,
-    >                 "targetPath": "$.groups"
+    >                 "targetPath": "$.active"
+    >             },
+    >             {
+    >                 "sourcePath": "$.groups",
+    >                 "targetPath": "$.groups",
+    >                 "optional": true,
+    >                 "preserveArrayWithSingleElement": true
     >             }
-    >         ],
-    >         "scimEntityEndpoint": "Users"
+    >         ]
     >     },
     >     "group": {
+    >         "scimEntityEndpoint": "Groups",
     >         "mappings": [
     >             {
     >                 "sourcePath": "$.id",
     >                 "targetPath": "$.id",
     >                 "targetVariable": "entityIdSourceSystem"
+    >             },
+    >             {
+    >                 "sourcePath": "$.meta",
+    >                 "optional": true,
+    >                 "targetPath": "$.meta"
     >             },
     >             {
     >                 "sourceVariable": "entityBaseLocation",
@@ -464,13 +392,17 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a proxy sys
     >                 "targetPath": "$.displayName"
     >             },
     >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "optional": true
+    >             },
+    >             {
     >                 "sourcePath": "$.members",
+    >                 "targetPath": "$.members",
     >                 "preserveArrayWithSingleElement": true,
-    >                 "optional": true,
-    >                 "targetPath": "$.members"
+    >                 "optional": true
     >             }
-    >         ],
-    >         "scimEntityEndpoint": "Groups"
+    >         ]
     >     }
     > }
     > ```
@@ -491,43 +423,32 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a proxy sys
     >                 "targetPath": "$.id"
     >             },
     >             {
-    >                 "sourcePath": "$.userName",
-    >                 "targetPath": "$.userName"
-    >             },
-    >             {
-    >                 "sourcePath": "$.schemas",
-    >                 "preserveArrayWithSingleElement": true,
+    >                 "constant": [
+    >                     "urn:ietf:params:scim:schemas:core:2.0:User",
+    >                     "urn:ietf:params:scim:schemas:extension:sap:2.0:User"
+    >                 ],
     >                 "targetPath": "$.schemas"
     >             },
     >             {
-    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
-    >                 "optional": true,
-    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
+    >                 "sourcePath": "$.schemas",
+    >                 "targetPath": "$.schemas",
+    >                 "preserveArrayWithSingleElement": true,
+    >                 "scope": "patchEntity"
     >             },
     >             {
-    >                 "sourcePath": "$.externalId",
-    >                 "optional": true,
-    >                 "targetPath": "$.externalId"
+    >                 "sourcePath": "$.Operations",
+    >                 "targetPath": "$.Operations",
+    >                 "preserveArrayWithSingleElement": true,
+    >                 "scope": "patchEntity"
     >             },
     >             {
-    >                 "sourcePath": "$.displayName",
-    >                 "optional": true,
-    >                 "targetPath": "$.displayName"
-    >             },
-    >                       {
-    >                 "sourcePath": "$.nickName",
-    >                 "optional": true,
-    >                 "targetPath": "$.nickName"
+    >                 "targetPath": "$.id",
+    >                 "type": "remove",
+    >                 "scope": "patchEntity"
     >             },
     >             {
-    >                 "sourcePath": "$.name.familyName",
-    >                 "optional": true,
-    >                 "targetPath": "$.name.familyName"
-    >             },
-    >             {
-    >                 "sourcePath": "$.name.middleName",
-    >                 "optional": true,
-    >                 "targetPath": "$.name.middleName"
+    >                 "sourcePath": "$.userName",
+    >                 "targetPath": "$.userName"
     >             },
     >             {
     >                 "sourcePath": "$.name.givenName",
@@ -535,32 +456,14 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a proxy sys
     >                 "targetPath": "$.name.givenName"
     >             },
     >             {
-    >                 "sourcePath": "$.name.honorificSuffix",
+    >                 "sourcePath": "$.name.middleName",
     >                 "optional": true,
-    >                 "targetPath": "$.name.honorificSuffix"
+    >                 "targetPath": "$.name.middleName"
     >             },
     >             {
-    >                 "condition": "($.addresses[*].region EMPTY false) && ($.addresses[*].country EMPTY false)",
-    >                 "sourcePath": "$.addresses",
-    >                 "preserveArrayWithSingleElement": true,
+    >                 "sourcePath": "$.name.familyName",
     >                 "optional": true,
-    >                 "targetPath": "$.addresses",
-    >                 "functions": [
-    >                     {
-    >                         "type": "convertCountryRegion",
-    >                         "outputFormat": "alpha2",
-    >                         "inputAttributes": [
-    >                             "region",
-    >                             "country"
-    >                         ],
-    >                         "outputAttribute": "region"
-    >                     }
-    >                 ]
-    >             },
-    >             {
-    >                 "sourcePath": "$.userType",
-    >                 "optional": true,
-    >                 "targetPath": "$.userType"
+    >                 "targetPath": "$.name.familyName"
     >             },
     >             {
     >                 "sourcePath": "$.active",
@@ -574,21 +477,9 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a proxy sys
     >                 "targetPath": "$.emails"
     >             },
     >             {
-    >                 "sourcePath": "$.groups[*].value",
-    >                 "preserveArrayWithSingleElement": true,
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
     >                 "optional": true,
-    >                 "targetPath": "$.groups[?(@.value)]"
-    >             },
-    >             {
-    >             "constant":"urn:ietf:params:scim:api:messages:2.0:PatchOp",
-    >             "targetPath":"$.schemas[0]",
-    >             "scope":"patchEntity"
-    >             },
-    >             {
-    >                 "sourcePath": "$.Operations",
-    >                 "preserveArrayWithSingleElement": true,
-    >                 "targetPath": "$.Operations",
-    >                 "scope": "patchEntity"
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
     >             }
     >         ],
     >         "scimEntityEndpoint": "Users"
@@ -600,25 +491,37 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a proxy sys
     >                 "targetPath": "$.id"
     >             },
     >             {
-    >                 "sourcePath": "$.displayName",
-    >                 "optional": true,
-    >                 "targetPath": "$.displayName"
-    >             },
-    >             {
-    >                 "constant": "urn:ietf:params:scim:schemas:core:2.0:User",
-    >                 "targetPath": "$.schemas[0]"
-    >             },
-    >             {
-    >                 "sourcePath": "$.Operations",
-    >                 "preserveArrayWithSingleElement": true,
-    >                 "targetPath": "$.Operations",
-    >                 "scope": "patchEntity"
+    >                 "constant": [
+    >                     "urn:ietf:params:scim:schemas:core:2.0:Group",
+    >                     "urn:ietf:params:scim:schemas:extension:sap:2.0:Group"
+    >                 ],
+    >                 "targetPath": "$.schemas"
     >             },
     >             {
     >                 "sourcePath": "$.schemas",
-    >                 "preserveArrayWithSingleElement": true,
     >                 "targetPath": "$.schemas",
+    >                 "preserveArrayWithSingleElement": true,
     >                 "scope": "patchEntity"
+    >             },
+    >             {
+    >                 "sourcePath": "$.Operations",
+    >                 "targetPath": "$.Operations",
+    >                 "preserveArrayWithSingleElement": true,
+    >                 "scope": "patchEntity"
+    >             },
+    >             {
+    >                 "targetPath": "$.id",
+    >                 "type": "remove",
+    >                 "scope": "patchEntity"
+    >             },
+    >             {
+    >                 "sourcePath": "$.displayName",
+    >                 "targetPath": "$.displayName"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "optional": true
     >             },
     >             {
     >                 "sourcePath": "$.members[*].value",
@@ -630,7 +533,6 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a proxy sys
     >         "scimEntityEndpoint": "Groups"
     >     }
     > }
-    >            
     > ```
 
 
@@ -639,6 +541,9 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a proxy sys
     </tr>
     </table>
     
+    > ### Note:  
+    > Updating a user in SAP Enable Now depends on whether user attributes in SAP Enable Now are mapped to SAML attributes in your identity provider. If this is the case, the values of those attributes are populated by the identity provider and cannot be changed by the SAP Enable Now SCIM API or the UI. For more information, see [Map SAML Attributes to Users](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/a3498ed7979d4e16ba303b3e047aa6a3.html?locale=en-US) and [Create a User](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/1ca8c4a9467f43df9ae6d4ed3734f05a.html?locale=en-US#create-a-user).
+
 8.  Connect the external consumer to Identity Provisioning with the technical user you have created in step 2.
 
     If the external consumer system is **SAP Identity Management**, you can export the newly created proxy system as a SCIM repository from Identity Provisioning and import it in SAP Identity Management. This will create a SCIM repository in SAP Identity Management where most of the repository constants will be automatically filled in. You need to provide the technical user credentials that you have set up in step 2 and the SCIM assignment method as described below:
@@ -661,7 +566,7 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a proxy sys
 
 
 
-<a name="loio993a791f04274537b86dfa694e52bdf8__postreq_cf4_lgj_kfb"/>
+<a name="loiodf0412ef67b54b58a6f68161b4670624__postreq_cf4_lgj_kfb"/>
 
 ## Next Steps
 
@@ -681,5 +586,5 @@ To see an example with SAP Identity Management, see [Hybrid Scenario: SAP Identi
 **Related Information**  
 
 
-[SAP Cloud Identity Services Integration Architecture → cloudscimwebservices extension](https://help.sap.com/docs/SAP_COMMERCE_CLOUD_PUBLIC_CLOUD/403d43bf9c564f5a985913d1fbfbf8d7/e328e37a72924a50a12329a93949d286.html)
+[SAP Enable Now](https://help.sap.com/docs/SAP_ENABLE_NOW?version=Latest)
 

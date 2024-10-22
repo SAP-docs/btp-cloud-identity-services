@@ -255,7 +255,6 @@ Create a general SCIM 2.0 based proxy connector to execute hybrid scenarios. Tha
     
     > ### Code Syntax:  
     > ```
-    > 
     > {
     >     "user": {
     >         "scimEntityEndpoint": "Users",
@@ -266,6 +265,7 @@ Create a general SCIM 2.0 based proxy connector to execute hybrid scenarios. Tha
     >             },
     >             {
     >                 "sourcePath": "$.id",
+    >                 "targetPath": "$.id",
     >                 "targetVariable": "entityIdSourceSystem"
     >             },
     >             {
@@ -305,6 +305,7 @@ Create a general SCIM 2.0 based proxy connector to execute hybrid scenarios. Tha
     >             },
     >             {
     >                 "sourcePath": "$.id",
+    >                 "targetPath": "$.id",
     >                 "targetVariable": "entityIdSourceSystem"
     >             },
     >             {

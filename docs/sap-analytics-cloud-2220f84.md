@@ -213,7 +213,7 @@ For more information on how to update to version 2, see [Update Connector Versio
     <tr>
     <td valign="top">
     
-    `scim.api.csrf.protection`
+    `sac.api.csrf.protection`
     
     </td>
     <td valign="top">

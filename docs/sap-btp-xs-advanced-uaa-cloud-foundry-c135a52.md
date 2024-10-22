@@ -261,7 +261,6 @@ These source systems consume SCIM 1.1 API provided by SAP BTP XS Advanced UAA.
     >     "mappings": [
     >       {
     >         "sourcePath": "$.id",
-    >         "targetPath": "$.id",
     >         "targetVariable": "entityIdSourceSystem"
     >       },
     >       {
@@ -315,11 +314,6 @@ These source systems consume SCIM 1.1 API provided by SAP BTP XS Advanced UAA.
     >         "optional": true
     >       },
     >       {
-    >         "sourcePath": "$.meta",
-    >         "targetPath": "$.meta",
-    >         "optional": true
-    >       },
-    >       {
     >         "sourcePath": "$.externalId",
     >         "targetPath": "$.externalId",
     >         "optional": true
@@ -351,7 +345,6 @@ These source systems consume SCIM 1.1 API provided by SAP BTP XS Advanced UAA.
     >     "mappings": [
     >       {
     >         "sourcePath": "$.id",
-    >         "targetPath": "$.id",
     >         "targetVariable": "entityIdSourceSystem"
     >       },
     >       {

@@ -259,7 +259,6 @@ Follow the steps below to create Cloud Foundry UAA as a source system to read us
     >     "mappings": [
     >       {
     >         "sourcePath": "$.id",
-    >         "targetPath": "$.id",
     >         "targetVariable": "entityIdSourceSystem"
     >       },
     >       {
@@ -310,11 +309,6 @@ Follow the steps below to create Cloud Foundry UAA as a source system to read us
     >         "optional": true
     >       },
     >       {
-    >         "sourcePath": "$.meta",
-    >         "targetPath": "$.meta",
-    >         "optional": true
-    >       },
-    >       {
     >         "sourcePath": "$.externalId",
     >         "targetPath": "$.externalId",
     >         "optional": true
@@ -346,7 +340,6 @@ Follow the steps below to create Cloud Foundry UAA as a source system to read us
     >     "mappings": [
     >       {
     >         "sourcePath": "$.id",
-    >         "targetPath": "$.id",
     >         "targetVariable": "entityIdSourceSystem"
     >       },
     >       {

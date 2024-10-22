@@ -269,7 +269,7 @@ This scenario is relevant for existing SAP Sales Cloud and SAP Service Cloud cus
     >         "preserveArrayWithSingleElement": true
     >       },
     >       {
-    >         "sourcePath": "$.emails[?(@.primary== true)].value",
+    >         "sourcePath": "$.emails[?(@.primary == true)].value",
     >         "correlationAttribute": true
     >       },
     >       {

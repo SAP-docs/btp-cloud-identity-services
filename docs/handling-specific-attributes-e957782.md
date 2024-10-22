@@ -12,7 +12,7 @@ Manage specific user and group attributes during the provisioning of entities to
 
 In SAP HANA Cloud, SAP HANA Database, users have an immutable HANA database username and are not expected to have an associated email. This affects provisioning scenarios, particularly with Identity Authentication, and requires changes in the transformations.
 
-When users are provisioned from Identity Authentication to SAP HANA Cloud, SAP HANA Database, the User ID \(P user\) is mapped to the HANA database username and populated accordingly. Given that the User ID in Identity Authentication is unique only within a specific tenant, consider the following cases when your organization uses multiple tenants:
+When users are provisioned from Identity Authentication to SAP HANA Cloud, SAP HANA Database, the **userID** attribute \(P-user in Identity Authentication\) is mapped to the **userId** attribute \(HANA database username in SAP HANA Cloud, SAP HANA Database\) and provisioned accordingly. The HANA database username should not to be confused with UserName. Given that the User ID in Identity Authentication is unique only within a specific tenant, consider the following cases when your organization uses multiple tenants:
 
 
 

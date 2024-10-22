@@ -1,123 +1,8 @@
-<!-- loio52c7dcb7bbb94f38ab75a4cc9a8cbe03 -->
+<!-- loio777cee13c5e74347bb0e5ad29ca41d76 -->
 
-# Configure X.509 Client Certificates for User Authentication
+# Password Recovery Options
 
-Tenant administrators can configure X.509 client certificates for user authentication as an alternative to authenticating with a user name and a password.
-
-
-
-<a name="loio52c7dcb7bbb94f38ab75a4cc9a8cbe03__prereq_ofg_hzf_ppb"/>
-
-## Prerequisites
-
-You are assigned the *Manage Tenant Configuration* role. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
-
-
-
-## Context
-
-User authentication with a trusted X.509 certificate takes place using the underlying Secure Sockets Layer \(SSL\) protocol and users don’t need to enter a password for their logon.
-
-Certificates for API Authentication cannot be used for user authentication.
-
-Remember that it may take between two and four weeks to enable the certificate.
-
-> ### Note:  
-> If you want to configure a certificate, using your own trusted CA, for example for scenarios like authentication of technical users or OAuth clients, skip the procedure in this document and report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`. Attach to the incident the root and intermediate certificates and provide the Identity Authentication tenant host.
-
-To configure a trusted X.509 certificate, proceed as follows:
-
-
-
-## Procedure
-
-1.  Sign in to the administration console for SAP Cloud Identity Services.
-
-2.  Under *Applications and Resources*, choose the *Tenant Settings* tile.
-
-    At the top of the page, you can view the administrative and license relevant information of the tenant.
-
-3.  Under *Authentication*, choose the *Trusted Certificate Configuration* list item.
-
-4.  Choose the *Create* button.
-
-5.  Enter the name of the certificate.
-
-    > ### Note:  
-    > The name and the *Subject DN* must be unique.
-
-6.  Choose one of the following options:
-
-
-    <table>
-    <tr>
-    <th valign="top">
-
-    Certificate Options
-    
-    </th>
-    <th valign="top">
-
-    Notes
-    
-    </th>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **Upload Certificate**
-    
-    </td>
-    <td valign="top">
-    
-    The uploaded certificates must be in `PEM` format. Use `.cer` or `.crt` files.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    **Root Certificate**
-    
-    </td>
-    <td valign="top">
-    
-    Insert the public key in the text field.
-    
-    </td>
-    </tr>
-    </table>
-    
-7.  Choose one of the following source options:
-
-    -   *Distinguished Name* - If selected *Distinguished Name* as source, the pattern must match the *Subject DN* of the user certificate. The *CN* attribute from the *DN Pattern* must be in the format `CN=${<logonIdentifier>}` and must completely map to one of the supported logon identifiers, `loginName`, `uid`, and `mail`.
-
-        For example: CN=$\{loginName\},O=Management,C=US.
-
-    -   *Subject Alternative Name - Other Name* - If selected *Subject Alternative Name - Other Name*, the pattern must match the `subjectAltName` extension entry of type `otherName` \(Microsoft User Principal Name form\) of the user certificate. The pattern for SAN value must be in format `${<logonIdentifier>}` and must completely map to one of the supported logon identifiers, `loginName`, `uid`, and `mail`.
-    -   *Subject Alternative Name - Email \(RFC822 Name\)* - If selected *Subject Alternative Name - Email \(RFC822 Name\)*, the pattern must match the `subjectAltName` extension entry of type `rfc822Name` of the user certificate. The pattern for SAN value must be in format `${mail}`.
-
-    Two configurations with different source options in one Identity Authentication tenant are not supported.
-
-8.  Enter the *Pattern* of the certificate.
-
-    > ### Note:  
-    > If you want to log on with a certificate where the common name contains the user ID \(for example: `Subject DN: CN=P000000,O=MyOrg,C=US`\) then the pattern value must be: `CN=${uid},O=MyOrg,C=US`.
-    > 
-    > If you want to log on with a certificate where the common name contains the email of the user \(for example: `Subject DN: CN=my_email@example.com,O=MyORG,C=US`\), then the pattern value must be: `CN=${mail},O=M,C=US`.
-
-9.  Save your configuration.
-
-10. To add the certificate to your tenant, report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`. The SAP Cloud Root CA certificates are trusted by default.
-
-    1.  Attach to the incident the root and intermediate certificates.
-
-    2.  Provide the Identity Authentication tenant host.
-
-
-    > ### Remember:  
-    > The SAP Cloud Root CA, DigiCert Global Root CA, DigiCert Global Root G2, DigiCert TLS RSA SHA256 2020 CA1, and Baltimore CyberTrust Root certificates are trusted by default.
-
+Enable users to reset their password via security questions, PIN code, or email link.
 
 **Related Information**  
 
@@ -138,6 +23,8 @@ To configure a trusted X.509 certificate, proceed as follows:
 
 [Add Instructions Section on Sign-In Screen](add-instructions-section-on-sign-in-screen-c9e717e.md "You can customize the sign-in screen of the Horizon theme with instructions for the user.")
 
+[Configure X.509 Client Certificates for User Authentication](configure-x-509-client-certificates-for-user-authentication-52c7dcb.md "Tenant administrators can configure X.509 client certificates for user authentication as an alternative to authenticating with a user name and a password.")
+
 [Enable Users to Generate and Authenticate with Certificates](enable-users-to-generate-and-authenticate-with-certificates-4cf818a.md "Allow users to generate and authenticate with certificates.")
 
 [Configure Tenant Images](configure-tenant-images-8742046.md "You can configure a custom global logo and, or a background image on the forms for sign-in in, registration, upgrade, password update, and account activation for all applications in a tenant. You can also set a favicon for tenant.")
@@ -149,8 +36,6 @@ To configure a trusted X.509 certificate, proceed as follows:
 [Configure Trust this browser Option](configure-trust-this-browser-option-5b8377e.md "Tenant administrator can set the number of days for which the users won't get prompted for second-factor authentication, if they sign in from the same browser.")
 
 [Enable Back-Up Channels to Send Passcode for Deactivation of TOTP Two-Factor Authentication Devices](enable-back-up-channels-to-send-passcode-for-deactivation-of-totp-two-factor-authenticati-782935e.md "Tenant administrator can configure back-up channels to send TOTP deactivation passcodes to the user.")
-
-[Password Recovery Options](password-recovery-options-777cee1.md "Enable users to reset their password via security questions, PIN code, or email link.")
 
 [Configure Initial Password and Email Link Validity](configure-initial-password-and-email-link-validity-f8093f4.md "As a tenant administrator, you can configure the validity of the initial password and link sent to a user in the various application processes.")
 
@@ -183,6 +68,4 @@ To configure a trusted X.509 certificate, proceed as follows:
 [Configure P-User Next Index](configure-p-user-next-index-045bb1c.md "Set the value for the P-user next index.")
 
 [Reuse SAP Cloud Identity Services Tenants for Different Customer IDs](reuse-sap-cloud-identity-services-tenants-for-different-customer-ids-ebd0258.md "You as a tenant administrator can reuse an existing tenant for configurations and automated subscriptions.")
-
-[Configure Allowed Logon Identifiers](configure-allowed-logon-identifiers-3adf1ff.md "Tenant administrators can choose the allowed logon identifiers for the users.")
 

@@ -18,7 +18,10 @@ You have created a technical user for Identity Provisioning in the SAP HANA data
 
 SAP HANA Cloud allows you to consume the SAP HANA database from cloud applications running on SAP Business Technology Platform, as well as from applications running elsewhere using the standard SAP HANA clients. Every instance of SAP HANA Cloud has its own single SAP HANA Database.
 
-You can use Identity Provisioning to configure SAP HANA Cloud, SAP HANA Database as a source system where you can read entities from and provision them to target systems of your choice.
+You can use Identity Provisioning to configure SAP HANA Cloud, SAP HANA Database as a source system where you can read users, roles and user role assignments from and provision them to target systems of your choice.
+
+> ### Note:  
+> In SAP HANA Cloud, SAP HANA Database, groups correspond to roles.
 
 
 
@@ -80,7 +83,7 @@ You can use Identity Provisioning to configure SAP HANA Cloud, SAP HANA Database
     
     Refers to the type of instance being configured or used within the SAP HANA Cloud.
 
-    Enter: `hdb`
+    The value is set to *hdb* at system creation.
     
     </td>
     </tr>
@@ -118,7 +121,7 @@ You can use Identity Provisioning to configure SAP HANA Cloud, SAP HANA Database
     </td>
     <td valign="top">
     
-    \(Optional\) When specified, only those SAP HANA Cloud, SAP HANA Database groups matching the filter expression will be read.
+    \(Optional\) When specified, only those SAP HANA Cloud, SAP HANA Database roles matching the filter expression will be read.
 
     Example: **displayName eq "ProjectTeam1" or "Employees2020"**
     

@@ -161,7 +161,7 @@ For more information on how to update to version 2, see [Update Connector Versio
     <tr>
     <td valign="top">
     
-    `scim.api.csrf.protection`
+    `sac.api.csrf.protection`
     
     </td>
     <td valign="top">
@@ -189,20 +189,18 @@ For more information on how to update to version 2, see [Update Connector Versio
     <tr>
     <td valign="top">
     
-    `scim.user.unique.attribute`
+    `sac.user.unique.attribute`
     
     </td>
     <td valign="top">
     
-    This property appears by default when the system is created, and its value is set to *userName*.
+    When the Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists in SAP Analytics Cloud. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\). This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\).
 
-    It defines by which unique attribute\(s\) an existing user to be resolved in the event of conflicting users.
+    According to your use case, choose how to set up this property:
 
-    Other possible values:
-
-    -   **emails\[0\].value**
-    -   **userName,emails\[0\].value**
-    -   **externalId**, or another SCIM attribute, or a conjunction of SCIM attributes
+    -   Default behavior: This property is missing during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such а *userName* is not found, the creation of the conflicting user fails.
+    -   Value = *emails\[0\].value*. If the service finds an existing user with such *email*, it updates this user with the data of the conflicting one. If a user with such *email* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+    -   Value = *userName,emails\[0\].value*. If the service finds an existing user with both these *userName* and *email*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
 
     > ### Note:  
     > If this property is missing, or you've deleted it, and the service does not find such a *userName*, it will try again to resolve the conflicting user – by *email*. If the second attempt for resolution is unsuccessful too, the creation of the conflicting user fails.

@@ -149,18 +149,6 @@ Where to find it
 <tr>
 <td valign="top">
 
-`timeZone`
-
-</td>
-<td valign="top">
-
-API - GET `https://<tenant ID>.accounts.ondemand.com/service/resource?resourceType=RESOURCE_MD_TIMEZONES&locale=en`
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 `addresses[0].country`
 
 </td>
@@ -170,18 +158,6 @@ API - GET `https://<tenant ID>.accounts.ondemand.com/service/resource?resourceTy
 -   API - GET `https://<tenant ID>.accounts.ondemand.com/service/resource?resourceType=RESOURCE_MD_COUNTRIES&locale=en`
 
 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`addresses[0].region`
-
-</td>
-<td valign="top">
-
-API - GET `https://<tenant ID>.accounts.ondemand.com/service/resource?resourceType=RESOURCE_MD_STATES&locale=en`
 
 </td>
 </tr>

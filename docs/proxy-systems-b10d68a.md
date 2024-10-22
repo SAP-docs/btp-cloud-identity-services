@@ -55,7 +55,7 @@ Your tenant type meets one of the following requirements:
     > ### Note:  
     > The entities exposed by the back-end system will be mapped to SCIM 2.0 entities, if possible. If not possible, the SCIM standard provides a mechanism to define a new resource type with the appropriate schema. You can use the custom resource type to map the back-end entities.
 
-7.  Finally, the external application can start sending REST web service requests to the proxy system in order to read identities from the back end of the SCIM 2.0 system. For the authentication, you need to use the *user ID* and *password* of the Identity Authentication technical user for which you have set permission *Access Proxy System API*.
+7.  Finally, the external application can start sending REST web service requests to the proxy system in order to read identities from the back end of the SCIM 2.0 system. For the authentication, you need to use the *user ID* and *password* of the Identity Authentication technical user for which you have set permission *Access Proxy System API*. In case you decide to use OAuth authentication, the OAuth token URL should follow the pattern: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/oauth2/token</code>
 
 
 
@@ -186,7 +186,7 @@ Read users
 
 **Infrastructure of SAP Cloud Identity Services**
 
--   **Basic Authentication** and **Certificate Authentication**: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Users</code>
+-   **Basic**, **OAuth** and **Certificate** Authentication: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Users</code>
 
 
 
@@ -256,7 +256,7 @@ Read a user
 
 **Infrastructure of SAP Cloud Identity Services**
 
--   **Basic Authentication** and **Certificate Authentication**: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Users/<i class="varname">&lt;user_id&gt;</i></code>
+-   **Basic**, **OAuth** and **Certificate** Authentication: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Users/<i class="varname">&lt;user_id&gt;</i></code>
 
 
 
@@ -302,7 +302,7 @@ Create a user
 
 **Infrastructure of SAP Cloud Identity Services**
 
--   **Basic Authentication** and **Certificate Authentication**: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Users</code>
+-   **Basic**, **OAuth** and **Certificate** Authentication: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Users</code>
 
 
 
@@ -348,7 +348,7 @@ Update a user \(*full*\)
 
 **Infrastructure of SAP Cloud Identity Services**
 
--   **Basic Authentication** and **Certificate Authentication**: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Users/<i class="varname">&lt;user_id&gt;</i></code>
+-   **Basic**, **OAuth** and **Certificate** Authentication: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Users/<i class="varname">&lt;user_id&gt;</i></code>
 
 
 
@@ -394,7 +394,7 @@ Update a user \(*partial*\)
 
 **Infrastructure of SAP Cloud Identity Services**
 
--   **Basic Authentication** and **Certificate Authentication**: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Users/<i class="varname">&lt;user_id&gt;</i></code>
+-   **Basic**, **OAuth** and **Certificate** Authentication: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Users/<i class="varname">&lt;user_id&gt;</i></code>
 
 
 
@@ -440,7 +440,7 @@ Delete a user
 
 **Infrastructure of SAP Cloud Identity Services**
 
--   **Basic Authentication** and **Certificate Authentication**: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Users/<i class="varname">&lt;user_id&gt;</i></code>
+-   **Basic**, **OAuth** and **Certificate** Authentication: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Users/<i class="varname">&lt;user_id&gt;</i></code>
 
 
 
@@ -486,7 +486,7 @@ Read groups
 
 **Infrastructure of SAP Cloud Identity Services**
 
--   **Basic Authentication** and **Certificate Authentication**: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Groups</code>
+-   **Basic**, **OAuth** and **Certificate** Authentication: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Groups</code>
 
 
 
@@ -532,7 +532,7 @@ Read a group
 
 **Infrastructure of SAP Cloud Identity Services**
 
--   **Basic Authentication** and **Certificate Authentication**: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Groups/<i class="varname">&lt;group_id&gt;</i></code>
+-   **Basic**, **OAuth** and **Certificate** Authentication: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Groups/<i class="varname">&lt;group_id&gt;</i></code>
 
 
 
@@ -578,7 +578,7 @@ Create a group
 
 **Infrastructure of SAP Cloud Identity Services**
 
--   **Basic Authentication** and **Certificate Authentication**: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Groups</code>
+-   **Basic**, **OAuth** and **Certificate** Authentication: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Groups</code>
 
 
 
@@ -624,7 +624,7 @@ Update a group \(*full*\)
 
 **Infrastructure of SAP Cloud Identity Services**
 
--   **Basic Authentication** and **Certificate Authentication**: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Groups/<i class="varname">&lt;group_id&gt;</i></code>
+-   **Basic**, **OAuth** and **Certificate** Authentication: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Groups/<i class="varname">&lt;group_id&gt;</i></code>
 
 
 
@@ -670,7 +670,7 @@ Update a group \(*partial*\)
 
 **Infrastructure of SAP Cloud Identity Services**
 
--   **Basic Authentication** and **Certificate Authentication**: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Groups/<i class="varname">&lt;group_id&gt;</i></code>
+-   **Basic**, **OAuth** and **Certificate** Authentication: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Groups/<i class="varname">&lt;group_id&gt;</i></code>
 
 
 
@@ -716,7 +716,7 @@ Delete a group
 
 **Infrastructure of SAP Cloud Identity Services**
 
--   **Basic Authentication** and **Certificate Authentication**: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Groups/<i class="varname">&lt;group_id&gt;</i></code>
+-   **Basic**, **OAuth** and **Certificate** Authentication: <code>https://<i class="varname">&lt;ias-tenant-host&gt;</i>/ipsproxy/service/api/v1/scim/<i class="varname">&lt;system_id&gt;</i>/Groups/<i class="varname">&lt;group_id&gt;</i></code>
 
 
 

@@ -265,12 +265,9 @@ This provisioning scenario is based on the Authorization Management REST API of 
     >   "user": {
     >     "mappings": [
     >       {
+    >         "sourcePath": "$.name",
     >         "targetPath": "$.id",
-    >         "sourcePath": "$.name"
-    >       },
-    >       {
-    >         "targetVariable": "entityIdSourceSystem",
-    >         "sourcePath": "$.name"
+    >         "targetVariable": "entityIdSourceSystem"
     >       },
     >       {
     >         "targetPath": "$.displayName",

@@ -12,8 +12,10 @@ When provisioning users from source to target systems, in addition to replicatin
 
 -   You have configured a SCIM-based target system which supports patch operation.
 
-    > ### Note:  
-    > The following is a list of the supported SCIM-based target systems: SAP Ariba Applications, SAP Build Work Zone, standard edition, SAP Commerce Cloud, SAP Field Service Management, SCIM System, Identity Authentication \(using SCIM API version 2\), SAP SuccessFactors Learning, SAP SuccessFactors, SAP Analytics Cloud, SAP BTP XS Advanced UAA \(Cloud Foundry\) and Cloud Foundry UAA Server.
+    -   To view the list of these systems, refer to [List of Properties](../list-of-properties-d6f3577.md) → `scim.support.patch.operation` → *System Type*.
+
+    -   To enable the patch operation for each of these systems, refer to its specific property in [List of Properties](../list-of-properties-d6f3577.md) →*<system\_prefix\>* `.support.patch.operation`
+
 
 -   The groups that you want to assign exist on the target system.
 

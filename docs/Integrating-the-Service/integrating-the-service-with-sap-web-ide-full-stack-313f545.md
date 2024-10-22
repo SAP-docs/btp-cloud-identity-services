@@ -142,15 +142,13 @@ For this scenario, you have to configure the user attribute `First Name` in Iden
 
 4.  Choose the *Trust* tab.
 
-5.  Under *SINGLE SIGN-ON*, choose *Assertion Attributes*.
+5.  Under *SINGLE SIGN-ON*, choose *Attributes*.
 
-6.  Add the First Name assertion attributes.
+6.  Configure the `First Name` attribute.
 
 7.  Save your configuration.
 
-    ![](images/FirstNameAttribute_0684e1f.png)
-
-    If the operation is successful, you receive the message ***Assertion attributes updated***.
+    If the operation is successful, you receive the message ***Attributes updated***.
 
 
 <a name="task_ky3_dfv_tv"/>

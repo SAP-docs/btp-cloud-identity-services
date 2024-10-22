@@ -18,5 +18,5 @@ A target system can be connected to a single or multiple source systems. In the 
 **Related Information**  
 
 
-[System Types](system-types-e59ae54.md "Identity Provisioning differentiates systems based on how they are created and what they are used for.")
+[System Types](system-types-e59ae54.md "Identity Provisioning categorizes systems based on the method of creation, usage and underlying protocols.")
 

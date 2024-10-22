@@ -21,7 +21,10 @@ You have created a technical user for Identity Provisioning in the SAP HANA data
 
 SAP HANA Cloud allows you to consume the SAP HANA database from cloud applications running on SAP Business Technology Platform, as well as from applications running elsewhere using the standard SAP HANA clients. Every instance of SAP HANA Cloud has its own single SAP HANA Database.
 
-You can use the Identity Provisioning user interface \(UI\) to configure SAP HANA Cloud, SAP HANA Database as a proxy system in hybrid scenarios. For example, when SAP HANA Cloud, SAP HANA Database is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision users and groups to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users and group members back to the SAP HANA Cloud, SAP HANA Database.
+You can use the Identity Provisioning user interface \(UI\) to configure SAP HANA Cloud, SAP HANA Database as a proxy system in hybrid scenarios. For example, when SAP HANA Cloud, SAP HANA Database is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision users and roles to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users and user role assignments back to the SAP HANA Cloud, SAP HANA Database.
+
+> ### Note:  
+> In SAP HANA Cloud, SAP HANA Database, groups correspond to roles.
 
 
 
@@ -128,6 +131,8 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP HAN
     <td valign="top">
     
     Specifies the method by which users authenticate when connecting to the database.
+
+    The value is set to *hdb* at system creation.
     
     </td>
     </tr>
@@ -191,7 +196,7 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP HAN
     </td>
     <td valign="top">
     
-    \(Optional\) When specified, only those SAP HANA Cloud, SAP HANA Database groups matching the filter expression will be read.
+    \(Optional\) When specified, only those SAP HANA Cloud, SAP HANA Database roles matching the filter expression will be read.
 
     Example: **displayName eq "ProjectTeam1" or "Employees2020"**
     

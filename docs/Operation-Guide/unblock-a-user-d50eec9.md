@@ -24,10 +24,8 @@ The inactivity period is configurable and can be between 14 days and 2000 days. 
 
     For more information about how to find a user in Identity Authentication, see [Search Users](search-users-06078a6.md).
 
-    This operation opens the *User Details* view.
+    This operation opens the *Details* view.
 
-    ![](images/User_Details_in_Administration_Console_45ebcd1.png)
-
-4.  Under *Authentication* choose the *User Status* button to unblock the user.
+4.  Choose *Authentication* \> *User Status* \> *Unblock*.
 
 
