@@ -413,16 +413,15 @@ These target systems consume SCIM 2.0 API provided by SAP Ariba Applications. Fo
     >                 "targetPath": "$.id"
     >             },
     >             {
-    >                 "constant": "urn:ietf:params:scim:schemas:core:2.0:User",
-    >                 "targetPath": "$.schemas[0]"
-    >             },
-    >             {
-    >                 "constant": "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User",
-    >                 "targetPath": "$.schemas[1]"
-    >             },
-    >             {
-    >                 "constant": "urn:ietf:params:scim:schemas:extension:sap:2.0:User",
-    >                 "targetPath": "$.schemas[2]"
+    >                 "constant": [
+    >                     "urn:ietf:params:scim:schemas:core:2.0:User",
+    >                     "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User",
+    >                     "urn:ietf:params:scim:schemas:extension:sap:2.0:User",
+    >                     "urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User",
+    >                     "urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User",
+    >                     "urn:sap:cloud:scim:schemas:extension:custom:2.0:profile:User"
+    >                 ],
+    >                 "targetPath": "$.schemas"
     >             },
     >             {
     >                 "sourcePath": "$.userName",
@@ -443,6 +442,71 @@ These target systems consume SCIM 2.0 API provided by SAP Ariba Applications. Fo
     >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
     >                 "optional": true,
     >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['companyCode']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['companyCode']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['costCenter']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['costCenter']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['purchasingGroup']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['purchasingGroup']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['generalLedgerAccount']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['generalLedgerAccount']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['purchasingOrganization']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['purchasingOrganization']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['plant']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['plant']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['currency']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['currency']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['deliverTo']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['deliverTo']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['purchasingUnit']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['purchasingUnit']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['network']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['network']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['addresses']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['addresses']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['passwordAdapter']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['passwordAdapter']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:profile:User']['alternativeDisplayNames']",
+    >                 "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:profile:User']['alternativeDisplayNames']",
+    >                 "optional": true
     >             },
     >             {
     >                 "sourcePath": "$.locale",
@@ -496,8 +560,12 @@ These target systems consume SCIM 2.0 API provided by SAP Ariba Applications. Fo
     >                 "targetPath": "$.id"
     >             },
     >             {
-    >                 "constant": "urn:ietf:params:scim:schemas:core:2.0:Group",
-    >                 "targetPath": "$.schemas[0]"
+    >                 "constant": [
+    >                     "urn:ietf:params:scim:schemas:core:2.0:Group",
+    >                     "urn:ietf:params:scim:schemas:extension:sap:2.0:Group",
+    >                     "urn:sap:cloud:scim:schemas:extension:custom:2.0:profile:Group"
+    >                 ],
+    >                 "targetPath": "$.schemas"
     >             },
     >             {
     >                 "sourcePath": "$.displayName",
@@ -510,6 +578,21 @@ These target systems consume SCIM 2.0 API provided by SAP Ariba Applications. Fo
     >                         "replacement": ""
     >                     }
     >                 ]
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:profile:Group']['alternativeDisplayNames']",
+    >                 "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:profile:Group']['alternativeDisplayNames']",
+    >                 "optional": true
     >             },
     >             {
     >                 "sourcePath": "$.members[*].value",
@@ -525,7 +608,6 @@ These target systems consume SCIM 2.0 API provided by SAP Ariba Applications. Fo
     >         ]
     >     }
     > }
-    > 
     > ```
 
 6.  Now, add a source system from which to read users and groups. Choose from: [Source Systems](source-systems-58033be.md)

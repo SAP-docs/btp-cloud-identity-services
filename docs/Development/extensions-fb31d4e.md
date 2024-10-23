@@ -80,22 +80,24 @@ The Identity Directory SCIM REST API can be manually extended by adding user att
     > > }
     > > ```
 
-2.  Assign an attribute form the custom schema to the user via one of the following options:
-    -   Assign an attribute from the schema via the administration console:
+2.  Assign a custom schema to the user via one of the following options:
+    -   Assign an attribute from the custom schema via the administration console:
         1.  *Access the administration console for Cloud Identity services* \> *Users & Authorizations* \> *User Management*.
-        2.  Select a user and choose *User Details* tab.
+        2.  Select a user and choose the *Extensions* tab.
 
             > ### Note:  
-            > The attributes assigned from custom schema are visible at the bottom of the User Details tab under a section with the name of the custom schema.
+            > The attributes assigned from the custom schemas are visible there.
 
-        3.  Press the *Edit* button at the top of the page and add values to the custom schema.
-        4.  Save your configuration.
+        3.  Press the *Assign* button at the top of the page and choose which custom schema or schemas to add.
+        4.  Add values for for the attributes in the custom schema.
 
-            > ### Note:  
-            > When the schema is assigned to the user it's in expanded mode.
+            > ### Remember:  
+            > To save your configuration you must add at least one value.
+
+        5.  Save your configuration.
 
             > ### Tip:  
-            > To unassign the schema, remove the values of the attributes from the schema and save your changes. The schema is in collapsed mode when not assigned to a user.
+            > To unassign the already assigned schema, choose *Unassign* \> *select the schema or schemas you want to unassign* \> *Unassign*.
 
 
     -   Assign an attribute form custom schema to the user by calling the Identity Directory SCIM REST API. See [Identity Directory Service](https://api.sap.com/api/IdDS_SCIM/path/patchUser).

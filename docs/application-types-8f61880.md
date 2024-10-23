@@ -39,15 +39,12 @@ You can't create or delete a subscribed application. For these applications, you
     > ### Note:  
     > It's possible to add custom URIs, but those defined by the application provider remain.
 
--   Assertion Attributes
+-   Attributes - Self-defined Attributes
 
-    > ### Note:  
-    > Predefined by the application provider.
+    The attributes supported by subscribed applications are predefined and listed under the *Primary Attribute* section, with default mappings for source *Identity Directory*. You can see which attributes are supported, and add or remove mappings for the other sources - *Corporate Identity Provider* and *Expression*.
 
--   Default Attributes
-
-    > ### Note:  
-    > You can define values for attributes defined by the application provider, but they can't change the attribute names. Adding and managing custom attributes is possible.
+    > ### Tip:  
+    > For some subscribed applications, you might need to add custom attribute mappings \(under the *Self-Defined Attributes* section\).
 
 -   Client Authentication
 

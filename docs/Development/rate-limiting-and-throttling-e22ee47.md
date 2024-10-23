@@ -2,9 +2,15 @@
 
 # Rate Limiting and Throttling
 
-This section provides information on the rate limiting and SCIM API throttling Identity Authentication.
+This section provides information on the rate limiting and throttling in Identity Authentication.
 
-To ensure safe and stable environment, all requests have a limit of 50 concurrent requests per second. The requests are associated with the originating IP address, and not with the user making the requests.
+
+
+<a name="loioe22ee47abf614565bcb29bb4ddbbf209__section_x4y_ncr_bdc"/>
+
+## Requests
+
+To ensure a safe and stable environment, all requests have a limit of 50 concurrent requests per second. The requests are associated with the originating IP address, and not with the user making the requests.
 
 When the limit is exceeded, the client receives the ***HTTP 429 Too Many Requests*** response status code.
 
@@ -40,14 +46,14 @@ up to 200
 </td>
 <td valign="top">
 
-The requests are executed.
+The requests are carried out.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-201 to 280
+201–280
 
 </td>
 <td valign="top">
@@ -76,7 +82,7 @@ The client receives the ***HTTP 429 Too Many Requests*** response status code fo
 
 ## OpenID Connect \(OIDC\) Endpoints
 
-To ensure safe and stable environment, all requests to the `/oauth2` endpoints have a limit of 1000 requests per minute per tenant. When the limit is exceeded, the client receives the ***HTTP 429 Too Many Requests*** response status code. The requests are associated with the originating IP address, and not with the user making the requests.
+To ensure a safe and stable environment, all requests to the `/oauth2` endpoints have a limit of 1000 requests per minute per tenant. When the limit is exceeded, the client receives the ***HTTP 429 Too Many Requests*** response status code. The requests are associated with the originating IP address, and not with the user making the requests.
 
 For a list of the relevant endpoints, use the following URL:
 
@@ -87,4 +93,12 @@ For a list of the relevant endpoints, use the following URL:
 If you've a custom domain configured, the URL has the following pattern:
 
 <code>https://<i class="varname">&lt;your custom domain&gt;</i>/.well-known/openid-configuration</code>
+
+
+
+<a name="loioe22ee47abf614565bcb29bb4ddbbf209__section_pt3_qcr_bdc"/>
+
+## SAML 2.0 Endpoints
+
+To ensure a safe and stable environment, all requests to the `/saml2` endpoints have a limit of between 12000 and 15000 requests per minute per tenant. When the limit is exceeded, the client receives the ***HTTP 429 Too Many Requests*** response status code. The requests are associated with the originating IP address, and not with the user making the requests.
 

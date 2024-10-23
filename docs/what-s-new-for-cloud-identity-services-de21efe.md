@@ -176,7 +176,7 @@ Password Recovery
 </td>
 <td valign="top">
 
-You can enable or disable he option to reset the user password via an email link. See [Enable Users to Recover Password via Email](Operation-Guide/enable-users-to-recover-password-via-email-5b9f909.md).
+You can enable or disable the option to reset the user password via an email link. See [Enable Users to Recover Password via Email](Operation-Guide/enable-users-to-recover-password-via-email-5b9f909.md).
 
 </td>
 <td valign="top">
