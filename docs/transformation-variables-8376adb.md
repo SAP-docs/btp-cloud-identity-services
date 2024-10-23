@@ -2,7 +2,9 @@
 
 # Transformation Variables
 
-System variables specify particular attributes of the read and written entities. They help you map attributes between source and target transformations so that the entities are provisioned correctly to the target systems.
+System variables specify particular attributes of the read and written entities. The variables are used for temporary saving of data in the transformation mappings of the provisioning systems. They do not have representation in the output JSON file. You can define a variable in the context of one provisioning system and specific entity. The value of the defined variable cannot be used in another provisioning system or entity.
+
+The table below includes information about variables that have specific behavior:
 
 **Transformation Variables**
 
