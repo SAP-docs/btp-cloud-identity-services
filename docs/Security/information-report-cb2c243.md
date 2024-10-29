@@ -12,14 +12,14 @@ An information report is a collection of data relating to a data subject. A data
 
 Data subjects can obtain information about their personal data in Identity Authentication, via the profile page at https://<tenant ID\>.accounts.ondemand.com/.
 
--   Users can open a printable overview of all the data on file for them by visiting their account information in upper right corner of thw screen and chosing the *User Data* section from the menu.
+-   Users can open an overview of all the data for them by visiting their account and chosing the *View* button under the *My Data* section on the screen.
 
     ![](../User-Guide/images/User_Data_3dbaf04.png)
 
     > ### Note:  
     > The data includes the **Terms of Use** and **Privacy Policy** documents singed by the user. The documents can be seen by clicking on their names. They open in a new tab.
 
--   Users can download an overview of all the data for them on a JSON file by clicking the download button in the *User Data* section.
+-   Users can download an overview of all the data for them on a JSON file by clicking the *Download* button in the *My Data* section.
 
 
 

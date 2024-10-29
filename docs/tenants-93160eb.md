@@ -125,12 +125,12 @@ ap10
 </td>
 <td valign="top">
 
-Australia \(Sydney\) / Japan \(Tokyo\)
+Australia \(Sydney\)
 
 </td>
 <td valign="top">
 
-SAP
+SAP / Azure
 
 </td>
 </tr>
@@ -206,12 +206,12 @@ ap20
 </td>
 <td valign="top">
 
-Australia \(Sydney\) / Japan \(Tokyo\)
+Australia \(Sydney\)
 
 </td>
 <td valign="top">
 
-SAP
+SAP / Azure
 
 </td>
 </tr>

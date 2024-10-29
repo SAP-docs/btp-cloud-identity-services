@@ -46,7 +46,7 @@ To create exclude lists for email, first and last name attributes, follow the pr
 
 [List and Edit User Details](list-and-edit-user-details-045cb01.md "As a tenant administrator, you can view detailed information about the users in the administration console for SAP Cloud Identity Services. Optionally you can edit this information.")
 
-[SCIM REST API \(Deprecated\)](../Development/scim-rest-api-deprecated-2f21568.md "This section contains information about the Identity Authentication implementation of the System for Cross-domain Identity Management (SCIM) REST API protocol.")
+[Identity Authentication API \(Deprecated\)](../Development/identity-authentication-api-deprecated-2f21568.md "Deprecated.")
 
 [Identity Directory Service SCIM API](https://api.sap.com/api/IdDS_SCIM/resource)
 

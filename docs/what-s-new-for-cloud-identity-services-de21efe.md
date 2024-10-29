@@ -100,6 +100,84 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Regional Availability
+
+</td>
+<td valign="top">
+
+Cloud Identity Services is available with a new data center for the Google Cloud infrastructure in Saudi Arabia. The data center is located in Dammam.
+
+Action: We recommend you to add the following IPs to your allowed IP list:
+
+-   LB IPs - `34.166.65.197, 34.166.56.10` 
+-   NAT IPs - `34.166.19.58/32, 34.166.58.219/32, 34.166.53.185/32, 34.166.10.70/32`
+
+See [Regional Availability](regional-availability-be600ca.md).
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-11-05
+
+</td>
+<td valign="top">
+
+2024-11-05
+
+</td>
+<td valign="top">
+
+2411a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Regular Upgrade
 
 </td>

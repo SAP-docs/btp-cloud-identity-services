@@ -177,7 +177,7 @@ We suggest handling this as follows:
 **Related Information**  
 
 
-[Administration issues](administration-issues-90ce2d5.md "")
+[Administration Issues](administration-issues-90ce2d5.md "")
 
 [Job and Transformation Issues](job-and-transformation-issues-dbe3c08.md "")
 

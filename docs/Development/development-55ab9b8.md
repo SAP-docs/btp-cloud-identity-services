@@ -22,7 +22,7 @@ The following APIs are offered to cloud applications:
 
 -   Identity Authentication implementation of the System for Cross-domain Identity Management \(SCIM\) REST API protocol.
 
-    For more information, see [SCIM REST API \(Deprecated\)](scim-rest-api-deprecated-2f21568.md).
+    For more information, see [Identity Authentication API \(Deprecated\)](identity-authentication-api-deprecated-2f21568.md).
 
 -   An API to change the predefined texts and messages for end-user screens available per tenant in the Identity Authentication.
 

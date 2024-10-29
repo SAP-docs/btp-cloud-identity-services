@@ -111,7 +111,7 @@ If your provisioning scenarios involve on-premise systems, this requires a separ
     <tr>
     <td valign="top">
     
-    Australia \(Sydney\) / Japan \(Tokyo\)
+    Australia \(Sydney\)
     
     </td>
     <td valign="top">

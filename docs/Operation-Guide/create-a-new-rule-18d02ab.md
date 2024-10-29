@@ -48,7 +48,7 @@ Each rule contains the following information:
         >     > ### Remember:  
         >     > To use *SMS Two-Factor Authentication*, you must have configured Sinch Verification in the administration console for SAP Cloud Identity Services. For more information, see [Configure Sinch Service in Administration Console](configure-sinch-service-in-administration-console-f4a04ed.md).
         >     > 
-        >     > Users must have their mobile phone numbers verified. The tenant administrator can verify phone numbers manually in the administration console or via the SCIM API. For more information, see [List and Edit User Details](list-and-edit-user-details-045cb01.md) and [Update User Resource \(Deprecated\)](../Development/update-user-resource-deprecated-9e36479.md).
+        >     > Users must have their mobile phone numbers verified. The tenant administrator can verify phone numbers manually in the administration console or via the SCIM API. For more information, see [List and Edit User Details](list-and-edit-user-details-045cb01.md) and [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users).
         >     > 
         >     > If the user does not have a verified phone number, the number is verified during the first log on when SMS code is required. After the user provides user name and credentials, he or she should provide the phone number in the field and request a code. Then provide the received code in the respective field and choose *Continue*. If the submitted code is correct, the user is allowed access, and the telephone number is verified.
         > 

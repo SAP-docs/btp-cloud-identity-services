@@ -457,7 +457,6 @@ To edit the application configurations, proceed as follows:
     -   Subject Name Identifier
     -   Default Name ID Format
     -   Attributes
-    -   Client Authentication
     -   Dependencies
     -   Risk-Based Authentication
     -   Email Verification

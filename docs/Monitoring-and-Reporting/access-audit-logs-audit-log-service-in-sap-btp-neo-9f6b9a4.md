@@ -99,11 +99,6 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > SAP BTP Host in Request
 > 
 > </th>
-> <th valign="top">
-> 
-> Deprecated
-> 
-> </th>
 > </tr>
 > <tr>
 > <td valign="top" rowspan="2">
@@ -119,11 +114,6 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > <td valign="top">
 > 
 > `eu1.hana.ondemand.com` \(primary\)
-> 
-> </td>
-> <td valign="top" rowspan="2">
-> 
-> Oct 23, 2024
 > 
 > </td>
 > </tr>
@@ -142,7 +132,7 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > </td>
 > <td valign="top" rowspan="2">
 > 
-> Sydney/Tokyo
+> Sydney
 > 
 > </td>
 > <td valign="top">
@@ -150,21 +140,11 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > `ap1.hana.ondemand.com` \(primary\)
 > 
 > </td>
-> <td valign="top">
-> 
-> Oct 2, 2024
-> 
-> </td>
 > </tr>
 > <tr>
 > <td valign="top">
 > 
 > `jp1.hana.ondemand.com`
-> 
-> </td>
-> <td valign="top">
-> 
-> Sep 11, 2024
 > 
 > </td>
 > </tr>
@@ -184,11 +164,6 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > `jp1.hana.ondemand.com`
 > 
 > </td>
-> <td valign="top">
-> 
-> Sep 11, 2024
-> 
-> </td>
 > </tr>
 > <tr>
 > <td valign="top" rowspan="2">
@@ -204,11 +179,6 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > <td valign="top">
 > 
 > `us3.hana.ondemand.com` \(primary\)
-> 
-> </td>
-> <td valign="top" rowspan="2">
-> 
-> Oct 9, 2024
 > 
 > </td>
 > </tr>
@@ -233,11 +203,6 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > <td valign="top">
 > 
 > `sa1.hana.ondemand.com`
-> 
-> </td>
-> <td valign="top">
-> 
-> Jul 31, 2024
 > 
 > </td>
 > </tr>

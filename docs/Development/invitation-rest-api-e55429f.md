@@ -241,11 +241,15 @@ Content-Type: application/json
 **Related Information**  
 
 
-[SAP Cloud Identity Services Application Directory REST API](sap-cloud-identity-services-application-directory-rest-api-a8fc935.md "Manage application configurations.")
+[Application Configurations API](application-configurations-api-a8fc935.md "Manage application configurations.")
 
-[Identity Directory SCIM REST API](identity-directory-scim-rest-api-5be5692.md "Manage users, groups and custom schemas in the cloud.")
+[Identity Directory API](identity-directory-api-5be5692.md "Manage users, groups and custom schemas in the cloud.")
 
-[SCIM REST API \(Deprecated\)](scim-rest-api-deprecated-2f21568.md "This section contains information about the Identity Authentication implementation of the System for Cross-domain Identity Management (SCIM) REST API protocol.")
+[Identity Provisioning API](identity-provisioning-api-4433374.md "Manage identity lifecycle processes for cloud and on-premise systems.")
+
+[Identity Authentication API \(Deprecated\)](identity-authentication-api-deprecated-2f21568.md "Deprecated.")
+
+[Migrating Deprecated Identity Authentication API to Identity Directory API](migrating-deprecated-identity-authentication-api-to-identity-directory-api-106dbe0.md "Migrating from the Identity Authentication API to Identity Directory API.")
 
 [User Management REST API](user-management-rest-api-e6bb70d.md "This REST API allows you to implement a request for user management, such as user registration, as well as SP user retrieval, deactivation and deletion.")
 

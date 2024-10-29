@@ -166,7 +166,7 @@ cf-jp10 - Japan \(Tokyo\)
 <tr>
 <td valign="top">
 
-ap-au Sydney/Tokyo
+ap-au Sydney
 
 </td>
 <td valign="top">

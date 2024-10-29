@@ -1,28 +1,24 @@
-<!-- loio5be569254a3246b18348e35ffc6b11a7 -->
+<!-- loioa8fc935b8dde4a74aa9ad9885eb4f22c -->
 
-# Identity Directory SCIM REST API
+# Application Configurations API
 
-Manage users, groups and custom schemas in the cloud.
-
-
-
-> ### Remember:  
-> The API is available on the SAP Business Accelerator Hub: [Identity Directory Service](https://api.sap.com/api/IdDS_SCIM/overview)
+Manage application configurations.
 
 
 
-<a name="loio5be569254a3246b18348e35ffc6b11a7__section_lp4_rwx_kzb"/>
-
-## Prerequisites
-
-To call the methods of this SCIM REST API you must have a system as administrator with an assigned *Manage Users* role. For more details about how to add a system as administrator and assign administrator roles, see [Add System as Administrator](../Operation-Guide/add-administrators-bbbdbdd.md#loiocefb742a36754b18bbe5c3503ac6d87c), and [Edit Administrator Authorizations](../Operation-Guide/edit-administrator-authorizations-86ee374.md).
+> ### Note:  
+> The API is available on the SAP Business Accelerator Hub: [Application Configurations API](https://api.sap.com/api/SCI_Application_Directory/overview).
 
 **Related Information**  
 
 
-[SAP Cloud Identity Services Application Directory REST API](sap-cloud-identity-services-application-directory-rest-api-a8fc935.md "Manage application configurations.")
+[Identity Directory API](identity-directory-api-5be5692.md "Manage users, groups and custom schemas in the cloud.")
 
-[SCIM REST API \(Deprecated\)](scim-rest-api-deprecated-2f21568.md "This section contains information about the Identity Authentication implementation of the System for Cross-domain Identity Management (SCIM) REST API protocol.")
+[Identity Provisioning API](identity-provisioning-api-4433374.md "Manage identity lifecycle processes for cloud and on-premise systems.")
+
+[Identity Authentication API \(Deprecated\)](identity-authentication-api-deprecated-2f21568.md "Deprecated.")
+
+[Migrating Deprecated Identity Authentication API to Identity Directory API](migrating-deprecated-identity-authentication-api-to-identity-directory-api-106dbe0.md "Migrating from the Identity Authentication API to Identity Directory API.")
 
 [Invitation REST API](invitation-rest-api-e55429f.md "The invitation service allows you to implement a request for user invitations.")
 

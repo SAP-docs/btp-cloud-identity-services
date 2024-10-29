@@ -72,7 +72,7 @@ Create users programmatically via API
 </td>
 <td valign="top">
 
-[Create User Resource \(Deprecated\)](../Development/create-user-resource-deprecated-cea8778.md) 
+[Identity Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users) 
 
 </td>
 </tr>
@@ -101,7 +101,7 @@ Search users via API
 </td>
 <td valign="top">
 
-[Users Search \(Deprecated\)](../Development/users-search-deprecated-3af7dfa.md) 
+[Identity Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users) 
 
 </td>
 </tr>
@@ -130,10 +130,7 @@ List and update user details via API
 </td>
 <td valign="top">
 
--   [User Resource \(Deprecated\)](../Development/user-resource-deprecated-7ae17a6.md)
--   [Update User Resource \(Deprecated\)](../Development/update-user-resource-deprecated-9e36479.md)
-
-
+[Identity Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users) 
 
 </td>
 </tr>
@@ -195,7 +192,7 @@ Delete users programmatically via API
 </td>
 <td valign="top">
 
-[Delete User Resource \(Deprecated\)](../Development/delete-user-resource-deprecated-436015d.md) 
+[Identity Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users) 
 
 </td>
 </tr>

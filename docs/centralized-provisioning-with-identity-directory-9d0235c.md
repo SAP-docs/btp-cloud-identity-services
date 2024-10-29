@@ -570,7 +570,7 @@ You have wide flexibility to choose your own approach when merging data from var
 > When reading user data from multiple sources, we strongly recommend that you perform **consecutive** provisioning jobs. Simultaneous jobs may lead to inconsistent or overwritten user data in the target system.
 
 > ### Note:  
-> To execute PATCH instead of PUT requests when updating an entry, set the `scim.support.patch.operation` = *true* on the *Properties* tab of the Local Identity Directory target system.
+> To execute PATCH instead of PUT requests when updating an entry, set the `idds.support.patch.operation` = *true* on the *Properties* tab of the Local Identity Directory target system.
 
 
 
@@ -789,7 +789,7 @@ To achieve this, we suggest that you configure two pairs of source-target system
 
 8.  Run a second provisioning job, this time from SAP SuccessFactors, to replicate the identities to the same identity directory instance.
 
-    This second provisioning job is not intended to create new identities. Its purpose is to enrich the existing users with additional attributes.
+    This provisioning job will create new users in the Identity Directory from SAP SuccessFactors and update existing users with additional attributes from SAP SuccessFactors, specifically userType, department, division, perPersonUuid, and personIdExternal.
 
 
 As a result, the identities from the two source systems are provisioned to a single target identity directory. Continuous provisioning jobs from both source systems run without overwriting attributes. Any updates are executed as patch requests.

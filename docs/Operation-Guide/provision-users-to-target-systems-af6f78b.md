@@ -549,9 +549,7 @@ For more information about user creation or user update, see **Related Informati
 
 [Import or Update Users for a Specific Application](import-or-update-users-for-a-specific-application-33838e0.md "As a tenant administrator, you can import new users or update existing ones for a specific application with a CSV file. You can also send activation emails to the users that have not received activation emails for that application so far.")
 
-[Create User Resource \(Deprecated\)](../Development/create-user-resource-deprecated-cea8778.md "The create user resource method of the Identity Authentication implementation of the SCIM REST API protocol provides information on the creation of a user.")
-
-[Update User Resource \(Deprecated\)](../Development/update-user-resource-deprecated-9e36479.md "The update user method of the implementation of the SCIM REST API protocol provides information on the update of a known user. The method does not create a new user.")
-
 [Scenarios](../scenarios-fb9898d.md "Identity Authentication supports scenarios for consumers (business-to-consumer scenarios), for partners (business-to-business scenarios), and for employees (business-to-employee scenarios).")
+
+[Identity Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users)
 

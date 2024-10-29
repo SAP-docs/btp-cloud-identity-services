@@ -158,7 +158,6 @@ Existing applications that have a parent application assigned to them will inher
 -   Subject Name Identifier
 -   Default Name ID Format
 -   Attributes
--   Client Authentication
 -   Dependencies
 -   Risk-Based Authentication
 -   Email Verification

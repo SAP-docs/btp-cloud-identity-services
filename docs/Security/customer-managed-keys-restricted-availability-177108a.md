@@ -32,7 +32,7 @@ Before using the customer managed keys, be aware of the following specifics:
 -   SCIM filtering operators "`gt`" and "`lt`" are supported only for parameters `meta.created` and `meta.lastModified`.
 
 
-For more information, see [Identity Directory SCIM REST API](../Development/identity-directory-scim-rest-api-5be5692.md).
+For more information, see [Identity Directory API](../Development/identity-directory-api-5be5692.md).
 
 
 

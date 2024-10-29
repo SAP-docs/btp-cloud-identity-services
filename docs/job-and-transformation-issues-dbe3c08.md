@@ -2160,7 +2160,7 @@ If you want the service to read only part of the entities in your source system 
 **Related Information**  
 
 
-[Administration issues](administration-issues-90ce2d5.md "")
+[Administration Issues](administration-issues-90ce2d5.md "")
 
 [Error Messages](error-messages-ad525a4.md "")
 

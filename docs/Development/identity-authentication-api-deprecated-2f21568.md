@@ -1,20 +1,27 @@
-<!-- loioa8fc935b8dde4a74aa9ad9885eb4f22c -->
+<!-- loio2f215687fcf34170b0bbc8b36b60f2e9 -->
 
-# SAP Cloud Identity Services Application Directory REST API
+# Identity Authentication API \(Deprecated\)
 
-Manage application configurations.
+Deprecated.
 
 
 
 > ### Note:  
-> The API is available on the SAP Business Accelerator Hub: [SAP Cloud Identity Services Application Directory](https://api.sap.com/api/SCI_Application_Directory/overview)
+> This API is deprecated. Please use [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/overview) instead. For more information, see [Migrating Deprecated Identity Authentication API to Identity Directory API](migrating-deprecated-identity-authentication-api-to-identity-directory-api-106dbe0.md).
+
+> ### Tip:  
+> Information about the deprecated API is available on the SAP Business Accelerator Hub: [Identity Authentication API \(Deprecated\)](https://api.sap.com/api/IAS_SCIM/overview).
 
 **Related Information**  
 
 
-[Identity Directory SCIM REST API](identity-directory-scim-rest-api-5be5692.md "Manage users, groups and custom schemas in the cloud.")
+[Application Configurations API](application-configurations-api-a8fc935.md "Manage application configurations.")
 
-[SCIM REST API \(Deprecated\)](scim-rest-api-deprecated-2f21568.md "This section contains information about the Identity Authentication implementation of the System for Cross-domain Identity Management (SCIM) REST API protocol.")
+[Identity Directory API](identity-directory-api-5be5692.md "Manage users, groups and custom schemas in the cloud.")
+
+[Identity Provisioning API](identity-provisioning-api-4433374.md "Manage identity lifecycle processes for cloud and on-premise systems.")
+
+[Migrating Deprecated Identity Authentication API to Identity Directory API](migrating-deprecated-identity-authentication-api-to-identity-directory-api-106dbe0.md "Migrating from the Identity Authentication API to Identity Directory API.")
 
 [Invitation REST API](invitation-rest-api-e55429f.md "The invitation service allows you to implement a request for user invitations.")
 
@@ -29,4 +36,8 @@ Manage application configurations.
 [Change Tenant Texts REST API](change-tenant-texts-rest-api-66ad80a.md#loio66ad80a6bbaf4fc3911232f7cc9a7de6 "The Change Tenant Texts REST API of Identity Authentication can be used to change the predefined texts and messages for end-user screens available per tenant in the Identity Authentication.")
 
 [Change Master Data Texts REST API](change-master-data-texts-rest-api-b10fc6a.md#loiob10fc6a9a37c488a82ce7489b1fab64c "The Change Master Data Texts REST API can be used to change the predefined master data for each resource in Identity Authentication.")
+
+[System for Cross-Domain Identity Management](https://tools.ietf.org/html/draft-ietf-scim-api-19)
+
+[SCIM Data Types](https://tools.ietf.org/html/rfc7643#section-2.3)
 
