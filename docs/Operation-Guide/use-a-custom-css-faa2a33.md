@@ -63,7 +63,7 @@ Upload a Quartz or Horizon CSS file for custom end-user screens or the profile p
     > ### Note:  
     > Type the name of the CSS style in the search field to filter the list items, or choose the CSS style from the list on the left.
     > 
-    > If you do not have a CSS style in your list, you can create one by choosing the *Add* button on the left-hand panel.
+    > If you do not have a CSS style list, you can create one by choosing the *Add* button on the screen.
 
 4.  Browse for a CSS file and upload it for the respective theme.
 

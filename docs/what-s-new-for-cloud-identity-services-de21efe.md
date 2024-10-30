@@ -100,6 +100,77 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Password Recovery
+
+</td>
+<td valign="top">
+
+You can enable or disable the option to reset the user password via an email link. See [Enable Users to Recover Password via Email](Operation-Guide/enable-users-to-recover-password-via-email-5b9f909.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-11-05
+
+</td>
+<td valign="top">
+
+2024-11-05
+
+</td>
+<td valign="top">
+
+2411a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Regional Availability
 
 </td>
@@ -178,12 +249,21 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-Regular Upgrade
+SAP BTP Platform Members \(Cloud Foundry\) connector
 
 </td>
 <td valign="top">
 
-Cloud Identity Services have been upgraded.
+Identity Provisioning supports the SAP BTP Platform Members \(Cloud Foundry\) connector. You can configure it as source, target, and proxy system for your provisioning scenarios. See:
+
+-   [SAP BTP Platform Members \(Cloud Foundry\) \(Source\)](sap-btp-cloud-foundry-platform-members-027324d.md)
+
+-   [SAP BTP Platform Members \(Cloud Foundry\) \(Target\)](sap-btp-cloud-foundry-platform-members-f5cefa9.md)
+
+-   [\(Proxy\)](sap-btp-cloud-foundry-platform-members-93807cf.md)
+
+
+
 
 </td>
 <td valign="top">
@@ -213,17 +293,17 @@ Not applicable
 </td>
 <td valign="top">
 
-Cloud Identity Services 
+Cloud Identity Services
 
 </td>
 <td valign="top">
 
-2024-10-22
+2024-10-31
 
 </td>
 <td valign="top">
 
-2024-10-22
+2024-10-31
 
 </td>
 <td valign="top">
@@ -249,12 +329,255 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-Password Recovery
+Support for OAuth certificate authentication
 
 </td>
 <td valign="top">
 
-You can enable or disable the option to reset the user password via an email link. See [Enable Users to Recover Password via Email](Operation-Guide/enable-users-to-recover-password-via-email-5b9f909.md).
+SAP Build Work Zone, advanced edition supports OAuth certificate authentication.
+
+For more information, see [SAP Build Work Zone, advanced edition](sap-build-work-zone-advanced-edition-787502d.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services
+
+</td>
+<td valign="top">
+
+2024-10-31
+
+</td>
+<td valign="top">
+
+2024-10-31
+
+</td>
+<td valign="top">
+
+2410b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regional Availability
+
+</td>
+<td valign="top">
+
+Cloud Identity Services now operates with new NAT IPs in the data centers in Australia \(Sydney\), Switzerland \(Zürich\), Canada \(Toronto\), West УС 2, \(Trial\) East US:
+
+Action:
+
+We recommend you to add the following IPs to your allowed NAT IP list:
+
+-   Australia \(Sydney\) - 13.70.93.153/32
+-   Switzerland \(Zürich\) - 172.161.63.46/32, 172.161.59.62/32
+-   Canada \(Toronto\) - 4.206.67.217/32, 4.205.230.84/32
+-   West US 2 - 4.246.74.117/32, 13.66.186.117/32
+-   \(Trial\) East US - 172.171.209.145/32, 172.190.167.36/32
+
+The following NAT IPs are no longer in use:
+
+-   Australia \(Sydney\) - 20.227.66.135/32, 20.227.66.154/32
+-   Switzerland \(Zürich\) - 4.226.38.130/32, 4.226.41.61/32, 4.226.38.140/32, 4.226.41.79/32
+-   Canada \(Toronto\) - 4.174.217.56/32, 4.174.217.58/32, 4.174.177.186/32, 4.174.177.194/32
+-   West US 2 - 52.137.107.38/32, 52.137.108.207/32, 4.155.183.68/32, 4.155.183.41/32
+-   \(Trial\) East US - 20.62.179.159/32, 20.62.181.214/32, 20.62.180.136/32
+
+See [Regional Availability](regional-availability-be600ca.md).
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-10-30
+
+</td>
+<td valign="top">
+
+2024-10-30
+
+</td>
+<td valign="top">
+
+2410b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regional Availability
+
+</td>
+<td valign="top">
+
+Cloud Identity Services now operates with new NAT IPs in the data center in Germany \(Frankfurt\):
+
+Action:
+
+We recommend you to add the following IPs to your allowed NAT IP list: 35.159.253.27/32, 18.192.171.14/32, 63.176.37.171/32, 3.65.162.41/32, 18.193.241.90/32, 18.199.198.32/32
+
+The following NAT IPs are no longer in use: 52.57.77.94/32, 3.64.73.63/32, 18.192.191.4/32
+
+See [Regional Availability](regional-availability-be600ca.md).
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-10-23
+
+</td>
+<td valign="top">
+
+2024-10-23
+
+</td>
+<td valign="top">
+
+2410b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
 
 </td>
 <td valign="top">
