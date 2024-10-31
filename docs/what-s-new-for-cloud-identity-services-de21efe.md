@@ -256,11 +256,11 @@ SAP BTP Platform Members \(Cloud Foundry\) connector
 
 Identity Provisioning supports the SAP BTP Platform Members \(Cloud Foundry\) connector. You can configure it as source, target, and proxy system for your provisioning scenarios. See:
 
--   [SAP BTP Platform Members \(Cloud Foundry\) \(Source\)](sap-btp-cloud-foundry-platform-members-027324d.md)
+-   [SAP BTP Platform Members \(Cloud Foundry\) \(Source\)](sap-btp-platform-members-cloud-foundry-027324d.md)
 
--   [SAP BTP Platform Members \(Cloud Foundry\) \(Target\)](sap-btp-cloud-foundry-platform-members-f5cefa9.md)
+-   [SAP BTP Platform Members \(Cloud Foundry\) \(Target\)](sap-btp-platform-members-cloud-foundry-f5cefa9.md)
 
--   [\(Proxy\)](sap-btp-cloud-foundry-platform-members-93807cf.md)
+-   [SAP BTP Platform Members \(Cloud Foundry\) \(Proxy\)](sap-btp-platform-members-cloud-foundry-93807cf.md)
 
 
 

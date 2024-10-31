@@ -1004,9 +1004,13 @@ SAP Sales Cloud and SAP Service Cloud
 </td>
 <td valign="top">
 
-It denotes the `origin` attribute in the system transformation.
+The value of this property is the origin key of your SAP Cloud Identity Services tenant.
 
-The value of this property is the location of your Cloud Foundry identity provider. If not sure about the value, ask your Cloud Foundry system administrator.
+You can find it in the SAP BTP cockpit. Go to your SAP BTP subaccount, choose *Trust Configuration* and see the value under *Origin Key* for the relevant *Custom Identity Provider for Platform Users*.
+
+The value of this property is a string, which always ends with the suffix *\-platform*.
+
+It will be used as the *origin* attribute in the system transformation.
 
 **Possible values:** Text/numeric string
 
@@ -1027,9 +1031,9 @@ SAP BTP Platform Members \(Cloud Foundry\)
 </td>
 <td valign="top">
 
-Enter the technical key of the region in which your SAP BTP subaccount is located. For more information, see [Regions and API Endpoints Available for the Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/regions-and-api-endpoints-available-for-cloud-foundry-environment?version=Cloud).
+Enter the technical key of the landscape in which your multi-environment subaccount with enabled Cloud Foundry environment is located. For more information, see [Regions and API Endpoints Available for the Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/regions-and-api-endpoints-available-for-cloud-foundry-environment?version=Cloud).
 
-If you are using a subaccount in SAP BTP, partner-managed edition, enter the landscape domain of your central region.
+For example: `cf-eu10-002`
 
 **Possible values:** Text/numeric string
 
@@ -1066,6 +1070,29 @@ You can use the example value or provide your own.
 
 
 **System Role:** Source and Target
+
+</td>
+<td valign="top">
+
+SAP BTP Platform Members \(Cloud Foundry\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`btp.cf.pm.user.filter` 
+
+</td>
+<td valign="top">
+
+When specified, only those SAP BTP Platform Members \(Cloud Foundry\) users matching the filter expression will be read.
+
+**Possible values:**
+
+For example: *userName eq "SmithJ"*
+
+**System Role:**Source, Proxy
 
 </td>
 <td valign="top">
@@ -2953,21 +2980,22 @@ In case the property is not set, only delta read jobs will be executed. For more
 </td>
 <td valign="top">
 
-This property holds the value of the *applicationId* group attribute. Its main purpose is to show that a group is associated with a particular application. This is an optional property set by the customer, which is relevant only for tenants running on SAP Cloud Identity Services infrastructure.
+This property holds the value of the *applicationId* group attribute. Its main purpose is to show that a group is associated with a particular application. This is an optional property set by the customer.
 
-The *application ID* is the identifier of an application configured in SAP Cloud Identity Services - Identity Authentication that corresponds to a particular source system configured in SAP Cloud Identity Services - Identity Provisioning. It is used to distinguish groups provisioned from various source systems to the Identity Directory of SAP Cloud Identity Services.
+The *application ID* is the identifier of an application configured in SAP Cloud Identity Services - Identity Authentication that corresponds to a particular source system configured in the *Identity Provisioning* admin consoleadministration console for SAP Cloud Identity Services. It is used to distinguish groups provisioned from various source systems to the Identity Directory of SAP Cloud Identity Services.
 
 When the property is set, the groups are provisioned with their *applicationId* attribute which is internally mapped to the name of the corresponding application. As a result, the name of the associated application with the group is displayed in the *Application Name* field under *Users&Authorizations* \> *Groups*.
-
-> ### Note:  
-> Currently the property is supported for SAP Advanced Financial Closing only.
 
 **System Role:** Source
 
 </td>
 <td valign="top">
 
-SAP Advanced Financial Closing
+-   SAP Advanced Financial Closing
+
+-   SAP BTP Platform Members \(Cloud Foundry\)
+
+
 
 </td>
 </tr>

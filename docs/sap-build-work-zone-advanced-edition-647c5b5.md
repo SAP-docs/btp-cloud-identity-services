@@ -37,7 +37,21 @@ These source systems consume SCIM 2.0 API provided by SAP Build Work Zone, advan
 
 3.  Add *SAP Build Work Zone, advanced edition* as a source system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
-4.  Choose the *Properties* tab to configure the connection settings for your system.
+4.  Set up the communication between Identity Provisioning and SAP Build Work Zone, advanced edition and configure the authentication method \(basic or OAuth certificate-based\).
+
+    > ### Note:  
+    > We recommend that you use OAuth certificate-based authentication in the regions where it is supported by SAP Build Work Zone, advanced edition. This authentication method is supported for subaccounts created on the recommended data centers for new customers according to the [SAP Build Work Zone, advanced edition documentation](https://help.sap.com/docs/build-work-zone-advanced-edition/sap-build-work-zone-advanced-edition/prerequisites#create-a-subaccount).
+
+    1.  In your newly added SAP Build Work Zone, advanced edition source system, select the *Certificate* tab and choose *Generate* \> *Download*, as described in [Generate and Manage Certificates for Outbound Connection](Operation-Guide/generate-and-manage-certificates-for-outbound-connection-76867db.md).
+
+        Skip step **a.** if you want to use basic authentication.
+
+        The next steps are performed in the SAP Build Work Zone, advanced edition Admin Console and are relevant for certificate-based authentication only.
+
+    2.  Login to the SAP Build Work Zone, advanced edition Admin Console and execute substep *2. f. iii. Use X.509 Certificate-Based Authentication* from *Step 3: Configure the Identity Authentication service and the Identity Provisioning service* in [Option 1: Create a new tenant](https://help.sap.com/docs/build-work-zone-advanced-edition/sap-build-work-zone-advanced-edition/run-configurator?locale=en-US#option-1%3A-create-a-new-tenant).
+
+
+5.  Choose the *Properties* tab to configure the connection settings for your system.
 
     > ### Note:  
     > If your tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
@@ -108,7 +122,14 @@ These source systems consume SCIM 2.0 API provided by SAP Build Work Zone, advan
     </td>
     <td valign="top">
     
-    Enter: *BasicAuthentication*
+    Enter your authentication method:
+
+    -   *BasicAuthentication*
+
+    -   *ClientCertificateAuthentication*
+
+
+
     
     </td>
     </tr>
@@ -120,6 +141,8 @@ These source systems consume SCIM 2.0 API provided by SAP Build Work Zone, advan
     </td>
     <td valign="top">
     
+    Valid if *BasicAuthentication* is configured as authentication method.
+
     Enter the OAuth client key, created for your SAP Build Work Zone, advanced edition tenant \(see **Prerequisites**\).
     
     </td>
@@ -132,6 +155,8 @@ These source systems consume SCIM 2.0 API provided by SAP Build Work Zone, advan
     </td>
     <td valign="top">
     
+    Valid if *BasicAuthentication* is configured as authentication method.
+
     \(Credential\) Enter the OAuth client secret, created for your SAP Build Work Zone, advanced edition tenant \(see **Prerequisites**\).
     
     </td>
@@ -144,9 +169,39 @@ These source systems consume SCIM 2.0 API provided by SAP Build Work Zone, advan
     </td>
     <td valign="top">
     
-    Enter the URL of the access token provider service for your SAP Build Work Zone, advanced edition instance, in format: `https://<account><sap_wz_domain>.workzone.ondemand.com/api/v1/auth/token` 
+    Enter the URL of the access token provider service for your SAP Build Work Zone, advanced edition instance, based on the configured authentication method:
 
-    For example: *https://myaccount.mydomain123.workzone.ondemand.com/api/v1/auth/token*
+    -   *BasicAuthentication* - `https://<account><sap_wz_domain>.workzone.ondemand.com/api/v1/auth/token` 
+
+        For example: *https://myaccountmydomain123.workzone.ondemand.com/api/v1/auth/token*
+
+
+
+    -   *ClientCertificateAuthentication* - `https://<company_uuid>.api-<region_host>.dws.workzone.ondemand.com/api/v2/auth/token` 
+
+        > ### Note:  
+        > The `api-` prefix before `<region_host>` is necessary for using *ClientCertificateAuthentication* authentication.
+
+        For example: *https://mycompanyuuid123.api-eu-20.dws.workzone.ondemand.com/api/v2/auth/token*
+
+
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `client_id`
+    
+    </td>
+    <td valign="top">
+    
+    Valid if *ClientCertificateAuthentication* is configured as authentication method.
+
+    Enter the OAuth Client id used for access token retrieval.
     
     </td>
     </tr>
@@ -213,7 +268,7 @@ These source systems consume SCIM 2.0 API provided by SAP Build Work Zone, advan
     
     To learn what additional properties are relevant to this system, see [List of Properties](list-of-properties-d6f3577.md). You can use the main search, or filter properties by the *Name* or *System Type* columns.
 
-5.  Configure the transformations.
+6.  Configure the transformations.
 
     Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Build Work Zone, advanced edition* source system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
@@ -389,7 +444,7 @@ These source systems consume SCIM 2.0 API provided by SAP Build Work Zone, advan
     > }
     > ```
 
-6.  Now, add a target system to provision users and groups into it. Choose from: [Target Systems](target-systems-ab3f641.md)
+7.  Now, add a target system to provision users and groups into it. Choose from: [Target Systems](target-systems-ab3f641.md)
 
 
 

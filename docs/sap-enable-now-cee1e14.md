@@ -86,9 +86,9 @@ You can use Identity Provisioning to configure SAP Enable Now as a source system
     
     Enter the URL to your SAP Enable Now system. It follows the pattern:
 
-    -   <code>https://<i class="varname">&lt;company-name&gt;</i>.enable-now.cloud.sap/scim/v2</code>
+    -   <code>https://<i class="varname">&lt;company-name&gt;</i>.enable-now.cloud.sap</code>
 
-    -   <code>https://<i class="varname">&lt;company-name&gt;</i>.sap-enable-now.cn/scim/v2</code> \(relevant for China\)
+    -   <code>https://<i class="varname">&lt;company-name&gt;</i>.sap-enable-now.cn</code> \(relevant for China\)
 
 
 
