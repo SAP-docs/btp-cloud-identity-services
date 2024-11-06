@@ -848,7 +848,7 @@ To create SAP Concur as a target system, proceed as follows:
     > </tr>
     > </table>
     > 
-    > In addition, make sure that this mapping is aligned with the configuration of Name ID attribute in Identity Authentication, as described in [Section 13: Appendix - SAP Identity Authentication Service \(IAS\) Setup in SAP Concur](https://www.concurtraining.com/customers/tech_pubs/Docs/_Current/SG_Shr/Shr_SG_SSO_Mgmt.pdf).
+    > In addition, make sure that this mapping is aligned with the configuration of Name ID attribute in Identity Authentication, as described in [Appendix – SAP Cloud Identity Services - Identity Authentication Service \(SAP IAS\) Setup](https://help.sap.com/docs/SAP_CONCUR/8b1fb4bc53c843c080bcfc4b965366a1/1b82f8af6caf101483b9b0372adb2c3a.html).
 
 6.  Now, add a source system from which to read users. Choose from: [Source Systems](source-systems-58033be.md)
 

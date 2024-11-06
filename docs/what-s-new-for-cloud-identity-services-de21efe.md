@@ -100,6 +100,150 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-11-05
+
+</td>
+<td valign="top">
+
+2024-11-05
+
+</td>
+<td valign="top">
+
+2411a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Increased Maximum OIDC Token Validity
+
+</td>
+<td valign="top">
+
+With this release, we have increased the maximum validity of access and ID tokens for OpenID Connect applications from 1 hour to 12 hours. The default validity remains 1 hour.
+
+For more information , see [Tenant OpenID Connect Configurations](Operation-Guide/tenant-openid-connect-configurations-3d6abcc.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-11-05
+
+</td>
+<td valign="top">
+
+2024-11-05
+
+</td>
+<td valign="top">
+
+2411a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Password Recovery
 
 </td>
@@ -214,6 +358,85 @@ Not applicable
 <td valign="top">
 
 Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-11-05
+
+</td>
+<td valign="top">
+
+2024-11-05
+
+</td>
+<td valign="top">
+
+2411a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Changed behavior of skip create for SAP Application Server ABAP 
+
+</td>
+<td valign="top">
+
+The behavior of SAP Application Server ABAP target transformation that contains *skip* operations for create has been changed.
+
+Previously, Identity Provisioning used to update the resolved users and to provision new users into the target system. After the change, Identity Provisioning updates only users resolved by `userName` in the target system, while the rest of the users are marked as skipped.
+
+For more information, see [Transformation Expressions](transformation-expressions-bb8537b.md) → skipOperations.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Neo
+
+Kyma
+
+Cloud Foundry
 
 </td>
 <td valign="top">
@@ -407,7 +630,7 @@ Regional Availability
 </td>
 <td valign="top">
 
-Cloud Identity Services now operates with new NAT IPs in the data centers in Australia \(Sydney\), Switzerland \(Zürich\), Canada \(Toronto\), West УС 2, \(Trial\) East US:
+Cloud Identity Services now operates with new NAT IPs in the data centers in Australia \(Sydney\), Switzerland \(Zürich\), Canada \(Toronto\), West US 2, \(Trial\) East US:
 
 Action:
 

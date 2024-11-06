@@ -110,7 +110,7 @@ Get your productive and test tenant as part of a self-service request in SAP BTP
     > ### Note:  
     > For each service plan you must have a separate subaccount.
     > 
-    > The default plan allows you to consume Identity Authentication, Identity Provisioning, and Identity Directory services. The new instances are created only if there aren't already existing instances of the same type \(productive or test\) bound to your customer ID, regardless of the region.
+    > The default plan allows you to consume SAP Cloud Identity Services. New tenants are created only if there aren't already existing tenants of the same type \(productive or test\) bound to your customer ID, regardless of the region.
     > 
     > The default test and productive tenants will be created in the same region.
 
@@ -127,7 +127,7 @@ Get your productive and test tenant as part of a self-service request in SAP BTP
 > ### Note:  
 > **SAP BTP, Neo subaccount**
 > 
-> If you have a global account with Neo subaccount, you can get a productive tenant and use it for free under the [General Terms and Conditions for SAP Cloud Services](https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?sort=latest_desc&search=General%20Terms%20and%20Conditions). For this, you need to open your Neo subaccount, navigate to *Services* \> *Identity Authentication* tile and enable the service. The new instances are created only if there aren't existing productive instances bound to your customer ID already.
+> If you have a global account with Neo subaccount, you can get a productive tenant and use it for free under the [General Terms and Conditions for SAP Cloud Services](https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?sort=latest_desc&search=General%20Terms%20and%20Conditions). For this, you need to open your Neo subaccount, navigate to *Services* \> *Identity Authentication* tile and enable the service. The new tenants are created only if there aren't existing productive tenants bound to your customer ID already.
 
 
 
@@ -188,7 +188,9 @@ To get additional tenant using SAP BTP multi-environment subaccount, proceed as 
 > 
 > If you have a global account with an SAP BTP, Neo subaccount, you can get additional tenant, too. Open your existing CPEA Neo account or create new CPEA Neo account, navigate to *Services* \> *Identity Authentication - Additional Tenant* tile and enable the service.
 > 
-> Identity Authentication additional productive tenant will be created and the account member who triggered the creation will get an activation email. If you decide to remove that additional tenant for the subaccount by choosing the *Delete* button, note that the tenant is deleted immediately.
+> Identity Authentication additional productive tenant will be created and the account member who triggered the creation will get an activation email. Note that test tenants cannot be created from a Neo subaccount.
+> 
+> If you decide to remove that additional tenant for the subaccount by choosing the *Delete* button, note that the tenant is deleted immediately.
 
 
 

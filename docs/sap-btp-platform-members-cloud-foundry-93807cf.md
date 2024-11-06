@@ -48,7 +48,7 @@ In SAP BTP Platform Members \(Cloud Foundry\), groups correspond to roles in par
 You can use SAP BTP Platform Members \(Cloud Foundry\) as a proxy connector to execute hybrid scenarios. That means, it can provision its entities to another \(external\) back-end system by request, and then can continue executing CRUD operations back to SAP BTP Platform Members \(Cloud Foundry\), whenever the external back-end requests such.
 
 > ### Remember:  
-> This connector enables you to write users and user role assignments to Cloud Foundry on *subaccount* level. For provisioning of users and groups to Cloud Foundry on *aplication* level, refer to [Cloud Foundry UAA Server](cloud-foundry-uaa-server-22d8f23.md).
+> This connector enables you to write users and user role assignments to Cloud Foundry on *subaccount* level. For provisioning of users and groups to Cloud Foundry on *application* level, refer to [SAP BTP XS Advanced UAA \(Cloud Foundry\)](sap-btp-xs-advanced-uaa-cloud-foundry-ecddce6.md).
 
 The proxy system consumes User Account and Authentication API and Cloud Foundry V3 API provided by Cloud Foundry.
 
@@ -576,4 +576,9 @@ To see an example with SAP Identity Management, see [Hybrid Scenario: SAP Identi
 > For example: **GET** *https://ipsproxyabcd12345-xyz789.dispatcher.cn1.platform.sapcloud.cn/ipsproxy/api/v1/scim/bbb111aa-1234-aaaa-7777-1234567abcde/Users/s123456789*
 > 
 > To learn more, see: [Proxy Systems](proxy-systems-b10d68a.md)
+
+**Related Information**  
+
+
+[SAP BTP Integration Scenario](https://help.sap.com/docs/cloud-identity/system-integration-guide/sap-btp-integration-scenario)
 

@@ -22,7 +22,7 @@ For the configuration, you have to provide the base64-encoded certificate as a f
 
 By default all scope options are selected and the *Scope* field is disabled. Your certificates are used for all scopes.
 
-Identity Authentication supports the following as trusted certificate authorities \(CA\): SAP Passport CA G2, SAP SSO CA G2, SAP Cloud Root CA, SAP Global Root CA, DigiCert TLS RSA SHA256 2020 CA1, DigiCert Global Root CA, SAP Cloud Platform Client CA, ConnectivityCA.
+Identity Authentication, by default, supports the following as trusted certificate authorities \(CA\): SAP Passport CA G2, SAP SSO CA G2, SAP Cloud Root CA, SAP Global Root CA, DigiCert TLS RSA SHA256 2020 CA1, DigiCert Global Root CA, SAP Cloud Platform Client CA, ConnectivityCA.
 
 
 

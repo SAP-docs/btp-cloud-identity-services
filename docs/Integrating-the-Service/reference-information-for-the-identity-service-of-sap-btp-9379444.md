@@ -27,12 +27,12 @@ The syntax of the properties is as follows:
 		"post-logout-redirect-uris": ["https://*.myapp_namespace.cfapps.eu10.hana.ondemand.com/logout/**"],
 		"front-channel-logout-uris": ["https://myapp.mydomain.com/fc-logout"],
 		"public-client": false,
+		"grant-types": ["client_credentials", "authorization_code"],
 		"token-policy": {
 			"token-validity": 1800,
 			"refresh-validity": 7776000,
 			"refresh-parallel" : 3,
-			"refresh-usage-after-renewal" : "off",
-			"grant-types": ["client_credentials", "authorization_code"]
+			"refresh-usage-after-renewal" : "off"
 		}
 	},
 	"consumed-services": [{
@@ -189,6 +189,20 @@ For more information, see:
 <tr>
 <td valign="top">
 
+`grant-types`
+
+</td>
+<td valign="top">
+
+An array of allowed grant types. By default, the following grant types are allowed: `client_credentials`, `password`, `authorization_code`, `refresh_token`, and `urn:ietf:params:oauth:grant-type:token-exchange`.
+
+The following grant types can be added: `implicit`, `urn:ietf:params:oauth:grant-type:jwt-bearer` and `authorization_code_pkce_s256`.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `token-policy`
 
 </td>
@@ -261,20 +275,6 @@ Defines the validity of the old refresh token after requesting a new one through
 -   `mobile` - The new and old refresh tokens are valid during the configured refresh token life time.
 
 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`grant-types`
-
-</td>
-<td valign="top">
-
-An array of allowed grant types. By default, the following grant types are allowed: `client_credentials`, `password`, `authorization_code`, `refresh_token`, and `urn:ietf:params:oauth:grant-type:token-exchange`.
-
-The following grant types can be added: `implicit`, `urn:ietf:params:oauth:grant-type:jwt-bearer` and `authorization_code_pkce_s256`.
 
 </td>
 </tr>

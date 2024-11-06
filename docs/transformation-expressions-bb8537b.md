@@ -1007,59 +1007,21 @@ You can use `skipOperations` only in target system transformations.
 
     The Identity Provisioning service will skip creating the existing entities and will try to update them. There are two options for resolving the existing users by the service.
 
-    **Option 1:** In case the update operation is executed via PATCH request, the Identity Provisioning service will search and resolve the existing users by the default or predefined unique attributes for the system.
+    **Option 1:** If the update operation is performed using a PATCH request, or a PUT request when the system is SCIM-based, the Identity Provisioning service will search and resolve existing users based on the system’s default or predefined unique attributes.
 
-    In case the update operation is executed via PUT request, the Identity Provisioning service will use the same users resolution flow if the target system is included in the list below:
-
-    -   Cloud Foundry UAA server
-    -   Identity Authentication
-    -   Local Identity Directory
-    -   Sales Cloud – Analytics & AI
-    -   SAP Advanced Financial Closing
-    -   SAP Analytics Cloud
-    -   SAP Ariba Applications
-    -   SAP BTP Account Members \(Neo\)
-    -   SAP BTP XS Advanced UAA \(Cloud Foundry\)
-    -   SAP Business Network
-    -   SAP Build Work Zone, advanced edition
-    -   SAP Build Work Zone, standard edition
-    -   SAP Central Business Configuration
-    -   SAP Commerce Cloud
-    -   SAP SuccessFactors Incentive Management
-    -   SAP Concur version 2
-    -   SAP CPQ
-    -   SAP Data Custodian
-    -   SAP Enterprise Portal
-    -   SAP Fieldglass
-    -   SAP Field Service Management
-    -   SAP Intelligent Agriculture
-    -   SAP Jam Collaboration
-    -   SAP Sales Cloud and SAP Service Cloud
-    -   SAP SuccessFactors Learning
-    -   SAP SuccessFactors version 2
-    -   SAP S/4HANA for procurement planning
-    -   SCIM System
+    For more information about the SCIM-based systems, see [System Types](system-types-e59ae54.md).
 
     For more information about the unique attributes of your system, see [List of Properties](list-of-properties-d6f3577.md).
 
-    **Option 2:** In all other cases that differ from the abovementioned, the existing users are resolved by retrieving their IDs. In order for the *skip create* operation to be executed without error, you also need to make a few adjustments in your source and target transformations. This way, the service will get and retrieve the IDs of the entities correctly.
+    **Option 2:** In all other cases that differ from the above mentioned \(the target system is LDAP-based, RFC-based, SOAP or OData-based\), the existing users are resolved by retrieving their IDs. In order for the *skip create* operation to be executed without an error, you need to make a few adjustments in your source and target transformations. This way, the service will search and retrieve the IDs of the entities correctly. An example how to modify your source and target transformations is included below.
 
-    > ### Note:  
-    > If an entity does not exist in the target system \(which means, a retrieved ID does not match any target entity\), this entity will neither be created, nor updated.
+    In the following detailed example, *SAP SuccessFactors* is a source system and *SAP S/4HANA Cloud*, which is SOAP-based system, is a target. You want all users that exist on both systems to be skipped during creation and to only be updated on the target. If there are users existing only in the source system, they will not be created in the target. To do that:
 
-    In the following detailed example, *SAP SuccessFactors* is a source system and *Identity Authentication* is a target system. You want all users that exist on both systems to be skipped during creation and to only be updated on the target. If there are users existing only in the source system, they will not be created in the target. To do that:
+    1.  Open your *SAP SuccessFactors* admin console. For every user that you want to be provisioned and updated in *SAP S/4HANA Cloud*, you need to set up one of its predefined custom attributes \(*custom01* – *custom15*\), entering the *SAP S/4HANA Cloud* unique identifier for that user \(which is the value of the `personID` attribute\). For example, you can do that in the **custom10** attribute.
 
-    1.  Open your *SAP SuccessFactors* admin console. For every user that you want to be provisioned and updated in *Identity Authentication*, you need to set up one of its predefined custom attributes \(*custom01* – *custom15*\), entering the *Identity Authentication* unique identifier for that user. For example, you can do that in the **custom10** attribute.
+    2.  Then go to the *Identity Provisioning* admin consolethe administration console for SAP Cloud Identity Services, and in the *Properties* tab update the `sf.user.attributes` property, adding **custom10** to the list of attributes.
 
-        > ### Note:  
-        > The unique identifier that you have to set up for the relevant SAP SuccessFactors users depends on the API version of your Identity Authentication system.
-        > 
-        > -   For Identity Authentication SCIM API \(in short, *SCIM API version 1*\), enter the **User ID** \(P-user\).
-        > -   For Identity Directory SCIM API \(in short, *SCIM API version 2*\), enter the **User UUID**.
-
-    2.  Then go to the *Identity Provisioning* admin console, and in the *Properties* tab update the `sf.user.attributes` property, adding **custom10** to the list of attributes.
-
-    3.  In the *SAP SuccessFactors* source system, add the following extra user mapping. It maps **custom10** to a custom attribute in *Identity Authentication*, for example **custom\_IAS\_ID**:
+    3.  In the *SAP SuccessFactors* source system, add the following extra user mapping. It maps **custom10** to a custom attribute in *SAP S/4HANA Cloud*, for example **custom\_user\_ID**:
 
         > ### Example:  
         > ```
@@ -1069,7 +1031,7 @@ You can use `skipOperations` only in target system transformations.
         > 		"mappings": [
         > 		   {
         > 			"sourcePath": "$.custom10",
-        > 			"targetPath": "$.custom_IAS_ID",
+        > 			"targetPath": "$.custom_user_ID",
         > 			"optional": true
         > 		   },
         > 
@@ -1077,7 +1039,7 @@ You can use `skipOperations` only in target system transformations.
         >             
         > ```
 
-    4.  In the *Identity Authentication* target system, replace the following user mapping:
+    4.  In the *SAP S/4 HANA Cloud* target system, replace the following user mapping:
 
         > ### Example:  
         > ```
@@ -1086,9 +1048,9 @@ You can use `skipOperations` only in target system transformations.
         > 	"user": {
         >         "mappings": [
         > 		  {
-        > 			"sourceVariable": "entityIdTargetSystem",
-        > 			"targetPath": "$.id"
-        > 		  },
+        >        	  "targetPath": "$.personID",
+        >               "sourceVariable": "entityIdTargetSystem"
+        >      	  },
         > 
         > ...
         >             
@@ -1099,20 +1061,18 @@ You can use `skipOperations` only in target system transformations.
         > ### Example:  
         > ```
         > 
-        > 
-        >            {
-        >                 "sourcePath": "$.custom_IAS_ID",
-        >                 "targetVariable": "entityIdTargetSystem"
-        >             },
-        >             {
-        >                 "sourcePath": "$.custom_IAS_ID",
-        >                 "targetPath": "$.id"
-        >             },
-        > 
+        > 	{
+        >         "sourcePath": "$.custom_user_ID",
+        >         "targetVariable": "entityIdTargetSystem"
+        >       },
+        >       {
+        >         "targetPath": "$.personID",
+        >         "sourcePath": "$.custom_user_ID"
+        >       },
         >             
         > ```
 
-    5.  \(Optional\) If there are users that exist only in the source system and you don't want them to be created in the target, enhance the following condition in the *Identity Authentication* target transformation:
+    5.  \(Optional\) If there are users that exist only in the source system and you want them to be reported as skipped directly, without being processed further by the Identity Provisioning, adjust the *SAP S/4 HANA Cloud* target transformation by adding the following condition:
 
         > ### Example:  
         > ```
@@ -1120,17 +1080,21 @@ You can use `skipOperations` only in target system transformations.
         > {
         > 	"user": {  
         > 
-        >         "condition": "($.emails.length() > 0) && ($.name.familyName EMPTY false) && ($.custom_IAS_ID EMPTY false)",
+        >        "condition": "$.custom_user_ID EMPTY false",
         > 	      "mappings": [
         > . . .
         > 
         > ```
 
     6.  Run the first *Read* provisioning job.
-    7.  Check in the *Identity Authentication* admin console if the relevant "marked" users are updated, and that the rest are not. Also, check that users that exist only in *SAP SuccessFactors* \(if any\) are not created in *Identity Authentication*.
+    7.  Check in the *Identity Provisioning* admin consolethe administration console for SAP Cloud Identity Services if the relevant "marked" users are updated, and that the rest are not. Also, check that users that exist only in *SAP SuccessFactors* \(if any\) are not created in *SAP S/4 HANA Cloud*.
 
--   
--   
+    Such transformations adjustmants are not needed if your target system is SAP Application Server ABAP. In that case the Identity Provisioning service will search and resolve the existing users in the target system by `userName`.
+
+    > ### Note:  
+    > If an entity does not exist in the target system \(which means, a retrieved ID does not match any target entity\), it will neither be created, nor updated.
+
+
 **Possible values**:
 
 -   *create*

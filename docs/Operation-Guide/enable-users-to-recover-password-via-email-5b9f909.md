@@ -22,7 +22,7 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 > ### Remember:  
 > It takes 2 minutes for the configuration changes to take place.
 
-To configure the Email option in the administration console, follow the procedure:
+To configure the email option in the administration console, follow the procedure:
 
 
 
@@ -40,9 +40,7 @@ To configure the Email option in the administration console, follow the procedur
 
 5.  Choose *Edit* and select *Enabled* or *Disabled*.
 
-6.  Under *PIN Length*, choose the minimum required length of the PIN code.
-
-7.  Save your configuration.
+6.  Save your configuration.
 
     You can see information about your settings.
 

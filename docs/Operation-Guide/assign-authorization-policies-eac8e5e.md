@@ -37,7 +37,7 @@ As an administrator, you can assign authorizations to users.
 
 2.  Under *Applications & Resources*, choose the *Applications* tile.
 
-3.  Choose your application that supports authorization management. For information, see the documentation of the application.
+3.  Choose your application that supports authorization management. For more information, see the documentation of the application.
 
     The details page of your application has an *Authorization Policies* tab.
 

@@ -357,12 +357,12 @@ To add a system as a new tenant administrator, proceed as follows:
 
     -   *Certificate*
 
-        > ### Note:  
-        > You can upload a certificate, generate a new one, or insert it as a text.
-        > 
-        > You must provide a Common Name \(CN\) and password to generate the certificate. The maximum length of the CN is 64 characters. Once the certificate is generated, it is saved as a *.p12* file. The system populates the *Insert as Text* field with it, and provides the certificate attributes in the Subject DN. The common name \(CN\) in the generated certificate is in the format `<common name>` \(`<admin user ID>`\), where common name is the CN provided by the administrator, and admin user ID is the administrator's user id.
-        > 
-        > Identity Authentication supports the following as trusted certificate authorities \(CA\): SAP Passport CA G2, SAP SSO CA G2, SAP Cloud Root CA, SAP Global Root CA, DigiCert TLS RSA SHA256 2020 CA1, DigiCert Global Root CA, SAP Cloud Platform Client CA, ConnectivityCA.
+        You can upload a certificate, generate a new one, or insert it as a text.
+
+        You must provide a Common Name \(CN\) and password to generate the certificate. The maximum length of the CN is 64 characters. Once the certificate is generated, it is saved as a *.p12* file. The system populates the *Insert as Text* field with it, and provides the certificate attributes in the Subject DN. The common name \(CN\) in the generated certificate is in the format `<common name>` \(`<admin user ID>`\), where common name is the CN provided by the administrator, and admin user ID is the administrator's user id.
+
+        > ### Tip:  
+        > Identity Authentication, by default, supports the following as trusted certificate authorities \(CA\): SAP Passport CA G2, SAP SSO CA G2, SAP Cloud Root CA, SAP Global Root CA, DigiCert TLS RSA SHA256 2020 CA1, DigiCert Global Root CA, SAP Cloud Platform Client CA, ConnectivityCA.
 
         > ### Restriction:  
         > You can't use one and the same certificate for application and system as administrator authentication.

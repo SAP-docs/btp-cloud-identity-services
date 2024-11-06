@@ -12,18 +12,7 @@ Follow this procedure to set up a SAP BTP Platform Members \(Cloud Foundry\) as 
 
 -   You have a global account in SAP BTP with at least one multi-environment subaccount with enabled Cloud Foundry environment.
 
--   You have established trust between your SAP Cloud Identity Services tenant as custom identity provider for platform users and your global account\(s\) containing these subaccounts. For more information, see [Establish Trust and Federation of Custom Identity Providers for Platform Users](https://help.sap.com/docs/btp/sap-business-technology-platform/establish-trust-and-federation-of-custom-identity-providers-for-platform-users?locale=en-US&version=Cloud).
-
--   You have created a CF provisioning user \(which is a regular user of type *Employee* in the local identity directory of your SAP Cloud Identity Services tenant\) that will be used for provisioning. Give this user an email address with the following pattern `cf-user-provisioning-<origin_key>@sap.invalid`, where `<origin_key>` is the origin key of the trust configuration for BTP platform users which points to your SAP Cloud Identity Services tenant. You have set an initial password for the user and marked its email adress as *verified*. For more information, see [Create a New User](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/create-new-user?locale=en-US&version=Cloud) and [List and Edit User Details](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/list-and-edit-user-details?locale=en-US&version=Cloud).
-
-    > ### Note:  
-    > The password lifetime for the CF provisioning user depends on the password policy set for the *SAP Business Technology Platform* application in the administration console of SAP Cloud Identity Services. For more information, see [Set a Password Policy for an Application](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/set-password-policy-for-application?version=Cloud).
-
--   You have activated the account of the CF provisioning user by opening the *Profile Page* of SAP Cloud Identity Services, in a separate browser session, and changing its initial password. The URL has the following pattern: `https://<tenant ID>.accounts.ondemand.com` or `https://<tenant ID>.accounts.cloud.sap`
--   You have created the group *cf-user-provisioning* in your SAP Cloud Identity Services tenant and added the CF provisioning user to it. For more information, see [Create a New Group](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/create-new-user-group?locale=en-US&version=Cloud) and [Add Users to a Group](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/add-users-to-group?locale=en-US&version=Cloud).
-
--   You have added the CF provisioning user as org member with role **Org Manager** to each Cloud Foundry organization where you want to provision users, in the SAP BTP cockpit. For more information, see [Add Org Members](https://help.sap.com/docs/btp/sap-business-technology-platform/add-org-members-using-cockpit?locale=en-US&version=Cloud) and [About Roles in the Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/about-roles-in-cloud-foundry-environment?version=Cloud).
-
+-   You have added SAP BTP Platform Members \(Cloud Foundry\) as a source system for the same Cloud Foundry landscape and executed successfully a read job. For more information, see [SAP BTP Platform Members \(Cloud Foundry\)](sap-btp-platform-members-cloud-foundry-027324d.md).
 
 
 
@@ -45,7 +34,7 @@ In SAP BTP Platform Members \(Cloud Foundry\), groups correspond to roles in par
 The target system consumes User Account and Authentication API and Cloud Foundry V3 API provided by Cloud Foundry.
 
 > ### Remember:  
-> This connector enables you to write users and user role assignments to Cloud Foundry on *subaccount* level. For provisioning of users and groups to Cloud Foundry on *application* level, refer to [Cloud Foundry UAA Server](cloud-foundry-uaa-server-22d8f23.md).
+> This connector enables you to write users and user role assignments to Cloud Foundry on *subaccount* level. For provisioning of users and groups to Cloud Foundry on *application* level, refer to [SAP BTP XS Advanced UAA \(Cloud Foundry\)](sap-btp-xs-advanced-uaa-cloud-foundry-ecddce6.md).
 
 Follow the steps below to create SAP BTP Platform Members \(Cloud Foundry\) as a target system to provision users and user role assignments.
 
@@ -365,4 +354,9 @@ Follow the steps below to create SAP BTP Platform Members \(Cloud Foundry\) as a
 
 -   Before starting a provisioning job, you can first subscribe for e-mail notifications from the source system you use in your scenario. This way, you will be notified by e-mail about eventual failed entities during the jobs. For more information, see [Manage Job Notifications](Monitoring-and-Reporting/manage-job-notifications-d055bc2.md).
 -   Now, start an identity provisioning job. For more information, see [Monitor Provisioning Job Logs](Monitoring-and-Reporting/monitor-provisioning-job-logs-e5b5176.md).
+
+**Related Information**  
+
+
+[SAP BTP Integration Scenario](https://help.sap.com/docs/cloud-identity/system-integration-guide/sap-btp-integration-scenario)
 

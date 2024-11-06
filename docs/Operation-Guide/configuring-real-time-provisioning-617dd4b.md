@@ -12,7 +12,11 @@ The following diagram illustrates the process.
 
 ![](images/Real-Time_Provisioning-New_8bb84c3.png)
 
-Changes related to users in Identity Authentication can also be provisioned real-time directly to SAP Jam without using Identity Provisioning. For more information, see [Configure SAP Jam for Real-Time Provisioning](configure-sap-jam-for-real-time-provisioning-a923427.md)
+For more information on how to enable real-time sync in SAP SuccessFactors, see [Managing Identity Authentication/Identity Provisioning Real Time Sync](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/534356acc0ab4b0e8977ebfb2eb432f7/08bc4985a894495a9a92d8ec1549d43b.html?version=Latest).
+
+For more information on the real-time sync configuration in SAP SuccessFactors Learning, see [Learning Configuration Procedure](https://help.sap.com/docs/SAP_SUCCESSFACTORS_LEARNING/82cf7c83c7db42a8aa1d3bbdbc39e93d/3f29058a9dfe4ce38a3c774fbdf5339b.html?version=Latest).
+
+Changes related to users in Identity Authentication can also be provisioned real-time directly to SAP Jam without using Identity Provisioning. For more information, see [Configure SAP Jam for Real-Time Provisioning](configure-sap-jam-for-real-time-provisioning-a923427.md).
 
 
 

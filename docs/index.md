@@ -404,6 +404,7 @@
             -   [Search Users](Operation-Guide/search-users-06078a6.md)
             -   [List and Edit User Details](Operation-Guide/list-and-edit-user-details-045cb01.md)
             -   [Assign Authorization Policies](Operation-Guide/assign-authorization-policies-eac8e5e.md)
+                -   [Manage Authorization Policies for a Reuse Service Across Multiple Applications](Operation-Guide/manage-authorization-policies-for-a-reuse-service-across-multiple-applications-00a7707.md)
             -   [Block or Delete Users Due to Inactivity](Operation-Guide/block-or-delete-users-due-to-inactivity-744b2d0.md)
             -   [Delete Users](Operation-Guide/delete-users-bbfaf5f.md)
             -   [Deactivate Users](Operation-Guide/deactivate-users-99cf468.md)
