@@ -45,7 +45,7 @@ In SAP BTP Platform Members \(Cloud Foundry\), groups correspond to roles in par
 The target system consumes User Account and Authentication API and Cloud Foundry V3 API provided by Cloud Foundry.
 
 > ### Remember:  
-> This connector enables you to write users and user role assignments to Cloud Foundry on *subaccount* level. For provisioning of users and groups to Cloud Foundry on *aplication* level, refer to [Cloud Foundry UAA Server](cloud-foundry-uaa-server-22d8f23.md).
+> This connector enables you to write users and user role assignments to Cloud Foundry on *subaccount* level. For provisioning of users and groups to Cloud Foundry on *application* level, refer to [Cloud Foundry UAA Server](cloud-foundry-uaa-server-22d8f23.md).
 
 Follow the steps below to create SAP BTP Platform Members \(Cloud Foundry\) as a target system to provision users and user role assignments.
 
