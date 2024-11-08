@@ -82,7 +82,7 @@ The client receives the ***HTTP 429 Too Many Requests*** response status code fo
 
 ## OpenID Connect \(OIDC\) Endpoints
 
-To ensure a safe and stable environment, all requests to the `/oauth2` endpoints have a limit of 1000 requests per minute per tenant. When the limit is exceeded, the client receives the ***HTTP 429 Too Many Requests*** response status code. The requests are associated with the originating IP address, and not with the user making the requests.
+To ensure a safe and stable environment, all requests to the `/oauth2` endpoints have a limit of 1000 requests per minute per tenant. When the limit is exceeded, the client receives the ***HTTP 429 Too Many Requests*** response status code.
 
 For a list of the relevant endpoints, use the following URL:
 
@@ -100,5 +100,5 @@ If you've a custom domain configured, the URL has the following pattern:
 
 ## SAML 2.0 Endpoints
 
-To ensure a safe and stable environment, all requests to the `/saml2` endpoints have a limit of between 12000 and 15000 requests per minute per tenant. When the limit is exceeded, the client receives the ***HTTP 429 Too Many Requests*** response status code. The requests are associated with the originating IP address, and not with the user making the requests.
+To ensure a safe and stable environment, all requests to the `/saml2` endpoints have a limit of between 12000 and 15000 requests per minute per tenant. When the limit is exceeded, the client receives the ***HTTP 429 Too Many Requests*** response status code.
 

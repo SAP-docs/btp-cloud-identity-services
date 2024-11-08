@@ -28,6 +28,9 @@ You can also configure when the deletion script starts.
 > ### Note:  
 > If you configure both *Block after* and *Delete after* periods, the *Delete after* period must be longer than the *Block after* period.
 
+> ### Remember:  
+> Users that are created before the start of the deletion script, but have never logged in, will be deleted even if the period of their inactivity is less than the delete after period that is configured in the administration console.
+
 
 
 <a name="loio744b2d0b557041dab64f8fe824304a68__steps_xph_x4w_q4b"/>
@@ -49,7 +52,7 @@ You can also configure when the deletion script starts.
 6.  Under *Inactivity Periods*, choose *Enabled* and configure at least one of the status fields: *Block after* or *Delete after*.
 
     > ### Remember:  
-    > If you configure both *Block after* and *Delete after* periods, the *Delete after* period must longer than the *Block after* period.
+    > If you configure both *Block after* and *Delete after* periods, the *Delete after* period must be longer than the *Block after* period.
 
 7.  **Optional:** Configure the date after which the deletion script starts.
 
