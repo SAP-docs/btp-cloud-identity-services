@@ -271,6 +271,18 @@ cf-eu10 - Europe \(Frankfurt\)
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+ap-in - India \(Mumbai\)
+
+</td>
+<td valign="top">
+
+cf-in30 - India \(Mumbai\)
+
+</td>
+</tr>
 </table>
 
 <a name="task_hlb_hrr_gv"/>

@@ -25,7 +25,7 @@ Logon requests are independent of the authentication mechanism and user type.
 > ### Example:  
 > *SAP Applications*
 > 
-> -   A user wants to access SAP Build Workzone, an application that runs on SAP BTP. The application delegates authentication to Identity Authentication which is configured to act as a proxy and redirects to the corporate identity provider \(IdP\) for authentication. After successful authentication at the corporate IdP, Identity Authentication sends the single-sign-on \(SSO\) token to SAP Build Workzone. This request counts as a free of charge logon to Identity Authentication.
+> -   A user wants to access SAP Build WorkzoneIdentity Authentication which is configured to act as a proxy and redirects to the corporate identity provider \(IdP\) for authentication. After successful authentication at the corporate IdP, , an application that runs on SAP BTP. The application delegates authentication to Identity Authentication sends the single-sign-on \(SSO\) token to , an applicationSAP Build Workzone. This request counts as a free of charge logon to Identity Authentication.
 > 
 > -   A user wants to access SAP Integrated Business Planning \(IBP\). The user goes to Identity Authentication via a direct link. After providing the required credentials, Identity Authentication authenticates the user and sends assertion about the user to the service provider, which, in turn, validates the assertion and gives access rights to the user. Identity Authentication redirects the user to SAP IBP. This request counts as a free of charge logon to Identity Authentication.
 > 
@@ -493,7 +493,34 @@ Google Cloud
 </td>
 <td valign="top">
 
-Saudi Arabia \(Dammam\)
+KSA \(Dammam\)
+
+</td>
+<td valign="top">
+
+sa30
+
+</td>
+<td valign="top">
+
+Dammam, Saudi Arabia, Middle East
+
+</td>
+<td valign="top">
+
+Google Cloud
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Google Cloud
+
+</td>
+<td valign="top">
+
+KSA \(Dammam\)
 
 </td>
 <td valign="top">
@@ -508,7 +535,7 @@ Saudi Arabia \(Riyadh, Dammam\)
 </td>
 <td valign="top">
 
-Google Cloud
+SAP, Google Cloud
 
 </td>
 </tr>

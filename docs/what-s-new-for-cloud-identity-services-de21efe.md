@@ -100,6 +100,79 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Identity Directory API
+
+</td>
+<td valign="top">
+
+We have introduced a new implementation of the **PATCH** method of the [Identity Direcory API](https://api.sap.com/api/IdDS_SCIM/overview) for all tenants in all Cloud Identity Services data centers except the ones in North America and Europe. The behavior of the new implementation is the same as the old one.
+
+The implementation in the remaining data centers is planned for November 25, 2024.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+Restricted Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-11-11
+
+</td>
+<td valign="top">
+
+2024-11-11
+
+</td>
+<td valign="top">
+
+2411a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Regular Upgrade
 
 </td>

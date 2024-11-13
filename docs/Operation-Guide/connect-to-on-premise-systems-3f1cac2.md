@@ -236,7 +236,7 @@ If your provisioning scenarios involve on-premise systems, this requires a separ
     </td>
     <td valign="top">
     
-    India AWS
+    India \(Mumbai\) GCP
     
     </td>
     </tr>
