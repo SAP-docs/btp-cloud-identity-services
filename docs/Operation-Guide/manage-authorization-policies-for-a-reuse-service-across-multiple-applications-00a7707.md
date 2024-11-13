@@ -8,7 +8,7 @@ The authorization data for a reuse service is shared among multiple business app
 
 ## Context
 
-A reuse service is consumed by multiple business applications, for example application 1 and application 2. The authorization data is not separated among the applications, though. The applications, which are in the same SAP Cloud Identity Services tenant, share the authorization policies and assignments of the reuse service. Thus you make sure that the authorization policies of the reuse service are consistent across different applications.
+A reuse service is consumed by multiple business applications, for example application 1 and application 2. All applications and reuse services can have their own set of authorization policies that are always tied to the application or to the reuse service. For easy maintenance, it is possible to manage the authorization policies of the reuse service in the *Authorization Policies* tab of the application that consumes the reuse services.
 
 When an administrator assigns a user to an authorization policy of the reuse service, the reuse grants this permission regardless of the authorization context of the business application. That means, if the user logs on to application 1 or application 2, the permissions for the reuse service are the same, meaning the authorization policies of the reuse service.
 
