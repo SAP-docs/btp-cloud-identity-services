@@ -12,7 +12,7 @@ You can configure a custom global logo and, or a background image on the forms f
 
 -   You are assigned the *Manage Tenant Configuration* role. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
 
--   \(for the background image only\) - You use the *Horizon* theme for your application. For more information, see [Configure a Branding Style for an Application](configure-a-branding-style-for-an-application-32f8d33.md).
+-   \(for the background image only\) - You use the *Horizon* theme for your application. For more information, see [Choose and Configure a Branding Style for an Application](choose-and-configure-a-branding-style-for-an-application-32f8d33.md).
 
 
 
@@ -45,7 +45,7 @@ The image file must have one of the following extensions: `.png`, `.gif`, `.jpeg
 ### Background Image
 
 > ### Note:  
-> The background image is applied only to applications that use the *Horizon* theme. For more information about the *Horizon* theme, see [Configure a Branding Style for an Application](configure-a-branding-style-for-an-application-32f8d33.md).
+> The background image is applied only to applications that use the *Horizon* theme. For more information about the *Horizon* theme, see [Choose and Configure a Branding Style for an Application](choose-and-configure-a-branding-style-for-an-application-32f8d33.md).
 
 The background image is displayed behind the form that your users access to sign in or to register to an application.
 

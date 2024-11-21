@@ -1420,7 +1420,7 @@ End-User Screens
 </td>
 <td valign="top">
 
-The *Horizon* theme end-user screens are default for the system applications for all tenants, and for all applications \(service providers\) created via the administration console, SCIM REST API, or by the Identity Authentication operators after Oct 26, 2022. See [Configure a Branding Style for an Application](Operation-Guide/configure-a-branding-style-for-an-application-32f8d33.md).
+The *Horizon* theme end-user screens are default for the system applications for all tenants, and for all applications \(service providers\) created via the administration console, SCIM REST API, or by the Identity Authentication operators after Oct 26, 2022. See [Choose and Configure a Branding Style for an Application](Operation-Guide/choose-and-configure-a-branding-style-for-an-application-32f8d33.md).
 
 </td>
 <td valign="top">
@@ -3423,7 +3423,7 @@ Branding Style
 </td>
 <td valign="top">
 
-Identity Authentication introduced a new branding style theme - Horizon Theme \(Beta\). See Tenant administrators have the option to sign or not the authentication requests and the single log out messages. See [Configure a Branding Style for an Application](Operation-Guide/configure-a-branding-style-for-an-application-32f8d33.md).
+Identity Authentication introduced a new branding style theme - Horizon Theme \(Beta\). See Tenant administrators have the option to sign or not the authentication requests and the single log out messages. See [Choose and Configure a Branding Style for an Application](Operation-Guide/choose-and-configure-a-branding-style-for-an-application-32f8d33.md).
 
 </td>
 <td valign="top">
@@ -3489,7 +3489,7 @@ Branding Style
 </td>
 <td valign="top">
 
-Identity Authentication renamed the Default theme to Quartz. See [Configure a Branding Style for an Application](Operation-Guide/configure-a-branding-style-for-an-application-32f8d33.md).
+Identity Authentication renamed the Default theme to Quartz. See [Choose and Configure a Branding Style for an Application](Operation-Guide/choose-and-configure-a-branding-style-for-an-application-32f8d33.md).
 
 </td>
 <td valign="top">

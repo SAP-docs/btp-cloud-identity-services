@@ -127,7 +127,7 @@ Use the Client ID and Client Secret generated for the current tenant in the admi
 > <tr>
 > <td valign="top" rowspan="2">
 > 
-> Asia Pacific
+> Australia
 > 
 > </td>
 > <td valign="top" rowspan="2">

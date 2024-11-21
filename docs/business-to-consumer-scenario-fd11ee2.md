@@ -48,5 +48,5 @@ This scenario includes the following features:
 
 [Configuring Terms of Use](Operation-Guide/configuring-terms-of-use-61d3a86.md "You can configure a custom terms of use document by creating a new document, adding and editing its language versions, and defining the document for an application.")
 
-[Configure a Branding Style for an Application](Operation-Guide/configure-a-branding-style-for-an-application-32f8d33.md "For the configuration of the branding style, you can choose a style for the end-user screens, such as sign in, registration, upgrade. You can also customize the buttons on these screens.")
+[Choose and Configure a Branding Style for an Application](Operation-Guide/choose-and-configure-a-branding-style-for-an-application-32f8d33.md "For the configuration of the branding style, you can choose a style for the end-user screens, such as sign-in, registration, upgrade. You can also customize the buttons on these screens.")
 

@@ -14,15 +14,15 @@ Tenant administrators can configure language versions of each template in the te
 
 -   You have prepared the plain text \(TXT\) and HTML template files that will be added in the email template set.
 
-    For that purpose, you need to open the default template set for the respective application process. After that, edit the texts according to your needs, and save a copy of your versions of the documents.
+    For that purpose, you need to open the default template set for the respective application process in the administration console. After that, copy and paste the texts in a new file, edit the texts according to your needs, and save a copy of your versions of the documents. For more information how to open the default templates, see [View Email Template Document](view-email-template-document-148568a.md).
 
     > ### Remember:  
-    > Both, the TXT and HTML template files, must be saved with UTF-8 encoding.
+    > .Both, the TXT and HTML template files, must be saved with UTF-8 encoding.
 
-    If you want to use a custom template set in another language, first you need to open the template set for the respective application process from the links in the table below. After that edit the texts in the respective language, and again save a copy of your versions of the documents.
+    If you want to use a custom template set in another language, first you need to open the template set for the respective application process in the administration console. After that, copy and paste the texts in a new file, edit the texts in the respective language, and again save a copy of your versions of the documents. For more information how to open the default templates, see [View Email Template Document](view-email-template-document-148568a.md)
 
     > ### Caution:  
-    > You should use only the placeholders used in the template documents. If you use other placeholders, even if they are in comments, emails for the respective process will not be sent.
+    > You should use only the placeholders used in the template documents. If you use other placeholders, even if they are in comments, emails for the respective process will not be sent. For more information, see [Allowed Placeholders per Email Template](allowed-placeholders-per-email-template-c0d4a76.md).
     > 
     > When you edit texts in languages written in Right-To-Left \(RTL\) direction check that the placeholders are situated in the right place.
 

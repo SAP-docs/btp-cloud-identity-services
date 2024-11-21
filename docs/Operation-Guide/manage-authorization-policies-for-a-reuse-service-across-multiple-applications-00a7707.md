@@ -28,14 +28,14 @@ To assign authorization policies of the reuse service to users, take the followi
 
 3.  Choose the application that supports authorization management and authorization policies for the reuse service.
 
-4.  Choose the *Authorization Policies* tab. You see the list of the authorization policies of your application. Next to the table title, there's a dropdown list where you can select the reuse service. Currently, it displays the name you your application.
+4.  Choose the *Authorization Policies* tab. You see the list of the authorization policies of your application. Next to the table title, there's a dropdown list where you can select the reuse service. Currently, it displays the name of your application.
+
+    > ### Note:  
+    > If the consuming application doesn't have its own policies, the administration console directly displays the policies of the reuse service instead.
 
 5.  Open the drowdown list.
 
 6.  Select the reuse service. The table displays the list of the policies that belong to the reuse service.
-
-    > ### Note:  
-    > If your application doesn't have policies, the administration console displays the policies of the reuse service.
 
 7.  Choose an authorization policy you want to assign. The *Assignments* pane opens.
 

@@ -10,7 +10,7 @@ SAP Cloud Identity Services can help you expose APIs of your application to othe
 
 You can protect APIs by adding a name for an API permission group. Other applications that are allowed to consume this API permission group pass a token issued by SAP Cloud Identity Services with this name as a claim. Your application must evaluate the `ias_apis` claim for this name to allow access.
 
-If the consuming application is using principal propagation scenario and not a technical user scenario, your application can check the authorizations assigned to the current user. The service also offers the option for token exchange flows to offer all APIs of the provider application. In this case, ***principal-propagation*** is written in the `ias_apis` claim. Your application must rely on the authorizations available to the current user alone.
+If the consuming application is using a principal propagation scenario and not a technical user scenario, your application can check the authorizations assigned to the current user. You can also offer all APIs of the provider application without permission groups. In this case, ***principal-propagation*** is written in the `ias_apis` claim. Your application must rely on the authorizations available to the current user alone.
 
 As the providing application, you have the following options for configuring identity authentication for API permission groups:
 
@@ -45,10 +45,12 @@ As the providing application, you have the following options for configuring ide
 
 4.  Under *Application APIs*, choose *Provided APIs*.
 
-5.  Check that the name of the API permission group that you check in your application is listed or enter the required data.
+5.  Verify that the name of the API permission group that you check in your application is listed.
+
+    Otherwise enter the required data and save your entries.
 
     > ### Caution:  
-    > The API name must match exactly what is expected by any consumer applications. The name must be unique within all APIs provided by the same provider application. Consumer applications use this name to determine if their application has the rights to access the provider application.
+    > The API name must match exactly what is expected by consumer applications. The name must be unique within all APIs provided by the same provider application. Consumer applications use this name to determine if their application has the rights to access the provider application.
     > 
     > The name can be any URN-compliant string of up to 32 characters. You can define a maximum of 20 APIs.
     > 

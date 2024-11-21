@@ -17,7 +17,7 @@ Follow this procedure to set up SAP Application Server ABAP \(AS ABAP\) as a tar
 -   You have credentials of a technical user with write permissions for AS ABAP. Via this user, the Identity Provisioning service will call the ABAP public API in order to execute a number of function modules. These function modules are listed in **step 1** from the procedure below.
 -   You have the following role, which provides all authorizations with read and write access to user data: **SAP\_BC\_JSF\_COMMUNICATION**
 
-    For more information, see: [Configuring the UME to Use an AS ABAP as Data Source](https://help.sap.com/doc/saphelp_nw73/latest/en-US/9e/fdcf3d4f902d10e10000000a114084/frameset.htm)
+    For more information, see: [Requirements for the System User for UME-ABAP Communication](https://help.sap.com/docs/SAP_NETWEAVER_750/a42446bded624585958a36a71903a4a7/8f67d27676ace84080964d4c4223bb3c.html?locale=en-US)
 
 
 

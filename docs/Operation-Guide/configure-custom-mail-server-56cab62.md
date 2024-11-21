@@ -45,7 +45,7 @@ To configure the custom mail server, follow the procedure below:
 5.  Choose the authentication mechanism, and enter the required information in all the fields.
 
     > ### Remember:  
-    > SAP is not responsible for the information in the fields. Contact your IT Department for the custom mail server configurations in the administration console.
+    > SAP is not responsible for the information in the fields, and it can't provide technical assistance on the correct values. Please contact your IT Department for the correct custom mail server configurations in the administration console.
 
 6.  Save your entries.
 

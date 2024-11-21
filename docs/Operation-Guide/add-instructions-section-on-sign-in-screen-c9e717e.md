@@ -10,7 +10,7 @@ You can customize the sign-in screen of the *Horizon* theme with instructions fo
 
 ## Prerequisites
 
-You have chosen the *Horizon* theme for the sign-in screen of your application. For more information, see [Configure a Branding Style for an Application](configure-a-branding-style-for-an-application-32f8d33.md).
+You have chosen the *Horizon* theme for the sign-in screen of your application. For more information, see [Choose and Configure a Branding Style for an Application](choose-and-configure-a-branding-style-for-an-application-32f8d33.md).
 
 
 

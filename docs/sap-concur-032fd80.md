@@ -837,9 +837,17 @@ To create SAP Concur as a target system, proceed as follows:
     > > ### Code Syntax:  
     > > ```
     > > {
-    > >         "sourcePath": "$.email",
-    > >         "targetPath": "$.userName",
-    > >         },
+    > >    "condition":"$.email[?(@.primary== true)] empty false",
+    > >    "sourcePath":"$.email[?(@.primary== true)].value",
+    > >    "targetPath":"$.userName",
+    > >    "optional":true
+    > > },
+    > > {
+    > >    "condition":"$.email[?(@.primary== true)] empty true",
+    > >    "sourcePath":"$.email[0].value",
+    > >    "targetPath":"$.userName",
+    > >    "optional":true
+    > > },
     > > ```
     > 
     > 

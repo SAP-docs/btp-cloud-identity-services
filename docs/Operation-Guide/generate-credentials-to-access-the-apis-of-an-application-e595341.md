@@ -76,7 +76,7 @@ The main use cases for this method are as follows:
     > 
     > ```
     > 
-    > For more information, see [Consume an API from Another Application](../Development/consume-an-api-from-another-application-9675b64.md).
+    > For more information, see [Consume an API from a Provider Application](../Development/consume-an-api-from-a-provider-application-9675b64.md).
     > 
     > You can navigate directly to the new application configuration from the dialog.
 

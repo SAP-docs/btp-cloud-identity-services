@@ -13,9 +13,6 @@ Follow this procedure to set up a SCIM system as а target system.
 > ### Restriction:  
 > This system is available for standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on SAP Cloud Identity Services infrastructure and Neo environment can use it only through **SAP Identity Access Governance** bundle option.
 
-> ### Note:  
-> This system is available for standalone tenants running on SAP Cloud Identity infrastructure. Bundle tenants running on SAP Cloud Identity Services infrastructure can use it only through **SAP Identity Access Governance** bundle option.
-
 -   \(Optional\) You have installed the Cloud Connector in your corporate environment and have done the initial configuration. You need this only if the SCIM system is exposed in a private corporate network. For more information, see [Cloud Connector](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/e6c7616abb5710148cfcf3e75d96d596.html).
 -   You have technical user credentials for a SCIM system, with read/write access permissions, depending on the scenario you want to implement. In case OAuth is used for authentication, client ID and secret are required when creating a destination for access token retrieval.
 

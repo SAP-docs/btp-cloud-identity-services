@@ -45,7 +45,7 @@ You have chosen a corporate identity provider as default. For more information, 
     > ### Note:  
     > By default this option is disabled.
     > 
-    > The check box is visible only if have chosen a corporate identity provider as default.
+    > The check box is visible only if you have chosen a corporate identity provider as default.
 
 6.  Save your selection.
 

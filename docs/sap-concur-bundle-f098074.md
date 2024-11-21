@@ -23,7 +23,7 @@ Customers can integrate SAP Cloud Identity Services no matter whether the Concur
 
 ## Prerequisites
 
--   New or existing Concur Expense, Concur Request, Concur Invoice, and/or Concur Travel & Expense customers have at least one existing tenant of SAP Cloud Identity Services.
+-   New or existing Concur Expense, Concur Request, Concur Invoice, and/or Concur Travel & Expense customers that have at least one other SAP cloud solution.
 
     > ### Note:  
     > Concur Travel-only is not currently supported.

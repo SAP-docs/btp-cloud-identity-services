@@ -1,6 +1,6 @@
 <!-- loio9675b64bc8014f4282e49d0cd8ce60fa -->
 
-# Consume an API from Another Application
+# Consume an API from a Provider Application
 
 Your consumer application can request an access token from Identity Authentication to consume the API of a provider application.
 
@@ -10,7 +10,7 @@ Your consumer application can request an access token from Identity Authenticati
 
 ## Prerequisites
 
-You know the name of the dependency defined in the application configuration of SAP Cloud Identity Services. The tenant administrator enters the dependency name in the application configuration. As the owner of the consumer application, you must provide documentation to enable the administrator to:
+You know the name of the dependency defined in the application configuration of SAP Cloud Identity Services. The tenant administrator enters the dependency name in the application configuration. As the owner of the consumer application, you must provide documentation to enable the administrator to do the following:
 
 -   Enter the name that you expect.
 
@@ -23,7 +23,7 @@ For more information, see [Configure Integration Between Applications](../Operat
 
 ## Procedure
 
-1.  With the dependency name, the consumer application can call the `/token` endpoint of Identity Authentication.
+1.  Develop your consumer application to call the `/token` endpoint of Identity Authentication with the dependency name.
 
     **Example: Technical Communication**
 
@@ -65,7 +65,7 @@ For more information, see [Configure Integration Between Applications](../Operat
         -d "client_id=e7c7e327-86c0-48a6-af57-a1234b567869" \
         -d "client_secret=$secret" \
         -d "grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Ajwt-bearer" \
-        -d "assertion=$IDTOKEN" \
+        -d "assertion=$BEARERTOKEN" \
         -d "resource=urn:sap:identity:application:provider:name:myDependency"
     ```
 

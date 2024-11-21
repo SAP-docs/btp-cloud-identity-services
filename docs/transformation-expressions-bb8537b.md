@@ -1308,7 +1308,45 @@ sourcePaths
 </td>
 <td valign="top">
 
-Specifies the paths to an attribute in the input JSON message of the source system. The *sourcePaths* can only be used when *type* is set to `valueMapping`.
+Specifies paths to attributes in the input JSON message from the source system. The *sourcePaths* can only be used with the *valueMappings* expression, which requires the type to be set to `valueMapping`. The number of values in the key arrays must correspond to the number of sourcePaths.
+
+In the following example, the value pairs US and New York, US and Dallas, Germany and Berlin in the key arrays correspond to the two sourcePaths: country and city. The *mappedValue* is the value to be written to the *targetPath* attribute, such as timezone, provided that each key value matches the corresponding attribute value \(e.g., `US` for `country` and `New York` for `city`\).
+
+> ### Code Syntax:  
+> ```
+> {
+> 	"sourcePaths": ["$.counry", "$.city"],
+> 	"defaultValue": "UTC",
+> 	"targetPath": "$.timezone",
+> 	"type": "valueMapping",
+> 	"valueMappings": [
+> 		{
+> 			"key": [
+> 				"US",
+> 				"New York"
+> 			],
+> 			"mappedValue": "EST"
+> 		},
+> 		{
+> 			"key": [
+> 				"US",
+> 				"Dallas"
+> 			],
+> 			"mappedValue": "CST"
+> 		},
+> 		{
+> 			"key": [
+> 				"Germany",
+> 				"Berlin"
+> 			],
+> 			"mappedValue": "CET"
+> 		}
+> 	]
+> },
+> ```
+
+> ### Note:  
+> Paths to the country and city attributes are provided as exemplary values. These attribute paths might be system-specific. For example, in SAP AS ABAP, the "$.counry" path is "$.ADDRESS.COUNTRY".
 
 **Data type**: String
 

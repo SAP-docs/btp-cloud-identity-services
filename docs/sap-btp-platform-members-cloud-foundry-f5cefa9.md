@@ -267,7 +267,7 @@ Follow the steps below to create SAP BTP Platform Members \(Cloud Foundry\) as a
     >     "skipOperations": [
     >       "update"
     >     ],
-    >     "condition": "(('%btp.cf.pm.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%btp.cf.pm.group.prefix%.+/)] empty false)) && $.groups[?(@.display === 'cf-user-provisioning')] empty true",
+    >     "condition": "(('%btp.cf.pm.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%btp.cf.pm.group.prefix%%btp.cf.pm.landscape%.+/)] empty false)) && $.groups[?(@.display === 'cf-user-provisioning')] empty true",
     >     "mappings": [
     >       {
     >         "sourceVariable": "entityIdTargetSystem",
@@ -311,15 +311,11 @@ Follow the steps below to create SAP BTP Platform Members \(Cloud Foundry\) as a
     >     ]
     >   },
     >   "group": {
-    >     "condition": "('%btp.cf.pm.group.prefix%' === 'null') || ($.displayName =~ /%btp.cf.pm.group.prefix%.+/)",
+    >     "condition": "('%btp.cf.pm.group.prefix%' === 'null') || ($.displayName =~ /%btp.cf.pm.group.prefix%%btp.cf.pm.landscape%.+/)",
     >     "mappings": [
     >       {
     >         "scope": "createEntity",
     >         "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
-    > 	   //The attribute group extension name is used to map the users and user assignments of a role 
-    > 	   //to the relevant Cloud Foundry organization or space.
-    > 	   //the organization group extension name follows the pattern: <org_ID> <org_role>
-    > 	   //the space group extension name follows the pattern: <org_ID> <space_ID> <space_role>
     >         "targetPath": "$.id",
     >         "targetVariable": "entityIdTargetSystem"
     >       },

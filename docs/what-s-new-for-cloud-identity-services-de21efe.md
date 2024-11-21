@@ -100,12 +100,156 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-11-19
+
+</td>
+<td valign="top">
+
+2024-11-19
+
+</td>
+<td valign="top">
+
+2411b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP BTP Platform Members \(Cloud Foundry\) - write transformation
+
+</td>
+<td valign="top">
+
+Conditions for user and group entities in the default write transformation are enhanced to support the landscape property along with the group prefix.
+
+See [SAP BTP Platform Members \(Cloud Foundry\)](sap-btp-platform-members-cloud-foundry-f5cefa9.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-11-19
+
+</td>
+<td valign="top">
+
+2024-11-19
+
+</td>
+<td valign="top">
+
+2411b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Identity Directory API
 
 </td>
 <td valign="top">
 
-We have introduced a new implementation of the **PATCH** method of the [Identity Direcory API](https://api.sap.com/api/IdDS_SCIM/overview) for all tenants in all Cloud Identity Services data centers except the ones in North America and Europe. The behavior of the new implementation is the same as the old one.
+We have introduced a new implementation of the **PATCH** method of the [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/overview) for all tenants in all Cloud Identity Services data centers except the ones in North America and Europe. The behavior of the new implementation is the same as the old one.
 
 The implementation in the remaining data centers is planned for November 25, 2024.
 

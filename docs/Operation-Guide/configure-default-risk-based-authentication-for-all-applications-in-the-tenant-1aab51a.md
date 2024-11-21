@@ -71,7 +71,7 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
 
 3.  Under *Authentication*, choose *Risk-Based Authentication*.
 
-4.  **Optional:** Configure the authentication rules. Choose one of the following \(optional\):
+4.  **Optional:** Under *Authentication Rules*, configure the authentication rules by choosing one of the following options:
 
 
     <table>
@@ -119,7 +119,7 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
     </td>
     <td valign="top">
     
-    Choose the delete ![](images/delete_icon_4801c38.png) icon next to the rule you want to delete.
+    *Select the rule you want to delete* \> *Delete* 
     
     </td>
     </tr>
@@ -131,7 +131,7 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
     </td>
     <td valign="top">
     
-    Use the arrows to reprioritize the rules.
+    Choose *Edit* \> *use the arrows to reprioritize the rules* \> *Save*
     
     </td>
     </tr>
@@ -140,9 +140,13 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
     > ### Note:  
     > By default any user can log on from any IP.
 
-5.  **Optional:** Configure the *Default Action*:
+5.  **Optional:** Under *Default Authentication Rule*, configure the *Default Action*:
 
-    -   *Allow* - Any user can log on from any IP. This is te default choice.
+    1.  Choose *Edit*.
+
+    2.  Choose from:
+
+
     -   *Deny* - Nobody can log on.
     -   *Two-Factor Authentication* - A drop-down appears when this choice is selected. You must specify the two-factor authentication method or methods for the end user.
 
@@ -368,14 +372,12 @@ The fields *IP Range*, *Forwarded IP Range*, *Group*, *Authentication Method*, a
 
     At the top of the page, you can view the administrative and license relevant information of the tenant.
 
-3.  Under *Customization*, choose *Risk-Based Authentication*.
+3.  Under *Authentication*, choose *Risk-Based Authentication*.
 
-4.  Choose *Create Rule*.
+4.  Choose *\+ Create*.
 
-5.  Fill in the fields on the *New Risk-Based Authentication Rule* window.
+5.  Fill in the fields on the *Create Rule* window.
 
-6.  Choose *Create*.
-
-7.  Save your changes.
+6.  Choose *\+ Create*.
 
 
