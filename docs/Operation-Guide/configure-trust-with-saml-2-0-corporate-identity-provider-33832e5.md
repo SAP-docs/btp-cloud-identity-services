@@ -300,7 +300,7 @@ Set up trust with a corporate identity provider in the administration console fo
 
 [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md "As a tenant administrator, you can edit both your own authorizations and other administrators' authorizations in the administration console for SAP Cloud Identity Services. By editing the administrator authorizations you can also delete an administrator.")
 
-[Configure IdP-Initiated SSO](configure-idp-initiated-sso-5d59caa.md)
+[Configure IdP-Initiated SSO](configure-idp-initiated-sso-5d59caa.md "Enable or disable IdP-Initiated SSO via the administration console for SAP Cloud Identity Services.")
 
 [Choose Identity Provider Type](choose-identity-provider-type-0838379.md "This topic shows you how to choose a type for the corporate identity provider.")
 

@@ -56,4 +56,6 @@ When you edit an existing custom authorization policy, you can add or delete res
 
 11. Save your changes.
 
+12. To assign users, choose the *Assignments* tab. See [Assign Authorization Policies](assign-authorization-policies-eac8e5e.md).
+
 

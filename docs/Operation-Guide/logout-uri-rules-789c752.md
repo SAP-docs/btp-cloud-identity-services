@@ -14,7 +14,7 @@ The front and back-channel logout URI must be in the following format:
 
 For example: `https://example.com:70/logout?abc=123`.
 
-When you construct the front and back-channel URIs have the following in mind:
+When you construct the front and back-channel URIs, have the following in mind:
 
 
 
@@ -42,20 +42,20 @@ The length is limited to 499 characters.
     > 
     > https://localhost/logout
 
--   Wildcard - It's allowed in the domain part. The wildcard support is mainly for multitenant applications.
+-   Wildcard - It's allowed in the domain part. Wildcards are only supported in front-channel flows. Although there's no restriction on using wildcards with single tenant apps, the use of wildcards was developed with multitenant applications in mind.
 
     > ### Example:  
     > https://\*.example.com/logout
     > 
     > Allow during authorize call to register a URI with parameter `logout_uri`, for example: `https://app1.example.com/logout`.
 
--   IP Addresses - Usage of IP addresses is not allowed.
+-   IP Addresses - Usage of IP addresses isn't allowed.
 
 
 
 ## Ports \(optional\)
 
-After the domain part you can put the port numbers. Always use a leading colon \(`:`\).
+After the domain part, you can put the port numbers. Always use a leading colon \(`:`\).
 
 > ### Example:  
 > https://example.com:8080/logout
@@ -67,7 +67,7 @@ After the domain part you can put the port numbers. Always use a leading colon \
 ## Fragments
 
 > ### Restriction:  
-> Usage of fragment identifier \(`#`\) is not allowed. For example, you can't use `https://example.com/path#index.html`.
+> Usage of fragment identifier \(`#`\) isn't allowed. For example, you can't use `https://example.com/path#index.html`.
 
 **Related Information**  
 
