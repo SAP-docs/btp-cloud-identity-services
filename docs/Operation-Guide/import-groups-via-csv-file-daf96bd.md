@@ -56,9 +56,9 @@ You can only add users to the groups via the import groups option, you don't rem
 > > ### Sample Code:  
 > > ```
 > > groups,urn:ietf:params:scim:schemas:extension:sap:2.0:User:userUuid,emails[0].value
-> > HR;Management;Employees,1ab2e307-1c7c-4c37-9bcf-ed0123456789,dona.moore@example.com
-> > Management;Employees,1ab2e307-1c7c-4c37-9bcf-ed0123456700,management@example.com
-> > IT;Management;Employees,1ab2e307-1c7c-4c37-9bcf-ed0123456712,management@example.com
+> > HR,1ab2e307-1c7c-4c37-9bcf-ed0123456789,dona.moore@example.com
+> > Management,1ab2e307-1c7c-4c37-9bcf-ed0123456700,management@example.com
+> > IT,1ab2e307-1c7c-4c37-9bcf-ed0123456712,management@example.com
 > > ```
 
 To import groups via CSV file into Identity Authentication, proceed as follows:
@@ -104,4 +104,3 @@ To import groups via CSV file into Identity Authentication, proceed as follows:
 [Unassign Groups from a User](unassign-groups-from-a-user-4353735.md "As a tenant administrator, you can unassign one or more groups that are assigned to a user via the administration console for SAP Cloud Identity Services.")
 
 [Delete Groups](delete-groups-9853912.md "As a tenant administrator, you can delete one or more groups in administration console for SAP Cloud Identity Services.")
-
