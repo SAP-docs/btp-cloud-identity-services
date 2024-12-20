@@ -529,8 +529,6 @@ No
 
 The groups in the *groups* column must be existing. You can’t add a user to a user group that is not existing.
 
-The maximum number of groups assigned to a user is 500.
-
 </td>
 </tr>
 </table>

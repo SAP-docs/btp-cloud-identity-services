@@ -160,6 +160,7 @@ Existing applications that have a parent application assigned to them will inher
 -   Attributes
 -   Dependencies
 -   Risk-Based Authentication
+-   Conditional Authentication
 -   Email Verification
 -   Password Policy
 -   Terms Of Use

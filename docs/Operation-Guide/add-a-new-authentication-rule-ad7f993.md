@@ -35,6 +35,9 @@ Each rule contains the following information:
 
 -   *User Group*
 
+    > ### Restriction:  
+    > The administrator must be assigned the *Manage Groups* role or be part of a policy that allows reading groups to be able to view the groups in the list. For more information, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md) or [Configure Group Authorizations](configure-group-authorizations-7a09cad.md).
+
     Specify the group, which the authenticating user must be part of. If no group is selected, the rule is valid for any of the groups.
 
     The user groups must be configured in the administration console for SAP Cloud Identity Services. For more information, see [Managing Groups](managing-groups-ddd067c.md).

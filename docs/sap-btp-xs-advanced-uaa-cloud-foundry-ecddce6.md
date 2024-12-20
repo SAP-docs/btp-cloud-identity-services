@@ -294,14 +294,28 @@ Creating, updating, and deleting groups follow the standard processes. If groups
     >       {
     >         "sourcePath": "$.active",
     >         "targetPath": "$.active",
-    >         "optional": true,
-    >         "defaultValue": false
+    >         "defaultValue": true,
+    >         "optional": true
+    >       },
+    >       {
+    >         "scope": "createEntity",
+    >         "constant": true,
+    >         "targetPath": "$.active"
     >       },
     >       {
     >         "sourcePath": "$.verified",
     >         "targetPath": "$.verified",
-    >         "optional": true,
-    >         "defaultValue": false
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['mailVerified']",
+    >         "targetPath": "$.verified",
+    >         "optional": true
+    >       },
+    >       {
+    >         "scope": "createEntity",
+    >         "constant": true,
+    >         "targetPath": "$.verified"
     >       },
     >       {
     >         "constant": "%xsuaa.origin%",

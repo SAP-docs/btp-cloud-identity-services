@@ -26,7 +26,7 @@ To add a system, proceed as follows:
 
     Sign in to the administration console of SAP Cloud Identity Services and navigate to *Identity Provisioning* \> *Source Systems*, *Target Systems* or *Proxy Systems*.
 
-2.  Choose the *Add* button at the bottom of the left-hand panel.
+2.  Choose the *Add* button at the top left corner of your screen.
 
 3.  On the *Details* tab, provide the following information:
 

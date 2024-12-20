@@ -338,6 +338,9 @@ Each rule contains the following information:
 
 -   *Group*
 
+    > ### Restriction:  
+    > The administrator must be assigned the *Manage Groups* role or be part of a policy that allows reading groups to be able to view the groups in the list. For more information, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md) or [Configure Group Authorizations](configure-group-authorizations-7a09cad.md).
+
     Specify a cloud or on-premise group, which the authenticating user has to be a member of. If no group is selected, the rule is valid for all users.
 
     If the rule is valid for an on-premise group, type in the name of the corporate user store group, for which this rule should be valid.

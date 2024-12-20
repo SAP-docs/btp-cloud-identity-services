@@ -193,9 +193,6 @@ GET /service/users/<the ID of the SP user>
 
 The response returns the following attributes. Only the attributes that exist for the user are returned.
 
-> ### Note:  
-> The value of the attributes can be updated via *PUT* request through the [Identity Directory SCIM REST API](https://api.sap.com/api/IdDS_SCIM/resource).
-
 -   user\_profile\_id
 -   name\_id
 -   status

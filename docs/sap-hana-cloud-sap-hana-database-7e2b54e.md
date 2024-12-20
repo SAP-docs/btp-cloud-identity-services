@@ -96,7 +96,7 @@ Review the expected behavior in the following scenarios:
     
     Enter the OAuth 2.0 Token Service URL.
 
-    For example: `https://demo-hc-3-test.authentication.sap.hana.ondemand.com`
+    For example: `https://demo-hc-3-test.authentication.sap.hana.ondemand.com/oauth/token`
     
     </td>
     </tr>

@@ -28,5 +28,5 @@ Each e-mail from SAP contains also a URL link that you, as an administrator, can
 **Related Information**  
 
 
-[SAP SuccessFactors Incentive Management](https://help.sap.com/viewer/product/SAP_Commissions/2108/en-US?expandAll=true)
+[SAP SuccessFactors Incentive Management](https://help.sap.com/docs/SAP_Commissions?version=Latest)
 

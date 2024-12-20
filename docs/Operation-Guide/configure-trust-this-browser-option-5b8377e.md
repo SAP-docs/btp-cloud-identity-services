@@ -37,7 +37,13 @@ The *Trust this browser* checkbox appears at sign-in when a second factor is req
 
 3.  Under *Authentication*, choose the *Multi-Factor Authentication* list item.
 
-4.  Manually configure the trust this browser option under *Additional Settings for Multi-Factor Authentication*.
+4.  Under *Additional Settings for Multi-Factor Authentication*, choose *Edit*.
+
+5.  Under *Trusted Browser Setting for Users*, choose *Enabled*.
+
+6.  Manually configure the number of days for which users will not get prompted for second-factor authentication, if they sign in from the same browser.
+
+7.  Save your changes.
 
     If the operation is successful, the system displays the message ***Additional Multi-Factor Authentication Settings updated***.
 

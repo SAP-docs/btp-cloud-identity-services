@@ -38,7 +38,30 @@ The groups are sorted in alphabetical order of the display name.
 
 4.  **Optional:** Choose a group from the list on the left to view its details.
 
-5.  **Optional:** Press the *Edit* button at the top-right corner of the screen, edit the *Display name* or *Description* fields if necessary, and save your changes.
+5.  **Optional:** Press the *Edit* button at the top-right corner of the screen.
+
+6.  Edit the *Display name* or *Description* fields if necessary, and choose *Next Step*.
+
+7.  Edit the list of applications. You can choose between one of the following three options:
+
+    -   \(if no application is selected\) Select an application from the list to create an application-specific group.
+    -   \(if an application is selected\) Deselect an application from the list. The group will be no longer application-specific.
+    -   \(if an application is selected\) Select another application from the list. The group will continue to be application-specific.
+
+8.  **Optional:** Choose a group type:
+
+    -   *userGroup*
+    -   *authorization*
+    -   *deepLinkActivationPermission*
+
+9.  **Optional:** Choose the supported operations for the group:
+
+    -   *readWrite*
+    -   *readOnly*
+    -   *userOnlyMembership*
+    -   *membership*
+
+10. Choose *Next Step* \> *Finish*.
 
 
 **Related Information**  

@@ -162,6 +162,9 @@ To configure PIN code option in the administration console, follow the procedure
     -   *All users* - default choice
     -   *Specific groups*
 
+        > ### Restriction:  
+        > The administrator must be assigned the *Manage Groups* role or be part of a policy that allows reading groups to be able to view the groups in the list. For more information, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md) or [Configure Group Authorizations](configure-group-authorizations-7a09cad.md).
+
         > ### Note:  
         > When you select this option, you must specify the specific group or groups for which you enable password recovery via PIN code.
 

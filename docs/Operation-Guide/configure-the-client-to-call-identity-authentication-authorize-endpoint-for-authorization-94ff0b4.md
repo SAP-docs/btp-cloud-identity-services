@@ -69,7 +69,7 @@ application/x-www-form-urlencoded
 <tr>
 <td valign="top">
 
-`Authentication`
+`Authorization`
 
 </td>
 <td valign="top">
@@ -79,7 +79,7 @@ Yes
 </td>
 <td valign="top">
 
--   Basic Authentication -
+-   `Basic` Username and password are:
 
     Client ID and a Secret to authenticate the client \(relying party\). For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
 
@@ -146,7 +146,7 @@ string
 </td>
 <td valign="top">
 
-The user ID configured for basic authentication for the application. For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
+The user ID configured for basic authorization for the application. For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
 
 </td>
 <td valign="top">
@@ -322,7 +322,7 @@ string
 
 The technical name of the corporate identity provider as configured in the administration console for SAP Cloud Identity Services.
 
-Identity Authentication uses the When multiple identity providers are allowed for an application via conditional authentication, this parameter enables the client to determine which corporate identity provider to be used. `idp` to detect the correct corporate identity provider and redirect the request to it. The user authenticates against the corporate identity provider.
+When multiple identity providers are allowed for an application via conditional authentication, these parameters enable the client to specify which corporate identity providers to be used. Identity Authentication uses the `idp` parameter to detect the correct corporate identity providers and redirect the request to them. When there is more than one corporate IdP in the IdP-initiated link, they are separated by comma "`,`" without space between them.
 
 </td>
 <td valign="top">

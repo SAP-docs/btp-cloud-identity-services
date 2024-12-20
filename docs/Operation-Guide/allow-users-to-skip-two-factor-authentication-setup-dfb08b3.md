@@ -39,7 +39,13 @@ Users can be notified for their choice, if the security alert notification is sw
 
 3.  Choose the *Multi-Factor Authentication* list item.
 
-4.  Under *Additional Settings for Multi-Factor Authentication*, manually configure the number of days for which users can postpone the enabling of second factor.
+4.  Under *Additional Settings for Multi-Factor Authentication*, choose *Edit*.
+
+5.  Under *Second Factor Activation Postponement*, choose *Enabled*.
+
+6.  Manually configure the number of days for which users can postpone the enabling of second factor.
+
+7.  Save your changes.
 
     If the operation is successful, the system displays the message ***Additional Multi-Factor Authentication Settings updated***.
 

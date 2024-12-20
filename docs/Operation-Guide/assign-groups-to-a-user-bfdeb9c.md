@@ -25,8 +25,7 @@ As a tenant administrator, you can assign one or more groups created for a speci
 
 3.  Choose the user that you want to assign to a group or groups.
 
-    > ### Restriction:  
-    > The maximum number of groups assigned to a user is 500.
+
 
 4.  Choose the *Groups* tab.
 

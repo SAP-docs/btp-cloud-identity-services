@@ -394,6 +394,7 @@
             -   [Edit Administrator Authorizations](Operation-Guide/edit-administrator-authorizations-86ee374.md)
             -   [Configure Authorizations Based on Policies](Operation-Guide/configure-authorizations-based-on-policies-08fea39.md)
                 -   [Configure User Authorizations](Operation-Guide/configure-user-authorizations-424b64c.md)
+                -   [Configure Group Authorizations](Operation-Guide/configure-group-authorizations-7a09cad.md)
                 -   [Configure Application Authorizations](Operation-Guide/configure-application-authorizations-01cff18.md)
                 -   [Configure Provisioning Authorizations](Operation-Guide/configure-provisioning-authorizations-a8f8e31.md)
         -   [Managing Users](Operation-Guide/managing-users-228428f.md)

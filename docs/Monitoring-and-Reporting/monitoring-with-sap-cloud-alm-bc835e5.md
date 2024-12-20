@@ -106,11 +106,13 @@ If there is no audit logs configuration, the value is empty.
 </td>
 <td valign="top">
 
-The *Data Record* displays the values set for the two properties that enable logging and tracing for personal and sensitive data of the provisioned entities:
+The *Data Record* displays the values set for the properties that enable logging and tracing for personal and sensitive data of the provisioned entities:
 
 -   `ips.trace.failed.entity.content` = *<value\>*
 
 -   `ips.trace.skipped.entity.content` = *<value\>*
+
+-   `ips.trace.created.entity.content` = *<value\>*
 
 
 
@@ -118,9 +120,9 @@ The *Data Record* displays the values set for the two properties that enable log
 </td>
 <td valign="top">
 
-*COMPLIANT* - when both properties are set to *false*
+*COMPLIANT* - when all three properties are set to *false*
 
-*NONCOMPLIANT* – if one or both properties are set to *true*
+*NONCOMPLIANT* – if one or more of these properties are set to *true*
 
 </td>
 <td valign="top">

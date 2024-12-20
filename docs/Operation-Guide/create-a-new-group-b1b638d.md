@@ -14,8 +14,7 @@ You are assigned the *Manage Groups* and *Manage Users* roles. For more informat
 
 ## Context
 
-> ### Remember:  
-> The maximum number of groups assigned to a user is 500.
+You can choose whether to create just a user group or a user group that is application-specific. For more information about the different groups in the Identity Directory of Cloud Identity Services, see [Groups](../groups-d93be69.md).
 
 To create a new user group, proceed as follows:
 
@@ -29,11 +28,29 @@ To create a new user group, proceed as follows:
 
     This operation opens a list of the groups in the tenant.
 
-3.  Press the *Create* button at the top of the page.
+3.  Press the *\+ Create* button at the top of the page.
 
-4.  Fill in the required information.
+4.  In the *General* screen, fill in the required information, and choose *Next Step*.
 
-5.  Save your entries.
+5.  **Optional:** Fill in the information if you want to create an application-specific group.
+
+    1.  Select an application from the list to create an application-specific group.
+
+    2.  Choose a group type:
+
+        -   *userGroup*
+        -   *authorization*
+        -   *deepLinkActivationPermission*
+
+    3.  Choose the supported operations for the group:
+
+        -   *readWrite*
+        -   *readOnly*
+        -   *userOnlyMembership*
+        -   *membership*
+
+
+6.  Choose *Next Step* \> *Finish*.
 
 
 
@@ -42,7 +59,7 @@ To create a new user group, proceed as follows:
 
 ## Results
 
-If the operation is successful, the system displays the message: `Group "<name of the group>" updated`. Identity Authentication creates the new group and assigns the *Group ID* to it. *Group ID* is in the universally unique identifier \(UUID\) format.
+If the operation is successful, the system displays the message: `Group "<name of the group>" updated`. Identity Authentication creates the new group and assigns the *Group ID* to it. *Group ID* is in the universally unique identifier \(UUID\) format. If the group is application-specific the *Application Name* is also assigned to the group.
 
 **Related Information**  
 

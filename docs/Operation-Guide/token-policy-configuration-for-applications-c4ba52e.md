@@ -43,13 +43,15 @@ Sets the refresh token lifetime issued by Identity Authentication. The value can
 The default value is 12 hours.
 
 > ### Note:  
-> When using the authorization code flow, if you set the token policy for refresh tokens longer than the session timeout, add the *offline\_access* scope to your authorization code request. Without this scope, the service deletes the refresh token from the database when the resource owner ends the session \(logs out\). Without the refresh token, the OAuth client can't request new tokens anymore.
+> -   If the validity of refresh tokens is less than the validity of access/ID tokens, access/ID tokens can't be refreshed after the access/ID tokens expire.
 > 
-> For more information, see:
+> -   When using the authorization code flow, if you set the token policy for refresh tokens longer than the session timeout, add the *offline\_access* scope to your authorization code request. Without this scope, the service deletes the refresh token from the database when the resource owner ends the session \(logs out\). Without the refresh token, the OAuth client can't request new tokens anymore.
 > 
-> -   [Configure Session Timeout](configure-session-timeout-5ca23e4.md)
+>     For more information, see:
 > 
-> -   [Using Authorization Code Flow](using-authorization-code-flow-c135fc4.md)
+>     -   [Configure Session Timeout](configure-session-timeout-5ca23e4.md)
+> 
+>     -   [Using Authorization Code Flow](using-authorization-code-flow-c135fc4.md)
 
 
 
@@ -63,7 +65,7 @@ The default value is 12 hours.
 </td>
 <td valign="top">
 
-Sets the access and id\_token lifetime issued by Identity Authentication. The value can range from 1 to 60 minutes.
+Sets the access and id\_token lifetime issued by Identity Authentication. The value can range from 1 to 720 minutes, in other words, from 1 minute to 12 hours.
 
 The default value is 60 minutes.
 

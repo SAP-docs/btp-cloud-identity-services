@@ -113,6 +113,15 @@ To view the audit logs, follow the procedures below:
 
 
 
+<a name="task_yvb_pk1_rdb__context_om1_jns_pdc"/>
+
+## Context
+
+> ### Remember:  
+> You can have only one configuration in the administration for Cloud Identity services. If you want to add a new configuration, you must remove the already configured one, and then follow the steps below to add the new one.
+
+
+
 <a name="task_yvb_pk1_rdb__steps_mkb_bl1_rdb"/>
 
 ## Procedure

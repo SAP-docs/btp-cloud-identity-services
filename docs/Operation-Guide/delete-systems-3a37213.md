@@ -23,14 +23,18 @@ To delete a system, proceed as follows:
 
 3.  From the list on the left, select a system.
 
-4.  Choose *Edit* from the top of the systems panel.
+4.  At the top right corner of your screen, choose the *Delete* button and confirm the action.
 
-5.  At the bottom of the panel, choose the *Delete* button.
+5.  Save your changes.
 
-6.  In the dialog box, confirm with *OK*.
 
-7.  Save your changes. The system disappears from the panel.
 
+
+<a name="loio3a37213373f649ef96b26fd97dfe743c__result_lsq_z3n_4dc"/>
+
+## Results
+
+The system disappears from the panel.
 
 **Related Information**  
 

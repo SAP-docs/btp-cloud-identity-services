@@ -394,5 +394,5 @@ To search and view the job logs, proceed as follows:
 
 [Start and Stop Provisioning Jobs](../Operation-Guide/start-and-stop-provisioning-jobs-531a261.md "You can start and stop a provisioning job from the Identity Provisioning user interface (UI) or from an API client by using the Identity Provisioning tenant admin API.")
 
-[Manage Job Notifications](manage-job-notifications-d055bc2.md "You can subscribe to a source system to receive notification e-mails. They provide information about the job execution and links to download job logs, in case of failed or skipped entities.")
+[Manage Job Notifications](manage-job-notifications-d055bc2.md "You can subscribe to a source system to receive notification e-mails. They provide information about the job execution and links to download job logs, in case of created, failed, or skipped entities.")
 

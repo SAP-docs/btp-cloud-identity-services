@@ -2,7 +2,7 @@
 
 # Manage Job Notifications
 
-You can subscribe to a source system to receive notification e-mails. They provide information about the job execution and links to download job logs, in case of failed or skipped entities.
+You can subscribe to a source system to receive notification e-mails. They provide information about the job execution and links to download job logs, in case of created, failed, or skipped entities.
 
 
 
@@ -42,10 +42,10 @@ When you subscribe to a source system, you can receive notification e-mails in t
 
 The notification e-mail tells you which are the source and the target systems, what is the job type, its start time and status. It contains the `Navigate to details` link that opens the *Job Execution Details* screen in the Identity Provisioning UI.
 
-In case your job finished with failed or skipped entities, links to `Download error logs` and `Download skipped entities logs` are provided, respectively. The content of the downloaded log files depends on your configuration of the `ips.trace.skipped.entity`, `ips.trace.skipped.entity.content` and `ips.trace.failed.entity.content` properties. For more information, see: [List of Properties](../list-of-properties-d6f3577.md)
+In case your job finished with created, failed, or skipped entities, links to `Download created entities logs`, `Download error logs` and `Download skipped entities logs` are provided, respectively. The content of the downloaded log files depends on your configuration of the `ips.trace.created.entity`, `ips.trace.skipped.entity`, `ips.trace.created.entity.content`, `ips.trace.skipped.entity.content` and `ips.trace.failed.entity.content` properties. For more information, see: [List of Properties](../list-of-properties-d6f3577.md)
 
 > ### Note:  
-> Sending navigation links to the download page of failed and skipped entities is supported for tenants running on SAP Cloud Identity Services infrastructure.
+> Sending navigation links to the download page of created, failed, and skipped entities is supported for tenants running on SAP Cloud Identity Services infrastructure.
 
 > ### Note:  
 > If you subscribe to a source system, and then run a successful provisioning job, no notification e-mails will be sent.

@@ -69,7 +69,7 @@ application/x-www-form-urlencoded
 <tr>
 <td valign="top">
 
-`Authentication`
+`Authorization`
 
 </td>
 <td valign="top">
@@ -79,7 +79,7 @@ Yes
 </td>
 <td valign="top">
 
--   Basic Authentication -
+-   `Basic` Username and password are:
 
     Client ID and a Secret to authenticate the client \(relying party\). For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
 

@@ -175,14 +175,29 @@ For more information on how to update to version 2, see [Update Connector Versio
     <tr>
     <td valign="top">
     
-    `csrf.token.path`
+    \(Optional\) `csrf.token.path`
     
     </td>
     <td valign="top">
     
     Path which is appended to the URL to retrieve the CSRF token.
 
-    This property is automatically added in the system, with default value: **/api/v1/scim/Users?count=1**
+    The property is automatically added during system creation, when the system in use is SAP Analytics Cloud consuming SCIM API version 2.
+
+    Based on the version of the SCIM API consumed, the default value for the property is:
+
+    -   SAP Analytics Cloud SCIM API version 1: `/api/v1/scim/Users?count=1`
+
+        > ### Note:  
+        > The property is present only for systems created before December 3, 2024. Systems created after this date use the default value for the connector version without adding the property.
+
+    -   SAP Analytics Cloud SCIM API version 2: `/api/v1/scim2/Users?count=1`
+
+        > ### Note:  
+        > If you delete the property, the Identity Provisioning will use the default value for the property for SAP Analytics Cloud using SCIM API**version 1**.
+
+
+
     
     </td>
     </tr>

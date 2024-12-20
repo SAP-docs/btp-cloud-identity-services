@@ -30,11 +30,7 @@ If you want to reset your system, proceed as follows:
     > ### Restriction:  
     > This *reset* operation is not applicable to proxy systems.
 
-4.  Choose *Edit* from the top of the systems panel.
-
-5.  From the options below, choose *Reset*.
-
-6.  Confirm with *OK*.
+4.  At the top right corner of your screen, choose the *Reset* button and confirm the action.
 
 
 

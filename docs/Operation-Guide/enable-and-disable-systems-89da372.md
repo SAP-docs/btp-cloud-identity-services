@@ -20,10 +20,10 @@ To use a system for provisioning purposes, its status has to be **Enabled**. Whe
 
 3.  From the list on the left, select a system.
 
-4.  Choose *Edit* from the top of the systems panel.
+4.  At the top right corner of your screen, choose one of the following options:
 
-    -   If the system is currently disabled, choose the *Enable* button and confirm with *OK*.
-    -   If the system is currently enabled, choose the *Disable* button and confirm with *OK*.
+    -   If the system is currently disabled, choose the *Enable* button and confirm the action.
+    -   If the system is currently enabled, choose the *Disable* button and confirm the action.
 
 5.  Save your changes.
 

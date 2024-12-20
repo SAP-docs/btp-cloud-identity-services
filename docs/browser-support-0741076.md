@@ -70,18 +70,6 @@ Latest Version
 <tr>
 <td valign="top">
 
-Microsoft Internet Explorer
-
-</td>
-<td valign="top">
-
-11 \(end of support: October 1, 2021\)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 Mozilla Firefox
 
 </td>

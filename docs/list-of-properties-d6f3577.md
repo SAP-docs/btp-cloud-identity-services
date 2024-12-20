@@ -2760,6 +2760,41 @@ All systems
 <tr>
 <td valign="top">
 
+`ips.trace.created.entity.content` 
+
+</td>
+<td valign="top">
+
+If a provisioning job results in created entities in target or proxy systems, you can view the details for each created user and group.
+
+To do this, you need to enable logging and tracing for the personal and sensitive data of your provisioned entities by setting the property to *true*.
+
+If the property is not set, in the logs you see: `content = <hidden content>`
+
+To learn more about personal and sensitive data, see:
+
+-   [Glossary for Data Protection and Privacy](https://help.sap.com/docs/identity-provisioning/identity-provisioning/glossary-for-data-protection-and-privacy)
+-   [Customer Data](https://help.sap.com/docs/identity-provisioning/identity-provisioning/customer-data) → **Data Storage Security**
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false*
+
+**System Role:** Source
+
+</td>
+<td valign="top">
+
+All systems
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `ips.trace.skipped.entity` 
 
 </td>
@@ -2770,6 +2805,34 @@ This property allows you to download and view the details of all skipped entitie
 **Possible values:**
 
 -   *true* - The downloaded `zip` file contains all skipped entities for the given job, the systems they are skipped from, the reason behind this, as well as the content of the entities \(if `ips.trace.skipped.entity.content` is set to `true`\).
+
+-   *false* - The downloaded `zip` file is empty.
+
+
+Default value: *false*
+
+**System Role:** Source
+
+</td>
+<td valign="top">
+
+All systems
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ips.trace.created.entity` 
+
+</td>
+<td valign="top">
+
+This property allows you to download and view the details of all created entities for a given job in a `zip` archive. For more information, see [Manage Provisioning Job Logs](Monitoring-and-Reporting/manage-provisioning-job-logs-041b5ff.md)
+
+**Possible values:**
+
+-   *true* - The downloaded `zip` file contains all created entities for the given job, the systems in which they are created, as well as the content of the entities \(if `ips.trace.created.entity.content` is set to `true`\).
 
 -   *false* - The downloaded `zip` file is empty.
 
@@ -4886,11 +4949,24 @@ Microsoft Entra ID
 </td>
 <td valign="top">
 
-Path added to the URL to retrieve the CSRF token.
+Path which is appended to the URL to retrieve the CSRF token.
 
-The property is automatically added in the system, with default value: */api/v1/scim/Users?count=1*.
+The property is automatically added during system creation, when the system in use is SAP Analytics Cloud consuming SCIM API version 2.
 
-**System Role:** Source, Target, Proxy
+Based on the version of the SCIM API consumed, the default value for the property is:
+
+-   SAP Analytics Cloud SCIM API version 1: `/api/v1/scim/Users?count=1`
+
+    > ### Note:  
+    > The property is present only for systems created before December 3, 2024. Systems created after this date use the default value for the connector version without adding the property.
+
+-   SAP Analytics Cloud SCIM API version 2: `/api/v1/scim2/Users?count=1`
+
+    > ### Note:  
+    > If you delete the property, the Identity Provisioning will use the default value for the property for SAP Analytics Cloud using SCIM API**version 1**.
+
+
+**System Role:** Target, Proxy
 
 </td>
 <td valign="top">
@@ -11091,7 +11167,7 @@ The maximum number of group members returned per request is 100. To read more th
 -   *true* - Paging is enabled.
 -   *false* - Paging is disabled.
 
-Default value: *false*
+Default value: *true*
 
 **System Role:** Source, Proxy
 
@@ -11292,6 +11368,47 @@ SAP Sales Cloud and SAP Service Cloud is formerly known as SAP Cloud for Custome
 Example: **displayName eq "ProjectTeam1"**
 
 **System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP Sales Cloud and SAP Service Cloud
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`c4c.patch.group.members.above.threshold`
+
+</td>
+<td valign="top">
+
+Defines the threshold number of group members above which they are provisioned on batches with PATCH requests, and below which they are provisioned with PUT request. Setting this property allows you to avoid timeouts when updating groups with a large number of group members.
+
+**Possible values**: integer
+
+Default value: *1 000*
+
+Minimum value: *1*
+
+Maximum value: *1 000*
+
+For example:
+
+-   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1200 members, setting this property to 900 results in the following:
+
+    As 1900 \(the target count of the members\) is above the threshold number of 900, 2 PATCH requests will be sent to the SAP Sales Cloud and SAP Service Cloud target system. The first request will add 900 group members and the second request will add 300 group members.
+
+    The threshold number you set defines the maximum number of group member changes processed per batch.
+
+-   `PUT` request: If you have a group with 1000 members and the threshold is not set or its value is above 1000, one PUT request will be sent to SAP Sales Cloud and SAP Service Cloud. But if you set the threshold to 500, 2 PATCH requests will be sent instead, each adding 500 members.
+
+
+> ### Note:  
+> If the maximum value of 1 000 is exceeded, the system will automatically use the default value.
+
+**System Role:** Target
 
 </td>
 <td valign="top">

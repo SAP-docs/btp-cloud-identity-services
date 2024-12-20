@@ -54,9 +54,9 @@ After you view and analyze the provisioning job logs, you can download or delete
 6.  Save the ZIP file in your local file system, and then open it to view the log records of all failed entities from this job.
 
     > ### Note:  
-    > If your provisioning job is in **Pending Restart** status \(that is, temporary paused due to external reasons\), and is already running with error, only the logs up until the pausing moment will be printed in the current ZIP file. The rest of the logs will be printed in the next ZIP file - when the job is resumed and finished.
+    > If your provisioning job is in *Pending Restart* status \(that is, temporary paused due to external reasons\), the logs for this job will be generated after it is resumed and completed. Be aware that logs for created, skipped, and failed entities, on the page where the job was paused, will be duplicated, assuming the page size property is configured for the given provisioning system. For more information, see [List of Properties](../list-of-properties-d6f3577.md).
     > 
-    > If you manually stop a failing job, only the error logs up until that moment will be printed in the ZIP file.
+    > For example, if you have set `concur.page.size`=30 and your job paused while processing the 20th entity on the second page, the logs for those 20 entities will be duplicated. The number of duplicated logs can be equal to or less than the configured page size. If page size is not configured, the default value of 100 will be used.
 
 
 
@@ -189,6 +189,111 @@ Download the skipped entities for a single job to identify the entities themselv
 
 
 
+<a name="loio041b5ff608b944d19c53be780109506e__section_cbr_ty2_jdc"/>
+
+## Download All Created Entity Logs for a Single Job
+
+> ### Note:  
+> This functionality is available only for Identity Provisioning bundle and standalone tenants running on SAP Cloud Identity infrastructure.
+
+
+
+### Prerequisites
+
+-   You have set the `ips.trace.created.entity` property to `true` in the source system.
+
+-   You have set the `ips.trace.created.entity.content` property to `true` in the source system.
+
+
+For more information, see [List of Properties](../list-of-properties-d6f3577.md)
+
+Download the created entities for a single job to identify the system in which they are created and to view the content of the entities.
+
+1.  Sign in to the administration console of SAP Cloud Identity Services and navigate to *Identity Provisioning* \> *Provisioning Logs* \> *Job Logs*.
+
+2.  Select a job that has created at least one entity.
+
+3.  On the right-hand side of the *Statistics* section, choose the ![](images/IPS_Export_Icon_def37e5.png) button and select *Download All Created Entity Logs for This Job*.
+
+    The log is downloaded as a `zip` archive. The name of the file follows the pattern: <code>ips_jobCreatedEntitiesLogs_<i class="varname">&lt;job ID&gt;</i>_<i class="varname">&lt;date&gt;</i>_<i class="varname">&lt;time&gt;</i></code>.
+
+4.  Save the `zip` file in your local file system, and then open it to view the log records of all created entities for this job.
+
+    The log displays the following information:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Entity Details
+    
+    </th>
+    <th valign="top">
+
+    Value
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *User*
+
+    *Group*
+    
+    </td>
+    <td valign="top">
+    
+    The ID of the created entity in the target or proxy system
+
+    For example: `12345678-1a2b-1bc2-3cd4-1234567890ef`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *System* 
+    
+    </td>
+    <td valign="top">
+    
+    The system in which the entity is created. This could be either a target system or a proxy system.
+
+    For example: `IAS.target`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Content* 
+    
+    </td>
+    <td valign="top">
+    
+    The content attributes of the created entity
+
+    For example:
+
+    > ### Code Syntax:  
+    > ```
+    > {"active":true,"displayName":"JohnSmith","emails":[{"value":"john.smith@example.com"}],
+    > "name":{"familyName":"Smith","givenName":"John"},"schemas":["urn:ietf:params:scim:schemas:core:2.0:User","urn:ietf:params:scim:schemas:extension:sap:2.0:User"],"urn:ietf:params:scim:schemas:extension:sap:2.0:User":{"userUuid":"0036024b-0ede-4fc3-9ed7-c55632de8246"},"urn:sap:cloud:scim:schemas:extension:custom:2.0:User":{"userId":"12345678-1a2b-1bc2-3cd4-1234567890ef"},"userName":"","userType":"public"}
+    > ```
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
+    The log is organized in sections which start with the ID of the created entity. If a user or a group is created in more than one systems, the log will display the ID of the created entity as many times as the number of systems in which it is created and the entity's content.
+
+
+
+
 <a name="loio041b5ff608b944d19c53be780109506e__section_pkz_lfq_zxb"/>
 
 ## Download Job Logs via API
@@ -258,6 +363,8 @@ Possible values:
 -   `failedEntitiesLog` - Download logs containing details about the failed entities for this specific job execution.
 
 -   `skippedEntitiesLog` - Download logs containing details about the skipped entities for this specific job execution.
+
+-   `createdEntitiesLog` - Download logs containing details about the created entities for this specific job execution.
 
 
 

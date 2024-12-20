@@ -2,7 +2,7 @@
 
 # Creating URL To Access Application with Specific Identity Provider
 
-Create a URL which takes users to a specific application with a specific corporate identity provider when Identity Authenticationacts as proxy to multiple corporate identity providers \(IdP\), and users do not decide which one to use.
+Create a URL which takes users to a specific application with a specific corporate identity provider when Identity Authentication acts as proxy to multiple corporate identity providers \(IdP\), and users do not decide which one to use.
 
 <a name="task_sp4_k4c_nzb"/>
 
@@ -29,13 +29,17 @@ Create a URL which takes users to a specific application with a specific corpora
 
 ## Context
 
-The link for IdP-Initiated SSO follows the pattern: `https://<tenant_ID>.accounts.ondemand.com/saml2/idp/sso?sp=<sp_name>&idp=<corporateIdP_name>`
+The link for IdP-Initiated SSO follows the pattern: `https://<tenant_ID>.accounts.ondemand.com/saml2/idp/sso?sp=<sp_name>&idp=<corporateIdP1_name>,<corporateIdP2_name>`
+
+When there is more than one corporate IdP, the user is redirected to the first idp from the parameter, and additionally the second IdP from the parameter is added to the request again in an `idp` parameter.
 
 > ### Note:  
 > -   `sp` - Name of the SAML 2 service provider for which SSO is performed. The `sp_name` value of the parameter equals to the `Entity ID` of the service provider. This parameter is needed for Identity Authentication to know which service provider to redirect the user to after successful authentication.
 > -   `idp` - The name of the corporate identity provider as configured in the administration console for SAP Cloud Identity Services.
 > 
->     When multiple identity providers are allowed for an application via conditional authentication, this parameter enables the client to determine which corporate identity provider to be used. Identity Authentication uses the `idp` parameter to detect the correct corporate identity provider and redirect the request to it.
+>     When multiple identity providers are allowed for an application via conditional authentication, these parameters enable the client to specify which corporate identity providers to be used. Identity Authentication uses the `idp` parameter to detect the correct corporate identity providers and redirect the request to them.
+> 
+>     When there is more than one corporate IdP in the IdP-initiated link, they are separated by comma "`,`" without space between them.
 
 <a name="task_ppl_l4c_nzb"/>
 

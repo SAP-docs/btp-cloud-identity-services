@@ -459,6 +459,7 @@ To edit the application configurations, proceed as follows:
     -   Attributes
     -   Dependencies
     -   Risk-Based Authentication
+    -   Conditional Authentication
     -   Email Verification
     -   Password Policy
     -   Terms Of Use

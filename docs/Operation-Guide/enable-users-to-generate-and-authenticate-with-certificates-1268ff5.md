@@ -16,7 +16,7 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 
 ## Context
 
-By enabling certificate generate and authentication for the users, they can log on to applications with the generated certificate without the need to provide username and password.
+By enabling certificate generation and authentication for the users, they can log on to applications with the generated certificate without the need to provide username and password.
 
 The tenant administrator can configure the system to allow the following types of users to generate their own certificates via the profile page and to authenticate with them:
 
@@ -26,6 +26,9 @@ The tenant administrator can configure the system to allow the following types o
 -   *Employee*
 
 The certificate generation and authentication is disabled by default for all user types. When you allow it for a user type, the user of this type should go to the profile page and generate a certificate for authentication. Once the certificate is generated, it's downloaded to the user's system. When the user imports it to the certificate store or browser, the newly generated certificate is ready for authentication. When the user navigates to the logon page of the application, he or she is automatically authenticated with the certificate. If the authentication fails, the user is prompted to provide username and password.
+
+> ### Caution:  
+> If you have an already configured X.509 client certificate used for user authentication, the users won't be able to authenticate with their own certificates generated via the profile page, and vice versa.
 
 To allow certificate generation and authentication, proceed as follows:
 

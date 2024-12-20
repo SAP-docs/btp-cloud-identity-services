@@ -361,7 +361,7 @@ The source system consumes User Account and Authentication API and Cloud Foundry
     > }
     > ```
 
-7.  Now, add a target system to which to provision users and user assignment of a role into it. For example: [Identity Authentication](identity-authentication-f217bd3.md)[Local Identity Directory](local-identity-directory-59557ae.md)
+7.  Now, add a target system to which to provision users and user assignment of a role. For example: [Identity Authentication](identity-authentication-f217bd3.md)[Local Identity Directory](local-identity-directory-59557ae.md)
 
 8.  \(Optional\) Run a *Simulate* and/or a *Validate* job before you run the actual provisioning job to verify that Identity Provisioning configurations produce the desired result in the target systems. For more information, see [Simulate Provisioning Jobs](Operation-Guide/simulate-provisioning-jobs-9d96db2.md) and [Validate Provisioning Jobs](Operation-Guide/validate-provisioning-jobs-fcaec67.md).
 
@@ -374,4 +374,9 @@ The source system consumes User Account and Authentication API and Cloud Foundry
 
 -   Before starting a provisioning job, you can first subscribe for e-mail notifications from the source system you use in your scenario. This way, you will be notified by e-mail about eventual failed entities during the jobs. For more information, see [Manage Job Notifications](Monitoring-and-Reporting/manage-job-notifications-d055bc2.md).
 -   Now, start an identity provisioning job. For more information, see [Monitor Provisioning Job Logs](Monitoring-and-Reporting/monitor-provisioning-job-logs-e5b5176.md).
+
+**Related Information**  
+
+
+[SAP BTP Integration Scenario](https://help.sap.com/docs/cloud-identity/system-integration-guide/sap-btp-integration-scenario)
 

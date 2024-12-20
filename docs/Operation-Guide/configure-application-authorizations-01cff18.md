@@ -84,14 +84,14 @@ You can restrict access on the basis of the base policies or you can use a custo
     1.  Select a custom authorization policy.
 
         > ### Note:  
-        > If you don’t have an authorization policy in your list, you can create a restiction policy using the `applications.DELETE_APPLICATIONS`, `applications.READ_APPLICATIONS`, `applications.UPDATE_APPLICATIONS` parameters. For more information about how to create a custom authorization policy, see [Create an Authorization Policy](create-an-authorization-policy-897fc30.md).
+        > If you don’t have an authorization policy in your list, you can create a restriction policy using the `applications.DELETE_APPLICATIONS`, `applications.READ_APPLICATIONS`, `applications.UPDATE_APPLICATIONS` parameters. For more information about how to create a custom authorization policy, see [Create an Authorization Policy](create-an-authorization-policy-897fc30.md).
 
     2.  Choose the *Edit* button.
     3.  To customize the rules of the authorization policy, choose *Rules*.
     4.  To assign user to this policy, choose the *Assignments* tab and add users from the list.
 
         > ### Restriction:  
-        > If the user is a tenant administrator you must remove the *Manage Applications* and *Manage Users* roles from that user, otherwise they won't be able to see and have control \(read, update or delete\) over the application for this policy.
+        > If the user is a tenant administrator you must remove the *Manage Applications* and *Manage Users* roles from that user, otherwise they won't be able to see and have control \(read, update or delete\) over the applications for this policy.
 
     5.  Save your changes.
 
@@ -119,5 +119,7 @@ View or edit the *Organization ID* of the application. By default, all applicati
 
 [Configure User Authorizations](configure-user-authorizations-424b64c.md "Configure a granular access control based on policies for the administrators of SAP Cloud Identity Services.")
 
-[Configure Provisioning Authorizations](configure-provisioning-authorizations-a8f8e31.md "Configure granular access control over the Identity Provisioning systems and logs in the SAP Cloud Identity Services administration console.")
+[Configure Group Authorizations](configure-group-authorizations-7a09cad.md "Configure granular access and control over the groups in the administration console of SAP Cloud Identity Services.")
+
+[Configure Provisioning Authorizations](configure-provisioning-authorizations-a8f8e31.md "Configure granular access control for the Identity Provisioning systems and logs in the SAP Cloud Identity Services administration console.")
 

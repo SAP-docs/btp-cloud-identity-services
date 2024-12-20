@@ -64,7 +64,7 @@ application/x-www-form-urlencoded
 <tr>
 <td valign="top">
 
-`Authentication`
+`Authorization`
 
 </td>
 <td valign="top">
@@ -74,7 +74,7 @@ Yes
 </td>
 <td valign="top">
 
--   Basic Authentication -
+-   `Basic` Username and password are:
 
     Client ID and a Secret to authenticate the client \(relying party\). For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
 
@@ -146,7 +146,7 @@ string
 </td>
 <td valign="top">
 
-Path
+Request body
 
 </td>
 </tr>
@@ -173,7 +173,7 @@ The user ID configured for basic authentication for the application. For more in
 </td>
 <td valign="top">
 
-Path
+Request body
 
 </td>
 </tr>
@@ -200,7 +200,7 @@ The client secret configured for basic authentication for the application. For m
 </td>
 <td valign="top">
 
-Path
+Request body
 
 </td>
 </tr>
@@ -227,7 +227,7 @@ A security token that represents the identity of the party on behalf of whom the
 </td>
 <td valign="top">
 
-Path
+Request body
 
 </td>
 </tr>
@@ -255,9 +255,15 @@ Allowed values:
 
 -   `urn:sap:identity:oauth:token-type:saml2-session`
 -   `urn:ietf:params:oauth:token-type:access_token`
--   `urn:ietf:params:oauth:token-type:id_token`
 -   `urn:ietf:params:oauth:token-type:refresh_token`
+-   `urn:ietf:params:oauth:token-type:id_token`
 -   `urn:ietf:params:oauth:token-type:jwt`
+
+    > ### Tip:  
+    > You can use either a JWT-based access token or an id\_token.
+    > 
+    > If you want to exchange a JWT token of a corporate identity provider \(IdP\), you should do it before an exchange with a JWT bearer token.
+
 
 
 
@@ -387,7 +393,7 @@ string
 </td>
 <td valign="top">
 
-The `token_format` can be set to `opaque` to retrieve an opaque access token or to `jwt` to retrieve a JWT based access token. If not set, the current defaults per grant type are used.
+The `token_format` can be set to `opaque` to retrieve an opaque access token or to `jwt` to retrieve a JWT-based access token. If not set, the current defaults per grant type are used.
 
 </td>
 <td valign="top">
@@ -419,7 +425,48 @@ Reserved.
 </td>
 <td valign="top">
 
-Path
+Request body
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`scope`
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Value must be space deliminated parameter, for example: `scope=openid email`.
+
+The supported values are:
+
+-   `openid`
+-   `email`
+-   `profile`
+-   `groups`
+-   `offline_access`
+
+    > ### Note:  
+    > The new tokens are independently created from the Identity Authentication Web session. This means that even if a user logs out from Identity Authentication the `refresh_token` will exist in the database until it expires, and can be used to perform the refresh token flow if the user is not present in Identity Authentication with a Web session.
+
+
+
+
+</td>
+<td valign="top">
+
+Request body
 
 </td>
 </tr>
@@ -436,11 +483,15 @@ Path
 > 
 > ```
 > 
-> https://my-tenant.ondemand.com/oauth2/token?grant_type=urn:ietf:params:oauth:grant-type:token-exchange&
+> POST /oauth2/token
+> Content-Type: application/x-www-form-urlencoded
+> 
+> grant_type=urn:ietf:params:oauth:grant-type:token-exchange&
 > client_id=a90ca226sbc34-soc5-dcf6-6k8a6b9f2469&
 > client_secret=OWSu0/0sSUeUCG1LAYmSQ10Ut0yrfPz&
-> subject_token=Zjk1YTI3YERzNGZlZmTlNzZjNzk4YTY2ZjdlZjYwMacw
-> subject_token_type=urn:ietf:params:oauth:token-type:access_token
+> subject_token=Zjk1YTI3YERzNGZlZmTlNzZjNzk4YTY2ZjdlZjYwMacw&
+> subject_token_type=urn:ietf:params:oauth:token-type:access_token&
+> scope=openid
 > ```
 > 
 > *Response*

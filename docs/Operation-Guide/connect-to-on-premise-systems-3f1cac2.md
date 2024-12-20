@@ -34,7 +34,7 @@ If your provisioning scenarios involve on-premise systems, this requires a separ
 
     For more information, see [Viewing Assigned Tenants and Administrators](https://help.sap.com/docs/IDENTITY_AUTHENTICATION/6d6d63354d1242d185ab4830fc04feb1/f56e6f24e373404087d6a1a9a13515a2.html?version=Cloud).
 
-    The screenshot below illustrates a customer landscape with Identity Authentication and Identity Provisioning tenants running on their common SAP Cloud Identity Services infrastructure in one region US/Canada \(in the red frame\). The first pair is used for testing purposes and the second one for productive purposes.
+    The screenshot below illustrates a customer landscape with Identity Authentication and Identity Provisioning tenants running on their common SAP Cloud Identity Services infrastructure in one region US West \(in the red frame\). The first pair is used for testing purposes and the second one for productive purposes.
 
     ![](images/SCI_Tenant_f3d433b.png)
 
@@ -63,7 +63,7 @@ If your provisioning scenarios involve on-premise systems, this requires a separ
     <tr>
     <td valign="top">
     
-    Rot \(Germany\) / Amsterdam \(Netherlands\)
+    Netherlands \(Amsterdam\) / Germany \(Frankfurt\)
     
     </td>
     <td valign="top">
@@ -183,7 +183,7 @@ If your provisioning scenarios involve on-premise systems, this requires a separ
     <tr>
     <td valign="top">
     
-    United States \(Sterling\) / Canada \(Toronto\)
+    United States \(Sterling\) / United States \(Colorado\)
     
     </td>
     <td valign="top">
@@ -207,7 +207,7 @@ If your provisioning scenarios involve on-premise systems, this requires a separ
     <tr>
     <td valign="top">
     
-    USA West \(Quincy\)
+    US West
     
     </td>
     <td valign="top">
@@ -242,7 +242,7 @@ If your provisioning scenarios involve on-premise systems, this requires a separ
     </tr>
     </table>
     
-    For example, customers with Identity Authentication and Identity Provisioning tenants in US/Canada region must create a Cloud Foundry subaccount in US East \(VA\) AWS region.
+    For example, customers with Identity Authentication and Identity Provisioning tenants in US West region must create a Cloud Foundry subaccount in US West \(WA\) Azure region.
 
     Once you create the subaccount, you must enable Cloud Foundry for this subaccount.
 

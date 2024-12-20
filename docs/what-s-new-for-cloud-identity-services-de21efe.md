@@ -86,6 +86,1154 @@ Version
 <tr>
 <td valign="top">
 
+27170
+
+</td>
+<td valign="top">
+
+Cloud Identity Services
+
+</td>
+<td valign="top">
+
+Off-Cycle Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-12-19
+
+</td>
+<td valign="top">
+
+2024-12-19
+
+</td>
+<td valign="top">
+
+Off-Cycle
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-12-17
+
+</td>
+<td valign="top">
+
+2024-12-17
+
+</td>
+<td valign="top">
+
+2412b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Create User Groups
+
+</td>
+<td valign="top">
+
+Tenant administrators can create and edit application-specific groups via the administration console for Cloud Identity Services. See [Create a New Group](Operation-Guide/create-a-new-group-b1b638d.md) and [List and Edit Groups](Operation-Guide/list-and-edit-groups-5e8a55c.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-12-17
+
+</td>
+<td valign="top">
+
+2024-12-17
+
+</td>
+<td valign="top">
+
+2412b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Group Authorizations Based оn Policies
+
+</td>
+<td valign="top">
+
+Tenant administrators can configure access to groups in the administration console of Cloud Identity Services via authorizations based on policies. See [Configure Group Authorizations](Operation-Guide/configure-group-authorizations-7a09cad.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-12-17
+
+</td>
+<td valign="top">
+
+2024-12-17
+
+</td>
+<td valign="top">
+
+2412b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+valueMappings transformation expression is enhanced
+
+</td>
+<td valign="top">
+
+The valueMappings transformation expression now includes enhanced validations in the JSON editor and automatically pre-filled attributes in the graphical editor. The validations help you identify missing or mismatched values and incorrect array formats, while also indicating where these issues occur.
+
+For more information, see [Transformation Expressions](transformation-expressions-bb8537b.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-12-17
+
+</td>
+<td valign="top">
+
+2024-12-17
+
+</td>
+<td valign="top">
+
+2412b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Download all created entities for a provisioning job
+
+</td>
+<td valign="top">
+
+You can now download and view the details of all created entities during a provisioning job. To enable this, set the properties `ips.trace.created.entity` and `ips.trace.created.entity.content` to true.
+
+For more information, see [Manage Provisioning Job Logs](Monitoring-and-Reporting/manage-provisioning-job-logs-041b5ff.md) and [List of Properties](list-of-properties-d6f3577.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-12-17
+
+</td>
+<td valign="top">
+
+2024-12-17
+
+</td>
+<td valign="top">
+
+2412b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP BTP Platform Members \(Cloud Foundry\) and SAP BTP XS Advanced UAA \(Cloud Foundry\)- support for `active` and `verified` attributes
+
+</td>
+<td valign="top">
+
+The default write transformations of SAP BTP Platform Members \(Cloud Foundry\) and SAP BTP XS Advanced UAA \(Cloud Foundry\) are changed to support the active and verified attributes as optional with default value true. At user creation, these attributes have hardcoded value true.
+
+For more information, see [SAP BTP Platform Members \(Cloud Foundry\) \(Target\)](sap-btp-platform-members-cloud-foundry-f5cefa9.md) and [SAP BTP XS Advanced UAA \(Cloud Foundry\) \(Target\)](sap-btp-xs-advanced-uaa-cloud-foundry-ecddce6.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-12-17
+
+</td>
+<td valign="top">
+
+2024-12-17
+
+</td>
+<td valign="top">
+
+2412b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Off-Cycle Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-12-13
+
+</td>
+<td valign="top">
+
+2024-12-13
+
+</td>
+<td valign="top">
+
+Off-Cycle
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Off-Cycle Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-12-12
+
+</td>
+<td valign="top">
+
+2024-12-12
+
+</td>
+<td valign="top">
+
+Off-Cycle
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Identity Directory API
+
+</td>
+<td valign="top">
+
+As of January 14, 2025, to filter for `attributes` or `excludedAttributes` via the Identity Directory API, the filtered `attributes` or `excludedAttributes` in the request must be in the format `schemaName:attributeName`. For example: `attributes=urn:ietf:params:scim:schemas:extension:sap:2.0:User:userUuid`
+
+See [Identity Directory API Reference](https://api.sap.com/api/IdDS_SCIM/resource/Users).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-12-09
+
+</td>
+<td valign="top">
+
+2025-01-14
+
+</td>
+<td valign="top">
+
+2413b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-12-03
+
+</td>
+<td valign="top">
+
+2024-12-03
+
+</td>
+<td valign="top">
+
+2412а
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Corporate IdPs
+
+</td>
+<td valign="top">
+
+We have extended the selection of corporate identity providers \(IdPs\) via URL parameter to accept more than one IdP. See [Creating URL To Access Application with Specific Identity Provider](Operation-Guide/creating-url-to-access-application-with-specific-identity-provider-118f5f4.md) and [Configure IdP-Initiated SSO](Operation-Guide/configure-idp-initiated-sso-5d59caa.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-12-03
+
+</td>
+<td valign="top">
+
+2024-12-03
+
+</td>
+<td valign="top">
+
+2412а
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Granular access to Identity Provisioning
+
+</td>
+<td valign="top">
+
+Tenant administrators can assign authorization policies to users, allowing them to access only source systems, target systems, proxy systems, provisioning logs, or any combination of these.
+
+For more information, see [Configure Provisioning Authorizations](Operation-Guide/configure-provisioning-authorizations-a8f8e31.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services
+
+</td>
+<td valign="top">
+
+2024-12-03
+
+</td>
+<td valign="top">
+
+2024-12-03
+
+</td>
+<td valign="top">
+
+2412a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Provisioning system buttons relocated
+
+</td>
+<td valign="top">
+
+Buttons used to execute actions related to provisioning systems, like *Add*, *Reset*, *Delete*, *Enable* and *Disable* are now located at the top corner of the screen. Entering the *Edit* mode to reset, delete, enable or disable a system has been removed.
+
+For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services
+
+</td>
+<td valign="top">
+
+2024-12-03
+
+</td>
+<td valign="top">
+
+2024-12-03
+
+</td>
+<td valign="top">
+
+2412a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Sales Cloud and SAP Service Cloud - define threshold of group members for patch requests
+
+</td>
+<td valign="top">
+
+The `c4c.patch.group.members.above.threshold` property which defines the threshold number of group members above which they are provisioned on batches with PATCH requests is supported for SAP Sales Cloud and SAP Service Cloud connector.
+
+For more information, see [List of Properties](list-of-properties-d6f3577.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services
+
+</td>
+<td valign="top">
+
+2024-12-03
+
+</td>
+<td valign="top">
+
+2024-12-03
+
+</td>
+<td valign="top">
+
+2412a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Changed behavior of `csrf.token.path` for SAP Analytics Cloud 
+
+</td>
+<td valign="top">
+
+The `csrf.token.path` property is automatically added with a default value only when an SAP Analytics Cloud system is created using SCIM API version 2.
+
+For more information about the availability and values of this property in both versions 1 and 2, see [List of Properties](list-of-properties-d6f3577.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services
+
+</td>
+<td valign="top">
+
+2024-12-03
+
+</td>
+<td valign="top">
+
+2024-12-03
+
+</td>
+<td valign="top">
+
+2412a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Cloud Identity Services 
 
 </td>
@@ -962,6 +2110,79 @@ General Availability
 <td valign="top">
 
 Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2024-10-23
+
+</td>
+<td valign="top">
+
+2024-10-23
+
+</td>
+<td valign="top">
+
+2410b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regional Availability
+
+</td>
+<td valign="top">
+
+The Europe region now operates in high availability \(HA\) mode with two data centers in Amsterdam and Frankfurt. Rot is no more part of the HA mode in the Europe region.
+
+See [Regional Availability](regional-availability-be600ca.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
 
 </td>
 <td valign="top">

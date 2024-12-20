@@ -65,7 +65,13 @@ You can also restrict access to applications based on membership in a corporate 
 
 ## User Records
 
-When a user has been successfully authenticated for the first time with the credentials from the corporate user store, a record for that user is created in Identity Authentication. That user record is created with details from the corporate user store. In this record, the user is created with a *User Type* `employee`. This *User Type* cannot be changed.
+When a user has been successfully authenticated for the first time with the credentials from the corporate user store, a record for that user is created in Identity Authentication. That user record is created with details from the corporate user store. In this record, the user is created with a *User Type* `employee`, Password Authentication Provider Type \(39\), and Password Authentication Provider ID.
+
+1 reply
+
+19 days agoView thread
+
+. This *User Type* cannot be changed.
 
 For more information about the attributes taken from the Active Directory and their mapping to the user store of Identity Authentication, see **Configure SAP BTP When Connecting to an LDAP User Store** in [Configure SAP BTP](corporate-user-store-cloud-foundry-environment-9942ede.md#loiodd8240d6a4f54e938ec867c21a4e9222).
 

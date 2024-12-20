@@ -25,6 +25,20 @@ Remember that it may take between two and four weeks to enable the certificate.
 > ### Note:  
 > If you want to configure a certificate, using your own trusted CA, for example for scenarios like authentication of technical users or OAuth clients, skip the procedure in this document and report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`. Attach to the incident the root and intermediate certificates and provide the Identity Authentication tenant host.
 
+> ### Caution:  
+> If the users have generated their own certificates via the profile page, they won't be able to authenticate with the configured X.509 client certificate, and vice versa.
+
+
+
+### Edit and Delete Certificates
+
+If you want to edit an already configured certificate, choose certificate, choose the *Edit* button, make your changes and save them.
+
+> ### Remember:  
+> If you have made changes to the root certificate, report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`, attach to the incident the root and intermediate certificates, and provide the Identity Authentication tenant host.
+
+If you want to delete an already configured certificate, choose the certificate, choose the *Delete* button, and report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS` providing the Identity Authentication tenant host.
+
 To configure a trusted X.509 certificate, proceed as follows:
 
 

@@ -19,14 +19,14 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 You can change the name format, the certificate used by the identity provider to digitally sign the messages for the applications, set the token policy by configuring the validity of the refresh token, access and id\_token, and the maximum sessions per user, and extend the standard metadata with custom values.
 
 > ### Note:  
-> The signing certificate is one and the same for SAML 2.0 and OpenId Connect. A change in one of the configurations affects the other one.
+> The signing certificate is one and the same for SAML 2.0 and OpenID Connect. A change in one of the configurations affects the other one.
 
-The *OpenID Connect Configuration* view in the administration console shows also information about the URLs of the *Domain for Browser Flows*, *Authorization Endpoint*, *Token Endpoint*, *UserInfo Endpoint*, and *Logout Endpoint*.
+The *OpenID Connect Configuration* view in the administration console also shows information about the URLs of the *Domain for Browser Flows*, *Authorization Endpoint*, *Token Endpoint*, *UserInfo Endpoint*, and *Logout Endpoint*.
 
 The token policy for the tenant is defined by configuring the validity of the refresh token, access and id\_token, and the maximum sessions per user. It’s valid for all the applications in the tenant.
 
 > ### Remember:  
-> If you want a specific token policy per application, you must set a custom token policy for each application. If you modify the settings on tenant level, all applications without their own custom token policy are affected. For more information, see [Token Policy Configuration for Applications](token-policy-configuration-for-applications-c4ba52e.md)
+> If you want a specific token policy per application, you must set a custom token policy for each application. If you modify the settings on the tenant level, all applications without their own custom token policy are affected. For more information, see [Token Policy Configuration for Applications](token-policy-configuration-for-applications-c4ba52e.md)
 
 The following table lists the token policy options for OIDC applications.
 
@@ -59,13 +59,15 @@ Sets the refresh token lifetime issued by Identity Authentication. The value can
 The default value is 12 hours.
 
 > ### Note:  
-> When using the authorization code flow, if you set the token policy for refresh tokens longer than the session timeout, add the *offline\_access* scope to your authorization code request. Without this scope, the service deletes the refresh token from the database when the resource owner ends the session \(logs out\). Without the refresh token, the OAuth client can't request new tokens anymore.
+> -   If the validity of refresh tokens is less than the validity of access/ID tokens, access/ID tokens can't be refreshed after the access/ID tokens expire.
 > 
-> For more information, see:
+> -   When using the authorization code flow, if you set the token policy for refresh tokens longer than the session timeout, add the *offline\_access* scope to your authorization code request. Without this scope, the service deletes the refresh token from the database when the resource owner ends the session \(logs out\). Without the refresh token, the OAuth client can't request new tokens anymore.
 > 
-> -   [Configure Session Timeout](configure-session-timeout-5ca23e4.md)
+>     For more information, see:
 > 
-> -   [Using Authorization Code Flow](using-authorization-code-flow-c135fc4.md)
+>     -   [Configure Session Timeout](configure-session-timeout-5ca23e4.md)
+> 
+>     -   [Using Authorization Code Flow](using-authorization-code-flow-c135fc4.md)
 
 
 
@@ -79,7 +81,7 @@ The default value is 12 hours.
 </td>
 <td valign="top">
 
-Sets the access and id\_token lifetime issued by Identity Authentication. The value can range from 1 to 60 minutes.
+Sets the access and id\_token lifetime issued by Identity Authentication. The value can range from 1 to 720 minutes, in other words, from 1 minute to 12 hours.
 
 The default value is 60 minutes.
 
@@ -237,7 +239,7 @@ To view or change the tenant OpenID Connect configurations, proceed as follows:
 To change the default certificate for the tenant, choose the new one from the list, and save your configuration.
 
 > ### Caution:  
-> When you change the default certificate for the tenant, you must also update the trust with the service provider. For more information see [Configure OpenID Connect Application](configure-openid-connect-application-8a0aa2e.md) or [Configure OpenID Connect Application](configure-openid-connect-application-8a0aa2e.md).
+> When you change the default certificate for the tenant, you must also update the trust with the service provider. For more information, see [Configure OpenID Connect Application](configure-openid-connect-application-8a0aa2e.md) or [Configure OpenID Connect Application](configure-openid-connect-application-8a0aa2e.md).
 
 **Related Information**  
 

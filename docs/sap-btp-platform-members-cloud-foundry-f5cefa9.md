@@ -34,7 +34,7 @@ In SAP BTP Platform Members \(Cloud Foundry\), groups correspond to roles in par
 The target system consumes User Account and Authentication API and Cloud Foundry V3 API provided by Cloud Foundry.
 
 > ### Remember:  
-> This connector enables you to write users and user role assignments to Cloud Foundry on *subaccount* level. For provisioning of users and groups to Cloud Foundry on *application* level, refer to [SAP BTP XS Advanced UAA \(Cloud Foundry\)](sap-btp-xs-advanced-uaa-cloud-foundry-ecddce6.md).
+> This connector enables you to write users and user role assignments to Cloud Foundry on *subaccount* level. For provisioning of users and groups to Cloud Foundry on *application* level, refer to [SAP BTP XS Advanced UAA \(Cloud Foundry\)](sap-btp-xs-advanced-uaa-cloud-foundry-ecddce6.md). For more information, see [SAP BTP Integration Scenario](https://help.sap.com/docs/cloud-identity/system-integration-guide/sap-btp-integration-scenario?version=Cloud).
 
 Follow the steps below to create SAP BTP Platform Members \(Cloud Foundry\) as a target system to provision users and user role assignments.
 
@@ -262,6 +262,7 @@ Follow the steps below to create SAP BTP Platform Members \(Cloud Foundry\) as a
 
     > ### Code Syntax:  
     > ```
+    > 
     > {
     >   "user": {
     >     "skipOperations": [
@@ -293,6 +294,32 @@ Follow the steps below to create SAP BTP Platform Members \(Cloud Foundry\) as a
     >         "optional": true
     >       },
     >       {
+    >         "sourcePath": "$.active",
+    >         "targetPath": "$.active",
+    >         "defaultValue": true,
+    >         "optional": true
+    >       },
+    >       {
+    >         "scope": "createEntity",
+    >         "constant": true,
+    >         "targetPath": "$.active"
+    >       },
+    >       {
+    >         "sourcePath": "$.verified",
+    >         "targetPath": "$.verified",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['mailVerified']",
+    >         "targetPath": "$.verified",
+    >         "optional": true
+    >       },
+    >       {
+    >         "scope": "createEntity",
+    >         "constant": true,
+    >         "targetPath": "$.verified"
+    >       },
+    >       {
     >         "sourcePath": "$.emails",
     >         "targetPath": "$.emails",
     >         "preserveArrayWithSingleElement": true
@@ -316,6 +343,10 @@ Follow the steps below to create SAP BTP Platform Members \(Cloud Foundry\) as a
     >       {
     >         "scope": "createEntity",
     >         "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
+    > 	   //The attribute group extension name is used to map the users and user assignments of a role 
+    > 	   //to the relevant Cloud Foundry organization or space.
+    > 	   //the organization group extension name follows the pattern: <org_ID> <org_role>
+    > 	   //the space group extension name follows the pattern: <org_ID> <space_ID> <space_role>
     >         "targetPath": "$.id",
     >         "targetVariable": "entityIdTargetSystem"
     >       },

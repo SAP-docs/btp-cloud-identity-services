@@ -153,5 +153,5 @@ The email activation link that you have received is expired or already used by y
 **Related Information**  
 
 
-[Getting Support](../getting-support-06818b2.md "This document is to help users, administrators, and developers deal with issues from Identity Authentication.")
+[Getting Support](../getting-support-06818b2.md "This document is to help users, administrators, and developers deal with issues from SAP Cloud Identity Services.")
 

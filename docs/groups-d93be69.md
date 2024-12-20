@@ -4,7 +4,7 @@
 
 SAP Cloud Identity Services offers groups to organize users based on common characteristics, authorization, or application. Use them to efficiently manage user access and permissions within your organization's SAP Cloud Identity Services environment.
 
-There are two types of groups in SAP Cloud Identity Services - *user groups* and *authorization policy groups*, and one special kind of group - *application-specific groups* which can be either of the two main types.
+There are two types of groups in SAP Cloud Identity Services - *user groups* and *authorization groups*, and one special group - *application-specific groups* which can be either of the two main types.
 
 ![](images/Groups_1087fb8.png)
 
@@ -26,12 +26,12 @@ For more information, see [Managing Groups](Operation-Guide/managing-groups-ddd0
 
 <a name="loiod93be69816ac4d0c9b972895f2b6a46f__section_ug2_35z_lbc"/>
 
-## Authorization Policy Groups
+## Authorization Groups
 
-The authorization policy groups represent the authorization policies that are available in the administration console for SAP Cloud Identity Services. Initially, only the authorization policy groups related to the base authorization policies are visible. When you create a new authorization policy, a group with the same name is also created and appears in the list of the groups. The type of these groups in the administration console is *Authorization Policy*.
+The authorization groups represent the authorization policies that are available in the administration console for SAP Cloud Identity Services. Initially, only the authorization groups related to the base authorization policies are visible. When you create a new authorization, a group with the same name is also created and appears in the list of the groups. The type of these groups in the administration console is *Authorization*.
 
 > ### Restriction:  
-> You can't modify or delete an authorization policy group.
+> You can't modify or delete an authorization group.
 
 For more information, see [Configure Authorizations Based on Policies](Operation-Guide/configure-authorizations-based-on-policies-08fea39.md) and [Configuring Authorization Policies](Operation-Guide/configuring-authorization-policies-982ac5f.md).
 
@@ -41,21 +41,21 @@ For more information, see [Configure Authorizations Based on Policies](Operation
 
 ## Application-Specific Groups
 
-The application specific groups are a special kind of groups which can only be created in the Identity Directory of SAP Cloud Identity Services by running provisioning jobs. For more information, see [Start and Stop Provisioning Jobs](Operation-Guide/start-and-stop-provisioning-jobs-531a261.md).
+The application-specific groups are a special kind of groups which can be created in the Identity Directory of SAP Cloud Identity Services by running provisioning jobs, or via the administration console. For more information, see [Start and Stop Provisioning Jobs](Operation-Guide/start-and-stop-provisioning-jobs-531a261.md) and [Create a New Group](Operation-Guide/create-a-new-group-b1b638d.md).
 
 The extension schema of the Identity Directory API *urn:ietf:params:scim:schemas:extension:sap:2.0:Group* defines the following three atrributes:
 
 -   *applicationId* - supported only for the Local Identity Directory default write and proxy write transformations as mandatory attribute. The value of this attribute is provided from the source system by setting the property ips.application.id. For more information, see [List of Properties](list-of-properties-d6f3577.md) →`ips.application.id`.
 
--   *type* - supported by theLocal Identity Directory source, target and proxy provisioning systems as optional attribute. If no value is specified in the write or proxy write default transformations, the default value*'userGroup'* is set.
+-   *type* - supported by theLocal Identity Directory source, target, and proxy provisioning systems as optional attribute. If no value is specified in the write or proxy write default transformations, the default value*'userGroup'* is set.
 
--   *supportedOperations* - supported byLocal Identity Directory source, target and proxy provisioning systems as optional attribute. If no value is specified in the write or proxy write default transformations, the default value *'readWrite'* is set. The attribute defines the supported update options for the application specific group.
+-   *supportedOperations* - supported byLocal Identity Directory source, target, and proxy provisioning systems as optional attribute. If no value is specified in the write or proxy write default transformations, the default value *'readWrite'* is set. The attribute defines the supported update options for the application-specific group.
 
 
-The application-specific groups can be of the type *User Group* or *Authorization Policy*. They appear with their name in the *Application Name* column in the administration console for SAP Cloud Identity Services under the *Groups* tile. The *Application Name* column for the groups that are not application specific is empty.
+The application-specific groups can be of the type *User Group* or *Authorization*. They appear with their name in the *Application Name* column in the administration console for SAP Cloud Identity Services under the *Groups* tile. The *Application Name* column for the groups that aren't application-specific is empty.
 
 > ### Restriction:  
-> You must be assigned to a policy that allows reading applications to view *Application Name* column. For more information, see [Configure User Authorizations](Operation-Guide/configure-user-authorizations-424b64c.md).
+> You must be assigned to a policy that allows reading applications, or to the *Manage Applications* role to view *Application Name* column. For more information, see [Configure User Authorizations](Operation-Guide/configure-user-authorizations-424b64c.md).
 
 The application-specific groups support the following operations:
 
@@ -66,7 +66,12 @@ The application-specific groups support the following operations:
 <tr>
 <th valign="top">
 
-Operations
+Technical Name
+
+</th>
+<th valign="top">
+
+Display Name
 
 </th>
 <th valign="top">
@@ -83,6 +88,11 @@ You can
 </td>
 <td valign="top">
 
+*Read*
+
+</td>
+<td valign="top">
+
 -   View the group details and group members.
 
 
@@ -93,6 +103,11 @@ You can
 <td valign="top">
 
 `ReadWrite`
+
+</td>
+<td valign="top">
+
+*Read & Write*
 
 </td>
 <td valign="top">
@@ -114,9 +129,37 @@ You can
 </td>
 <td valign="top">
 
+*User Membership Only*
+
+</td>
+<td valign="top">
+
 -   View the group details and group members.
 -   Add new group members.
 -   Remove the group members.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`Membership`
+
+</td>
+<td valign="top">
+
+*Membership*
+
+</td>
+<td valign="top">
+
+-   View the group details and group members.
+-   Add new entities, users, and groups, as group members.
+-   Remove entities, users, and groups, from the group members.
+-   Nest groups.
+-   You **can't** modify or delete the group.
 
 
 

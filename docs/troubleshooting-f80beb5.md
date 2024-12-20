@@ -11,5 +11,5 @@ For issues specific to SAP Cloud Identity Services - Identity Provisioning, see 
 **Related Information**  
 
 
-[Getting Support](getting-support-06818b2.md "This document is to help users, administrators, and developers deal with issues from Identity Authentication.")
+[Getting Support](getting-support-06818b2.md "This document is to help users, administrators, and developers deal with issues from SAP Cloud Identity Services.")
 

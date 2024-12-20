@@ -36,7 +36,7 @@ Bundle or standalone tenants running on SAP BTP, Neo environment manage certific
 
 For standalone tenants, the following requirements must have been fulfilled in SAP BTP cockpit in the consumer subaccount:
 
-1.  Create an OAuth client for Platform API and choose the *Keystore* and *Authorization Management* API options. Save the generated client credentials. For more information, see [Using Platform APIs](https://help.sap.com/docs/BTP/ea72206b834e4ace9cd834feed6c0e09/392af9d162694d6595499f1549978aa6.html)
+1.  Create an OAuth client for Platform API and choose the *Keystore*, the*Configuration Service*, and *Authorization Management* API options. Save the generated client credentials. For more information, see [Using Platform APIs](https://help.sap.com/docs/BTP/ea72206b834e4ace9cd834feed6c0e09/392af9d162694d6595499f1549978aa6.html)
 
 2.  Create a destination with the following properties:
 
