@@ -106,7 +106,7 @@ The above configurations are valid for the whole tenant. They will take effect f
 
 [Configure Google as Identity Provider](configure-google-as-identity-provider-caf215f.md "By configuring Google as a social identity provider, users can log on to applications with their Google credentials by liking their accounts in Identity Authentication to the Google account.")
 
-[Configure LinkedIn as Identity Provider](configure-linkedin-as-identity-provider-9077d6c.md "By configuring LinkedIn as social identity provider, users can log on to applications with their LinkedIn credentials by liking their accounts in Identity Authentication to the LinkedIn account.")
+[Configure LinkedIn as Identity Provider](configure-linkedin-as-identity-provider-9077d6c.md "By configuring LinkedIn as social identity provider, users can log on to applications with their LinkedIn credentials by linking their accounts in Identity Authentication to the LinkedIn account.")
 
 [Configure X as Identity Provider](configure-x-as-identity-provider-f5bc52d.md "By configuring X as social provider, users can log on to applications with their X credentials by liking their accounts in Identity Authentication to the X account.")
 

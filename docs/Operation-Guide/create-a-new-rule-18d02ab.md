@@ -130,8 +130,8 @@ Each rule contains the following information:
     Specify the type, which the authenticating user must have. If no user type is selected, the rule is valid for any of the types.
 
 -   *Group Type*
-    -   Cloud Group - default choice
-    -   On-Premise Group
+    -   Cloud Group - A group that is created in the Identity Directory of Cloud Identity services. This is the default choice. For more information about the Identity Directory groups, see [Groups](../groups-d93be69.md).
+    -   On-Premise Group - A corporate user store group.
 
 -   *Group*
 

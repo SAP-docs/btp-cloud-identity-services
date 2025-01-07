@@ -2,7 +2,7 @@
 
 # Configure LinkedIn as Identity Provider
 
-By configuring LinkedIn as social identity provider, users can log on to applications with their LinkedIn credentials by liking their accounts in Identity Authentication to the LinkedIn account.
+By configuring LinkedIn as social identity provider, users can log on to applications with their LinkedIn credentials by linking their accounts in Identity Authentication to the LinkedIn account.
 
 
 

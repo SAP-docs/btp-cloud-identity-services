@@ -106,7 +106,7 @@ The above configurations are valid for the whole tenant. They will take effect f
 
 [Configure Facebook as Identity Provider](configure-facebook-as-identity-provider-cc16b33.md "By configuring Facebook as a social identity provider, users can log on to applications with their social media credentials by liking their accounts in Identity Authentication to the social media account.")
 
-[Configure LinkedIn as Identity Provider](configure-linkedin-as-identity-provider-9077d6c.md "By configuring LinkedIn as social identity provider, users can log on to applications with their LinkedIn credentials by liking their accounts in Identity Authentication to the LinkedIn account.")
+[Configure LinkedIn as Identity Provider](configure-linkedin-as-identity-provider-9077d6c.md "By configuring LinkedIn as social identity provider, users can log on to applications with their LinkedIn credentials by linking their accounts in Identity Authentication to the LinkedIn account.")
 
 [Configure X as Identity Provider](configure-x-as-identity-provider-f5bc52d.md "By configuring X as social provider, users can log on to applications with their X credentials by liking their accounts in Identity Authentication to the X account.")
 

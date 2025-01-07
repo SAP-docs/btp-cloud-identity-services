@@ -32,7 +32,7 @@ By specifying existing users in the imported CSV file you can also restrict the 
 The CSV file can contain only columns with no spaces between them, with the following attributes. If you include columns with other attributes, their values in the table are ignored.
 
 > ### Note:  
-> If you enter the data in the CSV file as text, you must separate the entries with commas. Beware not to put any spaces before or after the comas. If you enter more than one value in a single entry, separate the values within the entry with commas and enclose the entry in quotation marks.
+> If you enter the data in the CSV file as text, you must separate the entries with commas. Beware not to put any spaces before or after the commas. If you enter more than one value in a single entry, separate the values within the entry with commas and enclose the entry in quotation marks.
 
 **CSV Files Attributes**
 
