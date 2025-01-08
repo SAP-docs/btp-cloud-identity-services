@@ -55,7 +55,7 @@ Values
 <tr>
 <td valign="top">
 
-`Basic Authorization`
+`Authorization`
 
 </td>
 <td valign="top">
@@ -64,6 +64,13 @@ Yes
 
 </td>
 <td valign="top">
+
+`Basic`
+
+-   via application \(\(service provider \(SP\)\) Authentication certificate
+
+-   via SP REST API username and password
+
 
 For more information, see [API Authentication](../Operation-Guide/api-authentication-9d200d5.md).
 

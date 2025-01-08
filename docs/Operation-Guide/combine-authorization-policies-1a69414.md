@@ -2,7 +2,7 @@
 
 # Combine Authorization Policies
 
-You can combine authorization policies to create a new one. This new authorization policy gets the rules of the authorization policies that you combined.
+You can combine authorization policies to create a new one. This new authorization policy gets all the rules of the authorization policies that you combined.
 
 
 

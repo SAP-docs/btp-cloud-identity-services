@@ -16,7 +16,7 @@ You need to set up the authentication type to access the API. For more informati
 
 ## Request
 
-**URI:**<code>https:/&lt;Cloud Identity Services domain&gt;/service/users/&lt;SP user id&gt;</code>
+**URI:**<code>https:/&lt;Cloud Identity Services domain&gt;. Replace the texts in brackets with actual information, and optionally delete instructions when no longer needed (instructions are not visible in the output). /service/users/&lt;SP user id&gt;. Replace the texts in brackets with actual information, and optionally delete instructions when no longer needed (instructions are not visible in the output).</code>
 
 > ### Note:  
 > The domain part has the following pattern:
@@ -53,7 +53,7 @@ Values
 <tr>
 <td valign="top">
 
-`Basic Authorization`
+`Authorization`
 
 </td>
 <td valign="top">
@@ -62,6 +62,13 @@ Yes
 
 </td>
 <td valign="top">
+
+`Basic`
+
+-   via application \(\(service provider \(SP\)\) Authentication certificate
+
+-   via SP REST API username and password
+
 
 For more information, see [API Authentication](../Operation-Guide/api-authentication-9d200d5.md).
 
