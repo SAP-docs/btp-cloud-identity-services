@@ -434,7 +434,7 @@ This configuration allows you to restrict the access to the application only to 
 
 ## Procedure
 
-1.  Make sure that the required groups are created in the administration console of Identity Authentication. For more information, see [Create a New Group](create-a-new-group-b1b638d.md).
+1.  Make sure that the required groups are created in the administration console of Identity Authentication. For more information, see [Create a Group](create-a-group-b1b638d.md).
 
 2.  Provision, or import the users that you will grant access to the application via a CSV file import.
 

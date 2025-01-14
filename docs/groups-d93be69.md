@@ -41,7 +41,7 @@ For more information, see [Configure Authorizations Based on Policies](Operation
 
 ## Application-Specific Groups
 
-The application-specific groups are a special kind of groups which can be created in the Identity Directory of SAP Cloud Identity Services by running provisioning jobs, or via the administration console. For more information, see [Start and Stop Provisioning Jobs](Operation-Guide/start-and-stop-provisioning-jobs-531a261.md) and [Create a New Group](Operation-Guide/create-a-new-group-b1b638d.md).
+The application-specific groups are a special kind of groups which can be created in the Identity Directory of SAP Cloud Identity Services by running provisioning jobs, or via the administration console. For more information, see [Start and Stop Provisioning Jobs](Operation-Guide/start-and-stop-provisioning-jobs-531a261.md) and [Create a Group](Operation-Guide/create-a-group-b1b638d.md).
 
 The extension schema of the Identity Directory API *urn:ietf:params:scim:schemas:extension:sap:2.0:Group* defines the following three atrributes:
 

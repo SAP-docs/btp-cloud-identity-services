@@ -1,19 +1,19 @@
 <!-- loio8c7ba9ab62c947eaa1feb584408c1273 -->
 
-# Reset Identity Provisioning Tenant
+# Reset Identity Provisioning Settings
 
-Resetting your Identity Provisioning tenant deletes all systems you have set up for this tenant \(subaccount\), along with the relevant job execution logs.
+Resetting your provisioning settings will delete all provisioning systems configured for your tenant, along with the related job execution logs.
 
 
 
 ## Context
 
-Be careful with this option. If you reset your Identity Provisioning tenant, you will lose all systems, configurations, scheduled jobs, source system subscriptions, and all job execution logs. If you want to use the service again afterward, you will have to set up new systems.
+Be careful with this option. If you reset your provisioning settings, you will lose all systems, configurations, scheduled jobs, source system subscriptions, and job execution logs. To use the service again afterward, you will need to set up new systems.
 
 > ### Tip:  
 > If you have a bundle account, all generated OAuth client credentials, as well as the admin users authorized for your Identity Provisioning system will be **kept**.
 
-If want to reset your tenant, proceed as follows.
+If want to reset your provisioning settings, proceed as follows:
 
 
 
@@ -26,9 +26,9 @@ If want to reset your tenant, proceed as follows.
     -   [Access Identity Provisioning UI of Bundle Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/7ab5884ffbc44461a57622d2f633e57c.html "Access the Identity Provisioning UI when the service is bundled as part of an SAP cloud solution's license.") :arrow_upper_right:
     -   [Access Identity Provisioning UI of Standalone Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/61fd82ed48ab42b2bc74626926c1722c.html "Access the Identity Provisioning user interface as a standalone product.") :arrow_upper_right:
 
-2.  From the left-side menu, choose the *Support* section and click the *Tenant Reset* link.
+2.  From the left-side menu, choose the *Support* section and click the *Reset Provisioning Settings* link.
 
-3.  Sign in to the administration console of SAP Cloud Identity Services, navigate to *Identity Provisioning* and choose *Tenant Reset*.
+3.  Sign in to the administration console of SAP Cloud Identity Services, navigate to *Identity Provisioning* and choose *Reset Provisioning Settings*.
 
 
 **Related Information**  

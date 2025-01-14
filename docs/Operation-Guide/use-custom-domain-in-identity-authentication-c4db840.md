@@ -428,7 +428,10 @@ The custom domain configuration is enabled with the upgrade of Identity Authenti
 
 ## Next Steps
 
-1.  Configure tenant's name to be the custom host. Select custom host for the name from the dropdown list in the SAML 2.0 or Open ID Connect Configuration settings. For more information, see [Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md) [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md)
+1.  \(Optional\) Configure tenant's name to be the custom host. Select custom host for the name from the dropdown list in the SAML 2.0 or Open ID Connect Configuration settings. For more information, see [Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md) [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md).
+
+    > ### Caution:  
+    > After you select the custom host in the administration console, make sure that you also change the name of the identity provider on the service provider side, or the name of the identity provider on the corporate identity provider side. If you have set trusts with more than one service provider, or corporate identity provider, change the name in every provider, otherwise the trusts will not work. For more information about how to edit the name, see the documentation of the respective service or corporate identity providers.
 
 2.  Download the new SAML metadata of the identity provider \(IdP\). Configure the new metadata of the IdP in every application \(service provider\) you have set trusts with. For more information about how to configure the metadata, see the documentation of the respective service providers.
 

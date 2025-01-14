@@ -8,35 +8,23 @@ Follow this procedure to set up SAP SuccessFactors as a source system.
 
 ## Prerequisites
 
-**When Using SAP SuccessFactors HCM Suite OData API**
+-   You are using **SAP SuccessFactors Workforce SCIM API** for connector version 1
 
-You have created a technical user with permissions to **call** the SAP SuccessFactors HCM Suite OData API and to **export** employee data from the SAP SuccessFactors system. You need the following mandatory permissions:
+    You have created a technical user with permissions to **call** the SAP SuccessFactors HCM Suite OData API and to **export** employee data from the SAP SuccessFactors system. For more information, see [Permissions](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/3d71f690709243db99102127557a3d73.html?version=Latest) and [Setting Up an API User for Sync Jobs in SAP SuccessFactors \(Basic Authentication Method\)](https://help.sap.com/viewer/568fdf1f14f14fd089a3cd15194d19cc/latest/en-US/0a6e6705d89e42649e3aa8732f2b0724.html). The following permissions are required:
 
--   *Manage User* \> *Employee Export*
+    -   *Manage User* \> *Employee Export*
 
--   *Manage User* \> *User Account OData API Entity*
+    -   *Manage User* \> *User Account OData API Entity*
 
--   *Manage Integration Tools* \> *Allow Admin to Access OData API*
+    -   *Manage Integration Tools* \> *Allow Admin to Access OData API*
 
--   *Manage Role-Based Permission Access* \> *Role-Based Permission Admin*
-
--   *Admin Center* \> *Manage Permission Roles* \> *Access to X.509 Certificates* permission \(needed for configuring X.509 certificate-based authentication\)
+    -   *Manage Role-Based Permission Access* \> *Role-Based Permission Admin*
 
 
-For more information, see [Setting Up Permissions for Security Center](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/57afafe9a8f148ac872b7197fa6027b2/991d6bad94354694a5b4baa490e5ad6a.html?locale=en-US&version=2405) and [Setting Up an API User for Sync Jobs](https://help.sap.com/viewer/568fdf1f14f14fd089a3cd15194d19cc/latest/en-US/0a6e6705d89e42649e3aa8732f2b0724.html).
+-   You are using **SAP SuccessFactors Workforce SCIM API** for connector version 2
 
-**When Using SAP SuccessFactors Workforce SCIM API**
+    Consumers of the SAP SuccessFactors Workforce SCIM API can either create a technical user and assign the necessary permissions, or use the predefined technical user with built-in permissions for communication between SAP SuccessFactors and Identity Provisioning using certificate authentication. For more information, see [Permissions](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/534356acc0ab4b0e8977ebfb2eb432f7/895a0d10d4984152b9f6d0cd9f9f850c.html?version=Latest#permissions) and [Upgrade to X.509 Certificate-Based Authentication for Incoming Calls](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/568fdf1f14f14fd089a3cd15194d19cc/2b8f220f51ce455da3f349ef851d264c.html?version=Latest).
 
-You have created a technical user with *Administrator* role assigned and permissions to query, edit and **export** employee data from the SAP SuccessFactors system. You need the following mandatory permissions:
-
--   *Administrator* \> *Manage Identity Account and Group* \> *Read Access to SCIM User API*
-
--   *Administrator* \> *Manage Identity Account and Group* \> *Edit Access to SCIM User API*
-
--   *Administrator* \> *Manage User* \> *Employee Export*
--   *Administrator* \> *Manage Identity Account and Group* \> *Read Access to SCIM Group API*
-
-For more information, see [Overview of SAP SuccessFactors Workforce SCIM API](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/534356acc0ab4b0e8977ebfb2eb432f7/895a0d10d4984152b9f6d0cd9f9f850c.html).
 
 
 
@@ -138,7 +126,7 @@ To create SAP SuccessFactors as a source system, proceed as follows:
     -   For version 2: `https://apitest.successfactors.com`
 
 
-    To see the list of all SAP SuccessFactors data centers, see: [HXM Suite OData APIs: API Endpoint URLs](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/af2b8d5437494b12be88fe374eba75b6.html?version=2311) and [System for Cross-domain Identity Management for Workforce in SuccessFactors](https://api.sap.com/api/PLTScim/resource) 
+    To see the list of all SAP SuccessFactors data centers, see: [SAP SuccessFactors API Reference Guide \(OData V2\): List of SAP SuccessFactors API Servers](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/af2b8d5437494b12be88fe374eba75b6.html?locale=en-US&version=2411) and [System for Cross-domain Identity Management for Workforce in SuccessFactors](https://api.sap.com/api/PLTScim/resource) 
     
     </td>
     </tr>
@@ -202,9 +190,9 @@ To create SAP SuccessFactors as a source system, proceed as follows:
     </td>
     <td valign="top">
     
-    Valid if *BasicAuthentication* is configured as authentication method.
+    Valid if *BasicAuthentication*
 
-    Enter the *userID* of your SAP SuccessFactors technical user in the following format: **<user\_ID\>@<company\_ID\>**
+    Enter the *userID* of your SAP SuccessFactors technical user in the following format: is configured as authentication method.**<user\_ID\>@<company\_ID\>**
     
     </td>
     </tr>
@@ -230,7 +218,7 @@ To create SAP SuccessFactors as a source system, proceed as follows:
     </td>
     <td valign="top">
     
-    Valid if *ClientCertificateAuthentication* is configured as authentication method.
+    Valid if *ClientCertificateAuthentication* is is configured as authentication method.
 
     Enter the Company ID of your SAP SuccessFactors system.
 
@@ -310,7 +298,7 @@ To create SAP SuccessFactors as a source system, proceed as follows:
     To learn more, see:
 
     -   [OData version 2](http://www.odata.org/documentation/odata-version-2-0/uri-conventions/) → **4.5. Filter System Query Option \($filter\)**.
-    -   [SAP SuccessFactors HXM Suite OData API: Reference Guide \(V2\)](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/03e1fc3791684367a6a76a614a2916de.html?version=2311) 
+    -   [SAP SuccessFactors API Reference Guide \(OData V2\)](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/03e1fc3791684367a6a76a614a2916de.html?version=2311) 
     -   [SAP SuccessFactors Workforce SCIM API](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/534356acc0ab4b0e8977ebfb2eb432f7/895a0d10d4984152b9f6d0cd9f9f850c.html) and [System for Cross-domain Identity Management for Workforce in SuccessFactors](https://api.sap.com/api/PLTScim/resource)
 
 
@@ -373,7 +361,7 @@ To create SAP SuccessFactors as a source system, proceed as follows:
     Use this property to filter dynamic groups from SAP SuccessFactors. The filter obtains values as described in the OData 2.0 syntax, except any statements with attribute `lastModifiedDateTime`. To learn more, see:
 
     -   [OData version 2](http://www.odata.org/documentation/odata-version-2-0/uri-conventions/) → **4.5. Filter System Query Option \($filter\)**
-    -   [SAP SuccessFactors HXM Suite OData API: Reference Guide \(V2\)](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/03e1fc3791684367a6a76a614a2916de.html?version=2311) → **DynamicGroup**
+    -   [SAP SuccessFactors API Reference Guide \(OData V2\)](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/03e1fc3791684367a6a76a614a2916de.html?version=2311) → **DynamicGroup**
     -   [SAP SuccessFactors Workforce SCIM API](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/534356acc0ab4b0e8977ebfb2eb432f7/895a0d10d4984152b9f6d0cd9f9f850c.html) and [System for Cross-domain Identity Management for Workforce in SuccessFactors](https://api.sap.com/api/PLTScim/resource)
 
 
@@ -493,11 +481,9 @@ To create SAP SuccessFactors as a source system, proceed as follows:
 
     [SAP SuccessFactors HCM Suite OData API](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/03e1fc3791684367a6a76a614a2916de.html?locale=en-US&version=latest)
 
-    [SAP SuccessFactors HXM Suite OData API: Reference Guide \(V2\)](https://help.sap.com/doc/74597e67f54d4f448252bad4c2b601c9/latest/en-US/SF_HCM_OData_API_REF_en.pdf)
-
     [SAP SuccessFactors Workforce SCIM API](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/534356acc0ab4b0e8977ebfb2eb432f7/895a0d10d4984152b9f6d0cd9f9f850c.html)
 
-    **Default transformation for SAP SuccessFactors HCM Suite OData AP version 1:** 
+    **Default transformation for SAP SuccessFactors HCM Suite OData API version 1:** 
 
     > ### Code Syntax:  
     > ```
@@ -510,7 +496,6 @@ To create SAP SuccessFactors as a source system, proceed as follows:
     >     "mappings": [
     >       {
     >         "sourcePath": "$.personKeyNav.perPersonUuid",
-    >         "targetPath": "$.id",
     >         "targetVariable": "entityIdSourceSystem"
     >       },
     >       {
@@ -524,7 +509,13 @@ To create SAP SuccessFactors as a source system, proceed as follows:
     >       },
     >       {
     >         "sourcePath": "$.personKeyNav.userAccountNav.username",
-    >         "targetPath": "$.userName"
+    >         "targetPath": "$.userName",
+    >         "correlationAttribute": true
+    >       },
+    >       {
+    >         "sourcePath": "$.username",
+    >         "optional": true,
+    >         "correlationAttribute": true
     >       },
     >       {
     >         "constant": "employee",
@@ -544,7 +535,8 @@ To create SAP SuccessFactors as a source system, proceed as follows:
     > 
     >       {
     >         "sourcePath": "$.email",
-    >         "targetPath": "$.emails[0].value"
+    >         "targetPath": "$.emails[0].value",
+    >         "correlationAttribute": true
     >       },
     >       {
     >         "constant": "urn:ietf:params:scim:schemas:core:2.0:User",
@@ -569,7 +561,8 @@ To create SAP SuccessFactors as a source system, proceed as follows:
     >       {
     >         "sourcePath": "$.personKeyNav.personIdExternal",
     >         "optional": true,
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']"
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']",
+    >         "correlationAttribute": true
     >       }
     >     ]
     >   },
@@ -756,7 +749,7 @@ To create SAP SuccessFactors as a source system, proceed as follows:
     >         "targetPath": "$.emails"
     >       },
     >       {
-    >         "sourcePath": "$.emails[?(@.primary== true)].value",
+    >         "sourcePath": "$.emails[?(@.primary == true)].value",
     >         "optional": true,
     >         "correlationAttribute": true
     >       },
@@ -785,7 +778,6 @@ To create SAP SuccessFactors as a source system, proceed as follows:
     >     "mappings": [
     >       {
     >         "sourcePath": "$.id",
-    >         "targetPath": "$.id",
     >         "targetVariable": "entityIdSourceSystem"
     >       },
     >       {

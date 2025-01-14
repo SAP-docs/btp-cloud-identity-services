@@ -1,8 +1,8 @@
 <!-- loiob1b638d6724e4dc48ee3e116263f567c -->
 
-# Create a New Group
+# Create a Group
 
-As a tenant administrator you can create new user groups in the tenant via the administration console for SAP Cloud Identity Services.
+As a tenant administrator you can create groups in the tenant to organize users based on common characteristics, authorization, or application via the administration console for SAP Cloud Identity Services.
 
 
 

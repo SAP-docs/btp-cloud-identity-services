@@ -225,7 +225,7 @@ Filters users by a regular expression on their username. The regex can define an
 
 **Possible values:**
 
-For example: `abap.user.filter` = Filters user roles by a regular expression. The regex can define any kind of search pattern.*^A.\**
+For example: `abap.user.filter` = *^A.\**
 
 This filter returns all user names that start with capital *A*.
 
@@ -314,6 +314,8 @@ This property has a higher priority over `abap.role.filter`. That means, if you 
 For example: `abap.role.name.filter` = *^inter.\**
 
 This regex reads all roles that start with *inter*, such as *internal*, *internship*, and so on.
+
+For more information about specific search patterns, refer to SAP Note [3546855](https://me.sap.com/notes/3546855).
 
 **System Role:** Source, Proxy
 

@@ -122,110 +122,24 @@ To view or change the tenant OpenID Connect configurations, proceed as follows:
 
 3.  Under *Single Sign-On*, choose the *OpenID Connect Configuration* list item.
 
-    The *OpenID Connect Configuration* page that opens displays the name of the identity provider, its endpoints derived from issuer and domain configurations, signing certificate and token policy.
+    The *OpenID Connect Configuration* page that opens displays the issuer of the identity provider, its endpoints derived from issuer and domain configurations, signing certificate and token policy.
 
     > ### Note:  
     > By default, applications use the domain from their trust configuration to access all the endpoints. For browser-based logons and logouts, you can choose another domain. Applications use the chosen domain after reloading the OpenID Connect metadata.
 
 4.  **Optional:** To define the token policy, use the slider or provide a number in the input field above the slider. If needed, use the reset button to set to the default value.
 
-5.  **Optional:** To change the name of the identity provider, choose the *Name* field, select the name from the dropdown list, and save your changes.
+5.  **Optional:** To change the issuer of the identity provider, choose the *URL* field, select from the dropdown list, and save your changes.
 
-    Choose from the following options:
-
-
-    <table>
-    <tr>
-    <th valign="top">
-
-    Issuer
-    
-    </th>
-    <th valign="top">
-
-    Notes
-    
-    </th>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Default Issuer format
-    
-    </td>
-    <td valign="top">
-    
-    https://<tenant ID\>.accounts.ondemand.com
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Legacy Issuer format
-    
-    </td>
-    <td valign="top">
-    
-    <tenant ID\>.accounts.ondemand.com
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Common domain
-    
-    </td>
-    <td valign="top">
-    
-    https://<tenant ID\>.accounts.cloud.sap
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Custom Domain \(if configured\)
-    
-    </td>
-    <td valign="top">
-    
-    <custom domain host\>
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Tenants in China region
-    
-    </td>
-    <td valign="top">
-    
-    https:// <tenant ID\>.accounts.sapcloud.cn
-    
-    </td>
-    </tr>
-    </table>
-    
-    > ### Note:  
-    > Tenant ID is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the tenant ID.
-
-    > ### Remember:  
-    > Change the name of the identity provider on the service provider side every time you change the name format of the identity provider in the administration console. If you have set trusts with more than one service provider, change the name in every service provider. For more information about how to edit the name, see the documentation of the respective service providers.
-
-    If the change of the name is successful, the system displays the message ***Tenant <name of tenant\> updated***.
+    > ### Caution:  
+    > OpenID Connect applications use the issuer to identify this tenant. Changing the issuer might cause logon issues for existing applications.
 
 6.  **Optional:** Update your signing certificate. You can choose from the following options:
 
     -   To regenerate the existing certificate with new validity, reusing the same private key, choose *Add* \> *Regenerate* \> *Next Step* \> *choose validity from the drop down* \> *Next Step* \> *Finish* \> *Save*.
 
     -   To create a new certificate with a new private key and the same Subject DN, choose *Add* \> *Create new* \> *Next Step* \> *choose key size and validity from the drop downs* \> *Next Step* \> *Finish* \> *Save*.
-    -   To create a new certificate, using your own trusted CA, choose *Add* \> *Download CSR* \> *Next Step* \> *add Subject DN and choose key size and validity from the drop downs* \> *Next Step* \> *Download CSR*.
-
-        When you get your certificate, copy and paste it as text in the View Certificate Details dialog.
-
+    -   To create a new certificate, using your own trusted CA, choose *Add* \> *Download CSR* \> *Next Step* \> *add Subject DN and choose key size and validity from the drop downs* \> *Next Step* \> *Download CSR*. Use the .csr file to generate a certificate from the trusted CA. Copy the newly generated certificate, choose *Edit Certificate*, and paste the certificate as text in the *Certificate Information* field.
 
 7.  **Optional:** Set the maximum wait time for front-channel logout.
 

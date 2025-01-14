@@ -27,9 +27,12 @@ A proxy relationship involves the following participants:
 
 ![](images/Proxy_Mode_Diagram_ae2a8aa.png)
 
-There is no direct trust relationship between the authenticating identity provider and the service provider that the user is trying to access.
+There's no direct trust relationship between the authenticating identity provider and the service provider that the user is trying to access.
 
-Identity Authentication acting as a proxy can use a SAML 2.0 or an OpenID Connect identity provider as an external authenticating authority for the application. The choice of one or the other protocol depends on your scenario and needs.
+Identity Authentication acting as a proxy can use a SAML 2.0 or an OpenID Connect \(OIDC\) identity provider as an external authenticating authority for the application. The choice of one or the other protocol depends on your scenario and needs.
 
-For example, if you are having a mobile application, the recommended protocol is OpenID Connect. On the other hand, if in your scenario Identity Authentication acts as proxy to multiple identity providers and you allow the partner users to login via their corporate identity providers, the choice is SAML 2.0.
+> ### Tip:  
+> If you use Microsoft Entra ID as your corporate identity provider with SAML, you can additionally enable OIDC for your applications. Instead of looking under *Enterprise Applications* for the SAML configuration, find the OIDC configuration for Entra ID under *App Registrations* and search for the application ID. Configure the required redirect URIs.
+> 
+> For more information, see the documentation for Microsoft Entra ID.
 

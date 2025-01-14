@@ -20,10 +20,10 @@ SLO can also be initiated at the corporate identity provider \(IdP\). Identity A
 
     Identity Authentication single logout endpoint follows the template `https://<tenant ID>.accounts.ondemand.com/saml2/idp/slo` or `https://<tenant ID>.accounts.cloud.sap/saml2/idp/slo`
 
-2.  **Optional:** Add the `RelayState` URL parameter.
+2.  **Optional:** Add the `RelayState` parameter to provide a relative URL to which the identity provider redirects after the SLO process is complete.
 
     > ### Remember:  
-    > `RelayState` is the only supported parameter. `RelayState` must be a trusted domain and valid URL. For example, `https://myapplication.ondemand.com/saml2/idp/slo?RelayState=https://example.com`
+    > The `RelayState` must be a trusted domain and valid URL. For example, `https://myapplication.ondemand.com/saml2/idp/slo?RelayState=https://example.com`
 
 
 

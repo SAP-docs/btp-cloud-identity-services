@@ -103,7 +103,7 @@ The Identity Directory SCIM REST API can be manually extended by adding user att
     -   Assign an attribute form custom schema to the user by calling the Identity Directory SCIM REST API. See [Identity Directory Service](https://api.sap.com/api/IdDS_SCIM/path/patchUser).
 
         > ### Example:  
-        > You have updated the Michael's `hobby` attribute, by calling the *PATCH* method of [Identity Directory Service](https://api.sap.com/api/IdDS_SCIM/path/patchUser).
+        > You have updated Michael's `hobby` attribute, by calling the *PATCH* method of [Identity Directory Service](https://api.sap.com/api/IdDS_SCIM/path/patchUser).
         > 
         > > ### Sample Code:  
         > > ```

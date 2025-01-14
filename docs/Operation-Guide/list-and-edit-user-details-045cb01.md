@@ -16,7 +16,7 @@ By default the *User Type* field is *Employee*. The available user types are: *C
 
 *Last Name* and *Email* fields are mandatory.
 
-Vaues for *Email*, *First Name* and *Last Name* that are part of the respective exclude list cant' be used. For more information, see [Restrict User Attributes Values via Exclude Lists](restrict-user-attributes-values-via-exclude-lists-cb108c2.md).
+Vaues for *Email*, *First Name* and *Last Name* that are part of the respective exclude list can't be used. For more information, see [Restrict User Attributes Values via Exclude Lists](restrict-user-attributes-values-via-exclude-lists-cb108c2.md).
 
 *Display Name* can be configured to be mandatory or not. For more information see [Configure User Identifier Attributes](configure-user-identifier-attributes-8b9fa88.md).
 

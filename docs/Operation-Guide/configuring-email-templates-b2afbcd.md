@@ -26,6 +26,11 @@ Email Template
 </th>
 <th valign="top">
 
+Request Flow
+
+</th>
+<th valign="top">
+
 Description
 
 </th>
@@ -34,6 +39,11 @@ Description
 <td valign="top">
 
 Self-Registration
+
+</td>
+<td valign="top">
+
+User
 
 </td>
 <td valign="top">
@@ -50,6 +60,11 @@ On-Behalf Registration
 </td>
 <td valign="top">
 
+System
+
+</td>
+<td valign="top">
+
 This email template is used when somebody else registers the user on his or her behalf via the import user option for Identity Authentication. In this case, the registered user receives an email with instructions about how to activate his or her account. The name of the email template used for this process is *On-Behalf Registration.* 
 
 </td>
@@ -62,6 +77,11 @@ Invitation
 </td>
 <td valign="top">
 
+System
+
+</td>
+<td valign="top">
+
 This email template is used when a user invites another user for registration via the Invitation REST API. In this case, the invitee receives an email with instructions about how to register. The name of the email template used for this process is *Invitation*.
 
 </td>
@@ -70,6 +90,14 @@ This email template is used when a user invites another user for registration vi
 <td valign="top">
 
 Forgot Password
+
+</td>
+<td valign="top">
+
+-   User
+-   System
+
+
 
 </td>
 <td valign="top">
@@ -92,6 +120,11 @@ Locked Password
 </td>
 <td valign="top">
 
+System
+
+</td>
+<td valign="top">
+
 This email template is used when a user locks his or her password by exceeding the allowed number of logon attempts. In this case, the user receives an email with instructions about how to log on. The name of the email template used for this process is *Locked Password*.
 
 </td>
@@ -100,6 +133,11 @@ This email template is used when a user locks his or her password by exceeding t
 <td valign="top">
 
 Reset Password
+
+</td>
+<td valign="top">
+
+System
 
 </td>
 <td valign="top">
@@ -120,6 +158,11 @@ Deactivate TOTP Device
 </td>
 <td valign="top">
 
+User
+
+</td>
+<td valign="top">
+
 This email-template is used when a user has requested to receive a passcode via email. The passcode is used to deactivate the devices used to generate passcodes for TOTP Two-Factor Authentication. The name of the email template used for this process is *Deactivate TOTP Device*.
 
 </td>
@@ -132,6 +175,11 @@ Email OTP Code
 </td>
 <td valign="top">
 
+User
+
+</td>
+<td valign="top">
+
 This email-template is used when a user has requested to receive an 8-digit code via email. The user needs the code for two-factor authentication.
 
 </td>
@@ -140,6 +188,11 @@ This email-template is used when a user has requested to receive an 8-digit code
 <td valign="top">
 
 Send Security Alert
+
+</td>
+<td valign="top">
+
+System
 
 </td>
 <td valign="top">

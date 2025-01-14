@@ -211,9 +211,9 @@ Download the created entities for a single job to identify the system in which t
 
 1.  Sign in to the administration console of SAP Cloud Identity Services and navigate to *Identity Provisioning* \> *Provisioning Logs* \> *Job Logs*.
 
-2.  Select a job that has created at least one entity.
+2.  In the *Job Execution Logs* screen, search for a job log and select it.
 
-3.  On the right-hand side of the *Statistics* section, choose the ![](images/IPS_Export_Icon_def37e5.png) button and select *Download All Created Entity Logs for This Job*.
+3.  If the job has created at least one entity, you are able to choose the ![](images/IPS_Export_Icon_def37e5.png) button on the right-hand side of the *Statistics* section and select *Download All Created Entity Logs for This Job*.
 
     The log is downloaded as a `zip` archive. The name of the file follows the pattern: <code>ips_jobCreatedEntitiesLogs_<i class="varname">&lt;job ID&gt;</i>_<i class="varname">&lt;date&gt;</i>_<i class="varname">&lt;time&gt;</i></code>.
 

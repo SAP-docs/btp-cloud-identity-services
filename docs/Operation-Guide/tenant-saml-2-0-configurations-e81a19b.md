@@ -1,5 +1,7 @@
 <!-- loioe81a19b0067f4646982d7200a8dab3ca -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Tenant SAML 2.0 Configurations
 
 You as a tenant administrator can view and download the tenant SAML 2.0 metadata. You can also change the name format and update your certificate used by the identity provider to digitally sign the messages for the applications.
@@ -49,7 +51,7 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
     -   *Non-default certificate*
     -   *All certificates*
 
-5.  **Optional:** To change the name of the identity provider, choose the *Name* field, select the name from the dropdown list, and save your changes.
+5.  **Optional:** To change the name of the identity provider, choose under the *Identity Provider Settings* tab the *Edit* button next to the *Name* field, select the name from the dropdown list, and save your changes.
 
     The drop-down list offers the following options:
 
@@ -137,15 +139,11 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
 
     If the change of the name is successful, the system displays the message ***Tenant <name of tenant\> updated***.
 
-6.  **Optional:** Update your signing certificate. You can choose from the following options:
+6.  **Optional:** To update your signing certificate, choose under the *Signing Certificates* tab the *\+Add* button on the right. You can choose from the following options:
 
-    -   To regenerate the existing certificate with new validity, reusing the same private key, choose *Add* \> *Regenerate* \> *Next Step* \> *choose validity from the drop down* \> *Next Step* \> *Finish* \> *Save*.
-
-    -   To create a new certificate with a new private key and the same Subject DN, choose *Add* \> *Create new* \> *Next Step* \> *choose key size and validity from the drop downs* \> *Next Step* \> *Finish* \> *Save*.
-    -   To create a new certificate, using your own trusted CA, choose *Add* \> *Download CSR* \> *Next Step* \> *add Subject DN and choose key size and validity from the drop downs* \> *Next Step* \> *Download CSR*.
-
-        When you get your certificate, copy and paste it as text in the View Certificate Details dialog.
-
+    -   *Regenerate the existing certificate with new validity, reusing the same private key* \> *Next Step* \> *Choose validity from the drop down* \> *Next Step* \> *Finish*.
+    -   *Create new a self-signed certificate with a new private key and the same Subject DN* \> *Next Step* \> *Select key size* \> *Choose validity from the drop down* \> *Next Step* \> *Finish*.
+    -   *Download your Certificate Signing Request* \> *Next Step* \> *add Subject DN and select key size and validity from the options* \> *Next Step* \> *Download CSR*. Use the downloaded .csr file to generate a certificate from the trusted CA. Copy the newly generated certificate, choose :pencil2:, and paste the certificate as text in the *Certificate Information* field.
 
 
 
@@ -154,7 +152,7 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
 
 ## Next Steps
 
-To change the default certificate for the tenant, choose the new one from the list, and save your configuration.
+To change the default certificate for the tenant, choose *Edit* \> *the new certificate from the list* \> *Save*.
 
 > ### Caution:  
 > When you change the default certificate for the tenant, you must also update the trust with the service provider. For more information see [Configure OpenID Connect Application](configure-openid-connect-application-8a0aa2e.md) or [Configure OpenID Connect Application](configure-openid-connect-application-8a0aa2e.md).

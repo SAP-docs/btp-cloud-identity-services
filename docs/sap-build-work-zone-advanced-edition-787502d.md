@@ -398,7 +398,7 @@ These target systems consume SCIM 2.0 API provided by SAP Build Work Zone, advan
     >                  "targetPath": "$.userType"
     >             },
     >             {
-    >                 "condition": "$.groups[?(@.value == 'Workzone_User_Type_public')] EMPTY false",
+    >                 "condition": "$.groups[?(@.value == 'Workzone_User_Type_public')] EMPTY false || $.groups[?(@.display == 'Workzone_User_Type_public')] EMPTY false",
     >                 "constant": "public",
     >                 "targetPath": "$.userType"
     >             },
@@ -477,7 +477,7 @@ These target systems consume SCIM 2.0 API provided by SAP Build Work Zone, advan
     >                 "targetPath": "$.addresses[1].primary"
     >             },
     >             {
-    >                 "condition": "$.groups[?(@.value == 'Workzone_Admin')] EMPTY false",
+    >                 "condition": "$.groups[?(@.value == 'Workzone_Admin')] EMPTY false || $.groups[?(@.display == 'Workzone_Admin')] EMPTY false",
     >                 "constant": "Administrator",
     >                 "targetPath": "$.roles[0].value"
     >             },

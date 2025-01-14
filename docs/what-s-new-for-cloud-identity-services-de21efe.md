@@ -100,6 +100,296 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-01-14
+
+</td>
+<td valign="top">
+
+2025-01-14
+
+</td>
+<td valign="top">
+
+2413b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Build Work Zone, advanced edition - `userType` provisioning
+
+</td>
+<td valign="top">
+
+The condition for `user.groups[]` attributes in the write transformation of SAP Build Work Zone, advanced edition is enhanced to support the provisioning of users with their `userType` based on the names of the groups that are assigned to them. The change is valid for scenarios in which the `name` of the group matches its `displayName`.
+
+For more information, see [SAP Build Work Zone, advanced edition](sap-build-work-zone-advanced-edition-787502d.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-01-14
+
+</td>
+<td valign="top">
+
+2025-01-14
+
+</td>
+<td valign="top">
+
+2413b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Tenant Reset renamed to Reset Provisioning Settings
+
+</td>
+<td valign="top">
+
+The *Tenant Reset* option, which enables you to delete all provisioning systems configured for your tenant, along with scheduled jobs, subscriptions, and logs, has been renamed to *Reset Provisioning Settings*.
+
+For more information, see [Reset Identity Provisioning Settings](Operation-Guide/reset-identity-provisioning-settings-8c7ba9a.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-01-14
+
+</td>
+<td valign="top">
+
+2025-01-14
+
+</td>
+<td valign="top">
+
+2413b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Authorizations Based оn Policies
+
+</td>
+<td valign="top">
+
+As of February 11, 2025, the **MANAGE\_USERS** policy will no longer contain the read applications permission.
+
+Action: If your scenario requires this permission, you add the **READ\_APPLICATIONS** policy to the user or users that need it. See how to do this at [Configure Application Authorizations | SAP Help Portal](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/manage-applications-rights?version=Cloud).
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-01-14
+
+</td>
+<td valign="top">
+
+2025-02-11
+
+</td>
+<td valign="top">
+
+2501b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Off-Cycle Upgrade
 
 </td>
@@ -247,7 +537,7 @@ Create User Groups
 </td>
 <td valign="top">
 
-Tenant administrators can create and edit application-specific groups via the administration console for Cloud Identity Services. See [Create a New Group](Operation-Guide/create-a-new-group-b1b638d.md) and [List and Edit Groups](Operation-Guide/list-and-edit-groups-5e8a55c.md).
+Tenant administrators can create and edit application-specific groups via the administration console for Cloud Identity Services. See [Create a Group](Operation-Guide/create-a-group-b1b638d.md) and [List and Edit Groups](Operation-Guide/list-and-edit-groups-5e8a55c.md).
 
 </td>
 <td valign="top">

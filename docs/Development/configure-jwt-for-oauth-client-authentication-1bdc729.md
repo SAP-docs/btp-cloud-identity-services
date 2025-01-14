@@ -74,7 +74,7 @@ Configure the JSON Web Token \(JWT\) - the issuer and subject of tokens for JWT 
         </td>
         <td valign="top">
         
-        \(Required\) The issuer is a corporate identity provider of type *OpenID Connect Compliant*. It must be created and configured in the administration console first.
+        \(Required\) The issuer must be OpenID Connect compliant.
         
         </td>
         </tr>
@@ -89,7 +89,7 @@ Configure the JSON Web Token \(JWT\) - the issuer and subject of tokens for JWT 
         The sub \(subject\) that is expected in the token.
 
         > ### Tip:  
-        > If you want to use an OAuth 2.0 token from Microsoft Entra ID as client credentials for an OpenID Connect application in Identity Authentication, and your OAuth client in Microsoft Entra ID belongs to an Enterprise Application, the subject in the token is the Object ID of the Enterprise Application.
+        > If you want to use an OAuth 2.0 token from a corporate identity provider as client credentials for an OpenID Connect application in Identity Authentication, and your OAuth client in the corporate identity provider belongs to a pre-configured application, the subject in the token is the Object ID of that pre-configured application.
 
 
         

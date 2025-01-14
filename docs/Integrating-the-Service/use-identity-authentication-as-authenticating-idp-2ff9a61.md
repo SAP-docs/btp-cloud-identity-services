@@ -6,7 +6,8 @@ In this scenario, to log on to an application, users provide their credentials t
 
 Every SAP S/4HANA system or SAP Analytics Cloud embedded come with an Identity Authentication as a trusted identity provider. You’ve received a provisioning email with initial access information for the Identity Authentication tenant.
 
-For the authentication of the users, you must have them in your Identity Authentication tenant. You can import your users in Identity Authentication, or create them via the administration console or the Identity Directory API.
+> ### Tip:  
+> If you need your users in the tenant of Identity Authentication, you can import them, or create them via the administration console or the Identity Directory API.
 
 The tables below show the pre-configured settings for your system that you have in the Identity Authentication administration console.
 

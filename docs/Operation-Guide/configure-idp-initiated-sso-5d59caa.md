@@ -150,7 +150,7 @@ The link for IdP-Initiated SSO follows the pattern: `https://<tenant_ID>.account
 > 
 > The technical name of the corporate identity provider as configured in the administration console for SAP Cloud Identity Services.
 > 
-> When multiple identity providers are allowed for an application via conditional authentication, these parameters enable the client to specify which corporate identity providers to be used. Identity Authentication uses the `idp` parameter to detect the correct corporate identity providers and redirect the request to them. When there is more than one corporate IdP in the IdP-initiated link, they are separated by comma "`,`" without space between them.
+> When a chain of identity providers are allowed for an application via conditional authentication, these parameters enable the client to specify which corporate identity providers to be used. Identity Authentication uses the `idp` parameter to detect the correct corporate identity providers and redirect the request to them. When there is more than one corporate IdP in the IdP-initiated link, they are separated by comma "`,`" without space between them.
 > 
 > </td>
 > </tr>

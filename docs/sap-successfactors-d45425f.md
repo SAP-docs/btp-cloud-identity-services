@@ -12,7 +12,7 @@ Follow this procedure to set up SAP SuccessFactors as a proxy system.
 
 -   You have created a technical user with permissions to **call** the SAP SuccessFactors HCM Suite OData API and to **export** employee data from the SAP SuccessFactors system. For more information, see [Permissions](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/3d71f690709243db99102127557a3d73.html?version=Latest) and [URI Conventions \(OData Version 2.0\)](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
--   You have the *Admin Center* \> *Manage Permission Roles* \> *Access to X.509 Certificates* permission \(needed for configuring X.509 certificate-based authentication\)
+-   Consumers of the SAP SuccessFactors Workforce SCIM API can either create a technical user and assign the necessary permissions, or use the predefined technical user with built-in permissions for communication between SAP SuccessFactors and Identity Provisioning using certificate authentication. For more information, see [Permissions](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/534356acc0ab4b0e8977ebfb2eb432f7/895a0d10d4984152b9f6d0cd9f9f850c.html?version=Latest#permissions) and [Upgrade to X.509 Certificate-Based Authentication for Incoming Calls](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/568fdf1f14f14fd089a3cd15194d19cc/2b8f220f51ce455da3f349ef851d264c.html?version=Latest).
 
 
 > ### Note:  
@@ -186,7 +186,7 @@ For more information on how to update to version 2, see [Update Connector Versio
     -   For version 2: `https://apitest.successfactors.com`
 
 
-    To see the list of all SAP SuccessFactors data centers, see: [HXM Suite OData APIs: API Endpoint URLs](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/af2b8d5437494b12be88fe374eba75b6.html?version=2311) and [System for Cross-domain Identity Management for Workforce in SuccessFactors](https://api.sap.com/api/PLTScim/resource) 
+    To see the list of all SAP SuccessFactors data centers, see: [SAP SuccessFactors API Reference Guide \(OData V2\): List of SAP SuccessFactors API Servers](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/af2b8d5437494b12be88fe374eba75b6.html?version=2311) and [System for Cross-domain Identity Management for Workforce in SuccessFactors](https://api.sap.com/api/PLTScim/resource) 
     
     </td>
     </tr>
@@ -333,7 +333,7 @@ For more information on how to update to version 2, see [Update Connector Versio
     Use this property to filter users from SAP SuccessFactors. The filter obtains values as described in the OData 2.0 syntax, except any statements with attribute `lastModifiedDateTime`. To learn more, see:
 
     -   [OData version 2](http://www.odata.org/documentation/odata-version-2-0/uri-conventions/) → **4.5. Filter System Query Option \($filter\)**.
-    -   [SAP SuccessFactors HXM Suite OData API: Reference Guide \(V2\)](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/03e1fc3791684367a6a76a614a2916de.html?version=2311) 
+    -   [SAP SuccessFactors API Reference Guide \(OData V2\)](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/03e1fc3791684367a6a76a614a2916de.html?version=2311) 
     -   [SAP SuccessFactors Workforce SCIM API](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/534356acc0ab4b0e8977ebfb2eb432f7/895a0d10d4984152b9f6d0cd9f9f850c.html) and [System for Cross-domain Identity Management for Workforce in SuccessFactors](https://api.sap.com/api/PLTScim/resource)
 
 
@@ -396,7 +396,7 @@ For more information on how to update to version 2, see [Update Connector Versio
     Use this property to filter dynamic groups in SAP SuccessFactors. The filter obtains values as described in the OData 2.0 syntax, except any statements with attribute `lastModifiedDateTime`. To learn more, see:
 
     -   [OData version 2](http://www.odata.org/documentation/odata-version-2-0/uri-conventions/) → **4.5. Filter System Query Option \($filter\)**
-    -   [SAP SuccessFactors HXM Suite OData API: Reference Guide \(V2\)](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/03e1fc3791684367a6a76a614a2916de.html?version=2311) → **DynamicGroup**
+    -   [SAP SuccessFactors API Reference Guide \(OData V2\)](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/03e1fc3791684367a6a76a614a2916de.html?version=2311) → **DynamicGroup**
     -   [SAP SuccessFactors Workforce SCIM API](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/534356acc0ab4b0e8977ebfb2eb432f7/895a0d10d4984152b9f6d0cd9f9f850c.html) and [System for Cross-domain Identity Management for Workforce in SuccessFactors](https://api.sap.com/api/PLTScim/resource)
 
 
