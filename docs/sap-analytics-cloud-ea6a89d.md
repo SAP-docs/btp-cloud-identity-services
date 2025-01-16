@@ -316,6 +316,31 @@ For more information on how to update to version 2, see [Update Connector Versio
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    \(Optional\)  
+    `ips.http.header.x-ignore-roles-if-missing`
+    
+    </td>
+    <td valign="top">
+    
+    Use this property to control whether teams should lose their roles when no roles for a team are provided.
+
+
+    **Possible values:**
+
+    -   *true* - Teams will keep their roles when no roles are provided
+
+    -   *false* - Teams will lose their roles when no roles are provided
+
+
+    Default value: *false*
+
+    For more information, see SAP Note [3092730](https://me.sap.com/notes/3092730)
+    
+    </td>
+    </tr>
     </table>
     
     To learn what additional properties are relevant to this system, see [List of Properties](list-of-properties-d6f3577.md). You can use the main search, or filter properties by the *Name* or *System Type* columns.
@@ -672,6 +697,8 @@ For more information on how to update to version 2, see [Update Connector Versio
     > When provisioning users and groups between a source system and SAP Analytics Cloud, groups are mapped to teams in SAP Analytics Cloud. Those teams can then get role assignments in SAP Analytics Cloud.
     > 
     > If you then run another provisioning job \(**Read** or **Resync**\), role assignments of SAP Analytics Cloud teams will be removed as a result of an update operation being executed. This behavior \(causing permission issues for users\) is expected, as SAP Analytics Cloud role assignments are not available as group parameters in some source systems, for example – Identity Authentication. To avoid this, you need to change the transformation of the *SAP Analytics Cloud* target system, as described in SAP Note [3027079](https://me.sap.com/notes/3027079).
+    >
+    >To completely alter this behavior, you can set the `ips.http.header.x-ignore-roles-if-missing` property to `true`. This will result in teams keeping their original role assignments. More information can be found in SAP Note [3092730](https://me.sap.com/notes/3092730).
 
     > ### Note:  
     > Updating a user in SAP Analytics Cloud using SCIM API version 2 depends on whether user attributes in SAP Analytics Cloud are mapped to SAML attributes in your identity provider. If this is the case, the values of those attributes are populated by the identity provider and cannot be changed by the SAP Analytics SCIM API or the UI. For more information, see [Map SAML Attributes to Users](https://help.sap.com/doc/00f68c2e08b941f081002fd3691d86a7/2021.20/en-US/5e917dc3fc8f42828d4dfa850e78c913.html)
