@@ -10,9 +10,13 @@ Follow this procedure to set up SAP SuccessFactors as a proxy system.
 
 ## Prerequisites
 
--   You have created a technical user with permissions to **call** the SAP SuccessFactors HCM Suite OData API and to **export** employee data from the SAP SuccessFactors system. For more information, see [Permissions](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/3d71f690709243db99102127557a3d73.html?version=Latest) and [URI Conventions \(OData Version 2.0\)](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
+-   You are using **SAP SuccessFactors HCM Suite OData API**
 
--   Consumers of the SAP SuccessFactors Workforce SCIM API can either create a technical user and assign the necessary permissions, or use the predefined technical user with built-in permissions for communication between SAP SuccessFactors and Identity Provisioning using certificate authentication. For more information, see [Permissions](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/534356acc0ab4b0e8977ebfb2eb432f7/895a0d10d4984152b9f6d0cd9f9f850c.html?version=Latest#permissions) and [Upgrade to X.509 Certificate-Based Authentication for Incoming Calls](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/568fdf1f14f14fd089a3cd15194d19cc/2b8f220f51ce455da3f349ef851d264c.html?version=Latest).
+    You have created a technical user with permissions to **call** the SAP SuccessFactors HCM Suite OData API to **import** employee data into an SAP SuccessFactors system. For more information, see [Permissions](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/3d71f690709243db99102127557a3d73.html?version=Latest), [Setting Up an API User for Sync Jobs in SAP SuccessFactors](https://help.sap.com/viewer/568fdf1f14f14fd089a3cd15194d19cc/latest/en-US/0a6e6705d89e42649e3aa8732f2b0724.html) and [URI Conventions \(OData Version 2.0\)](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
+
+-   You are using **SAP SuccessFactors Workforce SCIM API**
+
+    Consumers of the SAP SuccessFactors Workforce SCIM API can either create a technical user and assign the necessary permissions, or use the predefined technical user with built-in permissions for communication between SAP SuccessFactors and Identity Provisioning using certificate authentication. For more information, see [Upgrade to X.509 Certificate-Based Authentication for Incoming Calls](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/568fdf1f14f14fd089a3cd15194d19cc/2b8f220f51ce455da3f349ef851d264c.html?version=Latest) and [Permissions](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/534356acc0ab4b0e8977ebfb2eb432f7/895a0d10d4984152b9f6d0cd9f9f850c.html?version=Latest#permissions).
 
 
 > ### Note:  
@@ -457,7 +461,7 @@ For more information on how to update to version 2, see [Update Connector Versio
     -   *true* - Paging is enabled.
     -   *false* - Paging is disabled.
 
-    Default value: *false*
+    Default value: *true*
 
     **Connector version**: SAP SuccessFactors version 2
     

@@ -155,7 +155,7 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
 To change the default certificate for the tenant, choose *Edit* \> *the new certificate from the list* \> *Save*.
 
 > ### Caution:  
-> When you change the default certificate for the tenant, you must also update the trust with the service provider. For more information see [Configure OpenID Connect Application](configure-openid-connect-application-8a0aa2e.md) or [Configure OpenID Connect Application](configure-openid-connect-application-8a0aa2e.md).
+> When you change the default certificate for the tenant, you must also update the trust with the service provider. For more information see [Configure SAML 2.0 Service Provider](configure-saml-2-0-service-provider-51f1f75.md).
 
 **Related Information**  
 

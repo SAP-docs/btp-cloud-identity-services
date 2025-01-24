@@ -10,7 +10,10 @@ This document describes how developers configure the certificates used for authe
 
 ## Prerequisites
 
-[SAP Support Portal Home](https://support.sap.com/en/index.html)\(For trusted CA Scenario\) - If you want to configure a certificate, using your own with a component `BC-IAM-IDS`. Attach to the incident the root and intermediate certificates and provide the Identity Authentication tenant host.
+[SAP Support Portal Home](https://support.sap.com/en/index.html)\(For trusted CA Scenario\) - If you want to configure a certificate, using your own trusted CA report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`. Attach to the incident the root and intermediate certificates and provide the Identity Authentication tenant ID.
+
+> ### Note:  
+> `Tenant ID` is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the `tenant ID`. For more information about your tenants, see [View Assigned Tenants and Admins](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/viewing-assigned-tenants-and-administrators?state=DRAFT&version=Dev).
 
 
 

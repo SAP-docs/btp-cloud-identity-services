@@ -16,6 +16,7 @@ Links to blogs and documents about integration scenarios with Identity Authentic
 -   [Configure SAP SuccessFactors Business Execution \(SAP SuccessFactors BizX\) SSO to use](https://blogs.sap.com/2016/10/29/configure-sap-successfactors-business-execution-sap-successfactors-bizx-sso-use-sap-hana-cloud-platform-identity-authentication/)Identity Authentication
 -   [Identity and Access Management across SAP and Google](https://blogs.sap.com/2017/03/08/identity-and-access-management-across-sap-and-google/)
 -   [Connecting SAP IAS as a proxy to Azure AD using OpenID Connect](https://blogs.sap.com/2022/10/06/connecting-sap-ias-as-a-proxy-to-azure-ad-using-openid-connect/)
+-   [Why SAP Cloud Identity Matters for SAP Task Center: It’s About Trust and Global User ID](https://community.sap.com/t5/technology-blogs-by-sap/why-sap-cloud-identity-matters-for-sap-task-center-it-s-about-trust-and/ba-p/13937397?emcs_t=S2h8ZW1haWx8a3Vkb3N8TTVVT1c3Vk9DRzBTWTV8MTM5MzczOTd8S1VET1N8aEs)
 
 **Related Information**  
 

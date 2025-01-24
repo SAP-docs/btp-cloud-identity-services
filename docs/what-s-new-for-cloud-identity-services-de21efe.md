@@ -100,6 +100,77 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Off-Cycle Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-01-21
+
+</td>
+<td valign="top">
+
+2025-01-21
+
+</td>
+<td valign="top">
+
+Off-Cycle Upgrade
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Regular Upgrade
 
 </td>
@@ -5216,8 +5287,7 @@ As of September 24, 2024, Identity Provisioning will change the behavior of targ
 
 > ### Code Syntax:  
 > ```
-> "condition": "$.groups empty false",
-> "skipOperations": ["update"], 
+> "condition": "$.groups empty false","skipOperations": ["update"], 
 > ```
 
 Currently, the skip operation is evaluated before the condition. If any users or groups have been updated in the source system, they are marked as skipped in the logs, and Identity Provisioning does not proceed to evaluate the condition. As a result, users or groups that do not meet the condition are not deleted as they should be.

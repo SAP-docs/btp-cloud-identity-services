@@ -10,9 +10,6 @@ Follow this procedure to set up SAP Ariba Category Management as а source syste
 
 ## Prerequisites
 
-> ### Note:  
-> Currently, SAP Ariba Category Management connector is only available for selected customers who are approached by SAP.
-
 > ### Restriction:  
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.
 
@@ -262,7 +259,7 @@ SAP Ariba Category Management is a cloud-based solution that enables organizatio
 ## Next Steps
 
 -   Before starting a provisioning job, you can first subscribe for e-mail notifications from the source system you use in your scenario. This way, you will be notified by e-mail about eventual failed entities during the jobs. For more information, see [Manage Job Notifications](Monitoring-and-Reporting/manage-job-notifications-d055bc2.md).
--   Now, start an identity provisioning job. For more information, see [Monitor Provisioning Job Logs](Monitoring-and-Reporting/monitor-provisioning-job-logs-e5b5176.md).
+-   Start an identity provisioning job. For more information, see [Monitor Provisioning Job Logs](Monitoring-and-Reporting/monitor-provisioning-job-logs-e5b5176.md).
 
 **Related Information**  
 

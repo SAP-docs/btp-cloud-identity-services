@@ -10,9 +10,6 @@ Follow this procedure to set up SAP Ariba Category Management as a proxy system.
 
 ## Prerequisites
 
-> ### Note:  
-> Currently, SAP Ariba Category Management connector is only available for selected customers who are approached by SAP.
-
 > ### Restriction:  
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.
 
@@ -252,7 +249,7 @@ You can use Identity Provisioning to configure SAP Ariba Category Management as 
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    [SCIM APIs for SAP Ariba Category Management](https://help.sap.com/docs/categories/sap-ariba-category-management-configuration-guide/scim-apis-for-sap-ariba-category-management?version=Latest)
+    [SCIM APIs for SAP Ariba Category Management](https://help.sap.com/docs/categories/sap-ariba-category-management-configuration-guide/scim-apis-for-sap-ariba-category-management?state=latest)
 
     **User Update and Uniqueness**
 

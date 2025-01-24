@@ -26,7 +26,12 @@ Identity Authentication allows you to use a custom domain that is different from
     <tr>
     <th valign="top">
 
-    Tenant Location
+    Country/Region
+    
+    </th>
+    <th valign="top">
+
+    Data Center
     
     </th>
     <th valign="top">
@@ -48,7 +53,12 @@ Identity Authentication allows you to use a custom domain that is different from
     </td>
     <td valign="top">
     
-    SAP
+    Australia \(Sydney\)
+    
+    </td>
+    <td valign="top">
+    
+    SAP / Azure
     
     </td>
     <td valign="top">
@@ -65,6 +75,11 @@ Identity Authentication allows you to use a custom domain that is different from
     </td>
     <td valign="top">
     
+    Brazil \(São Paulo\)
+    
+    </td>
+    <td valign="top">
+    
     AWS
     
     </td>
@@ -77,24 +92,14 @@ Identity Authentication allows you to use a custom domain that is different from
     <tr>
     <td valign="top">
     
-    Canada
+    China
     
     </td>
-    <td valign="top">
-    
-    Azure
-    
-    </td>
-    <td valign="top">
-    
-    `azr-na-ca.accounts.ondemand.com.cloud.sap.akadns.net`
-    
-    </td>
-    </tr>
-    <tr>
     <td valign="top">
     
     China
+
+    \(Shanghai\)
     
     </td>
     <td valign="top">
@@ -111,24 +116,12 @@ Identity Authentication allows you to use a custom domain that is different from
     <tr>
     <td valign="top">
     
-    EU
+    Europe
     
     </td>
     <td valign="top">
     
-    SAP
-    
-    </td>
-    <td valign="top">
-    
-    `accounts.ondemand.com.cloud.sap.akadns.net`
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Frankfurt
+    Germany \(Frankfurt\)
     
     </td>
     <td valign="top">
@@ -145,7 +138,34 @@ Identity Authentication allows you to use a custom domain that is different from
     <tr>
     <td valign="top">
     
+    Europe
+    
+    </td>
+    <td valign="top">
+    
+    Netherlands \(Amsterdam\) / Germany \(Frankfurt\)
+    
+    </td>
+    <td valign="top">
+    
+    SAP
+    
+    </td>
+    <td valign="top">
+    
+    `accounts.ondemand.com.cloud.sap.akadns.net`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     India
+    
+    </td>
+    <td valign="top">
+    
+    India \(Mumbai\)
     
     </td>
     <td valign="top">
@@ -167,6 +187,11 @@ Identity Authentication allows you to use a custom domain that is different from
     </td>
     <td valign="top">
     
+    Japan \(Tokyo\) / Japan \(Osaka\)
+    
+    </td>
+    <td valign="top">
+    
     SAP
     
     </td>
@@ -179,7 +204,34 @@ Identity Authentication allows you to use a custom domain that is different from
     <tr>
     <td valign="top">
     
+    North America \(Canada Central\)
+    
+    </td>
+    <td valign="top">
+    
+    Canada \(Toronto\)
+    
+    </td>
+    <td valign="top">
+    
+    Azure
+    
+    </td>
+    <td valign="top">
+    
+    `azr-na-ca.accounts.ondemand.com.cloud.sap.akadns.net`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Saudi Arabia
+    
+    </td>
+    <td valign="top">
+    
+    Saudi Arabia \(Riyadh, Dammam\)
     
     </td>
     <td valign="top">
@@ -194,6 +246,11 @@ Identity Authentication allows you to use a custom domain that is different from
     </td>
     </tr>
     <tr>
+    <td valign="top">
+    
+    Singapore
+    
+    </td>
     <td valign="top">
     
     Singapore
@@ -218,6 +275,11 @@ Identity Authentication allows you to use a custom domain that is different from
     </td>
     <td valign="top">
     
+    Seoul \(South Korea\)
+    
+    </td>
+    <td valign="top">
+    
     AWS
     
     </td>
@@ -235,6 +297,11 @@ Identity Authentication allows you to use a custom domain that is different from
     </td>
     <td valign="top">
     
+    Switzerland \(Zürich\)
+    
+    </td>
+    <td valign="top">
+    
     Azure
     
     </td>
@@ -247,12 +314,17 @@ Identity Authentication allows you to use a custom domain that is different from
     <tr>
     <td valign="top">
     
-    UAE
+    United Arab Emirates
     
     </td>
     <td valign="top">
     
-    Azure
+    UAE North \(Dubai\)
+    
+    </td>
+    <td valign="top">
+    
+    SAP
     
     </td>
     <td valign="top">
@@ -264,7 +336,12 @@ Identity Authentication allows you to use a custom domain that is different from
     <tr>
     <td valign="top">
     
-    US East
+    US \(North America East\)
+    
+    </td>
+    <td valign="top">
+    
+    United States \(Sterling\) / United States \(Colorado\)
     
     </td>
     <td valign="top">
@@ -281,7 +358,17 @@ Identity Authentication allows you to use a custom domain that is different from
     <tr>
     <td valign="top">
     
-    US East Trial
+    US East
+
+    > ### Note:  
+    > Trial environment.
+
+
+    
+    </td>
+    <td valign="top">
+    
+    East US
     
     </td>
     <td valign="top">
@@ -299,6 +386,11 @@ Identity Authentication allows you to use a custom domain that is different from
     <td valign="top">
     
     US West
+    
+    </td>
+    <td valign="top">
+    
+    East US
     
     </td>
     <td valign="top">

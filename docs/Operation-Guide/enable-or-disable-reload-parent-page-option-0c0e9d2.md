@@ -6,6 +6,14 @@ You can enable or disable the reload of the application's parent page after a su
 
 
 
+<a name="loio0c0e9d2363e2442f996e7a395c6d6b39__prereq_y1l_v55_c2c"/>
+
+## Prerequisites
+
+You have an SAML 2.0 application. The *Reload Parent Page Option* is not visible for OpenID Connect applications.
+
+
+
 ## Context
 
 The *Reload Parent Page* option specifies whether the application's parent page reloads or not after a successful logon via an overlay page.

@@ -32,7 +32,63 @@ To create a new user group, proceed as follows:
 
 4.  In the *General* screen, fill in the required information, and choose *Next Step*.
 
-5.  **Optional:** Fill in the information if you want to create an application-specific group.
+    You have the following options:
+
+    ****
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Field
+    
+    </th>
+    <th valign="top">
+
+    Notes
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Name
+    
+    </td>
+    <td valign="top">
+    
+    Required. The name of the group.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Display Name
+    
+    </td>
+    <td valign="top">
+    
+    Required. The display name of the group.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Description
+    
+    </td>
+    <td valign="top">
+    
+    Optional. Additional information for the group.
+    
+    </td>
+    </tr>
+    </table>
+    
+5.  **Optional:** In the *Application \(Optional\)* screen, fill in the information if you want to create an application-specific group.
 
     1.  Select an application from the list to create an application-specific group.
 
@@ -79,4 +135,6 @@ If the operation is successful, the system displays the message: `Group "<name o
 [Unassign Groups from a User](unassign-groups-from-a-user-4353735.md "As a tenant administrator, you can unassign one or more groups that are assigned to a user via the administration console for SAP Cloud Identity Services.")
 
 [Delete Groups](delete-groups-9853912.md "As a tenant administrator, you can delete one or more groups in administration console for SAP Cloud Identity Services.")
+
+[Groups](../groups-d93be69.md "SAP Cloud Identity Services offers groups to organize users based on common characteristics, authorization, or application. Use them to efficiently manage user access and permissions within your organization's SAP Cloud Identity Services environment.")
 

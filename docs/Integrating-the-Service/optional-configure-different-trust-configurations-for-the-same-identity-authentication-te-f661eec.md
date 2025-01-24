@@ -25,7 +25,7 @@ The configuration is done both in Identity Authentication and Microsoft Entra ID
 > 
 > When App1 issues an authentication request to Identity Authentication, then Identity Authentication sends authentication request to Microsoft Entra ID, using `issuer=https://tenant.accounts.ondemand.com/app1`. Microsoft Entra ID authenticates the user and sends authentication response with `audience=https://tenant.accounts.ondemand.com/app1`. Then Identity Authentication sends authentication response to app1.
 > 
-> After that, the same user tries to authenticate to app2 from the same browser session. App2 issues an authentication request to Identity Authentication. Then Identity Authentication again sends authentication request to Microsoft Entra ID, but this time with `issuer=https://tenant.accounts.ondemand.com/app2`. Thus, Microsoft Entra ID can apply the specific authentication mechanisms, configured for `issuer=https://tenant.accounts.ondemand.com/app2`. After the authentication,Microsoft Entra ID issues an authentication response with `audience=https://tenant.accounts.ondemand.com/app2`. Then Identity Authentication sends authentication response to app2.
+> After that, the same user tries to authenticate to app2 from the same browser session. App2 issues an authentication request to Identity Authentication. Then Identity Authentication again sends authentication request to Microsoft Entra ID, but this time with `issuer=https://tenant.accounts.ondemand.com/app2`. Thus, Microsoft Entra ID can apply the specific authentication mechanisms, configured for `issuer=https://tenant.accounts.ondemand.com/app2` . After the authentication,Microsoft Entra ID issues an authentication response with `audience=https://tenant.accounts.ondemand.com/app2`. Then Identity Authentication sends authentication response to app2.
 
 <a name="task_h2w_b5r_f4b"/>
 
@@ -54,7 +54,7 @@ The configuration is done both in Identity Authentication and Microsoft Entra ID
     > ### Note:  
     > The issuer name can contain only Latin letters \(A-Z and a-z\) and numbers. It must be up to 32 characters.
 
-    The issuer name, which will be used when sending SAML2.0 requests to the corporate identity provider appears under the input field. It is in the format `<Identity_Authentication_default_issuer_name>/<issuer_name_suffix_typed_in_the_input_field>`. For example, `https://my-tenant.accounts.ondemand.com/issuername/>`.
+    The issuer name, which will be used when sending SAML2.0 requests to the corporate identity provider appears under the input field. It is in the format `<Identity_Authentication_default_issuer_name>/<issuer_name_suffix_typed_in_the_input_field>` . For example, `https://my-tenant.accounts.ondemand.com/issuername/>`.
 
 7.  Save your changes.
 
@@ -90,7 +90,7 @@ The configuration is done both in Identity Authentication and Microsoft Entra ID
 
     You can generate a certificate with a private key using OpenSSL with the following command:
 
-    `openssl req -x509 -days 365 -newkey rsa:2048 -keyout cert.pem -out cert.pem`.
+    `openssl req -x509 -days 365 -newkey rsa:2048 -keyout cert.pem -out cert.pem`
 
     The commands are executed in the MS Windows or Mac OS Terminal.
 
@@ -98,7 +98,7 @@ The configuration is done both in Identity Authentication and Microsoft Entra ID
 
     You can convert the `.pem` file to `.pfx` format, using the following command:
 
-    `openssl pkcs12 -export -in cert.pem -inkey cert.pem -out cert.pfx`.
+    `openssl pkcs12 -export -in cert.pem -inkey cert.pem -out cert.pfx`
 
     The commands are executed in the MS Windows or Mac OS Terminal.
 

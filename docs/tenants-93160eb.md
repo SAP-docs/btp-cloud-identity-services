@@ -488,6 +488,33 @@ SAP
 <tr>
 <td valign="top">
 
+Google Cloud
+
+</td>
+<td valign="top">
+
+KSA \(Dammam\)
+
+</td>
+<td valign="top">
+
+sa30
+
+</td>
+<td valign="top">
+
+Dammam, Saudi Arabia, Middle East
+
+</td>
+<td valign="top">
+
+Google Cloud
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Amazon Web Services
 
 </td>

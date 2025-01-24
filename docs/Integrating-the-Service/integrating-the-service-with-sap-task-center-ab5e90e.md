@@ -106,3 +106,5 @@ For more information on how to provision the Global User ID from your SAP Identi
 
 [Global User ID](https://help.sap.com/viewer/b4c9306d80a3471aa0ae48511e725b43/8.0/en-US/dffae27f5d744a12a216d2b6e09fc55d.html)
 
+[**Blog Post**: Why SAP Cloud Identity Matters for SAP Task Center: It’s About Trust and Global User ID](https://community.sap.com/t5/technology-blogs-by-sap/why-sap-cloud-identity-matters-for-sap-task-center-it-s-about-trust-and/ba-p/13937397?emcs_t=S2h8ZW1haWx8a3Vkb3N8TTVVT1c3Vk9DRzBTWTV8MTM5MzczOTd8S1VET1N8aEs)
+
