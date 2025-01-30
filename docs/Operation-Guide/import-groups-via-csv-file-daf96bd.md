@@ -21,6 +21,9 @@ If the group does not exist in the tenant, and you provide that group in the CSV
 
 You can only add users to the groups via the import groups option, you don't remove users from the groups.
 
+> ### Caution:  
+> The supported number of users in a group is 344,000 members. If you exceed this number, the operations with the group might mot work properly.
+
 > ### Remember:  
 > When you create new groups with user assignments, or update existing ones with their user assignments, make sure that the CSV file contains unique users with unique identifiers.
 > 
@@ -92,6 +95,10 @@ To import groups via CSV file into Identity Authentication, proceed as follows:
 [Create a Group](create-a-group-b1b638d.md "As a tenant administrator you can create groups in the tenant to organize users based on common characteristics, authorization, or application via the administration console for SAP Cloud Identity Services.")
 
 [List and Edit Groups](list-and-edit-groups-5e8a55c.md "As a tenant administrator, you can list and edit information about the groups in a tenant in the administration console for SAP Cloud Identity Services.")
+
+[Enable or Disable Central Store-Based Provisioning](enable-or-disable-central-store-based-provisioning-657bbaa.md "You can enable or disable the Central Store-Based Provisioning option in the administration console for SAP Cloud Identity Services.")
+
+[Create and Manage Application-Specific Groups by the Identity Provisioning Service](create-and-manage-application-specific-groups-by-the-identity-provisioning-service-a9ff3e3.md "By running provisioning jobs, you can create application-specific groups in the Identity Directory of your SAP Cloud Identity Services tenant and provision them afterward to target systems of your choice.")
 
 [List and Search Users in Groups](list-and-search-users-in-groups-4ac340a.md "As a tenant administrator, you can list and view information about the users in a group in a tenant in the administration console for SAP Cloud Identity Services.")
 

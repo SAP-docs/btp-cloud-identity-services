@@ -129,11 +129,11 @@ Following the onboarding phase, tenants are provisioned to customers. They can u
 
 ## Offboarding
 
-Offboarding leads to tenant deletion when all customer contracts for bundled SAP cloud solutions are terminated. Depending on how the tenant is delivered, you can expect the following:
+Offboarding leads to tenant deletion when all customer contracts for SAP cloud solutions are terminated. Depending on how the tenant is delivered, you can expect the following:
 
 -   The tenant is delivered as part of a bundling with SAP cloud solutions
 
-    Offboarding is triggered if the customer contracts for all bundled solutions are terminated or expired. The tenant will not be deleted until the very last contract for a bundled solution is terminated.
+    Offboarding is triggered if the customer contracts for all SAP cloud solutions are terminated or expired. The tenant will not be deleted until the very last contract for an SAP cloud solution is terminated.
 
     > ### Note:  
     > If all of your SAP licenses are terminated, and you have a valid **SAP Concur** license, if you do not use your SAP Cloud Identity Services for 30 days, your tenant may be deleted.

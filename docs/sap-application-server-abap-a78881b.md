@@ -546,10 +546,7 @@ SAP Application Server ABAP \(AS ABAP\) offers a user store and user administrat
         >         ]
         >       },
         >       {
-        >         "type": "valueMapping",
-        >         "sourcePaths": [
-        >           "$.ADDRESS.LANGUP_ISO"
-        >         ],
+        >         "sourcePath": "$.ADDRESS.LANGUP_ISO",
         >         "optional": true,
         >         "targetPath": "$.preferredLanguage",
         >         "functions": [
@@ -1089,10 +1086,7 @@ SAP Application Server ABAP \(AS ABAP\) offers a user store and user administrat
         >         ]
         >       },
         >       {
-        >         "type": "valueMapping",
-        >         "sourcePaths": [
-        >           "$.ADDRESS.LANGUP_ISO"
-        >         ],
+        >         "sourcePath": "$.ADDRESS.LANGUP_ISO",
         >         "optional": true,
         >         "targetPath": "$.preferredLanguage",
         >         "functions": [
@@ -1643,10 +1637,7 @@ SAP Application Server ABAP \(AS ABAP\) offers a user store and user administrat
         >         ]
         >       },
         >       {
-        >         "type": "valueMapping",
-        >         "sourcePaths": [
-        >           "$.ADDRESS.LANGUP_ISO"
-        >         ],
+        >         "sourcePath": "$.ADDRESS.LANGUP_ISO",
         >         "optional": true,
         >         "targetPath": "$.preferredLanguage",
         >         "functions": [

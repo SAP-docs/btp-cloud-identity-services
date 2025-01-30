@@ -295,6 +295,38 @@ Request body
 <tr>
 <td valign="top">
 
+`max_exchange_period`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+You can set а limit on how long the application can exchange user tokens without re-authenticating after having acquired the initial token. The `max_exchange_period` parameter has a numeric value which can be set at between 1 hour and 4320 hours \(six months\).
+
+> ### Remember:  
+> If the `max_exchange_period` value is smaller than the configuration defined in token policy, this value overrides the configuration defined in token policy configuration and propagates it once the token is exchanged or refreshed. If the value is bigger, it is ignored and the configuration defined in token policy is taken into consideration. For more information, see [Token Policy Configuration for Applications](token-policy-configuration-for-applications-c4ba52e.md)
+
+
+
+</td>
+<td valign="top">
+
+Request body
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `token_format`
 
 </td>

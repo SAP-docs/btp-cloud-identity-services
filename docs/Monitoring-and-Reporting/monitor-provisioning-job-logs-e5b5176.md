@@ -187,6 +187,9 @@ To search and view the job logs, proceed as follows:
 
     -   **Statistics** – Shows the job statistics, that is, details about how entities are handled.
 
+        > ### Note:  
+        > Note that if an entity type is set to be ignored in the transformations, you won't get any data in the job log statistics for this entity type.
+
 
         <table>
         <tr>
@@ -353,6 +356,8 @@ To search and view the job logs, proceed as follows:
         Number of skipped entities in the target system
 
         Entities can be skipped if they don't fulfill a condition in the write transformation.
+
+        An application-specific group is skipped if you try to perform an operation which is not supported for it. For more information about the *supportedOperations* attribute, see [Groups](../groups-d93be69.md).
 
         > ### Example:  
         > Setting this group condition in the write transformation results in skipping all groups that do not match the specified display name.

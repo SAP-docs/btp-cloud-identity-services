@@ -314,17 +314,17 @@ To create Identity Authentication as a source system, proceed as follows:
 
     > ### Code Syntax:  
     > ```
-    > 
     > {
     >     "user": {
     >         "mappings": [
     >             {
     >                 "sourcePath": "$.id",
-    >                 "targetVariable": "entityIdSourceSystem"
+    >                 "targetVariable": "entityIdSourceSystem",
+    >                 "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:User']['userId']"
     >             },
     >             {
-    >               "sourcePath": "$.userUuid",
-    >               "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
+    >                 "sourcePath": "$.userUuid",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
     >             },
     >             {
     >                 "sourcePath": "$.schemas",
@@ -358,9 +358,9 @@ To create Identity Authentication as a source system, proceed as follows:
     >                 "optional": true
     >             },
     >             {
-    >                 "sourcePath": "$.emails[*].value",
+    >                 "sourcePath": "$.emails",
     >                 "preserveArrayWithSingleElement": true,
-    >                 "targetPath": "$.emails[?(@.value)]"
+    >                 "targetPath": "$.emails"
     >             },
     >             {
     >                 "sourcePath": "$.emails[?(@.primary== true)].value",
@@ -413,7 +413,7 @@ To create Identity Authentication as a source system, proceed as follows:
     >                 "sourcePath": "$.groups",
     >                 "targetPath": "$.groups",
     >                 "preserveArrayWithSingleElement": true,
-    >                 "optional" : true
+    >                 "optional": true
     >             },
     >             {
     >                 "condition": "$.displayName EMPTY true",
@@ -423,42 +423,42 @@ To create Identity Authentication as a source system, proceed as follows:
     >             {
     >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']",
     >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']",
-    >                 "optional" : true
+    >                 "optional": true
     >             },
     >             {
     >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['costCenter']",
     >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['costCenter']",
-    >                 "optional" : true
+    >                 "optional": true
     >             },
     >             {
     >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['organization']",
     >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['organization']",
-    >                 "optional" : true
+    >                 "optional": true
     >             },
     >             {
     >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['division']",
     >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['division']",
-    >                 "optional" : true
+    >                 "optional": true
     >             },
     >             {
     >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['department']",
     >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['department']",
-    >                 "optional" : true
+    >                 "optional": true
     >             },
     >             {
     >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['value']",
     >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['value']",
-    >                 "optional" : true
+    >                 "optional": true
     >             },
     >             {
     >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['displayName']",
     >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['displayName']",
-    >                 "optional" : true
+    >                 "optional": true
     >             },
     >             {
     >                 "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:User']",
     >                 "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:User']",
-    >                 "optional" : true
+    >                 "optional": true
     >             },
     >             {
     >                 "sourcePath": "$.company",
@@ -467,10 +467,10 @@ To create Identity Authentication as a source system, proceed as follows:
     >             }
     >         ]
     >     },
-    > 
-    > // By default, the group mapping is inactive (ignored) but groups are supported. 
-    > // To start reading groups, either delete the statement "ignore": true, or set its value to false.
-    >    "group": {
+    > 	
+    > 	// By default, the group mapping is inactive (ignored) but groups are supported. 
+    > 	// To start reading groups, either delete the statement "ignore": true, or set its value to false.
+    >     "group": {
     >         "ignore": true,
     >         "mappings": [
     >             {
@@ -510,7 +510,6 @@ To create Identity Authentication as a source system, proceed as follows:
     >         ]
     >     }
     > }
-    > 
     > ```
 
     **Default transformation for SCIM API version 2:**
@@ -565,9 +564,9 @@ To create Identity Authentication as a source system, proceed as follows:
     >                 "optional": true
     >             },
     >             {
-    >                 "sourcePath": "$.emails[*].value",
+    >                 "sourcePath": "$.emails",
     >                 "preserveArrayWithSingleElement": true,
-    >                 "targetPath": "$.emails[?(@.value)]"
+    >                 "targetPath": "$.emails"
     >             },
     >             {
     >                 "sourcePath": "$.emails[?(@.primary== true)].value",

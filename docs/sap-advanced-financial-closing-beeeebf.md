@@ -241,6 +241,7 @@ You can use Identity Provisioning to configure SAP Advanced Financial Closing as
     > ```
     > {
     >   "user": {
+    >     "condition": "('%s4hana.afc.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%s4hana.afc.group.prefix%.+/)] empty false)",
     >     "mappings": [
     >       {
     >         "constant": [
@@ -326,14 +327,17 @@ You can use Identity Provisioning to configure SAP Advanced Financial Closing as
     >     ]
     >   },
     >   "group": {
-    >     "condition": "('%s4hana.afc.group.prefix%' === 'null') || (($.displayName =~ /%s4hana.afc.group.prefix%.*/) && (($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'] EMPTY true) || ($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'] =~ /%s4hana.afc.group.prefix%.*/)))",
+    >     "condition": "isAttributeWithOptionalPrefix($.displayName, s4hana.afc.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], s4hana.afc.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >     "mappings": [
     >       {
     >         "sourceVariable": "entityIdTargetSystem",
     >         "targetPath": "$.id"
     >       },
     >       {
-    >         "constant": ["urn:ietf:params:scim:schemas:core:2.0:Group","urn:sap:cloud:scim:schemas:extension:custom:2.0:Group"],
+    >         "constant": [
+    >           "urn:ietf:params:scim:schemas:core:2.0:Group",
+    >           "urn:sap:cloud:scim:schemas:extension:custom:2.0:Group"
+    >         ],
     >         "targetPath": "$.schemas"
     >       },
     >       {
@@ -341,7 +345,7 @@ You can use Identity Provisioning to configure SAP Advanced Financial Closing as
     >         "targetPath": "$.displayName",
     >         "functions": [
     >           {
-    >             "condition": "('%s4hana.afc.group.prefix%' !== 'null') && (@ =~ /%s4hana.afc.group.prefix%.*/)",
+    >             "condition": "isAttributeWithMandatoryPrefix(@, s4hana.afc.group.prefix)",
     >             "function": "replaceFirstString",
     >             "regex": "%s4hana.afc.group.prefix%",
     >             "replacement": ""
@@ -353,7 +357,7 @@ You can use Identity Provisioning to configure SAP Advanced Financial Closing as
     >         "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
     >         "functions": [
     >           {
-    >             "condition": "('%s4hana.afc.group.prefix%' !== 'null') && (@ =~ /%s4hana.afc.group.prefix%.*/)",
+    >             "condition": "isAttributeWithMandatoryPrefix(@, s4hana.afc.group.prefix)",
     >             "function": "replaceFirstString",
     >             "regex": "%s4hana.afc.group.prefix%",
     >             "replacement": ""
@@ -366,7 +370,7 @@ You can use Identity Provisioning to configure SAP Advanced Financial Closing as
     >         "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
     >         "functions": [
     >           {
-    >             "condition": "('%s4hana.afc.group.prefix%' !== 'null') && (@ =~ /%s4hana.afc.group.prefix%.*/)",
+    >             "condition": "isAttributeWithMandatoryPrefix(@, s4hana.afc.group.prefix)",
     >             "function": "replaceFirstString",
     >             "regex": "%s4hana.afc.group.prefix%",
     >             "replacement": ""

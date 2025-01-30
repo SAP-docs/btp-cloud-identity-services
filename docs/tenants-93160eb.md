@@ -245,6 +245,33 @@ AWS
 <tr>
 <td valign="top">
 
+Google Cloud
+
+</td>
+<td valign="top">
+
+Australia \(Sydney\)
+
+</td>
+<td valign="top">
+
+ap30
+
+</td>
+<td valign="top">
+
+Australia \(Sydney\)
+
+</td>
+<td valign="top">
+
+SAP / Azure
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Amazon Web Services
 
 </td>
@@ -256,6 +283,60 @@ Brazil \(São Paulo\)
 <td valign="top">
 
 br10
+
+</td>
+<td valign="top">
+
+Brazil \(São Paulo\)
+
+</td>
+<td valign="top">
+
+AWS
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Microsoft Azure
+
+</td>
+<td valign="top">
+
+Brazil \(São Paulo\)
+
+</td>
+<td valign="top">
+
+br20
+
+</td>
+<td valign="top">
+
+Brazil \(São Paulo\)
+
+</td>
+<td valign="top">
+
+AWS
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Google Cloud
+
+</td>
+<td valign="top">
+
+Brazil \(São Paulo\)
+
+</td>
+<td valign="top">
+
+br30
 
 </td>
 <td valign="top">
@@ -412,6 +493,33 @@ Google Cloud
 </td>
 <td valign="top">
 
+Europe \(Frankfurt\)
+
+</td>
+<td valign="top">
+
+eu30
+
+</td>
+<td valign="top">
+
+Germany \(Frankfurt\)
+
+</td>
+<td valign="top">
+
+AWS
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Google Cloud
+
+</td>
+<td valign="top">
+
 India \(Mumbai\) GCP
 
 </td>
@@ -493,6 +601,60 @@ Google Cloud
 </td>
 <td valign="top">
 
+Japan \(Osaka\)
+
+</td>
+<td valign="top">
+
+jp30
+
+</td>
+<td valign="top">
+
+Japan \(Tokyo\) / Japan \(Osaka\)
+
+</td>
+<td valign="top">
+
+SAP
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Google Cloud
+
+</td>
+<td valign="top">
+
+Japan \(Tokyo\)
+
+</td>
+<td valign="top">
+
+jp31
+
+</td>
+<td valign="top">
+
+Japan \(Tokyo\) / Japan \(Osaka\)
+
+</td>
+<td valign="top">
+
+SAP
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Google Cloud
+
+</td>
+<td valign="top">
+
 KSA \(Dammam\)
 
 </td>
@@ -509,6 +671,33 @@ Dammam, Saudi Arabia, Middle East
 <td valign="top">
 
 Google Cloud
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Google Cloud
+
+</td>
+<td valign="top">
+
+KSA \(Dammam\)
+
+</td>
+<td valign="top">
+
+sa31
+
+</td>
+<td valign="top">
+
+Saudi Arabia \(Riyadh, Dammam\)
+
+</td>
+<td valign="top">
+
+SAP
 
 </td>
 </tr>
@@ -536,6 +725,33 @@ United States \(Sterling\) / United States \(Colorado\)
 <td valign="top">
 
 SAP
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+US West \(OR\)
+
+</td>
+<td valign="top">
+
+us11
+
+</td>
+<td valign="top">
+
+West US 2
+
+</td>
+<td valign="top">
+
+Azure
 
 </td>
 </tr>

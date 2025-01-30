@@ -99,7 +99,7 @@ To edit an administrator's authorizations, proceed as follows:
     > </td>
     > <td valign="top">
     > 
-    > This role gives the tenant administrator permission to retrieve user data and import users via the administration console and the SCIM REST API of Identity Authentication.
+    > This role gives the tenant administrator permission to retrieve user data and export users via the administration console and the SCIM REST API of Identity Authentication.
     > 
     > </td>
     > </tr>

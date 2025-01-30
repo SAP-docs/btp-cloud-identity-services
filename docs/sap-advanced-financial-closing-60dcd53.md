@@ -487,152 +487,155 @@ You can use Identity Provisioning to configure SAP Advanced Financial Closing as
     > ### Code Syntax:  
     > ```
     > {
-    >     "user": {
-    >         "scimEntityEndpoint": "Users",
-    >         "mappings": [
-    >             {
-    >                 "constant": [
-    >                     "urn:ietf:params:scim:schemas:core:2.0:User",
-    >                     "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User",
-    >                     "urn:ietf:params:scim:schemas:extension:sap:2.0:User"
-    >                 ],
-    >                 "targetPath": "$.schemas"
-    >             },
-    >             {
-    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
-    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
-    >                 "optional": true
-    >             },
-    >             {
-    >                 "sourceVariable": "entityIdTargetSystem",
-    >                 "targetPath": "$.id"
-    >             },
-    >             {
-    >                 "sourcePath": "$.userName",
-    >                 "targetPath": "$.userName"
-    >             },
-    >             {
-    >                 "sourcePath": "$.name.formatted",
-    >                 "targetPath": "$.name.formatted",
-    >                 "optional": true
-    >             },
-    >             {
-    >                 "sourcePath": "$.name.familyName",
-    >                 "targetPath": "$.name.familyName",
-    >                 "optional": true
-    >             },
-    >             {
-    >                 "sourcePath": "$.name.givenName",
-    >                 "targetPath": "$.name.givenName",
-    >                 "optional": true
-    >             },
-    >             {
-    >                 "sourcePath": "$.displayName",
-    >                 "targetPath": "$.displayName",
-    >                 "optional": true
-    >             },
-    >             {
-    >                 "sourcePath": "$.locale",
-    >                 "targetPath": "$.locale",
-    >                 "optional": true
-    >             },
-    >             {
-    >                 "sourcePath": "$.active",
-    >                 "targetPath": "$.active",
-    >                 "optional": true
-    >             },
-    >             {
-    >                 "condition": "$.emails[0].length() > 0",
-    >                 "targetPath": "$.emails[0].primary",
-    >                 "constant": true
-    >             },
-    >             {
-    >                 "sourcePath": "$.emails",
-    >                 "preserveArrayWithSingleElement": true,
-    >                 "optional": true,
-    >                 "targetPath": "$.emails",
-    >                 "functions": [
-    >                     {
-    >                         "function": "putIfAbsent",
-    >                         "key": "type",
-    >                         "defaultValue": "work"
-    >                     }
-    >                 ]
-    >             },
-    >             {
-    >                 "sourcePath": "$.phoneNumbers",
-    >                 "targetPath": "$.phoneNumbers",
-    >                 "preserveArrayWithSingleElement": true,
-    >                 "optional": true
-    >             },
-    >             {
-    >                 "constant": "urn:ietf:params:scim:api:messages:2.0:PatchOp",
-    >                 "targetPath": "$.schemas[0]",
-    >                 "scope": "patchEntity"
-    >             },
-    >             {
-    >                 "sourcePath": "$.Operations",
-    >                 "preserveArrayWithSingleElement": true,
-    >                 "targetPath": "$.Operations",
-    >                 "scope": "patchEntity"
-    >             }
+    >   "user": {
+    >     "scimEntityEndpoint": "Users",
+    >     "mappings": [
+    >       {
+    >         "constant": [
+    >           "urn:ietf:params:scim:schemas:core:2.0:User",
+    >           "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User",
+    >           "urn:ietf:params:scim:schemas:extension:sap:2.0:User"
+    >         ],
+    >         "targetPath": "$.schemas"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourceVariable": "entityIdTargetSystem",
+    >         "targetPath": "$.id"
+    >       },
+    >       {
+    >         "sourcePath": "$.userName",
+    >         "targetPath": "$.userName"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.formatted",
+    >         "targetPath": "$.name.formatted",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.familyName",
+    >         "targetPath": "$.name.familyName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.givenName",
+    >         "targetPath": "$.name.givenName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$.displayName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.locale",
+    >         "targetPath": "$.locale",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.active",
+    >         "targetPath": "$.active",
+    >         "optional": true
+    >       },
+    >       {
+    >         "condition": "$.emails[0].length() > 0",
+    >         "targetPath": "$.emails[0].primary",
+    >         "constant": true
+    >       },
+    >       {
+    >         "sourcePath": "$.emails",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true,
+    >         "targetPath": "$.emails",
+    >         "functions": [
+    >           {
+    >             "function": "putIfAbsent",
+    >             "key": "type",
+    >             "defaultValue": "work"
+    >           }
     >         ]
-    >     },
-    >     "group": {
-    >         "scimEntityEndpoint": "Groups",
-    >         "mappings": [
-    >             {
-    >                 "sourceVariable": "entityIdTargetSystem",
-    >                 "targetPath": "$.id"
-    >             },
-    >             {
-    >                 "constant": ["urn:ietf:params:scim:schemas:core:2.0:Group","urn:sap:cloud:scim:schemas:extension:custom:2.0:Group"],
-    >                 "targetPath": "$.schemas"
-    >             },
-    >             {
-    >                 "sourcePath": "$.displayName",
-    >                 "targetPath": "$.displayName"
-    >             },
-    >             {
-    >                 "sourcePath": "$.displayName",
-    >                 "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']"
-    >             },
-    >             {
-    >                 "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
-    >                 "optional": true,
-    >                 "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']"
-    >             },
-    >             {
-    >                 "sourcePath": "$.members",
-    >                 "targetPath": "$.members",
-    >                 "preserveArrayWithSingleElement": true,
-    >                 "optional": true
-    >             },
-    >             {
-    >                 "sourcePath": "$.members[*].value",
-    >                 "preserveArrayWithSingleElement": true,
-    >                 "optional": true,
-    >                 "targetPath": "$.members[?(@.value)]",
-    >                 "functions": [
-    >                     {
-    >                         "function": "resolveEntityIds"
-    >                     }
-    >                 ]
-    >             },
-    >             {
-    >                 "sourcePath": "$.Operations",
-    >                 "targetPath": "$.Operations",
-    >                 "preserveArrayWithSingleElement": true,
-    >                 "scope": "patchEntity"
-    >             },
-    >             {
-    >                 "sourcePath": "$.schemas",
-    >                 "targetPath": "$.schemas",
-    >                 "preserveArrayWithSingleElement": true,
-    >                 "scope": "patchEntity"
-    >             }
+    >       },
+    >       {
+    >         "sourcePath": "$.phoneNumbers",
+    >         "targetPath": "$.phoneNumbers",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       },
+    >       {
+    >         "constant": "urn:ietf:params:scim:api:messages:2.0:PatchOp",
+    >         "targetPath": "$.schemas[0]",
+    >         "scope": "patchEntity"
+    >       },
+    >       {
+    >         "sourcePath": "$.Operations",
+    >         "preserveArrayWithSingleElement": true,
+    >         "targetPath": "$.Operations",
+    >         "scope": "patchEntity"
+    >       }
+    >     ]
+    >   },
+    >   "group": {
+    >     "scimEntityEndpoint": "Groups",
+    >     "mappings": [
+    >       {
+    >         "sourceVariable": "entityIdTargetSystem",
+    >         "targetPath": "$.id"
+    >       },
+    >       {
+    >         "constant": [
+    >           "urn:ietf:params:scim:schemas:core:2.0:Group",
+    >           "urn:sap:cloud:scim:schemas:extension:custom:2.0:Group"
+    >         ],
+    >         "targetPath": "$.schemas"
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$.displayName"
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']"
+    >       },
+    >       {
+    >         "sourcePath": "$.members",
+    >         "targetPath": "$.members",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.members[*].value",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true,
+    >         "targetPath": "$.members[?(@.value)]",
+    >         "functions": [
+    >           {
+    >             "function": "resolveEntityIds"
+    >           }
     >         ]
-    >     }
+    >       },
+    >       {
+    >         "sourcePath": "$.Operations",
+    >         "targetPath": "$.Operations",
+    >         "preserveArrayWithSingleElement": true,
+    >         "scope": "patchEntity"
+    >       },
+    >       {
+    >         "sourcePath": "$.schemas",
+    >         "targetPath": "$.schemas",
+    >         "preserveArrayWithSingleElement": true,
+    >         "scope": "patchEntity"
+    >       }
+    >     ]
+    >   }
     > }
     > ```
 

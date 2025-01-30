@@ -465,18 +465,15 @@ SAP Application Server ABAP \(AS ABAP\) offers a user store and user administrat
     >                 ]
     >             },
     >             {
-    >                 "optional": true,
-    >                 "targetPath": "$.preferredLanguage",
-    >                 "type": "valueMapping",
-    >                 "functions": [
-    >                     {
-    >                         "function": "toLowerCaseString"
-    >                     }
-    >                 ],
-    >                 "sourcePaths": [
-    >                     "$.ADDRESS.LANGUP_ISO"
-    >                 ]
-    >             },
+    >         "sourcePath": "$.ADDRESS.LANGUP_ISO",
+    >         "optional": true,
+    >         "targetPath": "$.preferredLanguage",
+    >         "functions": [
+    >           {
+    >             "function": "toLowerCaseString"
+    >           }
+    >         ]
+    >       },
     > 
     > // The Identity Provisioning reads standard timezone codes, which are supported by the AS ABAP BAPI.
     > // However, the standard SCIM API does not support these codes, thus the target system can only accept values in format "<region>/<city>".
@@ -662,10 +659,7 @@ SAP Application Server ABAP \(AS ABAP\) offers a user store and user administrat
     >         ]
     >       },
     >       {
-    >         "type": "valueMapping",
-    >         "sourcePaths": [
-    >           "$.ADDRESS.LANGUP_ISO"
-    >         ],
+    >         "sourcePath": "$.ADDRESS.LANGUP_ISO",
     >         "optional": true,
     >         "targetPath": "$.preferredLanguage",
     >         "functions": [

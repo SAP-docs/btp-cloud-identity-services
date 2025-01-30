@@ -388,9 +388,9 @@ The following configuration example uses a number of systems, including: Microso
     >                 "optional": true
     >             },
     >             {
-    >                 "sourcePath": "$.emails[*].value",
+    >                 "sourcePath": "$.emails",
     >                 "preserveArrayWithSingleElement": true,
-    >                 "targetPath": "$.emails[?(@.value)]"
+    >                 "targetPath": "$.emails"
     >             },
     >             {
     >                 "sourcePath": "$.emails[?(@.primary== true)].value",
@@ -530,6 +530,15 @@ The following configuration example uses a number of systems, including: Microso
     >                 "preserveArrayWithSingleElement": true,
     >                 "optional": true
     >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']",
+    > 
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']",
+    > 
+    >                 "optional": true
+    > 
+    >             },
+    > 
     >             {
     >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
     >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
@@ -959,10 +968,6 @@ You can use the identity directory as a SCIM 2.0 based proxy connector. Before e
     >         "optional": true
     >       },
     >       {
-    >         "type": "remove",
-    >         "targetPath": "$.groups[*].display"
-    >       },
-    >       {
     >         "condition": "$.displayName EMPTY true",
     >         "type": "remove",
     >         "targetPath": "$.displayName"
@@ -1051,6 +1056,11 @@ You can use the identity directory as a SCIM 2.0 based proxy connector. Before e
     >         "sourcePath": "$.schemas",
     >         "preserveArrayWithSingleElement": true,
     >         "targetPath": "$.schemas"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']",
+    >         "optional": true
     >       },
     >       {
     >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",

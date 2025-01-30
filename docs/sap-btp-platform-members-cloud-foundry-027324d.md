@@ -33,7 +33,7 @@ The Cloud Foundry environment enables you to create polyglot cloud applications 
 
 When you enable the Cloud Foundry environment in your subaccount, the system automatically creates a Cloud Foundry organization for you. You can add platform users as org members and space members and assign roles to grant these users platform access.
 
-In this scenario, your SAP Cloud Identity Services tenant acts as your identity provider and SAP BTP acts as your service provider. Identity Provisioning in between provides the SAP BTP Platform Members \(Cloud Foundry\) connector to replicate the org and space members with their role assignments from the identity provider to the local user storage of SAP BTP.
+In this scenario, your SAP Cloud Identity Services tenant acts as your identity provider and SAP BTP acts as your service provider. Identity Provisioning in between provides the SAP BTP Platform Members \(Cloud Foundry\) connector to replicate the org and space members with their role assignments from the identity provider to the local user storage of SAP BTP. For more information, see [SAP BTP Integration Scenario](https://help.sap.com/docs/cloud-identity/system-integration-guide/sap-btp-integration-scenario?version=Cloud).
 
 SAP BTP Platform Members \(Cloud Foundry\) connector manages org and space members, as well as their role assignments, in the Cloud Foundry environment of a multi-environment subaccount, where a **single** SAP Cloud Identity Services tenant acts as custom identity provider. We recommend that you use the Identity Provisioning service enabled in this SAP Cloud Identity Services tenant.
 

@@ -2904,6 +2904,8 @@ For more information, see [Manage Full and Delta Read](Operation-Guide/manage-fu
 
 -   Identity Authentication
 
+-   Intelligent Opportunity Analyzer
+
 -   Local Identity Directory
 
 -   Microsoft Active Directory
@@ -3045,13 +3047,13 @@ In case the property is not set, only delta read jobs will be executed. For more
 </td>
 <td valign="top">
 
-This property holds the value of the *applicationId* group attribute. Its main purpose is to show that a group is associated with a particular application. This is an optional property set by the customer.
+This property holds the value of the *Application ID* of the application, created in the SAP Cloud Identity Services tenant. Its main purpose is to show that a group is associated with a particular application. This is an optional property set by the customer.
 
 The *application ID* is the identifier of an application configured in SAP Cloud Identity Services - Identity Authentication that corresponds to a particular source system configured in the *Identity Provisioning* admin consoleadministration console for SAP Cloud Identity Services. It is used to distinguish groups provisioned from various source systems to the Identity Directory of SAP Cloud Identity Services.
 
 When the property is set, the groups are provisioned with their *applicationId* attribute which is internally mapped to the name of the corresponding application. As a result, the name of the associated application with the group is displayed in the *Application Name* field under *Users&Authorizations* \> *Groups*.
 
-**System Role:** Source
+**System Role:** Source, Target
 
 </td>
 <td valign="top">
@@ -3059,6 +3061,11 @@ When the property is set, the groups are provisioned with their *applicationId* 
 -   SAP Advanced Financial Closing
 
 -   SAP BTP Platform Members \(Cloud Foundry\)
+
+-   SAP Analytics Cloud
+
+-   SAP Ariba Applications
+
 
 
 
@@ -3084,6 +3091,8 @@ If you need to make OAuth authentication to the system, enter the URL to the acc
 -   Cloud Foundry UAA Server
 
 -   Google G Suite
+
+-   Intelligent Opportunity Analyzer
 
 -   Microsoft Entra ID
 
@@ -12980,6 +12989,125 @@ SAP Marketing Cloud
 SAP S/4HANA Cloud
 
 SAP S/4HANA On-Premise
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ioa.content.type`
+
+</td>
+<td valign="top">
+
+This property makes an intelligent opportunity analyzer connector to send a specified value for the *Content-Type* HTTP header. This is needed because intelligent opportunity analyzer could potentially not implement the protocol in the specification, which states that a system must accept *application/scim+json* as a value of the*Content-Type* header.
+
+**Possible values:**
+
+For example: *application/json*
+
+Default value: *application/scim+json*
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+Intelligent Opportunity Analyzer
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ioa.include.if.match.wildcard.header`
+
+</td>
+<td valign="top">
+
+Makes the intelligent opportunity analyzer connector send the *If-Match* HTTP header with a value of “\*” for every request to the target system. This header could be used by an intelligent opportunity analyzer system for entity versioning.
+
+**Possible values:**
+
+-   *true*
+
+-   *false*
+
+
+Default value: *false* 
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+Intelligent Opportunity Analyzer
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ioa.user.filter`
+
+</td>
+<td valign="top">
+
+When specified, only those intelligent opportunity analyzer users matching the filter expression will be read.
+
+Supported operators: eq \(equal\) and sw \(starts with\).
+
+For example:
+
+-   *userName eq "SmithJ"*
+
+-   *email eq "john.doe@example.com"*
+
+-   
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+Intelligent Opportunity Analyzer
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ioa.user.unique.attribute`
+
+</td>
+<td valign="top">
+
+When the Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists in intelligent opportynity analyzer. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attributes. This property defines by which unique attributes the existing user to be searched and resolved.
+
+Intelligent opportynity analyzer supports two user unique attributes for managing conflict resolution: *username* and *email*. Both of the attributes are mandatory. The email is a multivalue attribute, indicating that a user may have multiple unique emails.
+
+According to your use case, choose how to set up this property:
+
+-   Default behavior: This property is missing during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such а *userName* is not found, the creation of the conflicting user fails.
+-   Value = *emails\[\*\].value*. If the service finds an existing user with such emails \(at least one identical email is needed\), it updates this user with the data of the conflicting one. If a user with such emails is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+-   Value = *userName, emails\[\*\].value*. If the service finds an existing user with both userName and email, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+
+> ### Note:  
+> The uniqueness of a user in the target system is determined not only by the individual attributes or the combination of both, but also by considering whether one or multiple existing users in the target system share the same values for these unique attributes. For more information, see **User Update and Uniqueness** in [SAP Ariba Category Management](sap-ariba-category-management-e4c55e4.md).
+
+**Possible values:**
+
+-   *userName*
+-   *emails\[\*\].value*
+-   *userName, emails\[\*\].value*
+
+Default value: *userName*
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+Intelligent Opportunity Analyzer
 
 </td>
 </tr>

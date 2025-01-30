@@ -123,6 +123,8 @@ Review the expected behavior in the following scenarios:
     <td valign="top">
     
     Refers to the type of instance being configured or used within the SAP HANA Cloud.
+
+    The value is set to *hdb* at system creation.
     
     </td>
     </tr>
@@ -294,7 +296,7 @@ Review the expected behavior in the following scenarios:
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md).
 
     > ### Note:  
-    > Given that the SAP HANA Database username attribute is immutable and the email is not supported, refer to [Handling Specific Attributes](handling-specific-attributes-e957782.md) for your provisioning scenarios, particularly with Identity Authentication.
+    > Given that the SAP HANA Database username attribute is immutable and the email is not supported, refer to [Handling Specific Attributes](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/handling-specific-attributes?version=Cloud) for your provisioning scenarios, particularly with Identity Authentication.
 
     **Default transformation:** 
 

@@ -123,6 +123,160 @@ In cases where users have multiple emails, the following condition will validate
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+isApplicationSpecificGroup
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+This function verifies whether a group is associated with a particular application configured in SAP Cloud Identity Services - Identity Authentication. It checks if the property `ips.application.id` is set for the provisioning system and whether its value matches the group attribute `$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']`.
+
+After the check, the function returns a Boolean result.
+
+This function can be used only as part of a conditional statement.
+
+The function is part of the default write transformation of some target systems \(like SAP Advanced Financial Closing\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+isRegularGroup
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+This function verifies whether a group is a regular user group by checking for the attribute `supportedOperations` and its value.
+
+After the check, the function returns a Boolean result.
+
+This function can be used only as part of a conditional statement.
+
+The function is part of the default write transformation of some target systems \(like SAP Advanced Financial Closing\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IsAttributeWithOptionalPrefix
+
+</td>
+<td valign="top">
+
+-   `attribute-jsonpath` - JSON path attribute
+
+    Required: Yes
+
+    Type: String
+
+-   `property-key` - specifies a property in the system configuration
+
+    Required: Yes
+
+    Type: String
+
+
+
+
+</td>
+<td valign="top">
+
+This function checks wheter an attribute value starts with an optional prefix.
+
+The syntax used by the function is as follows:
+
+```
+isAttributeWithOptionalPrefix(attribute-jsonpath, property-key)
+```
+
+For example:
+
+```
+"condition": "isAttributeWithOptionalPrefix($.displayName, s4hana.afc.group.prefix)"
+```
+
+After the check, the function returns a Boolean result.
+
+The returned result is ***true*** when one of the following conditions is fulfilled:
+
+-   the attribute `attribute-jsonpath` is missing
+-   the property `property-key` is missing
+-   the value of the attribute `attribute-jsonpath` starts with the value of the property `property-key`
+
+Otherwise, the returned value is ***false***.
+
+The function is part of the default write transformation of some target systems \(like SAP Advanced Financial Closing\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+IsAttributeWithMandatoryPrefix
+
+</td>
+<td valign="top">
+
+-   `attribute-jsonpath` - JSON path attribute
+
+    Required: Yes
+
+    Type: String
+
+-   `property-key` - specifies a property in the system configuration
+
+    Required: Yes
+
+    Type: String
+
+
+
+
+</td>
+<td valign="top">
+
+This function checks wheter an attribute value starts with a predefined mandatory prefix.
+
+The syntax used by the function is the following:
+
+```
+isAttributeWithMandatoryPrefix(attribute-jsonpath, property-key)
+```
+
+For example:
+
+```
+"condition": "isAttributeWithMandatoryPrefix($.displayName, s4hana.afc.group.prefix)"
+```
+
+After the check, the function returns a Boolean result.
+
+The returned result is ***true*** when all of the following conditions are fulfilled:
+
+-   the attribute `attribute-jsonpath` is present
+-   the property `property-key` is present
+-   the value of the attribute `attribute-jsonpath` starts with the value of the property `property-key`
+
+If one or more of the conditions are not fulfilled the returned value is ***false***.
+
+The function is part of the default write transformation of some target systems \(like SAP Advanced Financial Closing\).
+
+</td>
+</tr>
 </table>
 
 

@@ -299,6 +299,20 @@ For more information on how to update to version 2, see [Update Connector Versio
     >                 "sourcePath": "$.roles",
     >                 "targetPath": "$.roles",
     >                 "preserveArrayWithSingleElement": true
+    >             },
+    >             {   "condition": "'%ips.application.id%' !== 'null'",
+    >                 "constant": "%ips.application.id%",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "optional": true
     >             }
     >         ]
     >     }
@@ -359,14 +373,14 @@ For more information on how to update to version 2, see [Update Connector Versio
     >                 "targetPath": "$['urn:sap:params:scim:schemas:extension:sac:2.0:user-custom-parameters']"
     >             },
     >             {
-    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']",
-    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']",
-    >                 "optional": true
-    >             },
-    >             {
     >                 "sourcePath": "$.roles",
     >                 "targetPath": "$.roles",
     >                 "preserveArrayWithSingleElement": true,
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['value']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['value']",
     >                 "optional": true
     >             },
     >             {
@@ -422,6 +436,20 @@ For more information on how to update to version 2, see [Update Connector Versio
     >             {
     >                 "sourcePath": "$['urn:sap:params:scim:schemas:extension:sac:2.0:group-custom-parameters']",
     >                 "targetPath": "$['urn:sap:params:scim:schemas:extension:sac:2.0:group-custom-parameters']",
+    >                 "optional": true
+    >             },
+    >             {   "condition": "'%ips.application.id%' !== 'null'",
+    >                 "constant": "%ips.application.id%",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
     >                 "optional": true
     >             }
     >         ]

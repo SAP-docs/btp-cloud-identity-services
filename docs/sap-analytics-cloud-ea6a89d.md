@@ -338,7 +338,7 @@ For more information on how to update to version 2, see [Update Connector Versio
     > ```
     > {
     >     "user": {
-    >         "condition": "($.emails[0].value EMPTY false) && isValidEmail($.emails[0].value)",
+    >         "condition": "isValidEmail($.emails[0].value) && (('%sac.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%sac.group.prefix%.*/)] empty false))",
     >         "mappings": [
     >             {
     >                 "sourcePath": "$.schemas",
@@ -404,7 +404,7 @@ For more information on how to update to version 2, see [Update Connector Versio
     >         ]
     >     },
     >     "group": {
-    >         "condition": "('%sac.group.prefix%' === 'null') || ($.displayName =~ /%sac.group.prefix%.*/)",
+    >         "condition": "isAttributeWithOptionalPrefix($.displayName, sac.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], sac.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >         "mappings": [
     >             {
     >                 "sourcePath": "$.schemas",
@@ -421,8 +421,8 @@ For more information on how to update to version 2, see [Update Connector Versio
     >                 "targetPath": "$.id",
     >                 "scope": "createEntity",
     >                 "functions": [
-    >                     {
-    >                         "condition": "('%sac.group.prefix%' !== 'null') && (@ =~ /%sac.group.prefix%.*/)",
+    >                     {  
+    >                         "condition": "isAttributeWithMandatoryPrefix(@, sac.group.prefix)",
     >                         "function": "replaceFirstString",
     >                         "regex": "%sac.group.prefix%",
     >                         "replacement": ""
@@ -434,7 +434,7 @@ For more information on how to update to version 2, see [Update Connector Versio
     >                 "targetPath": "$.displayName",
     >                 "functions": [
     >                     {
-    >                         "condition": "('%sac.group.prefix%' !== 'null') && (@ =~ /%sac.group.prefix%.*/)",
+    >                         "condition": "isAttributeWithMandatoryPrefix(@, sac.group.prefix)",
     >                         "function": "replaceFirstString",
     >                         "regex": "%sac.group.prefix%",
     >                         "replacement": ""
@@ -469,7 +469,7 @@ For more information on how to update to version 2, see [Update Connector Versio
     > ```
     > {
     >   "user": {
-    >     "condition": "($.emails[0].value EMPTY false) && isValidEmail($.emails[0].value)",
+    >     "condition": "isValidEmail($.emails[0].value) && (('%sac.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%sac.group.prefix%.*/)] empty false))",
     >     "mappings": [
     >       {
     >         "constant": [
@@ -586,7 +586,7 @@ For more information on how to update to version 2, see [Update Connector Versio
     >     ]
     >   },
     >   "group": {
-    >     "condition": "('%sac.group.prefix%' === 'null') || ($.displayName =~ /%sac.group.prefix%.*/)",
+    >     "condition": "isAttributeWithOptionalPrefix($.displayName, sac.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], sac.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >     "mappings": [
     >       {
     >         "constant": [
@@ -606,7 +606,7 @@ For more information on how to update to version 2, see [Update Connector Versio
     >         "scope": "createEntity",
     >         "functions": [
     >           {
-    >             "condition": "('%sac.group.prefix%' !== 'null') && (@ =~ /%sac.group.prefix%.*/)",
+    >             "condition": "isAttributeWithMandatoryPrefix(@, sac.group.prefix)",
     >             "function": "replaceFirstString",
     >             "regex": "%sac.group.prefix%",
     >             "replacement": ""
@@ -618,7 +618,7 @@ For more information on how to update to version 2, see [Update Connector Versio
     >         "targetPath": "$.displayName",
     >         "functions": [
     >           {
-    >             "condition": "('%sac.group.prefix%' !== 'null') && (@ =~ /%sac.group.prefix%.*/)",
+    >             "condition": "isAttributeWithMandatoryPrefix(@, sac.group.prefix)",
     >             "function": "replaceFirstString",
     >             "regex": "%sac.group.prefix%",
     >             "replacement": ""

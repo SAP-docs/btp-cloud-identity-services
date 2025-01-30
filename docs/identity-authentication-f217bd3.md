@@ -595,9 +595,9 @@ To create Identity Authentication as a target system, proceed as follows:
     >         "type": "remove"
     >       },
     >       {
-    >         "sourcePath": "$.emails[*].value",
+    >         "sourcePath": "$.emails[*].['value','display','primary']",
     >         "preserveArrayWithSingleElement": true,
-    >         "targetPath": "$.emails[?(@.value)]"
+    >         "targetPath": "$.emails"
     >       },
     >       {
     >         "sourcePath": "$.name.givenName",

@@ -10,9 +10,9 @@ Follow this procedure to set up the SAP BTP XS Advanced UAA \(running on SAP BTP
 
 ## Prerequisites
 
--   You have created API credentials which enable you to access the APIs of SAP Authorization and Trust Management service. For more information, see [Accessing Administration Using APIs of the SAP Authorization and Trust Management Service](https://help.sap.com/docs/btp/sap-business-technology-platform/accessing-administration-using-apis-of-sap-authorization-and-trust-management-service?version=Cloud).
-
 -   You have a global account in SAP BTP cockpit with a multi-environment subaccount and Cloud Foundry applications for which you have been subscribed.
+
+-   You have created credentials to call the REST APIs of the SAP Authorization and Trust Management service on global account, subaccount, or directory level. For more information, see: [Get Access to the APIs](https://help.sap.com/docs/btp/sap-business-technology-platform/get-access-to-apis) and [btp create security/api-credential](https://help.sap.com/docs/btp/btp-cli-command-reference/btp-create-security-api-credential).
 
 
 > ### Note:  
@@ -24,14 +24,19 @@ Follow this procedure to set up the SAP BTP XS Advanced UAA \(running on SAP BTP
 
 ## Context
 
-In simple terms, XS Advanced is basically the Cloud Foundry open-source PaaS with a number of tweaks and extensions provided by SAP. These SAP enhancements include integration with the SAP HANA database, OData support, compatibility with XS classic model, and some additional features designed to improve application security. XS Advanced also provides support for business applications that are composed of multiple micro-services, also known as multi-target applications.
+You can use Identity Provisioning to configure SAP BTP XS Advanced UAA as a proxy system in hybrid scenarios. For example, when SAP BTP XS Advanced UAA is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. Upon provisioning platform users, business users and groups \(considered role collections in SAP BTP\) to the external backend system, it will trigger CRUD \(create, read, update, delete\) operations on users back to the SAP BTP XS Advanced UAA.
 
-SAP BTP XS Advanced UAA is responsible for the connection of identity providers with business users \(for applications\). SAP BTP XS Advanced UAA provides authorizations on application level: *role collections*, *roles*, *attributes*, and *role templates*. To learn more, see: [What Is the SAP Authorization and Trust Management Service?](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/649961f8d4ad463daca33b3a20deba4c.html)
+Create a separate proxy system for each global account, multi-environment subaccount and directory on SAP BTP, and configure the respective credentials and connectivity properties. Depending on where you want to provision your entities, you need to:
 
-You can use SAP BTP XS Advanced UAA as a proxy connector to execute *hybrid* scenarios. That means, it can provision its entities to another \(external\) back-end system by request, and then can continue executing CRUD operations back to SAP BTP XS Advanced UAA, whenever the external back-end requests such.
+-   Create a proxy system for the global account to provision **platform users** and groups.
 
-> ### Remember:  
-> You can manage users and groups to SAP BTP XS Advanced UAA on **application** level only. You cannot manage them on a *subaccount* level.
+-   Create a proxy system for the directory to provision **platform users** and groups.
+
+-   Create a proxy system for the subaccount to provision **platform users**, **business users** and groups.
+
+
+> ### Note:  
+> Provisioning of platform users as **org members** and **space members** requires the usage of a different connector: SAP BTP Platform Members \(Cloud Foundry\). For more information, see [SAP BTP Platform Members \(Cloud Foundry\)](sap-btp-platform-members-cloud-foundry-93807cf.md).
 
 > ### Note:  
 > The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users and groups. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
@@ -104,7 +109,7 @@ You can use SAP BTP XS Advanced UAA as a proxy connector to execute *hybrid* sce
     > 
     > We recommend that you use the *Properties* tab. Use a connectivity destination only if you need to reuse one and the same configuration for multiple provisioning systems.
 
-    **Mandatory Properties**
+    **Properties**
 
 
     <table>
@@ -182,7 +187,12 @@ You can use SAP BTP XS Advanced UAA as a proxy connector to execute *hybrid* sce
     
     Enter the URL to the OAuth2 token service in the following format:
 
-    <code>https://<i class="varname">&lt;my-subdomain&gt;</i>.authentication.<i class="varname">&lt;region&gt;</i>.hana.ondemand.com/oauth/token</code>
+    -   <code>https://<i class="varname">&lt;global_account_subdomain&gt;</i>.authentication.region.hana.ondemand.com/oauth/token</code>
+
+    -   <code>https://<i class="varname">&lt;subaccount_subdomain&gt;</i>.authentication.region.hana.ondemand.com/oauth/token</code>
+
+    -   <code>https://<i class="varname">&lt;directory_subdomain&gt;</i>.authentication.region.hana.ondemand.com/oauth/token</code>
+
 
     For more information, see [Call an API](https://help.sap.com/docs/btp/sap-business-technology-platform/call-api?version=Cloud).
     
@@ -196,7 +206,7 @@ You can use SAP BTP XS Advanced UAA as a proxy connector to execute *hybrid* sce
     </td>
     <td valign="top">
     
-    Enter the OAuth client ID you have created as a prerequisite.
+    Enter the respective OAuth client ID that was generated when you created credentials for each global account, subaccount and directory.
 
     For more information, see [Get Access to the APIs](https://help.sap.com/docs/btp/sap-business-technology-platform/get-access-to-apis?version=Cloud).
     
@@ -210,7 +220,7 @@ You can use SAP BTP XS Advanced UAA as a proxy connector to execute *hybrid* sce
     </td>
     <td valign="top">
     
-    \(Credential\) Enter the OAuth client secret you have created as a prerequisite.
+    \(Credential\) Enter the respective OAuth client secret that was generated when you created credentials for each global account, subaccount and directory.
 
     For more information, see [Get Access to the APIs](https://help.sap.com/docs/btp/sap-business-technology-platform/get-access-to-apis?version=Cloud).
     
@@ -224,16 +234,18 @@ You can use SAP BTP XS Advanced UAA as a proxy connector to execute *hybrid* sce
     </td>
     <td valign="top">
     
-    Enter the location of your identity provider. To do this:
+    Enter the Origin Key of your identity provider.
 
-    1.  Open your SAP BTP cockpit.
-    2.  Go to your Cloud Foundry global account and choose your subaccount.
-    3.  From the left-side navigation, choose *Trust Configuration*.
-    4.  Copy/paste the *Origin Key* value.
+    -   Identity provider for platform users:
 
-    This value will be used as the *origin* attribute in the system transformation.
+        In the SAP BTP cockpit, go to your global account \(see [Navigate in the Cockpit](https://help.sap.com/docs/btp/sap-business-technology-platform/navigate-in-cockpit?version=Cloud)\), choose *Security* \> *Trust Configuration* and copy the *Origin Key* value used for platform users. This origin key always ends with `-platform`.
 
-    For more information, see [Configure Single and Multiple Origins](configure-single-and-multiple-origins-e5c5900.md)
+    -   Identity provider for business users:
+
+        In the SAP BTP cockpit, go to your subaccount \(see [Navigate in the Cockpit](https://help.sap.com/docs/btp/sap-business-technology-platform/navigate-in-cockpit?version=Cloud)\), choose *Security* \> *Trust Configuration* and copy the *Origin Key* value used for business \(application\) users. For example: sap.custom
+
+
+    For more information about users with multiple origins, see [Configure Single and Multiple Origins](configure-single-and-multiple-origins-e5c5900.md).
     
     </td>
     </tr>
@@ -337,13 +349,12 @@ You can use SAP BTP XS Advanced UAA as a proxy connector to execute *hybrid* sce
 
     Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP BTP XS Advanced UAA* proxy system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
-    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP BTP XS Advanced UAA system. For more information, see:
+    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP BTP XS Advanced UAA system. For more information, see [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md) and the API documentation.
 
-    [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
+    -   [User Management \(System for Cross-domain Identity Management \(SCIM\)\)](https://api.sap.com/api/PlatformAPI/resource/SCIM_groups_role_collections)- SCIM groups - role collections
 
-    [User Management \(System for Cross-domain Identity Management \(SCIM\)\)](https://api.sap.com/api/PlatformAPI/resource/SCIM_groups_role_collections)- SCIM groups - role collections
+    -   [User Management \(System for Cross-domain Identity Management \(SCIM\)\)](https://api.sap.com/api/PlatformAPI/resource/SCIM_users_shadow_users) - SCIM users - shadow users
 
-    [User Management \(System for Cross-domain Identity Management \(SCIM\)\)](https://api.sap.com/api/PlatformAPI/resource/SCIM_users_shadow_users) - SCIM users - shadow users
 
     Default read and write transformations:
 
@@ -678,4 +689,6 @@ To see an example with SAP Identity Management, see [Hybrid Scenario: SAP Identi
 
 
 [XS CLI: User Administration](https://help.sap.com/viewer/4505d0bdaf4948449b7f7379d24d0f0d/latest/en-US/4b38012ac63141bfa15bc1cb6418cc6a.html)
+
+[SAP BTP Integration Scenario](https://help.sap.com/docs/cloud-identity/system-integration-guide/sap-btp-integration-scenario?version=Cloud)
 

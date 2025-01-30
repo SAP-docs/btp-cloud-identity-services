@@ -388,6 +388,11 @@ To create Local Identity Directory as a proxy system, proceed as follows:
     >         "targetPath": "$.schemas"
     >       },
     >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']",
+    >         "optional": true
+    >       },
+    >       {
     >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
     >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
     >         "optional": true

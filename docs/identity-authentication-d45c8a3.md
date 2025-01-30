@@ -1074,9 +1074,9 @@ To create Identity Authentication as a proxy system, proceed as follows:
     >         "optional": true
     >       },
     >       {
-    >         "sourcePath": "$.emails[*].value",
+    >         "sourcePath": "$.emails[*].['value','display','primary']",
     >         "preserveArrayWithSingleElement": true,
-    >         "targetPath": "$.emails[?(@.value)]"
+    >         "targetPath": "$.emails"
     >       },
     >       {
     >         "sourcePath": "$.userType",

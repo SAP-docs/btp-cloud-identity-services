@@ -140,7 +140,6 @@ To create Local Identity Directory as a source system, proceed as follows:
 
     > ### Code Syntax:  
     > ```
-    > 
     > {
     >     "user": {
     >         "mappings": [
@@ -189,9 +188,9 @@ To create Local Identity Directory as a source system, proceed as follows:
     >                 "optional": true
     >             },
     >             {
-    >                 "sourcePath": "$.emails[*].value",
+    >                 "sourcePath": "$.emails",
     >                 "preserveArrayWithSingleElement": true,
-    >                 "targetPath": "$.emails[?(@.value)]"
+    >                 "targetPath": "$.emails"
     >             },
     >             {
     >                 "sourcePath": "$.emails[?(@.primary== true)].value",
@@ -329,6 +328,11 @@ To create Local Identity Directory as a source system, proceed as follows:
     >                 "sourcePath": "$.members",
     >                 "targetPath": "$.members",
     >                 "preserveArrayWithSingleElement": true,
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']",
     >                 "optional": true
     >             },
     >             {

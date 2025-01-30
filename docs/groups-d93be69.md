@@ -239,8 +239,7 @@ You can
 -   View the group details and group members.
 -   Add new entities, users, and groups, as group members.
 -   Remove entities, users, and groups, from the group members.
--   Nest groups.
--   You **can't** modify or delete the group.
+-   You can't modify or delete the group.
 
 
 
