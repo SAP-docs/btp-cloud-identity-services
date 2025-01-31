@@ -171,6 +171,77 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Invalid mapping in SAP AS ABAP
+
+</td>
+<td valign="top">
+
+An invalid mapping containing the `valueMapping` type has been removed from the SAP AS ABAP read and proxy read transformations. Systems created before January 14, 2025, will need to fix this issue by following the instructions in SAP Note [3562746](https://me.sap.com/notes/3562746).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-01-29
+
+</td>
+<td valign="top">
+
+2025-01-29
+
+</td>
+<td valign="top">
+
+2501a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Group Provisioning
 
 </td>
