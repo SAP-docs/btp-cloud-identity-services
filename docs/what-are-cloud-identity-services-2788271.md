@@ -28,7 +28,7 @@ SAP Cloud Identity Services are available for consumption with the following SAP
 <dl>
 <dt><b>
 
-Authentication and SSO
+Authentication and SSO 
 
 </b></dt>
 <dd>
@@ -39,56 +39,23 @@ Choose one of the supported authentication methods to control access to your app
 
 </dd><dt><b>
 
-Risk-Based Authentication
-
-</b></dt>
-<dd>
-
-Help enforce two-factor authentication based on IP ranges, user groups, user type, or authentication method to manage access to a business application.
-
-
-
-</dd><dt><b>
-
-Delegate Authentication
-
-</b></dt>
-<dd>
-
-Delegate authentication to a 3rd party or on-premise IdP, as default or based on a condition like IdP, email domain, user type or user group, and thus enable SSO across on-premise and the cloud.
-
-
-
-</dd><dt><b>
-
-Policy-Based Authorizations
-
-</b></dt>
-<dd>
-
-Develop SAP BTP applications with instance-based authorizations. Configure those instance-based authorizations centrally as policies within SAP Cloud Identity Services.
-
-
-
-</dd><dt><b>
-
 Data Persistence 
 
 </b></dt>
 <dd>
 
-Store and manage users and groups in identity directory - the user store of SAP Cloud Identity Services.
+Store and manage users and groups in Identity Directory - the user store of SAP Cloud Identity Services.
 
 
 
 </dd><dt><b>
 
-User and Group Provisioning 
+Delegate Authentication 
 
 </b></dt>
 <dd>
 
-Synchronize users and groups between multiple supported cloud and on-premise systems, both SAP and non-SAP. Filter data. Run jobs in full and delta read mode.
+Delegate authentication to a 3rd party or on-premise IdP, as default or based on a condition like IdP, email domain, user type or user group, and thus enable SSO across on-premise and the cloud.
 
 
 
@@ -105,12 +72,45 @@ View and manage job logs and real-time provisioning logs. Subscribe to source sy
 
 </dd><dt><b>
 
+Policy-Based Authorizations 
+
+</b></dt>
+<dd>
+
+Develop SAP BTP applications with instance-based authorizations. Configure those instance-based authorizations centrally as policies within SAP Cloud Identity Services.
+
+
+
+</dd><dt><b>
+
+Risk-Based Authentication 
+
+</b></dt>
+<dd>
+
+Help enforce two-factor authentication based on IP ranges, user groups, user type, or authentication method to manage access to a business application.
+
+
+
+</dd><dt><b>
+
 User and Group Management via API 
 
 </b></dt>
 <dd>
 
 Use SCIM REST API to manage users and groups, invite users, customize end-user UI texts in any language.
+
+
+
+</dd><dt><b>
+
+User and Group Provisioning 
+
+</b></dt>
+<dd>
+
+Synchronize users and groups between multiple supported cloud and on-premise systems, both SAP and non-SAP. Filter data. Run jobs in full and delta read mode.
 
 
 
