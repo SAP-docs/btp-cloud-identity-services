@@ -467,6 +467,19 @@ If you've successfully finished with the initial setup \(described in the **Prer
     >         "constant": "value",
     >         "type": "rename",
     >         "optional": true
+    >       },
+    >       {
+    >         "condition": "'%ips.application.id%' !== 'null'",
+    >         "constant": "%ips.application.id%",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+    >       },
+    >       {
+    >         "constant": "userGroup",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >       },
+    >       {
+    >         "constant": "readWrite",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
     >       }
     >     ]
     >   }

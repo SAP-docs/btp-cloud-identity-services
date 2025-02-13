@@ -1,6 +1,6 @@
 <!-- loioa9ff3e3d5c9e4062860499e05259e31a -->
 
-# Create and Manage Application-Specific Groups by the Identity Provisioning Service
+# Manage Application-Specific Groups by Identity Provisioning
 
 By running provisioning jobs, you can create application-specific groups in the Identity Directory of your SAP Cloud Identity Services tenant and provision them afterward to target systems of your choice.
 
@@ -27,7 +27,7 @@ Each application-specific group contains information about the application to wh
 Another specific attribute for these groups is `supportedOperations`. The purpose of this attribute is to specify what are the supported operations by the Identity Provisioning for each application-specific group. For more information, see [Groups](../groups-d93be69.md).
 
 > ### Note:  
-> Currently, application-specific groups are supported for SAP Advanced Financial Closing, SAP Ariba Applications, and Local Identity Directory provisioning systems.
+> Currently, application-specific groups are supported for SAP Advanced Financial Closing, SAP Ariba Applications, SAP Analytics Cloud, SAP Application Server ABAP, SAP Ariba Central Invoice Management, SAP Sales Cloud and SAP Service Cloud, Microsoft Entra ID, and Local Identity Directory provisioning systems.
 
 Below is described the result from each operation with an application-specific group executed by the Identity Provisioning, depending on the value of its attribute `supportedOperations`.
 
@@ -37,9 +37,9 @@ Below is described the result from each operation with an application-specific g
 
 ## Create Application-Specific Groups
 
-By running provisioning jobs from your source system, you can create application-specific groups with value `ReadWrite` for the attribute `supportedOperations` in the target systems of your choice.
+By running provisioning jobs from your source system, you can create application-specific groups in the Identity Directory of your SAP Cloud Identity Services tenant.
 
-The attempt to create this special kind of group with another value for the attribute `supportedOperations` will not be successful. If a group with matching attributes exists in the target system, the group is displayed as *Skipped* in the job log statistics for the source system. Otherwise, the provisioning job fails with an exception.
+When you configure Local Identity Directory as source system and you try to create a group that already exists in the target system with matching attributes and `supportedOperations` attribute value `userOnlyMembership` or `membership`, its group members are updated. In case the attribute `supportedOperations` has value `readOnly` for the group, it is displayed as *Skipped* in the job log statistics for the source system.
 
 
 
@@ -49,7 +49,7 @@ The attempt to create this special kind of group with another value for the attr
 
 If you update a user group assignment or a group itself in your source application, when you run a read or resync job the Identity Provisioning tries to search and resolve this group in the target system.
 
-In case such group is found, depending on the value of the attribute `supportedOperations` this will result in:
+In case such application-specific group is found, depending on the value of the attribute `supportedOperations` this will result in:
 
 -   `readOnly` - The group is displayed as *Skipped* in the job log statistics for the source system.
 -   `readWrite` - The attributes of the group and its members are updated.
@@ -64,16 +64,14 @@ If such group is not found, the job fails with an exception.
 
 ## Delete Application-Specific Groups
 
-The deletion of application-specific groups from a target system after they have been deleted from your source system requires setting the property `ips.delete.existedbefore.entities` = *true* in the target. For more information, see [List of Properties](../list-of-properties-d6f3577.md).
-
-The setting of the property must be done **before** the job to delete those groups from the target system is executed. If it is done afterwards, groups recognized as "previously existed ones" cannot be deleted from the target system by a provisioning job anymore. In this case, you need to delete them from the target system \(for example, manually or via script\).
+The deletion of application-specific groups from a target system after they have been deleted from your source system requires setting the property `ips.delete.existedbefore.entities` = *true* in the target. The setting of the property must be done **before** the job to delete those groups from the target system is executed. For more information, see [List of Properties](../list-of-properties-d6f3577.md).
 
 In case you have set the `ips.delete.existedbefore.entities` property before running the provisioning job, depending on the value of the attribute `supportedOperations`, expect the following results:
 
 -   `readOnly` - The group is displayed as *Skipped* in the job log statistics.
 -   `readWrite` - The group is deleted.
 -   `userOnlyMembership` - The group members that are users are deleted. The group is displayed as *Deleted* in the job log statistics.
--   `membership` - The group members, both users and groups, are deleted. The group is displayed as Skipped in the job log statistics.
+-   `membership` - The group members, both users and groups, are deleted. The group is displayed as *Skipped* in the job log statistics.
 
 If the property `ips.delete.existedbefore.entities` is missing or set to *false*, the Identity Provisioning will not attempt to delete the group and no record will be displayed in the job log statistics.
 
@@ -83,11 +81,14 @@ If the property `ips.delete.existedbefore.entities` is missing or set to *false*
 
 ## Central Store-Based Provisioning
 
-You can configure central store-based provisioning to immediately provision updates of an application-specific groups from the Local Identity Directory to a target system of your choise. This feature allows you to synchronize updated application-specific groups in the Local Identity Directory without the need to run manual or scheduled jobs in the Identity Provisioning.
+This feature allows you to synchronize updates related to user assignments to application-specific groups and group attribute values between the Local Identity Directory and a target system with set property `ips.application.id`. Those groups can be initially provisioned to the Identity Directory from a source system by a provisioning job or created in the administration console for SAP Cloud Identity Services. You can enable central store-based provisioning to immediately provision updates of such application-specific groups or attribute values from the Local Identity Directory as source to the target system with the relevant `application ID`. The changes are provisioned to the target system without the need to run manual or scheduled jobs in the Identity Provisioning.
 
-The central store-based provisioning process of application-specific groups involves the following set-ups. First, you need a source application which triggers the real-time sync when changes occur. Second, you must configure a Local Identity Directory as a source system. Finally, you need to add a target system in the Identity Provisioning, where the real-time changes will be synchronized and reflected immediately.
+When the central-store based provisioning is enabled, groups that do not exist in the target will only will only be created after an update is made to the group in the source. This update could involve assigning users or modifying group attributes. Newly created groups in the Identity Directory source system are not provisioned unless changes occur. This applies to application-specific groups of all supported user types: `userGroup`, `authorization` and `deepLinkActivationPermission`, with the supported operation `readWrite`.
 
-In this scenario we assume that there are existing applications in the SAP Cloud Identity Services tenant and application-specific groups in the Local Identity Directory, which are provisioned from the customer's user store or created in Cloud Identity services.
+> ### Note:  
+> Application-specific groups with supported operations `readOnly`, `userOnlyMembership` and `membership` will not be created even if updates are made to the groups. If you try to provision such groups, you will get an ***Entity Failed*** status.
+
+This is the required configuration for enabling the central store-based provisioning. First, you need an application which triggers the real-time sync when changes occur. Second, you must configure a Local Identity Directory as a source system. Finally, you need a target system with set `ips.application.id` property in the Identity Provisioning, where the real-time changes will be synchronized and reflected immediately.
 
 The following example uses Local Identity Directory as source system and SAP Advanced Financial Closing as target system to describe the required configuration.
 
@@ -107,7 +108,7 @@ Perform the following steps:
 7.  Set the property `ips.application.id` for the target system. For more information, see [List of Properties](../list-of-properties-d6f3577.md).
 8.  Start a read job from the *Local Identity Directory* source system.
 
-9.  Navigate to your application in the administration console for SAP Cloud Identity Services under *Applications & Resources* \> *Applications* and enable the *Central Store-Based Provisioning*. For more information, see [Enable or Disable Central Store-Based Provisioning](enable-or-disable-central-store-based-provisioning-657bbaa.md).
+9.  Navigate to your application in the administration console for SAP Cloud Identity Services under *Applications & Resources* \> *Applications* and enable the *Central Store-Based Provisioning*. For more information, see **Enable or Disable Central Store-Based Provisioning LINK**.
 
 After the procedure is executed, each change of an attribute value or a member of an application-specific group in the *Local Identity Directory* triggers instant provisioning of the modified entity to the configured target system.
 

@@ -274,6 +274,27 @@ For more information on how to update to version 2, see [Update Connector Versio
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    \(Optional\) `ips.http.header.x-ignore-roles-if-missing`
+    
+    </td>
+    <td valign="top">
+    
+    Use this property to control whether teams \(meaning groups\) should keep their role assignments in SAP Analytics Cloud when no roles for a team are provisioned.
+
+    Possible values:
+
+    -   true - Тeams will keep their role assignments when no roles are provisioned.
+
+    -   false - Тeams will lose their role assignments when no roles are provisioned. This is the default value.
+
+
+    For more information, see SAP note [3092730](https://me.sap.com/notes/3092730).
+    
+    </td>
+    </tr>
     </table>
     
     To learn what additional properties are relevant to this system, see [List of Properties](list-of-properties-d6f3577.md). You can use the main search, or filter properties by the *Name* or *System Type* columns.
@@ -930,12 +951,12 @@ For more information on how to update to version 2, see [Update Connector Versio
     </table>
     
     > ### Caution:  
-    > When provisioning users and groups between SAP Analytics Cloud exposed as a proxy system and an external system, such as SAP Identity Management, groups are mapped to teams in SAP Analytics Cloud. Those teams can then get role assignments in SAP Analytics Cloud.
+    > When running a provisioning job to update teams \(meaning groups\) that have role assignments in SAP Analytics Cloud, those role assignments will be removed as a result of the update. This behavior, which can cause permission issues for users, is expected because SAP Analytics Cloud role assignments are not available as group parameters in some source systems, such as Identity Authentication.
     > 
-    > If in the external system you run an update job \(in the case of SAP Identity Management this is a modify process\), role assignments of SAP Analytics Cloud teams will be removed as a result of the PUT operation being executed. This behavior \(causing permission issues for users\) is expected, as SAP Analytics Cloud role assignments are not available as group parameters in some external identity management systems. To avoid this, you need to change the *Write Transformation* of the *SAP Analytics Cloud* proxy system, as described in SAP Note [3027079](https://me.sap.com/notes/3027079).
+    > To keep the existing role assignments when updating teams, set the`ips.http.header.x-ignore-roles-if-missing` property to *true* in the SAP Analytics Cloud target system. For more information, see the properties table above and the SAP note [3092730](https://me.sap.com/notes/3092730).
 
     > ### Note:  
-    > Updating a user in SAP Analytics Cloud using SCIM API version 2 depends on whether user attributes in SAP Analytics Cloud are mapped to SAML attributes in your identity provider. If this is the case, the values of those attributes are populated by the identity provider and cannot be changed by the SAP Analytics SCIM API or the UI. For more information, see [Map SAML Attributes to Users](https://help.sap.com/doc/00f68c2e08b941f081002fd3691d86a7/2021.20/en-US/5e917dc3fc8f42828d4dfa850e78c913.html)
+    > Updating a user in SAP Analytics Cloud using SCIM API version 2 depends on whether user attributes in SAP Analytics Cloud are mapped to SAML attributes in your identity provider. If this is the case, the values of those attributes are populated by the identity provider and cannot be changed by the SAP Analytics SCIM API or the UI. For more information, see [Mapping SAML Attributes to Users](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/b385d1af93444e9fbc6439d2c6b3c1a7.html#map-saml-attributes-to-users).
 
 8.  Connect the external consumer to Identity Provisioning with the technical user you have created in step 2.
 

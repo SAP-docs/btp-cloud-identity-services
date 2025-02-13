@@ -399,9 +399,9 @@ To create Identity Authentication as a proxy system, proceed as follows:
     >         "correlationAttribute": true
     >       },
     >       {
-    >         "sourcePath": "$.emails[*].value",
+    >         "sourcePath": "$.emails",
     >         "preserveArrayWithSingleElement": true,
-    >         "targetPath": "$.emails[?(@.value)]"
+    >         "targetPath": "$.emails"
     >       },
     >       {
     >         "sourcePath": "$.emails[0].value",
@@ -875,9 +875,9 @@ To create Identity Authentication as a proxy system, proceed as follows:
     >         "correlationAttribute": true
     >       },
     >       {
-    >         "sourcePath": "$.emails[*].value",
+    >         "sourcePath": "$.emails",
     >         "preserveArrayWithSingleElement": true,
-    >         "targetPath": "$.emails[?(@.value)]"
+    >         "targetPath": "$.emails"
     >       },
     >       {
     >         "sourcePath": "$.emails[0].value",

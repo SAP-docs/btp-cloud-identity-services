@@ -376,7 +376,8 @@ This scenario supports provisioning users and groups.
     >       },
     >       {
     >         "sourcePath": "$.active",
-    >         "targetPath": "$.active"
+    >         "targetPath": "$.active",
+    >         "optional": true
     >       },
     >       {
     >         "sourcePath": "$.userType",
@@ -396,6 +397,21 @@ This scenario supports provisioning users and groups.
     >       {
     >         "sourcePath": "$.displayName",
     >         "targetPath": "$.displayName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.nickName",
+    >         "targetPath": "$.nickName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.title",
+    >         "targetPath": "$.title",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.preferredLanguage",
+    >         "targetPath": "$.preferredLanguage",
     >         "optional": true
     >       },
     >       {
@@ -427,7 +443,8 @@ This scenario supports provisioning users and groups.
     >       },
     >       {
     >         "sourcePath": "$.externalId",
-    >         "targetPath": "$.externalId"
+    >         "targetPath": "$.externalId",
+    >         "optional": true
     >       },
     >       {
     >         "sourcePath": "$.schemas",
@@ -437,6 +454,16 @@ This scenario supports provisioning users and groups.
     >       {
     >         "sourcePath": "$.displayName",
     >         "targetPath": "$.displayName"
+    >       },
+    >       {
+    >         "sourcePath": "$.['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "targetPath": "$.['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "targetPath": "$.['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true
     >       },
     >       {
     >         "sourcePath": "$.members",

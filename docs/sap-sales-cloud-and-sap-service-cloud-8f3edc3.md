@@ -245,7 +245,6 @@ This scenario is relevant for existing SAP Sales Cloud and SAP Service Cloud cus
 
     > ### Code Syntax:  
     > ```
-    > 
     > {
     >   "user": {
     >     "mappings": [
@@ -298,7 +297,7 @@ This scenario is relevant for existing SAP Sales Cloud and SAP Service Cloud cus
     >       {
     >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']",
     >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']"
-    >      },
+    >       },
     >       {
     >         "sourcePath": "$.groups",
     >         "targetPath": "$.groups",
@@ -332,6 +331,20 @@ This scenario is relevant for existing SAP Sales Cloud and SAP Service Cloud cus
     >             "prefix": "%c4c.group.prefix%"
     >           }
     >         ]
+    >       },
+    >       {
+    >         "sourcePath": "$.['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "targetPath": "$.['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "targetPath": "$.['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true
+    >       },
+    >       {  "condition": "'%ips.application.id%' !== 'null'",
+    >          "constant": "%ips.application.id%",
+    >          "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
     >       },
     >       {
     >         "sourcePath": "$.members",

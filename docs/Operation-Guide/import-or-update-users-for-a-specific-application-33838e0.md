@@ -20,6 +20,9 @@ As a tenant administrator, you can import new users or update existing ones for 
 
 ## Context
 
+> ### Note:  
+> The recommended approach to import users is via a CSV file upload. For more information, see [Import CSV File with Full User Profile](import-csv-file-with-full-user-profile-f54b900.md).
+
 By importing new users with a CSV file, you create user profiles without passwords in Identity Authentication. As a result, the users receive emails with instructions how to activate their accounts. After the users set their passwords, they can log on to the application for which they were imported. Based on the user access configuration of the application, the users can log on to other applications connected with the tenant in Identity Authentication.
 
 In addition to the new user import, you can specify existing users in the imported CSV file. You thus define the users to be updated in Identity Authentication.

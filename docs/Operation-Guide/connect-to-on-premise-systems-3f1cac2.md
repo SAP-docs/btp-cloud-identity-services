@@ -10,7 +10,7 @@ Set up the connection to on-premise systems when your Identity Provisioning bund
 
 ## Prerequisites
 
--   You have installed the Cloud Connector \(for SAP BTP, Cloud Foundry environment\), and have done the initial configuration. For more information, see [Cloud Connector](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/e6c7616abb5710148cfcf3e75d96d596.html).
+-   You have installed the Cloud Connector \(for SAP BTP multi-environment subaccount\), and have done the initial configuration. For more information, see [Cloud Connector](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/e6c7616abb5710148cfcf3e75d96d596.html).
 
 
 
@@ -271,7 +271,7 @@ If your provisioning scenarios involve on-premise systems, this requires a separ
     This creates a subscription to Cloud Identity Services connectivity plan and creates a binding to your Identity Authentication tenant and your Identity Provisioning service.
 
     > ### Note:  
-    > You can have two separate Cloud Foundry subaccounts per region: one of them configured for *Productive* connections and the other for *Test* connections. While it is allowed to create multiple Cloud Foundry subaccounts per one region and per one type \(test or productive\), be aware that in this case only the first one where the connectivity plan was enabled will be used by Identity Provisioning.
+    > You can have two separate SAP BTP multi-environment subaccounts per region: one of them configured for *Productive* connections and the other for *Test* connections. While it is allowed to create multiple Cloud Foundry subaccounts per one region and per one type \(test or productive\), be aware that in this case only the first one where the connectivity plan was enabled will be used by Identity Provisioning.
     > 
     > The service instance types *Test* and *Productive* map to the tenant types displayed in the *SAP Cloud Identity Services - Tenants* application which is accessible at [https://iamtenants.accounts.cloud.sap/](https://iamtenants.accounts.cloud.sap/).
 

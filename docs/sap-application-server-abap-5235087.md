@@ -728,6 +728,18 @@ SAP Application Server ABAP \(AS ABAP\) offers a user store and user administrat
     >         "preserveArrayWithSingleElement": true,
     >         "targetPath": "$.members[?(@.value)]",
     >         "optional": true
+    >       },
+    >       {  "condition": "'%ips.application.id%' !== 'null'",
+    >          "constant": "%ips.application.id%",
+    >          "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+    >       },
+    >       {
+    >         "constant": "authorization",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >       },
+    >       {
+    >         "constant": "readWrite",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
     >       }
     >     ]
     >   }

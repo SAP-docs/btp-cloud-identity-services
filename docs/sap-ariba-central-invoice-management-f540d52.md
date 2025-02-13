@@ -216,143 +216,174 @@ SAP Ariba Central Invoice Management is an SAP BTP SaaS application running on S
     > ### Code Syntax:  
     > ```
     > {
-    >    "user":{
-    >       "mappings":[
-    >          {
-    >             "sourcePath":"$.id",
-    >             "targetVariable":"entityIdSourceSystem"
-    >          },
-    >          {
-    >             "sourcePath":"$.schemas",
-    >             "targetPath":"$.schemas",
-    >             "preserveArrayWithSingleElement":true
-    >          },
-    >          {
-    >             "sourcePath":"$.userName",
-    >             "targetPath":"$.userName",
-    >             "correlationAttribute":true
-    >          },
-    >          {
-    >             "sourcePath":"$.externalId",
-    >             "targetPath":"$.externalId",
-    >             "optional":true
-    >          },
-    >          {
-    >             "sourcePath":"$.name.givenName",
-    >             "targetPath":"$.name.givenName",
-    >             "optional":true
-    >          },
-    >          {
-    >             "sourcePath":"$.name.middleName",
-    >             "targetPath":"$.name.middleName",
-    >             "optional":true
-    >          },
-    >          {
-    >             "sourcePath":"$.name.familyName",
-    >             "targetPath":"$.name.familyName",
-    >             "optional":true
-    >          },
-    >          {
-    >             "sourcePath":"$.name.formatted",
-    >             "targetPath":"$.name.formatted",
-    >             "optional":true
-    >          },
-    >          {
-    >             "sourcePath":"$.name.honorificPrefix",
-    >             "targetPath":"$.name.honorificPrefix",
-    >             "optional":true
-    >          },
-    >          {
-    >             "sourcePath":"$.name.honorificSuffix",
-    >             "targetPath":"$.name.honorificSuffix",
-    >             "optional":true
-    >          },
-    >          {
-    >             "sourcePath":"$.emails",
-    >             "targetPath":"$.emails",
-    >             "optional":true,
-    >             "preserveArrayWithSingleElement":true
-    >          },
-    >          {
-    >             "sourcePath":"$.emails[?(@.primary== true)].value",
-    >             "optional":true,
-    >             "correlationAttribute":true
-    >          },
-    >          {
-    >             "sourcePath":"$.active",
-    >             "targetPath":"$.active"
-    >          },
-    >          {
-    >             "sourcePath":"$.userType",
-    >             "targetPath":"$.userType",
-    >             "optional":true
-    >          },
-    >          {
-    >             "sourcePath":"$.locale",
-    >             "targetPath":"$.locale",
-    >             "optional":true
-    >          },
-    >          {
-    >             "sourcePath":"$.timezone",
-    >             "targetPath":"$.timezone",
-    >             "optional":true
-    >          },
-    >          {
-    >             "sourcePath":"$.displayName",
-    >             "targetPath":"$.displayName",
-    >             "optional":true
-    >          },
-    >          {
-    >             "sourcePath":"$.groups",
-    >             "targetPath":"$.groups",
-    >             "optional":true,
-    >             "preserveArrayWithSingleElement":true,
-    >             "functions":[
-    >                {
-    >                   "condition":"'%cim.group.prefix%' !== 'null'",
-    >                   "function":"concatString",
-    >                   "applyOnElements":true,
-    >                   "applyOnAttribute":"display",
-    >                   "prefix":"%cim.group.prefix%"
-    >                }
-    >             ]
-    >          }
-    >       ]
-    >    },
-    >    "group":{
-    >       "mappings":[
-    >          {
-    >             "sourcePath":"$.id",
-    >             "targetVariable":"entityIdSourceSystem"
-    >          },
-    >          {
-    >             "sourcePath":"$.externalId",
-    >             "targetPath":"$.externalId"
-    >          },
-    >          {
-    >             "sourcePath":"$.schemas",
-    >             "targetPath":"$.schemas",
-    >             "preserveArrayWithSingleElement":true
-    >          },
-    >          {
-    >             "sourcePath":"$.displayName",
-    >             "targetPath":"$.displayName",
-    >             "functions":[
-    >                {
-    >                   "condition":"'%cim.group.prefix%' !== 'null'",
-    >                   "function":"concatString",
-    >                   "prefix":"%cim.group.prefix%"
-    >                }
-    >             ]
-    >          },
-    >          {
-    >             "sourcePath":"$.members",
-    >             "targetPath":"$.members",
-    >             "optional":true,
-    >             "preserveArrayWithSingleElement":true
-    >          }
-    >       ]
-    >    }
+    >   "user": {
+    >     "mappings": [
+    >       {
+    >         "sourcePath": "$.id",
+    >         "targetVariable": "entityIdSourceSystem"
+    >       },
+    >       {
+    >         "sourcePath": "$.schemas",
+    >         "targetPath": "$.schemas",
+    >         "preserveArrayWithSingleElement": true
+    >       },
+    >       {
+    >         "sourcePath": "$.userName",
+    >         "targetPath": "$.userName",
+    >         "correlationAttribute": true
+    >       },
+    >       {
+    >         "sourcePath": "$.externalId",
+    >         "targetPath": "$.externalId",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.givenName",
+    >         "targetPath": "$.name.givenName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.middleName",
+    >         "targetPath": "$.name.middleName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.familyName",
+    >         "targetPath": "$.name.familyName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.formatted",
+    >         "targetPath": "$.name.formatted",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.honorificPrefix",
+    >         "targetPath": "$.name.honorificPrefix",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.honorificSuffix",
+    >         "targetPath": "$.name.honorificSuffix",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.emails",
+    >         "targetPath": "$.emails",
+    >         "optional": true,
+    >         "preserveArrayWithSingleElement": true
+    >       },
+    >       {
+    >         "sourcePath": "$.emails[?(@.primary== true)].value",
+    >         "optional": true,
+    >         "correlationAttribute": true
+    >       },
+    >       {
+    >         "sourcePath": "$.active",
+    >         "targetPath": "$.active",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.userType",
+    >         "targetPath": "$.userType",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.locale",
+    >         "targetPath": "$.locale",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.nickName",
+    >         "targetPath": "$.nickName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.title",
+    >         "targetPath": "$.title",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.preferredLanguage",
+    >         "targetPath": "$.preferredLanguage",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.timezone",
+    >         "targetPath": "$.timezone",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$.displayName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.groups",
+    >         "targetPath": "$.groups",
+    >         "optional": true,
+    >         "preserveArrayWithSingleElement": true,
+    >         "functions": [
+    >           {
+    >             "condition": "'%cim.group.prefix%' !== 'null'",
+    >             "function": "concatString",
+    >             "applyOnElements": true,
+    >             "applyOnAttribute": "display",
+    >             "prefix": "%cim.group.prefix%"
+    >           }
+    >         ]
+    >       }
+    >     ]
+    >   },
+    >   "group": {
+    >     "mappings": [
+    >       {
+    >         "sourcePath": "$.id",
+    >         "targetVariable": "entityIdSourceSystem"
+    >       },
+    >       {
+    >         "sourcePath": "$.externalId",
+    >         "targetPath": "$.externalId",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.schemas",
+    >         "targetPath": "$.schemas",
+    >         "preserveArrayWithSingleElement": true
+    >       },
+    >       {
+    >         "sourcePath": "$.['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "targetPath": "$.['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "targetPath": "$.['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true
+    >       },
+    >       {  "condition": "'%ips.application.id%' !== 'null'",
+    >          "constant": "%ips.application.id%",
+    >          "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$.displayName",
+    >         "functions": [
+    >           {
+    >             "condition": "'%cim.group.prefix%' !== 'null'",
+    >             "function": "concatString",
+    >             "prefix": "%cim.group.prefix%"
+    >           }
+    >         ]
+    >       },
+    >       {
+    >         "sourcePath": "$.members",
+    >         "targetPath": "$.members",
+    >         "optional": true,
+    >         "preserveArrayWithSingleElement": true
+    >       }
+    >     ]
+    >   }
     > }
     > ```
 

@@ -15,7 +15,7 @@ As a tenant administrator, you can create new users or update existing ones with
 
 ## Context
 
-With the CSV file, you can import up to 25000 users to create new users or to update existing users.
+With the CSV file, you can import up to 25000 users to create new users or to update existing users. This is the recommended approach for importing user.
 
 > ### Remember:  
 > The `SCIM ID` serves as the primary identifier if it is found in the CSV file. The users will only be updated, but not created if there are users with a new `SCIM ID`. This process works within the same tenant because the SCIM IDs differ across tenants.

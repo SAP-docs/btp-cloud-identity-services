@@ -1315,7 +1315,7 @@ In the following example, the value pairs US and New York, US and Dallas, German
 > ### Code Syntax:  
 > ```
 > {
-> 	"sourcePaths": ["$.counry", "$.city"],
+> 	"sourcePaths": ["$.country", "$.city"],
 > 	"defaultValue": "UTC",
 > 	"targetPath": "$.timezone",
 > 	"type": "valueMapping",
@@ -1346,7 +1346,7 @@ In the following example, the value pairs US and New York, US and Dallas, German
 > ```
 
 > ### Note:  
-> Paths to the country and city attributes are provided as exemplary values. These attribute paths might be system-specific. For example, in SAP AS ABAP, the "$.counry" path is "$.ADDRESS.COUNTRY".
+> Paths to the country and city attributes are provided as exemplary values. These attribute paths might be system-specific. For example, in SAP AS ABAP, the "$.country" path is "$.ADDRESS.COUNTRY".
 
 **Data type**: String
 

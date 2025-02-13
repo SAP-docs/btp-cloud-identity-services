@@ -10,8 +10,7 @@ Follow this procedure to set up SAP SuccessFactors Learning as a proxy system.
 
 ## Prerequisites
 
--   You have OAuth credentials for SAP SuccessFactors Learning. For more information, see: [Generating Client ID & Secret](https://help.sap.com/viewer/fsm_admin/Cloud/en-US/generating-client-id.html)
-
+You have created a technical user with administrator permissions that will be used to call the SAP SuccessFactors Learning API for provisioning user information.
 
 > ### Note:  
 > Administrators of bundle tenants on Neo environment should enable the *Manage OAuth Clients* permission, as described in *Neo Environment* section in [Manage Authorizations](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/544de9b504214372b4479dc1f6b08cca.html "Manage the authorizations of Identity Provisioning administrators, when your bundle or standalone tenant is running on SAP BTP, Neo environment.") :arrow_upper_right:.
@@ -229,7 +228,7 @@ You can use the Identity Provisioning user interface \(UI\) to connect to SAP Su
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md).
 
-    SCIM API URL
+    [SAP Business Accelerator Hub: SAP SuccessFactors Learning](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Fapi.sap.com%2Fpackage%2FSuccessFactorsLMSCurriculawithSAPHCMQualification%3Fsection%3DOverview)
 
     Default read and write transformations:
 

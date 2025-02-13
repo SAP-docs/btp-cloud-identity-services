@@ -12,6 +12,9 @@ You can create a new application and customize it to comply with your company re
 
 You can create two types of applications in Identity Authentication:
 
+> ### Note:  
+> There are applications that show the ***SAML 2.0 & OpenID Connect*** protocol type. You can't create such applications.
+
 **Related Information**  
 
 

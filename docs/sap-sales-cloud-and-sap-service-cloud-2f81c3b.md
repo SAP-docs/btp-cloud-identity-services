@@ -422,6 +422,16 @@ In this scenario Identity Provisioning acts as a proxy between SAP Sales Cloud a
     >         "targetPath": "$.displayName"
     >       },
     >       {
+    >         "sourcePath": "$.['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "targetPath": "$.['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "targetPath": "$.['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true
+    >       },
+    >       {
     >         "sourcePath": "$.members",
     >         "optional": true,
     >         "targetPath": "$.members",

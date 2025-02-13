@@ -526,6 +526,7 @@ For more information on how to set up and use the *Identity Provisioning in SAP 
     > 
     > {
     >   "user": {
+    >     "condition": "('%c4c.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%c4c.group.prefix%.*/)] empty false)",
     >     "mappings": [
     >       {
     >         "sourceVariable": "entityIdTargetSystem",
@@ -598,7 +599,7 @@ For more information on how to set up and use the *Identity Provisioning in SAP 
     > // as the groups in C4C. The group deletion operation is skipped. 
     > 
     >   "group": {
-    >     "condition": "('%c4c.group.prefix%' === 'null') || ($.displayName =~ /%c4c.group.prefix%.*/)",
+    >     "condition": "isAttributeWithOptionalPrefix($.displayName, c4c.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], c4c.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >     "skipOperations": [
     >       "delete"
     >     ],
@@ -612,7 +613,7 @@ For more information on how to set up and use the *Identity Provisioning in SAP 
     >         "targetPath": "$.displayName",
     >         "functions": [
     >           {
-    >             "condition": "('%c4c.group.prefix%' !== 'null') && (@ =~ /%c4c.group.prefix%.*/)",
+    >             "condition": "isAttributeWithMandatoryPrefix(@, c4c.group.prefix)",
     >             "function": "replaceFirstString",
     >             "regex": "%c4c.group.prefix%",
     >             "replacement": ""

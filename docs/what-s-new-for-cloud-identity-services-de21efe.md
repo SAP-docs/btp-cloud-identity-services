@@ -100,6 +100,588 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-02-11
+
+</td>
+<td valign="top">
+
+2025-02-11
+
+</td>
+<td valign="top">
+
+2501b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Enforce Nonces for Authentication Requests to Corporate Identity Providers
+
+</td>
+<td valign="top">
+
+Some corporate identity providers require that applications send nonces in their authentication requests. You can enable the service to generate nonces if applications don't provide them.
+
+For more information, [Enforce Nonces for Corporate Identity Providers](https://help.sap.com/docs/cloud-identity-services/identity-authentication-internal/enforcing-nonces-for-corporate-identity-providers).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-02-11
+
+</td>
+<td valign="top">
+
+2025-02-11
+
+</td>
+<td valign="top">
+
+2501b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Disabling ID Token Hints for Corporate Identity Providers During Logout
+
+</td>
+<td valign="top">
+
+Corporate identity providers sometimes have trouble when the ID token is included as a URL parameter in logout requests. With this release, you can disable the inclusion of the URL parameter.
+
+For more information, see [Disable ID Token Hints for Corporate Identity Providers](https://help.sap.com/docs/cloud-identity-services/identity-authentication-internal/disabling-id-token-hints-for-corporate-identity-providers).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-02-11
+
+</td>
+<td valign="top">
+
+2025-02-11
+
+</td>
+<td valign="top">
+
+2501b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Central store-based provisioning
+
+</td>
+<td valign="top">
+
+You can enable central store-based provisioning to immediately provision updates related to user assignments in application-specific groups between the Local Identity Directory and your selected target systems. Changes are provisioned without running manual or scheduled jobs.
+
+For more information, see [Enable or Disable Central Store-Based Provisioning](Operation-Guide/enable-or-disable-central-store-based-provisioning-657bbaa.md) and [Central Store-Based Provisioning](Operation-Guide/manage-application-specific-groups-by-identity-provisioning-a9ff3e3.md#loioa9ff3e3d5c9e4062860499e05259e31a__section_igx_b2c_b2c).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-02-11
+
+</td>
+<td valign="top">
+
+2025-02-11
+
+</td>
+<td valign="top">
+
+2501b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Central store logs
+
+</td>
+<td valign="top">
+
+Central store logs are introduced to provide information about the application-specific groups provisioned from the Identity Directory to target systems.
+
+For more information, see [Monitor Central Store Logs](Monitoring-and-Reporting/monitor-central-store-logs-9162898.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-02-11
+
+</td>
+<td valign="top">
+
+2025-02-11
+
+</td>
+<td valign="top">
+
+2501b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+New conditional function implemented
+
+</td>
+<td valign="top">
+
+The conditional function `isRegularGroup` is implemented to verify whether a given group is a regular user group. It checks consecutively the values of the group attributes `supportedOperations` and `applicationId` and returns a Boolean result.
+
+For more information, see [Transformation Functions](transformation-functions-0cdac7c.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-02-11
+
+</td>
+<td valign="top">
+
+2025-02-11
+
+</td>
+<td valign="top">
+
+2501b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Group mapping changes
+
+</td>
+<td valign="top">
+
+The default transformations of SAP Ariba Central Invoice Management, SAP Sales Cloud and SAP Service Cloud, Microsoft Entra ID, and SAP Application Server ABAP are changed to support the provisioning of application-specific groups.
+
+For more information, refer to the relevant connector documentation under [Supported Systems](supported-systems-81ca0c1.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-02-11
+
+</td>
+<td valign="top">
+
+2025-02-11
+
+</td>
+<td valign="top">
+
+2501b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Provisioning sub-attributes of `emails` attribute
+
+</td>
+<td valign="top">
+
+Changes in the proxy read transformations of Identity Authentication \(version 1 and 2\) and Local Identity Directory ensure that Identity Provisioning now reads all sub-attributes of the `emails` attribute as defined in the SCIM core schema \(that is, `value`, `type`, `primary`, `display`\).
+
+For more information, see [Identity Authentication \(Proxy\)](identity-authentication-d45c8a3.md) and [Local Identity Directory \(Proxy\)](local-identity-directory-0624f7d.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-02-11
+
+</td>
+<td valign="top">
+
+2025-02-11
+
+</td>
+<td valign="top">
+
+2501b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Off-Cycle Upgrade
 
 </td>

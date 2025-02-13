@@ -29,16 +29,38 @@ An SAP Cloud Identity Services tenant is delivered to customers as part of a bun
 
 ### Bundle with an SAP Cloud Solution
 
-When you purchase an SAP cloud solution that bundles SAP Cloud Identity Services - Identity Authentication and Identity Provisioning, you are entitled to one productive and one test tenant. Depending on the cloud solution, SAP can create and provision to your organization only one productive tenant, only one test tenant or both productive and test tenant.
+When you purchase an SAP cloud solution that bundles with SAP Cloud Identity Services, you are entitled to one productive and one test tenant. Depending on the specific cloud solution, SAP may provision only one productive tenant, only one test tenant, or both to your organization.
 
-If you already have a bundle tenant and you purchase more SAP cloud solutions, you won't get additional tenants. Your existing one will be reused. The only exception to this rule is if your current tenant cannot be used due to some restrictions and legal requirements, like data residency regulations. For example, it is required that the user data should not leave a particular region or country. In that case, a new tenant is created in the new region.
+If you already have a tenant and you purchase additional SAP cloud solutions, you will not get additional tenants. Your existing one will be reused. However, there are some special cases and exceptions to this rule. For example:
 
-Tenants delivered as part of the bundling process are created automatically. You get their tenant URLs in a welcome e-mail from SAP.
+-   Your business operates in multiple regions, and your SAP cloud solutions are delivered across these regions. You can request additional SAP Cloud Identity Services tenants in the particular region where other SAP cloud solutions have been licensed.
 
-> ### Note:  
-> In the case of SAP SuccessFactors, getting a bundle tenant requires you to initiate an upgrade to SAP Cloud Identity Services in SAP SuccessFactors Upgrade Center. For more information see: [Initiating the Upgrade to SAP Cloud Identity Services - Identity Authentication Service](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/568fdf1f14f14fd089a3cd15194d19cc/0271d9c4176e45ca9307e49230073240.html?version=2305).
+-   Your SAP Cloud Identity Services tenant cannot be used due to restrictions or legal requirements \(such as data residency regulations\). You can request a tenant migration to ensure that user data remains in the specified region or country.
 
-For more information, see [Bundles](bundles-25b65a4.md).
+-   You have multiple instances of SAP SuccessFactors. It is not recommended to bundle them with the same SAP Cloud Identity Services tenant. Instead, you can request a dedicated tenant for each SAP SuccessFactors instance through the SAP SuccessFactors Upgrade Center.
+
+
+> ### Recommendation:  
+> Using a single productive SAP Cloud Identity Services tenant for your SAP cloud solutions is important for the integration and out-of-the-box Single Sign-On \(SSO\) between these solutions. If your company is already using a productive SAP Cloud Identity Services tenant, we strongly recommend reusing it for any additional SAP cloud solutions you plan to purchase and adopt.
+
+Getting a bundled tenant is generally an automatic process that requires no customer interaction. SAP takes care of creating and provisioning the tenant based on your cloud solution and regional choices. If you don't have a tenant, a new one will be created. If you have multiple tenants, the default tenant—typically the first one created for you—is selected and provisioned with the cloud solution. This automatic process is also used to create additional tenants when it is necessary to comply with specific regulations and in scenarios involving SAP SuccessFactors.
+
+There are cases where customer interaction is required. If multiple tenants are available for selection, for example when using SAP for Me, Boosters, SAP SuccessFactors Upgrade Center, or other tools, you will need to choose the most appropriate one.
+
+> ### Tip:  
+> If you have multiple SAP Cloud Identity Services tenants and are unsure which one to select, consider the following recommendations:
+> 
+> -   Default Tenant: A tenant marked as `Default` is typically the first one created for the customer. Many SAP applications automatically integrate with this tenant when provisioned. Choose it if these specifics matter to you. To check which tenant is your default one, refer to [View Assigned Tenants and Admins](view-assigned-tenants-and-admins-f56e6f2.md).
+> 
+> -   Regional Provisioning: For customers with an `EU Access` contract, choose an SAP Cloud Identity Services tenant located in Europe if your SAP cloud solution is provisioned in an `EU Access` region. This ensures better performance and compliance with the European regulations. For more information, see [EU Access](https://help.sap.com/docs/btp/sap-business-technology-platform/regions?version=Cloud#eu-access).
+> 
+> -   Tenant Migration: If the tenants available for selection are not in your desired region, you can request to migrate a specific tenant to your chosen region by opening an incident for the `BC-IAM-IDS` component.
+> 
+> -   Multi-Regional Requirements: If your business operates in multiple regions and needs additional tenants, you can request them by following the process described in [Get Additional Tenant](get-your-tenant-460766b.md#loio460766b1b08d48a0b4adfb230c60a001__section_r2y_lhg_hxb). Keep in mind that having a dedicated tenant per region might mean SSO isn't guaranteed out-of-the-box.
+> 
+> -   SAP SuccessFactors Use Case: If you have multiple instances of SAP SuccessFactors, you can request a separate SAP Cloud Identity Services tenant for each instance from the SAP SuccessFactors Upgrade Center. This ensures that each instance, representing the system of origin for employees, will have a dedicated identity provider and proper handling of users with the same login name. For more information, see [Initiating the Upgrade to SAP Cloud Identity Services - Identity Authentication Service](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/568fdf1f14f14fd089a3cd15194d19cc/0271d9c4176e45ca9307e49230073240.html?version=Latest).
+
+When tenants delivered as part of the bundling process are created, you get their tenant URLs in a welcome email from SAP. For more information, see [Bundles](bundles-25b65a4.md).
 
 
 

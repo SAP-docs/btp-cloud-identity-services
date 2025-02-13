@@ -174,6 +174,7 @@ You can
 <td valign="top">
 
 -   View the group details and group members.
+-   Modify and delete the group.
 
 
 
@@ -217,7 +218,7 @@ You can
 -   View the group details and group members.
 -   Add new group members.
 -   Remove the group members.
--   You **can't** modify or delete the group.
+-   Modify and delete the group.
 
 
 
@@ -239,7 +240,7 @@ You can
 -   View the group details and group members.
 -   Add new entities, users, and groups, as group members.
 -   Remove entities, users, and groups, from the group members.
--   You can't modify or delete the group.
+-   Modify and delete the group.
 
 
 

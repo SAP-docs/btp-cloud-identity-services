@@ -13,8 +13,8 @@ The service supports SAML 2.0 and OIDC logout flows. No matter which protocol yo
 
 -   SAML applications: [Service Provider Initiated Logout with Corporate Identity Providers](../Operation-Guide/service-provider-initiated-logout-with-corporate-identity-providers-3841580.md#loio3841580082cb4af6a13289e98a0cce12)
 
--   OIDC applications: [Call Identity Authentication End Session Endpoint](../Operation-Guide/call-identity-authentication-end-session-endpoint-ec674f4.md)
+-   OIDC applications: [Single Logout](../Operation-Guide/single-logout-1eecf35.md)
 
--   Identity-provider-initiated: [Use IdP-Initiated Single Logout \(SLO\)](../Operation-Guide/use-idp-initiated-single-logout-slo-da2e4f9.md)
+-   Cloud Identity Services-initiated SLO: [Use IdP-Initiated Single Logout \(SLO\)](../Operation-Guide/use-idp-initiated-single-logout-slo-da2e4f9.md)
 
 

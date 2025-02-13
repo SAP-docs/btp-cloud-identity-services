@@ -775,7 +775,7 @@ Groups in source systems are mapped to roles in AS ABAP target systems.
         > ```
         > {
         >   "user": {
-        >     "condition": "($.emails EMPTY true) || isValidEmail($.emails[0].value)",
+        >     "condition": "(($.emails EMPTY true) || isValidEmail($.emails[0].value)) && (('%abap.role.prefix%' === 'null') || ($.groups[?(@.display =~ /%abap.role.prefix%.*/)] empty false))",
         >     "mappings": [
         >       {
         >         "sourceVariable": "entityIdTargetSystem",
@@ -957,7 +957,7 @@ Groups in source systems are mapped to roles in AS ABAP target systems.
         >     ]
         >   },
         >   "group": {
-        >     "condition": "('%abap.role.prefix%' === 'null') || ($.displayName =~ /%abap.role.prefix%.*/)",
+        >     "condition": "isAttributeWithOptionalPrefix($.displayName, abap.role.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], abap.role.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
         >     "mappings": [
         >       {
         >         "scope": "createEntity",
@@ -965,7 +965,7 @@ Groups in source systems are mapped to roles in AS ABAP target systems.
         >         "targetVariable": "entityIdTargetSystem",
         >         "functions": [
         >           {
-        >             "condition": "('%abap.role.prefix%' !== 'null') && (@ =~ /%abap.role.prefix%.*/)",
+        >             "condition": "isAttributeWithMandatoryPrefix(@, abap.role.prefix)",
         >             "function": "replaceFirstString",
         >             "regex": "%abap.role.prefix%",
         >             "replacement": ""
@@ -977,7 +977,7 @@ Groups in source systems are mapped to roles in AS ABAP target systems.
         >         "targetPath": "$.ROLE_NAME",
         >         "functions": [
         >           {
-        >             "condition": "('%abap.role.prefix%' !== 'null') && (@ =~ /%abap.role.prefix%.*/)",
+        >             "condition": "isAttributeWithMandatoryPrefix(@, abap.role.prefix)",
         >             "function": "replaceFirstString",
         >             "regex": "%abap.role.prefix%",
         >             "replacement": ""
@@ -998,7 +998,6 @@ Groups in source systems are mapped to roles in AS ABAP target systems.
         >     ]
         >   }
         > }
-        > 
         > ```
 
 

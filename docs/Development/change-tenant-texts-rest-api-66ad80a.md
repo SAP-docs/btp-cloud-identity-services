@@ -1161,6 +1161,8 @@ logon.ui.errormessage.SMS_CODE_NOT_SENT_DUPLICATE=Your telephone number has alre
 
 logon.ui.errormessage.SMS_CODE_NOT_SENT_NOT_UNIQUE_PHONE=We could no\u0080\u0099t send you a code because this telephone number is already used as a user identifier by someone else. Please use another telephone number, or contact your administrator.
 
+logon.ui.errormessage.SMS_SERVER_NOT_CONFIGURED=SMS service configuration is missing. Please contact your system administrator.
+
 logon.ui.errormessage.INVALID_PHONE_NUMBER=Your telephone number is invalid. Please change and try again.
 
 logon.ui.errormessage.FAILED_SEND_SMS_CODE=We couldn't send you a code. Please check your telephone number and try again.
@@ -1223,7 +1225,6 @@ logon.ui.passwordResetPin.error=You have provided a wrong combination of user an
 
 logon.ui.passwordResetPin.description=To reset your password provide the required information.
 
-
 logon.ui.copyright.link=Default Copyright Link
 
 logon.ui.privacy.link=Default Privacy Link
@@ -1234,14 +1235,11 @@ logon.ui.legal.cookie.link=Default Cookie Notice Link
 
 logon.ui.login.instructions=Default Login Instructions
 
-
 salutation.ui.welcome=Welcome
-
 
 accountActivation.accountSuccessfullyActivated=Account Successfully Activated
 
 accountActivation.accountSuccessfullyLinked=Account Successfully Linked
-
 
 accountActivation.accountSuccessfullyLinkedWith=Account Linked to {0}
 
@@ -1258,7 +1256,6 @@ accountActivation.ui.label.continue=Continue
 accountActivation.mail.subject=Identity Authentication Account Activation
 
 invitation.mail.subject=You are invited to {0}
-
 
 tou.termsAndConditions=Terms and Conditions
 
@@ -1314,7 +1311,6 @@ changepassword.changePassword=Change Your Password
 
 changepassword.typeRetypePassword=Enter and re-enter your new password.
 
-
 changepassword.ui.infomessage.insufficientPasswordComplexity=Your password is not strong enough.
 
 changepassword.ui.infomessage.passwordLocked=Your password has been locked.
@@ -1341,7 +1337,6 @@ forgottenpassword.ui.errormessage.couldNotBeValidated=Could not validate passwor
 
 forgottenpassword.ui.errormessage.passwordInHistory=This password is already in your password history. Choose a different password.
 
-
 forgottenPasswordMailConfirm.forgotPasswordConfirm=Confirm Forgotten Password
 
 forgottenPasswordMailConfirm.forgotYourPassword=Forgot My Password
@@ -1351,6 +1346,7 @@ forgottenPasswordMailConfirm.emailSent=If an account exists, an email with a lin
 forgottenPasswordMailConfirm.clickTheLink.days=Click the link in the email. You will be forwarded to a page where you can reset your password. The link in the email will expire in {0} days.
 
 forgottenPasswordMailConfirm.clickTheLink.hours=Click the link in the email. You will be forwarded to a page where you can reset your password. The link in the email will expire in {0} hours.
+
 forgottenPasswordMailConfirm.closeButton=Close
 
 informAboutPasswordStatus.infoPasswordStatusPage=Password Status Page
@@ -1375,7 +1371,6 @@ passwordForm.required=Required
 
 passwordForm.save=Save
 
-
 policyaccept.acceptPolicy=Accept Policy
 
 policyaccept.ui.label.headline=Privacy policy for {0}
@@ -1390,11 +1385,9 @@ policyaccept.ui.label.accept=Accept
 
 policyaccept.ui.label.decline=Decline
 
-
 policyaccept.ui.errormessage.accepttoproceed=To proceed, accept the privacy policy.
 
 policyaccept.ui.errormessage.markcheckbox=To accept the privacy policy, click the checkbox.
-
 
 document.ui.label.headline=Legal Disclaimers
 
@@ -1403,7 +1396,6 @@ document.ui.label.accessUse=We have updated our legal documents. To access and u
 privacy.link.text=Familiarize yourself with our <a target\="_blank" href\="{0}">Privacy Statement</a>.
 
 privacy.link.updatedText=Note: There is a new version of our privacy statement available <a target\="_blank" href\="{0}">here</a>.
-
 
 upgraderegistration.upgradeAccount=Upgrade Your Account
 
@@ -1421,50 +1413,46 @@ upgradeRegistrationConfirmation.accountUpgraded.text=This account can also be us
 
 upgradeRegistrationConfirmation.continue=Continue
 
-
 upgradeRegistrationInformMailStatus.mailNotVerifiedStatus=Verify Your Email
 
 upgradeRegistrationInformMailStatus.mailSentTo=A link to verify your email has been sent to {0}.
 
 upgradeRegistrationInformMailStatus.mailSentTo.text=To verify your email, click the link sent to you. Note that it might take a few minutes for the email with the link to reach your inbox.
 
-# XLST
 salutation.mr=Mr.
-# XLST
+
 salutation.mrs=Mrs.
-# XLST
+
 salutation.ms=Ms.
 
-# XLST
 relationshipToSAP.Customer=Customer
-# XLST
+
 relationshipToSAP.prospectiveCustomer=Prospective Customer
-# XLST
+
 relationshipToSAP.partner=Partner
-# XLST
+
 relationshipToSAP.prospectivePartner=Prospective Partner
-# XLST
+
 relationshipToSAP.consultant=Consultant
-# XLST
+
 relationshipToSAP.pressAnalyst=Press/Analyst
-# XLST
+
 relationshipToSAP.investorStakeholder=Investor/Stakeholder
-# XLST
+
 relationshipToSAP.student=Student
-# XLST
+
 relationshipToSAP.employee=SAP Employee
 
-# XLST
 select.number_employees.UP_TO_50=1 - 49
-# XLST
+
 select.number_employees.UP_TO_100=50 - 99
-# XLST
+
 select.number_employees.UP_TO_250=100 - 249
-# XLST
+
 select.number_employees.UP_TO_500=250 - 500
-# XLST
+
 select.number_employees.UP_TO_1000=501 - 999
-# XLST
+
 select.number_employees.MORE_THAN_1000=1000+
 
 registerForm.registration=Registration
@@ -1484,9 +1472,9 @@ registerForm.validation.notUniqueTelephone=This telephone number is already used
 registerForm.validation.duplicateDisplayName=The display name you have chosen is already in use. Choose a different display name.
 
 registerForm.validation.duplicateUserName=The user name you have chosen is already in use. Choose a different user name.
-# XLST
+
 registerForm.please_select=Select
-# XLST
+
 registerForm.please_select_special=Select...
 
 registerForm.validation.accept.terms.of.use=To accept the terms of use, check the box
@@ -1534,7 +1522,7 @@ registerForm.userName=User Name
 registerForm.email=Email
 
 registerForm.phone=Phone
-# XGRP
+
 registerForm.chooseUsernamePassword=Set Password
 
 registerForm.loginname=Login Name
@@ -1549,7 +1537,7 @@ registerForm.confirmPassword=Confirm Password
 
 registerForm.passwordHint.musstText=Your password must:
 
-registerForm.passwordHint.length=Your password must be between {0} and 255 characters long
+registerForm.passwordHint.length=Your password must be between {0} and {1} characters long
 
 registerForm.passwordHint.includeText=and include {0} of the following:
 
@@ -1679,7 +1667,6 @@ error.oauth.signing.process.failed.wrong.client.secret.error=Social sign-on fail
 
 error.oauth.access.denied.errorMessage=Access denied from social provider.
 
-
 token.invalid=Your email activation link is invalid or has already been used.
 
 token.expired=Your email activation link has expired. A new email has been sent automatically. To activate your account, click the link in the new email.
@@ -1694,7 +1681,6 @@ idp.proxy.response.error=Identity provider cannot process the response due to wr
 
 idp.initiated.sso.disabled.error=IdP-initiated SSO has been disabled by your system administrator
 
-
 provisioningInfo.accountProvisioning=Account Activation
 
 provisioningInfo.enableAccount=Activating Your Account
@@ -1703,7 +1689,6 @@ provisioningInfo.enablingAccount=Activating your account for {0}...
 
 provisioningInfo.enablingAccount.text=Your account is currently being enabled for {0}. This may take a few seconds, please wait.
 
-
 provisioningTimeout.errorPage=Error Page
 
 provisioningTimeout.errorOccurred=Account Activation Failure
@@ -1711,7 +1696,6 @@ provisioningTimeout.errorOccurred=Account Activation Failure
 provisioningTimeout.accountNotActivated=Your account could not be activated.
 
 provisioningTimeout.loginIn15minutes=To activate your account, contact {0}.
-
 
 profileManagement.title=Profile Management
 
@@ -1722,15 +1706,15 @@ profileManagement.main.headline=Profile
 profileManagement.main.description=Your global Identity Authentication profile information is displayed below
 
 profileManagement.multipleaaccounts.message=There are multiple accounts using the email address {0}:
-# XGRP
+
 profileManagement.multipleaaccounts.headline=Your Accounts
-# XGRP
+
 profileManagement.multipleaaccounts.table.heading.userId=User ID
-# XGRP
+
 profileManagement.multipleaaccounts.table.heading.activeFor=Active for
-# XGRP
+
 profileManagement.multipleaaccounts.table.heading.status=Status
-# XGRP
+
 profileManagement.multipleaaccounts.table.lineMarker.loggedOn=Logged On
 
 profileManagement.multipleaaccounts.selectionMessage=When logging on with email and password, log on to:
@@ -2231,7 +2215,6 @@ ui.unique.checks.duplicate.username=An account already exists with that user nam
 
 ui.unique.checks.duplicate.displayname=An account already exists with that display name; enter a different display name
 
-
 mmc.titleTextKey=MMC Form
 
 mmc.headlineTextKey=We Are Updating Our Records
@@ -2240,18 +2223,15 @@ mmc.mainMessageTextKey=So that we can continue to provide you with the most rele
 
 mmc.buttonMessageKey=Save
 
-
 resendMailConfirm.emailSent=Your activation token has expired. A new email has been sent to you.
 
 resendMailConfirm.headline=Activate Your Account
-
 
 multiaccount.alert.title=Multiple Accounts
 
 multiaccount.alert.message=To log onto the SAP Store, click Continue. If you encounter a problem, it could be because there are multiple accounts registered to your email address. Set or change your default SAP Store account from your <a href\="/" target\="_blank">Identity Authentication Profile</a>. <strong>If you change your default SAP Store account, you will need to log off and log on again.</strong>
 
 multiaccount.alert.checkbox=Do not show this message again.
-
 
 samlRedirect.authnRequest.title=SAML Authentication Request from Identity Authentication
 
@@ -2268,7 +2248,6 @@ samlRedirect.logoutRequest.message.default=Your logout request has been forwarde
 samlRedirect.logoutResponse.title=SAML Logout Response from Identity Authentication
 
 samlRedirect.logoutResponse.message.default=You have now been logged out. Your request has been forwarded to the target system for processing.
-
 
 oidcLogout.frontchannel.title=OIDC Frontchannel Logout Request from Identity Authentication
 
@@ -2604,7 +2583,6 @@ userData.label.validFrom=Valid From
 
 userData.label.validTo=Valid to
 
-
 error.ui.errormessage.idpSsesionExpired=Your session has expired. Please log on again.
 
 error.ui.errormessage.idpSessionExpiredUserActivation=Your session has expired. Open the email for your account activation and follow the link it contains to reactivate your account.
@@ -2619,11 +2597,9 @@ error.ui.unknown.application.error=An error has occurred. Please visit the appli
 
 error.ui.unexistent.text.resource.error=The requested document does not exist. Please contact your system administrator.
 
+sci_eu_data_protection.headline=EU Access Data Processing
 
-sci_eu_data_protection.headline=European Union (EU) Access Mode
-
-sci_eu_data_protection.message=This Identity Authentication landscape is operated and supported in European Union (EU) Access mode. Please confirm that you are either physically located in the EU or that you have positively verified that EU access restrictions do not apply in your situation. Your confirmation will be logged.
-
+sci_eu_data_protection.message=<p>This instance is operated and supported in European Union EU Access Service.<br>By pressing the <strong>Confirm</strong> button you confirm that you are either:<br>(i) physically located in EU or<br>(ii) you have positively verified that EU Access restrictions do not apply in your situation or<br>(iii) you are a Technical Support engineer located outside EEA or Switzerland, and you have read and accepted the<a href\="https://wiki.one.int.sap/wiki/display/idservice/SCI+EU+DP+Working+Instructions" target\="_blank">SCI EUDP Working Instructions</a>.<br>Your confirmation will be logged.</p>
 
 sci_eu_data_protection.confirm=Confirm
 
@@ -2638,6 +2614,14 @@ error.ui.errormessage.disabledUserRegistration=The application does not allow us
 error.ui.errormessage.invalidServiceProvider=Identity provider cannot process the request because the configuration is incorrect. Please contact your system administrator.
 
 error.ui.errormessage.missingMail=An email address is required in order to continue. Please contact your system administrator.
+
+error.ui.errormessage.invalidClientId=SAP Cloud Identity Services can't process this OpenID request. The client_id sent by the client application must match the configuration for the application in SAP Cloud Identity Services.
+
+error.ui.errormessage.invalidRedirectUri=SAP Cloud Identity Services can't process this OpenID request. The redirect_uri sent by the client application must match the configuration for the application in SAP Cloud Identity Services.
+
+error.ui.errormessage.invalidOIDCParameters=SAP Cloud Identity Services can't process this OpenID request. The parameters sent by the client application must match the configuration for the application in SAP Cloud Identity Services.
+
+error.ui.errormessage.missingOIDCParameters=SAP Cloud Identity Services can't process this OpenID request. Some of the parameters required by SAP Cloud Identity Services are missing.
 
 error.ui.errormessage.invalidOpenIDProvider=OpenID provider cannot process the request because the configuration is incorrect. Please contact your system administrator.
 
@@ -2654,7 +2638,6 @@ error.ui.errormessage.clientIdNotUnique=OpenID provider cannot process the logou
 error.ui.errormessage.missingOpenIDTokenHintAndClientID=OpenID provider cannot process the logout request because neither client_id nor id_token_hint parameter has been provided with the post_logout_redirect_uri. Please contact your system administrator.
 
 flashes.error_validating_captcha=We are unable to validate your Captcha protection at the moment. Please try again later.
-
 
 security.alert.email.changed=Your email address in Identity Authentication tenant {0} has been changed. The new email address is {1}.
 
@@ -2738,7 +2721,6 @@ profileManagement.passwordlessAuthn.activate.popup=Name your device:
 
 profileManagement.passwordlessAuthn.activate.noName=No device name provided.
 
-
 security.question.1=What was the name of the city your parent was born in?
 
 security.question.2=What was the name of your first pet?
@@ -2759,13 +2741,21 @@ security.question.9=What was your first phone number?
 
 security.question.10=What is your vehicle registration number?
 
-requestStorageAccess.title=Confirmation required
+requestStorageAccess.grantAccess=Grant Access
+
+requestStorageAccess.confirmation=Confirmation
 
 requestStorageAccess.message=To sign in to the application you have to grant the application access to your browser storage. By pressing Continue, a new popup will appear where you can grant the access. If you block this you will not be able to sign in.
 
-requestStorageAccess.error=You have blocked access to your browser storage. If you want to continue, please go to your browser settings and reset the embedded content permissions.
+requestStorageAccess.errorMessage=You have either blocked access to your browser storage or you have never opened the current page before. To continue, please go to your browser settings and reset the embedded content permissions, or open the
+
+requestStorageAccess.confirmationPage=confirmation page.
+
+requestStorageAccess.confirmationMessage=You have been redirected to this page because your browser has never interacted with the authentication service application. Since you have already opened the current page, the browser can further process the sign-in request. Please choose Confirm to go back to the previous page and continue with the sign-in.
 
 requestStorageAccess.continue=Continue
+
+requestStorageAccess.comfirm=Confirm
 
 ```
 

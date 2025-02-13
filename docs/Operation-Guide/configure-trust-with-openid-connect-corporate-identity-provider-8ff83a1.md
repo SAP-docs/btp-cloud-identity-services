@@ -17,7 +17,7 @@ To use Identity Authentication as a proxy to delegate authentication to an exter
 > ### Tip:  
 > If you want to change one corporate identity provider with another, for example move from a SAML identity provider to an OpenID Connect one, it's helpful to know the applications that the corporate identity provider uses. To see the applications that have established trust with a specific corporate identity provider, sign in to the administration console and go to *Identity Providers* \> *Corporate Identity Providers* \> *identity provider from the list* \> *Trusting Applications*.
 
-To configure trust with the corporate identity provider, follow the procedures below:
+To configure trust with the corporate identity provider, use the following procedures:
 
 <a name="task_jlj_2rm_qgb"/>
 
@@ -97,12 +97,29 @@ Required. Must be a valid URI.
 <tr>
 <td valign="top">
 
-`token_endpoint`
+`jwks_uri`
 
 </td>
 <td valign="top">
 
 Required. Must be a valid URI.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`token_endpoint`
+
+</td>
+<td valign="top">
+
+Optional. If present it must be a valid URI.
+
+> ### Note:  
+> If the `token_endpoint` isn't supported, it can't participate in browser-based SSO flows. JWT Bearer flow is still possible.
+
+
 
 </td>
 </tr>
@@ -114,19 +131,7 @@ Required. Must be a valid URI.
 </td>
 <td valign="top">
 
-Required. Must be a valid URI.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`jwks_uri`
-
-</td>
-<td valign="top">
-
-Required. Must be a valid URI.
+Optional. If present it must be a valid URI.
 
 </td>
 </tr>
@@ -275,10 +280,13 @@ Configure the corporate identity provider in the administration console for SAP 
     -   Client secret in body \(default choice\)
     -   Client secret in authorization header
     -   Private key JWT
+    -   Client assertion in body
 
-        > ### Tip:  
-        > If possible, choose *Private key JWT*. This choice also allows automatic credential rotation.
+    > ### Tip:  
+    > If possible, choose `Private key JWT` or `Client assertion in body`.
 
+    > ### Recommendation:  
+    > If you connect Microsoft EntraID, use `Client assertion in body` and configure the trust in EntraID. This configuration enables an automatic trust update, because EntraID fetches the keys for signature validation automatically.
 
 
     
@@ -313,30 +321,24 @@ Configure the corporate identity provider in the administration console for SAP 
     
     </td>
     </tr>
-    <tr>
-    <td valign="top">
-    
-    Enable PKCE \(S256\)
-    
-    </td>
-    <td valign="top">
-    
-    Optional. Disabled by default. If enabled, Identity Authentication runs the authorization code flow enhanced with PKCE against the corporate identity provider.
-
-    > ### Note:  
-    > The authorization code flow with PKCE is recommended. Only the code challenge method S256 is supported.
-
-
-    
-    </td>
-    </tr>
     </table>
     
-6.  **Optional:** Populate the OpenID Connect issuer and endpoints under the *Endpoints* section.
+6.  **Optional:** If needed for your scenario, choose from the *Advanced Settings*.
+
+    For more information, see:
+
+    -   [Configure PKCE for Corporate Identity Providers](configure-pkce-for-corporate-identity-providers-f85344d.md)
+
+    -   [Enforce Nonces for Corporate Identity Providers](enforce-nonces-for-corporate-identity-providers-04a1a0b.md)
+
+    -   [Disable ID Token Hints for Corporate Identity Providers](disable-id-token-hints-for-corporate-identity-providers-01171f7.md)
+
+
+7.  **Optional:** Populate the OpenID Connect issuer and endpoints under the *Endpoints* section.
 
     The *Endpoints* section is read-only.
 
-7.  **Optional:** Add additional scopes if needed.
+8.  **Optional:** Add additional scopes if needed.
 
     You can have up to 20 scopes. The `openid` scope is added by default. Each scope can have a length of up to 99 characters.
 
@@ -347,7 +349,7 @@ Configure the corporate identity provider in the administration console for SAP 
     > -   email
     > -   profile
 
-8.  **Optional:** Choose the *Validate* button to check the configuration.
+9.  **Optional:** Choose the *Validate* button to check the configuration.
 
     An authorization code flow is run against the corporate identity provider. The configuration is validated in a new tab where additional information about the authorization code, the token with all the claims and scopes, and the token verification is provided.
 
@@ -356,7 +358,7 @@ Configure the corporate identity provider in the administration console for SAP 
     > 
     > ***OpenID provider cannot process the request because the configuration is incorrect. Please contact your system administrator.***
 
-9.  Save your configuration.
+10. Save your configuration.
 
     Once the identity provider has been updated, the system displays the message ***Identity provider <name of identity provider\> updated***.
 

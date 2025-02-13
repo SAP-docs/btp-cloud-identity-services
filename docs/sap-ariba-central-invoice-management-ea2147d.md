@@ -239,6 +239,7 @@ SAP Ariba Central Invoice Management is an SAP BTP SaaS application running on S
     > ```
     > {
     >   "user": {
+    >     "condition": "(($.emails EMPTY true) || (isValidEmail($.emails[*].value))) && (('%cim.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%cim.group.prefix%.*/)] empty false))",
     >     "mappings": [
     >       {
     >         "constant": [
@@ -297,6 +298,11 @@ SAP Ariba Central Invoice Management is an SAP BTP SaaS application running on S
     >         "targetPath": "$.emails"
     >       },
     >       {
+    >         "condition": "$.emails[?(@.primary == true)] empty true",
+    >         "constant": true,
+    >         "targetPath": "$.emails[0].primary"
+    >       },
+    >       {
     >         "sourcePath": "$.active",
     >         "targetPath": "$.active",
     >         "optional": true
@@ -327,7 +333,7 @@ SAP Ariba Central Invoice Management is an SAP BTP SaaS application running on S
     >         "optional": true
     >       },
     >       {
-    >         "sourcePath": "$.preferedLanguage",
+    >         "sourcePath": "$.preferredLanguage",
     >         "targetPath": "$.preferredLanguage",
     >         "optional": true
     >       },
@@ -344,7 +350,7 @@ SAP Ariba Central Invoice Management is an SAP BTP SaaS application running on S
     >     ]
     >   },
     >   "group": {
-    >     "condition": "('%cim.group.prefix%' === 'null') || ($.displayName =~ /%cim.group.prefix%.*/)",
+    >     "condition": "isAttributeWithOptionalPrefix($.displayName, cim.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], cim.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >     "mappings": [
     >       {
     >         "sourceVariable": "entityIdTargetSystem",
@@ -366,7 +372,7 @@ SAP Ariba Central Invoice Management is an SAP BTP SaaS application running on S
     >         "targetPath": "$.displayName",
     >         "functions": [
     >           {
-    >             "condition": "('%cim.group.prefix%' !== 'null') && (@ =~ /%cim.group.prefix%.*/)",
+    >             "condition": "isAttributeWithMandatoryPrefix(@, cim.group.prefix)",
     >             "function": "replaceFirstString",
     >             "regex": "%cim.group.prefix%",
     >             "replacement": ""

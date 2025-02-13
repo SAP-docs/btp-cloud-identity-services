@@ -65,7 +65,7 @@ isValidEmail
 This function verifies whether an e-mail address is valid by checking if the given String value matches the following regex pattern:
 
 ```
-"[a-zA-Z0-9!#$%&‘*+/=?^_`{|}~-]+(?>\\.[a-zA-Z0-9!#$%&‘*+/=?^_`{|}~-]+)*@(?>[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]?\\.)+[a-zA-Z0-9](?>[a-zA-Z0-9-]*[a-zA-Z0-9])?"
+"[a-zA-Z0-9!#$%&‘'*+/=?^_`{|}~-]+(?>\\.[a-zA-Z0-9!#$%&‘*+/=?^_`{|}~-]+)*@(?>[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]?\\.)+[a-zA-Z0-9](?>[a-zA-Z0-9-]*[a-zA-Z0-9])?"
 ```
 
 After the check, the function returns a Boolean result.
@@ -159,9 +159,11 @@ Not applicable
 </td>
 <td valign="top">
 
-This function verifies whether a group is a regular user group by checking for the attribute `supportedOperations` and its value.
+This function verifies whether a group is regular user group. It checks consecutively the values of the group attributes `supportedOperations` and `applicationId` and returns a Boolean result.
 
-After the check, the function returns a Boolean result.
+If one or both of the attributes are missing, the returned result is ***true***.
+
+Otherwise, the returned value is ***false***.
 
 This function can be used only as part of a conditional statement.
 

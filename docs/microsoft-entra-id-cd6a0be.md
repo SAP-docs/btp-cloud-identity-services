@@ -521,7 +521,7 @@ If you've successfully finished with the initial setup \(described in the **Prer
     >       }
     >     ]
     >   },
-    >   "group": {
+    >    "group": {
     >     "scimEntityEndpoint": "Groups",
     >     "mappings": [
     >       {
@@ -559,6 +559,14 @@ If you've successfully finished with the initial setup \(described in the **Prer
     >         "constant": "value",
     >         "type": "rename",
     >         "optional": true
+    >       },
+    >       {
+    >         "constant": "userGroup",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >       },
+    >       {
+    >         "constant": "readWrite",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
     >       }
     >     ]
     >   }
