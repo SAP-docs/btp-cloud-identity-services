@@ -10,7 +10,7 @@ You can enable or disable the *Central Store-Based Provisioning* option in the a
 
 -   You have an application specific group in your tenant. For more details on how to create groups, see [Create a Group](create-a-group-b1b638d.md).
 
--   You have configured the **Central Store-Based Provisioning** in the administration console for SAP Cloud Identity Services. For more information, see [Manage Application-Specific Groups by Identity Provisioning](manage-application-specific-groups-by-identity-provisioning-a9ff3e3.md).
+-   You have configured the **Central Store-Based Provisioning** in the administration console for SAP Cloud Identity Services. For more information, see [Central Store-Based Provisioning](../central-store-based-provisioning-33eae39.md).
 
 
 

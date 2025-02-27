@@ -610,7 +610,7 @@ Central store-based provisioning
 
 You can enable central store-based provisioning to immediately provision updates related to user assignments in application-specific groups between the Local Identity Directory and your selected target systems.
 
-For more information, see [Enable or Disable Central Store-Based Provisioning](Operation-Guide/enable-or-disable-central-store-based-provisioning-657bbaa.md) and [Central Store-Based Provisioning](Operation-Guide/manage-application-specific-groups-by-identity-provisioning-a9ff3e3.md#loioa9ff3e3d5c9e4062860499e05259e31a__section_ugw_q2h_c2c).
+For more information, see [Enable or Disable Central Store-Based Provisioning](Operation-Guide/enable-or-disable-central-store-based-provisioning-657bbaa.md) and [Central Store-Based Provisioning](central-store-based-provisioning-33eae39.md).
 
 </td>
 <td valign="top">

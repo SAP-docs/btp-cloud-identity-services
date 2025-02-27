@@ -75,48 +75,6 @@ In case you have set the `ips.delete.existedbefore.entities` property before run
 
 If the property `ips.delete.existedbefore.entities` is missing or set to *false*, the Identity Provisioning will not attempt to delete the group and no record will be displayed in the job log statistics.
 
-
-
-<a name="loioa9ff3e3d5c9e4062860499e05259e31a__section_ugw_q2h_c2c"/>
-
-## Central Store-Based Provisioning
-
-Central store-based provisioning enables the automatic provisioning of application-specific groups from the Identity Directory to the target systems whenever changes occur. These changes include user assignments or modifications of group attributes.
-
-The groups can be created initially in the Identity Directory by running a provisioning job from a specified source system or by using the SAP Cloud Identity Services administration console. To ensure their immediate provisioning to the target systems, the following application configurations are required:
-
--   An application must be created for the relevant target system under *Applications & Resources* \> *Applications*.
-
--   The application ID must be set as the value for the `ips.application.id` property in the target system.
-
--   The *Central Store-Based Provisioning* option must be enabled under *Applications & Resources* \> *Applications* \> *Provisioning*.
-
-
-When provisioning application-specific groups from the Identity Directory to the target systems, groups that do not exist in the target can be created only after they are modified in the source system. New groups in the Identity Directory will not be provisioned unless they are changed.
-
-> ### Note:  
-> Application-specific groups with supported operations `readOnly`, `userOnlyMembership` and `membership` will not be created even if updates are made to the groups. If you try to provision such groups, you will get an ***Entity Failed*** status. For more information, see [Monitor Central Store Logs](../Monitoring-and-Reporting/monitor-central-store-logs-9162898.md).
-
-This is the required configuration for enabling the central store-based provisioning. The following example uses Local Identity Directory as source system and SAP Advanced Financial Closing as target system.
-
-1.  Sign in to SAP Cloud Identity Services administration console and navigate to *Identity Provisioning*.
-
-2.  Add [Local Identity Directory](../local-identity-directory-59557ae.md) as a source system.
-
-3.  **Optional**: Configure properties that are relevant for the Local Identity Directory source system, for example `idds.user.filter` and `idds.group.filter`. For more information, see [List of Properties](../list-of-properties-d6f3577.md).
-
-4.  **Optional**: Review and adapt the default read transformations as necessary.
-
-5.  Add a target system of your choice, for example *SAP Advanced Financial Closing*.
-
-6.  Select the *Local Identity Directory* as relevant source system.
-7.  Set the property `ips.application.id` for the target system. For more information, see [List of Properties](../list-of-properties-d6f3577.md).
-8.  Start a read job from the *Local Identity Directory* source system.
-
-9.  Navigate to your application in the administration console for SAP Cloud Identity Services under *Applications & Resources* \> *Applications* and enable the *Central Store-Based Provisioning*. For more information, see [Enable or Disable Central Store-Based Provisioning](enable-or-disable-central-store-based-provisioning-657bbaa.md).
-
-After the procedure is executed, each change of an attribute value or a member of an application-specific group in the *Local Identity Directory* triggers instant provisioning of the modified entity to the configured target system.
-
 **Related Information**  
 
 

@@ -62,6 +62,7 @@
         -   [Business-to-Business Scenario](business-to-business-scenario-3908c37.md)
         -   [Business-to-Employee Scenario](business-to-employee-scenario-3aecb4c.md)
         -   [Centralized Provisioning with Identity Directory](centralized-provisioning-with-identity-directory-9d0235c.md)
+        -   [Central Store-Based Provisioning](central-store-based-provisioning-33eae39.md)
     -   [Supported Systems](supported-systems-81ca0c1.md)
         -   [Source Systems](source-systems-58033be.md)
             -   [Identity Authentication](identity-authentication-e4e25f1.md)
