@@ -541,6 +541,18 @@ You can use Identity Provisioning to configure SAP S/4HANA Cloud as a source sys
     >         "targetPath": "$.schemas[0]"
     >       },
     >       {
+    >         "constant": "authorization",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >       },
+    >       {
+    >         "constant": "readWrite",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
+    >       },
+    >       {  "condition": "'%ips.application.id%' !== 'null'",
+    >          "constant": "%ips.application.id%",
+    >          "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+    >       },
+    >       {
     >         "sourcePath": "$.to_BusinessUserAssignment.results",
     >         "optional": true,
     >         "preserveArrayWithSingleElement": true,

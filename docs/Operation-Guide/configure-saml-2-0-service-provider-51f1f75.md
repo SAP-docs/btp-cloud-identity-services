@@ -106,6 +106,9 @@ To configure a SAML 2.0 trusted service provider in the administration console f
         > ### Restriction:  
         > The metadata URL must not contain query parameter.
 
+        > ### Remember:  
+        > The SAML 2.0 metadata URL is required for the automatic renewal of the automatic renewal of the signing and encryption certificates of the application. When the metadata URL is provide, Identity Authentication will update automatically the expired encryption certificate, and the SAML 2.0 certificate during the first sign in attempt that fails due to the expired certificate.
+
 
 
     

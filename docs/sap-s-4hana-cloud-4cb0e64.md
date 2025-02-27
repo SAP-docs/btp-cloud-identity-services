@@ -692,6 +692,14 @@ This scenario supports:
     >         "targetPath": "$.members"
     >       },
     >       {
+    >         "constant": "authorization",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >       },
+    >       {
+    >         "constant": "readWrite",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
+    >       },
+    >       {
     >         "type": "remove",
     >         "targetPath": "$.members[*].__metadata"
     >       },

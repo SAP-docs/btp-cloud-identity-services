@@ -32,6 +32,8 @@ If apart from *IP Range* the rule contains other conditions, or it is not the fi
 > Rules can be defined only if the default identity provider is Identity Authentication.
 > 
 > If you have already defined rules, they won't be considered if you change the default identity provider from Identity Authentication to a corporate identity provider.
+> 
+> To use two or more corporate identity providers and not the default Identity Authentication, your rules must cover all cases so that no user ends up at Identity Authentication. Once you make your other rules, create a catch-all rule with the IP range `0.0.0.0/0`. Such a rule set at the lowest priority ensures that no users end up at Identity Authentication as the default identity provider.
 
 > ### Note:  
 > If the user is already existing in Identity Authentication, authentication requests via SPNEGO, existing session, remember me, and token will be processed by Identity Authentication in case of successful authentication no matter of the conditional authentication rules. However, when the tenant has trusted certificate configuration, the application is SAML 2.0 type, and a conditional rule is configured, authentication is done by the local identity provider \(IdP\) with the certificate, except for the scenario when the conditional rule has an IP Range defined. In this case, if the rule matches, the user will be sent for authentication to the IdP from the rule.

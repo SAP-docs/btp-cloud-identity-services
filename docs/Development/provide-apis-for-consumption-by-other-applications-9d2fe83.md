@@ -52,7 +52,7 @@ As the providing application, you have the following options for configuring ide
     > ### Caution:  
     > The API name must match exactly what is expected by consumer applications. The name must be unique within all APIs provided by the same provider application. Consumer applications use this name to determine if their application has the rights to access the provider application.
     > 
-    > The name can be any URN-compliant string of up to 32 characters. You can define a maximum of 20 APIs.
+    > The name can be any URN-compliant string of up to 32 characters. You can define a maximum of 50 APIs.
     > 
     > For more information about URNs, see [RFC 8141](https://datatracker.ietf.org/doc/rfc8141/).
 

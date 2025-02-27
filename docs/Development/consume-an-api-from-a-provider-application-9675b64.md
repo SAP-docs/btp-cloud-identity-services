@@ -45,7 +45,7 @@ For more information, see [Configure Integration Between Applications](../Operat
     ```
     {
         "ias_apis": [
-            "weather_temperature_read"
+            "techDependency"
         ],
     
         "sub": "3ab1ba0e-c573-4ad5-20a4-28aa4e587a19",
@@ -74,7 +74,7 @@ For more information, see [Configure Integration Between Applications](../Operat
     ```
     {
         "ias_apis": [
-            "sales-order"
+            "myDependency"
         ],   
         "sub": "P123456",
         "mail": "donna.moore@example.com",

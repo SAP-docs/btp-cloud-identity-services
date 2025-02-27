@@ -4,18 +4,18 @@
 
 Learn how to troubleshoot the most frequent reasons for deletion of users or groups from a target system by the Identity Provisioning.
 
-In the scenarios described below, the entity is already provisioned by the Identity Provisioning via a provisioning job for that particuar source and target systems pair. The deletion of entities happens at the end of the provisioning job, after all users and groups are read and processed.
+In the scenarios described below, the entity is already provisioned by the Identity Provisioning via a provisioning job from a source to a target system.
 
-Since the topic is focused on occurrences of entity deletion, it does not cover cases in which this is not expected, for example, when the provisioning job:
+Since the topic is focused on occurrences of entity deletion, it only covers cases where deletion is expected. Deletion is not expected, when the provisioning job:
 
 -   has been run in a delta read mode;
 -   has failed entities for the source system;
 -   has an irreparable error for the source system;
 -   has irreparable errors for all target systems, which the job has to provision to.
 
-It is important to clarify that even if an entity was existing in the target system before its provisioning for the first time, it could still be deleted by the Identity Provisioning if the property `ips.delete.existedbefore.entities` is set to *true* in the target system. However, if the entity is created in the target system by provisioning in the first place, then the service is allowed to delete it \(unless `“skipOperations”:[“delete”]` is present in the transformation of the target system or there is a threshold set for deletion of entities from the target system\).
+It is important to clarify that even if an entity existed in the target system before its provisioning for the first time, it could still be deleted by the Identity Provisioning if the property `ips.delete.existedbefore.entities` is set to *true* in the target system. However, if the entity is created in the target system by provisioning in the first place, then the service is allowed to delete it , unless there is a threshold set for deletion of entities from the target or `“skipOperations”:[“delete”]` is present in the transformation of the target system.
 
-Search among the most frequent causes for entity deletion by the Identity Provisioning and learn what should be checked to make sure that this is the situation you run into:
+Search among the most frequent causes for entity deletion by the Identity Provisioning and learn what should be checked to make sure that this is the situation you run into.
 
 
 
@@ -23,7 +23,7 @@ Search among the most frequent causes for entity deletion by the Identity Provis
 
 ## The Entity is Deleted From the Source System or Re-Created with a New ID
 
-Access the audit logs for the source system and check for the deletion of the entity and eventually its re-creation with a new ID. If there is an audit log for deletion, it should span the period before the provisioning job that deleted the entity was run.
+Access the audit logs for the source system and check for the deletion of the entity and eventually its re-creation with a new ID. If an entity previously provisioned to the target system was deleted in the source system, the deletion timestamp in the source system should be before the start time of the provisioning job that deleted the entity from the target.
 
 Bellow you can find an exemplary audit log for deleted user from an Identity Authentication source system:
 
@@ -55,13 +55,13 @@ In case of further investigation needed, please contact the corresponding API ex
 
 Check if there is a filtering property set in the provisioning source system \(`*.user.filter` or `*.group.filter`\). Then look through the entity details in the source system itself and evaluate if it meets the defined filter.
 
-You can also check the audit logs from the source system for entity changes that lead to not meeting the filtering criteriar. The audit logs should span the period before the provisioning job that deleted the entity was run.
+You can also check the audit logs from the source system for entity changes that lead to not meeting the filtering criteria. The audit logs should span the period before the provisioning job that deleted the entity was run.
 
-It could be possible that the entity temporary did not meet the defined filter. For exmaple, a user has became inactive in the source system and then active again after the job, which deleted it from the target system has finished.
+The entity may have temporarily failed to meet the defined filter while the deletion job was running in the target system. For exmaple, a user has became inactive in the source system and then active again after the job which deleted it from the target system has finished.
 
 In the *Job Execution Details* screen, compare the *Read* statistics for the job, which deleted the user or the group, and the previous job for the same source-target systems pair. If you download all job logs, these statistics are displayed as value of the `numberRead` attribute. Check also if the next provisioning job for the same source-target systems has re-created the entity in the target system.
 
-Bellow you can find an exemplary audit log for updated user that was deleted from an Identity Authentication source system:
+Bellow you can find an exemplary audit log for updated user that was deleted from Identity Authentication source system:
 
 ```
 category=audit.data-change
@@ -83,7 +83,7 @@ First, you can check if the filter property set in the source system has been ch
 
 After that, in the *Job Execution Details* screen, compare the *Read* statistics for the job, which deleted the entity, and the previous job for the same source-target systems pair. If you download all job logs, these statistics are displayed as the value of `numberRead` attribute. Check also if the next provisioning job for the same source-target systems re-created the entity in the target system.
 
-For example, in case your SAP Cloud Identity Services tenant is running on is SAP Cloud Identity Services Infrastructure, refer to [Access Audit Logs \(Audit Log Service in SAP BTP, Cloud Foundry\)](access-audit-logs-audit-log-service-in-sap-btp-cloud-foundry-a3e793c.md) for more information. The procedure should have been applied, before Identity Provisioning sends audit logs to the Audit Log service.
+For example, in case your SAP Cloud Identity Services tenant is running on SAP Cloud Identity Services Infrastructure, refer to [Access Audit Logs \(Audit Log Service in SAP BTP, Cloud Foundry\)](access-audit-logs-audit-log-service-in-sap-btp-cloud-foundry-a3e793c.md) for more information. The procedure should have been applied before the Identity Provisioning sends audit logs to the Audit Log service.
 
 For example, in case you obtain standalone or bundle tenant on SAP BTP, Neo environmen, refer to [Access Audit Logs](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/0e272c800d264d90b519574fcb1e930e.html "You can access audit logs to track changes for events and activities in your Identity Provisioning tenant.") :arrow_upper_right: for more information. The procedure should have been applied, before Identity Provisioning sends audit logs to the Audit Log service.
 
@@ -113,7 +113,7 @@ Start by checking what is the condition in the read transformation of the source
 
 You can also check on the *Job Execution Details* screen if the next provisioning job displays the entity as skipped in the statistics of the source system. You can download the job log for skipped entities and search for the entity in the downloaded file. For more information, see [Download All Skipped Entity Logs for a Single Job](manage-provisioning-job-logs-041b5ff.md#loio041b5ff608b944d19c53be780109506e__section_wvx_x4p_2tb).
 
-It could be possible that the entity temporary did not meet the defined condition only while the job, which deleted it from the target system was running. You can see audit logs from the source system for entity changes that lead to not applying to the condition. The audit logs should span the period before the provisioning job that deleted the entity was run.
+The entity may have temporarily failed to meet the defined condition while the deletion job was running in the target system. You can see audit logs from the source system for entity changes that lead to not applying to the condition. The audit logs should span the period before the provisioning job that deleted the entity was run.
 
 For example, if a user is skipped, in the downloaded skipped entities job log you will see a similar content:
 
@@ -165,11 +165,11 @@ And the condition in the target system using the email is the following:
 //this condition checks if the email is on a particular domain
 ```
 
-Then you should validate that the value of the user's attribute `email`
+Then you should validate that the value of the user's attribute `email` in the source system ends with the specified domain in the condition of the target system.
 
 You can also check if the next provisioning job for the same source-target systems show the user as skipped in the statistics of the target system. You can download the job log for skipped entities and search for the entity in the downloaded file. For more information, see [Download All Skipped Entity Logs for a Single Job](manage-provisioning-job-logs-041b5ff.md#loio041b5ff608b944d19c53be780109506e__section_wvx_x4p_2tb).
 
-It could be possible that the entity temporary did not meet the defined condition only while the job, which deleted it from the target system was running. You can see audit logs from the source system for entity changes that lead to not applying to the condition. The audit logs should span the period before the provisioning job that deleted the entity was run.
+The entity may have temporarily failed to meet the defined condition while the deletion job was running in the target system. You can see audit logs from the source system for entity changes that lead to not applying to the condition. The audit logs should span the period before the provisioning job that deleted the entity was run.
 
 For example, if a user is skipped due to this reason, the downloaded skipped entities job log will include similar content:
 
@@ -207,7 +207,7 @@ You can check the transformation history and whether the condition in the read t
 
 You can also check if the next provisioning job for the same source-target systems show the entity as skipped in the statistics of the target system. You can download the job log for skipped entities and search for the entity in the downloaded file. For more information, see [Download All Skipped Entity Logs for a Single Job](manage-provisioning-job-logs-041b5ff.md#loio041b5ff608b944d19c53be780109506e__section_wvx_x4p_2tb).
 
-It could be possible that the entity temporary did not meet the defined condition only while the job, which deleted it from the target system was running. You can see audit logs from the source system for entity changes that lead to not applying to the condition. The audit logs should span the period before the provisioning job that deleted the entity was run.
+The entity may have temporarily failed to meet the defined condition while the deletion job was running in the target system. You can see audit logs from the source system for entity changes that lead to not applying to the condition. The audit logs should span the period before the provisioning job that deleted the entity was run.
 
 For example, if a user is skipped due to this reason, the downloaded skipped entities job log will include similar content:
 
@@ -222,7 +222,7 @@ skip reason=Entity condition [($.emails EMPTY false) && ($.userName EMPTY false)
 
 In case you need to check audit logs, because the entity did not meet the condition only while one provisioning job was running, then for Identity Authentication source system, see [Audit Logs](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/audit-logs?locale=en-US&version=Cloud). The procedure should have been applied, before Identity Provisioning sends audit logs to the Audit Log service.
 
-Find bellow an exemplary content of an audit log for update of a user in an Identity Authentication source system that caused not meeting the set condition:
+Find bellow an exemplary content of an audit log for a user update in Identity Authentication source system that caused not meeting the set condition:
 
 ```
 category=audit.data-change
@@ -243,7 +243,7 @@ payload: […]
 
 In that case, the entity is skipped during the provisioning to the target system and is deleted from it.
 
-You can check the transformation history and whether the condition in the transformation of the target system was changed. After that check the entity details in the source system itself. Consider the transformation of the source system and how the values of the entity attributes are mapped to each `“targetPath”` in the target system. Then, validate if the entity does not apply to the condition in the target system based on the mappings in the transformation of the source system and the values of the entity attributes in the source system.
+You can check the transformation history and whether the condition in the transformation of the target system was changed. After that, check the entity details in the source system itself. Consider the transformation of the source system and how the values of the entity attributes are mapped to each `“targetPath”` in the target system. Then, validate if the entity does not apply to the condition in the target system based on the mappings in the transformation of the source system and the values of the entity attributes in the source system.
 
 For example, if the user attribute for email in the source system is `email`, and there is a mapping in the transformation of the source system like the following:
 
@@ -266,7 +266,7 @@ Then validate that the value of the user attribute `email` in the source system 
 
 You can also check if the next provisioning job for the same source-target systems show the entity as skipped in the statistics of the target system. You can download the job log for skipped entities and search for the entity in the downloaded file. For more information, see [Download All Skipped Entity Logs for a Single Job](manage-provisioning-job-logs-041b5ff.md#loio041b5ff608b944d19c53be780109506e__section_wvx_x4p_2tb).
 
-It could be possible that the entity temporary did not meet the defined condition only while the job, which deleted it from the target system was running. You can see audit logs from the source system for entity changes that lead to not applying to the condition. The audit logs should span the period before the provisioning job that deleted the entity was run.
+The entity may have temporarily failed to meet the defined condition while the deletion job was running in the target system. You can see audit logs from the source system for entity changes that lead to not applying to the condition. The audit logs should span the period before the provisioning job that deleted the entity was run.
 
 If a user is skipped for not meeting the set condition in the target system, it will be seen in the downloaded skipped entities job log like:
 
@@ -280,9 +280,9 @@ skip reason=Entity condition [($.emails EMPTY false) && ($.userName EMPTY false)
 
 ```
 
-In case you need to check audit logs, because the entity did not meet the condition only while one provisioning job was running, then for Identity Authentication source system, see [Audit Logs](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/audit-logs?locale=en-US&version=Cloud). The procedure should have been applied, before Identity Provisioning sends audit logs to the Audit Log service.
+In case you need to check audit logs, because the entity did not meet the condition only while one provisioning job was running, then for Identity Authentication source system, see [Audit Logs](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/audit-logs?locale=en-US&version=Cloud). The procedure should have been applied, before the Identity Provisioning sends audit logs to the Audit Log service.
 
-Find bellow an exemplary content of an audit log for update of a user in an Identity Authentication source system that caused not meeting the set condition in the target system:
+Find bellow an exemplary content of an audit log for user update in Identity Authentication source system that caused not meeting the set condition in the target system:
 
 ```
 category=audit.data-change
@@ -301,15 +301,15 @@ payload: […]
 
 ## Changed Mapping for `"entityIdTargetSystem"` or `"entityIdTargetSystem"` in the Transformation of the Source or Target System Without System Reset
 
-This issue occures most frequently, but not only, while changing the version of the provisioning system, because of the different versions of the delault transformations used. The symptom is mass entity update and mass entity deletion of the same entities in the target system.
+This issue occurs most commonly, though not exclusively, while changing the version of the provisioning system, as this can lead to differences in the versions of the default transformations used. The symptom is mass entity update and mass entity deletion of the same entities in the target system.
 
 If you think that this is probably your case, check the transformation history for changes in the mapping for one of the variables `"entityIdSourceSystem"` \(part of the transformation of the source system\) or`"entityIdTargetSystem"` \(part of the transformation of the target system\). Then, check in the audit logs whether a reset was performed for the provisioning system, in which one of the above mentioned variables was changed. The audit logs should span the period before the provisioning job that deleted the entity was run.
 
-For example, in case your SAP Cloud Identity Services tenant is running on is SAP Cloud Identity Services Infrastructure, refer to[Access Audit Logs \(Audit Log Service in SAP BTP, Cloud Foundry\)](access-audit-logs-audit-log-service-in-sap-btp-cloud-foundry-a3e793c.md) for more information. The procedure should have been applied, before Identity Provisioning sends audit logs to the Audit Log service.
+For example, in case your SAP Cloud Identity Services tenant is running on SAP Cloud Identity Services Infrastructure, refer to [Access Audit Logs \(Audit Log Service in SAP BTP, Cloud Foundry\)](access-audit-logs-audit-log-service-in-sap-btp-cloud-foundry-a3e793c.md) for more information. The procedure should have been applied before the Identity Provisioning sends audit logs to the Audit Log service.
 
-For example, in case you obtain standalone or bundle tenant on SAP BTP, Neo environmen, refer to [Access Audit Logs](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/0e272c800d264d90b519574fcb1e930e.html "You can access audit logs to track changes for events and activities in your Identity Provisioning tenant.") :arrow_upper_right: for more information. The procedure should have been applied, before Identity Provisioning sends audit logs to the Audit Log service.
+For example, in case you obtain standalone or bundle tenant on SAP BTP, Neo environmen, refer to [Access Audit Logs](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/0e272c800d264d90b519574fcb1e930e.html "You can access audit logs to track changes for events and activities in your Identity Provisioning tenant.") :arrow_upper_right: for more information. The procedure should have been applied, before the Identity Provisioning sends audit logs to the Audit Log service.
 
-Bellow you can find an exemplary audit log for system reset of an Identity Authentication source system:
+Bellow you can find an exemplary audit log for system reset of Identity Authentication source system:
 
 ```
 category=audit.configuration
@@ -352,9 +352,9 @@ skip reason=Operation [delete] is skipped in target transformation,
 
 <a name="loiod6acc19a031e403ca66f5d82b908c4c2__section_wlk_s53_12c"/>
 
-## Single or Mass Entity Deletion Because the Entityes Were not Deleted Earlier
+## Single or Mass Entity Deletion Because the Entities Were not Deleted Earlier
 
-Single, or more likely mass entity deletion is possible if any of the cases described above has occured in a previous provisioning job, but that job did not delete the entities from the target system due to an error.
+Single or, more likely, mass entity deletion may occur if any of the cases described above happened during an earlier provisioning job, where an error prevented that job from deleting the entities from the target system.
 
 Some of these errors could be:
 
@@ -363,11 +363,11 @@ Some of these errors could be:
 -   delete operation failure
 -   other
 
-As a result, the entities are accumulated to be delete from the target system by a next provisioning job, which will try again to delete them \(for example, when some of the reasons listed above are no longer happening\).
+As a result, the entities are queued for deletion by the next provisioning job, which will try again to delete them once the above mentioned issues are resolved.
 
 You can start the investigation by checking the job logs, statistics, and job error logs of the provisioning jobs prior the one that deleted the entities. For more information, see [Manage Provisioning Job Logs](manage-provisioning-job-logs-041b5ff.md).
 
-A proof that you have run into some of the listed sitiations can be:
+Proof that you have run into some of the listed situations could include:
 
 -   If there were failed entities for the source system in the previous jobs, and then there were no failed entities for the source system in the job, which deleted the users from the target system.
 -   If there were some irreparable errors for the source system or for the target system \(where the entities were deleted from\) in the previous jobs, and then there were no such irreparable errors in the job, which deleted the entities from the target system. Irreparable errors are connection issues, like connection reset, some timeout exception, rate limits \(response code 429 from the API of a provisioning system\), and others.
@@ -393,7 +393,7 @@ As a last step, you can analyze the job logs of the previous jobs for some issue
 
 ## How to Prevent Incorrect Entity Deletion in These Cases
 
-By following some of the hins bellow you can avoid unintended deletion of entities from your target systems:
+By following some of the hints bellow, you can avoid unintended deletion of entities from your target systems:
 
 -   Add the standard property `ips.delete.threshold.users` \(or`ips.delete.threshold.groups` for groups\) to your target system configuration before running a provisioning. For more information, see the blog [Thresholds Prevent Unintended Deletion of Users when Provisioning with SAP Cloud Identity Services](https://community.sap.com/t5/technology-blogs-by-sap/thresholds-prevent-unintended-deletion-of-users-when-provisioning-with-sap/ba-p/13584176).
 -   Migrate your Identity Provisioning tenant from SAP BTP Neo environment to SAP Cloud Identity Infrastructure, where you will be able to use more features \(like the validate job, seeing skipped entities for a job execution, and many others\). For more information, see the blog [Go for your quick win! Migrate Identity Provisioning tenants to SAP Cloud Identity infrastructure.](https://community.sap.com/t5/technology-blogs-by-sap/go-for-your-quick-win-migrate-identity-provisioning-tenants-to-sap-cloud/ba-p/13536739)

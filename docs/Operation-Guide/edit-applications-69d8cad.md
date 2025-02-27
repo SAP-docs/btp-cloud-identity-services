@@ -509,6 +509,9 @@ To edit the application configurations, proceed as follows:
     -   SAML 2.0 \(default selection\)
     -   OpenID Connect
 
+    > ### Note:  
+    > There are applications that show the ***SAML 2.0 & OpenID Connect*** protocol type. You can't create such applications.
+
     > ### Remember:  
     > If you change the parent application, the child application will inherit the protocol from the new parent. To change the protocol, first finish the editing and then repeat the procedure again, this time changing the protocol.
 

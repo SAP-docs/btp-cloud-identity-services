@@ -9,7 +9,7 @@ Follow this procedure to set up SAP Business Network as а source system.
 ## Context
 
 > ### Note:  
-> Currently, SAP Business Network connector is only available for selected customers who are approached by SAP. For more information, see [3305074](https://me.sap.com/notes/3305074)
+> Currently, the SAP Business Network connector cannot be used by customers due to API access constraints. SAP is working on resolving these constraints to make the connector fully operational and accessible.
 
 SAP Business Network, formerly known as Ariba Network, is a cloud-based offering that makes it possible for buyers and suppliers to collaborate on transactions, strengthen their relationships, and discover new business opportunities.
 

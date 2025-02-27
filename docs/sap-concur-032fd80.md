@@ -436,9 +436,7 @@ To create SAP Concur as a target system, proceed as follows:
 
     Other possible values:
 
-    -   emails\[0\].value
-
-    -   userName,emails\[0\].value
+    -   userName
 
     -   Another unique attribute that supports filtering.
 

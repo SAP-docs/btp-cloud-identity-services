@@ -1,33 +1,32 @@
-<!-- loiofb972445c96d44c28aafc5bcac4d8b85 -->
+<!-- loio624fff62fe994e749788cc214e8c3e80 -->
 
-# SAP Ariba Category Management
+# Intelligent Opportunity Analyzer
 
-Follow this procedure to set up SAP Ariba Category Management as a proxy system.
+Follow this procedure to set up intelligent opportunity analyzer as a proxy system.
 
 
 
-<a name="loiofb972445c96d44c28aafc5bcac4d8b85__prereq_gvh_45y_rdb"/>
+<a name="loio624fff62fe994e749788cc214e8c3e80__prereq_wby_s2m_22c"/>
 
 ## Prerequisites
 
+-   You have added *Intelligent Opportunity Analyzer* with *scim* plan in the *Entitlements* page of your subaccount as described in.
+
+-   You have created an instance and generated a service key for the *scim* service plan of *Intelligent Opportunity Analyzer*. For more information, see [Assigning the Entitlements for Intelligent Opportunity Analyzer to Your Subaccounts](https://help.sap.com/docs/categories/sap-ariba-category-management-configuration-guide/assigning-entitlement-for-intelligent-opportunity-analyzer?locale=en-US&version=2411).
+
 > ### Restriction:  
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.
-
-You have created an instance and generated a service key for the scim service plan of SAP Ariba Category Management. For more information, see [Creating a SAP Ariba Category Management SCIM Service Instance in Your Subaccount](https://help.sap.com/docs/categories/sap-ariba-category-management-configuration-guide/setting-up-user-replication?version=Latest).
-
-> ### Note:  
-> Administrators of bundle tenants on Neo environment should enable the *Manage OAuth Clients* permission, as described in *Neo Environment* section in [Manage Authorizations](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/544de9b504214372b4479dc1f6b08cca.html "Manage the authorizations of Identity Provisioning administrators, when your bundle or standalone tenant is running on SAP BTP, Neo environment.") :arrow_upper_right:.
 
 
 
 ## Context
 
-SAP Ariba Category Management is a cloud-based solution that enables organizations to define and manage purchasing categories and provides actionable market intelligence, category insights, and various tools and templates for developing and operationalizing category strategies that drive business value and performance. This business solution is built on SAP Business Technology Platform \(BTP\).
+Intelligent opportunity analyzer is a service that comes integrated with SAP Ariba Category Management for identifying and managing opportunities that lead to improving the performance of a purchasing category.
 
-You can use Identity Provisioning to configure SAP Ariba Category Management as a proxy system in hybrid scenarios. For example, when SAP Ariba Category Management is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision users to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users back to the SAP Ariba Category Management.
+You can use Identity Provisioning to configure intelligent opportunity analyzer as a proxy system in hybrid scenarios. For example, when intelligent opporunity analyzer is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision users to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users back to the intelligent opportunity analyzer.
 
 > ### Note:  
-> SAP Ariba Category Management does not support groups.
+> Intelligent opporunity analyzer does not support groups.
 
 
 
@@ -86,7 +85,7 @@ You can use Identity Provisioning to configure SAP Ariba Category Management as 
     -   [Access Identity Provisioning UI of Bundle Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/7ab5884ffbc44461a57622d2f633e57c.html "Access the Identity Provisioning UI when the service is bundled as part of an SAP cloud solution's license.") :arrow_upper_right:
     -   [Access Identity Provisioning UI of Standalone Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/61fd82ed48ab42b2bc74626926c1722c.html "Access the Identity Provisioning user interface as a standalone product.") :arrow_upper_right:
 
-5.  Add *SAP Ariba Category Management* as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
+5.  Add *Intelligent Opportunity Analyzer* as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
 6.  Choose the *Properties* tab to configure the connection settings for your system.
 
@@ -193,26 +192,24 @@ You can use Identity Provisioning to configure SAP Ariba Category Management as 
     </td>
     <td valign="top">
     
-    Enter the OAuth 2.0 Token Service URL. This is the value from the *url* field of the service key plus `/oauth/token` 
+    Enter the OAuth 2.0 Token Service URL. This is the value from the *url* field of the service key. Ensure to append the value `/oauth/token?grant_type=client_credentials`.
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    \(Optional\) `cm.user.filter`
+    \(Optional\) `ioa.user.filter`
     
     </td>
     <td valign="top">
     
-    When specified, only those SAP Ariba Category Management users matching the filter expression will be read. For example:
+    When specified, only those intelligent opportunity analyzer users matching the filter expression will be read. For example:
 
     -   *userName eq "SmithJ"*
 
     -   *emails.value eq "john.doe@example.com"*
 
-    -   *emails.value eq "john.doe@example.com" or emails.value eq "john.d@example.com" or emails.value eq "j.doe@example.com"*
-
 
 
     
@@ -221,7 +218,7 @@ You can use Identity Provisioning to configure SAP Ariba Category Management as 
     <tr>
     <td valign="top">
     
-    \(Optional\) `cm.user.unique.attribute`
+    \(Optional\) `ioa.user.unique.attribute`
     
     </td>
     <td valign="top">
@@ -243,35 +240,14 @@ You can use Identity Provisioning to configure SAP Ariba Category Management as 
 
 7.  Configure the transformations.
 
-    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Ariba Category Management* proxy system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
+    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *Intelligent Opportunity Analyzer* proxy system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
-    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP Ariba Category Management system. For more information, see:
+    You can change the default transformation mapping rules to reflect your current setup of entities in your intelligent opportunity analyzer system. For more information, see:
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    [SCIM APIs for SAP Ariba Category Management](https://help.sap.com/docs/categories/sap-ariba-category-management-configuration-guide/scim-apis-for-sap-ariba-category-management?state=latest)
-
-    **User Update and Uniqueness**
-
-    The write transformation of SAP Ariba Category Management supports two user unique attributes for managing conflict resolution: *username* and *email*. The username is a mandatory attribute, while the email is an optional, multivalue attribute, indicating that a user may have multiple unique emails.
-
-    The uniqueness of a user in the target system is determined not only by the individual attributes or the combination of both, but also by considering whether one or multiple existing users in the target system share the same values for these unique attributes. Have in mind the following specifics when updating an existing user in the target system, in accordance with the configuration of the `cm.user.unique.attribute` property:
-
-    -   When `cm.user.unique.attribute`= *userName*
-
-        If a user in the source system, with a specific username and an email, matches an existing user in the target system by the same email, but a different userName, the user provisioning will fail. In this case, Identity Provisioning will try to create a new user but will fail, since a user with the same email already exists.
-
-    -   When `cm.user.unique.attribute`= *emails\[\*\].value*
-
-        If a user in the source system, with a specific username and an email, matches an existing user in the target system by the same username, but a different email, the user provisioning will fail. In this case, Identity Provisioning will try to create a new user but will fail, since a user with the same username already exists.
-
-    -   When `cm.user.unique.attribute`= *userName, emails\[\*\].value*
-
-        -   If a user in the source system, with a specific username and multiple emails, matches an existing user in the target system by the same username and at least one identical email, the user in the target system will be updated.
-
-        -   If a user in the source system, with a specific username and multiple emails, matches multiple existing users in the target system \(each sharing one of the multiple emails but having different usernames\), the user provisioning will fail. In this case, the user will neither be created nor updated.
-
-
+    > ### Note:  
+    > The documentation for the Intelligent Opportunity Analyzer API and its integration with Identity Provisioning is still under development. Refer to the [Intelligent Opportunity Analyzer Setup](https://help.sap.com/docs/categories/sap-ariba-category-management-configuration-guide/intelligent-opportunity-analyzer-setup?version=2502) for updates.
 
     **Default read and write transformations**
 
@@ -303,8 +279,12 @@ You can use Identity Provisioning to configure SAP Ariba Category Management as 
     > ```
     > {
     >   "user": {
-    >     "scimEntityEndpoint": "Users",
     >     "mappings": [
+    >       {
+    >         "sourcePath": "$.schemas",
+    >         "preserveArrayWithSingleElement": true,
+    >         "targetPath": "$.schemas"
+    >       },
     >       {
     >         "sourcePath": "$.id",
     >         "targetPath": "$.id",
@@ -312,8 +292,12 @@ You can use Identity Provisioning to configure SAP Ariba Category Management as 
     >       },
     >       {
     >         "sourcePath": "$.meta",
-    >         "targetPath": "$.meta",
-    >         "optional": true
+    >         "targetPath": "$.meta"
+    >       },
+    >       {
+    >         "sourcePath":"$.userName",
+    >         "targetPath":"$.userName",
+    >         "correlationAttribute":true
     >       },
     >       {
     >         "sourceVariable": "entityBaseLocation",
@@ -321,62 +305,71 @@ You can use Identity Provisioning to configure SAP Ariba Category Management as 
     >         "targetVariable": "entityLocationSourceSystem",
     >         "functions": [
     >           {
-    >             "type": "concatString",
-    >             "suffix": "${entityIdSourceSystem}"
+    >            "type": "concatString",
+    >            "suffix": "${entityIdSourceSystem}"
     >           }
     >         ]
     >       },
     >       {
-    >         "sourcePath": "$.schemas",
-    >         "targetPath": "$.schemas",
-    >         "preserveArrayWithSingleElement": true
+    >         "sourcePath":"$.loginName",
+    >         "targetPath":"$.loginName",
+    >         "optional":true
     >       },
     >       {
-    >         "sourcePath": "$.userName",
-    >         "targetPath": "$.userName",
-    >         "correlationAttribute": true
+    >         "sourcePath":"$.name.givenName",
+    >         "targetPath":"$.name.givenName",
+    >         "optional":true
     >       },
     >       {
-    >         "sourcePath": "$.externalId",
-    >         "targetPath": "$.externalId",
-    >         "optional": true
+    >         "sourcePath":"$.name.familyName",
+    >         "targetPath":"$.name.familyName",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.name.formatted",
+    >         "targetPath":"$.name.formatted",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.name.middleName",
+    >         "targetPath":"$.name.middleName",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.name.honorificPrefix",
+    >         "targetPath":"$.name.honorificPrefix",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.name.honorificSuffix",
+    >         "targetPath":"$.name.honorificSuffix",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.emails",
+    >         "targetPath":"$.emails",
+    >         "preserveArrayWithSingleElement":true
+    >       },
+    >       {
+    >         "sourcePath":"$.emails[?(@.primary== true)].value",
+    >         "correlationAttribute":true
+    >       },
+    >       {
+    >         "sourcePath":"$.active",
+    >         "targetPath":"$.active"
+    >       },
+    >       {
+    >         "sourcePath":"$.displayName",
+    >         "targetPath":"$.displayName",
+    >         "optional":true
     >       },
     >       {
     >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.name.givenName",
-    >         "targetPath": "$.name.givenName",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.name.familyName",
-    >         "targetPath": "$.name.familyName",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.emails",
-    >         "targetPath": "$.emails",
-    >         "preserveArrayWithSingleElement": true,
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.emails[?(@.primary== true)].value",
     >         "optional": true,
-    >         "correlationAttribute": true
-    >       },
-    >       {
-    >         "sourcePath": "$.active",
-    >         "targetPath": "$.active"
-    >       },
-    >       {
-    >         "sourcePath": "$.displayName",
-    >         "targetPath": "$.displayName",
-    >         "optional": true
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
     >       }
-    >     ]
+    >     ],
+    >     "scimEntityEndpoint": "Users"
     >   }
     > }
     > ```
@@ -389,61 +382,79 @@ You can use Identity Provisioning to configure SAP Ariba Category Management as 
     > ### Code Syntax:  
     > ```
     > {
-    >     "user": {
-    >         "scimEntityEndpoint": "Users",
-    >         "mappings": [
-    >             {
-    >                 "constant": [
-    >                     "urn:ietf:params:scim:schemas:core:2.0:User"
-    >                 ],
-    >                 "targetPath": "$.schemas"
-    >             },
-    >             {
-    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
-    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
-    >                 "optional": true
-    >             },
-    >             {
-    >                 "sourceVariable": "entityIdTargetSystem",
-    >                 "targetPath": "$.id"
-    >             },
-    >             {
-    >                 "sourcePath": "$.userName",
-    >                 "targetPath": "$.userName"
-    >             },
-    >             {
-    >                 "sourcePath": "$.name.familyName",
-    >                 "targetPath": "$.name.familyName",
-    >                 "optional": true
-    >             },
-    >             {
-    >                 "sourcePath": "$.name.givenName",
-    >                 "targetPath": "$.name.givenName",
-    >                 "optional": true
-    >             },
-    >             {
-    >                 "sourcePath": "$.displayName",
-    >                 "targetPath": "$.displayName",
-    >                 "optional": true
-    >             },
-    >             {
-    >                 "sourcePath": "$.active",
-    >                 "targetPath": "$.active",
-    >                 "optional": true
-    >             },
-    >             {
-    >                 "condition": "$.emails[0].length() > 0",
-    >                 "targetPath": "$.emails[0].primary",
-    >                 "constant": true
-    >             },
-    >             {
-    >                 "sourcePath": "$.emails",
-    >                 "preserveArrayWithSingleElement": true,
-    >                 "optional": true,
-    >                 "targetPath": "$.emails"
-    >             }
-    >         ]
-    >     }
+    >   "user":{
+    >     "mappings":[
+    >      {
+    >        "constant": [
+    >          "urn:ietf:params:scim:schemas:core:2.0:User"
+    >         ],
+    >         "targetPath": "$.schemas"
+    >       },
+    >       {
+    >         "sourceVariable": "entityIdTargetSystem",
+    >         "targetPath": "$.id"
+    >       },
+    >       {
+    >         "sourcePath": "$.userName",
+    >         "targetPath": "$.userName"
+    >       },
+    >       {
+    >         "sourcePath": "$.emails",
+    >         "targetPath": "$.emails",
+    >         "preserveArrayWithSingleElement": true
+    >       },
+    >       {
+    >         "sourcePath":"$.loginName",
+    >         "targetPath":"$.loginName",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.name.givenName",
+    >         "targetPath":"$.name.givenName",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.name.familyName",
+    >         "targetPath":"$.name.familyName",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.name.formatted",
+    >         "targetPath":"$.name.formatted",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.name.middleName",
+    >         "targetPath":"$.name.middleName",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.name.honorificPrefix",
+    >         "targetPath":"$.name.honorificPrefix",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.name.honorificSuffix",
+    >         "targetPath":"$.name.honorificSuffix",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.active",
+    >         "targetPath":"$.active"
+    >       },
+    >       {
+    >         "sourcePath":"$.displayName",
+    >         "targetPath":"$.displayName",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
+    >       }
+    >     ],
+    >     "scimEntityEndpoint": "Users"
+    >   }
     > }
     > ```
 
@@ -473,7 +484,7 @@ You can use Identity Provisioning to configure SAP Ariba Category Management as 
 
 
 
-<a name="loiofb972445c96d44c28aafc5bcac4d8b85__postreq_cf4_lgj_kfb"/>
+<a name="loio624fff62fe994e749788cc214e8c3e80__postreq_cf4_lgj_kfb"/>
 
 ## Next Steps
 
@@ -489,9 +500,4 @@ To see an example with SAP Identity Management, see [Hybrid Scenario: SAP Identi
 > For example: **GET** *https://ipsproxyabcd12345-xyz789.dispatcher.cn1.platform.sapcloud.cn/ipsproxy/api/v1/scim/bbb111aa-1234-aaaa-7777-1234567abcde/Users/s123456789*
 > 
 > To learn more, see: [Proxy Systems](proxy-systems-b10d68a.md)
-
-**Related Information**  
-
-
-[User Replication Setup](https://help.sap.com/docs/categories/sap-ariba-category-management-configuration-guide/sap-cloud-identity-services-setup?version=latest)
 
