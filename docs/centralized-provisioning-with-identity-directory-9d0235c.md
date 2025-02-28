@@ -700,7 +700,7 @@ To achieve this, we suggest that you configure two pairs of source-target system
     >  .....
     > ```
 
-4.  Run the provisioning job from Microsfot Entra ID and replicate the identities to the identity directory instance.
+4.  Run the provisioning job from Microsoft Entra ID and replicate the identities to the identity directory instance.
 
 5.  Create the second pair of source-target systems: *SAP SuccessFactors* \> *Local Identity Directory 2*.
 
@@ -1372,4 +1372,15 @@ You can use the identity directory as a SCIM 2.0 based proxy connector. Before e
 ### Results
 
 When a proxy system is connected to an external backend system \(in the case of SAP Identity Management this means the exported CSV file is imported into the Identity Management Admin UI and a repository is configured\), you can start managing the users and groups into this external system. Usually, the first operation is the initial load of the existing entities into your external system. When this load has finished, changes in the external system, such as creating new users or updating existing ones, can trigger CRUD requests back to the proxy system.
+
+**Related Information**  
+
+
+[Business-to-Consumer Scenario](business-to-consumer-scenario-fd11ee2.md "The business-to-consumer scenario is related to any actions performed by the consumer, such as registration to applications and consumer retailing. In this scenario, administrators facilitate the consumer processes, but they do not act on the consumer's behalf.")
+
+[Business-to-Business Scenario](business-to-business-scenario-3908c37.md "The business-to-business scenario is related to services for business partners. Unlike the business-to-consumer scenario, consumer self-registration is not allowed, and the administrator of the company is usually the one that triggers the user registration process.")
+
+[Business-to-Employee Scenario](business-to-employee-scenario-3aecb4c.md "The business-to-employee scenario is related to services for employees of an organization. Employees can access various applications with one logon. Furthermore, administrators can upload employees data by using the user import functionality.")
+
+[Central Store-Based Provisioning](central-store-based-provisioning-33eae39.md "Central store-based provisioning enables the automatic provisioning of application-specific groups from the Identity Directory to the target systems whenever changes occur. These changes include user assignments or modifications of group attributes.")
 
