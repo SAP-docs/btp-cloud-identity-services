@@ -6,7 +6,7 @@ Tenants are deployed on the productive domains `accounts.ondemand.com` and `acco
 
 
 
-The productive domain is available on a country/regional basis, where each country/region represents the locations of data centers.The productive domain represents the productive environment. It can be used by customer and partner accounts only.
+The productive domain is available on a country/regional basis, where each country/region represents the locations of data centers. The productive domain represents the productive environment. It can be used by customer and partner accounts only.
 
 A customer or partner account is associated with a particular data center and this is independent of your own location. For example, you could be located in North America, but operate your account in Europe. Thus, you use a data center that is situated in Europe.
 

@@ -100,6 +100,77 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Authorizations Based on Policies
+
+</td>
+<td valign="top">
+
+You can now restrict the access to the administration console only to one user type via the new attribute that is supported for authorizations based on policies - `user.type`. See [Configure User Authorizations](Operation-Guide/configure-user-authorizations-424b64c.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2502b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Regular Upgrade
 
 </td>
@@ -257,7 +328,7 @@ Info only
 </td>
 <td valign="top">
 
-
+General Availability
 
 </td>
 <td valign="top">
@@ -384,12 +455,12 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-Authorizations Based on Policies
+SAP Cloud Identity Services - Identity Authentication integration with SAP Cloud ALM
 
 </td>
 <td valign="top">
 
-You can now restrict the access to the administration console only to one user type via the new attribute that is supported for authorizations based on policies - `user.type`. See [Configure User Authorizations](Operation-Guide/configure-user-authorizations-424b64c.md).
+SAP Cloud Identity Services - Identity Authentication is now integrated with SAP Cloud ALM and you can use the Configuration & Security Analysis app. See [Monitoring with SAP Cloud ALM](Monitoring-and-Reporting/monitoring-with-sap-cloud-alm-bc835e5.md).
 
 </td>
 <td valign="top">
@@ -1952,7 +2023,7 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Cloud Identity Services 
 
 </td>
 <td valign="top">
@@ -2029,7 +2100,7 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Cloud Identity Services 
 
 </td>
 <td valign="top">
@@ -2106,7 +2177,7 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Cloud Identity Services 
 
 </td>
 <td valign="top">

@@ -2,7 +2,7 @@
 
 # Reset Password
 
-If you don't know your current password, you can reset your password.
+If you don't know your current password, you can reset it.
 
 
 
