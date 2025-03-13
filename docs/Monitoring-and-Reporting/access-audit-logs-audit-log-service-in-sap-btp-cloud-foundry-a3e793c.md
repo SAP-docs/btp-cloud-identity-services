@@ -1057,6 +1057,9 @@ To view the audit logs, follow the procedures below:
     
 7.  Save your changes.
 
+    > ### Note:  
+    > The configuration will be enabled with the next 15 minutes.
+
     > ### Caution:  
     > If your SAP Cloud Identity Services tenant is migrated to a new region, you must remove the current configuration and repeat procedure with the new region.
 
@@ -1072,18 +1075,18 @@ To view the audit logs, follow the procedures below:
 
 ## Results
 
-The configuration will be enabled with the next 15 minutes. Upon accessing the Audit Log Viewer, you have the option to filter the logs based on date and keyword filters.
+Upon accessing the Audit Log Viewer, you have the option to filter the logs based on date and keyword filters.
 
-The audit logs provide information about the event category and timestamp, the event and object type, who performed the action and others. For example:
+The audit logs provide information about the event category and timestamp, the event and object type, who performed the action and others.
 
--   *Category*: audit.security-events \(logged as security event message\), audit.configuration \(logged as configuration modification message\), audit.data-access \(logged as data access message\).
-
--   *Event Type*: JOB\_TRIGGERED, SYSTEM\_UPDATED, SYSTEM\_CREATED, SYSTEM\_DELETED
-
--   *Object Type*: Job, System
-
--   *ObjectAttribute.performed-by-user*: P123456
-
+> ### Example:  
+> -   *Category*: audit.security-events \(logged as security event message\), audit.configuration \(logged as configuration modification message\), audit.data-access \(logged as data access message\).
+> 
+> -   *Event Type*: JOB\_TRIGGERED, SYSTEM\_UPDATED, SYSTEM\_CREATED, SYSTEM\_DELETED
+> 
+> -   *Object Type*: Job, System
+> 
+> -   *ObjectAttribute.performed-by-user*: P123456
 
 For more information about the security events that are logged by Identity Authentication, see [Auditing and Logging Information](../Security/auditing-and-logging-information-ac5537b.md).
 

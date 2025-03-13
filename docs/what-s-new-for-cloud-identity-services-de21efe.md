@@ -86,6 +86,719 @@ Version
 <tr>
 <td valign="top">
 
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2502b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Identity Federation for Applications
+
+</td>
+<td valign="top">
+
+You can enable identity federation for an application to override the identity federation settings on the configured corporate identity provider for the application. See [Configure Identity Federation for Applications](Operation-Guide/configure-identity-federation-for-applications-1e8e34e.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2502b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAML 2.0 Configuration
+
+</td>
+<td valign="top">
+
+The SAML 2.0 configuration page on application level has been refactored. Now you can separately configure the metadata and certificates setting. See [Configure SAML 2.0 Service Provider](Operation-Guide/configure-saml-2-0-service-provider-51f1f75.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2502b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+-   
+
+
+</td>
+<td valign="top">
+
+Attributes Based on Flexible Expressions
+
+</td>
+<td valign="top">
+
+Cloud Identity Services now supports a new attribute based on flexible expressions for the application - `Application Groups` to list the application-specific groups to which the user is assigned to. See [Configuring Attributes Based on Flexible Expressions](Operation-Guide/configuring-attributes-based-on-flexible-expressions-a2f1e46.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2502b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Attributes Based on Flexible Expressions
+
+</td>
+<td valign="top">
+
+The display name of `Groups` attribute based on flexible expressions for the application is renamed to `All Groups`. See [Configuring Attributes Based on Flexible Expressions](Operation-Guide/configuring-attributes-based-on-flexible-expressions-a2f1e46.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2502b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Attributes
+
+</td>
+<td valign="top">
+
+Cloud Identity Services now supports a new local user attribute - `Application Groups` to list the application-specific groups to which the user is assigned to. See [Configuring User Attributes from the Identity Directory](Operation-Guide/configuring-user-attributes-from-the-identity-directory-d361407.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2502b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Attributes
+
+</td>
+<td valign="top">
+
+The name of the `Groups` user attribute is renamed to `All Groups`. See [Configuring User Attributes from the Identity Directory](Operation-Guide/configuring-user-attributes-from-the-identity-directory-d361407.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2502b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Warning of unsupported entity
+
+</td>
+<td valign="top">
+
+A warning message alerts you when adding an unsupported entity - such as a user, group, or role - in the transformations. While the entity will be accepted, it will not be applied.
+
+See [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2502b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Support for externalId in UUID format
+
+</td>
+<td valign="top">
+
+When provisioning users to SAP Build Work Zone, standard edition, the `externalId` must be in UUID format.
+
+See [SAP Build Work Zone, standard edition](sap-build-work-zone-standard-edition-8d6586f.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2502b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+No restart for failed job
+
+</td>
+<td valign="top">
+
+If a provisioning job from a source system to multiple target systems stops due to an error in one of the targets, it will not resume for that specific target upon restart. Previously, the job would continue after a restart.
+
+See [Monitor Provisioning Job Logs](Monitoring-and-Reporting/monitor-provisioning-job-logs-e5b5176.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2502b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Cloud Identity Services 
 
 </td>
@@ -570,17 +1283,17 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2025-02-25
+2025-03-11
 
 </td>
 <td valign="top">
 
-2025-03-25
+2025-04-08
 
 </td>
 <td valign="top">
 
-2503a
+2503b
 
 </td>
 </tr>

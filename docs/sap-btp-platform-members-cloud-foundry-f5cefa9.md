@@ -20,7 +20,7 @@ Follow this procedure to set up a SAP BTP Platform Members \(Cloud Foundry\) as 
 
 The Cloud Foundry environment enables you to create polyglot cloud applications in Cloud Foundry. It contains the SAP BTP, Cloud Foundry runtime service, which is based on the open-source application platform managed by the Cloud Foundry Foundation. For more information, see [Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/cloud-foundry-environment?version=Cloud).
 
-When you enable the Cloud Foundry environment in your subaccount, the system automatically creates a Cloud Foundry organization for you. You are able to add platform users as org members and space members and assign roles to grant these users platform access.
+When you enable the Cloud Foundry environment in your subaccount, the system automatically creates a Cloud Foundry organization for you. You are able to add platform users as org members and space members and assign roles to grant these users platform access. For more information, see [Valid role types](https://v3-apidocs.cloudfoundry.org/version/3.126.0/index.html#valid-role-types).
 
 SAP BTP Platform Members \(Cloud Foundry\) connector manages org and space members, as well as their role assignments, in the Cloud Foundry environment of a multi-environment subaccount, where a **single** SAP Cloud Identity Services tenant acts as custom identity provider. We recommend that you use the Identity Provisioning service enabled in this SAP Cloud Identity Services tenant.
 
@@ -29,7 +29,19 @@ SAP BTP Platform Members \(Cloud Foundry\) connector manages org and space membe
 > 
 > For more information, see [Migrate Identity Provisioning Bundle Tenant](https://help.sap.com/docs/identity-provisioning/identity-provisioning/migrate-identity-provisioning-bundle-tenant).
 
-In SAP BTP Platform Members \(Cloud Foundry\), groups correspond to roles in particular Cloud Foundry orgs or spaces, thus group members are user assignments of a role in a specific Cloud Foundry org or space.
+In SAP BTP Platform Members \(Cloud Foundry\), groups correspond to roles in particular Cloud Foundry orgs or spaces, thus group members are user assignments of a role in a specific Cloud Foundry org or space. Group names must follow a defined pattern, explained below, to ensure the correct mapping and provisioning of users and their role assignments to the relevant Cloud Foundry organization or space.
+
+> ### Note:  
+> The attribute *name*, defined within the *urn:sap:cloud:scim:schemas:extension:custom:2.0:Group* schema, is used to map the users and user assignments of a role to the relevant Cloud Foundry organization or space. The group names follow the respective patterns:
+> 
+> -   organization group name: `<org_ID> <org_role>`
+> -   space group name: `<org_ID> <space_ID> <space_role>`, where `space_ID` can be retrieved using the Cloud Foundry Command Line Interface by executing the command `cf space --guid`.
+> 
+> 
+> Whereas the group display names adhere to the following patterns:
+> 
+> -   organization group display name: `<btp.cf.pm.group.prefix>_<btp.cf.pm.landscape>:<org_name>:<org_role>`
+> -   space group display name: `<btp.cf.pm.group.prefix>_<btp.cf.pm.landscape>:<org_name>:<space_name>:<space_role>`
 
 The target system consumes User Account and Authentication API and Cloud Foundry V3 API provided by Cloud Foundry.
 
@@ -239,17 +251,17 @@ Follow the steps below to create SAP BTP Platform Members \(Cloud Foundry\) as a
 
     Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP BTP Platform Members \(Cloud Foundry\)* target system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
-    -   **Mapping logic** – The behavior of the default transformation logic is to map all attributes from the internal SCIM representation to the SAP BTP Platform Members \(Cloud Foundry\) target attributes.
-    -   **User offboarding** – If a user has been deleted from the source system, this change is recognized, and the user is deleted from the SAP BTP Platform Members \(Cloud Foundry\) target system too.
-
-    > ### Note:  
-    > Update operation is skipped for users in the default write transformation.
-
     You can change the default transformation mapping rules to reflect your current setup of entities in your SAP BTP Platform Members \(Cloud Foundry\) system. For more information, see:
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
     [Cloud Foundry V3 API](https://v3-apidocs.cloudfoundry.org/version/3.178.0/index.html)
+
+    -   **Mapping logic** – The behavior of the default transformation logic is to map all attributes from the internal SCIM representation to the SAP BTP Platform Members \(Cloud Foundry\) target attributes.
+    -   **User offboarding** – If a user has been deleted from the source system, this change is recognized, and the user is deleted from the SAP BTP Platform Members \(Cloud Foundry\) target system too.
+
+    > ### Note:  
+    > Update operation is skipped for users in the default write transformation.
 
     > ### Caution:  
     > Keep in mind that when you add or delete users and user role assignments in SAP BTP Platform Members \(Cloud Foundry\), the operations order must adhere to the Cloud Foundry Environment hierarchy. In this case, you can expect the following behavior:
@@ -343,10 +355,6 @@ Follow the steps below to create SAP BTP Platform Members \(Cloud Foundry\) as a
     >       {
     >         "scope": "createEntity",
     >         "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
-    > 	   //The attribute group extension name is used to map the users and user assignments of a role 
-    > 	   //to the relevant Cloud Foundry organization or space.
-    > 	   //the organization group extension name follows the pattern: <org_ID> <org_role>
-    > 	   //the space group extension name follows the pattern: <org_ID> <space_ID> <space_role>
     >         "targetPath": "$.id",
     >         "targetVariable": "entityIdTargetSystem"
     >       },

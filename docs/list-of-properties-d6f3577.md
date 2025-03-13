@@ -2861,7 +2861,7 @@ The provisioning system may override your custom HTTP headers, if specific heade
 
     For more information, see SAP note [3092730](https://me.sap.com/notes/3092730).
 
-    In SAP Analytics Cloud \(SCIM API version 2\), this behavior is handled by `sac.support.patch.operation` property.
+    In SAP Analytics Cloud \(SCIM API version 2\), this behavior is managed by `sac.support.patch.operation` property.
 
 
 **System Role:** Source, Target, Proxy
@@ -10106,6 +10106,9 @@ If Identity Provisioning tries to provision a user that already exists in the ta
 SAP Build Work Zone, standard edition supports the following unique attributes which are automatically filled in when the target system is added in the service UI:
 
 `emails[0].value,['urn:ietf:params:scim:schemas:extension:2.0:mapping']['providerId'],externalId`
+
+> ### Note:  
+> SAP Build Work Zone, standard edition, only supports `externalId` of type UUID.
 
 -   If the user has an `externalId`, the conflict is resolved by `externalId` and `providerId`.
 

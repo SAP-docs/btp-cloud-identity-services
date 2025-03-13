@@ -13,11 +13,11 @@ If you don't know your current password, you can reset it.
 
 If you don't know your current password, follow the *Forgot Password* link in the logon page of the application. You can choose to trigger the **Forgot Password** process, and to receive an email with instructions how to reset your password, or to answer security questions to reset your password.
 
-> ### Tip:  
-> If you don’t receive the reset password link, check your spam folder. If the email is not there, choose *Return to Sign In* and trigger the process again. If the problem continues, contact your administrator for further assistance.
-
 > ### Note:  
 > The security questions possibility is optional and must be offered by the application.
+
+> ### Tip:  
+> If you don’t receive the reset password link, check your spam folder. If the email is not there, choose *Return to Sign In* and trigger the process again. If the problem continues, contact your administrator for further assistance.
 
 
 

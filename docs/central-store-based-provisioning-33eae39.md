@@ -27,7 +27,9 @@ To ensure the groups immediate provisioning to the target systems, the following
 
 ## Context
 
-The application-specific groups can be created initially in the Identity Directory by running a provisioning job from a specified source system or by using the SAP Cloud Identity Services administration console. For more information, see [Groups](groups-d93be69.md). When provisioning application-specific groups from the Identity Directory to the target systems, groups that do not exist in the target can be created only after they are modified in the source system. New groups in the Identity Directory will not be provisioned unless they are changed.
+You can initially create application-specific groups in the Identity Directory by running a provisioning job from a given source system or by using the SAP Cloud Identity Services administration console. For more information, see [Groups](groups-d93be69.md).
+
+When provisioning these groups from the Identity Directory to target systems, groups that do not exist in the target can only be created after they are modified in the source system. New groups in the Identity Directory will not be provisioned unless they have been changed. Additionally, creating and updating application-specific groups through user assignments require that users already exist in the target system. Central store-based provisioning does not create users in the target.
 
 > ### Note:  
 > Application-specific groups with supported operations `readOnly`, `userOnlyMembership` and `membership` will not be created even if updates are made to the groups. If you try to provision such groups, you will get an ***Entity Failed*** status. For more information, see [Monitor Central Store Logs](Monitoring-and-Reporting/monitor-central-store-logs-9162898.md).
@@ -74,4 +76,6 @@ Once the procedure is executed, any change to an attribute value or a member of 
 [Business-to-Employee Scenario](business-to-employee-scenario-3aecb4c.md "The business-to-employee scenario is related to services for employees of an organization. Employees can access various applications with one logon. Furthermore, administrators can upload employees data by using the user import functionality.")
 
 [Centralized Provisioning with Identity Directory](centralized-provisioning-with-identity-directory-9d0235c.md "Identity Directory is the persistency layer of SAP Cloud Identity Services, providing a central place for storing and managing users and groups. You can use it in centralized provisioning scenarios for managing user access to SAP cloud applications from a single, central location.")
+
+[**Blog Post**: Taking Groups to the Next Level with Application-Specific Groups](https://community.sap.com/t5/technology-blogs-by-sap/taking-groups-to-the-next-level-with-application-specific-groups/ba-p/13956003)
 

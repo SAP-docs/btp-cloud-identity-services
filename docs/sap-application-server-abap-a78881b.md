@@ -138,6 +138,8 @@ SAP Application Server ABAP \(AS ABAP\) offers a user store and user administrat
     </td>
     <td valign="top">
     
+    The property is configured during destination creation in SAP BTP cockpit.
+
     Provide the client to be used in the ABAP system. Valid format is a three-digit number.
     
     </td>
@@ -145,7 +147,7 @@ SAP Application Server ABAP \(AS ABAP\) offers a user store and user administrat
     <tr>
     <td valign="top">
     
-    **`jco.destination.proxy_type`**
+    **`Proxy Type`**
     
     </td>
     <td valign="top">
@@ -174,6 +176,8 @@ SAP Application Server ABAP \(AS ABAP\) offers a user store and user administrat
     <td valign="top">
     
     Provide the virtual host entry that you have configured in the Cloud Connector → *Access Control* configuration.
+
+    At least one property specifying the target host must be set during destination creation.
     
     </td>
     </tr>
@@ -205,6 +209,8 @@ SAP Application Server ABAP \(AS ABAP\) offers a user store and user administrat
     <td valign="top">
     
     Represents the message server host to be used.
+
+    At least one property specifying the target host must be set during destination creation.
     
     </td>
     </tr>

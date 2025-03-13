@@ -19,7 +19,9 @@ For both, the SAML 2.0 and OpenID Connect applications, you can configure attrib
 > ### Restriction:  
 > \(For OpenID Connect applications\) The following claims can't be set via the configuration of attributes with default values: `iss`, `sub`, `zone_uuid`, `exp`, `nbf`, `iat`, `auth_time`, `nonce`, `acr`, `amr`, `azpacr``cnf`, `azp`, `at_hash`, `c_hash`, `sub_jwk`, and `ias_iss`.
 
-Expand the **Supported Attributes** table below to see the attributes that can take dynamic values:
+
+
+### Supported Attributes
 
 **Supported Attributes**
 
@@ -412,7 +414,7 @@ jobFunction
 <tr>
 <td valign="top">
 
-Groups
+All Groups
 
 </td>
 <td valign="top">
@@ -423,6 +425,18 @@ companyGroups
 > The attributes `companyGroups` and `corporateGroups` support regular expressions, so that they can be filtered.
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Application Groups
+
+</td>
+<td valign="top">
+
+applicationGroups
 
 </td>
 </tr>
@@ -480,7 +494,7 @@ Application Activation Time
 </td>
 <td valign="top">
 
-activation\_time
+activationTime
 
 </td>
 </tr>
