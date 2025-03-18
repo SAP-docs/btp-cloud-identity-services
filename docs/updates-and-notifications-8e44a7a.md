@@ -22,7 +22,7 @@ To get notifications, subscribe for the What's New section of [Cloud Identity Se
 > ### Note:  
 > No service interruption is expected as a result of the updates.
 
-You can find the planned schedule for upcoming releases at SAP Note [3409744](https://me.sap.com/notes/3409744).
+You can find the planned schedule for upcoming releases at SAP Note [3409744](https://me.sap.com/notes/3409744) \(Release Schedule for SAP Cloud Identity Services \(SAP BTP\)\).
 
 
 

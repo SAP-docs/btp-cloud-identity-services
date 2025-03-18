@@ -17,12 +17,12 @@ The concurrent access offers three options:
     No restrictions are applied. The user can sign in from multiple devices and browsers. This is the default setting.
 
 -   **Warning**
--   The user can sign in from only one device or browser at a time during the lifetime of the identity provider \(IdP\) session. If other sessions exist, the user receives a message and will have the option to terminate the other session and sign out.
+-   The user can sign in from only one device or browser at a time during the lifetime of the identity provider \(IdP\) session.. If other sessions exist, the user receives a message and will have the option to terminate the other session and sign out.
 
     To guarantee a consistent behavior for the application, the application session should have the same timeout as the IdP session. For more information about the session management, see [Configure Session Timeout](configure-session-timeout-5ca23e4.md).
 
     > ### Remember:  
-    > If the user chooses the option *Sign Out and Continue*, they can still choose to continue with the new session without terminating the previous one. The system won't Otherwise, if the session automatically. If you want to restrict concurrent access, then you should use the *Error* option terminate the other session and sign out.
+    > If the user chooses the option *Sign Out and Continue*, they can still choose to continue with the new session without terminating the previous one. The system will not terminate the session automatically. If you want to restrict concurrent access, then you should use the *Error* option terminate the other session and sign out.
 
     > ### Caution:  
     > If you have configured a *Warning* concurrent user access option, you must also have a Single Logout Endpoints \(SLO\) URL with a SOAP binding added for the SAML 2.0 application. Otherwise if a user chooses to sign out and continue to new session, an SLO request for the old session won't be sent to the application.. For more information, see [Configure SAML 2.0 Service Provider](configure-saml-2-0-service-provider-51f1f75.md).

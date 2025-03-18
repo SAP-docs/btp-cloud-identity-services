@@ -35,7 +35,7 @@ Logon requests are independent of the authentication mechanism and user type.
 
 To get a tenant, in addition to the test and productive tenants you're already entitled to, use self-service request. You must have a global account that uses one of the consumption-based commercial models: Cloud Platform Enterprise Agreement \(CPEA\) or Pay-As-You-Go for SAP BTP.
 
-For more information, see [General Terms and Conditions for SAP Cloud Services](https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?sort=title_asc&search=General+Terms+and+Conditions)
+For more information, see [SAP Business Technology Platform Service Description Guide](https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?sort=latest_desc&tag=agreements%3Aproduct-use-and-support-terms%2Fservice-description-guides&pdf-asset=369391b0-f27e-0010-bca6-c68f7e60039b&page=1) .
 
 
 

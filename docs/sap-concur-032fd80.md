@@ -683,6 +683,10 @@ To create SAP Concur as a target system, proceed as follows:
     >           }
     >         ]
     >       },
+    > 	 {
+    >      "targetPath": "$.emails[*].primary",
+    >         "type": "remove"
+    >       },
     >       {
     >         "sourcePath": "$.name",
     >         "targetPath": "$.name"

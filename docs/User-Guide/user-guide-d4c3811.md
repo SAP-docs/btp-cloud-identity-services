@@ -120,7 +120,7 @@ Users can use the following self-services:
 
 [Scenarios](../scenarios-fb9898d.md "Identity Authentication supports scenarios for consumers (business-to-consumer scenarios), for partners (business-to-business scenarios), and for employees (business-to-employee scenarios).")
 
-[Multi-Factor Authentication](multi-factor-authentication-0d41cd4.md "This document provides information about the second factor for authentication or how to log on if you are asked to provide a second factor to your primary credentials.")
+[Multi-Factor Authentication](multi-factor-authentication-0d41cd4.md "This document provides information about the second factor for authentication or how to sign in if you are asked to provide a second factor to your primary credentials.")
 
 [Social Authentication](social-authentication-108607a.md "")
 
