@@ -51,5 +51,5 @@ Next time you access the application, you will be logged on automatically. If th
 **Related Information**  
 
 
-[Multi-Factor Authentication](multi-factor-authentication-0d41cd4.md "This document provides information about the second factor for authentication or how to log on if you are asked to provide a second factor to your primary credentials.")
+[Multi-Factor Authentication](multi-factor-authentication-0d41cd4.md "This document provides information about the second factor for authentication or how to sign in if you are asked to provide a second factor to your primary credentials.")
 

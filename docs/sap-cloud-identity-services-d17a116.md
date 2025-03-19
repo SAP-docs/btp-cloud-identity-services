@@ -68,7 +68,7 @@ For more information, see [Security](Security/security-e7a80f1.md).
 
 Explore monitoring and reporting to get information about audit logs, job logs, usage statistics, and more.
 
-For more information, see [Monitoring and Reporting](Monitoring-and-Reporting/monitoring-and-reporting-b8382ee.md).
+For more information, see [Monitoring and Troubleshooting](Monitoring-and-Reporting/monitoring-and-troubleshooting-b8382ee.md).
 
 
 

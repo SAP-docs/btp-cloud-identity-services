@@ -86,13 +86,21 @@ You can create a CSV file using a text editor, for example Notepad. Make sure th
 > ### Example:  
 > The following example illustrates that the number of fields does not match the number of headers \(columns 1 to 5\) at row 3.
 > 
-> > ### Code Syntax:  
-> > ```
-> > col1,col2,col3,col4,col5
-> > A,B,,D,E
-> > L,M,N,,
-> > P,Q,
-> > ```
+> ```
+> col1,col2,col3,col4,col5
+> A,B,,D,E
+> L,M,N,,
+> P,Q,
+> ```
+
+> ### Example:  
+> The following example illustrates how to validate two users with attributes defined in the MS Entra ID source system.
+> 
+> ```
+> userPrincipalName,id,mail,givenName,surname,groups[0].value,groups[1].value
+> ChrisEvans,ec2c28da-a9fe-46c9-876e-564317f9a3af,chris@example.com,Christopher,Evans,Employee,Support
+> MaryWatson,b016ecad-2c30-4fdf-8fb3-117db4911256,mary@example.com,Mary,Watson,Employee,Developer
+> ```
 
 For more information on how to create the CSV files and end-to-end examples, see the blog post [After simulation, try out validation. Identity Provisioning closes the loop with a fresh new test job.](https://blogs.sap.com/2022/11/23/after-simulation-try-out-validation.-identity-provisioning-closes-the-loop-with-a-fresh-new-test-job./?url_id=text-global-profile-inbox-bp-new-in-tag-followed)
 

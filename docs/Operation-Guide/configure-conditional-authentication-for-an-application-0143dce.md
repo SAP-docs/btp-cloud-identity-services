@@ -32,6 +32,8 @@ If apart from *IP Range* the rule contains other conditions, or it is not the fi
 > Rules can be defined only if the default identity provider is Identity Authentication.
 > 
 > If you have already defined rules, they won't be considered if you change the default identity provider from Identity Authentication to a corporate identity provider.
+> 
+> To use two or more corporate identity providers and not the default Identity Authentication, your rules must cover all cases so that no user ends up at Identity Authentication. Once you make your other rules, create a catch-all rule with the IP range `0.0.0.0/0`. Such a rule set at the lowest priority ensures that no users end up at Identity Authentication as the default identity provider.
 
 > ### Note:  
 > If the user is already existing in Identity Authentication, authentication requests via SPNEGO, existing session, remember me, and token will be processed by Identity Authentication in case of successful authentication no matter of the conditional authentication rules. However, when the tenant has trusted certificate configuration, the application is SAML 2.0 type, and a conditional rule is configured, authentication is done by the local identity provider \(IdP\) with the certificate, except for the scenario when the conditional rule has an IP Range defined. In this case, if the rule matches, the user will be sent for authentication to the IdP from the rule.
@@ -288,6 +290,8 @@ Julie Armstrong is a customer of Company A. She accesses the company's applicati
 [Choose Default Identity Provider for an Application](choose-default-identity-provider-for-an-application-e9d8274.md "You choose between a local identity provider and a corporate identity provider to be the default identity provider for your application.")
 
 [Configure Logon via Identity Authentication when a Corporate IdP is Chosen as Default](configure-logon-via-identity-authentication-when-a-corporate-idp-is-chosen-as-default-3a3bf9b.md "You can allow users to log on via Identity Authentication when a corporate identity provider (IdP) is chosen as default.")
+
+[Configure Identity Federation for Applications](configure-identity-federation-for-applications-1e8e34e.md "Tenant administrator can enable identity federation for an application to override the identity federation settings on the configured corporate identity provider for the application.")
 
 [Enable SSO with All Corporate Identity Providers](enable-sso-with-all-corporate-identity-providers-f7ec8d2.md "Tenant administrators can enable IdP-initiated Single Sign-On (SSO) from all configured corporate identity providers (IdPs).")
 

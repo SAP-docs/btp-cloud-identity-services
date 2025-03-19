@@ -282,6 +282,9 @@ You can use the Identity Provisioning UI to configure SAP Build Work Zone, stand
 
     `emails[0].value,['urn:ietf:params:scim:schemas:extension:2.0:mapping']['providerId'],externalId`
 
+    > ### Note:  
+    > SAP Build Work Zone, standard edition, only supports `externalId` of type UUID.
+
     -   If the user has an `externalId`, the conflict is resolved by `externalId` and `providerId`.
 
     -   If the user doesn't have an `externalId`, the conflict is resolved by `email` and `providerId`.

@@ -111,6 +111,8 @@ To search and view the job logs, proceed as follows:
 
     -   **Pending Restart** – provisioning job is temporary paused due to external reasons, not related to your direct interaction \(for example, when Identity Provisioning is currently down\). When the state gets back to normal, the job will automatically resume with a new job ID, continuing from the last processed entity. Its status will switch over to **Running** or **Running with Error**.
 
+        Note that, if a provisioning job from a source system to multiple target systems stops due to an error in one of the targets, it will not resume for that specific target upon restart.
+
 
 
     

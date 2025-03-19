@@ -551,3 +551,5 @@ The newly created schemas appear in the list on the left. The schemas are listed
 
 [Attribute Data Types](https://datatracker.ietf.org/doc/html/rfc7643#section-2-3)
 
+[Identity Directory API - Create Users](https://api.sap.com/api/IdDS_SCIM/resource/createUser)
+

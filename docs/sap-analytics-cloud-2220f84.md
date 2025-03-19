@@ -282,16 +282,18 @@ For more information on how to update to version 2, see [Update Connector Versio
     </td>
     <td valign="top">
     
-    Use this property to control whether teams \(meaning groups\) should keep their role assignments in SAP Analytics Cloud when no roles for a team are provisioned.
+    Use this property to control whether users or teams \(referred to as groups\) should keep their role assignments in SAP Analytics Cloud \(SCIM API version 1\) when no roles are provisioned.
 
     Possible values:
 
-    -   true - Тeams will keep their role assignments when no roles are provisioned.
+    -   true - Users or teams will keep their role assignments when no roles are provisioned.
 
-    -   false - Тeams will lose their role assignments when no roles are provisioned. This is the default value.
+    -   false - Users or teams will lose their role assignments when no roles are provisioned. This is the default value.
 
 
     For more information, see SAP note [3092730](https://me.sap.com/notes/3092730).
+
+    In SAP Analytics Cloud \(SCIM API version 2\), this behavior is managed by `sac.support.patch.operation` property.
     
     </td>
     </tr>
@@ -951,9 +953,11 @@ For more information on how to update to version 2, see [Update Connector Versio
     </table>
     
     > ### Caution:  
-    > When running a provisioning job to update teams \(meaning groups\) that have role assignments in SAP Analytics Cloud, those role assignments will be removed as a result of the update. This behavior, which can cause permission issues for users, is expected because SAP Analytics Cloud role assignments are not available as group parameters in some source systems, such as Identity Authentication.
+    > When running a provisioning job to update users or teams \(referred to as groups\) with role assignments in SAP Analytics Cloud, these role assignments will be removed as a result of the update. This behavior, which can lead to permission issues, is expected because role assignments in SAP Analytics Cloud are not available as group parameters in some source systems, such as Identity Authentication. To preserve existing role assignments when updating users or teams, proceed as follows based on the version of the SAP Analytics Cloud SCIM API:
     > 
-    > To keep the existing role assignments when updating teams, set the`ips.http.header.x-ignore-roles-if-missing` property to *true* in the SAP Analytics Cloud target system. For more information, see the properties table above and the SAP note [3092730](https://me.sap.com/notes/3092730).
+    > -   For SCIM API version 1, set the`ips.http.header.x-ignore-roles-if-missing` property to *true* in the SAP Analytics Cloud target system. For more information, see the properties table above and the SAP note [3092730](https://me.sap.com/notes/3092730).
+    > 
+    > -   For SCIM API version 2, set the `sac.support.patch.operation` property to *true* in the SAP Analytics Cloud target system.
 
     > ### Note:  
     > Updating a user in SAP Analytics Cloud using SCIM API version 2 depends on whether user attributes in SAP Analytics Cloud are mapped to SAML attributes in your identity provider. If this is the case, the values of those attributes are populated by the identity provider and cannot be changed by the SAP Analytics SCIM API or the UI. For more information, see [Mapping SAML Attributes to Users](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/b385d1af93444e9fbc6439d2c6b3c1a7.html#map-saml-attributes-to-users).

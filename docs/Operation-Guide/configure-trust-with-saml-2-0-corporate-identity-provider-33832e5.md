@@ -22,9 +22,9 @@ To use Identity Authentication as a proxy to delegate authentication to an exter
 
 To configure trust with the corporate identity provider, follow the procedures below:
 
-<a name="task_jlj_2rm_qgb"/>
+<a name="chunked_trust_corpidp"/>
 
-<!-- task\_jlj\_2rm\_qgb -->
+<!-- chunked\_trust\_corpidp -->
 
 ## 1. Configure Trust on the Corporate Identity Provider Side
 
@@ -32,7 +32,7 @@ Set up trust with Identity Authentication as a service provider.
 
 
 
-<a name="task_jlj_2rm_qgb__prereq_pyl_55m_qgb"/>
+<a name="chunked_trust_corpidp__prereq_pyl_55m_qgb"/>
 
 ## Prerequisites
 
@@ -40,13 +40,13 @@ You have the SAML 2.0 metadata of Identity Authentication. For more information 
 
 
 
-<a name="task_jlj_2rm_qgb__context_ryl_55m_qgb"/>
+<a name="chunked_trust_corpidp__context_ryl_55m_qgb"/>
 
 ## Context
 
 
 
-<a name="task_jlj_2rm_qgb__steps_syl_55m_qgb"/>
+<a name="chunked_trust_corpidp__steps_syl_55m_qgb"/>
 
 ## Procedure
 
@@ -67,9 +67,9 @@ You have the SAML 2.0 metadata of Identity Authentication. For more information 
     You need the corporate SAML 2.0 metadata for the setup of the trust on Identity Authentication. Optionally, you can make the configurations manually.
 
 
-<a name="task_rkw_frm_qgb"/>
+<a name="chunked_trust_ias"/>
 
-<!-- task\_rkw\_frm\_qgb -->
+<!-- chunked\_trust\_ias -->
 
 ## 2. Configure Trust on Identity Authentication Side
 
@@ -77,7 +77,7 @@ Set up trust with a corporate identity provider in the administration console fo
 
 
 
-<a name="task_rkw_frm_qgb__prereq_z15_55m_qgb"/>
+<a name="chunked_trust_ias__prereq_z15_55m_qgb"/>
 
 ## Prerequisites
 
@@ -90,7 +90,7 @@ Set up trust with a corporate identity provider in the administration console fo
 
 
 
-<a name="task_rkw_frm_qgb__steps_cb5_55m_qgb"/>
+<a name="chunked_trust_ias__steps_cb5_55m_qgb"/>
 
 ## Procedure
 
@@ -173,6 +173,11 @@ Set up trust with a corporate identity provider in the administration console fo
     <td valign="top">
     
     The URL of the identity provider single sign-on endpoint that receives authentication requests.
+
+    > ### Remember:  
+    > Use *HTTP-Redirect* as default binding if you have a link which takes the users to a specific application with a specific corporate identity provider when `Identity Authentication` acts as proxy to multiple corporate identity providers \(IdP\), and the identity providers are more than one. For more information, see [Creating URL To Access Application with Specific Identity Provider](creating-url-to-access-application-with-specific-identity-provider-118f5f4.md).
+
+
     
     </td>
     </tr>
@@ -287,7 +292,7 @@ Set up trust with a corporate identity provider in the administration console fo
 
 
 
-<a name="task_rkw_frm_qgb__postreq_eb5_55m_qgb"/>
+<a name="chunked_trust_ias__postreq_eb5_55m_qgb"/>
 
 ## Next Steps
 

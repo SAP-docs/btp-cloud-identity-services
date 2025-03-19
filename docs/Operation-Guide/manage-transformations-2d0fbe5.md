@@ -20,6 +20,9 @@ You can manage transformations with graphical and JSON text editor. Regardless o
 
 3.  Choose *Edit*. You need to work in edit mode to add, modify and delete entities and their configurations.
 
+    > ### Note:  
+    > When editing the transformations, if you add an entity - such as a user, group or role - that is not supported for the given system type, the related configurations may be accepted but will not be applied.
+
     -   Working with the JSON editor allows you to type changes and perform operations like select, cut, copy and paste the transformation code.
 
     -   Working with the graphical editor allows you to graphically model your changes.

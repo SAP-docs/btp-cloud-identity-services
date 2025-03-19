@@ -423,6 +423,7 @@ In SAP S/4HANA Cloud, business partners are the central master data objects that
     > ```
     > {
     >   "user": {
+    >     "condition": "('%s4hana.cloud.roles.prefix%' === 'null') || ($.groups[?(@.display =~ /%s4hana.cloud.roles.prefix%.*/)] empty false)",
     >     "mappings": [
     >       {
     >         "sourcePath": "$.userName",
@@ -531,7 +532,7 @@ In SAP S/4HANA Cloud, business partners are the central master data objects that
     >     ]
     >   },
     >   "group": {
-    >     "condition": "('%s4hana.cloud.roles.prefix%' === 'null') || ($.displayName =~ /%s4hana.cloud.roles.prefix%.*/)",
+    >     "condition": "isAttributeWithOptionalPrefix($.displayName, s4hana.cloud.roles.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], s4hana.cloud.roles.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >     "mappings": [
     >       {
     >         "sourcePath": "$.displayName",
@@ -539,7 +540,7 @@ In SAP S/4HANA Cloud, business partners are the central master data objects that
     >         "scope": "createEntity",
     >         "functions": [
     >           {
-    >             "condition": "('%s4hana.cloud.roles.prefix%' !== 'null') && (@ =~ /%s4hana.cloud.roles.prefix%.*/)",
+    >             "condition": "isAttributeWithMandatoryPrefix(@, s4hana.cloud.roles.prefix)",
     >             "function": "replaceFirstString",
     >             "regex": "%s4hana.cloud.roles.prefix%",
     >             "replacement": ""
@@ -551,7 +552,7 @@ In SAP S/4HANA Cloud, business partners are the central master data objects that
     >         "targetPath": "$.displayName",
     >         "functions": [
     >           {
-    >             "condition": "('%s4hana.cloud.roles.prefix%' !== 'null') && (@ =~ /%s4hana.cloud.roles.prefix%.*/)",
+    >             "condition": "isAttributeWithMandatoryPrefix(@, s4hana.cloud.roles.prefix)",
     >             "function": "replaceFirstString",
     >             "regex": "%s4hana.cloud.roles.prefix%",
     >             "replacement": ""

@@ -252,7 +252,7 @@ where:
 
 -   */* represents the start and end of the regex
 
--   *.\** represents any symbol
+-   *.\** represents any sequence of characters, including an empty sequence.
 
 -   *<text\>* is a placeholder for the string that you want the value to contain
 

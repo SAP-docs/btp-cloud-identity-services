@@ -31,7 +31,7 @@ The tenant administrator creates the new user with a minimum set of attributes a
 4.  Fill in the required fields in the dialog box.
 
     > ### Note:  
-    > By default the *User Type* field is *Employee*. To change the default setting, choose user type from the drop-down list. The available user types are: *Customer*, *Employee*, *Partner*, *Public*, *External*, and *Onboardee*.
+    > By default the *User Type* field is *Employee*. To change the default setting, choose user type from the drop-down list. The available user types are: *Customer*, *Employee*, *Partner*, *Public*, *External*, *Onboardee*, and *Alumni*.
 
     *Email* field can be skipped when *Set initial password* or *Set status active* is selected, and *Email* is configured as not required in the *Logon Alias* view.
 

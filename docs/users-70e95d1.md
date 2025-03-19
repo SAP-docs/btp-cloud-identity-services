@@ -115,6 +115,18 @@ An employee user that needs a different authentication, because, for example the
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+*Alumni* 
+
+</td>
+<td valign="top">
+
+External users that were once employed by the company but now they are no more part of it. They may need some kind of access.
+
+</td>
+</tr>
 </table>
 
 **Related Information**  

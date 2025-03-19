@@ -56,6 +56,8 @@ There are cases where customer interaction is required. If multiple tenants are 
 > 
 > -   Tenant Migration: If the tenants available for selection are not in your desired region, you can request to migrate a specific tenant to your chosen region by opening an incident for the `BC-IAM-IDS` component.
 > 
+>     **Note**: Be aware that tenant migration requires a carefully planned downtime, which varies based on tenant data like the number of users, groups, and applications connected to the tenant.
+> 
 > -   Multi-Regional Requirements: If your business operates in multiple regions and needs additional tenants, you can request them by following the process described in [Get Additional Tenant](get-your-tenant-460766b.md#loio460766b1b08d48a0b4adfb230c60a001__section_r2y_lhg_hxb). Keep in mind that having a dedicated tenant per region might mean SSO isn't guaranteed out-of-the-box.
 > 
 > -   SAP SuccessFactors Use Case: If you have multiple instances of SAP SuccessFactors, you can request a separate SAP Cloud Identity Services tenant for each instance from the SAP SuccessFactors Upgrade Center. This ensures that each instance, representing the system of origin for employees, will have a dedicated identity provider and proper handling of users with the same login name. For more information, see [Initiating the Upgrade to SAP Cloud Identity Services - Identity Authentication Service](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/568fdf1f14f14fd089a3cd15194d19cc/0271d9c4176e45ca9307e49230073240.html?version=Latest).
@@ -189,7 +191,7 @@ To get additional tenant using SAP BTP multi-environment subaccount, proceed as 
     > 
     > The *additional-tenant* plan allows the customer to create a new SAP Cloud Identity Services additional tenant. The type of the created tenant may be test or productive depending on the customer selection. The new instance is created only if there is an existing default instance bound to your customer ID.
     > 
-    > You can remove that additional tenant for the subaccount by choosing the *Delete* button. Please note that the tenant is deleted immediately.
+    > You can delete the additional tenant by choosing the *Delete* button, which initiates the deletion of the subscription to the additional-tenant plan of Cloud Identity Services in your subaccount. The tenant will be deactivated for 30 days before being permanently deleted. After deletion, it cannot be restored.
 
 3.  Choose *Services* \> *Instances and Subscriptions*.
 

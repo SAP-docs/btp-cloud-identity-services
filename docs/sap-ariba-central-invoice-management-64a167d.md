@@ -364,10 +364,15 @@ This scenario supports provisioning users and groups.
     >         "optional": true
     >       },
     >       {
-    >         "sourcePath": "$.emails[*].value",
-    >         "targetPath": "$.emails[?(@.value)]",
+    >         "sourcePath": "$.emails",
+    >         "targetPath": "$.emails",
     >         "optional": true,
     >         "preserveArrayWithSingleElement": true
+    >       },
+    >       {
+    >         "sourcePath": "$.emails[0].value",
+    >         "targetPath": "$.emails[0].value",
+    >         "optional": true
     >       },
     >       {
     >         "sourcePath": "$.emails[?(@.primary== true)].value",

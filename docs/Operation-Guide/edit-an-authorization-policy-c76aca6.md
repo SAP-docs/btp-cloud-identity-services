@@ -52,7 +52,7 @@ When you edit an existing custom authorization policy, you can add or delete res
     > 
     > All rows starting with their own `RESTRICT` condition have an `OR` conjunction with the other `RESTRICT` rows.
 
-10. Choose the conditions that come with the application in the dropdown list. Next, choose an operator and choose or enter a value.
+10. Choose the conditions that come with the application in the dropdown list. Next, choose an operator and choose or enter a value or choose a user attrribute.
 
 11. Save your changes.
 

@@ -31,7 +31,7 @@ Follow this procedure to set up the SAP BTP Platform Members \(Cloud Foundry\) a
 
 The Cloud Foundry environment enables you to create polyglot cloud applications in Cloud Foundry. It contains the SAP BTP, Cloud Foundry runtime service, which is based on the open-source application platform managed by the Cloud Foundry Foundation. For more information, see [Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/cloud-foundry-environment?version=Cloud).
 
-When you enable the Cloud Foundry environment in your subaccount, the system automatically creates a Cloud Foundry organization for you. You can add platform users as org members and space members and assign roles to grant these users platform access.
+When you enable the Cloud Foundry environment in your subaccount, the system automatically creates a Cloud Foundry organization for you. You can add platform users as org members and space members and assign roles to grant these users platform access. For more information, see [Valid role types](https://v3-apidocs.cloudfoundry.org/version/3.126.0/index.html#valid-role-types).
 
 In this scenario, your SAP Cloud Identity Services tenant acts as your identity provider and SAP BTP acts as your service provider. Identity Provisioning in between provides the SAP BTP Platform Members \(Cloud Foundry\) connector to replicate the org and space members with their role assignments from the identity provider to the local user storage of SAP BTP. For more information, see [SAP BTP Integration Scenario](https://help.sap.com/docs/cloud-identity/system-integration-guide/sap-btp-integration-scenario?version=Cloud).
 
@@ -42,7 +42,19 @@ SAP BTP Platform Members \(Cloud Foundry\) connector manages org and space membe
 > 
 > For more information, see [Migrate Identity Provisioning Bundle Tenant](https://help.sap.com/docs/identity-provisioning/identity-provisioning/migrate-identity-provisioning-bundle-tenant).
 
-Follow the steps below to create SAP BTP Platform Members \(Cloud Foundry\) as a source system to read users \(org members and space members\), roles \(organization and space\), and role assignments from your Cloud Foundry environment, which can then be provisioned to target systems of your choice. In SAP BTP Platform Members \(Cloud Foundry\), groups correspond to roles in particular Cloud Foundry orgs or spaces, thus group members are user assignments of a role in a specific Cloud Foundry org or space.
+Follow the steps below to create SAP BTP Platform Members \(Cloud Foundry\) as a source system to read users \(org members and space members\), roles \(organization and space\), and role assignments from your Cloud Foundry environment, which can then be provisioned to target systems of your choice. In SAP BTP Platform Members \(Cloud Foundry\), groups correspond to roles in particular Cloud Foundry orgs or spaces, thus group members are user assignments of a role in a specific Cloud Foundry org or space. Group names must follow a defined pattern, explained below, to ensure the correct mapping and provisioning of users and their role assignments to the relevant Cloud Foundry organization or space.
+
+> ### Note:  
+> The attribute *name*, defined within the *urn:sap:cloud:scim:schemas:extension:custom:2.0:Group* schema, is used to map the users and user assignments of a role to the relevant Cloud Foundry organization or space. The group names follow the respective patterns:
+> 
+> -   organization group name: `<org_ID> <org_role>`
+> -   space group name: `<org_ID> <space_ID> <space_role>`, where `space_ID` can be retrieved using the Cloud Foundry Command Line Interface by executing the command `cf space --guid`.
+> 
+> 
+> Whereas the group display names adhere to the following patterns:
+> 
+> -   organization group display name: `<btp.cf.pm.group.prefix>_<btp.cf.pm.landscape>:<org_name>:<org_role>`
+> -   space group display name: `<btp.cf.pm.group.prefix>_<btp.cf.pm.landscape>:<org_name>:<space_name>:<space_role>`
 
 > ### Note:  
 > In case you have Cloud Foundry environment enabled in multiple Cloud Foundry landscapes or more than one SAP Cloud Identity Services tenants, you must configure a separate SAP BTP Platform Members \(Cloud Foundry\) connector for each of them.
@@ -233,14 +245,14 @@ The source system consumes User Account and Authentication API and Cloud Foundry
 
     Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP BTP Platform Members \(Cloud Foundry\)* source system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
-    -   **Mapping logic** – The behavior of the default transformation logic is to map all attributes from a SAP BTP Platform Members \(Cloud Foundry\) entity to the intermediate Identity Provisioning representation.
-    -   **User offboarding** – If a user or a user assignment of a role has been deleted from the SAP BTP Platform Members \(Cloud Foundry\), this change is recognized, and the user/user assignment of a role is deleted from the target system too.
-
     You can change the default transformation mapping rules to reflect your current setup of entities in your SAP BTP Platform Members \(Cloud Foundry\) system. For more information, see:
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
     [Cloud Foundry V3 API](https://v3-apidocs.cloudfoundry.org/version/3.178.0/index.html)
+
+    -   **Mapping logic** – The behavior of the default transformation logic is to map all attributes from a SAP BTP Platform Members \(Cloud Foundry\) entity to the intermediate Identity Provisioning representation.
+    -   **User offboarding** – If a user or a user assignment of a role has been deleted from the SAP BTP Platform Members \(Cloud Foundry\), this change is recognized, and the user/user assignment of a role is deleted from the target system too.
 
     > ### Caution:  
     > Keep in mind that when you add or delete users and user role assignments in SAP BTP Platform Members \(Cloud Foundry\), the operations order must adhere to the Cloud Foundry Environment hierarchy. In this case, you can expect the following behavior:
@@ -313,10 +325,6 @@ The source system consumes User Account and Authentication API and Cloud Foundry
     >       {
     >         "sourcePath": "$.id",
     >         "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']"
-    > 	   //The attribute group extension name is used to map the read users and user assignments of a role 
-    > 	   //to the relevant Cloud Foundry organization or space.
-    > 	   //the organization group extension name follows the pattern: <org_ID> <org_role>
-    > 	   //the space group extension name follows the pattern: <org_ID> <space_ID> <space_role>
     >       },
     >       {
     >         "constant": [
@@ -327,8 +335,6 @@ The source system consumes User Account and Authentication API and Cloud Foundry
     >       {
     >         "sourcePath": "$.displayName",
     >         "targetPath": "$.displayName",
-    > 	   //the organization group display name follows the pattern: <btp.cf.pm.group.prefix>_<btp.cf.pm.landscape>:<org_name>:<org_role>
-    > 	  //the space group display name follows the pattern: <btp.cf.pm.group.prefix>_<btp.cf.pm.landscape>:<org_name>:<space_name>:<space_role>
     >         "functions": [
     >           {
     >             "condition": "'%btp.cf.pm.group.prefix%' !== 'null'",

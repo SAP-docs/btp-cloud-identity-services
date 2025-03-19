@@ -18,7 +18,7 @@ Create a URL which takes users to a specific application with a specific corpora
 
 -   You have configured one of the following options:
     -   You have set the corporate IdP as default identity provider in the administration console. For more information, see [Authenticating Identity Provider for an Application](authenticating-identity-provider-for-an-application-b3aae12.md).
-    -   You have enabled IdP-initiated Single Sign-On \(SSO\) from all configured corporate IdPs. For more information, see[Enable SSO with All Corporate Identity Providers](enable-sso-with-all-corporate-identity-providers-f7ec8d2.md) .
+    -   You have enabled IdP-initiated Single Sign-On \(SSO\) from all configured corporate IdPs. For more information, see [Enable SSO with All Corporate Identity Providers](enable-sso-with-all-corporate-identity-providers-f7ec8d2.md) .
 
 -   The application supports IdP-initiated Single Sign-On \(SSO\). For more information, see [Security Assertion Markup Language \(SAML\) V2.0 Technical Overview](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
@@ -40,6 +40,9 @@ When there is more than one corporate IdP, the user is redirected to the first i
 >     When multiple identity providers are allowed for an application via conditional authentication, these parameters enable the client to specify which corporate identity providers to be used. Identity Authentication uses the `idp` parameter to detect the correct corporate identity providers and redirect the request to them.
 > 
 >     When there is more than one corporate IdP in the IdP-initiated link, they are separated by comma "`,`" without space between them.
+> 
+>     > ### Remember:  
+>     > If there is more than one corporate IdP in the IdP-initiated link, use *HTTP-Redirect* as default binding in the trust configuration with SAML 2.0 Corporate Identity Provider. For more information, see [Configure Trust on Identity Authentication Side](configure-trust-with-saml-2-0-corporate-identity-provider-33832e5.md#loio33832e58695345eea2cd91a2cc8ab24c__chunked_trust_ias).
 
 <a name="task_ppl_l4c_nzb"/>
 
