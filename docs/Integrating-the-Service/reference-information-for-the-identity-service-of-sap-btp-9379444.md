@@ -22,7 +22,7 @@ The syntax of the properties is as follows:
 		"value_help_url": "https://myapp_namespace.cert.cfapps.eu10.hana.ondemand.com/odata/v4/ValueHelpService/"
 	},
 
-		"oauth2-configuration": {
+	"oauth2-configuration": {
 		"redirect-uris": ["https://*.myapp_namespace.cfapps.eu10.hana.ondemand.com/**"],
 		"post-logout-redirect-uris": ["https://*.myapp_namespace.cfapps.eu10.hana.ondemand.com/logout/**"],
 		"front-channel-logout-uris": ["https://myapp.mydomain.com/fc-logout"],
