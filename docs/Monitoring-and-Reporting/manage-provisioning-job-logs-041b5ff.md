@@ -294,6 +294,111 @@ Download the created entities for a single job to identify the system in which t
 
 
 
+<a name="loio041b5ff608b944d19c53be780109506e__section_cbr_ty6_jdc"/>
+
+## Download All Updated Entity Logs for a Single Job
+
+> ### Note:  
+> This functionality is available only for Identity Provisioning bundle and standalone tenants running on SAP Cloud Identity infrastructure.
+
+
+
+### Prerequisites
+
+-   You have set the `ips.trace.updated.entity` property to `true` in the source system.
+
+-   You have set the `ips.trace.updated.entity.content` property to `true` in the source system.
+
+
+For more information, see [List of Properties](../list-of-properties-d6f3577.md)
+
+Download the updated entities for a single job to identify the system in which they are updated and to view the content of the entities.
+
+1.  Sign in to the administration console of SAP Cloud Identity Services and navigate to *Identity Provisioning* \> *Provisioning Logs* \> *Job Logs*.
+
+2.  In the *Job Execution Logs* screen, search for a job log and select it.
+
+3.  If the job has updated at least one entity, you are able to choose the ![](images/IPS_Export_Icon_def37e5.png) button on the right-hand side of the *Statistics* section and select *Download All Updated Entity Logs for This Job*.
+
+    The log is downloaded as a `zip` archive. The name of the file follows the pattern: <code>ips_jobUpdatedEntitiesLogs_<i class="varname">&lt;job ID&gt;</i>_<i class="varname">&lt;date&gt;</i>_<i class="varname">&lt;time&gt;</i></code>.
+
+4.  Save the `zip` file in your local file system, and then open it to view the log records of all updated entities for this job.
+
+    The log displays the following information:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Entity Details
+    
+    </th>
+    <th valign="top">
+
+    Value
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *User*
+
+    *Group*
+    
+    </td>
+    <td valign="top">
+    
+    The ID of the updated entity in the target or proxy system
+
+    For example: `12345678-1a2b-1bc2-3cd4-1234567890ef`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *System* 
+    
+    </td>
+    <td valign="top">
+    
+    The system in which the entity is updated. This could be either a target system or a proxy system.
+
+    For example: `IAS.target`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Content* 
+    
+    </td>
+    <td valign="top">
+    
+    The content attributes of the updated entity
+
+    For example:
+
+    > ### Code Syntax:  
+    > ```
+    > {"active":true,"displayName":"JohnSmith","emails":[{"value":"john.smith@example.com"}],
+    > "name":{"familyName":"Smith","givenName":"John"},"schemas":["urn:ietf:params:scim:schemas:core:2.0:User","urn:ietf:params:scim:schemas:extension:sap:2.0:User"],"urn:ietf:params:scim:schemas:extension:sap:2.0:User":{"userUuid":"0036024b-0ede-4fc3-9ed7-c55632de8246"},"urn:sap:cloud:scim:schemas:extension:custom:2.0:User":{"userId":"12345678-1a2b-1bc2-3cd4-1234567890ef"},"userName":"","userType":"public"}
+    > ```
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
+    The log is organized in sections which start with the ID of the updated entity. If a user or a group is updated in more than one systems, the log will display the ID of the updated entity as many times as the number of systems in which it is updated and the entity's content.
+
+
+
+
 <a name="loio041b5ff608b944d19c53be780109506e__section_pkz_lfq_zxb"/>
 
 ## Download Job Logs via API
@@ -365,6 +470,8 @@ Possible values:
 -   `skippedEntitiesLog` - Download logs containing details about the skipped entities for this specific job execution.
 
 -   `createdEntitiesLog` - Download logs containing details about the created entities for this specific job execution.
+
+-   `updatedEntitiesLog` - Download logs containing details about the updated entities for this specific job execution.
 
 
 

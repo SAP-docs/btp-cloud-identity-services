@@ -336,5 +336,5 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP Fie
 **Related Information**  
 
 
-[SAP Field Service Management – Collection](https://blogs.sap.com/2020/11/06/sap-central-business-configuration-collection/)
+[Field Service Management - Federated Authentication](https://help.sap.com/docs/SAP_FIELD_SERVICE_MANAGEMENT/fsm_federated_authentication/federated-authentication.html)
 

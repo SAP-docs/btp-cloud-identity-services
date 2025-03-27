@@ -141,12 +141,12 @@ To edit an administrator's authorizations, proceed as follows:
     > </tr>
     > </table>
     > 
-    > If you remove all authorizations, the user or system will no longer be an administrator, and the name will be removed from the list on the left.
+    > > ### Tip:  
+    > > **Remove Administrator**
+    > > 
+    > > If you remove all authorizations, the user or system will no longer be an administrator, and the name will be removed from the list on the left. However, removing all authorizations does not delete the user from the user data base of Identity Authentication. For more information about how to delete a user, see [Delete Users](delete-users-bbfaf5f.md).
     > 
-    > > ### Remember:  
-    > > Removing all authorizations does not delete the user from the user data base of Identity Authentication. For more information about how to delete a user, see [Delete Users](delete-users-bbfaf5f.md).
-    > 
-    > You cannot remove the Manage Tenant Configuration role from your own user.
+    > You cannot remove the *Manage Tenant Configuration* role from your own user.
 
 5.  Save your changes.
 

@@ -2778,6 +2778,41 @@ All systems
 <tr>
 <td valign="top">
 
+`ips.trace.updated.entity.content`
+
+</td>
+<td valign="top">
+
+If a provisioning job results in updated entities in target or proxy systems, you can view the details for each updated user and group.
+
+To do this, you need to enable logging and tracing for the personal and sensitive data of your provisioned entities by setting the property to *true*.
+
+If the property is not set, in the logs you see: `content = <hidden content>`
+
+To learn more about personal and sensitive data, see:
+
+-   [Glossary for Data Protection and Privacy](https://help.sap.com/docs/identity-provisioning/identity-provisioning/glossary-for-data-protection-and-privacy)
+-   [Customer Data](https://help.sap.com/docs/identity-provisioning/identity-provisioning/customer-data) → **Data Storage Security**
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false*
+
+**System Role:** Source
+
+</td>
+<td valign="top">
+
+All systems
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `ips.trace.skipped.entity` 
 
 </td>
@@ -2816,6 +2851,34 @@ This property allows you to download and view the details of all created entitie
 **Possible values:**
 
 -   *true* - The downloaded `zip` file contains all created entities for the given job, the systems in which they are created, as well as the content of the entities \(if `ips.trace.created.entity.content` is set to `true`\).
+
+-   *false* - The downloaded `zip` file is empty.
+
+
+Default value: *false*
+
+**System Role:** Source
+
+</td>
+<td valign="top">
+
+All systems
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ips.trace.updated.entity` 
+
+</td>
+<td valign="top">
+
+This property allows you to download and view the details of all updated entities for a given job in a `zip` archive. For more information, see [Manage Provisioning Job Logs](Monitoring-and-Reporting/manage-provisioning-job-logs-041b5ff.md)
+
+**Possible values:**
+
+-   *true* - The downloaded `zip` file contains all updated entities for the given job, the systems in which they are updated, as well as the content of the entities \(if `ips.trace.updated.entity.content` is set to `true`\).
 
 -   *false* - The downloaded `zip` file is empty.
 

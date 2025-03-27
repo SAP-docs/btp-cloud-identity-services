@@ -86,7 +86,451 @@ Version
 <tr>
 <td valign="top">
 
+Cloud Identity Services 
 
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-03-11
+
+</td>
+<td valign="top">
+
+2025-03-25
+
+</td>
+<td valign="top">
+
+2503a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Download all updated entities for a provisioning job
+
+</td>
+<td valign="top">
+
+You can now download and view the details of all updated entities by a provisioning job. To enable this, set the properties `ips.trace.updated.entity` and `ips.trace.updated.entity.content` to *true*.
+
+For more information, see [Manage Provisioning Job Logs](Monitoring-and-Reporting/manage-provisioning-job-logs-041b5ff.md) and [List of Properties](list-of-properties-d6f3577.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-03-25
+
+</td>
+<td valign="top">
+
+2025-03-25
+
+</td>
+<td valign="top">
+
+2503a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Central store logs display source entity ID
+
+</td>
+<td valign="top">
+
+The central store logs display the source entity ID, which represents the group ID in the Identity Directory.
+
+For more information, see [Monitor Central Store Logs](Monitoring-and-Reporting/monitor-central-store-logs-9162898.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-03-25
+
+</td>
+<td valign="top">
+
+2025-03-25
+
+</td>
+<td valign="top">
+
+2503a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Ariba Applications - default transformations changes
+
+</td>
+<td valign="top">
+
+The default transformations of SAP Ariba Applications are enhanced with the expression `preserveArrayWithSingleElement` set to *true*. The transformation mappings for the attribute `plant` are excluded from the default write and proxy write transformations, since the attribute's value cannot be created with POST and PUT or PATCH request anymore.
+
+For more information, see:
+
+-   [SAP Ariba Applications \(Source\)](sap-ariba-applications-0ef1091.md)
+-   [SAP Ariba Applications \(Target\)](sap-ariba-applications-47c8903.md)
+-   [SAP Ariba Applications \(Proxy\)](sap-ariba-applications-f5466e6.md)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-03-25
+
+</td>
+<td valign="top">
+
+2025-03-25
+
+</td>
+<td valign="top">
+
+2503a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Bundle options documentation
+
+</td>
+<td valign="top">
+
+Documentation for SAP Field Service Management and SAP Cloud ALM bundle options is now available.
+
+For more information, see [SAP Field Service Management Bundle](sap-field-service-management-bundle-11a5849.md) and [SAP Cloud ALM Bundle](sap-cloud-alm-bundle-b9e08d9.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-03-25
+
+</td>
+<td valign="top">
+
+2025-03-25
+
+</td>
+<td valign="top">
+
+2503a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+OpenID Connect
+
+</td>
+<td valign="top">
+
+As of April 8, 2025 grant types Token Exchange \(RFC 8693\) and JWT Bearer will take into account the risk-based authentication \(RBA\) configurations of the OpenID Connect \(OIDC\) applications in Identity Authentication during OIDC authentication process.
+
+Grant types Authorization Code and Password already take into account the RBA configurations in Identity Authentication.
+
+See [Exchanging Identity Authentication Tokens for Tokens from Corporate Identity Providers](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/exchanging-identity-authentication-tokens-for-tokens-from-corporate-identity-providers?state=DRAFT&version=Dev).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-03-25
+
+</td>
+<td valign="top">
+
+2025-04-08
+
+</td>
+<td valign="top">
+
+2503b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
 
 </td>
 <td valign="top">
@@ -299,7 +743,7 @@ Cloud Identity Services
 <tr>
 <td valign="top">
 
-
+Cloud Identity Services 
 
 </td>
 <td valign="top">

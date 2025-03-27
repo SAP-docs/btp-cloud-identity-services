@@ -12,7 +12,7 @@ Create a new privacy policy document in the administration console.
 
 1.  Sign in to the administration console for SAP Cloud Identity Services.
 
-2.  Choose the *Privacy Policy Documents* tile.
+2.  Under *Application & Resources*, choose the *Privacy Policy Documents* tile.
 
     This operation opens a list of the privacy policy documents.
 

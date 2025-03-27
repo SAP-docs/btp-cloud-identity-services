@@ -133,13 +133,15 @@ The *Data Record* displays the values set for the properties that enable logging
 
 -   `ips.trace.created.entity.content` = *<value\>*
 
+-   `ips.trace.updated.entity.content` = *<value\>*
+
 
 
 
 </td>
 <td valign="top">
 
-*COMPLIANT* - when all three properties are set to *false*
+*COMPLIANT* - when all listed properties are set to *false*
 
 *NONCOMPLIANT* – if one or more of these properties are set to *true*
 
@@ -1425,7 +1427,7 @@ Reports the default action set in the RBA configuration of the application. The 
 </td>
 <td valign="top">
 
- 
+*n/a*
 
 </td>
 </tr>

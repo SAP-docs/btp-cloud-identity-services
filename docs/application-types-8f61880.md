@@ -88,6 +88,8 @@ You can access the tenant's administration console for SAP Cloud Identity Servic
 > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [View Assigned Tenants and Admins](view-assigned-tenants-and-admins-f56e6f2.md).
 > 
 > If you have a configured custom domain, the URL has the `<your custom domain>/admin` pattern.
+> 
+> If you have updated the ***Name*** in the *SAML 2.0 Configuration* or the ***URL*** in the *OpenID Connect Configuration* in *Tenant Settings* make sure to access the tenant with the updated domain in the ***Name*** or ***URL***. For more information, see [Tenant SAML 2.0 Configurations](Operation-Guide/tenant-saml-2-0-configurations-e81a19b.md) and [Tenant OpenID Connect Configurations](Operation-Guide/tenant-openid-connect-configurations-3d6abcc.md).
 
 As a tenant administrator you can change the default configurations:
 
