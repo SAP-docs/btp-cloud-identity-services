@@ -10,10 +10,7 @@ Configure the JSON Web Token \(JWT\) - the issuer and subject of tokens for JWT 
 
 ## Prerequisites
 
--   You have an OpenID Connect application.
-
--   \(For the *Configure Trust by Issuer*\) You have created and configured a corporate identity provider of type *OpenID Connect Compliant* in the administration console for SAP Cloud Identity Services. For more information, see [Configure Trust with OpenID Connect Corporate Identity Provider](../Operation-Guide/configure-trust-with-openid-connect-corporate-identity-provider-8ff83a1.md).
-
+You have an OpenID Connect application.
 
 
 
@@ -38,7 +35,7 @@ Configure the JSON Web Token \(JWT\) - the issuer and subject of tokens for JWT 
 
     -   \(For RFC 7523-based JWT client tokens\) Choose the *Add* button for *Configure Trust by Issuer* and provide the required info in the popup:
 
-        **Configure Trust by URI**
+        **Configure Trust by Issuer**
 
 
         <table>
@@ -62,49 +59,33 @@ Configure the JSON Web Token \(JWT\) - the issuer and subject of tokens for JWT 
         </td>
         <td valign="top">
         
-        \(Optional\) You can provide information about the token here.
+        \(Optional\) - Provide information about the token in the provided field.
         
         </td>
         </tr>
         <tr>
         <td valign="top">
         
-        *Issuer*
-        
-        </td>
-        <td valign="top">
-        
-        \(Required\) The issuer must be OpenID Connect compliant.
-        
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-        *Subject*
-        
-        </td>
-        <td valign="top">
-        
-        The sub \(subject\) that is expected in the token.
+        Choose *Issuer Configuration* \> *Manual Configuration* radio-button.
 
-        > ### Tip:  
-        > If you want to use an OAuth 2.0 token from a corporate identity provider as client credentials for an OpenID Connect application in Identity Authentication, and your OAuth client in the corporate identity provider belongs to a pre-configured application, the subject in the token is the Object ID of that pre-configured application.
-
-
-        
-        </td>
-        </tr>
-        <tr>
-        <td valign="top">
-        
-        *API Access*
-        
-        </td>
-        <td valign="top">
-        
         > ### Note:  
-        > This section is read-only. The predefined choice is OpenID.
+        > When you choose *Manual Configuration* radio-button the *Corporate Identity Provider* section is not configurable.
+
+
+        
+        </td>
+        <td valign="top">
+        
+        Under *Manual Configuration* configure:
+
+        1.  *Issuer* \(Required\) - The issuer must be OpenID Connect compliant.
+        2.  *JSON Web Key Set URI* \(Required\) - Choose *Check for Metadata* button. If the entered issuer is verified as OpenID Connect compliant, the JSON Web Key Set URI will be retrieved automatically. Otherwise, you need to explicitly specify the *JSON Web Key Set URI* in the field.
+        3.  *Refresh Interval* \(Optional\) - Refreshes the URI automatically if it is older than the selected interval. Choose from:
+            -   24 hours \(default choice\)
+
+            -   12 hours
+
+
 
 
         
@@ -113,12 +94,37 @@ Configure the JSON Web Token \(JWT\) - the issuer and subject of tokens for JWT 
         <tr>
         <td valign="top">
         
-        *API Permission Groups*
+        Choose *Issuer Configuration* \> *Corporate Identity Provider* radio-button.
+
+        > ### Note:  
+        > When you choose *Corporate Identity Provider* radio-button, the *Manual Configuration* section is not configurable.
+
+
         
         </td>
         <td valign="top">
         
-        \(Optional\) `API Permission Groups` field is enabled only when the *Provided APIs* option is configured. For more information, see [Provide APIs for Consumption by Other Applications](provide-apis-for-consumption-by-other-applications-9d2fe83.md).
+        *Name* - \(Required\) Choose from OpenID Connect compliant corporate identity providers.
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        *General*
+        
+        </td>
+        <td valign="top">
+        
+        1.  *Subject* \(Required\) - The sub \(subject\) that is expected in the token.
+
+            > ### Tip:  
+            > If you want to use an OAuth 2.0 token from a corporate identity provider as client credentials for an OpenID Connect application in Identity Authentication, and your OAuth client in the corporate identity provider belongs to a pre-configured application, the subject in the token is the Object ID of that pre-configured application.
+
+        2.  *Audience* \(Optional\) - The `audience` claim of the identity provider.
+        3.  `API Permission Groups` \(Optional\) - The field is enabled only when the *Provided APIs* option is configured. For more information, see [Provide APIs for Consumption by Other Applications](provide-apis-for-consumption-by-other-applications-9d2fe83.md).
+
+
         
         </td>
         </tr>

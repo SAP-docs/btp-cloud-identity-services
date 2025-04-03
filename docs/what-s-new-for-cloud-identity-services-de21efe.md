@@ -100,6 +100,235 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Provided APIs
+
+</td>
+<td valign="top">
+
+The provided APIs for the `Administration Console` for Cloud Identity Services is now read-only.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-04-08
+
+</td>
+<td valign="top">
+
+2025-04-08
+
+</td>
+<td valign="top">
+
+2503b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Application Protocol Type
+
+</td>
+<td valign="top">
+
+The protocol type of the <code>Administration Console for Cloud Identity Services is now changed to the hybrid type <b><i>SAML 2.0 &amp; OpenID Connect</i></b> from the <b><i>SAML 2.0</i></b> type</code>. See [Applications](applications-404a11c.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-04-08
+
+</td>
+<td valign="top">
+
+2025-04-08
+
+</td>
+<td valign="top">
+
+2503b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regional Availability
+
+</td>
+<td valign="top">
+
+Cloud Identity Services is available with a new data \(DC\) center, United States \(Virginia\), for the AWS infrastructure in US \(North America East\) region.
+
+The United States \(Colorado\) DC is no longer used.
+
+Action:
+
+We recommend you to add the following IPs to your allowed IP list:
+
+-   LB IP - 3.92.131.87, 52.200.183.196, 35.168.205.166
+-   NAT IP - 52.44.60.92/32, 54.211.101.173/32, 54.225.47.27/32
+
+The following IPs are no longer in use:
+
+-   LB IP - 130.214.207.198
+-   NAT IP - 130.214.242.32/27
+
+See [Regional Availability](regional-availability-be600ca.md).
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-03-27
+
+</td>
+<td valign="top">
+
+2025-03-27
+
+</td>
+<td valign="top">
+
+2503a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Regular Upgrade
 
 </td>
@@ -140,7 +369,78 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2025-03-11
+2025-03-25
+
+</td>
+<td valign="top">
+
+2025-03-25
+
+</td>
+<td valign="top">
+
+2503a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+OAuth Client Authentication
+
+</td>
+<td valign="top">
+
+The *Add JSON Web Token* UI has bee changed. Now you can manually configure the issuer or choose from OpenID Connect compliant corporate identity providers. See [Configure JWT for OAuth Client Authentication](Development/configure-jwt-for-oauth-client-authentication-1bdc729.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-03-25
 
 </td>
 <td valign="top">

@@ -130,7 +130,7 @@ To configure a trusted X.509 certificate, proceed as follows:
 
 
     > ### Remember:  
-    > The SAP Cloud Root CA, DigiCert Global Root CA, DigiCert Global Root G2, DigiCert TLS RSA SHA256 2020 CA1, and Baltimore CyberTrust Root certificates are trusted by default.
+    > The SAP Cloud Root CA, DigiCert Global Root CA, DigiCert Global Root G2, and DigiCert TLS RSA SHA256 2020 CA1 certificates are trusted by default.
 
 
 **Related Information**  

@@ -239,7 +239,7 @@ You can view all of the supported schemas attributes and their definitions in th
 > > dona.moore@example.com,TRUE,work,Moore,Dona,Moore,Dona Moore Moore,Ms.,III,donaM,Dona Moore Moore,random,https://test.com,Dr,public,TRUE,work,100 Universal City Plaza,Hollywood,CA,91608,US,100 Universal City Plaza Hollywood CA 91608 US,true,home,456 Hollywood Blvd,Hollywood,CA,91608,US,456 Hollywood Blvd Hollywood CA 91608 US,555-555-5555,work,555-555-4444,mobile,someaimhandle,aim,someaimhandle2,aim,https://photos.example.com/profilephoto/72930000000Ccne/F,photo,https://photos.example.com/profilephoto/72930000000Ccne/T,thumbnail,Theme Park,Real Estate Management,true,2021-10-04T06:48:20Z,2023-10-04T06:48:20Z,customAttribute1,test
 > > ```
 
-To import users for an application into Identity Authentication, proceed as follows:
+To import users into the user store of Identity Authentication, proceed as follows:
 
 
 
