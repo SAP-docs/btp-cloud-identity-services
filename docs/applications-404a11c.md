@@ -147,7 +147,7 @@ Apart from SAP, bundled applications can also be created by customers. This appl
 </tr>
 </table>
 
-Applications are sometimes referred to as SAML 2.0 applications or OpenID Connect applications depending on the configured protocol. Some software-as-a-service applications support both protocols and display the ***SAML 2.0 & OpenID Connect*** protocol type. The SAML 2.0 standard defines applications as service providers, while OpenID Connect \(OIDC\) defines them as relying parties.
+Applications are sometimes referred to as SAML 2.0 applications or OpenID Connect applications depending on the configured protocol. Some software-as-a-service applications and the `Administration Console` application support both protocols and display the hybrid ***SAML 2.0 & OpenID Connect*** protocol type. The SAML 2.0 standard defines applications as service providers, while OpenID Connect \(OIDC\) defines them as relying parties.
 
 For more information, see [Application Types](application-types-8f61880.md) and [Configuring Applications](Operation-Guide/configuring-applications-61ad3b0.md).
 

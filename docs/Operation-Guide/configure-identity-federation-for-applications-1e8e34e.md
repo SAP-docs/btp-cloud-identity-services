@@ -80,7 +80,7 @@ When enabled, the user is authenticated by the corporate IdP, then *Identity Aut
 
 4.  Choose *Identity Federation* to configure the options.
 
-5.  Choose *Edit* \> *Enabled* to enable it.
+5.  Choose *Edit* \> *Custom*.
 
 6.  Select the desired check boxes:
 

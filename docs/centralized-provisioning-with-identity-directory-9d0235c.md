@@ -573,7 +573,7 @@ The Microsoft Entra ID users and groups are provisioned to the identity director
 
 The personal and technical information of the user varies across different systems. To manage a unified and up-to-date user data, you can provision the identities from multiple sources and merge them into one target identity directory.
 
-You have wide flexibility to choose your own approach when merging data from various sources. This could include defining the unique attribute or a combination of them when resolving conflicts, deciding on how to add and update user and group attributes. All of these require changes in the identity directory configuration.
+You can choose your own approach when merging data from various sources. This could include defining the unique attribute or a combination of them when resolving conflicts, as well as deciding on how to add and update user and group attributes. All of these require changes in the identity directory configuration.
 
 > ### Caution:  
 > When reading user data from multiple sources, we strongly recommend that you perform **consecutive** provisioning jobs. Simultaneous jobs may lead to inconsistent or overwritten user data in the target system.
@@ -595,7 +595,7 @@ To merge the user data by email instead of userName, you only need to set the `i
 
 Following the provisioning of your identities from the leading source system, you may want to replicate additional user attributes from the second source system which were not available in the first one.
 
-To achieve this, we suggest that you configure two pairs of source-target systems. Each target system should point to the same identity directory instance, although both will have different configurations. For example, if Microsoft Entra ID \(your leading source system\) and Local Identity Directory 1 \(target\) make up your first pair, then the second pair could consist of SAP SuccessFactors \(source\) and Local Identity Directory 2 \(target\). This setup allows you to control which user attribute comes from which source system. The overall process is the following:
+To achieve this, we suggest that you configure two pairs of source-target systems. Each source system should point to the same identity directory instance, although both will have different configurations. For example, if Microsoft Entra ID \(your leading source system\) and Local Identity Directory 1 \(target\) make up your first pair, then the second pair could consist of SAP SuccessFactors \(source\) and Local Identity Directory 2 \(target\). This setup allows you to control which user attribute comes from which source system. The overall process is the following:
 
 1.  Create the first pair of source-target systems: *Microsoft Entra ID* \> *Local Identity Directory 1*.
 

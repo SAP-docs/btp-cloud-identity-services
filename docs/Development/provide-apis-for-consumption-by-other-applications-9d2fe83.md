@@ -33,6 +33,9 @@ As the providing application, you have the following options for configuring ide
     For more information, see [Reference Information for the Identity Service of SAP BTP](../Integrating-the-Service/reference-information-for-the-identity-service-of-sap-btp-9379444.md).
 
 
+> ### Remember:  
+> The provided APIs for the `Administration Console` for Cloud Identity Services is read-only.
+
 
 
 ## Procedure

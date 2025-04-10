@@ -15,24 +15,24 @@ Provide properties in JSON format.
 The syntax of the properties is as follows:
 
 ```
-{
+
+        {
 	"name": "opportunity-management",
 	"authorization": {
 		"enabled": true,
 		"value_help_url": "https://myapp_namespace.cert.cfapps.eu10.hana.ondemand.com/odata/v4/ValueHelpService/"
 	},
-
-		"oauth2-configuration": {
-		"redirect-uris": ["https://*.myapp_namespace.cfapps.eu10.hana.ondemand.com/**"],
-		"post-logout-redirect-uris": ["https://*.myapp_namespace.cfapps.eu10.hana.ondemand.com/logout/**"],
-		"front-channel-logout-uris": ["https://myapp.mydomain.com/fc-logout"],
-		"public-client": false,
-		"grant-types": ["client_credentials", "authorization_code"],
-		"token-policy": {
-			"token-validity": 1800,
-			"refresh-validity": 7776000,
-			"refresh-parallel" : 3,
-			"refresh-usage-after-renewal" : "off"
+   "oauth2-configuration": {
+        "redirect-uris": ["https://*.myapp_namespace.cfapps.eu10.hana.ondemand.com/**"],
+	"post-logout-redirect-uris": ["https://*.myapp_namespace.cfapps.eu10.hana.ondemand.com/logout/**"],
+	"front-channel-logout-uris": ["https://myapp.mydomain.com/fc-logout"],
+	"public-client": false,
+	"grant-types": ["client_credentials", "authorization_code"],
+	"token-policy": {
+		"token-validity": 1800,
+		"refresh-validity": 7776000,
+		"refresh-parallel" : 3,
+		"refresh-usage-after-renewal" : "off"
 		}
 	},
 	"consumed-services": [{
@@ -42,12 +42,14 @@ The syntax of the properties is as follows:
 	"subject-name-identifier": {
 		"attribute": "userUuid",
 		"fallback-attribute": "uid"
+                }
 	},
 	"provided-apis": [{
 		"name": "write-access",
 		"description": "grants access to write APIs"
-	}]
-}
+	        }]
+        }
+
 ```
 
 **Properties for the Creation of an Instance of the Identity Service**

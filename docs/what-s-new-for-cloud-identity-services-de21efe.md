@@ -100,6 +100,377 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-04-08
+
+</td>
+<td valign="top">
+
+2025-04-08
+
+</td>
+<td valign="top">
+
+2503b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Machine Translation
+
+</td>
+<td valign="top">
+
+On-the-fly machine translation is now available in 39 languages for the Cloud Identity Services documentation. This means that you can generate translation of content instantly by selecting the respective language from the dropdown list.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-04-08
+
+</td>
+<td valign="top">
+
+2025-04-08
+
+</td>
+<td valign="top">
+
+2503b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Support for SAP extension schema for groups
+
+</td>
+<td valign="top">
+
+The default transformations of Identity Authentication \(using SCIM API version 2\), SAP BTP Account Members \(Neo\) and SAP BTP XS Advanced UAA \(Cloud Foundry\) support attributes from the SAP extension schema for groups, including application ID, type, and supported operations.
+
+For more information, see
+
+-   [Identity Authentication](identity-authentication-e4e25f1.md)
+-   [SAP BTP Account Members \(Neo\)](sap-btp-account-members-neo-a8035cd.md)
+-   [SAP BTP XS Advanced UAA \(Cloud Foundry\)](sap-btp-xs-advanced-uaa-cloud-foundry-c135a52.md)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-04-08
+
+</td>
+<td valign="top">
+
+2025-04-08
+
+</td>
+<td valign="top">
+
+2503b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Identity Authentication \(using SCIM API version 2\) - changed behavior
+
+</td>
+<td valign="top">
+
+Similar to the Local Identity Directory, you can now use Identity Authentication \(SCIM API version 2\) for reading and writing application-specific groups. Depending on the configured pair of provisioning systems, to ensure successful provisioning, you might need to manually define value mappings for the attribute `applicationId` in the source or the target system transformations.
+
+For more information, see:
+
+-   [Identity Authentication \(Source\)](identity-authentication-e4e25f1.md)
+-   [Identity Authentication \(Target\)](identity-authentication-f217bd3.md)
+-   [List of Properties](list-of-properties-d6f3577.md)→`ips.application.id`
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-04-08
+
+</td>
+<td valign="top">
+
+2025-04-08
+
+</td>
+<td valign="top">
+
+2503b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Registration and Upgrade Forms
+
+</td>
+<td valign="top">
+
+You can now configure the `Department` user attribute to be displayed on application's registration and upgrade forms. See [Configure Registration and Upgrade Forms](Operation-Guide/configure-registration-and-upgrade-forms-93a9e18.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-04-08
+
+</td>
+<td valign="top">
+
+2025-04-08
+
+</td>
+<td valign="top">
+
+2503b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Provided APIs
 
 </td>
