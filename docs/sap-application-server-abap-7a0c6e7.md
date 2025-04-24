@@ -33,7 +33,7 @@ SAP Application Server ABAP \(AS ABAP\) offers a user store and user administrat
 > 
 > -   On the attempt to create a group in AS ABAP, Identity Provisioning will only add new members or update existing ones. Also, when the service reads a group from a source system, there must be a group with the exact same display name \(case sensitive\) in the AS ABAP target system. Otherwise, an error will be thrown and the group members will not be updated.
 > 
->     If group names in the source system defer from the ones in AS ABAP, you can define value mappings for these group names so the provisioning will still work. To learn how, see [Transformation Expressions](transformation-expressions-bb8537b.md) → section **valueMapping**.
+>     If group names in the source system differ from the ones in AS ABAP, you can define value mappings for these group names so the provisioning will still work. To learn how, see [Transformation Expressions](transformation-expressions-bb8537b.md) → section **valueMapping**.
 > 
 > -   On the attempt to delete a group in AS ABAP, Identity Provisioning will only remove its members \(group assignments\). And this can happen only if the relevant group assignments have been provisioned/are present in the target system.
 
@@ -165,6 +165,8 @@ Groups in source systems are mapped to roles in AS ABAP target systems.
     <td valign="top">
     
     Defines the proxy type of the connection you need to provide for your ABAP system.
+
+    The value is set during destination creation in SAP BTP cockpit.
 
     The proxy type *OnPremise* requires the Cloud Connector to access resources within your on-premise network.
 

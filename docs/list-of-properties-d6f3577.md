@@ -551,7 +551,7 @@ When specified, only those SAP Ariba Applications users matching the filter expr
 
 For example: *userName eq "SmithJ"* 
 
-**System Role:** Source
+**System Role:** Source, Proxy
 
 </td>
 <td valign="top">
@@ -632,7 +632,7 @@ According to your use case, choose how to set up this property:
 
 Default value: *userName* 
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -657,7 +657,7 @@ Default value \(when not specified\): *displayName*
 
 If the property is not specified, the search is done by the default attribute: *displayName*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -934,7 +934,7 @@ According to your use case, choose how to set up this property:
 
 Default value: *userName*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -974,6 +974,37 @@ SAP Ariba Buying
 <tr>
 <td valign="top">
 
+`c4c.support.patch.operation`
+
+</td>
+<td valign="top">
+
+This property controls how modified entities \(users and groups\) in the source system are updated in the target system.
+
+-   If set to *true*, `PATCH` operations are used to update users and groups in the target system. This means, for example, that if a user attribute is modified or a group member is removed from a group, only these changes will be provisioned and applied in the target system.
+
+-   If set to *false*, `PUT` operations are used to update users and groups in the target system. This means, for example, that if a user attribute is modified or a group member is removed from a group, all user attributes and all group attributes are replaced in the target system, instead of updating only the modified ones.
+
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false* 
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Sales Cloud and SAP Service Cloud
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `c4c.api.version` 
 
 </td>
@@ -986,6 +1017,7 @@ This property defines the API version that the API of your SAP Sales Cloud and S
 -   *1*
 -   *2*
 -   *3*
+-   *4*
 
 By default, Identity Provisioning uses version *3*, which means - SCIM 2.0 based API.
 
@@ -1033,7 +1065,13 @@ SAP BTP Platform Members \(Cloud Foundry\)
 </td>
 <td valign="top">
 
-Enter the technical key of the landscape in which your multi-environment subaccount with enabled Cloud Foundry environment is located. For more information, see [Regions and API Endpoints Available for the Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/regions-and-api-endpoints-available-for-cloud-foundry-environment?version=Cloud).
+Enter the technical key of the landscape in which your multi-environment subaccount with enabled Cloud Foundry environment is located.
+
+For more information, see [Regions and API Endpoints Available for the Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/regions-and-api-endpoints-available-for-cloud-foundry-environment?version=Cloud).
+
+Please note that when the technical key contains an extension index, the correct value is displayed in the *API Endpoint* column instead of the *Technical Key* column of the table.
+
+The value of the technical key can also be found by looking up your *Cloud Foundry API Endpoint*, displayed on subaccount level in the*Cloud Foundry Environment* tab of the SAP BTP cockpit
 
 For example: `cf-eu10-002`
 
@@ -1269,7 +1307,7 @@ To make the search filter by a specific attribute, specify this attribute as a v
 
 If the property is not specified, the search is done by the default attribute: *displayName*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -1319,7 +1357,7 @@ This property defines by which unique attribute\(s\) the existing user will be s
 
 Default value: *userName*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -1443,7 +1481,7 @@ You can use the example value or provide your own.
 
 -   When **set in the target system**, only groups containing the `DC_` prefix in their display name will be provisioned to SAP Data Custodian. Groups without this prefix in the display name won't be provisioned.
 
-    If the property is not set, all groups will be be provisioned to SAP Data Custodian.
+    If the property is not set, all groups will be provisioned to SAP Data Custodian.
 
 
 **System Role:** Source, Target
@@ -1502,7 +1540,7 @@ According to your use case, choose how to set up this property:
 
 Default value: *userName*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -1845,7 +1883,7 @@ This property defines by which unique attribute\(s\) the existing group will be 
 
 If the property is not specified, the search is done by the default attribute: `displayName`
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -1877,7 +1915,7 @@ This property defines by which unique attribute\(s\) the existing user will be s
 
 Default value: *userName*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -2076,7 +2114,7 @@ Local Identity Directory
 
 This property enables paging of user’s groups.
 
-The maximum number of user’s groups returned per request is 1000. To read more than 1000 user’s groups, paging must be enabled.
+The maximum number of user’s groups returned per request is 1 000. To read more than 1 000 user’s groups, paging must be enabled.
 
 **Possible values:**
 
@@ -2140,7 +2178,7 @@ This property defines by which unique attribute\(s\) the existing group will be 
 
 If the property is not specified, the search is done by the default attribute: `displayName`
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -2308,7 +2346,7 @@ According to your use case and system type, choose how to set up this property:
 
 Default value: *userName* 
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -2778,7 +2816,7 @@ All systems
 <tr>
 <td valign="top">
 
-`ips.trace.updated.entity.content`
+`ips.trace.updated.entity.content` 
 
 </td>
 <td valign="top">
@@ -2984,6 +3022,8 @@ For more information, see [Manage Full and Delta Read](Operation-Guide/manage-fu
 
 -   SCIM System
 
+-   SAP Sales Cloud and SAP Service Cloud
+
 
 
 
@@ -3114,7 +3154,11 @@ When the property is set, the groups are provisioned with their *applicationId* 
 </td>
 <td valign="top">
 
+-   Identity Authentication \(SCIM API version 2\)
+
 -   Local Identity Directory
+
+-   Microsoft Entra ID
 
 -   SAP Advanced Financial Closing
 
@@ -3126,13 +3170,25 @@ When the property is set, the groups are provisioned with their *applicationId* 
 
 -   SAP Ariba Central Invoice Management
 
+-   SAP BTP ABAP environment
+
+-   SAP BTP Account Members \(Neo\)
+
+-   SAP Build Work Zone, advanced edition
+
 -   SAP BTP Platform Members \(Cloud Foundry\)
+
+-   SAP BTP XS Advanced UAA \(Cloud Foundry\)
+
+-   SAP Central Business Configuration
+
+-   SAP Commerce Cloud
 
 -   SAP Sales Cloud and SAP Service Cloud
 
 -   SAP S/4 HANA Cloud
 
--   Microsoft Entra ID
+-   SAP Revenue Growth Management
 
 
 
@@ -3212,6 +3268,8 @@ If you need to make OAuth authentication to the system, enter the URL to the acc
 
 -   Procurement Data Warehouse
 
+-   SAP Sales Cloud and SAP Service Cloud
+
 -   SAP S/4HANA for procurement planning
 
 -   SCIM System
@@ -3233,11 +3291,14 @@ If your backend system is OAuth protected and requires an access token with scop
 
 This is an optional property. Providing a value only makes sense if the backend system and its trusted OAuth server requires it. For more information, see [OAuth Scopes](https://oauth.net/2/scope/).
 
-Example value of Google G Suite OAuth scope: `https://www.googleapis.com/auth/admin.directory.user`
+OAuth does not define particular values for scopes as they are system-specific. Both single and multiple scope values are accepted. When using multiple scopes, space is the standard delimiter, as defined in the [OAuth 2.0 Authorization Framework](https://datatracker.ietf.org/doc/html/rfc6749#section-3.3).
 
-Although Google G Suite OAuth scopes look like URLs, they are not web pages. They are access token permissions.
+**Possible values**:
 
-**Possible values:** Scopes are system specific.
+-   Example value of Google G Suite OAuth single scope: `https://www.googleapis.com/auth/admin.directory.user`. Although Google G Suite OAuth scopes look like URLs, they are not web pages. They are access token permissions.
+
+-   Example value of multiple space-delimited scopes: `read write delete`
+
 
 **System Role:** Source, Target, Proxy
 
@@ -4387,7 +4448,7 @@ Use this property to configure the paging \(pagination\). That means, the number
 Default value: *100* 
 
 > ### Note:  
-> It is not recommended to exceed 1000.
+> It is not recommended to exceed *1000*.
 
 **System Role:** Source
 
@@ -4599,7 +4660,7 @@ Google G Suite
 </td>
 <td valign="top">
 
-Use this property if you want to specify the read timeout \(in milliseconds\) for an LDAP connection.
+Use this property if you want to specify the read timeout \(in milliseconds\) for an LDAP connection. The expected value is a positive integer without any separators, such as a space, comma, or period.
 
 **Possible values:**
 
@@ -4627,7 +4688,7 @@ This value causes the LDAP service provider to abort the read attempt if the ser
 </td>
 <td valign="top">
 
-Use this property if you want to set the timeout \(in milliseconds\) for connecting to the LDAP server.
+Use this property if you want to set the timeout \(in milliseconds\) for connecting to the LDAP server. The expected value is a positive integer without any separators, such as a space, comma, or period.
 
 **Possible values:**
 
@@ -6424,7 +6485,7 @@ To make the search filter by a specific attribute, specify this attribute as a v
 
 If the property is not specified, the search is done by the default attribute: *displayName*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -8346,6 +8407,38 @@ SAP Build Work Zone, advanced edition
 <tr>
 <td valign="top">
 
+`workzone.group.prefix`
+
+</td>
+<td valign="top">
+
+This property distinguishes SAP Build Work Zone, advanced edition groups by specific prefix. It is an optional property which does not appear by default at system creation.
+
+Example value: WORKZONE\_
+
+You can use the example value or provide your own.
+
+-   When set in the source system, the prefix will be prepended to the name of the groups that are read from the SAP Build Work Zone, advanced edition source system and will be provisioned to the target system with the following name pattern: WORKZONE\_GroupDisplayName. This way SAP Build Work Zone, advanced edition groups in the target system will be distinguished from groups provisioned from other applications.
+
+    If the property is not set, the SAP Build Work Zone, advanced edition groups will be read and provisioned to the target system with their actual display names.
+
+-   When set in the target system, only groups containing the WORKZONE\_ prefix in their display name will be provisioned to SAP Build Work Zone, advanced edition. Groups without this prefix in the display name won't be provisioned.
+
+    If the property is not set, all groups will be provisioned to SAP Build Work Zone, advanced edition.
+
+
+System Role: Source and Target
+
+</td>
+<td valign="top">
+
+SAP Build Work Zone, advanced edition
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `workzone.content.type`
 
 </td>
@@ -8434,7 +8527,7 @@ According to your use case, choose how to set up this property:
 
 Default value: *userName*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -8459,7 +8552,7 @@ Default value \(when not specified\): *displayName*
 
 If the property is not specified, the search is done by the default attribute: `displayName`
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -8555,7 +8648,7 @@ Default value \(when not specified\): *displayName*
 
 If the property is not specified, the search is done by the default attribute: `displayName`.
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -8643,7 +8736,7 @@ According to your use case, choose how to set up this property:
 
 Default value: *userName*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -8818,13 +8911,13 @@ Identity Authentication \(SCIM API version 2\)
 
 This property enables paging of user’s groups.
 
-The maximum number of user’s groups returned per request is 1000. To read more than 1000 user’s groups, paging must be enabled.
+The maximum number of user’s groups returned per request is 1 000. To read more than 1 000 user’s groups, paging must be enabled.
 
 **Possible values:**
 
--   *true* - Paging is enabled. You can read more than 1000 user’s groups in one request.
+-   *true* - Paging is enabled. You can read more than 1 000 user’s groups in one request.
 
--   *false* - Paging is disabled. You can read up to 1000 user’s groups in one request.
+-   *false* - Paging is disabled. You can read up to 1 000 user’s groups in one request.
 
 
 Default value: *false*
@@ -8936,7 +9029,7 @@ According to your use case and system type, choose how to set up this property:
 
 Default value: *userName* 
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -8966,7 +9059,7 @@ This property defines by which unique attribute\(s\) the existing group will be 
 
 If the property is not specified, the search is done by the default attribute: `displayName`
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -9236,20 +9329,22 @@ Identity Authentication
 
 Defines the threshold number of group members above which they are provisioned on batches with PATCH requests, and below which they are provisioned with PUT request. Setting this property allows you to avoid timeouts when updating groups with a large number of group members.
 
+The expected value is a positive integer without any separators, such as a space, comma, or period.
+
 > ### Note:  
 > You can use this property when Identity Authentication is based on Identity Directory SCIM API \(in short, SCIM API version 2\).
 
 **Possible values**: integer
 
-Default value: *20 000*
+Default value: *20000*
 
 Minimum value: *1*
 
-Maximum value: *20 000*
+Maximum value: *20000*
 
 For example:
 
--   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1200 members, setting this property to 900 results in the following:
+-   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1 200 members, setting this property to 900 results in the following:
 
     As 1900 \(the target count of the members\) is above the threshold number of 900, 2 `PATCH` requests will be sent to the Identity Authentication target system. The first request will add 900 group members and the second request will add 300 group members.
 
@@ -9280,22 +9375,24 @@ Identity Authentication
 </td>
 <td valign="top">
 
-Defines the threshold number of group members above which they are provisioned on batches with `PATCH` requests, and below which they are provisioned with `PUT` request. Setting this property allows you to avoid timeouts when updating groups with a large number of group members.
+Defines the threshold number of group members above which they are provisioned on batches with `PATCH` requests, and below which they are provisioned with `PUT` request. Setting this property allows you to avoid timeouts when updating groups with a large number of group members. The expected value is a positive integer without any separators, such as a space, comma, or period.
+
+The expected value is a positive integer without any separators, such as a space, comma, or period.
 
 > ### Note:  
 > You can use this property when Identity Authentication and Identity Provisioning \(where Local Identity Directory is configured\), are running on the same infrastructure, that is, the infrastructure of Identity Authentication.
 
 **Possible values**: integer
 
-Default value: *20 000*
+Default value: *20000*
 
 Minimum value: *1*
 
-Maximum value: *200 000*
+Maximum value: *200000*
 
 For example:
 
--   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1200 members, setting this property to 900 results in the following:
+-   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1 200 members, setting this property to 900 results in the following:
 
     As 1900 \(the target count of the members\) is above the threshold number of 900, 2 `PATCH` requests will be sent to the Local Identity Directory target system. The first request will add 900 group members and the second request will add 300 group members.
 
@@ -9328,19 +9425,21 @@ Local Identity Directory
 
 Defines the threshold number of group members above which they are provisioned on batches with `PATCH` requests, and below which they are provisioned with `PUT` request. Setting this property allows you to avoid timeouts when updating groups with a large number of group members.
 
+The expected value is a positive integer without any separators, such as a space, comma, or period.
+
 **Possible values**: integer
 
-Default value: *20 000*
+Default value: *20000*
 
 Minimum value: *1*
 
-Maximum value: *200 000*
+Maximum value: *200000*
 
 For example:
 
--   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1200 members, setting this property to 900 results in the following:
+-   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1 200 members, setting this property to 900 results in the following:
 
-    As 1900 \(the target count of the members\) is above the threshold number of 900, 2 `PATCH` requests will be sent to the XSUAA target system. The first request will add 900 group members and the second request will add 300 group members.
+    As 1 900 \(the target count of the members\) is above the threshold number of 900, 2 `PATCH` requests will be sent to the XSUAA target system. The first request will add 900 group members and the second request will add 300 group members.
 
     The threshold number you set defines the maximum number of group members processed per batch.
 
@@ -10049,13 +10148,15 @@ This property is relevant only when `ariba.applications.patch.group.members.of.n
 
 It defines the maximum number of user members of a group that are included in one PATCH request. If the maximum value of 200 000 is exceeded, the system sets automatically the default value.
 
+The expected value is a positive integer without any separators, such as a space, comma, or period.
+
 **Possible values**: integer
 
-Default value: *20 000*
+Default value: *20000*
 
 Minimum value: *1*
 
-Maximum value: *200 000*
+Maximum value: *200000*
 
 **System Role:** Target
 
@@ -10185,7 +10286,7 @@ Whether the existing user will be updated or a new one will be created by Identi
 > ### Recommendation:  
 > We recommend that you do not modify the value of the `cflp.user.unique.attribute` property. Otherwise, user creation fails.
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -10215,7 +10316,7 @@ For the conflict to be resolved, an existing group matching both unique attribut
 > ### Recommendation:  
 > We recommend that you do not modify the value of the `cflp.group.unique.attribute` property. Otherwise, the group creation fails.
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -10234,6 +10335,8 @@ SAP Build Work Zone, standard edition
 
 Defines the threshold number of group members above which they are provisioned on batches with `PATCH` requests, and below which they are provisioned with `PUT` request. Setting this property allows you to avoid timeouts when updating groups with a large number of group members.
 
+The expected value is a positive integer without any separators, such as a space, comma, or period.
+
 **Possible values:** integer
 
 Default and maximum value: *5000*
@@ -10242,9 +10345,9 @@ Minimum value: *1*
 
 For example:
 
--   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1200 members, setting this property to 900 results in the following:
+-   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1 200 members, setting this property to 900 results in the following:
 
-    As 1900 \(the target count of the members\) is above the threshold number of 900, 2 `PATCH` requests will be sent to the SAP Build Work Zone, standard edition target system. The first request will add 900 group members and the second request will add 300 group members.
+    As 1 900 \(the target count of the members\) is above the threshold number of 900, 2 `PATCH` requests will be sent to the SAP Build Work Zone, standard edition target system. The first request will add 900 group members and the second request will add 300 group members.
 
     The threshold number you set defines the maximum number of group members processed per batch.
 
@@ -10254,7 +10357,7 @@ For example:
 
 
 > ### Note:  
-> If the maximum value of 5 000 is exceeded, the system will automatically use the default value.
+> If the maximum value of *5000* is exceeded, the system will automatically use the default value.
 
 **System Role:** Target
 
@@ -10550,6 +10653,38 @@ SAP Commerce Cloud
 <tr>
 <td valign="top">
 
+`cc.group.prefix`
+
+</td>
+<td valign="top">
+
+This property distinguishes SAP Commerce Cloud groups by specific prefix. It is an optional property which does not appear by default at system creation.
+
+Example value: `CC_`
+
+You can use the example value or provide your own.
+
+-   When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP Commerce Cloud source system and will be provisioned to the target system with the following name pattern: `CC_<GroupDisplayName>`. This way SAP Commerce Cloud groups in the target system will be distinguished from groups provisioned from other applications.
+
+    If the property is not set, the SAP Commerce Cloud groups will be read and provisioned to the target system with their actual display names.
+
+-   When **set in the target system**, only groups containing the `CC_` prefix in their display name will be provisioned to SAP Commerce Cloud. Groups without this prefix in the display name won't be provisioned.
+
+    If the property is not set, all groups will be provisioned to SAP Commerce Cloud.
+
+
+**System Role:** Source, Target
+
+</td>
+<td valign="top">
+
+SAP Commerce Cloud
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `cc.support.patch.operation`
 
 </td>
@@ -10645,7 +10780,7 @@ This property defines by which unique attribute\(s\) the existing group will be 
 
 If the property is not specified, the search is done by the default attribute: `displayName`
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -10672,7 +10807,7 @@ The property is automatically added during system creation. If the service finds
 
 Default value: *emails\[0\].value, userName, externalId*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -10716,20 +10851,22 @@ SAP Commerce Cloud
 
 Defines the threshold number of group members above which they are provisioned on batches with PATCH requests, and below which they are provisioned with PUT request. Setting this property allows you to avoid timeouts when updating groups with a large number of group members.
 
+The expected value is a positive integer without any separators, such as a space, comma, or period.
+
 > ### Note:  
 > You can use this property when SAP Commerce Cloud is based on SAP Commerce Cloud SCIM API \(in short, SCIM API version 2\).
 
 **Possible values**: integer
 
-Default value: *20 000*
+Default value: *20000*
 
 Minimum value: *1*
 
-Maximum value: *200 000*
+Maximum value: *200000*
 
 For example:
 
--   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1200 members, setting this property to 900 results in the following:
+-   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1 200 members, setting this property to 900 results in the following:
 
     As 1900 \(the target count of the members\) is above the threshold number of 900, 2 `PATCH` requests will be sent to the Identity Authentication target system. The first request will add 900 group members and the second request will add 300 group members.
 
@@ -11115,7 +11252,7 @@ To make the search filter by a specific attribute, specify this attribute as a v
 
 If the property is not specified, the search is done by the default attribute: *displayName*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -11195,22 +11332,24 @@ SAP SuccessFactors \(using version 1 - SAP SuccessFactors HCM Suite OData API\)
 
 Defines the threshold number of group members above which they are provisioned on batches with `PATCH` requests, and below which they are provisioned with `PUT` request. Setting this property allows you to avoid timeouts when updating groups with a large number of group members.
 
+The expected value is a positive integer without any separators, such as a space, comma, or period.
+
 > ### Note:  
 > You can use this property when SAP SuccessFactors is based on SAP SuccessFactors Workforce SCIM API \(in short, SCIM API\).
 
 **Possible values**: integer
 
-Default value: *20 000*
+Default value: *20000*
 
 Minimum value: *1*
 
-Maximum value: *200 000*
+Maximum value: *200000*
 
 For example:
 
--   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1200 members, setting this property to 900 results in the following:
+-   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1 200 members, setting this property to 900 results in the following:
 
-    As 1900 \(the target count of the members\) is above the threshold number of 900, 2 `PATCH` requests will be sent to the Local Identity Directory target system. The first request will add 900 group members and the second request will add 300 group members.
+    As 1 900 \(the target count of the members\) is above the threshold number of 900, 2 `PATCH` requests will be sent to the Local Identity Directory target system. The first request will add 900 group members and the second request will add 300 group members.
 
     The threshold number you set defines the maximum number of group members processed per batch.
 
@@ -11422,6 +11561,15 @@ For example:
 -   addresses.country eq "USA"
 
 
+Supported user filters in connector version 4:
+
+-   userName eq "Smith"
+
+-   userName sw "Sm"
+
+-   userName eq "Smith" and emails.value eq "smith@example.com"
+
+
 **System Role:** Source, Proxy
 
 </td>
@@ -11464,27 +11612,29 @@ SAP Sales Cloud and SAP Service Cloud
 
 Defines the threshold number of group members above which they are provisioned on batches with PATCH requests, and below which they are provisioned with PUT request. Setting this property allows you to avoid timeouts when updating groups with a large number of group members.
 
+The expected value is a positive integer without any separators, such as a space, comma, or period.
+
 **Possible values**: integer
 
-Default value: *1 000*
+Default value: *1000*
 
 Minimum value: *1*
 
-Maximum value: *1 000*
+Maximum value: *1000*
 
 For example:
 
--   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1200 members, setting this property to 900 results in the following:
+-   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1 200 members, setting this property to 900 results in the following:
 
-    As 1900 \(the target count of the members\) is above the threshold number of 900, 2 PATCH requests will be sent to the SAP Sales Cloud and SAP Service Cloud target system. The first request will add 900 group members and the second request will add 300 group members.
+    As 1 900 \(the target count of the members\) is above the threshold number of 900, 2 PATCH requests will be sent to the SAP Sales Cloud and SAP Service Cloud target system. The first request will add 900 group members and the second request will add 300 group members.
 
     The threshold number you set defines the maximum number of group member changes processed per batch.
 
--   `PUT` request: If you have a group with 1000 members and the threshold is not set or its value is above 1000, one PUT request will be sent to SAP Sales Cloud and SAP Service Cloud. But if you set the threshold to 500, 2 PATCH requests will be sent instead, each adding 500 members.
+-   `PUT` request: If you have a group with 1 000 members and the threshold is not set or its value is above *1000*, one PUT request will be sent to SAP Sales Cloud and SAP Service Cloud. But if you set the threshold to 500, 2 PATCH requests will be sent instead, each adding 500 members.
 
 
 > ### Note:  
-> If the maximum value of 1 000 is exceeded, the system will automatically use the default value.
+> If the maximum value of *1000* is exceeded, the system will automatically use the default value.
 
 **System Role:** Target
 
@@ -11686,7 +11836,7 @@ Default value: *displayName*
 
 If the property is not specified, the search is done by the default attribute: `displayName`.
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -11719,7 +11869,7 @@ According to your use case, choose how to set up this property:
 
 Default value: *userName*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -11818,20 +11968,22 @@ SAP Analytics Cloud
 
 Defines the threshold number of group members above which they are provisioned on batches with PATCH requests, and below which they are provisioned with PUT request. Setting this property allows you to avoid timeouts when updating groups with a large number of group members.
 
+The expected value is a positive integer without any separators, such as a space, comma, or period.
+
 > ### Note:  
 > You can use this property when SAP Analytics Cloud is based on SCIM API version 2.
 
 **Possible values**: integer
 
-Default value: *20 000*
+Default value: *20000*
 
 Minimum value: *1*
 
-Maximum value: *200 000*
+Maximum value: *200000*
 
 For example:
 
--   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1200 members, setting this property to 900 results in the following:
+-   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1 200 members, setting this property to 900 results in the following:
 
     As 1900 \(the target count of the members\) is above the threshold number of 900, 2 `PATCH` requests will be sent to the SAP Analytics Cloud target system. The first request will add 900 group members and the second request will add 300 group members.
 
@@ -11984,7 +12136,7 @@ Default value: *userName*
 
 If the service finds an existing user by userName, it updates this user with the data of the conflicting one. If the service does not find an existing user by userName, the creation of the conflicting user fails.
 
-**System Role**: Target, Proxy
+**System Role**: Target
 
 </td>
 <td valign="top">
@@ -12184,7 +12336,7 @@ Possible values:
 > ### Note:  
 > If this property is missing, or you've deleted it, and the service does not find such a *userName*, it will try again to resolve the conflicting user – by *email*. If the second attempt for resolution is unsuccessful too, the creation of the conflicting user fails.
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -12422,7 +12574,7 @@ Default value: *displayName*
 
 If the property is not specified, the search is done by the default attribute: *displayName*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -12512,7 +12664,7 @@ Possible values:
 
 Default value: *userName*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -12615,7 +12767,7 @@ Possible values:
 
 Default value: *personExternalID*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -12652,7 +12804,7 @@ Possible values:
 
 Default value: *personExternalID*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -12689,7 +12841,7 @@ Possible values:
 
 Default value: *personExternalID*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -12726,7 +12878,7 @@ Possible values:
 
 Default value: *personExternalID*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -12763,7 +12915,7 @@ Possible values:
 
 Default value: *personExternalID*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -12800,7 +12952,7 @@ Possible values:
 
 Default value: *personExternalID*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -12881,7 +13033,7 @@ SAP S/4HANA Cloud
 
 Use this property to control the number of users to be deleted in a target system by defining a threshold. This will prevent you from accidentally deleting a huge number of users, for example by adding a filter or condition. For more information, see [Thresholds Prevent Unintended Deletion of Users when Provisioning with SAP Cloud Identity Services](https://community.sap.com/t5/technology-blogs-by-sap/thresholds-prevent-unintended-deletion-of-users-when-provisioning-with-sap/ba-p/13584176).
 
-The property is optional and is defined on the target systems only. It is not added at system creation. Its value must be greater than "0".
+The property is optional and is defined on the target systems only. It is not added at system creation. The expected value is a positive integer without any separators, such as a space, comma, or period.
 
 Controlling the deletion works as follows:
 
@@ -12916,7 +13068,7 @@ All systems
 
 Use this property to control the number of groups or group assignments to be deleted in a target system by defining a threshold. This will prevent you from accidentally deleting a huge number of groups or group assignments, for example by adding a filter or condition. For more information, see [Thresholds Prevent Unintended Deletion of Users when Provisioning with SAP Cloud Identity Services](https://community.sap.com/t5/technology-blogs-by-sap/thresholds-prevent-unintended-deletion-of-users-when-provisioning-with-sap/ba-p/13584176).
 
-The property is optional and is defined on the target systems only. It is not added at system creation. Its value must be greater than "0".
+The property is optional and is defined on the target systems only. It is not added at system creation. The expected value is a positive integer without any separators, such as a space, comma, or period.
 
 Controlling the deletion works as follows:
 
@@ -13022,7 +13174,7 @@ As a result, expect the following behavior:
 
 Use this property to control the number of roles or user assignments of a role to be deleted in a target system by defining a threshold. This will prevent you from accidentally deleting a huge number of roles or user assignments of a role, for example by adding a filter or condition. For more information, see [Thresholds Prevent Unintended Deletion of Users when Provisioning with SAP Cloud Identity Services](https://community.sap.com/t5/technology-blogs-by-sap/thresholds-prevent-unintended-deletion-of-users-when-provisioning-with-sap/ba-p/13584176).
 
-The property is optional and is defined on the target systems only. It is not added at system creation. Its value must be greater than "0".
+The property is optional and is defined on the target systems only. It is not added at system creation. The expected value is a positive integer without any separators, such as a space, comma, or period.
 
 Controlling the deletion works as follows:
 
@@ -13169,7 +13321,7 @@ According to your use case, choose how to set up this property:
 
 Default value: *userName*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -13317,7 +13469,7 @@ When the Identity Provisioning attempts to provision a user for the first time, 
 
 Default value: *userName* 
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -13400,7 +13552,7 @@ According to your use case, choose how to set up this property:
 
 Default value: *userName* 
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -13425,7 +13577,7 @@ Default value \(when not specified\): *displayName*
 
 If the property is not specified, the search is done by the default attribute: *displayName*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -13688,7 +13840,7 @@ Default behavior: This property is missing during system creation. Its default v
 
 Possible values: *userName*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -13713,7 +13865,7 @@ Default value \(when not specified\): *displayName*
 
 If the property is not specified, the search is done by the default attribute: *displayName*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -13931,7 +14083,7 @@ According to your use case, choose how to set up this property:
 
 Default value: *userName*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -14122,7 +14274,7 @@ Default value \(when not specified\): *displayName*
 
 If the property is not specified, the search is done by the default attribute: *displayName*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -14226,7 +14378,7 @@ According to your use case, choose how to set up this property:
 
 Default value: *userName*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -14432,7 +14584,7 @@ Default value: *userName*
 
 If the service finds an existing user by userName, it updates this user with the data of the conflicting one. If the service does not find an existing user by userName, the creation of the conflicting user fails.
 
-**System Role**: Target, Proxy
+**System Role**: Target
 
 </td>
 <td valign="top">
@@ -14457,7 +14609,7 @@ Default value \(when not specified\): *displayName*
 
 If the property is not specified, the search is done by the default attribute: *displayName*
 
-**System Role:** Target, Proxy
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -14565,6 +14717,454 @@ You can use the example value or provide your own.
 <td valign="top">
 
 SAP Enable Now
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`sig.user.filter`
+
+</td>
+<td valign="top">
+
+When specified, only those SAP Signavio Process Transformation Suite users matching the filter expression will be read.
+
+**Possible values:**
+
+For example: *userName eq "SmithJ"*
+
+**System Role:**Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP Signavio Process Transformation Suite 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`sig.group.filter`
+
+</td>
+<td valign="top">
+
+When specified, only those SAP Signavio Process Transformation Suite groups matching the filter expression will be read.
+
+**Possible values:**
+
+For example: *displayName eq "ProjectTeam1"*
+
+**System Role:**Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP Signavio Process Transformation Suite
+
+SAP Signavio Process Transformation Suite
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`sig.user.unique.attribute`
+
+</td>
+<td valign="top">
+
+When Identity Provisioning attempts to provision a user for the first time, it may detect that this user already exists on the target system. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\).
+
+This property defines by which unique attribute\(s\) the existing user will be searched and resolved. If the service finds a user on the target system via this filter, then the conflicting user will overwrite the existing one. If the service does not find a user on the target system via this filter, the creation will fail.
+
+**Default behavior**: This property is missing during system creation. Its default value is *userName*. This means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such *userName* is not found, the creation of the conflicting user fails.
+
+**Possible values:**
+
+Default value: *userName*
+
+**System Role:** Target
+
+</td>
+<td valign="top">
+
+SAP Signavio Process Transformation Suite 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`sig.group.unique.attribute`
+
+</td>
+<td valign="top">
+
+If the service tries to create a group that already exists in the target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\).
+
+To make the search filter by a specific attribute, specify this attribute as a value for the `sig.group.unique.attribute` property.
+
+If the property is not specified, the search is done by the default attribute: *displayName*
+
+**System Role:** Target
+
+</td>
+<td valign="top">
+
+SAP Signavio Process Transformation Suite 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`sig.include.if.match.wildcard.header`
+
+</td>
+<td valign="top">
+
+Makes the SAP Signavio Process Transformation Suite connector send the *If-Match* HTTP header with a value of “\*” for every request to the target system. This header could be used by an SAP Signavio Process Transformation Suite system for entity versioning.
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false* 
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Signavio Process Transformation Suite 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`sig.support.patch.operation`
+
+</td>
+<td valign="top">
+
+This property controls how modified entities \(users and groups\) in the source system are updated in the target system.
+
+-   If set to *true*, `PATCH` operations are used to update users and groups in the target system. This means, for example, that if a user attribute is modified or a group member is removed from a group, only these changes will be provisioned and applied in the target system.
+
+-   If set to *false*, `PUT` operations are used to update users and groups in the target system. This means, for example, that if a user attribute is modified or a group member is removed from a group, all user attributes and all group attributes are replaced in the target system, instead of updating only the modified ones.
+
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false* 
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Signavio Process Transformation Suite 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`sig.content.type`
+
+</td>
+<td valign="top">
+
+Makes the connector send a specified value for the *Content-Type* HTTP header. This is needed because an SAP Signavio Process Transformation Suite system could potentially not implement the protocol in the specification, which states that a system must accept *application/scim+json* as a value of the *Content-Type* header.
+
+**Possible values:**
+
+For example: *application/json*
+
+If the property is not specified, the default value is taken: *application/scim+json*
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Signavio Process Transformation Suite 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`sig.group.prefix`
+
+</td>
+<td valign="top">
+
+This property distinguishes SAP Signavio Process Transformation Suite groups by specific prefix. It is an optional property which does not appear by default at system creation.
+
+Example value: `SIG_`
+
+You can use the example value or provide your own.
+
+-   When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP Signavio Process Transformation Suite source system and will be provisioned to the target system with the following name pattern: <code>SIG_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP Signavio Process Transformation Suite groups in the target system will be distinguished from groups provisioned from other applications.
+
+    If the property is not set, the SAP Signavio Process Transformation Suite groups will be read and provisioned to the target system with their actual display names.
+
+-   When **set in the target system**, only groups containing the `SIG_` prefix in their display name will be provisioned to SAP Signavio Process Transformation Suite. Groups without this prefix in the display name won't be provisioned.
+
+    If the property is not set, all groups will be provisioned to SAP Signavio Process Transformation Suite.
+
+
+**System Role:** Source, Target
+
+</td>
+<td valign="top">
+
+SAP Signavio Process Transformation Suite 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`rgm.user.unique.attribute`
+
+</td>
+<td valign="top">
+
+When Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists on the target system. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\).
+
+This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\). If the service finds such a user on the target system via this filter, then the conflicting user will overwrite the existing one. If the service does not find such a user, the creation will fail.
+
+The property is automatically added during system creation. If the service finds an existing user by at least one of the uniqueness criteria, which are *email*, *userName*, or *externalId*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the update of the conflicting user fails. If more than one users with these unique attributes are found, the update fails.
+
+Possible values:*emails\[0\].value, userName, externalId*
+
+Default value: *emails\[0\].value, userName, externalId*
+
+System Role: Target
+
+</td>
+<td valign="top">
+
+SAP Revenue Growth Management 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`rgm.user.filter`
+
+</td>
+<td valign="top">
+
+When specified, only those users matching the filter expression will be read. You can filter users by `userName`, `emails[0].value`, and `externalId`, according to the API syntax of SAP Revenue Growth Management.
+
+**Possible values:** text/ numeric string
+
+For example:
+
+-   *userName eq "johnbrown" and externalId eq "P000252"*
+-   *userName sw "J" and externalId eq "P000252"*
+-   *userName eq "johnbrown" and emails.value eq "johnbrown@email.com"*
+-   *userName eq "johnbrown" and emails.value eq "johnbrown@email.com" and externalId eq "P000252"*
+
+    > ### Note:  
+    > These combinations are valid for both 'or' and 'and' operators.
+
+
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP Revenue Growth Management 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`rgm.group.unique.attribute`
+
+</td>
+<td valign="top">
+
+If you try to provision a group that already exists in a target system, the group creation will fail. In this case, the existing group only needs to be updated.
+
+This property defines by which unique attribute\(s\) the existing group will be searched and resolved. The default value is `['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']`. Currently, it is the only unique attribute that is supported. When set, you can expect the following behavior:
+
+-   If a group with the given unique attribute is found in the target system, the group that you try to provision will overwrite the existing one.
+
+-   If a group with the given unique attribute is not found in the target system, the group that you try to provision will not be created in the target system.
+
+
+**Possible values:**
+
+If the property is not specified, the search is done by the default attribute: `['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']`
+
+**System Role:** Target
+
+</td>
+<td valign="top">
+
+SAP Revenue Growth Management 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`rgm.group.filter`
+
+</td>
+<td valign="top">
+
+When specified, only those SAP Revenue Growth Management groups matching the filter expression will be read.
+
+**Possible values:**
+
+For example: *urn:sap:cloud:scim:schemas:extension:custom:2.0:Group:name eq "ProjectTeam1" or "Students2018"*
+
+**System Role:** Source
+
+</td>
+<td valign="top">
+
+SAP Revenue Growth Management 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`rgm.group.prefix`
+
+</td>
+<td valign="top">
+
+This property distinguishes SAP Revenue Growth Management groups by specific prefix. It is an optional property which does not appear by default at system creation.
+
+Example value: `RGM_`
+
+You can use the example value or provide your own.
+
+-   When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP Revenue Growth Management source system and will be provisioned to the target system with the following name pattern: <code>RGM_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This waySAP Revenue Growth Management groups in the target system will be distinguished from groups provisioned from other applications.
+
+    If the property is not set, theSAP Revenue Growth Management groups will be read and provisioned to the target system with their actual display names.
+
+-   When **set in the target system**, only groups containing the `RGM_` prefix in their display name will be provisioned to SAP Revenue Growth Management. Groups without this prefix in the display name won't be provisioned.
+
+    If the property is not set, all groups will be be provisioned to SAP Revenue Growth Management.
+
+
+**System Role:** Source and Target
+
+</td>
+<td valign="top">
+
+SAP Revenue Growth Management 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`rgm.support.patch.operation`
+
+</td>
+<td valign="top">
+
+This property controls how modified entities \(users and groups\) in the source system are updated in the target system.
+
+-   If set to *true*, `PATCH` operations are used to update users and groups in the target system. This means, for example, that if a user attribute is modified or a group member is removed from a group, only these changes will be provisioned and applied in the target system.
+
+-   If set to *false*, `PUT` operations are used to update users and groups in the target system. This means, for example, that if a user attribute is modified or a group member is removed from a group, all user attributes and all group attributes are replaced in the target system, instead of updating only the modified ones.
+
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false* 
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Revenue Growth Management 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`c4c.user.unique.attribute`
+
+</td>
+<td valign="top">
+
+When the Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists in SAP Sales Cloud and SAP Service Cloud. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\). This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\).
+
+According to your use case, choose how to set up this property:
+
+-   Default behavior: This property is missing during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such а *userName* is not found, the creation of the conflicting user fails.
+-   Value = *emails\[0\].value*. If the service finds an existing user with such *email*, it updates this user with the data of the conflicting one. If a user with such *email* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+-   Value = *userName,emails\[0\].value*. If the service finds an existing user with both these *userName* and *email*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+
+**Possible values:**
+
+-   userName
+
+-   emails\[0\].value
+
+-   userName,emails\[0\].value
+
+
+Default value: *userName*
+
+**System Role:** Target
+
+</td>
+<td valign="top">
+
+SAP Sales Cloud and SAP Service Cloud 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`c4c.group.unique.attribute`
+
+</td>
+<td valign="top">
+
+If the Identity Provisioning tries to create a group that already exists on the SAP Sales Cloud and SAP Service Cloud target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
+
+**Possible values:**
+
+Default value \(when not specified\): *displayName*
+
+If the property is not specified, the search is done by the default attribute: *displayName*
+
+**System Role:** Target
+
+</td>
+<td valign="top">
+
+SAP Sales Cloud and SAP Service Cloud 
 
 </td>
 </tr>

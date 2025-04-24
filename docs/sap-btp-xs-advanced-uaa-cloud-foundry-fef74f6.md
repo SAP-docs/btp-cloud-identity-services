@@ -10,10 +10,7 @@ Follow this procedure to set up the SAP BTP XS Advanced UAA \(running on SAP BTP
 
 ## Prerequisites
 
--   You have a global account in SAP BTP cockpit with a multi-environment subaccount and Cloud Foundry applications for which you have been subscribed.
-
--   You have created credentials to call the REST APIs of the SAP Authorization and Trust Management service on global account, subaccount, or directory level. For more information, see: [Get Access to the APIs](https://help.sap.com/docs/btp/sap-business-technology-platform/get-access-to-apis) and [btp create security/api-credential](https://help.sap.com/docs/btp/btp-cli-command-reference/btp-create-security-api-credential).
-
+You have created credentials to call the REST APIs of the SAP Authorization and Trust Management service on global account, subaccount, or directory level. For more information, see: [Get Access to the APIs](https://help.sap.com/docs/btp/sap-business-technology-platform/get-access-to-apis) and [btp create security/api-credential](https://help.sap.com/docs/btp/btp-cli-command-reference/btp-create-security-api-credential).
 
 > ### Note:  
 > Administrators of bundle tenants on Neo environment should enable the *Manage OAuth Clients* permission, as described in *Neo Environment* section in [Manage Authorizations](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/544de9b504214372b4479dc1f6b08cca.html "Manage the authorizations of Identity Provisioning administrators, when your bundle or standalone tenant is running on SAP BTP, Neo environment.") :arrow_upper_right:.
@@ -147,9 +144,16 @@ Create a separate proxy system for each global account, multi-environment subacc
     
     Enter the API URL in the following format:
 
-    <code>https://api.authentication.<i class="varname">&lt;region&gt;</i>.hana.ondemand.com</code>
+    <code>https://api.authentication.<i class="varname">&lt;region&gt;</i>.hana.ondemand.com</code> or
+
+    <code>https://api.authentication.<i class="varname">&lt;region&gt;</i>.accounts.cloud.sap</code>
 
     For more information, see [Call an API](https://help.sap.com/docs/btp/sap-business-technology-platform/call-api?version=Cloud).
+
+    > ### Restriction:  
+    > The `accounts.cloud.sap` domain is not relevant for China \(Shanghai\) and Government Cloud \(US\) regions.
+
+
     
     </td>
     </tr>
@@ -187,14 +191,25 @@ Create a separate proxy system for each global account, multi-environment subacc
     
     Enter the URL to the OAuth2 token service in the following format:
 
-    -   <code>https://<i class="varname">&lt;global_account_subdomain&gt;</i>.authentication.region.hana.ondemand.com/oauth/token</code>
+    -   <code>https://<i class="varname">&lt;global_account_subdomain&gt;</i>.authentication.<i class="varname">&lt;region&gt;</i>.hana.ondemand.com/oauth/token</code> or
 
-    -   <code>https://<i class="varname">&lt;subaccount_subdomain&gt;</i>.authentication.region.hana.ondemand.com/oauth/token</code>
+        <code>https://<i class="varname">&lt;global_account_subdomain&gt;</i>.authentication.<i class="varname">&lt;region&gt;</i>.accounts.cloud.sap/oauth/token</code>
 
-    -   <code>https://<i class="varname">&lt;directory_subdomain&gt;</i>.authentication.region.hana.ondemand.com/oauth/token</code>
+    -   <code>https://<i class="varname">&lt;subaccount_subdomain&gt;</i>.authentication.<i class="varname">&lt;region&gt;</i>.hana.ondemand.com/oauth/token</code> or
+
+        <code>https://<i class="varname">&lt;subaccount_subdomain&gt;</i>.authentication.<i class="varname">&lt;region&gt;</i>.accounts.cloud.sap/oauth/token</code>
+
+    -   <code>https://<i class="varname">&lt;directory_subdomain&gt;</i>.authentication.<i class="varname">&lt;region&gt;</i>.hana.ondemand.com/oauth/token</code> or
+
+        <code>https://<i class="varname">&lt;directory_subdomain&gt;</i>.authentication.<i class="varname">&lt;region&gt;</i>.accounts.cloud.sap/oauth/token</code>
 
 
     For more information, see [Call an API](https://help.sap.com/docs/btp/sap-business-technology-platform/call-api?version=Cloud).
+
+    > ### Restriction:  
+    > The `accounts.cloud.sap` domain is not relevant for China \(Shanghai\) and Government Cloud \(US\) regions.
+
+
     
     </td>
     </tr>
@@ -329,11 +344,11 @@ Create a separate proxy system for each global account, multi-environment subacc
 
     `OAuth2TokenServiceURL`=*https://myaccount.authentication.eu10.hana.ondemand.com/oauth/token*
 
-    `User`=*MyXSUAAuser*
+    `User`=*sb-full-access!a76125*
 
     `Password`=\*\*\*\*\*\*\*\*\*\*\*\*
 
-    `xsuaa.origin`=*myaccount-xsuaa.accounts.ondemand.com*
+    `xsuaa.origin`=*sap.custom*
 
     `xsuaa.origin.filter.enabled`=*true*
 
@@ -516,6 +531,15 @@ Create a separate proxy system for each global account, multi-environment subacc
     >          {
     >             "constant": "urn:ietf:params:scim:schemas:core:2.0:Group",
     >             "targetPath": "$.schemas[0]"
+    >          },
+    >          {
+    >             "constant": "authorization",
+    >             "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >          },
+    >          {
+    >             "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >             "optional": true,
+    >             "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
     >          }
     >       ],
     >       "scimEntityEndpoint": "Groups"
@@ -688,7 +712,9 @@ To see an example with SAP Identity Management, see [Hybrid Scenario: SAP Identi
 **Related Information**  
 
 
-[XS CLI: User Administration](https://help.sap.com/viewer/4505d0bdaf4948449b7f7379d24d0f0d/latest/en-US/4b38012ac63141bfa15bc1cb6418cc6a.html)
+[SAP Authorization and Trust Management Service](https://help.sap.com/docs/authorization-and-trust-management-service?locale=en-US&version=Cloud)
+
+[btp CLI Command Reference](https://help.sap.com/docs/btp/btp-cli-command-reference/btp-cli-command-reference)
 
 [SAP BTP Integration Scenario](https://help.sap.com/docs/cloud-identity/system-integration-guide/sap-btp-integration-scenario?version=Cloud)
 

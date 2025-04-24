@@ -120,6 +120,616 @@ General Availability
 </td>
 <td valign="top">
 
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-04-23
+
+</td>
+<td valign="top">
+
+2025-04-23
+
+</td>
+<td valign="top">
+
+2504a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Manage Corporate Identity Providers
+
+</td>
+<td valign="top">
+
+Tenant administrator can manage corporate identity providers in Identity Authentication via API. It offers endpoints for CRUD operations \(GET, POST, PATCH, DELETE\) over the corporate identity providers. See [SAP Cloud Identity Services Corporate Identity Providers Directory](https://api.sap.com/api/SCI_IdentityProvider_Directory/overview).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-04-23
+
+</td>
+<td valign="top">
+
+2025-04-23
+
+</td>
+<td valign="top">
+
+2504a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Privacy |Policy and Terms of Use
+
+</td>
+<td valign="top">
+
+The Identity Directory API of SAP Cloud Identity Services now returns the `termsOfUse` and `privacyPolicy` parameters. See [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/overview).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-04-23
+
+</td>
+<td valign="top">
+
+2025-04-23
+
+</td>
+<td valign="top">
+
+2504a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Application Protocol Type
+
+</td>
+<td valign="top">
+
+The protocol type of the <code>Administration Console for Cloud Identity Services is now changed to the hybrid type <b><i>SAML 2.0 &amp; OpenID Connect</i></b> from the <b><i>SAML 2.0</i></b> type</code>. See [Applications](applications-404a11c.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-04-23
+
+</td>
+<td valign="top">
+
+2025-04-23
+
+</td>
+<td valign="top">
+
+2504a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Sales Cloud and SAP Service Cloud - new version 
+
+</td>
+<td valign="top">
+
+A new version of SAP Sales Cloud and SAP Service Cloud is introduced. It supports certificate-based authentication, patch operations, delta read of entities, cursor-based pagination and more.
+
+For more information, see
+
+-   [SAP Sales Cloud and SAP Service Cloud \(Source\)](sap-sales-cloud-and-sap-service-cloud-8f3edc3.md)
+
+-   [SAP Sales Cloud and SAP Service Cloud \(Target\)](sap-sales-cloud-and-sap-service-cloud-1a974bc.md)
+
+-   [SAP Sales Cloud and SAP Service Cloud \(Proxy\)](sap-sales-cloud-and-sap-service-cloud-2f81c3b.md)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-04-24
+
+</td>
+<td valign="top">
+
+2025-04-24
+
+</td>
+<td valign="top">
+
+2504a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Build Work Zone, standard edition - schema support
+
+</td>
+<td valign="top">
+
+The default transformations of SAP Build Work Zone, standard edition are extended to support the `urn:ietf:params:scim:schemas:extension:sap:2.0:User` and `urn:ietf:params:scim:schemas:extension:2.0:mapping` schema.
+
+For more information, see [SAP Build Work Zone, standard edition](sap-build-work-zone-standard-edition-8d6586f.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-04-24
+
+</td>
+<td valign="top">
+
+2025-04-24
+
+</td>
+<td valign="top">
+
+2504a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Support for SAP extension schema for groups
+
+</td>
+<td valign="top">
+
+The default transformations of the following connectors support attributes from the SAP extension schema for groups, including application ID, type, and supported operations.
+
+For more information, see
+
+-   [SAP Central Business Configuration](sap-central-business-configuration-b572223.md)
+
+-   [SAP Build Work Zone, advanced edition](sap-build-work-zone-advanced-edition-647c5b5.md)
+
+-   [SAP BTP ABAP environment](sap-btp-abap-environment-bbab610.md)
+
+-   [SAP Commerce Cloud](sap-commerce-cloud-7eb21e8.md)
+
+-   [SAP Advanced Financial Closing](sap-advanced-financial-closing-beeeebf.md)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-04-24
+
+</td>
+<td valign="top">
+
+2025-04-24
+
+</td>
+<td valign="top">
+
+2504a
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regional Availability
+
+</td>
+<td valign="top">
+
+Cloud Identity Services has migrated the data \(DC\) center in China to Beijing in the Azure infrastructure from Shanghai in the SAP infrastructure.
+
+Action:
+
+We recommend you to add the following IPs to your allowed IP list:
+
+-   LB IP - 40.162.206.196, 40.162.223.103
+-   NAT IP - 40.162.31.41/32, 143.64.218.112/32
+
+The following IPs are no longer in use:
+
+-   LB IP - 121.91.104.198, 121.91.104.204
+-   NAT IP - 121.91.104.32/27, 121.91.106.0/28, 121.91.108.0/28
+
+See [Regional Availability](regional-availability-be600ca.md).
+
+</td>
+<td valign="top">
+
+Recommended
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-04-16
+
+</td>
+<td valign="top">
+
+2025-04-16
+
+</td>
+<td valign="top">
+
+2503b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
 Changed
 
 </td>
@@ -477,77 +1087,6 @@ Provided APIs
 <td valign="top">
 
 The provided APIs for the `Administration Console` for Cloud Identity Services is now read-only.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-Changed
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
-2025-04-08
-
-</td>
-<td valign="top">
-
-2025-04-08
-
-</td>
-<td valign="top">
-
-2503b
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Application Protocol Type
-
-</td>
-<td valign="top">
-
-The protocol type of the <code>Administration Console for Cloud Identity Services is now changed to the hybrid type <b><i>SAML 2.0 &amp; OpenID Connect</i></b> from the <b><i>SAML 2.0</i></b> type</code>. See [Applications](applications-404a11c.md).
 
 </td>
 <td valign="top">

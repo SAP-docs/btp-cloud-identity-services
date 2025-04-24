@@ -10,6 +10,11 @@ Properties enable you to customize the configuration of the Identity service.
 
 ## Service Properties
 
+> ### Tip:  
+> If you are creating a new tenant via subscription, `Cloud Identity Services` support only the `cloud_service` configuration parameter for the subscription creation. The supported values are: `PRODUCTIVE` and `TEST`. If you provide different parameter or values the tenant won't be created. For more information about the tenant creation, see [Get Your Tenant](../get-your-tenant-460766b.md).
+> 
+> If you want to customize the configuration of the Identity service, follow the rest of the information in this document.
+
 Provide properties in JSON format.
 
 The syntax of the properties is as follows:

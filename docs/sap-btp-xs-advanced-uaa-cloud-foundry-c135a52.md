@@ -10,10 +10,7 @@ Follow this procedure to set up the SAP BTP XS Advanced UAA \(running on SAP BTP
 
 ## Prerequisites
 
--   You have a global account in SAP BTP cockpit with a multi-environment subaccount and Cloud Foundry applications for which you have been subscribed.
-
--   You have created credentials to call the REST APIs of the SAP Authorization and Trust Management service on global account, subaccount, or directory level. For more information, see: [Get Access to the APIs](https://help.sap.com/docs/btp/sap-business-technology-platform/get-access-to-apis) and [btp create security/api-credential](https://help.sap.com/docs/btp/btp-cli-command-reference/btp-create-security-api-credential).
-
+You have created credentials to call the REST APIs of the SAP Authorization and Trust Management service on global account, subaccount, or directory level. For more information, see: [Get Access to the APIs](https://help.sap.com/docs/btp/sap-business-technology-platform/get-access-to-apis) and [btp create security/api-credential](https://help.sap.com/docs/btp/btp-cli-command-reference/btp-create-security-api-credential).
 
 
 
@@ -99,9 +96,16 @@ Follow the steps below to create SAP BTP XS Advanced UAA as a source system to r
     
     Enter the API URL in the following format:
 
-    <code>https://api.authentication.<i class="varname">&lt;region&gt;</i>.hana.ondemand.com</code>
+    <code>https://api.authentication.<i class="varname">&lt;region&gt;</i>.hana.ondemand.com</code> or
+
+    <code>https://api.authentication.<i class="varname">&lt;region&gt;</i>.accounts.cloud.sap</code>
 
     For more information, see [Call an API](https://help.sap.com/docs/btp/sap-business-technology-platform/call-api?version=Cloud).
+
+    > ### Restriction:  
+    > The `accounts.cloud.sap` domain is not relevant for China \(Shanghai\) and Government Cloud \(US\) regions.
+
+
     
     </td>
     </tr>
@@ -139,14 +143,25 @@ Follow the steps below to create SAP BTP XS Advanced UAA as a source system to r
     
     Enter the URL to the OAuth2 token service in the following format:
 
-    -   <code>https://<i class="varname">&lt;global_account_subdomain&gt;</i>.authentication.region.hana.ondemand.com/oauth/token</code>
+    -   <code>https://<i class="varname">&lt;global_account_subdomain&gt;</i>.authentication.<i class="varname">&lt;region&gt;</i>.hana.ondemand.com/oauth/token</code> or
 
-    -   <code>https://<i class="varname">&lt;subaccount_subdomain&gt;</i>.authentication.region.hana.ondemand.com/oauth/token</code>
+        <code>https://<i class="varname">&lt;global_account_subdomain&gt;</i>.authentication.<i class="varname">&lt;region&gt;</i>.accounts.cloud.sap/oauth/token</code>
 
-    -   <code>https://<i class="varname">&lt;directory_subdomain&gt;</i>.authentication.region.hana.ondemand.com/oauth/token</code>
+    -   <code>https://<i class="varname">&lt;subaccount_subdomain&gt;</i>.authentication.<i class="varname">&lt;region&gt;</i>.hana.ondemand.com/oauth/token</code> or
+
+        <code>https://<i class="varname">&lt;subaccount_subdomain&gt;</i>.authentication.<i class="varname">&lt;region&gt;</i>.accounts.cloud.sap/oauth/token</code>
+
+    -   <code>https://<i class="varname">&lt;directory_subdomain&gt;</i>.authentication.<i class="varname">&lt;region&gt;</i>.hana.ondemand.com/oauth/token</code> or
+
+        <code>https://<i class="varname">&lt;directory_subdomain&gt;</i>.authentication.<i class="varname">&lt;region&gt;</i>.accounts.cloud.sap/oauth/token</code>
 
 
     For more information, see [Call an API](https://help.sap.com/docs/btp/sap-business-technology-platform/call-api?version=Cloud).
+
+    > ### Restriction:  
+    > The `accounts.cloud.sap` domain is not relevant for China \(Shanghai\) and Government Cloud \(US\) regions.
+
+
     
     </td>
     </tr>
@@ -181,12 +196,30 @@ Follow the steps below to create SAP BTP XS Advanced UAA as a source system to r
     <tr>
     <td valign="top">
     
+    `xsuaa.origin.filter.enabled`
+    
+    </td>
+    <td valign="top">
+    
+    This flag property depends on `xsuaa.origin`. Possible values: **true** or **false**
+
+    -   If set to *true*, the Identity Provisioning service will read only users whose identity provider is set as a value of `xsuaa.origin`.
+    -   If set to *false*, the Identity Provisioning service will read all users, regardless of their origin.
+    -   If set to *true* but the `xsuaa.origin` property is missing, the provisioning job will fail.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     `xsuaa.origin`
     
     </td>
     <td valign="top">
     
-    Enter the Origin Key of your identity provider.
+    Enter the Origin Key of your identity provider. This is needed only when the `xsuaa.origin.filter.enabled` property is set to *true*.
 
     -   Identity provider for platform users:
 
@@ -207,18 +240,20 @@ Follow the steps below to create SAP BTP XS Advanced UAA as a source system to r
     <tr>
     <td valign="top">
     
-    `xsuaa.origin.filter.enabled`
+    `xsuaa.group.prefix`
     
     </td>
     <td valign="top">
     
-    This flag property depends on `xsuaa.origin`. Possible values: **true** or **false**
+    This property distinguishes SAP BTP XS Advanced UAA \(Cloud Foundry\) groups by specific prefix. It is an optional property which does not appear by default at system creation.
 
-    -   If set to *true*, the Identity Provisioning service will read only users whose identity provider is set as a value of `xsuaa.origin`.
-    -   If set to *false*, the Identity Provisioning service will read all users, regardless of their origin.
-    -   If set to *true* but the `xsuaa.origin` property is missing, the provisioning job will fail.
+    Example value: `XSUAA_`
 
+    You can use the example value or provide your own.
 
+    When **set in the target system**, only groups containing the `XSUAA_` prefix in their display name will be provisioned to SAP BTP XS Advanced UAA \(Cloud Foundry\). Groups without this prefix in the display name won't be provisioned.
+
+    If the property is not set, all groups will be be provisioned to SAP BTP XS Advanced UAA \(Cloud Foundry\).
     
     </td>
     </tr>
@@ -243,11 +278,11 @@ Follow the steps below to create SAP BTP XS Advanced UAA as a source system to r
 
     `OAuth2TokenServiceURL`=*https://myaccount.authentication.eu10.hana.ondemand.com/oauth/token*
 
-    `User`=*MyXSUAAuser*
+    `User`=*sb-full-access!a76125*
 
     `Password`=\*\*\*\*\*\*\*\*\*\*\*\*
 
-    `xsuaa.origin`=*myaccount-xsuaa.accounts.ondemand.com*
+    `xsuaa.origin`=*sap.custom*
 
     `xsuaa.origin.filter.enabled`=*true*
     
@@ -386,11 +421,6 @@ Follow the steps below to create SAP BTP XS Advanced UAA as a source system to r
     >         "optional": true
     >       },
     >       {
-    >         "sourcePath": "$.meta",
-    >         "targetPath": "$.meta",
-    >         "optional": true
-    >       },
-    >       {
     >         "sourcePath": "$.members",
     >         "targetPath": "$.members",
     >         "preserveArrayWithSingleElement": true,
@@ -406,6 +436,20 @@ Follow the steps below to create SAP BTP XS Advanced UAA as a source system to r
     >             "suffix": "${entityIdSourceSystem}"
     >           }
     >         ]
+    >       },
+    >       {
+    >         "condition": "'%ips.application.id%' !== 'null'",
+    >         "constant": "%ips.application.id%",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+    >       },
+    >       {
+    >         "constant": "authorization",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
     >       }
     >     ]
     >   }
@@ -428,7 +472,9 @@ Follow the steps below to create SAP BTP XS Advanced UAA as a source system to r
 **Related Information**  
 
 
-[XS CLI: User Administration](https://help.sap.com/viewer/4505d0bdaf4948449b7f7379d24d0f0d/latest/en-US/4b38012ac63141bfa15bc1cb6418cc6a.html)
+[SAP Authorization and Trust Management Service](https://help.sap.com/docs/authorization-and-trust-management-service?locale=en-US&version=Cloud)
+
+[btp CLI Command Reference](https://help.sap.com/docs/btp/btp-cli-command-reference/btp-cli-command-reference)
 
 [SAP BTP Integration Scenario](https://help.sap.com/docs/cloud-identity/system-integration-guide/sap-btp-integration-scenario?version=Cloud)
 

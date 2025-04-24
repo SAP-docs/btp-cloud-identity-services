@@ -340,7 +340,7 @@ The Identity Provisioning service system SAP Business Technology Platform Accoun
     >       }
     >     ]
     >   },
-    >   "group": {
+    >  "group": {
     >     "scimEntityEndpoint": "Groups",
     >     "mappings": [
     >       {
@@ -378,6 +378,16 @@ The Identity Provisioning service system SAP Business Technology Platform Accoun
     >         "preserveArrayWithSingleElement": true,
     >         "optional": true,
     >         "targetPath": "$.members[*].type"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true
     >       }
     >     ]
     >   }

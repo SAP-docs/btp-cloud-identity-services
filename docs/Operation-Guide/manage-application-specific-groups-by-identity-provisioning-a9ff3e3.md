@@ -2,7 +2,7 @@
 
 # Manage Application-Specific Groups by Identity Provisioning
 
-By running provisioning jobs, you can create application-specific groups in the Identity Directory of your SAP Cloud Identity Services tenant and provision them afterward to target systems of your choice.
+By running provisioning jobs, you can create application-specific groups in the Identity Directory of your SAP Cloud Identity Services tenant or Identity Authentication \(SCIM API version 2\) target system and provision them afterward to target systems of your choice.
 
 
 
@@ -18,18 +18,18 @@ You have an existing application in your SAP Cloud Identity Services tenant. For
 
 ## Context
 
-The application-specific groups are a special kind of groups which can be created in the Identity Directory of SAP Cloud Identity Services by running provisioning jobs, or via the administration console for SAP Cloud Identity Services. For more information, see [Create a Group](create-a-group-b1b638d.md).
+The application-specific groups are a special kind of groups which can be created in the Identity Directory of SAP Cloud Identity Services or Identity Authentication \(SCIM API version 2\) target system by running provisioning jobs, or via the administration console for SAP Cloud Identity Services. For more information, see [Create a Group](create-a-group-b1b638d.md).
 
-Operating with application-specific groups by the Identity Provisioning service requires having a source system with set property `ips.application.id`. By running provisioning jobs from such source system you can create, update, and delete application-specific groups in the Identity Directory of your SAP Cloud Identity Services tenant, depending on the values of their attributes.
+Operating with application-specific groups by the Identity Provisioning service requires having a source system with set property `ips.application.id`. By running provisioning jobs from such source system you can create, update, and delete application-specific groups in the Identity Directory of your SAP Cloud Identity Services tenant or Identity Authentication \(SCIM API version 2\) target system, depending on the values of their attributes.
 
-Each application-specific group contains information about the application to which it is associated through the `application ID`. That is how you can distinguish which group comes from which application \(or provisioning system in the context of Identity Provisioning\) in the Identity Directory.
+Each application-specific group contains information about the application to which it is associated through the `application ID`. That is how you can distinguish which group comes from which application \(or provisioning system in the context of Identity Provisioning\) in the Identity Directory or Identity Authentication \(SCIM API version 2\) target system.
 
 Another specific attribute for these groups is `supportedOperations`. The purpose of this attribute is to specify what are the supported operations by the Identity Provisioning for each application-specific group. For more information, see [Groups](../groups-d93be69.md).
 
 > ### Note:  
-> Currently, application-specific groups are supported for SAP Advanced Financial Closing, SAP Ariba Applications, SAP Analytics Cloud, SAP Application Server ABAP, SAP Ariba Central Invoice Management, SAP Sales Cloud and SAP Service Cloud, Microsoft Entra ID, and Local Identity Directory provisioning systems.
+> To find out which connectors support application-specific groups, check the list of systems under *System Types* for the `ips.application.id` property in [List of Properties](../list-of-properties-d6f3577.md).
 
-Below is described the result from each operation with an application-specific group executed by the Identity Provisioning, depending on the value of its attribute `supportedOperations`.
+The result from each operation with an application-specific group executed by the Identity Provisioning, depending on the value of its attribute `supportedOperations`, is described below.
 
 
 
@@ -37,9 +37,9 @@ Below is described the result from each operation with an application-specific g
 
 ## Create Application-Specific Groups
 
-By running provisioning jobs from your source system, associated to an application, you can create application-specific groups in the Identity Directory of your SAP Cloud Identity Services tenant.
+By running provisioning jobs from your source system, associated to an application, you can create application-specific groups in the Identity Directory of your SAP Cloud Identity Services tenant or Identity Authentication \(SCIM API version 2\) target system.
 
-When you configure Local Identity Directory as source system and you try to create a group that already exists in the target system with matching attributes and `supportedOperations` attribute value `userOnlyMembership` or `membership`, its group members are updated. If you try to provision a group with value `readOnly` for the attribute `supportedOperations`, it is displayed as *Skipped* in the job log statistics for the source system. In case the group has value `readWrite` for the attribute `supportedOperations`, it is created in the target system.
+When you configure Local Identity Directory or Identity Authentication \(SCIM API version 2\) as source system and you try to create a group that already exists in the target system with matching attributes and `supportedOperations` attribute value `userOnlyMembership` or `membership`, its group members are updated. If you try to provision a group with value `readOnly` for the attribute `supportedOperations`, it is displayed as *Skipped* in the job log statistics for the source system. In case the group has value `readWrite` for the attribute `supportedOperations`, it is created in the target system.
 
 
 
@@ -47,7 +47,7 @@ When you configure Local Identity Directory as source system and you try to crea
 
 ## Update Application-Specific Groups
 
-If you update a user group assignment or a group itself in the application to which is associated your source system and you run a read or resync job, the Identity Provisioning tries to search and resolve this group in the Identity Directory of your SAP Cloud Identity Services tenant.
+If you update a user group assignment or a group itself in the application to which is associated your source system and you run a read or resync job, the Identity Provisioning tries to search and resolve this group in the Identity Directory of your SAP Cloud Identity Services tenant or the Identity Authentication \(SCIM API version 2\) target system.
 
 In case such application-specific group is found, depending on the value of the attribute `supportedOperations` this will result in:
 

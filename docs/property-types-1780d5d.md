@@ -492,6 +492,13 @@ Parameter values may contain character sequences matching a parameter reference,
 </tr>
 </table>
 
+> ### Note:  
+> Avoid using special regex characters such as `()`, `[]`, `{}`, `.`, `+`, `*`, `?`, `\`, `^`, and `|` within property values. They are evaluated in transformations - specifically in conditions involving regex strings and functions with regex parameters - and may lead to errors. For example, the following configuration will result in an error due to unfulfilled conditions:
+> 
+> -   *Property*: xsuaa.group.prefix=\[XSUAA\]
+> 
+> -   *Condition*: \('%xsuaa.group.prefix%' === 'null'\) || \($.displayName =~ /%xsuaa.group.prefix%.\*/\)
+
 
 
 <a name="loio1780d5d3f5a14fc1a90946e3aa10fb60__section_mwj_l2z_vtb"/>

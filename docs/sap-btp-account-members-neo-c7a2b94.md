@@ -227,6 +227,7 @@ This provisioning scenario is based on the Platform Authorization Management API
     > 
     > {
     >   "user": {
+    >     "condition": "('%scp.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%scp.group.prefix%.*/)] empty false)",
     >     "mappings": [
     >       {
     >         "sourceVariable": "entityIdTargetSystem",
@@ -279,8 +280,8 @@ This provisioning scenario is based on the Platform Authorization Management API
     >       }
     >     ]
     >   },
-    >   "group": {
-    >     "condition": "('%scp.group.prefix%' === 'null') || ($.displayName =~ /%scp.group.prefix%.*/)",
+    >  "group": {
+    >     "condition": "isAttributeWithOptionalPrefix($.displayName, scp.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], scp.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >     "skipOperations": [
     >       "delete"
     >     ],
@@ -294,7 +295,7 @@ This provisioning scenario is based on the Platform Authorization Management API
     >         "targetPath": "$.displayName",
     >         "functions": [
     >           {
-    >             "condition": "('%scp.group.prefix%' !== 'null') && (@ =~ /%scp.group.prefix%.*/)",
+    >             "condition": "isAttributeWithMandatoryPrefix(@, scp.group.prefix)",
     >             "function": "replaceFirstString",
     >             "regex": "%scp.group.prefix%",
     >             "replacement": ""

@@ -59,6 +59,11 @@ To create a new user group, proceed as follows:
     <td valign="top">
     
     Required. The name of the group.
+
+    > ### Tip:  
+    > To ensure successful group provisioning from SAP Cloud Identity Access Governance, create the groups in Identity Authentication with length of their names within 40 characters. For more information, see [SAP Cloud Identity Access Governance: Groups are not Provisioned to the Target System](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/job-and-transformation-issues?state=DRAFT&version=Dev#sap-cloud-identity-access-governance-groups-are-not-provisioned-to-the-target-system).
+
+
     
     </td>
     </tr>
@@ -126,7 +131,7 @@ If the operation is successful, the system displays the message: `Group "<name o
 
 [Enable or Disable Central Store-Based Provisioning](enable-or-disable-central-store-based-provisioning-657bbaa.md "You can enable or disable the Central Store-Based Provisioning option in the administration console for SAP Cloud Identity Services.")
 
-[Manage Application-Specific Groups by Identity Provisioning](manage-application-specific-groups-by-identity-provisioning-a9ff3e3.md "By running provisioning jobs, you can create application-specific groups in the Identity Directory of your SAP Cloud Identity Services tenant and provision them afterward to target systems of your choice.")
+[Manage Application-Specific Groups by Identity Provisioning](manage-application-specific-groups-by-identity-provisioning-a9ff3e3.md "By running provisioning jobs, you can create application-specific groups in the Identity Directory of your SAP Cloud Identity Services tenant or Identity Authentication (SCIM API version 2) target system and provision them afterward to target systems of your choice.")
 
 [List and Search Users in Groups](list-and-search-users-in-groups-4ac340a.md "As a tenant administrator, you can list and view information about the users in a group in a tenant in the administration console for SAP Cloud Identity Services.")
 
