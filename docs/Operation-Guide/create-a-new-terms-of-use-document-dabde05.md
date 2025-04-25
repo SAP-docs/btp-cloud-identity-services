@@ -10,7 +10,7 @@ Create a new terms of use document in the administration console.
 
 1.  Sign in to the administration console for SAP Cloud Identity Services.
 
-2.  Choose the *Terms of Use Documents* tile.
+2.  Under *Application & Resources*, choose the *Terms of Use Documents* tile.
 
     This operation opens a list of the terms of use documents.
 

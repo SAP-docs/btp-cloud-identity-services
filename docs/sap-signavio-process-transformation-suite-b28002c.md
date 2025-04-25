@@ -1,4 +1,4 @@
-<!-- loio51580e0b464a46868881039fafac8f8a -->
+<!-- loiob28002c0726d46988657870dcce0fba7 -->
 
 # SAP Signavio Process Transformation Suite
 
@@ -6,23 +6,25 @@ Follow this procedure to set up SAP Signavio Process Transformation Suite as a t
 
 
 
+<a name="loiob28002c0726d46988657870dcce0fba7__prereq_b5s_knx_w2c"/>
+
 ## Prerequisites
 
 > ### Restriction:  
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Identity Access Governance** bundle option.
 
+> ### Note:  
+> The initial setup of SAP Signavio Process Transformation Suite is completed during the onboarding process. This setup includes connecting Identity Provisioning and SAP Signavio Process Transformation Suite with certificate-based authentication. Changes required after the initial setup should be processed through a support incident.
 
 
-<a name="loio51580e0b464a46868881039fafac8f8a__context_y2y_nxx_rdb"/>
+
+<a name="loiob28002c0726d46988657870dcce0fba7__context_y2y_nxx_rdb"/>
 
 ## Context
 
 SAP Signavio Process Transformation Suite helps you understand, improve, and transform your business processes – fast and at scale – with a cloud-based process management platform.
 
 You can use Identity Provisioning to configure SAP Signavio Process Transformation Suite as a target system where you can provision users and groups from source systems.
-
-> ### Note:  
-> The initial setup of SAP Signavio Process Transformation Suite is performed in the Service Provider Cockpit - a central system for operational processes like system provisioning. This setup includes configuring the connection and certificate-based authentication between Identity Provisioning and the SAP Signavio Process Transformation Suite. If any changes are needed, they must be made through a support incident.
 
 
 
@@ -40,7 +42,7 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
 4.  Choose the *Properties* tab to configure the connection settings for your system.
 
     > ### Note:  
-    > If your tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
+    > If your Identity Provisioning tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
     > 
     > If one and the same property exists both in the cockpit and in the *Properties* tab, the value set in the *Properties* tab is considered with higher priority.
     > 
@@ -130,19 +132,31 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
     </td>
     <td valign="top">
     
-    This property defines by which unique attribute\(s\) an existing user in the target system will be searched and resolved in case Identity Provisioning tries to provision a conflicting user.
-
-    According to your use case and system type, choose how to set up this property:
-
-    -   Default behavior: This property is missing during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such а *userName* is not found, the creation of the conflicting user fails.
-    -   Value = *userName, urn:ietf:params:scim:schemas:extension:sap:2.0:User:userUuid*. If the service finds an existing user with both these *userName* and *urn:ietf:params:scim:schemas:extension:sap:2.0:User:userUuid*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
-
-    **Possible values:**
-
-    -   *userName*
-    -   *userName, urn:ietf:params:scim:schemas:extension:sap:2.0:User:userUuid*
+    This property defines by which unique attribute\(s\) an existing user in the target system will be searched and resolved in case Identity Provisioning tries to provision a conflicting user. It is missing during system creation.
 
     Default value: *userName*
+
+    This means that if the service finds an existing user with the same *userName*, it updates that user with the data from the conflicting user. However, if no user with that *userName* exists, the creation of the conflicting user fails.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `sig.group.prefix`
+    
+    </td>
+    <td valign="top">
+    
+    This property distinguishes SAP Signavio Process Transformation Suite groups by specific prefix. It is an optional property which does not appear by default at system creation.
+
+    Example value: SIG\_
+
+    You can use the example value or provide your own.
+
+    When set in the target system, only groups containing the SIG\_ prefix in their display name will be provisioned to SAP Signavio Process Transformation Suite. Groups without this prefix in the display name won't be provisioned.
+
+    If the property is not set, all groups will be be provisioned to SAP Signavio Process Transformation Suite.
     
     </td>
     </tr>
@@ -171,8 +185,6 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
     You can change the default transformation mapping rules to reflect your current setup of entities in your SAP Signavio Process Transformation Suite system. For more information, see:
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
-
-    [SAP Business Accelerator Hub: SAP Signavio Process Transformation Suite](https://api.sap.com/api/SCIMService/overview)
 
     **Mapping logic** – The behavior of the default transformation logic is to map all attributes from the internal SCIM representation to the target SAP Signavio Process Transformation Suite entity.
 
@@ -508,7 +520,7 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
 
 
 
-<a name="loio51580e0b464a46868881039fafac8f8a__postreq_gpc_lrj_p1b"/>
+<a name="loiob28002c0726d46988657870dcce0fba7__postreq_gpc_lrj_p1b"/>
 
 ## Next Steps
 

@@ -40,7 +40,7 @@ This provisioning scenario is based on the Platform Authorization Management API
 4.  Choose the *Properties* tab to configure the connection settings for your system.
 
     > ### Note:  
-    > If your tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
+    > If your Identity Provisioning tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
     > 
     > If one and the same property exists both in the cockpit and in the *Properties* tab, the value set in the *Properties* tab is considered with higher priority.
     > 
@@ -227,6 +227,7 @@ This provisioning scenario is based on the Platform Authorization Management API
     > 
     > {
     >   "user": {
+    >     "condition": "('%scp.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%scp.group.prefix%.*/)] empty false)",
     >     "mappings": [
     >       {
     >         "sourceVariable": "entityIdTargetSystem",
@@ -279,8 +280,8 @@ This provisioning scenario is based on the Platform Authorization Management API
     >       }
     >     ]
     >   },
-    >   "group": {
-    >     "condition": "('%scp.group.prefix%' === 'null') || ($.displayName =~ /%scp.group.prefix%.*/)",
+    >  "group": {
+    >     "condition": "isAttributeWithOptionalPrefix($.displayName, scp.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], scp.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >     "skipOperations": [
     >       "delete"
     >     ],
@@ -294,7 +295,7 @@ This provisioning scenario is based on the Platform Authorization Management API
     >         "targetPath": "$.displayName",
     >         "functions": [
     >           {
-    >             "condition": "('%scp.group.prefix%' !== 'null') && (@ =~ /%scp.group.prefix%.*/)",
+    >             "condition": "isAttributeWithMandatoryPrefix(@, scp.group.prefix)",
     >             "function": "replaceFirstString",
     >             "regex": "%scp.group.prefix%",
     >             "replacement": ""

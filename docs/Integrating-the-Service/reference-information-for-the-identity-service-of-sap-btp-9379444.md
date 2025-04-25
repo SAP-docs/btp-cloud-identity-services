@@ -10,18 +10,23 @@ Properties enable you to customize the configuration of the Identity service.
 
 ## Service Properties
 
+> ### Tip:  
+> If you are creating a new tenant via subscription, `Cloud Identity Services` support only the `cloud_service` configuration parameter for the subscription creation. The supported values are: `PRODUCTIVE` and `TEST`. If you provide different parameter or values the tenant won't be created. For more information about the tenant creation, see [Get Your Tenant](../get-your-tenant-460766b.md).
+> 
+> If you want to customize the configuration of the Identity service, follow the rest of the information in this document.
+
 Provide properties in JSON format.
 
 The syntax of the properties is as follows:
 
 ```
-{
+
+        {
 	"name": "opportunity-management",
 	"authorization": {
 		"enabled": true,
 		"value_help_url": "https://myapp_namespace.cert.cfapps.eu10.hana.ondemand.com/odata/v4/ValueHelpService/"
 	},
-
 	"oauth2-configuration": {
 		"redirect-uris": ["https://*.myapp_namespace.cfapps.eu10.hana.ondemand.com/**"],
 		"post-logout-redirect-uris": ["https://*.myapp_namespace.cfapps.eu10.hana.ondemand.com/logout/**"],
@@ -42,12 +47,14 @@ The syntax of the properties is as follows:
 	"subject-name-identifier": {
 		"attribute": "userUuid",
 		"fallback-attribute": "uid"
+                }
 	},
 	"provided-apis": [{
 		"name": "write-access",
 		"description": "grants access to write APIs"
-	}]
-}
+	        }]
+        }
+
 ```
 
 **Properties for the Creation of an Instance of the Identity Service**

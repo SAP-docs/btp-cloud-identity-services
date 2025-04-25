@@ -1,4 +1,4 @@
-<!-- loio1aa2142a011745728491f7e20f8cbb19 -->
+<!-- loio8bf50eec1ef64d3f9f9e609607694dc4 -->
 
 # SAP Signavio Process Transformation Suite
 
@@ -6,23 +6,25 @@ Follow this procedure to set up SAP Signavio Process Transformation Suite as а 
 
 
 
-<a name="loio1aa2142a011745728491f7e20f8cbb19__prereq_gfl_gvx_rdb"/>
+<a name="loio8bf50eec1ef64d3f9f9e609607694dc4__prereq_gfl_gvx_rdb"/>
 
 ## Prerequisites
 
 > ### Restriction:  
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.
 
+> ### Note:  
+> The initial setup of SAP Signavio Process Transformation Suite is completed during the onboarding process. This setup includes connecting Identity Provisioning and SAP Signavio Process Transformation Suite with certificate-based authentication. Changes required after the initial setup should be processed through a support incident.
 
+
+
+<a name="loio8bf50eec1ef64d3f9f9e609607694dc4__context_drx_tmx_w2c"/>
 
 ## Context
 
 SAP Signavio Process Transformation Suite helps you understand, improve, and transform your business processes – fast and at scale – with a cloud-based process management platform.
 
 You can use Identity Provisioning to configure SAP Signavio Process Transformation Suite as a source system where you can read users and groups from and provision them to a target system.
-
-> ### Note:  
-> The initial setup of SAP Signavio Process Transformation Suite is performed in the Service Provider Cockpit - a central system for operational processes like system provisioning. This setup includes configuring the connection and certificate-based authentication between Identity Provisioning and the SAP Signavio Process Transformation Suite. If any changes are needed, they must be made through a support incident.
 
 
 
@@ -40,7 +42,7 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
 4.  Choose the *Properties* tab to configure the connection settings for your system.
 
     > ### Note:  
-    > If your tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
+    > If your Identity Provisioning tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
     > 
     > If one and the same property exists both in the cockpit and in the *Properties* tab, the value set in the *Properties* tab is considered with higher priority.
     > 
@@ -184,8 +186,6 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
     
     When specified, only those SAP Signavio Process Transformation Suite users matching the filter expression will be read.
 
-    Supported operators: eq \(equal\) and sw \(starts with\).
-
     For example:
 
     -   Value = *userName eq "JohnSmith"*
@@ -207,8 +207,6 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
     
     When specified, only those SAP Signavio Process Transformation Suite groups matching the filter expression will be read.
 
-    Supported operators: eq \(equal\) and sw \(starts with\).
-
     For example:
 
     -   Value = *displayName eq "ProjectTeam1"*
@@ -217,6 +215,26 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
 
 
 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `sig.group.prefix`
+    
+    </td>
+    <td valign="top">
+    
+    This property distinguishes SAP Signavio Process Transformation Suite groups by specific prefix. It is an optional property which does not appear by default at system creation.
+
+    Example value: SIG\_
+
+    You can use the example value or provide your own.
+
+    When set in the source system, the prefix will be prepended to the name of the groups that are read from the SAP Signavio Process Transformation Suite source system and will be provisioned to the target system with the following name pattern: SIG\_. This way SAP Signavio Process Transformation Suite groups in the target system will be distinguished from groups provisioned from other applications.
+
+    If the property is not set, the SAP Signavio Process Transformation Suite groups will be read and provisioned to the target system with their actual display names.
     
     </td>
     </tr>
@@ -554,7 +572,7 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
 
 
 
-<a name="loio1aa2142a011745728491f7e20f8cbb19__postreq_gpc_lrj_p1b"/>
+<a name="loio8bf50eec1ef64d3f9f9e609607694dc4__postreq_gpc_lrj_p1b"/>
 
 ## Next Steps
 

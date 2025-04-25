@@ -45,15 +45,15 @@ For more information, see [Managing Groups](Operation-Guide/managing-groups-ddd0
 
 ## Application-Specific Groups
 
-The application-specific groups are a special kind of groups which are bound to an application and can be created in the Identity Directory of SAP Cloud Identity Services by running provisioning jobs, or via the administration console. For more information, see [Start and Stop Provisioning Jobs](Operation-Guide/start-and-stop-provisioning-jobs-531a261.md) and [Create a Group](Operation-Guide/create-a-group-b1b638d.md).
+The application-specific groups are a special kind of groups which are bound to an application and can be created in the Identity Directory of SAP Cloud Identity Services or Identity Authentication \(SCIM API version 2\) target system by running provisioning jobs, or via the administration console. For more information, see [Start and Stop Provisioning Jobs](Operation-Guide/start-and-stop-provisioning-jobs-531a261.md) and [Create a Group](Operation-Guide/create-a-group-b1b638d.md).
 
 The extension schema of the Identity Directory API *urn:ietf:params:scim:schemas:extension:sap:2.0:Group* defines the following three attributes:
 
--   *applicationId* - supported only for the Local Identity Directory default write and proxy write transformations as mandatory attribute. The value of this attribute is provided from the source system by setting the property ips.application.id. For more information, see [List of Properties](list-of-properties-d6f3577.md) →`ips.application.id`.
+-   *applicationId* - supported for the Local Identity Directory and Identity Authentication \(SCIM API version 2\) default write and proxy write transformations as mandatory attribute. The value of this attribute is provided from the source system by setting the property ips.application.id. For more information, see [List of Properties](list-of-properties-d6f3577.md) →`ips.application.id`.
 
--   *type* - supported by theLocal Identity Directory source, target, and proxy provisioning systems as optional attribute. If no value is specified in the write or proxy write default transformations, the default value*'userGroup'* is set.
+-   *type* - supported by the Local Identity Directory and Identity Authentication \(SCIM API version 2\) source, target, and proxy provisioning systems as optional attribute. If no value is specified in the write or proxy write default transformations, the default value*'userGroup'* is set.
 
--   *supportedOperations* - supported byLocal Identity Directory source, target, and proxy provisioning systems as optional attribute. If no value is specified in the write or proxy write default transformations, the default value *'readWrite'* is set. The attribute defines the supported update options for the application-specific group.
+-   *supportedOperations* - supported by Local Identity Directory and Identity Authentication \(SCIM API version 2\) source, target, and proxy provisioning systems as optional attribute. If no value is specified in the write or proxy write default transformations, the default value *'readWrite'* is set. The attribute defines the supported update options for the application-specific group.
 
 
 The application-specific groups appear with their name in the *Application Name* column in the administration console for SAP Cloud Identity Services under the *Groups* tile. The *Application Name* column for the groups that aren't application-specific is empty.

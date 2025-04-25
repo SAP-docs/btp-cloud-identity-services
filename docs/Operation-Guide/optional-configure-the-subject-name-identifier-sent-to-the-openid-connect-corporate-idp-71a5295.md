@@ -16,7 +16,7 @@ You have enabled the *Use Identity Authentication user store* option. For more i
 
 ## Context
 
-In this scenario, the tenant administrator can define the claim from the token of the corporate identity provider which Identity Authentication should use as subject name identifier. The Subject Name Identifier configuration defines with which value the identity provider user will be searched in the Identity Authentication user store. The attribute used for the user search is `Email`.
+In this scenario, the tenant administrator can define the claim from the token of the corporate identity provider which Identity Authentication should use as subject name identifier. The Subject Name Identifier configuration defines with which value the identity provider user will be searched in the Identity Authentication user store. For more information, see the [Context of Configure Identity Federation](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/corp-idp-configure-identity-federation?state=DRAFT&version=Dev#context).
 
 To define the claim which is used as subject name identifier, proceed as follows:
 

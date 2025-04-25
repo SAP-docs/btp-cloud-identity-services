@@ -39,7 +39,7 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP Fie
 4.  Choose the *Properties* tab to configure the connection settings for your system.
 
     > ### Note:  
-    > If your tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
+    > If your Identity Provisioning tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
     > 
     > If one and the same property exists both in the cockpit and in the *Properties* tab, the value set in the *Properties* tab is considered with higher priority.
     > 
@@ -336,5 +336,5 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP Fie
 **Related Information**  
 
 
-[SAP Field Service Management – Collection](https://blogs.sap.com/2020/11/06/sap-central-business-configuration-collection/)
+[Field Service Management - Federated Authentication](https://help.sap.com/docs/SAP_FIELD_SERVICE_MANAGEMENT/fsm_federated_authentication/federated-authentication.html)
 

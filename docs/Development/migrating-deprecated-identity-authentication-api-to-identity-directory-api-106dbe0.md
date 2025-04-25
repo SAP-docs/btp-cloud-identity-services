@@ -771,7 +771,7 @@ Identity Directory Service API \(Successor\)
 </td>
 <td valign="top">
 
-``
+`urn:ietf:params:scim:schemas:extension:sap:2.0:User.sendMail`
 
 </td>
 </tr>

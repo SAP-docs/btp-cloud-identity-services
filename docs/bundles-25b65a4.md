@@ -37,12 +37,12 @@ The following SAP cloud solutions bundle with SAP Cloud Identity Services which 
 <tr>
 <th valign="top">
 
-SAP \(A-I\)
+SAP \(A-F\)
 
 </th>
 <th valign="top">
 
-SAP \(J-Z\)
+SAP \(G-Z\)
 
 </th>
 </tr>
@@ -55,6 +55,10 @@ SAP \(J-Z\)
 
 -   SAP Central Business Configuration
 
+-   Sales Cloud – Analytics & AI
+
+-   SAP Cloud ALM
+
 -   SAP Cloud Identity Access Governance
 
 -   SAP Commerce Cloud
@@ -63,13 +67,15 @@ SAP \(J-Z\)
 
 -   SAP Fieldglass
 
--   SAP Integrated Business Planning for Supply Chain
+-   SAP Field Service Management
 
 
 
 
 </td>
 <td valign="top">
+
+-   SAP Integrated Business Planning for Supply Chain
 
 -   SAP Jam Collaboration
 
@@ -84,8 +90,6 @@ SAP \(J-Z\)
 -   SAP SuccessFactors Learning
 
 -   SAP SuccessFactors Incentive Management
-
--   Sales Cloud – Analytics & AI
 
 
 

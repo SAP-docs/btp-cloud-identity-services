@@ -74,6 +74,7 @@ The list of the attributes includes:
 -   `Industry`
 -   `Relationship`
 -   `Job Function`
+-   `Department`
 
 *CONTACT PREFERENCES*
 

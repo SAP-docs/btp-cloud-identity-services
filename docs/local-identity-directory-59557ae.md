@@ -120,6 +120,88 @@ To create Local Identity Directory as a target system, proceed as follows:
 
     When Local Identity Directory is configured as a target system, the default transformation logic writes the user attributes in the user store of SAP Cloud Identity Services. The logic is provided by the Identity Directory SCIM API, which then maps the attributes to the internal SCIM representation.
 
+    **Handling Application-Specific Groups**
+
+    In case you want to provision application-specific groups between the following pairs of provisioning systems:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Source System
+    
+    </th>
+    <th valign="top">
+
+    Target System
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Identity Authentication \(SCIM API version 2\)
+    
+    </td>
+    <td valign="top">
+    
+    Identity Authentication \(SCIM API version 2\)
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Identity Authentication \(SCIM API version 2\)
+    
+    </td>
+    <td valign="top">
+    
+    Local Identity Directory
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Local Identity Directory
+    
+    </td>
+    <td valign="top">
+    
+    Identity Authentication \(SCIM API version 2\)
+    
+    </td>
+    </tr>
+    </table>
+    
+    The Identity Provisioning will search and try to resolve the groups by the attribute values of `displayName`, `applicationId`, and `type`. To ensure successful provisioning, you must define value mappings for the attribute `applicationId` in the transformation mappings of the source or the target system. You should define to which `applicationId` in the target system will be mapped the `applicationId` read from the source system.
+
+    For example:
+
+    ```
+    {
+    "sourcePaths": [
+    	"$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+    ],
+    "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']",
+    "valueMappings": [
+    	{
+    		"key": [
+    			"<your_source_system_applicationId>"
+    		],
+    		"mappedValue": "<your_target_system_applicationId>"
+    	}
+        ],
+        "condition": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId'] EMPTY false",
+        "type": "valueMapping",
+        "defaultValue": ""
+    }
+    ```
+
+    For more information, see [Transformation Expressions](transformation-expressions-bb8537b.md) → section **valueMapping**.
+
     You can change the default transformation mapping rules to reflect your current setup of entities in your Local Identity Directory. For more information, see:
 
     -   [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
@@ -132,280 +214,289 @@ To create Local Identity Directory as a target system, proceed as follows:
     > ### Code Syntax:  
     > ```
     > {
-    >   "user": {
-    >     "condition": "($.emails EMPTY false) && ($.userName EMPTY false) && isValidEmail($.emails[0].value)",
-    >     "mappings": [
-    >       {
-    >         "sourceVariable": "entityIdTargetSystem",
-    >         "targetPath": "$.id"
-    >       },
-    >       {
-    >         "constant": ["urn:ietf:params:scim:schemas:core:2.0:User","urn:ietf:params:scim:schemas:extension:enterprise:2.0:User","urn:ietf:params:scim:schemas:extension:sap:2.0:User","urn:sap:cloud:scim:schemas:extension:custom:2.0:User"],
-    >         "targetPath": "$.schemas"
-    >       },
-    >       {
-    >         "sourcePath": "$.userName",
-    >         "targetPath": "$.userName"
-    >       },
-    >       {
-    >         "sourcePath": "$.emails",
-    >         "preserveArrayWithSingleElement": true,
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['emails']",
-    >         "scope": "createEntity",
-    >         "functions": [
-    >            {
-    >                  "function": "putIfAbsent",
-    >                  "key": "verified",
-    >                  "defaultValue": true
-    >            }
-    >          ]
-    >       },
-    >       {
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['emails'][*]['type']",
-    >         "type": "remove"
-    >       },
-    >       {
-    >         "sourcePath": "$.emails[*].value",
-    >         "preserveArrayWithSingleElement": true,
-    >         "targetPath": "$.emails[?(@.value)]"
-    >       },
-    >       {
-    >         "sourcePath": "$.name.givenName",
-    >         "targetPath": "$.name.givenName",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.name.middleName",
-    >         "targetPath": "$.name.middleName",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.name.familyName",
-    >         "targetPath": "$.name.familyName",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.name.honorificPrefix",
-    >         "targetPath": "$.name.honorificPrefix",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.addresses",
-    >         "targetPath": "$.addresses",
-    >         "preserveArrayWithSingleElement": true,
-    >         "defaultValue": [],
-    >         "optional": true,
-    >         "functions": [
-    >           {
-    >             "function": "putIfAbsent",
-    >             "key": "type",
-    >             "defaultValue": "work"
-    >           },
-    >           {
-    >             "condition": "(@.type NIN ['work', 'home'])",
-    >             "function": "putIfPresent",
-    >             "key": "type",
-    >             "defaultValue": "work"
-    >           }
+    >     "user": {
+    >         "condition": "($.emails EMPTY false) && ($.userName EMPTY false) && isValidEmail($.emails[0].value)",
+    >         "mappings": [
+    >             {
+    >                 "targetPath": "$.id",
+    >                 "sourceVariable": "entityIdTargetSystem"
+    >             },
+    >             {
+    >                 "targetPath": "$.schemas",
+    >                 "constant": [
+    >                     "urn:ietf:params:scim:schemas:core:2.0:User",
+    >                     "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User",
+    >                     "urn:ietf:params:scim:schemas:extension:sap:2.0:User",
+    >                     "urn:sap:cloud:scim:schemas:extension:custom:2.0:User"
+    >                 ]
+    >             },
+    >             {
+    >                 "sourcePath": "$.userName",
+    >                 "targetPath": "$.userName"
+    >             },
+    >             {
+    >                 "sourcePath": "$.emails",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['emails']",
+    >                 "preserveArrayWithSingleElement": true,
+    >                 "scope": "createEntity",
+    >                 "functions": [
+    >                     {
+    >                         "function": "putIfAbsent",
+    >                         "key": "verified",
+    >                         "defaultValue": true
+    >                     }
+    >                 ]
+    >             },
+    >             {
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['emails'][*]['type']",
+    >                 "type": "remove"
+    >             },
+    >             {
+    >                 "sourcePath": "$.emails[*].value",
+    >                 "targetPath": "$.emails[?(@.value)]",
+    >                 "preserveArrayWithSingleElement": true
+    >             },
+    >             {
+    >                 "sourcePath": "$.name.givenName",
+    >                 "targetPath": "$.name.givenName",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$.name.middleName",
+    >                 "targetPath": "$.name.middleName",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$.name.familyName",
+    >                 "targetPath": "$.name.familyName",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$.name.honorificPrefix",
+    >                 "targetPath": "$.name.honorificPrefix",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$.addresses",
+    >                 "targetPath": "$.addresses",
+    >                 "optional": true,
+    >                 "preserveArrayWithSingleElement": true,
+    >                 "functions": [
+    >                     {
+    >                         "function": "putIfAbsent",
+    >                         "key": "type",
+    >                         "defaultValue": "work"
+    >                     },
+    >                     {
+    >                         "function": "putIfPresent",
+    >                         "condition": "(@.type NIN ['work', 'home'])",
+    >                         "key": "type",
+    >                         "defaultValue": "work"
+    >                     }
+    >                 ],
+    >                 "defaultValue": []
+    >             },
+    >             {
+    >                 "sourcePath": "$.phoneNumbers",
+    >                 "targetPath": "$.phoneNumbers",
+    >                 "optional": true,
+    >                 "preserveArrayWithSingleElement": true
+    >             },
+    >             {
+    >                 "sourcePath": "$.displayName",
+    >                 "targetPath": "$.displayName",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$.userType",
+    >                 "targetPath": "$.userType",
+    >                 "optional": true,
+    >                 "defaultValue": "employee"
+    >             },
+    >             {
+    >                 "sourcePath": "$.locale",
+    >                 "targetPath": "$.locale",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$.timezone",
+    >                 "targetPath": "$.timezone",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$.active",
+    >                 "targetPath": "$.active",
+    >                 "optional": true,
+    >                 "defaultValue": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validFrom']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validFrom']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validTo']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validTo']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['costCenter']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['costCenter']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['organization']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['organization']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['division']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['division']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['department']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['department']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['value']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['value']",
+    >                 "optional": true,
+    >                 "functions": [
+    >                     {
+    >                         "function": "resolveEntityIds"
+    >                     }
+    >                 ]
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['displayName']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['displayName']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['sendMail']",
+    >                 "constant": false,
+    >                 "scope": "createEntity"
+    >             },
+    >             {
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['mailVerified']",
+    >                 "constant": true,
+    >                 "scope": "createEntity"
+    >             },
+    >             {
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['passwordDetails']['status']",
+    >                 "constant": "disabled",
+    >                 "scope": "createEntity"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:User']['attributes']",
+    >                 "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:User']['attributes']",
+    >                 "optional": true,
+    >                 "preserveArrayWithSingleElement": true
+    >             },
+    >             {
+    >                 "targetPath": "$.password",
+    >                 "ignore": true,
+    >                 "constant": "<your-initial-password>",
+    >                 "scope": "createEntity"
+    >             },
+    >             {
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['sourceSystem']",
+    >                 "ignore": true,
+    >                 "constant": "<your-source-system-type-code>",
+    >                 "scope": "createEntity"
+    >             },
+    >             {
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['sourceSystemId']",
+    >                 "ignore": true,
+    >                 "constant": "<your-source-system-id>",
+    >                 "scope": "createEntity"
+    >             }
     >         ]
-    >       },
-    >       {
-    >         "sourcePath": "$.phoneNumbers",
-    >         "targetPath": "$.phoneNumbers",
-    >         "preserveArrayWithSingleElement": true,
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.displayName",
-    >         "targetPath": "$.displayName",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.userType",
-    >         "targetPath": "$.userType",
-    >         "defaultValue": "employee",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.locale",
-    >         "targetPath": "$.locale",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.timezone",
-    >         "targetPath": "$.timezone",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.active",
-    >         "targetPath": "$.active",
-    >         "defaultValue": true,
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validFrom']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validFrom']",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validTo']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validTo']",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']",
-    >         "optional" : true
-    >       },
-    >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['costCenter']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['costCenter']",
-    >         "optional" : true
-    >       },
-    >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['organization']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['organization']",
-    >         "optional" : true
-    >       },
-    >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['division']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['division']",
-    >         "optional" : true
-    >       },
-    >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['department']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['department']",
-    >         "optional" : true
-    >       },
-    >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['value']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['value']",
-    >         "optional" : true,
-    >         "functions": [
+    >     },
+    >     "group": {
+    >         "mappings": [
     >             {
-    >               "function": "resolveEntityIds"
-    >             }
-    >           ]
-    >       },
-    >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['displayName']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['displayName']",
-    >         "optional" : true
-    >       },
-    >       {
-    >         "constant": false,
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['sendMail']",
-    >         "scope": "createEntity"
-    >       },
-    >       {
-    >         "constant": true,
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['mailVerified']",
-    >         "scope": "createEntity"
-    >       },
-    >       {
-    >         "constant": "disabled",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['passwordDetails']['status']",
-    >         "scope": "createEntity"
-    >       },
-    >       {
-    >         "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:User']['attributes']",
-    >         "preserveArrayWithSingleElement": true,
-    >         "optional": true,
-    >         "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:User']['attributes']"
-    >       },
-    >       {
-    >         "constant": "<your-initial-password>",
-    >         "targetPath": "$.password",
-    >         "scope": "createEntity",
-    >         "ignore": true
-    >       },
-    >       {
-    >         "constant": "<your-source-system-type-code>",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['sourceSystem']",
-    >         "scope": "createEntity",
-    >         "ignore": true
-    >       },
-    >       {
-    >         "constant": "<your-source-system-id>",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['sourceSystemId']",
-    >         "scope": "createEntity",
-    >         "ignore": true
-    >       }
-    >     ]
-    >   },
-    >   "group": {
-    >     "mappings": [
-    >       {
-    >         "sourceVariable": "entityIdTargetSystem",
-    >         "targetPath": "$.id"
-    >       },
-    >       {
-    >         "constant": ["urn:ietf:params:scim:schemas:core:2.0:Group","urn:sap:cloud:scim:schemas:extension:custom:2.0:Group","urn:ietf:params:scim:schemas:extension:sap:2.0:Group"],
-    >         "targetPath": "$.schemas"
-    >       },
-    >       {
-    >         "sourcePath": "$.displayName",
-    >         "targetPath": "$.displayName"
-    >       },
-    >       {
-    >         "sourcePath": "$.members[*].value",
-    >         "preserveArrayWithSingleElement": true,
-    >         "optional": true,
-    >         "targetPath": "$.members[?(@.value)]",
-    >         "functions": [
+    >                 "targetPath": "$.id",
+    >                 "sourceVariable": "entityIdTargetSystem"
+    >             },
     >             {
-    >               "entityType": "user",
-    >               "type": "resolveEntityIds"
-    >             }
-    >           ]
-    >       },
-    >       {
-    >         "sourcePath": "$.members[*].value",
-    >         "preserveArrayWithSingleElement": true,
-    >         "optional": true,
-    >         "targetPath": "$.members[?(@.value)]",
-    >         "functions": [
+    >                 "targetPath": "$.schemas",
+    >                 "constant": [
+    >                     "urn:ietf:params:scim:schemas:core:2.0:Group",
+    >                     "urn:sap:cloud:scim:schemas:extension:custom:2.0:Group",
+    >                     "urn:ietf:params:scim:schemas:extension:sap:2.0:Group"
+    >                 ]
+    >             },
     >             {
-    >               "entityType": "group",
-    >               "type": "resolveEntityIds"
+    >                 "sourcePath": "$.displayName",
+    >                 "targetPath": "$.displayName"
+    >             },
+    >             {
+    >                 "sourcePath": "$.members[*].value",
+    >                 "targetPath": "$.members[?(@.value)]",
+    >                 "optional": true,
+    >                 "preserveArrayWithSingleElement": true,
+    >                 "functions": [
+    >                     {
+    >                         "function": "resolveEntityIds",
+    >                         "entityType": "user"
+    >                     }
+    >                 ]
+    >             },
+    >             {
+    >                 "sourcePath": "$.members[*].value",
+    >                 "targetPath": "$.members[?(@.value)]",
+    >                 "optional": true,
+    >                 "preserveArrayWithSingleElement": true,
+    >                 "functions": [
+    >                     {
+    >                         "function": "resolveEntityIds",
+    >                         "entityType": "group"
+    >                     }
+    >                 ]
+    >             },
+    >             {
+    >                 "sourcePath": "$.displayName",
+    >                 "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
+    >                 "scope": "createEntity"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
+    >                 "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
+    >                 "optional": true,
+    >                 "scope": "createEntity"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['description']",
+    >                 "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['description']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']",
+    >                 "condition": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId'] EMPTY false"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "condition": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId'] EMPTY false",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "condition": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId'] EMPTY false",
+    >                 "optional": true
     >             }
-    >           ]
-    >       },
-    >       {
-    >         "sourcePath": "$.displayName",
-    >         "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
-    >         "scope": "createEntity"
-    >       },
-    >       {
-    >         "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
-    >         "optional": true,
-    >         "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
-    >         "scope": "createEntity"
-    >       },
-    >       {
-    >         "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['description']",
-    >         "optional": true,
-    >         "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['description']"
-    >       },
-    >       {
-    >         "condition": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId'] EMPTY false",
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
-    >       },
-    >       {
-    >         "condition": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId'] EMPTY false",
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
-    >         "optional": true,
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
-    >       },
-    >       {
-    >         "condition": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId'] EMPTY false",
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
-    >         "optional": true,
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
-    >       }
-    >     ]
-    >   }
+    >         ]
+    >     }
     > }
     > ```
 

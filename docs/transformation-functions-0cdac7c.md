@@ -2199,7 +2199,7 @@ Default value: `user`
 </td>
 <td valign="top">
 
-This function resolves the value of a source system attribute to an existing back-end key in the target system.
+This function resolves the value of a source system attribute to an existing back-end key in the target system. It should be used only in the transformation mappings of the target system.
 
 For example, it can resolve the value of a source system member attribute to the ID of an existing SCIM resource that represents this member in a SCIM target system.
 

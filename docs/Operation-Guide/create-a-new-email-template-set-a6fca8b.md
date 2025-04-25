@@ -26,7 +26,7 @@ To create an email template, follow the procedure below:
 
 1.  Sign in to the administration console for SAP Cloud Identity Services.
 
-2.  Choose the *Email Template Sets* tile.
+2.  Under *Application & Resources*, choose the *Email Template Sets* tile.
 
     This operation opens a list of the template sets.
 

@@ -29,9 +29,9 @@ With the Configuration & Security Analysis app of SAP Cloud ALM, you can check i
 > 
 > Identity Authentication and Identity Provisioning report data to SAP Cloud ALM daily. For more information, see [Monitor Security Recommendations with SAP Cloud ALM](https://help.sap.com/docs/btp/sap-btp-security-recommendations-c8a9bb59fe624f0981efa0eff2497d7d/monitor-security-recommendations-with-sap-cloud-alm?version=Cloud).
 
-In the Configuration & Security Analysis app, the compliance of your configured tenants or systems to the applicable security recommendations is displayed with the following details:
+Cloud Identity services report security configurations that are directly linked to the [SAP BTP Security Recommendations](https://help.sap.com/docs/btp/sap-btp-security-recommendations-c8a9bb59fe624f0981efa0eff2497d7d/sap-btp-security-recommendations?version=Cloud). You can find details about the security configurations in the [Security Recommendation Compliance](monitoring-with-sap-cloud-alm-bc835e5.md#loiobc835e53b13c4b4d885013a79a1294f4__calm_index_table) table below. The [Configuration & Security Analysis Details](monitoring-with-sap-cloud-alm-bc835e5.md#loiobc835e53b13c4b4d885013a79a1294f4__calm_details_table) table, in turn, shows the security configurations on your tenant that are not linked to the security recommendations.
 
-**Configuration & Security Analysis Details**
+**Security Recommendation Compliance**
 
 
 <table>
@@ -133,13 +133,15 @@ The *Data Record* displays the values set for the properties that enable logging
 
 -   `ips.trace.created.entity.content` = *<value\>*
 
+-   `ips.trace.updated.entity.content` = *<value\>*
+
 
 
 
 </td>
 <td valign="top">
 
-*COMPLIANT* - when all three properties are set to *false*
+*COMPLIANT* - when all listed properties are set to *false*
 
 *NONCOMPLIANT* – if one or more of these properties are set to *true*
 
@@ -419,87 +421,6 @@ Identity Authentication
 </td>
 <td valign="top">
 
-***ID***
-
-</td>
-<td valign="top">
-
-Reports the Id of the service provider or corporate identity provider \(IdP\).
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***TYPE***
-
-</td>
-<td valign="top">
-
-Reports the type of the service provider \(`SYSTEM_APP`, `BUNDLED_APP` or `CHARGED_APP`\) or `CORPORATE_IDP` for corporate IdPs.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***NAME***
-
-</td>
-<td valign="top">
-
-Reports the name of the service provider or corporate IdP.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
 ***certificate\_authentication***
 
 </td>
@@ -634,518 +555,6 @@ Checks whether the admin console is configured to send emails about expiring cer
 <td valign="top">
 
 [BTP-IAS-0022](https://help.sap.com/docs/btp/sap-btp-security-recommendations-c8a9bb59fe624f0981efa0eff2497d7d/sap-btp-security-recommendations?seclist-index=BTP-IAS-0022&version=Cloud)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***security\_alerts***
-
-</td>
-<td valign="top">
-
-Checks whether alerts are enabled for security critical events like email, login names, password or two-factor authentication \(TFA\) configuration changes. The value is a comma-separated string with the status for each of the categories.
-
-> ### Example:  
-> `email_change=ON,login_name_change=ON,password_change=ON,tfa_change=ON`
-
-
-
-</td>
-<td valign="top">
-
-*COMPLIANT* - if the security alerts are enabled for the following:
-
--   Email change
-
--   Login Name change
-
--   Credential change
-
--   TFA device activation or deactivation; postpone enabling of Two-Factor Authentication
-
-
-*NONCOMPLIANT* - if the security alerts are not configured or one of the above is disabled.
-
-</td>
-<td valign="top">
-
-[BTP-IAS-0023](https://help.sap.com/docs/btp/sap-btp-security-recommendations-c8a9bb59fe624f0981efa0eff2497d7d/sap-btp-security-recommendations?seclist-index=BTP-IAS-0023&version=Cloud)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***days\_without\_mfa\_prompt***
-
-</td>
-<td valign="top">
-
-Reports the number of days for which the users will not get prompted for second-factor authentication, if they sign in from the same browser. If the property is not configured, the value is empty.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***self\_registration\_link\_lifetime\_seconds***
-
-</td>
-<td valign="top">
-
-Reports the validity of the link sent to user for self registration in seconds.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***on\_behalf\_link\_lifetime\_seconds***
-
-</td>
-<td valign="top">
-
-Reports the validity of the link sent to user for on-behalf registration in seconds.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***invitation\_link\_lifetime\_seconds***
-
-</td>
-<td valign="top">
-
-Reports the validity of the link sent to user for invitation in seconds.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***forgot\_password\_lifetime\_seconds***
-
-</td>
-<td valign="top">
-
-Reports the validity of the link sent to user for forgotten password in seconds.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***reset\_password\_lifetime\_seconds***
-
-</td>
-<td valign="top">
-
-Reports the validity of the link sent to user for password reset in seconds.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***locked\_password\_lifetime\_seconds***
-
-</td>
-<td valign="top">
-
-Reports the validity of the link sent to user for locked password in seconds.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***initial\_password\_token\_lifetime\_seconds***
-
-</td>
-<td valign="top">
-
-Reports the validity of the initial password set to user in seconds.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***idp\_initiated\_sso***
-
-</td>
-<td valign="top">
-
-Reports whether the IdP-initiated Single Sign On \(SSO\) is enabled.
-
-If it is enabled, the value is *ON*. Otherwise the value is *OFF*.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***manage\_identity\_provisioning\_admin\_count***
-
-</td>
-<td valign="top">
-
-Reports the count of users and systems authorized to access the [Application Configuration API](https://api.sap.com/api/SCI_Application_Directory/overview) for running Identity Provisioning jobs or downloading job logs.
-
-> ### Example:  
-> `systems=0;users=1`
-
-
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***read\_users\_admin\_count***
-
-</td>
-<td valign="top">
-
-Reports the count of users and systems authorized to read and export users.
-
-> ### Example:  
-> `systems=0;users=1`
-
-
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***manage\_applications\_admin\_count***
-
-</td>
-<td valign="top">
-
-Reports the count of users and systems authorized to configure applications.
-
-> ### Example:  
-> `systems=0;users=1`
-
-
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***manage\_users\_admin\_count***
-
-</td>
-<td valign="top">
-
-Reports the count of users and systems authorized to manage, export, and import users.
-
-> ### Example:  
-> `systems=0;users=1`
-
-
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***manage\_corp\_idp\_admin\_count***
-
-</td>
-<td valign="top">
-
-Reports the count of users and systems authorized to configure corporate identity providers.
-
-> ### Example:  
-> `systems=0;users=1`
-
-
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***manage\_groups\_admin\_count***
-
-</td>
-<td valign="top">
-
-Reports the count of users and systems authorized to manage user groups.
-
-> ### Example:  
-> `systems=0;users=1`
-
-
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***manage\_tenant\_configuration\_admin\_count***
-
-</td>
-<td valign="top">
-
-Reports the count of users and systems authorized to manage tenant configuration and authorization assignment to users.
-
-> ### Example:  
-> `systems=0;users=1`
-
-
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
 
 </td>
 </tr>
@@ -1404,519 +813,6 @@ Identity Authentication
 </td>
 <td valign="top">
 
-***default\_rba\_auth\_action***
-
-</td>
-<td valign="top">
-
-Reports the default action set in the RBA configuration of the application. The possible values are:
-
--   *Allow*
--   *Deny*
--   *TFA*
-
-
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***default\_authenticating\_idp\_id***
-
-</td>
-<td valign="top">
-
-Reports the `id` of the configured corporate IdP.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***default\_authenticating\_idp\_name***
-
-</td>
-<td valign="top">
-
-Reports the name of the configured corporate IdP.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***default\_authenticating\_idp\_display\_name***
-
-</td>
-<td valign="top">
-
-Reports the display name of the configured corporate IdP.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***default\_authenticating\_idp\_type***
-
-</td>
-<td valign="top">
-
-Reports the type of the configured corporate IdP.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***trust\_all\_corporate\_idp***
-
-</td>
-<td valign="top">
-
-Reports whether the *Trust All Corporate Identity Providers* setting is enabled. The possible values are:
-
--   *ON*- if enabled
--   *OFF* - if disabled
-
-
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-*****allow\_ias\_users\_log\_on*****
-
-</td>
-<td valign="top">
-
-Reports whether the *Allow Identity Authentication Users Log On* setting is enabled. The possible values are:
-
--   *ON*- if enabled
--   *OFF* - if disabled
-
-
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***spnego\_enabled***
-
-</td>
-<td valign="top">
-
-Reports whether the *SPNEGO Authentication* setting is enabled. The possible values are:
-
--   *ON*- if enabled
--   *OFF* - if disabled
-
-
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***biometric\_authentication\_enabled***
-
-</td>
-<td valign="top">
-
-Reports whether the *Biometric Authentication* setting is enabled. The possible values are:
-
--   *ON*- if enabled
--   *OFF* - if disabled
-
-
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***force\_authentication***
-
-</td>
-<td valign="top">
-
-Reports whether the *Force Authentication* setting is enabled. The possible values are:
-
--   *ON*- if enabled
--   *OFF* - if disabled
-
-
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***default\_signing\_algorithm***
-
-</td>
-<td valign="top">
-
-Reports the *Signing Algorithm* configuration. The possible values are:
-
--   *SHA-1*
--   *SHA-256*
--   *SHA-512*
-
-
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***concurrent\_access***
-
-</td>
-<td valign="top">
-
-Reports the Concurrent Access configuration. The possible values are:
-
--   *Allow*
--   *Warning*
--   *Error*
-
-
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***identity\_provider\_id***
-
-</td>
-<td valign="top">
-
-Reports the `id` of the corporate IdP.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***identity\_provider\_name***
-
-</td>
-<td valign="top">
-
-Reports the name of the corporate IdP. The value is empty if not configured.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***identity\_provider\_display\_name***
-
-</td>
-<td valign="top">
-
-Reports the display name of the corporate idP.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***identity\_provider\_type***
-
-</td>
-<td valign="top">
-
-Reports the type of the corporate IdP. Possible values are:
-
--   *MS\_ADFS\_2.0 \(Microsoft ADFS / Entra ID \(SAML 2.0\)\)*
--   *SAML\_2.0 \(SAML 2.0 Compliant\)*
--   *OPENID\_CONNECT \(OpenID Connect Compliant\)**NW\_SSO \(SAP Single Sign-On \(SAML 2.0\)\)*
-
-
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***forward\_all\_sso\_requests***
-
-</td>
-<td valign="top">
-
-Reports whether the *Forward All SSO Requests to Corporate IdP* setting is enabled. The possible values are:
-
--   *ON*- if enabled
--   *OFF* - if disabled
-
-
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
 ***use\_identity\_auth\_user\_store***
 
 </td>
@@ -1943,6 +839,732 @@ Reports whether the *Use Identity Authentication user store* setting is enabled.
 
 </td>
 </tr>
+</table>
+
+**Configuration & Security Analysis Details**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Service
+
+</th>
+<th valign="top">
+
+Name
+
+</th>
+<th valign="top">
+
+Value
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***ID***
+
+</td>
+<td valign="top">
+
+Reports the Id of the service provider or corporate identity provider \(IdP\).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***TYPE***
+
+</td>
+<td valign="top">
+
+Reports the type of the service provider \(`SYSTEM_APP`, `BUNDLED_APP` or `CHARGED_APP`\) or `CORPORATE_IDP` for corporate IdPs.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***NAME***
+
+</td>
+<td valign="top">
+
+Reports the name of the service provider or corporate IdP.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***days\_without\_mfa\_prompt***
+
+</td>
+<td valign="top">
+
+Reports the number of days for which the users will not get prompted for second-factor authentication, if they sign in from the same browser. If the property is not configured, the value is empty.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***self\_registration\_link\_lifetime\_seconds***
+
+</td>
+<td valign="top">
+
+Reports the validity of the link sent to user for self registration in seconds.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***on\_behalf\_link\_lifetime\_seconds***
+
+</td>
+<td valign="top">
+
+Reports the validity of the link sent to user for on-behalf registration in seconds.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***invitation\_link\_lifetime\_seconds***
+
+</td>
+<td valign="top">
+
+Reports the validity of the link sent to user for invitation in seconds.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***forgot\_password\_lifetime\_seconds***
+
+</td>
+<td valign="top">
+
+Reports the validity of the link sent to user for forgotten password in seconds.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***reset\_password\_lifetime\_seconds***
+
+</td>
+<td valign="top">
+
+Reports the validity of the link sent to user for password reset in seconds.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***locked\_password\_lifetime\_seconds***
+
+</td>
+<td valign="top">
+
+Reports the validity of the link sent to user for locked password in seconds.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***initial\_password\_token\_lifetime\_seconds***
+
+</td>
+<td valign="top">
+
+Reports the validity of the initial password set to user in seconds.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***idp\_initiated\_sso***
+
+</td>
+<td valign="top">
+
+Reports whether the IdP-initiated Single Sign On \(SSO\) is enabled.
+
+If it is enabled, the value is *ON*. Otherwise the value is *OFF*.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***manage\_identity\_provisioning\_admin\_count***
+
+</td>
+<td valign="top">
+
+Reports the count of users and systems authorized to access the [Application Configuration API](https://api.sap.com/api/SCI_Application_Directory/overview) for running Identity Provisioning jobs or downloading job logs.
+
+> ### Example:  
+> `systems=0;users=1`
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***read\_users\_admin\_count***
+
+</td>
+<td valign="top">
+
+Reports the count of users and systems authorized to read and export users.
+
+> ### Example:  
+> `systems=0;users=1`
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***manage\_applications\_admin\_count***
+
+</td>
+<td valign="top">
+
+Reports the count of users and systems authorized to configure applications.
+
+> ### Example:  
+> `systems=0;users=1`
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***manage\_users\_admin\_count***
+
+</td>
+<td valign="top">
+
+Reports the count of users and systems authorized to manage, export, and import users.
+
+> ### Example:  
+> `systems=0;users=1`
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***manage\_corp\_idp\_admin\_count***
+
+</td>
+<td valign="top">
+
+Reports the count of users and systems authorized to configure corporate identity providers.
+
+> ### Example:  
+> `systems=0;users=1`
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***manage\_groups\_admin\_count***
+
+</td>
+<td valign="top">
+
+Reports the count of users and systems authorized to manage user groups.
+
+> ### Example:  
+> `systems=0;users=1`
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***manage\_tenant\_configuration\_admin\_count***
+
+</td>
+<td valign="top">
+
+Reports the count of users and systems authorized to manage tenant configuration and authorization assignment to users.
+
+> ### Example:  
+> `systems=0;users=1`
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***default\_rba\_auth\_action***
+
+</td>
+<td valign="top">
+
+Reports the default action set in the RBA configuration of the application. The possible values are:
+
+-   *Allow*
+-   *Deny*
+-   *TFA*
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***default\_authenticating\_idp\_id***
+
+</td>
+<td valign="top">
+
+Reports the `id` of the configured corporate IdP.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***default\_authenticating\_idp\_name***
+
+</td>
+<td valign="top">
+
+Reports the name of the configured corporate IdP.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***default\_authenticating\_idp\_display\_name***
+
+</td>
+<td valign="top">
+
+Reports the display name of the configured corporate IdP.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***default\_authenticating\_idp\_type***
+
+</td>
+<td valign="top">
+
+Reports the type of the configured corporate IdP.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***trust\_all\_corporate\_idp***
+
+</td>
+<td valign="top">
+
+Reports whether the *Trust All Corporate Identity Providers* setting is enabled. The possible values are:
+
+-   *ON*- if enabled
+-   *OFF* - if disabled
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+*****allow\_ias\_users\_log\_on*****
+
+</td>
+<td valign="top">
+
+Reports whether the *Allow Identity Authentication Users Log On* setting is enabled. The possible values are:
+
+-   *ON*- if enabled
+-   *OFF* - if disabled
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***spnego\_enabled***
+
+</td>
+<td valign="top">
+
+Reports whether the *SPNEGO Authentication* setting is enabled. The possible values are:
+
+-   *ON*- if enabled
+-   *OFF* - if disabled
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***biometric\_authentication\_enabled***
+
+</td>
+<td valign="top">
+
+Reports whether the *Biometric Authentication* setting is enabled. The possible values are:
+
+-   *ON*- if enabled
+-   *OFF* - if disabled
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***force\_authentication***
+
+</td>
+<td valign="top">
+
+Reports whether the *Force Authentication* setting is enabled. The possible values are:
+
+-   *ON*- if enabled
+-   *OFF* - if disabled
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***default\_signing\_algorithm***
+
+</td>
+<td valign="top">
+
+Reports the *Signing Algorithm* configuration. The possible values are:
+
+-   *SHA-1*
+-   *SHA-256*
+-   *SHA-512*
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***concurrent\_access***
+
+</td>
+<td valign="top">
+
+Reports the Concurrent Access configuration. The possible values are:
+
+-   *Allow*
+-   *Warning*
+-   *Error*
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***identity\_provider\_id***
+
+</td>
+<td valign="top">
+
+Reports the `id` of the corporate IdP.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***identity\_provider\_name***
+
+</td>
+<td valign="top">
+
+Reports the name of the corporate IdP. The value is empty if not configured.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***identity\_provider\_display\_name***
+
+</td>
+<td valign="top">
+
+Reports the display name of the corporate idP.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***identity\_provider\_type***
+
+</td>
+<td valign="top">
+
+Reports the type of the corporate IdP. Possible values are:
+
+-   *MS\_ADFS\_2.0 \(Microsoft ADFS / Entra ID \(SAML 2.0\)\)*
+-   *SAML\_2.0 \(SAML 2.0 Compliant\)*
+-   *OPENID\_CONNECT \(OpenID Connect Compliant\)**NW\_SSO \(SAP Single Sign-On \(SAML 2.0\)\)*
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***forward\_all\_sso\_requests***
+
+</td>
+<td valign="top">
+
+Reports whether the *Forward All SSO Requests to Corporate IdP* setting is enabled. The possible values are:
+
+-   *ON*- if enabled
+-   *OFF* - if disabled
+
+
+
+</td>
+</tr>
 <tr>
 <td valign="top">
 
@@ -1962,16 +1584,6 @@ Reports whether the *Allow Identity Authentication users only* setting is enable
 -   *OFF* - if disabled
 
 
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
 
 </td>
 </tr>
@@ -1996,16 +1608,6 @@ Reports whether the "Apply Application Configurations" setting is enabled. The p
 
 
 </td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2021,16 +1623,6 @@ Identity Authentication
 <td valign="top">
 
 Reports *Logout Redirect URL*. The value is empty if not configured.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
 
 </td>
 </tr>
@@ -2056,16 +1648,6 @@ Reports the *Signing Algorithm* configuration only if the type is `NOT OPENID_CO
 
 
 </td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2086,16 +1668,6 @@ Reports whether the *Sign authentication requests* setting is enabled only if th
 -   *OFF* - if disabled
 
 
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
 
 </td>
 </tr>
@@ -2120,16 +1692,6 @@ Reports whether the *Sign single logout messages* setting is enabled only if the
 
 
 </td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2145,16 +1707,6 @@ Identity Authentication
 <td valign="top">
 
 Reports the index of the rule based on priority.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
 
 </td>
 </tr>
@@ -2174,16 +1726,6 @@ Identity Authentication
 Reports the id of the corporate IdP.
 
 </td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2199,16 +1741,6 @@ Identity Authentication
 <td valign="top">
 
 Reports the name of the corporate IdP. Empty if not configured.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
 
 </td>
 </tr>
@@ -2228,16 +1760,6 @@ Identity Authentication
  
 
 </td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2253,16 +1775,6 @@ Identity Authentication
 <td valign="top">
 
 Reports the user type of the rule. Possible values are: `employee`, `public`, `partner`, `customer`, `external`, `onboardee`, `alumni`. The value is empty if not configured.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
 
 </td>
 </tr>
@@ -2282,16 +1794,6 @@ Identity Authentication
 Reports the name of the group. The value is empty if not configured.
 
 </td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2307,16 +1809,6 @@ Identity Authentication
 <td valign="top">
 
 Reports the email domain of the rule. The value is empty if not configured.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
 
 </td>
 </tr>
@@ -2341,16 +1833,6 @@ Reports the IP network range of the rule in CIDR format.
 The value is empty if not configured.
 
 </td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2366,16 +1848,6 @@ Identity Authentication
 <td valign="top">
 
 Reports the index of the rule based on priority.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
 
 </td>
 </tr>
@@ -2400,16 +1872,6 @@ Reports the IP network range of the rule in CIDR format.
 Empty if not configured.
 
 </td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2430,16 +1892,6 @@ Reports the IP forward range of the rule in CIDR format.
 > `10.10.10.10/11`
 
 The value is empty if not configured.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
 
 </td>
 </tr>
@@ -2465,16 +1917,6 @@ Reports the action of the rule. The possible values are:
 
 
 </td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2496,16 +1938,6 @@ Reports the name of the group. Possible values are:
 -   The value is empty if not configured.
 
 
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
 
 </td>
 </tr>
@@ -2534,16 +1966,6 @@ Reports the authentication method for the rule. Possible values are:
 
 
 </td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2559,16 +1981,6 @@ Identity Authentication
 <td valign="top">
 
 Reports the user attributes for the rule in format of `key=value`. The value is empty if not configured.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
 
 </td>
 </tr>
@@ -2588,16 +2000,6 @@ Identity Authentication
 Reports the corporate IdP attribute for the rule in format of `key=value`. The value is empty if not configured.
 
 </td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2613,16 +2015,6 @@ Identity Authentication
 <td valign="top">
 
 Reports the email domain of the rule. The value is empty if not configured.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
 
 </td>
 </tr>
@@ -2642,16 +2034,6 @@ Identity Authentication
 Reports the name of the password policy.
 
 </td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2667,16 +2049,6 @@ Identity Authentication
 <td valign="top">
 
 Reports the strength of the password policy.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
 
 </td>
 </tr>
@@ -2696,16 +2068,6 @@ Identity Authentication
 Reports the minimum length of characters of the password policy.
 
 </td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2721,16 +2083,6 @@ Identity Authentication
 <td valign="top">
 
 Reports the minimum password age in hours.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
 
 </td>
 </tr>
@@ -2750,16 +2102,6 @@ Identity Authentication
 Reports the maximum user inactivity in months.
 
 </td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2775,16 +2117,6 @@ Identity Authentication
 <td valign="top">
 
 Reports the password history entry count.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
 
 </td>
 </tr>
@@ -2804,16 +2136,6 @@ Identity Authentication
 Reports the failed sign in attempts.
 
 </td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2831,16 +2153,6 @@ Identity Authentication
 Reports the password locked period in hours.
 
 </td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2856,16 +2168,6 @@ Identity Authentication
 <td valign="top">
 
 Reports the number of the required character groups.
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
 
 </td>
 </tr>
@@ -2888,16 +2190,6 @@ Reports the password behavior of the policy. Possible values are:
 -   *change*
 
 
-
-</td>
-<td valign="top">
-
-*n/a*
-
-</td>
-<td valign="top">
-
-*n/a*
 
 </td>
 </tr>

@@ -19,17 +19,12 @@ Follow this procedure to set up SAP Data Custodian as a target system.
 
 -   You have added your user to SAP Identity Service Management \(SAP ISM\).
 
--   You have completed the Transparency and Control Service Onboarding Process or the Key Management Service Onboarding Process, depending on the scenario you want to implement. For more information, see [Transparency and Control Service Onboarding Process](https://help.sap.com/docs/SAP_DATA_CUSTODIAN/538dde61cf134c89bda1c31100a6c0e1/22a3ec71c2314004b87d8a4d1df01492.html?locale=en-US&version=2210) and [Key Management Service Onboarding Process](https://help.sap.com/docs/SAP_DATA_CUSTODIAN/538dde61cf134c89bda1c31100a6c0e1/21ec63132e22411c9308894d397e3901.html?locale=en-US&version=2210).
-
 
 
 
 <a name="loiocf23000cff3643f793de18c43ddbdd84__context_zhf_2vx_ybb"/>
 
 ## Context
-
-> ### Note:  
-> Currently, SAP Data Custodian connector is only available for selected customers who are approached by SAP. For more information, see [3319946](https://me.sap.com/notes/3319946).
 
 SAP Data Custodian is a robust Software as a Service \(SaaS\) solution that protects sensitive data stored in public, private, hybrid, and multicloud environments. This solution integrates with partnered public hyperscalers, SAP applications, and SAP managed clouds.
 
@@ -54,10 +49,24 @@ SCIM API 2.0 does not support managing of group assignments via the SCIM user re
 
 3.  Add *SAP Data Custodian* as a target system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
-4.  Choose the *Properties* tab to configure the connection settings for your system.
+4.  Set up the communication between Identity Provisioning and SAP Data Custodian and configure the authentication method \(basic or certificate-based\).
 
     > ### Note:  
-    > If your tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
+    > We recommend that you use certificate-based authentication.
+
+    1.  In your newly added SAP Data Custodian source system, select the *Certificate* tab and choose *Generate* \> *Download*, as described in [Generate and Manage Certificates for Outbound Connection](https://help.sap.com/docs/IDENTITY_PROVISIONING/f48e822d6d484fa5ade7dda78b64d9f5/76867db8ce534becbfc08b050695df8e.html?version=Cloud).
+
+        Skip this step if you use basic authentication. The next steps are performed in SAP Data Custodian and are relevant for certificate-based authentication only.
+
+    2.  Login to SAP Data Custodian tenant and create a tenant operations technical user \(TOTU\), as described in [Create a Tenant Operations Technical User in SAP Data Custodian](https://help.sap.com/docs/sap-data-custodian/key-management-service/create-tenant-operations-technical-user-sap-data-custodian-certificate).
+
+    3.  Upload the outbound certificate that you downloaded in **substep a.** to the TOTU, as described in [Register the Outbound Certificate to Your Tenant Operations Technical User](https://help.sap.com/docs/sap-data-custodian/key-management-service/register-outbound-certificate).
+
+
+5.  Choose the *Properties* tab to configure the connection settings for your system.
+
+    > ### Note:  
+    > If your Identity Provisioning tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
     > 
     > If one and the same property exists both in the cockpit and in the *Properties* tab, the value set in the *Properties* tab is considered with higher priority.
     > 
@@ -99,7 +108,11 @@ SCIM API 2.0 does not support managing of group assignments via the SCIM user re
     </td>
     <td valign="top">
     
-    Specify the URL to the SAP Data Custodian SCIM API portal.
+    Specify the URL to the SAP Data Custodian SCIM API excluding the path information.
+
+    `https://<SCIM_API_URL>`
+
+    For more information, see [Identity Provisioning](https://help.sap.com/docs/sap-data-custodian/key-management-service/identity-provisioning).
     
     </td>
     </tr>
@@ -123,7 +136,14 @@ SCIM API 2.0 does not support managing of group assignments via the SCIM user re
     </td>
     <td valign="top">
     
-    Enter: *BasicAuthentication*
+    Enter your authentication method:
+
+    -   *BasicAuthentication*
+
+    -   *ClientCertificateAuthentication*
+
+
+
     
     </td>
     </tr>
@@ -135,7 +155,11 @@ SCIM API 2.0 does not support managing of group assignments via the SCIM user re
     </td>
     <td valign="top">
     
+    Valid if *BasicAuthentication*
+
     Enter the OAuth client key, created for your SAP Data Custodian tenant.
+
+    For more information, see [Basic Authentication Prerequisites](https://help.sap.com/docs/sap-data-custodian/key-management-service/basic-authentication-prerequisites).
     
     </td>
     </tr>
@@ -147,7 +171,11 @@ SCIM API 2.0 does not support managing of group assignments via the SCIM user re
     </td>
     <td valign="top">
     
+    Valid if *BasicAuthentication*
+
     \(Credential\) Enter the OAuth client secret, created for your SAP Data Custodian tenant.
+
+    For more information, see [Certificate Authentication Prerequisites](https://help.sap.com/docs/sap-data-custodian/key-management-service/identity-provisioning-certificate-authentication-prerequisites).
     
     </td>
     </tr>
@@ -159,7 +187,9 @@ SCIM API 2.0 does not support managing of group assignments via the SCIM user re
     </td>
     <td valign="top">
     
-    Enter the URL of the access token provider service for your SAP Data Custodian instance, in format: `https://<SAP_Data_Custodian_datacenter>/api/v1/auth/token` 
+    Specify the URL of the access token provider service for your SAP Data Custodian instance:
+
+    `https://<SCIM_API_URL>/kms/scim/v1/Oauth2/Token`
     
     </td>
     </tr>
@@ -286,7 +316,7 @@ SCIM API 2.0 does not support managing of group assignments via the SCIM user re
     
     To learn what additional properties are relevant to this system, see [List of Properties](list-of-properties-d6f3577.md). You can use the main search, or filter properties by the *Name* or *System Type* columns.
 
-5.  Configure the transformations.
+6.  Configure the transformations.
 
     Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Data Custodian* target system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
@@ -430,7 +460,7 @@ SCIM API 2.0 does not support managing of group assignments via the SCIM user re
     > } 
     > ```
 
-6.  Now, add a source system from which to read users and groups. Choose from: [Source Systems](source-systems-58033be.md)
+7.  Now, add a source system from which to read users and groups. Choose from: [Source Systems](source-systems-58033be.md)
 
     > ### Note:  
     > When Identity Authentication is configured as a source system, the default transformation logic:
@@ -463,5 +493,5 @@ SCIM API 2.0 does not support managing of group assignments via the SCIM user re
 **Related Information**  
 
 
-[SAP Data Custodian](https://help.sap.com/docs/SAP_DATA_CUSTODIAN?version=2210&locale=en-US)
+[SAP Data Custodian](https://help.sap.com/docs/sap-data-custodian?version=latest&locale=en-US)
 

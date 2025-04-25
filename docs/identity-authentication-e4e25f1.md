@@ -76,7 +76,7 @@ To create Identity Authentication as a source system, proceed as follows:
 5.  Choose the *Properties* tab to configure the connection settings for your system.
 
     > ### Note:  
-    > If your tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
+    > If your Identity Provisioning tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
     > 
     > If one and the same property exists both in the cockpit and in the *Properties* tab, the value set in the *Properties* tab is considered with higher priority.
     > 
@@ -300,6 +300,88 @@ To create Identity Authentication as a source system, proceed as follows:
     Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *Identity Authentication* source system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
     When Identity Authentication is configured as a source system, the default transformation logic reads all the user attributes from the Identity Authentication user store. The logic is provided by the Identity Authentication SCIM REST API, which then maps the attributes to the internal SCIM representation.
+
+    **Handling Application-Specific Groups**
+
+    In case you want to provision application-specific groups between the following pairs of provisioning systems:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Source System
+    
+    </th>
+    <th valign="top">
+
+    Target System
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Identity Authentication \(SCIM API version 2\)
+    
+    </td>
+    <td valign="top">
+    
+    Identity Authentication \(SCIM API version 2\)
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Identity Authentication \(SCIM API version 2\)
+    
+    </td>
+    <td valign="top">
+    
+    Local Identity Directory
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Local Identity Directory
+    
+    </td>
+    <td valign="top">
+    
+    Identity Authentication \(SCIM API version 2\)
+    
+    </td>
+    </tr>
+    </table>
+    
+    The Identity Provisioning will search and try to resolve the groups by the attribute values of `displayName`, `applicationId`, and `type`. To ensure successful provisioning, you must define value mappings for the attribute `applicationId` in the transformation mappings of the source or the target system. You should define to which `applicationId` in the target system will be mapped the `applicationId` read from the source system.
+
+    For example:
+
+    ```
+    {
+    "sourcePaths": [
+    	"$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+    ],
+    "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']",
+    "valueMappings": [
+    	{
+    		"key": [
+    			"<your_source_system_applicationId>"
+    		],
+    		"mappedValue": "<your_target_system_applicationId>"
+    	}
+        ],
+        "condition": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId'] EMPTY false",
+        "type": "valueMapping",
+        "defaultValue": ""
+    }
+    ```
+
+    For more information, see [Transformation Expressions](transformation-expressions-bb8537b.md) → section **valueMapping**.
 
     You can change the default transformation mapping rules to reflect your current setup of entities in your Identity Authentication system. For more information, see: [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
@@ -704,6 +786,21 @@ To create Identity Authentication as a source system, proceed as follows:
     >                 "sourcePath": "$.members",
     >                 "targetPath": "$.members",
     >                 "preserveArrayWithSingleElement": true,
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
     >                 "optional": true
     >             }
     >         ]

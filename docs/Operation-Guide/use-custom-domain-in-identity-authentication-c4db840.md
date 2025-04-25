@@ -512,7 +512,7 @@ Identity Authentication allows you to use a custom domain that is different from
 
 ## Results
 
-The custom domain configuration is enabled with the upgrade of Identity Authentication. We recommend you to renew your certificate as early as possible, preferably 30 days before expiration, and no later than the Sunday before productive system upgrade. Identity Authentication has production releases \(bi-weekly updates\) planned every second Wednesday, 10:00 UTC. There are also immediate updates in case of fixes required for bugs that affect productive application operations, or due to urgent security fixes. For more information on the upgrade calendar of the service, see [What's New for Cloud Identity Services](../what-s-new-for-cloud-identity-services-de21efe.md).
+The custom domain configuration is enabled with the upgrade of Identity Authentication. We recommend you to renew your certificate as early as possible, preferably 30 days before expiration, and no later than the Sunday before productive system upgrade. Identity Authentication has production releases \(bi-weekly updates\) planned every second Wednesday, 10:00 UTC. There are also immediate updates in case of fixes required for bugs that affect productive application operations, or due to urgent security fixes. For more information on the upgrade calendar of the service, see SAP Note [3409744](https://me.sap.com/notes/3409744) \(Release Schedule for SAP Cloud Identity Services \(SAP BTP\)\).
 
 
 

@@ -1,4 +1,4 @@
-<!-- loio99acfbd2f69f4d6aa6b5fb040518c0c6 -->
+<!-- loio0ec8e949904040be83f317a9a8da7b36 -->
 
 # SAP Signavio Process Transformation Suite
 
@@ -6,17 +6,18 @@ Follow this procedure to set up SAP Signavio Process Transformation Suite as a p
 
 
 
-<a name="loio99acfbd2f69f4d6aa6b5fb040518c0c6__prereq_gvh_45y_rdb"/>
+<a name="loio0ec8e949904040be83f317a9a8da7b36__prereq_kqy_lfd_pcc"/>
 
 ## Prerequisites
 
 > ### Restriction:  
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.
 
-You have technical credentials for SAP Signavio Process Transformation Suite. See: [Onboadring](https://help.sap.com/viewer/aad8ff6e4e0c404591864a751c877d34/latest/en-US/4344697196ae452cbbea665b504da809.html)
-
 > ### Note:  
 > Administrators of bundle tenants on Neo environment should enable the *Manage OAuth Clients* permission, as described in *Neo Environment* section in [Manage Authorizations](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/544de9b504214372b4479dc1f6b08cca.html "Manage the authorizations of Identity Provisioning administrators, when your bundle or standalone tenant is running on SAP BTP, Neo environment.") :arrow_upper_right:.
+
+> ### Note:  
+> The initial setup of SAP Signavio Process Transformation Suite is completed during the onboarding process. This setup includes connecting Identity Provisioning and SAP Signavio Process Transformation Suite with certificate-based authentication. Changes required after the initial setup should be processed through a support incident.
 
 
 
@@ -24,12 +25,14 @@ You have technical credentials for SAP Signavio Process Transformation Suite. Se
 
 SAP Signavio Process Transformation Suite helps you understand, improve, and transform your business processes – fast and at scale – with a cloud-based process management platform.
 
-You can use Identity Provisioning to configure SAP Signavio Process Transformation Suite as a proxy system in hybrid scenarios. For example, when SAP Signavio Process Transformation Suite is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision users and groups to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users back to the SAP Signavio Process Transformation Suite.
+You can use Identity Provisioning to configure SAP Signavio Process Transformation Suite as a proxy system in hybrid scenarios. For example, when SAP Signavio Process Transformation Suite is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision users to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users back to the SAP Signavio Process Transformation Suite.
 
 > ### Note:  
-> The initial setup of SAP Signavio Process Transformation Suite is performed in the Service Provider Cockpit - a central system for operational processes like system provisioning. This setup includes configuring the connection and certificate-based authentication between Identity Provisioning and the SAP Signavio Process Transformation Suite. If any changes are needed, they must be made through a support incident.
+> The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users and groups. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
 
 
+
+<a name="loio0ec8e949904040be83f317a9a8da7b36__steps_wy2_fq3_pcc"/>
 
 ## Procedure
 
@@ -91,7 +94,7 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
 6.  Choose the *Properties* tab to configure the connection settings for your system.
 
     > ### Note:  
-    > If your tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
+    > If your Identity Provisioning tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
     > 
     > If one and the same property exists both in the cockpit and in the *Properties* tab, the value set in the *Properties* tab is considered with higher priority.
     > 
@@ -121,7 +124,7 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
     </td>
     <td valign="top">
     
-    Enter: *HTTP*
+    Enter: *HTTP* 
     
     </td>
     </tr>
@@ -169,73 +172,7 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
     </td>
     <td valign="top">
     
-    Enter the identifier of your SAP Signavio Process Transformation Suite tenant.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `sig.group.members.paging.enabled`
-    
-    </td>
-    <td valign="top">
-    
-    This property enables paging of group members.
-
-    **Possible values:**
-
-    -   *true*
-    -   *false*
-
-    Default value: *true* 
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `sig.user.groups.paging.enabled`
-    
-    </td>
-    <td valign="top">
-    
-    This property enables paging of user’s groups.
-
-    **Possible values:**
-
-    -   *true*
-    -   *false*
-
-    Default value: *true* 
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `sig.group.members.page.size`
-    
-    </td>
-    <td valign="top">
-    
-    The number of group members that SAP Signavio Process Transformation Suite returns per request when reading a group.
-
-    Default value = 1000
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `sig.user.groups.page.size`
-    
-    </td>
-    <td valign="top">
-    
-    The number of user groups that SAP Signavio Process Transformation Suite returns per request when reading a user.
-
-    Default value = 1000
+    The identifier of SAP Signavio Process Transformation Suite tenant
     
     </td>
     </tr>
@@ -248,8 +185,6 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
     <td valign="top">
     
     When specified, only those SAP Signavio Process Transformation Suite users matching the filter expression will be read.
-
-    Supported operators: eq \(equal\) and sw \(starts with\).
 
     For example:
 
@@ -272,8 +207,6 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
     
     When specified, only those SAP Signavio Process Transformation Suite groups matching the filter expression will be read.
 
-    Supported operators: eq \(equal\) and sw \(starts with\).
-
     For example:
 
     -   Value = *displayName eq "ProjectTeam1"*
@@ -285,20 +218,43 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    `sig.support.patch.operation`
+    
+    </td>
+    <td valign="top">
+    
+    This property controls how modified entities \(users and groups\) in the source system are updated in the target system.
+
+    -   If set to *true*, `PATCH` operations are used to update users and groups in the target system.
+
+    -   If set to *false*, `PUT` operations are used to update users and groups in the target system.
+
+
+    **Possible values:**
+
+    -   *true*
+    -   *false*
+
+    Default value: *false* 
+    
+    </td>
+    </tr>
     </table>
     
     To learn what additional properties are relevant to this system, see [List of Properties](list-of-properties-d6f3577.md). You can use the main search, or filter properties by the *Name* or *System Type* columns.
 
-    > ### Note:  
-    > The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
-
 7.  Configure the transformations.
 
-    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Signavio Process Transformation Suite**Transformations* tab after saving its initial configuration.
+    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Signavio Process Transformation Suite* proxy system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
-    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP Signavio Process Transformation Suite system. For more information, see:
+    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP Signavio Process Transformation Suite. For more information, see:
 
-    [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md).
+    [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
+
+    [SAP Signavio Process Transformation Suite SCIM 2.0 API](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/1ca8c4a9467f43df9ae6d4ed3734f05a.html#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_esx_kxt_vbc)
 
     Default read and write transformations:
 
@@ -308,6 +264,8 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
     > The proxy *Write Transformation* is used when the external application manages the entities in the proxy system – creates new entities, updates existing ones, or deletes existing ones. In this case, the proxy system acts as a *target* one.
     > 
     > However, after a *Create* or *Update* operation is performed on the proxy system, the *Read Transformation* is applied to the result, so that the created or updated entity is sent back to the external application. This behavior demonstrates that the proxy *Read Transformation* is used for *write* cases, as well.
+
+    **Default read and write transformations:**
 
 
     <table>
@@ -991,6 +949,9 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
     </tr>
     </table>
     
+    > ### Note:  
+    > Updating a user in SAP Signavio Process Transformation Suite depends on whether user attributes in SAP Signavio Process Transformation Suite are mapped to SAML attributes in your identity provider. If this is the case, the values of those attributes are populated by the identity provider and cannot be changed by the SAP Signavio Process Transformation Suite SCIM API or the UI. For more information, see [Map SAML Attributes to Users](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/a3498ed7979d4e16ba303b3e047aa6a3.html?locale=en-US) and [Create a User](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/1ca8c4a9467f43df9ae6d4ed3734f05a.html?locale=en-US#create-a-user).
+
 8.  Connect the external consumer to Identity Provisioning with the technical user you have created in step 2.
 
     If the external consumer system is **SAP Identity Management**, you can export the newly created proxy system as a SCIM repository from Identity Provisioning and import it in SAP Identity Management. This will create a SCIM repository in SAP Identity Management where most of the repository constants will be automatically filled in. You need to provide the technical user credentials that you have set up in step 2 and the SCIM assignment method as described below:
@@ -1008,10 +969,12 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
     > ### Note:  
     > For external consumer systems, other than SAP Identity Management, you should also use the **PUT** method for modifying entities.
 
+9.  Run an initial load job.
 
 
 
-<a name="loio99acfbd2f69f4d6aa6b5fb040518c0c6__postreq_cf4_lgj_kfb"/>
+
+<a name="loio0ec8e949904040be83f317a9a8da7b36__postreq_cf4_lgj_kfb"/>
 
 ## Next Steps
 
@@ -1027,9 +990,4 @@ To see an example with SAP Identity Management, see [Hybrid Scenario: SAP Identi
 > For example: **GET** *https://ipsproxyabcd12345-xyz789.dispatcher.cn1.platform.sapcloud.cn/ipsproxy/api/v1/scim/bbb111aa-1234-aaaa-7777-1234567abcde/Users/s123456789*
 > 
 > To learn more, see: [Proxy Systems](proxy-systems-b10d68a.md)
-
-**Related Information**  
-
-
-[SAP Signavio Process Transformation Suite](https://help.sap.com/docs/signavio-process-transformation-suite)
 

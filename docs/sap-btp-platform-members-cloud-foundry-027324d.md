@@ -1,6 +1,6 @@
 <!-- loio027324df5c2d471cb09514491565646b -->
 
-# SAP BTP Platform Members \(Cloud Foundry\)
+# SAP BTPPlatform Members \(Cloud Foundry\) 
 
 Follow this procedure to set up the SAP BTP Platform Members \(Cloud Foundry\) as а source system.
 
@@ -33,7 +33,7 @@ The Cloud Foundry environment enables you to create polyglot cloud applications 
 
 When you enable the Cloud Foundry environment in your subaccount, the system automatically creates a Cloud Foundry organization for you. You can add platform users as org members and space members and assign roles to grant these users platform access. For more information, see [Valid role types](https://v3-apidocs.cloudfoundry.org/version/3.126.0/index.html#valid-role-types).
 
-In this scenario, your SAP Cloud Identity Services tenant acts as your identity provider and SAP BTP acts as your service provider. Identity Provisioning in between provides the SAP BTP Platform Members \(Cloud Foundry\) connector to replicate the org and space members with their role assignments from the identity provider to the local user storage of SAP BTP. For more information, see [SAP BTP Integration Scenario](https://help.sap.com/docs/cloud-identity/system-integration-guide/sap-btp-integration-scenario?version=Cloud).
+In this scenario, your SAP Cloud Identity Services tenant acts as your identity provider and SAP BTP acts as your service provider. Identity Provisioning in between provides the SAP BTP Platform Members \(Cloud Foundry\) connector to replicate the org and space members with their role assignments from the identity provider to the local user storage of SAP BTP. For more information, see [SAP BTP Integration Scenario](https://help.sap.com/docs/cloud-identity/system-integration-guide/sap-btp-integration-scenario).
 
 SAP BTP Platform Members \(Cloud Foundry\) connector manages org and space members, as well as their role assignments, in the Cloud Foundry environment of a multi-environment subaccount, where a **single** SAP Cloud Identity Services tenant acts as custom identity provider. We recommend that you use the Identity Provisioning service enabled in this SAP Cloud Identity Services tenant.
 
@@ -59,15 +59,15 @@ Follow the steps below to create SAP BTP Platform Members \(Cloud Foundry\) as a
 > ### Note:  
 > In case you have Cloud Foundry environment enabled in multiple Cloud Foundry landscapes or more than one SAP Cloud Identity Services tenants, you must configure a separate SAP BTP Platform Members \(Cloud Foundry\) connector for each of them.
 
-The source system consumes User Account and Authentication API and Cloud Foundry V3 API provided by Cloud Foundry.
+The source system consumes `User Account and Authentication API` and `Cloud Foundry V3 API` provided by Cloud Foundry.
 
 
 
 ## Procedure
 
-1.  To enable provisioning of platform users and user role assignments to and from Cloud Foundry environment, create a Support Ticket on component BC-CP-CF-SEC-IAM.
+1.  To enable provisioning of platform users and user role assignments to and from Cloud Foundry environment, create a Support Ticket on component`BC-CP-CF-SEC-IAM`.
 
-    Specify your SAP Cloud Identity Services tenant ID and the origin key of the trust configuration for BTP platform users which points to your SAP Cloud Identity Services tenant. You can find the origin key value in the SAP BTP cockpit. Go to your SAP BTP subaccount, choose *Trust Configuration* and see the value under *Origin Key* for the relevant *Custom Identity Provider for Platform Users*.
+    Specify your SAP Cloud Identity Services tenant ID and the origin key of the trust configuration for BTP platform users which points to your SAP Cloud Identity Services tenant. You can find the origin key value in the SAP BTP cockpit. Go to yourSAP BTP subaccount, choose *Trust Configuration* and see the value under *Origin Key* for the relevant *Custom Identity Provider for Platform Users*.
 
 2.  Access the Identity Provisioning UI.
 
@@ -81,7 +81,7 @@ The source system consumes User Account and Authentication API and Cloud Foundry
 5.  Choose the *Properties* tab to configure the connection settings for your system.
 
     > ### Note:  
-    > If your tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
+    > If your Identity Provisioning tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
     > 
     > If one and the same property exists both in the cockpit and in the *Properties* tab, the value set in the *Properties* tab is considered with higher priority.
     > 
@@ -187,7 +187,13 @@ The source system consumes User Account and Authentication API and Cloud Foundry
     </td>
     <td valign="top">
     
-    Enter the technical key of the landscape in which your multi-environment subaccount with enabled Cloud Foundry environment is located. For more information, see [Regions and API Endpoints Available for the Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/regions-and-api-endpoints-available-for-cloud-foundry-environment?version=Cloud).
+    Enter the technical key of the landscape in which your multi-environment subaccount with enabled Cloud Foundry environment is located.
+
+    For more information, see [Regions and API Endpoints Available for the Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/regions-and-api-endpoints-available-for-cloud-foundry-environment?version=Cloud).
+
+    Please note that when the technical key contains an extension index, the correct value is displayed in the *API Endpoint* column instead of the *Technical Key* column of the table.
+
+    The value of the technical key can also be found by looking up your *Cloud Foundry API Endpoint*, displayed on subaccount level in the*Cloud Foundry Environment* tab of the SAP BTP cockpit
 
     For example: `cf-eu10-002`
     

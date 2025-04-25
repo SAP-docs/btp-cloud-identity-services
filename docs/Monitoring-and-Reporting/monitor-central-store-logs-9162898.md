@@ -30,7 +30,7 @@ You can search, view and refresh central store logs.
     > ### Note:  
     > *Central Store Logs* are enabled and will appear under *Provisioning Logs* whenever changes to application-specific groups occur in the Identity Directory, such as assigning users or modifying group attributes.
 
-2.  In the *Central Store Provisioning Logs* screen, search for a log and select it. You can search by target system name, application ID, target entity ID and status.
+2.  In the *Central Store Provisioning Logs* screen, search for a log and select it. You can search by target system name, application ID, target entity ID, source entity ID and status.
 
     Each row in the log list provides information about a single execution of central store-based provisioning.
 
@@ -71,6 +71,20 @@ You can search, view and refresh central store logs.
     <td valign="top">
     
     The ID of the application the application-specific group belongs to. It is configured as a value of the `ips.application.id` property in the target system.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Source Entity ID* 
+    
+    </td>
+    <td valign="top">
+    
+    The entity ID of the group in the source system, that is Identity Directory.
+
+    For example: *4200a79f-228b-4fcd-ab15-46d2d78360f6*
     
     </td>
     </tr>
@@ -149,6 +163,8 @@ You can search, view and refresh central store logs.
 
     -   *Source Entity ID*: The group ID in the source system
 
+    -   *Target Entity ID*: The group ID in the target system
+
     -   *Application ID*: The ID of the application the application-specific group belongs to.
 
     -   *Start Time*: Date, time, and time zone in UTC format when the central store-based provisioning is triggered
@@ -199,7 +215,7 @@ You can search, view and refresh central store logs.
         When provisioning application-specific groups from the Identity Directory to target systems, groups that do not exist in the target will only be created after an update is made to the group in the source. This update could involve assigning users or modifying group attributes. Newly created groups in the Identity Directory source system are not provisioned unless changes occur. This applies to application-specific groups of types: `userGroup`, `authorization` and `deepLinkActivationPermission`, with the supported operation `readWrite`.
 
         > ### Note:  
-        > Application-specific groups with supported operations `readOnly`, `userOnlyMembership` and `membership` will not be created even if updates are made to the groups. When trying to provision such groups, you will get an ***Entity Failed*** status and an error message in the *Additional Information* section. Examples of these messages include: ***ALAG group not found or more than one groups for the given display name found on the target system***. Here, ALAG refers to an application-level access group, the internal naming for these groups.
+        > Application-specific groups with supported operations `readOnly`, `userOnlyMembership` and `membership` will not be created even if updates are made to the groups. When trying to provision such groups, you will get an ***Entity Failed*** status and an error message in the *Additional Information* section. Examples of these messages include: ***Application group not found or more than one groups for the given display name found on the target system***.
 
     -   *UPDATE* - This operation will appear when a group is updated in the target system.
 
