@@ -555,6 +555,18 @@ You can use SAP BTP ABAP environment to read entities from it and provision them
     >       {
     >         "constant": "User",
     >         "targetPath": "$.members[*].type"
+    >       },
+    >       {  "condition": "'%ips.application.id%' !== 'null'",
+    >         "constant": "%ips.application.id%",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+    >       },
+    >       {
+    >         "constant": "authorization",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >       },
+    >       {
+    >         "constant": "readWrite",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
     >       }
     >     ]
     >   }

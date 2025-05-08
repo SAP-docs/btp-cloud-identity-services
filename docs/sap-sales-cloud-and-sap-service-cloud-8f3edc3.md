@@ -28,7 +28,13 @@ SAP Sales Cloud and SAP Service Cloud is a cloud-based solution that helps custo
 
 You can use Identity Provisioning to configure SAP Sales Cloud and SAP Service Cloud as a source system where you can read *business users*, *employee users*, and *groups* from and provision them to a target system.
 
-This scenario is relevant for existing SAP Sales Cloud and SAP Service Cloud customers \(brown-field approach\). This means that business users, employees, and groups have already been created in SAP Sales Cloud and SAP Service Cloud and can be provisioned to the Identity Authentication target system. After the users and groups are created in Identity Authentication, reflecting the business users and group assignments in SAP Sales Cloud and SAP Service Cloud, Identity Authentication can become the leading system in user provisioning.
+The cloud-based solution provides different APIs for integration with Identity Provisioning, leading to different connector versions for each API. Currently, the following connector versions are available: Version 1 \(SOAP-based API\), which is deprecated, Version 2 \(SOAP-based API\), Version 3 \(SCIM 2.0 based API\) and Version 4 \(SCIM 2.0 based API\), which is applicable for SAP Sales Cloud Version 2 and SAP Service Cloud Version 2 only.
+
+Each connector version supports specific attribute mappings in transformations and requires particular properties. The latest version is set as the default.
+
+**Version 4 \(Applicable for SAP Sales Cloud Version 2 and SAP Service Cloud Version 2 only\)**
+
+When using connector version 4 \(SCIM 2.0 based API\), only users of type `Employee` are provisioned. This version introduces an enhanced SCIM API that no longer requires SAP Cloud Integration. It supports the delta read method for retrieving changed data, the `sw` filtering operator for user searches, and reading of application-specific groups.
 
 
 
@@ -118,7 +124,30 @@ This scenario is relevant for existing SAP Sales Cloud and SAP Service Cloud cus
     
     Enter your authentication method:
 
-    *BasicAuthentication*
+    -   *BasicAuthentication*
+
+    -   *ClientCertificateAuthentication*
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `OAuth2TokenServiceURL`
+    
+    </td>
+    <td valign="top">
+    
+    Enter the URL to the access token provider service.
+
+    For example: <code>https://<i class="varname">&lt;c4c_instance&gt;</i>/auth/token</code>
+
+    SAP Sales Cloud and SAP Service Cloud support OAuth token-based authentication, enabling you to obtain an access token using either basic authentication \(by setting `User` and `Password`\) or certificate authentication.
+
+    **Relevant for connector version 4**
     
     </td>
     </tr>
@@ -137,7 +166,7 @@ This scenario is relevant for existing SAP Sales Cloud and SAP Service Cloud cus
     -   [Basic Authentication of IdP User for Integration Flow Processing \(Cloud Foundry environment\)](https://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/5d46e56550a048e99995f23e1e20083a.html)
 
 
-
+    **Relevant for connector version 3**
     
     </td>
     </tr>
@@ -156,7 +185,7 @@ This scenario is relevant for existing SAP Sales Cloud and SAP Service Cloud cus
     -   [Basic Authentication of IdP User for Integration Flow Processing \(Cloud Foundry environment\)](https://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/5d46e56550a048e99995f23e1e20083a.html)
 
 
-
+    **Relevant for connector version 3**
     
     </td>
     </tr>
@@ -168,7 +197,9 @@ This scenario is relevant for existing SAP Sales Cloud and SAP Service Cloud cus
     </td>
     <td valign="top">
     
-    The version of the SAP Sales Cloud and SAP Service Cloud API you use. By default, the Identity Provisioning service uses version **3** - the SCIM 2.0 based API.
+    The version of the SAP Sales Cloud and SAP Service Cloud API you use.
+
+    By default, the Identity Provisioning service uses version **4** - the SCIM 2.0 based API.
     
     </td>
     </tr>
@@ -180,9 +211,18 @@ This scenario is relevant for existing SAP Sales Cloud and SAP Service Cloud cus
     </td>
     <td valign="top">
     
-    When specified, only those C4C users matching the filter expression will be read.
+    When specified, only those users matching the filter expression will be read.
 
-    For example:
+    Supported user filters in connector version 4:
+
+    -   userName eq "Smith"
+
+    -   userName sw "Sm"
+
+    -   userName eq "Smith" and emails.value eq "smith@example.com"
+
+
+    Supported user filters in connector version 3:
 
     -   userName eq "Smith"
 
@@ -205,7 +245,7 @@ This scenario is relevant for existing SAP Sales Cloud and SAP Service Cloud cus
     </td>
     <td valign="top">
     
-    When specified, only those C4C groups matching the filter expression will be read.
+    When specified, only those groups matching the filter expression will be read.
 
     Example: **displayName eq "ProjectTeam1"**
     
@@ -241,7 +281,7 @@ This scenario is relevant for existing SAP Sales Cloud and SAP Service Cloud cus
 
     You can change the default transformation mapping rules to reflect your current setup of entities in C4C. For more information, see [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md).
 
-    **Default transformation:**
+    **Default transformation for connector version 3**
 
     > ### Code Syntax:  
     > ```
@@ -356,6 +396,179 @@ This scenario is relevant for existing SAP Sales Cloud and SAP Service Cloud cus
     >         "sourcePath": "$.schemas",
     >         "preserveArrayWithSingleElement": true,
     >         "targetPath": "$.schemas"
+    >       }
+    >     ]
+    >   }
+    > }
+    > ```
+
+    **Default transformation for connector version 4**
+
+    *\(Applicable for SAP Sales Cloud Version 2 and SAP Service Cloud Version 2 only\)*
+
+    > ### Code Syntax:  
+    > ```
+    > {
+    >   "user": {
+    >     "mappings": [
+    >       {
+    >         "sourcePath": "$.id",
+    >         "targetVariable": "entityIdSourceSystem"
+    >       },
+    >       {
+    >         "sourcePath": "$.schemas",
+    >         "preserveArrayWithSingleElement": true,
+    >         "targetPath": "$.schemas"
+    >       },
+    >       {
+    >         "sourcePath": "$.userName",
+    >         "targetPath": "$.userName",
+    >         "correlationAttribute": true
+    >       },
+    >       {
+    >         "sourcePath": "$.emails[?(@.primary == true)].value",
+    >         "optional": true,
+    >         "correlationAttribute": true
+    >       },
+    >       {
+    >         "sourcePath": "$.emails",
+    >         "targetPath": "$.emails",
+    >         "optional": true,
+    >         "preserveArrayWithSingleElement": true
+    >       },
+    >       {
+    >         "sourcePath": "$.userType",
+    >         "targetPath": "$.userType"
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "optional": true,
+    >         "targetPath": "$.displayName"
+    >       },
+    >       {
+    >         "sourcePath": "$.externalId",
+    >         "optional": true,
+    >         "targetPath": "$.externalId"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.givenName",
+    >         "optional": true,
+    >         "targetPath": "$.name.givenName"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.middleName",
+    >         "optional": true,
+    >         "targetPath": "$.name.middleName"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.familyName",
+    >         "optional": true,
+    >         "targetPath": "$.name.familyName"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.formatted",
+    >         "optional": true,
+    >         "targetPath": "$.name.formatted"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validFrom']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validFrom']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validTo']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validTo']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['status']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['status']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']"
+    >       },
+    >       {
+    >         "sourcePath": "$.locale",
+    >         "optional": true,
+    >         "targetPath": "$.locale"
+    >       },
+    >       {
+    >         "sourcePath": "$.timezone",
+    >         "optional": true,
+    >         "targetPath": "$.timezone"
+    >       },
+    >       {
+    >         "sourcePath": "$.active",
+    >         "optional": true,
+    >         "targetPath": "$.active"
+    >       },
+    >       {
+    >         "sourcePath": "$.groups",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true,
+    >         "targetPath": "$.groups",
+    >         "functions": [
+    >           {
+    >             "function": "concatString",
+    >             "condition": "'%c4c.group.prefix%' !== 'null'",
+    >             "applyOnElements": true,
+    >             "applyOnAttribute": "display",
+    >             "prefix": "%c4c.group.prefix%"
+    >           }
+    >         ]
+    >       }
+    >     ]
+    >   },
+    >   "group": {
+    >     "mappings": [
+    >       {
+    >         "sourcePath": "$.id",
+    >         "targetVariable": "entityIdSourceSystem"
+    >       },
+    >       {
+    >         "sourcePath": "$.schemas",
+    >         "preserveArrayWithSingleElement": true,
+    >         "targetPath": "$.schemas"
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$.displayName",
+    >         "functions": [
+    >           {
+    >             "function": "concatString",
+    >             "condition": "'%c4c.group.prefix%' !== 'null'",
+    >             "prefix": "%c4c.group.prefix%"
+    >           }
+    >         ]
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
+    >       },
+    >       {
+    >         "sourcePath": "$.members",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true,
+    >         "targetPath": "$.members"
+    >       },
+    >       {
+    >         "condition": "'%ips.application.id%' !== 'null'",
+    >         "constant": "%ips.application.id%",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
     >       }
     >     ]
     >   }

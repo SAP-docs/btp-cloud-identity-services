@@ -357,6 +357,7 @@ These target systems consume SCIM 2.0 API provided by SAP Build Work Zone, advan
     > 
     > {
     >     "user": {
+    >         "condition": "('%workzone.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%workzone.group.prefix%.*/)] empty false)",
     >         "mappings": [
     >             {
     >                 "sourceVariable": "entityIdTargetSystem",
@@ -398,7 +399,7 @@ These target systems consume SCIM 2.0 API provided by SAP Build Work Zone, advan
     >                  "targetPath": "$.userType"
     >             },
     >             {
-    >                 "condition": "$.groups[?(@.value == 'Workzone_User_Type_public')] EMPTY false || $.groups[?(@.display == 'Workzone_User_Type_public')] EMPTY false",
+    >                 "condition": "$.groups[?(@.value =~ /.*Workzone_User_Type_public/)] EMPTY false || $.groups[?(@.display =~ /.*Workzone_User_Type_public/)] EMPTY false",
     >                 "constant": "public",
     >                 "targetPath": "$.userType"
     >             },
@@ -477,7 +478,7 @@ These target systems consume SCIM 2.0 API provided by SAP Build Work Zone, advan
     >                 "targetPath": "$.addresses[1].primary"
     >             },
     >             {
-    >                 "condition": "$.groups[?(@.value == 'Workzone_Admin')] EMPTY false || $.groups[?(@.display == 'Workzone_Admin')] EMPTY false",
+    >                 "condition": "$.groups[?(@.value =~ /.*Workzone_Admin/)] EMPTY false || $.groups[?(@.display =~ /.*Workzone_Admin/)] EMPTY false",
     >                 "constant": "Administrator",
     >                 "targetPath": "$.roles[0].value"
     >             },
@@ -529,6 +530,7 @@ These target systems consume SCIM 2.0 API provided by SAP Build Work Zone, advan
     >         ]
     >     },
     >     "group": {
+    >         "condition": "isAttributeWithOptionalPrefix($.displayName, workzone.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], workzone.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >         "mappings": [
     >             {
     >                 "sourceVariable": "entityIdTargetSystem",
@@ -546,7 +548,15 @@ These target systems consume SCIM 2.0 API provided by SAP Build Work Zone, advan
     >             },
     >             {
     >                 "sourcePath": "$.displayName",
-    >                 "targetPath": "$.displayName"
+    >                 "targetPath": "$.displayName",
+    >                 "functions": [
+    >                     {
+    >                         "condition": "isAttributeWithMandatoryPrefix(@, workzone.group.prefix)",
+    >                         "function": "replaceFirstString",
+    >                         "regex": "%workzone.group.prefix%",
+    >                         "replacement": ""
+    >                     }
+    >                 ]
     >             },
     >             {
     >                 "sourcePath": "$.members[*].value",
@@ -562,7 +572,6 @@ These target systems consume SCIM 2.0 API provided by SAP Build Work Zone, advan
     >         ]
     >     }
     > }
-    >  
     > ```
 
 7.  Now, add a source system from which to read users and groups. Choose from: [Source Systems](source-systems-58033be.md)

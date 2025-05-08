@@ -365,10 +365,9 @@ The Identity Provisioning service manages the complete set of **business partner
 
     > ### Code Syntax:  
     > ```
-    > 
     > {
     >   "user": {
-    >     "condition": "($.emails EMPTY false) && isValidEmail($.emails[0].value)",
+    >     "condition": "isValidEmail($.emails[0].value) && (('%a4c.roles.prefix%' === 'null') || ($.groups[?(@.display =~ /%a4c.roles.prefix%.*/)] empty false))",
     >     "mappings": [
     >       {
     >         "sourcePath": "$.userName",
@@ -473,13 +472,13 @@ The Identity Provisioning service manages the complete set of **business partner
     >     ]
     >   },
     >   "group": {
-    >     "condition": "('%a4c.roles.prefix%' === 'null') || ($.displayName =~ /%a4c.roles.prefix%.*/)",
+    >     "condition": "isAttributeWithOptionalPrefix($.displayName, a4c.roles.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], a4c.roles.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >     "mappings": [
     >       {
     >         "sourcePath": "$.displayName",
     >         "functions": [
     >           {
-    >             "condition": "('%a4c.roles.prefix%' !== 'null') && (@ =~ /%a4c.roles.prefix%.*/)",
+    >             "condition": "isAttributeWithMandatoryPrefix(@, a4c.roles.prefix)",
     >             "function": "replaceFirstString",
     >             "regex": "%a4c.roles.prefix%",
     >             "replacement": ""
@@ -492,7 +491,7 @@ The Identity Provisioning service manages the complete set of **business partner
     >         "sourcePath": "$.displayName",
     >         "functions": [
     >           {
-    >             "condition": "('%a4c.roles.prefix%' !== 'null') && (@ =~ /%a4c.roles.prefix%.*/)",
+    >             "condition": "isAttributeWithMandatoryPrefix(@, a4c.roles.prefix)",
     >             "function": "replaceFirstString",
     >             "regex": "%a4c.roles.prefix%",
     >             "replacement": ""
@@ -514,7 +513,6 @@ The Identity Provisioning service manages the complete set of **business partner
     >     ]
     >   }
     > }
-    > 
     > ```
 
     See also: [Extended Explanation of the \*user.roles.overwrite Properties](https://ga.support.sap.com/dtp/viewer/#/tree/2065/actions/26547:29111:29114:27412:35953:38590)

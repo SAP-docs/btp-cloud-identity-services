@@ -77,7 +77,7 @@ To modify the assertion attributes coming from the corporate IdP, proceed as fol
 3.  Select the corporate identity provider that you want to configure.
 
     > ### Tip:  
-    > If you need to change the protocol, see [Choose Identity Provider Type](choose-identity-provider-type-0838379.md)..
+    > If you need to change the protocol, see [Choose Identity Provider Type](choose-identity-provider-type-0838379.md).
 
 4.  Under *Trust*, choose the *Enriched Assertion Attributes* list item.
 

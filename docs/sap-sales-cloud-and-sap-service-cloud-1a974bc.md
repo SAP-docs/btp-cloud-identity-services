@@ -28,18 +28,18 @@ SAP Sales Cloud and SAP Service Cloud is a cloud-based solution that helps custo
 
 You can use Identity Provisioning to configure SAP Sales Cloud and SAP Service Cloud as a target system where you can provision users and group members from source systems. Keep in mind that once you have provisioned the entities to SAP Sales Cloud and SAP Service Cloud, a *business user* and an *employee* are created for every provisioned user. The business user is required for the provisioned user to log into the SAP Sales Cloud and SAP Service Cloud system.
 
-This scenario is relevant for new SAP Sales Cloud and SAP Service Cloud customers \(green-field approach\). This means that users are first provisioned to Identity Authentication \(uploaded from files or provisioned by Identity Provisioning from another source system\) and afterwards provisioned to SAP Sales Cloud and SAP Service Cloud using Identity Provisioning.
+The cloud-based solution provides different APIs for integration with Identity Provisioning, leading to different connector versions for each API. Currently, the following connector versions are available: Version 1 \(SOAP-based API\), which is deprecated, Version 2 \(SOAP-based API\), Version 3 \(SCIM 2.0 based API\) and Version 4 \(SCIM 2.0 based API\), which is applicable for SAP Sales Cloud Version 2 and SAP Service Cloud Version 2 only.
 
-SAP Sales Cloud and SAP Service Cloud provides three versions of APIs. They differ in type and require configuration of specific set of properties \(see **step 3.** in the main **Procedure**\). By default, the Identity Provisioning service uses version **3**.
+Each connector version supports specific attribute mappings in transformations and requires particular properties. The latest version is set as the default.
 
 
 
 ### Version 1 \(SOAP-based API\)
 
 > ### Note:  
-> The SOAP-based API version 1 is depricated.
+> The SOAP-based API version 1 is deprecated.
 
-When created via API version 1, users are initially transferred to a staging area, and then can be replicated to the C4C system manually or via a job, depending on your tenant setup. This API version is SOAP based. In the SAP Sales Cloud and SAP Service Cloud admin console you can distinguish it by its name – */humancapitalmanagementmasterd6*.
+When created via connector version 1, users are initially transferred to a staging area, and then can be replicated to the C4C system manually or via a job, depending on your tenant setup. This API version is SOAP based. In the SAP Sales Cloud and SAP Service Cloud admin console you can distinguish it by its name – */humancapitalmanagementmasterd6*.
 
 To learn how to replicate users \(using API v.1\), see: [Employee Master Data Replication](https://help.sap.com/viewer/cea15f900ca04c4faa35d3044577fe27/1811/en-US/187a97f8763d10148a1ee7f17f6a9dfa.html)
 
@@ -47,18 +47,22 @@ To learn how to replicate users \(using API v.1\), see: [Employee Master Data Re
 
 ### Version 2 \(SOAP-based API\)
 
-When using API version 2, users are created immediately – there is no need to transfer them to a staging area. This API version is SOAP based. In the C4C admin console, you can distinguish it by its name */employeereplicationin2*.
+When using connector version 2, users are created immediately – there is no need to transfer them to a staging area. This API version is SOAP based. In the C4C admin console, you can distinguish it by its name */employeereplicationin2*.
 
 
 
 ### Version 3 \(SCIM 2.0 based API\)
 
-When using API version 3, users are created immediately. There is no need to transfer them to a staging area.
+When using connector version 3, users are created immediately. There is no need to transfer them to a staging area. For more information, refer to *Identity Provisioning in SAP Cloud for Customer using a System for Cross-domain Identity Management \(SCIM\)* package in the *Prerequisites* section.
 
-For more information on how to set up and use the *Identity Provisioning in SAP Cloud for Customer using a System for Cross-domain Identity Management \(SCIM\)* package, see the *Prerequisites* section.
+
+
+### Version 4 \(Applicable for SAP Sales Cloud Version 2 and SAP Service Cloud Version 2 only\)
+
+When using connector version 4 \(SCIM 2.0 based API\), only users of type `Employee` are provisioned. This version introduces an enhanced SCIM API that no longer requires SAP Cloud Integration. It supports patch operations and provisioning of application-specific groups. Conflict resolution is handled using not only the username but also based on the user's email and a combination of both username and email.
 
 > ### Note:  
-> If, for some reason, you have access to all API versions, you must use **separate** provisioning systems for each version, to avoid data inconsistency errors.
+> If you have access to all API versions, you must use **separate** provisioning systems for each version, to avoid data inconsistency errors.
 
 
 
@@ -146,7 +150,32 @@ For more information on how to set up and use the *Identity Provisioning in SAP 
     </td>
     <td valign="top">
     
-    Enter: *BasicAuthentication*
+    Enter your authentication method:
+
+    -   *BasicAuthentication*
+
+    -   *ClientCertificateAuthentication*
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `OAuth2TokenServiceURL`
+    
+    </td>
+    <td valign="top">
+    
+    Enter the URL to the access token provider service.
+
+    For example: <code>https://<i class="varname">&lt;c4c_instance&gt;</i>/auth/token</code> endpoint.
+
+    SAP Sales Cloud and SAP Service Cloud support OAuth token-based authentication, enabling you to obtain an access token using either basic authentication \(by setting `User` and `Password`\) or certificate authentication.
+
+    **Relevant for connector version 4**
     
     </td>
     </tr>
@@ -165,7 +194,7 @@ For more information on how to set up and use the *Identity Provisioning in SAP 
     -   [Basic Authentication of IdP User for Integration Flow Processing \(Cloud Foundry environment\)](https://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/5d46e56550a048e99995f23e1e20083a.html)
 
 
-
+    **Relevant for connector version 3**
     
     </td>
     </tr>
@@ -184,7 +213,7 @@ For more information on how to set up and use the *Identity Provisioning in SAP 
     -   [Basic Authentication of IdP User for Integration Flow Processing \(Cloud Foundry environment\)](https://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/5d46e56550a048e99995f23e1e20083a.html)
 
 
-
+    **Relevant for connector version 3**
     
     </td>
     </tr>
@@ -196,19 +225,21 @@ For more information on how to set up and use the *Identity Provisioning in SAP 
     </td>
     <td valign="top">
     
-    The version of the SAP Sales Cloud and SAP Service Cloud API you use. Possible values – **1** \(deprecated\), **2**, or **3**. By default, the Identity Provisioning service uses version **3**.
+    The version of the SAP Sales Cloud and SAP Service Cloud API you use.
+
+    -   **1** - SOAP-based API \(deprecated\)
+
+    -   **2** - SOAP-based API
+
+    -   **3** - SCIM 2.0 based API
+
+    -   **4** - SCIM 2.0 based API \(enhanced\)
+
 
     > ### Note:  
     > After you set up the communication arrangement, you can determine the API version used by your SAP Sales Cloud and SAP Service Cloud system. It represents the ID at the end of your generated URL – the name of API v.1 is *humancapitalmanagementmasterd6*, and for API v.2 is *employeereplicationin2*.
 
 
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top" align="center" colspan="2">
-    
-    **Relevant for API v.1** \(deprecated\)
     
     </td>
     </tr>
@@ -221,13 +252,8 @@ For more information on how to set up and use the *Identity Provisioning in SAP 
     <td valign="top">
     
     Enter the system instance ID, configured for the communication system setting in the C4C system.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top" align="center" colspan="2">
-    
-    **Relevant for API v.2** 
+
+    **Relevant for connector version 1** \(deprecated\)
     
     </td>
     </tr>
@@ -242,6 +268,8 @@ For more information on how to set up and use the *Identity Provisioning in SAP 
     Enter the recipient system name.
 
     Example: **0011SAP**
+
+    **Relevant for connector version 2**
     
     </td>
     </tr>
@@ -253,16 +281,78 @@ For more information on how to set up and use the *Identity Provisioning in SAP 
     </td>
     <td valign="top">
     
-    Enter the name of the sender system name. It's equal to the value of property `RemoteSystemID` from API v.1.
+    Enter the name of the sender system name. It's equal to the value of property RemoteSystemID from version 1.
 
     For example: **IPS**
+
+    **Relevant for connector version 2**
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    \(Optional\)`c4c.group.prefix`
+    `c4c.support.patch.operation`
+    
+    </td>
+    <td valign="top">
+    
+    This property controls how modified entities \(users and groups\) in the source system are updated in the target system.
+
+    -   If set to *true*, PATCH operations are used to update users and groups in the target system.
+
+    -   If set to *false*, PUT operations are used to update users and groups in the target system.
+
+
+    Default value: *false*
+
+    **Relevant for connector version 4**
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `c4c.user.unique.attribute`
+    
+    </td>
+    <td valign="top">
+    
+    If Identity Provisioning tries to provision a user that already exists in the target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved.
+
+    Default value in all versions: *userName*
+
+    Supported values in version 4:
+
+    -   userName
+
+    -   emails\[0\].value
+
+    -   userName,emails\[0\].value
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `c4c.group.unique.attribute`
+    
+    </td>
+    <td valign="top">
+    
+    If Identity Provisioning tries to provision a group that already exists in the target system \(a conflicting group\), this property defines the unique attributes by which the existing group will be searched and resolved.
+
+    Default value: *displayName*
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    \(Optional\) `c4c.group.prefix`
     
     </td>
     <td valign="top">
@@ -323,13 +413,7 @@ For more information on how to set up and use the *Identity Provisioning in SAP 
 
     [SAP Cloud for Customer OData API v2 Reference](https://help.sap.com/doc/d0f9ba822c08405da7d88174b304df84/CLOUD/en-US/index.html)
 
-    **Using API version 1** \(deprecated\)
-
-    If you use the first version of the SAP Sales Cloud and SAP Service Cloud API \(SOAP based\) – *humancapitalmanagementmasterd6* – your systems will be created with *c4c.api.version=1*. You need to use the transformation below and specify the mandatory attribute *RemoteSystemID*. The following interface is used for replicating employee master data to SAP Sales Cloud and SAP Service Cloud: [Inbound Service HumanCapitalManagementMasterDataReplicationEmployeeMasterDataReplicationIn](https://help.sap.com/doc/8a98c5f7d5be4b40b3dd97bbdaf28cc4/CLOUD/en-US/PSM_ISI_R_II_HCM_MDR_EMPLOYEE_MD_REPL_IB.html)
-
-    Along with replicating employees in SAP Sales Cloud and SAP Service Cloud, a business user is created for every user.
-
-    Default transformation:
+    **Default transformation for connector version 1: Deprecated**
 
     > ### Code Syntax:  
     > ```
@@ -415,11 +499,9 @@ For more information on how to set up and use the *Identity Provisioning in SAP 
     > 
     > ```
 
-    **Using API version 2**
+    If you use the first version of the SAP Sales Cloud and SAP Service Cloud API \(SOAP based\) – *humancapitalmanagementmasterd6* – your systems will be created with *c4c.api.version=1*. You need to use the transformation below and specify the mandatory attribute *RemoteSystemID*. The following interface is used for replicating employee master data to SAP Sales Cloud and SAP Service Cloud: [Inbound Service HumanCapitalManagementMasterDataReplicationEmployeeMasterDataReplicationIn](https://help.sap.com/doc/8a98c5f7d5be4b40b3dd97bbdaf28cc4/CLOUD/en-US/PSM_ISI_R_II_HCM_MDR_EMPLOYEE_MD_REPL_IB.html). Along with replicating employees in SAP Sales Cloud and SAP Service Cloud, a business user is created for every user.
 
-    If you want to use the second C4C API \(SOAP based\) – *employeereplicationin2* – you have to set *c4c.api.version=2*, change the transformation with the one below, and specify the two mandatory attributes – *RecipientPartyID* and *SenderPartyID*.
-
-    Default transformation:
+    **Default transformation for connector version 2**
 
     > ### Code Syntax:  
     > ```
@@ -515,11 +597,9 @@ For more information on how to set up and use the *Identity Provisioning in SAP 
     > 
     > ```
 
-    **Using API version 3**
+    If you want to use the second C4C API \(SOAP based\) – *employeereplicationin2* – you have to set *c4c.api.version=2*, change the transformation with the one above, and specify the two mandatory attributes – *RecipientPartyID* and *SenderPartyID*.
 
-    By default, the Identity Provisioning uses the latest C4C API \(SCIM based\), for which property *c4c.api.version=3* by default.
-
-    Default transformation:
+    **Default transformation for connector version 3**
 
     > ### Code Syntax:  
     > ```
@@ -638,7 +718,154 @@ For more information on how to set up and use the *Identity Provisioning in SAP 
     > 
     > ```
 
-6.  Now, add a source system from which to read users. Choose from: [Source Systems](source-systems-58033be.md)
+    **Default transformation for connector version 4**
+
+    *\(Applicable for SAP Sales Cloud Version 2 and SAP Service Cloud Version 2 only\)*
+
+    > ### Code Syntax:  
+    > ```
+    > {
+    >     "user": {
+    >         "condition": "((('%c4c.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%c4c.group.prefix%.*/)] empty false)) && $.userName empty false && ($.userType === 'Employee' || $.userType === 'employee'))",
+    >         "mappings": [
+    >             {
+    >                 "targetPath": "$.id",
+    >                 "sourceVariable": "entityIdTargetSystem"
+    >             },
+    >             {
+    >                 "constant": [
+    >                     "urn:ietf:params:scim:schemas:core:2.0:User",
+    >                     "urn:ietf:params:scim:schemas:extension:sap:2.0:User",
+    >                     "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+    >                 ],
+    >                 "targetPath": "$.schemas"
+    >             },
+    >             {
+    >                 "sourcePath": "$.userName",
+    >                 "targetPath": "$.userName"
+    >             },
+    >             {
+    >                 "sourcePath": "$.emails",
+    >                 "targetPath": "$.emails",
+    >                 "preserveArrayWithSingleElement": true
+    >             },
+    >             {
+    >                 "sourcePath": "$.active",
+    >                 "targetPath": "$.active",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$.userType",
+    >                 "targetPath": "$.userType"
+    >             },
+    >             {
+    >                 "sourcePath": "$.displayName",
+    >                 "optional": true,
+    >                 "targetPath": "$.displayName"
+    >             },
+    >             {
+    >                 "sourcePath": "$.externalId",
+    >                 "optional": true,
+    >                 "targetPath": "$.externalId"
+    >             },
+    >             {
+    >                 "sourcePath": "$.name",
+    >                 "targetPath": "$.name",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >                 "optional": true,
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validFrom']",
+    >                 "optional": true,
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validFrom']"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validTo']",
+    >                 "optional": true,
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validTo']"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['status']",
+    >                 "optional": true,
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['status']"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']",
+    >                 "optional": true,
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']"
+    >             },
+    >             {
+    >                 "sourcePath": "$.locale",
+    >                 "optional": true,
+    >                 "targetPath": "$.locale"
+    >             },
+    >             {
+    >                 "sourcePath": "$.timezone",
+    >                 "optional": true,
+    >                 "targetPath": "$.timezone"
+    >             }
+    >         ]
+    >     },
+    >     "group": {
+    >         "condition": "isAttributeWithOptionalPrefix($.displayName, c4c.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], c4c.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
+    >         "mappings": [
+    >             {
+    >                 "targetPath": "$.id",
+    >                 "sourceVariable": "entityIdTargetSystem"
+    >             },
+    >             {
+    >                 "constant": [
+    >                     "urn:ietf:params:scim:schemas:core:2.0:Group",
+    >                     "urn:ietf:params:scim:schemas:extension:sap:2.0:Group"
+    >                 ],
+    >                 "targetPath": "$.schemas"
+    >             },
+    >             {
+    >                 "sourcePath": "$.displayName",
+    >                 "targetPath": "$.displayName",
+    >                 "functions": [
+    >                     {
+    >                         "condition": "isAttributeWithMandatoryPrefix(@, c4c.group.prefix)",
+    >                         "function": "replaceFirstString",
+    >                         "regex": "%c4c.group.prefix%",
+    >                         "replacement": ""
+    >                     }
+    >                 ]
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
+    >                 "optional": true,
+    >                 "targetPath": "$.displayName",
+    >                 "functions": [
+    >                     {
+    >                         "condition": "isAttributeWithMandatoryPrefix(@, c4c.group.prefix)",
+    >                         "function": "replaceFirstString",
+    >                         "regex": "%c4c.group.prefix%",
+    >                         "replacement": ""
+    >                     }
+    >                 ]
+    >             },
+    >             {
+    >                 "sourcePath": "$.members[*].value",
+    >                 "preserveArrayWithSingleElement": true,
+    >                 "optional": true,
+    >                 "targetPath": "$.members[?(@.value)]",
+    >                 "functions": [
+    >                     {
+    >                         "function": "resolveEntityIds"
+    >                     }
+    >                 ]
+    >             }
+    >         ]
+    >     }
+    > }
+    > ```
+
+6.  Add a source system from which to read users. Choose from: [Source Systems](source-systems-58033be.md)
 
 
 

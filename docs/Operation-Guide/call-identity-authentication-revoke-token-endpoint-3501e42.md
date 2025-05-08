@@ -189,7 +189,7 @@ Path
 </td>
 <td valign="top">
 
-No
+Yes
 
 </td>
 <td valign="top">
@@ -202,7 +202,7 @@ string
 Used to identify the corresponding Identity Authentication application.
 
 > ### Note:  
-> The `client_id` parameter is mandatory if the request is provided without authentication.
+> The `client_id` parameter is optional if the request is provided with authentication.
 
 
 

@@ -246,38 +246,6 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a proxy sys
     <tr>
     <td valign="top">
     
-    \(Optional\) `cc.user.unique.attribute`
-    
-    </td>
-    <td valign="top">
-    
-    This property defines by which unique attribute\(s\) an existing user in the target system will be searched and resolved in case Identity Provisioning tries to provision a conflicting user.
-
-    SAP Commerce Cloud supports the following unique attributes which are automatically filled in during system creation: `emails[0].value, userName, externalId`.
-
-    If the service finds an existing user by at least one of the unique attributes, it updates this user with the data of the conflicting one. If such a user is not found, the update of the conflicting user fails. If more than one users with these unique attributes are found, the update fails.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    \(Optional\) `cc.group.unique.attribute`
-    
-    </td>
-    <td valign="top">
-    
-    If you try to provision a group that already exists in a target system, the group creation will fail. In this case, the existing group only needs to be updated.
-
-    This property defines by which unique attribute\(s\) the existing group will be searched and resolved. The default value is `displayName`.
-
-    If the service finds an existing group by this unique attribute, the group that you try to provision will overwrite the existing one. If such a group is not found, the group that you try to provision will not be created in the target system.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     \(Optional\) `cc.support.patch.operation`
     
     </td>
@@ -458,6 +426,15 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a proxy sys
     >                 "sourcePath": "$.schemas",
     >                 "preserveArrayWithSingleElement": true,
     >                 "targetPath": "$.schemas"
+    >             },
+    >             {
+    >                 "constant": "authorization",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "optional": true,
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
     >             },
     >             {
     >                 "sourcePath": "$.displayName",

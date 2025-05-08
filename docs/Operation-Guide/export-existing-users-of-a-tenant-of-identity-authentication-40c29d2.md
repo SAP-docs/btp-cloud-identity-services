@@ -161,7 +161,7 @@ To export tenant users from Identity Authentication, proceed as follows:
 
 1.  Sign in to the administration console for SAP Cloud Identity Services.
 
-2.  Choose the *Export Users* tile.
+2.  Under *Users & Authorizations*, choose the *Export Users* tile.
 
     This operation opens the *Export Users* page.
 

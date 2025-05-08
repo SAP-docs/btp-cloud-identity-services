@@ -308,36 +308,6 @@ You can use SAP BTP ABAP environment as a proxy connector to execute *hybrid* sc
     <tr>
     <td valign="top">
     
-    `a4c.user.unique.attribute`
-    
-    </td>
-    <td valign="top">
-    
-    If Identity Provisioning tries to provision a user that already exists in the SAP BTP ABAP environment target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved.
-
-    According to your use case, choose how to set up this property:
-
-    -   Default behavior: This property does not appear in the UI during system creation. Its default value is *personExternalID*. That means, if the service finds an existing user by a *personExternalID*, it updates this user with the data of the conflicting one.
-
-        If a user with such а *personExternalID* is not found, the creation of the conflicting user fails.
-
-    -   Value = *emails\[0\].value*. If the service finds an existing user matching both unique attributes *email* and *personExternalID*, it updates this user with the data of the conflicting one. If the service finds an existing user matching only the *email*, the update of the existing user fails.
-
-        If a user with such *email* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
-
-
-    Possible values:
-
-    -   *personExternalID*
-    -   *emails\[0\].value*
-
-    Default value: *personExternalID*
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     \(Optional\) `a4c.roles.page.size`
     
     </td>
@@ -674,6 +644,14 @@ You can use SAP BTP ABAP environment as a proxy connector to execute *hybrid* sc
     >       {
     >         "constant": "User",
     >         "targetPath": "$.members[*].type"
+    >       },
+    >       {
+    >         "constant": "authorization",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >       },
+    >       {
+    >         "constant": "readWrite",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
     >       }
     >     ]
     >   }

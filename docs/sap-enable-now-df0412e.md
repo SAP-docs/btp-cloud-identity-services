@@ -28,7 +28,7 @@ The SAP Enable Now solution is SAP’s digital adoption platform. It can help yo
 You can use Identity Provisioning to configure SAP Enable Now as a proxy system in hybrid scenarios. For example, when SAP Enable Now is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision users to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users back to the SAP Enable Now.
 
 > ### Note:  
-> The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users and groups. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
+> The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
 
 
 
@@ -192,20 +192,6 @@ You can use Identity Provisioning to configure SAP Enable Now as a proxy system 
     <td valign="top">
     
     \(Credential\) Enter the password of the SAP Enable Now technical user.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `en.user.unique.attribute`
-    
-    </td>
-    <td valign="top">
-    
-    If Identity Provisioning tries to provision a user that already exists in the target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved.
-
-    Default value: *userName*
     
     </td>
     </tr>
@@ -541,9 +527,6 @@ You can use Identity Provisioning to configure SAP Enable Now as a proxy system 
     </tr>
     </table>
     
-    > ### Note:  
-    > Updating a user in SAP Enable Now depends on whether user attributes in SAP Enable Now are mapped to SAML attributes in your identity provider. If this is the case, the values of those attributes are populated by the identity provider and cannot be changed by the SAP Enable Now SCIM API or the UI. For more information, see [Map SAML Attributes to Users](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/a3498ed7979d4e16ba303b3e047aa6a3.html?locale=en-US) and [Create a User](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/1ca8c4a9467f43df9ae6d4ed3734f05a.html?locale=en-US#create-a-user).
-
 8.  Connect the external consumer to Identity Provisioning with the technical user you have created in step 2.
 
     If the external consumer system is **SAP Identity Management**, you can export the newly created proxy system as a SCIM repository from Identity Provisioning and import it in SAP Identity Management. This will create a SCIM repository in SAP Identity Management where most of the repository constants will be automatically filled in. You need to provide the technical user credentials that you have set up in step 2 and the SCIM assignment method as described below:

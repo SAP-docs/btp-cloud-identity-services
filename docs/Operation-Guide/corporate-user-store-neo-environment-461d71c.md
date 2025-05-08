@@ -248,11 +248,6 @@ The configuration of SAP BTP depends on the type of the user store. You have two
          "TrustKeystorePath": "<File system path to the trusted CAs keystore - must be set if UseSSL is true>",
          "TrustKeystorePassword": "<The password of the trusted CAs keystore>",
         
-         "IsActiveDirectory": "<Possible values are "true" (default value if missing) or "false". "true" indicates that the LDAP server is Active Directory>",
-         "ExcludeUsersAttribute": {
-            "AttributeName": "<Name of user attribute that will be used to exclude some users from the result depending on their type. Attribute is treated as bitwise. Such attribute for Active Directory is "UserAccountControl">",
-            "AttributeMask": "<Bitwise mask represented as decimal value. In case any of the high bits of this mask match with the corresponding bit of the value of the above attribute, the user will be excluded from the result. Example mask for Active Directory is "67121154" - it is the sum of the following flags ACCOUNTDISABLE(2), WORKSTATION_TRUST_ACCOUNT(4096), SERVER_TRUST_ACCOUNT(8192) and PARTIAL_SECRETS_ACCOUNT(67108864)>"
-         },
         ```
 
         In this section add the additional attributes `employeeNumber`, `division`, `department`, and `organization`, defined in the SCIM Enterprise User Schema Extension.

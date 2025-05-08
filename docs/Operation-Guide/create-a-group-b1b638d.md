@@ -61,7 +61,7 @@ To create a new user group, proceed as follows:
     Required. The name of the group.
 
     > ### Tip:  
-    > To ensure successful group provisioning from SAP Cloud Identity Access Governance, create the groups in Identity Authentication with length of their names within 40 characters. For more information, see [SAP Cloud Identity Access Governance: Groups are not Provisioned to the Target System](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/job-and-transformation-issues?state=DRAFT&version=Dev#sap-cloud-identity-access-governance-groups-are-not-provisioned-to-the-target-system).
+    > To ensure successful group provisioning from SAP Cloud Identity Access Governance, create the groups in Identity Authentication with length of their names within 40 characters.
 
 
     

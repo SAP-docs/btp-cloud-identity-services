@@ -16,7 +16,7 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 
 ## Context
 
-The custom mail server must support SSL \(Secure Sockets Layer\). Identity Authentication trusts all certificates from Java SE Runtime Environment 17, therefore the mail server should use only them as a certificate authority when communicating with Identity Authentication. All certificate authorities from the certificate chain must be trusted by Identity Authentication to be able to communicate with the mail server.
+The custom mail server must support SSL \(Secure Sockets Layer\) and Transport Layer Security 1.2 \(TLS\). Identity Authentication trusts all certificates from Java SE Runtime Environment 17, therefore the mail server should use only them as a certificate authority when communicating with Identity Authentication. All certificate authorities from the certificate chain must be trusted by Identity Authentication to be able to communicate with the mail server.
 
 > ### Tip:  
 > You can configure rate limits for your emails between 30 and 600 per minute. Beware that this affects all types of emails, including parallel bulk upload of users.

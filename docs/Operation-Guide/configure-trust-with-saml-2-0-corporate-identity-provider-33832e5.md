@@ -101,7 +101,7 @@ Set up trust with a corporate identity provider in the administration console fo
 3.  Select the corporate identity provider that you want to configure.
 
     > ### Tip:  
-    > If you need to change the protocol, see [Choose Identity Provider Type](choose-identity-provider-type-0838379.md)..
+    > If you need to change the protocol, see [Choose Identity Provider Type](choose-identity-provider-type-0838379.md).
 
 4.  Under *SAML 2.0*, choose *SAML 2.0 Configuration*.
 

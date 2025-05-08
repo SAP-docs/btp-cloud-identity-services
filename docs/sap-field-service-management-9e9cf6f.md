@@ -152,7 +152,7 @@ This scenario supports provisioning **users** and **group members**. When integr
     
     Specify the URL to the API of your SAP Field Service Management system. It follows the pattern:
 
-    <code>https://<i class="varname">&lt;cluster&gt;</i>.coresystems.net</code>
+    <code>https://<i class="varname">&lt;cluster&gt;</i>.fsm.cloud.sap</code>
     
     </td>
     </tr>
@@ -214,7 +214,7 @@ This scenario supports provisioning **users** and **group members**. When integr
     
     Enter the OAuth 2.0 Token Service URL.
 
-    For example: `https://<cluster>.coresuite.com/api/oauth2/v1/token`
+    For example: `https://<cluster>.fsm.cloud.sap/api/oauth2/v2/token`
     
     </td>
     </tr>

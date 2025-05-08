@@ -256,56 +256,6 @@ You can use Identity Provisioning to configure SAP Intelligent Agriculture as a 
     <tr>
     <td valign="top">
     
-    `ia.group.unique.attribute`
-    
-    </td>
-    <td valign="top">
-    
-    When Identity Provisioning attempts to provision a user for the first time, it may detect that this user already exists on the target system. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\).
-
-    This property defines by which unique attribute\(s\) the existing user will be searched and resolved. If the service finds a user on the target system via this filter, then the conflicting user will overwrite the existing one. If the service does not find a user on the target system via this filter, the creation will fail.
-
-    **Default behavior**: The property is missing during system creation. Its default value is *userName*. This means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such *userName* is not found, the creation of the conflicting user fails.
-
-    **Possible values:**
-
-    -   *userUuid*
-    -   *emails*
-    -   *userName*
-    -   *externalId*
-
-    Default value: *userName*
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `ia.user.unique.attribute`
-    
-    </td>
-    <td valign="top">
-    
-    When Identity Provisioning attempts to provision a user for the first time, it may detect that this user already exists on the target system. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\).
-
-    This property defines by which unique attribute\(s\) the existing user will be searched and resolved. If the service finds a user on the target system via this filter, then the conflicting user will overwrite the existing one. If the service does not find a user on the target system via this filter, the creation will fail.
-
-    **Default behavior**: The property is automatically added during system creation. Its default value is *userUuid*. This means, if the service finds an existing user by a *userUuid*, it updates this user with the data of the conflicting one. If a user with such *userUuid* is not found, the creation of the conflicting user fails.
-
-    **Possible values:**
-
-    -   *userUuid*
-    -   *emails*
-    -   *userName*
-    -   *externalId*
-
-    Default value: *userUuid*
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     `ia.support.patch.operation`
     
     </td>

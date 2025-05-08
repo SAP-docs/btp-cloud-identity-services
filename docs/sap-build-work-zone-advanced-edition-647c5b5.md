@@ -416,7 +416,14 @@ These source systems consume SCIM 2.0 API provided by SAP Build Work Zone, advan
     >             },
     >             {
     >                 "sourcePath": "$.displayName",
-    >                 "targetPath": "$.displayName"
+    >                 "targetPath": "$.displayName",
+    >                 "functions": [
+    >                     {
+    >                         "function": "concatString",
+    >                         "condition": "'%workzone.group.prefix%' !== 'null'",
+    >                         "prefix": "%workzone.group.prefix%"
+    >                     }
+    >                 ]
     >             },
     >             {
     >                 "sourcePath": "$.members",
@@ -438,6 +445,21 @@ These source systems consume SCIM 2.0 API provided by SAP Build Work Zone, advan
     >                 "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['description']",
     >                 "optional": true,
     >                 "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['description']"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "optional": true,
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "optional": true,
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
+    >             },
+    >             {
+    >                 "condition": "'%ips.application.id%' !== 'null'",
+    >                 "constant": "%ips.application.id%",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
     >             }
     >         ]
     >     }

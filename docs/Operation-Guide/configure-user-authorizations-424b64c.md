@@ -24,10 +24,10 @@ Sometimes the administrator authorizations that are predefined in the tenant of 
 Once it's enabled, it may take up to 60 seconds before the administrator can see the *Authorization Policies* tab when accessing the administration console application. Initially, only the base policies are visible: `CREATE_USERS` , `DELETE_USERS`, `MANAGE_USERS`, `READ_USERS`, `UPDATE_USERS`, `CREATE_SCIM_SCHEMAS`, `DELETE_SCIM_SCHEMAS`, `MANAGE_SCIM_SCHEMAS`, `READ_SCIM_SCHEMAS`, `CREATE_GROUPS`, `DELETE_GROUPS`, `MANAGE_GROUPS`, `READ_GROUPS`, and `UPDATE_GROUPS`. You can create new authorization policies on the base of these policies and assign them to administrators.
 
 > ### Remember:  
-> As of February 11, 2025, the **MANAGE\_USERS** policy does not contain the read applications permission. You must add the **READ\_APPLICATIONS** policy to the user or users if they need to see the *Import Users* tile in the administration console.
+> As of February 11, 2025, the `MANAGE_USERS` policy does not contain the read applications permission. You must add the `READ_APPLICATIONS` policy to the user or users if they need to see the *Import Users* tile in the administration console.
 
 > ### Note:  
-> The Read Users authorization overrides the READ\_USERS authorization policy, while the Manage Users authorization overrides all user authorization policies.
+> The Read Users authorization overrides the READ\_USERS authorization policy, while the Manage Users authorization overrides all user authorization policies. For example, if administrator users are assigned the Read Users authorizations, they can read all users even if the same administrator users are configured in the authorization policy with a READ\_USERS restriction.
 
 When you create a new policy, you can restrict the users on the basis of the following attributes: `user.name`, `user.addresses.country`, `user.costCenter`, `user.division`, `user.department`, `user.organization`, and `user.type`. The subsets of the user attributes are configured via the `user.attributes`.
 
@@ -146,7 +146,7 @@ The *User Type* as defined in the administration console. The allowed values are
 </td>
 <td valign="top">
 
-The policy allows you to see the attributes that are defined in the value field. The attributes' value format must be according to SCIM notation.
+The policy allows you to see the attributes that are defined in the value field. The attributes' value format must be according to the SCIM notation.
 
 The supported attributes that can be defined in the policy are listed in the **Supported Attributes** section below this table.
 
@@ -154,7 +154,17 @@ The supported attributes that can be defined in the policy are listed in the **S
 > If the `user.аttributes` is used with the "=" operator, it supports only one attribute. For more attributes, use the "IN" operator adding each attribute separately.
 
 > ### Note:  
-> If you use the attribute `password`, you must also add the following two attributes: `active` and `urn:ietf:params:scim:schemas:extension:sap:2.0:User:status`. The attributes must be separated with comma, with no space between them.
+> If you use the `password` attribute, you must also add the following two attributes:
+> 
+> -   `active`
+> 
+> -   `urn:ietf:params:scim:schemas:extension:sap:2.0:User:status`
+> 
+> 
+> Enter the attributes separated by comma without using a space.
+> 
+> > ### Example:  
+> > `active,urn:ietf:params:scim:schemas:extension:sap:2.0:User:status`
 
 
 

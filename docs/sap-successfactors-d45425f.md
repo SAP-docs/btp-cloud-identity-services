@@ -410,24 +410,6 @@ For more information on how to update to version 2, see [Update Connector Versio
     <tr>
     <td valign="top">
     
-    `sf.group.unique.attribute`
-    
-    </td>
-    <td valign="top">
-    
-    If the service tries to create a group that already exists in the target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\).
-
-    To make the search filter by a specific attribute, specify this attribute as a value for the `sf.group.unique.attribute` property.
-
-    If the property is not specified, the search is done by the default attribute: *displayName*
-
-    **Connector version**: SAP SuccessFactors version 2
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     \(Optional\) `sf.page.size`
     
     </td>

@@ -302,30 +302,6 @@ You can use Identity Provisioning to configure procurement data warehouse as a p
     
     </td>
     </tr>
-    <tr>
-    <td valign="top">
-    
-    `pdw.user.unique.attribute`
-    
-    </td>
-    <td valign="top">
-    
-    It defines by which unique attribute\(s\) an existing user to be resolved in the event of conflicting users.
-
-    Default value: **userName**
-
-    Possible values:
-
-    -   **emails\[0\].value**
-    -   **userName,emails\[0\].value**
-
-    > ### Note:  
-    > If this property is missing, or you've deleted it, and the service does not find such a *userName*, it will try again to resolve the conflicting user – by *email*. If the second attempt for resolution is unsuccessful too, the creation of the conflicting user fails.
-
-    For more information, see: [List of Properties](list-of-properties-d6f3577.md)
-    
-    </td>
-    </tr>
     </table>
     
     To learn what additional properties are relevant to this system, see [List of Properties](list-of-properties-d6f3577.md). You can use the main search, or filter properties by the *Name* or *System Type* columns.

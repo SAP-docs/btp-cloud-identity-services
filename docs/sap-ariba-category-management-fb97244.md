@@ -218,22 +218,6 @@ You can use Identity Provisioning to configure SAP Ariba Category Management as 
     
     </td>
     </tr>
-    <tr>
-    <td valign="top">
-    
-    \(Optional\) `cm.user.unique.attribute`
-    
-    </td>
-    <td valign="top">
-    
-    If Identity Provisioning tries to provision a user that already exists in the target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved. The property is not added automatically at system creation.
-
-    Possible values: *userName* and *emails\[\*\].value*
-
-    For more information, see: **User Update and Uniqueness** section below and [List of Properties](list-of-properties-d6f3577.md).
-    
-    </td>
-    </tr>
     </table>
     
     To learn what additional properties are relevant to this system, see [List of Properties](list-of-properties-d6f3577.md). You can use the main search, or filter properties by the *Name* or *System Type* columns.

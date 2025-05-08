@@ -12,6 +12,9 @@ Enable or disable IdP-Initiated SSO via the administration console for SAP Cloud
 
 In the IdP-Initiated Single Sign-On \(SSO\), the authentication starts at the identity provider \(IdP\). The user is first authenticated at the identity provider, and after that he or she is allowed to access the protected resource at the application \(\(service provider \(SP\)\).
 
+> ### Remember:  
+> IdP-initiated SSO is supported only for SAML 2.0 applications.
+
 ![](images/IdP-Initiated_SSO_c85c0aa.png)
 
 1.  The user access the identity provider via a link.

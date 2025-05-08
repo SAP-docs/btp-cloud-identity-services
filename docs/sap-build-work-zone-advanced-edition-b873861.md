@@ -292,38 +292,6 @@ After fulfilling the prerequisites, follow the procedure below to create a proxy
     <tr>
     <td valign="top">
     
-    \(Optional\) `workzone.user.unique.attribute`
-    
-    </td>
-    <td valign="top">
-    
-    When the Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists in SAP Build Work Zone, advanced edition. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\). This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\).
-
-    Default value \(when not specified\): *userName*
-
-    To learn more, see: [List of Properties](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/d6f3577f30ec4af98e734b0126a60e37.html)
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    \(Optional\) `workzone.group.unique.attribute`
-    
-    </td>
-    <td valign="top">
-    
-    If the Identity Provisioning tries to create a group that already exists in SAP Build Work Zone, advanced edition, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
-
-    Default value \(when not specified\): *displayName*
-
-    To learn more, see: [List of Properties](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/d6f3577f30ec4af98e734b0126a60e37.html)
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     \(Optional\) `workzone.include.if.match.wildcard.header`
     
     </td>
@@ -575,6 +543,16 @@ After fulfilling the prerequisites, follow the procedure below to create a proxy
     >                 "sourcePath": "$.schemas",
     >                 "preserveArrayWithSingleElement": true,
     >                 "targetPath": "$.schemas"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "optional": true,
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "optional": true,
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
     >             }
     >         ]
     >     }

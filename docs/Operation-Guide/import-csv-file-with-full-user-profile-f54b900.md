@@ -247,7 +247,7 @@ To import users into the user store of Identity Authentication, proceed as follo
 
 1.  Sign in to the administration console for SAP Cloud Identity Services.
 
-2.  Choose the *User Management* tile.
+2.  Under *Users & Authorizations*, choose the *User Management* tile.
 
     The system displays the first 20 users in the tenant sorted by their user ID number.
 

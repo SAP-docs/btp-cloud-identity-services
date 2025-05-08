@@ -140,17 +140,230 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2025-04-23
+2025-05-08
 
 </td>
 <td valign="top">
 
-2025-04-23
+2025-05-08
 
 </td>
 <td valign="top">
 
-2504a
+2504b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Client Certificates
+
+</td>
+<td valign="top">
+
+You can specify a unique DN pattern for single user authentication when configuring an X.509 client certificate. See [Configure X.509 Client Certificates for User Authentication](Operation-Guide/configure-x-509-client-certificates-for-user-authentication-52c7dcb.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-05-08
+
+</td>
+<td valign="top">
+
+2025-05-08
+
+</td>
+<td valign="top">
+
+2504b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+REST API
+
+</td>
+<td valign="top">
+
+The `Identity Directory API` now supports new attribute `externalName` located in the group extension schema `urn:ietf:params:scim:schemas:extension:sap:2.0:Group`. The `externalName` attribute is unique within the application. See [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/overview).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-05-08
+
+</td>
+<td valign="top">
+
+2025-05-08
+
+</td>
+<td valign="top">
+
+2504b
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Application Authorizations
+
+</td>
+<td valign="top">
+
+Tenant administrator now can create a restriction policy using the `applications.CREATE_APPLICATIONS` and `applications.MANAGE_APPLICATIONS` parameters. See [Configure Application Authorizations](Operation-Guide/configure-application-authorizations-01cff18.md) 
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-05-08
+
+</td>
+<td valign="top">
+
+2025-05-08
+
+</td>
+<td valign="top">
+
+2504b
 
 </td>
 </tr>
@@ -211,17 +424,17 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2025-04-23
+2025-05-08
 
 </td>
 <td valign="top">
 
-2025-04-23
+2025-05-08
 
 </td>
 <td valign="top">
 
-2504a
+2504b
 
 </td>
 </tr>
@@ -282,17 +495,17 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2025-04-23
+2025-05-08
 
 </td>
 <td valign="top">
 
-2025-04-23
+2025-05-08
 
 </td>
 <td valign="top">
 
-2504a
+2504b
 
 </td>
 </tr>
@@ -353,17 +566,17 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2025-04-23
+2025-05-08
 
 </td>
 <td valign="top">
 
-2025-04-23
+2025-05-08
 
 </td>
 <td valign="top">
 
-2504a
+2504b
 
 </td>
 </tr>
@@ -389,7 +602,7 @@ SAP Sales Cloud and SAP Service Cloud - new version
 </td>
 <td valign="top">
 
-A new version of SAP Sales Cloud and SAP Service Cloud is introduced. It supports certificate-based authentication, patch operations, delta read of entities, cursor-based pagination and more.
+A new connector version for SAP Sales Cloud and SAP Service Cloud is introduced. It is applicable for SAP Sales Cloud Version 2 and SAP Service Cloud Version 2 and supports certificate-based authentication, patch operations, delta read of entities, cursor-based pagination and more.
 
 For more information, see
 
@@ -435,17 +648,17 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2025-04-24
+2025-05-08
 
 </td>
 <td valign="top">
 
-2025-04-24
+2025-05-08
 
 </td>
 <td valign="top">
 
-2504a
+2504b
 
 </td>
 </tr>
@@ -508,17 +721,17 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2025-04-24
+2025-05-08
 
 </td>
 <td valign="top">
 
-2025-04-24
+2025-05-08
 
 </td>
 <td valign="top">
 
-2504a
+2504b
 
 </td>
 </tr>
@@ -594,17 +807,17 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2025-04-24
+2025-05-08
 
 </td>
 <td valign="top">
 
-2025-04-24
+2025-05-08
 
 </td>
 <td valign="top">
 
-2504a
+2504b
 
 </td>
 </tr>

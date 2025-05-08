@@ -268,62 +268,6 @@ You can use the Identity Provisioning UI to configure SAP Build Work Zone, stand
     
     </td>
     </tr>
-    <tr>
-    <td valign="top">
-    
-    `cflp.user.unique.attribute`
-    
-    </td>
-    <td valign="top">
-    
-    If Identity Provisioning tries to provision a user that already exists in the target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved.
-
-    SAP Build Work Zone, standard edition supports the following unique attributes which are automatically filled in when the target system is added in the service UI:
-
-    `emails[0].value,['urn:ietf:params:scim:schemas:extension:2.0:mapping']['providerId'],externalId`
-
-    > ### Note:  
-    > SAP Build Work Zone, standard edition, only supports `externalId` of type UUID.
-
-    -   If the user has an `externalId`, the conflict is resolved by `externalId` and `providerId`.
-
-    -   If the user doesn't have an `externalId`, the conflict is resolved by `email` and `providerId`.
-
-
-    For the conflict to be resolved, an existing user matching both unique attributes should be found.
-
-    Whether the existing user will be updated or a new one will be created by Identity Provisioning depends on the following conditions - was the user created by the Identity Provisioning service, what combination of unique attributes exist for the user, and has any of the provisioning systems \(source or target\) been reset. For more information, see Step 4.
-
-    > ### Recommendation:  
-    > We recommend that you do not modify the value of the `cflp.user.unique.attribute` property. Otherwise, user creation fails.
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `cflp.group.unique.attribute`
-    
-    </td>
-    <td valign="top">
-    
-    If Identity Provisioning tries to provision a group that already exists in the target system \(a conflicting group\), this property defines the unique attributes by which the existing group will be searched and resolved.
-
-    SAP Build Work Zone, standard edition supports a pair of unique attributes which is automatically filled in when the target system is added in the service UI:
-
-    `externalId,['urn:ietf:params:scim:schemas:extension:2.0:mapping']['providerId']`
-
-    For the conflict to be resolved, an existing group matching both unique attributes should be found. In this case, Identity Provisioning updates the group. This means, the conflicting group overwrites the existing one. If the group matches only one of the unique attributes, the conflict is not resolved, and the group creation fails.
-
-    > ### Recommendation:  
-    > We recommend that you do not modify the value of the `cflp.group.unique.attribute` property. Otherwise, the group creation fails.
-
-
-    
-    </td>
-    </tr>
     </table>
     
     To learn what additional properties are relevant to this system, see [List of Properties](list-of-properties-d6f3577.md). You can use the main search, or filter properties by the *Name* or *System Type* columns.
@@ -518,8 +462,11 @@ You can use the Identity Provisioning UI to configure SAP Build Work Zone, stand
     >                 "scope": "patchEntity"
     >             },
     >             {
-    >                 "constant": "urn:ietf:params:scim:schemas:core:2.0:User",
-    >                 "targetPath": "$.schemas[0]"
+    >                 "constant": [
+    >                     "urn:ietf:params:scim:schemas:core:2.0:User",
+    >                     "urn:ietf:params:scim:schemas:extension:2.0:mapping"
+    >                 ],
+    >                 "targetPath": "$.schemas"
     >             },
     >             {
     >                 "sourcePath": "$.emails",
@@ -571,12 +518,11 @@ You can use the Identity Provisioning UI to configure SAP Build Work Zone, stand
     >                 "scope": "patchEntity"
     >             },
     >             {
-    >                 "constant": "urn:ietf:params:scim:schemas:core:2.0:Group",
-    >                 "targetPath": "$.schemas[0]"
-    >             },
-    >             {
-    >                 "constant": "urn:ietf:params:scim:schemas:core:2.0:mapping",
-    >                 "targetPath": "$.schemas[1]"
+    >                 "constant": [
+    >                     "urn:ietf:params:scim:schemas:core:2.0:Group",
+    >                     "urn:ietf:params:scim:schemas:extension:2.0:mapping"
+    >                 ],
+    >                 "targetPath": "$.schemas"
     >             },
     >             {
     >                 "sourcePath": "$.meta.isIAG",

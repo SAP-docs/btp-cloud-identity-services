@@ -52,7 +52,7 @@ According to your use case, you can decide whether to use SAP S/4HANA on-premise
 To enable HR integration, you need to specify the relevant property in the system configuration. See **step 7** from the procedure below.
 
 > ### Note:  
-> The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users and groups. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
+> The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
 
 
 
@@ -258,36 +258,6 @@ To enable HR integration, you need to specify the relevant property in the syste
     As a comma-separated value, add the codes of the roles maintained by the HR integration. Make sure these role codes are part of your *read* and *write* transformations.
 
     By default, the following codes are added to your system: **BUP003, BBP005, BUP012, WFM001**. That means, your HR integration will support *employees*, *contingent worker*, *collaboration user*, and *resource*.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `s4hana.onprem.user.unique.attribute`
-    
-    </td>
-    <td valign="top">
-    
-    If Identity Provisioning tries to provision a user that already exists in the SAP S/4HANA On-Premise target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved.
-
-    According to your use case, choose how to set up this property:
-
-    -   Default behavior: This property does not appear in the UI during system creation. Its default value is *personExternalID*. That means, if the service finds an existing user by a *personExternalID*, it updates this user with the data of the conflicting one.
-
-        If a user with such а *personExternalID* is not found, the creation of the conflicting user fails.
-
-    -   Value = *emails\[0\].value*. If the service finds an existing user matching both unique attributes *email* and *personExternalID*, it updates this user with the data of the conflicting one. If the service finds an existing user matching only the *email*, the update of the existing user fails.
-
-        If a user with such *email* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
-
-
-    Possible values:
-
-    -   *personExternalID*
-    -   *emails\[0\].value*
-
-    Default value: *personExternalID*
     
     </td>
     </tr>

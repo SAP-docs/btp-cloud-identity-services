@@ -23,10 +23,10 @@ Follow this procedure to set up intelligent opportunity analyzer as a proxy syst
 
 Intelligent opportunity analyzer is a service that comes integrated with SAP Ariba Category Management for identifying and managing opportunities that lead to improving the performance of a purchasing category.
 
-You can use Identity Provisioning to configure intelligent opportunity analyzer as a proxy system in hybrid scenarios. For example, when intelligent opporunity analyzer is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision users to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users back to the intelligent opportunity analyzer.
+You can use Identity Provisioning to configure intelligent opportunity analyzer as a proxy system in hybrid scenarios. For example, when intelligent opportunity analyzer is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision users to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users back to the intelligent opportunity analyzer.
 
 > ### Note:  
-> Intelligent opporunity analyzer does not support groups.
+> Intelligent opportunity analyzer does not support groups.
 
 
 
@@ -212,22 +212,6 @@ You can use Identity Provisioning to configure intelligent opportunity analyzer 
 
 
 
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    \(Optional\) `ioa.user.unique.attribute`
-    
-    </td>
-    <td valign="top">
-    
-    If Identity Provisioning tries to provision a user that already exists in the target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved. The property is not added automatically at system creation.
-
-    Possible values: *userName* and *emails\[\*\].value*
-
-    For more information, see: **User Update and Uniqueness** section below and [List of Properties](list-of-properties-d6f3577.md).
     
     </td>
     </tr>

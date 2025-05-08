@@ -4,6 +4,9 @@
 
 You can define rules for authentication according to different risk factors and apply actions like *Allow*, *Deny*, and *Two-Factor Authentication*.
 
+> ### Restriction:  
+> Not supported for technical communication in OpenID Connect \(OIDC\) flows.
+
 **Authentication Rules**
 
 The created rules are displayed sorted by priority. When a user tries to access the application, the rules evaluate if the user meets the criteria of the rule. The evaluation starts with the rule with the highest priority, until the criteria of a rule are met. If the criteria of a rule are met, the rest of the rules aren’t evaluated.

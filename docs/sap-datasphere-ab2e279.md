@@ -31,7 +31,7 @@ You can use Identity Provisioning to configure SAP Datasphere as a proxy system 
 > SAP Datasphere does not support groups.
 
 > ### Note:  
-> The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users and groups. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
+> The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
 
 
 
@@ -216,31 +216,6 @@ You can use Identity Provisioning to configure SAP Datasphere as a proxy system 
     Specifies whether to fetch a CSRF token when sending requests to the system.
 
     This property is automatically added to the system, with default value: **enabled**
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `ds.user.unique.attribute`
-    
-    </td>
-    <td valign="top">
-    
-    This property appears by default when the system is created, and its value is set to *userName*.
-
-    It defines by which unique attribute\(s\) an existing user to be resolved in the event of conflicting users.
-
-    Other possible values:
-
-    -   **emails\[0\].value**
-    -   **userName,emails\[0\].value**
-    -   **externalId**, or another SCIM attribute, or a conjunction of SCIM attributes
-
-    > ### Note:  
-    > If this property is missing, or you've deleted it, and the service does not find such a *userName*, it will try again to resolve the conflicting user – by *email*. If the second attempt for resolution is unsuccessful too, the creation of the conflicting user fails.
-
-    For more information, see: [List of Properties](list-of-properties-d6f3577.md)
     
     </td>
     </tr>

@@ -34,7 +34,7 @@ Customers that have subsidiaries can reuse existing Identity Authentication tena
 
 3.  Under *General*, choose the *Tenant Settings and Information* list item.
 
-4.  From the drop-down under the *Additional Settings*, choose the customer or customers that will reuse the configurations of the tenant you are in now.
+4.  From the drop-down under the *Additional Settings*, choose the customer or customers that will reuse the tenant you are in now for configurations and automated subscriptions.
 
     The *Customer records* drop-down contains only the customer ID numbers that are assigned to the global ultimate \(the most important company within the corporate family\).
 

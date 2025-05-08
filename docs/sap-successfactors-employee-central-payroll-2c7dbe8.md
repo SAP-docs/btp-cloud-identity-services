@@ -277,34 +277,6 @@ This scenario supports provisioning users and groups.
     
     </td>
     </tr>
-    <tr>
-    <td valign="top">
-    
-    \(Optional\) `ecp.user.unique.attribute`
-    
-    </td>
-    <td valign="top">
-    
-    If Identity Provisioning tries to provision a user that already exists in the target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved.
-
-    Possible values: *userName* \(default value\)
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    \(Optional\) `ecp.group.unique.attribute`
-    
-    </td>
-    <td valign="top">
-    
-    If the Identity Provisioning tries to create a group that already exists in the target system \(a conflicting group\), this property defines the unique attributes by which the existing group will be searched and resolved.
-
-    Possible values: *displayName* \(default value\)
-    
-    </td>
-    </tr>
     </table>
     
     To learn what additional properties are relevant to this system, see [List of Properties](list-of-properties-d6f3577.md). You can use the main search, or filter properties by the *Name* or *System Type* columns.

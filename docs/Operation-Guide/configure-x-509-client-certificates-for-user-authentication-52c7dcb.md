@@ -104,9 +104,17 @@ To configure a trusted X.509 certificate, proceed as follows:
     
 7.  Choose one of the following source options:
 
-    -   *Distinguished Name* - If selected *Distinguished Name* as source, the pattern must match the *Subject DN* of the user certificate. The *CN* attribute from the *DN Pattern* must be in the format `CN=${<logonIdentifier>}` and must completely map to one of the supported logon identifiers, `loginName`, `uid`, and `mail`.
+    -   *Distinguished Name* - If selected *Distinguished Name* as source, the pattern must match the *Subject DN* of the user certificate. The *CN* attribute from the *DN Pattern* can take the following formats:
+        -   `CN=${<logonIdentifier>}`. In this case the CN must completely map to one of the supported logon identifiers, `loginName`, `uid`, and `mail`.
 
-        For example: CN=$\{loginName\},O=Management,C=US.
+            > ### Example:  
+            > CN=$\{loginName\},O=Management,C=US.
+
+        -   `CN=${mail:<user_email>}`. This case allows you to specify a unique DN pattern for single user authentication.
+
+            > ### Example:  
+            > CN=$\{mail:dona.moore@example.com\},O=Management,C=US.
+
 
     -   *Subject Alternative Name - Other Name* - If selected *Subject Alternative Name - Other Name*, the pattern must match the `subjectAltName` extension entry of type `otherName` \(Microsoft User Principal Name form\) of the user certificate. The pattern for SAN value must be in format `${<logonIdentifier>}` and must completely map to one of the supported logon identifiers, `loginName`, `uid`, and `mail`.
     -   *Subject Alternative Name - Email \(RFC822 Name\)* - If selected *Subject Alternative Name - Email \(RFC822 Name\)*, the pattern must match the `subjectAltName` extension entry of type `rfc822Name` of the user certificate. The pattern for SAN value must be in format `${mail}`.

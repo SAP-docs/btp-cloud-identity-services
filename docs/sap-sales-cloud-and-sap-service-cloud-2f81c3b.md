@@ -35,6 +35,14 @@ You can use Identity Provisioning to configure SAP Sales Cloud and SAP Service C
 
 In this scenario Identity Provisioning acts as a proxy between SAP Sales Cloud and SAP Service Cloud and the on-premise or cloud system. Identity Provisioning exposes SAP Sales Cloud and SAP Service Cloud as a proxy system and connects it to the identity management system without making a direct connection between both systems. You can then provision users to the identity management system, which can trigger CRUD \(create, read, update, delete\) operations on users back to the SAP Sales Cloud and SAP Service Cloud.
 
+The cloud-based solution provides different APIs for integration with Identity Provisioning, leading to different connector versions for each API. Currently, the following connector versions are available: Version 1 \(SOAP-based API\), which is deprecated, Version 2 \(SOAP-based API\), Version 3 \(SCIM 2.0 based API\) and Version 4 \(SCIM 2.0 based API\), which is applicable for SAP Sales Cloud Version 2 and SAP Service Cloud Version 2 only.
+
+Each connector version supports specific attribute mappings in transformations and requires particular properties. The latest version is set as the default.
+
+**Version 4 \(Applicable for SAP Sales Cloud Version 2 and SAP Service Cloud Version 2 only\)**
+
+When using connector version 4 \(SCIM 2.0 based API\), only users of type Employee are provisioned. This version introduces an enhanced SCIM API that no longer requires SAP Cloud Integration. It supports patch operations and provisioning of application-specific groups. In addition to pagination using `startIndex` and `count`, cursor-based pagination is also supported.
+
 
 
 <a name="loio2f81c3ba04a741949d6b145440df1d1d__steps_wkk_14r_h4b"/>
@@ -167,7 +175,32 @@ In this scenario Identity Provisioning acts as a proxy between SAP Sales Cloud a
     </td>
     <td valign="top">
     
-    Enter: *BasicAuthentication*
+    Enter your authentication method:
+
+    -   *BasicAuthentication*
+
+    -   *ClientCertificateAuthentication*
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `OAuth2TokenServiceURL`
+    
+    </td>
+    <td valign="top">
+    
+    Enter the URL to the access token provider service.
+
+    For example: `https://<c4c_instance>/auth/token`
+
+    SAP Sales Cloud and SAP Service Cloud support OAuth token-based authentication, enabling you to obtain an access token using either basic authentication \(by setting User and Password\) or certificate authentication.
+
+    **Relevant for connector version 4**
     
     </td>
     </tr>
@@ -186,7 +219,7 @@ In this scenario Identity Provisioning acts as a proxy between SAP Sales Cloud a
     -   [Basic Authentication of IdP User for Integration Flow Processing \(Cloud Foundry environment\)](https://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/5d46e56550a048e99995f23e1e20083a.html)
 
 
-
+    **Relevant for connector version 3**
     
     </td>
     </tr>
@@ -205,7 +238,7 @@ In this scenario Identity Provisioning acts as a proxy between SAP Sales Cloud a
     -   [Basic Authentication of IdP User for Integration Flow Processing \(Cloud Foundry environment\)](https://help.sap.com/docs/CLOUD_INTEGRATION/368c481cd6954bdfa5d0435479fd4eaf/5d46e56550a048e99995f23e1e20083a.html)
 
 
-
+    **Relevant for connector version 3**
     
     </td>
     </tr>
@@ -217,7 +250,9 @@ In this scenario Identity Provisioning acts as a proxy between SAP Sales Cloud a
     </td>
     <td valign="top">
     
-    The version of the SAP Sales Cloud and SAP Service Cloud API you use. By default, the Identity Provisioning service uses version **3** - the SCIM 2.0 based API.
+    The version of the SAP Sales Cloud and SAP Service Cloud API you use.
+
+    By default, the Identity Provisioning service uses version **4** - the SCIM 2.0 based API.
     
     </td>
     </tr>
@@ -231,7 +266,16 @@ In this scenario Identity Provisioning acts as a proxy between SAP Sales Cloud a
     
     When specified, only those C4C users matching the filter expression will be read.
 
-    For example:
+    Supported user filters in connector version 4:
+
+    -   userName eq "Smith"
+
+    -   userName sw "Sm"
+
+    -   userName eq "Smith" and emails.value eq "smith@example.com"
+
+
+    Supported user filters in connector version 3:
 
     -   userName eq "Smith"
 
@@ -275,14 +319,14 @@ In this scenario Identity Provisioning acts as a proxy between SAP Sales Cloud a
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    Default read and write transformations:
-
     > ### Tip:  
     > The proxy *Read Transformation* is used when the external client application \(for example, SAP Identity Management\) makes initial load. That is, executing GET requests to the resource endpoints \(**/Users** or **/Groups**\) to retrieve the corresponding entities of the particular type. The external client application can also execute GET requests to a single resource endpoint \(querying a single resource is supported\). In this case, the proxy system acts as a *source* one.
     > 
     > The proxy *Write Transformation* is used when the external application manages the entities in the proxy system – creates new entities, updates existing ones, or deletes existing ones. In this case, the proxy system acts as a *target* one.
     > 
     > However, after a *Create* or *Update* operation is performed on the proxy system, the *Read Transformation* is applied to the result, so that the created or updated entity is sent back to the external application. This behavior demonstrates that the proxy *Read Transformation* is used for *write* cases, as well.
+
+    **Default transformation for connector version 3**
 
 
     <table>
@@ -569,6 +613,378 @@ In this scenario Identity Provisioning acts as a proxy between SAP Sales Cloud a
     >         "sourcePath": "$.schemas",
     >         "targetPath": "$.schemas",
     >         "preserveArrayWithSingleElement": true
+    >       }
+    >     ],
+    >     "scimEntityEndpoint": "Groups"
+    >   }
+    > }
+    > ```
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
+    **Default transformation for connector version 4**
+
+    *\(Applicable for SAP Sales Cloud Version 2 and SAP Service Cloud Version 2 only\)*
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Read Transformation
+    
+    </th>
+    <th valign="top">
+
+    Write Transformation
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    > ### Code Syntax:  
+    > ```
+    > {
+    >   "user": {
+    >     "mappings": [
+    >       {
+    >         "sourcePath": "$.id",
+    >         "targetPath": "$.id",
+    >         "targetVariable": "entityIdSourceSystem"
+    >       },
+    >       {
+    >         "sourcePath": "$.schemas",
+    >         "preserveArrayWithSingleElement": true,
+    >         "targetPath": "$.schemas"
+    >       },
+    >       {
+    >         "sourcePath": "$.userName",
+    >         "targetPath": "$.userName",
+    >         "correlationAttribute": true
+    >       },
+    >       {
+    >         "sourcePath": "$.emails[?(@.primary == true)].value",
+    >         "optional": true,
+    >         "correlationAttribute": true
+    >       },
+    >       {
+    >         "sourcePath": "$.emails[0].value",
+    >         "targetPath": "$.emails[0].value",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.emails",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true,
+    >         "targetPath": "$.emails"
+    >       },
+    >       {
+    >         "sourcePath": "$.userType",
+    >         "targetPath": "$.userType"
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "optional": true,
+    >         "targetPath": "$.displayName"
+    >       },
+    >       {
+    >         "sourcePath": "$.externalId",
+    >         "optional": true,
+    >         "targetPath": "$.externalId"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.givenName",
+    >         "optional": true,
+    >         "targetPath": "$.name.givenName"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.middleName",
+    >         "optional": true,
+    >         "targetPath": "$.name.middleName"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.familyName",
+    >         "optional": true,
+    >         "targetPath": "$.name.familyName"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.formatted",
+    >         "optional": true,
+    >         "targetPath": "$.name.formatted"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validFrom']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validFrom']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validTo']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validTo']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['status']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['status']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']"
+    >       },
+    >       {
+    >         "sourcePath": "$.locale",
+    >         "optional": true,
+    >         "targetPath": "$.locale"
+    >       },
+    >       {
+    >         "sourcePath": "$.timezone",
+    >         "optional": true,
+    >         "targetPath": "$.timezone"
+    >       },
+    >       {
+    >         "sourcePath": "$.active",
+    >         "optional": true,
+    >         "targetPath": "$.active"
+    >       },
+    >       {
+    >         "sourcePath": "$.groups",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true,
+    >         "targetPath": "$.groups"
+    >       },
+    >       {
+    >         "sourcePath": "$.meta",
+    >         "targetPath": "$.meta",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourceVariable": "entityBaseLocation",
+    >         "targetPath": "$.meta.location",
+    >         "targetVariable": "entityLocationSourceSystem",
+    >         "functions": [
+    >           {
+    >             "type": "concatString",
+    >             "suffix": "${entityIdSourceSystem}"
+    >           }
+    >         ]
+    >       }
+    >     ],
+    >     "scimEntityEndpoint": "Users"
+    >   },
+    >   "group": {
+    >     "mappings": [
+    >       {
+    >         "sourcePath": "$.id",
+    >         "targetPath": "$.id",
+    >         "targetVariable": "entityIdSourceSystem"
+    >       },
+    >       {
+    >         "sourcePath": "$.schemas",
+    >         "preserveArrayWithSingleElement": true,
+    >         "targetPath": "$.schemas"
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$.displayName"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
+    >       },
+    >       {
+    >         "sourcePath": "$.members",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true,
+    >         "targetPath": "$.members"
+    >       },
+    >       {
+    >         "sourcePath": "$.meta",
+    >         "targetPath": "$.meta",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourceVariable": "entityBaseLocation",
+    >         "targetPath": "$.meta.location",
+    >         "targetVariable": "entityLocationSourceSystem",
+    >         "functions": [
+    >           {
+    >             "type": "concatString",
+    >             "suffix": "${entityIdSourceSystem}"
+    >           }
+    >         ]
+    >       }
+    >     ],
+    >     "scimEntityEndpoint": "Groups"
+    >   }
+    > }
+    > ```
+
+
+    
+    </td>
+    <td valign="top">
+    
+    > ### Code Syntax:  
+    > ```
+    > {
+    >   "user": {
+    >     "mappings": [
+    >       {
+    >         "sourceVariable": "entityIdTargetSystem",
+    >         "targetPath": "$.id"
+    >       },
+    >       {
+    >         "constant": [
+    >           "urn:ietf:params:scim:schemas:core:2.0:User",
+    >           "urn:ietf:params:scim:schemas:extension:sap:2.0:User",
+    >           "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+    >         ],
+    >         "targetPath": "$.schemas"
+    >       },
+    >       {
+    >         "sourcePath": "$.userName",
+    >         "targetPath": "$.userName"
+    >       },
+    >       {
+    >         "sourcePath": "$.emails",
+    >         "preserveArrayWithSingleElement": true,
+    >         "targetPath": "$.emails"
+    >       },
+    >       {
+    >         "sourcePath": "$.active",
+    >         "optional": true,
+    >         "targetPath": "$.active"
+    >       },
+    >       {
+    >         "sourcePath": "$.userType",
+    >         "targetPath": "$.userType"
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "optional": true,
+    >         "targetPath": "$.displayName"
+    >       },
+    >       {
+    >         "sourcePath": "$.externalId",
+    >         "optional": true,
+    >         "targetPath": "$.externalId"
+    >       },
+    >       {
+    >         "sourcePath": "$.name",
+    >         "optional": true,
+    >         "targetPath": "$.name"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validFrom']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validFrom']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validTo']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validTo']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['status']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['status']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']"
+    >       },
+    >       {
+    >         "sourcePath": "$.locale",
+    >         "optional": true,
+    >         "targetPath": "$.locale"
+    >       },
+    >       {
+    >         "sourcePath": "$.timezone",
+    >         "optional": true,
+    >         "targetPath": "$.timezone"
+    >       },
+    >       {
+    >         "constant": "urn:ietf:params:scim:api:messages:2.0:PatchOp",
+    >         "targetPath": "$.schemas[0]",
+    >         "scope": "patchEntity"
+    >       },
+    >       {
+    >         "sourcePath": "$.Operations",
+    >         "preserveArrayWithSingleElement": true,
+    >         "targetPath": "$.Operations",
+    >         "scope": "patchEntity"
+    >       }
+    >     ],
+    >     "scimEntityEndpoint": "Users"
+    >   },
+    >   "group": {
+    >     "mappings": [
+    >       {
+    >         "sourceVariable": "entityIdTargetSystem",
+    >         "targetPath": "$.id"
+    >       },
+    >       {
+    >         "constant": [
+    >           "urn:ietf:params:scim:schemas:core:2.0:Group",
+    >           "urn:ietf:params:scim:schemas:extension:sap:2.0:Group"
+    >         ],
+    >         "targetPath": "$.schemas"
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$.displayName"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
+    >         "optional": true,
+    >         "targetPath": "$.displayName"
+    >       },
+    >       {
+    >         "sourcePath": "$.members[*].value",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true,
+    >         "targetPath": "$.members[?(@.value)]",
+    >         "functions": [
+    >           {
+    >             "function": "resolveEntityIds"
+    >           }
+    >         ]
+    >       },
+    >       {
+    >         "sourcePath": "$.Operations",
+    >         "preserveArrayWithSingleElement": true,
+    >         "targetPath": "$.Operations",
+    >         "scope": "patchEntity"
+    >       },
+    >       {
+    >         "sourcePath": "$.schemas",
+    >         "preserveArrayWithSingleElement": true,
+    >         "targetPath": "$.schemas",
+    >         "scope": "patchEntity"
     >       }
     >     ],
     >     "scimEntityEndpoint": "Groups"

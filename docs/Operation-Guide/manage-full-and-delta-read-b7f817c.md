@@ -106,7 +106,7 @@ You can switch to full read, if you set up the relevant property: `ips.delta.rea
 *Identity Authentication* 
 
 </td>
-<td valign="top" rowspan="14">
+<td valign="top" rowspan="15">
 
 Default mode: *Full read*
 
@@ -165,6 +165,13 @@ For delta read of resources \(users and groups\), bear in mind the following API
 <td valign="top">
 
 *SAP SuccessFactors Employee Central Payroll* 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+*SAP Sales Cloud and SAP Service Cloud* 
 
 </td>
 </tr>

@@ -116,22 +116,59 @@ However, after a *Create* or *Update* operation is performed on the proxy system
 > ### Example:  
 > **Conditions in Proxy Scenarios**
 > 
-> Using conditions is supported for both - proxy *Read Transformation* and proxy *Write Transformation*. However, when conditions are applied to users or groups in proxy *Read Transformation*, the number of returned resources may be “0” or less than the actual number of read entities. This is because some of the entities are filtered out as they don’t match the applied condition.
-> 
-> In the example below, the returned resources are "0" because all 5 users \(items\) returned per page are filtered out as they don't match a condition.
+> When conditions are applied to users or groups in the proxy *Read Transformation*, the number of returned resources may be “0” or less than the actual number of read entities. This is because some of the entities are filtered out as they don’t match the applied condition. In this example, the returned resources are "0" because all 5 users \(items\) returned per page are filtered out.
 > 
 > ```
-> SCIM proxy client request: GET /Users?startIndex=6&count=5
-> SCIM proxy application response:
+> Request: GET /Users?startIndex=6&count=5
+> Response:
 > {
 >   "startIndex": 6,
 >   "itemsPerPage": 5,
->   "totalResults": 11,
+>   "totalResults": 10,
 >   "Resources": [],
 >   "schemas": ["urn:ietf:params:scim:api:messages:2.0:ListResponse"]
 > }
 > 
 > ```
+
+> ### Example:  
+> **totalResults in Source and Proxy Scenarios**
+> 
+> When reading entities from source or proxy systems, the value of `totalResults` in the response depends on whether the system API supports this parameter and whether conditions are applied to the query.
+> 
+> -   When the system API supports `totalResults` and no conditions are applied, the `totalResults` value is the total number of entities returned by the system API, regardless of the pagination parameters `startIndex` and `count`.
+> 
+>     Example: There are 1000 users in the proxy system.
+> 
+>     ```
+>     Request: GET /Users?startIndex=6&count=5
+>     Response:
+>     {
+>       "startIndex": 6,
+>       "itemsPerPage": 5,
+>       "totalResults": 1000,
+>       "Resources": [/* List of user objects for users 6 through 10 */],
+>       "schemas": ["urn:ietf:params:scim:api:messages:2.0:ListResponse"]
+>     }
+>     
+>     ```
+> 
+> -   When the system API does not support `totalResults` or, regardless of its support, conditions are applied to the query, `totalResults` does not reflect the total number of entities in the system. Instead, Identity Provisioning calculates `totalResults` as the sum of `startIndex` plus `count`, minus one.
+> 
+>     Example: There are 1000 users in the source system, and only 3 users match the condition.
+> 
+>     ```
+>     Request: GET /Users?startIndex=6&count=5
+>     Response:
+>     {
+>       "startIndex": 6,
+>       "itemsPerPage": 5,
+>       "totalResults": 10,
+>       "Resources": [/* List of the 3 matched user objects */],
+>       "schemas": ["urn:ietf:params:scim:api:messages:2.0:ListResponse"]
+>     }
+>     
+>     ```
 
 
 

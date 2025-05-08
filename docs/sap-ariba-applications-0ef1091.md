@@ -22,11 +22,7 @@ Follow this procedure to set up SAP Ariba Applications as a source system.
     -   *SAP Ariba Buyer* example: `https://s1.ariba.com/Buyer/Main/ad/loginPage/...&realm=`*mycompany-t*
     -   *SAP Ariba Sourcing* example: `http://`*mycompany*`.sourcing.ariba.com/`
 
--   Ask your DSC person to submit a service request for you to *SAP Ariba Support* for component **BNS-ARI-SS-API**, requesting the client application to be enabled for Identity Provisioning. Request your DSC person to mention the following details in the service request:
-    -   Application name
-    -   Application key
-    -   Realm name
-
+-   You have enabled the client application for Identity Provisioning in the SAP Ariba Developer Portal.
 -   When your application is enabled, you can login to [SAP Ariba APIs Portal](https://developer.ariba.com/api), find your application, and generate a new OAuth secret for it. To learn how, see: [How to generate the OAuth Secret and Base64 Encoded Client and secret](https://help.sap.com/viewer/b61dd8c7e22c4fe489f191f66b4c48d6/cloud/en-US/81f493759bbb42e5b7486bfdf8185fa3.html)
 -   To configure your *SAP Ariba Applications* provisioning system \(see the procedure below\), you will need to map your SAP Ariba application parameters to the relevant Identity Provisioning properties. The property mapping between the two systems is as follows:
 

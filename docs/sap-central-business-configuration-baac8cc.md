@@ -192,10 +192,9 @@ Create a CBC target system to provision users and group members to it.
 
     > ### Code Syntax:  
     > ```
-    > 
     > {
     >     "group": {
-    >         "condition": "('%cbc.group.prefix%' === 'null') || ($.displayName =~ /%cbc.group.prefix%.*/)",
+    >         "condition": "isAttributeWithOptionalPrefix($.displayName, cbc.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], cbc.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >         "mappings": [
     >             {
     >                 "targetPath": "$.id",
@@ -210,7 +209,7 @@ Create a CBC target system to provision users and group members to it.
     >                 "targetPath": "$.displayName",
     >                 "functions": [
     >                     {
-    >                         "condition": "('%cbc.group.prefix%' !== 'null') && (@ =~ /%cbc.group.prefix%.*/)",
+    >                         "condition": "isAttributeWithMandatoryPrefix(@, cbc.group.prefix)",
     >                         "function": "replaceFirstString",
     >                         "regex": "%cbc.group.prefix%",
     >                         "replacement": ""
@@ -231,6 +230,7 @@ Create a CBC target system to provision users and group members to it.
     >         ]
     >     },
     >     "user": {
+    >     "condition": "('%cbc.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%cbc.group.prefix%.*/)] empty false)",
     >         "mappings": [
     >             {
     >                 "targetPath": "$.id",
@@ -272,13 +272,12 @@ Create a CBC target system to provision users and group members to it.
     >             },
     >             {
     >                 "sourcePath": "$.userType",
-    > 				"optional": true,
+    >                 "optional": true,
     >                 "targetPath": "$.userType"
     >             }
     >         ]
     >     }
     > }
-    > 
     > ```
 
 6.  Now, add a source system from which to read users and groups. Choose from: [Source Systems](source-systems-58033be.md)

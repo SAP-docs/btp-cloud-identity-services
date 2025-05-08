@@ -195,8 +195,8 @@ You can
 
 -   View the group details and group members.
 -   Modify and delete the group.
--   Add new group members
--   Remove the group members.
+-   Add new entities - users, and groups, as group members.
+-   Remove entities - users, and groups, from the group members.
 
 
 
@@ -216,8 +216,8 @@ You can
 <td valign="top">
 
 -   View the group details and group members.
--   Add new group members.
--   Remove the group members.
+-   Add new entities - users, as group members.
+-   Remove the users from group members.
 -   Modify and delete the group.
 
 
@@ -232,15 +232,15 @@ You can
 </td>
 <td valign="top">
 
-*Membership*
+*Membership Only*
 
 </td>
 <td valign="top">
 
 -   View the group details and group members.
--   Add new entities, users, and groups, as group members.
--   Remove entities, users, and groups, from the group members.
 -   Modify and delete the group.
+-   Add new entities - users, and groups, as group members.
+-   Remove entities - users, and groups, from the group members.
 
 
 

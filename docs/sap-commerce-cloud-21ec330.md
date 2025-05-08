@@ -254,7 +254,7 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a target sy
     > ```
     > {
     >     "user": {
-    >         "condition": "$.userName EMPTY false",
+    >         "condition": "$.userName EMPTY false && (('%cc.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%cc.group.prefix%.*/)] empty false))",
     >         "mappings": [
     >             {
     >                 "sourceVariable": "entityIdTargetSystem",
@@ -363,6 +363,7 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a target sy
     >         ]
     >     },
     >     "group": {
+    >          "condition": "isAttributeWithOptionalPrefix($.displayName, cc.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], cc.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >          "mappings": [
     >             {
     >                 "sourceVariable": "entityIdTargetSystem",
@@ -374,12 +375,28 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a target sy
     >             },
     >             {
     >                 "sourcePath": "$.displayName",
-    >                 "targetPath": "$.displayName"
+    >                 "targetPath": "$.displayName",
+    >                 "functions": [
+    > 					{
+    > 						"condition": "isAttributeWithMandatoryPrefix(@, cc.group.prefix)",
+    > 						"function": "replaceFirstString",
+    > 						"regex": "%cc.group.prefix%",
+    > 						"replacement": ""
+    > 					}
+    > 				]
     >             },
     >             {
     >                 "condition": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'] EMPTY false",
     >                 "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
-    >                 "targetPath": "$.displayName"
+    >                 "targetPath": "$.displayName",
+    >                 "functions": [
+    > 					{
+    > 						"condition": "isAttributeWithMandatoryPrefix(@, cc.group.prefix)",
+    > 						"function": "replaceFirstString",
+    > 						"regex": "%cc.group.prefix%",
+    > 						"replacement": ""
+    > 					}
+    > 				]
     >             },
     >             {
     >                 "sourcePath": "$.members[*].value",

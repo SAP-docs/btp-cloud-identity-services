@@ -687,7 +687,7 @@ Identity Directory Service API \(Successor\)
 </td>
 <td valign="top">
 
-``
+`termsOfUse`
 
 </td>
 </tr>
@@ -699,7 +699,7 @@ Identity Directory Service API \(Successor\)
 </td>
 <td valign="top">
 
-``
+`privacyPolicy`
 
 </td>
 </tr>

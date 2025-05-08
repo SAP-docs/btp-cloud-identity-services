@@ -353,7 +353,6 @@ You can use the Identity Provisioning UI to configure SAP Build Work Zone, stand
 
     > ### Code Syntax:  
     > ```
-    > 
     > {
     >     "user": {
     >         "mappings": [
@@ -362,8 +361,12 @@ You can use the Identity Provisioning UI to configure SAP Build Work Zone, stand
     >                 "targetPath": "$.id"
     >             },
     >             {
-    >                 "constant": "urn:ietf:params:scim:schemas:core:2.0:User",
-    >                 "targetPath": "$.schemas[0]"
+    >                 "constant": [
+    >                     "urn:ietf:params:scim:schemas:core:2.0:User",
+    >                     "urn:ietf:params:scim:schemas:extension:sap:2.0:User",
+    >                     "urn:ietf:params:scim:schemas:extension:2.0:mapping"
+    >                 ],
+    >                 "targetPath": "$.schemas"
     >             },
     >             {
     >                 "constant": "%cflp.providerId%",
@@ -419,17 +422,15 @@ You can use the Identity Provisioning UI to configure SAP Build Work Zone, stand
     >                 "targetPath": "$.id"
     >             },
     >             {
+    >             	"constant": [
+    >                     "urn:ietf:params:scim:schemas:core:2.0:Group",
+    >                     "urn:ietf:params:scim:schemas:extension:2.0:mapping"
+    >                 ],
+    >                 "targetPath": "$.schemas"
+    >             },
+    >             {
     >                 "constant": "%cflp.providerId%",
     >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:2.0:mapping']['providerId']"
-    >             },
-    >             {
-    >                 "constant": "urn:ietf:params:scim:schemas:core:2.0:Group",
-    >                 "targetPath": "$.schemas[0]"
-    >             },
-    >             {
-    >                 "constant": "urn:ietf:params:scim:schemas:core:2.0:mapping",
-    >                 "optional": true,
-    >                 "targetPath": "$.schemas[1]"
     >             },
     >             {
     >                 "sourcePath": "$.displayName",
