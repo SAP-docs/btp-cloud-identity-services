@@ -117,6 +117,10 @@ To configure a trusted X.509 certificate, proceed as follows:
 
 
     -   *Subject Alternative Name - Other Name* - If selected *Subject Alternative Name - Other Name*, the pattern must match the `subjectAltName` extension entry of type `otherName` \(Microsoft User Principal Name form\) of the user certificate. The pattern for SAN value must be in format `${<logonIdentifier>}` and must completely map to one of the supported logon identifiers, `loginName`, `uid`, and `mail`.
+
+        > ### Example:  
+        > `${loginName}`
+
     -   *Subject Alternative Name - Email \(RFC822 Name\)* - If selected *Subject Alternative Name - Email \(RFC822 Name\)*, the pattern must match the `subjectAltName` extension entry of type `rfc822Name` of the user certificate. The pattern for SAN value must be in format `${mail}`.
 
     Two configurations with different source options in one Identity Authentication tenant are not supported.

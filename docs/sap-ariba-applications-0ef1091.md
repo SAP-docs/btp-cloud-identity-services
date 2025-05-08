@@ -13,18 +13,23 @@ Follow this procedure to set up SAP Ariba Applications as a source system.
 > ### Restriction:  
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.
 
--   You have created a client application on [SAP Ariba APIs Portal](https://developer.ariba.com/api) that needs to be enabled for Identity Provisioning.
+-   You have created a client application on [SAP Ariba APIs Portal](https://developer.ariba.com/api/) for your integration with Identity Provisioning. This is needed to enable SCIM API for user and group for Ariba Applications. For more information, see [Register an Application in SAP Ariba Developer Portal](https://help.sap.com/docs/btp/sap-btp-neo-environment/register-application-in-sap-ariba-developer-portal?version=Cloud) .
 
     > ### Note:  
-    > If you don’t have an account on SAP Ariba Developer Portal, then ask your **Designated Support Contact** \(DSC\) to submit a [request for an account](https://help.sap.com/viewer/ea72206b834e4ace9cd834feed6c0e09/Cloud/en-US/f7dbeb26531140e7bab57170a24e3701.html). To find your DSC person, see: [How can I see my company's Basic users and Designated Support Contacts \(DSC\)](https://support.ariba.com/item/view/184249)
+    > If you don’t have an SAP Ariba APIs account, go to the SAP Ariba Developer Portal and follow the instructions for sign up. For more information, see [Get an SAP Ariba APIs Account](https://help.sap.com/docs/btp/sap-btp-neo-environment/get-sap-ariba-apis-account?version=Cloud).
 
--   Provide your DSC person with your SAP Ariba **realm name**, **application name**, and **application key**. You have already created the application name along with the application key on *step 1*. To find your realm name, login to your SAP Ariba system – it's part of your login URL, as shown in the following examples.
-    -   *SAP Ariba Buyer* example: `https://s1.ariba.com/Buyer/Main/ad/loginPage/...&realm=`*mycompany-t*
-    -   *SAP Ariba Sourcing* example: `http://`*mycompany*`.sourcing.ariba.com/`
+    To find your *realm* name, log in to your SAP Ariba system. It is embedded in your login URL, as illustrated by the following examples:
 
--   You have enabled the client application for Identity Provisioning in the SAP Ariba Developer Portal.
--   When your application is enabled, you can login to [SAP Ariba APIs Portal](https://developer.ariba.com/api), find your application, and generate a new OAuth secret for it. To learn how, see: [How to generate the OAuth Secret and Base64 Encoded Client and secret](https://help.sap.com/viewer/b61dd8c7e22c4fe489f191f66b4c48d6/cloud/en-US/81f493759bbb42e5b7486bfdf8185fa3.html)
--   To configure your *SAP Ariba Applications* provisioning system \(see the procedure below\), you will need to map your SAP Ariba application parameters to the relevant Identity Provisioning properties. The property mapping between the two systems is as follows:
+    -   SAP Ariba Buyer example: <code>https://s1.ariba.com/Buyer/Main/ad/loginPage/...&amp;realm=<i>mycompany-t</i></code>
+
+    -   SAP Ariba Sourcing example: <code>http://<i>mycompany</i>.sourcing.ariba.com/</code>
+
+
+-   You have enabled the client application for Identity Provisioning on the SAP Ariba Developer Portal.
+
+-   You have generated an OAuth secret for your application. For more information, see [Generating the OAuth Secret and Base64 Encoded Client ID and Secret](https://help.sap.com/docs/ariba-apis/help-for-sap-ariba-developer-portal/generating-oauth-secret-and-base64-encoded-client-id-and-secret).
+
+    To set up your SAP Ariba Applications provisioning system, you'll need to map your SAP Ariba application parameters to the corresponding Identity Provisioning properties. The mapping is as follows:
 
 
     <table>
