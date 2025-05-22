@@ -2,7 +2,7 @@
 
 # Manage Job Notifications
 
-You can subscribe to a source system to receive notification e-mails. They provide information about the job execution and links to download job logs, in case of created, updated, failed, or skipped entities.
+You can subscribe to a source system to receive notification e-mails. They provide information about the job execution and links to download job logs, in case of created, updated, failed, skipped, or deleted entities.
 
 
 
@@ -42,10 +42,10 @@ When you subscribe to a source system, you can receive notification e-mails in t
 
 The notification e-mail tells you which are the source and the target systems, what is the job type, its start time and status. It contains the `Navigate to details` link that opens the *Job Execution Details* screen in the Identity Provisioning UI.
 
-In case your job finished with created, updated, failed, or skipped entities, links to `Download created entities logs`, `Download updated entities logs`, `Download error logs` and `Download skipped entities logs` are provided, respectively. The content of the downloaded log files depends on your configuration of the `ips.trace.created.entity`, `ips.trace.created.entity.content`, `ips.trace.updated.entity`, `ips.trace.updated.entity.content`, `ips.trace.skipped.entity`, , `ips.trace.skipped.entity.content` and `ips.trace.failed.entity.content` properties. For more information, see: [List of Properties](../list-of-properties-d6f3577.md)
+In case your job finished with created, updated, failed, skipped, or deleted entities, links to `Download created entities logs`, `Download updated entities logs`, `Download error logs`, `Download skipped entities logs`, and `Download deleted entities logs` are provided, respectively. The content of the downloaded log files depends on your configuration of the `ips.trace.created.entity`, `ips.trace.created.entity.content`, `ips.trace.updated.entity`, `ips.trace.updated.entity.content`, `ips.trace.skipped.entity`, `ips.trace.skipped.entity.content`, `ips.trace.failed.entity.content`, and `ips.trace.deleted.entity` properties. For more information, see: [List of Properties](../list-of-properties-d6f3577.md)
 
 > ### Note:  
-> Sending navigation links to the download page of created, updated, failed, and skipped entities is supported for tenants running on SAP Cloud Identity Services infrastructure.
+> Sending navigation links to the download page of created, updated, failed, skipped, and deleted entities is supported for tenants running on SAP Cloud Identity Services infrastructure.
 
 > ### Note:  
 > If you subscribe to a source system, and then run a successful provisioning job, no notification e-mails will be sent.

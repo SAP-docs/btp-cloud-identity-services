@@ -383,6 +383,11 @@ You can use Identity Provisioning to configure SAP Enable Now as a proxy system 
     >                 "optional": true
     >             },
     >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "optional": true
+    >             },
+    >             {
     >                 "sourcePath": "$.members",
     >                 "targetPath": "$.members",
     >                 "preserveArrayWithSingleElement": true,

@@ -125,20 +125,6 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP HAN
     <tr>
     <td valign="top">
     
-    `hana.cloud.db.authenticationType`
-    
-    </td>
-    <td valign="top">
-    
-    Specifies the method by which users authenticate when connecting to the database.
-
-    The value is set to *hdb* at system creation.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     `hana.cloud.db.instance.type`
     
     </td>
@@ -146,7 +132,7 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP HAN
     
     Refers to the type of instance being configured or used within the SAP HANA Cloud.
 
-    Enter: `hdb`
+    Enter: *hdb*
     
     </td>
     </tr>
@@ -170,7 +156,25 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP HAN
     </td>
     <td valign="top">
     
-    Specifies the identity provider \(IdP\) that is responsible for handling authentication requests.
+    Specifies the identity provider \(IdP\) that users managed through Identity Provisioning will use for authentication.
+
+    The provider must be configured to support the authentication method specified in `hana.cloud.db.authenticationType`.
+
+    For more information on how to obtain the value, refer to the create a JWT provider step in the [User Provisioning with Identity Provisioning Service](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-administration-guide/user-provisioning-with-identity-provisioning-service?version=2025_1_QRC).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `hana.cloud.db.authenticationType`
+    
+    </td>
+    <td valign="top">
+    
+    Specifies the method by which users managed through Identity Provisioning authenticate when connecting to the database.
+
+    The authentication method is set to *JWT* \(users authenticate via JWT tokens issued by an identity provider\) during system creation.
     
     </td>
     </tr>
@@ -213,6 +217,8 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP HAN
     Enter the OAuth 2.0 Token Service URL.
 
     For example: `https://demo-hc-3-test.authentication.sap.hana.ondemand.com/oauth/token`
+
+    For more information on how to obtain the value, refer to the create a service binding step in the [User Provisioning with Identity Provisioning Service](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-administration-guide/user-provisioning-with-identity-provisioning-service?version=2025_1_QRC).
     
     </td>
     </tr>
@@ -225,6 +231,8 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP HAN
     <td valign="top">
     
     \(Credential\) Enter the OAuth Client Secret, created for your SAP HANA Database system.
+
+    For more information on how to obtain the value for the technical user, refer to the procedure in the [User Provisioning with Identity Provisioning Service](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-administration-guide/user-provisioning-with-identity-provisioning-service?version=2025_1_QRC).
     
     </td>
     </tr>
@@ -275,6 +283,8 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP HAN
     <td valign="top">
     
     Enter the OAuth Client Id, created for your SAP HANA Database system.
+
+    For more information on how to obtain the value for the technical user, refer to the procedure in the [User Provisioning with Identity Provisioning Service](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-administration-guide/user-provisioning-with-identity-provisioning-service?version=2025_1_QRC).
     
     </td>
     </tr>
@@ -429,6 +439,16 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP HAN
     >       {
     >         "sourcePath": "$.displayName",
     >         "targetPath": "$.displayName"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true
     >       },
     >       {
     >         "sourcePath": "$.members",

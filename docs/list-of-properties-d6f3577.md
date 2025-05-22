@@ -1587,8 +1587,6 @@ This property controls how modified users in the source system are updated in th
 
 -   If set to *true*, Identity Provisioning sends a `PATCH` request to the user or group resource in the target system. Only attributes without `"scope": "createEntity"` in the attribute mappings in the write transformation will be updated.
 
-    For example, if the last name of a user is changed in the source system, the patch operation will update it in the target system and will leave unchanged other attributes with explicitly set "scope": "createEntity".
-
 -   If set to *false*, `PUT` operations are used to update users in the target system. This means, for example, that if a user attribute is modified, all user attributes are replaced in the target system, instead of updating only the modified ones.
 
 
@@ -1627,7 +1625,7 @@ SAP Datasphere
 </td>
 <td valign="top">
 
-If you have enabled the SCIM bulk operations, you can use this property to set the number of users to be provisioned per request.
+This property sets the number of operations to be performed in one bulk request.
 
 **Possible values:**
 
@@ -2879,6 +2877,34 @@ All systems
 <tr>
 <td valign="top">
 
+`ips.trace.deleted.entity` 
+
+</td>
+<td valign="top">
+
+This property allows you to download and view the details of all deleted entities for a given job in a `zip` archive. For more information, see [Manage Provisioning Job Logs](Monitoring-and-Reporting/manage-provisioning-job-logs-041b5ff.md)
+
+**Possible values:**
+
+-   *true* - The downloaded `zip` file contains all deleted entities for the given job and the systems from which they are deleted.
+
+-   *false* - The downloaded `zip` file is empty.
+
+
+Default value: *false*
+
+**System Role:** Source
+
+</td>
+<td valign="top">
+
+All systems
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `ips.trace.created.entity` 
 
 </td>
@@ -3184,11 +3210,25 @@ When the property is set, the groups are provisioned with their *applicationId* 
 
 -   SAP Commerce Cloud
 
+-   SAP Fieldglass
+
+-   SAP Field Service Management
+
+-   SAP Integrated Business Planning for Supply Chain \(SCIM API version 2\)
+
 -   SAP Sales Cloud and SAP Service Cloud
 
 -   SAP S/4 HANA Cloud
 
 -   SAP Revenue Growth Management
+
+-   SAP Enable Now
+
+-   SAP Data Custodian
+
+-   SAP CPQ
+
+-   SAP HANA Cloud, SAP HANA Database
 
 
 
@@ -5979,6 +6019,158 @@ If you enter a number larger than 100, the service will replace it with the defa
 <td valign="top">
 
 SAP Integrated Business Planning for Supply Chain
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ibp.api.version`
+
+</td>
+<td valign="top">
+
+This property defines the API version which is consumed by the which is consumed by the SAP Integrated Business Planning for Supply Chain system.
+
+**Possible values:**
+
+-   *1* - SAP Integrated Business Planning API: Business User is used.
+-   *2* - SCIM Interface for IAM is used.
+
+By default, Identity Provisioning uses version *1*.
+
+**System Role:** Source, Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Integrated Business Planning for Supply Chain
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ibp.group.filter`
+
+</td>
+<td valign="top">
+
+When specified, only those SAP Integrated Business Planning for Supply Chain groups matching the filter expression will be read.
+
+**Possible values:**
+
+For example: *displayName eq "ProjectTeam1"*
+
+**System Role:** Source
+
+</td>
+<td valign="top">
+
+SAP Integrated Business Planning for Supply Chain \(SCIM API version 2\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ibp.group.prefix`
+
+</td>
+<td valign="top">
+
+This property distinguishes SAP Integrated Business Planning for Supply Chain groups by specific prefix. It is an optional property which does not appear by default at system creation.
+
+Example value: `IBP_`
+
+You can use the example value or provide your own.
+
+-   When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP Integrated Business Planning for Supply Chain source system and will be provisioned to the target system with the following name pattern: <code>IBP_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP Integrated Business Planning for Supply Chain groups in the target system will be distinguished from groups provisioned from other applications.
+
+    If the property is not set, the SAP Integrated Business Planning for Supply Chain groups will be read and provisioned to the target system with their actual display names.
+
+-   When **set in the target system**, only groups containing the `IBP_` prefix in their display name will be provisioned to SAP Integrated Business Planning for Supply Chain. Groups without this prefix in the display name won't be provisioned.
+
+    If the property is not set, all groups will be provisioned to SAP Integrated Business Planning for Supply Chain.
+
+
+**System Role:** Source and Target
+
+</td>
+<td valign="top">
+
+SAP Integrated Business Planning for Supply Chain \(SCIM API version 2\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ibp.patch.group.members.above.threshold`
+
+</td>
+<td valign="top">
+
+Defines the threshold number of group members above which they are provisioned on batches with `PATCH` requests, and below which they are provisioned with `PUT` request. Setting this property allows you to avoid timeouts when updating groups with a large number of group members.
+
+The expected value is a positive integer without any separators, such as a space, comma, or period.
+
+> ### Note:  
+> You can use this property when SAP Integrated Business Planning for Supply Chain is based on SCIM Interface for IAM \(in short, SCIM API\).
+
+**Possible values**: integer
+
+Default value: *20000*
+
+Minimum value: *1*
+
+Maximum value: *20000*
+
+For example:
+
+-   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1 200 members, setting this property to 900 results in the following:
+
+    As 1900 \(the target count of the members\) is above the threshold number of 900, 2 `PATCH` requests will be sent to the SAP Integrated Business Planning for Supply Chain target system. The first request will add 900 group members and the second request will add 300 group members.
+
+    The threshold number you set defines the maximum number of group members processed per batch.
+
+-   `PUT` request: If you have a group with 700 members and you update the group by adding another 100 members, setting this property to 900 results in the following:
+
+    As 800 \(the target count of the members\) is below the threshold number of 900, 1 `PUT` request with 800 group members will be sent to the SAP Integrated Business Planning for Supply Chain target system to update the group.
+
+
+> ### Note:  
+> Regardless of the threshold number you define, when removing group members in SAP Integrated Business Planning for Supply Chain, the maximum number of members which can be removed per one `PATCH` request is 50.
+
+**System Role:**Target
+
+</td>
+<td valign="top">
+
+SAP Integrated Business Planning for Supply Chain \(SCIM API version 2\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ibp.user.filter`
+
+</td>
+<td valign="top">
+
+When specified, only those SAP Integrated Business Planning for Supply Chain users matching the filter expression will be read.
+
+**Possible values:**
+
+For example: *userName eq "SmithJ"*
+
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP Integrated Business Planning for Supply Chain \(SCIM API version 2\)
 
 </td>
 </tr>
@@ -10497,7 +10689,7 @@ You can use the example value or provide your own.
 
 -   When **set in the target system**, only groups containing the `FSM_` prefix in their display name will be provisioned to SAP Field Service Management. Groups without this prefix in the display name won't be provisioned.
 
-    If the property is not set, all groups will be be provisioned to SAP Field Service Management.
+    If the property is not set, all groups will be provisioned to SAP Field Service Management.
 
 
 **System Role:** Source and Target
@@ -14399,7 +14591,7 @@ Specifies the method by which users authenticate when connecting to the database
 
 **Possible values:** JWT \( Users authenticate via JWT tokens issued by an identity provider.\)
 
-**System Role:** Target
+**System Role:** Target, Proxy
 
 </td>
 <td valign="top">
@@ -15099,6 +15291,27 @@ This property controls how modified entities \(users and groups\) in the source 
 Default value: *false* 
 
 **System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Revenue Growth Management 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`rgm.userImport.api.dependency.name`
+
+</td>
+<td valign="top">
+
+This property holds the value of the dependency name used in the configuration of the SAP Revenue Growth Management consumer application, created in the SAP Cloud Identity Services tenant. It is used for access token retrieval from Identity Authentication. For more information, see [Integrating Applications](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/integrating-applications?locale=en-US&version=Cloud).
+
+Possible values: Text/numeric string
+
+**System Role:**Source, Target, Proxy
 
 </td>
 <td valign="top">

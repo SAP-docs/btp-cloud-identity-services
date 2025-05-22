@@ -96,6 +96,11 @@ No
 
 The *status* column defines whether the user is still active in the system and is able to work with any tenant applications. When a user is deleted, it's rendered inactive.
 
+> ### Note:  
+> When a user's password is not set, if you pass a `status` with value `active`, the status of the user will not change to `active`. It will be set to `new`.
+
+
+
 </td>
 </tr>
 <tr>

@@ -24,6 +24,11 @@ Remember that it may take between two and four weeks to enable the certificate.
 
 > ### Note:  
 > If you want to configure a certificate, using your own trusted CA, for example for scenarios like authentication of technical users or OAuth clients, skip the procedure in this document and report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`. Attach to the incident the root and intermediate certificates and provide the Identity Authentication tenant host.
+> 
+> If you already have a trusted CA added to your tenant, but after that a custom domain has been configured for that tenant, report a new incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS` to update the certificate on the custom domain as well.
+
+> ### Caution:  
+> would suggest to add a a note in the documentation that if a custom CA is added to the the tenant, but then a custom domain is configured, a new request has to be created to update the certificate on the custom domain as well.
 
 > ### Caution:  
 > If the users have generated their own certificates via the profile page, they won't be able to authenticate with the configured X.509 client certificate, and vice versa.
@@ -199,6 +204,8 @@ To configure a trusted X.509 certificate, proceed as follows:
 [Configure IdP-Initiated SSO](configure-idp-initiated-sso-5d59caa.md "Enable or disable IdP-Initiated SSO via the administration console for SAP Cloud Identity Services.")
 
 [Send Security Alert Emails](send-security-alert-emails-c977464.md "Send security alert emails to end-users or administrators when changes in their accounts are made.")
+
+[Enable Password Expiration Reminder](enable-password-expiration-reminder-a8de1be.md "Enable password expiration reminder for SAP Cloud Identity Services to ensure the users are aware that a password change is due.")
 
 [Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications, new administrators, and new applications to specific email addresses or to the emails of all administrators.")
 

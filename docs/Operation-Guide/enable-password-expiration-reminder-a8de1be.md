@@ -1,12 +1,12 @@
-<!-- loioa513c91261a745e6b4b3c160d448fc00 -->
+<!-- loioa8de1bebab894f9fbd3ecef37e64782e -->
 
-# Change a Tenant's Display Name
+# Enable Password Expiration Reminder
 
-You can configure the tenant's name from the administration console for SAP Cloud Identity Services.
+Enable password expiration reminder for SAP Cloud Identity Services to ensure the users are aware that a password change is due.
 
 
 
-<a name="loioa513c91261a745e6b4b3c160d448fc00__prereq_nxs_vkg_ppb"/>
+<a name="loioa8de1bebab894f9fbd3ecef37e64782e__prereq_k4x_cmg_ppb"/>
 
 ## Prerequisites
 
@@ -16,15 +16,12 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 
 ## Context
 
-Information about the tenant is visible in the header of the administration console. The information includes:
+The tenant administrator can configure the system to show a password expiration reminder at the sign-in page of the user. When enabled, the reminder message starts to appear on each sign-in 10 days before the password is due to be changed. The user has the option to change the password immediately or skip the reminder.
 
--   The region, representing the location of data center in which the tenant is. For example, ***Cloud Identity Services \[Europe\]***. This information is provided by the system, and cannot be edited by the tenant administrator. For more information about the regions, see [Regional Availability](../regional-availability-be600ca.md).
--   The tenant display name. This information can be edited. If you have not specified a specific tenant name, you will see the tenant ID instead. You can change the name to make it more understandable for you.
--   > ### Remember:  
-    > It takes 2 minutes for the configuration changes to take place.
+> ### Remember:  
+> It takes 2 minutes for the configuration changes to take place.
 
-
-To edit the tenant's display name, proceed as follows:
+The password expiration reminder is disabled by default. To enable it, proceed as follows:
 
 
 
@@ -36,11 +33,11 @@ To edit the tenant's display name, proceed as follows:
 
     At the top of the page, you can view the administrative and license relevant information of the tenant.
 
-3.  Choose the name of the tenant and change it in the pop-up dialog.
+3.  Under *General*, choose the *Password Expiration Reminder* list item.
 
-4.  Save your changes.
+4.  Use the slider next to the option to enable it.
 
-    Once the tenant has been updated, the system displays the message ***Tenant <name of tenant\> updated***.
+    If the operation is successful, you receive a confirmation message.
 
 
 **Related Information**  
@@ -86,6 +83,8 @@ To edit the tenant's display name, proceed as follows:
 
 [Use Custom Domain in Identity Authentication](use-custom-domain-in-identity-authentication-c4db840.md "Identity Authentication allows you to use a custom domain that is different from the default ones (<tenant ID>.accounts.ondemand.com or <tenant ID>.accounts.cloud.sap) - for example www.mytenant.com.")
 
+[Change a Tenant's Display Name](change-a-tenant-s-display-name-a513c91.md "You can configure the tenant's name from the administration console for SAP Cloud Identity Services.")
+
 [Configure Default Risk-Based Authentication for All Applications in the Tenant](configure-default-risk-based-authentication-for-all-applications-in-the-tenant-1aab51a.md#loio1aab51ae62b94f79b4c6dac7a00857c2 "You can define rules for authentication according to different risk factors and apply actions like Allow, Deny, and Two-Factor Authentication for all applications in a tenant.")
 
 [Configure Sinch Service in Administration Console](configure-sinch-service-in-administration-console-3fdc9e1.md "Configure Sinch Service to enable Phone Verification via SMS or SMS Two-Factor Authentication in the administration console.")
@@ -98,8 +97,6 @@ To edit the tenant's display name, proceed as follows:
 
 [Send Security Alert Emails](send-security-alert-emails-c977464.md "Send security alert emails to end-users or administrators when changes in their accounts are made.")
 
-[Enable Password Expiration Reminder](enable-password-expiration-reminder-a8de1be.md "Enable password expiration reminder for SAP Cloud Identity Services to ensure the users are aware that a password change is due.")
-
 [Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications, new administrators, and new applications to specific email addresses or to the emails of all administrators.")
 
 [Configure Customer Managed Keys in Administration Console \(Restricted Availability\)](configure-customer-managed-keys-in-administration-console-restricted-availability-fe6e30c.md "")
@@ -109,6 +106,4 @@ To edit the tenant's display name, proceed as follows:
 [Configure P-User Next Index](configure-p-user-next-index-045bb1c.md "Set the value for the P-user next index.")
 
 [Reuse SAP Cloud Identity Services Tenants for Different Customer IDs](reuse-sap-cloud-identity-services-tenants-for-different-customer-ids-ebd0258.md "You as a tenant administrator can reuse an existing tenant for configurations and automated subscriptions.")
-
-[Configuring Tenant Settings](configuring-tenant-settings-d4d6fdc.md "Initially, the tenants are configured to use default settings. This section describes how you as a tenant administrator can make custom tenant configurations.")
 

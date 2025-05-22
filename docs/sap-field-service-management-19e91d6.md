@@ -300,6 +300,21 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP Fie
     >                 "targetPath": "$.schemas"
     >             },
     >             {
+    >                 "condition": "'%ips.application.id%' !== 'null'",
+    >                 "constant": "%ips.application.id%",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "optional": true
+    >             },
+    >             {
     >                 "sourcePath": "$.displayName",
     >                 "targetPath": "$.displayName",
     >                 "functions": [

@@ -38,6 +38,7 @@ You receive also the following attributes preconfigured:
 -   The home URL of SAP Cloud ALM is configured. For more information, see [Configure an Application's Home URL](Operation-Guide/configure-an-application-s-home-url-be6d6f2.md).
 
 -   The `e-mail` is configured as `Name ID` attribute in the settings of your identity provider. For more information, see [Configure the Subject Name Identifier Sent to the Application](Operation-Guide/configure-the-subject-name-identifier-sent-to-the-application-1d020e3.md).
+-   The default assertion attributes for the established OIDC trust are configured. For more information, see [Customizing Attribute Mappings](https://help.sap.com/docs/btp/sap-business-technology-platform/default-configuration-of-identity-authentication-application?version=Cloud#customizing-attribute-mappings).
 
 After the provisioning of SAP Cloud ALM is complete, a few setup steps are required so that it can be used productively. For more information, see [Required Setup for SAP Cloud ALM](https://help.sap.com/docs/cloud-alm/setup-administration/required-setup). To give further users access to SAP Cloud ALM, see [Onboard Users in the Identity Authentication Service](https://help.sap.com/docs/cloud-alm/setup-administration/user-onboarding).
 

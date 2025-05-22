@@ -138,6 +138,8 @@ RFC-based systems use Remote Function Call \(RFC\) for communication between SAP
 
 -   Identity Authentication
 
+-   Intelligent Opportunity Analyzer
+
 -   Local Identity Directory
 
 -   SAP Advanced Financial Closing
@@ -155,6 +157,8 @@ RFC-based systems use Remote Function Call \(RFC\) for communication between SAP
 -   SAP BTP Account Members \(Neo\)
 
 -   SAP BTP Java/HTML5 apps \(Neo\)
+
+-   SAP BTP Platform Members \(Cloud Foundry\)
 
 -   SAP BTP XS Advanced UAA \(Cloud Foundry\)
 
@@ -175,6 +179,8 @@ RFC-based systems use Remote Function Call \(RFC\) for communication between SAP
 -   SAP Data Custodian
 
 -   SAP Datasphere
+
+-   SAP Enable Now
 
 -   SAP Enterprise Portal
 

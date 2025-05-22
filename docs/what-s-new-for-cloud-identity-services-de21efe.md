@@ -140,7 +140,368 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2025-05-08
+2025-05-21
+
+</td>
+<td valign="top">
+
+2025-05-21
+
+</td>
+<td valign="top">
+
+27861
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAML 2.0 Configuration
+
+</td>
+<td valign="top">
+
+The *Name* field in the SAML 2.0 configuration page on application level has been changed to *Entity ID*. See [Configure SAML 2.0 Service Provider](Operation-Guide/configure-saml-2-0-service-provider-51f1f75.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-05-21
+
+</td>
+<td valign="top">
+
+2025-05-21
+
+</td>
+<td valign="top">
+
+27861
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Password Management
+
+</td>
+<td valign="top">
+
+You can configure the system to show a password expiration reminder at the sign-in page of the user. See [Enable Password Expiration Reminder](Operation-Guide/enable-password-expiration-reminder-a8de1be.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-05-21
+
+</td>
+<td valign="top">
+
+2025-05-21
+
+</td>
+<td valign="top">
+
+27861
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Cloud Identity Services Documentation
+
+</td>
+<td valign="top">
+
+As of May 21, 2025 the **Version** column of [What's New for Cloud Identity Services](what-s-new-for-cloud-identity-services-de21efe.md) contains the number of the version instead of the sprint number. All the information in the column has been updated.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-05-21
+
+</td>
+<td valign="top">
+
+2025-05-21
+
+</td>
+<td valign="top">
+
+27861
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Support for SAP extension schema for groups
+
+</td>
+<td valign="top">
+
+The default transformations of the following connectors support attributes from the SAP extension schema for groups, including application ID, type, and supported operations.
+
+See:
+
+-   [SAP Fieldglass](sap-fieldglass-58a6921.md)
+-   [SAP Field Service Management](sap-field-service-management-19e91d6.md)
+-   [SAP Enable Now](sap-enable-now-cee1e14.md)
+-   [SAP Data Custodian](sap-data-custodian-acd7307.md)
+-   [SAP CPQ](sap-cpq-209e23a.md)
+-   [SAP HANA Cloud, SAP HANA Database](sap-hana-cloud-sap-hana-database-7c6fbdb.md)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-05-21
+
+</td>
+<td valign="top">
+
+2025-05-21
+
+</td>
+<td valign="top">
+
+27861
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
 
 </td>
 <td valign="top">
@@ -150,7 +511,165 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2504b
+2025-05-08
+
+</td>
+<td valign="top">
+
+27806
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP ODM User Schema Support
+
+</td>
+<td valign="top">
+
+The default read and proxy read transformations in Identity Authentication and the Local Identity Directory support the `urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User` schema. This custom SCIM schema extension is defined by SAP’s Organizational Data Model \(ODM\) and is used to enrich the standard SCIM User resource with SAP-specific attributes such as `workAssignment`, `jobDetails`, `plant`, and others.
+
+See
+
+-   [Identity Authentication](identity-authentication-e4e25f1.md)
+
+-   [Local Identity Directory](local-identity-directory-8c7d05e.md)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-05-08
+
+</td>
+<td valign="top">
+
+2025-05-08
+
+</td>
+<td valign="top">
+
+27806
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Download all deleted entities for a provisioning job
+
+</td>
+<td valign="top">
+
+You can now download and view the details of all deleted entities by a provisioning job. To enable this, set the property `ips.trace.deleted.entity` to **true**.
+
+For more information, see [Manage Provisioning Job Logs](Monitoring-and-Reporting/manage-provisioning-job-logs-041b5ff.md) and [List of Properties](list-of-properties-d6f3577.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-05-08
+
+</td>
+<td valign="top">
+
+2025-05-08
+
+</td>
+<td valign="top">
+
+27806
 
 </td>
 </tr>
@@ -221,7 +740,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2504b
+27806
 
 </td>
 </tr>
@@ -292,7 +811,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2504b
+27806
 
 </td>
 </tr>
@@ -363,7 +882,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2504b
+27806
 
 </td>
 </tr>
@@ -434,7 +953,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2504b
+27806
 
 </td>
 </tr>
@@ -455,7 +974,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-Privacy |Policy and Terms of Use
+Privacy Policy and Terms of Use
 
 </td>
 <td valign="top">
@@ -505,7 +1024,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2504b
+27806
 
 </td>
 </tr>
@@ -576,7 +1095,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2504b
+27806
 
 </td>
 </tr>
@@ -604,7 +1123,7 @@ SAP Sales Cloud and SAP Service Cloud - new version
 
 A new connector version for SAP Sales Cloud and SAP Service Cloud is introduced. It is applicable for SAP Sales Cloud Version 2 and SAP Service Cloud Version 2 and supports certificate-based authentication, patch operations, delta read of entities, cursor-based pagination and more.
 
-For more information, see
+See
 
 -   [SAP Sales Cloud and SAP Service Cloud \(Source\)](sap-sales-cloud-and-sap-service-cloud-8f3edc3.md)
 
@@ -658,7 +1177,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2504b
+27806
 
 </td>
 </tr>
@@ -686,7 +1205,7 @@ SAP Build Work Zone, standard edition - schema support
 
 The default transformations of SAP Build Work Zone, standard edition are extended to support the `urn:ietf:params:scim:schemas:extension:sap:2.0:User` and `urn:ietf:params:scim:schemas:extension:2.0:mapping` schema.
 
-For more information, see [SAP Build Work Zone, standard edition](sap-build-work-zone-standard-edition-8d6586f.md).
+See [SAP Build Work Zone, standard edition](sap-build-work-zone-standard-edition-8d6586f.md).
 
 </td>
 <td valign="top">
@@ -731,7 +1250,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2504b
+27806
 
 </td>
 </tr>
@@ -759,7 +1278,7 @@ Support for SAP extension schema for groups
 
 The default transformations of the following connectors support attributes from the SAP extension schema for groups, including application ID, type, and supported operations.
 
-For more information, see
+See:
 
 -   [SAP Central Business Configuration](sap-central-business-configuration-b572223.md)
 
@@ -817,7 +1336,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2504b
+27806
 
 </td>
 </tr>
@@ -847,7 +1366,7 @@ Cloud Identity Services has migrated the data \(DC\) center in China to Beijing 
 
 Action:
 
-We recommend you to add the following IPs to your allowed IP list:
+You must add the following IPs to your allowed IP list:
 
 -   LB IP - 40.162.206.196, 40.162.223.103
 -   NAT IP - 40.162.31.41/32, 143.64.218.112/32
@@ -862,7 +1381,7 @@ See [Regional Availability](regional-availability-be600ca.md).
 </td>
 <td valign="top">
 
-Recommended
+Required
 
 </td>
 <td valign="top">
@@ -902,7 +1421,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2503b
+27709
 
 </td>
 </tr>
@@ -973,7 +1492,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2503b
+27709
 
 </td>
 </tr>
@@ -1044,7 +1563,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2503b
+27709
 
 </td>
 </tr>
@@ -1072,7 +1591,7 @@ Support for SAP extension schema for groups
 
 The default transformations of Identity Authentication \(using SCIM API version 2\), SAP BTP Account Members \(Neo\) and SAP BTP XS Advanced UAA \(Cloud Foundry\) support attributes from the SAP extension schema for groups, including application ID, type, and supported operations.
 
-For more information, see
+See
 
 -   [Identity Authentication](identity-authentication-e4e25f1.md)
 -   [SAP BTP Account Members \(Neo\)](sap-btp-account-members-neo-a8035cd.md)
@@ -1123,7 +1642,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2503b
+27709
 
 </td>
 </tr>
@@ -1202,7 +1721,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2503b
+27709
 
 </td>
 </tr>
@@ -1273,7 +1792,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2503b
+27709
 
 </td>
 </tr>
@@ -1344,7 +1863,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2503b
+27709
 
 </td>
 </tr>
@@ -1376,7 +1895,7 @@ The United States \(Colorado\) DC is no longer used.
 
 Action:
 
-We recommend you to add the following IPs to your allowed IP list:
+You must add the following IPs to your allowed IP list:
 
 -   LB IP - 3.92.131.87, 52.200.183.196, 35.168.205.166
 -   NAT IP - 52.44.60.92/32, 54.211.101.173/32, 54.225.47.27/32
@@ -1391,7 +1910,7 @@ See [Regional Availability](regional-availability-be600ca.md).
 </td>
 <td valign="top">
 
-Recommended
+Required
 
 </td>
 <td valign="top">
@@ -1431,7 +1950,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2503a
+27643
 
 </td>
 </tr>
@@ -1502,7 +2021,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2503a
+27643
 
 </td>
 </tr>
@@ -1573,7 +2092,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2503a
+27643
 
 </td>
 </tr>
@@ -1646,7 +2165,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2503a
+27643
 
 </td>
 </tr>
@@ -1719,7 +2238,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2503a
+27643
 
 </td>
 </tr>
@@ -1798,7 +2317,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2503a
+27643
 
 </td>
 </tr>
@@ -1871,7 +2390,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2503a
+27643
 
 </td>
 </tr>
@@ -1946,7 +2465,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2503b
+27709
 
 </td>
 </tr>
@@ -2017,7 +2536,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2502b
+27566
 
 </td>
 </tr>
@@ -2088,7 +2607,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2502b
+27566
 
 </td>
 </tr>
@@ -2159,7 +2678,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2502b
+27566
 
 </td>
 </tr>
@@ -2227,7 +2746,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2502b
+27566
 
 </td>
 </tr>
@@ -2298,7 +2817,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2502b
+27566
 
 </td>
 </tr>
@@ -2369,7 +2888,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2502b
+27566
 
 </td>
 </tr>
@@ -2440,7 +2959,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2502b
+27566
 
 </td>
 </tr>
@@ -2513,7 +3032,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2502b
+27566
 
 </td>
 </tr>
@@ -2586,7 +3105,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2502b
+27566
 
 </td>
 </tr>
@@ -2659,7 +3178,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2502b
+27566
 
 </td>
 </tr>
@@ -2730,7 +3249,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2502b
+27566
 
 </td>
 </tr>
@@ -2801,7 +3320,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2502a
+27494
 
 </td>
 </tr>
@@ -2872,7 +3391,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2502a
+27494
 
 </td>
 </tr>
@@ -2943,7 +3462,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2502a
+27494
 
 </td>
 </tr>
@@ -3014,7 +3533,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2502a
+27494
 
 </td>
 </tr>
@@ -3085,7 +3604,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2502a
+27494
 
 </td>
 </tr>
@@ -3160,7 +3679,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2503b
+27709
 
 </td>
 </tr>
@@ -3233,7 +3752,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2502a
+27494
 
 </td>
 </tr>
@@ -3306,7 +3825,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2502a
+27494
 
 </td>
 </tr>
@@ -3383,7 +3902,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2502a
+27494
 
 </td>
 </tr>
@@ -3462,7 +3981,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2502a
+27494
 
 </td>
 </tr>
@@ -3535,7 +4054,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2502a
+27494
 
 </td>
 </tr>
@@ -3606,7 +4125,78 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2502a
+27494
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Off-Cycle Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-02-13
+
+</td>
+<td valign="top">
+
+2025-02-13
+
+</td>
+<td valign="top">
+
+27436
 
 </td>
 </tr>
@@ -3679,7 +4269,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2501b
+27419
 
 </td>
 </tr>
@@ -3752,78 +4342,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2501b
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Off-Cycle Upgrade
-
-</td>
-<td valign="top">
-
-Cloud Identity Services have been upgraded.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
-2025-02-13
-
-</td>
-<td valign="top">
-
-2025-02-13
-
-</td>
-<td valign="top">
-
-Off-Cycle Upgrade
+27419
 
 </td>
 </tr>
@@ -3894,7 +4413,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2501b
+27419
 
 </td>
 </tr>
@@ -3922,12 +4441,12 @@ Authorizations Based оn Policies
 
 As of February 11, 2025, the **MANAGE\_USERS** policy no longer contains the read applications permission.
 
-Action: If your scenario requires this permission, you add the **READ\_APPLICATIONS** policy to the user or users that need it. See how to do this at [Configure Application Authorizations | SAP Help Portal](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/manage-applications-rights?version=Cloud).
+Action: If your scenario requires this permission, you must add the **READ\_APPLICATIONS** policy to the user or users that need it. See how to do this at [Configure Application Authorizations | SAP Help Portal](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/manage-applications-rights?version=Cloud).
 
 </td>
 <td valign="top">
 
-Recommended
+Required
 
 </td>
 <td valign="top">
@@ -3967,7 +4486,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2501b
+27419
 
 </td>
 </tr>
@@ -4040,7 +4559,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2501b
+27419
 
 </td>
 </tr>
@@ -4113,7 +4632,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2501b
+27419
 
 </td>
 </tr>
@@ -4186,7 +4705,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2501b
+27419
 
 </td>
 </tr>
@@ -4259,7 +4778,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2501b
+27419
 
 </td>
 </tr>
@@ -4330,7 +4849,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-Off-Cycle
+27391
 
 </td>
 </tr>
@@ -4401,7 +4920,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2501a
+27344
 
 </td>
 </tr>
@@ -4472,7 +4991,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2501a
+27344
 
 </td>
 </tr>
@@ -4543,7 +5062,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2501a
+27344
 
 </td>
 </tr>
@@ -4618,7 +5137,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2501a
+27344
 
 </td>
 </tr>
@@ -4695,7 +5214,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2501a
+27344
 
 </td>
 </tr>
@@ -4772,7 +5291,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2501a
+27344
 
 </td>
 </tr>
@@ -4854,7 +5373,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2501a
+27344
 
 </td>
 </tr>
@@ -4925,7 +5444,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-Off-Cycle Upgrade
+27307
 
 </td>
 </tr>
@@ -4996,7 +5515,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2413b
+27268
 
 </td>
 </tr>
@@ -5069,7 +5588,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2413b
+27268
 
 </td>
 </tr>
@@ -5142,7 +5661,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2413b
+27268
 
 </td>
 </tr>
@@ -5170,12 +5689,12 @@ Authorizations Based оn Policies
 
 As of February 11, 2025, the **MANAGE\_USERS** policy will no longer contain the read applications permission.
 
-Action: If your scenario requires this permission, you add the **READ\_APPLICATIONS** policy to the user or users that need it. See how to do this at [Configure Application Authorizations | SAP Help Portal](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/manage-applications-rights?version=Cloud).
+Action: If your scenario requires this permission, you must add the **READ\_APPLICATIONS** policy to the user or users that need it. See how to do this at [Configure Application Authorizations | SAP Help Portal](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/manage-applications-rights?version=Cloud).
 
 </td>
 <td valign="top">
 
-Recommended
+Required
 
 </td>
 <td valign="top">
@@ -5215,7 +5734,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2501b
+27268
 
 </td>
 </tr>

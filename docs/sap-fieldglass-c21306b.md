@@ -417,6 +417,16 @@ You can use SAP Fieldglass as a proxy connector to execute *hybrid* scenarios. T
     >         "optional": true
     >       },
     >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true
+    >       },
+    >       {
     >         "sourcePath": "$.schemas",
     >         "preserveArrayWithSingleElement": true,
     >         "targetPath": "$.schemas"

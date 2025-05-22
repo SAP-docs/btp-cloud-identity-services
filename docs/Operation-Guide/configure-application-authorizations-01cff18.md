@@ -84,7 +84,7 @@ You can restrict access on the basis of the base policies or you can use a custo
     1.  Select a custom authorization policy.
 
         > ### Note:  
-        > If you don’t have an authorization policy in your list, you can create a restriction policy using the `applications.DELETE_APPLICATIONS`, `applications.READ_APPLICATIONS`, `applications.UPDATE_APPLICATIONS` parameters. For more information about how to create a custom authorization policy, see [Create an Authorization Policy](create-an-authorization-policy-897fc30.md).
+        > If you don’t have a custom authorization policy in your list, you can create a restriction policy using the `applications.CREATE_APPLICATIONS`, `applications.MANAGE_APPLICATIONS`, `applications.DELETE_APPLICATIONS`, `applications.READ_APPLICATIONS`, `applications.UPDATE_APPLICATIONS` parameters. For more information about how to create a custom authorization policy, see [Create an Authorization Policy](create-an-authorization-policy-897fc30.md).
 
     2.  Choose the *Edit* button.
     3.  To customize the rules of the authorization policy, choose *Rules*.

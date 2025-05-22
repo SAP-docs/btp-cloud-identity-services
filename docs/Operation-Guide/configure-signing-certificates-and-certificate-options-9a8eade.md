@@ -140,13 +140,13 @@ To configure signing certificates and certificate options in the administration 
     </tr>
     </table>
     
-8.  **Optional:** Under *Encryption Certificate*, add a certificate, if there is no encryption certificates added or you want to add a new certificate.
+8.  **Optional:** Under *Encryption Certificate*, create a certificate, if there is no encryption certificates created or you want to create a new certificate.
 
-    1.  Choose *Add*.
+    1.  Choose *Create*.
 
     2.  Provide a file with extension `.crt` or `cer`, or insert the certificate as text.
 
-    3.  Choose *Add*.
+    3.  Choose *\+Add*.
 
 
 9.  **Optional:** \(Visible only if there is and encryption certificate\) Under *Encryption Option*, choose *Edit* to configure the encryption of the SAML 2.0 response
@@ -164,7 +164,7 @@ To configure signing certificates and certificate options in the administration 
     2.  Choose *Save*.
 
 
-10. **Optional:** \(If you added second signing certificate in tenant settings\) Under *Identity Provider Certificate*, choose the certificate to be used.
+10. **Optional:** \(If you added second signing certificate in tenant settings\) Under *IdP Certificates*, choose the certificate to be used.
 
     > ### Tip:  
     > When the default identity provider certificate is changed with a new one, and the old one is not used anymore, we recommend you to delete the old certificate.
@@ -177,5 +177,5 @@ To configure signing certificates and certificate options in the administration 
 **Related Information**  
 
 
-[Make a New Trust Configuration](make-a-new-trust-configuration-7cecbdf.md "Configure trust from the service provider metadata by uploading it or by accessing it from a URL, or by entering the information manually. .")
+[Make a New Trust Configuration](make-a-new-trust-configuration-7cecbdf.md "Configure trust from the service provider metadata by uploading it or by accessing it from a URL, or by entering the information manually.")
 

@@ -466,13 +466,13 @@ When using connector version 4 \(SCIM 2.0 based API\), only users of type Employ
     >         "targetPath": "$.displayName"
     >       },
     >       {
-    >         "sourcePath": "$.['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
-    >         "targetPath": "$.['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
     >         "optional": true
     >       },
     >       {
-    >         "sourcePath": "$.['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
-    >         "targetPath": "$.['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
     >         "optional": true
     >       },
     >       {

@@ -251,7 +251,7 @@ Create an SAP CPQ target system to provision users and groups to it.
     > ```
     > {
     >     "user": {
-    >         "condition": "($.emails EMPTY false) && isValidEmail($.emails[0].value)",
+    >         "condition": "isValidEmail($.emails[0].value) && (('%cpq.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%cpq.group.prefix%.*/)] empty false))",
     >         "mappings": [
     >             {
     >                 "targetPath": "$.id",
@@ -324,7 +324,7 @@ Create an SAP CPQ target system to provision users and groups to it.
     >         ]
     >     },
     >     "group": {
-    >         "condition": "('%cpq.group.prefix%' === 'null') || ($.displayName =~ /%cpq.group.prefix%.*/)",
+    >         "condition": "isAttributeWithOptionalPrefix($.displayName, cpq.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], cpq.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >         "mappings": [
     >             {
     >                 "targetPath": "$.id",
@@ -339,7 +339,7 @@ Create an SAP CPQ target system to provision users and groups to it.
     >                 "targetPath": "$.displayName",
     >                 "functions": [
     >                     {
-    >                         "condition": "('%cpq.group.prefix%' !== 'null') && (@ =~ /%cpq.group.prefix%.*/)",
+    >                         "condition": "isAttributeWithMandatoryPrefix(@, cpq.group.prefix)",
     >                         "function": "replaceFirstString",
     >                         "regex": "%cpq.group.prefix%",
     >                         "replacement": ""
@@ -360,6 +360,7 @@ Create an SAP CPQ target system to provision users and groups to it.
     >         ]
     >     }
     > }
+    > Powered by Gitiles
     > ```
 
 7.  Now, add a source system from which to read users and groups. Choose from: [Source Systems](source-systems-58033be.md)

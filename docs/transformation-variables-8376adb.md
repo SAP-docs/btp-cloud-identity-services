@@ -322,11 +322,13 @@ Target systems
 
 [Transformation Types](transformation-types-1a92c56.md "Learn about the types of JSON transformations needed for the provisioning jobs.")
 
-[Transformation Examples](transformation-examples-901c759.md "The following examples explain how transformations work.")
-
 [Transformation Expressions](transformation-expressions-bb8537b.md "")
 
 [Transformation Functions](transformation-functions-0cdac7c.md "")
+
+[Transformation Conditions](transformation-conditions-f47bd39.md "A condition defines a JSON filter expression that can be applied to entity types (such as users, groups, and roles) or within attribute mappings. It can be combined with strings, constants, variables, and functions, or used within functions.")
+
+[Transformation Examples](transformation-examples-901c759.md "The following examples explain how transformations work.")
 
 [Transformation Editors](transformation-editors-9ea770b.md "Identity Provisioning provides graphical and JSON text editor for managing provisioning system transformations.")
 

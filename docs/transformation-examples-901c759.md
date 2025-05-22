@@ -234,57 +234,7 @@ In this example, the source system JSON data contains the **sn\[0\]** attribute.
 }
 ```
 
-
-
-<a name="loio901c759381d649158f8d9b5b07b095ec__section_lym_31l_x5b"/>
-
-## Conditions in Transformations
-
-In this example, you can try to apply a condition on whether an attribute of an entity contains a particular string. The template for such condition is the following:
-
-```
-"condition": "$.<attribute> =~ /.*<text>.*/",
-```
-
-where:
-
--   *=~* means that a regular expression \(regex\) will be tested in the condition
-
--   */* represents the start and end of the regex
-
--   *.\** represents any sequence of characters, including an empty sequence.
-
--   *<text\>* is a placeholder for the string that you want the value to contain
-
-
-> ### Example:  
-> With this example, you can checks if the first email address of a user contains a particular domain:
-> 
-> ```
-> 
-> "condition": "$.emails[0].value =~ /.*@example.com/",
-> 
-> ```
-
-> ### Example:  
-> With this example, you can assign a user to a group, based on their *userName* containing a particular string:
-> 
-> ```
-> 
-> {
-> 	"condition": "$.userName =~ /.*explorer.*/",
-> 	"constant": "Explorers",
-> 	"targetPath": "$.groups[0].value"
-> },
-> {
-> 	"condition": "$.userName =~ /.*scifi.*/",
-> 	"constant": "Scientists",
-> 	"targetPath": "$.groups[1].value"
-> }
-> 
-> ```
-> 
-> **Result:** This will assign all users, which have "`explorer`" in their *userName*, to the "Explorers" group, and all users, which contain "`scifi`" in their *userName*, to the "Scientists" group.
+For more information about condition examples, see [Transformation Conditions](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/condition-examples-in-transformations?version=Cloud).
 
 **Related Information**  
 
@@ -296,6 +246,8 @@ where:
 [Transformation Functions](transformation-functions-0cdac7c.md "")
 
 [Transformation Variables](transformation-variables-8376adb.md "")
+
+[Transformation Conditions](transformation-conditions-f47bd39.md "A condition defines a JSON filter expression that can be applied to entity types (such as users, groups, and roles) or within attribute mappings. It can be combined with strings, constants, variables, and functions, or used within functions.")
 
 [Transformation Editors](transformation-editors-9ea770b.md "Identity Provisioning provides graphical and JSON text editor for managing provisioning system transformations.")
 

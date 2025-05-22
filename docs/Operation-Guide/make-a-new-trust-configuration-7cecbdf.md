@@ -2,7 +2,7 @@
 
 # Make a New Trust Configuration
 
-Configure trust from the service provider metadata by uploading it or by accessing it from a URL, or by entering the information manually. .
+Configure trust from the service provider metadata by uploading it or by accessing it from a URL, or by entering the information manually.
 
 
 
@@ -28,9 +28,12 @@ You have the service provider metadata. See the service provider documentation f
 
 ## Context
 
-The trust is configured from the service provider metadata by uploading it or by accessing it from a URL, or by entering the information manually.
+The trust is configured from the service provider metadata by uploading it or by accessing it from a URL, or by entering the information manually. When the identity provider metadata is uploaded, or the metadata URL is used, the fields are populated with the parsed data from the XML file.
 
-You can enter manually the name of the service provider, its endpoints, and certificates.
+You can enter manually the name of the service provider and its endpoints.
+
+> ### Remember:  
+> If your scenario includes the enabling of the *Trust All Corporate Identity Providers* option, the assertion consumer \(ACS\) endpoint with the URL of the application's protected page, and the index must be included in the service provider metadata.
 
 To configure a SAML 2.0 trusted service provider in the administration console for SAP Cloud Identity Services, proceed as follows:
 
@@ -57,22 +60,31 @@ To configure a SAML 2.0 trusted service provider in the administration console f
 
 6.  Upload the service provider metadata XML file, use the metadata URL, or manually enter the communication settings negotiated between Identity Authentication and the service provider.
 
-    > ### Remember:  
-    > If your scenario includes the enabling of the *Trust All Corporate Identity Providers* option, the assertion consumer \(ACS\) endpoint with the URL of the application's protected page, and the index must be included in the service provider metadata.
+    -   *Load from URL* - The URL with service provider metadata.
 
-    > ### Note:  
-    > Use a file with an extension `.xml`.
-    > 
-    > If you use SAP BTP as a service provider, see [Integrating the Service with SAP Business Technology Platform, Neo Environment](../Integrating-the-Service/integrating-the-service-with-sap-business-technology-platform-neo-environment-fe84459.md#loiofe84459e688c43698591d3b9e1aac828) for more information how to download its metadata. The content in this section is only relevant for SAP BTP Neo environment. The content in this section is relevant for China \(Shanghai\) region.
+        > ### Restriction:  
+        > The metadata URL must not contain a query parameter.
 
-    When the identity provider metadata is uploaded, or the metadata URL is used, the fields are populated with the parsed data from the XML file.
+        > ### Remember:  
+        > The SAML 2.0 metadata URL is required for the automatic renewal of the automatic renewal of the signing and encryption certificates of the application. When the metadata URL is provided, Identity Authentication will update automatically the expired encryption certificate, and the SAML 2.0 certificate during the first sign in attempt that fails due to the expired certificate.
+        > 
+        > If you update the already provided metadata URL, the SAML configuration will be updated, too.
+
+    -   *Load from File* - The metadata file of the service provider.
+
+        > ### Note:  
+        > Use a file with an extension `.xml`.
+        > 
+        > If you use SAP BTP as a service provider, see [Integrating the Service with SAP Business Technology Platform, Neo Environment](../Integrating-the-Service/integrating-the-service-with-sap-business-technology-platform-neo-environment-fe84459.md#loiofe84459e688c43698591d3b9e1aac828) for more information how to download its metadata. The content in this section is only relevant for SAP BTP Neo environment. The content in this section is relevant for China \(Shanghai\) region.
+
+    -   *Configure Manually* - Add the entity ID of the service provider and configure the information in the *Endpoints* tab.
 
 
     <table>
     <tr>
     <th valign="top">
 
-    Field
+    Tab
     
     </th>
     <th valign="top">
@@ -84,46 +96,7 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     <tr>
     <td valign="top">
     
-    Choose:
-
-    -   Metadata File
-    -   Metadata URL
-
-
-    
-    </td>
-    <td valign="top">
-    
-    -   The metadata XML file of the service provider.
-    -   The URL with service provider metadata.
-
-        > ### Restriction:  
-        > The metadata URL must not contain query parameter.
-
-        > ### Remember:  
-        > The SAML 2.0 metadata URL is required for the automatic renewal of the automatic renewal of the signing and encryption certificates of the application. When the metadata URL is provide, Identity Authentication will update automatically the expired encryption certificate, and the SAML 2.0 certificate during the first sign in attempt that fails due to the expired certificate.
-
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Name
-    
-    </td>
-    <td valign="top">
-    
-    The entity ID of the service provider.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Assertion Consumer Service Endpoints
+    Endpoints
     
     </td>
     <td valign="top">
@@ -132,11 +105,11 @@ To configure a SAML 2.0 trusted service provider in the administration console f
 
     The following options are possible:
 
-    -   *URLs for Browser Flow* 
+    -   *Single Sign-On* 
 
-        Choose *Add* and enter the allowed domain for browser flows.
+        Choose *Create* and enter the allowed domain for browser flows.
 
-    -   *Logout Endpoints*
+    -   *Single Logout*
 
         Choose *Add* and enter the SP's endpoint URL that receives the logout response or request \(for a multiple SPs scenario\) from Identity Authentication for the termination of all current sessions.
 
@@ -168,7 +141,7 @@ To configure a SAML 2.0 trusted service provider in the administration console f
     </table>
     
     > ### Restriction:  
-    > The *Metadata File*, *Name*, *Assertion Consumer Service Endpoint*, and *Single Logout Endpoint* fields are not editable for the system applications.
+    > The *Metadata URL*, *Entity ID*, and *Single Logout Endpoint* fields are not editable for the system applications.
 
 
 

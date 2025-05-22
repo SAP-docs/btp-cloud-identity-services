@@ -587,11 +587,13 @@ These source systems consume SCIM 2.0 API provided by SAP Ariba Applications. Fo
     >       {
     >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['network']",
     >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['network']",
+    >         "preserveArrayWithSingleElement": true,
     >         "optional": true
     >       },
     >       {
     >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['addresses']",
     >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['addresses']",
+    >         "preserveArrayWithSingleElement": true,
     >         "optional": true
     >       },
     >       {
@@ -602,6 +604,7 @@ These source systems consume SCIM 2.0 API provided by SAP Ariba Applications. Fo
     >       {
     >         "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:profile:User']['alternativeDisplayNames']",
     >         "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:profile:User']['alternativeDisplayNames']",
+    >         "preserveArrayWithSingleElement": true,
     >         "optional": true
     >       },
     >       {

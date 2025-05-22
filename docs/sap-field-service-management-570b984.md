@@ -246,7 +246,7 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP Fie
     > ```
     > {
     >     "user": {
-    >         "condition": "($.emails EMPTY false) && ($.userName EMPTY false)",
+    >         "condition": "($.emails EMPTY false) && ($.userName EMPTY false) && isValidEmail($.emails[0].value) && (('%fsm.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%fsm.group.prefix%.*/)] empty false))",
     >         "mappings": [
     >             {
     >                 "sourceVariable": "entityIdTargetSystem",
@@ -288,7 +288,7 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP Fie
     >         ]
     >     },
     >     "group": {
-    >         "condition": "('%fsm.group.prefix%' === 'null') || ($.displayName =~ /%fsm.group.prefix%.*/)",
+    >         "condition": "(isAttributeWithOptionalPrefix($.displayName, fsm.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], fsm.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())) || ('%fsm.group.prefix%' === 'null') || ($.displayName =~ /%fsm.group.prefix%.*/)",
     >         "mappings": [
     >             {
     >                 "sourceVariable": "entityIdTargetSystem",

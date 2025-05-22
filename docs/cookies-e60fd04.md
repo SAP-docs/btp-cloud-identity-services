@@ -507,6 +507,8 @@ If the locale is set, the emails use the language set there, if there is a templ
 
 [Groups](groups-d93be69.md "SAP Cloud Identity Services offers groups to organize users based on common characteristics, authorization, or application. Use them to efficiently manage user access and permissions within your organization's SAP Cloud Identity Services environment.")
 
+[Authorization Policies](authorization-policies-01ddefa.md "Authorization Management enables you to refine authorization policies that give access to resources in enabled SAP BTP-based business applications. Restrict policies based on the values of user or business object attributes. Assign policies to users with the group management capabilities of the identity directory.")
+
 [Configure the Remember Me Option](Operation-Guide/configure-the-remember-me-option-08d41f4.md "Tenant administrators can configure the Remember me option as visible or hidden, and checked or unchecked.")
 
 [Use the Remember Me Option](User-Guide/use-the-remember-me-option-bc7c6c6.md "With the Remember me functionality enabled, you can log on to an application without the need to provide your credentials every time you access it.")

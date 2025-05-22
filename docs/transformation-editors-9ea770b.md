@@ -154,13 +154,15 @@ Although the graphical and the JSON editors differ in the user experience they p
 
 [Transformation Types](transformation-types-1a92c56.md "Learn about the types of JSON transformations needed for the provisioning jobs.")
 
-[Transformation Examples](transformation-examples-901c759.md "The following examples explain how transformations work.")
-
 [Transformation Expressions](transformation-expressions-bb8537b.md "")
 
 [Transformation Functions](transformation-functions-0cdac7c.md "")
 
 [Transformation Variables](transformation-variables-8376adb.md "")
+
+[Transformation Conditions](transformation-conditions-f47bd39.md "A condition defines a JSON filter expression that can be applied to entity types (such as users, groups, and roles) or within attribute mappings. It can be combined with strings, constants, variables, and functions, or used within functions.")
+
+[Transformation Examples](transformation-examples-901c759.md "The following examples explain how transformations work.")
 
 [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md "You can manage transformations with graphical and JSON text editor. Regardless of which one you choose, the following initial steps are the same.")
 

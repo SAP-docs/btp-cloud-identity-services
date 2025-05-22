@@ -334,10 +334,7 @@ SCIM API 2.0 does not support managing of group assignments via the SCIM user re
     > ```
     > {
     >     "user": {
-    >         "condition": "($.emails EMPTY false) && (('%dc.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%dc.group.prefix%.+/)] empty false))",
-    >         // This condition filters the users by the group display name of their assigned groups. 
-    >         // If the dc.group.prefix is set, only users assigned to groups that contain in their display name the set specific prefix will be provisioned.
-    >         //In case the property is not set, all users are provisioned to SAP Data Custodian, regardless of the group display name of their assigned groups.
+    >         "condition": "isValidEmail($.emails[0].value) && (('%dc.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%dc.group.prefix%.*/)] empty false))",
     >         "mappings": [
     >             {
     >                 "sourceVariable": "entityIdTargetSystem",
@@ -422,7 +419,7 @@ SCIM API 2.0 does not support managing of group assignments via the SCIM user re
     >         ]
     >     },
     >     "group": {
-    >         "condition": "('%dc.group.prefix%' === 'null') || ($.displayName =~ /%dc.group.prefix%.*/)",
+    >         "condition": "isAttributeWithOptionalPrefix($.displayName, dc.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], dc.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >         "mappings": [
     >             {
     >                 "sourceVariable": "entityIdTargetSystem",
@@ -437,7 +434,7 @@ SCIM API 2.0 does not support managing of group assignments via the SCIM user re
     >                 "targetPath": "$.displayName",
     >                 "functions": [
     >                     {
-    >                         "condition": "('%dc.group.prefix%' !== 'null') && (@ =~ /%dc.group.prefix%.*/)",
+    >                         "condition": "isAttributeWithMandatoryPrefix(@, dc.group.prefix)",
     >                         "function": "replaceFirstString",
     >                         "regex": "%dc.group.prefix%",
     >                         "replacement": ""
@@ -457,7 +454,7 @@ SCIM API 2.0 does not support managing of group assignments via the SCIM user re
     >             }
     >         ]
     >     }
-    > } 
+    > }
     > ```
 
 7.  Now, add a source system from which to read users and groups. Choose from: [Source Systems](source-systems-58033be.md)

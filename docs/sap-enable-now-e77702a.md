@@ -224,7 +224,7 @@ You can use Identity Provisioning to configure SAP Enable Now as a target system
     > ```
     > {
     >     "user": {
-    >         "condition": "($.emails EMPTY false) && ($.userName EMPTY false) && isValidEmail($.emails[0].value)",
+    >         "condition": "($.userName EMPTY false) && isValidEmail($.emails[0].value) && (('%en.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%en.group.prefix%.*/)] empty false))",
     >         "mappings": [
     >             {
     >                 "targetPath": "$.id",
@@ -264,22 +264,25 @@ You can use Identity Provisioning to configure SAP Enable Now as a target system
     >         ]
     >     },
     >     "group": {
-    >         "condition": "('%en.group.prefix%' === 'null') || ($.displayName =~ /%en.group.prefix%.*/)",
+    >         "condition": "isAttributeWithOptionalPrefix($.displayName, en.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], en.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >         "mappings": [
     >             {
     >                 "targetPath": "$.id",
     >                 "sourceVariable": "entityIdTargetSystem"
     >             },
     >             {
-    >                 "constant": "urn:ietf:params:scim:schemas:core:2.0:Group",
-    >                 "targetPath": "$.schemas[0]"
+    >                 "constant": [
+    >                     "urn:ietf:params:scim:schemas:core:2.0:Group",
+    >                     "urn:ietf:params:scim:schemas:extension:sap:2.0:Group"
+    >                 ],
+    >                 "targetPath": "$.schemas"
     >             },
     >             {
     >                 "sourcePath": "$.displayName",
     >                 "targetPath": "$.displayName",
     >                 "functions": [
     >                     {
-    >                         "condition": "('%en.group.prefix%' !== 'null') && (@ =~ /%en.group.prefix%.*/)",
+    >                         "condition": "isAttributeWithMandatoryPrefix(@, en.group.prefix)",
     >                         "function": "replaceFirstString",
     >                         "regex": "%en.group.prefix%",
     >                         "replacement": ""

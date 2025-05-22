@@ -529,6 +529,7 @@ The custom domain configuration is enabled with the upgrade of Identity Authenti
 
 3.  If have you configured social identity providers, please check configuration on the social provider side, and configure correctly the redirect URI, using the new custom host.
 4.  If have you configured a corporate identity provider, please update the configuration on the corporate identity provider side.
+5.  If you already have a trusted CA added to your tenant, but after that a custom domain has been configured for that tenant, report a new incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS` to update the certificate on the custom domain as well.
 
 **Related Information**  
 
@@ -584,6 +585,8 @@ The custom domain configuration is enabled with the upgrade of Identity Authenti
 [Configure IdP-Initiated SSO](configure-idp-initiated-sso-5d59caa.md "Enable or disable IdP-Initiated SSO via the administration console for SAP Cloud Identity Services.")
 
 [Send Security Alert Emails](send-security-alert-emails-c977464.md "Send security alert emails to end-users or administrators when changes in their accounts are made.")
+
+[Enable Password Expiration Reminder](enable-password-expiration-reminder-a8de1be.md "Enable password expiration reminder for SAP Cloud Identity Services to ensure the users are aware that a password change is due.")
 
 [Send System Notifications via Emails](send-system-notifications-via-emails-aa04a8b.md "You can configure the administration console to send emails with information about expiring certificates, system notifications, new administrators, and new applications to specific email addresses or to the emails of all administrators.")
 

@@ -232,6 +232,7 @@ After fulfilling the prerequisites, follow the procedure below to add a target s
     > 
     > {
     >   "user": {
+    >     "condition": "('%fg.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%fg.group.prefix%.*/)] empty false)",
     >     "mappings": [
     >       {
     >         "sourceVariable": "entityIdTargetSystem",
@@ -365,7 +366,7 @@ After fulfilling the prerequisites, follow the procedure below to add a target s
     >     "skipOperations": [
     >       "delete"
     >     ],
-    >     "condition": "('%fg.group.prefix%' === 'null') || ($.displayName =~ /%fg.group.prefix%.*/)",
+    >      "condition": "(isAttributeWithOptionalPrefix($.displayName, fg.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], fg.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup()))",
     >     "mappings": [
     >       {
     >         "sourceVariable": "entityIdTargetSystem",
@@ -376,11 +377,11 @@ After fulfilling the prerequisites, follow the procedure below to add a target s
     >         "targetPath": "$.displayName",
     >         "functions": [
     >             {
-    >                 "condition": "('%fg.group.prefix%' !== 'null') && (@ =~ /%fg.group.prefix%.*/)",
-    >                 "function": "replaceFirstString",
-    >                 "regex": "%fg.group.prefix%",
-    >                 "replacement": ""
-    >             }
+    >             "condition": "isAttributeWithMandatoryPrefix(@, fg.group.prefix)",
+    >             "function": "replaceFirstString",
+    >             "regex": "%fg.group.prefix%",
+    >             "replacement": ""
+    >           }
     >         ]
     >       },
     >       {

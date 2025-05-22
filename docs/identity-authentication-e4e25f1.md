@@ -765,6 +765,71 @@ To create Identity Authentication as a source system, proceed as follows:
     >                 "sourcePath": "$.company",
     >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['organization']",
     >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['workAssignment']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['workAssignment']",
+    >                 "preserveArrayWithSingleElement": true,
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['jobDetails']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['jobDetails']",
+    >                 "preserveArrayWithSingleElement": true,
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['workforcePersonId']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['workforcePersonId']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['jobClassification']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['jobClassification']",
+    >                 "preserveArrayWithSingleElement": true,
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['organizationalUnit']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['organizationalUnit']",
+    >                 "preserveArrayWithSingleElement": true,
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['costCenter']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['costCenter']",
+    >                 "preserveArrayWithSingleElement": true,
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['plant']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['plant']",
+    >                 "preserveArrayWithSingleElement": true,
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['companyCode']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['companyCode']",
+    >                 "preserveArrayWithSingleElement": true,
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['generalLedgerAccount']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['generalLedgerAccount']",
+    >                 "preserveArrayWithSingleElement": true,
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['purchasingOrganization']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['purchasingOrganization']",
+    >                 "preserveArrayWithSingleElement": true,
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['purchasingGroup']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['purchasingGroup']",
+    >                 "preserveArrayWithSingleElement": true,
+    >                 "optional": true
     >             }
     >         ]
     >     },

@@ -54,7 +54,7 @@ After you view and analyze the provisioning job logs, you can download or delete
 6.  Save the ZIP file in your local file system, and then open it to view the log records of all failed entities from this job.
 
     > ### Note:  
-    > If your provisioning job is in *Pending Restart* status \(that is, temporary paused due to external reasons\), the logs for this job will be generated after it is resumed and completed. Be aware that logs for created, skipped, and failed entities, on the page where the job was paused, will be duplicated, assuming the page size property is configured for the given provisioning system. For more information, see [List of Properties](../list-of-properties-d6f3577.md).
+    > If your provisioning job is in *Pending Restart* status \(that is, temporary paused due to external reasons\), the logs for this job will be generated after it is resumed and completed. Be aware that logs for created, skipped, deleted, and failed entities, on the page where the job was paused, will be duplicated, assuming the page size property is configured for the given provisioning system. For more information, see [List of Properties](../list-of-properties-d6f3577.md).
     > 
     > For example, if you have set `concur.page.size`=30 and your job paused while processing the 20th entity on the second page, the logs for those 20 entities will be duplicated. The number of duplicated logs can be equal to or less than the configured page size. If page size is not configured, the default value of 100 will be used.
 
@@ -385,7 +385,7 @@ Download the updated entities for a single job to identify the system in which t
     > ### Code Syntax:  
     > ```
     > {"active":true,"displayName":"JohnSmith","emails":[{"value":"john.smith@example.com"}],
-    > "name":{"familyName":"Smith","givenName":"John"},"schemas":["urn:ietf:params:scim:schemas:core:2.0:User","urn:ietf:params:scim:schemas:extension:sap:2.0:User"],"urn:ietf:params:scim:schemas:extension:sap:2.0:User":{"userUuid":"0036024b-0ede-4fc3-9ed7-c55632de8246"},"urn:sap:cloud:scim:schemas:extension:custom:2.0:User":{"userId":"12345678-1a2b-1bc2-3cd4-1234567890ef"},"userName":"","userType":"public"}
+    > 													"name":{"familyName":"Smith","givenName":"John"},"schemas":["urn:ietf:params:scim:schemas:core:2.0:User","urn:ietf:params:scim:schemas:extension:sap:2.0:User"],"urn:ietf:params:scim:schemas:extension:sap:2.0:User":{"userUuid":"0036024b-0ede-4fc3-9ed7-c55632de8246"},"urn:sap:cloud:scim:schemas:extension:custom:2.0:User":{"userId":"12345678-1a2b-1bc2-3cd4-1234567890ef"},"userName":"","userType":"public"}
     > ```
 
 
@@ -399,7 +399,87 @@ Download the updated entities for a single job to identify the system in which t
 
 
 
-<a name="loio041b5ff608b944d19c53be780109506e__section_pkz_lfq_zxb"/>
+<a name="loio041b5ff608b944d19c53be780109506e__section_cbr_tn6_jdc"/>
+
+## Download All Deleted Entity Logs for a Single Job
+
+> ### Note:  
+> This functionality is available only for Identity Provisioning bundle and standalone tenants running on SAP Cloud Identity infrastructure.
+
+
+
+### Prerequisites
+
+You have set the `ips.trace.deleted.entity` property to `true` in the source system.
+
+For more information, see [List of Properties](../list-of-properties-d6f3577.md)
+
+Download the deleted entities for a single job to identify the system from which they are deleted.
+
+1.  Sign in to the administration console of SAP Cloud Identity Services and navigate to *Identity Provisioning* \> *Provisioning Logs* \> *Job Logs*.
+
+2.  In the *Job Execution Logs* screen, search for a job log and select it.
+
+3.  If the job has deleted at least one entity, you are able to choose the ![](images/IPS_Export_Icon_def37e5.png) button on the right-hand side of the *Statistics* section and select *Download All Deleted Entity Logs for This Job*.
+
+    The log is downloaded as a `zip` archive. The name of the file follows the pattern: <code>ips_jobDeletedEntitiesLogs_<i class="varname">&lt;job ID&gt;</i>_<i class="varname">&lt;date&gt;</i>_<i class="varname">&lt;time&gt;</i></code>.
+
+4.  Save the `zip` file in your local file system, and then open it to view the log records of all deleted entities for this job.
+
+    The log displays the following information:
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Entity Details
+    
+    </th>
+    <th valign="top">
+
+    Value
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *User*
+
+    *Group*
+    
+    </td>
+    <td valign="top">
+    
+    The ID of the deleted entity in the target or proxy system
+
+    For example: `12345678-1a2b-1bc2-3cd4-1234567890ef`
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *System* 
+    
+    </td>
+    <td valign="top">
+    
+    The system from which the entity is deleted. This could be either a target system or a proxy system.
+
+    For example: `IAS.target`
+    
+    </td>
+    </tr>
+    </table>
+    
+    The log is organized in sections which start with the ID of the deleted entity. If a user or a group is deleted from more than one systems, the log will display the ID of the deleted entity as many times as the number of systems from which it is deleted.
+
+
+
+
+<a name="loio041b5ff608b944d19c53be780109506e__section_plz_lfq_zxb"/>
 
 ## Download Job Logs via API
 
@@ -472,6 +552,8 @@ Possible values:
 -   `createdEntitiesLog` - Download logs containing details about the created entities for this specific job execution.
 
 -   `updatedEntitiesLog` - Download logs containing details about the updated entities for this specific job execution.
+
+-   `deletedEntitiesLog` - Download logs containing details about the deleted entities for this specific job execution.
 
 
 

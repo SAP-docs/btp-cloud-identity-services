@@ -404,6 +404,15 @@ Create an SAP CPQ proxy connector to execute hybrid scenarios. That means, it ca
     >                 "sourcePath": "$.members",
     >                 "preserveArrayWithSingleElement": true,
     >                 "targetPath": "$.members"
+    >             },
+    >             {
+    >                 "constant": "authorization",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "optional": true
     >             }
     >         ]
     >     }

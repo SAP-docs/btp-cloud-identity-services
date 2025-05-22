@@ -138,6 +138,8 @@ You can use Identity Provisioning to configure SAP HANA Cloud, SAP HANA Database
     Enter the OAuth 2.0 Token Service URL.
 
     For example: `https://demo-hc-3-test.authentication.sap.hana.ondemand.com/oauth/token`
+
+    For more information on how to obtain the value, refer to the procedure in the [User Provisioning with Identity Provisioning Service](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-administration-guide/user-provisioning-with-identity-provisioning-service?version=2025_1_QRC).
     
     </td>
     </tr>
@@ -150,6 +152,8 @@ You can use Identity Provisioning to configure SAP HANA Cloud, SAP HANA Database
     <td valign="top">
     
     \(Credential\) Enter the OAuth Client Secret, created for your SAP HANA Database system.
+
+    For more information on how to obtain the value for the technical user, refer to the procedure in the [User Provisioning with Identity Provisioning Service](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-administration-guide/user-provisioning-with-identity-provisioning-service?version=2025_1_QRC).
     
     </td>
     </tr>
@@ -200,6 +204,8 @@ You can use Identity Provisioning to configure SAP HANA Cloud, SAP HANA Database
     <td valign="top">
     
     Enter the OAuth Client Id, created for your SAP HANA Database system.
+
+    For more information on how to obtain the value for the technical user, refer to the procedure in the [User Provisioning with Identity Provisioning Service](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-administration-guide/user-provisioning-with-identity-provisioning-service?version=2025_1_QRC).
     
     </td>
     </tr>
@@ -305,6 +311,21 @@ You can use Identity Provisioning to configure SAP HANA Cloud, SAP HANA Database
     >             "prefix": "%hana.cloud.db.group.prefix%"
     >           }
     >         ]
+    >       },
+    >       {
+    >         "condition": "'%ips.application.id%' !== 'null'",
+    >         "constant": "%ips.application.id%",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true
     >       },
     >       {
     >         "sourcePath": "$.members",

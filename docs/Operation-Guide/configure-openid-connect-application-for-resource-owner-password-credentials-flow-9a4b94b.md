@@ -43,7 +43,7 @@ To configure an OpenID Connect trusted application in the administration console
 
 6.  Under the *Configure Manually* section provide a name of your choice.
 
-7.  **Optional:** \(If you added second signing certificate in tenant settings\) Under *Identity Provider Certificate*, choose the certificate to be used.
+7.  **Optional:** \(If you added second signing certificate in tenant settings\) Under *IdP Certificates*, choose the certificate to be used.
 
     > ### Tip:  
     > When the default identity provider certificate is changed with a new one, and the old one is not used anymore, we recommend you to delete the old certificate.

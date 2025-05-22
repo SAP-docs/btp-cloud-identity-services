@@ -97,20 +97,8 @@ Review the expected behavior in the following scenarios:
     Enter the OAuth 2.0 Token Service URL.
 
     For example: `https://demo-hc-3-test.authentication.sap.hana.ondemand.com/oauth/token`
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `hana.cloud.db.authenticationType`
-    
-    </td>
-    <td valign="top">
-    
-    Specifies the method by which users authenticate when connecting to the database.
 
-    The value is set to *hdb* at system creation.
+    For more information on how to obtain the value, refer to the create a service binding step in the [User Provisioning with Identity Provisioning Service](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-administration-guide/user-provisioning-with-identity-provisioning-service?version=2025_1_QRC).
     
     </td>
     </tr>
@@ -148,7 +136,25 @@ Review the expected behavior in the following scenarios:
     </td>
     <td valign="top">
     
-    Specifies the identity provider \(IdP\) that is responsible for handling authentication requests.
+    Specifies the identity provider \(IdP\) that users managed through Identity Provisioning will use for authentication.
+
+    The provider must be configured to support the authentication method specified in `hana.cloud.db.authenticationType`.
+
+    For more information on how to obtain the value, refer to the create a JWT provider step in the [User Provisioning with Identity Provisioning Service](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-administration-guide/user-provisioning-with-identity-provisioning-service?version=2025_1_QRC).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `hana.cloud.db.authenticationType`
+    
+    </td>
+    <td valign="top">
+    
+    Specifies the method by which users managed through Identity Provisioning authenticate when connecting to the database.
+
+    The authentication method is set to *JWT* \(users authenticate via JWT tokens issued by an identity provider\) during system creation.
     
     </td>
     </tr>
@@ -230,6 +236,8 @@ Review the expected behavior in the following scenarios:
     <td valign="top">
     
     \(Credential\) Enter the OAuth Client Secret, created for your SAP HANA Database system.
+
+    For more information on how to obtain the value for the technical user, refer to the procedure in the [User Provisioning with Identity Provisioning Service](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-administration-guide/user-provisioning-with-identity-provisioning-service?version=2025_1_QRC).
     
     </td>
     </tr>
@@ -280,6 +288,8 @@ Review the expected behavior in the following scenarios:
     <td valign="top">
     
     Enter the OAuth Client Id, created for your SAP HANA Database system.
+
+    For more information on how to obtain the value for the technical user, refer to the procedure in the [User Provisioning with Identity Provisioning Service](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-administration-guide/user-provisioning-with-identity-provisioning-service?version=2025_1_QRC).
     
     </td>
     </tr>
@@ -304,6 +314,7 @@ Review the expected behavior in the following scenarios:
     > ```
     > {
     >   "user": {
+    >     "condition": "('%hana.cloud.db.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%hana.cloud.db.group.prefix%.*/)] empty false)",
     >     "mappings": [
     >       {
     >         "targetPath": "$.id",
@@ -349,7 +360,7 @@ Review the expected behavior in the following scenarios:
     >     ]
     >   },
     >   "group": {
-    >     "condition": "('%hana.cloud.db.group.prefix%' === 'null') || ($.displayName =~ /%hana.cloud.db.group.prefix%.*/)",
+    >     "condition": "isAttributeWithOptionalPrefix($.displayName, hana.cloud.db.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], hana.cloud.db.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >     "mappings": [
     >       {
     >         "targetPath": "$.id",
@@ -364,7 +375,7 @@ Review the expected behavior in the following scenarios:
     >         "targetPath": "$.displayName",
     >         "functions": [
     >           {
-    >             "condition": "('%hana.cloud.db.group.prefix%' !== 'null') && (@ =~ /%hana.cloud.db.group.prefix%.*/)",
+    >             "condition": "isAttributeWithMandatoryPrefix(@, hana.cloud.db.group.prefix)",
     >             "function": "replaceFirstString",
     >             "regex": "%hana.cloud.db.group.prefix%",
     >             "replacement": ""

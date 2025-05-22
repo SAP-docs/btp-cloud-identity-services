@@ -265,6 +265,8 @@ You can
 
 [Users](users-70e95d1.md "Users in SAP Cloud Identity Services fall into two categories: administrators and end users.")
 
+[Authorization Policies](authorization-policies-01ddefa.md "Authorization Management enables you to refine authorization policies that give access to resources in enabled SAP BTP-based business applications. Restrict policies based on the values of user or business object attributes. Assign policies to users with the group management capabilities of the identity directory.")
+
 [Cookies](cookies-e60fd04.md "")
 
 [List and Edit Groups](Operation-Guide/list-and-edit-groups-5e8a55c.md "As a tenant administrator, you can list and edit information about the groups in a tenant in the administration console for SAP Cloud Identity Services.")

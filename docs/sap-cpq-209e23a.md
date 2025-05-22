@@ -310,6 +310,19 @@ Create an SAP CPQ source system to read users and groups from it.
     >                 "sourcePath": "$.members",
     >                 "preserveArrayWithSingleElement": true,
     >                 "targetPath": "$.members"
+    >             },
+    >             {  "condition": "'%ips.application.id%' !== 'null'",
+    >                 "constant": "%ips.application.id%",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+    >             },
+    >             {
+    >                 "constant": "authorization",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "optional": true
     >             }
     >         ]
     >     }
