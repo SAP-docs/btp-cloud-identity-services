@@ -28,9 +28,6 @@ Remember that it may take between two and four weeks to enable the certificate.
 > If you already have a trusted CA added to your tenant, but after that a custom domain has been configured for that tenant, report a new incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS` to update the certificate on the custom domain as well.
 
 > ### Caution:  
-> would suggest to add a a note in the documentation that if a custom CA is added to the the tenant, but then a custom domain is configured, a new request has to be created to update the certificate on the custom domain as well.
-
-> ### Caution:  
 > If the users have generated their own certificates via the profile page, they won't be able to authenticate with the configured X.509 client certificate, and vice versa.
 
 
