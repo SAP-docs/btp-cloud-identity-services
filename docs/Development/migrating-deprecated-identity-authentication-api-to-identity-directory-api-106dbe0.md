@@ -862,6 +862,18 @@ Identity Directory Service API \(Successor\)
 <tr>
 <td valign="top">
 
+``
+
+</td>
+<td valign="top">
+
+`urn:ietf:params:scim:schemas:extension:sap:2.0:User.activationUrl`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `targetUrl`
 
 </td>

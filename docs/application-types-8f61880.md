@@ -130,6 +130,8 @@ As a tenant administrator you can change the default configurations:
 
 Applications that are created by the SAP customers are recognized as charged, or third-party applications. If no URI or SAML 2.0 endpoints are specified in the configuration of the application, Identity Authentication recognizes the application as a charged one.
 
+Charged applications are created by customers for third-party \(non-SAP\) solutions. Customers are in charge of the configuration and are charged for integrating applications with Identity Authentication.
+
 All the configurations of the applications are done by you as a customer.
 
 

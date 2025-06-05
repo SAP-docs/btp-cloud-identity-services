@@ -23,7 +23,7 @@ You have an OpenID Connect application.
 3.  Choose the application that you want to edit.
 
     > ### Note:  
-    > Type the name of the application in the search field to filter the list items, or choose the application from the list on the left.
+    > Filter the list items in the search field by typing the name, display name, application ID, organization ID, or client ID, or choose the application from the list on the left.
     > 
     > If you don’t have a created application in your list, you can create one. For more information, see [Create a New Application](../Operation-Guide/create-a-new-application-0d4b255.md).
 

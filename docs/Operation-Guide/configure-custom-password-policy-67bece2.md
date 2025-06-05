@@ -36,10 +36,10 @@ To create and configure a new custom password policy, follow the procedure:
 
 2.  Choose the *Password Policies* tile.
 
-3.  Under *Password Policies*, choose the *\+ Add Custom Policy* button.
+3.  Under *Password Policies*, choose the *\+ Create* button.
 
     > ### Restriction:  
-    > You can only add one custom password policy. If you already have a custom password policy in your tenant, the *\+ Add Custom Policy* button is grayed out.
+    > You can create only one custom password policy. If you already have a custom password policy in your tenant, the *\+ Create* button is grayed out.
 
 4.  Fill in the required information in the fields.
 
@@ -211,7 +211,7 @@ To create and configure a new custom password policy, follow the procedure:
     </tr>
     </table>
     
-5.  Save your changes.
+5.  Choose *\+ Create* to save your changes.
 
     Once the password policy has been created and configured, the system displays the message ***Password policies configuration updated***.
 

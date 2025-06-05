@@ -140,6 +140,446 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+2025-06-04
+
+</td>
+<td valign="top">
+
+2025-06-04
+
+</td>
+<td valign="top">
+
+27915
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Change in provisioning job behavior \(Effective July 15, 2025\)
+
+</td>
+<td valign="top">
+
+As of July 15, 2025, provisioning jobs that skip create and delete operations and only update entities will no longer fail if those entities - previously provisioned from the source to the target system - are deleted in the target. By design, Identity Provisioning runs update jobs only for entities that exist in the target system.
+
+Instead of marking these entities as failed, Identity Provisioning will now classify them as skipped. Therefore, the job status will be Successful rather than Finished with Error.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-06-04
+
+</td>
+<td valign="top">
+
+2025-07-15
+
+</td>
+<td valign="top">
+
+27915
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Applications
+
+</td>
+<td valign="top">
+
+We have extended the application search in the administration console. Now you can filter the list items in the search field by typing the name, display name, application ID, organization ID, and client ID.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-06-04
+
+</td>
+<td valign="top">
+
+2025-06-04
+
+</td>
+<td valign="top">
+
+27915
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Analytics Cloud and SCIM System - new properties
+
+</td>
+<td valign="top">
+
+New system-specific properties are introduced for SAP Analytics Cloud and SCIM System to hold the path appended to the URL to retrieve the CSRF token.
+
+Previously, this path could be set for these systems via the property `csrf.token.path.`
+
+See [List of Properties](list-of-properties-d6f3577.md) → `sac.csrf.token.path` and `scim.csrf.token.path`.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-06-04
+
+</td>
+<td valign="top">
+
+2025-06-04
+
+</td>
+<td valign="top">
+
+27915
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Changed behavior of logging and tracing properties
+
+</td>
+<td valign="top">
+
+The behavior of the properties that enable logging and tracing for personal and sensitive data \(`ips.trace.*.entity.content`\) is changed.
+
+Setting the property to *true* is valid only for the next provisioning job execution.
+
+After the job has finished, Identity Provisioning sets the property automatically to *false*.
+
+Previously, the value set for the tracing property remained valid until it was manually changed.
+
+See [List of Properties](list-of-properties-d6f3577.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-06-04
+
+</td>
+<td valign="top">
+
+2025-06-04
+
+</td>
+<td valign="top">
+
+27915
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+REST API
+
+</td>
+<td valign="top">
+
+The `Identity Directory API` now supports new attribute `activationUrl` located in the user extension schema `urn:ietf:params:scim:schemas:extension:sap:2.0:User`. The `activationUrl` is a read-only attribute and it returns the activation link for the user account. It is returned only at the creation of the user. See [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/path/createUser).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-06-04
+
+</td>
+<td valign="top">
+
+2025-06-04
+
+</td>
+<td valign="top">
+
+27915
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
 2025-05-21
 
 </td>

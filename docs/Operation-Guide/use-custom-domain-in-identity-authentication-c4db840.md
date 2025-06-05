@@ -491,6 +491,9 @@ Identity Authentication allows you to use a custom domain that is different from
 
 7.  Send the CSR to a trusted Certificate Authority to sign the certificate.
 
+    > ### Note:  
+    > The supported algorithms are SHA-256, SHA-384 and SHA-512.
+
 8.  Access the tenant's administration console for SAP Cloud Identity Services *Applications and Resources* \> *Tenant Settings* \> *Custom Domain* \> *Certificate* and upload or insert as text the SSL certificate signed by the trusted CA.
 
     > ### Note:  
