@@ -13,6 +13,8 @@ Version property set to `1` means that your connector is using the initial API. 
 > ### Note:  
 > Before updating your connector to a new version, it is always a good practice to export the system for backup purposes. See: [Export and Import Systems](export-and-import-systems-1de7de0.md)
 
+We recommend proceeding with the update of the connector version after executing successfully a provisioning job in **full read** mode for the existing version of the provisioning system.
+
 To update your connector to use a new API, proceed as follows:
 
 
@@ -103,6 +105,26 @@ To update your connector to use a new API, proceed as follows:
         <tr>
         <td valign="top">
         
+        SAP Integrated Business Planning for Supply Chain
+        
+        </td>
+        <td valign="top">
+        
+        `ibp.api.version` 
+        
+        </td>
+        <td valign="top">
+        
+        -   *1* - SAP Integrated Business Planning API: Business User \(Version 1\) is used. This is the default value.
+        -   *2* - SCIM Interface for IAM \(Version 2\)
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
         SAP Sales Cloud and SAP Service Cloud
         
         </td>
@@ -121,6 +143,8 @@ To update your connector to use a new API, proceed as follows:
         -   `2` - Version 2 \(SOAP-based API\)
 
         -   `3` - Version 3 \(SCIM 2.0 based API\)
+
+        -   `4` - Version 4 \(SCIM 2.0 based API\) applicable for SAP Sales Cloud Version 2 and SAP Service Cloud Version 2 only
 
 
 
@@ -304,6 +328,33 @@ To update your connector to use a new API, proceed as follows:
         -   Version 1: `/api/v1/scim/Users?count=1`
 
         -   Version 2: `/api/v1/scim2/Users?count=1`
+
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        SAP Integrated Business Planning for Supply Chain
+        
+        </td>
+        <td valign="top">
+        
+        `ibp.user.unique.attribute` 
+        
+        </td>
+        <td valign="top">
+        
+        -   Version 1:
+            -   `personExternalID`
+            -   `emails[0].value`
+
+        -   Version 2:
+            -   `userName`
+            -   `emails[0].value`
+            -   `externalId`
 
 
 

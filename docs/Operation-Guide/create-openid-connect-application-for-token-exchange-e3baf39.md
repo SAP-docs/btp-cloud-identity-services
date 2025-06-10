@@ -152,15 +152,5 @@ To create a new OpenID Connect application follow the procedure below:
 **Related Information**  
 
 
-[Create OpenID Connect Application for Authorization Code Flow](create-openid-connect-application-for-authorization-code-flow-8445e3f.md "Create a new OpenID Connect application for authorization code flow.")
-
-[Create OpenID Connect Application for Client Credentials Flow](create-openid-connect-application-for-client-credentials-flow-98015c8.md "You can create a new OpenID Connect application.")
-
-[Create OpenID Connect Application for Resource Owner Password Credentials Flow](create-openid-connect-application-for-resource-owner-password-credentials-flow-e5b761a.md "You can create a new OpenID Connect application.")
-
-[Create OpenID Connect Application for Implicit Flow](create-openid-connect-application-for-implicit-flow-b19f5e3.md "Create a new OpenID Connect application for implicit flow.")
-
-[Create OpenID Connect Application for JWT Bearer Flow](create-openid-connect-application-for-jwt-bearer-flow-b099d8c.md "Create a new OpenID Connect application for JWT bearer flow.")
-
 [OAuth 2.0 Token Exchange](https://datatracker.ietf.org/doc/html/rfc8693)
 

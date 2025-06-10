@@ -97,6 +97,10 @@ Mandatory for every read transformation \(in source and proxy systems\). It spec
 
 Use this mapping with caution, as it can overwrite the value of the ID returned by the source system.
 
+It is not recommended to change the attribute specified in the source path of the mapping. Such change may cause incorrect deletion of entities from the target system.
+
+In case you should change the mapping for the variable, you must reset the source system. For more information, see [Reset Identity Provisioning System](Operation-Guide/reset-identity-provisioning-system-0bc1e53.md).
+
 > ### Example:  
 > ```
 > {
@@ -127,25 +131,18 @@ entityIdTargetSystem
 
 Mandatory for every write transformation \(in target and proxy systems\). It specifies which attribute of a written entity to be considered as a unique ID in the target system. This variable is defined by the target system according to the system response during entity creation, or is read from the Identity Provisioning database during entity modification or deletion.
 
+It is not recommended to change the attribute specified in the target path of the mapping. Such change may cause incorrect deletion of entities from the target system.
+
+In case you should change the mapping for the variable, you must reset the target system. For more information, see [Reset Identity Provisioning System](Operation-Guide/reset-identity-provisioning-system-0bc1e53.md).
+
 
 
 > ### Example:  
 > ```
 > {
->   "scope": "deleteEntity",
->   "sourceVariable": "entityIdTargetSystem",
->   "targetVariable": "entityIdTargetSystem",
->   "functions": [
->     {
->       "type": "decode",
->       "algorithm": "base32",
->       "skipPadding": true
->     },
->     {
->       "type": "toString"
->     }
->   ]
-> }
+>           "sourceVariable": "entityIdTargetSystem",
+>           "targetPath": "$.id"
+>         }
 > ```
 
 

@@ -356,7 +356,14 @@ Groups in source systems are mapped to roles in AS ABAP target systems.
 
     -   Use the default transformation if the version of your AS ABAP system is *7.40* or higher. If your system version is *7.31*, you can still use this transformation – just apply SAP Note [1695883](https://me.sap.com/notes/1695883).
 
-        **Note:** If a user is *inactive* in the source system, the default transformation creates it as *inactive* \(locked\) in AS ABAP too.
+        **Note:** *Active* and *inactive* users are handled as follows:
+
+        -   If a user is *inactive* in the source system, Identity Provisioning creates it as *inactive* \(locked\) in AS ABAP target system too.
+
+        -   If a user is *active* in the source system, Identity Provisioning sets the `LOCK` value to `"U"` when updating the user in the AS ABAP target system.
+
+        -   If a user is *inactive* in the source system, Identity Provisioning sets the `LOCK` value to `"L"` when updating the user in the AS ABAP target system.
+
 
         > ### Code Syntax:  
         > ```

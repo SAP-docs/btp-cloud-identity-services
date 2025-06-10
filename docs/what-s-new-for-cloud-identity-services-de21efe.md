@@ -397,9 +397,7 @@ Changed behavior of logging and tracing properties
 
 The behavior of the properties that enable logging and tracing for personal and sensitive data \(`ips.trace.*.entity.content`\) is changed.
 
-Setting the property to *true* is valid only for the next provisioning job execution.
-
-After the job has finished, Identity Provisioning sets the property automatically to *false*.
+Setting the property to *true* is valid only for the next provisioning job execution. After the job has finished, Identity Provisioning sets the property automatically to *false*.
 
 Previously, the value set for the tracing property remained valid until it was manually changed.
 

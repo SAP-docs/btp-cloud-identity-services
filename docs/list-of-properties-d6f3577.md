@@ -2716,7 +2716,9 @@ All systems
 </td>
 <td valign="top">
 
-If a provisioning job repeatedly fails and you need problem investigation, you can enable logging and tracing for the personal and sensitive data of your provisioned entities. To do this, set this property to *true*.
+If a provisioning job repeatedly fails and you need problem investigation, you can enable logging and tracing for the personal and sensitive data of your provisioned entities.
+
+To do this, set the property to *true* to enable logging and tracing for the personal and sensitive data of your provisioned entities by the next executed job. After the job has finished, the property is automatically set to *false*.
 
 If the property is not set, in the logs you see: `content = <hidden content>`
 
@@ -2751,7 +2753,7 @@ All systems
 
 If a provisioning job results in skipping entities from source or target systems, you can view the details for each skipped user and group.
 
-To do this, you need to enable logging and tracing for the personal and sensitive data of your provisioned entities by setting the property to *true*.
+To do this, set the property to *true* to enable logging and tracing for the personal and sensitive data of your provisioned entities by the next executed job. After the job has finished, the property is automatically set to *false*.
 
 If the property is not set, in the logs you see: `content = <hidden content>`
 
@@ -2786,7 +2788,7 @@ All systems
 
 If a provisioning job results in created entities in target or proxy systems, you can view the details for each created user and group.
 
-To do this, you need to enable logging and tracing for the personal and sensitive data of your provisioned entities by setting the property to *true*.
+To do this, set the property to *true* to enable logging and tracing for the personal and sensitive data of your provisioned entities by the next executed job. After the job has finished, the property is automatically set to *false*.
 
 If the property is not set, in the logs you see: `content = <hidden content>`
 
@@ -2821,7 +2823,7 @@ All systems
 
 If a provisioning job results in updated entities in target or proxy systems, you can view the details for each updated user and group.
 
-To do this, you need to enable logging and tracing for the personal and sensitive data of your provisioned entities by setting the property to *true*.
+To do this, set the property to *true* to enable logging and tracing for the personal and sensitive data of your provisioned entities by the next executed job. After the job has finished, the property is automatically set to *false*.
 
 If the property is not set, in the logs you see: `content = <hidden content>`
 
@@ -5131,7 +5133,37 @@ Microsoft Entra ID
 
 Path which is appended to the URL to retrieve the CSRF token.
 
-The property is automatically added during system creation, when the system in use is SAP Analytics Cloud consuming SCIM API version 2.
+The property can be configured for the following provisioning systems:
+
+-   SCIM System
+-   SAP Analytics Cloud
+
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+-   SAP Analytics Cloud
+
+-   SCIM System
+
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`sac.csrf.token.path` 
+
+</td>
+<td valign="top">
+
+Path which is appended to the URL to retrieve the CSRF token.
+
+The property is automatically added during system creation, when the SAP Analytics Cloud system consumes SCIM API version 2.
 
 Based on the version of the SCIM API consumed, the default value for the property is:
 
@@ -5143,7 +5175,7 @@ Based on the version of the SCIM API consumed, the default value for the propert
 -   SAP Analytics Cloud SCIM API version 2: `/api/v1/scim2/Users?count=1`
 
     > ### Note:  
-    > If you delete the property, the Identity Provisioning will use the default value for the property for SAP Analytics Cloud using SCIM API**version 1**.
+    > If you delete the property, Identity Provisioning will use the default value for the property for SAP Analytics Cloud using SCIM API**version 1**.
 
 
 **System Role:** Target, Proxy
@@ -5152,6 +5184,30 @@ Based on the version of the SCIM API consumed, the default value for the propert
 <td valign="top">
 
 SAP Analytics Cloud
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`scim.csrf.token.path` 
+
+</td>
+<td valign="top">
+
+Path which is appended to the URL to retrieve the CSRF token.
+
+The property is not automatically added during system creation.
+
+> ### Note:  
+> A CSRF token will be fetched upon request only when `scim.api.csrf.protection` is set to *enabled*.
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SCIM System
 
 </td>
 </tr>
@@ -5669,7 +5725,7 @@ You can use the example value or provide your own.
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain
+SAP Integrated Business Planning for Supply Chain \(using version 1 - SAP Integrated Business Planning API: Business User\) 
 
 </td>
 </tr>
@@ -5699,7 +5755,7 @@ Default value \(if the property appears during system creation\): *false*
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain
+SAP Integrated Business Planning for Supply Chain \(using version 1 - SAP Integrated Business Planning API: Business User\) 
 
 </td>
 </tr>
@@ -5963,7 +6019,7 @@ For example, if you set the property's value = *30*, the Identity Provisioning w
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain
+SAP Integrated Business Planning for Supply Chain \(using version 1 - SAP Integrated Business Planning API: Business User\) 
 
 </td>
 </tr>
@@ -5991,7 +6047,7 @@ Default value: *false*
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain
+SAP Integrated Business Planning for Supply Chain \(using version 1 - SAP Integrated Business Planning API: Business User\) 
 
 </td>
 </tr>
@@ -6018,7 +6074,7 @@ If you enter a number larger than 100, the service will replace it with the defa
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain
+SAP Integrated Business Planning for Supply Chain \(using version 1 - SAP Integrated Business Planning API: Business User\) 
 
 </td>
 </tr>
@@ -6030,7 +6086,7 @@ SAP Integrated Business Planning for Supply Chain
 </td>
 <td valign="top">
 
-This property defines the API version which is consumed by the which is consumed by the SAP Integrated Business Planning for Supply Chain system.
+This property defines the API version which is consumed by the SAP Integrated Business Planning for Supply Chain system.
 
 **Possible values:**
 
@@ -6058,16 +6114,29 @@ SAP Integrated Business Planning for Supply Chain
 
 When specified, only those SAP Integrated Business Planning for Supply Chain groups matching the filter expression will be read.
 
-**Possible values:**
+Supported operators: eq \(equal\), co \(contains\), and sw \(starts with\).
 
-For example: *displayName eq "ProjectTeam1"*
+**Possible values:**:
+
+-   `displayName`
+-   `externalId`
+-   `urn:ietf:params:scim:schemas:extension:sap:2.0:Group:type`
+
+For example:
+
+-   *displayName co "ProjectTeam1" or "Students2023"*
+-   *externalId eq "12345678" or externalId sw "123"*
+-   *urn:ietf:params:scim:schemas:extension:sap:2.0:Group:type eq "authorization" and externalId eq "12345678"*
+
+> ### Note:  
+> These combinations are valid for both 'or' and 'and' operators.
 
 **System Role:** Source
 
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain \(SCIM API version 2\)
+SAP Integrated Business Planning for Supply Chain \(using version 2 - SCIM Interface for IAM\)
 
 </td>
 </tr>
@@ -6099,7 +6168,7 @@ You can use the example value or provide your own.
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain \(SCIM API version 2\)
+SAP Integrated Business Planning for Supply Chain \(using version 2 - SCIM Interface for IAM\)
 
 </td>
 </tr>
@@ -6147,7 +6216,7 @@ For example:
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain \(SCIM API version 2\)
+SAP Integrated Business Planning for Supply Chain \(using version 2 - SCIM Interface for IAM\)
 
 </td>
 </tr>
@@ -6159,18 +6228,35 @@ SAP Integrated Business Planning for Supply Chain \(SCIM API version 2\)
 </td>
 <td valign="top">
 
-When specified, only those SAP Integrated Business Planning for Supply Chain users matching the filter expression will be read.
+When specified, only those SAP Integrated Business Planning for Supply Chain users matching the filter expression will be read. You can filter users by **list of attributes** according to the API syntax of SAP Integrated Business Planning for Supply Chain.
+
+You can set a single attribute or multiple ones as filter criteria. If you enter multiple attributes \(using OR operator\), the filter will search for any of them.
+
+Supported operators: eq \(equal\), ne \(not equal\), sw \(starts with\), ew \(ends with\) and co \(contains\)
 
 **Possible values:**
 
-For example: *userName eq "SmithJ"*
+-   `userName`
+-   `externalId`
+-   `emails.value`
+
+For example:
+
+-   *userName eq "johnbrown" and externalId eq "P000252"*
+-   *userName sw "J" or externalId eq "P000252"*
+-   *userName eq "johnbrown" and emails.value eq "johnbrown@email.com"*
+-   *userName eq "johnbrown" and emails.value ne "johnbrown@email.com" or externalId eq "P000252"*
+
+    > ### Note:  
+    > These combinations are valid for both 'or' and 'and' operators.
+
 
 **System Role:** Source, Proxy
 
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain \(SCIM API version 2\)
+SAP Integrated Business Planning for Supply Chain \(using version 2 - SCIM Interface for IAM\)
 
 </td>
 </tr>
@@ -6283,7 +6369,7 @@ Default value: *true*
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain
+SAP Integrated Business Planning for Supply Chain \(using version 1 - SAP Integrated Business Planning API: Business User\) 
 
 </td>
 </tr>
@@ -6304,7 +6390,7 @@ To learn what criteria you can use, see: [OData URI Conventions](https://www.oda
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain
+SAP Integrated Business Planning for Supply Chain \(using version 1 - SAP Integrated Business Planning API: Business User\) 
 
 </td>
 </tr>
@@ -6365,21 +6451,19 @@ SAP Marketing Cloud
 </td>
 <td valign="top">
 
-Specifies whether to fetch a CSRF token when sending requests to the system. The property is automatically added in the system, with default value: *enabled*.
+Specifies whether to fetch a CSRF token when sending requests to the system.
 
 **Possible values:**
 
 -   *enabled*
 -   *disabled*
 
-Default value: *enabled*
-
-**System Role:** Source, Target, Proxy
+**System Role:** Target, Proxy
 
 </td>
 <td valign="top">
 
-SAP Analytics Cloud
+SCIM System
 
 </td>
 </tr>
@@ -6400,7 +6484,7 @@ Specifies whether to fetch a CSRF token when sending requests to the system. The
 
 Default value: *enabled*
 
-**System Role:** Source, Target, Proxy
+**System Role:** Target, Proxy
 
 </td>
 <td valign="top">
@@ -8139,7 +8223,7 @@ SAP SuccessFactors supports a huge amount of user information, which requires a 
 > -   extra mappings for these attributes in the *user* transformation
 > -   extra mappings for these attributes in the write transformation of the relevant target system
 
-> ### Remember:  
+> ### Note:  
 > Always make sure that attribute `lastModifiedDateTime` is in the list. If you don't specify it, the provisioning from/to SAP SuccessFactors will fail.
 
 **System Role:** Source, Target, Proxy
@@ -8376,7 +8460,7 @@ The value of this property is the location of your Cloud Foundry identity provid
 
 **Possible values:** Text/numeric string
 
-**System Role:** Source, Target, Proxy
+**** Source, Target, Proxy
 
 </td>
 <td valign="top">
@@ -9051,7 +9135,7 @@ Identity Authentication \(SCIM API version 2\)
 
 This property controls how modified entities \(users and groups\) in the source system are updated in the target system.
 
--   If set to *true*, Identity Provisioning sends a `PATCH` request to the user or group resource in the target system. Only attributes without `"scope"` in the attribute mappings in the write transformation will be updated.
+-   If set to *true*, Identity Provisioning sends a `PATCH``"scope"` urn:ietf:params:scim:schemas:extension:enterprise:2.0:User:department eq "Dev" and in the attribute mappings in the write transformation will be updated.
 
     For example, if the last name of a user is changed in the source system, the patch operation will update it in the target system and will leave unchanged other attributes with "scope": "createEntity", such as:
 
@@ -13033,6 +13117,32 @@ Possible values:
 
 Default value: *personExternalID*
 
+The possible values of this property depend on the API version which your SAP Integrated Business Planning for Supply Chain system consumes.
+
+Possible values:
+
+-   If your system consumes SAP Integrated Business Planning API: Business User, you can use *personExternalID* and *emails\[0\].value* as filter attributes.
+
+    According to your use case, choose how to set up the property:
+
+    -   Default behavior: This property does not appear in the UI during system creation. Its default value is *personExternalID*. That means, if the service finds an existing user by a *personExternalID*, it updates this user with the data of the conflicting one.
+
+        If a user with such а *personExternalID* is not found, the creation of the conflicting user fails.
+
+    -   Value = *emails\[0\].value*. If the service finds an existing user matching both unique attributes *email* and *personExternalID*, it updates this user with the data of the conflicting one. If the service finds an existing user matching only the *email*, the update of the existing user fails.
+
+        If a user with such *email* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+
+
+-   If your system consumes SCIM Interface for IAM, you can use *userName*, *emails\[0\].value*, *externalId*, or another SCIM attribute, or a conjunction of SCIM attributes as filter attributes.
+
+    According to your use case, choose how to set up the property:
+
+    -   Default behavior: This property is missing during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such а *userName* is not found, the creation of the conflicting user fails.
+    -   Value = *emails\[0\].value*. If the service finds an existing user with such *email*, it updates this user with the data of the conflicting one. If a user with such *email* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+    -   Value = *userName,emails\[0\].value*. If the service finds an existing user with both these *userName* and *email*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+
+
 **System Role:** Target
 
 </td>
@@ -15136,11 +15246,11 @@ When Identity Provisioning attempts to provision a user for the first time, it m
 
 This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\). If the service finds such a user on the target system via this filter, then the conflicting user will overwrite the existing one. If the service does not find such a user, the creation will fail.
 
-The property is automatically added during system creation. If the service finds an existing user by at least one of the uniqueness criteria, which are *email*, *userName*, or *externalId*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the update of the conflicting user fails. If more than one users with these unique attributes are found, the update fails.
+The property is automatically added during system creation. If the service finds an existing user by at least one of the uniqueness criteria, which are *userName* and *externalId*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the update of the conflicting user fails. If more than one users with these unique attributes are found, the update fails.
 
-Possible values:*emails\[0\].value, userName, externalId*
+Possible values:*userName, externalId*
 
-Default value: *emails\[0\].value, userName, externalId*
+Default value: *userName, externalId*
 
 System Role: Target
 

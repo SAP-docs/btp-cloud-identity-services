@@ -12,6 +12,15 @@ There might be times when you would like to delete the current Identity Provisio
 
 This operation is called *system reset*. If you choose it, you only clear the Identity Provisioning operational data. The system configurations and all existing read and provisioned entities, along with their authorizations, will be preserved. To learn more, see: [Transformations](../transformations-81f5204.md) 
 
+Cases that require reset of the provisioning system are:
+
+-   Updating the version of the provisioning source or target system; For more information, see [Update Connector Version](update-connector-version-8558733.md).
+-   Changing the attribute mapped to the variable *entityIdSourceSystem* \(for a source system\) or *entityIdTargetSystem* \(for a target system\); For more information, see [Transformation Variables](../transformation-variables-8376adb.md).
+-   Resetting Identity Authentication target system might be needed after an SAP SuccessFactors instance refresh. For more information, see SAP Note [2954491](https://me.sap.com/notes/2954491).
+-   Database restore of the back-end target system \(for example, Identity Authentication\). After restoring a previously saved state of the database, some data or configurations might be out of sync. It’s recommended that you reset the system before running a provisioning job.
+
+In all other cases, reset is not required, nor recommended. If you have any concerns, report an incident on [SAP Support Portal Home](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Fsupport.sap.com%2Fen%2Findex.html) for the *BC-IAM-IPS* component.
+
 If you want to reset your system, proceed as follows:
 
 
