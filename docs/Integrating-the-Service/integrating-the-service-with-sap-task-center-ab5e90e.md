@@ -98,6 +98,8 @@ For more information on how to provision the Global User ID from your SAP Identi
 
 [Integrating the Service with Microsoft Entra ID](integrating-the-service-with-microsoft-entra-id-626b173.md "")
 
+[Hybrid Scenario: SAP Identity Management](hybrid-scenario-sap-identity-management-6fa419a.md "You can execute hybrid scenarios between provisioning systems from the Identity Provisioning UI and external systems that support SCIM 2.0 protocol.")
+
 [Blogs](blogs-a89ca3e.md "Links to blogs and documents about integration scenarios with Identity Authentication.")
 
 [System Integration Guide for SAP Cloud Identity Services and SAP Task Center](https://help.sap.com/viewer/b95c3d5bab324a3a8409eee5267a5b75/Cloud/en-US/27947dfb325047018603446439050a6b.html)

@@ -217,6 +217,37 @@ Create a general SCIM 2.0 based proxy connector to execute hybrid scenarios. Tha
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    `scim.csrf.token.path`
+    
+    </td>
+    <td valign="top">
+    
+    Path which is appended to the URL to retrieve the CSRF token.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `scim.api.csrf.protection`
+    
+    </td>
+    <td valign="top">
+    
+    Specifies whether to fetch a CSRF token when sending requests to the system.
+
+    **Possible values:**
+
+    -   *enabled*
+    -   *disabled*
+
+
+    
+    </td>
+    </tr>
     </table>
     
     To learn what additional properties are relevant to this system, see [List of Properties](list-of-properties-d6f3577.md). You can use the main search, or filter properties by the *Name* or *System Type* columns.
@@ -399,7 +430,7 @@ Create a general SCIM 2.0 based proxy connector to execute hybrid scenarios. Tha
 
 When a proxy system is connected to an external backend system \(in the case of SAP Identity Management this means the exported CSV file is imported into the Identity Management Admin UI and a repository is configured\), you can start managing the users and groups into this external system. Usually, the first operation is the initial load of the existing entities into your external system. When this load has finished, changes in the external system, such as creating new users or updating existing ones, can trigger CRUD requests back to the proxy system.
 
-To see an example with SAP Identity Management, see [Hybrid Scenario: SAP Identity Management](https://help.sap.com/docs/identity-provisioning/identity-provisioning/hybrid-scenario-sap-identity-management?version=Cloud) → sections **Next Steps** and **Future Identity Lifecycle**.
+To see an example with SAP Identity Management, see [Hybrid Scenario: SAP Identity Management](Integrating-the-Service/hybrid-scenario-sap-identity-management-6fa419a.md) → sections **Next Steps** and **Future Identity Lifecycle**.
 
 > ### Caution:  
 > Effective **September 2020**, Shanghai \(China\) tenants that reside on SAP BTP, Neo environment can be only accessed on the following domain: `dispatcher.cn1.platform.sapcloud.cn`

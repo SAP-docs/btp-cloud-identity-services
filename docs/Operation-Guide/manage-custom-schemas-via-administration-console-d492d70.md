@@ -19,7 +19,7 @@ To be used, the custom attributes must be assigned to the user first. For more i
 
 You can define a schema either by importing a JSON file, which must comply with the SCIM standard, or by creating it manually via the administration console.
 
-You can check the available schemas in the tenant, and use one of the predefined schemas. You can also import, or manually create your custom schema. The maxim number of all custom schemas, imported and manually created, per tenant is 20. Each schema can have up to 20 attributes. Each multivalued attribute of type `complex` can have up to 20 subattributes.
+You can check the available schemas in the tenant, and use one of the predefined schemas. You can also import, or manually create your custom schema. The maximum number of all custom schemas, imported and manually created, per tenant is 20. Each schema can have up to 20 attributes. Each multivalued attribute of type `complex` can have up to 20 subattributes.
 
 You can also download a schema template or any of the already existing schemas. You can use the template to define your own schema extensions.
 

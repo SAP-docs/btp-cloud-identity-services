@@ -309,35 +309,50 @@ These source systems consume SCIM 2.0 API provided by SAP Intelligent Agricultur
     >         ]
     >     },
     >     "group": {
-    >         "mappings": [
-    >             {
-    >                 "sourcePath": "$.schemas",
-    >                 "targetPath": "$.schemas",
-    >                 "preserveArrayWithSingleElement": true
-    >             },
-    >             {
-    >                 "sourcePath": "$.id",
-    >                 "targetVariable": "entityIdSourceSystem"
-    >             },
-    >             {
-    >                 "sourcePath": "$.displayName",
-    >                 "targetPath": "$.displayName",
-    >                 "functions": [
-    >                     {
-    >                         "function": "concatString",
-    >                         "condition": "'%ia.group.prefix%' !== 'null'",
-    >                         "prefix": "%ia.group.prefix%"
-    >                     }
-    >                 ]
-    >             },
-    >             {
-    >                 "sourcePath": "$.members",
-    >                 "targetPath": "$.members",
-    >                 "optional": true,
-    >                 "preserveArrayWithSingleElement": true
-    >             }
+    >     "mappings": [
+    >       {
+    >         "sourcePath": "$.schemas",
+    >         "targetPath": "$.schemas",
+    >         "preserveArrayWithSingleElement": true
+    >       },
+    >       {
+    >         "sourcePath": "$.id",
+    >         "targetVariable": "entityIdSourceSystem"
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$.displayName",
+    >         "functions": [
+    >           {
+    >             "function": "concatString",
+    >             "condition": "'%ia.group.prefix%' !== 'null'",
+    >             "prefix": "%ia.group.prefix%"
+    >           }
     >         ]
-    >     }
+    >       },
+    >       {
+    >         "condition": "'%ips.application.id%' !== 'null'",
+    >         "constant": "%ips.application.id%",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.members",
+    >         "targetPath": "$.members",
+    >         "optional": true,
+    >         "preserveArrayWithSingleElement": true
+    >       }
+    >     ]
+    >   }
     > }
     > ```
 

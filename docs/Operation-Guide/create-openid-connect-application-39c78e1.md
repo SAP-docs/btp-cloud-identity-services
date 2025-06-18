@@ -1,18 +1,20 @@
-<!-- loiob19f5e3dcdfd48149074bfa67623e84b -->
+<!-- copy39c78e13e5164e2795180364325835a2 -->
 
-# Create OpenID Connect Application for Implicit Flow
+# Create OpenID Connect Application
 
-Create a new OpenID Connect application for implicit flow.
+You can create a new OpenID Connect application.
 
 
 
 ## Context
 
+To create a new OpenID Connect application you have to add a new application to the list of applications in Identity Authentication, and set the protocol of the application to OpenID Connect.
+
 To create a new OpenID Connect application follow the procedure below:
 
 
 
-<a name="loiob19f5e3dcdfd48149074bfa67623e84b__steps_qqh_hfk_q4"/>
+<a name="copy39c78e13e5164e2795180364325835a2__steps_qqh_hfk_q4"/>
 
 ## Procedure
 
@@ -119,7 +121,7 @@ To create a new OpenID Connect application follow the procedure below:
 
 
 
-<a name="loiob19f5e3dcdfd48149074bfa67623e84b__postreq_xsy_mpp_pyb"/>
+<a name="copy39c78e13e5164e2795180364325835a2__postreq_xsy_mpp_pyb"/>
 
 ## Next Steps
 

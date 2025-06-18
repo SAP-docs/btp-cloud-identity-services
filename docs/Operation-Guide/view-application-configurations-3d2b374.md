@@ -25,7 +25,7 @@ You are assigned the *Manage Applications* role. For more information about how 
 3.  Choose the application that you want to view.
 
     > ### Note:  
-    > Type the name of the application in the search field to filter the list items, or choose the application from the list on the left.
+    > Filter the list items in the search field by typing the name, display name, application ID, organization ID, or client ID, or choose the application from the list on the left.
 
 
 

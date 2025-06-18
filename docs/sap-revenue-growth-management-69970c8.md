@@ -1,31 +1,35 @@
-<!-- loioc21306b5852846fb9471f0c4ce8e30e4 -->
+<!-- loio69970c83bbc84862ac205b8c0b525198 -->
 
-# SAP Fieldglass
+# SAP Revenue Growth Management
 
-Follow this procedure to set up a proxy connector for SAP Fieldglass.
+Follow this procedure to set up SAP Revenue Growth Management as a proxy system.
 
 
 
-<a name="loioc21306b5852846fb9471f0c4ce8e30e4__prereq_gvh_45y_rdb"/>
+<a name="loio69970c83bbc84862ac205b8c0b525198__prereq_qcc_vk2_2cb"/>
 
 ## Prerequisites
 
--   You have created an API application key and a web service. To do that, follow the steps on page: [Create API Application Key or Web Service](https://help.sap.com/docs/SAP_FIELDGLASS_INTEGRATION/73c0a1be6aaa46ef9b66b1c3f28a77f4/ea00dcbe002748d09cc1fef57668bcc1.html) and [Web Services Setup](https://help.sap.com/docs/SAP_FIELDGLASS_INTEGRATION/73c0a1be6aaa46ef9b66b1c3f28a77f4/b61abedb5df34f138d9e479d15f97364.html?locale=en-US)
+> ### Restriction:  
+> This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.
 
-    You will need the values of *Virtual Person Name \(Username\)* and *License Key* for the configuration of your proxy system \(**step 6** below\).
+-   You have created an SAP Revenue Growth Management consumer application in your SAP Cloud Identity Services tenant and defined a dependency to its API, as described in [Configure Integration Between Applications](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/communicate-between-applications?locale=en-US&version=Cloud). *UserImport* must be selected for the dependency *API*.
+
+-   You have generated API credentials for the consumer application, as described in [Generate Credentials to Access the APIs of an Application](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/quick-start-dependent-applications?version=Cloud).
 
 
-> ### Note:  
-> Administrators of bundle tenants on Neo environment should enable the *Manage OAuth Clients* permission, as described in *Neo Environment* section in [Manage Authorizations](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/544de9b504214372b4479dc1f6b08cca.html "Manage the authorizations of Identity Provisioning administrators, when your bundle or standalone tenant is running on SAP BTP, Neo environment.") :arrow_upper_right:.
 
 
+<a name="loio69970c83bbc84862ac205b8c0b525198__context_wrv_lyn_vdb"/>
 
 ## Context
 
-You can use SAP Fieldglass as a proxy connector to execute *hybrid* scenarios. That means, it can provision its entities to another \(external\) back-end system by request, and then can continue executing CRUD operations back to SAP Fieldglass, whenever the external back-end requests such. This scenario supports:
+SAP Revenue Growth Management is an SAP BTP SaaS application that provides customers in the Consumer Products industry an easy way to efficiently create, monitor, and maintain account plans.
 
--   Reading of **users** and **groups**
--   Writing of **users** and **assignments** 
+You can use Identity Provisioning to configure SAP Revenue Growth Management as a proxy system in hybrid scenarios. For example, when SAP Revenue Growth Management is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision users and groups to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users and group back to the SAP Revenue Growth Management.
+
+> ### Note:  
+> Support for groups is intended for future use.
 
 > ### Note:  
 > The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users and groups. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
@@ -87,7 +91,7 @@ You can use SAP Fieldglass as a proxy connector to execute *hybrid* scenarios. T
     -   [Access Identity Provisioning UI of Bundle Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/7ab5884ffbc44461a57622d2f633e57c.html "Access the Identity Provisioning UI when the service is bundled as part of an SAP cloud solution's license.") :arrow_upper_right:
     -   [Access Identity Provisioning UI of Standalone Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/61fd82ed48ab42b2bc74626926c1722c.html "Access the Identity Provisioning user interface as a standalone product.") :arrow_upper_right:
 
-5.  Add *SAP Fieldglass* as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
+5.  Add *SAP Revenue Growth Management* as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
 6.  Choose the *Properties* tab to configure the connection settings for your system.
 
@@ -110,7 +114,7 @@ You can use SAP Fieldglass as a proxy connector to execute *hybrid* scenarios. T
     </th>
     <th valign="top">
 
-    Value
+    Description & Value
     
     </th>
     </tr>
@@ -134,9 +138,7 @@ You can use SAP Fieldglass as a proxy connector to execute *hybrid* scenarios. T
     </td>
     <td valign="top">
     
-    Specify your SAP Fieldglass environment URL.
-
-    For example: *https://abc123.fgvms.com*
+    Enter the base URL of your SAP Revenue Growth Management system's SCIM API, excluding any path information.
     
     </td>
     </tr>
@@ -148,7 +150,7 @@ You can use SAP Fieldglass as a proxy connector to execute *hybrid* scenarios. T
     </td>
     <td valign="top">
     
-    Enter: *Internet* 
+    Enter: *Internet*
     
     </td>
     </tr>
@@ -172,7 +174,7 @@ You can use SAP Fieldglass as a proxy connector to execute *hybrid* scenarios. T
     </td>
     <td valign="top">
     
-    Enter your *Virtual Person Name \(Username\)* – see the **Prerequisites** section above.
+    Enter the client ID generated when creating API credentials for the consumer application. For more information, see [Generate Credentials to Access the APIs of an Application](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/quick-start-dependent-applications?version=Cloud).
     
     </td>
     </tr>
@@ -184,7 +186,19 @@ You can use SAP Fieldglass as a proxy connector to execute *hybrid* scenarios. T
     </td>
     <td valign="top">
     
-    \(Credential\) Enter your *License Key* – see the **Prerequisites** section above.
+    \(Credential\) Enter the client secret generated when creating API credentials for the consumer application. For more information, see [Generate Credentials to Access the APIs of an Application](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/quick-start-dependent-applications?version=Cloud).
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `rgm.userImport.api.dependency.name`
+    
+    </td>
+    <td valign="top">
+    
+    Enter the value of the dependency name used in the configuration of the SAP Revenue Growth Management consumer application, created in the SAP Cloud Identity Services tenant. It is used for access token retrieval from Identity Authentication. For more information, see [Integrating Applications](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/integrating-applications?locale=en-US&version=Cloud).
     
     </td>
     </tr>
@@ -196,11 +210,67 @@ You can use SAP Fieldglass as a proxy connector to execute *hybrid* scenarios. T
     </td>
     <td valign="top">
     
-    Enter your OAuth token URL in the following format:
+    Enter the OAuth 2.0 Token Service URL.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    \(Optional\) `rgm.user.filter`
+    
+    </td>
+    <td valign="top">
+    
+    When specified, only those users matching the filter expression will be read. You can filter users by `userName`, `emails[0].value`, and `externalId`, according to the API syntax of SAP Revenue Growth Management.
 
-    <code>https://<i class="varname">&lt;Environment_URL&gt;</i>/api/oauth2/v2.0/token</code>
+    For example:
 
-    For example: *https://abc123.fgvms.com/api/oauth2/v2.0/token*
+    -   *userName eq "johnbrown" and externalId eq "c167254d-25fd-5fac-af32-0b8c35e0de27"*
+    -   *userName sw "J" and externalId eq "c167254d-25fd-5fac-af32-0b8c35e0de27"*
+    -   *userName eq "johnbrown" and emails.value eq "johnbrown@email.com"*
+    -   *userName eq "johnbrown" and emails.value eq "johnbrown@email.com" and externalId eq "c167254d-25fd-5fac-af32-0b8c35e0de27"*
+
+        > ### Note:  
+        > These combinations are valid for both 'or' and 'and' operators.
+
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    \(Optional\) `rgm.group.filter`
+    
+    </td>
+    <td valign="top">
+    
+    When specified, only those groups matching the filter expression will be read.
+
+    For example:
+
+    *urn:sap:cloud:scim:schemas:extension:custom:2.0:Group:name eq "ProjectTeam1" or "Students2018"*
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    \(Optional\) `rgm.support.patch.operation`
+    
+    </td>
+    <td valign="top">
+    
+    This property controls how modified entities \(users and groups\) in the source system are updated in the target system.
+
+    -   If set to *true*, `PATCH` operations are used to update users and groups in the target system.
+
+    -   If set to *false*, `PUT` operations are used to update users and groups in the target system.
+
+
+    Default value for proxy systems: *true*
     
     </td>
     </tr>
@@ -210,13 +280,13 @@ You can use SAP Fieldglass as a proxy connector to execute *hybrid* scenarios. T
 
 7.  Configure the transformations.
 
-    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Fieldglass* proxy system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
+    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Revenue Growth Management* proxy system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
-    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP Fieldglass. For more information, see:
+    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP Revenue Growth Management. For more information, see:
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    [SAP Business Accelerator Hub: SAP Fieldglass](https://api.sap.com/package/FieldglassAPI/rest)
+    **[SAP Revenue Growth Management SCIM API](https://hub.sap.com/api/RGM_USER_SCIM/overview)**
 
     Default read and write transformations:
 
@@ -246,142 +316,116 @@ You can use SAP Fieldglass as a proxy connector to execute *hybrid* scenarios. T
     
     > ### Code Syntax:  
     > ```
-    > 
     > {
     >   "user": {
     >     "scimEntityEndpoint": "Users",
     >     "mappings": [
-    >       {
-    >         "sourcePath": "$.id",
-    >         "targetPath": "$.id",
-    >         "targetVariable": "entityIdSourceSystem"
-    >       },
-    >       {
-    >         "sourceVariable": "entityBaseLocation",
-    >         "targetVariable": "entityLocationSourceSystem",
-    >         "targetPath": "$.meta.location",
-    >         "functions": [
-    >           {
-    >             "type": "concatString",
-    >             "suffix": "${entityIdSourceSystem}"
-    >           }
-    >         ]
-    >       },
-    >       {
-    >         "sourcePath": "$.userName",
-    >         "targetPath": "$.userName",
-    >         "correlationAttribute": true
-    >       },
-    >       {
-    >         "sourcePath": "$.name",
-    >         "optional": true,
-    >         "targetPath": "$.name"
-    >       },
-    >       {
-    >         "sourcePath": "$.displayName",
-    >         "optional": true,
-    >         "targetPath": "$.displayName"
-    >       },
-    >       {
-    >         "sourcePath": "$.active",
-    >         "optional": true,
-    >         "targetPath": "$.active"
-    >       },
-    >       {
-    >         "sourcePath": "$.title",
-    >         "optional": true,
-    >         "targetPath": "$.title"
-    >       },
-    >       {
-    >         "sourcePath": "$.locale",
-    >         "optional": true,
-    >         "targetPath": "$.locale",
-    >         "functions": [
-    >           {
-    >             "type": "substring",
-    >             "beginIndex": 0,
-    >             "endIndex": 2
-    >           }
-    >         ]
-    >       },
-    >       {
-    >         "sourcePath": "$.emails",
-    >         "targetPath": "$.emails",
-    >         "preserveArrayWithSingleElement": true
-    >       },
-    >       {
-    >         "sourcePath": "$.emails[0].value",
-    >         "targetPath": "$.emails[0].value"
-    >       },
-    >       {
-    >         "sourcePath": "$.emails[?(@.primary== true)].value",
-    >         "correlationAttribute": true
-    >       },
-    >       {
-    >         "sourcePath": "$.timezone",
-    >         "optional": true,
-    >         "targetPath": "$.timezone"
-    >       },
-    >       {
-    >         "sourcePath": "$.addresses",
-    >         "preserveArrayWithSingleElement": true,
-    >         "optional": true,
-    >         "targetPath": "$.addresses"
-    >       },
-    >       {
-    >         "sourcePath": "$.groups",
-    >         "preserveArrayWithSingleElement": true,
-    >         "optional": true,
-    >         "targetPath": "$.groups"
-    >       },
     >       {
     >         "sourcePath": "$.schemas",
     >         "preserveArrayWithSingleElement": true,
     >         "targetPath": "$.schemas"
     >       },
     >       {
-    >         "sourcePath": "$['resourceExtensions']['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']",
-    >         "optional": true
+    >         "sourcePath": "$.id",
+    >         "targetPath": "$.id",
+    >         "targetVariable": "entityIdSourceSystem"
     >       },
     >       {
-    >         "sourcePath": "$['resourceExtensions']['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['costCenter']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['costCenter']",
-    >         "optional": true
+    >         "sourcePath":"$.userName",
+    >         "targetPath":"$.userName",
+    >         "correlationAttribute":true
     >       },
     >       {
-    >         "sourcePath": "$['resourceExtensions']['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['organization']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['organization']",
-    >         "optional": true
+    >         "sourcePath": "$.meta",
+    >         "targetPath": "$.meta"
     >       },
     >       {
-    >         "sourcePath": "$['resourceExtensions']['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['division']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['division']",
-    >         "optional": true
+    >         "sourceVariable": "entityBaseLocation",
+    >         "targetPath": "$.meta.location",
+    >         "targetVariable": "entityLocationSourceSystem",
+    >         "functions": [
+    >           {
+    >            "type": "concatString",
+    >            "suffix": "${entityIdSourceSystem}"
+    >           }
+    >         ]
     >       },
     >       {
-    >         "sourcePath": "$['resourceExtensions']['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['department']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['department']",
-    >         "optional": true
+    >         "sourcePath": "$.emails",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true,
+    >         "targetPath": "$.emails"
     >       },
     >       {
-    >         "sourcePath": "$['resourceExtensions']['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['value']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['value']",
-    >         "optional": true
+    >         "sourcePath": "$.emails[?(@.primary == true)].value",
+    >         "optional": true,
+    >         "correlationAttribute": true
     >       },
     >       {
-    >         "sourcePath": "$['resourceExtensions']['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['displayName']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['displayName']",
-    >         "optional": true
+    >         "sourcePath":"$.externalId",
+    >         "targetPath":"$.externalId",
+    >         "optional":true
     >       },
     >       {
-    >         "sourcePath": "$['resourceExtensions']['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['organization']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['organization']",
+    >         "sourcePath":"$.name.givenName",
+    >         "targetPath":"$.name.givenName",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.name.familyName",
+    >         "targetPath":"$.name.familyName",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.displayName",
+    >         "targetPath":"$.displayName",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.userType",
+    >         "targetPath":"$.userType",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.preferredLanguage",
+    >         "targetPath":"$.preferredLanguage",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.locale",
+    >         "targetPath":"$.locale",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.timezone",
+    >         "targetPath":"$.timezone",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.active",
+    >         "targetPath":"$.active",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.addresses",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true,
+    >         "targetPath":"$.addresses"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
+    >       },
+    >       {
+    >         "sourcePath": "$.groups",
+    >         "targetPath": "$.groups",
+    >         "preserveArrayWithSingleElement": true,
     >         "optional": true
     >       }
     >     ]
     >   },
-    >   "group": {
+    >    "group": {
     >     "scimEntityEndpoint": "Groups",
     >     "mappings": [
     >       {
@@ -390,15 +434,28 @@ You can use SAP Fieldglass as a proxy connector to execute *hybrid* scenarios. T
     >         "targetVariable": "entityIdSourceSystem"
     >       },
     >       {
+    >         "sourcePath": "$.meta",
+    >         "targetPath": "$.meta"
+    >       },
+    >       {
     >         "sourceVariable": "entityBaseLocation",
-    >         "targetVariable": "entityLocationSourceSystem",
     >         "targetPath": "$.meta.location",
+    >         "targetVariable": "entityLocationSourceSystem",
     >         "functions": [
-    >           {
-    >             "type": "concatString",
-    >             "suffix": "${entityIdSourceSystem}"
-    >           }
+    >            {
+    >                "type": "concatString",
+    >                "suffix": "${entityIdSourceSystem}"
+    >            }
     >         ]
+    >       },
+    >       {
+    >         "sourcePath": "$.schemas",
+    >         "preserveArrayWithSingleElement": true,
+    >         "targetPath": "$.schemas"
+    >       },
+    >        {
+    >         "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
+    >         "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']"
     >       },
     >       {
     >         "sourcePath": "$.displayName",
@@ -406,15 +463,9 @@ You can use SAP Fieldglass as a proxy connector to execute *hybrid* scenarios. T
     >       },
     >       {
     >         "sourcePath": "$.members",
-    >         "preserveArrayWithSingleElement": true,
+    >         "targetPath": "$.members",
     >         "optional": true,
-    >         "targetPath": "$.members"
-    >       },
-    >       {
-    >         "constant": "User",
-    >         "preserveArrayWithSingleElement": true,
-    >         "targetPath": "$.members[*].type",
-    >         "optional": true
+    >         "preserveArrayWithSingleElement": true
     >       },
     >       {
     >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
@@ -425,11 +476,6 @@ You can use SAP Fieldglass as a proxy connector to execute *hybrid* scenarios. T
     >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
     >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
     >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.schemas",
-    >         "preserveArrayWithSingleElement": true,
-    >         "targetPath": "$.schemas"
     >       }
     >     ]
     >   }
@@ -444,42 +490,34 @@ You can use SAP Fieldglass as a proxy connector to execute *hybrid* scenarios. T
     > ### Code Syntax:  
     > ```
     > {
-    >   "user": {
+    >   "user":{
     >     "scimEntityEndpoint": "Users",
-    >     "mappings": [
+    >     "mappings":[
+    >      {
+    >        "constant": [
+    >          "urn:ietf:params:scim:schemas:core:2.0:User",
+    >          "urn:ietf:params:scim:schemas:extension:sap:2.0:User"
+    >         ],
+    >         "targetPath": "$.schemas"
+    >       },
     >       {
-    >         "sourceVariable": "entityIdTargetSystem",
+    >         "constant": "urn:ietf:params:scim:api:messages:2.0:PatchOp",
+    >         "targetPath": "$.schemas[0]",
+    >         "scope": "patchEntity"
+    >       },
+    >       {
+    >         "sourcePath": "$.Operations",
+    >         "preserveArrayWithSingleElement": true,
+    >         "targetPath": "$.Operations",
+    >         "scope": "patchEntity"
+    >       },
+    >       {
+    >         "sourceVariable":"entityIdTargetSystem",
     >         "targetPath": "$.id"
     >       },
     >       {
-    >         "scope": "createEntity",
     >         "sourcePath": "$.userName",
     >         "targetPath": "$.userName"
-    >       },
-    >       {
-    >         "sourcePath": "$.name",
-    >         "targetPath": "$.name",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.displayName",
-    >         "targetPath": "$.displayName",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.active",
-    >         "targetPath": "$.active",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.title",
-    >         "targetPath": "$.title",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.locale",
-    >         "targetPath": "$.locale",
-    >         "optional": true
     >       },
     >       {
     >         "sourcePath": "$.emails",
@@ -487,84 +525,83 @@ You can use SAP Fieldglass as a proxy connector to execute *hybrid* scenarios. T
     >         "preserveArrayWithSingleElement": true
     >       },
     >       {
-    >         "sourcePath": "$.emails[0].value",
-    >         "targetPath": "$.emails[0].value"
+    >         "sourcePath": "$.externalId",
+    >         "targetPath": "$.externalId",
+    >         "optional": true
     >       },
     >       {
-    >         "optional": true,
-    >         "defaultValue": "work",
-    >         "sourcePath": "$.emails[0].type",
-    >         "targetPath": "$.emails[0].type"
+    >         "sourcePath": "$.name.givenName",
+    >         "targetPath": "$.name.givenName",
+    >         "optional": true
     >       },
     >       {
-    >         "defaultValue": true,
-    >         "optional": true,
-    >         "sourcePath": "$.emails[0].primary",
-    >         "targetPath": "$.emails[0].primary"
+    >         "sourcePath":"$.name.familyName",
+    >         "targetPath":"$.name.familyName",
+    >         "optional":true
     >       },
     >       {
-    >         "sourcePath": "$.timezone",
-    >         "optional": true,
-    >         "targetPath": "$.timezone"
+    >         "sourcePath":"$.displayName",
+    >         "targetPath":"$.displayName",
+    >         "optional":true
     >       },
     >       {
-    >         "sourcePath": "$.addresses",
+    >         "sourcePath":"$.userType",
+    >         "targetPath":"$.userType",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.preferredLanguage",
+    >         "targetPath":"$.preferredLanguage",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.locale",
+    >         "targetPath":"$.locale",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.timezone",
+    >         "targetPath":"$.timezone",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.active",
+    >         "targetPath":"$.active",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.addresses",
     >         "preserveArrayWithSingleElement": true,
     >         "optional": true,
-    >         "targetPath": "$.addresses"
-    >       },
-    >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['costCenter']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['costCenter']",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['organization']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['organization']",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['division']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['division']",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['department']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['department']",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['value']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['value']",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['displayName']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['displayName']",
-    >         "optional": true
+    >         "targetPath":"$.addresses"
     >       },
     >       {
     >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
+    >       },
+    >       {
+    >         "sourcePath": "$.groups",
+    >         "targetPath": "$.groups",
+    >         "preserveArrayWithSingleElement": true,
     >         "optional": true
     >       }
     >     ]
     >   },
-    >   "group": {
+    >    "group": {
     >     "scimEntityEndpoint": "Groups",
-    >     "skipOperations": [
-    >       "create",
-    >       "delete"
-    >     ],
     >     "mappings": [
     >       {
-    >         "sourceVariable": "entityIdTargetSystem",
-    >         "targetPath": "$.id"
+    >         "targetPath": "$.id",
+    >         "sourceVariable": "entityIdTargetSystem"
+    >       },
+    >       {
+    >        "constant": [
+    >          "urn:ietf:params:scim:schemas:core:2.0:Group",
+    >          "urn:ietf:params:scim:schemas:extension:sap:2.0:Group",
+    >          "urn:sap:cloud:scim:schemas:extension:custom:2.0:Group"
+    >         ],
+    >         "targetPath": "$.schemas"
     >       },
     >       {
     >         "sourcePath": "$.Operations",
@@ -579,14 +616,29 @@ You can use SAP Fieldglass as a proxy connector to execute *hybrid* scenarios. T
     >         "scope": "patchEntity"
     >       },
     >       {
+    >         "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
+    >         "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
+    >         "optional": true
+    >       },
+    >       {
     >         "sourcePath": "$.displayName",
     >         "targetPath": "$.displayName"
     >       },
     >       {
-    >         "optional": true,
-    >         "preserveArrayWithSingleElement": true,
     >         "sourcePath": "$.members",
-    >         "targetPath": "$.members"
+    >         "targetPath": "$.members",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true
     >       }
     >     ]
     >   }
@@ -616,10 +668,12 @@ You can use SAP Fieldglass as a proxy connector to execute *hybrid* scenarios. T
     > ### Note:  
     > For external consumer systems, other than SAP Identity Management, you should also use the **PUT** method for modifying entities.
 
+9.  Run an initial load job.
 
 
 
-<a name="loioc21306b5852846fb9471f0c4ce8e30e4__postreq_cf4_lgj_kfb"/>
+
+<a name="loio69970c83bbc84862ac205b8c0b525198__postreq_cf4_lgj_kfb"/>
 
 ## Next Steps
 
@@ -635,4 +689,9 @@ To see an example with SAP Identity Management, see [Hybrid Scenario: SAP Identi
 > For example: **GET** *https://ipsproxyabcd12345-xyz789.dispatcher.cn1.platform.sapcloud.cn/ipsproxy/api/v1/scim/bbb111aa-1234-aaaa-7777-1234567abcde/Users/s123456789*
 > 
 > To learn more, see: [Proxy Systems](proxy-systems-b10d68a.md)
+
+**Related Information**  
+
+
+[SAP Revenue Growth Management](https://help.sap.com/docs/rgm?locale=en-US&task=all_tasks)
 

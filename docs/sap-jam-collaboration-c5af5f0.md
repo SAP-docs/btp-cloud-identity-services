@@ -249,9 +249,9 @@ These target systems consume SCIM 2.0 API provided by SAP Jam Collaboration.
 
     > ### Code Syntax:  
     > ```
-    > 
     > {
     >     "user": {
+    >         "condition": "('%jam.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%jam.group.prefix%.*/)] empty false)",
     >         "mappings": [
     >             {
     >                 "sourcePath": "$",
@@ -320,7 +320,7 @@ These target systems consume SCIM 2.0 API provided by SAP Jam Collaboration.
     >     },
     >     "group": {
     >         "ignore": true,
-    >         "condition": "('%jam.group.prefix%' === 'null') || ($.displayName =~ /%jam.group.prefix%.*/)",
+    >         "condition": "isAttributeWithOptionalPrefix($.displayName, jam.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], jam.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >         "mappings": [
     >             {
     >                 "sourcePath": "$",
@@ -339,7 +339,7 @@ These target systems consume SCIM 2.0 API provided by SAP Jam Collaboration.
     >                 "targetPath": "$.displayName",
     >                 "functions": [
     >                     {
-    >                         "condition": "('%jam.group.prefix%' !== 'null') && (@ =~ /%jam.group.prefix%.*/)",
+    >                         "condition": "isAttributeWithMandatoryPrefix(@, jam.group.prefix)",
     >                         "function": "replaceFirstString",
     >                         "regex": "%jam.group.prefix%",
     >                         "replacement": ""

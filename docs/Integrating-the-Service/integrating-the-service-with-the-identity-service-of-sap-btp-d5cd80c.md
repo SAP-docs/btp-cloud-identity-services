@@ -41,6 +41,8 @@ Each Identity instance has its own OAuth client for the Identity Authentication 
 
 [Integrating the Service with SAP Task Center](integrating-the-service-with-sap-task-center-ab5e90e.md)
 
+[Hybrid Scenario: SAP Identity Management](hybrid-scenario-sap-identity-management-6fa419a.md "You can execute hybrid scenarios between provisioning systems from the Identity Provisioning UI and external systems that support SCIM 2.0 protocol.")
+
 [Blogs](blogs-a89ca3e.md "Links to blogs and documents about integration scenarios with Identity Authentication.")
 
 [Getting Started with the Identity Service of SAP BTP](getting-started-with-the-identity-service-of-sap-btp-066bda8.md "To create OpenID Connect (OIDC) applications in the Cloud Identity Services service using SAP Cloud Service Management service, instantiate the Identity service and bind your service instance to an application. The Identity service automates the manual creation of Cloud Identity Services OIDC applications.")

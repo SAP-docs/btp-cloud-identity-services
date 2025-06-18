@@ -330,7 +330,7 @@ You can use Identity Provisioning to configure SAP Intelligent Agriculture as a 
     > ```
     > {
     >   "user": {
-    >     "condition": "($.emails EMPTY false) && ($.userName EMPTY false) && ($['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid'] EMPTY false)",
+    >     "condition": "isValidEmail($.emails[0].value) && ($.userName EMPTY false) && ($['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid'] EMPTY false) && (('%ia.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%ia.group.prefix%.*/)] empty false))",
     >     "mappings": [
     >       {
     >         "targetPath": "$.id",
@@ -369,7 +369,7 @@ You can use Identity Provisioning to configure SAP Intelligent Agriculture as a 
     >     ]
     >   },
     >   "group": {
-    >     "condition": "('%ia.group.prefix%' === 'null') || ($.displayName =~ /%ia.group.prefix%.*/)",
+    >     "condition": "isAttributeWithOptionalPrefix($.displayName, ia.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], ia.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >     "mappings": [
     >       {
     >         "targetPath": "$.id",
@@ -384,7 +384,7 @@ You can use Identity Provisioning to configure SAP Intelligent Agriculture as a 
     >         "targetPath": "$.displayName",
     >         "functions": [
     >           {
-    >             "condition": "('%ia.group.prefix%' !== 'null') && (@ =~ /%ia.group.prefix%.*/)",
+    >             "condition": "isAttributeWithMandatoryPrefix(@, ia.group.prefix)",
     >             "function": "replaceFirstString",
     >             "regex": "%ia.group.prefix%",
     >             "replacement": ""

@@ -4,24 +4,24 @@
 
 Problems with the user import in the administration console for SAP Cloud Identity Services.
 
-As a tenant administrator, you can import new users or update existing ones for a specific application with a CSV file via the administration console. You can also send activation e-mails to the users that have not received activation e-mails for that application so far.
+As a tenant administrator, you can import new users or update existing ones for a specific application with a CSV file via the administration console. You can also send activation emails to the users that haven't received activation emails for that application so far.
 
-The scenario, requirements and configurations are described in [Import or Update Users for a Specific Application](https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/en-US/33838e0760f8411daf758a1c11818cc4.html).
+The scenario, requirements, and configurations are described in [Import or Update Users for a Specific Application](https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/en-US/33838e0760f8411daf758a1c11818cc4.html).
 
 > ### Tip:  
 > You as a tenant administrator can view Identity Authentication troubleshooting logs to monitor the system, and diagnose and solve problems. For more information, see [View Troubleshooting Logs](https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/en-US/27323219a02a44198973091169b5a5c7.html) and [Analyze Troubleshooting Logs with Support Log Assistant 2.0](https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/en-US/72ac00bfc4784d48a0207e54495ed636.html). See also **KBA 2942816** - [How to export and self-analyze Troubleshooting logs from Identity Authentication Service](https://launchpad.support.sap.com/#/notes/2942816).
 
-You can face one of the following problems:
+You may face one of the following problems:
 
 
 
 <a name="loio6a46913d96594c70a3a48829cbd088f7__section_wg5_tds_32c"/>
 
-## Users do not receive mails from notification@sapnetworkmail.com after a CSV user import
+## Users don't receive emails from `notification@sapnetworkmail.com` or `ias@notifications.sap.com` after a CSV user import
 
 **Symptom:**
 
-You import users by uploading a CSV file successfully, but users do not receive e-mail from notification@sapnetworkmail.com.
+You import users by uploading a CSV file successfully, but users don't receive email for that.
 
 **Solution:**
 
@@ -31,13 +31,13 @@ See KBA 2940801 - [E-mail is not received after "Import Users"](https://launchpa
 
 <a name="loio6a46913d96594c70a3a48829cbd088f7__section_ry5_d2s_32c"/>
 
-## E-mail sending is interrupted
+## Email sending is interrupted
 
 **Symptom:**
 
-There is a need to import users to an application and to send the initial e-mails, but the second step fails with the following message:
+There is a need to import users to an application and to send the initial emails, but the second step fails with the following message:
 
-"First 0 mails are sent. Mailing has been interrupted because sending e-mail to user with e-mail address <email\> is not possible. Please update the user e-mail and trigger e-mail sending again."
+**"First 0 mails are sent. Mailing has been interrupted because sending e-mail to user with e-mail address <email\> is not possible. Please update the user e-mail and trigger e-mail sending again."**
 
 **Solution:**
 
@@ -61,21 +61,21 @@ See **KBA 2942954**- [Redirect users after successful registration in Identity A
 
 <a name="loio6a46913d96594c70a3a48829cbd088f7__section_jpj_s2s_32c"/>
 
-## Import users to IAS with additional attributes
+## Import users to Identity Authentication with additional attributes
 
 **Symptom:**
 
-You have to import user data into Identity Authentication using the Import Users option of the administration console, but it only supports some certain attributes of a user, not all.
+You have to import user data into Identity Authentication using the *Import Users* option of the administration console, but it only supports some certain attributes of a user, not all.
 
 All supported attributes of a user for this function are mentioned in the SAP Help Document: [Import or Update Users for a Specific Application](https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/en-US/33838e0760f8411daf758a1c11818cc4.html).
 
 **Solution:**
 
-SAP provides SCIM REST API which allows to set all other user attributes in a programmatical way.
+SAP provides SCIM REST API which allows to set all other user attributes in a programmatic way.
 
 See [SCIM REST API](https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/en-US/2f215687fcf34170b0bbc8b36b60f2e9.html) and **KBA 2533357** -[Import users to Identity Authentication with additional attributes](https://launchpad.support.sap.com/#/notes/2533357)
 
-Alternatively, SAP provides [SCIM REST API](https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/en-US/2f215687fcf34170b0bbc8b36b60f2e9.html) which allows to set all other user attributes in a programmatical way.
+Alternatively, SAP provides [SCIM REST API](https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/en-US/2f215687fcf34170b0bbc8b36b60f2e9.html) which allows to set all other user attributes in a programmatic way.
 
 
 
@@ -87,7 +87,7 @@ Alternatively, SAP provides [SCIM REST API](https://help.sap.com/viewer/6d6d6335
 
 When importing users to Identity Authentication, the import fails with the following error:
 
-"Provided file has the wrong type. Please specify a different file and try again."
+**"Provided file has the wrong type. Please specify a different file and try again."**
 
 **Solution:**
 
@@ -103,7 +103,7 @@ See **KBA 2461975** - [Import users fails with error: Provided file has the wron
 
 You see the following error at user import in the Identity Authentication service:
 
-"User with email '' contains empty values."
+**"User with email '' contains empty values."**
 
 **Solution:**
 
@@ -113,15 +113,15 @@ See **KBA 2859442** - [User with email '' contains empty values - error during u
 
 <a name="loio6a46913d96594c70a3a48829cbd088f7__section_nxt_mfs_32c"/>
 
-## You receive error: "User import has been interrupted for users with e-mail address "<email\_address\>".
+## You receive error: "User import has been interrupted for users with email address "<email\_address\>".
 
 **Symptom:**
 
 During user import \(update\), the following error is shown when the user already exists in the userbase:
 
-User import has been interrupted for users with e-mail address "<email\_address\>".
+**User import has been interrupted for users with e-mail address "<email\_address\>".**
 
-The reason for this error is as follows: "The import reported error".
+The reason for this error is as follows: **"The import reported error".**
 
 **Solution:**
 
@@ -135,11 +135,11 @@ See KBA 2958785 - [Identity Authentication Import Users throws Attribute '<attri
 
 **Symptom:**
 
-You have imported users into Identity Authentication tenant, but the activation e-mails to them cannot be sent. The following message is shown:
+You have imported users into the Identity Authentication tenant, but the activation e-mails to them can't be sent. The following message is shown:
 
-"Home URL or SAML 2.0 configuration of the application missing. You can only import users, but you cannot send activation emails."
+**"Home URL or SAML 2.0 configuration of the application missing. You can only import users, but you cannot send activation emails."**
 
-Solution:
+**Solution:**
 
 See **KBA 2591826 -**[Activation e-mails cannot be sent - Home URL or SAML 2.0 configuration of the application missing](https://launchpad.support.sap.com/#/notes/2591826)
 
@@ -147,13 +147,13 @@ See **KBA 2591826 -**[Activation e-mails cannot be sent - Home URL or SAML 2.0 c
 
 <a name="loio6a46913d96594c70a3a48829cbd088f7__section_k2l_kgs_32c"/>
 
-## The CSV file failed to upload.
+## You receive error: "The CSV file failed to upload..."
 
 **Symptom:**
 
 You, as an administrator, imported a CSV user file in Identity Authentication and it returns the following error:
 
-"The CSV file failed to upload. Contact your system administrator for assistance."
+**"The CSV file failed to upload. Contact your system administrator for assistance."**
 
 **Solution:**
 
@@ -165,11 +165,11 @@ See **KBA 2975595**- [Import users CSV file in IAS fails with error - The CSV fi
 
 ## You receive error: "0 emails sent when trying to send activation e-mails on Identity Authentication"
 
-Symptom:
+**Symptom:**
 
-Users are imported to Identity Authentication, but when choosing "Send E-mails", a message is received, stating that "0 emails sent when trying to send activation e-mails on Identity Authentication".
+Users are imported to Identity Authentication, but when choosing "Send Emails", a message is received, stating that **"0 emails sent when trying to send activation e-mails on Identity Authentication".**
 
-Solution:
+**Solution:** 
 
 See **KBA 2471540** - [0 emails sent when trying to send activation e-mails on Identity Authentication](https://launchpad.support.sap.com/#/notes/2471540)
 
@@ -177,15 +177,15 @@ See **KBA 2471540** - [0 emails sent when trying to send activation e-mails on I
 
 <a name="loio6a46913d96594c70a3a48829cbd088f7__section_tjs_xgs_32c"/>
 
-## You receive error: "First 0 users are imported. User import has been interrupted for users with e-mail address . The reason for this error is as follows: "The import reported error".
+## You receive error: "First 0 users are imported. User import has been interrupted for users with email address . The reason for this error is as follows: "The import reported error".
 
 **Symptom**
 
-Importing users from CSV file in Identity Authentication Service is failing with the following error message:
+Importing users from a CSV file in Identity Authentication Service is failing with the following error message:
 
 First 0 users are imported. User import has been interrupted for users with e-mail address <user e-mail\>. The reason for this error is as follows: "The import reported error".
 
-Solution:
+**Solution:**
 
 See **KBA 2717186** - ["User import has been interrupted" in Identity Authentication Service](https://launchpad.support.sap.com/#/notes/2717186)
 
@@ -197,7 +197,7 @@ See **KBA 2717186** - ["User import has been interrupted" in Identity Authentica
 
 **Symptom:**
 
-The first users in the CSV file are already imported for the tenant. The next user was not imported because the CSV file contains an incorrect data for that user.
+**The first users in the CSV file are already imported for the tenant. The next user was not imported because the CSV file contains an incorrect data for that user.**
 
 **Solution:**
 
@@ -211,19 +211,19 @@ Delete the first <number\> users from the CSV file, correct the invalid row, and
 
 **Symptom:**
 
-The first <number\> users in the CSV file are already imported for the tenant. The next user was not imported because its data in the CSV file conflicts with the data in the database.
+**The first <number\> users in the CSV file are already imported for the tenant. The next user was not imported because its data in the CSV file conflicts with the data in the database.**
 
 **Solution:**
 
--   Correct the e-mail for the logon name under the mail column, delete the first <number\> users from the CSV file, and re-import the updated file.
+-   Correct the email for the logon name under the mail column, delete the first <number\> users from the CSV file, and re-import the updated file.
 
     > ### Caution:  
-    > During CSV import, you cannot change the e-mail of an existing user.
+    > During CSV import, you can't change the email of an existing user.
 
 -   Change the user logon name because the same logon name is used for another user in the database, delete the first <number\> users from the CSV file, and re-import the updated file.
 
     > ### Note:  
-    > You cannot have two users with the same logon name, but with different e-mails.
+    > You can't have two users with the same logon name, but with different emails.
 
 -   Contact a tenant administrator of Identity Authentication.
 
@@ -235,7 +235,7 @@ The first <number\> users in the CSV file are already imported for the tenant. T
 
 **Symptom:**
 
-The first <number\> users in the CSV file are already imported for the tenant. The next user was not imported because its e-mail matches with the e-mail of other users.
+The first <number\> users in the CSV file are already imported for the tenant. The next user was not imported because its email matches with the email of other users.
 
 **Solution:**
 
@@ -278,15 +278,15 @@ Correct the file so that the `loginName` column contains unique values.
 
 **Symptom**
 
-An administrator imports the CSV user file in SAP Cloud Platform Identity Authentication Service and it throws the below error.
+An administrator imports the CSV user file in Identity Authentication and it returns the following error:
 
-The imported CSV file does not contain one of the mandatory columns: status, mail and lastName.
+**The imported CSV file does not contain one of the mandatory columns: status, mail and lastName.**
 
 Make sure that the columns `status`, `mail`, `lastName` are in the CSV file.
 
 **Solution:**
 
-Follow the ["Import or Update Users for a Specific Application" documentation](https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/en-US/33838e0760f8411daf758a1c11818cc4.html) which explains the pre-requisites, possible columns with the attributes, mandatory columns, possible values for columns.
+Follow the ["Import or Update Users for a Specific Application" documentation](https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/en-US/33838e0760f8411daf758a1c11818cc4.html) document which explains the pre-requisites, possible columns with the attributes, mandatory columns, possible values for columns.
 
 Follow the example in the documentation which shows you how your CSV file should look like.
 
@@ -295,27 +295,27 @@ See also KBA 2607696 - [Import users CSV file in Cloud Identity Authentication S
 **Related Information**  
 
 
-[Accessing the Administration Console](accessing-the-administration-console-6187940.md "Problems with the signing in to the administration console for SAP Cloud Identity Services.")
+[Accessing the Administration Console](accessing-the-administration-console-6187940.md "Problems with the signing into the administration console for SAP Cloud Identity Services.")
 
 [Emails](emails-7bde0d5.md "Problems with emails sent for the different application processes.")
 
-[Authentication](authentication-84f28fb.md "Problems with the authentication of the end user and administrator.")
+[Authentication](authentication-84f28fb.md "Problems with the authentication of the user and administrator.")
 
-[Application Integration](application-integration-8acf508.md "Problems that different applications integrated with Cloud Identity Services might face.")
+[Application Integration](application-integration-8acf508.md "Problems that different applications integrated with Cloud Identity Services may face.")
 
-[Request, Create and Delete Identity Authentication Tenant](request-create-and-delete-identity-authentication-tenant-b442658.md "Problems related to requesting, creating or deleting a tenant.")
+[Request, Create, and Delete Identity Authentication Tenant](request-create-and-delete-identity-authentication-tenant-b442658.md "Problems related to requesting, creating, or deleting a tenant.")
 
-[End user screens](end-user-screens-a3864b5.md "Problems that you might face when working with the end user screen.")
+[End user screens](end-user-screens-a3864b5.md "Problems that you may face when working with the end user screens.")
 
-[APIs](apis-29ffc6b.md "Problems that you might face when using the REST APIs of Cloud Identity Services.")
+[REST APIs](rest-apis-29ffc6b.md "Problems that you may face when using the REST APIs of Cloud Identity Services.")
 
-[Corporate Identity Providers](corporate-identity-providers-16ab7db.md "")
+[Corporate Identity Providers](corporate-identity-providers-16ab7db.md "Problems that you may face with corporate identity providers (IdPs) when using Cloud Identity services as a proxy.")
 
-[Corporate User Store](corporate-user-store-3ade241.md "")
+[Corporate User Store](corporate-user-store-3ade241.md "Problems with corporate user store scenarios.")
 
-[Kerberos Authentication](kerberos-authentication-4bb4b24.md "")
+[Kerberos Authentication](kerberos-authentication-4bb4b24.md "Problems with Kerberos authentication scenarios.")
 
-[Risk-Based Authentication](risk-based-authentication-bc7de4d.md "")
+[Risk-Based Authentication](risk-based-authentication-bc7de4d.md "Problems that you may face when configuring or using with risk-based authentication.")
 
-[Custom Domains](custom-domains-7cb2ea5.md "")
+[Custom Domains](custom-domains-7cb2ea5.md "Problems that you may face when using custom domains in Identity Authentication.")
 

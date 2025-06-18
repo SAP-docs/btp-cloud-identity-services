@@ -18,7 +18,7 @@ For more information, see [Standalone Tenant](https://help.sap.com/docs/identity
 
 ## Licensing and Usage
 
-From a usage perspective, Identity Authentication, Identity Provisioning, Identity Directory, and SAP Authorization and Trust Management service are commercially included for all SAP-branded cloud solutions sold under the general terms and conditions for SAP Cloud Services, and all applications running on SAP BTP. However, you are charged for every successful authentication to SAP Cloud Identity Services from a third-party application regardless of the protocol used. Only logon requests coming from an SAP cloud or SAP on-premise application are free of charge.
+From a usage perspective, Identity Authentication, Identity Provisioning, Identity Directory, and SAP Authorization and Trust Management service are commercially included for all SAP-branded cloud solutions sold under the general terms and conditions for SAP Cloud Services, and all applications running on SAP BTP. However, you are charged for every successful authentication to SAP Cloud Identity Services from a third-party solution regardless of the protocol used. Only logon requests coming from an SAP cloud or SAP on-premise solutions are free of charge.
 
 Logon requests are independent of the authentication mechanism and user type.
 

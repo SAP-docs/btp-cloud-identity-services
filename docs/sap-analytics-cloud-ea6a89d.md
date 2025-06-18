@@ -178,7 +178,7 @@ For more information on how to update to version 2, see [Update Connector Versio
     <tr>
     <td valign="top">
     
-    \(Optional\) `csrf.token.path`
+    \(Optional\) `sac.csrf.token.path`
     
     </td>
     <td valign="top">

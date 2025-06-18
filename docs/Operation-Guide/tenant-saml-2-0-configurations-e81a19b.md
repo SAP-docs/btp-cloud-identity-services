@@ -22,9 +22,7 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 > The signing certificate is one and the same for SAML 2.0 and OpenId Connect. Note that a change in one of the configurations will also affect the other one.
 
 > ### Remember:  
-> The signature and digest methods in the XML of the metadata file depend on the signing certificate, which is configured for the identity provider. If the certificate is issued with the *SHA256withRSA* algorithm, then the signature method is `rsa-sha256`, and the digest method is `sha256`. In all other cases, for example, if the certificate is issued with the *SHA256withECDSA* algorithm, the signature method is `rsa-sha1`, and the digest method is `sha1`.
-> 
-> By default, the signing certificates of the new tenants are issued with the *SHA256withRSA*.
+> The signature and digest methods in the XML of the metadata file depend on the signing certificate, which is configured for the identity provider.
 > 
 > > ### Remember:  
 > > It takes 2 minutes for the configuration changes to take place.
@@ -142,8 +140,20 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
 6.  **Optional:** To update your signing certificate, choose under the *Signing Certificates* tab the *\+Add* button on the right. You can choose from the following options:
 
     -   *Regenerate the existing certificate with new validity, reusing the same private key* \> *Next Step* \> *Choose validity from the drop down* \> *Next Step* \> *Finish*.
+
+        > ### Note:  
+        > The validity period can be 3, 5 and 10 years.
+
     -   *Create new a self-signed certificate with a new private key and the same Subject DN* \> *Next Step* \> *Select key size* \> *Choose validity from the drop down* \> *Next Step* \> *Finish*.
+
+        > ### Note:  
+        > The key size can be 2048, 3072 and 4096. The validity period can be 3, 5 and 10 years.
+
     -   *Download your Certificate Signing Request* \> *Next Step* \> *add Subject DN and select key size and validity from the options* \> *Next Step* \> *Download CSR*. Use the downloaded .csr file to generate a certificate from the trusted CA. Copy the newly generated certificate, choose :pencil2:, and paste the certificate as text in the *Certificate Information* field.
+
+        > ### Note:  
+        > The signing algorithm can be SHA-256 and SHA-384. The key size can be 2048, 3072 and 4096.
+
 
 
 

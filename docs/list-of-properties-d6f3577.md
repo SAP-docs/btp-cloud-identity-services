@@ -272,7 +272,7 @@ SAP Application Server ABAP
 </td>
 <td valign="top">
 
-Filters user roles by a regular expression. The regex can defineFilters users by a regular expression on their username. The regex can define any kind of search pattern.
+Filters users by a regular expression on their username. The regex can define any kind of search pattern.
 
 This property has a higher priority over `abap.user.filter`. That means, if you set both properties in a system, the value of `abap.user.name.filter` will be used. However, if the value of `abap.user.name.filter` is empty, then `abap.user.filter`’s value will be used instead.
 
@@ -3212,25 +3212,29 @@ When the property is set, the groups are provisioned with their *applicationId* 
 
 -   SAP Commerce Cloud
 
+-   SAP CPQ
+
+-   SAP Data Custodian
+
+-   SAP Enable Now
+
 -   SAP Fieldglass
 
--   SAP Field Service Management
+-   SAP Field Service Management 
 
--   SAP Integrated Business Planning for Supply Chain \(SCIM API version 2\)
+-   SAP HANA Cloud, SAP HANA Database
+
+-   SAP Integrated Business Planning for Supply Chain
+
+-   SAP Intelligent Agriculture
+
+-   SAP Jam Collaboration
 
 -   SAP Sales Cloud and SAP Service Cloud
 
 -   SAP S/4 HANA Cloud
 
 -   SAP Revenue Growth Management
-
--   SAP Enable Now
-
--   SAP Data Custodian
-
--   SAP CPQ
-
--   SAP HANA Cloud, SAP HANA Database
 
 
 
@@ -15244,13 +15248,11 @@ SAP Signavio Process Transformation Suite
 
 When Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists on the target system. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\).
 
-This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\). If the service finds such a user on the target system via this filter, then the conflicting user will overwrite the existing one. If the service does not find such a user, the creation will fail.
+SAP Revenue Growth Management supports the following unique attributes which are automatically filled in during system creation: `userName,emails[0].value,externalId`.
 
-The property is automatically added during system creation. If the service finds an existing user by at least one of the uniqueness criteria, which are *userName* and *externalId*, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the update of the conflicting user fails. If more than one users with these unique attributes are found, the update fails.
+If the service finds an existing user by at least one of the unique attributes, it updates this user with the data of the conflicting one. If such a user is not found, the update of the conflicting user fails. If more than one users with these unique attributes are found, the update fails.
 
-Possible values:*userName, externalId*
-
-Default value: *userName, externalId*
+Default value: *userName,emails\[0\].value,externalId*
 
 System Role: Target
 
@@ -15275,10 +15277,10 @@ When specified, only those users matching the filter expression will be read. Yo
 
 For example:
 
--   *userName eq "johnbrown" and externalId eq "P000252"*
--   *userName sw "J" and externalId eq "P000252"*
+-   *userName eq "johnbrown" and externalId eq "c167254d-25fd-5fac-af32-0b8c35e0de27"*
+-   *userName sw "J" and externalId eq "c167254d-25fd-5fac-af32-0b8c35e0de27"*
 -   *userName eq "johnbrown" and emails.value eq "johnbrown@email.com"*
--   *userName eq "johnbrown" and emails.value eq "johnbrown@email.com" and externalId eq "P000252"*
+-   *userName eq "johnbrown" and emails.value eq "johnbrown@email.com" and externalId eq "c167254d-25fd-5fac-af32-0b8c35e0de27"*
 
     > ### Note:  
     > These combinations are valid for both 'or' and 'and' operators.
@@ -15337,7 +15339,7 @@ When specified, only those SAP Revenue Growth Management groups matching the fil
 
 For example: *urn:sap:cloud:scim:schemas:extension:custom:2.0:Group:name eq "ProjectTeam1" or "Students2018"*
 
-**System Role:** Source
+**System Role:** Source, Proxy
 
 </td>
 <td valign="top">

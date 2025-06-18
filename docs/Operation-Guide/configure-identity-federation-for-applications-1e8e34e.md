@@ -21,7 +21,7 @@ Tenant administrator can enable identity federation for an application to overri
 
 ## Context
 
-The *Identity Federation* option allows you to choose whether the user attributes are taken from the corporate IdP assertion or from Identity Authentication user store. You can also additionally apply the custom application configurations for the authentication and access policies, as well as allow access based on user groups.
+The *Identity Federation* option allows you to choose whether the user attributes are taken from the corporate IdP assertion or from Identity Authentication user store. Additionally, you can also apply the custom application configurations for the authentication and access policies, as well as allow access based on user groups and email domains.
 
 In scenarios where the application is using a corporate identity provider with *Identity Federation* settings for authentication, the administrator can configure identity federation for the application and override this configuration. This provides a more fine-grained identity federation in situations where multiple applications use the same corporate IdP as an external authenticating authority.
 
@@ -29,7 +29,8 @@ In scenarios where the application is using a corporate identity provider with *
 
 ### User Store
 
-By default, the *Identity Federation* for an application option is disabled. Enabling the configuration will override the *Identity Federation* settings of the authenticating identity provider.
+> ### Remember:  
+> By default, the *Identity Federation* for an application option is disabled. Enabling the configuration will override the *Identity Federation* settings of the authenticating identity provider.
 
 When *Use Identity Authentication user store* option is enabled, the application checks if the users authenticated by the corporate identity provider exist in the Identity Authentication user store. The existence check is done with the name identifier sent by the corporate identity provider for the identifying attributes `uid`, `loginName`, `emails` and `phoneNumber`.
 
@@ -50,7 +51,25 @@ When *Allow Identity Authentication users only* is enabled, only the users that 
 As a next step, you can assign a group or groups to the corporate IdP. Only users from the Identity Authentication user store that are members of the assigned group can access the application.
 
 > ### Remember:  
+> You can assign groups, only when *Allow Identity Authentication users only* option is enabled. If disabled, the assigned groups option is not taken into consideration. As a next step, you can assign a group or groups to the corporate IdP or allow certain email domains.
+
+
+
+### Restrict Logon to Members of Certain Groups
+
+You can assign a group or groups to the corporate identity provider. Only users from the Identity Authentication user store that are members of the assigned groups can access the application.
+
+> ### Remember:  
 > You can assign groups, only when *Allow Identity Authentication users only* option is enabled. If disabled, the assigned groups option is not taken into consideration.
+
+
+
+### Restrict Logon to Users with Certain Email Domains
+
+You can add email domains to restrict the access to those specific email domains. Only users from the Identity Authentication user store whose email domains are allowed can access the application.
+
+> ### Remember:  
+> You can allow email domains from the allow list, only when the *Allow Identity Authentication users only* option is enabled. If disabled, the allow list option is not taken into consideration.
 
 
 
@@ -120,14 +139,22 @@ When enabled, the user is authenticated by the corporate IdP, then *Identity Aut
     
     When you select it, the *Apply Application Configurations* becomes available for selection.
 
-    Additionally, the *User Groups* section becomes visible. There you can see a list of the groups assigned to this corporate IdP. If no groups are assigned, the list is empty.
+    Additionally, the *User Groups* and *Allowed Email Domains*sections become visible. There you can see a list of the groups assigned to this corporate IdP and the allow list for email domains. If no groups are assigned or no email domain added, the lists are empty.
 
-    To restrict logon to members of certain groups, choose the *Add* button. Select the groups that you want to assign to this corporate identity provider. The list does not include the groups that are already assigned to the corporate identity provider.
+    -   To restrict logon to members of certain groups, choose the *Add* button. Select the groups that you want to assign to this corporate identity provider. The list does not include the groups that are already assigned to the corporate identity provider.
 
-    > ### Note:  
-    > To remove groups, choose *Edit*, select the groups you want to remove, choose the *Remove* button, and save your changes.
-    > 
-    > Users that belong only to the unassigned groups will not be able to access the application any more.
+        > ### Note:  
+        > To remove groups, choose *Edit*, select the groups you want to remove, choose the *Remove* button, and save your changes.
+        > 
+        > Users that belong only to the unassigned groups will not be able to access the application any more.
+
+    -   To restrict logon to users from certain email domains, under *Email Domains*, choose the *Add* button. Type the email domains that you want to add to the allow list.
+
+        > ### Note:  
+        > To remove email domains, choose *Edit*, select the email domains you want to remove, choose the *Remove* button, and save your changes.
+        > 
+        > Users whose emails contain only the removed email domains will not be able to access the application any more.
+
 
 
     

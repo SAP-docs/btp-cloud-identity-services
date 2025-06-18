@@ -100,6 +100,669 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Override Conditional Authentication with URL Parameter
+
+</td>
+<td valign="top">
+
+We have added an option to the `idp` parameter for application which allow logon with OpenID Connect \(OIDC\). Use the value **local** to override the conditional authentication configuration and log on with Identity Authentication instead.
+
+For more information, see [Configure IdP-Initiated SSO](Operation-Guide/configure-idp-initiated-sso-5d59caa.md) or [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-07-02
+
+</td>
+<td valign="top">
+
+2025-07-02
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-06-18
+
+</td>
+<td valign="top">
+
+2025-06-18
+
+</td>
+<td valign="top">
+
+27972
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Identity Federation
+
+</td>
+<td valign="top">
+
+We have extended the identity federation for an application and on tenant level. Now you can restrict the logon to users with certain email domains. See [Configure Identity Federation for Applications](Operation-Guide/configure-identity-federation-for-applications-1e8e34e.md) and [Configure Identity Federation](Operation-Guide/configure-identity-federation-c029bbb.md).
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-06-18
+
+</td>
+<td valign="top">
+
+2025-06-18
+
+</td>
+<td valign="top">
+
+27972
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Attributes
+
+</td>
+<td valign="top">
+
+Cloud Identity Services now supports a new local user attribute - `License Groups` to list the license groups that give access to the premium Joule scenarios. See [Configuring User Attributes from the Identity Directory](Operation-Guide/configuring-user-attributes-from-the-identity-directory-d361407.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-06-18
+
+</td>
+<td valign="top">
+
+2025-06-18
+
+</td>
+<td valign="top">
+
+27972
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Revenue Growth Management connector
+
+</td>
+<td valign="top">
+
+Identity Provisioning supports the SAP Revenue Growth Management connector. You can configure it as source, target, and proxy system for your provisioning scenarios.
+
+For more information, see
+
+-   [SAP Revenue Growth Management \(Source\)](sap-revenue-growth-management-1d02d60.md)
+-   [SAP Revenue Growth Management \(Target\)](sap-revenue-growth-management-85ea2ea.md)
+-   [SAP Revenue Growth Management \(Proxy\)](sap-revenue-growth-management-69970c8.md)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-06-18
+
+</td>
+<td valign="top">
+
+2025-06-18
+
+</td>
+<td valign="top">
+
+27972
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Job Execution Outcome introduced
+
+</td>
+<td valign="top">
+
+The *Job Execution Outcome* is now displayed on the *Job Execution Details* screen and included in the job notifications. It appears when delta-read jobs and jobs that fail to read entities from the source system affect the deletion of entities in the target system.
+
+For more information, see [Monitor Provisioning Job Logs](Monitoring-and-Reporting/monitor-provisioning-job-logs-e5b5176.md)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-06-18
+
+</td>
+<td valign="top">
+
+2025-06-18
+
+</td>
+<td valign="top">
+
+27972
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System reset confirmation message extended
+
+</td>
+<td valign="top">
+
+The UI message prompting confirmation for system reset has been expanded to include typical cases when a reset is necessary.
+
+For more information, see [Reset Identity Provisioning System](Operation-Guide/reset-identity-provisioning-system-0bc1e53.md)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-06-18
+
+</td>
+<td valign="top">
+
+2025-06-18
+
+</td>
+<td valign="top">
+
+27972
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Support for SAP extension schema for groups
+
+</td>
+<td valign="top">
+
+The default transformations of the following connectors support attributes from the SAP extension schema for groups, including application ID, type, and supported operations.
+
+For more information, see
+
+-   [SAP Integrated Business Planning for Supply Chain](sap-integrated-business-planning-for-supply-chain-65a847e.md)
+-   [SAP Intelligent Agriculture](sap-intelligent-agriculture-9e47e03.md)
+-   [SAP Jam Collaboration](sap-jam-collaboration-eeeb246.md)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-06-18
+
+</td>
+<td valign="top">
+
+2025-06-18
+
+</td>
+<td valign="top">
+
+27972
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Support for extension enterprise schema for users
+
+</td>
+<td valign="top">
+
+The extension enterprise schema has been defined in the default write and proxy write transformations of SAP Concur.
+
+For more information, see [SAP Concur](sap-concur-032fd80.md)
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-06-18
+
+</td>
+<td valign="top">
+
+2025-06-18
+
+</td>
+<td valign="top">
+
+27972
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Regular Upgrade
 
 </td>

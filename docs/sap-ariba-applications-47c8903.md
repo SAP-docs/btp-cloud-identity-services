@@ -398,7 +398,7 @@ These target systems consume SCIM 2.0 API provided by SAP Ariba Applications. Fo
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    [SAP Ariba APIs Portal](https://developer.ariba.com/api/apis) → *Discover* → *SUPPLIER MANAGEMENT*
+    [SAP Ariba SCIM API](https://help.sap.com/docs/ariba-apis/sap-ariba-scim-api-b3330550673e4208a0300f524f5b8104/getting-started-with-sap-ariba-scim-api)
 
     To make group assignments via the user resource, you need to change the default transformation of the target system as described in [Enabling Group Assignment](Operation-Guide/enabling-group-assignment-0d80033.md).
 

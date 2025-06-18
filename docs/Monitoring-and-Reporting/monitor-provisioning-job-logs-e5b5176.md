@@ -187,6 +187,8 @@ To search and view the job logs, proceed as follows:
 
     -   **Error Message** – Shows the error message.
 
+    -   **Job Execution Outcome** - Shows the job execution specifics that have influenced the deletion of entities from the target system\(s\) at the end of the provisioning job.
+
     -   **Statistics** – Shows the job statistics, that is, details about how entities are handled.
 
         > ### Note:  

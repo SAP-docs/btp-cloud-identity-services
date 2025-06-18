@@ -143,16 +143,22 @@ Identity Authentication supports also the following user attributes:
 -   `All Groups`
 
     > ### Note:  
-    > > ### Note:  
-    > > Lists all the groups that a user is a member of.
-    > > 
-    > > Use `Groups` as user attribute name for application on the SAP BTP, Cloud Foundry Environment.
+    > Lists all the groups that a user is a member of.
+    > 
+    > Use `Groups` as user attribute name for application on the SAP BTP, Cloud Foundry Environment.
 
 -   `Application Groups`
 
     > ### Note:  
-    > > ### Note:  
-    > > Lists only the application-specific groups to which the user is assigned to.
+    > Lists only the application-specific groups to which the user is assigned to.
+
+-   `License Groups`
+
+    > ### Note:  
+    > The license group is a special package license group in `Cloud Identity Services` of type `License` for AI features across the SAP portfolio. Only the users that are assigned to these license groups can access the premium Joule scenarios
+
+    > ### Remember:  
+    > The name must be `sap_licenses`.
 
 -   `Company Industry`
 -   `Job Function`
@@ -166,8 +172,6 @@ Identity Authentication supports also the following user attributes:
 -   `Salutation`
 -   `User ID`
 -   `ZIP/Postal Code`.
-
-> ### Tip:  
 
 > ### Remember:  
 > The application custom attributes are configured by the application \(service provider\). They can't be defined for the user.

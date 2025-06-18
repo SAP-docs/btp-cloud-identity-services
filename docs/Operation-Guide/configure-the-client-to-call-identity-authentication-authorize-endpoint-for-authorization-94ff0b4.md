@@ -322,7 +322,7 @@ string
 
 The technical name of the corporate identity provider as configured in the administration console for SAP Cloud Identity Services.
 
-When a chain of identity providers are allowed for an application via conditional authentication, these parameters enable the client to specify which corporate identity providers to be used. Identity Authentication uses the `idp` parameter to detect the correct corporate identity providers and redirect the request to them. When there is more than one corporate IdP in the IdP-initiated link, they are separated by comma "`,`" without space between them.
+When a chain of identity providers are allowed for an application via conditional authentication, these parameters enable the client to specify which corporate identity providers are to be used. Identity Authentication uses the `idp` parameter to detect the correct corporate identity providers and redirect the request to them. When there is more than one corporate IdP in the IdP-initiated link, they are separated by comma "`,`" without space between them.For applications that allow logon with OIDC, use the value `local` to override the conditional authentication configuration and log on with Identity Authentication instead.
 
 </td>
 <td valign="top">

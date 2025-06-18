@@ -475,7 +475,7 @@ To create SAP Concur as a proxy system, proceed as follows:
     To learn what additional properties are relevant to this system, see [List of Properties](list-of-properties-d6f3577.md). You can use the main search, or filter properties by the *Name* or *System Type* columns.
 
     > ### Note:  
-    > The Identity Provisioning implementation of the SCIM Proxy API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users and groups. For more information, see [Query Parameters for Proxy SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
+    > The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
 
 7.  Configure the transformations.
 
@@ -489,7 +489,7 @@ To create SAP Concur as a proxy system, proceed as follows:
 
     **UPS v1 API**: [User v1](https://developer.concur.com/api-reference/user/index.html)
 
-    **Identity v4 API**: [Identity v4](https://developer.concur.com/api-reference/profile/v4.identity.html)
+    **Identity v4 API**: [User Provisioning Service](https://developer.concur.com/api-reference/user-provisioning/v4.user-provisioning.html) and [Employee Import Specification](https://help.sap.com/docs/SAP_CONCUR/07e27aa97f4a4bf6b0de7810e7efd6f0/1b93cdfc6caf10148201a66400fc30d6.html?version=Latest)
 
     > ### Caution:  
     > The User v1 API requires an initial password setup for all newly provisioned user accounts. The default transformation offers a statement with an empty string as a value for the password configuration. However, it is ignored in order to prevent from a default setup of a wrong initial password for your systems. While the password statement is ignored, the provisioning will not be working. To enable the provisioning to SAP Concur, you need to perform the following operations:
@@ -874,7 +874,6 @@ To create SAP Concur as a proxy system, proceed as follows:
     
     > ### Code Syntax:  
     > ```
-    > 
     > {
     >   "user": {
     >     "scimEntityEndpoint": "Users",
@@ -884,8 +883,7 @@ To create SAP Concur as a proxy system, proceed as follows:
     >         "targetPath": "$.id"
     >       },
     >       {
-    >         "sourcePath": "$.schemas",
-    >         "preserveArrayWithSingleElement": true,
+    >         "constant": ["urn:ietf:params:scim:schemas:core:2.0:User","urn:sap:cloud:scim:schemas:extension:custom:2.0:User","urn:ietf:params:scim:schemas:extension:sap:2.0:User", "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"],
     >         "targetPath": "$.schemas"
     >       },
     >       {
@@ -1033,6 +1031,7 @@ To create SAP Concur as a proxy system, proceed as follows:
     >     ]
     >   }
     > }
+    > 
     > ```
 
 
@@ -1069,7 +1068,7 @@ To create SAP Concur as a proxy system, proceed as follows:
 
 When a proxy system is connected to an external backend system \(in the case of SAP Identity Management this means the exported CSV file is imported into the Identity Management Admin UI and a repository is configured\), you can start managing the users and groups into this external system. Usually, the first operation is the initial load of the existing entities into your external system. When this load has finished, changes in the external system, such as creating new users or updating existing ones, can trigger CRUD requests back to the proxy system.
 
-To see an example with SAP Identity Management, see [Hybrid Scenario: SAP Identity Management](https://help.sap.com/docs/identity-provisioning/identity-provisioning/hybrid-scenario-sap-identity-management?version=Cloud) → sections **Next Steps** and **Future Identity Lifecycle**.
+To see an example with SAP Identity Management, see [Hybrid Scenario: SAP Identity Management](Integrating-the-Service/hybrid-scenario-sap-identity-management-6fa419a.md) → sections **Next Steps** and **Future Identity Lifecycle**.
 
 > ### Caution:  
 > Effective **September 2020**, Shanghai \(China\) tenants that reside on SAP BTP, Neo environment can be only accessed on the following domain: `dispatcher.cn1.platform.sapcloud.cn`

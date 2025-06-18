@@ -1,18 +1,20 @@
-<!-- copyd5a9903381a948c88127b1e2edb5f450 -->
+<!-- copy299ae2f07a6646768cbc881c4d368dac -->
 
-# Create OpenID Connect Application for JWT Bearer Flow
+# Create OpenID Connect Application
 
-Create a new OpenID Connect application for JWT bearer flow.
+You can create a new OpenID Connect application.
 
 
 
 ## Context
 
+To create a new OpenID Connect application you have to add a new application to the list of applications in Identity Authentication, and set the protocol of the application to OpenID Connect.
+
 To create a new OpenID Connect application follow the procedure below:
 
 
 
-<a name="copyd5a9903381a948c88127b1e2edb5f450__steps_qqh_hfk_q4"/>
+<a name="copy299ae2f07a6646768cbc881c4d368dac__steps_qqh_hfk_q4"/>
 
 ## Procedure
 
@@ -119,7 +121,7 @@ To create a new OpenID Connect application follow the procedure below:
 
 
 
-<a name="copyd5a9903381a948c88127b1e2edb5f450__postreq_xsy_mpp_pyb"/>
+<a name="copy299ae2f07a6646768cbc881c4d368dac__postreq_xsy_mpp_pyb"/>
 
 ## Next Steps
 

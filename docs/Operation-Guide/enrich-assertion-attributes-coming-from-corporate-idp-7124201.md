@@ -12,14 +12,17 @@ The attributes received from the corporate IdP by Identity Authentication are mo
 
 The attributes are also put in the `id_token` if the application is OpenID connect. For more information, see [Configuring OpenID Connect](configuring-openid-connect-a789c9c.md).
 
-For both, the SAML 2.0 and OpenID Connect applications, you can configure attributes with:
+For both the SAML 2.0 and OpenID Connect applications, you can configure attributes with:
 
--   dynamic values - The assertion attributes can take up to two dynamic values. They are added into the assertions in the following pattern: `<prefix> ${<received_attribute>} <suffix>`. You can use also multivalue attributes.
+-   dynamic values - The assertion attributes can take up to two dynamic values. They are added into the assertions in the following pattern: `<prefix> ${<received_attribute>} <suffix>`. You can also use multivalue attributes.
 
     > ### Restriction:  
     > The combination of two multivalue attributes is not allowed. The assertion attributes can take two single value attributes or a single value and a multivalue attribute.
 
 -   static values
+
+> ### Restriction:  
+> The `sap_licenses` attribute is not supported for the enrich assertion attributes scenario.
 
 You can add up to 30 attributes per corporate IdP.
 

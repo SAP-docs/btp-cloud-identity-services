@@ -66,7 +66,7 @@ A proxy system is a special connector used for "hybrid" scenarios. It exposes an
 
 To achieve this, the Identity Provisioning service uses this special proxy system to execute provisioning operations \(create, update, delete, etc.\) requested by the client application.
 
-The examples in this section cover using of SAP Identity Management as a consuming client application but you can use any other SCIM-based identity management solution. For more information, see: [Hybrid Scenario: SAP Identity Management](https://help.sap.com/docs/identity-provisioning/identity-provisioning/hybrid-scenario-sap-identity-management?version=Cloud). To provide communication between SAP Identity Management and the back-end system, the proxy application uses a SCIM 2.0 protocol. A system can act as a proxy if it supports both read and write operations.
+The examples in this section cover using of SAP Identity Management as a consuming client application but you can use any other SCIM-based identity management solution. For more information, see: [Hybrid Scenario: SAP Identity Management](Integrating-the-Service/hybrid-scenario-sap-identity-management-6fa419a.md). To provide communication between SAP Identity Management and the back-end system, the proxy application uses a SCIM 2.0 protocol. A system can act as a proxy if it supports both read and write operations.
 
 How a proxy system works:
 

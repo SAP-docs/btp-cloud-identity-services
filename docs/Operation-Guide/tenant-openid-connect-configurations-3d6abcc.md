@@ -134,6 +134,9 @@ To view or change the tenant OpenID Connect configurations, proceed as follows:
     > ### Caution:  
     > OpenID Connect applications use the issuer to identify this tenant. Changing the issuer might cause logon issues for existing applications.
 
+    > ### Remember:  
+    > Change the issuer of the identity provider on the relying party, or the issuer of the identity provider on the corporate identity provider side, every time you change the *URL* format of the issuer in the administration console. If you have set trusts with more than one relying party, or corporate identity provider, change the name in every provider. For more information about how to edit the name, see the documentation of the respective relying party or corporate identity provider.
+
 6.  **Optional:** Update your signing certificate. You can choose from the following options:
 
     -   To regenerate the existing certificate with new validity, reusing the same private key, choose *Add* \> *Regenerate* \> *Next Step* \> *choose validity from the drop down* \> *Next Step* \> *Finish* \> *Save*.

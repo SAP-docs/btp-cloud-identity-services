@@ -242,7 +242,7 @@ Proceed as follows:
 
 2.  In the *Identity Provisioning* admin consoleadministration console for SAP Cloud Identity Services, select your target system and open its transformation in *Edit* mode.
 
-    Identity Provisioning \(IPS\) is embedded in SAP Cloud Identity Services admin console \(formerly known as Identity Authentication admin console\). If your IPS tenant is running on SAP Cloud Identity infrastructure, you can configure and work with provisioning systems there.
+    Identity Provisioning is embedded in SAP Cloud Identity Services admin console \(formerly known as Identity Authentication admin console\). If your Identity Provisioning tenant is running on SAP Cloud Identity infrastructure, you can configure and work with provisioning systems there.
 
 3.  Depending on your scenario, add one of the following conditions within the user entity:
 
@@ -957,27 +957,27 @@ Related information: [Identity Authentication](https://help.sap.com/docs/cloud-i
 
 **Problem** 
 
-1.  You have SAP SuccessFactors \(SFSF\) as a source system and Identity Authentication \(IAS\) as a target system.
+1.  You have SAP SuccessFactors \(SFSF\) as a source system and Identity Authentication as a target system.
 2.  You have configured your *SFSF* application so as to migrate user passwords to the administration console for SAP Cloud Identity Services, as described on [Configure Authentication Provider To Migrate User Passwords from SAP SuccessFactors Systems to Identity Authentication](https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/en-US/671d2e6de90e44caaa6dede4ab315b48.html).
-3.  You might have **missed** to make the [additional transformation modifications](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/configure-source-system-to-migrate-user-passwords-from-sap-successfactors-systems-to-identity-authentication?version=Cloud&locale=en-US), and then you have run your first provisioning job between SFSF and IAS.
-4.  The provisioning job is successful but the migrated passwords of SFSF users are disabled in IAS, thus users cannot login to the administration console for SAP Cloud Identity Services.
+3.  You might have **missed** to make the [additional transformation modifications](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/configure-source-system-to-migrate-user-passwords-from-sap-successfactors-systems-to-identity-authentication?version=Cloud&locale=en-US), and then you have run your first provisioning job between SFSF and Identity Authentication.
+4.  The provisioning job is successful but the migrated passwords of SFSF users are disabled in Identity Authentication, thus users cannot login to the administration console for SAP Cloud Identity Services.
 
-The reason: In the IAS target transformation, the `“passwordStatus”` mapping has been left with its default value - `"disabled"`.
+The reason: In the Identity Authentication target transformation, the `“passwordStatus”` mapping has been left with its default value - `"disabled"`.
 
 **Solution** 
 
-1.  You have properly configured your SFSF source system so as to migrate user passwords to IAS. To learn how, see: [Configure Source System To Migrate User Passwords from SAP SuccessFactors Systems to Identity Authentication](https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/en-US/671d2e6de90e44caaa6dede4ab315b48.html)
+1.  You have properly configured your SFSF source system so as to migrate user passwords to Identity Authentication. To learn how, see: [Configure Source System To Migrate User Passwords from SAP SuccessFactors Systems to Identity Authentication](https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/en-US/671d2e6de90e44caaa6dede4ab315b48.html)
 
     [Migrating Passwords from SAP SuccessFactors to the SAP Cloud Identity Services](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/568fdf1f14f14fd089a3cd15194d19cc/b25f3f36deed40ddb3aee14c6818df06.html)
 
-2.  Make sure you have done the following modifications in the IAS transformation:
+2.  Make sure you have done the following modifications in the Identity Authentication transformation:
     -   You have added two extra mappings with constants `<SF_Company_ID>` and *100* \(see the code block below\).
     -   You have removed the `"constant": "39"` mapping.
     -   For the `passwordStatus` mapping, you have changed `"disabled"` to `"enabled"`
 
 3.  To fix your issue, you also need to remove the `"createEntity"` scope from the `passwordStatus` mapping!
 
-    So, after you have done the modifications listed above, your IAS transformation should look like this:
+    So, after you have done the modifications listed above, your Identity Authentication transformation should look like this:
 
 
     <table>
@@ -986,7 +986,7 @@ The reason: In the IAS target transformation, the `“passwordStatus”` mapping
     
     **Explanation:** 
 
-    This way, on the next provisioning jobs, the Identity Provisioning will always update the password status of the users, even if they get locked in IAS. Also, the migrated passwords will be set first in IAS when a user logs in for the first time to one of their assigned applications \(like SAP SuccessFactors or *User Profile*\).
+    This way, on the next provisioning jobs, the Identity Provisioning will always update the password status of the users, even if they get locked in Identity Authentication. Also, the migrated passwords will be set first in Identity Authentication when a user logs in for the first time to one of their assigned applications \(like SAP SuccessFactors or *User Profile*\).
     
     </td>
     </tr>
@@ -1084,14 +1084,14 @@ The reason: In the IAS target transformation, the `“passwordStatus”` mapping
     
 4.  Run a successful **Read** job.
 5.  Make sure that SFSF users can now successfully login to the administration console for SAP Cloud Identity Services.
-6.  Then open the IAS transformation again, and add `"scope": "createEntity"` back to the `passwordStatus` mapping. This way, newly created users will get their password status set by the Identity Provisioning. And since this status stays *"enabled"*, their passwords won't be locked.
+6.  Then open the Identity Authentication transformation again, and add `"scope": "createEntity"` back to the `passwordStatus` mapping. This way, newly created users will get their password status set by the Identity Provisioning. And since this status stays *"enabled"*, their passwords won't be locked.
 
 **Additional Information** 
 
-Another \(more simple\) way to have all users provisioned and their passwords - successfully migrated to IAS, is to delete all SFSF users from IAS, and recreate them again. Also, you might need to change the value of the `sf.user.filter` property so as to read only SFSF users who have already existed in IAS and have *Administrator* role there. This way, the admin users will be kept and all the other SFSF users will be deleted from IAS.
+Another \(more simple\) way to have all users provisioned and their passwords - successfully migrated to Identity Authentication, is to delete all SFSF users from Identity Authentication, and recreate them again. Also, you might need to change the value of the `sf.user.filter` property so as to read only SFSF users who have already existed in Identity Authentication and have *Administrator* role there. This way, the admin users will be kept and all the other SFSF users will be deleted from Identity Authentication.
 
 > ### Caution:  
-> You must perform the user deletion via the Identity Provisioning service! If you delete them manually from IAS, the Identity Provisioning will still "remember" that these users were previously created by it, thus - will have marked them with a flag that would not allow their passwords to be migrated. **Password migration can happen only during user creation via an Identity Provisioning job!**
+> You must perform the user deletion via the Identity Provisioning service! If you delete them manually from Identity Authentication, the Identity Provisioning will still "remember" that these users were previously created by it, thus - will have marked them with a flag that would not allow their passwords to be migrated. **Password migration can happen only during user creation via an Identity Provisioning job!**
 
 To learn more, see:[Identity Authentication: Provisioned Users Are Duplicated in SAP Jam or SAP Work Zone](job-and-transformation-issues-dbe3c08.md#loiodbe3c08ebe7c47fb98422680c6580cc0__section_kwf_lbw_bcc) 
 
@@ -1101,15 +1101,15 @@ To learn more, see:[Identity Authentication: Provisioned Users Are Duplicated in
 
 **Problem** 
 
-You have provisioned users from a source system to Identity Authentication \(IAS\). When users try to login to the administration console for SAP Cloud Identity Services though, they cannot do that because their passwords are locked.
+You have provisioned users from a source system to Identity Authentication. When users try to login to the administration console for SAP Cloud Identity Services though, they cannot do that because their passwords are locked.
 
 The reason for that is improper transformation mappings, which have caused users to be provisioned with password status *"disabled"*.
 
 **Solution** 
 
-A simple solution would be to delete all provisioned users from IAS and re-create them again, this time - with active passwords. You can do that via an Identity Provisioning job, and changing the value of the user filter property, so as to read only users who have already existed in IAS and have *Administrator* role there. To do that, proceed as follows:
+A simple solution would be to delete all provisioned users from Identity Authentication and re-create them again, this time - with active passwords. You can do that via an Identity Provisioning job, and changing the value of the user filter property, so as to read only users who have already existed in Identity Authentication and have *Administrator* role there. To do that, proceed as follows:
 
-1.  Open your IAS target transformation.
+1.  Open your Identity Authentication target transformation.
 2.  Search for the `"user"` mapping below and change `"disabled"` to <code><b>"enabled"</b></code>:
 
 
@@ -1156,11 +1156,11 @@ A simple solution would be to delete all provisioned users from IAS and re-creat
     </tr>
     </table>
     
-3.  Go to the source system and change the user filter so as to read only users who have already existed in IAS and have *Administrator* role there.
+3.  Go to the source system and change the user filter so as to read only users who have already existed in Identity Authentication and have *Administrator* role there.
 
     For example, if you have an SAP SuccessFactors \(SFSF\) source system, go to the `sf.user.filter` property and extend its value to: `status eq 'active' and username in '<username1>','<username2>',...` 
 
-    This way, the IAS admin users will be kept, and all the other SFSF users will be deleted from IAS.
+    This way, the Identity Authentication admin users will be kept, and all the other SFSF users will be deleted from Identity Authentication.
 
 4.  Run a successful **Read** job. It will delete all users that **Identity Provisioning** has previously created and that are not in the filter list.
 5.  Open the user filter property again and change it back to its default value. For example, change the `sf.user.filter` value back to: `status eq 'active'`
@@ -1190,8 +1190,8 @@ The same issue may happen when the target system is SAP Work Zone. In this case,
 
 ### Reason
 
--   When provisioned from IAS to SAP Jam via IAS console, a user `id` in IAS is mapped to a `userName` in SAP Jam.
--   When provisioned from IAS to SAP Jam via IPS console, an `userName` in IAS is mapped to a `userName` in SAP Jam.
+-   When provisioned from Identity Authentication to SAP Jam via Identity Authentication console, a user `id` in Identity Authentication is mapped to a `userName` in SAP Jam.
+-   When provisioned from Identity Authentication to SAP Jam via IPS console, an `userName` in Identity Authentication is mapped to a `userName` in SAP Jam.
 
 As a result, one and the same user can be created twice in SAP Jam - by its `id`, and by its `userName`.
 
@@ -1215,8 +1215,8 @@ As a result, one and the same user can be created twice in SAP Jam - by its `id`
             },
     ```
 
-4.  Now open your IAS source system and reset it. To do that, select the system and choose *Edit* \> *Reset*.
-5.  Then modify the IAS transformation the following way:
+4.  Now open your Identity Authentication source system and reset it. To do that, select the system and choose *Edit* \> *Reset*.
+5.  Then modify the Identity Authentication transformation the following way:
 
     Change this mapping:
 
@@ -1239,9 +1239,9 @@ As a result, one and the same user can be created twice in SAP Jam - by its `id`
       }
     ```
 
-6.  Run a **Read** job for the IAS system. All entities created before directly from the IAS console to SAP JAM will be updated in SAP JAM. This way, the Identity Provisioning already knows about these entities and can manage them. Entities created from provisioning through the *Identity Provisioning* admin consoleadministration console for SAP Cloud Identity Services will remain.
+6.  Run a **Read** job for the Identity Authentication system. All entities created before directly from the Identity Authentication console to SAP JAM will be updated in SAP JAM. This way, the Identity Provisioning already knows about these entities and can manage them. Entities created from provisioning through the *Identity Provisioning* admin consoleadministration console for SAP Cloud Identity Services will remain.
 7.  Go to the SAP Jam target system, and add the following \(Standard\) system property: `ips.delete.existedbefore.entities` = `true`
-8.  Now go back to the IAS source system and add a special condition in the `"user"` section. Your mapping should look like this:
+8.  Now go back to the Identity Authentication source system and add a special condition in the `"user"` section. Your mapping should look like this:
 
     ```
     "user":
@@ -1250,9 +1250,9 @@ As a result, one and the same user can be created twice in SAP Jam - by its `id`
     "mappings": [
     ```
 
-9.  Run a new **Read** job for the IAS system. At this step, all users provisioned through IAS console should be deleted from SAP JAM.
+9.  Run a new **Read** job for the Identity Authentication system. At this step, all users provisioned through Identity Authentication console should be deleted from SAP JAM.
 10. Now go to the SAP Jam target system and return the mappings you have removed on step 3.
-11. Then go back to the IAS source system and delete the condition from step 8.
+11. Then go back to the Identity Authentication source system and delete the condition from step 8.
 
 **Next steps** 
 
@@ -1268,41 +1268,41 @@ From now on, use only the *Identity Provisioning* admin consoleadministration co
 
 ### Problem
 
-1.  You have an SAP Jam product, which contains Identity Authentication \(IAS\) and Identity Provisioning \(IPS\).
-2.  When your product is activated, all users from IAS are initially provisioned to SAP Jam, which is a default and desired behavior.
-3.  Later on, additional users were added to IAS \(either created manually, or come from another product\).
+1.  You have an SAP Jam product, which contains Identity Authentication and Identity Provisioning.
+2.  When your product is activated, all users from Identity Authentication are initially provisioned to SAP Jam, which is a default and desired behavior.
+3.  Later on, additional users were added to Identity Authentication \(either created manually, or come from another product\).
 4.  All these new users are automatically provisioned to SAP Jam too, but some of them **should not be**.
 
 
 
 ### Reason
 
-The default SAP Jam transformation is set so as to be synchronized with all changes that take place in the source system \(IAS\). That means - both updating existing users, or creating newly added ones.
+The default SAP Jam transformation is set so as to be synchronized with all changes that take place in the source system \(Identity Authentication\). That means - both updating existing users, or creating newly added ones.
 
-However, you want some of these users to stay only in IAS and not to be provisioned to SAP Jam. For example, specific users coming from another products.
+However, you want some of these users to stay only in Identity Authentication and not to be provisioned to SAP Jam. For example, specific users coming from another products.
 
 
 
 ### Solution 1
 
-You can set a filter that will read, create and update only **"pure IAS"** users \(originally existing in IAS, or manually created later\).
+You can set a filter that will read, create and update only **"pure Identity Authentication"** users \(originally existing in Identity Authentication, or manually created later\).
 
-1.  You have to assign all these IAS users to a specific group. Let's say, the group name is called `IAS_Specific`.
+1.  You have to assign all these Identity Authentication users to a specific group. Let's say, the group name is called `IAS_Specific`.
 2.  All additional users \(coming from other products\) must belong to other groups or to no groups at all.
 3.  To set a filter, open your SAP Jam target system.
 4.  Go to the *Properties* tab and choose *Edit*.
 5.  Add property `scim.user.filter` and set its value to `groups eq 'IAS_Specific'`
 
-This way, if a new user appears in IAS, and it doesn't belong to *IAS\_Specific*, it will not be provisioned to SAP Jam.
+This way, if a new user appears in Identity Authentication, and it doesn't belong to *IAS\_Specific*, it will not be provisioned to SAP Jam.
 
 
 
 ### Solution 2
 
-If it's too complicated or cumbersome to assign all **"pure IAS"** users to a single group, you can instead assign the newly come **foreign** users to a specific group. Then, you can set a condition in the transformation so as to skip only this specific group.
+If it's too complicated or cumbersome to assign all **"pure Identity Authentication"** users to a single group, you can instead assign the newly come **foreign** users to a specific group. Then, you can set a condition in the transformation so as to skip only this specific group.
 
 1.  Let's say, the **foreign** users come from SAP Marketing Cloud, so you assign the relevant users to a group named `Marketing_Cloud`.
-2.  To set a condition, open your IAS source system.
+2.  To set a condition, open your Identity Authentication source system.
 3.  Go to the *Transformations* tab and choose *Edit*.
 4.  Under `"user":{` enter the following condition:
 
@@ -1333,7 +1333,7 @@ This way, the Identity Provisioning service:
 
 ## Identity Authentication: Send activation email in users preferred language
 
-When provisioning users from SAP SuccessFactors to Identity Authentication \(IAS\), you want the newly created users in IAS to get the activation emails in their preferred language. For this, you need to configure the transformations of both SAP SuccessFactors \(source\) and Identity Authentication \(target\) systems.
+When provisioning users from SAP SuccessFactors to Identity Authentication, you want the newly created users in Identity Authentication to get the activation emails in their preferred language. For this, you need to configure the transformations of both SAP SuccessFactors \(source\) and Identity Authentication \(target\) systems.
 
 Proceed as follows:
 
@@ -1652,7 +1652,7 @@ Related information: [Microsoft AD \(Source System\)](https://help.sap.com/docs/
 
 ## Multiple Users from a Source System Are Created as One in the Target
 
-The problem described on this page illustrates a scenario involving SAP SuccessFactors \(SFSF\) as a source system and Identity Authentication \(IAS\) as a target one. However, this issue may occur to any source system while provisioning users to the following targets:
+The problem described on this page illustrates a scenario involving SAP SuccessFactors \(SFSF\) as a source system and Identity Authentication as a target one. However, this issue may occur to any source system while provisioning users to the following targets:
 
 -   Identity Authentication
 -   SAP Analytics Cloud
@@ -1670,18 +1670,18 @@ The problem described on this page illustrates a scenario involving SAP SuccessF
 1.  You've added SAP SuccessFactors as a source system and Identity Authentication as a target one.
 2.  You haven't set any specific filters. Thus, the provisioned users are expected to be the same number as the ones in SFSF..
 3.  You've started a **Read Job**, which finishes successfully.
-4.  When you check the populated entities, though, you notice that the users created in IAS are fewer \(or significantly fewer\) than the original number of users in SFSF.
+4.  When you check the populated entities, though, you notice that the users created in Identity Authentication are fewer \(or significantly fewer\) than the original number of users in SFSF.
 
 
 
 ### Reason
 
-The user e-mail is optional for SFSF \(it might not be unique\). However, it's mandatory and unique for IAS.
+The user e-mail is optional for SFSF \(it might not be unique\). However, it's mandatory and unique for Identity Authentication.
 
 Therefore, it's very likely that some users have **duplicate** e-mail addresses in SFSF, which causes the improper provisioning. The Identity Provisioning service stores a **relation** for every source entity and its corresponding target entity. When multiple users have duplicate e-mails and the provisioning is triggered, the stored relation is "**many** source entities that point to **a single** target entity".
 
 > ### Remember:  
-> Before you start provisioning SFSF users to IAS for the first time, make sure that all users **have** e-mails, which are **unique**, even if these entities are only meant for test purposes. This way, you won't encounter the problem described in this guided answer.
+> Before you start provisioning SFSF users to Identity Authentication for the first time, make sure that all users **have** e-mails, which are **unique**, even if these entities are only meant for test purposes. This way, you won't encounter the problem described in this guided answer.
 
 
 
@@ -1739,7 +1739,7 @@ To solve the occurred problem, you first need to edit the e-mails of all affecte
 
         -   `$.email == ' '` means the SFSF user has a space character set as an e-mail address.
 
-        -   `$.email == 'user123@companyname.com'` means that multiple users in SFSF have a business e-mail *user123@companyname.com*, which results in errors in the IAS target system. This email address is just an example! In your condition, the listed emails can refer to your actual company domain, or to another non-existing one.
+        -   `$.email == 'user123@companyname.com'` means that multiple users in SFSF have a business e-mail *user123@companyname.com*, which results in errors in the Identity Authentication target system. This email address is just an example! In your condition, the listed emails can refer to your actual company domain, or to another non-existing one.
 
 
         > ### Note:  
@@ -1748,7 +1748,7 @@ To solve the occurred problem, you first need to edit the e-mails of all affecte
         > ### Note:  
         > Bare in mind that the condition is case sensitive! Thus, make sure that all SFSF e-mails contain low-case letters only. If some of them contain capital letters, you can either go and manually change them to low case, or list all emails like that in the condition.
 
-        Using the code above, each provisioned user will be created in IAS with a unique e-mail in format `<userId>@sap-test.de`. Users that have valid unique business e-mails set in SFSF will be provisioned with the same valid e-mails in the administration console for SAP Cloud Identity Services.
+        Using the code above, each provisioned user will be created in Identity Authentication with a unique e-mail in format `<userId>@sap-test.de`. Users that have valid unique business e-mails set in SFSF will be provisioned with the same valid e-mails in the administration console for SAP Cloud Identity Services.
 
 
 
@@ -1763,7 +1763,7 @@ After you have executed the prerequisite steps, follow the final steps below:
 3.  Add a standard property `scim.user.unique.attribute` and set it to `userName`. This way, if the Identity Provisioning reads two different users with the same e-mail, it will try to resolve the second one by *user name*. Since these two users have different user names, this second entity will fail with an error for duplicate e-mail. You will see it in the *Job Logs*. This approach is safe because it won't affect the successfully created users in the target system, and will only prompt you to edit the SFSF e-mails of newly added conflicting users.
 4.  Now open the SAP SuccessFactors source system.
 5.  Start a new **Read** Job.
-6.  As a result, all source entities will be read and then created/updated in the IAS target system. The Identity Provisioning will store a new unique relation between each source entity and its corresponding target entity.
+6.  As a result, all source entities will be read and then created/updated in the Identity Authentication target system. The Identity Provisioning will store a new unique relation between each source entity and its corresponding target entity.
 
 
 

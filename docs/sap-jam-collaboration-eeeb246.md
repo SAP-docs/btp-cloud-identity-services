@@ -255,6 +255,21 @@ These source systems consume SCIM 2.0 API provided by SAP Jam Collaboration.
     >             {
     >                 "type": "remove",
     >                 "targetPath": "$.meta"
+    >             },
+    >             {
+    >                 "condition" : "'%ips.application.id%'!== 'null'",
+    >                 "constant" : "%ips.application.id%",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "optional": true,
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "optional": true,
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
     >             }
     >         ]
     >     }

@@ -45,12 +45,21 @@ By default, *Allow Identity Authentication users only* is disabled, and all user
 
 
 
-### Restrict Logon to Members of Certain Groups from the Corporate Identity Provider
+### Restrict Logon to Members of Certain Groups
 
-As a next step, you can assign a group or groups to the corporate identity provider. Only users from the Identity Authentication that are members of the assigned group can access the application.
+You can assign a group or groups to the corporate identity provider. Only users from the Identity Authentication that are members of the assigned group can access the application.
 
 > ### Remember:  
 > You can assign groups, only when *Allow Identity Authentication users only* option is enabled. If disabled, the assigned groups option is not taken into consideration.
+
+
+
+### Restrict Logon to Users with Certain Email Domains
+
+Only users from the Identity Authentication user store whose email domains are allowed can access the application.
+
+> ### Remember:  
+> You can allow email domains from the allow list, only when the *Allow Identity Authentication users only* option is enabled. If disabled, the allow list option is not taken into consideration.
 
 
 
@@ -169,7 +178,7 @@ You have enabled *Allow Identity Authentication users only* option. For more inf
 
 <!-- task\_nvs\_4v4\_y5 -->
 
-## Restrict Logon to Members of Certain Groups from the Corporate Identity Provider
+## \(Optional\) Restrict Logon Only to Members of Certain Groups
 
 
 
@@ -198,7 +207,7 @@ You have enabled *Allow Identity Authentication users only* option. For more inf
 
     You will see a list of the groups assigned to this corporate identity provider. If no groups are assigned, the list will be empty.
 
-5.  Choose the *Assign Groups* button.
+5.  Choose the *Add* button.
 
 6.  Select the groups that you want to assign to this corporate identity provider.
 
@@ -211,17 +220,51 @@ You have enabled *Allow Identity Authentication users only* option. For more inf
     If the operation is successful, the system displays the message ***Identity provider <name of identity provider\> updated***.
 
     > ### Note:  
-    > To unassign groups, select the groups you want to unassign, choose the *Unassign Groups* button, and confirm the operation in the dialog.
+    > To unassign groups, select the groups you want to unassign, choose the *Remove* button, and confirm the operation in the dialog.
     > 
     > Users that belong only to the unassigned groups will not be able to access the application any more.
 
 
-**Related Information**  
+<a name="task_fxj_3kx_rfc"/>
+
+<!-- task\_fxj\_3kx\_rfc -->
+
+## \(Optional\) Restrict Logon Only to Users with Specific Email Domains
 
 
-[Create a Group](create-a-group-b1b638d.md "As a tenant administrator you can create groups in the tenant to organize users based on common characteristics, authorization, or application via the administration console for SAP Cloud Identity Services.")
 
-[Assign Groups to a User](assign-groups-to-a-user-bfdeb9c.md "As a tenant administrator, you can assign one or more groups created for a specific tenant to a user via the administration console for SAP Cloud Identity Services.")
+<a name="task_fxj_3kx_rfc__prereq_ixw_lkx_rfc"/>
 
-[Configure Concurrent User Access to the Application](configure-concurrent-user-access-to-the-application-80ead1a.md "Tenant administrator can allow or restrict user access to an application from one or more browsers or devices.")
+## Prerequisites
+
+You have enabled *Allow Identity Authentication users only* option. For more information about how to enable the option, see *Allow Identity Authentication users only* in this topic.
+
+
+
+## Procedure
+
+1.  Sign in to the administration console for SAP Cloud Identity Services.
+
+2.  Under *Identity Providers*, choose the *Corporate Identity Providers* tile.
+
+3.  Select the corporate identity provider that you want to configure.
+
+    > ### Tip:  
+    > If you need to change the protocol, see [Choose Identity Provider Type](choose-identity-provider-type-0838379.md).
+
+4.  Choose *Identity Federation*.
+
+    You will see a list of the allowed email domains for this corporate identity provider. If no email domains are allowed, the list will be empty.
+
+5.  Choose the *Add* button.
+
+6.  Type the email domains that you want to allow for this corporate identity provider.
+
+7.  Save your changes.
+
+    If the operation is successful, the system displays the message ***Identity provider <name of identity provider\> updated***.
+
+    > ### Note:  
+    > To remove the email domains, select them from the list, choose the *Remove* button, and confirm the operation in the dialog.
+
 

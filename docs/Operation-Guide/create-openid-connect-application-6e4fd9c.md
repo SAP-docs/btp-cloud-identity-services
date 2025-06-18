@@ -1,18 +1,20 @@
-<!-- copy411c3c6aa5f244579edbcc294dbe62d6 -->
+<!-- copy6e4fd9c5718c428e8fc53306a7c5da75 -->
 
-# Create OpenID Connect Application for Authorization Code Flow
+# Create OpenID Connect Application
 
-Create a new OpenID Connect application for authorization code flow.
+You can create a new OpenID Connect application.
 
 
 
 ## Context
 
+To create a new OpenID Connect application you have to add a new application to the list of applications in Identity Authentication, and set the protocol of the application to OpenID Connect.
+
 To create a new OpenID Connect application follow the procedure below:
 
 
 
-<a name="copy411c3c6aa5f244579edbcc294dbe62d6__steps_qqh_hfk_q4"/>
+<a name="copy6e4fd9c5718c428e8fc53306a7c5da75__steps_qqh_hfk_q4"/>
 
 ## Procedure
 
@@ -119,7 +121,7 @@ To create a new OpenID Connect application follow the procedure below:
 
 
 
-<a name="copy411c3c6aa5f244579edbcc294dbe62d6__postreq_xsy_mpp_pyb"/>
+<a name="copy6e4fd9c5718c428e8fc53306a7c5da75__postreq_xsy_mpp_pyb"/>
 
 ## Next Steps
 

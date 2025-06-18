@@ -40,7 +40,7 @@ When you subscribe to a source system, you can receive notification e-mails in t
     After a new run, the job has successfully finished. You'll receive only one e-mail with subject *Provisioning Success. Source System: <name\>*.
 
 
-The notification e-mail tells you which are the source and the target systems, what is the job type, its start time and status. It contains the `Navigate to details` link that opens the *Job Execution Details* screen in the Identity Provisioning UI.
+The notification e-mail tells you which are the source and the target systems, what are the job type and the read mode, its start time and status. In some cases the e-mail contains job execution specifics that have influenced the deletion of entities from the target system\(s\). It includes also the `Navigate to details` link that opens the *Job Execution Details* screen in the Identity Provisioning UI.
 
 In case your job finished with created, updated, failed, skipped, or deleted entities, links to `Download created entities logs`, `Download updated entities logs`, `Download error logs`, `Download skipped entities logs`, and `Download deleted entities logs` are provided, respectively. The content of the downloaded log files depends on your configuration of the `ips.trace.created.entity`, `ips.trace.created.entity.content`, `ips.trace.updated.entity`, `ips.trace.updated.entity.content`, `ips.trace.skipped.entity`, `ips.trace.skipped.entity.content`, `ips.trace.failed.entity.content`, and `ips.trace.deleted.entity` properties. For more information, see: [List of Properties](../list-of-properties-d6f3577.md)
 

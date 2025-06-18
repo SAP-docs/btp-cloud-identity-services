@@ -168,6 +168,37 @@ Create a general SCIM 2.0 based target system to write users and groups to it.
     <tr>
     <td valign="top">
     
+    `scim.csrf.token.path`
+    
+    </td>
+    <td valign="top">
+    
+    Path which is appended to the URL to retrieve the CSRF token.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `scim.api.csrf.protection`
+    
+    </td>
+    <td valign="top">
+    
+    Specifies whether to fetch a CSRF token when sending requests to the system.
+
+    **Possible values:**
+
+    -   *enabled*
+    -   *disabled*
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     \(Optional\) `ips.delete.threshold.groups`
     
     </td>

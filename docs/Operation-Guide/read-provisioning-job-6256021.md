@@ -2,7 +2,7 @@
 
 # Read Provisioning Job
 
-The *Read* job reads all entities from the source system and provisions only new or updated entities to the target one. If the job is run in **delta read** mode, it reads and provisions only new or updated entities in the source system.
+The *Read* job reads all entities from the source system and provisions only new or updated entities to the target one. If the job is run in **delta read** mode - meaning the `ips.delta.read` property is enabled - it reads and provisions only new or updated entities in the source system.
 
 > ### Note:  
 > A Read job checks only for changes in the source system. If there have been changes in the target system, they are not affected by the job.

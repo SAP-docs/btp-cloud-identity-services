@@ -1,6 +1,6 @@
-<!-- loio98015c81af554b5d9192ad550168e331 -->
+<!-- copy230a13631d944b14bfb3b4f7310c1978 -->
 
-# Create OpenID Connect Application for Client Credentials Flow
+# Create OpenID Connect Application
 
 You can create a new OpenID Connect application.
 
@@ -8,13 +8,13 @@ You can create a new OpenID Connect application.
 
 ## Context
 
-To create a new OpenID Connect application you have to add a new application to the list of applications in Identity Authentication, and then set the protocol of application to OpenID Connect.
+To create a new OpenID Connect application you have to add a new application to the list of applications in Identity Authentication, and set the protocol of the application to OpenID Connect.
 
-To create a new OpenID Connect application, choose your scenario and follow the procedure there.
+To create a new OpenID Connect application follow the procedure below:
 
 
 
-<a name="loio98015c81af554b5d9192ad550168e331__steps_qqh_hfk_q4"/>
+<a name="copy230a13631d944b14bfb3b4f7310c1978__steps_qqh_hfk_q4"/>
 
 ## Procedure
 
@@ -121,7 +121,7 @@ To create a new OpenID Connect application, choose your scenario and follow the 
 
 
 
-<a name="loio98015c81af554b5d9192ad550168e331__postreq_xsy_mpp_pyb"/>
+<a name="copy230a13631d944b14bfb3b4f7310c1978__postreq_xsy_mpp_pyb"/>
 
 ## Next Steps
 

@@ -37,3 +37,5 @@ Links to blogs and documents about integration scenarios with Identity Authentic
 
 [Integrating the Service with SAP Task Center](integrating-the-service-with-sap-task-center-ab5e90e.md)
 
+[Hybrid Scenario: SAP Identity Management](hybrid-scenario-sap-identity-management-6fa419a.md "You can execute hybrid scenarios between provisioning systems from the Identity Provisioning UI and external systems that support SCIM 2.0 protocol.")
+

@@ -150,6 +150,11 @@ Configuring real-time provisioning involves the following steps:
 
     As a result, the onboardee user will be immediately provisioned to Identity Authentication.
 
+    When the source and target systems are configured for real-time provisioning scenarios, the following behavior can be expected:
+
+    -   **If a condition is applied in the source transformation:** Entities that do not meet the filtering criteria will either be deprovisioned or not updated in the target system.
+    -   **If a condition is applied in the target transformation:** Entities that do not meet the filtering criteria will either be deprovisioned or skipped in the target system.
+
 
 **Related Information**  
 
