@@ -435,7 +435,7 @@ To create SAP Concur as a source system, proceed as follows:
 
     **UPS v1 API**: [User v1](https://developer.concur.com/api-reference/user/index.html)
 
-    **Identity v4 API**: [User Provisioning Service](https://developer.concur.com/api-reference/user-provisioning/v4.user-provisioning.html) and [Employee Import Specification](https://help.sap.com/docs/SAP_CONCUR/07e27aa97f4a4bf6b0de7810e7efd6f0/1b93cdfc6caf10148201a66400fc30d6.html?version=Latest)
+    **Identity v4 API**: [Identity v4](https://developer.concur.com/api-reference/profile/v4.identity.html)
 
     **Default transformation when using User v1 API \(Version 1\):**
 

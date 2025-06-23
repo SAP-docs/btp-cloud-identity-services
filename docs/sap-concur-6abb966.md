@@ -489,7 +489,7 @@ To create SAP Concur as a proxy system, proceed as follows:
 
     **UPS v1 API**: [User v1](https://developer.concur.com/api-reference/user/index.html)
 
-    **Identity v4 API**: [User Provisioning Service](https://developer.concur.com/api-reference/user-provisioning/v4.user-provisioning.html) and [Employee Import Specification](https://help.sap.com/docs/SAP_CONCUR/07e27aa97f4a4bf6b0de7810e7efd6f0/1b93cdfc6caf10148201a66400fc30d6.html?version=Latest)
+    **Identity v4 API**: [Identity v4](https://developer.concur.com/api-reference/profile/v4.identity.html)
 
     > ### Caution:  
     > The User v1 API requires an initial password setup for all newly provisioned user accounts. The default transformation offers a statement with an empty string as a value for the password configuration. However, it is ignored in order to prevent from a default setup of a wrong initial password for your systems. While the password statement is ignored, the provisioning will not be working. To enable the provisioning to SAP Concur, you need to perform the following operations:

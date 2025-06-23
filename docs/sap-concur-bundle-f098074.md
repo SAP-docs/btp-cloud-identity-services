@@ -51,5 +51,9 @@ Customers can integrate SAP Cloud Identity Services no matter whether the Concur
 
 ## How to Use
 
-Normally, the tenant with Identity Authentication and Identity Provisioning services is pre-configured for out-of-the-box integrations between SAP solutions. However, in the case of SAP Concur, after the tenant provisioning is complete, you need to **manually configure** it for your authentication and provisioning scenarios. For more information, see [SAP Concur Integration Scenario](https://help.sap.com/docs/SAP_CLOUD_IDENTITY/b95c3d5bab324a3a8409eee5267a5b75/ef38d9ee3f7544d882dc3f8de123ad3d.html?version=Cloud)
+Your approach to using SAP Cloud Identity Services for authenticating and managing users in SAP Concur solutions relies on knowing which components are automated and which ones require manual configuration.
+
+As of June 23, 2025, SAP Concur has automated its integration with Identity Authentication, enabling you to access the SAP Cloud Identity Services administration console within SAP Concur. This automation sets up the trust between Identity Authentication and SAP Concur. Once the trust is established, you can proceed with further configuration steps.
+
+For more information, see [SAP Cloud Identity Services - Identity Authentication Automation](https://help.sap.com/docs/SAP_CONCUR/c5d6d15e7ecb4b4d8238b383d59ac2f4/b0c54d03de8a4584b02be00088c3246f.html)
 

@@ -30,7 +30,7 @@ To keep source and target systems completely synchronized, you can use the *Resy
 > ### Note:  
 > Note that Identity Provisioning will not delete entities in the target system if the job runs in **delta read** mode, if entities fail to be read from the source system or if both conditions apply. Deletion is only possible when the job runs in **full read** mode and the entities are successfully read from the source system.
 > 
-> In cases where deletion does not occur automatically, you must decide whether to manually delete such entities in the target system. For example, some entities may no longer exist in the source system and could be worth deleting from the target. Additionally, users who are rehired and assigned new IDs, but still share the same unique attributes, can potentially block user provisioning. For more information, see [Manage Deleted Entities](manage-deleted-entities-3d6bdf1.md).
+> In cases where deletion does not occur automatically, you must decide on the next steps. You can either resolve the failed entities in the source system and run a full read job, or proceed with deletion as described in [Manage Deleted Entities](manage-deleted-entities-3d6bdf1.md).
 
 Below are listed all source systems that currently support *delta read* mode.
 
