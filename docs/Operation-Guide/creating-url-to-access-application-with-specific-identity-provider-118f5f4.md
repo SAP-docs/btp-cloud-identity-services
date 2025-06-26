@@ -34,12 +34,15 @@ The link for IdP-Initiated SSO follows the pattern: `https://<tenant_ID>.account
 When there is more than one corporate IdP, the user is redirected to the first idp from the parameter, and additionally the second IdP from the parameter is added to the request again in an `idp` parameter.
 
 > ### Note:  
-> -   `sp` - Name of the SAML 2 service provider for which SSO is performed. The `sp_name` value of the parameter equals to the `Entity ID` of the service provider. This parameter is needed for Identity Authentication to know which service provider to redirect the user to after successful authentication.
-> -   `idp` - The name of the corporate identity provider as configured in the administration console for SAP Cloud Identity Services.
+> -   `sp`
 > 
->     When multiple identity providers are allowed for an application via conditional authentication, these parameters enable the client to specify which corporate identity providers to be used. Identity Authentication uses the `idp` parameter to detect the correct corporate identity providers and redirect the request to them.
+>     Name of the SAML 2 service provider for which SSO is performed. The `sp_name` value of the parameter equals to the `Entity ID` of the service provider. This parameter is needed for Identity Authentication to know which service provider to redirect the user to after successful authentication.
 > 
->     When there is more than one corporate IdP in the IdP-initiated link, they are separated by comma "`,`" without space between them.
+> -   `idp`
+> 
+>     The technical name of the corporate identity provider as configured in the administration console for SAP Cloud Identity Services.
+> 
+>     When a chain of identity providers are allowed for an application via conditional authentication, these parameters enable the client to specify which corporate identity providers are to be used. Identity Authentication uses the `idp` parameter to detect the correct corporate identity providers and redirect the request to them. When there is more than one corporate IdP in the IdP-initiated link, they are separated by comma "`,`" without space between them.
 > 
 >     > ### Remember:  
 >     > If there is more than one corporate IdP in the IdP-initiated link, use *HTTP-Redirect* as default binding in the trust configuration with SAML 2.0 Corporate Identity Provider. For more information, see [Configure Trust on Identity Authentication Side](configure-trust-with-saml-2-0-corporate-identity-provider-33832e5.md#loio33832e58695345eea2cd91a2cc8ab24c__chunked_trust_ias).

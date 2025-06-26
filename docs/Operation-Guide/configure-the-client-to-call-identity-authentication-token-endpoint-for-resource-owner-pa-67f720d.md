@@ -6,6 +6,39 @@ The token endpoint is used to get the user's access token, id token and refresh 
 
 
 
+<a name="loio67f720de8a36466585a1e9074e6f457c__section_lyw_cqf_n2c"/>
+
+## Prerequisites
+
+-   For your business application, there’s an OIDC application in Identity Authentication.
+
+    For more information, see [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md).
+
+-   For your OIDC application in Identity Authentication, you've prepared an authentication credential for the API call. The API supports the following authentication schemes:
+
+    -   Basic
+
+        For more information, see `Authorization` in [Request Header](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md#loio94ff0b4b0baa45a893c7cd24254b72b7__request_header_table) table below.
+
+    -   X.509
+
+        For more information, see `Authorization` in [Request Header](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md#loio94ff0b4b0baa45a893c7cd24254b72b7__request_header_table) table below.
+
+    -   JWT \(client\_assertion\)
+
+        -   Trust by issuer: You must include the `client_id` in the request.
+
+        -   Trust by URI: Including `client_id` in the request is optional.
+
+
+        For more information, see [Request Parameters](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md#loio94ff0b4b0baa45a893c7cd24254b72b7__request_parameter_table) table below.
+
+
+    For more information, see [API Authentication](api-authentication-9d200d5.md).
+
+
+
+
 This document explains how to call the token endpoint and what are the parameters supported by Identity Authentication.
 
 
@@ -60,33 +93,6 @@ Yes
 <td valign="top">
 
 application/x-www-form-urlencoded
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`Authentication`
-
-</td>
-<td valign="top">
-
-No
-
-</td>
-<td valign="top">
-
--   Basic Authentication -
-
-    Client ID and a Secret to authenticate the client \(relying party\). For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
-
-    > ### Note:  
-    > The client ID and secret must be encoded using the "application/x-www-form-urlencoded" encoding algorithm.
-
--   X.509 Certificate
--   JWT \(client\_assertion\)
-
-
 
 </td>
 </tr>
@@ -219,24 +225,22 @@ Request body
 </td>
 <td valign="top">
 
-No
-
-> ### Remember:  
-> -   `client_id` is optional if passed in the Authorization header, or JSON Web Token \(JWT\) for client authentication is configured.
-> 
-> -   `client_id` is required for public clients.
-
-
+Yes
 
 </td>
 <td valign="top">
 
- 
+string
 
 </td>
 <td valign="top">
 
 Used to identify the corresponding Identity Authentication application.
+
+> ### Note:  
+> The `client_id` parameter is optional if the request is provided with authentication.
+
+
 
 </td>
 <td valign="top">

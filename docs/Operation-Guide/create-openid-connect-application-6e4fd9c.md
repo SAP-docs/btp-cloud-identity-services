@@ -73,6 +73,11 @@ To create a new OpenID Connect application follow the procedure below:
     <td valign="top">
     
     Optional.
+
+    > ### Caution:  
+    > If the type of the application is not the correct one, the system may change it automatically without a warning.
+
+
     
     </td>
     </tr>

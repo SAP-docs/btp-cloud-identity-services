@@ -10,14 +10,39 @@ The authorization code flow with PKCE is recommended for public clients that are
 
 ## Prerequisites
 
-You have an OpenID Connect application configured with *Public* client type. For more information how to configure the public client type, see [Configure OpenID Connect Application for Authorization Code Flow](configure-openid-connect-application-for-authorization-code-flow-4a94254.md).
+-   For your business application, there’s an OIDC application in Identity Authentication.
+
+    For more information, see [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md).
+
+-   For your OIDC application in Identity Authentication, you've prepared an authentication credential for the API call. The API supports the following authentication schemes:
+
+    -   Basic
+
+        For more information, see `Authorization` in [Request Header](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md#loio94ff0b4b0baa45a893c7cd24254b72b7__request_header_table) table below.
+
+    -   X.509
+
+        For more information, see `Authorization` in [Request Header](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md#loio94ff0b4b0baa45a893c7cd24254b72b7__request_header_table) table below.
+
+    -   JWT \(client\_assertion\)
+
+        -   Trust by issuer: You must include the `client_id` in the request.
+
+        -   Trust by URI: Including `client_id` in the request is optional.
+
+
+        For more information, see [Request Parameters](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md#loio94ff0b4b0baa45a893c7cd24254b72b7__request_parameter_table) table below.
+
+
+    For more information, see [API Authentication](api-authentication-9d200d5.md).
 
 
 
-This document explains how to call the authorize endpoint and what are the authorize request parameters supported by Identity Authentication for the authorization code flow with PKCE.
+
+This document explains how to call the `authorize` endpoint and what are the authorize request parameters supported by Identity Authentication for the authorization code flow with PKCE.
 
 > ### Note:  
-> Public clients are applications that aren’t capable of keeping the client secret, such as mobile applications, native applications and single page applications.
+> Public clients are applications that aren’t capable of keeping the client secret, such as mobile applications, native applications, and single page applications.
 
 
 
@@ -74,33 +99,6 @@ application/x-www-form-urlencoded
 
 </td>
 </tr>
-<tr>
-<td valign="top">
-
-`Authorization`
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-<td valign="top">
-
--   `Basic` Username and password are:
-
-    Client ID and a Secret to authenticate the client \(relying party\). For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
-
-    > ### Note:  
-    > The client ID and secret must be encoded using the "application/x-www-form-urlencoded" encoding algorithm.
-
--   X.509 Certificate
--   JWT \(client\_assertion\)
-
-
-
-</td>
-</tr>
 </table>
 
 
@@ -154,12 +152,17 @@ string
 </td>
 <td valign="top">
 
-The user ID configured for basic authentication for the application. For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
+Used to identify the corresponding Identity Authentication application.
+
+> ### Note:  
+> The `client_id` parameter is optional if the request is provided with authentication.
+
+
 
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -191,7 +194,7 @@ Client created code.
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -218,7 +221,7 @@ Code verifier transformation method is "S256" or "plain".
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -245,7 +248,7 @@ string
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -272,7 +275,7 @@ The supported value is `code`
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -313,7 +316,7 @@ The supported values are:
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -340,7 +343,7 @@ Free text.
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -367,7 +370,7 @@ Reserved.
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -396,7 +399,7 @@ Supported values are the allowed logon identifiers for the users. The options ar
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -426,7 +429,7 @@ string
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -453,7 +456,7 @@ Maximum time in seconds since the user was last authenticated. When `max_age` ha
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -480,7 +483,7 @@ Free text.
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -520,7 +523,7 @@ Supported values are:
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -547,7 +550,7 @@ Reduces the expiration of a refresh token. It's useful if your application is ca
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -595,7 +598,7 @@ Description
 </td>
 <td valign="top">
 
-The `code` is generated by Identity Authentication and is returned in the URL as a parameter. It must be used when making a call to the token endpoint.
+The `code` is generated by Identity Authentication and is returned in the URL as a parameter. It must be used when calling the token endpoint.
 
 > ### Note:  
 > The parameter can be used within two minutes after it is generated and returned in the URL. It can be used only once.

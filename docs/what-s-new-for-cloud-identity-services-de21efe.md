@@ -140,17 +140,17 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2025-06-23
+2025-06-25
 
 </td>
 <td valign="top">
 
-2025-06-23
+2025-06-25
 
 </td>
 <td valign="top">
 
-27990
+28001
 
 </td>
 </tr>
@@ -176,7 +176,7 @@ Override Conditional Authentication with URL Parameter
 </td>
 <td valign="top">
 
-We have added an option to the `idp` parameter for application which allow logon with OpenID Connect \(OIDC\). Use the value **local** to override the conditional authentication configuration and log on with Identity Authentication instead.
+We have added an option to the `idp` parameter for application which allows logon with OpenID Connect \(OIDC\). Use the value **local** to override the conditional authentication configuration and log on with Identity Authentication instead.
 
 For more information, see [Configure IdP-Initiated SSO](Operation-Guide/configure-idp-initiated-sso-5d59caa.md) or [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow](Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md).
 
@@ -213,17 +213,159 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2025-07-02
+2025-06-25
 
 </td>
 <td valign="top">
 
-2025-07-02
+2025-06-25
 
 </td>
 <td valign="top">
 
+28001
 
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Off-Cycle Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-06-23
+
+</td>
+<td valign="top">
+
+2025-06-23
+
+</td>
+<td valign="top">
+
+27990
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Signing Certificates
+
+</td>
+<td valign="top">
+
+As of June 23, 2025 the version of the newly created signing certificates is v3. See [Tenant SAML 2.0 Configurations](Operation-Guide/tenant-saml-2-0-configurations-e81a19b.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-06-23
+
+</td>
+<td valign="top">
+
+2025-06-23
+
+</td>
+<td valign="top">
+
+27990
 
 </td>
 </tr>
@@ -320,7 +462,7 @@ Identity Federation
 </td>
 <td valign="top">
 
-We have extended the identity federation for an application and on tenant level. Now you can restrict the logon to users with certain email domains. See [Configure Identity Federation for Applications](Operation-Guide/configure-identity-federation-for-applications-1e8e34e.md) and [Configure Identity Federation](Operation-Guide/configure-identity-federation-c029bbb.md).
+We have extended the identity federation for an application and on tenant level. Now, you can restrict the logon to users with certain email domains. See [Configure Identity Federation for Applications](Operation-Guide/configure-identity-federation-for-applications-1e8e34e.md) and [Configure Identity Federation](Operation-Guide/configure-identity-federation-c029bbb.md).
 
 </td>
 <td valign="top">

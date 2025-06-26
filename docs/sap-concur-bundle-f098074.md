@@ -55,5 +55,5 @@ Your approach to using SAP Cloud Identity Services for authenticating and managi
 
 As of June 23, 2025, SAP Concur has automated its integration with Identity Authentication, enabling you to access the SAP Cloud Identity Services administration console within SAP Concur. This automation sets up the trust between Identity Authentication and SAP Concur. Once the trust is established, you can proceed with further configuration steps.
 
-For more information, see [SAP Cloud Identity Services - Identity Authentication Automation](https://help.sap.com/docs/SAP_CONCUR/c5d6d15e7ecb4b4d8238b383d59ac2f4/b0c54d03de8a4584b02be00088c3246f.html)
+For more information, see [Overview](https://help.sap.com/docs/SAP_CONCUR/83c94f03f949423a8f76158375832747/1b9037b66caf1014a93a84cf28690f07.html?version=latest).
 

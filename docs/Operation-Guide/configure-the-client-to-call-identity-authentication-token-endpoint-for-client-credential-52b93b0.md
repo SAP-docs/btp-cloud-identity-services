@@ -10,6 +10,39 @@ This document explains how to call the token endpoint and what are the parameter
 
 
 
+<a name="loio52b93b08f4654e659a9abf93ca86d902__section_lyw_cqf_n2c"/>
+
+## Prerequisites
+
+-   For your business application, there’s an OIDC application in Identity Authentication.
+
+    For more information, see [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md).
+
+-   For your OIDC application in Identity Authentication, you've prepared an authentication credential for the API call. The API supports the following authentication schemes:
+
+    -   Basic
+
+        For more information, see `Authorization` in [Request Header](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md#loio94ff0b4b0baa45a893c7cd24254b72b7__request_header_table) table below.
+
+    -   X.509
+
+        For more information, see `Authorization` in [Request Header](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md#loio94ff0b4b0baa45a893c7cd24254b72b7__request_header_table) table below.
+
+    -   JWT \(client\_assertion\)
+
+        -   Trust by issuer: You must include the `client_id` in the request.
+
+        -   Trust by URI: Including `client_id` in the request is optional.
+
+
+        For more information, see [Request Parameters](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md#loio94ff0b4b0baa45a893c7cd24254b72b7__request_parameter_table) table below.
+
+
+    For more information, see [API Authentication](api-authentication-9d200d5.md).
+
+
+
+
 ## **Request - Relying Party**
 
 **URI:**<code>https://&lt;Cloud Identity Services domain&gt;/oauth2/token</code>
@@ -60,33 +93,6 @@ Yes
 <td valign="top">
 
 application/x-www-form-urlencoded
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`Authorization`
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-<td valign="top">
-
--   `Basic` Username and password are:
-
-    Client ID and a Secret to authenticate the client \(relying party\). For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
-
-    > ### Note:  
-    > The client ID and secret must be encoded using the "application/x-www-form-urlencoded" encoding algorithm.
-
--   X.509 Certificate
--   JWT \(client\_assertion\)
-
-
 
 </td>
 </tr>
@@ -170,7 +176,12 @@ string
 </td>
 <td valign="top">
 
-The user ID configured for basic authentication for the application. For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
+Used to identify the corresponding Identity Authentication application.
+
+> ### Note:  
+> The `client_id` parameter is optional if the request is provided with authentication.
+
+
 
 </td>
 <td valign="top">
@@ -197,7 +208,7 @@ string
 </td>
 <td valign="top">
 
-The `token_format` can be set to `opaque` to retrieve an opaque access token or to `jwt` to retrieve a JWT based access token. If not set, the current defaults per grant type are used.
+The `token_format` can be set to `opaque` to retrieve an opaque access token or to `jwt` to retrieve a JWT-based access token. If not set, the current defaults per grant type are used.
 
 </td>
 <td valign="top">
@@ -303,30 +314,6 @@ application/x-www-form-urlencoded
 
 </td>
 </tr>
-<tr>
-<td valign="top">
-
-`Authentication`
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-<td valign="top">
-
--   Basic Authentication - Client ID and a Secret to authenticate the system as administrator. For more information, see [Add System as Administrator](add-administrators-bbbdbdd.md#loiocefb742a36754b18bbe5c3503ac6d87c).
-
-    > ### Note:  
-    > The client ID and secret must be encoded using the "application/x-www-form-urlencoded" encoding algorithm.
-
--   X.509 Certificate
-
-
-
-</td>
-</tr>
 </table>
 
 
@@ -397,12 +384,7 @@ Request body
 </td>
 <td valign="top">
 
-No
-
-> ### Note:  
-> Required if `Certificate` is used for authentication.
-
-
+Yes
 
 </td>
 <td valign="top">
@@ -412,7 +394,12 @@ string
 </td>
 <td valign="top">
 
-The user ID configured for basic authentication for the system as administrator. For more information, see [Add Administrators](add-administrators-bbbdbdd.md#loiobbbdbdd3899942ce874f3aae9ba9e21d).
+Used to identify the corresponding Identity Authentication application.
+
+> ### Note:  
+> The `client_id` parameter is optional if the request is provided with authentication.
+
+
 
 </td>
 <td valign="top">
@@ -502,7 +489,7 @@ Missing or wrong parameter.
 </td>
 <td valign="top">
 
-Returns an information about the error.
+Returns information about the error.
 
 </td>
 </tr>

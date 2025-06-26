@@ -2,11 +2,44 @@
 
 # Configure the Client to Call Identity Authentication Authorize Endpoint for Implicit Flow
 
-The authorize endpoint is used for authentication and returns the `id_token` when using the implicit flow.
+The `authorize` endpoint is used for authentication and returns the `id_token` when using the implicit flow.
 
 
 
-This document explains how to call the authorize endpoint and what are the request parameters supported by Identity Authentication for the implicit flow.
+<a name="loio1ca3dc0ed2f0463380c86355a52c47b9__section_lyw_cqf_n2c"/>
+
+## Prerequisites
+
+-   For your business application, there’s an OIDC application in Identity Authentication.
+
+    For more information, see [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md).
+
+-   For your OIDC application in Identity Authentication, you've prepared an authentication credential for the API call. The API supports the following authentication schemes:
+
+    -   Basic
+
+        For more information, see `Authorization` in [Request Header](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md#loio94ff0b4b0baa45a893c7cd24254b72b7__request_header_table) table below.
+
+    -   X.509
+
+        For more information, see `Authorization` in [Request Header](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md#loio94ff0b4b0baa45a893c7cd24254b72b7__request_header_table) table below.
+
+    -   JWT \(client\_assertion\)
+
+        -   Trust by issuer: You must include the `client_id` in the request.
+
+        -   Trust by URI: Including `client_id` in the request is optional.
+
+
+        For more information, see [Request Parameters](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md#loio94ff0b4b0baa45a893c7cd24254b72b7__request_parameter_table) table below.
+
+
+    For more information, see [API Authentication](api-authentication-9d200d5.md).
+
+
+
+
+This document explains how to call the `authorize` endpoint and what are the request parameters supported by Identity Authentication for the implicit flow.
 
 
 
@@ -20,15 +53,6 @@ This document explains how to call the authorize endpoint and what are the reque
 > `<tenant ID>.accounts.ondemand.com` or `<tenant ID>.accounts.cloud.sap`. If you have a configured custom domain, the domain has the following pattern: <your custom domain\>.
 > 
 > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [View Assigned Tenants and Admins](../view-assigned-tenants-and-admins-f56e6f2.md).
-
-> ### Note:  
-> The domain part has the following pattern:
-> 
-> `<tenant ID>.accounts.ondemand.com` or `<tenant ID>.accounts.cloud.sap`. If you have a configured custom domain, the domain has the following pattern: <your custom domain\>.
-> 
-> *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [View Assigned Tenants and Admins](../view-assigned-tenants-and-admins-f56e6f2.md).
-
-``
 
 **HTTP Method:***GET*
 
@@ -72,33 +96,6 @@ application/x-www-form-urlencoded
 
 </td>
 </tr>
-<tr>
-<td valign="top">
-
-`Authorization`
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-<td valign="top">
-
--   `Basic` Username and password are:
-
-    Client ID and a Secret to authenticate the client \(relying party\). For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
-
-    > ### Note:  
-    > The client ID and secret must be encoded using the "application/x-www-form-urlencoded" encoding algorithm.
-
--   X.509 Certificate
--   JWT \(client\_assertion\)
-
-
-
-</td>
-</tr>
 </table>
 
 
@@ -137,7 +134,7 @@ Parameter Type
 <tr>
 <td valign="top">
 
-client\_id
+`client_id`
 
 </td>
 <td valign="top">
@@ -152,19 +149,24 @@ string
 </td>
 <td valign="top">
 
-The user ID configured for basic authentication for the application. For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
+Used to identify the corresponding Identity Authentication application.
+
+> ### Note:  
+> The `client_id` parameter is optional if the request is provided with authentication.
+
+
 
 </td>
 <td valign="top">
 
-Path
+Request
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-nonce
+`nonce`
 
 </td>
 <td valign="top">
@@ -184,14 +186,14 @@ Free text.
 </td>
 <td valign="top">
 
-Path
+Request
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-redirect\_uri
+`redirect_uri`
 
 </td>
 <td valign="top">
@@ -211,14 +213,14 @@ One of the valid URIs configured for the application. You can configure up to fi
 </td>
 <td valign="top">
 
-Path
+Request
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-response\_type
+`response_type`
 
 </td>
 <td valign="top">
@@ -238,14 +240,14 @@ The supported value is `id_token`
 </td>
 <td valign="top">
 
-Path
+Request
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-scope
+`scope`
 
 </td>
 <td valign="top">
@@ -265,14 +267,14 @@ The supported value is `openid`
 </td>
 <td valign="top">
 
-Path
+Request
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-login\_hint
+`login_hint`
 
 </td>
 <td valign="top">
@@ -294,7 +296,7 @@ Supported values are the allowed logon identifiers for the users. The options ar
 </td>
 <td valign="top">
 
-Path
+Request
 
 </td>
 </tr>
@@ -324,7 +326,7 @@ string
 </td>
 <td valign="top">
 
-Path
+Request
 
 </td>
 </tr>
@@ -351,7 +353,7 @@ Maximum time in seconds since the user was last authenticated. When `max_age` ha
 </td>
 <td valign="top">
 
-Path
+Request
 
 </td>
 </tr>
@@ -391,7 +393,7 @@ Supported values are:
 </td>
 <td valign="top">
 
-Path
+Request
 
 </td>
 </tr>
@@ -418,7 +420,7 @@ Free text.
 </td>
 <td valign="top">
 
-Path
+Request
 
 </td>
 </tr>

@@ -2,14 +2,47 @@
 
 # Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow
 
-The authorize endpoint is used for authentication and returns authorization code when using the authorization code flow. It's recommended for confidential clients, that can keep the client secret.
+The authorize endpoint is used for authentication and returns authorization code when using the authorization code flow. It's recommended for confidential clients that can keep the client secret.
 
 
 
-This document explains how to call the authorize endpoint and what are the authorize request parameters supported by Identity Authentication for the authorization code flow.
+This document explains how to call the `authorize` endpoint and what are the authorize request parameters supported by Identity Authentication for the authorization code flow.
 
 > ### Note:  
 > Confidential clients are applications that can keep the client secret. These clients are the so-called web applications.
+
+
+
+<a name="loio94ff0b4b0baa45a893c7cd24254b72b7__section_lyw_cqf_n2c"/>
+
+## Prerequisites
+
+-   For your business application, there’s an OIDC application in Identity Authentication.
+
+    For more information, see [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md).
+
+-   For your OIDC application in Identity Authentication, you've prepared an authentication credential for the API call. The API supports the following authentication schemes:
+
+    -   Basic
+
+        For more information, see `Authorization` in [Request Header](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md#loio94ff0b4b0baa45a893c7cd24254b72b7__request_header_table) table below.
+
+    -   X.509
+
+        For more information, see `Authorization` in [Request Header](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md#loio94ff0b4b0baa45a893c7cd24254b72b7__request_header_table) table below.
+
+    -   JWT \(client\_assertion\)
+
+        -   Trust by issuer: You must include the `client_id` in the request.
+
+        -   Trust by URI: Including `client_id` in the request is optional.
+
+
+        For more information, see [Request Parameters](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md#loio94ff0b4b0baa45a893c7cd24254b72b7__request_parameter_table) table below.
+
+
+    For more information, see [API Authentication](api-authentication-9d200d5.md).
+
 
 
 
@@ -79,15 +112,8 @@ Yes
 </td>
 <td valign="top">
 
--   `Basic` Username and password are:
-
-    Client ID and a Secret to authenticate the client \(relying party\). For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
-
-    > ### Note:  
-    > The client ID and secret must be encoded using the "application/x-www-form-urlencoded" encoding algorithm.
-
--   X.509 Certificate
--   JWT \(client\_assertion\)
+-   `Basic`
+-   `X.509 Certificate`
 
 
 
@@ -146,12 +172,17 @@ string
 </td>
 <td valign="top">
 
-The user ID configured for basic authorization for the application. For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
+Used to identify the corresponding Identity Authentication application.
+
+> ### Note:  
+> The `client_id` parameter is optional if the request is provided with authentication.
+
+
 
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -178,7 +209,7 @@ string
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -205,7 +236,7 @@ The supported value is `code`
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -244,7 +275,7 @@ Values must be space-delimited parameter, for example: `scope=openid email`.
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -271,7 +302,7 @@ Free text.
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -298,7 +329,7 @@ Reserved.
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -322,12 +353,14 @@ string
 
 The technical name of the corporate identity provider as configured in the administration console for SAP Cloud Identity Services.
 
-When a chain of identity providers are allowed for an application via conditional authentication, these parameters enable the client to specify which corporate identity providers are to be used. Identity Authentication uses the `idp` parameter to detect the correct corporate identity providers and redirect the request to them. When there is more than one corporate IdP in the IdP-initiated link, they are separated by comma "`,`" without space between them.For applications that allow logon with OIDC, use the value `local` to override the conditional authentication configuration and log on with Identity Authentication instead.
+When a chain of identity providers are allowed for an application via conditional authentication, these parameters enable the client to specify which corporate identity providers are to be used. Identity Authentication uses the `idp` parameter to detect the correct corporate identity providers and redirect the request to them. When there is more than one corporate IdP in the IdP-initiated link, they are separated by comma "`,`" without space between them.
+
+For applications that allow authentication with OIDC, use the value `local` to override the conditional authentication configuration and authenticate with Identity Authentication instead.
 
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -356,7 +389,7 @@ Supported values are the allowed logon identifiers for the users. The options ar
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -386,7 +419,7 @@ string
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -413,7 +446,7 @@ Maximum time in seconds since the user was last authenticated. When `max_age` ha
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -440,7 +473,7 @@ Free text.
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
@@ -480,7 +513,7 @@ Supported values are:
 </td>
 <td valign="top">
 
-Path
+Query
 
 </td>
 </tr>
