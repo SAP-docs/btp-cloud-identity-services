@@ -379,10 +379,9 @@ The Identity Provisioning service manages the complete set of **business partner
 
     > ### Code Syntax:  
     > ```
-    > 
     > {
     >   "user": {
-    >     "condition": "($.emails EMPTY false) && isValidEmail($.emails[0].value)",
+    >     "condition": "isValidEmail($.emails[0].value) && (('%marketing.cloud.roles.prefix%' === 'null') || ($.groups[?(@.display =~ /%marketing.cloud.roles.prefix%.*/)] empty false))",
     >     "mappings": [
     >       {
     >         "sourcePath": "$.userName",
@@ -391,6 +390,85 @@ The Identity Provisioning service manages the complete set of **business partner
     >       {
     >         "sourcePath": "$.externalId",
     >         "targetPath": "$.personExternalID",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']",
+    >         "targetPath": "$.personExternalID",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >         "optional": true,
+    >         "targetPath": "$.user.globalUserID"
+    >       },
+    >       {
+    >         "sourceVariable": "entityIdTargetSystem",
+    >         "targetPath": "$.personID"
+    >       },
+    >       {
+    >         "targetPath": "$.markedForArchivingIndicator",
+    >         "constant": "false"
+    >       },
+    >       {
+    >         "type": "valueMapping",
+    >         "sourcePaths": [
+    >           "$.userType"
+    >         ],
+    >         "targetPath": "$.businessPartnerRoleCode",
+    >         "defaultValue": "BUP003",
+    >         "valueMappings": [
+    >           {
+    >             "key": [
+    >               "Employee"
+    >             ],
+    >             "mappedValue": "BUP003"
+    >           },
+    >           {
+    >             "key": [
+    >               "Contingent Worker"
+    >             ],
+    >             "mappedValue": "BBP005"
+    >           }
+    >         ]
+    >       },
+    >       {
+    >         "scope": "createEntity",
+    >         "sourceVariable": "currentDate",
+    >         "targetPath": "$.validityPeriod.startDate"
+    >       },
+    >       {
+    >         "scope": "createEntity",
+    >         "targetPath": "$.validityPeriod.endDate",
+    >         "constant": "9999-12-31"
+    >       },
+    >       {
+    >         "scope": "createEntity",
+    >         "sourceVariable": "currentDate",
+    >         "targetPath": "$.user.validityPeriod.startDate"
+    >       },
+    >       {
+    >         "scope": "createEntity",
+    >         "constant": "9999-12-31",
+    >         "targetPath": "$.user.validityPeriod.endDate"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.givenName",
+    >         "targetPath": "$.personalInformation.firstName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.familyName",
+    >         "targetPath": "$.personalInformation.lastName"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.middleName",
+    >         "targetPath": "$.personalInformation.middleName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.formatted",
+    >         "targetPath": "$.personalInformation.personFullName",
     >         "optional": true
     >       },
     >       {
@@ -414,7 +492,7 @@ The Identity Provisioning service manages the complete set of **business partner
     >     ]
     >   },
     >   "group": {
-    >     "condition": "('%marketing.cloud.roles.prefix%' === 'null') || ($.displayName =~ /%marketing.cloud.roles.prefix%.*/)",
+    >     "condition": "isAttributeWithOptionalPrefix($.displayName, marketing.cloud.roles.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], marketing.cloud.roles.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >     "mappings": [
     >       {
     >         "sourcePath": "$.displayName",
@@ -422,7 +500,7 @@ The Identity Provisioning service manages the complete set of **business partner
     >         "scope": "createEntity",
     >         "functions": [
     >           {
-    >             "condition": "('%marketing.cloud.roles.prefix%' !== 'null') && (@ =~ /%marketing.cloud.roles.prefix%.*/)",
+    >             "condition": "isAttributeWithMandatoryPrefix(@, marketing.cloud.roles.prefix)",
     >             "function": "replaceFirstString",
     >             "regex": "%marketing.cloud.roles.prefix%",
     >             "replacement": ""
@@ -434,7 +512,7 @@ The Identity Provisioning service manages the complete set of **business partner
     >         "targetPath": "$.displayName",
     >         "functions": [
     >           {
-    >             "condition": "('%marketing.cloud.roles.prefix%' !== 'null') && (@ =~ /%marketing.cloud.roles.prefix%.*/)",
+    >             "condition": "isAttributeWithMandatoryPrefix(@, marketing.cloud.roles.prefix)",
     >             "function": "replaceFirstString",
     >             "regex": "%marketing.cloud.roles.prefix%",
     >             "replacement": ""
@@ -455,7 +533,6 @@ The Identity Provisioning service manages the complete set of **business partner
     >     ]
     >   }
     > }
-    > 
     > ```
 
     See also: [Extended Explanation of the \*user.roles.overwrite Properties](https://ga.support.sap.com/dtp/viewer/#/tree/2065/actions/26547:29111:29114:27412:35953:38590)

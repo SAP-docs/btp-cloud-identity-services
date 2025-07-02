@@ -240,6 +240,30 @@ If your provisioning scenarios involve on-premise systems, this requires a separ
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    Israel \(Tel Aviv\)
+    
+    </td>
+    <td valign="top">
+    
+    Israel \(Tel Aviv\) GCP
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    KSA \(Dammam\)
+    
+    </td>
+    <td valign="top">
+    
+    KSA \(Dammam\) GCP public sector
+    
+    </td>
+    </tr>
     </table>
     
     For example, customers with Identity Authentication and Identity Provisioning tenants in US West region must create a Cloud Foundry subaccount in US West \(WA\) Azure region.

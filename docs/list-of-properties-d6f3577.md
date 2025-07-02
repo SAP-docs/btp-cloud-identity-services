@@ -3230,6 +3230,10 @@ When the property is set, the groups are provisioned with their *applicationId* 
 
 -   SAP Jam Collaboration
 
+-   SAP Marketing Cloud
+
+-   SAP Market Communication for Utilities
+
 -   SAP Sales Cloud and SAP Service Cloud
 
 -   SAP S/4 HANA Cloud
@@ -5199,7 +5203,7 @@ SAP Analytics Cloud
 </td>
 <td valign="top">
 
-Path which is appended to the URL to retrieve the CSRF token.
+Specifies the path which is appended to the URL to retrieve the CSRF token when `scim.api.csrf.protection` is enabled.
 
 The property is not automatically added during system creation.
 
@@ -6455,7 +6459,7 @@ SAP Marketing Cloud
 </td>
 <td valign="top">
 
-Specifies whether to fetch a CSRF token when sending requests to the system.
+Specifies whether to fetch a CSRF token when sending requests to the system. If enabled, this property requires the configuration of the `scim.csrf.token.path` property to specify the path where the CSRF token can be retrieved.
 
 **Possible values:**
 

@@ -571,6 +571,20 @@ This scenario supports reading **business users** \(Employee\), **user assignmen
     >       {
     >         "constant": "User",
     >         "targetPath": "$.members[*].type"
+    >       },
+    >       {
+    >         "condition": "'%ips.application.id%'!== 'null'",
+    >         "constant": "%ips.application.id%",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+    >       },
+    >       {
+    >         "constant": "authorization",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true
     >       }
     >     ]
     >   }

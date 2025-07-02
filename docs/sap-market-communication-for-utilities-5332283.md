@@ -655,6 +655,15 @@ The SAP Market Communication for Utilities application is based on SAP BTP ABAP 
     >       {
     >         "constant": "User",
     >         "targetPath": "$.members[*].type"
+    >       },
+    >       {
+    >         "constant": "authorization",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true
     >       }
     >     ]
     >   }

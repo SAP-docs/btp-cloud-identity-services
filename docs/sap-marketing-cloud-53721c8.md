@@ -577,6 +577,19 @@ You can use SAP Marketing Cloud to read entities from it and provision them to a
     >       {
     >         "constant": "User",
     >         "targetPath": "$.members[*].type"
+    >       },
+    >       {  "condition": "'%ips.application.id%' !== 'null'",
+    >         "constant": "%ips.application.id%",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+    >       },
+    >       {
+    >         "constant": "authorization",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true
     >       }
     >     ]
     >   }

@@ -155,7 +155,7 @@ Identity Authentication supports also the following user attributes:
 -   `License Groups`
 
     > ### Note:  
-    > The license group is a special package license group in `Cloud Identity Services` of type `License` for AI features across the SAP portfolio. Only the users that are assigned to these license groups can access the premium Joule scenarios
+    > The license group is a special package license group in `Cloud Identity Services` of type `License` for AI features across the SAP portfolio. Only the users that are assigned to these license groups can access the premium Joule scenarios.
 
     > ### Remember:  
     > The name must be `sap_licenses`.

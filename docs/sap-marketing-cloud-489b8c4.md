@@ -437,6 +437,14 @@ You can use SAP Marketing Cloud as a proxy connector to execute *hybrid* scenari
     >         "correlationAttribute": true
     >       },
     >       {
+    >         "targetPath": "$.schemas[0]",
+    >         "constant": "urn:ietf:params:scim:schemas:core:2.0:User"
+    >       },
+    >       {
+    >         "targetPath": "$.schemas[1]",
+    >         "constant": "urn:ietf:params:scim:schemas:extension:sap:2.0:User"
+    >       },
+    >       {
     >         "constant": true,
     >         "targetPath": "$.active"
     >       },
@@ -646,6 +654,15 @@ You can use SAP Marketing Cloud as a proxy connector to execute *hybrid* scenari
     >       {
     >         "constant": "User",
     >         "targetPath": "$.members[*].type"
+    >       },
+    >       {
+    >         "constant": "authorization",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true
     >       }
     >     ]
     >   }

@@ -388,10 +388,9 @@ The Identity Provisioning service manages the complete set of **business partner
 
     > ### Code Syntax:  
     > ```
-    > 
     > {
     >   "user": {
-    >     "condition": "($.emails EMPTY false) && isValidEmail($.emails[0].value)",
+    >     "condition": "isValidEmail($.emails[0].value) && (('%maco.roles.prefix%' === 'null') || ($.groups[?(@.display =~ /%maco.roles.prefix%.*/)] empty false))",
     >     "mappings": [
     >       {
     >         "sourcePath": "$.userName",
@@ -496,13 +495,13 @@ The Identity Provisioning service manages the complete set of **business partner
     >     ]
     >   },
     >   "group": {
-    >     "condition": "('%maco.roles.prefix%' === 'null') || ($.displayName =~ /%maco.roles.prefix%.*/)",
+    >     "condition": "isAttributeWithOptionalPrefix($.displayName, maco.roles.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], maco.roles.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >     "mappings": [
     >       {
     >         "sourcePath": "$.displayName",
     >         "functions": [
     >           {
-    >             "condition": "('%maco.roles.prefix%' !== 'null') && (@ =~ /%maco.roles.prefix%.*/)",
+    >             "condition": "isAttributeWithMandatoryPrefix(@, maco.roles.prefix)",
     >             "function": "replaceFirstString",
     >             "regex": "%maco.roles.prefix%",
     >             "replacement": ""
@@ -515,7 +514,7 @@ The Identity Provisioning service manages the complete set of **business partner
     >         "sourcePath": "$.displayName",
     >         "functions": [
     >           {
-    >             "condition": "('%maco.roles.prefix%' !== 'null') && (@ =~ /%maco.roles.prefix%.*/)",
+    >             "condition": "isAttributeWithMandatoryPrefix(@, maco.roles.prefix)",
     >             "function": "replaceFirstString",
     >             "regex": "%maco.roles.prefix%",
     >             "replacement": ""

@@ -100,6 +100,155 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-07-01
+
+</td>
+<td valign="top">
+
+2025-07-01
+
+</td>
+<td valign="top">
+
+28019
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Support for SAP extension schema for groups
+
+</td>
+<td valign="top">
+
+The default transformations of the following connectors support attributes from the SAP extension schema for groups, including application ID, type, and supported operations.
+
+For more information, see
+
+-   [SAP Marketing Cloud](sap-marketing-cloud-53721c8.md)
+-   [SAP Market Communication for Utilities](sap-market-communication-for-utilities-47c7ec5.md)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-07-01
+
+</td>
+<td valign="top">
+
+2025-07-01
+
+</td>
+<td valign="top">
+
+28019
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Off-Cycle Upgrade
 
 </td>

@@ -14,7 +14,7 @@ Enable real-time provisioning in Identity Authentication to trigger immediate sy
 
     For more information, see [Add System as Administrator](add-administrators-bbbdbdd.md#loiocefb742a36754b18bbe5c3503ac6d87c).
 
-    For OAuth authentication scenario for tenants running on Neo environmen, you've made the required configurations in the SAP BTP cockpit. For more information, see [Create OAuth Client Credentials in SAP BTP Cockpit](https://help.sap.com/docs/identity-provisioning/identity-provisioning/real-time-provisioning-in-neo-environment?version=Cloud#i.-create-oauth-client-credentials-in-sap-btp-cockpit).
+    For OAuth authentication scenario for tenants running on Neo environment, you've made the required configurations in the SAP BTP cockpit. For more information, see [Create OAuth Client Credentials in SAP BTP Cockpit](https://help.sap.com/docs/identity-provisioning/identity-provisioning/real-time-provisioning-in-neo-environment?version=Cloud#i.-create-oauth-client-credentials-in-sap-btp-cockpit).
 
 -   You have created Identity Authentication source system in Identity Provisioning and connected it to target systems of your choice.
 

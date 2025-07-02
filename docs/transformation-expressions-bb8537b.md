@@ -713,13 +713,13 @@ scope
 
 You can set a scope for an entity attribute, based on its lifecycle. A scope can have the following values:
 
--   *createEntity* – an entity attribute is only processed during creation. To do this, tag the entity attribute with scope `createEntity` in the system transformation. Transformation mappings without scope are always processed.
+-   *createEntity* – An entity attribute is processed only during creation. Transformation mappings without scope are always processed during the creation.
 
     > ### Note:  
-    > Currently, the `createEntity` scope is only applicable for entities created in **target systems**.
+    > The `createEntity` scope currently applies only to **write** and **proxy write** transformations.
 
     > ### Example:  
-    > The following mapping provides an initial password when a user is created.
+    > The following mapping provides an initial password during the creation of a user.
     > 
     > ```
     > 
@@ -738,10 +738,10 @@ You can set a scope for an entity attribute, based on its lifecycle. A scope can
     > 	
     > ```
 
--   *patchEntity* – when using the *ipsproxy* application and a system that supports SCIM PATCH operation, you may need to perform certain transformations over the PATCH request. To do this, use the `patchEntity` scope in the system transformation. Only mappings with this scope will be processed.
+-   *patchEntity* – When using the *ipsproxy* application and a system that supports SCIM PATCH operation, you may need to perform certain transformations over the PATCH request. To do this, use the `patchEntity` scope in the system transformation. Only mappings with this scope will be processed.
 
     > ### Note:  
-    > -   The Identity Provisioning service supports PATCH requests only for groups and group members \(assignments\).
+    > -   The Identity Provisioning service supports PATCH requests only for groups, group members \(assignments\), and users.
     > -   The `patchEntity` scope is only applicable for write transformations in **proxy systems**.
 
     > ### Example:  
@@ -779,10 +779,11 @@ You can set a scope for an entity attribute, based on its lifecycle. A scope can
     -   You do not want to delete it but only temporary disable/deactivate it.
     -   You want to neither delete it, nor deactivate it but only remove its permissions, or exclude it from some corporate groups.
 
-    If you have to fulfill some of these scenarios for an entity, use the `deleteEntity` scope. It prevents from deleting the entity from the target system as only updating its status instead. Also, bear in mind the following:
+    If you have to fulfill some of these scenarios for an entity, use the `deleteEntity` scope. It prevents from deleting the entity from the target or proxy system as only updating its status instead. Also, bear in mind the following:
 
     -   For the affected entity, all transformation mappings that do not contain this scope will be ignored.
     -   If a condition exists on entity type level, it will be ignored as well.
+    -   If the `deleteEntity` scope is included in a proxy write transformation, it is taken into account only when used in the transformation mapping for the **entityIdTargetSystem** variable.
 
     Use this scope for the following systems:
 
@@ -932,7 +933,7 @@ You can set a scope for an entity attribute, based on its lifecycle. A scope can
     > ```
 
     > ### Example:  
-    > **SAP Jam**: The following mapping disables the user account:
+    > **SAP Jam**: The following mapping disables the user account in the target system:
     > 
     > ```
     > 

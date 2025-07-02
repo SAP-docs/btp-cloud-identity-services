@@ -5,23 +5,10 @@
 Manage deletion of entities \(users or groups\) in the target system after they have been deleted from the source system.
 
 
-<table>
-<tr>
-<th valign="top">
 
-Scenario
+<a name="loio3d6bdf17ccc54a0faafe0032001e1eb0__section_n1g_l23_vfc"/>
 
-</th>
-<th valign="top">
-
-Solution
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-**Scenario 1**
+## Scenario 1: Entity exists in the source and the target system
 
 An entity exists both in the source and the target system.
 
@@ -38,8 +25,7 @@ An entity exists both in the source and the target system.
 
 
 
-</td>
-<td valign="top" rowspan="3">
+### Solution
 
 To delete entities from a target system after they have been deleted from the source system, you need to set the following property: `ips.delete.existedbefore.entities` = *true* in the target system. This must be done **before** the job to delete those entities from the target system is executed.
 
@@ -64,12 +50,11 @@ This is important for security and legal reasons in cases when users \(for examp
 
 For more information about this property, see: [List of Properties](../list-of-properties-d6f3577.md), where you can search it by *Name* or use the general table search.
 
-</td>
-</tr>
-<tr>
-<td valign="top">
 
-**Scenario 2**
+
+<a name="loio3d6bdf17ccc54a0faafe0032001e1eb0__section_nx3_y23_vfc"/>
+
+## Scenario 2: Entity does not exist in the source and the target system
 
 An entity does not exist in either system \(neither source, nor target\).
 
@@ -92,12 +77,36 @@ An entity does not exist in either system \(neither source, nor target\).
 
 
 
-</td>
-</tr>
-<tr>
-<td valign="top">
+### Solution
 
-**Scenario 3**
+To delete entities from a target system after they have been deleted from the source system, you need to set the following property: `ips.delete.existedbefore.entities` = *true* in the target system. This must be done **before** the job to delete those entities from the target system is executed.
+
+> ### Recommendation:  
+> The following sequence of steps is recommended for synchronizing deletion of entities between source and target systems, as in **Scenarios 1, 2** and **3**:
+> 
+> You have run successful provisioning jobs \(*Read* or *Resync*\) between the systems.
+> 
+> 1.  Delete an entity from the source system.
+> 
+> 2.  On the *Properties* tab of the target system, add the `ips.delete.existedbefore.entities` property and set its value to *true*.
+> 
+> 3.  Run a provisioning job.
+> 
+> 4.  Verify that the relevant entity has been deleted from the target system.
+
+If the property is set **afterwards**, entities recognized as "previously existed ones" cannot be deleted from the target system anymore. In this case, you need to delete them from the target system \(for example, manually or via script\).
+
+The `ips.delete.existedbefore.entities` is an optional property which can be set on every target system. You can use it to control whether recognized entities as "previously existed ones" should be deleted from the target system.
+
+This is important for security and legal reasons in cases when users \(for example, employees\) are no longer active in the source system, and their availability and permissions must be removed from the relevant target system\(s\).
+
+For more information about this property, see: [List of Properties](../list-of-properties-d6f3577.md), where you can search it by *Name* or use the general table search.
+
+
+
+<a name="loio3d6bdf17ccc54a0faafe0032001e1eb0__section_t5m_1f3_vfc"/>
+
+## Scenario 3: Entity exists in the source system only
 
 An entity exists in the source system only.
 
@@ -120,12 +129,36 @@ An entity exists in the source system only.
 
 
 
-</td>
-</tr>
-<tr>
-<td valign="top">
+### Solution
 
-**Scenario 4**
+To delete entities from a target system after they have been deleted from the source system, you need to set the following property: `ips.delete.existedbefore.entities` = *true* in the target system. This must be done **before** the job to delete those entities from the target system is executed.
+
+> ### Recommendation:  
+> The following sequence of steps is recommended for synchronizing deletion of entities between source and target systems, as in **Scenarios 1, 2** and **3**:
+> 
+> You have run successful provisioning jobs \(*Read* or *Resync*\) between the systems.
+> 
+> 1.  Delete an entity from the source system.
+> 
+> 2.  On the *Properties* tab of the target system, add the `ips.delete.existedbefore.entities` property and set its value to *true*.
+> 
+> 3.  Run a provisioning job.
+> 
+> 4.  Verify that the relevant entity has been deleted from the target system.
+
+If the property is set **afterwards**, entities recognized as "previously existed ones" cannot be deleted from the target system anymore. In this case, you need to delete them from the target system \(for example, manually or via script\).
+
+The `ips.delete.existedbefore.entities` is an optional property which can be set on every target system. You can use it to control whether recognized entities as "previously existed ones" should be deleted from the target system.
+
+This is important for security and legal reasons in cases when users \(for example, employees\) are no longer active in the source system, and their availability and permissions must be removed from the relevant target system\(s\).
+
+For more information about this property, see: [List of Properties](../list-of-properties-d6f3577.md), where you can search it by *Name* or use the general table search.
+
+
+
+<a name="loio3d6bdf17ccc54a0faafe0032001e1eb0__section_jhw_mf3_vfc"/>
+
+## Scenario 4: Entity not created in the target system by Identity Provisioning
 
 An entity exists both in the source and the target system. \(It has **not** been created on the target by the Identity Provisioning service.\)
 
@@ -143,8 +176,7 @@ Conditions or expressions, such as \(*ignore* or *skipOperations*\), are not set
 
 
 
-</td>
-<td valign="top">
+### Solution
 
 1.  Resolve the failed entities in the source system.
 
@@ -160,12 +192,9 @@ Conditions or expressions, such as \(*ignore* or *skipOperations*\), are not set
 
 
 
-</td>
-</tr>
-<tr>
-<td valign="top">
+<a name="loio3d6bdf17ccc54a0faafe0032001e1eb0__section_hyl_nf3_vfc"/>
 
-**Scenario 5**
+## Scenario 5: Entity created in the target system by Identity Provisioning
 
 An entity exists in the source system and has been provisioned to the target by the Identity Provisioning service.
 
@@ -182,8 +211,7 @@ Conditions or expressions, such as \(*ignore* or *skipOperations*\), are not set
 
 
 
-</td>
-<td valign="top">
+### Solution
 
 1.  Resolve the failed entities in the source system.
 
@@ -197,12 +225,9 @@ Conditions or expressions, such as \(*ignore* or *skipOperations*\), are not set
 
 
 
-</td>
-</tr>
-<tr>
-<td valign="top">
+<a name="loio3d6bdf17ccc54a0faafe0032001e1eb0__section_mcy_nf3_vfc"/>
 
-**Scenario 6**
+## Scenario 6: Delta read job has been run
 
 An entity exists in the source system and has been provisioned to the target by the Identity Provisioning service.
 
@@ -217,8 +242,7 @@ Conditions or expressions, such as \(*ignore* or *skipOperations*\), are not set
 
 
 
-</td>
-<td valign="top">
+### Solution
 
 1.  On the *Properties* tab of the source system, set the `ips.delta.read` property to *false*.
 
@@ -229,12 +253,6 @@ Conditions or expressions, such as \(*ignore* or *skipOperations*\), are not set
 3.  Verify that the relevant entity has been deleted from the target system.
 
 4.  \(Optional\) If you want to continue running *delta read* jobs, go to the `ips.delta.read` property and set it back to *true*.
-
-
-
-</td>
-</tr>
-</table>
 
 **Related Information**  
 
