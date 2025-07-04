@@ -15,7 +15,7 @@ Identity Authentication uses the OAuth protocol for social sign-on via LinkedIn 
 
 Once a user has allowed Identity Authentication to link his or her account with the LinkedIn account, the user can log on to applications via the social provider.
 
-To configure LinkedIn as social identity provider for the tenant, you have to register new applications on the LinkedIn site. For more details, see Related Information.
+To configure LinkedIn as social identity provider for the tenant, you have to register new applications on the LinkedIn site.
 
 > ### Note:  
 > You need to type `https://<tenant ID>.accounts.ondemand.com/ui/oauth/oauthCallback` in the *Redirect URLs* field in the *Auth* tab in the LinkedIn Developer Platform. For more information about the redirect URLs for your OAuth 2.0 credentials, see [Step 1: Configure Your Application](https://docs.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow?context=linkedin/context#step-1-configure-your-application).

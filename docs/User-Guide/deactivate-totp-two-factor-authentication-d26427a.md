@@ -10,10 +10,10 @@ This document shows you how to deactivate the TOTP two-factor authentication tha
 
 You can deactivate TOTP two-factor authentication if you don't want to use it anymore to generate passcodes.
 
-> ### Note:  
-> If you deactivate the TOTP two-factor authentication, you won't be able to log on to applications that require only passcodes. To be able to access these applications again, you have to activate again TOTP. For more information, see [Activate TOTP Two-Factor Authentication](activate-totp-two-factor-authentication-ab8a323.md).
-> 
-> If your device that generates passcodes has been lost or stolen, or you can't provide a valid passcode, you can still deactivate the TOTP via the channels offered on the profile page, or contact your system administrator.
+If you deactivate the TOTP two-factor authentication, you won't be able to log on to applications that require only passcodes. To be able to access these applications again, you have to activate again TOTP. For more information, see [Activate TOTP Two-Factor Authentication](activate-totp-two-factor-authentication-ab8a323.md).
+
+> ### Tip:  
+> If your device that generates passcodes has been lost or stolen, or you can't provide a valid passcode, you can still deactivate the TOTP via the channels offered on the profile page, or contact a system administrator of the application.
 
 Based on the configuration of the account made by the administrator, you can choose among three deactivation channels:
 

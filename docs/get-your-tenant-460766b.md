@@ -87,7 +87,7 @@ Additional tenants and trial tenants are also created through self-service reque
 > Although bundled and self-requested tenants differ in the way you get them, from technical and functional perspective they have no differences.
 
 > ### Note:  
-> Be aware that it will take some time until the tenant becomes accessible. If you try to access the tenant right after creating it, you will receive ***Error 404 Not Found***.
+> It will take some time until the tenant becomes accessible. If you try to access the tenant right after creating it, you will receive ***Error 404 Not Found***.
 
 For more information, see [Tenants](tenants-93160eb.md).
 
@@ -139,9 +139,9 @@ Get your productive and test tenant as part of a self-service request in SAP BTP
     > The default test and productive tenants will be created in the same region.
 
     > ### Caution:  
-    > If you unsubscribe the *default* plan, the Identity Authentication tenant is deactivated, if not used by other orders or products.
+    > If you unsubscribe from the *default* plan, the Identity Authentication tenant is deactivated, if not used by other orders or products.
 
-7.  If you initially create a test tenant and then you want to proceed with a productive one \(or vice versa\), repeat the steps above in a separate subaccount of the same region.
+7.  If you initially create a test tenant and then you want to proceed with a productive one \(or vice versa\), repeat the preceding steps in a separate subaccount of the same region.
 
 
 
@@ -210,7 +210,7 @@ To get additional tenant using SAP BTP multi-environment subaccount, proceed as 
 > ### Note:  
 > **SAP BTP, Neo subaccount**
 > 
-> If you have a global account with an SAP BTP, Neo subaccount, you can get additional tenant, too. Open your existing CPEA Neo account or create new CPEA Neo account, navigate to *Services* \> *Identity Authentication - Additional Tenant* tile and enable the service.
+> If you have a global account with an SAP BTP, Neo subaccount, you can get an additional tenant, too. Open your existing CPEA Neo account or create new CPEA Neo account, navigate to *Services* \> *Identity Authentication - Additional Tenant* tile and enable the service.
 > 
 > Identity Authentication additional productive tenant will be created and the account member who triggered the creation will get an activation email. Note that test tenants cannot be created from a Neo subaccount.
 > 
@@ -248,9 +248,12 @@ A trial tenant is intended for testing purposes. It allows you to try out and ex
 
 2.  Choose *Go to Your Trial Account* and open your subaccount.
 
-3.  In the navigation area, choose *Entitlements* and then *Edit* \> *Add Service Plans*.
+3.  In the navigation area, choose *Entitlements*. You have two options:
 
-4.  Select *Cloud Identity Services* from the list of entitlements available for this subaccount.
+    -   if you see *default \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, skip steps 4 to 7, and go to step 8.
+    -   if you don't see *default \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, continue with step 4.
+
+4.  Choose *Edit* \> *Add Service Plans*, and select *Cloud Identity Services* from the list of entitlements available for this subaccount.
 
 5.  Mark the *default \(Application\)* plan. The *0* number in the *Add 0 Service Plan* button increments to *1*.
 
@@ -260,7 +263,7 @@ A trial tenant is intended for testing purposes. It allows you to try out and ex
 
 8.  In the navigation area, choose *Services* \> *Instances and Subscriptions*.
 
-9.  In the top-right corner, choose *Create* and follow the steps in the wizard to configure your new Cloud Identity Services tenant:
+9.  In the top-right corner, choose *Create*, and follow the steps in the wizard to configure your new Cloud Identity Services tenant:
 
     1.  Choose *Cloud Identity Services*.
 
@@ -268,6 +271,23 @@ A trial tenant is intended for testing purposes. It allows you to try out and ex
 
     3.  Choose *Create*.
 
+
+
+
+
+### Next Steps
+
+Activate your account for Cloud Identity Services.
+
+1.  Go to your inbox and open the account activation email.
+2.  Click the tenant URL provided in the email.
+3.  Enter a password and choose *Continue*.
+
+    You are informed that your account is successfully activated.
+
+4.  Choose *Continue*.
+
+    This opens the administration console of SAP Cloud Identity Services.
 
 
 > ### Note:  

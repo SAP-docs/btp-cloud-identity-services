@@ -33,17 +33,12 @@ The *Application Type* is optional. You can update the *Application Type* with o
 <tr>
 <th valign="top">
 
-Name
+Name Type
 
 </th>
 <th valign="top">
 
-Type
-
-</th>
-<th valign="top">
-
-Notes
+Application Type
 
 </th>
 </tr>
@@ -58,11 +53,6 @@ SAP Analytics Cloud solution
 `bundled`
 
 </td>
-<td valign="top">
-
-SAP managed
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -73,11 +63,6 @@ SAP Ariba solution
 <td valign="top">
 
 `bundled`
-
-</td>
-<td valign="top">
-
-SAP managed
 
 </td>
 </tr>
@@ -92,11 +77,6 @@ SAP Business ByDesign solution
 `bundled`
 
 </td>
-<td valign="top">
-
-SAP managed
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -109,26 +89,16 @@ SAP BTP solution
 `bundled`
 
 </td>
-<td valign="top">
-
-SAP managed
-
-</td>
 </tr>
 <tr>
 <td valign="top">
 
-SAP Cloud for Customer solution
+SAP Central Business Configuration solution
 
 </td>
 <td valign="top">
 
 `bundled`
-
-</td>
-<td valign="top">
-
-SAP managed
 
 </td>
 </tr>
@@ -143,9 +113,52 @@ SAP Concur solution
 `bundled`
 
 </td>
+</tr>
+<tr>
 <td valign="top">
 
-SAP managed
+SAP Customer Data solution
+
+</td>
+<td valign="top">
+
+`bundled`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Data Custodian solution
+
+</td>
+<td valign="top">
+
+`bundled`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Datasphere solution
+
+</td>
+<td valign="top">
+
+`bundled`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Emarsys Customer Engagement solution
+
+</td>
+<td valign="top">
+
+`bundled`
 
 </td>
 </tr>
@@ -160,9 +173,28 @@ SAP Fieldglass solution
 `bundled`
 
 </td>
+</tr>
+<tr>
 <td valign="top">
 
-SAP managed
+SAP Enable Now solution
+
+</td>
+<td valign="top">
+
+`bundled`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Industry Cloud Solution
+
+</td>
+<td valign="top">
+
+`bundled`
 
 </td>
 </tr>
@@ -177,11 +209,6 @@ SAP Integrated Business Planning solution
 `bundled`
 
 </td>
-<td valign="top">
-
-SAP managed
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -192,11 +219,6 @@ SAP Jam solution
 <td valign="top">
 
 `bundled`
-
-</td>
-<td valign="top">
-
-SAP managed
 
 </td>
 </tr>
@@ -211,9 +233,16 @@ SAP Marketing Cloud solution
 `bundled`
 
 </td>
+</tr>
+<tr>
 <td valign="top">
 
-SAP managed
+SAP Sales Cloud and SAP Service Cloud solution
+
+</td>
+<td valign="top">
+
+`bundled`
 
 </td>
 </tr>
@@ -228,26 +257,16 @@ SAP Sales Cloud solution
 `bundled`
 
 </td>
-<td valign="top">
-
-SAP managed
-
-</td>
 </tr>
 <tr>
 <td valign="top">
 
-SAP S/4HANA Cloud solution
+SAP Signavio solution
 
 </td>
 <td valign="top">
 
 `bundled`
-
-</td>
-<td valign="top">
-
-SAP managed
 
 </td>
 </tr>
@@ -262,9 +281,16 @@ SAP SuccessFactors solution
 `bundled`
 
 </td>
+</tr>
+<tr>
 <td valign="top">
 
-SAP managed
+SAP S/4HANA Cloud solution
+
+</td>
+<td valign="top">
+
+`bundled`
 
 </td>
 </tr>
@@ -279,11 +305,6 @@ Other SAP cloud solution
 `bundled`
 
 </td>
-<td valign="top">
-
-SAP managed
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -294,11 +315,6 @@ SAP on-premise solution
 <td valign="top">
 
 `bundled`
-
-</td>
-<td valign="top">
-
-SAP managed
 
 </td>
 </tr>
@@ -313,9 +329,28 @@ Qualtrics solution
 `bundled`
 
 </td>
+</tr>
+<tr>
 <td valign="top">
 
-SAP managed
+SAP LeanIX solution
+
+</td>
+<td valign="top">
+
+`bundled`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Business Data Cloud solution
+
+</td>
+<td valign="top">
+
+`bundled`
 
 </td>
 </tr>
@@ -330,11 +365,6 @@ Non-SAP solution
 `charged`
 
 </td>
-<td valign="top">
-
- 
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -347,15 +377,13 @@ Unknown
 `charged`
 
 </td>
-<td valign="top">
-
-default value
-
-</td>
 </tr>
 </table>
 
-You can't change the application type of the system applications.
+> ### Remember:  
+> You can't change the application type of the system applications.
+> 
+> Bundled SAP S/4 HANA Cloud and SAP Integrated Business Planning solutions are managed and configured by SAP and can't be deleted. Part of their SAML 2.0 configurations are read-only. Be careful when you make configuration changes.
 
 The *Parent Application* field is optional.
 
@@ -438,6 +466,11 @@ To edit the application configurations, proceed as follows:
     <td valign="top">
     
     Optional
+
+    > ### Caution:  
+    > If the type of the application is not the correct one, the system may change it automatically without a warning.
+
+
     
     </td>
     </tr>

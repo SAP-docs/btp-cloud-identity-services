@@ -15,7 +15,7 @@ Identity Authentication uses the OAuth protocol for social sign-on via Google as
 
 Once a user has allowed Identity Authentication to link his or her account with the Google account, the user can log on to applications via the social provider.
 
-To configure Google as social identity provider for the tenant, you have to register new applications on the Google site. For more details, see Related Information.
+To configure Google as social identity provider for the tenant, you have to register new applications on the Google site. For more details, see [Verify your site ownership](https://support.google.com/webmasters/answer/9008080?hl=en&ref_topic=4564314&visit_id=638866288160331797-2645517252&rd=1).
 
 > ### Note:  
 > You need to type `https://<tenant ID>.accounts.ondemand.com/ui/oauth/googleCallback` in the *Authorized redirect URIs* field when you create your client ID in Google Developers Console. For more information about the redirect URIs for your OAuth 2.0 credentials, see [Set a redirect URI](https://developers.google.com/identity/protocols/OpenIDConnect#setredirecturi).
@@ -80,6 +80,46 @@ The Google OAuth 2.0 credential after you set a project in the Google Developers
 
 5.  Enter the generated authentication attributes from the social provider.
 
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Option
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Client ID**
+    
+    </td>
+    <td valign="top">
+    
+    The Google OAuth 2.0 credential after you set a project in the Google Developers Console.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Client Secret**
+    
+    </td>
+    <td valign="top">
+    
+    The Google OAuth 2.0 credential after you set a project in the Google Developers Console.
+    
+    </td>
+    </tr>
+    </table>
+    
     > ### Note:  
     > Check for leading or trailing spaces in the authentication attributes fields, and delete them. Sign-on through the social identity provider will not work if there are blank spaces before or after the strings in the fields.
 
@@ -113,8 +153,6 @@ The above configurations are valid for the whole tenant. They will take effect f
 [Remove Social Identity Providers Configuration](remove-social-identity-providers-configuration-265e41e.md "You can remove the configurations of the social providers in the administration console for SAP Cloud Identity Services.")
 
 [Obtain OAuth 2.0 credentials](https://developers.google.com/accounts/docs/OAuth2Login#getcredentials)
-
-[Verify your site ownership](https://support.google.com/webmasters/answer/35179?hl=en&ref_topic=4564314)
 
 [Social Authentication](../User-Guide/social-authentication-108607a.md "")
 

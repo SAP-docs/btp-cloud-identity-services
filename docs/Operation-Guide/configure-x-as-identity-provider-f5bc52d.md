@@ -15,7 +15,7 @@ Identity Authentication uses the OAuth protocol for social sign-on via X as a so
 
 Once a user has allowed Identity Authentication to link his or her account with the X account, the user can log on to applications via the social provider.
 
-To configure X as social identity provider for the tenant, you have to register new applications on the X site. For more details, see Related Information.
+To configure X as social identity provider for the tenant, you have to register new applications on the X site. For more details, see [Create a Project and connect an App](https://docs.x.com/tutorials/explore-a-users-posts#create-a-project-and-connect-an-app).
 
 > ### Note:  
 > You need to type `https://<tenant ID>.accounts.ondemand.com/ui/oauth/oauthCallback` in the *Callback URLs* field in the Create an application section of X Application Management page. For more information about X Callback URL, see [Callback URL](https://developer.twitter.com/en/docs/basics/callback_url).

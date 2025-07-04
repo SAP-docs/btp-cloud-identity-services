@@ -23,7 +23,7 @@ Identity Authentication uses the OAuth protocol for social sign-on via Apple as 
 
 Once a user has allowed Identity Authentication to link his or her account with the Apple ID account, the user can log on to applications via the social provider.
 
-To configure sign in with Apple for the tenant, first you have to register an Application ID \(App ID\) and Services ID. For more details, see Related Information.
+To configure sign in with Apple for the tenant, first you have to register an Application ID \(App ID\) and Services ID. For more details, see [Configure Sign in with Apple for the web](https://developer.apple.com/help/account/capabilities/configure-sign-in-with-apple-for-the-web/).
 
 > ### Note:  
 > You must type `https://<tenant ID>.accounts.ondemand.com` in the *Domains and Subdomains* box, and `https://<tenant ID>.accounts.ondemand.com/ui/oauth/oauthCallback` in the *Return URLs* box when you enable and configure the *Sign in with Apple* option at the Apple Developer site.
@@ -148,8 +148,6 @@ The above configurations are valid for the whole tenant. They will take effect f
 [Configure X as Identity Provider](configure-x-as-identity-provider-f5bc52d.md "By configuring X as social provider, users can log on to applications with their X credentials by liking their accounts in Identity Authentication to the X account.")
 
 [Remove Social Identity Providers Configuration](remove-social-identity-providers-configuration-265e41e.md "You can remove the configurations of the social providers in the administration console for SAP Cloud Identity Services.")
-
-[Configure Sign in with Apple for the web](https://help.apple.com/developer-account/?lang=en#/dev1c0e25352)
 
 [Enable or Disable Social Sign-On for an Application](enable-or-disable-social-sign-on-for-an-application-ff12d3d.md "Social sign-on allows users to link their Identity Authentication accounts with social network accounts.")
 

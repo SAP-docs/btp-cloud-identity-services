@@ -15,17 +15,12 @@ In some cases Identity Authentication can't determine the correct application ty
 <tr>
 <th valign="top">
 
-Name
+Name Type
 
 </th>
 <th valign="top">
 
-Type
-
-</th>
-<th valign="top">
-
-Notes
+Application Type
 
 </th>
 </tr>
@@ -40,11 +35,6 @@ SAP Analytics Cloud solution
 `bundled`
 
 </td>
-<td valign="top">
-
-SAP managed
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -55,11 +45,6 @@ SAP Ariba solution
 <td valign="top">
 
 `bundled`
-
-</td>
-<td valign="top">
-
-SAP managed
 
 </td>
 </tr>
@@ -74,11 +59,6 @@ SAP Business ByDesign solution
 `bundled`
 
 </td>
-<td valign="top">
-
-SAP managed
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -89,198 +69,6 @@ SAP BTP solution
 <td valign="top">
 
 `bundled`
-
-</td>
-<td valign="top">
-
-SAP managed
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SAP Sales Cloud and SAP Service Cloud solution
-
-</td>
-<td valign="top">
-
-`bundled`
-
-</td>
-<td valign="top">
-
-SAP managed
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SAP Concur solution
-
-</td>
-<td valign="top">
-
-`bundled`
-
-</td>
-<td valign="top">
-
-SAP managed
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SAP Fieldglass solution
-
-</td>
-<td valign="top">
-
-`bundled`
-
-</td>
-<td valign="top">
-
-SAP managed
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SAP Industry Cloud Solution
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SAP Integrated Business Planning solution
-
-</td>
-<td valign="top">
-
-`bundled`
-
-</td>
-<td valign="top">
-
-SAP managed
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SAP Jam solution
-
-</td>
-<td valign="top">
-
-`bundled`
-
-</td>
-<td valign="top">
-
-SAP managed
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SAP Marketing Cloud solution
-
-</td>
-<td valign="top">
-
-`bundled`
-
-</td>
-<td valign="top">
-
-SAP managed
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SAP Sales Cloud solution
-
-</td>
-<td valign="top">
-
-`bundled`
-
-</td>
-<td valign="top">
-
-SAP managed
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SAP S/4HANA Cloud solution
-
-</td>
-<td valign="top">
-
-`bundled`
-
-</td>
-<td valign="top">
-
-SAP managed
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SAP SuccessFactors solution
-
-</td>
-<td valign="top">
-
-`bundled`
-
-</td>
-<td valign="top">
-
-SAP managed
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-SAP Customer Data solution
-
-</td>
-<td valign="top">
-
-`bundled`
-
-</td>
-<td valign="top">
-
- 
 
 </td>
 </tr>
@@ -295,9 +83,196 @@ SAP Central Business Configuration solution
 `bundled`
 
 </td>
+</tr>
+<tr>
 <td valign="top">
 
- 
+SAP Concur solution
+
+</td>
+<td valign="top">
+
+`bundled`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Customer Data solution
+
+</td>
+<td valign="top">
+
+`bundled`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Data Custodian solution
+
+</td>
+<td valign="top">
+
+`bundled`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Datasphere solution
+
+</td>
+<td valign="top">
+
+`bundled`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Emarsys Customer Engagement solution
+
+</td>
+<td valign="top">
+
+`bundled`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Fieldglass solution
+
+</td>
+<td valign="top">
+
+`bundled`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Enable Now solution
+
+</td>
+<td valign="top">
+
+`bundled`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Industry Cloud Solution
+
+</td>
+<td valign="top">
+
+`bundled`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Integrated Business Planning solution
+
+</td>
+<td valign="top">
+
+`bundled`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Jam solution
+
+</td>
+<td valign="top">
+
+`bundled`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Marketing Cloud solution
+
+</td>
+<td valign="top">
+
+`bundled`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Sales Cloud and SAP Service Cloud solution
+
+</td>
+<td valign="top">
+
+`bundled`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Sales Cloud solution
+
+</td>
+<td valign="top">
+
+`bundled`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Signavio solution
+
+</td>
+<td valign="top">
+
+`bundled`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP SuccessFactors solution
+
+</td>
+<td valign="top">
+
+`bundled`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP S/4HANA Cloud solution
+
+</td>
+<td valign="top">
+
+`bundled`
 
 </td>
 </tr>
@@ -312,11 +287,6 @@ Other SAP cloud solution
 `bundled`
 
 </td>
-<td valign="top">
-
-SAP managed
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -327,11 +297,6 @@ SAP on-premise solution
 <td valign="top">
 
 `bundled`
-
-</td>
-<td valign="top">
-
-SAP managed
 
 </td>
 </tr>
@@ -346,9 +311,28 @@ Qualtrics solution
 `bundled`
 
 </td>
+</tr>
+<tr>
 <td valign="top">
 
-SAP managed
+SAP LeanIX solution
+
+</td>
+<td valign="top">
+
+`bundled`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Business Data Cloud solution
+
+</td>
+<td valign="top">
+
+`bundled`
 
 </td>
 </tr>
@@ -363,11 +347,6 @@ Non-SAP solution
 `charged`
 
 </td>
-<td valign="top">
-
- 
-
-</td>
 </tr>
 <tr>
 <td valign="top">
@@ -380,16 +359,13 @@ Unknown
 `charged`
 
 </td>
-<td valign="top">
-
-default value
-
-</td>
 </tr>
 </table>
 
 > ### Remember:  
 > You can't change the application type of the system applications.
+> 
+> Bundled SAP S/4 HANA Cloud and SAP Integrated Business Planning solutions are managed and configured by SAP and can't be deleted. Part of their SAML 2.0 configurations are read-only. Be careful when you make configuration changes.
 
 To configure the *Application Type*, proceed as follows:
 
@@ -410,7 +386,10 @@ To configure the *Application Type*, proceed as follows:
 
 4.  Choose the *Edit* button on the top-right corner.
 
-5.  Choose the type from the drop-down in the *Application Type* field in the dialog box that appears.
+5.  Choose the correct type from the drop-down in the *Application Type* field in the dialog box that appears.
+
+    > ### Caution:  
+    > If the type of the application is not the correct one, the system may change it automatically without a warning.
 
 6.  Save your changes.
 

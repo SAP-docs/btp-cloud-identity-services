@@ -41,7 +41,7 @@ The first administrator can add new tenant administrators.
 -   [KBA 3035908 - How to Find the Identity Authentication / Identity Provisioning Tenant Administrator Information or Tenant URL?](https://me.sap.com/notes/3035908)
 -   [Identity Authentication Service tenant specific request only possible for customer owning the tenant](https://launchpad.support.sap.com/#/notes/2774108)
 -   [Access Admin Console](../access-admin-console-2609e81.md)
--   [Reset Password](../User-Guide/reset-password-c821f3f.md)
+-   [Reset Your Forgotten Password](../User-Guide/reset-your-forgotten-password-c821f3f.md)
 -   [Activate Your Account](../activate-your-account-cc03ecc.md)
 -   [Access Admin Console](../access-admin-console-2609e81.md)
 -   [Manage Administrators](../manage-administrators-3bddea4.md)
@@ -100,7 +100,7 @@ You see the following error after you’ve chosen the activation email link:
 
 This message means that the user or someone else clicked the activation link after it had already expired or the user account at the Identity Authentication tenant had already been activated.
 
-Use the "Forgot Password" functionality to gain access to your tenant. For more information, see [Reset Password](../User-Guide/reset-password-c821f3f.md).
+Use the "Forgot Password" functionality to gain access to your tenant. For more information, see [Reset Your Forgotten Password](../User-Guide/reset-your-forgotten-password-c821f3f.md).
 
 
 
@@ -184,7 +184,7 @@ See KBA 2770797 - [The IAS tenant user login fails after successful activation: 
 
 ### but … you forgot your password
 
-Use the "Forgot Password" functionality to gain access to your tenant. For more information, see [Reset Password](../User-Guide/reset-password-c821f3f.md).
+Use the "Forgot Password" functionality to gain access to your tenant. For more information, see [Reset Your Forgotten Password](../User-Guide/reset-your-forgotten-password-c821f3f.md).
 
 If you have an account as administrator in Cloud Identity Services, an email with a link to a page where you can reset your password is sent. Note that the email might take a few minutes to reach your inbox. If you don't have an account as administrator, you won't receive an e-mail. In this case, contact an existing administrator for the tenant.
 

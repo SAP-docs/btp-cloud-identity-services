@@ -598,7 +598,7 @@
         -   [Social Authentication](User-Guide/social-authentication-108607a.md)
         -   [Use the Remember Me Option](User-Guide/use-the-remember-me-option-bc7c6c6.md)
         -   [Change Password](User-Guide/change-password-3291dd3.md)
-        -   [Reset Password](User-Guide/reset-password-c821f3f.md)
+        -   [Reset Your Forgotten Password](User-Guide/reset-your-forgotten-password-c821f3f.md)
         -   [Error Messages on End User Screens](User-Guide/error-messages-on-end-user-screens-ce359da.md)
     -   [Development](Development/development-55ab9b8.md)
         -   [API Authentication](Development/api-authentication-44b0d28.md)
