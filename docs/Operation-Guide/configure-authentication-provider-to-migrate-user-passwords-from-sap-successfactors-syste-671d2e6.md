@@ -137,7 +137,7 @@ To configure a authentication provider, follow the steps below:
 
         Technical user added in the authentication provider that has administrator permissions to access the OData API. It can be provided by the external authentication provider administrator.
 
-        For more information of the permission settings of the user, see [Setting Up an API User for Sync Jobs in SAP SuccessFactors](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/568fdf1f14f14fd089a3cd15194d19cc/0a6e6705d89e42649e3aa8732f2b0724.html?version=2311).
+        For more information of the permission settings of the user, see [Setting Up an API User for Sync Jobs in SAP SuccessFactors \(Basic Authentication Method\)](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/568fdf1f14f14fd089a3cd15194d19cc/0a6e6705d89e42649e3aa8732f2b0724.html?locale=en-US&state=PRODUCTION&version=2505).
 
         *Technical User Secret*
 

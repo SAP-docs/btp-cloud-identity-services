@@ -14,6 +14,9 @@ You can configure the value of existing application-defined attributes, like ema
 
 Configure the user attributes as they come from the corporate identity provider \(IdP\).
 
+> ### Note:  
+> For corporate IdPs configured for OpenID Connect \(OIDC\) , only attributes coming from ID tokens are relevant.
+
 
 
 <a name="loio621017f2623c4ac59923e4ef531304d2__steps_dtr_4xc_fzb"/>
