@@ -100,6 +100,148 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Off-Cycle Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-07-09
+
+</td>
+<td valign="top">
+
+2025-07-09
+
+</td>
+<td valign="top">
+
+28039
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+CAPTCHA Protection
+
+</td>
+<td valign="top">
+
+Tenant administrator can enable CAPTCHA protection for the phone verification pages of the application. See [Enable Google reCAPTCHA for Application Forms](Operation-Guide/enable-google-recaptcha-for-application-forms-3db7c1e.md) and [Enable MTCaptcha for Application Forms](Operation-Guide/enable-mtcaptcha-for-application-forms-6e2f44a.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-07-09
+
+</td>
+<td valign="top">
+
+2025-07-09
+
+</td>
+<td valign="top">
+
+28039
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Regular Upgrade
 
 </td>

@@ -45,7 +45,7 @@ When you edit an existing custom authorization policy, you can add or delete res
 
 
 
-9.  For a `RESTRICT` condition, choose one of the available attributes, an operation, and enter a value. You can choose a value from the value help or type it in.
+9.  For a `RESTRICT` condition, choose one of the available attributes, an operation, and enter a value. You can choose a value from the value help or type it in. To add another `RESTRICT` condition, choose :heavy_plus_sign: or use the [Return\] key.
 
     > ### Note:  
     > All indented rows that appear in a list directly below `RESTRICT` or `USE` have an `AND` conjunction.

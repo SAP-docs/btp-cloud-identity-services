@@ -102,13 +102,13 @@ The above configurations are valid for the whole tenant. They will take effect f
 **Related Information**  
 
 
-[Configure Apple as Identity Provider](configure-apple-as-identity-provider-fe6f7f0.md "Users can log on to applications with their Apple ID credentials by linking their accounts in Identity Authentication to their Apple account.")
+[Configure Google as Identity Provider](configure-google-as-identity-provider-caf215f.md "By configuring Google as a social identity provider, users can log on to applications with their Google credentials by liking their accounts in Identity Authentication to the Google account.")
 
 [Configure Facebook as Identity Provider](configure-facebook-as-identity-provider-cc16b33.md "By configuring Facebook as a social identity provider, users can log on to applications with their social media credentials by liking their accounts in Identity Authentication to the social media account.")
 
-[Configure Google as Identity Provider](configure-google-as-identity-provider-caf215f.md "By configuring Google as a social identity provider, users can log on to applications with their Google credentials by liking their accounts in Identity Authentication to the Google account.")
-
 [Configure X as Identity Provider](configure-x-as-identity-provider-f5bc52d.md "By configuring X as social provider, users can log on to applications with their X credentials by liking their accounts in Identity Authentication to the X account.")
+
+[Configure Apple as Identity Provider](configure-apple-as-identity-provider-fe6f7f0.md "Users can log on to applications with their Apple ID credentials by linking their accounts in Identity Authentication to their Apple account.")
 
 [Remove Social Identity Providers Configuration](remove-social-identity-providers-configuration-265e41e.md "You can remove the configurations of the social providers in the administration console for SAP Cloud Identity Services.")
 

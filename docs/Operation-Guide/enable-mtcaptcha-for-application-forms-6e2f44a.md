@@ -2,7 +2,7 @@
 
 # Enable MTCaptcha for Application Forms
 
-Enable Google reCAPTCHA for the registration form and login page of the application.
+Enable MTCaptcha for the registration form, login page, and the phone verification pages of the application.
 
 
 
@@ -45,7 +45,16 @@ Enable Google reCAPTCHA for the registration form and login page of the applicat
 6.  Enable the CAPTCHA protection for the relevant application form:
 
     -   *Registration Form*
+
+        > ### Remember:  
+        > You must have allowed self-registration for the application. For more information, see [Configure User Access to the Application](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/configure-user-access-to-application). Choose Public access.
+
     -   *Login Page*
+    -   *Phone Verification*
+
+        > ### Remember:  
+        > You must have enabled phone verification for the application. For more information, see [Enable Phone Verification for an Application](enable-phone-verification-for-an-application-24c9b51.md).
+
 
 7.  Save your configuration.
 

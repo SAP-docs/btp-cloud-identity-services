@@ -231,7 +231,7 @@ For more information, see [Token Policy Configuration for Applications](../Opera
 </td>
 <td valign="top">
 
-Sets the lifetime in seconds of tokens issued by the service. The value can range from 60 to 3600, in other words, from 1 minute to 1 hour.
+Sets the lifetime in seconds of tokens issued by the service. The value can range from 60 to 43,200, in other words, from 1 minute to 12 hours.
 
 The default value is 3600 seconds, which translates to 1 hour.
 
@@ -280,6 +280,29 @@ Defines the validity of the old refresh token after requesting a new one through
 -   `online` - The new refresh token is created and the old one is still active for 5 minutes.
 
 -   `mobile` - The new and old refresh tokens are valid during the configured refresh token life time.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`access-token-format`
+
+</td>
+<td valign="top">
+
+Defines the format of access tokens.
+
+-   `default` - The access token format is dependent on the grant type.
+
+    For more information, see [Token Policy Configuration for Applications](../Operation-Guide/token-policy-configuration-for-applications-c4ba52e.md).
+
+-   `jwt` - The access token format is JWT.
+
+-   `opaque` - The access token format is opaque.
+
 
 
 
