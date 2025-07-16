@@ -1063,7 +1063,7 @@ To view the audit logs, follow the procedures below:
     > ### Caution:  
     > If your SAP Cloud Identity Services tenant is migrated to a new region, you must remove the current configuration and repeat procedure with the new region.
 
-8.  View the audit logs. You have two optiont:
+8.  View the audit logs. You have two options:
 
     -   \(if subdomain is configured\) choose the link to the *Audit Log Viewer* in the *Audit Service Configuration* in the administration console.
     -   in the cockpit, navigate to *Services* \> *Instances and Subscriptions* \> *Audit Log Viewer*.
