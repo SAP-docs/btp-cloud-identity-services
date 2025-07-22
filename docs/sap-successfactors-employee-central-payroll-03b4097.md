@@ -279,7 +279,7 @@ You can use Identity Provisioning to configure SAP SuccessFactors Employee Centr
     > ```
     > {
     >     "user": {
-    >         "condition": "$.name.familyName EMPTY false",
+    >         "condition": "($.name.familyName EMPTY false) && (('%ecp.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%ecp.group.prefix%.*/)] empty false))",
     >         "mappings": [
     >             {
     >                 "constant": [
@@ -347,7 +347,7 @@ You can use Identity Provisioning to configure SAP SuccessFactors Employee Centr
     >         ]
     >     },
     >     "group": {
-    >         "condition": "('%ecp.group.prefix%' === 'null') || ($.displayName =~ /%ecp.group.prefix%.*/)",
+    >         "condition": "isAttributeWithOptionalPrefix($.displayName, ecp.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], ecp.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >         "mappings": [
     >             {
     >                 "sourceVariable": "entityIdTargetSystem",
@@ -365,7 +365,7 @@ You can use Identity Provisioning to configure SAP SuccessFactors Employee Centr
     >                 "targetPath": "$.displayName",
     >                 "functions": [
     >                     {
-    >                         "condition": "('%ecp.group.prefix%' !== 'null') && (@ =~ /%ecp.group.prefix%.*/)",
+    >                         "condition": "isAttributeWithOptionalPrefix($.displayName, ecp.group.prefix)",
     >                         "function": "replaceFirstString",
     >                         "regex": "%ecp.group.prefix%",
     >                         "replacement": ""

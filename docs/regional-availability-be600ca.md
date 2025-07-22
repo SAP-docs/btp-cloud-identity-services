@@ -293,6 +293,45 @@ AWS
 <tr>
 <td valign="top">
 
+Israel
+
+</td>
+<td valign="top">
+
+`accounts.ondemand.com`
+
+`accounts.cloud.sap`
+
+</td>
+<td valign="top">
+
+Tel Aviv, Israel, Middle East
+
+</td>
+<td valign="top">
+
+Google Cloud
+
+</td>
+<td valign="top">
+
+`34.165.59.107, 34.165.82.240`
+
+</td>
+<td valign="top">
+
+`34.165.48.136/32, 34.165.90.82/32, 34.165.0.183/32`
+
+</td>
+<td valign="top">
+
+`34.165.48.136 - 34.165.48.136, 34.165.90.82 - 34.165.90.82, 34.165.0.183 - 34.165.0.183`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Japan
 
 </td>
@@ -425,22 +464,22 @@ Saudi Arabia \(Riyadh, Dammam\)
 </td>
 <td valign="top">
 
-SAP
+Google Cloud
 
 </td>
 <td valign="top">
 
-`130.214.222.99, 130.214.248.94`
+`34.166.140.252, 34.166.98.190`
 
 </td>
 <td valign="top">
 
-`130.214.222.32/27, 130.214.248.32/27`
+`34.166.143.220/32, 34.166.36.253/32`
 
 </td>
 <td valign="top">
 
-`130.214.222.32-130.214.222.63, 130.214.248.32-130.214.248.63`
+`34.166.143.220-34.166.143.220, 34.166.36.253-34.166.36.253`
 
 </td>
 </tr>

@@ -476,6 +476,16 @@ Follow the steps below to create a SCIM 2.0 representation of your proxy Cloud F
     >         "targetPath": "$.displayName"
     >       },
     >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true
+    >       },
+    >       {
     >         "sourcePath": "$.description",
     >         "targetPath": "$.description",
     >         "optional": true
@@ -496,8 +506,11 @@ Follow the steps below to create a SCIM 2.0 representation of your proxy Cloud F
     >         "optional": true
     >       },
     >       {
-    >         "constant": "urn:ietf:params:scim:schemas:core:2.0:Group",
-    >         "targetPath": "$.schemas[0]"
+    >         "constant": [
+    >           "urn:ietf:params:scim:schemas:core:2.0:Group",
+    >           "urn:ietf:params:scim:schemas:extension:sap:2.0:Group"
+    >         ],
+    >         "targetPath": "$.schemas"
     >       }
     >     ],
     >     "scimEntityEndpoint": "Groups"

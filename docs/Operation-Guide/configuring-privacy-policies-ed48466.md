@@ -43,7 +43,7 @@ To configure privacy policy in the administration console, do the following:
 
 [Configuring Password Policies](configuring-password-policies-12b3395.md "Passwords for the authentication of users are subject to certain rules. These rules are defined in the password policy. Identity Authentication provides you with two predefined password policies, in addition to which you can create and configure up to three custom password policies.")
 
-[Configuring Authorization Policies](configuring-authorization-policies-982ac5f.md "Authorization management enables SAP Cloud Identity Services administrators to use authorization policies, customize them, and assign them to users.")
+[Configuring Authorization Policies](configuring-authorization-policies-982ac5f.md "Authorization Management enables SAP Cloud Identity Services administrators to use authorization policies, customize them, and assign them to users.")
 
 [Configuring Terms of Use](configuring-terms-of-use-61d3a86.md "You can configure a custom terms of use document by creating a new document, adding and editing its language versions, and defining the document for an application.")
 

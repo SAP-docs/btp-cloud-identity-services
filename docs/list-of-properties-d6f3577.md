@@ -3238,7 +3238,13 @@ When the property is set, the groups are provisioned with their *applicationId* 
 
 -   SAP S/4 HANA Cloud
 
+-   SAP SuccessFactors Employee Central Payroll
+
 -   SAP Revenue Growth Management
+
+-   Cloud Foundry UAA Server
+
+-   Procurement Data Warehouse
 
 
 
@@ -6139,7 +6145,32 @@ For example:
 > ### Note:  
 > These combinations are valid for both 'or' and 'and' operators.
 
-**System Role:** Source
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP Integrated Business Planning for Supply Chain \(using version 2 - SCIM Interface for IAM\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ibp.group.unique.attribute`
+
+</td>
+<td valign="top">
+
+If the Identity Provisioning tries to create a group that already exists in the SAP Integrated Business Planning for Supply Chain target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
+
+**Possible values:**
+
+Default value \(when not specified\): *externalId* and *\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['type'\]*
+
+If the property is not specified, the search is done by the default attributes.
+
+**System Role:** Target
 
 </td>
 <td valign="top">
@@ -6246,14 +6277,14 @@ Supported operators: eq \(equal\), ne \(not equal\), sw \(starts with\), ew \(en
 
 -   `userName`
 -   `externalId`
--   `emails.value`
+-   `emails[0].value`
 
 For example:
 
 -   *userName eq "johnbrown" and externalId eq "P000252"*
 -   *userName sw "J" or externalId eq "P000252"*
--   *userName eq "johnbrown" and emails.value eq "johnbrown@email.com"*
--   *userName eq "johnbrown" and emails.value ne "johnbrown@email.com" or externalId eq "P000252"*
+-   *userName eq "johnbrown" and emails\[0\].value eq "johnbrown@email.com"*
+-   *userName eq "johnbrown" and emails\[0\].value ne "johnbrown@email.com" or externalId eq "P000252"*
 
     > ### Note:  
     > These combinations are valid for both 'or' and 'and' operators.

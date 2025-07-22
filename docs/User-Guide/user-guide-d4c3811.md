@@ -78,12 +78,15 @@ Users can use the following self-services:
     -   Users can download an overview of all the data for them on a JSON file by clicking the download button in the *User Data* section.
 
 
--   Verifying user phone
+-   Self verifying user phone
 
-    > ### Remember:  
-    > The phone verification possibility on the Profile Page is optional and must be enabled by a system administrator.
+    The phone verification possibility on the Profile Page is optional and must be enabled by a system administrator.
 
-    If the phone verification is enabled by a system administrator, and the phone number is verified users can change it on the profile by choosing *Edit* in the *Personal Information* section. They will receive a verification code on the phone which must be provided so that the change is completed. If the code fails to arrive, users have up to five attempts to request a new code via SMS. They can also trigger one phone call per session. If the phone number is not verified, users can change it without a verification code.
+    If phone verification is enabled by a system administrator, the users provide their phone number in the respective field, after that they receive an SMS code and enters it in the provided field to complete the verification. Once the phone number is verified, users can change it on the profile by choosing *Edit* in the *Personal Information* section. They will receive a verification code on the phone which must be provided so that the change is completed. If the code fails to arrive, users have up to five attempts to request a new code via SMS. They can also trigger one phone call per session.
+
+    When CAPTCHA \(Completely Automated Public Turing test to tell Computers and Humans Apart\) protection is enabled, users must solve the CAPTCHA to verify their phone.
+
+    If the phone number is not verified, users can change it without a verification code.
 
     > ### Restriction:  
     > A phone number can be verified by only one user. If another user has already verified the phone number that is provided, the user is prompted to choose a different one or contact an administrator.

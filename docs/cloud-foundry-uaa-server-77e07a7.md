@@ -354,6 +354,21 @@ Follow the steps below to create Cloud Foundry UAA as a source system to read us
     >         ]
     >       },
     >       {
+    >         "condition": "'%ips.application.id%' !== 'null'",
+    >         "constant": "%ips.application.id%",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true
+    >       },
+    >       {
     >         "sourcePath": "$.description",
     >         "targetPath": "$.description",
     >         "optional": true
@@ -361,11 +376,6 @@ Follow the steps below to create Cloud Foundry UAA as a source system to read us
     >       {
     >         "sourcePath": "$.zoneId",
     >         "targetPath": "$.zoneId",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.meta",
-    >         "targetPath": "$.meta",
     >         "optional": true
     >       },
     >       {

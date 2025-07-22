@@ -19,7 +19,7 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 You can change the name format, the certificate used by the identity provider to digitally sign the messages for the applications, set the token policy by configuring the validity of the refresh token, access and id\_token, and the maximum sessions per user, and extend the standard metadata with custom values.
 
 > ### Note:  
-> The signing certificate is one and the same for SAML 2.0 and OpenID Connect. A change in one of the configurations affects the other one.
+> For tenants created before 10 September 2024, the signing certificate is one and the same for SAML 2.0 and OpenId Connect \(OIDC\). Changing one of the configurations causes the service to separate the configuration into two signing certificates, one for SAML and one for OIDC.
 
 The *OpenID Connect Configuration* view in the administration console also shows information about the URLs of the *Domain for Browser Flows*, *Authorization Endpoint*, *Token Endpoint*, *UserInfo Endpoint*, and *Logout Endpoint*.
 

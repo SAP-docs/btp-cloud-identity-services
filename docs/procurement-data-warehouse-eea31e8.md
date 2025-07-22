@@ -363,7 +363,7 @@ You can use Identity Provisioning to configure procurement data warehouse as a t
     > ```
     > {
     >     "user": {
-    >         "condition": "($.emails[0].value EMPTY false)",
+    >         "condition": "isValidEmail($.emails[0].value) && (('%pdw.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%pdw.group.prefix%.*/)] empty false))",
     >         "mappings": [
     >             {
     >                 "sourceVariable": "entityIdTargetSystem",
@@ -460,7 +460,7 @@ You can use Identity Provisioning to configure procurement data warehouse as a t
     >         ]
     >     },
     >     "group": {
-    >         "condition": "('%pdw.group.prefix%' === 'null') || ($.displayName =~ /%pdw.group.prefix%.*/)",
+    >         "condition": "isAttributeWithOptionalPrefix($.displayName, pdw.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], pdw.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >         "mappings": [
     >             {
     >                 "sourceVariable": "entityIdTargetSystem",

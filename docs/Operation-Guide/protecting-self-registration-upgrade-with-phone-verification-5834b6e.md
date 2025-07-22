@@ -1,8 +1,8 @@
 <!-- loio5834b6e2e9224411a5c59e246f7b513e -->
 
-# Protecting Self-Registration with Phone Verification
+# Protecting Self-Registration, Upgrade with Phone Verification
 
-Tenant administrators can configure applications to require new self-registered users to verify themselves via SMS codes sent to their mobile phones.
+Tenant administrators can configure applications to require new self-registered users and existing users to verify themselves via SMS codes sent to their mobile phones.
 
 
 

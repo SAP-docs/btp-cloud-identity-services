@@ -151,7 +151,7 @@ To create a new OpenID Connect application follow the procedure below:
 -   [Configure Logo](configure-logo-778f748.md)
 -   [Choose and Configure a Branding Style for an Application](choose-and-configure-a-branding-style-for-an-application-32f8d33.md)
 -   [Configure Registration and Upgrade Forms](configure-registration-and-upgrade-forms-93a9e18.md)
--   [Protecting Self-Registration with Phone Verification](protecting-self-registration-with-phone-verification-5834b6e.md)
+-   [Protecting Self-Registration, Upgrade with Phone Verification](protecting-self-registration-upgrade-with-phone-verification-5834b6e.md)
 -   [Protecting Application Forms with Google reCAPTCHA](protecting-application-forms-with-google-recaptcha-b84ce17.md)
 -   [Configure Identity Federation](configure-identity-federation-c029bbb.md)
 -   [Configure Authentication Request to Corporate IdPs](configure-authentication-request-to-corporate-idps-7eac7e8.md)

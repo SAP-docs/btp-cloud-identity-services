@@ -100,6 +100,465 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+SAP Ariba Central Invoice Managementsupports userUUID
+
+</td>
+<td valign="top">
+
+SAP Ariba Central Invoice Management supports provisioning of users with the **userUUID** attribute. The default read, write and proxy read and write transformations have been enhanced to support the universally unique identifier.
+
+For more information, see [SAP Ariba Central Invoice Management](sap-ariba-central-invoice-management-f540d52.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+<td valign="top">
+
+2025-07-29
+
+</td>
+<td valign="top">
+
+2025-07-29
+
+</td>
+<td valign="top">
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regional Availability
+
+</td>
+<td valign="top">
+
+Cloud Identity Services has migrated the data \(DC\) center in Saudi Arabia \(Riyadh, Dammam\) to the Google Cloud infrastructure from the SAP infrastructure.
+
+Action:
+
+You must add the following IPs to your allowed IP list:
+
+-   LB IP - 34.166.140.252, 34.166.98.190
+-   NAT IP - 34.166.143.220/32, 34.166.36.253/32
+
+The following IPs are no longer in use:
+
+-   LB IP - 130.214.222.99, 130.214.248.94
+-   NAT IP - 130.214.222.32/27, 130.214.248.32/27
+
+See [Regional Availability](regional-availability-be600ca.md).
+
+</td>
+<td valign="top">
+
+Required
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-07-22
+
+</td>
+<td valign="top">
+
+2025-07-22
+
+</td>
+<td valign="top">
+
+28063
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-07-15
+
+</td>
+<td valign="top">
+
+2025-07-15
+
+</td>
+<td valign="top">
+
+28063
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Support for SAP extension schema for groups
+
+</td>
+<td valign="top">
+
+The default transformations of the following connectors support attributes from the SAP extension schema for groups, including application ID, type, and supported operations.
+
+For more information, see
+
+-   [SAP SuccessFactors Employee Central Payroll](sap-successfactors-employee-central-payroll-94d8979.md)
+-   [Cloud Foundry UAA Server](cloud-foundry-uaa-server-77e07a7.md)
+-   [Procurement Data Warehouse](procurement-data-warehouse-13f60ee.md)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-07-15
+
+</td>
+<td valign="top">
+
+2025-07-15
+
+</td>
+<td valign="top">
+
+28063
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Change in provisioning job behavior
+
+</td>
+<td valign="top">
+
+Provisioning jobs that skip create and delete operations and only update entities will no longer fail if those entities - previously provisioned from the source to the target system, are deleted in the target. By design, Identity Provisioning runs update jobs only for entities that exist in the target system.
+
+Instead of marking these entities as failed, Identity Provisioning now classifies them as skipped. Therefore, the job status is Successful rather than Finished with Error.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-07-15
+
+</td>
+<td valign="top">
+
+2025-07-15
+
+</td>
+<td valign="top">
+
+28063
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regional Availability
+
+</td>
+<td valign="top">
+
+Cloud Identity Services is available with a new data center for the Google Cloud infrastructure in Israel. The data center is located in Tel Aviv.
+
+Action: You must add the following IPs to your allowed IP list:
+
+-   LB IPs - `34.165.59.107, 34.165.82.240` 
+-   NAT IPs - `34.165.48.136/32, 34.165.90.82/32, 34.165.0.183/32`
+
+See [Regional Availability](regional-availability-be600ca.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-07-15
+
+</td>
+<td valign="top">
+
+2025-07-15
+
+</td>
+<td valign="top">
+
+28063
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Off-Cycle Upgrade
 
 </td>
@@ -2707,7 +3166,7 @@ Cloud Identity Services
 <tr>
 <td valign="top">
 
-
+Cloud Identity Services 
 
 </td>
 <td valign="top">
@@ -3494,7 +3953,7 @@ Regional Availability
 </td>
 <td valign="top">
 
-Cloud Identity Services is available with a new data \(DC\) center, United States \(Virginia\), for the AWS infrastructure in US \(North America East\) region.
+Cloud Identity Services is available with a new data center \(DC\), United States \(Virginia\), for the AWS infrastructure in US \(North America East\) region.
 
 The United States \(Colorado\) DC is no longer used.
 

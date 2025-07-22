@@ -414,6 +414,21 @@ You can use Identity Provisioning to configure procurement data warehouse as a s
     >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:group-custom-parameters:1.0']",
     >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:group-custom-parameters:1.0']",
     >                 "optional": true
+    >              },
+    >             {
+    >                 "condition": "'%ips.application.id%' !== 'null'",
+    >                 "constant": "%ips.application.id%",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "optional": true
+    >             },
+    >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "optional": true
     >             }
     >         ]
     >     }

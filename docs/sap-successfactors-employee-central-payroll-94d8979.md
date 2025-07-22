@@ -345,14 +345,19 @@ You can use Identity Provisioning to configure SAP SuccessFactors Employee Centr
     >                 "targetPath": "$.schemas"
     >             },
     >             {
+    >                 "condition" : "'%ips.application.id%'!== 'null'",
+    >                 "constant" : "%ips.application.id%",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
+    >             },
+    >             {
     >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
-    >                 "optional": true,
-    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >                 "optional": true
     >             },
     >             {
     >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
-    >                 "optional": true,
-    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >                 "optional": true
     >             },
     >             {
     >                 "sourcePath": "$.displayName",

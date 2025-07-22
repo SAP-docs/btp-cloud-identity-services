@@ -2,7 +2,7 @@
 
 # Configuring Authorization Policies
 
-Authorization management enables SAP Cloud Identity Services administrators to use authorization policies, customize them, and assign them to users.
+Authorization Management enables SAP Cloud Identity Services administrators to use authorization policies, customize them, and assign them to users.
 
 When you subscribe to an application that supports authorization policies, you get a corresponding application in *Applications*, and from there you can assign authorizations.
 
@@ -31,7 +31,7 @@ For more information, see [Subscribe to Multitenant Applications Using the Cockp
 
 
 > ### Note:  
-> If your application doesn't have an *Authorization Policies* tab, it doesn't support authorization management.
+> If your application doesn't have an *Authorization Policies* tab, it doesn't support Authorization Management.
 
 
 
@@ -39,7 +39,7 @@ For more information, see [Subscribe to Multitenant Applications Using the Cockp
 
 ## Authorization Management
 
-Authorization management allows SAP Cloud Identity Services administrators to refine authorization policies based on application policy templates with powerful instance restrictions for data access. Developers define and deploy authorization policies with functional checks, instance-based authorizations, and user attributes. They're available in the SAP Cloud Identity Services administration console. If necessary, developers can update existing authorization policies.
+Authorization Management allows SAP Cloud Identity Services administrators to refine authorization policies based on application policy templates with powerful instance restrictions for data access. Developers define and deploy authorization policies with functional checks, instance-based authorizations, and user attributes. They're available in the SAP Cloud Identity Services administration console. If necessary, developers can update existing authorization policies.
 
 For more information, see [Developing Authorizations](../Development/developing-authorizations-22928a2.md).
 
@@ -209,7 +209,7 @@ Authorization policy created by administrators. You can change and delete this a
 </table>
 
 > ### Restriction:  
-> To make sure that authorization management is resilient, we've introduced an upper limit of 200 custom authorization policies and 200 base authorization policies that can be defined per application.
+> To make sure that Authorization Management is resilient, we've introduced an upper limit of 200 custom authorization policies and 200 base authorization policies that can be defined per application.
 
 
 

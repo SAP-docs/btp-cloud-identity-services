@@ -256,7 +256,7 @@ Follow the steps below to create Cloud Foundry UAA as a target system to provisi
     > ```
     > {
     >   "user": {
-    >     "condition": "$.emails.length() > 0",
+    >     "condition": "($.emails.length() > 0) && (('%uaa.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%uaa.group.prefix%.*/)] empty false))",
     >     "mappings": [
     >       {
     >         "constant": "uaa-dummy-value",
@@ -272,8 +272,13 @@ Follow the steps below to create Cloud Foundry UAA as a target system to provisi
     >         "targetPath": "$.userName"
     >       },
     >       {
-    >         "sourcePath": "$.name",
-    >         "targetPath": "$.name",
+    >         "sourcePath": "$.name.givenName",
+    >         "targetPath": "$.name.givenName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.familyName",
+    >         "targetPath": "$.name.familyName",
     >         "optional": true
     >       },
     >       {
@@ -313,7 +318,7 @@ Follow the steps below to create Cloud Foundry UAA as a target system to provisi
     >     ]
     >   },
     >   "group": {
-    >     "condition": "('%uaa.group.prefix%' === 'null') || ($.displayName =~ /%uaa.group.prefix%.*/)",
+    >     "condition": "isAttributeWithOptionalPrefix($.displayName, uaa.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], uaa.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >     "mappings": [
     >       {
     >         "sourceVariable": "entityIdTargetSystem",
@@ -324,7 +329,7 @@ Follow the steps below to create Cloud Foundry UAA as a target system to provisi
     >         "targetPath": "$.displayName",
     >         "functions": [
     >           {
-    >             "condition": "('%uaa.group.prefix%' !== 'null') && (@ =~ /%uaa.group.prefix%.*/)",
+    >             "condition": "isAttributeWithMandatoryPrefix(@, uaa.group.prefix)",
     >             "function": "replaceFirstString",
     >             "regex": "%uaa.group.prefix%",
     >             "replacement": ""

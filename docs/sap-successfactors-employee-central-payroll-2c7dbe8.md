@@ -395,7 +395,7 @@ This scenario supports provisioning users and groups.
     >         ],
     >         "scimEntityEndpoint": "Users"
     >     },
-    >     "group": {
+    >      "group": {
     >         "mappings": [
     >             {
     >                 "sourcePath": "$.id",

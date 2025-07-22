@@ -146,5 +146,5 @@ Once the user has logged out of the application, Identity Authentication sends:
 **Related Information**  
 
 
-[Single Logout](single-logout-1eecf35.md "Propagate a user's logout to other applications and any corporate identity providers used.")
+[Single Logout Flows](../Development/single-logout-flows-0584b5f.md "It's good practice to encourage users of your applications to log out at the end of their session. If malicious users can access user sessions, either by gaining access to artifacts such as cookies or by finding unattended clients, malicious users can impersonate the rightful owners of the sessions.")
 

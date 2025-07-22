@@ -55,5 +55,5 @@ As an administrator, you can assign authorizations to users.
 **Related Information**  
 
 
-[Configuring Authorization Policies](configuring-authorization-policies-982ac5f.md "Authorization management enables SAP Cloud Identity Services administrators to use authorization policies, customize them, and assign them to users.")
+[Configuring Authorization Policies](configuring-authorization-policies-982ac5f.md "Authorization Management enables SAP Cloud Identity Services administrators to use authorization policies, customize them, and assign them to users.")
 

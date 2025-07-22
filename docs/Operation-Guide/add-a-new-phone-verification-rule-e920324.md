@@ -57,5 +57,5 @@ Each rule contains the following information:
 
 [Add a New Phone Verification Rule](add-a-new-phone-verification-rule-e920324.md "You can add rules to skip phone verification for user types.")
 
-[Protecting Self-Registration with Phone Verification](protecting-self-registration-with-phone-verification-5834b6e.md "Tenant administrators can configure applications to require new self-registered users to verify themselves via SMS codes sent to their mobile phones.")
+[Protecting Self-Registration, Upgrade with Phone Verification](protecting-self-registration-upgrade-with-phone-verification-5834b6e.md "Tenant administrators can configure applications to require new self-registered users and existing users to verify themselves via SMS codes sent to their mobile phones.")
 

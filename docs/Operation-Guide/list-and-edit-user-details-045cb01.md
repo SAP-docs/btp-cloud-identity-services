@@ -26,9 +26,12 @@ Only administrators with *Manage Tenant Configuration* role can edit the *Email*
 
 *Display Name* can be configured to be unique or not. For more information see [Configure User Identifier Attributes](configure-user-identifier-attributes-8b9fa88.md).
 
-If the check box below the *Email* is selected, the `email` of the user is verified. The tenant administrator can select it manually, to mark the email as verified. For more information about how to require email verification of the user, see, [Enable Email Verification](enable-email-verification-483d26c.md).
+If the check box below the *Email* is selected, the `email` of the user is verified. For more information about how to require email verification of the user, see, [Enable Email Verification](enable-email-verification-483d26c.md).
 
 If the check box below the *Telephone Verified* is selected, the phone of the user is verified. The tenant administrator can select it manually, to mark the phone as verified.
+
+> ### Caution:  
+> Be careful when there is no Sinch configuration for the tenant and you manually verify the phone via the administration console. In this case users can't change their phones via the profile page. Make sure to inform the users how to change the phone on the profile page.
 
 *User ID*, and *Manager Display Name* fields cannot be edited. They are filled automatically by the system.
 

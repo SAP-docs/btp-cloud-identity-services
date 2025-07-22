@@ -19,7 +19,7 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 ## Context
 
 > ### Note:  
-> The signing certificate is one and the same for SAML 2.0 and OpenId Connect. Note that a change in one of the configurations will also affect the other one.
+> For tenants created before 10 September 2024, the signing certificate is one and the same for SAML 2.0 and OpenId Connect \(OIDC\). Changing one of the configurations causes the service to separate the configuration into two signing certificates, one for SAML and one for OIDC.
 
 > ### Remember:  
 > The signature and digest methods in the XML of the metadata file depend on the signing certificate, which is configured for the identity provider.
@@ -165,7 +165,7 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
 To change the default certificate for the tenant, choose *Edit* \> *the new certificate from the list* \> *Save*.
 
 > ### Caution:  
-> When you change the default certificate for the tenant, you must also update the trust with the service provider. For more information see [Configure SAML 2.0 Service Provider](configure-saml-2-0-service-provider-51f1f75.md).
+> When you change the default certificate for the tenant, you must also update the trust with the service provider. For more information, see [Configure SAML 2.0 Service Provider](configure-saml-2-0-service-provider-51f1f75.md).
 
 **Related Information**  
 

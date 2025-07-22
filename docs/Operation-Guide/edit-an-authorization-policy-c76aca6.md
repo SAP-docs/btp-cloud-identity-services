@@ -20,7 +20,7 @@ When you edit an existing custom authorization policy, you can add or delete res
 
 2.  Under *Applications & Resources*, choose *Applications*.
 
-3.  Choose the application that supports authorization management. For more information, see the documentation of the application.
+3.  Choose the application that supports Authorization Management. For more information, see the documentation of the application.
 
     The details page of your application has an *Authorization Policies* tab.
 

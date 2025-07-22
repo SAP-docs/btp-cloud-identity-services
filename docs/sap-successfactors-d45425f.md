@@ -337,7 +337,7 @@ For more information on how to update to version 2, see [Update Connector Versio
     Use this property to filter users from SAP SuccessFactors. The filter obtains values as described in the OData 2.0 syntax, except any statements with attribute `lastModifiedDateTime`. To learn more, see:
 
     -   [OData version 2](http://www.odata.org/documentation/odata-version-2-0/uri-conventions/) → **4.5. Filter System Query Option \($filter\)**.
-    -   [SAP SuccessFactors API Reference Guide \(OData V2\)](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/03e1fc3791684367a6a76a614a2916de.html?version=2311) 
+    -   [SAP SuccessFactors API Reference Guide \(OData V2\)](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/03e1fc3791684367a6a76a614a2916de.html) 
     -   [SAP SuccessFactors Workforce SCIM API](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/534356acc0ab4b0e8977ebfb2eb432f7/895a0d10d4984152b9f6d0cd9f9f850c.html) and [System for Cross-domain Identity Management for Workforce in SuccessFactors](https://api.sap.com/api/PLTScim/resource)
 
 
