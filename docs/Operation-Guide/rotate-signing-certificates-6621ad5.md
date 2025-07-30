@@ -1,5 +1,7 @@
 <!-- loio6621ad5868a3429d8b79f0c3c188e585 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Rotate Signing Certificates
 
 Tenant administrators must replace existing signing certificates with new ones before they expire. This ensures uninterrupted and secure communication between SAML 2.0 applications \(referred to as service providers\) and Identity Authentication as the identity provider.
@@ -18,23 +20,45 @@ You have received an email notification that your signing certificate is about t
 
     1.  Sign in to the administration console for SAP Cloud Identity Services.
 
-    2.  Navigate to *Applications and Resources* \> *Tenant Settings* \> *Single Sign-On* \> *SAML 2.0 Configuration* and add a new certificate. See: [Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md) → *Step 6*.
+    2.  Navigate to *Applications and Resources* \> *Tenant Settings* \> *Single Sign-On* \> *SAML 2.0 Configuration* \> *Signing Certificates*.
 
 
-2.  Configure the service provider to use the new certificate.
+2.  Choose the *\+Add* button on the right. You can choose from the following options:
+
+    -   *Regenerate the existing certificate with new validity, reusing the same private key* \> *Next Step* \> *Choose validity from the drop down* \> *Next Step* \> *Finish*.
+
+        > ### Note:  
+        > The validity period can be 3, 5 and 10 years.
+
+    -   *Create new a self-signed certificate with a new private key and the same Subject DN* \> *Next Step* \> *Select key size* \> *Choose validity from the drop down* \> *Next Step* \> *Finish*.
+
+        > ### Note:  
+        > The key size can be 2048, 3072 and 4096. The validity period can be 3, 5 and 10 years.
+
+    -   *Download your Certificate Signing Request* \> *Next Step* \> *add Subject DN and select key size and validity from the options* \> *Next Step* \> *Download CSR*. Use the downloaded .csr file to generate a certificate from the trusted CA. Copy the newly generated certificate, choose :pencil2:, and paste the certificate as text in the *Certificate Information* field.
+
+        > ### Note:  
+        > The signing algorithm can be SHA-256 and SHA-384. The key size can be 2048, 3072 and 4096.
+
+
+3.  Configure the service provider to use the new certificate.
 
     > ### Note:  
     > In case there are many applications, the recommended approach is to renew the certificate for one application at a time following this procedure, as this will minimize or reduce the potential for customer downtime.
 
     1.  Navigate to *Applications and Resources* \> *Applications* and select the application for which you want to update the trust configuration.
 
-    2.  Under *Trust* \> *Single Sign-On* \> *SAML 2.0 Configuration* \> *Identity Provider Certificate*, select the new certificate and save your configuration.
+    2.  Under *Trust* \> *Single Sign-On* \> *SAML 2.0 Configuration* \> *Identity Provider Certificate*.
+
+    3.  Disable the slider and choose activate next to the new certificate.
+
+    4.  Enable the slider.
 
         > ### Note:  
         > It takes approximately 2 minutes for the new certificate to appear under the trust configuration of the given application.
 
 
-3.  Upload the new certificate to the backend of the trusted application.
+4.  Upload the new certificate to the backend of the trusted application.
 
     1.  Navigate to *Applications and Resources* \> *Tenant Settings* \> *Single Sign-On* \> *SAML 2.0 Configuration*.
 
@@ -113,9 +137,9 @@ You have received an email notification that your signing certificate is about t
     </tr>
     </table>
     
-4.  After updating the trust configuration for each application, set the new certificate as the default.
+5.  After updating the trust configuration for each application, set the new certificate as the default.
 
-    Under *Tenant Settings* \> *Single Sign-On* \> *SAML 2.0 Configuration* \> *Signing Certificates*, select the new certificate and save your configuration.
+    Under *Tenant Settings* \> *Single Sign-On* \> *SAML 2.0 Configuration* \> *Signing Certificates*, select the new certificate as default and save your configuration.
 
 
 **Related Information**  

@@ -206,7 +206,7 @@ To add a system as a new tenant administrator, proceed as follows:
 
 3.  On the left-hand panel press *Add* \> *System*.
 
-4.  Enter the name of the system in the provided field.
+4.  Enter a name for the system in the provided field.
 
     > ### Caution:  
     > Be careful when you choose a name for your system as administrator. Once created, the name cannot be changed.

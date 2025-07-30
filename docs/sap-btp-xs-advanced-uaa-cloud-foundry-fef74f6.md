@@ -408,6 +408,11 @@ Create a separate proxy system for each global account, multi-environment subacc
     >             "targetVariable": "entityIdSourceSystem"
     >          },
     >          {
+    >             "sourcePath": "$.meta",
+    >             "targetPath": "$.meta",
+    >             "optional": true
+    >          },
+    >          {
     >             "sourceVariable": "entityBaseLocation",
     >             "targetPath": "$.meta.location",
     >             "targetVariable": "entityLocationSourceSystem",
@@ -455,11 +460,6 @@ Create a separate proxy system for each global account, multi-environment subacc
     >             "optional": true
     >          },
     >          {
-    >             "sourcePath": "$.meta",
-    >             "targetPath": "$.meta",
-    >             "optional": true
-    >          },
-    >          {
     >             "sourcePath": "$.externalId",
     >             "targetPath": "$.externalId",
     >             "optional": true
@@ -494,6 +494,11 @@ Create a separate proxy system for each global account, multi-environment subacc
     >             "targetVariable": "entityIdSourceSystem"
     >          },
     >          {
+    >             "sourcePath": "$.meta",
+    >             "targetPath": "$.meta",
+    >             "optional": true
+    >          },
+    >          {
     >             "sourceVariable": "entityBaseLocation",
     >             "targetPath": "$.meta.location",
     >             "targetVariable": "entityLocationSourceSystem",
@@ -524,13 +529,11 @@ Create a separate proxy system for each global account, multi-environment subacc
     >             "targetPath": "$.zoneId"
     >          },
     >          {
-    >             "sourcePath": "$.meta",
-    >             "targetPath": "$.meta",
-    >             "optional": true
-    >          },
-    >          {
-    >             "constant": "urn:ietf:params:scim:schemas:core:2.0:Group",
-    >             "targetPath": "$.schemas[0]"
+    >             "constant": [
+    >                "urn:ietf:params:scim:schemas:core:2.0:Group",
+    >                "urn:ietf:params:scim:schemas:extension:sap:2.0:Group"
+    >             ],
+    >             "targetPath": "$.schemas"
     >          },
     >          {
     >             "constant": "authorization",

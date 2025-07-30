@@ -575,7 +575,7 @@ When using connector version 4 \(SCIM 2.0 based API\), only users of type `Emplo
     > }
     > ```
 
-6.  Now, add a source system from which to read users. Choose from: [Source Systems](source-systems-58033be.md)
+6.  Add a target system to provision users to it. Choose from: [Target Systems](target-systems-ab3f641.md)
 
 
 

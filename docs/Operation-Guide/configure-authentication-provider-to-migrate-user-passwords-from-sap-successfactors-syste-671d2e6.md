@@ -226,7 +226,7 @@ To configure a authentication provider, follow the steps below:
 **Related Information**  
 
 
-[Configure Authentication Provider To Migrate User Passwords fromSAP Learning Management System to Identity Authentication](configure-authentication-provider-to-migrate-user-passwords-fromsap-learning-management-s-0d85eb7.md)
+[Configure Authentication Provider To Migrate User Passwords from SAP Learning Management System to Identity Authentication](configure-authentication-provider-to-migrate-user-passwords-from-sap-learning-management-0d85eb7.md)
 
 [Configure Authentication Provider To Migrate User Passwords from SAP Fieldglass to Identity Authentication](configure-authentication-provider-to-migrate-user-passwords-from-sap-fieldglass-to-identi-b0c7ec8.md)
 

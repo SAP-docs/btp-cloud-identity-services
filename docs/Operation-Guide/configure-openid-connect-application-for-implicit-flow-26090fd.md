@@ -110,7 +110,7 @@ To configure an OpenID Connect trusted application in the administration console
     > ### Tip:  
     > For more information about the format of the redirect URIs and post logout redirect URIs, see [OpenID Connect Application Configurations](openid-connect-application-configurations-1ae324e.md).
 
-7.  **Optional:** \(If you added second signing certificate in tenant settings\) Under *IdP Certificates*, choose the certificate to be used.
+7.  **Optional:** \(If you added second signing certificate in tenant settings\) Under *Identity Provider Certificates*, disable the slider, activate the certificate to be used, and enable the slider again.
 
     > ### Tip:  
     > When the default identity provider certificate is changed with a new one, and the old one is not used anymore, we recommend you to delete the old certificate.

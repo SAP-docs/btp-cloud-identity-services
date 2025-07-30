@@ -56,7 +56,7 @@ If *Use Identity Authentication user store* under *Identity Federation* is enabl
 > </td>
 > <td valign="top">
 > 
-> `<prefix>${NameID}<suffix>`
+> `<prefix> ${<NameID>} <suffix>`
 > 
 > </td>
 > </tr>

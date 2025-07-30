@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
 
-# Configure Authentication Provider To Migrate User Passwords fromSAP Learning Management System to Identity Authentication
+# Configure Authentication Provider To Migrate User Passwords from SAP Learning Management System to Identity Authentication
 
 
 

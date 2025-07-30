@@ -1,6 +1,6 @@
 <!-- loiof56e6f24e373404087d6a1a9a13515a2 -->
 
-# View Assigned Tenants and Admins
+# View Assigned Tenants and Administrators
 
 View all SAP Cloud Identity Services tenants that are assigned to your customer ID.
 
@@ -23,7 +23,7 @@ The default tenants, one test and productive tenant per customer, are provided r
 
 ## Procedure
 
-1.  Access the SAP Cloud Identity Services - Tenants application from the following link: [https://iamtenants.accounts.cloud.sap/](https://iamtenants.accounts.cloud.sap/)
+1.  Access the SAP Cloud Identity Services - Tenants application via the following URL:[https://iamtenants.accounts.cloud.sap/](https://iamtenants.accounts.cloud.sap/)
 
 2.  Log on with your *S user*.
 

@@ -61,7 +61,7 @@ If *Identity Federation* is configured, use the modified attributes in the *Defa
 > </td>
 > <td valign="top">
 > 
-> `<prefix> ${<NameID>} <suffix>`
+> `<prefix>${NameID}<suffix>`
 > 
 > </td>
 > </tr>

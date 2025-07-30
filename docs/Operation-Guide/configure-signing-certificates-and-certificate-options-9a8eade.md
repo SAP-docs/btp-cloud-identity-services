@@ -164,7 +164,7 @@ To configure signing certificates and certificate options in the administration 
     2.  Choose *Save*.
 
 
-10. **Optional:** \(If you added second signing certificate in tenant settings\) Under *IdP Certificates*, choose the certificate to be used.
+10. **Optional:** \(If you added second signing certificate in tenant settings\) Under *Identity Provider Certificates*, disable the slider, activate the certificate to be used, and enable the slider again.
 
     > ### Tip:  
     > When the default identity provider certificate is changed with a new one, and the old one is not used anymore, we recommend you to delete the old certificate.

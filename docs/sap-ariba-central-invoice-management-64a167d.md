@@ -404,6 +404,11 @@ This scenario supports provisioning users and groups.
     >         "targetPath": "$.groups",
     >         "optional": true,
     >         "preserveArrayWithSingleElement": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >         "optional": true
     >       }
     >     ]
     >   },
@@ -578,13 +583,18 @@ This scenario supports provisioning users and groups.
     > 				"scope": "patchEntity"
     > 			},
     > 			{
-    > 				"sourcePath": "$.Operations",
-    > 				"preserveArrayWithSingleElement": true,
-    > 				"targetPath": "$.Operations",
-    > 				"scope": "patchEntity"
-    > 			}
-    > 		]
-    > 	},
+    >         "sourcePath": "$.Operations",
+    >         "preserveArrayWithSingleElement": true,
+    >         "targetPath": "$.Operations",
+    >         "scope": "patchEntity"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >         "optional": true
+    >       }
+    >     ]
+    >   },
     > 	"group": {
     > 		"scimEntityEndpoint": "Groups",
     > 		"mappings": [

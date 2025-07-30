@@ -379,17 +379,6 @@ Follow the steps below to create SAP BTP XS Advanced UAA as a source system to r
     >         "sourcePath": "$.zoneId",
     >         "targetPath": "$.zoneId",
     >         "optional": true
-    >       },
-    >       {
-    >         "sourceVariable": "entityBaseLocation",
-    >         "targetPath": "$.meta.location",
-    >         "targetVariable": "entityLocationSourceSystem",
-    >         "functions": [
-    >           {
-    >             "type": "concatString",
-    >             "suffix": "${entityIdSourceSystem}"
-    >           }
-    >         ]
     >       }
     >     ]
     >   },
@@ -425,17 +414,6 @@ Follow the steps below to create SAP BTP XS Advanced UAA as a source system to r
     >         "targetPath": "$.members",
     >         "preserveArrayWithSingleElement": true,
     >         "optional": true
-    >       },
-    >       {
-    >         "sourceVariable": "entityBaseLocation",
-    >         "targetPath": "$.meta.location",
-    >         "targetVariable": "entityLocationSourceSystem",
-    >         "functions": [
-    >           {
-    >             "function": "concatString",
-    >             "suffix": "${entityIdSourceSystem}"
-    >           }
-    >         ]
     >       },
     >       {
     >         "condition": "'%ips.application.id%' !== 'null'",

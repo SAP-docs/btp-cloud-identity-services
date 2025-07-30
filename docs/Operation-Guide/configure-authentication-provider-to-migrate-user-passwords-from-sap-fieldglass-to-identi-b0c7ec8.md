@@ -182,7 +182,7 @@ To configure a authentication provider, follow the steps below:
 
 [Configure Authentication Provider To Migrate User Passwords from SAP SuccessFactors Systems to Identity Authentication](configure-authentication-provider-to-migrate-user-passwords-from-sap-successfactors-syste-671d2e6.md)
 
-[Configure Authentication Provider To Migrate User Passwords fromSAP Learning Management System to Identity Authentication](configure-authentication-provider-to-migrate-user-passwords-fromsap-learning-management-s-0d85eb7.md)
+[Configure Authentication Provider To Migrate User Passwords from SAP Learning Management System to Identity Authentication](configure-authentication-provider-to-migrate-user-passwords-from-sap-learning-management-0d85eb7.md)
 
 [SAP SuccessFactors Data Centers Mapping to Authentication URL](sap-successfactors-data-centers-mapping-to-authentication-url-f38bb6b.md)
 

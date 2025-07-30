@@ -375,6 +375,11 @@ Follow the steps below to create a SCIM 2.0 representation of your proxy Cloud F
     >         "targetVariable": "entityIdSourceSystem"
     >       },
     >       {
+    >         "sourcePath": "$.meta",
+    >         "targetPath": "$.meta",
+    >         "optional": true
+    >       },
+    >       {
     >         "sourceVariable": "entityBaseLocation",
     >         "targetPath": "$.meta.location",
     >         "targetVariable": "entityLocationSourceSystem",
@@ -422,11 +427,6 @@ Follow the steps below to create a SCIM 2.0 representation of your proxy Cloud F
     >         "optional": true
     >       },
     >       {
-    >         "sourcePath": "$.meta",
-    >         "targetPath": "$.meta",
-    >         "optional": true
-    >       },
-    >       {
     >         "sourcePath": "$.externalId",
     >         "targetPath": "$.externalId",
     >         "optional": true
@@ -459,6 +459,11 @@ Follow the steps below to create a SCIM 2.0 representation of your proxy Cloud F
     >         "sourcePath": "$.id",
     >         "targetPath": "$.id",
     >         "targetVariable": "entityIdSourceSystem"
+    >       },
+    >       {
+    >         "sourcePath": "$.meta",
+    >         "targetPath": "$.meta",
+    >         "optional": true
     >       },
     >       {
     >         "sourceVariable": "entityBaseLocation",
@@ -499,11 +504,6 @@ Follow the steps below to create a SCIM 2.0 representation of your proxy Cloud F
     >       {
     >         "sourcePath": "$.zoneId",
     >         "targetPath": "$.zoneId"
-    >       },
-    >       {
-    >         "sourcePath": "$.meta",
-    >         "targetPath": "$.meta",
-    >         "optional": true
     >       },
     >       {
     >         "constant": [

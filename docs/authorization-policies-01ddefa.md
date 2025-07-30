@@ -10,7 +10,7 @@ Authorizations are a critical component of any business domain. For cloud busine
 
 <a name="loio01ddefa221b2445ba7a5e061b67976ed__section_gqp_hmr_3fc"/>
 
-## Instance-Base Authorizaitons
+## Instance-Based Authorizations
 
 Instance-based authorizations refer to the process of verifying whether a user is permitted to perform a specific action on a particular resource. For example, in a financial application, a user might be authorized to make journal entries, but only within certain company codes. Conversely, the same user might be allowed to execute the closing process at the end of periods for different company codes. This nuanced approach ensures that permissions are tailored to specific business needs and contexts.
 
@@ -23,6 +23,54 @@ Instance-based authorizations refer to the process of verifying whether a user i
 For developers of SAP BTP-based business applications, handling these authorizations should be straightforward. The authorization framework should allow developers to easily declare, enforce, and manage their business-specific authorization models. By leveraging instance-based authorizations, businesses can ensure that their applications are secure, efficient, and tailored to their specific operational needs.
 
 The Authorization Management Service of SAP Cloud Identity Services provides libraries and services for developers of SAP BTP-based business applications to declare, enforce, and manage instance based authorization checks. Authorizations are declared as code-based "authorization policies" in the project of the business application, assigned to users, and enforced with client libraries for Node.js, Java, and Go.
+
+The Authorization Managmement Service has the following features:
+
+-   Fine granular authorization checks in comparison with role collections on SAP BTP
+
+-   Full integration into [Authorization and Access Control](https://cap.cloud.sap/docs/guides/authorization) with the Cloud Application Programming model
+
+-   Supports Kubernetes applications
+
+-   Value help for authorization administration
+
+-   Simple integration of application-to-application, application-to-service, and service-to-service calls with a privileged mode and a simple configuration in the application section of the administration console
+
+
+
+
+<a name="loio01ddefa221b2445ba7a5e061b67976ed__section_f2n_5wm_jfc"/>
+
+## Using Identity Directory
+
+The main additional value comes from the integration into the kernel service of the SAP Cloud Identity Services. A populated identity directory is a prerequisite for the Authorization Management System usage. When considering that customers usually use multiple SAP SaaS applications, and also have some custom apps, they’ll encounter the need to provide user data to some of these apps, for example, for display purposes and value help when they assign users to application objects. The strategy with the identity directory is to let them make users available only once in the SAP Cloud Identity Services and serve the applications from there.
+
+We recommend to automatically assigning authorizations to users based on rules, for example, using the SAP Cloud Identity Services - Identity Provisioning or your corporate identity management system.
+
+
+
+<a name="loio01ddefa221b2445ba7a5e061b67976ed__section_efw_bjn_jfc"/>
+
+## Personas
+
+1.  Developers of the business application, who define the authorization model using base authorization policies and enforce them by implementing authorization checks
+
+2.  Administrators, who manage custom authorization policies from base policies, set business restrictions on policies, and assign bothe types of policies to application users
+
+3.  Users of the business application, who are checked for specific attributes that authorize them to perform specific actions on specific resources
+
+
+
+
+<a name="loio01ddefa221b2445ba7a5e061b67976ed__section_y5b_z25_jfc"/>
+
+## Process
+
+Developers define the base policies with data control language \(DCL\) and upload them to the authorization management server. the Authorization Management Service forwards the base policies to the DCL compiler, which transforms DCL policies into an internal format \(DCN\) and assembles them by forming authorization bundles in a bundle storage in SAP Cloud Identity Services. The bundle gateway \(BGW\) retrieves the authorization bundles on request from the authorization decision controller \(ADC\), which uses the authorization bundles as input to perform the authorization checks. The administration console displays the bundled applications.
+
+Administrators use the base policies to create custom policies with modified rules and assign them to users.
+
+Users of the business application can log on and have access to the resources, which are allowed by the custom authorization policies.
 
 **Related Information**  
 

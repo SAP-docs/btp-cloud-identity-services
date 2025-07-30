@@ -82,6 +82,87 @@ Valid as Of
 Version
 
 </th>
+<th valign="top">
+
+Scope
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-07-29
+
+</td>
+<td valign="top">
+
+2025-07-29
+
+</td>
+<td valign="top">
+
+28120
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -105,7 +186,7 @@ SAP Ariba Central Invoice Managementsupports userUUID
 </td>
 <td valign="top">
 
-SAP Ariba Central Invoice Management supports provisioning of users with the **userUUID** attribute. The default read, write and proxy read and write transformations have been enhanced to support the universally unique identifier.
+SAP Ariba Central Invoice Management now supports provisioning of users with the **userUUID** attribute. The default read, write and proxy read and write transformations are enhanced to handle the universally unique identifier.
 
 For more information, see [SAP Ariba Central Invoice Management](sap-ariba-central-invoice-management-f540d52.md).
 
@@ -137,7 +218,7 @@ Not applicable
 </td>
 <td valign="top">
 
- 
+Cloud Identity Services 
 
 </td>
 <td valign="top">
@@ -152,7 +233,97 @@ Not applicable
 </td>
 <td valign="top">
 
+28120
 
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Meta attribute mapping reordered
+
+</td>
+<td valign="top">
+
+The `meta` attribute mapping is reordered to come before the `meta.location` attribute mapping in the proxy read transformations of Cloud Foundry UAA Server and SAP BTP XS Advanced UAA \(Cloud Foundry\). This ensures that the meta.location attribute is set correctly and is not overwritten.
+
+Additionally, the `urn:ietf:params:scim:schemas:extension:sap:2.0:Group` extension schema is added for the group entity in the proxy read transformations of SAP BTP XS Advanced UAA \(Cloud Foundry\).
+
+For more information, see:
+
+-   [Cloud Foundry UAA Server](cloud-foundry-uaa-server-5e4e03c.md)
+-   [SAP BTP XS Advanced UAA \(Cloud Foundry\)](sap-btp-xs-advanced-uaa-cloud-foundry-fef74f6.md)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-07-29
+
+</td>
+<td valign="top">
+
+2025-07-29
+
+</td>
+<td valign="top">
+
+28120
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -240,6 +411,11 @@ Cloud Identity Services
 28063
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -309,6 +485,11 @@ Cloud Identity Services
 <td valign="top">
 
 28063
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -390,6 +571,11 @@ Cloud Identity Services
 28063
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -461,6 +647,11 @@ Cloud Identity Services
 <td valign="top">
 
 28063
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -541,6 +732,11 @@ Cloud Identity Services
 28063
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -610,6 +806,11 @@ Cloud Identity Services
 <td valign="top">
 
 28039
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -683,6 +884,11 @@ Cloud Identity Services
 28039
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -752,6 +958,11 @@ Cloud Identity Services
 <td valign="top">
 
 28019
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -832,6 +1043,11 @@ Not applicable
 28019
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -901,6 +1117,11 @@ Cloud Identity Services
 <td valign="top">
 
 28001
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -976,6 +1197,11 @@ Cloud Identity Services
 28001
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -1045,6 +1271,11 @@ Cloud Identity Services
 <td valign="top">
 
 27990
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -1118,6 +1349,11 @@ Cloud Identity Services
 27990
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -1187,6 +1423,11 @@ Cloud Identity Services
 <td valign="top">
 
 27972
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -1260,6 +1501,11 @@ Not applicable
 27972
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -1329,6 +1575,11 @@ Cloud Identity Services
 <td valign="top">
 
 27972
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -1410,6 +1661,11 @@ Cloud Identity Services
 27972
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -1483,6 +1739,11 @@ Cloud Identity Services
 27972
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -1554,6 +1815,11 @@ Cloud Identity Services
 <td valign="top">
 
 27972
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -1635,6 +1901,11 @@ Cloud Identity Services
 27972
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -1708,6 +1979,11 @@ Cloud Identity Services
 27972
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -1777,6 +2053,11 @@ Cloud Identity Services
 <td valign="top">
 
 27915
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -1852,6 +2133,11 @@ Cloud Identity Services
 27915
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -1921,6 +2207,11 @@ Cloud Identity Services
 <td valign="top">
 
 27915
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -1996,6 +2287,11 @@ Cloud Identity Services
 <td valign="top">
 
 27915
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -2075,6 +2371,11 @@ Cloud Identity Services
 27915
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2144,6 +2445,11 @@ Cloud Identity Services
 <td valign="top">
 
 27915
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -2217,6 +2523,11 @@ Cloud Identity Services
 27861
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2286,6 +2597,11 @@ Cloud Identity Services
 <td valign="top">
 
 27861
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -2359,6 +2675,11 @@ Cloud Identity Services
 27861
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2428,6 +2749,11 @@ Cloud Identity Services
 <td valign="top">
 
 27861
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -2512,6 +2838,11 @@ Cloud Identity Services
 27861
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2581,6 +2912,11 @@ Cloud Identity Services
 <td valign="top">
 
 27806
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -2663,6 +2999,11 @@ Cloud Identity Services
 27806
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2736,6 +3077,11 @@ Cloud Identity Services
 27806
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2805,6 +3151,11 @@ Cloud Identity Services
 <td valign="top">
 
 27806
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -2878,6 +3229,11 @@ Cloud Identity Services
 27806
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -2947,6 +3303,11 @@ Cloud Identity Services
 <td valign="top">
 
 27806
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -3020,6 +3381,11 @@ Cloud Identity Services
 27806
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -3091,6 +3457,11 @@ Cloud Identity Services
 27806
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -3160,6 +3531,11 @@ Cloud Identity Services
 <td valign="top">
 
 27806
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -3244,6 +3620,11 @@ Cloud Identity Services
 27806
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -3315,6 +3696,11 @@ Cloud Identity Services
 <td valign="top">
 
 27806
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -3403,6 +3789,11 @@ Cloud Identity Services
 27806
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -3488,6 +3879,11 @@ Cloud Identity Services
 27709
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -3559,6 +3955,11 @@ Cloud Identity Services
 27709
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -3628,6 +4029,11 @@ Cloud Identity Services
 <td valign="top">
 
 27709
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -3709,6 +4115,11 @@ Cloud Identity Services
 27709
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -3788,6 +4199,11 @@ Cloud Identity Services
 27709
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -3859,6 +4275,11 @@ Cloud Identity Services
 27709
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -3928,6 +4349,11 @@ Cloud Identity Services
 <td valign="top">
 
 27709
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -4017,6 +4443,11 @@ Cloud Identity Services
 27643
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -4088,6 +4519,11 @@ Cloud Identity Services
 27643
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -4157,6 +4593,11 @@ Cloud Identity Services
 <td valign="top">
 
 27643
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -4232,6 +4673,11 @@ Cloud Identity Services
 27643
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -4303,6 +4749,11 @@ Cloud Identity Services
 <td valign="top">
 
 27643
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -4384,6 +4835,11 @@ Cloud Identity Services
 27643
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -4455,6 +4911,11 @@ Cloud Identity Services
 <td valign="top">
 
 27643
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -4532,6 +4993,11 @@ Cloud Identity Services
 27709
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -4601,6 +5067,11 @@ Cloud Identity Services
 <td valign="top">
 
 27566
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -4674,6 +5145,11 @@ Cloud Identity Services
 27566
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -4745,6 +5221,11 @@ Cloud Identity Services
 27566
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -4811,6 +5292,11 @@ Cloud Identity Services
 <td valign="top">
 
 27566
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -4884,6 +5370,11 @@ Cloud Identity Services
 27566
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -4955,6 +5446,11 @@ Cloud Identity Services
 27566
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -5024,6 +5520,11 @@ Cloud Identity Services
 <td valign="top">
 
 27566
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -5099,6 +5600,11 @@ Cloud Identity Services
 27566
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -5170,6 +5676,11 @@ Cloud Identity Services
 <td valign="top">
 
 27566
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -5245,6 +5756,11 @@ Cloud Identity Services
 27566
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -5314,6 +5830,11 @@ Cloud Identity Services
 <td valign="top">
 
 27566
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -5387,6 +5908,11 @@ Cloud Identity Services
 27494
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -5456,6 +5982,11 @@ Cloud Identity Services
 <td valign="top">
 
 27494
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -5529,6 +6060,11 @@ Cloud Identity Services
 27494
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -5600,6 +6136,11 @@ Cloud Identity Services
 27494
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -5669,6 +6210,11 @@ Cloud Identity Services
 <td valign="top">
 
 27494
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -5746,6 +6292,11 @@ Cloud Identity Services
 27709
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -5819,6 +6370,11 @@ Cloud Identity Services
 27494
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -5890,6 +6446,11 @@ Cloud Identity Services
 <td valign="top">
 
 27494
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -5967,6 +6528,11 @@ Cloud Identity Services
 <td valign="top">
 
 27494
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -6048,6 +6614,11 @@ Cloud Identity Services
 27494
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -6121,6 +6692,11 @@ Cloud Identity Services
 27494
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -6192,6 +6768,11 @@ Cloud Identity Services
 27494
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -6261,6 +6842,11 @@ Cloud Identity Services
 <td valign="top">
 
 27436
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -6336,6 +6922,11 @@ Cloud Identity Services
 27419
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -6409,6 +7000,11 @@ Cloud Identity Services
 27419
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -6478,6 +7074,11 @@ Cloud Identity Services
 <td valign="top">
 
 27419
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -6553,6 +7154,11 @@ Cloud Identity Services
 27419
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -6624,6 +7230,11 @@ Cloud Identity Services
 <td valign="top">
 
 27419
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -6699,6 +7310,11 @@ Cloud Identity Services
 27419
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -6770,6 +7386,11 @@ Cloud Identity Services
 <td valign="top">
 
 27419
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -6845,6 +7466,11 @@ Cloud Identity Services
 27419
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -6914,6 +7540,11 @@ Cloud Identity Services
 <td valign="top">
 
 27391
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -6987,6 +7618,11 @@ Cloud Identity Services
 27344
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -7058,6 +7694,11 @@ Cloud Identity Services
 27344
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -7127,6 +7768,11 @@ Cloud Identity Services
 <td valign="top">
 
 27344
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -7202,6 +7848,11 @@ Cloud Identity Services
 <td valign="top">
 
 27344
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -7281,6 +7932,11 @@ Cloud Identity Services
 27344
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -7356,6 +8012,11 @@ Cloud Identity Services
 <td valign="top">
 
 27344
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -7440,6 +8101,11 @@ Cloud Identity Services
 27344
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -7511,6 +8177,11 @@ Cloud Identity Services
 27307
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -7580,6 +8251,11 @@ Cloud Identity Services
 <td valign="top">
 
 27268
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>
@@ -7655,6 +8331,11 @@ Cloud Identity Services
 27268
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -7728,6 +8409,11 @@ Cloud Identity Services
 27268
 
 </td>
+<td valign="top">
+
+All scenarios
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -7799,6 +8485,11 @@ Cloud Identity Services
 <td valign="top">
 
 27268
+
+</td>
+<td valign="top">
+
+All scenarios
 
 </td>
 </tr>

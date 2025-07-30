@@ -50,7 +50,7 @@ There are cases where customer interaction is required. If multiple tenants are 
 > ### Tip:  
 > If you have multiple SAP Cloud Identity Services tenants and are unsure which one to select, consider the following recommendations:
 > 
-> -   Default Tenant: A tenant marked as `Default` is typically the first one created for the customer. Many SAP applications automatically integrate with this tenant when provisioned. Choose it if these specifics matter to you. To check which tenant is your default one, refer to [View Assigned Tenants and Admins](view-assigned-tenants-and-admins-f56e6f2.md).
+> -   Default Tenant: A tenant marked as `Default` is typically the first one created for the customer. Many SAP applications automatically integrate with this tenant when provisioned. Choose it if these specifics matter to you. To check which tenant is your default one, refer to [View Assigned Tenants and Administrators](view-assigned-tenants-and-administrators-f56e6f2.md).
 > 
 > -   Regional Provisioning: For customers with an `EU Access` contract, choose an SAP Cloud Identity Services tenant located in Europe if your SAP cloud solution is provisioned in an `EU Access` region. This ensures better performance and compliance with the European regulations. For more information, see [EU Access](https://help.sap.com/docs/btp/sap-business-technology-platform/regions?version=Cloud#eu-access).
 > 

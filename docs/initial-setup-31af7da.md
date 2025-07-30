@@ -23,7 +23,7 @@ Before getting a tenant, check if there is an existing one assigned to your cust
 -   If there is no existing tenant, follow the steps below.
 
 
-See [View Assigned Tenants and Admins](view-assigned-tenants-and-admins-f56e6f2.md)
+See [View Assigned Tenants and Administrators](view-assigned-tenants-and-administrators-f56e6f2.md)
 
 
 

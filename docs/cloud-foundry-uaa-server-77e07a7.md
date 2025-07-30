@@ -322,17 +322,6 @@ Follow the steps below to create Cloud Foundry UAA as a source system to read us
     >         "sourcePath": "$.zoneId",
     >         "targetPath": "$.zoneId",
     >         "optional": true
-    >       },
-    >       {
-    >         "sourceVariable": "entityBaseLocation",
-    >         "targetPath": "$.meta.location",
-    >         "targetVariable": "entityLocationSourceSystem",
-    >         "functions": [
-    >           {
-    >             "type": "concatString",
-    >             "suffix": "${entityIdSourceSystem}"
-    >           }
-    >         ]
     >       }
     >     ]
     >   },
@@ -383,17 +372,6 @@ Follow the steps below to create Cloud Foundry UAA as a source system to read us
     >         "targetPath": "$.members",
     >         "preserveArrayWithSingleElement": true,
     >         "optional": true
-    >       },
-    >       {
-    >         "sourceVariable": "entityBaseLocation",
-    >         "targetPath": "$.meta.location",
-    >         "targetVariable": "entityLocationSourceSystem",
-    >         "functions": [
-    >           {
-    >             "type": "concatString",
-    >             "suffix": "${entityIdSourceSystem}"
-    >           }
-    >         ]
     >       }
     >     ]
     >   }
