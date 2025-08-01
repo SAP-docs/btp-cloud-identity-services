@@ -43,8 +43,53 @@ To configure an OpenID Connect trusted application in the administration console
 
 6.  Under the *Configure Manually* section provide a name of your choice.
 
-7.  **Optional:** \(If you added second signing certificate in tenant settings\) Under *Identity Provider Certificates*, disable the slider, activate the certificate to be used, and enable the slider again.
+7.  **Optional:** \(If you have added a second signing certificate in tenant settings\) Under *IdP Certificates*, choose the certificate to be used when a request to the application is signed.
 
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Option
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **ON**
+    
+    </td>
+    <td valign="top">
+    
+    This is the default setting. When the option is enabled, the certificate that is set as *Default* in *Tenant Settings* \> *SAML 2.0 Configuration* \> *Signing Certificates* is used when a request to the application is signed.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **OFF**
+    
+    </td>
+    <td valign="top">
+    
+    When the option is disabled, the certificate that is set as *Active* in the list is used when a request to the application is signed. You can choose the active certificate from the list.
+
+    > ### Note:  
+    > Your choice of *Active* certificate in the list is not related with the choice of *Default* certificate in *Tenant Settings* \> *SAML 2.0 Configuration* \> *Signing Certificates*.
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
     > ### Tip:  
     > When the default identity provider certificate is changed with a new one, and the old one is not used anymore, we recommend you to delete the old certificate.
 

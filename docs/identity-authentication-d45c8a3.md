@@ -1343,6 +1343,7 @@ To create Identity Authentication as a proxy system, proceed as follows:
     >       },
     >       {
     >         "constant": ["urn:ietf:params:scim:schemas:core:2.0:Group","urn:sap:cloud:scim:schemas:extension:custom:2.0:Group","urn:ietf:params:scim:schemas:extension:sap:2.0:Group"],
+    >         "targetPath": "$.schemas"
     >       },
     >       {
     >         "sourcePath": "$.displayName",
