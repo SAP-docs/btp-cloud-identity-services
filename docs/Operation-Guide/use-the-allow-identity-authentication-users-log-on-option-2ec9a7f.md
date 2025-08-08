@@ -18,9 +18,6 @@ You have chosen a corporate identity provider as default. For more information, 
 
 ## Context
 
-> ### Note:  
-> The **Allow Identity Authentication Users Log On** option is supported for SAML 2.0 applications only.
-
 
 
 <a name="loio2ec9a7f7c80a42f1abec683fa94309bd__steps_yhl_hp4_1db"/>

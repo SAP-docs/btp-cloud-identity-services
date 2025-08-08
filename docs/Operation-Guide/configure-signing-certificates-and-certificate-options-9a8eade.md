@@ -164,7 +164,7 @@ To configure signing certificates and certificate options in the administration 
     2.  Choose *Save*.
 
 
-10. **Optional:** \(If you have added a second signing certificate in tenant settings\) Under *IdP Certificates*, choose the certificate to be used when a request to the application is signed.
+10. **Optional:** \(If you have added a second signing certificate in tenant settings\) Under *Identity Provider Certificates*, choose the certificate to be used when a request to the application is signed.
 
 
     <table>

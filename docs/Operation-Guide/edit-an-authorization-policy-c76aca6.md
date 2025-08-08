@@ -4,7 +4,7 @@
 
 # Edit an Authorization Policy
 
-If Identity Authentication administrators want to change restrictions and their attributes, they can edit an existing custom authorization policy.
+If SAP Cloud Identity Services administrators want to change restrictions and their attributes, they can edit an existing custom authorization policy.
 
 
 
@@ -51,6 +51,8 @@ When you edit an existing custom authorization policy, you can add or delete res
     > All indented rows that appear in a list directly below `RESTRICT` or `USE` have an `AND` conjunction.
     > 
     > All rows starting with their own `RESTRICT` condition have an `OR` conjunction with the other `RESTRICT` rows.
+
+    For more information, see  <?sap-ot O2O class="- topic/xref " href="38baa251132c4b088f41261fb3158fb3.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/wbz1500991557538/loio629f7cb06f6947988dcaf8bedbe45873_en-US/src/content/localization/en-us/c76aca60aa494355bfbc494242fa6151.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 
 10. Choose the conditions that come with the application in the dropdown list. Next, choose an operator and choose or enter a value or choose a user attrribute.
 

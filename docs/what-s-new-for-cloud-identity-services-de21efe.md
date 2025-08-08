@@ -105,6 +105,96 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Regional Availability
+
+</td>
+<td valign="top">
+
+Cloud Identity Services now operates with a new IP in the data center in data center in China.
+
+Action:
+
+We recommend you to add the following IPs to your allowed IP list:
+
+-   LB IP - `121.91.104.205`
+-   NAT IP - `121.91.104.32/27`
+
+The following IPs are no longer in use:
+
+-   LB IP - `40.162.223.103`
+-   NAT IP - `143.64.218.112/32`
+
+See [Regional Availability](regional-availability-be600ca.md).
+
+</td>
+<td valign="top">
+
+Required
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-08-08
+
+</td>
+<td valign="top">
+
+2025-08-07
+
+</td>
+<td valign="top">
+
+28127
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Off-Cycle Upgrade
 
 </td>

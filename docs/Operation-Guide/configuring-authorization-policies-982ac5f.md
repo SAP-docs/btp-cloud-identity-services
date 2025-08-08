@@ -224,6 +224,16 @@ Authorization policy administrators can configure the following in custom author
 -   Add or delete rules and restrictions and their attribute values. See [Edit an Authorization Policy](edit-an-authorization-policy-c76aca6.md).
 
 
+
+
+<a name="loio982ac5f91d2346fda8dd8096e861fc36__section_igk_hl2_ggc"/>
+
+## Refining Authorization Policies
+
+Administrators can edit an existing custom authorization policy. They can add or delete restrictions. The restrictions are refined by attributes with fixed values or user attributes. They can also add `USE` rules to a custom authorization policy and restrict them.
+
+For more information, see  <?sap-ot O2O class="- topic/xref " href="38baa251132c4b088f41261fb3158fb3.xml" text="" desc="" xtrc="xref:9" xtrf="file:/home/builder/src/dita-all/wbz1500991557538/loio629f7cb06f6947988dcaf8bedbe45873_en-US/src/content/localization/en-us/982ac5f91d2346fda8dd8096e861fc36.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+
 **Related Information**  
 
 

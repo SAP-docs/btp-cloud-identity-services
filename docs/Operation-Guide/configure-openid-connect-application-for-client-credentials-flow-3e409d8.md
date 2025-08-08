@@ -41,7 +41,7 @@ To configure an OpenID Connect trusted application in the administration console
 
 5.  Under *SINGLE SIGN-ON*, choose *OpenID Connect Configuration*.
 
-6.  **Optional:** \(If you have added a second signing certificate in tenant settings\) Under *IdP Certificates*, choose the certificate to be used when a request to the application is signed.
+6.  **Optional:** \(If you have added a second signing certificate in tenant settings\) Under *Identity Provider Certificates*, choose the certificate to be used when a request to the application is signed.
 
 
     <table>

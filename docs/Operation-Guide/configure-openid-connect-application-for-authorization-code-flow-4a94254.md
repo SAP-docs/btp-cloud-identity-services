@@ -110,7 +110,7 @@ To configure an OpenID Connect trusted application in the administration console
     > ### Tip:  
     > For more information about the format of the redirect URIs and post logout redirect URIs, see [OpenID Connect Application Configurations](openid-connect-application-configurations-1ae324e.md).
 
-7.  **Optional:** \(If you have added a second signing certificate in tenant settings\) Under *IdP Certificates*, choose the certificate to be used when a request to the application is signed.
+7.  **Optional:** \(If you have added a second signing certificate in tenant settings\) Under *Identity Provider Certificates*, choose the certificate to be used when a request to the application is signed.
 
 
     <table>

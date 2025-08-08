@@ -36,19 +36,31 @@ Procedure
 </th>
 </tr>
 <tr>
-<td valign="top" rowspan="3">
+<td valign="top" rowspan="4">
 
-Create user
-
-</td>
-<td valign="top">
-
-Create users via the *Add* option in the administration console
+Create users
 
 </td>
 <td valign="top">
 
-[Create a New User](create-a-new-user-348deef.md) 
+Provision users
+
+</td>
+<td valign="top">
+
+[Centralized Provisioning with Identity Directory](../centralized-provisioning-with-identity-directory-9d0235c.md)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Integrate your identity and access management solution with Cloud Identity Services API
+
+</td>
+<td valign="top">
+
+[Identity Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users) 
 
 </td>
 </tr>
@@ -67,12 +79,12 @@ Create users via a CSV file import in the administration console
 <tr>
 <td valign="top">
 
-Create users programmatically via API
+Manually create users via the *Add* option in the administration console \(not recommended for mass user creation\)
 
 </td>
 <td valign="top">
 
-[Identity Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users) 
+[Create a New User](create-a-new-user-348deef.md) 
 
 </td>
 </tr>
