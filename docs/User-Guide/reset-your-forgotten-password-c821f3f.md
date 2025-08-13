@@ -27,7 +27,7 @@ You can reset your password if you have forgotten it.
 ## Context
 
 > ### Tip:  
-> If you know your password, but for security or any other reasons you want to change it, follow the procedure in [Change Password](change-password-3291dd3.md).
+> If you know your password, but for security or any other reasons you want to change it, follow the procedure in [Change or Reset Password via Profile Page](change-or-reset-password-via-profile-page-3291dd3.md).
 
 If you don't remember your current password, choose the *Forgot Password* link in the sign-in page of the application, and follow the onscreen instructions. Depending on the configurations made by your organization, you may have one, two, or all three options:
 

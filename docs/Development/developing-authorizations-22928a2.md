@@ -4,7 +4,7 @@
 
 Developers define, update, and create authorizations. These are the basis for Authorization Management, which administrators can use to grant users access to resources.
 
-Authorization Management enablesSAP Cloud Identity Services administrators to use instance-based authorizations in the form of authorization policies in multiple environments. They assign authorization policies to users and thus manage user access to resources.
+Authorization Management enables SAP Cloud Identity Services administrators to use instance-based authorizations in the form of authorization policies in multiple environments. They assign authorization policies to users and thus manage user access to resources.
 
 Developers define and deploy an application that supports authorization policies in SAP Cloud Identity Services. They include functional checks, instance-base authorizations, and user attributes. Authorization Management is automatically enabled for a new tenant and can be used as soon as an application requests it. Service instances and bindings are added automatically. The authorization policies are available in the SAP Cloud Identity Services administration console.
 

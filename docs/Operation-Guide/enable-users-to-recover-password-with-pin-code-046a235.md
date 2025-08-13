@@ -191,3 +191,5 @@ To configure PIN code option in the administration console, follow the procedure
 
 [Enable Users to Recover Password via Email](enable-users-to-recover-password-via-email-5b9f909.md "Users can choose to receive a link via email to reset their password.")
 
+[Enable Users to Reset Password via Profile Page](enable-users-to-reset-password-via-profile-page-22bd253.md "Enable the users to trigger reset password process via the profile page.")
+

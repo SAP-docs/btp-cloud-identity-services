@@ -17,6 +17,19 @@ You can report an incident on [SAP Support Portal Home](https://support.sap.com/
 -   `BC-IAM-OID` - for issues related to OpenID Connect tokens
 
 
+> ### Note:  
+> Please include in the incident the following information:
+> 
+> -   Your tenant ID from `https://tenant ID>.accounts.ondemand.com/admin` or `https://<tenant ID>.accounts.cloud.sap/admin`
+> -   Your email address
+> -   The error message you see
+> -   Attachments of screenshot that show the reproduced error, including the exact timestamp
+> -   If you solved your issue, a description of the steps you took
+> -   List of Knowledge Base Articles \(KBAs\) and SAP Notes, you have used to solve the issue
+> -   \(if relevant\) Attachments of SAML traces as per KBA: [2461862](https://launchpad.support.sap.com/#/notes/2461862) - Collecting SAML traces with Chrome or Firefox
+> 
+> See also: [2654164](https://me.sap.com/notes/2654164) \(What to consider before opening a Support Incident for SAP BTP issue\).
+
 
 
 ## SAP Community Network

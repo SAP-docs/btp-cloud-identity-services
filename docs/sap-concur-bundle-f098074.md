@@ -37,7 +37,7 @@ Customers can integrate SAP Cloud Identity Services no matter whether the Concur
         > ### Note:  
         > You must create a case to set up Identity Authentication and Identity Provisioning tenant provisioning for your SAP Concur entity even if you already have existing Identity Authentication and Identity Provisioning tenants from other SAP solutions.
 
-        To create a case, you can create an SAP for Me case \(recommended\) or an SAP Concur support case.
+        To create a case, you can choose between creating an SAP for Me case \(recommended\) or an SAP Concur support case. Ensure your support case is directed correctly by using the following subject line in the short description: `Set up SAP Cloud Identity Services for Concur`.
 
         For more information about creating an SAP for Me case, see this SAP Note: [1296527](https://me.sap.com/notes/1296527) - How to create a support case \(contact SAP Product Support\) - SAP for Me. Use the Component = BNS-CON-SSO.
 

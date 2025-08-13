@@ -55,7 +55,7 @@ To configure a trusted X.509 certificate, proceed as follows:
 
 3.  Under *Authentication*, choose the *Trusted Certificate Configuration* list item.
 
-4.  Choose the *Create* button.
+4.  Choose the *\+Add* button.
 
 5.  Enter the name of the certificate.
 
@@ -134,7 +134,7 @@ To configure a trusted X.509 certificate, proceed as follows:
     > 
     > If you want to log on with a certificate where the common name contains the email of the user \(for example: `Subject DN: CN=my_email@example.com,O=MyORG,C=US`\), then the pattern value must be: `CN=${mail},O=M,C=US`.
 
-9.  Save your configuration.
+9.  Choose the *\+Add* button.
 
 10. To add the certificate to your tenant, report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`. The SAP Cloud Root CA certificates are trusted by default.
 
@@ -144,7 +144,125 @@ To configure a trusted X.509 certificate, proceed as follows:
 
 
     > ### Remember:  
-    > The SAP Cloud Root CA, DigiCert Global Root CA, DigiCert Global Root G2, and DigiCert TLS RSA SHA256 2020 CA1 certificates are trusted by default.
+    > The following certificates are trusted by default:
+    > 
+    > ****
+    > 
+    > 
+    > <table>
+    > <tr>
+    > <th valign="top">
+    > 
+    > CA Display Name
+    > 
+    > </th>
+    > <th valign="top">
+    > 
+    > Subject
+    > 
+    > </th>
+    > <th valign="top">
+    > 
+    > Serial number
+    > 
+    > </th>
+    > <th valign="top">
+    > 
+    > Expiry Date
+    > 
+    > MM-DD-YYYY
+    > 
+    > </th>
+    > </tr>
+    > <tr>
+    > <td valign="top">
+    > 
+    > SAP Cloud Root CA
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > CN=SAP Cloud Root CA, O=SAP SE, L=Walldorf, C=DE
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > 18 77 0f be 65 06 6b bf 4c ea 93 38 d9 b1 85 62
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > 02-13-‎‎2039
+    > 
+    > </td>
+    > </tr>
+    > <tr>
+    > <td valign="top">
+    > 
+    > DigiCert Global Root CA
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > CN=DigiCert Global Root CA, OU=www.digicert.com, O=DigiCert Inc, C=US
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > 08 3b e0 56 90 42 46 b1 a1 75 6a c9 59 91 c7 4a
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > 11-10-‎‎2031
+    > 
+    > </td>
+    > </tr>
+    > <tr>
+    > <td valign="top">
+    > 
+    > DigiCert Global Root G2
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, C=US
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > 03 3a f1 e6 a7 11 a9 a0 bb 28 64 b1 1d 09 fa e5
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > 01-15-‎‎‎2038
+    > 
+    > </td>
+    > </tr>
+    > <tr>
+    > <td valign="top">
+    > 
+    > DigiCert TLS RSA SHA256 2020 CA1
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1, O=DigiCert Inc, C=US
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > 0c f5 bd 06 2b 56 02 f4 7a b8 50 2c 23 cc f0 66
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > 03-30-2031
+    > 
+    > </td>
+    > </tr>
+    > </table>
 
 
 **Related Information**  
@@ -215,4 +333,6 @@ To configure a trusted X.509 certificate, proceed as follows:
 [Reuse SAP Cloud Identity Services Tenants for Different Customer IDs](reuse-sap-cloud-identity-services-tenants-for-different-customer-ids-ebd0258.md "You as a tenant administrator can reuse an existing tenant for configurations and automated subscriptions.")
 
 [Configure Allowed Logon Identifiers](configure-allowed-logon-identifiers-3adf1ff.md "Tenant administrators can choose the allowed logon identifiers for the users.")
+
+[SAP Note 2801396](https://me.sap.com/notes/2801396 "SAP Global Trust List")
 

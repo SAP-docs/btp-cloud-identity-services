@@ -8,6 +8,40 @@ The following authentication issues may occur:
 
 
 
+<a name="loio84f28fbd02ab484688c9a5e58be2eb5a__section_vmp_3wg_hgc"/>
+
+## Error: "Sorry, we could not authenticate you. Try again"
+
+**Symptom**
+
+When you try to sign in to an SAP Cloud Identity Services tenant, the following error message can be seen: **"Sorry, we could not authenticate you. Try again"** 
+
+**Solution**
+
+See KBA **3291844** - [Sorry, we could not authenticate you. Try again" error message seen in Identity Authentication login](https://me.sap.com/notes/3291844)
+
+
+
+<a name="loio84f28fbd02ab484688c9a5e58be2eb5a__section_a5y_gct_32c"/>
+
+## Error: "Your domain is not trusted. Please contact your system administrator"
+
+**Symptom:**:
+
+When using embedded frames or overlays in an application that authenticates against the Identity Authentication, the following error is displayed when trying to log in via the domain of the overlay:
+
+**"Your domain is not trusted. Please contact your system administrator."**
+
+The other error can be related to trusted domains:
+
+**"Your request failed because the page you have to be redirected to is not trusted. Please contact your system administrator."**
+
+**Solution:**
+
+See KBA **2739473****\-**["Your domain is not trusted. Please contact your system administrator" in Identity Authentication Service](https://launchpad.support.sap.com/#/notes/2739473)
+
+
+
 <a name="loio84f28fbd02ab484688c9a5e58be2eb5a__section_kvv_dxs_32c"/>
 
 ## Error: "The digital signature of the received SAML2 message is invalid"

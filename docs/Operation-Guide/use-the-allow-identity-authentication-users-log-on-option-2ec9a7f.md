@@ -2,7 +2,7 @@
 
 # Use the **Allow Identity Authentication Users Log On** Option
 
-Users can log on with their Identity Authentication credentials, when a corporate identity provider is selected as default \(for SAML 2.0 applications\).
+Users can log on with their Identity Authentication credentials, when a corporate identity provider is selected as default.
 
 
 
@@ -30,11 +30,6 @@ You have chosen a corporate identity provider as default. For more information, 
 
 3.  Choose the application that you want to edit.
 
-    > ### Note:  
-    > Filter the list items in the search field by typing the name, display name, application ID, organization ID, or client ID, or choose the application from the list on the left.
-    > 
-    > If you don’t have a created application in your list, you can create one. For more information, see [Create a New Application](create-a-new-application-0d4b255.md).
-
 4.  Choose the *Trust* tab.
 
 5.  Under *Conditional Authentication*, select the *Allow users stored in Identity Authentication service to log on* check box.
@@ -46,12 +41,60 @@ You have chosen a corporate identity provider as default. For more information, 
 
 6.  Save your selection.
 
-7.  Pass the parameter `idp=<idp_name>` with the SAML 2.0 authentication request in the body or url to use this Identity Authentication tenant for authentication.
+7.  Pass the `idp` parameter with the authentication request to use Identity Authentication tenant for authentication. You have the following two options for the value:
 
-    > ### Caution:  
-    > It depends on service provider whether the parameter can be passed in body or URL. Identity Authentication doesn't control how the SAML 2.0 request is sent.
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Option
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `idp=<idp_name>`
+    
+    </td>
+    <td valign="top">
+    
+    You specify the identity provider manually.
 
     > ### Note:  
-    > The `idp_name` must match the name of the identity provider, configured in the *Name* field under *Tenant Settings*. For more information, see [Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md).
+    > The `idp_name` must match the name of the identity provider, configured in the *Name* or *URL* field for the issuer under *Tenant Settings*. For more information, see [Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md) or [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md).
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `idp=local`
+    
+    </td>
+    <td valign="top">
+    
+    Use the value `local` to override the conditional authentication configuration and authenticate with Identity Authentication instead.
+    
+    </td>
+    </tr>
+    </table>
+    
+    Depending on the protocol:
+
+    -   for SAML 2.0 - pass the parameter in the body or url.
+
+        > ### Caution:  
+        > It depends on the service provider whether the parameter can be passed in `body` or `url`. Identity Authentication doesn't control how the SAML 2.0 request is sent.
+
+    -   for OpenID Connect \(OIDC\) - pass the parameter in the url.
 
 

@@ -2,15 +2,17 @@
 
 # Configure Logon via Identity Authentication when a Corporate IdP is Chosen as Default
 
-You can allow users to log on via Identity Authentication when a corporate identity provider \(IdP\) is chosen as default.
+You can enable users to log on via Identity Authentication when a corporate identity provider \(IdP\) is chosen as default.
 
 
 
 ## Context
 
-When a corporate identity provider is chosen as default, Identity Authentication acts as a proxy to delegate authentication to that external corporate identity provider. In this scenario, Identity Authentication acts as an SAML 2.0 identity provider to the service provider \(application\), and as a service provider to the corporate identity provider. When a user, for example an employee who exists in the user store of the corporate identity provider tries to access protected resource in the application, he or she is redirected by Identity Authentication to the corporate identity provider. The user is logged on, after providing the correct corporate credentials.
+When a corporate identity provider is chosen as default, Identity Authentication acts as a proxy to delegate authentication to that external corporate identity provider. In this scenario, Identity Authentication acts as an SAML 2.0 identity provider to the application \(service provider\), and as a service provider to the corporate identity provider. When a user, for example an employee who exists in the user store of the corporate identity provider tries to access protected resource in the application, he or she is redirected by Identity Authentication to the corporate identity provider. The user is logged on, after providing the correct corporate credentials.
 
-You can extend this scenario, allowing users that are stored in Identity Authentication to log on with their cloud credentials. These cloud users access the application, and are authenticated via Identity Authentication. Thus, in the extended scenario, the employees, log on to the application with their corporate credentials, while the external users, such as clients, or partners are authenticated via Identity Authentication. The IdP-initiated logon link that the external users should use to access the application is provided in the administration console of the Identity Authentication tenant.
+You can extend this scenario to allow users that are stored in Identity Authentication to log on with their Identity Authentication credentials. Thus, in the extended scenario, the employees, log on to the application with their corporate credentials, while the external users, such as clients, or partners are authenticated via Identity Authentication.
+
+The IdP-initiated logon link that the external users should use to access the application is provided in the administration console of the Identity Authentication tenant \(*Tenant Settings* \> *Single Sign-On* \> *IdP-Initiated SSO*\).
 
 > ### Note:  
 > If you have configured a connection to a corporate user store, users with user records in Identity Authentication also can log on when the **Allow Identity Authentication Users Log On** option is enabled.

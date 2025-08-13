@@ -105,6 +105,388 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-08-12
+
+</td>
+<td valign="top">
+
+2025-08-12
+
+</td>
+<td valign="top">
+
+28165
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Password Recovery
+
+</td>
+<td valign="top">
+
+You can enable the users to trigger reset password process via the profile page. See [Enable Users to Reset Password via Profile Page](Operation-Guide/enable-users-to-reset-password-via-profile-page-22bd253.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-08-12
+
+</td>
+<td valign="top">
+
+2025-08-12
+
+</td>
+<td valign="top">
+
+28165
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Identity Directory SCIM API
+
+</td>
+<td valign="top">
+
+You can create users with password hash attributes via the Identity Directory SCIM API. You can also specify your own hashing algorithm details during user creation. The following attributes are now available for use in the Identity Directory SCIM API: `passwordHash`, `passwordHashAlgorithm`, `passwordHashSalt`, `passwordHashCycles`, `totpSecret`, `totpFailedAttempts`, `totpLockedTime` . See [Overview | Identity Directory API | SAP Business Accelerator Hub](https://api.sap.com/api/IdDS_SCIM/overview).
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-08-12
+
+</td>
+<td valign="top">
+
+2025-08-12
+
+</td>
+<td valign="top">
+
+28165
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Mandatory email for job subscribers
+
+</td>
+<td valign="top">
+
+A message in the UI now ensures that all subscribers for job notifications provide an email address.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-08-12
+
+</td>
+<td valign="top">
+
+2025-08-12
+
+</td>
+<td valign="top">
+
+28165
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Deprecation of SAP Ariba Category Management connector
+
+</td>
+<td valign="top">
+
+Effective August 25, 2025, the SAP Ariba Category Management connector will be deprecated. This change is due to an update of the business solution’s local user store, which no longer requires user provisioning jobs.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+Deprecated
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-08-12
+
+</td>
+<td valign="top">
+
+2025-08-25
+
+</td>
+<td valign="top">
+
+28165
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Regional Availability
 
 </td>

@@ -232,7 +232,7 @@ Authorization policy administrators can configure the following in custom author
 
 Administrators can edit an existing custom authorization policy. They can add or delete restrictions. The restrictions are refined by attributes with fixed values or user attributes. They can also add `USE` rules to a custom authorization policy and restrict them.
 
-For more information, see  <?sap-ot O2O class="- topic/xref " href="38baa251132c4b088f41261fb3158fb3.xml" text="" desc="" xtrc="xref:9" xtrf="file:/home/builder/src/dita-all/wbz1500991557538/loio629f7cb06f6947988dcaf8bedbe45873_en-US/src/content/localization/en-us/982ac5f91d2346fda8dd8096e861fc36.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+For more information, see [Data Control Language for SAP BTP](data-control-language-for-sap-btp-38baa25.md).
 
 **Related Information**  
 

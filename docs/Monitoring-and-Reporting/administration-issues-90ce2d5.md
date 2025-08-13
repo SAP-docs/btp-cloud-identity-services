@@ -298,11 +298,11 @@ Your access to the *Identity Provisioning* tile in SAP BTP cockpit depends mostl
 
 ### Still Cannot See the Identity Provisioning Tile
 
-*BC-IAM-IPS*.
+If your problem requires deeper analysis by SAP, please create an incident for component *BC-IAM-IPS*.
 
 In the incident, specify also:
 
--   Your problem requires deeper analysis by SAP. Please create an incident forThe IDs of your global account and subaccount, or your bundle tenant.
+-   The IDs of your global account and subaccount, or your bundle tenant.
 
 -   To which region your account/tenant belongs. You can find it in this list:[\(Discovery Center\) Identity Provisioning](https://discovery-center.cloud.sap/#/serviceCatalog/identity-provisioning)-\> *Service Plan*.
 
