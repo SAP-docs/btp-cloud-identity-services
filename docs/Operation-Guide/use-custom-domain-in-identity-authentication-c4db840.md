@@ -465,11 +465,32 @@ Identity Authentication allows you to use a custom domain that is different from
     <td valign="top">
     
     *DN*
+
+    > ### Note:  
+    > The `DN` used for the domain certificate.
+
+
     
     </td>
     <td valign="top">
     
-    The `DN` used for the domain certificate. The `CN` attribute is mandatory and must match the custom domain used for the domain certificate.
+    -   `CN` \(CommonName\) - mandatory
+
+        > ### Note:  
+        > The `CN` attribute must match the custom domain used for the domain certificate.
+
+    -   `OU` \(OrganizationalUnit\) - optional
+
+    -   `O` \(Organization\) - optional
+
+    -   `L` \(Locality\) - optional
+
+    -   `S` \(StateOrProvinceName\) - optional
+
+    -   `C` \(CountryName\) - optional
+
+
+
     
     </td>
     </tr>

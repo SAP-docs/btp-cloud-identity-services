@@ -10,7 +10,7 @@ You can change your current password or request a reset password email via your 
 
 Your password grants you access to any platform connected to Identity Authentication. Depending on the configuration of your profile page, you can either change your password directly on the profile page or request a reset password email via your profile page. The configuration is done by an administrator, and you can't choose which option to use.
 
-To change your current password, you need to provide the current and the new passwords to the system. To reset your password you, must have access to your email. You can find information about the email of your account in the *Personal Information* section of your profile page. For both cases you must comply with the password requirements.
+To change your current password, you need to provide the current and the new passwords to the system. To reset your password, you must have access to your email. You can find information about the email of your account in the *Personal Information* section of your profile page. For both cases you must comply with the password requirements.
 
 > ### Tip:  
 > If you don't know your current password, follow the *Forgot Password* link at the sign-in page of the application. This triggers the **Forgot Password** process, and receive an email with instructions how to reset your password. For more information, see [Reset Your Forgotten Password](reset-your-forgotten-password-c821f3f.md).

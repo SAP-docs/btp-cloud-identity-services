@@ -35,7 +35,7 @@ When the application uses corporate IdP for authentication, the assertion attrib
 If *Identity Federation* is configured, use the modified attributes in the *Default Attributes* section for the applications that use the corporate IdP for authentication. For more information, see [Configuring Attributes Based on Flexible Expressions](configuring-attributes-based-on-flexible-expressions-a2f1e46.md).
 
 > ### Note:  
-> You can also overwrite the `Subject Name Identifier` via the Enrich Assertion Attributes option. Identity Authentication sends the modified attribute to the application as `name ID` in the SAML 2.0 assertions, and as `subject` in the OpenID Connect tokens.
+> You can also overwrite the `Subject Name Identifier` via the Enrich Assertion Attributes option. Identity Authentication sends the modified attribute to the application as `name ID` in the SAML 2.0 assertions, and as `sub` in the OpenID Connect tokens.
 > 
 > The `Subject Name Identifier` must be added in the following pattern:
 > 

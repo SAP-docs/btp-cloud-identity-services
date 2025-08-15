@@ -105,6 +105,82 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Off-Cycle Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-08-14
+
+</td>
+<td valign="top">
+
+2025-08-14
+
+</td>
+<td valign="top">
+
+28174
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Regular Upgrade
 
 </td>
@@ -263,8 +339,6 @@ Identity Directory SCIM API
 <td valign="top">
 
 You can create users with password hash attributes via the Identity Directory SCIM API. You can also specify your own hashing algorithm details during user creation. The following attributes are now available for use in the Identity Directory SCIM API: `passwordHash`, `passwordHashAlgorithm`, `passwordHashSalt`, `passwordHashCycles`, `totpSecret`, `totpFailedAttempts`, `totpLockedTime` . See [Overview | Identity Directory API | SAP Business Accelerator Hub](https://api.sap.com/api/IdDS_SCIM/overview).
-
-
 
 </td>
 <td valign="top">
