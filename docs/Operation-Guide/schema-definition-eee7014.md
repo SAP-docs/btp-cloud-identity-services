@@ -6,12 +6,19 @@ You can define only one schema in a package. It defines the schema elements with
 
 
 
-To describe the names and types of attributes, you define a schema. Only one schema can be defined for a package hierarchy \(folder with sub-folders and DCL documents\). You must define a schema in a file called `schema.dcl`. It must be located in the root folder. In the schema, you can use the grammar elements `WHERE` and `FUNCTION` with attributes. All usages of schema attributes are validated to refer to existing names and that their respective data types.
+To describe the names and types of attributes, you define a schema. You must define a schema in a file called `schema.dcl`. It must be located in the DCL root folder. In the schema, you can use the grammar elements `WHERE` and `FUNCTION` with attributes. All usages of schema attributes are validated to refer to existing names and that their respective data types.
 
-![](images/DCLSchema_MultiFile_2bc6998.png)
-
-> ### Recommendation:  
-> Create a single DCL file with all of the schema definitions that are used in the package. Place the `schema.dcl` file on root level of your folder hierarchy. It must only have a `schema` section.
+> ### Output Code:  
+> ```
+> ├─ <application>
+> └─ ams-policies-deployer
+>     ├─ package.json
+>     └─ dcl
+>         ├─ sales
+>         │  └─ policy_a.dcl
+>         │  └─ policy_b.dcl
+>         └─ schema.dcl
+> ```
 
 Elements in the schema can be used in the `WHERE` and `FUNCTION` grammar elements. The usage of all schema elements are validated to make sure that they refer to existing names and that their usage context complies with their type.
 

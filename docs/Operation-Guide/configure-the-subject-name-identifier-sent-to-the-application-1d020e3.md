@@ -367,6 +367,9 @@ Optionally, you can configure the default name identifier format of the name ID 
 > ### Caution:  
 > When configuring the `Subject Name Identifier`, take into consideration that some of the attributes can be modified by the users.
 
+> ### Note:  
+> When a subscribed application becomes a child application, the configuration of the `Subject Name Identifier` of that child application can be different from the parent application or from the application it is subscribed to. You can make the configuration of the `Subject Name Identifier` the same as the parent application by choosing the *Inherit from Parent* button on the top right-hand corner of the screen. You can also make the configuration of the `Subject Name Identifier` the same as the application it is subscribed to by choosing the *Inherit from Source* button on the top right-hand corner of the screen. Depending on your configuration, either the *Inherit from Parent* or the *Inherit from Source* button is active, or both buttons are active.
+
 To set the `Subject Name Identifier` attribute, proceed as follows:
 
 

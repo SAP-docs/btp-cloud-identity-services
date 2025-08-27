@@ -7,7 +7,7 @@ This user guide describes the scenarios in the Identity Authentication from a us
 For the scenarios, users can use services to maintain or update their user profiles and to log on to applications. User services are divided into profile and sign-on services. For configuration of certain profile services, users access the profile page.
 
 > ### Note:  
-> If you don't know the URL of your profile page, contact your system administrator.
+> You have received the link to your profile page in an email with information how to activate your account for user profile. If you can't find this email, and you don't know how to access your profile page, please contact your system administrator for assistance.
 
 Users can use the following sign-on services:
 

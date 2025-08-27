@@ -1,8 +1,8 @@
-<!-- loio3a3bf9bcbee748dc88ca122469193b54 -->
+<!-- loiocb776a3c45334ccbbbf91ed56369a5f3 -->
 
-# Configure Logon via Identity Authentication when a Corporate IdP is Chosen as Default
+# TO DELETE: Create URLs to Access Applications with Specific Identity Providers
 
-You can enable users to log on via Identity Authentication when a corporate identity provider \(IdP\) is chosen as default.
+Enhance the user experience by eliminating the need for users to determine which identity provider to use. Users often don’t have the context to choose the correct identity providers.
 
 Sometimes you have multiple identity providers in your landscape, whether they are corporate identity providers or your SAP Cloud Identity Services - Identity Authentication tenant. By providing your users with preconfigured URLs, you can direct them to authenticate with specific identity providers for specific applications.
 
@@ -10,7 +10,7 @@ How you prepare these URLs depends on whether the user starts at the identity pr
 
 
 
-<a name="loio3a3bf9bcbee748dc88ca122469193b54__d49e27"/>
+<a name="loiocb776a3c45334ccbbbf91ed56369a5f3__section_vyl_lz2_3gc"/>
 
 ## Opting for the Local Identity Provider
 
@@ -24,10 +24,6 @@ You can enable users that are stored in SAP Cloud Identity Services to log on wi
 					Provider")
 
 > ### Example:  
-> Example approuter link:
-> 
-> `https://approuter-myapplication.cfapps.eu20-001.hana.ondemand.com?sap_idp=https://my_sci_tenant.accounts.ondemand.com`
-> 
 > Example link:
 > 
 > `https://myapplication.cfapps.eu20-001.hana.ondemand.com?idp=https://my_sci_tenant.accounts.ondemand.com`
@@ -35,10 +31,14 @@ You can enable users that are stored in SAP Cloud Identity Services to log on wi
 > Example with local value:
 > 
 > `https://myapplication.cfapps.eu20-001.hana.ondemand.com?idp=local`
+> 
+> Example approuter link:
+> 
+> `https://approuter-myapplication.cfapps.eu20-001.hana.ondemand.com?sap_idp=https://my_sci_tenant.accounts.ondemand.com`
 
 
 
-<a name="loio3a3bf9bcbee748dc88ca122469193b54__d49e75"/>
+<a name="loiocb776a3c45334ccbbbf91ed56369a5f3__section_yvr_r1f_3gc"/>
 
 ## Multiple Corporate Identity Providers
 
@@ -51,17 +51,17 @@ If your application doesn't define rules to determine which identity provider a 
 ![](images/Multiple_Identity_Providers_2d59bbc.png "Help Direct Users to the Correct Identity Provider")
 
 > ### Example:  
-> Example approuter link:
-> 
-> `https://approuter-myapplication.cfapps.eu20-001.hana.ondemand.com?sap_idp=https://corp_idp_2.mydomain.com`
-> 
 > Example link:
 > 
 > `https://myapplication.cfapps.eu20-001.hana.ondemand.com?idp=https://corp_idp_2.mydomain.com`
+> 
+> Example approuter link:
+> 
+> `https://approuter-myapplication.cfapps.eu20-001.hana.ondemand.com?sap_idp=https://corp_idp_2.mydomain.com`
 
 
 
-<a name="loio3a3bf9bcbee748dc88ca122469193b54__d49e111"/>
+<a name="loiocb776a3c45334ccbbbf91ed56369a5f3__section_hhy_qcf_3gc"/>
 
 ## Deep Hierarchy of Identity Providers
 
@@ -74,17 +74,17 @@ Your landscape has multiple levels of identity providers, perhaps through subsid
 ![](images/Deep_Structure_of_Identity_Providers_a66a68c.png "Deep Structure of Identity Providers")
 
 > ### Example:  
-> Example approuter link:
-> 
-> `https://approuter-myapplication.cfapps.eu20-001.hana.ondemand.com?sap_idp=https://corp_idp_1.mydomain.com,corp_idp_2.mydomain.com`
-> 
 > Example link:
 > 
 > `https://myapplication.cfapps.eu20-001.hana.ondemand.com?idp=https://corp_idp_1.mydomain.com,corp_idp_2.mydomain.com`
+> 
+> Example approuter link:
+> 
+> `https://approuter-myapplication.cfapps.eu20-001.hana.ondemand.com?sap_idp=https://corp_idp_1.mydomain.com,corp_idp_2.mydomain.com`
 
 
 
-<a name="loio3a3bf9bcbee748dc88ca122469193b54__d49e148"/>
+<a name="loiocb776a3c45334ccbbbf91ed56369a5f3__section_pjv_qn2_3gc"/>
 
 ## Identity-Prover-Initiated Single Sign-On
 
@@ -103,17 +103,4 @@ Identity-provider-initiated single sign-on \(IdP-initiated SSO\) is used for cen
 > Example SAML URL:
 > 
 > `https://my_sci_tenant.accounts.ondemand.com/saml2/idp/sso?sp=https://myapplication.cfapps.eu20-001.hana.ondemand.com&idp=https://corp_idp_1.mydomain.com`
-
-**Related Information**  
-
-
-[Choose Default Identity Provider for an Application](choose-default-identity-provider-for-an-application-e9d8274.md "You choose between a local identity provider and a corporate identity provider to be the default identity provider for your application.")
-
-[Configure Conditional Authentication for an Application](configure-conditional-authentication-for-an-application-0143dce.md "Tenant administrator can define rules for authenticating identity provider according to email domain, user type, user group, and IP range (specified in CIDR notation).")
-
-[Configure Identity Federation for Applications](configure-identity-federation-for-applications-1e8e34e.md "Tenant administrator can enable identity federation for an application to override the identity federation settings on the configured corporate identity provider for the application.")
-
-[Enable SSO with All Corporate Identity Providers](enable-sso-with-all-corporate-identity-providers-f7ec8d2.md "Tenant administrators can enable IdP-initiated Single Sign-On (SSO) from all configured corporate identity providers (IdPs).")
-
-[Corporate User Store \(Neo Environment\)](corporate-user-store-neo-environment-461d71c.md#loio461d71c148594608b9c8b6d016e0a0c5 "Configure corporate user store for applications in the Neo environment to allow users to users to authenticate with their corporate credentials, without the need to use another set of credentials for their cloud access.")
 

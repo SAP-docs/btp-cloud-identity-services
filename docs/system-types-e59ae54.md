@@ -150,7 +150,7 @@ RFC-based systems use Remote Function Call \(RFC\) for communication between SAP
 
 -   SAP Ariba Applications
 
--   SAP Ariba Category Management
+-   SAP Ariba Category Management \(deprecated\)
 
 -   SAP Ariba Central Invoice Management
 

@@ -51,7 +51,7 @@ You have the following options for an authenticating identity provider in the ad
             > ### Note:  
             > This case requires input from the user at sign in.
 
-        -   Provide users with URLs that choose the identity provider. For more information, see [Creating URL To Access Application with Specific Identity Provider](creating-url-to-access-application-with-specific-identity-provider-118f5f4.md).
+        -   Provide users with URLs that choose the identity provider. For more information, see [Create URLs to Access Applications with Specific Identity Providers](create-urls-to-access-applications-with-specific-identity-providers-118f5f4.md#loio118f5f4203fd42c98255b1ecf6baa484).
 
 
 

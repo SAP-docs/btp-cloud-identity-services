@@ -411,6 +411,18 @@ The Identity Provisioning service manages the complete set of **business partner
     >         "constant": "false"
     >       },
     >       {
+    >         "sourcePath": "$.timezone",
+    >         "optional": true,
+    >         "targetPath": "$.user.timeZoneCode",
+    >         "functions": [
+    >           {
+    >             "type": "convertTimezoneCode",
+    >             "outputFormat": "sap"
+    >           }
+    >         ],
+    >         "defaultValue": "CET"
+    >       },
+    >       {
     >         "type": "valueMapping",
     >         "sourcePaths": [
     >           "$.userType"

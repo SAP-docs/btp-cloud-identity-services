@@ -623,6 +623,569 @@ In the following transformation example, function *convertCountryRegion* will be
 <tr>
 <td valign="top">
 
+convertTimezoneCode
+
+</td>
+<td valign="top">
+
+-   **`outputFormat`**
+
+    Required: Yes
+
+    Type: String
+
+    Possible values:
+
+    -   `iana`
+    -   `sap`
+
+
+
+
+</td>
+<td valign="top">
+
+This function converts the value of a `timezone` attribute into another format, specified by the JSON modifier `"outputFormat"`.
+
+The `"outputFormat"` modifier has two possible values:
+
+-   `iana`, which follows the convention `{AREA}/{LOCATION}`
+
+-   `sap`, which uses abbreviations
+
+
+The function retrieves the value of the `timezone` from the specified source path and searches for it within a predefined list of timezones and their corresponding world locations:
+
+> ### Code Syntax:  
+> ```
+> WET,Europe/Lisbon
+> WET,Atlantic/Canary
+> WET,Atlantic/Faroe
+> WET,Atlantic/Madeira
+> WAT,Africa/Lagos
+> WAT,Africa/Algiers
+> WAT,Africa/Bangui
+> WAT,Africa/Brazzaville
+> WAT,Africa/Douala
+> WAT,Africa/Kinshasa
+> WAT,Africa/Libreville
+> WAT,Africa/Luanda
+> WAT,Africa/Malabo
+> WAT,Africa/Ndjamena
+> WAT,Africa/Niamey
+> WAT,Africa/Porto-Novo
+> ART,America/Argentina/Buenos_Aires
+> ART,America/Argentina/Catamarca
+> ART,America/Argentina/Cordoba
+> ART,America/Argentina/Jujuy
+> ART,America/Argentina/La_Rioja
+> ART,America/Argentina/Mendoza
+> ART,America/Argentina/Rio_Gallegos
+> ART,America/Argentina/Salta
+> ART,America/Argentina/San_Juan
+> ART,America/Argentina/San_Luis
+> ART,America/Argentina/Tucuman
+> ART,America/Argentina/Ushuaia
+> PST,America/Los_Angeles
+> PST,America/Tijuana
+> PST,America/Vancouver
+> PKT,Asia/Karachi
+> URUGUA,America/Montevideo
+> TURKEY,Europe/Istanbul
+> SYRIA,Asia/Damascus
+> RUS12,Asia/Kamchatka
+> RUS12,Asia/Anadyr
+> RUS11,Asia/Sakhalin
+> RUS11,Asia/Magadan
+> RUS11,Asia/Srednekolymsk
+> RUS10,Asia/Vladivostok
+> RUS10,Asia/Ust-Nera
+> RUS09,Asia/Yakutsk
+> RUS09,Asia/Chita
+> RUS09,Asia/Khandyga
+> RUS08,Asia/Irkutsk
+> RUS07,Asia/Novosibirsk
+> RUS07,Asia/Barnaul
+> RUS07,Asia/Krasnoyarsk
+> RUS07,Asia/Novokuznetsk
+> RUS07,Asia/Tomsk
+> RUS06,Asia/Omsk
+> RUS05,Asia/Yekaterinburg
+> RUS04,Europe/Astrakhan
+> RUS04,Europe/Samara
+> RUS04,Europe/Saratov
+> RUS04,Europe/Ulyanovsk
+> RUS03,Europe/Moscow
+> RUS03,Europe/Kirov
+> RUS03,Europe/Volgograd
+> RUS02,Europe/Kaliningrad
+> PIERRE,America/Miquelon
+> PARAGY,America/Asuncion
+> NZST,Pacific/Auckland
+> NZST,Antarctica/McMurdo
+> NZCHA,Pacific/Chatham
+> NST,America/St_Johns
+> NORFLK,Pacific/Norfolk
+> NEPAL,Asia/Kathmandu
+> MSTNO,America/Phoenix
+> MSTNO,America/Creston
+> MSTNO,America/Dawson_Creek
+> MSTNO,America/Fort_Nelson
+> MSTNO,America/Hermosillo
+> MSTNO,America/Mazatlan
+> MSTNO,America/Whitehorse
+> MSTNO,America/Dawson
+> MST,America/Denver
+> MST,America/Boise
+> MST,America/Cambridge_Bay
+> MST,America/Ciudad_Juarez
+> MST,America/Edmonton
+> MST,America/Inuvik
+> MST,America/Yellowknife
+> MOROCC,Africa/Casablanca
+> MOLDVA,Europe/Chisinau
+> MAU,Indian/Mauritius
+> LBANON,Asia/Beirut
+> JORDAN,Asia/Amman
+> JAPAN,Asia/Tokyo
+> ISRAEL,Asia/Jerusalem
+> IRAQ,Asia/Baghdad
+> IRAN,Asia/Tehran
+> INDIA,Asia/Kolkata
+> HAW,Pacific/Honolulu
+> GSTW,America/Thule
+> GSTE,America/Scoresbysund
+> GST,America/Nuuk
+> GMTUK,Europe/London
+> GMTUK,Europe/Dublin
+> GMTUK,Europe/Guernsey
+> GMTUK,Europe/Isle_of_Man
+> GMTUK,Europe/Jersey
+> FLKLND,Atlantic/Stanley
+> FIJI,Pacific/Fiji
+> ESTNO,America/Atikokan
+> ESTNO,America/Cancun
+> EST_NA,America/Havana
+> EST,America/New_York
+> EST,America/Detroit
+> EST,America/Grand_Turk
+> EST,America/Indiana/Indianapolis
+> EST,America/Indiana/Marengo
+> EST,America/Indiana/Petersburg
+> EST,America/Indiana/Vevay
+> EST,America/Indiana/Vincennes
+> EST,America/Indiana/Winamac
+> EST,America/Iqaluit
+> EST,America/Kentucky/Louisville
+> EST,America/Kentucky/Monticello
+> EST,America/Nassau
+> EST,America/Nipigon
+> EST,America/Pangnirtung
+> EST,America/Port-au-Prince
+> EST,America/Thunder_Bay
+> EST,America/Toronto
+> EGYPT,Africa/Cairo
+> EET,Europe/Athens
+> EET,Asia/Gaza
+> EET,Asia/Hebron
+> EET,Europe/Bucharest
+> EET,Europe/Helsinki
+> EET,Europe/Kiev
+> EET,Europe/Mariehamn
+> EET,Europe/Riga
+> EET,Europe/Sofia
+> EET,Europe/Tallinn
+> EET,Europe/Uzhgorod
+> EET,Europe/Vilnius
+> EET,Europe/Zaporozhye
+> CYPRUS,Asia/Nicosia
+> CYPRUS,Asia/Famagusta
+> CSTNO,America/Mexico_City
+> CSTNO,America/Bahia_Banderas
+> CSTNO,America/Chihuahua
+> CSTNO,America/Merida
+> CSTNO,America/Monterrey
+> CSTNO,America/Regina
+> CSTNO,America/Swift_Current
+> CST,America/Chicago
+> CST,America/Indiana/Knox
+> CST,America/Indiana/Tell_City
+> CST,America/Matamoros
+> CST,America/Menominee
+> CST,America/North_Dakota/Beulah
+> CST,America/North_Dakota/Center
+> CST,America/North_Dakota/New_Salem
+> CST,America/Ojinaga
+> CST,America/Rainy_River
+> CST,America/Rankin_Inlet
+> CST,America/Resolute
+> CST,America/Winnipeg
+> CHILEM,America/Punta_Arenas
+> CHILEM,America/Coyhaique
+> CHILEE,Pacific/Easter
+> CHILE,America/Santiago
+> CET,Europe/Berlin
+> CET,Africa/Ceuta
+> CET,Arctic/Longyearbyen
+> CET,Europe/Amsterdam
+> CET,Europe/Andorra
+> CET,Europe/Belgrade
+> CET,Europe/Bratislava
+> CET,Europe/Brussels
+> CET,Europe/Budapest
+> CET,Europe/Busingen
+> CET,Europe/Copenhagen
+> CET,Europe/Gibraltar
+> CET,Europe/Ljubljana
+> CET,Europe/Luxembourg
+> CET,Europe/Madrid
+> CET,Europe/Malta
+> CET,Europe/Monaco
+> CET,Europe/Oslo
+> CET,Europe/Paris
+> CET,Europe/Podgorica
+> CET,Europe/Prague
+> CET,Europe/Rome
+> CET,Europe/San_Marino
+> CET,Europe/Sarajevo
+> CET,Europe/Skopje
+> CET,Europe/Stockholm
+> CET,Europe/Tirane
+> CET,Europe/Vaduz
+> CET,Europe/Vatican
+> CET,Europe/Vienna
+> CET,Europe/Warsaw
+> CET,Europe/Zagreb
+> CET,Europe/Zurich
+> CAT,Africa/Johannesburg
+> CAT,Africa/Blantyre
+> CAT,Africa/Bujumbura
+> CAT,Africa/Gaborone
+> CAT,Africa/Harare
+> CAT,Africa/Juba
+> CAT,Africa/Khartoum
+> CAT,Africa/Kigali
+> CAT,Africa/Lubumbashi
+> CAT,Africa/Lusaka
+> CAT,Africa/Maputo
+> CAT,Africa/Maseru
+> CAT,Africa/Mbabane
+> CAT,Africa/Tripoli
+> CAT,Africa/Windhoek
+> BRZLWE,America/Boa_Vista
+> BRZLWE,America/Campo_Grande
+> BRZLWE,America/Cuiaba
+> BRZLWE,America/Manaus
+> BRZLWE,America/Porto_Velho
+> BRZLAN,America/Eirunepe
+> BRZLAN,America/Rio_Branco
+> BRAZIL,America/Sao_Paulo
+> BRAZIL,America/Araguaina
+> BRAZIL,America/Bahia
+> BRAZIL,America/Belem
+> BRAZIL,America/Fortaleza
+> BRAZIL,America/Maceio
+> BRAZIL,America/Recife
+> BRAZIL,America/Santarem
+> BDT,Asia/Dhaka
+> AZT,Asia/Baku
+> AZOREN,Atlantic/Azores
+> AUSWA,Australia/Perth
+> AUSVIC,Australia/Melbourne
+> AUSTAS,Australia/Hobart
+> AUSSA,Australia/Adelaide
+> AUSSA,Australia/Broken_Hill
+> AUSQLD,Australia/Brisbane
+> AUSQLD,Australia/Lindeman
+> AUSNT,Australia/Darwin
+> AUSNSW,Australia/Sydney
+> AUSNSW,Antarctica/Macquarie
+> AUSLHI,Australia/Lord_Howe
+> AUSEUC,Australia/Eucla
+> AST,America/Halifax
+> AST,America/Glace_Bay
+> AST,America/Goose_Bay
+> AST,America/Moncton
+> AST,Atlantic/Bermuda
+> ALAW,America/Adak
+> ALA,America/Anchorage
+> ALA,America/Juneau
+> ALA,America/Metlakatla
+> ALA,America/Nome
+> ALA,America/Sitka
+> ALA,America/Yakutat
+> AFGHAN,Asia/Kabul
+> UTC+12,Etc/GMT-12
+> UTC+12,Pacific/Funafuti
+> UTC+12,Pacific/Kwajalein
+> UTC+12,Pacific/Majuro
+> UTC+12,Pacific/Nauru
+> UTC+12,Pacific/Tarawa
+> UTC+12,Pacific/Wake
+> UTC+12,Pacific/Wallis
+> UTC+11,Etc/GMT-11
+> UTC+11,Antarctica/Casey
+> UTC+11,Pacific/Bougainville
+> UTC+11,Pacific/Efate
+> UTC+11,Pacific/Guadalcanal
+> UTC+11,Pacific/Kosrae
+> UTC+11,Pacific/Noumea
+> UTC+11,Pacific/Pohnpei
+> UTC+10,Etc/GMT-10
+> UTC+10,Pacific/Bougainville
+> UTC+10,Pacific/Efate
+> UTC+10,Pacific/Guadalcanal
+> UTC+10,Pacific/Kosrae
+> UTC+10,Pacific/Noumea
+> UTC+10,Pacific/Pohnpei
+> UTC+10,Antarctica/DumontDUrville
+> UTC+9,Etc/GMT-9
+> UTC+9,Asia/Dili
+> UTC+9,Asia/Jayapura
+> UTC+9,Asia/Pyongyang
+> UTC+9,Asia/Seoul
+> UTC+9,Pacific/Palau
+> UTC+8,Etc/GMT-8
+> UTC+8,Asia/Brunei
+> UTC+8,Asia/Choibalsan
+> UTC+8,Asia/Hong_Kong
+> UTC+8,Asia/Kuala_Lumpur
+> UTC+8,Asia/Kuching
+> UTC+8,Asia/Macau
+> UTC+8,Asia/Makassar
+> UTC+8,Asia/Manila
+> UTC+8,Asia/Shanghai
+> UTC+8,Asia/Singapore
+> UTC+8,Asia/Taipei
+> UTC+8,Asia/Ulaanbaatar
+> UTC+7,Etc/GMT-7
+> UTC+7,Antarctica/Davis
+> UTC+7,Asia/Bangkok
+> UTC+7,Asia/Ho_Chi_Minh
+> UTC+7,Asia/Hovd
+> UTC+7,Asia/Jakarta
+> UTC+7,Asia/Phnom_Penh
+> UTC+7,Asia/Pontianak
+> UTC+7,Asia/Vientiane
+> UTC+7,Indian/Christmas
+> UTC+6,Etc/GMT-6
+> UTC+6,Indian/Chagos
+> UTC+6,Antarctica/Vostok
+> UTC+6,Asia/Bishkek
+> UTC+6,Asia/Thimphu
+> UTC+6,Asia/Urumqi
+> UTC+63,Asia/Yangon
+> UTC+63,Indian/Cocos
+> UTC+5,Etc/GMT-5
+> UTC+5,Antarctica/Mawson
+> UTC+5,Asia/Almaty
+> UTC+5,Asia/Anadyr
+> UTC+5,Asia/Aqtau
+> UTC+5,Asia/Aqtobe
+> UTC+5,Asia/Ashgabat
+> UTC+5,Asia/Atyrau
+> UTC+5,Asia/Dushanbe
+> UTC+5,Asia/Oral
+> UTC+5,Asia/Qostanay
+> UTC+5,Asia/Qyzylorda
+> UTC+5,Asia/Samarkand
+> UTC+5,Asia/Tashkent
+> UTC+5,Indian/Kerguelen
+> UTC+5,Indian/Maldives
+> UTC+53,Asia/Colombo
+> UTC+4,Etc/GMT-4
+> UTC+4,Asia/Dubai
+> UTC+4,Asia/Muscat
+> UTC+4,Asia/Tbilisi
+> UTC+4,Asia/Yerevan
+> UTC+4,Indian/Mahe
+> UTC+4,Indian/Reunion
+> UTC+3,Etc/GMT-3
+> UTC+3,Africa/Addis_Ababa
+> UTC+3,Africa/Asmara
+> UTC+3,Africa/Dar_es_Salaam
+> UTC+3,Africa/Djibouti
+> UTC+3,Africa/Kampala
+> UTC+3,Africa/Mogadishu
+> UTC+3,Africa/Nairobi
+> UTC+3,Antarctica/Syowa
+> UTC+3,Asia/Aden
+> UTC+3,Asia/Bahrain
+> UTC+3,Asia/Kuwait
+> UTC+3,Asia/Qatar
+> UTC+3,Asia/Riyadh
+> UTC+3,Europe/Minsk
+> UTC+3,Europe/Simferopol
+> UTC+3,Indian/Antananarivo
+> UTC+3,Indian/Comoro
+> UTC+3,Indian/Mayotte
+> UTC+2,Etc/GMT-2
+> UTC+1,Etc/GMT-1
+> UTC+1,Africa/El_Aaiun
+> UTC+1,Africa/Tunis
+> UTC+1,Africa/Dar_es_Salaam
+> UTC+1,Africa/Djibouti
+> UTC+1,Africa/Kampala
+> UTC+1,Africa/Mogadishu
+> UTC,Etc/UTC
+> UTC,Africa/Abidjan
+> UTC,Africa/Accra
+> UTC,Africa/Bamako
+> UTC,Africa/Banjul
+> UTC,Africa/Bissau
+> UTC,Africa/Conakry
+> UTC,Africa/Dakar
+> UTC,Africa/Freetown
+> UTC,Africa/Lome
+> UTC,Africa/Monrovia
+> UTC,Africa/Nouakchott
+> UTC,Africa/Ouagadougou
+> UTC,Africa/Sao_Tome
+> UTC,America/Danmarkshavn
+> UTC,Antarctica/Troll
+> UTC,Atlantic/Reykjavik
+> UTC,Atlantic/St_Helena
+> UTC,Etc/GMT
+> UTC,Etc/GMT+0
+> UTC,Etc/GMT-0
+> UTC,Etc/GMT0
+> UTC,Etc/Greenwich
+> UTC,Etc/Universal
+> UTC,Etc/Zulu
+> UTC-12,Etc/GMT+12
+> UTC-11,Etc/GMT+11
+> UTC-11,Pacific/Midway
+> UTC-11,Pacific/Niue
+> UTC-11,Pacific/Pago_Pago
+> UTC-10,Etc/GMT+10
+> UTC-10,Pacific/Rarotonga
+> UTC-10,Pacific/Tahiti
+> UTC-9,Etc/GMT+9
+> UTC-9,Pacific/Gambier
+> UTC-8,Etc/GMT+8
+> UTC-8,Pacific/Pitcairn
+> UTC-7,Etc/GMT+7
+> UTC-6,Etc/GMT+6
+> UTC-6,America/Belize
+> UTC-6,America/Costa_Rica
+> UTC-6,America/El_Salvador
+> UTC-6,America/Guatemala
+> UTC-6,America/Managua
+> UTC-6,America/Tegucigalpa
+> UTC-6,Pacific/Galapagos
+> UTC-5,Etc/GMT+5
+> UTC-5,America/Bogota
+> UTC-5,America/Cayman
+> UTC-5,America/Guayaquil
+> UTC-5,America/Jamaica
+> UTC-5,America/Lima
+> UTC-5,America/Panama
+> UTC-4,Etc/GMT+4
+> UTC-4,America/Anguilla
+> UTC-4,America/Antigua
+> UTC-4,America/Aruba
+> UTC-4,America/Barbados
+> UTC-4,America/Blanc-Sablon
+> UTC-4,America/Caracas
+> UTC-4,America/Curacao
+> UTC-4,America/Dominica
+> UTC-4,America/Grenada
+> UTC-4,America/Guadeloupe
+> UTC-4,America/Guyana
+> UTC-4,America/Kralendijk
+> UTC-4,America/La_Paz
+> UTC-4,America/Lower_Princes
+> UTC-4,America/Marigot
+> UTC-4,America/Martinique
+> UTC-4,America/Montserrat
+> UTC-4,America/Port_of_Spain
+> UTC-4,America/Puerto_Rico
+> UTC-4,America/Santo_Domingo
+> UTC-4,America/St_Barthelemy
+> UTC-4,America/St_Kitts
+> UTC-4,America/St_Lucia
+> UTC-4,America/St_Thomas
+> UTC-4,America/St_Vincent
+> UTC-4,America/Tortola
+> UTC-3,Etc/GMT+3
+> UTC-3,America/Cayenne
+> UTC-3,America/Paramaribo
+> UTC-3,Antarctica/Palmer
+> UTC-3,Antarctica/Rothera
+> UTC-2,Etc/GMT+2
+> UTC-2,America/Noronha
+> UTC-2,Atlantic/South_Georgia
+> UTC-1,Etc/GMT+1
+> UTC-1,Atlantic/Cape_Verde
+> ```
+
+Depending on the search result, you can expect the following behavior:
+
+-   If the value of the `timezone` attribute is found in the predefined list of mapped values, it is provisioned in the specified format.
+
+    > ### Note:  
+    > When the conversion is set to `iana` output format, the value of the `timezone` attribute is converted to its default world region mapping value set for the system, which is the first matching timezone entry from the list. This could result in a changed timezone value during the initial provisioning, in which the `"outputFormat"` modifier is set to `iana` output format.
+
+-   If there is not `timezone` attribute value in the specified source path or it is not found in the predefined list, the function returns the default value for the specified output format, as follows:
+    -   for `iana` output format - the value ***Europe/Berlin***
+
+    -   for `sap` output format - the value ***CET***
+
+
+
+EXAMPLE 1:
+
+In the following transformation example, function *convertTimezoneCode* will be applied to the timezone attribute values from the specified source path, converting them in `sap` output format.
+
+For example, the time zone `America/Phoenix` will be provisioned as ***MSTNO***.
+
+```
+{
+  "mappings": [
+    {
+      "sourcePath": "$.timezone",
+      "targetPath": "$.timezone",
+      "functions": [
+        {
+          "type": "convertTimezoneCode",
+          "outputFormat": "sap"
+        }
+      ]
+    }
+  ]
+}
+```
+
+EXAMPLE 2:
+
+In the following transformation example, function *convertTimezoneCode* will be applied to the timezone attribute values from the specified source path, converting them in `iana` output format.
+
+For example, the time zone `AST` will be provisioned as ***America/Halifax***, which is the default value set for the relevant timezone.
+
+```
+{
+  "mappings": [
+    {
+      "sourcePath": "$.timezone",
+      "targetPath": "$.timezone",
+      "functions": [
+        {
+          "type": "convertTimezoneCode",
+          "outputFormat": "iana"
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 compositeId
 
 </td>

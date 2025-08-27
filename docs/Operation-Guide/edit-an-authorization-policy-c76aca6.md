@@ -52,7 +52,7 @@ When you edit an existing custom authorization policy, you can add or delete res
     > 
     > All rows starting with their own `RESTRICT` condition have an `OR` conjunction with the other `RESTRICT` rows.
 
-    For more information, see [Data Control Language for SAP BTP](data-control-language-for-sap-btp-38baa25.md).
+    For more information, see [Data Control Language](data-control-language-38baa25.md).
 
 10. Choose the conditions that come with the application in the dropdown list. Next, choose an operator and choose or enter a value or choose a user attrribute.
 

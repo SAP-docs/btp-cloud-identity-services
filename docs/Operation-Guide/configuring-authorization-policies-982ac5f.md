@@ -232,7 +232,7 @@ Authorization policy administrators can configure the following in custom author
 
 Administrators can edit an existing custom authorization policy. They can add or delete restrictions. The restrictions are refined by attributes with fixed values or user attributes. They can also add `USE` rules to a custom authorization policy and restrict them.
 
-For more information, see [Data Control Language for SAP BTP](data-control-language-for-sap-btp-38baa25.md).
+For more information, see [Data Control Language](data-control-language-38baa25.md).
 
 **Related Information**  
 

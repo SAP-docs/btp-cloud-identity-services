@@ -2,7 +2,7 @@
 
 # Elements and Structure of the Data Control Language \(DCL\)
 
-Use DCL elements to define authorization policies, including rules, resources, conditions, attributes, and a schema. These elements are essential for controlling access to data and resources.
+Use DCL elements to define authorization policies, including rules, actions, resources, conditions, attributes, and a schema. These elements are essential for controlling access to data and resources.
 
 
 
@@ -16,7 +16,7 @@ The data control language uses the following elements for the definition of simp
 
 ## Authorization Policy
 
-Collection of rules. When the definition is complete, developers deploy the policies in an application, and administrators assign the policies to users.
+Collection of rules. Administrators can use base authorization policies to create custom authorization policies, change the rules, and assign the policies to users.
 
 
 
@@ -24,9 +24,9 @@ Collection of rules. When the definition is complete, developers deploy the poli
 
 ## Rule
 
-An element that grants actions such as `read` or `write`. Rules handle actions on resources. A rule can also be restricted in multiple ways.
+An element that grants actions such as `read` or `write`. Rules handle actions on resources on resources such as `resource1` or `resource2`. A rule can also be restricted in multiple ways.
 
-An action is granted on all resources. Use the following syntax:
+An action is granted on a resource. Use the following syntax:
 
 ```sql
 GRANT <action> ON <resource> ;
@@ -44,7 +44,7 @@ GRANT <action> ON <resource> ;
 
 ## Resource
 
-Entities protected by the rule or authorization policy. The application that comes with the authorization policy defines the resource. A resource can be a data object, an endpoint, or identity provider information. A resource has arbitrary attributes that can be used to refine rules.
+Entities protected by the rule or authorization policy. The application that provides the authorization policy defines the resource. Examples for resources are a data object or an endpoint. A resource has arbitrary attributes that can be used to refine rules.
 
 
 
@@ -52,14 +52,14 @@ Entities protected by the rule or authorization policy. The application that com
 
 ## Condition
 
-A logical expression based on attributes with a name and a data type. If conditions are fulfilled, actions are granted on the related resource. A condition is a Boolean function over attributes.
+A logical expression that is mainly used for filtering. It can be based on attributes with a name and a data type. Before allowing a granted action on a specific entity of a resource, the condition is evaluated with the attribute values of that entity. A condition is a Boolean function over attributes.
 
 ```sql
 WHERE <attribute_name> = '<attribute_value>' ;
 ```
 
 -   > ### Sample Code:  
-    > `WHERE Country = 'USA' OR Country = 'Germany';`
+    > `WHERE Country IN ('USA', 'Germany');`
 
 
 For more information, see [Condition Operators](condition-operators-867d328.md).
@@ -80,7 +80,7 @@ For more information, see [Attribute Constraints](attribute-constraints-5810179.
 
 ## Schema
 
-A schema defines names and types of attributes you want to use for the application. Only one schema can be defined for a package folder \(with sub-folders\). Define the schema defined using a file named `schema.dcl` and locate it in the root folder. All schema attributes usages are validated to refer to existing names and their types.
+A schema defines names and types of attributes you want to use for the application. Only one schema can be defined. Define the schema using a file named `schema.dcl` and locate it in the root folder. All schema attributes usages are validated to refer to existing names and their types.
 
 For more information, see [Schema Definition](schema-definition-eee7014.md).
 

@@ -35,7 +35,7 @@ To remove your mobile device that generates passcodes, proceed as follows:
 1.  Access your profile page.
 
     > ### Note:  
-    > If you don't know the URL of your profile page, contact your system administrator.
+    > You have received the link to your profile page in an email with information how to activate your account for user profile. If you can't find this email, and you don't know how to access your profile page, please contact your system administrator for assistance.
 
 2.  Under *Web Two-Factor Authentication*, press the delete button next to the device that you want to remove.
 

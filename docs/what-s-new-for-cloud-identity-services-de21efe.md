@@ -105,6 +105,314 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-08-27
+
+</td>
+<td valign="top">
+
+2025-08-27
+
+</td>
+<td valign="top">
+
+28217
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Subject Name Identifier
+
+</td>
+<td valign="top">
+
+You can chose from where to inherit the Subject Name Identifier if the application is both subscribed and child. See [Configure the Subject Name Identifier Sent to the Application](Operation-Guide/configure-the-subject-name-identifier-sent-to-the-application-1d020e3.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-08-27
+
+</td>
+<td valign="top">
+
+2025-08-27
+
+</td>
+<td valign="top">
+
+28217
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Deprecation of SAP Ariba Category ManagementConnector
+
+</td>
+<td valign="top">
+
+The SAP Ariba Category Management connector is deprecated. This change is due to an update of the business solution’s local user store, which no longer requires user provisioning jobs.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+Deprecated
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-08-27
+
+</td>
+<td valign="top">
+
+2025-08-27
+
+</td>
+<td valign="top">
+
+28217
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+convertTimezoneCode Function Introduced
+
+</td>
+<td valign="top">
+
+You can now configure the convertTimezoneCode function in the Identity Provisioning transformations to convert the value of a `timezone` attribute into another format.
+
+Currently, the function is implemented for SAP Integrated Business Planning for Supply Chain, SAP S/4HANA Cloud, SAP Market Communication for Utilities, SAP Marketing Cloud, and SAP BTP ABAP environment source and target systems.
+
+For more information, refer to the relevant connector documentation under [Supported Systems](supported-systems-81ca0c1.md) and [Transformation Functions](transformation-functions-0cdac7c.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-08-27
+
+</td>
+<td valign="top">
+
+2025-08-27
+
+</td>
+<td valign="top">
+
+28217
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Off-Cycle Upgrade
 
 </td>

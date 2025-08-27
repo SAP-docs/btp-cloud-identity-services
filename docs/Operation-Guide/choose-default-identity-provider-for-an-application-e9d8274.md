@@ -67,7 +67,7 @@ To choose a default identity provider for an application, proceed as follows:
 
     If you select a corporate identity provider, you will access only some of the custom configurations for the applications. The configurations under the *Authentication and Access* and *Branding and Layout* tabs will be partially visible. The user will be prompted to provide credentials in a single logon page.
 
-8.  **Optional:** \(When a corporate identity provider is chosen as default identity provider\) Enable the *Allow Identity Authentication Users Log On* option. For more information see, [Use the Allow Identity Authentication Users Log On Option](use-the-allow-identity-authentication-users-log-on-option-2ec9a7f.md).
+8.  **Optional:** \(When a corporate identity provider is chosen as default identity provider\) Enable the *Allow Identity Authentication Users Log On* option. For more information see, [\(Optional\) Use the Allow Identity Authentication Users Log On Option](optional-use-the-allow-identity-authentication-users-log-on-option-2ec9a7f.md).
 
 
 **Related Information**  

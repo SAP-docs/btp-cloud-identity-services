@@ -417,98 +417,16 @@ You can use SAP Marketing Cloud to read entities from it and provision them to a
     >         "targetPath": "$.groups[*].roleName"
     >       },
     >       {
-    >         "type": "valueMapping",
-    >         "sourcePaths": [
-    >           "$.user.timeZoneCode"
-    >         ],
+    >         "sourcePath": "$.user.timeZoneCode",
+    >         "optional": true,
     >         "targetPath": "$.timezone",
-    >         "defaultValue": "Europe/Berlin",
-    >         "valueMappings": [
+    >         "functions": [
     >           {
-    >             "key": [
-    >               "WDFT"
-    >             ],
-    >             "mappedValue": "Europe/Berlin"
-    >           },
-    >           {
-    >             "key": [
-    >               "ISRAEL"
-    >             ],
-    >             "mappedValue": "Asia/Jerusalem"
-    >           },
-    >           {
-    >             "key": [
-    >               "RUS03"
-    >             ],
-    >             "mappedValue": "Europe/Moscow"
-    >           },
-    >           {
-    >             "key": [
-    >               "AUSNSW"
-    >             ],
-    >             "mappedValue": "Australia/Sydney"
-    >           },
-    >           {
-    >             "key": [
-    >               "UTC+4"
-    >             ],
-    >             "mappedValue": "Asia/Dubai"
-    >           },
-    >           {
-    >             "key": [
-    >               "BRAZIL"
-    >             ],
-    >             "mappedValue": "America/Sao_Paulo"
-    >           },
-    >           {
-    >             "key": [
-    >               "BRZLEA"
-    >             ],
-    >             "mappedValue": "America/Sao_Paulo"
-    >           },
-    >           {
-    >             "key": [
-    >               "MSTNO"
-    >             ],
-    >             "mappedValue": "America/Phoenix"
-    >           },
-    >           {
-    >             "key": [
-    >               "EST"
-    >             ],
-    >             "mappedValue": "America/New_York"
-    >           },
-    >           {
-    >             "key": [
-    >               "UTC"
-    >             ],
-    >             "mappedValue": "Etc/UTC"
-    >           },
-    >           {
-    >             "key": [
-    >               "UTC+3"
-    >             ],
-    >             "mappedValue": "Asia/Riyadh"
-    >           },
-    >           {
-    >             "key": [
-    >               "EST_"
-    >             ],
-    >             "mappedValue": "America/Toronto"
-    >           },
-    >           {
-    >             "key": [
-    >               "UTC+8"
-    >             ],
-    >             "mappedValue": "Asia/Shanghai"
-    >           },
-    >           {
-    >             "key": [
-    >               "JAPAN"
-    >             ],
-    >             "mappedValue": "Asia/Tokyo"
+    >             "type": "convertTimezoneCode",
+    >             "outputFormat": "iana"
     >           }
-    >         ]
+    >         ],
+    >         "defaultValue": "Europe/Berlin"
     >       },
     >       {
     >         "type": "valueMapping",

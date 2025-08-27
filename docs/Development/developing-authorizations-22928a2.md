@@ -40,7 +40,7 @@ The Data Control Language \(DCL\) enables developers to define authorization pol
 -   Support user assignment in the administration console.
 
 
-DCL provides essential elements including rules, resources, conditions, attributes, schemas, and packages for enterprise-grade access control implementation. For more information, see [SAP Cloud Identity Services Developer Guide](https://shiny-adventure-8j72g8e.pages.github.io/).
+DCL provides essential elements including rules, resources, conditions, attributes, schemas, and packages for enterprise-grade access control implementation. For more information, see [SAP Cloud Identity Services Developer Guide](https://sap.github.io/cloud-identity-developer-guide/).
 
 
 

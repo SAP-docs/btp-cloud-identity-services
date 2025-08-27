@@ -10,7 +10,7 @@ Resetting an Identity Provisioning system \(source or target\) deletes all Ident
 
 There might be times when you would like to delete the current Identity Provisioning operational data for a particular system. For example, clearing entities that were read from the source system and were then mapped to SCIM specific attributes via the intermediate transformation logic.
 
-This operation is called *system reset*. If you choose it, you only clear the Identity Provisioning operational data. The system configurations and all existing read and provisioned entities, along with their authorizations, will be preserved. To learn more, see: [Transformations](../transformations-81f5204.md) 
+This operation is called *system reset*. If you choose it, you only clear the Identity Provisioning operational data. The system configurations and all existing read and provisioned entities, along with their authorizations, will be preserved in the back-end source and target systems. To learn more, see: [Transformations](../transformations-81f5204.md) 
 
 Cases that require reset of the provisioning system are:
 

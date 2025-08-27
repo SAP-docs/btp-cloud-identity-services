@@ -890,7 +890,7 @@ Corporate IdPs
 </td>
 <td valign="top">
 
-We have extended the selection of corporate identity providers \(IdPs\) via URL parameter to accept more than one IdP. See [Creating URL To Access Application with Specific Identity Provider](Operation-Guide/creating-url-to-access-application-with-specific-identity-provider-118f5f4.md) and [Configure IdP-Initiated SSO](Operation-Guide/configure-idp-initiated-sso-5d59caa.md).
+We have extended the selection of corporate identity providers \(IdPs\) via URL parameter to accept more than one IdP. See [Create URLs to Access Applications with Specific Identity Providers](Operation-Guide/create-urls-to-access-applications-with-specific-identity-providers-118f5f4.md#loio118f5f4203fd42c98255b1ecf6baa484) and [Configure IdP-Initiated SSO](Operation-Guide/configure-idp-initiated-sso-5d59caa.md).
 
 </td>
 <td valign="top">

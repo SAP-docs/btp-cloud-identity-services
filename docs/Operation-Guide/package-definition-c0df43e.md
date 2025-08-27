@@ -6,7 +6,7 @@ A package is the root folder where the DCL document is located.
 
 
 
-A package can contain multiple DCL documents. The package also contains related auxiliary files.
+A package can contain multiple DCL documents.
 
 > ### Restriction:  
 > -   Only `[a-zA-Z_][a-zA-Z_0-9]*` can be used for a package name, which is the name of the root folder.
@@ -42,7 +42,7 @@ Qualified references are used to specify elements across package boundaries. The
 
 -   `sales.SalesOrder:`Package \[`"sales"`\], Policy:`salesOrder`
 
--   `sales.basic.salesOrder`: Package \[`"sales","basic"`\], Policy: `salesOrder`
+-   `sales.basic.salesOrder`: Package \[`sales/basic`\], Policy: `salesOrder`
 
 
 You can introduce qualified references in a compatible way with an additional qualification prefix.
@@ -51,7 +51,7 @@ You can introduce qualified references in a compatible way with an additional qu
 > ```sql
 > POLICY <policy_name1> {
 >     USE <package>.<policy_name2>; // <policy_name2> is qualified by <package>
->     USE <policy_name3>;           // local policy
+>     USE <policy_name3>;           // local policy (same package)
 > }
 > ```
 
@@ -63,6 +63,4 @@ You can introduce qualified references in a compatible way with an additional qu
     > }
     > ```
 
-
-An alias for imported elements, like in node.js or Python, is a possible option to mitigate long qualification paths. However, we don't recommend a deep structure for policies.
 

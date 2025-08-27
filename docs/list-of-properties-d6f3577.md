@@ -3042,9 +3042,17 @@ For more information, see [Manage Full and Delta Read](Operation-Guide/manage-fu
 
 -   SAP Data Custodian
 
+-   SAP Enterprise Portal
+
+-   SAP Field Service Management
+
+-   SAP HANA Cloud, SAP HANA Database
+
 -   SAP Intelligent Agriculture
 
 -   SAP SuccessFactors
+
+-   SAP SuccessFactors Employee Central Payroll
 
 -   SAP SuccessFactors Learning
 
@@ -4580,9 +4588,7 @@ SAP Concur
 <tr>
 <td valign="top">
 
-`msgraph-filter`
-
-\(*Deprecated*\)
+`msgraph-filter(Deprecated)` 
 
 </td>
 <td valign="top">
@@ -5245,7 +5251,7 @@ A default property, whose only possible value is *true*. That means, HR integrat
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud
+SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\) 
 
 </td>
 </tr>
@@ -5266,7 +5272,7 @@ To learn what criteria you can use, see: [OData URI Conventions](https://www.oda
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud
+SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\) 
 
 </td>
 </tr>
@@ -5280,7 +5286,11 @@ SAP S/4HANA Cloud
 
 This property defines the API version that your SAP S/4HANA Cloud system uses.
 
-Version *1* means your SAP S/4HANA Cloud system uses *SAP\_COM\_0193* communication arrangement.
+By default, Identity Provisioning uses version *1*.
+
+Version *1* means your SAP S/4HANA Cloud system consumes SAP S/4HANA Cloud API: Business User.
+
+Version *3* means your SAP S/4HANA Cloud system consumes System for Cross-domain Identity Management \(SCIM\) API.
 
 **System Role:** Source, Target, Proxy
 
@@ -5288,6 +5298,184 @@ Version *1* means your SAP S/4HANA Cloud system uses *SAP\_COM\_0193* communicat
 <td valign="top">
 
 SAP S/4HANA Cloud
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`s4hana.cloud.group.filter` 
+
+</td>
+<td valign="top">
+
+When specified, only those SAP S/4HANA Cloud groups matching the filter expression will be read.
+
+Supported operators: eq \(equal\), co \(contains\), and sw \(starts with\).
+
+**Possible values:**:
+
+-   `displayName`
+-   `externalId`
+-   `urn:ietf:params:scim:schemas:extension:sap:2.0:Group:type`
+
+For example:
+
+-   *displayName co "ProjectTeam1" or "Students2023"*
+-   *externalId eq "12345678" or externalId sw "123"*
+-   *urn:ietf:params:scim:schemas:extension:sap:2.0:Group:type eq "authorization" and externalId eq "12345678"*
+
+> ### Note:  
+> These combinations are valid for both 'or' and 'and' operators.
+
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\) 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`s4hana.cloud.group.prefix` 
+
+</td>
+<td valign="top">
+
+This property distinguishes SAP S/4HANA Cloud groups by specific prefix. It is an optional property which does not appear by default at system creation.
+
+Example value: `S4HANACLOUD_`
+
+You can use the example value or provide your own.
+
+-   When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP S/4HANA Cloud source system and will be provisioned to the target system with the following name pattern: <code>S4HANACLOUD_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP Integrated Business Planning for Supply ChainSAP S/4HANA Cloud groups in the target system will be distinguished from groups provisioned from other applications.
+
+    If the property is not set, the SAP S/4HANA Cloud groups will be read and provisioned to the target system with their actual display names.
+
+-   When **set in the target system**, only groups containing the `S4HANACLOUD_` prefix in their display name will be provisioned to SAP S/4HANA Cloud. Groups without this prefix in the display name won't be provisioned.
+
+    If the property is not set, all groups will be provisioned to SAP S/4HANA Cloud.
+
+
+**System Role:** Source and Target
+
+</td>
+<td valign="top">
+
+SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\) 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`s4hana.cloud.group.unique.attribute` 
+
+</td>
+<td valign="top">
+
+If the Identity Provisioning tries to create a group that already exists in the SAP S/4HANA Cloud target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
+
+**Possible values:**
+
+Default value: *externalId* and *\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['type'\]*
+
+If the property is not specified, the search is done by the attribute *displayName*.
+
+**System Role:** Target
+
+</td>
+<td valign="top">
+
+SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\) 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`s4hana.cloud.patch.group.members.above.threshold` 
+
+</td>
+<td valign="top">
+
+Defines the threshold number of group members above which they are provisioned on batches with `PATCH` requests, and below which they are provisioned with `PUT` request. Setting this property allows you to avoid timeouts when updating groups with a large number of group members.
+
+The expected value is a positive integer without any separators, such as a space, comma, or period.
+
+**Possible values**: integer
+
+Default value: *20000*
+
+Minimum value: *1*
+
+Maximum value: *20000*
+
+For example:
+
+-   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1 200 members, setting this property to 900 results in the following:
+
+    As 1900 \(the target count of the members\) is above the threshold number of 900, 2 `PATCH` requests will be sent to the SAP S/4HANA Cloud target system. The first request will add 900 group members and the second request will add 300 group members.
+
+    The threshold number you set defines the maximum number of group members processed per batch.
+
+-   `PUT` request: If you have a group with 700 members and you update the group by adding another 100 members, setting this property to 900 results in the following:
+
+    As 800 \(the target count of the members\) is below the threshold number of 900, 1 `PUT` request with 800 group members will be sent to the SAP S/4HANA Cloud target system to update the group.
+
+
+> ### Note:  
+> Regardless of the threshold number you define, when removing group members in SAP S/4HANA Cloud, the maximum number of members which can be removed per one `PATCH` request is 50.
+
+**System Role:**Target
+
+</td>
+<td valign="top">
+
+SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`s4hana.cloud.user.filter`
+
+</td>
+<td valign="top">
+
+When specified, only those SAP S/4HANA Cloud users matching the filter expression will be read. You can filter users by **list of attributes** according to the API syntax of SAP S/4HANA Cloud.
+
+You can set a single attribute or multiple ones as filter criteria. If you enter multiple attributes \(using OR operator\), the filter will search for any of them.
+
+Supported operators: eq \(equal\), ne \(not equal\), sw \(starts with\), ew \(ends with\) and co \(contains\)
+
+**Possible values:**
+
+-   `userName`
+-   `externalId`
+-   `emails[0].value`
+
+For example:
+
+-   *userName eq "johnbrown" and externalId eq "P000252"*
+-   *userName sw "J" or externalId eq "P000252"*
+-   *userName eq "johnbrown" and emails\[0\].value eq "johnbrown@email.com"*
+-   *userName eq "johnbrown" and emails\[0\].value ne "johnbrown@email.com" or externalId eq "P000252"*
+
+    > ### Note:  
+    > These combinations are valid for both 'or' and 'and' operators.
+
+
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\)
 
 </td>
 </tr>
@@ -5314,7 +5502,7 @@ That means, your HR integration will support *employees* and *contingent worker*
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud
+SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\) 
 
 </td>
 </tr>
@@ -5342,7 +5530,7 @@ Default value: *true*
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud
+SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\) 
 
 </td>
 </tr>
@@ -5822,7 +6010,7 @@ For example, if you set the property's value = *30*, the Identity Provisioning w
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud
+SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\) 
 
 </td>
 </tr>
@@ -5850,7 +6038,7 @@ Default value: *false*
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud
+SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\) 
 
 </td>
 </tr>
@@ -5877,7 +6065,7 @@ If you enter a number larger than 100, the service will replace it with the defa
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud
+SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\) 
 
 </td>
 </tr>
@@ -6223,9 +6411,6 @@ Defines the threshold number of group members above which they are provisioned o
 
 The expected value is a positive integer without any separators, such as a space, comma, or period.
 
-> ### Note:  
-> You can use this property when SAP Integrated Business Planning for Supply Chain is based on SCIM Interface for IAM \(in short, SCIM API\).
-
 **Possible values**: integer
 
 Default value: *20000*
@@ -6380,7 +6565,7 @@ Default value \(if the property appears during system creation\): *false*
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud
+SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\) 
 
 </td>
 </tr>
@@ -13062,7 +13247,7 @@ SAP S/4HANA for procurement planning
 If Identity Provisioning tries to provision a user that already exists in the SAP S/4HANA Cloud target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved.
 
 > ### Note:  
-> You can configure this property only when the integration between a human resource \(HR\) system and SAP S/4HANA Cloud target system is **OFF**. Since the HR integration is active and cannot be switched off for SAP S/4HANA Cloud target systems, configuring the `s4hana.cloud.user.unique.attribute` property is currently irrelevant.
+> You can configure this property only when the integration between a human resource \(HR\) system and SAP S/4HANA Cloud target system is **OFF**. Since the HR integration is active and cannot be switched off for SAP S/4HANA Cloud version 1 target systems, configuring the `s4hana.cloud.user.unique.attribute` property is currently irrelevant.
 
 According to your use case, choose how to set up this property:
 
@@ -13081,6 +13266,30 @@ Possible values:
 -   *emails\[0\].value*
 
 Default value: *personExternalID*
+
+Possible values:
+
+-   If your system consumes SAP S/4HANA Cloud API: Business User, the service searches for an existing user by *personExternalID* and *emails\[0\].value*.
+
+    According to your use case, choose how to set up the property:
+
+    -   Default behavior: This property does not appear in the UI during system creation. Its default value is *personExternalID*. That means, if the service finds an existing user by a *personExternalID*, it updates this user with the data of the conflicting one.
+
+        If a user with such а *personExternalID* is not found, the creation of the conflicting user fails.
+
+    -   Value = *emails\[0\].value*. If the service finds an existing user matching both unique attributes *email* and *personExternalID*, it updates this user with the data of the conflicting one. If the service finds an existing user matching only the *email*, the update of the existing user fails.
+
+        If a user with such *email* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+
+
+-   If your system consumes System for Cross-domain Identity Management \(SCIM\) API, the service searches for an existing user by *userName*, *emails\[0\].value*, *externalId*, or another SCIM attribute, or a conjunction of SCIM attributes.
+
+    According to your use case, choose how to set up the property:
+
+    -   Default behavior: This property is missing during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such а *userName* is not found, the creation of the conflicting user fails.
+    -   Value = *emails\[0\].value*. If the service finds an existing user with such *email*, it updates this user with the data of the conflicting one. If a user with such *email* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+    -   Value = *externalId*. If the service finds an existing user with *externalId*, it updates this user with the data of the conflicting one. If a user with such *externalId* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+
 
 **System Role:** Target
 
@@ -13360,7 +13569,7 @@ You can use the example value or provide your own.
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud
+SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\) 
 
 </td>
 </tr>
@@ -15233,6 +15442,119 @@ For example: *application/json*
 If the property is not specified, the default value is taken: *application/scim+json*
 
 **System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Signavio Process Transformation Suite 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`sig.tenant.id`
+
+</td>
+<td valign="top">
+
+The identifier of your SAP Signavio Process Transformation Suite tenant.
+
+**System Role:** Source, Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Signavio Process Transformation Suite 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`sig.group.members.paging.enabled`
+
+</td>
+<td valign="top">
+
+Enables paging of group members.
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+**Default value: *true***
+
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP Signavio Process Transformation Suite 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`sig.user.groups.paging.enabled`
+
+</td>
+<td valign="top">
+
+Enables paging of user’s groups.
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+**Default value: *true***
+
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP Signavio Process Transformation Suite 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`sig.group.members.page.size`
+
+</td>
+<td valign="top">
+
+The number of group members that SAP Signavio Process Transformation Suite returns per request when reading a group.
+
+**Default value:** 1000
+
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP Signavio Process Transformation Suite 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`sig.user.groups.page.size`
+
+</td>
+<td valign="top">
+
+The number of user groups that SAP Signavio Process Transformation Suite returns per request when reading a user.
+
+**Default value:** 1000
+
+**System Role:** Source, Proxy
 
 </td>
 <td valign="top">

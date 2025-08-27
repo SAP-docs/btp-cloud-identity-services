@@ -190,6 +190,11 @@ Create a CBC source system to read users, groups, and group members from it.
 
     **Mapping logic** – the behavior of the default transformation logic is to read all user attributes from the source CBC system, and then map them to the internal SCIM representation. It uses `entityIdSourceSystem` to store the unique ID of the identity.
 
+    > ### Note:  
+    > Provisioning of user's group assignments from an SAP Central Business Configuration source system to a given target system require that users already exist in the target system. These users should be initially created by a previously executed job from that source system.
+    > 
+    > Afterwards, the provisioning of user assignments can be triggered by running a read or resync job.
+
     **Default transformation:**
 
     > ### Code Syntax:  

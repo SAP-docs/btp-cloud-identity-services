@@ -160,6 +160,10 @@ Existing applications that have a parent application assigned to them will inher
 
 -   Protocol
 -   Subject Name Identifier
+
+    > ### Note:  
+    > When a subscribed application becomes a child application, the configuration of the `Subject Name Identifier` of that child application can be different from the parent application or from the application it is subscribed to. You can make the configuration of the `Subject Name Identifier` the same as the parent application by choosing the *Inherit from Parent* button on the top right-hand corner of the screen. You can also make the configuration of the `Subject Name Identifier` the same as the application it is subscribed to by choosing the *Inherit from Source* button on the top right-hand corner of the screen. Depending on your configuration, either the *Inherit from Parent* or the *Inherit from Source* button is active, or both buttons are active.
+
 -   Default Name ID Format
 -   Attributes
 -   Dependencies

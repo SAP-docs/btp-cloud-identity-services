@@ -18,6 +18,9 @@ You have created an instance and generated a service key for the scim service pl
 > ### Note:  
 > Administrators of bundle tenants on Neo environment should enable the *Manage OAuth Clients* permission, as described in *Neo Environment* section in [Manage Authorizations](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/544de9b504214372b4479dc1f6b08cca.html "Manage the authorizations of Identity Provisioning administrators, when your bundle or standalone tenant is running on SAP BTP, Neo environment.") :arrow_upper_right:.
 
+> ### Note:  
+> This connector has been deprecated as of August 25, 2025, and is no longer needed. Customers with existing configurations should stop running jobs to or from SAP Ariba Category Management provisioning systems.
+
 
 
 ## Context

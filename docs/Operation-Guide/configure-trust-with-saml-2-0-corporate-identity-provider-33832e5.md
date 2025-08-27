@@ -175,7 +175,7 @@ Set up trust with a corporate identity provider in the administration console fo
     The URL of the identity provider single sign-on endpoint that receives authentication requests.
 
     > ### Remember:  
-    > Use *HTTP-Redirect* as default binding if you have a link which takes the users to a specific application with a specific corporate identity provider when `Identity Authentication` acts as proxy to multiple corporate identity providers \(IdP\), and the identity providers are more than one. For more information, see [Creating URL To Access Application with Specific Identity Provider](creating-url-to-access-application-with-specific-identity-provider-118f5f4.md).
+    > Use *HTTP-Redirect* as default binding if you have a link which takes the users to a specific application with a specific corporate identity provider when `Identity Authentication` acts as proxy to multiple corporate identity providers \(IdP\), and the identity providers are more than one. For more information, see [Create URLs to Access Applications with Specific Identity Providers](create-urls-to-access-applications-with-specific-identity-providers-118f5f4.md#loio118f5f4203fd42c98255b1ecf6baa484).
 
 
     

@@ -13,6 +13,9 @@ Follow this procedure to set up SAP Ariba Category Management as a target system
 
 You have created an instance and generated a service key for the scim service plan of SAP Ariba Category Management. For more information, see [Creating a SAP Ariba Category Management SCIM Service Instance in Your Subaccount](https://help.sap.com/docs/categories/sap-ariba-category-management-configuration-guide/setting-up-user-replication?version=Latest).
 
+> ### Note:  
+> This connector has been deprecated as of August 25, 2025, and is no longer needed. Customers with existing configurations should stop running jobs to or from SAP Ariba Category Management provisioning systems.
+
 
 
 <a name="loioe4c55e449bb14338a22dd7a49026445b__context_y2y_nxx_rdb"/>

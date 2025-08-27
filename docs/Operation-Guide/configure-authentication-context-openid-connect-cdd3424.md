@@ -43,6 +43,14 @@ Tenant administrator can configure the authentication context in the request sen
 6.  Choose *Add* \> *enter the authentication context class references* \> *save your changes*.
 
 
+
+
+<a name="loiocdd3424e8e5c4f3bb903decfb4a5d7ed__result_ysb_fpp_jgc"/>
+
+## Results
+
+The configured ACRs in the application are sent to the corporate identity provider in the authorization request in the query parameter `acr_values`. The values are separated by a space \( \). You can see this parameter in the network trace of your browser.
+
 **Related Information**  
 
 
