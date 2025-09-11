@@ -16,7 +16,7 @@ The following process outlines how tokens are exchanged from mobile to web appli
 
 1.  Obtain an opaque token.
 
-    The mobile app sends a request to Identity Authentication using a long-lived refresh token to obtain a new opaque token from the service. The mobile app sends the request to the`/token` endpoint.
+    The mobile app sends a request to Identity Authentication using a long-lived refresh token to obtain an opaque access token from the service. The mobile app sends the request to the`/token` endpoint.
 
 2.  Pass the opaque token to the web application.
 

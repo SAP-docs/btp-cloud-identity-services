@@ -13,11 +13,15 @@ Tenant administrator can configure the authentication context in the request sen
 > ### Note:  
 > The following configuration is valid for the OpenID connect corporate identity providers.
 
+The authentication context enables administrators to ensure an authentication context. For example, you can require the corporate identity provider to authenticate users for a particular application with multifactor authentication or certificate-based authentication. The corporate identity providers define what authentication contexts that they support as well as the values they require to trigger a particular authentication context. The OIDC standard doesn't define the authorization context values.
+
+For more information, see [OpenID Connect Core 1.0 incorporating errata set 2](https://openid.net/specs/openid-connect-core-1_0.html).
+
 > ### Tip:  
 > If the authentication context exists in the metadata of the identity provider it, can be seen in the administration console at *Identity Providers* \> *Corporate Identity Providers* \> *from the list - the corporate IdP that provides user authentication to the application* \> *OpenID Connect Configuration* \> *Supported Authentication Contexts section*.
 
 > ### Restriction:  
-> You can add up to 20 authentication context class references with a length of up to 99 characters each.
+> You can add up to 20 authentication context references with a length of up to 99 characters each.
 
 
 
@@ -49,7 +53,7 @@ Tenant administrator can configure the authentication context in the request sen
 
 ## Results
 
-The configured ACRs in the application are sent to the corporate identity provider in the authorization request in the query parameter `acr_values`. The values are separated by a space \( \). You can see this parameter in the network trace of your browser.
+The application sends the configured ACRs \(authentication context references\) to the corporate identity provider as part of the authorization request. These values are included in the `acr_values` query parameter and are separated by spaces \( \). You can see this parameter in the network trace of your browser.
 
 **Related Information**  
 

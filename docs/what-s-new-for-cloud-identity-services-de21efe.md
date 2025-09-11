@@ -145,6 +145,158 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+2025-09-10
+
+</td>
+<td valign="top">
+
+2025-09-10
+
+</td>
+<td valign="top">
+
+28270
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Provided APIs
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have exposed the [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/overview), [Corporate Identity Providers API](https://api.sap.com/api/SCI_IdentityProvider_Directory/overview), and [SAP Cloud Identity Services Application Directory](https://api.sap.com/api/SCI_Application_Directory/overview) as provided APIs for the Administration Console application to be used for principal propagation. See [Consume APIs from the Administration Console](Development/consume-apis-from-the-administration-console-a8fe3ee.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-09-10
+
+</td>
+<td valign="top">
+
+2025-09-10
+
+</td>
+<td valign="top">
+
+28270
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
 2025-08-27
 
 </td>

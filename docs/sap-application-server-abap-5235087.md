@@ -150,6 +150,8 @@ SAP Application Server ABAP \(AS ABAP\) offers a user store and user administrat
     
     Defines the proxy type of the connection you need to provide for your ABAP system.
 
+    The value is set during destination creation in SAP BTP cockpit.
+
     The proxy type *OnPremise* requires the Cloud Connector to access resources within your on-premise network.
 
     Enter: *OnPremise*
@@ -321,6 +323,8 @@ SAP Application Server ABAP \(AS ABAP\) offers a user store and user administrat
     
     > ### Note:  
     > If connection properties, like `User` and `Password`, are configured both in the destination \(SAP BTP cockpit\) and on the *Properties* tab \(Identity Provisioning User Interface\), the values set in the destination are considered with higher priority.
+
+    To learn what additional properties are relevant to this system, see [List of Properties](list-of-properties-d6f3577.md). You can use the main search, or filter properties by the *Name* or *System Type* columns.
 
 3.  Access the Identity Provisioning UI.
 

@@ -4,7 +4,7 @@
 
 A function is a hardcoded piece of transformation logic that receives a value denoted by the input specified by a source path or a source variable. As a result, the value is replicated into the target path or target variable, accordingly.
 
-The Identity Provisioning service uses two types of functions: [*conditional*](transformation-functions-0cdac7c.md#loio0cdac7ce593548d38b5a78dbf1bb444c__section_ct1_v4z_czb) and [*mapping*](transformation-functions-0cdac7c.md#loio0cdac7ce593548d38b5a78dbf1bb444c__section_kvn_r4z_czb) functions. The conditional functions are functions which can be used only in conditional statements. The mappting functions are used in entity transformations and are included as mappings.
+The Identity Provisioning service uses two types of functions: [*conditional*](transformation-functions-0cdac7c.md#loio0cdac7ce593548d38b5a78dbf1bb444c__section_ct1_v4z_czb) and [*mapping*](transformation-functions-0cdac7c.md#loio0cdac7ce593548d38b5a78dbf1bb444c__section_kvn_r4z_czb) functions. The conditional functions are functions which can be used only in conditional statements. The mapping functions are used in entity transformations and are included as mappings.
 
 Functions can also be chained – that means, the output of one function is the input for the next one. See an example with such functions in the **encode / decode** section below.
 
@@ -367,7 +367,7 @@ This function concatenates a string with a prefix or a suffix.
 
 EXAMPLE 1:
 
-In the following transformation example, function *concatString* will be applied to all source logon names \(SAM-account user names\) read from *Microsoft AD*, adhering a prefix **\_ips** and a suffix **123** in the target system. For example, a *sAMAccountName* name **johnsmith** from the source system will be provisioned as **ips\_johnsmith123** in the target system.
+In the following transformation example, function *concatString* will be applied to all source logon names \(SAM-account user names\) read from *Microsoft AD*, adhering a prefix **ips\_** and a suffix **123** in the target system. For example, a *sAMAccountName* name **johnsmith** from the source system will be provisioned as **ips\_johnsmith123** in the target system.
 
 > ### Example:  
 > ```

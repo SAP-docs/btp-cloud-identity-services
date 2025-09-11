@@ -3010,9 +3010,9 @@ All HTTP systems
 </td>
 <td valign="top">
 
-If this property is enabled, every time a provisioning job is started, it does not retrieve the entire amount of source system data but only the last changed entities.
+If this property is enabled,the provisioning job does not retrieve the entire amount of source system data but only the last changed entities.
 
-For more information, see [Manage Full and Delta Read](Operation-Guide/manage-full-and-delta-read-b7f817c.md).
+This property can be used in combination with `ips.full.read.force.count`. For more information refer to the description of the property or [Manage Full and Delta Read](Operation-Guide/manage-full-and-delta-read-b7f817c.md).
 
 **Possible values:**
 
@@ -3074,6 +3074,8 @@ For more information, see [Manage Full and Delta Read](Operation-Guide/manage-fu
 <td valign="top">
 
 If your system \(connector\) works in *delta read* mode, it's recommended to enforce full reads from time to time. To achieve this, set this property to an integer number.
+
+This property is used in combination with `ips.delta.read`. When the provisioning system works in *delta read* mode, the Identity Provisioning triggers a full read job after executing the defined number of delta read jobs. If the full read job finishes successfully, the system switches to *delta read* mode. If it fails, the system continues triggering full read jobs until one finishes successfully.
 
 **Possible values:**
 

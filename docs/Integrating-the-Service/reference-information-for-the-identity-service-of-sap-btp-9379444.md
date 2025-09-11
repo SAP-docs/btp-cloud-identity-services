@@ -451,7 +451,9 @@ Or:
 ```
 
 > ### Restriction:  
-> You can bind a maximum of 20 applications to a single service instance.
+> You can bind a maximum of 100 applications to a single service instance.
+> 
+> You can have a maximum of 20 different certificate subject DNs.
 
 **Credential Types for the Binding of an Instance of the Identity Service**
 

@@ -121,9 +121,27 @@ To create SAP SuccessFactors as a source system, proceed as follows:
 
     For example:
 
-    -   For version 1: `https://apitest.successfactors.com/odata/v2`
+    -   For version 1:
 
-    -   For version 2: `https://apitest.successfactors.com`
+        -   When *BasicAuthentication* is configured as authentication method:
+
+            `https://apitest.successfactors.com/odata/v2`
+
+        -   When *ClientCertificateAuthentication* is configured as authentication method:
+
+            `https://apitest.cert.successfactors.com/odata/v2`
+
+
+    -   For version 2:
+
+        -   When *BasicAuthentication* is configured as authentication method:
+
+            `https://apitest.successfactors.com`
+
+        -   When *ClientCertificateAuthentication* is configured as authentication method:
+
+            `https://apitest.cert.successfactors.com`
+
 
 
     To see the list of all SAP SuccessFactors data centers, see: [SAP SuccessFactors API Reference Guide \(OData V2\): List of SAP SuccessFactors API Servers](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/af2b8d5437494b12be88fe374eba75b6.html?locale=en-US&version=2411) and [System for Cross-domain Identity Management for Workforce in SuccessFactors](https://api.sap.com/api/PLTScim/resource) 

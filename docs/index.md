@@ -674,6 +674,7 @@
         -   [Consuming APIs from Other Applications](Development/consuming-apis-from-other-applications-29e204d.md)
             -   [Provide APIs for Consumption by Other Applications](Development/provide-apis-for-consumption-by-other-applications-9d2fe83.md)
             -   [Consume an API from a Provider Application](Development/consume-an-api-from-a-provider-application-9675b64.md)
+            -   [Consume APIs from the Administration Console](Development/consume-apis-from-the-administration-console-a8fe3ee.md)
         -   [Restricting Access to Microservices Within Applications](Development/restricting-access-to-microservices-within-applications-e004379.md)
             -   [Provide APIs for Consumption by Microservices](Development/provide-apis-for-consumption-by-microservices-04e7b54.md)
             -   [Add Client Credentials for Microservices](Development/add-client-credentials-for-microservices-df8a4a5.md)

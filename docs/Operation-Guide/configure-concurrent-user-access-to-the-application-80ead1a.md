@@ -29,7 +29,7 @@ The concurrent access offers three options:
 
 -   **Error**
 
-    The user can sign in from only one device or browser at a time during the lifetime of the identity provider \(IdP\) session. When the user tries to sign in from another device or browser, they see an error message. The user can sign out from the unwanted sessions via the profile page. The option is available at *Profile Page* \> *Seesions and Tokens* \> *Active Sessions*.
+    The user can sign in from only one device or browser at a time during the lifetime of the identity provider \(IdP\) session. When the user tries to sign in from another device or browser, they see an error message. The user can sign out from the unwanted sessions via the profile page. The option is available at *Profile Page* \> *Sessions and Tokens* \> *Active Sessions*.
 
     To guarantee a consistent behavior for the application, the application session should have the same timeout as the IdP session. For more information about the session management, see [Configure Session Timeout](configure-session-timeout-5ca23e4.md).
 
