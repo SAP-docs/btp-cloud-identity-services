@@ -23,11 +23,11 @@ For more information, see [Configure Integration Between Applications](../Operat
 
 ## Procedure
 
-1.  Develop your consumer application to call the `/token` endpoint of Identity Authentication with the dependency name.
+1.  Develop your consumer application to call the `/oauth2/token` endpoint of Identity Authentication with the dependency name.
 
     **Example: Technical Communication**
 
-    A consumer application \(client ID 3ab1ba0e-c573-4ad5-20a4-28aa4e587a19\) has a dependency to the provider application \(client ID 77f42d85-7da7-1aa1-84a2-e65a76308cd3\) named `techDependency`. The application calls the `/token` endpoint with its client ID and the `resource` parameter and the dependency name used to identify the API that the consumer application consumes.
+    A consumer application \(client ID 3ab1ba0e-c573-4ad5-20a4-28aa4e587a19\) has a dependency to the provider application \(client ID 77f42d85-7da7-1aa1-84a2-e65a76308cd3\) named `techDependency`. The application calls the `/oauth2/token` endpoint with its client ID and the `resource` parameter with the dependency name used to identify the API that the consumer application consumes.
 
     ```
     curl  $iashost/oauth2/token -X POST \
@@ -45,7 +45,7 @@ For more information, see [Configure Integration Between Applications](../Operat
     ```
     {
         "ias_apis": [
-            "techDependency"
+            "apiPermissionGroup"
         ],
     
         "sub": "3ab1ba0e-c573-4ad5-20a4-28aa4e587a19",
@@ -56,7 +56,7 @@ For more information, see [Configure Integration Between Applications](../Operat
 
     **Example: Principal Propagation:**
 
-    A consumer application \(client ID e7c7e327-86c0-48a6-af57-a1234b567869\) has a dependency to the provider application \(client ID 7ab2cd3e-c573-4ad5-9007-28aa4e587a19\) named `myDependency`. The application calls the `/token` endpoint with its client ID and the `resource` parameter and the dependency name used to identify the API that the consumer application consumes.
+    A consumer application \(client ID e7c7e327-86c0-48a6-af57-a1234b567869\) has a dependency to the provider application \(client ID 7ab2cd3e-c573-4ad5-9007-28aa4e587a19\) named `myDependency`. The application calls the `/oauth2/token` endpoint with its client ID and the `resource` parameter with the dependency name used to identify the API that the consumer application consumes.
 
     ```
     curl $iashost/oauth2/token  -X POST \
@@ -74,7 +74,7 @@ For more information, see [Configure Integration Between Applications](../Operat
     ```
     {
         "ias_apis": [
-            "myDependency"
+            "apiPermissionGroup"
         ],   
         "sub": "P123456",
         "mail": "donna.moore@example.com",

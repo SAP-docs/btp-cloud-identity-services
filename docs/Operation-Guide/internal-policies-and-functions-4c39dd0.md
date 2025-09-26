@@ -4,6 +4,8 @@
 
 Developers can create authorization policies and functions for internal purposes. The policies aren't deployed and don't appear in the administration console.
 
+You can use internal authorization policies and functions and map them to a technical client, for example for app-to-app communication. In this case, the policies and functions are set at runtime and are passed to the decision engine in the client libraries. For more information, see [SAP Cloud Identity Services Developer Guide](https://sap.github.io/cloud-identity-developer-guide/).
+
 You can create internal policies and functions by using the keyword `INTERNAL`.
 
 **Effect of Using the INTERNAL Keyword**
@@ -99,7 +101,7 @@ Compile error
 </tr>
 </table>
 
-In downstream tool like Authorization Management, an `INTERNAL` element doesn't show in the user interface. This prevents reuse \(not allowed as described above\) and policy assignment.
+In a downstream tool like Authorization Management, an `INTERNAL` element doesn't show in the user interface. This prevents reuse \(not allowed as described above\) and policy assignment.
 
 You can't combine an `INTERNAL POLICY` with `DEFAULT`. It should be explicitly set with the DCL runtime client API. You can also mark a function with `INTERNAL`.
 

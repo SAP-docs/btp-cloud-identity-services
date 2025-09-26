@@ -10,6 +10,9 @@ Configure corporate user store for applications in the Neo environment to allow 
 > ### Note:  
 > The content in this section is not relevant for China \(Shanghai\) region.
 
+> ### Tip:  
+> The recommended configuration of the corporate user store is in the Cloud Foundry environment. The Cloud Foundry setup can be used also for applications that are in the Neo environment. For more information, see [Corporate User Store \(Cloud Foundry Environment\)](corporate-user-store-cloud-foundry-environment-9942ede.md#loio9942ede4fae84934a8eb184a0015c305).
+
 
 
 ## Overview

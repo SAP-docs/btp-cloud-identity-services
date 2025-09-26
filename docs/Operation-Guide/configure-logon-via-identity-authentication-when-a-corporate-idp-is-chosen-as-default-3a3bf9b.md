@@ -10,7 +10,7 @@ How you prepare these URLs depends on whether the user starts at the identity pr
 
 
 
-<a name="loio3a3bf9bcbee748dc88ca122469193b54__d49e27"/>
+<a name="loio3a3bf9bcbee748dc88ca122469193b54__d50e27"/>
 
 ## Opting for the Local Identity Provider
 
@@ -38,7 +38,7 @@ You can enable users that are stored in SAP Cloud Identity Services to log on wi
 
 
 
-<a name="loio3a3bf9bcbee748dc88ca122469193b54__d49e75"/>
+<a name="loio3a3bf9bcbee748dc88ca122469193b54__d50e75"/>
 
 ## Multiple Corporate Identity Providers
 
@@ -61,7 +61,7 @@ If your application doesn't define rules to determine which identity provider a 
 
 
 
-<a name="loio3a3bf9bcbee748dc88ca122469193b54__d49e111"/>
+<a name="loio3a3bf9bcbee748dc88ca122469193b54__d50e111"/>
 
 ## Deep Hierarchy of Identity Providers
 
@@ -76,17 +76,17 @@ Your landscape has multiple levels of identity providers, perhaps through subsid
 > ### Example:  
 > Example approuter link:
 > 
-> `https://approuter-myapplication.cfapps.eu20-001.hana.ondemand.com?sap_idp=https://corp_idp_1.mydomain.com,corp_idp_2.mydomain.com`
+> `https://approuter-myapplication.cfapps.eu20-001.hana.ondemand.com?sap_idp=https://scis_2.mydomain.com,corp_idp_alpha.mydomain.com`
 > 
 > Example link:
 > 
-> `https://myapplication.cfapps.eu20-001.hana.ondemand.com?idp=https://corp_idp_1.mydomain.com,corp_idp_2.mydomain.com`
+> `https://myapplication.cfapps.eu20-001.hana.ondemand.com?idp=https://scis_2.mydomain.com,corp_idp_alpha.mydomain.com`
 
 
 
-<a name="loio3a3bf9bcbee748dc88ca122469193b54__d49e148"/>
+<a name="loio3a3bf9bcbee748dc88ca122469193b54__d50e148"/>
 
-## Identity-Prover-Initiated Single Sign-On
+## Identity-Provider-Initiated Single Sign-On
 
 > ### Restriction:  
 > This option is only supported by SAML.

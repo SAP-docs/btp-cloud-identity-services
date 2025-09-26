@@ -127,7 +127,7 @@ Limits:
 </td>
 <td valign="top">
 
-An array of redirect URIs that are explicitly allowed for the authorization code flow.
+An array of up to 20 redirect URIs that are explicitly allowed for the authorization code flow.
 
 > ### Restriction:  
 > Redirect URIs are required for the authorization code flow to redirect back to your application.
@@ -146,7 +146,7 @@ For more information, see [OpenID Connect Application Configurations](../Operati
 </td>
 <td valign="top">
 
-An array of redirect URIs, where users can be forwarded after logout.
+An array of up to 20 redirect URIs, where users can be forwarded after logout.
 
 This property is empty by default.
 
@@ -162,7 +162,7 @@ For more information, see [Call Identity Authentication End Session Endpoint](..
 </td>
 <td valign="top">
 
-An array of logout URIs, which are called in a logout flow.
+An array of up to 20 logout URIs, which are called in a logout flow.
 
 This property is empty by default.
 
@@ -316,7 +316,7 @@ Defines the format of access tokens.
 </td>
 <td valign="top">
 
-Use this array to enable the application to consume the APIs of reuse services. Name the reuse services consumed by the application you’re protecting. The system adds the client IDs of the reuse services to the audience claim of the identity token.
+Use this array to enable the application to consume the APIs of reuse services. Name the reuse services consumed by the application you’re protecting. The system adds the client IDs of the reuse services to the audience claim of the identity token. You can name up to 20 services.
 
 > ### Note:  
 > If the token is retrieved based on a public flow \(`public-client` is true\) without client authentication, Cloud Identity Services doesn't add the client IDs of the dependent services to the audience claim.

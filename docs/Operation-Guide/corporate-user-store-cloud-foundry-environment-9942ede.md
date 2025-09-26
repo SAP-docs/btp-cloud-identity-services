@@ -7,6 +7,9 @@ Configure corporate user store for applications in the Cloud Foundry environment
 > ### Note:  
 > The content in this section is only relevant for SAP BTP, Cloud Foundry environment.
 
+> ### Tip:  
+> The Cloud Foundry setup can be used also for applications that are in the Neo environment.
+
 
 
 ## Overview

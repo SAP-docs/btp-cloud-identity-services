@@ -256,6 +256,25 @@ For more information on how to update to version 2, see [Update Connector Versio
     <tr>
     <td valign="top">
     
+    \(Optional\) `sac.group.filter`
+    
+    </td>
+    <td valign="top">
+    
+    When specified, only those SAP Analytics Cloud groups matching the filter expression will be read.
+
+    > ### Note:  
+    > You can use this property when SAP Analytics Cloud is based on SCIM API version 2.
+
+    **Possible values:**
+
+    For example: *displayName eq "ProjectTeam1"*
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     \(Optional\) `sac.api.version`
     
     </td>

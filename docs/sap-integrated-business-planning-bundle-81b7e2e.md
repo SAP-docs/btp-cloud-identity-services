@@ -1,8 +1,8 @@
 <!-- loio81b7e2e232c14b7baf8d2b7e68f7cda3 -->
 
-# SAP IBP for Supply Chain Bundle
+# SAP Integrated Business Planning Bundle
 
-SAP Integrated Business Planning for Supply Chain \(in short, SAP IBP\) bundles with SAP Cloud Identity Services – Identity Authentication and Identity Provisioning.
+SAP Integrated Business Planning \(in short, SAP IBP\) bundles with SAP Cloud Identity Services – Identity Authentication and Identity Provisioning.
 
 
 
@@ -68,5 +68,5 @@ For more information about the provisioning systems \(source, target and proxy\)
 **Related Information**  
 
 
-[SAP Integrated Business Planning for Supply Chain](https://help.sap.com/viewer/product/SAP_INTEGRATED_BUSINESS_PLANNING/2108/en-US?task=discover_task)
+[SAP Integrated Business Planning](https://help.sap.com/viewer/product/SAP_INTEGRATED_BUSINESS_PLANNING/2108/en-US?task=discover_task)
 

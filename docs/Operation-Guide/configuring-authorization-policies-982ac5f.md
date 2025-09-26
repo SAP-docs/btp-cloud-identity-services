@@ -230,7 +230,7 @@ Authorization policy administrators can configure the following in custom author
 
 ## Refining Authorization Policies
 
-Administrators can edit an existing custom authorization policy. They can add or delete restrictions. The restrictions are refined by attributes with fixed values or user attributes. They can also add `USE` rules to a custom authorization policy and restrict them.
+Administrators can edit an existing custom authorization policy. They can add restrictions and manage the values of the restrictions. The restrictions are refined by attributes with fixed values or user attributes. They can also add `USE` rules to a custom authorization policy and restrict them.
 
 For more information, see [Data Control Language](data-control-language-38baa25.md).
 

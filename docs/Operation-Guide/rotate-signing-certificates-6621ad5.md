@@ -10,7 +10,7 @@ Tenant administrators must replace existing signing certificates with new ones b
 
 ## Context
 
-You have received an email notification that your signing certificate is about to expire. You need to create a new one and configure the service provider to use it. Proceed as follows:
+You have received an email notification that your signing certificate is about to expire. The email is sent 30 days, 14 days, and 3 days before the certificate expires. You need to create a new one and configure the service provider to use it. Proceed as follows:
 
 
 
@@ -48,14 +48,7 @@ You have received an email notification that your signing certificate is about t
 
     1.  Navigate to *Applications and Resources* \> *Applications* and select the application for which you want to update the trust configuration.
 
-    2.  Under *Trust* \> *Single Sign-On* \> *SAML 2.0 Configuration* \> *Identity Provider Certificate*.
-
-    3.  Disable the slider and choose activate next to the new certificate.
-
-    4.  Enable the slider.
-
-        > ### Note:  
-        > It takes approximately 2 minutes for the new certificate to appear under the trust configuration of the given application.
+    2.  Under *Trust* \> *Single Sign-On* \> *SAML 2.0 Configuration* \> *Identity Provider Certificate* \> *disable the slider* \> *choose Activate next to the new certificate*.
 
 
 4.  Upload the new certificate to the backend of the trusted application.
@@ -141,6 +134,11 @@ You have received an email notification that your signing certificate is about t
 
     Under *Tenant Settings* \> *Single Sign-On* \> *SAML 2.0 Configuration* \> *Signing Certificates*, select the new certificate as default and save your configuration.
 
+6.  Navigate to *Applications and Resources* \> *Applications* \> *Trust* \> *Single Sign-On* \> *SAML 2.0 Configuration* \> *Identity Provider Certificate* \> *enable the slider*.
+
+    > ### Note:  
+    > It takes approximately 2 minutes for the new certificate to appear under the trust configuration of the given application.
+
 
 **Related Information**  
 
@@ -204,6 +202,8 @@ You have received an email notification that your signing certificate is about t
 [Configure Customer Managed Keys in Administration Console \(Restricted Availability\)](configure-customer-managed-keys-in-administration-console-restricted-availability-fe6e30c.md "")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
+
+[Prompt Users to Explicitly Accept Privacy Policy Document](prompt-users-to-explicitly-accept-privacy-policy-document-f703a95.md "Enable the privacy policy configuration in SAP Cloud Identity Services to prompt users to accept the privacy policy document. This ensures that users explicitly confirm their understanding of document.")
 
 [Configure P-User Next Index](configure-p-user-next-index-045bb1c.md "Set the value for the P-user next index.")
 

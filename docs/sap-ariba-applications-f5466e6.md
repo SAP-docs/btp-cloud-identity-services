@@ -186,7 +186,7 @@ Follow this procedure to set up SAP Ariba Applications as a proxy system.
 
 After fulfilling the prerequisites, you can create an SAP Ariba Applications proxy system to load its users into an on-premise system and provision groups and new users back to SAP Ariba Applications.
 
-These proxy systems consume SCIM 2.0 API provided by SAP Ariba Applications. For more information about the SAP Ariba SCIM API scope of support, see [3228340](https://me.sap.com/notes/3228340).
+These proxy systems consume SCIM 2.0 API provided by SAP Ariba Applications. For more information about the SAP Ariba SCIM API scope of support, see [SAP Ariba SCIM API](https://help.sap.com/docs/ARIBA_APIS_CDC/32f7a26e878a49509192814228bf4499/21cd220f389c42b69991d784cc00ca4f.html).
 
 > ### Note:  
 > The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users and groups. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
@@ -409,6 +409,20 @@ These proxy systems consume SCIM 2.0 API provided by SAP Ariba Applications. For
     <tr>
     <td valign="top">
     
+    \(Optional\) `ariba.applications.group.filter`
+    
+    </td>
+    <td valign="top">
+    
+    When specified, only those SAP Ariba Applications groups matching the filter expression will be read.
+
+    For example: *displayName eq "ProjectTeam1"*
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     \(Optional\) `ariba.applications.support.patch.operation`
     
     </td>
@@ -559,7 +573,7 @@ These proxy systems consume SCIM 2.0 API provided by SAP Ariba Applications. For
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    [SAP Ariba SCIM API](https://help.sap.com/docs/ariba-apis/sap-ariba-scim-api-b3330550673e4208a0300f524f5b8104/getting-started-with-sap-ariba-scim-api)
+    [SCIM API for User and Group Master Data](https://api.sap.com/api/mds/overview)
 
     Default read and write transformations:
 
@@ -949,11 +963,6 @@ These proxy systems consume SCIM 2.0 API provided by SAP Ariba Applications. For
     >         "condition": "$.emails[0].length() > 0",
     >         "constant": true,
     >         "targetPath": "$.emails[0].primary"
-    >       },
-    >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
-    >         "optional": true,
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
     >       },
     >       {
     >         "sourcePath": "$.locale",

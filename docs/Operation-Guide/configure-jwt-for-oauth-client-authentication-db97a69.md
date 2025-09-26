@@ -33,6 +33,8 @@ You have an OpenID Connect application.
 
 6.  Under *JSON Web Tokens*, configure one of the following options and save your changes:
 
+    You can enter a maximum of 20 of each type of trust.
+
     -   \(For RFC 7523-based JWT client tokens\) Choose the *Add* button for *Configure Trust by Issuer* and provide the required info in the popup:
 
         **Configure Trust by Issuer**

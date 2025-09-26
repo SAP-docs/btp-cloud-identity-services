@@ -228,7 +228,7 @@ RFC-based systems use Remote Function Call \(RFC\) for communication between SAP
 
 -   SAP BTP ABAP environment
 
--   SAP Integrated Business Planning for Supply Chain
+-   SAP Integrated Business Planning
 
 -   SAP Market Communication for Utilities
 

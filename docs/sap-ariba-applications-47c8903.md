@@ -181,7 +181,7 @@ Follow this procedure to set up SAP Ariba Applications as a target system.
 
 After fulfilling the prerequisites, you can create an SAP Ariba Applications target system to provision users and groups.
 
-These target systems consume SCIM 2.0 API provided by SAP Ariba Applications. For more information about the SAP Ariba SCIM API scope of support, see [3228340](https://me.sap.com/notes/3228340).
+These target systems consume SCIM 2.0 API provided by SAP Ariba Applications. For more information about the SAP Ariba SCIM API scope of support, see [SAP Ariba SCIM API](https://help.sap.com/docs/ARIBA_APIS_CDC/32f7a26e878a49509192814228bf4499/21cd220f389c42b69991d784cc00ca4f.html).
 
 
 
@@ -398,7 +398,7 @@ These target systems consume SCIM 2.0 API provided by SAP Ariba Applications. Fo
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    [SAP Ariba SCIM API](https://help.sap.com/docs/ariba-apis/sap-ariba-scim-api-b3330550673e4208a0300f524f5b8104/getting-started-with-sap-ariba-scim-api)
+    [SCIM API for User and Group Master Data](https://api.sap.com/api/mds/overview)
 
     To make group assignments via the user resource, you need to change the default transformation of the target system as described in [Enabling Group Assignment](Operation-Guide/enabling-group-assignment-0d80033.md).
 

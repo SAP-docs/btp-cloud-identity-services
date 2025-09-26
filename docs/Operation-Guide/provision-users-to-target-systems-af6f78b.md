@@ -462,7 +462,7 @@ The tenant administrator can choose which of the users to be provisioned to the 
     This will expand the list by 20 users.
 
     > ### Note:  
-    > This option is available only if the users in the tenant are more than 20.
+    > This option is available only if there are more than 20 users in the tenant.
 
 
     

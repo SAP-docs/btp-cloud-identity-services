@@ -454,7 +454,7 @@ Identity Directory Service API \(Successor\)
 <tr>
 <td valign="top">
 
-`timezone`
+`timeZone`
 
 </td>
 <td valign="top">

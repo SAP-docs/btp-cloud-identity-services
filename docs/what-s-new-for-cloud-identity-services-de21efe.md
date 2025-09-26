@@ -105,6 +105,312 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Off-Cycle Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-09-26
+
+</td>
+<td valign="top">
+
+2025-09-26
+
+</td>
+<td valign="top">
+
+28326
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Renamed System
+
+</td>
+<td valign="top">
+
+The SAP Integrated Business Planning for Supply Chain connector has been renamed to SAP Integrated Business Planning. See [SAP Integrated Business Planning](sap-integrated-business-planning-65a847e.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-09-26
+
+</td>
+<td valign="top">
+
+2025-09-26
+
+</td>
+<td valign="top">
+
+28326
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Privacy Policy
+
+</td>
+<td valign="top">
+
+Tenant administrator can require the users to confirm the acceptance of the privacy policy document. A checkbox appears at the registration or update, and users confirm that they have read and understood the privacy policy document before they can continue. See [Prompt Users to Explicitly Accept Privacy Policy Document](Operation-Guide/prompt-users-to-explicitly-accept-privacy-policy-document-f703a95.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-09-26
+
+</td>
+<td valign="top">
+
+2025-09-26
+
+</td>
+<td valign="top">
+
+28326
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Real-Time Provisioning Logs are Enhanced
+
+</td>
+<td valign="top">
+
+Тhe result of the real-time sync execution of entities for the source system is now displayed into a distinct table on the *Real-time provisioning logs* screen.
+
+Additional information is provided in the *Reason* column in case an entity is skipped or not provisioned. See [Monitor Real-Time Logs](Monitoring-and-Reporting/monitor-real-time-logs-a8deb0d.md) .
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-09-26
+
+</td>
+<td valign="top">
+
+2025-09-26
+
+</td>
+<td valign="top">
+
+28326
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Regular Upgrade
 
 </td>
@@ -492,7 +798,7 @@ convertTimezoneCode Function Introduced
 
 You can now configure the convertTimezoneCode function in the Identity Provisioning transformations to convert the value of a `timezone` attribute into another format.
 
-Currently, the function is implemented for SAP Integrated Business Planning for Supply Chain, SAP S/4HANA Cloud, SAP Market Communication for Utilities, SAP Marketing Cloud, and SAP BTP ABAP environment source and target systems.
+Currently, the function is implemented for SAP Integrated Business Planning, SAP S/4HANA Cloud, SAP Market Communication for Utilities, SAP Marketing Cloud, and SAP BTP ABAP environment source and target systems.
 
 For more information, refer to the relevant connector documentation under [Supported Systems](supported-systems-81ca0c1.md) and [Transformation Functions](transformation-functions-0cdac7c.md).
 
@@ -2931,7 +3237,7 @@ The default transformations of the following connectors support attributes from 
 
 For more information, see
 
--   [SAP Integrated Business Planning for Supply Chain](sap-integrated-business-planning-for-supply-chain-65a847e.md)
+-   [SAP Integrated Business Planning](sap-integrated-business-planning-65a847e.md)
 -   [SAP Intelligent Agriculture](sap-intelligent-agriculture-9e47e03.md)
 -   [SAP Jam Collaboration](sap-jam-collaboration-eeeb246.md)
 

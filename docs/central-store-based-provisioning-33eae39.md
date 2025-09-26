@@ -44,7 +44,7 @@ Here is the necessary configuration to enable central store-based provisioning. 
 
 1.  Sign in to SAP Cloud Identity Services administration console and navigate to *Identity Provisioning*.
 
-2.  Add [Local Identity Directory](local-identity-directory-59557ae.md) as a source system.
+2.  Add [Local Identity Directory](local-identity-directory-8c7d05e.md) as a source system.
 
 3.  **Optional**: Configure properties that are relevant for the Local Identity Directory source system, for example `idds.user.filter` and `idds.group.filter`. For more information, see [List of Properties](list-of-properties-d6f3577.md).
 

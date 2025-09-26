@@ -264,7 +264,7 @@ You want to know the correct way to preserve or overwrite user roles on your tar
 
 [SAP BTP ABAP environment](../sap-btp-abap-environment-e763123.md)
 
-[SAP Integrated Business Planning for Supply Chain](../sap-integrated-business-planning-for-supply-chain-5864dc2.md)
+[SAP Integrated Business Planning](../sap-integrated-business-planning-5864dc2.md)
 
 
 

@@ -39,6 +39,8 @@ Define a dependency to the API of another application. With this configuration, 
 
 5.  Enter the required data.
 
+    You can create a maximum of 20 dependencies.
+
     1.  Enter a unique name for the dependency.
 
     2.  Choose the provider application and the API that the consumer application consumes.

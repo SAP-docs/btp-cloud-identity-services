@@ -8,7 +8,7 @@ Authorization Management enables SAP Cloud Identity Services administrators to u
 
 Developers define and deploy an application that supports authorization policies in SAP Cloud Identity Services. They include functional checks, instance-base authorizations, and user attributes. Authorization Management is automatically enabled for a new tenant and can be used as soon as an application requests it. Service instances and bindings are added automatically. The authorization policies are available in the SAP Cloud Identity Services administration console.
 
-For more information, see [Adding Authentication and Authorization](https://help.sap.com/docs/authorization-and-trust-management-service/authorization-and-trust-management/adding-authentication-and-authorization) and [Configuring Authorization Policies](../Operation-Guide/configuring-authorization-policies-982ac5f.md) \(NO FINAL LINK\).
+For more information, see [Adding Authentication and Authorization](https://help.sap.com/docs/authorization-and-trust-management-service/authorization-and-trust-management/adding-authentication-and-authorization) and [Configuring Authorization Policies](../Operation-Guide/configuring-authorization-policies-982ac5f.md).
 
 
 
@@ -16,12 +16,15 @@ For more information, see [Adding Authentication and Authorization](https://help
 
 ## Developing Authorization Policies
 
-Developers use the Cloud Application Programming model for authorization policies. We've provided a sample application, which you can use for the creation of authorization policies.
+Developers can use the Cloud Application Programming model for authorization policies. We've provided a sample application, which you can use for the creation of authorization policies.
 
 -   [Authorization and Access Control](https://cap.cloud.sap/docs/guides/authorization) with the Cloud Application Programming model
 
--   [Sample apps in GitHub](https://github.com/SAP-samples/cloud-cap-samples)
+-   [Sample apps in GitHub](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Fsap.github.io%2Fcloud-identity-developer-guide%2FSamples.html)
 
+
+> ### Note:  
+> Changes in the assignment of authorization policies usually take up to 15 seconds to propagate due to caching delays. The delay can also be longer. So, respect this waiting time.
 
 
 
@@ -46,9 +49,9 @@ DCL provides essential elements including rules, resources, conditions, attribut
 
 ## Process
 
-Developers define the base policies with data control language \(DCL\) and upload them to the authorization management server. the Authorization Management Service forwards the base policies to the DCL compiler, which transforms DCL policies into an internal format \(DCN\) and assembles them by forming authorization bundles in a bundle storage in SAP Cloud Identity Services. The bundle gateway \(BGW\) retrieves the authorization bundles on request from the authorization decision controller \(ADC\), which uses the authorization bundles as input to perform the authorization checks. The administration console displays the bundled applications.
+Developers define the base policies with data control language \(DCL\) and upload them to the authorization management server. The Authorization Management Service forwards the base policies to the DCL compiler, which transforms DCL policies into an internal format \(DCN\) and assembles them by forming authorization bundles in a bundle storage in SAP Cloud Identity Services. The bundle gateway \(BGW\) retrieves the authorization bundles on request from the authorization decision controller \(ADC\), which uses the authorization bundles as input to perform the authorization checks. This happens in the application itself by using the client libraries of Authorization Management. See [Developing Authorizations](developing-authorizations-22928a2.md).
 
-Administrators use the base policies to create custom policies with modified rules and assign them to users.
+Administrators use the base policies to create custom policies with modified rules and assign them to users. See [Configuring Authorization Policies](../Operation-Guide/configuring-authorization-policies-982ac5f.md).
 
-Users of the business application can log on and have access to the resources, which are allowed by the custom authorization policies.
+Users of the business application can log on and have access to the resources, which are allowed by the authorization policies.
 

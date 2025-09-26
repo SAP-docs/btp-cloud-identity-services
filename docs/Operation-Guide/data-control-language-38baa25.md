@@ -12,7 +12,7 @@ Developers define rules and authorization policies in SAP Cloud Identity Service
 
 The following services must be activated in your Cloud Foundry SAP BTP subaccount. Check your services in your subaccount by using `cf marketplace` in the Cloud Foundry command line.
 
--   The Cloud Identity service provides the `identity` service in the Cloud Foundry marketplace. This means that the subaccount is enabled. It has an SAP Cloud Identity Services tenant, which provides the zone.
+-   Authorization Management is part of the Identity service. You can activate Authorization Management for all applications that are created in SAP Cloud Identity Services.
 
 
 
@@ -32,6 +32,7 @@ This is what a policy definition looks like.
 > }
 > POLICY readSalesOrders_Type {
 > 	GRANT read ON salesOrders WHERE SalesOrderType BETWEEN 100 AND 500;
+> }
 > }
 > ```
 

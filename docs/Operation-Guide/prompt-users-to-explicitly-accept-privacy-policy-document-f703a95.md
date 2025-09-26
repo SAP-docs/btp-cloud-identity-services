@@ -1,19 +1,14 @@
-<!-- loio045bb1ce71e04d1bab6955b5f40fd1bb -->
+<!-- loiof703a952257248be8b739992f6ea776c -->
 
-# Configure P-User Next Index
+# Prompt Users to Explicitly Accept Privacy Policy Document
 
-Set the value for the P-user next index.
+Enable the privacy policy configuration in SAP Cloud Identity Services to prompt users to accept the privacy policy document. This ensures that users explicitly confirm their understanding of document.
 
 
 
 ## Context
 
-Every user in Identity Authentication has a `User ID` which is an automatically generated number preceded by the letter P. The first administrator, which is also the first user, receives the number P 000000. The`User ID` of every other user that is created in Identity Authentication is incremented by 1. Thus the second user has a `User ID` P 000001, and so on. When the number reaches P 999999 it is automatically extended and the next number is P 1000000. You can change the P-number index by setting a new number from which the P-number to start. The new value must always be higher than the current one. For example, the User ID of the latest created user is P 000100, which means that the current P-user index is 100. If you want the of the next user to be P 000200,`User ID` then you should make the P-user index 200.
-
-> ### Restriction:  
-> Beware, that after the change is saved you won't be able to set the P-number index value to a number lower than the current one.
-> 
-> The P-number index can't be higher than 2147483647.
+By default, users are not asked explicitly to confirm that they have read and understood the privacy policy of the application when they are activating their account or when the document is updated. Tenant administrator can enable the option to require the users to confirm the acceptance of the document. A checkbox appears at the registration or update, and users confirm that they have read and understood the privacy policy document before they can continue.
 
 
 
@@ -25,12 +20,16 @@ Every user in Identity Authentication has a `User ID` which is an automatically 
 
     At the top of the page, you can view the administrative and license relevant information of the tenant.
 
-3.  Under *Customization*, choose the *Tenant Default Values* list item.
+3.  Under *Customization*, choose the *Privacy Policy* list item.
 
-4.  Enter a number for the *P-user next index*.
+4.  Enable the slider for *Privacy Policy Configuration*
 
-5.  Save your changes.
 
+
+
+## Results
+
+Users are explicitly prompted to accept the Privacy Policy document during update or registration. A checkbox appears at the update or registration form, and users must confirm that they have read and understood the privacy policy document before they can continue.
 
 **Related Information**  
 
@@ -97,7 +96,7 @@ Every user in Identity Authentication has a `User ID` which is an automatically 
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
 
-[Prompt Users to Explicitly Accept Privacy Policy Document](prompt-users-to-explicitly-accept-privacy-policy-document-f703a95.md "Enable the privacy policy configuration in SAP Cloud Identity Services to prompt users to accept the privacy policy document. This ensures that users explicitly confirm their understanding of document.")
+[Configure P-User Next Index](configure-p-user-next-index-045bb1c.md "Set the value for the P-user next index.")
 
 [Reuse SAP Cloud Identity Services Tenants for Different Customer IDs](reuse-sap-cloud-identity-services-tenants-for-different-customer-ids-ebd0258.md "You as a tenant administrator can reuse an existing tenant for configurations and automated subscriptions.")
 

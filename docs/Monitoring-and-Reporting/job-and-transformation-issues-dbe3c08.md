@@ -2032,7 +2032,7 @@ For contract-related questions, read:
 
 ## SAP IBP: Avoid Restoring Decimal Format, Time Zone and Language to Their Defaults
 
-When updating a user in SAP Integrated Business Planning for Supply Chain \(or any other SAP S/4HANA Cloud-based system\), you want to make sure that only specified attribute values are updated, while others remain unchanged.
+When updating a user in SAP Integrated Business Planning \(or any other SAP S/4HANA Cloud-based system\), you want to make sure that only specified attribute values are updated, while others remain unchanged.
 
 > ### Note:  
 > In addition to SAP IBP, this guided answer is also applicable to SAP S/4HANA Cloud, SAP BTP ABAP environmentand SAP Marketing Cloud.

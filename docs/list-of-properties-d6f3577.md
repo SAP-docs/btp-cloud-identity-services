@@ -574,7 +574,7 @@ When specified, only those SAP Ariba Applications groups matching the filter exp
 
 For example: *displayName eq "ProjectTeam1"*
 
-**System Role:** Source
+**System Role:** Source, Proxy
 
 </td>
 <td valign="top">
@@ -3132,7 +3132,7 @@ In case the property is not set, only delta read jobs will be executed. For more
 
 -   SAP Field Service Management
 
--   SAP Integrated Business Planning for Supply Chain
+-   SAP Integrated Business Planning
 
 -   SAP Jam Collaboration
 
@@ -3234,7 +3234,7 @@ When the property is set, the groups are provisioned with their *applicationId* 
 
 -   SAP HANA Cloud, SAP HANA Database
 
--   SAP Integrated Business Planning for Supply Chain
+-   SAP Integrated Business Planning
 
 -   SAP Intelligent Agriculture
 
@@ -4485,7 +4485,7 @@ Value *\(cn=mar\*\)* will return only groups whose CN starts with "mar" \(such a
 
 By default, this filter is empty. That is, if the property is not specified, the filter will search for every group.
 
-**System Role:** Source
+**System Role:** Source, Proxy
 
 </td>
 <td valign="top">
@@ -5353,7 +5353,7 @@ Example value: `S4HANACLOUD_`
 
 You can use the example value or provide your own.
 
--   When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP S/4HANA Cloud source system and will be provisioned to the target system with the following name pattern: <code>S4HANACLOUD_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP Integrated Business Planning for Supply ChainSAP S/4HANA Cloud groups in the target system will be distinguished from groups provisioned from other applications.
+-   When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP S/4HANA Cloud source system and will be provisioned to the target system with the following name pattern: <code>S4HANACLOUD_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP Integrated Business PlanningSAP S/4HANA Cloud groups in the target system will be distinguished from groups provisioned from other applications.
 
     If the property is not set, the SAP S/4HANA Cloud groups will be read and provisioned to the target system with their actual display names.
 
@@ -5909,19 +5909,19 @@ SAP BTP ABAP environment
 </td>
 <td valign="top">
 
-This property distinguishes SAP Integrated Business Planning for Supply Chain roles by specific prefix. It is an optional property which does not appear by default at system creation.
+This property distinguishes SAP Integrated Business Planning roles by specific prefix. It is an optional property which does not appear by default at system creation.
 
 Example value: `IBP_`
 
 You can use the example value or provide your own.
 
--   When **set in the source system**, the prefix will be prepended to the name of the roles that are read from the SAP Integrated Business Planning for Supply Chain source system and will be provisioned to the target system with the following name pattern: <code>IBP_<i class="varname">&lt;role_name&gt;</i></code>. This way SAP Integrated Business Planning for Supply Chain roles in the target system will be distinguished from roles provisioned from other applications.
+-   When **set in the source system**, the prefix will be prepended to the name of the roles that are read from the SAP Integrated Business Planning source system and will be provisioned to the target system with the following name pattern: <code>IBP_<i class="varname">&lt;role_name&gt;</i></code>. This way SAP Integrated Business Planning roles in the target system will be distinguished from roles provisioned from other applications.
 
-    If the property is not set, the SAP Integrated Business Planning for Supply Chain roles will be read and provisioned to the target system with their actual role names.
+    If the property is not set, the SAP Integrated Business Planning roles will be read and provisioned to the target system with their actual role names.
 
--   When **set in the target system**, only roles containing the `IBP_` prefix in their role name will be provisioned to SAP Integrated Business Planning for Supply Chain. Roles without this prefix in the role name won't be provisioned.
+-   When **set in the target system**, only roles containing the `IBP_` prefix in their role name will be provisioned to SAP Integrated Business Planning. Roles without this prefix in the role name won't be provisioned.
 
-    If the property is not set, all roles will be be provisioned to SAP Integrated Business Planning for Supply Chain.
+    If the property is not set, all roles will be be provisioned to SAP Integrated Business Planning.
 
 
 **System Role:** Source and Target
@@ -5929,7 +5929,7 @@ You can use the example value or provide your own.
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain \(using version 1 - SAP Integrated Business Planning API: Business User\) 
+SAP Integrated Business Planning \(using version 1 - SAP Integrated Business Planning API: Business User\) 
 
 </td>
 </tr>
@@ -5959,7 +5959,7 @@ Default value \(if the property appears during system creation\): *false*
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain \(using version 1 - SAP Integrated Business Planning API: Business User\) 
+SAP Integrated Business Planning \(using version 1 - SAP Integrated Business Planning API: Business User\) 
 
 </td>
 </tr>
@@ -6223,7 +6223,7 @@ For example, if you set the property's value = *30*, the Identity Provisioning w
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain \(using version 1 - SAP Integrated Business Planning API: Business User\) 
+SAP Integrated Business Planning \(using version 1 - SAP Integrated Business Planning API: Business User\) 
 
 </td>
 </tr>
@@ -6251,7 +6251,7 @@ Default value: *false*
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain \(using version 1 - SAP Integrated Business Planning API: Business User\) 
+SAP Integrated Business Planning \(using version 1 - SAP Integrated Business Planning API: Business User\) 
 
 </td>
 </tr>
@@ -6278,7 +6278,7 @@ If you enter a number larger than 100, the service will replace it with the defa
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain \(using version 1 - SAP Integrated Business Planning API: Business User\) 
+SAP Integrated Business Planning \(using version 1 - SAP Integrated Business Planning API: Business User\) 
 
 </td>
 </tr>
@@ -6290,7 +6290,7 @@ SAP Integrated Business Planning for Supply Chain \(using version 1 - SAP Integr
 </td>
 <td valign="top">
 
-This property defines the API version which is consumed by the SAP Integrated Business Planning for Supply Chain system.
+This property defines the API version which is consumed by the SAP Integrated Business Planning system.
 
 **Possible values:**
 
@@ -6304,7 +6304,7 @@ By default, Identity Provisioning uses version *1*.
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain
+SAP Integrated Business Planning
 
 </td>
 </tr>
@@ -6316,7 +6316,7 @@ SAP Integrated Business Planning for Supply Chain
 </td>
 <td valign="top">
 
-When specified, only those SAP Integrated Business Planning for Supply Chain groups matching the filter expression will be read.
+When specified, only those SAP Integrated Business Planning groups matching the filter expression will be read.
 
 Supported operators: eq \(equal\), co \(contains\), and sw \(starts with\).
 
@@ -6340,7 +6340,7 @@ For example:
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain \(using version 2 - SCIM Interface for IAM\)
+SAP Integrated Business Planning \(using version 2 - SCIM Interface for IAM\)
 
 </td>
 </tr>
@@ -6352,7 +6352,7 @@ SAP Integrated Business Planning for Supply Chain \(using version 2 - SCIM Inter
 </td>
 <td valign="top">
 
-If the Identity Provisioning tries to create a group that already exists in the SAP Integrated Business Planning for Supply Chain target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
+If the Identity Provisioning tries to create a group that already exists in the SAP Integrated Business Planning target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
 
 **Possible values:**
 
@@ -6365,7 +6365,7 @@ If the property is not specified, the search is done by the default attributes.
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain \(using version 2 - SCIM Interface for IAM\)
+SAP Integrated Business Planning \(using version 2 - SCIM Interface for IAM\)
 
 </td>
 </tr>
@@ -6377,19 +6377,19 @@ SAP Integrated Business Planning for Supply Chain \(using version 2 - SCIM Inter
 </td>
 <td valign="top">
 
-This property distinguishes SAP Integrated Business Planning for Supply Chain groups by specific prefix. It is an optional property which does not appear by default at system creation.
+This property distinguishes SAP Integrated Business Planning groups by specific prefix. It is an optional property which does not appear by default at system creation.
 
 Example value: `IBP_`
 
 You can use the example value or provide your own.
 
--   When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP Integrated Business Planning for Supply Chain source system and will be provisioned to the target system with the following name pattern: <code>IBP_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP Integrated Business Planning for Supply Chain groups in the target system will be distinguished from groups provisioned from other applications.
+-   When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP Integrated Business Planning source system and will be provisioned to the target system with the following name pattern: <code>IBP_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP Integrated Business Planning groups in the target system will be distinguished from groups provisioned from other applications.
 
-    If the property is not set, the SAP Integrated Business Planning for Supply Chain groups will be read and provisioned to the target system with their actual display names.
+    If the property is not set, the SAP Integrated Business Planning groups will be read and provisioned to the target system with their actual display names.
 
--   When **set in the target system**, only groups containing the `IBP_` prefix in their display name will be provisioned to SAP Integrated Business Planning for Supply Chain. Groups without this prefix in the display name won't be provisioned.
+-   When **set in the target system**, only groups containing the `IBP_` prefix in their display name will be provisioned to SAP Integrated Business Planning. Groups without this prefix in the display name won't be provisioned.
 
-    If the property is not set, all groups will be provisioned to SAP Integrated Business Planning for Supply Chain.
+    If the property is not set, all groups will be provisioned to SAP Integrated Business Planning.
 
 
 **System Role:** Source and Target
@@ -6397,7 +6397,7 @@ You can use the example value or provide your own.
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain \(using version 2 - SCIM Interface for IAM\)
+SAP Integrated Business Planning \(using version 2 - SCIM Interface for IAM\)
 
 </td>
 </tr>
@@ -6425,24 +6425,24 @@ For example:
 
 -   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1 200 members, setting this property to 900 results in the following:
 
-    As 1900 \(the target count of the members\) is above the threshold number of 900, 2 `PATCH` requests will be sent to the SAP Integrated Business Planning for Supply Chain target system. The first request will add 900 group members and the second request will add 300 group members.
+    As 1900 \(the target count of the members\) is above the threshold number of 900, 2 `PATCH` requests will be sent to the SAP Integrated Business Planning target system. The first request will add 900 group members and the second request will add 300 group members.
 
     The threshold number you set defines the maximum number of group members processed per batch.
 
 -   `PUT` request: If you have a group with 700 members and you update the group by adding another 100 members, setting this property to 900 results in the following:
 
-    As 800 \(the target count of the members\) is below the threshold number of 900, 1 `PUT` request with 800 group members will be sent to the SAP Integrated Business Planning for Supply Chain target system to update the group.
+    As 800 \(the target count of the members\) is below the threshold number of 900, 1 `PUT` request with 800 group members will be sent to the SAP Integrated Business Planning target system to update the group.
 
 
 > ### Note:  
-> Regardless of the threshold number you define, when removing group members in SAP Integrated Business Planning for Supply Chain, the maximum number of members which can be removed per one `PATCH` request is 50.
+> Regardless of the threshold number you define, when removing group members in SAP Integrated Business Planning, the maximum number of members which can be removed per one `PATCH` request is 50.
 
 **System Role:**Target
 
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain \(using version 2 - SCIM Interface for IAM\)
+SAP Integrated Business Planning \(using version 2 - SCIM Interface for IAM\)
 
 </td>
 </tr>
@@ -6454,7 +6454,7 @@ SAP Integrated Business Planning for Supply Chain \(using version 2 - SCIM Inter
 </td>
 <td valign="top">
 
-When specified, only those SAP Integrated Business Planning for Supply Chain users matching the filter expression will be read. You can filter users by **list of attributes** according to the API syntax of SAP Integrated Business Planning for Supply Chain.
+When specified, only those SAP Integrated Business Planning users matching the filter expression will be read. You can filter users by **list of attributes** according to the API syntax of SAP Integrated Business Planning.
 
 You can set a single attribute or multiple ones as filter criteria. If you enter multiple attributes \(using OR operator\), the filter will search for any of them.
 
@@ -6482,7 +6482,7 @@ For example:
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain \(using version 2 - SCIM Interface for IAM\)
+SAP Integrated Business Planning \(using version 2 - SCIM Interface for IAM\)
 
 </td>
 </tr>
@@ -6595,7 +6595,7 @@ Default value: *true*
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain \(using version 1 - SAP Integrated Business Planning API: Business User\) 
+SAP Integrated Business Planning\(using version 1 - SAP Integrated Business Planning API: Business User\) 
 
 </td>
 </tr>
@@ -6616,7 +6616,7 @@ To learn what criteria you can use, see: [OData URI Conventions](https://www.oda
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain \(using version 1 - SAP Integrated Business Planning API: Business User\) 
+SAP Integrated Business Planning \(using version 1 - SAP Integrated Business Planning API: Business User\) 
 
 </td>
 </tr>
@@ -8897,7 +8897,7 @@ When specified, only those SAP Build Work Zone, advanced edition groups matching
 
 For example: *displayName eq "ProjectTeam1"*
 
-**System Role:** Source
+**System Role:** Source, Proxy
 
 </td>
 <td valign="top">
@@ -11370,13 +11370,13 @@ For example:
 
 -   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1 200 members, setting this property to 900 results in the following:
 
-    As 1900 \(the target count of the members\) is above the threshold number of 900, 2 `PATCH` requests will be sent to the Identity Authentication target system. The first request will add 900 group members and the second request will add 300 group members.
+    As 1900 \(the target count of the members\) is above the threshold number of 900, 2 `PATCH` requests will be sent to the SAP Commerce Cloud target system. The first request will add 900 group members and the second request will add 300 group members.
 
     The threshold number you set defines the maximum number of group members processed per batch.
 
 -   `PUT` request: If you have a group with 700 members and you update the group by adding another 100 members, setting this property to 900 results in the following:
 
-    As 800 \(the target count of the members\) is below the threshold number of 900, 1 `PUT` request with 800 group members will be sent to the Identity Authentication target system to update the group.
+    As 800 \(the target count of the members\) is below the threshold number of 900, 1 `PUT` request with 800 group members will be sent to the SAP Commerce Cloud target system to update the group.
 
 
 > ### Note:  
@@ -11851,13 +11851,13 @@ For example:
 
 -   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1 200 members, setting this property to 900 results in the following:
 
-    As 1 900 \(the target count of the members\) is above the threshold number of 900, 2 `PATCH` requests will be sent to the Local Identity Directory target system. The first request will add 900 group members and the second request will add 300 group members.
+    As 1 900 \(the target count of the members\) is above the threshold number of 900, 2 `PATCH` requests will be sent to the SAP SuccessFactors target system. The first request will add 900 group members and the second request will add 300 group members.
 
     The threshold number you set defines the maximum number of group members processed per batch.
 
 -   `PUT` request: If you have a group with 700 members and you update the group by adding another 100 members, setting this property to 900 results in the following:
 
-    As 800 \(the target count of the members\) is below the threshold number of 900, 1 `PUT` request with 800 group members will be sent to the Local Identity Directory target system to update the group.
+    As 800 \(the target count of the members\) is below the threshold number of 900, 1 `PUT` request with 800 group members will be sent to the SAP SuccessFactors target system to update the group.
 
 
 **System Role:** Target
@@ -12451,7 +12451,7 @@ When specified, only those SAP Analytics Cloud groups matching the filter expres
 
 For example: *displayName eq "ProjectTeam1"*
 
-**System Role:** Source
+**System Role:** Source, Proxy
 
 </td>
 <td valign="top">
@@ -12615,7 +12615,7 @@ When specified, only those SAP Business Network groups matching the filter expre
 
 *displayName eq "Employees"*
 
-**System Role:** Source
+**System Role:** Source, Proxy
 
 </td>
 <td valign="top">
@@ -13347,7 +13347,7 @@ SAP S/4HANA On-Premise
 </td>
 <td valign="top">
 
-If Identity Provisioning tries to provision a user that already exists in the SAP Integrated Business Planning for Supply Chain target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved.
+If Identity Provisioning tries to provision a user that already exists in the SAP Integrated Business Planning target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved.
 
 According to your use case, choose how to set up this property:
 
@@ -13367,7 +13367,7 @@ Possible values:
 
 Default value: *personExternalID*
 
-The possible values of this property depend on the API version which your SAP Integrated Business Planning for Supply Chain system consumes.
+The possible values of this property depend on the API version which your SAP Integrated Business Planning system consumes.
 
 Possible values:
 
@@ -13398,7 +13398,7 @@ Possible values:
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning for Supply Chain
+SAP Integrated Business Planning
 
 </td>
 </tr>
@@ -13751,7 +13751,7 @@ SAP BTP ABAP environment
 
 SAP Application Server ABAP
 
-SAP Integrated Business Planning for Supply Chain
+SAP Integrated Business Planning
 
 SAP Market Communication for Utilities
 
@@ -15088,7 +15088,7 @@ When specified, only those SAP Enable Now groups matching the filter expression 
 
 For example: *displayName eq "ProjectTeam1"*
 
-**System Role:** Source
+**System Role:** Source, Proxy
 
 </td>
 <td valign="top">

@@ -21,7 +21,7 @@ This document describes how developers configure the certificates used for authe
 
 You can use a certificate to authenticate when REST API calls \(Invitation REST API, User management REST API, Password Service Rest API, and Forgot Service REST API\) to the tenant of Identity Authentication are used. The certificate can also be used in the OpenID Connect scenarios of Identity Authentication.
 
-For the configuration, you have to provide the base64-encoded certificate as a file or plain text, or you can generate a certificate via the administration console.
+For the configuration, you have to provide the base64-encoded certificate as a file or plain text, or you can generate a certificate via the administration console. You can enter a maximum of 20 certificates.
 
 By default all scope options are selected and the *Scope* field is disabled. Your certificates are used for all scopes.
 

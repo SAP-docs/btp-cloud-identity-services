@@ -1,8 +1,8 @@
 <!-- loio5864dc217f31443dab6d32fd2eeefda9 -->
 
-# SAP Integrated Business Planning for Supply Chain
+# SAP Integrated Business Planning
 
-Follow this procedure to set up SAP Integrated Business Planning for Supply Chain \(in short, SAP IBP\) as a target system.
+Follow this procedure to set up SAP Integrated Business Planning \(in short, SAP IBP\) as a target system.
 
 
 
@@ -10,7 +10,7 @@ Follow this procedure to set up SAP Integrated Business Planning for Supply Chai
 
 ## Prerequisites
 
-To establish the connection between Identity Provisioning and SAP Integrated Business Planning for Supply Chain, you need to set up the communication \(user, system and arrangement\) on SAP Integrated Business Planning for Supply Chain. You can do it now \(as a prerequisite\) or in the process of configuring SAP Integrated Business Planning for Supply Chain as a target system, as described in step 3.
+To establish the connection between Identity Provisioning and SAP Integrated Business Planning, you need to set up the communication \(user, system and arrangement\) on SAP Integrated Business Planning. You can do it now \(as a prerequisite\) or in the process of configuring SAP Integrated Business Planning as a target system, as described in step 3.
 
 
 
@@ -18,25 +18,25 @@ To establish the connection between Identity Provisioning and SAP Integrated Bus
 
 ## Context
 
-SAP Integrated Business Planning for Supply Chain is a cloud-based solution that combines sales and operations planning \(S&OP\), forecasting and demand, response and supply, demand-driven replenishment, and inventory planning.
+SAP Integrated Business Planning is a cloud-based solution that combines sales and operations planning \(S&OP\), forecasting and demand, response and supply, demand-driven replenishment, and inventory planning.
 
-You can use Identity Provisioning to configure SAP IBP as a target system where you can provision entities from a particular source system. This scenario supports provisioning **users** and **role assignments**. In SAP Integrated Business Planning for Supply Chain, groups correspond to roles, thus group members are user assignments of a role.
+You can use Identity Provisioning to configure SAP IBP as a target system where you can provision entities from a particular source system. This scenario supports provisioning **users** and **role assignments**. In SAP Integrated Business Planning, groups correspond to roles, thus group members are user assignments of a role.
 
 > ### Note:  
-> Identity Provisioning cannot create and delete roles in SAP Integrated Business Planning for Supply Chain target system. It can only create, update and delete user assignments of a role. Therefore, roles must have been created in SAP Integrated Business Planning for Supply Chain system before you run a provisioning job.
+> Identity Provisioning cannot create and delete roles in SAP Integrated Business Planning target system. It can only create, update and delete user assignments of a role. Therefore, roles must have been created in SAP Integrated Business Planning system before you run a provisioning job.
 > 
-> For example, if you try to create or delete a role in SAP Integrated Business Planning for Supply Chain, Identity Provisioning will only add or remove the user assignments of that role, respectively.
+> For example, if you try to create or delete a role in SAP Integrated Business Planning, Identity Provisioning will only add or remove the user assignments of that role, respectively.
 
 The Identity Provisioning service manages the complete set of **business partners** and their relevant **business users** \(employee\).
 
-SAP Integrated Business Planning for Supply Chain provides different APIs for integration with Identity Provisioning, resulting in different connector versions for each API. Each connector version supports specific attribute mappings within the transformations and requires particular property values. By default, the Identity Provisioning service uses version *1*. The value of the `ibp.api.version` property controls which API you use.
+SAP Integrated Business Planning provides different APIs for integration with Identity Provisioning, resulting in different connector versions for each API. Each connector version supports specific attribute mappings within the transformations and requires particular property values. By default, the Identity Provisioning service uses version *1*. The value of the `ibp.api.version` property controls which API you use.
 
--   When the value is set to *1*, or the property is not defined \(typical for systems created before versioning was introduced on June 3, 2025\), SAP Integrated Business Planning API: Business User is used. This API version is SOAP based. It supports provisioning **users** and **role assignments**. In SAP Integrated Business Planning for Supply Chain version 1, groups correspond to roles, thus group members are user assignments of a role.
+-   When the value is set to *1*, or the property is not defined \(typical for systems created before versioning was introduced on June 3, 2025\), SAP Integrated Business Planning API: Business User is used. This API version is SOAP based. It supports provisioning **users** and **role assignments**. In SAP Integrated Business Planning version 1, groups correspond to roles, thus group members are user assignments of a role.
 
     > ### Note:  
-    > Identity Provisioning cannot create and delete roles in SAP Integrated Business Planning for Supply Chain target system. It can only create, update and delete user assignments of a role. Therefore, roles must have been created in SAP Integrated Business Planning for Supply Chain system before you run a provisioning job.
+    > Identity Provisioning cannot create and delete roles in SAP Integrated Business Planning target system. It can only create, update and delete user assignments of a role. Therefore, roles must have been created in SAP Integrated Business Planning system before you run a provisioning job.
     > 
-    > For example, if you try to create or delete a role in SAP Integrated Business Planning for Supply Chain, Identity Provisioning will only add or remove the user assignments of that role, respectively.
+    > For example, if you try to create or delete a role in SAP Integrated Business Planning, Identity Provisioning will only add or remove the user assignments of that role, respectively.
 
     For more information on how to update to version *2*, see [Update Connector Version](Operation-Guide/update-connector-version-8558733.md).
 
@@ -56,18 +56,18 @@ SAP Integrated Business Planning for Supply Chain provides different APIs for in
 
 2.  Sign in to the administration console of SAP Cloud Identity Services and navigate to *Identity Provisioning* \> *Target Systems*.
 
-3.  Add *SAP Integrated Business Planning for Supply Chain* as a target system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
+3.  Add *SAP Integrated Business Planning* as a target system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
-4.  Set up the communication between Identity Provisioning and SAP Integrated Business Planning for Supply Chain and configure your authentication method \(basic or certificate-based\).
+4.  Set up the communication between Identity Provisioning and SAP Integrated Business Planning and configure your authentication method \(basic or certificate-based\).
 
     > ### Note:  
     > We recommend that you use certificate-based authentication.
 
-    1.  In your newly added SAP Integrated Business Planning for Supply Chain target system, select the *Certificate* tab and choose *Generate* \> *Download*, as described in [Generate and Manage Certificates for Outbound Connection](https://help.sap.com/docs/IDENTITY_PROVISIONING/f48e822d6d484fa5ade7dda78b64d9f5/76867db8ce534becbfc08b050695df8e.html?version=Cloud).
+    1.  In your newly added SAP Integrated Business Planning target system, select the *Certificate* tab and choose *Generate* \> *Download*, as described in [Generate and Manage Certificates for Outbound Connection](https://help.sap.com/docs/IDENTITY_PROVISIONING/f48e822d6d484fa5ade7dda78b64d9f5/76867db8ce534becbfc08b050695df8e.html?version=Cloud).
 
         Skip step **a.** if you want to use basic authentication.
 
-        The next steps are performed in SAP Integrated Business Planning for Supply Chain backend system and are relevant for both basic and certificate-based authentication.
+        The next steps are performed in SAP Integrated Business Planning backend system and are relevant for both basic and certificate-based authentication.
 
     2.  [Create a communication user](https://help.sap.com/viewer/feae3cea3cc549aaa9d9de7d363a83e6/Latest/en-US/4bff8d203d4c4b1c8dd25564d1913302.html) and provide the respective credentials.
 
@@ -88,7 +88,7 @@ SAP Integrated Business Planning for Supply Chain provides different APIs for in
         > 
         > The User UUID is universally unique identifier. This attribute is immutable and unique across technology layers, such as user interface, APIs, and security tokens, as well as across products and lines of business contributing to a business process in the Intelligent Enterprise.
 
-        -   When SAP Integrated Business Planning for Supply Chain version *1* is used:
+        -   When SAP Integrated Business Planning version *1* is used:
 
             For your Identity Provisioning scenario, choose *Scenario ID* SAP\_COM\_0193 \(SAP Cloud Identity Provisioning Integration\).
 
@@ -97,7 +97,7 @@ SAP Integrated Business Planning for Supply Chain provides different APIs for in
             > 
             > The User UUID is universally unique identifier. This attribute is immutable and unique across technology layers, such as user interface, APIs, and security tokens, as well as across products and lines of business contributing to a business process in the Intelligent Enterprise.
 
-        -   When SAP Integrated Business Planning for Supply Chain version *2* is used:
+        -   When SAP Integrated Business Planning version *2* is used:
 
             For your Identity Provisioning scenario, choose *Scenario ID* SAP\_COM\_0465 \(System for Cross-domain Identity Management Integration\).
 
@@ -232,7 +232,7 @@ SAP Integrated Business Planning for Supply Chain provides different APIs for in
     </td>
     <td valign="top">
     
-    The API version which is consumed by the SAP Integrated Business Planning for Supply Chain system.
+    The API version which is consumed by the SAP Integrated Business Planning system.
 
     By default, Identity Provisioning uses version *1*.
     
@@ -258,7 +258,7 @@ SAP Integrated Business Planning for Supply Chain provides different APIs for in
     </td>
     <td valign="top">
     
-    If Identity Provisioning tries to provision a user that already exists in the SAP Integrated Business Planning for Supply Chain target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved.
+    If Identity Provisioning tries to provision a user that already exists in the SAP Integrated Business Planning target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved.
 
     -   Default behavior: This property does not appear in the UI during system creation. Its default value is *personExternalID*. That means, if the service finds an existing user by a *personExternalID*, it updates this user with the data of the conflicting one.
 
@@ -276,7 +276,7 @@ SAP Integrated Business Planning for Supply Chain provides different APIs for in
 
     Default value: *personExternalID*
 
-    The possible values of this property depend on the API version which your SAP Integrated Business Planning for Supply Chain system consumes.
+    The possible values of this property depend on the API version which your SAP Integrated Business Planning system consumes.
 
     Possible values:
 
@@ -333,15 +333,15 @@ SAP Integrated Business Planning for Supply Chain provides different APIs for in
     </td>
     <td valign="top">
     
-    This property distinguishes SAP Integrated Business Planning for Supply Chain roles by specific prefix. It is an optional property which does not appear by default at system creation.
+    This property distinguishes SAP Integrated Business Planning roles by specific prefix. It is an optional property which does not appear by default at system creation.
 
     Example value: `IBP_`
 
     You can use the example value or provide your own.
 
-    When **set in the target system**, only roles containing the `IBP_` prefix in their role name will be provisioned to SAP Integrated Business Planning for Supply Chain. Roles without this prefix in the role name won't be provisioned.
+    When **set in the target system**, only roles containing the `IBP_` prefix in their role name will be provisioned to SAP Integrated Business Planning. Roles without this prefix in the role name won't be provisioned.
 
-    If the property is not set, all roles will be be provisioned to SAP Integrated Business Planning for Supply Chain.
+    If the property is not set, all roles will be provisioned to SAP Integrated Business Planning.
 
     **Relevant for connector version 1**
     
@@ -355,15 +355,15 @@ SAP Integrated Business Planning for Supply Chain provides different APIs for in
     </td>
     <td valign="top">
     
-    This property distinguishes SAP Integrated Business Planning for Supply Chain groups by specific prefix. It is an optional property which does not appear by default at system creation.
+    This property distinguishes SAP Integrated Business Planning groups by specific prefix. It is an optional property which does not appear by default at system creation.
 
     Example value: `IBP_`
 
     You can use the example value or provide your own.
 
-    When **set in the target system**, only groups containing the `IBP_` prefix in their display name will be provisioned to SAP Integrated Business Planning for Supply Chain. Groups without this prefix in the display name won't be provisioned.
+    When **set in the target system**, only groups containing the `IBP_` prefix in their display name will be provisioned to SAP Integrated Business Planning. Groups without this prefix in the display name won't be provisioned.
 
-    If the property is not set, all groups will be provisioned to SAP Integrated Business Planning for Supply Chain.
+    If the property is not set, all groups will be provisioned to SAP Integrated Business Planning.
 
     For more information, see [List of Properties](list-of-properties-d6f3577.md).
 
@@ -379,7 +379,7 @@ SAP Integrated Business Planning for Supply Chain provides different APIs for in
     </td>
     <td valign="top">
     
-    If the Identity Provisioning tries to create a group that already exists in the SAP Integrated Business Planning for Supply Chain target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
+    If the Identity Provisioning tries to create a group that already exists in the SAP Integrated Business Planning target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
 
     Default value \(when not specified\): *externalId* and *\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['type'\]*
 
@@ -436,7 +436,7 @@ SAP Integrated Business Planning for Supply Chain provides different APIs for in
     The expected value is a positive integer without any separators, such as a space, comma, or period.
 
     > ### Note:  
-    > You can use this property when SAP Integrated Business Planning for Supply Chain is based on SCIM Interface for IAM \(in short, SCIM API\).
+    > You can use this property when SAP Integrated Business Planning is based on SCIM Interface for IAM \(in short, SCIM API\).
 
     **Possible values**: integer
 
@@ -983,13 +983,13 @@ SAP Integrated Business Planning for Supply Chain provides different APIs for in
 
     **Group Uniqueness and Provisioning**
 
-    The most common scenario includes SAP Integrated Business Planning for Supply Chain version 2 as source system and Identity Authentication version 2 or Local Identity Directory as target system, that supports the custom name attribute.
+    The most common scenario includes SAP Integrated Business Planning version 2 as source system and Identity Authentication version 2 or Local Identity Directory as target system, that supports the custom name attribute.
 
-    The uniqueness of the group in SAP Integrated Business Planning for Supply Chain version 2 is ensured by the combination of two unique attributes: `externalId` and `type`. Since we distinguish two group types, `userGroup` and `authorization`, there is a possibility that two groups of different `type` share the same `externalId`. As the `externalId` attribute is mapped to the `custom name` of the group in Identity Authentication version 2 and Local Identity Directory, potential conflicts may occure.
+    The uniqueness of the group in SAP Integrated Business Planning version 2 is ensured by the combination of two unique attributes: `externalId` and `type`. Since we distinguish two group types, `userGroup` and `authorization`, there is a possibility that two groups of different `type` share the same `externalId`. As the `externalId` attribute is mapped to the `custom name` of the group in Identity Authentication version 2 and Local Identity Directory, potential conflicts may occure.
 
-    When a group of type `authorization` is provisioned from SAP Integrated Business Planning for Supply Chain version 2 source, the suffix *:authorization* is appended to its `custom name` in the target system. This ensures the successful provisioning of two groups with identical `externalIds` to Identity Authentication version 2 or Local Identity Directory, as they are provisioned with unique custom names to the target.
+    When a group of type `authorization` is provisioned from SAP Integrated Business Planning version 2 source, the suffix *:authorization* is appended to its `custom name` in the target system. This ensures the successful provisioning of two groups with identical `externalIds` to Identity Authentication version 2 or Local Identity Directory, as they are provisioned with unique custom names to the target.
 
-    When these groups are provisioning from Identity Authentication version 2 or Local Identity Directory as source system back to SAP Integrated Business Planning for Supply Chain version 2 as target, each group `custom name` is checked for the suffix *:authorization*. If such is detected, it is removed so that the initial value of the `externalId` of the group in SAP Integrated Business Planning for Supply Chain version 2 system is restored.
+    When these groups are provisioning from Identity Authentication version 2 or Local Identity Directory as source system back to SAP Integrated Business Planning version 2 as target, each group `custom name` is checked for the suffix *:authorization*. If such is detected, it is removed so that the initial value of the `externalId` of the group in SAP Integrated Business Planning version 2 system is restored.
 
 7.  Now, add a source system from which to read users and roles. Choose from: [Source Systems](source-systems-58033be.md)
 

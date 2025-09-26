@@ -260,6 +260,26 @@ There are two versions of the LDAP Server connector. Both consume the LDAP Serve
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    \(Optional\) `ldap.group.filter`
+    
+    </td>
+    <td valign="top">
+    
+    You can optimize the search to return only particular groups.
+
+    To enter correct group filters, stick to the standard LDAP specification. See: [LDAP Representation of Filters – Examples](https://tools.ietf.org/html/rfc4515#section-4).
+
+    For example:
+
+    Value *\(cn=mar\*\)* will return only groups whose CN starts with "mar" \(such as *marked*, *March*, or *Marketing*\).
+
+    By default, this filter is empty. That is, if the property is not specified, the filter will search for every group.
+    
+    </td>
+    </tr>
     </table>
     
     > ### Remember:  

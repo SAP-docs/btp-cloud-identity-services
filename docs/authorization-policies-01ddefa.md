@@ -55,7 +55,7 @@ We recommend to automatically assigning authorizations to users based on rules, 
 
 1.  Developers of the business application, who define the authorization model using base authorization policies and enforce them by implementing authorization checks
 
-2.  Administrators, who manage custom authorization policies from base policies, set business restrictions on policies, and assign bothe types of policies to application users
+2.  Administrators, who manage custom authorization policies from base policies, set business restrictions on policies, and assign both types of policies to application users
 
 3.  Users of the business application, who are checked for specific attributes that authorize them to perform specific actions on specific resources
 
@@ -66,11 +66,11 @@ We recommend to automatically assigning authorizations to users based on rules, 
 
 ## Process
 
-Developers define the base policies with data control language \(DCL\) and upload them to the authorization management server. the Authorization Management Service forwards the base policies to the DCL compiler, which transforms DCL policies into an internal format \(DCN\) and assembles them by forming authorization bundles in a bundle storage in SAP Cloud Identity Services. The bundle gateway \(BGW\) retrieves the authorization bundles on request from the authorization decision controller \(ADC\), which uses the authorization bundles as input to perform the authorization checks. The administration console displays the bundled applications.
+Developers define the base policies with data control language \(DCL\) and upload them to the authorization management server. The Authorization Management Service forwards the base policies to the DCL compiler, which transforms DCL policies into an internal format \(DCN\) and assembles them by forming authorization bundles in a bundle storage in SAP Cloud Identity Services. The bundle gateway \(BGW\) retrieves the authorization bundles on request from the authorization decision controller \(ADC\), which uses the authorization bundles as input to perform the authorization checks. This happens in the application itself by using the client libraries of Authorization Management. See [Developing Authorizations](Development/developing-authorizations-22928a2.md).
 
-Administrators use the base policies to create custom policies with modified rules and assign them to users.
+Administrators use the base policies to create custom policies with modified rules and assign them to users. See [Configuring Authorization Policies](Operation-Guide/configuring-authorization-policies-982ac5f.md).
 
-Users of the business application can log on and have access to the resources, which are allowed by the custom authorization policies.
+Users of the business application can log on and have access to the resources, which are allowed by the authorization policies.
 
 **Related Information**  
 

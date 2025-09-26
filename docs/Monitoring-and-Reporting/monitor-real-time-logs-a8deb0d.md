@@ -92,20 +92,6 @@ You can search, view, refresh and configure a retention period of real-time prov
     <tr>
     <td valign="top">
     
-    *Start Time* 
-    
-    </td>
-    <td valign="top">
-    
-    Date, time, and time zone in UTC format when the real-time sync is triggered.
-
-    For example: *28/Jun/2023 09:19:00 +03*
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     *Status* 
     
     </td>
@@ -124,9 +110,23 @@ You can search, view, refresh and configure a retention period of real-time prov
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    *Start Time* 
+    
+    </td>
+    <td valign="top">
+    
+    Date, time, and time zone in UTC format when the real-time sync is triggered.
+
+    For example: *28/Jun/2023 09:19:00 +03*
+    
+    </td>
+    </tr>
     </table>
     
-3.  In the *Real-Time Log Details* screen, view the following details under the *<Source System\>* name: log type \(*Real Time*\), entity ID \(if it is available\), start time, status, error message and *Result on Target System* table.
+3.  In the *Real-Time Log Details* screen, view the following details under the *<Source System\>* name: log type \(*Real Time*\), entity ID \(if it is available\), start time, status, error message and *Result on Source and Target System* tables.
 
 
     <table>
@@ -145,12 +145,26 @@ You can search, view, refresh and configure a retention period of real-time prov
     <tr>
     <td valign="top">
     
+    *Source System* 
+    
+    </td>
+    <td valign="top">
+    
+    The name of the source system from which the real-time provisioning was triggered.
+
+    For example: *IAS\_Source*
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     *Target System* 
     
     </td>
     <td valign="top">
     
-    The name of the target system the real-time provisioning is triggered to.
+    The name of the target system for which the real-time provisioning was triggered.
 
     For example: *Concur\_Target*
     
@@ -221,6 +235,27 @@ You can search, view, refresh and configure a retention period of real-time prov
     Additional information about the failed entity.
 
     If the target system is SAP BTP XS Advanced UAA \(Cloud Foundry\), the *Additional Information* column shows the origin of the users that have been created, updated or deleted.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Reason* 
+    
+    </td>
+    <td valign="top">
+    
+    -   **Reason \(Source System\)**:
+
+        Specifies that the entity was skipped and will to be deprovisioned from the target system.
+
+    -   **Reason \(Target System\)**:
+
+        Specifies that the entity was skipped and has been deprovisioned from the target system.
+
+
+
     
     </td>
     </tr>

@@ -23,7 +23,7 @@ SAP Analytics Cloud is an all-in-one cloud product offered as software as a serv
 
 You can use Identity Provisioning to configure SAP Analytics Cloud as a target system where you can provision users and groups. The target system consumes SCIM 2.0 API provided by SAP Analytics Cloud. For more information, see [SAP Analytics Cloud: User and Team Provisioning API](https://help.sap.com/viewer/298f82da4b184d1fb825b7ffe365e94a/release/en-US/36c9929c050e428ba6b391bf16b018fc.html).
 
-There are two versions of the SAP Analytics Cloud SCIM API. They are handled by the`sac.api.version` property as follows:
+There are two versions of the SAP Analytics Cloud SCIM API. They are handled by the `sac.api.version` property as follows:
 
 -   When the value is set to `1` or the property is not defined \(typical for systems created before versioning was introduced on April 10, 2023\), SAP Analytics Cloud SCIM API version 1 is used. This is the default value.
 

@@ -212,6 +212,20 @@ You can use Identity Provisioning to configure SAP Enable Now as a proxy system 
     <tr>
     <td valign="top">
     
+    \(Optional\) `en.group.filter`
+    
+    </td>
+    <td valign="top">
+    
+    When specified, only those SAP Enable Now groups matching the filter expression will be read.
+
+    For example: *userName eq "SmithJ"*
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     `en.support.patch.operation`
     
     </td>

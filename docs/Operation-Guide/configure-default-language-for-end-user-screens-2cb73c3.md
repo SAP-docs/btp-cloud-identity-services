@@ -126,6 +126,8 @@ The language for the end user screens is set according to the following order of
 
 [Configure Customer Managed Keys in Administration Console \(Restricted Availability\)](configure-customer-managed-keys-in-administration-console-restricted-availability-fe6e30c.md "")
 
+[Prompt Users to Explicitly Accept Privacy Policy Document](prompt-users-to-explicitly-accept-privacy-policy-document-f703a95.md "Enable the privacy policy configuration in SAP Cloud Identity Services to prompt users to accept the privacy policy document. This ensures that users explicitly confirm their understanding of document.")
+
 [Configure P-User Next Index](configure-p-user-next-index-045bb1c.md "Set the value for the P-user next index.")
 
 [Reuse SAP Cloud Identity Services Tenants for Different Customer IDs](reuse-sap-cloud-identity-services-tenants-for-different-customer-ids-ebd0258.md "You as a tenant administrator can reuse an existing tenant for configurations and automated subscriptions.")

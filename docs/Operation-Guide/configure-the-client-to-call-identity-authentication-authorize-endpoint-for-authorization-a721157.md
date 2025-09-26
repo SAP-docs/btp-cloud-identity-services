@@ -243,7 +243,10 @@ string
 </td>
 <td valign="top">
 
-[Configure OpenID Connect Application](configure-openid-connect-application-8a0aa2e.md).
+-   [Configure OpenID Connect Application](configure-openid-connect-application-8a0aa2e.md)
+-   [Redirect URIs, Post Logout Redirect URI Rules](redirect-uris-post-logout-redirect-uri-rules-48fdb9a.md)
+
+
 
 </td>
 <td valign="top">
@@ -270,7 +273,7 @@ string
 </td>
 <td valign="top">
 
-The supported value is `code`
+The supported value is `code`.
 
 </td>
 <td valign="top">

@@ -76,17 +76,17 @@ Your landscape has multiple levels of identity providers, perhaps through subsid
 > ### Example:  
 > Example approuter link:
 > 
-> `https://approuter-myapplication.cfapps.eu20-001.hana.ondemand.com?sap_idp=https://corp_idp_1.mydomain.com,corp_idp_2.mydomain.com`
+> `https://approuter-myapplication.cfapps.eu20-001.hana.ondemand.com?sap_idp=https://scis_2.mydomain.com,corp_idp_alpha.mydomain.com`
 > 
 > Example link:
 > 
-> `https://myapplication.cfapps.eu20-001.hana.ondemand.com?idp=https://corp_idp_1.mydomain.com,corp_idp_2.mydomain.com`
+> `https://myapplication.cfapps.eu20-001.hana.ondemand.com?idp=https://scis_2.mydomain.com,corp_idp_alpha.mydomain.com`
 
 
 
 <a name="loio118f5f4203fd42c98255b1ecf6baa484__app_url_reuse_section_4"/>
 
-## Identity-Prover-Initiated Single Sign-On
+## Identity-Provider-Initiated Single Sign-On
 
 > ### Restriction:  
 > This option is only supported by SAML.

@@ -1,8 +1,8 @@
 <!-- loioad984ad0fef44687bc4b277379990b85 -->
 
-# SAP Integrated Business Planning for Supply Chain
+# SAP Integrated Business Planning
 
-Follow this procedure to set up SAP Integrated Business Planning for Supply Chain \(in short, SAP IBP\) as a proxy system.
+Follow this procedure to set up SAP Integrated Business Planning \(in short, SAP IBP\) as a proxy system.
 
 
 
@@ -12,7 +12,7 @@ Follow this procedure to set up SAP Integrated Business Planning for Supply Chai
 
 -   You have user credentials for an external back-end system with read and write permissions.
 
--   To establish the connection between Identity Provisioning and SAP Integrated Business Planning for Supply Chain, you need to set up the communication \(user, system and arrangement\) on SAP Integrated Business Planning for Supply Chain. You can do it now \(as a prerequisite\) or in the process of configuring SAP Integrated Business Planning for Supply Chain as a proxy system, as described in step 5.
+-   To establish the connection between Identity Provisioning and SAP Integrated Business Planning, you need to set up the communication \(user, system and arrangement\) on SAP Integrated Business Planning. You can do it now \(as a prerequisite\) or in the process of configuring SAP Integrated Business Planning as a proxy system, as described in step 5.
 
 -   > ### Note:  
     > Administrators of bundle tenants on Neo environment should enable the *Manage OAuth Clients* permission, as described in *Neo Environment* section in [Manage Authorizations](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/544de9b504214372b4479dc1f6b08cca.html "Manage the authorizations of Identity Provisioning administrators, when your bundle or standalone tenant is running on SAP BTP, Neo environment.") :arrow_upper_right:.
@@ -24,12 +24,16 @@ Follow this procedure to set up SAP Integrated Business Planning for Supply Chai
 
 ## Context
 
-SAP Integrated Business Planning for Supply Chain is a cloud-based solution that combines sales and operations planning \(S&OP\), forecasting and demand, response and supply, demand-driven replenishment, and inventory planning.
+SAP Integrated Business Planning is a cloud-based solution that combines sales and operations planning \(S&OP\), forecasting and demand, response and supply, demand-driven replenishment, and inventory planning.
 
-You can use Identity Provisioning to configure SAP IBP as a proxy system to execute *hybrid* scenarios. For example, when SAP IBP is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision entities to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations back to SAP IBP. This scenario supports:
+You can use Identity Provisioning to configure SAP IBP as a proxy system to execute *hybrid* scenarios. For example, when SAP IBP is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision entities to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations back to SAP IBP.
 
--   Reading of **business users** \(employee\) and **business roles** \(considered as *groups*\)
--   Writing of **users** and **role assignments** 
+SAP Integrated Business Planning provides different APIs for integration with Identity Provisioning, resulting in different connector versions for each API. Each connector version supports specific attribute mappings within the transformations and requires particular property values. By default, the Identity Provisioning service uses version *1*. The value of the `ibp.api.version` property controls which API you use.
+
+-   When the value is set to *1*, or the property is not defined \(typical for systems created before versioning was introduced on June 3, 2025\), SAP Integrated Business Planning API: Business User is used. This API version is SOAP based. It supports reading of **business users** \(employee\) and **business roles** and writing of **users** and **role assignments**. In SAP Integrated Business Planning version 1, groups correspond to roles, thus group members are user assignments of a role. For more information on how to update to version *2*, see [Update Connector Version](Operation-Guide/update-connector-version-8558733.md).
+
+-   When the value is set to *2*, SCIM Interface for IAM is used. It supports provisioning of **business users** with their **assignments** to groups of type **userGroup** and **authorization**. For more information, see [Groups](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/groups?locale=en-US&version=Cloud).
+
 
 > ### Note:  
 > The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users and groups. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
@@ -93,18 +97,18 @@ You can use Identity Provisioning to configure SAP IBP as a proxy system to exec
     -   [Access Identity Provisioning UI of Bundle Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/7ab5884ffbc44461a57622d2f633e57c.html "Access the Identity Provisioning UI when the service is bundled as part of an SAP cloud solution's license.") :arrow_upper_right:
     -   [Access Identity Provisioning UI of Standalone Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/61fd82ed48ab42b2bc74626926c1722c.html "Access the Identity Provisioning user interface as a standalone product.") :arrow_upper_right:
 
-5.  Add *SAP Integrated Business Planning for Supply Chain* as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
+5.  Add *SAP Integrated Business Planning* as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
-6.  Set up the communication between Identity Provisioning and SAP Integrated Business Planning for Supply Chain and configure your authentication method \(basic or certificate-based\).
+6.  Set up the communication between Identity Provisioning and SAP Integrated Business Planning and configure your authentication method \(basic or certificate-based\).
 
     > ### Note:  
     > We recommend that you use certificate-based authentication.
 
-    1.  In your newly added SAP Integrated Business Planning for Supply Chain proxy system, select the *Certificate* tab and choose *Generate* \> *Download*, as described in [Generate and Manage Certificates for Outbound Connection](https://help.sap.com/docs/IDENTITY_PROVISIONING/f48e822d6d484fa5ade7dda78b64d9f5/76867db8ce534becbfc08b050695df8e.html?version=Cloud).
+    1.  In your newly added SAP Integrated Business Planning proxy system, select the *Certificate* tab and choose *Generate* \> *Download*, as described in [Generate and Manage Certificates for Outbound Connection](https://help.sap.com/docs/IDENTITY_PROVISIONING/f48e822d6d484fa5ade7dda78b64d9f5/76867db8ce534becbfc08b050695df8e.html?version=Cloud).
 
         Skip step **a.** if you want to use basic authentication.
 
-        The next steps are performed in SAP Integrated Business Planning for Supply Chain backend system and are relevant for both basic and certificate-based authentication.
+        The next steps are performed in SAP Integrated Business Planning backend system and are relevant for both basic and certificate-based authentication.
 
     2.  [Create a communication user](https://help.sap.com/viewer/feae3cea3cc549aaa9d9de7d363a83e6/Latest/en-US/4bff8d203d4c4b1c8dd25564d1913302.html) and provide the respective credentials.
 
@@ -124,6 +128,23 @@ You can use Identity Provisioning to configure SAP IBP as a proxy system to exec
         > The communication scenario *SAP\_COM\_0193* is enhanced to support the User UUID attribute which is generated by Identity Authentication at user creation.
         > 
         > The User UUID is universally unique identifier. This attribute is immutable and unique across technology layers, such as user interface, APIs, and security tokens, as well as across products and lines of business contributing to a business process in the Intelligent Enterprise.
+
+        -   When SAP Integrated Business Planning version *1* is used:
+
+            For your Identity Provisioning scenario, choose *Scenario ID* SAP\_COM\_0193 \(SAP Cloud Identity Provisioning Integration\).
+
+            > ### Note:  
+            > The communication scenario *SAP\_COM\_0193* is enhanced to support the User UUID attribute which is generated by Identity Authentication at user creation.
+            > 
+            > The User UUID is universally unique identifier. This attribute is immutable and unique across technology layers, such as user interface, APIs, and security tokens, as well as across products and lines of business contributing to a business process in the Intelligent Enterprise.
+
+        -   When SAP Integrated Business Planning version *2* is used:
+
+            For your Identity Provisioning scenario, choose *Scenario ID* SAP\_COM\_0465 \(System for Cross-domain Identity Management Integration\).
+
+            > ### Note:  
+            > The communication scenario *SAP\_COM\_0465* allows you to maintain data via SCIM \(System for Cross-domain Identity Management\). For more information, see [Integrate Cross-Domain Identity Management](https://help.sap.com/docs/SAP_INTEGRATED_BUSINESS_PLANNING/feae3cea3cc549aaa9d9de7d363a83e6/09a1bebaf6eb4954af2df326b025d0ec.html?locale=en-US&version=2505).
+
 
 
 7.  Choose the *Properties* tab to configure the connection settings for your system.
@@ -247,6 +268,20 @@ You can use Identity Provisioning to configure SAP IBP as a proxy system to exec
     <tr>
     <td valign="top">
     
+    `ibp.api.version`
+    
+    </td>
+    <td valign="top">
+    
+    The API version which is consumed by the SAP Integrated Business Planning system.
+
+    By default, Identity Provisioning uses version *1*.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     `ibp.skip.read.archived`
     
     </td>
@@ -255,6 +290,8 @@ You can use Identity Provisioning to configure SAP IBP as a proxy system to exec
     In the event of archived \(disabled\) entities in your SAP IBP system, choose whether the provisioning jobs to continue reading such entities or to skip them.
 
     This property is enabled by default. If you want to always read disabled entities, set the property to **false**, or delete it.
+
+    **Relevant for connector version 1**
     
     </td>
     </tr>
@@ -284,6 +321,8 @@ You can use Identity Provisioning to configure SAP IBP as a proxy system to exec
     -   **false** – the current user roles will be preserved, and the new roles \(if any\) will be added for the relevant user in the proxy system.
 
     See also: [Extended Explanation of the \*user.roles.overwrite Properties](https://ga.support.sap.com/dtp/viewer/#/tree/2065/actions/26547:29111:29114:27412:35953:38590)
+
+    **Relevant for connector version 1**
     
     </td>
     </tr>
@@ -298,6 +337,39 @@ You can use Identity Provisioning to configure SAP IBP as a proxy system to exec
     Enter OData filtering for reading roles in the SAP IBP system.
 
     To learn what criteria you can use, see: [OData URI Conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/) → **4.5 Filter System Query Option**
+
+    **Relevant for connector version 1**
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    \(Optional\) `ibp.group.filter`
+    
+    </td>
+    <td valign="top">
+    
+    When specified, only those SAP Integrated Business Planning groups matching the filter expression will be read.
+
+    Supported operators: eq \(equal\), co \(contains\), and sw \(starts with\).
+
+    **Possible values:**:
+
+    -   `displayName`
+    -   `externalId`
+    -   `urn:ietf:params:scim:schemas:extension:sap:2.0:Group:type`
+
+    For example:
+
+    -   *displayName co "ProjectTeam1" or "Students2023"*
+    -   *externalId eq "12345678" or externalId sw "123"*
+    -   *urn:ietf:params:scim:schemas:extension:sap:2.0:Group:type eq "authorization" and externalId eq "12345678"*
+
+    > ### Note:  
+    > These combinations are valid for both 'or' and 'and' operators.
+
+    **Relevant for connector version 2**
     
     </td>
     </tr>
@@ -312,6 +384,43 @@ You can use Identity Provisioning to configure SAP IBP as a proxy system to exec
     Indicate how many business roles \(considered as *groups*\) per page to be read from your SAP IBP system.
 
     The value must be an integer number.
+
+    **Relevant for connector version 1**
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    \(Optional\) `ibp.user.filter`
+    
+    </td>
+    <td valign="top">
+    
+    When specified, only those SAP Integrated Business Planning users matching the filter expression will be read. You can filter users by **list of attributes** according to the API syntax of SAP Integrated Business Planning.
+
+    You can set a single attribute or multiple ones as filter criteria. If you enter multiple attributes \(using OR operator\), the filter will search for any of them.
+
+    Supported operators: eq \(equal\), ne \(not equal\), sw \(starts with\), ew \(ends with\) and co \(contains\)
+
+    **Possible values:**
+
+    -   `userName`
+    -   `externalId`
+    -   `emails[0].value`
+
+    For example:
+
+    -   *userName eq "johnbrown" and externalId eq "P000252"*
+    -   *userName sw "J" or externalId eq "P000252"*
+    -   *userName eq "johnbrown" and emails\[0\].value eq "johnbrown@email.com"*
+    -   *userName eq "johnbrown" and emails\[0\].value ne "johnbrown@email.com" or externalId eq "P000252"*
+
+        > ### Note:  
+        > These combinations are valid for both 'or' and 'and' operators.
+
+
+    **Relevant for connector version 2**
     
     </td>
     </tr>
@@ -364,7 +473,11 @@ You can use Identity Provisioning to configure SAP IBP as a proxy system to exec
 
     [SAP Business Accelerator Hub: SAP IBP](https://api.sap.com/package/IBPAPIIdentityManagementService?section=Artifacts)
 
-    Default read and write transformations:
+    [Integrate Cross-Domain Identity Management](https://help.sap.com/docs/SAP_INTEGRATED_BUSINESS_PLANNING/feae3cea3cc549aaa9d9de7d363a83e6/09a1bebaf6eb4954af2df326b025d0ec.html?locale=en-US&version=2505)
+
+    [SCIM Interface for IAM](https://help.sap.com/docs/SAP_INTEGRATED_BUSINESS_PLANNING/da797ae2bf6246d58abd417f24915d55/0826103882b14d9780537f4492b81727.html?locale=en-US&version=2505)
+
+    Default read and write transformationsfor connector version 1:
 
     > ### Tip:  
     > The proxy *Read Transformation* is used when the external client application \(for example, SAP Identity Management\) makes initial load. That is, executing GET requests to the resource endpoints \(**/Users** or **/Groups**\) to retrieve the corresponding entities of the particular type. The external client application can also execute GET requests to a single resource endpoint \(querying a single resource is supported\). In this case, the proxy system acts as a *source* one.
@@ -813,6 +926,452 @@ You can use Identity Provisioning to configure SAP IBP as a proxy system to exec
     
     By default, Identity Provisioning reads group IDs and members. If you want the service to also read group descriptions, you can add an extra mapping to the *"group"* resource in the *Read Transformation*. To learn how, see [Guided Answers: Business Role Description](https://ga.support.sap.com/dtp/viewer/#/tree/2065/actions/26547:29111:29114:27412:39660:40191).
 
+    **Default read and write transformations for connector version 2:**
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Read Transformation
+    
+    </th>
+    <th valign="top">
+
+    Write Transformation
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    > ### Code Syntax:  
+    > ```
+    > {
+    >   "user": {
+    >     "scimEntityEndpoint": "Users",
+    >     "mappings": [
+    >       {
+    >         "sourcePath": "$.id",
+    >         "targetVariable": "entityIdSourceSystem",
+    >         "targetPath": "$.id"
+    >       },
+    >       {
+    >         "sourcePath": "$.meta",
+    >         "targetPath": "$.meta"
+    >       },
+    >       {
+    >         "sourceVariable": "entityBaseLocation",
+    >         "targetPath": "$.meta.location",
+    >         "targetVariable": "entityLocationSourceSystem",
+    >         "functions": [
+    >           {
+    >             "type": "concatString",
+    >             "suffix": "${entityIdSourceSystem}"
+    >           }
+    >         ]
+    >       },
+    >       {
+    >         "sourcePath": "$.userName",
+    >         "targetPath": "$.userName",
+    >         "correlationAttribute": true
+    >       },
+    >       {
+    >         "sourcePath": "$.schemas",
+    >         "preserveArrayWithSingleElement": true,
+    >         "targetPath": "$.schemas"
+    >       },
+    >       {
+    >         "sourcePath": "$.externalId",
+    >         "targetPath": "$.externalId"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.formatted",
+    >         "targetPath": "$.name.formatted",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.familyName",
+    >         "targetPath": "$.name.familyName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.givenName",
+    >         "targetPath": "$.name.givenName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$.displayName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.emails",
+    >         "preserveArrayWithSingleElement": true,
+    >         "targetPath": "$.emails",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.emails[?(@.primary== true)].value",
+    >         "correlationAttribute": true
+    >       },
+    >       {
+    >         "sourcePath": "$.phoneNumbers",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true,
+    >         "targetPath": "$.phoneNumbers"
+    >       },
+    >       {
+    >         "sourcePath": "$.userType",
+    >         "targetPath": "$.userType",
+    >         "optional": true
+    >       },
+    >       {
+    >         "condition": "$.locale == 'not_unique'",
+    >         "sourcePath": "$.locale",
+    >         "targetPath": "$.locale",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.active",
+    >         "targetPath": "$.active",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validFrom']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validFrom']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validTo']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validTo']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['language']['logonLanguage']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['language']['logonLanguage']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['decimalFormatCode']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['decimalFormatCode']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['dateFormatCode']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['dateFormatCode']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['timeFormatCode']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['timeFormatCode']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.preferredLanguage",
+    >         "targetPath": "$.preferredLanguage",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuidHistory']",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuidHistory']"
+    >       },
+    >       {
+    >         "sourcePath": "$.groups",
+    >         "targetPath": "$.groups",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       }
+    >     ]
+    >   },
+    >   "group": {
+    >     "scimEntityEndpoint": "Groups",
+    >     "mappings": [
+    >       {
+    >         "sourcePath": "$.id",
+    >         "targetPath": "$.id",
+    >         "targetVariable": "entityIdSourceSystem"
+    >       },
+    >       {
+    >         "sourcePath": "$.meta",
+    >         "targetPath": "$.meta"
+    >       },
+    >       {
+    >         "sourceVariable": "entityBaseLocation",
+    >         "targetPath": "$.meta.location",
+    >         "targetVariable": "entityLocationSourceSystem",
+    >         "functions": [
+    >           {
+    >             "type": "concatString",
+    >             "suffix": "${entityIdSourceSystem}"
+    >           }
+    >         ]
+    >       },
+    >       {
+    >         "sourcePath": "$.schemas",
+    >         "preserveArrayWithSingleElement": true,
+    >         "targetPath": "$.schemas"
+    >       },
+    >       {
+    >         "sourcePath": "$.externalId",
+    >         "targetPath": "$.externalId"
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$.displayName"
+    >       },
+    >       {
+    >         "sourcePath": "$.members",
+    >         "targetPath": "$.members",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true
+    >       }
+    >     ]
+    >   }
+    > }
+    > ```
+
+
+    
+    </td>
+    <td valign="top">
+    
+    > ### Code Syntax:  
+    > ```
+    > {
+    >   "user": {
+    >     "scimEntityEndpoint": "Users",
+    >     "mappings": [
+    >       {
+    >         "sourceVariable": "entityIdTargetSystem",
+    >         "targetPath": "$.id"
+    >       },
+    >       {
+    >         "constant": [
+    >           "urn:ietf:params:scim:schemas:core:2.0:User",
+    >           "urn:ietf:params:scim:schemas:extension:sap:2.0:User"
+    >         ],
+    >         "targetPath": "$.schemas"
+    >       },
+    >       {
+    >         "sourcePath": "$.Operations",
+    >         "targetPath": "$.Operations",
+    >         "preserveArrayWithSingleElement": true,
+    >         "scope": "patchEntity"
+    >       },
+    >       {
+    >         "sourcePath": "$.schemas",
+    >         "targetPath": "$.schemas",
+    >         "preserveArrayWithSingleElement": true,
+    >         "scope": "patchEntity"
+    >       },
+    >       {
+    >         "sourcePath": "$.userName",
+    >         "targetPath": "$.userName"
+    >       },
+    >       {
+    >         "sourcePath": "$.userName",
+    >         "targetPath": "$.externalId"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['employeeNumber']",
+    >         "targetPath": "$.externalId",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.externalId",
+    >         "targetPath": "$.externalId",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.formatted",
+    >         "optional": true,
+    >         "targetPath": "$.name.formatted"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.familyName",
+    >         "optional": true,
+    >         "targetPath": "$.name.familyName"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.givenName",
+    >         "optional": true,
+    >         "targetPath": "$.name.givenName"
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "optional": true,
+    >         "targetPath": "$.displayName"
+    >       },
+    >       {
+    >         "sourcePath": "$.emails",
+    >         "preserveArrayWithSingleElement": true,
+    >         "targetPath": "$.emails"
+    >       },
+    >       {
+    >         "sourcePath": "$.addresses",
+    >         "targetPath": "$.addresses",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.userType",
+    >         "optional": true,
+    >         "targetPath": "$.userType"
+    >       },
+    >       {
+    >         "sourcePath": "$.preferredLanguage",
+    >         "optional": true,
+    >         "targetPath": "$.preferredLanguage"
+    >       },
+    >       {
+    >         "sourcePath": "$.locale",
+    >         "optional": true,
+    >         "targetPath": "$.locale"
+    >       },
+    >       {
+    >         "sourcePath": "$.timezone",
+    >         "optional": true,
+    >         "targetPath": "$.timezone"
+    >       },
+    >       {
+    >         "sourcePath": "$.active",
+    >         "optional": true,
+    >         "targetPath": "$.active"
+    >       },
+    >        {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validFrom']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validFrom']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validTo']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validTo']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['language']['logonLanguage']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['language']['logonLanguage']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['decimalFormatCode']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['decimalFormatCode']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['dateFormatCode']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['dateFormatCode']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['timeFormatCode']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['timeFormatCode']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuidHistory']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuidHistory']",
+    >         "optional": true,
+    >         "preserveArrayWithSingleElement": true
+    >       },
+    >       {
+    >         "sourcePath": "$.groups",
+    >         "targetPath": "$.groups",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       }
+    >     ]
+    >   },
+    >   "group": {
+    >     "scimEntityEndpoint": "Groups",
+    >     "mappings": [
+    >       {
+    >         "sourceVariable": "entityIdTargetSystem",
+    >         "targetPath": "$.id"
+    >       },
+    >       {
+    >         "constant": [
+    >           "urn:ietf:params:scim:schemas:core:2.0:Group",
+    >           "urn:ietf:params:scim:schemas:extension:sap:2.0:Group"
+    >         ],
+    >         "targetPath": "$.schemas"
+    >       },
+    >       {
+    >         "sourcePath": "$.Operations",
+    >         "targetPath": "$.Operations",
+    >         "preserveArrayWithSingleElement": true,
+    >         "scope": "patchEntity"
+    >       },
+    >       {
+    >         "sourcePath": "$.schemas",
+    >         "targetPath": "$.schemas",
+    >         "preserveArrayWithSingleElement": true,
+    >         "scope": "patchEntity"
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$.displayName"
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$.externalId"
+    >       },
+    >       {
+    >         "sourcePath": "$.externalId",
+    >         "targetPath": "$.externalId",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.members",
+    >         "targetPath": "$.members",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
+    >         "optional": true,
+    >         "defaultValue": "userGroup"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true
+    >       }
+    >     ]
+    >   }
+    > }
+    > ```
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
 9.  Connect the external consumer to Identity Provisioning with the technical user you have created in step 2.
 
     If the external consumer system is **SAP Identity Management**, you can export the newly created proxy system as a SCIM repository from Identity Provisioning and import it in SAP Identity Management. This will create a SCIM repository in SAP Identity Management where most of the repository constants will be automatically filled in. You need to provide the technical user credentials that you have set up in step 2 and the SCIM assignment method as described below:

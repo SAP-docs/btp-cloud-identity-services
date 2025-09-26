@@ -10,7 +10,7 @@ In an authorization policy, you can define rules with conditions that contain th
 
 In contrast, a condition containing the attribute constraint `IS RESTRICTED` means that this user's attribute-based authorization is restricted. This condition can be refined in a `USE` clause.
 
-See the difference between `IS RESTRICTED` and `IS NOT RESTRICTED` in the example below. It shows how user authorizations only differ if no condition is given. In that case, `IS RESTRICTED` defaults to false, and `IS NOT RESTRICTED` defaults to true. However, if a condition is given \(`CountryCode = 'IT'` in the example below\), the behavior is the same.
+See the difference between `IS RESTRICTED` and `IS NOT RESTRICTED` in the example below. It shows how user authorizations only differ if no condition is given. In that case, `IS RESTRICTED` defaults to false, and `IS NOT RESTRICTED` defaults to true. However, if a condition is given \(`CountryCode = 'IT'` in the example below\), a specified restriction replaces either the general restriction or `IS NOT RESTRICTED`.
 
 > ### Example:  
 > > ### Sample Code:  
@@ -68,6 +68,9 @@ With the assignment to the `salesOrdersWinter` policy, users can read all `Sales
 
 These policy parameters can be filled while another policy is used. Here, the assignment of `use_salesOrders` allows users to read `salesOrders` in the countries DE, FR, or IT and with `SalesID` `200`, or read `salesOrders` in the countries DE, FR, or IT and with a name that contains the string '`Winter`'.
 
+> ### Note:  
+> Include all conditions for a combination of resource and action in a single policy. This way, it's easy for administrators to decide which policy to use. It also ensures that the authorizations remain understandable.
+
 > ### Example:  
 > > ### Sample Code:  
 > > ```
@@ -102,31 +105,8 @@ The previous definition is not equivalent to the following since it allows any c
 > > }
 > > ```
 
-The `WHERE` clause is deprecated for `USE` statements. It's going to be removed.
+The `WHERE` clause is deprecated for `USE` statements.
 
-The `WHERE` fragment isn't equivalent to the `RESTRICT` section in a `USE` statement. The following `POLICY SamplePolicy1` can't be used with a `WHERE` clause.
-
-> ### Example:  
-> > ### Sample Code:  
-> > ```
-> > POLICY SamplePolicy1 {
-> >     GRANT read ON SalesOrders WHERE Country IS RESTRICTED;
-> > }
-> > 
-> > POLICY use_SamplePolicy_Works {
-> >     USE SamplePolicy1 RESTRICT Country IN ('DE','FR','IT');
-> >     /* Logically creates: GRANT read ON SalesOrders WHERE Country IN ('DE','FR','IT'); */
-> > }
-> > 
-> > POLICY use_SamplePolicy_Fails {
-> >     USE SamplePolicy1 WHERE Country IN ('DE','FR','IT');
-> >     /* Logically creates: GRANT read ON SalesOrders WHERE false;
-> > 
-> >     Described as a sequence of steps by DCL (1), the compiler (2) and the DCL Runtime (3): 
-> >     1. GRANT read ON SalesOrders WHERE (Country IS RESTRICTED) AND (Country IN ('DE','FR','IT'));
-> >     2. GRANT read ON SalesOrders WHERE (false                ) AND (Country IN ('DE','FR','IT'));
-> >     3. GRANT read ON SalesOrders WHERE false;
-> >     */
-> > }
-> > ```
+> ### Caution:  
+> The correct syntax is `USE <basePolicy> RESTRICT <condition_for_attribute(s)>`. Don't use `WHERE` in a `USE` statement..
 

@@ -21,6 +21,14 @@ When you construct the redirect URIs or post logout redirect URIs have the follo
 
 
 
+<a name="loio48fdb9ab1a094859ac79c9b25e0ab58b__section_dds_2kd_rgc"/>
+
+## Number
+
+You may have a maximum of 20 redirect URIs and 20 post logout redirect URIs.
+
+
+
 <a name="loio48fdb9ab1a094859ac79c9b25e0ab58b__section_wwb_gfp_qnb"/>
 
 ## Length

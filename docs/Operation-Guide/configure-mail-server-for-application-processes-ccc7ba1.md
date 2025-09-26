@@ -20,7 +20,7 @@ Identity Authentication uses own mail server for the emails sent to users for th
 
 Identity Authentication provides also the possibility to configure custom mail server for the application processes emails.
 
-Apart from the Identity Authentication own mail server and the custom mail server, you can also use the Amazon Simple Email Service for the emails sent to users for the different application processes. Thus, you can modify the sender and receiver the email without having custom mail server.
+Apart from the Identity Authentication own mail server, which is the default configuration for the mail server, and the custom mail server, you can also use the Amazon Simple Email Service for the emails sent to users for the different application processes. Thus, you can modify the sender and receiver the email without having custom mail server.
 
 To use the Amazon Simple Email Service with custom domain, you must own the domain. Otherwise, you can use the `accounts.ondemand.com` or `accounts.cloud.sap` domain and just modify the *From* and *Reply to* fields.
 
@@ -29,12 +29,15 @@ For more information, about the emails sent for the different application proces
 > ### Remember:  
 > Once the tenant administrator configures the mail server, all emails go through this configuration.
 > 
-> If you have created a custom mail configuration, and after that you create an Amazon Simple Email Service configuration, the custom mail configuration will be deleted. And also, if you have created an Amazon Simple Email Service, and after that you create a custom mail configuration configuration, the Amazon Simple Email Service configuration will be deleted.
+> If you have created a custom mail configuration, and after that you create an Amazon Simple Email Service configuration, the custom mail configuration will be deleted. And also, if you have created an Amazon Simple Email Service, and after that you create a custom mail configuration, the Amazon Simple Email Service configuration will be deleted.
 > 
 > To return to the default settings, remove the configuration.
 > 
 > > ### Remember:  
 > > It takes 2 minutes for the configuration changes to take place.
+
+> ### Caution:  
+> When you are using the default mail server configuration, and you start sending multiple emails to invalid addresses, the mail server will be disabled by SAP. To start using the default mail server again you must stop the actions that caused the disabling of the mail server and report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with the `BC-IAM-IDS` component.
 
 To configure the mail server, choose one of the procedures below:
 
@@ -100,6 +103,8 @@ To configure the mail server, choose one of the procedures below:
 [Configure Customer Managed Keys in Administration Console \(Restricted Availability\)](configure-customer-managed-keys-in-administration-console-restricted-availability-fe6e30c.md "")
 
 [Configure Default Language for End User Screens](configure-default-language-for-end-user-screens-2cb73c3.md "Select the language that the end user screen uses if the language of the browser isn’t in the list of supported languages.")
+
+[Prompt Users to Explicitly Accept Privacy Policy Document](prompt-users-to-explicitly-accept-privacy-policy-document-f703a95.md "Enable the privacy policy configuration in SAP Cloud Identity Services to prompt users to accept the privacy policy document. This ensures that users explicitly confirm their understanding of document.")
 
 [Configure P-User Next Index](configure-p-user-next-index-045bb1c.md "Set the value for the P-user next index.")
 

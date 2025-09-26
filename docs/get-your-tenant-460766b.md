@@ -207,6 +207,12 @@ To get additional tenant using SAP BTP multi-environment subaccount, proceed as 
 
 
 
+
+
+### Next Steps
+
+Go to your email inbox and activate your account. FGor more information, see .[Activate Your Account](activate-your-account-cc03ecc.md)
+
 > ### Note:  
 > **SAP BTP, Neo subaccount**
 > 

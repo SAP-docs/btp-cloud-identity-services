@@ -306,6 +306,20 @@ After fulfilling the prerequisites, follow the procedure below to create a proxy
     <tr>
     <td valign="top">
     
+    \(Optional\) `workzone.group.filter`
+    
+    </td>
+    <td valign="top">
+    
+    When specified, only those SAP Build Work Zone, advanced edition groups matching the filter expression will be read.
+
+    For example: *displayName eq "ProjectTeam1"*
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     \(Optional\) `ips.failed.request.retry.attempts`
     
     </td>

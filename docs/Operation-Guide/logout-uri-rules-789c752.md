@@ -18,6 +18,14 @@ When you construct the front and back-channel URIs, have the following in mind:
 
 
 
+<a name="loio789c752d70e64e6c90839284b511e7d7__section_ygw_yjd_rgc"/>
+
+## Number
+
+You may have a maximum of 20 front and 20 back-channel URIs.
+
+
+
 <a name="loio789c752d70e64e6c90839284b511e7d7__section_wwb_gfp_qnb"/>
 
 ## Length

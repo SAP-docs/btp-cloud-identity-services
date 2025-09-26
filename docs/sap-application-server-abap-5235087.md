@@ -13,7 +13,7 @@ Follow this procedure to set up SAP Application Server ABAP \(AS ABAP\) as a sou
 
 -   You have installed the Cloud Connector in your corporate environment and have done the initial configuration. For more information, see: [Cloud Connector \(Neo\)](https://help.sap.com/viewer/b865ed651e414196b39f8922db2122c7/Cloud/en-US/d751d065774e45e1b6bdbfdfd541da13.html)
 -   You have credentials of a technical user with read permissions for AS ABAP, which plays the role of a user data source. Via this user, the Identity Provisioning service will call the ABAP public API in order to execute a number of function modules. These function modules are listed in **step 1** from the procedure below.
--   You have the following role, which provides all authorizations with read-only access to user data: **SAP\_BC\_JSF\_COMMUNICATION\_RO**
+-   The technical user has the following role, which provides all authorizations with read-only access to user data: **SAP\_BC\_JSF\_COMMUNICATION\_RO**
 
     For more information, see: [Requirements for the System User for UME-ABAP Communication](https://help.sap.com/docs/SAP_NETWEAVER_750/a42446bded624585958a36a71903a4a7/8f67d27676ace84080964d4c4223bb3c.html?locale=en-US)
 

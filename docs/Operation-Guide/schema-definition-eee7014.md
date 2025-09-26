@@ -2,11 +2,11 @@
 
 # Schema Definition
 
-You can define only one schema in a package. It defines the schema elements with data types that are valid for all policy definitions in the package.
+You can define only one schema. It defines the schema elements with data types that are valid for all policy definitions.
 
 
 
-To describe the names and types of attributes, you define a schema. You must define a schema in a file called `schema.dcl`. It must be located in the DCL root folder. In the schema, you can use the grammar elements `WHERE` and `FUNCTION` with attributes. All usages of schema attributes are validated to refer to existing names and that their respective data types.
+To describe the names and types of attributes, you define a schema. You must define a schema in a file called `schema.dcl`. It must be located in the DCL root folder. If attributes are defined In the schema, you can use the grammar elements `WHERE` and `FUNCTION` with these attributes. All usages of schema attributes are validated to refer to existing names and that their respective data types.
 
 > ### Output Code:  
 > ```
@@ -28,7 +28,7 @@ SCHEMA {
 }
 ```
 
--   The following schema contains schema elements for a resource of the data type "number" and an attribute name with the data type "string".
+-   The following schema contains schema elements for a attribute of the data type "number" and an attribute name with the data type "string".
 
     > ### Sample Code:  
     > ```
@@ -38,12 +38,12 @@ SCHEMA {
     > }
     > ```
 
--   If a resource has multiple attributes, the schema must define the data types of the attribute values. In the following example code, `SalesAttrib` is an element that groups the attributes and their data types.
+-   The schema must always define all data types of the attribute values. In the following example code, `Sales` is n structure that groups different attributes related to `Sales`.
 
     > ### Sample Code:  
     > ```
     > SCHEMA {
-    >      SalesAttrib: {
+    >      Sales: {
     >        Country: String,
     >        SalesID: Number}
     >  }
@@ -63,11 +63,9 @@ There is a predefined default `$user` structure that is populated by the client 
 >         groups: String[],
 >         email: String
 >     }
-> schema {
-> 
 > ```
 
-This predefined `$user` definition can be overwritten in the `schema` with its own structure. The only enforced constraint by the compiler is that `$user` is a structure.
+The `$user` structure can be extended with custom attributes.
 
 **Related Information**  
 

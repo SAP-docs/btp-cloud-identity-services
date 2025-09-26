@@ -59,7 +59,7 @@ Identity Provisioning supports provisioning users with Global User ID for the fo
 
 -   SAP Marketing Cloud
 
--   SAP Integrated Business Planning for Supply Chain
+-   SAP Integrated Business Planning
 
 -   SAP BTP ABAP Environment
 
