@@ -182,6 +182,18 @@ Values, which don't match the pattern
 
 </td>
 </tr>
+<tr>
+<td valign="top">
+
+`IS NULL` 
+
+</td>
+<td valign="top">
+
+Attribute value is empty
+
+</td>
+</tr>
 </table>
 
 
@@ -378,12 +390,16 @@ false
 </td>
 <td valign="top">
 
+`'A'`
+
 `'AB'`
 
 `'ABC'`
 
 </td>
 <td valign="top">
+
+true
 
 false
 
@@ -489,9 +505,7 @@ true
 </td>
 <td valign="top">
 
-Current implementation:
 
-Cross-check with SQL standard
 
 </td>
 </tr>
@@ -521,14 +535,12 @@ false
 
 false
 
-false
+true
 
 </td>
 <td valign="top">
 
-Current implementation:
 
-Crosscheck with SQL standard
 
 </td>
 </tr>

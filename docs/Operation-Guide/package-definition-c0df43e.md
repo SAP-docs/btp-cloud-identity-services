@@ -9,13 +9,9 @@ A package is the root folder where the DCL document is located.
 A package can contain multiple DCL documents.
 
 > ### Restriction:  
-> -   Only `[a-zA-Z_][a-zA-Z_0-9]*` can be used for a package name, which is the name of the root folder.
-> 
-> -   `_dcl_` isn't allowed as part of a package name.
+> -   Only `[a-zA-Z_][a-zA-Z_0-9]*` can be used for a package name, which is the name of the path relative to the DCL root.
 > 
 > -   The total length \(including package separator\) of a package hierarchy is 250 characters.
-> 
-> -   The package name `dcr` is reserved for internal use by the DCL runtime.
 
 
 
@@ -24,9 +20,6 @@ A package can contain multiple DCL documents.
 ## Cross Package Reuse
 
 Policies from other packages can be reused based on qualified references.
-
-> ### Restriction:  
-> DCL currently doesn't support packages for reuse.
 
 
 

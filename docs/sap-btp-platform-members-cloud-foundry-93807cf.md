@@ -242,15 +242,24 @@ The proxy system consumes `User Account and Authentication API` and `Cloud Found
     </td>
     <td valign="top">
     
-    Enter the technical key of the landscape in which your multi-environment subaccount with enabled Cloud Foundry environment is located.
+    Enter the *technical key* or the *host name* of the landscape in which your multi-environment subaccount with enabled Cloud Foundry environment is located.
+
+    The techical key is available only for the SAP BTP Cloud Foundry regions.
 
     For more information, see [Regions and API Endpoints Available for the Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/regions-and-api-endpoints-available-for-cloud-foundry-environment?version=Cloud).
 
     Please note that when the technical key contains an extension index, the correct value is displayed in the *API Endpoint* column instead of the *Technical Key* column of the table.
 
-    The value of the technical key can also be found by looking up your *Cloud Foundry API Endpoint*, displayed on subaccount level in the*Cloud Foundry Environment* tab of the SAP BTP cockpit
+    This is an example of a *technical key*: `cf-eu10-002`, corresponding to the API endpoint `api.cf.eu10-002.hana.ondemand.com` and host name `cf.eu10-002.hana.ondemand.com`
 
-    For example: `cf-eu10-002`
+    The host name of the landscape can be found by looking up the *API Endpoint* field in the *Overview* tab of your *Cloud Foundry Environment* on subaccount level of the SAP BTP cockpit.
+
+    The API endpoint has the following format: `https://api.<landscape-hostname>`
+
+    > ### Note:  
+    > If your provisioning job finishes with error *'Name or service not known'*, the value used for technical key is not correct. In that case you can use the host name of the landscape instead.
+
+
     
     </td>
     </tr>

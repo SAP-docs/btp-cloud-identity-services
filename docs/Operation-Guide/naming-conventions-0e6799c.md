@@ -10,8 +10,6 @@ The objects of Authorization Management include authorization policies, actions,
 
 The user names and user groups names are defined in the identity provider. There is no naming convention from DCL side. Within DCL, we must handle all kinds of users and group names. It's possible to use unquoted and double-quoted names for users and user groups.
 
-Fshould
-
 -   The name for an object \(authorization policy, action, resource, or attribute\) can be specified using regular \(unquoted\) identifiers or delimited \(double-quoted\) identifiers:
 
     -   Policy name specified using a regular identifier in a `POLICY` statement

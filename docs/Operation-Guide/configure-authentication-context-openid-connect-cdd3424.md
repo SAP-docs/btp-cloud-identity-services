@@ -13,7 +13,7 @@ Tenant administrator can configure the authentication context in the request sen
 > ### Note:  
 > The following configuration is valid for the OpenID connect corporate identity providers.
 
-The authentication context enables administrators to ensure an authentication context. For example, you can require the corporate identity provider to authenticate users for a particular application with multifactor authentication or certificate-based authentication. The corporate identity providers define what authentication contexts that they support as well as the values they require to trigger a particular authentication context. The OIDC standard doesn't define the authorization context values.
+The authentication context enables administrators to ensure an authentication context. For example, you can require the corporate identity provider to authenticate users for a particular application with multifactor authentication or certificate-based authentication. The corporate identity providers define what authentication contexts that they support as well as the values they require to trigger a particular authentication context. The OIDC standard doesn't define the authentication context values.
 
 For more information, see [OpenID Connect Core 1.0 incorporating errata set 2](https://openid.net/specs/openid-connect-core-1_0.html).
 

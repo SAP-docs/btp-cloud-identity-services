@@ -549,7 +549,7 @@ For more information about user creation or user update, see **Related Informati
 
 [Import or Update Users for a Specific Application](import-or-update-users-for-a-specific-application-33838e0.md "As a tenant administrator, you can import new users or update existing ones for a specific application with a CSV file. You can also send activation emails to the users that have not received activation emails for that application so far.")
 
-[Scenarios](../scenarios-fb9898d.md "Identity Authentication supports scenarios for consumers (business-to-consumer scenarios), for partners (business-to-business scenarios), and for employees (business-to-employee scenarios).")
+[Scenarios](../scenarios-fb9898d.md "Define your user engagement scenario - whether business-to-consumer, business-to-business, or business-to-employee - and explore onboarding and provisioning scenarios for secure authentication and identity management with SAP Cloud Identity Services.")
 
 [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/resource/Users)
 

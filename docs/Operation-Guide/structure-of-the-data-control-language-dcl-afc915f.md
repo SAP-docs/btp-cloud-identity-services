@@ -1,12 +1,12 @@
 <!-- loioafc915f14bc64807ba6727b91482c699 -->
 
-# Elements and Structure of the Data Control Language \(DCL\)
+# Structure of the Data Control Language \(DCL\)
 
-Use DCL elements to define authorization policies, including rules, actions, resources, conditions, attributes, and a schema. These elements are essential for controlling access to data and resources.
+Use DCL syntax to define authorization policies, including rules, actions, resources, conditions, attributes, and a schema. They are essential for controlling access to data and resources.
 
 
 
-The data control language uses the following elements for the definition of simple and instance-based authorizations.
+The data control language uses the following syntax for the definition of simple and instance-based authorizations.
 
 ![](images/DCL_Elements_Overview_c2281a6.png)
 
@@ -24,7 +24,7 @@ Collection of rules. Administrators can use base authorization policies to creat
 
 ## Rule
 
-An element that grants actions such as `read` or `write`. Rules handle actions on resources on resources such as `resource1` or `resource2`. A rule can also be restricted in multiple ways.
+Grants actions such as `read` or `write`. Rules handle actions on resources on resources such as `resource1` or `resource2`. A rule can also be restricted in multiple ways.
 
 An action is granted on a resource. Use the following syntax:
 

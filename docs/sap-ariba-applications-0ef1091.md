@@ -498,24 +498,26 @@ These source systems consume SCIM 2.0 API provided by SAP Ariba Applications. Fo
     > ```
     > {
     >   "user": {
+    >     "condition": "('%ariba.applications.group.prefix%' === 'null') || ($.groups[?(@.display =~ /%ariba.applications.group.prefix%.*/)] empty false)",
     >     "mappings": [
     >       {
-    >         "sourcePath": "$.id",
-    >         "targetVariable": "entityIdSourceSystem"
+    >         "sourceVariable": "entityIdTargetSystem",
+    >         "targetPath": "$.id"
     >       },
     >       {
-    >         "sourcePath": "$.schemas",
-    >         "preserveArrayWithSingleElement": true,
+    >         "constant": [
+    >           "urn:ietf:params:scim:schemas:core:2.0:User",
+    >           "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User",
+    >           "urn:ietf:params:scim:schemas:extension:sap:2.0:User",
+    >           "urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User",
+    >           "urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User",
+    >           "urn:sap:cloud:scim:schemas:extension:custom:2.0:profile:User"
+    >         ],
     >         "targetPath": "$.schemas"
     >       },
     >       {
     >         "sourcePath": "$.userName",
-    >         "targetPath": "$.userName",
-    >         "correlationAttribute": true
-    >       },
-    >       {
-    >         "sourcePath": "$.userName",
-    >         "targetPath": "$.name.familyName"
+    >         "targetPath": "$.userName"
     >       },
     >       {
     >         "sourcePath": "$.emails",
@@ -524,14 +526,14 @@ These source systems consume SCIM 2.0 API provided by SAP Ariba Applications. Fo
     >         "optional": true
     >       },
     >       {
-    >         "sourcePath": "$.emails[?(@.primary == true)].value",
-    >         "optional": true,
-    >         "correlationAttribute": true
+    >         "condition": "$.emails[0].length() > 0",
+    >         "constant": true,
+    >         "targetPath": "$.emails[0].primary"
     >       },
     >       {
     >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
-    >         "optional": true
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
     >       },
     >       {
     >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['companyCode']",
@@ -560,12 +562,6 @@ These source systems consume SCIM 2.0 API provided by SAP Ariba Applications. Fo
     >       {
     >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['purchasingOrganization']",
     >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['purchasingOrganization']",
-    >         "preserveArrayWithSingleElement": true,
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['plant']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap.odm:2.0:User']['plant']",
     >         "preserveArrayWithSingleElement": true,
     >         "optional": true
     >       },
@@ -602,10 +598,25 @@ These source systems consume SCIM 2.0 API provided by SAP Ariba Applications. Fo
     >         "optional": true
     >       },
     >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['approvalLimit']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['approvalLimit']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['expenseApprovalLimit']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['expenseApprovalLimit']",
+    >         "optional": true
+    >       },
+    >       {
     >         "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:profile:User']['alternativeDisplayNames']",
     >         "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:profile:User']['alternativeDisplayNames']",
     >         "preserveArrayWithSingleElement": true,
     >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.locale",
+    >         "optional": true,
+    >         "targetPath": "$.locale"
     >       },
     >       {
     >         "sourcePath": "$.displayName",
@@ -614,56 +625,51 @@ These source systems consume SCIM 2.0 API provided by SAP Ariba Applications. Fo
     >       },
     >       {
     >         "sourcePath": "$.active",
-    >         "targetPath": "$.active",
-    >         "optional": true
+    >         "targetPath": "$.active"
     >       },
     >       {
-    >         "sourcePath": "$.title",
-    >         "targetPath": "$.title",
-    >         "optional": true
-    >       },
-    >       {
-    >         "sourcePath": "$.locale",
-    >         "targetPath": "$.locale",
-    >         "optional": true
+    >         "sourcePath": "$.timezone",
+    >         "optional": true,
+    >         "targetPath": "$.timezone"
     >       },
     >       {
     >         "sourcePath": "$.phoneNumbers",
     >         "preserveArrayWithSingleElement": true,
     >         "optional": true,
-    >         "targetPath": "$.phoneNumbers"
-    >       },
-    >       {
-    >         "sourcePath": "$.groups",
-    >         "preserveArrayWithSingleElement": true,
-    >         "optional": true,
-    >         "targetPath": "$.groups",
+    >         "targetPath": "$.phoneNumbers",
     >         "functions": [
     >           {
-    >             "condition": "'%ariba.applications.group.prefix%' !== 'null'",
-    >             "function": "concatString",
-    >             "applyOnElements": true,
-    >             "applyOnAttribute": "display",
-    >             "prefix": "%ariba.applications.group.prefix%"
+    >             "function": "putIfAbsent",
+    >             "key": "type",
+    >             "defaultValue": "work"
     >           }
     >         ]
     >       },
     >       {
     >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['value']",
     >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']['manager']['value']",
-    >         "optional": true
+    >         "optional": true,
+    >         "functions": [
+    >           {
+    >             "function": "resolveEntityIds"
+    >           }
+    >         ]
     >       }
     >     ]
     >   },
     >   "group": {
+    >     "condition": "isAttributeWithOptionalPrefix($.displayName, ariba.applications.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], ariba.applications.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >     "mappings": [
     >       {
-    >         "sourcePath": "$.id",
-    >         "targetVariable": "entityIdSourceSystem"
+    >         "sourceVariable": "entityIdTargetSystem",
+    >         "targetPath": "$.id"
     >       },
     >       {
-    >         "sourcePath": "$.schemas",
-    >         "preserveArrayWithSingleElement": true,
+    >         "constant": [
+    >           "urn:ietf:params:scim:schemas:core:2.0:Group",
+    >           "urn:ietf:params:scim:schemas:extension:sap:2.0:Group",
+    >           "urn:sap:cloud:scim:schemas:extension:custom:2.0:profile:Group"
+    >         ],
     >         "targetPath": "$.schemas"
     >       },
     >       {
@@ -671,16 +677,12 @@ These source systems consume SCIM 2.0 API provided by SAP Ariba Applications. Fo
     >         "targetPath": "$.displayName",
     >         "functions": [
     >           {
-    >             "condition": "'%ariba.applications.group.prefix%' !== 'null'",
-    >             "function": "concatString",
-    >             "prefix": "%ariba.applications.group.prefix%"
+    >             "condition": "isAttributeWithMandatoryPrefix(@, ariba.applications.group.prefix)",
+    >             "function": "replaceFirstString",
+    >             "regex": "%ariba.applications.group.prefix%",
+    >             "replacement": ""
     >           }
     >         ]
-    >       },
-    >       {
-    >         "condition": "'%ips.application.id%' !== 'null'",
-    >         "constant": "%ips.application.id%",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"
     >       },
     >       {
     >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
@@ -699,10 +701,15 @@ These source systems consume SCIM 2.0 API provided by SAP Ariba Applications. Fo
     >         "optional": true
     >       },
     >       {
-    >         "sourcePath": "$.members",
+    >         "sourcePath": "$.members[*].value",
     >         "preserveArrayWithSingleElement": true,
     >         "optional": true,
-    >         "targetPath": "$.members"
+    >         "targetPath": "$.members[?(@.value)]",
+    >         "functions": [
+    >           {
+    >             "type": "resolveEntityIds"
+    >           }
+    >         ]
     >       }
     >     ]
     >   }

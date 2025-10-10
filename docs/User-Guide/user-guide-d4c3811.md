@@ -121,7 +121,7 @@ Users can use the following self-services:
 **Related Information**  
 
 
-[Scenarios](../scenarios-fb9898d.md "Identity Authentication supports scenarios for consumers (business-to-consumer scenarios), for partners (business-to-business scenarios), and for employees (business-to-employee scenarios).")
+[Scenarios](../scenarios-fb9898d.md "Define your user engagement scenario - whether business-to-consumer, business-to-business, or business-to-employee - and explore onboarding and provisioning scenarios for secure authentication and identity management with SAP Cloud Identity Services.")
 
 [Multi-Factor Authentication](multi-factor-authentication-0d41cd4.md "This document provides information about the second factor for authentication or how to sign in if you are asked to provide a second factor to your primary credentials.")
 

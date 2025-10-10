@@ -105,6 +105,318 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-10-09
+
+</td>
+<td valign="top">
+
+2025-10-09
+
+</td>
+<td valign="top">
+
+28367
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Mail Server
+
+</td>
+<td valign="top">
+
+SAP can disable the default mail server configuration if you start sending multiple emails to invalid addresses. You will receive a notification in the administration console when the configuration is disabled. See [Configure Mail Server for Application Processes](Operation-Guide/configure-mail-server-for-application-processes-ccc7ba1.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-10-09
+
+</td>
+<td valign="top">
+
+2025-10-09
+
+</td>
+<td valign="top">
+
+28367
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Changed Behavior for User Managed Group Assignment
+
+</td>
+<td valign="top">
+
+The behavior has changed when trying to assign or unassign a group through the user resource for a target system that does not support group assignments.
+
+Previously, if you triggered a provisioning job after enabling group assignment, the job would fail.
+
+Now, the job will finish with error and only the specific entity related to the unsupported group assignment will fail.
+
+For more information, see [Enabling Group Assignment](Operation-Guide/enabling-group-assignment-0d80033.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-10-09
+
+</td>
+<td valign="top">
+
+2025-10-09
+
+</td>
+<td valign="top">
+
+28367
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Support for Additional Schema and Attributes in SAP Ariba Applications Transformations
+
+</td>
+<td valign="top">
+
+The transformations for SAP Ariba Applications source, target, and proxy systems have been extended to support the `urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User` schema, as well as the `expenseApprovalLimit` and `approvalLimit` attributes.
+
+For more information, see [SAP Ariba Applications](sap-ariba-applications-0ef1091.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-10-09
+
+</td>
+<td valign="top">
+
+2025-10-09
+
+</td>
+<td valign="top">
+
+28367
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Off-Cycle Upgrade
 
 </td>

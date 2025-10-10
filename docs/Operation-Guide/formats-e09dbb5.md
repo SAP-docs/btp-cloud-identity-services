@@ -2,7 +2,7 @@
 
 # Formats
 
-Here you find rules for creating valid identifiers in DCL, including starting characters, case sensitivity, and escaping rules.
+Here you find rules for creating valid identifiers in DCL, such as how to quote and how to separate packages. Identifiers are basically similar to Java identifiers.
 
 
 
@@ -51,8 +51,6 @@ Identifiers are basically similar to Java identifiers.
 
 > ### Example:  
 > `µSeconds`, `PublicTransport`
-
-An identifier complies with the scanner rule \(`IDENTIFIER_START (IDENTIFIER_START | RESTRICTED_IDENTIFIER_PART)*`\).
 
 An identifier can be enclosed by the double quotes \(`" ... "`\). This is required if a DCL keyword like `POLICY` is used.
 

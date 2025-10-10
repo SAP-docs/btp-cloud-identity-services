@@ -38,14 +38,6 @@ This scenario includes the following features:
 **Related Information**  
 
 
-[Business-to-Business Scenario](business-to-business-scenario-3908c37.md "The business-to-business scenario is related to services for business partners. Unlike the business-to-consumer scenario, consumer self-registration is not allowed, and the administrator of the company is usually the one that triggers the user registration process.")
-
-[Business-to-Employee Scenario](business-to-employee-scenario-3aecb4c.md "The business-to-employee scenario is related to services for employees of an organization. Employees can access various applications with one logon. Furthermore, administrators can upload employees data by using the user import functionality.")
-
-[Centralized Provisioning with Identity Directory](centralized-provisioning-with-identity-directory-9d0235c.md "Identity Directory is the persistency layer of SAP Cloud Identity Services, providing a central place for storing and managing users and groups. You can use it in centralized provisioning scenarios for managing user access to SAP cloud applications from a single, central location.")
-
-[Central Store-Based Provisioning](central-store-based-provisioning-33eae39.md "Central store-based provisioning enables the automatic provisioning of application-specific groups from the Identity Directory to the target systems whenever changes occur. These changes include user assignments or modifications of group attributes.")
-
 [Administration](Operation-Guide/administration-6a8e67c.md "The SAP Cloud Identity Services administration and configuration tasks are intended for administrators. They include configuring tenant settings, applications, authorization policies and provisioning, as well as managing users and groups, to ensure proper operations.")
 
 [Development](Development/development-55ab9b8.md "The developer guide is aimed mainly at organization developers who can implement configurations in addition to the ones in the administration console of Identity Authentication.")

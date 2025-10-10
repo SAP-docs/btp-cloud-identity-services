@@ -25,18 +25,6 @@ Description
 <tr>
 <td valign="top">
 
-`IS NULL` 
-
-</td>
-<td valign="top">
-
-Attribute value is empty
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 `IS RESTRICTED` 
 
 </td>
@@ -67,7 +55,20 @@ Authorizes access until it's constrained in a `RESTRICT` clause of the `USE` sta
 > }
 > ```
 
-Only use attribute constraints in authorization policy definitions. They aren't allowed in function definitions.
+> ### Sample Code:  
+> ```
+> POLICY CreateOrders {
+>     GRANT create ON orders WHERE order.total IS RESTRICTED AND product.category IS NOT RESTRICTED;
+> } 
+> 
+> POLICY CreateSmallOrders {
+>      USE CreateOrders RESTRICT order.total < 50, product.category IS NOT RESTRICTED;
+> }
+> 
+> POLICY CreateSmallAccessoryOrders {
+>      USE CreateOrders RESTRICT order.total < 50, product.category = 'accessory';
+> }
+> ```
 
 Only use the `IS (NOT) RESTRICTED` attribute constraint for attributes of the data type string, number, and Boolean. It's not allowed for arrays and structures.
 

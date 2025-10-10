@@ -7,7 +7,7 @@ You find advanced configuration techniques for authorization policies, focusing 
 **Related Information**  
 
 
-[Elements and Structure of the Data Control Language \(DCL\)](elements-and-structure-of-the-data-control-language-dcl-afc915f.md "Use DCL elements to define authorization policies, including rules, actions, resources, conditions, attributes, and a schema. These elements are essential for controlling access to data and resources.")
+[Structure of the Data Control Language \(DCL\)](structure-of-the-data-control-language-dcl-afc915f.md "Use DCL syntax to define authorization policies, including rules, actions, resources, conditions, attributes, and a schema. They are essential for controlling access to data and resources.")
 
 [Grammar and Syntax Rules](grammar-and-syntax-rules-7b50037.md "DCL has a set of grammar and syntax rules you must observe when you define authorization policies.")
 

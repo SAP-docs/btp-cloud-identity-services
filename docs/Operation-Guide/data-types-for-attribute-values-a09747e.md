@@ -12,10 +12,10 @@ Use the following data types:
 
 -   Boolean, Boolean\[\]
 
--   Structure
+-   Structured type
 
 
-You can define a data type as an array by adding `[]`. You can also assign a special null value to an attribute.
+You can also assign a special null value to an attribute.
 
-A Structure type allows specifying hierarchical types. For more information about the `app` attribute, see [Schema Definition](schema-definition-eee7014.md).
+A structured type allows specifying hierarchical types.
 

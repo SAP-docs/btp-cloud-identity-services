@@ -1,8 +1,8 @@
 <!-- loio38baa251132c4b088f41261fb3158fb3 -->
 
-# Data Control Language
+# Data Control Language \(DCL\)
 
-Developers define rules and authorization policies in SAP Cloud Identity Services. They use an SQL-like language - the data control language \(DCL\). Administrators can combine these rules within authorization policies and assign them to users.
+Developers define authorization policies in SAP Cloud Identity Services. They use an SQL-like language - the data control language \(DCL\). Administrators can restrict base policies and combine authorization policies into a new authorization policy.
 
 
 
@@ -17,7 +17,9 @@ The following services must be activated in your Cloud Foundry SAP BTP subaccoun
 
 
 
-Using this language, developers define authorizations. Administrators can refine them by combining rules within authorization policies. In the administration console, they assign the authorization policies to users.
+## Policy Definition in DCL
+
+Using this language, developers define authorizations. Administrators can refine them by combining rules in authorization policies created by them. In the administration console, they assign the authorization policies to users.
 
 This is what a policy definition looks like.
 

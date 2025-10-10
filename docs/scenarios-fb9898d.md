@@ -2,5 +2,5 @@
 
 # Scenarios
 
-Identity Authentication supports scenarios for consumers \(business-to-consumer scenarios\), for partners \(business-to-business scenarios\), and for employees \(business-to-employee scenarios\).
+Define your user engagement scenario - whether business-to-consumer, business-to-business, or business-to-employee - and explore onboarding and provisioning scenarios for secure authentication and identity management with SAP Cloud Identity Services.
 

@@ -10,11 +10,55 @@ When provisioning users from source to target systems, in addition to replicatin
 
 ## Prerequisites
 
--   You have configured a SCIM-based target system which supports patch operation.
+-   You have one of the following target systems configured:
 
-    -   To view the list of these systems, refer to [List of Properties](../list-of-properties-d6f3577.md) → `scim.support.patch.operation` → *System Type*.
+    -   [Identity Authentication](../identity-authentication-f217bd3.md)
 
-    -   To enable the patch operation for each of these systems, refer to its specific property in [List of Properties](../list-of-properties-d6f3577.md) →*<system\_prefix\>* `.support.patch.operation`
+    -   [Local Identity Directory](../local-identity-directory-59557ae.md)
+
+    -   [Microsoft Entra ID](../microsoft-entra-id-3d287fa.md)
+
+    -   [SAP Advanced Financial Closing](../sap-advanced-financial-closing-beeeebf.md)
+
+    -   [SAP Analytics Cloud](../sap-analytics-cloud-ea6a89d.md)
+
+    -   [SAP Ariba Applications](../sap-ariba-applications-47c8903.md)
+
+    -   [SAP Ariba Central Invoice Management](../sap-ariba-central-invoice-management-ea2147d.md)
+
+    -   [SAP BTP ABAP environment](../sap-btp-abap-environment-e763123.md)
+
+    -   [SAP Build Work Zone, standard edition](../sap-build-work-zone-standard-edition-8d6586f.md)
+
+    -   [SAP Commerce Cloud](../sap-commerce-cloud-21ec330.md)
+
+    -   [SAP Data Custodian](../sap-data-custodian-cf23000.md)
+
+    -   [SAP Enable Now](../sap-enable-now-e77702a.md)
+
+    -   [SAP Field Service Management](../sap-field-service-management-570b984.md)
+
+    -   [SAP HANA Cloud, SAP HANA Database](../sap-hana-cloud-sap-hana-database-7e2b54e.md)
+
+    -   [SAP Integrated Business Planning](../sap-integrated-business-planning-5864dc2.md)
+
+    -   [SAP Intelligent Agriculture](../sap-intelligent-agriculture-f29ee52.md)
+
+    -   [SAP Marketing Cloud](../sap-marketing-cloud-40fef47.md)
+
+    -   [SAP Revenue Growth Management](../sap-revenue-growth-management-85ea2ea.md)
+
+    -   [SAP Sales Cloud and SAP Service Cloud](../sap-sales-cloud-and-sap-service-cloud-1a974bc.md)
+
+    -   [SAP Signavio Process Transformation Suite](../sap-signavio-process-transformation-suite-b28002c.md)
+
+    -   [SAP S/4HANA Cloud](../sap-s-4hana-cloud-40940b8.md)
+
+    -   [SAP SuccessFactors Employee Central Payroll](../sap-successfactors-employee-central-payroll-03b4097.md)
+
+    -   [SAP SuccessFactors Incentive Management](../sap-successfactors-incentive-management-7865ccc.md)
+
+    -   [SCIM System](../scim-system-0427892.md)
 
 
 -   The groups that you want to assign exist on the target system.
@@ -128,6 +172,8 @@ Groups which are assigned to users through the user resource are referred to as 
 > If the group doesn't exist in the target system during user creation or update, the user provisioning fails.
 > 
 > If the group doesn't exist in the target system during user deletion, the user deletion succeeds.
+
+If you try to assign or unassign a user managed group to a user for a provisioning system that does not support it and trigger a provisioning job, the entity will fail and the job will finish with error.
 
 If you want to remove the group assignments of a deleted user from the source system, you need to modify the target system transformation by adding a mapping under the user resource containing the following configuration parts:
 

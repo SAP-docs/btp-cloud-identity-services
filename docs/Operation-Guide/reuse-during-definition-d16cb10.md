@@ -31,6 +31,37 @@ You can list policies using a semicolon \(`;`\).
 
 > ### Sample Code:  
 > ```sql
-> POLICY name {};
+> POLICY name01 {}
+> POLICY name02 {}
+> POLICY name03 {}
+> POLICY name04 {}
+> 
+> ```
+
+-   > ### Sample Code:  
+    > ```
+    > POLICY allowViewReports {};
+    > POLICY allowEditReports {};
+    > POLICY denyDeleteReports {};
+    > POLICY allowReadUserData {};
+    > POLICY denyWriteUserData {};
+    > POLICY allowManageRoles {};
+    > POLICY allowAssignAuthorizationions {};
+    > POLICY denyEditAuthorizations {};
+    > POLICY allowAccessAuditLogs {};
+    > ```
+
+
+> ### Sample Code:  
+> ```
+> POLICY allowViewReports {};
+> POLICY allowEditReports {};
+> POLICY denyDeleteReports {};
+> POLICY allowReadUserData {};
+> POLICY denyWriteUserData {};
+> POLICY allowManageRoles {};
+> POLICY allowAssignAuthorizationions {};
+> POLICY denyEditAuthorizations {};
+> POLICY allowAccessAuditLogs {};
 > ```
 

@@ -69,13 +69,5 @@ Once the procedure is executed, any change to an attribute value or a member of 
 **Related Information**  
 
 
-[Business-to-Consumer Scenario](business-to-consumer-scenario-fd11ee2.md "The business-to-consumer scenario is related to any actions performed by the consumer, such as registration to applications and consumer retailing. In this scenario, administrators facilitate the consumer processes, but they do not act on the consumer's behalf.")
-
-[Business-to-Business Scenario](business-to-business-scenario-3908c37.md "The business-to-business scenario is related to services for business partners. Unlike the business-to-consumer scenario, consumer self-registration is not allowed, and the administrator of the company is usually the one that triggers the user registration process.")
-
-[Business-to-Employee Scenario](business-to-employee-scenario-3aecb4c.md "The business-to-employee scenario is related to services for employees of an organization. Employees can access various applications with one logon. Furthermore, administrators can upload employees data by using the user import functionality.")
-
-[Centralized Provisioning with Identity Directory](centralized-provisioning-with-identity-directory-9d0235c.md "Identity Directory is the persistency layer of SAP Cloud Identity Services, providing a central place for storing and managing users and groups. You can use it in centralized provisioning scenarios for managing user access to SAP cloud applications from a single, central location.")
-
 [**Blog Post**: Taking Groups to the Next Level with Application-Specific Groups](https://community.sap.com/t5/technology-blogs-by-sap/taking-groups-to-the-next-level-with-application-specific-groups/ba-p/13956003)
 

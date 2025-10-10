@@ -174,7 +174,7 @@ The function is part of the default write transformation of some target systems 
 <tr>
 <td valign="top">
 
-IsAttributeWithOptionalPrefix
+isAttributeWithOptionalPrefix
 
 </td>
 <td valign="top">
@@ -197,7 +197,7 @@ IsAttributeWithOptionalPrefix
 </td>
 <td valign="top">
 
-This function checks wheter an attribute value starts with an optional prefix.
+This function checks whether an attribute value starts with an optional prefix.
 
 The syntax used by the function is as follows:
 
@@ -228,7 +228,7 @@ The function is part of the default write transformation of some target systems 
 <tr>
 <td valign="top">
 
-IsAttributeWithMandatoryPrefix
+isAttributeWithMandatoryPrefix
 
 </td>
 <td valign="top">
@@ -251,7 +251,7 @@ IsAttributeWithMandatoryPrefix
 </td>
 <td valign="top">
 
-This function checks wheter an attribute value starts with a predefined mandatory prefix.
+This function checks whether an attribute value starts with a predefined mandatory prefix.
 
 The syntax used by the function is the following:
 
@@ -1876,8 +1876,10 @@ The *manipulateDate* function supports the following operations:
 -   \(**Java**\) Decrementing the date by the "**–**" sign
 -   \(**Unix Time Stamp**\) Converting a number of milliseconds into a human readable date
 
+****
+
 > ### Note:  
-> The parameters `sourceDateFormat` and `targetDateFormat` accept values in short or full date & time format. For example: *yyyy-MM-dd'T'HH:mm:ss'Z'*.
+> The parameters `sourceDateFormat` and `targetDateFormat` accept values in short or full date & time format. For example: *yyyy-MM-dd'T'HH:mm:ss'Z'*, **`d MMM uuuu`**, or **`HH:mm dd/MM/yyyy`**.
 
 > ### Example:  
 > **Reads and writes the current date in standard *Java* date format**
