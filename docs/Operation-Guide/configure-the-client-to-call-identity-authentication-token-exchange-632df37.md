@@ -345,12 +345,16 @@ string
 </td>
 <td valign="top">
 
-Use provided API names. For more information, see [Consuming APIs from Other Applications](../Development/consuming-apis-from-other-applications-29e204d.md).
+Identifies the single sign-on scenario you want to consume.
+
+To consume the APIs of other applications, enter the provided API names. For more information, see [Consuming APIs from Other Applications](../Development/consuming-apis-from-other-applications-29e204d.md).
 
 > ### Note:  
-> If `resource` parameter is used to consume APIs from other applications, then the returned token is always of type `urn:ietf:params:oauth:token-type:access_token` even if `requested_token_type` is requested for type `id_token`.
+> If
+> 
+> `resource` parameter is used to consume APIs from other applications, then the returned token is always of type `urn:ietf:params:oauth:token-type:access_token` even if `requested_token_type` is requested for type `id_token`.
 
-
+To exchange a refresh token for an opaque access token in mobile to web application scenarios, enter `urn:sap:identity:sso`. The access token is only valid for five minutes.
 
 </td>
 <td valign="top">
@@ -585,7 +589,42 @@ Request body
 > "access_token": "<Base64Url-Encoded-SAML2-Bearer-Assertion>",
 > "issued_token_type": "urn:ietf:params:oauth:token-type:saml2",
 > "token_type": "Bearer",
-> "expires_in": 900
+> "expires_in": 600
+> }
+> ```
+
+> ### Example:  
+> *Request*
+> 
+> ```
+> 
+> https://my-tenant.ondemand.com/oauth2/token?grant_type=urn:ietf:params:oauth:grant-type:token-exchange&
+> 
+> client_id=a30ca226sbc21-soc5-dcf6-7k8a6b9f24
+> 
+> client_secret=OWSu0/0sSUeUCG1LAYmSQ10Ut0yrfz&
+> 
+> subject_token=Zjk1YTI3YERzNGZlZmTlNzZjNzk4YTY2ZjdlZjYwacw&
+> 
+> subject_token_type=urn:ietf:params:oauth:token-type:accesstoken&
+> 
+> requested_token_type=urn:ietf:params:oauth:token-type:acces_token&
+> 
+> resource=urn:sap:identity:sso
+> ```
+> 
+> *Response*
+> 
+> ```
+> 
+> Content-Type: application/json
+> 
+> {
+> "access_token": "MDFmMTNmY2MtMmViMC00ZWI5LWI0YWQtYjlkZjc5NmE1Mz",
+> "issued_token_type": "urn:ietf:params:oauth:token-type:access_token",
+> "scope": "openid",
+> "token_type": "Bearer",
+> "expires_in": 300
 > }
 > ```
 

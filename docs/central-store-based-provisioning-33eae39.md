@@ -27,12 +27,11 @@ To ensure the groups immediate provisioning to the target systems, the following
 
 ## Context
 
-You can initially create application-specific groups in the Identity Directory by running a provisioning job from a given source system or by using the SAP Cloud Identity Services administration console. For more information, see [Groups](groups-d93be69.md).
+You can initially create application-specific groups in the Identity Directory in the following ways: by running a provisioning job from a given source system, manually through the directory’s user interface in the SAP Cloud Identity Services administration console or programmatically using the Identity Directory SCIM API.
 
-When provisioning these groups from the Identity Directory to target systems, groups that do not exist in the target can only be created after they are modified in the source system. New groups in the Identity Directory will not be provisioned unless they have been changed. Additionally, creating and updating application-specific groups through user assignments require that users already exist in the target system. Central store-based provisioning does not create users in the target.
+For more information, see [Groups](groups-d93be69.md) and [User and Group Creation in Identity Directory](user-and-group-creation-in-identity-directory-efcb839.md).
 
-> ### Note:  
-> Application-specific groups with supported operations `readOnly`, `userOnlyMembership` and `membership` will not be created even if updates are made to the groups. If you try to provision such groups, you will get an ***Entity Failed*** status. For more information, see [Monitor Central Store Logs](Monitoring-and-Reporting/monitor-central-store-logs-9162898.md).
+When provisioning application-specific groups from the Identity Directory to target systems, groups that do not already exist in the target will be created. However, if you assign users to an application-specific group in the directory, this assignment will only be provisioned if the users already exist in the target system. Note that central store-based provisioning does not create users in the target system.
 
 
 

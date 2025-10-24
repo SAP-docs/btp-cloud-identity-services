@@ -14,6 +14,9 @@ To ensure a safe and stable environment, all requests have a limit of 50 concurr
 
 When the limit is exceeded, the client receives the ***HTTP 429 Too Many Requests*** response status code.
 
+> ### Restriction:  
+> Executing performance tests on Cloud Identity Services tenants requires approval from SAP. For more information, see KBA [3667040 - Performance and Stress tests for SAP Cloud Identity Services](https://me.sap.com/notes/3667040).
+
 
 
 <a name="loioe22ee47abf614565bcb29bb4ddbbf209__section_xql_wfh_qkb"/>

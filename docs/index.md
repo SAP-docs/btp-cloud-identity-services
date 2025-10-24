@@ -365,6 +365,7 @@
                 -   [Configure Custom Mail Server](Operation-Guide/configure-custom-mail-server-56cab62.md)
                 -   [Configure Amazon Simple Email Service](Operation-Guide/configure-amazon-simple-email-service-9153d6e.md)
             -   [Configure IdP-Initiated SSO](Operation-Guide/configure-idp-initiated-sso-5d59caa.md)
+            -   [Sync SSO Cookie Between Domains](Operation-Guide/sync-sso-cookie-between-domains-c76f097.md)
             -   [Send Security Alert Emails](Operation-Guide/send-security-alert-emails-c977464.md)
             -   [Enable Password Expiration Reminder](Operation-Guide/enable-password-expiration-reminder-a8de1be.md)
             -   [Send System Notifications via Emails](Operation-Guide/send-system-notifications-via-emails-aa04a8b.md)

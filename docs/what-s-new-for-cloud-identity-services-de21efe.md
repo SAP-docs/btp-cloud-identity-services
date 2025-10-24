@@ -145,17 +145,17 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2025-10-09
+2025-10-23
 
 </td>
 <td valign="top">
 
-2025-10-09
+2025-10-23
 
 </td>
 <td valign="top">
 
-28367
+28431
 
 </td>
 <td valign="top">
@@ -181,12 +181,634 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-Mail Server
+Signing Certificate
 
 </td>
 <td valign="top">
 
-SAP can disable the default mail server configuration if you start sending multiple emails to invalid addresses. You will receive a notification in the administration console when the configuration is disabled. See [Configure Mail Server for Application Processes](Operation-Guide/configure-mail-server-for-application-processes-ccc7ba1.md).
+You can add and choose an application certificate to be used when a request to the application is signed. See [Configure Signing Certificates and Certificate Options](Operation-Guide/configure-signing-certificates-and-certificate-options-9a8eade.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-10-23
+
+</td>
+<td valign="top">
+
+2025-10-23
+
+</td>
+<td valign="top">
+
+28431
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Domains
+
+</td>
+<td valign="top">
+
+Allow seamless single sign-on \(SSO\) and single logout \(SLO\) across the Cloud Identity Services domains - `ondemand.com` and `cloud.sap`. See [Sync SSO Cookie Between Domains](Operation-Guide/sync-sso-cookie-between-domains-c76f097.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-10-23
+
+</td>
+<td valign="top">
+
+2025-10-23
+
+</td>
+<td valign="top">
+
+28431
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Handling user unlock in SAP S/4HANA Cloud target systems
+
+</td>
+<td valign="top">
+
+The write transformations of the following target systems have been changed to handle unlocking of locked users: SAP S/4HANA Cloud, SAP Marketing Cloud, SAP Market Communication for Utilities, SAP BTP ABAP environment and SAP Integrated Business Planning.
+
+For more information, refer to the above mentioned systems in the [Target Systems](target-systems-ab3f641.md), for example [SAP S/4HANA Cloud](sap-s-4hana-cloud-40940b8.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-10-23
+
+</td>
+<td valign="top">
+
+2025-10-23
+
+</td>
+<td valign="top">
+
+28431
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Central store logs – create and delete groups
+
+</td>
+<td valign="top">
+
+The central store logs now include entries for CREATE and DELETE group operations, as well as Entity Deleted state.
+
+Previously, application-specific groups could only be created in the target system by updating a group member or group attribute. Now, groups that do not exist in the target system are automatically provisioned when they are created in the Identity Directory.
+
+For more information, see [Monitor Central Store Logs](Monitoring-and-Reporting/monitor-central-store-logs-9162898.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-10-23
+
+</td>
+<td valign="top">
+
+2025-10-23
+
+</td>
+<td valign="top">
+
+28431
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Application-Specific Groups
+
+</td>
+<td valign="top">
+
+We have updated the behavior of the `urn:ietf:params:scim:schemas:extension:sap:2.0:group:children` attribute when retrieving group information. Now, by default, the `children` attribute is not included in the response when retrieving a single group `/scim/Groups/{id}`. The retrieval of multiple groups `/scim/Groups/` is not supported. See [Groups](groups-d93be69.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-10-23
+
+</td>
+<td valign="top">
+
+2025-10-23
+
+</td>
+<td valign="top">
+
+28431
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Change in the Behavior for User Managed Group Assignment
+
+</td>
+<td valign="top">
+
+As of November 04, 2025, the behavior when trying to assign or unassign a group through the user resource for a target system that does not support group assignments will be changed.
+
+Currently, if you triggered a provisioning job after enabling group assignment, the job would fail.
+
+After the change, the job will finish with error and only the specific entity related to the unsupported group assignment will fail.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-10-23
+
+</td>
+<td valign="top">
+
+2025-11-04
+
+</td>
+<td valign="top">
+
+28431
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Ariba Applications - New Property
+
+</td>
+<td valign="top">
+
+A new system-specific property `ariba.applications.group.children.conversion` is introduced for SAP Ariba Applications source system that allows provisioning of nested groups of type **authorization** to the Identity Directory of SAP Cloud Identity Services or Identity Authentication \(SCIM API version 2\) target systems.
+
+For more information, see [List of Properties](list-of-properties-d6f3577.md) → `ariba.applications.group.children.conversion` and [SAP Ariba Applications](sap-ariba-applications-0ef1091.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-10-23
+
+</td>
+<td valign="top">
+
+2025-10-23
+
+</td>
+<td valign="top">
+
+28431
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Support for `externalName` Attribute in Identity Authentication \(using SCIM API version 2\) and Local Identity Directory Transformations
+
+</td>
+<td valign="top">
+
+The default transformations of Identity Authentication \(using SCIM API version 2\) and Local Identity Directory source, target, and proxy systems have been extended to support the `externalName` as optional group attribute.
+
+For more information, see [Identity Authentication](identity-authentication-e4e25f1.md) and [Local Identity Directory](local-identity-directory-8c7d05e.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-10-23
+
+</td>
+<td valign="top">
+
+2025-10-23
+
+</td>
+<td valign="top">
+
+28431
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
 
 </td>
 <td valign="top">
@@ -257,18 +879,12 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-Changed Behavior for User Managed Group Assignment
+Mail Server
 
 </td>
 <td valign="top">
 
-The behavior has changed when trying to assign or unassign a group through the user resource for a target system that does not support group assignments.
-
-Previously, if you triggered a provisioning job after enabling group assignment, the job would fail.
-
-Now, the job will finish with error and only the specific entity related to the unsupported group assignment will fail.
-
-For more information, see [Enabling Group Assignment](Operation-Guide/enabling-group-assignment-0d80033.md).
+SAP can disable the default mail server configuration if you start sending multiple emails to invalid addresses. You will receive a notification in the administration console when the configuration is disabled. See [Configure Mail Server for Application Processes](Operation-Guide/configure-mail-server-for-application-processes-ccc7ba1.md).
 
 </td>
 <td valign="top">
@@ -283,7 +899,7 @@ General Availability
 </td>
 <td valign="top">
 
-Changed
+New
 
 </td>
 <td valign="top">

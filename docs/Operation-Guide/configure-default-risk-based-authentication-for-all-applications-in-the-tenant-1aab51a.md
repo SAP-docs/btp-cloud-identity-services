@@ -208,6 +208,8 @@ The rule is valid for any *IP range*, *Forwarded IP Range*, *Group*, *Authentica
 
 [Configure IdP-Initiated SSO](configure-idp-initiated-sso-5d59caa.md "Enable or disable IdP-Initiated SSO via the administration console for SAP Cloud Identity Services.")
 
+[Sync SSO Cookie Between Domains](sync-sso-cookie-between-domains-c76f097.md "Enable the Sync SSO Cookie Between Domains Settings option to allow seamless single sign-on (SSO) and single logout (SLO) across the Cloud Identity Services domains - ondemand.com and cloud.sap.")
+
 [Send Security Alert Emails](send-security-alert-emails-c977464.md "Send security alert emails to end-users or administrators when changes in their accounts are made.")
 
 [Enable Password Expiration Reminder](enable-password-expiration-reminder-a8de1be.md "Enable password expiration reminder for SAP Cloud Identity Services to ensure the users are aware that a password change is due.")

@@ -20,7 +20,7 @@ As a tenant administrator, you can assign one or more groups created for a speci
 ## Context
 
 > ### Caution:  
-> The supported number of users in a group is 344,000 members. If you exceed this number, the operations with the group might mot work properly.
+> The supported number of users in a group is 344,000 members. If you exceed this number, the operations with the group might not work properly.
 
 
 

@@ -656,6 +656,10 @@ In SAP S/4HANA Cloud, business partners are the central master data objects that
     >         "optional": true
     >       },
     >       {
+    >         "targetPath": "$.user.lockedIndicator",
+    >         "constant": "false"
+    >       },
+    >       {
     >         "condition": "$.active == false",
     >         "targetPath": "$.user.lockedIndicator",
     >         "constant": "true"

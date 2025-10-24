@@ -329,6 +329,38 @@ SAP Application Server ABAP
 <tr>
 <td valign="top">
 
+`abap.user.page.size`
+
+</td>
+<td valign="top">
+
+Use this property to configure the number of users to be read from SAP Application Server ABAP at once.
+
+If the property is not set, the function module `SUSR_USER_GET_DETAIL_MASS` **cannot** be used, even when it is available resource present on the ABAP server.
+
+> ### Note:  
+> The property can be used only when the function module `SUSR_USER_GET_DETAIL_MASS` is exposed as an accessible resource and is present on the ABAP server. Even when these conditions are fulfilled, if the property is not set, the function module **cannot** be used .
+> 
+> For more information, see SAP Note [3631587](https://me.sap.com/notes/3631587).
+
+**Possible values**:
+
+efault value: *100* 
+
+The maximum allowed number is 100.
+
+System Role: Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP Application Server ABAP
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `abap.role.prefix`
 
 </td>
@@ -467,6 +499,34 @@ Predefined value \(during system creation\):
 
 
 **System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP Ariba Applications
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ariba.applications.group.children.conversion`
+
+</td>
+<td valign="top">
+
+This property allows provisioning of "nested groups" \(group structures\) of type authorization from SAP Ariba Applications source systems to the Identity Directory of SAP Cloud Identity Services or Identity Authentication \(SCIM API version 2\) target systems. When enabled \(set to true\), the members of a given group from SAP Ariba Applications source system will be provisioned to the target system with reversed parent-child relationship. That is, the child groups in the source system become parent groups in the target system, while the original parent group becomes a child group in the target. For more information, see the description of the `children` attribute in [Groups](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/groups?version=Cloud).
+
+The property is not automatically added during system creation.
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false*
+
+**System Role**: Source
 
 </td>
 <td valign="top">

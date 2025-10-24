@@ -263,6 +263,8 @@ Use this procedure to disable or enable the IdP-Initiated SSO process.
 
 [Configure Mail Server for Application Processes](configure-mail-server-for-application-processes-ccc7ba1.md "Configure mail server for the emails sent to the end users in the different application processes.")
 
+[Sync SSO Cookie Between Domains](sync-sso-cookie-between-domains-c76f097.md "Enable the Sync SSO Cookie Between Domains Settings option to allow seamless single sign-on (SSO) and single logout (SLO) across the Cloud Identity Services domains - ondemand.com and cloud.sap.")
+
 [Send Security Alert Emails](send-security-alert-emails-c977464.md "Send security alert emails to end-users or administrators when changes in their accounts are made.")
 
 [Enable Password Expiration Reminder](enable-password-expiration-reminder-a8de1be.md "Enable password expiration reminder for SAP Cloud Identity Services to ensure the users are aware that a password change is due.")

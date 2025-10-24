@@ -164,7 +164,7 @@ To configure signing certificates and certificate options in the administration 
     2.  Choose *Save*.
 
 
-10. **Optional:** \(If you have added a second signing certificate in tenant settings\) Under *Identity Provider Certificates*, choose the certificate to be used when a request to the application is signed.
+10. **Optional:** \(If you have added a second signing certificate in *Tenant Settings* or an application certificate in *Applications*\) Under *Identity Provider Certificates*, choose the certificate to be used when a request to the application is signed.
 
 
     <table>
@@ -202,8 +202,14 @@ To configure signing certificates and certificate options in the administration 
     
     When the option is disabled, the certificate that is set as *Active* in the list is used when a request to the application is signed. You can choose the active certificate from the list.
 
+    > ### Tip:  
+    > To add an application certificate for the specific application, go to *Applications* \> *choose the application you want to edit* \> *Single Sign-On* \> *Identity Provider Certificates* \> *\+Add*.
+
+    > ### Caution:  
+    > The application will stop working if the configuration of the certificate is not updated with the new certificate.
+
     > ### Note:  
-    > Your choice of *Active* certificate in the list is not related with the choice of *Default* certificate in *Tenant Settings* \> *SAML 2.0 Configuration* \> *Signing Certificates*.
+    > Your choice of *Active* certificate in the list is not related with the choice of *Default* certificate in *Tenant Settings* \> *SAML 2.0 Configuration* \> *SAML 2.0* \> *Signing Certificates*.
 
 
     

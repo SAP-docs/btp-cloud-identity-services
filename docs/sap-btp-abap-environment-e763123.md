@@ -477,6 +477,10 @@ The Identity Provisioning service manages the complete set of **business partner
     >         "targetPath": "$.workplaceInformation.emailAddress"
     >       },
     >       {
+    >         "targetPath": "$.user.lockedIndicator",
+    >         "constant": "false"
+    >       },
+    >       {
     >         "condition": "$.active == false",
     >         "targetPath": "$.user.lockedIndicator",
     >         "constant": "true"

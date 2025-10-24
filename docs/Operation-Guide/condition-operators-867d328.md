@@ -618,7 +618,7 @@ Structure
 </td>
 <td valign="top">
 
-:heavy_check_mark: 
+:x: 
 
 </td>
 </tr>
@@ -650,7 +650,7 @@ Structure
 </td>
 <td valign="top">
 
-:heavy_check_mark: 
+:x: 
 
 </td>
 </tr>
@@ -682,7 +682,7 @@ Structure
 </td>
 <td valign="top">
 
-:heavy_check_mark: 
+:x: 
 
 </td>
 </tr>
@@ -714,7 +714,7 @@ Structure
 </td>
 <td valign="top">
 
-:heavy_check_mark: 
+:x: 
 
 </td>
 </tr>
@@ -746,7 +746,7 @@ Structure
 </td>
 <td valign="top">
 
-:heavy_check_mark: 
+:x: 
 
 </td>
 </tr>
@@ -778,7 +778,7 @@ Structure
 </td>
 <td valign="top">
 
-:heavy_check_mark: 
+:x: 
 
 </td>
 </tr>

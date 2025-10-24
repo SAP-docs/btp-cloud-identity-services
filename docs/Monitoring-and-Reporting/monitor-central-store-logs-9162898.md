@@ -210,14 +210,11 @@ You can search, view and refresh central store logs.
     
     The type of the operation.
 
-    -   *CREATE* - This operation will appear when a group is created in the target system.
+    -   *CREATE* - This operation occurs when a group is created in the target system.
 
-        When provisioning application-specific groups from the Identity Directory to target systems, groups that do not exist in the target will only be created after an update is made to the group in the source. This update could involve assigning users or modifying group attributes. Newly created groups in the Identity Directory source system are not provisioned unless changes occur. This applies to application-specific groups of types: `userGroup`, `authorization` and `deepLinkActivationPermission`, with the supported operation `readWrite`.
+    -   *UPDATE* - This operation occurs when a group is updated in the target system.
 
-        > ### Note:  
-        > Application-specific groups with supported operations `readOnly`, `userOnlyMembership` and `membership` will not be created even if updates are made to the groups. When trying to provision such groups, you will get an ***Entity Failed*** status and an error message in the *Additional Information* section. Examples of these messages include: ***Application group not found or more than one groups for the given display name found on the target system***.
-
-    -   *UPDATE* - This operation will appear when a group is updated in the target system.
+    -   *DELETE*- This operation occurs when a group is deleted in the target system.
 
 
 
@@ -239,6 +236,8 @@ You can search, view and refresh central store logs.
     -   *Entity Updated*
 
     -   *Entity Failed*
+
+    -   *Entity Deleted*
 
 
 

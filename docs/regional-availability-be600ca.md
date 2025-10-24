@@ -410,44 +410,7 @@ Azure
 <tr>
 <td valign="top">
 
-Saudi Arabia
-
-</td>
-<td valign="top">
-
-`sa2.accounts.ondemand.com` 
-
-</td>
-<td valign="top">
-
-Dammam, Saudi Arabia, Middle East
-
-</td>
-<td valign="top">
-
-Google Cloud
-
-</td>
-<td valign="top">
-
-`34.166.65.197, 34.166.56.10`
-
-</td>
-<td valign="top">
-
-`34.166.19.58/32, 34.166.58.219/32, 34.166.53.185/32, 34.166.10.70/32`
-
-</td>
-<td valign="top">
-
-`34.166.19.58-34.166.19.58, 34.166.58.219-34.166.58.219, 34.166.53.185-34.166.53.185, 34.166.10.70-34.166.10.70`
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Saudi Arabia
+Saudi Arabia \(SA1\)
 
 </td>
 <td valign="top">
@@ -459,7 +422,7 @@ Saudi Arabia
 </td>
 <td valign="top">
 
-Saudi Arabia \(Riyadh, Dammam\)
+Dammam, Saudi Arabia, Middle East \(for Non-Regulated Customers\)
 
 </td>
 <td valign="top">
@@ -480,6 +443,45 @@ Google Cloud
 <td valign="top">
 
 `34.166.143.220-34.166.143.220, 34.166.36.253-34.166.36.253`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Saudi Arabia \(SA2\)
+
+</td>
+<td valign="top">
+
+`accounts.ondemand.com`
+
+`accounts.cloud.sap`
+
+</td>
+<td valign="top">
+
+Dammam, Saudi Arabia, Middle East \(for Regulated Customers\)
+
+</td>
+<td valign="top">
+
+Google Cloud
+
+</td>
+<td valign="top">
+
+`34.166.65.197, 34.166.56.10`
+
+</td>
+<td valign="top">
+
+`34.166.19.58/32, 34.166.58.219/32, 34.166.53.185/32, 34.166.10.70/32`
+
+</td>
+<td valign="top">
+
+`34.166.19.58-34.166.19.58, 34.166.58.219-34.166.58.219, 34.166.53.185-34.166.53.185, 34.166.10.70-34.166.10.70`
 
 </td>
 </tr>

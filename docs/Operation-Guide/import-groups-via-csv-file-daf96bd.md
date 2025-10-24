@@ -22,7 +22,7 @@ If the group does not exist in the tenant, and you provide that group in the CSV
 You can only add users to the groups via the import groups option, you don't remove users from the groups.
 
 > ### Caution:  
-> The supported number of users in a group is 344,000 members. If you exceed this number, the operations with the group might mot work properly.
+> The supported number of users in a group is 344,000 members. If you exceed this number, the operations with the group might not work properly.
 
 > ### Remember:  
 > When you create new groups with user assignments, or update existing ones with their user assignments, make sure that the CSV file contains unique users with unique identifiers.

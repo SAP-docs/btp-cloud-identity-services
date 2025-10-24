@@ -354,6 +354,27 @@ These source systems consume SCIM 2.0 API provided by SAP Ariba Applications. Fo
     <tr>
     <td valign="top">
     
+    \(Optional\) `ariba.applications.group.children.conversion`
+    
+    </td>
+    <td valign="top">
+    
+    This property allows provisioning of "nested groups" \(group structures\) of type authorization from SAP Ariba Applications source systems to the Identity Directory of SAP Cloud Identity Services or Identity Authentication \(SCIM API version 2\) target systems. When enabled \(set to true\), the members of a given group from SAP Ariba Applications source system will be provisioned to the target system with reversed parent-child relationship. That is, the child groups in the source system become parent groups in the target system, while the original parent group becomes a child group in the target. For more information, see the description of the `children` attribute in [Groups](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/groups?version=Cloud).
+
+    The property is not automatically added during system creation.
+
+    **Possible values:**
+
+    -   *true*
+    -   *false*
+
+    Default value: *false*
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     `ariba.applications.group.members.page.size`
     
     </td>
@@ -485,6 +506,9 @@ These source systems consume SCIM 2.0 API provided by SAP Ariba Applications. Fo
 5.  Configure the transformations.
 
     Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Ariba Applications* source system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
+
+    > ### Note:  
+    > When provisioning from SAP Ariba Applications source system to the Identity Directory of SAP Cloud Identity Services or Identity Authentication \(SCIM API version 2\) target system, you can preserve the group hierarchy with nested **authorization** groups by setting the `ariba.applications.group.children.conversion` property to *true*.
 
     You can change the default transformation mapping rules to reflect your current setup of entities in your SAP Ariba Applications source system. For more information, see:
 

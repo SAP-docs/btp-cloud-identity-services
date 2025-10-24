@@ -1,33 +1,32 @@
-<!-- loioe81a19b0067f4646982d7200a8dab3ca -->
+<!-- loioc76f0979cfb94e759fdcf9cdb0926344 -->
 
-<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+# Sync SSO Cookie Between Domains
 
-# Tenant SAML 2.0 Configurations
-
-You as a tenant administrator can view and download the tenant SAML 2.0 metadata. You can also change the name format and update your certificate used by the identity provider to digitally sign the messages for the applications.
+Enable the *Sync SSO Cookie Between Domains Settings* option to allow seamless single sign-on \(SSO\) and single logout \(SLO\) across the Cloud Identity Services domains - `ondemand.com` and `cloud.sap`.
 
 
 
-<a name="loioe81a19b0067f4646982d7200a8dab3ca__prereq_wcy_1vf_ppb"/>
+<a name="loioc76f0979cfb94e759fdcf9cdb0926344__prereq_k4x_cmg_ppb"/>
 
 ## Prerequisites
 
-You are assigned the *Manage Tenant Configuration* role. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
+-   You are assigned the *Manage Tenant Configuration* role. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
+
+-   The users have allowed third-party cookies in their browsers.
 
 
 
 ## Context
 
-> ### Note:  
-> For tenants created before 10 September 2024, the signing certificate is one and the same for SAML 2.0 and OpenId Connect \(OIDC\). Changing one of the configurations causes the service to separate the configuration into two signing certificates, one for SAML and one for OIDC.
+> ### Restriction:  
+> This configuration isn't relevant if you’re using a custom domain.
+
+Some applications have trust configurations with the `ondemand.com` domain, while others with the new `cloud.sap` domain. This can cause problems with the SSO and SLO between two application using different domains, and trust configuration in the corporate identity provider \(IdP\).
 
 > ### Remember:  
-> The signature and digest methods in the XML of the metadata file depend on the signing certificate, which is configured for the identity provider.
-> 
-> > ### Remember:  
-> > It takes 2 minutes for the configuration changes to take place.
+> Use this option when migrating from `ondemand.com` to `cloud.sap`. The long-term usage of the option isn't recommended.
 
-To view and download the tenant SAML 2.0 metadata, or to change the name format, or the default certificate, proceed as follows:
+The *Sync SSO Cookie Between Domains Settings* is disabled by default. To enable it, proceed as follows:
 
 
 
@@ -39,136 +38,20 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
 
     At the top of the page, you can view the administrative and license relevant information of the tenant.
 
-3.  Under *Single Sign-On*, choose the *SAML 2.0 Configuration* list item.
+3.  Under *Single-Sign On*, choose the *Sync SSO Cookie Between Domains Settings* list item.
 
-    The *SAML 2.0 Configuration* page that opens displays the name of the identity provider, its endpoints, and its signing certificate.
-
-4.  **Optional:** To download the identity provider's metadata, press the *Download Metadata File* button and choose one of the options.
-
-    -   *Default-certificate*
-    -   *Non-default certificate*
-    -   *All certificates*
-
-5.  **Optional:** To change the name of the identity provider, choose under the *Identity Provider Settings* tab the *Edit* button next to the *Name* field, select the name from the dropdown list, and save your changes.
-
-    The drop-down list offers the following options:
-
-
-    <table>
-    <tr>
-    <th valign="top">
-
-    Issuer
-    
-    </th>
-    <th valign="top">
-
-    Notes
-    
-    </th>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Default Issuer format
-    
-    </td>
-    <td valign="top">
-    
-    https://<tenant ID\>.accounts.ondemand.com
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Legacy Issuer format
-    
-    </td>
-    <td valign="top">
-    
-    <tenant ID\>.accounts.ondemand.com
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Common domain
-    
-    </td>
-    <td valign="top">
-    
-    https://<tenant ID\>.accounts.cloud.sap
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Custom Domain \(if configured\)
-    
-    </td>
-    <td valign="top">
-    
-    <custom domain host\>
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    Tenants in China region
-    
-    </td>
-    <td valign="top">
-    
-    https:// <tenant ID\>.accounts.sapcloud.cn
-    
-    </td>
-    </tr>
-    </table>
-    
-    > ### Note:  
-    > Tenant ID is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the tenant ID.
+4.  Use the slider next to the option to enable it.
 
     > ### Remember:  
-    > Change the name of the identity provider on the service provider side, or the name of the identity provider on the corporate identity provider side, every time you change the name format of the identity provider in the administration console. If you have set trusts with more than one service provider, or corporate identity provider, change the name in every provider. For more information about how to edit the name, see the documentation of the respective service or corporate identity providers.
+    > It takes 2 minutes for the configuration changes to take place.
 
-    If the change of the name is successful, the system displays the message ***Tenant <name of tenant\> updated***.
+    If the operation is successful, you see a confirmation message.
 
-6.  **Optional:** To update your signing certificate, choose under the *Signing Certificates* tab the *\+Add* button on the right. You can choose from the following options:
-
-    -   *Regenerate the existing certificate with new validity, reusing the same private key* \> *Next Step* \> *Choose validity from the drop down* \> *Next Step* \> *Finish*.
-
-        > ### Note:  
-        > The validity period can be 3, 5 and 10 years.
-
-    -   *Create new a self-signed certificate with a new private key and the same Subject DN* \> *Next Step* \> *Select key size* \> *Choose validity from the drop down* \> *Next Step* \> *Finish*.
-
-        > ### Note:  
-        > The key size can be 2048, 3072 and 4096. The validity period can be 3, 5 and 10 years.
-
-    -   *Download your Certificate Signing Request* \> *Next Step* \> *add Subject DN and select key size and validity from the options* \> *Next Step* \> *Download CSR*. Use the downloaded .csr file to generate a certificate from the trusted CA. Copy the newly generated certificate, choose :pencil2:, and paste the certificate as text in the *Certificate Information* field.
-
-        > ### Note:  
-        > The signing algorithm can be SHA-256 and SHA-384. The key size can be 2048, 3072 and 4096.
-
-
-
-
-
-<a name="loioe81a19b0067f4646982d7200a8dab3ca__postreq_ghg_tzy_xqb"/>
-
-## Next Steps
-
-To change the default certificate for the tenant, choose *Edit* \> *the new certificate from the list* \> *Save*.
-
-> ### Caution:  
-> When you change the default certificate for the tenant, you must also update the trust with the service provider. For more information, see [Configure SAML 2.0 Service Provider](configure-saml-2-0-service-provider-51f1f75.md).
 
 **Related Information**  
 
+
+[Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md "You as a tenant administrator can view and download the tenant SAML 2.0 metadata. You can also change the name format and update your certificate used by the identity provider to digitally sign the messages for the applications.")
 
 [Get SAML 2.0 IdP Metadata via Parameter](get-saml-2-0-idp-metadata-via-parameter-2c76690.md "Tenant administrator can get the SAML 2.0 metadata via specific parameters.")
 
@@ -220,8 +103,6 @@ To change the default certificate for the tenant, choose *Edit* \> *the new cert
 
 [Configure IdP-Initiated SSO](configure-idp-initiated-sso-5d59caa.md "Enable or disable IdP-Initiated SSO via the administration console for SAP Cloud Identity Services.")
 
-[Sync SSO Cookie Between Domains](sync-sso-cookie-between-domains-c76f097.md "Enable the Sync SSO Cookie Between Domains Settings option to allow seamless single sign-on (SSO) and single logout (SLO) across the Cloud Identity Services domains - ondemand.com and cloud.sap.")
-
 [Send Security Alert Emails](send-security-alert-emails-c977464.md "Send security alert emails to end-users or administrators when changes in their accounts are made.")
 
 [Enable Password Expiration Reminder](enable-password-expiration-reminder-a8de1be.md "Enable password expiration reminder for SAP Cloud Identity Services to ensure the users are aware that a password change is due.")
@@ -237,6 +118,4 @@ To change the default certificate for the tenant, choose *Edit* \> *the new cert
 [Configure P-User Next Index](configure-p-user-next-index-045bb1c.md "Set the value for the P-user next index.")
 
 [Reuse SAP Cloud Identity Services Tenants for Different Customer IDs](reuse-sap-cloud-identity-services-tenants-for-different-customer-ids-ebd0258.md "You as a tenant administrator can reuse an existing tenant for configurations and automated subscriptions.")
-
-[Configuring Tenant Settings](configuring-tenant-settings-d4d6fdc.md "Initially, the tenants are configured to use default settings. This section describes how you as a tenant administrator can make custom tenant configurations.")
 

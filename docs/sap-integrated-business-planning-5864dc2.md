@@ -647,6 +647,10 @@ SAP Integrated Business Planning provides different APIs for integration with Id
     >         "targetPath": "$.workplaceInformation.emailAddress"
     >       },
     >       {
+    >         "targetPath": "$.user.lockedIndicator",
+    >         "constant": "false"
+    >       },
+    >       {
     >         "condition": "$.active == false",
     >         "targetPath": "$.user.lockedIndicator",
     >         "constant": "true"
