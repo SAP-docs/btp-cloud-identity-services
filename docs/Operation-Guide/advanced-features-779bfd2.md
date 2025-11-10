@@ -2,7 +2,7 @@
 
 # Advanced Features
 
-You find advanced configuration techniques for authorization policies, focusing on reusable functions, annotations, value help services, formatting conventions, and internal functions for enterprise-grade authorization policies.
+You find advanced configuration techniques for authorization policies, focusing on annotations, formatting conventions, and internal functions for enterprise-grade authorization policies.
 
 **Related Information**  
 

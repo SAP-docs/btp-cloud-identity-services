@@ -206,7 +206,7 @@ To configure signing certificates and certificate options in the administration 
     > To add an application certificate for the specific application, go to *Applications* \> *choose the application you want to edit* \> *Single Sign-On* \> *Identity Provider Certificates* \> *\+Add*.
 
     > ### Caution:  
-    > The application will stop working if the configuration of the certificate is not updated with the new certificate.
+    > The application will stop working if the configuration of the application is not updated with the new certificate.
 
     > ### Note:  
     > Your choice of *Active* certificate in the list is not related with the choice of *Default* certificate in *Tenant Settings* \> *SAML 2.0 Configuration* \> *SAML 2.0* \> *Signing Certificates*.

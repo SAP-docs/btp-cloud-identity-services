@@ -20,27 +20,20 @@ To establish the connection between Identity Provisioning and SAP Integrated Bus
 
 SAP Integrated Business Planning is a cloud-based solution that combines sales and operations planning \(S&OP\), forecasting and demand, response and supply, demand-driven replenishment, and inventory planning.
 
-You can use Identity Provisioning to configure SAP IBP as a target system where you can provision entities from a particular source system. This scenario supports provisioning **users** and **role assignments**. In SAP Integrated Business Planning, groups correspond to roles, thus group members are user assignments of a role.
+You can use Identity Provisioning to configure SAP IBP as a target system where you can provision entities from a particular source system. The Identity Provisioning service manages the complete set of **business partners** and their relevant **business users** \(employee\).
 
-> ### Note:  
-> Identity Provisioning cannot create and delete roles in SAP Integrated Business Planning target system. It can only create, update and delete user assignments of a role. Therefore, roles must have been created in SAP Integrated Business Planning system before you run a provisioning job.
-> 
-> For example, if you try to create or delete a role in SAP Integrated Business Planning, Identity Provisioning will only add or remove the user assignments of that role, respectively.
+SAP Integrated Business Planning provides different APIs for integration with Identity Provisioning, resulting in different connector versions for each API. Each connector version supports specific attribute mappings within the transformations and requires particular property values. By default, the Identity Provisioning service uses API version *1*. The value of the `ibp.api.version` property controls which API you use.
 
-The Identity Provisioning service manages the complete set of **business partners** and their relevant **business users** \(employee\).
-
-SAP Integrated Business Planning provides different APIs for integration with Identity Provisioning, resulting in different connector versions for each API. Each connector version supports specific attribute mappings within the transformations and requires particular property values. By default, the Identity Provisioning service uses version *1*. The value of the `ibp.api.version` property controls which API you use.
-
--   When the value is set to *1*, or the property is not defined \(typical for systems created before versioning was introduced on June 3, 2025\), SAP Integrated Business Planning API: Business User is used. This API version is SOAP based. It supports provisioning **users** and **role assignments**. In SAP Integrated Business Planning version 1, groups correspond to roles, thus group members are user assignments of a role.
+-   When the value is set to *1* or the property is not present \(typical for systems created before versioning was introduced on November 6, 2025\), the SOAP API provided by the communication scenario SAP\_COM\_0193 is used. It supports provisioning **business users** and **role assignments**. In SAP Integrated Business Planning version 1, groups correspond to roles, thus group members are user assignments to a role.
 
     > ### Note:  
     > Identity Provisioning cannot create and delete roles in SAP Integrated Business Planning target system. It can only create, update and delete user assignments of a role. Therefore, roles must have been created in SAP Integrated Business Planning system before you run a provisioning job.
-    > 
-    > For example, if you try to create or delete a role in SAP Integrated Business Planning, Identity Provisioning will only add or remove the user assignments of that role, respectively.
 
-    For more information on how to update to version *2*, see [Update Connector Version](Operation-Guide/update-connector-version-8558733.md).
+    For more information on how to update to version *2*, see [Update SAP Integrated Business Planning](Operation-Guide/update-sap-integrated-business-planning-18d1280.md).
 
--   When the value is set to *2*, SCIM Interface for IAM is used. It supports provisioning of **business users** with their **assignments** to groups of type **userGroup** and **authorization**. For more information, see [Groups](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/groups?locale=en-US&version=Cloud).
+-   When the value is set to *2*, the SCIM interface provided by the communication scenario SAP\_COM\_0465 is used. It supports provisioning of **business users** with their **assignments** to user groups and roles.
+
+    This version allows you to create, update, and delete user groups, referred to as business user groups in SAP Integrated Business Planning. However, similar to connector version 1, you cannot create or delete groups of type **authorization** \(business roles in SAP Integrated Business Planning\). You can only update the role assignments.
 
 
 
@@ -81,25 +74,14 @@ SAP Integrated Business Planning provides different APIs for integration with Id
 
     4.  [Create a communication arrangement](https://help.sap.com/viewer/feae3cea3cc549aaa9d9de7d363a83e6/Latest/en-US/065d578693334cbeb86b8f31f0edfc93.html) with the created system.
 
-        For your Identity Provisioning scenario, choose *Scenario ID* SAP\_COM\_0193 \(SAP Cloud Identity Provisioning Integration\).
-
-        > ### Note:  
-        > The communication scenario *SAP\_COM\_0193* is enhanced to support the User UUID attribute which is generated by Identity Authentication at user creation.
-        > 
-        > The User UUID is universally unique identifier. This attribute is immutable and unique across technology layers, such as user interface, APIs, and security tokens, as well as across products and lines of business contributing to a business process in the Intelligent Enterprise.
-
-        -   When SAP Integrated Business Planning version *1* is used:
-
-            For your Identity Provisioning scenario, choose *Scenario ID* SAP\_COM\_0193 \(SAP Cloud Identity Provisioning Integration\).
+        -   When `ibp.api.version`=`1` is set in Identity Provisioning for the SAP IBP target system, choose *Scenario ID* SAP\_COM\_0193 \(SAP Cloud Identity Provisioning Integration\).
 
             > ### Note:  
             > The communication scenario *SAP\_COM\_0193* is enhanced to support the User UUID attribute which is generated by Identity Authentication at user creation.
             > 
             > The User UUID is universally unique identifier. This attribute is immutable and unique across technology layers, such as user interface, APIs, and security tokens, as well as across products and lines of business contributing to a business process in the Intelligent Enterprise.
 
-        -   When SAP Integrated Business Planning version *2* is used:
-
-            For your Identity Provisioning scenario, choose *Scenario ID* SAP\_COM\_0465 \(System for Cross-domain Identity Management Integration\).
+        -   When `ibp.api.version`=`2` is set in Identity Provisioning for the SAP IBP target system, choose *Scenario ID* SAP\_COM\_0465 \(System for Cross-domain Identity Management Integration\).
 
             > ### Note:  
             > The communication scenario *SAP\_COM\_0465* allows you to maintain data via SCIM \(System for Cross-domain Identity Management\). For more information, see [Integrate Cross-Domain Identity Management](https://help.sap.com/docs/SAP_INTEGRATED_BUSINESS_PLANNING/feae3cea3cc549aaa9d9de7d363a83e6/09a1bebaf6eb4954af2df326b025d0ec.html?locale=en-US&version=2505).
@@ -260,25 +242,7 @@ SAP Integrated Business Planning provides different APIs for integration with Id
     
     If Identity Provisioning tries to provision a user that already exists in the SAP Integrated Business Planning target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved.
 
-    -   Default behavior: This property does not appear in the UI during system creation. Its default value is *personExternalID*. That means, if the service finds an existing user by a *personExternalID*, it updates this user with the data of the conflicting one.
-
-        If a user with such а *personExternalID* is not found, the creation of the conflicting user fails.
-
-    -   Value = *emails\[0\].value*. If the service finds an existing user matching both unique attributes *email* and *personExternalID*, it updates this user with the data of the conflicting one. If the service finds an existing user matching only the *email*, the update of the existing user fails.
-
-        If a user with such *email* is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
-
-
-    Possible values:
-
-    -   *personExternalID*
-    -   *emails\[0\].value*
-
-    Default value: *personExternalID*
-
-    The possible values of this property depend on the API version which your SAP Integrated Business Planning system consumes.
-
-    Possible values:
+    The possible values depend on the API version which your SAP Integrated Business Planning system consumes.
 
     -   If your system consumes SAP Integrated Business Planning API: Business User, the service searches for an existing user by *personExternalID* and *emails\[0\].value*.
 
@@ -379,11 +343,14 @@ SAP Integrated Business Planning provides different APIs for integration with Id
     </td>
     <td valign="top">
     
-    If the Identity Provisioning tries to create a group that already exists in the SAP Integrated Business Planning target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
+    If the Identity Provisioning tries to create a group that already exists in the SAP Integrated Business Planning target system, the creation will fail. In this case, the existing group only needs to be updated.
 
-    Default value \(when not specified\): *externalId* and *\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['type'\]*
+    In SAP Integrated Business Planning the uniqueness of a group is defined by the combination of the following two attributes, which are automatically filled in when the target system is created: *externalId,\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['type'\]*. To resolve the conflict, an existing group must match both of these attributes. If the group matches only one of the attributes, the conflict is not resolved, and group creation will fail.
 
-    If the property is not specified, the search is done by the default attributes.
+    > ### Note:  
+    > Although you can define your own unique combination of attributes \(for example, *externalId,displayName*\), we recommend that you do not modify the automatically filled value of the `ibp.group.unique.attribute` property.
+
+    If the property is not specified, the search is done by the default attribute *displayName*.
 
     **Relevant for connector version 2**
     
@@ -531,7 +498,7 @@ SAP Integrated Business Planning provides different APIs for integration with Id
 
     [SCIM Interface for IAM](https://help.sap.com/docs/SAP_INTEGRATED_BUSINESS_PLANNING/da797ae2bf6246d58abd417f24915d55/0826103882b14d9780537f4492b81727.html?locale=en-US&version=2505)
 
-    **Default transformationfor connector version 1:**
+    **Default transformation for connector version 1:**
 
     > ### Code Syntax:  
     > ```
@@ -790,6 +757,7 @@ SAP Integrated Business Planning provides different APIs for integration with Id
     >       {
     >         "sourcePath": "$.emails",
     >         "preserveArrayWithSingleElement": true,
+    >         "optional": true,
     >         "targetPath": "$.emails",
     >         "functions": [
     >           {
@@ -948,21 +916,10 @@ SAP Integrated Business Planning provides different APIs for integration with Id
     >         ]
     >       },
     >       {
-    >         "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name']",
-    >         "targetPath": "$.externalId",
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']",
     >         "optional": true,
+    >         "targetPath": "$.externalId",
     >         "functions": [
-    >           {
-    >             "condition": "isAttributeWithMandatoryPrefix(@, ibp.group.prefix)",
-    >             "function": "replaceFirstString",
-    >             "regex": "%ibp.group.prefix%",
-    >             "replacement": ""
-    >           },
-    >           {
-    >             "function": "replaceString",
-    >             "target": ":authorization",
-    >             "replacement": ""
-    >           },
     >           {
     >             "function": "toUpperCaseString",
     >             "locale": "en_EN"
@@ -985,15 +942,36 @@ SAP Integrated Business Planning provides different APIs for integration with Id
     > }
     > ```
 
+    > ### Note:  
+    > If you are using SAP Integrated Business Planning version 2511, note that the `timeZone` value is not provided in the `IANA` format required by SCIM. To fix this, you need to manually add the `convertTimezoneCode` function within the `timeZone` mapping, as shown below:
+    > 
+    > ```
+    > {
+    >    "sourcePath":"$.timeZone",
+    >    "optional":true,
+    >    "targetPath":"$.timezone",
+    >    "functions":[
+    >       {
+    >          "type":"convertTimezoneCode",
+    >          "outputFormat":"sap"
+    >       }
+    >    ],
+    >    "defaultValue":"CET"
+    > },
+    > ```
+
     **Group Uniqueness and Provisioning**
 
-    The most common scenario includes SAP Integrated Business Planning version 2 as source system and Identity Authentication version 2 or Local Identity Directory as target system, that supports the custom name attribute.
+    In the most common scenario, Identity Authentication connector version 2 or Local Identity Directory is used as the source system for groups and SAP Integrated Business Planning connector version 2 is the target system.
 
-    The uniqueness of the group in SAP Integrated Business Planning version 2 is ensured by the combination of two unique attributes: `externalId` and `type`. Since we distinguish two group types, `userGroup` and `authorization`, there is a possibility that two groups of different `type` share the same `externalId`. As the `externalId` attribute is mapped to the `custom name` of the group in Identity Authentication version 2 and Local Identity Directory, potential conflicts may occure.
+    In SAP Integrated Business Planning version 2, the uniqueness of a group is defined by the combination of `externalId` and `type` attributes. The system supports two group types: `userGroup` and `authorization` \(role\). As a result, two different groups can share the same `externalId` while belonging to different types, potentially causing conflicts when provisioned to the target system.
 
-    When a group of type `authorization` is provisioned from SAP Integrated Business Planning version 2 source, the suffix *:authorization* is appended to its `custom name` in the target system. This ensures the successful provisioning of two groups with identical `externalIds` to Identity Authentication version 2 or Local Identity Directory, as they are provisioned with unique custom names to the target.
+    To avoid conflicts, ensure the following:
 
-    When these groups are provisioning from Identity Authentication version 2 or Local Identity Directory as source system back to SAP Integrated Business Planning version 2 as target, each group `custom name` is checked for the suffix *:authorization*. If such is detected, it is removed so that the initial value of the `externalId` of the group in SAP Integrated Business Planning version 2 system is restored.
+    -   Your SAP Integrated Business Planning target system must be updated to version 2, as described in [Update SAP Integrated Business Planning](Operation-Guide/update-sap-integrated-business-planning-18d1280.md) and it must have the group uniqueness property: `ibp.group.unique.attribute`, set with the following combination of values: `externalId,['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']`. For more information, see [List of Properties](list-of-properties-d6f3577.md).
+
+    -   The groups in your Identity Authentication connector version 2 or Local Identity Directory source systems must have a value for the `externalName` attribute, which is mapped to the `externalId` attribute.
+
 
 7.  Now, add a source system from which to read users and roles. Choose from: [Source Systems](source-systems-58033be.md)
 

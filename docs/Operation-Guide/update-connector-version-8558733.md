@@ -105,7 +105,7 @@ To update your connector to use a new API, proceed as follows:
         <tr>
         <td valign="top">
         
-        SAP Integrated Business Planning for Supply Chain
+        SAP Integrated Business Planning
         
         </td>
         <td valign="top">
@@ -192,6 +192,28 @@ To update your connector to use a new API, proceed as follows:
         -   `1` - SAP Analytics Cloud SCIM API version 1. This is the default value.
 
         -   `2` - SAP Analytics Cloud SCIM API version 2
+
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        SAP S/4HANA Cloud
+        
+        </td>
+        <td valign="top">
+        
+        `s4hana.cloud.api.version` 
+        
+        </td>
+        <td valign="top">
+        
+        -   `1` - SAP S/4HANA Cloud API: Business User is used. This is the default value.
+
+        -   `3` - System for Cross-domain Identity Management \(SCIM\) API is used.
 
 
 
@@ -337,7 +359,7 @@ To update your connector to use a new API, proceed as follows:
         <tr>
         <td valign="top">
         
-        SAP Integrated Business Planning for Supply Chain
+        SAP Integrated Business Planning
         
         </td>
         <td valign="top">
@@ -352,6 +374,33 @@ To update your connector to use a new API, proceed as follows:
             -   `emails[0].value`
 
         -   Version 2:
+            -   `userName`
+            -   `emails[0].value`
+            -   `externalId`
+
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        SAP S/4HANA Cloud
+        
+        </td>
+        <td valign="top">
+        
+        `s4hana.cloud.user.unique.attribute` 
+        
+        </td>
+        <td valign="top">
+        
+        -   Version 1:
+            -   `personExternalID`
+            -   `emails[0].value`
+
+        -   Version 3:
             -   `userName`
             -   `emails[0].value`
             -   `externalId`
@@ -412,4 +461,8 @@ To update your connector to use a new API, proceed as follows:
 [Reset Identity Provisioning Settings](reset-identity-provisioning-settings-8c7ba9a.md "Resetting your provisioning settings will delete all provisioning systems configured for your tenant, along with the related job execution logs.")
 
 [Reset Identity Provisioning System](reset-identity-provisioning-system-0bc1e53.md "Resetting an Identity Provisioning system (source or target) deletes all Identity Provisioning operational data.")
+
+[Update SAP Integrated Business Planning](update-sap-integrated-business-planning-18d1280.md "Update the SAP Integrated Business Planning connector to a new version.")
+
+[Update SAP S/4HANA Cloud](update-sap-s-4hana-cloud-6339b86.md "Update the SAP Integrated Business Planning connector to a new version.")
 

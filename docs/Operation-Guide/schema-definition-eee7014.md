@@ -2,11 +2,11 @@
 
 # Schema Definition
 
-You can define only one schema. It defines the attributes with data types that are valid for all policy definitions.
+A schema defines attribute names and data types that can be used when defining an authorization policy.
 
 
 
-To describe the names and types of attributes, you define a schema. You must define a schema in a file called `schema.dcl`. It must be located in the DCL root folder. If attributes are defined in the schema, you can use the grammar elements `WHERE` and `FUNCTION` with these attributes. All usages of schema attributes are validated to refer to existing names and that their respective data types.
+To describe the names and types of attributes, you define a schema. You must define a schema in a file called `schema.dcl`. It must be located in the DCL root folder. If attributes are defined in the schema, you can use the grammar element `WHERE` with these attributes. All usages of schema attributes are validated to refer to existing names and that their usage context complies with the respective data types.
 
 > ### Output Code:  
 > ```
@@ -20,13 +20,30 @@ To describe the names and types of attributes, you define a schema. You must def
 >         └─ schema.dcl
 > ```
 
-Attributes in the schema can be used in the `WHERE` and `FUNCTION` grammar elements. The usage of all attributes are validated to make sure that they refer to existing names and that their usage context complies with their type.
+Attributes in the schema can be used in the `WHERE` grammar element. The usage of all attributes are validated to make sure that they refer to existing names and that their usage context complies with their type.
 
 ```
 SCHEMA {
     <attribute>: <data_type>
 }
 ```
+
+Data types for attribute values include String, Number, Boolean, and Structure, with options for arrays.
+
+Use the following data types:
+
+-   String, String\[\]
+
+-   Number, Number\[\]
+
+-   Boolean, Boolean\[\]
+
+-   Structured type
+
+
+You can also assign a special null value to an attribute.
+
+A structured type allows specifying hierarchical types.
 
 -   The following schema contains an attribute with the data type "number" and an attribute name with the data type "string".
 
@@ -50,8 +67,6 @@ SCHEMA {
     > ```
 
 
-Attributes on the root level can be prefixed with the $ sign. It applies, for example, to attributes from identity providers \(see the related link\). This is currently reserved for internal use only.
-
 There is a predefined default `$user` structure that is populated by the client libraries with OIDC token content in a standard setup.
 
 > ### Sample Code:  
@@ -71,5 +86,5 @@ The `$user` structure can be extended with custom attributes.
 **Related Information**  
 
 
- <?sap-ot O2O class="- topic/link " href="6652b28c17a04f2e8ac4d412d256d097.xml" text="" desc="" xtrc="link:1" xtrf="file:/home/builder/src/dita-all/wbz1500991557538/loio629f7cb06f6947988dcaf8bedbe45873_en-US/src/content/localization/en-us/eee7014e3f7741be8f039dd237a105d7.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+[Formats](formats-e09dbb5.md "Here you find rules for creating valid identifiers in DCL, such as how to quote and how to separate packages. Identifiers are basically similar to Java identifiers.")
 

@@ -49,11 +49,26 @@ The application-specific groups are a special kind of groups which are bound to 
 
 The extension schema of the Identity Directory API *urn:ietf:params:scim:schemas:extension:sap:2.0:Group* defines the following three attributes:
 
--   *applicationId* - supported for the Local Identity Directory and Identity Authentication \(SCIM API version 2\) default write and proxy write transformations as mandatory attribute. The value of this attribute is provided from the source system by setting the property ips.application.id. For more information, see [List of Properties](list-of-properties-d6f3577.md) →`ips.application.id`.
+-   `applicationId` - supported for the Local Identity Directory and Identity Authentication \(SCIM API version 2\) default write and proxy write transformations as mandatory attribute. The value of this attribute is provided from the source system by setting the property `ips.application.id`. For more information, see [List of Properties](list-of-properties-d6f3577.md) →`ips.application.id`.
 
--   *type* - supported by the Local Identity Directory and Identity Authentication \(SCIM API version 2\) source, target, and proxy provisioning systems as optional attribute. If no value is specified in the write or proxy write default transformations, the default value*'userGroup'* is set.
+-   `type` - supported by the Local Identity Directory and Identity Authentication \(SCIM API version 2\) source, target, and proxy provisioning systems as optional attribute. If no value is specified in the write or proxy write default transformations, the default value `userGroup` is set.
 
--   *supportedOperations* - supported by Local Identity Directory and Identity Authentication \(SCIM API version 2\) source, target, and proxy provisioning systems as optional attribute. If no value is specified in the write or proxy write default transformations, the default value *'readWrite'* is set. The attribute defines the supported update options for the application-specific group.
+-   `supportedOperations` - supported by Local Identity Directory and Identity Authentication \(SCIM API version 2\) source, target, and proxy provisioning systems as optional attribute. If no value is specified in the write or proxy write default transformations, the default value `readWrite` is set. The attribute defines the supported update options for the application-specific group.
+
+-   `externalName` - unique within the application. If this attribute is present, it is sent with the other configured attributes in the OpenID Connect \(OIDC\) token or SAML 2.0 assertion. The value is immutable.
+
+    > ### Note:  
+    > Two groups with same `externalName` for two different applications can be created, but the same scenario for one application is not allowed.
+
+-   `children` - a list of child groups used to represent hierarchical group structures. By default, this attribute is not included in the response when retrieving group data. The `children` attribute is supported only for single group retrieval.
+
+    > ### Remember:  
+    > To include the `children` attribute in the response for a single group, you must explicitly request it using the `attributes` query parameter. For example:
+    > 
+    > `/scim/Groups/{id}?attributes=urn:ietf:params:scim:schemas:extension:sap:2.0:group:children`
+
+    > ### Restriction:  
+    > When retrieving multiple groups, the `children` attribute can't be requested. If you attempt to include this attribute in the `attributes` query parameter for multiple groups, the Identity Directory API will return a status code 400, along with a message indicating that requesting the `children` attribute is only supported for single group retrieval.
 
 
 The application-specific groups appear with their name in the *Application Name* column in the administration console for SAP Cloud Identity Services under the *Groups* tile. The *Application Name* column for the groups that aren't application-specific is empty.

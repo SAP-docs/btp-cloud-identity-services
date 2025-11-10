@@ -29,7 +29,7 @@ Bundled applications are managed and configured by SAP and can't be deleted. Par
 
 A special kind of applications are the so-called subscribed applications.
 
-Most subscribed applications use the trust configuration of the SAP BTP subaccount where they're subscribed. For some applications, when you subscribe to them, the system automatically sets up an application in Identity Authentication for you. This application appears in the list of the applications in the administration console for SAP Cloud Identity Services.
+Most subscribed applications use the trust configuration of the SAP BTP subaccount where they're subscribed. For some applications, when you subscribe to them, the system automatically sets up an application in Identity Authentication for you. These applications appear as child applications of the application in SAP Cloud Identity Services that represents the SAP BTP subaccount.
 
 You can't create or delete a subscribed application. For these applications, you can only see and configure a certain subset of their settings. The change in the following configurations is restricted, since they are managed by the application provider:
 

@@ -15,7 +15,7 @@ As an identity provider proxy, Identity Authentication acts as an OpenID identit
 To use Identity Authentication as a proxy to delegate authentication to an external OpenID Connect corporate identity provider, configure trust with that corporate identity provider.
 
 > ### Tip:  
-> If you want to change one corporate identity provider with another, for example move from a SAML identity provider to an OpenID Connect one, it's helpful to know the applications that the corporate identity provider uses. To see the applications that have established trust with a specific corporate identity provider, sign in to the administration console and go to *Identity Providers* \> *Corporate Identity Providers* \> *identity provider from the list* \> *Trusting Applications*.
+> If you want to change one corporate identity provider with another, for example move from a SAML identity provider to an OpenID Connect \(OIDC\) one, it's helpful to know the applications that the corporate identity provider uses. To see the applications that have established trust with a specific corporate identity provider, sign in to the administration console and go to *Identity Providers* \> *Corporate Identity Providers* \> *identity provider from the list* \> *Trusting Applications*.
 
 To configure trust with the corporate identity provider, use the following procedures:
 

@@ -52,7 +52,7 @@ The configuration is done both in Identity Authentication and Microsoft Entra ID
 6.  Under *Configure Issuer Name*, type the issuer suffix, which you want to add to the Identity Authentication default issuer name.
 
     > ### Note:  
-    > The issuer name can contain only Latin letters \(A-Z and a-z\) and numbers. It must be up to 32 characters.
+    > The issuer name can contain Latin letters \(A-Z and a-z\), numbers, and the dash \(-\) character. It can be up to 36 characters.
 
     The issuer name, which will be used when sending SAML2.0 requests to the corporate identity provider appears under the input field. It is in the format `<Identity_Authentication_default_issuer_name>/<issuer_name_suffix_typed_in_the_input_field>` . For example, `https://my-tenant.accounts.ondemand.com/issuername/>`.
 

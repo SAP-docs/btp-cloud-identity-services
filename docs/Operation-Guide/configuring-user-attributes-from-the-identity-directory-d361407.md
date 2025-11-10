@@ -152,6 +152,10 @@ Identity Authentication supports also the following user attributes:
     > ### Note:  
     > Lists only the application-specific groups to which the user is assigned to.
 
+-   `Application Groups - external name`
+
+    Unique within the application.
+
 -   `License Groups`
 
     > ### Note:  

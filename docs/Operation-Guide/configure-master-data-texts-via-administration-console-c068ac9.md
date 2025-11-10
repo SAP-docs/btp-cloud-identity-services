@@ -175,7 +175,7 @@ Depending on your requirements, you can review the texts that you have already o
 > 
 > When overwriting data texts, the keys for the different languages must be one and the same. For example, the master data texts for the German locale are overwritten, and the tenant administrator wants to overwrite the texts for the French locale. The keys for the German locale must be used as keys for the French locale.
 
-The master data is sent in the SAML 2.0 assertion or OpenID Connect token with its key. For example:
+The master data is sent in the SAML 2.0 assertion or OpenID Connect \(OIDC\) token with its key. For example:
 
 ```
 

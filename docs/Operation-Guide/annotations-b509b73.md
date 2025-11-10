@@ -48,7 +48,7 @@ Use this annotation to define a policy display name that can be changed by the c
 
 ## @valueHelp
 
-You can apply the annotation to schema attributes. For more information, see [Schema Definition](schema-definition-eee7014.md).
+You can apply the annotation to schema attributes. For more information about attributes, see [Schema Definition](schema-definition-eee7014.md).
 
 The @valueHelp annotation can be used in two modes:
 

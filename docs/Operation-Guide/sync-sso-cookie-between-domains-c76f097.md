@@ -20,6 +20,8 @@ Enable the *Sync SSO Cookie Between Domains Settings* option to allow seamless s
 
 > ### Restriction:  
 > This configuration isn't relevant if you’re using a custom domain.
+> 
+> If the configuration is enabled, the OpenID Connect \(OIDC\) or SAML 2.0 identity provider name configuration is not taken into account, and the identity provider name changes depending on the domain which is accessed.
 
 Some applications have trust configurations with the `ondemand.com` domain, while others with the new `cloud.sap` domain. This can cause problems with the SSO and SLO between two application using different domains, and trust configuration in the corporate identity provider \(IdP\).
 

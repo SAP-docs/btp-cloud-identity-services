@@ -152,7 +152,7 @@ To configure an OpenID Connect trusted application in the administration console
     > To add an application certificate for the specific application, go to *Applications* \> *choose the application you want to edit* \> *Single Sign-On* \> *Identity Provider Certificates* \> *\+Add*.
 
     > ### Caution:  
-    > The application will stop working if the configuration of the certificate is not updated with the new certificate.
+    > The application will stop working if the configuration of the application is not updated with the new certificate.
 
     > ### Note:  
     > Your choice of *Active* certificate in the list is not related with the choice of *Default* certificate in *Tenant Settings* \> *SAML 2.0 Configuration* \> *SAML 2.0* \> *Signing Certificates*.
@@ -185,7 +185,7 @@ To configure an OpenID Connect trusted application in the administration console
 
 -   Configure HTTP basic authentication for the application. For more information about the configuration, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
 
--   Enable the public client flows option for this application. In the administration console, choose *the OpenID connect application* \> *Client Authentication under the Trust tab* \> *Enable Public Client Flows under Public Client*. Optionally, you can configure the API permission groups. For more information, see [Consuming APIs from Other Applications](../Development/consuming-apis-from-other-applications-29e204d.md) .
+-   Enable the public client flows option for this application. In the administration console, choose *the OpenID Connect \(OIDC\) application* \> *Client Authentication under the Trust tab* \> *Enable Public Client Flows under Public Client*. Optionally, you can configure the API permission groups. For more information, see [Consuming APIs from Other Applications](../Development/consuming-apis-from-other-applications-29e204d.md) .
 
     > ### Note:  
     > The *Public* client type is used for environments where it is difficult to protect the client credential, such as mobile and desktop applications, and client-side parts of web applications.

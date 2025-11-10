@@ -2,7 +2,7 @@
 
 # Package Definition
 
-A package is the root folder where the DCL document is located.
+A package is the folder where the DCL document is located.
 
 
 
@@ -33,9 +33,9 @@ Qualified references are used to specify elements across package boundaries. The
 
 ### Examples
 
--   `sales.SalesOrder:`Package \[`"sales"`\], Policy:`salesOrder`
+-   `sales.SalesOrder:`Package `sales`, Policy:`salesOrder`
 
--   `sales.basic.salesOrder`: Package \[`sales/basic`\], Policy: `salesOrder`
+-   `sales.basic.salesOrder`: Package `sales/basic`, Policy: `salesOrder`
 
 
 You can introduce qualified references in a compatible way with an additional qualification prefix.

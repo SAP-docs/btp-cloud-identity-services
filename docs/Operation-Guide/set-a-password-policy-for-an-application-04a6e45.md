@@ -45,7 +45,7 @@ To set a password policy for an application, proceed as follows:
     Once the application has been updated, the system displays the message ***Application <name of application\> updated***.
 
     > ### Note:  
-    > When the user tries to log on to the application whose password policy has been updated, he or she is prompted to change the password if the current one does not meet the requirements in the updated password policy.
+    > Changes may take up to 2 minutes. Users will then sign in according to the new policy. When the user tries to sign in to the application whose password policy has been updated, he or she is prompted to change the password if the current one does not meet the requirements in the updated password policy.
 
 
 **Related Information**  

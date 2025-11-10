@@ -14,19 +14,19 @@ To get an id token or access token via the refresh token for the first time the 
 
 ## Prerequisites
 
--   For your business application, there’s an OIDC application in Identity Authentication.
+-   For your business application, there’s an OpenID Connect \(OIDC\) application in Identity Authentication.
 
     For more information, see [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md).
 
--   For your OIDC application in Identity Authentication, you've prepared an authentication credential for the API call. The API supports the following authentication schemes:
+-   For your OpenID Connect \(OIDC\) application in Identity Authentication, you've prepared an authentication credential for the API call. The API supports the following authentication schemes:
 
     -   Basic
 
-        For more information, see `Authorization` in [Request Header](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md#loio94ff0b4b0baa45a893c7cd24254b72b7__request_header_table) table below.
+        For more information, see `Authorization` in the *Request Header* table below.
 
     -   X.509
 
-        For more information, see `Authorization` in [Request Header](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md#loio94ff0b4b0baa45a893c7cd24254b72b7__request_header_table) table below.
+        For more information, see `Authorization` in the *Request Header* table below.
 
     -   JWT \(client\_assertion\)
 
@@ -35,7 +35,7 @@ To get an id token or access token via the refresh token for the first time the 
         -   Trust by URI: Including `client_id` in the request is optional.
 
 
-        For more information, see [Request Parameters](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md#loio94ff0b4b0baa45a893c7cd24254b72b7__request_parameter_table) table below.
+        For more information, see the *Request Parameters* table below.
 
 
     For more information, see [API Authentication](api-authentication-9d200d5.md).

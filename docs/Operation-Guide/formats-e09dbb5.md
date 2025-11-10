@@ -52,7 +52,7 @@ Identifiers are basically similar to Java identifiers.
 > ### Example:  
 > `µSeconds`, `PublicTransport`
 
-An identifier can be enclosed by the double quotes \(`" ... "`\). This is required if a DCL keyword like `POLICY` is used.
+Enclose an identifier by the double quotes \(`" ... "`\) if you use dots or blank spaces. Remember that this also applies for keywords like `POLICY`.
 
 A quoted identifier can contain any character that isn't a surrogate.
 
@@ -72,6 +72,13 @@ An unquoted identifier is equal to the same text in double quotes.
 ## String Constant Format
 
 A string constant must begin and end with a single quote \(`'`\).
+
+> ### Sample Code:  
+> ```
+> POLICY salesOrdersProduct {
+>     GRANT read ON product WHERE Country = 'US';
+> }
+> ```
 
 
 

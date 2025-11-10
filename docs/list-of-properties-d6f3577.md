@@ -336,16 +336,16 @@ SAP Application Server ABAP
 
 Use this property to configure the number of users to be read from SAP Application Server ABAP at once.
 
-If the property is not set, the function module `SUSR_USER_GET_DETAIL_MASS` **cannot** be used, even when it is available resource present on the ABAP server.
+If the property is not set, the function module `SUSR_USER_GET_DETAIL_MASS` **cannot** be used, even if it is available on the ABAP server.
 
 > ### Note:  
-> The property can be used only when the function module `SUSR_USER_GET_DETAIL_MASS` is exposed as an accessible resource and is present on the ABAP server. Even when these conditions are fulfilled, if the property is not set, the function module **cannot** be used .
+> The property can be used only when the function module `SUSR_USER_GET_DETAIL_MASS` is exposed as an accessible resource and is present on the ABAP server. Even when these conditions are fulfilled, if the property is not set, the function module **cannot** be used.
 > 
 > For more information, see SAP Note [3631587](https://me.sap.com/notes/3631587).
 
 **Possible values**:
 
-efault value: *100* 
+Default value: *100* 
 
 The maximum allowed number is 100.
 
@@ -811,6 +811,58 @@ Default value: *true*
 <td valign="top">
 
 SAP Ariba Applications
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`s4hana.cloud.group.members.paging.enabled`
+
+</td>
+<td valign="top">
+
+This property enables paging of group members.
+
+**Possible values:**
+
+-   *true* - Paging is enabled.
+-   *false* - Paging is disabled.
+
+Default value: *false*
+
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`s4hana.cloud.user.groups.paging.enabled`
+
+</td>
+<td valign="top">
+
+This property enables paging of user groups.
+
+**Possible values:**
+
+-   *true* - Paging is enabled.
+-   *false* - Paging is disabled.
+
+Default value: *false*
+
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\)
 
 </td>
 </tr>
@@ -2227,18 +2279,24 @@ Local Identity Directory
 </td>
 <td valign="top">
 
-If you try to provision a group that already exists in a target system, the group creation will fail. In this case, the existing group only needs to be updated.
+If you try to provision a group that already exists in a target system, the group creation will fail. In such cases, the existing group only needs to be updated.
 
-This property defines by which unique attribute\(s\) the existing group will be searched and resolved. The default value is *displayName*. Currently, it is the only unique attribute that is supported. When set, you can expect the following behavior:
+This property defines the unique attribute\(s\) by which the existing group will be searched and resolved. The default value is *\['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group'\]\['name'\]*. When set, you can expect the following behavior:
 
--   If a group with the given *displayName* is found in the target system, the group that you try to provision will overwrite the existing one.
+-   If a group with the given *\['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group'\]\['name'\]* is found in the target system, the group that you try to provision will overwrite the existing one.
 
--   If a group with the given *displayName* is not found in the target system, the group that you try to provision will not be created in the target system.
+-   If a group with the given *\['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group'\]\['name'\]* is not found in the target system, the group that you try to provision will not be created in the target system.
 
+
+In scenarios where groups are provisioned from SAP Integrated Business Planning version 2 and SAP S/4HANA Cloud version 3, the uniqueness of the group is resolved by a combination of three attributes:
+
+*\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['type'\],\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['externalName'\],\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['applicationId'\]*
+
+For the conflict to be resolved, an existing group must match all three attributes.
 
 **Possible values:**
 
-If the property is not specified, the search is done by the default attribute: `displayName`
+If the property is not specified, the search is done by the default attribute: *\['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group'\]\['name'\]*
 
 **System Role:** Target
 
@@ -5305,19 +5363,23 @@ SCIM System
 </td>
 <td valign="top">
 
-A default property, whose only possible value is *true*. That means, HR integration is enabled for your system.
+Defines whether the human resources \(HR\) integration is active or not.
 
-> ### Caution:  
-> Do not change this value! Otherwise, your provisioning job will fail.
+The property is set to `true` by default. This means that the synchronization of business partners is managed by the HR system and SAP S/4HANA Cloud. Identity Provisioning can only be used for managing business users \(login users and their login information, such as date/time preferences\) and role assignments.
 
-**Possible value:** *true*
+When set to `false`, synchronization is handled by the identity management system instead.
+
+**Possible values:**
+
+-   *true* \(default\)
+-   *false*
 
 **System Role:** Target, Proxy
 
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\) 
+SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\)
 
 </td>
 </tr>
@@ -5338,7 +5400,7 @@ To learn what criteria you can use, see: [OData URI Conventions](https://www.oda
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\) 
+SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\)
 
 </td>
 </tr>
@@ -5377,9 +5439,9 @@ SAP S/4HANA Cloud
 
 When specified, only those SAP S/4HANA Cloud groups matching the filter expression will be read.
 
-Supported operators: eq \(equal\), co \(contains\), and sw \(starts with\).
+Supported operators: eq \(equal\), ne \(not equal\), sw \(starts with\), ew \(ends with\) and co \(contains\)
 
-**Possible values:**:
+**Possible values**:
 
 -   `displayName`
 -   `externalId`
@@ -5399,7 +5461,7 @@ For example:
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\) 
+SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\)
 
 </td>
 </tr>
@@ -5431,7 +5493,7 @@ You can use the example value or provide your own.
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\) 
+SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\)
 
 </td>
 </tr>
@@ -5443,20 +5505,23 @@ SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Managemen
 </td>
 <td valign="top">
 
-If the Identity Provisioning tries to create a group that already exists in the SAP S/4HANA Cloud target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
+If the Identity Provisioning tries to create a group that already exists in the SAP S/4HANA Cloud target system, the creation will fail. In this case, the existing group only needs to be updated.
 
-**Possible values:**
+In SAP S/4HANA Cloud the uniqueness of a group is defined by the combination of the following two attributes, which are automatically filled in when the target system is created: *externalId,\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['type'\]*.
 
-Default value: *externalId* and *\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['type'\]*
+To resolve the conflict, an existing group must match both of these attributes. If the group matches only one of the attributes, the conflict is not resolved, and group creation will fail.
 
-If the property is not specified, the search is done by the attribute *displayName*.
+> ### Note:  
+> Although you can define your own unique combination of attributes \(for example, *externalId,displayName*\), we recommend that you do not modify the automatically filled value of the `s4hana.cloud.group.unique.attribute` property.
+
+If the property is not specified, the search is done by the default attribute *displayName*.
 
 **System Role:** Target
 
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\) 
+SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\)
 
 </td>
 </tr>
@@ -5568,7 +5633,7 @@ That means, your HR integration will support *employees* and *contingent worker*
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\) 
+SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\)
 
 </td>
 </tr>
@@ -5596,7 +5661,7 @@ Default value: *true*
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\) 
+SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\)
 
 </td>
 </tr>
@@ -5993,7 +6058,7 @@ You can use the example value or provide your own.
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning \(using version 1 - SAP Integrated Business Planning API: Business User\) 
+SAP Integrated Business Planning \(using version 1 - SAP Integrated Business Planning API: Business User\)
 
 </td>
 </tr>
@@ -6023,7 +6088,7 @@ Default value \(if the property appears during system creation\): *false*
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning \(using version 1 - SAP Integrated Business Planning API: Business User\) 
+SAP Integrated Business Planning \(using version 1 - SAP Integrated Business Planning API: Business User\)
 
 </td>
 </tr>
@@ -6287,7 +6352,7 @@ For example, if you set the property's value = *30*, the Identity Provisioning w
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning \(using version 1 - SAP Integrated Business Planning API: Business User\) 
+SAP Integrated Business Planning \(using version 1 - SAP Integrated Business Planning API: Business User\)
 
 </td>
 </tr>
@@ -6315,7 +6380,7 @@ Default value: *false*
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning \(using version 1 - SAP Integrated Business Planning API: Business User\) 
+SAP Integrated Business Planning \(using version 1 - SAP Integrated Business Planning API: Business User\)
 
 </td>
 </tr>
@@ -6342,7 +6407,7 @@ If you enter a number larger than 100, the service will replace it with the defa
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning \(using version 1 - SAP Integrated Business Planning API: Business User\) 
+SAP Integrated Business Planning \(using version 1 - SAP Integrated Business Planning API: Business User\)
 
 </td>
 </tr>
@@ -6382,9 +6447,9 @@ SAP Integrated Business Planning
 
 When specified, only those SAP Integrated Business Planning groups matching the filter expression will be read.
 
-Supported operators: eq \(equal\), co \(contains\), and sw \(starts with\).
+Supported operators: eq \(equal\), ne \(not equal\), sw \(starts with\), ew \(ends with\) and co \(contains\)
 
-**Possible values:**:
+**Possible values**:
 
 -   `displayName`
 -   `externalId`
@@ -6416,13 +6481,14 @@ SAP Integrated Business Planning \(using version 2 - SCIM Interface for IAM\)
 </td>
 <td valign="top">
 
-If the Identity Provisioning tries to create a group that already exists in the SAP Integrated Business Planning target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
+If the Identity Provisioning tries to create a group that already exists in the SAP Integrated Business Planning target system, the creation will fail. In this case, the existing group only needs to be updated.
 
-**Possible values:**
+In SAP Integrated Business Planning the uniqueness of a group is defined by the combination of the following two attributes, which are automatically filled in when the target system is created: *externalId,\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['type'\]*. To resolve the conflict, an existing group must match both of these attributes. If the group matches only one of the attributes, the conflict is not resolved, and group creation will fail.
 
-Default value \(when not specified\): *externalId* and *\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['type'\]*
+> ### Note:  
+> Although you can define your own unique combination of attributes \(for example, *externalId,displayName*\), we recommend that you do not modify the automatically filled value of the `ibp.group.unique.attribute` property.
 
-If the property is not specified, the search is done by the default attributes.
+If the property is not specified, the search is done by the default attribute *displayName*.
 
 **System Role:** Target
 
@@ -9612,18 +9678,24 @@ Identity Authentication \(SCIM API version 2\)
 </td>
 <td valign="top">
 
-If you try to provision a group that already exists in a target system, the group creation will fail. In this case, the existing group only needs to be updated.
+If you try to provision a group that already exists in a target system, the group creation will fail. In such cases, the existing group only needs to be updated.
 
-This property defines by which unique attribute\(s\) the existing group will be searched and resolved. The default value is *displayName*. Currently, it is the only unique attribute that is supported. When set, you can expect the following behavior:
+This property defines the unique attribute\(s\) by which the existing group will be searched and resolved. The default value is *\['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group'\]\['name'\]*. When set, you can expect the following behavior:
 
--   If a group with the given *displayName* is found in the target system, the group that you try to provision will overwrite the existing one.
+-   If a group with the given *\['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group'\]\['name'\]* is found in the target system, the group that you try to provision will overwrite the existing one.
 
--   If a group with the given *displayName* is not found in the target system, the group that you try to provision will not be created in the target system.
+-   If a group with the given *\['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group'\]\['name'\]* is not found in the target system, the group that you try to provision will not be created in the target system.
 
+
+In scenarios where groups are provisioned from SAP Integrated Business Planning version 2 and SAP S/4HANA Cloud version 3, the uniqueness of the group is resolved by a combination of three attributes:
+
+*\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['type'\],\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['externalName'\],\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['applicationId'\]*
+
+For the conflict to be resolved, an existing group must match all three attributes.
 
 **Possible values:**
 
-If the property is not specified, the search is done by the default attribute: `displayName`
+If the property is not specified, the search is done by the default attribute: *\['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group'\]\['name'\]*
 
 **System Role:** Target
 
@@ -10718,11 +10790,11 @@ The expected value is a positive integer without any separators, such as a space
 
 **Possible values**: integer
 
-Default value: *20000*
+Default value: *50*
 
 Minimum value: *1*
 
-Maximum value: *200000*
+Maximum value: *50*
 
 **System Role:** Target
 
@@ -13313,7 +13385,7 @@ SAP S/4HANA for procurement planning
 If Identity Provisioning tries to provision a user that already exists in the SAP S/4HANA Cloud target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved.
 
 > ### Note:  
-> You can configure this property only when the integration between a human resource \(HR\) system and SAP S/4HANA Cloud target system is **OFF**. Since the HR integration is active and cannot be switched off for SAP S/4HANA Cloud version 1 target systems, configuring the `s4hana.cloud.user.unique.attribute` property is currently irrelevant.
+> You can configure this property only when the integration between a human resource \(HR\) system and SAP S/4HANA Cloud target system is **OFF**.
 
 According to your use case, choose how to set up this property:
 
@@ -15605,6 +15677,48 @@ The number of group members that SAP Signavio Process Transformation Suite retur
 <td valign="top">
 
 SAP Signavio Process Transformation Suite 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`s4hana.cloud.group.members.page.size`
+
+</td>
+<td valign="top">
+
+The number of group members that SAP S/4HANA Cloud returns per request when reading a group.
+
+**Default value:** 20000
+
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\) 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`s4hana.cloud.user.groups.page.size`
+
+</td>
+<td valign="top">
+
+The number of user groups that SAP S/4HANA Cloud returns per request when reading a group.
+
+**Default value:** 20000
+
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\) 
 
 </td>
 </tr>

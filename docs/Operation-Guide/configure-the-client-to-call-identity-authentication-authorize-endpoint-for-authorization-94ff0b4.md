@@ -17,32 +17,9 @@ This document explains how to call the `authorize` endpoint and what are the aut
 
 ## Prerequisites
 
--   For your business application, there’s an OIDC application in Identity Authentication.
+For your business application, there’s an OpenID Connect \(OIDC\) application in Identity Authentication.
 
-    For more information, see [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md).
-
--   For your OIDC application in Identity Authentication, you've prepared an authentication credential for the API call. The API supports the following authentication schemes:
-
-    -   Basic
-
-        For more information, see `Authorization` in [Request Header](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md#loio94ff0b4b0baa45a893c7cd24254b72b7__request_header_table) table below.
-
-    -   X.509
-
-        For more information, see `Authorization` in [Request Header](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md#loio94ff0b4b0baa45a893c7cd24254b72b7__request_header_table) table below.
-
-    -   JWT \(client\_assertion\)
-
-        -   Trust by issuer: You must include the `client_id` in the request.
-
-        -   Trust by URI: Including `client_id` in the request is optional.
-
-
-        For more information, see [Request Parameters](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md#loio94ff0b4b0baa45a893c7cd24254b72b7__request_parameter_table) table below.
-
-
-    For more information, see [API Authentication](api-authentication-9d200d5.md).
-
+For more information, see [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md).
 
 
 
@@ -58,68 +35,6 @@ This document explains how to call the `authorize` endpoint and what are the aut
 > *Tenant ID* is an automatically generated ID by the system. The first administrator created for the tenant receives an activation email with a URL in it. This URL contains the *tenant ID*. For more information about your tenants, see [View Assigned Tenants and Administrators](../view-assigned-tenants-and-administrators-f56e6f2.md).
 
 **HTTP Method:***GET*
-
-
-
-### Request Headers
-
-
-<table>
-<tr>
-<th valign="top">
-
-Header
-
-</th>
-<th valign="top">
-
-Required
-
-</th>
-<th valign="top">
-
-Values
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-`Content-Type`
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-<td valign="top">
-
-application/x-www-form-urlencoded
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`Authorization`
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-<td valign="top">
-
--   `Basic`
--   `X.509 Certificate`
-
-
-
-</td>
-</tr>
-</table>
 
 
 

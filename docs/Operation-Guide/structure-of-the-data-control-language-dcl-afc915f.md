@@ -99,5 +99,5 @@ For more information, see [Package Definition](package-definition-c0df43e.md).
 
 [Grammar and Syntax Rules](grammar-and-syntax-rules-7b50037.md "DCL has a set of grammar and syntax rules you must observe when you define authorization policies.")
 
-[Advanced Features](advanced-features-779bfd2.md "You find advanced configuration techniques for authorization policies, focusing on reusable functions, annotations, value help services, formatting conventions, and internal functions for enterprise-grade authorization policies.")
+[Advanced Features](advanced-features-779bfd2.md "You find advanced configuration techniques for authorization policies, focusing on annotations, formatting conventions, and internal functions for enterprise-grade authorization policies.")
 

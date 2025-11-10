@@ -15,9 +15,10 @@ Follow this procedure to set up SAP Application Server ABAP \(AS ABAP\) as a pro
 
 -   You have installed the Cloud Connector in your corporate environment and have done the initial configuration. For more information, see: [Cloud Connector \(Neo\)](https://help.sap.com/viewer/b865ed651e414196b39f8922db2122c7/Cloud/en-US/d751d065774e45e1b6bdbfdfd541da13.html)
 -   You have credentials of a technical user with read and write permissions for AS ABAP, which plays both the role of a user data source and a target system. Via this user, the Identity Provisioning service will call the ABAP public API in order to execute a number of function modules. These function modules are listed in **step 1** from the procedure below.
--   The technical user has the following role, which provides all authorizations with read and write access to user data: **SAP\_BC\_JSF\_COMMUNICATION**
+-   The technical user must have the required RFC and security authorizations, as described in SAP Note [3666721](https://me.sap.com/notes/3666721).
 
-    For more information, see: [Requirements for the System User for UME-ABAP Communication](https://help.sap.com/docs/SAP_NETWEAVER_750/a42446bded624585958a36a71903a4a7/8f67d27676ace84080964d4c4223bb3c.html?locale=en-US)
+    > ### Note:  
+    > If the technical user has insufficient security authorization, no users or roles can be read.
 
 
 
@@ -50,6 +51,11 @@ SAP Application Server ABAP \(AS ABAP\) offers a user store and user administrat
     -   `IDENTITY_MODIFY`
     -   `BAPI_USER_DELETE`
     -   `PRGN_ACTIVITY_GROUPS_LOAD_RFC`
+    -   `SUSR_USER_GET_DETAIL_MASS` - available as of `SAP_BASIS 7.58`. For more information, see SAP Note [3631587](https://me.sap.com/notes/3631587).
+
+        > ### Note:  
+        > The function module `SUSR_USER_GET_DETAIL_MASS`, which is used for mass reading of user details, does not support the `SAPUSER_UUID.SAP_UID` attribute. To read this attribute, use the function module `BAPI_USER_GET_DETAIL` instead.
+
 
     These are Business Application Programming Interface \(BAPI\) functional modules designed to perform certain tasks in the SAP AS ABAP system, such as retrieving, creating, updating or deleting user data.
 
@@ -323,6 +329,31 @@ SAP Application Server ABAP \(AS ABAP\) offers a user store and user administrat
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    `abap.user.page.size`
+    
+    </td>
+    <td valign="top">
+    
+    Use this property to configure the number of users to be read from SAP Application Server ABAP at once.
+
+    If the property is not set, the function module `SUSR_USER_GET_DETAIL_MASS` **cannot** be used, even if it is available on the ABAP server.
+
+    > ### Note:  
+    > The property can be used only when the function module `SUSR_USER_GET_DETAIL_MASS` is exposed as an accessible resource and is present on the ABAP server. Even when these conditions are fulfilled, if the property is not set, the function module **cannot** be used.
+    > 
+    > For more information, see SAP Note [3631587](https://me.sap.com/notes/3631587).
+
+    **Possible values**:
+
+    Default value: *100* 
+
+    The maximum allowed number is 100.
+    
+    </td>
+    </tr>
     </table>
     
     > ### Note:  
@@ -385,6 +416,9 @@ SAP Application Server ABAP \(AS ABAP\) offers a user store and user administrat
     Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP Application Server ABAP* proxy system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
     You can change the default transformation mapping rules to reflect your current setup of entities in your AS ABAP. For more information, see [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md).
+
+    > ### Note:  
+    > The values of the **entityIdSourceSystem** and **entityIdTargetSystem** attributes store the unique ID of the entity. Do not delete or change this statement!
 
     Default read and write transformations:
 

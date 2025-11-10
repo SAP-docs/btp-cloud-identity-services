@@ -6,7 +6,7 @@ The introspect token endpoint is an option for clients to get long expiring refr
 
 
 
-The token recation endpoint is implemented according to [RFC 7662 OAuth 2.0 Token Introspection](https://www.rfc-editor.org/rfc/rfc7662).
+The introspect token endpoint is implemented according to [RFC 7662 OAuth 2.0 Token Introspection](https://www.rfc-editor.org/rfc/rfc7662).
 
 
 
@@ -187,7 +187,7 @@ Request body
 </td>
 <td valign="top">
 
-No
+Yes
 
 </td>
 <td valign="top">
@@ -200,7 +200,7 @@ string
 Used to identify the corresponding Identity Authentication application.
 
 > ### Note:  
-> The `client_id` parameter is mandatory if the request is provided without authentication.
+> The `client_id` parameter is optional if the request is provided without authentication.
 
 
 

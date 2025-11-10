@@ -1,14 +1,14 @@
 <!-- loio27ad9a4295ef4c03a98b8e05d651f12b -->
 
-# Functional Authorization
+# Authorization Policy Definition
 
-You can grant basic actions like `read` or `write` on resources with an SQL-like syntax. The authorizations are grouped under a policy.
+You can grant basic actions like `read` or `write` on resources with an SQL-like syntax. The authorizations are grouped under an authorization policy. You can also combine authorization policies.
 
 
 
 You define basic actions in applications. Application developers must make sure that the applications query the actions and resources that are defined in the DCL files. Applications can use actions and resources in the code for authorization checks.
 
-The syntax of a functional authorization for granting actions looks like this:
+The syntax of an authorization for granting actions looks like this:
 
 ```sql
 POLICY <policy_name> {
@@ -38,7 +38,7 @@ POLICY <policy_name> {
     > }
     > ```
 
--   A simple policy, which restricts all resources only on defined attribute values without any action.
+-   A simple policy, which restricts all resources only on defined attribute values without any action. Use the `WHERE` condition to refer to attributes.
 
     > ### Sample Code:  
     > ```sql
@@ -47,7 +47,7 @@ POLICY <policy_name> {
     > }
     > ```
 
--   A rule that allows the user to do action `read` and all resources with an special attribute value. Use the `WHERE` condition to restrict a `read` action on resources by attributes. You can also use multiple restrictions on resources, for example according to a list of attribute values, a range of numbers, or a part of a name.
+-   A rule that allows the user to do action `read` on all resources with an special attribute value. Use `WHERE` to implement a condition that restricts a `read` action on resources by attributes. You can also use multiple conditions on resources, for example according to a list of attribute values, a range of numbers, or a part of a name.
 
     > ### Sample Code:  
     > ```sql
@@ -136,7 +136,7 @@ POLICY <policy_name> {
 
 
 
-You can create a policy with actions and restrict it to defined resources. Here you also use multiple `WHERE` conditions.
+You can create a policy with actions and restrict it to defined resources. Here you use `WHERE` with multiple conditions.
 
 ```sql
 POLICY <policy_name> {
@@ -172,9 +172,6 @@ POLICY <policy_name> {
     > ```
 
 
-> ### Note:  
-> If all attributes relate to all resources, you can possibly use a shorter notation. Only use attributes with values which relate to all resources.
-
 
 
 ### 
@@ -185,8 +182,8 @@ You can also create a policy with multiple actions on the same resources dependi
 
 ```sql
 POLICY <policy_name> {
-    GRANT <action1> ON <resource> WHERE <attribute_name> = '<attribute_value1>' AND <attribute_value2> BETWEEN <number1> AND <number2>;
-    GRANT <action2> ON <resource> WHERE <attribute_name> = '<attribute_value3>' AND <attribute_value2> BETWEEN <number1> AND <number2>;
+    GRANT <action1> ON <resource> WHERE <attribute1> = '<attribute_value1>' AND <attribute2> BETWEEN <number1> AND <number2>;
+    GRANT <action2> ON <resource> WHERE <attribute1> = '<attribute_value2>' AND <attribute2> BETWEEN <number1> AND <number2>;
 }
 ```
 
@@ -205,7 +202,7 @@ POLICY <policy_name> {
 
 ## Combining Authorization Policies
 
-To combine multiple authorization policies, define a new policy, which includes already existing policies.
+To combine multiple authorization policies, define a new policy, which includes already existing policies by `USE`.
 
 ```sql
 POLICY <policy_name> {
@@ -233,6 +230,22 @@ POLICY <policy_name> {
     >     }
     > ```
 
+
+The `RESTRICT` clause allows you to narrow down the scope of an authorization policy. It enforces that an operation is permitted only when certain attribute-based conditions are true.
+
+> ### Sample Code:  
+> ```
+> POLICY "SalesICADelUpdAdmins" {
+>    USE users.DELETE_USERS
+>       RESTRICT
+>          user.costCenter = 'SalesICA'
+> 
+>    USE users.UPDATE_USERS
+>       RESTRICT
+>          user.costCenter = 'SalesICA'
+> ;
+> }
+> ```
 
 
 

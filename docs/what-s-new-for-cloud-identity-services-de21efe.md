@@ -105,6 +105,803 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Off-Cycle Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-11-10
+
+</td>
+<td valign="top">
+
+2025-11-10
+
+</td>
+<td valign="top">
+
+28326
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-11-06
+
+</td>
+<td valign="top">
+
+2025-11-06
+
+</td>
+<td valign="top">
+
+28479
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+New SAP BTP Subscriptions and Applications Appear as Child Applications of the Subaccount Application
+
+</td>
+<td valign="top">
+
+SAP BTP automatically creates applications in Cloud Identity Services for subscriptions to BTP applications and service instances of the Identity service of SAP BTP.
+
+With this release, newly created applications in Cloud Identity Services are automatically set as child applications of the application that represents the relevant SAP BTP subaccount. Child applications inherit configurations such as the subject name identifier, authentication configuration, and branding from the parent application representing the subaccount.
+
+Applications created in Cloud Identity Services before this release are unaffected by this change.
+
+For more information, see:
+
+-   [Establish Trust and Federation Between SAP Authorization and Trust Management Service and SAP Cloud Identity Services](https://help.sap.com/docs/btp/sap-business-technology-platform/establish-trust-and-federation-between-uaa-and-identity-authentication?version=Cloud)
+-   [Application Types](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/application-types?version=Cloud)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-11-06
+
+</td>
+<td valign="top">
+
+2025-11-06
+
+</td>
+<td valign="top">
+
+28479
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Issuer Name
+
+</td>
+<td valign="top">
+
+The issuer name can contain now also the dash \(-\) character, and its length can be up to 36 characters. See [Configure Different Trust Configurations for the Same Identity Authentication](Operation-Guide/configure-different-trust-configurations-for-the-same-identity-authentication-ba2faa9.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-11-06
+
+</td>
+<td valign="top">
+
+2025-11-06
+
+</td>
+<td valign="top">
+
+28479
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Attributes
+
+</td>
+<td valign="top">
+
+Cloud Identity Services now supports a new local user attribute - `Application Groups - external name`. See [Configuring User Attributes from the Identity Directory](Operation-Guide/configuring-user-attributes-from-the-identity-directory-d361407.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-11-06
+
+</td>
+<td valign="top">
+
+2025-11-06
+
+</td>
+<td valign="top">
+
+28479
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP S/4HANA Cloud - New Connector Version
+
+</td>
+<td valign="top">
+
+A new connector version 3 for SAP S/4HANA Cloud is now available. It supports a SCIM-based API provided through communication scenario SAP\_COM\_0465. This version enables provisioning of business users and assignment of business roles \(authorizations\) and user groups. For more information, see:
+
+-   [SAP S/4HANA Cloud \(Source\)](sap-s-4hana-cloud-d3f93a7.md)
+
+-   [SAP S/4HANA Cloud \(Target\)](sap-s-4hana-cloud-40940b8.md)
+
+-   [SAP S/4HANA Cloud \(Proxy\)](sap-s-4hana-cloud-4cb0e64.md)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-11-06
+
+</td>
+<td valign="top">
+
+2025-11-06
+
+</td>
+<td valign="top">
+
+28479
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Integrated Business Planning - New Connector Version
+
+</td>
+<td valign="top">
+
+A new connector version 2 for SAP Integrated Business Planning is now available. It supports a SCIM-based API provided through communication scenario SAP\_COM\_0465. This version enables provisioning of business users and assignment of business roles \(authorizations\) and user groups. For more information, see:
+
+-   [SAP Integrated Business Planning \(Source\)](sap-integrated-business-planning-65a847e.md)
+
+-   [SAP Integrated Business Planning \(Target\)](sap-integrated-business-planning-5864dc2.md)
+
+-   [SAP Integrated Business Planning \(Proxy\)](sap-integrated-business-planning-ad984ad.md)
+
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-11-06
+
+</td>
+<td valign="top">
+
+2025-11-06
+
+</td>
+<td valign="top">
+
+28479
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP S/4HANA Cloud - HR integration switch off
+
+</td>
+<td valign="top">
+
+In the SAP S/4HANA Cloud target system, the integration with an HR system, which is active by default, can now be switched off. Previously, this integration could not be deactivated.
+
+For more information, see [List of Properties](list-of-properties-d6f3577.md) → `s4hana.cloud.hr.switch.active` 
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-11-06
+
+</td>
+<td valign="top">
+
+2025-11-06
+
+</td>
+<td valign="top">
+
+28479
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Handling group uniqueness in Identity Authentication and Local Identity Directory
+
+</td>
+<td valign="top">
+
+When groups are provisioned from SAP Integrated Business Planning connector version 2 and SAP S/4HANA Cloud connector version 3, their uniqueness in Identity Authentication version 2 and Local Identity Directory is resolved by a combination of three attributes:
+
+`['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type'],['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName'],['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']`
+
+For more information, see [List of Properties](list-of-properties-d6f3577.md) → `ias.group.unique.attribute` and `idds.group.unique.attribute`.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-11-06
+
+</td>
+<td valign="top">
+
+2025-11-06
+
+</td>
+<td valign="top">
+
+28479
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP AS ABAP - Configuring Number of Users Read at Once
+
+</td>
+<td valign="top">
+
+A property that allows you to configure the number of users to be read from SAP AS ABAP at once, is now available for the SAP AS ABAP source and proxy systems.
+
+For more information, see [List of Properties](list-of-properties-d6f3577.md) → `abap.user.page.size`
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-11-06
+
+</td>
+<td valign="top">
+
+2025-11-06
+
+</td>
+<td valign="top">
+
+28479
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Regular Upgrade
 
 </td>
@@ -572,11 +1369,11 @@ Change in the Behavior for User Managed Group Assignment
 </td>
 <td valign="top">
 
-As of November 04, 2025, the behavior when trying to assign or unassign a group through the user resource for a target system that does not support group assignments will be changed.
-
-Currently, if you triggered a provisioning job after enabling group assignment, the job would fail.
+As of November 6, 2025, the behavior when trying to assign or unassign a group through the user resource for a target system that does not support group assignments will be changed. Currently, if you triggered a provisioning job after enabling group assignment, the job would fail.
 
 After the change, the job will finish with error and only the specific entity related to the unsupported group assignment will fail.
+
+For more information, see [Enabling Group Assignment](Operation-Guide/enabling-group-assignment-0d80033.md).
 
 </td>
 <td valign="top">
@@ -611,12 +1408,12 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2025-10-23
+2025-11-05
 
 </td>
 <td valign="top">
 
-2025-11-04
+2025-11-06
 
 </td>
 <td valign="top">
