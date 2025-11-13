@@ -105,6 +105,90 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Change in Status Code Behavior for Identity Provisioning Proxy Scenarios
+
+</td>
+<td valign="top">
+
+Effective January 13, 2026, the handling of status codes in Identity Provisioning proxy scenarios will change.
+
+When a GET request fails due to an incorrect mapping in the read transformation of the proxy system, the request will now return HTTP 424 \(Failed Dependency\) instead of HTTP 200 \(OK\). This applies to both retrieving users and groups.
+
+The response body will include a detailed message indicating the exact mapping error. For example: ***Source path: $.userName is not available in content, but is required in defined system transformation.***
+
+The HTTP 500 \(Internal Server Error\) response will also be enhanced to provide detailed message about the cause of the failure in the response body.
+
+Before January 13, 2026, ensure your system can correctly handle status codes 424 and 500 in responses. For more information, see [Business Accelerator Hub](https://api.sap.com/api/IPS_Proxy/resource/) → Get requests for users and groups.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-11-13
+
+</td>
+<td valign="top">
+
+2026-01-13
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Off-Cycle Upgrade
 
 </td>
@@ -145,17 +229,17 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-2025-11-10
+2025-11-12
 
 </td>
 <td valign="top">
 
-2025-11-10
+2025-11-12
 
 </td>
 <td valign="top">
 
-28326
+28510
 
 </td>
 <td valign="top">
