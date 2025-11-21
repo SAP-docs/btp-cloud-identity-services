@@ -149,12 +149,12 @@ China
 </td>
 <td valign="top">
 
-China \(Beijing\)
+China \(Shanghai\)
 
 </td>
 <td valign="top">
 
-Azure
+SAP / Azure
 
 </td>
 <td valign="top">
@@ -227,7 +227,7 @@ Europe
 </td>
 <td valign="top">
 
-Netherlands \(Amsterdam\) / Germany \(Frankfurt\)
+Europe \(Frankfurt / Amsterdam\)
 
 </td>
 <td valign="top">
@@ -305,7 +305,7 @@ Israel
 </td>
 <td valign="top">
 
-Tel Aviv, Israel, Middle East
+Israel \(Tel Aviv\)
 
 </td>
 <td valign="top">
@@ -344,7 +344,7 @@ Japan
 </td>
 <td valign="top">
 
-Japan \(Tokyo\) / Japan \(Osaka\)
+Japan \(Tokyo / Osaka\)
 
 </td>
 <td valign="top">
@@ -422,7 +422,7 @@ Saudi Arabia \(SA1\)
 </td>
 <td valign="top">
 
-Dammam, Saudi Arabia, Middle East \(for Non-Regulated Customers\)
+Saudi Arabia \(Dammam\)
 
 </td>
 <td valign="top">
@@ -461,7 +461,7 @@ Saudi Arabia \(SA2\)
 </td>
 <td valign="top">
 
-Dammam, Saudi Arabia, Middle East \(for Regulated Customers\)
+Saudi Arabia \(Dammam\) - Regulated
 
 </td>
 <td valign="top">
@@ -539,7 +539,7 @@ South Korea
 </td>
 <td valign="top">
 
-Seoul \(South Korea\)
+South Korea \(Seoul\)
 
 </td>
 <td valign="top">
@@ -617,7 +617,7 @@ United Arab Emirates
 </td>
 <td valign="top">
 
-UAE North \(Dubai\)
+United Arab Emirates \(Dubai\)
 
 </td>
 <td valign="top">
@@ -656,7 +656,7 @@ US \(North America East\)
 </td>
 <td valign="top">
 
-United States \(Sterling\) / United States \(Virginia\)
+USA \(Sterling, VA / N. Virginia\)
 
 </td>
 <td valign="top">
@@ -695,7 +695,7 @@ US West
 </td>
 <td valign="top">
 
-West US 2
+USA \(Quincy, WA\)
 
 </td>
 <td valign="top">
@@ -775,7 +775,7 @@ US East
 </td>
 <td valign="top">
 
-East US
+Trial \(USA\)
 
 </td>
 <td valign="top">

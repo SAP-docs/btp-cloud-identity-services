@@ -1,6 +1,6 @@
 <!-- loiofd11ee278b6d4554951d70f856e4df1b -->
 
-# Business-to-Consumer Scenario
+# Business-to-Consumer
 
 The business-to-consumer scenario is related to any actions performed by the consumer, such as registration to applications and consumer retailing. In this scenario, administrators facilitate the consumer processes, but they do not act on the consumer's behalf.
 

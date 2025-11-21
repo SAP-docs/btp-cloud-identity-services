@@ -1,6 +1,6 @@
 <!-- loio3908c37546cf4e3982145c4181df88be -->
 
-# Business-to-Business Scenario
+# Business-to-Business
 
 The business-to-business scenario is related to services for business partners. Unlike the business-to-consumer scenario, consumer self-registration is not allowed, and the administrator of the company is usually the one that triggers the user registration process.
 

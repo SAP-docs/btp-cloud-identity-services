@@ -60,5 +60,5 @@ The application sends the configured ACRs \(authentication context references\) 
 
 [Configure Authentication Context \(SAML 2.0\)](configure-authentication-context-saml-2-0-028cee2.md "Tenant administrator can configure the authentication context in the request sent to the corporate identity providers when Identity Authentication acts as a proxy identity provider.")
 
-[Configure Different Trust Configurations for the Same Identity Authentication](configure-different-trust-configurations-for-the-same-identity-authentication-ba2faa9.md "Tenant administrator can configure the issuer name in the request sent to the corporate identity providers when Identity Authentication acts as a proxy identity provider.")
+[Configure Different Trust Configurations for the Same Identity Authentication Tenant](configure-different-trust-configurations-for-the-same-identity-authentication-tenant-ba2faa9.md "Tenant administrator can configure the issuer name in the request sent to the corporate identity providers when Identity Authentication acts as a proxy identity provider.")
 

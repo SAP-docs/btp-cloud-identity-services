@@ -1,6 +1,6 @@
 <!-- loio3aecb4caf38f4729b28959e3c2e789bd -->
 
-# Business-to-Employee Scenario
+# Business-to-Employee
 
 The business-to-employee scenario is related to services for employees of an organization. Employees can access various applications with one logon. Furthermore, administrators can upload employees data by using the user import functionality.
 

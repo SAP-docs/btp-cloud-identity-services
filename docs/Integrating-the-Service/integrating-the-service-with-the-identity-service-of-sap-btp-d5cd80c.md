@@ -2,16 +2,16 @@
 
 # Integrating the Service with the Identity Service of SAP BTP
 
-The Identity service of SAP BTP enables you to delegate authentication to the Identity Authentication service. The Identity service automates the creation of OpenID Connect \(OIDC\) applications for the Identity Authentication service for each application the Identity service registers.
+The Identity service of SAP BTP enables you to delegate authentication and authorization to Cloud Identity Services. When you register and application, the Identity service automatically creates an OpenID Connect \(OIDC\) application in Cloud Identity Services.
 
-The Identity service of SAP BTP enables you to realize authentication for applications built with SAP BTP regardless of whether your application resides in an environment of SAP BTP or not. While you can manually configure an application of the Identity Authentication service to serve the function of an OIDC provider, the Identity service automates this process. You can preconfigure aspects of the Identity Authentication application, such as the display name of the application and redirect URIs. The Identity service enables an application to exchange information such as URL and credentials with the application of the Identity Authentication tenant.
+The Identity service of SAP BTP enables you to realize authentication for applications built with SAP BTP regardless of whether your application resides in an environment of SAP BTP or not. While you can manually configure an application of Cloud Identity Services to serve the function of an OIDC provider, the Identity service automates this process. You can preconfigure aspects of the Cloud Identity Services application, such as the display name of the application and redirect URIs. The Identity service enables an application to exchange information such as URL and credentials with the application of the Cloud Identity Services tenant.
 
 > ### Note:  
 > This integration isn’t available for the SAP BTP, partner-managed edition account type.
 
 This integration supports principal propagation to services consumed by your application.
 
-The following figure shows each application integrating with the Identity Authentication tenant linked to your subaccount. The Identity service instance is represented by an application in the Identity Authentication tenant.
+The following figure shows each application integrating with the Cloud Identity Services tenant linked to your subaccount. The Identity service instance is represented by an application in the Cloud Identity Services tenant.
 
   
   
@@ -19,10 +19,10 @@ The following figure shows each application integrating with the Identity Authen
 
 ![](images/Identity_broker_scenario_021ef86.png "Applications Using the Identity Service")
 
-Each Identity instance has its own OAuth client for the Identity Authentication application serving as the OAuth and OIDC server. The OAuth client has its own credentials; either client ID and client secret or X.509 certificate. To use an existing X.509 client certificate from a trusted Certification Authority, provide the certificate when binding the instance to your application. Alternatively, you can request a new certificate as part of the binding. Access these credentials from the service binding. No matter which type of credentials you use, the Identity service supports code flows for users and technical users.
+Each Identity instance has its own OAuth client for the Cloud Identity Services application serving as the OAuth and OIDC server. The OAuth client has its own credentials; either client ID and client secret or X.509 certificate. To use an existing X.509 client certificate from a trusted Certification Authority, provide the certificate when binding the instance to your application. Alternatively, you can request a new certificate as part of the binding. Access these credentials from the service binding. No matter which type of credentials you use, the Identity service supports code flows for users and technical users.
 
 > ### Note:  
-> The credentials only enable you to request a token and not use any other APIs of the Identity Authentication service.
+> The credentials only enable you to request a token and not use any other APIs of the Cloud Identity Services.
 
 **Related Information**  
 

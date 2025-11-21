@@ -20,8 +20,8 @@ You have configured the integration between the `Administration Console` applica
 
 Cloud Identity Services have exposed the [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/overview), [Corporate Identity Providers API](https://api.sap.com/api/SCI_IdentityProvider_Directory/overview), and [SAP Cloud Identity Services Application Directory](https://api.sap.com/api/SCI_Application_Directory/overview) as provided APIs for the Administration Console application. These APIs can be used for principal propagation. For more information, see [Consuming APIs from Other Applications](consuming-apis-from-other-applications-29e204d.md).
 
-> ### Restriction:  
-> The [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/overview) currently supports only *GET* and *PATCH* operations about the user for whom the token is issued. Only the following attributes of the user can be returned or updated:
+> ### Note:  
+> Tenant administrators with **Manage Users** and **Manage Groups** roles have full access to the [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/overview). For all other users, the [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/overview) supports *GET* and *PATCH* operations about the user for whom the token is issued, and the following attributes of the user can be returned or updated:
 > 
 > -   `urn:ietf:params:scim:schemas:core:2.0:User:locale`
 > -   `urn:ietf:params:scim:schemas:extension:sap:2.0:User:localeSettings.currency`

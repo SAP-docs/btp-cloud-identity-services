@@ -105,6 +105,326 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-11-19
+
+</td>
+<td valign="top">
+
+2025-11-19
+
+</td>
+<td valign="top">
+
+28533
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Provided APIs
+
+</td>
+<td valign="top">
+
+Cloud Identity Services now have fully exposed the [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/overview) to administrators with Manage Users and Manage Groups roles as a provided API for the Administration Console application. See [Consume APIs from the Administration Console](Development/consume-apis-from-the-administration-console-a8fe3ee.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-11-19
+
+</td>
+<td valign="top">
+
+2025-11-19
+
+</td>
+<td valign="top">
+
+28533
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Regional Availability
+
+</td>
+<td valign="top">
+
+We have unified the names of the Data Center \(DC\) of Cloud Identity Services in the Administration Console and in the documentation. The old and the new DC names are as follows:
+
+-   *China \(Beijing\)* \> *China \(Shanghai\)*
+-   *Netherlands \(Amsterdam\) / Germany \(Frankfurt\)* \> *Europe \(Frankfurt / Amsterdam\)*
+-   *Tel Aviv, Israel, Middle East* \> *Israel \(Tel Aviv\)*
+-   *Japan \(Tokyo\) / Japan \(Osaka\)* \> *Japan \(Tokyo / Osaka\)*
+-   *Dammam, Saudi Arabia, Middle East \(for Non-Regulated Customers\)* \> *Saudi Arabia \(Dammam\)*
+-   *Dammam, Saudi Arabia, Middle East \(for Regulated Customers\)* \> *Saudi Arabia \(Dammam\) - Regulated*
+-   *Seoul \(South Korea\)* \> *South Korea \(Seoul\)*
+-   *UAE North \(Dubai\)* \> *United Arab Emirates \(Dubai\)*
+-   *United States \(Sterling\) / United States \(Virginia\)* \> *USA \(Sterling, VA / N. Virginia\)*
+-   *West US 2* \> *USA \(Quincy, WA\)*
+-   *East US* \> *Trial \(USA\)*
+
+See, [Regional Availability](regional-availability-be600ca.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-11-19
+
+</td>
+<td valign="top">
+
+2025-11-19
+
+</td>
+<td valign="top">
+
+28533
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Data Control Language \(DCL\) for the Definition of Authorization Policies
+
+</td>
+<td valign="top">
+
+You can now use the Data Control Language \(DCL\) to define authorization policies. This SQL-like language enables developers to create fine-grained authorization policies for your resources. In the administration console, administrators can then refine the authorization policies by using attribute constraints to provide fine-grained, attribute-based user permissions.
+
+See [Data Control Language \(DCL\)](https://help.sap.com/docs/IDENTITY_AUTHENTICATION/6d6d63354d1242d185ab4830fc04feb1/38baa251132c4b088f41261fb3158fb3.html).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-11-27
+
+</td>
+<td valign="top">
+
+2025-11-27
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Change in Status Code Behavior for Identity Provisioning Proxy Scenarios
 
 </td>
@@ -433,7 +753,7 @@ Issuer Name
 </td>
 <td valign="top">
 
-The issuer name can contain now also the dash \(-\) character, and its length can be up to 36 characters. See [Configure Different Trust Configurations for the Same Identity Authentication](Operation-Guide/configure-different-trust-configurations-for-the-same-identity-authentication-ba2faa9.md).
+The issuer name can contain now also the dash \(-\) character, and its length can be up to 36 characters. See [Configure Different Trust Configurations for the Same Identity Authentication Tenant](Operation-Guide/configure-different-trust-configurations-for-the-same-identity-authentication-tenant-ba2faa9.md).
 
 </td>
 <td valign="top">

@@ -1,6 +1,6 @@
 <!-- loioba2faa9e93ef4fc2aff9ead9e73e19bd -->
 
-# Configure Different Trust Configurations for the Same Identity Authentication
+# Configure Different Trust Configurations for the Same Identity Authentication Tenant
 
 Tenant administrator can configure the issuer name in the request sent to the corporate identity providers when Identity Authentication acts as a proxy identity provider.
 
