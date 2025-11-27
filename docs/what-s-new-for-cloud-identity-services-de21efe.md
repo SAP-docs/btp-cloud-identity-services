@@ -105,6 +105,84 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Data Control Language \(DCL\) for the Definition of Authorization Policies
+
+</td>
+<td valign="top">
+
+You can now use the Data Control Language \(DCL\) to define authorization policies. This SQL-like language enables developers to create fine-grained authorization policies for your resources. In the administration console, administrators can then refine the authorization policies by using attribute constraints to provide fine-grained, attribute-based user permissions.
+
+See [Data Control Language \(DCL\)](Operation-Guide/data-control-language-dcl-38baa25.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-11-27
+
+</td>
+<td valign="top">
+
+2025-11-27
+
+</td>
+<td valign="top">
+
+28533
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Regular Upgrade
 
 </td>
@@ -347,84 +425,6 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-Data Control Language \(DCL\) for the Definition of Authorization Policies
-
-</td>
-<td valign="top">
-
-You can now use the Data Control Language \(DCL\) to define authorization policies. This SQL-like language enables developers to create fine-grained authorization policies for your resources. In the administration console, administrators can then refine the authorization policies by using attribute constraints to provide fine-grained, attribute-based user permissions.
-
-See [Data Control Language \(DCL\)](https://help.sap.com/docs/IDENTITY_AUTHENTICATION/6d6d63354d1242d185ab4830fc04feb1/38baa251132c4b088f41261fb3158fb3.html).
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
-2025-11-27
-
-</td>
-<td valign="top">
-
-2025-11-27
-
-</td>
-<td valign="top">
-
-
-
-</td>
-<td valign="top">
-
-All scenarios
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
 Change in Status Code Behavior for Identity Provisioning Proxy Scenarios
 
 </td>
@@ -605,7 +605,7 @@ General Availability
 </td>
 <td valign="top">
 
-New
+
 
 </td>
 <td valign="top">
@@ -891,8 +891,7 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
--   Neo
--   Kyma
+-   -   Kyma
 -   Cloud Foundry
 
 
@@ -1848,12 +1847,12 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
-SAP Ariba Applications - New Property
+SAP Ariba Applications 
 
 </td>
 <td valign="top">
 
-A new system-specific property `ariba.applications.group.children.conversion` is introduced for SAP Ariba Applications source system that allows provisioning of nested groups of type **authorization** to the Identity Directory of SAP Cloud Identity Services or Identity Authentication \(SCIM API version 2\) target systems.
+A new system-specific property `ariba.applications.group.children.conversion` is introduced for SAP Ariba Applications source system that allows provisioning of nested groups of type **** to the Identity Directory of SAP Cloud Identity Services or Identity Authentication \(SCIM API version 2\) target systems.
 
 For more information, see [List of Properties](list-of-properties-d6f3577.md) → `ariba.applications.group.children.conversion` and [SAP Ariba Applications](sap-ariba-applications-0ef1091.md).
 
