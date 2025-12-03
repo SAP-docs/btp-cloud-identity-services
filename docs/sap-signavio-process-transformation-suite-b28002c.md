@@ -14,7 +14,7 @@ Follow this procedure to set up SAP Signavio Process Transformation Suite as a t
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Identity Access Governance** bundle option.
 
 > ### Note:  
-> The initial setup of SAP Signavio Process Transformation Suite is completed during the onboarding process. This setup includes connecting Identity Provisioning and SAP Signavio Process Transformation Suite with certificate-based authentication. Changes required after the initial setup should be processed through a support incident.
+> The initial setup of SAP Signavio Process Transformation Suite is completed during the onboarding process. This setup includes establishing a connection between Identity Provisioning and SAP Signavio Process Transformation Suite using certificate-based authentication. Any changes needed after the initial setup should be processed through a support incident.
 
 
 
@@ -24,7 +24,7 @@ Follow this procedure to set up SAP Signavio Process Transformation Suite as a t
 
 SAP Signavio Process Transformation Suite helps you understand, improve, and transform your business processes – fast and at scale – with a cloud-based process management platform.
 
-You can use Identity Provisioning to configure SAP Signavio Process Transformation Suite as a target system where you can provision users and groups from source systems.
+You can use Identity Provisioning to configure SAP Signavio Process Transformation Suite as a target system where you can provision users and groups from source systems. When provisioning users, ensure that the `userName` attribute is formatted as a valid email address.
 
 
 
@@ -132,11 +132,44 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
     </td>
     <td valign="top">
     
-    This property defines by which unique attribute\(s\) an existing user in the target system will be searched and resolved in case Identity Provisioning tries to provision a conflicting user. It is missing during system creation.
+    This property defines the unique attributes used to search and resolve an existing user when Identity Provisioning attempts to provision a user that already exists in the target system \(a conflicting user\).
 
     Default value: *userName*
 
-    This means that if the service finds an existing user with the same *userName*, it updates that user with the data from the conflicting user. However, if no user with that *userName* exists, the creation of the conflicting user fails.
+    If the service finds an existing user with the same *userName*, it updates that user with the data from the conflicting user. However, if no user with that *userName* exists, the creation of the conflicting user fails.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `sig.group.unique.attribute`
+    
+    </td>
+    <td valign="top">
+    
+    This property defines the unique attributes used to search and resolve an existing group when Identity Provisioning attempts to provision a group that already exists in the target system \(a conflicting group\).
+
+    Default value: *displayName*
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `sig.support.patch.operation`
+    
+    </td>
+    <td valign="top">
+    
+    This property controls how modified entities \(users and groups\) in the source system are updated in the target system.
+
+    -   If set to *true*, PATCH operations are used to update users and groups in the target system.
+
+    -   If set to *false*, PUT operations are used to update users and groups in the target system.
+
+
+    Default value: *false*
     
     </td>
     </tr>
@@ -154,9 +187,9 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
 
     You can use the example value or provide your own.
 
-    When set in the target system, only groups containing the SIG\_ prefix in their display name will be provisioned to SAP Signavio Process Transformation Suite. Groups without this prefix in the display name won't be provisioned.
+    When **set in the target system**, only groups containing the SIG\_ prefix in their display name will be provisioned to SAP Signavio Process Transformation Suite. Groups without this prefix in the display name won't be provisioned.
 
-    If the property is not set, all groups will be be provisioned to SAP Signavio Process Transformation Suite.
+    If the property is not set, all groups will be provisioned to SAP Signavio Process Transformation Suite.
     
     </td>
     </tr>
@@ -314,6 +347,7 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
     >       {
     >         "sourcePath": "$.ims",
     >         "targetPath": "$.ims",
+    >         "preserveArrayWithSingleElement": true,
     >         "optional": true
     >       },
     >       {

@@ -6,6 +6,12 @@ View all SAP Cloud Identity Services tenants that are assigned to your customer 
 
 
 
+## Prerequisites
+
+You have an *S-user*. For more information, see [About the User, Authorization, and Administrator Concept](https://support.sap.com/content/s4m/help/access/user-admin-concept.html).
+
+
+
 <a name="loiof56e6f24e373404087d6a1a9a13515a2__context_lqb_bn5_mqb"/>
 
 ## Context
@@ -25,7 +31,10 @@ The default tenants, one test and productive tenant per customer, are provided r
 
 1.  Access the SAP Cloud Identity Services - Tenants application via the following URL:[https://iamtenants.accounts.cloud.sap/](https://iamtenants.accounts.cloud.sap/)
 
-2.  Log on with your *S user*.
+2.  Sign in with your *S-user*.
+
+    > ### Remember:  
+    > Not signing in with an *S-user* will return *HTTP Status 500 - Internal Server Error*.
 
     You can view the Identity Authentication and Identity Provisioning tenants that are assigned to your customer ID.
 

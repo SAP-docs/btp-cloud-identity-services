@@ -105,6 +105,560 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+Regular Upgrade
+
+</td>
+<td valign="top">
+
+Cloud Identity Services have been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-12-02
+
+</td>
+<td valign="top">
+
+2025-12-02
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Concur - New Connector Version
+
+</td>
+<td valign="top">
+
+A new version 3 of SAP Concur connector is available. It supports a SCIM-based API and enables the provisioning of users and group assignments.
+
+For more information, see:
+
+-   [SAP Concur \(Source\)](sap-concur-209ea82.md)
+-   [SAP Concur \(Target\)](sap-concur-032fd80.md)
+-   [SAP Concur \(Proxy\)](sap-concur-6abb966.md)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-12-02
+
+</td>
+<td valign="top">
+
+2025-12-02
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+SAP Signavio Process Transformation Suite Connector
+
+</td>
+<td valign="top">
+
+Identity Provisioning supports the SAP Signavio Process Transformation Suite connector. You can configure it as source, target, and proxy system for your provisioning scenarios.
+
+For more information, see:
+
+-   [SAP Signavio Process Transformation Suite \(Source\)](sap-signavio-process-transformation-suite-8bf50ee.md)
+-   [SAP Signavio Process Transformation Suite \(Target\)](sap-signavio-process-transformation-suite-b28002c.md)
+-   [SAP Signavio Process Transformation Suite \(Proxy\)](sap-signavio-process-transformation-suite-0ec8e94.md)
+
+
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-12-02
+
+</td>
+<td valign="top">
+
+2025-12-02
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+convertLocaleCode Function Introduced
+
+</td>
+<td valign="top">
+
+The *convertLocaleCode* function has been introduced to transform locale codes from the source format into the format required by the target system. It supports two output formats: *BCP 47* \(such as en-US, de-DE\) required by SAP Concur and *ISO 639* \(such as EN, DE\) required by Identity Authentication.
+
+For more information, see: [Transformation Functions](transformation-functions-0cdac7c.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-12-02
+
+</td>
+<td valign="top">
+
+2025-12-02
+
+</td>
+<td valign="top">
+
+28585
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+User Groups
+
+</td>
+<td valign="top">
+
+You can now specify the location of the group in the source application via the `externalLocation` attribute. The tenant administrator can navigate in the Administration Console from the group with `externalLocation` attribute to the same group in the application from which the group comes. See [Identity Directory API](https://api.sap.com/api/IdDS_SCIM/overview) and [Groups](groups-d93be69.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-12-02
+
+</td>
+<td valign="top">
+
+2025-12-02
+
+</td>
+<td valign="top">
+
+28585
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Deprecated oauth.resource.name property
+
+</td>
+<td valign="top">
+
+The **oauth.resource.name** property for MS Entra ID connector has been deprecated. The **aad.oauth2.resource.name** property should be used instead.
+
+For more information, see [List of Properties](list-of-properties-d6f3577.md) → **aad.oauth2.resource.name**.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+Deprecated
+
+</td>
+<td valign="top">
+
+Announcement
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-12-02
+
+</td>
+<td valign="top">
+
+2025-12-02
+
+</td>
+<td valign="top">
+
+28585
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+sf.company.id not required for certificate authentication
+
+</td>
+<td valign="top">
+
+Providing the SAP SuccessFactors company ID in the `sf.company.id` property is no longer required when connecting to the system using certificate-based authentication with SAP SuccessFactors connector version 2.
+
+For more information, see [SAP SuccessFactors](sap-successfactors-f29b5c6.md).
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+Changed
+
+</td>
+<td valign="top">
+
+Technology
+
+</td>
+<td valign="top">
+
+Not applicable
+
+</td>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+2025-12-02
+
+</td>
+<td valign="top">
+
+2025-12-02
+
+</td>
+<td valign="top">
+
+28585
+
+</td>
+<td valign="top">
+
+All scenarios
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
 Data Control Language \(DCL\) for the Definition of Authorization Policies
 
 </td>

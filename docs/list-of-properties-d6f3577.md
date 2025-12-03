@@ -760,7 +760,7 @@ SAP Ariba Applications
 </td>
 <td valign="top">
 
-The number of group members that SAP Ariba Applicationsreturns per request when reading a group.
+The number of group members that SAP Ariba Applications returns per request when reading a group.
 
 When the Identity Provisioning reads a group, it compares the number of group members with the value configured for `ariba.applications.group.members.page.size`. Depending on the number of group members, you can expect the following results:
 
@@ -3160,6 +3160,8 @@ This property can be used in combination with `ips.full.read.force.count`. For m
 
 -   SAP Central Business Configuration
 
+-   SAP Concur
+
 -   SAP CPQ
 
 -   SAP Data Custodian
@@ -3171,6 +3173,8 @@ This property can be used in combination with `ips.full.read.force.count`. For m
 -   SAP HANA Cloud, SAP HANA Database
 
 -   SAP Intelligent Agriculture
+
+-   SAP Signavio Process Transformation Suite
 
 -   SAP SuccessFactors
 
@@ -3344,6 +3348,8 @@ When the property is set, the groups are provisioned with their *applicationId* 
 
 -   SAP Commerce Cloud
 
+-   SAP Concur
+
 -   SAP CPQ
 
 -   SAP Data Custodian
@@ -3367,6 +3373,8 @@ When the property is set, the groups are provisioned with their *applicationId* 
 -   SAP Market Communication for Utilities
 
 -   SAP Sales Cloud and SAP Service Cloud
+
+-   SAP Signavio Process Transformation Suite
 
 -   SAP S/4 HANA Cloud
 
@@ -4705,7 +4713,244 @@ Default value: *100*
 </td>
 <td valign="top">
 
-SAP Concur
+SAP Concur \(Using User v1 API\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`concur.patch.group.members.above.threshold` 
+
+</td>
+<td valign="top">
+
+Defines the threshold number of group members above which they are provisioned on batches with `PATCH` requests, and below which they are provisioned with `PUT` request. Setting this property allows you to avoid timeouts when updating groups with a large number of group members.
+
+> ### Note:  
+> Use this property when your SAP Concur connector is configured for version 3.
+
+The expected value is a positive integer without any separators, such as a space, comma, or period.
+
+**Possible values**: integer
+
+Default value: *1000*
+
+Minimum value: *1*
+
+Maximum value: *1000*
+
+For example:
+
+-   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1 200 members, setting this property to 900 results in the following:
+
+    As 1900 \(the target count of the members\) is above the threshold number of 900, 2 `PATCH` requests will be sent to the SAP Concur target system. The first request will add 900 group members and the second request will add 300 group members.
+
+    The threshold number you set defines the maximum number of group members processed per batch.
+
+-   `PUT` request: If you have a group with 700 members and you update the group by adding another 100 members, setting this property to 900 results in the following:
+
+    As 800 \(the target count of the members\) is below the threshold number of 900, 1 `PUT` request with 800 group members will be sent to the SAP Concur target system to update the group.
+
+
+> ### Note:  
+> Regardless of the threshold number you define, when removing group members in SAP Concur, the maximum number of members which can be removed per one `PATCH` request is 1000.
+
+**System Role:**Target
+
+</td>
+<td valign="top">
+
+SAP Concur \(using SCIM v4 API\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`concur.group.members.page.size` 
+
+</td>
+<td valign="top">
+
+Defines the number of group members that SAP Concur returns per request when reading a group.
+
+> ### Note:  
+> Use this property when your SAP Concur connector is configured for version 3.
+
+When Identity Provisioning reads a group, it compares the number of group members with the value configured for `concur.group.members.page.size`.
+
+-   If the number of group members is equal to or greater than the configured page size and the `concur.group.members.paging.enabled` property is set to *true*, Identity Provisioning will read all group members in separate requests.
+
+    For example, if a group has 6 members and the page size is set to *2*, Identity Provisioning will send 3 requests to read the group members.
+
+-   If the number of group members is less than the page size or `concur.group.members.paging.enabled` is set to false, Identity Provisioning will read all group members in a single request.
+
+    For example, if a group has 2 members and the page size is set to *6*, Identity Provisioning will read all group members in a single request.
+
+
+Setting the property `concur.group.members.paging.enabled` allows you to read groups with a large number of group members. For more information, see `concur.group.members.paging.enabled`.
+
+**Default value:** 1000
+
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP Concur \(using SCIM v4 API\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`concur.group.members.paging.enabled` 
+
+</td>
+<td valign="top">
+
+This property enables paging of group members.
+
+> ### Note:  
+> Use this property when your SAP Concur connector is configured for version 3.
+
+The maximum number of group members returned per request is 1000. To read more than 1000 group members, paging must be enabled.
+
+**Possible values:**
+
+-   *true* - Paging is enabled.
+-   *false* - Paging is disabled.
+
+Default value: *true*
+
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP Concur \(using SCIM v4 API\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`concur.support.patch.operation` 
+
+</td>
+<td valign="top">
+
+This property controls how modified entities \(users and groups\) in the source system are updated in the target system.
+
+> ### Note:  
+> Use this property when your SAP Concur connector is configured for version 3.
+
+-   If set to *true*, `PATCH` operations are used to update users and groups in the target system. This means, for example, that if a user attribute is modified or a group member is removed from a group, only these changes will be provisioned and applied in the target system.
+
+-   If set to *false*, `PUT` operations are used to update users and groups in the target system. This means, for example, that if a user attribute is modified or a group member is removed from a group, all user attributes and all group attributes are replaced in the target system, instead of updating only the modified ones.
+
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false* 
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Concur \(using SCIM v4 API\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`concur.group.prefix` 
+
+</td>
+<td valign="top">
+
+This property distinguishes SAP Concur groups by specific prefix. It is an optional property which does not appear by default at system creation.
+
+> ### Note:  
+> Use this property when your SAP Concur connector is configured for version 3.
+
+Example value: `Concur_`
+
+You can use the example value or provide your own.
+
+-   When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP Concur source system and will be provisioned to the target system with the following name pattern: <code>Concur_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP Concur groups in the target system will be distinguished from groups provisioned from other applications.
+
+    If the property is not set, the SAP Concur groups will be read and provisioned to the target system with their actual display names.
+
+-   When **set in the target system**, only groups containing the `Concur_` prefix in their display name will be provisioned to SAP Concur. Groups without this prefix in the display name won't be provisioned.
+
+    If the property is not set, all groups will be provisioned to SAP Concur.
+
+
+**System Role:** Source and Target
+
+</td>
+<td valign="top">
+
+SAP Concur \(using SCIM v4 API\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`concur.group.unique.attribute` 
+
+</td>
+<td valign="top">
+
+This property defines by which unique attribute\(s\) the existing group will be searched and resolved.
+
+> ### Note:  
+> Use this property when your SAP Concur connector is configured for version 3.
+
+The default value is *displayName*.
+
+If the service finds an existing group by this unique attribute, the group that you try to provision will overwrite the existing one. If such a group is not found, the group that you try to provision will not be created in the target system.
+
+**System Role:** Target
+
+</td>
+<td valign="top">
+
+SAP Concur \(using SCIM v4 API\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`concur.group.filter` 
+
+</td>
+<td valign="top">
+
+When specified, only those groups matching the filter expression will be read.
+
+> ### Note:  
+> Use this property when your SAP Concur connector is configured for version 3.
+
+For example:
+
+*displayName* eq "ProjectTeam1"
+
+**System Role:** Source and Proxy
+
+</td>
+<td valign="top">
+
+SAP Concur \(using SCIM v4 API\)
 
 </td>
 </tr>
@@ -4897,16 +5142,20 @@ This value causes the LDAP service provider to abort the connection attempt if a
 <tr>
 <td valign="top">
 
-`oauth.resource.name` 
+`aad.oauth2.resource.name` 
 
 </td>
 <td valign="top">
 
-Enter the URL to the Microsoft Graph.
+Specifies the OAuth2 resource name for Microsoft Graph API.
 
-**Possible values:** *https://graph.microsoft.com*
+**Default value:** `https://graph.microsoft.com`
 
-**System Role:** Source, Target, Proxy
+You can change the Microsoft Graph endpoint to match your organization's cloud environment.
+
+For more information, see [Microsoft Graph national cloud deployments](https://learn.microsoft.com/en-us/graph/deployments).
+
+**System role:** Source, Target, Proxy
 
 </td>
 <td valign="top">
@@ -5479,7 +5728,7 @@ Example value: `S4HANACLOUD_`
 
 You can use the example value or provide your own.
 
--   When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP S/4HANA Cloud source system and will be provisioned to the target system with the following name pattern: <code>S4HANACLOUD_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP Integrated Business PlanningSAP S/4HANA Cloud groups in the target system will be distinguished from groups provisioned from other applications.
+-   When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP S/4HANA Cloud source system and will be provisioned to the target system with the following name pattern: <code>S4HANACLOUD_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP S/4HANA Cloud groups in the target system will be distinguished from groups provisioned from other applications.
 
     If the property is not set, the SAP S/4HANA Cloud groups will be read and provisioned to the target system with their actual display names.
 
@@ -10499,7 +10748,7 @@ When specified, only those users matching the filter expression will be read.
 
 **Possible values:**
 
-For example:
+Examples when SAP Concur connector is configured for version 2:
 
 -   *userName eq "johnsmith@example.com"* 
 
@@ -10518,7 +10767,18 @@ For example:
     This filter returns a user with the specified employee number. The employeeNumber could also be a number having six or more digits.
 
 
-**System Role:** Source
+Examples when SAP Concur connector is configured for version 3:
+
+-   *userName eq "JohnSmith"*
+
+-   *userName sw "John"*
+
+-   *externalId eq "0fe44868-31a7-4930-9ah30-757tg2513b64"*
+
+-   *urn:ietf:params:scim:schemas:extension:enterprise:2.0:employeeNumber eq "00102345"*
+
+
+**System Role:** Source, Proxy
 
 </td>
 <td valign="top">
@@ -10590,14 +10850,23 @@ When the Identity Provisioning attempts to provision a user for the first time, 
 
 This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\). **If the service finds such a user on the target system via this filter, then the conflicting user will overwrite the existing one.** If the service does not find such a user, the creation will fail.
 
-According to your use case and system type, choose how to set up this property:
+You can set any combination of the supported unique attributes, separated by commas:
 
 -   Default behavior: This property is missing during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such а *userName* is not found, the creation of the conflicting user fails.
 
-**Possible values:**
+-   Value=*userName,urn:ietf:params:scim:schemas:extension:enterprise:2.0:employeeNumber*. If the service finds an existing user with both these userName and employeeNumber, it updates this user with the data of the conflicting one. If such a user is not found, that means the conflict is due to another reason, so the creation of the conflicting user fails.
+
+
+**Possible values** for version 2:
 
 -   *userName*
--   *externalId*, or another SCIM attribute, or a conjunction of SCIM attributes
+-   *externalId* or another SCIM attribute, or a conjunction of SCIM attributes
+
+**Possible values** for version 3:
+
+-   *userName*
+-   *externalId*
+-   *urn:ietf:params:scim:schemas:extension:enterprise:2.0:employeeNumber*
 
 Default value: *userName*
 
@@ -10606,7 +10875,7 @@ Default value: *userName*
 </td>
 <td valign="top">
 
-SAP Concur \(using SAP Concur Identity v4 API\)
+SAP Concur \(using SAP Concur Identity v4 API and SAP Concur SCIM API\)
 
 </td>
 </tr>
@@ -10618,24 +10887,14 @@ SAP Concur \(using SAP Concur Identity v4 API\)
 </td>
 <td valign="top">
 
-The SAP Concur data center your Identity Provisioning tenant belongs to.
+Specify the SAP Concur data center your Identity Provisioning tenant belongs to. The following SAP Concur data centers are available:
 
-Based on the provided data center, Identity Provisioning configures the URL of the User Provisioning Service \(UPS\) v4 API or the SAP Concur Identity v4 API.
+-   APJ1
 
-For example, if you provide `us1`, the service will configure the URL in the following pattern: `us.api.concursolutions.com`.
+-   EU2
 
-**Possible values:**
+-   US2
 
-The following SAP Concur data centers are available:
-
--   *us1*
--   *us2*
--   *eu1*
--   *eu2*
--   *emea*
--   *cn1*
--   *usg*
--   *int*
 
 **System Role:** Source, Target, Proxy
 
@@ -10658,12 +10917,14 @@ Defines the version of SAP Concur API.
 
 **Possible values:**
 
--   *1* - SAP Concur User Provisioning Service \(UPS\) v4 API is used.
+-   *1* - User v1 API is used.
 
--   *2* - SAP Concur Identity v4 API \(SCIM API\) is used.
+-   *2* - Identity v4 API is used.
+
+-   *3* - SCIM v4 API is used.
 
 
-Default value: *2*
+Default value: *3*
 
 **System Role:** Source, Target, Proxy
 
@@ -15450,9 +15711,7 @@ For example: *displayName eq "ProjectTeam1"*
 </td>
 <td valign="top">
 
-SAP Signavio Process Transformation Suite
-
-SAP Signavio Process Transformation Suite
+SAP Signavio Process Transformation Suite 
 
 </td>
 </tr>

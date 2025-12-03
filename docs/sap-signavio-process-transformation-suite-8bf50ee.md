@@ -14,7 +14,7 @@ Follow this procedure to set up SAP Signavio Process Transformation Suite as а 
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.
 
 > ### Note:  
-> The initial setup of SAP Signavio Process Transformation Suite is completed during the onboarding process. This setup includes connecting Identity Provisioning and SAP Signavio Process Transformation Suite with certificate-based authentication. Changes required after the initial setup should be processed through a support incident.
+> The initial setup of SAP Signavio Process Transformation Suite is completed during the onboarding process. This setup includes establishing a connection between Identity Provisioning and SAP Signavio Process Transformation Suite using certificate-based authentication. Any changes needed after the initial setup should be processed through a support incident.
 
 
 
@@ -133,6 +133,8 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
     <td valign="top">
     
     This property enables paging of group members.
+
+    Default value: *true*
     
     </td>
     </tr>
@@ -145,6 +147,8 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
     <td valign="top">
     
     This property enables paging of user’s groups.
+
+    Default value: *true*
     
     </td>
     </tr>
@@ -256,7 +260,6 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
 
     > ### Code Syntax:  
     > ```
-    > 
     > {
     >   "user": {
     >     "mappings": [
@@ -369,6 +372,7 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
     >       },
     >       {
     >         "sourcePath": "$.ims",
+    >         "preserveArrayWithSingleElement": true,
     >         "optional": true,
     >         "targetPath": "$.ims"
     >       },

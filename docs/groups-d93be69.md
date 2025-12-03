@@ -47,7 +47,7 @@ For more information, see [Managing Groups](Operation-Guide/managing-groups-ddd0
 
 The application-specific groups are a special kind of groups which are bound to an application and can be created in the Identity Directory of SAP Cloud Identity Services or Identity Authentication \(SCIM API version 2\) target system by running provisioning jobs, or via the administration console. For more information, see [Start and Stop Provisioning Jobs](Operation-Guide/start-and-stop-provisioning-jobs-531a261.md) and [Create a Group](Operation-Guide/create-a-group-b1b638d.md).
 
-The extension schema of the Identity Directory API *urn:ietf:params:scim:schemas:extension:sap:2.0:Group* defines the following three attributes:
+The extension schema of the Identity Directory API *urn:ietf:params:scim:schemas:extension:sap:2.0:Group* defines the following attributes:
 
 -   `applicationId` - supported for the Local Identity Directory and Identity Authentication \(SCIM API version 2\) default write and proxy write transformations as mandatory attribute. The value of this attribute is provided from the source system by setting the property `ips.application.id`. For more information, see [List of Properties](list-of-properties-d6f3577.md) →`ips.application.id`.
 
@@ -69,6 +69,11 @@ The extension schema of the Identity Directory API *urn:ietf:params:scim:schemas
 
     > ### Restriction:  
     > When retrieving multiple groups, the `children` attribute can't be requested. If you attempt to include this attribute in the `attributes` query parameter for multiple groups, the Identity Directory API will return a status code 400, along with a message indicating that requesting the `children` attribute is only supported for single group retrieval.
+
+-   `externalLocation` - Specifies the location of the source group. The value is immutable.
+
+    > ### Note:  
+    > In the Administration Console you can navigate from the group with `externalLocation` attribute to the same group in the application from which the group comes *:* \> *sign in to the administration console* \> *select the relevant group* \> *Go to source application*.
 
 
 The application-specific groups appear with their name in the *Application Name* column in the administration console for SAP Cloud Identity Services under the *Groups* tile. The *Application Name* column for the groups that aren't application-specific is empty.

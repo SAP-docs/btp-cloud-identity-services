@@ -68,7 +68,7 @@ When tenants delivered as part of the bundling process are created, you get thei
 
 ### Self-Service Request in SAP BTP Cockpit
 
-Products delivered on SAP Business Technology Platform \(SAP BTP\) does not trigger automatic creation of SAP Cloud Identity Services productive and test tenant. You need to request the tenant in the SAP BTP cockpit.
+Products delivered on SAP Business Technology Platform \(SAP BTP\) do not trigger automatic creation of SAP Cloud Identity Services productive and test tenant. You need to request the tenant in the SAP BTP cockpit.
 
 This is true in most cases, but not for all SAP BTP applications, and depends on the subaccount where the application runs on. In SAP BTP, there are customer-managed and SAP-managed subaccounts.
 
@@ -110,23 +110,25 @@ Get your productive and test tenant as part of a self-service request in SAP BTP
 
 ### Procedure
 
-1.  In the SAP BTP cockpit, choose your subaccount and navigate to *Entitlements* \> *Edit* \> *Add Service Plans*.
+1.  Access the SAP BTP cockpit, choose your subaccount and navigate to it by choosing its tile.
 
-2.  In the pop-up dialog, select *Cloud Identity Services*.
+2.  Choose *Entitlements* \> *Edit* \> *Add Service Plans*.
 
-3.  Select the *default \(Application\)* service plan, and then choose *Add Service Plan*.
+3.  In the pop-up dialog, select *Cloud Identity Services* from the list.
 
-4.  Save your changes on the *Entitlements* page.
+4.  Select the *default \(Application\)* service plan, and then choose *Add 1 Service Plan*.
 
-5.  Navigate to *Services* \> *Service Marketplace* and select the *Cloud Identity Services* tile. Under *Application Plans* you should see the *default* plan.
+5.  Save your changes on the *Entitlements* page.
 
-6.  In the top-right corner, choose *Create* and follow the steps in the wizard to configure your new Cloud Identity Services tenant:
+6.  Navigate to *Services* \> *Service Marketplace* and select the *Cloud Identity Services* tile. Under *Application Plans* you should see the *default* plan.
+
+7.  In the top-right corner, choose *Create* and follow the steps in the wizard to configure your new Cloud Identity Services tenant:
 
     1.  From the dropdown list, choose *Cloud Identity Services*.
 
     2.  Select the *default* plan and then choose *Next*.
 
-    3.  From the *Cloud Service Type* dropdown, choose the tenant type: *Test* or *Productive* \(default value\).
+    3.  From the *Cloud Service Type* dropdown, choose the tenant type: *TEST* or *PRODUCTIVE* \(default value\).
 
     4.  Choose *Next*, review your configuration and choose *Create*.
 
@@ -139,14 +141,16 @@ Get your productive and test tenant as part of a self-service request in SAP BTP
     > The default test and productive tenants will be created in the same region.
 
     > ### Caution:  
-    > If you unsubscribe from the *default* plan, the Identity Authentication tenant is deactivated, if not used by other orders or products.
+    > If you unsubscribe from the *default* plan, the Cloud Identity Services tenant is deactivated, if not used by other orders or products.
 
-7.  If you initially create a test tenant and then you want to proceed with a productive one \(or vice versa\), repeat the preceding steps in a separate subaccount of the same region.
-
-
+8.  If you initially create a test tenant and then you want to proceed with a productive one \(or vice versa\), repeat the preceding steps in a separate subaccount of the same region.
 
 
-### 
+
+
+### Next Steps
+
+Go to your email inbox and activate your account. For more information, see .[Activate Your Account](activate-your-account-cc03ecc.md)
 
 > ### Note:  
 > **SAP BTP, Neo subaccount**
@@ -177,14 +181,31 @@ Get an additional tenant as part of a self-service request in SAP BTP cockpit. S
 
 To get additional tenant using SAP BTP multi-environment subaccount, proceed as follows:
 
-1.  In the SAP BTP cockpit, choose your subaccount and navigate to *Services* \> *Service Marketplace*.
+1.  Access the SAP BTP cockpit, choose your subaccount and navigate to it by choosing its tile.
 
-2.  Select the *Cloud Identity Services* tile.
+2.  Choose *Entitlements* \> *Edit* \> *Add Service Plans*.
+
+3.  In the pop-up dialog, select *Cloud Identity Services* from the list.
+
+4.  Select the *additional-tenant \(Application\)* service plan, and then choose *Add 1 Service Plan*.
 
     > ### Tip:  
-    > -   If you don't see the *Cloud Identity Service* tile, navigate to *Entitlements* trial, add the tile.
-    > -   If you don't see the *additional-tenant* plan, navigate to *Entitlements* \> *Edit* \> *Add Service Plans* \> *Cloud Identity Services*, select the checkbox for the *additional-tenant* plan, press *Add Service Plans* and save your choice.
-    > -   If you use directories entitlement management in your global account, you must assign the *additional-tenant* plan to the directory first, and after that to the subaccount. Once you assign the *additional-tenant* plan to your directory, it will appear in your subaccount entitlements too. For more information, see [Configure Entitlements and Quotas for Directories](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/37f8871865114f44aebee3db6ac64b72.html).
+    > -   If you use directories entitlement management in your global account, you must assign the *additional-tenant \(Application\)* plan to the directory first, and after that to the subaccount. Once you assign the *additional-tenant* plan to your directory, it will appear in your subaccount entitlements too. For more information, see [Configure Entitlements and Quotas for Directories](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/37f8871865114f44aebee3db6ac64b72.html).
+
+5.  Save your changes on the *Entitlements* page.
+
+6.  Navigate to *Services* \> *Service Marketplace* and select the *Cloud Identity Services* tile. Under *Application Plans* you should see the *additional-tenant \(Application\)* plan.
+
+7.  In the top-right corner, choose *Create* and follow the steps in the wizard to configure your new Cloud Identity Services tenant:
+
+    1.  From the dropdown list, choose *Cloud Identity Services*.
+
+    2.  Select the *additional-tenant* plan and then choose *Next*.
+
+    3.  From the *Cloud Service Type* dropdown, choose the tenant type: *TEST* or *PRODUCTIVE* \(default value\).
+
+    4.  Choose *Next*, review your configuration and choose *Create*.
+
 
     > ### Note:  
     > For each service plan you must have a separate subaccount.
@@ -192,19 +213,6 @@ To get additional tenant using SAP BTP multi-environment subaccount, proceed as 
     > The *additional-tenant* plan allows the customer to create a new SAP Cloud Identity Services additional tenant. The type of the created tenant may be test or productive depending on the customer selection. The new instance is created only if there is an existing default instance bound to your customer ID.
     > 
     > You can delete the additional tenant by choosing the *Delete* button, which initiates the deletion of the subscription to the additional-tenant plan of Cloud Identity Services in your subaccount. The tenant will be deactivated for 30 days before being permanently deleted. After deletion, it cannot be restored.
-
-3.  Choose *Services* \> *Instances and Subscriptions*.
-
-4.  In the top-right corner, choose *Create* and follow the steps in the wizard to configure your new instance:
-
-    1.  From the dropdown list, choose *Cloud Identity Services*.
-
-    2.  Select the *additional-tenant* plan and then choose *Next*.
-
-    3.  From the *Cloud Service Type* dropdown, choose the tenant type: *Test* or *Productive* \(default value\).
-
-    4.  Choose *Next*, review your configuration and choose *Create*.
-
 
 
 

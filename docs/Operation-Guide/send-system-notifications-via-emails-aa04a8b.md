@@ -18,10 +18,10 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 
 The tenant administrator can configure the system to send emails to administrators for the following events:
 
--   *Expiring Certificates* - an email is sent 30 days, 14 days, and 3 days before the certificate expires
--   *System Notifications* - an email is sent the day after the notification is created
--   *New Administrators* - an email is sent right after the administrator is created
--   *New Applications* - an email is sent right after the application is created
+-   *Expiring Certificates* - An email is sent 30 days, 14 days, and 3 days before the certificate expires
+-   *System Notifications* - An email is sent the day after the notification is created. The notifications are created by the SAP Cloud Identity Services team about important updates relevant for everyone.
+-   *New Administrators* - An email is sent right after the administrator is created
+-   *New Applications* - An email is sent right after the application is created
 
 > ### Remember:  
 > It takes 2 minutes for the configuration changes to take place.

@@ -17,7 +17,7 @@ Follow this procedure to set up SAP Signavio Process Transformation Suite as a p
 > Administrators of bundle tenants on Neo environment should enable the *Manage OAuth Clients* permission, as described in *Neo Environment* section in [Manage Authorizations](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/544de9b504214372b4479dc1f6b08cca.html "Manage the authorizations of Identity Provisioning administrators, when your bundle or standalone tenant is running on SAP BTP, Neo environment.") :arrow_upper_right:.
 
 > ### Note:  
-> The initial setup of SAP Signavio Process Transformation Suite is completed during the onboarding process. This setup includes connecting Identity Provisioning and SAP Signavio Process Transformation Suite with certificate-based authentication. Changes required after the initial setup should be processed through a support incident.
+> The initial setup of SAP Signavio Process Transformation Suite is completed during the onboarding process. This setup includes establishing a connection between Identity Provisioning and SAP Signavio Process Transformation Suite using certificate-based authentication. Any changes needed after the initial setup should be processed through a support incident.
 
 
 
@@ -254,8 +254,6 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    [SAP Signavio Process Transformation Suite SCIM 2.0 API](https://help.sap.com/docs/SAP_DATASPHERE/9f804b8efa8043539289f42f372c4862/1ca8c4a9467f43df9ae6d4ed3734f05a.html#loio1ca8c4a9467f43df9ae6d4ed3734f05a__section_esx_kxt_vbc)
-
     Default read and write transformations:
 
     > ### Tip:  
@@ -402,6 +400,11 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
     >         "targetPath": "$.emails"
     >       },
     >       {
+    >         "sourcePath": "$.emails[0].value",
+    >         "optional": true,
+    >         "targetPath": "$.emails[0].value"
+    >       },
+    >       {
     >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['emails']",
     >         "preserveArrayWithSingleElement": true,
     >         "optional": true,
@@ -415,6 +418,7 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
     >       },
     >       {
     >         "sourcePath": "$.ims",
+    >         "preserveArrayWithSingleElement": true,
     >         "optional": true,
     >         "targetPath": "$.ims"
     >       },
@@ -747,6 +751,7 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
     >       },
     >       {
     >         "sourcePath": "$.ims",
+    >         "preserveArrayWithSingleElement": true,
     >         "optional": true,
     >         "targetPath": "$.ims"
     >       },

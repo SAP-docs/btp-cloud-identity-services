@@ -47,11 +47,7 @@ SAP Application Server ABAP \(AS ABAP\) offers a user store and user administrat
     -   `IDENTITY_MODIFY`
     -   `BAPI_USER_DELETE`
     -   `PRGN_ACTIVITY_GROUPS_LOAD_RFC`
-    -   `SUSR_USER_GET_DETAIL_MASS` - available as of `SAP_BASIS 7.58`. For more information, see SAP Note [3631587](https://me.sap.com/notes/3631587).
-
-        > ### Note:  
-        > The function module `SUSR_USER_GET_DETAIL_MASS`, which is used for mass reading of user details, does not support the `SAPUSER_UUID.SAP_UID` attribute. To read this attribute, use the function module `BAPI_USER_GET_DETAIL` instead.
-
+    -   `SUSR_USER_GET_DETAIL_MASS` - available as of `SAP_BASIS 7.58`. For more information, see SAP Note [3631587](https://me.sap.com/notes/3631587) and [3677459](https://me.sap.com/notes/3677459).
 
     These are Business Application Programming Interface \(BAPI\) functional modules designed to perform certain tasks in the SAP AS ABAP system, such as retrieving, creating, updating or deleting user data.
 

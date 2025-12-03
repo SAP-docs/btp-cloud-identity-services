@@ -6,6 +6,14 @@ The initial setup of SAP Cloud Identity Services involves the following steps:
 
 
 
+## Quickstart Guide
+
+-   [Manage Administrators](manage-administrators-3bddea4.md)
+-   [Enable Two-Factor Authentication](enable-two-factor-authentication-7003302.md)
+-   [Corporate Identity Providers](Operation-Guide/corporate-identity-providers-19f3eca.md)
+
+
+
 <a name="loio31af7da133874e199a7df1d42905241b__section_atx_zjr_gxb"/>
 
 ## Quickstart

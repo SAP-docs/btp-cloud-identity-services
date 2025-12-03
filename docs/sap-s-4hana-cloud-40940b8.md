@@ -39,6 +39,9 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
 
     This version allows you to create, update, and delete user groups, referred to as business user groups in SAP S/4HANA Cloud. However, similar to connector version 1, you cannot create or delete groups of type **authorization** \(business roles in SAP S/4HANA Cloud\). You can only update the role assignments. For more information, see [Groups](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/groups?locale=en-US&version=Cloud).
 
+    > ### Note:  
+    > For groups of the **userGroup** type, a user can have only one assignment at a time. If a user is assigned to a new group of the **userGroup** type, the previous assignment of the same type will be automatically removed, and the user will be exclusively assigned to the newly selected group.
+
 
 
 

@@ -439,7 +439,12 @@ convertCountryCode
 
     Required: Yes
 
-    Possible values: Single value or list of address attributes which will be used. The function requires attribute `country`.
+    Possible values:
+
+    -   Single value or list of address attributes which will be used. The function requires attribute `country`.
+
+    -   `issuingCountry`
+
 
 -   **`outputAttribute`**
 
@@ -617,6 +622,56 @@ In the following transformation example, function *convertCountryRegion* will be
 
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+convertLocaleCode
+
+</td>
+<td valign="top">
+
+-   **`outputFormat`**
+
+    Required: Yes
+
+    Type: String
+
+    Possible values:
+
+    -   `bcp47`
+    -   `iso639`
+
+
+
+
+</td>
+<td valign="top">
+
+This function converts the locale code from the source format into the format required by the target system.
+
+For example, SAP Concur expects locale codes in *BCP 47* format \(like `en-US`, `de-DE`\), while Identity Authentication uses *ISO 639* language codes \(such as `EN`, `DE`\).
+
+> ### Code Syntax:  
+> ```
+> {
+>    "sourcePath":"$.locale",
+>    "targetPath":"$.locale",
+>    "optional":true,
+>    "functions":[
+>       {
+>          "type":"convertLocaleCode",
+>          "outputFormat":"bcp47"
+>       }
+>    ]
+> },
+> ```
+
+When converting from or to *ISO 639*, the function works only with the default language codes used in Identity Authentication. You can view them in the SAP Cloud Identity Services administration console under: *Applications & Resources* \> *Master Data* \> *Languages*. For more information, see [Languages Default Master Data](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/change-master-data-texts-rest-api?version=Cloud#loio3be819bd3a3a498fa287542346a7add0)
+
+Languages that do not have a defined mapping, such as EO \(Esperanto\), IA \(Interlingua\), IO \(Interlingue\), are mapped to English by default.
 
 </td>
 </tr>

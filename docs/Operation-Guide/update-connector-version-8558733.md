@@ -90,12 +90,17 @@ To update your connector to use a new API, proceed as follows:
         </td>
         <td valign="top">
         
-        -   `1` - SAP Concur API \(Version 1\)
+        -   `1` - User v1 API
 
-            > ### Note:  
-            > When the property is not defined - SAP Concur API is used.
+            This is the default value for systems created before versioning was introduced on December 8, 2021.
 
-        -   `2` - SAP Concur SCIM API \(Version 2\)
+        -   `2` - Identity v4 API
+
+            This is the default value for systems created between December 8, 2021, and December 1, 2025.
+
+        -   `3` - SCIM v4 API
+
+            By default, the Identity Provisioning service uses version 3 for all newly created systems starting December 2, 2025, when version 3 was introduced. Systems created earlier continue to follow the previous defaults.
 
 
 
@@ -116,7 +121,7 @@ To update your connector to use a new API, proceed as follows:
         <td valign="top">
         
         -   *1* - SAP Integrated Business Planning API: Business User \(Version 1\) is used. This is the default value.
-        -   *2* - SCIM Interface for IAM \(Version 2\)
+        -   *2* - Identity v4 API \(Version 2\)
 
 
         
@@ -266,7 +271,7 @@ To update your connector to use a new API, proceed as follows:
         </tr>
         </table>
         
-    2.  **Properties with Version-Specific Values** - Update connector properties which have version-specific values.
+    2.  **Properties with Version-Specific Values** - Update connector properties which have version-specific values and configure any new properties introduced in the updated version.
 
 
         <table>
@@ -404,6 +409,67 @@ To update your connector to use a new API, proceed as follows:
             -   `userName`
             -   `emails[0].value`
             -   `externalId`
+
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top" rowspan="2">
+        
+        SAP Concur
+        
+        </td>
+        <td valign="top">
+        
+        `concur.user.unique.attribute` 
+        
+        </td>
+        <td valign="top">
+        
+        Version 1 and 2:
+
+        -   `userName`
+
+        -   `externalId`
+
+
+        Version 3:
+
+        -   `userName`
+
+        -   `externalId`
+
+        -   `urn:ietf:params:scim:schemas:extension:enterprise:2.0:User:employeeNumber`
+
+
+
+        
+        </td>
+        </tr>
+        <tr>
+        <td valign="top">
+        
+        `concur.user.filter` 
+        
+        </td>
+        <td valign="top">
+        
+        Version 1 and 2:
+
+        -   `userName eq "johnsmith@example.com"`
+
+        -   `companyId eq "aa067ada-71a9-4f57-8e98-9300b1c3171d"`
+
+
+        Version 3:
+
+        -   `userName eq "JohnSmith"`
+
+        -   `userName sw "John"`
+
+        -   `urn:ietf:params:scim:schemas:extension:enterprise:2.0:employeeNumber eq "00102345"`
 
 
 

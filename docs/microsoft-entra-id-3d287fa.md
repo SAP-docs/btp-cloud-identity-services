@@ -163,24 +163,28 @@ If you've successfully finished with the initial setup \(described in the **Prer
     <tr>
     <td valign="top">
     
-    `oauth.resource.name`
-    
-    </td>
-    <td valign="top">
-    
-    Enter: **https://graph.microsoft.com**
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     `OAuth2TokenServiceURL`
     
     </td>
     <td valign="top">
     
     Enter: **https://login.microsoftonline.com/<your\_domain\>/oauth2/token**, where `<your_domain>` is the domain name you have set in the `aad.domain.name` property.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    \(Optional\) `aad.oauth2.resource.name`
+    
+    </td>
+    <td valign="top">
+    
+    Specifies the OAuth2 resource name for Microsoft Graph API.
+
+    Enter: **https://graph.microsoft.com**
+
+    You can change the Microsoft Graph endpoint to match your organization's cloud environment. For more information, see [Microsoft Graph national cloud deployments](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fgraph%2Fdeployments).
     
     </td>
     </tr>
@@ -209,6 +213,23 @@ If you've successfully finished with the initial setup \(described in the **Prer
     Use this property to control the number of users to be deleted in a target system by defining a threshold. This will prevent you from accidentally deleting a huge number of users, for example by adding a filter or condition.
 
     For more information, see: [List of Properties](list-of-properties-d6f3577.md)
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    \(Deprecated\) `oauth.resource.name`
+    
+    </td>
+    <td valign="top">
+    
+    Enter: **https://graph.microsoft.com**
+
+    > ### Note:  
+    > The **oauth.resource.name** property has been deprecated, as it is no longer needed by the MS Entra ID connector. Use the **aad.oauth2.resource.name** property instead.
+
+
     
     </td>
     </tr>
