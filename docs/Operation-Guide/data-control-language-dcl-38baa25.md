@@ -10,8 +10,6 @@ Developers define authorization policies in SAP Cloud Identity Services. They us
 
 ## Prerequisites
 
-The following services must be activated in your Cloud Foundry SAP BTP subaccount. Check your services in your subaccount by using `cf marketplace` in the Cloud Foundry command line.
-
 -   Authorization Management is part of the Identity service. You can activate Authorization Management for all applications that are created in SAP Cloud Identity Services.
 
 

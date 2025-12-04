@@ -79,7 +79,7 @@ You can enter up to 1000 passwords in the list. Each password can be up to 256 c
     </tr>
     </table>
     
-5.  **Optional:** nder *Password Exclude List*, choose *Create* and enter the password exclude terms as free text in the field.
+5.  **Optional:** Under *Password Exclude List*, choose *Create* and enter the password exclude terms as free text in the field.
 
     For multiple values, use comma between them.
 
