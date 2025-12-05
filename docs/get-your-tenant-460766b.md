@@ -35,7 +35,9 @@ If you already have a tenant and you purchase additional SAP cloud solutions, yo
 
 -   Your business operates in multiple regions, and your SAP cloud solutions are delivered across these regions. You can request additional SAP Cloud Identity Services tenants in the particular region where other SAP cloud solutions have been licensed.
 
--   Your SAP Cloud Identity Services tenant cannot be used due to restrictions or legal requirements \(such as data residency regulations\). You can request a tenant migration to ensure that user data remains in the specified region or country.
+-   Your SAP Cloud Identity Services tenant cannot be used due to restrictions or legal requirements \(such as data residency regulations\). To ensure that user data remains in the specified region or country, you can request a tenant migration by opening an incident for the `BC-IAM-IDS` component.
+
+    If you use authorizations based on policies, you need to configure them again after the tenant migrates to the new region.
 
 -   You have multiple instances of SAP SuccessFactors. It is not recommended to bundle them with the same SAP Cloud Identity Services tenant. Instead, you can request a dedicated tenant for each SAP SuccessFactors instance through the SAP SuccessFactors Upgrade Center.
 
@@ -57,6 +59,8 @@ There are cases where customer interaction is required. If multiple tenants are 
 > -   Tenant Migration: If the tenants available for selection are not in your desired region, you can request to migrate a specific tenant to your chosen region by opening an incident for the `BC-IAM-IDS` component.
 > 
 >     **Note**: Be aware that tenant migration requires a carefully planned downtime, which varies based on tenant data like the number of users, groups, and applications connected to the tenant.
+> 
+>     If you use authorizations based on policies, you need to configure them again after the tenant migrates to the new region.
 > 
 > -   Multi-Regional Requirements: If your business operates in multiple regions and needs additional tenants, you can request them by following the process described in [Get Additional Tenant](get-your-tenant-460766b.md#loio460766b1b08d48a0b4adfb230c60a001__section_r2y_lhg_hxb). Keep in mind that having a dedicated tenant per region might mean SSO isn't guaranteed out-of-the-box.
 > 

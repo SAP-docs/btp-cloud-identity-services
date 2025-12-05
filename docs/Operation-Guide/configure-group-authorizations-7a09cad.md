@@ -19,6 +19,9 @@ You have enabled the authorizations based on policies option in the admin consol
 > ### Restriction:  
 > This feature is relevant only for the Administration Console application.
 
+> ### Remember:  
+> If your tenant has been migrated to a new region, you need to configure your authorizations based on policies again.
+
 Once it's enabled, it may take up to 60 seconds before the administrator can see the *Authorization Policies* tab when accessing the administration console application. Under the "groups" package the following base policies are visible: `CREATE_GROUPS` , `DELETE_GROUPS`, `MANAGE_GROUPS`, `READ_GROUPS`, and `UPDATE_GROUPS`. You can add users to these policies so that they can have the rights these policies give.
 
 > ### Note:  

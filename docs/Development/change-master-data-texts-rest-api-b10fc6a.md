@@ -1254,13 +1254,14 @@ DA=Danish
 NL=Dutch
 DZ=Dzongkha
 EN=English
+English (United Kingdom)
 EO=Esperanto
 ET=Estonian
 FO=Faroese
 FJ=Fijian
 FI=Finnish
 FR=French
-fr_CA=French (Caanada)
+fr_CA=French (Canada)
 FY=Frisian
 GL=Galician
 KA=Georgian

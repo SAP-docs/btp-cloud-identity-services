@@ -13,6 +13,9 @@ Enable admin authorizations based on policies to configure a granular access con
 
 To be able to configure authorizations based on policies, you must enable the feature via the admin console for SAP Cloud Identity Services. Once it's enabled, it may take up to 60 seconds before the administrator can see the *Authorization Policies* tab when accessing the administration console application.
 
+> ### Remember:  
+> If your tenant has been migrated to a new region, you need to configure your authorizations based on policies again.
+
 
 
 ## Procedure

@@ -22,6 +22,9 @@ Configure granular access control for the Identity Provisioning systems and logs
 > ### Restriction:  
 > This feature is relevant only for the Administration Console application.
 
+> ### Remember:  
+> If your tenant has been migrated to a new region, you need to configure your authorizations based on policies again.
+
 Tenant administrators can assign specific authorizations to users, allowing them to access only source systems, target systems, proxy systems, provisioning logs, or any combination of these. The distribution of responsibilities enables authorized users \(not necessarily administrators\) within your organization to concentrate on their specific areas of access and expertise.
 
 The following authorization policies related to provisioning are available in the Administration Console application under the package name *provisioning*. These policies are non-editable, meaning you cannot add or delete rules \(i.e., restrictions\). You can only assign users to the authorization policy.

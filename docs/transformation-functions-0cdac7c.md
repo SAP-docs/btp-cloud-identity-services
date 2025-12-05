@@ -652,7 +652,7 @@ convertLocaleCode
 
 This function converts the locale code from the source format into the format required by the target system.
 
-For example, SAP Concur expects locale codes in *BCP 47* format \(like `en-US`, `de-DE`\), while Identity Authentication uses *ISO 639* language codes \(such as `EN`, `DE`\).
+For example, SAP Concur \(connector version 3\) expects locale codes in *BCP 47* format \(like `en-US`, `de-DE`\), while Identity Authentication \(connector version 2\) uses *ISO 639* language codes \(such as `EN`, `DE`\).
 
 > ### Code Syntax:  
 > ```

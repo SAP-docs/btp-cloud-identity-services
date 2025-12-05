@@ -19,6 +19,9 @@ You have enabled the authorizations based on policies option in the admin consol
 > ### Restriction:  
 > This feature is relevant only for the Administration Console application.
 
+> ### Remember:  
+> If your tenant has been migrated to a new region, you need to configure your authorizations based on policies again.
+
 Sometimes the administrator authorizations that are predefined in the tenant of SAP Cloud Identity Services aren't enough. The predefined administrator authorizations give unlimited data access. However, you may need to define authorization models with more complex instance restrictions for data access, as is the so-called attribute-based access control \(ABAC\). Administrators define authorization policies with user attributes and assign these policies to other administrators. Thus, one administrator can have access to a subset of the users in the tenant or to a subset of the attributes of the user.
 
 Once it's enabled, it may take up to 60 seconds before the administrator can see the *Authorization Policies* tab when accessing the administration console application. Initially, only the base policies are visible: `CREATE_USERS` , `DELETE_USERS`, `MANAGE_USERS`, `READ_USERS`, `UPDATE_USERS`, `CREATE_SCIM_SCHEMAS`, `DELETE_SCIM_SCHEMAS`, `MANAGE_SCIM_SCHEMAS`, `READ_SCIM_SCHEMAS`, `CREATE_GROUPS`, `DELETE_GROUPS`, `MANAGE_GROUPS`, `READ_GROUPS`, and `UPDATE_GROUPS`. You can create new authorization policies on the base of these policies and assign them to administrators.

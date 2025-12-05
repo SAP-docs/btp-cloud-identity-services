@@ -12,6 +12,8 @@ A customer or partner account is associated with a particular data center and th
 
 > ### Note:  
 > In cases of significant performance issues or latency, you can request a tenant migration to a new region by reporting an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`.
+> 
+> If you use authorizations based on policies, you need to configure them again after the tenant migrates to the new region.
 
 Country/regions with more than one data centers operate in high availability \(HA\) mode among the respective data centers. Tenants located in these country/regions are distributed among the data centers there.
 
