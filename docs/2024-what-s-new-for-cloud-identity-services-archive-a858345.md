@@ -50,21 +50,6 @@ Type
 </th>
 <th valign="top">
 
-Line of Business
-
-</th>
-<th valign="top">
-
-Modular Business Process
-
-</th>
-<th valign="top">
-
-Product
-
-</th>
-<th valign="top">
-
 Latest Revision
 
 </th>
@@ -76,6 +61,11 @@ Valid as Of
 <th valign="top">
 
 Version
+
+</th>
+<th valign="top">
+
+Scope
 
 </th>
 </tr>
@@ -121,21 +111,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-12-19
 
 </td>
@@ -147,6 +122,11 @@ Cloud Identity Services
 <td valign="top">
 
 27170
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -192,21 +172,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-12-17
 
 </td>
@@ -218,6 +183,11 @@ Cloud Identity Services
 <td valign="top">
 
 27156
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -263,21 +233,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-12-17
 
 </td>
@@ -289,6 +244,11 @@ Cloud Identity Services
 <td valign="top">
 
 27156
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -334,21 +294,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-12-17
 
 </td>
@@ -360,6 +305,11 @@ Cloud Identity Services
 <td valign="top">
 
 27156
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -407,21 +357,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-12-17
 
 </td>
@@ -433,6 +368,11 @@ Cloud Identity Services
 <td valign="top">
 
 27156
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -480,21 +420,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-12-17
 
 </td>
@@ -506,6 +431,11 @@ Cloud Identity Services
 <td valign="top">
 
 27156
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -553,21 +483,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-12-17
 
 </td>
@@ -579,6 +494,11 @@ Cloud Identity Services
 <td valign="top">
 
 27156
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -620,21 +540,6 @@ General Availability
 <td valign="top">
 
 New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
 
 </td>
 <td valign="top">
@@ -652,6 +557,11 @@ Cloud Identity Services
 27143
 
 </td>
+<td valign="top">
+
+ 
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -695,21 +605,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-12-12
 
 </td>
@@ -721,6 +616,11 @@ Cloud Identity Services
 <td valign="top">
 
 27127
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -768,21 +668,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-12-09
 
 </td>
@@ -794,6 +679,11 @@ Cloud Identity Services
 <td valign="top">
 
 2413b
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -839,21 +729,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-12-03
 
 </td>
@@ -865,6 +740,11 @@ Cloud Identity Services
 <td valign="top">
 
 27127
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -910,21 +790,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-12-03
 
 </td>
@@ -936,6 +801,11 @@ Cloud Identity Services
 <td valign="top">
 
 27127
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -983,21 +853,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-12-03
 
 </td>
@@ -1009,6 +864,11 @@ Cloud Identity Services
 <td valign="top">
 
 27084
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1056,21 +916,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-12-03
 
 </td>
@@ -1082,6 +927,11 @@ Cloud Identity Services
 <td valign="top">
 
 27084
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1129,21 +979,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-12-03
 
 </td>
@@ -1155,6 +990,11 @@ Cloud Identity Services
 <td valign="top">
 
 27084
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1202,21 +1042,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-12-03
 
 </td>
@@ -1228,6 +1053,11 @@ Cloud Identity Services
 <td valign="top">
 
 27084
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1273,21 +1103,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-11-19
 
 </td>
@@ -1299,6 +1114,11 @@ Cloud Identity Services
 <td valign="top">
 
 26995
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1346,21 +1166,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-11-19
 
 </td>
@@ -1372,6 +1177,11 @@ Cloud Identity Services
 <td valign="top">
 
 26995
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1419,21 +1229,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-11-11
 
 </td>
@@ -1445,6 +1240,11 @@ Cloud Identity Services
 <td valign="top">
 
 26936
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1490,21 +1290,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-11-05
 
 </td>
@@ -1516,6 +1301,11 @@ Cloud Identity Services
 <td valign="top">
 
 26936
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1563,21 +1353,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-11-05
 
 </td>
@@ -1589,6 +1364,11 @@ Cloud Identity Services
 <td valign="top">
 
 26936
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1634,21 +1414,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-11-05
 
 </td>
@@ -1660,6 +1425,11 @@ Cloud Identity Services
 <td valign="top">
 
 26936
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1712,21 +1482,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-11-05
 
 </td>
@@ -1738,6 +1493,11 @@ Cloud Identity Services
 <td valign="top">
 
 26936
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1787,25 +1547,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Neo
-
-Kyma
-
-Cloud Foundry
-
-</td>
-<td valign="top">
-
 2024-11-05
 
 </td>
@@ -1817,6 +1558,11 @@ Cloud Foundry
 <td valign="top">
 
 26936
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1871,21 +1617,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-10-31
 
 </td>
@@ -1897,6 +1628,11 @@ Cloud Identity Services
 <td valign="top">
 
 26835
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1944,21 +1680,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-10-31
 
 </td>
@@ -1970,6 +1691,11 @@ Cloud Identity Services
 <td valign="top">
 
 26835
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2035,21 +1761,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-10-30
 
 </td>
@@ -2061,6 +1772,11 @@ Cloud Identity Services
 <td valign="top">
 
 26835
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2114,21 +1830,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-10-23
 
 </td>
@@ -2140,6 +1841,11 @@ Cloud Identity Services
 <td valign="top">
 
 26835
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2187,21 +1893,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-10-23
 
 </td>
@@ -2213,6 +1904,11 @@ Cloud Identity Services
 <td valign="top">
 
 26835
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2258,21 +1954,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-10-22
 
 </td>
@@ -2284,6 +1965,11 @@ Cloud Identity Services
 <td valign="top">
 
 26835
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2329,21 +2015,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-10-22
 
 </td>
@@ -2355,6 +2026,11 @@ Cloud Identity Services
 <td valign="top">
 
 26835
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2400,21 +2076,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-10-22
 
 </td>
@@ -2426,6 +2087,11 @@ Cloud Identity Services
 <td valign="top">
 
 26835
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2473,21 +2139,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-10-22
 
 </td>
@@ -2499,6 +2150,11 @@ Cloud Identity Services
 <td valign="top">
 
 26835
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2553,21 +2209,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-10-22
 
 </td>
@@ -2579,6 +2220,11 @@ Cloud Identity Services
 <td valign="top">
 
 26835
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2626,21 +2272,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-10-22
 
 </td>
@@ -2652,6 +2283,11 @@ Cloud Identity Services
 <td valign="top">
 
 26835
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2711,21 +2347,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-10-10
 
 </td>
@@ -2737,6 +2358,11 @@ Cloud Identity Services
 <td valign="top">
 
 26753
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2796,21 +2422,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-10-09
 
 </td>
@@ -2822,6 +2433,11 @@ Cloud Identity Services
 <td valign="top">
 
 26753
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2867,21 +2483,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-10-08
 
 </td>
@@ -2893,6 +2494,11 @@ Cloud Identity Services
 <td valign="top">
 
 26753
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2938,21 +2544,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-09-25
 
 </td>
@@ -2964,6 +2555,11 @@ Cloud Identity Services
 <td valign="top">
 
 26738
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3009,21 +2605,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-09-25
 
 </td>
@@ -3035,6 +2616,11 @@ Cloud Identity Services
 <td valign="top">
 
 26701
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3080,21 +2666,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-09-25
 
 </td>
@@ -3106,6 +2677,11 @@ Cloud Identity Services
 <td valign="top">
 
 26701
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3151,21 +2727,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-09-25
 
 </td>
@@ -3177,6 +2738,11 @@ Cloud Identity Services
 <td valign="top">
 
 26701
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3222,21 +2788,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-09-25
 
 </td>
@@ -3248,6 +2799,11 @@ Cloud Identity Services
 <td valign="top">
 
 26701
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3302,21 +2858,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-09-25
 
 </td>
@@ -3328,6 +2869,11 @@ Cloud Identity Services
 <td valign="top">
 
 26701
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3382,21 +2928,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-09-25
 
 </td>
@@ -3408,6 +2939,11 @@ Cloud Identity Services
 <td valign="top">
 
 26701
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3462,21 +2998,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-09-25
 
 </td>
@@ -3488,6 +3009,11 @@ Cloud Identity Services
 <td valign="top">
 
 26701
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3535,21 +3061,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-09-25
 
 </td>
@@ -3561,6 +3072,11 @@ Cloud Identity Services
 <td valign="top">
 
 26701
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3610,21 +3126,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-09-25
 
 </td>
@@ -3636,6 +3137,11 @@ Cloud Identity Services
 <td valign="top">
 
 26701
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3685,21 +3191,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-09-25
 
 </td>
@@ -3711,6 +3202,11 @@ Cloud Identity Services
 <td valign="top">
 
 26701
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3760,21 +3256,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-09-25
 
 </td>
@@ -3786,6 +3267,11 @@ Cloud Identity Services
 <td valign="top">
 
 26701
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3833,21 +3319,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-09-25
 
 </td>
@@ -3859,6 +3330,11 @@ Cloud Identity Services
 <td valign="top">
 
 26701
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3918,21 +3394,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-09-19
 
 </td>
@@ -3943,7 +3404,12 @@ Cloud Identity Services
 </td>
 <td valign="top">
 
+26638
 
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3989,21 +3455,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-09-11
 
 </td>
@@ -4015,6 +3466,11 @@ Cloud Identity Services
 <td valign="top">
 
 26638
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4060,21 +3516,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-09-10
 
 </td>
@@ -4086,6 +3527,11 @@ Cloud Identity Services
 <td valign="top">
 
 26636
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4131,21 +3577,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-09-10
 
 </td>
@@ -4157,6 +3588,11 @@ Cloud Identity Services
 <td valign="top">
 
 26636
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4204,21 +3640,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-09-10
 
 </td>
@@ -4230,6 +3651,11 @@ Cloud Identity Services
 <td valign="top">
 
 26636
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4284,21 +3710,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-09-10
 
 </td>
@@ -4310,6 +3721,11 @@ Cloud Identity Services
 <td valign="top">
 
 26636
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4357,21 +3773,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
 2024-09-10
 
 </td>
@@ -4383,6 +3784,11 @@ Not applicable
 <td valign="top">
 
 26636
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4427,21 +3833,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-09-03
 
 </td>
@@ -4453,6 +3844,11 @@ Cloud Identity Services
 <td valign="top">
 
 26612
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4498,21 +3894,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-08-27
 
 </td>
@@ -4524,6 +3905,11 @@ Cloud Identity Services
 <td valign="top">
 
 26573
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4583,21 +3969,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-08-21
 
 </td>
@@ -4609,6 +3980,11 @@ Cloud Identity Services
 <td valign="top">
 
 26537
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4654,21 +4030,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-08-20
 
 </td>
@@ -4680,6 +4041,11 @@ Cloud Identity Services
 <td valign="top">
 
 26537
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4725,21 +4091,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-08-20
 
 </td>
@@ -4751,6 +4102,11 @@ Cloud Identity Services
 <td valign="top">
 
 26537
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4796,21 +4152,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-08-20
 
 </td>
@@ -4822,6 +4163,11 @@ Cloud Identity Services
 <td valign="top">
 
 26537
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4867,21 +4213,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-08-20
 
 </td>
@@ -4893,6 +4224,11 @@ Cloud Identity Services
 <td valign="top">
 
 26537
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4950,21 +4286,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-08-20
 
 </td>
@@ -4976,6 +4297,11 @@ Cloud Identity Services
 <td valign="top">
 
 26537
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5023,21 +4349,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-08-20
 
 </td>
@@ -5049,6 +4360,11 @@ Cloud Identity Services
 <td valign="top">
 
 26537
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5096,21 +4412,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-08-20
 
 </td>
@@ -5122,6 +4423,11 @@ Cloud Identity Services
 <td valign="top">
 
 26537
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5169,21 +4475,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-08-20
 
 </td>
@@ -5195,6 +4486,11 @@ Cloud Identity Services
 <td valign="top">
 
 26537
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5249,21 +4545,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-08-14
 
 </td>
@@ -5275,6 +4556,11 @@ Cloud Identity Services
 <td valign="top">
 
 26537
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5328,21 +4614,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-08-14
 
 </td>
@@ -5354,6 +4625,11 @@ Cloud Identity Services
 <td valign="top">
 
 26537
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5399,21 +4675,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-07-30
 
 </td>
@@ -5425,6 +4686,11 @@ Cloud Identity Services
 <td valign="top">
 
 26445
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5470,21 +4736,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-07-26
 
 </td>
@@ -5496,6 +4747,11 @@ Cloud Identity Services
 <td valign="top">
 
 26436
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5541,21 +4797,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-07-26
 
 </td>
@@ -5567,6 +4808,11 @@ Cloud Identity Services
 <td valign="top">
 
 26436
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5612,21 +4858,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-07-26
 
 </td>
@@ -5638,6 +4869,11 @@ Cloud Identity Services
 <td valign="top">
 
 26436
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5685,21 +4921,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-07-25
 
 </td>
@@ -5711,6 +4932,11 @@ Cloud Identity Services
 <td valign="top">
 
 26387
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5758,21 +4984,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-07-23
 
 </td>
@@ -5784,6 +4995,11 @@ Cloud Identity Services
 <td valign="top">
 
 26387
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5829,21 +5045,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-07-17
 
 </td>
@@ -5855,6 +5056,11 @@ Cloud Identity Services
 <td valign="top">
 
 26387
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5909,21 +5115,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-07-17
 
 </td>
@@ -5935,6 +5126,11 @@ Cloud Identity Services
 <td valign="top">
 
 26387
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5996,21 +5192,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-07-17
 
 </td>
@@ -6022,6 +5203,11 @@ Cloud Identity Services
 <td valign="top">
 
 26387
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -6067,21 +5253,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-07-17
 
 </td>
@@ -6093,6 +5264,11 @@ Cloud Identity Services
 <td valign="top">
 
 26387
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -6140,21 +5316,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-07-17
 
 </td>
@@ -6166,6 +5327,11 @@ Cloud Identity Services
 <td valign="top">
 
 26387
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -6220,21 +5386,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-07-17
 
 </td>
@@ -6246,6 +5397,11 @@ Cloud Identity Services
 <td valign="top">
 
 26387
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -6304,21 +5460,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-07-17
 
 </td>
@@ -6330,6 +5471,11 @@ Cloud Identity Services
 <td valign="top">
 
 26387
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -6375,21 +5521,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-07-17
 
 </td>
@@ -6401,6 +5532,11 @@ Cloud Identity Services
 <td valign="top">
 
 26387
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -6450,21 +5586,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-07-17
 
 </td>
@@ -6476,6 +5597,11 @@ Cloud Identity Services
 <td valign="top">
 
 26387
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -6536,21 +5662,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-07-17
 
 </td>
@@ -6562,6 +5673,11 @@ Cloud Identity Services
 <td valign="top">
 
 26387
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -6607,21 +5723,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-07-02
 
 </td>
@@ -6633,6 +5734,11 @@ Cloud Identity Services
 <td valign="top">
 
 26327
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -6687,21 +5793,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-07-02
 
 </td>
@@ -6713,6 +5804,11 @@ Cloud Identity Services
 <td valign="top">
 
 26327
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -6767,21 +5863,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-07-02
 
 </td>
@@ -6793,6 +5874,11 @@ Cloud Identity Services
 <td valign="top">
 
 26327
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -6840,21 +5926,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-07-02
 
 </td>
@@ -6866,6 +5937,11 @@ Cloud Identity Services
 <td valign="top">
 
 26327
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -6913,21 +5989,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-07-02
 
 </td>
@@ -6939,6 +6000,11 @@ Cloud Identity Services
 <td valign="top">
 
 26327
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -6984,21 +6050,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-06-25
 
 </td>
@@ -7010,6 +6061,11 @@ Cloud Identity Services
 <td valign="top">
 
 26281
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -7055,21 +6111,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-06-20
 
 </td>
@@ -7081,6 +6122,11 @@ Cloud Identity Services
 <td valign="top">
 
 26260
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -7128,21 +6174,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-06-20
 
 </td>
@@ -7154,6 +6185,11 @@ Cloud Identity Services
 <td valign="top">
 
 26260
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -7208,21 +6244,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-06-20
 
 </td>
@@ -7234,6 +6255,11 @@ Cloud Identity Services
 <td valign="top">
 
 26260
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -7279,21 +6305,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-06-14
 
 </td>
@@ -7305,6 +6316,11 @@ Cloud Identity Services
 <td valign="top">
 
 26230
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -7352,21 +6368,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-06-14
 
 </td>
@@ -7378,6 +6379,11 @@ Cloud Identity Services
 <td valign="top">
 
 26230
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -7423,21 +6429,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-06-05
 
 </td>
@@ -7449,6 +6440,11 @@ Cloud Identity Services
 <td valign="top">
 
 26181
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -7503,21 +6499,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
 2024-06-05
 
 </td>
@@ -7529,6 +6510,11 @@ Not applicable
 <td valign="top">
 
 26181
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -7576,21 +6562,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
- 
-
-</td>
-<td valign="top">
-
 2024-06-05
 
 </td>
@@ -7602,6 +6573,11 @@ Not applicable
 <td valign="top">
 
 26181
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -7649,21 +6625,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-06-05
 
 </td>
@@ -7675,6 +6636,11 @@ Cloud Identity Services
 <td valign="top">
 
 26181
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -7720,21 +6686,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-06-05
 
 </td>
@@ -7746,6 +6697,11 @@ Cloud Identity Services
 <td valign="top">
 
 26181
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -7791,21 +6747,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-06-05
 
 </td>
@@ -7817,6 +6758,11 @@ Cloud Identity Services
 <td valign="top">
 
 26181
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -7864,21 +6810,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-06-05
 
 </td>
@@ -7890,6 +6821,11 @@ Cloud Identity Services
 <td valign="top">
 
 26181
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -7935,21 +6871,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-05-22
 
 </td>
@@ -7961,6 +6882,11 @@ Cloud Identity Services
 <td valign="top">
 
 26120
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -8006,21 +6932,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-05-22
 
 </td>
@@ -8032,6 +6943,11 @@ Cloud Identity Services
 <td valign="top">
 
 26120
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -8077,21 +6993,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-05-22
 
 </td>
@@ -8103,6 +7004,11 @@ Cloud Identity Services
 <td valign="top">
 
 26120
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -8148,21 +7054,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-05-22
 
 </td>
@@ -8174,6 +7065,11 @@ Cloud Identity Services
 <td valign="top">
 
 26120
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -8221,21 +7117,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-05-22
 
 </td>
@@ -8247,6 +7128,11 @@ Cloud Identity Services
 <td valign="top">
 
 26120
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -8296,21 +7182,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-05-22
 
 </td>
@@ -8322,6 +7193,11 @@ Cloud Identity Services
 <td valign="top">
 
 26120
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -8376,21 +7252,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-05-22
 
 </td>
@@ -8402,6 +7263,11 @@ Cloud Identity Services
 <td valign="top">
 
 26120
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -8449,21 +7315,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-05-08
 
 </td>
@@ -8475,6 +7326,11 @@ Cloud Identity Services
 <td valign="top">
 
 26053
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -8520,21 +7376,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-05-08
 
 </td>
@@ -8546,6 +7387,11 @@ Cloud Identity Services
 <td valign="top">
 
 26053
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -8591,21 +7437,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-05-08
 
 </td>
@@ -8617,6 +7448,11 @@ Cloud Identity Services
 <td valign="top">
 
 26053
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -8662,21 +7498,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-05-08
 
 </td>
@@ -8688,6 +7509,11 @@ Cloud Identity Services
 <td valign="top">
 
 26053
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -8733,21 +7559,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-04-25
 
 </td>
@@ -8759,6 +7570,11 @@ Cloud Identity Services
 <td valign="top">
 
 26003
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -8804,21 +7620,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-04-25
 
 </td>
@@ -8830,6 +7631,11 @@ Cloud Identity Services
 <td valign="top">
 
 26003
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -8875,21 +7681,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-04-25
 
 </td>
@@ -8901,6 +7692,11 @@ Cloud Identity Services
 <td valign="top">
 
 26003
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -8946,21 +7742,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-04-25
 
 </td>
@@ -8972,6 +7753,11 @@ Cloud Identity Services
 <td valign="top">
 
 26003
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -9017,21 +7803,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-04-25
 
 </td>
@@ -9043,6 +7814,11 @@ Cloud Identity Services
 <td valign="top">
 
 26003
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -9088,21 +7864,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-04-25
 
 </td>
@@ -9114,6 +7875,11 @@ Cloud Identity Services
 <td valign="top">
 
 26003
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -9159,21 +7925,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-04-25
 
 </td>
@@ -9185,6 +7936,11 @@ Cloud Identity Services
 <td valign="top">
 
 26003
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -9230,21 +7986,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-04-25
 
 </td>
@@ -9256,6 +7997,11 @@ Cloud Identity Services
 <td valign="top">
 
 26003
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -9305,21 +8051,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-04-25
 
 </td>
@@ -9331,6 +8062,11 @@ Cloud Identity Services
 <td valign="top">
 
 26003
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -9382,21 +8118,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-04-25
 
 </td>
@@ -9408,6 +8129,11 @@ Cloud Identity Services
 <td valign="top">
 
 26003
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -9455,21 +8181,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-04-25
 
 </td>
@@ -9481,6 +8192,11 @@ Cloud Identity Services
 <td valign="top">
 
 26003
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -9526,21 +8242,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-04-10
 
 </td>
@@ -9552,6 +8253,11 @@ Cloud Identity Services
 <td valign="top">
 
 25926
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -9597,21 +8303,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-04-10
 
 </td>
@@ -9623,6 +8314,11 @@ Cloud Identity Services
 <td valign="top">
 
 25926
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -9679,21 +8375,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-04-10
 
 </td>
@@ -9705,6 +8386,11 @@ Cloud Identity Services
 <td valign="top">
 
 25926
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -9759,21 +8445,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-04-10
 
 </td>
@@ -9785,6 +8456,11 @@ Cloud Identity Services
 <td valign="top">
 
 25926
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -9830,21 +8506,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
 2024-03-27
 
 </td>
@@ -9856,6 +8517,11 @@ Cloud Identity Services
 <td valign="top">
 
 25853
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -9901,21 +8567,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-03-27
 
 </td>
@@ -9927,6 +8578,11 @@ Cloud Identity Services
 <td valign="top">
 
 25853
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -9972,21 +8628,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-03-27
 
 </td>
@@ -9998,6 +8639,11 @@ Cloud Identity Services
 <td valign="top">
 
 25853
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -10043,21 +8689,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-03-27
 
 </td>
@@ -10069,6 +8700,11 @@ Cloud Identity Services
 <td valign="top">
 
 25853
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -10114,21 +8750,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-03-27
 
 </td>
@@ -10140,6 +8761,11 @@ Cloud Identity Services
 <td valign="top">
 
 25853
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -10187,21 +8813,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-03-20
 
 </td>
@@ -10213,6 +8824,11 @@ Cloud Identity Services
 <td valign="top">
 
 25820
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -10258,21 +8874,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-03-20
 
 </td>
@@ -10286,75 +8887,9 @@ Cloud Identity Services
 25820
 
 </td>
-</tr>
-<tr>
 <td valign="top">
 
-Cloud Identity Services 
-
-</td>
-<td valign="top">
-
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-Off-Cycle Upgrade
-
-</td>
-<td valign="top">
-
-Identity Authentication has been upgraded.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
-2024-03-15
-
-</td>
-<td valign="top">
-
-2024-03-15
-
-</td>
-<td valign="top">
-
-25801
+ 
 
 </td>
 </tr>
@@ -10400,17 +8935,63 @@ New
 </td>
 <td valign="top">
 
-Technology
+2024-03-15
 
 </td>
 <td valign="top">
 
-Not applicable
+2024-03-15
 
 </td>
 <td valign="top">
 
-Cloud Identity Services
+25801
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+Off-Cycle Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
 
 </td>
 <td valign="top">
@@ -10426,6 +9007,11 @@ Cloud Identity Services
 <td valign="top">
 
 25801
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -10471,21 +9057,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-03-12
 
 </td>
@@ -10497,6 +9068,11 @@ Cloud Identity Services
 <td valign="top">
 
 25778
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -10542,21 +9118,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-03-12
 
 </td>
@@ -10568,6 +9129,11 @@ Cloud Identity Services
 <td valign="top">
 
 25778
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -10613,21 +9179,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-03-12
 
 </td>
@@ -10639,6 +9190,11 @@ Cloud Identity Services
 <td valign="top">
 
 25778
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -10684,21 +9240,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-03-12
 
 </td>
@@ -10710,6 +9251,11 @@ Cloud Identity Services
 <td valign="top">
 
 25778
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -10755,21 +9301,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-02-28
 
 </td>
@@ -10781,6 +9312,11 @@ Cloud Identity Services
 <td valign="top">
 
 25719
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -10826,21 +9362,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-02-28
 
 </td>
@@ -10852,6 +9373,11 @@ Cloud Identity Services
 <td valign="top">
 
 25719
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -10897,21 +9423,6 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-02-28
 
 </td>
@@ -10923,6 +9434,11 @@ Cloud Identity Services
 <td valign="top">
 
 25719
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -10968,21 +9484,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-02-13
 
 </td>
@@ -10994,6 +9495,11 @@ Cloud Identity Services
 <td valign="top">
 
 25639
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -11039,21 +9545,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-02-13
 
 </td>
@@ -11065,6 +9556,11 @@ Cloud Identity Services
 <td valign="top">
 
 25639
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -11110,21 +9606,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-02-06
 
 </td>
@@ -11136,6 +9617,11 @@ Cloud Identity Services
 <td valign="top">
 
 25596
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -11181,21 +9667,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-01-30
 
 </td>
@@ -11207,6 +9678,11 @@ Cloud Identity Services
 <td valign="top">
 
 25565
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -11252,21 +9728,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-01-30
 
 </td>
@@ -11278,6 +9739,11 @@ Cloud Identity Services
 <td valign="top">
 
 25565
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -11323,21 +9789,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-01-30
 
 </td>
@@ -11349,6 +9800,11 @@ Cloud Identity Services
 <td valign="top">
 
 25565
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -11394,21 +9850,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-01-24
 
 </td>
@@ -11420,6 +9861,11 @@ Cloud Identity Services
 <td valign="top">
 
 25529
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -11465,21 +9911,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-01-17
 
 </td>
@@ -11491,6 +9922,11 @@ Cloud Identity Services
 <td valign="top">
 
 25497
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -11536,21 +9972,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-01-17
 
 </td>
@@ -11562,6 +9983,11 @@ Cloud Identity Services
 <td valign="top">
 
 25497
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -11607,21 +10033,6 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-01-17
 
 </td>
@@ -11633,6 +10044,11 @@ Cloud Identity Services
 <td valign="top">
 
 25497
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -11684,27 +10100,17 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-01-11
 
 </td>
 <td valign="top">
 
 2024-01-11
+
+</td>
+<td valign="top">
+
+25446
 
 </td>
 <td valign="top">
@@ -11755,21 +10161,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2024-01-04
 
 </td>
@@ -11781,6 +10172,11 @@ Cloud Identity Services
 <td valign="top">
 
 25446
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>

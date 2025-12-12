@@ -732,6 +732,8 @@ To create SAP Concur as a proxy system, proceed as follows:
 
     **Identity v4 API**: [Identity v4](https://developer.concur.com/api-reference/profile/v4.identity.html)
 
+    **SCIM v4 API**: [SCIM v4 API](https://developer.concur.com/api-reference/profile/v4.scim.html)
+
     > ### Tip:  
     > The proxy *Read Transformation* is used when the external client application \(for example, SAP Identity Management\) makes initial load. That is, executing GET requests to the resource endpoints \(**/Users** or **/Groups**\) to retrieve the corresponding entities of the particular type. The external client application can also execute GET requests to a single resource endpoint \(querying a single resource is supported\). In this case, the proxy system acts as a *source* one.
     > 

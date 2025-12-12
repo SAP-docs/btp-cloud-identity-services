@@ -753,6 +753,8 @@ To create SAP Concur as a target system, proceed as follows:
 
     **Identity v4 API**: [Identity v4](https://developer.concur.com/api-reference/profile/v4.identity.html)
 
+    **SCIM v4 API**: [SCIM v4 API](https://developer.concur.com/api-reference/profile/v4.scim.html)
+
     **Default transformation when using User v1 API \(connector version 1\):**
 
     > ### Code Syntax:  

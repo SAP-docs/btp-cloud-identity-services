@@ -69,5 +69,5 @@ The @valueHelp annotation can be used in two modes:
 
 The fields `path`, `valueField`, `labelField`, and `filters` are optional. They check whether the values have a correct data type. Additional fields are not permitted.
 
-The full feature description for value help is located here  <?sap-ot O2O class="- topic/xref " href="b6d9b3a4510d43afa9308e7da9c7147a.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/wbz1500991557538/loio629f7cb06f6947988dcaf8bedbe45873_en-US/src/content/localization/en-us/b509b73f65c1426d846ce9215c0a09c0.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+The full feature description for value help is located here loiob6d9b3a4510d43afa9308e7da9c7147a.
 

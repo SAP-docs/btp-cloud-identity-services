@@ -54,21 +54,6 @@ Type
 </th>
 <th valign="top">
 
-Line of Business
-
-</th>
-<th valign="top">
-
-Modular Business Process
-
-</th>
-<th valign="top">
-
-Product
-
-</th>
-<th valign="top">
-
 Latest Revision
 
 </th>
@@ -77,6 +62,16 @@ Latest Revision
 Valid as Of
 
 </th>
+<th valign="top">
+
+Version
+
+</th>
+<th valign="top">
+
+Scope
+
+</th>
 </tr>
 <tr>
 <td valign="top">
@@ -120,27 +115,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-12-19
 
 </td>
 <td valign="top">
 
 2023-12-19
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -186,27 +176,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-12-19
 
 </td>
 <td valign="top">
 
 2023-12-19
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -252,27 +237,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-12-19
 
 </td>
 <td valign="top">
 
 2023-12-19
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -318,27 +298,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-12-19
 
 </td>
 <td valign="top">
 
 2023-12-19
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -384,27 +359,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-12-12
 
 </td>
 <td valign="top">
 
 2023-12-12
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -450,27 +420,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-12-06
 
 </td>
 <td valign="top">
 
 2023-12-06
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -512,21 +477,6 @@ General Availability
 <td valign="top">
 
 New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
 
 </td>
 <td valign="top">
@@ -537,6 +487,16 @@ Cloud Identity Services
 <td valign="top">
 
 2023-11-27
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -582,27 +542,22 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-11-28
 
 </td>
 <td valign="top">
 
 2023-11-27
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -654,27 +609,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-11-28
 
 </td>
 <td valign="top">
 
 2023-11-27
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -720,27 +670,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-11-08
 
 </td>
 <td valign="top">
 
 2023-11-08
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -786,27 +731,22 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-11-08
 
 </td>
 <td valign="top">
 
 2023-11-08
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -852,27 +792,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-11-02
 
 </td>
 <td valign="top">
 
 2023-11-02
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -918,27 +853,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-11-02
 
 </td>
 <td valign="top">
 
 2023-11-02
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -994,27 +924,22 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-11-02
 
 </td>
 <td valign="top">
 
 2023-11-02
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1060,27 +985,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-11-02
 
 </td>
 <td valign="top">
 
 2023-11-02
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1126,27 +1046,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-11-02
 
 </td>
 <td valign="top">
 
 2023-11-02
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1192,27 +1107,22 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-11-02
 
 </td>
 <td valign="top">
 
 2023-11-02
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1258,27 +1168,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-10-11
 
 </td>
 <td valign="top">
 
 2023-10-11
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1324,27 +1229,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-10-11
 
 </td>
 <td valign="top">
 
 2023-10-11
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1396,27 +1296,22 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-10-11
 
 </td>
 <td valign="top">
 
 2023-10-11
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1462,27 +1357,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-10-11
 
 </td>
 <td valign="top">
 
 2023-10-11
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1528,27 +1418,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-09-28
 
 </td>
 <td valign="top">
 
 2023-09-27
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1594,27 +1479,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-09-28
 
 </td>
 <td valign="top">
 
 2023-09-27
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1660,27 +1540,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-09-07
 
 </td>
 <td valign="top">
 
 2023-09-07
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1726,27 +1601,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-08-30
 
 </td>
 <td valign="top">
 
 2023-08-30
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1792,27 +1662,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-08-30
 
 </td>
 <td valign="top">
 
 2023-08-30
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1858,27 +1723,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-08-18
 
 </td>
 <td valign="top">
 
 2023-08-17
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1924,27 +1784,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-08-16
 
 </td>
 <td valign="top">
 
 2023-08-16
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -1990,27 +1845,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-08-16
 
 </td>
 <td valign="top">
 
 2023-08-16
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2070,27 +1920,22 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-11-22
 
 </td>
 <td valign="top">
 
 2023-11-22
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2147,27 +1992,22 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-11-22
 
 </td>
 <td valign="top">
 
 2023-11-22
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2213,27 +2053,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-08-03
 
 </td>
 <td valign="top">
 
 2023-08-02
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2279,27 +2114,22 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-08-09
 
 </td>
 <td valign="top">
 
 2023-08-30
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2345,27 +2175,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-08-03
 
 </td>
 <td valign="top">
 
 2023-08-02
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2411,27 +2236,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-08-03
 
 </td>
 <td valign="top">
 
 2023-08-02
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2479,27 +2299,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-08-03
 
 </td>
 <td valign="top">
 
 2023-08-02
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2545,27 +2360,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-07-28
 
 </td>
 <td valign="top">
 
 2023-07-28
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2611,27 +2421,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-07-19
 
 </td>
 <td valign="top">
 
 2023-07-19
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2677,27 +2482,22 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-07-19
 
 </td>
 <td valign="top">
 
 2023-07-19
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2743,27 +2543,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-07-19
 
 </td>
 <td valign="top">
 
 2023-07-19
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2809,27 +2604,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-07-19
 
 </td>
 <td valign="top">
 
 2023-07-19
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2875,27 +2665,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-07-19
 
 </td>
 <td valign="top">
 
 2023-07-19
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -2941,27 +2726,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-07-12
 
 </td>
 <td valign="top">
 
 2023-07-05
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3007,27 +2787,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-07-12
 
 </td>
 <td valign="top">
 
 2023-07-05
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3073,27 +2848,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-07-12
 
 </td>
 <td valign="top">
 
 2023-07-05
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3139,27 +2909,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-07-12
 
 </td>
 <td valign="top">
 
 2023-07-05
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3205,27 +2970,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-07-12
 
 </td>
 <td valign="top">
 
 2023-07-05
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3271,27 +3031,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-06-29
 
 </td>
 <td valign="top">
 
 2023-06-28
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3337,27 +3092,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-06-29
 
 </td>
 <td valign="top">
 
 2023-06-28
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3403,27 +3153,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-06-09
 
 </td>
 <td valign="top">
 
 2023-06-08
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3469,27 +3214,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-06-09
 
 </td>
 <td valign="top">
 
 2023-06-08
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3535,27 +3275,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-06-09
 
 </td>
 <td valign="top">
 
 2023-06-08
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3601,27 +3336,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-05-25
 
 </td>
 <td valign="top">
 
 2023-05-25
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3667,27 +3397,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-05-25
 
 </td>
 <td valign="top">
 
 2023-05-25
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3733,27 +3458,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-05-17
 
 </td>
 <td valign="top">
 
 2023-05-17
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3799,27 +3519,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-05-11
 
 </td>
 <td valign="top">
 
 2023-05-11
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3865,27 +3580,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-05-11
 
 </td>
 <td valign="top">
 
 2023-05-11
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3931,27 +3641,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-05-04
 
 </td>
 <td valign="top">
 
 2023-05-04
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -3997,27 +3702,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-04-27
 
 </td>
 <td valign="top">
 
 2023-04-27
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4063,27 +3763,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-04-20
 
 </td>
 <td valign="top">
 
 2023-04-20
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4133,27 +3828,22 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-04-20
 
 </td>
 <td valign="top">
 
 2023-04-20
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4201,27 +3891,22 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-04-20
 
 </td>
 <td valign="top">
 
 2023-04-20
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4269,27 +3954,22 @@ Announcement
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-04-13
 
 </td>
 <td valign="top">
 
 2023-04-13
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4335,27 +4015,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-04-13
 
 </td>
 <td valign="top">
 
 2023-04-13
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4401,27 +4076,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-04-04
 
 </td>
 <td valign="top">
 
 2023-04-04
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4467,27 +4137,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-03-31
 
 </td>
 <td valign="top">
 
 2023-03-31
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4533,27 +4198,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-03-31
 
 </td>
 <td valign="top">
 
 2023-03-31
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4599,27 +4259,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-03-31
 
 </td>
 <td valign="top">
 
 2023-03-31
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4665,27 +4320,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-03-31
 
 </td>
 <td valign="top">
 
 2023-03-31
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4731,27 +4381,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-03-31
 
 </td>
 <td valign="top">
 
 2023-03-31
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4797,27 +4442,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-03-31
 
 </td>
 <td valign="top">
 
 2023-03-31
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4863,27 +4503,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-03-16
 
 </td>
 <td valign="top">
 
 2023-03-15
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4929,27 +4564,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-03-16
 
 </td>
 <td valign="top">
 
 2023-03-15
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -4995,27 +4625,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-03-16
 
 </td>
 <td valign="top">
 
 2023-03-15
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5061,21 +4686,6 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-03-16
 
 </td>
@@ -5084,70 +4694,14 @@ Cloud Identity Services
 2023-03-15
 
 </td>
-</tr>
-<tr>
 <td valign="top">
 
-Cloud Identity Services 
+Unavailable
 
 </td>
 <td valign="top">
 
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-System Upgrade
-
-</td>
-<td valign="top">
-
-Identity Authentication has been upgraded.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
-2023-03-01
-
-</td>
-<td valign="top">
-
-2023-03-01
+ 
 
 </td>
 </tr>
@@ -5193,17 +4747,63 @@ New
 </td>
 <td valign="top">
 
-Technology
+2023-03-01
 
 </td>
 <td valign="top">
 
-Not applicable
+2023-03-01
 
 </td>
 <td valign="top">
 
-Cloud Identity Services
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
 
 </td>
 <td valign="top">
@@ -5214,6 +4814,16 @@ Cloud Identity Services
 <td valign="top">
 
 2023-02-15
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5259,27 +4869,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-02-15
 
 </td>
 <td valign="top">
 
 2023-02-15
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5325,27 +4930,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-02-15
 
 </td>
 <td valign="top">
 
 2023-02-15
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5391,27 +4991,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-02-15
 
 </td>
 <td valign="top">
 
 2023-02-15
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5457,27 +5052,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-02-15
 
 </td>
 <td valign="top">
 
 2023-02-15
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5523,27 +5113,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-02-15
 
 </td>
 <td valign="top">
 
 2023-02-15
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5589,27 +5174,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-02-15
 
 </td>
 <td valign="top">
 
 2023-02-15
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5661,27 +5241,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-02-15
 
 </td>
 <td valign="top">
 
 2023-02-15
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5723,21 +5298,6 @@ General Availability
 <td valign="top">
 
 New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
 
 </td>
 <td valign="top">
@@ -5750,70 +5310,14 @@ Cloud Identity Services
 2023-02-07
 
 </td>
-</tr>
-<tr>
 <td valign="top">
 
-Cloud Identity Services 
+Unavailable
 
 </td>
 <td valign="top">
 
--   Neo
--   Kyma
--   Cloud Foundry
-
-
-
-</td>
-<td valign="top">
-
-System Upgrade
-
-</td>
-<td valign="top">
-
-Identity Authentication has been upgraded.
-
-</td>
-<td valign="top">
-
-Info only
-
-</td>
-<td valign="top">
-
-General Availability
-
-</td>
-<td valign="top">
-
-New
-
-</td>
-<td valign="top">
-
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
-2023-02-03
-
-</td>
-<td valign="top">
-
-2023-02-03
+ 
 
 </td>
 </tr>
@@ -5859,17 +5363,63 @@ New
 </td>
 <td valign="top">
 
-Technology
+2023-02-03
 
 </td>
 <td valign="top">
 
-Not applicable
+2023-02-03
 
 </td>
 <td valign="top">
 
-Cloud Identity Services
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Cloud Identity Services 
+
+</td>
+<td valign="top">
+
+-   Neo
+-   Kyma
+-   Cloud Foundry
+
+
+
+</td>
+<td valign="top">
+
+System Upgrade
+
+</td>
+<td valign="top">
+
+Identity Authentication has been upgraded.
+
+</td>
+<td valign="top">
+
+Info only
+
+</td>
+<td valign="top">
+
+General Availability
+
+</td>
+<td valign="top">
+
+New
 
 </td>
 <td valign="top">
@@ -5882,6 +5432,16 @@ Cloud Identity Services
 2023-02-01
 
 </td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -5925,27 +5485,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-01-24
 
 </td>
 <td valign="top">
 
 2023-01-24
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -5991,27 +5546,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-01-23
 
 </td>
 <td valign="top">
 
 2023-01-23
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -6057,27 +5607,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-01-22
 
 </td>
 <td valign="top">
 
 2023-01-20
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -6123,27 +5668,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-01-22
 
 </td>
 <td valign="top">
 
 2023-01-20
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -6189,27 +5729,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-01-19
 
 </td>
 <td valign="top">
 
 2023-01-18
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -6255,27 +5790,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-01-19
 
 </td>
 <td valign="top">
 
 2023-01-18
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -6321,27 +5851,22 @@ New
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-01-19
 
 </td>
 <td valign="top">
 
 2023-01-18
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -6387,27 +5912,22 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-01-19
 
 </td>
 <td valign="top">
 
 2023-01-18
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>
@@ -6453,27 +5973,22 @@ Changed
 </td>
 <td valign="top">
 
-Technology
-
-</td>
-<td valign="top">
-
-Not applicable
-
-</td>
-<td valign="top">
-
-Cloud Identity Services
-
-</td>
-<td valign="top">
-
 2023-01-19
 
 </td>
 <td valign="top">
 
 2023-01-18
+
+</td>
+<td valign="top">
+
+Unavailable
+
+</td>
+<td valign="top">
+
+ 
 
 </td>
 </tr>

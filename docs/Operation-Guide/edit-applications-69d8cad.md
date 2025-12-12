@@ -530,6 +530,11 @@ To edit the application configurations, proceed as follows:
     This field allows you to group the applications under a specific organization and on the basis of the *Organization ID* to restrict the access to these applications.
 
     By default all applications are in the `global` *Organization ID*. Enter a new name to change the value of *Organization ID*.
+
+    > ### Note:  
+    > Applications created either as subscriptions within or with the Identity service of an SAP BTP subaccount receive the *Organization ID* of the application that represents the trust configuration of that subaccount.
+
+
     
     </td>
     </tr>

@@ -13,7 +13,7 @@ Follow this procedure to set up SAP Concur as a source system.
 
 You are using User v1 API, Identity v4 API or SCIM v4 API.
 
--   You have an SAP Concur admin user with ** role assigned.
+-   You have an SAP Concur admin user with *Web Services Administrator* role assigned.
 
 -   Your SAP Concur admin user has obtained a *Company Request Token* and a *Company UUID* from the SAP Concur Company Request Token self-service tool.
 
@@ -680,6 +680,8 @@ To create SAP Concur as a source system, proceed as follows:
     **User v1 API**: [User v1](https://developer.concur.com/api-reference/user/index.html)
 
     **Identity v4 API**: [Identity v4](https://developer.concur.com/api-reference/profile/v4.identity.html)
+
+    **SCIM v4 API**: [SCIM v4 API](https://developer.concur.com/api-reference/profile/v4.scim.html)
 
     **Default transformation when using User v1 API \(connector version 1\):**
 
