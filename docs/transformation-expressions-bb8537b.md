@@ -282,7 +282,7 @@ A condition specifies a JSON filter expression. It can be applied on a single ma
     > }
     > ```
 
--   Condition with format **variables** – SAP S/4HANA Cloud \(source system\)
+-   Condition with format **variables** – SAP S/4HANA Cloud Public Edition \(source system\)
 
     > ### Example:  
     > ```
@@ -1016,13 +1016,13 @@ You can use `skipOperations` only in target system transformations.
 
     **Option 2:** In all other cases that differ from the above mentioned \(the target system is LDAP-based, RFC-based, SOAP or OData-based\), the existing users are resolved by retrieving their IDs. In order for the *skip create* operation to be executed without an error, you need to make a few adjustments in your source and target transformations. This way, the service will search and retrieve the IDs of the entities correctly. An example how to modify your source and target transformations is included below.
 
-    In the following detailed example, *SAP SuccessFactors* is a source system and *SAP S/4HANA Cloud*, which is SOAP-based system, is a target. You want all users that exist on both systems to be skipped during creation and to only be updated on the target. If there are users existing only in the source system, they will not be created in the target. To do that:
+    In the following detailed example, *SAP SuccessFactors* is a source system and *SAP S/4HANA Cloud Public Edition*, which is SOAP-based system, is a target. You want all users that exist on both systems to be skipped during creation and to only be updated on the target. If there are users existing only in the source system, they will not be created in the target. To do that:
 
-    1.  Open your *SAP SuccessFactors* admin console. For every user that you want to be provisioned and updated in *SAP S/4HANA Cloud*, you need to set up one of its predefined custom attributes \(*custom01* – *custom15*\), entering the *SAP S/4HANA Cloud* unique identifier for that user \(which is the value of the `personID` attribute\). For example, you can do that in the **custom10** attribute.
+    1.  Open your *SAP SuccessFactors* admin console. For every user that you want to be provisioned and updated in *SAP S/4HANA Cloud Public Edition*, you need to set up one of its predefined custom attributes \(*custom01* – *custom15*\), entering the *SAP S/4HANA Cloud Public Edition* unique identifier for that user \(which is the value of the `personID` attribute\). For example, you can do that in the **custom10** attribute.
 
     2.  Then go to the *Identity Provisioning* admin consolethe administration console for SAP Cloud Identity Services, and in the *Properties* tab update the `sf.user.attributes` property, adding **custom10** to the list of attributes.
 
-    3.  In the *SAP SuccessFactors* source system, add the following extra user mapping. It maps **custom10** to a custom attribute in *SAP S/4HANA Cloud*, for example **custom\_user\_ID**:
+    3.  In the *SAP SuccessFactors* source system, add the following extra user mapping. It maps **custom10** to a custom attribute in *SAP S/4HANA Cloud Public Edition*, for example **custom\_user\_ID**:
 
         > ### Example:  
         > ```

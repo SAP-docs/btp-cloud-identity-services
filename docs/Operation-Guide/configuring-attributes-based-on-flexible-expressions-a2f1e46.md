@@ -12,7 +12,7 @@ You can configure attributes based on flexible expressions for the application.
 
 The attributes are sent from Identity Authentication to the application in the assertion. You can set attributes like `location` and `company` with values *Europe* and *Company A* for example, so that the application displays Europe and Company A on its main page.
 
-The attributes are also put in the `id_token` if the application is OpenID connect. For more information, see [Configuring OpenID Connect](configuring-openid-connect-a789c9c.md).
+The attributes are also put in the `id_token` if the application is OpenID connect. For more information, see [Configuring OpenID Connect \(OIDC\)](configuring-openid-connect-oidc-a789c9c.md).
 
 For both, the SAML 2.0 and OpenID Connect applications, you can configure attributes with dynamic values to be added into the assertions in the following pattern: `<prefix> ${attribute_technical_name>} <suffix>`
 

@@ -26,3 +26,5 @@ For more information on screen reader support and keyboard shortcuts, see [Keybo
 
 [Supported Languages](supported-languages-0ea634d.md "Information on the supported languages for the administration console, and the end user screens of Identity Authentication.")
 
+[Commercial Information](commercial-information-a111af1.md "This page explains the relationship between the service plans in the SAP Discovery Center and those in the SAP BTP cockpit, and provides information to help you understand how the service is billed.")
+

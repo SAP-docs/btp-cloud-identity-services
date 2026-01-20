@@ -12,7 +12,7 @@ With the Token Exchange flow you can exchange one token for another. For more in
 
 -   For your business application, there’s an OpenID Connect \(OIDC\) application in Identity Authentication.
 
-    For more information, see [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md).
+    For more information, see [Create OpenID Connect \(OIDC\) Application](create-openid-connect-oidc-application-62fb1c3.md).
 
 -   For your OpenID Connect \(OIDC\) application in Identity Authentication, you've prepared an authentication credential for the API call. The API supports the following authentication schemes:
 
@@ -631,7 +631,7 @@ Request body
 **Related Information**  
 
 
-[Configuring OpenID Connect](configuring-openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
+[Configuring OpenID Connect \(OIDC\)](configuring-openid-connect-oidc-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect (OIDC) protected applications.")
 
 [JSON Web Token \(JWT\) Profile for OAuth 2.0 Client Authentication and Authorization Grants](https://datatracker.ietf.org/doc/html/rfc7523)
 

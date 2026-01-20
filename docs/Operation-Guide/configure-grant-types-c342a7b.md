@@ -10,7 +10,7 @@ Configure the allowed grant type for your OpenID Connect application.
 
 ## Prerequisites
 
-You have an OpenID Connect application in the administration console for SAP Cloud Identity Services. For more information, see [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md).
+You have an OpenID Connect application in the administration console for SAP Cloud Identity Services. For more information, see [Create OpenID Connect \(OIDC\) Application](create-openid-connect-oidc-application-62fb1c3.md).
 
 
 

@@ -12,7 +12,7 @@ The token endpoint is used to get the user's access token, id token and refresh 
 
 -   For your business application, there’s an OpenID Connect \(OIDC\) application in Identity Authentication.
 
-    For more information, see [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md).
+    For more information, see [Create OpenID Connect \(OIDC\) Application](create-openid-connect-oidc-application-62fb1c3.md).
 
 -   For your OpenID Connect \(OIDC\) application in Identity Authentication, you've prepared an authentication credential for the API call. The API supports the following authentication schemes:
 
@@ -543,7 +543,7 @@ F0IjoxNTg4MDEzNzYwLCJmaXJzdF9uYW1lIjoiRG9uYSIsImp0aSI6IjM4ZTQyMzMwLWRlN
 ```
 
 > ### Note:  
-> The format of the `issuer` depends on the configuration in the administration console for SAP Cloud Identity Services. For more information, see [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md).
+> The format of the `issuer` depends on the configuration in the administration console for SAP Cloud Identity Services. For more information, see [Tenant OpenID Connect \(OIDC\) Configurations](tenant-openid-connect-oidc-configurations-3d6abcc.md).
 
 
 

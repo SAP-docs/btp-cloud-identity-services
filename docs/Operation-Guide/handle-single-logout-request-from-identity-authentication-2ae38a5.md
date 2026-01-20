@@ -7,7 +7,7 @@
 When a user logs out from an application, the other applications that participate in the same user session must also be notified, so that it can log out the user as well. The application that doesn't trigger the logout, but must be notified, should do the following:
 
 -   Provide your own logout endpoint. For more information, see [OpenID Connect Front-Channel Logout 1.0](https://openid.net/specs/openid-connect-frontchannel-1_0.html#RPLogout).
--   Configure the endpoint \(*Front-Channel Logout URIs* or *Back-Channel Logout URIs*\) in the respective Identity Authentication application. For more information, see [Configure OpenID Connect Application for Authorization Code Flow](configure-openid-connect-application-for-authorization-code-flow-4a94254.md) or [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow with PKCE](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-a721157.md).
+-   Configure the endpoint \(*Front-Channel Logout URIs* or *Back-Channel Logout URIs*\) in the respective Identity Authentication application. For more information, see [Configure OpenID Connect \(OIDC\) Application for Authorization Code Flow](configure-openid-connect-oidc-application-for-authorization-code-flow-4a94254.md) or [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow with PKCE](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-a721157.md).
 
     > ### Note:  
     > If the application is a multitenant one, it must include the tenant-specific logout endpoint during the login flow. This endpoint must follow the rules, specified in [Logout URI Rules](logout-uri-rules-789c752.md). The logout endpoint is sent during login \(see [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-94ff0b4.md) or [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow with PKCE](configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-a721157.md)\).
@@ -16,9 +16,9 @@ When a user logs out from an application, the other applications that participat
 **Related Information**  
 
 
-[Configuring OpenID Connect](configuring-openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
+[Configuring OpenID Connect \(OIDC\)](configuring-openid-connect-oidc-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect (OIDC) protected applications.")
 
-[Configure OpenID Connect Application](configure-openid-connect-application-8a0aa2e.md "This document is intended to help you configure an OpenID Connect application in the administration console for SAP Cloud Identity Services.")
+[Configure OpenID Connect \(OIDC\) Application](configure-openid-connect-oidc-application-8a0aa2e.md "This document is intended to help you configure an OpenID Connect (OIDC) application in the administration console for SAP Cloud Identity Services.")
 
 [Configure Trusted Domains](configure-trusted-domains-08fa1fe.md "Service providers that delegate authentication to Identity Authentication can protect their applications when using embedded frames, also called overlays, or when allowing user self-registration.")
 

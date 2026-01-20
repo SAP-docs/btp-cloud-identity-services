@@ -10,11 +10,11 @@ The service endpoint returns the tokens issued by the corporate identity provide
 
 ## Prerequisites
 
--   For your business application, there’s an OIDC application in Identity Authentication.
+-   For your business application, there’s an OpenID Connect \(OIDC\) application in Identity Authentication.
 
-    For more information, see [Create OpenID Connect Application](../Operation-Guide/create-openid-connect-application-62fb1c3.md).
+    For more information, see [Create OpenID Connect \(OIDC\) Application](../Operation-Guide/create-openid-connect-oidc-application-62fb1c3.md).
 
--   For your OIDC application in Identity Authentication, you've prepared an authentication credential for the API call. The API supports the following authentication schemes:
+-   For your OpenID Connect \(OIDC\) application in Identity Authentication, you've prepared an authentication credential for the API call. The API supports the following authentication schemes:
 
     -   Basic
 
@@ -25,11 +25,11 @@ The service endpoint returns the tokens issued by the corporate identity provide
 
     For more information, see [API Authentication](../Operation-Guide/api-authentication-9d200d5.md).
 
--   Your business application has a corporate identity provider as the default identity provider using OIDC.
+-   Your business application has a corporate identity provider as the default identity provider using OpenID Connect \(OIDC\).
 
     For more information, see [Configure Trust with OpenID Connect Corporate Identity Provider](../Operation-Guide/configure-trust-with-openid-connect-corporate-identity-provider-8ff83a1.md) and [Choose Default Identity Provider for an Application](../Operation-Guide/choose-default-identity-provider-for-an-application-e9d8274.md).
 
--   The user, who needs a token exchange, has authenticated to this application using Identity Authentication and the corporate OIDC identity provider.
+-   The user, who needs a token exchange, has authenticated to this application using Identity Authentication and the corporate OpenID Connect \(OIDC\) identity provider.
 
 
 
@@ -259,5 +259,5 @@ Q1ZDZlIn0.3ormYv_nxnimm6xB972qSGOk_YTc_gpE4wVhgaA7q0I",
 **Related Information**  
 
 
-[Configuring OpenID Connect](../Operation-Guide/configuring-openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
+[Configuring OpenID Connect \(OIDC\)](../Operation-Guide/configuring-openid-connect-oidc-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect (OIDC) protected applications.")
 

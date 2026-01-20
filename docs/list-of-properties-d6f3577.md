@@ -836,7 +836,7 @@ Default value: *false*
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\)
+SAP S/4HANA Cloud Public Edition \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\)
 
 </td>
 </tr>
@@ -862,7 +862,7 @@ Default value: *false*
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\)
+SAP S/4HANA Cloud Public Edition \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\)
 
 </td>
 </tr>
@@ -1131,7 +1131,7 @@ This property defines the API version that the API of your SAP Sales Cloud and S
 -   *3*
 -   *4*
 
-By default, Identity Provisioning uses version *3*, which means - SCIM 2.0 based API.
+By default, Identity Provisioning uses version *4*, which means - SCIM 2.0 based API.
 
 **System Role:** Source, Target, Proxy
 
@@ -1776,6 +1776,9 @@ Specifies whether to fetch a CSRF token when sending requests to the system. The
 
 Default value: *enabled*
 
+> ### Note:  
+> If the property is missing, its default value is **disabled**.
+
 **System Role:** Target, Proxy
 
 </td>
@@ -2288,7 +2291,7 @@ This property defines the unique attribute\(s\) by which the existing group will
 -   If a group with the given *\['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group'\]\['name'\]* is not found in the target system, the group that you try to provision will not be created in the target system.
 
 
-In scenarios where groups are provisioned from SAP Integrated Business Planning version 2 and SAP S/4HANA Cloud version 3, the uniqueness of the group is resolved by a combination of three attributes:
+In scenarios where groups are provisioned from SAP Integrated Business Planning version 2 and SAP S/4HANA Cloud Public Edition version 3, the uniqueness of the group is resolved by a combination of three attributes:
 
 *\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['type'\],\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['externalName'\],\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['applicationId'\]*
 
@@ -3268,7 +3271,7 @@ In case the property is not set, only delta read jobs will be executed. For more
 
 -   SAP Master Data Integration
 
--   SAP S/4HANA Cloud
+-   SAP S/4HANA Cloud Public Edition
 
 -   SAP S/4HANA for procurement planning
 
@@ -5614,7 +5617,7 @@ SCIM System
 
 Defines whether the human resources \(HR\) integration is active or not.
 
-The property is set to `true` by default. This means that the synchronization of business partners is managed by the HR system and SAP S/4HANA Cloud. Identity Provisioning can only be used for managing business users \(login users and their login information, such as date/time preferences\) and role assignments.
+The property is set to `true` by default. This means that the synchronization of business partners is managed by the HR system and SAP S/4HANA Cloud Public Edition. Identity Provisioning can only be used for managing business users \(login users and their login information, such as date/time preferences\) and role assignments.
 
 When set to `false`, synchronization is handled by the identity management system instead.
 
@@ -5628,7 +5631,7 @@ When set to `false`, synchronization is handled by the identity management syste
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\)
+SAP S/4HANA Cloud Public Edition \(using version 1 - SAP S/4HANA Cloud Public Edition API: Business User\)
 
 </td>
 </tr>
@@ -5640,7 +5643,7 @@ SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\)
 </td>
 <td valign="top">
 
-Enter OData filtering for reading roles in the SAP S/4HANA Cloud system.
+Enter OData filtering for reading roles in the SAP S/4HANA Cloud Public Edition system.
 
 To learn what criteria you can use, see: [OData URI Conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/) → 4.5 Filter System Query Option
 
@@ -5649,7 +5652,7 @@ To learn what criteria you can use, see: [OData URI Conventions](https://www.oda
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\)
+SAP S/4HANA Cloud Public Edition \(using version 1 - SAP S/4HANA Cloud Public Edition API: Business User\)
 
 </td>
 </tr>
@@ -5661,20 +5664,20 @@ SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\)
 </td>
 <td valign="top">
 
-This property defines the API version that your SAP S/4HANA Cloud system uses.
+This property defines the API version that your SAP S/4HANA Cloud Public Edition system uses.
 
 By default, Identity Provisioning uses version *1*.
 
-Version *1* means your SAP S/4HANA Cloud system consumes SAP S/4HANA Cloud API: Business User.
+Version *1* means your SAP S/4HANA Cloud Public Edition system consumes SAP S/4HANA Cloud Public Edition API: Business User.
 
-Version *3* means your SAP S/4HANA Cloud system consumes System for Cross-domain Identity Management \(SCIM\) API.
+Version *3* means your SAP S/4HANA Cloud Public Edition system consumes System for Cross-domain Identity Management \(SCIM\) API.
 
 **System Role:** Source, Target, Proxy
 
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud
+SAP S/4HANA Cloud Public Edition
 
 </td>
 </tr>
@@ -5686,7 +5689,7 @@ SAP S/4HANA Cloud
 </td>
 <td valign="top">
 
-When specified, only those SAP S/4HANA Cloud groups matching the filter expression will be read.
+When specified, only those SAP S/4HANA Cloud Public Edition groups matching the filter expression will be read.
 
 Supported operators: eq \(equal\), ne \(not equal\), sw \(starts with\), ew \(ends with\) and co \(contains\)
 
@@ -5710,7 +5713,7 @@ For example:
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\)
+SAP S/4HANA Cloud Public Edition \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\)
 
 </td>
 </tr>
@@ -5722,19 +5725,19 @@ SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Managemen
 </td>
 <td valign="top">
 
-This property distinguishes SAP S/4HANA Cloud groups by specific prefix. It is an optional property which does not appear by default at system creation.
+This property distinguishes SAP S/4HANA Cloud Public Edition groups by specific prefix. It is an optional property which does not appear by default at system creation.
 
 Example value: `S4HANACLOUD_`
 
 You can use the example value or provide your own.
 
--   When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP S/4HANA Cloud source system and will be provisioned to the target system with the following name pattern: <code>S4HANACLOUD_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP S/4HANA Cloud groups in the target system will be distinguished from groups provisioned from other applications.
+-   When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP S/4HANA Cloud Public Edition source system and will be provisioned to the target system with the following name pattern: <code>S4HANACLOUD_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP S/4HANA Cloud Public Edition groups in the target system will be distinguished from groups provisioned from other applications.
 
-    If the property is not set, the SAP S/4HANA Cloud groups will be read and provisioned to the target system with their actual display names.
+    If the property is not set, the SAP S/4HANA Cloud Public Edition groups will be read and provisioned to the target system with their actual display names.
 
--   When **set in the target system**, only groups containing the `S4HANACLOUD_` prefix in their display name will be provisioned to SAP S/4HANA Cloud. Groups without this prefix in the display name won't be provisioned.
+-   When **set in the target system**, only groups containing the `S4HANACLOUD_` prefix in their display name will be provisioned to SAP S/4HANA Cloud Public Edition. Groups without this prefix in the display name won't be provisioned.
 
-    If the property is not set, all groups will be provisioned to SAP S/4HANA Cloud.
+    If the property is not set, all groups will be provisioned to SAP S/4HANA Cloud Public Edition.
 
 
 **System Role:** Source and Target
@@ -5742,7 +5745,7 @@ You can use the example value or provide your own.
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\)
+SAP S/4HANA Cloud Public Edition \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\)
 
 </td>
 </tr>
@@ -5754,9 +5757,9 @@ SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Managemen
 </td>
 <td valign="top">
 
-If the Identity Provisioning tries to create a group that already exists in the SAP S/4HANA Cloud target system, the creation will fail. In this case, the existing group only needs to be updated.
+If the Identity Provisioning tries to create a group that already exists in the SAP S/4HANA Cloud Public Edition target system, the creation will fail. In this case, the existing group only needs to be updated.
 
-In SAP S/4HANA Cloud the uniqueness of a group is defined by the combination of the following two attributes, which are automatically filled in when the target system is created: *externalId,\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['type'\]*.
+In SAP S/4HANA Cloud Public Edition the uniqueness of a group is defined by the combination of the following two attributes, which are automatically filled in when the target system is created: *externalId,\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['type'\]*.
 
 To resolve the conflict, an existing group must match both of these attributes. If the group matches only one of the attributes, the conflict is not resolved, and group creation will fail.
 
@@ -5770,7 +5773,7 @@ If the property is not specified, the search is done by the default attribute *d
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\)
+SAP S/4HANA Cloud Public Edition \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\)
 
 </td>
 </tr>
@@ -5798,24 +5801,24 @@ For example:
 
 -   `PATCH` requests: If you have a group with 700 members and you update the group by adding another 1 200 members, setting this property to 900 results in the following:
 
-    As 1900 \(the target count of the members\) is above the threshold number of 900, 2 `PATCH` requests will be sent to the SAP S/4HANA Cloud target system. The first request will add 900 group members and the second request will add 300 group members.
+    As 1900 \(the target count of the members\) is above the threshold number of 900, 2 `PATCH` requests will be sent to the SAP S/4HANA Cloud Public Edition target system. The first request will add 900 group members and the second request will add 300 group members.
 
     The threshold number you set defines the maximum number of group members processed per batch.
 
 -   `PUT` request: If you have a group with 700 members and you update the group by adding another 100 members, setting this property to 900 results in the following:
 
-    As 800 \(the target count of the members\) is below the threshold number of 900, 1 `PUT` request with 800 group members will be sent to the SAP S/4HANA Cloud target system to update the group.
+    As 800 \(the target count of the members\) is below the threshold number of 900, 1 `PUT` request with 800 group members will be sent to the SAP S/4HANA Cloud Public Edition target system to update the group.
 
 
 > ### Note:  
-> Regardless of the threshold number you define, when removing group members in SAP S/4HANA Cloud, the maximum number of members which can be removed per one `PATCH` request is 50.
+> Regardless of the threshold number you define, when removing group members in SAP S/4HANA Cloud Public Edition, the maximum number of members which can be removed per one `PATCH` request is 50.
 
 **System Role:**Target
 
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\)
+SAP S/4HANA Cloud Public Edition \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\)
 
 </td>
 </tr>
@@ -5827,7 +5830,7 @@ SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Managemen
 </td>
 <td valign="top">
 
-When specified, only those SAP S/4HANA Cloud users matching the filter expression will be read. You can filter users by **list of attributes** according to the API syntax of SAP S/4HANA Cloud.
+When specified, only those SAP S/4HANA Cloud Public Edition users matching the filter expression will be read. You can filter users by **list of attributes** according to the API syntax of SAP S/4HANA Cloud Public Edition.
 
 You can set a single attribute or multiple ones as filter criteria. If you enter multiple attributes \(using OR operator\), the filter will search for any of them.
 
@@ -5855,7 +5858,7 @@ For example:
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\)
+SAP S/4HANA Cloud Public Edition \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\)
 
 </td>
 </tr>
@@ -5882,7 +5885,7 @@ That means, your HR integration will support *employees* and *contingent worker*
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\)
+SAP S/4HANA Cloud Public Edition \(using version 1 - SAP S/4HANA Cloud Public Edition API: Business User\)
 
 </td>
 </tr>
@@ -5894,7 +5897,7 @@ SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\)
 </td>
 <td valign="top">
 
-In the event of archived \(disabled\) entities in a source SAP S/4HANA Cloud system, you can choose whether the provisioning jobs to continue reading such entities or to skip them.
+In the event of archived \(disabled\) entities in a source SAP S/4HANA Cloud Public Edition system, you can choose whether the provisioning jobs to continue reading such entities or to skip them.
 
 In the source and proxy systems, this property is activated by default. If you want to always read disabled entities, set the property to *false*, or delete it.
 
@@ -5910,7 +5913,7 @@ Default value: *true*
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\)
+SAP S/4HANA Cloud Public Edition \(using version 1 - SAP S/4HANA Cloud Public Edition API: Business User\)
 
 </td>
 </tr>
@@ -6379,7 +6382,7 @@ SAP Marketing Cloud
 </td>
 <td valign="top">
 
-This property indicates how many business roles \(considered as *groups*\) per page to be read from your SAP S/4HANA Cloud source system.
+This property indicates how many business roles \(considered as *groups*\) per page to be read from your SAP S/4HANA Cloud Public Edition source system.
 
 **Possible values:** Integer number
 
@@ -6390,7 +6393,7 @@ For example, if you set the property's value = *30*, the Identity Provisioning w
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\) 
+SAP S/4HANA Cloud Public Edition \(using version 1 - SAP S/4HANA Cloud Public Edition API: Business User\) 
 
 </td>
 </tr>
@@ -6418,7 +6421,7 @@ Default value: *false*
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\) 
+SAP S/4HANA Cloud Public Edition \(using version 1 - SAP S/4HANA Cloud Public Edition API: Business User\) 
 
 </td>
 </tr>
@@ -6445,7 +6448,7 @@ If you enter a number larger than 100, the service will replace it with the defa
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\) 
+SAP S/4HANA Cloud Public Edition \(using version 1 - SAP S/4HANA Cloud Public Edition API: Business User\) 
 
 </td>
 </tr>
@@ -6928,7 +6931,7 @@ SAP Marketing Cloud
 </td>
 <td valign="top">
 
-This property defines whether the current roles of a user to be preserved or overwritten by the Identity Provisioning service within the SAP S/4HANA Cloud target or proxy system.
+This property defines whether the current roles of a user to be preserved or overwritten by the Identity Provisioning service within the SAP S/4HANA Cloud Public Edition target or proxy system.
 
 See also: [Extended Explanation of the \*user.roles.overwrite Properties](https://ga.support.sap.com/dtp/viewer/#/tree/2065/actions/26547:29111:29114:27412:35953:38590)
 
@@ -6946,7 +6949,7 @@ Default value \(if the property appears during system creation\): *false*
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\) 
+SAP S/4HANA Cloud Public Edition \(using version 1 - SAP S/4HANA Cloud Public Edition API: Business User\) 
 
 </td>
 </tr>
@@ -7063,6 +7066,9 @@ Specifies whether to fetch a CSRF token when sending requests to the system. If 
 -   *enabled*
 -   *disabled*
 
+> ### Note:  
+> If the property is missing, its default value is **disabled**.
+
 **System Role:** Target, Proxy
 
 </td>
@@ -7088,6 +7094,9 @@ Specifies whether to fetch a CSRF token when sending requests to the system. The
 -   *disabled*
 
 Default value: *enabled*
+
+> ### Note:  
+> If the property is missing, its default value is *disabled*.
 
 **System Role:** Target, Proxy
 
@@ -9936,7 +9945,7 @@ This property defines the unique attribute\(s\) by which the existing group will
 -   If a group with the given *\['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group'\]\['name'\]* is not found in the target system, the group that you try to provision will not be created in the target system.
 
 
-In scenarios where groups are provisioned from SAP Integrated Business Planning version 2 and SAP S/4HANA Cloud version 3, the uniqueness of the group is resolved by a combination of three attributes:
+In scenarios where groups are provisioned from SAP Integrated Business Planning version 2 and SAP S/4HANA Cloud Public Edition version 3, the uniqueness of the group is resolved by a combination of three attributes:
 
 *\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['type'\],\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['externalName'\],\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['applicationId'\]*
 
@@ -11107,13 +11116,17 @@ By default, users are always filtered by the *providerId*. If another filtering 
 
 **Possible values:**
 
--   *emails.value eq 'john.smith@example.com'*
+-   *emails.value eq "john.smith@example.com"*
 
     > ### Note:  
     > Although, the email is supported as a filtering attribute, it is not returned when searching for the user.
 
--   *urn:ietf:params:scim:schemas:extension:2.0:mapping.providerId eq 'ABC123'*
+-   *urn:ietf:params:scim:schemas:extension:2.0:mapping.providerId eq "ABC123"*
 
+
+Combining filter attributes is allowed using the and operator, for example:
+
+*emails.value eq "john.smith@example.com" and urn:ietf:params:scim:schemas:extension:2.0:mapping.providerId eq "ABC123"*
 
 **System Role:** Proxy
 
@@ -13643,10 +13656,10 @@ SAP S/4HANA for procurement planning
 </td>
 <td valign="top">
 
-If Identity Provisioning tries to provision a user that already exists in the SAP S/4HANA Cloud target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved.
+If Identity Provisioning tries to provision a user that already exists in the SAP S/4HANA Cloud Public Edition target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved.
 
 > ### Note:  
-> You can configure this property only when the integration between a human resource \(HR\) system and SAP S/4HANA Cloud target system is **OFF**.
+> You can configure this property only when the integration between a human resource \(HR\) system and SAP S/4HANA Cloud Public Edition target system is **OFF**.
 
 According to your use case, choose how to set up this property:
 
@@ -13668,7 +13681,7 @@ Default value: *personExternalID*
 
 Possible values:
 
--   If your system consumes SAP S/4HANA Cloud API: Business User, the service searches for an existing user by *personExternalID* and *emails\[0\].value*.
+-   If your system consumes SAP S/4HANA Cloud Public Edition API: Business User, the service searches for an existing user by *personExternalID* and *emails\[0\].value*.
 
     According to your use case, choose how to set up the property:
 
@@ -13695,7 +13708,7 @@ Possible values:
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud
+SAP S/4HANA Cloud Public Edition
 
 </td>
 </tr>
@@ -13948,19 +13961,19 @@ SAP Sales Cloud and SAP Service Cloud
 </td>
 <td valign="top">
 
-This property distinguishes SAP S/4HANA Cloud roles by specific prefix. It is an optional property which does not appear by default at system creation.
+This property distinguishes SAP S/4HANA Cloud Public Edition roles by specific prefix. It is an optional property which does not appear by default at system creation.
 
 Example value: `S4HANA_CLOUD_`
 
 You can use the example value or provide your own.
 
--   When **set in the source system**, the prefix will be prepended to the name of the roles that are read from the SAP S/4HANA Cloud source system and will be provisioned to the target system with the following name pattern: <code>S4HANA_CLOUD_<i class="varname">&lt;role_name&gt;</i></code>. This way SAP S/4HANA Cloud roles in the target system will be distinguished from roles provisioned from other applications.
+-   When **set in the source system**, the prefix will be prepended to the name of the roles that are read from the SAP S/4HANA Cloud Public Edition source system and will be provisioned to the target system with the following name pattern: <code>S4HANA_CLOUD_<i class="varname">&lt;role_name&gt;</i></code>. This way SAP S/4HANA Cloud Public Edition roles in the target system will be distinguished from roles provisioned from other applications.
 
-    If the property is not set, the SAP S/4HANA Cloud roles will be read and provisioned to the target system with their actual role names.
+    If the property is not set, the SAP S/4HANA Cloud Public Edition roles will be read and provisioned to the target system with their actual role names.
 
--   When **set in the target system**, only roles containing the `S4HANA_CLOUD_` prefix in their role name will be provisioned to SAP S/4HANA Cloud. Roles without this prefix in the role name won't be provisioned.
+-   When **set in the target system**, only roles containing the `S4HANA_CLOUD_` prefix in their role name will be provisioned to SAP S/4HANA Cloud Public Edition. Roles without this prefix in the role name won't be provisioned.
 
-    If the property is not set, all roles will be be provisioned to SAP S/4HANA Cloud.
+    If the property is not set, all roles will be be provisioned to SAP S/4HANA Cloud Public Edition.
 
 
 **System Role:** Source and Target
@@ -13968,7 +13981,7 @@ You can use the example value or provide your own.
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 1 - SAP S/4HANA Cloud API: Business User\) 
+SAP S/4HANA Cloud Public Edition \(using version 1 - SAP S/4HANA Cloud Public Edition API: Business User\) 
 
 </td>
 </tr>
@@ -14154,7 +14167,7 @@ SAP Market Communication for Utilities
 
 SAP Marketing Cloud
 
-SAP S/4HANA Cloud
+SAP S/4HANA Cloud Public Edition
 
 SAP S/4HANA On-Premise
 
@@ -15947,7 +15960,7 @@ SAP Signavio Process Transformation Suite
 </td>
 <td valign="top">
 
-The number of group members that SAP S/4HANA Cloud returns per request when reading a group.
+The number of group members that SAP S/4HANA Cloud Public Edition returns per request when reading a group.
 
 **Default value:** 20000
 
@@ -15956,7 +15969,7 @@ The number of group members that SAP S/4HANA Cloud returns per request when read
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\) 
+SAP S/4HANA Cloud Public Edition \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\) 
 
 </td>
 </tr>
@@ -15968,7 +15981,7 @@ SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Managemen
 </td>
 <td valign="top">
 
-The number of user groups that SAP S/4HANA Cloud returns per request when reading a group.
+The number of user groups that SAP S/4HANA Cloud Public Edition returns per request when reading a group.
 
 **Default value:** 20000
 
@@ -15977,7 +15990,7 @@ The number of user groups that SAP S/4HANA Cloud returns per request when readin
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\) 
+SAP S/4HANA Cloud Public Edition \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\) 
 
 </td>
 </tr>

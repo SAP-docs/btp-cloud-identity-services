@@ -1,8 +1,8 @@
 <!-- loio4cb0e648c1854926bc0b6e3afdc5f27e -->
 
-# SAP S/4HANA Cloud
+# SAP S/4HANA Cloud Public Edition
 
-Follow this procedure to set up SAP S/4HANA Cloud as a proxy system.
+Follow this procedure to set up SAP S/4HANA Cloud Public Edition as a proxy system.
 
 
 
@@ -12,7 +12,7 @@ Follow this procedure to set up SAP S/4HANA Cloud as a proxy system.
 
 -   You have user credentials for an external back-end system with read and write permissions.
 
--   To establish the connection between Identity Provisioning and SAP S/4HANA Cloud, you need to set up the communication \(user, system and arrangement\) on SAP S/4HANA Cloud. You can do it now \(as a prerequisite\) or in the process of configuring SAP S/4HANA Cloud as a target system, as described in step 5.
+-   To establish the connection between Identity Provisioning and SAP S/4HANA Cloud Public Edition, you need to set up the communication \(user, system and arrangement\) on SAP S/4HANA Cloud Public Edition. You can do it now \(as a prerequisite\) or in the process of configuring SAP S/4HANA Cloud Public Edition as a target system, as described in step 5.
 
 -   > ### Note:  
     > Administrators of bundle tenants on Neo environment should enable the *Manage OAuth Clients* permission, as described in *Neo Environment* section in [Manage Authorizations](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/544de9b504214372b4479dc1f6b08cca.html "Manage the authorizations of Identity Provisioning administrators, when your bundle or standalone tenant is running on SAP BTP, Neo environment.") :arrow_upper_right:.
@@ -24,13 +24,13 @@ Follow this procedure to set up SAP S/4HANA Cloud as a proxy system.
 
 ## Context
 
-You can use SAP S/4HANA Cloud as a proxy connector to execute *hybrid* scenarios. That means, it can provision its entities to another \(external\) back-end system by request, and then can continue executing CRUD operations back to SAP S/4HANA Cloud, whenever the external back-end requests such.
+You can use SAP S/4HANA Cloud Public Edition as a proxy connector to execute *hybrid* scenarios. That means, it can provision its entities to another \(external\) back-end system by request, and then can continue executing CRUD operations back to SAP S/4HANA Cloud Public Edition, whenever the external back-end requests such.
 
-SAP S/4HANA Cloud provides different APIs for integration with Identity Provisioning, resulting in different connector versions for each API. Each connector version supports specific attribute mappings within the transformations and requires particular property values. The value of the `s4hana.cloud.api.version` property controls which API you use. By default, the Identity Provisioning service uses version *1*.
+SAP S/4HANA Cloud Public Edition provides different APIs for integration with Identity Provisioning, resulting in different connector versions for each API. Each connector version supports specific attribute mappings within the transformations and requires particular property values. The value of the `s4hana.cloud.api.version` property controls which API you use. By default, the Identity Provisioning service uses version *1*.
 
--   When the value is set to *1* or the property is not present \(typical for systems created before versioning was introduced on November 6, 2025\), the SOAP API provided by the communication scenario SAP\_COM\_0193 is used. In SAP S/4HANA Cloud version 1, groups correspond to business roles, thus group members are user assignments of a business role. For more information on how to update to version *3*, see [Update Connector Version](Operation-Guide/update-connector-version-8558733.md).
+-   When the value is set to *1* or the property is not present \(typical for systems created before versioning was introduced on November 6, 2025\), the SOAP API provided by the communication scenario SAP\_COM\_0193 is used. In SAP S/4HANA Cloud Public Edition version 1, groups correspond to business roles, thus group members are user assignments of a business role. For more information on how to update to version *3*, see [Update Connector Version](Operation-Guide/update-connector-version-8558733.md).
 
-    In your SAP S/4HANA Cloud system version 1, the HCM \(HR\) integration is active by default. You have **business users** \(Employee, Contingent Worker\) and **login users** assigned to them. The corresponding HR integration manages business users – it enables you to update these users from your external data source, such as an identity management system. The Identity Provisioning service manages only the user-related login information, such as date/time preferences or role assignments.
+    In your SAP S/4HANA Cloud Public Edition system version 1, the HCM \(HR\) integration is active by default. You have **business users** \(Employee, Contingent Worker\) and **login users** assigned to them. The corresponding HR integration manages business users – it enables you to update these users from your external data source, such as an identity management system. The Identity Provisioning service manages only the user-related login information, such as date/time preferences or role assignments.
 
     This scenario supports:
 
@@ -102,14 +102,14 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
     -   [Access Identity Provisioning UI of Bundle Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/7ab5884ffbc44461a57622d2f633e57c.html "Access the Identity Provisioning UI when the service is bundled as part of an SAP cloud solution's license.") :arrow_upper_right:
     -   [Access Identity Provisioning UI of Standalone Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/61fd82ed48ab42b2bc74626926c1722c.html "Access the Identity Provisioning user interface as a standalone product.") :arrow_upper_right:
 
-5.  Add *SAP S/4HANA Cloud* as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
+5.  Add *SAP S/4HANA Cloud Public Edition* as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
-6.  Set up the communication between Identity Provisioning and SAP S/4HANA Cloud and configure your authentication method \(basic or certificate-based\).
+6.  Set up the communication between Identity Provisioning and SAP S/4HANA Cloud Public Edition and configure your authentication method \(basic or certificate-based\).
 
     > ### Note:  
     > We recommend that you use certificate-based authentication.
 
-    1.  In your newly added SAP S/4HANA Cloud proxy system, select the *Certificate* tab and choose *Generate* \> *Download*, as described in [Generate and Manage Certificates for Outbound Connection](https://help.sap.com/docs/IDENTITY_PROVISIONING/f48e822d6d484fa5ade7dda78b64d9f5/76867db8ce534becbfc08b050695df8e.html?version=Cloud).
+    1.  In your newly added SAP S/4HANA Cloud Public Edition proxy system, select the *Certificate* tab and choose *Generate* \> *Download*, as described in [Generate and Manage Certificates for Outbound Connection](https://help.sap.com/docs/IDENTITY_PROVISIONING/f48e822d6d484fa5ade7dda78b64d9f5/76867db8ce534becbfc08b050695df8e.html?version=Cloud).
 
         Skip step **a.** if you want to use basic authentication.
 
@@ -127,14 +127,14 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
 
     4.  [Create a communication arrangement](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/Latest/en-US/a0771f6765f54e1c8193ad8582a32edb.html) with the created system.
 
-        -   When `s4hana.cloud.api.version`=`1` is set in Identity Provisioning for the SAP S/4HANA Cloud proxy system, choose *Scenario ID* SAP\_COM\_0193 \(SAP Cloud Identity Provisioning Integration\).
+        -   When `s4hana.cloud.api.version`=`1` is set in Identity Provisioning for the SAP S/4HANA Cloud Public Edition proxy system, choose *Scenario ID* SAP\_COM\_0193 \(SAP Cloud Identity Provisioning Integration\).
 
             > ### Note:  
             > The communication scenario *SAP\_COM\_0193* is enhanced to support the User UUID attribute which is generated by Identity Authentication at user creation.
             > 
             > The User UUID is universally unique identifier. This attribute is immutable and unique across technology layers, such as user interface, APIs, and security tokens, as well as across products and lines of business contributing to a business process in the Intelligent Enterprise.
 
-        -   When `s4hana.cloud.api.version`=`3` is set in Identity Provisioning for the SAP S/4HANA Cloud proxy system, choose *Scenario ID* SAP\_COM\_0465 \(System for Cross-domain Identity Management Integration\).
+        -   When `s4hana.cloud.api.version`=`3` is set in Identity Provisioning for the SAP S/4HANA Cloud Public Edition proxy system, choose *Scenario ID* SAP\_COM\_0465 \(System for Cross-domain Identity Management Integration\).
 
             > ### Note:  
             > The communication scenario *SAP\_COM\_0465* allows you to maintain data via SCIM \(System for Cross-domain Identity Management\). For more information, see [Integrate Cross-Domain Identity Management](https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/aa4b03ced9dc481fafdf74c2f82976bc.html?version=2508.500).
@@ -186,7 +186,7 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
     </td>
     <td valign="top">
     
-    Enter the SAP S/4HANA Cloud API URL.
+    Enter the SAP S/4HANA Cloud Public Edition API URL.
 
     You can find the correct URL in the *API-URL* field of the communication arrangement set up for the communication scenario used.
 
@@ -275,9 +275,9 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
 
     By default, Identity Provisioning uses version *1*.
 
-    Version *1* means your SAP S/4HANA Cloud system consumes SAP S/4HANA Cloud API: Business User.
+    Version *1* means your SAP S/4HANA Cloud Public Edition system consumes SAP S/4HANA Cloud Public Edition API: Business User.
 
-    Version *3* means your SAP S/4HANA Cloud system consumes System for Cross-domain Identity Management \(SCIM\) API.
+    Version *3* means your SAP S/4HANA Cloud Public Edition system consumes System for Cross-domain Identity Management \(SCIM\) API.
     
     </td>
     </tr>
@@ -289,7 +289,7 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
     </td>
     <td valign="top">
     
-    In the event of archived \(disabled\) entities in your SAP S/4HANA Cloud system, choose whether the provisioning jobs to continue reading such entities or to skip them.
+    In the event of archived \(disabled\) entities in your SAP S/4HANA Cloud Public Edition system, choose whether the provisioning jobs to continue reading such entities or to skip them.
 
     This property is enabled by default. If you want to always read disabled entities, set the property to **false**, or delete it.
 
@@ -307,7 +307,7 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
     
     Defines whether the human resources \(HR\) integration is active or not.
 
-    The property is set to `true` by default. This means that the synchronization of business partners is managed by the HR system and SAP S/4HANA Cloud. When set to `false`, synchronization is handled by the identity management system instead.
+    The property is set to `true` by default. This means that the synchronization of business partners is managed by the HR system and SAP S/4HANA Cloud Public Edition. When set to `false`, synchronization is handled by the identity management system instead.
 
     *Possible values*:
 
@@ -360,7 +360,7 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
     </td>
     <td valign="top">
     
-    This property defines whether the current roles of a user to be preserved or overwritten by the Identity Provisioning service within the SAP S/4HANA Cloud proxy system in a hybrid scenario.
+    This property defines whether the current roles of a user to be preserved or overwritten by the Identity Provisioning service within the SAP S/4HANA Cloud Public Edition proxy system in a hybrid scenario.
 
     -   **true** – the current user roles will be deleted in the proxy system, and the user will be updated only with the roles provisioned by the service.
     -   **false** – the current user roles will be preserved, and the new roles \(if any\) will be added for the relevant user in the proxy system.
@@ -395,7 +395,7 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
     </td>
     <td valign="top">
     
-    When specified, only those SAP S/4HANA Cloud groups matching the filter expression will be read.
+    When specified, only those SAP S/4HANA Cloud Public Edition groups matching the filter expression will be read.
 
     Supported operators: eq \(equal\), co \(contains\), and sw \(starts with\).
 
@@ -419,7 +419,7 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
     </td>
     <td valign="top">
     
-    When specified, only those SAP S/4HANA Cloud users matching the filter expression will be read. You can filter users by **list of attributes** according to the API syntax of SAP S/4HANA Cloud.
+    When specified, only those SAP S/4HANA Cloud Public Edition users matching the filter expression will be read. You can filter users by **list of attributes** according to the API syntax of SAP S/4HANA Cloud Public Edition.
 
     You can set a single attribute or multiple ones as filter criteria. If you enter multiple attributes \(using OR operator\), the filter will search for any of them.
 
@@ -454,7 +454,7 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
     </td>
     <td valign="top">
     
-    Indicate how many business roles \(considered as *groups*\) per page to be read from your SAP S/4HANA Cloud system.
+    Indicate how many business roles \(considered as *groups*\) per page to be read from your SAP S/4HANA Cloud Public Edition system.
 
     The value must be an integer number.
 
@@ -507,9 +507,9 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
     
 8.  \(Optional\) Configure the transformations.
 
-    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP S/4HANA Cloud* proxy system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
+    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP S/4HANA Cloud Public Edition* proxy system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
-    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP S/4HANA Cloud. For more information, see:
+    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP S/4HANA Cloud Public Edition. For more information, see:
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
@@ -883,7 +883,7 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
     >         "targetPath": "$.personalInformation.firstName"
     >       },    
     > 
-    > // The following conditions refer to HR integration for your SAP S/4HANA Cloud system. If HR integration is activated 
+    > // The following conditions refer to HR integration for your SAP S/4HANA Cloud Public Edition system. If HR integration is activated 
     > // (i.e. property s4hana.cloud.hr.switch.active is set to true), then you don't need to provide family name for the users. 
     > // If it's deactivated (i.e. property s4hana.cloud.hr.switch.active is missing or set to false, then you have to provide family name. 
     > // You can apply these conditions to different user attributes, analogically to name.familyName. 

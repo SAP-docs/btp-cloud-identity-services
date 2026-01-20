@@ -53,7 +53,7 @@ Identity Provisioning supports provisioning users with Global User ID for the fo
 
 -   SAP SuccessFactors
 
--   SAP S/4HANA Cloud
+-   SAP S/4HANA Cloud Public Edition
 
 -   SAP S/4HANA through SAP Application Server ABAP
 
@@ -94,7 +94,7 @@ For more information on how to provision the Global User ID from your SAP Identi
 
 [Integrating the Service with SAP Identity Management 8.0](integrating-the-service-with-sap-identity-management-8-0-f44f931.md "")
 
-[Integrating the Service with SAP S/4HANA Cloud, SAP Integrated Business Planning and SAP Analytics Cloud](integrating-the-service-with-sap-s-4hana-cloud-sap-integrated-business-planning-and-sap-a-dd61aea.md "This integration document aims to provide information about single sign-on (SSO) options for SAP S/4HANA Cloud or SAP Integrated Business Planning and SAP Analytics Cloud, that use Identity Authentication as an authenticating or proxy identity provider.")
+[Integrating the Service with SAP S/4HANA Cloud Public Edition, SAP Integrated Business Planning and SAP Analytics Cloud](integrating-the-service-with-sap-s-4hana-cloud-public-edition-sap-integrated-business-pla-dd61aea.md "This integration document aims to provide information about single sign-on (SSO) options for SAP S/4HANA Cloud Public Edition or SAP Integrated Business Planning and SAP Analytics Cloud, that use Identity Authentication as an authenticating or proxy identity provider.")
 
 [Integrating the Service with Microsoft Entra ID](integrating-the-service-with-microsoft-entra-id-626b173.md "")
 

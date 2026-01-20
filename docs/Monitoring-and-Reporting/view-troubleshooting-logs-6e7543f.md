@@ -94,7 +94,7 @@ Once you have the results you can filter them by *Time*, *Severity*, *IP Address
 
 ## Next Steps
 
--   View information about the JWT payload of the OpenID Connect tokens issued or received by Identity Authentication. For more information, see [Logging OpenID Connect Tokens](logging-openid-connect-tokens-b6c42b5.md) 
+-   View information about the JWT payload of the OpenID Connect tokens issued or received by Identity Authentication. For more information, see [Logging OpenID Connect \(OIDC\) Tokens](logging-openid-connect-oidc-tokens-b6c42b5.md) 
 
 
 **Related Information**  

@@ -8,7 +8,7 @@ To propagate a user's logout to other applications and any corporate identity pr
 
 After the entire single logout \(SLO\) operation has completed, by default, Identity Authentication redirects the user agent to the Identity Authentication profile page of the user. To redirect the user after logout to a different page of the application that triggered the logout, include a post logout URI in your request. The URI must be among the allowed post logout redirect URIs configured for the application.
 
-For more information, see [OpenID Connect Application Configurations](openid-connect-application-configurations-1ae324e.md).
+For more information, see [OpenID Connect \(OIDC\) Application Configurations](openid-connect-oidc-application-configurations-1ae324e.md).
 
 If you include a post logout redirect URI in your request, include the client ID. Instead of including the client ID, you can include the ID token and the service reads the client ID from the token.
 
@@ -251,9 +251,9 @@ Identity Authentication terminates all user sessions and finally redirects the u
 **Related Information**  
 
 
-[Configuring OpenID Connect](configuring-openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
+[Configuring OpenID Connect \(OIDC\)](configuring-openid-connect-oidc-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect (OIDC) protected applications.")
 
-[Configure OpenID Connect Application](configure-openid-connect-application-8a0aa2e.md "This document is intended to help you configure an OpenID Connect application in the administration console for SAP Cloud Identity Services.")
+[Configure OpenID Connect \(OIDC\) Application](configure-openid-connect-oidc-application-8a0aa2e.md "This document is intended to help you configure an OpenID Connect (OIDC) application in the administration console for SAP Cloud Identity Services.")
 
 [RP-Initiated Logout \(Specification from OpenID Foundation\)](https://openid.net/specs/openid-connect-rpinitiated-1_0.html "Specification from OpenID Foundation")
 

@@ -4,7 +4,7 @@
 
 Identity Directory is the persistency layer of SAP Cloud Identity Services, providing a central place for storing and managing users and groups. You can use it in centralized provisioning scenarios for managing user access to SAP cloud applications from a single, central location.
 
-In a typical scenario, illustrated in the diagram below, the Identity Provisioning service reads identities from the customer's user store, like Microsoft Entra ID, and replicates them to the directory. From there, they are provisioned further to various SAP cloud systems like SAP S/4HANA Cloud, SAP Analytics Cloud and more.
+In a typical scenario, illustrated in the diagram below, the Identity Provisioning service reads identities from the customer's user store, like Microsoft Entra ID, and replicates them to the directory. From there, they are provisioned further to various SAP cloud systems like SAP S/4HANA Cloud Public Edition, SAP Analytics Cloud and more.
 
 For every newly created user, the directory generates a Global User ID, which serves as unique identifier across the entire landscape. This unique correlation attribute is then distributed by Identity Provisioning to the SAP cloud applications that need it for their integration with the SAP Task Center, for example. The unique identifier can also be generated externally and persisted in the identity directory during the initial replication from the customer’s user store. For more information, see [Global User ID in Integration Scenarios](https://help.sap.com/docs/cloud-identity/system-integration-guide/global-user-id-in-integration-scenarios).
 
@@ -34,7 +34,7 @@ Configure Local Identity Directory, both as a target and as a source system.
 
 In this scenario, the Local Identity Directory is initially set up as a target system for user and group provisioning. Typically, identities are initially provisioned from the customer's user store to the directory, thus establishing the user store as the leading source system for identity management. Following this, users and groups from other source systems are provisioned to the directory. Finally, the identities in the directory are replicated to the target systems.
 
-The following configuration example uses a number of systems, including: Microsoft Entra ID, Local Identity Directory, and SAP S/4HANA Cloud.
+The following configuration example uses a number of systems, including: Microsoft Entra ID, Local Identity Directory, and SAP S/4HANA Cloud Public Edition.
 
 1.  Sign in to SAP Cloud Identity Services administration console and navigate to *Identity Provisioning*.
 
@@ -554,7 +554,7 @@ The following configuration example uses a number of systems, including: Microso
     > }
     > ```
 
-11. Add [SAP S/4HANA Cloud](sap-s-4hana-cloud-d3f93a7.md) as a target system.
+11. Add [SAP S/4HANA Cloud Public Edition](sap-s-4hana-cloud-public-edition-d3f93a7.md) as a target system.
 
 12. Start another provisioning job, this time from the *Local Identity Directory* source system.
 
@@ -563,7 +563,7 @@ The following configuration example uses a number of systems, including: Microso
 
 ### Results
 
-The Microsoft Entra ID users and groups are provisioned to the identity directory. It now becomes the central point of truth for identity information. Once in the directory, the users and groups are replicated to the SAP S/4HANA Cloud target.
+The Microsoft Entra ID users and groups are provisioned to the identity directory. It now becomes the central point of truth for identity information. Once in the directory, the users and groups are replicated to the SAP S/4HANA Cloud Public Edition target.
 
 
 

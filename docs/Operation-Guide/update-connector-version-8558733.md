@@ -206,7 +206,7 @@ To update your connector to use a new API, proceed as follows:
         <tr>
         <td valign="top">
         
-        SAP S/4HANA Cloud
+        SAP S/4HANA Cloud Public Edition
         
         </td>
         <td valign="top">
@@ -216,7 +216,7 @@ To update your connector to use a new API, proceed as follows:
         </td>
         <td valign="top">
         
-        -   `1` - SAP S/4HANA Cloud API: Business User is used. This is the default value.
+        -   `1` - SAP S/4HANA Cloud Public Edition API: Business User is used. This is the default value.
 
         -   `3` - System for Cross-domain Identity Management \(SCIM\) API is used.
 
@@ -391,7 +391,7 @@ To update your connector to use a new API, proceed as follows:
         <tr>
         <td valign="top">
         
-        SAP S/4HANA Cloud
+        SAP S/4HANA Cloud Public Edition
         
         </td>
         <td valign="top">
@@ -530,5 +530,5 @@ To update your connector to use a new API, proceed as follows:
 
 [Update SAP Integrated Business Planning](update-sap-integrated-business-planning-18d1280.md "Update the SAP Integrated Business Planning connector to a new version.")
 
-[Update SAP S/4HANA Cloud](update-sap-s-4hana-cloud-6339b86.md "Update the SAP Integrated Business Planning connector to a new version.")
+[Update SAP S/4HANA Cloud Public Edition](update-sap-s-4hana-cloud-public-edition-6339b86.md "Update the SAP S/4HANA Cloud Public Edition connector to a new version.")
 

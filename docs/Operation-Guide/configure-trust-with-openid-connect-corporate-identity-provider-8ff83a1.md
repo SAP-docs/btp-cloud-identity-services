@@ -378,7 +378,7 @@ Configure the corporate identity provider in the administration console for SAP 
 
 [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md "As a tenant administrator, you can edit both your own authorizations and other administrators' authorizations in the administration console for SAP Cloud Identity Services. By editing the administrator authorizations you can also delete an administrator.")
 
-[Logging OpenID Connect Tokens](../Monitoring-and-Reporting/logging-openid-connect-tokens-b6c42b5.md "Tenant administrator can view the JWT payload of the OpenID Connect tokens issued or received by Identity Authentication.")
+[Logging OpenID Connect \(OIDC\) Tokens](../Monitoring-and-Reporting/logging-openid-connect-oidc-tokens-b6c42b5.md "Tenant administrator can view the JWT payload of the OpenID Connect (OIDC) tokens issued or received by Identity Authentication.")
 
 [Microsoft identity platform application authentication certificate credentials](https://learn.microsoft.com/en-us/azure/active-directory/develop/active-directory-certificate-credentials)
 

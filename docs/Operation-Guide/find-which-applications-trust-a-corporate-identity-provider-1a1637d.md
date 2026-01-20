@@ -20,13 +20,13 @@ Applications trust in corporate identity providers is founded in one or more of 
 
     For more information, see [Configure Conditional Authentication for an Application](configure-conditional-authentication-for-an-application-0143dce.md).
 
--   Trust all identity providers
+-   Trust identity providers
 
-    For more information, see [Enable SSO with All Corporate Identity Providers](enable-sso-with-all-corporate-identity-providers-f7ec8d2.md).
+    For more information, see [Enable SSO with Corporate Identity Providers](enable-sso-with-corporate-identity-providers-f7ec8d2.md).
 
 
 > ### Note:  
-> Only conditional authentication and trust in all identity providers can't be combined.
+> Only conditional authentication and trust in identity providers can't be combined.
 
 
 

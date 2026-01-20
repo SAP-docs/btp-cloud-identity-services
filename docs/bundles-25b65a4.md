@@ -49,6 +49,8 @@ SAP \(G-Z\)
 <tr>
 <td valign="top">
 
+-   SAP Ariba Applications
+
 -   SAP Build Work Zone, advanced edition
 
 -   SAP Business Technology Platform
@@ -75,7 +77,7 @@ SAP \(G-Z\)
 </td>
 <td valign="top">
 
--   SAP Integrated Business Planning for Supply Chain
+-   SAP Integrated Business Planning
 
 -   SAP Jam Collaboration
 
@@ -83,7 +85,7 @@ SAP \(G-Z\)
 
 -   SAP Market Communication for Utilities
 
--   SAP S/4HANA Cloud
+-   SAP S/4HANA Cloud Public Edition
 
 -   SAP SuccessFactors
 

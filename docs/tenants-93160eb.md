@@ -93,7 +93,7 @@ Cloud Foundry - Region Name
 </th>
 <th valign="top">
 
-Cloud Foundry - Region Key
+Cloud Foundry - Region
 
 </th>
 <th valign="top">
@@ -106,6 +106,60 @@ Identity Authentication - Data Center
 Infrastructure
 
 </th>
+</tr>
+<tr>
+<td valign="top">
+
+SAP
+
+</td>
+<td valign="top">
+
+UAE \(Dubai\)
+
+</td>
+<td valign="top">
+
+ae01
+
+</td>
+<td valign="top">
+
+United Arab Emirates \(Dubai\)
+
+</td>
+<td valign="top">
+
+SAP
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP
+
+</td>
+<td valign="top">
+
+Australia \(Sydney\)
+
+</td>
+<td valign="top">
+
+ap01
+
+</td>
+<td valign="top">
+
+Australia \(Sydney\)
+
+</td>
+<td valign="top">
+
+SAP / Azure
+
+</td>
 </tr>
 <tr>
 <td valign="top">
@@ -179,7 +233,7 @@ ap12
 </td>
 <td valign="top">
 
-Seoul \(South Korea\)
+South Korea \(Seoul\)
 
 </td>
 <td valign="top">
@@ -385,6 +439,33 @@ Microsoft Azure
 </td>
 <td valign="top">
 
+Canada Central \(Toronto\)
+
+</td>
+<td valign="top">
+
+ca20
+
+</td>
+<td valign="top">
+
+Canada \(Toronto\)
+
+</td>
+<td valign="top">
+
+Azure
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Microsoft Azure
+
+</td>
+<td valign="top">
+
 Switzerland \(Zurich\)
 
 </td>
@@ -401,6 +482,60 @@ Switzerland \(Zürich\)
 <td valign="top">
 
 Azure
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP
+
+</td>
+<td valign="top">
+
+Europe \(Frankfurt\) - EU Access Only
+
+</td>
+<td valign="top">
+
+eu01
+
+</td>
+<td valign="top">
+
+Europe \(Frankfurt / Amsterdam\)
+
+</td>
+<td valign="top">
+
+SAP
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP
+
+</td>
+<td valign="top">
+
+Europe \(Rot\) - SAP EU Access
+
+</td>
+<td valign="top">
+
+eu02
+
+</td>
+<td valign="top">
+
+Europe \(Frankfurt / Amsterdam\)
+
+</td>
+<td valign="top">
+
+SAP
 
 </td>
 </tr>
@@ -461,6 +596,33 @@ AWS
 <tr>
 <td valign="top">
 
+Amazon Web Services
+
+</td>
+<td valign="top">
+
+Europe \(Milan\)
+
+</td>
+<td valign="top">
+
+eu13
+
+</td>
+<td valign="top">
+
+Germany \(Frankfurt\)
+
+</td>
+<td valign="top">
+
+AWS
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Microsoft Azure
 
 </td>
@@ -476,12 +638,12 @@ eu20
 </td>
 <td valign="top">
 
-Netherlands \(Amsterdam\) / Germany \(Frankfurt\)
+Germany \(Frankfurt\)
 
 </td>
 <td valign="top">
 
-SAP
+AWS
 
 </td>
 </tr>
@@ -520,6 +682,33 @@ Google Cloud
 </td>
 <td valign="top">
 
+Israel \(Tel Aviv\)
+
+</td>
+<td valign="top">
+
+il30
+
+</td>
+<td valign="top">
+
+Israel \(Tel Aviv\)
+
+</td>
+<td valign="top">
+
+Google Cloud
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Google Cloud
+
+</td>
+<td valign="top">
+
 India \(Mumbai\) GCP
 
 </td>
@@ -542,6 +731,33 @@ AWS
 <tr>
 <td valign="top">
 
+SAP
+
+</td>
+<td valign="top">
+
+Japan \(Tokyo\)
+
+</td>
+<td valign="top">
+
+jp01
+
+</td>
+<td valign="top">
+
+Japan \(Tokyo / Osaka\)
+
+</td>
+<td valign="top">
+
+SAP
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Amazon Web Services
 
 </td>
@@ -557,7 +773,7 @@ jp10
 </td>
 <td valign="top">
 
-Japan \(Tokyo\) / Japan \(Osaka\)
+Japan \(Tokyo / Osaka\)
 
 </td>
 <td valign="top">
@@ -584,7 +800,7 @@ jp20
 </td>
 <td valign="top">
 
-Japan \(Tokyo\) / Japan \(Osaka\)
+Japan \(Tokyo / Osaka\)
 
 </td>
 <td valign="top">
@@ -611,7 +827,7 @@ jp30
 </td>
 <td valign="top">
 
-Japan \(Tokyo\) / Japan \(Osaka\)
+Japan \(Tokyo / Osaka\)
 
 </td>
 <td valign="top">
@@ -638,7 +854,7 @@ jp31
 </td>
 <td valign="top">
 
-Japan \(Tokyo\) / Japan \(Osaka\)
+Japan \(Tokyo / Osaka\)
 
 </td>
 <td valign="top">
@@ -665,7 +881,7 @@ sa30
 </td>
 <td valign="top">
 
-Dammam, Saudi Arabia, Middle East
+Saudi Arabia \(Dammam\) - Regulated
 
 </td>
 <td valign="top">
@@ -692,12 +908,39 @@ sa31
 </td>
 <td valign="top">
 
-Saudi Arabia \(Riyadh, Dammam\)
+Saudi Arabia \(Dammam\)
 
 </td>
 <td valign="top">
 
 SAP
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP
+
+</td>
+<td valign="top">
+
+US West \(Colorado\)
+
+</td>
+<td valign="top">
+
+us02
+
+</td>
+<td valign="top">
+
+USA \(Quincy, WA\)
+
+</td>
+<td valign="top">
+
+Azure
 
 </td>
 </tr>
@@ -719,7 +962,7 @@ us10
 </td>
 <td valign="top">
 
-United States \(Sterling\) / United States \(Colorado\)
+USA \(Sterling, VA / N. Virginia\)
 
 </td>
 <td valign="top">
@@ -731,12 +974,12 @@ SAP
 <tr>
 <td valign="top">
 
-
+Amazon Web Services
 
 </td>
 <td valign="top">
 
-US West \(OR\)
+US West \(Oregon\)
 
 </td>
 <td valign="top">
@@ -746,7 +989,7 @@ us11
 </td>
 <td valign="top">
 
-West US 2
+USA \(Quincy, WA\)
 
 </td>
 <td valign="top">
@@ -773,7 +1016,7 @@ us20
 </td>
 <td valign="top">
 
-West US 2
+USA \(Quincy, WA\)
 
 </td>
 <td valign="top">
@@ -800,7 +1043,7 @@ us21
 </td>
 <td valign="top">
 
-United States \(Sterling\) / United States \(Colorado\)
+USA \(Sterling, VA / N. Virginia\)
 
 </td>
 <td valign="top">
@@ -827,7 +1070,7 @@ us30
 </td>
 <td valign="top">
 
-West US 2
+USA \(Quincy, WA\)
 
 </td>
 <td valign="top">

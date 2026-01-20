@@ -140,5 +140,5 @@ The newly created application appears on the list with the applications on the l
 **Related Information**  
 
 
-[Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md "You can create a new OpenID Connect application.")
+[Create OpenID Connect \(OIDC\) Application](create-openid-connect-oidc-application-62fb1c3.md "You can create a new OpenID Connect (OIDC) application.")
 

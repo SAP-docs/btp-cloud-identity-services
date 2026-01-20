@@ -293,7 +293,7 @@ Julie Armstrong is a customer of Company A. She accesses the company's applicati
 
 [Configure Identity Federation for Applications](configure-identity-federation-for-applications-1e8e34e.md "Tenant administrator can enable identity federation for an application to override the identity federation settings on the configured corporate identity provider for the application.")
 
-[Enable SSO with All Corporate Identity Providers](enable-sso-with-all-corporate-identity-providers-f7ec8d2.md "Tenant administrators can enable IdP-initiated Single Sign-On (SSO) from all configured corporate identity providers (IdPs).")
+[Enable SSO with Corporate Identity Providers](enable-sso-with-corporate-identity-providers-f7ec8d2.md "Tenant administrators can enable IdP-initiated Single Sign-On (SSO) from one, more than one or all configured corporate identity providers (IdPs).")
 
 [Configure Login Hint Parameter](configure-login-hint-parameter-c6dd6a5.md "Tenant administrator can configure the login hint parameter via the administration console for SAP Cloud Identity Services.")
 

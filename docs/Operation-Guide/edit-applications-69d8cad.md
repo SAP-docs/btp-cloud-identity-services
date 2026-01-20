@@ -494,6 +494,10 @@ To edit the application configurations, proceed as follows:
 
     -   Default Name ID Format
     -   Attributes
+
+        > ### Note:  
+        > Attributes from different sources are inherited separately. For more information about the different user attribute sources, see [User Attributes](user-attributes-ed2797d.md).
+
     -   Dependencies
     -   Risk-Based Authentication
     -   Conditional Authentication

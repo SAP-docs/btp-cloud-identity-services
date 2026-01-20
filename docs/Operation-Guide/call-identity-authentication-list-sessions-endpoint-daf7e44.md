@@ -21,7 +21,7 @@ The service endpoint returns the list of sessions associated with the OpenID Con
 
 -   For your business application, there’s an OIDC application in Identity Authentication.
 
-    For more information, see [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md).
+    For more information, see [Create OpenID Connect \(OIDC\) Application](create-openid-connect-oidc-application-62fb1c3.md).
 
 -   For your OIDC application in Identity Authentication, you've prepared an authentication credential for the API call. The API supports the following authentication schemes:
 
@@ -235,5 +235,5 @@ Content-Type: application/json
 **Related Information**  
 
 
-[Configuring OpenID Connect](configuring-openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
+[Configuring OpenID Connect \(OIDC\)](configuring-openid-connect-oidc-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect (OIDC) protected applications.")
 

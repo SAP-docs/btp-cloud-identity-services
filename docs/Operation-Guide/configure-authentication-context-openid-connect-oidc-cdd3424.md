@@ -1,6 +1,6 @@
 <!-- loiocdd3424e8e5c4f3bb903decfb4a5d7ed -->
 
-# Configure Authentication Context \(OpenID Connect\)
+# Configure Authentication Context \(OpenID Connect \(OIDC\)\)
 
 Tenant administrator can configure the authentication context in the request sent to the corporate identity providers when Identity Authentication acts as a proxy identity provider.
 
@@ -11,14 +11,14 @@ Tenant administrator can configure the authentication context in the request sen
 ## Context
 
 > ### Note:  
-> The following configuration is valid for the OpenID connect corporate identity providers.
+> The following configuration is valid for the OpenID Connect \(OIDC\) corporate identity providers.
 
-The authentication context enables administrators to ensure an authentication context. For example, you can require the corporate identity provider to authenticate users for a particular application with multifactor authentication or certificate-based authentication. The corporate identity providers define what authentication contexts that they support as well as the values they require to trigger a particular authentication context. The OIDC standard doesn't define the authentication context values.
+The authentication context enables administrators to ensure an authentication context. For example, you can require the corporate identity provider to authenticate users for a particular application with multifactor authentication or certificate-based authentication. The corporate identity providers define what authentication contexts that they support as well as the values they require to trigger a particular authentication context. The OpenID Connect \(OIDC\) standard doesn't define the authentication context values.
 
 For more information, see [OpenID Connect Core 1.0 incorporating errata set 2](https://openid.net/specs/openid-connect-core-1_0.html).
 
 > ### Tip:  
-> If the authentication context exists in the metadata of the identity provider it, can be seen in the administration console at *Identity Providers* \> *Corporate Identity Providers* \> *from the list - the corporate IdP that provides user authentication to the application* \> *OpenID Connect Configuration* \> *Supported Authentication Contexts section*.
+> If the authentication context exists in the metadata of the identity provider it, can be seen in the administration console at *Identity Providers* \> *Corporate Identity Providers* \> *from the list - the corporate IdP that provides user authentication to the application* \> *OpenID Connect \(OIDC\) Configuration* \> *Supported Authentication Contexts section*.
 
 > ### Restriction:  
 > You can add up to 20 authentication context references with a length of up to 99 characters each.
@@ -42,7 +42,7 @@ For more information, see [OpenID Connect Core 1.0 incorporating errata set 2](h
 
 4.  Choose the *Trust* tab.
 
-5.  Under *Conditional Authentication*, choose *Configure Requests to Corporate Identity Providers* \> *OpenID Connect*.
+5.  Under *Conditional Authentication*, choose *Configure Requests to Corporate Identity Providers* \> *OpenID Connect \(OIDC\)*.
 
 6.  Choose *Add* \> *enter the authentication context class references* \> *save your changes*.
 

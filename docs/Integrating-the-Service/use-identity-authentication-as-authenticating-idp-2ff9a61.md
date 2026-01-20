@@ -20,7 +20,7 @@ The tables below show the pre-configured settings for your system that you have 
 > 
 > If you have a configured custom domain, the URL has the following pattern: `<your custom domain>/admin`.
 
-**ABAP tenants provisioned before SAP S/4HANA Cloud 2208**
+**ABAP tenants provisioned before SAP S/4HANA Cloud Public Edition 2208**
 
 
 <table>
@@ -44,7 +44,7 @@ Value
 <tr>
 <td valign="top" rowspan="4">
 
-S/4HANA Cloud or Integrated Business Planning
+S/4HANA Cloud Public Edition or Integrated Business Planning
 
 </td>
 <td valign="top">
@@ -57,7 +57,7 @@ S/4HANA Cloud or Integrated Business Planning
 `Login Name`
 
 > ### Note:  
-> For successful authentication, the user name of the business user in S/4HANA Cloud or Integrated Business Planning must be identical to the login name.
+> For successful authentication, the user name of the business user in S/4HANA Cloud Public Edition or Integrated Business Planning must be identical to the login name.
 
 
 
@@ -154,7 +154,7 @@ Identity Authentication
 </tr>
 </table>
 
-**ABAP tenants provisioned from SAP S/4HANA Cloud 2208 onwards**
+**ABAP tenants provisioned from SAP S/4HANA Cloud Public Edition 2208 onwards**
 
 
 <table>
@@ -178,7 +178,7 @@ Value
 <tr>
 <td valign="top" rowspan="4">
 
-S/4HANA Cloud or SAP Integrated Business Planning
+S/4HANA Cloud Public Edition or SAP Integrated Business Planning
 
 </td>
 <td valign="top">
@@ -191,7 +191,7 @@ S/4HANA Cloud or SAP Integrated Business Planning
 `Email`
 
 > ### Note:  
-> For successful authentication, the email address of the business user in S/4HANA Cloud or Integrated Business Planning must be identical to the email.
+> For successful authentication, the email address of the business user in S/4HANA Cloud Public Edition or Integrated Business Planning must be identical to the email.
 
 
 
@@ -344,7 +344,7 @@ SAP Datasphere
 > ### Note:  
 > The same identifying attribute \(login name or email address\) is used for both ABAP and SAP Analytics Cloud. User records must be created in ABAP and are then automatically replicated to SAP Analytics Cloud:
 
--   Replication from SAP S/4HANA Cloud to SAP Analytics Cloud happens via a pre-integrated Identity Provisioning tenant \(communication scenario *SAP\_COM\_0193*\).
+-   Replication from SAP S/4HANA Cloud Public Edition to SAP Analytics Cloud happens via a pre-integrated Identity Provisioning tenant \(communication scenario *SAP\_COM\_0193*\).
 -   Replication from SAP Integrated Business Planning to SAP Analytics Cloud happens via the SAP-managed communication scenario *SAP\_COM\_1187*.
 
 **Related Information**  
@@ -364,5 +364,5 @@ SAP Datasphere
 
 [Communication Scenarios Managed by SAP](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/c15c71affb2243ec9abc071c1a62503c.html)
 
-[Initial System Access for SAP S/4HANA Cloud in Your 3-system Landscape](https://help.sap.com/docs/SAP_S4HANA_CLOUD/b249d650b15e4b3d9fc2077ee921abd0/30415f166409468689b31571989e4b95.html?state=DRAFT&version=2202.500)
+[Initial System Access for SAP S/4HANA Cloud Public Edition in Your 3-system Landscape](https://help.sap.com/docs/SAP_S4HANA_CLOUD/b249d650b15e4b3d9fc2077ee921abd0/30415f166409468689b31571989e4b95.html?state=DRAFT&version=2202.500)
 

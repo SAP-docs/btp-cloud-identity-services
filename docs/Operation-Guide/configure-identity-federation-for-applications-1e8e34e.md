@@ -186,5 +186,5 @@ When enabled, the user is authenticated by the corporate IdP, then *Identity Aut
 
 [Configure Conditional Authentication for an Application](configure-conditional-authentication-for-an-application-0143dce.md "Tenant administrator can define rules for authenticating identity provider according to email domain, user type, user group, and IP range (specified in CIDR notation).")
 
-[Enable SSO with All Corporate Identity Providers](enable-sso-with-all-corporate-identity-providers-f7ec8d2.md "Tenant administrators can enable IdP-initiated Single Sign-On (SSO) from all configured corporate identity providers (IdPs).")
+[Enable SSO with Corporate Identity Providers](enable-sso-with-corporate-identity-providers-f7ec8d2.md "Tenant administrators can enable IdP-initiated Single Sign-On (SSO) from one, more than one or all configured corporate identity providers (IdPs).")
 

@@ -15,7 +15,7 @@ You configure the attributes by defining which user attribute corresponds to the
 > ### Note:  
 > The user attribute name must match the name that the application is expecting.
 
-The attributes are also put in the `id_token` if the application is OpenID connect. For more information, see [Configuring OpenID Connect](configuring-openid-connect-a789c9c.md).
+The attributes are also put in the `id_token` if the application is OpenID connect. For more information, see [Configuring OpenID Connect \(OIDC\)](configuring-openid-connect-oidc-a789c9c.md).
 
 By default, Identity Authentication sets only the following user attribute names which are added at the creation of the application:
 
@@ -185,7 +185,7 @@ Identity Authentication supports also the following user attributes:
 > ### Note:  
 > The **Value** column lists the attributes that can be shown on the registration and upgrade forms. The **Name** lists the attributes that are sent in the assertion.
 > 
-> The configured custom attributes are also put in the `id_token` if the application is OpenID connect. For more information, see [Configuring OpenID Connect](configuring-openid-connect-a789c9c.md).
+> The configured custom attributes are also put in the `id_token` if the application is OpenID connect. For more information, see [Configuring OpenID Connect \(OIDC\)](configuring-openid-connect-oidc-a789c9c.md).
 
 > ### Remember:  
 > When the application uses a corporate IdP for authentication, and *Identity Federation* is disabled, the user attributes configurations in the administration console for SAP Cloud Identity Services aren't relevant. In such scenarios Identity Authentication sends to the application the user attributes that come from the corporate identity provider without changing them. For more information about the corporate identity provider scenario, see [Corporate Identity Providers](corporate-identity-providers-19f3eca.md) and [Configure Identity Federation](configure-identity-federation-c029bbb.md).

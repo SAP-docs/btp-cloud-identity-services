@@ -238,6 +238,11 @@ To view the audit logs, follow the procedures below:
     <th valign="top">
 
     Default
+
+    > ### Note:  
+    > The default Cloud Foundry region where logs are sent.
+
+
     
     </th>
     </tr>

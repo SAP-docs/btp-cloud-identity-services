@@ -953,9 +953,9 @@ logon.ui.label.change.user=Change
 
 logon.ui.label.password=Password
 
-logon.ui.label.tooltip.hide=Hide Field
+logon.ui.label.tooltip.hide=Hide Password
 
-logon.ui.label.tooltip.show=Show Field
+logon.ui.label.tooltip.show=Show Password
 
 logon.ui.label.otpCode=Passcode
 
@@ -1053,6 +1053,8 @@ logon.ui.label.verifyTelephoneTitle=Verify Your Telephone Number
 
 logon.ui.label.verifyTelephoneDescription=The {0} application requires telephone verification. We will send a code to your telephone number. Please enter the code you have received and choose Continue.
 
+logon.ui.label.verifyTelephoneCaptchaDescription=The {0} application requires telephone verification. If CAPTCHA is required, please verify it and choose {1}. Enter the code you receive in the field below and choose {2}.
+
 logon.ui.label.changeTelephoneMessage=You can change your telephone number. Please type: +(country code) followed by the area code without the leading zero, followed by the subscriber number. Example: +(XXX) XXX XXXXXXX
 
 logon.ui.label.telephone=Telephone
@@ -1060,6 +1062,8 @@ logon.ui.label.telephone=Telephone
 logon.ui.label.code=Code
 
 logon.ui.label.sendNewCode=Request New Code
+
+logon.ui.label.sendCode=Request Code
 
 logon.ui.label.callPhone=Request Phone Call
 
@@ -1090,6 +1094,16 @@ logon.ui.loginSection.button.biometric=Biometric
 logon.ui.loginSection.button.social=Social
 
 logon.ui.loginSection.passwordlessAuth.title=To sign in with biometrics, choose Continue.
+
+logon.ui.messageStrip.closeButton.error=Close error message
+
+logon.ui.messageStrip.closeButton.info=Close information message
+
+logon.ui.messageStrip.closeButton.warning=Close warning message
+
+logon.ui.messageStrip.closeButton.success=Close success message
+
+logon.ui.messageStrip.closeButton.default=Close message
 
 logon.ui.tooltip.SOCIAL_NOT_ALLOWED=The site you are attempting to access requires your password.  Enter your password and click Continue.
 
@@ -1143,6 +1157,8 @@ logon.ui.errormessage.PASSCODE_LOCKED=Your account has been temporarily locked b
 
 logon.ui.errormessage.INVALID_CAPTCHA_PROTECTION=We are unable to validate your Captcha protection at the moment. Please try again later.
 
+logon.ui.errormessage.SESSION_EXPIRED=Your session has expired. Please sign in again.
+
 logon.ui.errormessage.RSA_CODE_NOT_PROVIDED=RADIUS Server code not provided. Please enter your code.
 
 logon.ui.errormessage.RSA_CODE_REJECTED=Wrong RADIUS Server code. Please enter new code and try again.
@@ -1164,6 +1180,8 @@ logon.ui.errormessage.SMS_CODE_NOT_SENT_NOT_UNIQUE_PHONE=We could no\u0080\u0099
 logon.ui.errormessage.SMS_SERVER_NOT_CONFIGURED=SMS service configuration is missing. Please contact your system administrator.
 
 logon.ui.errormessage.INVALID_PHONE_NUMBER=Your telephone number is invalid. Please change and try again.
+
+logon.ui.errormessage.INVALID_PHONE_CAPTCHA=The captcha you entered is incorrect. Please try again.
 
 logon.ui.errormessage.FAILED_SEND_SMS_CODE=We couldn't send you a code. Please check your telephone number and try again.
 
@@ -1203,9 +1221,9 @@ logon.ui.errormessage.CONFLICTING_USER_MAIL=You cannot log on. Your email addres
 
 logon.ui.securityQuestion.title=Security Questions
 
-logon.ui.securityQuestion.hint=Follow the link to
+logon.ui.securityQuestion.hint=Follow the link to reset your password using
 
-logon.ui.securityQuestion.link=Reset your password using security questions
+logon.ui.securityQuestion.link=Security Questions
 
 logon.ui.securityQuestion.description=To reset your password provide the required information and answers below.
 
@@ -1260,6 +1278,8 @@ invitation.mail.subject=You are invited to {0}
 tou.termsAndConditions=Terms and Conditions
 
 tou.termsOfUse=Terms of Use
+
+tou.privacyPolicy=Privacy Policy
 
 tou.ui.label.version=Version {0}
 
@@ -1397,6 +1417,8 @@ privacy.link.text=Familiarize yourself with our <a target\="_blank" href\="{0}">
 
 privacy.link.updatedText=Note: There is a new version of our privacy statement available <a target\="_blank" href\="{0}">here</a>.
 
+privacy.link.ppCheckEnabled=By checking this box, I confirm that I have read and understood the above <a target\="_blank" id\="pdLink" href\="{0}">Privacy Statement</a>, which explains how my personal data will be processed in accordance with applicable data protection laws.
+
 upgraderegistration.upgradeAccount=Upgrade Your Account
 
 upgraderegistration.ui.label.register=Save and Continue
@@ -1463,6 +1485,10 @@ registerForm.validation.max.size=The value must not have more than {max} charact
 
 registerForm.validation.required=Required field
 
+registerForm.validation.zip.country.required=The zip code can't be validated because the country is not provided. Please contact your administrator.
+
+registerForm.validation.region.country.required=The region can't be validated because the country is not provided. Please contact your administrator.
+
 registerForm.validation.invalidMail=Enter a valid email address.
 
 registerForm.validation.invalidTelephone=Enter a valid telephone number, using only brackets and hyphens to separate digits.
@@ -1478,6 +1504,8 @@ registerForm.please_select=Select
 registerForm.please_select_special=Select...
 
 registerForm.validation.accept.terms.of.use=To accept the terms of use, check the box
+
+registerForm.validation.accept.privacy.policy=To accept the privacy policy, check the box
 
 registerForm.validation.passwordsDoNotMatch=Must match the password
 
@@ -1583,6 +1611,8 @@ registerForm.relationshipToSAP=Relationship to SAP
 
 registerForm.jobFunction=Job Function
 
+registerForm.department=Department
+
 registerForm.futureContactPrefs=Contact Preferences
 
 registerForm.futureContactPrefs.text=In addition to communications that will result from this registration, would you also like to receive news and event notifications from SAP that are specific to your interests?
@@ -1667,6 +1697,7 @@ error.oauth.signing.process.failed.wrong.client.secret.error=Social sign-on fail
 
 error.oauth.access.denied.errorMessage=Access denied from social provider.
 
+
 token.invalid=Your email activation link is invalid or has already been used.
 
 token.expired=Your email activation link has expired. A new email has been sent automatically. To activate your account, click the link in the new email.
@@ -1739,6 +1770,8 @@ profileManagement.global.label.submit=Submit
 
 profileManagement.global.label.change=Change
 
+profileManagement.global.label.reset=Reset
+
 profileManagement.global.button.save=Save
 
 profileManagement.global.button.close=Close
@@ -1795,9 +1828,15 @@ profileManagement.editPersonalInfo.changeNameFailed=Could not change your person
 
 profileManagement.editPersonalInfo.phoneVerify=We have sent a code to your telephone number. Please enter the code here.
 
-profileManagement.editPersonalInfo.phoneVerifyTitle=Verify Your Telephone Number
+profileManagement.editPersonalInfo.phoneVerifyCaptchaRequestCode=Please verify the CAPTCHA if required and request a verification code.
 
-profileManagement.editPersonalInfo.phoneChangeTitle=Change Your Telephone Number
+profileManagement.editPersonalInfo.phoneVerifyCaptcha=Please verify the captcha if required and request a verification code.
+
+profileManagement.editPersonalInfo.phoneVerifyRequestCode=Please request a verification code and enter it in the field below.
+
+profileManagement.editPersonalInfo.phoneVerifyTitle=Verify your phone number
+
+profileManagement.editPersonalInfo.phoneChangeTitle=Change your phone number
 
 profileManagement.emailInfo.label.email=Email
 
@@ -2167,6 +2206,8 @@ profileManagement.generateCertificates.notAfter=Not After
 
 profileManagement.generateCertificates.addCertificate=Generate
 
+profileManagement.generateCertificates.label=Generating
+
 profileManagement.generateCertificates.message=You can have up to two certificates.
 
 profileManagement.generateCertificates.deleteMessage=To remove the selected certificate with serial number: %{param0}, please enter your password.
@@ -2248,6 +2289,7 @@ samlRedirect.logoutRequest.message.default=Your logout request has been forwarde
 samlRedirect.logoutResponse.title=SAML Logout Response from Identity Authentication
 
 samlRedirect.logoutResponse.message.default=You have now been logged out. Your request has been forwarded to the target system for processing.
+
 
 oidcLogout.frontchannel.title=OIDC Frontchannel Logout Request from Identity Authentication
 
@@ -2597,9 +2639,9 @@ error.ui.unknown.application.error=An error has occurred. Please visit the appli
 
 error.ui.unexistent.text.resource.error=The requested document does not exist. Please contact your system administrator.
 
-sci_eu_data_protection.headline=EU Access Data Processing
+sci_eu_data_protection.headline=European Union (EU) Access Mode
 
-sci_eu_data_protection.message=<p>This instance is operated and supported in European Union EU Access Service.<br>By pressing the <strong>Confirm</strong> button you confirm that you are either:<br>(i) physically located in EU or<br>(ii) you have positively verified that EU Access restrictions do not apply in your situation or<br>(iii) you are a Technical Support engineer located outside EEA or Switzerland, and you have read and accepted the<a href\="https://wiki.one.int.sap/wiki/display/idservice/SCI+EU+DP+Working+Instructions" target\="_blank">SCI EUDP Working Instructions</a>.<br>Your confirmation will be logged.</p>
+sci_eu_data_protection.message=<p>This instance is operated and supported in the European Union EU Access Service.<br>By selecting <strong>Confirm</strong>, you confirm that you are either:<br>(i) physically located in the EU or<br>(ii) you have verified that EU Access restrictions do not apply in your situation or<br>(iii) you are a Technical Support engineer located outside the EEA or Switzerland, and you have read and accepted the<a href\="https://wiki.one.int.sap/wiki/display/idservice/SCI+EU+DP+Working+Instructions" target\="_blank">SCI EUDP Working Instructions</a>.<br>Your confirmation will be logged.</p>
 
 sci_eu_data_protection.confirm=Confirm
 
@@ -2615,13 +2657,13 @@ error.ui.errormessage.invalidServiceProvider=Identity provider cannot process th
 
 error.ui.errormessage.missingMail=An email address is required in order to continue. Please contact your system administrator.
 
-error.ui.errormessage.invalidClientId=SAP Cloud Identity Services can't process this OpenID request. The client_id sent by the client application must match the configuration for the application in SAP Cloud Identity Services.
+error.ui.errormessage.invalidClientId=SAP Cloud Identity Services can't process this OpenID Connect request. The client_id sent by the client application must match the configuration for the application in SAP Cloud Identity Services.
 
-error.ui.errormessage.invalidRedirectUri=SAP Cloud Identity Services can't process this OpenID request. The redirect_uri sent by the client application must match the configuration for the application in SAP Cloud Identity Services.
+error.ui.errormessage.invalidRedirectUri=SAP Cloud Identity Services can't process this OpenID Connect request. The redirect_uri sent by the client application must match the configuration for the application in SAP Cloud Identity Services.
 
-error.ui.errormessage.invalidOIDCParameters=SAP Cloud Identity Services can't process this OpenID request. The parameters sent by the client application must match the configuration for the application in SAP Cloud Identity Services.
+error.ui.errormessage.invalidOIDCParameters=SAP Cloud Identity Services can't process this OpenID Connect request. The parameters sent by the client application must match the configuration for the application in SAP Cloud Identity Services.
 
-error.ui.errormessage.missingOIDCParameters=SAP Cloud Identity Services can't process this OpenID request. Some of the parameters required by SAP Cloud Identity Services are missing.
+error.ui.errormessage.missingOIDCParameters=SAP Cloud Identity Services can't process this OpenID Connect request. Some of the parameters required by SAP Cloud Identity Services are missing.
 
 error.ui.errormessage.invalidOpenIDProvider=OpenID provider cannot process the request because the configuration is incorrect. Please contact your system administrator.
 
@@ -2692,6 +2734,8 @@ security.alert.certificate.deletion=A X.509 certificate has been deleted from yo
 logon.ui.label.passwordlessAuthn=Biometric Authentication
 
 logon.ui.errormessage.NO_PASSWORDLESS_AUTHN_DEVICE=No device. There is no biometric authentication device configured for this user. To configure one, please sign in with your password.
+#XTOL
+logon.error.emptyField=Please enter the required information in the field.
 
 profileManagement.passwordlessAuthn.title.section=Biometric Authentication
 

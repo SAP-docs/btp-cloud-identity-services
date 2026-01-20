@@ -11,7 +11,7 @@ Properties enable you to customize the configuration of the Identity service.
 ## Service Properties
 
 > ### Tip:  
-> If you are creating a new tenant via subscription, `Cloud Identity Services` support only the `cloud_service` configuration parameter for the subscription creation. The supported values are: `PRODUCTIVE` and `TEST`. If you provide different parameter or values the tenant won't be created. For more information about the tenant creation, see [Get Your Tenant](../get-your-tenant-460766b.md).
+> If you're creating a new tenant via subscription, `Cloud Identity Services` support only the `cloud_service` configuration parameter for the subscription creation. The supported values are: `PRODUCTIVE` and `TEST`. If you provide a different parameter or values, the tenant isn't created. For more information about the tenant creation, see [Get Your Tenant](../get-your-tenant-460766b.md).
 > 
 > If you want to customize the configuration of the Identity service, follow the rest of the information in this document.
 
@@ -35,6 +35,7 @@ The syntax of the properties is as follows:
       "https://*.myapp_namespace.cfapps.eu10.hana.ondemand.com/logout/**"
     ],
     "front-channel-logout-uris": ["https://myapp.mydomain.com/fc-logout"],
+    "back-channel-logout-uris": ["https://myapp.mydomain.com/fc-logout"],
     "public-client": false,
     "grant-types": ["client_credentials", "authorization_code"],
     "token-policy": {
@@ -140,7 +141,7 @@ An array of up to 20 redirect URIs that are explicitly allowed for the authoriza
 
 This property is empty by default.
 
-For more information, see [OpenID Connect Application Configurations](../Operation-Guide/openid-connect-application-configurations-1ae324e.md).
+For more information, see [OpenID Connect \(OIDC\) Application Configurations](../Operation-Guide/openid-connect-oidc-application-configurations-1ae324e.md).
 
 </td>
 </tr>
@@ -156,7 +157,7 @@ An array of up to 20 redirect URIs, where users can be forwarded after logout.
 
 This property is empty by default.
 
-For more information, see [Call Identity Authentication End Session Endpoint](../Operation-Guide/call-identity-authentication-end-session-endpoint-ec674f4.md) and [OpenID Connect Application Configurations](../Operation-Guide/openid-connect-application-configurations-1ae324e.md).
+For more information, see [Call Identity Authentication End Session Endpoint](../Operation-Guide/call-identity-authentication-end-session-endpoint-ec674f4.md) and [OpenID Connect \(OIDC\) Application Configurations](../Operation-Guide/openid-connect-oidc-application-configurations-1ae324e.md).
 
 </td>
 </tr>
@@ -172,7 +173,29 @@ An array of up to 20 logout URIs, which are called in a logout flow.
 
 This property is empty by default.
 
-For more information, see [OpenID Connect Application Configurations](../Operation-Guide/openid-connect-application-configurations-1ae324e.md).
+> ### Note:  
+> You can't combine front-channel and back-channel logout URIs in the same configuration.
+
+For more information, see [OpenID Connect \(OIDC\) Application Configurations](../Operation-Guide/openid-connect-oidc-application-configurations-1ae324e.md).
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`back-channel-logout-uris`
+
+</td>
+<td valign="top">
+
+An array of up to 20 logout URIs, which are called in a logout flow.
+
+This property is empty by default.
+
+> ### Note:  
+> You can't combine front-channel and back-channel logout URIs in the same configuration.
+
+For more information, see [OpenID Connect \(OIDC\) Application Configurations](../Operation-Guide/openid-connect-oidc-application-configurations-1ae324e.md).
 
 </td>
 </tr>
@@ -190,7 +213,7 @@ This property is `false` by default.
 
 For more information, see:
 
--   [Configure OpenID Connect Application for Authorization Code Flow](../Operation-Guide/configure-openid-connect-application-for-authorization-code-flow-4a94254.md)
+-   [Configure OpenID Connect \(OIDC\) Application for Authorization Code Flow](../Operation-Guide/configure-openid-connect-oidc-application-for-authorization-code-flow-4a94254.md)
 
 -   [Configure the Client to Call Identity Authentication Authorize Endpoint for Authorization Code Flow with PKCE](../Operation-Guide/configure-the-client-to-call-identity-authentication-authorize-endpoint-for-authorization-a721157.md)
 
@@ -265,7 +288,7 @@ The default value is 43200 seconds, which translates to 12 hours.
 </td>
 <td valign="top">
 
-Determines the number of tokens that can be issued for the same session in parallel. Imagine you're logged on to the application through a web interface and a command-line interface in parallel. Then you would want this property to be set to 2. The value can range from 1 to 10.
+Determines the number of tokens that can be issued for the same session in parallel. Imagine you're logged on to the application through a web interface and a command-line interface in parallel. Then you want this property to be set to 2. The value can range from 1 to 10.
 
 The default value is 1.
 
@@ -361,7 +384,7 @@ Sets the name of the application that you create with the Cloud Identity Service
 > ### Recommendation:  
 > Provide a display name, which helps the person who administrates the Cloud Identity Services service to understand the purpose of the application.
 
-By default, the Cloud Identity Services service uses the name of the instance you provide in the `create-instance` command.
+By default, the Cloud Identity Services service uses the name of the instance that you provide in the `create-instance` command.
 
 </td>
 </tr>
@@ -681,7 +704,7 @@ Binding with no credentials:
 
 ## Code Flows
 
-For information about how the Cloud Identity Services service supports code flows, see [Configuring OpenID Connect](../Operation-Guide/configuring-openid-connect-a789c9c.md).
+For information about how the Cloud Identity Services service supports code flows, see [Configuring OpenID Connect \(OIDC\)](../Operation-Guide/configuring-openid-connect-oidc-a789c9c.md).
 
 
 

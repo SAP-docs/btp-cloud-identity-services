@@ -16,7 +16,7 @@ This document explains how to call the token endpoint and what are the parameter
 
 -   For your business application, there’s an OpenID Connect \(OIDC\) application in Identity Authentication.
 
-    For more information, see [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md).
+    For more information, see [Create OpenID Connect \(OIDC\) Application](create-openid-connect-oidc-application-62fb1c3.md).
 
 -   For your OpenID Connect \(OIDC\) application in Identity Authentication, you've prepared an authentication credential for the API call. The API supports the following authentication schemes:
 
@@ -516,12 +516,12 @@ g4MDI0MTEyLCJqdGkiOiIzMDhiYTg5NC0zMGE0LTQ4MDUtYWUzOS1vc2EyYXNkMjU
 ```
 
 > ### Note:  
-> The format of the `issuer` depends on the configuration in the administration console for SAP Cloud Identity Services. For more information, see [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md).
+> The format of the `issuer` depends on the configuration in the administration console for SAP Cloud Identity Services. For more information, see [Tenant OpenID Connect \(OIDC\) Configurations](tenant-openid-connect-oidc-configurations-3d6abcc.md).
 
 
 
 **Related Information**  
 
 
-[Configuring OpenID Connect](configuring-openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
+[Configuring OpenID Connect \(OIDC\)](configuring-openid-connect-oidc-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect (OIDC) protected applications.")
 

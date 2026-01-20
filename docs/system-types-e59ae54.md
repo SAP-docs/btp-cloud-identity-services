@@ -234,7 +234,7 @@ RFC-based systems use Remote Function Call \(RFC\) for communication between SAP
 
 -   SAP Marketing Cloud
 
--   SAP S/4HANA Cloud
+-   SAP S/4HANA Cloud Public Edition
 
 -   SAP S/4HANA On-Premise
 

@@ -291,6 +291,10 @@ For more information on how to update to version 2, see [Update Connector Versio
     >                 ]
     >             },
     >             {
+    >                 "sourcePath": "$.displayName",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
+    >             },
+    >             {
     >                 "sourcePath": "$.members",
     >                 "targetPath": "$.members",
     >                 "preserveArrayWithSingleElement": true
@@ -421,6 +425,10 @@ For more information on how to update to version 2, see [Update Connector Versio
     >                         "prefix": "%sac.group.prefix%"
     >                     }
     >                 ]
+    >             },
+    >             {
+    >                 "sourcePath": "$.displayName",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
     >             },
     >             {
     >                 "sourcePath": "$.members",

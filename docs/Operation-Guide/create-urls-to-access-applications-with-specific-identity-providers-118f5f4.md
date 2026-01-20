@@ -167,11 +167,11 @@ Description
 </td>
 <td valign="top">
 
-Name of the identity provider as defined under the *Issuer* in the *Tenant Settings*.
+Name of the identity provider as defined under the *Name* in the *Trust* configuration of the identity provider.
 
--   For SAML, see [Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md).
+-   For SAML, see [Configure Trust with SAML 2.0 Corporate Identity Provider](configure-trust-with-saml-2-0-corporate-identity-provider-33832e5.md).
 
--   For OIDC, see [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md).
+-   For OIDC, see [Configure Trust with OpenID Connect Corporate Identity Provider](configure-trust-with-openid-connect-corporate-identity-provider-8ff83a1.md).
 
 
 If you need a chain of identity providers, use a comma without spaces \(,\) to separate them.
@@ -196,7 +196,7 @@ Direct users to a authenticate at an IdP before accessing an application. For Id
 
 ## Prerequisites
 
--   You have enabled IdP-initiated Single Sign-On \(SSO\) from all configured corporate IdPs. For more information, see [Enable SSO with All Corporate Identity Providers](enable-sso-with-all-corporate-identity-providers-f7ec8d2.md) .
+-   You have enabled IdP-initiated Single Sign-On \(SSO\) from all configured corporate IdPs. For more information, see [Enable SSO with Corporate Identity Providers](enable-sso-with-corporate-identity-providers-f7ec8d2.md) .
 -   You have configured one of the following options:
 -   The application supports IdP-initiated Single Sign-On \(SSO\). For more information, see [Security Assertion Markup Language \(SAML\) V2.0 Technical Overview](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 

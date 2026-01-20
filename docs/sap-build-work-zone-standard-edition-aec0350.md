@@ -231,15 +231,17 @@ You can use the Identity Provisioning UI to configure SAP Build Work Zone, stand
 
     Possible values:
 
-    -   `emails.value eq 'john.smith@example.com'`
+    -   `emails.value eq "john.smith@example.com"`
 
         > ### Note:  
         > Although, the email is supported as a filtering attribute, it is not returned when searching for the user.
 
-    -   `urn:ietf:params:scim:schemas:extension:2.0:mapping.providerId eq 'ABC123'`
+    -   `urn:ietf:params:scim:schemas:extension:2.0:mapping.providerId eq "ABC123"`
 
 
+    Combining filter attributes is allowed using the and operator, for example:
 
+    `emails.value eq "john.smith@example.com" and urn:ietf:params:scim:schemas:extension:2.0:mapping.providerId eq "ABC123"`
     
     </td>
     </tr>

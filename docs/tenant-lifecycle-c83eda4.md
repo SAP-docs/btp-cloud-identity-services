@@ -95,7 +95,7 @@ For more information, see [Initiating the Upgrade to SAP Cloud Identity Services
 Tenants delivered by opening a ticket to the technical component of SAP cloud solutions
 
 > ### Note:  
-> This is valid for tenants bundled with SAP Concur, SAP Ariba and older versions of SAP Marketing Cloud, SAP S/4HANA Cloud. For more information, see [Bundle Tenants and Connectors](https://help.sap.com/docs/identity-provisioning/identity-provisioning/bundle-tenants-and-connectors?version=Cloud).
+> This is valid for tenants bundled with SAP Concur, SAP Ariba and older versions of SAP Marketing Cloud, SAP S/4HANA Cloud Public Edition. For more information, see [Bundle Tenants and Connectors](https://help.sap.com/docs/identity-provisioning/identity-provisioning/bundle-tenants-and-connectors?version=Cloud).
 
 
 

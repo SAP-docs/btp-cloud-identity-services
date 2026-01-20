@@ -221,6 +221,11 @@ For more information on how to update to version 2, see [Update Connector Versio
     Specifies whether to fetch a CSRF token when sending requests to the system.
 
     This property is automatically added to the system, with default value: **enabled**
+
+    > ### Note:  
+    > If the property is missing, its default value is **disabled**.
+
+
     
     </td>
     </tr>

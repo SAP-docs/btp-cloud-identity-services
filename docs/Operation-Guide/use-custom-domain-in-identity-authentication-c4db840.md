@@ -536,7 +536,12 @@ Identity Authentication allows you to use a custom domain that is different from
 
 ## Results
 
-The custom domain configuration is enabled with the upgrade of Identity Authentication. We recommend you to renew your certificate as early as possible, preferably 30 days before expiration, and no later than the Sunday before productive system upgrade. Identity Authentication has production releases \(bi-weekly updates\) planned every second Wednesday, 10:00 UTC. There are also immediate updates in case of fixes required for bugs that affect productive application operations, or due to urgent security fixes. For more information on the upgrade calendar of the service, see SAP Note [3409744](https://me.sap.com/notes/3409744) \(Release Schedule for SAP Cloud Identity Services \(SAP BTP\)\).
+The custom domain configuration is enabled with the upgrade of Identity Authentication. We recommend you to renew your certificate as early as possible, preferably 30 days before expiration, and no later than the Sunday before productive system upgrade. Identity Authentication has production releases \(bi-weekly updates\) and immediate updates:
+
+-   **Bi-weekly updates** \(standard\) - planned each second Tuesday at 14:00 UTC.
+-   **Immediate updates** - in case of fixes required for bugs that affect productive application operations, or due to urgent security fixes.
+
+For more information on the upgrade calendar of the service, see SAP Note [3409744](https://me.sap.com/notes/3409744) \(Release Schedule for SAP Cloud Identity Services \(SAP BTP\)\).
 
 
 
@@ -544,7 +549,7 @@ The custom domain configuration is enabled with the upgrade of Identity Authenti
 
 ## Next Steps
 
-1.  \(Optional\) Configure tenant's name to be the custom host. Select custom host for the name from the dropdown list in the SAML 2.0 or Open ID Connect Configuration settings. For more information, see [Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md) [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md).
+1.  \(Optional\) Configure tenant's name to be the custom host. Select custom host for the name from the dropdown list in the SAML 2.0 or Open ID Connect Configuration settings. For more information, see [Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md) [Tenant OpenID Connect \(OIDC\) Configurations](tenant-openid-connect-oidc-configurations-3d6abcc.md).
 
     > ### Caution:  
     > After you select the custom host in the administration console, make sure that you also change the name of the identity provider on the service provider side, or the name of the identity provider on the corporate identity provider side. If you have set trusts with more than one service provider, or corporate identity provider, change the name in every provider, otherwise the trusts will not work. For more information about how to edit the name, see the documentation of the respective service or corporate identity providers.
@@ -564,7 +569,7 @@ The custom domain configuration is enabled with the upgrade of Identity Authenti
 
 [Rotate Signing Certificates](rotate-signing-certificates-6621ad5.md "Tenant administrators must replace existing signing certificates with new ones before they expire. This ensures uninterrupted and secure communication between SAML 2.0 applications (referred to as service providers) and Identity Authentication as the identity provider.")
 
-[Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md "You as a tenant administrator can view and configure the tenant OpenID Connect configurations.")
+[Tenant OpenID Connect \(OIDC\) Configurations](tenant-openid-connect-oidc-configurations-3d6abcc.md "You as a tenant administrator can view and configure the tenant OpenID Connect (OIDC) configurations.")
 
 [Change Tenant Texts Via Administration Console](change-tenant-texts-via-administration-console-c24b1d0.md "The change tenant texts option can be used to change the predefined texts and messages for end-user screens available per tenant in Identity Authentication via the administration console.")
 

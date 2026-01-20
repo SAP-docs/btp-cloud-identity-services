@@ -12,7 +12,7 @@ The `authorize` endpoint is used for authentication and returns the `id_token` w
 
 -   For your business application, there’s an OpenID Connect \(OIDC\) application in Identity Authentication.
 
-    For more information, see [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md).
+    For more information, see [Create OpenID Connect \(OIDC\) Application](create-openid-connect-oidc-application-62fb1c3.md).
 
 -   For your OpenID Connect \(OIDC\) application in Identity Authentication, you've prepared an authentication credential for the API call. The API supports the following authentication schemes:
 
@@ -208,7 +208,7 @@ string
 </td>
 <td valign="top">
 
-One of the valid URIs configured for the application. You can configure up to five URIs. For more information, see [Configure OpenID Connect Application](configure-openid-connect-application-8a0aa2e.md).
+One of the valid URIs configured for the application. You can configure up to five URIs. For more information, see [Configure OpenID Connect \(OIDC\) Application](configure-openid-connect-oidc-application-8a0aa2e.md).
 
 </td>
 <td valign="top">
@@ -318,7 +318,7 @@ string
 </td>
 <td valign="top">
 
--   [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md)
+-   [Create OpenID Connect \(OIDC\) Application](create-openid-connect-oidc-application-62fb1c3.md)
 -   [Logout URI Rules](logout-uri-rules-789c752.md)
 
 
@@ -523,5 +523,5 @@ iNTI4ZGE5OCJ9.-LSwBN2WSqnnqSkzSbg9iRmtAMR4moU5TpE40mX0Umw&state=state&token_type
 **Related Information**  
 
 
-[Configuring OpenID Connect](configuring-openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
+[Configuring OpenID Connect \(OIDC\)](configuring-openid-connect-oidc-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect (OIDC) protected applications.")
 

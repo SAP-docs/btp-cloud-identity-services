@@ -36,7 +36,7 @@ Property names have specific prefixes that indicate the provisioning system they
 
 -   Properties starting with *<ips\>* are applicable to all provisioning systems, for example `ips.failed.request.retry.attempts`.
 
--   Properties starting with the abbreviation of a provisioning system name, such as *<s4hana.cloud\>* or *<sf\>*, are applicable to the respective systems—in this case, SAP S/4HANA Cloud and SAP SuccessFactors, respectively. For example, `s4hana.cloud.support.bulk.operation` and `sf.user.filter`.
+-   Properties starting with the abbreviation of a provisioning system name, such as *<s4hana.cloud\>* or *<sf\>*, are applicable to the respective systems—in this case, SAP S/4HANA Cloud Public Edition and SAP SuccessFactors, respectively. For example, `s4hana.cloud.support.bulk.operation` and `sf.user.filter`.
 
 -   Properties starting with *<scim\>* are applicable to SCIM-based provisioning systems. To view the list of these systems, refer to [System Types](system-types-e59ae54.md). The scim-prefixed properties were used before the implementation of system-specific prefixes. Following the introduction of these prefixes, both scim and system-specific prefixes are valid.
 

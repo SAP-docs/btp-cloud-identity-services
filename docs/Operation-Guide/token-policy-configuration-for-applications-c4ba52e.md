@@ -88,7 +88,15 @@ The default value is 1.
 </table>
 
 > ### Remember:  
-> The default configurations for the token policy per application are equal to the tenant token policy. If you configure new values for an application, the service ignores the tenant token policy for that application. For more information about the tenant token policy, see [Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md)
+> The default configurations for the token policy per application are equal to the tenant token policy. If you configure new values for an application, the service ignores the tenant token policy for that application. For more information about the tenant token policy, see [Tenant OpenID Connect \(OIDC\) Configurations](tenant-openid-connect-oidc-configurations-3d6abcc.md)
+
+**Offline Access**
+
+Disable this option to stop users from using this application beyond the regular session validity. You can configure this only for source applications. It is turned off by default. This control isn't visible for single-tenant applications and is enabled by default. Use this option to enable users to access a mobile or native application, such as a command-line interface, without having to authenticate each time.
+
+**Enforce Reauthentication**
+
+Use this option to limit how long the application can refresh user tokens without reauthenticating. This function helps you meet compliance requirements that restrict tokens from being valid beyond a specific period. By default this option is enabled and set to 3 months. When enabled, the maximum possible value is 2,147,483,647 seconds.
 
 
 
@@ -218,64 +226,6 @@ All tokens are generated in the opaque format.
 </tr>
 </table>
 
-**Maximum Exchange Period** 
-
-With the *Maximum Exchange Period* you can set limits on how long the application can exchange user tokens without reauthenticating after having acquired the initial token.
-
-**Maximum Exchange Period**
-
-
-<table>
-<tr>
-<th valign="top">
-
-Settings
-
-</th>
-<th valign="top">
-
-Description
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Unlimited \(Default\)
-
-</td>
-<td valign="top">
-
-The application can exchange user tokens without reauthenticating after having acquired the initial token without any limits.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Maximum Session Validity
-
-</td>
-<td valign="top">
-
-The period equals to the maximum value for the session validity which is 12 hours.
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Initial Refresh Token Validity
-
-</td>
-<td valign="top">
-
-The period is valid until the initial refresh expires no matter how many times a refresh token is exchanged to a newer refresh token.
-
-</td>
-</tr>
-</table>
-
 To configure the token policy, proceed as follows:
 
 
@@ -315,5 +265,5 @@ To configure the token policy, proceed as follows:
 
 [Configure Grant Types](configure-grant-types-c342a7b.md "Configure the allowed grant type for your OpenID Connect application.")
 
-[Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md "You as a tenant administrator can view and configure the tenant OpenID Connect configurations.")
+[Tenant OpenID Connect \(OIDC\) Configurations](tenant-openid-connect-oidc-configurations-3d6abcc.md "You as a tenant administrator can view and configure the tenant OpenID Connect (OIDC) configurations.")
 

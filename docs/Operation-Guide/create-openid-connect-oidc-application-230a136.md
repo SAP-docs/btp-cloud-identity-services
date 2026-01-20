@@ -1,20 +1,20 @@
-<!-- loio62fb1c3790324fdf838721406bbb6b66 -->
+<!-- copy230a13631d944b14bfb3b4f7310c1978 -->
 
-# Create OpenID Connect Application
+# Create OpenID Connect \(OIDC\) Application
 
-You can create a new OpenID Connect application.
+You can create a new OpenID Connect \(OIDC\) application.
 
 
 
 ## Context
 
-To create a new OpenID Connect application you have to add a new application to the list of applications in Identity Authentication, and set the protocol of the application to OpenID Connect.
+To create a new OpenID Connect \(OIDC\) application you have to add a new application to the list of applications in Identity Authentication, and set the protocol of the application to OpenID Connect \(OIDC\).
 
-To create a new OpenID Connect application follow the procedure below:
+To create a new OpenID Connect \(OIDC\) application follow the procedure below:
 
 
 
-<a name="loio62fb1c3790324fdf838721406bbb6b66__steps_qqh_hfk_q4"/>
+<a name="copy230a13631d944b14bfb3b4f7310c1978__steps_qqh_hfk_q4"/>
 
 ## Procedure
 
@@ -106,7 +106,7 @@ To create a new OpenID Connect application follow the procedure below:
     </td>
     <td valign="top">
     
-    Select the *OpenID Connect* radio-button.
+    Select the *OpenID Connect\(OIDC\)* radio-button.
 
     > ### Remember:  
     > Newly created applications with an assigned parent application will inherit the protocol from the parent. To change the protocol, first create the new application and then edit it.
@@ -121,16 +121,16 @@ To create a new OpenID Connect application follow the procedure below:
 
     Once the application has been created, the system displays the message ***Application <name of application\> created***.
 
-    The newly created application appears on the list with the applications on the left. It is selected and you can set its protocol to OpenID Connect.
+    The newly created application appears on the list with the applications on the left. It is selected and you can set its protocol to OpenID Connect \(OIDC\).
 
 
 
 
-<a name="loio62fb1c3790324fdf838721406bbb6b66__postreq_xsy_mpp_pyb"/>
+<a name="copy230a13631d944b14bfb3b4f7310c1978__postreq_xsy_mpp_pyb"/>
 
 ## Next Steps
 
-\(Optional\) If necessary, configure additional settings for the application. For more information about the supported configurations for the OpenID Connect applications, see the following links:
+\(Optional\) If necessary, configure additional settings for the application. For more information about the supported configurations for the OpenID Connect \(OIDC\) applications, see the following links:
 
 -   [Change an Application's Display Name](change-an-application-s-display-name-83d65d0.md)
 -   [Configure an Application's Home URL](configure-an-application-s-home-url-be6d6f2.md)
@@ -155,9 +155,4 @@ To create a new OpenID Connect application follow the procedure below:
 -   [Protecting Application Forms with Google reCAPTCHA](protecting-application-forms-with-google-recaptcha-b84ce17.md)
 -   [Configure Identity Federation](configure-identity-federation-c029bbb.md)
 -   [Configure Authentication Request to Corporate IdPs](configure-authentication-request-to-corporate-idps-7eac7e8.md)
-
-**Related Information**  
-
-
-[Create SAML 2.0 Application](create-saml-2-0-application-fe3102a.md "You can create a new SAML 2.0 application and customize it to comply with your company requirements.")
 

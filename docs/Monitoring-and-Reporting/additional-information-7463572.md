@@ -12,7 +12,7 @@
 
 You have a target or a proxy system of one of the following types:
 
--   SAP S/4HANA Cloud
+-   SAP S/4HANA Cloud Public Edition
 
 -   SAP Marketing Cloud
 
@@ -256,7 +256,7 @@ You want to know the correct way to preserve or overwrite user roles on your tar
 
 [List of Properties](../list-of-properties-d6f3577.md)
 
-[SAP S/4HANA Cloud](../sap-s-4hana-cloud-40940b8.md)
+[SAP S/4HANA Cloud Public Edition](../sap-s-4hana-cloud-public-edition-40940b8.md)
 
 [SAP Marketing Cloud](../sap-marketing-cloud-40fef47.md)
 
@@ -366,7 +366,7 @@ Meaning
 
 You have a source or a proxy system of the following types:
 
--   SAP S/4HANA Cloud
+-   SAP S/4HANA Cloud Public Edition
 
 -   SAP Marketing Cloud
 

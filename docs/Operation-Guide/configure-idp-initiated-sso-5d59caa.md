@@ -76,7 +76,7 @@ The link for IdP-Initiated SSO follows the pattern: `https://<tenant_ID>.account
 > <tr>
 > <td valign="top">
 > 
-> `RelayState`
+> `idp`
 > 
 > </td>
 > <td valign="top">
@@ -86,12 +86,9 @@ The link for IdP-Initiated SSO follows the pattern: `https://<tenant_ID>.account
 > </td>
 > <td valign="top">
 > 
-> Relay state forwarded to the service provider with the SAML response.
+> The technical name of the corporate identity provider as configured in the administration console for SAP Cloud Identity Services.
 > 
-> > ### Note:  
-> > Not supported for the Cloud Foundry environment.
-> 
-> 
+> When a chain of identity providers are allowed for an application via conditional authentication, these parameters enable the client to specify which corporate identity providers are to be used. Identity Authentication uses the `idp` parameter to detect the correct corporate identity providers and redirect the request to them. When there is more than one corporate IdP in the IdP-initiated link, they are separated by comma "`,`" without space between them.
 > 
 > </td>
 > </tr>
@@ -141,7 +138,7 @@ The link for IdP-Initiated SSO follows the pattern: `https://<tenant_ID>.account
 > <tr>
 > <td valign="top">
 > 
-> `idp`
+> `redirect_uri`
 > 
 > </td>
 > <td valign="top">
@@ -151,9 +148,58 @@ The link for IdP-Initiated SSO follows the pattern: `https://<tenant_ID>.account
 > </td>
 > <td valign="top">
 > 
-> The technical name of the corporate identity provider as configured in the administration console for SAP Cloud Identity Services.
+> URI to redirect the user agent to after a web session is created based on the SSO token. Required only if no `sp` parameter is provided.
 > 
-> When a chain of identity providers are allowed for an application via conditional authentication, these parameters enable the client to specify which corporate identity providers are to be used. Identity Authentication uses the `idp` parameter to detect the correct corporate identity providers and redirect the request to them. When there is more than one corporate IdP in the IdP-initiated link, they are separated by comma "`,`" without space between them.
+> > ### Restriction:  
+> > The URI must be registered in the applications that participate in the SSO flow.
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> `RelayState`
+> 
+> </td>
+> <td valign="top">
+> 
+> No
+> 
+> </td>
+> <td valign="top">
+> 
+> Relay state forwarded to the service provider with the SAML response.
+> 
+> > ### Restriction:  
+> > Not supported for the Cloud Foundry environment.
+> 
+> 
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> `sso_token`
+> 
+> </td>
+> <td valign="top">
+> 
+>  
+> 
+> </td>
+> <td valign="top">
+> 
+> Value of the SSO token, created in the previous OIDC token exchange call, allows reentry into the web context of Identity Authentication, based on the OIDC runtime.
+> 
+> > ### Note:  
+> > Create the SSO token with a token exchange call using `resource=urn:sap:identity:sso` at the token endpoint.
+> > 
+> > For more information, see [Configure the Client to Call Identity Authentication Token Exchange](configure-the-client-to-call-identity-authentication-token-exchange-632df37.md).
+> 
+> 
 > 
 > </td>
 > </tr>
@@ -219,7 +265,7 @@ Use this procedure to disable or enable the IdP-Initiated SSO process.
 
 [Rotate Signing Certificates](rotate-signing-certificates-6621ad5.md "Tenant administrators must replace existing signing certificates with new ones before they expire. This ensures uninterrupted and secure communication between SAML 2.0 applications (referred to as service providers) and Identity Authentication as the identity provider.")
 
-[Tenant OpenID Connect Configurations](tenant-openid-connect-configurations-3d6abcc.md "You as a tenant administrator can view and configure the tenant OpenID Connect configurations.")
+[Tenant OpenID Connect \(OIDC\) Configurations](tenant-openid-connect-oidc-configurations-3d6abcc.md "You as a tenant administrator can view and configure the tenant OpenID Connect (OIDC) configurations.")
 
 [Change Tenant Texts Via Administration Console](change-tenant-texts-via-administration-console-c24b1d0.md "The change tenant texts option can be used to change the predefined texts and messages for end-user screens available per tenant in Identity Authentication via the administration console.")
 

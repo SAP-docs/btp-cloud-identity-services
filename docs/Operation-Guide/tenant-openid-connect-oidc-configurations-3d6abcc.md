@@ -1,8 +1,8 @@
 <!-- loio3d6abcc02ec945ad9615773e05814003 -->
 
-# Tenant OpenID Connect Configurations
+# Tenant OpenID Connect \(OIDC\) Configurations
 
-You as a tenant administrator can view and configure the tenant OpenID Connect configurations.
+You as a tenant administrator can view and configure the tenant OpenID Connect \(OIDC\) configurations.
 
 
 
@@ -19,16 +19,16 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 You can change the name format, the certificate used by the identity provider to digitally sign the messages for the applications, set the token policy by configuring the validity of the refresh token, access and id\_token, and the maximum sessions per user, and extend the standard metadata with custom values.
 
 > ### Note:  
-> For tenants created before 10 September 2024, the signing certificate is one and the same for SAML 2.0 and OpenId Connect \(OIDC\). Changing one of the configurations causes the service to separate the configuration into two signing certificates, one for SAML and one for OIDC.
+> For tenants created before 10 September 2024, the signing certificate is one and the same for SAML 2.0 and OpenId Connect \(OIDC\). Changing one of the configurations causes the service to separate the configuration into two signing certificates, one for SAML and one for OpenID Connect \(OIDC\).
 
-The *OpenID Connect Configuration* view in the administration console also shows information about the URLs of the *Domain for Browser Flows*, *Authorization Endpoint*, *Token Endpoint*, *UserInfo Endpoint*, and *Logout Endpoint*.
+The *OpenID Connect \(OIDC\) Configuration* view in the administration console also shows information about the URLs of the *Domain for Browser Flows*, *Authorization Endpoint*, *Token Endpoint*, *UserInfo Endpoint*, and *Logout Endpoint*.
 
 The token policy for the tenant is defined by configuring the validity of the refresh token, access and id\_token, and the maximum sessions per user. It’s valid for all the applications in the tenant.
 
 > ### Remember:  
 > If you want a specific token policy per application, you must set a custom token policy for each application. If you modify the settings on the tenant level, all applications without their own custom token policy are affected. For more information, see [Token Policy Configuration for Applications](token-policy-configuration-for-applications-c4ba52e.md)
 
-The following table lists the token policy options for OIDC applications.
+The following table lists the token policy options for OpenID Connect \(OIDC\) applications.
 
 **Token Policy Configuration Parameters**
 
@@ -108,7 +108,7 @@ The maximum wait time for front-channel logout can be set between 1 and 10 secon
 > ### Remember:  
 > It takes 2 minutes for the configuration changes to take place.
 
-To view or change the tenant OpenID Connect configurations, proceed as follows:
+To view or change the tenant OpenID Connect \(OIDC\) configurations, proceed as follows:
 
 
 
@@ -120,19 +120,19 @@ To view or change the tenant OpenID Connect configurations, proceed as follows:
 
     At the top of the page, you can view the administrative and license relevant information of the tenant.
 
-3.  Under *Single Sign-On*, choose the *OpenID Connect Configuration* list item.
+3.  Under *Single Sign-On*, choose the *OpenID Connect \(OIDC\) Configuration* list item.
 
-    The *OpenID Connect Configuration* page that opens displays the issuer of the identity provider, its endpoints derived from issuer and domain configurations, signing certificate and token policy.
+    The *OpenID Connect \(OIDC\) Configuration* page that opens displays the issuer of the identity provider, its endpoints derived from issuer and domain configurations, signing certificate and token policy.
 
     > ### Note:  
-    > By default, applications use the domain from their trust configuration to access all the endpoints. For browser-based logons and logouts, you can choose another domain. Applications use the chosen domain after reloading the OpenID Connect metadata.
+    > By default, applications use the domain from their trust configuration to access all the endpoints. For browser-based logons and logouts, you can choose another domain. Applications use the chosen domain after reloading the OpenID Connect \(OIDC\) metadata.
 
 4.  **Optional:** To define the token policy, use the slider or provide a number in the input field above the slider. If needed, use the reset button to set to the default value.
 
 5.  **Optional:** To change the issuer of the identity provider, choose the *URL* field, select from the dropdown list, and save your changes.
 
     > ### Caution:  
-    > OpenID Connect applications use the issuer to identify this tenant. Changing the issuer might cause logon issues for existing applications.
+    > OpenID Connect \(OIDC\) applications use the issuer to identify this tenant. Changing the issuer might cause logon issues for existing applications.
 
     > ### Remember:  
     > Change the issuer of the identity provider on the relying party, or the issuer of the identity provider on the corporate identity provider side, every time you change the *URL* format of the issuer in the administration console. If you have set trusts with more than one relying party, or corporate identity provider, change the issuer in every provider. For more information about how to edit the issuer, see the documentation of the respective relying party or corporate identity provider.
@@ -156,7 +156,7 @@ To view or change the tenant OpenID Connect configurations, proceed as follows:
 To change the default certificate for the tenant, choose the new one from the list, and save your configuration.
 
 > ### Caution:  
-> When you change the default certificate for the tenant, you must also update the trust with the service provider. For more information, see [Configure OpenID Connect Application](configure-openid-connect-application-8a0aa2e.md) or [Configure OpenID Connect Application](configure-openid-connect-application-8a0aa2e.md).
+> When you change the default certificate for the tenant, you must also update the trust with the service provider. For more information, see [Configure OpenID Connect \(OIDC\) Application](configure-openid-connect-oidc-application-8a0aa2e.md) or [Configure OpenID Connect \(OIDC\) Application](configure-openid-connect-oidc-application-8a0aa2e.md).
 
 **Related Information**  
 

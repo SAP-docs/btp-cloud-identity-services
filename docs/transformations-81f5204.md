@@ -10,7 +10,7 @@ Identity Provisioning provides a default transformation logic for every supporte
 
 During a provisioning job, the read transformation of the source system converts the system specific JSON representation of users and groups to one common JSON format \(also called internal JSON\). This common JSON format is then used as a source for passing the data to the target system, which applies the write transformation.
 
-The following examples illustrates how the last name user attribute is read from the SAP S/4HANA Cloud source system, transformed and prepared as the family name user attribute for the Identity Authentication target system using both - graphical and JSON text editor.
+The following examples illustrates how the last name user attribute is read from the SAP S/4HANA Cloud Public Edition source system, transformed and prepared as the family name user attribute for the Identity Authentication target system using both - graphical and JSON text editor.
 
 
 

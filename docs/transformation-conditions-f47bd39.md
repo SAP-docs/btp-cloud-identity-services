@@ -115,7 +115,7 @@ For example: `"condition": "($.user.validityPeriod.startDate <= '${currentDate}'
 
 This condition checks whether the user is within their validity period. Only users whose validity period includes the current date will meet this condition, indicating that they are considered active.
 
-This condition is used in the default read transformations of SAP S/4HANA Cloud source system to process only active users.
+This condition is used in the default read transformations of SAP S/4HANA Cloud Public Edition source system to process only active users.
 
 </td>
 </tr>

@@ -11,16 +11,14 @@ Follow this procedure to set up SAP Concur as a source system.
 > ### Restriction:  
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.
 
-You are using User v1 API, Identity v4 API or SCIM v4 API.
+-   You are using User v1 API, Identity v4 API or SCIM v4 API.
 
--   You have an SAP Concur admin user with *Web Services Administrator* role assigned.
+    > ### Note:  
+    > The **User v1 API** has been decommissioned. For more information, see [Concur User API Decommission](https://assets.concur.com/concurtraining/cte/en-us/FAQ_Concur_USER_EXTERNAL.pdf).
 
 -   Your SAP Concur admin user has obtained a *Company Request Token* and a *Company UUID* from the SAP Concur Company Request Token self-service tool.
 
     For more information, see [SAP Concur Company Request Token](https://help.sap.com/docs/SAP_CONCUR/83c94f03f949423a8f76158375832747/1b9040cf6caf1014a483f58a84015038.html).
-
-    > ### Note:  
-    > The **User v1 API** has been decommissioned. For more information, see [Concur User API Decommission](https://assets.concur.com/concurtraining/cte/en-us/FAQ_Concur_USER_EXTERNAL.pdf).
 
 
 

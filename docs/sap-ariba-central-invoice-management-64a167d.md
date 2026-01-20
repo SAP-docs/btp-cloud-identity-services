@@ -22,7 +22,7 @@ You have created an instance and generated a service key for the scim service pl
 
 ## Context
 
-SAP Ariba Central Invoice Management is an SAP BTP SaaS application running on SAP BTP, Cloud Foundry environment. This application enables central management of supplier invoices from multiple connected systems, such as SAP S/4HANA Cloud systems.
+SAP Ariba Central Invoice Management is an SAP BTP SaaS application running on SAP BTP, Cloud Foundry environment. This application enables central management of supplier invoices from multiple connected systems, such as SAP S/4HANA Cloud Public Edition systems.
 
 You can use Identity Provisioning to configure SAP Ariba Central Invoice Management as a proxy system in hybrid scenarios. For example, when SAP Ariba Central Invoice Management is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision users to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users back to the SAP Ariba Central Invoice Management.
 

@@ -14,6 +14,9 @@ You can choose the identity provider certificate to be used for signing for each
 
 The idea behind the ability to choose the IdP certificate is that when you want to change the default IdP certificate all applications will have downtime since the applications have trust with the current default application on the application side. So, when adding new IdP certificate you can change the applications one by one to trust the new certificate.
 
+> ### Tip:  
+> You can download the tenant metadata with the specific identity provider \(IdP\) certificate for the application by choosing the *Download Metadata File* button.
+
 To configure signing certificates and certificate options in the administration console for SAP Cloud Identity Services, proceed as follows:
 
 
@@ -140,13 +143,13 @@ To configure signing certificates and certificate options in the administration 
     </tr>
     </table>
     
-8.  **Optional:** Under *Encryption Certificate*, create a certificate, if there is no encryption certificates created or you want to create a new certificate.
+8.  **Optional:** Under *Encryption Certificate*, add a certificate, if there is no encryption certificates added or you want to add a new certificate.
 
-    1.  Choose *Create*.
+    1.  Choose *Add*.
 
     2.  Provide a file with extension `.crt` or `cer`, or insert the certificate as text.
 
-    3.  Choose *\+Add*.
+    3.  Choose *Add*.
 
 
 9.  **Optional:** \(Visible only if there is and encryption certificate\) Under *Encryption Option*, choose *Edit* to configure the encryption of the SAML 2.0 response

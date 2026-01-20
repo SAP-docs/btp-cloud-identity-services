@@ -273,6 +273,11 @@ Download the texts that you have already overwritten in the predefined master da
 
 
 
+> ### Remember:  
+> If you haven't overwritten the predefined master data texts the GET request will return the *404 Not Found Resource not found for scenario* response.
+
+
+
 ## Request
 
 **URI:**<code>https://&lt;Cloud Identity Services domain&gt;/service/resource?resourceType=&lt;value&gt;&amp;locale=&lt;value&gt;</code>

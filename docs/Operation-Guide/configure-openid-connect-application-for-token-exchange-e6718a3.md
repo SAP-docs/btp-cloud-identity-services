@@ -10,7 +10,7 @@ This document is intended to help you configure an OpenID Connect application in
 
 ## Prerequisites
 
-You have an OpenID Connect application in the administration console for SAP Cloud Identity Services. For more information, see [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md).
+You have an OpenID Connect application in the administration console for SAP Cloud Identity Services. For more information, see [Create OpenID Connect \(OIDC\) Application](create-openid-connect-oidc-application-62fb1c3.md).
 
 
 
@@ -108,7 +108,7 @@ To configure an OpenID Connect trusted application in the administration console
     </table>
     
     > ### Tip:  
-    > For more information about the format of the redirect URIs and post logout redirect URIs, see [OpenID Connect Application Configurations](openid-connect-application-configurations-1ae324e.md).
+    > For more information about the format of the redirect URIs and post logout redirect URIs, see [OpenID Connect \(OIDC\) Application Configurations](openid-connect-oidc-application-configurations-1ae324e.md).
 
 7.  **Optional:** \(If you have added a second signing certificate in *Tenant Settings* or an application certificate in *Applications*\) Under *Identity Provider Certificates*, choose the certificate to be used when a request to the application is signed.
 
@@ -194,5 +194,5 @@ To configure an OpenID Connect trusted application in the administration console
 **Related Information**  
 
 
-[Configuring OpenID Connect](configuring-openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
+[Configuring OpenID Connect \(OIDC\)](configuring-openid-connect-oidc-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect (OIDC) protected applications.")
 

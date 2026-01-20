@@ -1,8 +1,8 @@
 <!-- loiof7ec8d2cccde486d83353654d6c1f18a -->
 
-# Enable SSO with All Corporate Identity Providers
+# Enable SSO with Corporate Identity Providers
 
-Tenant administrators can enable IdP-initiated Single Sign-On \(SSO\) from all configured corporate identity providers \(IdPs\).
+Tenant administrators can enable IdP-initiated Single Sign-On \(SSO\) from one, more than one or all configured corporate identity providers \(IdPs\).
 
 
 
@@ -29,9 +29,9 @@ Tenant administrators can enable IdP-initiated Single Sign-On \(SSO\) from all c
 
 ## Context
 
-Applications can be configured to trust all the corporate identity providers configured in the administration console when identity provider \(IdP\) initiated Single Sign-On \(SSO\) is used. The user accesses the application via URL provided by the corporate identity provider.
+Applications can be configured to trust one, more than one, or all corporate identity providers configured in the administration console when identity provider \(IdP\) initiated Single Sign-On \(SSO\) is used. The user accesses the application via a URL provided by the corporate identity provider.
 
-To enable IdP-initiated SSO with all corporate identity providers configured in the administration console for SAP Cloud Identity Services follow the procedure below:
+To enable IdP-initiated SSO with corporate identity providers configured in the administration console for SAP Cloud Identity Services follow the following procedure:
 
 
 
@@ -50,10 +50,52 @@ To enable IdP-initiated SSO with all corporate identity providers configured in 
 
 4.  Choose the *Trust* tab.
 
-5.  Under the *Conditional Authentication* section, enable the *Trust All Corporate Identity Providers* option.
+5.  Under the *Conditional Authentication* section, choose the *Trust Corporate Identity Providers* list item.
 
-    > ### Note:  
-    > By default this option is disabled.
+6.  
+<table>
+<tr>
+<th valign="top">
+
+Option
+
+</th>
+<th valign="top">
+
+Notes
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+**Enable the slider to allow SSO with all configured corporate identity providers.**
+
+</td>
+<td valign="top">
+
+All corporate IdPs are allowed for sign-in.
+
+By default this option is disabled. If enabled, all configured corporate IdPs are hidden, and you can't select a specific IdP from the list.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Select a specific corporate IdP from the list.**
+
+</td>
+<td valign="top">
+
+> ### Remember:  
+> The slider on the top-right corner of the screen must be disabled. If enabled, all configured corporate IdPs are hidden
+
+
+
+</td>
+</tr>
+</table>
 
     Once the application has been updated, the system displays the message ***Application <name of application\> updated***.
 
@@ -64,7 +106,7 @@ To enable IdP-initiated SSO with all corporate identity providers configured in 
 
 ## Results
 
-The application trusts all corporate identity providers that are configured in the administration console for SAP Cloud Identity Services.
+The application trusts the selected corporate identity providers that are configured in the administration console for SAP Cloud Identity Services.
 
 **Related Information**  
 

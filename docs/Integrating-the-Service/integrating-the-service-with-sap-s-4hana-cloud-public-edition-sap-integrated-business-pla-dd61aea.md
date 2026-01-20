@@ -1,12 +1,12 @@
 <!-- loiodd61aea2845441c78ef082e1059f04b7 -->
 
-# Integrating the Service with SAP S/4HANA Cloud, SAP Integrated Business Planning and SAP Analytics Cloud
+# Integrating the Service with SAP S/4HANA Cloud Public Edition, SAP Integrated Business Planning and SAP Analytics Cloud
 
-This integration document aims to provide information about single sign-on \(SSO\) options for SAP S/4HANA Cloud or SAP Integrated Business Planning and SAP Analytics Cloud, that use Identity Authentication as an authenticating or proxy identity provider.
+This integration document aims to provide information about single sign-on \(SSO\) options for SAP S/4HANA Cloud Public Edition or SAP Integrated Business Planning and SAP Analytics Cloud, that use Identity Authentication as an authenticating or proxy identity provider.
 
 
 
-SAP Analytics Cloud, is integreted in SAP S/4HANA Cloud or in SAP Integrated Business Planning, or it can be part of SAP Datasphere, that is integrated with SAP S/4HANA Cloud as of SAP S/4HANA Cloud 2208.
+SAP Analytics Cloud, is integreted in SAP S/4HANA Cloud Public Edition or in SAP Integrated Business Planning, or it can be part of SAP Datasphere, that is integrated with SAP S/4HANA Cloud Public Edition as of SAP S/4HANA Cloud Public Edition 2208.
 
 
 

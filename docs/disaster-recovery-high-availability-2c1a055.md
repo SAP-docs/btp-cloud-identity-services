@@ -57,5 +57,7 @@ If a restore is required due to an issue on application level, report an inciden
 
 [Accessibility Features in SAP Cloud Identity Services](accessibility-features-in-sap-cloud-identity-services-c7b544b.md "To optimize your experience of SAP Cloud Identity Services, SAP Cloud Identity Services tools provide features and settings that help you use the software efficiently.")
 
+[Commercial Information](commercial-information-a111af1.md "This page explains the relationship between the service plans in the SAP Discovery Center and those in the SAP BTP cockpit, and provides information to help you understand how the service is billed.")
+
 [Cloud Service Status](https://www.sap.com/about/trust-center/cloud-service-status.html)
 

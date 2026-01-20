@@ -1,8 +1,8 @@
 <!-- loiod3f93a7870c341c0993cd733ed9e9b3a -->
 
-# SAP S/4HANA Cloud
+# SAP S/4HANA Cloud Public Edition
 
-Follow this procedure to set up SAP S/4HANA Cloud as a source system.
+Follow this procedure to set up SAP S/4HANA Cloud Public Edition as a source system.
 
 
 
@@ -10,21 +10,21 @@ Follow this procedure to set up SAP S/4HANA Cloud as a source system.
 
 ## Prerequisites
 
-To establish the connection between Identity Provisioning and SAP S/4HANA Cloud, you need to set up the communication \(user, system and arrangement\) on SAP S/4HANA Cloud. You have the option to do it either now, as a prerequisite, or while configuring SAP S/4HANA Cloud as a source system, as described in step 3.
+To establish the connection between Identity Provisioning and SAP S/4HANA Cloud Public Edition, you need to set up the communication \(user, system and arrangement\) on SAP S/4HANA Cloud Public Edition. You have the option to do it either now, as a prerequisite, or while configuring SAP S/4HANA Cloud Public Edition as a source system, as described in step 3.
 
 
 
 ## Context
 
-SAP S/4HANA Cloud is a complete enterprise resource planning \(ERP\) system with built-in intelligent technologies and advanced analytics.
+SAP S/4HANA Cloud Public Edition is a complete enterprise resource planning \(ERP\) system with built-in intelligent technologies and advanced analytics.
 
-You can use Identity Provisioning to configure SAP S/4HANA Cloud as a source system where you can read entities from and provision them to target systems of your choice.
+You can use Identity Provisioning to configure SAP S/4HANA Cloud Public Edition as a source system where you can read entities from and provision them to target systems of your choice.
 
-SAP S/4HANA Cloud provides different APIs for integration with Identity Provisioning, resulting in different connector versions for each API. Each connector version supports specific attribute mappings within the transformations and requires particular property values. The value of the `s4hana.cloud.api.version` property controls which API you use. By default, the Identity Provisioning service uses version *1*.
+SAP S/4HANA Cloud Public Edition provides different APIs for integration with Identity Provisioning, resulting in different connector versions for each API. Each connector version supports specific attribute mappings within the transformations and requires particular property values. The value of the `s4hana.cloud.api.version` property controls which API you use. By default, the Identity Provisioning service uses version *1*.
 
 -   When the value is set to *1* or the property is not present \(typical for systems created before versioning was introduced on November 6, 2025\), the SOAP API provided by the communication scenario SAP\_COM\_0193 is used. It supports reading **business users** \(Employee, Contingent Worker\), **user assignments**, and **business roles** \(which are considered as *groups*\).
 
-    For more information on how to update to version *3*, see [Update SAP S/4HANA Cloud](Operation-Guide/update-sap-s-4hana-cloud-6339b86.md).
+    For more information on how to update to version *3*, see [Update SAP S/4HANA Cloud Public Edition](Operation-Guide/update-sap-s-4hana-cloud-public-edition-6339b86.md).
 
 -   When the value is set to *3*, the SCIM interface provided by the communication scenario SAP\_COM\_0465 is used. It supports provisioning of **business users** with their **assignments** to groups of type **userGroup** and **authorization**. For more information, see [Groups](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/groups?locale=en-US&version=Cloud).
 
@@ -40,9 +40,9 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
 
 2.  Sign in to the administration console of SAP Cloud Identity Services and navigate to *Identity Provisioning* \> *Source Systems*.
 
-3.  Add *SAP S/4HANA Cloud* as a source system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
+3.  Add *SAP S/4HANA Cloud Public Edition* as a source system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
-4.  Set up the communication between Identity Provisioning and SAP S/4HANA Cloud and configure your authentication method \(basic or certificate-based\).
+4.  Set up the communication between Identity Provisioning and SAP S/4HANA Cloud Public Edition and configure your authentication method \(basic or certificate-based\).
 
     > ### Note:  
     > We recommend that you use certificate-based authentication.
@@ -65,14 +65,14 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
 
     4.  [Create a communication arrangement](https://help.sap.com/viewer/0f69f8fb28ac4bf48d2b57b9637e81fa/Latest/en-US/a0771f6765f54e1c8193ad8582a32edb.html) with the created system.
 
-        -   When `s4hana.cloud.api.version`=`1` is set in Identity Provisioning for the SAP S/4HANA Cloud source system, choose *Scenario ID* SAP\_COM\_0193 \(SAP Cloud Identity Provisioning Integration\).
+        -   When `s4hana.cloud.api.version`=`1` is set in Identity Provisioning for the SAP S/4HANA Cloud Public Edition source system, choose *Scenario ID* SAP\_COM\_0193 \(SAP Cloud Identity Provisioning Integration\).
 
             > ### Note:  
             > The communication scenario *SAP\_COM\_0193* is enhanced to support the User UUID attribute which is generated by Identity Authentication at user creation.
             > 
             > The User UUID is universally unique identifier. This attribute is immutable and unique across technology layers, such as user interface, APIs, and security tokens, as well as across products and lines of business contributing to a business process in the Intelligent Enterprise.
 
-        -   When `s4hana.cloud.api.version`=`3` is set in Identity Provisioning for the SAP S/4HANA Cloud source system, choose *Scenario ID* SAP\_COM\_0465 \(System for Cross-domain Identity Management Integration\).
+        -   When `s4hana.cloud.api.version`=`3` is set in Identity Provisioning for the SAP S/4HANA Cloud Public Edition source system, choose *Scenario ID* SAP\_COM\_0465 \(System for Cross-domain Identity Management Integration\).
 
             > ### Note:  
             > The communication scenario *SAP\_COM\_0465* allows you to maintain data via SCIM \(System for Cross-domain Identity Management\). For more information, see [Integrate Cross-Domain Identity Management](https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/aa4b03ced9dc481fafdf74c2f82976bc.html?version=2508.500).
@@ -124,7 +124,7 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
     </td>
     <td valign="top">
     
-    Enter the SAP S/4HANA Cloud API URL.
+    Enter the SAP S/4HANA Cloud Public Edition API URL.
 
     You can find the correct URL in the *API-URL* field of the communication arrangement set up for the communication scenario used.
 
@@ -209,7 +209,7 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
     </td>
     <td valign="top">
     
-    In the event of archived \(disabled\) entities in a source SAP S/4HANA Cloud system, choose whether the provisioning jobs to continue reading such entities or to skip them.
+    In the event of archived \(disabled\) entities in a source SAP S/4HANA Cloud Public Edition system, choose whether the provisioning jobs to continue reading such entities or to skip them.
 
     This property is enabled by default. If you want to always read disabled entities, set the property to **false**, or delete it.
 
@@ -241,9 +241,9 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
 
     By default, Identity Provisioning uses version *1*.
 
-    Version *1* means your SAP S/4HANA Cloud system consumes SAP S/4HANA Cloud API: Business User.
+    Version *1* means your SAP S/4HANA Cloud Public Edition system consumes SAP S/4HANA Cloud Public Edition API: Business User.
 
-    Version *3* means your SAP S/4HANA Cloud system consumes System for Cross-domain Identity Management \(SCIM\) API.
+    Version *3* means your SAP S/4HANA Cloud Public Edition system consumes System for Cross-domain Identity Management \(SCIM\) API.
     
     </td>
     </tr>
@@ -271,7 +271,7 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
     </td>
     <td valign="top">
     
-    When specified, only those SAP S/4HANA Cloud groups matching the filter expression will be read.
+    When specified, only those SAP S/4HANA Cloud Public Edition groups matching the filter expression will be read.
 
     Supported operators: eq \(equal\), co \(contains\), and sw \(starts with\).
 
@@ -295,7 +295,7 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
     </td>
     <td valign="top">
     
-    When specified, only those SAP S/4HANA Cloud users matching the filter expression will be read. You can filter users by **list of attributes** according to the API syntax of SAP S/4HANA Cloud.
+    When specified, only those SAP S/4HANA Cloud Public Edition users matching the filter expression will be read. You can filter users by **list of attributes** according to the API syntax of SAP S/4HANA Cloud Public Edition.
 
     You can set a single attribute or multiple ones as filter criteria. If you enter multiple attributes \(using OR operator\), the filter will search for any of them.
 
@@ -330,7 +330,7 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
     </td>
     <td valign="top">
     
-    Indicate how many business roles \(considered as *groups*\) per page to be read from your SAP S/4HANA Cloud system.
+    Indicate how many business roles \(considered as *groups*\) per page to be read from your SAP S/4HANA Cloud Public Edition system.
 
     The value must be an integer number.
 
@@ -346,15 +346,15 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
     </td>
     <td valign="top">
     
-    This property distinguishes SAP S/4HANA Cloud groups by specific prefix. It is an optional property which does not appear by default at system creation.
+    This property distinguishes SAP S/4HANA Cloud Public Edition groups by specific prefix. It is an optional property which does not appear by default at system creation.
 
     Example value: `S4HANACLOUD_`
 
     You can use the example value or provide your own.
 
-    When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP S/4HANA Cloud source system and will be provisioned to the target system with the following name pattern: <code>S4HANACLOUD_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP S/4HANA Cloud groups in the target system will be distinguished from groups provisioned from other applications.
+    When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP S/4HANA Cloud Public Edition source system and will be provisioned to the target system with the following name pattern: <code>S4HANACLOUD_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP S/4HANA Cloud Public Edition groups in the target system will be distinguished from groups provisioned from other applications.
 
-    If the property is not set, the SAP S/4HANA Cloud groups will be read and provisioned to the target system with their actual display names.
+    If the property is not set, the SAP S/4HANA Cloud Public Edition groups will be read and provisioned to the target system with their actual display names.
 
     For more information, see [List of Properties](list-of-properties-d6f3577.md).
 
@@ -401,9 +401,9 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
     
 6.  \(Optional\) Configure the transformations.
 
-    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP S/4HANA Cloud* source system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
+    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP S/4HANA Cloud Public Edition* source system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
-    You can change the default transformation mapping rules depending on your setup of entities in your SAP S/4HANA Cloud. For more information, see:
+    You can change the default transformation mapping rules depending on your setup of entities in your SAP S/4HANA Cloud Public Edition. For more information, see:
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
@@ -842,17 +842,17 @@ SAP S/4HANA Cloud provides different APIs for integration with Identity Provisio
 
     **Group Uniqueness and Provisioning**
 
-    In the most common scenario, SAP S/4HANA Cloud connector version 3 is used as the source system for groups and Identity Authentication version 2 or Local Identity Directory is the target system.
+    In the most common scenario, SAP S/4HANA Cloud Public Edition connector version 3 is used as the source system for groups and Identity Authentication version 2 or Local Identity Directory is the target system.
 
-    In SAP S/4HANA Cloud version 3, the uniqueness of a group is defined by the combination of `externalId` and `type` attributes. The system supports two group types: `userGroup` and `authorization`. As a result, two different groups can share the same `externalId` while belonging to different types, potentially causing conflicts when provisioned to the target system.
+    In SAP S/4HANA Cloud Public Edition version 3, the uniqueness of a group is defined by the combination of `externalId` and `type` attributes. The system supports two group types: `userGroup` and `authorization`. As a result, two different groups can share the same `externalId` while belonging to different types, potentially causing conflicts when provisioned to the target system.
 
     To avoid conflicts, ensure the following:
 
-    -   Your SAP S/4HANA Cloud system is updated to version 3, as described in [Update SAP S/4HANA Cloud](Operation-Guide/update-sap-s-4hana-cloud-6339b86.md).
+    -   Your SAP S/4HANA Cloud Public Edition system is updated to version 3, as described in [Update SAP S/4HANA Cloud Public Edition](Operation-Guide/update-sap-s-4hana-cloud-public-edition-6339b86.md).
 
     -   Your target system \(Identity Authentication version 2 or Local Identity Directory\) has the respective group uniqueness property: `ias.group.unique.attribute` or `idds.group.unique.attribute`, set with the following combination of values: `['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type'],['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName'],['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']`. For more information, see [List of Properties](list-of-properties-d6f3577.md).
 
-        Because the `externalId` attribute in SAP S/4HANA Cloud connector version 3 is mapped to the `name` attribute in the target, when a group of type `userGroup` is provisioned from the source to the target, the suffix `:userGroup` is automatically appended to its `name`. This ensures that even if two groups share the same `externalId`, their names remain unique in the target system.
+        Because the `externalId` attribute in SAP S/4HANA Cloud Public Edition connector version 3 is mapped to the `name` attribute in the target, when a group of type `userGroup` is provisioned from the source to the target, the suffix `:userGroup` is automatically appended to its `name`. This ensures that even if two groups share the same `externalId`, their names remain unique in the target system.
 
 
 7.  Now, add a target system to provision users and groups into it. Choose from: [Target Systems](target-systems-ab3f641.md)

@@ -46,7 +46,7 @@ Tenant administrator can configure the authentication context in the request sen
 **Related Information**  
 
 
-[Configure Authentication Context \(OpenID Connect\)](configure-authentication-context-openid-connect-cdd3424.md "Tenant administrator can configure the authentication context in the request sent to the corporate identity providers when Identity Authentication acts as a proxy identity provider.")
+[Configure Authentication Context \(OpenID Connect \(OIDC\)\)](configure-authentication-context-openid-connect-oidc-cdd3424.md "Tenant administrator can configure the authentication context in the request sent to the corporate identity providers when Identity Authentication acts as a proxy identity provider.")
 
 [Configure Different Trust Configurations for the Same Identity Authentication Tenant](configure-different-trust-configurations-for-the-same-identity-authentication-tenant-ba2faa9.md "Tenant administrator can configure the issuer name in the request sent to the corporate identity providers when Identity Authentication acts as a proxy identity provider.")
 

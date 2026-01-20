@@ -10,7 +10,7 @@ This document is intended to help you configure an OpenID Connect application in
 
 ## Prerequisites
 
-You have an OpenID Connect application in the administration console for SAP Cloud Identity Services. For more information, see [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md).
+You have an OpenID Connect application in the administration console for SAP Cloud Identity Services. For more information, see [Create OpenID Connect \(OIDC\) Application](create-openid-connect-oidc-application-62fb1c3.md).
 
 
 
@@ -108,7 +108,7 @@ To configure an OpenID Connect trusted application in the administration console
     </table>
     
     > ### Tip:  
-    > For more information about the format of the redirect URIs and post logout redirect URIs, see [OpenID Connect Application Configurations](openid-connect-application-configurations-1ae324e.md).
+    > For more information about the format of the redirect URIs and post logout redirect URIs, see [OpenID Connect \(OIDC\) Application Configurations](openid-connect-oidc-application-configurations-1ae324e.md).
 
 7.  **Optional:** \(If you have added a second signing certificate in *Tenant Settings* or an application certificate in *Applications*\) Under *Identity Provider Certificates*, choose the certificate to be used when a request to the application is signed.
 
@@ -188,15 +188,15 @@ Configure HTTP basic authentication for the application. For more information ab
 **Related Information**  
 
 
-[Configure OpenID Connect Application for Authorization Code Flow](configure-openid-connect-application-for-authorization-code-flow-72c478e.md "This document is intended to help you configure an OpenID Connect application in the administration console for SAP Cloud Identity Services for the authorization code flow.")
+[Configure OpenID Connect \(OIDC\) Application for Authorization Code Flow](configure-openid-connect-oidc-application-for-authorization-code-flow-72c478e.md "This document is intended to help you configure an OpenID Connect (OIDC) application in the administration console for SAP Cloud Identity Services for the authorization code flow.")
 
-[Configure OpenID Connect Application for Client Credentials Flow](configure-openid-connect-application-for-client-credentials-flow-3e409d8.md "This document is intended to help you configure an OpenID Connect application in the administration console for SAP Cloud Identity Services for the client credentials flow.")
+[Configure OpenID Connect \(OIDC\) Application for Client Credentials Flow](configure-openid-connect-oidc-application-for-client-credentials-flow-3e409d8.md "This document is intended to help you configure an OpenID Connect (OIDC) application in the administration console for SAP Cloud Identity Services for the client credentials flow.")
 
-[Configure OpenID Connect Application for Resource Owner Password Credentials Flow](configure-openid-connect-application-for-resource-owner-password-credentials-flow-cafba77.md "This document is intended to help you configure an OpenID Connect application in the administration console for SAP Cloud Identity Services for the resource owner password credentials flow.")
+[Configure OpenID Connect \(OIDC\) Application for Resource Owner Password Credentials Flow](configure-openid-connect-oidc-application-for-resource-owner-password-credentials-flow-cafba77.md "This document is intended to help you configure an OpenID Connect (OIDC) application in the administration console for SAP Cloud Identity Services for the resource owner password credentials flow.")
 
-[Configure OpenID Connect Application for JWT Bearer Flow](configure-openid-connect-application-for-jwt-bearer-flow-e42fb4d.md "This document is intended to help you configure an OpenID Connect application in the administration console for SAP Cloud Identity Services for the JWT bearer flow.")
+[Configure OpenID Connect \(OIDC\) Application for JWT Bearer Flow](configure-openid-connect-oidc-application-for-jwt-bearer-flow-e42fb4d.md "This document is intended to help you configure an OpenID Connect (OIDC) application in the administration console for SAP Cloud Identity Services for the JWT bearer flow.")
 
 [Configure OpenID Connect Application for Token Exchange](configure-openid-connect-application-for-token-exchange-351866e.md "This document is intended to help you configure an OpenID Connect application in the administration console for SAP Cloud Identity Services for the Token Exchange flow.")
 
-[Configuring OpenID Connect](configuring-openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
+[Configuring OpenID Connect \(OIDC\)](configuring-openid-connect-oidc-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect (OIDC) protected applications.")
 

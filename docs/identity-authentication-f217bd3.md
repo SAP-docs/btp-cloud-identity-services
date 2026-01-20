@@ -917,7 +917,14 @@ To create Identity Authentication as a target system, proceed as follows:
     >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']",
     >         "optional": true,
     >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
-    >      }
+    >       },
+    >       {
+    >         "condition": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId'] EMPTY false",
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalLocation']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalLocation']",
+    >         "scope": "createEntity"
+    >       }
     >     ]
     >   }
     > }

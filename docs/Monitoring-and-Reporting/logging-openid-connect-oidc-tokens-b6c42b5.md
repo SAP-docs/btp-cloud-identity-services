@@ -1,8 +1,8 @@
 <!-- loiob6c42b53518b46de8b4dffd8c4c52ed7 -->
 
-# Logging OpenID Connect Tokens
+# Logging OpenID Connect \(OIDC\) Tokens
 
-Tenant administrator can view the JWT payload of the OpenID Connect tokens issued or received by Identity Authentication.
+Tenant administrator can view the JWT payload of the OpenID Connect \(OIDC\) tokens issued or received by Identity Authentication.
 
 
 
@@ -16,7 +16,7 @@ You have the Identity Authentication troubleshooting logs with severity `INFO`. 
 
 ## Context
 
-Identity Authentication can issue OpenID Connect tokens to the applications, and receive tokens. The received tokens can be either tokens from the corporate identity provider, or from Identity Authentication itself. When Identity Authentication issues or receives tokens, it logs the payload of that token.
+Identity Authentication can issue OpenID Connect \(OIDC\) tokens to the applications, and receive tokens. The received tokens can be either tokens from the corporate identity provider, or from Identity Authentication itself. When Identity Authentication issues or receives tokens, it logs the payload of that token.
 
 **Message Information**
 
@@ -137,7 +137,7 @@ audit.authentication
 </td>
 <td valign="top">
 
-A JSON string, which contains the token claims of issued or received OpenID Connect tokens.
+A JSON string, which contains the token claims of issued or received OpenID Connect \(OIDC\) tokens.
 
 > ### Note:  
 > Claims that aren't relevant for troubleshooting are removed from the log for the sake of brevity: `iat`, `exp` and `jti`.

@@ -12,7 +12,7 @@ The authorization code flow with PKCE is recommended for public clients that are
 
 -   For your business application, there’s an OpenID Connect \(OIDC\) application in Identity Authentication.
 
-    For more information, see [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md).
+    For more information, see [Create OpenID Connect \(OIDC\) Application](create-openid-connect-oidc-application-62fb1c3.md).
 
 -   For your OpenID Connect \(OIDC\) application in Identity Authentication, you've prepared an authentication credential for the API call. The API supports the following authentication schemes:
 
@@ -243,7 +243,7 @@ string
 </td>
 <td valign="top">
 
--   [Configure OpenID Connect Application](configure-openid-connect-application-8a0aa2e.md)
+-   [Configure OpenID Connect \(OIDC\) Application](configure-openid-connect-oidc-application-8a0aa2e.md)
 -   [Redirect URIs, Post Logout Redirect URI Rules](redirect-uris-post-logout-redirect-uri-rules-48fdb9a.md)
 
 
@@ -424,7 +424,7 @@ string
 </td>
 <td valign="top">
 
--   [Configure OpenID Connect Application for Authorization Code Flow](configure-openid-connect-application-for-authorization-code-flow-4a94254.md)
+-   [Configure OpenID Connect \(OIDC\) Application for Authorization Code Flow](configure-openid-connect-oidc-application-for-authorization-code-flow-4a94254.md)
 -   [Logout URI Rules](logout-uri-rules-789c752.md)
 
 
@@ -690,7 +690,7 @@ Location:
 **Related Information**  
 
 
-[Configuring OpenID Connect](configuring-openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
+[Configuring OpenID Connect \(OIDC\)](configuring-openid-connect-oidc-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect (OIDC) protected applications.")
 
 [Proof Key for Code Exchange by OAuth Public Clients \(IETF\)](https://tools.ietf.org/html/rfc7636)
 

@@ -23,5 +23,5 @@ The audit log entries are retained for:
 
 ## Change Logs
 
-Tenant administrators can access information about configuration changes made by administrators in Identity Authentication. You can download a CSV file with a history of the operations performed by administrators. For more information, see [Export Change Logs with a History of Administration Operations](../Monitoring-and-Reporting/export-change-logs-with-a-history-of-administration-operations-9d96aae.md).
+Tenant administrators can access information about configuration changes made by administrators in Identity Authentication. You can download a CSV file with a history of the operations performed by administrators. The change logs are stored in the data base for 24 months. For more information, see [Export Change Logs with a History of Administration Operations](../Monitoring-and-Reporting/export-change-logs-with-a-history-of-administration-operations-9d96aae.md).
 

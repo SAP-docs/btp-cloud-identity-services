@@ -17,7 +17,7 @@ As an identity provider proxy, Identity Authentication will act as an identity p
 ![](images/Proxy_ABAP_Scenario_2ff21b7.png)
 
 > ### Remember:  
-> For the embeded version of SAP Analyics Cloud, the *Forward All SSO Requests to Corporate IdP* option must be disabled. Identity Authentication forwards the SSO request to the corporate identity provider only during the first sign in flow to SAP S/4HANA Cloud, but not during the subsequent sign in flow to SAP Analytics Cloud.
+> For the embeded version of SAP Analyics Cloud, the *Forward All SSO Requests to Corporate IdP* option must be disabled. Identity Authentication forwards the SSO request to the corporate identity provider only during the first sign in flow to SAP S/4HANA Cloud Public Edition, but not during the subsequent sign in flow to SAP Analytics Cloud.
 
 To use Identity Authentication as a proxy to delegate authentication to an external corporate identity provider choose your scenario and follow the procedures below:
 

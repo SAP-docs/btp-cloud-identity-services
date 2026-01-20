@@ -80,7 +80,7 @@ Tenant of Identity Authentication
 <td valign="top">
 
 -   Authenticating identity providers
--   \(Optional\) Enable the *Trust All Corporate Identity Providers* feature in the administration console.
+-   \(Optional\) Configure the *Trust Corporate Identity Providers* feature in the administration console.
 
 
 
@@ -89,7 +89,7 @@ Tenant of Identity Authentication
 
 -   [Configure Identity Authentication To Trust the Corporate Identity Provider](configure-idp-initiated-sso-with-corporate-identity-providers-d483a52.md#loioe845c2fb9bb04bedbec06fa76d1058cd)
 
--   [Enable SSO with All Corporate Identity Providers](enable-sso-with-all-corporate-identity-providers-f7ec8d2.md)
+-   [Enable SSO with Corporate Identity Providers](enable-sso-with-corporate-identity-providers-f7ec8d2.md)
 
 
 
@@ -208,7 +208,7 @@ The following configuration is made by the tenant administrator of Identity Auth
     > ### Remember:  
     > With SAP BTP, the endpoint is the URL of the application's protected page.
     > 
-    > If your scenario includes the enabling of the *Trust All Corporate Identity Providers* option in the administration console, the service provider metadata that is used to configure the trust must contain also the assertion consumer \(ACS\) endpoint with the URL of the application's protected page and the index.
+    > If your scenario includes the configuration of the *Trust Corporate Identity Providers* option in the administration console, the service provider metadata that is used to configure the trust must contain also the assertion consumer \(ACS\) endpoint with the URL of the application's protected page and the index.
     > 
     > > ### Sample Code:  
     > > ```
@@ -222,7 +222,7 @@ The following configuration is made by the tenant administrator of Identity Auth
 
 3.  Select identity provider. You have the following options:
 
-    -   If your scenario includes more than one corporate identity provider, enable the *Trust All Corporate Identity Providers* feature in the administration console. For more information, see [Enable SSO with All Corporate Identity Providers](enable-sso-with-all-corporate-identity-providers-f7ec8d2.md).
+    -   If your scenario includes more than one corporate identity provider, configure the *Trust Corporate Identity Providers* feature in the administration console. For more information, see [Enable SSO with Corporate Identity Providers](enable-sso-with-corporate-identity-providers-f7ec8d2.md).
     -   If your scenario includes only one corporate identity provider, set the configured identity provider as the authenticating identity provider for the application. For more information, see [Choose Default Identity Provider for an Application](choose-default-identity-provider-for-an-application-e9d8274.md).
 
 
@@ -236,7 +236,7 @@ The following configuration is made by the tenant administrator of Identity Auth
     > The `Entity ID` of the service provider is in the administration console in *Applications* \> *<application\_name\>* \> *Trust* \> *SAML 2.0 Configuration* \> *Name*.
 
     > ### Remember:  
-    > If your scenario includes the enabling of the *Trust All Corporate Identity Providers* option in the administration console, send also the index of the ACS endpoint of the application's protected page. The administrator needs this information for the consumer assertion endpoint configuration.
+    > If your scenario includes the configuration of the *Trust Corporate Identity Providers* option in the administration console, send also the index of the ACS endpoint of the application's protected page. The administrator needs this information for the consumer assertion endpoint configuration.
 
 2.  Send the metadata of the tenant of Identity Authentication to the administrator of the service provider and the administrator of the corporate identity provider. They need the metadata for the trust configurations of the systems. For more information about how to download the tenant metadata, see [Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md).
 
@@ -244,9 +244,9 @@ The following configuration is made by the tenant administrator of Identity Auth
 
 <!-- copy3d24839b33e04153b91139bb9113b58d -->
 
-## Enable SSO with All Corporate Identity Providers
+## Enable SSO with Corporate Identity Providers
 
-Tenant administrators can enable IdP-initiated Single Sign-On \(SSO\) from all configured corporate identity providers \(IdPs\).
+Tenant administrators can enable IdP-initiated Single Sign-On \(SSO\) from one, more than one or all configured corporate identity providers \(IdPs\).
 
 
 
@@ -273,9 +273,9 @@ Tenant administrators can enable IdP-initiated Single Sign-On \(SSO\) from all c
 
 ## Context
 
-Applications can be configured to trust all the corporate identity providers configured in the administration console when identity provider \(IdP\) initiated Single Sign-On \(SSO\) is used. The user accesses the application via URL provided by the corporate identity provider.
+Applications can be configured to trust one, more than one, or all corporate identity providers configured in the administration console when identity provider \(IdP\) initiated Single Sign-On \(SSO\) is used. The user accesses the application via a URL provided by the corporate identity provider.
 
-To enable IdP-initiated SSO with all corporate identity providers configured in the administration console for SAP Cloud Identity Services follow the procedure below:
+To enable IdP-initiated SSO with corporate identity providers configured in the administration console for SAP Cloud Identity Services follow the following procedure:
 
 
 
@@ -294,10 +294,52 @@ To enable IdP-initiated SSO with all corporate identity providers configured in 
 
 4.  Choose the *Trust* tab.
 
-5.  Under the *Conditional Authentication* section, enable the *Trust All Corporate Identity Providers* option.
+5.  Under the *Conditional Authentication* section, choose the *Trust Corporate Identity Providers* list item.
 
-    > ### Note:  
-    > By default this option is disabled.
+6.  
+<table>
+<tr>
+<th valign="top">
+
+Option
+
+</th>
+<th valign="top">
+
+Notes
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+**Enable the slider to allow SSO with all configured corporate identity providers.**
+
+</td>
+<td valign="top">
+
+All corporate IdPs are allowed for sign-in.
+
+By default this option is disabled. If enabled, all configured corporate IdPs are hidden, and you can't select a specific IdP from the list.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Select a specific corporate IdP from the list.**
+
+</td>
+<td valign="top">
+
+> ### Remember:  
+> The slider on the top-right corner of the screen must be disabled. If enabled, all configured corporate IdPs are hidden
+
+
+
+</td>
+</tr>
+</table>
 
     Once the application has been updated, the system displays the message ***Application <name of application\> updated***.
 
@@ -308,7 +350,7 @@ To enable IdP-initiated SSO with all corporate identity providers configured in 
 
 ## Results
 
-The application trusts all corporate identity providers that are configured in the administration console for SAP Cloud Identity Services.
+The application trusts the selected corporate identity providers that are configured in the administration console for SAP Cloud Identity Services.
 
 **Related Information**  
 
@@ -538,7 +580,7 @@ The following configuration is made by the administrator of the corporate identi
 Once the trust is configured, the user can access the application via the link sent by the corporate identity provider administrator. For more information about how to configure the link for the IdP-initiated SSO scenario, consult the corporate identity provider documentation.
 
 > ### Tip:  
-> If your corporate identity provider is Identity Authentication, the link for IdP-Initiated SSO follows the pattern: https://<tenant\_ID\>.accounts.ondemand.com/saml2/idp/sso?sp=<sp\_name\>\[&RelayState=<sp\_specific\_value\>&index=<index\_number\>\]. In this use case, replace the `sp_name` with the `Entity ID` of the tenant of Identity Authentication acting as the service provider. The `RelayState` is not mandatory and can be skipped. If your scenario includes only one corporate identity provider, the `index` parameter is not mandatory and also can be skipped. If your scenario includes more than one corporate identity provider, and the *Trust All Corporate Identity Providers* feature in the administration console is enabled, the `index` is used to determine the ACS endpoint which could process unsolicited SAML responses. For more information about the configuration, see [Configure IdP-Initiated SSO](configure-idp-initiated-sso-5d59caa.md).
+> If your corporate identity provider is Identity Authentication, the link for IdP-Initiated SSO follows the pattern: https://<tenant\_ID\>.accounts.ondemand.com/saml2/idp/sso?sp=<sp\_name\>\[&RelayState=<sp\_specific\_value\>&index=<index\_number\>\]. In this use case, replace the `sp_name` with the `Entity ID` of the tenant of Identity Authentication acting as the service provider. The `RelayState` is not mandatory and can be skipped. If your scenario includes only one corporate identity provider, the `index` parameter is not mandatory and also can be skipped. If your scenario includes more than one corporate identity provider, and the *Trust Corporate Identity Providers* feature in the administration console is enabled, the `index` is used to determine the ACS endpoint which could process unsolicited SAML responses. For more information about the configuration, see [Configure IdP-Initiated SSO](configure-idp-initiated-sso-5d59caa.md).
 
 
 

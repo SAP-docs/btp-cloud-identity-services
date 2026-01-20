@@ -8,7 +8,7 @@ Tenant administrator can modify the token claims received from the corporate ide
 
 ## Context
 
-The claims are put in the JSON Web Tokens \(JWTs\) for the OpenID Connect application. For more information, see [Configuring OpenID Connect](configuring-openid-connect-a789c9c.md).
+The claims are put in the JSON Web Tokens \(JWTs\) for the OpenID Connect application. For more information, see [Configuring OpenID Connect \(OIDC\)](configuring-openid-connect-oidc-a789c9c.md).
 
 For the OpenID Connect applications, you can configure claims with:
 

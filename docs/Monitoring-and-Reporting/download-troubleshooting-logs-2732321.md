@@ -96,6 +96,6 @@ File format
 
 -   Use the Support Log Assistant 2.0 tool to analyze your troubleshooting logs. For more information, see [Analyze Troubleshooting Logs with Support Log Assistant 2.0](analyze-troubleshooting-logs-with-support-log-assistant-2-0-72ac00b.md).
 
--   View information about the JWT payload of the OpenID Connect tokens issued or received by Identity Authentication. For more information, see [Logging OpenID Connect Tokens](logging-openid-connect-tokens-b6c42b5.md) 
+-   View information about the JWT payload of the OpenID Connect tokens issued or received by Identity Authentication. For more information, see [Logging OpenID Connect \(OIDC\) Tokens](logging-openid-connect-oidc-tokens-b6c42b5.md) 
 
 

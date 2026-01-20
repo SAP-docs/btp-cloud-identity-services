@@ -17,7 +17,7 @@ With the JWT bearer flow you can use an `id_token` ID from an application which 
 
 -   For your business application, there’s an OpenID Connect \(OIDC\) application in Identity Authentication.
 
-    For more information, see [Create OpenID Connect Application](create-openid-connect-application-62fb1c3.md).
+    For more information, see [Create OpenID Connect \(OIDC\) Application](create-openid-connect-oidc-application-62fb1c3.md).
 
 -   For your OpenID Connect \(OIDC\) application in Identity Authentication, you've prepared an authentication credential for the API call. The API supports the following authentication schemes:
 
@@ -137,92 +137,6 @@ Parameter Type
 <tr>
 <td valign="top">
 
-`grant_type`
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-<td valign="top">
-
-string
-
-</td>
-<td valign="top">
-
-`urn:ietf:params:oauth:grant-type:jwt-bearer`
-
-</td>
-<td valign="top">
-
-Request body
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`client_id`
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-<td valign="top">
-
-string
-
-</td>
-<td valign="top">
-
-Used to identify the corresponding Identity Authentication application.
-
-> ### Note:  
-> The `client_id` parameter is optional if the request is provided with authentication.
-
-
-
-</td>
-<td valign="top">
-
-Request body
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`client_secret`
-
-</td>
-<td valign="top">
-
-No
-
-</td>
-<td valign="top">
-
-string
-
-</td>
-<td valign="top">
-
-The client secret configured for basic authentication for the application. For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
-
-</td>
-<td valign="top">
-
-Request body
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
 `assertion`
 
 </td>
@@ -269,12 +183,12 @@ Request body
 <tr>
 <td valign="top">
 
-`refresh_expiry`
+`client_id`
 
 </td>
 <td valign="top">
 
-No
+Yes
 
 </td>
 <td valign="top">
@@ -284,7 +198,12 @@ string
 </td>
 <td valign="top">
 
-Reduces the expiration of a refresh token. It's useful if your application is called from mobile and web applications, and both have different session requirements. If you set the token lifetime to 0, you won't receive a `refresh_token` in response.
+Used to identify the corresponding Identity Authentication application.
+
+> ### Note:  
+> The `client_id` parameter is optional if the request is provided with authentication.
+
+
 
 </td>
 <td valign="top">
@@ -296,12 +215,12 @@ Request body
 <tr>
 <td valign="top">
 
-`token_format`
+`grant_type`
 
 </td>
 <td valign="top">
 
-No
+Yes
 
 </td>
 <td valign="top">
@@ -311,7 +230,7 @@ string
 </td>
 <td valign="top">
 
-The `token_format` can be set to `opaque` to retrieve an opaque access token or to `jwt` to retrieve a JWT based access token. If not set, the current defaults per grant type are used.
+`urn:ietf:params:oauth:grant-type:jwt-bearer`
 
 </td>
 <td valign="top">
@@ -339,6 +258,121 @@ string
 <td valign="top">
 
 Reserved.
+
+</td>
+<td valign="top">
+
+Request body
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`client_secret`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+The client secret configured for basic authentication for the application. For more information, see [Configure Secrets for API Authentication](configure-secrets-for-api-authentication-5c3c35e.md).
+
+</td>
+<td valign="top">
+
+Request body
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`max_exchange_period`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+You can set а limit on how long the application can exchange user tokens without re-authenticating after having acquired the initial token. The `max_exchange_period` parameter has a numeric value which can be set at between 1 hour and 4320 hours \(six months\).
+
+> ### Remember:  
+> If the `max_exchange_period` value is smaller than the configuration defined in token policy, this value overrides the configuration defined in token policy configuration and propagates it once the token is exchanged or refreshed. If the value is bigger, it is ignored and the configuration defined in token policy is taken into consideration. For more information, see [Token Policy Configuration for Applications](token-policy-configuration-for-applications-c4ba52e.md)
+
+
+
+</td>
+<td valign="top">
+
+Request body
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`refresh_expiry`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Reduces the expiration of a refresh token. It's useful if your application is called from mobile and web applications, and both have different session requirements. If you set the token lifetime to 0, you won't receive a `refresh_token` in response.
+
+</td>
+<td valign="top">
+
+Request body
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`resource`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Identifies the dependency consumed by the application. The resource parameter is a Uniform Resource Name \(URN\).
+
+For more information, see [Consuming APIs from Other Applications](../Development/consuming-apis-from-other-applications-29e204d.md).
 
 </td>
 <td valign="top">
@@ -380,6 +414,33 @@ The supported values are:
 
 
 
+
+</td>
+<td valign="top">
+
+Request body
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`token_format`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+The `token_format` can be set to `opaque` to retrieve an opaque access token or to `jwt` to retrieve a JWT based access token. If not set, the current defaults per grant type are used.
 
 </td>
 <td valign="top">
@@ -438,7 +499,7 @@ Content-Type: application/json
 **Related Information**  
 
 
-[Configuring OpenID Connect](configuring-openid-connect-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect protected applications.")
+[Configuring OpenID Connect \(OIDC\)](configuring-openid-connect-oidc-a789c9c.md "You can use Identity Authentication for authentication in OpenID Connect (OIDC) protected applications.")
 
 [JSON Web Token \(JWT\) Profile for OAuth 2.0 Client Authentication and Authorization Grants](https://datatracker.ietf.org/doc/html/rfc7523)
 

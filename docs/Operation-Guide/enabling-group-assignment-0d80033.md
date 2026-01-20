@@ -54,7 +54,7 @@ When provisioning users from source to target systems, in addition to replicatin
 
     -   [SAP Signavio Process Transformation Suite](../sap-signavio-process-transformation-suite-b28002c.md)
 
-    -   [SAP S/4HANA Cloud](../sap-s-4hana-cloud-40940b8.md)
+    -   [SAP S/4HANA Cloud Public Edition](../sap-s-4hana-cloud-public-edition-40940b8.md)
 
     -   [SAP SuccessFactors Employee Central Payroll](../sap-successfactors-employee-central-payroll-03b4097.md)
 

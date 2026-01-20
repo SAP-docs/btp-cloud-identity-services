@@ -103,6 +103,122 @@ Reserved.
 
 
 
+### Request Parameters
+
+
+<table>
+<tr>
+<th valign="top">
+
+Parameter
+
+</th>
+<th valign="top">
+
+Required
+
+</th>
+<th valign="top">
+
+Data Type
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+<th valign="top">
+
+Parameter Type
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`appid`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Used to identify the corresponding Identity Authentication application.
+
+</td>
+<td valign="top">
+
+Request body
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`app_tid`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Reserved.
+
+</td>
+<td valign="top">
+
+Request body
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`client_id`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Used to identify the corresponding the client of the Identity Authentication application.
+
+</td>
+<td valign="top">
+
+Request body
+
+</td>
+</tr>
+</table>
+
+
+
 ### Request Example
 
 ```

@@ -508,6 +508,16 @@ These target systems consume SCIM 2.0 API provided by SAP Ariba Applications. Fo
     >         "optional": true
     >       },
     >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['approvalLimit']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['approvalLimit']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['expenseApprovalLimit']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:ariba:2.0:User']['expenseApprovalLimit']",
+    >         "optional": true
+    >       },
+    >       {
     >         "sourcePath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:profile:User']['alternativeDisplayNames']",
     >         "targetPath": "$['urn:sap:cloud:scim:schemas:extension:custom:2.0:profile:User']['alternativeDisplayNames']",
     >         "preserveArrayWithSingleElement": true,

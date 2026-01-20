@@ -280,11 +280,11 @@ Proceed as follows:
 
 <a name="loiodbe3c08ebe7c47fb98422680c6580cc0__section_xvg_zzx_rbc"/>
 
-## Ensure SAP S/4HANA Cloud Users are Replicated During Their Validity Period
+## Ensure SAP S/4HANA Cloud Public Edition Users are Replicated During Their Validity Period
 
-You want to ensure that Identity Provisioning service replicates SAP S/4HANA Cloud users to the embedded SAP Analytics Cloud during their validity period.
+You want to ensure that Identity Provisioning service replicates SAP S/4HANA Cloud Public Edition users to the embedded SAP Analytics Cloud during their validity period.
 
-This is handled by the following changed condition in the default read transformation of both - the standard \(manually created\) and the preconfigured \(automatically created\) SAP S/4HANA Cloud source systems in Identity Provisioning bundle tenants.
+This is handled by the following changed condition in the default read transformation of both - the standard \(manually created\) and the preconfigured \(automatically created\) SAP S/4HANA Cloud Public Edition source systems in Identity Provisioning bundle tenants.
 
 **Changed condition:**
 
@@ -296,7 +296,7 @@ This is handled by the following changed condition in the default read transform
 > "mappings": [
 > ```
 
-For comparison, the initial condition ensured that SAP S/4HANA Cloud users are replicated to the SAP Analytics Cloud during the validity of the *Employee* role of their business partner.
+For comparison, the initial condition ensured that SAP S/4HANA Cloud Public Edition users are replicated to the SAP Analytics Cloud during the validity of the *Employee* role of their business partner.
 
 **Initial condition:**
 
@@ -310,13 +310,13 @@ For comparison, the initial condition ensured that SAP S/4HANA Cloud users are r
 
 How to proceed:
 
-1.  In the *Identity Provisioning* admin consoleadministration console for SAP Cloud Identity Services, open the transformation of your SAP S/4HANA Cloud source system and check the condition under the user entity.
+1.  In the *Identity Provisioning* admin consoleadministration console for SAP Cloud Identity Services, open the transformation of your SAP S/4HANA Cloud Public Edition source system and check the condition under the user entity.
 
     -   If the read transformation contains the changed condition, no action is required.
 
     -   If the read transformation contains the initial condition, replace it with the changed one.
 
-        Alternatively, you can create a newSAP S/4HANA Cloud source system and configure it manually. The newly created system will contain the changed condition by default.
+        Alternatively, you can create a newSAP S/4HANA Cloud Public Edition source system and configure it manually. The newly created system will contain the changed condition by default.
 
 
 2.  Save your configurations.
@@ -325,11 +325,11 @@ How to proceed:
 
 <a name="loiodbe3c08ebe7c47fb98422680c6580cc0__section_on4_t1y_rbc"/>
 
-## Ensure deleted SAP S/4HANA Cloud Users are Also Deleted in SAP Analytics Cloud
+## Ensure deleted SAP S/4HANA Cloud Public Edition Users are Also Deleted in SAP Analytics Cloud
 
-You want to ensure that users who were deleted in SAP S/4HANA Cloud source system will also be deleted in the embedded SAP Analytics Cloud target system.
+You want to ensure that users who were deleted in SAP S/4HANA Cloud Public Edition source system will also be deleted in the embedded SAP Analytics Cloud target system.
 
-This is handled by the `ips.delete.existedbefore.entities` property which is now set to *true* in the preconfigured SAP Analytics Cloud target system of the Identity Provisioning bundle tenants for SAP S/4HANA Cloud release 1911 or higher.
+This is handled by the `ips.delete.existedbefore.entities` property which is now set to *true* in the preconfigured SAP Analytics Cloud target system of the Identity Provisioning bundle tenants for SAP S/4HANA Cloud Public Edition release 1911 or higher.
 
 Initially, this property was not preconfigured in the SAP Analytics Cloud target system and had to be added manually.
 
@@ -344,7 +344,7 @@ How to proceed:
 2.  Save your configurations.
 
 > ### Note:  
-> After successful user provisioning from SAP S/4HANA Cloud to SAP Analytics Cloud, if you delete users in SAP S/4HANA Cloud and want to provision the change \(that is, to delete them\) in the target system, you need to set the `ips.delete.existedbefore.entities=true` before running the job to delete the users in the target system. If you set it afterwards, the users won’t be deleted in SAP Analytics Cloud as they will be recognized as "previously existed ones". In this case, to have them deleted, you need to create an incident on component **LOD-ANA-OEM**.
+> After successful user provisioning from SAP S/4HANA Cloud Public Edition to SAP Analytics Cloud, if you delete users in SAP S/4HANA Cloud Public Edition and want to provision the change \(that is, to delete them\) in the target system, you need to set the `ips.delete.existedbefore.entities=true` before running the job to delete the users in the target system. If you set it afterwards, the users won’t be deleted in SAP Analytics Cloud as they will be recognized as "previously existed ones". In this case, to have them deleted, you need to create an incident on component **LOD-ANA-OEM**.
 
 For more information on the required sequence of steps for deleting users, see [Manage Deleted Entities](../Operation-Guide/manage-deleted-entities-3d6bdf1.md).
 
@@ -2032,10 +2032,10 @@ For contract-related questions, read:
 
 ## SAP IBP: Avoid Restoring Decimal Format, Time Zone and Language to Their Defaults
 
-When updating a user in SAP Integrated Business Planning \(or any other SAP S/4HANA Cloud-based system\), you want to make sure that only specified attribute values are updated, while others remain unchanged.
+When updating a user in SAP Integrated Business Planning \(or any other SAP S/4HANA Cloud Public Edition-based system\), you want to make sure that only specified attribute values are updated, while others remain unchanged.
 
 > ### Note:  
-> In addition to SAP IBP, this guided answer is also applicable to SAP S/4HANA Cloud, SAP BTP ABAP environmentand SAP Marketing Cloud.
+> In addition to SAP IBP, this troubleshooting information is also applicable to SAP S/4HANA Cloud Public Edition, SAP BTP ABAP environment, SAP Marketing Cloud and SAP Market Communication for Utilities.
 
 
 
@@ -2156,6 +2156,34 @@ Effective **October 1, 2020** this bug has been fixed in the Identity Provisioni
 ### Related Information
 
 If you want the service to read only part of the entities in your source system but to **save** the unread ones from deletion in the target, see: [Entities Should Not Be Deleted in the Target System](job-and-transformation-issues-dbe3c08.md#loiodbe3c08ebe7c47fb98422680c6580cc0__section_nrt_rxx_rbc)
+
+
+
+<a name="loiodbe3c08ebe7c47fb98422680c6580cc0__section_ipk_2md_rhc"/>
+
+## Users Are Not Being Assigned to Groups in the Target System
+
+**Problem:**
+
+After running a provisioning job, some users are not assigned to groups in the target system.
+
+**Reason:**
+
+By default, Identity Provisioning provisions users and groups separately in one job. User assignments are provisioned as part of the group membership.
+
+Identity Provisioning cannot assign a user to a group if:
+
+-   The user failed or was skipped during provisioning.
+-   The user was not read from the source system.
+
+This applies even if the user already exists in the target system \(for example, created manually\).
+
+**Solution:**
+
+To ensure users are assigned to groups:
+
+-   Verify that all users are successfully provisioned by Identity Provisioning.
+-   Check the job logs for failed or skipped users. If issues exist, follow [Manage Provisioning Job Logs](manage-provisioning-job-logs-041b5ff.md) to identify the reason for failures and download error logs and skipped entity logs for the job.
 
 **Related Information**  
 

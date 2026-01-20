@@ -89,7 +89,7 @@ You can access the tenant's administration console for SAP Cloud Identity Servic
 > 
 > If you have a configured custom domain, the URL has the `<your custom domain>/admin` pattern.
 > 
-> If you have updated the ***Name*** in the *SAML 2.0 Configuration* or the ***URL*** in the *OpenID Connect Configuration* in *Tenant Settings* make sure to access the tenant with the updated domain in the ***Name*** or ***URL***. For more information, see [Tenant SAML 2.0 Configurations](Operation-Guide/tenant-saml-2-0-configurations-e81a19b.md) and [Tenant OpenID Connect Configurations](Operation-Guide/tenant-openid-connect-configurations-3d6abcc.md).
+> If you have updated the ***Name*** in the *SAML 2.0 Configuration* or the ***URL*** in the *OpenID Connect Configuration* in *Tenant Settings* make sure to access the tenant with the updated domain in the ***Name*** or ***URL***. For more information, see [Tenant SAML 2.0 Configurations](Operation-Guide/tenant-saml-2-0-configurations-e81a19b.md) and [Tenant OpenID Connect \(OIDC\) Configurations](Operation-Guide/tenant-openid-connect-oidc-configurations-3d6abcc.md).
 
 As a tenant administrator you can change the default configurations:
 
@@ -99,7 +99,13 @@ As a tenant administrator you can change the default configurations:
 -   to customize the look and feel of the sign-in page of the administration console for SAP Cloud Identity Services.
 
 > ### Tip:  
-> To change the appearance of the administration console, at the top-right corner choose the *circle with your initials* \> *Settings* \> *Appearance* and select the theme you want. You can chose from *SAP Morning Horizon* and *SAP Quartz Light*.
+> To change the appearance of the administration console, at the top-right corner choose the *circle with your initials* \> *Settings* \> *Appearance* and select the theme you want. You can chose from:
+> 
+> -   *SAP Morning Horizon \(default\)*
+> -   *SAP Evening Horizon*
+> -   *SAP Quartz Light*
+> -   *SAP Horizon High Contrast White*
+> -   *SAP Horizon High Contrast Black*
 
 The `User Profile` application contains the configurations of the Profile Page.
 
@@ -166,6 +172,10 @@ Existing applications that have a parent application assigned to them will inher
 
 -   Default Name ID Format
 -   Attributes
+
+    > ### Note:  
+    > Attributes from different sources are inherited separately. For more information about the different user attribute sources, see [User Attributes](Operation-Guide/user-attributes-ed2797d.md).
+
 -   Dependencies
 -   Risk-Based Authentication
 -   Conditional Authentication
