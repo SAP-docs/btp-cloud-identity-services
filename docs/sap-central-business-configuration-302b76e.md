@@ -223,6 +223,10 @@ Create a CBC source system to read users, groups, and group members from it.
     >                 ]
     >             },
     >             {
+    >                 "sourcePath": "$.displayName",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
+    >             },
+    >             {
     >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
     >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']",
     >                 "optional": true

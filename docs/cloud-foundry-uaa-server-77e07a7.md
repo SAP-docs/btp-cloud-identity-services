@@ -343,6 +343,10 @@ Follow the steps below to create Cloud Foundry UAA as a source system to read us
     >         ]
     >       },
     >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
+    >       },
+    >       {
     >         "condition": "'%ips.application.id%' !== 'null'",
     >         "constant": "%ips.application.id%",
     >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"

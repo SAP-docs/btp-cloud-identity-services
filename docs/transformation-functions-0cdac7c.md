@@ -65,7 +65,7 @@ isValidEmail
 This function verifies whether an e-mail address is valid by checking if the given String value matches the following regex pattern:
 
 ```
-"[a-zA-Z0-9!#$%&‘'*+/=?^_`{|}~-]+(?>\\.[a-zA-Z0-9!#$%&‘*+/=?^_`{|}~-]+)*@(?>[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]?\\.)+[a-zA-Z0-9](?>[a-zA-Z0-9-]*[a-zA-Z0-9])?"
+"[a-zA-Z0-9!#$%&‘'*+/=?^_`{|}~-]+(?>\\.[a-zA-Z0-9!#$%&‘'*+/=?^_`{|}~-]+)*@(?>[a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]?\\.)+[a-zA-Z0-9](?>[a-zA-Z0-9-]*[a-zA-Z0-9])?"
 ```
 
 After the check, the function returns a Boolean result.

@@ -10,15 +10,18 @@ Follow this procedure to set up a SAP BTP Platform Members \(Cloud Foundry\) as 
 
 ## Prerequisites
 
--   You have a global account inSAP BTP with at least one multi-environment subaccount with enabled Cloud Foundry environment.
+-   You have a global account in SAP BTP with at least one multi-environment subaccount with enabled Cloud Foundry environment.
 
--   You have added SAP BTP Platform Members \(Cloud Foundry\) as a source system for the same Cloud Foundry landscape and executed successfully a read job. For more information, see [SAP BTP Platform Members \(Cloud Foundry\)](sap-btp-platform-members-cloud-foundry-027324d.md).
+-   You have added SAP BTP Platform Members \(Cloud Foundry\) as a source system for the same Cloud Foundry landscape and executed successfully a read job, typically to the Identity Directory of the SAP Cloud Identity Services tenant that is established as a trusted custom identity provider.
+
+    This is required to preserve the specific group naming convention \(see the defined name pattern below\) used by SAP BTP Platform Members \(Cloud Foundry\). Reading groups from this source into the Identity Directory, assigning users to the groups, and synchronizing the assignments back to SAP BTP Platform Members \(Cloud Foundry\) ensures the correct provisioning of user group assignments. For more information, see [SAP BTP Platform Members \(Cloud Foundry\) source system](sap-btp-platform-members-cloud-foundry-027324d.md)and [Local Identity Directory target system](local-identity-directory-59557ae.md).
+
 
 
 
 ## Context
 
-The Cloud Foundry environment enables you to create polyglot cloud applications in Cloud Foundry. It contains theSAP BTP, Cloud Foundry runtime service, which is based on the open-source application platform managed by the Cloud Foundry Foundation. For more information, see [Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/cloud-foundry-environment?version=Cloud).
+The Cloud Foundry environment enables you to create polyglot cloud applications in Cloud Foundry. It contains the SAP BTP, Cloud Foundry runtime service, which is based on the open-source application platform managed by the Cloud Foundry Foundation. For more information, see [Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/cloud-foundry-environment?version=Cloud).
 
 When you enable the Cloud Foundry environment in your subaccount, the system automatically creates a Cloud Foundry organization for you. You are able to add platform users as org members and space members and assign roles to grant these users platform access. For more information, see [Valid role types](https://v3-apidocs.cloudfoundry.org/version/3.126.0/index.html#valid-role-types).
 
@@ -181,7 +184,7 @@ Follow the steps below to create SAP BTP Platform Members \(Cloud Foundry\) as a
     
     Enter the *technical key* or the *host name* of the landscape in which your multi-environment subaccount with enabled Cloud Foundry environment is located.
 
-    The techical key is available only for the SAP BTP Cloud Foundry regions.
+    The technical key is available only for the SAP BTP Cloud Foundry regions.
 
     For more information, see [Regions and API Endpoints Available for the Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/regions-and-api-endpoints-available-for-cloud-foundry-environment?version=Cloud).
 

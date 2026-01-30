@@ -2,7 +2,7 @@
 
 # Procurement Data Warehouse
 
-Follow this procedure to set up procurement data warehouse as a source system.
+Follow this procedure to set up Procurement Data Warehouse as a source system.
 
 
 
@@ -403,6 +403,10 @@ You can use Identity Provisioning to configure procurement data warehouse as a s
     >                         "prefix": "%pdw.group.prefix%"
     >                     }
     >                 ]
+    >             },
+    >             {
+    >                 "sourcePath": "$.displayName",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
     >             },
     >             {
     >                 "sourcePath": "$.members",

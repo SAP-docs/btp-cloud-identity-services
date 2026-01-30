@@ -218,7 +218,7 @@ You can use the Identity Provisioning user interface \(UI\) to connect to SAP Su
     To learn what additional properties are relevant to this system, see [List of Properties](list-of-properties-d6f3577.md). You can use the main search, or filter properties by the *Name* or *System Type* columns.
 
     > ### Note:  
-    > The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users and groups. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
+    > The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
 
 7.  Configure the transformations.
 
@@ -350,6 +350,7 @@ You can use the Identity Provisioning user interface \(UI\) to connect to SAP Su
           },
           {
             "sourcePath": "$.name.familyName",
+            "optional": true,
             "targetPath": "$.name.familyName"
           },
           {

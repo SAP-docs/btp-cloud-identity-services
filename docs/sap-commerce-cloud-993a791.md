@@ -331,6 +331,7 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a proxy sys
     >             {
     >                 "sourcePath": "$.userName",
     >                 "targetPath": "$.userName",
+    >                 "optional": true,
     >                 "correlationAttribute": true
     >             },
     >             {

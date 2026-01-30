@@ -35,7 +35,7 @@ The tenant administrator creates the new user with a minimum set of attributes a
 
     *Email* field can be skipped when *Set initial password* or *Set status active* is selected, and *Email* is configured as not required in the *Logon Alias* view.
 
-    Values for *Email*, *First Name* and *Last Name* that are part of the respective exclude list cant' be used. For more information, see [Restrict User Attributes Values via Exclude Lists](restrict-user-attributes-values-via-exclude-lists-cb108c2.md).
+    Values for *Email*, *First Name* and *Last Name* that are part of the respective exclude list can't be used. For more information, see [Restrict User Attributes Values via Exclude Lists](restrict-user-attributes-values-via-exclude-lists-cb108c2.md).
 
     > ### Tip:  
     > If email is mandatory, for users without valid email addresses or for testing purposes use the `sap-test.de` domain, for example `<username>@sap-test.de`. Do not use any other existing or nonexisting domains.
@@ -66,7 +66,7 @@ The tenant administrator creates the new user with a minimum set of attributes a
 
 ## Results
 
-If the operation is successful, the system displays the message: `User added`. Identity Authentication creates the new user and assigns `User ID` \(P user\) and `Global User ID` \(universally unique identifier \(UUID\) format\). The `User ID` field is unique and not editable. The `Global User ID`, on the other hand, is unique, but editable. You can change it via the the user management field in the administration console.
+If the operation is successful, the system displays the message: `User added`. Identity Authentication creates the new user and assigns `User ID` \(P user\) and `Global User ID` \(universally unique identifier \(UUID\) format\). The `User ID` field is unique and not editable. The `Global User ID`, on the other hand, is unique, but editable. You can change it via the user management field in the administration console.
 
 **Related Information**  
 

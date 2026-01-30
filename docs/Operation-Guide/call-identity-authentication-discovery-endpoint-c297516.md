@@ -25,6 +25,122 @@ OpenID Connect Discovery enables clients to verify the identity of the end user 
 
 
 
+### Request Parameters
+
+
+<table>
+<tr>
+<th valign="top">
+
+Parameter
+
+</th>
+<th valign="top">
+
+Required
+
+</th>
+<th valign="top">
+
+Data Type
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+<th valign="top">
+
+Parameter Type
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`appid`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Used to identify the corresponding Identity Authentication application.
+
+</td>
+<td valign="top">
+
+Request body
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`app_tid`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Reserved.
+
+</td>
+<td valign="top">
+
+Request body
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`client_id`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+string
+
+</td>
+<td valign="top">
+
+Used to identify the corresponding the client of the Identity Authentication application.
+
+</td>
+<td valign="top">
+
+Request body
+
+</td>
+</tr>
+</table>
+
+
+
 ### Request Examples
 
 ```
@@ -40,7 +156,6 @@ https://my-tenant.ondemand.com/.well-known/openid-configuration
 ### Result
 
 ```
-	
 {
   "issuer" : "https://my-tenant.ondemand.com",
   "authorization_endpoint" : "https://my-tenant.ondemand.com/oauth2/authorize",
@@ -64,13 +179,14 @@ https://my-tenant.ondemand.com/.well-known/openid-configuration
 }
 ```
 
-
-
 > ### Note:  
 > The format of the `issuer` depends on the configuration in the administration console for SAP Cloud Identity Services. For more information, see [Tenant OpenID Connect \(OIDC\) Configurations](tenant-openid-connect-oidc-configurations-3d6abcc.md).
 
+> ### Restriction:  
+> If the `issuer` doesn't use HTTPS, then this tenant isn't OIDC compliant. Not using HTTPS can cause issues in integration scenarios. Changing the protocol on tenant level can also cause issues. You can change the protocol on the application level to make the issuer OIDC compliant for that application. Under the *OpenID Connect Configuration* of the application, set *Enforce Compliant OIDC Issuer*.
+
 > ### Remember:  
-> IAS supports only the assertion created by security token service \(STS\) model. For more information, see [OAuth Assertion Framework](https://datatracker.ietf.org/doc/html/rfc7521#section-3).
+> Identity Authentication supports only the assertion created by security token service \(STS\) model. For more information, see [OAuth Assertion Framework](https://datatracker.ietf.org/doc/html/rfc7521#section-3).
 
 **Related Information**  
 

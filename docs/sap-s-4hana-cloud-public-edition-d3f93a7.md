@@ -567,6 +567,10 @@ SAP S/4HANA Cloud Public Edition provides different APIs for integration with Id
     >         ]
     >       },
     >       {
+    >         "sourcePath": "$.ID",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
+    >       },
+    >       {
     >         "constant": "urn:ietf:params:scim:schemas:core:2.0:Group",
     >         "targetPath": "$.schemas[0]"
     >       },

@@ -201,6 +201,7 @@ When users from SAP SuccessFactors Learning source system, are provisioned to Id
     >       },
     >       {
     >         "sourcePath": "$.name.familyName",
+    >         "optional": true,
     >         "targetPath": "$.name.familyName"
     >       },
     >       {

@@ -758,6 +758,10 @@ SAP Application Server ABAP \(AS ABAP\) offers a user store and user administrat
     >         ]
     >       },
     >       {
+    >         "sourcePath": "$.ROLE_NAME",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
+    >       },
+    >       {
     >         "constant": "urn:ietf:params:scim:schemas:core:2.0:Group",
     >         "targetPath": "$.schemas[0]"
     >       },

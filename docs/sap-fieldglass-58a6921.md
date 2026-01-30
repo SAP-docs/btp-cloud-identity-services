@@ -339,6 +339,10 @@ After fulfilling the prerequisites, follow the procedure below to add a source s
     >         ]
     >       },
     >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
+    >       },
+    >       {
     >         "sourcePath": "$.members",
     >         "preserveArrayWithSingleElement": true,
     >         "optional": true,

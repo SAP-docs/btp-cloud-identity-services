@@ -470,6 +470,10 @@ You can use SAP Marketing Cloud to read entities from it and provision them to a
     >         "targetPath": "$.displayName"
     >       },
     >       {
+    >         "sourcePath": "$.ID",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
+    >       },
+    >       {
     >         "constant": "urn:ietf:params:scim:schemas:core:2.0:Group",
     >         "targetPath": "$.schemas[0]"
     >       },

@@ -359,6 +359,10 @@ You can use Identity Provisioning to configure SAP Advanced Financial Closing as
     >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
     >         "optional": true,
     >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
     >       }
     >     ]
     >   }

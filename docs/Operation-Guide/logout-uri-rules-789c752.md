@@ -50,7 +50,7 @@ The length is limited to 499 characters.
     > 
     > https://localhost/logout
 
--   Wildcard - It's allowed in the domain part. Wildcards are only supported in front-channel flows. Although there's no restriction on using wildcards with single tenant apps, the use of wildcards was developed with multitenant applications in mind.
+-   Wildcard - It's allowed in the domain part. Wildcards are only supported in front-channel flows. Although there's no restriction on using wildcards with single tenant apps, the use of wildcards was developed with multitenant applications in mind. When using wildcards, the `logout_uri` parameter is required.
 
     > ### Example:  
     > https://\*.example.com/logout
@@ -58,6 +58,7 @@ The length is limited to 499 characters.
     > Allow during authorize call to register a URI with parameter `logout_uri`, for example: `https://app1.example.com/logout`.
 
 -   IP Addresses - Usage of IP addresses isn't allowed.
+
 
 
 

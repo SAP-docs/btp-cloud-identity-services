@@ -426,6 +426,10 @@ These source systems consume SCIM 2.0 API provided by SAP Build Work Zone, advan
     >                 ]
     >             },
     >             {
+    >                 "sourcePath": "$.displayName",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
+    >             },
+    >             {
     >                 "sourcePath": "$.members",
     >                 "preserveArrayWithSingleElement": true,
     >                 "optional": true,

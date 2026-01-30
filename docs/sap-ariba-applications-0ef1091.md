@@ -712,6 +712,10 @@ These source systems consume SCIM 2.0 API provided by SAP Ariba Applications. Fo
     >         ]
     >       },
     >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
+    >       },
+    >       {
     >         "condition": "'%ips.application.id%' !== 'null'",
     >         "constant": "%ips.application.id%",
     >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"

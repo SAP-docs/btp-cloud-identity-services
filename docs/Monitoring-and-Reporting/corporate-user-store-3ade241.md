@@ -64,7 +64,7 @@ See **KBA 2607588** - [How to remove Forgot Password link from Identity Authenti
 
 **Symptom:**
 
-There is a need to reset the Identity Authentication service password for a user coming from the Corporate User Store. When the e-mail received to reset the password is followed, the sing-in is successful. However, at the next sign-in attempt, the newly set password does not work anymore.
+There is a need to reset the Identity Authentication service password for a user coming from the Corporate User Store. When the e-mail received to reset the password is followed, the sign-in is successful. However, at the next sign-in attempt, the newly set password does not work anymore.
 
 **Solution:**
 

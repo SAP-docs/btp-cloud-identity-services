@@ -144,7 +144,7 @@ The user logs on to the application
 
 4.  Choose the *Trust* tab.
 
-5.  Under *Conditional Authentication*, choose *Conditional Authenticating Identity Providers*.
+5.  Under *Conditional Authentication*, choose *Conditional Authentication*.
 
 6.  Configure the rules. To configure the rules, choose one of the following options:
 

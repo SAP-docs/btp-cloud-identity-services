@@ -382,6 +382,10 @@ You can use Identity Provisioning to configure SAP Revenue Growth Management as 
     >         ]
     >       },
     >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
+    >       },
+    >       {
     >         "sourcePath": "$.members",
     >         "targetPath": "$.members",
     >         "optional": true,

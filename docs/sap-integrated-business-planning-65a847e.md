@@ -550,6 +550,10 @@ SAP Integrated Business Planning provides different APIs for integration with Id
     >         "targetPath": "$.displayName"
     >       },
     >       {
+    >         "sourcePath": "$.ID",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
+    >       },
+    >       {
     >         "constant": "urn:ietf:params:scim:schemas:core:2.0:Group",
     >         "targetPath": "$.schemas[0]"
     >       },

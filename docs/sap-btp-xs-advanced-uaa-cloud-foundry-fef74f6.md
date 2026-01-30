@@ -146,14 +146,7 @@ Create a separate proxy system for each global account, multi-environment subacc
 
     <code>https://api.authentication.<i class="varname">&lt;region&gt;</i>.hana.ondemand.com</code> or
 
-    <code>https://api.authentication.<i class="varname">&lt;region&gt;</i>.accounts.cloud.sap</code>
-
     For more information, see [Call an API](https://help.sap.com/docs/btp/sap-business-technology-platform/call-api?version=Cloud).
-
-    > ### Restriction:  
-    > The `accounts.cloud.sap` domain is not relevant for China \(Shanghai\) and Government Cloud \(US\) regions.
-
-
     
     </td>
     </tr>
@@ -193,23 +186,12 @@ Create a separate proxy system for each global account, multi-environment subacc
 
     -   <code>https://<i class="varname">&lt;global_account_subdomain&gt;</i>.authentication.<i class="varname">&lt;region&gt;</i>.hana.ondemand.com/oauth/token</code> or
 
-        <code>https://<i class="varname">&lt;global_account_subdomain&gt;</i>.authentication.<i class="varname">&lt;region&gt;</i>.accounts.cloud.sap/oauth/token</code>
-
     -   <code>https://<i class="varname">&lt;subaccount_subdomain&gt;</i>.authentication.<i class="varname">&lt;region&gt;</i>.hana.ondemand.com/oauth/token</code> or
-
-        <code>https://<i class="varname">&lt;subaccount_subdomain&gt;</i>.authentication.<i class="varname">&lt;region&gt;</i>.accounts.cloud.sap/oauth/token</code>
 
     -   <code>https://<i class="varname">&lt;directory_subdomain&gt;</i>.authentication.<i class="varname">&lt;region&gt;</i>.hana.ondemand.com/oauth/token</code> or
 
-        <code>https://<i class="varname">&lt;directory_subdomain&gt;</i>.authentication.<i class="varname">&lt;region&gt;</i>.accounts.cloud.sap/oauth/token</code>
-
 
     For more information, see [Call an API](https://help.sap.com/docs/btp/sap-business-technology-platform/call-api?version=Cloud).
-
-    > ### Restriction:  
-    > The `accounts.cloud.sap` domain is not relevant for China \(Shanghai\) and Government Cloud \(US\) regions.
-
-
     
     </td>
     </tr>

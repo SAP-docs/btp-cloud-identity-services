@@ -334,6 +334,7 @@ You can use Identity Provisioning to configure SAP SuccessFactors Employee Centr
     >         ]
     >     },
     >     "group": {
+    >         "condition": "$.displayName EMPTY false",
     >         "mappings": [
     >             {
     >                 "sourcePath": "$.id",
@@ -369,6 +370,10 @@ You can use Identity Provisioning to configure SAP SuccessFactors Employee Centr
     >                         "prefix": "%ecp.group.prefix%"
     >                     }
     >                 ]
+    >             },
+    >             {
+    >               "sourcePath": "$.displayName",
+    >               "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
     >             },
     >             {
     >                 "sourcePath": "$.members",

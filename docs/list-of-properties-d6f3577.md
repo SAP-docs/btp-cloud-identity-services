@@ -475,8 +475,6 @@ SAP Ariba Applications
 
 This property allows or forbids reading "nested groups" \(group structures\) from SAP Ariba Applications. If enabled \(*true*\), group members of type *group* will be ignored during read in order not to be provisioned to target systems that do not support nested groups.
 
-**Possible values:**
-
 Default value:
 
 -   *Source systems:**true*
@@ -581,8 +579,6 @@ Note that only attributes without `"scope": "createEntity"` in the attribute map
 
 > ### Note:  
 > Removing empty groups returns 400 Bad Request instead of 200 OK.
-
-**Possible values:**
 
 Default value: *false*
 
@@ -1275,8 +1271,6 @@ The Identity Provisioning service uses a single predefined namespace for all att
 
 For more information, see: [SAP Sales Cloud and SAP Service Cloud](sap-sales-cloud-and-sap-service-cloud-1a974bc.md)
 
-**Possible values:**
-
 The value of this property is the namespace URI. For **<prefix\>**, enter the prefix of the custom XML namespace \(for example, *a123*\).
 
 Example for setting up the whole property:
@@ -1468,8 +1462,6 @@ When Identity Provisioning attempts to provision a user for the first time, it m
 This property defines by which unique attribute\(s\) the existing user will be searched and resolved. If the service finds a user on the target system via this filter, then the conflicting user will overwrite the existing one. If the service does not find a user on the target system via this filter, the creation will fail.
 
 **Default behavior**: This property is missing during system creation. Its default value is *userName*. This means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such *userName* is not found, the creation of the conflicting user fails.
-
-**Possible values:**
 
 Default value: *userName*
 
@@ -1743,8 +1735,6 @@ SAP Datasphere
 
 This property sets the number of operations to be performed in one bulk request.
 
-**Possible values:**
-
 Default value: *30* 
 
 > ### Note:  
@@ -1995,8 +1985,6 @@ This property defines by which unique attribute\(s\) the existing group will be 
 
 -   If a group with the given *displayName* is not found in the target system, the group that you try to provision will not be created in the target system.
 
-
-**Possible values:**
 
 If the property is not specified, the search is done by the default attribute: `displayName`
 
@@ -2297,8 +2285,6 @@ In scenarios where groups are provisioned from SAP Integrated Business Planning 
 
 For the conflict to be resolved, an existing group must match all three attributes.
 
-**Possible values:**
-
 If the property is not specified, the search is done by the default attribute: *\['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group'\]\['name'\]*
 
 **System Role:** Target
@@ -2585,8 +2571,6 @@ This is a default property that the Identity Provisioning UI automatically adds 
 
 See also: [Transformation Variables](transformation-variables-8376adb.md).
 
-**Possible values:**
-
 Default value:
 
 *yyyy-MM-dd HH:mm:ss.SSS*
@@ -2782,8 +2766,6 @@ With property `ips.job.notification.ignored.consecutive.failures`, you can contr
 **Example:** If you set `ips.job.notification.ignored.consecutive.failures` = *3* and the job is constantly failing, the first three times you'll not receive a notification. On the fourth job fail, you will receive one notification e-mail. No subsequent e-mails will be sent by the service until the first successful run of the job.
 
 See also: [Manage Job Notifications](Monitoring-and-Reporting/manage-job-notifications-d055bc2.md).
-
-**Possible values:**
 
 Default value: *0*.
 
@@ -4104,8 +4086,6 @@ Criteria for user. In the intermediate JSON data, the following LDAP filter is u
 
 For target LDAP systems: this property defines the set of supported and required attributes for an LDAP user entity.
 
-**Possible values:**
-
 Default value: *inetOrgPerson*
 
 **System Role:** Source, Target, Proxy
@@ -4133,8 +4113,6 @@ Default value: *inetOrgPerson*
 Criteria for group. In the intermediate JSON data the following LDAP filter is used: `(objectClass=group)`
 
 For target LDAP systems: this property defines the set of supported and required attributes for an LDAP group entity.
-
-**Possible values:**
 
 Default value: *groupOfNames*
 
@@ -4247,8 +4225,6 @@ If the service finds such a group on the target system via this filter, the crea
 
 If the service does not find a user or a group via this filter, the creation will fail.
 
-**Possible values:**
-
 Default and only possible value: *distinguishedName*
 
 **System Role:** Source, Target, Proxy
@@ -4311,8 +4287,6 @@ This property can return either the common name \(CN\) of the user or the entire
 This property denotes the ID of a user.
 
 When a user is a member of a group, this property evaluates the attribute used as ID of this member. In this case, the `ldap.attribute.user.id` or `ldap.attribute.group.id` property has a higher priority than `ldap.member.uniquename.attribute`.
-
-**Possible values:**
 
 Possible values for LDAP Server:
 
@@ -4642,8 +4616,6 @@ By default, this filter is empty. That is, if the property is not specified, the
 
 Use this property to configure the paging \(pagination\). That means, the number of entities to be read from the LDAP server at once.
 
-**Possible values:**
-
 Default value: *100* 
 
 > ### Note:  
@@ -4703,8 +4675,6 @@ LDAP Server
 <td valign="top">
 
 Use this property to configure the paging. That means, the number of entities to be read from Concur at once.
-
-**Possible values:**
 
 Default value: *100* 
 
@@ -4970,8 +4940,6 @@ Use this property to filter users and groups by specific criteria, according to 
 > ### Note:  
 > This property is deprecated. Use `aаd.user.filter` and `aаd.group.filter` instead.
 
-**Possible values:**
-
 Default value: *null* 
 
 To set a particular value, see [Microsoft Graph: filter parameter](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#filter-parameter).
@@ -4994,8 +4962,6 @@ Microsoft Entra ID
 <td valign="top">
 
 Use this property to configure the paging. That means, the number of entities to be read from Google G Suite at once.
-
-**Possible values:**
 
 Default value: *100* 
 
@@ -7647,8 +7613,6 @@ This property specifies the host to the identity provider to be used with this t
 
 If you use another IdP, enter its value as configured in the SAP BTP cockpit. For example: `<account_ID>.accounts.ondemand.com`
 
-**Possible values:**
-
 Default value: *accounts.sap.com*
 
 **System Role:** Target, Proxy
@@ -7693,6 +7657,7 @@ Default value: *Basic*
 -   Sales Cloud – Analytics & AI
 -   SAP BTP Account Members \(Neo\)
 -   SAP Fieldglass
+-   SAP Ariba Applications
 
 
 
@@ -8824,8 +8789,6 @@ This property takes values as described in the [OData version 2](http://www.odat
 
 The value of this property is a comma-separated list of user attributes that have to be loaded from/to the SAP SuccessFactors system.
 
-**Possible values:**
-
 Default value: *userId,username,status,email,lastName,firstName,lastModifiedDateTime,personKeyNav*
 
 SAP SuccessFactors supports a huge amount of user information, which requires a lot of memory processing time and may even lead to time-out errors. That's why we recommend that you keep the default list of attributes, or specify only a few \(the most significant attributes\) for your provisioning scenario.
@@ -8858,8 +8821,6 @@ SAP SuccessFactors \(using version 1 - SAP SuccessFactors HCM Suite OData API\)
 <td valign="top">
 
 This property reads/writes additional user data related to *complex \(navigation\)* attributes, which are specified in the `sf.user.attributes` property.
-
-**Possible values:**
 
 Default value: *personKeyNav,personKeyNav/userAccountNav*
 
@@ -9532,8 +9493,6 @@ SAP Field Service Management
 
 If the Identity Provisioning tries to create a group that already exists in the SAP Field Service Management target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
 
-**Possible values:**
-
 Default value \(when not specified\): *displayName*
 
 If the property is not specified, the search is done by the default attribute: `displayName`.
@@ -9950,8 +9909,6 @@ In scenarios where groups are provisioned from SAP Integrated Business Planning 
 *\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['type'\],\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['externalName'\],\['urn:ietf:params:scim:schemas:extension:sap:2.0:Group'\]\['applicationId'\]*
 
 For the conflict to be resolved, an existing group must match all three attributes.
-
-**Possible values:**
 
 If the property is not specified, the search is done by the default attribute: *\['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group'\]\['name'\]*
 
@@ -11688,8 +11645,6 @@ This property defines by which unique attribute\(s\) the existing group will be 
 -   If a group with the given *displayName* is not found in the target system, the group that you try to provision will not be created in the target system.
 
 
-**Possible values:**
-
 If the property is not specified, the search is done by the default attribute: `displayName`
 
 **System Role:** Target
@@ -12503,7 +12458,7 @@ When specified, only those SAP Sales Cloud and SAP Service Cloud groups matching
 
 SAP Sales Cloud and SAP Service Cloud is formerly known as SAP Cloud for Customer \(in short, C4C\).
 
-Example: **displayName eq "ProjectTeam1"**
+Example: *displayName eq "ProjectTeam1"*
 
 **System Role:** Source, Proxy
 
@@ -12741,8 +12696,6 @@ If the Identity Provisioning tries to create a group that already exists in the 
 
 > ### Note:  
 > You can use this property when SAP Analytics Cloud is based on SCIM API version 2.
-
-**Possible values:**
 
 Default value: *displayName*
 
@@ -13479,8 +13432,6 @@ SAP Advanced Financial Closing
 <td valign="top">
 
 If the Identity Provisioning tries to create a group that already exists on the SAP Advanced Financial Closing target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
-
-**Possible values:**
 
 Default value: *displayName*
 
@@ -14427,8 +14378,6 @@ When the Identity Provisioning attempts to provision a user for the first time, 
 
 **Default behavior**: This property is missing during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such а *userName* is not found, the creation of the conflicting user fails.
 
-**Possible values:**
-
 Default value: *userName* 
 
 **System Role:** Target
@@ -14532,8 +14481,6 @@ SAP Ariba Central Invoice Management
 <td valign="top">
 
 If the Identity Provisioning tries to create a group that already exists on the SAP Central Invoice Management target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
-
-**Possible values:**
 
 Default value \(when not specified\): *displayName*
 
@@ -14820,8 +14767,6 @@ SAP SuccessFactors Employee Central Payroll
 <td valign="top">
 
 If the Identity Provisioning tries to create a group that already exists on the SAP SuccessFactors Employee Central Payroll target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
-
-**Possible values:**
 
 Default value \(when not specified\): *displayName*
 
@@ -15230,8 +15175,6 @@ SAP HANA Cloud, SAP HANA Database
 
 If the Identity Provisioning tries to create a group that already exists on the SAP HANA Cloud, SAP HANA Database target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
 
-**Possible values:**
-
 Default value \(when not specified\): *displayName*
 
 If the property is not specified, the search is done by the default attribute: *displayName*
@@ -15565,8 +15508,6 @@ SAP Enable Now
 
 If the Identity Provisioning tries to create a group that already exists on the SAP Enable Now target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
 
-**Possible values:**
-
 Default value \(when not specified\): *displayName*
 
 If the property is not specified, the search is done by the default attribute: *displayName*
@@ -15741,8 +15682,6 @@ When Identity Provisioning attempts to provision a user for the first time, it m
 This property defines by which unique attribute\(s\) the existing user will be searched and resolved. If the service finds a user on the target system via this filter, then the conflicting user will overwrite the existing one. If the service does not find a user on the target system via this filter, the creation will fail.
 
 **Default behavior**: This property is missing during system creation. Its default value is *userName*. This means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such *userName* is not found, the creation of the conflicting user fails.
-
-**Possible values:**
 
 Default value: *userName*
 
@@ -16299,6 +16238,27 @@ If the property is not specified, the search is done by the default attribute: *
 <td valign="top">
 
 SAP Sales Cloud and SAP Service Cloud 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ariba.applications.api.dependency.name`
+
+</td>
+<td valign="top">
+
+This property holds the value of the dependency name used in the configuration of the SAP Ariba Applications consumer application, created in the SAP Cloud Identity Services tenant. It is used for access token retrieval from Identity Authentication. For more information, see [Integrating Applications](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/integrating-applications?locale=en-US&version=Cloud).
+
+Possible values: Text/numeric string
+
+**System Role:**Source, Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Ariba Applications 
 
 </td>
 </tr>

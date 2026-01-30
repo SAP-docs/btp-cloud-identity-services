@@ -382,6 +382,10 @@ SAP Ariba Central Invoice Management is an SAP BTP SaaS application running on S
     >         ]
     >       },
     >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
+    >       },
+    >       {
     >         "sourcePath": "$.members",
     >         "targetPath": "$.members",
     >         "optional": true,

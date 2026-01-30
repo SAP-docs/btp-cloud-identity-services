@@ -304,7 +304,7 @@ This scenario supports reading **business users** \(Employee\), **user assignmen
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
-    [SAP S/4HANA Cloud API: Business User](https://help.sap.com/viewer/f1531d40f450474dbf95f0404cb62007/latest/en-US/640fb5fa26664a7486de073b1882405c.html)
+    [SAP S/4HANA Cloud Public Edition API: Business User](https://help.sap.com/viewer/f1531d40f450474dbf95f0404cb62007/latest/en-US/640fb5fa26664a7486de073b1882405c.html)
 
     **Default transformation:**
 
@@ -464,6 +464,10 @@ This scenario supports reading **business users** \(Employee\), **user assignmen
     >         "targetPath": "$.displayName"
     >       },
     >       {
+    >         "sourcePath": "$.ID",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
+    >       },
+    >       {
     >         "constant": "urn:ietf:params:scim:schemas:core:2.0:Group",
     >         "targetPath": "$.schemas[0]"
     >       },
@@ -526,5 +530,5 @@ This scenario supports reading **business users** \(Employee\), **user assignmen
 **Related Information**  
 
 
-[SAP S/4HANA Cloud Documentation](https://help.sap.com/viewer/9d794cbd48c648bc8a176e422772de7e/latest/en-US/7af7b8541486ed05e10000000a4450e5.html)
+[SAP S/4HANA Cloud Public Edition Documentation](https://help.sap.com/viewer/9d794cbd48c648bc8a176e422772de7e/latest/en-US/7af7b8541486ed05e10000000a4450e5.html)
 

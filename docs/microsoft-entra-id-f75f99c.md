@@ -478,6 +478,10 @@ If you've successfully finished with the initial setup \(described in the **Prer
     >         "targetPath": "$.displayName"
     >       },
     >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
+    >       },
+    >       {
     >         "sourcePath": "$.members",
     >         "preserveArrayWithSingleElement": true,
     >         "optional": true,

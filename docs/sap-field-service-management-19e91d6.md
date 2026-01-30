@@ -326,6 +326,10 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP Fie
     >                 ]
     >             },
     >             {
+    >                 "sourcePath": "$.displayName",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
+    >             },
+    >             {
     >                 "sourcePath": "$.members",
     >                 "preserveArrayWithSingleElement": true,
     >                 "optional": true,

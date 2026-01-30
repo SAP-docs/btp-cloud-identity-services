@@ -313,6 +313,10 @@ You can use Identity Provisioning to configure SAP HANA Cloud, SAP HANA Database
     >         ]
     >       },
     >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
+    >       },
+    >       {
     >         "condition": "'%ips.application.id%' !== 'null'",
     >         "constant": "%ips.application.id%",
     >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['applicationId']"

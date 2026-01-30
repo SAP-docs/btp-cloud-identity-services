@@ -541,6 +541,10 @@ You can use Identity Provisioning to configure SAP Signavio Process Transformati
     >         ]
     >       },
     >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
+    >       },
+    >       {
     >         "sourcePath": "$.externalId",
     >         "optional": true,
     >         "targetPath": "$.externalId"

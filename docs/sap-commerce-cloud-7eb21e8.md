@@ -234,6 +234,7 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a source sy
     >             },
     >             {
     >                 "sourcePath": "$.userName",
+    >                 "optional": true,
     >                 "targetPath": "$.userName",
     >                 "correlationAttribute": true
     >             },
@@ -346,12 +347,16 @@ You can use Identity Provisioning to configure SAP Commerce Cloud as a source sy
     >                 "sourcePath": "$.displayName",
     >                 "targetPath": "$.displayName",
     >                 "functions": [
-    > 					{
-    > 						"function": "concatString",
-    > 						"condition": "'%cc.group.prefix%' !== 'null'",
-    > 						"prefix": "%cc.group.prefix%"
-    > 					}
-    > 				]
+    >                    {
+    >                         "function": "concatString",
+    >                         "condition": "'%cc.group.prefix%' !== 'null'",
+    >                         "prefix": "%cc.group.prefix%"
+    >                    }
+    >                 ]
+    >             },
+    >             {
+    >                 "sourcePath": "$.displayName",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
     >             },
     >             {
     >                 "sourcePath": "$.members",

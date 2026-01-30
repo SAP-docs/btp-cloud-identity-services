@@ -99,18 +99,6 @@ If your provisioning scenarios involve on-premise systems, this requires a separ
     <tr>
     <td valign="top">
     
-    Saudi Arabia \(Riyadh\)
-    
-    </td>
-    <td valign="top">
-    
-    Europe \(Frankfurt\) AWS
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
     Australia \(Sydney\)
     
     </td>

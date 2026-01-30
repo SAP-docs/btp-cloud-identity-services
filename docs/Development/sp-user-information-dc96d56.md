@@ -10,13 +10,13 @@ To retrieve information for an SP \(service provider\) user, you use a `GET` met
 
 ## Prerequisites
 
-You need to set up the authentication type to access the API. For more information about this configuration, see [API Authentication](../Operation-Guide/api-authentication-9d200d5.md).
+You need to set up the authentication type to access this API. You can use a *client ID* and a *secret*, or a certificate. For more information, see [Configure Secrets for API Authentication](../Operation-Guide/configure-secrets-for-api-authentication-5c3c35e.md) or [Configure Certificates for API Authentication](../Operation-Guide/configure-certificates-for-api-authentication-c408083.md).
 
 
 
 ## Request
 
-**URI:**<code>https:/&lt;Cloud Identity Services domain&gt;. Replace the texts in brackets with actual information, and optionally delete instructions when no longer needed (instructions are not visible in the output). /service/users/&lt;SP user id&gt;. Replace the texts in brackets with actual information, and optionally delete instructions when no longer needed (instructions are not visible in the output).</code>
+**URI:**<code>https:/&lt;Cloud Identity Services domain&gt;.</code>
 
 > ### Note:  
 > The domain part has the following pattern:
