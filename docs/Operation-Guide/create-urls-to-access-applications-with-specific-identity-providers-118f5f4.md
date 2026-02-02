@@ -26,7 +26,9 @@ You can enable users that are stored in SAP Cloud Identity Services to log on wi
 > ### Example:  
 > Example approuter link:
 > 
-> `https://approuter-myapplication.cfapps.eu20-001.hana.ondemand.com?sap_idp=https://my_sci_tenant.accounts.ondemand.com`
+> `https://approuter-myapplication.cfapps.eu20-001.hana.ondemand.com?sap_idp=custom.sap`
+> 
+> Note that the approuter needs the origin key for the custom identity provider for the SAP BTP account.
 > 
 > Example link:
 > 

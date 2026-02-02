@@ -380,7 +380,7 @@ This procedure is performed by the domain administrator. If you are not a domain
     > </td>
     > <td valign="top">
     > 
-    > Netherlands \(Amsterdam\) / Germany \(Frankfurt\)
+    > Europe \(Frankfurt / Amsterdam\)\)
     > 
     > </td>
     > <td valign="top">
@@ -419,12 +419,34 @@ This procedure is performed by the domain administrator. If you are not a domain
     > <tr>
     > <td valign="top">
     > 
+    > Israel
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > Israel \(Tel Aviv\)
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > Google Cloud
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > `il.accounts.ondemand.com.cloud.sap.akadns.net`
+    > 
+    > </td>
+    > </tr>
+    > <tr>
+    > <td valign="top">
+    > 
     > Japan
     > 
     > </td>
     > <td valign="top">
     > 
-    > Japan \(Tokyo\) / Japan \(Osaka\)
+    > Japan \(Tokyo / Osaka\)
     > 
     > </td>
     > <td valign="top">
@@ -463,22 +485,44 @@ This procedure is performed by the domain administrator. If you are not a domain
     > <tr>
     > <td valign="top">
     > 
-    > Saudi Arabia
+    > Saudi Arabia \(SA1\)
     > 
     > </td>
     > <td valign="top">
     > 
-    > Saudi Arabia \(Riyadh, Dammam\)
+    > Saudi Arabia \(Dammam\)
     > 
     > </td>
     > <td valign="top">
     > 
-    > SAP
+    > Google Cloud
     > 
     > </td>
     > <td valign="top">
     > 
     > `sa.accounts.ondemand.com.cloud.sap.akadns.net`
+    > 
+    > </td>
+    > </tr>
+    > <tr>
+    > <td valign="top">
+    > 
+    > Saudi Arabia \(SA2\)
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > Saudi Arabia \(Dammam\) - Regulated
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > Google Cloud
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > `sa2.accounts.ondemand.com.cloud.sap.akadns.net`
     > 
     > </td>
     > </tr>
@@ -512,7 +556,7 @@ This procedure is performed by the domain administrator. If you are not a domain
     > </td>
     > <td valign="top">
     > 
-    > Seoul \(South Korea\)
+    > South Korea \(Seoul\)
     > 
     > </td>
     > <td valign="top">
@@ -556,7 +600,7 @@ This procedure is performed by the domain administrator. If you are not a domain
     > </td>
     > <td valign="top">
     > 
-    > UAE North \(Dubai\)
+    > United Arab Emirates \(Dubai\)
     > 
     > </td>
     > <td valign="top">
@@ -573,12 +617,34 @@ This procedure is performed by the domain administrator. If you are not a domain
     > <tr>
     > <td valign="top">
     > 
+    > United Kingdom
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > United Kingdom \(London\)
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > Azure
+    > 
+    > </td>
+    > <td valign="top">
+    > 
+    > `uk.accounts.ondemand.com.cloud.sap.akadns.net`
+    > 
+    > </td>
+    > </tr>
+    > <tr>
+    > <td valign="top">
+    > 
     > US \(North America East\)
     > 
     > </td>
     > <td valign="top">
     > 
-    > United States \(Sterling\) / United States \(Colorado\)
+    > USA \(Sterling, VA / N. Virginia\)
     > 
     > </td>
     > <td valign="top">
@@ -605,7 +671,7 @@ This procedure is performed by the domain administrator. If you are not a domain
     > </td>
     > <td valign="top">
     > 
-    > East US
+    > Trial \(USA\)
     > 
     > </td>
     > <td valign="top">
@@ -627,7 +693,7 @@ This procedure is performed by the domain administrator. If you are not a domain
     > </td>
     > <td valign="top">
     > 
-    > East US
+    > USA \(Quincy, WA\)
     > 
     > </td>
     > <td valign="top">
