@@ -4809,6 +4809,74 @@ SAP Concur \(using SCIM v4 API\)
 <tr>
 <td valign="top">
 
+`ibp.support.patch.operation` 
+
+</td>
+<td valign="top">
+
+This property controls how modified entities \(users and groups\) in the source system are updated in the target system.
+
+> ### Note:  
+> Use this property when your SAP Integrated Business Planning connector is configured for version 2.
+
+-   If set to *true*, `PATCH` operations are used to update users and groups in the target system. This means, for example, that if a user attribute is modified or a group member is removed from a group, only these changes will be provisioned and applied in the target system.
+
+-   If set to *false*, `PUT` operations are used to update users and groups in the target system. This means, for example, that if a user attribute is modified or a group member is removed from a group, all user attributes and all group attributes are replaced in the target system, instead of updating only the modified ones.
+
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false* 
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Integrated Business Planning \(using version 2 - SCIM Interface for IAM\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`s4hana.cloud.support.patch.operation` 
+
+</td>
+<td valign="top">
+
+This property controls how modified entities \(users and groups\) in the source system are updated in the target system.
+
+> ### Note:  
+> Use this property when your SAP S/4HANA Cloud Public Edition connector is configured for version 3.
+
+-   If set to *true*, `PATCH` operations are used to update users and groups in the target system. This means, for example, that if a user attribute is modified or a group member is removed from a group, only these changes will be provisioned and applied in the target system.
+
+-   If set to *false*, `PUT` operations are used to update users and groups in the target system. This means, for example, that if a user attribute is modified or a group member is removed from a group, all user attributes and all group attributes are replaced in the target system, instead of updating only the modified ones.
+
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false* 
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP S/4HANA Cloud Public Edition \(using version 3 - System for Cross-domain Identity Management \(SCIM\) API\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `concur.support.patch.operation` 
 
 </td>

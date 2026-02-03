@@ -243,12 +243,24 @@ If your provisioning scenarios involve on-premise systems, this requires a separ
     <tr>
     <td valign="top">
     
-    KSA \(Dammam\)
+    Saudi Arabia \(Dammam\) - Regulated
     
     </td>
     <td valign="top">
     
-    KSA \(Dammam\) GCP public sector
+    KSA \(Dammam\) GCP
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Saudi Arabia \(Dammam\)
+    
+    </td>
+    <td valign="top">
+    
+    Europe \(Frankfurt\) AWS
     
     </td>
     </tr>
