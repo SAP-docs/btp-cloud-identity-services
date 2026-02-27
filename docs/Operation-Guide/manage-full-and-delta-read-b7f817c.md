@@ -261,6 +261,8 @@ For delta read of resources \(users and groups\), bear in mind the following API
 
 [Manage Certificates](manage-certificates-86d06a0.md "Identity Provisioning supports certificate-based authentication for secure communication with the provisioning systems (connectors) provided by the service.")
 
+[Configure Form-Based OAuth Authentication](configure-form-based-oauth-authentication-c233532.md "Configure Identity Provisioning to use form‑based OAuth 2.0 authentication to call SAP Ariba Applications APIs.")
+
 [Manage Deleted Entities](manage-deleted-entities-3d6bdf1.md "Manage deletion of entities (users or groups) in the target system after they have been deleted from the source system.")
 
 [Connect to On-Premise Systems](connect-to-on-premise-systems-3f1cac2.md "Set up the connection to on-premise systems when your Identity Provisioning bundle or standalone tenant is running on the infrastructure of SAP Cloud Identity Services.")

@@ -212,6 +212,7 @@ Unique
 <td valign="top">
 
 -   email can be used for logon
+-   email must be unique for security alert emails to end-users or administrators when a registration with nonunique email is carried out
 -   email must be unique, if provided, when a user is created or edited via the admin console
 -   `emails.value` attribute must be unique, if provided, when a user is created via SCIM REST API
 -   user must provide unique email, if required, when an update of the account is triggered

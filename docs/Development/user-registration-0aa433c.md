@@ -10,7 +10,7 @@ The user registration is used for registration of new users or for on-behalf reg
 
 ## Prerequisites
 
-You need to set up the authentication type to access the API. For more information about this configuration, see [API Authentication](../Operation-Guide/api-authentication-9d200d5.md).
+You need to set up the authentication type to access this API. You can use a *client ID* and a *secret*, or a certificate. For more information, see [Configure Secrets for API Authentication](../Operation-Guide/configure-secrets-for-api-authentication-5c3c35e.md) or [Configure Certificates for API Authentication](../Operation-Guide/configure-certificates-for-api-authentication-c408083.md).
 
 
 

@@ -10,14 +10,15 @@ Follow this procedure to set up SAP Application Server ABAP \(AS ABAP\) as a tar
 
 ## Prerequisites
 
-> ### Note:  
-> If you have purchased the Identity Provisioning service between **September 1, 2020** and **October 20, 2020**, and you want to make a connection to this on-premise system, follow the procedure in: [Connect to On-Premise Systems in SAP Cloud Identity Infrastructure](https://help.sap.com/docs/identity-authentication/identity-authentication/connect-to-on-premise-systems-in-sap-cloud-identity-infrastructure?version=Cloud).
+-   You have installed the Cloud Connector in your corporate environment and have done the initial configuration. For more information, see: [Cloud Connector \(Neo\)](https://help.sap.com/viewer/b865ed651e414196b39f8922db2122c7/Cloud/en-US/d751d065774e45e1b6bdbfdfd541da13.html)[Cloud Connector](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/cloud-connector?version=Cloud).
 
--   You have installed the Cloud Connector in your corporate environment and have done the initial configuration. For more information, see: [Cloud Connector \(Neo\)](https://help.sap.com/viewer/b865ed651e414196b39f8922db2122c7/Cloud/en-US/d751d065774e45e1b6bdbfdfd541da13.html)
+    For more information on how to make a connection to this on-premise system, follow the procedure in [Connect to On-Premise Systems](Operation-Guide/connect-to-on-premise-systems-3f1cac2.md)[Connect to On-Premise Systems in Neo Environment](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/7b5e15526d1a4ec78a5e7047724916b4.html "Set up the connection to on-premise systems when your Identity Provisioning bundle or standalone tenant is running on SAP BTP, Neo environment.") :arrow_upper_right:.
+
 -   You have credentials of a technical user with write permissions for AS ABAP. Via this user, the Identity Provisioning service will call the ABAP public API in order to execute a number of function modules. These function modules are listed in **step 1** from the procedure below.
--   The technical user has the following role, which provides all authorizations with read and write access to user data: **SAP\_BC\_JSF\_COMMUNICATION**
+-   The technical user must have the required RFC and security authorizations, as described in SAP Note [3666721](https://me.sap.com/notes/3666721).
 
-    For more information, see: [Requirements for the System User for UME-ABAP Communication](https://help.sap.com/docs/SAP_NETWEAVER_750/a42446bded624585958a36a71903a4a7/8f67d27676ace84080964d4c4223bb3c.html?locale=en-US)
+    > ### Note:  
+    > If the technical user has insufficient security authorization, no users or roles can be read.
 
 
 
@@ -350,6 +351,9 @@ Groups in source systems are mapped to roles in AS ABAP target systems.
 
     You can change the default transformation mapping rules to reflect your current setup of entities in AS ABAP. For more information, see [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md).
 
+    > ### Note:  
+    > The value of the **entityIdTargetSystem** attribute stores the entity's unique ID, which is written in the target system as the value of the **USERNAME** attribute. Do not delete or change this statement!
+
     When AS ABAP is configured as a target system for the Identity Provisioning service, the ABAP public API is used to write the identity data retrieved from the relevant source system. During the writing process, the JSON data is following the structure of the export parameters and will turn them into list and tables. Therefore, every JSON array from the intermediate transformation will be represented as a BAPI table, and every child JSON object will be represented as a BAPI structure.
 
     **Default transformation:**
@@ -367,9 +371,6 @@ Groups in source systems are mapped to roles in AS ABAP target systems.
 
         > ### Code Syntax:  
         > ```
-        > 
-        > // The value of attribute entityIdTargetSystem stores the entity's unique ID, and then 
-        > // it's written in the target system as a username. Do not delete this statement!
         > 
         > {
         >     "user": {

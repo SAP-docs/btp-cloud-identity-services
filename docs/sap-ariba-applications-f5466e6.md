@@ -13,6 +13,21 @@ Follow this procedure to set up SAP Ariba Applications as a proxy system.
 > ### Restriction:  
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.
 
+
+
+### Next-Generation SCIM API
+
+If you are using the next-generation SCIM API provided by SAP Ariba Applications:
+
+-   The Identity Provisioning service must be configured to use the OAuth 2.0 client‑credentials flow to obtain access tokens from the Identity Authentication service for calling the SAP Ariba Applications next generation SCIM API. The required dependency must be defined in the configuration of the consumer application. For more information, see [Configure Form-Based OAuth Authentication](Operation-Guide/configure-form-based-oauth-authentication-c233532.md).
+
+
+
+
+### Current-Generation SCIM API
+
+If you are using the current-generation SCIM API provided by SAP Ariba Applications:
+
 -   You have created a client application on [SAP Ariba APIs Portal](https://developer.ariba.com/api/) for your integration with Identity Provisioning. This is needed to enable SCIM API for user and group for Ariba Applications. For more information, see [Register an Application in SAP Ariba Developer Portal](https://help.sap.com/docs/btp/sap-btp-neo-environment/register-application-in-sap-ariba-developer-portal?version=Cloud) .
 
     > ### Note:  
@@ -186,7 +201,9 @@ Follow this procedure to set up SAP Ariba Applications as a proxy system.
 
 After fulfilling the prerequisites, you can create an SAP Ariba Applications proxy system to load its users into an on-premise system and provision groups and new users back to SAP Ariba Applications.
 
-These proxy systems consume SCIM 2.0 API provided by SAP Ariba Applications. For more information about the SAP Ariba SCIM API scope of support, see [SAP Ariba SCIM API](https://help.sap.com/docs/ARIBA_APIS_CDC/32f7a26e878a49509192814228bf4499/21cd220f389c42b69991d784cc00ca4f.html).
+These proxy systems can consume either the current-generation SCIM API or the next-generation SCIM API provided by SAP Ariba Applications. Identity Provisioning distinguishes between the two by the API URL pattern \(the current SCIM API contains **openapi** in the URL, while the next‑generation API does not\) and by the `AuthType=Form` property, which must be configured only for the next‑generation API.
+
+For more information about the SAP Ariba SCIM API scope of support, see [SAP Ariba SCIM API](https://help.sap.com/docs/ARIBA_APIS_CDC/32f7a26e878a49509192814228bf4499/21cd220f389c42b69991d784cc00ca4f.html).
 
 > ### Note:  
 > The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users and groups. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
@@ -296,6 +313,8 @@ These proxy systems consume SCIM 2.0 API provided by SAP Ariba Applications. For
     <td valign="top">
     
     Enter the SCIM API URL for your SAP Ariba application \(see the **Prerequisites** section\).
+
+    The current-generation SCIM API uses the **openapi** pattern in the URL.
     
     </td>
     </tr>
@@ -307,7 +326,7 @@ These proxy systems consume SCIM 2.0 API provided by SAP Ariba Applications. For
     </td>
     <td valign="top">
     
-    Enter: *Internet*
+    Enter: *Internet* 
     
     </td>
     </tr>
@@ -319,7 +338,21 @@ These proxy systems consume SCIM 2.0 API provided by SAP Ariba Applications. For
     </td>
     <td valign="top">
     
-    Enter: *BasicAuthentication*
+    Enter: *BasicAuthentication* 
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `AuthType`
+    
+    </td>
+    <td valign="top">
+    
+    Enter: *Form*
+
+    **Relevant for next-generation SCIM API**
     
     </td>
     </tr>
@@ -331,7 +364,7 @@ These proxy systems consume SCIM 2.0 API provided by SAP Ariba Applications. For
     </td>
     <td valign="top">
     
-    Enter the OAuth Client ID \(see the **Prerequisites** section\).
+    Enter the *Client ID* for the current-generation or the next-generation SCIM API, as described in the corresponding Prerequisites section.
     
     </td>
     </tr>
@@ -343,7 +376,7 @@ These proxy systems consume SCIM 2.0 API provided by SAP Ariba Applications. For
     </td>
     <td valign="top">
     
-    \(Credential\) Enter the OAuth Secret \(see the **Prerequisites** section\).
+    \(Credential\) Enter the *Client Secret* for the current-generation or the next-generation SCIM API, as described in the corresponding Prerequisites section.
     
     </td>
     </tr>
@@ -355,7 +388,21 @@ These proxy systems consume SCIM 2.0 API provided by SAP Ariba Applications. For
     </td>
     <td valign="top">
     
-    Enter the OAuth 2.0 Token Service URL \(see the **Prerequisites** section\).
+    Enter the OAuth 2.0 Token Service URL for the current-generation or the next-generation SCIM API, as described in the corresponding Prerequisites section.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `ariba.applications.api.dependency.name`
+    
+    </td>
+    <td valign="top">
+    
+    This property holds the value of the dependency name used in the configuration of the SAP Ariba Applications consumer application, created in the SAP Cloud Identity Services tenant. It is used for access token retrieval from Identity Authentication.
+
+    **Relevant for next-generation SCIM API**
     
     </td>
     </tr>
@@ -368,6 +415,8 @@ These proxy systems consume SCIM 2.0 API provided by SAP Ariba Applications. For
     <td valign="top">
     
     \(Credential\) Enter your application key \(see the **Prerequisites** section\).
+
+    **Relevant for current-generation SCIM API**
     
     </td>
     </tr>
@@ -380,6 +429,8 @@ These proxy systems consume SCIM 2.0 API provided by SAP Ariba Applications. For
     <td valign="top">
     
     Enter your AN-ID \(see the **Prerequisites** section\).
+
+    **Relevant for current-generation SCIM API**
     
     </td>
     </tr>
@@ -509,7 +560,7 @@ These proxy systems consume SCIM 2.0 API provided by SAP Ariba Applications. For
     </td>
     <td valign="top">
     
-    The nuber of user groups that SAP Ariba Application returns per request when reading a user.
+    The number of user groups that SAP Ariba Application returns per request when reading a user.
 
     When the Identity Provisioning reads a user, it compares the number groups assigned with the value configured for `ariba.applications.user.groups.page.size`. Depending on the number of groups assigned to the user, you can expect the following results:
 

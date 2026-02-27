@@ -32,9 +32,14 @@ The application can get different values for a certain attribute name. The follo
 > ### Note:  
 > You can specify multiple user attribute values for each user attribute. Up to 300 attribute values are allowed for self-created customer applications and automatically created single-tenant applications, and up to 50 attribute values for automatically created single-tenant applications.
 > 
-> -   for OpenID Connect - the attributes are included in the token as string if there is one value, and array if multiple.
+> -   For OpenID Connect, the attributes are included in the token as string if there is one value, and array if multiple.
 > 
-> -   for SAML 2.0 - the attributes are included in the assertion as one attribute statement with multiple values in it.
+> -   For SAML 2.0, the attributes are included in the assertion as one attribute statement with multiple values in it.
+
+SAP Cloud Identity Services supports nested attributes. You can use up to five layers of nesting. For example, `"kubernetes.io".serviceaccount.name`.
+
+> ### Restriction:  
+> Attribute names that use the prefix `sap_` are reserved.
 
 
 

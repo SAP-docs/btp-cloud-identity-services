@@ -8,7 +8,7 @@ The Change Master Data Texts REST API can be used to change the predefined maste
 
 ## Prerequisites
 
-To call the methods of this Change Master Data Texts REST API you must have a system as administrator with an assigned *Manage Tenant Configuration* role. For more details about how to add a system as administrator and assign administrator roles, see [Add System as Administrator](../Operation-Guide/add-administrators-bbbdbdd.md#loiocefb742a36754b18bbe5c3503ac6d87c), and [Edit Administrator Authorizations](../Operation-Guide/edit-administrator-authorizations-86ee374.md).
+To call the methods of this Change Master Data Texts REST API you must have a system as administrator \(technical user\) with an assigned *Manage Tenant Configuration* role. For more information, see [Add System as Administrator](../Operation-Guide/add-administrators-bbbdbdd.md#loiocefb742a36754b18bbe5c3503ac6d87c), and [Edit Administrator Authorizations](../Operation-Guide/edit-administrator-authorizations-86ee374.md).
 
 
 

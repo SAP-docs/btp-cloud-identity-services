@@ -19,7 +19,10 @@ You can set the number of days for which the users can postpone the enabling of 
 
 ## Context
 
-The number of days for which users can postpone the enabling of second factor can be set between 1 and 14 days. The configuration is valid for all applications in the tenant.
+The number of days for which users can postpone the enabling of second factor can be set between 1 and 14 days. The configuration is valid for all applications in the tenant. The default setting is 14 days.
+
+> ### Note:  
+> The option is switched on by default for all tenants that are created after the February 26, 2026 upgrade of SAP Cloud Identity Services.
 
 If the tenant or application requires two-factor authentication, and the users don't have an enabled two-factor authentication method, or the method that is enabled is not among the ones required by the application, at sign-in users can choose to skip the enabling of two-factor authentication for the period defined by the tenant administrator. The users can sign in without providing a second factor until the grace period expires.
 

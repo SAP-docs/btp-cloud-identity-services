@@ -341,8 +341,18 @@ SCIM API 2.0 does not support managing of group assignments via the SCIM user re
     >                 "targetPath": "$.id"
     >             },
     >             {
-    >                 "constant": ["urn:ietf:params:scim:schemas:core:2.0:User","urn:ietf:params:scim:schemas:extension:enterprise:2.0:User","urn:ietf:params:scim:schemas:extension:sap:2.0:User","urn:sap:cloud:scim:schemas:extension:custom:2.0:User"],
+    >                 "constant": [
+    >                     "urn:ietf:params:scim:schemas:core:2.0:User",
+    >                     "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User",
+    >                     "urn:ietf:params:scim:schemas:extension:sap:2.0:User",
+    >                     "urn:sap:cloud:scim:schemas:extension:custom:2.0:User"
+    >                 ],
     >                 "targetPath": "$.schemas"
+    >             },
+    >             {
+    >                 "condition": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid'] EMPTY false",
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >                 "targetPath": "$.externalId"
     >             },
     >             {
     >                 "condition": "$.externalId EMPTY false",
@@ -373,42 +383,42 @@ SCIM API 2.0 does not support managing of group assignments via the SCIM user re
     >             },
     >             {
     >                 "sourcePath": "$.displayName",
-    >                 "optional":true,
+    >                 "optional": true,
     >                 "targetPath": "$.displayName"
     >             },
     >             {
     >                 "sourcePath": "$.name.givenName",
-    >                 "optional":true,
+    >                 "optional": true,
     >                 "targetPath": "$.name.givenName"
     >             },
     >             {
     >                 "sourcePath": "$.name.familyName",
-    >                 "optional":true,
+    >                 "optional": true,
     >                 "targetPath": "$.name.familyName"
     >             },
     >             {
     >                 "sourcePath": "$.name.formatted",
-    >                 "optional":true,
+    >                 "optional": true,
     >                 "targetPath": "$.name.formatted"
     >             },
     >             {
     >                 "sourcePath": "$.name.honorificPrefix",
-    >                 "optional":true,
+    >                 "optional": true,
     >                 "targetPath": "$.name.honorificPrefix"
     >             },
     >             {
     >                 "sourcePath": "$.name.honorificSuffix",
-    >                 "optional":true,
+    >                 "optional": true,
     >                 "targetPath": "$.name.honorificSuffix"
     >             },
     >             {
     >                 "sourcePath": "$.name.middleName",
-    >                 "optional":true,
+    >                 "optional": true,
     >                 "targetPath": "$.name.middleName"
     >             },
     >             {
     >                 "sourcePath": "$.active",
-    >                 "optional":true,
+    >                 "optional": true,
     >                 "targetPath": "$.active"
     >             },
     >             {

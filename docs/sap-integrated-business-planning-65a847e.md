@@ -697,24 +697,24 @@ SAP Integrated Business Planning provides different APIs for integration with Id
     >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['validTo']"
     >       },
     >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['language']['logonLanguage']",
-    >         "optional": true,
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['language']['logonLanguage']"
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['language']['correspondence']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['language']['correspondence']",
+    >         "optional": true
     >       },
     >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['decimalFormatCode']",
-    >         "optional": true,
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['decimalFormatCode']"
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['localeSettings']['numericalRepresentation']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['localeSettings']['numericalRepresentation']",
+    >         "optional": true
     >       },
     >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['dateFormatCode']",
-    >         "optional": true,
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['dateFormatCode']"
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['localeSettings']['date']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['localeSettings']['date']",
+    >         "optional": true
     >       },
     >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['timeFormatCode']",
-    >         "optional": true,
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['timeFormatCode']"
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['localeSettings']['time']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['localeSettings']['time']",
+    >         "optional": true
     >       },
     >       {
     >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",

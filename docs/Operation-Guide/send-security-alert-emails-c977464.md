@@ -26,6 +26,10 @@ The tenant administrator can configure the system to send security alert emails 
 -   *TFA device activation or deactivation; postpone enabling of Two-Factor Authentication*
 -   *Registration with nonunique email*
 
+    > ### Note:  
+    > The email user identifier must be selected unique. For more information, see [Configure User Identifier Attributes](configure-user-identifier-attributes-8b9fa88.md).
+
+
 > ### Remember:  
 > It takes 2 minutes for the configuration changes to take place.
 

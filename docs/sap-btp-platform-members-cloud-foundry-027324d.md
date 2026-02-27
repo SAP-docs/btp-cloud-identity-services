@@ -14,7 +14,7 @@ Follow this procedure to set up the SAP BTP Platform Members \(Cloud Foundry\) a
 
 -   You have established trust between your SAP Cloud Identity Services tenant as custom identity provider for platform users and your global account\(s\) containing these subaccounts. For more information, see [Establish Trust and Federation of Custom Identity Providers for Platform Users](https://help.sap.com/docs/btp/sap-business-technology-platform/establish-trust-and-federation-of-custom-identity-providers-for-platform-users?locale=en-US&version=Cloud).
 
--   You have created a CF provisioning user \(which is a regular user of type *Employee* in the local identity directory of your SAP Cloud Identity Services tenant\) that will be used for provisioning. Give this user an email address with the following pattern `cf-user-provisioning-<origin_key>@sap.invalid`, where `<origin_key>` is the origin key of the trust configuration for BTP platform users which points to your SAP Cloud Identity Services tenant. You have set an initial password for the user and marked its email adress as *verified*. For more information, see [Create a New User](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/create-new-user?locale=en-US&version=Cloud) and [List and Edit User Details](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/list-and-edit-user-details?locale=en-US&version=Cloud).
+-   You have created a CF provisioning user \(which is a regular user of type *Employee* in the local identity directory of your SAP Cloud Identity Services tenant\) that will be used for provisioning. Give this user an email address with the following pattern `cf-user-provisioning-<origin_key>@sap.invalid`, where `<origin_key>` is the origin key of the trust configuration for BTP platform users which points to your SAP Cloud Identity Services tenant. You have set an initial password for the user and marked its email address as *verified*. For more information, see [Create a New User](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/create-new-user?locale=en-US&version=Cloud) and [List and Edit User Details](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/list-and-edit-user-details?locale=en-US&version=Cloud).
 
     > ### Note:  
     > The password lifetime for the CF provisioning user depends on the password policy set for the *SAP Business Technology Platform* application in the administration console of SAP Cloud Identity Services. For more information, see [Set a Password Policy for an Application](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/set-password-policy-for-application?version=Cloud).
@@ -53,8 +53,8 @@ Follow the steps below to create SAP BTP Platform Members \(Cloud Foundry\) as a
 > 
 > Whereas the group display names adhere to the following patterns:
 > 
-> -   organization group display name: `<btp.cf.pm.group.prefix>_<btp.cf.pm.landscape>:<org_name>:<org_role>`
-> -   space group display name: `<btp.cf.pm.group.prefix>_<btp.cf.pm.landscape>:<org_name>:<space_name>:<space_role>`
+> -   organization group display name: `<btp.cf.pm.group.prefix><btp.cf.pm.landscape>:<org_name>:<org_role>`
+> -   space group display name: `<btp.cf.pm.group.prefix><btp.cf.pm.landscape>:<org_name>:<space_name>:<space_role>`
 
 > ### Note:  
 > In case you have Cloud Foundry environment enabled in multiple Cloud Foundry landscapes or more than one SAP Cloud Identity Services tenants, you must configure a separate SAP BTP Platform Members \(Cloud Foundry\) connector for each of them.
@@ -67,7 +67,7 @@ The source system consumes `User Account and Authentication API` and `Cloud Foun
 
 1.  To enable provisioning of platform users and user role assignments to and from Cloud Foundry environment, create a Support Ticket on component`BC-CP-CF-SEC-IAM`.
 
-    Specify your SAP Cloud Identity Services tenant ID and the origin key of the trust configuration for BTP platform users which points to your SAP Cloud Identity Services tenant. You can find the origin key value in the SAP BTP cockpit. Go to yourSAP BTP subaccount, choose *Trust Configuration* and see the value under *Origin Key* for the relevant *Custom Identity Provider for Platform Users*.
+    Specify your SAP Cloud Identity Services tenant ID and the origin key of the trust configuration for BTP platform users which points to your SAP Cloud Identity Services tenant. You can find the origin key value in the SAP BTP cockpit. Go to your SAP BTP subaccount, choose *Trust Configuration* and see the value under *Origin Key* for the relevant *Custom Identity Provider for Platform Users*.
 
 2.  Access the Identity Provisioning UI.
 
@@ -189,7 +189,7 @@ The source system consumes `User Account and Authentication API` and `Cloud Foun
     
     Enter the *technical key* or the *host name* of the landscape in which your multi-environment subaccount with enabled Cloud Foundry environment is located.
 
-    The techical key is available only for the SAP BTP Cloud Foundry regions.
+    The technical key is available only for the SAP BTP Cloud Foundry regions.
 
     For more information, see [Regions and API Endpoints Available for the Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/regions-and-api-endpoints-available-for-cloud-foundry-environment?version=Cloud).
 
@@ -274,7 +274,7 @@ The source system consumes `User Account and Authentication API` and `Cloud Foun
     > 
     > -   When adding a user as space member, it must already be present as member of the relevant organization with assigned role **Org User**. When deleting an org member, it should be first removed from the spaces of the relevant organization. In case you end up with erroneous entity structure, you can manually add or delete users via the administration console for SAP Cloud Identity Services.
     > 
-    > -   When adding user role assignments, you should first add the org roles and afterwards proceed with the space roles. Also, when deleting user role assignments, you should first delete the space roles and then proceed with the org roles. If this condition is not fullfiled the job will finish with error. In that case, you can rerun the job until it finishes successfully.
+    > -   When adding user role assignments, you should first add the org roles and afterwards proceed with the space roles. Also, when deleting user role assignments, you should first delete the space roles and then proceed with the org roles. If this condition is not fulfilled the job will finish with error. In that case, you can rerun the job until it finishes successfully.
 
     **Default transformation:**
 
@@ -357,6 +357,10 @@ The source system consumes `User Account and Authentication API` and `Cloud Foun
     >             "prefix": "%btp.cf.pm.group.prefix%"
     >           }
     >         ]
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
     >       },
     >       {
     >         "sourcePath": "$.members",

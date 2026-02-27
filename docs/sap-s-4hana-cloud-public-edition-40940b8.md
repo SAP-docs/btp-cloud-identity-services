@@ -443,6 +443,27 @@ SAP S/4HANA Cloud Public Edition provides different APIs for integration with Id
     <tr>
     <td valign="top">
     
+    \(Optional\) `s4hana.cloud.support.patch.operation`
+    
+    </td>
+    <td valign="top">
+    
+    This property controls how modified entities \(users and groups\) in the source system are updated in the target system.
+
+    -   If set to **true**, PATCH operations are used to update users and groups in the target system. This means, for example, that if a user attribute is modified or a group member is removed from a group, only these changes will be provisioned and applied in the target system.
+
+    -   If set to **false**, PUT operations are used to update users and groups in the target system. This means, for example, that if a user attribute is modified or a group member is removed from a group, all user attributes and all group attributes are replaced in the target system, instead of updating only the modified ones.
+
+
+    Default value: *false*
+
+    **Relevant for connector version 3**
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     \(Optional\) `s4hana.cloud.bulk.operations.max.count`
     
     </td>
@@ -809,12 +830,6 @@ SAP S/4HANA Cloud Public Edition provides different APIs for integration with Id
     >         ]
     >       },
     >       {
-    >         "sourcePath": "$.addresses",
-    >         "targetPath": "$.addresses",
-    >         "preserveArrayWithSingleElement": true,
-    >         "optional": true
-    >       },
-    >       {
     >         "sourcePath": "$.userType",
     >         "optional": true,
     >         "targetPath": "$.userType"
@@ -850,18 +865,23 @@ SAP S/4HANA Cloud Public Edition provides different APIs for integration with Id
     >         "optional": true
     >       },
     >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['decimalFormatCode']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['decimalFormatCode']",
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['language']['correspondence']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['language']['correspondence']",
     >         "optional": true
     >       },
     >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['dateFormatCode']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['dateFormatCode']",
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['localeSettings']['numericalRepresentation']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['localeSettings']['numericalRepresentation']",
     >         "optional": true
     >       },
     >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['timeFormatCode']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['timeFormatCode']",
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['localeSettings']['date']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['localeSettings']['date']",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['localeSettings']['time']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['localeSettings']['time']",
     >         "optional": true
     >       },
     >       {

@@ -39,7 +39,7 @@ Define a dependency to the API of another application. With this configuration, 
 
 5.  Enter the required data.
 
-    You can create a maximum of 20 dependencies.
+    You can create a maximum of 40 dependencies.
 
     1.  Enter a unique name for the dependency.
 

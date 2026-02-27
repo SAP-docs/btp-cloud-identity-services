@@ -10,14 +10,14 @@ You can configure attributes based on flexible expressions for the application.
 
 ## Context
 
-The attributes are sent from Identity Authentication to the application in the assertion. You can set attributes like `location` and `company` with values *Europe* and *Company A* for example, so that the application displays Europe and Company A on its main page.
+The attributes are sent from Identity Authentication to the application in the assertion. You can set attributes like `location` and `company` with values *Europe* and *Company A*, for example, so that the application displays Europe and Company A on its main page.
 
-The attributes are also put in the `id_token` if the application is OpenID connect. For more information, see [Configuring OpenID Connect \(OIDC\)](configuring-openid-connect-oidc-a789c9c.md).
+The attributes are also put in the `id_token` if the application is OpenID Connect. For more information, see [Configuring OpenID Connect \(OIDC\)](configuring-openid-connect-oidc-a789c9c.md).
 
-For both, the SAML 2.0 and OpenID Connect applications, you can configure attributes with dynamic values to be added into the assertions in the following pattern: `<prefix> ${attribute_technical_name>} <suffix>`
+For both the SAML 2.0 and OpenID Connect applications, you can configure attributes with dynamic values to be added into the assertions in the following pattern: `<prefix> ${attribute_technical_name>} <suffix>`
 
 > ### Restriction:  
-> \(For OpenID Connect applications\) The following claims can't be set via the configuration of attributes with default values: `iss`, `sub`, `zone_uuid`, `exp`, `nbf`, `iat`, `auth_time`, `nonce`, `acr`, `amr`, `azpacr``cnf`, `azp`, `at_hash`, `c_hash`, `sub_jwk`, and `app_tid`, `ias_iss`.
+> For OpenID Connect applications, the following claims can't be set via the configuration of attributes with default values: `acr`, `amr`, `app_tid`, `at_hash`, `auth_time`, `azp`, `azpacr`, `cnf`, `c_hash`, `exp`, `ias_apis`, `ias_iss`, `iat`, `iss`, `jti``nbf`, `nonce`, `sap_id_type`, `scim_id`, `sid`, `sub`, `sub_jwk`, and `zone_uuid`.
 
 
 
@@ -644,7 +644,7 @@ If you set `${uid}` as a value, the response returns the ID of the user to the a
 > 
 > ```
 
-If you set `${customAttribute1}` as a value, the response returns the first custom attribute of the user to the application, if there is such. If the user does not have a custom attribute, the response contains an empty attribute:
+If you set `${customAttribute1}` as a value, the response returns the first custom attribute of the user to the application, if there is one. If the user doesn't have a custom attribute, the response contains an empty attribute:
 
 > ### Example:  
 > ```
@@ -695,11 +695,11 @@ If you set `${companyGroups:regex[Admin]}` as a value, the response returns the 
 
 ### Merge User Attributes
 
-For both, the SAML 2.0 and OpenID Connect applications, you can define attributes with the same name, but with different values, or you can define a user attribute and an attribute with default value with the same name. In the response, the attributes are merged into multivalue attributes. Thus, depending on the configuration, several values may appear for a single value attribute.
+For both the SAML 2.0 and OpenID Connect applications, you can define attributes with the same name, but with different values, or you can define a user attribute and an attribute with a default value with the same name. In the response, the attributes are merged into multivalue attributes. Thus, depending on the configuration, several values may appear for a single value attribute.
 
 The order of the attribute's values in the assertion is arbitrary.
 
-For example, you have defined the `mail` user attribute and at the same time the `mail` attribute with default value `example@example.com`.
+For example, you've defined the `mail` user attribute and at the same time the `mail` attribute with default value `example@example.com`.
 
 > ### Example:  
 > When the user Dona Moore logs on, the response returns `mail` as a multivalue attribute with the two values.
@@ -734,7 +734,7 @@ For example, you have defined the `mail` user attribute and at the same time the
 
 -   *Identity Federation* not configured
 
-    When the application uses corporate IdP for authentication, and the *Use Identity Authentication user store* option under *Identity Federation* is disabled, the attributes configurations with default values in the administration console for SAP Cloud Identity Services are not relevant. For more information about the corporate identity provider scenario, see [Corporate Identity Providers](corporate-identity-providers-19f3eca.md) and [Configure Identity Federation](configure-identity-federation-c029bbb.md).
+    When the application uses corporate IdP for authentication, and the *Use Identity Authentication user store* option under *Identity Federation* is disabled, the attributes configurations with default values in the administration console for SAP Cloud Identity Services aren't relevant. For more information about the corporate identity provider scenario, see [Corporate Identity Providers](corporate-identity-providers-19f3eca.md) and [Configure Identity Federation](configure-identity-federation-c029bbb.md).
 
     The configuration of the attributes with default values for the system applications is disabled.
 
@@ -1220,7 +1220,7 @@ You can define complex custom schema attributes with single-value child attribut
         > 
         > 1.  Deactivate the existing attribute.
         > 
-        > 2.  Add a new new value with a flexible expression.
+        > 2.  Add a new value with a flexible expression.
 
     -   *Self-defined Attributes* - self-created applications or automatically created single-tenant applications.
         1.  Choose *Add button to add new attribute for the application* \> *provide the name* \> *Expression* \> *provide the value*.

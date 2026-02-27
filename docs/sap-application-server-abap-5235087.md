@@ -8,10 +8,10 @@ Follow this procedure to set up SAP Application Server ABAP \(AS ABAP\) as a sou
 
 ## Prerequisites
 
-> ### Note:  
-> If you have purchased the Identity Provisioning service between **September 1, 2020** and **October 20, 2020**, and you want to make a connection to this on-premise system, follow the procedure in: [Connect to On-Premise Systems in SAP Cloud Identity Infrastructure](https://help.sap.com/docs/identity-authentication/identity-authentication/connect-to-on-premise-systems-in-sap-cloud-identity-infrastructure?version=Cloud).
+-   You have installed the Cloud Connector in your corporate environment and have done the initial configuration. For more information, see: [Cloud Connector \(Neo\)](https://help.sap.com/viewer/b865ed651e414196b39f8922db2122c7/Cloud/en-US/d751d065774e45e1b6bdbfdfd541da13.html)[Cloud Connector](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/cloud-connector?version=Cloud).
 
--   You have installed the Cloud Connector in your corporate environment and have done the initial configuration. For more information, see: [Cloud Connector \(Neo\)](https://help.sap.com/viewer/b865ed651e414196b39f8922db2122c7/Cloud/en-US/d751d065774e45e1b6bdbfdfd541da13.html)
+    For more information on how to make a connection to this on-premise system, follow the procedure in [Connect to On-Premise Systems](Operation-Guide/connect-to-on-premise-systems-3f1cac2.md)[Connect to On-Premise Systems in Neo Environment](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/7b5e15526d1a4ec78a5e7047724916b4.html "Set up the connection to on-premise systems when your Identity Provisioning bundle or standalone tenant is running on SAP BTP, Neo environment.") :arrow_upper_right:.
+
 -   You have credentials of a technical user with read permissions for AS ABAP, which plays the role of a user data source. Via this user, the Identity Provisioning service will call the ABAP public API in order to execute a number of function modules. These function modules are listed in **step 1** from the procedure below.
 -   The technical user must have the required RFC and security authorizations, as described in SAP Note [3666721](https://me.sap.com/notes/3666721).
 

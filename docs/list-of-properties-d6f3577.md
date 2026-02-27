@@ -839,6 +839,58 @@ SAP S/4HANA Cloud Public Edition \(using version 3 - System for Cross-domain Ide
 <tr>
 <td valign="top">
 
+`ibp.group.members.paging.enabled`
+
+</td>
+<td valign="top">
+
+This property enables paging of group members.
+
+**Possible values:**
+
+-   *true* - Paging is enabled.
+-   *false* - Paging is disabled.
+
+Default value: *false*
+
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP Integrated Business Planning \(using version 2 - SCIM Interface for IAM\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ibp.user.groups.paging.enabled`
+
+</td>
+<td valign="top">
+
+This property enables paging of user groups.
+
+**Possible values:**
+
+-   *true* - Paging is enabled.
+-   *false* - Paging is disabled.
+
+Default value: *false*
+
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP Integrated Business Planning \(using version 2 - SCIM Interface for IAM\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `s4hana.cloud.user.groups.paging.enabled`
 
 </td>
@@ -15983,6 +16035,48 @@ SAP S/4HANA Cloud Public Edition \(using version 3 - System for Cross-domain Ide
 <tr>
 <td valign="top">
 
+`ibp.group.members.page.size`
+
+</td>
+<td valign="top">
+
+The number of group members that SAP Integrated Business Planning returns per request when reading a group.
+
+**Default value:** 20000
+
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP Integrated Business Planning \(using version 2 - SCIM Interface for IAM\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ibp.user.groups.page.size`
+
+</td>
+<td valign="top">
+
+The number of user groups that SAP Integrated Business Planning returns per request when reading a group.
+
+**Default value:** 20000
+
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP Integrated Business Planning \(using version 2 - SCIM Interface for IAM\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `s4hana.cloud.user.groups.page.size`
 
 </td>
@@ -16327,6 +16421,36 @@ Possible values: Text/numeric string
 <td valign="top">
 
 SAP Ariba Applications 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ad.group.flatten.page.size`
+
+</td>
+<td valign="top">
+
+This property controls the page size used during Microsoft Active Directory group member flattening. When flattening is enabled \(`ad.group.flatten=true` - meaning all nested group members, including users and subgroups, are retrieved\), this property specifies how many users and groups are requested from AD in a single page.
+
+**Possible values**:
+
+-   Minimum value: 100
+
+-   Maximum value: 1000
+
+
+If the value is missing, null, or invalid, it defaults to 1000.
+
+Default value: 1000
+
+**System Role:**Source
+
+</td>
+<td valign="top">
+
+Microsoft Active Directory
 
 </td>
 </tr>

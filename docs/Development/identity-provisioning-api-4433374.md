@@ -15,13 +15,13 @@ Manage identity lifecycle processes for cloud and on-premise systems.
 
 ## Prerequisites
 
-To call this API you must have a technical user \(system as administrator\) with the following roles assigned:
+To call the methods of this SCIM REST API you must have a system as administrator \(technical user\) with the following roles assigned:
 
--   Access Proxy System API
+-   *Access Proxy System API*
 
--   Access Real-Time Provisioning API
+-   *Access Real-Time Provisioning API*
 
--   Access Identity Provisioning Tenant Admin API
+-   *Access Identity Provisioning Tenant Admin API*
 
 
 For more information, see [Add System as Administrator](../Operation-Guide/add-administrators-bbbdbdd.md#loiocefb742a36754b18bbe5c3503ac6d87c), and [Edit Administrator Authorizations](../Operation-Guide/edit-administrator-authorizations-86ee374.md).

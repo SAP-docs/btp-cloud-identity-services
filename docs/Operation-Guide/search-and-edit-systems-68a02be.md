@@ -18,7 +18,7 @@ Searching and paging of provisioning systems is supported for tenants running on
 
 ## Context
 
-Paging is enabled by default. The number of systems loaded per page is 20. They are sorted by type \(*Customer Managed*, *SAP Initiated* and *SAP Managed*\) and state \(*Enabled* and *Disabled*\) in the following order:
+Paging is enabled by default. The number of systems loaded per page is 20. They are sorted by type \(*Customer Managed* and *SAP Initiated*\) and state \(*Enabled* and *Disabled*\) in the following order:
 
 1.  Customer Managed, enabled systems are displayed alphabetically
 
@@ -27,10 +27,6 @@ Paging is enabled by default. The number of systems loaded per page is 20. They 
 3.  SAP Initiated, enabled systems are displayed alphabetically
 
 4.  SAP Initiated, disabled systems are displayed alphabetically
-
-5.  SAP Managed, enabled systems are displayed alphabetically
-
-6.  SAP Managed, disabled systems are displayed alphabetically
 
 
 > ### Note:  
@@ -76,6 +72,8 @@ Paging is enabled by default. The number of systems loaded per page is 20. They 
 [Manage Transformations](manage-transformations-2d0fbe5.md "You can manage transformations with graphical and JSON text editor. Regardless of which one you choose, the following initial steps are the same.")
 
 [Manage Certificates](manage-certificates-86d06a0.md "Identity Provisioning supports certificate-based authentication for secure communication with the provisioning systems (connectors) provided by the service.")
+
+[Configure Form-Based OAuth Authentication](configure-form-based-oauth-authentication-c233532.md "Configure Identity Provisioning to use form‑based OAuth 2.0 authentication to call SAP Ariba Applications APIs.")
 
 [Manage Full and Delta Read](manage-full-and-delta-read-b7f817c.md "When you set up your systems and start a scheduled provisioning task, the standard behavior of the process reads all the entities from the source system. This mode prevents data loss and always keeps your target system synchronized with the source. However, it may take a long time for every job to be executed.")
 

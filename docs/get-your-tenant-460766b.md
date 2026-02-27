@@ -152,9 +152,6 @@ Get your productive and test tenant as part of a self-service request in SAP BTP
     > 
     > The default test and productive tenants will be created in the same region.
 
-    > ### Caution:  
-    > If you unsubscribe from the *default* plan, the Cloud Identity Services tenant is deactivated, if not used by other orders or products.
-
 9.  If you initially create a test tenant and then you want to proceed with a productive one \(or vice versa\), repeat the preceding steps in a separate subaccount of the same region.
 
 
@@ -162,7 +159,7 @@ Get your productive and test tenant as part of a self-service request in SAP BTP
 
 ### Next Steps
 
-Go to your email inbox and activate your account. For more information, see .[Activate Your Account](activate-your-account-cc03ecc.md)
+Go to your email inbox and activate your account. For more information, see [Activate Your Account](activate-your-account-cc03ecc.md).
 
 > ### Note:  
 > **SAP BTP, Neo subaccount**
@@ -185,6 +182,8 @@ Get an additional tenant as part of a self-service request in SAP BTP cockpit. S
 ### Prerequisites
 
 -   You have a global account in SAP BTP cockpit with a multi-environment subaccount.
+
+-   You have an existing default tenant. A tenant marked as default is typically the first one created for the customer. Many SAP applications automatically integrate with this tenant when provisioned. To check which tenant is your default one, refer to [View Assigned Tenants and Administrators](view-assigned-tenants-and-administrators-f56e6f2.md).
 
 
 
@@ -245,7 +244,7 @@ Go to your email inbox and activate your account. For more information, see .[Ac
 > 
 > Identity Authentication additional productive tenant will be created and the account member who triggered the creation will get an activation email. Note that test tenants cannot be created from a Neo subaccount.
 > 
-> If you decide to remove that additional tenant for the subaccount by choosing the *Delete* button, note that the tenant is deleted immediately.
+> You can delete the additional tenant by choosing the *Delete* button, which initiates the deletion of the subscription to the additional-tenant plan of Cloud Identity Services in your subaccount. The tenant will be deactivated for 30 days before being permanently deleted. After deletion, it cannot be restored.
 
 
 

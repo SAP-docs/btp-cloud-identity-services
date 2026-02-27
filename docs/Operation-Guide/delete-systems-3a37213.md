@@ -55,6 +55,8 @@ The system disappears from the panel.
 
 [Manage Certificates](manage-certificates-86d06a0.md "Identity Provisioning supports certificate-based authentication for secure communication with the provisioning systems (connectors) provided by the service.")
 
+[Configure Form-Based OAuth Authentication](configure-form-based-oauth-authentication-c233532.md "Configure Identity Provisioning to use form‑based OAuth 2.0 authentication to call SAP Ariba Applications APIs.")
+
 [Manage Full and Delta Read](manage-full-and-delta-read-b7f817c.md "When you set up your systems and start a scheduled provisioning task, the standard behavior of the process reads all the entities from the source system. This mode prevents data loss and always keeps your target system synchronized with the source. However, it may take a long time for every job to be executed.")
 
 [Manage Deleted Entities](manage-deleted-entities-3d6bdf1.md "Manage deletion of entities (users or groups) in the target system after they have been deleted from the source system.")

@@ -491,6 +491,7 @@
                 -   [Generate and Manage Certificates for Outbound Connection](Operation-Guide/generate-and-manage-certificates-for-outbound-connection-76867db.md)
                 -   [Manage Certificates for Inbound Connection](Operation-Guide/manage-certificates-for-inbound-connection-952e7c7.md)
                 -   [Configure OAuth Certificate Authentication](Operation-Guide/configure-oauth-certificate-authentication-a40a3f3.md)
+            -   [Configure Form-Based OAuth Authentication](Operation-Guide/configure-form-based-oauth-authentication-c233532.md)
             -   [Manage Full and Delta Read](Operation-Guide/manage-full-and-delta-read-b7f817c.md)
             -   [Manage Deleted Entities](Operation-Guide/manage-deleted-entities-3d6bdf1.md)
             -   [Connect to On-Premise Systems](Operation-Guide/connect-to-on-premise-systems-3f1cac2.md)

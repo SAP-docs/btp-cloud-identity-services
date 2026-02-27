@@ -29,11 +29,11 @@ You have activated your account for the administration console of SAP Cloud Iden
     > 
     > If you have a configured custom domain, the URL has the `<your custom domain>/admin` pattern.
 
-2.  Sign in to the the administration console of SAP Cloud Identity Services.
+2.  Sign in to the administration console of SAP Cloud Identity Services.
 
     The login credentials are set when the administrator logs in for the first time.
 
     > ### Note:  
-    > If you experience troubles in accessing your tenant, check our [Guided Answers](https://ga.support.sap.com/dtp/viewer/#/tree/2065/actions/26547:29111:35393:28666:29077:29079:29081:29083) or report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`.
+    > If you experience troubles in accessing your tenant, check the [Accessing the Administration Console](Monitoring-and-Reporting/accessing-the-administration-console-6187940.md) troubleshooting page or report an incident on [SAP Support Portal Home](https://support.sap.com/en/index.html) with a component `BC-IAM-IDS`.
 
 

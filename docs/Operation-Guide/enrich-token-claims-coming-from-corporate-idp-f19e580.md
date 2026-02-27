@@ -21,6 +21,8 @@ For the OpenID Connect applications, you can configure claims with:
 
 You can add up to 30 claims per corporate IdP.
 
+SAP Cloud Identity Services supports nested attributes. You can use up to five layers of nesting. For example, `${"kubernetes.io".serviceaccount.name}`.
+
 
 
 ### Identity Federation

@@ -43,8 +43,8 @@ In SAP BTP Platform Members \(Cloud Foundry\), groups correspond to roles in par
 > 
 > Whereas the group display names adhere to the following patterns:
 > 
-> -   organization group display name: `<btp.cf.pm.group.prefix>_<btp.cf.pm.landscape>:<org_name>:<org_role>`
-> -   space group display name: `<btp.cf.pm.group.prefix>_<btp.cf.pm.landscape>:<org_name>:<space_name>:<space_role>`
+> -   organization group display name: `<btp.cf.pm.group.prefix><btp.cf.pm.landscape>:<org_name>:<org_role>`
+> -   space group display name: `<btp.cf.pm.group.prefix><btp.cf.pm.landscape>:<org_name>:<space_name>:<space_role>`
 
 The target system consumes `User Account and Authentication API`and `Cloud Foundry V3 API` provided by Cloud Foundry.
 

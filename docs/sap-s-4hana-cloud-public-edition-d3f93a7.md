@@ -712,23 +712,23 @@ SAP S/4HANA Cloud Public Edition provides different APIs for integration with Id
     >         "optional": true
     >       },
     >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['language']['logonLanguage']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['language']['logonLanguage']",
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['language']['correspondence']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['language']['correspondence']",
     >         "optional": true
     >       },
     >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['decimalFormatCode']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['decimalFormatCode']",
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['localeSettings']['numericalRepresentation']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['localeSettings']['numericalRepresentation']",
     >         "optional": true
     >       },
     >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['dateFormatCode']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['dateFormatCode']",
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['localeSettings']['date']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['localeSettings']['date']",
     >         "optional": true
     >       },
     >       {
-    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['timeFormatCode']",
-    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['regionalSettings']['timeFormatCode']",
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['localeSettings']['time']",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['localeSettings']['time']",
     >         "optional": true
     >       },
     >       {

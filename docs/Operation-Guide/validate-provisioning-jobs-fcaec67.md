@@ -79,7 +79,7 @@ Like the simulate job, the validate job predicts results in the target system wi
 -   You want to test if conditions are met or if all required user and group attributes are available
 
 
-To run a validate job, you need to import one or two CSV files - one for users and/or one for groups. Each file must contain a maximum of 10 users or groups with attributes as defined in the source system. The attribute names must use the JSONPath dot-notation. For example: `emais[0].value` attribute indicating the value of the first email within an email array, or `name.familyName` - a complex `name` attribute containing a `familyName` sub-attribute. If the file has more than 10 users or groups, the job will validate the first 10 and will ignore the rest.
+To run a validate job, you need to import one or two CSV files - one for users and/or one for groups. Each file must contain a maximum of 10 users or groups with attributes as defined in the source system. The attribute names must use the JSONPath dot-notation. For example: `emails[0].value` attribute indicating the value of the first email within an email array, or `name.familyName` - a complex `name` attribute containing a `familyName` sub-attribute. If the file has more than 10 users or groups, the job will validate the first 10 and will ignore the rest.
 
 You can create a CSV file using a text editor, for example Notepad. Make sure the number of fields match the number of headers in the file. Otherwise, you will get an error when importing the file and won't be able to proceed until you correct it.
 

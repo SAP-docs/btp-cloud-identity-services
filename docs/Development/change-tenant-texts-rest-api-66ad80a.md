@@ -13,7 +13,7 @@ The Change Tenant Texts REST API of Identity Authentication can be used to chang
 
 ## Prerequisites
 
-To call the methods of this Change Tenant Texts REST API you must have a system as administrator with an assigned *Manage Tenant Configuration* role. For more details about how to add a system as administrator and assign administrator roles, see [Add System as Administrator](../Operation-Guide/add-administrators-bbbdbdd.md#loiocefb742a36754b18bbe5c3503ac6d87c), and [Edit Administrator Authorizations](../Operation-Guide/edit-administrator-authorizations-86ee374.md).
+To call the methods of this Change Tenant Texts REST API you must have a system as administrator \(technical user\) with an assigned *Manage Tenant Configuration* role. For more information, see [Add System as Administrator](../Operation-Guide/add-administrators-bbbdbdd.md#loiocefb742a36754b18bbe5c3503ac6d87c), and [Edit Administrator Authorizations](../Operation-Guide/edit-administrator-authorizations-86ee374.md).
 
 
 
@@ -244,7 +244,7 @@ The locale of the resource.
 </td>
 <td valign="top">
 
-The end user screens of the applications that use Cloud Identity Services for authentication, support the following languages: Arabic \(ar\), Bulgarian \(bg\), Catalan \(ca\), Chinese PRC \(zh\_CN\), Chinese Taiwan \(zh\_TW\), Croatian \(hr\), Czech \(cs\), Danish \(da\), Dutch \(nl\), English United Kingdom \(en\_GB\), English United States \(en\_US\), Estonian \(et\), Finnish \(fi\), French Standard \(fr\), French Canada \(fr\_CA\), German Standard \(de\), Greek \(el\), Hebrew \(iw\), Hungarian \(hu\), Italian \(it\), Japanese \(ja\), Korean \(ko\), Latvian \(lv\), Lithuanian \(lt\), Malay \(s\), Norwegian \(no\), Polish \(pl\), Portuguese Portugal \(pt\), Romanian \(ro\), Russian \(ru\), Serbian \(sr\), Slovak \(sk\), Slovenian \(sl\), Spanish \(es\), Spanish Mexico \(es\_MX\), Swedish \(sv\), Thai \(th\), Turkish \(tr\), Ukrainian \(uk\), Vietnamese \(vi\), Welsh \(cy\).
+The end user screens of the applications that use Cloud Identity Services for authentication, support the following languages: Arabic \(ar\), Bulgarian \(bg\), Catalan \(ca\), Chinese PRC \(zh\_CN\), Chinese Taiwan \(zh\_TW\), Croatian \(hr\), Czech \(cs\), Danish \(da\), Dutch \(nl\), English United Kingdom \(en\_GB\), English United States \(en\_US\), Estonian \(et\), Finnish \(fi\), French Standard \(fr\), French Canada \(fr\_CA\), German Standard \(de\), Greek \(el\), Hebrew \(iw\), Hungarian \(hu\), Italian \(it\), Japanese \(ja\), Korean \(ko\), Latvian \(lv\), Lithuanian \(lt\), Malay \(s\), Norwegian \(no\), Polish \(pl\), Portuguese Portugal \(pt\), Romanian \(ro\), Russian \(ru\), Serbian \(sr\), Slovak \(sk\), Slovenian \(sl\), Spanish Standard \(es\), Spanish Mexico \(es\_MX\), Swedish \(sv\), Thai \(th\), Turkish \(tr\), Ukrainian \(uk\), Vietnamese \(vi\), Welsh \(cy\).
 
 </td>
 </tr>

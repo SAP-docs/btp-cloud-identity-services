@@ -75,7 +75,13 @@ Configuration
 *On/Configurable*
 
 > ### Note:  
-> The email user identifier must be selected unique if you use it for logon. For more information, see Next Steps.
+> The email user identifier must be selected unique if you use it for:
+> 
+> -   logon
+> 
+> -   sending security alert emails to end-users or administrators when a registration with nonunique email is carried out
+> 
+> For more information, see Next Steps at the end.
 
 
 

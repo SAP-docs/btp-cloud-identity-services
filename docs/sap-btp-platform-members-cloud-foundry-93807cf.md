@@ -54,8 +54,8 @@ In SAP BTP Platform Members \(Cloud Foundry\), groups correspond to roles in par
 > 
 > Whereas the group display names adhere to the following patterns:
 > 
-> -   organization group display name: `<btp.cf.pm.group.prefix>_<btp.cf.pm.landscape>:<org_name>:<org_role>`
-> -   space group display name: `<btp.cf.pm.group.prefix>_<btp.cf.pm.landscape>:<org_name>:<space_name>:<space_role>`
+> -   organization group display name: `<btp.cf.pm.group.prefix><btp.cf.pm.landscape>:<org_name>:<org_role>`
+> -   space group display name: `<btp.cf.pm.group.prefix><btp.cf.pm.landscape>:<org_name>:<space_name>:<space_role>`
 
 You can use SAP BTP Platform Members \(Cloud Foundry\) as a proxy connector to execute hybrid scenarios. That means, it can provision its entities to another \(external\) back-end system by request, and then can continue executing CRUD operations back to SAP BTP Platform Members \(Cloud Foundry\), whenever the external back-end requests such.
 

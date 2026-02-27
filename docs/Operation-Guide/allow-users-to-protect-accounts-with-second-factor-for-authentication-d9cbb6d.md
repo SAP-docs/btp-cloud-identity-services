@@ -18,9 +18,12 @@ You are assigned the *Manage Tenant Configuration* role. For more information ab
 
 If applications don't require second factor for authentication, or the applications have configured risk-based authentication rules requiring second factor, but the users don't fall into these rules that require second factor for authentication, the users can enhance their security by switching on the *Multi-Factor Authentication* option on the profile page.
 
+> ### Note:  
+> The option is switched on by default for all tenants that are created after the February 26, 2026 upgrade of SAP Cloud Identity Services.
+
 ![](images/TFA_Profile_Page_2aeca46.png)
 
-This option is visible on the profile page, only if the administrator has allowed it via the administration console.
+This option is visible on the profile page, when it is enabled on the administration console.
 
 ![](images/MMFA_Administration_Console_87ccd7e.png)
 
@@ -28,7 +31,7 @@ When the *Multi-Factor Authentication* option in the administration console is s
 
 If users chose the *Trust this browser* checkbox, the second factor is required only with the first logon. The validity of *Trust this browser* depends on the configuration in the administration console. It can be set between 1 and 14 days. If the additional option for trust this browser is set at *Disabled* the validity of *Trust this browser* is 3 months. But if the administrator sets a validity from 1 to 14 days, the 3-month validity is overridden with the validity set by the tenant administrator.
 
-To enable or disable the*Multi-Factor Authentication* option in the administration console, follow the procedure below:
+To enable or disable the *Multi-Factor Authentication* option in the administration console, follow the procedure below:
 
 
 

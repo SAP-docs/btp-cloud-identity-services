@@ -33,7 +33,7 @@ The SAP Concur integration with Identity Provisioning is supported with Standard
 
 SAP Concur provides different APIs for integration with Identity Provisioning, resulting in different connector versions. Each connector version supports specific attribute mappings within the transformations and requires particular property values. The value of the `concur.api.version` property controls which API you use.
 
--   When the value is set to `3`, the SCIM v4 API is used. It supports provisioning of users and group assignments.
+-   When the value is set to `3`, the SCIM v4 API is used. It supports the provisioning of users and group assignments. However, group assignments are ignored by the default write transformations and are provisioned only if the `ignore` parameter is set to `false`.
 
     > ### Note:  
     > Identity Provisioning cannot create and delete groups in SAP Concur target system. It can only create, update and delete user assignments of a group. Therefore, groups must have been created in SAP Concur system before you run a provisioning job.
@@ -1438,6 +1438,7 @@ To create SAP Concur as a target system, proceed as follows:
     >     ]
     >   },
     >   "group": {
+    >     "ignore": true,
     >     "condition": "isAttributeWithOptionalPrefix($.displayName, concur.group.prefix) && isAttributeWithOptionalPrefix($['urn:sap:cloud:scim:schemas:extension:custom:2.0:Group']['name'], concur.group.prefix) && (isRegularGroup() || isApplicationSpecificGroup())",
     >     "mappings": [
     >       {
