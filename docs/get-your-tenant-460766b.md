@@ -37,6 +37,9 @@ If you already have a tenant and you purchase additional SAP cloud solutions, yo
 
 -   Your SAP Cloud Identity Services tenant cannot be used due to restrictions or legal requirements \(such as data residency regulations\). To ensure that user data remains in the specified region or country, you can request a tenant migration by opening an incident for the `BC-IAM-IDS` component.
 
+    > ### Caution:  
+    > Request for a tenant migration by opening an incident for the BC-IAM-IDS component is suspended from March 15, 2026 to June 30, 2026.
+
     If you use authorizations based on policies, you need to configure them again after the tenant migrates to the new region.
 
 -   You have multiple instances of SAP SuccessFactors. It is not recommended to bundle them with the same SAP Cloud Identity Services tenant. Instead, you can request a dedicated tenant for each SAP SuccessFactors instance through the SAP SuccessFactors Upgrade Center.
@@ -57,6 +60,9 @@ There are cases where customer interaction is required. If multiple tenants are 
 > -   Regional Provisioning: For customers with an `EU Access` contract, choose an SAP Cloud Identity Services tenant located in Europe if your SAP cloud solution is provisioned in an `EU Access` region. This ensures better performance and compliance with the European regulations. For more information, see [EU Access](https://help.sap.com/docs/btp/sap-business-technology-platform/regions?version=Cloud#eu-access).
 > 
 > -   Tenant Migration: If the tenants available for selection are not in your desired region, you can request to migrate a specific tenant to your chosen region by opening an incident for the `BC-IAM-IDS` component.
+> 
+>     > ### Caution:  
+>     > Request for a tenant migration by opening an incident for the BC-IAM-IDS component is suspended from March 15, 2026 to June 30, 2026.
 > 
 >     **Note**: Be aware that tenant migration requires a carefully planned downtime, which varies based on tenant data like the number of users, groups, and applications connected to the tenant.
 > 

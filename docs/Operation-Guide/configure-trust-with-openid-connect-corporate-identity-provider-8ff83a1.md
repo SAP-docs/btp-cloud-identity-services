@@ -25,7 +25,7 @@ To configure trust with the corporate identity provider, use the following proce
 
 ## 1. Configure the Corporate Identity Provider Side
 
-Configure Identity Authentication as an application at the corporate identity provider side.
+Configuration of Identity Authentication as a client in the corporate identity provider establishes the necessary trust and connectivity for delegating authentication through OpenID Connect. This step is required to enable secure user authentication with the corporate identity provider.
 
 
 
@@ -33,7 +33,11 @@ Configure Identity Authentication as an application at the corporate identity pr
 
 ## Prerequisites
 
--   You have registered Identity Authentication as an application at the corporate identity provider.
+-   You have registered Identity Authentication as an application of the corporate identity provider.
+
+    > ### Note:  
+    > The corporate identity provider complies with [OpenID Connect Discovery](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderMetadata).
+
 -   You have created a client secret.
 
     > ### Note:  
@@ -71,7 +75,7 @@ The information retrieved from `.well-known/openid-configuration` endpoint can c
 
 <table>
 <tr>
-<th valign="top">
+<th valign="top" colspan="2">
 
 Attribute
 
@@ -83,7 +87,7 @@ Notes
 </th>
 </tr>
 <tr>
-<td valign="top">
+<td valign="top" colspan="2">
 
 `issuer`
 
@@ -95,55 +99,79 @@ Required. Must be a valid URI.
 </td>
 </tr>
 <tr>
-<td valign="top">
+<td valign="top" colspan="2">
 
 `jwks_uri`
 
 </td>
 <td valign="top">
 
-Required. Must be a valid URI.
+Required. Must be a valid HTTPS URI.
+
+</td>
+</tr>
+<tr>
+<td valign="top" rowspan="3">
+
+ 
+
+</td>
+<td valign="top">
+
+`id_token_signing_alg_values_supported`
+
+</td>
+<td valign="top">
+
+Required. The JSON array must list the JWS signing algorithms \(alg values\) the OpenID provider supports for encoding ID token claims in a JWT.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-`token_endpoint`
+`response_types_supported`
 
 </td>
 <td valign="top">
 
-Optional. If present it must be a valid URI.
-
-> ### Note:  
-> If the `token_endpoint` isn't supported, it can't participate in browser-based SSO flows. JWT Bearer flow is still possible.
-
-
+Required. The JSON array lists the supported OAuth 2.0 `response_type` values.
 
 </td>
 </tr>
 <tr>
 <td valign="top">
+
+`subject_types_supported`
+
+</td>
+<td valign="top">
+
+Required. The JSON array lists the subject identifier types this OpenID provider supports.
+
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2">
 
 `authorization_endpoint`
 
 </td>
 <td valign="top">
 
-Optional. If present it must be a valid URI.
+Optional. If present it must be a valid HTTPS URI.
 
 </td>
 </tr>
 <tr>
-<td valign="top">
+<td valign="top" colspan="2">
 
 `end_session_endpoint`
 
 </td>
 <td valign="top">
 
-Optional. If present it must be a valid URI.
+Optional. If present it must be a valid HTTPS URI.
 
 > ### Remember:  
 > If the `end_session_endpoint` isn't supported by the OpenID Connect corporate identity provider, the corporate identity provider can't participate in single logout flows.
@@ -153,7 +181,36 @@ Optional. If present it must be a valid URI.
 </td>
 </tr>
 <tr>
+<td valign="top" colspan="2">
+
+`token_endpoint`
+
+</td>
 <td valign="top">
+
+Optional. If present it must be a valid HTTPS URI.
+
+> ### Note:  
+> If the `token_endpoint` isn't supported, it can't participate in browser-based SSO flows. JWT Bearer flow is still possible.
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2">
+
+`userinfo_endpoint`
+
+</td>
+<td valign="top">
+
+Optional. If present it must be a valid HTTPS URI.
+
+</td>
+</tr>
+<tr>
+<td valign="top" colspan="2">
 
 `grant_types_supported`
 
