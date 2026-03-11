@@ -28,7 +28,7 @@ You can use SAP S/4HANA Cloud Public Edition as a proxy connector to execute *hy
 
 SAP S/4HANA Cloud Public Edition provides different APIs for integration with Identity Provisioning, resulting in different connector versions for each API. Each connector version supports specific attribute mappings within the transformations and requires particular property values. The value of the `s4hana.cloud.api.version` property controls which API you use. By default, the Identity Provisioning service uses version *1*.
 
--   When the value is set to *1* or the property is not present \(typical for systems created before versioning was introduced on November 6, 2025\), the SOAP API provided by the communication scenario SAP\_COM\_0193 is used. In SAP S/4HANA Cloud Public Edition version 1, groups correspond to business roles, thus group members are user assignments of a business role. For more information on how to update to version *3*, see [Update Connector Version](Operation-Guide/update-connector-version-8558733.md).
+-   When the value is set to *1* or the property is not present \(typical for systems created before versioning was introduced on November 6, 2025\), the SOAP API provided by the communication scenario SAP\_COM\_0193 is used. In SAP S/4HANA Cloud Public Edition version 1, groups correspond to business roles, thus group members are user assignments of a business role.
 
     In your SAP S/4HANA Cloud Public Edition system version 1, the HCM \(HR\) integration is active by default. You have **business users** \(Employee, Contingent Worker\) and **login users** assigned to them. The corresponding HR integration manages business users – it enables you to update these users from your external data source, such as an identity management system. The Identity Provisioning service manages only the user-related login information, such as date/time preferences or role assignments.
 
@@ -39,6 +39,8 @@ SAP S/4HANA Cloud Public Edition provides different APIs for integration with Id
 
 -   When the value is set to *3*, the SCIM interface provided by the communication scenario SAP\_COM\_0465 is used. It supports provisioning of **business users** with their **assignments** to groups of type **userGroup** and **authorization**. For more information, see [Groups](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/groups?locale=en-US&version=Cloud).
 
+
+For more information on how to update to version *3*, see [Update Connector Version](Operation-Guide/update-connector-version-8558733.md).
 
 > ### Note:  
 > The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users and groups. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).

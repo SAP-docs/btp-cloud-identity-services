@@ -24,10 +24,10 @@ SAP S/4HANA Cloud Public Edition provides different APIs for integration with Id
 
 -   When the value is set to *1* or the property is not present \(typical for systems created before versioning was introduced on November 6, 2025\), the SOAP API provided by the communication scenario SAP\_COM\_0193 is used. It supports reading **business users** \(Employee, Contingent Worker\), **user assignments**, and **business roles** \(which are considered as *groups*\).
 
-    For more information on how to update to version *3*, see [Update SAP S/4HANA Cloud Public Edition](Operation-Guide/update-sap-s-4hana-cloud-public-edition-6339b86.md).
-
 -   When the value is set to *3*, the SCIM interface provided by the communication scenario SAP\_COM\_0465 is used. It supports provisioning of **business users** with their **assignments** to groups of type **userGroup** and **authorization**. For more information, see [Groups](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/groups?locale=en-US&version=Cloud).
 
+
+For more information on how to update to version *3*, see [Update SAP S/4HANA Cloud Public Edition](Operation-Guide/update-sap-s-4hana-cloud-public-edition-6339b86.md).
 
 
 

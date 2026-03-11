@@ -111,10 +111,28 @@ Top level domains are allowed. The domain part can't end with a hyphen "-".
 
 ## Ports \(optional\)
 
-After the domain you can put port number. Always use a leading colon \(`:`\).
+After the domain you can specify a port number, always preceded by a leading colon \(`:`\).
 
 > ### Example:  
 > https://example.com:8080
+
+We support port wildcards for `localhost` and IP address `127.0.0.1` in redirect URIs of OIDC applications. Port wildcards enable tools, such as ABAP Development Tools, which use variable ports.
+
+> ### Restriction:  
+> Port wildcards aren't supported for other hosts.
+
+> ### Example:  
+> `http://localhost:*`
+> 
+> `https://localhost:*`
+> 
+> `https://localhost:*/some/path`
+> 
+> `http://*.localhost:*`
+> 
+> `http://127.0.0.1:*/some/path`
+> 
+> `https://127.0.0.1:*/some/path`
 
 **Related Information**  
 

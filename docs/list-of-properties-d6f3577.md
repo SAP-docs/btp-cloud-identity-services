@@ -12533,20 +12533,7 @@ SAP BTP Account Members \(Neo\)
 </td>
 <td valign="top">
 
-When specified, only those SAP Sales Cloud and SAP Service Cloud users matching the filter expression will be read.
-
-SAP Sales Cloud and SAP Service Cloud is formerly known as SAP Cloud for Customer \(in short, C4C\).
-
-For example:
-
--   userName eq "Smith"
-
--   email eq "test@abc.com"
-
--   employeeNumber eq "56789"
-
--   addresses.country eq "USA"
-
+When specified, only those SAP Sales Cloud and SAP Service Cloud, formerly known as SAP Cloud for Customer \(in short, C4C\) users matching the filter expression will be read.
 
 Supported user filters in connector version 4:
 
@@ -12555,6 +12542,11 @@ Supported user filters in connector version 4:
 -   userName sw "Sm"
 
 -   userName eq "Smith" and emails.value eq "smith@example.com"
+
+
+Supported user filter in connector version 3:
+
+-   addresses.country eq "USA"
 
 
 **System Role:** Source, Proxy

@@ -133,12 +133,12 @@ Offboarding leads to tenant deletion when all customer contracts for SAP cloud s
 
 -   The tenant is delivered as part of a bundling with SAP cloud solutions
 
-    Offboarding is triggered if the customer contracts for all SAP cloud solutions are terminated or expired. The tenant will not be deleted until the very last contract for an SAP cloud solution is terminated.
+    Offboarding is triggered if the customer contracts for all SAP cloud solutions are terminated or expired.
 
     > ### Note:  
     > If all of your SAP licenses are terminated, and you have a valid **SAP Concur** license, if you do not use your SAP Cloud Identity Services for 30 days, your tenant may be deleted.
 
--   The tenant is delivered as part of s self-service request in SAP BTP cockpit
+-   The tenant \(additional tenant\) is delivered as part of self-service request in SAP BTP cockpit
 
     Offboarding is triggered if the subscription to the Cloud Identity Services is deleted in SAP BTP cockpit. The following takes place:
 

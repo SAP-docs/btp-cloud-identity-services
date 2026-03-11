@@ -33,8 +33,6 @@ SAP S/4HANA Cloud Public Edition provides different APIs for integration with Id
 
     In SAP S/4HANA Cloud Public Edition, business partners are the central master data objects that hold the complete person profile in the SAP S/4HANA Cloud Public Edition. For example, business partners with role `Employee` and `Contingent Worker`. Business users are persons who can log on to SAP S/4HANA Cloud Public Edition system to complete business tasks.
 
-    For more information on how to update to version *3*, see [Update SAP S/4HANA Cloud Public Edition](Operation-Guide/update-sap-s-4hana-cloud-public-edition-6339b86.md).
-
 -   When the value is set to *3*, the SCIM interface provided by the communication scenario SAP\_COM\_0465 is used. It supports provisioning of **business users** with their **assignments** to user groups and roles.
 
     This version allows you to create, update, and delete user groups, referred to as business user groups in SAP S/4HANA Cloud Public Edition. However, similar to connector version 1, you cannot create or delete groups of type **authorization** \(business roles in SAP S/4HANA Cloud Public Edition\). You can only update the role assignments. For more information, see [Groups](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/groups?locale=en-US&version=Cloud).
@@ -42,6 +40,8 @@ SAP S/4HANA Cloud Public Edition provides different APIs for integration with Id
     > ### Note:  
     > For groups of the **userGroup** type, a user can have only one assignment at a time. If a user is assigned to a new group of the **userGroup** type, the previous assignment of the same type will be automatically removed, and the user will be exclusively assigned to the newly selected group.
 
+
+For more information on how to update to version *3*, see [Update SAP S/4HANA Cloud Public Edition](Operation-Guide/update-sap-s-4hana-cloud-public-edition-6339b86.md).
 
 
 
@@ -833,6 +833,11 @@ SAP S/4HANA Cloud Public Edition provides different APIs for integration with Id
     >         "sourcePath": "$.userType",
     >         "optional": true,
     >         "targetPath": "$.userType"
+    >       },
+    >       {
+    >         "sourcePath": "$.locale",
+    >         "optional": true,
+    >         "targetPath": "$.preferredLanguage"
     >       },
     >       {
     >         "sourcePath": "$.preferredLanguage",

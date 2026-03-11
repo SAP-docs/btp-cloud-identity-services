@@ -222,13 +222,7 @@ When using connector version 4 \(SCIM 2.0 based API\), only users of type `Emplo
     -   userName eq "Smith" and emails.value eq "smith@example.com"
 
 
-    Supported user filters in connector version 3:
-
-    -   userName eq "Smith"
-
-    -   email eq "test@abc.com"
-
-    -   employeeNumber eq "56789"
+    Supported user filter in connector version 3:
 
     -   addresses.country eq "USA"
 

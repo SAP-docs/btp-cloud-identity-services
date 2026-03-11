@@ -110,7 +110,7 @@ Infrastructure
 <tr>
 <td valign="top">
 
-SAP
+SAP Cloud Infrastructure
 
 </td>
 <td valign="top">
@@ -137,7 +137,7 @@ SAP
 <tr>
 <td valign="top">
 
-SAP
+SAP Cloud Infrastructure
 
 </td>
 <td valign="top">
@@ -326,6 +326,33 @@ SAP / Azure
 <tr>
 <td valign="top">
 
+Google Cloud
+
+</td>
+<td valign="top">
+
+Singapore
+
+</td>
+<td valign="top">
+
+ap31
+
+</td>
+<td valign="top">
+
+Singapore
+
+</td>
+<td valign="top">
+
+AWS
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Amazon Web Services
 
 </td>
@@ -488,7 +515,88 @@ Azure
 <tr>
 <td valign="top">
 
-SAP
+SAP Cloud Infrastructure
+
+</td>
+<td valign="top">
+
+
+
+</td>
+<td valign="top">
+
+cn01
+
+</td>
+<td valign="top">
+
+China \(Shanghai\)
+
+</td>
+<td valign="top">
+
+SAP / Azure
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Microsoft Azure
+
+</td>
+<td valign="top">
+
+China \(North 3\)
+
+</td>
+<td valign="top">
+
+cn20
+
+</td>
+<td valign="top">
+
+China \(Shanghai\)
+
+</td>
+<td valign="top">
+
+SAP / Azure
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Alibaba Cloud
+
+</td>
+<td valign="top">
+
+China \(Shanghai\)
+
+</td>
+<td valign="top">
+
+cn40
+
+</td>
+<td valign="top">
+
+China \(Shanghai\)
+
+</td>
+<td valign="top">
+
+SAP / Azure
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Cloud Infrastructure
 
 </td>
 <td valign="top">
@@ -515,7 +623,7 @@ SAP
 <tr>
 <td valign="top">
 
-SAP
+SAP Cloud Infrastructure
 
 </td>
 <td valign="top">
@@ -682,6 +790,33 @@ Google Cloud
 </td>
 <td valign="top">
 
+Europe \(Netherlands\)
+
+</td>
+<td valign="top">
+
+eu31
+
+</td>
+<td valign="top">
+
+Germany \(Frankfurt\)
+
+</td>
+<td valign="top">
+
+AWS
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Google Cloud
+
+</td>
+<td valign="top">
+
 Israel \(Tel Aviv\)
 
 </td>
@@ -731,7 +866,7 @@ AWS
 <tr>
 <td valign="top">
 
-SAP
+SAP Cloud Infrastructure
 
 </td>
 <td valign="top">
@@ -920,7 +1055,61 @@ SAP
 <tr>
 <td valign="top">
 
+Microsoft Azure
+
+</td>
+<td valign="top">
+
+UK South \(London\)
+
+</td>
+<td valign="top">
+
+uk20
+
+</td>
+<td valign="top">
+
+United Kingdom \(London\)
+
+</td>
+<td valign="top">
+
+Azure
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Cloud Infrastructure
+
+</td>
+<td valign="top">
+
+US \(Sterling\)
+
+</td>
+<td valign="top">
+
+us01
+
+</td>
+<td valign="top">
+
+USA \(Sterling, VA / N. Virginia\)
+
+</td>
+<td valign="top">
+
 SAP
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+SAP Cloud Infrastructure
 
 </td>
 <td valign="top">
@@ -1055,6 +1244,33 @@ SAP
 <tr>
 <td valign="top">
 
+Microsoft Azure
+
+</td>
+<td valign="top">
+
+US East Virginia
+
+</td>
+<td valign="top">
+
+us22
+
+</td>
+<td valign="top">
+
+USA \(Sterling, VA / N. Virginia\)
+
+</td>
+<td valign="top">
+
+SAP
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 Google Cloud
 
 </td>
@@ -1076,6 +1292,33 @@ USA \(Quincy, WA\)
 <td valign="top">
 
 Azure
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Google Cloud
+
+</td>
+<td valign="top">
+
+US East Virginia
+
+</td>
+<td valign="top">
+
+us32
+
+</td>
+<td valign="top">
+
+USA \(Sterling, VA / N. Virginia\)
+
+</td>
+<td valign="top">
+
+SAP
 
 </td>
 </tr>

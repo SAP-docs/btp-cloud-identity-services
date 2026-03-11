@@ -178,10 +178,17 @@ To search and view the job logs, proceed as follows:
 
     -   **Тrigger Тype** - Shows the trigger type, as described in the table above.
 
-    -   **Triggered by** - Shows the ID of the user who triggered the job manually. It is displayed for jobs of type read, resync and simulate with trigger type immediate.
+    -   **Triggered By** - Shows who triggered the job. This field is displayed for jobs of type `Read`, `Resync`, and `Simulate` when the trigger type is IMMEDIATE.
+
+        -   User ID \(for example, *P000000*\) – The ID of the user who manually triggered a `Read`, `Resync`, and `Simulate` job.
+
+        -   *Identity Provisioning API –* *<uuid/username\>* – The UUID or username of the technical user who triggered a `Read` or `Resync` job via an API client. For more information, see [Run Provisioning Jobs via API](../Operation-Guide/run-provisioning-jobs-via-api-9574b40.md)
+
+        -   *Identity Provisioning Internal API* – SAP internal API.
+
 
         > ### Note:  
-        > Scheduled jobs don't display the **Triggered by** information.
+        > Scheduled jobs don't display the *Triggered By* information.
 
     -   **Start Time** and **End Time** - Shows the job start and end time, as described in the table above.
 

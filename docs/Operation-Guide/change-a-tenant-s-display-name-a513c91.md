@@ -38,6 +38,11 @@ To edit the tenant's display name, proceed as follows:
 
 3.  Choose the name of the tenant and change it in the pop-up dialog.
 
+    > ### Note:  
+    > The tenant display name
+    > 
+    > The tenant display name must be between 1 and 50 characters long. You can use upper case \(A-Z\) and lower case \(a-z\) Latin characters, numbers 0-9, spaces, and the following symbols: \_ - . '
+
 4.  Save your changes.
 
     Once the tenant has been updated, the system displays the message ***Tenant <name of tenant\> updated***.

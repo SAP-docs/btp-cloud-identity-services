@@ -25,9 +25,6 @@ Customers can integrate SAP Cloud Identity Services no matter whether the Concur
 
 -   New or existing Concur Expense, Concur Request, Concur Invoice, and/or Concur Travel & Expense customers that have at least one other SAP cloud solution.
 
-    > ### Note:  
-    > Concur Travel-only is not currently supported.
-
 -   Identity Authentication and Identity Provisioning tenants must be created or configured by SAP:
 
     1.  You need to check with your SAP Concur account team to determine if you are eligible for provisioning of a tenant with Identity Authentication and Identity Provisioning services.

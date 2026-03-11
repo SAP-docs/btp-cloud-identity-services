@@ -264,7 +264,7 @@ When using connector version 4 \(SCIM 2.0 based API\), only users of type Employ
     </td>
     <td valign="top">
     
-    When specified, only those C4C users matching the filter expression will be read.
+    When specified, only those users matching the filter expression will be read.
 
     Supported user filters in connector version 4:
 
@@ -275,13 +275,7 @@ When using connector version 4 \(SCIM 2.0 based API\), only users of type Employ
     -   userName eq "Smith" and emails.value eq "smith@example.com"
 
 
-    Supported user filters in connector version 3:
-
-    -   userName eq "Smith"
-
-    -   email eq "test@abc.com"
-
-    -   employeeNumber eq "56789"
+    Supported user filter in connector version 3:
 
     -   addresses.country eq "USA"
 

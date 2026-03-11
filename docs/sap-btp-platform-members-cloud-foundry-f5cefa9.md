@@ -51,6 +51,9 @@ The target system consumes `User Account and Authentication API`and `Cloud Found
 > ### Remember:  
 > This connector enables you to write users and user role assignments to Cloud Foundry on *subaccount* level. For provisioning of users and groups to Cloud Foundry on *application* level, refer to [SAP BTP XS Advanced UAA \(Cloud Foundry\)](sap-btp-xs-advanced-uaa-cloud-foundry-ecddce6.md). For more information, see [SAP BTP Integration Scenario](https://help.sap.com/docs/cloud-identity/system-integration-guide/sap-btp-integration-scenario?version=Cloud).
 
+> ### Note:  
+> The number of platform users you can provision is limited, as specified in the restriction described in [User Provisioning](https://help.sap.com/docs/btp/sap-business-technology-platform/about-user-management-in-cloud-foundry-environment?version=Cloud#user-provisioning).
+
 Follow the steps below to create SAP BTP Platform Members \(Cloud Foundry\) as a target system to provision users and user role assignments.
 
 > ### Note:  

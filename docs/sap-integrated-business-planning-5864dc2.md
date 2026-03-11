@@ -794,6 +794,11 @@ SAP Integrated Business Planning provides different APIs for integration with Id
     >         "targetPath": "$.userType"
     >       },
     >       {
+    >         "sourcePath": "$.locale",
+    >         "optional": true,
+    >         "targetPath": "$.preferredLanguage"
+    >       },
+    >       {
     >         "sourcePath": "$.preferredLanguage",
     >         "optional": true,
     >         "targetPath": "$.preferredLanguage"

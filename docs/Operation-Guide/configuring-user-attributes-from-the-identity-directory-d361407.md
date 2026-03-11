@@ -143,14 +143,14 @@ Identity Authentication supports also the following user attributes:
 -   `All Groups`
 
     > ### Note:  
-    > Lists all the groups that a user is a member of.
+    > Lists all user groups, all application-specific groups of type `userGroup`, independent of the application name, and all application-specific groups of type `authorization`, belonging to the current application only, that a user is a member of.
     > 
     > Use `Groups` as user attribute name for application on the SAP BTP, Cloud Foundry Environment.
 
 -   `Application Groups`
 
     > ### Note:  
-    > Lists only the application-specific groups to which the user is assigned to.
+    > Lists only the application-specific groups of type `userGroup` to which the user is assigned to.
 
 -   `Application Groups - external name`
 
