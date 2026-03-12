@@ -693,7 +693,6 @@
             -   [Erasure](Security/erasure-5ccec0b.md)
             -   [Consent](Security/consent-8a81798.md)
             -   [Customer Data](Security/customer-data-918c93c.md)
-        -   [Customer Managed Keys \(Restricted Availability\)](Security/customer-managed-keys-restricted-availability-177108a.md)
         -   [Auditing and Logging Information](Security/auditing-and-logging-information-ac5537b.md)
     -   [Integrating the Service](Integrating-the-Service/integrating-the-service-1b607aa.md)
         -   [Integrating the Service with SAP Business Technology Platform, Neo Environment](Integrating-the-Service/integrating-the-service-with-sap-business-technology-platform-neo-environment-fe84459.md#loiofe84459e688c43698591d3b9e1aac828)

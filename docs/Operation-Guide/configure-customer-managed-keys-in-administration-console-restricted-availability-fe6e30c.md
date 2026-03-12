@@ -9,7 +9,7 @@
 ## Prerequisites
 
 -   You have an SAP Data Custodian tenant. For more information, see [SAP Data Custodian Help Guide](https://help.sap.com/docs/sap-data-custodian/help-guide/overview?version=latest) .
--   You have read and accept all Customer Managed Keys \(CMK\) limitations. For more information, see *Limitations* section in [Customer Managed Keys \(Restricted Availability\)](../Security/customer-managed-keys-restricted-availability-177108a.md).
+-   You have read and accept all Customer Managed Keys \(CMK\) limitations. For more information, see *Limitations* section in  <?sap-ot O2O class="- topic/xref " href="177108a1e129486983e7c4bc125db3bb.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/wbz1500991557538/loio629f7cb06f6947988dcaf8bedbe45873_en-US/src/content/localization/en-us/fe6e30cf1431438a94425e934d0d9e2b.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 -   You have tested all your scenarios on a test tenant, before activating CMK on a productive tenant. For more information, see [Tenants](../tenants-93160eb.md).
 
 
