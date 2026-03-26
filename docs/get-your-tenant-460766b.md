@@ -37,9 +37,6 @@ If you already have a tenant and you purchase additional SAP cloud solutions, yo
 
 -   Your SAP Cloud Identity Services tenant cannot be used due to restrictions or legal requirements \(such as data residency regulations\). To ensure that user data remains in the specified region or country, you can request a tenant migration by opening an incident for the `BC-IAM-IDS` component.
 
-    > ### Caution:  
-    > Request for a tenant migration by opening an incident for the BC-IAM-IDS component is suspended from March 15, 2026 to June 30, 2026.
-
     If you use authorizations based on policies, you need to configure them again after the tenant migrates to the new region.
 
 -   You have multiple instances of SAP SuccessFactors. It is not recommended to bundle them with the same SAP Cloud Identity Services tenant. Instead, you can request a dedicated tenant for each SAP SuccessFactors instance through the SAP SuccessFactors Upgrade Center.
@@ -60,9 +57,6 @@ There are cases where customer interaction is required. If multiple tenants are 
 > -   Regional Provisioning: For customers with an `EU Access` contract, choose an SAP Cloud Identity Services tenant located in Europe if your SAP cloud solution is provisioned in an `EU Access` region. This ensures better performance and compliance with the European regulations. For more information, see [EU Access](https://help.sap.com/docs/btp/sap-business-technology-platform/regions?version=Cloud#eu-access).
 > 
 > -   Tenant Migration: If the tenants available for selection are not in your desired region, you can request to migrate a specific tenant to your chosen region by opening an incident for the `BC-IAM-IDS` component.
-> 
->     > ### Caution:  
->     > Request for a tenant migration by opening an incident for the BC-IAM-IDS component is suspended from March 15, 2026 to June 30, 2026.
 > 
 >     **Note**: Be aware that tenant migration requires a carefully planned downtime, which varies based on tenant data like the number of users, groups, and applications connected to the tenant.
 > 
@@ -258,6 +252,14 @@ Go to your email inbox and activate your account. For more information, see .[Ac
 
 Migrate an additional tenant from a Neo Subaccount to a multi-environment subaccount as part of a self-service request in SAP BTP cockpit.
 
+> ### Remember:  
+> SAP Business Technology Platform, Neo environment will sunset on **December 31, 2028**, subject to terms of customer or partner contracts.
+> 
+> For more information, see SAP Note [3351844](https://me.sap.com/notes/3351844).
+
+> ### Caution:  
+> The SAP NetWeaver AS Java user store store scenario is only supported in the Neo environment. For more information, see [Corporate User Store \(Neo Environment\)](Operation-Guide/corporate-user-store-neo-environment-461d71c.md#loio461d71c148594608b9c8b6d016e0a0c5).
+
 
 
 ### Prerequisites
@@ -280,8 +282,8 @@ To migrate an additional tenant from a Neo subaccount to a multi-environment sub
 
 2.  In the navigation area, choose *Entitlements*. You have two options:
 
-    -   if you see *additional-tenant \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, skip steps 4 to 6, and go to step 7.
-    -   if you don't see *additional-tenant \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, continue with step 4.
+    -   If you see *additional-tenant \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, skip steps 3 to 6, and go to step 7.
+    -   If you don't see *additional-tenant \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, continue with step 4.
 
     > ### Tip:  
     > -   If you use directories entitlement management in your global account, you must assign the *additional-tenant \(Application\)* plan to the directory first, and after that to the subaccount. Once you assign the *additional-tenant* plan to your directory, it will appear in your subaccount entitlements too. For more information, see [Configure Entitlements and Quotas for Directories](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/37f8871865114f44aebee3db6ac64b72.html).

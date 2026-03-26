@@ -21,6 +21,8 @@ You have a subaccount in your global account in SAP BTP, Cloud Foundry. For more
 
 > ### Tip:  
 > If your tenant is on the SAP infrastructure, when you access the administration console for SAP Cloud Identity Services, the *Audit and Change Logs* tile, you see the *Cloud Foundry*, *NEO*, and *Change Logs* options for configurations. If your tenant is on the AWS, Azure infrastructure, you see the *Audit Logs* and *Change Logs* options for configurations.
+> 
+> Information about the region, representing the data center in which the tenant is located is visible in the header of the administration console. For example, ****Cloud Identity Services* Europe \(Frankfurt / Amsterdam\)***. For more information about the regions, see [Regional Availability](../regional-availability-be600ca.md).
 
 The audit log entries in the Audit Log Service in SAP BTP, Cloud Foundry are retained for 90 days.
 

@@ -11,7 +11,7 @@ Properties enable you to customize the configuration of the Identity service.
 ## Service Properties
 
 > ### Tip:  
-> If you're creating a new tenant via subscription, `Cloud Identity Services` support only the `cloud_service` configuration parameter for the subscription creation. The supported values are: `PRODUCTIVE` and `TEST`. If you provide a different parameter or values, the tenant isn't created. For more information about the tenant creation, see [Get Your Tenant](../get-your-tenant-460766b.md).
+> If you're creating a new tenant via subscription, `Cloud Identity Services` supports only the `cloud_service` configuration parameter for the subscription creation. The supported values are: `PRODUCTIVE` and `TEST`. If you provide a different parameter or values, the tenant isn't created. For more information about the tenant creation, see [Get Your Tenant](../get-your-tenant-460766b.md).
 > 
 > If you want to customize the configuration of the Identity service, follow the rest of the information in this document.
 
@@ -232,7 +232,7 @@ For more information, see:
 
 An array of allowed grant types. By default, the following grant types are allowed: `client_credentials`, `password`, `authorization_code`, `refresh_token`, and `urn:ietf:params:oauth:grant-type:token-exchange`.
 
-The following grant types can be added: `implicit`, `urn:ietf:params:oauth:grant-type:jwt-bearer` and `authorization_code_pkce_s256`.
+The following grant types can be added: `implicit`, `urn:ietf:params:oauth:grant-type:jwt-bearer`, and `authorization_code_pkce_s256`.
 
 </td>
 </tr>
@@ -480,7 +480,7 @@ Or:
 ```
 
 > ### Restriction:  
-> You can bind a maximum of 100 applications to a single service instance.
+> You can bind a maximum of 1000 applications to a single service instance.
 > 
 > You can have a maximum of 20 different certificate subject DNs.
 

@@ -254,6 +254,8 @@ Conditions or expressions, such as \(*ignore* or *skipOperations*\), are not set
 
 4.  \(Optional\) If you want to continue running *delta read* jobs, go to the `ips.delta.read` property and set it back to *true*.
 
+**Blog Post**:[To Delete or Not to Delete: No Room for Drama in Identity Provisioning](https://community.sap.com/t5/technology-blog-posts-by-sap/to-delete-or-not-to-delete-no-room-for-drama-in-identity-provisioning/ba-p/14330982)
+
 **Related Information**  
 
 

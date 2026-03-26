@@ -94,6 +94,34 @@ To create a new OpenID Connect \(OIDC\) application follow the procedure below:
     > ### Remember:  
     > Newly created applications with an assigned parent application will inherit all the configurations from the parent except for the `Client ID` and `Secrets`. The inherited configurations will be marked as such.
 
+    -   If you are an administrator with the *Manage Applications* role, the newly created applications can have as parent any of the parent applications in the administration console. Choose the parent application from the list that pops up.
+
+    -   If you are an administrator with authorizations based on policies, you can assign as parent only the application to which you have read or manage applications rights. The applications to which you have read or manage rights are restricted on the basis of the `application.organization` attribute in the policy. Choose the parent application from the list that pops up. For more information about how to assign authorizations based on policies, see [Configure Application Authorizations](configure-application-authorizations-01cff18.md).
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    *Organization ID*
+    
+    </td>
+    <td valign="top">
+    
+    Optional.
+
+    This field allows you to group the applications under a specific organization and on the basis of the *Organization ID* to restrict the access to these applications.
+
+    -   If you are an administrator with *Manage Applications* role, the newly created applications by default are in the `global` *Organization ID*. You can change the *Organization ID* during the creation of the new application by entering a new name or later you can edit it.
+
+    -   If your authorizations are based on policies, the newly created applications can take the *Organization ID* of the applications to which you have manage rights on the basis of the `application.organization` attribute in the policy. Choose the allowed *Organization ID* from the drop-down.
+
+
+    > ### Note:  
+    > Applications created either as subscriptions within or with the Identity service of an SAP BTP subaccount receive the *Organization ID* of the application that represents the trust configuration of that subaccount.
+
 
     
     </td>

@@ -1,6 +1,6 @@
-<!-- loio86ee37423f8945a1898faff1e6308756 -->
+<!-- loio297b3b2ab35b4504a629b4180ec70b80 -->
 
-# Edit Administrator Authorizations
+# Edit Administrator Authorizations \(Restricted Availability\)
 
 As a tenant administrator, you can edit both your own authorizations and other administrators' authorizations in the administration console for SAP Cloud Identity Services. By editing the administrator authorizations you can also delete an administrator.
 
@@ -13,6 +13,9 @@ To edit tenant administrators' authorizations, you must be assigned the Manage T
 
 
 ## Context
+
+> ### Note:  
+> The following document contains information specific only for the soft-delete option, and differes from the same document in the official documentation in Cloud Identity Services.
 
 To edit an administrator's authorizations, proceed as follows:
 
@@ -173,11 +176,15 @@ To edit an administrator's authorizations, proceed as follows:
 **Related Information**  
 
 
-[List Administrators](list-administrators-c79a5c6.md "As a tenant administrator, you can list the administrators and their authorizations in the administration console for SAP Cloud Identity Services.")
+[Enable Soft Delete for Users in Administration Console \(Restricted Availability\)](enable-soft-delete-for-users-in-administration-console-restricted-availability-25a6175.md "Enable soft deletion (blocking) of users in SAP Cloud Identity Services.")
 
-[Add Administrators](add-administrators-bbbdbdd.md#loiobbbdbdd3899942ce874f3aae9ba9e21d "As a tenant administrator, you can add new administrators in the administration console for SAP Cloud Identity Services.")
+[Read Single Soft-Deleted User \(Restricted Availability\)](read-single-soft-deleted-user-restricted-availability-5adef17.md "Read the soft-deleted (blocked) but not permanently deleted user.")
 
-[Configure Authorizations Based on Policies](configure-authorizations-based-on-policies-08fea39.md "Enable admin authorizations based on policies to configure a granular access control for the administrators of SAP Cloud Identity Services.")
+[Read All Soft-Deleted Users \(Restricted Availability\)](read-all-soft-deleted-users-restricted-availability-89a99b9.md "Get a list of all soft-deleted (blocked) but not deleted users in the tenant of SAP Cloud Identity Services.")
+
+[Permanently Delete User \(Restricted Availability\)](permanently-delete-user-restricted-availability-230fc2e.md "Permanently delete the soft-deleted (blocked) but not yet deleted from the system user whose SCIM ID is stated in the request.")
+
+[Restore Soft-Deleted User \(Restricted Availability\)](restore-soft-deleted-user-restricted-availability-114076d.md "Restore a user that is soft-deleted (blocked) in the tenant of SAP Cloud Identity Services.")
 
 [Identity Authentication Tenant as an Application Identity Provider](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/d3df5b457d0c43fca117da0dc14e2f0d.html)
 

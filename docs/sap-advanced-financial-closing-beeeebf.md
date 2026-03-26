@@ -24,6 +24,9 @@ SAP Advanced Financial Closing allows you to define, automate, process, and moni
 
 You can use Identity Provisioning to configure SAP Advanced Financial Closing as a target system for provisioning users and user groups from various source systems.
 
+> ### Note:  
+> The last active user in a user group cannot be deleted, as specified in the restriction described in [How to Delete Users](https://help.sap.com/docs/advanced-financial-closing/administration/how-to-delete-users-81d47cfa65674b8c9f6cfb94b3167bbc).
+
 
 
 ## Procedure

@@ -1349,7 +1349,7 @@ In the following example, the value pairs US and New York, US and Dallas, German
 > ### Note:  
 > Paths to the country and city attributes are provided as exemplary values. These attribute paths might be system-specific. For example, in SAP AS ABAP, the "$.country" path is "$.ADDRESS.COUNTRY".
 
-**Data type**: String
+**Data type**: StringArray
 
 </td>
 </tr>

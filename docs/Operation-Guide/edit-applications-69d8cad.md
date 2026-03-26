@@ -484,6 +484,10 @@ To edit the application configurations, proceed as follows:
     
     Optional.
 
+    -   If you are an administrator with the *Manage Applications* role, the newly created applications can have as parent any of the parent applications in the administration console. Choose the parent application from the list that pops up.
+
+    -   If you are an administrator with authorizations based on policies, you can assign as parent only the application to which you have read or manage applications rights. The applications to which you have read or manage rights are restricted on the basis of the `application.organization` attribute in the policy. Choose the parent application from the list that pops up. For more information about how to assign authorizations based on policies, see [Configure Application Authorizations](configure-application-authorizations-01cff18.md).
+
     Existing applications that have a parent application assigned to them will inherit only the configurations that have not been changed, including the configurations that are made at the creation of the application. The configurations that are changed, and the configurations made at the creation of the application are not inherited. See the list below for the configurations made at the creation of the application:
 
     -   Protocol

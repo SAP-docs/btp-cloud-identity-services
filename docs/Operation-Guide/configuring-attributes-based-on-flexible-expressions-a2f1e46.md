@@ -10,9 +10,9 @@ You can configure attributes based on flexible expressions for the application.
 
 ## Context
 
-The attributes are sent from Identity Authentication to the application in the assertion. You can set attributes like `location` and `company` with values *Europe* and *Company A*, for example, so that the application displays Europe and Company A on its main page.
+The system sends attributes from Identity Authentication to the application in the assertion. You can set static attributes like `location` and `company` with values *Europe* and *Company A*. The application then displays Europe and Company A on its main page.
 
-The attributes are also put in the `id_token` if the application is OpenID Connect. For more information, see [Configuring OpenID Connect \(OIDC\)](configuring-openid-connect-oidc-a789c9c.md).
+The attributes are also put in the ID and access tokens if the application is OpenID Connect. For more information, see [Configuring OpenID Connect \(OIDC\)](configuring-openid-connect-oidc-a789c9c.md).
 
 For both the SAML 2.0 and OpenID Connect applications, you can configure attributes with dynamic values to be added into the assertions in the following pattern: `<prefix> ${attribute_technical_name>} <suffix>`
 
@@ -456,7 +456,7 @@ Corporate Groups
 corporateGroups
 
 > ### Tip:  
-> The attributes `companyGroups` and `corporateGroups` support regular expressions, so that they can be filtered.
+> The `companyGroups` and `corporateGroups` attributes support regular expressions. You can use expression to filter these attributes.
 
 
 
@@ -695,7 +695,7 @@ If you set `${companyGroups:regex[Admin]}` as a value, the response returns the 
 
 ### Merge User Attributes
 
-For both the SAML 2.0 and OpenID Connect applications, you can define attributes with the same name, but with different values, or you can define a user attribute and an attribute with a default value with the same name. In the response, the attributes are merged into multivalue attributes. Thus, depending on the configuration, several values may appear for a single value attribute.
+For both the SAML 2.0 and OpenID Connect applications, you can define attributes with the same name, but with different values. You can also define a user attribute and an attribute with a default value with the same name. The response then merges these attributes into a multivalue attribute. As a result, several values may appear for a single-value attribute based on the configuration.
 
 The order of the attribute's values in the assertion is arbitrary.
 
@@ -1205,7 +1205,7 @@ You can define complex custom schema attributes with single-value child attribut
 
 4.  Choose the *Trust* tab.
 
-5.  Under *SINGLE SIGN-ON*, choose *Attributes*.
+5.  Under *Single Sign-On*, choose *Attributes*.
 
 6.  Depending on the type of your application go to:
 

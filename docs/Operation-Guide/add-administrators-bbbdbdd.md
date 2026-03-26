@@ -129,6 +129,23 @@ To add a person as a new tenant administrator, proceed as follows:
     <tr>
     <td valign="top">
     
+    Manage Blocked Users \(Restricted Availability\)
+    
+    </td>
+    <td valign="top">
+    
+    This role gives the tenant administrator permission to read, restore, and delete blocked users.
+
+    > ### Note:  
+    > To assign this role you must have the *Soft Delete Users* option enabled in the *Tenant Settings* of your tenant. For more information, see [Enable Soft Delete for Users in Administration Console \(Restricted Availability\)](enable-soft-delete-for-users-in-administration-console-restricted-availability-25a6175.md).
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     Read Users
     
     </td>
