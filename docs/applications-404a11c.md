@@ -164,7 +164,7 @@ For more information, see [Application Types](application-types-8f61880.md) and 
 
 [Transformations](transformations-81f5204.md "Transformations help you transform user and group attributes from the data model of the source system to the data model of the target system.")
 
-[Users](users-70e95d1.md "Users in SAP Cloud Identity Services fall into two categories: administrators and end users.")
+[Users](users-70e95d1.md "Users in SAP Cloud Identity Services fall into three categories: administrators, end users, and technical users.")
 
 [Groups](groups-d93be69.md "SAP Cloud Identity Services offers groups to organize users based on common characteristics, authorization, or application. Use them to efficiently manage user access and permissions within your organization's SAP Cloud Identity Services environment.")
 

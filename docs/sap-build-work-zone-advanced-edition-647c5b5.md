@@ -236,7 +236,7 @@ These source systems consume SCIM 2.0 API provided by SAP Build Work Zone, advan
     
     Enter a SCIM-based search criteria for filtering users.
 
-    Example: **userName eq "SmithJ" and addresses.country eq "US"** 
+    Example: **userName eq "SmithJ"** 
     
     </td>
     </tr>
@@ -314,9 +314,14 @@ These source systems consume SCIM 2.0 API provided by SAP Build Work Zone, advan
     >                 "targetPath": "$.meta"
     >             },
     >             {
-    >                 "sourcePath": "$.name",
-    >                 "targetPath": "$.name",
-    >                 "optional": true
+    >               "sourcePath":"$.name.givenName",
+    >               "targetPath":"$.name.givenName",
+    >               "optional":true
+    >             },
+    >             {
+    >               "sourcePath":"$.name.familyName",
+    >               "targetPath":"$.name.familyName",
+    >               "optional":true
     >             },
     >             {
     >                 "sourcePath": "$.displayName",

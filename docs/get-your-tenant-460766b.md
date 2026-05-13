@@ -118,8 +118,8 @@ Get your productive and test tenant as part of a self-service request in SAP BTP
 
 2.  In the navigation area, choose *Entitlements*. You have two options:
 
-    -   if you see *default \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, skip steps 4 to 6, and go to step 7.
-    -   if you don't see *default \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, continue with step 4.
+    -   if you see *default \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, skip steps 3 to 6, and go to step 7.
+    -   if you don't see *default \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, continue with step 3.
 
     > ### Tip:  
     > -   If you use directories entitlement management in your global account, you must assign the *default \(Application\)* plan to the directory first, and after that to the subaccount. Once you assign the *default* plan to your directory, it will appear in your subaccount entitlements too. For more information, see [Configure Entitlements and Quotas for Directories](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/37f8871865114f44aebee3db6ac64b72.html).
@@ -258,7 +258,7 @@ Migrate an additional tenant from a Neo Subaccount to a multi-environment subacc
 > For more information, see SAP Note [3351844](https://me.sap.com/notes/3351844).
 
 > ### Caution:  
-> The SAP NetWeaver AS Java user store store scenario is only supported in the Neo environment. For more information, see [Corporate User Store \(Neo Environment\)](Operation-Guide/corporate-user-store-neo-environment-461d71c.md#loio461d71c148594608b9c8b6d016e0a0c5).
+> The SAP NetWeaver AS JAVA user store store scenario is only supported in the Neo environment. For more information, see [Corporate User Store \(Neo Environment\)](Operation-Guide/corporate-user-store-neo-environment-461d71c.md#loio461d71c148594608b9c8b6d016e0a0c5).
 
 
 

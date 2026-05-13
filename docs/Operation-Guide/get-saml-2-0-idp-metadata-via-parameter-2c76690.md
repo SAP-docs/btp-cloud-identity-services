@@ -87,6 +87,10 @@ The value is the name of the application as it appears in the *Name* field in th
 
 [Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md "You as a tenant administrator can view and download the tenant SAML 2.0 metadata. You can also change the name format and update your certificate used by the identity provider to digitally sign the messages for the applications.")
 
+[Rotate Signing Certificates for Applications](rotate-signing-certificates-for-applications-d66f271.md "Tenant administrators must replace existing signing certificates with new ones before they expire.")
+
+[Rotate Signing Certificates for OpenID Connect Applications](rotate-signing-certificates-for-openid-connect-applications-bb4eee1.md "Tenant administrators must replace existing signing certificates with new ones before they expire. This ensures uninterrupted and secure communication between OpenID Connect (OIDC) applications (referred to as relying parties) and Identity Authentication as the identity provider.")
+
 [Rotate Signing Certificates](rotate-signing-certificates-6621ad5.md "Tenant administrators must replace existing signing certificates with new ones before they expire. This ensures uninterrupted and secure communication between SAML 2.0 applications (referred to as service providers) and Identity Authentication as the identity provider.")
 
 [Tenant OpenID Connect \(OIDC\) Configurations](tenant-openid-connect-oidc-configurations-3d6abcc.md "You as a tenant administrator can view and configure the tenant OpenID Connect (OIDC) configurations.")

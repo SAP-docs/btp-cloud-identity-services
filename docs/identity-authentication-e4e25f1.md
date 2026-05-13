@@ -26,7 +26,8 @@ There are two versions of the Identity Authentication SCIM API. They are handled
 
 -   When the value is set to `1` or the property is not defined \(typical for systems created before versioning was introduced on July 9, 2021\) - Identity Authentication SCIM API \(in short, SCIM API version 1\) is used.
 
-    For more information on how to update to version 2, see [Update Connector Version](Operation-Guide/update-connector-version-8558733.md)
+    > ### Note:  
+    > The SAP Cloud Identity Services – Identity Authentication SCIM API \(version 1\) will be decommissioned on November 30, 2026. You must use its successor, the Identity Directory SCIM API. This requires updating your Identity Authentication connector from version 1 to version 2, as described in [Update Connector Version](Operation-Guide/update-connector-version-8558733.md)
 
 -   When the value is set to `2` - Identity Directory SCIM API \(in short, SCIM API version 2\) is used. This value is set automatically for all manually created systems in the as a source system. For more information, see Identity Provisioning UI after versioning was introduced on July 9, 2021.
 

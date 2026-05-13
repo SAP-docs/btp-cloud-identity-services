@@ -21,15 +21,12 @@ You can enable the chosen user type or types to be only blocked, or only deleted
 
 To enable blocking and or deletion, you must choose at least one user type and set at least one period.
 
-After a user has exceeded the set period of inactivity, they will be blocked and their status will be updated on the next sign in attempt.
+After a user has exceeded the set period of inactivity, they will be blocked and their status will be updated on the next sign-in attempt.
 
 You can also configure when the deletion script starts.
 
 > ### Note:  
 > If you configure both *Block after* and *Delete after* periods, the *Delete after* period must be longer than the *Block after* period.
-
-> ### Remember:  
-> Users that are created before the start of the deletion script, but have never logged in, will be deleted even if the period of their inactivity is less than the delete after period that is configured in the administration console.
 
 
 
@@ -49,16 +46,83 @@ You can also configure when the deletion script starts.
 
 5.  Select a user type.
 
-6.  Under *Inactivity Periods*, choose *Enabled* and configure at least one of the status fields: *Block after* or *Delete after*.
+6.  Enable the options under *Inactivity Periods*. By default the options are disabled. At least one of the status fields *Block after* or *Delete after* must be enabled.
+
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Option
+    
+    </th>
+    <th valign="top">
+
+    Description
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Blocking status**
+    
+    </td>
+    <td valign="top">
+    
+    When enabled, configure the *Block after* period. The *Block after* period can be between 14 and 2000 days.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Deletion status**
+    
+    </td>
+    <td valign="top">
+    
+    When enabled, configure the *Delete after* period. The *Delete after* period can be between 14 and 2000 days.
 
     > ### Remember:  
     > If you configure both *Block after* and *Delete after* periods, the *Delete after* period must be longer than the *Block after* period.
 
-7.  **Optional:** Configure the date after which the deletion script starts.
 
-    The automatic configuration is based on the current date plus the days specified in the *Delete after* period. The deletion process starts from the chosen date and is executed nightly at 04:00 UTC.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Deletion script start date**
+    
+    </td>
+    <td valign="top">
+    
+    This status is optional and it appears only after the *Deletion status* is enabled. Configure the date after which the deletion script starts. The automatic configuration is based on the current date plus the days specified in the *Delete after* period. The deletion process starts from the chosen date and is runs nightly at 04:00 UTC.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Creation grace period status**
+    
+    </td>
+    <td valign="top">
+    
+    This status is optional and it can be configured only after the *Deletion status* is enabled. When enabled, configure when users who have been created but never logged in will be deleted. The grace period can be between 2 and 30 days.
 
-8.  Save your changes.
+    > ### Remember:  
+    > If the status is disabled, users that are created before the start of the deletion script, but have never logged in, they will be deleted even if the period of their inactivity is less than the delete after period that is configured in the administration console.
+
+
+    
+    </td>
+    </tr>
+    </table>
+    
+7.  Save your changes.
 
 
 

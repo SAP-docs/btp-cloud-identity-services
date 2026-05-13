@@ -38,11 +38,11 @@ As a tenant administrator, you can assign one or more groups created for a speci
 
 4.  Choose the *Groups* tab.
 
-5.  Press the *Assign Groups* button at the bottom of the page.
+5.  Press the *Assign* button at the top of the page.
 
 6.  In the dialog box, select the group or groups that you want to assign to the user.
 
-7.  Save your changes.
+7.  Press *Assign*.
 
 
 **Related Information**  

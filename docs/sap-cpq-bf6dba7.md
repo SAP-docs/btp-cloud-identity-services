@@ -252,6 +252,48 @@ Create an SAP CPQ proxy connector to execute hybrid scenarios. That means, it ca
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    `cpq.group.members.page.size`
+    
+    </td>
+    <td valign="top">
+    
+    When the `cpq.group.members.paging.enabled` property is set to true, this setting defines the size of the paged members request.
+
+    > ### Note:  
+    > If you configure `cpq.group.members.page.size` to a number greater than the default value, the complete member retrieval is disabled.
+
+    Default Value: **100**
+
+    The number of group members that SAP CPQ returns per request when reading a group.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `cpq.group.members.paging.enabled`
+    
+    </td>
+    <td valign="top">
+    
+    This property enables the complete retrieval of group members through additional sequential requests. The maximum number of group members returned per request is 100 as defined in `cpq.group.members.page.size`.
+
+    For more information, see `cpq.group.members.page.size`.
+
+    Possible Values:
+
+    -   **true** - Paging is enabled.
+
+    -   **false** - Paging is disabled.
+
+
+    Default Value: **true**
+    
+    </td>
+    </tr>
     </table>
     
     To learn what additional properties are relevant to this system, see [List of Properties](list-of-properties-d6f3577.md). You can use the main search, or filter properties by the *Name* or *System Type* columns.

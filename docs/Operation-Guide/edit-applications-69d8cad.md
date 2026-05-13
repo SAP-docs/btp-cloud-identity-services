@@ -532,6 +532,8 @@ To edit the application configurations, proceed as follows:
     </td>
     <td valign="top">
     
+    The *Organization ID* can contain lowercase Latin letters \(a-z\), numbers \(0-9\), and the underscore \(\_\) character. It can be up to 255 characters.
+
     > ### Remember:  
     > The field is visible to users assigned to application authorization policies, or with Manage Applications role. For more information about the application authorization policies, see [Configure Application Authorizations](configure-application-authorizations-01cff18.md).
 

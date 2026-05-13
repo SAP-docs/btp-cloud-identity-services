@@ -2808,3 +2808,797 @@ requestStorageAccess.comfirm=Confirm
 
 [Change Tenant Texts REST API](change-tenant-texts-rest-api-66ad80a.md#loio66ad80a6bbaf4fc3911232f7cc9a7de6 "The Change Tenant Texts REST API of Identity Authentication can be used to change the predefined texts and messages for end-user screens available per tenant in the Identity Authentication.")
 
+<a name="loiod06cec491a70422a9eba93519cbdbc62"/>
+
+<!-- loiod06cec491a70422a9eba93519cbdbc62 -->
+
+## Tenant Texts Allowed HTML Elements
+
+
+
+## Allowed Elements
+
+**Allowed Elements**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Category
+
+</th>
+<th valign="top">
+
+Description
+
+</th>
+<th valign="top">
+
+Tags
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Inline text & emphasis
+
+</td>
+<td valign="top">
+
+Phrasing-level formatting.
+
+</td>
+<td valign="top">
+
+`span`, `strong`, `em`, `b`, `i`, `u`, `s`, `mark`, `small`, `sub`, `sup`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Inline semantic
+
+</td>
+<td valign="top">
+
+Phrasing with semantic meaning.
+
+</td>
+<td valign="top">
+
+`abbr`, `cite`, `q`, `time`, `data`, `bdi`, `bdo`, `ins`, `del`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Code & technical
+
+phrasing
+
+</td>
+<td valign="top">
+
+Inline and preformatted technical text.
+
+</td>
+<td valign="top">
+
+`code`, `kbd`, `samp`, `var`, `pre`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Block-level text
+
+</td>
+<td valign="top">
+
+Paragraphs and block quotations.
+
+</td>
+<td valign="top">
+
+`p`, `blockquote`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Headings
+
+</td>
+<td valign="top">
+
+Section headings, plus heading group.
+
+</td>
+<td valign="top">
+
+`h1`, `h2`, `h3`, `h4`, `h5`, `h6`, `hgroup`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Sectioning & generic containers
+
+</td>
+<td valign="top">
+
+Document outline and grouping.
+
+</td>
+<td valign="top">
+
+`div`, `header`, `footer`, `main`, `article`, `section`, `aside`, `nav`, `address`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Lists
+
+</td>
+<td valign="top">
+
+Ordered, unordered, description, and command lists.
+
+</td>
+<td valign="top">
+
+`ul`, `ol`, `li`, `dl`, `dt`, `dd`, `menu`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Tables
+
+</td>
+<td valign="top">
+
+Tabular data and column groups.
+
+</td>
+<td valign="top">
+
+`table`, `thead`, `tbody`, `tfoot`, `tr`, `th`, `td`, `caption`, `colgroup,`, `col`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Figures
+
+</td>
+<td valign="top">
+
+Figure containers.
+
+> ### Note:  
+> `img` is not permitted
+
+
+
+</td>
+<td valign="top">
+
+`figure`, `figcaption`, `picture`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Line breaks & separators
+
+</td>
+<td valign="top">
+
+Soft and hard breaks; thematic break.
+
+</td>
+<td valign="top">
+
+`hr`, `br`, `wbr`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Ruby annotations
+
+</td>
+<td valign="top">
+
+East Asian pronunciation guides.
+
+</td>
+<td valign="top">
+
+`ruby`, `rt`, `rp`, `rb`, `rtc`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Interactive disclosure & gauges
+
+</td>
+<td valign="top">
+
+Native disclosure widget and progress/meter indicators.
+
+</td>
+<td valign="top">
+
+`details`, `summary`, `progress`, `meter`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Anchors
+
+</td>
+<td valign="top">
+
+Hyperlinks \(may appear with or without attributes\).
+
+</td>
+<td valign="top">
+
+`a`
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Legacy representative
+
+</td>
+<td valign="top">
+
+Deprecated HTML4 styling tag.
+
+</td>
+<td valign="top">
+
+`font`
+
+</td>
+</tr>
+</table>
+
+
+
+## Element Specific Attributes
+
+**Element Specific Attributes**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Element\(s\)
+
+</th>
+<th valign="top">
+
+Attribute\(s\)
+
+</th>
+<th valign="top">
+
+Constraint
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`abbr`
+
+</td>
+<td valign="top">
+
+`title`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`time`, `ins`, `del`
+
+</td>
+<td valign="top">
+
+`datetime`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`blockquote`, `q`
+
+</td>
+<td valign="top">
+
+`cite`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`data`
+
+</td>
+<td valign="top">
+
+`value`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`bdo`, `bdi`
+
+</td>
+<td valign="top">
+
+`dir`
+
+</td>
+<td valign="top">
+
+`ltr` or `rtl` \(case-insensitive\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ol`
+
+</td>
+<td valign="top">
+
+`start`, `type`, `reversed`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`li`
+
+</td>
+<td valign="top">
+
+`value`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`th`, `td`
+
+</td>
+<td valign="top">
+
+`colsoan`, `rowspan`, `scope`, `headers`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`th`
+
+</td>
+<td valign="top">
+
+`abbr`, `scope`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`col`, `colgroup`
+
+</td>
+<td valign="top">
+
+`span`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`table`
+
+</td>
+<td valign="top">
+
+`summary`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`details`
+
+</td>
+<td valign="top">
+
+`open`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`progress`
+
+</td>
+<td valign="top">
+
+`value`, `max`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`meter`
+
+</td>
+<td valign="top">
+
+`value`, `min`, `max`, `low`, `high`, `optimum`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`font`
+
+</td>
+<td valign="top">
+
+`size`, `color`, `face`
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`a`
+
+</td>
+<td valign="top">
+
+`href`
+
+</td>
+<td valign="top">
+
+Permitted URL schemes only \(see table below\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`a`
+
+</td>
+<td valign="top">
+
+`target`
+
+</td>
+<td valign="top">
+
+`_blank`,`_self`, `_parent`, `_top` \(case-insensitive\)
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`a`
+
+</td>
+<td valign="top">
+
+`rel`
+
+</td>
+<td valign="top">
+
+Must start with a letter; letters, whitespace, and hyphens only
+
+</td>
+</tr>
+</table>
+
+
+
+## Global Attributes \(allowed on every element\)
+
+**Global Attributes**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Attribute
+
+</th>
+<th valign="top">
+
+Notes
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`id`
+
+</td>
+<td valign="top">
+
+Element identifier.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`class`
+
+</td>
+<td valign="top">
+
+CSS class names.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`data-safermailto-subject`
+
+</td>
+<td valign="top">
+
+Custom data attribute used by the email-link protection feature.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`data-safermailto-recipient`
+
+</td>
+<td valign="top">
+
+Custom data attribute used by the email-link protection feature.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`data-safermailto-domain`
+
+</td>
+<td valign="top">
+
+Custom data attribute used by the email-link protection feature.
+
+</td>
+</tr>
+</table>
+
+
+
+## Permitted URL Schemes
+
+**Permitted URL Schemes**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Scheme
+
+</th>
+<th valign="top">
+
+Status
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+`http`
+
+</td>
+<td valign="top">
+
+Permitted
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`https`
+
+</td>
+<td valign="top">
+
+Permitted
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`mailto`
+
+</td>
+<td valign="top">
+
+Permitted
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`ftp`
+
+</td>
+<td valign="top">
+
+Permitted
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`javascript`
+
+</td>
+<td valign="top">
+
+Rejected
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`data`
+
+</td>
+<td valign="top">
+
+Rejected
+
+</td>
+</tr>
+</table>
+
+
+
+> ### Note:  
+> The `style` attribute is not in the allow list. Visual styling must be applied via `class`.
+> 
+> If you want to add style to an HTML element, you should use a custom CSS. For more information, see [Use a Custom CSS](../Operation-Guide/use-a-custom-css-faa2a33.md#loiofaa2a33ff973409dafe136e4f748abda).
+

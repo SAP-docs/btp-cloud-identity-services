@@ -273,7 +273,7 @@ If your provisioning scenarios involve on-premise systems, this requires a separ
     > ### Note:  
     > If you already have a Cloud Foundry subaccount, you can use it.
 
-4.  Open your subaccount, and from the left-side panel choose *Service Marketplace* \> *Integration Suite* \> *Cloud Identity Services*.
+4.  Open your subaccount, and from the left-side panel choose *Service Marketplace* \> *Foundation / Cross Services* \> *Cloud Identity Services*.
 
 5.  Choose *Create*, select the *connectivity* plan and then *Next*.
 

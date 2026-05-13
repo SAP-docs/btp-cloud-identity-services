@@ -1,5 +1,7 @@
 <!-- loioa513c91261a745e6b4b3c160d448fc00 -->
 
+<link rel="stylesheet" type="text/css" href="../css/sap-icons.css"/>
+
 # Change a Tenant's Display Name
 
 You can configure the tenant's name from the administration console for SAP Cloud Identity Services.
@@ -36,11 +38,9 @@ To edit the tenant's display name, proceed as follows:
 
     At the top of the page, you can view the administrative and license relevant information of the tenant.
 
-3.  Choose the name of the tenant and change it in the pop-up dialog.
+3.  Choose the edit icon :pencil2: next to the name of the tenant and change it.
 
     > ### Note:  
-    > The tenant display name
-    > 
     > The tenant display name must be between 1 and 50 characters long. You can use upper case \(A-Z\) and lower case \(a-z\) Latin characters, numbers 0-9, spaces, and the following symbols: \_ - . '
 
 4.  Save your changes.
@@ -54,6 +54,10 @@ To edit the tenant's display name, proceed as follows:
 [Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md "You as a tenant administrator can view and download the tenant SAML 2.0 metadata. You can also change the name format and update your certificate used by the identity provider to digitally sign the messages for the applications.")
 
 [Get SAML 2.0 IdP Metadata via Parameter](get-saml-2-0-idp-metadata-via-parameter-2c76690.md "Tenant administrator can get the SAML 2.0 metadata via specific parameters.")
+
+[Rotate Signing Certificates for Applications](rotate-signing-certificates-for-applications-d66f271.md "Tenant administrators must replace existing signing certificates with new ones before they expire.")
+
+[Rotate Signing Certificates for OpenID Connect Applications](rotate-signing-certificates-for-openid-connect-applications-bb4eee1.md "Tenant administrators must replace existing signing certificates with new ones before they expire. This ensures uninterrupted and secure communication between OpenID Connect (OIDC) applications (referred to as relying parties) and Identity Authentication as the identity provider.")
 
 [Rotate Signing Certificates](rotate-signing-certificates-6621ad5.md "Tenant administrators must replace existing signing certificates with new ones before they expire. This ensures uninterrupted and secure communication between SAML 2.0 applications (referred to as service providers) and Identity Authentication as the identity provider.")
 

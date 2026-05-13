@@ -366,6 +366,59 @@ For more information, see:
 
 [List of Properties](../list-of-properties-d6f3577.md)
 
+
+
+## How to Resolve 409 Error in SAP Analytics Cloud Target System
+
+You want to know how to resolve a 409 error when using Identity Provisioning for provisioning users to SAP Analytics Cloud target system.
+
+First, determine whether user creation or user update fails with HTTP 409. A creation attempt fails, if the job error log for the user contains the error: ***Entity create failed with "Entity already exists"***, but the entity was not found by the unique attribute configured. An update attempt fails, if the job error log for the user contains the following path: ***/api/v1/scim/Users/<SOME USER ID\>***.
+
+In both cases - the create and update failure scenarios, the underlying issue is that another user in SAP Analytics Cloud already uses the same email address. When this is the case, the error log includes a message like: ***Email address is already used for <ID of the blocking user\>***.
+
+Before proceeding with the troubleshooting step, make sure to note the following:
+
+-   Whether the create or update action failed
+-   The ID of the blocking user \(the user who owns the conflicting email\)
+
+
+
+![](images/Image_Map_error_409_in_IPS_for_SAC_411107b.png)
+
+
+
+## How to Delete One Provisioned User From a Target System
+
+You want to know how to delete only one provisioned user by Identity Provisioning from a given target system.
+
+
+
+![](images/Image_Map_Delete_One_User_58f755b.png)
+
+
+
+## How to Delete Multiple Provisioned Users From a Target System
+
+You want to know how to delete users from target systems by the Identity Provisioning Service.
+
+-   A user is eligible for deletion from a target system only if the user was originally provisioned to that target system by Identity Provisioning Service from a source system.
+
+-   The job responsible for deleting users must be run for the same source–target system pair that was used for the original provisioning.
+
+-   A user is considered **up-for-deletion** when one of the following is true:
+
+    -   The user is no longer present in the source system
+
+    -   The user no longer satisfies the filtering criteria \(if defined\) in the user transformation of either the source or target system.
+
+
+-   The Identity Provisioning Service can delete **existed before users** only if the property `ips.delete.existedbefore.entities=true` during the job, which should delete the user from the target system. If a user is not considered as existed before, the service can delete it from the target system when it comes to that.
+
+
+
+
+![](images/f107f6ba361849f5977199c6c801c4ac.image)
+
 **Related Information**  
 
 

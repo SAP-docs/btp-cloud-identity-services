@@ -114,6 +114,8 @@ To create a new SAML 2.0 application, proceed as follows:
 
     This field allows you to group the applications under a specific organization and on the basis of the *Organization ID* to restrict the access to these applications.
 
+    The *Organization ID* can contain lowercase Latin letters \(a-z\), numbers \(0-9\), and the underscore \(\_\) character. It can be up to 255 characters.
+
     -   If you are an administrator with *Manage Applications* role, the newly created applications by default are in the `global` *Organization ID*. You can change the *Organization ID* during the creation of the new application by entering a new name or later you can edit it.
 
     -   If your authorizations are based on policies, the newly created applications can take the *Organization ID* of the applications to which you have manage rights on the basis of the `application.organization` attribute in the policy. Choose the allowed *Organization ID* from the drop-down.

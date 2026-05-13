@@ -179,6 +179,9 @@ Groups which are assigned to users through the user resource are referred to as 
 > 
 > If the group doesn't exist in the target system during user deletion, the user deletion succeeds.
 
+> ### Note:  
+> If you use different conditions within the group assignment mappings and the same user matches more than one condition, only the last matching condition is applied. As a result, only the groups defined in the last condition are assigned to the user.
+
 If you want to remove the group assignments of a deleted user from the source system, you need to modify the target system transformation by adding a mapping under the user resource containing the following configuration parts:
 
 -   **Constant** - Holds the IDs of the groups in the target system which will be updated. Currently, you can only identify groups by ID.

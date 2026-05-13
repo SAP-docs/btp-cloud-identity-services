@@ -24,9 +24,12 @@ If you want to change the user identifier text, you have to update the key value
 
 ![](images/After_Change_8232f7d.png)
 
+> ### Tip:  
+> For more information about the allowed HTML elements in the tenant texts, see [Change Tenant Texts REST API](../Development/change-tenant-texts-rest-api-66ad80a.md#loio66ad80a6bbaf4fc3911232f7cc9a7de6).
+
 You can browse for specific tenant texts and update only them.
 
-You can also update the tenant texts that you want via a CSV file import for a specific language. The CSV file must contain the following colunms: *category*,*key*,*defaultValue*,*customValue*.
+You can also update the tenant texts that you want via a CSV file import for a specific language. The CSV file must contain the following columns: *category*,*key*,*defaultValue*,*customValue*.
 
 You can use again the default tenant texts by simply resetting the custom texts. The *Reset to Default* operation resets all customized tenant texts to the default values.
 
@@ -53,10 +56,10 @@ To change the tenant texts via the administration console, proceed as follows:
 
 5.  Choose the *Edit* button.
 
-6.  Add the new text in the *Custom Value* field next to the text that you want to change.
+6.  Add the new text in the *Custom Value* field next to the text that you want to change. Repeat the step for all the texts that you want to change.
 
-    > ### Note:  
-    > Repeat the step for all the texts that you want to change.
+    > ### Tip:  
+    > You can check the allowed elements at [Tenant Texts Allowed HTML Elements](../Development/change-tenant-texts-rest-api-66ad80a.md#loiod06cec491a70422a9eba93519cbdbc62).
 
 7.  Save your changes.
 
@@ -77,6 +80,10 @@ The default tenant texts are changed with the custom ones. It may take up to 2 m
 [Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md "You as a tenant administrator can view and download the tenant SAML 2.0 metadata. You can also change the name format and update your certificate used by the identity provider to digitally sign the messages for the applications.")
 
 [Get SAML 2.0 IdP Metadata via Parameter](get-saml-2-0-idp-metadata-via-parameter-2c76690.md "Tenant administrator can get the SAML 2.0 metadata via specific parameters.")
+
+[Rotate Signing Certificates for Applications](rotate-signing-certificates-for-applications-d66f271.md "Tenant administrators must replace existing signing certificates with new ones before they expire.")
+
+[Rotate Signing Certificates for OpenID Connect Applications](rotate-signing-certificates-for-openid-connect-applications-bb4eee1.md "Tenant administrators must replace existing signing certificates with new ones before they expire. This ensures uninterrupted and secure communication between OpenID Connect (OIDC) applications (referred to as relying parties) and Identity Authentication as the identity provider.")
 
 [Rotate Signing Certificates](rotate-signing-certificates-6621ad5.md "Tenant administrators must replace existing signing certificates with new ones before they expire. This ensures uninterrupted and secure communication between SAML 2.0 applications (referred to as service providers) and Identity Authentication as the identity provider.")
 

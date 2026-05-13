@@ -604,10 +604,14 @@ Identity Authentication allows you to use a custom domain that is different from
 
 The custom domain configuration is enabled with the upgrade of Identity Authentication. We recommend you to renew your certificate as early as possible, preferably 30 days before expiration, and no later than the Sunday before productive system upgrade. Identity Authentication has production releases \(bi-weekly updates\) and immediate updates:
 
--   **Bi-weekly updates** \(standard\) - planned each second Tuesday at 14:00 UTC.
--   **Immediate updates** - in case of fixes required for bugs that affect productive application operations, or due to urgent security fixes.
+-   **Bi-weekly updates** \(standard\)
 
-For more information on the upgrade calendar of the service, see SAP Note [3409744](https://me.sap.com/notes/3409744) \(Release Schedule for SAP Cloud Identity Services \(SAP BTP\)\).
+    Standard updates are delivered on a bi-weekly basis. You can find the planned schedule for upcoming releases in the SAP Note [3409744](https://me.sap.com/notes/3409744) \(Release Schedule for SAP Cloud Identity Services \(SAP BTP\)\).
+
+-   **Immediate updates**
+
+    Immediate updates are provided when fixes are required for issues that affect productive application operations or when urgent security fixes are necessary.
+
 
 
 
@@ -632,6 +636,10 @@ For more information on the upgrade calendar of the service, see SAP Note [34097
 [Tenant SAML 2.0 Configurations](tenant-saml-2-0-configurations-e81a19b.md "You as a tenant administrator can view and download the tenant SAML 2.0 metadata. You can also change the name format and update your certificate used by the identity provider to digitally sign the messages for the applications.")
 
 [Get SAML 2.0 IdP Metadata via Parameter](get-saml-2-0-idp-metadata-via-parameter-2c76690.md "Tenant administrator can get the SAML 2.0 metadata via specific parameters.")
+
+[Rotate Signing Certificates for Applications](rotate-signing-certificates-for-applications-d66f271.md "Tenant administrators must replace existing signing certificates with new ones before they expire.")
+
+[Rotate Signing Certificates for OpenID Connect Applications](rotate-signing-certificates-for-openid-connect-applications-bb4eee1.md "Tenant administrators must replace existing signing certificates with new ones before they expire. This ensures uninterrupted and secure communication between OpenID Connect (OIDC) applications (referred to as relying parties) and Identity Authentication as the identity provider.")
 
 [Rotate Signing Certificates](rotate-signing-certificates-6621ad5.md "Tenant administrators must replace existing signing certificates with new ones before they expire. This ensures uninterrupted and secure communication between SAML 2.0 applications (referred to as service providers) and Identity Authentication as the identity provider.")
 

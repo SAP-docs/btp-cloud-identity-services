@@ -345,7 +345,7 @@ Defines the format of access tokens.
 </td>
 <td valign="top">
 
-Use this array to enable the application to consume the APIs of reuse services. Name the reuse services consumed by the application you’re protecting. The system adds the client IDs of the reuse services to the audience claim of the identity token. You can name up to 40 services.
+Use this array to enable the application to consume the APIs of reuse services. Name the reuse services consumed by the application you’re protecting. The system adds the client IDs of the reuse services to the audience claim of the identity token. You can name up to 400 services.
 
 > ### Note:  
 > If the token is retrieved based on a public flow \(`public-client` is true\) without client authentication, Cloud Identity Services doesn't add the client IDs of the dependent services to the audience claim.
@@ -556,7 +556,7 @@ Specifies the byte length of the generated private key. The default length is `2
 
 Specifies the number of time units for `validity-type`. The default value is `30`.
 
-Together with the `validity-type` the range of validity runs from 1 day to 1 year.
+Together with the `validity-type` the range of validity runs from `1 DAYS` to `30 DAYS`.
 
 </td>
 </tr>
@@ -568,7 +568,7 @@ Together with the `validity-type` the range of validity runs from 1 day to 1 yea
 </td>
 <td valign="top">
 
-Specifies the time unit for `validity`. Supported values are `DAYS`, `MONTHS`, and `YEARS`. The default value is `DAYS`.
+Specifies the time unit for `validity`. Supported values are `DAYS`. The default value is `DAYS`.
 
 </td>
 </tr>

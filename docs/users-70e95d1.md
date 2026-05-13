@@ -2,7 +2,7 @@
 
 # Users
 
-Users in SAP Cloud Identity Services fall into two categories: administrators and end users.
+Users in SAP Cloud Identity Services fall into three categories: administrators, end users, and technical users.
 
 ![](images/SCI_Users_CommonDoc_337668b.png)
 
@@ -14,7 +14,7 @@ Users in SAP Cloud Identity Services fall into two categories: administrators an
 
 SAP Cloud Identity Services distinguish between two types of administrators: **user administrator** and **system administrator**.
 
--   User administrators are real persons. They manage tenant configurations, applications, corporate identity providers, identity provisioning, users and groups. The initial administrator of SAP Cloud Identity Services tenants is created as a user administrator.
+-   User administrators are real persons. They manage tenant configurations, applications, corporate identity providers, identity provisioning, users, and groups. The initial administrator of SAP Cloud Identity Services tenants is created as a user administrator.
 
 -   System administrators are technical users. They are used for establishing system-to-system communication in provisioning scenarios, accessing real-time provisioning and proxy system APIs, as well as accessing tenant API for running Identity Provisioning jobs. System administrators can also act as user administrators because they have the same authorizations.
 
@@ -25,7 +25,7 @@ SAP Cloud Identity Services distinguish between two types of administrators: **u
 
 ## End Users
 
-End users use business applications that consume Identity Authentication as identity provider. The service authenticates the users with credentials maintained in Identity Authentication or delegates the authentication request to a 3rd party identity provider. End users are initially created, imported or provisioned to the user store of SAP Cloud Identity Services.
+End users use business applications that consume Identity Authentication as identity provider. The service authenticates the users with credentials maintained in Identity Authentication or delegates the authentication request to a 3rd-party identity provider. End users are initially created, imported, or provisioned to the user store of SAP Cloud Identity Services.
 
 There are six user types of end users:
 
@@ -129,6 +129,22 @@ External users that were once employed by the company but now they are no more p
 </tr>
 </table>
 
+
+
+## Technical Users
+
+Technical users are non-human identities that enable automated system-to-system communication and integration. Unlike administrators and end users, technical users authenticate using credentials such as secrets or certificates rather than passwords. Technical users are managed separately in the administration console via the *Technical Users* tile that appears under *Users & Authorizations*. The following prerequisites must be met, so that an administrator or technical user can manage the technical users:
+
+-   You have enabled the authorizations based on policies option in the admin console for SAP Cloud Identity Services. See [Configure Authorizations Based on Policies](Operation-Guide/configure-authorizations-based-on-policies-08fea39.md).
+
+-   The administrator or end user is assigned with the respective authorization policy, depending on the tasks they need to perform. For more information, see [Configure Technical User Authorizations](Operation-Guide/configure-technical-user-authorizations-885320d.md).
+
+    > ### Remember:  
+    > The minimal authorization policy required for the creation of a technical user is `CREATE_TECHNICAL_USERS`. The `MANAGE_TECHNICAL_USERS` allows all CRUD operations with a technical user.
+
+
+For more information about how to create and manage the technical users, see [Managing Technical Users](Operation-Guide/managing-technical-users-fd1a636.md).
+
 **Related Information**  
 
 
@@ -149,8 +165,6 @@ External users that were once employed by the company but now they are no more p
 [Authorization Policies](authorization-policies-01ddefa.md "Authorization Management enables you to refine authorization policies that give access to resources in enabled SAP BTP-based business applications. Restrict policies based on the values of user or business object attributes. Assign policies to users with the group management capabilities of the identity directory.")
 
 [Cookies](cookies-e60fd04.md "")
-
-[Create a New User](Operation-Guide/create-a-new-user-348deef.md "As a tenant administrator, you can create a new user in the administration console for SAP Cloud Identity Services.")
 
 [List and Edit User Details](Operation-Guide/list-and-edit-user-details-045cb01.md "As a tenant administrator, you can view detailed information about the users in the administration console for SAP Cloud Identity Services. Optionally you can edit this information.")
 

@@ -6479,7 +6479,7 @@ For example, if you set the property's value = *30*, the Identity Provisioning w
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud Public Edition \(using version 1 - SAP S/4HANA Cloud Public Edition API: Business User\) 
+SAP S/4HANA Cloud Public Edition \(using version 1 - SAP S/4HANA Cloud Public Edition API: Business User\)
 
 </td>
 </tr>
@@ -6507,7 +6507,7 @@ Default value: *false*
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud Public Edition \(using version 1 - SAP S/4HANA Cloud Public Edition API: Business User\) 
+SAP S/4HANA Cloud Public Edition \(using version 1 - SAP S/4HANA Cloud Public Edition API: Business User\)
 
 </td>
 </tr>
@@ -6534,7 +6534,7 @@ If you enter a number larger than 100, the service will replace it with the defa
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud Public Edition \(using version 1 - SAP S/4HANA Cloud Public Edition API: Business User\) 
+SAP S/4HANA Cloud Public Edition \(using version 1 - SAP S/4HANA Cloud Public Edition API: Business User\)
 
 </td>
 </tr>
@@ -7035,7 +7035,7 @@ Default value \(if the property appears during system creation\): *false*
 </td>
 <td valign="top">
 
-SAP S/4HANA Cloud Public Edition \(using version 1 - SAP S/4HANA Cloud Public Edition API: Business User\) 
+SAP S/4HANA Cloud Public Edition \(using version 1 - SAP S/4HANA Cloud Public Edition API: Business User\)
 
 </td>
 </tr>
@@ -7084,7 +7084,7 @@ To learn what criteria you can use, see: [OData URI Conventions](https://www.oda
 </td>
 <td valign="top">
 
-SAP Integrated Business Planning \(using version 1 - SAP Integrated Business Planning API: Business User\) 
+SAP Integrated Business Planning \(using version 1 - SAP Integrated Business Planning API: Business User\)
 
 </td>
 </tr>
@@ -9828,7 +9828,7 @@ Identity Authentication \(SCIM API version 2\)
 
 This property controls how modified entities \(users and groups\) in the source system are updated in the target system.
 
--   If set to *true*, Identity Provisioning sends a `PATCH``"scope"` urn:ietf:params:scim:schemas:extension:enterprise:2.0:User:department eq "Dev" and in the attribute mappings in the write transformation will be updated.
+-   If set to *true*, Identity Provisioning sends a `PATCH` request to the user or group resource in the target system. Only attributes without `"scope"` in the attribute mappings in the write transformation will be updated.
 
     For example, if the last name of a user is changed in the source system, the patch operation will update it in the target system and will leave unchanged other attributes with "scope": "createEntity", such as:
 
@@ -12464,6 +12464,60 @@ You can use the example value or provide your own.
 
 
 **System Role:** Source and Target
+
+</td>
+<td valign="top">
+
+SAP CPQ
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`cpq.group.members.paging.enabled`
+
+</td>
+<td valign="top">
+
+This property enables the complete retrieval of group members through additional sequential requests. The maximum number of group members returned per request is 100 as defined in `cpq.group.members.page.size`.
+
+For more information, see `cpq.group.members.page.size`.
+
+Possible Values:
+
+-   *true* - Paging is enabled.
+-   *false* - Paging is disabled.
+
+Default Value: *true*
+
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP CPQ
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`cpq.group.members.page.size`
+
+</td>
+<td valign="top">
+
+When the `cpq.group.members.paging.enabled` property is set to true, this setting defines the size of the paged members request.
+
+> ### Note:  
+> If you configure `cpq.group.members.page.size` to a number greater than the default value, the complete member retrieval is disabled.
+
+Default Value: *100*
+
+The number of group members that SAP CPQ returns per request when reading a group.
+
+**System Role:** Source, Proxy
 
 </td>
 <td valign="top">

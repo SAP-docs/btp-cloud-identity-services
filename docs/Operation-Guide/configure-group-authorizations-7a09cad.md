@@ -190,6 +190,8 @@ The ID of the application which is the unique identifier of that application con
 
 [Configure User Authorizations](configure-user-authorizations-424b64c.md "Configure a granular access control based on policies for the administrators of SAP Cloud Identity Services.")
 
+[Configure Technical User Authorizations](configure-technical-user-authorizations-885320d.md "Configure granular access control for the technical users in the SAP Cloud Identity Services administration console.")
+
 [Configure Application Authorizations](configure-application-authorizations-01cff18.md "Configure granular access and control over the applications in the administration console of SAP Cloud Identity Services.")
 
 [Configure Provisioning Authorizations](configure-provisioning-authorizations-a8f8e31.md "Configure granular access control for the Identity Provisioning systems and logs in the SAP Cloud Identity Services administration console.")
