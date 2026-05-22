@@ -344,8 +344,18 @@ The proxy system consumes `User Account and Authentication API` and `Cloud Found
     >         "correlationAttribute": true
     >       },
     >       {
-    >         "sourcePath": "$.name",
-    >         "targetPath": "$.name",
+    >         "sourcePath": "$.name.givenName",
+    >         "targetPath": "$.name.givenName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.familyName",
+    >         "targetPath": "$.name.familyName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.formatted",
+    >         "targetPath": "$.name.formatted",
     >         "optional": true
     >       },
     >       {

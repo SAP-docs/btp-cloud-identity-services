@@ -296,9 +296,39 @@ After fulfilling the prerequisites, follow the procedure below to add a source s
     >                 "optional": true
     >             },
     >             {
-    >                 "sourcePath": "$.name",
-    >                 "targetPath": "$.name",
-    >                 "optional": true
+    >               "sourcePath": "$.displayName",
+    >               "optional":true,
+    >               "targetPath": "$.displayName"
+    >             },
+    >             {
+    >               "sourcePath": "$.name.givenName",
+    >               "optional":true,
+    >               "targetPath": "$.name.givenName"
+    >             },
+    >             {
+    >               "sourcePath": "$.name.familyName",
+    >               "optional":true,
+    >               "targetPath": "$.name.familyName"
+    >             },
+    >             {
+    >               "sourcePath": "$.name.formatted",
+    >               "optional":true,
+    >               "targetPath": "$.name.formatted"
+    >             },
+    >             {
+    >               "sourcePath": "$.name.honorificPrefix",
+    >               "optional":true,
+    >               "targetPath": "$.name.honorificPrefix"
+    >             },
+    >             {
+    >               "sourcePath": "$.name.honorificSuffix",
+    >               "optional":true,
+    >               "targetPath": "$.name.honorificSuffix"
+    >             },
+    >             {
+    >               "sourcePath": "$.name.middleName",
+    >               "optional":true,
+    >               "targetPath": "$.name.middleName"
     >             },
     >             {
     >                 "sourcePath": "$.externalId",
@@ -353,6 +383,10 @@ After fulfilling the prerequisites, follow the procedure below to add a source s
     >                         "prefix": "%dc.group.prefix%"
     >                     }
     >                 ]
+    >             },
+    >             {
+    >                 "sourcePath": "$.displayName",
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['externalName']"
     >             },
     >             {
     >                 "sourcePath": "$.members",

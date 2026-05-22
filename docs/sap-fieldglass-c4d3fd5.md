@@ -244,9 +244,19 @@ After fulfilling the prerequisites, follow the procedure below to add a target s
     >         "targetPath": "$.userName"
     >       },
     >       {
-    >         "sourcePath": "$.name",
-    >         "targetPath": "$.name",
-    >         "optional": true
+    >         "sourcePath": "$.name.givenName",
+    >         "optional": true,
+    >         "targetPath": "$.name.givenName"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.familyName",
+    >         "optional": true,
+    >         "targetPath": "$.name.familyName"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.formatted",
+    >         "optional": true,
+    >         "targetPath": "$.name.formatted"
     >       },
     >       {
     >         "sourcePath": "$.name.honorificPrefix",

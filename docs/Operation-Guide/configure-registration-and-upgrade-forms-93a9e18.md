@@ -75,6 +75,7 @@ The list of the attributes includes:
 -   `Relationship`
 -   `Job Function`
 -   `Department`
+-   `Job Title`
 
 *CONTACT PREFERENCES*
 

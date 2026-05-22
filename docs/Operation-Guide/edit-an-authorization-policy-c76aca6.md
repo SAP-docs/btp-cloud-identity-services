@@ -54,7 +54,7 @@ When you edit an existing custom authorization policy, you can add or delete res
 
     For more information, see [Data Control Language \(DCL\)](data-control-language-dcl-38baa25.md).
 
-10. Choose the conditions that come with the application in the dropdown list. Next, choose an operator and choose or enter a value or choose a user attrribute.
+10. Choose the conditions that come with the application in the dropdown list. Next, choose an operator and choose or enter a value or choose a user attribute.
 
 11. Save your changes.
 

@@ -3207,7 +3207,7 @@ This property can be used in combination with `ips.full.read.force.count`. For m
 
 -   SAP Field Service Management
 
--   SAP HANA Cloud, SAP HANA Database
+-   SAP HANA Cloud Database Services
 
 -   SAP Intelligent Agriculture
 
@@ -3397,7 +3397,7 @@ When the property is set, the groups are provisioned with their *applicationId* 
 
 -   SAP Field Service Management 
 
--   SAP HANA Cloud, SAP HANA Database
+-   SAP HANA Cloud Database Services
 
 -   SAP Integrated Business Planning
 
@@ -3489,7 +3489,7 @@ If you need to make OAuth authentication to the system, enter the URL to the acc
 
 -   SAP Field Service Management
 
--   SAP HANA Cloud, SAP HANA Database
+-   SAP HANA Cloud Database Services
 
 -   SAP Intelligent Agriculture
 
@@ -7345,7 +7345,7 @@ For example:
 
 -   SAP Field Service Management
 
--   SAP HANA Cloud, SAP HANA Database
+-   SAP HANA Cloud Database Services
 
 -   SAP Intelligent Agriculture
 
@@ -7506,7 +7506,7 @@ If the property is not specified, the search is done by the default attribute: *
 
 -   SAP Field Service Management
 
--   SAP HANA Cloud, SAP HANA Database
+-   SAP HANA Cloud Database Services
 
 -   SAP Intelligent Agriculture
 
@@ -7670,7 +7670,7 @@ Default value: *false*
 
 -   SAP Field Service Management
 
--   SAP HANA Cloud, SAP HANA Database
+-   SAP HANA Cloud Database Services
 
 -   SAP Intelligent Agriculture
 
@@ -15272,7 +15272,7 @@ SAP Ariba Category Management
 </td>
 <td valign="top">
 
-When specified, only those SAP HANA Cloud, SAP HANA Database groups matching the filter expression will be read.
+When specified, only those SAP HANA Cloud Database Services groups matching the filter expression will be read.
 
 For example: *displayName eq "ProjectTeam1"*
 
@@ -15281,7 +15281,7 @@ For example: *displayName eq "ProjectTeam1"*
 </td>
 <td valign="top">
 
-SAP HANA Cloud, SAP HANA Database
+SAP HANA Cloud Database Services
 
 </td>
 </tr>
@@ -15293,7 +15293,7 @@ SAP HANA Cloud, SAP HANA Database
 </td>
 <td valign="top">
 
-When specified, only those SAP HANA Cloud, SAP HANA Database users matching the filter expression will be read.
+When specified, only those SAP HANA Cloud Database Services users matching the filter expression will be read.
 
 For example: *userName eq "SmithJ"* 
 
@@ -15302,7 +15302,7 @@ For example: *userName eq "SmithJ"*
 </td>
 <td valign="top">
 
-SAP HANA Cloud, SAP HANA Database
+SAP HANA Cloud Database Services
 
 </td>
 </tr>
@@ -15314,7 +15314,7 @@ SAP HANA Cloud, SAP HANA Database
 </td>
 <td valign="top">
 
-This property makes a SAP HANA Cloud, SAP HANA Database connector to send a specified value for the *Content-Type* HTTP header. This is needed because SAP HANA Cloud, SAP HANA Database could potentially not implement the protocol in the specification, which states that a system must accept *application/scim+json* as a value of the*Content-Type* header.
+This property makes a SAP HANA Cloud Database Services connector to send a specified value for the *Content-Type* HTTP header. This is needed because SAP HANA Cloud Database Services could potentially not implement the protocol in the specification, which states that a system must accept *application/scim+json* as a value of the*Content-Type* header.
 
 **Possible values:**
 
@@ -15327,7 +15327,7 @@ Default value: *application/scim+json*
 </td>
 <td valign="top">
 
-SAP HANA Cloud, SAP HANA Database
+SAP HANA Cloud Database Services
 
 </td>
 </tr>
@@ -15339,7 +15339,7 @@ SAP HANA Cloud, SAP HANA Database
 </td>
 <td valign="top">
 
-If the Identity Provisioning tries to create a group that already exists on the SAP HANA Cloud, SAP HANA Database target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
+If the Identity Provisioning tries to create a group that already exists on the SAP HANA Cloud Database Services target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
 
 Default value \(when not specified\): *displayName*
 
@@ -15350,7 +15350,7 @@ If the property is not specified, the search is done by the default attribute: *
 </td>
 <td valign="top">
 
-SAP HANA Cloud, SAP HANA Database
+SAP HANA Cloud Database Services
 
 </td>
 </tr>
@@ -15362,7 +15362,7 @@ SAP HANA Cloud, SAP HANA Database
 </td>
 <td valign="top">
 
-Makes the SAP HANA Cloud, SAP HANA Database connector send the *If-Match* HTTP header with a value of “\*” for every request to the target system. This header could be used by an SAP HANA Cloud, SAP HANA Database system for entity versioning.
+Makes the SAP HANA Cloud Database Services connector send the *If-Match* HTTP header with a value of “\*” for every request to the target system. This header could be used by an SAP HANA Cloud Database Services system for entity versioning.
 
 **Possible values:**
 
@@ -15376,7 +15376,7 @@ Default value: *false*
 </td>
 <td valign="top">
 
-SAP HANA Cloud, SAP HANA Database
+SAP HANA Cloud Database Services
 
 </td>
 </tr>
@@ -15420,7 +15420,7 @@ Default value: *false*
 </td>
 <td valign="top">
 
-SAP HANA Cloud, SAP HANA Database
+SAP HANA Cloud Database Services
 
 </td>
 </tr>
@@ -15432,7 +15432,7 @@ SAP HANA Cloud, SAP HANA Database
 </td>
 <td valign="top">
 
-When the Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists in SAP HANA Cloud, SAP HANA Database. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\). This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\).
+When the Identity Provisioning attempts to provision a user for the first time, it may detect that such a user already exists in SAP HANA Cloud Database Services. Thus, the service needs to retrieve the *entityId* of the existing user via filtering by user unique attribute\(s\). This property defines by which unique attribute\(s\) the existing user to be searched \(resolved\).
 
 According to your use case, choose how to set up this property:
 
@@ -15454,7 +15454,7 @@ Default value: *userName*
 </td>
 <td valign="top">
 
-SAP HANA Cloud, SAP HANA Database
+SAP HANA Cloud Database Services
 
 </td>
 </tr>
@@ -15475,7 +15475,7 @@ Specifies the method by which users authenticate when connecting to the database
 </td>
 <td valign="top">
 
-SAP HANA Cloud, SAP HANA Database
+SAP HANA Cloud Database Services
 
 </td>
 </tr>
@@ -15494,7 +15494,7 @@ Refers to a unique identifier associated with a specific database instance withi
 </td>
 <td valign="top">
 
-SAP HANA Cloud, SAP HANA Database
+SAP HANA Cloud Database Services
 
 </td>
 </tr>
@@ -15508,14 +15508,19 @@ SAP HANA Cloud, SAP HANA Database
 
 Refers to the type of instance being configured or used within the SAP HANA Cloud.
 
-The value is set to *hdb* at system creation.
+The value can be set to:
+
+-   **hdb** - SAP HANA Database
+-   **hdlre** - SAP HANA Data Lake Relational Engine
+
+Default value: **hdb**
 
 **System Role:** Source, Target
 
 </td>
 <td valign="top">
 
-SAP HANA Cloud, SAP HANA Database
+SAP HANA Cloud Database Services
 
 </td>
 </tr>
@@ -15534,7 +15539,7 @@ Specifies the identity provider \(IdP\) that is responsible for handling authent
 </td>
 <td valign="top">
 
-SAP HANA Cloud, SAP HANA Database
+SAP HANA Cloud Database Services
 
 </td>
 </tr>
@@ -15546,19 +15551,19 @@ SAP HANA Cloud, SAP HANA Database
 </td>
 <td valign="top">
 
-\(Optional\) This property distinguishes SAP HANA Cloud, SAP HANA Database groups by specific prefix. It is an optional property which does not appear by default at system creation.
+\(Optional\) This property distinguishes SAP HANA Cloud Database Services groups by specific prefix. It is an optional property which does not appear by default at system creation.
 
 Example value: `HANA_Cloud_DB_`
 
 You can use the example value or provide your own.
 
--   When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP HANA Cloud, SAP HANA Database source system and will be provisioned to the target system with the following name pattern: <code>HANA_Cloud_DB_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP HANA Cloud, SAP HANA Database groups in the target system will be distinguished from groups provisioned from other applications.
+-   When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP HANA Cloud Database Services source system and will be provisioned to the target system with the following name pattern: <code>HANA_Cloud_DB_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP HANA Cloud Database Services groups in the target system will be distinguished from groups provisioned from other applications.
 
-    If the property is not set, the SAP HANA Cloud, SAP HANA Database groups will be read and provisioned to the target system with their actual display names.
+    If the property is not set, the SAP HANA Cloud Database Services groups will be read and provisioned to the target system with their actual display names.
 
--   When **set in the target system**, only groups containing the `HANA_Cloud_DB_` prefix in their display name will be provisioned to SAP HANA Cloud, SAP HANA Database. Groups without this prefix in the display name won't be provisioned.
+-   When **set in the target system**, only groups containing the `HANA_Cloud_DB_` prefix in their display name will be provisioned to SAP HANA Cloud Database Services. Groups without this prefix in the display name won't be provisioned.
 
-    If the property is not set, all groups will be be provisioned to SAP HANA Cloud, SAP HANA Database.
+    If the property is not set, all groups will be be provisioned to SAP HANA Cloud Database Services.
 
 
 **System Role:** Source, Target
@@ -15566,7 +15571,7 @@ You can use the example value or provide your own.
 </td>
 <td valign="top">
 
-SAP HANA Cloud, SAP HANA Database
+SAP HANA Cloud Database Services
 
 </td>
 </tr>

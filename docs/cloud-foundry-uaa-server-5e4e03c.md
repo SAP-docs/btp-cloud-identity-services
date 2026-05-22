@@ -396,8 +396,13 @@ Follow the steps below to create a SCIM 2.0 representation of your proxy Cloud F
     >         "correlationAttribute": true
     >       },
     >       {
-    >         "sourcePath": "$.name",
-    >         "targetPath": "$.name",
+    >         "sourcePath": "$.name.givenName",
+    >         "targetPath": "$.name.givenName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.familyName",
+    >         "targetPath": "$.name.familyName",
     >         "optional": true
     >       },
     >       {
@@ -542,8 +547,13 @@ Follow the steps below to create a SCIM 2.0 representation of your proxy Cloud F
     >         "targetPath": "$.userName"
     >       },
     >       {
-    >         "sourcePath": "$.name",
-    >         "targetPath": "$.name",
+    >         "sourcePath": "$.name.givenName",
+    >         "targetPath": "$.name.givenName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.familyName",
+    >         "targetPath": "$.name.familyName",
     >         "optional": true
     >       },
     >       {

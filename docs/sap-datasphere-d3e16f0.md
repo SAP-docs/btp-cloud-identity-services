@@ -201,8 +201,14 @@ You can use Identity Provisioning to configure SAP Datasphere as a source system
     >                 "correlationAttribute": true
     >             },
     >             {
-    >                 "sourcePath": "$.name",
-    >                 "targetPath": "$.name"
+    >               "sourcePath": "$.name.givenName",
+    >               "optional": true,
+    >               "targetPath": "$.name.givenName"
+    >             },
+    >             {
+    >               "sourcePath": "$.name.familyName",
+    >               "optional": true,
+    >               "targetPath": "$.name.familyName"
     >             },
     >             {
     >                 "sourcePath": "$.externalId",

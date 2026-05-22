@@ -192,8 +192,23 @@ After fulfilling the prerequisites, follow the procedure below to add a source s
     >         "optional": true
     >       },
     >       {
-    >         "sourcePath": "$.name",
-    >         "targetPath": "$.name",
+    >         "sourcePath": "$.name.givenName",
+    >         "targetPath": "$.name.givenName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.middleName",
+    >         "targetPath": "$.name.middleName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.familyName",
+    >         "targetPath": "$.name.familyName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.honorificPrefix",
+    >         "targetPath": "$.name.honorificPrefix",
     >         "optional": true
     >       },
     >       {

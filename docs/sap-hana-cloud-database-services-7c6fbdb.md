@@ -1,8 +1,8 @@
 <!-- loio7c6fbdb3373f44a395c523508e9a70c7 -->
 
-# SAP HANA Cloud, SAP HANA Database
+# SAP HANA Cloud Database Services
 
-Follow this procedure to set up SAP HANA Cloud, SAP HANA Database as a source system.
+Follow this procedure to set up SAP HANA Cloud Database Services as a source system.
 
 
 
@@ -18,10 +18,21 @@ You have created a technical user for Identity Provisioning in the SAP HANA data
 
 SAP HANA Cloud allows you to consume the SAP HANA database from cloud applications running on SAP Business Technology Platform, as well as from applications running elsewhere using the standard SAP HANA clients. Every instance of SAP HANA Cloud has its own single SAP HANA Database.
 
-You can use Identity Provisioning to configure SAP HANA Cloud, SAP HANA Database as a source system where you can read users, roles and user role assignments from and provision them to target systems of your choice.
+You can use Identity Provisioning to configure SAP HANA Cloud Database Services as a source system where you can read users, roles and user role assignments from and provision them to target systems of your choice.
+
+The SAP HANA Cloud Database Services connector supports provisioning of entities to the following two database types:
+
+-   SAP HANA Database \(HDB\)
+
+-   SAP HANA Data Lake Relational Engine \(HDLRE / IQ Database\)
+
+
+You can define the target database type by setting the `hana.cloud.db.instance.type` property to either `hdb` or `hdlre`.
+
+For more information on the supported database types, see [SAP HANA Cloud, SAP HANA Database](https://help.sap.com/docs/hana-cloud-database?version=Latest) and [SAP HANA Cloud, Data Lake](https://help.sap.com/docs/SAP_HANA_DATA_LAKE?version=Latest).
 
 > ### Note:  
-> In SAP HANA Cloud, SAP HANA Database, groups correspond to roles.
+> In SAP HANA Cloud Database Services, groups correspond to roles.
 
 
 
@@ -34,7 +45,7 @@ You can use Identity Provisioning to configure SAP HANA Cloud, SAP HANA Database
 
 2.  Sign in to the administration console of SAP Cloud Identity Services and navigate to *Identity Provisioning* \> *Source Systems*.
 
-3.  Add *SAP HANA Cloud, SAP HANA Database* as a source system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
+3.  Add *SAP HANA Cloud Database Services* as a source system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
 4.  Choose the *Properties* tab to configure the connection settings for your system.
 
@@ -81,9 +92,16 @@ You can use Identity Provisioning to configure SAP HANA Cloud, SAP HANA Database
     </td>
     <td valign="top">
     
-    Refers to the type of instance being configured or used within the SAP HANA Cloud.
+    Refers to the database type configured or used within SAP HANA Cloud.
 
-    The value is set to *hdb* at system creation.
+    The value can be set to:
+
+    -   **hdb** - SAP HANA Database
+
+    -   **hdlre** - SAP HANA Data Lake Relational Engine
+
+
+    Default value: **hdb**
     
     </td>
     </tr>
@@ -107,7 +125,7 @@ You can use Identity Provisioning to configure SAP HANA Cloud, SAP HANA Database
     </td>
     <td valign="top">
     
-    \(Optional\) When specified, only those SAP HANA Cloud, SAP HANA Database users matching the filter expression will be read.
+    \(Optional\) When specified, only those SAP HANA Cloud Database Services users matching the filter expression will be read.
 
     Example: **name.familyName eq "Smith"**
     
@@ -121,7 +139,7 @@ You can use Identity Provisioning to configure SAP HANA Cloud, SAP HANA Database
     </td>
     <td valign="top">
     
-    \(Optional\) When specified, only those SAP HANA Cloud, SAP HANA Database roles matching the filter expression will be read.
+    \(Optional\) When specified, only those SAP HANA Cloud Database Services roles matching the filter expression will be read.
 
     Example: **displayName eq "ProjectTeam1" or "Employees2020"**
     
@@ -189,7 +207,7 @@ You can use Identity Provisioning to configure SAP HANA Cloud, SAP HANA Database
     </td>
     <td valign="top">
     
-    Enter the SAP HANA Cloud, SAP HANA Database API URL.
+    Enter the SAP HANA Cloud Database Services API URL.
 
     For example: `https://api.gateway.orchestration.<cluster>-<datacenter>.hanacloud.ondemand.com`
     
@@ -215,7 +233,7 @@ You can use Identity Provisioning to configure SAP HANA Cloud, SAP HANA Database
 
 5.  \(Optional\) Configure the transformations.
 
-    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP HANA Cloud, SAP HANA Database* source system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
+    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP HANA Cloud Database Services* source system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 

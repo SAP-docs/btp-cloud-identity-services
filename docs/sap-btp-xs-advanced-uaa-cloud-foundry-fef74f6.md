@@ -382,153 +382,158 @@ Create a separate proxy system for each global account, multi-environment subacc
     > ### Code Syntax:  
     > ```
     > {
-    >    "user": {
-    >       "mappings": [
-    >          {
-    >             "sourcePath": "$.id",
-    >             "targetPath": "$.id",
-    >             "targetVariable": "entityIdSourceSystem"
-    >          },
-    >          {
-    >             "sourcePath": "$.meta",
-    >             "targetPath": "$.meta",
-    >             "optional": true
-    >          },
-    >          {
-    >             "sourceVariable": "entityBaseLocation",
-    >             "targetPath": "$.meta.location",
-    >             "targetVariable": "entityLocationSourceSystem",
-    >             "functions": [
-    >                {
-    >                   "type": "concatString",
-    >                   "suffix": "${entityIdSourceSystem}"
-    >                }
-    >             ]
-    >          },
-    >          {
-    >             "sourcePath": "$.userName",
-    >             "targetPath": "$.userName",
-    >             "correlationAttribute": true
-    >          },
-    >          {
-    >             "sourcePath": "$.name",
-    >             "targetPath": "$.name",
-    >             "optional": true
-    >          },
-    >          {
-    >             "sourcePath": "$.emails",
-    >             "targetPath": "$.emails",
-    >             "preserveArrayWithSingleElement": true
-    >          },
-    >          {
-    >             "sourcePath": "$.emails[?(@.primary== true)].value",
-    >             "correlationAttribute": true
-    >          },
-    >          {
-    >             "sourcePath": "$.groups",
-    >             "targetPath": "$.groups",
-    >             "preserveArrayWithSingleElement": true,
-    >             "optional": true
-    >          },
-    >          {
-    >             "sourcePath": "$.phoneNumbers",
-    >             "targetPath": "$.phoneNumbers",
-    >             "preserveArrayWithSingleElement": true,
-    >             "optional": true
-    >          },
-    >          {
-    >             "sourcePath": "$.active",
-    >             "targetPath": "$.active",
-    >             "optional": true
-    >          },
-    >          {
-    >             "sourcePath": "$.externalId",
-    >             "targetPath": "$.externalId",
-    >             "optional": true
-    >          },
-    >          {
-    >             "sourcePath": "$.origin",
-    >             "targetPath": "$.origin",
-    >             "optional": true
-    >          },
-    >          {
-    >             "sourcePath": "$.zoneId",
-    >             "targetPath": "$.zoneId",
-    >             "optional": true
-    >          },
-    >          {
-    >             "sourcePath": "$.verified",
-    >             "targetPath": "$.verified",
-    >             "optional": true
-    >          },
-    >          {
-    >             "constant": "urn:ietf:params:scim:schemas:core:2.0:User",
-    >             "targetPath": "$.schemas[0]"
-    >          }
-    >       ],
-    >       "scimEntityEndpoint": "Users"
-    >    },
-    >    "group": {
-    >       "mappings": [
-    >          {
-    >             "sourcePath": "$.id",
-    >             "targetPath": "$.id",
-    >             "targetVariable": "entityIdSourceSystem"
-    >          },
-    >          {
-    >             "sourcePath": "$.meta",
-    >             "targetPath": "$.meta",
-    >             "optional": true
-    >          },
-    >          {
-    >             "sourceVariable": "entityBaseLocation",
-    >             "targetPath": "$.meta.location",
-    >             "targetVariable": "entityLocationSourceSystem",
-    >             "functions": [
-    >                {
-    >                   "function": "concatString",
-    >                   "suffix": "${entityIdSourceSystem}"
-    >                }
-    >             ]
-    >          },
-    >          {
-    >             "sourcePath": "$.displayName",
-    >             "targetPath": "$.displayName"
-    >          },
-    >          {
-    >             "sourcePath": "$.description",
-    >             "targetPath": "$.description",
-    >             "optional": true
-    >          },
-    >          {
-    >             "sourcePath": "$.members",
-    >             "targetPath": "$.members",
-    >             "preserveArrayWithSingleElement": true,
-    >             "optional": true
-    >          },
-    >          {
-    >             "sourcePath": "$.zoneId",
-    >             "targetPath": "$.zoneId"
-    >          },
-    >          {
-    >             "constant": [
-    >                "urn:ietf:params:scim:schemas:core:2.0:Group",
-    >                "urn:ietf:params:scim:schemas:extension:sap:2.0:Group"
-    >             ],
-    >             "targetPath": "$.schemas"
-    >          },
-    >          {
-    >             "constant": "authorization",
-    >             "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
-    >          },
-    >          {
-    >             "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
-    >             "optional": true,
-    >             "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
-    >          }
-    >       ],
-    >       "scimEntityEndpoint": "Groups"
-    >    }
+    >   "user": {
+    >     "mappings": [
+    >       {
+    >         "sourcePath": "$.id",
+    >         "targetPath": "$.id",
+    >         "targetVariable": "entityIdSourceSystem"
+    >       },
+    >       {
+    >         "sourcePath": "$.meta",
+    >         "targetPath": "$.meta",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourceVariable": "entityBaseLocation",
+    >         "targetPath": "$.meta.location",
+    >         "targetVariable": "entityLocationSourceSystem",
+    >         "functions": [
+    >           {
+    >             "type": "concatString",
+    >             "suffix": "${entityIdSourceSystem}"
+    >           }
+    >         ]
+    >       },
+    >       {
+    >         "sourcePath": "$.userName",
+    >         "targetPath": "$.userName",
+    >         "correlationAttribute": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.givenName",
+    >         "targetPath": "$.name.givenName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.familyName",
+    >         "targetPath": "$.name.familyName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.emails",
+    >         "targetPath": "$.emails",
+    >         "preserveArrayWithSingleElement": true
+    >       },
+    >       {
+    >         "sourcePath": "$.emails[?(@.primary== true)].value",
+    >         "correlationAttribute": true
+    >       },
+    >       {
+    >         "sourcePath": "$.groups",
+    >         "targetPath": "$.groups",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.phoneNumbers",
+    >         "targetPath": "$.phoneNumbers",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.active",
+    >         "targetPath": "$.active",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.externalId",
+    >         "targetPath": "$.externalId",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.origin",
+    >         "targetPath": "$.origin",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.zoneId",
+    >         "targetPath": "$.zoneId",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.verified",
+    >         "targetPath": "$.verified",
+    >         "optional": true
+    >       },
+    >       {
+    >         "constant": "urn:ietf:params:scim:schemas:core:2.0:User",
+    >         "targetPath": "$.schemas[0]"
+    >       }
+    >     ],
+    >     "scimEntityEndpoint": "Users"
+    >   },
+    >   "group": {
+    >     "mappings": [
+    >       {
+    >         "sourcePath": "$.id",
+    >         "targetPath": "$.id",
+    >         "targetVariable": "entityIdSourceSystem"
+    >       },
+    >       {
+    >         "sourcePath": "$.meta",
+    >         "targetPath": "$.meta",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourceVariable": "entityBaseLocation",
+    >         "targetPath": "$.meta.location",
+    >         "targetVariable": "entityLocationSourceSystem",
+    >         "functions": [
+    >           {
+    >             "function": "concatString",
+    >             "suffix": "${entityIdSourceSystem}"
+    >           }
+    >         ]
+    >       },
+    >       {
+    >         "sourcePath": "$.displayName",
+    >         "targetPath": "$.displayName"
+    >       },
+    >       {
+    >         "sourcePath": "$.description",
+    >         "targetPath": "$.description",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.members",
+    >         "targetPath": "$.members",
+    >         "preserveArrayWithSingleElement": true,
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.zoneId",
+    >         "targetPath": "$.zoneId"
+    >       },
+    >       {
+    >         "constant": [
+    >           "urn:ietf:params:scim:schemas:core:2.0:Group",
+    >           "urn:ietf:params:scim:schemas:extension:sap:2.0:Group"
+    >         ],
+    >         "targetPath": "$.schemas"
+    >       },
+    >       {
+    >         "constant": "authorization",
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['type']"
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:Group']['supportedOperations']"
+    >       }
+    >     ],
+    >     "scimEntityEndpoint": "Groups"
+    >   }
     > }
     > ```
 
@@ -556,9 +561,14 @@ Create a separate proxy system for each global account, multi-environment subacc
     >         "targetPath": "$.userName"
     >       },
     >       {
-    >         "sourcePath": "$.name",
-    >         "targetPath": "$.name",
-    >         "optional": true
+    >         "sourcePath":"$.name.givenName",
+    >         "targetPath":"$.name.givenName",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.name.familyName",
+    >         "targetPath":"$.name.familyName",
+    >         "optional":true
     >       },
     >       {
     >         "sourcePath": "$.emails",

@@ -285,9 +285,19 @@ You can use Identity Provisioning to configure SAP SuccessFactors Employee Centr
     >                 "correlationAttribute": true
     >             },
     >             {
-    >                 "sourcePath": "$.name",
-    >                 "targetPath": "$.name",
-    >                 "optional": true
+    >               "sourcePath": "$.name.givenName",
+    >               "targetPath": "$.name.givenName",
+    >               "optional": true
+    >             },
+    >             {
+    >               "sourcePath": "$.name.familyName",
+    >               "targetPath": "$.name.familyName",
+    >               "optional": true
+    >             },
+    >             {
+    >               "sourcePath": "$.name.middleName",
+    >               "targetPath": "$.name.middleName",
+    >               "optional": true
     >             },
     >             {
     >                 "sourcePath": "$.nickName",

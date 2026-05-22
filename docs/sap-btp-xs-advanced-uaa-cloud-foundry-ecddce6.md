@@ -298,9 +298,14 @@ Follow the steps below to create SAP BTP XS Advanced UAA as a target system to p
     >         "targetPath": "$.userName"
     >       },
     >       {
-    >         "sourcePath": "$.name",
-    >         "targetPath": "$.name",
-    >         "optional": true
+    >         "sourcePath":"$.name.givenName",
+    >         "targetPath":"$.name.givenName",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.name.familyName",
+    >         "targetPath":"$.name.familyName",
+    >         "optional":true
     >       },
     >       {
     >         "sourcePath": "$.active",

@@ -1,8 +1,8 @@
 <!-- loio37fd144f4d3c42da8baefa203bfaf1e4 -->
 
-# SAP HANA Cloud, SAP HANA Database
+# SAP HANA Cloud Database Services
 
-Follow this procedure to set up SAP HANA Cloud, SAP HANA Database as a proxy system.
+Follow this procedure to set up SAP HANA Cloud Database Services as a proxy system.
 
 
 
@@ -21,10 +21,21 @@ You have created a technical user for Identity Provisioning in the SAP HANA data
 
 SAP HANA Cloud allows you to consume the SAP HANA database from cloud applications running on SAP Business Technology Platform, as well as from applications running elsewhere using the standard SAP HANA clients. Every instance of SAP HANA Cloud has its own single SAP HANA Database.
 
-You can use the Identity Provisioning user interface \(UI\) to configure SAP HANA Cloud, SAP HANA Database as a proxy system in hybrid scenarios. For example, when SAP HANA Cloud, SAP HANA Database is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision users and roles to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users and user role assignments back to the SAP HANA Cloud, SAP HANA Database.
+You can use the Identity Provisioning user interface \(UI\) to configure SAP HANA Cloud Database Services as a proxy system in hybrid scenarios. For example, when SAP HANA Cloud Database Services is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision users and roles to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users and user role assignments back to the SAP HANA Cloud Database Services.
+
+The SAP HANA Cloud Database Services connector supports provisioning of entities to the following two database types:
+
+-   SAP HANA Database \(HDB\)
+
+-   SAP HANA Data Lake Relational Engine \(HDLRE / IQ Database\)
+
+
+You can define the target database type by setting the `hana.cloud.db.instance.type` property to either `hdb` or `hdlre`.
+
+For more information on the supported database types, see [SAP HANA Cloud, SAP HANA Database](https://help.sap.com/docs/hana-cloud-database?version=Latest) and [SAP HANA Cloud, Data Lake](https://help.sap.com/docs/SAP_HANA_DATA_LAKE?version=Latest).
 
 > ### Note:  
-> In SAP HANA Cloud, SAP HANA Database, groups correspond to roles.
+> In SAP HANA Cloud Database Services, groups correspond to roles.
 
 
 
@@ -83,7 +94,7 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP HAN
     -   [Access Identity Provisioning UI of Bundle Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/7ab5884ffbc44461a57622d2f633e57c.html "Access the Identity Provisioning UI when the service is bundled as part of an SAP cloud solution's license.") :arrow_upper_right:
     -   [Access Identity Provisioning UI of Standalone Tenants](https://help.sap.com/viewer/f48e822d6d484fa5ade7dda78b64d9f5/Cloud/en-US/61fd82ed48ab42b2bc74626926c1722c.html "Access the Identity Provisioning user interface as a standalone product.") :arrow_upper_right:
 
-5.  Add *SAP HANA Cloud, SAP HANA Database* as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
+5.  Add *SAP HANA Cloud Database Services* as a proxy system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
 6.  Choose the *Properties* tab to configure the connection settings for your system.
 
@@ -130,9 +141,16 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP HAN
     </td>
     <td valign="top">
     
-    Refers to the type of instance being configured or used within the SAP HANA Cloud.
+    Refers to the database type configured or used within SAP HANA Cloud.
 
-    Enter: *hdb*
+    The value can be set to:
+
+    -   **hdb** - SAP HANA Database
+
+    -   **hdlre** - SAP HANA Data Lake Relational Engine
+
+
+    Default value: **hdb**
     
     </td>
     </tr>
@@ -186,7 +204,7 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP HAN
     </td>
     <td valign="top">
     
-    \(Optional\) When specified, only those SAP HANA Cloud, SAP HANA Database users matching the filter expression will be read.
+    \(Optional\) When specified, only those SAP HANA Cloud Database Services users matching the filter expression will be read.
 
     Example: **name.familyName eq "Smith"**
     
@@ -200,7 +218,7 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP HAN
     </td>
     <td valign="top">
     
-    \(Optional\) When specified, only those SAP HANA Cloud, SAP HANA Database roles matching the filter expression will be read.
+    \(Optional\) When specified, only those SAP HANA Cloud Database Services roles matching the filter expression will be read.
 
     Example: **displayName eq "ProjectTeam1" or "Employees2020"**
     
@@ -268,7 +286,7 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP HAN
     </td>
     <td valign="top">
     
-    Enter the SAP HANA Cloud, SAP HANA Database API URL.
+    Enter the SAP HANA Cloud Database Services API URL.
 
     For example: `https://api.gateway.orchestration.<cluster>-<datacenter>.hanacloud.ondemand.com`
     
@@ -297,9 +315,9 @@ You can use the Identity Provisioning user interface \(UI\) to configure SAP HAN
 
 7.  Configure the transformations.
 
-    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP HANA Cloud, SAP HANA Database* proxy system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
+    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP HANA Cloud Database Services* proxy system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
-    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP HANA Cloud, SAP HANA Database system. For more information, see:
+    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP HANA Cloud Database Services system. For more information, see:
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md).
 

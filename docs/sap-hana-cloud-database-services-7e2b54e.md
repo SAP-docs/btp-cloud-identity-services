@@ -1,8 +1,8 @@
 <!-- loio7e2b54ec36344dc1983d5f8a6437b11b -->
 
-# SAP HANA Cloud, SAP HANA Database
+# SAP HANA Cloud Database Services
 
-Follow this procedure to set up SAP HANA Cloud, SAP HANA Database as a target system.
+Follow this procedure to set up SAP HANA Cloud Database Services as a target system.
 
 
 
@@ -18,23 +18,34 @@ You have created a technical user for Identity Provisioning in the SAP HANA data
 
 SAP HANA Cloud allows you to consume the SAP HANA database from cloud applications running on SAP Business Technology Platform, as well as from applications running elsewhere using the standard SAP HANA clients. Every instance of SAP HANA Cloud has its own single SAP HANA database.
 
-You can use the Identity Provisioning user interface \(UI\) to configure SAP HANA Cloud, SAP HANA Database as a target system where you can provision users and group members, that is, user assignments for a role.
+You can use the Identity Provisioning user interface \(UI\) to configure SAP HANA Cloud Database Services as a target system where you can provision users and group members, that is, user assignments for a role.
+
+The SAP HANA Cloud Database Services connector supports provisioning of entities to the following two database types:
+
+-   SAP HANA Database \(HDB\)
+
+-   SAP HANA Data Lake Relational Engine \(HDLRE / IQ Database\)
+
+
+You can define the target database type by setting the `hana.cloud.db.instance.type` property to either `hdb` or `hdlre`.
+
+For more information on the supported database types, see [SAP HANA Cloud, SAP HANA Database](https://help.sap.com/docs/hana-cloud-database?version=Latest) and [SAP HANA Cloud, Data Lake](https://help.sap.com/docs/SAP_HANA_DATA_LAKE?version=Latest).
 
 > ### Note:  
-> In SAP HANA Cloud, SAP HANA Database, groups correspond to roles.
+> In SAP HANA Cloud Database Services, groups correspond to roles.
 
 > ### Caution:  
-> Identity Provisioning cannot create or delete roles in SAP HANA Cloud, SAP HANA Database. It can only create, update, and delete user assignments for a role. Therefore, roles must be created in the SAP HANA Cloud, SAP HANA Database system before running a provisioning job. Additionally, groups in the source system and roles in the target system must have identical names.
+> Identity Provisioning cannot create or delete roles in SAP HANA Cloud Database Services. It can only create, update, and delete user assignments for a role. Therefore, roles must be created in the SAP HANA Cloud Database Services system before running a provisioning job. Additionally, groups in the source system and roles in the target system must have identical names.
 
 Review the expected behavior in the following scenarios:
 
--   If a new group is created in the source system \(for example, Identity Authentication\) and you run the provisioning job to SAP HANA Cloud, SAP HANA Database, the job will fail and no role will be created in the target system.
+-   If a new group is created in the source system \(for example, Identity Authentication\) and you run the provisioning job to SAP HANA Cloud Database Services, the job will fail and no role will be created in the target system.
 
--   If a group in the source system \(Identity Authentication\) and a role in the target system \(SAP HANA Cloud, SAP HANA Database\) exist, when running a provisioning job, the user group assignments from the source will be mapped to the user role assignments in the target, provided that the group and role names are identical.
+-   If a group in the source system \(Identity Authentication\) and a role in the target system \(SAP HANA Cloud Database Services\) exist, when running a provisioning job, the user group assignments from the source will be mapped to the user role assignments in the target, provided that the group and role names are identical.
 
-    If the names do not match, the job will fail, and no role assignments will be updated. You have the following options to handle these discrepancies: use the `valueMappings` expression to change the group names, as described in [Transformation Expressions](transformation-expressions-bb8537b.md), or dynamically assign users to groups in SAP HANA Cloud, SAP HANA Database, as described in [Enabling Group Assignment](Operation-Guide/enabling-group-assignment-0d80033.md).
+    If the names do not match, the job will fail, and no role assignments will be updated. You have the following options to handle these discrepancies: use the `valueMappings` expression to change the group names, as described in [Transformation Expressions](transformation-expressions-bb8537b.md), or dynamically assign users to groups in SAP HANA Cloud Database Services, as described in [Enabling Group Assignment](Operation-Guide/enabling-group-assignment-0d80033.md).
 
--   If a role exists in the target SAP HANA Cloud, SAP HANA Database system and you try to delete it, Identity Provisioning will only remove the existing user assignments for that role.
+-   If a role exists in the target SAP HANA Cloud Database Services system and you try to delete it, Identity Provisioning will only remove the existing user assignments for that role.
 
 
 
@@ -47,7 +58,7 @@ Review the expected behavior in the following scenarios:
 
 2.  Sign in to the administration console of SAP Cloud Identity Services and navigate to *Identity Provisioning* \> *Target Systems*.
 
-3.  Add *SAP HANA Cloud, SAP HANA Database* as a target system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
+3.  Add *SAP HANA Cloud Database Services* as a target system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
 4.  Choose the *Properties* tab to configure the connection settings for your system.
 
@@ -110,9 +121,16 @@ Review the expected behavior in the following scenarios:
     </td>
     <td valign="top">
     
-    Refers to the type of instance being configured or used within the SAP HANA Cloud.
+    Refers to the database type configured or used within SAP HANA Cloud.
 
-    The value is set to *hdb* at system creation.
+    The value can be set to:
+
+    -   **hdb** - SAP HANA Database
+
+    -   **hdlre** - SAP HANA Data Lake Relational Engine
+
+
+    Default value: **hdb**
     
     </td>
     </tr>
@@ -166,19 +184,19 @@ Review the expected behavior in the following scenarios:
     </td>
     <td valign="top">
     
-    \(Optional\) This property distinguishes SAP HANA Cloud, SAP HANA Database roles by specific prefix. It is an optional property which does not appear by default at system creation.
+    \(Optional\) This property distinguishes SAP HANA Cloud Database Services roles by specific prefix. It is an optional property which does not appear by default at system creation.
 
     Example value: `HANA_Cloud_DB_`
 
     You can use the example value or provide your own.
 
-    -   When **set in the source system**, the prefix will be prepended to the name of the roles that are read from the SAP HANA Cloud, SAP HANA Database source system and will be provisioned to the target system with the following name pattern: <code>HANA_Cloud_DB_<i class="varname">&lt;role_name&gt;</i></code>. This way SAP HANA Cloud, SAP HANA Database roles in the target system will be distinguished from roles provisioned from other applications.
+    -   When **set in the source system**, the prefix will be prepended to the name of the roles that are read from the SAP HANA Cloud Database Services source system and will be provisioned to the target system with the following name pattern: <code>HANA_Cloud_DB_<i class="varname">&lt;role_name&gt;</i></code>. This way SAP HANA Cloud Database Services roles in the target system will be distinguished from roles provisioned from other applications.
 
-        If the property is not set, the SAP HANA Cloud, SAP HANA Database roles will be read and provisioned to the target system with their actual names.
+        If the property is not set, the SAP HANA Cloud Database Services roles will be read and provisioned to the target system with their actual names.
 
-    -   When **set in the target system**, only roles containing the `HANA_Cloud_DB_` prefix in their role name will be provisioned to SAP HANA Cloud, SAP HANA Database. Roles without this prefix in the role name won't be provisioned.
+    -   When **set in the target system**, only roles containing the `HANA_Cloud_DB_` prefix in their role name will be provisioned to SAP HANA Cloud Database Services. Roles without this prefix in the role name won't be provisioned.
 
-        If the property is not set, all roles will be be provisioned to SAP HANA Cloud, SAP HANA Database.
+        If the property is not set, all roles will be be provisioned to SAP HANA Cloud Database Services.
 
 
 
@@ -273,7 +291,7 @@ Review the expected behavior in the following scenarios:
     </td>
     <td valign="top">
     
-    Enter the SAP HANA Cloud, SAP HANA Database API URL.
+    Enter the SAP HANA Cloud Database Services API URL.
 
     For example: `https://api.gateway.orchestration.<cluster>-<datacenter>.hanacloud.ondemand.com`
     
@@ -299,9 +317,9 @@ Review the expected behavior in the following scenarios:
 
 5.  Configure the transformations.
 
-    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP HANA Cloud, SAP HANA Database* target system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
+    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP HANA Cloud Database Services* target system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
-    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP HANA Cloud, SAP HANA Database system. For more information, see:
+    You can change the default transformation mapping rules to reflect your current setup of entities in your SAP HANA Cloud Database Services system. For more information, see:
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md).
 

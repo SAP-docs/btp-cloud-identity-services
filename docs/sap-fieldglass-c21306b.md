@@ -273,9 +273,19 @@ You can use SAP Fieldglass as a proxy connector to execute *hybrid* scenarios. T
     >         "correlationAttribute": true
     >       },
     >       {
-    >         "sourcePath": "$.name",
+    >         "sourcePath": "$.name.givenName",
     >         "optional": true,
-    >         "targetPath": "$.name"
+    >         "targetPath": "$.name.givenName"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.familyName",
+    >         "optional": true,
+    >         "targetPath": "$.name.familyName"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.formatted",
+    >         "optional": true,
+    >         "targetPath": "$.name.formatted"
     >       },
     >       {
     >         "sourcePath": "$.displayName",
@@ -457,8 +467,24 @@ You can use SAP Fieldglass as a proxy connector to execute *hybrid* scenarios. T
     >         "targetPath": "$.userName"
     >       },
     >       {
-    >         "sourcePath": "$.name",
-    >         "targetPath": "$.name",
+    >         "sourcePath": "$.name.givenName",
+    >         "optional": true,
+    >         "targetPath": "$.name.givenName"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.familyName",
+    >         "optional": true,
+    >         "targetPath": "$.name.familyName"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.formatted",
+    >         "optional": true,
+    >         "targetPath": "$.name.formatted"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.honorificPrefix",
+    >         "targetPath": "$.name.honorificPrefix",
+    >         "condition": "$.name.honorificPrefix IN ['Mr.', 'Mrs.', 'Ms.', 'Dr.']",
     >         "optional": true
     >       },
     >       {

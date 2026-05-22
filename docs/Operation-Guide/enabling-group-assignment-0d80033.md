@@ -42,7 +42,7 @@ When provisioning users from source to target systems, in addition to replicatin
 
     -   [SAP Field Service Management](../sap-field-service-management-570b984.md)
 
-    -   [SAP HANA Cloud, SAP HANA Database](../sap-hana-cloud-sap-hana-database-7e2b54e.md)
+    -   [SAP HANA Cloud Database Services](../sap-hana-cloud-database-services-7e2b54e.md)
 
     -   [SAP Integrated Business Planning](../sap-integrated-business-planning-5864dc2.md)
 

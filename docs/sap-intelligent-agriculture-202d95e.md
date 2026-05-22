@@ -413,9 +413,19 @@ You can use Identity Provisioning to configure SAP Intelligent Agriculture as a 
     >                 "targetPath": "$.userUuid"
     >             },
     >             {
-    >                 "sourcePath": "$.name",
+    >                 "sourcePath": "$.name.givenName",
     >                 "optional": true,
-    >                 "targetPath": "$.name"
+    >                 "targetPath": "$.name.givenName"
+    >             },
+    >             {
+    >                 "sourcePath": "$.name.middleName",
+    >                 "optional": true,
+    >                 "targetPath": "$.name.middleName"
+    >             },
+    >             {
+    >                 "sourcePath": "$.name.familyName",
+    >                 "optional": true,
+    >                 "targetPath": "$.name.familyName"
     >             },
     >             {
     >                 "sourcePath": "$.externalId",
@@ -525,9 +535,19 @@ You can use Identity Provisioning to configure SAP Intelligent Agriculture as a 
     >                 "targetPath": "$.userName"
     >             },
     >             {
-    >                 "sourcePath": "$.name",
-    >                 "targetPath": "$.name",
-    >                 "optional": true
+    >                 "sourcePath": "$.name.givenName",
+    >                 "optional": true,
+    >                 "targetPath": "$.name.givenName"
+    >             },
+    >             {
+    >                 "sourcePath": "$.name.middleName",
+    >                 "optional": true,
+    >                 "targetPath": "$.name.middleName"
+    >             },
+    >             {
+    >                 "sourcePath": "$.name.familyName",
+    >                 "optional": true,
+    >                 "targetPath": "$.name.familyName"
     >             },
     >             {
     >                 "sourcePath": "$.active",

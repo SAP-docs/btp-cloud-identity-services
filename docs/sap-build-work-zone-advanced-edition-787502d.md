@@ -442,9 +442,14 @@ These target systems consume SCIM 2.0 API provided by SAP Build Work Zone, advan
     >                 ]
     >             },
     >             {
-    >                 "sourcePath": "$.name",
-    >                 "targetPath": "$.name",
-    >                 "optional": true
+    >               "sourcePath":"$.name.givenName",
+    >               "targetPath":"$.name.givenName",
+    >               "optional":true
+    >             },
+    >             {
+    >               "sourcePath":"$.name.familyName",
+    >               "targetPath":"$.name.familyName",
+    >               "optional":true
     >             },
     >             {
     >                 "sourcePath": "$.displayName",

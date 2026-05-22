@@ -367,9 +367,19 @@ When using connector version 4 \(SCIM 2.0 based API\), only users of type Employ
     >         "correlationAttribute": true
     >       },
     >       {
-    >         "sourcePath": "$.name",
+    >         "sourcePath": "$.name.givenName",
     >         "optional": true,
-    >         "targetPath": "$.name"
+    >         "targetPath": "$.name.givenName"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.middleName",
+    >         "optional": true,
+    >         "targetPath": "$.name.middleName"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.familyName",
+    >         "optional": true,
+    >         "targetPath": "$.name.familyName"
     >       },
     >       {
     >         "sourcePath": "$.displayName",
@@ -506,9 +516,19 @@ When using connector version 4 \(SCIM 2.0 based API\), only users of type Employ
     >         "targetPath": "$.userName"
     >       },
     >       {
-    >         "sourcePath": "$.name",
+    >         "sourcePath": "$.name.givenName",
     >         "optional": true,
-    >         "targetPath": "$.name"
+    >         "targetPath": "$.name.givenName"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.middleName",
+    >         "optional": true,
+    >         "targetPath": "$.name.middleName"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.familyName",
+    >         "optional": true,
+    >         "targetPath": "$.name.familyName"
     >       },
     >       {
     >         "sourcePath": "$.active",
@@ -882,9 +902,24 @@ When using connector version 4 \(SCIM 2.0 based API\), only users of type Employ
     >         "targetPath": "$.externalId"
     >       },
     >       {
-    >         "sourcePath": "$.name",
+    >         "sourcePath": "$.name.givenName",
     >         "optional": true,
-    >         "targetPath": "$.name"
+    >         "targetPath": "$.name.givenName"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.middleName",
+    >         "optional": true,
+    >         "targetPath": "$.name.middleName"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.familyName",
+    >         "optional": true,
+    >         "targetPath": "$.name.familyName"
+    >       },
+    >       {
+    >         "sourcePath": "$.name.formatted",
+    >         "optional": true,
+    >         "targetPath": "$.name.formatted"
     >       },
     >       {
     >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",

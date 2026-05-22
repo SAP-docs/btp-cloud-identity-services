@@ -303,9 +303,14 @@ Follow the steps below to create SAP BTP XS Advanced UAA as a source system to r
     >         "correlationAttribute": true
     >       },
     >       {
-    >         "sourcePath": "$.name",
-    >         "targetPath": "$.name",
-    >         "optional": true
+    >         "sourcePath":"$.name.givenName",
+    >         "targetPath":"$.name.givenName",
+    >         "optional":true
+    >       },
+    >       {
+    >         "sourcePath":"$.name.familyName",
+    >         "targetPath":"$.name.familyName",
+    >         "optional":true
     >       },
     >       {
     >         "sourcePath": "$.emails",

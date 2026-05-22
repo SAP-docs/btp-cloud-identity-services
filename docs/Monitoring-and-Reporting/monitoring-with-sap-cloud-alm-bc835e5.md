@@ -183,6 +183,9 @@ If there is no authentication property configured, the value is empty.
 
 -   There is no authentication property configured.
 
+    > ### Note:  
+    > This requirement is not applicable to the Local Identity Directory, as it does not require configuration of an authentication property. Therefore, it should not be considered noncompliant.
+
 -   The system supports certificate authentication, but the value of the `Authentication` property is different from *ClientCertificateAuthentication* or the certificate is not configured.
 
 

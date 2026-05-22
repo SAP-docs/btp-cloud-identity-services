@@ -385,9 +385,14 @@ You can use Identity Provisioning to configure procurement data warehouse as a p
     >                 "targetPath": "$.preferredLanguage"
     >             },
     >             {
-    >                 "sourcePath": "$.name",
-    >                 "optional": true,
-    >                 "targetPath": "$.name"
+    >               "sourcePath": "$.name.givenName",
+    >               "targetPath": "$.name.givenName",
+    >               "optional": true
+    >             },
+    >             {
+    >               "sourcePath": "$.name.familyName",
+    >               "targetPath": "$.name.familyName",
+    >               "optional": true
     >             },
     >             {
     >                 "sourcePath": "$.active",

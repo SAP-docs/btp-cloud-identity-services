@@ -419,9 +419,14 @@ After fulfilling the prerequisites, follow the procedure below to create a proxy
     >                 "correlationAttribute": true
     >             },
     >             {
-    >                 "sourcePath": "$.name",
-    >                 "optional": true,
-    >                 "targetPath": "$.name"
+    >               "sourcePath":"$.name.givenName",
+    >               "targetPath":"$.name.givenName",
+    >               "optional":true
+    >             },
+    >             {
+    >               "sourcePath":"$.name.familyName",
+    >               "targetPath":"$.name.familyName",
+    >               "optional":true
     >             },
     >             {
     >                 "sourcePath": "$.userType",
@@ -642,9 +647,14 @@ After fulfilling the prerequisites, follow the procedure below to create a proxy
     >                 "optional": true
     >             },
     >             {
-    >                 "sourcePath": "$.name",
-    >                 "targetPath": "$.name",
-    >                 "optional": true
+    >               "sourcePath":"$.name.givenName",
+    >               "targetPath":"$.name.givenName",
+    >               "optional":true
+    >             },
+    >             {
+    >               "sourcePath":"$.name.familyName",
+    >               "targetPath":"$.name.familyName",
+    >               "optional":true
     >             },
     >             {
     >                 "sourcePath": "$.displayName",

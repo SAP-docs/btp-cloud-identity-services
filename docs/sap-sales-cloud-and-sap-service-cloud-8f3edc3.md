@@ -312,6 +312,7 @@ When using connector version 4 \(SCIM 2.0 based API\), only users of type `Emplo
     >       },
     >       {
     >         "sourcePath": "$.name.givenName",
+    >         "optional": true,
     >         "targetPath": "$.name.givenName"
     >       },
     >       {
@@ -321,6 +322,7 @@ When using connector version 4 \(SCIM 2.0 based API\), only users of type `Emplo
     >       },
     >       {
     >         "sourcePath": "$.name.familyName",
+    >         "optional": true,
     >         "targetPath": "$.name.familyName"
     >       },
     >       {

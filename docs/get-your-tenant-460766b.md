@@ -1,5 +1,7 @@
 <!-- loio460766b1b08d48a0b4adfb230c60a001 -->
 
+<link rel="stylesheet" type="text/css" href="css/sap-icons.css"/>
+
 # Get Your Tenant
 
 Get your SAP Cloud Identity Services tenant and become productive.
@@ -8,30 +10,39 @@ Get your SAP Cloud Identity Services tenant and become productive.
 
 <a name="loio460766b1b08d48a0b4adfb230c60a001__section_dvt_zsx_zyb"/>
 
-## Prerequisites
+## Check Your Tenant Availability
 
-Check if there is a tenant assigned to your customer ID by accessing the SAP Cloud Identity Services - Tenants application at [https://iamtenants.accounts.cloud.sap/](https://iamtenants.accounts.cloud.sap/). For more information, see [Viewing Assigned Tenants and Administrators](https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/en-US/f56e6f24e373404087d6a1a9a13515a2.html).
+Check whether you already have an assigned SAP Cloud Identity Services tenant or need to request one. Use one of the following tools to check your tenant availability:
 
--   If there is an existing tenant and you are among its administrators, skip this step and go to [Access Admin Console](access-admin-console-2609e81.md).
+-   SAP Cloud Identity Services - Tenants application:
 
--   If there is no existing tenant, follow the steps below to get one according to your needs.
+    Go to [https://iamtenants.accounts.cloud.sap/](https://iamtenants.accounts.cloud.sap/). For more information, see [Viewing Assigned Tenants and Administrators](https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/en-US/f56e6f24e373404087d6a1a9a13515a2.html).
 
+-   SAP for Me:
+
+    Check the Public Cloud Systems card. For more information, see [Public Cloud Systems Card](https://support.sap.com/content/s4m/help/systems/systems/cloud.html).
+
+
+Based on the result:
+
+-   If a tenant exists and you are one of its administrators, go to [Access Admin Console](access-admin-console-2609e81.md).
+
+-   If no tenant exists, follow the steps below to request one according to your needs.
+
+
+
+
+You receive an SAP Cloud Identity Services tenant either as part of a bundle with an SAP cloud solution or through a self-service request in SAP for Me or SAP BTP cockpit.
 
 
 
 <a name="loio460766b1b08d48a0b4adfb230c60a001__section_xww_2tx_zyb"/>
 
-## Context
+## Bundle with an SAP Cloud Solution
 
-An SAP Cloud Identity Services tenant is delivered to customers as part of a bundle with an SAP cloud solution or as part of a self-service request in SAP BTP cockpit.
+When you purchase an SAP cloud solution that bundles with SAP Cloud Identity Services, you are entitled to one productive and one test tenant. Depending on the specific cloud solution, SAP may provision only one productive tenant, only one test tenant, or both.
 
-
-
-### Bundle with an SAP Cloud Solution
-
-When you purchase an SAP cloud solution that bundles with SAP Cloud Identity Services, you are entitled to one productive and one test tenant. Depending on the specific cloud solution, SAP may provision only one productive tenant, only one test tenant, or both to your organization.
-
-If you already have a tenant and you purchase additional SAP cloud solutions, you will not get additional tenants. Your existing one will be reused. However, there are some special cases and exceptions to this rule. For example:
+If you already have a tenant and purchase additional SAP cloud solutions, you will not get additional tenants. Your existing one will be reused. However, there are some special cases and exceptions to this rule. For example:
 
 -   Your business operates in multiple regions, and your SAP cloud solutions are delivered across these regions. You can request additional SAP Cloud Identity Services tenants in the particular region where other SAP cloud solutions have been licensed.
 
@@ -50,7 +61,7 @@ Getting a bundled tenant is generally an automatic process that requires no cust
 There are cases where customer interaction is required. If multiple tenants are available for selection, for example when using SAP for Me, Boosters, SAP SuccessFactors Upgrade Center, or other tools, you will need to choose the most appropriate one.
 
 > ### Tip:  
-> If you have multiple SAP Cloud Identity Services tenants and are unsure which one to select, consider the following recommendations:
+> If you have multiple SAP Cloud Identity Services tenants and are unsure which one to select, consider these recommendations:
 > 
 > -   Default Tenant: A tenant marked as `Default` is typically the first one created for the customer. Many SAP applications automatically integrate with this tenant when provisioned. Choose it if these specifics matter to you. To check which tenant is your default one, refer to [View Assigned Tenants and Administrators](view-assigned-tenants-and-administrators-f56e6f2.md).
 > 
@@ -70,7 +81,117 @@ When tenants delivered as part of the bundling process are created, you get thei
 
 
 
-### Self-Service Request in SAP BTP Cockpit
+## Self-Service Request in SAP for Me
+
+To request a tenant of SAP Cloud Identity Services, you can use SAP for Me, the SAP's central customer portal for managing products, systems, and entitlements.
+
+In SAP for Me, there are two starting points for tenant provisioning: Portfolio & Products and Systems & Provisioning. Portfolio & Products serves as the commercial catalog and shows what you purchased, such as entitlements, licenses, and product roadmaps. Systems & Provisioning is the area where you view, request, activate, and manage your cloud tenants.
+
+
+
+## Get Tenant in SAP for Me \(Portfolio & Products\)
+
+Use this option to request a test or production tenant of SAP Cloud Identity Services for integration with SAP‑managed cloud ERP applications, Joule, and other supported solutions. The tenant is provisioned in your selected region and comes with SAP‑managed integration configurations.
+
+For more information, see [Provisioning and Identity and Access Management in SAP Managed Cloud ERP Applications](https://help.sap.com/docs/CROSS_PRODUCT_BUSINESS_SUITE/ced859289b25464c9c6a3a32c60a815a/36f019822fd04b34b66a90167f368daf.html).
+
+> ### Note:  
+> New tenants are created only if there are no existing tenants bound to the customer ID.
+
+1.  Log on to SAP for Me with your S-user ID and password and open the [Portfolio & Products](https://me.sap.com/portfolio) dashboard.
+
+2.  Go to the *My Product Packages* tab.
+
+3.  Select the *SAP Cloud Identity Services* tile.
+
+4.  Go to the *Applications* tab.
+
+5.  In the *SAP Cloud Identity Services* tile, choose *Start Provisioning*.
+
+    The *Create Solution* wizard is launched.
+
+6.  In the *General Information* section, provide the following data for the solution:
+
+    -   *Entitlement System*: Displays the system ID of SAP Cloud Identity.
+
+    -   *Name*: `<Name>`
+
+        > ### Caution:  
+        > You can't rename solutions after you create them.
+
+        > ### Note:  
+        > Names must meet these guidelines:
+        > 
+        > -   Limit names to 63 characters.
+        > -   Use only lowercase letters \(a-z\), numbers \(0-9\), hyphens \(-\), and periods \(.\).
+        > -   Start and end with a letter or number.
+        > -   Use a name that’s unique within the selected resource group.
+
+    -   *Path*: Use the *Value Help* \(<span class="SAP-icons-V5"></span>\) to select a path to a resource group.
+
+    -   *Business Type*: Select *Test* or *Production* from the dropdown menu.
+
+
+    Choose *Next Step*.
+
+7.  In the *Configure Parameters* section, select a region. Choose *Review*.
+
+8.  Review your entries and choose *Finish*.
+
+    Your provisioning request for the solution has started and its resources are being set up in the selected resource group. The provisioning process can take a few moments to complete.
+
+    The new solution resource will achieve the ready status when all tenants are successfully provisioned and integrations are fully established. To view the status of the generated resources, go to the *Resources* tab.
+
+
+After the SAP Cloud Identity tenant is provisioned, you can proceed with provisioning your SAP cloud applications. During this process, the newly provisioned SAP Cloud Identity tenant, associated with the application tenant, will be available for selection.
+
+
+
+## Get Tenant in SAP for Me \(Systems & Provisioning\)
+
+Use this option to request a test or production tenant of SAP Cloud Identity Services bundled with an SAP cloud solution. The tenant is provisioned in the same region as the bundled solution and preconfigured accordingly.
+
+There is no explicit option to request a tenant as part of this provisioning flow. When you provision your application, and no SAP Cloud Identity Services tenant is available for selection, a tenant is automatically created when you submit the provisioning request.
+
+In some situations, automatic tenant creation is not available. In these cases, you must first request a tenant manually in the SAP BTP cockpit, as described in the *Self‑Service Request in SAP BTP Cockpit* section below. After the tenant is created, return to SAP for Me and restart the provisioning process so the new tenant becomes available for selection. You can recognize this situation when the *Start Provisioning* button \(step 3 below\) is disabled.
+
+1.  Log on to SAP for Me with your S-user ID and password and open the [Systems & Provisioning](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Fme.sap.com%2Fsystemsprovisioning%2Fprovisioning) dashboard.
+
+2.  Go to the *Provisioning* tab.
+
+3.  Under *Systems to be Provisioned*, choose *Start Provisioning* for the SAP cloud solution you want to bundle with SAP Cloud Identity Services.
+
+4.  In the *Start New Provisioning Request* dialog, provide the following information:
+
+    1.  *Region*: The geographic location of the data center where the SAP cloud solution tenant will be deployed.
+
+        This option is not available for all applications. In some cases, the region may be system‑determined based on the contract.
+
+    2.  *Integration with SAP Cloud Identity Services*: Select either a test or production SAP Cloud Identity tenant.
+
+        By default, you can select either a productive or a test SAP Cloud Identity tenant, depending on the type of application tenant being provisioned. For some applications, you may also have the option to integrate a test application tenant with a productive SAP Cloud Identity tenant.
+
+        For more information, see [Onboard to SAP Cloud Identity Services](https://help.sap.com/docs/btp/btp-admin-guide/onboard-to-sap-cloud-identity-services).
+
+    3.  *Owner of SAP Cloud Identity Services*: Choose one of the following:
+
+        Own systems – SAP Cloud Identity tenants that belong to the same Customer ID as the SAP cloud solution being provisioned.
+
+        Shared systems – SAP Cloud Identity tenants that belong to a different Customer ID but are shared with your company.
+
+        For more information, see [KBA 2632518](https://me.sap.com/notes/2632518) and [Reuse SAP Cloud Identity Services Tenants for Different Customer IDs](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/reuse-sap-cloud-identity-services-tenants-for-different-customer-ids).
+
+
+5.  Choose *Submit*.
+
+
+
+
+For more information on getting started and the SAP for Me dashboards, see [SAP for Me Online Help](https://support.sap.com/content/s4m/help.html).
+
+
+
+## Self-Service Request in SAP BTP Cockpit
 
 Products delivered on SAP Business Technology Platform \(SAP BTP\) do not trigger automatic creation of SAP Cloud Identity Services productive and test tenant. You need to request the tenant in the SAP BTP cockpit.
 
@@ -82,18 +203,6 @@ This is true in most cases, but not for all SAP BTP applications, and depends on
 
 
 Additional tenants and trial tenants are also created through self-service request.
-
-
-
-### 
-
-> ### Note:  
-> Although bundled and self-requested tenants differ in the way you get them, from technical and functional perspective they have no differences.
-
-> ### Note:  
-> It will take some time until the tenant becomes accessible. If you try to access the tenant right after creating it, you will receive ***Error 404 Not Found***.
-
-For more information, see [Tenants](tenants-93160eb.md).
 
 
 
@@ -118,8 +227,8 @@ Get your productive and test tenant as part of a self-service request in SAP BTP
 
 2.  In the navigation area, choose *Entitlements*. You have two options:
 
-    -   if you see *default \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, skip steps 3 to 6, and go to step 7.
-    -   if you don't see *default \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, continue with step 3.
+    -   if you see *default \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, skip steps 4 to 6, and go to step 7.
+    -   if you don't see *default \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, continue with step 4.
 
     > ### Tip:  
     > -   If you use directories entitlement management in your global account, you must assign the *default \(Application\)* plan to the directory first, and after that to the subaccount. Once you assign the *default* plan to your directory, it will appear in your subaccount entitlements too. For more information, see [Configure Entitlements and Quotas for Directories](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/37f8871865114f44aebee3db6ac64b72.html).
@@ -196,8 +305,8 @@ To get additional tenant using SAP BTP multi-environment subaccount, proceed as 
 
 2.  In the navigation area, choose *Entitlements*. You have two options:
 
-    -   if you see *additional-tenant \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, skip steps 4 to 6, and go to step 7.
-    -   if you don't see *additional-tenant \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, continue with step 4.
+    -   if you see *additional-tenant \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, skip steps 3 to 6, and go to step 7.
+    -   if you don't see *additional-tenant \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, continue with step 3.
 
     > ### Tip:  
     > -   If you use directories entitlement management in your global account, you must assign the *additional-tenant \(Application\)* plan to the directory first, and after that to the subaccount. Once you assign the *additional-tenant* plan to your directory, it will appear in your subaccount entitlements too. For more information, see [Configure Entitlements and Quotas for Directories](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/37f8871865114f44aebee3db6ac64b72.html).
@@ -248,7 +357,7 @@ Go to your email inbox and activate your account. For more information, see .[Ac
 
 
 
-## Migrate Additional Tenant from Neo Subaccount to Multi-Environment Subaccount
+## Migrate Additional Tenant from Neo to Multi-Environment
 
 Migrate an additional tenant from a Neo Subaccount to a multi-environment subaccount as part of a self-service request in SAP BTP cockpit.
 
@@ -453,4 +562,18 @@ You can assign existing tenant to an SAP BTP subaccount via the default plan. Ac
     4.  Choose *Next*, review your configuration and choose *Create*.
 
 
+
+
+
+
+
+### 
+
+> ### Note:  
+> Although bundled and self-requested tenants differ in the way you get them, from technical and functional perspective they have no differences.
+
+> ### Note:  
+> It will take some time until the tenant becomes accessible. If you try to access the tenant right after creating it, you will receive ***Error 404 Not Found***.
+
+For more information, see [Tenants](tenants-93160eb.md).
 

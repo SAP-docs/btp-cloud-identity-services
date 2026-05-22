@@ -407,9 +407,39 @@ SCIM API 2.0 does not support managing of group assignments via the SCIM user re
     >                 "optional": true
     >             },
     >             {
-    >                 "sourcePath": "$.name",
-    >                 "targetPath": "$.name",
-    >                 "optional": true
+    >               "sourcePath": "$.displayName",
+    >               "optional":true,
+    >               "targetPath": "$.displayName"
+    >             },
+    >             {
+    >               "sourcePath": "$.name.givenName",
+    >               "optional":true,
+    >               "targetPath": "$.name.givenName"
+    >             },
+    >             {
+    >               "sourcePath": "$.name.familyName",
+    >               "optional":true,
+    >               "targetPath": "$.name.familyName"
+    >             },
+    >             {
+    >               "sourcePath": "$.name.formatted",
+    >               "optional":true,
+    >               "targetPath": "$.name.formatted"
+    >             },
+    >             {
+    >               "sourcePath": "$.name.honorificPrefix",
+    >               "optional":true,
+    >               "targetPath": "$.name.honorificPrefix"
+    >             },
+    >             {
+    >               "sourcePath": "$.name.honorificSuffix",
+    >               "optional":true,
+    >               "targetPath": "$.name.honorificSuffix"
+    >             },
+    >             {
+    >               "sourcePath": "$.name.middleName",
+    >               "optional":true,
+    >               "targetPath": "$.name.middleName"
     >             },
     >             {
     >                 "sourcePath": "$.externalId",

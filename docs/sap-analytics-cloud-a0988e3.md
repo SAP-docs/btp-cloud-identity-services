@@ -222,8 +222,19 @@ For more information on how to update to version 2, see [Update Connector Versio
     >                 "correlationAttribute": true
     >             },
     >             {
-    >                 "sourcePath": "$.name",
-    >                 "targetPath": "$.name"
+    >               "sourcePath": "$.name.givenName",
+    >               "targetPath": "$.name.givenName",
+    >               "optional": true
+    >             },
+    >             {
+    >               "sourcePath": "$.name.middleName",
+    >               "targetPath": "$.name.middleName",
+    >               "optional": true
+    >             },
+    >             {
+    >               "sourcePath": "$.name.familyName",
+    >               "targetPath": "$.name.familyName",
+    >               "optional": true
     >             },
     >             {
     >                 "sourcePath": "$.displayName",
@@ -345,9 +356,19 @@ For more information on how to update to version 2, see [Update Connector Versio
     >                 "correlationAttribute": true
     >             },
     >             {
-    >                 "sourcePath": "$.name",
-    >                 "targetPath": "$.name",
-    >                 "optional": true
+    >               "sourcePath": "$.name.givenName",
+    >               "targetPath": "$.name.givenName",
+    >               "optional": true
+    >             },
+    >             {
+    >               "sourcePath": "$.name.middleName",
+    >               "targetPath": "$.name.middleName",
+    >               "optional": true
+    >             },
+    >             {
+    >               "sourcePath": "$.name.familyName",
+    >               "targetPath": "$.name.familyName",
+    >               "optional": true
     >             },
     >             {
     >                 "sourcePath": "$.externalId",

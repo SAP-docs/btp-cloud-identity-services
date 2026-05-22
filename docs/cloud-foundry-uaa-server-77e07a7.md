@@ -267,8 +267,13 @@ Follow the steps below to create Cloud Foundry UAA as a source system to read us
     >         "correlationAttribute": true
     >       },
     >       {
-    >         "sourcePath": "$.name",
-    >         "targetPath": "$.name",
+    >         "sourcePath": "$.name.givenName",
+    >         "targetPath": "$.name.givenName",
+    >         "optional": true
+    >       },
+    >       {
+    >         "sourcePath": "$.name.familyName",
+    >         "targetPath": "$.name.familyName",
     >         "optional": true
     >       },
     >       {
