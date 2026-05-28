@@ -2,18 +2,25 @@
 
 # Single Logout Flows
 
-It's good practice to encourage users of your applications to log out at the end of their session. If malicious users can access user sessions, either by gaining access to artifacts such as cookies or by finding unattended clients, malicious users can impersonate the rightful owners of the sessions.
+Encourage users of your applications to log out at the end of their session. Malicious users can impersonate session owners if they gain access to session data \(such as cookies\) or find unattended clients.
 
-To counter this threat, ensure that your application takes part in single logout \(SLO\) flows. When users log out from your application, have your application notify Identity Authentication, which cleans up the user session and in turn, triggers logout on any identity providers and applications associated with the user session. Identity Authentication forwards users of your application to a URL.
+To counter this threat, ensure that your application participates in single logout \(SLO\) flows. When users log out from your application, your application notifies Identity Authentication. The service cleans up the user session and triggers logout on any identity providers and applications associated with the session. The service forwards users of your application to a URL.
 
-The service supports SAML 2.0 and OIDC logout flows. No matter which protocol your applications and identity providers use, the service forwards the logout requests to any corporate identity providers and applications associated with the user session.
+The service supports SAML 2.0 and OIDC logout flows. Regardless of which protocol your applications and identity providers use, the service forwards the logout requests to any corporate identity providers and applications associated with the user session.
 
 > ### Note:  
-> SLO terminate the sessions of all applications under the same domain as Identity Authentication \(`ondemand.com` and `cloud.sap`\) as well as under a custom domain configured for Identity Authentication. To have applications participate in SLO, ensure that the applications operate under these domains \(recommended\) or allow 3rd-party cookies.
+> SLO ends the sessions of all applications under the same domain as Identity Authentication \(`ondemand.com` and `cloud.sap`\) and under custom domains configured for the service. To have applications participate in SLO, ensure that the applications operate under these domains \(recommended\) or allow third-party cookies.
 
-If both channels are defined, only the front-channel logout is executed, and the back-channel is skipped.
+If you define both channels, the system executes both channels.
 
-The following figures illustrates logout scenario with multiple applications and a corporate identity provider:
+> ### Recommendation:  
+> Enabling both channels sends unnecessary messages over the network, since applications only need one logout message. Applications could return unexpected results when they receive a second logout request unless they were designed to handle such requests.
+> 
+> We recommend back-channel logout flows where possible, but applications must be designed to support them.
+> 
+> If you have to manually configure logout flows, check the documentation of your application to determine which logout flows it supports.
+
+The following figures illustrate a logout scenario with multiple applications and a corporate identity provider:
 
   
   

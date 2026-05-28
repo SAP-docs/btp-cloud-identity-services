@@ -42,6 +42,9 @@ With the JWT bearer flow you can use an `id_token` ID from an application which 
     For more information, see [API Authentication](api-authentication-9d200d5.md).
 
 
+> ### Note:  
+> You can't exchange external tokens in a public client.
+
 
 
 ## **Request**

@@ -37,6 +37,9 @@ With the Token Exchange flow you can exchange one token for another. For more in
     For more information, see [API Authentication](api-authentication-9d200d5.md).
 
 
+> ### Note:  
+> You can't exchange external tokens in a public client.
+
 
 
 ## **Request**
@@ -526,6 +529,8 @@ Request body
 
 
 > ### Example:  
+> Request to exchange an opaque access token for a new token set.
+> 
 > *Request*
 > 
 > ```
@@ -566,6 +571,8 @@ Request body
 > ```
 
 > ### Example:  
+> Request to exchange an `id_token` for an SAML2 bearer token.
+> 
 > *Request*
 > 
 > ```
@@ -594,22 +601,18 @@ Request body
 > ```
 
 > ### Example:  
+> Request to exchange an opaque `access_token` for an opaque SSO token using the SSO resource flow.
+> 
 > *Request*
 > 
 > ```
 > 
 > https://my-tenant.ondemand.com/oauth2/token?grant_type=urn:ietf:params:oauth:grant-type:token-exchange&
-> 
 > client_id=a30ca226sbc21-soc5-dcf6-7k8a6b9f24
-> 
 > client_secret=OWSu0/0sSUeUCG1LAYmSQ10Ut0yrfz&
-> 
 > subject_token=Zjk1YTI3YERzNGZlZmTlNzZjNzk4YTY2ZjdlZjYwacw&
-> 
-> subject_token_type=urn:ietf:params:oauth:token-type:accesstoken&
-> 
+> subject_token_type=urn:ietf:params:oauth:token-type:access_token&
 > requested_token_type=urn:ietf:params:oauth:token-type:acces_token&
-> 
 > resource=urn:sap:identity:sso
 > ```
 > 

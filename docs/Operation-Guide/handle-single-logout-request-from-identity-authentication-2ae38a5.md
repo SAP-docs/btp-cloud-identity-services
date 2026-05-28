@@ -24,5 +24,5 @@ When a user logs out from an application, the other applications that participat
 
 [RP-Initiated Logout \(Specification from OpenID Foundation\)](https://openid.net/specs/openid-connect-rpinitiated-1_0.html "Specification from OpenID Foundation")
 
-[Single Logout Flows](../Development/single-logout-flows-0584b5f.md "It's good practice to encourage users of your applications to log out at the end of their session. If malicious users can access user sessions, either by gaining access to artifacts such as cookies or by finding unattended clients, malicious users can impersonate the rightful owners of the sessions.")
+[Single Logout Flows](../Development/single-logout-flows-0584b5f.md "Encourage users of your applications to log out at the end of their session. Malicious users can impersonate session owners if they gain access to session data (such as cookies) or find unattended clients.")
 
