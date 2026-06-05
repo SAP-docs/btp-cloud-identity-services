@@ -6,8 +6,10 @@ With the JWT bearer flow you can use an `id_token` ID from an application which 
 
 
 
-> ### Note:  
-> The issuer of the external corporate identity provider must be configured as a corporate identity provider and set as a default identity provider or configured via Authentication Rules \(Conditional Authentication\) in the administration console for SAP Cloud Identity Services.
+> ### Restriction:  
+> Token exchange to external tokens is not supported for public clients and is intentionally restricted for security reasons.
+> 
+> If your use case requires external token exchange, use a **confidential client** instead.
 
 
 

@@ -37,8 +37,10 @@ With the Token Exchange flow you can exchange one token for another. For more in
     For more information, see [API Authentication](api-authentication-9d200d5.md).
 
 
-> ### Note:  
-> You can't exchange external tokens in a public client.
+> ### Restriction:  
+> Token exchange to external tokens is not supported for public clients and is intentionally restricted for security reasons.
+> 
+> If your use case requires external token exchange, use a **confidential client** instead.
 
 
 

@@ -61,7 +61,14 @@ Customers can integrate SAP Cloud Identity Services no matter whether the Concur
 
 Your approach to using SAP Cloud Identity Services for authenticating and managing users in SAP Concur solutions relies on knowing which components are automated and which ones require manual configuration.
 
-As of June 23, 2025, SAP Concur has automated its integration with Identity Authentication, enabling you to access the SAP Cloud Identity Services administration console within SAP Concur. This automation sets up the trust between Identity Authentication and SAP Concur. Once the trust is established, you can proceed with further configuration steps.
+As of June 23, 2025, SAP Concur has automated its integration with Identity Authentication, enabling you to access the SAP Cloud Identity Services administration console within SAP Concur. This automation sets up the trust between Identity Authentication and SAP Concur, including password migration.
 
-For more information, see [Overview](https://help.sap.com/docs/SAP_CONCUR/83c94f03f949423a8f76158375832747/1b9037b66caf1014a93a84cf28690f07.html?version=latest).
+For more information about the automated migration of user authentication and password policies from SAP Concur to SAP Cloud Identity Services, refer to [Process](https://help.sap.com/docs/SAP_CONCUR/83c94f03f949423a8f76158375832747/3e4fd835e6554ca3bd103ea578ab664b.html?version=Latest).
+
+For details on manual password migration, refer to [Configure Authentication Provider To Migrate User Passwords from SAP Concur to Identity Authentication](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/configure-authentication-provider-to-migrate-user-passwords-from-sap-fieldglass-to-identity-authentication?version=Cloud).
+
+**Related Information**  
+
+
+[Overview](https://help.sap.com/docs/SAP_CONCUR/83c94f03f949423a8f76158375832747/1b9037b66caf1014a93a84cf28690f07.html?version=Latest)
 

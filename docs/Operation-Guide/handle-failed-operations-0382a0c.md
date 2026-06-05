@@ -172,6 +172,12 @@ The retry is not supported.
 </tr>
 </table>
 
+For more information, see:
+
+[Rate and Burst Limits for SAP Build Work Zone, advanced edition](https://help.sap.com/docs/build-work-zone-advanced-edition/sap-build-work-zone-advanced-edition/user-and-user-list-provisioning-using-scim-api#rate-and-burst-limits)
+
+[Understanding Rate Limits of SAP Ariba SCIM API](https://help.sap.com/docs/ariba-apis/sap-ariba-scim-api-b3330550673e4208a0300f524f5b8104/getting-started-with-sap-ariba-scim-api#understanding-rate-limits-of-the-api)
+
 **Related Information**  
 
 
@@ -210,6 +216,4 @@ The retry is not supported.
 [Reset Identity Provisioning System](reset-identity-provisioning-system-0bc1e53.md "Resetting an Identity Provisioning system (source or target) deletes all Identity Provisioning operational data.")
 
 [List of Properties](../list-of-properties-d6f3577.md "On this page you can find all the available properties to use in the Identity Provisioning service. You can filter them by system type name, &quot;All Systems&quot;, by a word or only part of it.")
-
-[Rate and Burst Limits for SAP Build Work Zone, advanced edition](https://help.sap.com/docs/build-work-zone-advanced-edition/sap-build-work-zone-advanced-edition/user-and-user-list-provisioning-using-scim-api?q=SCIM%20API#rate-and-burst-limits)
 

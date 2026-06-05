@@ -14,7 +14,7 @@ In this authentication scenario, the Identity Provisioning Service uses the OAut
 
 -   The required Provided APIs are configured for the SAP Ariba Applications application.
 
--   A source, target, or proxy system for SAP Ariba Applications is created in Identity Provisioning.
+-   A source, target, or proxy system for SAP Ariba Applications is created in Identity Provisioning. For more information, see SAP Ariba Applications \([Source](../sap-ariba-applications-0ef1091.md), [Target](../sap-ariba-applications-47c8903.md), [Proxy](../sap-ariba-applications-f5466e6.md)\).
 
 
 

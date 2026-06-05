@@ -132,11 +132,11 @@ However, after a *Create* or *Update* operation is performed on the proxy system
 > ```
 
 > ### Example:  
-> **totalResults in Source and Proxy Scenarios**
+> **totalResults in Proxy Scenarios**
 > 
-> When reading entities from source or proxy systems, the value of `totalResults` in the response depends on whether the system API supports this parameter and whether conditions are applied to the query.
+> When reading entities from a proxy system, the `totalResults` value returned by the system depends on whether the system API provides a total count \(for example, SCIM-based connectors, SAP BTP Platform Members \(Cloud Foundry\), SAP BTP Java/HTML5 apps \(Neo\), SAP Application Server ABAP\) and whether a transformation condition is applied.
 > 
-> -   When the system API supports `totalResults` and no conditions are applied, the `totalResults` value is the total number of entities returned by the system API, regardless of the pagination parameters `startIndex` and `count`.
+> -   When the system API supports `totalResults` and no conditions are applied, the `totalResults` value is the full number of entities in the system, regardless of `startIndex` and `count`.
 > 
 >     Example: There are 1000 users in the proxy system.
 > 
@@ -147,28 +147,71 @@ However, after a *Create* or *Update* operation is performed on the proxy system
 >       "startIndex": 6,
 >       "itemsPerPage": 5,
 >       "totalResults": 1000,
->       "Resources": [/* List of user objects for users 6 through 10 */],
+>       "Resources": [/* Users 6 through 10 */],
 >       "schemas": ["urn:ietf:params:scim:api:messages:2.0:ListResponse"]
 >     }
 >     
 >     ```
 > 
-> -   When the system API does not support `totalResults` or, regardless of its support, conditions are applied to the query, `totalResults` does not reflect the total number of entities in the system. Instead, Identity Provisioning calculates `totalResults` as the sum of `startIndex` plus `count`, minus one.
+> -   When the system API does not support `totalResults` or an equivalent value, Identity Provisioning derives it as follows:
 > 
->     Example: There are 1000 users in the source system, and only 3 users match the condition.
+>     -   If it is not the last page: `totalResults` = `startIndex` + `count`
+>     -   If it is the last page: `totalResults` = exact number of read entities
+> 
+>     As a result, `totalResults` is only an estimate until the last page is reached.
+> 
+>     A SCIM client that reads all entities from an IPS SCIM Proxy system should use this logic:
 > 
 >     ```
->     Request: GET /Users?startIndex=6&count=5
->     Response:
->     {
->       "startIndex": 6,
->       "itemsPerPage": 5,
->       "totalResults": 10,
->       "Resources": [/* List of the 3 matched user objects */],
->       "schemas": ["urn:ietf:params:scim:api:messages:2.0:ListResponse"]
->     }
->     
+>     startIndex = 1
+>     count = N (where N must be between 1 and 100 inclusive; default: 25)
+>     do {
+>       page = readPage(startIndex, count)
+>       startIndex += page.itemsPerPage
+>     } while (startIndex <= page.totalResults)
 >     ```
+> 
+>     Example request:
+> 
+>     ```
+>     GET /Users?startIndex=<startIndex>&count=<count>
+>     ```
+> 
+>     Do not use `page.Resources.length` to detect the last page.
+> 
+>     `page.Resources` contains the entities returned for the requested page, unless a transformation condition filters some of them out.
+> 
+>     If a transformation condition is applied:
+> 
+>     -   `page.itemsPerPage` contains number of actually read entities, before the condition.
+>     -   `page.Resources` contains only entities that passed the condition, which could be between 0 and count.
+>     -   Pages may contain an empty `Resources` array even when `page.totalResults` is greater than 0 \(when no entity passes the specified condition\).
+> 
+>     Examples:
+> 
+>     -   The system does not provide `totalResults`, there are 150 users in the proxy system and the page size is 100.
+> 
+>         ```
+>         GET /Users?startIndex=1&count=100 -> page.totalResults == 101, page.Resources.size == 100
+>         GET /Users?startIndex=101&count=100 -> page.totalResults == 201, page.Resources.size == 50
+>         GET /Users?startIndex=201&count=100 -> page.totalResults == 150, page.Resources.size == 0
+>         ```
+> 
+>     -   The system provides `totalResults`, but there is no transformation condition. There are 150 users in the proxy system and the page size is 100.
+> 
+>         ```
+>         GET /Users?startIndex=1&count=100 -> page.totalResults == 150, page.Resources.size == 100
+>         GET /Users?startIndex=101&count=100 -> page.totalResults == 150, page.Resources.size == 50
+>         GET /Users?startIndex=201&count=100 -> page.totalResults == 150, page.Resources.size == 0
+>         ```
+> 
+>     -   The system provides `totalResults` with transformation condition that filters out each odd entity. There are 100 users in the proxy system and the page size is 50.
+> 
+>         ```
+>         GET /Users?startIndex=1&count=50 -> page.totalResults == 51, page.Resources.size == 25
+>         GET /Users?startIndex=51&count=50 -> page.totalResults == 101, page.Resources.size == 25
+>         GET /Users?startIndex=101&count=50 -> page.totalResults == 150, page.Resources.size == 0
+>         ```
 
 
 

@@ -17,6 +17,9 @@ It is important to clarify that even if an entity existed in the target system b
 
 Search among the most frequent causes for entity deletion by the Identity Provisioning and learn what should be checked to make sure that this is the situation you run into.
 
+> ### Recommendation:  
+> For troubleshooting purposes, set the `ips.trace.deleted.entity` property to `true` on the source system. This enables you to download a ZIP archive containing details of all entities deleted during a given job. For more information, see [List of Properties](../list-of-properties-d6f3577.md).
+
 
 
 <a name="loiod6acc19a031e403ca66f5d82b908c4c2__section_k4m_xjd_zdc"/>

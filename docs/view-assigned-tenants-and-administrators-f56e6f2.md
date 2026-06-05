@@ -2,7 +2,7 @@
 
 # View Assigned Tenants and Administrators
 
-View all SAP Cloud Identity Services tenants that are assigned to your customer ID.
+View all SAP Cloud Identity Services tenants that are assigned to your customer ID with the *iamtenants* application or the [Cloud Identity Services Administrators Card](https://support.sap.com/content/s4m/help/systems/systems/details/ias.html) on the [SAP for Me](https://me.sap.com/home) portal.
 
 
 
@@ -33,8 +33,8 @@ The default tenants, one test and productive tenant per customer, are provided r
 
 2.  Sign in with your *S-user*.
 
-    > ### Remember:  
-    > Not signing in with an *S-user* will return *HTTP Status 500 - Internal Server Error*.
+    > ### Restriction:  
+    > Not signing in with an *S-user* returns *HTTP Status 500 - Internal Server Error*.
 
     You can view the Identity Authentication and Identity Provisioning tenants that are assigned to your customer ID.
 

@@ -230,6 +230,8 @@ To configure a authentication provider, follow the steps below:
 
 [Configure Authentication Provider To Migrate User Passwords from SAP Fieldglass to Identity Authentication](configure-authentication-provider-to-migrate-user-passwords-from-sap-fieldglass-to-identi-b0c7ec8.md)
 
+[Configure Authentication Provider To Migrate User Passwords from SAP Concur to Identity Authentication](configure-authentication-provider-to-migrate-user-passwords-from-sap-concur-to-identity-a-4d71887.md)
+
 [SAP SuccessFactors Data Centers Mapping to Authentication URL](sap-successfactors-data-centers-mapping-to-authentication-url-f38bb6b.md)
 
 [Migrating Passwords from SAP SuccessFactors to Identity Authentication Service](https://help.sap.com/viewer/568fdf1f14f14fd089a3cd15194d19cc/latest/en-US/b25f3f36deed40ddb3aee14c6818df06.html)
