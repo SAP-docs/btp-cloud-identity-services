@@ -47,7 +47,7 @@ Customers can integrate SAP Cloud Identity Services no matter whether the Concur
         -   What is your customer number? You can find it on the SAP for Me portal. For help accessing the portal and locating your customer number, refer to [Access and Authorizations](https://support.sap.com/content/s4m/help/access.html) and [User Action Menu \(Profile\)](https://support.sap.com/content/s4m/help/features/profile.html).
 
 
-        For more information about creating an SAP for Me case, see this SAP Note: [1296527](https://me.sap.com/notes/1296527) - How to create a support case \(contact SAP Product Support\) - SAP for Me. Use the Component = BNS-CON-SSO.
+        For more information about creating an SAP for Me case, see this SAP Note: [1296527](https://me.sap.com/notes/1296527) - How to create a support case \(contact SAP Product Support\) - SAP for Me. Use the Component = CON-INT-SSO.
 
         For more information about creating an SAP Concur support case, see the *How to Navigate the SAP Concur Support Portal* section on the [SAP Concur Support](https://assets.concur.com/tech-pubs/SAP-Concur-Training-Library/GTM.htm) page for instructions on creating a support case. Use the Case Type = Single Sign On.
 

@@ -522,7 +522,10 @@ Activate your account for Cloud Identity Services.
 
 ### Related Information
 
-[**Blog Post**: SAP Cloud Identity Services offered as Trial Version](https://blogs.sap.com/2023/04/13/sap-cloud-identity-services-offered-as-trial-version/)
+-   [**Blog Post**: SAP Cloud Identity Services offered as Trial Version](https://blogs.sap.com/2023/04/13/sap-cloud-identity-services-offered-as-trial-version/)
+
+-   [Trial Accounts and Free Tier](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/046f127f2a614438b616ccfc575fdb16.html?locale=en-US&state=PRODUCTION&version=Cloud)
+
 
 
 

@@ -32,9 +32,21 @@ The *Primary Attribute* value can be chosen from three sources:
     > Identity Authentication does not check the `Employee Number` attribute for uniqueness. Be sure that the users receive unique employee numbers.
 
 -   *Corporate Identity Provider* - The user attribute provided by the corporate identity provider \(IdP\). You just enter the attribute name provided by the corporate IdP.
--   *Expression* - A static or dynamic value. It can be a user attribute coming from Identity Directory, or Corporate Identity Provider, or even a combination of all sources.
+-   *Expression* - A static or dynamic value. It can be a user attribute coming from:
+
+    -   Identity Directory
+    -   Corporate Identity Provider
+    -   a combination of the Identity Directory and Corporate Identity Provider
+    -   a custom single-value attribute defined in a custom schema.
+
+        > ### Caution:  
+        > Attributes of type complex and multi-value attributes are not supported when the source is a custom schema.
+
 
     The user is identified by setting an attribute with dynamic value in the following pattern: `<prefix> ${attribute_technical_name} <suffix>`.
+
+    > ### Note:  
+    > If the attribute comes from a custom schema, the pattern is: `<prefix> ${SchemaID.attribute_technical_name} <suffix>` . Attributes of type complex and multi-value attributes are not supported when the source is a custom schema.
 
     Expand the **Supported Attributes** table below to see the technical names of the attributes that can take dynamic values:
 

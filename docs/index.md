@@ -431,6 +431,7 @@
                 -   [Configure User Authorizations](Operation-Guide/configure-user-authorizations-424b64c.md)
                 -   [Configure Technical User Authorizations](Operation-Guide/configure-technical-user-authorizations-885320d.md)
                 -   [Configure Group Authorizations](Operation-Guide/configure-group-authorizations-7a09cad.md)
+                -   [Configure Policy Authorizations](Operation-Guide/configure-policy-authorizations-25573a1.md)
                 -   [Configure Application Authorizations](Operation-Guide/configure-application-authorizations-01cff18.md)
                 -   [Configure Provisioning Authorizations](Operation-Guide/configure-provisioning-authorizations-a8f8e31.md)
         -   [Managing Technical Users](Operation-Guide/managing-technical-users-fd1a636.md)

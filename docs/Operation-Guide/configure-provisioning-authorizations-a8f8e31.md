@@ -138,5 +138,7 @@ Upon logging in at either `https://<tenant ID>.accounts.ondemand.com/admin` or `
 
 [Configure Group Authorizations](configure-group-authorizations-7a09cad.md "Configure granular access and control over the groups in the administration console of SAP Cloud Identity Services.")
 
+[Configure Policy Authorizations](configure-policy-authorizations-25573a1.md "Configure granular access and control over the authorization policies in the administration console of SAP Cloud Identity Services.")
+
 [Configure Application Authorizations](configure-application-authorizations-01cff18.md "Configure granular access and control over the applications in the administration console of SAP Cloud Identity Services.")
 

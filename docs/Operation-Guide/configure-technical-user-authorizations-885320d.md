@@ -144,6 +144,8 @@ Administrators with assigned technical user authorizations can create and manage
 
 [Configure Group Authorizations](configure-group-authorizations-7a09cad.md "Configure granular access and control over the groups in the administration console of SAP Cloud Identity Services.")
 
+[Configure Policy Authorizations](configure-policy-authorizations-25573a1.md "Configure granular access and control over the authorization policies in the administration console of SAP Cloud Identity Services.")
+
 [Configure Application Authorizations](configure-application-authorizations-01cff18.md "Configure granular access and control over the applications in the administration console of SAP Cloud Identity Services.")
 
 [Configure Provisioning Authorizations](configure-provisioning-authorizations-a8f8e31.md "Configure granular access control for the Identity Provisioning systems and logs in the SAP Cloud Identity Services administration console.")
