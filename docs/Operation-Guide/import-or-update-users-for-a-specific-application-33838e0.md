@@ -532,7 +532,7 @@ No
 </td>
 <td valign="top">
 
- 
+The `name` attribute defined in the Group schema \(`urn:sap:cloud:scim:schemas:extension:custom:2.0:Group`\)
 
 </td>
 <td valign="top">

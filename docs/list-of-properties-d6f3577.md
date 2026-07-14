@@ -6414,8 +6414,8 @@ See also: [Extended Explanation of the \*user.roles.overwrite Properties](https:
 
 **Possible values:**
 
--   *true* – the current user roles will be deleted in the proxy system, and the user will be updated only with the roles provisioned by the service.
--   *false* – the current user roles will be preserved, and the new roles \(if any\) will be added for the relevant user in the proxy system.
+-   *true* – the current user roles will be deleted in the target or proxy system, and the user will be updated only with the roles provisioned by the service.
+-   *false* – the current user roles will be preserved, and the new roles \(if any\) will be added for the relevant user in the target or proxy system.
 
 Default value \(if the property is missing during system creation\): *true* 
 

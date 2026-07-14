@@ -31,37 +31,17 @@ The groups are sorted in alphabetical order of the display name.
 
     This operation opens a list of the groups in the tenant.
 
-3.  **Optional:** Type a `Group ID`, `Display Name`, or `Name` of a group in the search field to filter the list items.
+3.  Choose a group from the list on the left to view its details.
 
     > ### Tip:  
-    > Choose *Show Filter Bars* for advanced search. You must be assigned to a policy that allows reading applications to view the information for *Application Name*.
+    > Type a `Group ID`, `Display Name`, or `Name` of a group in the search field to filter the list items. Choose *Show Filter Bars* for advanced search. You must be assigned to a policy that allows reading applications to view the information for *Application Name*.
 
-4.  **Optional:** Choose a group from the list on the left to view its details.
+4.  **Optional:** Press the *Edit* button at the top-right corner of the screen.
 
-5.  **Optional:** Press the *Edit* button at the top-right corner of the screen.
+    1.  Edit the *Display name* or *Description* fields, or both.
 
-6.  Edit the *Display name* or *Description* fields if necessary, and choose *Next Step*.
+    2.  Save your changes.
 
-7.  Edit the list of applications. You can choose between one of the following three options:
-
-    -   \(if no application is selected\) Select an application from the list to create an application-specific group.
-    -   \(if an application is selected\) Deselect an application from the list. The group will be no longer application-specific.
-    -   \(if an application is selected\) Select another application from the list. The group will continue to be application-specific.
-
-8.  **Optional:** Choose a group type:
-
-    -   *userGroup*
-    -   *authorization*
-    -   *deepLinkActivationPermission*
-
-9.  **Optional:** Choose the supported operations for the group:
-
-    -   *readWrite*
-    -   *readOnly*
-    -   *userOnlyMembership*
-    -   *membership*
-
-10. Choose *Next Step* \> *Finish*.
 
 
 **Related Information**  

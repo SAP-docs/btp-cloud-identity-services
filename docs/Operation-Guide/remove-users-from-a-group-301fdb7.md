@@ -13,6 +13,13 @@ As a tenant administrator, you can remove one, more than one, or all users added
 
 
 
+## Context
+
+> ### Restriction:  
+> The removal of users is not possible for application-specific groups with `readOnly` supported operations.
+
+
+
 ## Procedure
 
 1.  Sign in to the administration console for SAP Cloud Identity Services.

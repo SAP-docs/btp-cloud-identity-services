@@ -96,6 +96,11 @@ Notes
 
 Required. Must be a valid URI.
 
+> ### Note:  
+> If you already have a corporate identity provider configuration with this issuer, configure your corporate identity provider to include an audience claim using the client ID, so the correct configuration can be identified. See also [3718653](https://me.sap.com/notes/3718653).
+
+
+
 </td>
 </tr>
 <tr>
@@ -295,7 +300,9 @@ Configure the corporate identity provider in the administration console for SAP 
     </td>
     <td valign="top">
     
-    Required. Unique URI-based *Name* of the corporate identity provider. The issuer is used by default.
+    Required. Enter a text string. Use a value that can serve as a URL parameter, such as a URI. These values don't need to be escaped.
+
+    There is no default value. If you load the discovery URL before you enter a name, the system uses the name you chose when you created this identity provider configuration. For more information, see [Create Corporate IdP in Administration Console](create-corporate-idp-in-administration-console-ae99ba9.md).
     
     </td>
     </tr>
@@ -343,7 +350,7 @@ Configure the corporate identity provider in the administration console for SAP 
     > If possible, choose `Private key JWT` or `Client assertion in body`.
 
     > ### Recommendation:  
-    > If you connect Microsoft EntraID, use `Client assertion in body` and configure the trust in EntraID. This configuration enables an automatic trust update, because EntraID fetches the keys for signature validation automatically.
+    > If you connect Microsoft EntraID, use `Client assertion in body` and configure the trust in EntraID. This configuration enables an automatic trust update, because EntraID fetches the keys for signature validation automatically. Use the read-only *JWT Issuer* and *JWT Audience* values displayed below to complete the certificate credential configuration in Entra ID.
 
 
     
@@ -369,10 +376,63 @@ Configure the corporate identity provider in the administration console for SAP 
     </td>
     <td valign="top">
     
-    The Client Secret of the application on the corporate identity provider side.
+    Required when *Client Authentication Method* is `Client secret in body` or `Client secret in authorization header`. The Client Secret of the application on the corporate identity provider side.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    Audience
+    
+    </td>
+    <td valign="top">
+    
+    Required when *Client Authentication Method* is `Private key JWT`. The audience value that SAP Cloud Identity Services includes in the `aud` claim of the JWT client assertion sent to the corporate identity provider. Choose the value that the corporate identity provider expects:
+
+    -   *Issuer \(default\)*: the audience is set to the issuer identifier of the corporate identity provider, as retrieved from its OpenID Connect discovery document.
+    -   *Token endpoint*: the audience is set to the token endpoint URL of the corporate identity provider.
+
+    Consult the documentation of your corporate identity provider to determine the correct value. For example, Microsoft Entra ID requires *Token endpoint*.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    JWT Subject
+    
+    </td>
+    <td valign="top">
+    
+    Required when *Client Authentication Method* is `Client assertion in body`. The subject of the JWT client assertion sent to the corporate identity provider. By default, the system pre-fills this field with the name of the corporate identity provider. If the name is not available, the display name is used.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    JWT Issuer
+    
+    </td>
+    <td valign="top">
+    
+    Read-only. Applies when *Client Authentication Method* is `Client assertion in body`. The issuer value that Identity Authentication includes in the JWT client assertion. Enter this value in the configuration of the corporate identity provider, for example when configuring certificate credentials in Microsoft Entra ID.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    JWT Audience
+    
+    </td>
+    <td valign="top">
+    
+    Read-only. Applies when *Client Authentication Method* is `Client assertion in body`. The audience value that Identity Authentication includes in the JWT client assertion. Enter this value in the configuration of the corporate identity provider.
 
     > ### Note:  
-    > Required when *Client Authentication Method* is `Client secret in body` or `Client secret in authorization header`. The Client Secret of the application on the corporate identity provider side.
+    > The JWT Issuer and JWT Audience values are always identical.
 
 
     
@@ -391,9 +451,9 @@ Configure the corporate identity provider in the administration console for SAP 
     -   [Disable ID Token Hints for Corporate Identity Providers](disable-id-token-hints-for-corporate-identity-providers-01171f7.md)
 
 
-7.  **Optional:** Populate the OpenID Connect issuer and endpoints under the *Endpoints* section.
+7.  **Optional:** View the OpenID Connect issuer and endpoints under the *Endpoints* section.
 
-    The *Endpoints* section is read-only.
+    The *Endpoints* section is read-only. The *Issuer* shown here is the issuer of the corporate identity provider retrieved from its metadata, not the Identity Authentication Issuer used in client assertions.
 
 8.  **Optional:** Add additional scopes if needed.
 

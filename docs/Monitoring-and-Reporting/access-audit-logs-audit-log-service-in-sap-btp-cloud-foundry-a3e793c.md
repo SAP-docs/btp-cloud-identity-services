@@ -10,7 +10,9 @@ Access the audit logs for changes in the personal data, successful, and failed a
 
 ## Prerequisites
 
-You have a subaccount in your global account in SAP BTP, Cloud Foundry. For more information, see [Create a Subaccount](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/05280a123d3044ae97457a25b3013918.html).
+-   You have a subaccount in your global account in SAP BTP, Cloud Foundry. For more information, see [Create a Subaccount](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/05280a123d3044ae97457a25b3013918.html).
+
+-   The subaccount region must map your Identity Authentication region.
 
 
 
@@ -24,7 +26,7 @@ You have a subaccount in your global account in SAP BTP, Cloud Foundry. For more
 > 
 > Information about the region, representing the data center in which the tenant is located is visible in the header of the administration console. For example, ****Cloud Identity Services* Europe \(Frankfurt / Amsterdam\)***. For more information about the regions, see [Regional Availability](../regional-availability-be600ca.md).
 
-The audit log entries in the Audit Log Service in SAP BTP, Cloud Foundry are retained for 90 days.
+The audit log entries in the Audit Log Service in SAP BTP, Cloud Foundry are retained for 90 days. For more information, see [Audit Log Retention for the Cloud Foundry Environment](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/adaefa64228e49ddbe40c15f63a4f74b.html?locale=en-US&state=PRODUCTION&version=Cloud).
 
 To view the audit logs, follow the procedures below:
 
@@ -62,6 +64,9 @@ To view the audit logs, follow the procedures below:
 ## Procedure
 
 1.  In the SAP BTP cockpit, navigate to the corresponding subaccount. For more information, see [Navigate in the Cockpit.](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/0874895f1f78459f9517da55a11ffebd.html)
+
+    > ### Caution:  
+    > The subaccount region must map your Identity Authentication region. Otherwise you'll get an error when you try to access the audit logs directly from the administration console.
 
 2.  Navigate to *Services* \> *Service Marketplace*, and select *Audit Log Viewer Service*.
 
@@ -191,7 +196,7 @@ To view the audit logs, follow the procedures below:
     
     Optional. If you provide it, a link to the *Audit Log Viewer* is added in the *Audit Service Configuration*, and you can access the audit logs directly from the administration console.
 
-    > ### Note:  
+    > ### Caution:  
     > The subaccount region must map your Identity Authentication region. Otherwise you'll get an error when you try to access the audit logs directly from the administration console.
 
 

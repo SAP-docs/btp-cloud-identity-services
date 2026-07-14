@@ -99,6 +99,18 @@ The authorized party identifies the client ID to which the ID token was issued.
 <tr>
 <td valign="top">
 
+`azp_app_tid`
+
+</td>
+<td valign="top">
+
+An SAP claim that identifies the tenant of the authorized party in app-to-app token exchange scenarios. In multitenant BTP environments, this claim represents the application tenant identifier of the consumer application that initiated the token exchange. The `app_tid` claim represents the provider application's tenant.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `email`
 
 </td>

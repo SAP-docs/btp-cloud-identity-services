@@ -15,7 +15,10 @@ You are assigned the *Manage Groups* and *Manage Users* roles. For more informat
 ## Context
 
 > ### Restriction:  
-> This document does not apply to groups of type *Authorization* and associated with an authorization policy. These groups are related to the authorization policies, and when you delete a policy, the respective group is also removed. For more information, see [Delete an Authorization Policy](delete-an-authorization-policy-3b78cc4.md).
+> This document does not apply to:
+> 
+> -   groups of type *Authorization* and groups associated with an authorization policy. These groups are related to the authorization policies, and when you delete a policy, the respective group is also removed. For more information, see [Delete an Authorization Policy](delete-an-authorization-policy-3b78cc4.md).
+> -   application-specific groups with supported operations: `readOnly`, `userOnlyMembership` and `membership`.
 
 The delete groups operation removes groups and unassigns all users from them.
 

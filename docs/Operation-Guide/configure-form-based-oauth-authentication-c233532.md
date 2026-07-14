@@ -12,7 +12,7 @@ In this authentication scenario, the Identity Provisioning Service uses the OAut
 
 -   SAP Ariba Applications configuration exists in SAP Cloud Identity Services.
 
--   The required Provided APIs are configured for the SAP Ariba Applications application.
+-   The required Provided APIs are configured for the SAP Ariba Applications application. For more information, see [Provide APIs for Consumption by Other Applications](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/provide-apis-for-consumption-by-other-applications?version=Cloud)
 
 -   A source, target, or proxy system for SAP Ariba Applications is created in Identity Provisioning. For more information, see SAP Ariba Applications \([Source](../sap-ariba-applications-0ef1091.md), [Target](../sap-ariba-applications-47c8903.md), [Proxy](../sap-ariba-applications-f5466e6.md)\).
 
@@ -27,7 +27,7 @@ For more information, see [Configure Secrets for API Authentication](https://hel
 
 Additional configuration in the Administration Console application requires establishing a dependency to the SAP Ariba Applications API. This is maintained under *Trust* \> *Application APIs* \> *Dependencies*, where the dependency name, the application, and the corresponding API are defined.
 
-For more information, see [Integrating Applications](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/integrating-applications?version=Cloud)[Configure Integration Between Applications](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/communicate-between-applications?version=Cloud).
+For more information, see [Integrating Applications](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/integrating-applications?version=Cloud) [Configure Integration Between Applications](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/communicate-between-applications?version=Cloud).
 
 The value provided for the *Dependency Name* is used to identify the API that the consumer application consumes.
 

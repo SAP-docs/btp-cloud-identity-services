@@ -456,7 +456,7 @@ Corporate Groups
 corporateGroups
 
 > ### Tip:  
-> The `companyGroups` and `corporateGroups` attributes support regular expressions. You can use expression to filter these attributes.
+> The `companyGroups` and `corporateGroups` attributes support regular expressions. You can use an expression to filter these attributes.
 
 
 
@@ -730,6 +730,94 @@ For example, you've defined the `mail` user attribute and at the same time the `
 
 
 
+### Concatenate User Attributes
+
+For both the SAML 2.0 and OpenID Connect applications, you can define attributes by concatenating up to five single-value attributes to create а combined attribute for your application. You can concatenate the attributes in the following pattern: `<prefix> ${<attribute_technical_name1>} <infix>${<attribute_technical_name5>}<suffix>`
+
+> ### Restriction:  
+> You can't concatenate:
+> 
+> -   single-value with multi-value attributes
+> -   multi-value with other multi-value attributes
+> -   the attributes: `companyGroups`, `applicationGroups`, `corporateGroups`
+> -   more than five attributes
+
+> ### Example:  
+> You want to define a custom work email for the employees at Company A from their first name, corporate number, and the company's domain. You have the following attributes for the user Dona Moore:
+> 
+> 
+> <table>
+> <tr>
+> <th valign="top">
+> 
+> Attribute
+> 
+> </th>
+> <th valign="top">
+> 
+> Value
+> 
+> </th>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> firstName
+> 
+> </td>
+> <td valign="top">
+> 
+> Dona
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> urn:sap:Corporate.numbervalue
+> 
+> </td>
+> <td valign="top">
+> 
+> 123456
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> customAttribute1
+> 
+> </td>
+> <td valign="top">
+> 
+> example.com
+> 
+> </td>
+> </tr>
+> </table>
+> 
+> You set `${firstName:function[lowercase]}_ ${urn:sap:Corporate.numbervalue}@${customAttribute1}` as value, and when Dona Moore logs on, the response returns `custom-mail` as a concatenated attribute.
+> 
+> ```
+> 
+> SAML 2.0
+> 
+> <Attribute Name="custom-mail">
+>                                 <AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>                                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"xsi:type="xs:string"
+>                                 >dona_123456@example.com</AttributeValue>
+> </Attribute>
+> 
+> OpenID Connect
+> 
+>   "custom-mail": "dona_123456@example.com"
+> 
+> 
+> ```
+
+
+
 ### Identity Federation
 
 -   *Identity Federation* not configured
@@ -997,7 +1085,7 @@ For example, you've defined the `mail` user attribute and at the same time the `
     > </tr>
     > </table>
     > 
-    > Michael Adams is assigned to the groups *ABC-Management*, *Development* , and *ABC-Everyone* in the corporate IdP. When he logs on to the corporate portal of the company, Identity Authentication sends just those `groups` coming from the corporate IdP, that matches *ABC-*, in the following way:
+    > Michael Adams is assigned to the groups *ABC-Management*, *Development* , and *ABC-Everyone* in the corporate IdP. When he logs on to the corporate portal of the company, Identity Authentication sends just those `groups` coming from the corporate IdP that matches *ABC-*, in the following way:
     > 
     > ```
     > 

@@ -128,7 +128,7 @@ string
 </td>
 <td valign="top">
 
-Used to identify the corresponding the client of the Identity Authentication application.
+Used to identify the corresponding client of the Identity Authentication application.
 
 </td>
 <td valign="top">
@@ -171,11 +171,16 @@ https://my-tenant.ondemand.com/.well-known/openid-configuration
   "id_token_signing_alg_values_supported" : [ "RS256" ],
   "scopes_supported" : [ "openid", "email", "profile", "offline_access" ],
   "token_endpoint_auth_methods_supported" : [ "tls_client_auth", "client_secret_basic", "client_secret_post", "private_key_jwt" ],
-  "claims_supported" : [ "sub", "iss", "exp", "iat", "nonce", "email", "email_verified", "given_name", "family_name", "zone_uuid", "user_uuid", "preferred_username", "name", "sid"],
+  "claims_supported" : [ "iss", "ias_iss", "iat", "exp", "auth_time", "sid", "jti", "nonce", "sub", "email", "email_verified", "given_name",
+        "middle_name", "family_name", "preferred_username", "name", "scim_id", "groups", "aud", "azp", "app_tid", "ias_apis", "at_hash",
+        "sap_id_type", "sap_gtid"],
   "code_challenge_methods_supported" : [ "plain", "S256" ],
   "tls_client_certificate_bound_access_tokens" : true,
   "frontchannel_logout_supported" : true,
-  "frontchannel_logout_session_supported" : true
+  "frontchannel_logout_session_supported" : true,
+  "backchannel_logout_supported": true,
+  "backchannel_logout_session_supported": true,
+  "authorization_response_iss_parameter_supported": true
 }
 ```
 
@@ -183,10 +188,19 @@ https://my-tenant.ondemand.com/.well-known/openid-configuration
 > The format of the `issuer` depends on the configuration in the administration console for SAP Cloud Identity Services. For more information, see [Tenant OpenID Connect \(OIDC\) Configurations](tenant-openid-connect-oidc-configurations-3d6abcc.md).
 
 > ### Restriction:  
-> If the `issuer` doesn't use HTTPS, then this tenant isn't OIDC compliant. Not using HTTPS can cause issues in integration scenarios. Changing the protocol on tenant level can also cause issues. You can change the protocol on the application level to make the issuer OIDC compliant for that application. Under the *OpenID Connect Configuration* of the application, set *Enforce Compliant OIDC Issuer*.
+> -   If the `issuer` doesn't use HTTPS, then this tenant isn't OIDC-compliant. Not using HTTPS can cause integration failures. Changing the protocol at the tenant level can also cause integration failures. You can change the protocol at the application level to make the issuer OIDC compliant for that application. In the *OpenID Connect Configuration* of the application, set *Enforce Compliant OIDC Issuer*.
+> 
+> -   If *Enforce Compliant OIDC Issuer* is enabled, you must provide one of the following parameter combinations in your discovery endpoint request:
+> 
+>     -   `client_id` and optional `app_tid`
+> 
+>     -   `appid`
+> 
+> 
+>     Without one of these parameter combinations, the discovery endpoint returns an issuer URL without the protocol, which causes OIDC validation to fail.
 
 > ### Remember:  
-> Identity Authentication supports only the assertion created by security token service \(STS\) model. For more information, see [OAuth Assertion Framework](https://datatracker.ietf.org/doc/html/rfc7521#section-3).
+> Identity Authentication supports only the assertion created by the security token service \(STS\) model. For more information, see [OAuth Assertion Framework](https://datatracker.ietf.org/doc/html/rfc7521#section-3).
 
 **Related Information**  
 

@@ -14,6 +14,8 @@ In addition to the core, the service also supports the following:
 
 -   [Front-Channel Logout](https://openid.net/specs/openid-connect-frontchannel-1_0.html)
 
+-   [OAuth 2.0 Dynamic Client Registration Protocol](https://datatracker.ietf.org/doc/html/rfc7591)
+
 
 Based on your scenario, choose one of the flows to see how to authorize access to your application:
 

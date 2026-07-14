@@ -21,7 +21,7 @@ View the audit logs for changes in the personal data, successful, and failed aut
 
 To view the audit logs, you should generate Client ID and Client Secret for audit logs in the administration console for SAP Cloud Identity Services first. After that you should obtain an access token, and then call the audit log retrieval API to access the data.
 
-The audit log entries in the Audit Log Service in SAP BTP, Neo are retained for 201 days.
+The audit log entries in the Audit Log Service in SAP BTP, Neo are retained for 201 days. For more information, see [Audit Log Retention API Usage for the Neo Environment](https://help.sap.com/docs/btp/sap-btp-neo-environment/audit-log-retention-api-usage-for-neo-environment?locale=en-US).
 
 To access the audit logs, follow the procedures below:
 

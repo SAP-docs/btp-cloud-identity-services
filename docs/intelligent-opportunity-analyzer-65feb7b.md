@@ -10,7 +10,7 @@ Follow this procedure to set up intelligent opportunity analyzer as а source sy
 
 ## Prerequisites
 
-You have created an instance and generated a service key for the *scim* service plan of *Intelligent Opportunity Analyzer*. For more information, see [Assigning the Entitlements for Intelligent Opportunity Analyzer to Your Subaccounts](https://help.sap.com/docs/categories/sap-ariba-category-management-configuration-guide/assigning-entitlement-for-intelligent-opportunity-analyzer?locale=en-US&version=2411).
+You have created an instance and generated a service key for the *scim* service plan of *Intelligent Opportunity Analyzer*. For more information, see [Assigning the Entitlements for Intelligent Opportunity Analyzer to Your Subaccounts](https://help.sap.com/docs/categories/sap-ariba-category-management-configuration-guide/assigning-entitlement-for-intelligent-opportunity-analyzer?version=Cloud).
 
 > ### Restriction:  
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.

@@ -32,11 +32,11 @@ You can enable users that are stored in SAP Cloud Identity Services to log on wi
 > 
 > Example link:
 > 
-> `https://myapplication.cfapps.eu20-001.hana.ondemand.com?idp=https://my_sci_tenant.accounts.ondemand.com`
+> `https://myapplication.cfapps.eu20-001.hana.ondemand.com?sap_idp=https://my_sci_tenant.accounts.ondemand.com`
 > 
 > Example with local value:
 > 
-> `https://myapplication.cfapps.eu20-001.hana.ondemand.com?idp=local`
+> `https://myapplication.cfapps.eu20-001.hana.ondemand.com?sap_idp=local`
 
 
 
@@ -59,7 +59,7 @@ If your application doesn't define rules to determine which identity provider a 
 > 
 > Example link:
 > 
-> `https://myapplication.cfapps.eu20-001.hana.ondemand.com?idp=https://corp_idp_2.mydomain.com`
+> `https://myapplication.cfapps.eu20-001.hana.ondemand.com?sap_idp=https://corp_idp_2.mydomain.com`
 
 
 
@@ -82,7 +82,7 @@ Your landscape has multiple levels of identity providers, perhaps through subsid
 > 
 > Example link:
 > 
-> `https://myapplication.cfapps.eu20-001.hana.ondemand.com?idp=https://scis_2.mydomain.com,corp_idp_alpha.mydomain.com`
+> `https://myapplication.cfapps.eu20-001.hana.ondemand.com?sap_idp=https://scis_2.mydomain.com,corp_idp_alpha.mydomain.com`
 
 
 

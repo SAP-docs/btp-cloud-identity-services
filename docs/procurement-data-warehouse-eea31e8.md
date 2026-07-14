@@ -2,7 +2,7 @@
 
 # Procurement Data Warehouse
 
-Follow this procedure to set up procurement data warehouse as a target system.
+Follow this procedure to set up Procurement Data Warehouse as a target system.
 
 
 
@@ -116,9 +116,9 @@ Follow this procedure to set up procurement data warehouse as a target system.
 
 ## Context
 
-The procurement data warehouse is a capability that feeds analytics information from SAP Ariba applications, including guided sourcing capability for SAP Ariba Sourcing, SAP Ariba Buying and Invoicing, and SAP Spend Control Tower, to the embedded SAP Analytics Cloud. It provides data transfer, storage, loading, and reporting, and it drives visualization through advanced analytics dashboards.
+The Procurement Data Warehouse is a capability that feeds analytics information from SAP Ariba applications, including guided sourcing capability for SAP Ariba Sourcing, SAP Ariba Buying and Invoicing, and SAP Spend Control Tower, to the embedded SAP Analytics Cloud. It provides data transfer, storage, loading, and reporting, and it drives visualization through advanced analytics dashboards.
 
-You can use Identity Provisioning to configure procurement data warehouse as a target system where you can provision users and groups. The target system consumes SCIM 2.0 API provided by procurement data warehouse.
+You can use Identity Provisioning to configure Procurement Data Warehouse as a target system where you can provision users and groups. The target system consumes SCIM 2.0 API provided by Procurement Data Warehouse.
 
 
 
@@ -180,7 +180,7 @@ You can use Identity Provisioning to configure procurement data warehouse as a t
     </td>
     <td valign="top">
     
-    Enter the SAP Analytics Cloud URL for your procurement data warehouse.
+    Enter the SAP Analytics Cloud URL for your Procurement Data Warehouse.
     
     </td>
     </tr>
@@ -216,7 +216,7 @@ You can use Identity Provisioning to configure procurement data warehouse as a t
     </td>
     <td valign="top">
     
-    Enter the OAuth client id, generated for your procurement data warehouse. \(see the **Prerequisites** section\)
+    Enter the OAuth client id, generated for your Procurement Data Warehouse. \(see the **Prerequisites** section\)
     
     </td>
     </tr>
@@ -228,7 +228,7 @@ You can use Identity Provisioning to configure procurement data warehouse as a t
     </td>
     <td valign="top">
     
-    Enter the URL of the access token provider service for your procurement data warehouse instance.
+    Enter the URL of the access token provider service for your Procurement Data Warehouse instance.
 
     This token URL is listed in the *OAuth Clients* section of the *App Integration* page.
     
@@ -266,15 +266,15 @@ You can use Identity Provisioning to configure procurement data warehouse as a t
     </td>
     <td valign="top">
     
-    This property distinguishes procurement data warehouse groups by specific prefix. It is an optional property which does not appear by default at system creation.
+    This property distinguishes Procurement Data Warehouse groups by specific prefix. It is an optional property which does not appear by default at system creation.
 
     Example value: `PDW_`
 
     You can use the example value or provide your own.
 
-    When **set in the target system**, only groups containing the `PDW_` prefix in their display name will be provisioned to procurement data warehouse. Groups without this prefix in the display name won't be provisioned.
+    When **set in the target system**, only groups containing the `PDW_` prefix in their display name will be provisioned to Procurement Data Warehouse. Groups without this prefix in the display name won't be provisioned.
 
-    If the property is not set, all groups will be be provisioned to procurement data warehouse.
+    If the property is not set, all groups will be provisioned to Procurement Data Warehouse.
     
     </td>
     </tr>
@@ -291,7 +291,7 @@ You can use Identity Provisioning to configure procurement data warehouse as a t
     If not specified, the default value is *false*.
 
     > ### Note:  
-    > SCIM bulk operations are not supported for provisioning groups to procurement data warehouse.
+    > SCIM bulk operations are not supported for provisioning groups to Procurement Data Warehouse.
 
 
     
@@ -310,7 +310,7 @@ You can use Identity Provisioning to configure procurement data warehouse as a t
     Default value: `20`
 
     > ### Note:  
-    > The value must not exceed the number of entities defined by the procurement data warehouse system as a SCIM service provider. Otherwise, the provisioning job will fail with HTTP response code 413 \(*Request Entity Too Large*\).
+    > The value must not exceed the number of entities defined by the Procurement Data Warehouse system as a SCIM service provider. Otherwise, the provisioning job will fail with HTTP response code 413 \(*Request Entity Too Large*\).
 
 
     
@@ -350,9 +350,9 @@ You can use Identity Provisioning to configure procurement data warehouse as a t
 
 5.  Configure the transformations.
 
-    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the procurement data warehouse target system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
+    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the Procurement Data Warehouse target system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
-    You can change the default transformation mapping rules to reflect your current setup of entities in your procurement data warehouse system. For more information, see: [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
+    You can change the default transformation mapping rules to reflect your current setup of entities in your Procurement Data Warehouse system. For more information, see: [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
     > ### Note:  
     > To access the Procurement Data Warehouse API documentation, contact theProcurement Data Warehouse technical support.
@@ -519,13 +519,13 @@ You can use Identity Provisioning to configure procurement data warehouse as a t
     > }
     > ```
 
-    If you try to provision groups that already exist in procurement data warehouse, your provisioning job may fail with: ‘*The group already exists on the target system and cannot be provisioned*’ error. This happens after a reset of the procurement data warehouse target system or if you create a new target system connected to an existing procurement data warehouse backend.
+    If you try to provision groups that already exist in Procurement Data Warehouse, your provisioning job may fail with: ‘*The group already exists on the target system and cannot be provisioned*’ error. This happens after a reset of the Procurement Data Warehouse target system or if you create a new target system connected to an existing Procurement Data Warehouse backend.
 
     To avoid this, you have the following options:
 
-    -   Delete the existing group in procurement data warehouse target system.
+    -   Delete the existing group in Procurement Data Warehouse target system.
 
-    -   Adapt the procurement data warehouse write transformation. Either ignore provisioning of groups or add temporary the *skipOperations* expression for creating groups.
+    -   Adapt the Procurement Data Warehouse write transformation. Either ignore provisioning of groups or add temporary the *skipOperations* expression for creating groups.
 
     -   Avoid provisioning of already existing groups.
 
@@ -533,11 +533,11 @@ You can use Identity Provisioning to configure procurement data warehouse as a t
 6.  Now, add a source system from which to read users and groups. Choose from: [Source Systems](source-systems-58033be.md)
 
     > ### Caution:  
-    > The **email** attribute is unique for procurement data warehouse but it might not be unique for other systems, such as *SAP SuccessFactors*. That's why, when you choose a source system, make sure that there are no users with duplicate e-mails. If there are such, then after the provisioning job all users with the same e-mail address will be created as a single user in procurement data warehouse.
+    > The **email** attribute is unique for Procurement Data Warehouse but it might not be unique for other systems, such as *SAP SuccessFactors*. That's why, when you choose a source system, make sure that there are no users with duplicate e-mails. If there are such, then after the provisioning job all users with the same e-mail address will be created as a single user in Procurement Data Warehouse.
     > 
     > To learn more, see *Guided Answers*: [Multiple Users from a Source System Are Created as One in the Target](https://ga.support.sap.com/dtp/viewer/#/tree/2065/actions/26547:29111:29114:27412:34942)
     > 
-    > To learn more about excluding users from procurement data warehouse target, see: [Exclude Users from Provisioning to Target Systems](https://ga.support.sap.com/dtp/viewer/#/tree/2065/actions/26547:29111:29114:27412:35953:55088)
+    > To learn more about excluding users from Procurement Data Warehouse target, see: [Exclude Users from Provisioning to Target Systems](https://ga.support.sap.com/dtp/viewer/#/tree/2065/actions/26547:29111:29114:27412:35953:55088)
 
 
 

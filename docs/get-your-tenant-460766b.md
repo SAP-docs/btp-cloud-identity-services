@@ -14,7 +14,7 @@ Get your SAP Cloud Identity Services tenant and become productive.
 
 Check whether you already have an assigned SAP Cloud Identity Services tenant or need to request one. Use one of the following tools to check your tenant availability:
 
--   SAP Cloud Identity Services - Tenants application:
+-   SAP Cloud Identity Services - Tenants \(*iamtenants*\) application:
 
     Go to [https://iamtenants.accounts.cloud.sap/](https://iamtenants.accounts.cloud.sap/). For more information, see [Viewing Assigned Tenants and Administrators](https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/en-US/f56e6f24e373404087d6a1a9a13515a2.html).
 

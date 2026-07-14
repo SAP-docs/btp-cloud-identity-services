@@ -194,7 +194,8 @@ You can
 <td valign="top">
 
 -   View the group details and group members.
--   Modify and delete the group.
+-   Edit the *Display Name* and *Description* of the group.
+-   Delete the group.
 
 
 
@@ -214,7 +215,8 @@ You can
 <td valign="top">
 
 -   View the group details and group members.
--   Modify and delete the group.
+-   Edit the *Display Name* and *Description* of the group.
+-   Delete the group.
 -   Add new entities - users, and groups, as group members.
 -   Remove entities - users, and groups, from the group members.
 
@@ -236,9 +238,9 @@ You can
 <td valign="top">
 
 -   View the group details and group members.
+-   Edit the *Display Name* and *Description* of the group.
 -   Add new entities - users, as group members.
 -   Remove the users from group members.
--   Modify and delete the group.
 
 
 
@@ -258,7 +260,7 @@ You can
 <td valign="top">
 
 -   View the group details and group members.
--   Modify and delete the group.
+-   Edit the *Display Name* and *Description* of the group.
 -   Add new entities - users, and groups, as group members.
 -   Remove entities - users, and groups, from the group members.
 

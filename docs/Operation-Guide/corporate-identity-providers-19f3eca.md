@@ -4,6 +4,8 @@
 
 Initially, Identity Authentication is set as the default identity provider for the applications. This section describes the scenarios in which Identity Authentication acts as a proxy to delegate the authentication to a corporate identity provider.
 
+A corporate identity provider is an enterprise-controlled service that verifies user identities and issues standards-based security tokens \(such as SAML or OpenID Connect tokens\) for single sign-on to corporate applications. It centralizes authentication and access policies \(such as MFA and conditional access\), manages trust with service providers, and can federate with other identity providers to provide a consistent, secure sign-in experience across the enterprise.
+
 
 
 ## Identity Provider Proxy Overview
@@ -25,7 +27,7 @@ A proxy relationship involves the following participants:
     A service provider hosts a service that users want to access. This service provider trusts the identity provider of the identity provider proxy.
 
 
-![](images/Proxy_Mode_Diagram_ae2a8aa.png)
+![Diagram showing trust relationships between Identity Provider, Service Provider, and Application components in IdP Proxy.](images/Proxy_Mode_Diagram_ae2a8aa.png)
 
 There's no direct trust relationship between the authenticating identity provider and the service provider that the user is trying to access.
 

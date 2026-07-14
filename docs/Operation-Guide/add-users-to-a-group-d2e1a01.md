@@ -38,13 +38,16 @@ As a tenant administrator, you can add one or more users created for a specific 
 
 4.  Press the *Add* button.
 
+    > ### Restriction:  
+    > The *Add* button is hidden for application-specific groups with `readOnly` supported operations.
+
 5.  Add users to the group. You have the following options:
 
     -   Select users from the list.
     -   Search for the users.
-        -   *starts with* - \(default/reccomended operator\) returns only users that start with the entered value.
+        -   *starts with* - \(default/recommended operator\) returns only users that start with the entered value.
 
-        -   *contains* - retuns all the users that contain the entered value. Using the *contains* operator may result in longer processing time.
+        -   *contains* - returns all the users that contain the entered value. Using the *contains* operator may result in longer processing time.
 
 
     > ### Note:  

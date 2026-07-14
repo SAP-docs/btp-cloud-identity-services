@@ -2,7 +2,7 @@
 
 # Procurement Data Warehouse
 
-Follow this procedure to set up procurement data warehouse as a proxy system.
+Follow this procedure to set up Procurement Data Warehouse as a proxy system.
 
 
 
@@ -116,9 +116,9 @@ Follow this procedure to set up procurement data warehouse as a proxy system.
 
 ## Context
 
-The procurement data warehouse is a capability that feeds analytics information from SAP Ariba applications, including guided sourcing capability for SAP Ariba Sourcing, SAP Ariba Buying and Invoicing, and SAP Spend Control Tower, to the embedded SAP Analytics Cloud. It provides data transfer, storage, loading, and reporting, and it drives visualization through advanced analytics dashboards.
+The Procurement Data Warehouse is a capability that feeds analytics information from SAP Ariba applications, including guided sourcing capability for SAP Ariba Sourcing, SAP Ariba Buying and Invoicing, and SAP Spend Control Tower, to the embedded SAP Analytics Cloud. It provides data transfer, storage, loading, and reporting, and it drives visualization through advanced analytics dashboards.
 
-You can use Identity Provisioning to configure procurement data warehouse as a proxy system in hybrid scenarios. For example, when procurement data warehouse is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision users and groups to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users and groups back to the procurement data warehouse.
+You can use Identity Provisioning to configure Procurement Data Warehouse as a proxy system in hybrid scenarios. For example, when Procurement Data Warehouse is exposed as a proxy system, you can connect it to an external identity management system, such as SAP Identity Management, without making a direct connection between both systems. You can provision users and groups to the external backend system, which can trigger CRUD \(create, read, update, delete\) operations on users and groups back to the Procurement Data Warehouse.
 
 > ### Note:  
 > The Identity Provisioning implementation of the Proxy System SCIM API \(based on the [SCIM Query](https://datatracker.ietf.org/doc/html/rfc7644#section-3.4.2)\) supports single entity and delta read filtering for users and groups. For more information, see [Query Parameters for Proxy System SCIM API](https://help.sap.com/docs/identity-provisioning/identity-provisioning/proxy-systems?version=Cloud#query-parameters-for-proxy-scim-api).
@@ -229,7 +229,7 @@ You can use Identity Provisioning to configure procurement data warehouse as a p
     </td>
     <td valign="top">
     
-    Enter the SAP Analytics Cloud URL for your procurement data warehouse.
+    Enter the SAP Analytics Cloud URL for your Procurement Data Warehouse.
     
     </td>
     </tr>
@@ -265,7 +265,7 @@ You can use Identity Provisioning to configure procurement data warehouse as a p
     </td>
     <td valign="top">
     
-    Enter the OAuth client id, generated for your procurement data warehouse. \(see the **Prerequisites** section\)
+    Enter the OAuth client id, generated for your Procurement Data Warehouse. \(see the **Prerequisites** section\)
     
     </td>
     </tr>
@@ -277,7 +277,7 @@ You can use Identity Provisioning to configure procurement data warehouse as a p
     </td>
     <td valign="top">
     
-    Enter the URL of the access token provider service for your procurement data warehouse instance. \(see the **Prerequisites** section\)
+    Enter the URL of the access token provider service for your Procurement Data Warehouse instance. \(see the **Prerequisites** section\)
     
     </td>
     </tr>
@@ -289,7 +289,7 @@ You can use Identity Provisioning to configure procurement data warehouse as a p
     </td>
     <td valign="top">
     
-    When specified, only those procurement data warehouse users matching the filter expression will be read. For example:
+    When specified, only those Procurement Data Warehouse users matching the filter expression will be read. For example:
 
     -   *userName eq "Julie Armstrong"*
 
@@ -308,9 +308,9 @@ You can use Identity Provisioning to configure procurement data warehouse as a p
 
 7.  Configure the transformations.
 
-    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *procurement data warehouse* proxy system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
+    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *Procurement Data Warehouse* proxy system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
-    You can change the default transformation mapping rules to reflect your current setup of entities in your procurement data warehouse. For more information, see:
+    You can change the default transformation mapping rules to reflect your current setup of entities in your Procurement Data Warehouse. For more information, see:
 
     [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
@@ -653,13 +653,13 @@ You can use Identity Provisioning to configure procurement data warehouse as a p
 
 9.  Run an initial load job.
 
-    If you try to provision groups that already exist in procurement data warehouse proxy system, your provisioning job may fail with: ‘*The group already exists on the target system and cannot be provisioned*’ error. This happens when you create a new proxy system and connect it to an existing procurement data warehouse backend.
+    If you try to provision groups that already exist in Procurement Data Warehouse proxy system, your provisioning job may fail with: ‘*The group already exists on the target system and cannot be provisioned*’ error. This happens when you create a new proxy system and connect it to an existing Procurement Data Warehouse backend.
 
     To avoid this, you have the following options:
 
-    -   Delete the existing group in procurement data warehouse proxy system.
+    -   Delete the existing group in Procurement Data Warehouse proxy system.
 
-    -   Adapt the procurement data warehouse write transformation. Either ignore provisioning of groups or add temporary the *skipOperations* expression for creating groups.
+    -   Adapt the Procurement Data Warehouse write transformation. Either ignore provisioning of groups or add temporary the *skipOperations* expression for creating groups.
 
     -   Avoid provisioning of already existing groups.
 

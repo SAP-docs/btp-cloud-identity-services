@@ -116,7 +116,7 @@ Follow this procedure to set up Procurement Data Warehouse as a source system.
 
 ## Context
 
-The procurement data warehouse is a capability that feeds analytics information from SAP Ariba applications, including guided sourcing capability for SAP Ariba Sourcing, SAP Ariba Buying and Invoicing, and SAP Spend Control Tower, to the embedded SAP Analytics Cloud. It provides data transfer, storage, loading, and reporting, and it drives visualization through advanced analytics dashboards.
+The Procurement Data Warehouse is a capability that feeds analytics information from SAP Ariba applications, including guided sourcing capability for SAP Ariba Sourcing, SAP Ariba Buying and Invoicing, and SAP Spend Control Tower, to the embedded SAP Analytics Cloud. It provides data transfer, storage, loading, and reporting, and it drives visualization through advanced analytics dashboards.
 
 You can use Identity Provisioning to configure procurement data warehouse as a source system where you can read users and groups and provision them to target systems of your choice for custom reporting. The source system consumes SCIM 2.0 API provided by procurement data warehouse.
 
@@ -281,9 +281,9 @@ You can use Identity Provisioning to configure procurement data warehouse as a s
 
 5.  Configure the transformations.
 
-    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *procurement data warehouse* source system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
+    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *Procurement Data Warehouse* source system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
-    You can change the default transformation mapping rules to reflect your current setup of entities in your procurement data warehouse system. For more information, see: [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
+    You can change the default transformation mapping rules to reflect your current setup of entities in your Procurement Data Warehouse system. For more information, see: [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md)
 
     > ### Note:  
     > To access the Procurement Data Warehouse API documentation, contact theProcurement Data Warehouse technical support.

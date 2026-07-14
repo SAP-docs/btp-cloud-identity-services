@@ -105,14 +105,8 @@ To create a new user group, proceed as follows:
 
         For more information about group types, refer to the *Application-Specific Groups Types* table in [Groups](../groups-d93be69.md).
 
-    3.  Choose the supported operations for the group:
-
-        -   *readWrite*
-        -   *readOnly*
-        -   *userOnlyMembership*
-        -   *membership*
-
-        For more information about supported operations, refer to the *Application-Specific Groups Supported Operations* table in [Groups](../groups-d93be69.md).
+        > ### Remember:  
+        > At the creation of the group, the *Supported Operations* field is set to `readWrite` and is read-only. For more information about supported operations, refer to the *Application-Specific Groups Supported Operations* table in [Groups](../groups-d93be69.md).
 
 
 6.  Choose *Next Step* \> *Finish*.

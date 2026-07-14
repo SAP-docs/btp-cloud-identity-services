@@ -548,5 +548,5 @@ The Identity Provisioning service manages the complete set of **business partner
 **Related Information**  
 
 
-[SAP S/4HANA Cloud Documentation](https://help.sap.com/viewer/9d794cbd48c648bc8a176e422772de7e/latest/en-US/7af7b8541486ed05e10000000a4450e5.html)
+[User Provisioning in SAP BTP ABAP environment](https://help.sap.com/docs/sap-btp-abap-environment/abap-environment/user-provisioning)
 
