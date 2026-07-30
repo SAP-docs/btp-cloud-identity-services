@@ -199,7 +199,7 @@ This is true in most cases, but not for all SAP BTP applications, and depends on
 
 -   If the application runs on SAP-managed subaccount, then the SAP Cloud Identity Services tenant is automatically provisioned with the application. In this case, the administrator of the customer doesn't have access to the SAP BTP subaccount.
 
--   If the application runs on customer-managed subaccount, then in most cases the administrator of the customer has to manually create SAP Cloud Identity Services tenant via SAP BTP cockpit. However, there are also exceptions, like SAP Cloud ALM \(application lifecycle management\), where SAP creates and provisions the Identity Authentication tenant.
+-   If the application runs on customer-managed subaccount, then in most cases the administrator of the customer has to manually create SAP Cloud Identity Services tenant via SAP BTP cockpit. However, there are also exceptions, like SAP Cloud ALM \(application lifecycle management\), where SAP creates and provisions the SAP Cloud Identity Services tenant.
 
 
 Additional tenants and trial tenants are also created through self-service request.
@@ -375,7 +375,7 @@ Migrate an additional tenant from a Neo Subaccount to a multi-environment subacc
 
 -   You have a global account in SAP BTP cockpit with a multi-environment subaccount.
 
--   You have an existing additional tenant on SAP BTP, Neo subaccount. The SAP BTP, Neo subaccount is on the same global account where multi-environment subaccount is.
+-   You have an existing additional tenant on SAP BTP, Neo subaccount.
 
 
 > ### Note:  
@@ -392,7 +392,7 @@ To migrate an additional tenant from a Neo subaccount to a multi-environment sub
 2.  In the navigation area, choose *Entitlements*. You have two options:
 
     -   If you see *additional-tenant \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, skip steps 3 to 6, and go to step 7.
-    -   If you don't see *additional-tenant \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, continue with step 4.
+    -   If you don't see *additional-tenant \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, continue with step 3.
 
     > ### Tip:  
     > -   If you use directories entitlement management in your global account, you must assign the *additional-tenant \(Application\)* plan to the directory first, and after that to the subaccount. Once you assign the *additional-tenant* plan to your directory, it will appear in your subaccount entitlements too. For more information, see [Configure Entitlements and Quotas for Directories](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/37f8871865114f44aebee3db6ac64b72.html).

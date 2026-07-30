@@ -4779,6 +4779,9 @@ For example:
 
 
 > ### Note:  
+> If this property is not configured, the default value is applied automatically. The value must be greater than *0* to ensure proper provisioning of group members.
+
+> ### Note:  
 > Regardless of the threshold number you define, when removing group members in SAP Concur, the maximum number of members which can be removed per one `PATCH` request is 1000.
 
 **System Role:**Target
@@ -5897,6 +5900,9 @@ For example:
 
 
 > ### Note:  
+> If this property is not configured, the default value is applied automatically. The value must be greater than *0* to ensure proper provisioning of group members.
+
+> ### Note:  
 > Regardless of the threshold number you define, when removing group members in SAP S/4HANA Cloud Public Edition, the maximum number of members which can be removed per one `PATCH` request is 50.
 
 **System Role:**Target
@@ -6901,6 +6907,9 @@ For example:
 
     As 800 \(the target count of the members\) is below the threshold number of 900, 1 `PUT` request with 800 group members will be sent to the SAP Integrated Business Planning target system to update the group.
 
+
+> ### Note:  
+> If this property is not configured, the default value is applied automatically. The value must be greater than *0* to ensure proper provisioning of group members.
 
 > ### Note:  
 > Regardless of the threshold number you define, when removing group members in SAP Integrated Business Planning, the maximum number of members which can be removed per one `PATCH` request is 50.
@@ -10329,6 +10338,9 @@ For example:
 
 
 > ### Note:  
+> If this property is not configured, the default value is applied automatically. The value must be greater than *0* to ensure proper provisioning of group members.
+
+> ### Note:  
 > Regardless of the threshold number you define, when removing group members in Identity Authentication, the maximum number of members which can be removed per one `PATCH` request is 50.
 
 **System Role:**Target
@@ -10377,6 +10389,9 @@ For example:
 
 
 > ### Note:  
+> If this property is not configured, the default value is applied automatically. The value must be greater than *0* to ensure proper provisioning of group members.
+
+> ### Note:  
 > Regardless of the threshold number you define, when removing group members in Local Identity Directory, the maximum number of members which can be removed per one `PATCH` request is 50.
 
 **System Role:** Target
@@ -10420,6 +10435,9 @@ For example:
 
     As 800 \(the target count of the members\) is below the threshold number of 900, 1 `PUT` request with 800 group members will be sent to the XSUAA target system to update the group.
 
+
+> ### Note:  
+> If this property is not configured, the default value is applied automatically. The value must be greater than *0* to ensure proper provisioning of group members.
 
 **System Role:** Target
 
@@ -11143,6 +11161,9 @@ Minimum value: *1*
 
 Maximum value: *50*
 
+> ### Note:  
+> If this property is not configured, the default value is applied automatically. The value must be greater than *0* to ensure proper provisioning of group members.
+
 **System Role:** Target
 
 </td>
@@ -11344,6 +11365,9 @@ For example:
 
     As 800 \(the target count of the members\) is below the threshold number of 900, 1 `PUT` request with 800 group members will be sent to the SAP Build Work Zone, standard edition target system to update the group.
 
+
+> ### Note:  
+> If this property is not configured, the default value is applied automatically. The value must be greater than *0* to ensure proper provisioning of group members.
 
 > ### Note:  
 > If the maximum value of *5000* is exceeded, the system will automatically use the default value.
@@ -11865,6 +11889,9 @@ For example:
 
 
 > ### Note:  
+> If this property is not configured, the default value is applied automatically. The value must be greater than *0* to ensure proper provisioning of group members.
+
+> ### Note:  
 > Regardless of the threshold number you define, when removing group members in SAP Commerce Cloud, the maximum number of members which can be removed per one `PATCH` request is 98.
 
 **System Role:**Target
@@ -12345,6 +12372,9 @@ For example:
     As 800 \(the target count of the members\) is below the threshold number of 900, 1 `PUT` request with 800 group members will be sent to the SAP SuccessFactors target system to update the group.
 
 
+> ### Note:  
+> If this property is not configured, the default value is applied automatically. The value must be greater than *0* to ensure proper provisioning of group members.
+
 **System Role:** Target
 
 </td>
@@ -12665,6 +12695,9 @@ For example:
 
 -   `PUT` request: If you have a group with 1 000 members and the threshold is not set or its value is above *1000*, one PUT request will be sent to SAP Sales Cloud and SAP Service Cloud. But if you set the threshold to 500, 2 PATCH requests will be sent instead, each adding 500 members.
 
+
+> ### Note:  
+> If this property is not configured, the default value is applied automatically. The value must be greater than *0* to ensure proper provisioning of group members.
 
 > ### Note:  
 > If the maximum value of *1000* is exceeded, the system will automatically use the default value.
@@ -13024,6 +13057,9 @@ For example:
 
     As 800 \(the target count of the members\) is below the threshold number of 900, 1 `PUT` request with 800 group members will be sent to the SAP Analytics Cloud target system to update the group.
 
+
+> ### Note:  
+> If this property is not configured, the default value is applied automatically. The value must be greater than *0* to ensure proper provisioning of group members.
 
 > ### Note:  
 > Regardless of the threshold number you define, when removing group members in SAP Analytics Cloud, the maximum number of members which can be removed per one `PATCH` request is 98.

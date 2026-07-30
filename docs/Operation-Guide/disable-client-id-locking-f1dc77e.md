@@ -13,7 +13,7 @@ By default the client ID locks for 60 minutes after five failed logon attempts.
 You can disable the automatic lock of the client ID via the administration console for SAP Cloud Identity Services. Use this option to disable the automatic lock in cases when the client ID has a limited scope and the client ID secret\(s\) are automatically generated.
 
 > ### Note:  
-> When you disable the *Client ID Lock* option for a client ID that is already locked, this resets the failed logon attempts counter but the client ID remains unlocked. If you want to unlock the client ID before the automatic unlock time of 60 minutes has passed you must unlock it manually. For more information, see [Unlock Client ID](unlock-client-id-665b9e0.md).
+> When you disable the *Client ID Lock* option for a client ID that is already locked, this resets the failed logon attempts counter but the client ID remains locked. If you want to unlock the client ID before the automatic unlock time of 60 minutes has passed you must unlock it manually. For more information, see [Unlock Client ID](unlock-client-id-665b9e0.md).
 
 "
 

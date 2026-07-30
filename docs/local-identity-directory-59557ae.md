@@ -106,6 +106,9 @@ To create Local Identity Directory as a target system, proceed as follows:
     -   Maximum value: *200 000*
 
 
+    > ### Note:  
+    > If this property is not configured, the default value is applied automatically. The value must be greater than *0* to ensure proper provisioning of group members.
+
 
     
     </td>

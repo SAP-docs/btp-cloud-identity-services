@@ -396,6 +396,9 @@ For more information on how to update to version *3*, see [Update SAP S/4HANA Cl
 
     Maximum value: *20000*
 
+    > ### Note:  
+    > If this property is not configured, the default value is applied automatically. The value must be greater than *0* to ensure proper provisioning of group members.
+
     For more information, see [List of Properties](list-of-properties-d6f3577.md).
 
     > ### Note:  
