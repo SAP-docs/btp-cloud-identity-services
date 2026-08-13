@@ -99,11 +99,11 @@ To create a new user group, proceed as follows:
 
     2.  Choose a group type:
 
-        -   *userGroup*
-        -   *authorization*
-        -   *deepLinkActivationPermission*
+        -   *userGroup* - A group of users who have something in common.
+        -   *authorization* - A group related to authorization of users, groups or applications.
+        -   *deepLinkActivationPermission* - A group of applications that support deep linking.
 
-        For more information about group types, refer to the *Application-Specific Groups Types* table in [Groups](../groups-d93be69.md).
+        For more information about the group, see [Groups](../groups-d93be69.md).
 
         > ### Remember:  
         > At the creation of the group, the *Supported Operations* field is set to `readWrite` and is read-only. For more information about supported operations, refer to the *Application-Specific Groups Supported Operations* table in [Groups](../groups-d93be69.md).

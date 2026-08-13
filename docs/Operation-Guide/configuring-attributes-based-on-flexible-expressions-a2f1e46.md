@@ -665,7 +665,7 @@ If you set `${customAttribute1}` as a value, the response returns the first cust
 > 
 > ```
 
-If you set `${companyGroups:regex[Admin]}` as a value, the response returns the groups, that contain "Admin" in the name:
+If you set `${companyGroups:regex[Admin]}` as a value, the response returns the groups, that contain "Admin" in the *Name* field \(and not *Display Name* for example\):
 
 > ### Example:  
 > ```

@@ -517,7 +517,8 @@ For more information on how to update to version 2, see [Update Connector Versio
     >         "constant": [
     >           "urn:sap:params:scim:schemas:extension:sac:2.0:user-custom-parameters",
     >           "urn:ietf:params:scim:schemas:core:2.0:User",
-    >           "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User"
+    >           "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User",
+    >           "urn:ietf:params:scim:schemas:extension:sap:2.0:User"
     >         ],
     >         "targetPath": "$.schemas"
     >       },
@@ -624,6 +625,11 @@ For more information on how to update to version 2, see [Update Connector Versio
     >             "type": "resolveEntityIds"
     >           }
     >         ]
+    >       },
+    >       {
+    >         "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >         "optional": true,
+    >         "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
     >       }
     >     ]
     >   },

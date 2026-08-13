@@ -2,7 +2,7 @@
 
 # Change or Reset Password via Profile Page
 
-You can change your current password or request a reset password email via your profile page.
+You, as an end-user, can change your current password or request a reset password email via your profile page.
 
 
 

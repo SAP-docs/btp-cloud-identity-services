@@ -37,6 +37,120 @@ Alternatively, if your provider application doesn't need to distinguish differen
 
 
 
+## Configuration Precedence
+
+When you configure both the consumer and provider applications, each application contributes specific OIDC and related configurations. The following table shows which application provides each configuration.
+
+**Configuration Source by Application**
+
+
+<table>
+<tr>
+<th valign="top">
+
+Configuration
+
+</th>
+<th valign="top">
+
+Application
+
+</th>
+<th valign="top">
+
+More Information
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Subject name identifier
+
+</td>
+<td valign="top">
+
+Provider
+
+</td>
+<td valign="top">
+
+[Configure the Subject Name Identifier Sent to the Application](../Operation-Guide/configure-the-subject-name-identifier-sent-to-the-application-1d020e3.md) 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Token attributes
+
+</td>
+<td valign="top">
+
+Provider
+
+</td>
+<td valign="top">
+
+[User Attributes](../Operation-Guide/user-attributes-ed2797d.md) 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Token format
+
+</td>
+<td valign="top">
+
+Provider
+
+</td>
+<td valign="top">
+
+[Token Policy Configuration for Applications](../Operation-Guide/token-policy-configuration-for-applications-c4ba52e.md) 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Token grant type
+
+</td>
+<td valign="top">
+
+Consumer
+
+</td>
+<td valign="top">
+
+[Token Policy Configuration for Applications](../Operation-Guide/token-policy-configuration-for-applications-c4ba52e.md) 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Token policy
+
+</td>
+<td valign="top">
+
+Consumer
+
+</td>
+<td valign="top">
+
+[Token Policy Configuration for Applications](../Operation-Guide/token-policy-configuration-for-applications-c4ba52e.md) 
+
+</td>
+</tr>
+</table>
+
+
+
 <a name="loio29e204da5b794c4683289ee0384ec781__section_myl_bc3_hdc"/>
 
 ## At Runtime

@@ -409,6 +409,11 @@ For more information on how to update to version 2, see [Update Connector Versio
     >                 "optional": true
     >             },
     >             {
+    >                 "sourcePath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']",
+    >                 "optional": true,
+    >                 "targetPath": "$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['userUuid']"
+    >             },
+    >             {
     >                 "sourcePath": "$.groups",
     >                 "targetPath": "$.groups",
     >                 "preserveArrayWithSingleElement": true,

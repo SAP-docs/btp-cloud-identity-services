@@ -8,6 +8,8 @@ Manage application configurations.
 
 > ### Note:  
 > The API is available on the SAP Business Accelerator Hub: [Application Configurations API](https://api.sap.com/api/SCI_Application_Directory/overview).
+> 
+> Note that the Application Configurations API may return a higher number of applications than those displayed in the administration console. Some applications are used for internal purposes and are not shown in the admin console.
 
 **Related Information**  
 

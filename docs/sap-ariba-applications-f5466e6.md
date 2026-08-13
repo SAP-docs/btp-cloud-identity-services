@@ -10,6 +10,9 @@ Follow this procedure to set up SAP Ariba Applications as a proxy system.
 
 ## Prerequisites
 
+> ### Note:  
+> This topic describes customer-managed configurations for the SAP Ariba Applications proxy system. For SAP-managed configurations, refer to the [SAP-Managed SAP Cloud Identity](sap-managed-sap-cloud-identity-6039a38.md) documentation.
+
 > ### Restriction:  
 > This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.
 

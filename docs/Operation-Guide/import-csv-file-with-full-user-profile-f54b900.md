@@ -233,6 +233,8 @@ Depending on your *Logon Alias* configuration in the administration console, you
 You can view all of the supported schemas attributes and their definitions in the administration console of Identity Authentication under schemas. For more information, see [Manage Custom Schemas via Administration Console](manage-custom-schemas-via-administration-console-d492d70.md).
 
 > ### Example:  
+> Sample CSV file:
+> 
 > > ### Sample Code:  
 > > ```
 > > emails[0].value,emails[0].primary,emails[0].type,name.familyName,name.givenName,name.middleName,name.formatted,name.honorificPrefix,name.honorificSuffix,userName,displayName,nickName,profileUrl,title,userType,active,addresses[0].type,addresses[0].streetAddress,addresses[0].locality,addresses[0].region,addresses[0].postalCode,addresses[0].country,addresses[0].formatted,addresses[0].primary,addresses[1].type,addresses[1].streetAddress,addresses[1].locality,addresses[1].region,addresses[1].postalCode,addresses[1].country,addresses[1].formatted,phoneNumbers[0].value,phoneNumbers[0].type,phoneNumbers[1].value,phoneNumbers[1].type,ims[0].value,ims[0].type,ims[1].value,ims[1].type,photos[0].value,photos[0].type,photos[1].value,photos[1].type,urn:ietf:params:scim:schemas:extension:enterprise:2.0:User:division,urn:ietf:params:scim:schemas:extension:enterprise:2.0:User:department,urn:ietf:params:scim:schemas:extension:sap:2.0:User:mailVerified,urn:ietf:params:scim:schemas:extension:sap:2.0:User:validFrom,urn:ietf:params:scim:schemas:extension:sap:2.0:User:validTo,urn:sap:cloud:scim:schemas:extension:custom:2.0:User:attributes[0].name,urn:sap:cloud:scim:schemas:extension:custom:2.0:User:attributes[0].value
