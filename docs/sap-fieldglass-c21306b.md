@@ -204,6 +204,27 @@ You can use SAP Fieldglass as a proxy connector to execute *hybrid* scenarios. T
     
     </td>
     </tr>
+    <tr>
+    <td valign="top">
+    
+    `fg.support.patch.operation` 
+    
+    </td>
+    <td valign="top">
+    
+    This property controls how modified users in the source system are updated in the target system.
+
+    -   If set to *true*, `PATCH` operations are used to update users in the target system.
+
+    -   If set to *false*, `PUT` operations are used to update users in the target system.
+
+
+    Default value: *false*
+
+    For more information, see: [List of Properties](list-of-properties-d6f3577.md)
+    
+    </td>
+    </tr>
     </table>
     
     To learn what additional properties are relevant to this system, see [List of Properties](list-of-properties-d6f3577.md). You can use the main search, or filter properties by the *Name* or *System Type* columns.

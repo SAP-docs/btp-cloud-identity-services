@@ -183,6 +183,27 @@ After fulfilling the prerequisites, follow the procedure below to add a target s
     <tr>
     <td valign="top">
     
+    `fg.support.patch.operation` 
+    
+    </td>
+    <td valign="top">
+    
+    This property controls how modified users in the source system are updated in the target system.
+
+    -   If set to *true*, `PATCH` operations are used to update users in the target system.
+
+    -   If set to *false*, `PUT` operations are used to update users in the target system.
+
+
+    Default value: *false*
+
+    For more information, see: [List of Properties](list-of-properties-d6f3577.md)
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     \(Optional\) `ips.delete.threshold.groups`
     
     </td>

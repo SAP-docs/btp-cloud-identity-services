@@ -213,6 +213,380 @@ All HTTP systems
 <tr>
 <td valign="top">
 
+`ips.proxy.scim.total.results.strategy` 
+
+</td>
+<td valign="top">
+
+This property determines how totalResults is reported in the SCIM proxy response. For the supported values and their behavior, see the table below.
+
+**Possible values:** 
+
+-   Provided
+-   Calculated \(Default\)
+
+
+<table>
+<tr>
+<th valign="top">
+
+totalResults support
+
+</th>
+<th valign="top">
+
+Conditions Applied
+
+</th>
+<th valign="top">
+
+`ips.proxy.scim.total.results.strategy` 
+
+</th>
+<th valign="top">
+
+Value
+
+</th>
+</tr>
+<tr>
+<td valign="top">
+
+Supported
+
+</td>
+<td valign="top">
+
+No
+
+</td>
+<td valign="top">
+
+Any
+
+</td>
+<td valign="top">
+
+Provided
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Supported
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+<td valign="top">
+
+Provided
+
+</td>
+<td valign="top">
+
+Provided
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Supported
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+<td valign="top">
+
+Calculated
+
+</td>
+<td valign="top">
+
+Calculated
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Not supported
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+<td valign="top">
+
+Provided
+
+</td>
+<td valign="top">
+
+Calculated
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Not supported
+
+</td>
+<td valign="top">
+
+Yes
+
+</td>
+<td valign="top">
+
+Calculated
+
+</td>
+<td valign="top">
+
+Calculated
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Not supported
+
+</td>
+<td valign="top">
+
+Any other
+
+</td>
+<td valign="top">
+
+Any
+
+</td>
+<td valign="top">
+
+Calculated
+
+</td>
+</tr>
+</table>
+
+**System Role:** Proxy
+
+</td>
+<td valign="top">
+
+All systems
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`convc.user.filter` 
+
+</td>
+<td valign="top">
+
+When specified, only those SAP Convergent Charging users matching the filter expression will be read.
+
+Supported operators: `eq` \(equal\)
+
+**Possible values:**
+
+For example: *userName eq "Julie Armstrong"*
+
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP Convergent Charging
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`convc.group.filter` 
+
+</td>
+<td valign="top">
+
+When specified, only those SAP Convergent Charging groups matching the filter expression will be read.
+
+Supported operators: `eq` \(equal\)
+
+**Possible values:**
+
+For example: *displayName eq "Administrators"*
+
+**System Role:** Source, Proxy
+
+</td>
+<td valign="top">
+
+SAP Convergent Charging
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`convc.support.patch.operation` 
+
+</td>
+<td valign="top">
+
+This property controls how modified users in the source system are updated in the target system.
+
+-   If set to *true*, `PATCH` operations are used to update users in the target system. This means, for example, that if a user attribute is modified, only this change will be provisioned and applied in the target system.
+
+-   If set to *false*, `PUT` operations are used to update users in the target system. This means, for example, that if a user attribute is modified, all user attributes are replaced in the target system, instead of updating only the modified ones.
+
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false* 
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Convergent Charging
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`convc.user.unique.attribute` 
+
+</td>
+<td valign="top">
+
+If Identity Provisioning tries to provision a user that already exists in the SAP Convergent Charging target system \(a conflicting user\), this property defines the unique attributes by which the existing user will be searched and resolved.
+
+This property does not appear in the UI during system creation. Its default value is *userName*. That means, if the service finds an existing user by a *userName*, it updates this user with the data of the conflicting one. If a user with such а *userName* is not found, the creation of the conflicting user fails.
+
+Possible values: *userName*
+
+Default value: *userName*
+
+**System Role:** Target
+
+</td>
+<td valign="top">
+
+SAP Convergent Charging
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`convc.group.unique.attribute` 
+
+</td>
+<td valign="top">
+
+If the Identity Provisioning tries to create a group that already exists on the SAP Convergent Charging target system, the creation will fail. In this case, the existing group only needs to be updated. This group can be found via search, based on an attribute \(default or specific\). To make the search filter by a specific attribute, specify this attribute as a value for this property.
+
+Default value: *displayName*
+
+If the property is not specified, the search is done by the default attribute: *displayName*
+
+**System Role:** Target
+
+</td>
+<td valign="top">
+
+SAP Convergent Charging
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`convc.group.prefix` 
+
+</td>
+<td valign="top">
+
+This property distinguishes SAP Convergent Charging groups by specific prefix. It is an optional property which does not appear by default at system creation.
+
+Example value: `CONVC_`
+
+You can use the example value or provide your own.
+
+-   When **set in the source system**, the prefix will be prepended to the name of the groups that are read from the SAP Convergent Charging source system and will be provisioned to the target system with the following name pattern: <code>CONVC_<i class="varname">&lt;GroupDisplayName&gt;</i></code>. This way SAP Convergent Charging groups in the target system will be distinguished from groups provisioned from other applications.
+
+    If the property is not set, the SAP Convergent Charging groups will be read and provisioned to the target system with their actual display names.
+
+-   When **set in the target system**, only groups containing the `CONVC_` prefix in their display name will be provisioned to SAP Convergent Charging. Groups without this prefix in the display name won't be provisioned.
+
+    If the property is not set, all groups will be provisioned to SAP Convergent Charging.
+
+
+**System Role:** Source and Target
+
+</td>
+<td valign="top">
+
+SAP Convergent Charging
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`fg.support.patch.operation` 
+
+</td>
+<td valign="top">
+
+This property controls how modified users in the source system are updated in the target system.
+
+-   If set to *true*, `PATCH` operations are used to update users in the target system. This means, for example, that if a user attribute is modified, only these changes will be provisioned and applied in the target system.
+
+-   If set to *false*, `PUT` operations are used to update users in the target system. This means, for example, that if a user attribute is modified, all user attributes are replaced in the target system, instead of updating only the modified ones.
+
+
+**Possible values:**
+
+-   *true*
+-   *false*
+
+Default value: *false* 
+
+**System Role:** Target, Proxy
+
+</td>
+<td valign="top">
+
+SAP Fieldglass
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `abap.user.filter` 
 
 </td>
@@ -378,7 +752,7 @@ You can use the example value or provide your own.
 
 -   When **set in the target system**, only roles containing the `ABAP_` prefix in their role name will be provisioned to AS ABAP. Roles without this prefix in their names won't be provisioned.
 
-    If the property is not set, all roles will be be provisioned to AS ABAP.
+    If the property is not set, all roles will be provisioned to AS ABAP.
 
 
 **System Role:** Source and Target
@@ -553,7 +927,7 @@ You can use the example value or provide your own.
 
 -   When **set in the target system**, only groups containing the `ARIBA_APPLICATIONS_` prefix in their display name will be provisioned to SAP Ariba Applications. Groups without this prefix in the display name won't be provisioned.
 
-    If the property is not set, all groups will be be provisioned to SAP Ariba Applications.
+    If the property is not set, all groups will be provisioned to SAP Ariba Applications.
 
 
 **System Role:** Source and Target
@@ -1122,8 +1496,6 @@ Default value: *false*
 
 **System Role:** Target, Proxy
 
-
-
 </td>
 <td valign="top">
 
@@ -1270,7 +1642,7 @@ You can use the example value or provide your own.
 
 -   When **set in the target system**, only groups containing the `BTP_CF_PM_` prefix in their display name will be provisioned to SAP BTP Platform Members \(Cloud Foundry\). Groups without this prefix in the display name won't be provisioned.
 
-    If the property is not set, all groups will be be provisioned to SAP BTP Platform Members \(Cloud Foundry\).
+    If the property is not set, all groups will be provisioned to SAP BTP Platform Members \(Cloud Foundry\).
 
 
 **System Role:** Source and Target
@@ -1409,7 +1781,7 @@ You can use the example value or provide your own.
 
 -   When **set in the target system**, only groups containing the `CBC_` prefix in their display name will be provisioned to SAP Central Business Configuration. Groups without this prefix in the display name won't be provisioned.
 
-    If the property is not set, all groups will be be provisioned to SAP Central Business Configuration.
+    If the property is not set, all groups will be provisioned to SAP Central Business Configuration.
 
 
 **System Role:** Source and Target
@@ -2132,7 +2504,7 @@ You can use the example value or provide your own.
 
 -   When **set in the target system**, only groups containing the `IA_` prefix in their display name will be provisioned to SAP Intelligent Agriculture. Groups without this prefix in the display name won't be provisioned.
 
-    If the property is not set, all groups will be be provisioned to SAP Intelligent Agriculture.
+    If the property is not set, all groups will be provisioned to SAP Intelligent Agriculture.
 
 
 **System Role:** Source, Target
@@ -6194,7 +6566,7 @@ You can use the example value or provide your own.
 
 -   When **set in the target system**, only groups containing the `FG_` prefix in their display name will be provisioned to SAP Fieldglass. Groups without this prefix in the display name won't be provisioned.
 
-    If the property is not set, all groups will be be provisioned to SAP Fieldglass.
+    If the property is not set, all groups will be provisioned to SAP Fieldglass.
 
 
 **System Role:** Source and Target
@@ -6332,7 +6704,7 @@ You can use the example value or provide your own.
 
 -   When **set in the target system**, only roles containing the `A4C_` prefix in their role name will be provisioned to SAP BTP ABAP environment. Roles without this prefix in their names won't be provisioned.
 
-    If the property is not set, all roles will be be provisioned to SAP BTP ABAP environment.
+    If the property is not set, all roles will be provisioned to SAP BTP ABAP environment.
 
 
 **System Role:** Source and Target
@@ -6394,7 +6766,7 @@ You can use the example value or provide your own.
 
 -   When **set in the target system**, only roles containing the `IBP_` prefix in their role name will be provisioned to SAP Integrated Business Planning. Roles without this prefix in the role name won't be provisioned.
 
-    If the property is not set, all roles will be be provisioned to SAP Integrated Business Planning.
+    If the property is not set, all roles will be provisioned to SAP Integrated Business Planning.
 
 
 **System Role:** Source and Target
@@ -7006,7 +7378,7 @@ You can use the example value or provide your own.
 
 -   When **set in the target system**, only roles containing the `SMKC_` prefix in their role name will be provisioned to SAP Marketing Cloud. Roles without this prefix in the role name won't be provisioned.
 
-    If the property is not set, all roles will be be provisioned to SAP Marketing Cloud.
+    If the property is not set, all roles will be provisioned to SAP Marketing Cloud.
 
 
 **System Role:** Source and Target
@@ -7718,7 +8090,7 @@ You can use the example value or provide your own.
 
 -   When **set in the target system**, only groups containing the `SJC_` prefix in their display name will be provisioned to SAP Jam Collaboration. Groups without this prefix in the display name won't be provisioned.
 
-    If the property is not set, all groups will be be provisioned to SAP Jam Collaboration.
+    If the property is not set, all groups will be provisioned to SAP Jam Collaboration.
 
 
 **System Role:** Source and Target
@@ -7811,7 +8183,7 @@ Relevant when the `ProxyType` property is set to *OnPremise*. Use it in case you
 
 -   SSH Server \(Beta\)
 
--   SAP HANA Database \(Beta\)
+-   SAP HANA Database
 
 -   LDAP Server
 
@@ -7841,7 +8213,7 @@ Name of the SAP HANA Database user
 </td>
 <td valign="top">
 
-SAP HANA Database \(Beta\)
+SAP HANA Database
 
 </td>
 </tr>
@@ -7860,7 +8232,7 @@ SAP HANA Database \(Beta\)
 </td>
 <td valign="top">
 
-SAP HANA Database \(Beta\)
+SAP HANA Database
 
 </td>
 </tr>
@@ -7879,7 +8251,7 @@ SAP HANA Database host
 </td>
 <td valign="top">
 
-SAP HANA Database \(Beta\)
+SAP HANA Database
 
 </td>
 </tr>
@@ -7893,389 +8265,65 @@ SAP HANA Database \(Beta\)
 
 SAP HANA Database port
 
-**Possible values:** *30015*
+**Default value:** *30015*
 
 **System Role:** Target
 
 </td>
 <td valign="top">
 
-SAP HANA Database \(Beta\)
+SAP HANA Database
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-`hana.jdbc.access.type` 
+`hana.jdbc.db.encrypt` 
 
 </td>
 <td valign="top">
 
-There are three types of SAP HANA access:
+This property enables or disables TLS encryption.
 
--   *direct* – It requires only `hana.jdbc.db.*` properties
--   *ssh.tunnel* – it requires `hana.jdbc.db.*` and `hana.jdbc.ssh.tunnel.*` properties.
--   *cf.app.ssh.tunnel* – It requires `hana.jdbc.ssh.tunnel.cf.*` properties to establish an SSH tunnel to the Cloud Foundry application, from which to access the JDBC SQL port of SAP HANA.
+Possible values:
 
-**Possible values:**
+-   **true** \(Default value\)
+-   **false**
 
--   *direct*
--   *ssh.tunnel*
--   *cf.app.ssh.tunnel*
+> ### Note:  
+> For existing systems, the property value defaults to **false**.
 
 **System Role:** Target
 
 </td>
 <td valign="top">
 
-SAP HANA Database \(Beta\)
+SAP HANA Database
 
 </td>
 </tr>
 <tr>
 <td valign="top">
 
-`hana.jdbc.ssh.tunnel.username` 
+`hana.jdbc.db.validateCertificate` 
 
 </td>
 <td valign="top">
 
-The username used for opening the SSH Tunnel
+When set to true, this property specifies that the server certificate is validated. When set to false, the certificate is not validated.
+
+Possible values:
+
+-   **true** \(Default value\)
+-   **false**
 
 **System Role:** Target
 
 </td>
 <td valign="top">
 
-SAP HANA Database \(Beta\)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`hana.jdbc.ssh.tunnel.cf.technical.user.origin` 
-
-</td>
-<td valign="top">
-
-This is the origin of the Cloud Foundry technical user, specified in property `hana.jdbc.ssh.tunnel.cf.username`.
-
-If the origin is the same as of the other Cloud Foundry users, you don't need this property – leave it empty or delete it.
-
-**Possible values:** Text/numeric string
-
-For example: *uaa*
-
-**System Role:** Target
-
-</td>
-<td valign="top">
-
-SAP HANA Database \(Beta\)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`hana.jdbc.ssh.tunnel.host` 
-
-</td>
-<td valign="top">
-
-SSH Tunnel’s host
-
-**System Role:** Target
-
-</td>
-<td valign="top">
-
-SAP HANA Database \(Beta\)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`hana.jdbc.ssh.tunnel.port` 
-
-</td>
-<td valign="top">
-
-SSH Tunnel’s port
-
-**Possible values:** *22*
-
-**System Role:** Target
-
-</td>
-<td valign="top">
-
-SAP HANA Database \(Beta\)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`hana.jdbc.ssh.tunnel.auth.type` 
-
-</td>
-<td valign="top">
-
-The authentication type for the SSH Tunnel.
-
-**Possible values:**
-
-Supported SSH authentication types:
-
--   *key*
--   *pwd*
--   *otp*
--   *key+otp*
--   *key+pwd*
--   *pwd+otp*
--   *key+pwd+otp*
-
-**System Role:** Target
-
-</td>
-<td valign="top">
-
-SAP HANA Database \(Beta\)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`hana.jdbc.ssh.tunnel.cf.api.url` 
-
-</td>
-<td valign="top">
-
-The URL of the Cloud Foundry API.
-
-**Possible values:**
-
-For example: *https://api.cf.mycloudfoundryhost.ondemand.com*
-
-**System Role:** Target
-
-</td>
-<td valign="top">
-
-SAP HANA Database \(Beta\)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`hana.jdbc.ssh.tunnel.cf.oauth.token.url` 
-
-</td>
-<td valign="top">
-
-The URL of the OAuth token endpoint.
-
-> ### Remember:  
-> Remove the */oauth/token* part at the end of the URL.
-
-**System Role:** Target
-
-</td>
-<td valign="top">
-
-SAP HANA Database \(Beta\)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`hana.jdbc.ssh.tunnel.cf.org` 
-
-</td>
-<td valign="top">
-
-This is the Cloud Foundry organization.
-
-**System Role:** Target
-
-</td>
-<td valign="top">
-
-SAP HANA Database \(Beta\)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`hana.jdbc.ssh.tunnel.cf.space` 
-
-</td>
-<td valign="top">
-
-This is the Cloud Foundry space.
-
-**System Role:** Target
-
-</td>
-<td valign="top">
-
-SAP HANA Database \(Beta\)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`hana.jdbc.ssh.tunnel.cf.app` 
-
-</td>
-<td valign="top">
-
-This is the Cloud Foundry application to which the *SAP HANA Database \(Beta\)* system opens an SSH tunnel. For more information, see: [Cloud Foundry: Accessing apps with SSH](https://docs.cloudfoundry.org/devguide/deploy-apps/ssh-apps.html)
-
-**System Role:** Target
-
-</td>
-<td valign="top">
-
-SAP HANA Database \(Beta\)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`hana.jdbc.ssh.tunnel.cf.app.instance` 
-
-</td>
-<td valign="top">
-
-This is the instance number of the Cloud Foundry application.
-
-**System Role:** Target
-
-</td>
-<td valign="top">
-
-SAP HANA Database \(Beta\)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`hana.jdbc.ssh.tunnel.cf.username` 
-
-</td>
-<td valign="top">
-
-This is the Cloud Foundry user. It has the role **Developer** for the space where the application is deployed.
-
-**System Role:** Target
-
-</td>
-<td valign="top">
-
-SAP HANA Database \(Beta\)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`hana.jdbc.ssh.tunnel.cf.password` 
-
-</td>
-<td valign="top">
-
-\(Credential\) The password for property `hana.jdbc.ssh.tunnel.cf.username`
-
-**System Role:** Target
-
-</td>
-<td valign="top">
-
-SAP HANA Database \(Beta\)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`hana.jdbc.ssh.tunnel.password` 
-
-</td>
-<td valign="top">
-
-\(Credential\) Taken into account only if the authentication type includes **pwd**. That means any of the following:
-
--   `hana.jdbc.ssh.tunnel.auth.type` = *pwd*
--   `hana.jdbc.ssh.tunnel.auth.type` = *pwd+otp*
--   `hana.jdbc.ssh.tunnel.auth.type` = *key+pwd*
--   `hana.jdbc.ssh.tunnel.auth.type` = *key+pwd+otp*
-
-**System Role:** Target
-
-</td>
-<td valign="top">
-
-SAP HANA Database \(Beta\)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`hana.jdbc.ssh.tunnel.totp.secret.key` 
-
-</td>
-<td valign="top">
-
-\(Credential\) Taken into account only if the authentication type includes **otp**. That means any of the following:
-
--   `hana.jdbc.ssh.tunnel.auth.type` = *otp*
--   `hana.jdbc.ssh.tunnel.auth.type` = *key+otp*
--   `hana.jdbc.ssh.tunnel.auth.type` = *pwd+otp*
--   `hana.jdbc.ssh.tunnel.auth.type` = *key+pwd+otp*
-
-**System Role:** Target
-
-</td>
-<td valign="top">
-
-SAP HANA Database \(Beta\)
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-`hana.jdbc.ssh.tunnel.private.key` 
-
-</td>
-<td valign="top">
-
-\(Credential\) Taken into account only if the authentication type includes **key**. That means any of the following:
-
--   `hana.jdbc.ssh.tunnel.auth.type` = *key*
--   `hana.jdbc.ssh.tunnel.auth.type` = *key+pwd*
--   `hana.jdbc.ssh.tunnel.auth.type` = *key+otp*
--   `hana.jdbc.ssh.tunnel.auth.type` = *key+pwd+otp*
-
-**System Role:** Target
-
-</td>
-<td valign="top">
-
-SAP HANA Database \(Beta\)
+SAP HANA Database
 
 </td>
 </tr>
@@ -9247,7 +9295,7 @@ You can use the example value or provide your own.
 
 -   When **set in the target system**, only groups containing the `UAA_` prefix in their display name will be provisioned to Cloud Foundry UAA Server. Groups without this prefix in the display name won't be provisioned.
 
-    If the property is not set, all groups will be be provisioned to Cloud Foundry UAA Server.
+    If the property is not set, all groups will be provisioned to Cloud Foundry UAA Server.
 
 
 **System Role:** Source and Target
@@ -11949,7 +11997,7 @@ You can use the example value or provide your own.
 
 -   When **set in the target system**, only roles containing the `SMC_` prefix in their role name will be provisioned to SAP Market Communication for Utilities. Roles without this prefix in the role name won't be provisioned.
 
-    If the property is not set, all roles will be be provisioned to SAP Market Communication for Utilities.
+    If the property is not set, all roles will be provisioned to SAP Market Communication for Utilities.
 
 
 **System Role:** Source and Target
@@ -12731,7 +12779,7 @@ You can use the example value or provide your own.
 
 -   When **set in the target system**, only groups containing the `XSUAA_` prefix in their display name will be provisioned to SAP BTP XS Advanced UAA \(Cloud Foundry\). Groups without this prefix in the display name won't be provisioned.
 
-    If the property is not set, all groups will be be provisioned to SAP BTP XS Advanced UAA \(Cloud Foundry\).
+    If the property is not set, all groups will be provisioned to SAP BTP XS Advanced UAA \(Cloud Foundry\).
 
 
 **System Role:** Source and Target
@@ -14126,7 +14174,7 @@ You can use the example value or provide your own.
 
 -   When **set in the target system**, only roles containing the `S4HANA_CLOUD_` prefix in their role name will be provisioned to SAP S/4HANA Cloud Public Edition. Roles without this prefix in the role name won't be provisioned.
 
-    If the property is not set, all roles will be be provisioned to SAP S/4HANA Cloud Public Edition.
+    If the property is not set, all roles will be provisioned to SAP S/4HANA Cloud Public Edition.
 
 
 **System Role:** Source and Target
@@ -14246,7 +14294,7 @@ As a result, expect the following behavior:
 
 -   SAP Field Service Management
 
--   SAP HANA Database \(Beta\)
+-   SAP HANA Database
 
 -   SAP Jam Collaboration
 
@@ -14812,7 +14860,7 @@ You can use the example value or provide your own.
 
 -   When **set in the target system**, only groups containing the `CIM_` prefix in their display name will be provisioned to SAP Central Invoice Management. Groups without this prefix in the display name won't be provisioned.
 
-    If the property is not set, all groups will be be provisioned to SAP Central Invoice Management.
+    If the property is not set, all groups will be provisioned to SAP Central Invoice Management.
 
 
 **System Role:** Source and Target
@@ -15102,7 +15150,7 @@ You can use the example value or provide your own.
 
 -   When set in the target system, only groups containing the ECP\_ prefix in their display name will be provisioned to SAP SuccessFactors Employee Central Payroll. Groups without this prefix in the display name won't be provisioned.
 
-    If the property is not set, all groups will be be provisioned to SAP SuccessFactors Employee Central Payroll.
+    If the property is not set, all groups will be provisioned to SAP SuccessFactors Employee Central Payroll.
 
 
 **System Role:** Source and Target
@@ -15599,7 +15647,7 @@ You can use the example value or provide your own.
 
 -   When **set in the target system**, only groups containing the `HANA_Cloud_DB_` prefix in their display name will be provisioned to SAP HANA Cloud Database Services. Groups without this prefix in the display name won't be provisioned.
 
-    If the property is not set, all groups will be be provisioned to SAP HANA Cloud Database Services.
+    If the property is not set, all groups will be provisioned to SAP HANA Cloud Database Services.
 
 
 **System Role:** Source, Target
@@ -15818,7 +15866,7 @@ You can use the example value or provide your own.
 
 -   When **set in the target system**, only groups containing the `EN_` prefix in their display name will be provisioned to SAP Enable Now. Groups without this prefix in the display name won't be provisioned.
 
-    If the property is not set, all groups will be be provisioned to SAP Enable Now.
+    If the property is not set, all groups will be provisioned to SAP Enable Now.
 
 
 **System Role:** Source, Target
@@ -16365,7 +16413,7 @@ You can use the example value or provide your own.
 
 -   When **set in the target system**, only groups containing the `RGM_` prefix in their display name will be provisioned to SAP Revenue Growth Management. Groups without this prefix in the display name won't be provisioned.
 
-    If the property is not set, all groups will be be provisioned to SAP Revenue Growth Management.
+    If the property is not set, all groups will be provisioned to SAP Revenue Growth Management.
 
 
 **System Role:** Source and Target
@@ -16499,6 +16547,8 @@ SAP Sales Cloud and SAP Service Cloud
 <td valign="top">
 
 This property holds the value of the dependency name used in the configuration of the SAP Ariba Applications consumer application, created in the SAP Cloud Identity Services tenant. It is used for access token retrieval from Identity Authentication. For more information, see [Integrating Applications](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/integrating-applications?locale=en-US&version=Cloud).
+
+This property is mandatory when using the next-generation SCIM API provided by SAP Ariba Applications.
 
 Possible values: Text/numeric string
 

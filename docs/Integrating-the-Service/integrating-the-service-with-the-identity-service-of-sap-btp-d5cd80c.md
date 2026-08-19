@@ -7,7 +7,7 @@ The Identity service of SAP BTP enables you to delegate authentication and autho
 The Identity service of SAP BTP enables you to realize authentication for applications built with SAP BTP regardless of whether your application resides in an environment of SAP BTP or not. While you can manually configure an application of Cloud Identity Services to serve the function of an OIDC provider, the Identity service automates this process. You can preconfigure aspects of the Cloud Identity Services application, such as the display name of the application and redirect URIs. The Identity service enables an application to exchange information such as URL and credentials with the application of the Cloud Identity Services tenant.
 
 > ### Note:  
-> This integration isn’t available for the SAP BTP, partner-managed edition \(AWS GovCloud\)account type.
+> This integration isn’t available for the SAP BTP, partner-managed edition \(AWS GovCloud\) account type.
 
 This integration supports principal propagation to services consumed by your application.
 

@@ -501,6 +501,7 @@
             -   [Export and Import Systems](Operation-Guide/export-and-import-systems-1de7de0.md)
             -   [Delete Systems](Operation-Guide/delete-systems-3a37213.md)
             -   [Update Connector Version](Operation-Guide/update-connector-version-8558733.md)
+                -   [Update Identity Authentication](Operation-Guide/update-identity-authentication-cc35d85.md)
                 -   [Update SAP Integrated Business Planning](Operation-Guide/update-sap-integrated-business-planning-18d1280.md)
                 -   [Update SAP S/4HANA Cloud Public Edition](Operation-Guide/update-sap-s-4hana-cloud-public-edition-6339b86.md)
             -   [Manage Properties](Operation-Guide/manage-properties-4e2bc9d.md)
