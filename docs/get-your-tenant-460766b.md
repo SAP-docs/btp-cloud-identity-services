@@ -449,11 +449,11 @@ Create a trial tenant from an SAP BTP trial account.
 A trial tenant is intended for testing purposes. It allows you to try out and explore SAP Cloud Identity Services – Identity Authentication and Identity Provisioning. It is free of charge and limited to a trial period in accordance with the [SAP BTP trial terms and conditions](https://accounts.sap.com/ui/public/viewTextResource?scenario=1b5ff22b-ac85-466f-9644-833d07e77d5e&resourceType=RESOURCE_TERMS_OF_USE&locale=en_US). A trial tenant differs from a test tenant. Trial tenants can be used for a limited period, while test tenants are provided to customers in addition to their productive tenants where they can test new features before implementing them productively.
 
 > ### Restriction:  
-> -   You can have only one trial tenant per SAP BTP global account regardless of how many subaccounts you create. If you have multiple subaccounts, and you've got trial tenants for them, the subaccounts will use one and the same trial tenant.
-> 
+> -   You can have only one SAP Cloud Identity Services trial tenant per SAP BTP global account regardless of how many subaccounts you create. If you have multiple subaccounts, and you have trial tenants for them, they use one and the same trial tenant.
 > -   You can have up to 50 users in a trial tenant.
-> 
 > -   You can't connect to on-premise systems using the cloud connector. It's not possible to subscribe to the Cloud Identity Services connectivity plan in your trial subaccount.
+> -   The `Invitation Rest API` is not available. For more information about the API, see [Invitation REST API](Development/invitation-rest-api-e55429f.md).
+> -   Email template customization is not possible.
 
 
 

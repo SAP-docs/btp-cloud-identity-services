@@ -33,6 +33,6 @@ The trial tenant is intended for testing purposes only. It allows you to try out
 > -   You can have only one SAP Cloud Identity Services trial tenant per SAP BTP global account regardless of how many subaccounts you create. If you have multiple subaccounts, and you have trial tenants for them, they use one and the same trial tenant.
 > -   You can have up to 50 users in a trial tenant.
 > -   You can't connect to on-premise systems using the cloud connector. It's not possible to subscribe to the Cloud Identity Services connectivity plan in your trial subaccount.
-> -   The `Invitation Rest API` is not available.
+> -   The `Invitation Rest API` is not available. For more information about the API, see [Invitation REST API](Development/invitation-rest-api-e55429f.md).
 > -   Email template customization is not possible.
 
