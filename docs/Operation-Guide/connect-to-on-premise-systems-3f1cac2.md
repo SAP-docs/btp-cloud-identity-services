@@ -331,7 +331,7 @@ If your provisioning scenarios involve on-premise systems, this requires a separ
         > ### Note:  
         > Using connectivity destination is mandatory only for SAP Application Server ABAP.
 
-    -   `CloudConnectorLocationId` property - Configure the property in the Identity Provisioning section of SAP Cloud Identity Services administration console for all HTTP and LDAP-based systems, SSH Server \(Beta\) and SAP HANA Database \(Beta\) with ProxyType set to `OnPremise`.
+    -   `CloudConnectorLocationId` property - Configure the property in the Identity Provisioning section of SAP Cloud Identity Services administration console for all HTTP and LDAP-based systems, SSH Server \(Beta\) and SAP HANA Database with ProxyType set to `OnPremise`.
 
         Alternatively, for HTTP-based systems only, you can add the Identity Provisioning `ips.http.header.`*<header\_name\>* property, where the header name is: `SAP-Connectivity-SCC-Location_ID` and the value is the Location ID. For example: `ips.http.header.SAP-Connectivity-SCC-Location_ID=<LocationID>`
 

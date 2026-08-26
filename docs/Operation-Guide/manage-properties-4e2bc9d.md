@@ -32,7 +32,7 @@ You have added a system \(source, target, or proxy\) in the Identity Provisionin
 5.  Add the properties required by your scenario to make successful connection to the selected system. You can use two types of properties:
 
     -   *Standard*: These are properties, whose values are displayed as numbers or plain text strings. For example: **Type**, **ProxyType**, **URL**, **Authentication**.
-    -   *Credential*: These are properties whose values contain sensitive information that must not be displayed as plain text. For example: **Password** \(standard passwords, private keys, or OAuth client secrets\), **ssh.private.key** \(relevant to SSH Server\), **hana.jdbc.ssh.tunnel.private.key** \(relevant to SAP HANA Database\).
+    -   *Credential*: These are properties whose values contain sensitive information that must not be displayed as plain text. For example: **Password** \(standard passwords, private keys, or OAuth client secrets\), **ssh.private.key** \(relevant to SSH Server\).
 
         > ### Note:  
         > Properties whose values contain sensitive information can be added only as *Credential* in the Identity Provisioning UI. The values of these properties are stored as encrypted data. They are excluded from the file during system configuration export.

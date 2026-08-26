@@ -82,10 +82,6 @@ SSH Server
 
 hana.jdbc.db.password=\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 
-hana.jdbc.ssh.tunnel.cf.password=\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
-
-hana.jdbc.ssh.tunnel.private.key=\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
-
 </td>
 <td valign="top">
 

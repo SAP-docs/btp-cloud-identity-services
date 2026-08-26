@@ -218,170 +218,14 @@ All HTTP systems
 </td>
 <td valign="top">
 
-This property determines how totalResults is reported in the SCIM proxy response. For the supported values and their behavior, see the table below.
+This property determines how `totalResults` is reported in the SCIM response of the concrete IPS Proxy system.
 
 **Possible values:** 
 
--   Provided
--   Calculated \(Default\)
+-   *Provided* - The `totalResults` value returned by the backend system is used as-is in the proxy response.
+-   *Calculated* - The `totalResults` value is calculated by the proxy system based on the entities that passed the transformation condition.
 
-
-<table>
-<tr>
-<th valign="top">
-
-totalResults support
-
-</th>
-<th valign="top">
-
-Conditions Applied
-
-</th>
-<th valign="top">
-
-`ips.proxy.scim.total.results.strategy` 
-
-</th>
-<th valign="top">
-
-Value
-
-</th>
-</tr>
-<tr>
-<td valign="top">
-
-Supported
-
-</td>
-<td valign="top">
-
-No
-
-</td>
-<td valign="top">
-
-Any
-
-</td>
-<td valign="top">
-
-Provided
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Supported
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-<td valign="top">
-
-Provided
-
-</td>
-<td valign="top">
-
-Provided
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Supported
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-<td valign="top">
-
-Calculated
-
-</td>
-<td valign="top">
-
-Calculated
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Not supported
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-<td valign="top">
-
-Provided
-
-</td>
-<td valign="top">
-
-Calculated
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Not supported
-
-</td>
-<td valign="top">
-
-Yes
-
-</td>
-<td valign="top">
-
-Calculated
-
-</td>
-<td valign="top">
-
-Calculated
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-Not supported
-
-</td>
-<td valign="top">
-
-Any other
-
-</td>
-<td valign="top">
-
-Any
-
-</td>
-<td valign="top">
-
-Calculated
-
-</td>
-</tr>
-</table>
+Default value: *Calculated* 
 
 **System Role:** Proxy
 
@@ -14279,8 +14123,6 @@ As a result, expect the following behavior:
 -   SAP Central Business Configuration
 
 -   SAP Commerce Cloud
-
--   SAP SuccessFactors Incentive Management
 
 -   SAP Concur
 

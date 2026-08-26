@@ -1,8 +1,8 @@
 <!-- loiob9800f8c5fe2461eb5625f41898ebc6f -->
 
-# SAP HANA Database \(Beta\)
+# SAP HANA Database
 
-Follow this procedure to set up SAP HANA Database \(Beta\) as a target system.
+Follow this procedure to set up SAP HANA Database as a target system.
 
 
 
@@ -10,39 +10,22 @@ Follow this procedure to set up SAP HANA Database \(Beta\) as a target system.
 
 ## Prerequisites
 
-> ### Restriction:  
-> This system is available for standalone tenants running on SAP BTP, Neo environment.
-
 -   You have credentials for a tenant in SAP Business Technology Platform. For more information, see: [Accounts](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/8ed4a705efa0431b910056c0acdbf377.html#loio8ed4a705efa0431b910056c0acdbf377)
 -   You have the necessary connection settings to reach an SAP HANA database.
 -   \(Optional\) You have installed the Cloud Connector in your corporate environment and have done the initial configuration. You need this only when your SAP HANA DB resides in a remote on-premise system, outside your Neo environment. For more information, see [Cloud Connector](https://help.hana.ondemand.com/help/frameset.htm?e6c7616abb5710148cfcf3e75d96d596.html).
-
-> ### Note:  
-> This is a beta feature available on SAP Business Technology Platform. For more information, see: *Enable beta features* in [Change Subaccount Details](https://help.sap.com/docs/btp/sap-business-technology-platform/change-subaccount-details?version=Cloud)
 
 
 
 ## Context
 
-**SAP HANA Database** is a system \(connector\) in beta state, which allows you to log into remote systems that have SAP HANA installed. Only provisioning of entity type **user** is currently supported by this connector. That includes user assignments to roles and all types of catalog and repository privileges \(*schema*, *analytic*, *application*\). For more information about SAP HANA privileges, see:
+> ### Note:  
+> SAP HANA Database is only available as a target system.
+
+**SAP HANA Database** is a target system \(connector\), which allows you to log into remote systems that have SAP HANA installed. Only provisioning of entity type **user** is currently supported by this connector. That includes user assignments to roles and all types of catalog and repository privileges \(*schema*, *analytic*, *application*\). For more information about SAP HANA privileges, see:
 
 [SAP HANA: GRANT Statement \(Access Control\)](https://help.sap.com/viewer/4fe29514fd584807ac9f2a04f6754767/2.0.02/en-US/20f674e1751910148a8b990d33efbdc5.html)
 
 [SAP HANA: Stored Procedures Used to Grant/Revoke Privileges on Activated Repository Objects](https://help.sap.com/viewer/102d9916bf77407ea3942fef93a47da8/1.0.11/en-US/f1b28c0904cd4b70bebcfa187831b30f.html)
-
-When using this connector, what you actually need is to connect to the JDBC SQL port of SAP HANA. Depending on whether this port is visible or hidden, you have the following use cases:
-
-**Case 1** – The JDBC port is directly accessible by the enabled Identity Provisioning NEO account. That mostly happens when it resides in the same Neo environment as your Identity Provisioning service.
-
-**Case 2** – The JDBC port is not directly accessible by your Neo environment. There are two subcases:
-
--   JDBC port of SAP HANA DB is accessible by a system, which is publicly reachable through SSH protocol. You have to configure your *SAP HANA Database \(Beta\)* connector so as to open an SSH tunnel to this system. Set the proxy type to **Internet**.
--   JDBC port of SAP HANA DB is accessible by a system, which is reachable through SSH protocol only from an internal network. You need to have the Cloud Connector installed in that network and configure it to allow SSH connections from the Identity Provisioning service account. You have to create an SSH tunnel by using TCP protocol connection configuration from the Cloud Connector. When configuring the access control, specify the SSH host and port to reach the system that has access to the JDBC port. Set the proxy type to **OnPremise**.
-
-**Case 3** – SAP HANA DB is installed in the Cloud Foundry environment. You need to enable SSH access on both space and application level. To do this, execute the relevant console commands in the Cloud Foundry command line tool \(see: [Cloud Foundry: Accessing Apps with SSH](https://docs.cloudfoundry.org/devguide/deploy-apps/ssh-apps.html)\). The *SAP HANA Database \(Beta\)* connector will open an SSH tunnel to a running application container on the Cloud Foundry space. The space configuration of the security groups allows access to the JDBC port of SAP HANA MDC. You need to have the *Space Developer* role. Again, there are two subcases:
-
--   Cloud Foundry landscape is publicly accessible through SSH protocol. Set the proxy type to **Internet**.
--   Cloud Foundry landscape is accessible through SSH protocol, which is allowed only from a particular network. You need to have the Cloud Connector installed in that network and configure it to allow SSH connections from the Identity Provisioning service account. Set the proxy type to **OnPremise**.
 
 
 
@@ -55,7 +38,7 @@ When using this connector, what you actually need is to connect to the JDBC SQL 
 
 2.  Sign in to the administration console of SAP Cloud Identity Services and navigate to *Identity Provisioning* \> *Target Systems*.
 
-3.  Add *SAP HANA Database \(Beta\)* as a target system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
+3.  Add *SAP HANA Database* as a target system. For more information, see [Add New Systems](Operation-Guide/add-new-systems-bd214dc.md).
 
 4.  Choose the *Properties* tab to configure the connection settings for your system.
 
@@ -92,24 +75,29 @@ When using this connector, what you actually need is to connect to the JDBC SQL 
     </td>
     <td valign="top">
     
-    This property is applicable if you use an SSH tunnel \(`hana.jdbc.access.type`=*ssh.tunnel|cf.app.ssh.tunnel*\). Possible values:
+    Possible values:
 
-    -   **Internet** – if the SSH port is visible in your Neo environment
-    -   **OnPremise** – if the SSH port is not directly accessible, and you have to use the Cloud Connector. You have to configure TCP protocol connection to the SSH host and port \(specify the configuration properties `hana.jdbc.ssh.tunnel.host` and `hana.jdbc.ssh.tunnel.port`\).
+    -   **Internet**
+    -   **OnPremise**
 
-
+    The proxy type **OnPremise** requires you to provide mappings to your host and port to the Cloud Connector.
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    `CloudConnectorLocationId`
+    \(Optional\) `Type`
     
     </td>
     <td valign="top">
     
-    Relevant when the proxy type is *OnPremise*. Use it only if your SAP Business Technology Platform account uses more than one Cloud Connector.
+    Enter: **HTTP**
+
+    > ### Note:  
+    > This property is mandatory only when your **ProxyType** is **OnPremise**.
+
+
     
     </td>
     </tr>
@@ -157,81 +145,29 @@ When using this connector, what you actually need is to connect to the JDBC SQL 
     </td>
     <td valign="top">
     
-    30015
+    Default value: **30015** 
     
     </td>
     </tr>
     <tr>
     <td valign="top">
     
-    `hana.jdbc.access.type`
+    `hana.jdbc.db.encrypt`
     
     </td>
     <td valign="top">
     
-    There are three types of SAP HANA access:
+    This property enables or disables TLS encryption.
 
-    -   **direct** – It requires only *hana.jdbc.db.\** properties
-    -   **ssh.tunnel** – it requires *hana.jdbc.db.\** and *hana.jdbc.ssh.tunnel.\** properties.
-    -   **cf.app.ssh.tunnel** – It requires *hana.jdbc.ssh.tunnel.cf.\** properties to establish an SSH tunnel to the Cloud Foundry application, from which to access the JDBC SQL port of SAP HANA.
+    Possible values:
+
+    -   true \(Default value\)
+
+    -   false
 
 
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `hana.jdbc.ssh.tunnel.username`
-    
-    </td>
-    <td valign="top">
-    
-    The username used for opening the SSH Tunnel
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `hana.jdbc.ssh.tunnel.host`
-    
-    </td>
-    <td valign="top">
-    
-    SSH Tunnel’s host
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `hana.jdbc.ssh.tunnel.port`
-    
-    </td>
-    <td valign="top">
-    
-    22
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `hana.jdbc.ssh.tunnel.auth.type`
-    
-    </td>
-    <td valign="top">
-    
-    Supported SSH authentication types:
-
-    -   **key**
-    -   **pwd**
-    -   **otp**
-    -   **key+otp**
-    -   **key+pwd**
-    -   **pwd+otp**
-    -   **key+pwd+otp**
+    > ### Note:  
+    > For existing systems, the property value defaults to false.
 
 
     
@@ -240,27 +176,19 @@ When using this connector, what you actually need is to connect to the JDBC SQL 
     <tr>
     <td valign="top">
     
-    `hana.jdbc.ssh.tunnel.cf.api.url`
+    `hana.jdbc.db.validateCertificate`
     
     </td>
     <td valign="top">
     
-    The URL of the Cloud Foundry API.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `hana.jdbc.ssh.tunnel.cf.oauth.token.url`
-    
-    </td>
-    <td valign="top">
-    
-    The URL of the OAuth token endpoint.
+    When set to true, this property specifies that the server certificate is validated. When set to false, the certificate is not validated.
 
-    > ### Remember:  
-    > Remove the */oauth/token* part at the end of the URL.
+    Possible values:
+
+    -   true \(Default value\)
+
+    -   false
+
 
 
     
@@ -269,129 +197,12 @@ When using this connector, what you actually need is to connect to the JDBC SQL 
     <tr>
     <td valign="top">
     
-    `hana.jdbc.ssh.tunnel.cf.org`
+    \(Optional\) `CloudConnectorLocationId`
     
     </td>
     <td valign="top">
     
-    This is the Cloud Foundry organization.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `hana.jdbc.ssh.tunnel.cf.space`
-    
-    </td>
-    <td valign="top">
-    
-    This is the Cloud Foundry space.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `hana.jdbc.ssh.tunnel.cf.app`
-    
-    </td>
-    <td valign="top">
-    
-    This is the Cloud Foundry application to which the *SAP HANA Database \(Beta\)* system opens an SSH tunnel. For more information, see: [Cloud Foundry: Accessing Apps with SSH](https://docs.cloudfoundry.org/devguide/deploy-apps/ssh-apps.html) 
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `hana.jdbc.ssh.tunnel.cf.app.instance`
-    
-    </td>
-    <td valign="top">
-    
-    This is the instance number of the Cloud Foundry application.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `hana.jdbc.ssh.tunnel.cf.username`
-    
-    </td>
-    <td valign="top">
-    
-    This is the Cloud Foundry user. It has the role **Developer** for the space where the application is deployed.
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `hana.jdbc.ssh.tunnel.cf.password`
-    
-    </td>
-    <td valign="top">
-    
-    \(Credential\) The password for property `hana.jdbc.ssh.tunnel.cf.username` 
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `hana.jdbc.ssh.tunnel.password`
-    
-    </td>
-    <td valign="top">
-    
-    \(Credential\) Taken into account only if the authentication type includes **pwd**. That means any of the following:
-
-    -   `hana.jdbc.ssh.tunnel.auth.type` = *pwd*
-    -   `hana.jdbc.ssh.tunnel.auth.type` = *pwd+otp*
-    -   `hana.jdbc.ssh.tunnel.auth.type` = *key+pwd*
-    -   `hana.jdbc.ssh.tunnel.auth.type` = *key+pwd+otp*
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `hana.jdbc.ssh.tunnel.totp.secret.key`
-    
-    </td>
-    <td valign="top">
-    
-    \(Credential\) Taken into account only if the authentication type includes **otp**. That means any of the following:
-
-    -   `hana.jdbc.ssh.tunnel.auth.type` = *otp*
-    -   `hana.jdbc.ssh.tunnel.auth.type` = *key+otp*
-    -   `hana.jdbc.ssh.tunnel.auth.type` = *pwd+otp*
-    -   `hana.jdbc.ssh.tunnel.auth.type` = *key+pwd+otp*
-
-
-    
-    </td>
-    </tr>
-    <tr>
-    <td valign="top">
-    
-    `hana.jdbc.ssh.tunnel.private.key`
-    
-    </td>
-    <td valign="top">
-    
-    \(Credential\) Taken into account only if the authentication type includes **key**. That means any of the following:
-
-    -   `hana.jdbc.ssh.tunnel.auth.type` = *key*
-    -   `hana.jdbc.ssh.tunnel.auth.type` = *key+pwd*
-    -   `hana.jdbc.ssh.tunnel.auth.type` = *key+otp*
-    -   `hana.jdbc.ssh.tunnel.auth.type` = *key+pwd+otp*
-
-
+    Relevant when the proxy type is *OnPremise*. Use it only if your SAP Business Technology Platform account uses more than one Cloud Connector.
     
     </td>
     </tr>
@@ -429,7 +240,7 @@ When using this connector, what you actually need is to connect to the JDBC SQL 
 
 5.  \(Optional\) Configure the transformations.
 
-    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP HANA Database \(Beta\)* target system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
+    Transformations are used to map the user attributes from the data model of the source system to the data model of the target system, and the other way around. The Identity Provisioning offers a default transformation for the *SAP HANA Database* target system, whose settings are displayed under the *Transformations* tab after saving its initial configuration.
 
     You can change the default transformation mapping rules to reflect your current setup of entities in your SAP HANA Database. For more information, see [Manage Transformations](Operation-Guide/manage-transformations-2d0fbe5.md).
 

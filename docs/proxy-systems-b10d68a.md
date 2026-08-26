@@ -136,31 +136,42 @@ However, after a *Create* or *Update* operation is performed on the proxy system
 > 
 > When reading entities from a proxy system, the `totalResults` value returned by the system depends on whether the system API provides a total count \(for example, SCIM-based connectors, SAP BTP Platform Members \(Cloud Foundry\), SAP BTP Java/HTML5 apps \(Neo\), SAP Application Server ABAP\) and whether a transformation condition is applied.
 > 
-> -   When the system API supports `totalResults` and no conditions are applied, the `totalResults` value is the full number of entities in the system, regardless of `startIndex` and `count`.
+> -   When the system API supports `totalResults`, the behavior differs depending on whether conditions are defined in the proxy Read Transformation:
 > 
->     Example: There are 1000 users in the proxy system.
+>     -   **No conditions are applied**
 > 
->     ```
->     Request: GET /Users?startIndex=6&count=5
->     Response:
->     {
->       "startIndex": 6,
->       "itemsPerPage": 5,
->       "totalResults": 1000,
->       "Resources": [/* Users 6 through 10 */],
->       "schemas": ["urn:ietf:params:scim:api:messages:2.0:ListResponse"]
->     }
->     
->     ```
+>         If no conditions are defined in the proxy Read Transformation, Identity Provisioning returns the backend's `totalResults` value directly. This value represents the full number of entities in the system, regardless of `startIndex` and `count`.
 > 
-> -   When the system API does not support `totalResults` or an equivalent value, Identity Provisioning derives it as follows:
+>         For example: There are 1000 users in the proxy system.
+> 
+>         ```
+>         Request: GET /Users?startIndex=6&count=5
+>         Response:
+>         {
+>           "startIndex": 6,
+>           "itemsPerPage": 5,
+>           "totalResults": 1000,
+>           "Resources": [/* Users 6 through 10 */],
+>           "schemas": ["urn:ietf:params:scim:api:messages:2.0:ListResponse"]
+>         }
+>         
+>         ```
+> 
+>     -   **Conditions are applied**
+> 
+>         Identity Provisioning always calculates `totalResults`, based on the number of entities that pass the conditions. The backend's value is not used, because it includes entities that may be filtered out.
+> 
+> 
+> -   When the system API does not support `totalResults` or an equivalent value, Identity Provisioning always calculates `totalResults`.
+> 
+>     Identity Provisioning derives it as follows:
 > 
 >     -   If it is not the last page: `totalResults` = `startIndex` + `count`
+> 
 >     -   If it is the last page: `totalResults` = exact number of read entities
 > 
->     As a result, `totalResults` is only an estimate until the last page is reached.
 > 
->     A SCIM client that reads all entities from an IPS SCIM Proxy system should use this logic:
+>     As a result, `totalResults` is only an estimate until the last page is reached. A SCIM client that reads all entities from an IPS SCIM Proxy system should use this logic:
 > 
 >     ```
 >     startIndex = 1
@@ -177,9 +188,7 @@ However, after a *Create* or *Update* operation is performed on the proxy system
 >     GET /Users?startIndex=<startIndex>&count=<count>
 >     ```
 > 
->     Do not use `page.Resources.length` to detect the last page.
-> 
->     `page.Resources` contains the entities returned for the requested page, unless a transformation condition filters some of them out.
+>     Do not use `page.Resources.length` to detect the last page. `page.Resources` contains the entities returned for the requested page, unless a transformation condition filters some of them out.
 > 
 >     If a transformation condition is applied:
 > 
@@ -212,6 +221,131 @@ However, after a *Create* or *Update* operation is performed on the proxy system
 >         GET /Users?startIndex=51&count=50 -> page.totalResults == 101, page.Resources.size == 25
 >         GET /Users?startIndex=101&count=50 -> page.totalResults == 150, page.Resources.size == 0
 >         ```
+> 
+> 
+>     The following table shows how the `totalResults` value is determined when a SCIM proxy endpoint request is made to read entities from a backend system. The outcome depends on three factors: whether the backend system API returns a `totalResults` value, whether conditions are defined in the proxy Read Transformation, and the value of the `ips.proxy.scim.total.results.strategy` property.
+> 
+>     -   *Provided* - Identity Provisioning returns the `totalResults` value provided by the backend system API.
+> 
+>     -   *Calculated* - Identity Provisioning calculates `totalResults`, based on the entities returned after conditions are applied.
+> 
+> 
+> 
+> 
+> <table>
+> <tr>
+> <th valign="top">
+> 
+> `totalResults` Support
+> 
+> </th>
+> <th valign="top">
+> 
+> Conditions Applied
+> 
+> </th>
+> <th valign="top">
+> 
+> `ips.proxy.scim.total.results.strategy` 
+> 
+> </th>
+> <th valign="top">
+> 
+> Value
+> 
+> </th>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Supported
+> 
+> </td>
+> <td valign="top">
+> 
+> No
+> 
+> </td>
+> <td valign="top">
+> 
+> Provided/Calculated
+> 
+> </td>
+> <td valign="top">
+> 
+> Provided
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Supported
+> 
+> </td>
+> <td valign="top">
+> 
+> Yes
+> 
+> </td>
+> <td valign="top">
+> 
+> Provided
+> 
+> </td>
+> <td valign="top">
+> 
+> Provided
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Supported
+> 
+> </td>
+> <td valign="top">
+> 
+> Yes
+> 
+> </td>
+> <td valign="top">
+> 
+> Calculated
+> 
+> </td>
+> <td valign="top">
+> 
+> Calculated
+> 
+> </td>
+> </tr>
+> <tr>
+> <td valign="top">
+> 
+> Not supported
+> 
+> </td>
+> <td valign="top">
+> 
+> Yes/No
+> 
+> </td>
+> <td valign="top">
+> 
+> Provided/Calculated
+> 
+> </td>
+> <td valign="top">
+> 
+> Calculated
+> 
+> </td>
+> </tr>
+> </table>
+> 
+> For more information, see [List of Properties](list-of-properties-d6f3577.md) → `ips.proxy.scim.total.results.strategy`
 
 
 

@@ -163,7 +163,7 @@
             -   [SAP Fieldglass](sap-fieldglass-c4d3fd5.md)
             -   [SAP Field Service Management](sap-field-service-management-570b984.md)
             -   [SAP HANA Cloud Database Services](sap-hana-cloud-database-services-7e2b54e.md)
-            -   [SAP HANA Database \(Beta\)](sap-hana-database-beta-b9800f8.md)
+            -   [SAP HANA Database](sap-hana-database-b9800f8.md)
             -   [SAP Integrated Business Planning](sap-integrated-business-planning-5864dc2.md)
             -   [SAP Intelligent Agriculture](sap-intelligent-agriculture-f29ee52.md)
             -   [SAP Jam Collaboration](sap-jam-collaboration-c5af5f0.md)
