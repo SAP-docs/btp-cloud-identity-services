@@ -85,7 +85,7 @@ If you are using the current-generation SCIM API provided by SAP Ariba Applicati
     -   Europe: **https://eu.openapi.ariba.com**
     -   UAE: **https://mn1.openapi.ariba.com**
 
-
+    For more information, see [SAP Ariba APIs Portal](https://developer.ariba.com/api/)🡪 Discover 🡪 Strategic Sourcing 🡪 SCIM API for User and Group Master Data 🡪 Environment Details.
     
     </td>
     </tr>
@@ -108,7 +108,7 @@ If you are using the current-generation SCIM API provided by SAP Ariba Applicati
     -   Europe: **https://api-eu.ariba.com/v2/oauth/token**
     -   UAE: **https://api.mn1.ariba.com/v2/oauth/token**
 
-
+    For more information, see [SAP Ariba APIs Portal](https://developer.ariba.com/api/)🡪 Discover 🡪 Strategic Sourcing 🡪 SCIM API for User and Group Master Data 🡪 Environment Details.
     
     </td>
     </tr>

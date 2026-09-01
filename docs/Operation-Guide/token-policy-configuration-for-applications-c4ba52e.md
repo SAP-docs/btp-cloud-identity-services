@@ -245,15 +245,17 @@ To configure the token policy, proceed as follows:
 
 4.  Choose the *Trust* tab.
 
-5.  Under *SINGLE SIGN-ON*, choose *OpenID Connect Configuration*.
+5.  Under *Single Sign-On*, choose *OpenID Connect Configuration*.
 
-6.  Manually configure the token policy for the application. Use the slider or provide a number in the input field above the slider.
+6.  Under the *Authentication* tab, choose *Authentication Policy \(Custom\)*.
+
+7.  Configure the token policy for the application.
 
     If needed, use the reset button to set to the default value.
 
-7.  **Optional:** Choose values for the *Advanced Settings* configuration from the drop-downs.
+8.  **Optional:** Choose values for the *Advanced Settings* configuration from the drop-downs.
 
-8.  Save your changes.
+9.  Save your changes.
 
 
 **Related Information**  
