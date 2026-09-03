@@ -141,6 +141,23 @@ Returns an error with error description. For example, expired token.
 <tr>
 <td valign="top">
 
+401
+
+</td>
+<td valign="top">
+
+Unauthorized
+
+</td>
+<td valign="top">
+
+The client is not authenticated.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 403
 
 </td>

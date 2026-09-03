@@ -367,7 +367,7 @@ Migrate an additional tenant from a Neo Subaccount to a multi-environment subacc
 > For more information, see SAP Note [3351844](https://me.sap.com/notes/3351844).
 
 > ### Caution:  
-> The SAP NetWeaver AS JAVA user store store scenario is only supported in the Neo environment. For more information, see [Corporate User Store \(Neo Environment\)](Operation-Guide/corporate-user-store-neo-environment-461d71c.md#loio461d71c148594608b9c8b6d016e0a0c5).
+> The SAP NetWeaver AS JAVA user store scenario is only supported in the Neo environment. For more information, see [Corporate User Store \(Neo Environment\)](Operation-Guide/corporate-user-store-neo-environment-461d71c.md#loio461d71c148594608b9c8b6d016e0a0c5).
 
 
 
@@ -437,6 +437,89 @@ To migrate an additional tenant from a Neo subaccount to a multi-environment sub
 ### Next Steps
 
 If the migration is successful, delete the additional-tenant plan from the Neo subaccount. Go to your Neo subaccount, navigate to *Services* \> *Instances and Subscriptions* \> *Acctions \(...\)* \> *Delete*.
+
+
+
+## Migrate Additional Tenant from Multi-Environment to Multi-Environment
+
+Migrate an additional tenant from a multi-environment subaccount to another multi-environment subaccount as part of a self-service request in SAP BTP cockpit.
+
+> ### Caution:  
+> The SAP NetWeaver AS JAVA user store store scenario is only supported in the Neo environment. For more information, see [Corporate User Store \(Neo Environment\)](Operation-Guide/corporate-user-store-neo-environment-461d71c.md#loio461d71c148594608b9c8b6d016e0a0c5).
+
+
+
+### Prerequisites
+
+-   You have a global account in SAP BTP cockpit with a multi-environment subaccount.
+
+-   You have an existing additional tenant on a multi-environment subaccount.
+
+-   The source and target subaccounts must be in the same SAP Cloud Identity Services region.
+
+
+> ### Note:  
+> The additional tenant doesn't add additional logon requests. Licensed logon requests are distributed across all tenants.
+
+> ### Note:  
+> The target global account can be different from the source global account, as long as it belongs to the same customer ID.
+
+
+
+### Procedure
+
+To migrate an additional tenant from a multi-environment subaccount to another multi-environment subaccount, proceed as follows:
+
+1.  Access the SAP BTP cockpit, choose your target multi-environment subaccount and navigate to it by choosing its tile.
+
+2.  In the navigation area, choose *Entitlements*. You have two options:
+
+    -   If you see *additional-tenant \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, skip steps 3 to 6, and go to step 7.
+    -   If you don't see *additional-tenant \(Application\)* for Cloud Identity Services in the entitlements page of your subaccount, continue with step 3.
+
+    > ### Tip:  
+    > -   If you use directories entitlement management in your global account, you must assign the *additional-tenant \(Application\)* plan to the directory first, and after that to the subaccount. Once you assign the *additional-tenant* plan to your directory, it will appear in your subaccount entitlements too. For more information, see [Configure Entitlements and Quotas for Directories](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/37f8871865114f44aebee3db6ac64b72.html).
+
+3.  Choose *Edit* \> *Add Service Plans*, and select *Cloud Identity Services* from the list of entitlements available for this subaccount.
+
+4.  Mark the *additional-tenant \(Application\)* plan. The *0* number in the *Add 0 Service Plan* button increments to *1*.
+
+5.  Choose the *Add 1 Service Plan* button.
+
+6.  Save your changes on the *Entitlements* page.
+
+7.  Navigate to *Services* \> *Service Marketplace* and select the *Cloud Identity Services* tile. Under *Application Plans* you should see the *additional-tenant \(Application\)* plan.
+
+8.  In the top-right corner, choose *Create* and follow the steps in the wizard to configure your new Cloud Identity Services tenant:
+
+    1.  From the dropdown list, choose *Cloud Identity Services*.
+
+    2.  Select the *additional-tenant* plan and then choose *Next*.
+
+    3.  Under the *Form* tab, from the *Cloud Service Type* dropdown, choose the tenant type: *TEST* or *PRODUCTIVE* \(default value\).
+
+    4.  Under the *JSON* tab, select an already prepared JSON file or specify the parameters in the following JSON format:
+
+        > ### Sample Code:  
+        > ```
+        > 
+        > {
+        >     "cloud_service": "<the tenant type, TEST or PRODUCTIVE as selected in the previous step>",
+        >     "tenant_id": "<the ID of the tenant that will be migrated>",
+        >     "subaccount": "<the ID of the source multi-environment subaccount>"
+        > }
+        > 
+        > ```
+
+    5.  Choose *Next*, review your configuration, and choose *Create*.
+
+
+
+
+
+### Next Steps
+
+If the migration is successful, delete the additional-tenant plan from the source multi-environment subaccount. Go to your source subaccount, navigate to *Services* \> *Instances and Subscriptions* \> *Acctions \(...\)* \> *Delete*.
 
 
 
