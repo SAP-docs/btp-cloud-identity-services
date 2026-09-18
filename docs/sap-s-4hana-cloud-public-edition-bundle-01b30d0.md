@@ -60,9 +60,9 @@ The Identity Provisioning bundle tenant for SAP S/4HANA Cloud Public Edition rel
 
 -   For integrating SAP S/4HANA Cloud Public Edition with the embedded SAP Analytics Cloud, SAP provides preconfigured SAP S/4HANA Cloud Public Edition source system and SAP Analytics Cloud target system. To learn more about what's been initially preconfigured and how to apply subsequent changes to the Identity Provisioning configurations, see:
 
-    -   [Ensure SAP S/4HANA Cloud Public Edition users are replicated during their validity period](https://gad5158842f.us2.hana.ondemand.com/dtp/viewer/#/tree/2143/actions/27412:35953:53365/?version=current)
+    -   [Ensure SAP S/4HANA Cloud Public Edition users are replicated during their validity period](https://help.sap.com/docs/identity-provisioning/identity-provisioning/job-and-transformation-issues?version=Cloud#ensure-sap-s/4hana-cloud-public-edition-users-are-replicated-during-their-validity-period)
 
-    -   [Ensure deleted SAP S/4HANA Cloud Public Edition users are also deleted in SAP Analytics Cloud](https://gad5158842f.us2.hana.ondemand.com/dtp/viewer/#/tree/2143/actions/27412:35953:53369/?version=current)
+    -   [Ensure deleted SAP S/4HANA Cloud Public Edition users are also deleted in SAP Analytics Cloud](https://help.sap.com/docs/identity-provisioning/identity-provisioning/job-and-transformation-issues?version=Cloud#ensure-deleted-sap-s/4hana-cloud-public-edition-users-are-also-deleted-in-sap-analytics-cloud)
 
 
 -   For integrating SAP S/4HANA Cloud Public Edition with Identity Authentication, SAP provides preconfigured Identity Authentication source system and SAP S/4HANA Cloud Public Edition target system. Also preconfigured Identity Authentication source system and SAP Central Business Configuration target system are delivered with system provisioning.

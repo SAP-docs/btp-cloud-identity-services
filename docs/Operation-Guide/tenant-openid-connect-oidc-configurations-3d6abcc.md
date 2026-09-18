@@ -144,6 +144,8 @@ To view or change the tenant OpenID Connect \(OIDC\) configurations, proceed as 
     -   To create a new certificate with a new private key and the same Subject DN, choose *Add* \> *Create new* \> *Next Step* \> *choose key size and validity from the drop downs* \> *Next Step* \> *Finish* \> *Save*.
     -   To create a new certificate, using your own trusted CA, choose *Add* \> *Download CSR* \> *Next Step* \> *add Subject DN and choose key size and validity from the drop downs* \> *Next Step* \> *Download CSR*. Use the .csr file to generate a certificate from the trusted CA. Copy the newly generated certificate, choose *Edit Certificate*, and paste the certificate as text in the *Certificate Information* field.
 
+    For more information, see [Rotate Signing Certificates for OpenID Connect Applications](rotate-signing-certificates-for-openid-connect-applications-bb4eee1.md) and  <?sap-ot O2O class="- topic/xref " href="b7800786f270435bb66b3a6ee9b0e824.xml" text="" desc="" xtrc="xref:75" xtrf="file:/home/builder/src/dita-all/wbz1500991557538/loio629f7cb06f6947988dcaf8bedbe45873_en-US/src/content/localization/en-us/eb0ba3aa1126422a890b42cd26ff4b94.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+
 7.  **Optional:** Set the maximum wait time for front-channel logout.
 
 

@@ -10214,7 +10214,7 @@ Default value: *20000*
 
 Minimum value: *1*
 
-Maximum value: *20000*
+Maximum value: *200000*
 
 For example:
 

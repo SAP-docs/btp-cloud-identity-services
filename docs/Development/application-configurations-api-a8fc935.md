@@ -11,6 +11,16 @@ Manage application configurations.
 > 
 > Note that the Application Configurations API may return a higher number of applications than those displayed in the administration console. Some applications are used for internal purposes and are not shown in the admin console.
 
+
+
+<a name="loioa8fc935b8dde4a74aa9ad9885eb4f22c__section_lp4_rwx_kzb"/>
+
+## Prerequisites
+
+To call the methods of this SCIM REST API you must have a system as administrator \(technical user\) with an assigned *Manage Users* role.
+
+For more information, see [Add System as Administrator](../Operation-Guide/add-administrators-bbbdbdd.md#loiocefb742a36754b18bbe5c3503ac6d87c), and [Edit Administrator Authorizations](../Operation-Guide/edit-administrator-authorizations-86ee374.md).
+
 **Related Information**  
 
 

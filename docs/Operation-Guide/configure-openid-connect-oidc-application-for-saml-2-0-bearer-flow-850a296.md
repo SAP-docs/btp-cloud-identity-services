@@ -111,7 +111,7 @@ To configure an OpenID Connect \(OIDC\) trusted application in the administratio
     > ### Note:  
     > Beware that for each flow the respective grant type must be selected. All other grant types can be deselected if they aren't required by the application.
 
-8.  **Optional:** \(If you have added a second signing certificate in *Tenant Settings* or an application certificate in *Applications*\) Under *Identity Provider Certificates*, choose the certificate to be used when a request to the application is signed.
+8.  **Optional:** \(If you have added signing certificates in *Tenant Settings* or an application certificate in *Applications*.\) Under *Identity Provider Certificates*, choose the certificate to be used when a request to the application is signed.
 
 
     <table>
@@ -135,7 +135,7 @@ To configure an OpenID Connect \(OIDC\) trusted application in the administratio
     </td>
     <td valign="top">
     
-    This is the default setting. When the option is enabled, the certificate that is set as *Default* in *Tenant Settings* \> *SAML 2.0 Configuration* \> *Signing Certificates* is used when a request to the application is signed.
+    This is the default setting. When the option is enabled, the certificate that is set as *Default* in *Tenant Settings* \> *Single Sign-On* \> *OpenID Connect Configuration* \> *Signing Certificates* is used when a request to the application is signed.
     
     </td>
     </tr>
@@ -147,16 +147,16 @@ To configure an OpenID Connect \(OIDC\) trusted application in the administratio
     </td>
     <td valign="top">
     
-    When the option is disabled, the certificate that is set as *Active* in the list is used when a request to the application is signed. You can choose the active certificate from the list.
+    When this option is disabled, the certificate that is set as *Active* in the list is used when a request to the application is signed. You can choose the active certificate from the list.
 
     > ### Tip:  
-    > To add an application certificate for the specific application, go to *Applications* \> *choose the application you want to edit* \> *Single Sign-On* \> *Identity Provider Certificates* \> *\+Add*.
+    > To add an application certificate for the specific application, go to *Applications* \> *choose the application you want to edit* \> *Single Sign-On* \> *OpenID Connect Configuration* \> *Certificates* \> *Add*.
 
     > ### Caution:  
     > The application will stop working if the configuration of the application is not updated with the new certificate.
 
     > ### Note:  
-    > Your choice of *Active* certificate in the list is not related with the choice of *Default* certificate in *Tenant Settings* \> *SAML 2.0 Configuration* \> *SAML 2.0* \> *Signing Certificates*.
+    > Your choice of *Active* certificate in the list is not related with the choice of *Default* certificate in *Tenant Settings* \> *Single Sign-On* \> *OpenID Connect Configuration* \> *Signing Certificates*.
 
 
     
@@ -164,8 +164,10 @@ To configure an OpenID Connect \(OIDC\) trusted application in the administratio
     </tr>
     </table>
     
+    For more information, see [Rotate Signing Certificates for OpenID Connect Applications](rotate-signing-certificates-for-openid-connect-applications-bb4eee1.md).
+
     > ### Tip:  
-    > When the default identity provider certificate is changed with a new one, and the old one is not used anymore, we recommend you to delete the old certificate.
+    > When the default signing certificate is changed to a new one, and the old one isn't used anymore, we recommend you delete the old certificate.
 
 9.  Save your selection. Once the application has been changed, the system displays the message ***Application *<name of application\>* updated***.
 

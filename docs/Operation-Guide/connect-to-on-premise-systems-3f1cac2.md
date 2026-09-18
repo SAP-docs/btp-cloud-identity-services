@@ -277,11 +277,13 @@ If your provisioning scenarios involve on-premise systems, this requires a separ
 
 5.  Choose *Create*, select the *connectivity* plan and then *Next*.
 
-    > ### Note:  
-    > If the connectivity plan is not present, navigate to *Entitlements* \> *Configure Entitlements* \> *Add Service Plans*. Search for *Cloud Identity Services* \> *connectivity plan*, add it as service plan and save your changes.
+    If the connectivity plan is not present, navigate to *Entitlements* \> *Configure Entitlements* \> *Add Service Plans*. Search for *Cloud Identity Services* \> *connectivity plan*, add it as service plan and save your changes.
 
     > ### Note:  
     > You can create only one subscription plan per subaccount. This means, you cannot have connectivity along with additional-tenant plan in the same subaccount.
+
+    > ### Note:  
+    > The Cloud Foundry subaccount with the connectivity plan is involved only in setting up the connection, not in transferring data. It is used to establish the tunnel between the SAP Cloud Identity Services tenants \(Identity Authentication and Identity Provisioning\) and the SAP Cloud Connector. No business data passes through the Cloud Foundry subaccount or its region. It flows directly between the on-premise system and SAP Cloud Identity Services.
 
 6.  From the *Cloud Service Type* dropdown, choose for what type of tenant \(test or productive\) you want to use the subaccount.
 

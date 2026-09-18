@@ -8,7 +8,7 @@ SAP Cloud Identity Services support both SAP-managed and customer-managed integr
 
 ## Overview
 
-SAP-managed refers to a delivery approach in which SAP is responsible for key technical and operational aspects of the solution. This reduces complexity for customers and provides a consistent, best-practice experience. SAP manages the software lifecycle, including provisioning, technical integration, monitoring, automatic updates, backups, and off-boarding. For more information, see [3709792](https://me.sap.com/notes/3709792) and [SAP's Responsibilities](https://help.sap.com/docs/CROSS_PRODUCT_BUSINESS_SUITE/ced859289b25464c9c6a3a32c60a815a/151e949f76114fbf9b69bb33e32d4c0d.html#sap's-responsibilities).
+SAP-managed refers to a delivery approach in which SAP is responsible for key technical and operational aspects of the solution. This reduces complexity for customers and provides a consistent, best-practice experience. SAP manages the software lifecycle, including provisioning, technical integration, monitoring, automatic updates, backups, and off-boarding. For more information, see SAP Note [3709792](https://me.sap.com/notes/3709792) and [SAP's Responsibilities](https://help.sap.com/docs/CROSS_PRODUCT_BUSINESS_SUITE/ced859289b25464c9c6a3a32c60a815a/151e949f76114fbf9b69bb33e32d4c0d.html#sap's-responsibilities).
 
 Customer-managed refers to a delivery approach in which customers are responsible for configuring and maintaining their tenants according to their business requirements. This allows customers to adapt features and functionality to their specific needs. For more information, see [Your Responsibilities](https://help.sap.com/docs/CROSS_PRODUCT_BUSINESS_SUITE/ced859289b25464c9c6a3a32c60a815a/151e949f76114fbf9b69bb33e32d4c0d.html#your-responsibilities).
 
@@ -49,6 +49,27 @@ What does SAP-managed mean for the individual services within SAP Cloud Identity
 For SAP Cloud Identity Services, you can monitor and troubleshoot the parts you manage. For more information, see [Monitoring and Troubleshooting](Monitoring-and-Reporting/monitoring-and-troubleshooting-b8382ee.md).
 
 If you encounter issues, you can report an incident to SAP Support. For information, see [Getting Support](getting-support-06818b2.md).
+
+
+
+## SAP-Managed IAM for Joule
+
+SAP-managed IAM for Joule uses similar principles to SAP-managed IAM for the SAP Business Suite, but data flows in the opposite direction. In the Business Suite model, SAP Cloud Identity Services is the authoritative source for user and role data. Assignments are distributed outward to connected applications. In the Joule model, user records and group assignments originate in each line-of-business application. Identity provisioning jobs read this data from the line-of-business system into SAP Cloud Identity Services. The jobs then write the global user ID back to the line-of-business system to link the records. The line-of-business system remains the authoritative source for user and role data.
+
+This difference reflects the current state of Joule on-boarding: the system reads and replicates existing data in the line-of-business system rather than replacing line-of-business-managed assignments with centrally managed ones. Fully centralized assignment management in SAP Cloud Identity Services \(the harmonized model\) is planned for a future release.
+
+The following restrictions and requirements apply to identity provisioning for SAP-managed Joule, in addition to those described in the *Identity Provisioning* section above:
+
+-   You must manually import SAP-managed provisioning job templates from SAP Note [3784171](https://me.sap.com/notes/3784171). The system doesn't yet create jobs automatically when you activate Joule for a line-of-business application.
+
+-   You must set up the SAP-managed provisioning jobs after the application representing the line-of-business system already exists in SAP Cloud Identity Services. This ensures that application-specific groups created by the provisioning job are associated with the correct application.
+
+-   Before you run the provisioning jobs, every user in scope must have logged in at least once to the line-of-business application using SAP Cloud Identity Services as the identity provider. The system can't automatically consolidate users who haven't signed in yet.
+
+-   For SAP S/4HANA Cloud, the communication arrangement for SAP-managed identity provisioning uses communication scenario `SAP_COM_1265`.
+
+-   You don't need identity provisioning jobs for SAP LeanIX. The access token issued by LeanIX already contains the required group information.
+
 
 **Related Information**  
 

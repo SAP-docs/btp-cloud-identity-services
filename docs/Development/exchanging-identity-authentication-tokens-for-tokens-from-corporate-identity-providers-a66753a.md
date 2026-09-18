@@ -2,7 +2,7 @@
 
 # Exchanging Identity Authentication Tokens for Tokens from Corporate Identity Providers
 
-The service endpoint returns the tokens issued by the corporate identity provider received during the OpenID Connect \(OIDC\) authentication process. Use this endpoint when you integrate with external applications that don't accept tokens from Identity Authentication and require instead tokens issued from the corporate identity provider.
+This service endpoint returns the tokens issued by the corporate identity provider during the OpenID Connect \(OIDC\) authentication process. Use this endpoint when you integrate with external applications that don't accept tokens from Identity Authentication and require tokens issued from the corporate identity provider instead.
 
 
 
@@ -10,11 +10,11 @@ The service endpoint returns the tokens issued by the corporate identity provide
 
 ## Prerequisites
 
--   For your business application, there’s an OpenID Connect \(OIDC\) application in Identity Authentication.
+-   For your business application, there’s an OIDC application in Identity Authentication.
 
     For more information, see [Create OpenID Connect \(OIDC\) Application](../Operation-Guide/create-openid-connect-oidc-application-62fb1c3.md).
 
--   For your OpenID Connect \(OIDC\) application in Identity Authentication, you've prepared an authentication credential for the API call. The API supports the following authentication schemes:
+-   You prepared an authentication credential for the API call for your OIDC application in Identity Authentication. The API supports the following authentication schemes:
 
     -   Basic
 
@@ -25,11 +25,14 @@ The service endpoint returns the tokens issued by the corporate identity provide
 
     For more information, see [API Authentication](../Operation-Guide/api-authentication-9d200d5.md).
 
--   Your business application has a corporate identity provider as the default identity provider using OpenID Connect \(OIDC\).
+-   Your business application has a corporate identity provider as the default identity provider using OIDC.
 
     For more information, see [Configure Trust with OpenID Connect Corporate Identity Provider](../Operation-Guide/configure-trust-with-openid-connect-corporate-identity-provider-8ff83a1.md) and [Choose Default Identity Provider for an Application](../Operation-Guide/choose-default-identity-provider-for-an-application-e9d8274.md).
 
--   The user, who needs a token exchange, has authenticated to this application using Identity Authentication and the corporate OpenID Connect \(OIDC\) identity provider.
+-   The user has authenticated to this application using Identity Authentication and the corporate OIDC identity provider.
+
+    > ### Note:  
+    > This endpoint works only with a corporate identity provider configured for OIDC. It isn't supported for SAML 2.0 corporate identity providers.
 
 
 
@@ -217,6 +220,9 @@ Request body
 </td>
 </tr>
 </table>
+
+> ### Restriction:  
+> > The `assertion` token must be session-bound. Tokens that use the `offline_access` scope are explicitly decoupled from the web session and can't be used with this endpoint. The token itself carries no claim that indicates whether it uses `offline_access` so control this at the point of token acquisition. Ensure the authorization request that produces the token doesn't include `offline_access`.
 
 
 

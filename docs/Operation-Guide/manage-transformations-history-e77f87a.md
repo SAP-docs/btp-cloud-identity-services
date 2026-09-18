@@ -93,6 +93,11 @@ Who modified the transformation:
 
 When modifying the transformation, saving your changes is only allowed if you provide a description.
 
+> ### Recommendation:  
+> Keep the transformation change description as short as possible. Note that some languages and special characters may consume more space than others.
+
+
+
 </td>
 </tr>
 <tr>

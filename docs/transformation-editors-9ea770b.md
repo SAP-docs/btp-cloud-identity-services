@@ -28,6 +28,12 @@ This editor allows you to graphically model the entities \(users, groups, roles\
 > ### Note:  
 > The graphical editor is available only for Identity Provisioning tenants running on SAP Cloud Identity infrastructure. It is the default editor.
 
+> ### Note:  
+> By default, the transformation opens in the graphical editor. However, the availability of the graphical editor depends on the total number of mappings across all entities. The JSON editor is always available.
+> 
+> -   500 mappings or fewer: Both the graphical and JSON editors are available, and you can switch between them.
+> -   More than 500 mappings: The transformation can be viewed and edited only in the JSON editor. Switching to the graphical editor is not supported.
+
 The following interactive screenshot shows the main elements of the graphical editor. Hover over the image and click highlighted areas for more information.
 
 ![](images/Graphical_Editor_f197801.png)

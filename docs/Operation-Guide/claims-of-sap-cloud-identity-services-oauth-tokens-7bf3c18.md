@@ -339,7 +339,7 @@ The session ID is used to track the session of a user over multiple applications
 </td>
 <td valign="top">
 
-The subject is a unique identifier for the user for whom the token was issued.
+The subject is a unique identifier for the user for whom the token is issued. Identity Authentication rejects a token request when the subject claim of the token matches the client ID of the requesting Identity Authentication application.
 
 </td>
 </tr>
