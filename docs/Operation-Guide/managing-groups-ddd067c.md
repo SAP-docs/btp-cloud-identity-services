@@ -29,6 +29,8 @@ A group is a collection of users. Groups serve to create sets of users who have 
 
 [Managing Technical Users](managing-technical-users-fd1a636.md "As a user with assigned special policy authorizations, you can manage the technical users in the administration console for SAP Cloud Identity Services.")
 
+[Managing Agents](managing-agents-a51e764.md "Agent identities automatically appear in SAP Cloud Identity Services after you deploy agents. You can use SAP Cloud Identity Services to review and manage access to these agents.")
+
 [Managing Users](managing-users-228428f.md "Tenant administrators can manage user accounts via the administration console for SAP Cloud Identity Services, and via APIs.")
 
 [Configuring Provisioning Systems](configuring-provisioning-systems-f149f76.md "Configure provisioning systems for synchronizing users and groups between business applications.")

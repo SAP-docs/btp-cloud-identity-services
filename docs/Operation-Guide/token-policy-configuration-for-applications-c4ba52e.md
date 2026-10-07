@@ -88,7 +88,10 @@ The default value is 1.
 </table>
 
 > ### Remember:  
-> The default configurations for the token policy per application are equal to the tenant token policy. If you configure new values for an application, the service ignores the tenant token policy for that application. For more information about the tenant token policy, see [Tenant OpenID Connect \(OIDC\) Configurations](tenant-openid-connect-oidc-configurations-3d6abcc.md)
+> The default configurations for the token policy per application are the tenant token policy. If you configure new values for an application, the service ignores the tenant token policy for that application. For more information about the tenant token policy, see [Tenant OpenID Connect \(OIDC\) Configurations](tenant-openid-connect-oidc-configurations-3d6abcc.md)
+
+> ### Note:  
+> The effective token validity for OIDC applications cannot exceed the Global Session Timeout configured at the tenant level. If the session timeout is shorter than the token policy values configured here, access tokens are capped at the remaining session duration, and refresh tokens cannot be renewed beyond session expiry. Exchanging a refresh token does not extend the session. For more information, see [Configure Session Timeout](configure-session-timeout-5ca23e4.md).
 
 **Offline Access**
 
@@ -226,7 +229,17 @@ All tokens are generated in the opaque format.
 </tr>
 </table>
 
-To configure the token policy, proceed as follows:
+**Enforce Compliant OIDC Issuer** 
+
+If you notice this configuration option in your application, the default configuration of the tenant issuer is not OIDC compliant. This configuration can cause your application to
+
+-   Fail OIDC discovery.
+-   Fail token validation in standard libraries.
+-   Be unable to interoperate with other OIDC-compliant systems.
+
+When enabled, the issuer of tokens for this application always starts with "`https://`".
+
+To configure an application-specific token policy, proceed as follows:
 
 
 
@@ -247,15 +260,17 @@ To configure the token policy, proceed as follows:
 
 5.  Under *Single Sign-On*, choose *OpenID Connect Configuration*.
 
-6.  Under the *Authentication* tab, choose *Authentication Policy \(Custom\)*.
+6.  Under the *Authentication* tab, choose *Authentication Policy \(*<Default or Custom\>*\)*.
 
-7.  Configure the token policy for the application.
+7.  Choose *Edit*.
+
+8.  Configure the token policy for the application.
 
     If needed, use the reset button to set to the default value.
 
-8.  **Optional:** Choose values for the *Advanced Settings* configuration from the drop-downs.
+9.  **Optional:** Choose values for the *Advanced Settings* configuration.
 
-9.  Save your changes.
+10. Save your changes.
 
 
 **Related Information**  

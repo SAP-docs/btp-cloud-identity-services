@@ -80,3 +80,10 @@ Group import is only supported at the tenant level.
 
 For more information, see [Import Groups via CSV File](Operation-Guide/import-groups-via-csv-file-daf96bd.md)
 
+**Related Information**  
+
+
+[Centralized Provisioning with Identity Directory](centralized-provisioning-with-identity-directory-9d0235c.md "Identity Directory is the persistency layer of SAP Cloud Identity Services, providing a central place for storing and managing users and groups. You can use it in centralized provisioning scenarios for managing user access to SAP cloud applications from a single, central location.")
+
+[Central Store-Based Provisioning](central-store-based-provisioning-33eae39.md "Central store-based provisioning enables the automatic provisioning of application-specific groups from the Identity Directory to the target systems whenever changes occur. These changes include user assignments or modifications of group attributes.")
+

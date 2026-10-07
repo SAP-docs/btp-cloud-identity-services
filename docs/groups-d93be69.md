@@ -289,7 +289,7 @@ You can
 
 [Agents](agents-12bef24.md "Agent identity represents AI and automation agents in SAP Cloud Identity Services. Agents can authenticate, receive authorization, and be managed like human users while retaining agent-specific capabilities and security controls.")
 
-[Authorization Policies](authorization-policies-01ddefa.md "Authorization Management enables you to refine authorization policies that give access to resources in enabled SAP BTP-based business applications. Restrict policies based on the values of user or business object attributes. Assign policies to users with the group management capabilities of the identity directory.")
+[Authorization Policies](authorization-policies-01ddefa.md "Authorization Management lets administrators control who can access what in business applications.")
 
 [Cookies](cookies-e60fd04.md "")
 

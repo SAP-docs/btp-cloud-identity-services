@@ -68,5 +68,9 @@ Once the procedure is executed, any change to an attribute value or a member of 
 **Related Information**  
 
 
+[User and Group Creation in Identity Directory](user-and-group-creation-in-identity-directory-efcb839.md "Learn how to create users and groups in the Identity Directory — the persistency layer of SAP Cloud Identity Services.")
+
+[Centralized Provisioning with Identity Directory](centralized-provisioning-with-identity-directory-9d0235c.md "Identity Directory is the persistency layer of SAP Cloud Identity Services, providing a central place for storing and managing users and groups. You can use it in centralized provisioning scenarios for managing user access to SAP cloud applications from a single, central location.")
+
 [**Blog Post**: Taking Groups to the Next Level with Application-Specific Groups](https://community.sap.com/t5/technology-blogs-by-sap/taking-groups-to-the-next-level-with-application-specific-groups/ba-p/13956003)
 

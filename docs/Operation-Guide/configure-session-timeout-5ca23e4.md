@@ -31,6 +31,11 @@ When the IdP session has expired, and the application session has also expired, 
 5.  Grants access.
 6.  User accesses content.
 
+> ### Caution:  
+> For OIDC applications, the Global Session Timeout acts as a hard upper bound on token validity. Access token lifetimes are capped at the remaining session duration, and refresh tokens cannot be issued or renewed beyond the active session, regardless of the token policy configured for the application or tenant. Exchanging a refresh token does not extend the session. If a refresh token is sent with one minute of session lifetime remaining, the resulting token is valid for one minute only.
+> 
+> Configuring short session timeouts \(for example, 15–30 minutes\) can cause users to reauthenticate more frequently than expected in token-based integrations, even when the application's token policy is set to longer validity periods.
+
 > ### Remember:  
 > It takes 2 minutes for the configuration changes to take place.
 

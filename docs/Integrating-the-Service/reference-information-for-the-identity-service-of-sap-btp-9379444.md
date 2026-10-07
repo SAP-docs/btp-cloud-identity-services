@@ -264,6 +264,11 @@ Sets the lifetime in seconds of tokens issued by the service. The value can rang
 
 The default value is 3600 seconds, which translates to 1 hour.
 
+> ### Note:  
+> The tenant-level Global Session Timeout is an upper bound on the effective token lifetime. If the configured `token-validity` exceeds the remaining session duration, the issued access token is valid only for the time left in the session.
+
+
+
 </td>
 </tr>
 <tr>
@@ -277,6 +282,11 @@ The default value is 3600 seconds, which translates to 1 hour.
 Sets the refresh lifetime of tokens issued by the service. During the refresh lifetime of a token, the service can reissue the token for a user. The value can range from 3600 to 15552000, in other words, from 1 hour to 180 days. Setting the value to 0 disables the refreshing of tokens.
 
 The default value is 43200 seconds, which translates to 12 hours.
+
+> ### Note:  
+> The tenant-level Global Session Timeout is an upper bound on refresh token validity. Refresh tokens cannot be issued or renewed beyond the remaining session lifetime. Exchanging a refresh token does not extend the session. The resulting token's validity is limited to the time remaining when the exchange occurs.
+
+
 
 </td>
 </tr>

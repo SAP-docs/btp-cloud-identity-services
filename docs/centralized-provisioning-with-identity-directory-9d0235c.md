@@ -1373,3 +1373,10 @@ You can use the identity directory as a SCIM 2.0 based proxy connector. Before e
 
 When a proxy system is connected to an external backend system \(in the case of SAP Identity Management this means the exported CSV file is imported into the Identity Management Admin UI and a repository is configured\), you can start managing the users and groups into this external system. Usually, the first operation is the initial load of the existing entities into your external system. When this load has finished, changes in the external system, such as creating new users or updating existing ones, can trigger CRUD requests back to the proxy system.
 
+**Related Information**  
+
+
+[User and Group Creation in Identity Directory](user-and-group-creation-in-identity-directory-efcb839.md "Learn how to create users and groups in the Identity Directory — the persistency layer of SAP Cloud Identity Services.")
+
+[Central Store-Based Provisioning](central-store-based-provisioning-33eae39.md "Central store-based provisioning enables the automatic provisioning of application-specific groups from the Identity Directory to the target systems whenever changes occur. These changes include user assignments or modifications of group attributes.")
+

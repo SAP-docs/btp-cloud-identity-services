@@ -36,6 +36,10 @@ This scenario includes the following features:
 **Related Information**  
 
 
+[Business-to-Consumer](business-to-consumer-fd11ee2.md "The business-to-consumer scenario is related to any actions performed by the consumer, such as registration to applications and consumer retailing. In this scenario, administrators facilitate the consumer processes, but they do not act on the consumer's behalf.")
+
+[Business-to-Employee](business-to-employee-3aecb4c.md "The business-to-employee scenario is related to services for employees of an organization. Employees can access various applications with one logon. Furthermore, administrators can upload employees data by using the user import functionality.")
+
 [Administration](Operation-Guide/administration-6a8e67c.md "The SAP Cloud Identity Services administration and configuration tasks are intended for administrators. They include configuring tenant settings, applications, authorization policies and provisioning, as well as managing users and groups, to ensure proper operations.")
 
 [Development](Development/development-55ab9b8.md "The developer guide is aimed mainly at organization developers who can implement configurations in addition to the ones in the administration console of Identity Authentication.")

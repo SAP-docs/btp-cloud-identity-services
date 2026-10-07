@@ -39,9 +39,9 @@ SAP Cloud Identity Services sends an email notification when your signing certif
 
 3.  Check that there's space for a new signing certificate.
 
-    You can store two signing certificates.
+    You can store five signing certificates.
 
-    Delete the inactive certificate if you already have two.
+    Delete an inactive certificate if you already have five.
 
     > ### Caution:  
     > Wait for any existing tokens signed by the inactive signing certificate to expire.
@@ -141,9 +141,16 @@ SAP Cloud Identity Services sends an email notification when your signing certif
     > ### Note:  
     > Configuring applications one at a time reduces the potential for downtime.
 
-    1.  Navigate to *Applications and Resources* \> *Applications* and select the application for which you want to update the trust configuration.
+    1.  Under *Applications and Resources*, choose the *Applications* tile.
 
-    2.  Under *Trust* \> *Single Sign-On* \> *OpenID Connect Configuration* \> *Identity Provider Certificates*, select the new certificate in the *Active* column.
+    2.  Choose the application that you want to edit.
+
+        > ### Note:  
+        > Filter the list items in the search field by typing the name, display name, application ID, organization ID, or client ID, or choose the application from the list on the left.
+        > 
+        > If you don’t have a created application in your list, you can create one. For more information, see [Create a New Application](create-a-new-application-0d4b255.md).
+
+    3.  Under *Trust* \> *Single Sign-On* \> *OpenID Connect Configuration* \> *Identity Provider Certificates*, select the new certificate in the *Active* column.
 
 
 6.  Upload the new certificate to the backend of the trusted application.

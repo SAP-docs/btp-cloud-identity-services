@@ -251,6 +251,8 @@ Assign and unassign groups via the administration console
 
 [Managing Technical Users](managing-technical-users-fd1a636.md "As a user with assigned special policy authorizations, you can manage the technical users in the administration console for SAP Cloud Identity Services.")
 
+[Managing Agents](managing-agents-a51e764.md "Agent identities automatically appear in SAP Cloud Identity Services after you deploy agents. You can use SAP Cloud Identity Services to review and manage access to these agents.")
+
 [Managing Groups](managing-groups-ddd067c.md "Tenant administrators can create groups, and assign and unassign these groups to users via the administration console for SAP Cloud Identity Services.")
 
 [Configuring Provisioning Systems](configuring-provisioning-systems-f149f76.md "Configure provisioning systems for synchronizing users and groups between business applications.")

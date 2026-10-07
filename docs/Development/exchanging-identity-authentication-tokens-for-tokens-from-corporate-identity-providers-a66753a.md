@@ -145,7 +145,7 @@ string
 </td>
 <td valign="top">
 
-Provide the Identity Authentication user token that identifies Identity Authentication session.
+Provide the Identity Authentication user token that identifies Identity Authentication session or refresh token.
 
 </td>
 <td valign="top">
@@ -220,9 +220,6 @@ Request body
 </td>
 </tr>
 </table>
-
-> ### Restriction:  
-> > The `assertion` token must be session-bound. Tokens that use the `offline_access` scope are explicitly decoupled from the web session and can't be used with this endpoint. The token itself carries no claim that indicates whether it uses `offline_access` so control this at the point of token acquisition. Ensure the authorization request that produces the token doesn't include `offline_access`.
 
 
 

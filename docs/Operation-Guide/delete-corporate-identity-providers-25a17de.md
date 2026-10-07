@@ -22,7 +22,7 @@ As a tenant administrator, you can delete one or more corporate identity provide
 A *Delete Identity Providers* operation removes the identity providers and all of their configurations from the tenant of Identity Authentication.
 
 > ### Note:  
-> If you want to delete an identity provider that is in use for conditional authentication, or is set as a default identity provider for an application, edit the rules, or change the default identity provider for the application. For more information see [Authenticating Identity Provider for an Application](authenticating-identity-provider-for-an-application-b3aae12.md).
+> If you want to delete an identity provider that is in use for conditional authentication, client authentication, or is set as a trusted identity provider or a default identity provider for an application, edit the rules or the client authentication, or change the trusted or default identity provider for the application. For more information see [Authenticating Identity Provider for an Application](authenticating-identity-provider-for-an-application-b3aae12.md).
 
 To delete one or more identity providers, not used not used by applications in the tenant, choose one of the following options:
 

@@ -43,13 +43,3 @@ The Data Control Language \(DCL\) enables developers to define authorization pol
 
 DCL provides essential elements including rules, resources, conditions, attributes, schemas, and packages for enterprise-grade access control implementation. For more information, see [SAP Cloud Identity Services Developer Guide](https://sap.github.io/cloud-identity-developer-guide/).
 
-
-
-## Process
-
-Developers define the base policies with data control language \(DCL\) and upload them to the authorization management server. The Authorization Management Service forwards the base policies to the DCL compiler, which transforms DCL policies into an internal format \(DCN\) and assembles them by forming authorization bundles in a bundle storage in SAP Cloud Identity Services. The bundle gateway \(BGW\) retrieves the authorization bundles on request from the authorization decision controller \(ADC\), which uses the authorization bundles as input to perform the authorization checks. This happens in the application itself by using the client libraries of Authorization Management. See [Developing Authorizations](developing-authorizations-22928a2.md).
-
-Administrators use the base policies to create custom policies with modified rules and assign them to users. See [Configuring Authorization Policies](../Operation-Guide/configuring-authorization-policies-982ac5f.md).
-
-Users of the business application can log on and have access to the resources, which are allowed by the authorization policies.
-

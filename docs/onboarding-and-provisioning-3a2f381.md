@@ -11,3 +11,5 @@ This section describes the available onboarding and provisioning scenarios and t
 
 [User Engagement Scenarios](user-engagement-scenarios-e33d045.md "Identify your relevant user engagement scenario supported by Identity Authentication: consumer (business-to-consumer scenario), partner (business-to-business scenario), and employee (business-to-employee scenario).")
 
+[Identity and Access Management for Joule](identity-and-access-management-for-joule-050287e.md "Identity and access management architecture required for Joule, including the requirement for a single SAP Cloud Identity Services tenant, SAP-managed provisioning, and global user ID assignment. Understand this foundation before you implement Joule to ensure consistent authentication and authorization across all connected SAP applications.")
+

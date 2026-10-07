@@ -8,11 +8,16 @@ SAP Cloud Identity Services support both SAP-managed and customer-managed integr
 
 ## Overview
 
-SAP-managed refers to a delivery approach in which SAP is responsible for key technical and operational aspects of the solution. This reduces complexity for customers and provides a consistent, best-practice experience. SAP manages the software lifecycle, including provisioning, technical integration, monitoring, automatic updates, backups, and off-boarding. For more information, see SAP Note [3709792](https://me.sap.com/notes/3709792) and [SAP's Responsibilities](https://help.sap.com/docs/CROSS_PRODUCT_BUSINESS_SUITE/ced859289b25464c9c6a3a32c60a815a/151e949f76114fbf9b69bb33e32d4c0d.html#sap's-responsibilities).
+SAP-managed refers to a delivery approach in which SAP is responsible for key technical and operational aspects of the solution. This approach reduces complexity for you and provides a consistent, best-practice experience. SAP manages the software lifecycle, including provisioning, technical integration, monitoring, automatic updates, backups, and offboarding. For more information, see SAP Note [3709792](https://me.sap.com/notes/3709792) and [SAP's Responsibilities](https://help.sap.com/docs/CROSS_PRODUCT_BUSINESS_SUITE/ced859289b25464c9c6a3a32c60a815a/151e949f76114fbf9b69bb33e32d4c0d.html#sap's-responsibilities).
 
-Customer-managed refers to a delivery approach in which customers are responsible for configuring and maintaining their tenants according to their business requirements. This allows customers to adapt features and functionality to their specific needs. For more information, see [Your Responsibilities](https://help.sap.com/docs/CROSS_PRODUCT_BUSINESS_SUITE/ced859289b25464c9c6a3a32c60a815a/151e949f76114fbf9b69bb33e32d4c0d.html#your-responsibilities).
+> ### Note:  
+> To use the SAP-managed delivery approach, your tenant must run on the SAP Cloud Identity Services infrastructure. If your tenant is still running on the Neo environment, you must first migrate it to the SAP Cloud Identity Services infrastructure.
+> 
+> For more information, see [Migrate Identity Provisioning Bundle Tenant](https://help.sap.com/docs/identity-provisioning/identity-provisioning/migrate-identity-provisioning-bundle-tenant?version=Cloud&ai=true).
 
-SAP-managed SAP Cloud Identity Services support the following delivery approaches: SAP can manage both the tenant and the integrated applications. Customers can also manage their own tenants, with SAP managing the integrated applications connected to those tenants.
+Customer-managed refers to a delivery approach in which you are responsible for configuring and maintaining your tenants according to your business requirements. This approach allows you to adapt features and functionality to your specific needs. For more information, see [Your Responsibilities](https://help.sap.com/docs/CROSS_PRODUCT_BUSINESS_SUITE/ced859289b25464c9c6a3a32c60a815a/151e949f76114fbf9b69bb33e32d4c0d.html#your-responsibilities).
+
+SAP-managed SAP Cloud Identity Services support the following delivery approaches: SAP can manage both the tenant and the integrated applications. You can also manage your own tenants, with SAP managing the integrated applications connected to those tenants.
 
 What does SAP-managed mean for the individual services within SAP Cloud Identity Services?
 
@@ -35,11 +40,14 @@ What does SAP-managed mean for the individual services within SAP Cloud Identity
 
 ## Identity Provisioning
 
--   SAP-managed source and target systems are automatically preconfigured and maintained by SAP. As a result, these systems are not displayed in the administration console. You cannot manually schedule or run provisioning jobs for them. Also, you cannot view their job logs.
+-   SAP-managed source and target systems are automatically preconfigured and maintained by SAP. As a result, these systems are not displayed in the administration console. You cannot manually schedule or run provisioning jobs for them. Also, you cannot access their job logs.
 
 -   Data replication is automated. Provisioning jobs run automatically every 30 minutes.
 
 -   You can still create and configure provisioning systems, as well as schedule and run provisioning jobs according to your business requirements.
+
+    > ### Caution:  
+    > Do not create configurations that duplicate or overlap with SAP-managed provisioning flows. This includes configuring jobs and modifying transformations. Running both SAP-managed and customer-managed provisioning for the same back-end systems within the same SAP-managed flow, can result in data inconsistencies.
 
 
 
@@ -54,13 +62,19 @@ If you encounter issues, you can report an incident to SAP Support. For informat
 
 ## SAP-Managed IAM for Joule
 
-SAP-managed IAM for Joule uses similar principles to SAP-managed IAM for the SAP Business Suite, but data flows in the opposite direction. In the Business Suite model, SAP Cloud Identity Services is the authoritative source for user and role data. Assignments are distributed outward to connected applications. In the Joule model, user records and group assignments originate in each line-of-business application. Identity provisioning jobs read this data from the line-of-business system into SAP Cloud Identity Services. The jobs then write the global user ID back to the line-of-business system to link the records. The line-of-business system remains the authoritative source for user and role data.
+> ### Caution:  
+> This section is still work in progress. This page contains information about product features that are part of an SAP Early Adopter Care \(EAC\) program. Products or features that are part of an EAC program are not available outside this program.
 
-This difference reflects the current state of Joule on-boarding: the system reads and replicates existing data in the line-of-business system rather than replacing line-of-business-managed assignments with centrally managed ones. Fully centralized assignment management in SAP Cloud Identity Services \(the harmonized model\) is planned for a future release.
+SAP-managed IAM for Joule represents an initial step toward the same unified identity model used for the SAP Business Suite. In the Business Suite model, SAP Cloud Identity Services is the authoritative source for user and role data. Assignments are distributed outward to connected applications. The current Joule model adopts a pragmatic starting point: user records and group assignments originate in each line-of-business application. Identity provisioning jobs read this data from the line-of-business system into SAP Cloud Identity Services. The jobs then write the global user ID back to the line-of-business system to link the records. The line-of-business system remains the authoritative source for user and role data in the current release.
 
-The following restrictions and requirements apply to identity provisioning for SAP-managed Joule, in addition to those described in the *Identity Provisioning* section above:
+This approach enables Joule to reuse existing user and role data without requiring you to restructure your landscapes. Fully centralized assignment management in SAP Cloud Identity Services \(the same harmonized model as the Business Suite\) is planned for a future release.
 
--   You must manually import SAP-managed provisioning job templates from SAP Note [3784171](https://me.sap.com/notes/3784171). The system doesn't yet create jobs automatically when you activate Joule for a line-of-business application.
+For the EAC program, the following restrictions and requirements apply to identity provisioning for SAP-managed Joule, in addition to those described in the *Identity Provisioning* section above:
+
+-   You must manually import SAP-managed provisioning job templates from SAP Note [3784171](https://me.sap.com/notes/3784171). The system doesn't yet create jobs automatically when you activate Joule for a line-of-business application. \(If you are part of the EAC program and need access to this SAP Note, open an incident under BC-IAM-IPS.\)
+
+    > ### Caution:  
+    > Do not modify the imported SAP-managed provisioning job templates. If issues occur, do not create duplicate jobs or change the template configurations. Contact SAP Support for assistance.
 
 -   You must set up the SAP-managed provisioning jobs after the application representing the line-of-business system already exists in SAP Cloud Identity Services. This ensures that application-specific groups created by the provisioning job are associated with the correct application.
 
@@ -92,7 +106,7 @@ The following restrictions and requirements apply to identity provisioning for S
 
 [Groups](groups-d93be69.md "SAP Cloud Identity Services offers groups to organize users based on common characteristics, authorization, or application. Use them to efficiently manage user access and permissions within your organization's SAP Cloud Identity Services environment.")
 
-[Authorization Policies](authorization-policies-01ddefa.md "Authorization Management enables you to refine authorization policies that give access to resources in enabled SAP BTP-based business applications. Restrict policies based on the values of user or business object attributes. Assign policies to users with the group management capabilities of the identity directory.")
+[Authorization Policies](authorization-policies-01ddefa.md "Authorization Management lets administrators control who can access what in business applications.")
 
 [Cookies](cookies-e60fd04.md "")
 

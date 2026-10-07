@@ -2,9 +2,29 @@
 
 # Authorization Policies
 
-Authorization Management enables you to refine authorization policies that give access to resources in enabled SAP BTP-based business applications. Restrict policies based on the values of user or business object attributes. Assign policies to users with the group management capabilities of the identity directory.
+Authorization Management lets administrators control who can access what in business applications.
 
-Authorizations are a critical component of any business domain. For cloud business applications to be enterprise-grade and ready, they must incorporate a robust authorization concept. This involves not only checking permissions for business actions but also ensuring these actions are performed on the correct business objects, known as resources.
+Authorizations can be functional and instance-based. Administrators refine authorization policies that give access to resources in enabled business applications. They can restrict predefined and custom authorization policies based on user and business object attributes and assign them to users with the group management capabilities of the identity directory. See [Configuring Authorization Policies](Operation-Guide/configuring-authorization-policies-982ac5f.md).
+
+
+
+## Prerequisites
+
+In line with SAP's identity and access management \(IAM\) strategy, an identity directory with user profiles is a prerequisite for using Authorization Management. For more information, see [CIO Guide: Identity Lifecycle in SAP Landscapes](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Fwww.sap.com%2Fdocuments%2F2018%2F05%2F38ce7d25-067d-0010-87a3-c30de2ffd8ff.html).
+
+
+
+## Overview
+
+Authorizations are a critical component of any business domain. For cloud business applications to be enterprise-grade and ready, they must incorporate a robust and highly customizable authorization concept. This involves not only checking permissions for business actions but also ensuring these actions are performed on the correct business objects, known as resources.
+
+
+
+## Functional Authorizations
+
+Functional authorizations are mandatory because they define what actions a user can perform in an application, such as reading data, creating records, or administrative tasks.
+
+Following the principle of least privilege, each user receives only the permissions required for their work, with separate authorizations for personas such as administrators, support staff, auditors, key users, and specific roles like accountants or production planners. Authorization must be enforced consistently across all access paths, including user interfaces, APIs, batch processes, and search results.
 
 
 
@@ -12,65 +32,17 @@ Authorizations are a critical component of any business domain. For cloud busine
 
 ## Instance-Based Authorizations
 
-Instance-based authorizations refer to the process of verifying whether a user is permitted to perform a specific action on a particular resource. For example, in a financial application, a user might be authorized to make journal entries, but only within certain company codes. Conversely, the same user might be allowed to execute the closing process at the end of periods for different company codes. This nuanced approach ensures that permissions are tailored to specific business needs and contexts.
+Instance-based authorizations control who can perform specific actions on specific resources. They restrict access to specific data objects within functional authorizations. For example, in a financial application, a user might be authorized to make journal entries, but only within certain company codes. Conversely, the same user might be allowed to execute the closing process at the end of periods for different company codes. This nuanced approach ensures that permissions are tailored to specific business needs and contexts.
 
 
 
 <a name="loio01ddefa221b2445ba7a5e061b67976ed__section_dgy_jmr_3fc"/>
 
-## Authorization Management
+## Using Authorization Policies in Custom Applications
 
-For developers of SAP BTP-based business applications, handling these authorizations should be straightforward. The authorization framework should allow developers to easily declare, enforce, and manage their business-specific authorization models. By leveraging instance-based authorizations, businesses can ensure that their applications are secure, efficient, and tailored to their specific operational needs.
+For developers of SAP BTP based business applications, handling authorizations should be straightforward. The authorization framework enables developers to easily declare and enforce their business-specific authorization models.
 
-The Authorization Management Service of SAP Cloud Identity Services provides libraries and services for developers of SAP BTP-based business applications to declare, enforce, and manage instance based authorization checks. Authorizations are declared as code-based "authorization policies" in the project of the business application, assigned to users, and enforced with client libraries for Node.js, Java, and Go.
-
-The Authorization Managmement Service has the following features:
-
--   Fine granular authorization checks in comparison with role collections on SAP BTP
-
--   Full integration into [Authorization and Access Control](https://cap.cloud.sap/docs/guides/authorization) with the Cloud Application Programming model
-
--   Supports Kubernetes applications
-
--   Value help for authorization administration
-
--   Simple integration of application-to-application, application-to-service, and service-to-service calls with a privileged mode and a simple configuration in the application section of the administration console
-
-
-
-
-<a name="loio01ddefa221b2445ba7a5e061b67976ed__section_f2n_5wm_jfc"/>
-
-## Using Identity Directory
-
-The main additional value comes from the integration into the kernel service of the SAP Cloud Identity Services. A populated identity directory is a prerequisite for the Authorization Management System usage. When considering that customers usually use multiple SAP SaaS applications, and also have some custom apps, they’ll encounter the need to provide user data to some of these apps, for example, for display purposes and value help when they assign users to application objects. The strategy with the identity directory is to let them make users available only once in the SAP Cloud Identity Services and serve the applications from there.
-
-We recommend to automatically assigning authorizations to users based on rules, for example, using the SAP Cloud Identity Services - Identity Provisioning or your corporate identity management system.
-
-
-
-<a name="loio01ddefa221b2445ba7a5e061b67976ed__section_efw_bjn_jfc"/>
-
-## Personas
-
-1.  Developers of the business application, who define the authorization model using base authorization policies and enforce them by implementing authorization checks
-
-2.  Administrators, who manage custom authorization policies from base policies, set business restrictions on policies, and assign both types of policies to application users
-
-3.  Users of the business application, who are checked for specific attributes that authorize them to perform specific actions on specific resources
-
-
-
-
-<a name="loio01ddefa221b2445ba7a5e061b67976ed__section_y5b_z25_jfc"/>
-
-## Process
-
-Developers define the base policies with data control language \(DCL\) and upload them to the authorization management server. The Authorization Management Service forwards the base policies to the DCL compiler, which transforms DCL policies into an internal format \(DCN\) and assembles them by forming authorization bundles in a bundle storage in SAP Cloud Identity Services. The bundle gateway \(BGW\) retrieves the authorization bundles on request from the authorization decision controller \(ADC\), which uses the authorization bundles as input to perform the authorization checks. This happens in the application itself by using the client libraries of Authorization Management. See [Developing Authorizations](Development/developing-authorizations-22928a2.md).
-
-Administrators use the base policies to create custom policies with modified rules and assign them to users. See [Configuring Authorization Policies](Operation-Guide/configuring-authorization-policies-982ac5f.md).
-
-Users of the business application can log on and have access to the resources, which are allowed by the authorization policies.
+There are libraries for developers of SAP BTP based business applications to declare and enforce functional and instance-based authorization. Authorizations are declared as code-based "authorization policies" of the business application and enforced with client libraries for Node.js, Java, and Go, and they provide value help for authorization administration. Authorization Management is fully integrated in the Cloud Application Programming model \([Authorization and Access Control](https://cap.cloud.sap/docs/guides/authorization)\) and supports typical SAP BTP developments \([Developing Authorizations](Development/developing-authorizations-22928a2.md)\), such a Cloud Foundry and Kyma.
 
 **Related Information**  
 
