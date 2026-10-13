@@ -47,7 +47,7 @@ What does SAP-managed mean for the individual services within SAP Cloud Identity
 -   You can still create and configure provisioning systems, as well as schedule and run provisioning jobs according to your business requirements.
 
     > ### Caution:  
-    > Do not create configurations that duplicate or overlap with SAP-managed provisioning flows. This includes configuring jobs and modifying transformations. Running both SAP-managed and customer-managed provisioning for the same back-end systems within the same SAP-managed flow, can result in data inconsistencies.
+    > Do not create configurations that duplicate or overlap with SAP-managed provisioning flows. This includes configuring jobs and modifying transformations. Running both SAP-managed and customer-managed provisioning for the same back-end systems within the same SAP-managed flow, results in data inconsistencies.
 
 
 
