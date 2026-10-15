@@ -11,7 +11,7 @@ Follow this procedure to set up SAP Market Communication for Utilities as a targ
 ## Prerequisites
 
 > ### Restriction:  
-> This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo environment. Bundle tenants running on Neo environment can use it only through **SAP Identity Access Governance** bundle option.
+> This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo. Bundle tenants running on Neo environment can use it only through **SAP Identity Access Governance** bundle option.
 
 To establish the connection between Identity Provisioning and SAP Market Communication for Utilities, you need to set up the communication user in SAP BTP ABAP environment. You can do it now \(as a prerequisite\) or in the process of configuring SAP Market Communication for Utilities as a target system, as described in step 3.
 
@@ -83,7 +83,7 @@ The Identity Provisioning service manages the complete set of **business partner
 5.  Choose the *Properties* tab to configure the connection settings for your system.
 
     > ### Note:  
-    > If your Identity Provisioning tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
+    > If your Identity Provisioning tenant is running on SAP BTP, Neo, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
     > 
     > If one and the same property exists both in the cockpit and in the *Properties* tab, the value set in the *Properties* tab is considered with higher priority.
     > 

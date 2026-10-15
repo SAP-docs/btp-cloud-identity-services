@@ -73,7 +73,7 @@ To update your connector to use a new API, proceed as follows:
         -   `2` - Identity Directory SCIM API \(in short, SCIM API version 2\)
 
 
-
+        For more information, see [Update Identity Authentication](update-identity-authentication-cc35d85.md).
         
         </td>
         </tr>
@@ -123,7 +123,7 @@ To update your connector to use a new API, proceed as follows:
         -   *1* - SAP Integrated Business Planning API: Business User \(Version 1\) is used. This is the default value.
         -   *2* - Identity v4 API \(Version 2\)
 
-
+        For more information, see [Update SAP Integrated Business Planning](update-sap-integrated-business-planning-18d1280.md).
         
         </td>
         </tr>
@@ -221,7 +221,7 @@ To update your connector to use a new API, proceed as follows:
         -   `3` - System for Cross-domain Identity Management \(SCIM\) API is used.
 
 
-
+        For more information, see [Update SAP S/4HANA Cloud Public Edition](update-sap-s-4hana-cloud-public-edition-6339b86.md).
         
         </td>
         </tr>
@@ -529,6 +529,8 @@ To update your connector to use a new API, proceed as follows:
 [Reset Identity Provisioning Settings](reset-identity-provisioning-settings-8c7ba9a.md "Resetting your provisioning settings will delete all provisioning systems configured for your tenant, along with the related job execution logs.")
 
 [Reset Identity Provisioning System](reset-identity-provisioning-system-0bc1e53.md "Resetting an Identity Provisioning system (source or target) deletes all Identity Provisioning operational data.")
+
+[Update Identity Authentication](update-identity-authentication-cc35d85.md "Update the Identity Authentication connector to a new version.")
 
 [Update SAP Integrated Business Planning](update-sap-integrated-business-planning-18d1280.md "Update the SAP Integrated Business Planning connector to a new version.")
 

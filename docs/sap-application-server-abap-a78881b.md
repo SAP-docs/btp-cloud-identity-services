@@ -2113,7 +2113,7 @@ When a proxy system is connected to an external backend system \(in the case of 
 To see an example with SAP Identity Management, see [Hybrid Scenario: SAP Identity Management](Integrating-the-Service/hybrid-scenario-sap-identity-management-6fa419a.md) → sections **Next Steps** and **Future Identity Lifecycle**.
 
 > ### Caution:  
-> Effective **September 2020**, Shanghai \(China\) tenants that reside on SAP BTP, Neo environment can be only accessed on the following domain: `dispatcher.cn1.platform.sapcloud.cn`
+> Effective **September 2020**, Shanghai \(China\) tenants that reside on SAP BTP, Neo can be only accessed on the following domain: `dispatcher.cn1.platform.sapcloud.cn`
 > 
 > So make sure you use the correct domain when you construct your REST API requests.
 > 

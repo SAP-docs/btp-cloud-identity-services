@@ -4,10 +4,22 @@
 
 Update the Identity Authentication connector to a new version.
 
-Following the deprecation of the Identity Authentication SCIM API \(SCIM API v1\), the API will be decommissioned on **November 30, 2026**. You must migrate to its successor, the Identity Directory SCIM API \(SCIM API v2\). This migration requires updating all Identity Authentication provisioning systems \(source, target, and proxy\) from connector version 1 to connector version 2.
+Following the deprecation of the Identity Authentication SCIM API \(SCIM API v1\), the API will be decommissioned on **November 30, 2028**. You must migrate to its successor, the Identity Directory SCIM API \(SCIM API v2\). This migration requires updating all Identity Authentication provisioning systems \(source, target, and proxy\) from connector version 1 to connector version 2.
 
 > ### Note:  
 > Migrate each provisioning system separately and complete one migration before proceeding to the next.
+
+
+
+## Prerequisites
+
+-   When Identity Authentication is the source system \(connector version 1\) and you want to update its version: Verify that the last provisioning job for the Identity Authentication source system using SCIM API v1 completes successfully before starting the update.
+
+-   When Identity Authentication is the target system \(connector version 1\) and you want to update its version: Verify that the last provisioning job for the source systems completes successfully before starting the update.
+
+
+> ### Note:  
+> The update requires a system reset. If the last provisioning job has failed entities in the source system, resolve them before proceeding. Otherwise, Identity Provisioning will not be able to remove them from the target system after the update, and obsolete users may remain indefinitely.
 
 
 
@@ -40,13 +52,23 @@ Following the deprecation of the Identity Authentication SCIM API \(SCIM API v1\
 
         This property must be set for all Identity Authentication target systems.
 
+    -   `ias.support.patch.operation`=***true***
+
+        This property must be set for all Identity Authentication target systems.
+
+    -   `ias.user.automatic.conflict.resolution` =***true***
+
+        This property must be set for all Identity Authentication target systems.
+
 
     For more information, see [List of Properties](../list-of-properties-d6f3577.md).
 
 4.  Select the *Transformations* tab and update the user and group attribute mappings that have changed in SCIM API v2 as explained in [Attributes Mapping](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/migrating-identity-authentication-scim-rest-api-to-identity-directory-service-api?version=Cloud#attributes-mapping).
 
     > ### Example:  
-    > Replace the `mailVerified` attribute from SCIM API v1 with `urn:ietf:params:scim:schemas:extension:sap:2.0:User.emails.verified`.
+    > Replace the following targetPath:
+    > 
+    > `$.mailVerified` with `$['urn:ietf:params:scim:schemas:extension:sap:2.0:User']['mailVerified']`
 
     In addition to updating existing mappings, review the default transformations delivered for SCIM API v2 and add newly supported attributes that are not present in your current configuration. The Identity Authentication connector documentation provides default transformation mappings for both SCIM API v1 and SCIM API v2.
 

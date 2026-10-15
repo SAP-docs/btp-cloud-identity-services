@@ -358,7 +358,7 @@ As proxy operations cannot be maintained by the Identity Provisioning UI, you ne
 **Tip**: The ID of each proxy system \(`system_ID` in the table below\) is a dash-separated string. You can see it at the end of the system URL in the Identity Provisioning UI.
 
 > ### Caution:  
-> Effective *September 2020*, Shanghai \(China\) tenants that reside on SAP BTP, Neo environment should be accessed on the following domain: **dispatcher.cn1.platform.sapcloud.cn**
+> Effective *September 2020*, Shanghai \(China\) tenants that reside on SAP BTP, Neo should be accessed on the following domain: **dispatcher.cn1.platform.sapcloud.cn**
 > 
 > So make sure you use the correct domain when you construct your REST API requests.
 > 

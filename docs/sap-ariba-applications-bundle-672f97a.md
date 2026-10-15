@@ -5,7 +5,7 @@
 SAP Ariba Applications bundle allows you to use the Identity Provisioning service for synchronizing user data between source and target systems. The available source and target systems in this bundle can also be configured as proxy systems for indirect connection to external identity management systems.
 
 > ### Note:  
-> As of March 15, 2022, Identity Provisioning bundle tenants are created only on the infrastructure of SAP Cloud Identity Services. These tenants come with most of the provisioning systems \(connectors\) enabled by default. Identity Provisioning bundle tenants running on SAP BTP, Neo environment have a limited number of connectors enabled by default. These are illustrated in the diagram that follows.
+> As of March 15, 2022, Identity Provisioning bundle tenants are created only on the infrastructure of SAP Cloud Identity Services. These tenants come with most of the provisioning systems \(connectors\) enabled by default. Identity Provisioning bundle tenants running on SAP BTP, Neo have a limited number of connectors enabled by default. These are illustrated in the diagram that follows.
 
 ![](images/IPS_Ariba_Bundle_e70c1cf.png)
 

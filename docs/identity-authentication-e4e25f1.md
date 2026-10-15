@@ -27,7 +27,7 @@ There are two versions of the Identity Authentication SCIM API. They are handled
 -   When the value is set to `1` or the property is not defined \(typical for systems created before versioning was introduced on July 9, 2021\) - Identity Authentication SCIM API \(in short, SCIM API version 1\) is used.
 
     > ### Note:  
-    > The SAP Cloud Identity Services – Identity Authentication SCIM API \(version 1\) will be decommissioned on November 30, 2026. You must use its successor, the Identity Directory SCIM API. This requires updating your Identity Authentication connector from version 1 to version 2, as described in [Update Connector Version](Operation-Guide/update-connector-version-8558733.md)
+    > The SAP Cloud Identity Services – Identity Authentication SCIM API \(version 1\) will be decommissioned on November 30, 2028. You must use its successor, the Identity Directory SCIM API. This requires updating your Identity Authentication connector from version 1 to version 2, as described in [Update Connector Version](Operation-Guide/update-connector-version-8558733.md).
 
 -   When the value is set to `2` - Identity Directory SCIM API \(in short, SCIM API version 2\) is used. This value is set automatically for all manually created systems in the as a source system. For more information, see Identity Provisioning UI after versioning was introduced on July 9, 2021.
 
@@ -77,7 +77,7 @@ To create Identity Authentication as a source system, proceed as follows:
 5.  Choose the *Properties* tab to configure the connection settings for your system.
 
     > ### Note:  
-    > If your Identity Provisioning tenant is running on SAP BTP, Neo environment, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
+    > If your Identity Provisioning tenant is running on SAP BTP, Neo, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
     > 
     > If one and the same property exists both in the cockpit and in the *Properties* tab, the value set in the *Properties* tab is considered with higher priority.
     > 
@@ -124,7 +124,7 @@ To create Identity Authentication as a source system, proceed as follows:
     For example: **https://mytenant.accounts.ondemand.com**
 
     > ### Note:  
-    > If your Identity Authentication Shanghai \(China\) tenants reside on SAP BTP, Neo environment, you should use the following URL pattern: *https://<tenant\_ID\>.accounts.sapcloud.cn/*
+    > If your Identity Authentication Shanghai \(China\) tenants reside on SAP BTP, Neo, you should use the following URL pattern: *https://<tenant\_ID\>.accounts.sapcloud.cn/*
 
 
     

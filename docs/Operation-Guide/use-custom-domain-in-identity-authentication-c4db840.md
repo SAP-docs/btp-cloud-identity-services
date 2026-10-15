@@ -523,7 +523,7 @@ Identity Authentication allows you to use a custom domain that is different from
     </td>
     <td valign="top">
     
-    The host of your custom domain
+    Host of your custom domain in lowercase
     
     </td>
     </tr>
