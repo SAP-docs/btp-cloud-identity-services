@@ -147,7 +147,7 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
     -   *Create new a self-signed certificate with a new private key and the same Subject DN* \> *Next Step* \> *Select key size* \> *Choose validity from the drop down* \> *Next Step* \> *Finish*.
 
         > ### Note:  
-        > The key size can be 2048, 3072 and 4096. The validity period can be 3, 5 and 10 years.
+        > The key size can be 2048, 3072 and 4096. The validity period can be 1, 3, 6 months, 1, 3, 5, or 10 years.
 
     -   *Download your Certificate Signing Request* \> *Next Step* \> *add Subject DN and select key size and validity from the options* \> *Next Step* \> *Download CSR*. Use the downloaded .csr file to generate a certificate from the trusted CA. Copy the newly generated certificate, choose :pencil2:, and paste the certificate as text in the *Certificate Information* field.
 
