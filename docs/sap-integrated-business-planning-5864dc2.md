@@ -754,11 +754,6 @@ SAP Integrated Business Planning provides different APIs for integration with Id
     >         ]
     >       },
     >       {
-    >         "sourcePath": "$.externalId",
-    >         "targetPath": "$.externalId",
-    >         "optional": true
-    >       },
-    >       {
     >         "sourcePath": "$.name.formatted",
     >         "optional": true,
     >         "targetPath": "$.name.formatted"

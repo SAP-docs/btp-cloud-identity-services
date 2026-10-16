@@ -458,7 +458,7 @@ SAP Integrated Business Planning provides different APIs for integration with Id
     >         "targetPath": "$.locale"
     >       },
     >       {
-    >         "sourcePath": "$.PersonExternalID",
+    >         "sourcePath": "$.personExternalID",
     >         "optional": true,
     >         "correlationAttribute": true
     >       },

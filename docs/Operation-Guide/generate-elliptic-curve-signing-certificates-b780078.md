@@ -111,7 +111,7 @@ SAP Cloud Identity Services supports elliptic curve \(EC\) signing certificates 
     > ### Note:  
     > For elliptic curve algorithms, the *Key Size* field is not applicable. The key size is determined by the selected curve and is not configurable.
 
-4.  Select the certificate *Validity* \(3, 5, or 10 years\).
+4.  Select the certificate *Validity* \(1, 3, 6 months, 1, 3, 5, or 10 years\).
 
 5.  Choose *Generate* to create the certificate.
 
