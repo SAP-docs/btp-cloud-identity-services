@@ -4,7 +4,7 @@
 
 Configure Identity Provisioning to use form‑based OAuth 2.0 authentication to call SAP Ariba Applications APIs.
 
-In this authentication scenario, the Identity Provisioning Service uses the OAuth 2.0 client credentials flow to obtain an access token from the Identity Authentication Service. The access token is retrieved using a form‑encoded request with a client ID and client secret that are generated for the Administration Console application of SAP Cloud Identity Services. This token is then used to call the next‑generation SCIM API of SAP Ariba Applications.
+In this authentication scenario, the Identity Provisioning Service uses the OAuth 2.0 client credentials flow to obtain an access token from the Identity Authentication Service. The access token is retrieved using a form‑encoded request with a client ID and client secret that are generated for the Administration Console system application of SAP Cloud Identity Services. This token is then used to call the next‑generation SCIM API of SAP Ariba Applications.
 
 
 
@@ -21,11 +21,11 @@ In this authentication scenario, the Identity Provisioning Service uses the OAut
 
 ## Application Configuration
 
-To enable token retrieval for the next-generation SCIM API of SAP Ariba Applications, a client ID and client secret must be generated in the Administration Console application under *Trust* \> *Application APIs* \> *Client Authentication*. These credentials are later used in the SAP Ariba Applications provisioning system properties for the technical user \(`User` and `Password`\).
+To enable token retrieval for the next-generation SCIM API of SAP Ariba Applications, a client ID and client secret must be generated in the Administration Console system application under *Trust* \> *Application APIs* \> *Client Authentication*. These credentials are later used in the SAP Ariba Applications provisioning system properties for the technical user \(`User` and `Password`\).
 
 For more information, see [Configure Secrets for API Authentication](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/auth-configure-secrets-for-api-authentication?version=Cloud).
 
-Additional configuration in the Administration Console application requires establishing a dependency to the SAP Ariba Applications API. This is maintained under *Trust* \> *Application APIs* \> *Dependencies*, where the dependency name, the application, and the corresponding API are defined.
+Additional configuration in the Administration Console system application requires establishing a dependency to the SAP Ariba Applications API. This is maintained under *Trust* \> *Application APIs* \> *Dependencies*, where the dependency name, the application, and the corresponding API are defined.
 
 For more information, see [Integrating Applications](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/integrating-applications?version=Cloud) [Configure Integration Between Applications](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/communicate-between-applications?version=Cloud).
 
@@ -42,11 +42,11 @@ For more information, see [List of Properties](../list-of-properties-d6f3577.md)
 
 To configure your SAP Ariba Applications provisioning system, the following properties must be in place:
 
--   `User` - the Client ID generated in the Administration Console application.
+-   `User` - the Client ID generated in the Administration Console system application.
 
--   `Password` - the Client Secret generated in the Administration Console application.
+-   `Password` - the Client Secret generated in the Administration Console system application.
 
--   `ariba.applications.api.dependency.name` - the dependency name provided in the Administration Console application.
+-   `ariba.applications.api.dependency.name` - the dependency name provided in the Administration Console system application.
 
 -   `AuthType` - set to Form
 
