@@ -390,7 +390,7 @@ To add a system as a new tenant administrator, proceed as follows:
     -   *Secrets*
 
         > ### Note:  
-        > You need a *Client ID* and *Secret* for system authentication. It is generated automatically with the creation of the system. The client ID is in the universally unique identifier \(UUID\) format. For example, `1ab7c243-5de5-4530-8g14-1234h26373ab`.
+        > You need a *Client ID* and *Secret* for system authentication. It is generated automatically with the creation of the system. The client ID is in the universally unique identifier \(UUID\) format. For example, `1ab7c243-5de5-4530-8d14-1234a26373ab`.
 
         Choose the *\+Add* button in the *Secrets* section, provide the required info in the pop-up, and save your entries.
 

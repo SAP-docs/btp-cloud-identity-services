@@ -10,7 +10,7 @@ This document describes how developers configure secrets with scopes and validit
 
 You can use a client ID and a secret to authenticate when REST API calls \(Invitation REST API, User management REST API, Password Service Rest API, and Forgot Password REST API\) to the tenant of Identity Authentication are used. The client ID and secret can also be used in the OpenID Connect scenarios of Identity Authentication.
 
-The client ID is in the universally unique identifier \(UUID\) format. For example, `1ab7c243-5de5-4530-8g14-1234h26373ab`.
+The client ID is in the universally unique identifier \(UUID\) format. For example, `1ab7c243-5de5-4530-8d14-1234a26373ab`.
 
 > ### Remember:  
 > The User ID and a password \(secret\) to authenticate the client \(relying party\) in the OpenID Connect scenario must be encoded using the "application/x-www-form-urlencoded" encoding algorithm.

@@ -17,7 +17,7 @@ The attributes are also put in the ID and access tokens if the application is Op
 For both the SAML 2.0 and OpenID Connect applications, you can configure attributes with dynamic values to be added into the assertions in the following pattern: `<prefix> ${attribute_technical_name>} <suffix>`
 
 > ### Restriction:  
-> For OpenID Connect applications, the following claims can't be set via the configuration of attributes with default values: `acr`, `amr`, `app_tid`, `at_hash`, `auth_time`, `azp`, `azpacr`, `cnf`, `c_hash`, `exp`, `ias_apis`, `ias_iss`, `iat`, `iss`, `jti``nbf`, `nonce`, `sap_id_type`, `scim_id`, `sid`, `sub`, `sub_jwk`, and `zone_uuid`.
+> For OpenID Connect applications, you can't set standard claims or SAP-specific claims \(prefixed with `sap_`\) via the configuration of attributes with default values. For a list of claims supported by SAP Cloud Identity Services, see [Claims of SAP Cloud Identity Services OAuth Tokens](claims-of-sap-cloud-identity-services-oauth-tokens-7bf3c18.md).
 
 
 
@@ -456,7 +456,7 @@ Corporate Groups
 corporateGroups
 
 > ### Tip:  
-> The `companyGroups` and `corporateGroups` attributes support regular expressions. You can use an expression to filter these attributes.
+> The `companyGroups` and `corporateGroups` attributes support regular expressions. You can use an expression to filter these attributes. Both the regex filter and the value sent to the application are based on the group's `Name` field. Other group fields, such as `Display Name`, are not considered.
 
 
 
@@ -665,7 +665,7 @@ If you set `${customAttribute1}` as a value, the response returns the first cust
 > 
 > ```
 
-If you set `${companyGroups:regex[Admin]}` as a value, the response returns the groups, that contain "Admin" in the *Name* field \(and not *Display Name* for example\):
+If you set `${companyGroups:regex[Admin]}` as a value, the response returns the groups, whose `Name` field contains "Admin". The regex filter applies to the group's `Name` field only. Other fields such as `Display Name` aren't considered. The `Name` field value is also the value sent to the application for each matching group:
 
 > ### Example:  
 > ```

@@ -56,7 +56,7 @@ The configuration steps are done in the administration console for SAP Cloud Ide
 
 [Hybrid Scenario: SAP Identity Management](hybrid-scenario-sap-identity-management-6fa419a.md "You can execute hybrid scenarios between provisioning systems from the Identity Provisioning UI and external systems that support SCIM 2.0 protocol.")
 
-[Blogs](blogs-a89ca3e.md "Links to blogs and documents about integration scenarios with Identity Authentication.")
+[Blogs and Documents](blogs-and-documents-a89ca3e.md "Links to blogs and documents about integration scenarios with Identity Authentication.")
 
 <a name="loiocdd3c3974741472d990cd76404903556"/>
 
@@ -94,7 +94,7 @@ Assign the respective roles for SAP Document Center to individual users of Ident
 
 ## Procedure
 
-1.  Log on to SAP BTP cockpit with the cockpit administrator role. For more information, see [Subaccounts](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/8ed4a705efa0431b910056c0acdbf377.html#loio8d6e3a0fa4ab43e4a421d3ed08128afa).
+1.  Sign in SAP BTP cockpit with the cockpit administrator role. For more information, see [Subaccounts](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/8ed4a705efa0431b910056c0acdbf377.html#loio8d6e3a0fa4ab43e4a421d3ed08128afa).
 
 2.  In the navigation area go to *Services* \> *SAP Document Center*.
 
@@ -210,7 +210,7 @@ You have to specify how the user attributes are sent to SAP BTP in the assertion
 
 ## Procedure
 
-1.  Log on to SAP BTP cockpit with the cockpit administrator role. For more information, see [Subaccounts](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/8ed4a705efa0431b910056c0acdbf377.html#loio8d6e3a0fa4ab43e4a421d3ed08128afa).
+1.  Sign in SAP BTP cockpit with the cockpit administrator role. For more information, see [Subaccounts](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/8ed4a705efa0431b910056c0acdbf377.html#loio8d6e3a0fa4ab43e4a421d3ed08128afa).
 
 2.  Select the subaccount and choose *Trust* in the navigation bar.
 

@@ -44,7 +44,7 @@ Description
 </td>
 <td valign="top">
 
-An SAP claim that identifies the tenant of the application. This claim is used in multitenant scenarios, for example, if you subscribed to a BTP application.
+An SAP claim that identifies the tenant of the application. This claim is used in multitenant scenarios, for example, if you subscribed to a SAP BTP application.
 
 </td>
 </tr>
@@ -99,12 +99,36 @@ The authorized party identifies the client ID to which the ID token was issued.
 <tr>
 <td valign="top">
 
+`azpacr`
+
+</td>
+<td valign="top">
+
+An SAP claim that identifies the authentication context class reference of the authorized party. It indicates the strength of authentication used by the client application when it obtained the token. A value of ***1*** indicates the client used a client secret, and a value of ***2*** indicates the client used a certificate. This claim is present in tokens issued through the client credentials grant type.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `azp_app_tid`
 
 </td>
 <td valign="top">
 
-An SAP claim that identifies the tenant of the authorized party in app-to-app token exchange scenarios. In multitenant BTP environments, this claim represents the application tenant identifier of the consumer application that initiated the token exchange. The `app_tid` claim represents the provider application's tenant.
+An SAP claim that identifies the tenant of the authorized party in app-to-app token exchange scenarios. In multitenant SAP BTP environments, this claim represents the application tenant identifier of the consumer application that initiated the token exchange. The `app_tid` claim represents the provider application's tenant.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`cnf`
+
+</td>
+<td valign="top">
+
+Binds a token to a specific cryptographic key held by the client. In proof-of-possession token scenarios, only the client holding the corresponding private key can use the token.
 
 </td>
 </tr>
@@ -236,7 +260,7 @@ Identifies the issuer of the token. Typically a URL, for example, <code>https://
 </td>
 <td valign="top">
 
-A unique identifier for the JWT. Used to avoid replay attack. Defined in RFC 7519. This claim is included when the ***profile*** scope is requested.
+A unique identifier for the JWT. Used to avoid replay attacks.
 
 </td>
 </tr>
@@ -291,6 +315,42 @@ A human-readable display name for the user for whom the token was issued. The cl
 <tr>
 <td valign="top">
 
+`sap_azp_gtid`
+
+</td>
+<td valign="top">
+
+An SAP claim that provides a globally unique tenant identifier of the authorized party in app-to-app token exchange scenarios. In multitenant SAP BTP environments, this claim represents the globally unique tenant identifier of the consumer application that initiated the token exchange.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`sap_gtid`
+
+</td>
+<td valign="top">
+
+An SAP claim that provides a globally unique tenant identifier.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`sap_intospect`
+
+</td>
+<td valign="top">
+
+An SAP claim that holds a list of claim names that were omitted from the token due to size restrictions. You can retrieve the full values of these claims from the `/oauth2/userinfo` or `/oauth2/introspect` endpoint.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
 `sap_id_type`
 
 </td>
@@ -304,6 +364,30 @@ An SAP claim that identifies the type of token. Values:
 
 
 
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`sap_scope`
+
+</td>
+<td valign="top">
+
+An SAP claim that lists the scopes granted to the token. Currently, only the ***offline\_access*** scope is stored in this claim.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+`sap_user_type`
+
+</td>
+<td valign="top">
+
+An SAP claim that identifies the type of user for whom the token was issued.
 
 </td>
 </tr>
@@ -327,7 +411,7 @@ An SAP claim that identifies the user with their SCIM ID in SAP Cloud Identity S
 </td>
 <td valign="top">
 
-The session ID is used to track the session of a user over multiple applications and logout scenarios.
+The session ID is used to track the session of a user with that specific application.
 
 </td>
 </tr>

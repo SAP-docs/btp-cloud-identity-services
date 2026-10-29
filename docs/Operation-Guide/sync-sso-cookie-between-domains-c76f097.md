@@ -13,6 +13,8 @@ Enable the *Sync SSO Cookie Between Domains Settings* option to allow seamless s
 -   You are assigned the *Manage Tenant Configuration* role. For more information about how to assign administrator roles, see [Edit Administrator Authorizations](edit-administrator-authorizations-86ee374.md).
 
 -   The users have allowed third-party cookies in their browsers.
+-   The `*.cloud.sap` domain is permitted through your corporate firewall. The `cloud.sap` top-level domain \(TLD\) is non-standard and may be blocked by default in corporate network configurations. Confirm with your network administrator that traffic to `*.cloud.sap` is allowed before enabling this option.
+
 
 
 

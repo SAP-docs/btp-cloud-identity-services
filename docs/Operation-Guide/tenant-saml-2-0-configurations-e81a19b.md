@@ -142,7 +142,7 @@ To view and download the tenant SAML 2.0 metadata, or to change the name format,
     -   *Regenerate the existing certificate with new validity, reusing the same private key* \> *Next Step* \> *Choose validity from the drop down* \> *Next Step* \> *Finish*.
 
         > ### Note:  
-        > The validity period can be 3, 5 and 10 years.
+        > The validity period can be 1, 3, 6 months, 1, 3, 5 and 10 years.
 
     -   *Create new a self-signed certificate with a new private key and the same Subject DN* \> *Next Step* \> *Select key size* \> *Choose validity from the drop down* \> *Next Step* \> *Finish*.
 
