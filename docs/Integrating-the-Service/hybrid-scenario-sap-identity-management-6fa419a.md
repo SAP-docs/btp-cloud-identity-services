@@ -136,5 +136,5 @@ SAP Community Blog: [Hybrid Scenarios with Identity Provisioning Proxy](https://
 
 [Integrating the Service with SAP Task Center](integrating-the-service-with-sap-task-center-ab5e90e.md)
 
-[Blogs and Documents](blogs-and-documents-a89ca3e.md "Links to blogs and documents about integration scenarios with Identity Authentication.")
+[Blogs](blogs-a89ca3e.md "Links to blogs and documents about integration scenarios with Identity Authentication.")
 

@@ -56,7 +56,7 @@ The configuration steps are done in the administration console for SAP Cloud Ide
 
 [Hybrid Scenario: SAP Identity Management](hybrid-scenario-sap-identity-management-6fa419a.md "You can execute hybrid scenarios between provisioning systems from the Identity Provisioning UI and external systems that support SCIM 2.0 protocol.")
 
-[Blogs and Documents](blogs-and-documents-a89ca3e.md "Links to blogs and documents about integration scenarios with Identity Authentication.")
+[Blogs](blogs-a89ca3e.md "Links to blogs and documents about integration scenarios with Identity Authentication.")
 
 <a name="loiocdd3c3974741472d990cd76404903556"/>
 

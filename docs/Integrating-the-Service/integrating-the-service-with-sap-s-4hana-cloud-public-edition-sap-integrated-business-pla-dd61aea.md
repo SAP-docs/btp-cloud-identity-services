@@ -32,5 +32,5 @@ SAP Analytics Cloud, is integreted in SAP S/4HANA Cloud Public Edition or in SAP
 
 [Hybrid Scenario: SAP Identity Management](hybrid-scenario-sap-identity-management-6fa419a.md "You can execute hybrid scenarios between provisioning systems from the Identity Provisioning UI and external systems that support SCIM 2.0 protocol.")
 
-[Blogs and Documents](blogs-and-documents-a89ca3e.md "Links to blogs and documents about integration scenarios with Identity Authentication.")
+[Blogs](blogs-a89ca3e.md "Links to blogs and documents about integration scenarios with Identity Authentication.")
 

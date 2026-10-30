@@ -764,7 +764,7 @@
             -   [\(Optional\) Configure Different Trust Configurations for the Same Identity Authentication Tenant \(Microsoft Entra ID Apps\)](Integrating-the-Service/optional-configure-different-trust-configurations-for-the-same-identity-authentication-te-f661eec.md)
         -   [Integrating the Service with SAP Task Center](Integrating-the-Service/integrating-the-service-with-sap-task-center-ab5e90e.md)
         -   [Hybrid Scenario: SAP Identity Management](Integrating-the-Service/hybrid-scenario-sap-identity-management-6fa419a.md)
-        -   [Blogs and Documents](Integrating-the-Service/blogs-and-documents-a89ca3e.md)
+        -   [Blogs](Integrating-the-Service/blogs-a89ca3e.md)
     -   [Monitoring and Troubleshooting](Monitoring-and-Reporting/monitoring-and-troubleshooting-b8382ee.md)
         -   [View Usage Statistics](Monitoring-and-Reporting/view-usage-statistics-a299d84.md)
         -   [Audit Logs](Monitoring-and-Reporting/audit-logs-ad47e37.md)

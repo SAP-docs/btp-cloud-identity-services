@@ -67,7 +67,7 @@ SAP Web IDE Full-Stack access is protected by permissions. To grant a user the p
 
 [Hybrid Scenario: SAP Identity Management](hybrid-scenario-sap-identity-management-6fa419a.md "You can execute hybrid scenarios between provisioning systems from the Identity Provisioning UI and external systems that support SCIM 2.0 protocol.")
 
-[Blogs and Documents](blogs-and-documents-a89ca3e.md "Links to blogs and documents about integration scenarios with Identity Authentication.")
+[Blogs](blogs-a89ca3e.md "Links to blogs and documents about integration scenarios with Identity Authentication.")
 
 <a name="loioa0b0ae9fea034ff5823bc0a5b0520cd4"/>
 
