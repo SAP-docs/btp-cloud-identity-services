@@ -22,7 +22,7 @@ By default, the timeout session for Identity Authentication is 12 hours.
 
 When the IdP session has expired, and the application session has also expired, or the user tries to access a second application, Identity Authentication forces the user to provide his or her credentials.
 
-![](images/Session_Timeout_Expired_0c8e103.png)
+![Flow diagram showing a user accessing a consumer application on SAP BTP with Identity Authentication when the identity provider session has expired.](images/Session_Timeout_Expired_0c8e103.png)
 
 1.  Tries to access protected resource.
 2.  Sends request to check if the user has rights to access.
@@ -35,6 +35,9 @@ When the IdP session has expired, and the application session has also expired, 
 > For OIDC applications, the Global Session Timeout acts as a hard upper bound on token validity. Access token lifetimes are capped at the remaining session duration, and refresh tokens cannot be issued or renewed beyond the active session, regardless of the token policy configured for the application or tenant. Exchanging a refresh token does not extend the session. If a refresh token is sent with one minute of session lifetime remaining, the resulting token is valid for one minute only.
 > 
 > Configuring short session timeouts \(for example, 15–30 minutes\) can cause users to reauthenticate more frequently than expected in token-based integrations, even when the application's token policy is set to longer validity periods.
+
+> ### Recommendation:  
+> Set the session timeout to the length of a typical working day or longer. A timeout that is too short causes unnecessary reauthentication and can affect token exchange. If an application doesn't request `offline_access`, tokens can only be exchanged while a valid session exists. A timeout that is too long increases the risk of session or token hijacking, as a stolen session or token remains valid for longer without requiring reauthentication. The maximum configurable value is 12 hours.
 
 > ### Remember:  
 > It takes 2 minutes for the configuration changes to take place.

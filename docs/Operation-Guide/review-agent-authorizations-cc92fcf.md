@@ -8,8 +8,8 @@ After agents are deployed, they arrive in your system with the authorizations th
 
 ## Context
 
-> ### Caution:  
-> This page is still work in progress. This page contains information about product features that are part of an SAP Early Adopter Care \(EAC\) program. Products or features that are part of an EAC program are not available to users outside of this program.
+> ### Note:  
+> This documentation describes some features that will be generally available in a phased approach. These may not yet be available in your region or environment. Please contact your SAP Account Executive for more information.
 
 Each agent arrives in your system with a fixed authorization scope, that is, the APIs it is permitted to call at the agent gateway, and whether the permission for each is read or write. This scope is defined by the agent's developer and is read-only for administrators. You can't modify it in SAP Cloud Identity Services. Your role is to evaluate whether the scope is acceptable before you assign any users to the agent. Even if the scope appears broad, actions are also constrained at runtime by the invoking user's own permissions in the target application. That constraint isn't visible here and should not be relied on as a substitute for a careful scope review.
 

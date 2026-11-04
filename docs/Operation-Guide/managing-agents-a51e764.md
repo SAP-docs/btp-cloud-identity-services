@@ -4,8 +4,8 @@
 
 Agent identities automatically appear in SAP Cloud Identity Services after you deploy agents. You can use SAP Cloud Identity Services to review and manage access to these agents.
 
-> ### Caution:  
-> This page is still work in progress. This page contains information about product features that are part of an SAP Early Adopter Care \(EAC\) program. Products or features that are part of an EAC program are not available to users outside of this program.
+> ### Note:  
+> This documentation describes some features that will be generally available in a phased approach. These may not yet be available in your region or environment. Please contact your SAP Account Executive for more information.
 
 When you deploy an agent in your SAP landscape, the system automatically registers it in SAP Cloud Identity Services. The agent appears in the *Users & Authorizations* area of the administration console. Assistants, higher-level AI entities that orchestrate one or more agents, also appear in this area and are managed in the same way. From there, you can control which users or groups can invoke the agent. You can't create or delete agent or assistant registrations manually. Nor can you change the agent's authorized API scope. The agent's authorizations are defined by its developer and are read-only for administrators.
 

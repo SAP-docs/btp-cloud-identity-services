@@ -808,40 +808,6 @@ COMPLIANT - if the self-registration is disabled or CAPTCHA is enabled. NONCOMPL
 
 </td>
 </tr>
-<tr>
-<td valign="top">
-
-Identity Authentication
-
-</td>
-<td valign="top">
-
-***use\_identity\_auth\_user\_store***
-
-</td>
-<td valign="top">
-
-Reports whether the *Use Identity Authentication user store* setting is enabled. The possible values are:
-
--   *ON*- if enabled
--   *OFF* - if disabled
-
-
-
-</td>
-<td valign="top">
-
-*COMPLIANT* - if enabled.
-
-*NONCOMPLIANT* - if disabled.
-
-</td>
-<td valign="top">
-
-[BTP-IAS-0015](https://help.sap.com/docs/btp/sap-btp-security-recommendations-c8a9bb59fe624f0981efa0eff2497d7d/sap-btp-security-recommendations?seclist-index=BTP-IAS-0015&version=Cloud)
-
-</td>
-</tr>
 </table>
 
 **Configuration & Security Analysis Details**
@@ -2191,6 +2157,164 @@ Reports the password behavior of the policy. Possible values are:
 
 -   *reset*
 -   *change*
+
+
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***signing\_cert\_<N\>\_subject\_dn***
+
+</td>
+<td valign="top">
+
+Reports the tenant signing certificate. `subject_dn` identifies the certificate. `N` shows the index number if there are more than one configured certificates.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***signing\_cert\_<N\>\_validity***
+
+</td>
+<td valign="top">
+
+Reports the tenant signing certificate. `validity` shows when the certificate will expire. `N` shows the index number if there are more than one configured certificates.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***app\_signing\_cert\_<N\>\_subject\_dn***
+
+</td>
+<td valign="top">
+
+Reports the application signing certificate. `subject_dn` identifies the certificate. `N` shows the index number if there are more than one configured certificates.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***app\_signing\_cert\_<N\>\_validity***
+
+</td>
+<td valign="top">
+
+Reports the application signing certificate. `validity` shows when the certificate will expire. `N` shows the index number if there are more than one configured certificates.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***app\_encryption\_cert\_subject\_dn***
+
+</td>
+<td valign="top">
+
+Reports the application encryption certificate. `subject_dn` identifies the certificate. `N` shows the index number if there are more than one configured certificates.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***app\_encryption\_cert\_validity***
+
+</td>
+<td valign="top">
+
+Reports the application encryption certificate. `validity` shows when the certificate will expire. `N` shows the index number if there are more than one configured certificates.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***api\_cert\_<N\>\_subject\_dn***
+
+</td>
+<td valign="top">
+
+Reports the API certificate. `subject_dn` identifies the certificate. `N` shows the index number if there are more than one configured certificates.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***api\_cert\_<N\>\_validity***
+
+</td>
+<td valign="top">
+
+Reports the API certificate. `validity` shows when the certificate will expire. `N` shows the index number if there are more than one configured certificates.
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+Identity Authentication
+
+</td>
+<td valign="top">
+
+***use\_identity\_auth\_user\_store***
+
+</td>
+<td valign="top">
+
+Reports whether the *Use Identity Authentication user store* setting is enabled. The possible values are:
+
+-   *ON*- if enabled
+-   *OFF* - if disabled
 
 
 

@@ -62,8 +62,8 @@ If you encounter issues, you can report an incident to SAP Support. For informat
 
 ## SAP-Managed IAM for Joule
 
-> ### Caution:  
-> This section is still work in progress. This page contains information about product features that are part of an SAP Early Adopter Care \(EAC\) program. Products or features that are part of an EAC program are not available outside this program.
+> ### Note:  
+> This documentation describes some features that will be generally available in a phased approach. These may not yet be available in your region or environment. Please contact your SAP Account Executive for more information.
 
 SAP-managed IAM for Joule represents an initial step toward the same unified identity model used for the SAP Business Suite. In the Business Suite model, SAP Cloud Identity Services is the authoritative source for user and role data. Assignments are distributed outward to connected applications. The current Joule model adopts a pragmatic starting point: user records and group assignments originate in each line-of-business application. Identity provisioning jobs read this data from the line-of-business system into SAP Cloud Identity Services. The jobs then write the global user ID back to the line-of-business system to link the records. The line-of-business system remains the authoritative source for user and role data in the current release.
 

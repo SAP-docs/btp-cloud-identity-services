@@ -4,8 +4,8 @@
 
 Identity and access management architecture required for Joule, including the requirement for a single SAP Cloud Identity Services tenant, SAP-managed provisioning, and global user ID assignment. Understand this foundation before you implement Joule to ensure consistent authentication and authorization across all connected SAP applications.
 
-> ### Caution:  
-> This page is still work in progress. This page contains information about product features that are part of an SAP Early Adopter Care \(EAC\) program. Products or features that are part of an EAC program are not available to users outside of this program.
+> ### Note:  
+> This documentation describes some features that will be generally available in a phased approach. These may not yet be available in your region or environment. Please contact your SAP Account Executive for more information.
 
 Joule, SAP's AI assistant, works across multiple connected SAP applications. For Joule to deliver a consistent experience, all of those applications must authenticate users through a single SAP Cloud Identity Services tenant. This makes SAP Cloud Identity Services the central identity and access management \(IAM\) layer across your SAP landscape. It forms the foundation on which you build Joule and any AI agents you deploy alongside it.
 

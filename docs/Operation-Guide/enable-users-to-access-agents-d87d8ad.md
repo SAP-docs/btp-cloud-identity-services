@@ -8,10 +8,8 @@ Assign users to agents to grant users the right to invoke them. You can assign i
 
 ## Prerequisites
 
-> ### Caution:  
-> This page is still work in progress. This page contains information about product features that are part of an SAP Early Adopter Care \(EAC\) program. Products or features that are part of an EAC program are not available to users outside of this program.
-> 
-> See also [Enable Access to Agents for the SAP Early Adopter Care Program](enable-access-to-agents-for-the-sap-early-adopter-care-program-ae46faa.md).
+> ### Note:  
+> This documentation describes some features that will be generally available in a phased approach. These may not yet be available in your region or environment. Please contact your SAP Account Executive for more information.
 
 Before you begin, ensure the following are in place:
 
@@ -111,4 +109,6 @@ Each analyst can use the assistant and agents only to perform actions that their
 [Identity and Access Management for Joule](../identity-and-access-management-for-joule-050287e.md "Identity and access management architecture required for Joule, including the requirement for a single SAP Cloud Identity Services tenant, SAP-managed provisioning, and global user ID assignment. Understand this foundation before you implement Joule to ensure consistent authentication and authorization across all connected SAP applications.")
 
 [Agents](../agents-12bef24.md "Agent identity represents AI and automation agents in SAP Cloud Identity Services. Agents can authenticate, receive authorization, and be managed like human users while retaining agent-specific capabilities and security controls.")
+
+[Enable Access to Agents for the SAP Early Adopter Care Program](enable-access-to-agents-for-the-sap-early-adopter-care-program-ae46faa.md "For the SAP Early Adopter Care (EAC) program, the SAP-managed provisioning jobs create application groups for the Joule agents. Assign these groups to users to enable them to use these agents.")
 
