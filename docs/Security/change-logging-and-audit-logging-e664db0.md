@@ -10,12 +10,12 @@ Change logging records changes to personal data, while audit logging provides ac
 
 ## Audit Logs
 
-Tenant administrators can access the audit logs for changes in the personal data, successful, and failed authentications in Identity Authentication. If you want to view the audit logs, you should generate Client ID and Client Secret for audit logs in the administration console for SAP Cloud Identity Services, obtain an access token, and call the audit log retrieval API to access the data. For more information, see [Access Audit Logs \(Audit Log Service in SAP BTP, Neo\)](../Monitoring-and-Reporting/access-audit-logs-audit-log-service-in-sap-btp-neo-9f6b9a4.md).
+Tenant administrators can access the audit logs for changes in the personal data, successful, and failed authentications in Identity Authentication. If you want to view the audit logs, you should generate Client ID and Client Secret for audit logs in the administration console for SAP Cloud Identity Services, obtain an access token, and call the audit log retrieval API to access the data. For more information, see [Access Audit Logs \(Audit Log Service in Neo\)](../Monitoring-and-Reporting/access-audit-logs-audit-log-service-in-neo-9f6b9a4.md).
 
 The audit log entries are retained for:
 
--   SAP BTP, Cloud Foundry environment \(for tenants on the AWS and Azure infrastructure.\) - 90 days
--   SAP BTP, Neo environment \(for tenants on the SAP infrastructure\)- 201 days
+-   Cloud Foundry environment \(for tenants on the AWS and Azure infrastructure.\) - 90 days
+-   Neo environment \(for tenants on the SAP infrastructure\)- 201 days
 
 
 

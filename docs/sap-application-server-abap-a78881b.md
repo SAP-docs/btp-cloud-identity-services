@@ -363,7 +363,7 @@ SAP Application Server ABAP \(AS ABAP\) offers a user store and user administrat
 
 4.  Create a technical user with the necessary authorizations. It will later be used by the external consumer to connect to Identity Provisioning.
 
-    -   For **Certificate-based authentication**, follow the procedure in [Manage Certificates for Inbound Connection](Operation-Guide/manage-certificates-for-inbound-connection-952e7c7.md) → *SAP BTP, Neo Environment*
+    -   For **Certificate-based authentication**, follow the procedure in [Manage Certificates for Inbound Connection](Operation-Guide/manage-certificates-for-inbound-connection-952e7c7.md) → *Neo Environment*
 
     -   For **OAuth authentication**, proceed as follows:
 
@@ -2113,7 +2113,7 @@ When a proxy system is connected to an external backend system \(in the case of 
 To see an example with SAP Identity Management, see [Hybrid Scenario: SAP Identity Management](Integrating-the-Service/hybrid-scenario-sap-identity-management-6fa419a.md) → sections **Next Steps** and **Future Identity Lifecycle**.
 
 > ### Caution:  
-> Effective **September 2020**, Shanghai \(China\) tenants that reside on SAP BTP, Neo can be only accessed on the following domain: `dispatcher.cn1.platform.sapcloud.cn`
+> Effective **September 2020**, Shanghai \(China\) tenants that reside on Neo can be only accessed on the following domain: `dispatcher.cn1.platform.sapcloud.cn`
 > 
 > So make sure you use the correct domain when you construct your REST API requests.
 > 

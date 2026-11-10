@@ -11,7 +11,7 @@ Follow this procedure to set up SAP Master Data Integration \(in short, MDI\) as
 ## Prerequisites
 
 > ### Restriction:  
-> This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.
+> This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and Neo. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.
 
 -   You have created a tenant in a subaccount on SAP BTP, Cloud Foundry environment. You can create your own tenant \(free of charge\), or integrate with an existing one.
 -   You have created a service instance for MDI in the subaccount in order to connect a new system to your tenant and read user account information from it. To learn how, see: [Creating Service Instances](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/8221b7434d8e484fab5ec5d219b7bf64.html) 
@@ -48,7 +48,7 @@ You can use MDI as a proxy connector to execute *hybrid* scenarios. That means, 
 
 ## Procedure
 
-1.  Open your subaccount in SAP BTP cockpit \(valid for OAuth authentication to the Identity Provisioning proxy system\).
+1.  Open your subaccount in cockpit \(valid for OAuth authentication to the Identity Provisioning proxy system\).
 
     > ### Note:  
     > If you have a bundle tenant, then in the cockpit → *Neo* → *Overview*, you can see the Global account, which SAP provides for your bundle in the corresponding Identity Provisioning region. Then, in the global account, you can see your subaccount, where the Identity Provisioning is enabled as a service for the bundle. The display name of the subaccount starts with **SAP\_BUNDLE**.
@@ -57,7 +57,7 @@ You can use MDI as a proxy connector to execute *hybrid* scenarios. That means, 
 
 3.  Create a technical user with the necessary authorizations. It will later be used by the external consumer to connect to Identity Provisioning.
 
-    -   For **Certificate-based authentication**, follow the procedure in [Manage Certificates for Inbound Connection](Operation-Guide/manage-certificates-for-inbound-connection-952e7c7.md) → *SAP BTP, Neo Environment*
+    -   For **Certificate-based authentication**, follow the procedure in [Manage Certificates for Inbound Connection](Operation-Guide/manage-certificates-for-inbound-connection-952e7c7.md) → *Neo Environment*
 
     -   For **OAuth authentication**, proceed as follows:
 
@@ -106,7 +106,7 @@ You can use MDI as a proxy connector to execute *hybrid* scenarios. That means, 
 6.  Choose the *Properties* tab to configure the connection settings for your system.
 
     > ### Note:  
-    > If your Identity Provisioning tenant is running on SAP BTP, Neo, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
+    > If your Identity Provisioning tenant is running on Neo, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
     > 
     > If one and the same property exists both in the cockpit and in the *Properties* tab, the value set in the *Properties* tab is considered with higher priority.
     > 
@@ -396,7 +396,7 @@ When a proxy system is connected to an external backend system \(in the case of 
 To see an example with SAP Identity Management, see [Hybrid Scenario: SAP Identity Management](Integrating-the-Service/hybrid-scenario-sap-identity-management-6fa419a.md) → sections **Next Steps** and **Future Identity Lifecycle**.
 
 > ### Caution:  
-> Effective **September 2020**, Shanghai \(China\) tenants that reside on SAP BTP, Neo can be only accessed on the following domain: `dispatcher.cn1.platform.sapcloud.cn`
+> Effective **September 2020**, Shanghai \(China\) tenants that reside on Neo can be only accessed on the following domain: `dispatcher.cn1.platform.sapcloud.cn`
 > 
 > So make sure you use the correct domain when you construct your REST API requests.
 > 

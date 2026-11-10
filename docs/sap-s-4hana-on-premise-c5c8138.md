@@ -62,7 +62,7 @@ To enable HR integration, you need to specify the relevant property in the syste
 
 1.  Open the Cloud Connector to add an access control system mapping for **SAP S/4HANA On-Premise**. This is needed to allow the Identity Provisioning service to access SAP S/4HANA On-Premise as a back-end system on the intranet. To learn how, see: [Configure Access Control \(HTTP\)](https://help.sap.com/viewer/b865ed651e414196b39f8922db2122c7/Cloud/en-US/e7d4927dbb571014af7ef6ebd6cc3511.html)
 
-2.  Open your subaccount in SAP BTP cockpit \(valid for OAuth authentication to the Identity Provisioning proxy system\).
+2.  Open your subaccount in cockpit \(valid for OAuth authentication to the Identity Provisioning proxy system\).
 
     > ### Note:  
     > If you have a bundle tenant, then in the cockpit → *Neo* → *Overview*, you can see the Global account, which SAP provides for your bundle in the corresponding Identity Provisioning region. Then, in the global account, you can see your subaccount, where the Identity Provisioning is enabled as a service for the bundle. The display name of the subaccount starts with **SAP\_BUNDLE**.
@@ -71,7 +71,7 @@ To enable HR integration, you need to specify the relevant property in the syste
 
 4.  Create a technical user with the necessary authorizations. It will later be used by the external consumer to connect to Identity Provisioning.
 
-    -   For **Certificate-based authentication**, follow the procedure in [Manage Certificates for Inbound Connection](Operation-Guide/manage-certificates-for-inbound-connection-952e7c7.md) → *SAP BTP, Neo Environment*
+    -   For **Certificate-based authentication**, follow the procedure in [Manage Certificates for Inbound Connection](Operation-Guide/manage-certificates-for-inbound-connection-952e7c7.md) → *Neo Environment*
 
     -   For **OAuth authentication**, proceed as follows:
 
@@ -120,7 +120,7 @@ To enable HR integration, you need to specify the relevant property in the syste
 7.  Choose the *Properties* tab to configure the connection settings for your system.
 
     > ### Note:  
-    > If your Identity Provisioning tenant is running on SAP BTP, Neo, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
+    > If your Identity Provisioning tenant is running on Neo, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
     > 
     > If one and the same property exists both in the cockpit and in the *Properties* tab, the value set in the *Properties* tab is considered with higher priority.
     > 
@@ -635,7 +635,7 @@ When a proxy system is connected to an external backend system \(in the case of 
 To see an example with SAP Identity Management, see [Hybrid Scenario: SAP Identity Management](Integrating-the-Service/hybrid-scenario-sap-identity-management-6fa419a.md) → sections **Next Steps** and **Future Identity Lifecycle**.
 
 > ### Caution:  
-> Effective **September 2020**, Shanghai \(China\) tenants that reside on SAP BTP, Neo can be only accessed on the following domain: `dispatcher.cn1.platform.sapcloud.cn`
+> Effective **September 2020**, Shanghai \(China\) tenants that reside on Neo can be only accessed on the following domain: `dispatcher.cn1.platform.sapcloud.cn`
 > 
 > So make sure you use the correct domain when you construct your REST API requests.
 > 

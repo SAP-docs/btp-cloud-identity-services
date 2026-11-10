@@ -14,7 +14,7 @@ Follow this procedure to set up SAP Ariba Applications as a proxy system.
 > This topic describes customer-managed configurations for the SAP Ariba Applications proxy system. For SAP-managed configurations, refer to the [SAP-Managed SAP Cloud Identity](sap-managed-sap-cloud-identity-6039a38.md) documentation.
 
 > ### Restriction:  
-> This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and SAP BTP, Neo. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.
+> This system is available for bundle tenants running on SAP Cloud Identity infrastructure and standalone tenants running on SAP Cloud Identity infrastructure and Neo. Bundle tenants running on Neo environment can use it only through **SAP Jam Collaboration** and **SAP Identity Access Governance** bundle options.
 
 
 
@@ -215,7 +215,7 @@ For more information about the SAP Ariba SCIM API scope of support, see [SAP Ari
 
 ## Procedure
 
-1.  Open your subaccount in SAP BTP cockpit \(valid for OAuth authentication to the Identity Provisioning proxy system\).
+1.  Open your subaccount in cockpit \(valid for OAuth authentication to the Identity Provisioning proxy system\).
 
     > ### Note:  
     > If you have a bundle tenant, then in the cockpit → *Neo* → *Overview*, you can see the Global account, which SAP provides for your bundle in the corresponding Identity Provisioning region. Then, in the global account, you can see your subaccount, where the Identity Provisioning is enabled as a service for the bundle. The display name of the subaccount starts with **SAP\_BUNDLE**.
@@ -224,7 +224,7 @@ For more information about the SAP Ariba SCIM API scope of support, see [SAP Ari
 
 3.  Create a technical user with the necessary authorizations. It will later be used by the external consumer to connect to Identity Provisioning.
 
-    -   For **Certificate-based authentication**, follow the procedure in [Manage Certificates for Inbound Connection](Operation-Guide/manage-certificates-for-inbound-connection-952e7c7.md) → *SAP BTP, Neo Environment*
+    -   For **Certificate-based authentication**, follow the procedure in [Manage Certificates for Inbound Connection](Operation-Guide/manage-certificates-for-inbound-connection-952e7c7.md) → *Neo Environment*
 
     -   For **OAuth authentication**, proceed as follows:
 
@@ -273,7 +273,7 @@ For more information about the SAP Ariba SCIM API scope of support, see [SAP Ari
 6.  Choose the *Properties* tab to configure the connection settings for your system.
 
     > ### Note:  
-    > If your Identity Provisioning tenant is running on SAP BTP, Neo, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
+    > If your Identity Provisioning tenant is running on Neo, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
     > 
     > If one and the same property exists both in the cockpit and in the *Properties* tab, the value set in the *Properties* tab is considered with higher priority.
     > 

@@ -1,8 +1,8 @@
 <!-- loioa3e793c9096c4fee9c98ecdcb8791cfc -->
 
-# Access Audit Logs \(Audit Log Service in SAP BTP, Cloud Foundry\)
+# Access Audit Logs \(Audit Log Service in Cloud Foundry\)
 
-Access the audit logs for changes in the personal data, successful, and failed authentications for Identity Authentication tenants on both the SAP, and the AWS and Azure infrastructures in the Audit Log Service in SAP BTP, Cloud Foundry.
+Access the audit logs for changes in the personal data, successful, and failed authentications for Identity Authentication tenants on both the SAP, and the AWS and Azure infrastructures in the Audit Log Service in Cloud Foundry.
 
 
 
@@ -10,7 +10,7 @@ Access the audit logs for changes in the personal data, successful, and failed a
 
 ## Prerequisites
 
--   You have a subaccount in your global account in SAP BTP, Cloud Foundry. For more information, see [Create a Subaccount](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/05280a123d3044ae97457a25b3013918.html).
+-   You have a subaccount in your global account in Cloud Foundry. For more information, see [Create a Subaccount](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/05280a123d3044ae97457a25b3013918.html).
 
 -   The subaccount region must map your Identity Authentication region.
 
@@ -26,7 +26,7 @@ Access the audit logs for changes in the personal data, successful, and failed a
 > 
 > Information about the region, representing the data center in which the tenant is located is visible in the header of the administration console. For example, ****Cloud Identity Services* Europe \(Frankfurt / Amsterdam\)***. For more information about the regions, see [Regional Availability](../regional-availability-be600ca.md).
 
-The audit log entries in the Audit Log Service in SAP BTP, Cloud Foundry are retained for 90 days. For more information, see [Audit Log Retention for the Cloud Foundry Environment](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/adaefa64228e49ddbe40c15f63a4f74b.html?locale=en-US&state=PRODUCTION&version=Cloud).
+The audit log entries in the Audit Log Service in Cloud Foundry are retained for 90 days. For more information, see [Audit Log Retention for the Cloud Foundry Environment](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/adaefa64228e49ddbe40c15f63a4f74b.html?locale=en-US&state=PRODUCTION&version=Cloud).
 
 To view the audit logs, follow the procedures below:
 
@@ -182,7 +182,7 @@ To view the audit logs, follow the procedures below:
     </td>
     <td valign="top">
     
-    SAP BTP, Cloud Foundry region. You can choose a region from the options in the dropdown. For more information, see the mapping table.
+    Cloud Foundry region. You can choose a region from the options in the dropdown. For more information, see the mapping table.
     
     </td>
     </tr>

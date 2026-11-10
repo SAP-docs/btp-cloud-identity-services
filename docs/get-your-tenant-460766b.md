@@ -32,7 +32,7 @@ Based on the result:
 
 
 
-You receive an SAP Cloud Identity Services tenant either as part of a bundle with an SAP cloud solution or through a self-service request in SAP for Me or SAP BTP cockpit.
+You receive an SAP Cloud Identity Services tenant either as part of a bundle with an SAP cloud solution or through a self-service request in SAP for Me or cockpit.
 
 
 
@@ -153,7 +153,7 @@ Use this option to request a test or production tenant of SAP Cloud Identity Ser
 
 There is no explicit option to request a tenant as part of this provisioning flow. When you provision your application, and no SAP Cloud Identity Services tenant is available for selection, a tenant is automatically created when you submit the provisioning request.
 
-In some situations, automatic tenant creation is not available. In these cases, you must first request a tenant manually in the SAP BTP cockpit, as described in the *Self‑Service Request in SAP BTP Cockpit* section below. After the tenant is created, return to SAP for Me and restart the provisioning process so the new tenant becomes available for selection. You can recognize this situation when the *Start Provisioning* button \(step 3 below\) is disabled.
+In some situations, automatic tenant creation is not available. In these cases, you must first request a tenant manually in the cockpit, as described in the *Self‑Service Request in Cockpit* section below. After the tenant is created, return to SAP for Me and restart the provisioning process so the new tenant becomes available for selection. You can recognize this situation when the *Start Provisioning* button \(step 3 below\) is disabled.
 
 1.  Log on to SAP for Me with your S-user ID and password and open the [Systems & Provisioning](https://help.sap.com/docs/link-disclaimer?site=https%3A%2F%2Fme.sap.com%2Fsystemsprovisioning%2Fprovisioning) dashboard.
 
@@ -191,15 +191,15 @@ For more information on getting started and the SAP for Me dashboards, see [SAP 
 
 
 
-## Self-Service Request in SAP BTP Cockpit
+## Self-Service Request in Cockpit
 
-Products delivered on SAP Business Technology Platform \(SAP BTP\) do not trigger automatic creation of SAP Cloud Identity Services productive and test tenant. You need to request the tenant in the SAP BTP cockpit.
+Products delivered on SAP Business Technology Platform \(SAP BTP\) do not trigger automatic creation of SAP Cloud Identity Services productive and test tenant. You need to request the tenant in the cockpit.
 
 This is true in most cases, but not for all SAP BTP applications, and depends on the subaccount where the application runs on. In SAP BTP, there are customer-managed and SAP-managed subaccounts.
 
 -   If the application runs on SAP-managed subaccount, then the SAP Cloud Identity Services tenant is automatically provisioned with the application. In this case, the administrator of the customer doesn't have access to the SAP BTP subaccount.
 
--   If the application runs on customer-managed subaccount, then in most cases the administrator of the customer has to manually create SAP Cloud Identity Services tenant via SAP BTP cockpit. However, there are also exceptions, like SAP Cloud ALM \(application lifecycle management\), where SAP creates and provisions the SAP Cloud Identity Services tenant.
+-   If the application runs on customer-managed subaccount, then in most cases the administrator of the customer has to manually create SAP Cloud Identity Services tenant via cockpit. However, there are also exceptions, like SAP Cloud ALM \(application lifecycle management\), where SAP creates and provisions the SAP Cloud Identity Services tenant.
 
 
 Additional tenants and trial tenants are also created through self-service request.
@@ -210,20 +210,20 @@ Additional tenants and trial tenants are also created through self-service reque
 
 ## Get Productive and Test Tenant
 
-Get your productive and test tenant as part of a self-service request in SAP BTP cockpit. Productive and test tenants have no difference from technical and functional perspective.
+Get your productive and test tenant as part of a self-service request in cockpit. Productive and test tenants have no difference from technical and functional perspective.
 
 
 
 ### Prerequisites
 
--   You have a global account in SAP BTP cockpit with a multi-environment subaccount.
+-   You have a global account in cockpit with a multi-environment subaccount.
 
 
 
 
 ### Procedure
 
-1.  Access the SAP BTP cockpit, choose your subaccount and navigate to it by choosing its tile.
+1.  Access the cockpit, choose your subaccount and navigate to it by choosing its tile.
 
 2.  In the navigation area, choose *Entitlements*. You have two options:
 
@@ -271,7 +271,7 @@ Get your productive and test tenant as part of a self-service request in SAP BTP
 Go to your email inbox and activate your account. For more information, see [Activate Your Account](activate-your-account-cc03ecc.md).
 
 > ### Note:  
-> **SAP BTP, Neo subaccount**
+> **Neo subaccount**
 > 
 > If you have a global account with Neo subaccount, you can get a productive tenant and use it for free under the [General Terms and Conditions for SAP Cloud Services](https://www.sap.com/about/trust-center/agreements/cloud/cloud-services.html?sort=latest_desc&search=General%20Terms%20and%20Conditions). For this, you need to open your Neo subaccount, navigate to *Services* \> *Identity Authentication* tile and enable the service. The new tenants are created only if there aren't existing productive tenants bound to your customer ID already.
 
@@ -281,7 +281,7 @@ Go to your email inbox and activate your account. For more information, see [Act
 
 ## Get Additional Tenant
 
-Get an additional tenant as part of a self-service request in SAP BTP cockpit. SAP customers and partners can use SAP Cloud Identity Services additional tenants via CPEA \(Cloud Platform Enterprise Agreement\) and Pay-As-You-Go consumption-based commercial models. They can request one additional tenant per SAP BTP subaccount.
+Get an additional tenant as part of a self-service request in cockpit. SAP customers and partners can use SAP Cloud Identity Services additional tenants via CPEA \(Cloud Platform Enterprise Agreement\) and Pay-As-You-Go consumption-based commercial models. They can request one additional tenant per SAP BTP subaccount.
 
 > ### Note:  
 > The additional tenant doesn’t add additional logon requests. Licensed logon requests are distributed across all tenants.
@@ -290,7 +290,7 @@ Get an additional tenant as part of a self-service request in SAP BTP cockpit. S
 
 ### Prerequisites
 
--   You have a global account in SAP BTP cockpit with a multi-environment subaccount.
+-   You have a global account in cockpit with a multi-environment subaccount.
 
 -   You have an existing default tenant. A tenant marked as default is typically the first one created for the customer. Many SAP applications automatically integrate with this tenant when provisioned. To check which tenant is your default one, refer to [View Assigned Tenants and Administrators](view-assigned-tenants-and-administrators-f56e6f2.md).
 
@@ -301,7 +301,7 @@ Get an additional tenant as part of a self-service request in SAP BTP cockpit. S
 
 To get additional tenant using SAP BTP multi-environment subaccount, proceed as follows:
 
-1.  Access the SAP BTP cockpit, choose your subaccount and navigate to it by choosing its tile.
+1.  Access the cockpit, choose your subaccount and navigate to it by choosing its tile.
 
 2.  In the navigation area, choose *Entitlements*. You have two options:
 
@@ -347,9 +347,9 @@ To get additional tenant using SAP BTP multi-environment subaccount, proceed as 
 Go to your email inbox and activate your account. For more information, see .[Activate Your Account](activate-your-account-cc03ecc.md)
 
 > ### Note:  
-> **SAP BTP, Neo subaccount**
+> **Neo subaccount**
 > 
-> If you have a global account with an SAP BTP, Neo subaccount, you can get an additional tenant, too. Open your existing CPEA Neo account or create new CPEA Neo account, navigate to *Services* \> *Identity Authentication - Additional Tenant* tile and enable the service.
+> If you have a global account with an Neo subaccount, you can get an additional tenant, too. Open your existing CPEA Neo account or create new CPEA Neo account, navigate to *Services* \> *Identity Authentication - Additional Tenant* tile and enable the service.
 > 
 > Identity Authentication additional productive tenant will be created and the account member who triggered the creation will get an activation email. Note that test tenants cannot be created from a Neo subaccount.
 > 
@@ -359,7 +359,7 @@ Go to your email inbox and activate your account. For more information, see .[Ac
 
 ## Migrate Additional Tenant from Neo to Multi-Environment
 
-Migrate an additional tenant from a Neo Subaccount to a multi-environment subaccount as part of a self-service request in SAP BTP cockpit.
+Migrate an additional tenant from a Neo Subaccount to a multi-environment subaccount as part of a self-service request in cockpit.
 
 > ### Remember:  
 > SAP Business Technology Platform, Neo environment will sunset on **December 31, 2028**, subject to terms of customer or partner contracts.
@@ -373,9 +373,9 @@ Migrate an additional tenant from a Neo Subaccount to a multi-environment subacc
 
 ### Prerequisites
 
--   You have a global account in SAP BTP cockpit with a multi-environment subaccount.
+-   You have a global account in cockpit with a multi-environment subaccount.
 
--   You have an existing additional tenant on SAP BTP, Neo subaccount.
+-   You have an existing additional tenant on Neo subaccount.
 
 
 > ### Note:  
@@ -387,7 +387,7 @@ Migrate an additional tenant from a Neo Subaccount to a multi-environment subacc
 
 To migrate an additional tenant from a Neo subaccount to a multi-environment subaccount, proceed as follows:
 
-1.  Access the SAP BTP cockpit, choose your multi-environment subaccount and navigate to it by choosing its tile.
+1.  Access the cockpit, choose your multi-environment subaccount and navigate to it by choosing its tile.
 
 2.  In the navigation area, choose *Entitlements*. You have two options:
 
@@ -436,13 +436,13 @@ To migrate an additional tenant from a Neo subaccount to a multi-environment sub
 
 ### Next Steps
 
-If the migration is successful, delete the additional-tenant plan from the Neo subaccount. Go to your Neo subaccount, navigate to *Services* \> *Instances and Subscriptions* \> *Acctions \(...\)* \> *Delete*.
+If the migration is successful, delete the additional-tenant plan from the Neo subaccount. Go to your Neo subaccount, navigate to *Services* \> *Instances and Subscriptions* \> *Actions \(...\)* \> *Delete*.
 
 
 
 ## Migrate Additional Tenant from Multi-Environment to Multi-Environment
 
-Migrate an additional tenant from a multi-environment subaccount to another multi-environment subaccount as part of a self-service request in SAP BTP cockpit.
+Migrate an additional tenant from a multi-environment subaccount to another multi-environment subaccount as part of a self-service request in cockpit.
 
 > ### Caution:  
 > The SAP NetWeaver AS JAVA user store store scenario is only supported in the Neo environment. For more information, see [Corporate User Store \(Neo Environment\)](Operation-Guide/corporate-user-store-neo-environment-461d71c.md#loio461d71c148594608b9c8b6d016e0a0c5).
@@ -451,7 +451,7 @@ Migrate an additional tenant from a multi-environment subaccount to another mult
 
 ### Prerequisites
 
--   You have a global account in SAP BTP cockpit with a multi-environment subaccount.
+-   You have a global account in cockpit with a multi-environment subaccount.
 
 -   You have an existing additional tenant on a multi-environment subaccount.
 
@@ -470,7 +470,7 @@ Migrate an additional tenant from a multi-environment subaccount to another mult
 
 To migrate an additional tenant from a multi-environment subaccount to another multi-environment subaccount, proceed as follows:
 
-1.  Access the SAP BTP cockpit, choose your target multi-environment subaccount and navigate to it by choosing its tile.
+1.  Access the cockpit, choose your target multi-environment subaccount and navigate to it by choosing its tile.
 
 2.  In the navigation area, choose *Entitlements*. You have two options:
 
@@ -519,7 +519,7 @@ To migrate an additional tenant from a multi-environment subaccount to another m
 
 ### Next Steps
 
-If the migration is successful, delete the additional-tenant plan from the source multi-environment subaccount. Go to your source subaccount, navigate to *Services* \> *Instances and Subscriptions* \> *Acctions \(...\)* \> *Delete*.
+If the migration is successful, delete the additional-tenant plan from the source multi-environment subaccount. Go to your source subaccount, navigate to *Services* \> *Instances and Subscriptions* \> *Actions \(...\)* \> *Delete*.
 
 
 
@@ -626,14 +626,14 @@ You can assign existing tenant to an SAP BTP subaccount via the default plan. Ac
 
 -   You have an existing tenant delivered as part of a bundle with another SAP product.
 
--   You have a global account in SAP BTP cockpit with a Cloud Foundry subaccount.
+-   You have a global account in cockpit with a Cloud Foundry subaccount.
 
 
 
 
 ### Procedure
 
-1.  In the SAP BTP cockpit, choose your subaccount and navigate to *Services* \> *Service Marketplace*.
+1.  In the cockpit, choose your subaccount and navigate to *Services* \> *Service Marketplace*.
 
 2.  Select the *Cloud Identity Services* tile. Under *Application Plans* you should see the default plan.
 

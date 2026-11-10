@@ -2277,7 +2277,7 @@ Identity Authentication
 </td>
 <td valign="top">
 
-Reports the API certificate. `subject_dn` identifies the certificate. `N` shows the index number if there are more than one configured certificates.
+Reports the Application APIs certificate. `subject_dn` identifies the certificate. `N` shows the index number if there are more than one configured certificates.
 
 </td>
 </tr>
@@ -2294,7 +2294,7 @@ Identity Authentication
 </td>
 <td valign="top">
 
-Reports the API certificate. `validity` shows when the certificate will expire. `N` shows the index number if there are more than one configured certificates.
+Reports the Application APIs certificate. `validity` shows when the certificate will expire. `N` shows the index number if there are more than one configured certificates.
 
 </td>
 </tr>

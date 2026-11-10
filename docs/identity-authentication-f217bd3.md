@@ -77,7 +77,7 @@ To create Identity Authentication as a target system, proceed as follows:
 5.  Choose the *Properties* tab to configure the connection settings for your system.
 
     > ### Note:  
-    > If your Identity Provisioning tenant is running on SAP BTP, Neo, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the SAP BTP cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
+    > If your Identity Provisioning tenant is running on Neo, you can create a [connectivity destination](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/72696d6d06c0490394ac3069da600278.html) in your subaccount in the cockpit, and then select it from the *Destination Name* combo box in your Identity Provisioning User Interface.
     > 
     > If one and the same property exists both in the cockpit and in the *Properties* tab, the value set in the *Properties* tab is considered with higher priority.
     > 
@@ -124,7 +124,7 @@ To create Identity Authentication as a target system, proceed as follows:
     For example: **https://mytenant.accounts.ondemand.com**
 
     > ### Note:  
-    > If your Identity Authentication Shanghai \(China\) tenants reside on SAP BTP, Neo, you should use the following URL pattern: *https://<tenant\_ID\>.accounts.sapcloud.cn/*
+    > If your Identity Authentication Shanghai \(China\) tenants reside on Neo, you should use the following URL pattern: *https://<tenant\_ID\>.accounts.sapcloud.cn/*
 
 
     

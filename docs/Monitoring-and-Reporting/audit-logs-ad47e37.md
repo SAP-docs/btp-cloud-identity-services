@@ -9,6 +9,6 @@ Tenant administrators can access the audit logs for changes in the personal data
 
 There are two different procedures for accessing the audit logs:
 
--   [Access Audit Logs \(Audit Log Service in SAP BTP, Cloud Foundry\)](access-audit-logs-audit-log-service-in-sap-btp-cloud-foundry-a3e793c.md)
--   [Access Audit Logs \(Audit Log Service in SAP BTP, Neo\)](access-audit-logs-audit-log-service-in-sap-btp-neo-9f6b9a4.md)
+-   [Access Audit Logs \(Audit Log Service in Cloud Foundry\)](access-audit-logs-audit-log-service-in-cloud-foundry-a3e793c.md)
+-   [Access Audit Logs \(Audit Log Service in Neo\)](access-audit-logs-audit-log-service-in-neo-9f6b9a4.md)
 
