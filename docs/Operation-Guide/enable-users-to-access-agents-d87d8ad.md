@@ -50,7 +50,7 @@ You can assign access to individual users or to user groups. Assigning user grou
 
 4.  Choose the *Access* tab.
 
-5.  Choose the *Users* or *Groups* tab and then choose *Manage Access*.
+5.  Choose the *Users* or *User Groups* tab and then choose *Manage Access*.
 
 6.  Add users or user groups to the agent. You have the following options:
 
@@ -88,7 +88,7 @@ To assign the user group to the agent:
 
 2.  She selects the financial reporting agent from the list.
 
-3.  She chooses the *Access* tab, then the *Groups* tab, and then chooses *Manage Access*.
+3.  She chooses the *Access* tab, then the *User Groups* tab, and then chooses *Manage Access*.
 
 4.  She searches for `Joule_Finance_Analysts`, selects it, chooses *Review Changes*, and then saves.
 

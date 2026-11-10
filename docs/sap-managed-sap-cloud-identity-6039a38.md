@@ -62,28 +62,11 @@ If you encounter issues, you can report an incident to SAP Support. For informat
 
 ## SAP-Managed IAM for Joule
 
-> ### Note:  
-> This documentation describes some features that will be generally available in a phased approach. These may not yet be available in your region or environment. Please contact your SAP Account Executive for more information.
+For Joule, SAP handles provisioning, integration, and maintenance with reduced setup effort. For more information about the setup steps, applicable restrictions, and the transition from customer-managed provisioning, see [SAP-Managed Provisioning](https://help.sap.com/docs/joule-work/services/sap-managed-provisioning?version=CLOUD).
 
-SAP-managed IAM for Joule represents an initial step toward the same unified identity model used for the SAP Business Suite. In the Business Suite model, SAP Cloud Identity Services is the authoritative source for user and role data. Assignments are distributed outward to connected applications. The current Joule model adopts a pragmatic starting point: user records and group assignments originate in each line-of-business application. Identity provisioning jobs read this data from the line-of-business system into SAP Cloud Identity Services. The jobs then write the global user ID back to the line-of-business system to link the records. The line-of-business system remains the authoritative source for user and role data in the current release.
+For more information about the identity and access management architecture required for Joule, including the provisioning model, user consolidation stages, agent authorization, and EAC restrictions, see [Identity and Access Management for Joule](identity-and-access-management-for-joule-050287e.md).
 
-This approach enables Joule to reuse existing user and role data without requiring you to restructure your landscapes. Fully centralized assignment management in SAP Cloud Identity Services \(the same harmonized model as the Business Suite\) is planned for a future release.
-
-For the EAC program, the following restrictions and requirements apply to identity provisioning for SAP-managed Joule, in addition to those described in the *Identity Provisioning* section above:
-
--   You must manually import SAP-managed provisioning job templates from SAP Note [3784171](https://me.sap.com/notes/3784171). The system doesn't yet create jobs automatically when you activate Joule for a line-of-business application. \(If you are part of the EAC program and need access to this SAP Note, open an incident under BC-IAM-IPS.\)
-
-    > ### Caution:  
-    > Do not modify the imported SAP-managed provisioning job templates. If issues occur, do not create duplicate jobs or change the template configurations. Contact SAP Support for assistance.
-
--   You must set up the SAP-managed provisioning jobs after the application representing the line-of-business system already exists in SAP Cloud Identity Services. This ensures that application-specific groups created by the provisioning job are associated with the correct application.
-
--   Before you run the provisioning jobs, every user in scope must have logged in at least once to the line-of-business application using SAP Cloud Identity Services as the identity provider. The system can't automatically consolidate users who haven't signed in yet.
-
--   For SAP S/4HANA Cloud, the communication arrangement for SAP-managed identity provisioning uses communication scenario `SAP_COM_1265`.
-
--   You don't need identity provisioning jobs for SAP LeanIX. The access token issued by LeanIX already contains the required group information.
-
+For more information about the recommended setup steps that apply across all SAP-managed solutions, see  <?sap-ot O2O class="- topic/xref " href="e415137ba4d04391b39e785c5c3e6094.xml" text="" desc="" xtrc="xref:8" xtrf="file:/home/builder/src/dita-all/wbz1500991557538/loio629f7cb06f6947988dcaf8bedbe45873_en-US/src/content/localization/en-us/6039a386942c4ff6ac382491e1cab69e.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 
 **Related Information**  
 
@@ -109,4 +92,10 @@ For the EAC program, the following restrictions and requirements apply to identi
 [Authorization Policies](authorization-policies-01ddefa.md "Authorization Management lets administrators control who can access what in business applications.")
 
 [Cookies](cookies-e60fd04.md "")
+
+[Identity and Access Management for Joule](identity-and-access-management-for-joule-050287e.md "Identity and access management architecture required for Joule, including the requirement for a single SAP Cloud Identity Services tenant, SAP-managed provisioning, and global user ID assignment. Understand this foundation before you implement Joule to ensure consistent authentication and authorization across all connected SAP applications.")
+
+ <?sap-ot O2O class="- topic/link " href="e415137ba4d04391b39e785c5c3e6094.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/wbz1500991557538/loio629f7cb06f6947988dcaf8bedbe45873_en-US/src/content/localization/en-us/6039a386942c4ff6ac382491e1cab69e.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
+
+[SAP-Managed IAM Integration Reference Architecture](https://architecture.learning.sap.com/docs/ref-arch/d94f2a)
 

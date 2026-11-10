@@ -28,9 +28,9 @@ To create a technical user, use the following procedure:
 
 1.  Sign in to the administration console for SAP Cloud Identity Services.
 
-2.  Choose *Users & Authorizations* \> *Technical User*.
+2.  Choose *Users & Authorizations* \> *Technical Users*.
 
-3.  Press *Create*.
+3.  Press *\+ Create*.
 
 4.  Fill in the required fields in the dialog box.
 
@@ -63,7 +63,7 @@ To create a technical user, use the following procedure:
     <tr>
     <td valign="top">
     
-    **Owner First Name**
+    **Owner Details / First Name**
     
     </td>
     <td valign="top">
@@ -75,7 +75,7 @@ To create a technical user, use the following procedure:
     <tr>
     <td valign="top">
     
-    **Owner Last Name**
+    **Owner Details / Last Name**
     
     </td>
     <td valign="top">
@@ -87,7 +87,7 @@ To create a technical user, use the following procedure:
     <tr>
     <td valign="top">
     
-    **Owner Email**
+    **Owner Details / Email**
     
     </td>
     <td valign="top">
