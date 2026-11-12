@@ -2,14 +2,24 @@
 
 # Identity and Access Management for Joule
 
-Identity and access management architecture required for Joule, including the requirement for a single SAP Cloud Identity Services tenant, SAP-managed provisioning, and global user ID assignment. Understand this foundation before you implement Joule to ensure consistent authentication and authorization across all connected SAP applications.
+Identity and access management architecture required for Joule, including the requirement for a single SAP Cloud Identity Services tenant, a populated Identity Directory, SAP-managed provisioning, and global user ID assignment. Understand this foundation before you implement Joule to ensure consistent authentication and authorization across all connected SAP applications.
 
 > ### Note:  
 > This documentation describes some features that will be generally available in a phased approach. These may not yet be available in your region or environment. Please contact your SAP Account Executive for more information.
 
 Joule is an AI solution embedded into the flow of work across SAP and non-SAP systems. For Joule to deliver a consistent experience, all of those systems must authenticate users through a single SAP Cloud Identity Services tenant. This setup makes SAP Cloud Identity Services the central identity and access management \(IAM\) layer across your SAP landscape. It forms the foundation on which you provision Joule and any AI agents you deploy alongside it.
 
-This topic explains the IAM architecture required for Joule. It covers why we designed it this way, what you need to put in place before you activate Joule, and how agent authentication and authorization fit into your existing IAM model. The same principles apply whether your landscape is new or already has an existing IAM configuration: a single SAP Cloud Identity Services tenant, users with global user IDs in the central directory, and trust established between each SAP application and that tenant.
+This topic explains the IAM architecture specific to Joule. It covers why it is designed this way, what you need to put in place before you provision Joule, and how agent authentication and authorization fit into your IAM model. For more information on the broader recommended architecture, see [SAP-Managed IAM Integration](https://architecture.learning.sap.com/docs/ref-arch/d94f2a) on the *SAP Architecture Center*.For the broader recommended IAM setup that applies across SAP-managed solutions, including guidance on populating the Identity Directory and connecting your corporate IAM system, see  <?sap-ot O2O class="- topic/xref " href="e415137ba4d04391b39e785c5c3e6094.xml" text="" desc="" xtrc="xref:2" xtrf="file:/home/builder/src/dita-all/wbz1500991557538/loio629f7cb06f6947988dcaf8bedbe45873_en-US/src/content/localization/en-us/050287ee9ecc443dbae4c0939f69e680.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+
+
+
+## Your Key Action: Populate the Identity Directory
+
+SAP manages the provisioning between the Identity Directory and each connected LoB application. Your key action is to ensure that full user identities are present in the Identity Directory before or shortly after you deploy Joule.
+
+SAP-managed provisioning creates shadow records automatically. Shadow records are lightweight user representations from each LoB application. Shadow records alone are sufficient for basic Joule conversational features \(Stage 1\). For agents to work, each shadow record must be linked to a full user identity in the Identity Directory \(Stage 2\). This linking happens automatically when a full identity with matching attributes exists in the Identity Directory.
+
+Full user identities typically come from your corporate identity management system. Connect it to SAP Cloud Identity Services to synchronize user profiles and group assignments. For guidance on how to do this, including a recommendation on whether to use push or pull synchronization, see  <?sap-ot O2O class="- topic/xref " href="fa75d2f38d5741c5a215d80bc6f67093.xml" text="" desc="" xtrc="xref:3" xtrf="file:/home/builder/src/dita-all/wbz1500991557538/loio629f7cb06f6947988dcaf8bedbe45873_en-US/src/content/localization/en-us/050287ee9ecc443dbae4c0939f69e680.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 
 > ### Note:  
 > SAP Cloud Identity Services is included with SAP cloud applications at no additional charge. You don't need a separate subscription to use it for Joule.
@@ -26,9 +36,9 @@ This topic explains the IAM architecture required for Joule. It covers why we de
 
 ## SAP-Managed IAM
 
-SAP Cloud Identity Services supports SAP-managed identity integration across your SAP landscape. Without this approach, you must connect each SAP application to your identity layer individually. This means configuring trust, running provisioning jobs, and managing role assignments system by system. This costs you significant effort. With SAP-managed, SAP handles that configuration and keeps it running across software updates.
+SAP Cloud Identity Services supports SAP-managed identity integration across your SAP landscape. Without this approach, you must connect each SAP application to your identity layer individually. This means configuring trust, running provisioning jobs, and managing role assignments system by system, which requires significant effort. With SAP-managed, SAP handles that configuration and keeps it running across software updates.
 
-In the SAP-managed model, SAP takes responsibility for the technical integration. This includes setting up trust between SAP Cloud Identity Services and each connected SAP application, maintaining connector compatibility across product releases, running identity provisioning jobs, and replicating the global user ID back to each line-of-business \(LoB\) system. You retain control of business decisions. This includes choosing the identity provider, defining and assigning business roles, managing HR data, and configuring authentication policies.
+In the SAP-managed model, SAP takes responsibility for the technical integration. This includes setting up trust between SAP Cloud Identity Services and each connected SAP application, maintaining connector compatibility across product releases, running identity provisioning jobs, and replicating the global user ID back to each line-of-business \(LoB\) system. You retain control of business decisions, including choosing the identity provider, defining and assigning business roles, managing HR data, and configuring authentication policies.
 
 SAP-managed IAM for Joule represents an initial step toward the same unified identity model used for the SAP Business Suite. In the Business Suite model, SAP Cloud Identity Services acts as the authoritative source for user and role data. The system distributes assignments outward to applications. The current Joule model adopts a pragmatic starting point. User records and group assignments originate in each LoB application. SAP reads them into SAP Cloud Identity Services and uses them to issue authorization tokens for Joule. The system then writes the global user ID back to the LoB system to link the records. The LoB system remains the authoritative source for user and role data in the current release. If you already follow the Business Suite model, this approach is consistent with the direction you are already heading. Fully centralized assignment management in SAP Cloud Identity Services is planned for a future release.
 
@@ -72,15 +82,17 @@ Global user ID replication
 
 Identity provider selection
 
-Business role definition
+Business role definition \(planned\)
 
-User assignment
+User assignment to application-specific groups
 
 HR data management
 
 Authentication policies
 
 Agent access authorization
+
+Corporate identity management system synchronization
 
 </td>
 </tr>
@@ -103,16 +115,16 @@ To get users into SAP Cloud Identity Services with their global user IDs and gro
 
 
 > ### Note:  
-> During user replication, only a minimal user representation is provisioned to and from the Identity Directory, indicating the source application from which the user originates. The primary purpose of this replication is to provide users with a consistent identity across connected SAP applications by assigning a Global User ID.
+> During user replication, only a minimal user representation is provisioned to and from the Identity Directory, indicating the source application from which the user originates. The primary purpose of this replication is to give users a consistent identity across connected SAP applications by assigning a global user ID.
 
-After the read job runs, you may need to resolve group conflicts before the write-back job can run. Group conflicts arise when the same group exists in both the Identity Directory and the LoB application and the system cannot automatically reconcile them.
+After the read job runs, you may need to resolve group conflicts before the write-back job can run. Group conflicts arise when the same group exists in both the Identity Directory and the line-of-business application and the system cannot automatically reconcile them. For more information about group conflicts, see  <?sap-ot O2O class="- topic/xref " href="d5d5b8552ae24e8989107d10eaefb48d.xml" text="" desc="" xtrc="xref:6" xtrf="file:/home/builder/src/dita-all/wbz1500991557538/loio629f7cb06f6947988dcaf8bedbe45873_en-US/src/content/localization/en-us/050287ee9ecc443dbae4c0939f69e680.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 
-After initial provisioning, your landscape is in **Stage 1**: connected applications and their roles appear in SAP Cloud Identity Services, consolidatable user records are present in the background, and Joule is available as a conversational AI assistant within the embedded user interface of each connected Business Application. In Stage 1, agents aren't available. They appear only when users have real identities in SAP Cloud Identity Services.
+After initial provisioning, your landscape is in **Stage 1**: connected applications and their roles appear in SAP Cloud Identity Services, consolidatable user records are present in the background, and Joule is available as a conversational AI assistant within the embedded user interface of each connected business application. In Stage 1, agents aren't available.
 
-In **Stage 2**, real user identities exist in SAP Cloud Identity Services and are linked to application groups. Users with identities can be assigned to assistants and agents from the SAP Cloud Identity Services administration console or with the SCIM API. Stage 2 also unlocks the full Joule experience. LoB systems remain the authoritative source for user and role data until a future release.
+In **Stage 2**, full user identities exist in SAP Cloud Identity Services and are linked to application-specific groups. Users with identities can be assigned to assistants and agents from the SAP Cloud Identity Services administration console or with the SCIM API. Stage 2 also unlocks the full Joule experience. LoB systems remain the authoritative source for user and role data until a future release.
 
 > ### Caution:  
-> Agents are not available to users in Stage 1. If your SAP Cloud Identity Services tenant is new and contains no pre-existing user identities, your users will be limited to conversational Joule functions until Stage 2 is reached. We recommend creating user identities in SAP Cloud Identity Services before deploying Joule so that users have immediate access to agents after provisioning.
+> Agents are not available to users in Stage 1. If your SAP Cloud Identity Services tenant is new and contains no pre-existing user identities, your users will be limited to conversational Joule functions until Stage 2 is reached. We recommend creating user identities in SAP Cloud Identity Services before deploying Joule so that users have immediate access to agents after provisioning. For more information about how to populate the Identity Directory before deployment, see  <?sap-ot O2O class="- topic/xref " href="4396355031bf476daaa60af47e6356d6.xml" text="" desc="" xtrc="xref:7" xtrf="file:/home/builder/src/dita-all/wbz1500991557538/loio629f7cb06f6947988dcaf8bedbe45873_en-US/src/content/localization/en-us/050287ee9ecc443dbae4c0939f69e680.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 
 Whether you can advance to Stage 2 immediately after provisioning depends on your existing landscape:
 
@@ -121,12 +133,22 @@ Whether you can advance to Stage 2 immediately after provisioning depends on you
 -   If SAP Cloud Identity Services is new with no existing user records, create user identities before deploying Joule. You can upload a .csv file, use the SCIM API, or create users manually in the SAP Cloud Identity Services administration console. Once identities exist, the SAP-managed jobs match and link them automatically, and you reach Stage 2 after provisioning.
 
 
-The user consolidation tool is a dedicated capability for transitioning users from Stage 1 to Stage 2 after initial provisioning. It presents administrators with suggested matches between consolidatable user records and real identities across applications, user by user, and requires explicit approval before creating the linked identity. For more information, see [Start User Consolidation](Operation-Guide/start-user-consolidation-d379a30.md).
+The user consolidation tool is a dedicated capability for moving users from Stage 1 to Stage 2 after initial provisioning. It presents administrators with suggested matches between consolidatable user records and real identities across applications, user by user, and requires explicit approval before creating the linked identity. For more information, see [Start User Consolidation](Operation-Guide/start-user-consolidation-d379a30.md).
 
 If your landscape already includes user synchronization, for example, from SAP SuccessFactors to SAP Cloud Identity Services, those existing jobs continue independently. SAP-managed jobs for Joule create application-specific groups alongside existing configuration without conflicting with it.
 
 > ### Note:  
 > SAP SuccessFactors provisioning jobs create full user profiles rather than consolidatable users. Users provisioned from SuccessFactors are therefore treated differently during consolidation than users coming from other LoB systems.
+
+
+
+## Application-Specific Groups
+
+When SAP-managed provisioning runs for a connected LoB application, it creates application-specific groups in the Identity Directory. These groups represent the authorization roles defined in the LoB application. Assigning a user to an application-specific group grants them the corresponding authorization in the connected application.
+
+For Joule agents to act on behalf of a user, the user must be assigned to the application-specific groups that correspond to the actions the agent will perform. Without the correct group membership, agent actions fail with authorization errors even if the user has been granted access to the agent itself.
+
+You are responsible for assigning users to application-specific groups. You can do this through the administration console, the SCIM API, or by mapping your corporate groups to application-specific groups during corporate IAM system synchronization. For more information, see  <?sap-ot O2O class="- topic/xref " href="d5d5b8552ae24e8989107d10eaefb48d.xml" text="" desc="" xtrc="xref:9" xtrf="file:/home/builder/src/dita-all/wbz1500991557538/loio629f7cb06f6947988dcaf8bedbe45873_en-US/src/content/localization/en-us/050287ee9ecc443dbae4c0939f69e680.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 
 
 
@@ -136,7 +158,7 @@ When you connect SAP applications to Joule, the subject name identifier \(SNI\) 
 
 If users in your landscape access SAP applications across different domain patterns, for example, some applications use the `ondemand.com` domain while others use `cloud.sap`, single sign-on sessions may not carry over automatically between domains. To resolve this, enable the *Sync SSO Cookie Between Domains* option in your SAP Cloud Identity Services tenant. In addition to configuring the domains trusted by your SAP Cloud Identity Services tenant, you must also register any custom domains used in your landscape in the Joule Admin Center.
 
-For more information see:
+For more information, see:
 
 -   [Sync SSO Cookie Between Domains](Operation-Guide/sync-sso-cookie-between-domains-c76f097.md)
 -   [Configure Trusted Domains](Operation-Guide/configure-trusted-domains-08fa1fe.md)

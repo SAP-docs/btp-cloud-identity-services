@@ -19,6 +19,8 @@ Customer-managed refers to a delivery approach in which you are responsible for 
 
 SAP-managed SAP Cloud Identity Services support the following delivery approaches: SAP can manage both the tenant and the integrated applications. You can also manage your own tenants, with SAP managing the integrated applications connected to those tenants.
 
+For more information about the architecture model, see [SAP-Managed IAM Integration](https://architecture.learning.sap.com/docs/ref-arch/d94f2a) on the *SAP Architecture Center*.
+
 What does SAP-managed mean for the individual services within SAP Cloud Identity Services?
 
 
@@ -66,7 +68,7 @@ For Joule, SAP handles provisioning, integration, and maintenance with reduced s
 
 For more information about the identity and access management architecture required for Joule, including the provisioning model, user consolidation stages, agent authorization, and EAC restrictions, see [Identity and Access Management for Joule](identity-and-access-management-for-joule-050287e.md).
 
-For more information about the recommended setup steps that apply across all SAP-managed solutions, see  <?sap-ot O2O class="- topic/xref " href="e415137ba4d04391b39e785c5c3e6094.xml" text="" desc="" xtrc="xref:8" xtrf="file:/home/builder/src/dita-all/wbz1500991557538/loio629f7cb06f6947988dcaf8bedbe45873_en-US/src/content/localization/en-us/6039a386942c4ff6ac382491e1cab69e.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
+For more information about the recommended setup steps that apply across all SAP-managed solutions, see  <?sap-ot O2O class="- topic/xref " href="e415137ba4d04391b39e785c5c3e6094.xml" text="" desc="" xtrc="xref:9" xtrf="file:/home/builder/src/dita-all/wbz1500991557538/loio629f7cb06f6947988dcaf8bedbe45873_en-US/src/content/localization/en-us/6039a386942c4ff6ac382491e1cab69e.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> .
 
 **Related Information**  
 
@@ -93,7 +95,7 @@ For more information about the recommended setup steps that apply across all SAP
 
 [Cookies](cookies-e60fd04.md "")
 
-[Identity and Access Management for Joule](identity-and-access-management-for-joule-050287e.md "Identity and access management architecture required for Joule, including the requirement for a single SAP Cloud Identity Services tenant, SAP-managed provisioning, and global user ID assignment. Understand this foundation before you implement Joule to ensure consistent authentication and authorization across all connected SAP applications.")
+[Identity and Access Management for Joule](identity-and-access-management-for-joule-050287e.md "Identity and access management architecture required for Joule, including the requirement for a single SAP Cloud Identity Services tenant, a populated Identity Directory, SAP-managed provisioning, and global user ID assignment. Understand this foundation before you implement Joule to ensure consistent authentication and authorization across all connected SAP applications.")
 
  <?sap-ot O2O class="- topic/link " href="e415137ba4d04391b39e785c5c3e6094.xml" text="" desc="" xtrc="link:2" xtrf="file:/home/builder/src/dita-all/wbz1500991557538/loio629f7cb06f6947988dcaf8bedbe45873_en-US/src/content/localization/en-us/6039a386942c4ff6ac382491e1cab69e.xml" output-class="" outputTopicFile="file:/home/builder/tp.net.sf.dita-ot/2.3/plugins/com.elovirta.dita.markdown_1.3.0/xsl/dita2markdownImpl.xsl" ?> 
 

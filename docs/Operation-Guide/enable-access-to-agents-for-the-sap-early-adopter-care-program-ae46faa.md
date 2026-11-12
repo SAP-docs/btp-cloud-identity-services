@@ -72,5 +72,5 @@ If users can't access the agent after being assigned to its authorization group:
 
 [Enable Users to Access Agents](enable-users-to-access-agents-d87d8ad.md "Assign users to agents to grant users the right to invoke them. You can assign individual users or multiple users with user groups.")
 
-[Identity and Access Management for Joule](../identity-and-access-management-for-joule-050287e.md "Identity and access management architecture required for Joule, including the requirement for a single SAP Cloud Identity Services tenant, SAP-managed provisioning, and global user ID assignment. Understand this foundation before you implement Joule to ensure consistent authentication and authorization across all connected SAP applications.")
+[Identity and Access Management for Joule](../identity-and-access-management-for-joule-050287e.md "Identity and access management architecture required for Joule, including the requirement for a single SAP Cloud Identity Services tenant, a populated Identity Directory, SAP-managed provisioning, and global user ID assignment. Understand this foundation before you implement Joule to ensure consistent authentication and authorization across all connected SAP applications.")
 

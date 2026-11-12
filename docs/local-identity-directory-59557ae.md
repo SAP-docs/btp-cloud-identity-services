@@ -54,6 +54,20 @@ To create Local Identity Directory as a target system, proceed as follows:
     <tr>
     <td valign="top">
     
+    `idds.support.patch.operation`
+    
+    </td>
+    <td valign="top">
+    
+    This property controls how modified entities \(users and groups\) in the source system are updated in the target system.
+
+    It is recommended to set this property to *true*. This enables PATCH requests, which only update the attributes managed by Identity Provisioning and leave all others untouched. Without it, full PUT updates are used, which can overwrite attributes that have been modified outside the provisioning flow - for example, ***mailVerified***, which may change on the target system during authentication.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
     `idds.bulk.operations.max.count`
     
     </td>

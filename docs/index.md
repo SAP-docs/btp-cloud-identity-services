@@ -293,6 +293,7 @@
                     -   [Configure Risk-Based Authentication for an Application](Operation-Guide/configure-risk-based-authentication-for-an-application-bc52fbf.md#loiobc52fbf3d59447bbb6aa22f80d8b6056)
                     -   [Create a New Rule](Operation-Guide/create-a-new-rule-18d02ab.md)
                     -   [Examples for Risk-Based Authentication Scenarios](Operation-Guide/examples-for-risk-based-authentication-scenarios-fedc77c.md)
+                -   [Configure Certificate Authentication Method](Operation-Guide/configure-certificate-authentication-method-e25de8a.md)
                 -   [Configure Concurrent User Access to the Application](Operation-Guide/configure-concurrent-user-access-to-the-application-80ead1a.md)
                 -   [Always Require Password from Users](Operation-Guide/always-require-password-from-users-dd9f48e.md)
                 -   [Enable or Disable Social Sign-On for an Application](Operation-Guide/enable-or-disable-social-sign-on-for-an-application-ff12d3d.md)

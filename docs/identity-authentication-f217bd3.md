@@ -200,16 +200,16 @@ To create Identity Authentication as a target system, proceed as follows:
 
     <table>
     <tr>
-    <th valign="top">
-
+    <td valign="top">
+    
     Property Name
     
-    </th>
-    <th valign="top">
-
+    </td>
+    <td valign="top">
+    
     Description & Value
     
-    </th>
+    </td>
     </tr>
     <tr>
     <td valign="top">
@@ -229,6 +229,20 @@ To create Identity Authentication as a target system, proceed as follows:
     When using SCIM API version 1, property names start with `scim` prefix, for example: `scim.user.unique.attribute`.
 
     For more information, see [List of Properties](list-of-properties-d6f3577.md). Use the main search or filter properties by *Name* or *System Type* columns.
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    `ias.support.patch.operation`
+    
+    </td>
+    <td valign="top">
+    
+    This property controls how modified entities \(users and groups\) in the source system are updated in the target system.
+
+    When using SCIM API version 2, it is recommended to set this property to *true*. This enables PATCH requests, which only update the attributes managed by Identity Provisioning and leave all others untouched. Without it, full PUT updates are used, which can overwrite attributes that have been modified outside the provisioning flow - for example, `mailVerified`, which may change on the target system during authentication.
     
     </td>
     </tr>
