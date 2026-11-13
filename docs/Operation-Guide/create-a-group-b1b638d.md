@@ -97,7 +97,9 @@ To create a new user group, proceed as follows:
 
     1.  Select an application from the list to create an application-specific group.
 
-    2.  Choose a group type:
+    2.  Add an *External Name* for the group.
+
+    3.  Choose a group type:
 
         -   *userGroup* - A group of users who have something in common.
         -   *authorization* - A group related to authorization of users, groups or applications.

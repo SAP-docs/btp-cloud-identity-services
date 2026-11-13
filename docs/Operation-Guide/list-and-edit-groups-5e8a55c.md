@@ -38,11 +38,103 @@ The groups are sorted in alphabetical order of the display name.
 
 4.  **Optional:** Press the *Edit* button at the top-right corner of the screen.
 
-    1.  Edit the *Display name* or *Description* fields, or both.
+    1.  **Optional:** Edit the *Display name* or *Description* fields, or both.
 
-    2.  Save your changes.
+    2.  Choose *Next Step*.
+
+    3.  In the *Application \(Optional\)* screen:
 
 
+
+    <table>
+    <tr>
+    <th valign="top">
+
+    Group Type
+    
+    </th>
+    <th valign="top">
+
+    Action
+    
+    </th>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **User Group**
+    
+    </td>
+    <td valign="top">
+    
+    Fill in the information if you want to make this group an application-specific group:
+
+    1.  Select an application from the list to create an application-specific group.
+    2.  Add *External Name*.
+    3.  Choose a group type:
+
+        -   *userGroup* - A group of users who have something in common.
+        -   *authorization* - A group related to authorization of users, groups or applications.
+        -   *deepLinkActivationPermission* - A group of applications that support deep linking.
+
+        For more information about the group, see [Groups](../groups-d93be69.md).
+
+        > ### Remember:  
+        > The *Supported Operations* field is set to `readWrite` and is read-only. For more information about supported operations, refer to the *Application-Specific Groups Supported Operations* table in [Groups](../groups-d93be69.md).
+
+    4.  Choose *Next Step* \> *Finish*.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Application Specific Group**
+    
+    </td>
+    <td valign="top">
+    
+    Fill in the information if you want to edit this group:
+
+    1.  Select an new application from the list if needed.
+
+        > ### Note:  
+        > The *External Name* and group type can't be edited
+
+    2.  Add or edit the .
+    3.  Choose a new group type if needed:
+
+        -   *userGroup* - A group of users who have something in common.
+        -   *authorization* - A group related to authorization of users, groups or applications.
+        -   *deepLinkActivationPermission* - A group of applications that support deep linking.
+
+        For more information about the group, see [Groups](../groups-d93be69.md).
+
+        > ### Remember:  
+        > The *External Name* and group type can't be edited. The *Supported Operations* field is set to `readWrite` and is read-only.
+
+    4.  Choose *Next Step* \> *Finish*.
+
+
+    
+    </td>
+    </tr>
+    <tr>
+    <td valign="top">
+    
+    **Authorization Group**
+    
+    </td>
+    <td valign="top">
+    
+    Edit the *Display Name* and or *Description*.
+    
+    </td>
+    </tr>
+    </table>
+    
 
 **Related Information**  
 
