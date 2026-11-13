@@ -91,31 +91,19 @@ The groups are sorted in alphabetical order of the display name.
     <tr>
     <td valign="top">
     
-    **Application Specific Group**
+    **Application Specific Group \(Read & Write\)**
     
     </td>
     <td valign="top">
     
     Fill in the information if you want to edit this group:
 
-    1.  Select an new application from the list if needed.
-
-        > ### Note:  
-        > The *External Name* and group type can't be edited
-
-    2.  Add or edit the .
-    3.  Choose a new group type if needed:
-
-        -   *userGroup* - A group of users who have something in common.
-        -   *authorization* - A group related to authorization of users, groups or applications.
-        -   *deepLinkActivationPermission* - A group of applications that support deep linking.
-
-        For more information about the group, see [Groups](../groups-d93be69.md).
+    1.  Select a new application from the list if needed to remove an existing one.
 
         > ### Remember:  
-        > The *External Name* and group type can't be edited. The *Supported Operations* field is set to `readWrite` and is read-only.
+        > The *External Name*, group type, and supported operations can't be edited.
 
-    4.  Choose *Next Step* \> *Finish*.
+    2.  Choose *Next Step* \> *Finish*.
 
 
     
